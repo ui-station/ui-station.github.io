@@ -20,7 +20,7 @@ cd out
 git clone -b gh-pages https://github.com/ui-station/ui-station.github.io/
 cp -rf ui-station.github.io/.git ./.git
 git config user.name "ui-station"
-git config user.email "13akstjq.blog24@gmail.com"
+git config user.email "13akstjq.blog22@gmail.com"
 rm -rf ui-station.github.io
 
 touch .nojekyll
