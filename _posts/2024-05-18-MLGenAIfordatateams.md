@@ -146,7 +146,7 @@ for word, embedding in word_embeddings.items():
 ![이미지](/assets/img/2024-05-18-MLGenAIfordatateams_7.png)
 
 예시 정보 검색 시스템 (출처: Langchain)
-```
+
 
 <div class="content-ad"></div>
 

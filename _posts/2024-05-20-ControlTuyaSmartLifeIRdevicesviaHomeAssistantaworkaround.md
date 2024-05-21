@@ -67,7 +67,7 @@ IR은 일방적인 프로토콜이기 때문에, 저는 간단히 에어컨을 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![HVAC Control Dashboard](/assets/img/2024-05-20-ControlTuyaSmartLifeIRdevicesviaHomeAssistantaworkaround_8.png)
 
 I built a little HVAC control dashboard where I’m adding the buttons:
@@ -75,7 +75,7 @@ I built a little HVAC control dashboard where I’m adding the buttons:
 ![Add Buttons](/assets/img/2024-05-20-ControlTuyaSmartLifeIRdevicesviaHomeAssistantaworkaround_9.png)
 
 Add the buttons to the dashboard:
-```
+
 
 <div class="content-ad"></div>
 

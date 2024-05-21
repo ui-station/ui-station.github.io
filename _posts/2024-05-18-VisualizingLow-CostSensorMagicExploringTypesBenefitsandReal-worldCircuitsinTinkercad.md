@@ -65,7 +65,7 @@ IR 빔을 사용하여 객체까지의 거리를 측정하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 0](/assets/img/2024-05-18-VisualizingLow-CostSensorMagicExploringTypesBenefitsandReal-worldCircuitsinTinkercad_0.png)
 
 ![Image 1](/assets/img/2024-05-18-VisualizingLow-CostSensorMagicExploringTypesBenefitsandReal-worldCircuitsinTinkercad_1.png)
@@ -121,7 +121,7 @@ void loop()
 ```
 
 Run this code and see the amazing result!!!
-```
+
 
 <div class="content-ad"></div>
 

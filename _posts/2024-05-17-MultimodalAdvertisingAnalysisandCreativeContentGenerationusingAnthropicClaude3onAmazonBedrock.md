@@ -21,7 +21,7 @@ link: "https://medium.com/@garystafford/marketing-and-advertising-analysis-and-c
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_0.png)
 
 ## 아키텍처 2: 창의적 광고 콘텐츠 생성
@@ -29,7 +29,7 @@ link: "https://medium.com/@garystafford/marketing-and-advertising-analysis-and-c
 두 번째 아키텍처는 기초 모델이 창의적 디렉터, 카피 라이터, 디지털 아티스트 및 그래픽 디자이너가 새로운 컨셉, 레이아웃, 헤드라인, 광고 복사본 및 이미지를 개발하는 능력을 강조합니다. 기초 모델은 내용을 실제 디지털 광고로 바꾸는 컴퓨터 코드를 작성하는 데도 도움을 줄 수 있습니다.
 
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -102,9 +102,9 @@ GitHub 저장소의 README 파일에는 제가 강연에서 보여준 다양한 
 
 업로드하고 분석할 네 가지 광고 예시가 있습니다.
 
-```markdown
+
 ![advertising example](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_3.png)
-```
+
 
 분석은 Anthropic Claude 3 Sonnet on Amazon Bedrock을 사용하여 약 13초가 소요되었습니다. 프롬프트는 5,463개의 입력 토큰을 사용하였고, 응답은 432개의 출력 토큰을 사용하였습니다. 모델의 창조적 분석은 중요한 디자인 요소를 세심하게 식별했습니다. 이 요소에는 1/ 강렬한 시각적 이미지, 2/ 미니멀하고 우아한 타이포그래피, 3/ 효과적인 색상 활용, 4/ 일관된 브랜딩과 태그 라인, 그리고 5/ 성능과 혁신에 대한 강조가 포함되어 있습니다.
 
@@ -140,7 +140,7 @@ Anthropic Claude 3 Sonnet을 사용하여 프롬프트 최적화 요청 작업�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_6.png)
 
 Anthropic Claude 3 소네트를 사용하여 작업은 약 14초가 걸렸습니다. 분석에는 4,145개의 입력 토큰과 516개의 출력 토큰이 사용되었습니다. 결과 광고 컨셉에는 요약, 이미지 제안, 헤드라인 텍스트, 광고 복사본, 로고 및 콜 투 액션이 포함되어 있습니다.
@@ -148,7 +148,7 @@ Anthropic Claude 3 소네트를 사용하여 작업은 약 14초가 걸렸습니
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_7.png)
 
 우리는 이제, 같은 브랜드와 제품을 위한 기존 광고의 생성 AI 분석을 기반으로 한 새 광고 컨셉을 갖게 되었습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -342,7 +342,7 @@ for idx, generated_image in enumerate(
 이전 예제에서 생성된 창의적인 개념과 이미지를 사용하여, 이 파이썬 스크립트를 사용하여 몇 초만에 생성된 수십 개의 디지털 광고 중 일부를 확인할 수 있습니다.
 
 ![2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_19.png](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_19.png)
-```
+
 
 <div class="content-ad"></div>
 

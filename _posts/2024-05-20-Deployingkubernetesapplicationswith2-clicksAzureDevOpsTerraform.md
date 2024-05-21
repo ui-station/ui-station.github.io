@@ -34,7 +34,7 @@ link: "https://medium.com/@geralexgr/deploying-kubernetes-applications-with-2-cl
 
 아래는 마크다운 형식으로 변경한 코드입니다:
 
-```
+
 ![Deploying Kubernetes applications with 2 clicks Azure DevOps Terraform](/assets/img/2024-05-20-Deployingkubernetesapplicationswith2-clicksAzureDevOpsTerraform_2.png)
 
 위 설정이 완료되면 tfvars 파일을 변경하고, 생성할 리소스에 사용하고자 하는 이름을 추가해야 합니다. 마지막으로 인프라 파이프라인을 클릭 한 번, 애플리케이션 파이프라인을 클릭 한 번으로 배포를 끝내실 수 있습니다.
@@ -43,7 +43,7 @@ link: "https://medium.com/@geralexgr/deploying-kubernetes-applications-with-2-cl
 
 코드는 Github에 호스팅되어 있습니다.
 https://github.com/geralexgr/globalazuregreece2024
-```
+
 
 <div class="content-ad"></div>
 

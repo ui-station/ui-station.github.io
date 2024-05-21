@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-HumanandArtificialGeneralIntelligenceArisesfromNextTokenPrediction_0.png)
 
 만약 인간 지성이 성공적인 다음 토큰 예측에서 비롯된다면, 다음 토큰 예측이 인공 일반 지능의 발달에 충분한 목적 함수인 경우는 어떨까요?
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 이 게시물은 학습 시스템이 다음 토큰 예측에서 아주 뛰어난 성과를 보일 때 일반 지능이 발생한다는 가설을 제시하고 탐구합니다. 이 가설은 종종 산업 및 학술적 AI 연구의 주요 주제나 하위 주제로 내포됐거나 감춰졌거나 흔적만이 존재하는 경우가 많지만, 지금까지 이 주제가 논의되어야 할 만큼 많이 다뤄지지 않았다고 생각합니다. 저는 기존 LLM 사전 훈련 목표, 인간을 예측 기계로, 다음 토큰 예측의 유익한 특성 및 부재한 부분을 통해 이 아이디어를 다양한 각도에서 탐구합니다. 이 게시물을 작성하게 된 동기는 다음 토큰 예측과 지성적 사고 발달 사이의 관계에 대한 보다 깊은 관심을 불러일으키는 데 있습니다.
 
 # 배경 이야기
-```
+
 
 <div class="content-ad"></div>
 
@@ -31,13 +31,13 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 대형 언어 모델의 언어 모델링 목표
 
 대형 언어 모델의 두 가지 기본 언어 모델링 목표는 "다음 단어 예측"과 "빠진 단어(들) 예측"입니다.
 
 다음 단어 예측: 인과적 언어 모델(단방향 또는 좌측에서 우측 모델)에서는 모델이 현재 입력을 포함하여 그 이전의 모든 입력에 주의를 기울이지만 “미래를 볼 수 없으며” 목표는 다음 단어를 예측하는 것입니다. 각 지점에서의 숨겨진 상태 계산은 현재 입력 및 더 이전 요소에만 기반하며 “오른쪽”에 위치한 정보는 무시됩니다. 예를 들어: 나무는 초록색이고 하늘은 _____입니다; 모델의 목표는 다음 단어를 예측하는 것이며, 예를 들어 "파란색"입니다.
-```
+
 
 <div class="content-ad"></div>
 

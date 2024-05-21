@@ -63,7 +63,7 @@ link: "https://medium.com/towards-data-science/feature-engineering-for-machine-l
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Feature Engineering for Machine Learning](/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_3.png)
 
 ## 4. Indicator Encoding
@@ -71,7 +71,7 @@ link: "https://medium.com/towards-data-science/feature-engineering-for-machine-l
 Indicator 또는 Boolean feature는 이진 값 '1, 0' 또는 'True, False'를 가지고 있습니다. Indicator feature는 매우 일반적이며 다양한 유형의 이진 정보를 나타내기 위해 사용됩니다. 경우에 따라 이미 이러한 이진 feature가 숫자 형태로 제공되어 있을 수 있고, 다른 경우에는 숫자가 아닌 값을 갖는 경우도 있습니다. 모델 훈련에 비숫자적인 이진 feature를 사용하려면 이를 숫자 값으로 매핑하면 됩니다.
 
 Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비숫자 데이터 포인트 간의 비교를 나타내는 도구로서 indicator encoding을 활용할 수 있습니다. 이 특성은 비숫자 특성의 변화를 측정하는 방법을 만드는 데 특히 강력합니다.
-```
+
 
 <div class="content-ad"></div>
 

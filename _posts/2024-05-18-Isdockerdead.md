@@ -41,7 +41,7 @@ link: "https://medium.com/@kloudino/is-docker-dead-27cf8d88a1d9"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![](/assets/img/2024-05-18-Isdockerdead_1.png)
 
 이 3가지 주요 구성요소 외에도 이미지를 관리하는 데 필요한 하나와 API(GUI 또는 CLI)도 필요합니다.
@@ -49,7 +49,7 @@ link: "https://medium.com/@kloudino/is-docker-dead-27cf8d88a1d9"
 요약하면, 가상화 세계에서 작동할 수 있도록 5개 구성 요소가 필요합니다.
 
 컨테이너의 세계에서 docker는 모든 이러한 구성 요소를 제공하기 때문에 이미 docker가 모든 솔루션을 갖춘 것처럼 좋다고 생각할 수 있습니다. 그러나 조금만 기다려보세요. 더 설명해 드릴게요:
-```
+
 
 <div class="content-ad"></div>
 

@@ -30,7 +30,7 @@ subfinder -d example.com|httpx -td --title --status-code
 <img src="/assets/img/2024-05-18-InsecureStorageofSensitiveInformationCriticalBug_1.png" />
 
 이 도메인에는 많은 콘텐츠가 있습니다 👾
-```
+
 
 <div class="content-ad"></div>
 
@@ -50,7 +50,7 @@ cat commons-logging-1.1.1.jar|strings
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot 1](/assets/img/2024-05-18-InsecureStorageofSensitiveInformationCriticalBug_4.png)
 
 ![Screenshot 2](/assets/img/2024-05-18-InsecureStorageofSensitiveInformationCriticalBug_5.png)
@@ -58,7 +58,7 @@ cat commons-logging-1.1.1.jar|strings
 and boom 💥I have default user and password server backend code on java and many more data on this program.
 
 ![Screenshot 3](/assets/img/2024-05-18-InsecureStorageofSensitiveInformationCriticalBug_6.png)
-```
+
 
 <div class="content-ad"></div>
 

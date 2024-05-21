@@ -90,4 +90,3 @@ end
 ```
 
 위의 코드를 실행하면 'can`t modify frozen string'라는 오류가 발생합니다. constant 1로 지정된 문자열은 동결되어 있지만 변수인 first_variable은 다른 값으로 지정될 수 있습니다.
-```

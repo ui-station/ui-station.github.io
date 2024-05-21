@@ -57,13 +57,13 @@ Chronos 14.0의 매력을 놓치지 마세요. 시작하려면:
 
 테이블 태그를 Markdown 형식으로 변경하십시오.
 
-```markdown
+
 | 이름           | LinkedIn | GitHub |
 |----------------|----------|--------|
 | Michael Tagg   | 링크드인   | 깃허브   |
 | Sofia Sarhiri  | 링크드인   | 깃허브   |
 | Ted Pham       | 링크드인   | 깃허브   |
 | Stephen Yang   | 링크드인   | 깃허브   |
-```
+
 
 위에 있는 테이블을 Markdown 형식으로 변경하였습니다.

@@ -254,7 +254,7 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 C
 onnect me on LinkedIn
 
@@ -263,4 +263,3 @@ Researching takes considerable time. If you found this helpful, a Like, share, o
 Happy Hacking! Bye Bye Hackers 👋
 
 ![TheHackersMind ReconMindmap](/assets/img/2024-05-17-TheHackersMind-ReconMindmap_1.png)
-```

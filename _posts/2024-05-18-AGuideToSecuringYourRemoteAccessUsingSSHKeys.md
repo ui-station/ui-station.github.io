@@ -167,7 +167,7 @@ AuthorizedKeysFile .ssh/authorized_keys .ssh/authorized_keys2
 ![2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_2.png](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_2.png)
 
 4단계: 구성 변경을 적용하기 위해 SSH 서버를 다시로드하세요
-```
+
 
 <div class="content-ad"></div>
 
@@ -208,7 +208,7 @@ sudo systemctl restart sshd
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_5.png)
 
 - Save the public key as: id_ed2551.pub
@@ -217,17 +217,17 @@ sudo systemctl restart sshd
 ![image](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_6.png)
 
 - Alternatively, you can save them using the File menu option
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Save and keep a copy of your SSH keys](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_7.png)
 
 ![SSH key image 2](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_8.png)
 
 ![SSH key image 3](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_9.png)
-```
+
 
 <div class="content-ad"></div>
 

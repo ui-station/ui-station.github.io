@@ -162,7 +162,7 @@ docker start <컨테이너 이름 또는 ID>
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_7.png)
 
 ```js
@@ -179,7 +179,7 @@ docker rm -f Thor
 ![Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_8.png)
 
 # 도커 이미지 빌드하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -416,7 +416,7 @@ docker run -t -d --mount type=bind,source=docker-bind-mount,target=/app/log \
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_26.png)
 
 각 컨테이너 안에 저장된 로그를 작성해봅시다. 바인드-마운트가 연결된 경로인 /app/log에
@@ -424,7 +424,7 @@ docker run -t -d --mount type=bind,source=docker-bind-mount,target=/app/log \
 ![image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_27.png)
 
 자세히 살펴보면, 1번째와 2번째 컨테이너에서 생성한 파일들이 3번째 컨테이너에서 보이며, 1번째에서 3번째 컨테이너에서 생성한 파일이 4번째(Captain-America) 컨테이너에서도 보인다는 점을 알 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -458,7 +458,7 @@ docker inspect hulk
 # 예제: 볼륨을 사용하는 Docker 컨테이너
 
 볼륨 생성하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -489,7 +489,7 @@ docker inspect hulk
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_31.png)
 
 새 컨테이너를 생성하는 동안 이 볼륨을 마운트해 봅시다. 이번에는 — — mount 옵션을 사용할 거에요.
@@ -510,11 +510,11 @@ docker run -d \
 ```js
 docker inspect hulk-container
 ```   
-```  
+  
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_32.png)
 
 Let’s create some logs in both containers and see if the files/logs are visible to both containers.
@@ -522,7 +522,7 @@ Let’s create some logs in both containers and see if the files/logs are visibl
 ![Image 2](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_33.png)
 
 As you can see from the above screenshot, we can share data/logs across containers.
-```
+
 
 <div class="content-ad"></div>
 
@@ -621,13 +621,13 @@ docker build -t flask-image .
 
 아래는 Markdown 형식으로 변경되었습니다:
 
-```markdown
+
 ![Docker Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_36.png)
 
 Docker Hub repository를 만들어보겠습니다. 아직 계정이 없다면 만드세요 - livingdevopswithakhilesh라는 이름으로 만들었어요.
 
 ![Image 태깅](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_37.png)
-```
+
 
 <div class="content-ad"></div>
 

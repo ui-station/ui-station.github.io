@@ -111,7 +111,7 @@ $(Get-ADObject -Filter {objectclass -eq 'msFVE-RecoveryInformation'} -SearchBase
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![BitLocker Recovery Passwords Scraper](/assets/img/2024-05-18-HowToGetBitLockerRecoveryPasswordsfromActiveDirectoryUsingPowerShellWithWhole-OU-to-CSVScriptIncluded_4.png)
 
 # Whole-OU-to-CSV BitLocker Passwords Scraper PowerShell Script
@@ -119,7 +119,7 @@ $(Get-ADObject -Filter {objectclass -eq 'msFVE-RecoveryInformation'} -SearchBase
 For a complete solution to export recovery information for multiple computers at once, refer to the script below.
 
 To use it:
-```
+
 
 <div class="content-ad"></div>
 

@@ -85,7 +85,7 @@ Firebase.firestore.collection("users").document("me")
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Recipe 3](/assets/img/2024-05-18-SevenrecipestounderstandflowsandasynchronyinKotlin_0.png)
 
 So we need something different. What we need is a flow.
@@ -93,7 +93,7 @@ So we need something different. What we need is a flow.
 # Recipe 3: Using callbackFlow to return multiple things from an async callback
 
 When an object hits the flow’s conveyor belt, we say it’s been emitted by the flow. When it gets taken off the conveyor belt to be handled, we say it’s been collected by a collector.
-```
+
 
 <div class="content-ad"></div>
 
@@ -141,7 +141,7 @@ viewModelScope.launch {
 이것의 라이프사이클을 좀 고려해보죠. collect 함수는 컨베이어 벨트가 작동을 멈출 때까지 일시 중단됩니다.
 
 플로우 컨베이어 벨트가 작동을 멈출 수 있는 방법은 두 가지뿐입니다:
-```
+
 
 <div class="content-ad"></div>
 

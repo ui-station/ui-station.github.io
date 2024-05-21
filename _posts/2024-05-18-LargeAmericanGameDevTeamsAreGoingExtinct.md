@@ -11,7 +11,7 @@ link: "https://medium.com/@tedbrownxr/large-american-game-dev-teams-are-going-ex
 ---
 
 
-```markdown
+
 ![LargeAmericanGameDevTeamsAreGoingExtinct](/assets/img/2024-05-18-LargeAmericanGameDevTeamsAreGoingExtinct_0.png)
 
 미국 기반의 대규모 게임 개발 팀 시대가 접어들고 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@tedbrownxr/large-american-game-dev-teams-are-going-ex
 일부 사람들은 이를 믿기 싫어합니다. 그것은 이해할 만한 일입니다. 가끔 획기적인 변화의 순간을 경험하고 있다는 느낌을 깨닫지 못할 수도 있습니다. 그렇지만 여기 우리는 "흥미로운 시대"에 몸 담고 있습니다. 그리고 여러 요소가 있지만, 핵심은 미국에서 AAA 게임을 만드는 데 사람들이 너무 오래 걸린다는 것입니다.
 
 게임 개발자들은 프로세스와 도구에 대해 보수적이라고 유명합니다. 옛 방식이 잘 돌아간다고 말합니다. 그래서 왜 그것을 바꿔야 하냐고 물을 수 있습니다. 그래서 대규모 게임을 다루기 위한 혁신적인 새 도구를 받아들이는 대신, 더 많은 사람을 추가합니다. 이로써 매월 소요량이 늘어납니다. 이 큰 팀들은 구식의 관리 구조와 프로세스에 의해 엉망으로 운영됩니다. 이로써 개발 시간이 더 길어집니다. 이 두 가지 값을 곱하면 문제를 볼 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -19,7 +19,7 @@ link: "https://medium.com/@chris.lty07/configuring-for-cors-with-ruby-on-rails-p
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-ConfiguringforCORSwithRubyonRailsPartII_1.png)
 
 가장 먼저 이해해야 할 것은 프런트엔드가 백엔드에 보내는 HTTP 요청의 유형에 따라 해당 요청이 처리되기 전에 완료되는 CORS 사전검사입니다. 이는 보내려는 HTTP 요청이 안전한지 여부를 결정합니다. 사전검사는 HTTP OPTIONS 메서드를 통해 수행됩니다. 개발 도구의 네트워크 탭에서 사전검사 및 fetch 요청을 확인할 수 있습니다:
@@ -27,7 +27,7 @@ link: "https://medium.com/@chris.lty07/configuring-for-cors-with-ruby-on-rails-p
 ![이미지](/assets/img/2024-05-20-ConfiguringforCORSwithRubyonRailsPartII_2.png)
 
 OPTIONS 요청에는 다음과 같은 요청 헤더가 포함될 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -180,7 +180,6 @@ gem 'rack-cors'
 
 <div class="content-ad"></div>
 
-```js
 번들 설치
 
 cors.rb를 구성하세요. 일반적인 Ruby 케이스에서 위와 같은 구성을 달성하려면 config/initializers/cors.rb로 이동하여 미들웨어 구성 코드 블록 주석 처리를 해제하고 다음과 같이 수정하세요:
@@ -205,7 +204,7 @@ end
 ```
 
 그런 다음 서버를 재시작하면 문제 없이 작동해야 합니다!
-```
+
 
 <div class="content-ad"></div>
 

@@ -21,7 +21,7 @@ Raspberry PI 4보다 최대 세 배 빠른 속도로 벤치마킹된 새로운 R
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Trying the VSCode Server again on the Raspberry Pi](/assets/img/2024-05-18-TryingtheVSCodeServeragainontheRaspberryPI5_1.png)
 
 VSCode Server도 업데이트되었습니다. 현재 버전 4.20.0에 도달했습니다. 이번에는 지난 시험한 버전보다 많은 개선 사항을 갖춘 VSCode 1.85.1이 실행됩니다. 그래서 이번에는 이전과 마찬가지로 curl을 사용하여 공식 페이지에서 그것을 받아봅시다. 이번에는 여러분도 이미 알다시피 Fedora가 아직 Raspberry PI 5를 지원하지 않는 커널을 사용하고 있기 때문에 Ubuntu를 위한 Debian 패키지를 사용하겠습니다:
@@ -32,7 +32,7 @@ VSCode Server도 업데이트되었습니다. 현재 버전 4.20.0에 도달했�
 ```
 
 그럼 시작해봅시다!
-```
+
 
 <div class="content-ad"></div>
 
@@ -100,7 +100,7 @@ cert: false
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-TryingtheVSCodeServeragainontheRaspberryPI5_9.png)
 
 LLDB 디버거도 설치할 겁니다. 이를 통해 러스트 프로그램을 디버깅할 수 있어요:
@@ -108,7 +108,7 @@ LLDB 디버거도 설치할 겁니다. 이를 통해 러스트 프로그램을 �
 ![이미지](/assets/img/2024-05-18-TryingtheVSCodeServeragainontheRaspberryPI5_10.png)
 
 사실, Raspberry PI 4에 비해 VSCode 익스텐션 설치가 훨씬 빠른 것 같아요. 그것들은 로컬 데스크톱에서 설치하는 것과 똑같아요. 전체 경험은 로컬에서 VSCode를 실행하는 것 같아요. 다시 F5를 누르면 다음으로 linker cc를 찾을 수 없다는 에러가 나올 거에요. 그래서 sudo apt install build-essential을 사용해서 build-essential 패키지를 설치해볼까요:
-```
+
 
 <div class="content-ad"></div>
 

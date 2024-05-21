@@ -33,18 +33,18 @@ $ brew install gnupg
 
 <div class="content-ad"></div>
 
-```markdown
+
 $ gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-```
+
 
 2.2 Second way
 
-```markdown
+
 $ gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-```
+
 
 3. Install RVM
-```
+
 
 <div class="content-ad"></div>
 
@@ -108,18 +108,18 @@ $ rvm alias create default 2.7.1
 
 ```
 /Users/pagorn/.rvm/src/rubygems-3.0.8/lib/rubygems/core_ext/kernel_require.rb:54:in `require': cannot load such file -- openssl (LoadError)
-```
+
 
 따라서, rvm에서 openssl을 설치한 다음 이 openssl을 사용하여 이전 버전의 루비를 설치해야 합니다.
 
-```
+
 $ rvm pkg install openssl
 $ rvm install 2.3.1 --with-openssl-dir=$HOME/.rvm/usr
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 # Ruby 버전 3+에 대한 참고 사항
 
 루비 v3를 설치할 때는 특정 openssl 위치를 지정해야 할 수 있습니다.
@@ -127,7 +127,7 @@ $ rvm install 2.3.1 --with-openssl-dir=$HOME/.rvm/usr
 설치하기 전에 openssl 위치를 확인해주세요.
 
 - 위치 A
-```
+
 
 <div class="content-ad"></div>
 
@@ -167,4 +167,3 @@ $ rvm install ruby-3.1.0 --with-openssl-dir=/opt/homebrew/opt/openssl@3.1
 - https://github.com/rvm/rvm/issues/4607#issuecomment-619422100
 - https://github.com/rvm/rvm/issues/4607#issuecomment-621343322
 - https://mac.install.guide/homebrew/3.html
-```

@@ -52,7 +52,7 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ESP32 Firebase Tutorial Step 1](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_5.png)
 
 첫 번째 단계로 ESP32 장치에 대해 익명 로그인을 사용할 것입니다. 이후 자습서에서 더 똑똑한 로그인 방법을 만들 것입니다. 아래와 같이 익명 로그인을 활성화하고 저장 옵션을 선택하세요.
@@ -60,11 +60,11 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 ![ESP32 Firebase Tutorial Step 2](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_6.png)
 
 다음으로 모든 센서 데이터를 저장할 데이터베이스를 만들어야 합니다. 이를 위해 좌측 상단에 있는 Realtime Database 메뉴 옵션을 선택하고 Realtime Database 페이지로 이동합니다. 데이터베이스 생성 메뉴를 초기화하려면 데이터베이스 생성 버튼을 선택하세요.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_7.png)
 
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_8.png)
@@ -72,7 +72,7 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 데이터베이스 생성 메뉴에서 가장 가까운 위치를 선택한 다음, "다음"을 선택하세요. 데이터베이스를 잠긴 모드 또는 테스트 모드로 초기화할 수 있는 옵션이 표시됩니다. 현재는 테스트 모드를 선택하세요. 주요 차이점은 테스트 모드에서는 30일 동안 데이터베이스에 무단 액세스를 허용하는 데이터베이스 액세스 규칙이 적용됩니다. 프로젝트를 제품으로 이동할 예정이라면 향후 이 기능을 비활성화해야 합니다. "활성화" 버튼을 선택하세요.
 
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -178,23 +178,23 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 <div class="content-ad"></div>
 
-```markdown
+
 // Wi-Fi 인증 정보
 #define WIFI_SSID "WIFI_AP"
 #define WIFI_PASSWORD "WIFI_PASSWORD"
-```
+
 
 다음으로, Firebase 프로젝트 API 키를 저장하는 상수를 추가해야 합니다. 앞서 언급했듯이 Firebase 프로젝트 설정 페이지에서 API 키를 얻을 수 있습니다. API_KEY를 여러분의 API 키로 대체해주세요. 비슷하게 Firebase 실시간 데이터베이스 URL을 포함하여 본인의 URL로 대체해야 합니다.
 
-```markdown
+
 // 여러분의 Firebase 프로젝트 웹 API 키
 #define API_KEY "API_KEY"
 // 여러분의 Firebase 실시간 데이터베이스 URL
 #define DATABASE_URL "https://smart-hommie-default-rtdb.firebaseio.com"
-```
+
 
 그 다음으로, FirebaseESP32 라이브러리의 3개 객체를 초기화해야 합니다. 이 객체는 애플리케이션을 Firebase에 연결하는 데 중요합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -373,7 +373,7 @@ void loop() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_28.png)
 
 Now that we have our hardware configuration setup, let’s update our embedded application to utilise the DHT11 sensor. Let’s start by adding the DHT library from Adafruit to our project:
@@ -381,7 +381,7 @@ Now that we have our hardware configuration setup, let’s update our embedded a
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_29.png)
 
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_30.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -105,7 +105,7 @@ val job = scope.launch {
 코루틴 내에서 Job 인스턴스는 코루틴 자체를 나타냅니다. Job은 코루틴에 대한 핸들입니다. launch 또는 async로 생성하는 각 코루틴에 대해 고유하게 식별되고 라이프사이클을 관리하는 Job 인스턴스가 반환됩니다.
 
 Job은 일련의 상태를 거칠 수 있습니다: New, Active, Completing, Completed, Cancelling 및 Cancelled. 우리는 상태 자체에는 액세스할 수 없지만, Job의 속성에 액세스할 수 있습니다: isActive, isCancelled 및 isCompleted. 
-```
+
 
 <div class="content-ad"></div>
 
@@ -153,7 +153,7 @@ val job = scope.launch {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Kotlin Coroutine Essentials](/assets/img/2024-05-18-KotlinCoroutineEssentialsEverythingyouneedtoknow_2.png)
 
 코루틴은 작업 계층 구조에서 실행됩니다. 부모는 CoroutineScope 또는 다른 코루틴이 될 수 있습니다.
@@ -161,7 +161,7 @@ val job = scope.launch {
 # 부모 CoroutineContext:
 
 작업 계층 구조에서 각 코루틴은 CoroutineScope 또는 다른 코루틴이 될 수 있는 부모를 가지고 있습니다. 그러나 코루틴의 결과 CoroutineContext는 부모의 CoroutineContext와 다를 수 있습니다. 왜냐하면 이 공식에 따라 계산되기 때문입니다:
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -177,7 +177,7 @@ val job = scope.launch {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Coroutine Context](/assets/img/2024-05-18-KotlinCoroutineEssentialsEverythingyouneedtoknow_3.png)
 
 이 CoroutineScope에서 시작된 모든 코루틴은 CoroutineContext에 적어도 이러한 요소가 있을 것입니다. CoroutineName은 기본 값에서 가져오므로 회색으로 표시됩니다.
@@ -185,7 +185,7 @@ val job = scope.launch {
 새 코루틴의 부모 CoroutineContext를 알았으니, 그 코루틴의 실제 CoroutineContext는 다음과 같습니다:
 
 위 이미지에 표시된 CoroutineScope를 사용하여 위와 같이 새 코루틴을 생성하면:
-```
+
 
 <div class="content-ad"></div>
 

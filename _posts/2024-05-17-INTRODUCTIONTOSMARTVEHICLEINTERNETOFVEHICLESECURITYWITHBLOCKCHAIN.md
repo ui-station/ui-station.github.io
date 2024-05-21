@@ -128,7 +128,7 @@ XYZ Private Limited 회사에 자금을 이체하려고 한다고 가정해봅�
 
 <div class="content-ad"></div>
 
-```
+
 ![Introducing Smart Vehicle Security with Blockchain](/assets/img/2024-05-17-INTRODUCTIONTOSMARTVEHICLEINTERNETOFVEHICLESECURITYWITHBLOCKCHAIN_4.png)
 
 If client B wants to add some information into the block, then the system will generate an automatic vote poll which is completely unbiased. Client A has to agree upon the modification scheme, then only client B can make any changes in the data otherwise the request will be rejected.
@@ -136,7 +136,7 @@ If client B wants to add some information into the block, then the system will g
 Nowadays, cryptocurrencies are growing like never before.
 
 ## Why is security so crucial in the automobile industry?
-```
+
 
 <div class="content-ad"></div>
 

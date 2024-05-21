@@ -47,7 +47,7 @@ link: "https://medium.com/theuglymonster/the-everchanging-landscape-of-gaming-ha
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![The Landscape of Gaming: Have We Sacrificed Fun for Power](/assets/img/2024-05-18-TheLandscapeofGamingHaveWeSacrificedFunforPower_2.png)
 
 # DLC vs Cheat Codes
@@ -55,7 +55,7 @@ link: "https://medium.com/theuglymonster/the-everchanging-landscape-of-gaming-ha
 게임의 다른 요소 중 우리가 이제 거의 인정하지 않는 것은 치트 코드입니다. 제가 가장 먼저 기억하는 것 중 하나는 할아버지와 할머니와 함께 가게에 갈 때마다 노트북과 펜을 가져가는 것이었습니다. 각 여행은 내가 갖고 있는 게임을 위한 치트를 전담하는 특별한 페이지가 있는 잡지를 찾을 기회였죠. 시간이 흘러감에 따라, 잡지에서 멀어져 SuperCheats, CheatPlanet과 같은 웹사이트, 그리고 GameShark나 Action Replay와 같은 기기로 나아갔습니다.
 
 안타깝게도, 위, 위, 아래, 아래, 왼쪽, 오른쪽, 왼쪽, 오른쪽, B, A, start를 계속 누르는 시절은 사라졌습니다. 대신, 지금 우리가 가지고 있는 것은 DLC와 마이크로트랜잭션 형태의 기업적인 탐욕입니다. 이는 좋지 않은 게임 플레이 문제를 더 악화시킵니다. 게임을 완전히 개발하는 수고를 왜 해야 하나요? 완성된 게임과 동일한 가격으로 누락된 부분을 플레이어들에게 요금을 부과할 수도 있잖아요. 캐릭터 팩에 19.99달러, 확장에 39.99달러, 심지어 시즌 패스에 59.99달러를 지불할 수 있습니다. 사람들은 이러한 관행에 익숙해졌으니, 왜 안 하겠습니까?
-```
+
 
 <div class="content-ad"></div>
 

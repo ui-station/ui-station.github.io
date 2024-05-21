@@ -21,6 +21,5 @@ link: "https://medium.com/@boutnaru/the-windows-concept-journey-wow64win-dll-wow
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-17-TheWindowsConceptJourneywow64windllWow64ConsoleandWin32APILogging_0.png](/assets/img/2024-05-17-TheWindowsConceptJourneywow64windllWow64ConsoleandWin32APILogging_0.png)
-```

@@ -133,7 +133,7 @@ Docker와 Podman 사이에는 많은 명령어가 유사하지만, 이미지 및
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Switching to Podman: an Open-Source alternative to Docker](/assets/img/2024-05-18-SwitchingtoPodmananOpen-SourcealternativetoDocker_2.png)
 
 이미 이전에 언급한 바와 같이, Podman은 CLI를 사용하기를 원하지 않는 경우 필요한 모든 옵션을 갖춘 데스크톱 애플리케이션을 갖고 있습니다. 아래 이미지는 일상적으로 사용할 수 있는 가장 중요한 화면을 보여줍니다.
@@ -141,7 +141,7 @@ Docker와 Podman 사이에는 많은 명령어가 유사하지만, 이미지 및
 Docker Desktop과 유사하게, 이 앱은 컨테이너, 이미지 및 볼륨에 대한 메뉴를 갖고 있어 쉽게 작업을 수행할 수 있습니다.
 
 ![Switching to Podman: an Open-Source alternative to Docker](/assets/img/2024-05-18-SwitchingtoPodmananOpen-SourcealternativetoDocker_3.png)
-```
+
 
 <div class="content-ad"></div>
 

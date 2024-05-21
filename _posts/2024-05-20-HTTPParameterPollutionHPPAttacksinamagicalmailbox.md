@@ -11,7 +11,7 @@ link: "https://medium.com/@l0ok/http-parameter-pollution-hpp-attack-in-a-magical
 ---
 
 
-```markdown
+
 ![Magic Mailbox](/assets/img/2024-05-20-HTTPParameterPollutionHPPAttacksinamagicalmailbox_0.png)
 
 # H-PP란 무엇인가요?
@@ -19,7 +19,7 @@ link: "https://medium.com/@l0ok/http-parameter-pollution-hpp-attack-in-a-magical
 마법 같이 작동하는 우체통을 상상해보세요. 마법사에게 영감을 주는 편지를 보내는 우체통이 있습니다. 보내는 각 편지에는 "쿠키 만들기"나 "방 청소하기"와 같이 마법사에게 특별한 일을 할 것을 알려주는 지시사항을 적습니다. 이 지시사항을 파라미터라고 하는 종이에 기록합니다. 마법사에게 두 가지 이상의 일을 시키고 싶을 때는 "쿠키 만들기"와 "방 청소하기"와 같이 여러 개의 파라미터를 적습니다.
 
 그런데 어느 날 장난기 많은 친구가 장난을 치려고 합니다. 당신이 알아차리지 못하는 사이에 편지에 추가적인 지시 사항을 몰래 넣습니다. 그래서 "쿠키 만들기"와 "방 청소하기"만 있는 대신에 마법사가 "쿠키 만들기", "멍멍이 키우기", "방 청소하기"와 같이 추가 지시서를 받게 됩니다. 더 많은 지시사항 때문에 마법사가 헷갈리게 되고, 때로는 어떤 것을 따를지 모를 때도 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

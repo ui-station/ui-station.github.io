@@ -13,7 +13,7 @@ link: "https://medium.com/dbsql-sme-engineering/lakeview-dashboards-for-observab
 
 표 태그를 Markdown 형식으로 변경해보세요.
 
-```markdown
+
 ![Lakeview Dashboard](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_0.png)
 
 ## 저자:
@@ -22,7 +22,7 @@ Cody Austin Davis
 # Lakeview 대시보드 템플릿 시리즈 - 기사 1 - DBSQL Warehouse Advisor
 
 ## 소개
-```
+
 
 <div class="content-ad"></div>
 
@@ -71,7 +71,7 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Dashboard](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_4.png)
 
 이 대시보드는 해석이 어려운 모니터링 탭을 자동으로 가져와 시각화로 변환하여 창고에서 N개의 동시 클러스터로 확장해야 하는 빈도를 더 명확하게 보여줍니다. 좀 더 자세히 살펴보면, 특정 시간 기간 동안 창고가 N개 클러스터로 확장되기까지 소요된 시간 및 총 시간 중 % 비율을 정확하게 볼 수 있습니다.
@@ -79,7 +79,7 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 우리는 창고가 대략 80%의 시간 동안 1개 클러스터가 필요하고, 13%의 시간 동안 2개 클러스터가 필요하며, 대략 7%의 시간 동안 3개 클러스터, 그리고 1%의 시간 동안 4개 클러스터가 필요함을 명확히 볼 수 있습니다. 이를 통해 예측이 어려운 이러한 고비용 워크로드를 시간이 지남에 따라 얼마나 비용이 발생할지 예측하는데 도움이 되는 것은 물론, 이에 대한 변경 사항에 대해 계획하는 것도 더 쉽게 할 수 있습니다. 이 정보는 DBSQL의 어떠한 프로덕션 워크로드에 대비한 계획을 세우는 데 중요합니다.
 
 워크로드를 최적화하거나 POC를 실행하거나 사용 사례를 추가할 경우, 이 대시보드를 사용하여 사용 패턴에 미치는 영향을 정확히 파악하여 미리 계획할 수 있습니다. 이 부분은 작지만 굉장히 유용합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +93,7 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Lakeview Dashboards for Observability Series Article](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_6.png)
 
 ![Lakeview Dashboards for Observability Series Article](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_7.png)
@@ -101,7 +101,7 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 쿼리 실행 시간 및 대기 시간 추이를 확인할 수 있습니다. 이제 데이터 웨어하우스가 언제 더 혼잡하거나 덜 혼잡해지는 지 쉽게 파악할 수 있어 문제를 빠르게 찾을 수 있게 되었습니다. 그러나 실제 워크로드에 대한 평균 실행 시간만 살펴본다고 해결되지 않습니다. 실제 SLA에 따라 쿼리 시간을 추적해야하며, 이를 위해 P90, P95 및 P99와 같은 표준 지표를 더 계산해야 합니다. 이 대시보드는 이러한 지표를 자동으로 계산하고 표시합니다. 위 시각적 자료를 통해 쿼리 실행 시간을 추적하여 쿼리 성능 문제가 발생하는 정확한 시기를 찾을 수 있습니다(중간에 큰 증가를 보았나요? 아마 확인해야할 이상 현상일 것입니다). 웨어하우스가 포화 상태에 있는지 추적하기 위해 동일한 방법으로 쿼리 대기 시간도 살펴볼 수 있고, 웨어하우스가 더 많은 동시성을 필요로 할 수도 있습니다. 실제로 여러분은 이 둘을 결합하여 사용 사례의 SLA 요구 사항에 맞게 클러스터 크기를 조절해야 합니다.
 
 예를 들어, Databricks SQL로 구동되는 Downstream 데이터 애플리케이션이 있다고 가정해보겠습니다. 사용자들은 앱이 대부분의 쿼리를 1~2초 이내 또는 그 이하로 수행할 것으로 예상하며, 10초 이상 걸리는 것은 용인할 수 없습니다. 쿼리 실행 시간 차트의 P99 및 P95 백분위 지표를 확인하여 SLA 준수를 먼저 확인할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -211,6 +211,5 @@ DBSQL Advisor 템플릿 외에도, DBT 데이터베이스에서 DBSQL로 푸시�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_19.png)
-```

@@ -53,15 +53,15 @@ AWS 문서에 따르면 AWS Glue 작업의 최소 예약 시간은 5분이며, �
 
 AWS 계정이 있으면 검색 메뉴에서 S3를 검색하고 선택한 지역에 S3 버킷을 만들면 됩니다. 저는 버킷 이름으로 codewithyu를 선택했습니다.
 
-```markdown
+
 ![image](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_4.png)
-```
+
 
 생성 후에는 버킷에 파일을 업로드하고 Glue Crawler를 생성하여 파일을 처리할 수 있습니다. 버킷에 taxi_project라는 이름의 폴더를 만들어 파일을 업로드할 것입니다.
 
-```markdown
+
 ![image](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -75,7 +75,7 @@ AWS 계정이 있으면 검색 메뉴에서 S3를 검색하고 선택한 지역�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_7.png)
 
 ![image](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_8.png)
@@ -83,11 +83,11 @@ AWS 계정이 있으면 검색 메뉴에서 S3를 검색하고 선택한 지역�
 ![image](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_9.png)
 
 Finally, here are the full properties of the crawler:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![screenshot 1](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_10.png)
 
 스크린샷에서 볼 수 있듯이, 출력 및 스케줄링에서는 출력이 "On Demand"로 설정되어 있습니다. 특정 간격에서 작업을 실행하려는 경우 CRON 표현식을 사용해야 합니다 (자세한 내용은 crontab.guru를 방문하세요).
@@ -95,7 +95,7 @@ Finally, here are the full properties of the crawler:
 이 단계가 완료되면 다음으로 크롤러를 실행해야 합니다.
 
 ![screenshot 2](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_11.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -111,7 +111,7 @@ Lambda를 통해 이를 통합하려면 Lambda 서비스로 이동하고 새 함
 
 아래와 같이 표 태그를 마크다운 형식으로 변경해주세요.
 
-```markdown
+
 <img src="/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_12.png" />
 
 이 작업을 완료하려면 함수를 생성한 후 해당 람다 함수에 부여해야 할 권한을 추가해야 합니다.
@@ -119,11 +119,11 @@ Lambda를 통해 이를 통합하려면 Lambda 서비스로 이동하고 새 함
 <img src="/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_13.png" />
 
 권한을 부여하려면 설정 탭으로 이동하여 필요한 권한을 선택하실 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_14.png)
 
 In my case, I have added `AmazonS3FullAccess` and `AWSGlueConsoleFullAccess` permissions to the role attached to the function.
@@ -131,7 +131,7 @@ In my case, I have added `AmazonS3FullAccess` and `AWSGlueConsoleFullAccess` per
 ![image2](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_15.png)
 
 ## Writing the Lambda Function Code
-```
+
 
 <div class="content-ad"></div>
 
@@ -213,11 +213,11 @@ def lambda_handler(event, context):
 
 ## S3와 Lambda 연결
 
-Lambda를 S3에 연결하려면 Configuration 및 Trigger를 클릭하고 Add Trigger를 선택하여 새 트리거를 추가할 수 있습니다. taxi_project/ 접두사를 추가하는 것을 잊지 마세요.```
+Lambda를 S3에 연결하려면 Configuration 및 Trigger를 클릭하고 Add Trigger를 선택하여 새 트리거를 추가할 수 있습니다. taxi_project/ 접두사를 추가하는 것을 잊지 마세요.
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_16.png)
 
 Once done, click Add and you're all set!
@@ -225,7 +225,7 @@ Once done, click Add and you're all set!
 ![Image 2](/assets/img/2024-05-18-EndtoEndDataEngineeringforDataLakehousewithAirflowMinioKafkaApacheSparkApacheFlinkandElasticsearchPART2_17.png)
 
 Once a file is uploaded to the taxi_project folder, the taxi_crawler should be automatically triggered.
-```
+
 
 <div class="content-ad"></div>
 

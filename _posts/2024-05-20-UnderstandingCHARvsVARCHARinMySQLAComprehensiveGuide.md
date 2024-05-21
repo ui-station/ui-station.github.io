@@ -11,7 +11,7 @@ link: "https://medium.com/@ibrahimkarimeddin/understanding-char-vs-varchar-in-my
 ---
 
 
-```
+
 ![Understanding CHAR vs VARCHAR in MySQL: A Comprehensive Guide](/assets/img/2024-05-20-UnderstandingCHARvsVARCHARinMySQLAComprehensiveGuide_0.png)
 
 데이터베이스를 디자인할 때, 마주치게 될 중요한 결정 중 하나는 열에 적합한 데이터 유형을 선택하는 것입니다. 텍스트 데이터의 경우, MySQL은 두 가지 주요 옵션인 CHAR과 VARCHAR을 제공합니다. 두 유형 모두 문자열을 저장하는 데 사용되지만, 저장 및 성능에 상당한 영향을 미칠 수 있는 독특한 특성을 갖고 있습니다. 이 글은 CHAR과 VARCHAR 간의 차이점을 살펴봅니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@ibrahimkarimeddin/understanding-char-vs-varchar-in-my
 # 1- CHAR과 VARCHAR은 무엇인가요?
 
 ## CHAR 데이터 유형
-```
+
 
 <div class="content-ad"></div>
 

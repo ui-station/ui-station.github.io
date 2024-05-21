@@ -11,7 +11,7 @@ link: "https://medium.com/@billatnapier/one-person-saved-the-security-of-the-int
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-20-OnePersonSavedTheSecurityoftheInternet_0.png)
 
 태양 피해 공격은 위협 요소가 소프트웨어 공급망 공격으로 이동하고, 소프트웨어의 전달 과정에서 취약한 활동을 침투하는 것을 보여주었습니다. 이러한 위협 요소들은 종종 고급 공격 도구를 만들기 위해 시간, 자금 및 전문성을 갖고 있으며, 그들의 공격 방법은 소프트웨어 패치와 시스템 업그레이드를 통해 감지되지 않을 수 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@billatnapier/one-person-saved-the-security-of-the-int
 그래서 누군가 (아니면, 더 정확히는 일부 국가/법 집행 기관)가 인터넷에 백도어를 설치하려고 했으며, 방송 매체는 거의 전혀 이야기에 언급하지 않았습니다. 놀랍게도, 사이버 보안 정보 기관 중 많은 기관들은 기본적으로 조언만 반복하는 것 외에는 조용했습니다. 루머를 퍼뜨리고 싶지 않지만... [거기로 가면 안 되겠죠, "그들"이 감시 중일 수 있으니까].
 
 ## 안드레스 프로인트
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -41,7 +41,7 @@ Jia Tan은 이 라이브러리에 후문을 삽입한 사람 또는 그룹입니
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![One Person Saved The Security of the Internet](/assets/img/2024-05-20-OnePersonSavedTheSecurityoftheInternet_2.png)
 
 ## 타임라인
@@ -49,7 +49,7 @@ Jia Tan은 이 라이브러리에 후문을 삽입한 사람 또는 그룹입니
 2005년부터 2008년까지, Lasse Collins와 다른 사람들은 .xz 파일 형식을 만들었으며, 이는 LZMA 압축을 사용합니다. 이는 많은 Linux 커널의 핵심 부분이 되었습니다. 2021년과 2022년에는 Jia가 xz-devel 메일링 리스트에 여러 패치를 게시합니다. “Jigar Kumar”라는 사용자가 메일링 리스트에 여러 게시물을 작성하여 Jia의 패치가 적용되지 않은 이유를 묻습니다. Lasse는 2022년 6월에 다음과 같이 응답했습니다:
 
 Jia의 최초의 중요한 업데이트 커밋은 이 게시물 이후에 발생했으며, Jia가 저자로 정의되었습니다. 그럼에도 불구하고 Jigar는 여전히 느린 업데이트를 불평했습니다. Dennis Ens를 비롯한 다른 사람들도 Lasse에게 압박을 가하였습니다:
-```
+
 
 <div class="content-ad"></div>
 

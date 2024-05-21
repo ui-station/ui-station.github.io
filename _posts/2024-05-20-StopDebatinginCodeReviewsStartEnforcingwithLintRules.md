@@ -122,7 +122,7 @@ private companion object {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Lint Rule Violation](/assets/img/2024-05-20-StopDebatinginCodeReviewsStartEnforcingwithLintRules_2.png)
 
 Oops! It looks like we've encountered some violations of the lint rule in our project. This gives us two options:
@@ -131,7 +131,7 @@ Oops! It looks like we've encountered some violations of the lint rule in our pr
 - Or add the violating classes to the baseline. The baseline is a list of files or classes that we intentionally exclude from this lint rule. This could include legacy code we're not ready to refactor yet or valid cases where the lint rule shouldn't be applied.
 
 To apply a baseline, we can create a BASELINE array in the companion object and pass it as a parameter in the withoutName function to filter out those classes. In our case, we will add the BaseViewModel to the baseline since it can't extend itself.
-```
+
 
 <div class="content-ad"></div>
 
@@ -155,7 +155,7 @@ private companion object {
 참고: 기술 부채를 해결하는 과정에서 베이스라인에 포함되는 클래스 수를 점차 감소시키는 것이 좋습니다. 그 목록이 계속 늘어나면 좋지 않은 신호입니다.
 
 # 혜택 #1: 아키텍처 강제화
-```
+
 
 <div class="content-ad"></div>
 
@@ -290,7 +290,7 @@ fun postProfile(@Field("id") id: Long, @Field("name") name: String)
 ```
 
 이 문제를 방지하기 위한 린트 규칙을 만드는 것이 얼마나 완벽한 사용 사례인가요!
-```
+
 
 <div class="content-ad"></div>
 
@@ -330,7 +330,7 @@ class RetrofitFieldParamsUseFormUrlEncoded: BehaviorSpec() {
 - Then: 이러한 필터링된 함수들이 @FormUrlEncoded 주석도 가지고 있는지 확인합니다.
 
 # Konsist와 함께한 프로젝트 구조
-```
+
 
 <div class="content-ad"></div>
 
@@ -344,7 +344,7 @@ class RetrofitFieldParamsUseFormUrlEncoded: BehaviorSpec() {
 
 <div class="content-ad"></div>
 
-```md
+md
 ![이미지](/assets/img/2024-05-20-StopDebatinginCodeReviewsStartEnforcingwithLintRules_5.png)
 
 ```js
@@ -370,7 +370,7 @@ dependencies {
 참고: 여기에 모듈의 나머지를 종속성으로 추가할 필요가 없습니다. Konsist는 기본적으로 전체 프로젝트에 액세스할 수 있으며 명시적인 종속성이 필요하지 않습니다.
 
 이 접근 방식으로 다른 이점은 코드 리뷰에서 리뷰하는 대신 리뷰어가 관례 규칙을 집행할 수 있다는 것입니다. 단위 테스트와 별도로 출력을 실행할 수 있습니다. `:'module':test` Gradle 작업을 사용하여 린트 규칙을.
-```
+
 
 <div class="content-ad"></div>
 

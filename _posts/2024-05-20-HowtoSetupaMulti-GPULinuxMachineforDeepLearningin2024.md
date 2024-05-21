@@ -110,7 +110,7 @@ Downloads 폴더에서 터미널을 열고 다음 명령을 실행하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
@@ -119,18 +119,18 @@ rm -rf ~/miniconda3/miniconda.sh
 # initiate conda
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
-```
+
 
 터미널을 닫고 다시 열어주세요. 이제 conda 명령어를 사용할 수 있어요.
 
 ## 단계-3 PyTorch 설치하기
 
 (선택 사항) — 프로젝트용 새로운 conda 환경을 생성하세요. `environment-name`을 원하는 이름으로 바꿀 수 있어요. 일반적으로 제 프로젝트 이름으로 지정해요. 💡 프로젝트 작업 전후에 conda activate `environment-name` 및 conda deactivate `environment-name` 명령어를 사용할 수 있어요.
-```
+
 
 <div class="content-ad"></div>
 
-```js
+js
 conda create -n <environment-name> python=3.11
 
 # 환경 활성화
@@ -147,7 +147,7 @@ pip3 install torch torchvision torchaudio
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![PyTorch Installation](/assets/img/2024-05-20-HowtoSetupaMulti-GPULinuxMachineforDeepLearningin2024_3.png)
 
 PyTorch을 설치한 후 터미널에서 PyTorch에서 볼 수 있는 GPU의 수를 확인하세요.
@@ -161,7 +161,7 @@ python
 ```
 
 이 명령은 시스템에 설치된 GPU의 수를 출력해야 합니다 (내 경우엔 8개), 그리고 nvidia-smi 명령에 나열된 GPU 수와 일치해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 

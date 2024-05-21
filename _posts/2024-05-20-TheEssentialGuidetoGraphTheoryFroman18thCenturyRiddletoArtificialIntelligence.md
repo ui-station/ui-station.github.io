@@ -281,7 +281,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_6.png)
 
 신경망을 그래프로 모델링하면 그들의 구조를 이해하고 전달하는 강력한 도구를 얻습니다. 그래프 기반 접근법은 다음과 같은 것이 가능합니다:
@@ -291,7 +291,7 @@ plt.show()
 - 연구 및 개발 지원: 연구자들은 그래프를 사용하여 새로운 네트워크 아키텍처를 제안하고 테스트할 수 있습니다. 그래프의 구조를 조정함으로써, 정보 처리의 새로운 방법을 실험해볼 수 있습니다.
 
 신경망을 그래프로 추상화함으로써, 우리는 모델을 분석하기 위한 다양한 그래프 이론 도구와 지표를 활용할 수도 있습니다. 이는 최단 경로를 조사하는 것(입력부터 출력까지의 가장 적은 변환 횟수를 이해하기 위해), 네트워크 중심성(가장 중요한 뉴런을 찾기 위해) 또는 심지어 커뮤니티 탐지(긴밀하게 협력하는 뉴런 군집 식별)를 포함할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -330,7 +330,7 @@ plt.show()
 의사결정 트리는 기계 학습에서 그래프 이론의 중요성을 전통적으로 보여주며, 알고리즘의 단계별 논리를 명확히 제시하는 구조를 제공합니다. 이 경우에는 방향 그래프의 간단한 구조가 필요에 따라 확장되어 시작부터 끝까지 알고리즘의 결정 경로를 보여줍니다. 이는 알고리즘이 데이터를 처리하여 특정 결론에 도달하는 방식에 대한 직관적인 이해를 제공하며, 지능적이고 데이터 중심의 솔루션을 개발하는 데 그래프 이론의 실용적인 응용을 보여줍니다.
 
 # 그래프 이론의 인공지능에 유용한 추상화 — 비지도 학습
-```
+
 
 <div class="content-ad"></div>
 
@@ -375,7 +375,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_8.png" />
 
 오일러의 스위스 뿌리를 기리며, 더 복잡한 배열과 고차원에서이 전략이 어떻게 더 유용해지는지 모델링하여 클러스터링 알고리즘의 능력을 테스트하는 데 자주 사용되는 클래식 데이터 세트 인 스위스 롤 모양을 살펴보겠습니다. 특히 복잡한 매니폴드 구조를 가진 데이터를 해독할 수있는 알고리즘 (Fig 6b 참조) 입니다. 이 경우에는 스위스 롤 모양을 구성하는 포인트 (노드)를 두 가지 서로 다른 클러스터로 구분 할 수있을까요?
@@ -406,7 +406,7 @@ plt.show()
 ```
 
 <img src="/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_9.png" />
-```
+
 
 <div class="content-ad"></div>
 

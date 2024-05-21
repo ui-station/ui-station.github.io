@@ -11,7 +11,7 @@ link: "https://medium.com/@alexroz/6-python-libraries-to-make-beautiful-maps-9fb
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_0.png)
 
 어느 순간 모든 데이터 과학자는 지리 공간 데이터를 분석하거나 모델링할 필요에 직면하게 되며, 결정적인 시각적 부분 없이는 수행할 수 없습니다. 저는 지도를 좋아하는 사람이라서, 여기에서 정보를 제공하게 된 이 6가지 멋진 라이브러리를 공유해 주어 기쁩니다. 여기에서 공유하는 라이브러리들 중 일부는 정적 시각화에 더 적합하고, 다른 것들은 대화식 시각화에 더 적합하기 때문에 해결할 수 있는 문제 범위가 넓습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@alexroz/6-python-libraries-to-make-beautiful-maps-9fb
 # 1. Cartopy
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -77,7 +77,7 @@ ax.plot(lon,lat,  'bo', markersize=6, color = 'red', transform=ccrs.Geodetic())#
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_2.png)
 
 위 결과에서 알 수 있듯이, cartopy는 맵을 사용자 정의하는 다양한 방법을 제공합니다. 색상, 선 두께, 밀도 및 레이어의 다른 매개변수를 수동으로 설정할 수 있습니다. 게다가 코드 자체가 정말 직관적이고 이해하기 쉽습니다.
@@ -85,11 +85,11 @@ ax.plot(lon,lat,  'bo', markersize=6, color = 'red', transform=ccrs.Geodetic())#
 이 라이브러리의 또 다른 큰 장점은 사용할 수 있는 다양한 투영법들인데, cartopy를 사용하여 시각화할 수 있는 데이터 범위가 매우 넓습니다!
 
 ![Image 2](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_3.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Python libraries to make beautiful maps](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_4.png)
 
 Cartopy is one of the tools I regularly use in my work, and I hope that you’ll find it extremely helpful as well!
@@ -97,7 +97,7 @@ Cartopy is one of the tools I regularly use in my work, and I hope that you’ll
 ## 2. Folium
 
 This library is probably the most popular in the industry, since it’s interactive (it has JS under the hood) and highly customizable. And to start plotting (after installation) you can simply call:
-```
+
 
 <div class="content-ad"></div>
 
@@ -118,7 +118,7 @@ map
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_6.png)
 
 이제 세계 국가들을 추가해보겠습니다. 그러려면 기본 geopandas 데이터프레임을 사용할 거에요:
@@ -135,7 +135,7 @@ map
 ```
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -156,7 +156,7 @@ fig.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*XGb8bY8LL26sKv2Wmkb-AQ.gif)
 
 # 4. ipyleaflet
@@ -169,11 +169,11 @@ from ipyleaflet import Map
 m = Map(center=(45, 2), zoom=5)
 m
 ```
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_8.png)
 
 별 거 없죠? 그럼 이제 MODIS Terra 제품을 배경지도로 사용해 봅시다!
@@ -185,7 +185,7 @@ m
 ```
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_9.png)
-```
+
 
 <div class="content-ad"></div>
 

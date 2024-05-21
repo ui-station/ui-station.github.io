@@ -11,7 +11,7 @@ link: "https://medium.com/@christianhenrikreich/microsoft-fabric-and-databricks-
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_0.png)
 
 전통적인 관계형 데이터베이스의 가장 강력한 기능 중 하나는 데이터 일관성과 데이터 품질과 관련된 주요 키와 해당 고유성을 보장하는 것입니다. 이는 외래 키와 고유 열에도 해당됩니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@christianhenrikreich/microsoft-fabric-and-databricks-
 Microsoft Fabric Warehouse와 Databricks with Unity Catalog에서 주요 키를 선언하는 것은 가능하지만 이것들은 강제되지 않습니다. Microsoft Fabric에서 심지어 우리는 주요 키를 강제하지 않도록 선언합니다.
 
 ![이미지](/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,7 +53,7 @@ B+ 트리로 색인화된 데이터를 가지고 있는 경우, 많은 데이터
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_5.png)
 
 # Microsoft Fabric나 Databricks와 비교해 보면 어떻게 될까요?
@@ -61,7 +61,7 @@ B+ 트리로 색인화된 데이터를 가지고 있는 경우, 많은 데이터
 컴퓨팅과 스토리지를 분리할 때, 데이터는 기본적으로 스토리지에 저장되며 메모리에 저장되지 않습니다(캐싱되는 경우도 있음).
 
 Spark를 예로 들어보겠습니다. Spark 작업을 시작할 때, 스토리지에 있는 데이터는 파티션을 제거하고 파일을 제거하며, 파케이트에서 제거되어 Spark 메모리로 읽히기 전 성능을 높이기 위해 정리됩니다. 작업 중에 누락된 데이터는 검색할 수 없습니다(이에 대한 로직을 작성하지 않는 한). 데이터를 스토리지에서 메모리로 옮기는 데는 메모리에서 데이터를 옮기는 것보다 더 오랜 시간이 걸립니다. 데이터는 여전히 메모리에서 CPU로 이동해야 하지만, 스토리지에서 메모리로 이동하는 추가 단계가 추가됩니다.
-```
+
 
 <div class="content-ad"></div>
 

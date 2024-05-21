@@ -168,7 +168,7 @@ Result:
 ![Image](/assets/img/2024-05-20-JavaImmutabilitytopInterviewquestions_1.png)
 
 9. Immutable 클래스 내에서 가변 컬렉션을 어떻게 처리하시겠습니까?
-```
+
 
 <div class="content-ad"></div>
 

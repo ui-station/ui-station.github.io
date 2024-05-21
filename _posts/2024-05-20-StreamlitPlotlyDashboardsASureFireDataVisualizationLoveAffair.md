@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/streamlit-plotly-dashboards-a-sure-fire-d
 ---
 
 
-```markdown
+
 ![StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair](/assets/img/2024-05-20-StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair_0.png)
 
 Python Streamlit은 인터랙티브 웹 인터페이스를 만드는 놀라운 프레임워크입니다.
@@ -19,7 +19,7 @@ Python Streamlit은 인터랙티브 웹 인터페이스를 만드는 놀라운 �
 Python Plotly는 지도 및 차트와 같은 데이터 시각화를 효율적으로 만드는 훌륭한 라이브러리입니다. 데이터 시각화를 아름답게 표시합니다.
 
 Streamlit과 Plotly는 함께하면 천생연분입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -167,7 +167,7 @@ asylum_data = all_countries_asylum.merge(asylum_data, on='안보 국가', how='l
 여기서 첫 번째 단계는 데이터를 연도별로 분리하는 것입니다. 이는 슬라이더로 선택한 연도에 따라 각 국가로 분리된 데이터를 만드는 과정입니다. 그 다음으로 모든 국가에 값이 있는지 확인하기 위해 fillna() 함수를 사용하여 모든 빈 열에 0을 추가합니다.
 
 ## 단계 6: 코로플레스 맵 생성하기
-```
+
 
 <div class="content-ad"></div>
 

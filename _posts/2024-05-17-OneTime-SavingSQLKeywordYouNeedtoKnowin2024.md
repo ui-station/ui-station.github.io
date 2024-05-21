@@ -94,7 +94,7 @@ GROUP BY sales_manager
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![OneTime-SavingSQLKeywordYouNeedtoKnowin2024](/assets/img/2024-05-17-OneTime-SavingSQLKeywordYouNeedtoKnowin2024_4.png)
 
 여기에서 원하는 것을 얻을 수 있지만, 여전히 당신이나 동료들이 생각할 문제가 있습니다: '소피아'나 '파블로'가 총으로 몇 개의 제품을 배송했는지 정확히 알고 싶다면?
@@ -135,7 +135,7 @@ GROUP BY sales_manager
         , product_category
         , month_name WITH ROLLUP;
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

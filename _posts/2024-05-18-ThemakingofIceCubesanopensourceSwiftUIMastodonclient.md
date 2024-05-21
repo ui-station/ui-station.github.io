@@ -81,7 +81,7 @@ Ice Cubes에 대해서 궁금하신 이유가 있다면, 해당 이름은 어디
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_7.png)
 
 It also uses NavigationStack throughout the app with programmatic navigation and a centralized router:
@@ -89,7 +89,7 @@ It also uses NavigationStack throughout the app with programmatic navigation and
 ![image2](/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_8.png)
 
 These are just some examples of the SwiftUI and iOS features that the app showcases. Feel free to explore the codebase or run the app directly on your device!
-```
+
 
 <div class="content-ad"></div>
 
@@ -184,6 +184,7 @@ public enum RouterDestinations: Hashable {
   case rebloggedBy(id: String)
   case accountsList(accounts: [Account])
 }
+```
 
 여기서 시트에 대한 동일한 내용을 확인할 수 있습니다:
 
@@ -245,7 +246,7 @@ struct NotificationsTab: View {
 ```
 
 보시다시피, RouterPath StateObject의 path를 NavigationStack에 연결합니다. 이렇게 하면 NavigationStack이 해당 path에 대한 프로그래밍 방식 조작을 다룰 것입니다. 또한 NavigationLink에서의 변경 사항을 반영하도록 업데이트합니다. NavigationLink를 자주 사용하지 않아요. 제약이 많이 따르기 때문에 많은 수정 작업과 navigate(to:) 함수를 자주 사용합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -284,7 +285,7 @@ Button {
 이제 Ice Cubes 내에서 라우터가 작동하는 방법에 대해 알게 되셨습니다. 그리고 코드는 오픈 소스이므로 GitHub에서 전체 코드를 살펴볼 수 있습니다.
 
 이번 Ice Cubes에 관한 첫 번째 글은 여기서 마치겠습니다만, 다음에 읽고 싶은 내용에 대해 댓글이나 GitHub, Mastodon 등으로 연락해주시면 기쁠 것입니다!
-```
+
 
 <div class="content-ad"></div>
 

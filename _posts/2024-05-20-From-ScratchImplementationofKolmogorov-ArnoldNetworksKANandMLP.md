@@ -28,7 +28,7 @@ AI 커뮤니티에서 KAN이 널리 받아들여질지는 시간이 결정할 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image1](/assets/img/2024-05-20-From-ScratchImplementationofKolmogorov-ArnoldNetworksKANandMLP_3.png)
 
 이때 b는 뉴런의 편향으로, 학습 가능합니다. "손실" 함수 L은 네트워크의 예측 품질을 지면 진실에 대해 평가합니다. 
@@ -39,7 +39,7 @@ AI 커뮤니티에서 KAN이 널리 받아들여질지는 시간이 결정할 �
 ![Image2](/assets/img/2024-05-20-From-ScratchImplementationofKolmogorov-ArnoldNetworksKANandMLP_4.png)
 
 ![Image3](/assets/img/2024-05-20-From-ScratchImplementationofKolmogorov-ArnoldNetworksKANandMLP_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -55,19 +55,19 @@ AI 커뮤니티에서 KAN이 널리 받아들여질지는 시간이 결정할 �
 
 제1차 논문에서 설명된 대로, Kolmogorov-Arnold Network (KAN) 뉴런의 독특한 점은 엣지 함수 φ가 비선형 함수 fk의 선형 조합으로 정의되어 있다는 것입니다.
 
-```markdown
+
 ![image](/assets/img/2024-05-20-From-ScratchImplementationofKolmogorov-ArnoldNetworksKANandMLP_7.png)
-```
+
 
 ## 3. 완전 연결 계층
 
-```markdown
+
 ![image](/assets/img/2024-05-20-From-ScratchImplementationofKolmogorov-ArnoldNetworksKANandMLP_8.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-20-From-ScratchImplementationofKolmogorov-ArnoldNetworksKANandMLP_9.png" />
 
 # 4. 피드포워드 네트워크
@@ -79,7 +79,7 @@ AI 커뮤니티에서 KAN이 널리 받아들여질지는 시간이 결정할 �
 역전파 중에는, 손실 그래디언트는 레이어의 입력에 대한 것으로 먼저 초기화됩니다.
 
 <img src="/assets/img/2024-05-20-From-ScratchImplementationofKolmogorov-ArnoldNetworksKANandMLP_10.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +96,7 @@ AI 커뮤니티에서 KAN이 널리 받아들여질지는 시간이 결정할 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-From-ScratchImplementationofKolmogorov-ArnoldNetworksKANandMLP_12.png)
 
 이 문서에서는 Kolmogorov-Arnold Networks (KAN)와 고전적인 Multi-Layer Perceptrons (MLP)의 아키텍처와 수학적 기본을 개요로 제시했습니다. 이러한 네트워크에서 역전파(backpropagation) 및 경사 하강(gradient descent)을 구현하는 데 필요한 도함수 계산을 제공했습니다. 이 유연한 뉴런 구조를 사용하여 이제 numpy를 사용하여 Python에서 KAN 및 MLP를 구현할 수 있습니다.
@@ -104,7 +104,7 @@ AI 커뮤니티에서 KAN이 널리 받아들여질지는 시간이 결정할 �
 ## 6. 참고 문헌
 
 [1] Ziming Liu, Yixuan, Sachin Vaidya, Fabian Ruehle, James Halverson, Marin Soljacic, Thomas Y. Hou, Max Tegmark. KAN: Kolmogorov-Arnold networks. arXiv preprint arXiv:2404.19756, 2024 [링크]
-```
+
 
 <div class="content-ad"></div>
 
@@ -143,14 +143,14 @@ KANs에서 그리드는 스플라인 기저 함수가 정의된 입력 공간의
 
 아래는 Markdown 형식의 테이블 태그입니다.
 
-```markdown
+
 | Tag        | Description         |
 | -----------|---------------------|
 | <img>      | 이미지 태그          |
 | <a>        | 링크 태그            |
 | <table>    | 테이블 태그          |
 | <h1> - <h6> | 제목 태그           |
-```
+
 
 <div class="content-ad"></div>
 

@@ -61,7 +61,7 @@ choco install k9s
 ```
 
 여기까지가 가장 어려운 부분이라고 믿어줘요. 이제부터는 모든 게 매우 쉽고 직관적입니다!
-```
+
 
 <div class="content-ad"></div>
 

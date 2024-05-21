@@ -11,7 +11,7 @@ link: "https://medium.com/@akileshjayaraman31/is-your-data-safe-introducing-a-so
 ---
 
 
-```markdown
+
 ![Lockdown](/assets/img/2024-05-20-IsYourDataSafeIntroducingaSolutionItsCalledLockdown_0.png)  
 
 소개:  
@@ -21,7 +21,7 @@ link: "https://medium.com/@akileshjayaraman31/is-your-data-safe-introducing-a-so
 
 - 견고한 암호화: Linux 통합 키 설정 (LUKS) 표준을 사용하여 디스크 암호화에 강력한 보안을 제공합니다.
 - 사용하기 쉬운 인터페이스: Lockdown은 간단한 명령줄 인터페이스를 제공하여 암호화 및 복호화 작업을 직관적이고 쉽게 수행할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

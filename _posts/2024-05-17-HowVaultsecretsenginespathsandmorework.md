@@ -221,7 +221,7 @@ path "identity/oidc/provider/+/authorize" {
 
 권한은 누적되므로 사용자가 여러 정책과 관련이 있는 경우 모든 정책에서 모든 권한을 갖습니다.
 
-그러나 정책들이 함께 수집될 때 두 정책 경로가 겹칠 때, 예를 들어 secrets/* 및 secrets/my-secret과 같은 경우, 더 구체적인 경로의 기능이 사용됩니다. 더 정확히는 Hashicorp 문서에 따르면, 우선순위 순서로 두 유사한 경로 p1 및 p2가 주어질 때, p2가 선호되며 다음과 같은 경우 선택됩니다:```
+그러나 정책들이 함께 수집될 때 두 정책 경로가 겹칠 때, 예를 들어 secrets/* 및 secrets/my-secret과 같은 경우, 더 구체적인 경로의 기능이 사용됩니다. 더 정확히는 Hashicorp 문서에 따르면, 우선순위 순서로 두 유사한 경로 p1 및 p2가 주어질 때, p2가 선호되며 다음과 같은 경우 선택됩니다:
 
 <div class="content-ad"></div>
 
@@ -286,7 +286,7 @@ Vault는 이를 그룹을 사용하여 모델링합니다. 그룹은 임의의 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![image](/assets/img/2024-05-17-HowVaultsecretsenginespathsandmorework_5.png)
 
 이제 그룹은 정책과 연관시킬 수 있습니다. 해당 그룹의 모든 엔티티는 해당 그룹이나 부모, 조부모 그룹의 정책을 받습니다.

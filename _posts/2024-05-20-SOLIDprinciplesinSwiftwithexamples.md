@@ -138,7 +138,7 @@ import Foundation
 ```
 
 SRP는 다음과 같은 이점을 제공합니다:
-``` 
+ 
 
 <div class="content-ad"></div>
 
@@ -411,7 +411,7 @@ struct Person: Codable {
 ```
 
 OCP의 이점은 다음과 같을 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 

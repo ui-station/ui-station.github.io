@@ -21,7 +21,7 @@ link: "https://medium.com/@rahulsoni4/have-you-ever-wondered-if-theres-a-dynamic
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![DatabricksLiquidClustering](/assets/img/2024-05-20-DatabricksLiquidClustering_0.png)
 
 이 그래프는 연도별 테이블 행 수를 예측하고 데이터 분포에서 상당한 치우침을 보여줍니다. 이 치우침은 소비자가 쿼리에서 연도 열을 자주 필터로 사용하기 때문에 특히 관련이 있습니다.
@@ -55,7 +55,7 @@ CREATE TABLE kaggle_partitioned (
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![데이터 분포의 그림적 표현](/assets/img/2024-05-20-DatabricksLiquidClustering_2.png)
 
 더 자세히 데이터 분포를 나타낸 그림을 살펴보면, 2020년 3월에 가장 많은 데이터가 있고, 그 뒤를 이어서 1월과 2월이, 다른 달들은 더 작은 파티션으로 이어지고 있습니다.
@@ -63,7 +63,7 @@ CREATE TABLE kaggle_partitioned (
 그래서, 테이블이 과분할되었는지? 아니면 과소분할되었는지? 아니면 둘 다인가요?
 
 다음 그림이 어떤 연관성이 있나요? 무슨 의미를 전달하나요?
-```
+
 
 <div class="content-ad"></div>
 

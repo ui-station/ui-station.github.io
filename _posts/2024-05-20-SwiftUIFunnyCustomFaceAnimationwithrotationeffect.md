@@ -11,7 +11,7 @@ link: "https://medium.com/@ganeshrajugalla/swiftui-funny-custom-face-animation-w
 ---
 
 
-```markdown
+
 ![Funny Custom Face Animation](/assets/img/2024-05-20-SwiftUIFunnyCustomFaceAnimationwithrotationeffect_0.png)
 
 저는 원형과 둥근 직사각형 같은 형태를 사용하여 사용자 정의 얼굴을 만들어보았어요. 눈이 회전하는 애니메이션도 추가했답니다.
@@ -100,7 +100,7 @@ extension FunnyFaceView {
 ```
 
 ![Funny Custom Face Animation](https://miro.medium.com/v2/resize:fit:590/1*ZUIvBP0Uf6Me8MkBYtu0Sg.gif)
-```
+
 
 <div class="content-ad"></div>
 

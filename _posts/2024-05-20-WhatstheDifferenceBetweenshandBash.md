@@ -88,7 +88,7 @@ $ file -h /bin/sh
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 echo Hello, World!
 ```
@@ -98,7 +98,7 @@ echo Hello, World!
 ## 3.2. 흔한 실수
 
 대부분의 셸 스크립트는 첫 번째 줄에 #!/bin/sh를 가지고 있지만, /bin/sh가 Bourne 호환 셸을 가리키는 심볼릭 링크일 수 없다는 점을 알아야 합니다. 때로는 스크립트 작성자들이 /bin/sh가 /bin/bash 또는 /bin/dash를 가리킨다고 가정하지만, 이러한 것은 필수적이지 않을 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -174,7 +174,7 @@ fi
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```sh
 $ chmod +x is_even.sh
 $ ./is_even
@@ -187,7 +187,7 @@ $ ./is_even
 # 5. 어떤 것을 사용해야 할까요?
 
 두 쉘 모두 유용하며, 다른 상황에서 활용할 수 있습니다. 예를 들어, sh를 사용하면 스크립트를 여러 시스템 간에 호환되게 할 수 있습니다. 반면에 Bash는 유연한 구문과 더 매력적인 기능을 제공하기 때문에 선택할 수도 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

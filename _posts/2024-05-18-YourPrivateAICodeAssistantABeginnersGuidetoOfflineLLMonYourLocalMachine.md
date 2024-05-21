@@ -53,7 +53,7 @@ link: "https://medium.com/@jaroslav-pantsjoha/your-private-ai-playground-a-begin
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-YourPrivateAICodeAssistantABeginnersGuidetoOfflineLLMonYourLocalMachine_2.png)
 
 It’s mostly found on Huggingface, but there are other repos like Kaggle — Think of it as a “Dockerhub for LLMs”. We won`t go into LLM Model formats available, as we can be here all day, and this post will shortly be long enough.
@@ -61,7 +61,7 @@ It’s mostly found on Huggingface, but there are other repos like Kaggle — Th
 ## Checkout Model Leaderboard to help pick the LLMs you’re after
 
 Huggingface Does have handy leaderboards, where you can pick the “Best Performing Model for it’s purpose” be it for chat, reasoning, Coding and other use cases, may want to poke around here to have an idea of what model you may want to pick for You use case — perhaps even in the future.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@atulkumar_68871/accessing-gpt-4o-via-openai-api-edaa9
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-20-AccessingGPT-4oviaOpenAIAPI_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@atulkumar_68871/accessing-gpt-4o-via-openai-api-edaa9
 OpenAI가 최근에 발표한 GPT-4o는 텍스트, 이미지, 비디오 및 오디오 분석에 강력한 능력을 갖춘 첫 번째 멀티 모달 모델입니다. 이는 생성적 AI 모델의 응용 프로그램을 크게 확장시켰습니다. 이 블로그에서는 현재 텍스트 및 이미지 입력을 지원하는 API를 통해 이 모델을 사용하는 방법을 보여 드리려고 합니다. 모든 기능이 아직 제공되지 않았지만, OpenAI가 곧 출시할 예정입니다.
 
 # 특징
-```
+
 
 <div class="content-ad"></div>
 
@@ -76,11 +76,11 @@ print("조수: " + completion.choices[0].message.content)
 물론이죠! 2 + 2 = 4. 다른 도움이 필요하시면 언제든지 물어보세요!
 
 Json 모드에서 텍스트 생성하기
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 completion = client.chat.completions.create(
   model=MODEL,
   response_format={"type": "json_object"},
@@ -91,12 +91,12 @@ completion = client.chat.completions.create(
 )
 
 json.loads(completion.choices[0].message.content)
-```
+
 
 출력:
 
 '‘workoutRoutine’: '‘week’: 1, ‘days’: '‘Monday’: '‘muscleGroup’: ‘Chest and Triceps’, ‘exercises’: ['‘name’: ‘Bench Press’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Incline Dumbbell Press’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Tricep Dips’, ‘sets’: 3, ‘reps’: 15', '‘name’: ‘Tricep Pushdown’, ‘sets’: 3, ‘reps’: 15']', ‘Tuesday’: '‘muscleGroup’: ‘Back and Biceps’, ‘exercises’: ['‘name’: ‘Pull-Ups’, ‘sets’: 4, ‘reps’: 10', '‘name’: ‘Deadlifts’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Barbell Rows’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Bicep Curls’, ‘sets’: 3, ‘reps’: 15']',...
-```
+
 - 이미지 이해
 
 <div class="content-ad"></div>

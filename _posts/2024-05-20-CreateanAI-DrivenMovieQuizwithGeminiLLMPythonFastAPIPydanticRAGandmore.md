@@ -159,7 +159,7 @@ Poetry가 도와줄 수있는 세 가지 주요 작업은 빌드, 게시 및 추
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Create an AI-Driven Movie Quiz with GeminiLL, MPython, FastAPI, Pydantic, RAG, and more](/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_2.png)
 
 시를 사용하면 가상 환경을 쉽게 생성할 수 있어요. 기본적으로 시는 시스템 내의 중앙 폴더에 가상 환경을 만들어요. 그러나 저와 같이 프로젝트 폴더 내에서 가상 환경을 사용하길 원한다면 간단한 설정 변경이 필요해요:
@@ -169,7 +169,7 @@ poetry config virtualenvs.in-project true
 ```
 
 이제 poetry new를 사용하여 새 Python 프로젝트를 생성할 수 있어요. 시는 시스템의 기본 Python과 연결된 가상 환경을 만들어 줄 거예요. 이를 pyenv와 결합하면 특정 버전을 사용하여 프로젝트를 만드는 유연한 방법을 얻을 수 있어요. 또는 Poetry에 직접 사용할 Python 버전을 알려줄 수도 있어요: poetry env use /full/path/to/python.
-```
+
 
 <div class="content-ad"></div>
 
@@ -195,7 +195,7 @@ poetry add jinja2
 
 <div class="content-ad"></div>
 
-```markdown
+
 [tool.poetry]
 name = "gemini-movie-detectives-api"
 version = "0.1.0"
@@ -219,14 +219,14 @@ pre-commit = "^3.7.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-```
+
 
 # FastAPI로 API 만들기
 
 FastAPI는 빠른 API 개발을 가능하게 하는 Python 프레임워크입니다. 오픈 표준을 바탕으로 구축되어 새로운 구문을 익힐 필요 없이 매끄러운 경험을 제공합니다. 자동 문서 생성, 견고한 유효성 검사, 통합된 보안을 통해 FastAPI는 개발을 간소화하고 동시에 우수한 성능을 보장합니다.
 
 <img src="/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_3.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -349,10 +349,10 @@ def start_quiz(quiz_config: QuizConfig = QuizConfig()):
 
 <div class="content-ad"></div>
 
-```markdown
+
 @rate_limit
 @retry(max_retries=settings.quiz_max_retries)
-```
+
 
 이것들은 중복 코드를 줄이기 위해 구현한 것입니다. API 함수를 래핑하여 오류가 발생한 경우 함수를 재시도하고 하루에 시작할 수 있는 영화 퀴즈의 전역 속도 제한을 소개합니다.
 
@@ -708,7 +708,7 @@ curl -s -X POST https://movie-detectives.com/api/quiz \
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 curl -s -X POST https://movie-detectives.com/api/quiz/84c19425-c179-4198-9773-a8a1b71c9605/answer \
   -H 'Content-Type: application/json' \
@@ -732,7 +732,7 @@ curl -s -X POST https://movie-detectives.com/api/quiz/84c19425-c179-4198-9773-a8
 # 결론
 
 기본 프로젝트를 완료한 후에 모듈형 프롬프트 접근 방식으로 더 많은 퍼스널리티와 언어를 추가하는 것이 쉬웠습니다. 이것은 게임 디자인 및 개발을 위한 가능성을 열어준 것에 감명받았습니다. 다른 퍼스널리티를 추가함으로써 순수한 영화 교육 게임에서 코미디 퀴즈 "You Don't Know Jack"과 같은 게임으로 한 분 내에 게임을 변경할 수 있었습니다.
-```
+
 
 <div class="content-ad"></div>
 

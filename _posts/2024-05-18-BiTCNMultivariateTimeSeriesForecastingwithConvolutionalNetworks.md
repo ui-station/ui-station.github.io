@@ -122,15 +122,15 @@ ReLU는 사라지는 그래디언트 문제를 완화하는 데 도움이 되지
 
 해당 상황에 대처하기 위해 가우시안 에러 선형 유닛 또는 GELU를 사용할 수 있습니다. GELU 방정식은 아래와 같이 나타낼 수 있습니다.
 
-```markdown
+
 ![GELU Equation](/assets/img/2024-05-18-BiTCNMultivariateTimeSeriesForecastingwithConvolutionalNetworks_6.png)
-```
+
 
 이 함수를 사용하면 입력 값이 0보다 작을 때 작은 음수 값을 활성화 함수로 사용할 수 있습니다.
 
-```markdown
+
 ![Activation Function with GELU](/assets/img/2024-05-18-BiTCNMultivariateTimeSeriesForecastingwithConvolutionalNetworks_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -154,7 +154,7 @@ ReLU는 사라지는 그래디언트 문제를 완화하는 데 도움이 되지
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![그림](/assets/img/2024-05-18-BiTCNMultivariateTimeSeriesForecastingwithConvolutionalNetworks_9.png)
 
 위의 그림은 하나의 시간 블록이 공변량의 미래 값을 활용하여 모델 출력을 결정하는 아이디어를 강조합니다 (빨간 점으로 표시됨).
@@ -162,7 +162,7 @@ ReLU는 사라지는 그래디언트 문제를 완화하는 데 도움이 되지
 마지막으로, BiTCN은 예측 주변에 신뢰 구간을 구성하기 위해 Student’s t-분포를 사용합니다.
 
 이제 BiTCN의 내부 작업을 이해했으니, Python을 사용하여 소규모 예측 프로젝트에 적용해 봅시다.
-```
+
 
 <div class="content-ad"></div>
 

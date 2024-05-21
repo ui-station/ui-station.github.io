@@ -140,11 +140,11 @@ class _WidgetOptimizationPageState extends State<WidgetOptimizationPage> {
 <img src="https://miro.medium.com/v2/resize:fit:704/1*u9fTFwbb5q-HzdNF6a9yoA.gif" />
 
 콘솔에서 didChangeDependencies 메소드가 여러 번 실행된 것을 볼 수 있을 것입니다. 여기서 요청이 호출된 곳이었습니다!
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image 0](/assets/img/2024-05-20-Flutter성능개선권장사항탐색_0.png)
 
 위젯이 여러 번 다시 빌드되었음을 의미합니다. TextField는 총 3번 다시 빌드되었고 (화면이 열릴 때, 키보드가 나타났을 때, 키보드가 사라질 때), WidgetOptimizationPage는 12번 다시 빌드되었습니다:
@@ -152,7 +152,7 @@ class _WidgetOptimizationPageState extends State<WidgetOptimizationPage> {
 ![image 1](/assets/img/2024-05-20-Flutter성능개선권장사항탐색_1.png)
 
 didChangeDependencies 메서드가 InheritedWidget에서 알림에 대한 응답으로 작업을 수행하기에 적절한 위치임을 알려져 있습니다. 위젯이 어떤 변화들을 구독하는지 찾기로 결정했습니다. 위젯이 다소 복잡했기 때문에 몇 가지 가정을 하였지만, 위의 코드 예제에서는 명확하게 인식할 수 있습니다. 이유는 MediaQuery.of(context).size.width를 사용했기 때문입니다. MediaQuery는 기본적으로 다양한 매개변수를 가진 InheritedWidget으로, viewInsets와 padding을 포함하여 여러 매개변수가 있습니다. 이들은 키보드 애니메이션 중에 변경됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -348,11 +348,11 @@ main-3 스냅샷에는 그들의 상태를 가진 AddingCounterPage와 Multiplyi
 
  main-3와 main-4 스냅샷 사이에는 차이가 없습니다. MultiplyingCounterPage가 사라졌지만 모든 인스턴스가 메모리에 남아 있습니다:
 
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Exploring Flutter App Performance Improvement Recommendations](/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_8.png)
 
 And only after closing `AddingCounterPage`, the subscription objects were released with `AddingCounterPage` and `MultiplyingCounterPage`:
@@ -360,7 +360,7 @@ And only after closing `AddingCounterPage`, the subscription objects were releas
 ![Exploring Flutter App Performance Improvement Recommendations](/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_9.png)
 
 Subscription canceling should help get rid of this memory leak. We just save a `StreamSubscription` when adding the listener and cancel it when the widget is disposed:
-```
+
 
 <div class="content-ad"></div>
 
@@ -410,7 +410,7 @@ class _MultiplyingCounterPageState extends State<MultiplyingCounterPage> {
 ![이미지](/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_10.png)
 
 마찬가지로, AddingCounterPage 및 해당 구독 객체는 main-5 스냅샷에서 해제되었습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -484,7 +484,7 @@ Image.asset(
 ![ExploringFlutterappperformanceimprovementrecommendations_13](/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_13.png)
 
 원활한 사용자 경험을 보장하기 위해 preacheImage 메서드를 사용할 수 있습니다. 이 메서드를 사용하면 위젯 초기화 또는 메인 메서드에서 이미지를 캐시에 미리 로드하여 활용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

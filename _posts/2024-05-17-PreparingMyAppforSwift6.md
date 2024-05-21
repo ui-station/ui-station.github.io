@@ -11,7 +11,7 @@ link: "https://medium.com/better-programming/preparing-my-app-for-swift-6-7bc045
 ---
 
 
-```markdown
+
 ![2024-05-17-PreparingMyAppforSwift6_0](/assets/img/2024-05-17-PreparingMyAppforSwift6_0.png)
 
 # "Swift 6 모드"가 뭔가요?
@@ -19,7 +19,7 @@ link: "https://medium.com/better-programming/preparing-my-app-for-swift-6-7bc045
 Swift 6는 더 이상 2023년에 출시되지 않을 것으로 Doug Gregor가 Swift 언어 워크그룹에서 명확히 밝혔습니다. 그러나 애플이 이미 Swift 6 일부 기능을 5.8에서 제공했다는 것을 알고 계셨나요? 네, 사실입니다. 이전에 Xcode 14.3로 제공된 Swift 일부 기능은 기본적으로 비활성화되어 있습니다. Swift 6 출시 시에 다시 활성화될 예정이며, 출시까지 한 해 이상 소요될 수도 있습니다.
 
 이러한 기능은 Swift에 몇 가지 파괴적인 변화를 소개합니다. 예를 들어, 널리 알려진 API의 이름을 바꾸거나 동작을 조정하거나, 컴파일러에 새로운 안전성 확인을 추가하는 식입니다. 그러나 이러한 변경 사항을 코드 기반을 개선하기 위해 언젠가는 모두 활성화될 것이며, 우리는 이러한 변경 사항과 잘 호환되도록 프로젝트를 업데이트해야 할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -131,7 +131,7 @@ let package = Package(
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![PreparingMyAppforSwift6_3](/assets/img/2024-05-17-PreparingMyAppforSwift6_3.png)
 
 3. 일부 함수를 TCA WithViewStore를 반환하도록 표시해야 했는데, 다시 한 번, Xcode가 Fix-It으로 도와주었습니다.
@@ -139,7 +139,7 @@ let package = Package(
 ![PreparingMyAppforSwift6_4](/assets/img/2024-05-17-PreparingMyAppforSwift6_4.png)
 
 4. 많은 곳에서 "Non-sendable type '…' passed in call to main actor-isolated function cannot cross actor boundary"라는 경고가 표시되어서, 이러한 타입들을 Sendable 프로토콜을 준수하도록 만들었습니다 (Sendable에 대해 자세히 알아보세요).
-```
+
 
 <div class="content-ad"></div>
 

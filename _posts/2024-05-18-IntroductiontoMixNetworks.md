@@ -11,7 +11,7 @@ link: "https://medium.com/@0knowledgee/introduction-to-mix-networks-bad2f6f61044
 ---
 
 
-```markdown
+
 ![Mixnet introduction](/assets/img/2024-05-18-IntroductiontoMixNetworks_0.png)
 
 Mixnets are important because they can provide strong anonymity, even stronger than Tor. Tor is widely known to have weak anonymity as described in academic literature. By utilizing advanced cryptographic methods and sophisticated mixing strategies, mixnets offer a more secure option for anonymous communication, effectively shielding users from both passive and active network observers.
@@ -19,7 +19,7 @@ Mixnets are important because they can provide strong anonymity, even stronger t
 ## Defining Network Anonymity
 
 A mixnet falls under the category of anonymous communication networks. Anonymous communication essentially refers to resistance against traffic analysis. In simpler terms, network anonymity implies that a client can interact with a network entity, and it becomes challenging for passive or active network observers to identify which client is communicating with which network entity. More clients using the network improve the privacy and anonymity features since anonymity thrives with greater participation.
-```
+
 
 <div class="content-ad"></div>
 

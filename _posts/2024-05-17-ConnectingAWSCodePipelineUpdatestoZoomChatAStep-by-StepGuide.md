@@ -130,7 +130,7 @@ URL 및 베어러 토큰을 코드에 직접 입력하는 대신, Parameter Stor
 이제 코드를 배포합니다.
 
 스텝 5: SNS 토픽으로 Lambda 함수 구성하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -144,11 +144,10 @@ URL 및 베어러 토큰을 코드에 직접 입력하는 대신, Parameter Stor
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-05-17-ConnectingAWSCodePipelineUpdatestoZoomChatAStep-by-StepGuide_8.png)
 
 - 이제 콘솔을 통해 수동으로 변경 사항을 CodePipeline에서 해제하거나, 파이프라인이 트리거되기를 기다립니다.
 - 파이프라인에서 변경 사항이 있을 때, 이전에 선택한 단계에 대한 알림을 받게 됩니다.
 
 AWS CodePipeline 알림을 Zoom 채팅 채널과 통합하면 지속적인 콘솔 확인이 필요 없어지며, 팀을 최신 상태로 유지하고 개발 워크플로우를 향상시킬 수 있습니다.
-```

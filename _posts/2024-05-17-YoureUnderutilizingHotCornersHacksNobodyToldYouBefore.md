@@ -217,7 +217,7 @@ defaults write com.apple.dock wvous-bl-modifier -int 1179648
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_6.png)
 
 It displays the names of all the four corners along with their Action and Modifier info.
@@ -225,7 +225,7 @@ It displays the names of all the four corners along with their Action and Modifi
 It also contains an additional option — ‘CLEAR ALL HOT CORNERS’ — that can clear all corners of their actions and (obviously) modifiers.
 
 James wants to configure his empty top-left corner to open Launchpad with the modifier as Control (⌃). So he selects TOP-LEFT ↖, and sees this:
-```
+
 
 <div class="content-ad"></div>
 
@@ -569,7 +569,6 @@ if selectedCorner is not false then
 
 <div class="content-ad"></div>
 
-```markdown
 ```
+
 JavaScript 코드입니다. 함수와 변수를 정의하고 사용자 선택에 따라 프로필을 생성하거나 적용합니다. 조건문과 반복문을 사용하여 프로필 파일을 읽고 해당하는 설정을 적용합니다. 
-```

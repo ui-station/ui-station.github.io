@@ -11,7 +11,7 @@ link: "https://medium.com/@raphaelkennedy/increase-security-in-your-flutter-appl
 ---
 
 
-```markdown
+
 ![보안 강화하기](/assets/img/2024-05-18-IncreasesecurityinyourFlutterapplications_0.png)
 
 현재의 디지털 세계에서 애플리케이션 보안은 절대적인 우선 순위입니다. 견고하고 안전한 Flutter 앱을 개발하는 것은 사용자 데이터를 보호하고 제품에 대한 신뢰를 유지하는 데 중요합니다. Flutter 애플리케이션 보안 여정을 시작하는 경우, 제 이전 기사를 읽어 보시기를 권장합니다. 해당 기사에서는 Gray Box 모드에서 응용 프로그램의 보안을 보장하기 위한 필수적인 실천 방법을 탐구했습니다(기사 링크).
@@ -19,7 +19,7 @@ link: "https://medium.com/@raphaelkennedy/increase-security-in-your-flutter-appl
 # 보안 분석: 주요 결론
 
 Flutter 애플리케이션의 보안 평가 중에 시장 경험을 토대로 가능한 취약점을 찾을 수 있는 여러 단계를 식별했습니다. 아래에서 자세히 이야기하도록 하겠습니다.
-```
+
 
 <div class="content-ad"></div>
 

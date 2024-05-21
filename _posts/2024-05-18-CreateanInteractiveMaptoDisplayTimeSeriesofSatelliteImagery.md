@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/create-an-interactive-map-to-disp
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-18-CreateanInteractiveMaptoDisplayTimeSeriesofSatelliteImagery_0.png)
 
 # Table of Contents
@@ -25,7 +25,7 @@ link: "https://medium.com/towards-data-science/create-an-interactive-map-to-disp
 - 📚 References
 
 ## 🌟 Introduction
-```
+
 
 <div class="content-ad"></div>
 
@@ -285,7 +285,7 @@ final_df = pd.concat(all_water_pixels_dfs, ignore_index=True)
 최종 DataFrame은 이미지 날짜, 물 픽셀 수, 총 픽셀 수, 커버리지 비율 및 표면적을 요약하여 다음과 같이 보여집니다:
 
 ![이미지](/assets/img/2024-05-18-CreateanInteractiveMaptoDisplayTimeSeriesofSatelliteImagery_5.png)
-```
+
 
 <div class="content-ad"></div>
 

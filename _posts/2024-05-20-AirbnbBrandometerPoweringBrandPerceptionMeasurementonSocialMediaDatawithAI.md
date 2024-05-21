@@ -33,7 +33,7 @@ Brandometer는 동시성 추출 및 카운트 기반 상위 관련 주제를 포
 
 이미지 태그를 Markdown 형식으로 변경해주세요.
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:602/1*fGrdGlIidRgdt6jT0XavYg.gif)
 
 where
@@ -41,7 +41,7 @@ where
 ![image](https://miro.medium.com/v2/resize:fit:662/1*cB95joQHnMYOsbcrrIWLMQ.gif)
 
 이 블로그 글에서는 소셜 미디어 데이터를 어떻게 처리하고 이해하는지, 딥러닝을 통해 브랜드 인식을 파악하고 코사인 유사성을 보정된 브랜도미터 지표로 '변환'하는 방법을 소개하겠습니다. 또한 브랜도미터 지표로부터 얻은 통찰을 공유할 예정입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -107,7 +107,7 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_1.png)
 
 ![Image 2](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_2.png)
@@ -115,7 +115,7 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 마리아 안토니악의 작업을 바탕으로, 우리는 단어 임베딩의 안정성을 측정하기 위해 가장 가까운 이웃들 간의 중첩을 사용했습니다. 상대적 거리가 하류 작업에서 절대 거리 값보다 중요하기 때문입니다. 따라서 유사성 기반 점수보다 안정성이 큰 순위 기반 점수를 개발했습니다.
 
 각 단어에 대해, 우리는 먼저 코사인 유사도를 내림차순으로 순위를 매겼습니다(Eq. 1). 순위 기반 유사성 점수는 그 후 1/rank(w)로 계산되며 여기서 w∈V입니다. 더 관련 있는 개념일수록 순위 기반 인식 점수가 높아집니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -166,13 +166,13 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_8.png)
 
 Top Emerging Perception은 월간 상위 인식에서 온라인에서 논의되는 중요한 이벤트를 보여줍니다.
 
 상위 10가지 인식은 일반적으로 매월 안정적입니다. 최상위 인식에는 Home, Host, Stay, Travel, Guest, Rental 등이 포함됩니다.
-```
+
 
 <div class="content-ad"></div>
 

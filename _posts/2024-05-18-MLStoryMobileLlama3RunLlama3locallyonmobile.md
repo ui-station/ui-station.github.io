@@ -190,7 +190,7 @@ https://huggingface.co/NSTiwari/Llama-3-8B-q4f16_1-android
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_3.png)
 
 ```js
@@ -200,7 +200,7 @@ sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 Step 2: Install NDK and CMake in Android Studio
 
 Open Android Studio → Tools → SDK Manager → SDK Tools → Install CMake and NDK.
-```
+
 
 <div class="content-ad"></div>
 
@@ -404,14 +404,14 @@ python3 -m mlc_llm package
 
 <div class="content-ad"></div>
 
-```markdown
+
 [![image](/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_19.png)]
 (https://miro.medium.com/v2/resize:fit:700/1*wdN1DDl127dzmjIal0FHig.gif)
 
 모바일 앱이 성공적으로 빌드되면 APK를 모바일 폰에 설치하세요. 바로 설치할 수 있는 APK가 여기에 있습니다.
 
 오프라인 사용을 위해 Llama3–8B-Instruct 모델을 모바일 기기에 구동하는 데 성공한 것을 축하드립니다. 이 기사에서 가치 있는 통찰을 얻었기를 기대합니다.
-```
+
 
 <div class="content-ad"></div>
 

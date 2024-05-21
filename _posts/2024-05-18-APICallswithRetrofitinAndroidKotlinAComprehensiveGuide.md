@@ -30,14 +30,14 @@ link: "https://medium.com/@imkuldeepsinghrai/api-calls-with-retrofit-in-android-
 - Android Studio 프로젝트를 엽니다.
 - build.gradle (Module: app) 파일로 이동하여 다음 종속성을 추가하세요:
 
-```js
+js
 dependencies {
     // ... 다른 종속성들
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -47,7 +47,7 @@ dependencies {
 
 애플리케이션 전체에서 Retrofit 및 ApiService의 단일 인스턴스를 보장하기 위해 싱글톤 패턴을 구현할 수 있습니다. 예를 들어 ApiClient.kt와 같은 새로운 Kotlin 파일을 생성하고 다음과 같이 구현할 수 있습니다:
 
-```js
+js
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -67,7 +67,7 @@ object ApiClient {
         RetrofitClient.retrofit.create(ApiService::class.java)
     }
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -77,7 +77,7 @@ object ApiClient {
 
 이제 Retrofit 인스턴스에 대한 싱글톤 패턴을 설정했으므로 API 엔드포인트 및 이에 대한 HTTP 메서드를 개요화하는 ApiService 인터페이스를 정의해 봅시다. ApiService.kt와 같은 새로운 Kotlin 파일을 만들고 다음을 구현해 보세요:
 
-```js
+js
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -86,7 +86,7 @@ interface ApiService {
     @GET("posts/{id}")
     fun getPostById(@Path("id") postId: Int): Call<Post>
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +96,7 @@ interface ApiService {
 
 ApiClient 싱글톤과 ApiService 인터페이스가 준비되어 있으면, API 호출은 간단해집니다. 활동이나 프래그먼트에서는 이제 ApiClient 싱글톤을 사용하여 API 호출을 시작할 수 있습니다. 버튼을 클릭할 때 API 호출을 수행한다고 가정해봅시다. 아래는 간단한 예시입니다.
 
-```js
+js
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -129,7 +129,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-```
+
 
 <div class="content-ad"></div>
 

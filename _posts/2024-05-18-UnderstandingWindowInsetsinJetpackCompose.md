@@ -11,7 +11,7 @@ link: "https://medium.com/proandroiddev/understanding-window-insets-in-jetpack-c
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-UnderstandingWindowInsetsinJetpackCompose_0.png)
 
 # 인셋이란 무엇인가요?
@@ -19,7 +19,7 @@ link: "https://medium.com/proandroiddev/understanding-window-insets-in-jetpack-c
 인셋은 상태 바, 네비게이션 바, 디스플레이 컷아웃(노치 또는 핀홀로 자주 불림), IME 키보드와 같은 시스템 UI 요소로 인해 화면에서 완전히 사용할 수 없는 영역을 가리킵니다.
 
 기본적으로, 우리 앱의 UI는 상태 바와 네비게이션 바와 같은 시스템 UI 내에 레이아웃되도록 제한됩니다. 이는 시스템 UI 요소가 앱의 콘텐츠를 가리지 않도록 보장합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -214,7 +214,7 @@ setContent {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Keyboard Opening](https://miro.medium.com/v2/resize:fit:600/1*8HIx9O4S3Lk3mpUJRqI21g.gif)
 
 키보드가 열릴 때 텍스트 필드가 화면 하단에 고정되어 있어서 사용자 경험이 그리 좋지 않음을 볼 수 있습니다.
@@ -222,7 +222,7 @@ setContent {
 텍스트 필드 패딩을 조정한 후:
 
 위의 텍스트 필드에는 단순히 `imePadding()` 수정자를 추가하면 됩니다.
-```
+
 
 <div class="content-ad"></div>
 

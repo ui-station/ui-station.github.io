@@ -169,7 +169,7 @@ A. This project is parameterised 옵션이 선택되었는지 확인한 후, 문
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지1](/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_1.png)
 
 B. 소스 코드 관리 섹션에서 Git을 선택하고 저장소 URL을 붙여넣은 다음 GitHub에 권한 및 액세스 권한이 있는 적절한 자격 증명을 선택합니다. 빌드할 브랜치 섹션에 브랜치를 지정하세요. 저는 기본 메인 브랜치를 사용합니다.
@@ -177,15 +177,15 @@ B. 소스 코드 관리 섹션에서 Git을 선택하고 저장소 URL을 붙여
 ![이미지2](/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_2.png)
 
 C. 빌드 단계에 실행 셸을 추가하고 다음을 붙여넣으세요.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 이 스크립트는 Deployment.yaml 파일에서 이미지 태그를 찾아 해당 버전을 Jenkins 빌드의 ($ 'Build_Number_Image')로 바꿉니다. 또한 Git 커밋을 위해 이메일과 이름을 구성하고, 수정된 모든 파일을 Git 스테이징 영역에 추가하고, 설명적인 메시지로 변경 사항을 커밋합니다.
 
 D. 'Post-Build Actions' 섹션에서 '빌드 성공 시에만 푸시'를 선택한 다음 'Branches' 필드 아래에서 브랜치 이름과 대상 원격 이름을 지정합니다. 저는 브랜치 이름을 'main', 대상 원격 이름을 'origin'으로 지정했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -234,7 +234,7 @@ ArgoCD 애플리케이션을 설정하여 deployment.yaml 파일을 주시하고
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_7.png)
 
 ![image](/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_8.png)
@@ -242,7 +242,7 @@ ArgoCD 애플리케이션을 설정하여 deployment.yaml 파일을 주시하고
 ## 5. 포드에 액세스하기
 
 ArgoCD 배포가 모두 정상적으로 보인다면, 배포된 애플리케이션을 테스트할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

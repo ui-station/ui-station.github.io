@@ -61,7 +61,7 @@ uname -r
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 cd linux
 make mrproper
@@ -93,9 +93,9 @@ SYSCALL_DEFINE0(hello) {
 
 이제 다음을 Makefile에 추가해주세요
 
-```markdown
+
 obj-y := hello.o
-```
+
 
 <div class="content-ad"></div>
 

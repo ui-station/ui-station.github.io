@@ -188,12 +188,12 @@ utils.set_random_seed(42)
 
 <div class="content-ad"></div>
 
-```markdown
+
 비슷한 점이 두드러져요. La similitud es extraña. CC-BY 2.0 (프랑스) 속성: tatoeba.org #2691302 (CM) & #5941808 (albrusgher)
 비슷한 점이 엄청나네요. El parecido es asombroso. CC-BY 2.0 (프랑스) 속성: tatoeba.org #2691302 (CM) & #6026125 (albrusgher)
 결과가 약속 있어 보여요. Los resultados se antojan prometedores. CC-BY 2.0 (프랑스) 속성: tatoeba.org #8480484 (shekitten) & #8464272 (arh)
 부자들은 많은 친구들을 가지고 있어요. Los ricos tienen muchos amigos. CC-BY 2.0 (프랑스) 속성: tatoeba.org #1579047 (sam_m) & #1457378 (marcelostockle)
-```
+
 
 위 내용을 보시다시피 적어도 세 개의 열을 포함하는 내용이 있습니다. 첫 번째 열은 원문이고 두 번째 열은 대상 텍스트로 탭으로 구분되어 있습니다.
 

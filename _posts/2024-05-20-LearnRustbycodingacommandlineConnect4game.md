@@ -239,17 +239,17 @@ fn main() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 enum MoveError {
     GameFinished,
     InvalidColumn,
     ColumnFull,
 }
-```
+
 
 우리는 에러를 명령줄에 출력하기를 원하기 때문에, 우리의 에러 메시지를 포함하는 사용자 정의 Display 트레이트를 구현해야 합니다. 예를 들어:
 
-```markdown
+
 impl std::fmt::Display for MoveError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
@@ -259,10 +259,10 @@ impl std::fmt::Display for MoveError {
         }
     }
 }
-```
+
 
 이제 이를 사용하여 play_move 함수를 수정할 수 있습니다. 이제 우리는 움직임이 성공적이면 아무것도 반환하지만, 그렇지 않은 경우 에러가 반환되는 Result enum을 반환합니다.
-```
+
 
 <div class="content-ad"></div>
 

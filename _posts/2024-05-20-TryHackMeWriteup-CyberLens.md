@@ -173,7 +173,7 @@ sc.exe query state=all
 이미 존재하는 Metasploit 쉘을 고려할 때, 나는 나의 접근 방식을 전환했습니다. WinPEAS 대신 Metasploit의 multi/recon/local_exploit_suggester 모듈을 사용하여 권한 상승을 위한 잠재적인 취약점을 식별했습니다.
 
 <img src="/assets/img/2024-05-20-TryHackMeWriteup-CyberLens_9.png" />
-```
+
 
 <div class="content-ad"></div>
 

@@ -92,7 +92,7 @@ sudo raspi-config
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*XG-oT3YeryzngA-Xv3JY9w.gif)
 
 “System Options” → “Boot / Auto Login” 으로 이동하여 “Console Autologin”을 선택해주세요.
@@ -100,7 +100,7 @@ sudo raspi-config
 # Docker & Kubernetes 초기 설정
 
 기본적으로 cgroup 메모리 옵션이 비활성화되어 있으므로 Docker가 메모리 사용량을 제한할 수 있도록 업데이트해야 합니다. /boot/cmdline.txt를 열고 cgroup_enable=memory cgroup_memory=1을 추가해주세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -353,7 +353,7 @@ sudo mount -o uid=youruid,gid=yourgid,dmask=002,fmask=113 /dev/sdX1 /mnt/usb
 ```
 
 이제 우리는 PersistentVolume과 PersistentVolumeChain을 가진 Kubernetes 자원을 생성하려고 합니다.
-``` 
+ 
 
 <div class="content-ad"></div>
 
@@ -437,9 +437,9 @@ prometheus:
 
 이제 ArgoCD로 돌아가 "새 앱"을 만들어보겠습니다. Prometheus라는 이름의 앱을 만들고 깃 레포지토리를 소스로 추가하고 경로를 선택하세요. Grafana도 나중에 이 작업을 해야하므로 서로 다른 경로에 유지하세요.
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_4.png)
-```
+
 
 생성한 사용자 정의 설정을 설정할 값 파일을 선택한 다음 앱을 생성하세요. 수동으로 동기화하도록 지정한 경우 동기화가 필요할 때 이를 수행해야 합니다. 이것은 업그레이드할 때 사용하거나 수동으로 릴리스하고자 할 때 유용합니다. 그 외에는 홈 프로젝트에 가장 적합한 CD용 자동 동기화 방법이 유용합니다.
 
@@ -459,14 +459,14 @@ helm create grafana
 
 헬름 리포지토리를 추가해주세요.
 
-```markdown
+```js
 helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 ```
 
 리포지토리를 통해 차트를 업데이트하세요.
 
-```markdown
+```js
 dependencies:
   - name: grafana
     version: 6.57.4
@@ -475,7 +475,6 @@ dependencies:
 
 <div class="content-ad"></div>
 
-```yaml
 values.yaml 파일을 추가해주세요.
 
 ```js
@@ -489,7 +488,7 @@ grafana:
 그런 다음 이전과 같이 ArgoCD를 통해 Grafana를 추가해주세요. 동기화를 진행하고 이제 두 개가 모두 실행 중이어야 합니다.
 
 <img src="/assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_5.png" />
-```
+
 
 <div class="content-ad"></div>
 

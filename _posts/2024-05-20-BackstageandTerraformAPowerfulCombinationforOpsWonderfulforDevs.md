@@ -115,9 +115,9 @@ Backstage에 있는 모든 작업을 확인하려면 /create/actions 페이지�
 
 예시:
 
-```
+
 ![Backstage and Terraform: A Powerful Combination for Ops, Wonderful for Devs](/assets/img/2024-05-20-BackstageandTerraformAPowerfulCombinationforOpsWonderfulforDevs_0.png)
-```
+
 
 아웃풋은 단계 실행이 끝나고 사용자에게 표시할 수 있는 링크입니다.
 

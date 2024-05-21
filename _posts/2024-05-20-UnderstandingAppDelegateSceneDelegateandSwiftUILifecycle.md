@@ -178,7 +178,7 @@ SwiftUI에서 AppDelegate를 구현하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![UnderstandingAppDelegateSceneDelegateandSwiftUILifecycle](/assets/img/2024-05-20-UnderstandingAppDelegateSceneDelegateandSwiftUILifecycle_2.png)
 
 Click on “Next” will create Appdelegate.swift file which look like below
@@ -191,11 +191,11 @@ class AppDelegate: NSObject {
 ```
 
 2. With following above process again we can create SceneDelegate.swift file.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![UnderstandingAppDelegateSceneDelegateandSwiftUILifecycle_3](/assets/img/2024-05-20-UnderstandingAppDelegateSceneDelegateandSwiftUILifecycle_3.png)
 
 AppDelegate.swift 파일과 처음으로 나타날 것입니다.
@@ -208,7 +208,7 @@ class SceneDelegate: NSObject {
 ```
 
 이제 AppDelegate.swift와 SceneDelegate.swift 파일에 적용해야 할 실제 변경 사항을 아래에 안내해드립니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -102,7 +102,7 @@ We employ Example-Guided Reinforcement Learning (EGRL) to develop sturdy manipul
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*XuViGzzbwQISa9HyDmIzMw.gif)
 
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*XiqFuPa83jIeSndMtEsczg.gif)
@@ -110,11 +110,11 @@ We employ Example-Guided Reinforcement Learning (EGRL) to develop sturdy manipul
 # 안전하고 생산적인 협력을 향해
 
 TRI와 다른 곳에서 능숙한 능력이 급증하는 가운데, 현재의 로봇 및 조작 전략은 여러 작업과 기술을 이루리 하는 데 많은 어려움을 겪고 있습니다. 손으로 다루기에 너무 큰 물체, 팔이 안정화해야 하는 물건 더미, 한 팔에 들고 있는 물체와 다른 물체를 다루는 작업, 그리고 좁은 공간과 사람 주변에서 안전하게 운영하는 능력이 필요합니다. 그리퍼 기반 민첩성과 병행하여 전체 몸을 이용한 조작을 위한 하드웨어, 지식 및 데이터셋 개발은 다양한 능력을 갖춘 조작 플랫폼을 만들기 위해 중요합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Punyo Soft Robot](/assets/img/2024-05-20-MeetPunyoTRIsSoftRobotforWhole-BodyManipulationResearch_4.png)
 
 로봇의 가슴, 팔 및 기타 몸 표면을 조작하기 위해 잠금 해제하는 것은 기계적으로 유리합니다. 준수 및 마찰과 결합하여, 로봇은 더 적은 에너지로 큰 물건을 잡고 조작할 수 있어서 페이로드와 배터리 수명을 늘리고 더 저렴한 시스템을 가능하게합니다. 부드럽기 때문에 충격을 흡수할 수 있어 로봇의 안전과 주변 사람들의 안전을 위해 사용될 수 있습니다. 촉각 감지를 추가하면 접촉력을 밀접하게 모니터링하고 제어하여 부드럽고 복잡하며 상호작용적이고 안정적인 조작이 가능합니다.
@@ -122,7 +122,7 @@ TRI와 다른 곳에서 능숙한 능력이 급증하는 가운데, 현재의 �
 TRI의 Punyo 팀은 이 문제를 해결하기 위해 구축되었습니다. 부드러운 로봇공학, 접촉을 고려한 계획 및 학습, 촉각 감지 및 인간-로봇 상호작용에 대한 우리의 전문가들은 로봇과 사람이 안전하게, 생산적으로, 행복하게 공존할 수 있는 미래에 전념하고 있습니다.
 
 # 감사의 글
-```
+
 
 <div class="content-ad"></div>
 

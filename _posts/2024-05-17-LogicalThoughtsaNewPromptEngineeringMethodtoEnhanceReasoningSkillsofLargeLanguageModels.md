@@ -51,7 +51,7 @@ Kojima 등이 제시한 제로샷 연쇄사고 프롬프팅은 기존 예시를 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-LogicalThoughtsaNewPromptEngineeringMethodtoEnhanceReasoningSkillsofLargeLanguageModels_0.png)
 
 LoT은 LLM에게 일반적인 제로샷 CoT 프롬프팅에 따라 문제를 단계별로 해결하도록 합니다. LLM이 초기 단계별 솔루션을 제시한 후, 후속 프롬프트에서는 LLM에게 각 단계를 확인하고 필요에 따라 수정하도록 요청합니다. 이는 LLM에게 각 단계에 대해 긍정적 및 부정적 리뷰를 제공하도록 지시한 다음, 올바른 리뷰를 정당화하고 잘못된 리뷰를 비판하도록 지시하며, 원본 문제의 가정을 고려합니다. 그런 다음 필요한 경우 LLM에게 올바른 리뷰를 사용하여 단계를 수정하도록 요청합니다. 단계가 수정되거나 확인된 후, 원본 문제가 LLM에게 다시 제시되고, 이미 수정되거나 확인된 각 단계가 함께 제시됩니다.
@@ -59,7 +59,7 @@ LoT은 LLM에게 일반적인 제로샷 CoT 프롬프팅에 따라 문제를 단
 ![이미지](/assets/img/2024-05-17-LogicalThoughtsaNewPromptEngineeringMethodtoEnhanceReasoningSkillsofLargeLanguageModels_1.png)
 
 기본적으로, LoT은 LLM을 문제 해결 프로세스를 진행하도록 안내하여 각 단계를 검증하는 데 자체 논리를 사용하도록 요청합니다.
-```
+
 
 <div class="content-ad"></div>
 

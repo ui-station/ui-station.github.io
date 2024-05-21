@@ -11,7 +11,7 @@ link: "https://medium.com/@csferrie/alone-together-the-personalized-ai-paradox-4
 ---
 
 
-```markdown
+
 ![AloneTogether](/assets/img/2024-05-20-AloneTogetherThePersonalizedAIParadox_0.png)
 
 가까운 미래에는 AI와의 상호작용이 빈번할 뿐만 아니라 우리의 사회적 행동을 지배하는 세밀하고 무의식적인 욕망에 의해 우위를 차지할 것입니다. 때때로 인간 상호작용이 가능한 경우에도 AI의 맞춤 및 표면적인 특성은 우리를 인간보다 기계를 선택하게 이끌 것입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@csferrie/alone-together-the-personalized-ai-paradox-4
 # 방어 반응
 
 어떤 사람들은 열정적으로 주장하며, 인간적인 연결은 대체 불가능한 감정적 및 심리적 이점을 제공한다고 주장합니다. 사실, 공유된 미소의 따뜻함이나 알고 있는 듯한 눈길의 안락함은 오랫동안 상호주관적 인간 경험의 정점이었습니다. 그러나 이러한 본질적으로 인간적인 교류도 비용이 따릅니다. 감정 노동 및 취약성은 점점 디지털 인터페이스로 보호되는 세상에서 높은 가치를 가지고 있습니다. 일상생활의 계산에서 많은 사람들은 AI와의 덜 요구성이 높고 예측 가능한 교류를 선택하게 될 수도 있습니다. 결국 디지털 동반자는 실망시키지 않고 초과하지 않도록 프로그래밍할 수 있으며, 조금 요구하고 즉시 용서해주는 감정적 연결의 모방을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

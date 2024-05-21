@@ -51,7 +51,7 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_3.png)
 
 - 시스템 프롬프트 — 맥락 설정,
@@ -61,7 +61,7 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 논문에서 설명한 예시 프롬프트는 다음과 같습니다. 'ColdBrew Master Coffee machine'에 대한 '대상 제품' 필드에 STS가 삽입된 것을 확인해보세요.
 
 ![이미지](/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +93,7 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_7.png)
 
 위의 결과는 $199의 높은 가격에도 불구하고, 시각성이 적어지는 경향이 있는데도 ColdBrew Master가 STS를 설명에 통합함으로써 추천 목록의 선두로 올라간 것을 보여줍니다. 흥미로운 점은 이 제품이 원래 비용이 높아서 목록에 첫째 자리에 없었던 것입니다.
@@ -101,7 +101,7 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 반면, 더 저렴한 가격대의 QuickBrew Express의 순위는 일반적으로 추천 목록에서 둘째 자리를 차지하는데, STS를 추가하면서 크게 향상되어 종종 최상위 자리에 도달합니다.
 
 ![image](/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_8.png)
-```
+
 
 <div class="content-ad"></div>
 

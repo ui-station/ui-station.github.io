@@ -243,7 +243,7 @@ Image(systemName: cat.icon)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-17-OhShtMyAppisSuccessfulandIDidntThinkAboutAccessibility_8.png)
 
 SwiftUI에는 사용자 정의 이미지 및 뷰에서 동적 타입의 파워를 제공하는 멋진 도구인 @ScaledMetric 프로퍼티 래퍼가 있습니다.
@@ -254,7 +254,7 @@ SwiftUI에는 사용자 정의 이미지 및 뷰에서 동적 타입의 파워�
 ```
 
 우리는 @ScaledMetric을 자체로 사용할 수 있으며, 이는 기본 body 글꼴 크기 조정을 사용합니다. relativeTo를 사용하면 SwiftUI가 어떻게 조정할 지 알 수 있으므로 더 좋습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -360,7 +360,7 @@ A11yHStack {
 <img src="/assets/img/2024-05-17-OhShtMyAppisSuccessfulandIDidntThinkAboutAccessibility_10.png" />
 
 ## 스크린 리더 개선사항
-```
+
 
 <div class="content-ad"></div>
 
@@ -386,11 +386,11 @@ Image("catKingdom")
 ![Cat Kingdom](/assets/img/2024-05-17-OhShtMyAppisSuccessfulandIDidntThinkAboutAccessibility_11.png)
 
 이제 주 뷰의 셀에 동일한 방식을 적용할 수 있습니다. Cat 데이터 모델을 약간 수정하여 각 고양이 사진과 함께 이미지 설명을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 struct Cat {
     // ...
     let imageDescription: String
@@ -399,14 +399,14 @@ struct Cat {
 Image(cat.image)
     .accessibilityLabel(Text(cat.imageDescription))
 
-```
+
 
 이건 들릴만큼 쉽고, Apple 플랫폼에서만 작동하는 경향이 있어요.
 
 ![image](/assets/img/2024-05-17-OhShtMyAppisSuccessfulandIDidntThinkAboutAccessibility_12.png)
 
 우리 앱을 통해 탐색할 때, 좀 더 신중하게 할 수 있는 기회가 있어요. 기본 설정으로 VoiceOver는 SwiftUI 뷰 트리의 모든 잎 노드를 반복하며 모든 이미지, 버튼 및 텍스트를 읽어줄 거예요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -466,7 +466,7 @@ struct AccountView: View {
 ![Screenshot](/assets/img/2024-05-17-OhShtMyAppisSuccessfulandIDidntThinkAboutAccessibility_14.png)
 
 ## Native components
-```
+
 
 <div class="content-ad"></div>
 
@@ -502,7 +502,7 @@ Apple은 사용자 정의 UI 대신 iOS-Settings 스타일의 List를 사용하�
 <img src="/assets/img/2024-05-17-OhShtMyAppisSuccessfulandIDidntThinkAboutAccessibility_15.png" />
 
 한 가지 질문이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

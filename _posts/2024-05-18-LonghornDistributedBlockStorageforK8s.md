@@ -11,7 +11,7 @@ link: "https://medium.com/@abdelrhmanahmed131/longhorn-distributed-block-storage
 ---
 
 
-```markdown
+
 ![Longhorn](/assets/img/2024-05-18-LonghornDistributedBlockStorageforK8s_0.png)
 
 # Longhorn이란 무엇인가요?
@@ -19,7 +19,7 @@ link: "https://medium.com/@abdelrhmanahmed131/longhorn-distributed-block-storage
 ## K8s 클러스터에서 영구 저장소가 필요한 이유는 무엇인가요?
 
 컨테이너화된 응용 프로그램에서 데이터는 일반적으로 컨테이너 자체와는 별도로 저장되는 저장 시스템에 저장됩니다. 이는 컨테이너를 쉽게 파기하거나 대체할 수 있게 하면서도 중요한 데이터를 손실하지 않도록 합니다. 영구 데이터를 저장한다는 것은 데이터가 컨테이너가 중지, 다시 시작되거나 삭제되어도 손실되지 않도록 데이터를 저장하는 방식을 의미합니다. 이를 위해 클라우드 네이티브 분산 블록 저장 시스템과 같은 영구 저장소 솔루션을 사용하여 데이터를 저장함으로써 컨테이너가 필요할 때 데이터에 액세스할 수 있도록 합니다.
-```
+
 
 <div class="content-ad"></div>
 

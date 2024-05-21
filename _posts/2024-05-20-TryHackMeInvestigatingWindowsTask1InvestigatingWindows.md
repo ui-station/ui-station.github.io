@@ -94,7 +94,7 @@ PowerShell이 열렸으니 몇 가지 명령을 실행하여 정보를 얻어봅
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_10.png)
 
 Answer: Windows Server 2016
@@ -102,7 +102,7 @@ Answer: Windows Server 2016
 ## Which user logged in last?
 
 ## How To:
-```
+
 
 <div class="content-ad"></div>
 
@@ -146,7 +146,7 @@ Answer: Windows Server 2016
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_15.png)
 
 파일 안에서 무언가 이상한 점이 보입니다. 먼저, 많은 사이트들이 로컬 호스트를 가리키고 있고, 두 번째로 구글이 여기에 있습니다. DNS 독립을 시도하고 있는 것으로 보입니다. 백업 파일을 가지고 있거나 이전 상태로 되돌릴 수 있다면, 반드시 알 수 있을 것입니다. 레지스트리로 이동하여 이 부팅 프로그램이 어디에 연결되어 있는지 확인해보아야 할 것입니다.
@@ -154,11 +154,11 @@ Answer: Windows Server 2016
 ![이미지](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_16.png)
 
 이제 원격 데스크톱에서 Windows 키를 누르거나 시작 메뉴 아이콘을 클릭하세요. 단순히 regedit를 입력하면 결과가 하나만 표시됩니다. 해당 항목을 클릭하거나 Enter를 눌러주세요.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_17.png)
 
 레지스트리 편집기 창이 나타납니다. 다음 경로를 따르세요. HKEY_LOCAL_MACHINE ` SOFTWARE ` Microsoft ` Windows ` CurrentVersion ` Run. 해당 위치에 도착하면 두 개의 값이 표시됩니다. UpdateSvc를 확인하면 원격 머신이 시작될 때 연결하는 IP 주소가 나타납니다.
@@ -166,7 +166,7 @@ Answer: Windows Server 2016
 ![image](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_18.png)
 
 답변: 10.34.2.3
-```
+
 
 <div class="content-ad"></div>
 
@@ -212,7 +212,7 @@ Answer: Windows Server 2016
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![Screenshot](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_22.png)
 
 Now we can run the command `$task.Actions` to see what will execute when we run this program. Press enter to run the command, and get your answer.
@@ -220,7 +220,7 @@ Now we can run the command `$task.Actions` to see what will execute when we run 
 ![Screenshot](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_23.png)
 
 Answer: nc.ps1
-```
+
 
 <div class="content-ad"></div>
 
@@ -264,7 +264,7 @@ Answer: 1348
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_27.png)
 
 답변: 03/02/2019
@@ -272,7 +272,7 @@ Answer: 1348
 ## Windows가 새로운 로그온에 처음으로 특권을 할당한 시간은 언제입니까?
 
 답변 형식: MM/DD/YYYY HH:MM:SS AM/PM
-```
+
 
 <div class="content-ad"></div>
 
@@ -286,7 +286,7 @@ Answer: 1348
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_29.png)
 
 팝업 창이 나타납니다. 먼저 'Logged' 필드를 클릭하면 드롭다운 상자가 나타납니다. 'Custom Range...'을 클릭하세요.
@@ -294,7 +294,7 @@ Answer: 1348
 ![image](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_30.png)
 
 'From:' 섹션에서 'First Event'라고 써 있는 곳을 클릭한 다음 드롭다운 메뉴에서 'Events On'을 클릭하세요. 'To:' 섹션에서도 동일한 작업을 수행하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -312,13 +312,13 @@ Answer: 1348
 
 아래의 명령을 Markdown 형식으로 변경하실 수 있습니다.
 
-```markdown
+
 ![이미지 설명](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_33.png)
 
 [사용자 정의 보기 창 하단에 있는 OK 버튼을 클릭하십시오.](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_34.png)
 
 필터를 저장할 수 있는 창이 나타납니다. 이름을 지정하라는 요청이 있을 텐데, 창 오른쪽에 있는 OK 버튼을 클릭하십시오.
-```
+
 
 <div class="content-ad"></div>
 
@@ -334,7 +334,7 @@ Answer: 1348
 
 아래의 마크다운 형식으로 표 태그를 변경해주세요.
 
-```markdown
+
 ![image](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_37.png)
 
 Answer: 03/02/2019 4:04:47 PM
@@ -342,7 +342,7 @@ Answer: 03/02/2019 4:04:47 PM
 ## Windows 암호를 가져 오는 데 사용 된 도구는 무엇입니까?
 
 ## 방법: 
-```
+
 
 <div class="content-ad"></div>
 
@@ -386,7 +386,7 @@ When mim-out 오픈시, 알고 있어야 할 도구 이름이 나타날 것입�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_44.png)
 
 여기에 파일을 열 방법을 물어보는 창이 표시됩니다. 노트패드를 클릭하세요.
@@ -394,7 +394,7 @@ When mim-out 오픈시, 알고 있어야 할 도구 이름이 나타날 것입�
 ![이미지](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_45.png)
 
 이 파일 안에 google.com과 www.google.com이 있다는 것을 볼 수 있습니다. 이는 호스트 파일에 입력해야 할 필요가 없는데 PC가 DNS 서버로 이동하여 찾을 수 있기 때문에 매우 의심스럽습니다. 위협 요소가 C2 서버 IP를 이 방식으로 숨길 수 있습니다. 호스트 머신에서 명령 프롬프트를 열어 Google.com에 핑을 보내어 호스트 파일과 일치하는 경우에는 합법적인 것이고, 그렇지 않으면 의심스러울 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -456,7 +456,7 @@ Windows 방화벽 및 고급 보안 창이 나타납니다. 나타날 경우 좌
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_55.png)
 
 A window will pop-up giving details about this rule, look for the tab labeled Protocols and Ports and click on it.
@@ -464,7 +464,7 @@ A window will pop-up giving details about this rule, look for the tab labeled Pr
 ![image](/assets/img/2024-05-20-TryHackMeInvestigatingWindowsTask1InvestigatingWindows_56.png)
 
 Now in here you will see the port that is opened, this is the answer to the question.
-```
+
 
 <div class="content-ad"></div>
 

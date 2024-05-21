@@ -248,17 +248,17 @@ mos.enable_mosaic(spark, dbutils)
 
 <div class="content-ad"></div>
 
-```markdown
+
 %%mosaic_kepler
 file_group "rect" "geometry"
-```
+
 
 ![Image](/assets/img/2024-05-18-DeltaLakeLiquidClusteringAvisualexplanation_6.png)
 
 동일한 파일 그룹에 대해 특정 날짜 범위를 포괄하는 파일들의 경우, 해당 파일들의 레코드는 잔여 클러스터링 키인 위도 및 경도를 기반으로 클러스터링됩니다. 이러한 공간 클러스터링을 통해 지구상의 특정 지점을 커버하는 파일 수가 현저히 줄어들어 파일 가지치기가 크게 향상됩니다.
 
 # 가지치기 혜택
-```
+
 
 <div class="content-ad"></div>
 

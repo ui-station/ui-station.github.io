@@ -11,7 +11,7 @@ link: "https://medium.com/generative-ai/llms-how-safe-are-they-47624f0e7ef0"
 ---
 
 
-```markdown
+
 ![LLMs](/assets/img/2024-05-18-LLMsHowSafeAreThey_0.png)
 
 대형 언어 모델(LLMs)은 자연어 처리를 혁신하여 텍스트 생성, 번역 및 질문 응답과 같은 인상적인 기능을 가능케했습니다. 그러나 큰 힘에는 큰 책임이 따릅니다. LLM의 안전을 보장하는 것은 의도하지 않은 결과와 잠재적인 피해를 예방하기 위해 중요합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/generative-ai/llms-how-safe-are-they-47624f0e7ef0"
 이 포괄적인 중간 기사에서는 최신 연구논문 중 하나에서 소개된 붉은 팀을 통한 LLM 안전성을 평가하기 위한 강력한 프레임워크인 ALERT 벤치마크를 탐색해보겠습니다.
 
 ## 그러나, 먼저, 붉은 팀이란 무엇인가요?
-```
+
 
 <div class="content-ad"></div>
 

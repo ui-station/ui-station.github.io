@@ -48,7 +48,7 @@ link: "https://medium.com/@rajput623929/analyzing-javascript-files-to-find-bugs-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:996/0*MfcnicBkd4dj3md_.gif)
 
 Just kidding.
@@ -57,7 +57,7 @@ I found valid login credentials in JavaScript files. Here are the steps to do it
 
 - Get a list of your domains (we call it domains.txt).
 - Use a tool for crawling URLs, such as Katana, Waybackurls, or gau.
-```
+
 
 <div class="content-ad"></div>
 
@@ -105,7 +105,7 @@ grep -r -E "aws_access_key|aws_secret_key|api key|passwd|pwd|heroku|slack|fireba
 ![Image](/assets/img/2024-05-20-AnalyzingJavaScriptFilesToFindBugs_1.png)
 
 I hope it is helpful for you.
-```
+
 
 <div class="content-ad"></div>
 

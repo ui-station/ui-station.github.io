@@ -212,7 +212,7 @@ def process_message(topic, data):
 이러한 함수들을 좀 더 자세히 살펴봅시다.
 
 ## write_delta_table
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -233,7 +233,7 @@ def write_delta_table(df, path, mode):
 ## merge_into_delta_table
 
 여기에는 조금 더 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -259,7 +259,7 @@ def merge_into_delta_table(df, path):
 여기가 파이프라인의 전부입니다. 정말 간단합니다. 데이터를 게시하고 데이터를 구독하여 디스크에 저장합니다. 다음에는 해당 데이터를 쿼리하고 모든 것을 함께 가져오는 DataFrame을 가져오는 방법을 살펴볼 것입니다.
 
 # 쿼리
-```
+
 
 <div class="content-ad"></div>
 
@@ -330,7 +330,7 @@ complete = sale.join(
 마지막 단계는 결과를 출력하는 것입니다:
 
 <img src="/assets/img/2024-05-20-BuildingaReal-TimeDataPipeline_4.png" />
-```
+
 
 <div class="content-ad"></div>
 

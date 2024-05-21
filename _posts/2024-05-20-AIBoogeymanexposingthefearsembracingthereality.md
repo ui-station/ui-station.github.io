@@ -11,9 +11,9 @@ link: "https://medium.com/ai-advances/ai-boogeyman-exposing-the-fears-embracing-
 ---
 
 
-```Markdown
+
 ![AI Boogeyman](/assets/img/2024-05-20-AIBoogeymanexposingthefearsembracingthereality_0.png)
-```
+
 
 작년 겨울, 나는 정보 디자인에 관한 세 번째 학년 대학 과목을 강의할 기회를 가졌어. 캐나다에서는 이러한 수업에 학생들의 다양한 조합을 찾을 수 있다는 게 꽤 보편적이야. 이 중엔 세 번 혹은 네 번 길 수 있는 프로그램(학사 및 학사 with Honours)을 마치는 마지막 해에 있는 학생들도 있고, 컴퓨터 과학, 수학, 심리학, 언어 등의 다양한 학부 출신 학생들도 있어. 특히 학제간 프로그램을 수료하고 있는 학생들이 늘어나는 추세인데, 이는 현재 학계에서 눈에 띄는 트렌드야.
 

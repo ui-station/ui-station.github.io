@@ -396,7 +396,7 @@ Google Network Module를 사용하려고 합니다.
 ```js
 모듈 "network"에 대해 Markdown 형식의 표입니다:
 
-```markdown
+```
 module "network" {
   source  = "terraform-google-modules/network/google"
   version = "6.0.0"
@@ -418,7 +418,7 @@ module "network" {
     }
   ]
 }
-```
+
 
 초기화하고 적용하세요:
 
@@ -428,7 +428,7 @@ terraform apply
 ```
 
 인스턴스 모듈을 업데이트하여 네트워크 매개변수와 서브넷 매개변수를 사용하도록 하십시오.
-```
+
 
 <div class="content-ad"></div>
 
@@ -495,7 +495,7 @@ terraform apply
 
 위의 코드를 Korean으로 번역하였습니다:
 
-```md
+md
 main.tf을 업데이트 해주세요:
 
 ```js
@@ -517,7 +517,7 @@ resource "google_compute_firewall" "default" {
 ```js
 terraform apply
 ```
-```
+
 
 <div class="content-ad"></div>
 

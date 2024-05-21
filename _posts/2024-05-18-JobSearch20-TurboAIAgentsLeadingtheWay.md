@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177
 ---
 
 
-```
+
 ![이미지](/assets/img/2024-05-18-JobSearch20-TurboAIAgentsLeadingtheWay_0.png)
 
 # 목차
@@ -21,7 +21,7 @@ link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177
 - 모든 구직자에 영향을 미치는 일반적인 도전 과제 (왜..)
 - 취업 과정 최적화를 위한 AI 에이전트의 중요한 역할 (무엇..)
 - 과정에 AI 에이전트 기능 소개 (어떻게..)
-```
+
 
 <div class="content-ad"></div>
 
@@ -153,7 +153,7 @@ AI 에이전트의 추론 능력에는 제한이 있을 수 있지만, 점점 �
 - utils 디렉토리: 필요한 지원 함수를 포함
 - agents_factory.py 및 tasks_factory.py: 구성에 기반하여 에이전트 및 작업의 인스턴스를 동적으로 생성하는 데 사용됩니다.
 
-```markdown
+
 project/
 ├── configs
 │ └── agents.yml # 에이전트 구성
@@ -175,7 +175,7 @@ project/
 ├── tasks_factory.py # 작업 인스턴스 생성을 위한 팩토리 클래스
 │
 └── main.py # 메인
-```
+
 
 <div class="content-ad"></div>
 

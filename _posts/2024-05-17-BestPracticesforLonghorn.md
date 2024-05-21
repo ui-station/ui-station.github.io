@@ -11,7 +11,7 @@ link: "https://medium.com/@petolofsson/best-practices-for-longhorn-067d4ccb5fdd"
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-17-BestPracticesforLonghorn_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/@petolofsson/best-practices-for-longhorn-067d4ccb5fdd"
 Longhorn은 Rancher에서 설계하고 Kubernetes 클러스터의 Storage Classes를 관리하기 위해 만들어진 오픈 소스 분산 스토리지 시스템입니다.
 
 Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었습니다.
-```
+
 
 <div class="content-ad"></div>
 

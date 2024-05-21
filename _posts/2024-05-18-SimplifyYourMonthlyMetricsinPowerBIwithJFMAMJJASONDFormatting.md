@@ -92,7 +92,7 @@ SWITCH(
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-18-SimplifyYourMonthlyMetricsinPowerBIwithJFMAMJJASONDFormatting_2.png)
 
 Now, simply replace your current month field with the newly created ‘MonthAbbr’ column, and your metrics will have a cleaner, more streamlined look. You’re done!
@@ -100,7 +100,7 @@ Now, simply replace your current month field with the newly created ‘MonthAbbr
 ![image2](/assets/img/2024-05-18-SimplifyYourMonthlyMetricsinPowerBIwithJFMAMJJASONDFormatting_3.png)
 
 ![image3](/assets/img/2024-05-18-SimplifyYourMonthlyMetricsinPowerBIwithJFMAMJJASONDFormatting_4.png)
-```
+
 
 <div class="content-ad"></div>
 

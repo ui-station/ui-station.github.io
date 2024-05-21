@@ -57,7 +57,7 @@ implementation("androidx.room:room-ktx:2.6.1")
 ![Room Database 구조](/assets/img/2024-05-18-LocalPersistenceinAndroidRoomDatabase_1.png)
 
 새로운 DAO와 같은 익숙하지 않은 층이 있는 것을 알 수 있습니다. 이에 대해 더 자세히 설명하겠습니다.
-``` 
+ 
 
 <div class="content-ad"></div>
 
@@ -153,7 +153,7 @@ abstract class PokemonDatabase: RoomDatabase() {
 - PokemonDao를 반환하는 단일 추상 함수를 제공하여 DB에 액세스하려고 시도할 때 호출될 것입니다.
 
 모든 것이 SQLite 로컬 데이터베이스에서 작동하는 코드를 생성할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -695,7 +695,7 @@ DB의 생성은 Retrofit API 인터페이스를 인스턴스화하는 패턴과 
 
 <div class="content-ad"></div>
 
-```markdown
+
 단일<PokemonDatabase> {
    providePokemonDatabase(androidContext())
  }
@@ -708,11 +708,10 @@ viewModel { PokemonDetailsViewModel(get(), get()) }
 
 단일<FavoritesRepositoryInterface> { FavoritesRepository(get()) }
 viewModel { FavoriteListViewModel(get()) }
-```
+
 
 이제 우리 앱이 작동할 준비가 되었습니다!
 
 # 결론
 
 이 문서는 Android 앱에서 데이터를 로컬로 영속화하는 다양한 방법 중 하나를 소개했습니다. SQL을 사용하여 꽤 조직화된 패턴으로 Room 데이터베이스를 다루는 것은 관계형 데이터베이스의 SQL 테이블을 조작하는 것과 매우 유사하지만 네트워크 연결이 필요하지 않습니다. 삽입, 업데이트, 쿼리 및 삭제 작업을 조작할 수 있으며 모든 작업은 Repository 패턴을 통해 추상화될 수 있습니다. 즐겁게 읽으셨기를 바랍니다 ;)
-```

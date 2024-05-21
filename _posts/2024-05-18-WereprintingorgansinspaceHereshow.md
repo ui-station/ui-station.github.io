@@ -23,7 +23,7 @@ link: "https://medium.com/@alexia.rasnoveanu777/were-printing-organs-in-space-he
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-WereprintingorgansinspaceHereshow_0.png)
 
 기본적으로 이식 수술은 기증된 장기를 수용자의 혈액 공급에 연결하는 것입니다 (정맥, 동맥, 혈구 시스템 - 면역 세포의 숙주). 환자의 기관은 20/20 시력을 갖고 있지 않기 때문에, 그것은 세포의 단백질 표지판을 "읽을 때" 그것을 자신의 것으로 인식합니다. 그래서 기증자는 환자와 동일한 혈액형이어야 하며, 가능한 경우 나이도 비슷해야 합니다. 그러나 분자 수준에서는 이러한 매개변수가 결코 동일하지는 않습니다.
@@ -31,7 +31,7 @@ link: "https://medium.com/@alexia.rasnoveanu777/were-printing-organs-in-space-he
 ## 그래서 전투가 시작됩니다.
 
 환자의 몸은 이를 외부적으로 분류하고 바이러스인 것처럼 공격합니다. 그래서 우리 몸이 새 장기의 세포를 죽이게 됩니다. 우리의 세포를 공격하지 않도록 우리 면역 시스템을 프로그래밍하는 방법은 없습니다. 단지 추가된 장기에 대한 공격적 반응을 줄이는 것뿐입니다.
-```
+
 
 <div class="content-ad"></div>
 

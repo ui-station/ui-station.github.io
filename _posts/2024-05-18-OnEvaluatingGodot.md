@@ -21,7 +21,7 @@ link: "https://medium.com/@caseyyano/on-evaluating-godot-b35ea86e8cf4"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-OnEvaluatingGodot_0.png)
 
 유니티는 불필요하게 이상한 후속 진술과 소극적인 설명을 더욱 깊게 파고들었고, 그들의 직원들은 다른 사람들처럼 혼란스러워하며 모두를 진정시키려고 최선을 다하고 있었습니다. 그것은 대재앙이었습니다.
@@ -29,7 +29,7 @@ link: "https://medium.com/@caseyyano/on-evaluating-godot-b35ea86e8cf4"
 초기 문제에 대해 더 읽어보거나 여기에 이어지는 내용을 확인할 수 있습니다.
 
 유니티가 한 일은 정말 어리석은 일이었어요. 저는 그 엔진을 별로 좋아하지도 않아요. IPO 이후에 그들이 수수료를 부과하고 그들의 버그가 더 심해진 컴포넌트를 고치지 않는 이 "커뮤니티를 위한" 엔진이라고 말하면서 나는 매우 독립적인 인디 게임 개발자인데 말이죠.
-```
+
 
 <div class="content-ad"></div>
 
@@ -56,7 +56,7 @@ link: "https://medium.com/@caseyyano/on-evaluating-godot-b35ea86e8cf4"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Game content pipeline](/assets/img/2024-05-18-OnEvaluatingGodot_1.png)
 
 So we worked on a deckbuilding autobattler because it’s familiar and it has a lot of bits and bobs which tend to be the types of games that we like making (content-heavy, deterministic).
@@ -64,7 +64,7 @@ So we worked on a deckbuilding autobattler because it’s familiar and it has a 
 # Game Content Pipeline
 
 I think unlike most companies, we’re a design-first company AND both of our game designers (myself and Anthony) are technically proficient so we’re able to circumvent the making of several tools.
-```
+
 
 <div class="content-ad"></div>
 

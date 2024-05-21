@@ -157,15 +157,15 @@ sh start.sh
 
 모든 것이 제대로 진행되면 라즈베리 파이의 8080 포트를 통해 http://0.0.0.0:8080로 Ollama 웹 UI에 액세스할 수 있거나, 동일한 네트워크에서 다른 장치를 통해 접속하고 있다면 http://라즈베리 파이의 로컬 주소:8080/을 통해 접속할 수 있습니다.
 
-```markdown
+
 ![이미지 설명](/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_6.png)
-```
+
 
 계정을 생성하고 로그인한 후, 아래 이미지와 유사한 화면이 보여야 합니다.
 
-```markdown
+
 ![이미지 설명](/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -179,7 +179,7 @@ sh start.sh
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_10.png)
 
 ## 4. Ollama 웹 UI를 통해 VLM 실행하기
@@ -187,7 +187,7 @@ sh start.sh
 이 글을 시작할 때 언급했듯이, VLM도 실행할 수 있습니다. LLaVA를 실행해보겠습니다. 이것은 Ollama에서도 지원되는 인기 있는 오픈 소스 VLM입니다. 실행하려면 인터페이스를 통해 'llava'를 가져와서 가중치를 다운로드하면 됩니다.
 
 안타깝게도, LLM과는 달리 Raspberry Pi에서 이미지를 해석하는 설정에 꽤 많은 시간이 걸립니다. 아래 예시는 처리하는 데 약 6분 정도 걸렸습니다. 대부분의 시간은 아마 이미지 측면이 아직 제대로 최적화되지 않았기 때문인데, 이는 앞으로 확실히 변경될 것입니다. 토큰 생성 속도는 초당 약 2토큰입니다.
-```
+
 
 <div class="content-ad"></div>
 

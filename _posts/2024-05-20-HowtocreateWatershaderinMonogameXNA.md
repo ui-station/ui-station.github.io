@@ -82,7 +82,7 @@ protected override void Initialize()
 ```
 
 # 평면 반사
-```
+
 
 <div class="content-ad"></div>
 
@@ -488,7 +488,7 @@ refractionTex += distortion;
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 float2 distortedTexCoords = tex2D(distortionSampler, float2(input.TextureCoordinates.x + MoveFactor, input.TextureCoordinates.y)) * 0.01;
 distortedTexCoords = input.TextureCoordinates + float2(distortedTexCoords.x, distortedTexCoords.y + MoveFactor);

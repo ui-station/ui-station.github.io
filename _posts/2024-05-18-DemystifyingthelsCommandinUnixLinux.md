@@ -33,7 +33,7 @@ silentstorm29@cloudmaniac ~ % ls -larth
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-DemystifyingthelsCommandinUnixLinux_0.png)
 
 이게 일반적으로 우리가 사용하는 거잖아요??
@@ -41,7 +41,7 @@ silentstorm29@cloudmaniac ~ % ls -larth
 ls 명령어는 Unix 및 Unix와 유사한 운영 체제의 중요한 요소입니다. 이 명령 줄 유틸리티는 디렉토리의 내용을 나열하는데, 보다 많은 기능을 제공합니다. 파일 및 디렉토리의 속성을 보기 위한 다양한 옵션을 제공하는데, 이는 권한, 소유권, 크기 및 수정 시간을 포함합니다.
 
 # ls 명령어의 힘을 발휘하기
-```
+
 
 <div class="content-ad"></div>
 

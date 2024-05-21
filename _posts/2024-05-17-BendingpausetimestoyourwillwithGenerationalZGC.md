@@ -53,14 +53,14 @@ Danny Thomas가 쓴 JVM 에코시스템 팀의 기사
 
 아래는 Markdown 형식으로 테이블을 변환한 것입니다.
 
-```markdown
+
 | Feature        | Description                                                                                                                                                                                  |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Generational ZGC | Improved CPU utilization by nearly 10% compared to G1 for the same workload.                                                                                                                 |
 | Hollow library | Used by half of the streaming video services for on-heap metadata, which led to the removal of array pooling mitigations and saved hundreds of megabytes of memory for allocations.       |
 | Operational simplicity | ZGC's heuristics and defaults require no explicit tuning to achieve optimal results. Allocation stalls are rare and shorter than with G1.                                                        |
 | Memory overhead | The long-lived on-heap data was the main reason we previously avoided non-generational ZGC, but generational ZGC helped improve the situation significantly.                                   |
-```
+
 
 <div class="content-ad"></div>
 

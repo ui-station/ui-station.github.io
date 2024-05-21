@@ -374,7 +374,7 @@ details.abilities::STRUCT(ability STRUCT(name VARCHAR, url VARCHAR), is_hidden B
 ```
 
 abilities의 유형을 구조 목록으로 변환합니다. 각 구조에는 더 자세한 정보를 위해 능력 이름과 URL뿐만 아니라, 숨겨진 플래그와 슬롯 번호를 포함하는 또 다른 구조가 포함됩니다.
-```
+
 
 <div class="content-ad"></div>
 

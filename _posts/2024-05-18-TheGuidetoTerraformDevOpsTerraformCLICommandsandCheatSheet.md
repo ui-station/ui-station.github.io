@@ -139,7 +139,7 @@ terraform plan -no-color 2>&1 | tee plan.log
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-TheGuidetoTerraformDevOpsTerraformCLICommandsandCheatSheet_8.png)
 
 - 설명:
@@ -153,7 +153,7 @@ terraform plan -no-color 2>&1 | tee plan.log
 - terraform providers: 구성된 제공자에 관한 정보를 표시합니다.
 - terraform output: Terraform 구성에서 출력 값들을 표시합니다.
 - terraform version: Terraform 버전 정보를 표시합니다.
-```
+
 
 <div class="content-ad"></div>
 

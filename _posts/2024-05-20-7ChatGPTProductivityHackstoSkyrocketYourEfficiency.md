@@ -67,7 +67,7 @@ ChatGPT는 워크플로우를 극적으로 변화시킬 수 있는 도구 중 �
 
 Markdown 형식으로 테이블 태그를 변경해주세요.
 
-```markdown
+
 Analogies are a powerful tool, turning complex ideas into understandable and relatable concepts.
 
 Use this ChatGPT prompt to identify analogies that perfectly fit your situation and message.
@@ -75,7 +75,7 @@ Use this ChatGPT prompt to identify analogies that perfectly fit your situation 
 Replace what you’d like to explain in bold, and summarize the steps to better explain the analogy.
 
 ![Image](/assets/img/2024-05-20-7ChatGPTProductivityHackstoSkyrocketYourEfficiency_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -87,10 +87,10 @@ Replace what you’d like to explain in bold, and summarize the steps to better 
 
 당신은 역사의 교훈들로 내용을 풍부하게 만들고:
 
-```markdown
+
 - Gain insights into the present
 - Guide future decisions
-```
+
 
 <div class="content-ad"></div>
 

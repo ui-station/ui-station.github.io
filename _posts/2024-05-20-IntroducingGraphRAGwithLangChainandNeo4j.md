@@ -64,7 +64,7 @@ RAG는 세 단계로 구성되어 있습니다:
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_3.png" />
 
 - Generation → 사용자의 쿼리에 대한 응답을 LLM이 증강된 컨텍스트를 기반으로 생성합니다.
@@ -72,7 +72,7 @@ RAG는 세 단계로 구성되어 있습니다:
 <img src="/assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_4.png" />
 
 언급했듯이 일반적인 RAG 애플리케이션은 모든 내장된 지식 베이스가 저장된 기저 VectorDB를 가정합니다. 그러나 GraphRAG의 경우 이 접근 방식이 약간 변합니다.
-```
+
 
 <div class="content-ad"></div>
 

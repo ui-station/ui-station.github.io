@@ -11,7 +11,7 @@ link: "https://medium.com/@khush.panchal123/understanding-kotlins-any-unit-nothi
 ---
 
 
-```markdown
+
 ![Understanding Kotlin's Any, Unit, Nothing](/assets/img/2024-05-20-UnderstandingKotlinsAnyUnitNothing_0.png)
 
 Kotlin은 Java에서 사용하던 것과는 매우 다른 독특한 유형을 제공합니다. 이 블로그에서는 Any, Unit, 그리고 Nothing과 같은 세 가지 유형을 탐색해 볼 것입니다.

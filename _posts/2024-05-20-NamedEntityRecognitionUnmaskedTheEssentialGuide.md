@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/named-entity-recognition-unmasked
 ---
 
 
-```markdown
+
 ![NamedEntityRecognitionUnmaskedTheEssentialGuide](/assets/img/2024-05-20-NamedEntityRecognitionUnmaskedTheEssentialGuide_0.png)
 
 ## 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/named-entity-recognition-unmasked
 알겠어요, 상상해보세요— 정보를 처리하고 싶은 기사, 저널 및 블로그의 산더미가 많이 있습니다. 이제 이 데이터에 작업할 기회가 커뮤니티에 도움이 될 것이라고 생각해보세요. 하지만 이 데이터를 즉시 공유하고 싶지는 않을 것입니다. 왜냐하면 사람들의 동의 없이 공유하면 안 되는 개인 정보가 포함될 수도 있기 때문입니다.
 
 모든 사람으로부터 허락을 받는 것은 현실적이지 않기 때문에 당신은 자신의 기술을 사용하여 FERPA 가이드라인에 따라 개인 정보를 숨기기로 결정합니다. 회사들이 분석이나 데모 목적으로 외부에서 공유할 때 데이터를 가리는 것은 흔한 일이며, 숫자 데이터의 경우 더 쉽습니다. 여기서는 텍스트 데이터를 사용하여 동일한 작업을 하려고 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -98,7 +98,7 @@ python -m spacy download en_core_web_trf
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ```js
 pip install spacy
 pip install nltk

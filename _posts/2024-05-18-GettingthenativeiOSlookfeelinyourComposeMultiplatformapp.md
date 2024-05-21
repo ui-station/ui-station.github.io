@@ -142,7 +142,7 @@ AdaptiveButton(onClick = { showContent = !showContent }) {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-GettingthenativeiOSlookfeelinyourComposeMultiplatformapp_1.png)
 
 패턴은 명확해야 합니다: iOS 스타일 컴포넌트에는 Cupertino[ComponentName]을 사용하고, 플랫폼에 따라 변경되는 컴포넌트에는 Adaptive[ComponentName]을 사용해야 합니다. 이 튜토리얼에서는 모두 Adaptive 컴포넌트만 사용할 것입니다.
@@ -150,7 +150,7 @@ AdaptiveButton(onClick = { showContent = !showContent }) {
 대부분은 매개변수를 변경하지 않고 이름만 변경하면 됩니다. AlertDialog은 text를 title로, confirmButton을 buttons로 변경해야 하는 예외입니다.
 
 전체 커밋: ComposeCupertinoSample/pull/2/commits/a8da43dd7db1187df15c0fbbca9af3ef705c64bd
-```
+
 
 <div class="content-ad"></div>
 

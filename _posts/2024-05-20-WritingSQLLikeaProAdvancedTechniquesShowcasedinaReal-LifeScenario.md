@@ -41,7 +41,7 @@ SQL 및 빅 데이터 분야에서 12년 이상 경력을 가진 프리랜서 �
 
 <div class="content-ad"></div>
 
-```
+
 <img src="/assets/img/2024-05-20-WritingSQLLikeaProAdvancedTechniquesShowcasedinaReal-LifeScenario_3.png" />
 
 그 다음 문제는 다음과 같습니다. 이벤트 테이블 두 개를 하나의 테이블로 병합하여 각 기사에 대한 가격 이력 및 프로모션 효과를 제공하는 단일 테이블을 얻고 싶습니다.
@@ -49,7 +49,7 @@ SQL 및 빅 데이터 분야에서 12년 이상 경력을 가진 프리랜서 �
 다시 말해, 우리가 원하는 기대 결과는 다음과 같아야 합니다:
 
 <img src="/assets/img/2024-05-20-WritingSQLLikeaProAdvancedTechniquesShowcasedinaReal-LifeScenario_4.png" />
-```
+
 
 <div class="content-ad"></div>
 

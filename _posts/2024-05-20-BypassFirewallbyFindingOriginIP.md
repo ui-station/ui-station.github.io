@@ -31,7 +31,7 @@ link: "https://medium.com/@ott3rly/bypass-firewall-by-finding-origin-ip-41ba984e
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지1](/assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_1.png)
 
 서버의 원본 IP와 같을 필요는 없습니다. 웹 응용 프로그램 방화벽 IP 주소일 수도 있습니다. 직접 액세스하려고 하면 일반적인 Cloudflare 오류가 표시됩니다:
@@ -39,11 +39,11 @@ link: "https://medium.com/@ott3rly/bypass-firewall-by-finding-origin-ip-41ba984e
 ![이미지2](/assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_2.png)
 
 다른 해결 방법은 Wappalyzer 플러그인을 사용하는 것입니다. 이 웹 사이트를 검사하면 Cloudflare를 사용하고 있다는 것을 보여줍니다.
-```
+
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![Screenshot](/assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_3.png)
 
 Another thing is also going back to the terminal and using tools like dnsrecon:
@@ -53,7 +53,7 @@ dnsrecon -d ott3rly.com
 ```
 
 This command will access DNS records, which could also indicate what WAF the server could use:
-```
+
 
 <div class="content-ad"></div>
 

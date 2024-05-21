@@ -11,7 +11,7 @@ link: "https://medium.com/proandroiddev/app-architecture-data-layer-8d681e8f8a6d
 ---
 
 
-```markdown
+
 ![AppArchitectureDatalayer_0](/assets/img/2024-05-18-AppArchitectureDatalayer_0.png)
 
 이전 글에서는 도메인 레이어를 안정적이고 플랫폼 독립적인 레이어로 다루었습니다. 오늘은 데이터 레이어의 목적을 다루겠습니다. 함께 알아봅시다.
@@ -19,7 +19,7 @@ link: "https://medium.com/proandroiddev/app-architecture-data-layer-8d681e8f8a6d
 ![AppArchitectureDatalayer_1](/assets/img/2024-05-18-AppArchitectureDatalayer_1.png)
 
 데이터 레이어는 앱의 나머지 부분에 데이터를 노출하는 역할을 합니다. 다양한 데이터 소스를 관리하고 그들 사이의 충돌을 처리합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -138,7 +138,7 @@ Composable 함수가 재시작 가능(restartable)이면서 동시에 skippable�
 
 <div class="content-ad"></div>
 
-```markdown
+
 Compose 컴파일러 플러그인을 사용하면 Compose에 고유한 특정 개념에 중점을 둔 자세한 보고서와 메트릭을 생성할 수 있습니다. 이러한 통찰력은 Compose 코드의 복잡성을 파헤치는 데 유용하며, 마이크로 레벨에서 작동 방식을 정확하게 이해할 수 있도록 도와줍니다.
 
 Compose 컴파일러 메트릭을 생성하려면, 아래 예제에 설명된 대로 루트 모듈의 build.gradle 파일에 컴파일러 옵션을 추가하면 됩니다:
@@ -146,7 +146,7 @@ Compose 컴파일러 메트릭을 생성하려면, 아래 예제에 설명된 �
 프로젝트를 동기화하고 빌드한 후, /build/compose_metrics 디렉토리에 생성된 세 가지 다른 파일인 module.json, composablex.txt 및 classes.txt에 액세스할 수 있습니다. 이 파일들을 각각 자세히 살펴보겠습니다.
 
 ## 최상위 메트릭 (modules.json)
-```
+
 
 <div class="content-ad"></div>
 
@@ -223,7 +223,7 @@ stable class StreamShapes {
 # 안정성 주석
 
 이제 Compose 컴파일러가 안정성을 처리하는 방식과 이러한 안정성 결정이 다시 구성에 어떻게 영향을 미치는지, 그리고 당신의 애플리케이션 성능에 어떻게 영향을 미칠 수 있는지 통찰력을 얻었어요.
-```
+
 
 <div class="content-ad"></div>
 

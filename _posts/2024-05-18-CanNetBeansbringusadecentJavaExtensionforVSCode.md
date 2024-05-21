@@ -98,7 +98,7 @@ Oracle Java 확장 프로그램의 흥미로운 기능 중 하나는 Project Exp
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-CanNetBeansbringusadecentJavaExtensionforVSCode_2.png)
 
 Microsoft Java Extension 팩의 프로젝트 탐색기 패널과 비교해서 오라클 것이 훨씬 더 좋고 더 편리하며 더 깔끔하다고 생각했어요.
@@ -106,7 +106,7 @@ Microsoft Java Extension 팩의 프로젝트 탐색기 패널과 비교해서 �
 ![이미지](/assets/img/2024-05-18-CanNetBeansbringusadecentJavaExtensionforVSCode_3.png)
 
 Spring Boot 프로젝트의 경우, Spring Boot 익스텐션 팩 프로젝트 뷰와 대시보드를 이 두 가지보다 더 좋아해요. Spring Boot 프로젝트에 대해 훨씬 더 유용하고 정보를 잘 제공하며 쉽게 관리할 수 있도록 도와줍니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -132,7 +132,7 @@ Spring Boot 프로젝트의 경우, Spring Boot 익스텐션 팩 프로젝트 �
 
 아래는 Markdown 형식으로 변경된 내용입니다.
 
-```markdown
+
 ![image](/assets/img/2024-05-18-CanNetBeansbringusadecentJavaExtensionforVSCode_6.png)
 
 Oracle Java extension pack supports Native Image Debugger, which allows Java-style debugging of Ahead of Time compiled native images produced by GraalVM.
@@ -140,7 +140,7 @@ Oracle Java extension pack supports Native Image Debugger, which allows Java-sty
 Another advantage of the Oracle Java Extension is that it supports run main with continuous mode for gradle projects.
 
 ## Testing view
-```
+
 
 <div class="content-ad"></div>
 

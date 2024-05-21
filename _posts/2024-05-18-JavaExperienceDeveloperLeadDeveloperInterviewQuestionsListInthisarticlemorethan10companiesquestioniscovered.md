@@ -11,7 +11,7 @@ link: "https://medium.com/@vivekkadiyanits/java-lead-7-to-10-years-interview-mas
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-JavaExperienceDeveloperLeadDeveloperInterviewQuestionsListInthisarticlemorethan10companiesquestioniscovered_0.png)
 
 참고: Java/Spring boot는 한 기사에서 다루기에 매우 방대한 기술 스택이지만, 저는 현재까지 받은 모든 인터뷰 질문을 최대한 포함하려고 노력했습니다. 따라서 여러분도 동일한 것을 참고하여 본인의 준비 상황을 점검할 수 있습니다. 모든 질문에 대한 해결책을 제공하기 위해 다른 기사를 작성해 달라면, 댓글에 귀중한 의견을 남겨주세요.
@@ -19,7 +19,7 @@ link: "https://medium.com/@vivekkadiyanits/java-lead-7-to-10-years-interview-mas
 Questions
 
 ![이미지](/assets/img/2024-05-18-JavaExperienceDeveloperLeadDeveloperInterviewQuestionsListInthisarticlemorethan10companiesquestioniscovered_1.png)
-```
+
 
 <div class="content-ad"></div>
 

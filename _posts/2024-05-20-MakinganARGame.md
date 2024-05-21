@@ -59,12 +59,12 @@ link: "https://medium.com/samsung-internet-dev/making-an-ar-game-with-aframe-529
 
 변환된 표 태그를 Markdown 형식으로 변경해주세요:
 
-```markdown
+
 | Header One  | Header Two  |
 |-------------|-------------|
 | Row One     | Row One     |
 | Row Two     | Row Two     |
-```
+
 
 ## 테스트
 
@@ -82,7 +82,7 @@ WebXR를 실행하려면 안전한 출처가 필요합니다. 안전한 출처�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![AR Game Screenshot](/assets/img/2024-05-20-MakinganARGame_0.png)
 
 한번 설정하면 폰에서 컴퓨터에서 하는 것처럼 http://localhost:8080 (8080은 사용 중인 포트로 대체)을 열고 테스트할 수 있어요.
@@ -90,7 +90,7 @@ WebXR를 실행하려면 안전한 출처가 필요합니다. 안전한 출처�
 실시간 스트림 중에는 폰의 USB-C 포트를 사용하여 HDMI를 캡처했기 때문에 이 기능을 사용할 수 없었어요. 그래서 로컬 서버를 위한 실제 https: URL을 얻기 위해 https://ngrok.com/을 사용했어요.
 
 ## AR 기능 활성화
-```
+
 
 <div class="content-ad"></div>
 
@@ -207,9 +207,9 @@ Reticle HTML goes here ...
 
 <div class="content-ad"></div>
 
-```markdown
+
 ## 훈련 목표 설명하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -286,7 +286,7 @@ AFrame 물리 시스템에는 두 개의 객체가 충돌했을 때 감지하거
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 const ball = document.getElementById('ball');
 reticle.addEventListener('select', function (e) {

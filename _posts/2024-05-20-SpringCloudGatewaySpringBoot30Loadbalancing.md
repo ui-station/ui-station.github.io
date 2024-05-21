@@ -11,7 +11,7 @@ link: "https://medium.com/@mominjahid/spring-cloud-gateway-spring-boot-3-0-load-
 ---
 
 
-```markdown
+
 ![Spring Cloud Gateway](/assets/img/2024-05-20-SpringCloudGatewaySpringBoot30Loadbalancing_0.png)
 
 Spring Cloud Gateway는 Spring Boot 애플리케이션에서 API 게이트웨이를 구축하는 강력하고 유연한 솔루션을 제공합니다. 다양한 기능을 갖춘 Spring Cloud Gateway는 라우팅, 요금 제한, 보안 및 장애 관리를 처리할 수 있습니다.
@@ -19,7 +19,7 @@ Spring Cloud Gateway는 Spring Boot 애플리케이션에서 API 게이트웨이
 ![Spring Cloud Gateway](/assets/img/2024-05-20-SpringCloudGatewaySpringBoot30Loadbalancing_1.png)
 
 마이크로서비스 아키텍처 시대에는 견고하고 확장 가능한 시스템 구축이 중요합니다. Spring Boot와 Spring Cloud의 발전으로 개발자들은 이전 Netflix Zuul에 의존하지 않고도 견고한 마이크로서비스 기반 애플리케이션을 생성할 수 있는 강력한 도구를 사용할 수 있습니다. 이 블로그 포스트에서는 Spring Boot 3.0과 함께 Spring Cloud Gateway를 사용하여 현대적인 마이크로서비스 아키텍처를 어떻게 만들 수 있는지 살펴보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -35,15 +35,15 @@ Spring Boot이 계속 발전함에 따라 더 최신 기술과 모범 사례에 
 
 <div class="content-ad"></div>
 
-```markdown
+
 의존성 테이블을 다음과 같이 변경해보세요:
 
-```markdown
+
 <dependency>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 </dependency>
-```
+
 
 - @EnableEurekaServer 주석을 사용하여 주 클래스에 Eureka 서버를 활성화하세요.
 
@@ -57,14 +57,14 @@ public class MyEurekaServerApplication {
  public static void main(String[] args) {
   SpringApplication.run(MyEurekaServerApplication.class, args);
  }
-}```
+}
+```
 
 그리고 My application.properties 파일에도 변경을 적용해주세요.
-```
 
 <div class="content-ad"></div>
 
-```plaintext
+```bash
 // application.properties
 eureka.client.fetch-registry=false
 eureka.client.register-with-eureka=false
@@ -74,7 +74,7 @@ spring.application.name=MY-EUREKA-SERVER
 
 아래 종속성을 사용하여 Spring Boot 어플리케이션을 생성하세요.
 
-```plaintext
+```js
 <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-web</artifactId>
@@ -85,7 +85,7 @@ spring.application.name=MY-EUREKA-SERVER
 </dependency>
 ```
 
-```plaintext
+```js
 <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-test</artifactId>
@@ -159,7 +159,7 @@ https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starte
 그래서 최신 버전(내 경우 3.2.4v)의 스프링 부트 프로젝트를 만들고 위의 종속성을 추가합니다.
 
 - application.yml 파일에 라우팅 구성을 추가하십시오. `service-name` 프로토콜을 사용하여 API 게이트웨이에 서비스 검색을 지시합니다. 두 개의 payment-service 인스턴스가 있으므로 부하 처리가 필요하고 동적으로 처리해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 

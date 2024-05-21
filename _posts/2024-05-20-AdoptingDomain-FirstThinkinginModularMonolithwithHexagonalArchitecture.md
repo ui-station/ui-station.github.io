@@ -11,7 +11,7 @@ link: "https://medium.com/itnext/adopting-domain-first-thinking-in-modular-monol
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-20-AdoptingDomain-FirstThinkinginModularMonolithwithHexagonalArchitecture_0.png)
 
 Part 1:
@@ -19,7 +19,7 @@ Part 1:
 Part 2:
 
 In the first blog, we explored the concept of Modular Monolith, what is a module and how DDD strategy patterns can be used to create modular applications.
-```
+
 
 <div class="content-ad"></div>
 
@@ -182,7 +182,7 @@ CirculationDesk 응용 프로그램 서비스는 위의 리포지터리 인터�
 
 <div class="content-ad"></div>
 
-```markdown
+
 하나의 사용 사례 결과는 Aggregate의 업데이트된 상태를 지속시키는 것입니다. 또 다른 결과는 도메인 이벤트를 발생시켜 모노리스의 다른 모듈 (또는 동일 모듈 내의 다른 Aggregate)에서 대응할 수 있도록 하는 것일 수 있습니다.
 
 Aggregate를 지속시키는 것 (Repository 사용)과 이벤트를 발생시키는 것 (Event Publisher 사용)은 헥사고날 아키텍처에서 이차/드라이븐 포트입니다. 구현은 비즈니스 로직과 관련이 없습니다.
@@ -365,7 +365,7 @@ void placeHoldRestCall() throws Exception {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![](/assets/img/2024-05-20-AdoptingDomain-FirstThinkinginModularMonolithwithHexagonalArchitecture_5.png)
 
 주요 포트 및 어댑터 클래스를 쉽게 식별할 수 있습니다.
@@ -373,7 +373,7 @@ void placeHoldRestCall() throws Exception {
 ## 헥사고날 아키텍처에 헌신해야 할까요?
 
 모듈형 단일체 애플리케이션을 구축할 때, 모든 모듈에 대해 헥사고날 아키텍처를 사용해야 할지에 대해 고려해야 합니다. 만약 모듈이 자체 비즈니스 규칙을 갖고 있거나 (또는 나중에 갖게 될 것으로 예상된다면), 헥사고날 아키텍처가 좋은 아이디어일 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

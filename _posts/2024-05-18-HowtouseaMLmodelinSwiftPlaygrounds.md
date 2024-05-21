@@ -31,7 +31,7 @@ Swift Playgrounds 프로젝트에서 ML 모델을 사용하려면, 모델의 .ml
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ML model class file](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_1.png)
 
 This will take you to the class file of our CoreML model, which acts as the interface between the model and our app. It allows us to provide information and receive a processed response from it.
@@ -39,11 +39,11 @@ This will take you to the class file of our CoreML model, which acts as the inte
 ![Show in Finder](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_2.png)
 
 While completing the remaining steps, we need to create a copy of this file and save it in another folder. Right-click on the file, choose "Show in Finder," and create a duplicate.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ML model in Swift Playgrounds](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_3.png)
 
 ![ML model in Swift Playgrounds](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_4.png)
@@ -51,7 +51,7 @@ While completing the remaining steps, we need to create a copy of this file and 
 다음 단계는 CoreML 모델의 컴파일된 버전을 획득하는 것입니다. 이를 위해 먼저 응용 프로그램의 컴파일된 파일, 빌드에 액세스해야 합니다. 이를 찾으려면 Finder를 열고 명령 ⌘ + Shift + G를 사용하세요. 그런 다음 다음 경로로 이동하세요:
 
 ~/Library/Developer/Xcode/DerivedData
-```
+
 
 <div class="content-ad"></div>
 

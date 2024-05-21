@@ -159,7 +159,7 @@ link: "https://medium.com/better-programming/overcoming-vim-phobia-my-journey-of
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Overcoming Vim Phobia](/assets/img/2024-05-20-OvercomingVim-PhobiaMyJourneyofRedemption_7.png)
 
 Vim을 언젠가 제거하고 Vim으로 이동할 것 같다는 생각을 했던 것은 정말 어리석은 일이었습니다. 비슷하게 이동할 수 있어서 그런 줄로만 알고 있었지만, 사실 저는 VS Code를 하는 데 Vim 바인딩을 사용하고 있었을 뿐이었어요. 전체적인 작업 방식이 여전히 부족했습니다. 알게 된 건 몇 가지 키보드 단축키 뿐이었습니다.
@@ -167,7 +167,7 @@ Vim을 언젠가 제거하고 Vim으로 이동할 것 같다는 생각을 했던
 그래도 제가 이사를 했죠. 어느 날 프로젝트에서 몇 가지 단어를 찾아 바꿔야 했는데, 할 수 없어서 결국은 다시 돌아왔어요. 그때부터 VS Code는 제 정체성이 되었습니다. VS Code에서 코드를 빠르게 작성해 나가는데 능란했고, 친구들도 그것을 알고 있었죠. 그래서 Vim 대신 다시 VS Code로 자리를 잡았습니다.
 
 Vim 열정가들이 하는 것을 내가 할 수 있다는 것에 기쁘기는 했지만, 여전히 편안한 영역에 갇혀있다는 것을 알고 있었어요. 문제는 하이브리드 키바인딩으로 VS Code를 사용하고 있었는데, 이젠 그것마저 다른 것으로 대체했다는 겁니다. 그런 해결책이 어떤 걸까요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -192,7 +192,7 @@ Neovim으로 전환한 지금은 전혀 다르게 느껴지지 않아요. 이미
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 8](/assets/img/2024-05-20-OvercomingVim-PhobiaMyJourneyofRedemption_8.png)
 
 ![Image 9](/assets/img/2024-05-20-OvercomingVim-PhobiaMyJourneyofRedemption_9.png)
@@ -200,7 +200,7 @@ Neovim으로 전환한 지금은 전혀 다르게 느껴지지 않아요. 이미
 ![Image 10](/assets/img/2024-05-20-OvercomingVim-PhobiaMyJourneyofRedemption_10.png)
 
 ![Image 11](/assets/img/2024-05-20-OvercomingVim-PhobiaMyJourneyofRedemption_11.png)
-```
+
 
 <div class="content-ad"></div>
 

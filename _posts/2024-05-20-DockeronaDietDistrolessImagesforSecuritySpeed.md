@@ -58,11 +58,11 @@ CMD ["app.jar"]
 이전에 사용한 openjdk 베이스 이미지
 
 이전 취약점 통계: 총 96개 | 중요: 0 | 높음: 23 | 중간: 73
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_1.png)
 
 Java distroless 이미지 사용 중
@@ -70,7 +70,7 @@ Java distroless 이미지 사용 중
 현재 취약점 통계: 총 1 | 심각: 0 | 높음: 0 | 중간: 1
 
 ![이미지](/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -124,11 +124,11 @@ Nginx 베이스 이미지의 취약점 카운트와 이미지 크기를 비교 �
 이전에 사용한 nginx 알파인 베이스 이미지
 
 이전 취약성 통계 "Total: 32 | Critical: 1 | High: 13 | Medium: 18"
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Dockerona Diet Distroless Images for Security Speed 3](/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_3.png)
 
 Using base distroless image crafted with nginx
@@ -136,7 +136,7 @@ Using base distroless image crafted with nginx
 Current Vulnerability Stats: Total: 0 | Critical: 0 | High: 0 | Medium: 0
 
 ![Dockerona Diet Distroless Images for Security Speed 4](/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_4.png)
-```
+
 
 <div class="content-ad"></div>
 

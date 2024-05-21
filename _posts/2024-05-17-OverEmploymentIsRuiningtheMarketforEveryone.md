@@ -11,7 +11,7 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 ---
 
 
-```markdown
+
 ![2024-05-17-OverEmploymentIsRuiningtheMarketforEveryone_0](/assets/img/2024-05-17-OverEmploymentIsRuiningtheMarketforEveryone_0.png)
 
 팬데믹이 시작되었을 때 대다수가 원격으로 일해야 했을 때, 두 가지를 깨달았어요:
@@ -20,7 +20,7 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 - 그리고 한 직장으로는 무슨 일이 생길지 모른다는 것을 깨달았어요 (심지어 안정적인 기업도 재정적 문제가 있었어요).
 
 지루했고 미래에 대해 불안했으며 온라인으로 돈을 벌기 위한 새로운 방법을 시도해봐도 완전히 생산적이라고 느끼지 않았어요. 그래서 저는 이전 직장은 유지하면서 다른 정규직을 찾기로 결심했어요.
-```
+
 
 <div class="content-ad"></div>
 

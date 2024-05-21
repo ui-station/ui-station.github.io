@@ -254,7 +254,7 @@ resources:
 ## 2. 외부 키 관리 서비스(KMS) 사용
 
 보안을 강화하기 위해 Kubernetes는 AWS KMS, Google Cloud KMS 또는 HashiCorp Vault와 같은 외부 키 관리 서비스와 통합할 수 있습니다. 이 방법을 사용하면 Kubernetes가 외부 시스템을 사용하여 키 관리를 수행할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@ikpemosi.braimoh/static-website-hosting-on-aws-s3-and
 ---
 
 
-```markdown
+
 ![Static Website Hosting on AWS S3 and CloudFront](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_0.png)
 
 정적 웹 사이트에는 HTML 페이지, 이미지, CSS 파일, 때로는 JavaScript 및 웹 사이트를 호스팅하는 데 필요한 모든 필수 파일이 포함됩니다. 그들은 변하지 않기 때문에 정적입니다. 웹 사이트를 방문할 때마다 항상 동일한 정보를 동일한 순서와 위치에 보게 됩니다. 이는 로그인한 사용자나 검색 내용에 따라 콘텐츠가 변경되는 동적 웹 사이트와는 달라요.
@@ -19,7 +19,7 @@ link: "https://medium.com/@ikpemosi.braimoh/static-website-hosting-on-aws-s3-and
 AWS에서 정적 웹 사이트는 '무언가'라고 불리는 S3 버킷에 저장됩니다. 버킷은 웹 사이트와 관련된 모든 파일을 보관하는 호스트 또는 컨테이너로 비유될 수 있습니다. 서버 측 스크립팅이나 데이터베이스가 필요하지 않기 때문에 그들은 만들기 쉽고 호스팅하기 쉽습니다.
 
 다른 한편 AWS CloudFront는 컨텐츠 전달 네트워크(CDN) 서비스입니다. 주요 기능은 웹 페이지, 비디오, 이미지 및 기타 파일과 같은 콘텐츠를 고성능, 낮은 지연 시간 및 빠른 전송 속도로 사용자에게 전송하는 것입니다. 따라서 정적 웹 사이트를 호스팅하고 CDN으로 CloudFront를 사용하면 사용자에게 웹 사이트 콘텐츠를 전 세계적으로 제공하는 확장 가능하고 신뢰할 수 있으며 고성능 솔루션을 얻을 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -198,7 +198,7 @@ Step 6: 원본 액세스 아래에서 원본 액세스 제어 설정을 선택�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_31.png)
 
 단계 7: Bucket 이름을 선택하고 생성하세요.
@@ -206,11 +206,11 @@ Step 6: 원본 액세스 아래에서 원본 액세스 제어 설정을 선택�
 ![이미지](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_32.png)
 
 단계 8: 배포를 생성한 후 CloudFront는 웹 사이트에 액세스할 수 있는 버킷 정책을 제공할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Step 9](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_33.png)
 
 Step 9: You can choose either A or B.
@@ -218,11 +218,11 @@ Step 9: You can choose either A or B.
 ![Step 10](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_34.png)
 
 Step 10: If you enable a firewall, you will have to delete it at the end of this demo to avoid billing.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_35.png)
 
 Step 11: 기본 루트 객체에 index.html을 추가하고 변경 사항 저장.
@@ -230,7 +230,7 @@ Step 11: 기본 루트 객체에 index.html을 추가하고 변경 사항 저장
 ![Image](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_36.png)
 
 Step 12: 생성된 정책 문을 복사하고 안전한 곳에 보관하세요. 배포 상태를 현재 날짜로 변경할 수 있도록 허용하고, 분산 도메인 이름을 복사하여 브라우저에 붙여넣으세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -285,7 +285,7 @@ Step 12: 생성된 정책 문을 복사하고 안전한 곳에 보관하세요. 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_40.png)
 
 Step 2: You’ll be prompted to empty your bucket first before deleting.
@@ -293,7 +293,7 @@ Step 2: You’ll be prompted to empty your bucket first before deleting.
 ![image](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_41.png)
 
 Step 3: Type ‘permanently delete’ in the space provided and empty.
-```
+
 
 <div class="content-ad"></div>
 
@@ -315,7 +315,7 @@ Step 7: 성공적으로 완료되었습니다! 앞으로 나가서 CloudFront를
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-StaticWebsiteHostingonAWSS3andCloudFrontPublicvsPrivate_46.png)
 
 파이어월을 활성화했다면 저와 같이, 파이어월도 삭제해야 합니다. 콘솔에서 WAF를 검색하여 WAF 및 Shield를 선택합니다. 웹 ACLs를 선택합니다. 지역을 us-east-1에서 Global CloudFront로 변경한 후, 파이어월을 클릭하여 삭제합니다.
@@ -323,7 +323,7 @@ Step 7: 성공적으로 완료되었습니다! 앞으로 나가서 CloudFront를
 본 문서는 Amazon S3 및 CloudFront에서 정적 웹사이트를 호스팅하는 과정을 안내했습니다. 이를 통해 다양한 객체를 S3 버킷에 저장하고 모든 종류의 웹사이트를 호스팅할 수 있습니다. 그러나 제작 목적 외의 모든 생성된 리소스는 항상 종료하여야 합니다.
 
 구름에서 만나요!
-``` 
+ 
 
 <div class="content-ad"></div>
 

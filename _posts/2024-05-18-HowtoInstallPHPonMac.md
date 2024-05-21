@@ -11,7 +11,7 @@ link: "https://medium.com/@rodolfovmartins/how-to-install-php-on-mac-6795ce46980
 ---
 
 
-```
+
 ![2024-05-18-HowtoInstallPHPonMac_0](/assets/img/2024-05-18-HowtoInstallPHPonMac_0.png)
 
 PHP은 웹 애플리케이션을 개발하는 데 사용되는 인기있는 프로그래밍 언어입니다. Mac을 사용하고 PHP를 사용하여 웹 애플리케이션을 개발하려면 Mac에 PHP를 설치해야 합니다. 이 기사에서는 Mac에 PHP를 설치하는 과정을 단계별로 안내해 드리겠습니다.
@@ -19,7 +19,7 @@ PHP은 웹 애플리케이션을 개발하는 데 사용되는 인기있는 프�
 ## 단계 1: Homebrew 설치
 
 Homebrew는 macOS용 패키지 관리자로, 소프트웨어 패키지를 쉽게 설치하고 관리할 수 있게 해줍니다. Homebrew를 설치하려면 Mac의 터미널 앱을 열고 다음 명령을 실행하십시오:
-```
+
 
 <div class="content-ad"></div>
 
@@ -35,7 +35,7 @@ Homebrew를 설치하면 PHP를 설치하는 데 사용할 수 있습니다. 터
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 brew install php
 ```

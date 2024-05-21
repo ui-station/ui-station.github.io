@@ -221,7 +221,7 @@ resource "aws_s3_bucket_notification" "images_put_notification" {
 ## 기본 람다 추가하기
 
 이제 람다의 기반 인프라를 추가하기만 남았습니다. 이후에 코드를 추가할 기본 람다를 설정할 것입니다. Go 언어로 코드를 작성할 예정입니다.
-``` 
+ 
 
 <div class="content-ad"></div>
 
@@ -656,7 +656,7 @@ func main() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 name: Deploy Thumbnail Generator Lambda
 on:
   push:
@@ -698,14 +698,14 @@ jobs:
 
       - name: Update Lambda code
         run: aws lambda update-function-code --function-name=thumbnail-generator --zip-file=fileb://main.zip
-```
+
 
 코드를 커밋하고 레포지토리에 푸시하면 빌드가 실행됩니다.
 
 완료되면 Lambda 페이지의 "최종 수정" 속성을 확인하여 배포된 것을 확인할 수 있습니다:
 
 <img src="/assets/img/2024-05-17-UseS3eventnotificationstogeneratethumbnails_5.png" />
-```
+
 
 <div class="content-ad"></div>
 

@@ -101,7 +101,7 @@ aws_secret_access_key = 4D7HkaIBsqu***********+0AT2a8j
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 import boto3
 import json
@@ -178,7 +178,7 @@ def process_comments(response_items):
 ```
 
 youtube_dag.py
-```
+
 
 <div class="content-ad"></div>
 
@@ -226,7 +226,7 @@ dag
 좋아요!!
 
 이제 Airflow에서 DAG 페이지를 새로고침하세요. 위의 DAG가 표시될 것입니다. 실행해보고 문제가 있는지 로그를 확인해보세요. 녹색으로 변하면 작업이 완료된 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

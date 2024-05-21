@@ -11,7 +11,7 @@ link: "https://medium.com/pcmag-access/microsofts-flawed-approach-to-app-updates
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-17-MicrosoftsFlawedApproachtoAppUpdatesWreaksHavoconWindowsPCs_0.png)
 
 안녕하세요! WinRAR을 설치해 두셨나요? PC가 취약할 수 있습니다. 이 문제의 근본은 Windows 8로 돌아갑니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/pcmag-access/microsofts-flawed-approach-to-app-updates
 Chris Hoffman 작성
 
 여전히 적극적으로 악용되고 있는 방대한 보안 결함을 가진 WinRAR은 자동 업데이트를 지원하지 않는 많은 Windows 애플리케이션 중 하나입니다. 개발자는 전 세계적으로 5억 개 이상의 WinRAR 설치를 자랑하며, 따라서 수억 대의 PC가 오늘날 악성 ZIP 파일로부터 취약할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

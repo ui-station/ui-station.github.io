@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/backpropagation-through-time-how-
 ---
 
 
-```
+
 ![RNN](/assets/img/2024-05-18-BackpropagationThroughTimeHowRNNsLearn_0.png)
 
 순환 신경망(RNN)은 시계열 및 자연어와 같은 순차 데이터를 처리하는 정규 피드포워드 신경망 변형입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/backpropagation-through-time-how-
 과거 입력 및 출력에서 다음 단계로 정보를 전달할 수 있도록 "순환" 뉴런을 추가하여 이를 달성합니다. 아래 다이어그램은 전통적인 RNN을 보여줍니다:
 
 ![RNN Diagram](/assets/img/2024-05-18-BackpropagationThroughTimeHowRNNsLearn_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -87,7 +87,7 @@ y와 z에 대해서도 반복합니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Gradient Descent Image](/assets/img/2024-05-18-BackpropagationThroughTimeHowRNNsLearn_10.png)
 
 Gradient descent works by updating the values (x, y, z) by a small amount in the opposite direction of the gradient. The goal of gradient descent is to try and minimize the output function. For example, for x:
@@ -95,7 +95,7 @@ Gradient descent works by updating the values (x, y, z) by a small amount in the
 ![Equation for x](/assets/img/2024-05-18-BackpropagationThroughTimeHowRNNsLearn_11.png)
 
 Where h is called the learning rate, it decides how much the parameter will get updated. For this case, let’s define h=0.1, so x=3.7.
-```
+
 
 <div class="content-ad"></div>
 
@@ -144,7 +144,7 @@ BPTT은 각 시점에서 역전파를 수행하여 이러한 정의를 확장합
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-BackpropagationThroughTimeHowRNNsLearn_15.png)
 
 A_t is the actual value that we want our prediction to equal.
@@ -152,7 +152,7 @@ A_t is the actual value that we want our prediction to equal.
 ## Backpropagation Through Time
 
 Now, we are in a position to start doing BPTT after this problem has been set up.
-```
+
 
 <div class="content-ad"></div>
 
@@ -186,7 +186,7 @@ U 가중치 행렬에 대해:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-BackpropagationThroughTimeHowRNNsLearn_18.png)
 
 U 행렬에 대한 오류는 W에 대한 것과 매우 유사하며, 다른 점은 숨겨진 상태 h를 U로 미분한다는 점입니다.
@@ -194,7 +194,7 @@ U 행렬에 대한 오류는 W에 대한 것과 매우 유사하며, 다른 점�
 숨겨진 상태는 이전 숨겨진 상태와 새 입력의 복합 함수입니다.
 
 ## 일반화된 공식
-```
+
 
 <div class="content-ad"></div>
 
@@ -208,7 +208,7 @@ RNN의 총 오차(손실)는 각 시간 스텝에서의 오차인 E_t의 합입�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-18-BackpropagationThroughTimeHowRNNsLearn_20.png](/assets/img/2024-05-18-BackpropagationThroughTimeHowRNNsLearn_20.png)
 
 And, that’s pretty much all there is to training an RNN! However, there is one problem ...
@@ -216,7 +216,7 @@ And, that’s pretty much all there is to training an RNN! However, there is one
 # Exploding & Vanishing Gradient Problem
 
 ## Overview
-```
+
 
 <div class="content-ad"></div>
 

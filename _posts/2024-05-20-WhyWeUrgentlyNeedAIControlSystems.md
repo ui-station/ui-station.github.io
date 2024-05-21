@@ -21,7 +21,7 @@ AI 제어 시스템 문제에 대한 접근 방식을 두려움의 시각에서 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-20-WhyWeUrgentlyNeedAIControlSystems_0.png)
 
 # 배경
@@ -29,7 +29,7 @@ AI 제어 시스템 문제에 대한 접근 방식을 두려움의 시각에서 
 요즘 기술 소셜 미디어에서 AI 제어 시스템(또는 당신이 원하는 다른 이름으로 불러도 상관없는 것)이 필요한지에 대한 토론이 벌어지고 있습니다.
 
 과장된 견해를 대략적으로 요약하면 다음과 같습니다:
-```
+
 
 <div class="content-ad"></div>
 

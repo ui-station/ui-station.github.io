@@ -35,7 +35,7 @@ LangChain은 LLM 응용 프로그램을 구축하기 위한 오픈 소스 개발
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-05-18-UsinglangchainforQuestionAnsweringonOwnData_1.png)
 
 ## PyPDF DataLoader
@@ -55,7 +55,7 @@ print(pages[0].page_content[0:500])
 print(pages[0].metadata)
 # {'source': 'docs/cs229_lectures/MachineLearning-Lecture01.pdf', 'page': 0}
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -362,7 +362,7 @@ md_header_splits[1]
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-UsinglangchainforQuestionAnsweringonOwnData_5.png)
 
 텍스트 분할 이후에는 벡터 저장소와 임베딩이 필요합니다. 문서를 쉽게 접근할 수 있는 형식으로 저장해야 합니다. 임베딩은 텍스트를 가져와 텍스트의 수치적 표현을 만듭니다. 즉, 의미론적으로 유사한 내용을 가진 텍스트는 임베딩 공간에서 유사한 벡터를 가집니다. 따라서 임베딩(벡터)을 비교하고 유사한 텍스트를 찾을 수 있습니다.
@@ -370,7 +370,7 @@ md_header_splits[1]
 전체 파이프라인은 문서로 시작합니다. 이러한 문서를 작은 덩어리로 분할하고 이러한 분할 또는 문서의 임베딩을 만듭니다. 마지막으로, 모든 이러한 임베딩을 벡터 저장소에 저장합니다.
 
 ![이미지](/assets/img/2024-05-18-UsinglangchainforQuestionAnsweringonOwnData_6.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -528,7 +528,7 @@ MMR은 검색 결과에서 다양성을 강화하는 중요한 방법입니다. 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-UsinglangchainforQuestionAnsweringonOwnData_9.png)
 
 MMR의 아이디어는 먼저 벡터 저장소를 쿼리하고 "fetch_k" 가장 유사한 응답을 선택하는 것입니다. 이제 "fetch_k" 문서의 작은 집합에서 작업을 수행하여 쿼리에 대한 관련성과 결과물 간의 다양성을 동시에 달성합니다. 마지막으로, 이러한 "fetch_k" 응답 중에서 "k"개의 가장 다양한 응답을 선택합니다. 처음 2개의 문서의 처음 100자를 출력하면, 위와 같은 유사도 검색을 사용할 경우 동일한 결과를 얻는 것을 발견할 것입니다. 이제 MMR로 검색 쿼리를 실행하고 처음 몇 가지 결과를 확인해 보겠습니다.
@@ -546,11 +546,11 @@ smalldb.max_marginal_relevance_search(question, k=2, fetch_k=3)
 ```
 
 여기서 우리는 MMR 검색을 사용하여 결과를 다양하게 만들 수 있었습니다. 이제 유사도 검색과 최대 여유성 검색 결과를 비교해 보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 유사도 검색과 MMR 검색 결과를 비교하세요.
 question = "matlab에 대해 말한 내용은 무엇인가요?"
 docs_ss = vectordb.similarity_search(question, k=3)
@@ -560,14 +560,14 @@ docs_ss[1].page_content[:100]
 docs_mmr = vectordb.max_marginal_relevance_search(question, k=3)
 docs_mmr[0].page_content[:100]
 docs_mmr[1].page_content[:100>
-```
+
 
 유사도 검색에서 처음 2개 문서의 처음 100자가 동일한 것을 확인할 수 있지만, MMR 검색으로는 처음 2개 문서의 처음 100자가 다른 것을 확인할 수 있습니다. 따라서 쿼리 결과에서 다양성을 얻을 수 있습니다.
 
 ## 2. 메타데이터
 
 메타데이터는 검색의 특이성을 조정하는 데 사용됩니다. 이전에 "세 번째 강의에서 회귀에 대해 어떤 내용을 이야기했습니까?"라는 질문에 대한 답변이 세 번째 강의뿐만 아니라 첫 번째와 두 번째 강의에서도 반환된 것을 발견했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -654,7 +654,7 @@ docs = retriever.get_relevant_documents(question)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Using langchain for Question Answering on Own Data](/assets/img/2024-05-18-UsinglangchainforQuestionAnsweringonOwnData_10.png)
 
 예를 들어, 이 경우에는 영화 데이터베이스에서 외계인을 검색하고 각 영화의 메타데이터를 1980년도로하는 형태로 필터링합니다. 대부분의 벡터 스토어는 메타데이터 필터를 지원하기 때문에 새로운 데이터베이스나 인덱스가 필요하지 않습니다. 대부분의 벡터 저장소가 메타데이터 필터를 지원하므로, 예를 들어 영화의 년도가 1980년인 경우와 같이 메타데이터를 기반으로 레코드를 쉽게 필터링할 수 있습니다.
@@ -662,16 +662,16 @@ docs = retriever.get_relevant_documents(question)
 ## 4. 컨텍스트 압축
 
 압축은 검색된 문서의 품질을 향상시키는 또 다른 방법입니다. 전체 문서를 응용 프로그램을 통해 전달하면 더 많은 비용이 들고 더 나쁜 응답이 될 수 있으므로 검색된 단락의 가장 관련성이 높은 부분만 추출하는 것이 유용합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 def pretty_print_docs(docs):
     print(f"\n{'-' * 100}\n".join([f"Document {i+1}:\n\n" + d.page_content for i, d in enumerate(docs)]))
-```
 
-```markdown
+
+
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
 
@@ -687,12 +687,12 @@ compression_retriever = ContextualCompressionRetriever(
 question = "what did they say about matlab?"
 compressed_docs = compression_retriever.get_relevant_documents(question)
 pretty_print_docs(compressed_docs)
-```
+
 
 Through compression, all documents are processed using a language model to extract the most relevant segments, which are then passed into a final language model call.
 
 ![Using langchain for Question Answering on Own Data](/assets/img/2024-05-18-UsinglangchainforQuestionAnsweringonOwnData_11.png)
-```
+
 
 <div class="content-ad"></div>
 

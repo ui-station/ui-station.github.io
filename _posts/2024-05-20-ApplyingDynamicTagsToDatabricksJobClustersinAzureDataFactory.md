@@ -13,7 +13,7 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 아래는 Markdown 형식으로 변경한 텍스트입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_0.png)
 
 최근 몇 명의 고객이 Databricks 노트북 액티비티를 Azure Data Factory에서 실행할 때, 노트북을 실행할 작업 클러스터에 동적으로 태그를 설정하는 방법에 대해 물어봤어요.
@@ -21,7 +21,7 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 다행히도 Azure Data Factory의 매개변수와 동적 콘텐츠 기능 덕분에 해결책을 상당히 쉽게 찾을 수 있어요.
 
 # Prerequisites
-```
+
 
 <div class="content-ad"></div>
 
@@ -91,11 +91,11 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 아래는 Markdown 형식의 테이블입니다.
 
-```markdown
+
 | 파일 이름 | 경로 |
 |---|---|
 | 2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_8.png | /assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_8.png |
 | 2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_9.png | /assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_9.png |
-```
+
 
 이 내용이 Databricks에서의 컴퓨팅 및 파이프라인의 가시성 관리에 도움이 되기를 바랍니다. 피드백은 언제나 환영합니다!

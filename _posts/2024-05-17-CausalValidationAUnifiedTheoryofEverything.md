@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/causal-validation-a-unified-theor
 ---
 
 
-```markdown
+
 ![Causal Inference](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/towards-data-science/causal-validation-a-unified-theor
 인과 추론은 머신 러닝 내에서 부상 중인 분야로, 무엇이 발생할 수 있는지 예측하는 것을 넘어 그 이유를 설명하고, 그로 인해 문제의 근본적인 해결책을 제시함으로써 잠재적인 파급효과를 다루는 대신 지속적으로 해결책을 제공합니다.
 
 인과 모형의 주요 구성 요소 중 하나는 변수와 사건 간의 인과 관계를 간단한 시각적 형식으로 포착하는 "유향 비순환 그래프" (DAG)입니다. 그러나 DAG의 주요 문제점은 일반적으로 도메인 전문가에 의해 주관적으로 구성된다는 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,7 +53,7 @@ DAG가 "잘못" 되는 여러 가지 방법이 있습니다. 인과 관련 문�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Causal Validation Example](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_2.png)
 
 통합 인과 유효성 탐구를위한 가정의 예제로는 현실 세계에서의 의미가 없는 X, Z1, Z3 등의 노드 이름을 포함한 다양한 유형의 인과 관계가 포함 된 충분히 간단한 예제가 선택되었습니다.
@@ -61,7 +61,7 @@ DAG가 "잘못" 되는 여러 가지 방법이 있습니다. 인과 관련 문�
 그러나 이해를 돕기 위해 X가 새 약 복용 수준을 나타낼 수 있고, W는 환자의 혈압에 미치는 약의 영향을 나타낼 수 있으며, Y는 환자 회복에 대한 영향을 나타낼 수 있습니다.
 
 이 예에서 화살표의 방향이 의미가 있습니다. 명백히 약을 복용하는 것은 혈압에 변화를 일으킬 수 있지만 그 반대는 아니며, 혈압의 변화가 환자 결과에 변화를 일으키는 경우도 마찬가지입니다. 그 반대는 매우 그럴듯하지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -79,9 +79,9 @@ DAG가 "잘못" 되는 여러 가지 방법이 있습니다. 인과 관련 문�
 
 도메인 전문가들이 실제로 데이터에 존재하는 몇 가지 엣지를 완전히 누락할 수 있습니다. 예를 들어, 데이터와 현실 세계 사이에 Z3와 Y 간의 인과 관계 링크가 존재할 수 있지만 DAG에는 반영되지 않은 경우 …
 
-```markdown
+
 ![image](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_3.png)
-```
+
 
 이 예시에서 DAG에는 누락된 엣지 오류가 포함되어 있으며, 데이터에 존재하는 엣지나 링크가 DAG에서 누락되면 인과 모델의 모든 계산과 결론이 잘못될 수 있습니다.
 
@@ -139,15 +139,15 @@ Z1의 값이 변경되더라도 Z2의 값은 변경되지 않을 것이며, 그�
 
 이 경우 Z2는 Z1과 독립되었다고 합니다. 이는 다음 식으로 나타낼 수 있습니다 (⫫ 기호는 "더블 업택"으로 불립니다) -
 
-```markdown
+
 ![Expression](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_7.png)
-```
+
 
 Z2가 Z1과 독립적인 개념은 데이터의 행에서 Z1과 Z2의 사례를 산점도로 나타내고 산점의 관계 값을 나타내는 차트에 선을 추가하여 시각화하고 이해할 수 있습니다...
 
-```markdown
+
 ![Scatter Plot](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -201,7 +201,7 @@ W가 X에 의존한다는 것은 직관적으로 명백합니다. 이는 X의 �
 
 <div class="content-ad"></div>
 
-```
+
 ![Table 14](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_14.png)
 
 This condition can then be tested using the `.dependence()` extension method of the DataFrame class that was introduced in the section above ...
@@ -209,7 +209,7 @@ This condition can then be tested using the `.dependence()` extension method of 
 ![Table 15](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_15.png)
 
 The results show that node Y is independent of nodes X and Z1 but Y is not independent of Z3 because the co-efficient for Z3 in the regression is 3.5012 and the p-value is 0.000.
-```
+
 
 <div class="content-ad"></div>
 
@@ -243,7 +243,7 @@ The results show that node Y is independent of nodes X and Z1 but Y is not indep
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Causal Validation](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_17.png)
 
 이전 테스트와 마찬가지로, 의심 알고리즘 테스트는 모든 노드를 반복하면서, 이번에는 빠진 링크에 대한 독립성 테스트 대신 의존성 테스트를 진행합니다.
@@ -251,7 +251,7 @@ The results show that node Y is independent of nodes X and Z1 but Y is not indep
 알고리즘이 노드 W에 도달할 때 W가 그래프에서 X와 Z3(부모 노드)에 의존한다는 문장은 W가 데이터에서 X와 Z3에 의존한다는 것을 의미합니다...
 
 ![Causal Validation](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_18.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -265,7 +265,7 @@ The results show that node Y is independent of nodes X and Z1 but Y is not indep
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_20.png)
 
 ## Detecting Reversed Edge Errors
@@ -273,7 +273,7 @@ The results show that node Y is independent of nodes X and Z1 but Y is not indep
 A solution to detecting reversed link errors eluded me for a long time and initially I thought it was impossible to solve because if the co-efficient between Z3 and X (for example) where 2.5 then the co-efficient between X and Z3 is the inverse …
 
 ![Image 2](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_21.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -383,7 +383,7 @@ Python에서 DataFrame .dependency() 확장 메서드를 사용하여 이 알고
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_28.png)
 
 The first step, which is testing for missing edges, will identify the missing edge. However, in step 3, the directionality of the v-structure at Z1 -` Z3 `- Z2 cannot be tested because it does not exist due to the missing edge.
@@ -396,7 +396,7 @@ This issue can be easily resolved by updating the unified algorithm as follows:
 - Note any errors found and correct them
 - Test for and Fix Reversed Edge Errors
 - Note any errors found
-```
+
 
 <div class="content-ad"></div>
 
@@ -536,7 +536,7 @@ Acyclity, Exogeneity, Transitivity의 방법을 사용하여 ("예시 DAG는 가
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Test Image](/assets/img/2024-05-17-CausalValidationAUnifiedTheoryofEverything_31.png)
 
 # Testing the Algorithm
@@ -544,7 +544,7 @@ Acyclity, Exogeneity, Transitivity의 방법을 사용하여 ("예시 DAG는 가
 The next stage is to robustly and exhaustively test the algorithm for different combinations of the 3 types of errors and to measure performance.
 
 The test harness works as follows:
-```
+
 
 <div class="content-ad"></div>
 

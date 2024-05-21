@@ -64,7 +64,7 @@ link: "https://medium.com/the-modern-scientist/prompt-engineering-classification
 
 <div class="content-ad"></div>
 
-```
+
 ![Image 1](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_4.png)
 
 Few-Shot Prompting
@@ -72,7 +72,7 @@ Few-Shot Prompting
 LLMs are extremely good at one-shot learning but they still may fail at complicated tasks. The idea of few-shot learning is to demonstrate to the model similar tasks with correct answers (Brown et al. (2020)).
 
 ![Image 2](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +96,7 @@ CoT은 제로샷 또는 퓨샷 러닝과 함께 사용됩니다. 제로샷 CoT�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_7.png)
 
 The technique can be implemented using LangChain PALChain class.
@@ -104,7 +104,7 @@ The technique can be implemented using LangChain PALChain class.
 # Multiple Prompt Techniques
 
 The next group of prompts is based on different strategies of combining prompts of one or a few of models:
-```
+
 
 <div class="content-ad"></div>
 
@@ -160,7 +160,7 @@ Wang et al. (2022)에서는 산술 및 상식 작업에 대한 자기 일관성 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_13.png)
 
 Prompt Chaining
@@ -168,7 +168,7 @@ Prompt Chaining
 Prompt chaining is a simple yet powerful technique in which you should split your task into subproblems and prompt the model with them one by one.
 
 ![Image 2](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_14.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -182,13 +182,13 @@ Prompt chaining is a simple yet powerful technique in which you should split you
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Zhou et al. (2022) - Experimental Results](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_16.png)
 
 Zhou et al. (2022)의 실험 결과에 따르면, least-to-most prompting은 symbol manipulation, compositional generalization 및 math reasoning과 관련된 작업에서 잘 수행되고 있습니다.
 
 ![Chain-of-Table Prompting](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_17.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -203,7 +203,7 @@ Zhou et al. (2022)의 실험 결과에 따르면, least-to-most prompting은 sym
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_19.png)
 
 The next two approaches implement the concept of Self-Check — there’s a step in the framework that checks the solution. Example of Cgain-of-Table implementation can be found by the link.
@@ -211,7 +211,7 @@ The next two approaches implement the concept of Self-Check — there’s a step
 Tree of Thoughts (ToT)
 
 Tree of Thoughts generalizes over the Chain-of-Thought approach allowing the model to explore multiple reasoning steps and self-evaluate choices.
-```
+
 
 <div class="content-ad"></div>
 
@@ -238,7 +238,7 @@ Yao et al. (2023)의 실험에서는 ToT가 복잡한 계획이나 탐색을 필
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_22.png)
 
 Reflexion 프레임워크는 세 가지 독립적인 모델로 구성되어 있습니다:
@@ -248,7 +248,7 @@ Reflexion 프레임워크는 세 가지 독립적인 모델로 구성되어 있�
 - Self-Reflection: Actor의 자기 개선을 돕기 위해 언어적인 강화 신호를 생성하는 LLM 모델입니다.
 
 ![이미지](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_23.png)
-```
+
 
 
 <div class="content-ad"></div>
@@ -309,7 +309,7 @@ Langchain 도구를 사용한 ReAct 구현 예시를 확인해보세요.
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_29.png)
 
 - Faithfulness and relevancy:
@@ -317,7 +317,7 @@ Langchain 도구를 사용한 ReAct 구현 예시를 확인해보세요.
   - how relevant the generated answer is to the question.
 
 2. Retrieval — for RAG and ReAct pipelines mainly but can be applied to generated knowledge and directional stimulus prompting:
-```
+
 
 <div class="content-ad"></div>
 

@@ -34,7 +34,7 @@ AWS S3 사전 서명된 URL을 사용하면 PUT 또는 POST 정책을 사용하�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-20-HowtoutilizeAmazonS3presignedURLs_1.png)
 
 Conversely, for scenarios such as uploading using HTML form or running specific jobs within a virtual machine, a push-based approach presents a straightforward solution. Here, the initiation of the presigned POST policy aligns with the document creation or VM startup process. By injecting a policy during these events, we empower the source to autonomously upload files and minimize external dependencies.
@@ -42,7 +42,7 @@ Conversely, for scenarios such as uploading using HTML form or running specific 
 ![image2](/assets/img/2024-05-20-HowtoutilizeAmazonS3presignedURLs_2.png)
 
 # How-to guide
-```
+
 
 <div class="content-ad"></div>
 
@@ -221,7 +221,7 @@ download_file(presigned_get)
 
 <div class="content-ad"></div>
 
-```markdown
+
 bucket_name = "testjorzel"
 prefix = "mytest/"
 presigned_put = s3_client.generate_presigned_url(
@@ -232,16 +232,16 @@ presigned_put = s3_client.generate_presigned_url(
     },
     ExpiresIn=60,
 )
-```
+
 
 The `presigned_put` will also be a string:
 
-```markdown
+
 [https://testjorzel.s3.amazonaws.com/mytest/presigned_put.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAU5USI2VZ3RIF3L5V%2F20240403%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240403T204459Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=ed117f655fc007d1572618474b9fc96f1a1820ec705317a6954c6a78730fd769](https://testjorzel.s3.amazonaws.com/mytest/presigned_put.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAU5USI2VZ3RIF3L5V%2F20240403%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20240403T204459Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=ed117f655fc007d1572618474b9fc96f1a1820ec705317a6954c6a78730fd769)
-```
+
 
 Now we can upload a file using `requests.put` function.
-```
+
 
 <div class="content-ad"></div>
 

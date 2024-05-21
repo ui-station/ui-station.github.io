@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/condensing-multiple-spaces-into-one-space
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-20-CondensingMultipleSpacesIntoOneSpaceUsingPythonRegex_0.png)
 
 만약 여러 개의 공백 문자를 하나의 공백 문자로 변환해야 한다면, 이 기사가 여러분을 위한 것입니다.

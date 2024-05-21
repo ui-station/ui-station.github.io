@@ -46,7 +46,7 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-05-17-WhyYouWontLikePEDAC_1.png)
 
 # 이 공부가 어색하게 느껴지는 이유
@@ -54,7 +54,7 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 내가 소속된 동료들 중 대부분이 불편해하는 가장 큰 문제 중 하나는 공포의 "Hack 'n' Slash" 접근 방식입니다.
 
 이 문제를 지적하면서도, 우리는 여전히 의도적이거나 계획적인 다른 방식을 취하는 것을 싫어합니다.
-```
+
 
 <div class="content-ad"></div>
 

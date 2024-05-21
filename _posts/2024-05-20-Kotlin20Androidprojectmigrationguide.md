@@ -11,7 +11,7 @@ link: "https://medium.com/@kacper.wojciechowski/kotlin-2-0-android-project-migra
 ---
 
 
-```markdown
+
 ![Kotlin 2.0 Release](/assets/img/2024-05-20-Kotlin20Androidprojectmigrationguide_0.png)
 
 코틀린은 처음 출시된 이후로 많은 여정을 거쳐왔습니다. 이제 새로운 이정표에 접어들고 있는데요—2.0 릴리스입니다. 이 글을 작성하는 시점에서 2.0.0-RC3 버전이 릴리스되었는데, 이는 거의 최종 버전에 가까운 버전입니다. 저는 코틀린 EAP의 구성원이었고, 내 프라이빗 안드로이드 프로젝트의 설정을 변경하여 코틀린 2.0에 적응하는 과정을 간단히 알려드리고 싶습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@kacper.wojciechowski/kotlin-2-0-android-project-migra
 # K2 컴파일러
 
 이것은 새로운 코틀린 버전의 가장 큰 기능일 것입니다. JetBrains 팀은 2배 빠른 컴파일 시간을 약속하고 있습니다. 현실은 이 "2배"는 아마도 컴파일 작업의 합에만 해당할 것입니다. 실제 세계에서, Gradle은 몇 가지 작업을 병렬로 실행하여 이득 중 일부를 상쇄시키게 됩니다. 제 경험상 15–30% 정도의 향상이 되었다고 할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

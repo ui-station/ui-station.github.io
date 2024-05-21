@@ -46,7 +46,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-20-DataVisualizationTechniquesinPythonwithCodeExamples_1.png" />
 
 ```js
@@ -62,7 +62,7 @@ plt.show()
 <img src="/assets/img/2024-05-20-DataVisualizationTechniquesinPythonwithCodeExamples_2.png" />
 
 히스토그램을 통해 승객들의 나이와 요금 분포에 대한 통찰을 얻을 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -99,7 +99,7 @@ plt.show()
 막대 그래프는 승객들이 다른 클래스 및 생존 상태에 분포된 정보를 제공합니다.
 
 # 3. 아웃라이어 감지를 위한 상자 그림(Box Plot)
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Box plots](/assets/img/2024-05-20-DataVisualizationTechniquesinPythonwithCodeExamples_6.png)
 
 Box plots는 이상값을 식별하고 연령 및 요금의 분포를 이해하는 데 도움이 됩니다.
@@ -135,7 +135,7 @@ Box plots는 이상값을 식별하고 연령 및 요금의 분포를 이해하�
 # 결론
 
 데이터 시각화는 데이터로부터 통찰력을 얻고 발견한 결과를 효과적으로 전달하는 데 중요합니다. 이 기사에서는 Matplotlib 및 Seaborn과 같은 Python 라이브러리를 사용하여 다양한 데이터 시각화 기술을 살펴보았습니다. 숫자형 및 범주형 변수의 분포를 시각화하고 이상값을 감지하며 Titanic 데이터셋에 대한 통찰력을 얻었습니다. 모든 플롯에 대해 빨간색을 사용함으로써 시각적 명확성과 시각화의 일관성을 보장했습니다.
-```
+
 
 <div class="content-ad"></div>
 

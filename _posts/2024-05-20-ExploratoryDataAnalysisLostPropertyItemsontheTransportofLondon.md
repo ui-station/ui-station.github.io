@@ -40,7 +40,7 @@ display(df.info(verbose=True)
 
 마크다운 형식으로 변경하면 다음과 같습니다:
 
-```markdown
+
 ![Exploratory Data Analysis Lost Property Items on the Transport of London](/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_1.png)
 
 아래에서 볼 수 있듯이 총 5245개의 항목이 있고 데이터프레임에는 NULL 항목이 없습니다. 날짜 형식이 표준이 아닌 것으로 보이므로 변환해보겠습니다:
@@ -50,7 +50,7 @@ df["Date Found"] = pd.to_datetime(df["Date Found"], format="%d/%m/%Y")
 ```
 
 다음 단계로 어떤 종류의 카테고리가 있는지 알아보겠습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -90,7 +90,7 @@ df["Category"] = df["Category"].map(update_category)
 <img src="/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_2.png" />
 
 ## 하루 평균 아이템
-```
+
 
 <div class="content-ad"></div>
 
@@ -196,7 +196,7 @@ fig.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_6.png)
 
 우리가 볼 수 있듯이, 대부분의 승객이 핸드폰이나 핸드폰 액세서리를 분실한 것이 분명합니다. 어떤 사람들은 노트북, 태블릿 또는 e-리더를 분실했으며, 한 명의 승객이 MP3 플레이어를 분실했습니다(요즘에는 조금 특이한 장치입니다). 놀랍게도 숫자가 상당히 많습니다. 데이터 집합은 일주일 동안의 데이터를 나타내며, 우리가 보기로는 이 기간 동안 총 467명의 승객이 핸드폰을 분실했습니다.
@@ -204,7 +204,7 @@ fig.show()
 ## 위치
 
 간단한 연습으로 데이터를 위치별로 그룹화하고 어떤 물품이 발견된 상위 10곳을 확인해 봅시다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -236,11 +236,11 @@ def get_coord_lat_lon(full_addr: str) -> Tuple[float, float]:
 여기서는 여러 번 코드를 실행하고 싶을 때 도움이 될 수 있는 lru_cache 데코레이터를 사용했어요. 데이터는 새로운 API 호출 대신 캐시에서 가져옵니다. 또한 처리 중에 진행률 표시줄을 볼 수 있게 해주는 tqdm Python 라이브러리를 사용했어요. 이는 처리가 몇 분 정도 걸리기 때문에 유용해요.
 
 처리가 완료된 후에 데이터프레임은 다음과 같이 보입니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![map](/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_9.png)
 
 Now, we're ready to draw a map. I will use the folium Python library for that:
@@ -263,7 +263,7 @@ display(fig)
 ```
 
 I also created `add_to_map` and `value_to_color` methods, which help to add a station to the map:
-```
+
 
 <div class="content-ad"></div>
 
@@ -296,7 +296,7 @@ def add_to_map(fmap: folium.Map, name: str,
 <img src="/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_10.png" />
 
 이 지도는 물건이 발견된 장소를 보여줍니다. 물건을 분실한 장소에 대해서는 알 수 없습니다 (특히 빠르게 이동하는 기차에서), 하지만 결과를 보는 것은 여전히 흥미로울 것입니다. 지도의 가장 큰 원들은 마지막 기차나 버스 정류장인 것으로 보입니다. 그러나 다른 역에서도 많은 물건들이 발견되었습니다. 독자들은 색상 맵 (제가 "Inferno" 팔레트를 사용했습니다) 및 원 크기와 같은 매개변수를 변경하여 더 나은 시각화를 얻을 수도 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

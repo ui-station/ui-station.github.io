@@ -33,7 +33,7 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Surrogate Key](/assets/img/2024-05-18-SpeedingUpPowerBITheCaseforSurrogateKeysinDimensionalModeling_1.png)
 
 서로게이트 키는 여러 가지 이유로 존재합니다. 하나의 명확한 답변은 해당 테이블에 자연 키의 명백한 후보가 없고 레코드를 고유하게 식별하기 위해 (서로게이트 키라고도 함) 가짜 키를 생성해야하는 경우입니다.
@@ -41,7 +41,7 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 두 번째 명백한 이유는 시간의 시험을 견디는 능력입니다. 이 이유는 데이터 웨어하우스 디자인의 맥락에서 더 관련이 있습니다. 기본 키로 자연 키에 의존하는 것은 데이터베이스 수준에서 시간이 지남에 따라 변경 사항에 취약해질 수 있습니다.
 
 구글의 주식 심볼을 예로 들 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -101,7 +101,7 @@ df_sk=df_distinct.withColumn(
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-SpeedingUpPowerBITheCaseforSurrogateKeysinDimensionalModeling_3.png)
 
 모노토닉하게 증가하는 정수는 결정론적이 아니며, 동일한 값 목록에 대해 이 기능을 실행해도 항상 동일한 대리 키가 할당되지는 않습니다. 예를 들어, 사과는 항상 ID 1이 할당되는 것은 아닙니다. 대리 키의 유지보수는 따라서 몇 가지 추가 작업이 필요할 수 있습니다.
@@ -109,7 +109,7 @@ df_sk=df_distinct.withColumn(
 이를 해결하는 한 가지 방법은 사실보다 차원을 먼저 로드하는 것입니다. 저의 팀에서 구현한 방법은 먼저 대리 키를 사용하여 차원을 생성한 다음 사실에서 차원을 사용하여 대리 키를 조회하는 것입니다. 이는 차원과 사실의 참조 무결성을 보장합니다.
 
 ## 해싱 함수
-```
+
 
 <div class="content-ad"></div>
 

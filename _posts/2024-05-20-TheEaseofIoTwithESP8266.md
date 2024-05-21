@@ -31,7 +31,7 @@ link: "https://medium.com/@igorkemcoban/the-ease-of-iot-with-esp8266-72c5ee1c9c3
 
 <div class="content-ad"></div>
 
-```
+
 ![Image](/assets/img/2024-05-20-TheEaseofIoTwithESP8266_0.png)
 
 ## 필요한 준비물
@@ -44,7 +44,7 @@ link: "https://medium.com/@igorkemcoban/the-ease-of-iot-with-esp8266-72c5ee1c9c3
 - 아두이노 클라우드 계정
 - 점퍼 와이어 몇 개
 - 브레드보드 (선택사항이지만 도움이 됩니다, 초기 회로가 정말 복잡할 수 있음)
-```
+
 
 <div class="content-ad"></div>
 

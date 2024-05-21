@@ -98,7 +98,7 @@ Yellowbrick가 아름다운 시각화로 사용자를 기쁘게 하듯이, PiML�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_7.png)
 
 많은 변수가 다양한 값을 갖는 범주형이기 때문에 일부 의미론적으로 유사한 값들을 병합하기 위해 feature engineering이 수행되었습니다. 우리는 [1]에서 설명된 feature engineering 예제를 따랐습니다. 'education' feature의 예시는 아래에 표시되어 있습니다.
@@ -106,7 +106,7 @@ Yellowbrick가 아름다운 시각화로 사용자를 기쁘게 하듯이, PiML�
 PiML은 사용자로부터 매우 적은 프로그래밍을 필요로 합니다. 모든 기능은 'Experiment' 객체를 통해 사용할 수 있습니다.
 
 한 줄로 된 코드 아래에서 PiML에서 EDA (탐색적 데이터 분석)를 하는 방법을 보여줍니다. 그리고 이것이 모든 PiML 기능에 접근하는 방법입니다: 한 줄로 된 명령어로.
-```
+
 
 <div class="content-ad"></div>
 

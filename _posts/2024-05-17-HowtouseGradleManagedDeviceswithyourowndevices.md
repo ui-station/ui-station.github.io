@@ -42,7 +42,7 @@ android {
 <img src="/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_1.png" />
 
 # Firebase Test Lab
-```
+
 
 <div class="content-ad"></div>
 
@@ -166,7 +166,7 @@ Caused by: java.lang.IllegalStateException: 지원되지 않는 관리형 장치
 ```
 
 스택 추적을 따라가보면, gradle.properties에 android.experimental.testOptions.managedDevices.customDevice=true를 추가해야 하며 MyDevice는 ManagedDeviceTestRunnerFactory를 구현해야 한다는 것을 알 수 있습니다. 따라서 더 자세히 조사해 보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -212,7 +212,7 @@ interface ManagedDeviceTestRunner {
 ```
 
 runTests 메서드는 각 Gradle 모듈에 대해 호출되며, 테스트를 실행하는 데 사용할 수 있는 많은 데이터가 포함되어 있습니다. 여기서 testData를 사용하여 APK를 가져와 설치하고, 계장을 통해 테스트를 실행할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -305,7 +305,7 @@ Dadb.create(host, port).use { dadb ->
 # HTML 및 XML 보고서 및 암시적인 예상
 
 IInstrumentationResultParser는 테스트와 상태에 대해 청취자들에게 알립니다. emptyList()를 전달했을 것을 알 수 있습니다. 어떤 파서를 사용해야 할지 고려해보겠습니다. 몇 가지 사전 제작된 구현이 있지만, Android Gradle 플러그인이 ManagedVirtualDevice를 실행할 때 사용하는 com.android.build.gradle.internal.testing.CustomTestRunListener를 사용해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -329,7 +329,7 @@ CustomTestRunListener은 XmlTestRunListener를 확장하고 Android Gradle 플�
 만약 CustomTestRunListener로 보고서를 생성하지 않고 myDeviceDebugAndroidTest를 실행하려고 하면, com.android.build.gradle.internal.tasks.ManagedDeviceInstrumentationTestResultAggregationTask에서 예외로 실패할 것입니다. 적어도 TEST-로 시작하는 하나의 XML 보고서를 생성할 것으로 예상합니다. 그리고 CustomTestRunListener야말로 이를 강요합니다. 이 작업은 XML과 HTML 보고서를 생성할 것이며, 아래 스크린샷에서 확인할 수 있습니다:
 
 ![스크린샷](/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_4.png)
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -420,7 +420,7 @@ exit 0
 Gradle Managed Devices는 android.experimental.androidTest.numManagedDeviceShards=`number_of_shards`와 같은 옵션을 통해 테스트 샤딩을 지원하지만, ManagedVirtualDevice에서만 작동합니다. 우리의 경우에는 자체적으로 관리하는 장치들과 함께 샤딩을 사용하고 싶습니다.
 
 Gradle Managed Devices에서는 Device 추상화를 사용합니다. 이 추상화는 전체로 표현되는 여러 장치를 구현할 수 있습니다. 새로운 장치 유형을 소개하고 장치로 등록합시다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -451,7 +451,7 @@ android {
 ADB와 관련된 모든 것은 AdbRunner 클래스로 추출되었고 새 매개변수 ShardInfo(index, total)가 추가되었습니다. ShardInfo의 매개변수는 dadb.openShell(“am instrument”) 실행에 그대로 추가됩니다.
 
 이제 테스트를 병렬로 실행하도록 ManagedDeviceTestRunner를 구현해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -504,7 +504,7 @@ override fun runTests(...): Boolean {
 - 이름은 각 shard에 대해 고유해야 합니다. CustomTestRunListener에 이름을 전달하여 파일 이름에 이름이 포함된 XML 보고서가 생성됩니다. 모든 XML 보고서는 나중에 모아져 병합되므로 어떤 테스트가 어떤 디바이스에서 실행되었는지 확인할 수 있습니다.
 
 <img src="/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_6.png" />
-```
+
 
 <div class="content-ad"></div>
 

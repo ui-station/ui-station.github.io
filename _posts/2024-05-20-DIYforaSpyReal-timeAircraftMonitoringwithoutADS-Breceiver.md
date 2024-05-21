@@ -46,7 +46,7 @@ link: "https://medium.com/illumination/diy-for-a-spy-real-time-aircraft-monitori
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![DIY for a Spy: Real-time Aircraft Monitoring without ADS-B receiver](/assets/img/2024-05-20-DIYforaSpyReal-timeAircraftMonitoringwithoutADS-Breceiver_1.png)
 
 - GCP 웹 기능 및 작업의 소프트웨어 인프라를 설정하여 1분마다 스크립트를 실행하도록 예약합니다. 이 작업을 간단히 수행하는 방법에 대한 추가 정보는 이 기사에서 확인하세요.
@@ -54,7 +54,7 @@ link: "https://medium.com/illumination/diy-for-a-spy-real-time-aircraft-monitori
 모든 것이 명확하다면, 종속성을 설정해봅시다.
 
 ## 설치
-```
+
 
 <div class="content-ad"></div>
 

@@ -68,7 +68,7 @@ The last thing to try, was to write inline functions for new and delete, which w
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-UsingCasaScriptingLanguagepart13_0.png)
 
 wasmtime을 malloc() - free() 콤보로 실행했고, 평균 66ns가 걸린 것을 발견했어요. 48ns의 호출 오버헤드를 뺀 18ns의 런타임이 편안하게 나왔어요. 정말 빠른 속도죠. 이제는 제가 만든 힙 할당기가 문제인지 궁금해졌어요. 아마 맞겠죠? 지배적일 것입니다. 여기 차트가 있어요:
@@ -76,7 +76,7 @@ wasmtime을 malloc() - free() 콤보로 실행했고, 평균 66ns가 걸린 것�
 ![차트](/assets/img/2024-05-20-UsingCasaScriptingLanguagepart13_1.png)
 
 더 빠른 힙 할당기를 작성할 에너지가 없을 것 같아요. 특히, 내 힙 할당기가 견고하고 잘 테스트되어 있을 때 말이에요. 오랜 시간 잘 돌아가다가 이상한 메모리 조각화도 그리 심하게 일어나지 않아요. 게임을 만드는 것이 중요한데, 그럴 때 힙 할당기 같은 기본 할당기를 바꾸는 게 무서울 때가 있죠.
-```  
+  
 
 <div class="content-ad"></div>
 

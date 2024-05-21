@@ -117,7 +117,7 @@ Windows에서 실행할 수 있는 전체 Ollama 모델 라이브러리를 사�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-OllamaOllamainWindows_7.png)
 
 # 항상 켜져 있는 Ollama API
@@ -125,7 +125,7 @@ Windows에서 실행할 수 있는 전체 Ollama 모델 라이브러리를 사�
 Ollama의 API는 자동으로 백그라운드에서 실행되며 http://localhost:11434에서 제공됩니다. 도구 및 응용 프로그램은 추가 설정 없이 연결할 수 있습니다.
 
 ![이미지](/assets/img/2024-05-18-OllamaOllamainWindows_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -196,9 +196,9 @@ ollama run phi:
 - ollama update: Ollama를 최신 버전으로 업데이트합니다.
 - ollama config: Ollama 구성 설정을 관리합니다.
 
-```markdown
+
 <img src="/assets/img/2024-05-18-OllamaOllamainWindows_10.png" />
-```
+
 
 # Langchain을 통한 Ollama:
 

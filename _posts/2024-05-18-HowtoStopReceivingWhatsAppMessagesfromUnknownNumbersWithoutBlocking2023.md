@@ -11,7 +11,6 @@ link: "https://medium.com/@techtotools/how-to-stop-receiving-whatsapp-messages-f
 ---
 
 
-``` markdown
 ![How to Stop Receiving WhatsApp Messages from Unknown Numbers Without Blocking](/assets/img/2024-05-18-HowtoStopReceivingWhatsAppMessagesfromUnknownNumbersWithoutBlocking2023_0.png)
 
 If you want to stop receiving WhatsApp messages from unknown numbers without resorting to blocking, there are a few steps you can take to manage your privacy and reduce unwanted messages. Here’s a guide on how to do it:
@@ -19,7 +18,6 @@ If you want to stop receiving WhatsApp messages from unknown numbers without res
 # How to Stop receiving spam calls and messages from Unknown Numbers.
 
 ## Privacy settings
-```
 
 <div class="content-ad"></div>
 

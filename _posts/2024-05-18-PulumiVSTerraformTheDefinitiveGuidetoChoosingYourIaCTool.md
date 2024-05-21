@@ -137,7 +137,7 @@ Pulumi에서는 다음 언어로 인프라를 정의할 수 있습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 import pulumi
 import pulumi_aws as aws
@@ -166,7 +166,7 @@ const bucket = new aws.s3.Bucket("bucket", {
 ```
 
 재미있게 사용해보세요!
-```
+
 
 <div class="content-ad"></div>
 

@@ -100,7 +100,7 @@ TV 프로그램과 관련된 새로운 기능을 추가하려면 ShowService에 
 
 <div class="content-ad"></div>
 
-```markdown
+
 // 읽기
 protocol ShowQueryService {
     func allShows() async -> [Show]
@@ -112,7 +112,7 @@ protocol ShowCommandService {
     func markEpisodeAsWatched(episode: Episode) async
     func markShowAsWatched(_ show: Show, until episode: Episode?) async
 }
-```
+
 
 보통 이렇게 분리하는 것이 읽기와 쓰기에 필요한 기능이 매우 다르기 때문에 합리적입니다. 예를 들어 상태를 변경할 때(쓰기)만 적용되는 보안 정책이 있을 수 있습니다.
 
@@ -329,7 +329,7 @@ class DelayService<Decoratee: Service>: Service {
 ## 측면은 조립 가능합니다.
 
 모든 측면을 준비한 후에는 간단히 뷰 모델을 수정하여 필요한 서비스 유형을 주입하고 여러 측면으로 꾸밀 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -17,7 +17,7 @@ link: "https://medium.com/@vcoder/building-a-budget-friendly-mini-home-server-wi
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Building a Budget-Friendly Mini Home Server with Intel N100 Alder Lake](/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_1.png)
 
 그러나 리눅스 배포판을 탐색하고 Windows에서 특정 응용 프로그램을 실행하는 과정에서 라즈베리 파이의 제한 사항을 만나게 되었습니다. 또한 해당 장치는 Plex를 재색인하거나 NextCloud에 저장된 수천 개의 파일을 찾아보는 등 무거운 작업을 동시에 처리하는 데 필요한 전원이 부족합니다.
@@ -29,7 +29,7 @@ link: "https://medium.com/@vcoder/building-a-budget-friendly-mini-home-server-wi
 - N100 칩은 최대 32GB의 DDR5 RAM을 지원하며, 라즈베리 파이 5의 8GB DDR4 제한을 크게 넘어섭니다.
 - 일부 N100 세트는 2.5G로 클럭된 듀얼 LAN 포트를 제공하여 빠른 파일 전송과 연결 중복성을 제공합니다.
 - N100은 주로 NVMe Gen 3+ 스토리지를 완벽하게 지원하는 마더보드와 번들로 제공되며, 라즈베리 파이 5의 SD 카드, USB 3 또는 PCIe 솔루션에 비해 훨씬 높은 속도의 읽기/쓰기 속도를 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

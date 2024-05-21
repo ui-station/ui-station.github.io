@@ -11,7 +11,7 @@ link: "https://medium.com/macoclock/the-big-question-about-the-mac-mini-5b21553e
 ---
 
 
-```markdown
+
 ![](/assets/img/2024-05-20-TheBigQuestionAbouttheMacmini_0.png)
 
 우리는 이미 이전에 여기 있었죠, 그렇죠?
@@ -19,7 +19,7 @@ link: "https://medium.com/macoclock/the-big-question-about-the-mac-mini-5b21553e
 가능성이 있어요.
 
 24인치 iMac과 마찬가지로 Mac mini도 Apple로부터 냉대를 받은 적이 많아요. Intel 시대에는 너무 오랫동안 방치되어 왔다는 느낌이었지만, M1 칩이 도입되면서 최종적인 소멸에 대한 불안이 다행히도 걷혔어요.
-```
+
 
 <div class="content-ad"></div>
 

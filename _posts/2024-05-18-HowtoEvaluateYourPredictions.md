@@ -89,7 +89,7 @@ hist(임금데이브, main="데이브의 임금 분포", xlab="임금")
 그래서 우리가 알고 있는 데이브에 대한 가능한 임금 분포는 여전히 매우 비대칭적입니다.
 
 또한 여러 사람에 대한 테스트 세트를 생성합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -121,7 +121,7 @@ wagetest <- exp((agetest * 0.1) + (case_when(educationtest == "High School" ~ 1,
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![How to Evaluate Your Predictions 3](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_3.png)
 
 and the mean absolute error (MAE):
@@ -129,7 +129,7 @@ and the mean absolute error (MAE):
 ![How to Evaluate Your Predictions 4](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_4.png)
 
 An important takeaway is that the MSE is the appropriate metric for predicting the conditional mean, while the MAE is the measure to use for the conditional median. Mean and median are not the same thing for skewed distributions like the one we study here.
-```
+
 
 <div class="content-ad"></div>
 
@@ -171,7 +171,7 @@ abline(v=conditionalmedianest(ageDave, educationDave, experienceDave), col="dark
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![How to Evaluate Your Predictions](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_5.png)
 
 평균과 중간값이 다르다는 것을 알 수 있습니다. 소득 분포에서 기대되는 것처럼, 사실 평균은 중간값보다 높습니다(고값의 영향을 더 많이 받기 때문).
@@ -220,7 +220,7 @@ MAE1 < MAE2
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_8.png)
 
 whereby
@@ -228,7 +228,7 @@ whereby
 ![Image](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_9.png)
 
 To unpack this formula, we can consider two cases:
-```
+
 
 <div class="content-ad"></div>
 
@@ -245,16 +245,16 @@ To unpack this formula, we can consider two cases:
 
 이미지 태그를 다음과 같이 수정해주세요:
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_11.png)
-```
+
 
 즉, y가 f(x)로부터 멀어질수록 벌점이 커집니다.
 
 가중치가 높은 알파의 경우, 추정된 분위수 f(x)가 y보다 작은 경우 더 많이 벌점을 받습니다. 이것은 의도된 것으로, 올바른 분위수가 실제로 y에 대한 S(y, f(x))의 기댓값 최소화자임을 보장합니다. 이 점수는 사실 분위수 손실(2배 곱해진 상태)입니다. quantile_score 함수가 포함된 패키지 scoringutils의 R 구현체를 참조하세요. 마지막으로, alpha=0.5인 경우:
 
 ![이미지](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_12.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -362,15 +362,15 @@ mean(interval_score(
 
 점점 더 다양한 분야에서는 분포 예측과 관련된 문제를 다뤄야 합니다. 다행히 이 문제를 해결하는 데 도움이 되는 척도가 있습니다. 특히, 여기서는 '에너지 점수'라고 불리는 것에 초점을 맞춥니다:
 
-```
+
 for f(x) being an estimate of the distribution P(Y | X=x). The second term takes the expectation of the Eucledian distance between two independent samples from f(x). This is akin to a normalizing term, establishing the value if the same distribution was compared. The first term then compares the sample point y to a draw X from f(x). In expectation (over Y drawn from P(Y | X=x)) this will be minimized if f(x)=P(Y | X=x).
-```
+
 
 따라서 단순히 평균이나 분위수를 예측하는 대신, 이제 우리는 각 테스트 지점에서 월급의 전체 분포를 예측하려고 합니다. 본질적으로 우리는 Dave를 위해 그래프로 나타낸 조건부 분포를 예측하고 평가하려고 합니다. 이것은 조금 더 복잡합니다. 정확히 학습된 분포를 어떻게 나타내어야 할까요? 실제로 이는 예측된 분포로부터 샘플을 얻을 수 있는 것으로 해결됩니다. 따라서 예측된 분포에서 얻은 N개의 샘플을 단일 테스트 지점과 비교합니다. R에서는 scoringRules 패키지의 es_sample을 사용하여 이를 수행할 수 있습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 라이브러리(scoringRules)
 
 ## 이상적인 "추정": 각 샘플 포인트 x에 대한 참조 조건부 분포 P(Y | X=x)에서 단순히 샘플링
@@ -406,14 +406,14 @@ scorenaive <- mean(sapply(1:nrow(Xtest), function(j)  {
 
 ## scoretrue: 761.026
 ## scorenaive: 2624.713
-```
+
 
 위의 코드에서 "완벽한" 추정(즉, 참조 분포 P(Y | X=x)에서 샘플링)을 매우 단순한 추정과 비교합니다. 여기서 "매우 단순한" 추정은 급여, 교육 또는 경험에 관한 정보를 고려하지 않습니다. 다시 한 번, 점수는 두 방법 중 더 나은 방법을 신뢰할 수 있게 식별합니다.
 
 ## 결론
 
 우리는 예측 평가 방법에 대해 다양한 방법을 살펴보았습니다. 올바른 측정 항목에 대해 생각하는 것은 중요합니다. 잘못된 측정 항목은 예측 작업에 잘못된 모델을 선택하고 유지하게 할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

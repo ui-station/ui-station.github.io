@@ -145,6 +145,5 @@ LLM 보안을 높이고 사이버 위협에 앞서 나가세요. AI 안전성을
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-18-Mitigate3MajorLLMSecurityThreatstoProtectYourBusiness_7.png" />
-```

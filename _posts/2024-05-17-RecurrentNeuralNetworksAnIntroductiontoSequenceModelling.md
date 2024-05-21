@@ -31,7 +31,7 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![RecurrentNeuralNetworksAnIntroductiontoSequenceModelling](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_1.png)
 
 왼쪽에는 순환 뉴런이 있고, 오른쪽에는 시간에 따라 펼쳐진 순환 뉴런이 있습니다. RNN은 바닐라 피드포워드 신경망과 비슷해 보이지만, 이전 반복 실행에서 입력을 받는 중요한 차이점이 있습니다.
@@ -39,7 +39,7 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 그래서 그들을 "순환"이라고 부르는 것입니다. 각 단계의 출력이 시간 안에 전파되어 다음 단계의 값을 계산하는 데 도움이 됩니다. 시스템에는 어떤 내재적 "기억"이 있어서 모델이 과거의 패턴을 추적할 수 있습니다.
 
 예를 들어, Y_1을 예측할 때, X_1의 입력 및 이전 시간 단계 Y_0에서의 출력을 사용할 것입니다. Y_0가 Y_1에 영향을 미치기 때문에 Y_0가 Y_2에도간접적으로 영향을 줄 수 있다는 것을 알 수 있습니다. 이 알고리즘의 순환성을 명확하게 보여주는 사례입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -151,7 +151,7 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 아래는 Markdown 형식으로 테이블 태그를 바꿔본 것입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_7.png)
 
 한번 더, 우리는 시간 단계 2에서 출력 값을 계산합니다:
@@ -159,7 +159,7 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 ![이미지](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_8.png)
 
 ## 시간 단계 3 (입력: 3)
-```
+
 
 <div class="content-ad"></div>
 
@@ -203,13 +203,13 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 <div class="content-ad"></div>
 
-```
+
 ![Many-To-Many](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_13.png)
 
 This one gets an input at every step and produces an output at each step. This architecture is used for machine translation and also for problems like speech tagging.
 
 ![Many-To-Many](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_14.png)
-```
+
 
 <div class="content-ad"></div>
 

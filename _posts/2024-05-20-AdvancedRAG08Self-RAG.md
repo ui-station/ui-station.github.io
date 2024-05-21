@@ -327,7 +327,7 @@ class SelfRAGQueryEngine(CustomQueryEngine):
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-AdvancedRAG08Self-RAG_3.png) 
 
 비평가 모델 C는 어떤 언어 모델로도 초기화할 수 있습니다. 예를 들어 생성자와 동일한 모델로 초기화할 수 있습니다. 예를 들면 Llama2-7B와 같은 모델을 사용할 수 있습니다.
@@ -335,7 +335,7 @@ class SelfRAGQueryEngine(CustomQueryEngine):
 ## 생성자 모델 M
 
 Figure 4는 훈련 데이터를 수집하는 구체적인 과정을 보여줍니다. 입력-출력 쌍 (x, y)가 주어지면 self-RAG는 검색 및 비평가 모델을 사용하여 원래의 출력 y를 확장하고 지도 데이터를 생성합니다. y의 각 세그먼트 yt에 대해:
-```
+
 
 <div class="content-ad"></div>
 

@@ -80,7 +80,7 @@ Transformer, GPT 및 BERT를 위한 아키텍처 다이어그램:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-ACompleteGuidetoBERTwithCode_0.png)
 
 ## 1.2 — Pre-training Approach
@@ -88,7 +88,7 @@ Transformer, GPT 및 BERT를 위한 아키텍처 다이어그램:
 GPT은 BERT의 개발에 여러 가지 방식으로 영향을 미쳤습니다. 모델이 첫 번째 디코더 전용 변형 모델이었을 뿐만 아니라 GPT는 또한 모델 사전 훈련을 인기 있게 만들었습니다. 사전 훈련은 언어의 넓은 이해를 얻기 위해 단일 대형 모델을 훈련하는 것을 포함하며 이는 단어 사용 및 문법적 패턴과 같은 측면을 아우릅니다. 그 결과, 작업에 중립적인 기본 모델을 생성합니다. 위 다이어그램에서, 기본 모델은 선형 레이어 아래의 구성 요소들로 이루어져 있습니다 (보라색으로 표시됨). 훈련된 후, 이 기본 모델의 복사본은 특정 작업을 해결하기 위해 미세 조정될 수 있습니다. 미세 조정은 선형 레이어만 훈련하는 것을 의미합니다: 작은 피드포워드 신경망으로 종종 분류 헤드 또는 헤드라고 불립니다. 모델의 나머지 부분(즉, 기초 부분)에 있는 가중치와 바이어스는 변경되지 않거나 고정됩니다.
 
 아날로지:
-```
+
 
 <div class="content-ad"></div>
 
@@ -536,7 +536,7 @@ for review in df['review_cleaned']:
 토큰 ID = torch.cat(토큰 ID, dim=0)
 주의 마스크 = torch.cat(주의 마스크, dim=0)
 ``` 
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -608,7 +608,7 @@ model = BertForSequenceClassification.from_pretrained(
 Optimizer:
 
 분류 head가 학습 데이터의 일괄 처리를 만나면, 선형 레이어의 가중치와 바이어스를 업데이트하여 그 입력에 대한 모델 성능을 향상시킵니다. 여러 배치와 여러 epoch 동안, 이러한 가중치와 바이어스가 최적값으로 수렴하도록 하는 것이 목표입니다. 각 가중치와 바이어스에 필요한 변경 사항을 계산하기 위해 옵티마이저가 필요하며, PyTorch의 `optim` 패키지에서 가져올 수 있습니다. Hugging Face는 자신들의 예제에서 AdamW 옵티마이저를 사용하므로, 여기서도 이 옵티마이저를 사용할 것입니다 [13].
-```
+
 
 <div class="content-ad"></div>
 
@@ -648,24 +648,24 @@ scheduler = get_linear_schedule_with_warmup(
 CUDA를 사용하여 GPU 활용:
 
 NVIDIA에서 만든 CUDA(Compute Unified Device Architecture)는 과학 및 공학 분야의 응용 프로그램 성능을 향상시키기 위한 컴퓨팅 플랫폼입니다 [14]. PyTorch의 cuda 패키지를 사용하면 Python에서 CUDA 플랫폼을 활용하여 머신 러닝 모델을 훈련할 때 GPU를 사용할 수 있습니다. torch.cuda.is_available 명령을 사용하여 GPU의 가용성을 확인할 수 있습니다. GPU가 없는 경우 코드는 가속 계산을 위해 그래픽 처리 장치 (GPU)를 사용할 수 없도록 기본 설정됩니다. 이후의 코드 스니펫에서는 PyTorch Tensor.to 메서드를 사용하여 텐서(모델 가중치 및 편향 등이 포함됨)를 더 빠른 계산을 위해 GPU로 이동합니다. 장치가 cpu로 설정된 경우 텐서가 이동되지 않고 코드에 영향을 미치지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 # GPU 사용 가능 여부 확인하여 빠른 학습 시간을 위한 준비
 if torch.cuda.is_available():
     device = torch.device('cuda:0')
 else:
     device = torch.device('cpu')
-```
+
 
 학습 프로세스는 두 개의 for 루프를 통해 이루어집니다: 각 epoch마다 프로세스를 반복하는 외부 루프(모델이 모든 학습 데이터를 여러 번 보게하는 역할)와 각 배치마다 손실 계산 및 최적화 단계를 반복하는 내부 루프가 있습니다. 학습 루프를 설명하기 위해 아래 단계를 고려해 보세요. 학습 루프의 코드는 Chris McCormick과 Nick Ryan의 훌륭한 블로그 글[15]에서 적용되었으며 매우 추천합니다.
 
 각 epoch에 대해:
 
 1. 모델을 train 모드로 변경합니다. 모델 객체의 train 메서드를 사용하여 모델이 평가 모드일 때와는 다르게 작동하도록 합니다. 특히 batchnorm과 dropout 레이어와 함께 작업할 때 유용합니다. 이전에 BertForSequenceClassification 클래스의 소스 코드를 살펴봤다면, 분류 헤드에 실제로 dropout 레이어가 포함되어 있는 것을 보았을 겁니다. 따라서 fine-tuning 시에 training 및 evaluation 모드를 올바르게 구분해야 합니다. 이러한 종류의 레이어는 학습 중에만 활성화되어야 하며 추론 중에는 활성화되지 않아야 합니다. 따라서 학습과 추론을 위해 서로 다른 모드로 전환할 수 있는 기능은 유용한 기능입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -699,7 +699,7 @@ BERT 저자들의 권장에 따라, 각 에포크의 훈련 데이터를 배치�
 
 <div class="content-ad"></div>
 
-```markdown
+
 for epoch in range(0, EPOCHS):
 
     model.train()
@@ -727,14 +727,14 @@ for epoch in range(0, EPOCHS):
         scheduler.step()
 
     average_train_loss = training_loss / len(train_dataloader)
-```
+
 
 외부 루프 내에서 검증 단계가 수행되므로 각 epoch마다 평균 검증 손실을 계산합니다. epoch 숫자가 증가함에 따라 검증 손실이 감소하고 분류기 정확도가 증가할 것으로 기대됩니다. 검증 프로세스 단계는 아래에 설명되어 있습니다.
 
 에포크의 검증 단계:
 
 11. evaluation 메서드를 사용하여 모델을 평가 모드로 전환합니다. 이렇게 하면 드롭아웃 레이어가 비활성화됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -831,13 +831,13 @@ def preprocess_dataset(path):
             - review_cleaned: "review" 열의 사본이고 HTML 줄 바꿈 태그와 불필요한 공백이 제거된 컬럼
             - sentiment_encoded: "sentiment" 열의 사본이며 "부정" 값을 0으로 매핑하고 "긍정" 값을 1로 매핑한 컬럼
     ```
-```  
+  
 
 <div class="content-ad"></div>
 
 작업에 중립적인 파인튜닝 파이프라인 클래스:
 
-```markdown
+
 ```js
 from datetime import datetime
 import numpy as np
@@ -903,7 +903,7 @@ class FineTuningPipeline:
 
 ...
 ```  
-```
+
 
 감정 분석을 위한 클래스 사용 예 (IMDb 데이터셋):
 

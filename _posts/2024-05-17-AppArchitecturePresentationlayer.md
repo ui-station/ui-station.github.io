@@ -56,11 +56,11 @@ lifecycleState — 이 Flow 작업을 다시 시작하는 Lifecycle이 유지됩
 
 Markdown으로 표 태그를 변경하세요.
 
-```markdown
+
 | Header 1 | Header 2 |
 | -------- | -------- |
 | Data 1   | Data 2   |
-```
+
 
 <div class="content-ad"></div>
 

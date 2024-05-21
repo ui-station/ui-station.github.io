@@ -186,7 +186,7 @@ model = AutoModelForCausalLM.from_pretrained(
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Embedding Model](/assets/img/2024-05-20-AreGPTsGoodEmbeddingModels_4.png)
 
 해당 e5-mistral-7b-instruct 논문을 살펴보면, 핵심은 contrastive loss를 사용하여 mistral 모델을 추가 조정하는 데 있습니다.
@@ -194,7 +194,7 @@ model = AutoModelForCausalLM.from_pretrained(
 이 블로그 게시물에서는 이 개념을 자세히 다루었습니다. sim 함수는 두 벡터 간의 코사인 거리를 계산합니다. 대조 손실에서 분모는 양성 예와 음성 예 사이의 코사인 거리를 나타냅니다. 대조 손실의 이유는 비슷한 벡터가 가능한 한 1에 가까워지도록 하고 싶기 때문입니다. 왜냐하면 log(1) = 0이 최적의 손실을 나타내기 때문입니다.
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

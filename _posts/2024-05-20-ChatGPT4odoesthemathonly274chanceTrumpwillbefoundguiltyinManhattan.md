@@ -31,7 +31,7 @@ ChatGPT 4o가 프롬프트에 대해 어떻게 처리하는지 확인해 봅시�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-20-ChatGPT4odoesthemathonly274chanceTrumpwillbefoundguiltyinManhattan_0.png)
 
 따라서 실제 결과인 16.36%는 해당 답변에 나타나지 않습니다.
@@ -39,19 +39,19 @@ ChatGPT 4o가 프롬프트에 대해 어떻게 처리하는지 확인해 봅시�
 답변 끝에는 가능한 답변으로 "약 0.147 또는 14.7%"을 추측하며, 실제 숫자는 사실 16.36% 입니다.
 
 약 10% 범위 내의 오차로 0.86을 12제곱한 값을 짐작하거나 직감할 수 있다면 상상해 볼만 하겠죠?
-```  
+  
 
 <div class="content-ad"></div>
 
 여기에서 제가 직접 실행한 코드입니다.
 
-```
+
 ![ChatGPT 4o’s political analysis](/assets/img/2024-05-20-ChatGPT4odoesthemathonly274chanceTrumpwillbefoundguiltyinManhattan_1.png)
 
 # ChatGPT 4o’s 정치 분석
 
 대화를 이어가면서, 그 분석이 정확한 것을 지적합니다. 저는 모든 배심원이 민주당원일 것이라는 강력한 가정을 했다고 합니다. 또한, "사실에서는, 배심원의 결정은 집단 역학, 심리적 과정 및 서로와의 상호작용에 영향을 받을 수 있습니다. 따라서 독립 가정이 실제 재판 상황에서 유지되지 않을 수도 있습니다" 라고 언급하고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

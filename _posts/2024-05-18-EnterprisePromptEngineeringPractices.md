@@ -136,8 +136,7 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-18-EnterprisePromptEngineeringPractices_3](/assets/img/2024-05-18-EnterprisePromptEngineeringPractices_3.png)
 
 ![2024-05-18-EnterprisePromptEngineeringPractices_4](/assets/img/2024-05-18-EnterprisePromptEngineeringPractices_4.png)
-```

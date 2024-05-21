@@ -151,7 +151,7 @@ EU-특정 변경 사항
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-iOS174Released25AmazingNewFeaturesYouNEEDToTryNow_2.png)
 
 The toggle is enabled by default.
@@ -159,11 +159,11 @@ The toggle is enabled by default.
 ## #5. Siri can read out messages in different languages
 
 Did you know you could skip that step where Siri asks for confirmation before you send a message to someone?
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-18-iOS174Released25AmazingNewFeaturesYouNEEDToTryNow_3.png)
 
 To do that, toggle on ‘Automatically Send Messages’ in Settings ⚙️ Siri & Search. And bravo! You’ll never see that frustrating confirmation part again.
@@ -171,7 +171,7 @@ To do that, toggle on ‘Automatically Send Messages’ in Settings ⚙️ Siri 
 However, with iOS 17.4, that section is replaced with ‘Messaging with Siri’ — where, along with Automatically Sending Messages, you can also select a few languages which Siri will use to read out messages for you.
 
 ![Image 2](/assets/img/2024-05-18-iOS174Released25AmazingNewFeaturesYouNEEDToTryNow_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -259,7 +259,7 @@ iPhone 15 시리즈 모델을 소유하신다면, 설정 ⚙️ ` 배터리 🔋
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Shazam](/assets/img/2024-05-18-iOS174Released25AmazingNewFeaturesYouNEEDToTryNow_9.png)
 
 ## #11. Shazam에서 선택한 음악 재생목록에 추가
@@ -267,7 +267,7 @@ iPhone 15 시리즈 모델을 소유하신다면, 설정 ⚙️ ` 배터리 🔋
 Shazam은 항상 별도의 Apple Music 재생목록을 갖고 있어 Shazamed 곡을 저장할 수 있었습니다.
 
 그러나 이제 Shazam 앱이나 제어 센터를 통해 노래를 Shazam하면 '추가' 버튼이 나타나며, 이를 통해 원하는 Apple Music 재생목록에 노래를 추가할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -379,7 +379,7 @@ iOS 17.4 릴리스 노트에서 Apple은 Apple 식별 비즈니스로부터 전�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-iOS174Released25AmazingNewFeaturesYouNEEDToTryNow_19.png)
 
 현재 움직임을 나타내는 신체 활동을 반환합니다 (걷기, 뛰기 또는 이동 차량).
@@ -387,7 +387,7 @@ iOS 17.4 릴리스 노트에서 Apple은 Apple 식별 비즈니스로부터 전�
 iPhone, iPad 및 Apple Watch에서는 내장 센서를 사용하여 신체 활동을 결정하고 반환합니다. 다른 모든 기기에서는 "알 수 없음"을 반환합니다.
 
 ## #21. 홈 화면에 바로 가기 추가를 위한 새로운 UI
-```
+
 
 <div class="content-ad"></div>
 
@@ -480,7 +480,7 @@ Acura, Aston Martin, Audi, Ford, Honda, Infiniti, Jaguar, Land Rover, Lincoln, M
 # • 새로운 백엔드 변경 사항
 
 ## #26. 게임 스트리밍이 이제 가능합니다
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -570,7 +570,7 @@ iOS 17.3 이전까지 이들은 나란히 배치되어 있어서 더 많은 것�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-iOS174Released25AmazingNewFeaturesYouNEEDToTryNow_27.png)
 
 ## iOS 17이 대박인게 아니에요?
@@ -578,7 +578,7 @@ iOS 17.3 이전까지 이들은 나란히 배치되어 있어서 더 많은 것�
 ## iOS 17의 290가지 이상의 새로운 기능: 연속 업데이트 중:
 
 ## 마침내,
-```
+
 
 <div class="content-ad"></div>
 
@@ -593,7 +593,7 @@ iOS 17.3 이전까지 이들은 나란히 배치되어 있어서 더 많은 것�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-iOS174Released25AmazingNewFeaturesYouNEEDToTryNow_28.png)
 
 ## Emojis of first two lines
@@ -606,7 +606,7 @@ iOS 17.3 이전까지 이들은 나란히 배치되어 있어서 더 많은 것�
 - 🐦‍🔥 — Phoenix
 
 ## Emojis of third Line
-```
+
 
 <div class="content-ad"></div>
 

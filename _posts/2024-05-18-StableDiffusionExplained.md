@@ -97,7 +97,7 @@ noise_pred = unet(latents, t, encoder_hidden_states=text_embeddings)["sample"]
 3. 텍스트-인코더
 
 텍스트-인코더는 입력 프롬프트를 임베딩 공간으로 변환하여 U-Net에 입력으로 제공합니다. Unet을 노이즈 제거 프로세스에 학습시킬 때 노이즈가 많은 latents를 안내하는 역할을 합니다. 텍스트-인코더는 일반적으로 간단한 트랜스포머 기반 인코더로, 입력 토큰 시퀀스를 잠재적인 텍스트-임베딩 시퀀스로 매핑합니다. Stable Diffusion은 새로운 텍스트 인코더를 학습하지 않고 이미 학습된 텍스트 인코더인 CLIP을 사용합니다. 텍스트 인코더는 입력 텍스트에 해당하는 임베딩을 생성합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -139,7 +139,7 @@ print('모양:', output_embeddings.shape)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 diffusers에서 LMSDiscreteScheduler를 가져와주세요
 scheduler = LMSDiscreteScheduler(beta_start=0.00085, beta_end=0.012, beta_schedule="scaled_linear", num_train_timesteps=1000)
@@ -153,8 +153,8 @@ scheduler.set_timesteps(15)
 ```
 
 Stable Diffusion과 같은 Latent Diffusion Model은 다양한 창의적인 응용 프로그램을 가능하게 합니다:
-```  
-```
+  
+
 
 <div class="content-ad"></div>
 

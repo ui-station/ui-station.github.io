@@ -72,7 +72,7 @@ link: "https://medium.com/@thulasirajkomminar/enabling-cross-account-access-for-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-EnablingCross-AccountAccessforAWSLakeFormationwithDataFiltersUsingTerraform_3.png)
 
 In this setup:
@@ -81,7 +81,7 @@ In this setup:
 - **Create Resource Link:** The `aws_glue_catalog_database` resource establishes a database resource link named `IIoTDataLake-Target` in the target account. It links to the `IIoTDataLake` database in the source account, enabling access to the shared catalog data.
 
 By creating this resource link, you enable seamless access to the shared data catalog from the target account, facilitating data utilization and analysis across accounts while maintaining security and compliance measures.
-```
+
 
 <div class="content-ad"></div>
 

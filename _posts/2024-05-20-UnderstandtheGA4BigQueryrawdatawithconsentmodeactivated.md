@@ -51,7 +51,7 @@ GA4 동의 모드가 BigQuery에 미치는 영향은 때로는 평가하기 어�
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-05-20-UnderstandtheGA4BigQueryrawdatawithconsentmodeactivated_3.png)
 
 # 방문 지표를 비교할 때 무슨 일이 벌어질까요?
@@ -59,19 +59,19 @@ GA4 동의 모드가 BigQuery에 미치는 영향은 때로는 평가하기 어�
 같은 기간 동안 두 시스템에서 사용하는 간단한 쿼리를 아래에서 확인할 수 있습니다. 사용자 ID를 수집하지 않는 속성에 대해 GA4는 세션, 사용자 및 신규 사용자를 추정하며, 분명히 원시 데이터만 사용하지 않습니다.
 
 ![이미지](/assets/img/2024-05-20-UnderstandtheGA4BigQueryrawdatawithconsentmodeactivated_4.png)
-```
+
 
 <div class="content-ad"></div>
 
 아래처럼 해드릴게요:
 
-```markdown
+
 <img src="/assets/img/2024-05-20-UnderstandtheGA4BigQueryrawdatawithconsentmodeactivated_5.png" />
 
 GA4이 이벤트에 기반한 메트릭(new_users 및 세션)을 계산할 때, 상황이 약간 복잡해집니다. 이벤트 수를 알고 있는데도 불구하고 실제 데이터가 아니라는 것을 인지합니다. 데이터베이스의 고유 사용자 키에 기반한 메트릭인 경우, 데이터가 부족하다는 점을 감안해 그 수치를 팽창시킵니다.
 
 # 특정 이벤트를 비교하면 무슨 일이 벌어질까요?
-```
+
 
 <div class="content-ad"></div>
 

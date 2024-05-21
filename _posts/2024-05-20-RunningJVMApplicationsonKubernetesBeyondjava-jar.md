@@ -344,7 +344,7 @@ resources:
 ```
 
 - BestEffort: 컨테이너 내에 CPU 또는 메모리에 대한 요청 또는 제한 구성이 없는 경우 팟은 BestEffort로 분류됩니다. 적어도 하나의 컨테이너에 요청이나 제한 구성이 있는 경우 분류가 Burstable로 변경됩니다.
-```
+
 
 <div class="content-ad"></div>
 

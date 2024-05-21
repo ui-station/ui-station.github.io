@@ -157,7 +157,7 @@ local_llm = HuggingFacePipeline(pipeline=pipe)
 ```
 
 4. SequenceMatcher
-```
+
 
 <div class="content-ad"></div>
 
@@ -202,7 +202,7 @@ def query_generator(tble, cols, question):
 
 # 표
 
-```markdown
+
 transaction = [
         "transaction_id",
         "transaction_amount",
@@ -224,7 +224,7 @@ transaction = [
 
     for input in inputs:
         query_generator("transaction",transaction ,question=find_columns_match(input,transaction))
-```
+
 
 # 응답
 
@@ -291,7 +291,7 @@ transaction = [
 # 2 Fine-tune NL2SQL with Phi-3
 
 Phi-3를 만나보세요, Microsoft의 최신 오픈 AI 모델의 주요 성과입니다. Phi-3-mini, Phi-3-small 및 Phi-3-medium을 통해, 이 작은 언어 모델 (SLM)의 Phi-3 패밀리는 AI 모델의 세계를 혁신하도록 설계되었습니다. 38억 개의 파라미터를 사용하고 33조 개의 토큰으로 훈련된 Phi-3-mini는 높은 성능을 발휘하며 Mixtral 8x7B 및 GPT-3.5와 같은 큰 모델과 같은 성능을 보여줍니다. 게다가, 이 모델은 스마트폰 장치에서 효율적으로 작동할 수 있습니다. Phi-3의 성공은 훈련 데이터셋에 기인합니다. Phi-2의 데이터셋의 진화된 버전입니다. 상세히 걸러낸 웹 데이터 및 합성 입력을 통해 이러한 모델은 강도, 안전 및 대화 능력에 우선순위를 두어 다양한 응용프로그램에 적합합니다. 7B 및 14B 파라미터를 가진 Phi-3-small 및 Phi-3-medium은 효율 유지와 함께 Phi-3의 기능을 더욱 향상시키도록 설계되었습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -417,11 +417,11 @@ print(print_gpu_utilization())
 ```
 
 6. 모델 추론
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 프롬프트 정의
     prompt = [
         "코코넛 밀크로 만든 치킨 카레 레시피를 작성해주세요.",
@@ -465,11 +465,11 @@ print(print_gpu_utilization())
     # 평균 토큰 속도 계산
     tok_sec = round(total_length / duration, 3)
     print("평균 --- %s 토큰/초 ---" % (tok_sec))
-```
+
 
 9. Fine-tuning되지 않은 Text to SQL
 
-```markdown
+
     prompt = [
         """
         다음은 작업을 설명하는 지시사항입니다. 요청을 적절히 완료하는 응답을 작성하십시오.
@@ -542,11 +542,11 @@ print(print_gpu_utilization())
     print(print_gpu_utilization())
 
     model = prepare_model_for_kbit_training(model)
-```
+
 
 10. LoRA 매개변수
-```markdown
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -617,7 +617,7 @@ trainer.train()
 ```
 
 12. Test inference with the fine-tuned adapter
-``` 
+ 
 
 <div class="content-ad"></div>
 
@@ -699,7 +699,7 @@ print("Average --- %s tokens/seconds ---" % (tok_sec))
 ```
 
 14. 모델 저장하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -789,7 +789,7 @@ print("Average --- %s tokens/seconds ---" % (tok_sec))
 ```
 
 # Conclusion
-```
+
 
 <div class="content-ad"></div>
 

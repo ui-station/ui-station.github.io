@@ -80,7 +80,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 그런 다음 Warp를 설치하세요. Warp는 내장 MacOs 터미널을 대체할 거의 IDE와 같은 터미널입니다. 내장 터미널처럼 계속 사용할 수 있지만, 매우 환영 받는 추가 기능(무료 커서 배치, 텍스트 바로 가기)부터 고급 기능(패널 분할, 탭, 이전 명령어 검색) 및 기타 여러 가지를 제공합니다. 또한 명령어보다 하고자 하는 것을 입력할 수 있는 A.I. 어시스턴트를 사용할 수 있습니다. 또한, autosuggestions와 color-highlighting과 같은 인기있는 oh-my-zsh 플러그인이 Warp와 함께 내장되어 있습니다.
 
 <img src="/assets/img/2024-05-18-HowtoSetupYourMacbookforDataSciencein2024_3.png" />
-```
+
 
 <div class="content-ad"></div>
 

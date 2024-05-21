@@ -62,7 +62,7 @@ plt.show()
 ```
 
 <img src="/assets/img/2024-05-18-AVisualUnderstandingofLogisticRegression_1.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -168,7 +168,7 @@ w0=1.2124, w1=0.9033, w2=0.9075
 \[ w = \begin{bmatrix} 1.2124 \\ 0.9033 \\ 0.9075 \end{bmatrix} \]
 
 다음과 같이 계산됩니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -187,7 +187,7 @@ o = -w0 * u
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```python
 lt.figure(figsize=(6,6))
 
@@ -236,7 +236,7 @@ plt.show()
 모든 변환된 데이터 포인트는 w 벡터를 따라 있는 선상에 있음을 유의해주세요. 이 선의 원점은 점 o에 위치합니다. 원본 데이터 세트의 각 데이터 포인트 (x₁, x₂)는 이 선상의 데이터 포인트로 변환되며, 변환된 데이터 포인트 (각 녹색 점)의 점 o로부터의 거리는 w₀+w₁x₁+w₂x₂와 같습니다.
 
 시그모이드 함수 추가
-```
+
 
 <div class="content-ad"></div>
 
@@ -342,7 +342,7 @@ plt.show()
 하지만 2차원 공간에서 결정 경계를 어떻게 찾을까요? 이를 위해 2차원 공간의 모든 점을 찾아야 합니다. 이러한 점들은 1차원 공간의 원점으로 매핑됩니다 (Figure 8의 점 o). Figure 9에서 이러한 점들을 찾을 수 있는 방법을 보여줍니다.
 
 <img src="/assets/img/2024-05-18-AVisualUnderstandingofLogisticRegression_22.png" />
-```
+
 
 <div class="content-ad"></div>
 

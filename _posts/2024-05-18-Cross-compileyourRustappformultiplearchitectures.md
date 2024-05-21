@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/cross-compile-your-rust-app-for-multiple-
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-05-18-Cross-compileyourRustappformultiplearchitectures_0.png" />
 
 Rust는 앱 개발을 위한 포맷부터 문서 작성까지 포괄적인 도구를 갖춘 신속하고 견고한 언어입니다. 그러나 컴파일된 언어이므로 다양한 아키텍처 간 호환성을 보장하기 위해 추가적인 노력이 필요합니다. 다행히 Rust는 이를 개발자들을 위해 간소화했습니다. 오늘은 Rust로 기본적인 HTTP 서버 애플리케이션을 작성하고 ARMv7 프로세서용으로 크로스 컴파일하여 네트워크 연결을 통해 STM32MP1 보드에 배포하는 방법에 대해 살펴볼 것입니다.
@@ -19,7 +19,7 @@ Rust는 앱 개발을 위한 포맷부터 문서 작성까지 포괄적인 도�
 # 준비물
 
 크로스 컴파일 작업을 시작하기 전에, 특정 사전 준비물이 갖추어져 있어야 합니다. 계속 진행하기 전에 다음 사항을 확인하세요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -102,14 +102,14 @@ sudo apt install gcc-arm-linux-gnueabihf
 
 이제 ARM에 적합한 링커와 컴파일러를 설치하고, 'arm-linux-gnueabihf-gcc' 명령어를 호출하여 테스트해보겠습니다(인수 없이 호출하면 즉시 종료됨).
 
-그러나 Cargo가 바이너리의 링킹 단계에서 이를 활용하도록하려면 안내가 필요합니다. 이를 위해 ./.cargo/config라는 새 파일을 만들어 다음 내용을 입력해야 합니다:```
+그러나 Cargo가 바이너리의 링킹 단계에서 이를 활용하도록하려면 안내가 필요합니다. 이를 위해 ./.cargo/config라는 새 파일을 만들어 다음 내용을 입력해야 합니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 [target.armv7-unknown-linux-gnueabihf]
 linker = "arm-linux-gnueabihf-gcc"
-```
+
 
 이렇게 하면 ARM-specific 버전의 gcc를 사용하여 armv7-unknown-linux-gnueabihf Rust target을 위해 컴파일된 이진 파일을 링킹하는데 cargo가 지시됩니다.
 

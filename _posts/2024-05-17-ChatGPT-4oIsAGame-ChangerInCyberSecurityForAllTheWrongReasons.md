@@ -11,7 +11,7 @@ link: "https://medium.com/@taimurcloud123/chatgpt-4o-is-a-game-changer-in-cybers
 ---
 
 
-```markdown
+
 ![ChatGPT-4o](/assets/img/2024-05-17-ChatGPT-4oIsAGame-ChangerInCyberSecurityForAllTheWrongReasons_0.png)
 
 AI 세계가 다시 소란스럽습니다. 
@@ -21,7 +21,7 @@ AI 세계가 다시 소란스럽습니다.
 새로운 모델 GPT-4o는 이미 영화 "Her"의 AI와 비교되고 있습니다.
 
 ChatGPT-4o는 놀랄만한 능력과 전반적인 이해력에서 큰 발전이 있어 보입니다.
-```
+
 
 <div class="content-ad"></div>
 

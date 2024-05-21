@@ -103,7 +103,7 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 이미지 태그를 Markdown 형식으로 변경합니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-17-ItsAboutTimeToDitchCaptchaIn2024_4.png)
 
 테렌스 에덴(Terence Eden)은 2017년 다음과 같이 요약했습니다:
@@ -111,7 +111,7 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 모든 것을 고려해도, 왜 우리는 여전히 캡차를 해결해야 하는 걸까요?
 
 # 기업들이 캡차를 단지 자신들의 이익을 위해 사용합니다
-```
+
 
 <div class="content-ad"></div>
 

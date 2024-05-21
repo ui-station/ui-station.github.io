@@ -82,7 +82,7 @@ Siri가 작동할 때 대답이나 응답이 대부분 이상하거나 이상합
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-ApplesecosystemIloveitbutthese5thingsmakemeMAD_3.png)
 
 그 모든 칭찬을 해도 오늘의 나쁜 목록에 올라간 이유가 무엇인가요?
@@ -90,7 +90,7 @@ Siri가 작동할 때 대답이나 응답이 대부분 이상하거나 이상합
 이것은 좀 사용자별이라고 인정하고 시작하겠습니다. 그러나 매번 Premiere Pro를 열 때마다 iPhone이 사진 입력으로 연결하려고 해서 짜즯네요! 너무 작은 일이라는 걸 알지만, 그저 Premiere를 영원히 잊으라고 말할 방법이 있었으면 좋겠어요. 그냥 프로젝트를 계속하고 싶은데 전화기를 계속 연결을 끊을 필요가 없어야 하는데요 — 어이쿠!
 
 그리고 유사한 일로...
-```
+
 
 <div class="content-ad"></div>
 

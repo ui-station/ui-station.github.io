@@ -286,12 +286,12 @@ Jinja2를 사용하려면 환경을 설정해야 합니다. 위에서 설명한 
 
 <div class="content-ad"></div>
 
-```markdown
+
 env = Environment(
     loader=PackageLoader("my_gemini_chatbot"),
     autoescape=select_autoescape()
 )
-```
+
 
 이제 템플릿을 준비할 시간입니다. templates/ 폴더 내에 prompt.jinja, default.jinja 및 santaclaus.jinja 세 개의 파일을 생성하십시오. default.jinja 파일은 비워두세요. 기본 펄스널리티는 Gemini의 정상 동작일 것이므로요.
 
@@ -407,7 +407,7 @@ ui.run()
 <img src="/assets/img/2024-05-20-CreateyourownGeminiAI-chatbotwithatwistusingPythonJinja2andNiceGUI_9.png" />
 
 # VertexAI를 통해 Gemini LLM 통합하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -558,7 +558,6 @@ ui.run()
 
 <div class="content-ad"></div>
 
-```markdown
 ![GeminiAI Chatbot](/assets/img/2024-05-20-CreateyourownGeminiAI-chatbotwithatwistusingPythonJinja2andNiceGUI_16.png)
 
 # AI가 바에 들어가다
@@ -566,11 +565,9 @@ ui.run()
 저는 아빠가 된 이후로, 가능한 경우에 아빠 농담을 해주는 기회를 즐기고 있어요. 이 장에서는 Jinja2를 사용한 모듈식 접근 방법과 NiceGUI를 사용한 간단한 웹 UI의 이점을 설명하고 싶어 합니다.
 
 새로운 개성을 소개해보죠. dadjokes.jinja와 같이 다른 파일 옆에 새로운 템플릿 파일을 만들어 다음 내용을 추가하세요.
-```
 
 <div class="content-ad"></div>
 
-```js
 넌 자랍니다. 하지만, 거의 모든 문장에 아빠 농담을 추가해야 합니다. 답변에 가능한 한 많은 아빠 농담을 넣고, 입력과 관련된 농담을 만드려고 노력해주세요. 또한, 답변에 많은 이모지를 추가하고 싶어 금을 참지 못할 겁니다. 😉👨‍👧‍👦
 
 이를 실행하기 위해 우리는 우리의 도우미 함수인 get_personality_file을 확장해야 합니다. 👨‍💻
@@ -589,7 +586,7 @@ def get_personality_file(value):
 ```
 
 그리고 우리의 입력 요소에 새 옵션을 추가하여 사용자가 새로운 옵션을 선택할 수 있도록 합시다. 🎁🧔
-```
+
 
 <div class="content-ad"></div>
 
@@ -617,13 +614,13 @@ ui.button("다크 UI", on_click=dark.enable).classes("col-span-4")
 
 표를 Markdown 형식으로 바꾸는 방법은 다음과 같아요:
 
-```markdown
+
 | Function | Description         |
 |----------|---------------------|
 | ui.run() | 애플리케이션 실행   |
 | ui.page()| 페이지 만들기       |
 | ui.button()| 버튼 생성         |
-```
+
 
 위와 같이 수정하시면 Markdown 형식으로 표를 작성할 수 있어요!
 
@@ -639,7 +636,7 @@ ui.button("다크 UI", on_click=dark.enable).classes("col-span-4")
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![GeminiAI Chatbot](/assets/img/2024-05-20-CreateyourownGeminiAI-chatbotwithatwistusingPythonJinja2andNiceGUI_18.png)
 
 파이썬, Jinja2 및 NiceGUI를 사용하면 VertexAI의 Gemini LLM과 상호 작용하는 사용자 친화적 인터페이스를 구축할 수 있습니다. 이를 통해 교육용 챗봇부터 재미있는 개성 기반 챗 체험까지 다양한 창의적인 응용 프로그램이 가능해집니다.
@@ -647,4 +644,3 @@ ui.button("다크 UI", on_click=dark.enable).classes("col-span-4")
 이 블로그 글이 여러분들에게 VertexAI의 잠재력을 탐험하고 자체 AI 애플리케이션을 구축해보는데 영감을 줬기를 희망합니다.
 
 즐기고, 지시를 따르는 데 서툰 AI를 무엇이라고 부를까요? — 절망적 절자 없는 반란자.
-```

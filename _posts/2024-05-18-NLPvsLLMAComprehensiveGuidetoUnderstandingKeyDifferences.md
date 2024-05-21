@@ -11,7 +11,7 @@ link: "https://medium.com/@vaniukov.s/nlp-vs-llm-a-comprehensive-guide-to-unders
 ---
 
 
-```markdown
+
 ![NLP vs LLM](/assets/img/2024-05-18-NLPvsLLMAComprehensiveGuidetoUnderstandingKeyDifferences_0.png)
 
 NLP 및 LLM 기술은 대규모로 사람 언어를 분석하고 생성하는 데 중요합니다. 그들의 증가하는 보급으로, LLM 대 NLP를 구별하는 것은 점점 더 중요해지고 있습니다.
@@ -19,7 +19,7 @@ NLP 및 LLM 기술은 대규모로 사람 언어를 분석하고 생성하는 �
 NLP는 인간 언어를 이해, 조작 및 생성하기 위한 일련의 알고리즘을 포함합니다. 1950년대에 처음으로 등장한 이후, NLP는 텍스트 관계를 분석하는 데 진화했습니다. 이는 품사 태깅, 명명된 개체 인식 및 감성 분석 방법을 사용합니다.
 
 OpenAI의 ChatGPT가 보여주는 것처럼, LLM은 깊은 학습을 활용하여 방대한 텍스트 세트로 학습합니다. 인간과 유사한 텍스트를 모방할 수 있지만, 언어의 뉘앙스를 이해하는 것은 제한됩니다. NLP가 언어 분석에 중점을 둔 반면, LLM은 주로 텍스트를 생성합니다.
-```
+
 
 <div class="content-ad"></div>
 

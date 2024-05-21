@@ -306,7 +306,7 @@ func getWalletBalance() {
 ```
 
 다른 예제를 살펴보겠습니다. 사용자가 잔액을 업데이트하고자 하는 경우를 보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 

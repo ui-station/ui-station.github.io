@@ -11,7 +11,7 @@ link: "https://medium.com/@ganeshrajugalla/swiftui-heart-animation-with-shape-db
 ---
 
 
-```markdown
+
 ![Heart Shape](/assets/img/2024-05-20-SwiftUIHeartanimationwithshape_0.png)
 
 사각형, 둥근 사각형, 원 및 캡슐은 SwiftUI에서 사용할 수 있지만 하트 모양은 제공되지 않으므로 저는 Shape Protocol을 사용하여 직접 만들었습니다.
@@ -38,7 +38,7 @@ struct HeartShape: Shape {
     }
 }
 ```
-```
+
 
 <div class="content-ad"></div>
 

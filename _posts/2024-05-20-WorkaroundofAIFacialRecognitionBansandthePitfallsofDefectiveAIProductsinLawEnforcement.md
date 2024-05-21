@@ -11,11 +11,11 @@ link: "https://medium.com/@rrklaw/workaround-of-ai-facial-recognition-bans-and-t
 ---
 
 
-```markdown
+
 ![Workaround of AI Facial Recognition Bans and the Pitfalls of Defective AI Products in Law Enforcement](/assets/img/2024-05-20-WorkaroundofAIFacialRecognitionBansandthePitfallsofDefectiveAIProductsinLawEnforcement_0.png)
 
 지역 경찰이 얼굴 인식 기술 사용을 금지하는 오스틴과 샌프란시스코와 같은 도시들이 이를 시행함에 따라, 수사기관은 경찰 내 피해가 감지되는 기술의 더 큰 문제를 강조하는 회피 방법을 찾고 있습니다. 이 기사에서는 경찰이 이러한 금지 조치를 우회하기 위해 사용하는 방법, Clearview AI와 같은 기술에서 내재된 부정확성 및 COMPAS와 같은 알고리즘 도구의 불투명한 사용 등을 탐구합니다.
-```
+
 
 <div class="content-ad"></div>
 

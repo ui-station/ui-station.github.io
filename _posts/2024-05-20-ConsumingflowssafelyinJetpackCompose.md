@@ -11,7 +11,7 @@ link: "https://medium.com/androiddevelopers/consuming-flows-safely-in-jetpack-co
 ---
 
 
-```markdown
+
 ![](/assets/img/2024-05-20-ConsumingflowssafelyinJetpackCompose_0.png)
 
 Lifecycle-aware 방식으로 Flow를 수집하는 것이 Android에서 Flow를 수집하는 권장 방법입니다. Jetpack Compose로 안드로이드 앱을 개발 중이라면 UI에서 Lifecycle-aware 방식으로 Flow를 수집하기 위해 collectAsStateWithLifecycle API를 사용하십시오.
@@ -19,7 +19,7 @@ Lifecycle-aware 방식으로 Flow를 수집하는 것이 Android에서 Flow를 �
 collectAsStateWithLifecycle을 사용하면 앱이 백그라운드에 있을 때와 같이 필요하지 않은 경우 앱 리소스를 저장할 수 있습니다. 불필요한 리소스를 오랫동안 유지하면 사용자 기기의 성능에 영향을 줄 수 있습니다. 이러한 리소스에는 Firebase 쿼리, 위치 또는 네트워크 업데이트 및 데이터베이스 연결이 포함될 수 있습니다.
 
 이 API에 대해 더 알아보고, Lifecycle-aware 방식으로 수집해야 하는 이유 및 collectAsState API와 비교하는 방법을 계속 읽어보세요.
-```
+
 
 <div class="content-ad"></div>
 

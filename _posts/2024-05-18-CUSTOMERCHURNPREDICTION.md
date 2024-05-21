@@ -32,7 +32,7 @@ link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![데이터1](/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_3.png)
 
 - 추가로, ONE HOT ENCODING을 사용하여 범주형 값들을 변환하겠습니다. get_dummies() 및 (drop_first=True)를 사용하면 지리와 성별에서 다른 하나를 삭제할 수 있습니다(예: 프랑스 및 여성).
@@ -41,7 +41,7 @@ link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390
 
 - 모델을 훈련 및 테스트 데이터셋으로 분할합니다.
 - 이제 값들을 스케일링할 것입니다. 'balance'와 'estimated_salary'의 값이 매우 크기 때문에 발생하는 문제를 방지하기 위해 StandardScaler()를 사용합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -60,7 +60,7 @@ link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Customer Churn Prediction 7](/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_7.png)
 
 - 이제 배열 안에 가중치(weights)와 편향(biases)을 얻을 수 있습니다.
@@ -69,7 +69,7 @@ link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390
 
 - 이제 예측이 나오게 됩니다. 시그모이드 함수를 사용하기 때문에 출력은 (0-1)의 범위에 있을 것입니다, 확률입니다. 우리는 이 확률을 0 또는 1로 변환해야 합니다, 그러기 위해 임계값을 정해야 합니다 (예를 들면 0.5, 만약 확률이 0.5보다 작으면 고객이 은행을 떠나지 않고, 확률이 0.5보다 크면 그들은 은행을 떠날 것입니다.) 임계값은 일반적으로 도표를 통해 결정되지만, 여기서는 추측하고, 0.5로 설정되어 있습니다.
 - 그러면 모델의 정확도 점수를 찾을 준비가 됩니다.
-```
+
 
 <div class="content-ad"></div>
 

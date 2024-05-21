@@ -11,7 +11,7 @@ link: "https://medium.com/@timhanewich/taking-flight-with-the-raspberry-pi-pico-
 ---
 
 
-```markdown
+
 ![Quadcopter](/assets/img/2024-05-20-TakingFlightwiththeRaspberryPiPicoMicroPythonDIYQuadcopterDrone_0.png)
 
 라즈베리 파이 피코는 라즈베리 파이 재단에서 처음으로 직접 설계한 마이크로컨트롤러인 RP2040을 장착한 매우 다재다능한 플랫폼으로 매우 저렴한 비용으로 구매할 수 있습니다!
@@ -19,7 +19,7 @@ link: "https://medium.com/@timhanewich/taking-flight-with-the-raspberry-pi-pico-
 스마트 홈 시스템, LED 조명 제어, 공기 질 센서 등과 같은 것들을 제어하는 데 라즈베리 파이 피코로 할 수 있는 일의 한계는 우리의 상상력뿐인 것 같습니다!
 
 2023년 여름에 라즈베리 파이 피코를 "두뇌"로 사용하여 파이썬 기반의 사용자 정의된 비행 컨트롤러를 실행시키는 DIY 쿼드콥터 드론을 개발했습니다. 이 작업은 계산적으로 큰 도전이었지만, 많은 시행착오를 거치면서 RP2040에서 충분한 성능을 뽑아내어 안정적이고 기민한 비행을 가능하게 했습니다.
-```
+
 
 <div class="content-ad"></div>
 

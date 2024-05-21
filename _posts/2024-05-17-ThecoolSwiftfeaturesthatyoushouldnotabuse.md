@@ -11,7 +11,7 @@ link: "https://medium.com/@SaezChristopher/the-cool-swift-features-that-you-shou
 ---
 
 
-```markdown
+
 ![ThecoolSwiftfeaturesthatyoushouldnotabuse](/assets/img/2024-05-17-ThecoolSwiftfeaturesthatyoushouldnotabuse_0.png)
 
 iOS 개발자로서, 나는 많은 기존 코드에서 작업하거나 몇 가지 Swift 기능을 시도해 본 적이 있습니다. 그들을 사용하거나 악용 당하는 것을 보면서, 적어도 조심스럽게 사용해야 할 상위 6개의 Swift 언어 기능을 공유하고, 왜 그것들을 팀에서 금지해야 할지 생각했습니다. 간단히 살펴보겠습니다. 동의하지 않거나 다른 예제가 있는 경우 댓글에서 공유해주세요 💬.
@@ -19,7 +19,7 @@ iOS 개발자로서, 나는 많은 기존 코드에서 작업하거나 몇 가�
 # .init() 인스턴스화
 
 .init()을 사용하는 것은 처음 봤을 때 몇 가지 경우에 편리할 수 있지만 (클래스/구조체 이름 바꿀 때 노이즈가 적음), 코드 검토 및 유지보수 시 가독성이 저하됩니다. 코드 검토에서는 호출자로 이동하여 객체의 유형을 확인해야 하며, 유지보수 중에는 객체를 확인하려면 이동해야 합니다. 팀의 생산성을 높이기 위해 사용하지 않아야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -36,7 +36,7 @@ Swiftlint를 사용하신다면, 프로젝트에서 사용해야 하는 최상�
 # $0, $1, 등...
 
 $0는 매우 편리하지만 코드 리뷰에서는 코드를 덜 가독성 있게 만들 수 있어요(이 게시물이 말합니다). 
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ class CartViewModel {
 ```
 
 우리는 Buyable이 Buy 객체의 프로토콜일 수 있다는 환상을 갖고 있지만, 전혀 그렇지 않습니다. 이를 서로 다른 파일에 걸쳐 사용하면서 매우 지저분한데다가 혼란스럽습니다. 하지만... 작동합니다. (코틀린에서는 이렇게 하는 것이 불가능합니다).
-```
+
 
 <div class="content-ad"></div>
 

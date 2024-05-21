@@ -126,7 +126,7 @@ TileLayer(
 다음은 포르투갈 전체를 표시하는 두 개의 타일입니다:
 
 <img src="/assets/img/2024-05-17-GettingStartedwithFlutterMap_1.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -150,7 +150,7 @@ TileLayer(
 
 <div class="content-ad"></div>
 
-```md
+md
 ```dart
 https://stamen-tiles.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png
 ```
@@ -173,7 +173,7 @@ FlutterMap(
 ```
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*_PqsB8kI_Por68rMI0jUzA.gif" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -259,7 +259,7 @@ Polyline 클래스는 지도 상의 폴리라인을 정의하는 데 사용되�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![CircleLayer](https://miro.medium.com/v2/resize:fit:1400/1*sA7zHaI8crg5nLnLCz5xDg.gif)
 
 ## CircleLayer
@@ -280,7 +280,7 @@ CircleLayer(
 ```
 
 위의 예제는 한 개 이상의 원을 지도상에 표시하는 데 사용되는 CircleLayer 위젯을 생성합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -425,11 +425,11 @@ MarkerLayer(
 
 테이블 태그를 Markdown 형식으로 변경해보세요.
 
-```markdown
+
 | Header 1 | Header 2 |
 | -------- | -------- |
 | Cell 1   | Cell 2   |
-```
+
 
 <div class="content-ad"></div>
 

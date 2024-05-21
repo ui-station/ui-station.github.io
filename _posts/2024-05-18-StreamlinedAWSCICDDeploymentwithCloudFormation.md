@@ -92,13 +92,13 @@ CodeCommit 리포지토리로 변경 사항이 제대로 푸시되었는지 확�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Step 5: CodeBuild](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_5.png)
 
 As you can see our S3 bucket has been successfully created. Now, let’s dive into our AWS CodeBuild service
 
 ![Step 5: CodeBuild](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_6.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -162,15 +162,15 @@ artifacts:
 
 아래는 테이블 태그입니다.
 
-```markdown
+
 <img src="/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_11.png" />
-```
+
 
 나머지 구성은 기본값으로 남겨두고 "빌드 프로젝트 생성"을 클릭하세요. "빌드 프로젝트 생성"을 클릭하면 새 인터페이스로 리디렉션되어 프로젝트 빌드를 시작할 수 있습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_12.png)
 
 빌드 시작을 클릭하면 빌드 프로세스가 시작됩니다.
@@ -178,7 +178,7 @@ artifacts:
 ![이미지](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_13.png)
 
 빌드 소요 시간은 buildspec.yml 파일의 구성에 따라 다를 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -204,13 +204,13 @@ AWS CloudFormation 템플릿의 도움으로 인프라를 시작했습니다. �
 
 노트: 위 템플릿으로 리소스를 출시하는 경우에는 반드시 AMI ID, 역할 및 기타 매핑을 사용하도록 해주세요.
 
-```markdown
+
 ![Image 16](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_16.png)
 
 ![Image 17](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_17.png)
 
 ![Image 18](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_18.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -225,7 +225,6 @@ CodeDeploy를 시작하려면 먼저 2가지 역할을 생성해야 합니다.
 
 <div class="content-ad"></div>
 
-```yaml
 <img src="/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_19.png" />
 
 <img src="/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_20.png" />

@@ -11,7 +11,7 @@ link: "https://medium.com/proandroiddev/kelp-plugin-for-android-studio-437412793
 ---
 
 
-```markdown
+
 ![Kelp Plugin for Android Studio](/assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_0.png)
 
 안녕하세요! 안드로이드 개발자 여러분! 저희는 항상 업무 흐름을 최적화하고 생산성을 향상시킬 도구를 찾고 있어요. 그리고 여기에 Kelp이 등장합니다. 강력한 안드로이드 스튜디오 플러그인인 Kelp은 사용자 정의 디자인 시스템을 안드로이드 스튜디오에 원활하게 통합하여 UI 개발을 빠르고 쉽게 만들어주는 다양한 기능을 제공해요.
@@ -19,7 +19,7 @@ link: "https://medium.com/proandroiddev/kelp-plugin-for-android-studio-437412793
 ## 왜 Kelp을 사용해야 할까요? 🤔
 
 Kelp은 안드로이드 스튜디오 내에서 직관적이고 자동화된 지원을 통해 사용자 정의 디자인 시스템 사용 시 발생하는 일반적인 문제점을 해결해요. 아이콘, 색상 또는 구성 요소 함수를 다루더라도 Kelp은 가시성과 접근성을 향상시켜 주어요. 그렇게 함으로써 여러분은 뛰어난 앱을 만드는 데 집중할 수 있게 되어요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,7 +53,7 @@ Kelp는 코드 완성 드롭다운 및 거터에서 색상 미리보기를 통�
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_4.png" />
 
 ## 🖼️ KDoc Image Rendering
@@ -61,7 +61,7 @@ Kelp는 코드 완성 드롭다운 및 거터에서 색상 미리보기를 통�
 Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에도 불구하고 KDoc에서 이미지를 렌더링할 수 있는 능력입니다. 이 기능은 컴포넌트에 대한 내용을 인라인 이미지 참조를 허용하여 문서 작성을 향상시켜주어 더 나은 이해와 활용을 돕습니다.
 
 <img src="/assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_5.png" />
-```
+
 
 <div class="content-ad"></div>
 

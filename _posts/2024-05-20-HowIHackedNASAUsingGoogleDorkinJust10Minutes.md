@@ -31,38 +31,38 @@ Google Dorking을 이용해 NASA 정찰 임무를 시작했습니다. Google Dor
 
 <div class="content-ad"></div>
 
-```markdown
+
 intitle:"index of /" site:nasa.gov
-```
+
 
 이 쿼리는 NASA의 도메인에서 디렉토리 목록을 찾는 데 사용됩니다. 놀랍게도, 100개 이상의 디렉토리 목록을 발견했습니다. 탐험할 잠재적 취약성이 많이 남아 있네요!
 
 검색 범위 축소하기🧐
 
-너무 많은 디렉토리가 있어서 소음을 걸러내는 방법이 필요했어요. 특정 키워드에 집중하기로 결정했습니다. 먼저 데이터베이스를 찾아보는 것으로 시작해보았습니다:```
+너무 많은 디렉토리가 있어서 소음을 걸러내는 방법이 필요했어요. 특정 키워드에 집중하기로 결정했습니다. 먼저 데이터베이스를 찾아보는 것으로 시작해보았습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 지난 NASA의 숨겨진 데이터베이스를 발견하는 꿈은 실패했습니다 - 아무것도 나오지 않았죠. 다음으로, 어드민 페이지를 찾아보려고 시도해 보았습니다.
 
 intitle:"index of /" "admin" site:nasa.gov
 
 여전히 운이 없었어요. 이 시점에서 저는 우주가 저를 조소하고 있다고 생각하기 시작했습니다. 그런데 그때 갑자기 뇌피셜이 번졌어요: PII (개인 식별 정보). 방법을 바꿔서 연락처를 찾아보았습니다:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 intitle:"index of /" "contact" site:nasa.gov
-```
+
 
 ## 대박!🤯
 
 그곳에 있었지요 - nasa의 서브도메인에 contacts.asc라는 파일이 있었습니다. 제 마음은 두근두근하였고, 파일을 클릭하여 내 시스템으로 다운로드 받았습니다. 그 안에는 황금같은 민감한 정보가 포함된 120명 이상의 화성 패스파인더 미션 관련 직원들의 이름, 이메일, 전화번호, 팩스번호, 주소 등이 있었습니다.
 
 <img src="/assets/img/2024-05-20-HowIHackedNASAUsingGoogleDorkinJust10Minutes_0.png" />
-```
+
 
 <div class="content-ad"></div>
 

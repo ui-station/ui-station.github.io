@@ -267,7 +267,7 @@ cities_population
 그리고 제 두 번째 데이터프레임이 있습니다. 이 데이터프레임은 일부 동적입니다(데이터가 때때로 업데이트됩니다. 예: 연간 한 번):
 
 ![데이터 엔지니어링은 엔지니어를 위한 것](/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -359,7 +359,7 @@ weather_df     # 함수를 사용하여 새로운 데이터프레임 생성
 이것이 Python에서 새로운 날씨 데이터프레임이 보이는 방식입니다:
 
 <img src="/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_4.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -552,7 +552,7 @@ def insert_into_weather(connection_string):
 ### 1. Dependencies:
 
 We need to add the right dependencies to the `requirements.txt` file. This was one of the main initial reasons preventing our code from working properly. It is important to note that some libraries are already uploaded on GCP by default and should not be included in the `.txt` file, but still need to be added as a library in our source code, e.g.:
-```
+
 
 <div class="content-ad"></div>
 

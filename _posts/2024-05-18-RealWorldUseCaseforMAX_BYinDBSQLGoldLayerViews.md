@@ -32,7 +32,7 @@ Cody Austin Davis
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Customer Table Example 1](/assets/img/2024-05-18-RealWorldUseCaseforMAX_BYinDBSQLGoldLayerViews_1.png)
 
 Here is an example output of the customer table, assuming each record is from a separate data source:
@@ -40,7 +40,7 @@ Here is an example output of the customer table, assuming each record is from a 
 ![Customer Table Example 2](/assets/img/2024-05-18-RealWorldUseCaseforMAX_BYinDBSQLGoldLayerViews_2.png)
 
 Usually, this requires a sort of fuzzy matching Entity Resolution (blog coming soon on this topic) system for this type of use case, but for the sake of brevity, we will assume that we are already able to “stitch” these disparate records together to identify entities that are the same and link them with a master_customer_id. This can also apply to other scenarios where we just want to create a unified view for an event across entities as well (customers, orders, returns, etc). We will review 3 ways to create the “Unified View”.
-```
+
 
 <div class="content-ad"></div>
 

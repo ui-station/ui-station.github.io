@@ -54,7 +54,7 @@ RX550은 지루하지만 제대로 작동하는 것 같아요:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-AquickupdateonALTRAD8UD-1L2TmakingitworkwithGPU_0.png)
 
 # Intel Arc 750
@@ -62,11 +62,11 @@ RX550은 지루하지만 제대로 작동하는 것 같아요:
 이건 웃긴 게 한 가지 있어요. 그 이유는 인텔 i915 커널 드라이버가 비-x86 장치에서 동작하지 않기 때문이에요. 그들은 최근 GPU에 더 맞춰진 새로운 Xe 커널 드라이버를 업스트림으로 올리기 시작했어요. 하지만, Altra에서 그것을 사용하려고 하면, 기본적으로 다음과 같은 결과를 얻을거에요:
 
 조금 더 찾아보았더니, 초기화하고 이미지를 출력하는 지저분한 해킹을 발견했어요 (2D만 가능하며, 더 복잡한 메사 부분이 있을 수도 있어요):
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-AquickupdateonALTRAD8UD-1L2TmakingitworkwithGPU_1.png)
 
 어떤 부분을 효과적으로 주석 처리했나요? 설명에 따르면 intel_vga_reset_io_mem은 VGA Console이라는 모듈과 호환성을 보장하기 위한 함수인데, 해당 모듈이 사용하는 레지스터를 건드리지 않으면 락업이 발생한다고 합니다. 그 함수가 하는 일에 대해 자세히 설명하는 주석이 있습니다. 그러나 (오래된 플랫폼 중 하나를 제외하고는) ARM에서는 VGA Console이 작동하지 않습니다. 따라서 테스트를 위해 주석 처리해도 무방할 것입니다.
@@ -74,7 +74,7 @@ RX550은 지루하지만 제대로 작동하는 것 같아요:
 그렇게 하면, 어느 정도 시간이 지난 후 (특히 drm 디버그 로깅이 활성화된 상태에서는 드라이버가 초기화되기까지 일정 시간이 소요됩니다):
 
 ![이미지](/assets/img/2024-05-18-AquickupdateonALTRAD8UD-1L2TmakingitworkwithGPU_2.png)
-```  
+  
 
 <div class="content-ad"></div>
 

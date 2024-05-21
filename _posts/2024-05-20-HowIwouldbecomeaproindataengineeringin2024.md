@@ -97,9 +97,9 @@ Core Java, Hibernate, JDBC, Struts, Lambda 표현식 등을 아십니까?
 
 모든 것을 배워야 하는 것이 마지막 길이에요 😅, 즉 다음과 같은 길을 말해 봅니다:
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-HowIwouldbecomeaproindataengineeringin2024_5.png)
-```
+
 
 <div class="content-ad"></div>
 

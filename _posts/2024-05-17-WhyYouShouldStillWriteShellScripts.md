@@ -35,11 +35,11 @@ link: "https://medium.com/itnext/why-you-should-still-write-shell-scripts-0a24e9
 
 게다가: 엔트리포인트 스크립트를 POSIX 쉘(#!/bin/sh)로만 제한하는 방법을 배우면 컨테이너 이미지에서 Bash를 제거하고 그 크기와 공격 표면을 줄일 수 있습니다.
 
-```markdown
+
 # 공식 MariaDB 컨테이너는 623줄의 도커 엔트리포인트 쉘 스크립트를 사용합니다.
 $ podman exec -it mariadb wc -l /usr/local/bin/docker-entrypoint.sh
 623 /usr/local/bin/docker-entrypoint.sh
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,7 +53,7 @@ GUI를 버리지 않는 것을 추천하지 않아요. 오히려 그게 유용�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 $ cut -f 1 -d ' ' /var/log/nginx/access.log | sort | uniq -c | sort -hr | head -n 10
      38 65.108.66.11
@@ -73,7 +73,7 @@ $ cut -f 1 -d ' ' /var/log/nginx/access.log | sort | uniq -c | sort -hr | head -
 우리가 일상적으로 다루는 대부분의 데이터는 텍스트 형식입니다: 애플리케이션 데이터, 설정 파일, 로그 메시지 등등. 이러한 데이터나 로그 집계 플랫폼에서 이 데이터를 다루는 것은 데이터의 형식(또는 스키마)에 대해 신중한 고려를 요구합니다. 이는 장기적인 저장 및 검색을 위해 이상적인 선택입니다: 데이터 형식을 이해하는 것은 복잡한 데이터를 효율적으로 저장하고 쿼리하는 데 중요합니다.
 
 하지만 당신은 아마도 데이터를 탐색하는 데 편의를 제공하는 방식으로 빠르고 쉽게 데이터를 다루고 싶어하는 상황에 직면해 본 적이 있을 것입니다. 아직 다루고 있는 데이터의 구조나 형식에 대해 이해하고 있지 않을 수도 있습니다. 이를 이해하려는 과정에 있을 수도 있고, 특정 데이터의 일부를 빠르게 쿼리하거나 변환하고 싶을 수도 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

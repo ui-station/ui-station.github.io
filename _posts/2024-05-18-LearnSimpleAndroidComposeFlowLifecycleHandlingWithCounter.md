@@ -269,7 +269,7 @@ Text("${stateVariable.value}")
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지1](/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_13.png)
 
 ![이미지2](/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_14.png)
@@ -277,7 +277,7 @@ Text("${stateVariable.value}")
 ![이미지3](/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_15.png)
 
 # TL;DR
-```
+
 
 <div class="content-ad"></div>
 

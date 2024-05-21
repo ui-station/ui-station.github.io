@@ -51,7 +51,7 @@ link: "https://medium.com/@urish/how-to-turn-your-3d-printer-into-a-plotter-in-o
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![plotter](/assets/img/2024-05-20-HowtoTurnYour3DPrinterintoaPlotterinOneHour_2.png)
 
 다음으로 인쇄 높이를 올바르게 설정해야 합니다. 이를 위해 이 튜토리얼에서는 Repetier Host를 사용하는 것을 권장합니다. (처음에는 Cura를 사용했지만, Repetier Host가 모든 것을 훨씬 쉽게 만들어 주었기 때문에 이 튜토리얼에서는 계속 사용하겠습니다).
@@ -59,11 +59,11 @@ link: "https://medium.com/@urish/how-to-turn-your-3d-printer-into-a-plotter-in-o
 시작하기 전에 프린터의 베드가 수평이고 노즐과 프린터 베드 모두 식어있는지 확인하세요.
 
 프린터를 홈 위치로 이동한 다음 Repetier 내의 "Manual Control" 탭으로 이동하여 인쇄 헤드를 위로 이동시켜 펜 끝이 종이 위에 올라가게 합니다. 그런 다음 X / Y 축을 그림을 그리려는 위치의 가장자리로 이동시킵니다. 마지막으로 Z 축을 0.1mm 간격으로 내려가며 펜 끝이 종이에 닿을 때까지 이동합니다. 그럼 X/Y를 조금 이동시켜 펜이 실제로 종이에 흔적을 남기는지 확인하세요. 완료되면 상단 라인에 표시된 X/Y/Z 값을 메모해 두십시오:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-HowtoTurnYour3DPrinterintoaPlotterinOneHour_3.png)
 
 나의 경우에는 X에 47, Y에 40, Z에 14.6의 값을 넣었습니다. 이 값들은 곧 생성할 GCode 파일을 인쇄할 때 사용할 것입니다.
@@ -71,7 +71,7 @@ link: "https://medium.com/@urish/how-to-turn-your-3d-printer-into-a-plotter-in-o
 ## 단계 3— 무엇을 인쇄할지 선택하기
 
 이게 어려운 문제에요. 옵션이 너무 많죠. 그러나 이것을 벡터 형식으로 얻어야 해요. Google 이미지를 사용하면 검색 쿼리 끝에 type:svg를 추가해야 합니다. 또한 JPEG와 PNG 이미지를 SVG로 변환할 수 있지만, 일단 벡터로 제공되는 이미지부터 시작하는 것이 좋습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -85,7 +85,7 @@ Inkscape 안에서 새 파일을 만든 후, 파일 메뉴 -> 문서 속성(단�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![How to Turn Your 3D Printer into a Plotter - Step 4](/assets/img/2024-05-20-HowtoTurnYour3DPrinterintoaPlotterinOneHour_4.png)
 
 After setting the desired size, you can either import an SVG file of your choice or use the Text tool to draw text:
@@ -93,11 +93,11 @@ After setting the desired size, you can either import an SVG file of your choice
 ![How to Turn Your 3D Printer into a Plotter - Step 5](/assets/img/2024-05-20-HowtoTurnYour3DPrinterintoaPlotterinOneHour_5.png)
 
 Once you are finished, make sure your text is still selected, then go to Path menu → Object to Path (Shift+Ctrl+C). This action will transform the text into a sequence of points linked by lines, which is necessary for the printer input. You can include additional elements like spirals and star shapes, repeating the "Object to Path" step for each element:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-HowtoTurnYour3DPrinterintoaPlotterinOneHour_6.png)
 
 인쇄할 때, 객체가 채워지지 않으므로 채우기 색상을 제거하고 펜의 색상(또는 원하는 색상)을 검정색으로 설정하여 최종 결과물을 더 정확하게 확인할 수 있습니다. 모든 객체를 선택(Ctrl+A)한 후에 채우기 제거하고 선 색상을 검정색으로 설정하세요(Ctrl+Shift+F):
@@ -105,7 +105,7 @@ Once you are finished, make sure your text is still selected, then go to Path me
 ![이미지](/assets/img/2024-05-20-HowtoTurnYour3DPrinterintoaPlotterinOneHour_7.png)
 
 결과물에 만족하면 프린터용 G코드를 생성할 차례입니다! "Gcodetools"라는 확장 기능을 사용할 것인데, 이는 Inkscape에 번들로 제공됩니다 (그렇지 않은 경우, 더 오래된 버전을 사용 중이므로 업그레이드해야 합니다).
-```
+
 
 <div class="content-ad"></div>
 
@@ -119,7 +119,7 @@ Once you are finished, make sure your text is still selected, then go to Path me
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-HowtoTurnYour3DPrinterintoaPlotterinOneHour_9.png)
 
 다음으로, 우리는 도구를 생성하고 속도를 구성해야 합니다. 이 단계는 선택 사항이지만, 이를 수행하지 않으면 프린터가 정말 매우 느리게 그릴 것입니다. 확장 메뉴로 이동하여 → Gcodetools → 도구 라이브러리...를 선택하고 "도구 유형"에서 "기본"을 선택하십시오.
@@ -127,7 +127,7 @@ Once you are finished, make sure your text is still selected, then go to Path me
 ![이미지](/assets/img/2024-05-20-HowtoTurnYour3DPrinterintoaPlotterinOneHour_10.png)
 
 적용을 클릭한 다음 닫기를 클릭하면 그림에 많은 설정이 추가된 초록색 직사각형이 표시됩니다.
-```
+
 
 <div class="content-ad"></div>
 

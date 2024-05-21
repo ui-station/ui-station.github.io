@@ -31,7 +31,7 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-5DesignPatternsYouShouldKnowasaRubyonRailsDeveloper_1.png)
 
 ## 장점
@@ -39,7 +39,7 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 역할의 분리: 각 구성 요소가 명확한 책임을 갖고 있어 코드베이스가 더 정리되고 관리하기 쉬워집니다.
 
 테스트 용이성: 각 구성 요소를 격리시켜 개별적으로 테스트하기가 더 쉽습니다.
-```
+
 
 <div class="content-ad"></div>
 

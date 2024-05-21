@@ -241,7 +241,7 @@ bend run-cu sorter.bend # CUDA 해석기(대규모 병렬 실행) 사용
 
 <div class="content-ad"></div>
 
-```markdown
+
 Bend는 아직 초기 단계에 있지만 매우 유망해보입니다.
 
 다음 섹션의 자원들은 더 많이 배우고 개발에 참여하는 데 도움을 줄 것입니다. 한번 보세요!
@@ -249,7 +249,7 @@ Bend는 아직 초기 단계에 있지만 매우 유망해보입니다.
 즐거운 병렬 처리!
 
 # 더 많이 알아보기
-```
+
 
 <div class="content-ad"></div>
 

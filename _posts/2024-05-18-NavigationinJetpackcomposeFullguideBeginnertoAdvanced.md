@@ -138,7 +138,7 @@ class MainActivity : ComponentActivity() {
 ```
 
 ## 네비게이션 인자:
-```
+
 
 <div class="content-ad"></div>
 
@@ -249,7 +249,7 @@ class UserViewModel(
 }
 ```
 
-적합한 기능```
+적합한 기능
 
 <div class="content-ad"></div>
 
@@ -277,7 +277,7 @@ fun Profile(navController: NavController, userInfo: UserInfo){
 복잡한 데이터를 인수로 전달하는 것을 피해야 하는 이유 및 지원되는 인수 유형 목록에 대한 보다 자세한 설명은 Best practice를 참조하세요.
 
 ## 선택적 인수 추가하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -401,7 +401,7 @@ fun SecondScreen(navController: NavController) {
 ```
 
 비디오: 
-```
+
 
 <div class="content-ad"></div>
 
@@ -437,7 +437,7 @@ composable(
 ```
 
 다른 앱에 의해 트리거된 경우 딥 링크가 활성화될 때 해당 composable로 자동으로 이동합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -470,7 +470,7 @@ val deepLinkPendingIntent: PendingIntent? = TaskStackBuilder.create(context).run
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-NavigationinJetpackcomposeFullguideBeginnertoAdvanced_1.png)
 
 앱의 UI에서 특정 플로우를 모듈화하기 위해 대상을 중첩 그래프로 그룹화할 수 있습니다. 이러한 예로는 독립적인 로그인 플로우가 있을 수 있습니다.
@@ -478,7 +478,7 @@ val deepLinkPendingIntent: PendingIntent? = TaskStackBuilder.create(context).run
 중첩 그래프는 메인 그래프처럼 대상을 그룹화하며 해당 경로에 대한 지정된 시작 대상이 필요합니다. 이것은 중첩된 그래프의 경로에 액세스할 때 이동할 위치입니다.
 
 NavHost에 중첩된 그래프를 추가하려면 네비게이션 익스텐션 함수를 사용할 수 있습니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -580,7 +580,7 @@ inline fun <reified T : ViewModel> NavBackStackEntry.sharedViewModel(navControll
 조합 가능한 구조의 위쪽 수준에서 NavController를 정의함으로써, 네비게이션을 하단 탐색 막대와 같은 다른 구성 요소와 연결할 수 있습니다. 이를 통해 하단 막대에서 아이콘을 선택하여 탐색할 수 있습니다.
 
 BottomNavigation 및 BottomNavigationItem 구성 요소를 사용하려면 Android 애플리케이션에 androidx.compose.material 종속성을 추가하십시오.
-```
+
 
 <div class="content-ad"></div>
 
@@ -644,7 +644,7 @@ Scaffold(
     }
 }
 ```  
-```
+
 
 <div class="content-ad"></div>
 

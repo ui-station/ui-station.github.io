@@ -11,7 +11,7 @@ link: "https://medium.com/asecuritysite-when-bob-met-alice/the-social-engineerin
 ---
 
 
-```markdown
+
 ![Image1](/assets/img/2024-05-20-TheSocialEngineeringofXZ_0.png)
 
 It sounds like one of those Hollywood scripts where an evil genius hacks into a core part of the Internet and inserts a backdoor. They can then listen to everyone’s secret communications without being detected. But, it’s not science fiction, as someone — “Jia Tan” — actually created a backdoor in SSH, and nearly got away with it. So, let’s investigate the most critical vulnerability since Heartbleed: the XZ backdoor.
@@ -19,7 +19,7 @@ It sounds like one of those Hollywood scripts where an evil genius hacks into a 
 The XZ vulnerability is a serious flaw that has been rated with a CVSS value of 10. This is the maximum level possible and requires that related systems should be urgently patched. Overall, the related backdoor in the XZ library seems to have been planted by Jia Tan (which with the nickname of JiaT75), and they managed to gain admin rights to the XZ GitHub by showcasing his/her talents:
 
 ![Image2](/assets/img/2024-05-20-TheSocialEngineeringofXZ_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -76,7 +76,7 @@ xz에 대한 관련 GitHub 리포지토리 중 많은 리포지토리가 비활�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-TheSocialEngineeringofXZ_5.png)
 
 취약점의 심각성을 강조할 수 없을 만큼, Anthony Weems가 백도어를 역공학하여 RCE (원격 코드 실행)를 위한 프루프 오브 컨셉 익스플로잇을 생성했습니다. [여기]에서 확인할 수 있습니다.
@@ -84,7 +84,7 @@ xz에 대한 관련 GitHub 리포지토리 중 많은 리포지토리가 비활�
 ![이미지](/assets/img/2024-05-20-TheSocialEngineeringofXZ_6.png)
 
 관련 GitHub은 여기에서 확인하실 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

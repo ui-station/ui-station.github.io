@@ -62,7 +62,7 @@ BigQuery은 서버리스, 멀티 클라우드 데이터 웨어하우스로, 바�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```js
 gcloud services enable cloudaicompanion.googleapis.com –project PROJECT_ID
 ```
@@ -72,7 +72,7 @@ gcloud services enable cloudaicompanion.googleapis.com –project PROJECT_ID
 BigQuery, BigQuery Connection, Vertex AI, Cloud Storage APIs
 
 gcloud 명령어 대신 이 링크를 사용하여 콘솔을 통해 진행할 수도 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -197,7 +197,7 @@ Gen 2 클라우드 함수를 Java로 생성하여 외부 테이블에 저장된 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-18-In-PlaceLLMInsightsBigQueryGeminiforStructuredUnstructuredDataAnalytics_9.png)
 
 5. Select the "Java: Hello World" option from the next pop-up:
@@ -205,7 +205,7 @@ Gen 2 클라우드 함수를 Java로 생성하여 외부 테이블에 저장된 
 ![image2](/assets/img/2024-05-18-In-PlaceLLMInsightsBigQueryGeminiforStructuredUnstructuredDataAnalytics_10.png)
 
 6. Provide a name for the project in the project path. In this case, it is "Gemini-BQ-Function".
-```
+
 
 <div class="content-ad"></div>
 
@@ -448,7 +448,6 @@ where uri like '%TEST1%';
 
 <img src="/assets/img/2024-05-18-In-PlaceLLMInsightsBigQueryGeminiforStructuredUnstructuredDataAnalytics_13.png" />
 
-참고를 위한 이미지를 여기에 제공합니다:```
 
 <div class="content-ad"></div>
 

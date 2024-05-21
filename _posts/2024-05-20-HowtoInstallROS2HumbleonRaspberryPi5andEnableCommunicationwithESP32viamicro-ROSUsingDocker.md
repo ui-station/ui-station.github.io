@@ -39,7 +39,7 @@ SSH를 통해 Raspberry Pi 5에 액세스한 후 Docker를 설치했습니다. R
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 sudo apt-get update
 
@@ -75,7 +75,7 @@ ENV ROS_PYTHON_VERSION=3
 ENV TZ=Europe/Rome
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -85,7 +85,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 Markdown 형식으로 표를 바꿔주겠습니다:
 
-```markdown
+
 | 명령어                                     | 설명                                                                           |
 |-------------------------------------------|--------------------------------------------------------------------------------|
 | RUN apt install software-properties-common -y | 소프트웨어 속성 공통 부분 설치                                             |
@@ -94,13 +94,13 @@ Markdown 형식으로 표를 바꿔주겠습니다:
 | RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg | ROS 키 다운로드 |
 | RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null | ROS2 리스트 추가 |
 | RUN apt update && apt upgrade -y              | 업데이트 및 업그레이드                                                               |
-```
+
 
 이 부분의 도커 파일에서는 ROS2 설치를 위해 시스템을 구성하며, 필요한 저장소를 추가하고 시스템 패키지를 업데이트합니다(설치에 관한 공식 가이드는 여기에서 확인할 수 있습니다: https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html).
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_1.png" />
 
 시스템을 구성한 후에는 ROS2 Humble 및 micro-ROS를 설치할 준비가 되었습니다. 두 개의 스크립트를 사용했어요: install_ros2.sh와 install_microros_esp32.sh입니다. 이 스크립트들은 작업 디렉토리인 /ros2_project에 복사되고 실행 가능하게 만들었습니다.
@@ -115,7 +115,7 @@ RUN ./install_microros_esp32.sh
 ```
 
 ## ROS2 Humble 설치
-```
+
 
 <div class="content-ad"></div>
 
@@ -232,7 +232,7 @@ RUN ./install_microros_esp32.sh
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_3.png)
 
 ## ROS2 Humble 도커 컨테이너 실행하기
@@ -240,7 +240,7 @@ RUN ./install_microros_esp32.sh
 이미지를 만든 후에는 해당 이미지를 사용하여 컨테이너를 실행할 수 있습니다. 컨테이너는 가벼우며 응용 프로그램과 의존성을 실행하는 격리된 환경으로, 가상 머신과 유사하지만 오버헤드가 적습니다.
 
 컨테이너를 실행하려면:
-```
+
 
 <div class="content-ad"></div>
 
@@ -265,7 +265,7 @@ docker run -it \
 - bash: 컨테이너 내에서 실행할 명령을 지정함. 이 경우에는 Bash 셸을 시작함.
 
 이 명령을 실행하면 컨테이너 내의 작업 디렉토리에서 Bash 셸 프롬프트가 열리며, 컨테이너 환경과 직접 상호 작용할 수 있게 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -276,21 +276,21 @@ docker run -it \
 기능을 확인하려면 복제된 micro-ROS 저장소에 포함된 예제 중 하나를 빌드할 수 있습니다. 다음은 따라야 할 단계입니다:
 
 - 다음 명령어로 예제 폴더로 이동하세요:
-```
+
 cd micro_ros_espidf_component/examples/int32_publisher
-```
+
 - ESP-IDF를 위해 소프트웨어 개발 환경을 활성화하세요:
-```
+
 . $IDF_PATH/export.sh
-```
+
 - 빌드할 타겟을 설정하세요 (이 경우 ESP32): 
-```
+
 idf.py set-target esp32
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_5.png)
 
 - 와이파이 연결 및 IP 호스트 대상 설정 (Raspberry Pi5 IP):
@@ -300,11 +300,11 @@ runidf.py menuconfig을 실행한 후 micro-ROS 설정으로 이동하여 micro-
 ![이미지](/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_6.png)
 
 ![이미지](/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_7.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_8.png)
 
 - 명령어를 사용하여 예제를 빌드하세요: idf.py build
@@ -315,11 +315,11 @@ runidf.py menuconfig을 실행한 후 micro-ROS 설정으로 이동하여 micro-
 연결하는 USB 포트에 할당된 장치 이름을 확인하려면 해당 포트에 연결하기 전에 다음 명령어를 실행하세요: journalctl --follow (라즈베리 파이5 셸에서 실행, 컨테이너에서는 실행하지 마세요).
 장치 이름을 알면 다음 명령어를 사용하여 라즈베리 파이5가 읽고 쓸 수 있게 설정할 수 있습니다: 내 경우에는 `device name`이 ttyUSB0과 같습니다.
 sudo chmod 666 /dev/`device name`
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_10.png)
 
 - 마지막으로 ESP32 보드에 펌웨어를 플래시하는 방법입니다: idf.py flash
@@ -328,21 +328,21 @@ sudo chmod 666 /dev/`device name`
 ## 마이크로-ROS 에이전트를 생성하고 ESP32에서 발행된 메시지를 읽어보세요
 
 마이크로-ROS 에이전트는 ESP32의 마이크로-ROS 노드와 ROS 2 네트워크 간의 다리 역할을 합니다. 통신을 수립하려면 적절한 이미지를 사용하여 Docker를 통해 마이크로-ROS 에이전트를 실행하세요:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 # udp4은 IPv4 네트워크 상에서 통신을 위해 UDP를 사용하는 것을 특히 나타냅니다.
 도커 실행 -it --rm --net=host microros/micro-ros-agent:humble udp4 --port 8888 -v6
-```
+
 
 ![이미지](/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_11.png)
 
 ESP32 보드를 전원을 다시 켜고 끈 후에는, micro-ROS Agent 컨테이너 쉘에서 다음 출력을 볼 수 있어야 합니다:
 
 ![이미지](/assets/img/2024-05-20-HowtoInstallROS2HumbleonRaspberryPi5andEnableCommunicationwithESP32viamicro-ROSUsingDocker_12.png)
-```
+
 
 <div class="content-ad"></div>
 

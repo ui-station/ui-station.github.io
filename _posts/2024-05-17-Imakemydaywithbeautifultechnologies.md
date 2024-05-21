@@ -51,7 +51,7 @@ link: "https://medium.com/@nikitadevatale06/make-beautiful-day-with-technology-c
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Grace Hopper](/assets/img/2024-05-17-Imakemydaywithbeautifultejsonlogies_3.png)
 
 Grace Hopper, 컴퓨터 프로그래밍의 선구자로서 데이터가 얼마나 접근하기 쉽고 매력적인지 좋아하셨을 것입니다.
@@ -59,7 +59,7 @@ Grace Hopper, 컴퓨터 프로그래밍의 선구자로서 데이터가 얼마�
 하루가 저물면, 가상 현실 전시회를 방문합니다.
 
 고대 로마로 옮겨져 폐허 사이를 걸으며 역사가 살아나는 것을 보게 됩니다.
-```
+
 
 <div class="content-ad"></div>
 

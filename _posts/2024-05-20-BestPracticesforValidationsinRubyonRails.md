@@ -11,7 +11,7 @@ link: "https://medium.com/@patrickkarsh/best-practices-for-validations-in-ruby-o
 ---
 
 
-```markdown
+
 ![Validation](/assets/img/2024-05-20-BestPracticesforValidationsinRubyonRails_0.png)
 
 유효성 검사는 웹 응용 프로그램 개발의 중요한 측면으로, 사용자가 입력한 데이터가 처리되거나 저장되기 전에 특정 기준을 충족시키도록 하는 것을 보장합니다. 루비 온 레일즈(Ruby on Rails)에서는 ActiveRecord의 강력한 내장 유효성 검사 메서드 덕분에 유효성 검사를 구현하기가 간단합니다. 이 기사에서는 레일즈 애플리케이션에서 유효성 검사를 구현하는 최선의 방법에 대해 안내해 드리겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@patrickkarsh/best-practices-for-validations-in-ruby-o
 # 유효성 검사의 중요성
 
 유효성 검사는 응용 프로그램의 데이터 무결성과 일관성을 보장합니다. 데이터베이스에 잘못된 데이터가 저장되는 것을 방지하여 응용 프로그램 오류, 보안 취약점 및 기타 문제가 발생하는 것을 방지합니다. 모델 수준에서 데이터를 유효성 검사함으로써 데이터 무결성 논리를 집중시킴으로써, 응용 프로그램을 유지 보수 가능하고 안전하게 만듭니다.
-```
+
 
 <div class="content-ad"></div>
 

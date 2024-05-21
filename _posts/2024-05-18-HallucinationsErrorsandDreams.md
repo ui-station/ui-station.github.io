@@ -117,11 +117,11 @@ ChatGPT에 "2 + 2는 무엇입니까?"라는 문자열을 입력하면, 다음�
 
 일본어에서 한국어 번역 서비스를 사용하려면 URL에 다음과 같은 형식을 지정하십시오:
 
-```markdown
+
 ![HallucinationsErrorsandDreams_5.png](https://yourwebsite.com/assets/img/2024-05-18-HallucinationsErrorsandDreams_5.png)
 
 ![HallucinationsErrorsandDreams_6.png](https://yourwebsite.com/assets/img/2024-05-18-HallucinationsErrorsandDreams_6.png)
-```
+
 
 <div class="content-ad"></div>
 

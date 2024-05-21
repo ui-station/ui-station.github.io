@@ -156,7 +156,7 @@ Amazon의 SSE 인 Fabien HinsenKamp이 개설한 이 강의는 구성 수준 시
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Course Image](/assets/img/2024-05-20-Top6SystemDesignInterviewCoursesfromUdemytojoinin2024_6.png)
 
 ## 6. Low Level System Design [An interview perspective]
@@ -164,7 +164,7 @@ Amazon의 SSE 인 Fabien HinsenKamp이 개설한 이 강의는 구성 수준 시
 이 리스트의 대부분의 강의가 고수준 시스템 설계를 다루는 반면, 낮은 수준 시스템 설계에서 하나의 강의를 포함하여 조화를 이루고 기술 면접에서 또한 중요하기 때문에 낮은 수준 시스템 설계 강의도 포함하고 싶었습니다.
 
 Abhishek Ghosh가 만든 이 강의는 확장성을 염두에 두고 코딩하는 방법을 가르쳐줄 것입니다. 불필요한 정보를 문제 정의에서 걸러내고 추적을 식별하며 클래스 다이어그램을 만드는 방법을 배울 수 있을 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

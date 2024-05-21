@@ -46,7 +46,7 @@ command_includes (\\127.0.0.1\ADMIN)
 하지만, 이 방법론에는 결함이 있습니다...
 
 그래서 이러한 이유로 누구나 한번씩은 매직한 "머신 러닝"을 통해 보안 문제를 해결해 주는 솔루션에 자본, 인력, 시간 등의 자원을 투자하는 것입니다. 보통 이것은 투자 대비 수익이 낮은 토끼굴로 보입니다: (1) 보안 분석가들의 대시보드가 크리스마스 트리처럼 빛나게 되고, 상기 그림 1을 고려하세요; (2) 분석가들이 경보 피로를 느끼게 됩니다; (3) 머신 러닝 휴리스틱이 비활성화되거나 무시됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -60,7 +60,7 @@ command_includes (\\127.0.0.1\ADMIN)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Architecture of AI-Driven Security Operations with a Low False Positive Rate](/assets/img/2024-05-20-ArchitectureofAI-DrivenSecurityOperationswithaLowFalsePositiveRate_1.png)
 
 보안 휴리스틱에 대해 이야기할 수 있습니다. 특정 도구나 CVE에 중점을 둔 규칙들과 더 넓은 기법 집합을 감지하려는 규칙들이 있습니다. 예를 들어, CVE-2019–14287을 악용한 sudo 권한 상승에만 집중한 이 감지 로직을 살펴봅시다.
@@ -70,11 +70,11 @@ CommandLine|contains: ' -u#'
 ```
 
 반면에, 웹쉘 감지 규칙(가려진 형태로 복제됨)은 상당히 넓은 논리를 구현하려고 시도합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ParentImage|endswith:
  - '/httpd'
  - '/nginx'
@@ -86,12 +86,12 @@ Image|endswith:
  - '/whoami'
  - '/ifconfig'
  - '/netstat'
-```
+
 
 보안 위협을 시각화하기 위해 감지 규칙을 공격적 기법, 도구 및 절차(TTP)의 랜드스케이프에 매핑하는 더 세밀한 행위 휴리스틱을 정의합니다. 위에 있는 인텔리전스 랜드스케이프와 유사하게, 다음과 같이 선언 규칙을 공격적 기법, 도구 및 절차(TTPs)의 랜드스케이프에 매핑하여 보안 포지션을 시각화할 수 있습니다:
 
 <img src="/assets/img/2024-05-20-ArchitectureofAI-DrivenSecurityOperationswithaLowFalsePositiveRate_2.png" />
-```
+
 
 <div class="content-ad"></div>
 

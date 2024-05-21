@@ -144,7 +144,7 @@ def create_needle_prompt(needle_text: str) -> str:
 - gemini-1.5-pro-preview-0514
 - gemini-1.5-flash-preview-0514
 - gemini-1.0-pro-002
-```
+
 
 <div class="content-ad"></div>
 

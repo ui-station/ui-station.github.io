@@ -62,7 +62,7 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_1.png)
 
 통합을 위해 git 폴더를 추가하는 것을 추천하지 않습니다. Fabric는 분석을 위해 통합된 프로젝트로 표현되어야 합니다. 이는 응용 프로그램 소스 코드, 데이터베이스 스크립트 등을 저장소에 추가할 계획인 경우 복잡해지기 때문입니다. 이는 지원되지만, 개발자들이 Azure DevOps와 Fabric git 간에 컨텍스트 전환이 필요할 때 혼란스러울 수 있습니다.
@@ -70,7 +70,7 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 즉, 모든 이러한 파일들:
 
 ![image2](/assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_2.png)
-```  
+  
 
 <div class="content-ad"></div>
 

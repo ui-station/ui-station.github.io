@@ -98,7 +98,7 @@ NLP의 발전을 되짚어보면 초기 단계는 단어 임베딩, 어근 추�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![NodePieceFromNodeIDstoTokens](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_1.png)
 
 어휘 크기(V) 및 임베딩 크기(E)였습니다. 어휘 크기가 100,000이고 임베딩 크기가 300인 경우, 리소스에 상당한 수요를 일으키는 30 백만개의 부동 소수점을 할당해야 합니다.
@@ -106,7 +106,7 @@ NLP의 발전을 되짚어보면 초기 단계는 단어 임베딩, 어근 추�
 ## 트랜스포머 토크나이저의 등장
 
 트랜스포머 및 그와 관련된 토큰화 방법의 도입이 이 분야를 혁신적으로 변화시켰습니다. Byte-Pair Encoding (BPE) (Sennrich et al., 2016)과 같은 기술은 부분 단어 또는 알파벳과 같은 건설 블록에 유사한 개념을 도입하여 토큰화 프로세스를 혁신적으로 개선했습니다. 이러한 부분 단어 또는 토큰은 전체 단어보다 더 간결하면서도 보다 보편적이며, 다양한 언어에 적용될 수 있고 새로운 어휘를 순차적으로 도입할 수 있도록 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -204,7 +204,7 @@ NodePiece 알고리즘은 지식 그래프 내 개체마다 고유 식별자를 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![NodePieceFromNodeIDstoTokens_5](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_5.png)
 
 Or with counting each relation type:
@@ -212,7 +212,7 @@ Or with counting each relation type:
 ![NodePieceFromNodeIDstoTokens_6](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_6.png)
 
 Probably you see now, where it is going…
-```
+
 
 <div class="content-ad"></div>
 
@@ -294,7 +294,7 @@ NodePiece는 다음과 같이 설계되었음을 알 수 있습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Node representation matrix](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_12.png)
 
 After that, authors sum vectors related to anchors, so that the matrix node representation is as follows:
@@ -302,7 +302,7 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 ![Node representation matrix](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_13.png)
 
 ## Encoding
-```
+
 
 <div class="content-ad"></div>
 
@@ -334,7 +334,7 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 <div class="content-ad"></div>
 
-```
+
 ```md
 ![이미지](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_17.png)
 
@@ -460,7 +460,7 @@ def degree_anchor_select(g: nx.Graph, n_anchors: int|float = 0.1) -> Tuple[List[
 1. 입력 매개변수: 함수는 NetworkX 그래프 `g`와 `n_anchors` 매개변수를 받습니다. `n_anchors` 매개변수는 선택할 앵커의 수를 지정하며, 이 값은 그래프의 노드 중 일정 비율(기본값은 0.1 또는 10%)을 앵커로 지정할 경우에 float로 지정하거나 원하는 앵커 수를 정수로 지정할 수 있습니다.
 
 2. 차수 계산 및 정렬: 함수는 그래프 내 각 노드의 차수를 계산합니다. 그런 다음, 노드들을 차수에 따라 내림차순으로 정렬하여 앵커로 선택할 때 높은 차수의 노드를 우선하여 고려합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -619,17 +619,17 @@ TransE는 헤드 노드, 관계 및 테일 노드로 구성된 트리플릿을 �
 
 마크다운 형식으로 표를 변경하겠습니다:
 
-```markdown
+
 ![이미지 1](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_20.png)
 
 ![이미지 2](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_21.png)
-```
+
 
 의사 코드로 작성하면 다음과 같습니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 for (head, relation, tail) in data:
     head_embed = EMBED(head)
@@ -644,7 +644,7 @@ We return -1 x score as we want to minimize the score, and maximize the likeliho
 When interacting with NodePiece embeddings, TransE gets interesting when it comes to embedding head and tail nodes.
 
 TransE embedding in this case will perform several steps. For each head or tail node:
-```
+
 
 <div class="content-ad"></div>
 
@@ -704,7 +704,7 @@ TransE embedding in this case will perform several steps. For each head or tail 
 
 <div class="content-ad"></div>
 
-```markdown
+
 use_swa = True
 swa_lr = 0.05
 
@@ -728,11 +728,11 @@ model_pl = models.NodePiecePL(
     lr=5e-2,
     train_features=train_features, 
     val_features=val_features)
-```
+
 
 저희가 인스턴스화한 모델은 다음과 같습니다:
 
-```markdown
+
 NodePieceTransE(
   (anchor_embed): Embedding(31, 200)
   (anchor_distances_embed): Embedding(13, 200)
@@ -746,7 +746,7 @@ NodePieceTransE(
     (4): Linear(in_features=400, out_features=200, bias=True)
   )
 )
-```
+
 
 이전에 설명한 이론 부분과 완벽하게 일치합니다.```
 

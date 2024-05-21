@@ -135,7 +135,7 @@ IaC를 재구성하고 보다 일관성 있게 만들기로 결정했기 때문�
 
 최종적으로, 디렉토리 구조는 다음과 같이 보이게 되었습니다:
 
-```markdown
+
 modules/
 ├── README.md
 └── organization
@@ -167,7 +167,7 @@ modules/
                 ├── s3.tf
                 ├── s3_policy.json
                 └── variables.tf
-```
+
 
 <div class="content-ad"></div>
 

@@ -36,7 +36,7 @@ dig mail.example.com
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![MasteringSubdomainTakeovers](/assets/img/2024-05-18-MasteringSubdomainTakeovers_0.png)
 
 **단계 3:** 이제 이 GitHub 저장소를 확인하세요. 거기에 있는 테이블에는 취약한 cname 목록이 표시되어 있습니다. 확인할 수 있습니다. cname이 취약한지 확인할 수 있습니다.

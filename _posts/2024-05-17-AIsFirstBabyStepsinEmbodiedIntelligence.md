@@ -51,7 +51,7 @@ Figure AI의 로봇의 기본 메커니즘에 대해서는 많이 알지 못하�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-17-AIsFirstBabyStepsinEmbodiedIntelligence_0.png)
 
 그러나 RT-2는 GPT-4의 능력에 가까운 두 LLM인 PALM-E와 PALI-X를 사용하여 훈련된 것을 고려할 때, Figure AI의 로봇 뒤에 있는 LLM이 이 모델이 지금까지 존재한 가장 고급 비전-언어-행동 모델일 수 있다는 주장이 가능합니다.
@@ -59,7 +59,7 @@ Figure AI의 로봇의 기본 메커니즘에 대해서는 많이 알지 못하�
 하지만 현실적으로 생각해 봅시다.
 
 그것은 여러 차례 연습된 것일 수 있는 매우 제한된 데모였습니다. 사실, 로봇이 일반적인 용도의 능력 측면에서 아직 매우 초기 단계에 있다는 것은 거의 확실합니다.
-```
+
 
 <div class="content-ad"></div>
 

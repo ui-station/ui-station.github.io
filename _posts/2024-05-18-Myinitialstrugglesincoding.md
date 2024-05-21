@@ -21,7 +21,7 @@ link: "https://medium.com/@samsunjoshua/my-initial-struggles-in-coding-8da8995c6
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-Myinitialstrugglesincoding_1.png)
 
 첫 해는 정말 힘들었어요. 솔직히 코딩에 대해 너무 무서웠고 코딩 악몽까지 꾸었어요. 코드를 이해하지 못한 채로 복사하고 붙여넣기만 했어요. 콘솔에서 나오는 에러를 제외하고는 어떠한 에러도 이해하지 못했어요. 'return'문과 'break'문의 차이를 몰랐어요. 둘 다 코드 실행을 멈출 것이라고 생각했죠. 도대체 어디에 사용하든 상관 없다고 생각했어요. 내 동료와 멘토들에게는 거슬러웠을 뿐이었죠. 오늘 나는 면접에서 이상적인 후보로 거부했을 거에요.
@@ -29,7 +29,7 @@ link: "https://medium.com/@samsunjoshua/my-initial-struggles-in-coding-8da8995c6
 투철한 노력 뒤에 숨어있는 장벽
 
 ![이미지](/assets/img/2024-05-18-Myinitialstrugglesincoding_2.png)
-```
+
 
 <div class="content-ad"></div>
 

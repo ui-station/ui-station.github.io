@@ -253,7 +253,7 @@ void MeasurementUpdate(Omega, Xi, G) {
 이러한 단계는 측정에 의해 부과된 제약 조건이 Omega 및 Xi 행렬에 올바르게 표현되도록 보장합니다. 모든 엣지를 반복한 후 함수는 업데이트된 Omega 및 Xi 행렬을 반환합니다.
 
 ## State Update
-```  
+  
 
 <div class="content-ad"></div>
 

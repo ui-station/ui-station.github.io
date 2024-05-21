@@ -13,15 +13,15 @@ link: "https://medium.com/@srmousavi25/how-to-fix-a-common-mistake-in-lstm-time-
 
 LSTM을 시계열 예측에 사용할 때, 사람들은 흔히 범할 수 있는 함정에 빠지곤 합니다. 이를 설명하기 위해서는 회귀자와 예측자의 작동 방식을 살펴볼 필요가 있습니다. 예측 알고리즘은 시계열 데이터를 다루는 방법을 아래와 같이 보여줍니다:
 
-```markdown
+
 ![How a forecasting algorithm works](/assets/img/2024-05-18-HowtofixacommonmistakeinLSTMtimeseriesforecasting_0.png)
-```
+
 
 한편, 회귀 문제는 다음과 같이 보일 것입니다:
 
-```markdown
+
 ![How a regression problem looks](/assets/img/2024-05-18-HowtofixacommonmistakeinLSTMtimeseriesforecasting_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +96,7 @@ plt.show()
 ```
 
 <img src="/assets/img/2024-05-18-HowtofixacommonmistakeinLSTMtimeseriesforecasting_3.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -126,7 +126,7 @@ for i in range(len(X_test)):
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-18-HowtofixacommonmistakeinLSTMtimeseriesforecasting_6.png" />
 
 다중 단계 방법은 창 방법과 유사하지만 더 많은 대상 단계를 갖습니다. 다음은 두 개의 전방 단계의 샘플입니다:
@@ -134,7 +134,7 @@ for i in range(len(X_test)):
 <img src="/assets/img/2024-05-18-HowtofixacommonmistakeinLSTMtimeseriesforecasting_7.png" />
 
 사실, 이 방법에서 사용자는 n_steps_in과 n_steps_out을 선택해야 합니다. 다음 코드는 단순 시계열을 다중 단계 LSTM 훈련을 위해 준비된 데이터 세트로 변환합니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -244,7 +244,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-HowtofixacommonmistakeinLSTMtimeseriesforecasting_8.png)
 
 해상도: 창 법과 비슷한 방법을 사용할 수 있습니다. 그러나 n_steps_out을 test_size와 동일하게 선택할 수도 있습니다. 이렇게 하면 테스트 세트가 하나로 축소됩니다:
@@ -252,7 +252,7 @@ plt.show()
 ![이미지](/assets/img/2024-05-18-HowtofixacommonmistakeinLSTMtimeseriesforecasting_9.png)
 
 다음 함수는 이를 정확히 수행합니다. 이 함수는 시계열, 학습 크기 및 샘플 수를 사용합니다. 이 버전은 다른 예측 알고리즘과 비교할 수 있기 때문에 comparable로 이름 지었습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -323,7 +323,7 @@ plt.show()
 ```
 
 <img src="/assets/img/2024-05-18-HowtofixacommonmistakeinLSTMtimeseriesforecasting_10.png" />
-```
+
 
 <div class="content-ad"></div>
 

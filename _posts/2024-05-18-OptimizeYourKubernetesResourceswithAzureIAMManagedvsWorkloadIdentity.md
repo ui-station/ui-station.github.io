@@ -113,7 +113,7 @@ az aks create -g myResourceGroup -n myManagedCluster --enable-oidc-issuer --enab
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*cZynTTP_7qDHrix67vOYyQ.gif)
 
 Figure 2와는 반대로, 여기서는 가상 머신 규모 집합(VMSS)의 kubelet ID 대신 AKS 클러스터가 발행자 역할 (--enable-oidc-issuer)로 작동하여 해당 워크로드에 대한 토큰을 생성합니다. 이는 관리 신원이 생성되고, 그런 다음 하나 이상의 Azure 리소스에 액세스 할 수 있도록 권한이 부여됩니다. 이 권한은 자격 증명의 연맹을 통해 ServiceAccount에 매핑되며, 이 예에서 우리는 AKS 클러스터를 발행자로 사용하여 액세스 토큰을 발급합니다.
@@ -121,7 +121,7 @@ Figure 2와는 반대로, 여기서는 가상 머신 규모 집합(VMSS)의 kube
 하지만 내부 작동 원리는 무엇인가요?
 
 기본 보안 모델에서 AKS 클러스터는 토큰의 발급자 역할로 작동합니다. OpenID Connect를 사용하여, OAuth 2.0 위에 구축된 프로토콜을 통해 Microsoft Entra ID는 서비스 계정 토큰의 진위를 확인하는 데 필수적인 공개 서명 키를 발견합니다. 이 확인 프로세스는 Microsoft Entra 토큰으로 교환되기 전에 토큰의 정당성을 확인하는 데 중요합니다. 서비스 계정 토큰을 Microsoft Entra 토큰으로 교환하는 과정은 Azure Identity 클라이언트 라이브러리나 Microsoft Authentication Library를 통해 가능하며, 이를 통해 워크로드는 권한을 담언하는 토큰을 활용하여 Azure 리소스에 안전하게 액세스할 수 있습니다. 이 시스템은 Microsoft Entra ID에 의해 확인된 토큰만이 리소스에 액세스하는 데 사용될 수 있도록 하여 최소 권한의 원칙을 유지함으로써 보안성을 강화합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -133,7 +133,7 @@ HAVING COUNT(CityKey) > 10
 - 아키텍처 C의 경우, 표준 티어의 Azure SQL 데이터베이스가 125 DTU로 사용됩니다. CityKey에 인덱스가 없는 상태와 CityKey에 인덱스가 있는 상태에서 테스트될 것입니다.
 
 다음 단락에서 결과가 설명됩니다.
-```
+
 
 <div class="content-ad"></div>
 

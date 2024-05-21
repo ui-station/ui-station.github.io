@@ -41,7 +41,7 @@ BLE를 사용하는 방법을 처음 알아보려면 Nano 33 BLE Sense 치트 �
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ![Bluetooth Low Energy 사용 시작하기: Flutter와 Arduino](/assets/img/2024-05-20-GetStartedwithBluetoothLowEnergyusingFlutterArduino_1.png)
 
 "파일" → "예제" → "ArduinoBLE" → "페리페럴" 메뉴에서 BLE 라이브러리를 사용하는 유용한 예제를 찾을 수 있습니다. "BatteryMonitor" 예제를 열어보겠습니다.
@@ -402,7 +402,7 @@ iOS를 사용하려면 "ios/Runner/info.plist" 파일 사전에 다음을 추가
 ```
 
 ## 구현
-```
+
 
 <div class="content-ad"></div>
 
@@ -533,7 +533,7 @@ Android에서는 약간 다릅니다. 사용자가 앱이 BLE를 사용하도록
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-20-GetStartedwithBluetoothLowEnergyusingFlutterArduino_10.png)
 
 앱에서는 나노를 찾는 동안 원형 지시기를 표시해야 합니다. 잠시 후에 현재 온도(섭씨)가 표시됩니다.
@@ -541,7 +541,7 @@ Android에서는 약간 다릅니다. 사용자가 앱이 BLE를 사용하도록
 ![이미지](/assets/img/2024-05-20-GetStartedwithBluetoothLowEnergyusingFlutterArduino_11.png)
 
 이제 코드를 자세히 살펴봅시다. 흥미로운 부분은 "_MyHomePageState" 클래스 내부에서 시작됩니다. 첫 번째 및 유일한 페이지가 표시되면 디바이스 검색을 즉시 시작하고 업데이트를 수신 대기합니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -609,4 +609,3 @@ void dispose() {
 글을 읽어주셔서 감사합니다. 개선 아이디어나 궁금한 점이 있으시면 댓글로 알려주세요. 전체 코드는 여기에서 확인할 수 있습니다.
 
 몇 가지는 꽤 오랜 시간이 걸렸지만 그것들을 이해하는 데 도움이 되었으면 좋겠습니다. 여기서부터는 "ArduinoBLE" 라이브러리의 다른 예제들을 발견하고 글 전체에서 링크한 참고 자료들을 읽음으로써 BLE 지식을 더욱 향상시킬 수 있을 것입니다. 
-```

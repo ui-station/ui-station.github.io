@@ -59,7 +59,7 @@ pod-termination-reason 주석은 다음과 같은 인간이 읽을 수 있는 �
 - “이 파드는 하부 하드웨어의 장애($failuretype)로 종료되어야 했습니다”
 - “$user가 노드에서 sudo halt 명령을 실행했기 때문에 이 파드를 종료해야 했습니다”
 - “하부 노드 커널이 패닉 상태에 빠져 이 파드가 예기치 않게 종료되었습니다!”
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -170,7 +170,7 @@ func handleKernelPanicOnNode(ctx context.Context, addr *net.UDPAddr, nodeInforme
 <img src="/assets/img/2024-05-18-KubernetesAndKernelPanics_1.png" />
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

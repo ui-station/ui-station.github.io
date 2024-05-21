@@ -105,7 +105,7 @@ Nadam은 Adam 옵티마이저의 메커니즘을 Nesterov 모멘텀과 똑똑하
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![매쓰사인네처날날담옵티마이저 그림 4](/assets/img/2024-05-20-TheMathBehindNadamOptimizer_4.png)
 
 첫 번째 모멘트(𝑚_𝑡)는 과거 그래디언트의 지수적 평균이며, 이는 감쇠율(β1, 일반적으로 0.9 주변)을 사용하여 업데이트됩니다. 이 비율은 과거 그래디언트 정보 대비 새 데이터 유지 비율에 영향을 미치며, 더 높은 β1은 더 부드럽지만 더 반응이 느린 추정치로 이어집니다.
@@ -113,7 +113,7 @@ Nadam은 Adam 옵티마이저의 메커니즘을 Nesterov 모멘텀과 똑똑하
 편향된 두 번째 모멘트 추정 업데이트
 
 ![매쓰사인네처날날담옵티마이저 그림 5](/assets/img/2024-05-20-TheMathBehindNadamOptimizer_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -331,9 +331,9 @@ m_bar는 미래의 그래디언트와 모멘텀이 보정된 그래디언트를 
 
 <div class="content-ad"></div>
 
-```markdown
+
 updated_params[key] = params[key] - self.learning_rate * m_bar / (np.sqrt(v_corrected) + self.epsilon)
-```
+
 
 모든 매개변수는 m_bar와 조정된 학습률에 의해 업데이트되며, v_corrected에 제곱근을 더한 것으로 스케일링됩니다. 이 단계는 실제 매개변수 업데이트가 발생하는 곳으로, 모델의 학습에 직접적인 영향을 미칩니다.
 

@@ -83,13 +83,13 @@ HPC 클러스터를 구성하는 다양한 토폴로지가 있습니다. 각각�
   10.0.0.2 rpnode02 rpnode02.home.local
   10.0.0.3 filenode01 filenode01.home.local
 - (필요한 경우) 언어 및 지역 설정을 구성합니다.
-  ```
+  
   $ sudo raspi-config
-  ```
+  
 - 마지막으로 시스템 패키지를 업데이트하고 업그레이드합니다.
-  ```
+  
   $ sudo apt update && sudo apt upgrade
-  ``` 
+   
 
 ![Raspberry Pi 클러스터 구축 스텝바이스텝 가이드](/assets/img/2024-05-20-BuildingSlurmHPCClusterwithRaspberryPisStep-by-StepGuide_3.png)
 
@@ -192,7 +192,7 @@ Slurm 구성을 진행하기 전에 다음 라이브러리 또는 헤더 파일�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 $ sudo apt install libpmix-dev libpam-dev libmariadb-dev \
   libmunge-dev libdbus-1-dev munge
@@ -209,7 +209,7 @@ $ sudo mkdir /opt/slurm && cd /opt/slurm
 $ sudo wget https://github.com/SchedMD/slurm/archive/refs/tags/slurm-23-11-6-1.tar.gz
 $ sudo tar -xf slurm-23-11-6-1.tar.gz
 ```  
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -370,7 +370,7 @@ $ sudo systemctl | grep slurmdbd
 만약 모든 것이 잘 진행된다면, slurmdbd 서비스가 실행 중인 것을 확인할 수 있어요. 그렇지 않다면, /var/log/slurm/slurmdbd.log 파일이나 systemd 상태를 확인해주세요.
 
 2. Slurm 컨트롤러 데몬
-```
+
 
 <div class="content-ad"></div>
 
@@ -583,17 +583,17 @@ batch*       up 30-00:00:0      1   idle rpnode[01]
 
 <div class="content-ad"></div>
 
-```markdown
+
 $ srun hostname
 rpnode01
-```
+
 
 이것은 우리의 작업이 Slurm 작업으로 성공적으로 실행되고 컴퓨팅 노드의 호스트 이름인 rpnode01을 반환했음을 나타냅니다.
 
 # 컴퓨팅 노드
 
 추가 컴퓨팅 노드를 포함하는 Slurm 클러스터를 확장하는 것은 다음의 주요 단계를 포함합니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -723,7 +723,7 @@ JOBID PARTITION     NAME     USER    STATE       TIME TIME_LIMI  NODES NODELIST(
 # 다음 단계
 
 이전 글에서 언급했듯이, 이 HPC 클러스터는 테스트 환경으로 사용됩니다. 현재 기본 Slurm 및 중앙 저장 기능을 갖추고 있지만, 향후 확장 및 향상이 가능합니다. 사용자 계정, 디스크 할당량 관리, 환경 모듈 및 Conda 패키지 매니저를 활용한 소프트웨어 스택 설정, MPI 구현, Jupyterhub 서비스 설정 등을 다루는 후속 글을 쓸 계획이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

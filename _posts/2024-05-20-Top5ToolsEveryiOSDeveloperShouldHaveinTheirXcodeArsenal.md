@@ -31,7 +31,7 @@ CodeAI는 OpenAI의 고급 AI 기술을 직접 Xcode에 통합하여 코딩 효�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![RocketSim for Xcode Simulator](/assets/img/2024-05-20-Top5ToolsEveryiOSDeveloperShouldHaveinTheirXcodeArsenal_2.png)
 
 ## 3. Xcode 시뮬레이터용 RocketSim
@@ -39,7 +39,7 @@ CodeAI는 OpenAI의 고급 AI 기술을 직접 Xcode에 통합하여 코딩 효�
 RocketSim은 Xcode 시뮬레이터에 기능을 추가하여 앱 개발을 더 빠르고 효율적으로 만들어줍니다. 주요 기능으로는 사용자 Defaults 편집기, 시뮬레이터 비행기 모드, 소리, 터치 및 베젤을 포함한 향상된 녹화 기능이 있습니다. 또한 접근성 및 동적 유형 테스트, 위치 시뮬레이션, 푸시 알림 및 딥 링크를 테스트하는 도구뿐만 아니라 완벽한 구현을 위한 디자인 비교 도구도 제공합니다. RocketSim은 빠른 작업, 환경 재정의 및 사용자 정의 설정을 통해 생산성을 높이며 각 기능이 매끄러운 개발 경험에 기여하도록 보장합니다.
 
 ![Top 5 Tools Every iOS Developer Should Have in Their Xcode Arsenal](/assets/img/2024-05-20-Top5ToolsEveryiOSDeveloperShouldHaveinTheirXcodeArsenal_3.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/smartie-home/smartie-solutions-by-smartie-home-seconda
 ---
 
 
-```markdown
+
 ![Office Light](/assets/img/2024-05-18-SmartieSolutionsbySmartieHomeSecondaryLightinOffice_0.png)
 
 약 6년 전, 사무실을 디자인하고 설정할 때 레이아웃에 스마트 솔루션을 통합했습니다. 6년이 지난 지금도이 솔루션은 나의 일상 루틴 중 하나입니다. 그렇게 유용하다고 느껴 다른 비슷한 솔루션을 찾고있는 사람들과 이 경험을 공유하면 유익할 것이라고 생각했습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/smartie-home/smartie-solutions-by-smartie-home-seconda
 ## 문제점
 
 저녁 늦게 사무실에서 근무할 때 필요한 빛 조명을 조절할 수있는 광원이 필요했습니다. 사무실에는 팬이 달린 주요 광원이 있지만, 스마트 라이트가 설치되어 있더라도 상당히 밝습니다. 최저 설정일 때도 상당량의 빛을 내뿜습니다.
-```
+
 
 <div class="content-ad"></div>
 

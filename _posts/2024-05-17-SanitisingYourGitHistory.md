@@ -185,7 +185,7 @@ git push --set-upstream origin <branch> --force
 각 Git 버전은 Git 해시라는 고유한 ID를 가지고 있습니다. git-filter-repo나 기타 도구를 사용하여 Git 히스토리의 커밋을 변경하면 해시가 변경됩니다.
 
 Git 해시는 병합/풀 요청, Git 태그 또는 릴리스와 같은 VCS 플랫폼에서 참조로 사용됩니다. 이들은 작동하지 않고 특히 Git 히스토리에서 깊숙이 포함된 것을 제거하고 싶은 경우 문제가 될 수 있습니다. 중요하다면 저장소의 복사본을 만드는 것이 좋습니다.
-```
+
 
 <div class="content-ad"></div>
 

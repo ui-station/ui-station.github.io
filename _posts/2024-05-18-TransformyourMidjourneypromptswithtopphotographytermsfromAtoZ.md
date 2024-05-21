@@ -31,13 +31,13 @@ link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_1.png)
 ![image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_2.png)
 ![image 3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_3.png)
 
 # Bokeh
-```
+
 
 <div class="content-ad"></div>
 
@@ -51,7 +51,7 @@ link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![This is an image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_5.png)
 
 ![This is an image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_6.png)
@@ -59,7 +59,7 @@ link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with
 ![This is an image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_7.png)
 
 # Contre jour
-```
+
 
 <div class="content-ad"></div>
 
@@ -86,17 +86,17 @@ Contre jour, 또는 역광은 카메라를 빛 원본 쪽으로 향하게 함으
 
 보는 사람의 균형과 정상적인 시각을 단연 방해하여, 네덜란드 기욤은 객관적이거나 변형된 현실을 제공하여 종종 심리적 불안을 표현하거나 이미지에 독특한 스타일적 매력을 더합니다.
 
-```markdown
+
 ![image1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_12.png)
 
 ![image2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_13.png)
 
 ![image3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_14.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_15.png)
 
 # Edge Darkening
@@ -104,16 +104,16 @@ Contre jour, 또는 역광은 카메라를 빛 원본 쪽으로 향하게 함으
 Edge darkening, 또는 바이네팅(vignetting),는 이미지의 모서리가 중앙보다 어두워 보이는 효과입니다. 이는 렌즈의 특성으로 자연스럽게 발생할 수 있으며 종종 엣지에서 센서나 필름에 도달하는 빛이 적어지는 결과를 초래합니다.
 
 이 효과는 사진의 중요한 요소에 관전자의 주의를 끌기 위해 활용되며 자연스러운 프레임을 제공하고 이미지에 깊이나 드라마를 추가합니다. 때때로 결함으로 간주되기도 하지만, 의도적으로 적용할 때 바이네팅은 사진의 예술적 영향을 크게 향상시킬 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_16.png)
 ![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_17.png)
 ![Image 3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_18.png)
 ![Image 4](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_19.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -147,7 +147,7 @@ Edge darkening, 또는 바이네팅(vignetting),는 이미지의 모서리가 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_27.png)
 
 # High Key
@@ -155,11 +155,11 @@ Edge darkening, 또는 바이네팅(vignetting),는 이미지의 모서리가 �
 High key photography is distinguished by its light, airy feel, with an emphasis on bright tones and minimal dark shadows. Achieved through careful lighting, exposure settings, and post-processing, this style features soft lighting and high exposures to wash out midtones and shadows, creating images dominated by whites and light colors.
 
 High key photography is often associated with conveying a positive, cheerful mood and is widely used in fashion, beauty, and portrait photography for its clean, minimalist aesthetic.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_28.png)
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_29.png)
@@ -167,7 +167,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_30.png)
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_31.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -181,7 +181,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Transform your Mid-journey prompts with top photography terms from A to Z](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_32.png)
 
 ![Transform your Mid-journey prompts with top photography terms from A to Z](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_33.png)
@@ -189,7 +189,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 ![Transform your Mid-journey prompts with top photography terms from A to Z](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_34.png)
 
 ![Transform your Mid-journey prompts with top photography terms from A to Z](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_35.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -251,7 +251,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_49.png" />
 
 <img src="/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_50.png" />
@@ -259,7 +259,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 <img src="/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_51.png" />
 
 # Night Vision
-```
+
 
 <div class="content-ad"></div>
 
@@ -273,7 +273,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_55.png)
 
 # Overlay
@@ -281,11 +281,11 @@ High key photography is often associated with conveying a positive, cheerful moo
 사진 및 디지털 이미징에서의 오버레이 기술은 한 이미지를 다른 이미지 위에 쌓아 두어 두 이미지의 요소를 합쳐 하나의 복합 이미지를 형성하는 것을 의미합니다. 이 방법은 서로 다른 시각적 구성 요소를 창의적이고 예술적으로 혼합하여 사진 작품에서 현실과 상상력을 융합하는 것을 가능하게 합니다.
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_56.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_57.png)
 
 ![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_58.png)
@@ -293,7 +293,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 ![Image 3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_59.png)
 
 # Pinhole Effect
-```
+
 
 <div class="content-ad"></div>
 
@@ -317,7 +317,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_64.png)
 
 ![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_65.png)
@@ -325,7 +325,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 ![Image 3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_66.png)
 
 ![Image 4](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_67.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -349,7 +349,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_72.png)
 
 ![Image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_73.png)
@@ -357,7 +357,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 ![Image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_74.png)
 
 ![Image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_75.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -371,7 +371,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_78.png)
 
 # Unicolor
@@ -379,11 +379,11 @@ High key photography is often associated with conveying a positive, cheerful moo
 “Unicolor” refers to the use of a single color in an image, often employed to create a uniform or thematic visual impact. When applied correctly, unicolor can evoke specific moods or artistic expressions, enhancing the conceptual unity of the image.
 
 ![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_79.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_80.png)
 
 ![image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_81.png)
@@ -391,11 +391,11 @@ High key photography is often associated with conveying a positive, cheerful moo
 ![image 3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_82.png)
 
 ![image 4](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_83.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_84.png)
 
 ![image2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_85.png)
@@ -403,7 +403,7 @@ High key photography is often associated with conveying a positive, cheerful moo
 ![image3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_86.png)
 
 # Voronoi Map
-```
+
 
 <div class="content-ad"></div>
 
@@ -417,13 +417,13 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Wet Plate Look](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_90.png)
 
 The wet plate look replicates the style of early 19th-century wet plate photography, where a glass or metal plate coated with a light-sensitive emulsion was exposed while still wet. This method produced images with a distinctive soft focus and subtle imperfections like light leaks, offering a nostalgic and evocative quality reminiscent of historical photographs.
 
 ![Wet Plate Look](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_91.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -447,11 +447,11 @@ Xylography, 또는 목판 인쇄는 목재 표면에 디자인을 새기고 잉�
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 요코쵸 효과
 
 요코쵸 효과는 간단한 구조와 비네팅, 흐린 가장자리, 빛 누출과 같은 독특한 이미지 특성으로 알려진 빈티지 일본 장난감 카메라의 미학을 흉내냅니다. 이 효과는 꿈풍경적인 시각적 스타일을 만들어내며 종종 향수와 예술적 불완전함의 느낌을 담고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

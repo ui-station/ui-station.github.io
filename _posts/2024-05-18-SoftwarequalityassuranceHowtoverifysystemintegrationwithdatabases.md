@@ -11,7 +11,7 @@ link: "https://medium.com/itnext/software-quality-assurance-how-to-verify-system
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-SoftwarequalityassuranceHowtoverifysystemintegrationwithdatabases_0.png)
 
 소프트웨어 개발의 성공에는 테스트가 중요합니다. 소프트웨어 엔지니어들은 대부분의 시간을 자동화된 테스트 작성에 할애합니다. 비교적으로, 비즈니스 로직 개발에 소요되는 시간은 그리 많지 않습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/itnext/software-quality-assurance-how-to-verify-system
 테스트는 소프트웨어 전달에서 중요한 역할을 하므로, 테스팅 지식은 소프트웨어 엔지니어로서의 채용 면접에서 표준 질문이 되었습니다. 가끔 지원자 중 일부는 데이터베이스 통합의 품질을 어떻게 보증할지에 대해 대답하지 못하는 경우가 있습니다.
 
 데이터베이스는 대부분의 시스템에서 중요한 구성 요소입니다. 데이터베이스와 통신하기 위한 일반적인 설계 패턴은 액세스 요청을 SQL 쿼리로 변환하기 위한 데이터 액세스 계층을 갖는 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -74,13 +74,13 @@ H2 데이터베이스는 인기 있는 내부 메모리 데이터베이스입니
 
 <div class="content-ad"></div>
 
-```markdown
+
 <의존성>
    <그룹 아이디>com.h2database</그룹 아이디>
    <아티팩트 아이디>h2</아티팩트 아이디>
    <범위>런타임</범위>
 </의존성>
-```
+
 
 H2 데이터베이스에서 테스트를 실행하는 것은 정말 편리합니다. 데이터베이스 시작업이 필요 없습니다. JDBC 연결 문자열 jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODEL=MYSQL을 사용하여 데이터베이스 연결을 생성하면 H2 데이터베이스가 자동으로 시작됩니다.
 
@@ -198,7 +198,7 @@ void testInsertEmployee() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 @Test
 void testInsertEmployee() {
    Employee newEmployee = Employee.builder()
@@ -222,14 +222,14 @@ void testInsertEmployee() {
    assertThat(insertedRecord).isNotEmpty()
            .contains(newEmployee);
 }
-```
+
 
 # 도커 컨테이너 내의 실제 데이터베이스
 
 H2 데이터베이스가 지원하는 MySQL 호환 모델에도 불구하고, 시스템 동작은 아직 실제 MySQL 데이터베이스와 완전히 동일하지는 않습니다. MySQL 데이터베이스와 진지하게 테스트를 하려면 도커 컨테이너 내에서 MySQL 데이터베이스를 이용하는 것이 합리적인 선택입니다.
 
 이 개념은 인메모리 데이터베이스 사용과 유사합니다. 데이터베이스를 메모리에서 실행하는 대신, 도커 컨테이너에서 데이터베이스를 생성합니다. 그런 다음 테스트가 완료되면 컨테이너를 정지하고 제거합니다.
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -334,7 +334,7 @@ class EmployeeDaoMySQLTestContainersAnnotationTest {
 통합 테스트와 단위 테스트는 같은 개념을 공유하지만, 두 유형 모두 일부 의존성에 대한 모의/스터브화된 특정 수준의 구성요소에 중점을 둡니다.
 
 그러나 데이터베이스를 사용한 통합 테스트는 약간 다릅니다. 올바른 테스트를 수행하기 위해 실제 데이터베이스 엔진이 필요합니다. 이 글은 테스트를 원활하게 실행하기 위해 스키마 설정이 포함된 일회용 데이터베이스를 생성하는 방법에 대한 간략한 개요와 기술을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

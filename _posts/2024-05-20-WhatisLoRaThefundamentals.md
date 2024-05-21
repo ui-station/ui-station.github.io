@@ -11,7 +11,7 @@ link: "https://medium.com/@prajzler/what-is-lora-the-fundamentals-79a5bb3e6dec"
 ---
 
 
-```markdown
+
 ![LoRa Image](/assets/img/2024-05-20-WhatisLoRaThefundamentals_0.png)
 
 Let me start by debunking what even AWS got wrong. As of Oct 27, 2023, the AWS page mistakenly claims that "LoRa is a physical layer protocol". To add insult to injury, it further claims that "LoRa is a wireless audio frequency technology".
@@ -19,7 +19,7 @@ Let me start by debunking what even AWS got wrong. As of Oct 27, 2023, the AWS p
 Sorry AWS, but no. LoRa has nothing to do with audio frequencies. There are chirps, but not that kind of chirps.
 
 More importantly, LoRa is not a protocol. At least not if you want to talk about it with a radio engineer.
-```
+
 
 <div class="content-ad"></div>
 
@@ -114,7 +114,7 @@ AM은 신호의 진폭을 일정한 주파수에서 변화시킴으로써 변조
 
 <div class="content-ad"></div>
 
-```
+
 ![2024-05-20-WhatisLoRaThefundamentals_1.png](/assets/img/2024-05-20-WhatisLoRaThefundamentals_1.png)
 
 FM은 캐리어 주파수 위에 신호 주파수를 변조합니다. FM 라디오 방송에서는 캐리어가 MHz 범위에 있으며, 스테레오 신호의 변조된 신호는 54 kHz이며 RDS의 경우 59 kHz입니다.
@@ -122,7 +122,7 @@ FM은 캐리어 주파수 위에 신호 주파수를 변조합니다. FM 라디�
 ![2024-05-20-WhatisLoRaThefundamentals_2.png](/assets/img/2024-05-20-WhatisLoRaThefundamentals_2.png)
 
 AM과 FM은 모두 아날로그 변조로, 오디오와 같은 아날로그 신호를 전달하기 위해 설계되었습니다. 우리는 아날로그가 아닌 디지털 변조인 칩 변조로 큰 도약을 해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -266,7 +266,7 @@ LoRa 커뮤니티나 LoRaWAN 표준에서 코딩률에 대한 논의는 거의 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 | Spreading factor | Bandwidth | Symbol rate | Coding rate | Data rate |
 | ---------------- | --------- | ----------- | ----------- | --------- |
 | (integer)        | (Hz)      | (chips/s)   | (ratio)     | (bits/s)  |
@@ -280,7 +280,7 @@ LoRa 커뮤니티나 LoRaWAN 표준에서 코딩률에 대한 논의는 거의 �
 | 12               | 125000    | 30          | 4/5         | 288       |
 | 13               | 125000    | 15          | 4/5         | 156       |
 | 14               | 125000    | 7           | 4/5         | 78        |
-```
+
 
 코딩 비율 TL;DR:
 
@@ -290,7 +290,7 @@ LoRa 커뮤니티나 LoRaWAN 표준에서 코딩률에 대한 논의는 거의 �
 - 중복 비트 수가 적을수록 오류에 대한 저항력이 낮아짐
 
 중복 비트 수가 얼마나 많은 오류를 탐지하거나 복구할 수 있는지에 대한 구체적인 수학적 세부 사항은 이 글의 범위를 벗어납니다. 아마도 나중에 다룰 수 있을 것 같습니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -71,7 +71,7 @@ LoRaWAN은 Semtech의 LoRa 변조 체계를 사용하는 포인트 투 멀티포
 
 <div class="content-ad"></div>
 
-```markdown
+
 #include <SPI.h>
 #include <LoRa.h>
 
@@ -104,11 +104,11 @@ void loop() {
   delay(5000);
 
 }
-```
+
 
 ## Receiver Code
 
-```markdown
+
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -199,4 +199,3 @@ void loop() {
     digitalWrite(led, LOW);
   }
 }
-```

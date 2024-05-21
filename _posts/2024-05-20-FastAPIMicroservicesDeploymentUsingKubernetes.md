@@ -99,7 +99,7 @@ microservice_1이라는 폴더를 만들고 main.py라는 파일을 추가하세
 
 <div class="content-ad"></div>
 
-```markdown
+
 # main.py (microservice 2)
 from fastapi import FastAPI
 
@@ -109,16 +109,16 @@ app = FastAPI()
 @app.get("/")
 async def root():
     return {"message": "You requested microservice 2"}
-```
+
 
 Add requirements.txt
 
-```markdown
+
 fastapi==0.111.0
-```
+
 
 Add Dockerfile
-```
+
 
 <div class="content-ad"></div>
 
@@ -144,7 +144,7 @@ $ docker push sumangaire96/microservice2:v1
 ```
 
 # Minikube
-```
+
 
 <div class="content-ad"></div>
 
@@ -281,7 +281,7 @@ spec:
 ```
 
 매니페스트를 적용하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -299,17 +299,16 @@ $ echo "$(minikube ip) microservice2.local" | sudo tee -a /etc/hosts
 ```
 
 이제 microservice1.local 및 microservice2.local로 이동하면 다음과 같은 출력이 나타납니다:
-```  
+  
 
 <div class="content-ad"></div>
 
 아래는 Markdown 형식으로 표로 변환한 내용입니다.
 
-```markdown
+
 | 이미지 | 
 |---|
 | ![FastAPI와 Kubernetes를 사용한 2024-05-20 날짜의 마이크로서비스 배포 이미지](/assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_2.png) |
 | ![FastAPI와 Kubernetes를 사용한 2024-05-20 날짜의 또 다른 마이크로서비스 배포 이미지](/assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_3.png) |
 
 축하합니다! FastAPI로 2개의 마이크로서비스를 만들고 Kubernetes를 사용하여 성공적으로 배포했습니다. 앞으로 나올 문서를 기대해 주세요.
-```

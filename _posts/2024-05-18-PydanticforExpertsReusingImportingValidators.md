@@ -59,7 +59,7 @@ Pydantic의 유효성 검사 도구는 데이터 작업 시 강력한 도구입�
 
 <div class="content-ad"></div>
 
-```markdown
+```
 ```python
 from pydantic import field_validator, BaseModel
 
@@ -88,8 +88,8 @@ class Model(BaseModel):
 ```
 
 그러나 여러 모델에서 여러 필드에 걸쳐 이 유효성 검사기를 공유하려면 어떻게 해야 할까요?
-```
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -286,7 +286,7 @@ class PersonRequestModel(MyCustomBaseClass):
 마찬가지로 유효성 검사기에 대한 동일한 구분된 서브모듈을 만들 수 있지만, 그들이 어떻게 구성되어야 하는지 및 어떤 종류여야 하는지가 덜 명확해집니다.
 
 # 옵션 3. 주석이 달린 유형 상속하기
-```
+
 
 <div class="content-ad"></div>
 

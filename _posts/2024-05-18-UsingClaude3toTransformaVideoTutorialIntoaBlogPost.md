@@ -21,7 +21,7 @@ link: "https://medium.com/towards-artificial-intelligence/using-claude-3-to-tran
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-UsingClaude3toTransformaVideoTutorialIntoaBlogPost_1.png)
 
 사소한 문제와 일관성 부족이 있었지만, 이 방법은 꽤 효율적인 것으로 보였습니다. 결과적으로 생긴 블로그 포스트는 원본 비디오에서 다룬 대부분의 요소와 관련 스크린샷 및 코드 예제를 포함했습니다.
@@ -29,7 +29,7 @@ link: "https://medium.com/towards-artificial-intelligence/using-claude-3-to-tran
 이 작업을 재현하는 데 얼마나 쉽고 비싼지 궁금해졌습니다. 결과적으로, 처음에 기대했던 것보다 더 복잡한 과정이었습니다. 프롬프트는 공유되었으나 코드는 그렇지 않았습니다.
 
 본 문서는 내 구현 방식을 공유하고, 각 단계를 자세히 설명하며, 주요 어려움에 대해 논의합니다. 코드 및 데이터는 이 Github 저장소에서 확인할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -122,13 +122,13 @@ transcript = YouTubeTranscriptApi.get_transcript(youtube_video_id)
 
 <div class="content-ad"></div>
 
-```markdown
+
 len(transcript)
 3422
 
 transcript[0:4]
 [{'text': "hi everyone so in this video I'd like us",  'start': 0.04,  'duration': 4.04}, {'text': 'to cover the process of tokenization in',  'start': 2.04,  'duration': 4.4}, {'text': 'large language models now you see here',  'start': 4.08,  'duration': 4.2}, {'text': "that I have a set face and that's",  'start': 6.44,  'duration': 3.88}]
-```
+
 
 만약 트랜스크립트를 사용할 수 없다면, 오디오 스트림을 음성 인식 모델을 사용하여 텍스트로 변환해야 합니다. 🤗 Open ASR Leaderboard는 성능이 우수한 모델을 찾을 수 있는 좋은 장소입니다. 동반 노트북에 위스퍼 모델과 효율적인 faster-whisper 구현을 사용하여 트랜스크립트를 가져오는 코드를 제공합니다. 이 프로세스는 Google Colab의 T4에서 약 25분이 걸리며(RTX 4090에서는 12분) 완료됩니다.
 
@@ -186,7 +186,7 @@ def chop_up_in_chapters(chapters_list, video_path, transcript, timestamps_screen
 이것은 핵심 단계입니다. 각 장마다 오디오 대본과 선택한 스크린샷이 LMM에 제공되어 이 입력 데이터를 교과서에 포함할 수 있는 출력으로 변환하는 것이 목표입니다.
 
 이 단계의 핵심 요소는 우리가 다음과 같이 설계한 LLM 프롬프트입니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -222,7 +222,7 @@ prompt_instructions = """
 - 프롬프트에서 일부 서식을 Anthropic의 가이드라인에 더 잘 따르도록 변경했습니다. 특히, 앞부분에 있는 스크린샷을 이동시키고 지침을 XML 태그로 래핑했습니다.
 
 프롬프트는 장의 스크린샷 및 대본 앞에 오고 있습니다. 우리는 JPG 스크린샷을 Anthropic의 비전 API에 적합한 형식으로 변환하기 위해 `get_screenshots_as_messages` 도우미 함수를 정의했습니다. 이 함수는 모든 스크린샷을 반복하여 각각에 대한 두 가지 메시지를 설명합니다: 스크린샷의 타임스탬프를 지정하는 텍스트 메시지와 그것의 base64로 인코딩된 표현을 포함하는 이미지 메시지입니다. 나중에 하이퍼링크가 추가된 최종 문서에서 원본 비디오로 이동할 수 있게 해주는 타임스탬프가 포함된 텍스트 메시지입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -285,7 +285,7 @@ def get_prompt_as_messages(chapter_id):
 ```
 
 그게 다야!
-```
+
 
 <div class="content-ad"></div>
 

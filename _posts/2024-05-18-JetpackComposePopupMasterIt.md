@@ -23,7 +23,7 @@ link: "https://medium.com/mobile-app-development-publication/jetpack-compose-pop
 
 아래는 새로운 코드 블록을 Markdown 형식으로 바꾼 예시입니다.
 
-```markdown
+
 <img src="/assets/img/2024-05-18-JetpackComposePopupMasterIt_1.png" />
 
 자, 다행히도 Jetpack Compose는 이 목적으로 활용할 수 있는 두 개의 Compose 구성 요소를 제공해줍니다.
@@ -32,7 +32,7 @@ link: "https://medium.com/mobile-app-development-publication/jetpack-compose-pop
 - Popup
 
 이 글의 주제는 Popup에 대해 모든 것을 공유하고, 그림을 통해 사용자가 쉽게 익힐 수 있도록 합니다. 또 기타 재미있는 세부사항이나 화면 보안, 제스처 사용 방지 등에 대해 알 수도 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -170,7 +170,7 @@ focusable이 true일 때 팝업은 IME 이벤트와 키 입력을 수신하고, 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Popup](/assets/img/2024-05-18-JetpackComposePopupMasterIt_2.png)
 
 If we couple `focusable = true` with `dismissOnBackPress` is true, then the Popup will be dismissed if the user clicks the back button (the older Android phone).
@@ -178,7 +178,7 @@ If we couple `focusable = true` with `dismissOnBackPress` is true, then the Popu
 ## DismissOnClickOutside
 
 As mentioned previously, by default, when the user clicks outside the Popup area, it will be dismissed
-``` 
+ 
 
 <div class="content-ad"></div>
 
@@ -199,7 +199,7 @@ enum class SecureFlagPolicy {
 ![Jetpack Compose Popup Master It](/assets/img/2024-05-18-JetpackComposePopupMasterIt_3.png)
 
 ## 시스템 제스처에서 제외하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -213,21 +213,21 @@ enum class SecureFlagPolicy {
 
 <div class="content-ad"></div>
 
-```markdown
+
 PopupProperties(
     focusable = true,
     dismissOnBackPress = false,
     dismissOnClickOutside = false,
     excludeFromSystemGesture = true,
 )
-```
+
 
 아래 GIF에서 왼쪽에서 스와이프해도 아무 일도 일어나지 않습니다.
 
 <img src="https://miro.medium.com/v2/resize:fit:470/1*8keelwDUflGe_U2LT9_7-g.gif" />
 
 하지만, OFF로 변경해보면
-```
+
 
 <div class="content-ad"></div>
 
@@ -245,7 +245,7 @@ PopupProperties(
 ![이미지](https://miro.medium.com/v2/resize:fit:470/1*lIPOkC6ucBMDt0yUOWWAPg.gif)
 
 ## ClippingEnabled
-```
+
 
 <div class="content-ad"></div>
 
@@ -356,7 +356,6 @@ if (popupControl) {
 
 여기서 코드 디자인을 얻을 수 있습니다.
 
-# TL; DR;```
 
 <div class="content-ad"></div>
 

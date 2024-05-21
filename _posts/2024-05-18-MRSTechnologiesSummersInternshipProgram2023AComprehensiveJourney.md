@@ -122,17 +122,17 @@ UI/UX 팀은 브랜딩을 담당하며 Figma를 사용해 시각적으로 매력
 
 여기 우리 인턴들이 만든 멋진 사진 몇 장이 있어요.  
 
-```markdown
+
 ![Image 7](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_7.png)
 
 ![Image 8](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_8.png)
 
 ![Image 9](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_9.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_10.png)
 
 ![Image 2](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_11.png)
@@ -140,7 +140,7 @@ UI/UX 팀은 브랜딩을 담당하며 Figma를 사용해 시각적으로 매력
 ![Image 3](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_12.png)
 
 # 7) Retrospective Meeting with Interns and Mentors
-```
+
 
 <div class="content-ad"></div>
 
@@ -152,7 +152,7 @@ MRS 인턴십 프로그램의 결론은 모든 인턴과 멘토가 참석한 회
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_14.png)
 
 # 8) 업적을 기념하며: 최종 발표 및 폐회식
@@ -160,7 +160,7 @@ MRS 인턴십 프로그램의 결론은 모든 인턴과 멘토가 참석한 회
 MRS 인턴십 프로그램의 여정은 최종 발표 및 폐회식을 통해 업적을 축하하며 화려하게 마무리되었습니다. 이 자리에는 모든 멘토, 워크샵 강사, 인턴들, 그리고 MRS Technologies와 MTronic Pakistan의 C급 리더십이 참석했습니다.
 
 참석자들로 붐볐던 이번 세션은 각 인턴이 진지한 발표로 시작하여 프로젝트에서의 역할, MVP에 기여한 부분, 프로그램 중의 개인적 경험, 그리고 좋아했던 워크샵과 멘토에 관해 따뜻한 이야기를 나누었습니다.
-```
+
 
 <div class="content-ad"></div>
 

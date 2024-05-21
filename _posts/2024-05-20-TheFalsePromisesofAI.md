@@ -71,7 +71,7 @@ AI 제품이 출시되면서 우리를 놀라게 하고 이 가짜 기대나 허
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Cycle diagram](/assets/img/2024-05-20-TheFalsePromisesofAI_0.png)
 
 If we closely examine the cycle diagram proposed by Gartner, it seems that we are nearing the final stages of the peak of inflated expectations and are slowly moving into the trough of disillusionment.
@@ -79,7 +79,7 @@ If we closely examine the cycle diagram proposed by Gartner, it seems that we ar
 This interpretation of the current market indicates that in the short term, there will be a period where we start to become disillusioned with what’s happening in AI. The real applications or use cases for AI will come only after the hype has subsided and the initial excitement has worn off. However, this time might be somewhat different. Fundamentally, AI has the capability to mimic cognitive work, a feature that no previous technology has managed to achieve without human intervention.
 
 That’s it for now. If you’re interested in reading more about the stages of technological cycles, here’s a link to an article I recently wrote.
-```
+
 
 <div class="content-ad"></div>
 

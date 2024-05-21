@@ -58,7 +58,7 @@ SpringBoot
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_4.png)
 
 ![Image 2](/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_5.png)
@@ -66,7 +66,7 @@ SpringBoot
 ![Image 3](/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_6.png)
 
 ![Image 4](/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_7.png)
-```
+
 
 <div class="content-ad"></div>
 

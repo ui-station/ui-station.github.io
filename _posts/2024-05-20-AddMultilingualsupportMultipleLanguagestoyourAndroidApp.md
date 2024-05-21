@@ -11,7 +11,7 @@ link: "https://medium.com/proandroiddev/add-multilingual-support-multiple-langua
 ---
 
 
-```markdown
+
 ![다국어 지원 이미지](/assets/img/2024-05-20-AddMultilingualsupportMultipleLanguagestoyourAndroidApp_0.png)
 
 여러 언어를 지원하는 것은 애플리케이션을 확장하고 대중에 도달하는 데 중요합니다. 인도의 약 25%와 유럽의 64%의 작업 성인 인구가 다국어를 구사하며 미국도 다국어 구사자가 약 194% 증가했습니다. (출처)
@@ -19,7 +19,7 @@ link: "https://medium.com/proandroiddev/add-multilingual-support-multiple-langua
 또한, 소비자의 65% 이상이 선호하는 언어로 콘텐츠를 소비하는 것으로 나타나므로 이는 Amazon, WhatsApp, Facebook 등 대부분의 선도적인 애플리케이션에서 이미 제공되는 중요한 기능으로 고려되어야 합니다.
 
 그러니 다국어 세계를 위해 함께 만들어봅시다!
-```
+
 
 <div class="content-ad"></div>
 
@@ -35,19 +35,9 @@ Text(stringResources(R.string.follow_me))
 
 <div class="content-ad"></div>
 
-코드에서 테이블 태그를 마크다운 형식으로 변경해주세요.
-
-```markdown
-| Don't                              |
-| ---------------------------------- |
-| ```js                              |
-| Text("Follow me")                  |
-| ```                                |
-
 Using strings.xml, we will have a common place for all our string resources and we can then support multiple languages by adding more strings.xml files.
 
 ## 2. Add Multiple Languages
-```
 
 <div class="content-ad"></div>
 
@@ -84,7 +74,7 @@ onClick = {
 
 <div class="content-ad"></div>
 
-```markdown
+
 귀하는 해당 언어의 ISO-639 코드를 전달하여 OS에 언어 환경 설정 변경을 알릴 필요가 있습니다.
 
 ## 3.1 문제 해결
@@ -109,7 +99,7 @@ Android 12 이하 버전에서는 선택한 언어 환경 값을 수동으로 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <service//Inside application tag
     android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
     android:enabled="false"
@@ -118,14 +108,14 @@ Android 12 이하 버전에서는 선택한 언어 환경 값을 수동으로 �
         android:name="autoStoreLocales"
         android:value="true" />
 </service>
-```
+
 
 ## 5. Android OS Per-App Language Preferences
 
 In Android 13 and above, the Android OS also supports changing the Per-App Language preference from system settings.
 
 <img src="/assets/img/2024-05-20-AddMultilingualsupportMultipleLanguagestoyourAndroidApp_2.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -160,12 +150,11 @@ AndroidManifest를 사용하여 이 기본 동작을 방지할 수 있습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 // 특정 활동 태그에 다음을 추가하십시오
 android:configChanges="layoutDirection|locale"
-```
+
 
 ## 비디오:
 
 이 기능이 보다 많은 관객에 도움이 되기를 바라며, 더 많은 유용한 콘텐츠를 위해 저를 팔로우하시기 바랍니다.
-```

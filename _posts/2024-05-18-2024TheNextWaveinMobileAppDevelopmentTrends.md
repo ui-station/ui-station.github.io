@@ -102,11 +102,11 @@ AI 및 기계 학습 통합은 모바일 앱 개발 트렌드 목록의 선두�
 
 <div class="content-ad"></div>
 
-```markdown
+
 - Healthcare. AR facilitates remote consultations and diagnostics. The Proximie app enables remote surgical collaboration. It offers real-time guidance and improves expertise transfer.
 
 ## AR’s Bright Future: A Trend with Expansive Possibilities
-```
+
 
 <div class="content-ad"></div>
 

@@ -165,7 +165,7 @@ Kubernetes 클러스터를 생성할 때, 먼저 생성하는 자원은 클러�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Starting Your Journey on Kubernetes](/assets/img/2024-05-20-StartingyourjourneyonKubernetes_4.png)
 
 마스터 노드(1개 이상)는 제어 평면을 제공합니다. 제어 평면은 자원 목록(하나 이상의 YAML 파일로 정의된 매니페스트로 알려진)을 가져와서 각 워커 노드 내에서 생성된 자원을 필요한 매니페스트와 일치하도록 관리합니다.
@@ -173,7 +173,7 @@ Kubernetes 클러스터를 생성할 때, 먼저 생성하는 자원은 클러�
 동적으로 워커 노드가 실패하면 해당 자원이 손실되고 제어 평면이 자동으로 해당 자원을 워킹 노드에 다시 생성합니다. 제어 평면은 항상 배포된 자원이 매니페스트 파일의 요청된 목록과 일치하도록 합니다.
 
 일반적으로 클러스터에는 마스터 노드의 홀수 개수와 워커 노드의 홀수 개수가 있습니다. 이것은 일부 응용 프로그램 및 도구에서 지도자를 선정하는 데 도움이 됩니다. 대부분의 예는 1개의 마스터와 3개의 워커를 보여줍니다만 클러스터에는 여러 마스터와 수백 개의 노드가 있을 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -348,7 +348,7 @@ Kubernetes는 모든 팟이 Network Address Translation (NAT)이 필요 없이 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Starting your journey on Kubernetes](/assets/img/2024-05-20-StartingyourjourneyonKubernetes_8.png)
 
 Kublet 컴포넌트가 포드와 그 컨테이너를 시작할 때, CNI를 호출하고 해당 포드에 IP 주소를 할당해 달라고 요청합니다. CNI는 또한 컨테이너 내의 네트워크 요소를 프로비저닝하여 클러스터 서브넷에서 포드 간의 원활한 통신을 가능케 합니다. 이러한 요소들은 포드가 예정된대로 스케줄되면 필요에 따라 삭제 및 업데이트됩니다.
@@ -356,7 +356,7 @@ Kublet 컴포넌트가 포드와 그 컨테이너를 시작할 때, CNI를 호�
 CNI 플러그인은 다양한 솔루션을 사용하여 보편적 네트워크를 구현하는 복잡한 네트워크 구성 요소입니다. 이러한 것들을 설명하는 것은 이 글의 범위를 벗어납니다만, Kubernetes CNI를 검색하면 더 많은 정보를 얻을 수 있습니다.
 
 # DNS
-```
+
 
 <div class="content-ad"></div>
 
@@ -401,7 +401,7 @@ hello.world.svc.cluster.local
 DNS는 클러스터의 팟으로 설치된 coreDNS라는 애플리케이션에서 제공됩니다. 다른 솔루션도 사용할 수 있습니다. 다른 리소스와 마찬가지로 coreDNS는 추가적인 사용자 지정 매핑 규칙을 제공하기 위해 매니페스트 파일을 통해 구성할 수 있습니다.
 
 # 실제 리소스 제한하기
-```  
+  
 
 <div class="content-ad"></div>
 

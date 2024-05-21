@@ -61,7 +61,7 @@ Quantitative measure of error E가 있으면 매일 동일한 레시피를 복�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![The Proof of Learning in Machine Learning AI 0](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_0.png)
 
 In equation (1), the definition of the cost function E, which depends on the n weights w. In other words, it is a function that indicates the error based on the values of w. In a specific case where all n weights w are not adjusted, the value of the error E will be large. Conversely, in a case where the weights are properly adjusted, the value of the error E will be small or zero.
@@ -69,7 +69,7 @@ In equation (1), the definition of the cost function E, which depends on the n w
 ![The Proof of Learning in Machine Learning AI 1](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_1.png)
 
 Therefore, our objective is to find the values of the n weights w such that the condition above is true.
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +93,7 @@ Therefore, our objective is to find the values of the n weights w such that the 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_4.png)
 
 이에 따라 f(x, y) 함수의 그래디언트 필드를 사용하여 x와 y를 업데이트하는 방법을 개발할 수 있습니다. 이를 통해 f(x, y) = 0을 찾는 데 필요한 값을 찾을 수 있습니다.
@@ -101,7 +101,7 @@ Therefore, our objective is to find the values of the n weights w such that the 
 # 학습의 증명
 
 알고리즘 테스트를 위한 간단한 함수 f(x)를 정의하겠습니다. 저희의 의도는 이 함수의 최솟값을 찾는 것입니다. 이를 위해 f(x)의 그래디언트를 적용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -109,23 +109,23 @@ Therefore, our objective is to find the values of the n weights w such that the 
 
 h가 0에 수렴한다는 것을 알 때, f(x)의 기울기를 다음과 같이 표현할 수 있습니다:
 
-```markdown
+
 ![image](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_6.png)
-```
+
 
 <div class="content-ad"></div>
 
 아래와 같이 h를 다음 용어로 대체할 수 있습니다:
 
-```
+
 ![image](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_7.png)
-```
+
 
 우리는 요소 알파를 정의하여 용어 h의 필요성을 유지합니다. 이때 알파는 엄격히 양수이어야 하며 항상 영에 수렴하여 h와 동일해야 합니다. 새로운 관계를 도함수의 정의식에 대입하면 다음과 같습니다:
 
-```
+
 ![image](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_8.png)
-``` 
+ 
 
 <div class="content-ad"></div>
 
@@ -133,15 +133,15 @@ h가 0에 수렴한다는 것을 알 때, f(x)의 기울기를 다음과 같이 
 
 그러므로:
 
-```
+
 ![image](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_9.png)
-```
+
 
 따라서, 알파가 항상 양의 값을 갖는 한 (8)의 조건이 참임을 판단할 수 있습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_10.png" />
 
 즉, x의 f(x) 값이 엄격히 양수인 값으로 뺀 값은 항상 f(x)의 원래 값보다 작을 것입니다. 따라서, 우리는 다음과 같은 관계로 대체할 수 있습니다. eq. (7)과 (9)를 사용하여:
@@ -149,7 +149,7 @@ h가 0에 수렴한다는 것을 알 때, f(x)의 기울기를 다음과 같이 
 <img src="/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_11.png" />
 
 따라서, 우리는 x의 값들을 업데이트하는 방법에 대한 증명된 관계가 있으며, 함수 f(x)가 이전 상태보다 적어도 작아지도록 할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -171,7 +171,7 @@ h가 0에 수렴한다는 것을 알 때, f(x)의 기울기를 다음과 같이 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_14.png)
 
 이 알고리즘을 함수 f(x, y)에 여러 번 적용하면 함수의 값이 최소값에 도달할 때까지 감소할 것으로 예상됩니다. 이를 위해 우리는 업데이트된 x와 y의 할당에 노이즈를 적용하여 f(x, y)의 값이 감소하는 것을 시각화한 시뮬레이션을 진행했습니다.
@@ -179,7 +179,7 @@ h가 0에 수렴한다는 것을 알 때, f(x)의 기울기를 다음과 같이 
 ![image](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_15.png)
 
 알파 값이 0에 가까워질수록 x와 y의 값이 함수의 최솟값에 수렴하는 것을 관찰할 수 있습니다. 이러한 경우가 아닌 경우, 예를 들어 알파 = 0.6인 경우, 함수 f(x, y)의 최솟값을 찾는 데 어려움이 있는 것을 관찰할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -203,7 +203,7 @@ W를 기울기 하강법에 따라 모든 요소를 업데이트하려면 다음
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-05-18-TheProofofLearninginMachineLearningAI_18.png)
 
 따라서, 우리는 이론적 학습 알고리즘을 갖고 있습니다. 논리적으로, 이는 요리사의 가상 아이디어에는 적용되지 않고 오늘날 우리가 알고 있는 다양한 머신 러닝 알고리즘에 적용됩니다.
@@ -211,7 +211,7 @@ W를 기울기 하강법에 따라 모든 요소를 업데이트하려면 다음
 # 결론
 
 우리가 본 것을 바탕으로, 우리는 이론적 학습 알고리즘의 시연과 수학적 증명을 도출할 수 있습니다. 이러한 구조는 AdaGrad, Adam 및 확률적 경사 하강법 (SGD)과 같은 다양한 학습 방법에 적용됩니다.
-```
+
 
 <div class="content-ad"></div>
 

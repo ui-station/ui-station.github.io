@@ -11,7 +11,7 @@ link: "https://medium.com/@tomaszs2/decommissioned-an-unformatted-hate-email-was
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-05-18-DecommissionedAnUnformattedHateEmailWasEnoughtForAPopularNodejsProject_0.png)
 
 # 시간이 부족하며 사용되지 않는 이유와 엄청난 이메일이 LDAPjs의 주요 관리자를 폐지하게 했습니다. 사람들은 언제 코드를 서식 지정하는 법을 배울까요?
@@ -19,7 +19,7 @@ link: "https://medium.com/@tomaszs2/decommissioned-an-unformatted-hate-email-was
 제임스 서머스는 여러 중요한 프로젝트를 유지하는 데 있어 Node.js 광 범주 커뮤니티에서 가장 존경받는 인물 중 한 명입니다.
 
 여러분이 확실히 알고 있는 이 프로젝트들 중 하나인 Fastify, 가벼운 Node.js 웹 서버 또는 Pino, 빠른 JSON 로거 외에도 PL/JSON의 핵심 관리자로 활동했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -89,9 +89,9 @@ LDAPjs를 사용하는 회사 및 프로젝트로는 시게이트, Tracktr, Infi
 
 기술적으로 가장 엄청난 점은 그가 코드를 서식을 맞추는 데 신경쓰지 않았다는 것이죠:
 
-```markdown
+
 ![디렉토리](/assets/img/2024-05-18-DecommissionedAnUnformattedHateEmailWasEnoughtForAPopularNodejsProject_1.png)
-```
+
 
 그 이메일의 엄청난 부분보다 더 많은 이야기를 하는군요.
 

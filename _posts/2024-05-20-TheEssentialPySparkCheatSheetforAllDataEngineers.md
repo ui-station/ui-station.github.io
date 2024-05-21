@@ -52,7 +52,7 @@ StructField("dept", StringType)]) # if we want our required data types then we u
 Let’s kickstart our PySpark application by first creating a Spark Session, the entry point to PySpark functionality.
 
 We’ll then proceed with performing various transformations and analyses on sample data.
-```
+
 
 <div class="content-ad"></div>
 
@@ -107,7 +107,7 @@ display(부서)
 ```
 
 ![이미지](/assets/img/2024-05-20-TheEssentialPySparkCheatSheetforAllDataEngineers_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -186,11 +186,11 @@ PySpark는 데이터 프레임 내에서 날짜 속성을 추출하고 조작하
 
 또한, 이러한 속성들은 오름차순이나 내림차순으로 정렬하여 분석과 시각화를 용이하게 할 수 있습니다.
 
-## 날짜 열에서 일, 월, 연도 추출하기: ```
+## 날짜 열에서 일, 월, 연도 추출하기: 
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 데이터 프레임에서 연도, 월, 일 세부 정보 추출하기
 df.select(year("date column").distinct().orderBy(year("date column")).show()
 df.select(month("date column").distinct().orderBy(month("date column")).show()
@@ -200,14 +200,14 @@ df.withColumn("orderyear", year("df.date column"))
 df.withColumn("ordermonth", month("df.date column"))
 df.withColumn("orderday", day("df.date column"))
 df.withColumn("orderquarter", quarter("df.date column"))
-```
+
 
 특정 열에서 null 값을 필터링하고 그 다음에 지정된 순서로 그룹화 작업을 수행하기 위해 조건을 적용할 수 있습니다.
 
-```markdown
+
 df.select("column name we want to retrieve").where(col("column name we want to retrieve").isNotNull())\
 .groupBy("column name we want to retrieve").count().orderBy("count", ascending=False).show(10)
-```
+
 
 ## 함수 작성하기:```
 

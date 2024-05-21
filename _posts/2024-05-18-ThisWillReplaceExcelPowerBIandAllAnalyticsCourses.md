@@ -44,7 +44,7 @@ link: "https://medium.com/make-your-data-speak/this-will-replace-excel-power-bi-
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Table Image](/assets/img/2024-05-18-ThisWillReplaceExcelPowerBIandAllAnalyticsCourses_3.png)
 
 ### Julius
@@ -54,7 +54,7 @@ link: "https://medium.com/make-your-data-speak/this-will-replace-excel-power-bi-
 - 텍스트로 차트를 편집할 수 있는 멋진 기능이 있어서 제거할 부분이나 사용할 색상을 알려줄 수 있습니다.
 
 ### Polymer Search
-```
+
 
 <div class="content-ad"></div>
 

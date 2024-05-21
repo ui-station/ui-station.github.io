@@ -11,7 +11,7 @@ link: "https://medium.com/@firatgurgur/dealing-with-errors-in-kotlin-coroutines-
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-05-20-DealingwithErrorsinKotlinCoroutinesExceptionHandlingandErrorPropagation_0.png)
 
 현대 비동기 프로그래밍 패러다임에서는 Kotlin 코루틴이 중심적인 역할을 합니다. 비동기 프로그래밍 프로세스 중 발생하는 오류를 효과적으로 처리하는 것은 애플리케이션의 견고성과 신뢰성에 중요합니다. 본 문서에서는 Kotlin 코루틴을 사용할 때 오류 관리의 중요한 측면을 탐구하고 오류 전파의 복잡성을 다루고자 합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@firatgurgur/dealing-with-errors-in-kotlin-coroutines-
 비동기 프로그래밍은 현대 소프트웨어 개발에서 널리 사용됩니다. 그러나 이러한 프로그래밍 프로세스에서 오류를 만나는 것은 불가피합니다. 네트워크 호출, 파일 작업, 데이터베이스 상호작용 및 기타 외부 소스에서 발생하는 오류를 효과적으로 해결하여 애플리케이션의 신뢰성과 사용자 경험을 보장해야 합니다. Kotlin 코루틴은 비동기 프로그래밍 시 이러한 오류를 처리하는 다양한 도구와 전략을 제공합니다.
 
 # 코루틴 스코프 내에서 오류 처리
-```
+
 
 <div class="content-ad"></div>
 

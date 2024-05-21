@@ -92,7 +92,7 @@ git checkout -b 'tf-infa-test'
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
   cloud {
     organization = "YOUR-ORGANIZATION-HERE"
@@ -109,7 +109,7 @@ git checkout -b 'tf-infa-test'
 - terraform-plan.yml
 
 “TF_CLOUD_ORGANIZATION” 및 “TF_WORKSPACE”를 HCP Terraform 조직 및 워크스페이스의 이름으로 업데이트하고 파일을 저장하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,9 +127,9 @@ env/dev
 
 아래의 코드를 추가하세요.
 
-```markdown
+
 ![image](/assets/img/2024-05-18-BuildanEnd-to-EndCICDPipelineforaMERNAppinKuberneteswithTerraformusingGitHubActionsAnsible_4.png)
-```
+
 
 마지막으로 "Save settings"를 클릭하세요.
 
@@ -304,9 +304,9 @@ make run_ansible
 
 만약 Docker Hub repository 이미지가 있거나 수동으로 이미지를 빌드하여 Docker Hub에 푸시했다면, 먼저 출력에서 앱 UI를 확인할 수 있습니다. 그렇지 않은 경우 (섹션 3)를 완료한 다음 출력에서 앱 UI를 확인할 수 있습니다.
 
-```markdown
+
 ![](/assets/img/2024-05-18-BuildanEnd-to-EndCICDPipelineforaMERNAppinKuberneteswithTerraformusingGitHubActionsAnsible_9.png)
-```
+
 
 # 📘세션 3: Kubernetes (k3s)에서 MERN 앱을 위한 CI/CD 파이프라인 구축하기 (GitHub Actions 사용)
 
@@ -361,9 +361,9 @@ DOCKER_PASSWORD: 이것은 도커 허브 계정의 "비밀번호"입니다.
 
 "CRUD" 텍스트를 "CRUD test"로 변경한 다음, 변경사항을 커밋하고 메인 브랜치에 푸시하세요.
 
-```markdown
+
 <img src="/assets/img/2024-05-18-BuildanEnd-to-EndCICDPipelineforaMERNAppinKuberneteswithTerraformusingGitHubActionsAnsible_11.png" />
-```
+
 
 빌드, 푸시, 그리고 배포하는 데 시간이 걸릴 수 있습니다. 나중에 앱 UI(http://bjtechlife.com)에 변경 사항이 표시되고 데이터를 삽입하는 것과 같이 제대로 작동하는 것을 확인할 수 있습니다.
 

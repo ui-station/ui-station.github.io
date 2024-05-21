@@ -11,7 +11,7 @@ link: "https://medium.com/towards-data-science/deploying-llm-apps-to-aws-the-ope
 ---
 
 
-```markdown
+
 ![LLM](/assets/img/2024-05-18-DeployingLLMAppstoAWStheOpen-SourceSelf-ServiceWay_0.png)
 
 LLM 어플리케이션은 OpenAI와 같은 타사 호스팅 LLM을 사용하도록 개발되었을 때 MLOps 오버헤드가 필요하지 않습니다. 이러한 컨테이너화된 LLM 파워드 앱 또는 마이크로서비스는 DevOps 관행을 따르며 배포할 수 있습니다. 본 문서에서는 우리의 LLM 앱을 AWS와 같은 클라우드 제공업체에 자동으로 배포하는 방법을 탐색해보겠습니다. LlamaIndex는 커뮤니티를 위한 준비된 RAGs 챗봇을 보유하고 있습니다. 우리는 샘플 앱으로 RAGs를 사용하겠습니다.
@@ -19,7 +19,7 @@ LLM 어플리케이션은 OpenAI와 같은 타사 호스팅 LLM을 사용하도�
 # IaC Self-Service
 
 IaC는 Infrastructure as Code의 줄임말로 인프라 프로비저닝을 자동화하여 구성이 일관성 있고 반복 가능하게 보장합니다. IaC를 실행할 수 있는 여러 도구들이 있습니다. 본 문서에서는 Terraform을 중점으로 다룰 것인데, Terraform은 클라우드에 중립적인 특성을 가지고 있기 때문입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -241,20 +241,20 @@ CI 및 CD를 처리하는 두 가지 재사용 가능한 GitHub Actions 워크�
 
 <div class="content-ad"></div>
 
-```markdown
+
 on:
   push:
     branches:
       - main
   pull_request:
-```
+
 
 이제 애플리케이션 파이프라인을 시작할 시간입니다. 도커 이미지를 빌드하고 ECS에 배포하기 위해 수동으로 실행하거나 코드를 푸시/PR합니다. 아래에 성공적인 CI/CD 워크플로우 실행을 확인하세요.
 
 ![CI/CD Workflow](/assets/img/2024-05-18-DeployingLLMAppstoAWStheOpen-SourceSelf-ServiceWay_16.png)
 
 ## 단계 4: RAGs 앱 시작하기
-```
+
 
 <div class="content-ad"></div>
 
