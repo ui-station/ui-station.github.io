@@ -374,6 +374,8 @@ for f(x) being an estimate of the distribution P(Y | X=x). The second term takes
 라이브러리(scoringRules)
 
 ## 이상적인 "추정": 각 샘플 포인트 x에 대한 참조 조건부 분포 P(Y | X=x)에서 단순히 샘플링
+
+```js
 distributionestimate <-
   function(age, education, experience, N = 100) {
     exp((age * 0.1) + (
@@ -406,7 +408,7 @@ scorenaive <- mean(sapply(1:nrow(Xtest), function(j)  {
 
 ## scoretrue: 761.026
 ## scorenaive: 2624.713
-
+```
 
 위의 코드에서 "완벽한" 추정(즉, 참조 분포 P(Y | X=x)에서 샘플링)을 매우 단순한 추정과 비교합니다. 여기서 "매우 단순한" 추정은 급여, 교육 또는 경험에 관한 정보를 고려하지 않습니다. 다시 한 번, 점수는 두 방법 중 더 나은 방법을 신뢰할 수 있게 식별합니다.
 

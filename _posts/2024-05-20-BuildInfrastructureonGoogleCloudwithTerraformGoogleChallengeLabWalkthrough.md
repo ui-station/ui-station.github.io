@@ -393,10 +393,7 @@ Google Network Module를 사용하려고 합니다.
 
 <div class="content-ad"></div>
 
-```js
-모듈 "network"에 대해 Markdown 형식의 표입니다:
-
-```
+```bash
 module "network" {
   source  = "terraform-google-modules/network/google"
   version = "6.0.0"
@@ -418,7 +415,7 @@ module "network" {
     }
   ]
 }
-
+```
 
 초기화하고 적용하세요:
 

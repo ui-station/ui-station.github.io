@@ -32,9 +32,6 @@ link: "https://medium.com/@MrHDK/cyberlens-5d39ea4ff23b"
 
 <div class="content-ad"></div>
 
-테이블 태그를 Markdown 형식으로 변경해주세요.
-
-<div class="content-ad"></div>
 
 이 공간은 CyberLens 및 그들의 전문 도구에 대해 다루며, 스테가노그래피에 초점을 맞출 수도 있습니다. 화법 및 메타데이터를 위해 이미지를 분석하거나 숨겨진 플래그를 찾기 위해 이러한 도구 내의 취약점을 이용할 수도 있습니다.
 

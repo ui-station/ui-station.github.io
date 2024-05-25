@@ -145,7 +145,6 @@ Kubernetes 클러스터가 서비스로의 매우 많은 요청을 허용한다�
 
 <div class="content-ad"></div>
 
-표 태그를 Markdown 형식으로 변경해주세요.
 
 ```js
 {

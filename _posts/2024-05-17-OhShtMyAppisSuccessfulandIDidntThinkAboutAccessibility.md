@@ -390,7 +390,7 @@ Image("catKingdom")
 
 <div class="content-ad"></div>
 
-
+```js
 struct Cat {
     // ...
     let imageDescription: String
@@ -398,7 +398,7 @@ struct Cat {
 
 Image(cat.image)
     .accessibilityLabel(Text(cat.imageDescription))
-
+```
 
 
 이건 들릴만큼 쉽고, Apple 플랫폼에서만 작동하는 경향이 있어요.

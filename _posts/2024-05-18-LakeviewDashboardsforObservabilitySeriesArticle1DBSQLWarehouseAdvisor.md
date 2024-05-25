@@ -125,7 +125,6 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 <div class="content-ad"></div>
 
-<!-- QUERY_TAG: `insert_comment` -->
 
 회사의 특정 사용 사례에 중점을 두어 전체 성능 분석에 도움을 줄 수 있습니다. 특히 ETL 워크로드에서 중요합니다.
 

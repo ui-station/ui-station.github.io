@@ -221,7 +221,7 @@ download_file(presigned_get)
 
 <div class="content-ad"></div>
 
-
+```js
 bucket_name = "testjorzel"
 prefix = "mytest/"
 presigned_put = s3_client.generate_presigned_url(
@@ -232,7 +232,7 @@ presigned_put = s3_client.generate_presigned_url(
     },
     ExpiresIn=60,
 )
-
+```
 
 The `presigned_put` will also be a string:
 

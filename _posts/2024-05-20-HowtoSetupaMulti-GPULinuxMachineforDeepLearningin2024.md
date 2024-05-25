@@ -110,16 +110,18 @@ Downloads 폴더에서 터미널을 열고 다음 명령을 실행하세요.
 
 <div class="content-ad"></div>
 
-
+```bash
 mkdir -p ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
+```
 
 # initiate conda
+```bash
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
-
+```
 
 터미널을 닫고 다시 열어주세요. 이제 conda 명령어를 사용할 수 있어요.
 
@@ -130,7 +132,7 @@ rm -rf ~/miniconda3/miniconda.sh
 
 <div class="content-ad"></div>
 
-js
+```js
 conda create -n <environment-name> python=3.11
 
 # 환경 활성화

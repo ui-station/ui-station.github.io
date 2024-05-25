@@ -552,6 +552,8 @@ smalldb.max_marginal_relevance_search(question, k=2, fetch_k=3)
 
 
 # 유사도 검색과 MMR 검색 결과를 비교하세요.
+
+```bash
 question = "matlab에 대해 말한 내용은 무엇인가요?"
 docs_ss = vectordb.similarity_search(question, k=3)
 docs_ss[0].page_content[:100]
@@ -560,7 +562,7 @@ docs_ss[1].page_content[:100]
 docs_mmr = vectordb.max_marginal_relevance_search(question, k=3)
 docs_mmr[0].page_content[:100]
 docs_mmr[1].page_content[:100>
-
+```
 
 유사도 검색에서 처음 2개 문서의 처음 100자가 동일한 것을 확인할 수 있지만, MMR 검색으로는 처음 2개 문서의 처음 100자가 다른 것을 확인할 수 있습니다. 따라서 쿼리 결과에서 다양성을 얻을 수 있습니다.
 
@@ -666,7 +668,7 @@ docs = retriever.get_relevant_documents(question)
 
 <div class="content-ad"></div>
 
-
+```python
 def pretty_print_docs(docs):
     print(f"\n{'-' * 100}\n".join([f"Document {i+1}:\n\n" + d.page_content for i, d in enumerate(docs)]))
 
@@ -690,6 +692,7 @@ pretty_print_docs(compressed_docs)
 
 
 Through compression, all documents are processed using a language model to extract the most relevant segments, which are then passed into a final language model call.
+```
 
 ![Using langchain for Question Answering on Own Data](/assets/img/2024-05-18-UsinglangchainforQuestionAnsweringonOwnData_11.png)
 

@@ -80,7 +80,7 @@ Json 모드에서 텍스트 생성하기
 
 <div class="content-ad"></div>
 
-
+```js
 completion = client.chat.completions.create(
   model=MODEL,
   response_format={"type": "json_object"},
@@ -91,11 +91,13 @@ completion = client.chat.completions.create(
 )
 
 json.loads(completion.choices[0].message.content)
-
+```
 
 출력:
 
-'‘workoutRoutine’: '‘week’: 1, ‘days’: '‘Monday’: '‘muscleGroup’: ‘Chest and Triceps’, ‘exercises’: ['‘name’: ‘Bench Press’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Incline Dumbbell Press’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Tricep Dips’, ‘sets’: 3, ‘reps’: 15', '‘name’: ‘Tricep Pushdown’, ‘sets’: 3, ‘reps’: 15']', ‘Tuesday’: '‘muscleGroup’: ‘Back and Biceps’, ‘exercises’: ['‘name’: ‘Pull-Ups’, ‘sets’: 4, ‘reps’: 10', '‘name’: ‘Deadlifts’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Barbell Rows’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Bicep Curls’, ‘sets’: 3, ‘reps’: 15']',...
+```bash
+'‘workoutRoutine’: '‘week’: 1, ‘days’: '‘Monday’: '‘muscleGroup’: ‘Chest and Triceps’, ‘exercises’: ['‘name’: ‘Bench Press’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Incline Dumbbell Press’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Tricep Dips’, ‘sets’: 3, ‘reps’: 15', '‘name’: ‘Tricep Pushdown’, ‘sets’: 3, ‘reps’: 15']', ‘Tuesday’: '‘muscleGroup’: ‘Back and Biceps’, ‘exercises’: ['‘name’: ‘Pull-Ups’, ‘sets’: 4, ‘reps’: 10', '‘name’: ‘Deadlifts’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Barbell Rows’, ‘sets’: 4, ‘reps’: 12', '‘name’: ‘Bicep Curls’, ‘sets’: 3, ‘reps’: 15']',
+```
 
 - 이미지 이해
 
@@ -141,8 +143,9 @@ print(response.choices[0].message.content)
 ```
 
 <div class="content-ad"></div>
-
+```bash
 삼각형의 면적을 찾기 위해 직갛각 삼각형의 면적을 구하는 공식을 사용할 수 있습니다: \[ \text{면적} = \frac{1}{2} \times \text{밑변} \times \text{높이} \] 이 삼각형에서 밑변은 20 cm이고 높이는 15 cm입니다. \[ \text{면적} = \frac{1}{2} \times 20 \, \text{cm} \times 15 \, \text{cm} \] \[ \text{면적} = \frac{1}{2} \times 300 \, \text{cm}² \] \[ \text{면적} = 150 \, \text{cm}² \] 따라서, 삼각형의 면적은 \( 150 \, \text{cm}² \)입니다.
+```
 
 URL을 사용하는 예시
 

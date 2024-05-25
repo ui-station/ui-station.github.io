@@ -74,14 +74,6 @@ H2 데이터베이스는 인기 있는 내부 메모리 데이터베이스입니
 
 <div class="content-ad"></div>
 
-
-<의존성>
-   <그룹 아이디>com.h2database</그룹 아이디>
-   <아티팩트 아이디>h2</아티팩트 아이디>
-   <범위>런타임</범위>
-</의존성>
-
-
 H2 데이터베이스에서 테스트를 실행하는 것은 정말 편리합니다. 데이터베이스 시작업이 필요 없습니다. JDBC 연결 문자열 jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODEL=MYSQL을 사용하여 데이터베이스 연결을 생성하면 H2 데이터베이스가 자동으로 시작됩니다.
 
 다음 2가지 매개변수로 인메모리 데이터베이스가 생성된 것을 알 수 있습니다:
@@ -198,12 +190,12 @@ void testInsertEmployee() {
 
 <div class="content-ad"></div>
 
-
+```js
 @Test
 void testInsertEmployee() {
    Employee newEmployee = Employee.builder()
            .id(99)
-           .name("Gina Bond")
+          .name("Gina Bond")
            .department("MARKETING")
            .salary(new BigDecimal("3425.5"))
            .build();
@@ -222,7 +214,7 @@ void testInsertEmployee() {
    assertThat(insertedRecord).isNotEmpty()
            .contains(newEmployee);
 }
-
+```
 
 # 도커 컨테이너 내의 실제 데이터베이스
 

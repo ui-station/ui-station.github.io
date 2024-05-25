@@ -228,9 +228,6 @@ myThread.start();
 
 <div class="content-ad"></div>
 
-테이블 태그를 Markdown 형식으로 변경해주세요.
-
-<div class="content-ad"></div>
 
 표준 프로파일러.
 

@@ -99,7 +99,7 @@ Android 12 이하 버전에서는 선택한 언어 환경 값을 수동으로 �
 
 <div class="content-ad"></div>
 
-
+```bash
 <service//Inside application tag
     android:name="androidx.appcompat.app.AppLocalesMetadataHolderService"
     android:enabled="false"
@@ -108,7 +108,7 @@ Android 12 이하 버전에서는 선택한 언어 환경 값을 수동으로 �
         android:name="autoStoreLocales"
         android:value="true" />
 </service>
-
+```
 
 ## 5. Android OS Per-App Language Preferences
 

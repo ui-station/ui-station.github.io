@@ -369,7 +369,7 @@ UNUserNotificationCenter.current().add(request) { error in
 
 <div class="content-ad"></div>
 
-
+```bash
 curl --header "apns-topic: your.bundle.identifier" \\
      --header "apns-push-type: alert" \\
      --header "authorization: bearer YOUR_AUTH_KEY" \\
@@ -379,7 +379,7 @@ curl --header "apns-topic: your.bundle.identifier" \\
      --cert-type PEM \\
      --key /path/to/your/private-key.pem \\
      <https://api.push.apple.com/3/device/YOUR_DEVICE_TOKEN>
-
+```
 
 - 애플리케이션의 환경에 맞는 올바른 APNs 엔드포인트를 사용하는지 확인해야 합니다 (운영 환경의 경우 api.push.apple.com 또는 개발 환경의 경우 api.development.push.apple.com).
 - apns-push-type 및 apns-topic 헤더는 필수입니다.

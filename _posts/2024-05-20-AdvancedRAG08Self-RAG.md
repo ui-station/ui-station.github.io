@@ -92,9 +92,6 @@ llama-index-core                        0.10.20.post2
 
 <div class="content-ad"></div>
 
-위의 표를 Markdown 형식으로 변경해주세요.
-
-<div class="content-ad"></div>
 
 ```js
 import os

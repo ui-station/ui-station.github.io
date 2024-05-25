@@ -101,6 +101,8 @@ microservice_1이라는 폴더를 만들고 main.py라는 파일을 추가하세
 
 
 # main.py (microservice 2)
+
+```python
 from fastapi import FastAPI
 
 app = FastAPI()

@@ -178,9 +178,6 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 ```
 
-```img
-/assets/img/2024-05-20-AreGPTsGoodEmbeddingModels_3.png
-```
 
 다른 모델 e5-mistral-7b-instruct을 사용하여 동일한 평가 절차를 반복했더니, 이 모델은 MTEB leaderboard의 최상위 오픈소스 모델 중 하나로, mistral 7b instruct로부터 미세 조정되었습니다. 이 모델을 사용한 결과, 관련 질문과 쌍의 코사인 유사도는 각각 오픈AI와 GPU 질문에 대해 0.88 및 0.84입니다. 관련없는 질문과 답변 쌍에 대한 유사도는 0.56 및 0.67로 감소합니다. 이 결과는 e5-mistral-7b-instruct이 임베딩에 대해 훨씬 향상된 모델이라는 것을 시사합니다. 이런 개선이 된 이유는 무엇일까요?
 

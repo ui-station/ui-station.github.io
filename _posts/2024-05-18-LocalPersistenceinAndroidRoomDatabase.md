@@ -696,19 +696,22 @@ DB의 생성은 Retrofit API 인터페이스를 인스턴스화하는 패턴과 
 <div class="content-ad"></div>
 
 
-단일<PokemonDatabase> {
+
+
+```js
+fun <PokemonDatabase> {
    providePokemonDatabase(androidContext())
  }
 
-단일<PokemonDao> {
+fun <PokemonDao> {
     providePokemonDao(get())
  }
 
 viewModel { PokemonDetailsViewModel(get(), get()) }
 
-단일<FavoritesRepositoryInterface> { FavoritesRepository(get()) }
+fun <FavoritesRepositoryInterface> { FavoritesRepository(get()) }
 viewModel { FavoriteListViewModel(get()) }
-
+```
 
 이제 우리 앱이 작동할 준비가 되었습니다!
 

@@ -75,9 +75,6 @@ GA4이 이벤트에 기반한 메트릭(new_users 및 세션)을 계산할 때, 
 
 <div class="content-ad"></div>
 
-<table> 태그를 Markdown 형식으로 변경해보세요.
-
-<div class="content-ad"></div>
 
 # 문제 해결 방법은 무엇인가요?
 

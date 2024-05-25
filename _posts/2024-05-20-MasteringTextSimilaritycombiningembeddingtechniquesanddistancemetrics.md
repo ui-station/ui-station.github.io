@@ -280,9 +280,9 @@ BERT의 강점은 이러한 작업을 수행하기 위해 입력 모델을 어�
 코사인 유사도는 두 벡터의 유사성을 측정하는 것으로, 벡터 사이의 각도의 코사인을 측정합니다. 두 점 사이의 거리를 측정하는 대신 두 벡터가 같은 방향으로 향하는지 확인합니다. 따라서 이는 벡터의 크기에 영향을 받지 않습니다.
 
 코사인 유사도는 다음과 같은 공식을 통해 계산됩니다:
-
+```js
 \[ \text{cosine similarity} = \frac{{\textbf{A} \cdot \textbf{B}}}{{\lVert \textbf{A} \rVert \times \lVert \textbf{B} \rVert}} \]
-
+```
 <div class="content-ad"></div>
 
 <img src="/assets/img/2024-05-20-MasteringTextSimilaritycombiningembeddingtechniquesanddistancemetrics_10.png" />

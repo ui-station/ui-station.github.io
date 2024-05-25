@@ -195,7 +195,7 @@ poetry add jinja2
 
 <div class="content-ad"></div>
 
-
+```
 [tool.poetry]
 name = "gemini-movie-detectives-api"
 version = "0.1.0"
@@ -219,7 +219,7 @@ pre-commit = "^3.7.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
+```
 
 # FastAPI로 API 만들기
 

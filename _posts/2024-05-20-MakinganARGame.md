@@ -57,14 +57,6 @@ link: "https://medium.com/samsung-internet-dev/making-an-ar-game-with-aframe-529
 
 <div class="content-ad"></div>
 
-변환된 표 태그를 Markdown 형식으로 변경해주세요:
-
-
-| Header One  | Header Two  |
-|-------------|-------------|
-| Row One     | Row One     |
-| Row Two     | Row Two     |
-
 
 ## 테스트
 

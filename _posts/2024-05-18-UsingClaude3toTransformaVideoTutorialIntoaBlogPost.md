@@ -123,12 +123,13 @@ transcript = YouTubeTranscriptApi.get_transcript(youtube_video_id)
 <div class="content-ad"></div>
 
 
+```bash
 len(transcript)
 3422
 
 transcript[0:4]
 [{'text': "hi everyone so in this video I'd like us",  'start': 0.04,  'duration': 4.04}, {'text': 'to cover the process of tokenization in',  'start': 2.04,  'duration': 4.4}, {'text': 'large language models now you see here',  'start': 4.08,  'duration': 4.2}, {'text': "that I have a set face and that's",  'start': 6.44,  'duration': 3.88}]
-
+```
 
 만약 트랜스크립트를 사용할 수 없다면, 오디오 스트림을 음성 인식 모델을 사용하여 텍스트로 변환해야 합니다. 🤗 Open ASR Leaderboard는 성능이 우수한 모델을 찾을 수 있는 좋은 장소입니다. 동반 노트북에 위스퍼 모델과 효율적인 faster-whisper 구현을 사용하여 트랜스크립트를 가져오는 코드를 제공합니다. 이 프로세스는 Google Colab의 T4에서 약 25분이 걸리며(RTX 4090에서는 12분) 완료됩니다.
 

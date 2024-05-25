@@ -11,7 +11,6 @@ link: "https://medium.com/google-cloud/in-place-llm-insights-bigquery-gemini-for
 ---
 
 
-<table> 태그를 Markdown 형식으로 변경해주세요.
 
 <div class="content-ad"></div>
 

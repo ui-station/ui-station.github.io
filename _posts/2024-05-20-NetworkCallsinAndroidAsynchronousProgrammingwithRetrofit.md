@@ -70,7 +70,9 @@ public interface ApiService {
 }
 ```
 
+```bash
 여기서 @GET("users")는 /users 엔드포인트로 GET 요청을 보낸다는 것을 나타내고, Call<List<User>>는 이 요청이 User 객체의 목록을 반환할 것임을 나타냅니다.
+```
 
 # Retrofit 인스턴스 생성하기
 

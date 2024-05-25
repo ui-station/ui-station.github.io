@@ -182,9 +182,6 @@ As mentioned previously, by default, when the user clicks outside the Popup area
 
 <div class="content-ad"></div>
 
-'테이블' 태그를 Markdown 형식으로 변경해주세요.
-
-<div class="content-ad"></div>
 
 ```js
 enum class SecureFlagPolicy {

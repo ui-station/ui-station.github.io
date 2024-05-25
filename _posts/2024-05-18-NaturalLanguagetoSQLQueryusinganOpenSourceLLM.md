@@ -423,6 +423,9 @@ print(print_gpu_utilization())
 
 
 # 프롬프트 정의
+
+
+```bash
     prompt = [
         "코코넛 밀크로 만든 치킨 카레 레시피를 작성해주세요.",
         "다음 문장을 프랑스어로 번역해주세요: '나는 빵과 치즈를 좋아해요!'",
@@ -465,11 +468,11 @@ print(print_gpu_utilization())
     # 평균 토큰 속도 계산
     tok_sec = round(total_length / duration, 3)
     print("평균 --- %s 토큰/초 ---" % (tok_sec))
-
+```
 
 9. Fine-tuning되지 않은 Text to SQL
 
-
+```bash
     prompt = [
         """
         다음은 작업을 설명하는 지시사항입니다. 요청을 적절히 완료하는 응답을 작성하십시오.
@@ -542,7 +545,7 @@ print(print_gpu_utilization())
     print(print_gpu_utilization())
 
     model = prepare_model_for_kbit_training(model)
-
+```
 
 10. LoRA 매개변수
 

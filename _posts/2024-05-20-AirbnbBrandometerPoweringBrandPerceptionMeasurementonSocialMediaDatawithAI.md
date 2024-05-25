@@ -31,8 +31,6 @@ Brandometer는 동시성 추출 및 카운트 기반 상위 관련 주제를 포
 
 <div class="content-ad"></div>
 
-이미지 태그를 Markdown 형식으로 변경해주세요.
-
 
 ![image](https://miro.medium.com/v2/resize:fit:602/1*fGrdGlIidRgdt6jT0XavYg.gif)
 

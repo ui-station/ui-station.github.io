@@ -656,7 +656,7 @@ func main() {
 
 <div class="content-ad"></div>
 
-
+```bash
 name: Deploy Thumbnail Generator Lambda
 on:
   push:
@@ -698,7 +698,7 @@ jobs:
 
       - name: Update Lambda code
         run: aws lambda update-function-code --function-name=thumbnail-generator --zip-file=fileb://main.zip
-
+```
 
 코드를 커밋하고 레포지토리에 푸시하면 빌드가 실행됩니다.
 

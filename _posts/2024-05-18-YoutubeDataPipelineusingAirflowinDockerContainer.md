@@ -65,11 +65,9 @@ Docker version 20.10.23, build 7155243
 ```
 
 AWS 자격 증명을 생성하여 원격 s3 버킷과 통신하여 날짜를 쓸 수 있습니다. 다음 링크를 통해 생성하세요 — 루트 사용자를 위한 액세스 키 생성하기
-```
 
 <div class="content-ad"></div>
 
-```json
 config
 
 ```json
