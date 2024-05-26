@@ -3,7 +3,7 @@ title: "안드로이드에서 Work Manager 이해하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-UnderstandingWorkManagerinAndroid_0.png"
 date: 2024-05-23 12:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-UnderstandingWorkManagerinAndroid_0.png
 tag: Tech
 originalTitle: "Understanding Work Manager in Android"
@@ -11,7 +11,6 @@ link: "https://medium.com/@riztech.dev/understanding-work-manager-in-android-aa9
 ---
 
 
-```markdown
 ![Work Manager](/assets/img/2024-05-23-UnderstandingWorkManagerinAndroid_0.png)
 
 워크 매니저(Work Manager)는 안드로이드 젯팩(Android Jetpack)의 중요한 구성 요소로, 백그라운드 작업의 미룰 수 있고 보장된 실행을 간단하게 만들기 위해 설계되었습니다. 앱이 종료되거나 장치가 다시 시작되더라도 실행이 보장되어야 하는 작업을 수행해야 하는 경우, Work Manager는 견고하고 유연하며 효율적인 솔루션을 제공합니다. 다양한 안드로이드 버전에서 작동하는 통합 API를 제공하여 현대적인 안드로이드 개발에 필수적인 도구입니다.
@@ -24,7 +23,7 @@ link: "https://medium.com/@riztech.dev/understanding-work-manager-in-android-aa9
 - 제약 조건: 개발자는 네트워크 가용성, 충전 상태 및 작업이 실행되기 전에 충족해야 하는 저장소 조건과 같은 제약 조건을 지정할 수 있습니다. 이는 리소스를 효율적으로 관리하는 데 도움이 됩니다.
 - 작업 연결: Work Manager를 사용하면 여러 작업을 연결하고 복잡한 작업 시퀀스를 관리할 수 있습니다. 이는 이전 작업이 완료된 후에 다음 작업이 시작되어야 하는 종속 작업에 유용합니다.
 - 모니터링 기능:LiveData 또는 콜백 리스너를 통해 작업 상태를 모니터링하고 작업 실행에 대한 제어 및 통찰력을 제공할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,10 +42,10 @@ implementation "androidx.work:work-runtime-ktx:2.7.1"
 테이블 태그를 마크다운 형식으로 변경해주세요.
 
 ```md
-| Header One | Header Two | Header Three |
-|------------|------------|--------------|
-| Row 1      | Data 1     | Description 1|
-| Row 2      | Data 2     | Description 2|
+| Header One | Header Two | Header Three  |
+| ---------- | ---------- | ------------- |
+| Row 1      | Data 1     | Description 1 |
+| Row 2      | Data 2     | Description 2 |
 ```
 
 <div class="content-ad"></div>
@@ -107,7 +106,7 @@ WorkManager.getInstance(context).getWorkInfoByIdLiveData(workRequest.id)
 Work Manager는 안드로이드 애플리케이션의 백그라운드 작업을 효율적으로 관리하는 강력한 도구입니다. 이를 효과적으로 활용하기 위해서는 특정한 최상의 방법을 준수해야 합니다. 이러한 관행은 작업이 효율적으로, 신뢰성 있게 실행되며 시스템 리소스에 미미한 영향을 미칠 수 있도록 보장합니다.
 
 ## 1. 적절한 유형의 Work Request 선택하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -153,10 +152,7 @@ val constraints = Constraints.Builder()
 - 의존 작업을 연속적으로 실행하도록 작업 체이닝을 사용하십시오. 이는 한 작업의 출력이 다음 작업에서 필요한 워크플로우에 유용합니다.
 
 ```js
-WorkManager.getInstance(context)
-    .beginWith(workRequest1)
-    .then(workRequest2)
-    .enqueue()
+WorkManager.getInstance(context).beginWith(workRequest1).then(workRequest2).enqueue();
 ```
 
 체인된 작업에서 오류 처리:
@@ -217,11 +213,7 @@ val workRequest = OneTimeWorkRequestBuilder<MyWorker>()
 - 중복 작업을 피하기 위해 고유한 작업 요청을 사용하세요. enqueueUniqueWork을 사용하면 특정 작업 요청의 인스턴스가 한 번에 하나만 실행됩니다.
 
 ```js
-WorkManager.getInstance(context).enqueueUniqueWork(
-    "고유작업이름",
-    ExistingWorkPolicy.REPLACE,
-    workRequest
-)
+WorkManager.getInstance(context).enqueueUniqueWork("고유작업이름", ExistingWorkPolicy.REPLACE, workRequest);
 ```
 
 ## 8. 자원 사용량 최적화

@@ -3,13 +3,12 @@ title: "AWS CDK이 Terraform보다 뛰어난가요"
 description: ""
 coverImage: "/assets/img/2024-05-23-IsAWSCDKbetterthanTerraform_0.png"
 date: 2024-05-23 14:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-IsAWSCDKbetterthanTerraform_0.png
 tag: Tech
 originalTitle: "Is AWS CDK better than Terraform?"
 link: "https://medium.com/@kvs-vishnu23/is-aws-cdk-better-than-terraform-85194e7a42cd"
 ---
-
 
 이 기사에서는 클라우드 인프라를 유지하는 데 AWS CDK를 사용하는 장점과 이해를 돕기 위한 코드 스니펫에 대해 설명하겠습니다.
 
@@ -41,7 +40,7 @@ S3 버킷을 생성하는 Terraform 스크립트의 간단한 예제입니다.
 
 <div class="content-ad"></div>
 
-```tf
+```js
 # main.tf
 
 provider "aws" {
@@ -64,24 +63,24 @@ AWS CDK를 사용하면 Typescript, Python, Java, Go 등과 같은 익숙한 프
 AWS CDK를 사용하여 Typescript로 S3 버킷을 만드는 간단한 예제입니다.
 
 ```typescript
-import * as cdk from 'aws-cdk-lib';
-import { Stack, StackProps } from 'aws-cdk-lib';
-import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as cdk from "aws-cdk-lib";
+import { Stack, StackProps } from "aws-cdk-lib";
+import * as s3 from "aws-cdk-lib/aws-s3";
 
 export class MyS3BucketStack extends Stack {
   constructor(scope: cdk.Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
     // S3 버킷 생성
-    new s3.Bucket(this, 'MyBucket', {
-      bucketName: 'my-unique-bucket-name', // 원하는 버킷 이름으로 변경하세요
+    new s3.Bucket(this, "MyBucket", {
+      bucketName: "my-unique-bucket-name", // 원하는 버킷 이름으로 변경하세요
     });
   }
 }
 
 // 애플리케이션 생성
 const app = new cdk.App();
-new MyS3BucketStack(app, 'MyS3BucketStack');
+new MyS3BucketStack(app, "MyS3BucketStack");
 ```
 
 이제 Terraform 대 AWS CDK 논쟁에 대해 깊게 알아보겠습니다.
@@ -142,8 +141,7 @@ AWS CDK는 상태가 없는 방식으로 작동합니다. 상태를 관리하기
 
 <div class="content-ad"></div>
 
-```markdown
-```terraform
+```js
 provider "aws" {
   region = "us-east-1"
 }
@@ -184,37 +182,38 @@ Terraform에서 모든 것을 리소스로 취급하는 개념을 따라갑니�
 이제 CDK 코드를 살펴봅시다.
 
 ```typescript
-import { aws_lambda_nodejs as lambda_nodejs } from 'aws-cdk-lib';
-import { aws_s3 as s3 } from 'aws-cdk-lib';
-import { aws_s3_notifications as s3notifications } from 'aws-cdk-lib';
-import { App, Stack, StackProps } from 'aws-cdk-lib';
-import { Construct } from 'constructs';
+import { aws_lambda_nodejs as lambda_nodejs } from "aws-cdk-lib";
+import { aws_s3 as s3 } from "aws-cdk-lib";
+import { aws_s3_notifications as s3notifications } from "aws-cdk-lib";
+import { App, Stack, StackProps } from "aws-cdk-lib";
+import { Construct } from "constructs";
 
 export class MyStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
     // S3 버킷 생성
-    const bucket = new s3.Bucket(this, 'MyBucket');
+    const bucket = new s3.Bucket(this, "MyBucket");
 
     // Lambda 함수 생성
-    const fn = new lambda_nodejs.NodejsFunction(this, 'MyFunction', {
+    const fn = new lambda_nodejs.NodejsFunction(this, "MyFunction", {
       runtime: lambda_nodejs.Runtime.NODEJS_14_X,
-      handler: 'handler',
-      entry: 'lambda/index.ts',
+      handler: "handler",
+      entry: "lambda/index.ts",
     });
 
     // S3 버킷에 대한 이벤트 소스 추가하여 Lambda 함수를 트리거합니다
-    fn.addEventSource(new s3notifications.S3EventSource(bucket, {
-      events: [s3.EventType.OBJECT_CREATED],
-      filters: [{ prefix: 'uploads/' }], // 필요에 따라 접두사 조정
-    }));
+    fn.addEventSource(
+      new s3notifications.S3EventSource(bucket, {
+        events: [s3.EventType.OBJECT_CREATED],
+        filters: [{ prefix: "uploads/" }], // 필요에 따라 접두사 조정
+      })
+    );
   }
 }
 
 const app = new App();
-new MyStack(app, 'MyStack');
-```
+new MyStack(app, "MyStack");
 ```
 
 <div class="content-ad"></div>

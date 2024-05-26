@@ -3,13 +3,12 @@ title: "스위프트로 터미널 프로그램 실행하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-RunningTerminalProgramsfromSwift_0.png"
 date: 2024-05-23 15:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-RunningTerminalProgramsfromSwift_0.png
 tag: Tech
 originalTitle: "Running Terminal Programs from Swift"
 link: "https://medium.com/@gaitatzis/running-terminal-programs-from-swift-680db09a02b4"
 ---
-
 
 스위프트와 명령 줄을 통합하면 개발자가 스위프트 애플리케이션 내에서 쉘 명령어의 기능을 활용할 수 있습니다. 이 기능은 주로 작업 자동화, 스크립트 실행 또는 시스템 수준 기능에 직접 액세스하는 데 유용합니다. 이 기사에서는 실용적인 예제를 사용하여 스위프트에서 터미널 프로그램을 실행하는 방법을 살펴보겠습니다.
 
@@ -43,7 +42,6 @@ Swift에서 터미널 애플리케이션을 실행하는 것은 본질적으로 
 
 <div class="content-ad"></div>
 
-```markdown
 ```js
 let process = Process()
 ```
@@ -53,7 +51,7 @@ Shell 명령어의 실행은 Process 인스턴스에서 처리되며, 출력과 
 ## 2. Process 구성
 
 다음으로, 인수와 사용할 쉘을 정의합니다. 우리는 zsh 쉘에 명령을 실행하도록 지시할 것이므로, 프로세스의 launchPath를 /bin/zsh로 설정하고 프로그램 및 인수를 쉘의 인수로 -c `프로그램 및 인수`를 전달할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -68,7 +66,7 @@ process.arguments = ["-c", command]
 일부 프로그램은 MacOS의 보안 제약으로 인해 실행할 수 없습니다. 예를 들어, Swift 프로그램에서 /bin/ps를 실행할 수 없는 이유는 특정 보안 제약을 위반하기 때문입니다.
 
 많은 프로그램은 환경 변수가 설정되어야 합니다. 예를 들어, 프로그램이 다른 프로그램을 찾기 위해 PATH 환경 변수에 의존하는 것이 일반적입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -81,7 +79,7 @@ let environment = [
   "PATH": "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 ]
 process.environment = environment
-```
+````
 
 터미널에서 env를 실행하여 시스템 환경 변수를 실행 중에 확인할 수 있습니다.
 
@@ -112,9 +110,9 @@ macOS 13용 Foundation에서는 응용 프로그램 실행 중 예기치 않은 
 출력을 잡기 위해서는 Pipe를 만들고, 이를 프로세스의 출력에 연결해야 합니다.
 
 ```js
-let pipe = Pipe()
-process.standardOutput = pipe
-process.standardError = pipe
+let pipe = Pipe();
+process.standardOutput = pipe;
+process.standardError = pipe;
 ```
 
 <div class="content-ad"></div>
@@ -166,7 +164,7 @@ print(response)
 ```
 
 # 데몬 프로세스 시작하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -176,7 +174,7 @@ print(response)
 // ... let process = Process()
 process.unbind(.isIndeterminate)
 // ... process.run()
-```
+````
 
 이렇게 하면 프로세스가 독립적으로 계속 실행되지만, 앱에서 출력을 캡처하는 것이 더 어려워집니다.
 
@@ -206,7 +204,8 @@ executeDaemonProcess("/usr/bin/python3 -m http.server -d ~/Public")
 ```
 
 이 프로세스를 실행하면 ~/Public 폴더에서 파일을 제공하는 http://localhost:8080의 웹 서버가 생성됩니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -215,3 +214,4 @@ executeDaemonProcess("/usr/bin/python3 -m http.server -d ~/Public")
 Process 클래스를 사용하여 Swift 프로젝트에서 셸 명령 실행을 원활하게 통합할 수 있습니다. 이 기술을 사용하면 Swift 프로젝트 내에서 커맨드 라인 프로그램 및 RPC의 프론트 엔드를 만들거나 자동화 및 시스템 수준 스크립팅을 수행하는 다양한 가능성이 열립니다.
 
 실제 구현에서는 강제 언래핑을 사용하고 모든 잠재적인 오류 및 예외 상황을 처리해야 함을 기억하세요. 위 예제는 모든 실패 시나리오를 처리하지 않으므로 주의해야 합니다.
+

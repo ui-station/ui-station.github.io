@@ -3,13 +3,12 @@ title: "SwiftUI에서 TextField를 전문가처럼 유효성 검사하는 방법
 description: ""
 coverImage: "/assets/img/2024-05-23-HowtovalidateTextFieldsinSwiftUIlikeaPro_0.png"
 date: 2024-05-23 13:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowtovalidateTextFieldsinSwiftUIlikeaPro_0.png
 tag: Tech
 originalTitle: "How to validate TextFields in SwiftUI like a Pro"
 link: "https://medium.com/@mhmtkrnlk/how-to-validate-textfields-in-swiftui-like-a-pro-3dbe368d1570"
 ---
-
 
 <img src="/assets/img/2024-05-23-HowtovalidateTextFieldsinSwiftUIlikeaPro_0.png" />
 
@@ -46,7 +45,7 @@ struct ContentView: View {
           }
           .padding()
        }
-} 
+}
 ```
 
 이제 나쁜 방식과 좋은 방식을 구분하여 느껴보겠습니다.
@@ -78,7 +77,7 @@ Button {
 # 좋은 방법
 
 이제 진짜 작업이 시작되었지만, 먼저 이 솔루션을 사용하기 위해 SwiftUI의 일부 주요 기능을 알아야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -112,7 +111,6 @@ static var defaultValue: [Bool] = []
 
 <div class="content-ad"></div>
 
-```markdown
 ```js
 static func reduce(value: inout [Bool], nextValue: () -> [Bool]) {
       value += nextValue()
@@ -124,7 +122,7 @@ static func reduce(value: inout [Bool], nextValue: () -> [Bool]) {
 예를 들어, TabView가 있고 그 안에 여러 개의 하위 뷰가 있고 모두 .id() 수정자를 가지고 있다고 하면, 이 reduce 함수는 모든 id 수정자 값에 사용됩니다.
 
 TextField에서 이를 사용하려면 두 단계가 필요합니다
-```
+
 
 <div class="content-ad"></div>
 
@@ -145,7 +143,7 @@ struct ValidationModifier : ViewModifier  {
             )
       }
    }
-```
+````
 
 <div class="content-ad"></div>
 
@@ -182,7 +180,7 @@ extension SecureField {
 둘째로, TextField와 SecureField는 View가 아닌 동일한 형식에서 상속되지 않기 때문에 이것을 단일 확장으로 줄일 수 없습니다. 해결 방법이 있다면 알려주세요!
 
 이 modifier를 다른 뷰에서 사용할 수 없도록 유지하려면 동일한 파일에서 modifier와 확장을 정의하고 modifier를 private으로 만들 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -263,7 +261,7 @@ private func validate() -> Bool {
 
 <div class="content-ad"></div>
 
-간단한 유효성 검사를 만들었지만, 실제 상황에서는 정규식과 다른 로직을 사용하여 유효성을 검사해야 합니다. 어쩌다 그렇게 했어요. 
+간단한 유효성 검사를 만들었지만, 실제 상황에서는 정규식과 다른 로직을 사용하여 유효성을 검사해야 합니다. 어쩌다 그렇게 했어요.
 
 ```swift
 struct ContentView: View {
@@ -277,7 +275,7 @@ struct ContentView: View {
           VStack {
              TextField("Email", text: $email)
                 .validate {
-                   email.count > 6 
+                   email.count > 6
                 }
              TextField("Name", text: $name)
                 .validate {
@@ -310,6 +308,7 @@ struct ContentView: View {
 
 }
 ```
+
 미리 말씀드린 대로 이미지 삽입과 함께, 어떻게 동작하는지 보여주기 위해 validate()을 출력했어요. 모든 필드가 함께 유효성을 검사하는 모습이에요.
 
 <div class="content-ad"></div>

@@ -3,13 +3,12 @@ title: "Splunk 인덱서로 PI 웹 로그 보내기"
 description: ""
 coverImage: "/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_0.png"
 date: 2024-05-23 16:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_0.png
 tag: Tech
 originalTitle: "Sending PI Web Logs to Splunk Indexer"
 link: "https://medium.com/@almmathis/sending-pi-web-logs-to-splunk-indexer-58575b80c52d"
 ---
-
 
 <img src="/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_0.png" />
 
@@ -63,7 +62,7 @@ Kali Linux 2023.1 릴리스 (칼리 보라 & 파이썬 변경 사항) | Kali Lin
 - Python 웹 앱이 실행되는 Raspberry PI
 - 로그를 파일에 기록하는 "access" 로그
 - Kali Purple가 우리 네트워크의 다른 곳에서 자체 컴퓨터(가상)로 실행 중
-  
+
 # Kali-Purple + PI 로그 파일 전송
 
 <div class="content-ad"></div>
@@ -124,7 +123,7 @@ chmod +x /home/youruser/scp_pull_log.sh
 첫 번째 기계에서 사용자의 크론탭을 편집하십시오:
 
 ```js
-crontab -e
+crontab - e;
 ```
 
 ![이미지](/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_4.png)
@@ -219,17 +218,21 @@ sourcetype = log
 이 파일은 포워더가 데이터를 전송해야 하는 대상을 지정하는 데 사용됩니다.
 
 $SPLUNK_HOME/etc/system/local/에 위치한 outputs.conf 파일을 만들거나 편집하세요.
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 sudo vi /opt/splunkforwarder/etc/system/local/outputs.conf
-```
+
+
 
 다음 내용을 추가하여 데이터를 192.168.12.172로 전송하도록 설정하세요:
 
-```markdown
+
+
 [tcpout]
 defaultGroup = default-autolb-group
 
@@ -237,7 +240,7 @@ defaultGroup = default-autolb-group
 server = 192.168.12.172:9997
 
 [tcpout-server://192.168.12.172:9997]
-```
+
 
 Splunk UF를 다시 시작하세요.
 
@@ -246,7 +249,7 @@ Splunk UF를 다시 시작하세요.
 ```shell
 cd /opt/splunkforwarder/bin
 sudo ./splunk restart
-```
+````
 
 # 단계 3: Splunk 인덱서에서 입력 구성
 
@@ -322,7 +325,7 @@ Splunk Enterprise에서 데이터 수신 활성화합니다 (위에서 언급한
 
 <div class="content-ad"></div>
 
-- 설정으로 이동하여 ` 전달 및 수신 ` 수신 구성 ` 새 수신 포트를 구성하세요.
+- 설정으로 이동하여 `전달 및 수신` 수신 구성 ` 새 수신 포트를 구성하세요.
 - 포트 9997 (또는 원하는 다른 포트)를 추가하세요.
 
 구성 저장:

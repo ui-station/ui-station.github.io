@@ -328,7 +328,6 @@ printf("블록당 최대 스레드 수: %d\n", props.maxThreadsPerBlock);
 ![CUDA Programming](/assets/img/2024-05-23-WhyDeepLearningModelsRunFasteronGPUsABriefIntroductiontoCUDAProgramming_4.png)
 
 이제 스레드 ID는 다음과 같이 액세스할 수 있습니다:
-```
 
 <div class="content-ad"></div>
 
@@ -406,7 +405,7 @@ int main() {
 ```
 
 # 성능 비교
-```
+
 
 <div class="content-ad"></div>
 

@@ -63,9 +63,9 @@ Windows에서 원격 액세스 또는 서버 호스팅을 위해 포트 포워�
 
 다음 명령을 입력하고 Enter 키를 누르세요:
 
-```
+
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=192.168.1.10 connectport=8080 connectaddress=192.168.1.10
-```
+
 
 <div class="content-ad"></div>
 
@@ -73,9 +73,9 @@ netsh interface portproxy add v4tov4 listenport=8080 listenaddress=192.168.1.10 
 
 다음 명령을 입력하고 Enter 키를 눌러주세요:
 
-```
+
 netsh interface portproxy show all
-```
+
 
 이 명령은 현재 네트워크에서 활성화된 모든 포트 포워딩 규칙의 목록을 표시합니다. 만들었던 규칙이 나열되어 있는지 확인해보세요.
 
@@ -185,9 +185,9 @@ netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connect
 
 다음 명령을 입력하여 NAT 규칙을 확인하세요:
 
-```
+
 netsh interface portproxy show all
-```
+
 
 모든 NAT 규칙을 나열해줄 것입니다.
 

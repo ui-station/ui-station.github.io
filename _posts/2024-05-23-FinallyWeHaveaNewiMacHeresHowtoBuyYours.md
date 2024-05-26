@@ -3,7 +3,7 @@ title: "드디어 새로운 iMac이 출시되었습니다 여러분의 iMac을 �
 description: ""
 coverImage: "/assets/img/2024-05-23-FinallyWeHaveaNewiMacHeresHowtoBuyYours_0.png"
 date: 2024-05-23 15:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-FinallyWeHaveaNewiMacHeresHowtoBuyYours_0.png
 tag: Tech
 originalTitle: "Finally. We Have a New iMac. Here’s How to Buy Yours!"
@@ -11,7 +11,6 @@ link: "https://medium.com/macoclock/finally-we-have-a-new-imac-heres-how-to-buy-
 ---
 
 
-```markdown
 <img src="/assets/img/2024-05-23-FinallyWeHaveaNewiMacHeresHowtoBuyYours_0.png" />
 
 오랜만에 업데이트 없이 지내온 애플의 사랑받는 올인원 데스크탑 맥에 새로운 24인치 iMac이 드디어 출시되었습니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/macoclock/finally-we-have-a-new-imac-heres-how-to-buy-
 "새로운"이라고 말씀을 드렸는데, 정확히 말하면 "업그레이드" 된 제품입니다.
 
 이는 2021년 5월에 출시된 24인치 iMac과 동일한 샤시, 디스플레이 및 포트 상황을 갖추고 있습니다. 다만 이제는 내부에 M3 칩이 들어가 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

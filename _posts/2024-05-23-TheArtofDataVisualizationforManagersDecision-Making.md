@@ -3,13 +3,12 @@ title: "매니저의 의사 결정을 위한 데이터 시각화의 예술"
 description: ""
 coverImage: "/assets/img/2024-05-23-TheArtofDataVisualizationforManagersDecision-Making_0.png"
 date: 2024-05-23 15:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheArtofDataVisualizationforManagersDecision-Making_0.png
 tag: Tech
 originalTitle: "The Art of Data Visualization for Managers’ Decision-Making"
 link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-managers-decision-making-d7c0558211d3"
 ---
-
 
 저희는 결정을 내릴 때 매니저들이 의식적이든 무의식적이든 부딪히는 근본적인 도전 과제를 발견하기 위해 노력하고 있습니다. 시각화를 통해 현실 세계의 시나리오에서 이러한 도전 과제들을 탐구하며, 효과적으로 대응할 수 있는 간단한 해결책을 제시합니다.
 
@@ -83,7 +82,7 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Data Visualization](/assets/img/2024-05-23-TheArtofDataVisualizationforManagersDecision-Making_6.png)
 
 # 6. 스토리텔링 부족
@@ -91,11 +90,11 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 문제: 많은 조직이 너무 많은 차트를 가지고 리포트, 대시보드 또는 시각화를 만들어내어 모든 데이터를 시각적 형태로 전환합니다. 이러한 방식은 모든 차트가 아닌 의미 있는 통찰을 전달하는 차트들을 보여주는 것이 필요한 매니저를 혼동시킬 수 있습니다. 이 과다한 양은 매니저의 시간과 에너지를 낭비하게 하여 의사 결정력을 약화시킬 수 있습니다.
 
 해결책: 시각화에서 스토리텔링을 사용하여 매니저가 차트에 나타낸 진전과 저조를 분명하게 이해할 수 있도록 돕습니다. 이 내러티브 접근 방식은 시청자가 주요 메시지와 통찰을 파악하도록 도와주어 시장 문제나 판매 기회를 최대화하거나 발생시키는 문제를 회피할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Gaussian Distribution](/assets/img/2024-05-23-TheArtofDataVisualizationforManagersDecision-Making_7.png)
 
 ## 7. 가우시안 분포
@@ -103,7 +102,7 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 문제: 많은 차트들이 평균에만 의존하여 정확성과 상세함이 부족한 정보를 제시합니다. 중요한 결정에는 이 수준의 정보가 부족하고 잘못된 정보로 이어질 수 있습니다.
 
 해결책: 상자 그림과 같은 가우시안 분포 차트를 활용하여 데이터 밀도와 변동성을 표시합니다. 이러한 차트는 데이터의 더 명확한 그림을 제공하여 관리자들이 보다 정보에 기반한 효과적인 결정을 내릴 수 있도록 도와줍니다.
-```
+
 
 <div class="content-ad"></div>
 

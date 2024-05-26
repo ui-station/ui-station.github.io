@@ -3,13 +3,12 @@ title: "사용자 정의 Segmented Control  SwiftUI"
 description: ""
 coverImage: "/assets/img/2024-05-23-CustomSegmentedControlSwiftUI_0.png"
 date: 2024-05-23 13:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-CustomSegmentedControlSwiftUI_0.png
 tag: Tech
 originalTitle: "Custom Segmented Control — SwiftUI"
 link: "https://medium.com/kocsistem/custom-segmented-control-swiftui-3d785d1b530f"
 ---
-
 
 이 기사에서는 SwiftUI 프레임워크 내에서 사용자 정의 디자인을 적용한 Segmented Control 예제를 찾을 수 있습니다. 이 방법은 애플리케이션에 특별히 디자인된 Segmented Control을 사용자화합니다.
 
@@ -91,9 +90,9 @@ Custom Segmented Control 클래스는 두 개의 매개변수를 사용합니다
 
 <div class="content-ad"></div>
 
-```markdown
+```bash
 VStack{
-     CustomSegmentedControl(preselectedIndex: $selectedSegmentSourceType, 
+     CustomSegmentedControl(preselectedIndex: $selectedSegmentSourceType,
         options: [Localization.value("photos.title"), Localization.value("camera.title")])
 }
 ```
@@ -103,7 +102,7 @@ VStack{
 이 변수를 통해 선택 상태를 읽을 수 있습니다.
 
 다음 글에서 이 세그먼트 컨트롤과 피커를 함께 사용할 예정이에요. ❤️‍🔥
-```
+
 
 <div class="content-ad"></div>
 

@@ -3,13 +3,12 @@ title: "2023년 업데이트된 성적 데이터로부터 마라톤 성적에 �
 description: ""
 coverImage: "/assets/img/2024-05-23-PercentilesandZScoresforMarathonPerformancesFromUpdated2023PerformanceData_0.png"
 date: 2024-05-23 15:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-PercentilesandZScoresforMarathonPerformancesFromUpdated2023PerformanceData_0.png
 tag: Tech
 originalTitle: "Percentiles and Z Scores for Marathon Performances From Updated 2023 Performance Data"
 link: "https://medium.com/runners-life/percentiles-and-z-scores-for-marathon-performances-from-updated-2023-performance-data-bdde85cc3c7c"
 ---
-
 
 ![image](/assets/img/2024-05-23-PercentilesandZScoresforMarathonPerformancesFromUpdated2023PerformanceData_0.png)
 
@@ -61,7 +60,7 @@ Z 점수는 특정 값이 평균보다 얼마나 높거나 낮은지를 측정�
 
 <div class="content-ad"></div>
 
-z 점수를 계산하기 위해 Python의 Pandas 패키지를 사용하여 결과를 성별과 연령 그룹으로 그룹화했습니다. 그런 다음, 각 그룹의 평균과 표준 편차를 계산했습니다(초 단위). 마지막으로, 개별 결과에서 평균을 빼고 표준 편차로 나누어 표준화된 점수를 얻었습니다. 음수 값은 점수가 평균보다 낮음을 나타내고, 양수 값은 평균보다 높음을 나타냅니다. 
+z 점수를 계산하기 위해 Python의 Pandas 패키지를 사용하여 결과를 성별과 연령 그룹으로 그룹화했습니다. 그런 다음, 각 그룹의 평균과 표준 편차를 계산했습니다(초 단위). 마지막으로, 개별 결과에서 평균을 빼고 표준 편차로 나누어 표준화된 점수를 얻었습니다. 음수 값은 점수가 평균보다 낮음을 나타내고, 양수 값은 평균보다 높음을 나타냅니다.
 
 예를 들어, 한 연령 그룹의 평균 완주 시간이 4시 30분이고 표준 편차가 1시간이라고 합시다. 완주 시간이 3시 30분인 경우, 평균 (4시 30분)을 시간 (3시 30분)에서 빼서 -1시간을 얻습니다. 이를 표준 편차 (1시간)로 나누어 z-점수가 -1(평균보다 한 표준 편차 낮음)임을 얻습니다.
 
@@ -101,7 +100,7 @@ z-점수를 사용하는 데 두 가지 잠재적인 문제가 있습니다.
 
 <div class="content-ad"></div>
 
-그 동안, 해당 연령 그룹의 여러 여성들이 3:03보다 빨리 뛰었습니다. 분명 인상적인 시간이지만 더 이루기 쉬운 시간이죠. 
+그 동안, 해당 연령 그룹의 여러 여성들이 3:03보다 빨리 뛰었습니다. 분명 인상적인 시간이지만 더 이루기 쉬운 시간이죠.
 
 다시 말해, z 점수는 잘 보정되어 있는 것 같지 않습니다. 특히 연로한 나이에서 여성들을 남성들보다 유리하게 만들 수도 있습니다.
 
@@ -151,7 +150,7 @@ z-점수를 사용하는 데 두 가지 잠재적인 문제가 있습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 | Gender   |   Age | Finish   |   zScore |   Percentile |   Age Grade |
 |----------|-------|----------|----------|--------------|-------------|
 | F        |    25 | 02:32:50 |    -2.1  |        99.92 |       87.72 |
@@ -169,14 +168,14 @@ z-점수를 사용하는 데 두 가지 잠재적인 문제가 있습니다.
 | M        |    41 | 02:36:12 |    -1.64 |        99.53 |       80.02 |
 | M        |    27 | 02:26:11 |    -1.83 |        99.51 |       83.22 |
 | F        |    27 | 02:48:45 |    -1.84 |        99.49 |       79.45 |
-```
+
 
 여기에는 많은 중복이 있습니다. 선택한 방식에 관계없이 상위 세 명은 동일했을 것입니다. 하지만 25세 여성들은 나이 등급을 사용했다면 세 번째 자리로 밀려났을 겁니다.
 
 그러나 나이 등급으로 상위 15명을 선정하면, 포함된 가장 낮은 나이 등급은 81.63입니다. 따라서 여기에는 79~80 나이 등급을 가진 몇 명의 러너가 포함되었습니다.
 
 백분위를 사용하면, 상위 15명은 남성 9명과 여성 6명으로 구성됩니다. 한편, 나이 등급을 사용하면 남성 11명과 여성 4명으로 구성됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -268,7 +267,7 @@ z-점수를 사용하는 데 두 가지 잠재적인 문제가 있습니다.
 
 <div class="content-ad"></div>
 
-한편, 2023 연령 요소, z-점수 및 백분위를 활용한 연령 계산기를 업데이트할 예정이며, Kaggle에 데이터셋을 공유할 준비도 하고 있어요. 
+한편, 2023 연령 요소, z-점수 및 백분위를 활용한 연령 계산기를 업데이트할 예정이며, Kaggle에 데이터셋을 공유할 준비도 하고 있어요.
 
 최종 기사에서 업데이트된 계산기와 공개 데이터셋 링크를 꼭 포함할 거니까, 관심 있으시면 이메일 업데이트를 구독해주세요.
 

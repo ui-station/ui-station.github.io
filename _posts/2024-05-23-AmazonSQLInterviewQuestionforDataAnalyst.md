@@ -3,13 +3,12 @@ title: "아마존 데이터 분석가를 위한 SQL 인터뷰 질문"
 description: ""
 coverImage: "/assets/img/2024-05-23-AmazonSQLInterviewQuestionforDataAnalyst_0.png"
 date: 2024-05-23 16:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-AmazonSQLInterviewQuestionforDataAnalyst_0.png
 tag: Tech
 originalTitle: "Amazon SQL Interview Question for Data Analyst"
 link: "https://medium.com/@mail2asimmanna/amazon-sql-interview-question-for-data-analyst-c99b574c42b3"
 ---
-
 
 <img src="/assets/img/2024-05-23-AmazonSQLInterviewQuestionforDataAnalyst_0.png" />
 
@@ -49,7 +48,6 @@ link: "https://medium.com/@mail2asimmanna/amazon-sql-interview-question-for-data
 
 <div class="content-ad"></div>
 
-```markdown
 <img src="/assets/img/2024-05-23-AmazonSQLInterviewQuestionforDataAnalyst_5.png" />
 
 지금은 최신 활동이 "in"인 것을 필터링할 것입니다.
@@ -57,13 +55,12 @@ link: "https://medium.com/@mail2asimmanna/amazon-sql-interview-question-for-data
 <img src="/assets/img/2024-05-23-AmazonSQLInterviewQuestionforDataAnalyst_6.png" />
 
 방법 3: 여기서 우리는 각 emp_id의 행 번호를 내림차순으로 시간 순서대로 생성할 것입니다. 그런 다음 CTE를 생성한 다음, 행 번호가 =1이고 활동이 'in'인 emp_id를 추출할 것입니다.
-```
 
 <div class="content-ad"></div>
 
 ```js
 SELECT *,ROW_NUMBER() OVER(PARTITION BY emp_id ORDER BY time DESC) AS rnk
-FROM hospital) 
+FROM hospital)
 SELECT *
 FROM x
 WHERE rnk=1 AND action='in';
@@ -74,7 +71,7 @@ WHERE rnk=1 AND action='in';
 Please clap if you find the solution helpful.
 
 Let's connect on LinkedIn! 🤝
-```
+
 
 <div class="content-ad"></div>
 

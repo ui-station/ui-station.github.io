@@ -341,7 +341,7 @@ let viewModel = ViewModel( allShowsService: DelayService(decoratee: LoggingServi
 
 하지만 중요한 점은 데코레이터 추가는 어플리케이션의 메인 모듈에서 할 수 있다는 것입니다. 여기서 전체 오브젝트 그래프를 구성할 것으로 가정하고, 일종의 구성 루트 패턴을 통해 서비스의 동작을 변경할 수 있습니다. 이렇게 함으로써, 모듈 중 어느 것도 건드리거나 다시 컴파일할 필요 없이 서비스의 행동을 변경할 수 있게 됩니다.
 
-## 편의성```
+## 편의성
 
 <div class="content-ad"></div>
 

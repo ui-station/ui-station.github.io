@@ -3,7 +3,7 @@ title: "위대한 AI 사기"
 description: ""
 coverImage: "/assets/img/2024-05-23-TheGreatAIQuackery_0.png"
 date: 2024-05-23 17:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheGreatAIQuackery_0.png
 tag: Tech
 originalTitle: "The Great AI Quackery"
@@ -11,7 +11,6 @@ link: "https://medium.com/humanai/the-great-ai-quackery-9e024e05ca61"
 ---
 
 
-```markdown
 ![Image](/assets/img/2024-05-23-TheGreatAIQuackery_0.png)
 
 AI는 단순히 인간을 대체하는 것뿐만 아니라, 우리가 글쓰기에 대해 어떻게 생각하고 단어 자체를 어떻게 경험하는지도 바꾸고 있습니다.
@@ -19,7 +18,7 @@ AI는 단순히 인간을 대체하는 것뿐만 아니라, 우리가 글쓰기�
 우리는 스스로를 작가라고 부르지만, 나 자신 안 깊숙한 곳에선 항상 쓰기에는 숨겨진 힘이 있음을 느꼈습니다.
 
 글을 쓸 때, 나는 더 자아와 조화를 이루는 느낌을 받는 때입니다.
-```
+
 
 <div class="content-ad"></div>
 

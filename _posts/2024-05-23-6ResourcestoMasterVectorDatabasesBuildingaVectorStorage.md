@@ -3,13 +3,12 @@ title: "벡터 데이터베이스를 마스터하기 위한 6가지 자료, 벡�
 description: ""
 coverImage: "/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_0.png"
 date: 2024-05-23 18:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_0.png
 tag: Tech
 originalTitle: "6 Resources to Master Vector Databases , Building a Vector Storage"
 link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-building-a-vector-storage-8d94ca1e3897"
 ---
-
 
 벡터 데이터베이스는 자연어 처리와 이미지 인식과 같은 다양한 분야에서 중요한 구성 요소로, 정보를 효율적으로 조직화하고 검색하는 데 중추적인 도구로 작용합니다.
 
@@ -21,20 +20,20 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_0.png)
 
 # 목차:
 
-- Vector Databases: from Embeddings to Applications  
-- Building Applications with Vector Databases  
-- The Top 5 Vector Database Blog  
-- LangChain — Text splitters  
-- Sentence Transformers library  
-- MTEB Leaderboard  
+- Vector Databases: from Embeddings to Applications
+- Building Applications with Vector Databases
+- The Top 5 Vector Database Blog
+- LangChain — Text splitters
+- Sentence Transformers library
+- MTEB Leaderboard
 
 # 1. Vector Databases: from Embeddings to Applications
-```
+
 
 <div class="content-ad"></div>
 
@@ -70,7 +69,7 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 <div class="content-ad"></div>
 
-- 시멘틱 검색: 사용자 Q/A 데이터 세트에서 이해 측면에 중점을 둔 콘텐츠의 의미를 가리키며, 단어 일치 이상의 검색 도구를 만듭니다. 
+- 시멘틱 검색: 사용자 Q/A 데이터 세트에서 이해 측면에 중점을 둔 콘텐츠의 의미를 가리키며, 단어 일치 이상의 검색 도구를 만듭니다.
 - RAG: 모델이 훈련되지 않은 소스에서 내용을 통합하여 LLM 응용 프로그램을 향상시킵니다. Wikipedia 데이터 세트를 사용하여 질문에 대답합니다.
 - 추천 시스템: 시멘틱 검색과 RAG를 결합하여 주제를 추천하고 뉴스 기사 데이터 세트로 시연하는 시스템을 개발합니다.
 - 혼합 검색: 이미지와 설명 텍스트를 모두 사용하여 항목을 찾는 응용 프로그램을 작성하며, 이를 위해 전자 상거래 데이터 세트를 사용합니다.
@@ -80,6 +79,7 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 이 과정을 마치면 새로운 아이디어로 어떤 벡터 데이터베이스 애플리케이션을 개발할 수 있을 것입니다.
 
 # 3. 최고의 5가지 벡터 데이터베이스 블로그
+
 ![image](/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_3.png)
 
 <div class="content-ad"></div>
@@ -99,7 +99,7 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![LangChain](/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_4.png)
 
 LangChain — 텍스트 분리기는 LangChain에서 구현된 다양한 텍스트 분리기 목록입니다. 문서를 로드한 후에는 종종 애플리케이션에 더 적합하도록 변환하고 싶을 것입니다.
@@ -107,7 +107,7 @@ LangChain — 텍스트 분리기는 LangChain에서 구현된 다양한 텍스�
 가장 간단한 예는 긴 문서를 모델 컨텍스트 창에 맞게 더 작은 조각으로 나누고 싶을 수 있다는 것입니다. LangChain에는 문서를 쉽게 분할, 결합, 필터링 및 기타 조작할 수 있게 해주는 내장 문서 변환기가 여러 개 있습니다.
 
 텍스트의 긴 부분을 처리하려면 해당 텍스트를 조각으로 나누는 것이 필요합니다. 이것이 얼마나 단순한 것처럼 들리더라도 여기에는 많은 잠재적인 복잡성이 있습니다. 이상적으로는 의미론적으로 관련된 텍스트 조각을 함께 유지하고 싶을 것입니다. "의미론적으로 관련된"이란 무슨 의미인지는 텍스트 유형에 따라 달라질 수 있습니다. 이 노트북에서는 이를 수행하는 여러 방법을 소개합니다.
-```
+
 
 <div class="content-ad"></div>
 

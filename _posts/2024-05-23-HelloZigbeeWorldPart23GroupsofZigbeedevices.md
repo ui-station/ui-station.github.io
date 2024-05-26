@@ -3,13 +3,12 @@ title: "안녕하세요, 지그비 세계, 제23부  지그비 장치 그룹들"
 description: ""
 coverImage: "/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_0.png"
 date: 2024-05-23 16:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_0.png
 tag: Tech
 originalTitle: "Hello Zigbee World, Part 23 — Groups of Zigbee devices"
 link: "https://medium.com/@omaslyuchenko/hello-zigbee-world-part-23-groups-of-zigbee-devices-0a826b7e9312"
 ---
-
 
 <img src="/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_0.png" />
 
@@ -36,7 +35,7 @@ link: "https://medium.com/@omaslyuchenko/hello-zigbee-world-part-23-groups-of-zi
 
 따라서 스위치는 빛 그룹에 On 명령을 보낼 수 있습니다. 이 그룹에 속한 모든 조명이 켜집니다.
 
-네트워크 계층에서 그룹 전송이 처리되지만, 그룹을 제어하는 작업은 그룹 클러스터에 의해 수행됩니다. 이는 기기 엔드포인트를 그룹에 추가하거나, 기기가 속한 그룹 목록을 나열하거나, 기기를 그룹에서 제거할 수 있는 특수 클러스터입니다. 
+네트워크 계층에서 그룹 전송이 처리되지만, 그룹을 제어하는 작업은 그룹 클러스터에 의해 수행됩니다. 이는 기기 엔드포인트를 그룹에 추가하거나, 기기가 속한 그룹 목록을 나열하거나, 기기를 그룹에서 제거할 수 있는 특수 클러스터입니다.
 
 ![Hello Zigbee World](/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_1.png)
 
@@ -50,7 +49,6 @@ link: "https://medium.com/@omaslyuchenko/hello-zigbee-world-part-23-groups-of-zi
 
 <div class="content-ad"></div>
 
-```md
 ![Hello Zigbee World Part 23](/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_3.png)
 
 Zigbee 코디네이터는 하드웨어 내부에서 장치 endpoint로 AddGroup 메시지를 보내어, 그 장치가 이제 언급된 그룹 ID로 보내진 그룹 메시지를 수신해야 한다는 것을 나타냅니다.
@@ -58,7 +56,7 @@ Zigbee 코디네이터는 하드웨어 내부에서 장치 endpoint로 AddGroup 
 ![Hello Zigbee World Part 23](/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_4.png)
 
 # 대량생산된 장치들의 동작
-```
+
 
 <div class="content-ad"></div>
 
@@ -72,7 +70,7 @@ Zigbee 코디네이터는 하드웨어 내부에서 장치 endpoint로 AddGroup 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_6.png)
 
 To allow these devices to control a group, you need to create a new binding to the group. A device can control multiple groups by adding more bindings.
@@ -80,11 +78,11 @@ To allow these devices to control a group, you need to create a new binding to t
 ![Image](/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_7.png)
 
 Here is an example of how the bind request appears.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Hello Zigbee World Part 23 Groupsof Zigbee devices 8](/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_8.png)
 
 From now on, these controllers not only generate regular messages to the coordinator to report the button press but also On and Off commands to the bound group.
@@ -92,7 +90,7 @@ From now on, these controllers not only generate regular messages to the coordin
 ![Hello Zigbee World Part 23 Groupsof Zigbee devices 9](/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_9.png)
 
 As expected, all the lights in the group turn on and off simultaneously.
-```
+
 
 <div class="content-ad"></div>
 
@@ -162,7 +160,7 @@ struct OnOffClusterInstances
 ...
 
 class SwitchEndpoint: public Endpoint
-{    
+{
 protected:
 ...
     tsCLD_Groups sGroupsServerCluster;
@@ -241,7 +239,7 @@ void vDisplayGroupsTable()
 
 그리고, 그룹 기능을 위한 자동화 테스트를 개발하기 위해 자연스럽게 노력했습니다. 제가 한 모든 단계를 설명하고 싶지는 않아요. 오히려 그룹 기능과는 무관한 몇 가지 리팩터링을 하여 테스트 가독성을 개선했어요. 그룹 테스트에 관련된 몇 가지 주요 변경 사항만 간략히 언급하겠습니다.
 
-먼저, Z2M 브릿지 요청을 처리할 Bridge 도우미 클래스를 만들었어요. 이 방법은 zigbee2mqtt/bridge/request/ * 토픽으로 요청을 보내고 해당 zigbee2mqtt/bridge/response/ * 토픽에서 응답을 수신하는 편리한 방법이에요. Bridge는 그룹을 생성하고 제거하며, 디바이스를 그룹에 추가/제거하는 역할을 담당해요.
+먼저, Z2M 브릿지 요청을 처리할 Bridge 도우미 클래스를 만들었어요. 이 방법은 zigbee2mqtt/bridge/request/ _ 토픽으로 요청을 보내고 해당 zigbee2mqtt/bridge/response/ _ 토픽에서 응답을 수신하는 편리한 방법이에요. Bridge는 그룹을 생성하고 제거하며, 디바이스를 그룹에 추가/제거하는 역할을 담당해요.
 
 <div class="content-ad"></div>
 
@@ -315,7 +313,7 @@ def group(zigbee, bridge):
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 테스트 그룹에 스위치를 추가하는 fixture입니다
 @pytest.fixture(scope="function")
 def switch_on_group(switch, group):
@@ -331,7 +329,7 @@ def switch_on_group(switch, group):
     # 그룹 멤버십 정리
     resp = group.remove_device(switch)
     assert resp['status'] == 'ok'
-```
+
 
 이제 테스트를 시작할 시간입니다. 간단한 테스트는 그룹에 On/Off/Toggle 명령을 보내고, 장치가 이러한 명령을 올바르게 수신하고 처리하는지 확인하는 것입니다.
 
@@ -352,7 +350,7 @@ class Group:
 ```
 
 이전 글에서는 장치로 On/Off 명령을 보내고, 동일한 함수에서 장치의 응답을 확인했습니다. 새로운 설계에서는 그룹과 장치가 별도의 개체로 다뤄져야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -374,7 +372,7 @@ def test_on_off(group, switch_on_group):
 두 번의 `wait_zigbee_state_change()` 호출에 주의하세요. 이는 z2m 그룹 구현 때문입니다. 그룹에 On/Off 명령을 보내면, zigbee2mqtt가 모든 그룹 장치 대신에 상태 변경을 추측하여 자동으로 응답합니다. 이 테스트는 이러한 메시지를 무시하고, 대신 그 다음에 오는 실제 장치 상태 보고를 기다립니다.
 
 # Summary
-```
+
 
 <div class="content-ad"></div>
 
@@ -399,3 +397,4 @@ def test_on_off(group, switch_on_group):
 이 프로젝트는 개인 프로젝트로 무료로 개발되고 있습니다. 동시에 작은 기부로 프로젝트를 지원할 수도 있습니다.
 
 ![HelloZigbeeWorldPart23GroupsofZigbeedevices_15](/assets/img/2024-05-23-HelloZigbeeWorldPart23GroupsofZigbeedevices_15.png)
+

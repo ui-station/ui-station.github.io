@@ -3,13 +3,12 @@ title: "전자 상거래에서 테마 기반 분류와 GenAI를 활용한 패션
 description: ""
 coverImage: "/assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_0.png"
 date: 2024-05-23 17:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_0.png
 tag: Tech
 originalTitle: "Transforming Fashion Discovery in E-Commerce through Theme-Based Categorization with GenAI"
 link: "https://medium.com/@dschonfeld/transforming-fashion-discovery-in-e-commerce-through-theme-based-categorization-with-genai-8c32aa0224e9"
 ---
-
 
 By
 Xingming Qu
@@ -114,7 +113,7 @@ Jonathan Galsurkar
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_8.png" />
 
 <img src="/assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_9.png" />
@@ -123,7 +122,7 @@ Jonathan Galsurkar
 
 Chen Xue
 그리고 Xuyan Zhou도 이 기사에 기고했습니다.
-```
+
 
 <div class="content-ad"></div>
 

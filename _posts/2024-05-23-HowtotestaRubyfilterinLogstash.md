@@ -351,10 +351,9 @@ end
 
 아래는 Markdown 형식으로 변경한 내용입니다.
 
-```
+
 ![이미지1](/assets/img/2024-05-23-HowtotestaRubyfilterinLogstash_0.png)
 
 ![이미지2](/assets/img/2024-05-23-HowtotestaRubyfilterinLogstash_1.png)
 
 테스트가 실패한 경우, 테스트 케이스 이름 및 필요한 모든 정보(매개변수, 입력 이벤트, 결과)를 명확히 확인할 수 있습니다. 최소한 하나의 테스트가 실패하면 연결된 파이프라인은 시작되지 않습니다.
-```

@@ -318,7 +318,7 @@ void drawSwissFlag() {
 ```
 
 ![Car License Plate Recognition with TinyML](/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_16.png)
-```
+
 
 <div class="content-ad"></div>
 

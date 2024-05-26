@@ -3,7 +3,7 @@ title: "Kubernetes에서 애플리케이션 배포, 확장 및 장애 조치 중
 description: ""
 coverImage: "/assets/img/2024-05-23-HowKubernetesuseshealthprobesduringapplicationdeploymentscalingandfailover_0.png"
 date: 2024-05-23 14:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowKubernetesuseshealthprobesduringapplicationdeploymentscalingandfailover_0.png
 tag: Tech
 originalTitle: "How Kubernetes uses health probes during application deployment, scaling, and failover."
@@ -11,7 +11,6 @@ link: "https://medium.com/@rdalal3/how-kubernetes-uses-health-probes-during-appl
 ---
 
 
-```markdown
 ![Health probes](/assets/img/2024-05-23-HowKubernetesuseshealthprobesduringapplicationdeploymentscalingandfailover_0.png)
 
 헬스 프로브는 견고한 클러스터를 유지하는 중요한 부분입니다. 프로브를 사용하면 클러스터가 응답 여부를 반복적으로 조사하여 응용 프로그램의 상태를 결정할 수 있습니다.
@@ -19,9 +18,9 @@ link: "https://medium.com/@rdalal3/how-kubernetes-uses-health-probes-during-appl
 일련의 헬스 프로브는 클러스터가 다음 작업을 수행하는 능력에 영향을 미칩니다:
 
 - 실패 중인 팟을 자동으로 다시 시작을 시도하여 충돌 방지
-- 건강한 팟에게만 요청을 보내어 장애 극복 및 부하 분산 
+- 건강한 팟에게만 요청을 보내어 장애 극복 및 부하 분산
 - 팟이 실패하는 시기와 이유를 결정하여 모니터링
-```
+
 
 <div class="content-ad"></div>
 
@@ -95,19 +94,19 @@ metadata:
   name: liveness-exec
 spec:
   containers:
-  - name: liveness
-    image: registry.k8s.io/busybox
-    args:
-    - /bin/sh
-    - -c
-    - touch /tmp/healthy; sleep 30; rm -f /tmp/healthy; sleep 600
-    livenessProbe:
-      exec:
-        command:
-        - cat
-        - /tmp/healthy
-      initialDelaySeconds: 5
-      periodSeconds: 5
+    - name: liveness
+      image: registry.k8s.io/busybox
+      args:
+        - /bin/sh
+        - -c
+        - touch /tmp/healthy; sleep 30; rm -f /tmp/healthy; sleep 600
+      livenessProbe:
+        exec:
+          command:
+            - cat
+            - /tmp/healthy
+        initialDelaySeconds: 5
+        periodSeconds: 5
 ```
 
 예시 2
@@ -119,18 +118,18 @@ metadata:
   name: hello-app-liveness-pod
 spec:
   containers:
-  - name: hello-app-container
-    image: gcr.io/google-samples/hello-app:1.0  # 애플리케이션 이미지로 교체하세요
-    ports:
-    - containerPort: 8080  # 애플리케이션의 수신 포트와 일치해야 합니다
-    livenessProbe:
-      httpGet:
-        path: /
-        port: 8080
-initialDelaySeconds: 15  # 컨테이너가 시작된 후 생존성 프로브가 시작되기까지의 시간(초)
-periodSeconds: 10  # 프로브를 수행하는 주기(초)
-timeoutSeconds: 1  # 응답을 기다리는 시간(초)
-failureThreshold: 3  # 재시작하기 전에 허용되는 실패 횟수
+    - name: hello-app-container
+      image: gcr.io/google-samples/hello-app:1.0 # 애플리케이션 이미지로 교체하세요
+      ports:
+        - containerPort: 8080 # 애플리케이션의 수신 포트와 일치해야 합니다
+      livenessProbe:
+        httpGet:
+          path: /
+          port: 8080
+initialDelaySeconds: 15 # 컨테이너가 시작된 후 생존성 프로브가 시작되기까지의 시간(초)
+periodSeconds: 10 # 프로브를 수행하는 주기(초)
+timeoutSeconds: 1 # 응답을 기다리는 시간(초)
+failureThreshold: 3 # 재시작하기 전에 허용되는 실패 횟수
 ```
 
 <div class="content-ad"></div>
@@ -139,10 +138,10 @@ failureThreshold: 3  # 재시작하기 전에 허용되는 실패 횟수
 
 ```js
 oc set probe deployment/front-end \
---readiness \ 
---failure-threshold 6 \ 
---period-seconds 10 \ 
---get-url http://:8080/healthz 
+--readiness \
+--failure-threshold 6 \
+--period-seconds 10 \
+--get-url http://:8080/healthz
 ```
 
 set probe 명령은 RHOCP와 oc에만 존재합니다.

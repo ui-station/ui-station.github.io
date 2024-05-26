@@ -3,13 +3,12 @@ title: "맥OS에서 여러 JDK를 설치하고 전환하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-23-InstallingswitchingbetweenmultipleJDKonmacOS_0.png"
 date: 2024-05-23 15:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-InstallingswitchingbetweenmultipleJDKonmacOS_0.png
 tag: Tech
 originalTitle: "Installing , switching between multiple JDK on macOS"
 link: "https://medium.com/@manvendrapsingh/installing-many-jdk-versions-on-macos-dfc177bc8c2b"
 ---
-
 
 ![JDK installation on macOS](/assets/img/2024-05-23-InstallingswitchingbetweenmultipleJDKonmacOS_0.png)
 
@@ -26,7 +25,7 @@ macOS에서 소프트웨어를 설치하는 잘 알려진 과정은 앱 아이�
 도구의 홈페이지에 따르면,
 
 ```js
-macOS를 위한 누락 된 패키지 관리자입니다. 
+macOS를 위한 누락 된 패키지 관리자입니다.
 Homebrew는 macOS에 포함되지 않은 UNIX 도구를 설치하는 가장 쉽고 유연한 방법입니다.
 ```
 
@@ -81,7 +80,7 @@ brew install openjdk@11
 Mac 프로그램에서 어떤 것을 사용할지 확인해 보겠습니다.
 
 - 어떤 기기에서든 현재 자바 버전을 확인하는 가장 쉬운 방법은
-java -version을 사용하는 것입니다.
+  java -version을 사용하는 것입니다.
 - macOS에 설치된 모든 자바 버전을 확인할 수도 있습니다. java_home /usr/libexec/java_home -V를 사용하세요.
 
 <div class="content-ad"></div>
@@ -93,13 +92,13 @@ java -version을 사용하는 것입니다.
 어떤 이유에서인지 macOS는 Homebrew로 설치한 Java를 감지하지 못합니다. 이것은 Homebrew를 사용하여 패키지를 설치할 때 매번 나타나는 문제입니다.
 
 - 패키지를 패키지 자체 디렉토리에 설치합니다.
-M1-Mac의 경우 /opt/homebrew/Cellar에
-Intel Mac의 경우 /usr/local/Cellar에
+  M1-Mac의 경우 /opt/homebrew/Cellar에
+  Intel Mac의 경우 /usr/local/Cellar에
 - /opt/homebrew/opt 아래에 심볼릭 링크도 생성합니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-23-InstallingswitchingbetweenmultipleJDKonmacOS_4.png" />
 
 하지만 *nix 시스템은 /usr/bin/java, /usr/lib/jvm 및 /usr/local/bin/java에서 Java를 찾습니다. Apple의 모든 것들과 마찬가지로 macOS는 다릅니다. Java를 /Library/Java/JavaVirtualMachines/에서 찾습니다.
@@ -107,7 +106,7 @@ Intel Mac의 경우 /usr/local/Cellar에
 이러한 JDK 설치법은 /Library/Java/JavaVirtualMachines/ 폴더 아래 필요한 softlink를 설정할 수 있었을 것입니다. 그러나 디자인상 이러한 JDK 설치법은 keg-only로 유지됩니다.
 
 <img src="/assets/img/2024-05-23-InstallingswitchingbetweenmultipleJDKonmacOS_5.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -141,7 +140,7 @@ JAVA_HOME은 Java 프로그램이 Java 위치를 선택하도록 하는 환경 �
 
 <div class="content-ad"></div>
 
-```markdown
+`
 ![이미지](/assets/img/2024-05-23-InstallingswitchingbetweenmultipleJDKonmacOS_9.png)
 
 - 이 명령어의 출력을 활용하여 JAVA_HOME을 아래와 같이 설정할 수 있습니다.
@@ -157,7 +156,7 @@ alias java-11=”export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version�
 
 모두 완료되었습니다.
 원하는 때마다 터미널이나 iTerm에서 java-11 또는 java-17을 입력하세요.
-```
+
 
 <div class="content-ad"></div>
 

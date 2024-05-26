@@ -3,13 +3,12 @@ title: "2024년 데이터 과학 - 무엇이 변했나요"
 description: ""
 coverImage: "/assets/img/2024-05-23-DataSciencein2024WhatHasChanged_0.png"
 date: 2024-05-23 15:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DataSciencein2024WhatHasChanged_0.png
 tag: Tech
 originalTitle: "Data Science in 2024 — What Has Changed"
 link: "https://medium.com/@nathanrosidi/data-science-in-2024-what-has-changed-c6be8f3ddbd7"
 ---
-
 
 데이터 과학 분야에서 무엇이 변화했는지 그리고 2024년 데이터 과학 취업 시장의 어려움은 무엇인지 알고 싶습니다.
 
@@ -81,27 +80,27 @@ SQL은 영원히 존재할 것입니다. 한편으로는 R, SAS 및 SAP와 같�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Data Science Trends](/assets/img/2024-05-23-DataSciencein2024WhatHasChanged_7.png)
 
 Initial hype is settling, and companies are now seeking tangible results. Data scientists must demonstrate their value by specializing in specific skills, such as ML engineering.
 
 ![Data Science Trends](/assets/img/2024-05-23-DataSciencein2024WhatHasChanged_8.png)
-```
+
 
 <div class="content-ad"></div>
 
 데이터 엔지니어링,
 
-```markdown
+
 ![image1](/assets/img/2024-05-23-DataSciencein2024WhatHasChanged_9.png)
-```
+
 
 또는 데이터 분석.
 
-```markdown
+
 ![image2](/assets/img/2024-05-23-DataSciencein2024WhatHasChanged_10.png)
-```
+
 
 <div class="content-ad"></div>
 

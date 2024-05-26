@@ -3,13 +3,12 @@ title: "Argo CD 리포지토리를 구조화하는 방법 Application Sets 사�
 description: ""
 coverImage: "/assets/img/2024-05-23-HowtoStructureYourArgoCDRepositoriesUsingApplicationSets_0.png"
 date: 2024-05-23 14:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowtoStructureYourArgoCDRepositoriesUsingApplicationSets_0.png
 tag: Tech
 originalTitle: "How to Structure Your Argo CD Repositories Using Application Sets"
 link: "https://medium.com/containers-101/how-to-structure-your-argo-cd-repositories-using-application-sets-1150e75d05b3"
 ---
-
 
 <img src="/assets/img/2024-05-23-HowtoStructureYourArgoCDRepositoriesUsingApplicationSets_0.png" />
 
@@ -46,7 +45,7 @@ Argo CD 애플리케이션을 조직하는 방법은 많은 자료와 블로그�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-23-HowtoStructureYourArgoCDRepositoriesUsingApplicationSets_2](/assets/img/2024-05-23-HowtoStructureYourArgoCDRepositoriesUsingApplicationSets_2.png)
 
 많은 사람들이 생각하는 것과는 달리, 개발자들은 이러한 유형의 manifest로 괴롭힘받길 원하지 않아요. 운영자들에게도 이 유형의 manifest는 한 번 설정하고 나면 그냥 잊어버릴 것입니다. 어플리케이션 세트 manifest 역시 동일한 범주에 속합니다.
@@ -54,11 +53,11 @@ Argo CD 애플리케이션을 조직하는 방법은 많은 자료와 블로그�
 세 번째와 네 번째 범주는 첫 번째와 두 번째와 동일하지만, 이번에는 개발자들이 만드는 내부 애플리케이션 대신 인프라 애플리케이션(cert manager, nginx, coredns, prometheus 등)에 대해 이야기합니다.
 
 이 manifest에 대해 개발자의 애플리케이션과 다른 템플릿 시스템을 사용할 수 있습니다. 예를 들어, 준비된 애플리케이션에 대해서는 Helm을 사용하고, 개발자가 만든 애플리케이션에 대해서는 Kustomize를 선택하는 매우 인기 있는 패턴이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-위 4가지 종류의 manifests로 핵심 포커스는 아래 2가지 카테고리에 대한 것입니다. 
+위 4가지 종류의 manifests로 핵심 포커스는 아래 2가지 카테고리에 대한 것입니다.
 
 - 개발자들은 인프라 manifests에 대해 신경 쓰지 않습니다.
 - 이러한 manifests는 매우 자주 변경되지 않습니다. 보통 해당 구성 요소를 업그레이드하거나 매개 변수를 세밀하게 조정할 때에만 변경됩니다.
@@ -83,10 +82,10 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  
+
   source:
-    repoURL: https://github.com/example-org/example-repo.git  
-    targetRevision: HEAD  
+    repoURL: https://github.com/example-org/example-repo.git
+    targetRevision: HEAD
     path: my-chart
 
 
@@ -122,7 +121,7 @@ spec:
 
 <div class="content-ad"></div>
 
-이 매니페스트는 두 가지를 동시에 수행합니다. 주 파일은 Argo 앱(카테고리 2)에 관한 내용이지만, "helm" 속성은 실제로 Kubernetes 응용 프로그램(카테고리 1)에 대한 값들을 포함하고 있습니다. 
+이 매니페스트는 두 가지를 동시에 수행합니다. 주 파일은 Argo 앱(카테고리 2)에 관한 내용이지만, "helm" 속성은 실제로 Kubernetes 응용 프로그램(카테고리 1)에 대한 값들을 포함하고 있습니다.
 
 이 매니페스트는 다음과 같이 차트와 동일한 Git 저장소에 있는 값 파일에 모든 매개변수를 넣음으로써 쉽게 수정할 수 있습니다.
 
@@ -137,9 +136,9 @@ spec:
 
 
   source:
-    repoURL: https://github.com/example-org/example-repo.git  
-    targetRevision: HEAD  
-    path: my-chart  
+    repoURL: https://github.com/example-org/example-repo.git
+    targetRevision: HEAD
+    path: my-chart
 
 
     helm:
@@ -199,7 +198,7 @@ spec:
     repoURL: https://github.com/example-org/example-repo.git
     targetRevision: HEAD
     path: my-app
-   
+
     # 이렇게 하지 마세요
     kustomize:
       namePrefix: prod-
@@ -285,7 +284,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/example-org/example-repo.git  
+    repoURL: https://github.com/example-org/example-repo.git
     targetRevision: dev
     ## 이전에는 "targetRevision: staging"이었고, 그 이전에는 "targetRevision: 1.0.0"였으며,
     ## 그보다 전에는 "targetRevision: 1.0.0-rc" 였습니다.
@@ -436,14 +435,14 @@ spec:
   goTemplate: true
   goTemplateOptions: ["missingkey=error"]
   generators:
-  - git:
-    repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
-    revision: HEAD
-    directories:
-    - path: apps/*/envs/qa   
-  template:    
+    - git:
+      repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
+      revision: HEAD
+      directories:
+        - path: apps/*/envs/qa
+  template:
   metadata:
-    name: '{index .path.segments 1}-{index .path.segments 3}'   
+    name: "{index .path.segments 1}-{index .path.segments 3}"
   spec:
     # 애플리케이션이 속한 프로젝트입니다.
     project: default
@@ -452,12 +451,12 @@ spec:
     source:
       repoURL: https://github.com/kostis-codefresh/many-appsets-demo.git
       targetRevision: HEAD
-      path: '{.path.path}'
-    
+      path: "{.path.path}"
+
     # 애플리케이션을 배포할 대상 클러스터 및 네임스페이스
     destination:
       server: https://kubernetes.default.svc
-      namespace: '{index .path.segments 1}-{index .path.segments 3}'
+      namespace: "{index .path.segments 1}-{index .path.segments 3}"
 ```
 
 <div class="content-ad"></div>

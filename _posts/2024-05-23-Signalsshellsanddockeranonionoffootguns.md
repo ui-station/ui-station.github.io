@@ -3,13 +3,12 @@ title: "신호, 셸 및 도커 발을 쏘는 축적체"
 description: ""
 coverImage: "/assets/img/2024-05-23-Signalsshellsanddockeranonionoffootguns_0.png"
 date: 2024-05-23 15:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Signalsshellsanddockeranonionoffootguns_0.png
 tag: Tech
 originalTitle: "Signals, shells, and docker: an onion of footguns"
 link: "https://medium.com/benchling-engineering/signals-shells-and-docker-an-onion-of-footguns-ee592e2b587b"
 ---
-
 
 가끔은 POSIX 시그널(SIGINT, SIGTERM 등)을 디버깅해야 할 때가 있었습니다. 불가피하게 쉘도 포함되어 있죠. 어느 날, 시그널, 쉘 및 컨테이너 간 이상한 상호 작용을 디버깅하던 중에 일부 행동에 혼란스러워졌습니다. Linux에 대해 자신 있다고 생각하는 사람들조차도 우리 조사 결과의 일부 내용이 놀라울 정도로 신기할 것이라 생각됩니다. 이런 종류의 내용이 여러분이 노트북을 창문 밖으로 던지고 알파카 농부 은둔자가 되고 싶지 않는다면 계속 읽어보세요.
 
@@ -49,7 +48,7 @@ test_pipeline에서 pytest로 신호를 전달하지 않는 문제일 수도 있
 ```bash
 $ echo $$
 20147
-```  
+```
 
 <div class="content-ad"></div>
 
@@ -175,16 +174,18 @@ zsh(20147)───sleep(65920)
 프로그램을 "실행"할 때 일반적으로 하는 것은 fork한 후에 exec하는 것을 의미합니다. fork는 새로운 프로세스의 부모 pid를 설정하여 나중에 pstree와 같은 도구가 이쁜 트리를 그릴 수 있도록 합니다. exec는 새로운 프로세스의 명령을 설정하여 pstree와 같은 도구가 해당 pid가 무슨 일을 하는지 유의미한 정보를 보여줄 수 있도록 합니다.
 
 하지만 이곳에서 일어난 일은 bash가 단순히 sleep을 exec해주기 전에 fork하는 것을 건너뛴 것입니다. 이 동작에 대한 문서를 찾을 수 없어서, 대신 해드릴 수 있는 것은 ash 소스 코드입니다:
-```  
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ```js
 /* 포크를 피할 수 있을까요? 예를 들어, 스크립트나 서브셸에서
-* 가장 마지막 명령은 포킹이 필요 없습니다,
-* 그냥 실행(exec)할 수 있습니다.
-*/
+ * 가장 마지막 명령은 포킹이 필요 없습니다,
+ * 그냥 실행(exec)할 수 있습니다.
+ */
 ```
 
 바쉬가 자신을 sleep으로 교체하고 pstree에 보여지는 것은, 이제 sleep을 실행 중인 것의 부모가 zsh 임을 보여줍니다. 대신 `bash -c 'sleep infinity && done'`을 실행함으로써 이전 동작을 얻을 수 있습니다.
@@ -196,12 +197,13 @@ sh
 └─bash
     └─test_pipeline
         └─pytest
-``` 
 ```
+
+
 
 <div class="content-ad"></div>
 
-잠깐만요! 나무 구조에서 'sh'가 자체 PID가 아니라는 것을 깨달을 때까지는... 
+잠깐만요! 나무 구조에서 'sh'가 자체 PID가 아니라는 것을 깨달을 때까지는...
 
 # sh, bash, dash, 그리고 ash에 관한 간단한 쉬는 시간
 
@@ -221,7 +223,8 @@ sh는 Bourne 쉘(보통 "POSIX sh"로 불립니다.)이며, Bash는 Bourne 쉘�
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![Image](/assets/img/2024-05-23-Signalsshellsanddockeranonionoffootguns_1.png)
 
 # 범죄 현장으로 돌아가기
@@ -249,10 +252,10 @@ ci-agent는 사실상 도커에게 스크립트를 실행하라고 지시하는 
 
 ```md
 ci-agent
-    └─docker
-        └─bash
-            └─test_pipeline
-                └─pytest
+└─docker
+└─bash
+└─test_pipeline
+└─pytest
 ```
 
 도커가 신호를 베쉬에게 전달하나요? 도커는 각 컨테이너마다 새로운 pid 네임스페이스를 생성하기 때문에 실행되는 명령이 pid 1이 됩니다. 1은 매우 특별한 pid입니다 (일반적으로 init 프로세스) 그리고 기본 신호 처리기를 가져오지 않습니다. 이 문제를 해결하기 위해 tini 또는 dumb-init을 pid 1로 사용하는 것이 일반적입니다.
@@ -261,11 +264,11 @@ ci-agent
 
 ```md
 ci-agent
-    └─docker
-        └─dumb-init
-            └─bash
-                └─test_pipeline
-                    └─pytest
+└─docker
+└─dumb-init
+└─bash
+└─test_pipeline
+└─pytest
 ```
 
 <div class="content-ad"></div>

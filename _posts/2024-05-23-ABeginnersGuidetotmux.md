@@ -3,13 +3,12 @@ title: "tmux 초보자를 위한 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-23-ABeginnersGuidetotmux_0.png"
 date: 2024-05-23 15:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ABeginnersGuidetotmux_0.png
 tag: Tech
 originalTitle: "A Beginner’s Guide to tmux"
 link: "https://medium.com/pragmatic-programmers/a-beginners-guide-to-tmux-7e6daa5c0154"
 ---
-
 
 <img src="/assets/img/2024-05-23-ABeginnersGuidetotmux_0.png" />
 
@@ -45,7 +44,7 @@ Tmux은 또한 프로그램을 주요 터미널에서 분리하여 우연한 연
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![tmux](/assets/img/2024-05-23-ABeginnersGuidetotmux_2.png)
 
 Tmux은 Screen에서 발견되는 일부 기능과 동일한 기능을 제공하며 일부 Linux 배포판에서는 더 이상 사용되지 않습니다. Tmux는 Screen보다 더 현대적인 코드 베이스를 갖추었으며 추가적인 사용자 정의 기능을 제공합니다.
@@ -53,7 +52,7 @@ Tmux은 Screen에서 발견되는 일부 기능과 동일한 기능을 제공하
 이제 몇 가지 tmux의 이점을 알았으니, 설치 및 사용 방법을 보여드리겠습니다.
 
 # tmux 설치
-```
+
 
 <div class="content-ad"></div>
 
@@ -212,7 +211,8 @@ bind C-a send-prefix
 # 상태 표시줄 사용자 정의
 
 Tmux의 상태 표시줄은 완벽하게 사용자 정의할 수 있습니다. 각 섹션의 색상 및 표시 내용을 변경할 수 있습니다. 이러한 많은 옵션이 있기 때문에 다룰 내용이 또 다른 기사가 필요할 정도이지만, 기초부터 시작하겠습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -249,3 +249,4 @@ Go 프로그래밍 언어로 직접 빠르고 신뢰할 수 있으며 크로스 
 <div class="content-ad"></div>
 
 ![2024-05-23-ABeginnersGuidetotmux_7](/assets/img/2024-05-23-ABeginnersGuidetotmux_7.png)
+

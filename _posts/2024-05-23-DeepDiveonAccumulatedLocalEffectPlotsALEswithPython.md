@@ -3,13 +3,12 @@ title: "파이썬을 사용하여 쌓인 지역 효과 플롯ALE에 대해 깊�
 description: ""
 coverImage: "/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_0.png"
 date: 2024-05-23 15:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_0.png
 tag: Tech
 originalTitle: "Deep Dive on Accumulated Local Effect Plots (ALEs) with Python"
 link: "https://medium.com/towards-data-science/deep-dive-on-accumulated-local-effect-plots-ales-with-python-0fc9698ed0ee"
 ---
-
 
 고도로 상관된 기능들은 모델 해석에 혼란을 야기할 수 있습니다. 이러한 기능들은 많은 XAI 방법의 가정을 위반하며, 특성과 타겟 간의 관계를 이해하기 어렵게 만듭니다. 동시에 이러한 기능들을 제거하지 않고는 성능에 영향을 미치지 않으면서 제거할 수 없는 경우도 있습니다. 다중공선성이 있어도 명확한 해석을 제공할 수 있는 방법이 필요합니다. 다행히 ALE(Accumulated Local Effects)에 의존할 수 있습니다.
 
@@ -51,7 +50,7 @@ ALE은 전역 해석 방법입니다. PDP와 비슷하게 모델에 포착된 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_4.png)
 
 다음 단계는 샘플 쌍의 두 샘플에 대한 블랙박스 모델 예측을 가져오는 것입니다. 그런 다음 최소 샘플(주황색)의 예측값을 최대 샘플(녹색)의 예측값에서 뺍니다. 이 작업을 모든 샘플 쌍에 대해 수행하고 평균을 계산합니다. 이는 이 간격 내에서 껍질 무게의 변화로 인한 예측에 대한 추정치를 제공합니다. 중요한 점은 살아있는 무게와의 상관관계가 이 추정치를 왜곡시키지 않는다는 것입니다.
@@ -59,7 +58,7 @@ ALE은 전역 해석 방법입니다. PDP와 비슷하게 모델에 포착된 �
 ![Image](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_5.png)
 
 좋아요, 이는 특정 간격 내에서의 효과를 제공합니다. 전반적인 추세를 얻으려면 기능 범위 내의 모든 연속적인 간격에 대해 이 작업을 수행하고 개별 효과를 더해야 합니다. 새로운 간격으로 이동할 때마다 효과를 누적 효과에 추가하고 점을 그립니다. 이를 수행하면 껍질 무게에 대한 ALE를 얻을 수 있습니다. 이제 이름의 유래를 확인할 수 있습니다. 간겭(지역) 내에서 기능 효과를 누적하고 있는 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -73,7 +72,7 @@ ALE에 대한 수학적 공식이 있습니다. 이번에는 그걸 넘기겠습
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Deep Dive on Accumulated Local Effect Plots with Python](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_7.png)
 
 다양한 구현 방법은 이 알고리즘에 약간의 차이를 줄 수 있습니다. 예를 들어, 제 2 단계에서 간격을 정의하는 방식입니다. 아래 구현은 각 간격에 최소한의 피처가 포함되도록 정의합니다. 또한 각 간격의 너비가 일정한 것으로 정의할 수도 있습니다.
@@ -81,11 +80,10 @@ ALE에 대한 수학적 공식이 있습니다. 이번에는 그걸 넘기겠습
 # Alibi를 사용한 ALE 적용
 
 ALE을 적용하기 위해 alibi 패키지를 사용할 것입니다. 이 패키지는 다양한 XAI 방법을 제공합니다. 현재는 ALE 및 plot_ale 함수 (라인 8-9)에 관심이 있습니다. 이 패키지를 적용하고 플롯을 해석하는 방법을 살펴볼 것이며, 여러 ALE을 결합하고 간격 길이를 변경하는 방법에 대해 알아볼 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
-```js
 #데이터셋 및 모델
 
 이전에 언급한 전복 데이터 세트에 이 방법을 적용할 것입니다. 데이터 세트를 로드하고 타겟을 선택합니다. 또한 몇 가지 특성 엔지니어링을 진행합니다. 먼저, 직경과 전체 무게를 특성 목록에서 제외합니다. 그 이유는 Figure 1에서 다른 특성들과의 상관 관계가 1임을 확인했기 때문입니다. 마지막으로 성별 특성에 대해 원-핫 인코딩을 생성합니다. 최종 특성 세트의 스냅샷을 Figure 5에서 확인할 수 있습니다.
@@ -144,6 +142,7 @@ plot_ale(exp, features=[0,1,2], fig_kw={'figwidth':15, 'figheight': 5})
 ![image](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_9.png)
 
 제 6번 그림에서 얻을 수 있는 몇 가지 결론은 다음과 같습니다:
+
 - 길이와 높이가 예측된 링 개수에 미치는 영향은 껍질 무게와 비교할 때 낮습니다.
 - 껍질 무게에 대한 내려가는 선은 껍질 무게가 증가함에 따라 예측된 링 개수가 감소하는 경향을 보입니다.
 
@@ -181,7 +180,7 @@ shucked weight와 shell weight가 예측에 상당한 영향을 미치는 것을
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_11.png)
 
 여기서 변수 간격이 다른 것을 알 수 있습니다. 이는 패키지가 간격을 선택하는 방식과 관련이 있습니다. 기본적으로 적어도 4개의 인스턴스가 포함된 간격을 선택합니다. 따라서 ALEs에서 끝에서 두 번째와 마지막 포인트 사이에 상대적으로 큰 거리를 볼 수 있습니다. 이러한 가중치 값에 대해 데이터 세트가 희소해지고 적어도 4개의 인스턴스를 포착하기 위해 더 큰 간격이 필요합니다.
@@ -189,7 +188,7 @@ shucked weight와 shell weight가 예측에 상당한 영향을 미치는 것을
 ## 간격 길이 증가
 
 아래 코드에서는 동일한 차트를 만들되 한 가지 주요 차이가 있습니다. 간격 내의 최소 인스턴스 수를 50으로 변경했습니다 (3번째 줄). 이는 min_bin_points 매개변수를 사용하여 수행됩니다. Figure 9에서 볼 수 있듯이 결과는 더 부드러운 ALE 및 큰 간격입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -212,7 +211,8 @@ ax.set_xlabel('weight')
 `min_bin_points`는 ALE를 만들 때 trade-off를 도입합니다. 이 값을 줄이면 간격의 크기가 줄어듭니다. 이는 곡선의 진정한 모양에 더 가까워질 것입니다. 그러나 이러한 간격 내에서 효과를 추정하는 데 사용할 수 있는 샘플 크기가 줄어들어 불확실성에 직면하게 됩니다. 일반적으로 이 불확실성으로 인해 구간 간 변화보다는 전반적인 추세에 중점을 두어야 합니다.
 
 다른 고려사항은 ALE의 해석은 명료하지만 해당 해석을 얻는 방법을 설명하기는 복잡할 수 있다는 것입니다. PDP가 어떻게 생성되는지 비교할 때 적어도 그렇습니다. 따라서 두 방법을 함께 사용하는 것이 유용합니다. 결과가 일치하면 언제든 PDP를 제시할 수 있습니다. 이렇게 하면 평균 누적 로컬 효과가 무엇인지 설명하는 머리 아픈 작업이 절약될 수 있습니다!
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -227,3 +227,4 @@ ax.set_xlabel('weight')
 <div class="content-ad"></div>
 
 [1] Daniel W Apley 및 Jingyu Zhu. 블랙 박스 지도 학습 모델에서 예측 변수의 효과를 시각화하는 방법. Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(4):1059–1086, 2020.
+

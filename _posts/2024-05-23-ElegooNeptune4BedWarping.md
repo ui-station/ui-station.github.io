@@ -3,13 +3,12 @@ title: "원래 고전하던 지붕 휘어짐 현상은 3D 프린터 사용자에
 description: ""
 coverImage: "/assets/img/2024-05-23-ElegooNeptune4BedWarping_0.png"
 date: 2024-05-23 16:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ElegooNeptune4BedWarping_0.png
 tag: Tech
 originalTitle: "Elegoo Neptune 4 Bed Warping"
 link: "https://medium.com/@sharpninja/elegoo-neptune-4-bed-warping-c646633a4fb5"
 ---
-
 
 # 문제
 
@@ -21,10 +20,10 @@ Tuning 패널에서의 시각화를 기반으로 한 웨이브 형상이 침대�
 
 <div class="content-ad"></div>
 
-```markdown
+
 [gcode_macro PREHEAT_BED_WAIT_CALIBRATE]
 description: 침대를 예열한 다음 기다렸다가 교정합니다.
-gcode: 
+gcode:
   M118  [PREHEAT_BED_WAIT_CALIBRATE] 침대 예열 중.
   M190 S80 ;침대가 인쇄 온도에 도달할 때까지 기다림
   M118 [PREHEAT_BED_WAIT_CALIBRATE] 침대 예열 완료.
@@ -35,14 +34,15 @@ gcode:
   M118 [PREHEAT_BED_WAIT_CALIBRATE] 교정 완료
   M118 [PREHEAT_BED_WAIT_CALIBRATE] 교정 저장 및 클리퍼 재시작
   SAVE_CONFIG
-```
+
 
 ## 80도로 10분간 침대에서 발생한 변화 분석
 
 한 가지 흥미로운 점은 침대가 X축과 Y축 모두에 파도 모양을 나타내고 있으며, 아홉 개의 매우 높은 지점과 두 개의 세로 및 가로 도랑이 있습니다. 이는 실제로 가로줄과 세로줄이 표준 초기 패턴과 다르게 보이는데, 마치 틱택토 판가 눌려진 것 같습니다. 나는 나사를 여러 번 수동으로 조절했는데(매번 높이 설정을 위해 새로운 열려 있는 영수증을 사용합니다), 교정 패턴에 실질적인 변경이 없었습니다. 또한, 만약 나사가 정확하지 않으면 패턴은 일반적으로 한 쪽이나 한 코너가 크게 다른 것처럼 균일한 모양을 보이지만, 나는 지금과 같은 파도 모양이 아무런 힌트도 없다고 생각합니다.
 
 내 의심은 침대를 이동 프레임에 고정하는 나사가 침대가 열을 흡수함에 따라 확장되는 만큼 구부러진 선을 만들어내는 것입니다. 나사로 고정되지 않은 침대의 부분들이 침대가 흡수함에 따라 더 많이 팽창하기 때문입니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -71,3 +71,4 @@ gcode:
 ![이미지](/assets/img/2024-05-23-ElegooNeptune4BedWarping_2.png)
 
 요약 — 이게 세 가지 중에 제일 최악이에요.
+

@@ -3,7 +3,7 @@ title: "사용자 정의 테이블 함수 UDTF"
 description: ""
 coverImage: "/assets/img/2024-05-23-User-definedTableFunctionsUDTF_0.png"
 date: 2024-05-23 15:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-User-definedTableFunctionsUDTF_0.png
 tag: Tech
 originalTitle: "User-defined Table Functions (UDTF)"
@@ -11,7 +11,6 @@ link: "https://medium.com/@amandeep-singh-johar/user-defined-table-functions-udt
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-23-User-definedTableFunctionsUDTF_0.png)
 
 Spark 3.5에서는 파이썬 사용자 정의 테이블 함수(UDTF)를 소개했습니다. 이것은 새로운 종류의 사용자 정의 함수입니다. 스칼라 함수는 각 호출에 대해 하나의 결과를 생성하는 반면, UDTF는 쿼리의 FROM 절 내에서 호출되며 전체 테이블을 출력합니다. UDTF 호출은 스칼라 식이나 완전한 입력 테이블을 나타내는 테이블 인수 중 어떤 것이든 사용할 수 있습니다.
@@ -19,7 +18,7 @@ Spark 3.5에서는 파이썬 사용자 정의 테이블 함수(UDTF)를 소개�
 ![이미지](/assets/img/2024-05-23-User-definedTableFunctionsUDTF_1.png)
 
 ## 파이썬 UDTF 사용 이유
-```
+
 
 <div class="content-ad"></div>
 

@@ -3,13 +3,12 @@ title: "M1 M2 Mac 실리콘에 LinuxUbuntu 2004 설치하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_0.png"
 date: 2024-05-23 17:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_0.png
 tag: Tech
 originalTitle: "Install Linux (Ubuntu 20.04) on M1 M2 Mac Silicon"
 link: "https://medium.com/@shubhjain10102003/install-linux-ubuntu-20-04-on-m1-m2-mac-silicon-de1992d5fa26"
 ---
-
 
 <img src="/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_0.png" />
 
@@ -65,7 +64,7 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 5](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_5.png)
 
 ![Image 6](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_6.png)
@@ -73,7 +72,7 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 ![Image 7](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_7.png)
 
 ![Image 8](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -89,7 +88,7 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 
 <div class="content-ad"></div>
 
-```
+
 ![Screenshot 9](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_9.png)
 
 ![Screenshot 10](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_10.png)
@@ -97,11 +96,11 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 ![Screenshot 11](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_11.png)
 
 Select the keyboard configuration and the network connection configuration.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot 1](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_12.png)
 
 만약 외부 세계 "content😗"에 액세스하기 위해 어떤 HTTP 프록시도 사용하고 싶지 않다면, 프록시 주소 필드를 비워 두십시오.
@@ -110,23 +109,23 @@ Select the keyboard configuration and the network connection configuration.
 다음 단계에서는 전체 디스크 옵션을 선택해 주세요.
 
 ![Screenshot 2](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_13.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_14.png" />
 
-파일 시스템은 주어진 그대로 선택하고 계속 진행하세요. 
+파일 시스템은 주어진 그대로 선택하고 계속 진행하세요.
 
 이어진 단계에서 우분투 계정 프로필을 만들어 시스템에 로그인합니다.
 
 <img src="/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_15.png" />
 
-원한다면 다음 단계에서 오픈 SSH 서버를 사용할 수 있습니다! 
+원한다면 다음 단계에서 오픈 SSH 서버를 사용할 수 있습니다!
 
 다음 창에서 프로젝트나 업무에 유용하거나 사용할 서버 스냅을 선택하세요. 원한다면 나중에도 설치 가능합니다!!
-```
+
 
 <div class="content-ad"></div>
 
@@ -151,15 +150,15 @@ Select the keyboard configuration and the network connection configuration.
 <div class="content-ad"></div>
 
 - 우분투 데스크톱 시스템(gnome 3)을 설치하려면 다음을 실행하세요:
-$ sudo apt install ubuntu-desktop
-또는 Gnome 3 데스크톱을 위한 전환 패키지 이름을 사용해보세요:
-$ sudo apt install ubuntu-gnome-desktop
-Kubuntu Plasma 데스크톱/넷북 시스템(KDE)을 설치하려면 다음을 실행하세요 (가벼우면서 부드러운 터치를 선호합니다) :
-$ sudo apt install kubuntu-desktop
-Lubuntu 데스크톱 환경을 원하시나요? 다음을 실행하세요:
-$ sudo apt install lubuntu-desktop
-Xubuntu 데스크톱 시스템을 설치하려면 다음을 실행하세요:
-$ sudo apt install xubuntu-desktop
+  $ sudo apt install ubuntu-desktop
+  또는 Gnome 3 데스크톱을 위한 전환 패키지 이름을 사용해보세요:
+  $ sudo apt install ubuntu-gnome-desktop
+  Kubuntu Plasma 데스크톱/넷북 시스템(KDE)을 설치하려면 다음을 실행하세요 (가벼우면서 부드러운 터치를 선호합니다) :
+  $ sudo apt install kubuntu-desktop
+  Lubuntu 데스크톱 환경을 원하시나요? 다음을 실행하세요:
+  $ sudo apt install lubuntu-desktop
+  Xubuntu 데스크톱 시스템을 설치하려면 다음을 실행하세요:
+  $ sudo apt install xubuntu-desktop
 
 - 데스크톱 설치 과정이 완료되면 시스템을 한 번 더 재부팅하면 됩니다. 그 후, 와우! 새로운 깨끗하고 새로운 우분투 데스크톱에 로그인하게 될 것입니다.
 

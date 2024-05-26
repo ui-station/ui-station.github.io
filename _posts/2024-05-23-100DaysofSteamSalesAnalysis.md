@@ -3,13 +3,12 @@ title: "100일간의 스팀 세일 분석"
 description: ""
 coverImage: "/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_0.png"
 date: 2024-05-23 13:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-100DaysofSteamSalesAnalysis_0.png
 tag: Tech
 originalTitle: "100 Days of Steam Sales: Analysis"
 link: "https://medium.com/@simon.nordon/100-days-of-steam-sales-analysis-aa28a183eedf"
 ---
-
 
 게임 개발 산업에 종사한 사람이라면, 성공적인 게임을 만드는 것이 얼마나 어려운지 알 것입니다. 누구도 그 공식을 알아내지 못했습니다. 모든 것을 올바르게 해도 실패할 수 있죠.
 
@@ -35,9 +34,9 @@ link: "https://medium.com/@simon.nordon/100-days-of-steam-sales-analysis-aa28a18
 
 스팀 세일은 조금 더 극단적입니다:
 
-```markdown
+
 ![Steam Sales Analysis](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_0.png)
-```
+
 
 중앙값 수익, 즉 평균 게임이 벌어들인 금액에 더 관심이 있습니다. 이를 시각화하기 쉽게 만들기 위해 10만 달러 이상 벌어든 모든 게임을 제거해 보겣습니다.
 
@@ -103,7 +102,7 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_5.png)
 
 데이터 세트에서 대략 10%의 게임이 '성인 전용'으로 표시되어 있습니다. 이들은 평균적인 게임만큼 잘 할 수 있었습니다. 다른 한편으로, 폭력은 명백히 경쟁에서 우위를 차지했습니다.
@@ -111,7 +110,7 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 이 데이터의 타당성도 살펴보겠습니다. 각 게임이 출시 월에 따라 얼마나 많은 수익을 올렸는지부터 시작해 보죠.
 
 ![image](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_6.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -237,7 +236,7 @@ A Rum Tale ($63)
 
 <div class="content-ad"></div>
 
-https://store.steampowered.com/app/2108410/Attack_on_King_Reloaded/  
+https://store.steampowered.com/app/2108410/Attack_on_King_Reloaded/
 
 이 VR 게임은 RPG 전략 장르를 완전히 몰입형으로 조합한 흥미로운 작품입니다. 정교한 그래픽을 갖추고 있는 것으로 보입니다.
 

@@ -287,7 +287,7 @@ OPTIONS (
 
 <div class="content-ad"></div>
 
-한 사용자당 하나의 행을 저장하고 ARRAY<STRUCT> 유형의 열에 그 사용자의 모든 로그인을 저장할 수 있습니다. STRUCT는 날짜 및 장치와 같은 로그인에 연결된 모든 속성을 보유합니다. 다음 그림은 이 예시를 시각화한 것입니다:
+한 사용자당 하나의 행을 저장하고 ARRAY STRUCT 유형의 열에 그 사용자의 모든 로그인을 저장할 수 있습니다. STRUCT는 날짜 및 장치와 같은 로그인에 연결된 모든 속성을 보유합니다. 다음 그림은 이 예시를 시각화한 것입니다:
 
 ![그림](/assets/img/2024-05-23-ADefinitiveGuidetoUsingBigQueryEfficiently_9.png)
 

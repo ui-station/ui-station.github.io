@@ -21,7 +21,6 @@ x = 'apple   orange  pear     pineapple'
 ```
 
 ^ 이 문자열에서 단어 사이에 여러 개의 공백이 있습니다. 여러 개의 공백을 하나의 공백으로 압축해야 합니다.
-```
 
 <div class="content-ad"></div>
 

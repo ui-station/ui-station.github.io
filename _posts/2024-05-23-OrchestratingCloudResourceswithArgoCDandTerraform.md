@@ -3,13 +3,12 @@ title: "ArgoCD와 Terraform으로 클라우드 리소스 조정하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-OrchestratingCloudResourceswithArgoCDandTerraform_0.png"
 date: 2024-05-23 14:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-OrchestratingCloudResourceswithArgoCDandTerraform_0.png
 tag: Tech
 originalTitle: "Orchestrating Cloud Resources with ArgoCD and Terraform"
 link: "https://medium.com/gitconnected/orchestrating-cloud-resources-with-argocd-and-terraform-0e8a16ee24c7"
 ---
-
 
 ## Terraform을 사용하여 ArgoCD 자동화하기
 
@@ -54,13 +53,13 @@ Sealed Secrets를 사용하기로 한 결정은 온프레미스 배포로 인해
 
 테이블 태그를 마크다운 형식으로 변경해드리겠습니다.
 
-```markdown
+
 | 번호 | 항목   | 설명                            |
 |----|------|-------------------------------|
 | 1  | 이름   | 샘플 사용자                    |
 | 2  | 나이   | 30세                           |
 | 3  | 성별   | 여성                            |
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +95,7 @@ data:
 이러한 단계로 Terraform의 중요한 작업이 완료되었습니다. 그러나 이 스크립트가 참조하는 ArgoCD 구성 리포지토리 내의 컨텐츠를 이해하는 데 필요한 최종 퍼즐 조각에는 여전히 주목해야 합니다.
 
 # ArgoCD Configuration Repository
-```
+
 
 <div class="content-ad"></div>
 
@@ -117,7 +116,7 @@ ArgoCD의 선언적 구성을 사용하면 재배포 가능성이 권장됩니�
 ├── argo-config.yaml
 ├── argo-projects.yaml
 └── argo-repositories.yaml
-```
+````
 
 각 파일의 합리적인 근거와 이 구조를 권장하는 이유를 명확히 하기 위해 각 파일의 내용을 살펴보겠습니다:
 
@@ -232,7 +231,7 @@ stringData:
   name: "demo-app-config"
   type: "git"
   url: <application-repository-url>
-  # No need to specify SSH Private Key since 
+  # No need to specify SSH Private Key since
   # this is done by repo-creds in Terraform and applicable to all
 ```
 

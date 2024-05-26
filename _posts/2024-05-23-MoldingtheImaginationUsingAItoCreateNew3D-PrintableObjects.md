@@ -3,13 +3,12 @@ title: "상상력을 형성하다 AI를 사용하여 새로운 3D 프린트 가�
 description: ""
 coverImage: "/assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_0.png"
 date: 2024-05-23 16:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_0.png
 tag: Tech
 originalTitle: "Molding the Imagination: Using AI to Create New 3D-Printable Objects"
 link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-to-create-new-3d-printable-objects-cf3682f8563b"
 ---
-
 
 제가 Medium에서 쓴 글을 읽어보셨다면, AI를 활용한 실험을 좋아하는 것을 아시겠죠. 창의적인 노력에 AI를 활용하여 경험을 쓰곤 했습니다. 이미지 생성, 창의적 글쓰기, 음악 작곡과 같은 영역을 다뤄왔죠. 이번에는 처음으로 연구를 3차원으로 확장했습니다. 상용 및 오픈 소스 AI 도구를 사용하여 새로운 물리적 물체를 만들고 3D 프린터를 사용해 출력하는 방법을 연구했습니다. 이 글에서는 다양한 상용 및 오픈 소스 도구를 사용하여 4개의 다른 3D 메시를 디자인하고 출력하는 과정을 보여드릴 거에요. 첨부된 3D 갤러리에는 이 4개의 물체가 모두 담겨 있습니다.
 
@@ -147,7 +146,6 @@ for i, latent in enumerate(latents):
 
 <div class="content-ad"></div>
 
-```markdown
 ![image](/assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_1.png)
 
 이거 정말 기본적이고 공간이 많이 남아 있어요. 하지만 분명히 돌고래처럼 보여요. 여기 3D 메쉬를 내보내는 코드가 있어요.
@@ -162,7 +160,8 @@ for i, latent in enumerate(latents):
 ```
 
 이 코드는 잠재변수를 사용하여 PLY라는 3D 객체를 위한 또 다른 파일 형식의 메쉬를 생성합니다. 이게 Blender에서 메쉬가 어떻게 보이는지에요.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -204,7 +203,7 @@ for i, latent in enumerate(latents):
 from mvdream.camera_utils import get_camera
 from IPython.display import display
 
-prompt = """a 3d-printed Cubist-styled sculpture of a male bust, 
+prompt = """a 3d-printed Cubist-styled sculpture of a male bust,
   in light-gray plastic, on a simple light-gray pedestal,
   dark-gray background"""
 

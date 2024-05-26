@@ -3,13 +3,12 @@ title: "생성 모델과 소음과 구조의 댄스"
 description: ""
 coverImage: "/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_0.png"
 date: 2024-05-23 18:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_0.png
 tag: Tech
 originalTitle: "Generative Models and the Dance of Noise and Structure"
 link: "https://medium.com/towards-data-science/generative-models-and-the-dance-of-noise-and-structure-e72fe7494f4f"
 ---
-
 
 르네상스 이탈리아의 주민들이, 인간 상상력과 이성에 대한 열정으로 불타는 현재 기술에 가장 놀라워했을만한 것은 무엇일까 고민하는 것을 즐깁니다. 비행 기계를 꿈꾸던 레오나르도 다빈치는 분명 공중을 유유히 달리는 Airbus 380을 볼 때 굳이 확카해 편안하게 의자에서 영화를 보며 와이파이 속도가 충분하지 않다고 불평하는 탑승자들을 볼 때 깊은 감명을 받았을 겁니다.
 
@@ -41,7 +40,7 @@ link: "https://medium.com/towards-data-science/generative-models-and-the-dance-o
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Generative Models](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_2.png)
 
 베이지안 관점에서, 뇌는 세상의 생성 모델 p(x,z)을 유지합니다. 여기서 x는 감각 관측이고 z는 뇌가 포착하려는 해당 감각 관측의 숨겨진 원인/잠재적 설명입니다. 세상과 세상의 모델에 대한 불확실성을 반영하는 것이며, 이를 보겠지만 모든 생성 모델은 확률적 잠재 변수 모델로 수립됩니다.
@@ -49,7 +48,7 @@ link: "https://medium.com/towards-data-science/generative-models-and-the-dance-o
 베이지안 언어로, 이러한 모델을 가정할 때, 이것은 잠재 원인에 대한 사전 분포 p(z) (뉴욕에 살 경우 사자를 관측할 기대가 개를 관측할 기대보다 작음), 관측치 p(x)에 대한 전체 가능성, 그리고 감각 관측과 숨겨진 원인 간의 관계로 요약됩니다.
 
 x와 z 간의 관계를 분석하는 것이 생성 모델링의 핵심입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -112,9 +111,9 @@ VAE는 음의 Evidence Lower Bound (ELBO)를 최소화하도록 훈련되어 있
 
 VAEs에서는 근사 사후 분포 q(z|x)를 사용하여 하나 또는 여러 개의 랜덤 샘플을 추출하고, 이를 ELBO에 대입합니다. ELBO는 q에서의 샘플로부터의 기댓값으로 정의됩니다.
 
-```markdown
+
 ![image](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_6.png)
-```
+
 
 (음의) ELBO는 손실을 구성하므로 우리는 그래디언트를 계산할 수 있고, 그 결과 경사 하강법이 마법을 부리게 됩니다.
 
@@ -183,7 +182,7 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Generative Models Image](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_11.png)
 
 암튼, 아무것도 없는 상황에서 무언가를 환각하는 과정은 그것이 훈련된 데이터의 암시적으로 학습된 분포를 드러낸다.
@@ -191,7 +190,7 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 확산 모델이 왜 그렇게 잘 작동하는지는 여전히 논의 중입니다. 이와 관련하여 에너지 기반의 연상 메모리 모델(Hopfield 네트워크를 통해 40년 전에 유명해짐)과 비교되었습니다.
 
 또한 확산 모델은 Song 등에 의해 인기를 얻는 점수 기반 생성 모델링의 아이디어와 관련이 있습니다: 데이터 가능성을 직접 계산하는 전통적인 방법과 달리, 이러한 모델은 데이터 가능성의 기울기를 나타내는 점수를 근사화하는 데 중점을 둡니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -205,7 +204,7 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_12.png)
 
 일부 확산 모델 응용 프로그램(예: DALL-E 또는 Midjourney)에서 초기 상태는 순수한 무작위 샘플 z0이 아닌 시각과 언어 간의 공동 임베딩 p(z0|x)에 의해 제공됩니다. 여기서 x는 강력한 CLIP(대조적 언어-이미지 사전 훈련) 임베딩을 통해 제공된 예를 들어 텍스트 입력일 수 있습니다.
@@ -213,7 +212,7 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 조건부 생성은 다양한 감각 모달리티를 일관된 프레임워크로 결합하기 때문에 모든 종류의 멀티모달 학습 설정에서 가치가 있습니다. 아마도 AI의 가장 흥미로운 발전 중 일부에서 중요한 부분이 될 것입니다.
 
 ![Image 2](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_13.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -277,13 +276,13 @@ Transformer와의 비유는 우연이 아닙니다. 소프트맥스 함수는 �
 
 <div class="content-ad"></div>
 
-최근 팟캐스트 에피소드에서 Marc Andreessen은 제너레이티브 모델이 제너레이티브 모델로부터 제공된 합성 데이터에서 유의미하게 훈련되고 개선될 수 있는지라는 문제를 1조 달러 가치의 문제로 묘사했습니다. 이 핵심적으로 무료 데이터에서 훈련하는 것은 많은 가능성을 제공할 것이며, 훈련 데이터를 비실가로 구성하는 것에 의존하지 않고 제너레이티브 모델을 계속 조정할 수 있는 형태의 '셀프 플레이'를 제공합니다(DeepMind가 AlphaGo와 AlphaFold에서 이미 성공적으로 사용하고 있습니다).  
+최근 팟캐스트 에피소드에서 Marc Andreessen은 제너레이티브 모델이 제너레이티브 모델로부터 제공된 합성 데이터에서 유의미하게 훈련되고 개선될 수 있는지라는 문제를 1조 달러 가치의 문제로 묘사했습니다. 이 핵심적으로 무료 데이터에서 훈련하는 것은 많은 가능성을 제공할 것이며, 훈련 데이터를 비실가로 구성하는 것에 의존하지 않고 제너레이티브 모델을 계속 조정할 수 있는 형태의 '셀프 플레이'를 제공합니다(DeepMind가 AlphaGo와 AlphaFold에서 이미 성공적으로 사용하고 있습니다).
 
-Andreessen은 이 문제를 신호와 잡음 사이의 정보 이론적 관점과 연관시켰는데, 쉽게 말해, 모델에 우리가 입력한 것보다 더 많은 정보가 어떻게 있을 수 있는지를 다룹니다.  
+Andreessen은 이 문제를 신호와 잡음 사이의 정보 이론적 관점과 연관시켰는데, 쉽게 말해, 모델에 우리가 입력한 것보다 더 많은 정보가 어떻게 있을 수 있는지를 다룹니다.
 
-제너레이티브 모델은 훈련 데이터에서 본 것만 모방한다는 주장이 사실인가요? 훈련 과정과 모델 정의의 잡음이 훈련 데이터 이상의 일반화로 이어지는 방법에 어떠한 측면에서 기여할까요(최근 무료 점심 정리 이론에 관한 제 글에서 관련 질문들을 고려했습니다)? 결국, 잡음은 일반화를 높이기 위해 머신 러닝 모델에서 널리 사용됩니다.  
+제너레이티브 모델은 훈련 데이터에서 본 것만 모방한다는 주장이 사실인가요? 훈련 과정과 모델 정의의 잡음이 훈련 데이터 이상의 일반화로 이어지는 방법에 어떠한 측면에서 기여할까요(최근 무료 점심 정리 이론에 관한 제 글에서 관련 질문들을 고려했습니다)? 결국, 잡음은 일반화를 높이기 위해 머신 러닝 모델에서 널리 사용됩니다.
 
-잡음은 망상과 창의력 둘 다로 이끌 수 있으며, 대체 사실의 망상과 이전에 없던 대체 관점을 창조합니다. 제너레이티브 모델에서는 데이터의 조합 가능성 속에 있는 "정보"가 있음을 주장할 수도 있습니다. 제너레이티브 모델은 이 조합적 공간을 탐색하는 새롭고 매력적인 방법을 제공합니다.  
+잡음은 망상과 창의력 둘 다로 이끌 수 있으며, 대체 사실의 망상과 이전에 없던 대체 관점을 창조합니다. 제너레이티브 모델에서는 데이터의 조합 가능성 속에 있는 "정보"가 있음을 주장할 수도 있습니다. 제너레이티브 모델은 이 조합적 공간을 탐색하는 새롭고 매력적인 방법을 제공합니다.
 
 마크 트웨인의 말처럼 이제모 아이디어가 새로운 것이 아니라는 인용문의 정신에서 우리는 다시 한번 성경으로 돌아갈 수 있습니다 (AI 기사에서 두 번 인용할 것으로 예상하지 않았지만):
 

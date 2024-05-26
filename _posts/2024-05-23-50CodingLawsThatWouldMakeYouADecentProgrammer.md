@@ -3,13 +3,12 @@ title: "50가지 코딩 법칙이 적절한 프로그래머가 되도록 만들�
 description: ""
 coverImage: "/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_0.png"
 date: 2024-05-23 13:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_0.png
 tag: Tech
 originalTitle: "50 Coding Laws That Would Make You A Decent Programmer."
 link: "https://medium.com/@alexobidiegwu/50-laws-of-best-practices-in-python-6942c7cafd56"
 ---
-
 
 ## 이 법칙을 따르지 않으면 해고당할 수 있습니다.
 
@@ -129,7 +128,7 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_6.png" />
 
 예를 들어, 이 함수에는 여러 수준의 추상화가 있습니다. get_numbers()는 높은 수준의 추상화, 리스트 내포(list comprehension)는 중간 수준의 추상화이며 sum은 낮은 수준의 추상화입니다.
@@ -137,13 +136,13 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 ## 제8의 법칙: 함수와 인수는 형제 자매처럼
 
 함수 이름은 매우 밀접하게 그 인수와 관련되어야 합니다. 함수 이름과 관련성이 없는 인수를 전달하는 것은 좋은 방법이 아닙니다.
-```
+
 
 <div class="content-ad"></div>
 
 아래와 같이 코드를 Markdown 형식으로 변경해보세요.
 
-```markdown
+
 write(True)
 
 write(name)
@@ -151,7 +150,7 @@ write(name)
 두 번째 예시가 함수가 정확히 무엇을 하는지 더 잘 설명하고 있어요. 이것을 읽는 사람에게 이름을 작성하고 있다는 사실이 명확해요.
 
 첫 번째 예시는 두 번째 예시만큼 명시적이지 않아요. 추측을 하거나 함수 전체를 살펴봐야 할 수도 있어요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -187,9 +186,9 @@ write(name)
 
 위 예제를 들어보겠습니다. address라는 클래스가 있다고 가정해 봅시다.
 
-```markdown
+
 ![address class](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_8.png)
-```
+
 
 이것은 OCP를 준수하지 못한 것입니다. 새로운 국가가 추가될 때마다, 해당 국가를 보충하기 위해 새로운 if 문을 작성해야 합니다. 지금은 간단해 보일 수 있지만, 상상해 보세요. 100개 이상의 국가를 고려해야 한다면 어떻게 될까요?
 
@@ -197,7 +196,7 @@ write(name)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_9.png)
 
 이제 클래스나 함수를 수정할 필요가 없어서 보다 견고한 해결책입니다. 어떤 나라와 그 나라의 수도를考え하고 싶을 때 capital 사전만 조정하면 됩니다.
@@ -205,16 +204,17 @@ write(name)
 또 다른 흔한 예는 클래스 상속을 사용하는 것입니다.
 
 예를들어:
-```
+
 
 <div class="content-ad"></div>
 
 아래는 다른 지불 방법을 추가할 때마다 항상 PaymentProcessor 클래스를 수정해야한다는 것이 잘못된 방법입니다.
 
 더 나은 방법은 다음과 같습니다:
-```markdown
+
+
 ![이미지](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_11.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -252,7 +252,7 @@ LSP를 준수하기 위해 CryptoPaymentProcessor 클래스 내에서 암호화�
 class CryptoPaymentProcessor(PaymentProcessor):
    def __init__(self, crypto):
       self.crypto = crypto
-  
+
    def pay_tax(amount):
       print(f'당신의 {self.crypto} 지갑으로 세금 지불이 진행됩니다')
       print(f'{amount}을(를) 청구할 예정입니다.')
@@ -325,7 +325,7 @@ def create(name):
     print(name)
 ```
 
-함수와 이름 변수 사이에 공백이 없습니다. 만약 공백이 있다면, 매우 조화롭지 않고 조직되지 않은 모습이 될 것입니다... 
+함수와 이름 변수 사이에 공백이 없습니다. 만약 공백이 있다면, 매우 조화롭지 않고 조직되지 않은 모습이 될 것입니다...
 
 ```js
 def create (name):
@@ -350,24 +350,24 @@ def create (name):
 
 예를 들어, "나의 주문" 개요 페이지에서 마지막 50개 주문을 보여주는 페이지가 있다고 가정해봅시다. 여기서 50은 마법 숫자입니다. 왜냐하면 표준이나 규약으로 설정되지 않았으며, 명세서에 기술된 이유로 임의로 정한 숫자입니다.
 
-이제 50을 서로 다른 곳에 넣으시는 것입니다 — SQL 스크립트 (SELECT TOP 50 * FROM orders), 웹사이트 (마지막 50개 주문), 주문 로그인 (for (i = 0; i ` 50; i++)) 그리고 가능한 다른 많은 장소에.
+이제 50을 서로 다른 곳에 넣으시는 것입니다 — SQL 스크립트 (SELECT TOP 50 \* FROM orders), 웹사이트 (마지막 50개 주문), 주문 로그인 (for (i = 0; i ` 50; i++)) 그리고 가능한 다른 많은 장소에.
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 나쁨
 SELECT TOP 50 * FROM orders
 
 # 좋음
 NUM_OF_ORDERS = 50
 SELECT TOP NUM_OF_ORDERS * FROM orders
-```
+
 
 ## LAW 22: 깊은 중첩 피하기
 
 루프, 조건문 또는 함수 내의 중첩 수준을 제한하여 가독성을 향상시킵니다.
 
-```markdown
+
 # 나쁨
 if x:
     if y:
@@ -376,7 +376,7 @@ if x:
 # 좋음
 if x and y:
     do_something()
-```
+
 
 <div class="content-ad"></div>
 
@@ -399,12 +399,14 @@ final_result = calculate(x, y) * 2
 
 ```md
 # 나쁜 예시
+
 def calc(x, y):
-    pass
+pass
 
 # 좋은 예시
+
 def calculate_total_price(quantity, unit_price):
-    pass
+pass
 ```
 
 ## 법칙 25: 경로 하드코딩 피하기
@@ -413,9 +415,11 @@ def calculate_total_price(quantity, unit_price):
 
 ```md
 # 나쁜 예시
+
 file_path = "/path/to/file.txt"
 
 # 좋은 예시
+
 import os
 file_path = os.getenv("FILE_PATH")
 ```
@@ -631,7 +635,7 @@ if list1 is list2:
 의존 역전 원칙(Dependency Inversion Principle, DIP)은 객체 지향 설계의 중요한 원칙으로, 컴포넌트 간의 느슨한 결합을 촉진하고 소프트웨어 시스템의 보다 쉬운 유지보수와 확장을 돕습니다.
 
 고수준 모듈은 저수준 모듈에 의존해서는 안 되며, 둘 다 추상화에 의존해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -639,18 +643,18 @@ if list1 is list2:
 
 ```js
 # 나쁜 예
-class Logger:  
-    def log(self, message):  
-        with open('log.txt', 'a') as f:  
-            f.write(message + '\n')  
-  
-class Calculator:  
-    def __init__(self):  
+class Logger:
+    def log(self, message):
+        with open('log.txt', 'a') as f:
+            f.write(message + '\n')
+
+class Calculator:
+    def __init__(self):
         self.logger = Logger()
-   
-    def add(self, x, y):  
-        result = x + y  
-        self.logger.log(f"{x}와 {y}를 더했습니다. 결과 = {result}")  
+
+    def add(self, x, y):
+        result = x + y
+        self.logger.log(f"{x}와 {y}를 더했습니다. 결과 = {result}")
         return result
 ```
 
@@ -662,25 +666,25 @@ class Calculator:
 
 ```js
 # 좋은 코드
-from abc import ABC, abstractmethod  
+from abc import ABC, abstractmethod
 
-class LoggerInterface(ABC):  
-    @abstractmethod  
-    def log(self, message):  
-        pass  
+class LoggerInterface(ABC):
+    @abstractmethod
+    def log(self, message):
+        pass
 
-class Logger(LoggerInterface):  
-    def log(self, message):  
-      with open('log.txt', 'a') as f:  
-          f.write(message + '\n')  
+class Logger(LoggerInterface):
+    def log(self, message):
+      with open('log.txt', 'a') as f:
+          f.write(message + '\n')
 
-class Calculator:  
-    def __init__(self, logger: LoggerInterface):  
-        self.logger = logger  
+class Calculator:
+    def __init__(self, logger: LoggerInterface):
+        self.logger = logger
 
-    def add(self, x, y):  
-        result = x + y  
-        self.logger.log(f"Added {x} and {y}, result = {result}")  
+    def add(self, x, y):
+        result = x + y
+        self.logger.log(f"Added {x} and {y}, result = {result}")
         return result
 ```
 
@@ -714,21 +718,21 @@ if x <= 0:
 ```js
 DISCOUNT_RATE = 0.1
 
-def calculate_discount(price):  
+def calculate_discount(price):
     discount = price * DISCOUNT_RATE
     return price - discount
 ```
 
-위 예제는 10% 할인을 나타내는 하드 코딩된 숫자 0.1을 사용합니다. 
+위 예제는 10% 할인을 나타내는 하드 코딩된 숫자 0.1을 사용합니다.
 
 이로 인해 숫자의 의미를 이해하기 어렵고 다른 부분에서 필요시 할인율을 조정하는 것이 어려워집니다.
 
 <div class="content-ad"></div>
 
 ```python
-def calculate_discount(price):  
-    TEN_PERCENT_DISCOUNT = 0.1  
-    discount = price * TEN_PERCENT_DISCOUNT  
+def calculate_discount(price):
+    TEN_PERCENT_DISCOUNT = 0.1
+    discount = price * TEN_PERCENT_DISCOUNT
     return price - discount
 ```
 
@@ -737,7 +741,8 @@ def calculate_discount(price):
 ## LAW 40: DRY (Don’t Repeat Yourself) 원칙을 따르세요
 
 같은 코드를 한 번 이상 작성하지 않도록 합니다. 대신 함수, 클래스, 모듈, 라이브러리 또는 기타 추상화를 사용하여 코드를 재사용하세요. 이렇게 하면 코드가 더 효율적이고 일관되며 유지 보수가 용이해집니다.
-```
+
+````
 
 <div class="content-ad"></div>
 
@@ -746,16 +751,16 @@ def calculate_discount(price):
 ```js
 # 나쁜 예
 
-def calculate_book_price(quantity, price):  
-    return quantity * price  
-def calculate_laptop_price(quantity, price):  
+def calculate_book_price(quantity, price):
+    return quantity * price
+def calculate_laptop_price(quantity, price):
     return quantity * price
 
 # 좋은 예
 
-def calculate_product_price(product_quantity, product_price):  
+def calculate_product_price(product_quantity, product_price):
     return product_quantity * product_price
-```
+````
 
 ## LAW 41: 존중할 만한 코딩 기준을 따르세요.
 
@@ -825,7 +830,7 @@ class Order:
 
 ## 법칙 44: Import를 깨끗하게 유지하세요
 
-필요한 모듈과 심볼만을 가져와서 import 섹션을 깔끔하게 유지하고 가독성을 향상시키세요. 모듈에서 모든 (*) 것을 가져올 때, 모든 변수, 함수 및 클래스도 가져오게 되어 특정 함수/클래스가 어디서 온 것인지 알기 어려워지며, 최신 IDE를 사용할 때 번거로울 수 있습니다.
+필요한 모듈과 심볼만을 가져와서 import 섹션을 깔끔하게 유지하고 가독성을 향상시키세요. 모듈에서 모든 (\*) 것을 가져올 때, 모든 변수, 함수 및 클래스도 가져오게 되어 특정 함수/클래스가 어디서 온 것인지 알기 어려워지며, 최신 IDE를 사용할 때 번거로울 수 있습니다.
 
 예를 들어, get_file이라는 함수를 작성하고 싶다고 상상해보세요. g를 클릭하면 IDE가 g로 시작하는 함수/클래스/변수 목록을 추천해줍니다. 이렇게 되면 꽤 혼란스러워질 수 있습니다.
 
@@ -833,13 +838,13 @@ class Order:
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 나쁜 예
 from module import *
 
 # 좋은 예
 from module import symbol1, symbol2
-```
+
 
 ## LAW 45: Null/None을 반환하지 마세요
 

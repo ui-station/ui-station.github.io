@@ -442,7 +442,7 @@ Spring Boot는 application.yml 또는 application.properties와 같은 애플리
 - spring.kafka.producer.key-serializer: 이 속성은 응용 프로그램에서 생성한 메시지 키의 직렬화에 사용되는 직렬화기를 지정합니다. 기본적으로 StringSerializer가 사용됩니다. JSON 키의 경우와 같이 메시지 키 데이터 유형에 따라 다른 직렬화기를 선택할 수 있습니다 (예: JSON 키의 경우의 경우 JsonSerializer).
 - spring.kafka.producer.value-serializer: 이 속성은 응용 프로그램에서 생성한 메시지 값의 직렬화에 사용되는 직렬화기를 정의합니다. 키 직렬화기와 유사하게, 메시지 값 데이터 유형에 따라 적절한 직렬화기를 선택하세요.
 - (선택 사항) spring.kafka.consumer.auto-offset-reset: 이 속성은 소비자 그룹이 리밸런스되거나 장애 발생 후 다시 시작할 때 소비자 오프셋이 어떻게 처리되는지를 제어합니다. 기본값은 earliest로, 이는 소비자가 파티션의 처음부터 읽기를 시작함을 의미합니다. 최신 메시지부터 읽기를 시작하려면 latest로 설정할 수 있습니다.
-```  
+  
 
 <div class="content-ad"></div>
 

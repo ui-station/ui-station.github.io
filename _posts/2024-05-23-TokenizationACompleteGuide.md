@@ -3,13 +3,12 @@ title: "토큰화 - 완벽한 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-23-TokenizationACompleteGuide_0.png"
 date: 2024-05-23 18:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TokenizationACompleteGuide_0.png
 tag: Tech
 originalTitle: "Tokenization — A Complete Guide"
 link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f72de4e"
 ---
-
 
 ## 바이트 페어 인코딩, 워드피스 등과 같은 것들과 함께 Python 코드!
 
@@ -60,7 +59,7 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 토크나이저가 텍스트를 토큰으로 분리한 후, 각 토큰에 토큰 ID라고 불리는 정수 번호를 할당할 수 있습니다. 예를 들어, "cat"이라는 단어가 15라는 값으로 할당될 수 있고, 따라서 입력 텍스트의 모든 cat 토큰은 숫자 15로 표시됩니다. 텍스트 토큰을 숫자 표현으로 교체하는 과정을 인코딩이라고 합니다. 비슷하게, 인코딩된 토큰을 다시 텍스트로 변환하는 과정을 디코딩이라고 합니다.
 
-단일 숫자를 사용하여 토큰을 표현하는 것에는 단점이 있다는 것을 알 수 있습니다. 그래서 이러한 코드들은 단어 임베딩을 생성하기 위해 추가로 처리되며, 이것은 이 시리즈의 다음 기사의 주제입니다. 
+단일 숫자를 사용하여 토큰을 표현하는 것에는 단점이 있다는 것을 알 수 있습니다. 그래서 이러한 코드들은 단어 임베딩을 생성하기 위해 추가로 처리되며, 이것은 이 시리즈의 다음 기사의 주제입니다.
 
 # 토큰화 방법
 
@@ -80,8 +79,6 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 <div class="content-ad"></div>
 
-</br>
-
 고양이들은 멋지지만, 개들이 더 좋아요!
 
 띄어쓰기 문자로 분할하면:
@@ -94,7 +91,7 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 [`Cats`, `are`, `great`, `,`, `but`, `dogs`, `are`, `better`, `!`]
 
-위 간단한 예제를 통해 분할을 결정하는 데 사용하는 규칙이 중요하다는 것을 분명히 이해할 수 있습니다. 공백 접근 방식은 잠재적으로 희귀한 토큰 `better!`를 제공하며, 두 번째 분할은 덜 희귀한 토큰 `better`와 `!`을 생성합니다. 문장부호를 완전히 제거하지 않도록 주의해야 합니다. 문장부호에는 매우 구체적인 의미가 있을 수 있기 때문입니다. 그 중 하나는 ‘작은따옴표(apostrophe)’입니다. 작은따옴표는 단수와 소유 형태를 구별할 수 있습니다. 예를 들어 “book's”는 책의 속성을 가리키며 “the book's spine is damaged”와 같이 사용되고, “books”는 여러 권의 책을 가리킵니다. 
+위 간단한 예제를 통해 분할을 결정하는 데 사용하는 규칙이 중요하다는 것을 분명히 이해할 수 있습니다. 공백 접근 방식은 잠재적으로 희귀한 토큰 `better!`를 제공하며, 두 번째 분할은 덜 희귀한 토큰 `better`와 `!`을 생성합니다. 문장부호를 완전히 제거하지 않도록 주의해야 합니다. 문장부호에는 매우 구체적인 의미가 있을 수 있기 때문입니다. 그 중 하나는 ‘작은따옴표(apostrophe)’입니다. 작은따옴표는 단수와 소유 형태를 구별할 수 있습니다. 예를 들어 “book's”는 책의 속성을 가리키며 “the book's spine is damaged”와 같이 사용되고, “books”는 여러 권의 책을 가리킵니다.
 
 토큰을 생성한 후, 각 토큰에 번호를 할당할 수 있습니다. 토큰 생성기가 이미 본 토큰을 생성할 때 다음에 볼 토큰은 그 단어에 지정된 번호를 간단히 할당할 수 있습니다. 예를 들어 위 문장에서 `great`가 1이라는 값으로 할당된 경우, 이후의 `great` 단어는 모두 1의 값으로 할당됩니다.
 
@@ -107,6 +104,7 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 이 문제를 해결하는 한 가지 방법은 모델이 학습할 수 있는 토큰 수에 하드 리미트를 부여하는 것입니다(예: 1만). 이는 가장 빈도가 높은 1만개의 토큰을 벗어나는 모든 단어를 어휘 외로 처리하고, 숫자 값 대신 UNKNOWN 토큰 값을 할당하는 것입니다(UNK로 축약되기도 합니다). 이는 많은 알려지지 않은 단어가 있는 경우에 성능에 영향을 줄 수 있지만, 데이터에 대부분의 일반적인 단어가 포함된 경우에는 적합한 타협안이 될 수 있습니다.
 
 장점 요약:
+
 - 간단한 방법
 - 각 토큰에 저장된 높은 정보량
 - 주로 일반적인 단어를 포함하는 데이터셋과 잘 작동하는 어휘 크기 제한 가능
@@ -250,7 +248,7 @@ BERT Output:      this is  an example     sentence
 ## Pre-Tokenization Methods
 
 The pre-tokenization step is the first splitting of the raw text in the tokenization pipeline. The split is performed to give an upper bound to what the final tokens could be at the end of the pipeline. That is, a sentence can be split into words in the pre-tokenization step, then in the model step some of these words may be split further according to the tokenization method (e.g. subword-based). So the pre-tokenized text represents the largest possible tokens that could still remain after tokenization.
-```
+
 
 <div class="content-ad"></div>
 
@@ -284,11 +282,11 @@ print_pretokenized_str(bpt.pre_tokenize_str(text))
 
 ```js
 Whitespace Pre-Tokenizer:
-"this", "sentence's", "content", "includes:", "characters,", "spaces,", 
-"and", "punctuation.", 
+"this", "sentence's", "content", "includes:", "characters,", "spaces,",
+"and", "punctuation.",
 
 BERT Pre-Tokenizer:
-"this", "sentence", "'", "s", "content", "includes", ":", "characters", 
+"this", "sentence", "'", "s", "content", "includes", ":", "characters",
 ",", "spaces", ",", "and", "punctuation", ".",
 ```
 
@@ -320,7 +318,7 @@ print_pretokenized_str(Albert_PreTokenizer.pre_tokenize_str(text))
 ```python
 GPT-2 사전 토크나이저:
 "this", "Ġsentence", "'s", "Ġcontent", "Ġincludes", ":", "Ġcharacters", ",",
-"Ġspaces", ",", "Ġand", "Ġpunctuation", "." 
+"Ġspaces", ",", "Ġand", "Ġpunctuation", "."
 
 ALBERT 사전 토크나이저:
 "▁this", "▁sentence's", "▁content", "▁includes:", "▁characters,", "▁spaces,",
@@ -342,26 +340,28 @@ bpt.pre_tokenize_str(text)
 ```
 
 ```js
-[('this', (0, 4)),
- ('sentence', (5, 13)),
- ("'", (13, 14)),
- ('s', (14, 15)),
- ('content', (16, 23)),
- ('includes', (24, 32)),
- (':', (32, 33)),
- ('characters', (34, 44)),
- (',', (44, 45)),
- ('spaces', (46, 52)),
- (',', (52, 53)),
- ('and', (54, 57)),
- ('punctuation', (58, 69)),
- ('.', (69, 70))]
+[
+  ("this", (0, 4)),
+  ("sentence", (5, 13)),
+  ("'", (13, 14)),
+  ("s", (14, 15)),
+  ("content", (16, 23)),
+  ("includes", (24, 32)),
+  (":", (32, 33)),
+  ("characters", (34, 44)),
+  (",", (44, 45)),
+  ("spaces", (46, 52)),
+  (",", (52, 53)),
+  ("and", (54, 57)),
+  ("punctuation", (58, 69)),
+  (".", (69, 70)),
+];
 ```
 
 # 서브워드 토큰화 방법
 
 토큰화 파이프라인의 모델 단계는 토큰화 방법이 사용되는 곳입니다. 이전에 설명한대로 여기서 선택할 수 있는 옵션은: 단어 기반, 문자 기반, 서브워드 기반입니다. 서브워드 기반 방법이 일반적으로 선호되는데, 이 방법들은 단어 기반 및 문자 기반 접근법의 한계를 극복하기 위해 설계되었습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -407,7 +407,7 @@ BPE 알고리즘이 교육되었으므로 (즉, 모든 병합 규칙이 찾아�
 
 <div class="content-ad"></div>
 
-위의 표는 마크다운 형식으로 변경하겠습니다. 
+위의 표는 마크다운 형식으로 변경하겠습니다.
 
 아래는 BPE 알고리즘의 Python 구현입니다. 위에서 설명한 단계를 따르고 있습니다. 그 후에는 이 모델을 장난감 데이터세트에서 훈련하고 몇 가지 예제 단어에서 테스트합니다.
 
@@ -476,49 +476,47 @@ for rule, corpus in list(zip(bpe.merge_rules, bpe.corpus_history[1:])):
 ```js
 INITIAL CORPUS:
 [(['c', 'a', 't'], 5), (['c', 'a', 't', 's'], 2), (['e', 'a', 't'], 10),
-(['e', 'a', 't', 'i', 'n', 'g'], 3), (['r', 'u', 'n', 'n', 'i', 'n', 'g'], 2), 
+(['e', 'a', 't', 'i', 'n', 'g'], 3), (['r', 'u', 'n', 'n', 'i', 'n', 'g'], 2),
 (['j', 'u', 'm', 'p', 'i', 'n', 'g'], 1), (['f', 'o', 'o', 'd'], 6)]
 
 NEW MERGE RULE: Combine "a" and "t"
-[(['c', 'at'], 5), (['c', 'at', 's'], 2), (['e', 'at'], 10), 
-(['e', 'at', 'i', 'n', 'g'], 3), (['r', 'u', 'n', 'n', 'i', 'n', 'g'], 2), 
+[(['c', 'at'], 5), (['c', 'at', 's'], 2), (['e', 'at'], 10),
+(['e', 'at', 'i', 'n', 'g'], 3), (['r', 'u', 'n', 'n', 'i', 'n', 'g'], 2),
 (['j', 'u', 'm', 'p', 'i', 'n', 'g'], 1), (['f', 'o', 'o', 'd'], 6)]
 
 NEW MERGE RULE: Combine "e" and "at"
-[(['c', 'at'], 5), (['c', 'at', 's'], 2), (['eat'], 10), 
-(['eat', 'i', 'n', 'g'], 3), (['r', 'u', 'n', 'n', 'i', 'n', 'g'], 2), 
+[(['c', 'at'], 5), (['c', 'at', 's'], 2), (['eat'], 10),
+(['eat', 'i', 'n', 'g'], 3), (['r', 'u', 'n', 'n', 'i', 'n', 'g'], 2),
 (['j', 'u', 'm', 'p', 'i', 'n', 'g'], 1), (['f', 'o', 'o', 'd'], 6)]
 
 NEW MERGE RULE: Combine "c" and "at"
-[(['cat'], 5), (['cat', 's'], 2), (['eat'], 10), (['eat', 'i', 'n', 'g'], 3), 
-(['r', 'u', 'n', 'n', 'i', 'n', 'g'], 2), 
+[(['cat'], 5), (['cat', 's'], 2), (['eat'], 10), (['eat', 'i', 'n', 'g'], 3),
+(['r', 'u', 'n', 'n', 'i', 'n', 'g'], 2),
 (['j', 'u', 'm', 'p', 'i', 'n', 'g'], 1), (['f', 'o', 'o', 'd'], 6)]
 
 NEW MERGE RULE: Combine "i" and "n"
-[(['cat'], 5), (['cat', 's'], 2), (['eat'], 10), (['eat', 'in', 'g'], 3), 
-(['r', 'u', 'n', 'n', 'in', 'g'], 2), (['j', 'u', 'm', 'p', 'in', 'g'], 1), 
+[(['cat'], 5), (['cat', 's'], 2), (['eat'], 10), (['eat', 'in', 'g'], 3),
+(['r', 'u', 'n', 'n', 'in', 'g'], 2), (['j', 'u', 'm', 'p', 'in', 'g'], 1),
 (['f', 'o', 'o', 'd'], 6)]
 
 NEW MERGE RULE: Combine "in" and "g"
-[(['cat'], 5), (['cat', 's'], 2), (['eat'], 10), (['eat', 'ing'], 3), 
-(['r', 'u', 'n', 'n', 'ing'], 2), (['j', 'u', 'm', 'p', 'ing'], 1), 
+[(['cat'], 5), (['cat', 's'], 2), (['eat'], 10), (['eat', 'ing'], 3),
+(['r', 'u', 'n', 'n', 'ing'], 2), (['j', 'u', 'm', 'p', 'ing'], 1),
 (['f', 'o', 'o', 'd'], 6)]
 ```
 
 크게 작은 데이터셋으로 BPE 알고리즘을 학습했으므로 이제 예제 단어를 토큰화하는 데 사용할 수 있습니다. 아래 셀은 토크나이저가 이전에 본 단어들 및 이전에 보지 못한 단어들을 토큰화하는 데 사용되는 것을 보여줍니다. 토크나이저는 동사 접미사 "ing"을 학습했으므로 이를 토큰으로 분리할 수 있습니다. 이 때문에 훈련 데이터에는 'eat'이 포함되어 있어 'eat'이 중요한 토큰임을 학습했습니다. 그러나 모델은 'run'과 'ski'라는 단어를 본 적이 없기 때문에 이를 성공적으로 토큰화하지 못합니다. 이는 토크나이저를 훈련시킬 때 다양하고 광범위한 훈련 세트의 중요성을 강조합니다.
 
 ```js
-print(bpe.tokenize('eating'))
-print(bpe.tokenize('running'))
-print(bpe.tokenize('skiing'))
+print(bpe.tokenize("eating"));
+print(bpe.tokenize("running"));
+print(bpe.tokenize("skiing"));
 ```
 
 <div class="content-ad"></div>
 
 ```js
-['먹', '어', '•', 'ᆼ']
-['', 'ᄂ', 'ᄂ', '•', 'ᆼ']
-['', '스', '키', '•', 'ᆼ']
+["먹", "어", "•", "ᆼ"][("", "ᄂ", "ᄂ", "•", "ᆼ")][("", "스", "키", "•", "ᆼ")];
 ```
 
 BPE 토크나이저는 훈련 데이터에 나타난 문자만 인식할 수 있습니다. 예를 들어, 위의 훈련 데이터에는 고양이에 대해 이야기할 때 필요한 문자만 포함되어 있어서 z가 필요하지 않았습니다. 따라서 해당 토크나이저 버전은 z 문자를 어휘에 포함시키지 않으며, 실제 데이터를 토큰화할 때 해당 문자를 알 수 없는 토큰으로 변환합니다 (실제로, 오류 처리가 없어 모델이 알 수 없는 토큰을 생성하도록 지시하는 기능도 없으므로 모델이 충돌할 것이지만, 제품화된 모델에서는 이런 일이 발생할 수 있습니다).
@@ -526,7 +524,8 @@ BPE 토크나이저는 훈련 데이터에 나타난 문자만 인식할 수 있
 GPT-2 및 RoBERTa에서 사용되는 BPE 토크나이저는 이 문제가 없으며 코드 내에 한 가지 속임수가 있습니다. Unicode 문자를 기반으로 훈련 데이터를 분석하는 대신, 문자의 바이트를 분석합니다. 이를 Byte-Level BPE라고 하며, 소규모 기본 어휘를 사용하여 모델이 볼 수 있는 모든 문자를 토큰화할 수 있게 합니다.
 
 ## WordPiece
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -550,7 +549,8 @@ BPE 모델과 달리, 이번에는 각 문자 쌍에 대해 점수가 계산됩�
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![Tokenization Guide](/assets/img/2024-05-23-TokenizationACompleteGuide_1.png)
 
 이 메트릭은 함께 자주 나타나지만 개별적으로나 다른 문자와 자주 나타나지 않는 문자에 더 높은 점수를 할당합니다. 이것이 WordPiece와 BPE 사이의 주된 차이점인데, BPE는 개별 문자의 전체 빈도를 고려하지 않습니다.
@@ -558,7 +558,7 @@ BPE 모델과 달리, 이번에는 각 문자 쌍에 대해 점수가 계산됩�
 단계 4) 병합 규칙 생성
 
 높은 점수는 자주 함께 나타나는 문자 쌍을 나타냅니다. 즉, c##a가 높은 쌍 점수를 가지면 c와 a가 말뭉치에서 함께 자주 나타나고 개별적으로는 그리 자주 나타나지 않는 것입니다. BPE와 마찬가지로, 병합 규칙은 가장 높은 점수를 가진 문자 쌍에 의해 결정됩니다. 이번에는 빈도가 점수를 결정하는 대신 쌍 점수로 결정됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -740,7 +740,7 @@ class WordPiece(BPE):
         ''' 텍스트를 토큰 목록으로 만듭니다.
 
             인수
-
+```
 <div class="content-ad"></div>
 
 WordPiece 알고리즘은 BPE 알고리즘에 주어진 장난감 데이터세트와 동일한 데이터세트로 아래에서 훈련됩니다. 이번에 학습한 토큰은 매우 다른 것을 알 수 있습니다. WordPiece는 문자가 서로 더 자주 함께 나타나는 경우를 선호하며, 그래서 데이터세트에 함께만 존재하고 홀로 존재하지 않는 'm'과 'p'는 즉시 병합됩니다. 여기서 이 아이디어는 모델이 문자를 병합함으로써 무엇이 손실되는지 고려하도록 강요하는 것입니다. 즉, 이러한 문자들이 항상 함께 있는가요? 그렇다면, 전혀 하나의 단위로 명백하게 병합되어야 합니다. 또는, 코퍼스에서 문자가 매우 빈번한가요? 그렇다면, 문자는 그냥 일반적이며 데이터세트 안에서 풍부하게 나타나므로 다른 토큰 옆에 나타날 것입니다.
@@ -757,17 +757,17 @@ for rule, corpus in list(zip(wp.merge_rules, wp.corpus_history[1:])):
 
 ```js
 초기 코퍼스:
-[(['c', '##a', '##t'], 5), (['c', '##a', '##t', '##s'], 2), 
-(['e', '##a', '##t'], 10), (['e', '##a', '##t', '##i', '##n', '##g'], 3), 
-(['r', '##u', '##n', '##n', '##i', '##n', '##g'], 2), 
-(['j', '##u', '##m', '##p', '##i', '##n', '##g'], 1), 
+[(['c', '##a', '##t'], 5), (['c', '##a', '##t', '##s'], 2),
+(['e', '##a', '##t'], 10), (['e', '##a', '##t', '##i', '##n', '##g'], 3),
+(['r', '##u', '##n', '##n', '##i', '##n', '##g'], 2),
+(['j', '##u', '##m', '##p', '##i', '##n', '##g'], 1),
 (['f', '##o', '##o', '##d'], 6)]
 
 NEW MERGE RULE: "##m"과 "##p" 병합
-[(['c', '##a', '##t'], 5), (['c', '##a', '##t', '##s'], 2), 
-(['e', '##a', '##t'], 10), (['e', '##a', '##t', '##i', '##n', '##g'], 3), 
-(['r', '##u', '##n', '##n', '##i', '##n', '##g'], 2), 
-(['j', '##u', '##mp', '##i', '##n', '##g'], 1), 
+[(['c', '##a', '##t'], 5), (['c', '##a', '##t', '##s'], 2),
+(['e', '##a', '##t'], 10), (['e', '##a', '##t', '##i', '##n', '##g'], 3),
+(['r', '##u', '##n', '##n', '##i', '##n', '##g'], 2),
+(['j', '##u', '##mp', '##i', '##n', '##g'], 1),
 (['f', '##o', '##o', '##d'], 6)]
 
 (이하 생략)
@@ -777,14 +777,14 @@ NEW MERGE RULE: "##m"과 "##p" 병합
 
 <div class="content-ad"></div>
 
-학습 데이터가 제한적이지만, 모델은 여전히 유용한 토큰을 학습했습니다. 그러나 많은 추가 학습 데이터가 필요함을 명백히 알 수 있습니다. 이 토크나이저를 유용하게 만들기 위해 더 많은 학습 데이터가 필요합니다. 예시 문자열에 대한 성능을 테스트할 수 있습니다. 예시로 'jumper' 단어로 시작해보겠습니다. 먼저 문자열은 ['jump', 'er']로 분리됩니다. 왜냐하면 jump는 단어의 시작에서 발견할 수 있는 가장 큰 토큰이기 때문입니다. 다음으로 er 문자열은 각각의 문자 e와 r로 나뉩니다. 
+학습 데이터가 제한적이지만, 모델은 여전히 유용한 토큰을 학습했습니다. 그러나 많은 추가 학습 데이터가 필요함을 명백히 알 수 있습니다. 이 토크나이저를 유용하게 만들기 위해 더 많은 학습 데이터가 필요합니다. 예시 문자열에 대한 성능을 테스트할 수 있습니다. 예시로 'jumper' 단어로 시작해보겠습니다. 먼저 문자열은 ['jump', 'er']로 분리됩니다. 왜냐하면 jump는 단어의 시작에서 발견할 수 있는 가장 큰 토큰이기 때문입니다. 다음으로 er 문자열은 각각의 문자 e와 r로 나뉩니다.
 
 ```js
-print(wp.tokenize('jumper'))
+print(wp.tokenize("jumper"));
 ```
 
 ```js
-['jump', 'e', 'r']
+["jump", "e", "r"];
 ```
 
 ## 단일 토큰화
@@ -841,19 +841,19 @@ Unigram 모델의 어휘 크기는 매우 크게 시작되고, 원하는 크기�
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-23-TokenizationACompleteGuide_4.png" />
 
 가장 높은 확률 점수를 가진 세그먼트 [`c`, `at`]가 사용되어 단어를 토크나이즈했습니다. 따라서 단어 cat은 [`c`, `at`]으로 토큰화됩니다. 단어가 긴 경우 토큰화시 단어 내 여러 곳에서 분할이 발생할 수 있습니다. 예를 들어 [`token`, `iza`, tion] 또는 [`token`, `ization`] 같은 경우도 있을 수 있습니다.
 
 6단계) 손실 계산
 
-손실이란 모델의 점수를 나타내며, 중요한 토큰이 어휘에서 제거되면 손실이 크게 증가하지만 중요하지 않은 토큰이 제거되면 손실은 크게 증가하지 않습니다. 모델에서 각 토큰을 제거했을 때 손실이 얼마나 되는지 계산하여, 어휘 중에서 가장 쓸모없는 토큰을 찾을 수 있습니다. 훈련 세트 말뭉치에서 가장 유용한 토큰만 남도록 어휘 크기가 감소할 때까지 반복적으로 수행할 수 있습니다. 손실은 다음과 같이 주어집니다: 
-```
+손실이란 모델의 점수를 나타내며, 중요한 토큰이 어휘에서 제거되면 손실이 크게 증가하지만 중요하지 않은 토큰이 제거되면 손실은 크게 증가하지 않습니다. 모델에서 각 토큰을 제거했을 때 손실이 얼마나 되는지 계산하여, 어휘 중에서 가장 쓸모없는 토큰을 찾을 수 있습니다. 훈련 세트 말뭉치에서 가장 유용한 토큰만 남도록 어휘 크기가 감소할 때까지 반복적으로 수행할 수 있습니다. 손실은 다음과 같이 주어집니다:
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Tokenization Guide](/assets/img/2024-05-23-TokenizationACompleteGuide_5.png)
 
 필요한 양만큼 문자가 제거되어 어휘를 원하는 크기로 줄일 때, 교육은 완료되고 모델을 사용하여 단어를 토큰화할 수 있습니다.
@@ -861,7 +861,7 @@ Unigram 모델의 어휘 크기는 매우 크게 시작되고, 원하는 크기�
 ## BPE, WordPiece 및 Unigram 비교
 
 학습 세트 및 토큰화해야 할 데이터에 따라 어떤 토크나이저가 다른 것보다 더 잘 작동할 수 있습니다. 언어 모델에 대한 토크나이저를 선택할 때, 특정 사용 사례에 사용된 학습 세트를 실험하여 최상의 결과를 얻는 것이 가장 좋을 수 있습니다. 그러나 이 세 가지 토크나이저의 일반적인 경향에 대해 논의하는 것이 유용할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -903,7 +903,7 @@ tokenizer = Tokenizer.from_pretrained('bert-base-cased')
 원하는 토큰 만들기되지만 미학습 토크나이저를 사용하려면 tokenizers 라이브러리에서 원하는 모델을 가져와서 모델 클래스의 인스턴스를 만들면 됩니다. 위에서 설명한대로 라이브러리에는 네 가지 모델이 포함되어 있습니다:
 
 - BertWordPieceTokenizer - 유명한 Bert 토크나이저인 WordPiece를 사용합니다.
-- CharBPETokenizer - 원래의 BPE(BPE) 
+- CharBPETokenizer - 원래의 BPE(BPE)
 - ByteLevelBPETokenizer - BPE의 바이트 레벨 버전
 - SentencePieceBPETokenizer - SentencePiece에서 사용하는 BPE 구현과 호환되는 버전
 

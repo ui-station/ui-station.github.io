@@ -3,13 +3,12 @@ title: "프로그래머를 위한 11가지 어첈없이 간단한 수동 소득 
 description: ""
 coverImage: "/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_0.png"
 date: 2024-05-23 13:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_0.png
 tag: Tech
 originalTitle: "11 Stupid Simple Passive Income Ideas for Programmers"
 link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-ideas-for-programmers-3de676b16832"
 ---
-
 
 <img src="/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_0.png" />
 
@@ -122,7 +121,7 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 아래 텍스트를 참고해주세요.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_2.png)
 
 다음으로 생각해볼 문제는:
@@ -130,7 +129,7 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 ## 채널을 만들면 어떤 주제로 이야기할까요?
 
 이 모두는 당신의 전문 분야에 따라 다릅니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -192,7 +191,7 @@ Code Canyon에서 $89에 판매 중이에요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_4.png)
 
 # 7. API 개발
@@ -200,7 +199,7 @@ Code Canyon에서 $89에 판매 중이에요.
 소프트웨어 응용 프로그램이 증가함에 따라 API 서비스에 대한 수요가 증가하고 있습니다.
 
 실제 문제를 해결하거나 개발자에게 가치 있는 서비스를 제공하는 API (Application Programming Interfaces)를 개발하고 활용하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -244,7 +243,7 @@ Steven Benson은 혁신적인 경로 계획 앱인 Badger Maps를 설립했습�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_6.png)
 
 Working with a small team, he was able to quickly scale revenue to $6M ARR within a couple of years. I shared insights from an interview with him in a separate Medium article.
@@ -252,7 +251,7 @@ Working with a small team, he was able to quickly scale revenue to $6M ARR withi
 # 11. Creating a SaaS or Micro SaaS
 
 The last on the list and also what I'll consider the holy grail of passive income generation for programmers as it can lead to very high returns when done right.
-```
+
 
 <div class="content-ad"></div>
 

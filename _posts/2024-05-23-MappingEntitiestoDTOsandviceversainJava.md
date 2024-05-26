@@ -3,7 +3,7 @@ title: "자바에서 엔티티를 DTO로 매핑하고 그 반대로하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-MappingEntitiestoDTOsandviceversainJava_0.png"
 date: 2024-05-23 12:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-MappingEntitiestoDTOsandviceversainJava_0.png
 tag: Tech
 originalTitle: "Mapping Entities to DTOs and vice versa in Java"
@@ -11,7 +11,6 @@ link: "https://medium.com/thefreshwrites/mapping-entities-to-dtos-and-vice-versa
 ---
 
 
-```markdown
 ![Mapping entities to DTOs in Java](/assets/img/2024-05-23-MappingEntitiestoDTOsandviceversainJava_0.png)
 
 In Java, entities and DTOs are two different types of classes often used together. Entities are used to represent data in the database, while DTOs are used to represent data that is sent to or received from a client.
@@ -19,7 +18,7 @@ In Java, entities and DTOs are two different types of classes often used togethe
 To map data from an entity to a DTO, you need to define a mapping between the attributes of the two classes. This can be done manually or automatically.
 
 ## Manual mapping
-```
+
 
 <div class="content-ad"></div>
 
@@ -91,9 +90,9 @@ Java 프로젝트에서 ModelMapper를 사용하려면 프로젝트에 ModelMapp
 
 <div class="content-ad"></div>
 
-```markdown
+
 implementation 'org.modelmapper:modelmapper:2.4.2'
-```
+
 
 프로젝트에 ModelMapper 라이브러리를 추가한 후, 서로 다른 구조를 갖는 두 개의 객체 간에 매핑을 시작할 수 있습니다.
 

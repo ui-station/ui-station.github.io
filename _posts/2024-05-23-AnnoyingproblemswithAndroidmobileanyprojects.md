@@ -3,13 +3,12 @@ title: "안녕하세요 안드로이드 프로젝트에서 자주 마주치는 �
 description: ""
 coverImage: "/assets/img/2024-05-23-AnnoyingproblemswithAndroidmobileanyprojects_0.png"
 date: 2024-05-23 15:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-AnnoyingproblemswithAndroidmobileanyprojects_0.png
 tag: Tech
 originalTitle: "Annoying problems with Android (mobile   any?) projects"
 link: "https://medium.com/@azazellj/annoying-problems-with-android-mobile-any-projects-8b6f37a7f424"
 ---
-
 
 한 회사에서 오래 일하지 않으면 다양한 단계의 여러 프로젝트에 참여할 기회가 많지 않을 수 있습니다. 이러한 경험을 통해 작은 개인 프로젝트나 대규모 기업의 어려움을 보게 될 수 있습니다.
 
@@ -27,9 +26,9 @@ IDE가 처음부터 새 프로젝트를 생성하면 프로젝트에 불필요�
 
 내가 알기로는 각 빌드에는 대략 40분이 걸렸던 것 같네요. 가장 흥미로운 점은 git 히스토리를 정리함으로써 해결할 수 있다는 것이었습니다. 실제로 이것을 시도해 보았고, 그 결과 프로젝트 크기가 1.5GB대 대신 100MB가 되었습니다. 그러나 이것이 최종적으로 해결되었는지 여부는 저에게는 알 수 없습니다.
 
-```markdown
+
 ![안드로이드 모바일 프로젝트에서의 귀찮은 문제들](/assets/img/2024-05-23-AnnoyingproblemswithAndroidmobileanyprojects_0.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -143,7 +142,7 @@ Particular Software의 분산 시스템 디자인 기초 과정에서는 기업�
 
 <div class="content-ad"></div>
 
-먼저, 브랜치 명명에 대해 알아보겠습니다. 프로그래머들은 종종 대량의 코드 개정을 동시에 다루는데, 현재 보고 있는 코드 버전이 무엇인지 정확히 이해하는 것이 중요합니다. 올바른 브랜치를 찾아야 하거나 비슷한 이름을 가진 여러 개의 브랜치 중 하나를 선택해야 할 때, 때로는 필요한 종류를 찾아야 할 수도 있는데, 이는 혼란스럽고 시간이 오래 걸릴 수 있습니다. 팀이 특정 유형의 구조에 합의했다면, 모든 것을 간단하게 만들 수 있습니다. 이 경우 cicd/sonar-cube-check-implementation 또는 bugfix/superuser-right-are-not-properly-assigned, 또는 feature/property-detail-screen과 같은 네이밍 규칙은 각 브랜치에 무엇이 있는지 논리적으로 이해하는 데 도움이 됩니다. 
+먼저, 브랜치 명명에 대해 알아보겠습니다. 프로그래머들은 종종 대량의 코드 개정을 동시에 다루는데, 현재 보고 있는 코드 버전이 무엇인지 정확히 이해하는 것이 중요합니다. 올바른 브랜치를 찾아야 하거나 비슷한 이름을 가진 여러 개의 브랜치 중 하나를 선택해야 할 때, 때로는 필요한 종류를 찾아야 할 수도 있는데, 이는 혼란스럽고 시간이 오래 걸릴 수 있습니다. 팀이 특정 유형의 구조에 합의했다면, 모든 것을 간단하게 만들 수 있습니다. 이 경우 cicd/sonar-cube-check-implementation 또는 bugfix/superuser-right-are-not-properly-assigned, 또는 feature/property-detail-screen과 같은 네이밍 규칙은 각 브랜치에 무엇이 있는지 논리적으로 이해하는 데 도움이 됩니다.
 
 또한 GitHub, JIRA 또는 다른 도구와 같은 이슈 추적 시스템과 버전 관리 시스템 간의 강력한 통합에 대해 이야기해볼 가치가 있습니다. cicd/123-sonar-cube-check-implementation과 같이 브랜치를 명명하면, 여기서 123은 이슈나 티켓 번호이며, 시스템은 자동으로 이를 연결하여 해당 이슈 범위 내에서 어떤 변경 사항이 있었는지와 현재 브랜치 상태를 확인하는 데 도움을 줍니다. 항상 혼란을 예방하는 것은 아니지만, 한 번 EM이 티켓에서 브랜치가 병합되었음을 보고 클라이언트에게 전달했지만, 프로젝트가 무언가 문제를 일으키는 git 전략을 가지고 있어 잘못된 위치로 병합되었음을 못 봤던 적이 있었죠. 하지만 상황을 빠르게 이해하는 데 도움이 되죠.
 

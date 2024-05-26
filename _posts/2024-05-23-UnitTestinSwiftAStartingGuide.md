@@ -3,13 +3,12 @@ title: "Swift에서의 유니트 테스트 시작 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-23-UnitTestinSwiftAStartingGuide_0.png"
 date: 2024-05-23 13:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-UnitTestinSwiftAStartingGuide_0.png
 tag: Tech
 originalTitle: "Unit Test in Swift: A Starting Guide"
 link: "https://medium.com/@blorenzop/swift-unit-tets-530a8d271f4d"
 ---
-
 
 # iOS 프로젝트에 단위 테스트 추가하는 방법과 테스트에 관한 주요 개념 배우기
 
@@ -84,10 +83,10 @@ import XCTest
 @testable import Coffee_Shop_App
 
 final class OrderTests: XCTestCase {
-    
+
     override func setUpWithError() throws {}
     override func tearDownWithError() throws {}
-    
+
     func testAddNewOrder() {}
     func testRepeatLastOrder() {}
 }
@@ -116,11 +115,11 @@ final class OrderTests: XCTestCase {
 
 final class OrderTests: XCTestCase {
   private var ordersManager: OrdersManager!
-  
+
   override func setUpWithError() throws {
     ordersManager = OrdersManager.shared
   }
-  
+
   override func tearDownWithError() throws {
     ordersManager.removeAllOrders()
     ordersManager = nil
@@ -140,16 +139,16 @@ final class OrderTests: XCTestCase {
 ```kotlin
 final class OrderTests: XCTestCase {
   private var ordersManager: OrdersManager!
-  
+
   override func setUpWithError() throws {
     ordersManager = OrdersManager.shared
   }
-  
+
   override func tearDownWithError() throws {
     ordersManager.removeAllOrders()
     ordersManager = nil
   }
-  
+
   func testAddNewOrder() {
     // 1 - Arrange
     let orderItems: [OrderItem] = [
@@ -157,26 +156,26 @@ final class OrderTests: XCTestCase {
       .init(item: AnyMenuItem(Food.chickenSandwich), size: .regular, quantity: 1),
     ]
     let order = Order(items: orderItems)
-    
+
     // 2 - Act
     try? ordersManager.add(order)
-    
+
     // 3 - Assert
     XCTAssertEqual(ordersManager.orders.count, 1)
   }
-    
+
   func testRepeatLastOrder() {
     // 1 - Arrange
     let orderItems: [OrderItem] = [
       .init(item: AnyMenuItem(Coffee.flatwhite), size: .regular, quantity: 1),
       .init(item: AnyMenuItem(Food.chickenSandwich), size: .regular, quantity: 1),
     ]
-    
+
     // 2 - Act
     let order = Order(items: orderItems)
     try? ordersManager.add(order))
     ordersManager.repeatLastOrder()
-    
+
     // 3 - Assert
     XCTAssertEqual(ordersManager.orders.count, 2)
   }
@@ -231,8 +230,6 @@ XCTAssertNotNil(lastCoffeeDescription)
 
 <div class="content-ad"></div>
 
-```markdown
-테이블 태그를 Markdown 형식으로 변경하세요.
 
 ```js
 XCTAssertEqual(ordersManager.orders.count, 1, "주문이 올바르게 추가되지 않았습니다")
@@ -246,7 +243,8 @@ XCTAssertEqual(ordersManager.orders.count, 1, "주문이 올바르게 추가되�
 - 테스트가 실패하면 조심해야 합니다. 테스트를 적응시키려고 할 수 있습니다. 그러나 이는 일부 경우에는 올바를 수 있지만 (테스트가 잘못 작성된 경우) 대게 테스트하려는 논리가 잘못된 것입니다.
 - 100%의 테스트 커버리지를 추구하지 마세요. 100%의 커버리지가 있더라도 10가지 가능한 시나리오 중 1개에 대한 테스트만 있는 경우가 있습니다. 대신 품질 높은 테스트를 작성하는 데 중점을 두세요.
 - 테스트를 사용하여 전체적인 코드 품질을 높일 수 있는 작은 코드 리팩터링을 찾을 수 있는 기회로 활용하세요.
-```
+
+
 
 <div class="content-ad"></div>
 

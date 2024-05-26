@@ -3,13 +3,12 @@ title: "Android Kotlin 개발자를 위한 Swift 참고 자료"
 description: ""
 coverImage: "/assets/img/2024-05-23-SwiftCheatsheetforAndroidKotlinDevelopers_0.png"
 date: 2024-05-23 14:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SwiftCheatsheetforAndroidKotlinDevelopers_0.png
 tag: Tech
 originalTitle: "Swift Cheatsheet for Android Kotlin Developers"
 link: "https://medium.com/@domen.lanisnik/swift-cheatsheet-for-android-kotlin-developers-19cce41e54c6"
 ---
-
 
 안녕하세요! 안드로이드 개발자들은 대부분 Kotlin으로 작업합니다. 그러나 iOS에서 어떤 기능이 구현되는 방법을 참조할 때 Swift를 읽고 이해하는 것도 도움이 될 수 있습니다. 또한 Kotlin Multiplatform을 탐색하는 경우에도 유용합니다.
 
@@ -86,8 +85,8 @@ if 문은 Kotlin과 거의 동일한데, Swift에서는 괄호를 생략할 수 
 
 ```js
 // Swift
-if foundItem != nil {       
-  // 무언가를 수행           
+if foundItem != nil {
+  // 무언가를 수행
 }
 
 // Kotlin
@@ -100,7 +99,7 @@ if (foundItem != null) {
 
 <div class="content-ad"></div>
 
-```markdown
+```js
 // 스위프트
 let description = if delta <= 10 {
   "low"
@@ -151,7 +150,7 @@ Swift는 데이터 모델링 관점에서 비슷한 구조체와 클래스를 �
 ```js
 struct VehicleStructure {
     var maxSpeed = 0
-    
+
     func printInfo() {
         print("최대 속도 \(maxSpeed)")
     }
@@ -159,7 +158,7 @@ struct VehicleStructure {
 
 class VehicleClass {
     var maxSpeed = 0
-    
+
     func printInfo() {
         print("최대 속도 \(maxSpeed)")
     }
@@ -209,12 +208,11 @@ vehicle.printInfo()
 
 <div class="content-ad"></div>
 
-```kotlin
 Kotlin은 클래스 생성 시 모든 클래스 속성에 값을 제공해야하는 클래스 생성자도 지원합니다.
 
 ```kotlin
 class Vehicle(var maxSpeed: Int) {
-    
+
     fun printInfo(){
         println("최대 속도는 $maxSpeed 입니다.")
     }
@@ -226,7 +224,7 @@ val vehicle = Vehicle(250)
 Kotlin은 추상 클래스, 데이터 클래스, 인터페이스 및 실드 클래스 및 인터페이스와 같은 다른 관련 구조를 지원합니다. 더 많은 내용은 https://kotlinlang.org/docs/classes.html에서 확인할 수 있습니다.
 
 # 3. Optional Binding
-```
+
 
 <div class="content-ad"></div>
 
@@ -404,7 +402,7 @@ Enum을 사용할 때는 클래스 이름과 사용하려는 값으로 참조합
 <div class="content-ad"></div>
 
 ```js
-var selectedDirection = Direction.UP
+var selectedDirection = Direction.UP;
 ```
 
 우리는 값 확인을 위해 when 문을 사용할 수 있습니다. 가능한 모든 열거형 값을 포함해야합니다.
@@ -455,10 +453,10 @@ func getHttpErrorCodeMessage(code: Int) -> String {
 
 ```js
 // 새로운 키:값 쌍 추가
-httpErrorCodes[500] = "Internal Server Error"
+httpErrorCodes[500] = "Internal Server Error";
 
 // 기존 키의 값 업데이트
-httpErrorCodes[401] = "Requires authentication"
+httpErrorCodes[401] = "Requires authentication";
 ```
 
 가변 또는 불변(읽기 전용) 딕셔너리를 사용하는지는 할당에 달려있습니다. let을 사용하면 선언한 후에만 읽을 수 있는 딕셔너리를 정의합니다. 쓰기를 지원하려면 var로 선언해야 합니다.
@@ -495,14 +493,14 @@ fun getHttpErrorCodeMessage(code: Int): String {
 
 <div class="content-ad"></div>
 
-맵에 새로운 값을 작성하려면 MutableMap<KeyType, ValueType> 형식과 mutableMapOf() 팩토리 함수를 사용하여 가변 맵을 선언해야 합니다. 그런 다음 키에 값을 할당합니다. 키가 존재하지 않으면 새로운 키-값 쌍이 컬렉션에 추가됩니다. 키가 이미 존재하면 해당 값을 업데이트합니다.
+맵에 새로운 값을 작성하려면 MutableMap KeyType, ValueType 형식과 mutableMapOf() 팩토리 함수를 사용하여 가변 맵을 선언해야 합니다. 그런 다음 키에 값을 할당합니다. 키가 존재하지 않으면 새로운 키-값 쌍이 컬렉션에 추가됩니다. 키가 이미 존재하면 해당 값을 업데이트합니다.
 
 ```js
 // 새 키:값 쌍 추가
-httpErrorCodes[500] = "내부 서버 오류"
+httpErrorCodes[500] = "내부 서버 오류";
 
 // 기존 키에 대한 값 업데이트
-httpErrorCodes[401] = "인증이 필요함"
+httpErrorCodes[401] = "인증이 필요함";
 ```
 
 더 읽어보기: https://www.baeldung.com/kotlin/maps
@@ -528,9 +526,9 @@ extension String {
 <div class="content-ad"></div>
 
 ```js
-let originalStr = "Swift"
-let doubledStr = originalStr.doubled()
-print(doubledStr) // prints "SwiftSwift"
+let originalStr = "Swift";
+let doubledStr = originalStr.doubled();
+print(doubledStr); // prints "SwiftSwift"
 ```
 
 ## Kotlin
@@ -582,7 +580,7 @@ protocol PrintableError {
 class ServerHttpError: RequestError, PrintableError {
     var errorCode: Int = 500
     var isRecoverable: Bool = false
-    
+
     func buildErrorMessage() -> String {
         return "Server side http error with error code \(errorCode)"
     }
@@ -591,7 +589,7 @@ class ServerHttpError: RequestError, PrintableError {
 struct ConnectionError: RequestError, PrintableError {
     var errorCode: Int
     var isRecoverable: Bool
-    
+
     func buildErrorMessage() -> String {
         return "Local connection error"
     }
@@ -686,7 +684,7 @@ onRequestError(secondError)
 
 <div class="content-ad"></div>
 
-```markdown
+
 Read more at https://kotlinlang.org/docs/interfaces.html
 
 # 결론
@@ -694,7 +692,7 @@ Read more at https://kotlinlang.org/docs/interfaces.html
 일반적인 Swift 패턴을 이해하고 Kotlin에서 어떻게 번역되는지 알면 코드가 하는 일을 더 잘 이해할 수 있습니다. 이웃 플랫폼에서 어떤 기능이 구현되었는지 보거나 코드 검토를 수행하거나 기술 사양/제안서를 검토하거나 작업을 Kotlin Multiplatform으로 수행하는 여러 방법이 있습니다.
 
 Swift 언어의 기본적인 내용과 Kotlin과 비교하는 방법을 살펴보았습니다. 또한, 선택적 바인딩, 딕셔너리, 익스텐션, 구조 및 프로토콜과 같은 전형적인 iOS 프로젝트에서 발견할 수 있는 일반적인 패턴에 대해서도 다루었습니다.
-```
+
 
 <div class="content-ad"></div>
 

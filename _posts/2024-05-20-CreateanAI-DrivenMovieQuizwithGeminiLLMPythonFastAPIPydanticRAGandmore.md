@@ -195,7 +195,7 @@ poetry add jinja2
 
 <div class="content-ad"></div>
 
-```
+```md
 [tool.poetry]
 name = "gemini-movie-detectives-api"
 version = "0.1.0"
@@ -597,7 +597,7 @@ responses = chat.send_message(
 
 프롬프트를 보내고 Gemini에서 받은 응답을 분석하여 관련 정보를 추출하는 것 이외에 중요한 도전 과제 중 하나입니다.
 
-프로젝트에서 배운 점 중 하나는:```
+프로젝트에서 배운 점 중 하나는:
 
 <div class="content-ad"></div>
 

@@ -3,13 +3,12 @@ title: "컴포즈 멀티플랫폼Android iOS으로 UI 중심 안드로이드 라
 description: ""
 coverImage: "/assets/img/2024-05-23-MigratingUI-orientedAndroidlibrarytoComposeMultiplatformAndroidiOS_0.png"
 date: 2024-05-23 12:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-MigratingUI-orientedAndroidlibrarytoComposeMultiplatformAndroidiOS_0.png
 tag: Tech
 originalTitle: "Migrating UI-oriented Android library to Compose Multiplatform (Android iOS)"
 link: "https://medium.com/proandroiddev/migrating-ui-oriented-android-library-to-compose-multiplatform-android-ios-862129f498a9"
 ---
-
 
 연혁을 거듭하면서, Kotlin Multiplatform이 드디어 여기 머물 것 같습니다. 그러나 비즈니스 로직만 공유하는 것이 특히 React Native, Flutter 및 기타 기술이 더 많은 일을 할 수 있는 만큼 편리하고 경쟁력이 있다고 느끼는 어색한 느낌이 아직 남아 있었습니다. 그래서 매우 기대되었던 Compose Multiplatform for iOS의 첫 번째 알파 버전을 작년에 보게 되어 정말 기뻤습니다.
 
@@ -37,7 +36,7 @@ link: "https://medium.com/proandroiddev/migrating-ui-oriented-android-library-to
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:472/1*4Eb5MmEXdZwZC8WkYBB6yA.gif)
 
 우리에게는 Compose Multiplatform 기능과 성능을 테스트하는 좋은 시작점이었습니다. 무엇이 문제가 될 수 있는지 알고 싶다면, 여기에서 확인해보세요.
@@ -45,7 +44,7 @@ link: "https://medium.com/proandroiddev/migrating-ui-oriented-android-library-to
 ## 왜 Compose Multiplatform 인가요?
 
 일부 소스에서 Jetpack Compose를 선언적 API로 설명합니다. 저에게 있어 Jetpack Compose의 주요 장점은 전통적인 XML 레이아웃과 비교했을 때의 유연성입니다. 그리고 Jetpack Compose에서 레이아웃을 작성한 후에는 Compose Multiplatform로 이전하는 것이 정말 어렵지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -175,8 +174,8 @@ AvPlayer는 iOS의 기본 솔루션입니다.
 ```js
 @Composable
 expect fun VideoPlayer(
-    modifier: Modifier, 
-    url: String, 
+    modifier: Modifier,
+    url: String,
     volumeEnabled: State<Boolean>,
 )
 ```
@@ -200,7 +199,7 @@ expect fun VideoPlayer(
 간단히 말하면 다음과 같습니다:
 
 - Gradle 작업을 호출합니다.
-로컬 빌드(빠름)의 경우 iosX64Binaries 또는 iosArm64Binaries를 사용하거나 최종 이진 파일의 경우 assembleReleaseXCFramework를 사용합니다(느림).
+  로컬 빌드(빠름)의 경우 iosX64Binaries 또는 iosArm64Binaries를 사용하거나 최종 이진 파일의 경우 assembleReleaseXCFramework를 사용합니다(느림).
 - build/bin/iosArm64/releaseFramework (또는 유사한 경로)에서 결과물을 iOS 프로젝트로 복사합니다.
 - Xcode에 의해 동기화될 때까지 잠시 기다립니다.
 - 완료. iOS 프로젝트에서 Kotlin 코드를 사용하세요.

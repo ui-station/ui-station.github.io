@@ -3,13 +3,12 @@ title: "LLM이 정말 새로운 것을 배울 수 있을까요"
 description: ""
 coverImage: "/assets/img/2024-05-23-CanaLLMReallyLearnNewThings_0.png"
 date: 2024-05-23 18:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-CanaLLMReallyLearnNewThings_0.png
 tag: Tech
 originalTitle: "Can a LLM Really Learn New Things"
 link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b4502522"
 ---
-
 
 ## 인공지능|LLMS|미세 튜닝|
 
@@ -59,7 +58,7 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 6](/assets/img/2024-05-23-CanaLLMReallyLearnNewThings_6.png)
 
 그에 반해, 알려지지 않은 사실과 약하게 알려진 사실은 모델의 성능에 해를 끼치며, 이 하락은 환각 증가에서 유도된 것입니다.
@@ -67,7 +66,7 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 따라서 저자들에 따르면, 이 알려지지 않은 지식은 성능에 해를 끼칠 수 있으며 (따라서 미세 조정은 거의 무용한 것으로 만듭니다). 이 알려지지 않은 지식을 "I don't know"로 표시하여 이 피해를 줄일 수 있다고 초기 결과에 따르면 추정됩니다.
 
 ![Image 7](/assets/img/2024-05-23-CanaLLMReallyLearnNewThings_7.png)
-```
+
 
 <div class="content-ad"></div>
 

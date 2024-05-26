@@ -3,13 +3,12 @@ title: "로컬 LLM 및 다양한 시스템에서 VLM 실행 시 처리량 성능
 description: ""
 coverImage: "/assets/img/2024-05-23-ComparingThroughputPerformanceofRunningLocalLLMsandVLMondifferentsystems_0.png"
 date: 2024-05-23 16:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ComparingThroughputPerformanceofRunningLocalLLMsandVLMondifferentsystems_0.png
 tag: Tech
 originalTitle: "Comparing Throughput Performance of Running Local LLMs and VLM on different systems"
 link: "https://medium.com/aidatatools/comparing-throughput-performance-of-running-local-llms-and-vlm-on-different-systems-ca4ca82c8edc"
 ---
-
 
 데이터 엔지니어로서, 저는 몇 가지 생성적 AI 모델을 시험해 보고 로컬에서 모델을 설치/실행하는 것에 매혹을 느낍니다. Large Language Model (LLM)과 Vision-Language Model (VLM)은 가장 흥미로운 모델입니다. OpenAI는 ChatGPT 웹사이트와 모바일 앱을 제공합니다. Microsoft는 Windows 11 Copilot을 우리가 사용할 수 있도록 만들었습니다. 그러나 우리는 어떤 데이터가 인터넷으로 전송되고 그들의 데이터베이스에 저장되는지를 제어할 수 없습니다. 그들의 시스템은 오픈 소스가 아니며, 마치 신비로운 검은 상자와 같습니다.
 
@@ -21,7 +20,6 @@ Ollama는 현재 macOS, Linux 및 Windows의 WSL2에서 실행할 수 있습니�
 
 <div class="content-ad"></div>
 
-```markdown
 ```js
 curl https://ollama.ai/install.sh | sh
 ```
@@ -35,7 +33,7 @@ curl https://ollama.ai/install.sh | sh
 - Windows 11 데스크톱 호스트에 설치된 VMware Player 17.5를 통해 8코어 프로세서와 16GB RAM이 장착된 Ubuntu 23.10 64비트 운영 체제
 - Apple Mac mini (Apple M1 칩) (macOS Sonoma 14.2.1 운영 체제) 8코어 CPU(성능 코어 4개, 효율성 코어 4개), 8코어 GPU, 16GB RAM
 - NVIDIA T4 GPU (Ubuntu 23.10 64비트 운영 체제), 8 vCPU, 16GB RAM
-```
+
 
 <div class="content-ad"></div>
 

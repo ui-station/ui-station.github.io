@@ -3,7 +3,7 @@ title: "프로모션에 대한 공학 매니저의 고백"
 description: ""
 coverImage: "/assets/img/2024-05-23-ConfessionofanEngineeringManageronPromotions_0.png"
 date: 2024-05-23 13:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ConfessionofanEngineeringManageronPromotions_0.png
 tag: Tech
 originalTitle: "Confession of an Engineering Manager on Promotions"
@@ -11,7 +11,6 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-23-ConfessionofanEngineeringManageronPromotions_0.png)
 
 많이 들어온 것 중에 한 가지 예제로 좋은 매니저의 핵심 지표는 누군가를 승진시키는 능력이라고 들거나 들어 봤습니다. 표면적으로는 충분히 합리적으로 들립니다. 결국, 매니저는 자신의 사람들을 승진시킬 수 없다면 무엇을 하는 걸까요?
@@ -19,7 +18,6 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 더 깊이 들어가보면, 이 명제는 오해를 불러일으킵니다.
 
 저는 듣긴 했고, 유감스럽게도 스스로도 이를 말해본 적이 있습니다. 엔지니어링 매니저로서 승진 판정 회의에 참여하면 마치 후보를 대신해서 타석에 들어가는 것이 야구에서 대타수 비슷하다는 말씀을 들어왔습니다. 후보는 스트라이크 피치이고, 매니저의 일은 대타로서 4구짜리 패스트볼을 홈런으로 쳐야 하는 것입니다.
-```
 
 <div class="content-ad"></div>
 
@@ -49,14 +47,14 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 
 양적 데이터 샘플
 
-- 코딩: diff* 개수, diff 당 평균 수정 횟수, 코드 리뷰 횟수
-- 문서화: 설계 문서 (RFC**) 개수
+- 코딩: diff\* 개수, diff 당 평균 수정 횟수, 코드 리뷰 횟수
+- 문서화: 설계 문서 (RFC\*\*) 개수
 
 <div class="content-ad"></div>
 
-* diff는 주 코드베이스에 병합된 코드 변경의 단위이며, 병합 요청 등으로도 알려져 있어요.
+- diff는 주 코드베이스에 병합된 코드 변경의 단위이며, 병합 요청 등으로도 알려져 있어요.
 
-** RFC(의견 요청); 디자인 및 리뷰를 위한 표준화된 문서
+\*\* RFC(의견 요청); 디자인 및 리뷰를 위한 표준화된 문서
 
 질적 데이터 샘플
 
@@ -86,7 +84,7 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 
 이 과정은 밀어서와 끌어서 둘 다 필요합니다: 매니저는 "승진 가능한" 직원을 눈에 띄는 프로젝트에 배치해야 하며 직원들도 이와 같은 프로젝트를 적극적으로 요청해야 합니다.
 
-*현재 수준이 중급이라면 L+2는 스태프 엔지니어, L+3은 시니어 스태프 엔지니어가 됩니다.
+\*현재 수준이 중급이라면 L+2는 스태프 엔지니어, L+3은 시니어 스태프 엔지니어가 됩니다.
 
 <div class="content-ad"></div>
 

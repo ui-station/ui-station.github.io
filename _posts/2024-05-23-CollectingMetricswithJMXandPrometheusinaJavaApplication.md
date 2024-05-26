@@ -3,13 +3,12 @@ title: "자바 애플리케이션에서 JMX와 프로메테우스로 메트릭 �
 description: ""
 coverImage: "/assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_0.png"
 date: 2024-05-23 12:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_0.png
 tag: Tech
 originalTitle: "Collecting Metrics with JMX and Prometheus in a Java Application"
 link: "https://medium.com/@estevaosaleme/collecting-metrics-with-jmx-and-prometheus-in-a-java-application-f4364b459692"
 ---
-
 
 저희 응용 프로그램의 내부 작업, 성능 특성 및 비즈니스 지표를 이해하는 것은 사용자 경험과 비즈니스 상태를 구분짓고, 비즈니스가 어떻게 진행되고 있는지를 나타낼 수 있습니다. 높은 CPU 또는 메모리 사용량, 느린 응답 시간 또는 높은 지연과 같은 성능 문제는 비효율성이나 자원 경합을 지적할 수 있습니다.
 
@@ -86,7 +85,6 @@ public class DemoJmx implements DemoJmxMBean {
 이후, MBean 서버를 초기화하고 사용자 정의 MBean (DemoJmx)의 인스턴스를 생성한 다음, main 메소드 내에서 고유한 ObjectName을 사용하여 MBean 서버에 등록해야 합니다 (단계 3). 이 설정을 통해 JMX를 통해 DemoJmx 인스턴스를 관리하고 모니터링할 수 있게 됩니다. 이 경우, 볼륨을 관리하고 수집할 수 있습니다.
 
 ```js
-...
 // 모든 MBean을 위한 레지스트리인 플랫폼 MBeanServer를 검색합니다
 MBeanServer mbs = ManagementFactory.getPlatformMBeanServer();
 // MBean 구현의 인스턴스를 생성합니다
@@ -98,7 +96,7 @@ try {
     // ObjectName을 사용하여 MBean 인스턴스 (demoService)를 MBeanServer에 등록합니다
     // 이렇게 하면 JMX를 통해 MBean을 관리하고 모니터링할 수 있습니다
     mbs.registerMBean(demoService, name);
-...
+```
 
 <div class="content-ad"></div>
 
@@ -155,7 +153,7 @@ rules:
 
 <div class="content-ad"></div>
 
-```markdown
+```bash
 java -javaagent:./../jmx_prometheus_javaagent-0.20.0.jar=8080:./../config.yaml -classpath mbeans-example/target/classes com.example.DemoJmx
 ```
 
@@ -164,7 +162,7 @@ java -javaagent:./../jmx_prometheus_javaagent-0.20.0.jar=8080:./../config.yaml -
 이제 우리는 프로메테우스 에이전트가 게시한 메트릭에 /metrics 엔드포인트(http://localhost:8080/metrics)를 통해 액세스할 수 있어야 합니다. 도표 4에서 볼 수 있듯이, 자세히 살펴보면 DemoJmxMetrics 객체와 속성 volume을 확인할 수 있습니다.
 
 ![이미지](/assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_4.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -181,7 +179,6 @@ java -javaagent:./../jmx_prometheus_javaagent-0.20.0.jar=8080:./../config.yaml -
 그럼, 새로운 작업을 추가하여 prometheus.yml 구성 파일을 업데이트합니다:
 
 ```js
-...
 - job_name: 'jmx-exporter'
   static_configs:
     - targets: ['<당신의 IP 주소>:8080']
@@ -193,7 +190,7 @@ java -javaagent:./../jmx_prometheus_javaagent-0.20.0.jar=8080:./../config.yaml -
 
 <div class="content-ad"></div>
 
-```markdown
+```js
 docker run \
     -p 9090:9090 \
     -v ./prometheus.yml:/etc/prometheus/prometheus.yml \
@@ -205,7 +202,7 @@ docker run \
 그런 다음, Prometheus 서버 UI 엔드포인트인 http://localhost:9090 으로 이동합니다 (그림 6). 우리의 애플리케이션에서 메트릭이 스크랩되고 있는지 확인하기 위해 상태 메뉴로 이동한 다음 타겟을 선택합니다.
 
 ![이미지](/assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_6.png)
-```
+
 
 <div class="content-ad"></div>
 

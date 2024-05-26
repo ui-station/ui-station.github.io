@@ -3,7 +3,7 @@ title: "자바스크립트 파일 분석으로 여러 버그를 발견하는 방
 description: ""
 coverImage: "/assets/img/2024-05-23-HowAnalyzingJavaScriptFilesCanUncoverMultipleBugs_0.png"
 date: 2024-05-23 18:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowAnalyzingJavaScriptFilesCanUncoverMultipleBugs_0.png
 tag: Tech
 originalTitle: "How Analyzing JavaScript Files Can Uncover Multiple Bugs"
@@ -11,7 +11,6 @@ link: "https://medium.com/@l0da/how-i-hacked-one-of-these-big-companies-js-files
 ---
 
 
-```markdown
 ![image](/assets/img/2024-05-23-HowAnalyzingJavaScriptFilesCanUncoverMultipleBugs_0.png)
 
 السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُه
@@ -19,7 +18,7 @@ link: "https://medium.com/@l0da/how-i-hacked-one-of-these-big-companies-js-files
 Peace be upon you, and the mercy of Allah, and His blessings
 
 Hello World !
-```
+
 
 <div class="content-ad"></div>
 
@@ -33,7 +32,7 @@ JS 코드가 약 220k 라인이었는데, 그냥 "아니, 내가 이겨."라고 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-HowAnalyzingJavaScriptFilesCanUncoverMultipleBugs_1.png)
 
 당연히 전체를 다 읽을 생각은 없었습니다 (아닌 걸까요?). 그 대상의 버그를 찾아 큰 회사나 공개 버그 바운티 프로그램에서 버그를 발견하는 두려움을 극복하기로 했습니다.
@@ -41,7 +40,7 @@ JS 코드가 약 220k 라인이었는데, 그냥 "아니, 내가 이겨."라고 
 그래서 나는 JS 파일을 정신적으로 섹션으로 나누었습니다. 매일 웹사이트를 수동으로 테스트하고 지루해지면 JS 파일의 일부를 읽어 나가기로 했습니다.
 
 그 결과 그 대상에 대한 몇 개의 서브도메인 코드를 발견할 수 있었습니다.
-```
+
 
 <div class="content-ad"></div>
 

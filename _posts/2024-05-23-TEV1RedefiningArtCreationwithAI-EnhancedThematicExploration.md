@@ -3,13 +3,12 @@ title: "AI-강화 주제 탐구로 예술 창작을 재정의하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_0.png"
 date: 2024-05-23 13:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_0.png
 tag: Tech
 originalTitle: "TEV1: Redefining Art Creation with AI-Enhanced Thematic Exploration"
 link: "https://medium.com/@asycd/tev1-redefining-art-creation-with-ai-enhanced-thematic-exploration-b00d0f7ce55a"
 ---
-
 
 ![이미지](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_0.png)
 
@@ -21,7 +20,7 @@ Asycd에서는 스스로에게 이렇게 물었습니다: AI를 활용하여 예
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![TEV1 Image 1](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_1.png)
 
 TEV1의 시작은 예술적 창작 프로세스를 단순화하고 향상시키는 욕망에서 비롯되었습니다. 우리는 작가, 작가 및 크리에이터들이 종종 자신의 비전과 일치하는 주제를 개념화하고 시각물을 생성하는 데 상당한 시간을 소비한다는 것을 인지했습니다. 우리의 목표는 이러한 시간과 노력을 줄이고, 창작자들이 핵심 창작 작업에 더 집중할 수 있는 도구를 디자인하는 것이었습니다.
@@ -29,7 +28,7 @@ TEV1의 시작은 예술적 창작 프로세스를 단순화하고 향상시키�
 게다가, 특히 DALL-E 3 및 GPT-4o와 같은 도구를 통한 인공 지능의 발전으로 고품질의 특정 주제 이미지를 생성하는 잠재력이 실행 가능하고 매력적해졌습니다. TEV1은 이러한 잠재력을 활용하기 위한 우리의 대응책으로, 창작자들에게 강력하고 직관적인 도구를 제공하여 세계 어디서나 사용할 수 있도록 합니다.
 
 ![TEV1 Image 2](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,7 +42,7 @@ TEV1은 최첨단 AI 기술인 DALL-E 3과 이미지 생성 및 콘텍스트 이
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_3.png)
 
 저희 도구에는 컨텍스트 로딩, 자동 데이터 처리 및 RAG와 같은 복잡한 기능이 포함되어 있어 생성된 이미지가 관련성을 가지고 미학적으로 매력적인 것을 보장합니다. 현재는 관심도 및 성능을 측정하기 위한 샘플 생성에 제한되어 있지만, TEV1은 지속적인 사용자 피드백과 모델 훈련을 통해 발전하도록 설계되었습니다.
@@ -51,7 +50,7 @@ TEV1은 최첨단 AI 기술인 DALL-E 3과 이미지 생성 및 콘텍스트 이
 ## 데이터에서 아트로 — 우리가 새로운 아트워크를 위해 역사적 데이터를 활용하는 방법
 
 ![이미지](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_4.png)
-```
+
 
 <div class="content-ad"></div>
 

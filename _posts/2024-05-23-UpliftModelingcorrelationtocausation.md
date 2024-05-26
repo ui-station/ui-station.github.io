@@ -3,13 +3,12 @@ title: "업리프트 모델링 상관관계에서 인과관계로"
 description: ""
 coverImage: "/assets/img/2024-05-23-UpliftModelingcorrelationtocausation_0.png"
 date: 2024-05-23 18:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-UpliftModelingcorrelationtocausation_0.png
 tag: Tech
 originalTitle: "Uplift Modeling: correlation to causation"
 link: "https://medium.com/@burakozen/uplift-modeling-b2dda3fd9f11"
 ---
-
 
 대부분의 기업이 새로운 캠페인이나 프로모션을 도입했을 때 해당 캠페인이나 프로모션이 사용자 베이스에 효과가 있는지를 예측하는 ML 모델이 필요한 경우가 많습니다. 이러한 노력의 궁극적인 목표는 해당 캠페인들을 통해 더 많은 사용자를 전환하거나 CTR과 같은 특정 비즈니스 지표를 향상시키는 것일 수 있습니다. 물론 비즈니스 유형에 따라, 캠페인은 할인이나 충성도 프로그램과 같은 다양한 형태로 나타날 수 있습니다.
 
@@ -149,7 +148,7 @@ Step III:
 
 <div class="content-ad"></div>
 
-```markdown
+
 P(Y=1 | x, T=1) - P(Y=1 | x, T=0) = P(T=1 | Y=1, x) - [1-P(T=1 | Y=1, x)] = 2*P(T=1 | Y=1, x) - 1
 
 위 식은 II 단계에서 오른쪽 식을 사용하여 uplift 공식의 두 부분을 대체하는 데 사용됩니다.
@@ -157,7 +156,7 @@ P(Y=1 | x, T=1) - P(Y=1 | x, T=0) = P(T=1 | Y=1, x) - [1-P(T=1 | Y=1, x)] = 2*P(
 실제 uplift 공식의 최종 추정은 다음과 같습니다:
 
 P(Y=1 | x, T=1) - P(Y=1 | x, T=0) = 2*P(T=1 | Y=1, x) - 1
-```
+
 
 <div class="content-ad"></div>
 

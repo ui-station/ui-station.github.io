@@ -3,13 +3,12 @@ title: "깔끔한 아키텍처 사용 사례의 복잡성"
 description: ""
 coverImage: "/assets/img/2024-05-23-TheComplexitiesofCleanArchitectureUseCases_0.png"
 date: 2024-05-23 14:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheComplexitiesofCleanArchitectureUseCases_0.png
 tag: Tech
 originalTitle: "The Complexities of Clean Architecture Use Cases"
 link: "https://medium.com/@VolodymyrSch/the-complexities-of-clean-architecture-use-cases-71ac89ea8b40"
 ---
-
 
 Clean Architecture는 따라야 할 규칙이 있는데, 엄격히 준수한다고 해서 문제가 발생할 수 있습니다. 이 글에서는 정확히 이러한 규칙을 엄격히 준수할 때 발생할 수 있는 몇 가지 문제점, 특히 유스케이스와 단일 책임 원칙 (SRP)에 초점을 맞춰 구체적으로 논의하겠습니다.
 이 글은 Clean Architecture와 해당 용어에 이미 익숙한 사람들을 대상으로 합니다.
@@ -27,14 +26,14 @@ Clean Architecture의 규칙 중 하나는 의존성 원칙인데, 이것은 소
 비즈니스 규칙이 'UI에 데이터를 표시해야 한다'는 규칙 외에는 어떤 비즈니스 규칙도 없더라도, 종속성 규칙을 따르면 데이터 레이어에서 데이터를 가져오는 UseCase를 만들어야 합니다.
 
 ```kotlin
-class GetUserUseCase( 
-   private val userRepository: UserRepository 
-) { 
- 
- operator fun invoke(userConfig: UserConfig): Result<User> { 
-   return userRepository.getUser() 
- } 
-} 
+class GetUserUseCase(
+   private val userRepository: UserRepository
+) {
+
+ operator fun invoke(userConfig: UserConfig): Result<User> {
+   return userRepository.getUser()
+ }
+}
 ```
 
 GetUserUseCase에는 규칙이 없고 다른 레이어로의 프록시 역할만 수행합니다. 어떻게 하면 추가적인 로직 없이 모든 사용자에 대한 CRUD를 갖을 수 있을까요?
@@ -88,7 +87,7 @@ class UpdateUserUseCase(
 이 use cases는 데이터 계층에 대한 프록시 역할을 하는 것 외에 아무것도 하지 않습니다. Clean Architecture의 일부 구현에서는 모델 간의 변환을 수행하는 매퍼도 존재할 수 있으며, 이는 상황을 더 악화시킵니다. 비즈니스 규칙을 행동으로 전환하지 않습니다. 어떤 문제도 해결하지 않고, 단지 Clean Architecture의 규칙을 만족시키기 위해 추가 코드를 작성합니다.
 
 조금 생각해 봅시다:
-```  
+
 
 <div class="content-ad"></div>
 
@@ -108,13 +107,13 @@ class UpdateUserUseCase(
 
 예제를 살펴보겠습니다. 은행 앱에서 신용 카드 목록을 제공하는 use case가 있다고 가정해봅시다.
 ```js
-class GetCreditCartsUseCase( 
-    private val creditCardRepository: CreditCardRepository 
-) { 
- 
- operator fun invoke(): Result<List<CreditCard>> { 
-    return creditCardRepository.getCreditCards() 
- } 
+class GetCreditCartsUseCase(
+    private val creditCardRepository: CreditCardRepository
+) {
+
+ operator fun invoke(): Result<List<CreditCard>> {
+    return creditCardRepository.getCreditCards()
+ }
 }
 ```
 
@@ -130,7 +129,6 @@ class GetCreditCartsUseCase(
 
 <div class="content-ad"></div>
 
-```markdown
 <img src="/assets/img/2024-05-23-TheComplexitiesofCleanArchitectureUseCases_2.png" />
 
 이제 UseCase의 비즈니스 요구 사항에 대해 생각해 봅시다. 우리는 신용 카드 목록을 가져와 UI에 표시해야 합니다. 사용된 모든 곳에 영향을 미치는 추가 로직이 있을 가능성은 어떤지요? 저는 "잘 없을 것"이라고 생각합니다. 현재 작업 중인 앱에 대해 생각해보면 이러한 요구 사항의 본질 때문에 결코 변경될 수 없는 많은 유스케이스를 찾을 수 있다고 확신합니다.
@@ -138,19 +136,19 @@ class GetCreditCartsUseCase(
 큰 프로젝트에서 발생할 수 있는 또 다른 문제는 생성자 과다 주입입니다:
 
 ```js
-class UserSettingsViewModel( 
-   private val getUserUserCase: GetUserUserCase, 
-   private val getAllUsersUseCase: GetAllUsersUseCase, 
-   private val addUserUseCase: AddUserUseCase, 
-   private val deleteUserUseCase: DeleteUserUseCase, 
-   private val updateUserUseCase: UpdateUserUseCase, 
-   private val getPremiumUsersUseCase: GetPremiumUsersUseCase, 
-   private val getFiltersUseCase: GetFiltersUseCase, 
-   private val getAppSettingsUseCase: GetAppSettingsUseCase, 
-   private val selectUserUseCase: SelectUserUseCase, 
-   private val selectFilterUseCase: SelectFilterUseCase, 
-   private val updateAppSettingsUseCase: UpdateAppSettingsUseCase 
-   //…이하 생략… 
+class UserSettingsViewModel(
+   private val getUserUserCase: GetUserUserCase,
+   private val getAllUsersUseCase: GetAllUsersUseCase,
+   private val addUserUseCase: AddUserUseCase,
+   private val deleteUserUseCase: DeleteUserUseCase,
+   private val updateUserUseCase: UpdateUserUseCase,
+   private val getPremiumUsersUseCase: GetPremiumUsersUseCase,
+   private val getFiltersUseCase: GetFiltersUseCase,
+   private val getAppSettingsUseCase: GetAppSettingsUseCase,
+   private val selectUserUseCase: SelectUserUseCase,
+   private val selectFilterUseCase: SelectFilterUseCase,
+   private val updateAppSettingsUseCase: UpdateAppSettingsUseCase
+   //…이하 생략…
 )
 ```
 
@@ -263,85 +261,85 @@ class UserRegistrationUseCase(
         return isEmailEligible && isLocationEligible
     }
 }
-```  
+```
 
 <div class="content-ad"></div>
 
 이 UseCase를 살펴보면 SRP를 위반하는 것 같네요. 아마도 맞을 겁니다. 코드가 별도의 UseCase로 추출되고 재사용될 수 있는 부분이 있습니다. 함께 해결해보죠.
 
 ```js
-class UserRegistrationFlowUseCase(  
-    private val saveUserUseCase: SaveUserUseCase,  
-    private val prepareNewUserUseCase: PrepareNewUserUseCase,  
-    private val userFollowUpUseCase: UserFollowUpUseCase,  
-    private val sendWelcomeEmailUseCase: SendWelcomeEmailUseCase,  
-    private val setAppThemeUseCase: SetAppThemeUseCase,  
-) {  
-  
-  operator fun invoke(userDetails: UserDetails): Result<User> {  
+class UserRegistrationFlowUseCase(
+    private val saveUserUseCase: SaveUserUseCase,
+    private val prepareNewUserUseCase: PrepareNewUserUseCase,
+    private val userFollowUpUseCase: UserFollowUpUseCase,
+    private val sendWelcomeEmailUseCase: SendWelcomeEmailUseCase,
+    private val setAppThemeUseCase: SetAppThemeUseCase,
+) {
+
+  operator fun invoke(userDetails: UserDetails): Result<User> {
       val userResult = prepareNewUserUseCase.prepareUser(userDetails)
       if (userResult.isError()) {
          return userResult
-      }  
-      val user = userResult.get()
-        
-      saveUserUseCase(user)  
-      sendWelcomeEmailUseCase(user)  
-      userFollowUpUseCase(user)  
-      setAppThemeUseCase(user)  
-      return Result.success(user)    
-  }  
-}  
-  
-class PromotionEligibilityUseCase(  
-    private val emailPromotionEligibilityUseCase: EmailPromotionEligibilityUseCase,  
-) {  
-  
-  fun checkEligibility(userDetails: UserDetails): Boolean {  
-      val isEmailEligible = emailPromotionEligibilityUseCase(userDetails.email)  
-      val isLocationEligible = userDetails.location == "USA" // Assume promotional eligibility for USA  
-      return isEmailEligible && isLocationEligible  
-  }  
-  
-}  
-  
-class EmailPromotionEligibilityUseCase {  
-  
-  operator fun invoke(email: String): Boolean {  
-      val emailRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$"  
-      return email.endsWith("@example.com") && email.matches(emailRegex.toRegex())  
-  }  
-}  
-  
-class PrepareNewUserUseCase(  
-    private val securityService: SecurityService,  
-    private val getStarterPackUseCase: GetStarterPackUseCase,  
-    private val promotionEligibilityUseCase: PromotionEligibilityUseCase,  
-) {  
-  
-  fun prepareUser(userDetails: UserDetails): Result<User> { 
-      if (securityService.weak(password = userDetails.password)) {  
-         return Result.failure(Exception("Password is weak"))  
       }
-      val isPromotional = promotionEligibilityUseCase.checkEligibility(userDetails)  
-      val userSettings = UserSettings("en-US", receiveNewsletters = isPromotional)  
-      val starterPack = getStarterPackUseCase(userDetails.location, isPromotional)  
-      val encryptedPassword = securityService.encryptPassword(userDetails.password)  
-      return Result.success(User(  
-          id = 0,  
-          name = userDetails.name,  
-          email = userDetails.email,  
-          password = encryptedPassword,  
-          location = userDetails.location,  
-          isPromotional = isPromotional,  
-          settings = userSettings,  
-          starterPack = starterPack  
-        )
-      )  
-  }  
-}  
+      val user = userResult.get()
 
-(이하 계속)  
+      saveUserUseCase(user)
+      sendWelcomeEmailUseCase(user)
+      userFollowUpUseCase(user)
+      setAppThemeUseCase(user)
+      return Result.success(user)
+  }
+}
+
+class PromotionEligibilityUseCase(
+    private val emailPromotionEligibilityUseCase: EmailPromotionEligibilityUseCase,
+) {
+
+  fun checkEligibility(userDetails: UserDetails): Boolean {
+      val isEmailEligible = emailPromotionEligibilityUseCase(userDetails.email)
+      val isLocationEligible = userDetails.location == "USA" // Assume promotional eligibility for USA
+      return isEmailEligible && isLocationEligible
+  }
+
+}
+
+class EmailPromotionEligibilityUseCase {
+
+  operator fun invoke(email: String): Boolean {
+      val emailRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$"
+      return email.endsWith("@example.com") && email.matches(emailRegex.toRegex())
+  }
+}
+
+class PrepareNewUserUseCase(
+    private val securityService: SecurityService,
+    private val getStarterPackUseCase: GetStarterPackUseCase,
+    private val promotionEligibilityUseCase: PromotionEligibilityUseCase,
+) {
+
+  fun prepareUser(userDetails: UserDetails): Result<User> {
+      if (securityService.weak(password = userDetails.password)) {
+         return Result.failure(Exception("Password is weak"))
+      }
+      val isPromotional = promotionEligibilityUseCase.checkEligibility(userDetails)
+      val userSettings = UserSettings("en-US", receiveNewsletters = isPromotional)
+      val starterPack = getStarterPackUseCase(userDetails.location, isPromotional)
+      val encryptedPassword = securityService.encryptPassword(userDetails.password)
+      return Result.success(User(
+          id = 0,
+          name = userDetails.name,
+          email = userDetails.email,
+          password = encryptedPassword,
+          location = userDetails.location,
+          isPromotional = isPromotional,
+          settings = userSettings,
+          starterPack = starterPack
+        )
+      )
+  }
+}
+
+(이하 계속)
 ```
 
 우리는 SRP를 만족하는 새로운 8개 UseCase를 생성했어요. 모두 작고 깔끔하며 쉽게 재사용할 수 있어요. 테스트에 대해서 언급하지는 않았는데, 이 두 경우 모두 모든 것을 쉽게 테스트할 수 있어요.
@@ -350,7 +348,7 @@ class PrepareNewUserUseCase(
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-TheComplexitiesofCleanArchitectureUseCases_4.png)
 
 기본적으로는 각 use case에서 함수 트리와 그들이 하는 일을 머릿속에 유지해야 합니다. 각 use case에서 무슨 일이 일어나고 있는지 읽고 기억해야 합니다. 함수가 무슨 일을 하는지 읽고 다음으로 진행 — 다시 읽고, 그리고 다음으로 진행 — 다시 읽고, 그리고 다시 처음 use case로 돌아가고, 나머지 남은 모든 함수와 함께 계속합니다. 모든 함수가 서로 다른 파일에 있기 때문에 모두 기억해야 합니다.
@@ -358,7 +356,7 @@ class PrepareNewUserUseCase(
 ![이미지](/assets/img/2024-05-23-TheComplexitiesofCleanArchitectureUseCases_5.png)
 
 또한 디버깅할 때도 귀찮은 작업인데, 다른 파일의 중단점 사이를 이동해야하고, 디버거의 데이터는 일반적으로 현재 클래스에만 표시됩니다. 코드 리뷰에 있어서도 마찬가지로 도전적입니다. 파일과 함수 사이를 쉽게 이동하는 것이 항상 가능한 것은 아니기 때문입니다.
-```
+
 
 <div class="content-ad"></div>
 

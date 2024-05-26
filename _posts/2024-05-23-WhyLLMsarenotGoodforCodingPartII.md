@@ -3,7 +3,7 @@ title: "LLM이 코딩에 적합하지 않은 이유  2부"
 description: ""
 coverImage: "/assets/img/2024-05-23-WhyLLMsarenotGoodforCodingPartII_0.png"
 date: 2024-05-23 17:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-WhyLLMsarenotGoodforCodingPartII_0.png
 tag: Tech
 originalTitle: "Why LLMs are not Good for Coding — Part II"
@@ -11,15 +11,14 @@ link: "https://medium.com/towards-data-science/llms-coding-software-development-
 ---
 
 
-```markdown
 ![WhyLLMsarenotGoodforCodingPartII_0](/assets/img/2024-05-23-WhyLLMsarenotGoodforCodingPartII_0.png)
 
 이 시리즈의 첫 번째 기사 "LLM은 코딩에 좋지 않은 이유"를 게시한 후에는 소셜 미디어에서 다음과 같은 여러 댓글을 받았어요:
 
-이 기사 시리즈의 목적은 대형 언어 모델(Large Language Models, LLM)을 사용하는 것을 막는 게 아니라, LLM을 더 효과적인 코딩 도우미로 만들기 위해 개선해야 할 주요 분야를 식별하는 것입니다. 
+이 기사 시리즈의 목적은 대형 언어 모델(Large Language Models, LLM)을 사용하는 것을 막는 게 아니라, LLM을 더 효과적인 코딩 도우미로 만들기 위해 개선해야 할 주요 분야를 식별하는 것입니다.
 
 ChatGPT와 같은 LLM은 일부 상황에서 유용할 수 있지만, 종종 문법적으로는 정확할 수 있지만 최적이 아니거나 기능적으로 심지어 틀린 코드를 생성합니다.
-```
+
 
 <div class="content-ad"></div>
 

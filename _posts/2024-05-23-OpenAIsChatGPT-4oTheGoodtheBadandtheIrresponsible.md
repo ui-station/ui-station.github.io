@@ -3,7 +3,7 @@ title: "OpenAI의 ChatGPT-4o 좋은 점, 나쁜 점, 그리고 비책능성"
 description: ""
 coverImage: "/assets/img/2024-05-23-OpenAIsChatGPT-4oTheGoodtheBadandtheIrresponsible_0.png"
 date: 2024-05-23 17:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-OpenAIsChatGPT-4oTheGoodtheBadandtheIrresponsible_0.png
 tag: Tech
 originalTitle: "OpenAI’s ChatGPT-4o: The Good, the Bad, and the Irresponsible"
@@ -11,7 +11,6 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 ---
 
 
-```markdown
 ![OpenAI GPT-4o](/assets/img/2024-05-23-OpenAIsChatGPT-4oTheGoodtheBadandtheIrresponsible_0.png)
 
 지난 주, OpenAI가 GPT-4o ("o는 'onmi'의 약자)의 발표를 했습니다. 놀랍게도, 기대보다는 두려움을 느꼈습니다. 그 느낌이 가시지 않았죠.
@@ -19,7 +18,7 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 테크 분야에서 여성으로서, 디지털 기술, 특히 인공지능이 세상에 긍정적인 영향을 줄 수 있다는 증거가 있습니다. 예를 들어, 새로운 더 효과적이고 덜 독성이 있는 약물을 개발하거나 자동 자막을 통해 접근성을 향상시킬 수 있습니다.
 
 기술 옹호자일 뿐만 아니라 동시에 그에 의해 초래된 임박한 재앙감을 경험하고 있는 이 상반된 감정 때문에 대형(소형 포함) 기술, 인식적 부당한대, 그리고 인공지능 서사에 대해 탐구의 길로 빠졌습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -62,7 +61,7 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 이 “업데이트”는 인공지능 회사가 실리콘밸리에서 “보스”처럼 보이는 방법에 대해 알아야 한다는 메모를받았음을 보여줍니다.
 
 1. 성역할 강화
-발표 당일 Sam Altman은 X에 떼어난 단어를 게시했습니다. - “her” - 2013년 영화를 참조한 것입니다. 이 영화에는 Joaquin Phoenix가 주연으로 나오며 남성이 미래 버전의 Siri 또는 Alexa에게 반하는 모습을 보여줍니다. Siri 또는 Alexa는 Scarlett Johansson의 목소리로 연기되었습니다.
+   발표 당일 Sam Altman은 X에 떼어난 단어를 게시했습니다. - “her” - 2013년 영화를 참조한 것입니다. 이 영화에는 Joaquin Phoenix가 주연으로 나오며 남성이 미래 버전의 Siri 또는 Alexa에게 반하는 모습을 보여줍니다. Siri 또는 Alexa는 Scarlett Johansson의 목소리로 연기되었습니다.
 
 이것은 우연이 아닙니다. ChatGPT-4o의 목소리는 뚜렷하게 여성적이고 애정적이며 데모에서는 남성 목소리가 들릴 수 있는 비디오를 한 개만 찾을 수 있었습니다.
 
@@ -75,7 +74,7 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 OpenAI는 ChatGPT-4o의 능력을 묘사할 때 "이성"과 "이해"와 같은 본질적으로 인간적인 기술을 사용하여 그들의 모델이 인간과 같음을 강조합니다.
 
 3. 자기 규제 및 자가 평가
-120년 이상의 경험을 보유한 미국 국립표준기술연구소(NIST)는 AI 리스크를 평가하고 관리하기 위한 프레임워크를 개발했습니다. 다른 다양한 이해관계자 기관들도 각자의 프레임워크를 개발하고 공유했습니다.
+   120년 이상의 경험을 보유한 미국 국립표준기술연구소(NIST)는 AI 리스크를 평가하고 관리하기 위한 프레임워크를 개발했습니다. 다른 다양한 이해관계자 기관들도 각자의 프레임워크를 개발하고 공유했습니다.
 
 그러나 OpenAI는 AI 규제가 필요하다고 주장하면서도 GPT-4o를 그들의 준비 프레임워크에 따라 평가하고 자발적 약속을 준수하기로 선택했습니다.
 
@@ -95,7 +94,7 @@ OpenAI는 “그들”이 사이버 보안, CBRN (화학, 생물학, 방사선, 
 요약하면, OpenAI는 모두를 위해 개발하지만 몇 명의 선택된 사람들의 피드백만을 토대로 합니다.
 
 5. 책임 면제
-약의 안내 책자에 다음과 같은 문구를 읽어볼 수 있다고 상상해보세요.
+   약의 안내 책자에 다음과 같은 문구를 읽어볼 수 있다고 상상해보세요.
 
 하지만 OpenAI가 최근 발표한 내용에는 바로 그런 내용이 포함되어 있습니다.
 
@@ -106,7 +105,7 @@ OpenAI는 “그들”이 사이버 보안, CBRN (화학, 생물학, 방사선, 
 문제가 뭘까요? 제품은 이미 세상에 공개되었습니다.
 
 6. 감정 "추측"의 유사과학을 홍보하는 것
-더미에서 ChatGPT-4o에게 발표자 중 한 명의 감정을 예측하도록 요청합니다. 모델은 계속해서 그의 얼굴에서 보이는 것을 기반으로 개인의 감정 상태를 추측하는 것으로 들어갑니다. 이는 궁극적으로 미소라고 나타나는 것을 주장합니다.
+   더미에서 ChatGPT-4o에게 발표자 중 한 명의 감정을 예측하도록 요청합니다. 모델은 계속해서 그의 얼굴에서 보이는 것을 기반으로 개인의 감정 상태를 추측하는 것으로 들어갑니다. 이는 궁극적으로 미소라고 나타나는 것을 주장합니다.
 
 ![이미지](/assets/img/2024-05-23-OpenAIsChatGPT-4oTheGoodtheBadandtheIrresponsible_2.png)
 

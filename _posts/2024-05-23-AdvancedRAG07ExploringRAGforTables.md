@@ -3,13 +3,12 @@ title: "고급 RAG 07 테이블을 위한 RAG 탐색"
 description: ""
 coverImage: "/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_0.png"
 date: 2024-05-23 18:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_0.png
 tag: Tech
 originalTitle: "Advanced RAG 07: Exploring RAG for Tables"
 link: "https://medium.com/ai-in-plain-english/advanced-rag-07-exploring-rag-for-tables-5c3fc0de7af6"
 ---
-
 
 RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구조화된 문서의 테이블을 효과적으로 구문 분석하고 이해하는 부분이 그 중요한 부분입니다. 특히 스캔된 문서나 이미지 형식의 문서에서는 이 작업이 특히 어려울 수 있습니다. 이러한 도전 과제에는 적어도 다음 세 가지 측면이 있습니다:
 
@@ -33,7 +32,7 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_0.png)
 
 (a). 다중 모달 LLM(예: GPT-4V)을 활용하여 각 PDF 페이지에서 표를 식별하고 정보를 추출합니다.
@@ -42,7 +41,7 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 - 출력: JSON 또는 다른 형식의 표. 다중 모달 LLM이 표 데이터를 추출하지 못하는 경우 이미지를 요약하고 요약본을 반환해야 합니다.
 
 (b). Table Transformer와 같은 전문적인 표 감지 모델을 활용하여 표 구조를 식별합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -76,7 +75,6 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 (f). 일반 텍스트 또는 JSON 형식의 색인 표만 있는 경우.
 
 (g). LaTeX 형식의 색인 표만 있는 경우.
-
 
 <div class="content-ad"></div>
 
@@ -298,7 +296,7 @@ Attention Is All You Need 논문을 YOUR_PDF_PATH로 다운로드하고, nougat�
 def june_run_nougat(file_path, output_dir):
     # nougat을 실행하고 결과를 Mathpix Markdown으로 저장합니다.
     cmd = ["nougat", file_path, "-o", output_dir, "-m", "0.1.0-base", "--no-skipping"]
-    res = subprocess.run(cmd) 
+    res = subprocess.run(cmd)
     if res.returncode != 0:
         print("nougat 실행 중 오류가 발생했습니다.")
         return res.returncode
@@ -317,7 +315,7 @@ def june_get_tables_from_mmd(mmd_path):
             flag = "BEGINTABLE"
         elif line == "\\end{table}\n":
             flag = "ENDTABLE"
-        
+
         if flag == "BEGINTABLE":
             tmp.append(line)
         elif flag == "ENDTABLE":
@@ -340,7 +338,7 @@ if june_run_nougat(file_path, output_dir) == 1:
     import sys
     sys.exit(1)
 
-mmd_path = output_dir + '/' + os.path.splitext(file_path)[0].split('/')[-1] + ".mmd" 
+mmd_path = output_dir + '/' + os.path.splitext(file_path)[0].split('/')[-1] + ".mmd"
 tables = june_get_tables_from_mmd(mmd_path)
 ```
 
@@ -433,7 +431,7 @@ print(체인.invoke("Which parser performs best for WSJ 23 F1"))  # 테이블 4�
 <img src="/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_11.png" />
 
 전체 코드는 아래와 같습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -458,7 +456,7 @@ from langchain_core.runnables import RunnablePassthrough
 def june_run_nougat(file_path, output_dir):
     # Run Nougat and store results as Mathpix Markdown
     cmd = ["nougat", file_path, "-o", output_dir, "-m", "0.1.0-base", "--no-skipping"]
-    res = subprocess.run(cmd) 
+    res = subprocess.run(cmd)
     if res.returncode != 0:
         print("Error when running nougat.")
         return res.returncode
@@ -477,7 +475,7 @@ def june_get_tables_from_mmd(mmd_path):
             flag = "BEGINTABLE"
         elif line == "\\end{table}\n":
             flag = "ENDTABLE"
-        
+
         if flag == "BEGINTABLE":
             tmp.append(line)
         elif flag == "ENDTABLE":
@@ -500,12 +498,12 @@ if june_run_nougat(file_path, output_dir) == 1:
     import sys
     sys.exit(1)
 
-mmd_path = output_dir + '/' + os.path.splitext(file_path)[0].split('/')[-1] + ".mmd" 
+mmd_path = output_dir + '/' + os.path.splitext(file_path)[0].split('/')[-1] + ".mmd"
 tables = june_get_tables_from_mmd(mmd_path)
 
 
 # Prompt
-prompt_text = """You are an assistant tasked with summarizing tables and text. \ 
+prompt_text = """You are an assistant tasked with summarizing tables and text. \
 Give a concise summary of the table or text. The table is formatted in LaTeX, and its caption is in plain text format: {element}  """
 prompt = ChatPromptTemplate.from_template(prompt_text)
 
@@ -571,7 +569,8 @@ print(chain.invoke("Which parser performs best for WSJ 23 F1"))  # Query about t
 이 글에서는 RAG 프로세스 중 표 처리를 위한 주요 기술과 기존 솔루션을 논의하고 구현과 함께 해결책을 제안합니다.
 
 이 문서에서는 표를 파싱하는 데 nougat을 사용합니다. 그러나 더 빠르고 효과적인 파싱 도구가 있다면 nougat을 대체 고려할 것입니다. 우리의 도구에 대한 태도는 먼저 올바른 아이디어를 가지고, 그런 다음 도구를 찾아 실현하는 것에 있으며, 특정 도구에 의존하는 대신입니다.
-``` 
+
+
 
 <div class="content-ad"></div>
 

@@ -3,7 +3,7 @@ title: "자기 주의적 문장 임베딩을 사용한 추천 시스템"
 description: ""
 coverImage: "/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_0.png"
 date: 2024-05-23 17:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_0.png
 tag: Tech
 originalTitle: "Self-attentive sentence embedding for the recommendation system"
@@ -11,7 +11,6 @@ link: "https://medium.com/towards-data-science/self-attentive-sentence-embedding
 ---
 
 
-```markdown
 ![Self-attentive sentence embedding](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_0.png)
 
 # 소개
@@ -19,7 +18,7 @@ link: "https://medium.com/towards-data-science/self-attentive-sentence-embedding
 트랜스포머 레이어와 그의 어텐션 메커니즘은 자연어처리(NLP) 커뮤니티에서 가장 중요한 아이디어 중 하나입니다. 최근 세계를 휩쓴 ChatGPT와 LLaMA와 같은 대규모 언어 모델에서 핵심 역할을 합니다.
 
 하지만 NLP 커뮤니티에서 시작된 다른 흥미로운 아이디어가 있는데, 그 영향은 주로 추천 시스템 분야에서 실현됩니다. 바로 자기주의적 문장 임베딩(self-attentive sentence embedding)입니다. 이 기사에서는 자기주의적 문장 임베딩[1]과 추천 시스템에 적용하는 방법을 살펴볼 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -43,9 +42,9 @@ link: "https://medium.com/towards-data-science/self-attentive-sentence-embedding
 
 d는 표현의 숨겨진 차원을 나타내며, 우리는 문장 s를 n by d 행렬 H로 인코딩할 수 있습니다:
 
-```markdown
+
 ![image](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_3.png)
-```
+
 
 여기서 F는 문장의 토큰을 임베딩으로 인코딩하는 모델 함수를 나타냅니다. 논문에서는 단어 임베딩(Word2Vec을 사용하여 초기화)을 이용하여 토큰을 인코딩하고 이를 양방향 LSTM을 통해 전달합니다. 토큰을 임베딩으로 인코딩하는 다양한 방법이 있기 때문에 일반화를 위해 여기서 F를 사용했습니다.
 
@@ -53,7 +52,7 @@ d는 표현의 숨겨진 차원을 나타내며, 우리는 문장 s를 n by d �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image #1](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_4.png)
 
 Here, the softmax() is applied to the second dimension of its input. We can view the formula as a 2-layer MLP without bias.
@@ -61,7 +60,7 @@ Here, the softmax() is applied to the second dimension of its input. We can view
 As we can see from the above formula, the attention weight A matrix will have a shape of r by n where r is the number of aspects a sentence can have and n is the sentence length. The authors argue that there are many aspects that make up the semantics of a sentence. Thus, they need r embeddings to focus on different parts of the sentence. In other words, each embedding in A is the sentence attention weight:
 
 ![Image #2](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -69,15 +68,15 @@ Transformer처럼 이 행렬 A의 시각화를 통해 문장에 대한 각 측�
 
 마지막으로, 우리는 H와 A를 곱하여 r by d 행렬 M을 얻음으로써 문장 임베딩을 생성합니다:
 
-```markdown
+
 ![image](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_6.png)
-```
+
 
 M의 각 행은 토큰 임베딩과 그 토큰에 대한 측면의 가중치의 가중 합입니다. 시각적으로는 이렇게 보입니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_7.png)
 
 ## Regularization
@@ -85,7 +84,7 @@ M의 각 행은 토큰 임베딩과 그 토큰에 대한 측면의 가중치의 
 In the paper, they also introduce a new regularization term:
 
 ![image](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_8.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -122,7 +121,7 @@ self-attentive 방법이 어떻게 작동하는지 이해하면 추천 시스템
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Table 1](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_10.png)
 
 In the ComiRec paper [2], the authors compare the self-attentive method with the dynamic routing method along with other popular models that produce a single user interest:
@@ -130,7 +129,7 @@ In the ComiRec paper [2], the authors compare the self-attentive method with the
 ![Table 2](/assets/img/2024-05-23-Self-attentivesentenceembeddingfortherecommendationsystem_11.png)
 
 As the table shows, the self-attentive method produces results comparable to those of the dynamic routing method. Still, both multi-interest embedding solutions are significantly better than their single-interest embedding counterparts.
-```
+
 
 <div class="content-ad"></div>
 

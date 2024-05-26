@@ -3,7 +3,7 @@ title: "유튜브에서 배우는 LLMs 사용하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_0.png"
 date: 2024-05-23 13:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_0.png
 tag: Tech
 originalTitle: "Using LLMs to Learn From YouTube"
@@ -11,7 +11,6 @@ link: "https://medium.com/towards-data-science/using-llms-to-learn-from-youtube-
 ---
 
 
-```markdown
 ![Using LLMs to Learn From YouTube](/assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_0.png)
 
 # 소개
@@ -19,7 +18,7 @@ link: "https://medium.com/towards-data-science/using-llms-to-learn-from-youtube-
 팟캐스트나 시청하고 싶은 비디오를 만나본 적이 있나요? 하지만 길이 때문에 시간을 내기 어려워한 적이 있나요? 이러한 형태의 내용의 특정 부분을 다시 참조할 수 있는 쉬운 방법을 바란 적이 있나요?
 
 저는 The Diary of a CEO와 같은 인기 팟캐스트의 YouTube 비디오들에 관해 많은 시간을 할애하기 어려운 문제에 직면해왔습니다. 사실 이러한 팟캐스트에서 다루는 많은 정보들은 빠른 구글 검색을 통해 손쉽게 찾을 수 있습니다. 그러나 저자가 열정적으로 어떤 것에 대한 견해를 표현하거나 성공한 기업가의 경험을 그들의 관점에서 듣는 것은 훨씬 더 통찰력과 명확함을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -444,13 +443,13 @@ UI 자체에 대해, ChatGPT의 인터페이스와 매우 유사한 것을 선�
 
 # ChatGPT 응답과 비교
 
-앱을 구축하는 과정을 논의했으니, 몇 가지 질문에 대한 생성된 응답을 심도 있게 살펴보고, 이를 ChatGPT*에 제시된 동일한 질문과 비교해 보겠습니다.
+앱을 구축하는 과정을 논의했으니, 몇 가지 질문에 대한 생성된 응답을 심도 있게 살펴보고, 이를 ChatGPT\*에 제시된 동일한 질문과 비교해 보겠습니다.
 
 저희 애플리케이션에서 사용되는 LLM에 제시된 기본 프롬프트에는 시맨틱 검색 단계에서 검색된 추가 컨텍스트(관련 트랜스크립트 청킹 형태)가 포함될 것이기 때문에 이러한 비교는 본질적으로 "부당"한 것이라는 점에 유의하십시오. 그러나, RAG를 사용하여 생성된 프롬프트와 같은 기본 LLM에 의해 생성된 응답과 어떤 차이가 있는지 정성적으로 평가할 수 있게 해줄 것입니다.
 
 <div class="content-ad"></div>
 
-*All ChatGPT responses are from gpt-3.5, since this was the model used in the application.
+\*All ChatGPT responses are from gpt-3.5, since this was the model used in the application.
 
 ## 예시 1:
 
@@ -484,7 +483,7 @@ ChatGPT에 같은 질문을 한 결과, 기업가에 관한 일반적인 답변�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![사용 예시 이미지](/assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_11.png)
 
 # 배포
@@ -493,7 +492,7 @@ ChatGPT에 같은 질문을 한 결과, 기업가에 관한 일반적인 답변�
 
 - SAM 템플릿 사양 - AWS CloudFormation을 확장하는 용도로 사용되는 간결한 구문으로, AWS 리소스의 모음을 정의하고 구성하는 데 사용됩니다. 리소스 간 상호 작용 방식 및 필요한 권한을 지정합니다.
 - SAM CLI - SAM 템플릿에 정의된 리소스를 빌드하고 배포하는 데 사용되는 명령줄 도구입니다. 애플리케이션 코드 및 종속성의 패키징, SAM 템플릿을 CloudFormation 구문으로 변환하고 CloudFormation에서 개별 스택으로 템플릿을 배포하는 작업을 처리합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -504,16 +503,12 @@ AWS 리소스에 민감한 환경 변수 전달하기:
 유튜브 데이터 API, OpenAI API, Pinecone API와 같은 외부 구성 요소는 애플리케이션 전체에서 많이 의존합니다. 이러한 값을 CloudFormation 템플릿에 하드코딩하고 '매개변수'로 전달하는 것이 가능하지만, 더 안전한 방법은 AWS SecretsManager에서 각각의 비밀을 만들고 다음과 같이 해당 템플릿에서 이 비밀을 참조하는 것입니다:
 
 ```js
-Parameters:
-  YoutubeDataAPIKey:
-    Type: String
-    Default: '{resolve:secretsmanager:youtube-data-api-key:SecretString:youtube-data-api-key}'
-  PineconeAPIKey:
-    Type: String
-    Default: '{resolve:secretsmanager:pinecone-api-key:SecretString:pinecone-api-key}'
-  OpenaiAPIKey:
-    Type: String
-    Default: '{resolve:secretsmanager:openai-api-key:SecretString:openai-api-key}'
+Parameters: YoutubeDataAPIKey: Type: String;
+Default: "{resolve:secretsmanager:youtube-data-api-key:SecretString:youtube-data-api-key}";
+PineconeAPIKey: Type: String;
+Default: "{resolve:secretsmanager:pinecone-api-key:SecretString:pinecone-api-key}";
+OpenaiAPIKey: Type: String;
+Default: "{resolve:secretsmanager:openai-api-key:SecretString:openai-api-key}";
 ```
 
 <div class="content-ad"></div>
@@ -578,14 +573,11 @@ API 리소스 정의:
 웹 애플리케이션용 API가 프론트엔드와 별도로 호스팅될 예정이므로 API 리소스를 정의할 때 CORS (Cross-Origin Resource Sharing) 지원을 활성화해야 합니다:
 
 ```js
-ChatYTTApi:
-    Type: AWS::Serverless::Api
-    Properties:
-      StageName: Prod
-      Cors:
-        AllowMethods: "'*'"
-        AllowHeaders: "'*'"
-        AllowOrigin: "'*'"
+ChatYTTApi: Type: AWS::Serverless::Api;
+Properties: StageName: Prod;
+Cors: AllowMethods: "'*'";
+AllowHeaders: "'*'";
+AllowOrigin: "'*'";
 ```
 
 위 설정을 통해 두 리소스가 서로 자유롭게 통신할 수 있게 됩니다. 람다 함수를 통해 액세스할 수 있는 여러 엔드포인트는 다음과 같이 정의할 수 있습니다:
@@ -678,11 +670,11 @@ frontend:
 
 ```yaml
 AmplifyBranch:
-    Type: AWS::Amplify::Branch
-    Properties:
-      BranchName: main
-      AppId: !GetAtt AmplifyApp.AppId
-      EnableAutoBuild: true
+  Type: AWS::Amplify::Branch
+  Properties:
+    BranchName: main
+    AppId: !GetAtt AmplifyApp.AppId
+    EnableAutoBuild: true
 ```
 
 이렇게 최종 배포가 완료되면, AWS Amplify 콘솔에서 제공된 링크를 통해 누구에게나 접근 가능합니다. 이렇게 접근한 앱의 데모 기록은 다음에서 확인할 수 있습니다:```

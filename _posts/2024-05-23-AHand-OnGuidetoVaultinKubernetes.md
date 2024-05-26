@@ -3,13 +3,12 @@ title: " 쿠버네티스에서 Vault 사용 방법 안내 "
 description: ""
 coverImage: "/assets/img/2024-05-23-AHand-OnGuidetoVaultinKubernetes_0.png"
 date: 2024-05-23 14:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-AHand-OnGuidetoVaultinKubernetes_0.png
 tag: Tech
 originalTitle: "⎈ A Hand-On Guide to Vault in Kubernetes ⚙️"
 link: "https://medium.com/@muppedaanvesh/a-hand-on-guide-to-vault-in-kubernetes-%EF%B8%8F-1daf73f331bd"
 ---
-
 
 ## ⇢ 실용적인 예제로 HashiCorp Vault를 사용하여 k8s Secrets 관리하기
 
@@ -258,11 +257,13 @@ vault-ui                   LoadBalancer   10.245.11.13     24.123.49.59   8200:3
 예: `external-ip`:8200
 
 제 경우: 24.123.49.59:8200
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 <img src="/assets/img/2024-05-23-AHand-OnGuidetoVaultinKubernetes_1.png" />
 
 이제 토큰 방법을 사용하여 Vault에 로그인할 수 있습니다. 초기에는 Token=root를 사용하여 로그인하십시오.
@@ -270,7 +271,7 @@ vault-ui                   LoadBalancer   10.245.11.13     24.123.49.59   8200:3
 이제 Vault UI에서 시크릿 대시보드를 사용하여 시크릿을 생성할 수 있습니다.
 
 시크릿 엔진으로 이동하세요 '` 시크릿`
-```
+
 
 <div class="content-ad"></div>
 
@@ -300,7 +301,7 @@ my-first-secret
 
 # 쿠버네티스 Pod에서 비밀 액세스
 
-위 단계를 사용하여 Vault를 설치하고 Vault 역할(vault-role)을 구성하여 서비스 계정(vault-serviceaccount)이 Vault에 저장된 비밀에 액세스할 수 있도록 했습니다.``` 
+위 단계를 사용하여 Vault를 설치하고 Vault 역할(vault-role)을 구성하여 서비스 계정(vault-serviceaccount)이 Vault에 저장된 비밀에 액세스할 수 있도록 했습니다.```
 
 <div class="content-ad"></div>
 
@@ -385,7 +386,8 @@ password=anveshpassword
 완료되었습니다! Vault에 시크릿을 성공적으로 생성하고 해당 시크릿을 팟 내에서 활용했습니다.
 
 # 소스 코드
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -408,3 +410,4 @@ password=anveshpassword
 행복한 배포 되세요! 🚀
 
 행복한 쿠버네팅 되세요! ⎈
+

@@ -3,7 +3,7 @@ title: "DALL-E3의 문제들"
 description: ""
 coverImage: "/assets/img/2024-05-23-TheTroubleWithDALL-E3_0.png"
 date: 2024-05-23 18:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheTroubleWithDALL-E3_0.png
 tag: Tech
 originalTitle: "The Trouble With DALL-E3"
@@ -11,7 +11,6 @@ link: "https://medium.com/the-generator/the-trouble-with-dall-e3-ec8a16e10213"
 ---
 
 
-```markdown
 ![2024-05-23-TheTroubleWithDALL-E3.0](/assets/img/2024-05-23-TheTroubleWithDALL-E3_0.png)
 
 세 해 전, 저는 OpenAI의 초기 베타 테스터로 활동했습니다. ChatGPT가 출시되기 몇 달 또는 몇 년 전에 사용되었던 모델을 사용하는 경험은 정말 흥미로웠습니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/the-generator/the-trouble-with-dall-e3-ec8a16e10213"
 OpenAI의 초기 텍스트 모델에 감탄을 표했지만, 여전히 OpenAI의 최초 세대 이미지 생성 시스템인 DALL-E를 처음 사용한 순간을 기억합니다.
 
 사진 작가로서, 간단한 프롬프트를 입력하면 실제 이미지가 반환된다는 아이디어는 혁신적이었습니다. 이미지는 500픽셀 너비이고 종종 절대적으로 이상해보였지만(아보카도 가구, 누구든지?), 그럼에도 불구하고 과학 소설 같은 느낌이었습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -73,7 +72,7 @@ ChatGPT가 사용자의 의도를 정확하게 이해하고 DALL-E3를 위한 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![DALL-E3에서 주는 것](/assets/img/2024-05-23-TheTroubleWithDALL-E3_2.png)
 
 DALL-E3가 준 것:
@@ -81,7 +80,7 @@ DALL-E3가 준 것:
 ![DALL-E3에서 주는 것](/assets/img/2024-05-23-TheTroubleWithDALL-E3_3.png)
 
 쿨한 이미지들이네요. 하지만 제가 시스템에 전달한 데이터와는 거의 관련이 없네요.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -111,15 +110,15 @@ DALL-E3가 준 것:
 
 놀랍게도, DALLE-3은 이를 유용하거나 현실적인 방식으로 해석하는 데 전혀 실패했습니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-TheTroubleWithDALL-E3_5.png)
-```
+
 
 공정하게 말하자면, Midjourney도 비슷한 식으로 실패했습니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-TheTroubleWithDALL-E3_6.png)
 
 In contrast, here’s the basic prompt that I gave Midjourney for the actual image that I used to illustrate that story:
@@ -127,7 +126,7 @@ In contrast, here’s the basic prompt that I gave Midjourney for the actual ima
 That’s something that an AI generator can actually understand. It’s simple and has a clear visual concept. It yielded an image that — with a bit of manual editing — was a perfect fit for the story.
 
 ![Image](/assets/img/2024-05-23-TheTroubleWithDALL-E3_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -191,7 +190,7 @@ DALL-E3를 활용하면 그것을 직접 요청할 수 있어요. 예를 들어,
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-23-TheTroubleWithDALL-E3_9](/assets/img/2024-05-23-TheTroubleWithDALL-E3_9.png)
 
 정말 대단해요! 멋지네요! 하지만 주제와는 전혀 상관이 없죠!
@@ -199,7 +198,7 @@ DALL-E3를 활용하면 그것을 직접 요청할 수 있어요. 예를 들어,
 그렇습니다. 전문가인 제가 Midjourney를 위해 프롬프트를 작성할 수 있지요.("법정에서 나무 망치가 있는 탁자 위의 근접 촬영, 35mm 사진, 푸른 배경, 선명한 보케, 사실적인 사진"), 우리 상상 속 뉴스레터에 더 적합한 이미지가 나올 겁니다:
 
 ![2024-05-23-TheTroubleWithDALL-E3_10](/assets/img/2024-05-23-TheTroubleWithDALL-E3_10.png)
-```
+
 
 <div class="content-ad"></div>
 

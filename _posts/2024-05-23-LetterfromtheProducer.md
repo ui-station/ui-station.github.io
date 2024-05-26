@@ -3,13 +3,12 @@ title: "프로듀서로부터 온 편지"
 description: ""
 coverImage: "/assets/img/2024-05-23-LetterfromtheProducer_0.png"
 date: 2024-05-23 13:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-LetterfromtheProducer_0.png
 tag: Tech
 originalTitle: "Letter from the Producer"
 link: "https://medium.com/@clockwork-labs/letter-from-the-producer-b8c8f41b4212"
 ---
-
 
 # 2024년 5월
 
@@ -41,7 +40,7 @@ Bitcraft Closed Alpha(1)가 4월 30일에 종료되었고, 참으로 멋진 여�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![LetterfromtheProducer_4](/assets/img/2024-05-23-LetterfromtheProducer_4.png)
 
 Round-up — Closed Alpha 1
@@ -51,7 +50,7 @@ Let’s start with a few numbers. 6452 players tested BitCraft for more than one
 ![LetterfromtheProducer_5](/assets/img/2024-05-23-LetterfromtheProducer_5.png)
 
 We were excited to see testers building larger villages and cooperating to quickly leave the Stone Age and reach higher-tier technology. Many players started specializing, and we are happy with the direction the cooperative gameplay went with coordination. The tester feedback will help us further improve, polish, and continuously develop the basic systems already in place like chat and claim management. Specifically, we will also address the hurdles some solo testers faced with their claim — nobody should have to worry about losing their progress during the first hours of playing BitCraft. But everything considered, we are happy with the results and believe that the town-scale gameplay is heading in the right direction.
-```
+
 
 <div class="content-ad"></div>
 

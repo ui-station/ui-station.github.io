@@ -3,17 +3,17 @@ title: "데이터 엔지니어링 개념 제10부, 스파크와 카프카를 활
 description: ""
 coverImage: "/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_0.png"
 date: 2024-05-23 14:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_0.png
 tag: Tech
 originalTitle: "Data Engineering concepts: Part 10, Real time Stream Processing with Spark and Kafka"
 link: "https://medium.com/@mudrapatel17/data-engineering-concepts-part-10-stream-processing-with-spark-and-kafka-42a69fd23f0c"
 ---
 
-
 이것은 데이터 엔지니어링 개념 10부작 시리즈의 마지막 부분입니다. 이번에는 스트림 처리에 대해 이야기할 것입니다.
 
 목차:
+
 1. 스트림 처리란
 2. 카프카의 특징
 3. 카프카 구성
@@ -125,7 +125,7 @@ Delta Lake 테이블은 Databricks에 구현된 Delta Lakehouse 아키텍쳐의 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_8.png)
 
 Use the following link to set up a Python client in streamlit app to push the incidents to the Kafka topics:
@@ -133,7 +133,7 @@ Use the following link to set up a Python client in streamlit app to push the in
 - Step 5: Go to the Confluent Cloud dashboard and verify if the topics are being populated
 
 ![Image](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_9.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -166,7 +166,6 @@ display(processedDF)
 
 <div class="content-ad"></div>
 
-```markdown
 ```js
 import pyspark.sql.functions as F
 from  pyspark.sql.functions import col, struct, to_json
@@ -177,14 +176,14 @@ json_schema = StructType(
     StructField("incident_type", StringType(), nullable = False),
     StructField("location", StringType(), nullable = False),
     StructField("description", StringType(), nullable = True),
-    StructField("contact", StringType(), nullable = True) 
+    StructField("contact", StringType(), nullable = True)
   ]
 )
 
 # Using Spark SQL to write queries on the streaming data in processedDF
 
 query = processedDF.withColumn('value', F.from_json(F.col('value').cast('string'), json_schema))  \
-      .select(F.col("value.incident_type"),F.col("value.location")) 
+      .select(F.col("value.incident_type"),F.col("value.location"))
 display(query)
 ```
 
@@ -226,7 +225,7 @@ def extract_state(location_text):
         return state
     else:
         return "Unknown"
-    
+
 # Create a UDF to map states to regions
 @udf(StringType())
 def map_state_to_region(location):
@@ -240,8 +239,8 @@ def map_state_to_region(location):
 df_with_region = query.withColumn("region", map_state_to_region(query["location"]))
 
 display(df_with_region)
-``` 
 ```
+
 
 <div class="content-ad"></div>
 
@@ -259,7 +258,7 @@ analyzer = SentimentIntensityAnalyzer()
 def analyze_sentiment(description):
     # VADER에서 compound 감정 점수 가져오기
     sentiment_score = analyzer.polarity_scores(description)['neg']
-    
+
     # 감정 점수를 기반으로 심각도 분류
     if sentiment_score >= 0.4:
         return "High"
@@ -285,7 +284,6 @@ display(processedDF_with_severity)
 
 <div class="content-ad"></div>
 
-```markdown
 ![Real-time Stream Processing](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_10.png)
 
 위와 같이 위치별로 그룹화하고 심각도를 기준으로 정렬하여 해당 카운트의 빈도를 얻을 수도 있습니다:
@@ -298,38 +296,40 @@ processedDF_with_severity.createOrReplaceTempView("incident_reports")
 
 # 집계를 위한 SQL 쿼리 정의
 total_incidents_query = """
-    SELECT 
+    SELECT
         incident_type,
         COUNT(*) AS total_incidents
-    FROM 
+    FROM
         incident_reports
-    GROUP BY 
+    GROUP BY
         incident_type
 """
 
 severity_incidents_query = """
-    SELECT 
+    SELECT
         incident_type,
         severity,
         COUNT(*) AS severity_incidents
-    FROM 
+    FROM
         incident_reports
-    GROUP BY 
+    GROUP BY
         incident_type, severity
 """
 
 # 집계 수행
 total_incidents_df = spark.sql(total_incidents_query)
 severity_incidents_df = spark.sql(severity_incidents_query)
-```   
+
 ```
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![Data Engineering Concepts](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_11.png)
 
 Spark 구조화된 스트리밍 분석에 대한 일부 제한 사항:
+
 1. 비 시간 열에 대한 윈도우 함수를 수행할 수 없습니다.
 2. 전체 출력 모드에서 조인을 수행할 수 없습니다. 추가 모드에서만 가능합니다.
 
@@ -349,8 +349,9 @@ streaming_query = processedDF_with_severity.writeStream\
   .trigger(processingTime='10 seconds')\ # 10초ごとに 데이터의 미크로배치를 처리할 트리거 정의
   .format("delta")\
   .toTable(delta_table_path)
-```  
 ```
+
+
 
 <div class="content-ad"></div>
 
@@ -365,3 +366,4 @@ streaming_query = processedDF_with_severity.writeStream\
 <div class="content-ad"></div>
 
 읽어 주셔서 감사합니다 :) 실시간 스트리밍 데이터 아키텍처에 대한 빠른 통찰이 마음에 들었으면 좋겠네요. 데이터 엔지니어링 모험을 위해 행운을 빕니다! 여기 GitHub 저장소 링크입니다:
+

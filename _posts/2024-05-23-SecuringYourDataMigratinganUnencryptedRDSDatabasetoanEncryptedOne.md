@@ -3,13 +3,12 @@ title: "데이터 안전 보장 암호화되지 않은 RDS 데이터베이스를
 description: ""
 coverImage: "/assets/img/2024-05-23-SecuringYourDataMigratinganUnencryptedRDSDatabasetoanEncryptedOne_0.png"
 date: 2024-05-23 13:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SecuringYourDataMigratinganUnencryptedRDSDatabasetoanEncryptedOne_0.png
 tag: Tech
 originalTitle: "Securing Your Data: Migrating an Unencrypted RDS Database to an Encrypted One"
 link: "https://medium.com/@fatmazribi/securing-your-data-migrating-an-unencrypted-rds-database-to-an-encrypted-one-3c47e65dcb76"
 ---
-
 
 ![태그](/assets/img/2024-05-23-SecuringYourDataMigratinganUnencryptedRDSDatabasetoanEncryptedOne_0.png)
 
@@ -35,7 +34,7 @@ Amazon RDS DB 인스턴스에 대한 암호화는 생성 시에만 활성화할 
 
 ![image](/assets/img/2024-05-23-SecuringYourDataMigratinganUnencryptedRDSDatabasetoanEncryptedOne_3.png)
 
-이를 "UnencryptedSnapshot"이라고 이름 짓을 수 있어요. 실제 데이터베이스의 사본이 될 거에요. 스냅샷이 생성되기를 기다려 주세요. 제 경우에는 약 2분이 걸렸어요. 
+이를 "UnencryptedSnapshot"이라고 이름 짓을 수 있어요. 실제 데이터베이스의 사본이 될 거에요. 스냅샷이 생성되기를 기다려 주세요. 제 경우에는 약 2분이 걸렸어요.
 
 ## 3. 사본 암호화
 
@@ -81,7 +80,6 @@ Amazon RDS DB 인스턴스에 대한 암호화는 생성 시에만 활성화할 
 
 <div class="content-ad"></div>
 
-```md
 ![이미지](/assets/img/2024-05-23-SecuringYourDataMigratinganUnencryptedRDSDatabasetoanEncryptedOne_8.png)
 
 수동으로 자격 증명을 추가하는 경우, 비밀번호를 추가해야할 것입니다. 비밀번호를 추가하려면 "검색"을 클릭하면 모든 데이터베이스 정보를 찾을 수 있는 시크릿 매니저를 확인해야 합니다.
@@ -89,13 +87,13 @@ Amazon RDS DB 인스턴스에 대한 암호화는 생성 시에만 활성화할 
 ![이미지](/assets/img/2024-05-23-SecuringYourDataMigratinganUnencryptedRDSDatabasetoanEncryptedOne_9.png)
 
 이번에도 대상 엔드포인트에 대해 동일한 단계를 수행할 것입니다. 새 데이터베이스를 선택하기만 하면 됩니다. 이제 두 개의 엔드포인트가 준비되었으므로 작업을 생성할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
 아래는 Markdown 형식의 텍스트입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-SecuringYourDataMigratinganUnencryptedRDSDatabasetoanEncryptedOne_10.png)
 
 작업을 만들려면 왼쪽 메뉴에서 "데이터 마이그레이션 작업"으로 이동하여 작업을 만들어야 합니다:
@@ -103,7 +101,7 @@ Amazon RDS DB 인스턴스에 대한 암호화는 생성 시에만 활성화할 
 ![이미지](/assets/img/2024-05-23-SecuringYourDataMigratinganUnencryptedRDSDatabasetoanEncryptedOne_11.png)
 
 소스, 대상, 복제 인스턴스 및 마이그레이션 유형을 포함한 설정을 올바르게 구성하고, "기존 데이터 마이그레이션 및 지속적인 변경 복제"를 선택해야 합니다:
-```
+
 
 <div class="content-ad"></div>
 

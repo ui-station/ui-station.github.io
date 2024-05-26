@@ -44,7 +44,6 @@ link: "https://medium.com/@happyjester80/csrf-leads-to-delete-account-241f2cf895
 
 <div class="content-ad"></div>
 
-```md
 - 지금은 설정에 있어요;
 - 잠시만 android:pathPrefix=/account/는 무슨 의미일까요?
 - android:pathPrefix 속성은 Intent 객체의 경로의 초기 부분에만 일치하는 부분 경로를 지정합니다. 그래서 아마도 /account/ 뒤에 무언가를 찾을 수 있을지도 모릅니다.
@@ -57,7 +56,6 @@ adb shell am start -a android.intent.action.VIEW -n com.thredup.android/com.thre
 ```
 
 - 지금 CSRF로 만들어 봐요.
-```
 
 <div class="content-ad"></div>
 

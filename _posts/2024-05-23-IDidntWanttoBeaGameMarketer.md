@@ -3,7 +3,7 @@ title: "내가 마케터가 되고 싶지 않았어요 게임"
 description: ""
 coverImage: "/assets/img/2024-05-23-IDidntWanttoBeaGameMarketer_0.png"
 date: 2024-05-23 13:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-IDidntWanttoBeaGameMarketer_0.png
 tag: Tech
 originalTitle: "I Didn’t Want to Be a (Game) Marketer"
@@ -11,7 +11,6 @@ link: "https://medium.com/@sarahjohana/i-didnt-want-to-be-a-game-marketer-bf68d4
 ---
 
 
-```markdown
 ![image](/assets/img/2024-05-23-IDidntWanttoBeaGameMarketer_0.png)
 
 아마도 제가 거절한 사람은 오늘 인도네시아의 가장 큰 인디 게임 회사 중 하나의 마케팅 책임자로 일하고 있는 저를 보고 궁금해 할 것입니다. 저 자신도 제 결정에 대해 여전히 의문을 품고 있습니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/@sarahjohana/i-didnt-want-to-be-a-game-marketer-bf68d4
 예전엔 마케팅이 거짓말을 하는 것이라고 생각했어요. 나라에서 가장 인기 있는 제품이 되거나, 그 지역에서 가장 인기 있는 음식점이 된다는 것... "마케팅"이라는 말이 별로 듣기 싫었죠. 사람들에게 실망시키는 결과를 원하지 않았어요. 아마 사람을 기쁘게 해주는 것은 고집스러운 사람의 기본적인 성격인 것 같아요. 그리고 저는 그런 사람이에요.
 
 2014년 초, 대학을 졸업한 뒤 첫 직장을 얻었습니다. 저는 그래픽 디자인을 공부했기 때문에, 한 모바일 게임 회사에 2D 아티스트로 지원했고 합격했어요! 하지만, 속은 느낌이 들었어요. 그들은 당시 회사를 떠나는 커뮤니티 매니저를 대신할 수 있느냐고 물었어요. 그냥 잠깐이라고 했어요. 그런데, 2.5년이 지나가고 나는 커뮤니티 관리 이상을 했습니다. 유저 유치, 비즈니스 개발, 약간의 모바일 게임 마케팅, 투자자들에게 프레젠테이션을 하는 법 등 Adobe Photoshop이나 Illustrator를 사용하는 일과는 관련이 없는 일들을 배웠어요.
-```  
+
 
 <div class="content-ad"></div>
 

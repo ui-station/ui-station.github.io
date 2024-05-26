@@ -217,7 +217,6 @@ X, _ = make_blobs(n_samples=500, n_features=2, centers=4,
 
 <div class="content-ad"></div>
 
-```md
 이미지:
 ![마스터링K-Means 클러스터링](/assets/img/2024-05-23-MasteringK-MeansClustering_5.png)
 

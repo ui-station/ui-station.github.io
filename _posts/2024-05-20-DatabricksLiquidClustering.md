@@ -21,7 +21,7 @@ link: "https://medium.com/@rahulsoni4/have-you-ever-wondered-if-theres-a-dynamic
 
 <div class="content-ad"></div>
 
-```
+
 ![DatabricksLiquidClustering](/assets/img/2024-05-20-DatabricksLiquidClustering_0.png)
 
 이 그래프는 연도별 테이블 행 수를 예측하고 데이터 분포에서 상당한 치우침을 보여줍니다. 이 치우침은 소비자가 쿼리에서 연도 열을 자주 필터로 사용하기 때문에 특히 관련이 있습니다.

@@ -3,7 +3,7 @@ title: "제 1장 반응형 프로그래밍 소개"
 description: ""
 coverImage: "/assets/img/2024-05-23-Chapter1IntroductiontoReactiveProgramming_0.png"
 date: 2024-05-23 12:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Chapter1IntroductiontoReactiveProgramming_0.png
 tag: Tech
 originalTitle: "Chapter 1: Introduction to Reactive Programming"
@@ -11,7 +11,6 @@ link: "https://medium.com/@suman.maity112/chapter-1-introduction-to-reactive-pro
 ---
 
 
-```markdown
 ![Chapter 1 Introduction to Reactive Programming](/assets/img/2024-05-23-Chapter1IntroductiontoReactiveProgramming_0.png)
 
 In the fast-paced world of software development, building applications that are not only responsive but also scalable is crucial. Traditional programming paradigms often struggle to keep up with the demands of modern applications, where users expect real-time responsiveness and seamless user experiences. Introducing reactive programming, a paradigm shift that promises to revolutionize the way we build software.
@@ -19,7 +18,7 @@ In the fast-paced world of software development, building applications that are 
 ## Understanding Reactive Programming
 
 Reactive programming is not just a buzzword; it’s a fundamental shift in how we approach software development. At its core, reactive programming is about building asynchronous, event-driven, and non-blocking applications. But what exactly does that mean?
-```
+
 
 <div class="content-ad"></div>
 

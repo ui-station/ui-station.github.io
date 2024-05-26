@@ -3,13 +3,12 @@ title: "라즈베리 파이 마스토돈 인스턴스 백업은 잘 정리되어
 description: ""
 coverImage: "/assets/img/2024-05-23-TheRaspberryPiMastodonInstanceDoYouHaveYourBackupsSorted_0.png"
 date: 2024-05-23 17:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheRaspberryPiMastodonInstanceDoYouHaveYourBackupsSorted_0.png
 tag: Tech
 originalTitle: "The Raspberry Pi Mastodon Instance: Do You Have Your Backups Sorted?"
 link: "https://medium.com/better-programming/the-raspberry-pi-mastodon-instance-do-you-have-your-backups-sorted-a99dab81fdd5"
 ---
-
 
 ![Raspberry Pi Mastodon Instance](/assets/img/2024-05-23-TheRaspberryPiMastodonInstanceDoYouHaveYourBackupsSorted_0.png)
 
@@ -56,16 +55,17 @@ location /storage {alias /media/mastodon; }
 
 <div class="content-ad"></div>
 
-```markdown
+
 /dev/sda1  /media  vfat  rw,user  0  0
-```
+
 
 이 설정은 몇 번의 시행착오로부터 나왔어요; 적어도 내 시스템에는 작동합니다. 만약 내가 무언가를 형편없게나 안전하지 않게 한 것 같다면 알려주세요! 하지만 이 메모리 솔루션은 더 이상 버벅거리거나 스크롤하는 데에 한 년 이상 사용해보니 잘 작동하고 있어요.
 
 /system/ 폴더는 52.7 GB를 차지하고있어요 (~디스크 공간의 5%). 캐시된 미디어 파일을 31일 후에 지우도록 인스턴스를 구성했기 때문에 급속히 커지는 것이 아니에요. 여기에는 충분한 공간이 있어요. 반면에, 내 Postgres 데이터베이스는 여전히 기본 위치인 /var/lib/postgresql/11/main에 저장되어 있어요. (내 Postgres 버전이 11이라면서요, 잘 작동하더라구요.) 현재 Postgres 데이터베이스의 크기는 2.55 GB이에요. 이는 32 GB 시스템 드라이브의 8%에 해당하기 때문에 큰 재앙은 아니지만, 내 취향에는 너무 비대해요 (때로는 드라이브 공간이 17% 밖에 남지 않는 경우도 있었어요). 언젠가는 Postgres 데이터베이스를 외부 SSD로 이동하고 싶다고 생각해요. 그건 그때의 이야기거든요.
 
 라즈베리 파이 마스토돈 인스턴스에 추가 드라이브를 연결하는 것은 약간 복잡할 수 있고, 정확한 설정은 외부 드라이브의 파일 시스템에 따라 다를 거에요. 하지만 이렇게 하는 것은 거의 항상 좋은 생각이에요 (아래에서 설명할 이유 중 하나 때문이죠).
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -129,3 +129,4 @@ SD 카드가 다운됐을 때, 외부 SSD에 (1)과 (2)가 포함되어 있었�
 ¹ 시도해보지 않은 대안적인 전략: SD 카드를 정기적으로 복제하는 것입니다. 복제본이 있다면 원본이 손상된 경우 카드를 교체하고 다시 사용할 수 있습니다. PostgreSQL 덤프 대비 정기적인 복제가 번거로울 것으로 생각해서 이 방법을 선택하지 않았습니다. 하지만 여기에 좋은 대안이 있는 것을 우연히 놓친 것일 수도 있습니다.
 
 ² 공식 문서의 목록이 더 상세하지만, 다른 몇 가지 기본 설정을 사용했기 때문에 다른 여러 파일들에 대해 걱정할 필요가 없었습니다. 그러나 서버 사용을 시작하기 전에 '새로운 머신으로 이동' 문서를 읽고, '서버 백업' 문서를 읽는 것이 좋습니다.
+

@@ -172,8 +172,6 @@ response = query_engine.query("가장 작은 펭귄의 키는 얼마인가요?")
 위의 테스트 코드는 다음 결과를 생성했습니다(대부분의 llama_cpp 디버깅 정보가 제거되었습니다):
 
 ```js
-...
-...
 Model metadata: {'tokenizer.ggml.add_eos_token': 'false', 'tokenizer.ggml.eos_token_id': '2', 'general.architecture': 'llama', 'llama.rope.freq_base': '10000.000000', 'llama.context_length': '4096', 'general.name': 'LLaMA v2', 'tokenizer.ggml.add_bos_token': 'true', 'llama.embedding_length': '4096', 'llama.feed_forward_length': '11008', 'llama.attention.layer_norm_rms_epsilon': '0.000010', 'llama.rope.dimension_count': '128', 'tokenizer.ggml.bos_token_id': '1', 'llama.attention.head_count': '32', 'llama.block_count': '32', 'llama.attention.head_count_kv': '32', 'general.quantization_version': '2', 'tokenizer.ggml.model': 'llama', 'general.file_type': '15'}
 Using fallback chat format: None
 
@@ -183,8 +181,6 @@ llama_print_timings: prompt eval time =    4887.46 ms /    24 tokens (  203.64 m
 llama_print_timings:        eval time =    5883.27 ms /    21 runs   (  280.16 ms per token,     3.57 tokens per second)
 llama_print_timings:       total time =   10901.84 ms /    45 tokens
 최종 답변: '오만과 편견'은 제인 오스틴의 로맨스 소설입니다.
-...
-...
 llama_print_timings:        load time =    4887.53 ms
 llama_print_timings:      sample time =      11.74 ms /    20 runs   (    0.59 ms per token,  1703.29 tokens per second)
 llama_print_timings: prompt eval time =    7473.66 ms /    37 tokens (  201.99 ms per token,     4.95 tokens per second)
@@ -201,6 +197,7 @@ llama_print_timings:       total time =   13076.88 ms /    56 tokens
 
 평가 종료
 최상의 답변 선정: [관련]가
+```
 
 <div class="content-ad"></div>
 

@@ -3,13 +3,12 @@ title: "매혹적인 머리카락을 위한 내 비밀 레시피 머리 성장 �
 description: ""
 coverImage: "/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_0.png"
 date: 2024-05-23 16:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_0.png
 tag: Tech
 originalTitle: "My Secret Recipe for Luscious Locks: DIY Hair Growth Oil That Rescued My Hair!"
 link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-diy-hair-growth-oil-that-rescued-my-hair-e11d43c359e9"
 ---
-
 
 안녕하세요, 함께 머리에 관심 있는 분들 여러분! 오늘 제가 공유할 것은 레시피뿐만 아니라 제 마음의 한 조각과 DIY 머리 성장 오일이 제 머리를 절망의 brink에서 구해 준 이야기입니다.
 
@@ -29,7 +28,7 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_2.png)
 
 ## 마법 같은 만남
@@ -37,7 +36,7 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 포기 직전이었을 때, 친구가 나에게 간단한 모발 성장 오일 레시피를 소개해 주었습니다. 그녀는 그렇게 열정적으로 말했기 때문에, 나는 이것을 한 번 시도해보지 않을 수 없었습니다. 회의론자인 나는 검은 삶을 날리고, 유자씨 오일, 풀리카 오일, 아몬드 오일, 로즈메리 에센셜 오일, 그리고 페퍼민트 에센셜 오일을 혼합해서 DIY 모발 성장 오일을 만들었습니다.
 
 ![Image](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -55,7 +54,7 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_4.png)
 
 🌻 Castor Oil: 머릿결이 얇아지는 것과 작별 인사를 준비하세요. 캐스터 오일은 머릿결 성장을 촉진하는 특별한 산을 함유하고 있습니다. 마치 머리카락을 들어 올리는 패드 브라 같은 효과를 줍니다. 안녕, 볼륨과 두께!
@@ -63,11 +62,11 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 🌰 아몬드 오일: 바람에 춤을 추듯 부드러운 머릿결을 어떻게 만들 수 있는지 궁금했나요? 아몬드 오일이 해답입니다. 마치 머리카락을 스파로 초대하는 것처럼, 완벽하게 챙깁니다.
 
 🌿 로즈마리 에센셜 오일: 이것을 당신의 머리의 개인 치어리더로 생각해 보세요. 로즈마리 오일은 머리카락 성장을 촉진하고 가렵은 두피를 없애줍니다. 안녕, 비듬!
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Peppermint Essential Oil](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_5.png)
 
 🌱 Peppermint Essential Oil: It’s like a minty wake-up call for your scalp! Peppermint oil boosts blood flow, helping your hair get all the nutrients it needs to thrive.
@@ -75,16 +74,16 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 ![Magic Method](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_6.png)
 
 ## The Magic Method:
-```
+
 
 <div class="content-ad"></div>
 
-- Mixing Magic: 참기름 50ml, 캐스터 오일 24ml, 아몬드 오일 24ml을 그릇에 부은 후 잘 섞어주세요. 마치 머리 성장 주문을 만드는 것처럼 섞어주세요.  
+- Mixing Magic: 참기름 50ml, 캐스터 오일 24ml, 아몬드 오일 24ml을 그릇에 부은 후 잘 섞어주세요. 마치 머리 성장 주문을 만드는 것처럼 섞어주세요.
 - Essential Enchantment: 로즈마리 에센셜 오일 1.5ml을 추가해주세요. 이것은 단순한 오일이 아니에요 — 마치 머리 성장 오케스트라의 지휘자 같아요!
 
 ![이미지](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_7.png)
 
-- Peppermint Pep: 추가 효과를 원하신다면 페퍼민트 에센셜 오일 0.6ml를 뿌려주세요. 머리가 마치 소규모 스파데이를 한 듯한 느낌이에요.  
+- Peppermint Pep: 추가 효과를 원하신다면 페퍼민트 에센셜 오일 0.6ml를 뿌려주세요. 머리가 마치 소규모 스파데이를 한 듯한 느낌이에요.
 - Shake Your Potion: 귀여운 병에 혼합물을 담고 흔들어주세요. 병 안에서 머리 성장 파티가 열리는 것 같아요!
 
 ## 마법같은 사용 방법:

@@ -3,13 +3,12 @@ title: "데이터브릭의 DBRX를 사용하면 실시간으로 학습할 수 �
 description: ""
 coverImage: "/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_0.png"
 date: 2024-05-23 14:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_0.png
 tag: Tech
 originalTitle: "Databrick’s DBRX for real-time, without fine-tuning"
 link: "https://medium.com/@rharshith387/databricks-dbrx-for-real-time-without-fine-tuning-91196085b128"
 ---
-
 
 ![DBRX](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_0.png)
 
@@ -61,9 +60,9 @@ RAG 또는 검색 보강 생성은 언어를 이해하고 생성하는 새로운
 
 <div class="content-ad"></div>
 
-아래는 Markdown 형식으로 표를 변환한 내용입니다. 
+아래는 Markdown 형식으로 표를 변환한 내용입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_5.png)
 
 벡터 저장소(Vector Store)는 무엇인가요?
@@ -71,7 +70,7 @@ RAG 또는 검색 보강 생성은 언어를 이해하고 생성하는 새로운
 벡터 저장소와 벡터 검색은 현대 정보 검색 시스템의 필수 구성 요소입니다.
 
 - **벡터 저장소(Vector Store)**: 각 정보를 벡터로 나타내어 데이터를 저장하는 데이터베이스와 같은 역할입니다. 이러한 방식을 사용하면 각 정보를 다차원 공간에서 수학적으로 표현한 벡터로 저장할 수 있습니다. 이는 기존 인덱싱 방법이 아닌 유사성 측정 기준에 따라 데이터를 효율적으로 저장하고 검색할 수 있도록 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -106,7 +105,7 @@ Hands-on RAG 데모:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_10.png)
 
 - get_vector_text(): 청크를 삽입하고 FAISS 인덱스를 사용하여 내장된 콘텐츠를 색인화하여 Vector Library를 반환합니다.
@@ -115,7 +114,7 @@ Hands-on RAG 데모:
 
 - get_conve_chain(): 대화형 Q&A 체인을 가져오는 메서드이며, DBRX의 프롬프트 템플릿 및 언어 모델과 함께 반환합니다.
 - query(): 이 메서드는 LLM 체인과 Vector Library를 호출하여 언어 모델 (DBRX)에 공급하는 데 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -129,10 +128,10 @@ Hands-on RAG 데모:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![DBRX](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_13.png)
 
 결론:
 
 Databricks의 최고 수준 언어 모델인 DBRX는 언어 및 코드를 이해하는 데 뛰어나지만 최근 업데이트에 대한 처리가 약간 어려울 수 있습니다. 따라서 우리는 이를 지원하기 위해 검색 증강 생성(Retrieval-Augmented Generation, RAG) 기술을 사용합니다. 이 기술은 정보를 찾아 새로운 텍스트를 생성하는 방식을 결합하여 DBRX를 더욱 똑똑하게 만듭니다. Databricks에서 구현된 RAG 및 DBRX는 머신 러닝을 보다 쉽고 효과적으로 만들어줍니다.
-```
+

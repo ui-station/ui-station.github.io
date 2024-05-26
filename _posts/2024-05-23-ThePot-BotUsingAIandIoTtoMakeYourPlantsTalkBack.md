@@ -3,24 +3,24 @@ title: "더 나은 식물 생장을 위해 인공지능과 사물인터넷을 �
 description: ""
 coverImage: "/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_0.png"
 date: 2024-05-23 16:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_0.png
 tag: Tech
 originalTitle: "The Pot-Bot: Using AI and IoT to Make Your Plants Talk Back!"
 link: "https://medium.com/@barzik/the-pot-bot-using-ai-and-iot-to-make-your-plants-talk-back-a49c271df40d"
 ---
 
-
 만약 꽃병이 말할 수 있다면 어떨까요? 인공 지능과 Raspberry Pi의 마법을 활용하면 이제 가능합니다! 식물 화분에게 말을 건네는 방법을 알려드릴게요.
 
 ![화분이 말하는 Pot-Bot](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_0.png)
 
 # 계획
+
 프로젝트의 핵심은 Raspberry Pi로 이루어진 것입니다. 화분 내 센서에서 정보를 수집하고, 이 데이터는 Python 코드를 사용하여 처리됩니다. 센서의 정보를 가볍고 Tiny Dolphin이라는 모델로 변환한 후 이를 장치 내에서 실행되는 espeak로 전송합니다. 그리고 Tiny Dolphin에서 나온 출력은 화분 옆의 Bluetooth 연결 스피커로 전송됩니다.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_1.png)
 
 What you will need:
@@ -31,7 +31,7 @@ What you will need:
 - A pot.
 
 # Preparing the Environment
-```
+
 
 <div class="content-ad"></div>
 
@@ -62,7 +62,7 @@ ollama run tinydolphin
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_3.png)
 
 # Raspberry Pi 스피커 연결
@@ -70,17 +70,18 @@ ollama run tinydolphin
 3.5mm 케이블이나 블루투스를 사용하여 스피커를 연결할 수 있습니다.
 
 ![Image 2](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_4.png)
-```
+
 
 <div class="content-ad"></div>
 
 ## 블루투스 연결 설정
 
 Raspberry Pi 3과 4에는 내장 블루투스가 있습니다. 연결 관리를 위해 `bluetoothctl`을 사용하실 수 있어요:
+
 1. 블루투스 콘솔 열기:
 
 ```js
-bluetoothctl
+bluetoothctl;
 ```
 
 2. 장치 검색:
@@ -110,8 +111,8 @@ trust 4C:65:A8:5E:CE:95
 PulseAudio와 pacmd가 설치되어 있는지 확인하세요:
 
 ```js
-pulseaudio - version
-pacmd - version
+pulseaudio - version;
+pacmd - version;
 ```
 
 <div class="content-ad"></div>
@@ -187,7 +188,7 @@ def main():
         except KeyError:
             ollama_output = "JSON 응답에서 'response' 키가 누락되었습니다."
             print(ollama_output)
-        
+
         # ollama 실행 결과를 음성으로 출력
         os.system(f"espeak '{ollama_output}'")
         time.sleep(120)  # 120초 동안 대기
@@ -212,7 +213,7 @@ GPIO를 사용하면 다양한 센서로부터 입력을 받아 라즈베리 파
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_8.png)
 
 There should be three pins with VCC, GND, and DO—if there are four pins (with AO), it`s OK, but disregard the DO.
@@ -220,7 +221,7 @@ There should be three pins with VCC, GND, and DO—if there are four pins (with 
 ![image](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_9.png)
 
 Let`s connect the jumpers. You should connect the GND to the ground pin, the VCC to the 3V outlet, and the DO to GPIO17.
-```
+
 
 <div class="content-ad"></div>
 
@@ -282,7 +283,7 @@ def main():
             if GPIO.input(sensor_pin):
                 message = "당신은 모세라고 불리우는 행복한 식물이에요. 10개의 단어로 설명해 주세요."
             else:
-                message = "당신은 모세라고 불리우는 목말라 하는 식물이에요. 10개의 단어로 불평해 주세요."            
+                message = "당신은 모세라고 불리우는 목말라 하는 식물이에요. 10개의 단어로 불평해 주세요."
             print("메시지를 API를 통해 실행 중")
             print(message)
             # POST 요청을 보내기 위한 curl 명령 구성
@@ -302,7 +303,7 @@ def main():
             except KeyError:
                 api_output = "JSON 응답에서 'response' 키가 누락되었어요."
                 print(api_output)
-            
+
             # API 출력을 음성으로 출력
             os.system(f"espeak \"{api_output}\"")
             time.sleep(120)  # 매 2분마다 확인

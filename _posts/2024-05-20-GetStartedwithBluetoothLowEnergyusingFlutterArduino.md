@@ -41,8 +41,7 @@ BLE를 사용하는 방법을 처음 알아보려면 Nano 33 BLE Sense 치트 �
 
 <div class="content-ad"></div>
 
-```
-![Bluetooth Low Energy 사용 시작하기: Flutter와 Arduino](/assets/img/2024-05-20-GetStartedwithBluetoothLowEnergyusingFlutterArduino_1.png)
+![Bluetooth Low Energy 사용 시작하기 Flutter와 Arduino](/assets/img/2024-05-20-GetStartedwithBluetoothLowEnergyusingFlutterArduino_1.png)
 
 "파일" → "예제" → "ArduinoBLE" → "페리페럴" 메뉴에서 BLE 라이브러리를 사용하는 유용한 예제를 찾을 수 있습니다. "BatteryMonitor" 예제를 열어보겠습니다.
 

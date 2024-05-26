@@ -3,13 +3,12 @@ title: "파이썬 제너레이터 데이터베이스에서 효율적으로 데�
 description: ""
 coverImage: "/assets/img/2024-05-23-PythonGeneratorsHowToEfficientlyFetchDataFromDatabases_0.png"
 date: 2024-05-23 14:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-PythonGeneratorsHowToEfficientlyFetchDataFromDatabases_0.png
 tag: Tech
 originalTitle: "Python Generators: How To Efficiently Fetch Data From Databases"
 link: "https://medium.com/gitconnected/python-generators-how-to-efficiently-fetch-data-from-databases-25f1947f56c0"
 ---
-
 
 ![image](/assets/img/2024-05-23-PythonGeneratorsHowToEfficientlyFetchDataFromDatabases_0.png)
 
@@ -87,7 +86,7 @@ for num in squares_generator(5):
 더 효율적이고 세련된 옵션은 함수 대신 한 줄로 작성된 생성기 표현식을 만드는 것입니다:
 
 ```js
-n = 5 
+n = 5
 generator_exp = (num * num for num in range(n))
 ```
 
@@ -105,7 +104,7 @@ print(next(generator_exp)) # 16
 
 우리가 볼 수 있듯이, 제너레이터 함수에서 값이 반환되는 방식은 일반적인 파이썬 함수와는 즉각적으로 직관적이지 않습니다. 아마도 그것이 많은 데이터 엔지니어들이 발생해야 할 정도로 제너레이터를 사용하지 않는 이유일 것입니다.
 
-다음 섹션에서 두 가지 일반적인 사용 사례를 설명해보겠습니다.			               
+다음 섹션에서 두 가지 일반적인 사용 사례를 설명해보겠습니다.
 
 # 목표 및 설정
 
@@ -260,12 +259,12 @@ wr.config.s3_endpoint_url = 'http://minio:9000'
 def create_df_batch(cursor, batch_size):
 
     print('생성 중...')
-    colnames = ['transaction_id', 
-                'user_id', 
-                'product_name', 
-                'transaction_date', 
+    colnames = ['transaction_id',
+                'user_id',
+                'product_name',
+                'transaction_date',
                 'amount_gbp']
-    
+
     df = pd.DataFrame(columns=colnames)
     cursor.execute(query)
 
@@ -274,7 +273,7 @@ def create_df_batch(cursor, batch_size):
         if not rows:
             break
         # 일부 변환
-        batch_df = pd.DataFrame(data = rows, columns=colnames)        
+        batch_df = pd.DataFrame(data = rows, columns=colnames)
         df = pd.concat([df, batch_df], ignore_index=True)
 
     print('DF 생성 완료!\n')
@@ -288,15 +287,15 @@ def create_df_batch(cursor, batch_size):
 
 - 빈 df를 생성;
 - 쿼리를 실행하고 전체 결과를 커서 객체에 캐싱;
-- while 루프를 초기화하여 매 반복마다 지정된 배치 크기(이 경우 1백만 행)와 동일한 행 수를 가져와 이 데이터를 사용하여 배치_df를 생성합니다.
-- 최종적으로 배치_df가 주 df에 추가됩니다. 전체 데이터셋이 통과될 때까지 이 프로세스가 반복됩니다.
+- while 루프를 초기화하여 매 반복마다 지정된 배치 크기(이 경우 1백만 행)와 동일한 행 수를 가져와 이 데이터를 사용하여 배치\_df를 생성합니다.
+- 최종적으로 배치\_df가 주 df에 추가됩니다. 전체 데이터셋이 통과될 때까지 이 프로세스가 반복됩니다.
 
 분명히 말하자면, 이것은 기본적인 예시이며, 단순히 한 번에 한 배치씩 df를 생성하는 것 외에도 while 루프의 일부로 다른 많은 작업(필터링, 정렬, 집계, 데이터를 다른 위치로 쓰기 등)을 수행할 수 있었습니다.
 
 노트북에서 함수를 실행하면 다음과 같이 결과를 얻을 수 있습니다:
 
 ```js
-%%time 
+%%time
 df_batch = create_df_batch(cursor, batch_size)
 df_batch.head()
 
@@ -311,7 +310,6 @@ CPU 시간: 사용자 9.97초, 시스템: 13.7초, 총: 23.7초
 
 <div class="content-ad"></div>
 
-```markdown
 ![Python Generators](/assets/img/2024-05-23-PythonGeneratorsHowToEfficientlyFetchDataFromDatabases_5.png)
 
 ## Method #2: Using Generators
@@ -321,9 +319,9 @@ A less common -but powerful- strategy for data engineers is to fetch data as a s
 ```python
 # AUXILIARY FUNCTION
 def generate_dataset(cursor):
-    
+
     cursor.execute(query)
-    
+
     for row in cursor.fetchall():
         # some transformation
         yield row
@@ -337,14 +335,14 @@ def create_df_gen(cursor):
                 'product_name',
                 'transaction_date',
                 'amount_gbp']
-                
+
     df = pd.DataFrame(data=generate_dataset(cursor), columns=colnames)
 
     print('DF successfully created!\n')
-    
+
     return df
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -353,7 +351,7 @@ def create_df_gen(cursor):
 다시 말하지만, 이 예제는 매우 기본적이며(주로 설명 목적으로), 보조 함수 내에서 어떤 종류의 필터링이나 변환을 수행할 수 있습니다. 함수를 실행하면 다음과 같은 결과가 나옵니다:
 
 ```js
-%%time 
+%%time
 df_gen = create_df_gen(cursor)
 df_gen.head()
 
@@ -394,10 +392,10 @@ awswrangler의 장점은 pandas 데이터프레임과 매우 잘 작동하며 �
 ```js
 # 1.2 WRITING DF TO MINIO BUCKET IN PARQUET FORMAT USING BATCHES
 def write_df_to_s3_batch(cursor, bucket, folder, parquet_file_name, batch_size):
-    colnames = ['transaction_id', 
-                'user_id', 
-                'product_name', 
-                'transaction_date', 
+    colnames = ['transaction_id',
+                'user_id',
+                'product_name',
+                'transaction_date',
                 'amount_gbp']
     cursor.execute(query)
     batch_num = 1
@@ -449,12 +447,12 @@ Batch successfully written to S3 bucket!
 def write_df_to_s3_gen(cursor, bucket, folder, parquet_file_name):
     print('DF를 S3 버킷에 쓰는 중...')
 
-    colnames = ['transaction_id', 
-                'user_id', 
-                'product_name', 
-                'transaction_date', 
+    colnames = ['transaction_id',
+                'user_id',
+                'product_name',
+                'transaction_date',
                 'amount_gbp']
-    
+
     wr.s3.to_parquet(df=pd.DataFrame(data=generate_dataset(cursor), columns=colnames),
              path=f's3://{bucket}/{folder}/{parquet_file_name}',
              compression='gzip',

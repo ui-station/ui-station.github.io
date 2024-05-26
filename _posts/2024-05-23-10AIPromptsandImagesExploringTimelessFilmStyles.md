@@ -3,13 +3,12 @@ title: "10가지 AI 프롬프트와 이미지 시대를 초월한 영화 스타�
 description: ""
 coverImage: "/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_0.png"
 date: 2024-05-23 18:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_0.png
 tag: Tech
 originalTitle: "10 AI Prompts and Images: Exploring Timeless Film Styles"
 link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-timeless-film-styles-f62b32976182"
 ---
-
 
 ![Table](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_0.png)
 
@@ -31,7 +30,7 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Retro 80s](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_2.png)
 
 3. Retro 80s:
@@ -39,11 +38,11 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 ![Silent Film](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_3.png)
 
 4. Silent Film
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Cinematic](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_4.png)
 
 5. Cinematic
@@ -51,11 +50,11 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 ![Grindhouse](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_5.png)
 
 6. Grindhouse
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Surreal](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_6.png)
 
 7. Surreal
@@ -63,11 +62,11 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 ![Black & White](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_7.png)
 
 8. Black & White
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_8.png" />
 
 9. Documentary
@@ -75,12 +74,12 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 <img src="/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_9.png" />
 
 10. Old Hollywood Glamour
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_10.png)
-```
+
 
 읽어주셔서 너무 감사합니다! 항상 행복한 AI 이미지 생성되세요!

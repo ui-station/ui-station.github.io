@@ -3,13 +3,12 @@ title: "인테리어 디자이너가 알아야 할 상위 Midjourney sref 코드
 description: ""
 coverImage: "/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_0.png"
 date: 2024-05-23 18:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_0.png
 tag: Tech
 originalTitle: "Top Midjourney sref codes every interior designer should know"
 link: "https://medium.com/design-bootcamp/top-midjourney-sref-codes-every-interior-designer-should-know-fcfcb7e2481b"
 ---
-
 
 최근 회의에서 Midjourney 관계자들이 차기 스타일 카탈로그 런칭을 발표했습니다. 그러나 Midjourney V7 버전에서는 sref 코드 매개변수를 지원하지 않을 것이라고 언급했습니다.
 
@@ -41,7 +40,7 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_2.png)
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_3.png)
@@ -49,11 +48,11 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 # — sref 1263216703
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_4.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_5.png)
 
 # — sref 1302177660
@@ -61,7 +60,7 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_6.png)
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_7.png)
-```    
+
 
 <div class="content-ad"></div>
 
@@ -75,7 +74,7 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_10.png)
 
 ![Image 2](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_11.png)
@@ -83,11 +82,11 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 # — sref 2826532651
 
 ![Image 3](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_12.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_13.png)
 
 # — sref 2318775853
@@ -95,7 +94,7 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 ![Image 2](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_14.png)
 
 ![Image 3](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_15.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -109,7 +108,7 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_18.png)
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_19.png)
@@ -117,7 +116,7 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 # 결론
 
 마지막으로, Midjourney V7은 sref 코드를 지원하지 않지만, V6은 여전히 인테리어 디자인에 강력한 도구를 제공합니다. 다양한 sref 코드와 스타일 가중치를 실험함으로써, 현대적인 미니멀리즘부터 일본어 젠까지 다양한 미학을 표현할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

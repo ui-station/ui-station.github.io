@@ -3,13 +3,12 @@ title: "16진수 디스플레이로 다양한 진법 탐험하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-ExploringDifferentNumberBasesWithaHexadecimalDisplay_0.png"
 date: 2024-05-23 16:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ExploringDifferentNumberBasesWithaHexadecimalDisplay_0.png
 tag: Tech
 originalTitle: "Exploring Different Number Bases With a Hexadecimal Display"
 link: "https://medium.com/@russelleveleigh/exploring-different-number-bases-with-a-hexadecimal-display-d1d2c726263b"
 ---
-
 
 내 Hexadecimal 표시는 Raspberry Pi Pico W 프로젝트로, Neopixel RGB LED 및 Micropython을 사용하여 실제로 카운트할 때 어떤 일이 벌어지는지 보여줍니다.
 
@@ -91,7 +90,7 @@ link: "https://medium.com/@russelleveleigh/exploring-different-number-bases-with
 
 <div class="content-ad"></div>
 
-```
+
 ![Exploring Different Number Bases With a Hexadecimal Display 5](/assets/img/2024-05-23-ExploringDifferentNumberBasesWithaHexadecimalDisplay_5.png)
 
 ![Exploring Different Number Bases With a Hexadecimal Display 6](/assets/img/2024-05-23-ExploringDifferentNumberBasesWithaHexadecimalDisplay_6.png)
@@ -99,7 +98,7 @@ link: "https://medium.com/@russelleveleigh/exploring-different-number-bases-with
 USB 앰미터를 사용하여 전체가 그린 전류량을 계산한 다음 소프트웨어 내에서 밝기를 조정하여 가능한 근접한 값을 2암페어로 설정했습니다. 이렇게 하면 조명을 구동하는 데 표준 USB 휴대폰 충전기를 넘어서는 것이 필요하지 않게 됩니다.
 
 전원 공급에 연결하려면 마이크로 USB 브레이크아웃 보드를 사용했습니다. 이를 통해 조명과 Raspberry Pi Pico W가 각각 별도로 전원을 공급받습니다. Pi는 5V 및 접지 핀을 통해 전원을 공급받습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -123,7 +122,7 @@ Pico에서 웹 서버를 만드는 일반적인 개요를 원하신다면 위에
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-ExploringDifferentNumberBasesWithaHexadecimalDisplay_8.png)
 
 'Colour Spectrum' 옵션을 선택하면 스펙트럼 색상을 표시하는 루프가 생성되며, 빨간색에서 녹색으로, 그리고 다시 파란색으로 서서히 변화합니다. GIF로는 잘 표현되지 않아요. 이를 확인하려면 YouTube 동영상을 확인해보세요.
@@ -131,7 +130,7 @@ Pico에서 웹 서버를 만드는 일반적인 개요를 원하신다면 위에
 마지막 메뉴 아이템을 선택하면 무지개색이 전체 LED 문자열을 따라 파도치는 효과가 나타납니다. 또한 카운트가 완료되면 이 디스플레이가 표시됩니다.
 
 ![GIF](https://miro.medium.com/v2/resize:fit:1400/1*M6RlO4NuI97PLc7m8kz9Eg.gif)
-```
+
 
 <div class="content-ad"></div>
 

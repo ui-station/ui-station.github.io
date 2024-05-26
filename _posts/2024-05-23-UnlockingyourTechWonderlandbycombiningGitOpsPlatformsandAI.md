@@ -3,13 +3,12 @@ title: "기술 원더랜드의 문을 열어보세요 GitOps, 플랫폼 및 AI�
 description: ""
 coverImage: "/assets/img/2024-05-23-UnlockingyourTechWonderlandbycombiningGitOpsPlatformsandAI_0.png"
 date: 2024-05-23 14:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-UnlockingyourTechWonderlandbycombiningGitOpsPlatformsandAI_0.png
 tag: Tech
 originalTitle: "Unlocking your Tech Wonderland by combining GitOps, Platforms and AI"
 link: "https://medium.com/itnext/unlocking-your-tech-wonderland-by-combining-gitops-platforms-and-ai-a200d0e0449b"
 ---
-
 
 <table>
   <tr>
@@ -47,7 +46,7 @@ link: "https://medium.com/itnext/unlocking-your-tech-wonderland-by-combining-git
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Tech Wonderland](/assets/img/2024-05-23-UnlockingyourTechWonderlandbycombiningGitOpsPlatformsandAI_2.png)
 
 G. Hohpe’s book “Cloud Strategy”에서 회사에 가장 적합한 클라우드 공급업체를 찾는 데 관한 인용문을 발견했습니다.
@@ -55,7 +54,7 @@ G. Hohpe’s book “Cloud Strategy”에서 회사에 가장 적합한 클라�
 나는 클라우드 네이티브 랜드스케이프에 대해서도 동일하게 생각합니다(도표 2 참조). 다양한 옵션이 있지만 일부는 귀하의 요구 사항(및 전략)에 더 잘 맞을 수 있고 다른 일부는 그렇지 않을 수 있습니다. 예를 들어, 섬세하고 명료한 접근 방식을 따르는 도구를 선택할 수 있지만, 구성하거나 자체 의견을 구현할 수 있도록 지원해주는 도구도 있을 수 있습니다. 또한, 모든 것이 지원에 관한 문제일 수 있습니다. 가장 좋은 커뮤니티 주도형 오픈 소스 프로젝트가 제품마다 24/7 벤더 지원이 필요하다는 회사 정책을 준수해야 하는 경우에는 귀하의 요구 사항과 일치하지 않을 수 있습니다.
 
 우리는 이러한 것들을 끊임없이 진행할 수 있다고 상상할 수 있다고 생각하지만, 랜드스케이프의 각 도구는 더 많은 아이디어를 제공하며 더 많은 옵션을 제공하고(항상 그것들이 필요하지 않을 수 있지만) 귀하의 응용 프로그램에 대한 견고한 플랫폼을 구축하는 데 도움을 줍니다. 이를 통해 내가 좋아하는 이야기의 핵심인 플랫폼 엔지니어링으로 진행하고 싶습니다.
-```
+
 
 <div class="content-ad"></div>
 

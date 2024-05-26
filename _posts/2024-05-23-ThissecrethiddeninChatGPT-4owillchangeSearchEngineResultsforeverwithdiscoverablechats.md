@@ -3,13 +3,12 @@ title: "Chat GPT-4o에 숨겨진 비밀은 발견 가능한 채팅으로 검색 
 description: ""
 coverImage: "/assets/img/2024-05-23-ThissecrethiddeninChatGPT-4owillchangeSearchEngineResultsforeverwithdiscoverablechats_0.png"
 date: 2024-05-23 17:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ThissecrethiddeninChatGPT-4owillchangeSearchEngineResultsforeverwithdiscoverablechats_0.png
 tag: Tech
 originalTitle: "This secret hidden in Chat GPT-4o will change Search Engine Results forever with discoverable chats"
 link: "https://medium.com/generative-ai/this-secret-hidden-in-chat-gpt-4o-will-change-search-engine-results-forever-with-discoverable-chats-0fd3a072fb41"
 ---
-
 
 ## 콘텐츠 작성 및 SEO용 인공 지능
 
@@ -122,6 +121,6 @@ AI에 관한 최신 소식을 놓치고 싶지 않으시다면 구독해주세�
 
 우리의 뉴스레터에 가입하여 창의적 AI에 관한 최신 뉴스 및 업데이트를 받아보세요. 함께 AI의 미래를 함께 만들어 봅시다!
 
-```markdown
+
 ![image](/assets/img/2024-05-23-ThissecrethiddeninChatGPT-4owillchangeSearchEngineResultsforeverwithdiscoverablechats_4.png)
-```
+

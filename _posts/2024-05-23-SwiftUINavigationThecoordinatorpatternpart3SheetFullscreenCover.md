@@ -3,7 +3,7 @@ title: "SwiftUI 네비게이션 - 코디네이터 패턴 - 파트 3 시트, Full
 description: ""
 coverImage: "/assets/img/2024-05-23-SwiftUINavigationThecoordinatorpatternpart3SheetFullscreenCover_0.png"
 date: 2024-05-23 13:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SwiftUINavigationThecoordinatorpatternpart3SheetFullscreenCover_0.png
 tag: Tech
 originalTitle: "SwiftUI Navigation — The coordinator pattern — part 3 Sheet , FullscreenCover"
@@ -11,7 +11,6 @@ link: "https://medium.com/@ales.dieo/swiftui-navigation-the-coordinator-pattern-
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-23-SwiftUINavigationThecoordinatorpatternpart3SheetFullscreenCover_0.png)
 
 이 글은 이전 글들을 이어서 작성되었으며, 그 위에 쌓아 올릴 것입니다.
@@ -22,7 +21,7 @@ SwiftUI 네비게이션 파트 2 — 알림
 
 시작해 봅시다! 이전 글들에서는 결정적 목적지로 조정하기 위해 Routes를 사용했습니다. 그러나 SwiftUI는 어떻게 이루어지는 걸까요?
 뷰 계층 구조의 루트에 있는 NavigationStack에 대한 네비게이션 경로에 대한 바인딩이 있습니다. Apple의 문서 예제를 살펴보겠습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -56,16 +55,15 @@ NavigationStack(path: $presentedParks) {
 public func navigationDestination<D, C>(for data: D.Type, @ViewBuilder destination: @escaping (D) -> C) -> some View where D : Hashable, C : View
 ```
 
-
 <div class="content-ad"></div>
 
 뭐 이건 Data.Type을 받아들이는 ViewModifier인데, 그런 다음에 destination이라고 불리는 클로저가 주입되는데, 이 클로저는 hashable해야 할 that Data.Type의 인스턴스를 주입하고 구체적인 View를 반환해야 해요...... 그렇죠. 😵
 
-또 다른 것은 .navigationDestination(_:)이 NavigationStack 내부의 View에 적용되어야 하며, NavigationStack의 범위 외부에 적용할 수 없다는 것을 주의해야 해요. 🤔
+또 다른 것은 .navigationDestination(\_:)이 NavigationStack 내부의 View에 적용되어야 하며, NavigationStack의 범위 외부에 적용할 수 없다는 것을 주의해야 해요. 🤔
 
 뷰 계층 구조를 통해 데이터를 상위 뷰로 전파하는 유사한 시그니처를 가진 다른 것이 있어요. 이것이 바로 데이터를 뷰의 부모에게 전달하는 데 사용되는 PreferenceKeys입니다!
 
-PreferenceKeys를 사용하여 .navigationDestination(_:)이 NavigationStack에 하는 것처럼 내비게이션 목적지를 전달할 수 있을까요?
+PreferenceKeys를 사용하여 .navigationDestination(\_:)이 NavigationStack에 하는 것처럼 내비게이션 목적지를 전달할 수 있을까요?
 우리는 곧 알게 될 거예요!
 
 <div class="content-ad"></div>
@@ -78,7 +76,7 @@ PreferenceKeys를 사용하여 .navigationDestination(_:)이 NavigationStack에 
     public func fullScreenCover<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping (Item) -> Content) -> some View where Item : Identifiable, Content : View
 ```
 
-이들은 서로 거의 동일하며 navigationDestination(_:)과도 매우 유사합니다. 주요 차이점은 나타낼 아이템에 대한 바인딩이 Hashable 대신 Identifiable을 준수해야 하며 전달할 수 있는 선택적인 onDismiss 클로저가 있는 것입니다.
+이들은 서로 거의 동일하며 navigationDestination(\_:)과도 매우 유사합니다. 주요 차이점은 나타낼 아이템에 대한 바인딩이 Hashable 대신 Identifiable을 준수해야 하며 전달할 수 있는 선택적인 onDismiss 클로저가 있는 것입니다.
 
 Routes도 Identifiable을 준수하도록 만들어 보겠습니다.
 
@@ -87,9 +85,9 @@ Routes도 Identifiable을 준수하도록 만들어 보겠습니다.
 ```js
 enum FirstTabCoordinatorRoute: Codable, Hashable, Identifiable { // <-- Identifiable
     var id: String { String(describing: self) }
-        
+
     case detailView
-    case secondDetailView(String) 
+    case secondDetailView(String)
 }
 ```
 
@@ -202,7 +200,7 @@ struct CoverContainer: Identifiable {
 
 <div class="content-ad"></div>
 
-여전히 함께 계신다니 너무 기쁘네요! 이제 모든 것을 함께 연결해보려 합니다. 
+여전히 함께 계신다니 너무 기쁘네요! 이제 모든 것을 함께 연결해보려 합니다.
 
 이제 시트를 표시하는 ViewModifier를 만들어야 합니다.
 
@@ -265,7 +263,7 @@ enum FirstTabCoordinatorRoute: Codable, Hashable, Identifiable {
 
 @Observable final class FirstTabCoordinator: Coordinator {
     ... 이전 코드
-    
+
     @ViewBuilder @MainActor var rootView: some View {
         let viewModel = FirstViewModel(self)
         FirstView(viewModel)
@@ -277,7 +275,7 @@ enum FirstTabCoordinatorRoute: Codable, Hashable, Identifiable {
     func presentSheet(onDismiss: (() -> Void)? = nil) {
         navigationController.presentSheet(Route.sheet, onDismiss: onDismiss)
     }
-    
+
     func presentCover(onDismiss: (() -> Void)? = nil) {
         navigationController.presentCover(Route.cover, onDismiss: onDismiss)
     }
@@ -339,7 +337,7 @@ struct FirstView: View {
 }
 
 @Observable class FirstViewModel {
-   
+
     private let coordinator: FirstTabCoordinator
 
     init(coordinator: FirstTabCoordinator) {
@@ -382,4 +380,7 @@ struct FirstView: View {
 이 글에서 어떤 통찰을 얻으셨다면 좋겠네요. 피드백이나 개선 제안이 있다면 알려주세요. 이 글이 가치 있다고 느끼신다면 공유해주세요!
 
 즐거운 코딩하세요!
-```
+
+
+
+

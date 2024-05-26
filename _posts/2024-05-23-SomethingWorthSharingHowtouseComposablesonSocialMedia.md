@@ -95,7 +95,7 @@ fun MyShareContent() {
 # 그래픽 레이어에 Composable 기록하기
 
 Compose의 최신 버전(1.7)에서는 훌륭한 GraphicsLayer API가 소개되었습니다. 이는 Composable의 그리기를 캡처하고 다른 위치에서 재생하는 방법을 제공합니다. 결국 이를 사용하여 Composable을 이미지 파일로 기록할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ Box(modifier = Modifier
 - record 메서드를 사용하여 그림을 저장된 graphicsLayer 변수로 리디렉션
 
 # 컴포저블 그리기를 완전히 건너뛰기
-```  
+  
 
 <div class="content-ad"></div>
 
@@ -242,7 +242,7 @@ suspend fun File.scanPath(context: Context): Uri? {
 # 버튼으로 프로세스 시작
 
 이미지 URI를 얻은 후에는 공유 인텐트를 생성하여 어디든 전송할 수 있습니다. 이렇게 하면 Android 공유 시트가 열리고 나머지 프로세스를 자동으로 처리합니다 — 추가적인 코드는 필요하지 않습니다!
-```
+
 
 <div class="content-ad"></div>
 

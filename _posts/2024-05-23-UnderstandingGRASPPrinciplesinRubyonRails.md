@@ -3,7 +3,7 @@ title: "루비 온 레일즈에서 GRASP 원칙 이해하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-UnderstandingGRASPPrinciplesinRubyonRails_0.png"
 date: 2024-05-23 12:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-UnderstandingGRASPPrinciplesinRubyonRails_0.png
 tag: Tech
 originalTitle: "Understanding GRASP Principles in Ruby on Rails"
@@ -11,7 +11,6 @@ link: "https://medium.com/@patrickkarsh/understanding-grasp-principles-in-ruby-o
 ---
 
 
-```markdown
 ![Understanding GRASP Principles in Ruby on Rails](/assets/img/2024-05-23-UnderstandingGRASPPrinciplesinRubyonRails_0.png)
 
 소프트웨어 엔지니어링에서, GRASP (General Responsibility Assignment Software Patterns) 원칙은 시스템 내의 여러 구성 요소에 책임을 할당하는 데 도움이 되는 지침 세트입니다. 이러한 원칙은 유지 관리 가능하고 확장 가능하며 견고한 애플리케이션을 만드는 데 중요합니다. 인기 있는 웹 애플리케이션 프레임워크인 Ruby on Rails의 맥락에서 GRASP 원칙을 적용하면 코드의 품질과 구조를 크게 향상시킬 수 있습니다. 본문에서는 GRASP 원칙과 Ruby on Rails 개발에서의 적용에 대해 탐구합니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/@patrickkarsh/understanding-grasp-principles-in-ruby-o
 ## Information Expert
 
 원칙: 책임을 완수하기 위해 필요한 정보를 갖고있는 클래스에 책임을 할당합니다.
-```
+
 
 <div class="content-ad"></div>
 

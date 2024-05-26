@@ -11,7 +11,7 @@ link: "https://medium.com/@cstoppgmr/10-troubleshooting-commands-for-linux-syste
 ---
 
 
-``` Markdown
+ Markdown
 ![이미지](/assets/img/2024-05-23-10TroubleshootingCommandsforLinuxSystems_0.png)
 
 # 1. CPU를 가장 많이 사용하는 프로세스 확인하는 방법
@@ -31,7 +31,7 @@ $ ps H -eo pid,pcpu | sort -nk2 | tail
 ```
 
 가장 CPU를 많이 사용하는 PID는 30914입니다. 음성오버: 실제로는 31396입니다.
-```
+
 
 <div class="content-ad"></div>
 

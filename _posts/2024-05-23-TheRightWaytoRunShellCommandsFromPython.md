@@ -3,13 +3,12 @@ title: "파이썬에서 쉘 명령어를 올바르게 실행하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-23-TheRightWaytoRunShellCommandsFromPython_0.png"
 date: 2024-05-23 15:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheRightWaytoRunShellCommandsFromPython_0.png
 tag: Tech
 originalTitle: "The Right Way to Run Shell Commands From Python"
 link: "https://medium.com/better-programming/the-right-way-to-run-shell-commands-from-python-c05f0b9d6cb7"
 ---
-
 
 <img src="/assets/img/2024-05-23-TheRightWaytoRunShellCommandsFromPython_0.png" />
 
@@ -150,7 +149,7 @@ Popen을 사용할 때, 프로세스와 더 많은 상호작용을 위해 termin
 
 <div class="content-ad"></div>
 
-```markdown
+```bash
 # https://pypi.org/project/sh/
 # pip install sh
 import sh
@@ -176,9 +175,9 @@ with sh.contrib.sudo:
 
 sh.some_command을 호출하면, sh 라이브러리가 해당 이름의 내장 셸 명령어나 $PATH에 있는 이진 파일을 찾습니다. 그런 명령어를 찾으면 그대로 실행됩니다. 명령어가 $PATH에 없는 경우에는 Command의 인스턴스를 생성하고 그렇게 호출할 수 있습니다. sudo를 사용해야 하는 경우에는 contrib 모듈의 sudo context manager를 사용할 수 있습니다. 너무 간단하고 직관적이죠?
 
-명령어의 결과를 파일에 쓰려면, 함수에 _out 인수를 제공하면 됩니다:
+명령어의 결과를 파일에 쓰려면, 함수에 \_out 인수를 제공하면 됩니다:
 
-```markdown
+```bash
 sh.ip.address(_out='/tmp/ipaddr')
 # 'ip address > /tmp/ipaddr'와 같습니다
 ```
@@ -187,7 +186,7 @@ sh.ip.address(_out='/tmp/ipaddr')
 
 위에는 하위 명령을 호출하는 방법도 보여 줍니다. - 점을 사용하세요.
 
-마지막으로 _인 인수를 사용하여 파이프(|)를 사용할 수도 있습니다:
+마지막으로 \_인 인수를 사용하여 파이프(|)를 사용할 수도 있습니다:
 
 ```js
 print(sh.awk('{print $9}', _인=sh.ls('-la'))
@@ -196,26 +195,26 @@ print(sh.awk('{print $9}', _인=sh.ls('-la'))
 print(sh.wc('-l', _인=sh.ls('.', '-1'))
 # "ls -1 | wc -l"과 동일합니다
 ```
+
 오류 처리에 대해선 ErrorReturnCode 또는 TimeoutException 예외를 감시하면 됩니다:
 
 <div class="content-ad"></div>
 
 ```md
 시도:
-    sh.cat('/tmp/doesnt/exist')
+sh.cat('/tmp/doesnt/exist')
 except sh.ErrorReturnCode as e:
-    print(f'Command {e.full_cmd} exited with {e.exit_code}')
-    # Command /usr/bin/cat /tmp/doesnt/exist exited with 1
+print(f'Command {e.full_cmd} exited with {e.exit_code}') # Command /usr/bin/cat /tmp/doesnt/exist exited with 1
 
-curl = sh.curl('https://httpbin.org/delay/5', _bg=True)
+curl = sh.curl('https://httpbin.org/delay/5', \_bg=True)
 try:
-    curl.wait(timeout=3)
+curl.wait(timeout=3)
 except sh.TimeoutException:
-    print("Command timed out...")
-    curl.kill()
+print("Command timed out...")
+curl.kill()
 ```
 
-선택적으로, 만약 프로세스가 시그널에 의해 종료된다면, SignalException을 받게 될 거에요. 특정 시그널을 확인할 수 있는데 예를 들면 SignalException_SIGKILL(또는 _SIGTERM, _SIGSTOP 등)으로 확인할 수 있어요.
+선택적으로, 만약 프로세스가 시그널에 의해 종료된다면, SignalException을 받게 될 거에요. 특정 시그널을 확인할 수 있는데 예를 들면 SignalException_SIGKILL(또는 \_SIGTERM, \_SIGSTOP 등)으로 확인할 수 있어요.
 
 이 라이브러리에는 내장된 로깅 지원도 있어요. 켜기만 하면 되는데요. 다음 코드가 도와줄 거에요:
 
@@ -223,19 +222,26 @@ except sh.TimeoutException:
 import logging
 
 # 기본 로깅 켜기:
+
 logging.basicConfig(level=logging.INFO)
 sh.ls('-la')
+
 # INFO:sh.command:<Command '/usr/bin/ls -la', pid 1631463>: process started
 
 # 로그 레벨 변경:
+
 logging.getLogger('sh').setLevel(logging.DEBUG)
 sh.ls('-la')
+
 # INFO:sh.command:<Command '/usr/bin/ls -la', pid 1631661>: process started
+
 # DEBUG:sh.command:<Command '/usr/bin/ls -la'>: starting process
+
 # DEBUG:sh.command.process:<Command '/usr/bin/ls -la'>.<Process 1631666 ['/usr/bin/ls', '-la']>: started process
+
 # ...
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -249,4 +255,4 @@ sh.ls('-la')
 연락하고 싶으세요?
 
 이 글은 원본이 martinheinz.dev에 게시되었습니다.
-```
+````

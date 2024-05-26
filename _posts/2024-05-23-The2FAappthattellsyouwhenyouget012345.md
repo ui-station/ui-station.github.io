@@ -3,13 +3,12 @@ title: "2단계 인증 앱이 012345를 받았을 때 알려주는 기능"
 description: ""
 coverImage: "/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_0.png"
 date: 2024-05-23 14:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_0.png
 tag: Tech
 originalTitle: "The 2FA app that tells you when you get `012345`"
 link: "https://medium.com/gitconnected/the-2fa-app-that-tells-you-when-you-get-012345-4b04e90ce317"
 ---
-
 
 이른 시기 2010년대에 성장한 모든 회복된 엣지로드와 같이 나는 4chan과 같은 이미지 보드의 전성기를 약간 그리워합니다. 그들은 나치들이 모든 것을 망쳐 버리기 전에 야생 서부 초기 인터넷의 마지막 요새였어요.
 
@@ -144,7 +143,7 @@ func otpCode(date: Date = Date()) -> String {
 // ContentView.swift
 
 struct ContentView: View {
-    
+
     var body: some View {
         List {
             ForEach(makeOTPs(), id: \.self) {
@@ -156,7 +155,7 @@ struct ContentView: View {
             .frame(maxWidth: .infinity)
         }
     }
-        
+
     func makeOTPs() -> [String] {
         (0..<10_000).map {
             otpCode(increment: $0)
@@ -205,7 +204,7 @@ Text($0)
 우리의 부주의한 ForEach 구현으로 인해 다음 경고 메시지가 발생했습니다:
 
 ```js
-ForEach<Array<String>, String, Text>: the ID 312678 occurs multiple 
+ForEach<Array<String>, String, Text>: the ID 312678 occurs multiple
 times within the collection, this will give undefined results!
 ```
 
@@ -334,7 +333,7 @@ private func createNotification(for otp: OTP) {
         switch self {
         case .sexts: return "Sextuples GET!!!"
         // ...
-    
+
     함수 본문(code: String) -> String {
         switch self {
         case .sexts: return "체크해 보세요 섹스텀: \(code)"
@@ -372,13 +371,13 @@ private func createNotification(for otp: OTP) {
 
 ## 인간 인터페이스 가이드라인
 
-디자인에 대해 별다른 특별한 것을 할 계획은 없어요. 표준 애플 List 뷰 구성 요소를 사용하여 HIG를 따를 것이에요. 
+디자인에 대해 별다른 특별한 것을 할 계획은 없어요. 표준 애플 List 뷰 구성 요소를 사용하여 HIG를 따를 것이에요.
 
 UX는 멋지고 간단하게 유지합시다: 주로 푸시 알림에 기능이 집중되어 있으며 매우 완벽해요. 이 말은 QR 스캐너와 설정을 툴바 버튼 뒤에 숨기고, 모달 플로우가 표시되도록 하는 것을 의미해요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Scanning 2FA Secrets](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_11.png)
 
 ## Scanning 2FA Secrets
@@ -386,7 +385,7 @@ UX는 멋지고 간단하게 유지합시다: 주로 푸시 알림에 기능이 
 A couple of open-source libraries will save me a ton of time on cookie-cutter tasks. CodeScanner to supply simple SwiftUI QR code scanning, and KeychainAccess to easily store these 2FA account secrets in the keychain.
 
 ![Scanning 2FA Secrets](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_12.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -415,8 +414,8 @@ SwiftUI @AppStorage를 사용하여 List 및 몇 가지 Toggles와 함께 사용
 ```swift
 // CodeView.swift
 
-var body: some View {  
-    // ... 
+var body: some View {
+    // ...
     .sheet(isPresented: $showSettings) {
         SettingsView(onDisappear: {
             viewModel.recomputeNotifications()
@@ -435,7 +434,7 @@ var body: some View {
 
 아래는 Markdown 형식으로 변환:
 
-```markdown
+
 ![이미지1](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_15.png)
 
 정말이지, 그 중 50% 이상이 매우 공격적인 페이월을 설정해 놓고 사용하기 전에 이겼다... 무료 옵션이 완전히 제공되는 상황일 때 말이죠.
@@ -443,7 +442,7 @@ var body: some View {
 이 페이월이 넘쳐난다 해도, 좋은 아이디어를 빌려올 수 있었던 몇 가지를 기록해 두었어요.
 
 ![이미지2](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_16.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -471,9 +470,9 @@ var body: some View {
 먼저, iCloud에 대한 키체인을 동기화하면 계정이 다른 모든 Apple 기기에 나타납니다. Keychain Access 라이브러리를 사용하면 쉽게 할 수 있어요:
 
 ```js
-// KeychainManager.swift 
+// KeychainManager.swift
 
-self.keychain = Keychain().synchronizable(true)
+self.keychain = Keychain().synchronizable(true);
 ```
 
 둘째, 저는 반짝이는 물건 증후군으로 고생했어요: SwiftData를 영속성 레이어로 사용하기 위해 서두르다 보니 Keychain만을 비밀로 사용하고 나머지 계정 메타데이터는 새로운 프레임워크를 통해 영속화하고 있었어요.
@@ -489,7 +488,7 @@ self.keychain = Keychain().synchronizable(true)
 이렇게 하면 로드할 때마다 Accounts가 로그인한 모든 iDevice에 나타날 수 있습니다! 이 일시적인 방식은 두 마리의 새끼를 한 방에 잡는 멋진 방법입니다. 이제 필요할 때 키체인에서 Accounts를 가져올 때 사용합니다:
 
 ```swift
-// AccountManager.swift 
+// AccountManager.swift
 
 func fetchAccounts() throws -> [Account] {
     try KeychainManager.shared.fetchAll()
@@ -521,9 +520,9 @@ private func createAccount(from urlString: String) -> Account? {
 
 ```swift
 struct FavIcon {
-    
+
     let url: URL
-    
+
     init(issuer: String) {
         let domain = "\(issuer).com"
         let url = URL(string: "https://www.google.com/s2/favicons?sz=128&domain=\(domain)")!
@@ -548,16 +547,16 @@ struct FavIcon {
 import SwiftUI
 
 extension View {
-    
+
     func eraseBackground(backgroundColor: Color = Color(uiColor: UIColor.secondarySystemBackground)) -> some View {
         modifier(EraseBackgroundShader(backgroundColor: backgroundColor))
     }
 }
 
 struct EraseBackgroundShader: ViewModifier {
-    
+
     let backgroundColor: Color
-    
+
     func body(content: Content) -> some View {
         content
             .colorEffect(ShaderLibrary.eraseBackground(
@@ -571,7 +570,6 @@ struct EraseBackgroundShader: ViewModifier {
 
 <div class="content-ad"></div>
 
-```markdown
 ```cpp
 #include <metal_stdlib>
 #include <SwiftUI/SwiftUI_Metal.h>
@@ -583,7 +581,7 @@ half4 eraseBackground(
     half4 color,
     half4 backgroundColor
 ) {
-    
+
     if (color.r >= 0.95 && color.g >= 0.95 && color.b >= 0.95) {
         return backgroundColor;
     }
@@ -597,7 +595,8 @@ half4 eraseBackground(
 ![image](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_19.png)
 
 난 지나치게 엔지니어링을 시작했어. 이것에 핀을 꽂아 놓고 나중에 다시 생각해 봐요.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -611,7 +610,8 @@ half4 eraseBackground(
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*TUkFn9ejk93WczTL02Jlrg.gif)
 
 저는 경쟁사 조사를 통해 찾은 tap-to-copy와 같은 편의 기능 몇 가지를 구현했어요.
@@ -628,7 +628,7 @@ private var icon: some View {
         $0
             .resizable()
             .aspectRatio(contentMode: .fit)
-        
+
     }, placeholder: {
         Text(String(account.issuer.first?.uppercased() ?? account.name.first?.uppercased() ?? ""))
             .font(.largeTitle)
@@ -647,7 +647,7 @@ private var code: some View {
         }
     }
 }
-```  
+```
 
 <div class="content-ad"></div>
 
@@ -733,11 +733,11 @@ func checkThoseHunderedThousands() -> Bool {
 <div class="content-ad"></div>
 
 ```swift
-// CodeGenerator.swift 
+// CodeGenerator.swift
 
 var codeSubject = PassthroughSubject<OTP, Never>()
 
-func generateCodes(accounts: [Account]) { 
+func generateCodes(accounts: [Account]) {
     // ...
     codeSubject.send(otp)
 }
@@ -755,7 +755,7 @@ func recomputeNotifications() {
     handleNotificationScheduling()
     handleOTPComputation()
 }
-  
+
 private func handleNotificationScheduling() {
     notificationSchedulingTask?.cancel()
     notificationSchedulingTask = Task.detached(priority: .high) {
@@ -778,11 +778,13 @@ private func handleOTPComputation() {
 ```
 
 이제 일정이 시퀀스대로 아니라 하나의 큰 덩어리로 나오지 않고 꽤 부드럽게 작동합니다!
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 Scheduled repeatedTwos: 292929 @ 2024-02-25 23:33:30 +0000
 Scheduled repeatedTwos: 878787 @ 2024-02-26 06:03:30 +0000
 Scheduled quints: 666660 @ 2024-02-26 10:54:00 +0000
@@ -792,14 +794,15 @@ Scheduled sexts: 666666 @ 2024-04-16 23:22:00 +0000
 Scheduled boltzmannConstant: 141023 @ 2024-04-19 02:05:00 +0000
 Scheduled counting: 012345 @ 2024-04-20 04:51:30 +0000
 Scheduled planksConstant: 661034 @ 2024-04-20 05:38:00
-```
+
+
 
 ## 앱 아이콘
 
 이 거래 그냥 사라지고 싶었어요. 앱 아이콘에 진짜로 체크하려면 이제 목멸에 달렸거든요. 정말 완벽해요.
 
 ![image](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_22.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -809,9 +812,9 @@ Scheduled planksConstant: 661034 @ 2024-04-20 05:38:00
 
 어쨌든 희망이 있다면:
 
-```
+
 ![이미지](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_23.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -887,15 +890,15 @@ content.userInfo = ["deepLink": "checkem://\(otp.code)"]
 func userNotificationCenter(_ center: UNUserNotificationCenter,
                             didReceive response: UNNotificationResponse,
                             withCompletionHandler completionHandler: @escaping () -> Void) {
-    
+
     let userInfo = response.notification.request.content.userInfo
-    
+
     if let deepLinkString = userInfo["deepLink"] as? String,
        let deepLinkURL = URL(string: deepLinkString) {
         guard let code = deepLinkURL.code else { return }
         try? CollectionManager.shared.save(code: code)
     }
-    
+
     completionHandler()
 }
 ```
@@ -903,7 +906,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 마지막으로, Keychain에 저장된 코드들의 긴 쉼표로 구분된 목록을 게으르게 추가했어요.
 
 ```swift
-// KeychainManager.swift   
+// KeychainManager.swift
 
 func storeCollectionItem(code: String) throws {
     var collection = try keychain.get(Constants.collectionKey) ?? ""
@@ -977,7 +980,7 @@ CachedAsyncImage 라이브러리에서 FavIcons가 존재하지 않음에도 불
 
 func create(account: Account, url: URL) throws {
     guard !accounts.contains(where: { $0.name == account.name }) else { return }
-    // ... 
+    // ...
 }
 ```
 
@@ -1006,17 +1009,17 @@ func create(account: Account, url: URL) throws {
 첫 번째 앱 로드 시 UserDefaults를 채우는 함수가 이 문제를 해결했습니다.
 
 ```swift
-// CheckEmApp.swift 
+// CheckEmApp.swift
 
 @main
 struct CheckEmApp: App {
-    
+
     init() {
         initializeDefaultsIfRequired()
     }
 
     // ...
-    
+
     func initializeDefaultsIfRequired() {
         guard UserDefaults.standard.object(forKey: "sexts") == nil else { return }
         CodeGenerator.shared.initializeDefaults()
@@ -1024,7 +1027,7 @@ struct CheckEmApp: App {
 ```
 
 ## TipKit
-```
+
 
 <div class="content-ad"></div>
 

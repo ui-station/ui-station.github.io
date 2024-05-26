@@ -3,13 +3,12 @@ title: "러스트 배우기 11부  빌더와 데이터베이스 상호작용"
 description: ""
 coverImage: "/assets/img/2024-05-23-LearningRustPart11BuildersandDatabaseInteraction_0.png"
 date: 2024-05-23 14:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-LearningRustPart11BuildersandDatabaseInteraction_0.png
 tag: Tech
 originalTitle: "Learning Rust: Part 11 — Builders and Database Interaction"
 link: "https://medium.com/gitconnected/learning-rust-part-11-builders-and-database-interaction-2c1f3207b6a2"
 ---
-
 
 다음 시리즈로 넘어가보겠습니다; 이 부분에서는 데이터 구조에 빌더 패턴을 구현하는 방법을 살펴보겠습니다. 그런 다음 sqlx와 Postgres를 사용한 데이터베이스 상호작용으로 넘어가겠습니다.
 
@@ -279,13 +278,13 @@ sqlx migrate add initial-tables
 
 <div class="content-ad"></div>
 
-이 명령어는 우리가 마이그레이션 스크립트를 작성하기 위해 새 파일 migrations/`timestamp`_initial-tables.sql을 생성합니다.
+이 명령어는 우리가 마이그레이션 스크립트를 작성하기 위해 새 파일 migrations/`timestamp`\_initial-tables.sql을 생성합니다.
 
 ![이미지](/assets/img/2024-05-23-LearningRustPart11BuildersandDatabaseInteraction_3.png)
 
 이 파일을 열고 아래 SQL 문을 추가하여 테이블을 생성하세요.
 
-```markdown
+
 create table locations (
   id bigserial primary key,
   name varchar(255) unique not null
@@ -298,7 +297,7 @@ create table sessions (
   vin varchar(255) not null,
   constraint fk_location foreign key (location_id) references locations(id) on delete cascade
 );
-```
+
 
 <div class="content-ad"></div>
 
@@ -531,13 +530,13 @@ async fn insert_into_locations(pool: Pool<Postgres>) {
             error!("Error Insert: {}", e.to_string())
         }
     }
-    
+
     tx.commit().await.expect("Unable to commit the transaction");
 }
 
 async fn insert_into_sessions(pool: Pool<Postgres>) {
     let tx = pool.begin().await.expect("Unable to begin transaction");
-    
+
     let insert_result = sqlx::query_as!(
         Sessions,
         "INSERT INTO sessions (id,location_id, watts, vin) VALUES (1, 1, 420, '2FMZA52286BA02033') RETURNING *"
@@ -574,7 +573,7 @@ async fn insert_into_sessions(pool: Pool<Postgres>) {
 
 async fn update_sessions(pool: Pool<Postgres>) {
     let tx = pool.begin().await.expect("Unable to begin transaction");
-    
+
     let update_result = sqlx::query_as!(
         Sessions,
         "UPDATE sessions SET watts = 415 WHERE id = $1 RETURNING *",
@@ -663,7 +662,7 @@ async fn main() {
 
     insert_into_locations(pool.clone()).await;
     query_locations(pool.clone()).await;
-    
+
     insert_into_sessions(pool.clone()).await;
     query_sessions(pool.clone()).await;
 

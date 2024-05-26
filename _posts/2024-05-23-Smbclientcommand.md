@@ -34,7 +34,7 @@ smclient //server/share -U user
 ```
 
 SMB 공유에 직접 연결: (비밀번호 필요 없음, 하지만 비밀번호가 화면에 표시됨.)
-```
+
 
 <div class="content-ad"></div>
 

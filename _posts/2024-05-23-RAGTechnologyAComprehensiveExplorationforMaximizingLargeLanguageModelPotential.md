@@ -3,7 +3,7 @@ title: "RAG 기술 대형 언어 모델의 잠재력을 극대화하기 위한 �
 description: ""
 coverImage: "/assets/img/2024-05-23-RAGTechnologyAComprehensiveExplorationforMaximizingLargeLanguageModelPotential_0.png"
 date: 2024-05-23 18:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-RAGTechnologyAComprehensiveExplorationforMaximizingLargeLanguageModelPotential_0.png
 tag: Tech
 originalTitle: "RAG Technology: A Comprehensive Exploration for Maximizing Large Language Model Potential"
@@ -11,7 +11,6 @@ link: "https://medium.com/@interprobeit/rag-technology-a-comprehensive-explorati
 ---
 
 
-```markdown
 ![RAG Technology](/assets/img/2024-05-23-RAGTechnologyAComprehensiveExplorationforMaximizingLargeLanguageModelPotential_0.png)
 
 대형 언어 모델(LLM)은 자연어 처리(NLP)를 혁신적으로 변화시켰습니다. 기계가 이전에는 인간만 할 수 있었던 작업을 수행할 수 있게 했습니다. 그러나 대규모 학습 데이터셋에 대한 의존 및 새로운 도메인에 적응하는 어려움을 포함한 제한 사항이 존재합니다. 검색 증강 생성(RAG) 기술은 더 다재다능하고 효율적인 NLP 프레임워크를 위해 정보 검색과 LLM 강점을 결합한 해결책으로 등장했습니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/@interprobeit/rag-technology-a-comprehensive-explorati
 소개
 
 풍부한 텍스트 데이터로 학습된 LLM의 등장은 NLP를 변혁했습니다. 이러한 모델은 인간과 유사한 품질의 텍스트를 생성하고 언어를 번역하며 창의적인 콘텐츠를 작성하고 질문에 정보적으로 답할 수 있습니다. 그러나 놀라운 능력을 가지고 있지만, LLM은 제한 사항을 직면하고 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -100,15 +99,12 @@ RAG와 Model Fine-tuning 중 어떤 것을 선택할지는 여러 요소에 따�
   - 데이터 선택 및 정제: 명명된 엔티티 인식 (NER) 및 주제 모델링과 같은 기술을 활용하여 지식 베이스/저장소 내에서 관련 정보를 식별하고 분류합니다.
   - 정기적인 업데이트 및 유지관리: 데이터 원본을 정기적으로 업데이트하고 유지하여 정보의 정확성과 시기적 성을 보장합니다.
   - 사용자 피드백 메커니즘: 사용자 피드백 메커니즘을 통합하여 데이터 내의 잠재적인 편향이나 부정확성을 식별하고 해결합니다.
-  
 - 검색 알고리즘:
   - 알고리즘 선택: BM25, TF-IDF 또는 언어 모델(Sentence-BERT 등)과 같은 다양한 검색 알고리즘을 탐색하여 작업 및 데이터 특성에 최적화된 알고리즘을 찾습니다. 선택할 때 쿼리 복잡도, 문서 관련성 및 검색 속도와 같은 요소를 고려합니다.
   - 알고리즘 튜닝: 선택한 검색 알고리즘을 가중 체계나 관련성 임계값과 같은 매개변수를 조정하여 작업에 최적화된 성능을 달성합니다.
-  
 - 생성 모델:
   - LLM 세밀 조정: 적합한 LLM 아키텍처(생성형 vs. 식별형)를 선택하는 것 외에도 도메인이나 작업에 맞게 조정된 데이터셋에서 LLM을 세밀 조정합니다. 이를 통해 모델이 검색된 문맥에 관련된 응답을 생성하는 능력이 향상될 수 있습니다.
   - 프롬프트 엔지니어링: 검색된 정보와 사용자 쿼리에 기반하여 정보를 제공하고 일관성 있는 응답을 생성하는 데 LLM을 안내하는 효과적인 프롬프트를 만듭니다.
-  
 - RAG 시스템 평가:
   - 자동 메트릭: BLEU 점수, ROUGE 점수 또는 Meteor와 같은 자동 메트릭을 활용하여 생성된 응답의 유창성과 문법적 정확성을 평가합니다.
   - 인간 평가: 자동 메트릭뿐만 아니라 인간 평가 연구를 실시하여 생성된 응답의 정보 전달, 관련성 및 전반적인 품질을 사용자 관점에서 평가합니다.

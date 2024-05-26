@@ -37,7 +37,7 @@ val exoPlayer = ExoPLayer.Builder(context).build()
 ```
 
 ExoPlayer의 라이프사이클을 관리하여 필요하지 않을 때 리소스를 해제해야 합니다. DisposableEffect와 LaunchedEffect를 사용하여 라이프사이클 이벤트를 처리할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -86,7 +86,7 @@ manifest.file에 인터넷 권한을 추가해주세요.
 ```
 
 이전에 만든 완성된 코드입니다.
-```
+
 
 <div class="content-ad"></div>
 

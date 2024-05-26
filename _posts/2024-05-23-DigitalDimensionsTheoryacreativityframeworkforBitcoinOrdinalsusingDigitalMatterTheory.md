@@ -3,13 +3,12 @@ title: "디지털 차원 이론 디지털 물질 이론을 활용한 비트코�
 description: ""
 coverImage: "/assets/img/2024-05-23-DigitalDimensionsTheoryacreativityframeworkforBitcoinOrdinalsusingDigitalMatterTheory_0.png"
 date: 2024-05-23 18:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DigitalDimensionsTheoryacreativityframeworkforBitcoinOrdinalsusingDigitalMatterTheory_0.png
 tag: Tech
 originalTitle: "Digital Dimensions Theory: a creativity framework for Bitcoin Ordinals using Digital Matter Theory"
 link: "https://medium.com/astral-architecture/digital-dimensions-theory-a-creativity-framework-for-bitcoin-ordinals-using-digital-matter-theory-abf176c09821"
 ---
-
 
 ![image](/assets/img/2024-05-23-DigitalDimensionsTheoryacreativityframeworkforBitcoinOrdinalsusingDigitalMatterTheory_0.png)
 
@@ -51,7 +50,7 @@ link: "https://medium.com/astral-architecture/digital-dimensions-theory-a-creati
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-23-DigitalDimensionsTheoryacreativityframeworkforBitcoinOrdinalsusingDigitalMatterTheory_3.png)
 
 ![Image 2](/assets/img/2024-05-23-DigitalDimensionsTheoryacreativityframeworkforBitcoinOrdinalsusingDigitalMatterTheory_4.png)
@@ -59,7 +58,7 @@ link: "https://medium.com/astral-architecture/digital-dimensions-theory-a-creati
 I’ve put in the grind for 8 years. I’ve earned my 12k+ hours by always creating before and after work nearly every day for the past 8 years. I’ve done it all by way of applying Creative constraint. I even made a songwriting game called “Under the Influence” teaching creative constraint for songwriters, and it’s had really positive feedback.
 
 Throughout my journey, one constant has kept me productive and it is the cornerstone of Digital Dimensions Theory: Creative Constraint.
-```
+
 
 <div class="content-ad"></div>
 
@@ -115,12 +114,15 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 <div class="content-ad"></div>
 
 ### Concept: 선형 시퀀스를 2차원 그리드로 확장하는 개념입니다. UNAT 예시의 대부분이 이곳에 있습니다. DMT-2 — The Plane. 2D 아트가 이곳에서 이루어집니다.
+
 ### Application: 비트코인 비트 필드 값에서 생성된 예술을 만드는 등, 데이터 포인트를 2D 평면에 매핑하여 패턴과 연결을 형성합니다. 배경 색상 선택 기술부터 시작해 간단한 모양으로 진행하며, 많은 사람들이 알아보고 존경하는 매우 인기 있는 창조적인 예술 컬렉션을 재현하기 위한 경로를 설명할 것입니다. 😉
+
 ### 도구 포함!
 
 ## DMT-3: The Space
 
 ### Concept: 깊이를 추가하여 3차원 구조를 만드는 개념입니다.
+
 ### Application: 비-임의 3D 공간에서 경험하고 실험하며 사고하기 시작할 도구와 관련 학습 자료, 커뮤니티 및 전 세계에서 사용 가능한 도구에 대해 이야기하겠습니다.
 
 ## DMT-4: The Event (Time)
@@ -141,11 +143,13 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 <div class="content-ad"></div>
 
 # 개념: 우주의 모든 가능한 타임라인 시각화
+
 ## 응용: 프로젝트의 모든 잠재적 결과물을 동적으로 시각화한 지도 생성. 이 주제는 가벼운 주제가 아니니 마음의 준비를 해주세요. 하지만 실용적인 구현은 여러분이 다음 프로젝트에 적합하다고 느껴진다면 다양한 생각, 도구 및 코드를 제공하여 여러분이 목표 달성에 도움을 받을 수 있게 해줄 것입니다.
 
 # DMT-7: 다중 우주 (다른 초기 조건)
 
 ## 개념: 여러 우주에서 다양한 초기 조건 조사
+
 ### 응용: 다양한 시작점으로 프로젝트의 병렬 버전을 생성하여 서로 다른 조건이 결과에 어떤 영향을 미치는지 탐색. 이에 대한 실용적인 예시로, 제 NATGalaxies 프로젝트에 대해 진행한 것을 보여주어 이 다중 우주 아이디어를 활용하는 내 모음 중에 발생하는 흔치 않은 현상 중 일부를 소개할 것입니다. 이곳에는 전설이 존재합니다. 탐험할 우주가 있을 것입니다. 여러분은 제가 말하려는 바를 소중하게 생각할 것입니다! — 좋은 방식으로!
 
 # DMT-8: 규칙 세트 (모든 물리학 법칙 가능)

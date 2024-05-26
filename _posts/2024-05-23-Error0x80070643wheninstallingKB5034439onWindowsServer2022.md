@@ -3,13 +3,12 @@ title: "윈도우 서버 2022에 KB5034439을 설치하려고 할 때 발생하�
 description: ""
 coverImage: "/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_0.png"
 date: 2024-05-23 15:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_0.png
 tag: Tech
 originalTitle: "Error 0x80070643 when installing KB5034439 on Windows Server 2022."
 link: "https://medium.com/@hasanudin31113/error-0x80070643-when-installing-kb5034439-on-windows-server-2022-32b7abd74eb3"
 ---
-
 
 안녕하세요, 지난주 발생한 문제에 대해 이야기하려고 해요.
 
@@ -41,7 +40,7 @@ Windows Server 2022에서 Windows 업데이트를 확인했을 때 다음과 같
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Error Screenshot](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_3.png)
 
 4. Shrink the OS partition and prepare the disk for a new recovery partition.
@@ -50,11 +49,11 @@ a. To shrink the OS, run diskpart
 ![Error Screenshot](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_4.png)
 
 b. Run list disk
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Error message](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_5.png)
 
 c. To select the OS disk, run `sel disk OS disk index`. This should be the same disk index as WinRE.
@@ -62,11 +61,11 @@ c. To select the OS disk, run `sel disk OS disk index`. This should be the same 
 ![Error message](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_6.png)
 
 d. To check the partition under the OS disk and find the OS partition, run `list part`
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Error Image 1](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_7.png)
 
 e. To select the OS partition, run `sel part OS partition index`
@@ -74,11 +73,11 @@ e. To select the OS partition, run `sel part OS partition index`
 ![Error Image 2](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_8.png)
 
 f. Run `shrink desired=250 minimum=250`
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Error Screenshot 9](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_9.png)
 
 g. To select the WinRE partition, run `sel part WinRE partition index`
@@ -86,11 +85,11 @@ g. To select the WinRE partition, run `sel part WinRE partition index`
 ![Error Screenshot 10](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_10.png)
 
 h. To delete the WinRE partition, run `delete partition override`
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_11.png)
 
 5. 새 복구 파티션을 생성합니다.
@@ -98,7 +97,7 @@ h. To delete the WinRE partition, run `delete partition override`
 a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Master Boot Record (MBR)인지 확인합니다. 이를 확인하려면 list disk를 실행합니다. "Gpt" 열에 별표(*)가 있는지 확인합니다. 별표(*)가 있는 경우 드라이브가 GPT이고, 그렇지 않으면 MBR입니다.
 
 ![이미지](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_12.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -112,7 +111,7 @@ a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Ma
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_14.png" />
 
 6. To confirm that the WinRE partition is created, run `list vol`
@@ -120,11 +119,11 @@ a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Ma
 <img src="/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_15.png" />
 
 7. To exit from diskpart, run `exit`
-```
+
 
 <div class="content-ad"></div>
 
-```
+
 ![Error Image 1](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_16.png)
 
 8. To re-enable WinRE, run `reagentc /enable`
@@ -132,7 +131,7 @@ a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Ma
 ![Error Image 2](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_17.png)
 
 9. To confirm where WinRE is installed, run `reagentc /info`
-```
+
 
 <div class="content-ad"></div>
 

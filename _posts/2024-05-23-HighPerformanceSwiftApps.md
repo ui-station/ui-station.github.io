@@ -3,13 +3,12 @@ title: "높은 성능의 Swift 앱"
 description: ""
 coverImage: "/assets/img/2024-05-23-HighPerformanceSwiftApps_0.png"
 date: 2024-05-23 15:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HighPerformanceSwiftApps_0.png
 tag: Tech
 originalTitle: "High Performance Swift Apps"
 link: "https://medium.com/gitconnected/high-performance-swift-apps-dfedd3994090"
 ---
-
 
 두 주 전에 Check ‘em: The Based 2FA 앱을 출시했어요.
 
@@ -53,7 +52,7 @@ TOTP 계산 자체는 간단하지 않은 기능으로, 바이트 조작, 문자
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*e66r8CS6JsTQmQzq_wIytA.gif)
 
 Rarity increases exponentially with each tier. With only ultra-rare GETs enabled, such as sexts (e.g. 666666) or counting sequences (e.g. 012345), my screamingly powerful A17 chip takes take over a minute. This increases even more if you only choose one or two ultra-rare options.
@@ -61,7 +60,7 @@ Rarity increases exponentially with each tier. With only ultra-rare GETs enabled
 As expected, this is by far the biggest performance bottleneck.
 
 ## Time-to-first code
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +126,7 @@ extension String {
 
 이런 극도의 부하를 격는 대체 방법으로의 정규식 교체가 성능을 거의 두 배로 향상시킬 수 있을 것으로 생각됩니다.
 
-이 분석을 통해 더 깨달은 것이 있습니다: 이러한 과중 처리는 단일 백그라운드 스레드에서 직렬로 실행되며, 모든 중요한 작업이 고우선순위 인배체 Task로부터 생성된 _dispatch_workloop_worker_thread에 전적으로 할당됩니다.```
+이 분석을 통해 더 깨달은 것이 있습니다: 이러한 과중 처리는 단일 백그라운드 스레드에서 직렬로 실행되며, 모든 중요한 작업이 고우선순위 인배체 Task로부터 생성된 \_dispatch_workloop_worker_thread에 전적으로 할당됩니다.```
 
 <div class="content-ad"></div>
 
@@ -226,7 +225,7 @@ private func checkRepeatedDigits(count: Int) -> Bool {
 
 <div class="content-ad"></div>
 
-```markdown
+```js
 // Interestingness.swift
 
 func checkThoseSexts() -> Bool {
@@ -258,13 +257,14 @@ private static let counting: Set<String> = [
     "456789",
     "567890"
 ]
+```
 
 We’ve handily eliminated the biggest bottleneck: The checkThoseSexts method has gone from a cumulative time of 27.54s to just 899ms — a 30x increase in speed.
 
 Now, this gives me a bright idea.
 
 There are only 1 million possible 6-digit TOTPs. Perhaps, as an upper bound, 1 in 100 are interesting*.
-```
+
 
 <div class="content-ad"></div>
 
@@ -300,7 +300,7 @@ otpComputationTask = Task.detached(priority: .high) {
         (0..<6).forEach { startingIncrement in
             group.addTask {
                 CodeGenerator.shared.generateCodes(
-                    accounts: accounts, 
+                    accounts: accounts,
                     startingIncrement: startingIncrement
                 )
             }
@@ -320,7 +320,7 @@ func generateCodes(accounts: [Account], startingIncrement: Int) {
     var increment = startingIncrement
     var interestingCodesCount = 0
     while Double(interestingCodesCount) < (Double(Constants.localNotificationLimit - 2) / 6).rounded(.up) {
-        // TOTP calculation ... 
+        // TOTP calculation ...
         increment += 6
     }
 }
@@ -331,12 +331,13 @@ func generateCodes(accounts: [Account], startingIncrement: Int) {
 이는 6개의 고우선순위 프로세스를 한 번에 강제로 일어나게 해서, 메인 스레드가 이 비용이 많이 드는 계산과 렌더링 주기를 공유해야 했기 때문이에요.
 
 이는 6개의 코어를 가진 많은 오래된 아이폰에서 더욱 나빠질 것입니다. 그래서, 프로세스의 수를 CPU 코어당 하나로 제한하고, UI 스레드를 위한 하나의 코어를 여분으로 남겨두는 것이 좋겠어요.
-```
+
+`
 
 <div class="content-ad"></div>
 
 ```js
-ProcessInfo.processInfo.processorCount - 1 
+ProcessInfo.processInfo.processorCount - 1
 ```
 
 이야~ 이제 꼭 좋아졌네요! 이렇게 하면 5개의 무거운 작업 쓰레드와 한 개의 아주 차분한 UI 쓰레드가 나올 거예요. 홈으로 돌아가서 손 편지를 쓸 만큼의 지루한 시간은 전혀 없어요.
@@ -368,13 +369,13 @@ Swift는 이 문제에 Actors로 깔끔한 해결책을 제공하며, Actors는 
 // CodeIncrementor.swift
 
 actor CodeIncrementor {
-    
+
     private var _increment: Int = 0
-    
+
     func increment() -> Int {
         defer { _increment += 1 }
         return _increment
-    }    
+    }
 }
 ```
 
@@ -410,19 +411,19 @@ func generateCodes(accounts: [Account], incrementor: CodeIncrementor) async {
 
 <div class="content-ad"></div>
 
-```markdown
+
 23:10:55.2940 Computation 시작
 23:11:09.9220 Computation 완료
-```
+
 
 총 14.628초 소요됐습니다.
 
 ## 청킹과 (n-1) 쓰레드를 사용한 속도
 
-```markdown
+
 23:07:00.4700 Computation 시작
 23:07:09.5980 Computation 완료
-```
+
 
 <div class="content-ad"></div>
 
@@ -453,7 +454,7 @@ func generateCodes(accounts: [Account], incrementor: CodeIncrementor) async {
 
 var body: some View {
     // ...
-    .onReceive(timer) { _ in 
+    .onReceive(timer) { _ in
         viewModel.refresh()
     }
     .onAppear {
@@ -472,7 +473,7 @@ var body: some View {
 // CodeViewModel.swift
 
 final class CodeViewModel {
-    
+
     init() {
         timestamp("View model init")
         configureAccounts()
@@ -497,7 +498,8 @@ final class CodeViewModel {
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*Z78ZtydZwUrguRDZel0d1w.gif)
 
 # 결론
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -510,3 +512,4 @@ Check ‘em — The Based 2FA App은 제가 사이드 프로젝트로 만들었�
 - 2FA 코드가 시작하자마자 나타나요.
 - 흥미로운 코드를 찾는 알고리즘이 훨씬 빠릅니다.
 - 강력한 멀티 코어 CPU가 병렬 계산으로 완전히 활용되고 있어요.
+

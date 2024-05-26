@@ -3,7 +3,7 @@ title: "REST API를 API Gateway, Lambda, DynamoDB, Cognito를 사용하여 배�
 description: ""
 coverImage: "/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_0.png"
 date: 2024-05-23 13:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_0.png
 tag: Tech
 originalTitle: "A Step-by-Step Guide On Deploying REST API using API Gateway, Lambda, DynamoDB, Cognito — Terraform"
@@ -11,7 +11,6 @@ link: "https://medium.com/aws-tip/a-step-by-step-guide-on-deploying-rest-api-usi
 ---
 
 
-```markdown
 ![image](/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_0.png)
 
 # 소개
@@ -19,7 +18,7 @@ link: "https://medium.com/aws-tip/a-step-by-step-guide-on-deploying-rest-api-usi
 우리는 다양한 상황에서 사용할 수 있는 실전 프로젝트를 만들고 싶습니다. 실제 세계에서 매우 일반적인 것으로, 거의 모든 애플리케이션이 모듈식 레고 블록으로 구성된 마이크로서비스에 기반을 두고 있습니다.
 
 특히, 목표는 API 게이트웨이에 호스팅된 API를 만들고, 백엔드는 람다에, 데이터베이스는 DynamoDB에 있는 것입니다. 람다 함수에는 DynamoDB 테이블에서 CRUD 작업 (CREATE, READ, UPDATE, DELETE)을 수행하는 로직이 포함될 것입니다. 그리고 추가로 몇 가지 경로에 대한 공개 액세스를 제한하기 위해 Amazon Cognito를 사용한 인증을 추가할 것입니다. 왜냐하면 데이터베이스에 대한 쓰기 작업은 위험하기 때문입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -208,7 +207,7 @@ REST API는 트리 구조로 구성되어 있으며, 우리는 이를 다음과 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_1.png)
 
 우리는 다음을 할 수 있기를 원합니다:
@@ -220,7 +219,7 @@ REST API는 트리 구조로 구성되어 있으며, 우리는 이를 다음과 
 - DELETE dish/ : 테이블에서 요리 항목 삭제
 
 테이블의 모든 항목을 가져 오기 위해 재귀 함수 recursive_scan을 활용하며, 이 함수는 DynamoDB 테이블에서 레코드를 효율적으로 스캔하는 데 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -261,43 +260,43 @@ dish_path = '/dish'
 dishes_path = '/dishes'
 
 def lambda_handler(event, context):
-        
+
     logger.info('API event: {}'.format(event))
-    
+
     response = None
-    
-    try: 
+
+    try:
         http_method = event.get('httpMethod')
         path = event.get('path')
-        
+
         if http_method == 'GET' and path == dishes_path:
             response = get_all_dishes()
-            
+
         elif http_method == 'GET' and path == dish_path:
             dish_id = event['queryStringParameters']['dish_id']
             response = get_dish(dish_id)
-            
+
         elif http_method == 'POST' and path == dish_path:
             body = json.loads(event['body'])
             response = save_dish(body)
-            
+
         elif http_method == 'PATCH' and path == dish_path:
             body = json.loads(event['body'])
             response = update_dish(body['dish_id'], body['update_key'], body['update_value'])
-            
+
         elif http_method == 'DELETE':
             body = json.loads(event['body'])
             response = delete_dish(body['dish_id'])
-            
+
         else:
             response = generate_response(404, '리소스를 찾을 수 없습니다.')
-            
+
     except ClientError as e:
         logger.error('오류: {}'.format(e))
         response = generate_response(404, e.response['Error']['Message'])
-        
+
     return response
-        
+
 def get_dish(dish_id):
     try:
         response = table.get_item(Key={'dish_id': dish_id})
@@ -307,7 +306,7 @@ def get_dish(dish_id):
     except ClientError as e:
         logger.error('오류: {}'.format(e))
         return generate_response(404, e.response['Error']['Message'])
-    
+
 def get_all_dishes():
     try:
         scan_params = {
@@ -319,7 +318,7 @@ def get_all_dishes():
     except ClientError as e:
         logger.error('오류: {}'.format(e))
         return generate_response(404, e.response['Error']['Message'])
-    
+
 def recursive_scan(scan_params, items):
     response = table.scan(**scan_params)
     items += response['Items']
@@ -341,7 +340,7 @@ def save_dish(item):
     except ClientError as e:
         logger.error('오류: {}'.format(e))
         return generate_response(404, e.response['Error']['Message'])
-    
+
 def update_dish(dish_id, update_key, update_value):
     try:
         response = table.update_item(
@@ -360,7 +359,7 @@ def update_dish(dish_id, update_key, update_value):
     except ClientError as e:
         logger.error('오류: {}'.format(e))
         return generate_response(404, e.response['Error']['Message'])
-    
+
 def delete_dish(dish_id):
     try:
         response = table.delete_item(
@@ -388,7 +387,7 @@ class DecimalEncoder(json.JSONEncoder):
                 return float(obj)
         # 기본 클래스의 default 메서드가 TypeError를 발생시키도록 합니다
         return super(DecimalEncoder, self).default(obj)
-        
+
 def generate_response(status_code, body):
     return {
         'statusCode': status_code,
@@ -420,7 +419,7 @@ resource "aws_lambda_function" "my-lambda-function" {
 ```
 
 # 단계 3: DynamoDB 설정
-```  
+
 
 <div class="content-ad"></div>
 
@@ -734,7 +733,7 @@ resource "aws_api_gateway_stage" "my-prod-stage" {
 
 <div class="content-ad"></div>
 
-백그라운드에서 요청을 보낼 때 무엇이 일어나는지 기록하기 위해 CloudWatch 로그 그룹을 설정하고 있습니다. CloudWatch LogGroup의 이름은 API-Gateway-Execution-Logs_'YOUR_API_ID'/'YOUR_STAGE_NAME' 형식이어야 합니다.
+백그라운드에서 요청을 보낼 때 무엇이 일어나는지 기록하기 위해 CloudWatch 로그 그룹을 설정하고 있습니다. CloudWatch LogGroup의 이름은 API-Gateway-Execution-Logs\_'YOUR_API_ID'/'YOUR_STAGE_NAME' 형식이어야 합니다.
 
 그런 다음 API Gateway 스테이지 수준 실행 로깅을 설정하기 위해 "method_settings" 리소스를 사용합니다.
 
@@ -781,7 +780,8 @@ module "cors" {
 이 구조를 따라가서 각 파일에 다음 코드를 붙여넣으세요.
 
 cors.tf:
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -967,7 +967,8 @@ output "api_gateway_url" {
 ```
 
 # 단계 5: 코그니토로 인증 추가하기
-```  
+
+`
 
 <div class="content-ad"></div>
 
@@ -1085,14 +1086,14 @@ aws cognito-idp admin-initiate-auth --user-pool-id <USER_POOL_ID> --client-id <C
 
 ```md
 {
-    "ChallengeParameters": {},
-    "AuthenticationResult": {
-        "AccessToken": <ACCESS_TOKEN>,
-        "ExpiresIn": 3600,
-        "TokenType": "Bearer",
-        "RefreshToken": <REFRESH_TOKEN>,
-        "IdToken": <ID_TOKEN> # ID 토큰의 값을 복사하세요
-    }
+"ChallengeParameters": {},
+"AuthenticationResult": {
+"AccessToken": <ACCESS_TOKEN>,
+"ExpiresIn": 3600,
+"TokenType": "Bearer",
+"RefreshToken": <REFRESH_TOKEN>,
+"IdToken": <ID_TOKEN> # ID 토큰의 값을 복사하세요
+}
 }
 ```
 

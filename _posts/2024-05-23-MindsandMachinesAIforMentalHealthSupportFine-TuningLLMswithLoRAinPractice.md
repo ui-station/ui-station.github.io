@@ -3,13 +3,12 @@ title: "마음과 기계 - 정신 건강 지원을 위한 인공지능, 실제�
 description: ""
 coverImage: "/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_0.png"
 date: 2024-05-23 15:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_0.png
 tag: Tech
 originalTitle: "Minds and Machines — AI for Mental Health Support, Fine-Tuning LLMs with LoRA in Practice"
 link: "https://medium.com/data-engineer-things/minds-and-machines-ai-for-mental-health-support-fine-tuning-llms-with-lora-in-practice-0ff19edb9d76"
 ---
-
 
 ## 대규모 언어 모델 (LLM)의 잠재력을 탐색하여 정신 건강 분야의 미래가 어떻게 바뀔 수 있는지 알아보고, Parameter-Efficient Fine-Tuning (PEFT)을 적용하여 AI 기반 정신 건강 지원 챗봇을 만드는 방법을 예시로 배워보세요
 
@@ -25,13 +24,13 @@ link: "https://medium.com/data-engineer-things/minds-and-machines-ai-for-mental-
 - 로저의 소파에서 코드 라인으로
 - 희망을 위한 해킹: 심리 건강 AI 해커톤 ∘ 해커톤 랩터 정보
 - 균형 잡기: 심리 건강 지원에서 AI의 잠재력과 함정
-∘ 인지 행동 요법 (CBT)
-∘ 세밀하게 조정된 모델
-∘ RAG (검색 증강 생성)의 이해
+  ∘ 인지 행동 요법 (CBT)
+  ∘ 세밀하게 조정된 모델
+  ∘ RAG (검색 증강 생성)의 이해
 - 해커톤 가이드: 첫 번째 심리 건강 챗봇 만들기
-∘ 심리 상담 데이터로 Llama 2의 파라미터 효율적 세부 조정 (PEFT)
-∘ 세밀하게 조정된 모델로 챗봇 만들기
-∘ 해커톤 프로젝트 레벨 업: 심리 건강 챗봇을 위한 다음 단계
+  ∘ 심리 상담 데이터로 Llama 2의 파라미터 효율적 세부 조정 (PEFT)
+  ∘ 세밀하게 조정된 모델로 챗봇 만들기
+  ∘ 해커톤 프로젝트 레벨 업: 심리 건강 챗봇을 위한 다음 단계
 - 결론
 
 # 심리 건강의 위기: 침묵을 상상해보세요
@@ -88,7 +87,7 @@ import random
 
 
 class Eliza:
-    def __init__(self):        
+    def __init__(self):
         self.patterns = [...]
 
     def reflect(self, fragment):
@@ -128,7 +127,7 @@ if __name__ == "__main__":
 https://gist.github.com/vojay-dev/d7b3cfe94e49d3f1e40e98d061b94311
 
 <img src="/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_3.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -236,7 +235,8 @@ dataset = load_dataset("Amod/mental_health_counseling_conversations")
 이전에 언급된 우려사항들은 종종 잘못된 정보나 부정확하거나 도움이 되지 않는 응답과 관련이 있습니다. 대형 언어 모델(Large Language Models, LLM) 및 인공 지능(AI) 분야에서 이러한 문제의 위험을 줄이기 위해 점점 더 인기 있는 패러다임 중 하나가 검색 지원 생성(Retrieval-Augmented Generation, RAG)입니다. 그렇다면 RAG는 무엇을 포함하고 있으며, AI 개발 환경에 어떤 영향을 미치는 걸까요?
 
 기본적으로 RAG는 외부 데이터를 통합하여 LLM 시스템을 향상시킵니다. 즉, LLM에 관련된 컨텍스트를 추가로 전달하여 예측을 보강하는 것을 의미합니다. 그렇다면 어떻게 관련 컨텍스트를 찾을까요? 일반적으로 이 데이터는 벡터 검색이나 전용 벡터 데이터베이스를 통해 자동으로 검색될 수 있습니다. 벡터 데이터베이스는 데이터를 유사한 데이터를 빠르게 조회할 수 있는 방식으로 저장하기 때문에 매우 유용합니다. 그런 다음 LLM은 질의와 검색된 문서 두 가지 모두를 기반으로 출력을 생성합니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -324,13 +324,16 @@ NVIDIA A100 80GB Tensor-Core-GPU를 사용하면 fe는 fe에 대한 아주 좋�
 
 먼저, PyTorch 및 Hugging Face에서 제공한 툴킷을 포함한 모든 필수 라이브러리를 설치합니다. 이 프로세스가 실행 중인 환경은 CUDA 11, NVCC 및 Turing 또는 Ampere GPU가 필요한 FlashAttention을 사용할 수 있습니다. 이 특정 종속성은 torch 이후에 설치되어야 하므로 별도의 두 번째 단계에서 실행합니다.
 
-```markdown
-pip install torch torchvision datasets transformers tokenizers bitsandbytes peft accelerate trl
-```
 
-```markdown
+
+pip install torch torchvision datasets transformers tokenizers bitsandbytes peft accelerate trl
+
+
+
+
+
 pip install flash-attn
-```
+
 
 <div class="content-ad"></div>
 
@@ -378,7 +381,7 @@ target_model = "vojay/Llama-2-7b-chat-hf-mental-health"
 ```
 
 이 형식은 처음에는 암호적으로 보일 수 있지만 개별 요소를 살펴보면 더 명확해집니다.
-``` 
+
 
 <div class="content-ad"></div>
 
@@ -490,7 +493,7 @@ def train_mental_health_model():
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_11.png)
 
 모든 학습 인수에 주석을 추가하여 설정이 투명하게 되었습니다. 그러나 특정 사항은 학습을 실행하는 환경 및 입력 모델 및 데이터 세트에 따라 다르므로 조정이 필요할 수 있습니다.
@@ -498,7 +501,7 @@ def train_mental_health_model():
 과정이 어떻게 작동하는지 자세히 살펴봅시다. AutoModelForCausalLM.from_pretrained를 사용하여 모델을 로드하고 quantization_config를 설정하여 4비트 가중치 및 활성화로 변환하여 성능 측면에서 이점을 제공합니다. attn_implementation을 flash_attention_2로 설정함으로써 모델을 불러옵니다.
 
 FlashAttention-2는 표준 어텐션 메커니즘의 빠르고 효율적인 구현으로, 시퀀스 길이에 대해 어텐션 계산을 병렬화하고 GPU 스레드 간 통신 및 공유 메모리 읽기/쓰기를 줄이기 위해 작업을 분할하여 추론 속도를 크게 높일 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -508,7 +511,7 @@ LoraConfig를 설정한 후에는 get_peft_model() 함수로 PeftModel을 생성
 
 준비된 모델을 사용하여 다음 단계는 훈련을 준비하는 것입니다. 이를 위해 모든 주요 훈련 과정을 제어하는 TrainingArguments 객체를 생성합니다. 이 객체는 다음과 같은 항목을 포함합니다:
 
-```markdown
+
 - output_dir=target_model  # 모델 출력 디렉토리
 - overwrite_output_dir=True  # 이미 존재하는 출력을 덮어쓰기
 - num_train_epochs=2  # 훈련할 에포크 수
@@ -524,7 +527,7 @@ LoraConfig를 설정한 후에는 get_peft_model() 함수로 PeftModel을 생성
 - evaluation_strategy="epoch"  # 각 에포크 끝에 평가
 - fp16=True  # 메모리 저장을 위해 32비트 대신 16비트 정밀도 사용
 - tf32=True  # 텐서 코어(OVIDIA A100)에 최적화된 학습
-```
+
 
 <div class="content-ad"></div>
 
@@ -539,7 +542,7 @@ LoraConfig를 설정한 후에는 get_peft_model() 함수로 PeftModel을 생성
 <div class="content-ad"></div>
 
 ```js
-train_mental_health_model()
+train_mental_health_model();
 ```
 
 ![Fine-tuned model](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_12.png)
@@ -553,11 +556,11 @@ train_mental_health_model()
 기억해 두세요, 이 미세 조정된 모델은 실제로 기본 모델용 어댑터입니다. 즉, 사용하려면 기본 모델을 로드하고 이 미세 조정 어댑터를 적용해야 합니다:
 
 ```js
-model_id = "meta-llama/Llama-2-7b-chat-hf"
-adapter_model_id = "vojay/Llama-2-7b-chat-hf-mental-health"
+model_id = "meta-llama/Llama-2-7b-chat-hf";
+adapter_model_id = "vojay/Llama-2-7b-chat-hf-mental-health";
 
-model = AutoModelForCausalLM.from_pretrained(model_id, torch_dtype=torch.float16)
-model.load_adapter(adapter_model_id)
+model = AutoModelForCausalLM.from_pretrained(model_id, (torch_dtype = torch.float16));
+model.load_adapter(adapter_model_id);
 ```
 
 ## 미세 조정된 모델로 챗봇 만들기
@@ -613,8 +616,8 @@ poetry add torch
 <div class="content-ad"></div>
 
 ```js
-device = torch.device("mps")
-torch.set_default_device(device)
+device = torch.device("mps");
+torch.set_default_device(device);
 ```
 
 또한, 훈련에 사용했던 것과 동일한 기본 프롬프트를 사용할 것입니다. 모든 것을 함께 넣어보면, 이것이 우리 챗봇의 실용적인 CLI 버전입니다:
@@ -679,7 +682,7 @@ while True:
 ```
 
 이제 한번 해봅시다! 다음 챗 입력으로 실행해봅시다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -753,8 +756,8 @@ AI 기반 챗봇은 24시간 365일 제공되는 접근 가능한 정신 건강 
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_16.png)
 
 특히 정신 건강 지원은 중요한 위험과 도전을 안고 있지만, 이러한 위험을 투명하게 만들고 공개적으로 논의함으로써 의미 있는 진전의 길을 열 수 있습니다. 여러분의 아이디어, 경험, 우려, 그리고 해결책에 대해 들어보고 싶습니다.
-```
+

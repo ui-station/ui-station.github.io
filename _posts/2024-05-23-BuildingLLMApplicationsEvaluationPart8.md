@@ -3,13 +3,12 @@ title: "LLM 애플리케이션 개발 평가 파트 8"
 description: ""
 coverImage: "/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_0.png"
 date: 2024-05-23 17:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_0.png
 tag: Tech
 originalTitle: "Building LLM Applications: Evaluation (Part 8)"
 link: "https://medium.com/@vipra_singh/building-llm-applications-evaluation-part-8-fcfa2f22bd1c"
 ---
-
 
 Learn Large Language Models (LLM) through the lens of a Retrieval Augmented Generation (RAG) Application.
 
@@ -31,72 +30,73 @@ Learn Large Language Models (LLM) through the lens of a Retrieval Augmented Gene
 <div class="content-ad"></div>
 
 # 콘텐츠 요약
+
 1. 개요
 2. LLM 평가와 벤치마킹의 비교
 3. LLM 벤치마킹
    - 언어 이해 및 QA 벤치마킹
-      - TruthfulQA
-      - MMLU (Massive Multitask Language Understanding)
-      - DROP
+     - TruthfulQA
+     - MMLU (Massive Multitask Language Understanding)
+     - DROP
    - 상식 및 추론 벤치마킹
-      - ARC (AI2 Reasoning Challenge)
-      - HellaSwag
-      - BIG-Bench Hard (Imitation Game 벤치마크 이상)
-      - WinoGrande
-      - GSM8k
+     - ARC (AI2 Reasoning Challenge)
+     - HellaSwag
+     - BIG-Bench Hard (Imitation Game 벤치마크 이상)
+     - WinoGrande
+     - GSM8k
    - 코딩 벤치마킹
-      - HumanEval
-      - CodeXGLUE
+     - HumanEval
+     - CodeXGLUE
    - 대화 및 챗봇 벤치마킹
-      - Chatbot Arena (by LMSys)
-      - MT Bench
-      - Language Model Evaluation Harness (by EleutherAI)
-      - Stanford HELM
-      - PromptBench (by Microsoft)
+     - Chatbot Arena (by LMSys)
+     - MT Bench
+     - Language Model Evaluation Harness (by EleutherAI)
+     - Stanford HELM
+     - PromptBench (by Microsoft)
 4. LLM 벤치마크의 제한
 5. LLM 평가 지표
 6. 지표 점수 계산 방법
    - 통계 평가자
-      - 음성 오류율 (WER)
-      - 정확도 일치
-      - 난해함
-      - BLEU
-      - ROUGE
-      - METEOR
+     - 음성 오류율 (WER)
+     - 정확도 일치
+     - 난해함
+     - BLEU
+     - ROUGE
+     - METEOR
    - 모델 기반 평가자
-      - 추론 점수
-      - BLEURT
-      - QA-QG
+     - 추론 점수
+     - BLEURT
+     - QA-QG
    - LLM-Evals
-      - G-Eval
-      - Prometheus
+     - G-Eval
+     - Prometheus
    - 통계 및 모델 기반 평가자 결합
-      - BERTScore
-      - MoverScore
-      - GPTScore
-      - SelfCheckGPT
-      - QAG Score
+     - BERTScore
+     - MoverScore
+     - GPTScore
+     - SelfCheckGPT
+     - QAG Score
 7. LLM 기반 애플리케이션 평가
    - 평가 지표 선택
    - 평가 방법 평가!
    - 평가 세트 작성
 8. LLM 평가 프레임워크
    - Deepeval
-      - 충실성
-      - 답변 관련성
-      - 문맥 정확도
-      - 문맥 호출
-      - 문맥 관련성
+     - 충실성
+     - 답변 관련성
+     - 문맥 정확도
+     - 문맥 호출
+     - 문맥 관련성
    - 파인튜닝 지표
-      - 환각
-      - 유해성
-      - 편견
+     - 환각
+     - 유해성
+     - 편견
    - Ragas
-      - 충실성
-      - 답변 관련성
-      - 문맥 정확도
-      - 문맥 관련성
-      - 문맥 호출
+     - 충실성
+     - 답변 관련성
+     - 문맥 정확도
+     - 문맥 관련성
+     - 문맥 호출
 9. 결론
 10. 제작진
 
@@ -200,7 +200,7 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![LLM Benchmarking](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_5.png)
 
 일부 벤치마크는 수십 개의 테스트만 포함할 수도 있고, 다른 것은 수백 개 또는 수천 개의 작업을 포함할 수도 있습니다. 중요한 점은 LLM 벤치마킹이 서로 다른 도메인과 작업에서 LLM 성능을 평가하기 위한 표준화된 프레임워크를 제공한다는 것입니다.
@@ -210,7 +210,7 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 - 목표에 부합: LLM이 뛰어날 필요가 있는 구체적인 작업과 일치하는지 확인하는 것.
 - 작업 다양성 수용: 광범위한 작업 스펙트럼을 갖춘 벤치마크를 찾아 LLM을 다각도로 평가하는 것.
 - 도메인에 부합: 언어 이해, 텍스트 생성 또는 코딩과 같이 애플리케이션의 세계와 조화를 이루는 벤치마크를 선택하는 것.
-```
+
 
 <div class="content-ad"></div>
 
@@ -335,19 +335,19 @@ Additional noteworthy language understanding and QA benchmarks: GLUE, SuperGLUE,
 
 <div class="content-ad"></div>
 
-```
-![Image](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_9.png) 
+
+![Image](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_9.png)
 
 질문이 있고, 여러 선택지와 정답이 있습니다.
 
 ## 3.2.2. HellaSwag
 
 [2019년 발표] ∙ 논문 ∙ 코드 ∙ 데이터셋
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_10.png)
 
 HellaSwag는 문장 완성을 통해 LLM 모델의 상식 추론 능력을 평가합니다. LLM 모델이 4개의 선택지 중에서 적절한 끝을 선택할 수 있는지를 테스트합니다. 이는 10,000개의 문장에 걸쳐 진행됩니다.
@@ -355,7 +355,7 @@ HellaSwag는 문장 완성을 통해 LLM 모델의 상식 추론 능력을 평�
 당시 SOTA 모델은 사전 훈련을 통해 50% 이상을 달성하기 어려웠지만, GPT-4는 2023년 10번의 프롬프팅만으로 95.3%의 기록을 세웠습니다. MMLU와 유사하게, HellaSwag는 LLM의 정확 답변 비율에 따라 점수를 매깁니다.
 
 DeepEval을 통해 HellaSwag 벤치마크를 활용하는 방법은 다음과 같습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -379,7 +379,7 @@ print(benchmark.overall_score)
 ## 3.2.3. BIG-Bench Hard (Beyond the Imitation Game Benchmark)
 
 [2022년 발표] 논문 ∙ 코드 ∙ 데이터셋
-```
+
 
 <div class="content-ad"></div>
 
@@ -409,7 +409,7 @@ benchmark = BigBenchHard(
 # 'mistral_7b'를 사용자 정의 모델로 교체
 benchmark.evaluate(model=mistral_7b)
 print(benchmark.overall_score)
-```
+````
 
 다시 한번 DeepEval의 BBH 문서 페이지에서 더 많은 정보를 얻을 수 있습니다.
 
@@ -417,7 +417,7 @@ print(benchmark.overall_score)
 
 <div class="content-ad"></div>
 
-- 설명: WinoGrande는 인공 지능의 상식적 추론을 테스트하며, 모델이 유인오그라드 스키마 도전 과제(WSC)를 해결하도록 도전합니다. 예를 들어, 한 가지 작업은 다음 문장을 완성하는 것을 포함할 수 있습니다: "문이 창문보다 더 큰 소리로 열렸습니다 왜냐하면 ___(옵션: 문 또는 창문)에 더 많은 기름이 있었기 때문입니다."
+- 설명: WinoGrande는 인공 지능의 상식적 추론을 테스트하며, 모델이 유인오그라드 스키마 도전 과제(WSC)를 해결하도록 도전합니다. 예를 들어, 한 가지 작업은 다음 문장을 완성하는 것을 포함할 수 있습니다: "문이 창문보다 더 큰 소리로 열렸습니다 왜냐하면 \_\_\_(옵션: 문 또는 창문)에 더 많은 기름이 있었기 때문입니다."
 - 평가 설정: 5번 시도
 - 측정 항목: 1267개의 질문에 대한 정확도
 - 논문: WinoGrande: 규모의 있는 적대적 유인오그라드 스키마 도전 과제
@@ -481,13 +481,13 @@ GenAI 모델은 다음 4개 데이터셋에서의 성능 평균으로 순위가 
 
 25번 슛은 데이터 세트에서 (질문, 해결책) 쌍을 25개 씩 프롬프트에 삽입하는 것을 의미합니다.
 
-```markdown
+
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_13.png" />
 
 # 3.4. 대화 및 챗봇 벤치마크
 
 ## 3.4.1. 챗봇 아레나 (by LMSys)
-```
+
 
 <div class="content-ad"></div>
 
@@ -559,7 +559,7 @@ HELM은 그 후 사회적 관련성(예: 사용자 앞 애플리케이션에 대
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-23-BuildingLLMApplicationsEvaluationPart8_17](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_17.png)
 
 PromptBench은 LLM을 벤치마킹하기 위한 또 다른 통합 라이브러리입니다. HELM과 Harness와 매우 유사하며, 다양한 LLM 프레임워크를 지원합니다 (예: Hugging Face, VLLM 등). 다른 프레임워크와 구별되는 점은 과제를 평가하는 것뿐만 아니라 다양한 Prompt Engineering 방법을 지원하며, LLM을 다양한 프롬프트 수준 적대 공격에서 평가한다는 것입니다. 또한 프로덕션 수준의 사용 사례를 더 쉽게 만드는 여러 평가 파이프라인을 구성할 수 있습니다.
@@ -567,7 +567,7 @@ PromptBench은 LLM을 벤치마킹하기 위한 또 다른 통합 라이브러�
 # 4. LLM 벤치마크의 한계
 
 벤치마크는 LLM의 능력을 평가하는 데 기본적이지만, 제한 사항도 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -618,7 +618,7 @@ LLM 평가 지표는 우리가 중요하게 생각하는 기준에 따라 LLM의
 
 ### 6.1. 통계적 평가자
 
-시작하기 전에, 통계적 평가 방법은 중요하지 않다는 점을 먼저 말씀 드리고 싶어요. 급하신 분들은 “G-Eval” 섹션으로 바로 건너뛸 수 있습니다. 이는 통계적 방법은 추론이 필요할 때 항상 성능이 좋지 않기 때문에 대부분의 LLM 평가 기준에 대해 점수화하는 데 너무 부정확합니다. 
+시작하기 전에, 통계적 평가 방법은 중요하지 않다는 점을 먼저 말씀 드리고 싶어요. 급하신 분들은 “G-Eval” 섹션으로 바로 건너뛸 수 있습니다. 이는 통계적 방법은 추론이 필요할 때 항상 성능이 좋지 않기 때문에 대부분의 LLM 평가 기준에 대해 점수화하는 데 너무 부정확합니다.
 
 이제 함께 살펴보겠습니다:
 
@@ -691,9 +691,9 @@ BLEU 스코어의 범위: 보통 0부터 1까지이며, 0은 번역된 텍스트
 from nltk.translate.bleu_score import sentence_bleu
 
 # 샘플 참조 및 생성된 문장
-reference = [["A", "fast", "brown", "fox", "jumps", "over", "a", 
+reference = [["A", "fast", "brown", "fox", "jumps", "over", "a",
 "lazy", "dog", "."]]
-generated = [["The", "quick", "brown", "fox", "jumps", "over", "the", 
+generated = [["The", "quick", "brown", "fox", "jumps", "over", "the",
 "lazy", "dog", "."]]
 
 # BLEU 스코어 계산
@@ -725,13 +725,13 @@ F-점수(F1 점수): 정밀도와 재현율의 조화평균으로, 두 가지를
 
 ROUGE 점수는 0부터 1까지의 범위를 가지며, 0은 기계 생성 텍스트와 참조 텍스트 사이에 중첩이 없음을 나타내며, 1은 참조 텍스트와 완벽히 일치함을 나타냅니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_23.png)
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_24.png)
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_25.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -752,7 +752,8 @@ print('BLEU 점수:', bleu_score)
 METEOR(Metric for Evaluation of Translation with Explicit Ordering)은 기계 번역을 평가하는 고급 메트릭으로, BLEU 점수의 일부 한계를 해소하기 위해 개발되었습니다. BLEU와 달리 METEOR은 정확한 단어 일치 뿐만 아니라 어간 및 동의어를 고려하여 번역을 평가하므로 보다 광범위한 언어 유사성을 포착합니다. 정밀도와 재현율을 균형 있게 평가하며, 단어 순서의 차이에 대한 벌점을 도입하여 번역의 유창성을 평가합니다. METEOR은 문장 수준에서 인간 판단과 더 높은 상관관계를 갖는 것으로 알려져 있어 번역 품질 평가에 있어 소수점 아래까지 세밀하고 포괄적인 메트릭스로서의 지위를 갖고 있습니다. 그러나 그 복잡성으로 인해, BLEU와 같은 단순한 메트릭스에 비해 더 많은 계산 노력이 필요합니다.
 
 Alignment-Based: METEOR은 후보 번역과 참조 번역 간의 단어들 간의 일치를 생성하여, 정확, 어간, 동의어 및 패러프레이즈 일치에 초점을 맞춥니다.
-```  
+
+
 
 <div class="content-ad"></div>
 
@@ -797,7 +798,8 @@ Harmonic Mean은 다음과 같이 계산됩니다: Harmonic Mean=10*P*R/(R+9*P).
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_26.png)
 
 ```python
@@ -815,7 +817,7 @@ print('METEOR Score:', meteor_score)
 ## 6.2. 모델 기반 점수 산정기
 
 순전히 통계적인 산정기들은 신뢰성이 있지만 의미론을 고려하는 데 어려움을 겪어 정확하지 않다. 이 절에서는 정반대인 산정기들을 살펴보겠습니다. 순전히 NLP 모델에 의존하는 산정기들은 비교적 더 정확하지만 확률적인 성격으로 인해 신뢰성이 떨어질 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1151,7 +1153,7 @@ from deepeval.metrics import FaithfulnessMetric
 from deepeval.test_case import LLMTestCase
 
 test_case=LLMTestCase(
-  input="...", 
+  input="...",
   actual_output="...",
   retrieval_context=["..."]
 )
@@ -1167,7 +1169,7 @@ print(metric.is_successful())
 DeepEval은 평가를 테스트 케이스로 다룹니다. 여기서 actual_output은 단순히 우리의 LLM 출력입니다. 또한, 충성성은 LLM-Eval인 만큼 최종 점수의 이유를 알 수 있습니다.
 
 ## 8.1.2. 답변 관련성
-```  
+
 
 <div class="content-ad"></div>
 
@@ -1180,7 +1182,7 @@ from deepeval.metrics import AnswerRelevancyMetric
 from deepeval.test_case import LLMTestCase
 
 test_case=LLMTestCase(
-  input="...", 
+  input="...",
   actual_output="...",
   retrieval_context=["..."]
 )
@@ -1205,7 +1207,7 @@ from deepeval.metrics import ContextualPrecisionMetric
 from deepeval.test_case import LLMTestCase
 
 test_case=LLMTestCase(
-  input="...", 
+  input="...",
   actual_output="...",
   # 예상 출력은 LLM의 "이상적" 출력이며, 맥락 메트릭에 필요한 추가 매개변수입니다
   expected_output="...",
@@ -1230,7 +1232,7 @@ from deepeval.metrics import ContextualRecallMetric
 from deepeval.test_case import LLMTestCase
 
 test_case=LLMTestCase(
-  input="...", 
+  input="...",
   actual_output="...",
   # 예상 출력물은 당신의 LLM의 "이상적인" 출력물이며, 이는 컨텍스트 메트릭에 필요한 추가 매개변수입니다
   expected_output="...",
@@ -1255,7 +1257,7 @@ from deepeval.metrics import ContextualRelevancyMetric
 from deepeval.test_case import LLMTestCase
 
 test_case = LLMTestCase(
-  input="...", 
+  input="...",
   actual_output="...",
   retrieval_context=["..."]
 )
@@ -1287,9 +1289,9 @@ from deepeval.metrics import HallucinationMetric
 from deepeval.test_case import LLMTestCase
 
 test_case=LLMTestCase(
-  input="...", 
+  input="...",
   actual_output="...",
-  # 'context'은 'retrieval_context'와 같지 않음에 주의하세요. 
+  # 'context'은 'retrieval_context'와 같지 않음에 주의하세요.
   # 검색 컨텍스트는 RAG 파이프라인과 관련이 깊으나,
   # 컨텍스트는 주어진 입력에 대한 이상적인 검색 결과이며,
   # 일반적으로 세밀한 조정에 사용되는 데이터셋에 존재합니다.
@@ -1423,7 +1425,7 @@ print(metric.score)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_41.png)
 
 Just like in any machine learning system, the performance of individual components within the LLM and RAG pipeline has a significant impact on the overall experience. Ragas offers metrics tailored for evaluating each component of our RAG pipeline in isolation.
@@ -1436,7 +1438,7 @@ Just like in any machine learning system, the performance of individual componen
 - Context entity recall
 
 End-to-End Evaluation
-```
+
 
 <div class="content-ad"></div>
 
@@ -1453,19 +1455,19 @@ End-to-End Evaluation
 
 생성된 답변은 주어진 맥락에서 모든 주장들이 추론될 수 있다면 신뢰할 수 있는 것으로 간주됩니다. 이를 계산하기 위해 먼저 생성된 답변에서의 주장 집합이 식별됩니다. 그런 다음 각 주장이 주어진 맥락과 일치하는지 여부를 확인하여 주어진 맥락에서 어떤 주장을 추론할 수 있는지 확인합니다. 신뢰도 점수는 다음과 같이 계산됩니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_42.png)
-```
+
 
 ```python
-from datasets import Dataset 
+from datasets import Dataset
 from ragas.metrics import faithfulness
 from ragas import evaluate
 
 data_samples = {
     'question': ['첫 번째 슈퍼볼이 언제 열렸습니까?', '가장 많은 슈퍼볼을 우승한 팀은 누구인가요?'],
     'answer': ['첫 번째 슈퍼볼은 1967년 1월 15일에 개최되었습니다.', '가장 많은 슈퍼볼 우승은 뉴 잉글랜드 파트리어츠가 차지했습니다.'],
-    'contexts' : [['첫 번째 AFL-NFL 월드 챔피언십 경기는 1967년 1월 15일에 미국의 LA 로스엔젤레스 메모리얼 콜로시움에서 열린 미식 축구 경기였습니다.'], 
+    'contexts' : [['첫 번째 AFL-NFL 월드 챔피언십 경기는 1967년 1월 15일에 미국의 LA 로스엔젤레스 메모리얼 콜로시움에서 열린 미식 축구 경기였습니다.'],
     ['그린 베이 패커스...위스콘신 그린베이.','패커스는...풋볼 컨퍼런스에서 경쟁합니다.']],
 }
 dataset = Dataset.from_dict(data_samples)
@@ -1508,18 +1510,18 @@ score.to_pandas()
 
 <div class="content-ad"></div>
 
-```markdown
+`
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_45.png" />
 
 ```js
-from datasets import Dataset 
+from datasets import Dataset
 from ragas.metrics import answer_relevancy
 from ragas import evaluate
 
 data_samples = {
     'question': ['When was the first super bowl?', 'Who won the most super bowls?'],
     'answer': ['The first superbowl was held on Jan 15, 1967', 'The most super bowls have been won by The New England Patriots'],
-    'contexts' : [['The First AFL–NFL World Championship Game was an American football game played on January 15, 1967, at the Los Angeles Memorial Coliseum in Los Angeles,'], 
+    'contexts' : [['The First AFL–NFL World Championship Game was an American football game played on January 15, 1967, at the Los Angeles Memorial Coliseum in Los Angeles,'],
     ['The Green Bay Packers...Green Bay, Wisconsin.','The Packers compete...Football Conference']],
 }
 dataset = Dataset.from_dict(data_samples)
@@ -1530,6 +1532,7 @@ score.to_pandas()
 Calculation
 
 To calculate the relevance of the answer to the given question, we follow two steps:
+
 ```
 
 <div class="content-ad"></div>
@@ -1553,14 +1556,14 @@ To calculate the relevance of the answer to the given question, we follow two st
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_46.png)
 
 ```js
-from datasets import Dataset 
+from datasets import Dataset
 from ragas.metrics import context_precision
 from ragas import evaluate
 
 data_samples = {
     'question': ['첫 번째 슈퍼볼은 언제였나요?', '가장 많은 슈퍼볼을 이긴 팀은 누구입니까?'],
     'answer': ['첫 번째 슈퍼볼은 1967년 1월 15일에 개최되었습니다', '가장 많은 슈퍼볼을 이긴 팀은 뉴잉글랜드 패트리어츠입니다'],
-    'contexts' : [['첫 번째 AFL-NFL 월드 챔피언십 경기는 1967년 1월 15일에 미국 로스앤젤레스에 위치한 로스앤젤레스 기념 콜리시움에서 열린 미식 축구 경기입니다.'], 
+    'contexts' : [['첫 번째 AFL-NFL 월드 챔피언십 경기는 1967년 1월 15일에 미국 로스앤젤레스에 위치한 로스앤젤레스 기념 콜리시움에서 열린 미식 축구 경기입니다.'],
     ['그린 베이 패커스...위스콘신 그린 베이.','패커스는...풋볼 컨퍼런스에 참가합니다']],
     'ground_truth': ['첫 번째 슈퍼볼은 1967년 1월 15일에 개최되었습니다', '뉴잉글랜드 패트리어츠는 슈퍼볼을 최다 기록인 여섯 번 이겼습니다']
 }
@@ -1595,9 +1598,9 @@ score.to_pandas()
 
 이상적으로 검색된 문맥은 제공된 질문에 대한 답변을 주는 데 필수적인 정보만 포함해야 합니다. 이를 계산하기 위해, 검색된 문맥 내에서 주어진 질문에 관련된 문장을 식별하여 |�|의 값을 처음에 추정합니다. 최종 점수는 다음 공식에 따라 결정됩니다:
 
-```markdown
+
 ![수식](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_49.png)
-```
+
 
 ```python
 from ragas.metrics import ContextRelevancy
@@ -1627,14 +1630,14 @@ results = context_relevancy.score(dataset)
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_50.png" />
 
 ```js
-from datasets import Dataset 
+from datasets import Dataset
 from ragas.metrics import context_recall
 from ragas import evaluate
 
 data_samples = {
     'question': ['When was the first super bowl?', 'Who won the most super bowls?'],
     'answer': ['The first superbowl was held on Jan 15, 1967', 'The most super bowls have been won by The New England Patriots'],
-    'contexts' : [['The First AFL–NFL World Championship Game was an American football game played on January 15, 1967, at the Los Angeles Memorial Coliseum in Los Angeles,'], 
+    'contexts' : [['The First AFL–NFL World Championship Game was an American football game played on January 15, 1967, at the Los Angeles Memorial Coliseum in Los Angeles,'],
     ['The Green Bay Packers...Green Bay, Wisconsin.','The Packers compete...Football Conference']],
     'ground_truth': ['The first superbowl was held on January 15, 1967', 'The New England Patriots have won the Super Bowl a record six times']
 }

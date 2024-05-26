@@ -3,13 +3,12 @@ title: "분산 애플리케이션에서 캐싱 마스터하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-MasteringCachinginDistributedApplications_0.png"
 date: 2024-05-23 13:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-MasteringCachinginDistributedApplications_0.png
 tag: Tech
 originalTitle: "Mastering Caching in Distributed Applications"
 link: "https://medium.com/@yt-cloudwaydigital/mastering-caching-in-distributed-applications-e7449f4db399"
 ---
-
 
 ![마스터링 분산 애플리케이션의 캐싱](/assets/img/2024-05-23-MasteringCachinginDistributedApplications_0.png)
 
@@ -170,7 +169,7 @@ link: "https://medium.com/@yt-cloudwaydigital/mastering-caching-in-distributed-a
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-MasteringCachinginDistributedApplications_4.png)
 
 ## 장점
@@ -178,7 +177,7 @@ link: "https://medium.com/@yt-cloudwaydigital/mastering-caching-in-distributed-a
 - 구현이 간단합니다.
 - 제어권은 애플리케이션에 완전히 남습니다.
 - 필요할 때만 캐시된 항목을 가져오므로 (게으른 로딩), 최소한의 메모리를 사용합니다. (이론적으로는)
-```
+
 
 <div class="content-ad"></div>
 
@@ -210,7 +209,7 @@ Write-Through 캐싱은 캐시와 기본 영속 데이터 저장소 사이의 �
 
 아래는 코드가 Markdown 형식으로 변경된 것입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-05-23-MasteringCachinginDistributedApplications_5.png)
 
 # 장점
@@ -218,7 +217,7 @@ Write-Through 캐싱은 캐시와 기본 영속 데이터 저장소 사이의 �
 - 캐시와 기본 데이터 저장소 사이의 일관성을 보장합니다.
 
 # 단점
-```
+
 
 <div class="content-ad"></div>
 
@@ -264,7 +263,7 @@ Strong data consistency를 필요로 하고 퇴보된 데이터를 제공할 여
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-23-MasteringCachinginDistributedApplications_7.png)
 
 ## 장점
@@ -273,7 +272,7 @@ Strong data consistency를 필요로 하고 퇴보된 데이터를 제공할 여
 - 흐름을 캐싱 제품이 처리하면 애플리케이션 로직이 덜 복잡해집니다.
 
 ## 단점
-```
+
 
 <div class="content-ad"></div>
 

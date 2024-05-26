@@ -3,7 +3,7 @@ title: "오픈에이아이가 스타트업을 압도할 것 같다고 합니다 
 description: ""
 coverImage: "/assets/img/2024-05-23-OpenAIwillsteamrollstartupswhatshouldwebuildasthemodelsgetbetter_0.png"
 date: 2024-05-23 17:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-OpenAIwillsteamrollstartupswhatshouldwebuildasthemodelsgetbetter_0.png
 tag: Tech
 originalTitle: "OpenAI will “steamroll” startups; what should we build as the models get better?"
@@ -11,7 +11,6 @@ link: "https://medium.com/@ra-mos/openai-will-steamroll-startups-what-to-build-w
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-23-OpenAIwillsteamrollstartupswhatshouldwebuildasthemodelsgetbetter_0.png)
 
 만약 AI 제공 업체가 다른 회사들이 그들의 모델을 사용하여 단순히 특정 앱을 개발하고, 제공 업체가 영역에 절대 뛰어들지 않는 비즈니스 도메인을 발전시키길 원한다면 좋겠죠. 시장 전체에 온통 존재하기보다 더 똑똑한 전략이겠죠? 결국 공통 플랫폼 전략이죠.
@@ -19,7 +18,7 @@ link: "https://medium.com/@ra-mos/openai-will-steamroll-startups-what-to-build-w
 현실적으로, AI 제공 업체는 종합적인 시장 채택을 위해 그들의 길을 질주하며 모든 것을 압도할 것입니다. 기술 플랫폼 및 생태계 발전에는 빠르게 변화되는 패턴이 있습니다; 예를 들어 AWS의 플랫폼 지배력 증가.
 
 하지만 오늘날은 조금 다릅니다. 지능적이고 에이전트 자동화는 이제 비즈니스 및 특정 영역으로 확장되는 복잡한 변수입니다 (인프라 제공 업체로서 하지 않았던 AWS). 즉, 대형 업체들이 모든 것을 일반적으로 해결하기 위해 다른 것을 만들 때 어떻게 무언가를 만들 것인가요? 결국 일반 에이전트는 그런 목적으로 의도된 것이죠.
-```
+
 
 <div class="content-ad"></div>
 

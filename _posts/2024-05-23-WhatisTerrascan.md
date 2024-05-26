@@ -198,7 +198,7 @@ nginx.yaml 파일이 있는 폴더로 이동하여 terrascan scan을 실행해�
 Terrascan에서 여러 권장 사항을 보게 될 것인데, 그 중에는 2개의 HIGH 우선 순위 이슈('Minimize Admission of Root Containers' 및 'Containers Should Not Run with AllowPrivilegeEscalation')도 포함되어 있습니다.
 
 <img src="/assets/img/2024-05-23-WhatisTerrascan_5.png" />
-```
+
 
 <div class="content-ad"></div>
 

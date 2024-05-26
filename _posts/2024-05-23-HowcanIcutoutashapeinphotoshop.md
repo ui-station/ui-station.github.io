@@ -3,13 +3,12 @@ title: "Photoshop에서 모양을 자르는 방법을 알려드릴게요"
 description: ""
 coverImage: "/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_0.png"
 date: 2024-05-23 16:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_0.png
 tag: Tech
 originalTitle: "How can I cut out a shape in photoshop?"
 link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop-de2ae283952a"
 ---
-
 
 <img src="/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_0.png" />
 
@@ -32,7 +31,7 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![How to draw a shape in Photoshop 1](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_1.png)
 
 3. To draw a shape, use the Shape Tool from the Tools Panel. Press Shift U to select a specific shape.
@@ -40,7 +39,7 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 ![How to draw a shape in Photoshop 2](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_2.png)
 
 4. Drag your cursor to create the shape on your canvas. Holding Shift while dragging can help you create a perfect shape when drawing an ellipse or rectangle. Let's start with a rectangle.
-```
+
 
 <div class="content-ad"></div>
 
@@ -64,7 +63,7 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 
 <div class="content-ad"></div>
 
-```
+
 ![이미지](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_6.png)
 
 9. 레이어 패널에서 두 개의 모양을 선택한 후에 그들을 복제하세요. 복제하려면 맥에서는 Command J, 윈도우에서는 Ctrl J를 누르면 됩니다.
@@ -72,11 +71,11 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 ## 방법 1: 마퀴 도구를 사용하여 포토샵에서 모양 자르기
 
 위의 9단계에서, 레이어 패널에서 복제된 직사각형을 마우스 오른쪽 버튼을 클릭하여 메뉴에서 "레이어 래스터화"을 선택하세요.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_7.png)
 
 When selecting the duplicate Fluer-de-lis form in the Layers Panel, hold down the Ctrl or Command buttons to highlight it.
@@ -84,7 +83,7 @@ When selecting the duplicate Fluer-de-lis form in the Layers Panel, hold down th
 ![Image 2](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_8.png)
 
 Select the rectangle in the Layers Panel and then move the cursor across the canvas.
-```
+
 
 <div class="content-ad"></div>
 

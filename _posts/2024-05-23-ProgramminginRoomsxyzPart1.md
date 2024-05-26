@@ -3,13 +3,12 @@ title: "Roomsxyz에서의 프로그래밍 파트 1"
 description: ""
 coverImage: "/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_0.png"
 date: 2024-05-23 13:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ProgramminginRoomsxyzPart1_0.png
 tag: Tech
 originalTitle: "Programming in Rooms.xyz (Part 1)"
 link: "https://medium.com/@btco_code/programming-in-rooms-xyz-part-1-cb498b2b4301"
 ---
-
 
 Part 1 | Part 2 | Part 3
 
@@ -56,7 +55,7 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 
 그래서 방 안에 있는 각 물체는 물체(Thing)입니다. 위쪽 방에서 볼링공은 물체입니다. 각 핀도 물체이고, 테이블도 물체이며, 쥬크박스도 물체입니다. 이해하시죠. 모든 것이 물체입니다.
 
-(*) 벽과 바닥도 물체입니다만, 누구에게도 말하지 마세요. 왜냐하면 이건 우리 디자인의 이상한 부분이라서 아직 그것이 맞는지 확신하지 못하기 때문이에요.
+(\*) 벽과 바닥도 물체입니다만, 누구에게도 말하지 마세요. 왜냐하면 이건 우리 디자인의 이상한 부분이라서 아직 그것이 맞는지 확신하지 못하기 때문이에요.
 
 # 물체를 그렇게 행동하게 만드는 것은 무엇인가요?
 
@@ -74,7 +73,7 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![ProgramminginRoomsxyzPart1_3](/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_3.png)
 
 우리가 코드가 없기 때문에 처음부터 시작할 필요가 없다는 메시지가 나옵니다. 간단한 템플릿을 선택하여 시작하는 것이 좋습니다. Hello 템플릿을 선택해주세요. 이 템플릿을 사용하면 좋습니다. 왜냐하면 더 복잡한 것들을 탐험할 때 직접 모든 것을 배울 수 있다는 것을 깨닫고 이 기사를 읽는 것을 중단할 수도 있기 때문입니다.
@@ -82,7 +81,7 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 또한 모든 API 함수에 대한 완전한 문서가 있으므로 이 자습서를 읽은 후 (또는 중간 중간에) API가 수행할 수 있는 모든 것을 알아볼 수 있습니다.
 
 # 코딩에 들어가기 전에...
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +95,7 @@ Rooms.xyz에서 작업을 저장하려면 회원 계정을 만들어야 합니�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Programming in Roomsxyz Part1_4](/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_4.png)
 
 Now run it, either in the preview window (click Update Preview), or get out of the code editor and enter Preview mode.
@@ -104,7 +103,7 @@ Now run it, either in the preview window (click Update Preview), or get out of t
 This thing at the top is how you switch from Edit to Preview (that is, Play) mode. You probably already figured this out, but just in case, it's here:
 
 ![Programming in Roomsxyz Part1_5](/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -179,13 +178,14 @@ end
 
 <div class="content-ad"></div>
 
-```markdown
+
 나는 onStart() 안에 있다면 더 깔끔하다고 생각해요. 개인 취향입니다.
 
 # 물리학에 대한 이야기
 
 코드를 따라하며 작업하는 경우, 작업 중인 객체가 물리 유형으로 Kinematic으로 설정되어 있는지 확인하세요. 나중에 더 설명하겠지만, Kinematic 객체는 원하는대로 동작합니다. 동적(비 키네마틱) 객체는 자기 맘대로 동작합니다. 우리는 현재 주인공이니까 그것을 키네마틱으로 설정해서 우리가 움직일 수 있게 해야 해요.
-```
+
+
 # 물리학에 대한 이야기
 
 코드를 따라하며 작업하는 경우, 작업 중인 객체가 물리 유형으로 Kinematic으로 설정되어 있는지 확인하세요. 나중에 더 설명하겠지만, Kinematic 객체는 원하는대로 동작합니다. 동적(비 키네마틱) 객체는 자기 맘대로 동작합니다. 우리는 현재 주인공이니까 그것을 키네마틱으로 설정해서 우리가 움직일 수 있게 해야 해요.
@@ -207,7 +207,7 @@ end
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*z8Qu3AWjVrfDKmP1mCaRfw.gif)
 
 [여기](https://rooms.xyz/btco/tutospin)에서 결과물을 확인해보세요.
@@ -215,7 +215,7 @@ end
 # 즉시 이동하기 (애니메이션 없이)
 
 만약 물체를 새로운 위치로 이동하고 싶다면, setPosition() 함수를 사용하고 새로운 좌표를 알려주면 됩니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -355,7 +355,7 @@ end
 
 특정 간격마다 주기적으로 함수를 호출하려면 every()를 사용할 수 있습니다.
 
-여기 한 예제가 있어요. 이러한 예제의 효과를 해소하기 위해 커피를 마셔야 합니다.  
+여기 한 예제가 있어요. 이러한 예제의 효과를 해소하기 위해 커피를 마셔야 합니다.
 
 이 예에서 양은 다음과 같은 코드를 가지고 있습니다:
 
@@ -369,13 +369,13 @@ end
 
 function count()
   c = c + 1
-  say(c .. " sheep")  
+  say(c .. " sheep")
 end
-```  
+```
 
 <div class="content-ad"></div>
 
-```markdown
+
 그래서 onStart()에서 우리는 count() 함수가 매 초 호출되기를 원한다고 말합니다. 엔진은 매 초 count() 함수를 호출하여 우리는 카운터를 증가시키고 양이 현재 카운트를 말하도록합니다.
 
 ![이미지](/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_10.png)
@@ -383,7 +383,7 @@ end
 결과 확인: https://rooms.xyz/btco/tutocount
 
 참고: 성능상의 이유로 간격을 0.25초보다 작게 설정할 수 없습니다. 그러나 다른 방법으로 여전히 성능을 저하시킬 수 있으니 포기하지 마세요.
-```
+
 
 <div class="content-ad"></div>
 

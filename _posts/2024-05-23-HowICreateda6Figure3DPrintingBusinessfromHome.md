@@ -3,13 +3,12 @@ title: "집에서 6자리 수익을 올리는 3D 프린팅 비즈니스를 어�
 description: ""
 coverImage: "/assets/img/2024-05-23-HowICreateda6Figure3DPrintingBusinessfromHome_0.png"
 date: 2024-05-23 16:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowICreateda6Figure3DPrintingBusinessfromHome_0.png
 tag: Tech
 originalTitle: "How I Created a 6 Figure 3D Printing Business from Home"
 link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-printing-business-from-home-bd07d2408a13"
 ---
-
 
 당신도 할 수 있다니까요!
 
@@ -159,7 +158,7 @@ Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-05-23-HowICreateda6Figure3DPrintingBusinessfromHome_4.png)
 
 This is definitely a little bit more advanced, but, I mean, the imagination is your limit here.
@@ -167,7 +166,7 @@ This is definitely a little bit more advanced, but, I mean, the imagination is y
 There is no limit to the way you can enhance or make more useful through intuitive design and having access to tools that allow you to rapidly prototype and manifest those ideas into reality.
 
 # Pet Prosthetics
-```
+
 
 <div class="content-ad"></div>
 

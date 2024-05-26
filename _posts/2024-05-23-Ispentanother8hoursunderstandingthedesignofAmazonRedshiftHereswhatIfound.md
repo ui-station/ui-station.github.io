@@ -3,13 +3,12 @@ title: "Amazon Redshift의 디자인을 이해하는 데 다시 8시간을 보�
 description: ""
 coverImage: "/assets/img/2024-05-23-Ispentanother8hoursunderstandingthedesignofAmazonRedshiftHereswhatIfound_0.png"
 date: 2024-05-23 13:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Ispentanother8hoursunderstandingthedesignofAmazonRedshiftHereswhatIfound_0.png
 tag: Tech
 originalTitle: "I spent another 8 hours understanding the design of Amazon Redshift. Here’s what I found."
 link: "https://medium.com/data-engineer-things/i-spent-another-8-hours-understanding-the-design-of-amazon-redshift-heres-what-i-found-85c31a59fd19"
 ---
-
 
 ## 레드시프트 학술 논문으로부터의 모든 통찰: 2022년에 새롭게 태어난 아마존 레드시프트
 
@@ -200,7 +199,7 @@ Redshift는 무한한 확장성을 제공하기 위해 Amazon S3를 활용하며
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-23-Ispentanother8hoursunderstandingthedesignofAmazonRedshiftHereswhatIfound_6.png)
 
 - Low level: This level stores cold data blocks. Every time the query accesses a data block, the system increases the block’s reference count.
@@ -209,7 +208,7 @@ Redshift는 무한한 확장성을 제공하기 위해 Amazon S3를 활용하며
 During eviction, the reference count of each block is decremented. When the reference count reaches zero, the block will be moved down to the low level or entirely evicted from the cache.
 
 (Sounds like Python object’s reference count, huh?)
-```
+
 
 <div class="content-ad"></div>
 
@@ -326,7 +325,7 @@ AutoWLM은 스케줄링에 가중 라운드로빈 메커니즘을 활용하여 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image description](/assets/img/2024-05-23-Ispentanother8hoursunderstandingthedesignofAmazonRedshiftHereswhatIfound_11.png)
 
 SQL 뷰와 Materialize View (MV)은 쿼리 결과를 테이블처럼 나타내는 방법을 제공합니다. View와는 달리, MV는 데이터를 디스크에 물리적으로 유지하므로 MV에서 데이터를 쿼리할 때 실행 시간이 빨라집니다. Redshift는 MV 관리를 다음과 같이 자동화합니다:
@@ -336,7 +335,7 @@ SQL 뷰와 Materialize View (MV)은 쿼리 결과를 테이블처럼 나타내�
 - MV를 통해 쿼리를 자동으로 다시 작성하여 최적의 성능을 달성합니다. 점진적 유지 관리 및 쿼리 다시 작성은 "쿼리 다시 작성 프레임워크" 섹션에서 언급된 프레임워크를 사용합니다.
 
 # 스마트 웜 풀
-```
+
 
 <div class="content-ad"></div>
 

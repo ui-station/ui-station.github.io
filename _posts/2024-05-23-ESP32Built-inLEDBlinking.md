@@ -3,13 +3,12 @@ title: "ESP32 내장 LED 깜빡이기"
 description: ""
 coverImage: "/assets/img/2024-05-23-ESP32Built-inLEDBlinking_0.png"
 date: 2024-05-23 16:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ESP32Built-inLEDBlinking_0.png
 tag: Tech
 originalTitle: "ESP32 Built-in LED Blinking"
 link: "https://medium.com/@adihendro/esp32-built-in-led-blinking-4dd0b50264a"
 ---
-
 
 이것은 ESP32를 사용하는 간단한 프로젝트입니다.
 
@@ -61,13 +60,13 @@ Micro USB to USB cable
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Step 5: Click Verify to compile the project.](/assets/img/2024-05-23-ESP32Built-inLEDBlinking_7.png)
 
 ![Image 1:](/assets/img/2024-05-23-ESP32Built-inLEDBlinking_8.png)
 
 ![Image 2:](/assets/img/2024-05-23-ESP32Built-inLEDBlinking_9.png)
-```
+
 
 <div class="content-ad"></div>
 

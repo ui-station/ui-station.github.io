@@ -111,7 +111,7 @@ user.remove();
 만약 상속 가능한 쓰레드 로컬 변수를 다이어그램 형태로 시각화한다면, 다음과 같이 보일 것입니다. 상속 가능한 쓰레드 로컬 맵이 부모로부터 복제된 것을 볼 수 있습니다.
 
 <img src="/assets/img/2024-05-23-HowdoJavaThreadLocalswork_2.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -146,7 +146,7 @@ public static final InheritableThreadLocal<User> user
 다시 말하지만, 다이어그램 형식으로 상속 가능한 스레드 로컬을 시각화하면, 이와 같이 보일 것입니다. 이제 부모와 자식 스레드의 사용자가 서로 다른 User 객체를 가리키는 것을 명확히 알 수 있습니다.
 
 ![Java Thread Locals 동작 방식](/assets/img/2024-05-23-HowdoJavaThreadLocalswork_3.png)
-```
+
 
 <div class="content-ad"></div>
 
