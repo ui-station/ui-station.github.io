@@ -116,7 +116,7 @@ ArgoCD의 선언적 구성을 사용하면 재배포 가능성이 권장됩니�
 ├── argo-config.yaml
 ├── argo-projects.yaml
 └── argo-repositories.yaml
-````
+```
 
 각 파일의 합리적인 근거와 이 구조를 권장하는 이유를 명확히 하기 위해 각 파일의 내용을 살펴보겠습니다:
 

@@ -79,7 +79,7 @@ let environment = [
   "PATH": "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 ]
 process.environment = environment
-````
+```
 
 터미널에서 env를 실행하여 시스템 환경 변수를 실행 중에 확인할 수 있습니다.
 
@@ -174,7 +174,7 @@ print(response)
 // ... let process = Process()
 process.unbind(.isIndeterminate)
 // ... process.run()
-````
+```
 
 이렇게 하면 프로세스가 독립적으로 계속 실행되지만, 앱에서 출력을 캡처하는 것이 더 어려워집니다.
 

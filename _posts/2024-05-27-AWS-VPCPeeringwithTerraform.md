@@ -3,7 +3,7 @@ title: "테라폼으로 AWS-VPC 피어링하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-AWS-VPCPeeringwithTerraform_0.png"
 date: 2024-05-27 17:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AWS-VPCPeeringwithTerraform_0.png
 tag: Tech
 originalTitle: "AWS-VPC Peering with Terraform"
@@ -11,7 +11,6 @@ link: "https://medium.com/@nik2701k/aws-vpc-peering-with-terraform-3010eccfb8fe"
 ---
 
 
-```markdown
 ![AWS VPC Peering with Terraform](/assets/img/2024-05-27-AWS-VPCPeeringwithTerraform_0.png)
 
 AWS에서 VPC는 무엇인가요?
@@ -19,7 +18,7 @@ AWS에서 VPC는 무엇인가요?
 AWS에서 VPC 피어링이란 무엇인가요?
 
 Terraform은 무엇인가요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -38,7 +37,7 @@ AWS에서 생성된 자원 목록
 
 <div class="content-ad"></div>
 
-```markdown
+
 terraform_project/
 │
 ├── module/
@@ -58,7 +57,7 @@ terraform_project/
     ├── dev-env.tfvars
     ├── stage-env.tfvars
     └── prod-env.tfvars
-```
+
 
 ## 단계 1: VPC를 위한 모듈 생성 및 가져오기
 
@@ -354,10 +353,10 @@ resource "aws_network_interface_sg_attachment" "icmp_sg_attachment" {
 
 <div class="content-ad"></div>
 
-```markdown
+
 module "ec2_vpcA" {
   source        = "./modules/ec2"
-  subnet_id     = module.subnetsForvpc_A["subnet1"].subnet_id  
+  subnet_id     = module.subnetsForvpc_A["subnet1"].subnet_id
   ami_id        = var.ec2s["ec2_vpcA"]["ami_id"]
   instance_type = var.ec2s["ec2_vpcA"]["instance_type"]
   ec2_name      = var.ec2s["ec2_vpcA"]["ec2_name"]
@@ -381,13 +380,13 @@ module "ec2_vpcB" {
     aws = aws.us_west
   }
 }
-```
+
 
 ## Step 5: Create modules for Internet Gateways and importing them
 
 modules/internet-gateways/main.tf
 
-```markdown
+
 terraform {
   required_providers {
     aws = {
@@ -411,7 +410,7 @@ resource "aws_internet_gateway" "i_gw" {
     created_by = var.owner_name
   }
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -501,7 +500,8 @@ module "igw_vpcB" {
 ```
 
 모듈 — VPC 피어링 구성 (modules/vpc-peering-configure/main.tf)
-```
+
+
 
 <div class="content-ad"></div>
 

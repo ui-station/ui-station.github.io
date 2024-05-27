@@ -3,13 +3,12 @@ title: "GitOps와 Kubernetes, Terraform, Gitlab 그리고 FluxCD"
 description: ""
 coverImage: "/assets/img/2024-05-27-GitOpswithKubernetesTerraformGitlabandFluxCD_0.png"
 date: 2024-05-27 17:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-GitOpswithKubernetesTerraformGitlabandFluxCD_0.png
 tag: Tech
 originalTitle: "GitOps with Kubernetes, Terraform, Gitlab and FluxCD"
 link: "https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-and-fluxcd-2875d1010dac"
 ---
-
 
 <img src="/assets/img/2024-05-27-GitOpswithKubernetesTerraformGitlabandFluxCD_0.png" />
 
@@ -61,7 +60,7 @@ Terraform을 사용하면 선언적 구성 언어를 사용하여 가상 머신,
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 1) AWS 계정
 2) Gitlab 클라우드 계정 / 자체 호스팅된 Gitlab
@@ -76,7 +75,7 @@ ECR Repository 생성
 
 <div class="content-ad"></div>
 
-```markdown
+
 AWS ECR 레지스트리에 로그인합니다.
 
 ```bash
@@ -84,6 +83,7 @@ aws ecr get-login-password | docker login --username AWS --password-stdin <aws_a
 ```
 
 Docker Hub에서 Nginx 이미지를 가져옵니다.
+
 ```
 
 <div class="content-ad"></div>
@@ -99,7 +99,8 @@ Docker Hub에서 Nginx 이미지를 가져옵니다.
 ```
 
 이미지를 ECR 저장소에 푸시하기
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -129,12 +130,12 @@ PAT 토큰 생성
 - gitlab의 클라우드 인스턴스에서 새 프로젝트 버튼을 클릭합니다.
 - 빈 프로젝트 생성을 클릭합니다.
 - 프로젝트 이름을 제공합니다 (나중에 사용할 이름을 메모해 둡니다).
-- 프로젝트 URL 옆의 드롭 다운에서 그룹 이름을 선택하고, 
+- 프로젝트 URL 옆의 드롭 다운에서 그룹 이름을 선택하고,
    이 그룹 이름을 나중에 사용할 것이니 메모해 둡니다.
 - 프로젝트를 위한 이름을 제공합니다.
 - 가시성을 선택합니다.
 - 프로젝트를 저장합니다.
-- 코드 버튼을 클릭하고, https용 github URL을 복사하여 
+- 코드 버튼을 클릭하고, https용 github URL을 복사하여
   나중에 필요할 때를 대비하여 URL을 메모해 둡니다.
 ```
 
@@ -165,7 +166,7 @@ export GITLAB_TOKEN=<Gitlab 설정에서 저장한 토큰>
 Windows
 
 ```js
-$env:GITLAB_TOKEN = "<Gitlab 설정에서 저장한 토큰>"
+$env: GITLAB_TOKEN = "<Gitlab 설정에서 저장한 토큰>";
 ```
 
 # 안내:
@@ -244,46 +245,46 @@ aws_region으로는 리소스를 배포할 지역을 선택하십시오.
 버전.tf
 
 ```js
-required_providers {  
-    flux = {  
-      source  = "fluxcd/flux"  
-      version = ">= 1.0.0"  
-    }  
-    gitlab = {  
-      source  = "gitlabhq/gitlab"  
-      version = ">=15.10.0"  
-    }  
-    aws = {  
-      source  = "hashicorp/aws"  
-      version = ">= 5.0"  
-    }  
-    kubernetes = {  
-      source  = "hashicorp/kubernetes"  
-      version = ">= 2.16.1"  
-    }  
-  }  
-}  
-provider "gitlab" {  
-  base_url = "https://gitlab.com/api/v4/"  
+required_providers {
+    flux = {
+      source  = "fluxcd/flux"
+      version = ">= 1.0.0"
+    }
+    gitlab = {
+      source  = "gitlabhq/gitlab"
+      version = ">=15.10.0"
+    }
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.0"
+    }
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = ">= 2.16.1"
+    }
+  }
 }
-provider "flux" {  
-  kubernetes = {  
-    host                   = module.eks.endpoint  
-    cluster_ca_certificate = base64decode(module.eks.cluster_ca_certificate)  
-    exec = {  
-      api_version = "client.authentication.k8s.io/v1beta1"  
-      args        = ["eks", "get-token", "--cluster-name", var.cluster_name]  
-      command     = "aws"  
-    }  
-  }  
-  git = {  
-    url = "ssh://git@gitlab.com/${data.gitlab_project.this.path_with_namespace}.git"  
-    ssh = {  
-      username    = "git"  
-      private_key = tls_private_key.flux.private_key_pem  
-    }  
-    branch = "main"  
-  }  
+provider "gitlab" {
+  base_url = "https://gitlab.com/api/v4/"
+}
+provider "flux" {
+  kubernetes = {
+    host                   = module.eks.endpoint
+    cluster_ca_certificate = base64decode(module.eks.cluster_ca_certificate)
+    exec = {
+      api_version = "client.authentication.k8s.io/v1beta1"
+      args        = ["eks", "get-token", "--cluster-name", var.cluster_name]
+      command     = "aws"
+    }
+  }
+  git = {
+    url = "ssh://git@gitlab.com/${data.gitlab_project.this.path_with_namespace}.git"
+    ssh = {
+      username    = "git"
+      private_key = tls_private_key.flux.private_key_pem
+    }
+    branch = "main"
+  }
 }
 ```
 
@@ -298,23 +299,23 @@ VPC 구성
 main.tf
 
 ```js
-module "vpc" {  
-  source = "terraform-aws-modules/vpc/aws"  
-  name = "flux-vpc"  
-  cidr = "10.0.0.0/16"  
-  azs = ["<aws-region>a", "<aws-region>b", "<aws-region>c"]  
-  private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24", "10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]  
-  public_subnets = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]  
-  enable_nat_gateway = true  
-  enable_vpn_gateway = false  
-  single_nat_gateway = true  
-  public_subnet_tags = {  
-    "kubernetes.io/role/elb" = "1"  
-  }  
-  tags = {  
-    Terraform = "true"  
-    Environment = "dev"  
-  }  
+module "vpc" {
+  source = "terraform-aws-modules/vpc/aws"
+  name = "flux-vpc"
+  cidr = "10.0.0.0/16"
+  azs = ["<aws-region>a", "<aws-region>b", "<aws-region>c"]
+  private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24", "10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
+  public_subnets = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+  enable_nat_gateway = true
+  enable_vpn_gateway = false
+  single_nat_gateway = true
+  public_subnet_tags = {
+    "kubernetes.io/role/elb" = "1"
+  }
+  tags = {
+    Terraform = "true"
+    Environment = "dev"
+  }
 }
 ```
 
@@ -333,81 +334,81 @@ main.tf
 
 ```md
 모듈 "eks" {
-  source = "terraform-aws-modules/eks/aws"
-  version = "~> 20.0"
-  cluster_name = "flux-cluster"
-  cluster_version = "1.29"
-  cluster_endpoint_private_access = true
-  cluster_endpoint_public_access = true
-  cloudwatch_log_group_retention_in_days = 7
-  cloudwatch_log_group_class = "INFREQUENT_ACCESS"
-  cluster_enabled_log_types = ["api"]
-  vpc_id = module.vpc.vpc_id
-  subnet_ids = module.vpc.private_subnets
-  cluster_addons = {
-    coredns = {
-      most_recent = true
-    }
-    kube-proxy = {
-      most_recent = true
-    }
-    aws-ebs-csi-driver = {
-      most_recent = true
-    }
-    eks-pod-identity-agent = {
-      most_recent = true
-    }
-    vpc-cni = {
-      most_recent = true
-    }
-  }
-  eks_managed_node_group_defaults = {
-    ami_type = "AL2_x86_64"
-    disk_size = 50
-    instance_types = ["t3.large"]
-    capacity_type = "SPOT"
-    update_config = {
-      max_unavailable_percentage = 100
-    }
-  }
-  eks_managed_node_groups = {
-    ps-cluster-sample = {
-      min_size = 1
-      desired_size = 1
-      max_size = 4
-      instance_types = ["t3.large"]
-      capacity_type = "SPOT"
-    }
-  }
-  enable_cluster_creator_admin_permissions = false
-  access_entries = {
-    admin_sso = {
-      kubernetes_groups = []
-      principal_arn = "<arn of the role or the user to which you want to grant admin privileges>"
-      policy_associations = {
-        ClusterAdmin = {
-          policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
-          access_scope = {
-            type = "cluster"
-          }
-        }
-        EKSAdmin = {
-          policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSAdminPolicy"
-          access_scope = {
-            type = "cluster"
-          }
-        }
-      }
-    }
-  }
+source = "terraform-aws-modules/eks/aws"
+version = "~> 20.0"
+cluster_name = "flux-cluster"
+cluster_version = "1.29"
+cluster_endpoint_private_access = true
+cluster_endpoint_public_access = true
+cloudwatch_log_group_retention_in_days = 7
+cloudwatch_log_group_class = "INFREQUENT_ACCESS"
+cluster_enabled_log_types = ["api"]
+vpc_id = module.vpc.vpc_id
+subnet_ids = module.vpc.private_subnets
+cluster_addons = {
+coredns = {
+most_recent = true
+}
+kube-proxy = {
+most_recent = true
+}
+aws-ebs-csi-driver = {
+most_recent = true
+}
+eks-pod-identity-agent = {
+most_recent = true
+}
+vpc-cni = {
+most_recent = true
+}
+}
+eks_managed_node_group_defaults = {
+ami_type = "AL2_x86_64"
+disk_size = 50
+instance_types = ["t3.large"]
+capacity_type = "SPOT"
+update_config = {
+max_unavailable_percentage = 100
+}
+}
+eks_managed_node_groups = {
+ps-cluster-sample = {
+min_size = 1
+desired_size = 1
+max_size = 4
+instance_types = ["t3.large"]
+capacity_type = "SPOT"
+}
+}
+enable_cluster_creator_admin_permissions = false
+access_entries = {
+admin_sso = {
+kubernetes_groups = []
+principal_arn = "<arn of the role or the user to which you want to grant admin privileges>"
+policy_associations = {
+ClusterAdmin = {
+policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSClusterAdminPolicy"
+access_scope = {
+type = "cluster"
+}
+}
+EKSAdmin = {
+policy_arn = "arn:aws:eks::aws:cluster-access-policy/AmazonEKSAdminPolicy"
+access_scope = {
+type = "cluster"
+}
+}
+}
+}
+}
 }
 resource "null_resource" "update_kubeconfig" {
-  triggers = {
-    eks_cluster_id = module.eks.cluster_id
-  }
-  provisioner "local-exec" {
-    command = "aws eks update-kubeconfig --name ${module.eks.cluster_name} --region ${var.aws_region}"
-  }
+triggers = {
+eks_cluster_id = module.eks.cluster_id
+}
+provisioner "local-exec" {
+command = "aws eks update-kubeconfig --name ${module.eks.cluster_name} --region ${var.aws_region}"
+}
 }
 ```
 
@@ -458,7 +459,7 @@ flux가 이 작업을 수행하려면 복제 데모 리포지토리의 config_fi
 
 <div class="content-ad"></div>
 
-```markdown
+
 ├── config_files
 │   ├── app-nginx.yml
 │   ├── ecr-sync.yml
@@ -466,7 +467,7 @@ flux가 이 작업을 수행하려면 복제 데모 리포지토리의 config_fi
 ├── main.tf
 ├── variables.tf
 └── versions.tf
-```
+
 
 이제 이 파일들 각각을 살펴보고 그 내용을 살펴보겠습니다. 우선 app-nginx.yaml 파일부터 시작해봅시다.
 
@@ -474,91 +475,92 @@ app-nginx.yaml
 
 ```yaml
 ---
-apiVersion: v1  
-kind: Secret  
-metadata:  
-  name: nginx-auth-pat  
-  namespace: flux-system  
-type: Opaque  
-data:  
-  password: < gitlab 토큰을 base64로 인코딩 된 문자열 > 
-  username: < 사용자 이름을 base64로 인코딩 된 문자열 >  
+apiVersion: v1
+kind: Secret
+metadata:
+  name: nginx-auth-pat
+  namespace: flux-system
+type: Opaque
+data:
+  password: < gitlab 토큰을 base64로 인코딩 된 문자열 >
+  username: < 사용자 이름을 base64로 인코딩 된 문자열 >
 ---
-apiVersion: source.toolkit.fluxcd.io/v1  
-kind: GitRepository  
-metadata:  
-  name: nginx  
-  namespace: flux-system  
-spec:  
-  interval: 1m0s  
-  ref:  
-    branch: main  
-  url: <gitlab_repo_url> 
-  secretRef:  
-    name: nginx-auth-pat  
----  
-apiVersion: kustomize.toolkit.fluxcd.io/v1  
-kind: Kustomization  
-metadata:  
-  name: nginx  
-  namespace: flux-system  
-spec:  
-  prune: true  
-  interval: 1m0s  
-  path: "./app/nginx/environments/production"  
-  sourceRef:  
-    kind: GitRepository  
-    name: nginx  
----  
-apiVersion: image.toolkit.fluxcd.io/v1beta2  
-kind: ImageRepository  
-metadata:  
-  name: nginx  
-  namespace: flux-system  
-spec:  
-  image: <aws-account-id>.dkr.ecr.<region>.amazonaws.com/<image name>  
-  interval: 1m0s  
-  secretRef:  
-    name: ecr-credentials  
----  
-apiVersion: image.toolkit.fluxcd.io/v1beta2  
-kind: ImagePolicy  
-metadata:  
-  name: nginx  
-  namespace: flux-system  
-spec:  
-  imageRepositoryRef:  
-    name: nginx  
-  policy:  
-    semver:  
-      range: 0.0.x  
----  
-apiVersion: image.toolkit.fluxcd.io/v1beta1  
-kind: ImageUpdateAutomation  
-metadata:  
-  name: nginx  
-  namespace: flux-system  
-spec:  
-  interval: 1m0s  
-  sourceRef:  
-    kind: GitRepository  
-    name: nginx  
-  git:  
-    checkout:  
-      ref:  
-        branch: main  
-    commit:  
-      author:  
-        email: flux@example.com  
-        name: flux  
-      messageTemplate: "{range .Updated.Images}{println .}{end}"  
-    push:  
-      branch: main  
-  update:  
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: nginx
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  url: <gitlab_repo_url>
+  secretRef:
+    name: nginx-auth-pat
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: nginx
+  namespace: flux-system
+spec:
+  prune: true
+  interval: 1m0s
+  path: "./app/nginx/environments/production"
+  sourceRef:
+    kind: GitRepository
+    name: nginx
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: nginx
+  namespace: flux-system
+spec:
+  image: <aws-account-id>.dkr.ecr.<region>.amazonaws.com/<image name>
+  interval: 1m0s
+  secretRef:
+    name: ecr-credentials
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: nginx
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: nginx
+  policy:
+    semver:
+      range: 0.0.x
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+metadata:
+  name: nginx
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  sourceRef:
+    kind: GitRepository
+    name: nginx
+  git:
+    checkout:
+      ref:
+        branch: main
+    commit:
+      author:
+        email: flux@example.com
+        name: flux
+      messageTemplate: "{range .Updated.Images}{println .}{end}"
+    push:
+      branch: main
+  update:
     path: ./clusters/flux-cluster/nginx.yml
     strategy: Setters
-``` 
 ```
+
+
 
 <div class="content-ad"></div>
 
@@ -679,16 +681,16 @@ spec:
 <div class="content-ad"></div>
 
 ```yaml
-apiVersion: apps/v1  
-kind: Deployment  
-metadata:  
-  name: nginx-deployment  
-spec:  
-  replicas: 1  
-  template:  
-    spec:  
-      containers:  
-        - name: nginx  
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: nginx
           image: <aws-account-id>.dkr.ecr.<aws-region>.amazonaws.com/nginx:0.0.0 # {"$imagepolicy": "flux-system:nginx"}
 ```
 
@@ -701,18 +703,18 @@ spec:
 <div class="content-ad"></div>
 
 ```hcl
-locals {  
-  yaml_files = fileset("${path.module}/config_files", "*.yml")  
-  yaml_content = { for file in local.yaml_files : file => file("${path.module}/config_files/${file}") }  
-}  
-resource "gitlab_repository_file" "yaml_files" {  
-  depends_on = [flux_bootstrap_git.this, null_resource.update_kubeconfig]  
-  for_each = local.yaml_content  
-  project = data.gitlab_project.this.id // Use the project ID of an existing project or gitlab_project.example_project.id if you created a new project  
-  file_path = "clusters/${module.eks.cluster_name}/${each.key}"  
-  content   = base64encode(each.value)  
-  commit_message = "added flux image configs"  
-  branch    = "main"  
+locals {
+  yaml_files = fileset("${path.module}/config_files", "*.yml")
+  yaml_content = { for file in local.yaml_files : file => file("${path.module}/config_files/${file}") }
+}
+resource "gitlab_repository_file" "yaml_files" {
+  depends_on = [flux_bootstrap_git.this, null_resource.update_kubeconfig]
+  for_each = local.yaml_content
+  project = data.gitlab_project.this.id // Use the project ID of an existing project or gitlab_project.example_project.id if you created a new project
+  file_path = "clusters/${module.eks.cluster_name}/${each.key}"
+  content   = base64encode(each.value)
+  commit_message = "added flux image configs"
+  branch    = "main"
 }
 ```
 
@@ -812,7 +814,6 @@ NAME                            LAST RUN                        SUSPENDED       
 imageupdateautomation/nginx     2024-05-23T16:55:39+05:30       False           True    레포지토리가 최신 상태입니다
 ```
 
-
 <div class="content-ad"></div>
 
 위의 출력에서 볼 수 있듯이, 이미지 정책은 ECR에서 최신 이미지 태그를 스캔하고 가져왔습니다.
@@ -865,15 +866,15 @@ docker tag nginx:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/nginx-re
 
 <div class="content-ad"></div>
 
-```plaintext
 아래는 표시되는 출력 값 입니다:
 
-```plaintext
+```bash
 <aws-account-id>.dkr.ecr.<aws-region>.amazonaws.com/nginx:0.0.2
 ```
 
 # 결론
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -882,3 +883,4 @@ docker tag nginx:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/nginx-re
 # 참고 자료:
 
 Flux 문서: [https://fluxcd.io/flux/](https://fluxcd.io/flux/)
+

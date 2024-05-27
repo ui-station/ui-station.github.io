@@ -3,7 +3,7 @@ title: "자바의 29번째 생일을 축하합니다"
 description: ""
 coverImage: "/assets/img/2024-05-27-Happy29thBirthdayJava_0.png"
 date: 2024-05-27 16:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Happy29thBirthdayJava_0.png
 tag: Tech
 originalTitle: "Happy 29th Birthday Java!"
@@ -11,7 +11,6 @@ link: "https://medium.com/code-like-a-girl/happy-29th-birthday-java-1b32c8b170a0
 ---
 
 
-```markdown
 ![Happy 29th Birthday Java](/assets/img/2024-05-27-Happy29thBirthdayJava_0.png)
 
 1991년, 제임스 고슬링, 마이크 셰리던, 패트릭 나이튼은 썬 마이크로시스템즈에서 그린 프로젝트를 시작했습니다. 디지털 장치용 언어를 개발하기 위해 세트톱 박스와 텔레비전을 대상으로했습니다. 팀은 처음에 고슬링 사무실 바깥의 참나무에 명칭이 붙은 'Oak'이라는 언어에 대해 작업했습니다. 그러나 이후 인도네시아의 커피 종류를 따라 이름이 Java로 변경되었습니다. 이는 팀이 커피를 사랑하기 때문입니다.
@@ -19,11 +18,11 @@ link: "https://medium.com/code-like-a-girl/happy-29th-birthday-java-1b32c8b170a0
 # 타임라인
 
 ![Timeline](/assets/img/2024-05-27-Happy29thBirthdayJava_1.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Happy 29th Birthday Java Image](/assets/img/2024-05-27-Happy29thBirthdayJava_2.png)
 
 # Java이란 무엇이며, 어디에 사용되나요?
@@ -31,7 +30,7 @@ link: "https://medium.com/code-like-a-girl/happy-29th-birthday-java-1b32c8b170a0
 전 세계의 기업들은 고객에 제공하는 응용 프로그램과 웹사이트를 개발하기 위해 Java를 활용합니다.
 
 자주 사용되는 용도로는
-```
+
 
 <div class="content-ad"></div>
 
@@ -52,14 +51,14 @@ class Car {
     String brand;
     String model;
     int year;
-    
+
     // 생성자
     public Car(String brand, String model, int year) {
         this.brand = brand;
         this.model = model;
         this.year = year;
     }
-    
+
     // 데모 목적으로 차량 정보 표시하는 메서드
     public void displayInfo() {
         System.out.println("브랜드: " + brand);
@@ -73,7 +72,7 @@ public class Main {
     public static void main(String[] args) {
         // 'myCar'라는 Car 클래스의 인스턴스 생성
         Car myCar = new Car("Toyota", "Camry", 2020);
-        
+
         // 차량 정보를 출력하기 위해 displayInfo() 메서드 호출
         myCar.displayInfo();
     }
@@ -89,7 +88,7 @@ public class Main {
 
 ```java
 public class MultithreadingExample extends Thread {
-    
+
     @Override
     public void run() {
         // 쓰레드가 실행할 작업
@@ -103,12 +102,12 @@ public class MultithreadingExample extends Thread {
             }
         }
     }
-    
+
     public static void main(String[] args) {
         // 다중 쓰레드 생성
         MultithreadingExample thread1 = new MultithreadingExample();
         MultithreadingExample thread2 = new MultithreadingExample();
-        
+
         // 쓰레드 시작
         thread1.start();
         thread2.start();

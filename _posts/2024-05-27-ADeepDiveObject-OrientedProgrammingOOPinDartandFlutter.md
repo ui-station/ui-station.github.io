@@ -3,13 +3,12 @@ title: "다트와 플러터에서 객체지향 프로그래밍OOP 심층 탐구"
 description: ""
 coverImage: "/assets/img/2024-05-27-ADeepDiveObject-OrientedProgrammingOOPinDartandFlutter_0.png"
 date: 2024-05-27 16:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ADeepDiveObject-OrientedProgrammingOOPinDartandFlutter_0.png
 tag: Tech
 originalTitle: "A Deep Dive Object-Oriented Programming (OOP) in Dart and Flutter"
 link: "https://medium.com/@shahzebnaqvi/a-deep-dive-object-oriented-programming-oop-in-dart-and-flutter-70e2ef6fd2ac"
 ---
-
 
 객체지향 프로그래밍(OOP)은 소프트웨어 디자인을 객체와 그 상호작용을 중심으로 구성하는 패러다임입니다. 플러터 뒤에 있는 언어인 Dart는 OOP 원칙을 완벽히 지원하여 견고하고 확장 가능한 애플리케이션을 구축하는 데 탁월한 선택지입니다. 이 포괄적인 가이드에서는 Dart와 Flutter의 맥락에서 캡슐화, 상속, 다형성, 추상화와 같은 OOP의 네 가지 기둥을 자세히 살펴보며 메서드 오버라이딩과 오버로딩과 같은 개념도 살펴볼 것입니다.
 
@@ -21,7 +20,7 @@ link: "https://medium.com/@shahzebnaqvi/a-deep-dive-object-oriented-programming-
 
 <div class="content-ad"></div>
 
-Dart에서 캡슐화는 public, private 및 protected와 같은 접근 한정자를 통해 달성됩니다. 기본적으로 멤버는 public이지만 밑줄(_)을 사용하여 private로 표시할 수도 있습니다.
+Dart에서 캡슐화는 public, private 및 protected와 같은 접근 한정자를 통해 달성됩니다. 기본적으로 멤버는 public이지만 밑줄(\_)을 사용하여 private로 표시할 수도 있습니다.
 
 예제:
 
@@ -323,7 +322,8 @@ void main() {
 # 캡슐화 이해하기
 
 캡슐화는 객체 지향 프로그래밍의 핵심 원칙 중 하나로, 데이터(변수) 및 해당 데이터를 조작하는 메서드(함수)를 하나로 묶은 클래스라는 단위로 묶는 것을 목표로 합니다. 이 접근 방식은 개체의 일부 구성 요소에 대한 직접적인 액세스를 제한하여 의도하지 않은 간섭 및 남용을 방지하는 데 필수적입니다. Dart 및 Flutter에서 캡슐화는 멤버 변수 캡슐화, 함수 캡슐화 및 클래스 캡슐화의 세 가지 주요 방법으로 달성됩니다. 각 유형을 구체적인 예를 통해 자세히 살펴보겠습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -360,7 +360,7 @@ void main() {
 
 <div class="content-ad"></div>
 
-이 예제에서 _name 변수는 private이며 getter 및 setter 메서드를 통해서만 액세스하거나 수정할 수 있습니다. 이 캡슐화는 _name에 대한 모든 수정이 확인되도록 보장합니다.
+이 예제에서 \_name 변수는 private이며 getter 및 setter 메서드를 통해서만 액세스하거나 수정할 수 있습니다. 이 캡슐화는 \_name에 대한 모든 수정이 확인되도록 보장합니다.
 
 ## 2. 함수 캡슐화
 
@@ -389,11 +389,11 @@ void main() {
 }
 ```
 
-여기서 _performAddition 메서드는 private이며 Calculator 클래스 내에서만 접근할 수 있습니다. public add 메서드는 기능을 노출하면서 내부 작업은 숨겨둡니다.
+여기서 \_performAddition 메서드는 private이며 Calculator 클래스 내에서만 접근할 수 있습니다. public add 메서드는 기능을 노출하면서 내부 작업은 숨겨둡니다.
 
 ## 3. Class Encapsulation
 
-클래스 캡슐화는 관련된 변수와 메서드를 하나의 클래스로 묶는 것을 의미합니다. 이는 모듈성과 재사용성을 촉진하여 코드를 보다 조직적이고 관리하기 쉽도록 만듭니다.```  
+클래스 캡슐화는 관련된 변수와 메서드를 하나의 클래스로 묶는 것을 의미합니다. 이는 모듈성과 재사용성을 촉진하여 코드를 보다 조직적이고 관리하기 쉽도록 만듭니다.```
 
 <div class="content-ad"></div>
 
@@ -418,7 +418,7 @@ void main() {
 }
 ```
 
-이 예시에서 Car 클래스는 _model과 _year 변수 및 displayInfo 메서드를 캡슐화합니다. 이 구조는 자동차에 관련된 모든 정보와 동작이 함께 그룹화되도록 보장합니다.
+이 예시에서 Car 클래스는 \_model과 \_year 변수 및 displayInfo 메서드를 캡슐화합니다. 이 구조는 자동차에 관련된 모든 정보와 동작이 함께 그룹화되도록 보장합니다.
 
 # 추상화 이해하기
 
@@ -434,13 +434,13 @@ void main() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 추상 클래스인 Animal은 사운드()라는 추상 메서드를 정의합니다. 이 메서드는 Dog 클래스에서 구현됩니다. Animal 클래스의 사용자로부터 사운드()의 구현 세부사항을 숨기고 필요한 기능만 노출시킵니다.
 
 ## 2. 프로세스 추상화
 
 프로세스 추상화는 복잡한 프로세스나 작업을 간단하고 관리하기 쉬운 메서드로 추상화하는 것을 의미합니다. 이를 통해 복잡한 기능을 작은 재사용 가능한 메서드로 분해하는 데 도움이 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -464,7 +464,7 @@ void main() {
 }
 ```
 
-여기서 MathOperations 클래스는 원의 넓이를 계산하는 과정을 _calculateCircleArea 비공개 메서드로 추상화합니다. 사용자는 내부 계산을 알 필요 없이 calculateArea 메서드와 상호작용할 수 있습니다.
+여기서 MathOperations 클래스는 원의 넓이를 계산하는 과정을 \_calculateCircleArea 비공개 메서드로 추상화합니다. 사용자는 내부 계산을 알 필요 없이 calculateArea 메서드와 상호작용할 수 있습니다.
 
 ## 3. 공개 지정자를 사용한 추상화
 
@@ -499,7 +499,7 @@ void main() {
 }
 ```
 
-이 예시에서는 _accountNumber 및 _balance 변수가 비공개이지만 balance getter 및 deposit 메서드는 공개되어 있습니다. 이를 통해 잔액에 제한된 액세스권을 부여하면서 계좌 번호를 숨길 수 있습니다.
+이 예시에서는 \_accountNumber 및 \_balance 변수가 비공개이지만 balance getter 및 deposit 메서드는 공개되어 있습니다. 이를 통해 잔액에 제한된 액세스권을 부여하면서 계좌 번호를 숨길 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -539,7 +539,7 @@ void main() {
 
 <div class="content-ad"></div>
 
-이 예에서 _calculateBonus 메서드는 private이며 Employee 클래스 내에서만 액세스할 수 있습니다. 보너스 getter는 실제 계산 프로세스를 숨기고 계산된 보너스를 노출합니다.
+이 예에서 \_calculateBonus 메서드는 private이며 Employee 클래스 내에서만 액세스할 수 있습니다. 보너스 getter는 실제 계산 프로세스를 숨기고 계산된 보너스를 노출합니다.
 
 # 결론
 

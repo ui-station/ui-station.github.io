@@ -3,13 +3,12 @@ title: "AWS 비용을 절감하는 방법 CloudWatch 알람을 사용하여 유�
 description: ""
 coverImage: "/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_0.png"
 date: 2024-05-27 16:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_0.png
 tag: Tech
 originalTitle: "Reduce AWS Costs by Stopping Idle EC2 Instances with CloudWatch Alarms"
 link: "https://medium.com/@meriemiag/reduce-aws-costs-by-stopping-idle-ec2-instances-with-cloudwatch-alarms-ecca40ebf85a"
 ---
-
 
 클라우드 리소스를 효율적으로 관리하는 것은 클라우드 서비스를 이용하는 사람에게 매우 중요합니다, 특히 비용을 통제하는 측면에서 말이죠. 한 가지 흔한 문제는 개발, 테스트 또는 임시 작업을 위해 사용하는 EC2 인스턴스를 중지하는 것을 잊는 경우입니다. 이러한 실수는 뜻밖에 높은 청구서를 유발할 수 있습니다.
 
@@ -88,7 +87,7 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![AWS Cost Reduction Step 2](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_2.png)
 
 ![AWS Cost Reduction Step 3](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_3.png)
@@ -96,7 +95,7 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 ![AWS Cost Reduction Step 4](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_4.png)
 
 ![AWS Cost Reduction Step 5](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -140,7 +139,7 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![CloudWatch Alarm Screenshot 1](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_11.png)
 
 CloudWatch 알람이 올바르게 설정되어 있고 조건을 충족하면 작업을 트리거할 준비가 되어 있습니다. 이 경우 아래 스크린샷과 같은 결과를 볼 수 있습니다.
@@ -148,7 +147,7 @@ CloudWatch 알람이 올바르게 설정되어 있고 조건을 충족하면 작
 ![CloudWatch Alarm Screenshot 2](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_12.png)
 
 ![CloudWatch Alarm Screenshot 3](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_13.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -172,7 +171,7 @@ resource "aws_cloudwatch_metric_alarm" "ec2_cpu_alarm" {
   alarm_actions             = [aws_sns_topic.topic.arn, "arn:aws:automate:${var.region}:ec2:stop"]
 
   alarm_name = "stop_test_instance_alarm"
-  
+
   dimensions = {
     InstanceId = var.instance_ID
   }

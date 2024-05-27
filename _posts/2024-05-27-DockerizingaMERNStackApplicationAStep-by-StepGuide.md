@@ -3,13 +3,12 @@ title: "MERN 스택 애플리케이션 도커화 단계별 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-27-DockerizingaMERNStackApplicationAStep-by-StepGuide_0.png"
 date: 2024-05-27 17:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DockerizingaMERNStackApplicationAStep-by-StepGuide_0.png
 tag: Tech
 originalTitle: "Dockerizing a MERN Stack Application: A Step-by-Step Guide"
 link: "https://medium.com/gitconnected/dockerizing-a-mern-stack-application-a-step-by-step-guide-1c109d5a2cf9"
 ---
-
 
 MERN 스택 애플리케이션을 구축하는 것은 도커화 및 여러 환경 관리와 관련해 도전적일 수 있습니다. 도커를 사용하면 애플리케이션을 컨테이너로 패키징하여 다양한 환경 간에 쉽게 이동할 수 있도록 도와줄 수 있습니다.
 
@@ -34,7 +33,7 @@ Docker Compose는 쉽게 다중 컨테이너 애플리케이션을 정의하고 
 
 가정하에 기본적인 MERN 애플리케이션이 다음과 같이 구성되어 있다고 가정하고, 다음과 같은 Dockerfile 및 docker-compose 파일을 만들어야 합니다.
 
-```markdown
+
 my-mern-app/
 ├── backend/
 │   ├── Dockerfile
@@ -46,12 +45,12 @@ my-mern-app/
 │   ├── public/
 │   ├── src/
 ├── docker-compose.yml
-```
+
 
 ## 단계 2: 백엔드와 프론트엔드 도커 파일 설정
 
 백엔드 설정
-```
+
 
 <div class="content-ad"></div>
 
@@ -82,7 +81,7 @@ EXPOSE 5000
 CMD ["npm", "start"]
 ```
 
-컨테이너의 기본 이미지로는 Alpine 리눅스 배포판을 기반으로 한 Node.js 런타임 버전 20.11.1을 사용하고 있습니다. Alpine 이미지는 일반적으로 더 작고 다운로드 속도가 빠릅니다. WORKDIR /app은 컨테이너 내부의 작업 디렉토리를 /app으로 설정합니다. 이후의 모든 명령은 이 디렉토리에서 실행됩니다. COPY package*.json ./는 로컬 머신에서 컨테이너로 package.json과 package-lock.json(있는 경우)을 복사합니다. 이 파일들은 종속성을 설치하는 데 사용됩니다.
+컨테이너의 기본 이미지로는 Alpine 리눅스 배포판을 기반으로 한 Node.js 런타임 버전 20.11.1을 사용하고 있습니다. Alpine 이미지는 일반적으로 더 작고 다운로드 속도가 빠릅니다. WORKDIR /app은 컨테이너 내부의 작업 디렉토리를 /app으로 설정합니다. 이후의 모든 명령은 이 디렉토리에서 실행됩니다. COPY package\*.json ./는 로컬 머신에서 컨테이너로 package.json과 package-lock.json(있는 경우)을 복사합니다. 이 파일들은 종속성을 설치하는 데 사용됩니다.
 
 이는 npm install을 컨테이너 내에서 실행하여 package.json에 지정된 모든 종속성을 설치합니다. COPY . .는 나머지 애플리케이션 코드를 컨테이너의 작업 디렉토리로 복사합니다. EXPOSE 5000은 컨테이너가 실행 중인 포트 5000에서 수신하는 것을 Docker에 알립니다. 이는 내부 포트를 호스트 머신의 외부 포트에 매핑하는 데 유용합니다. CMD ["npm", "start"]는 컨테이너 시작 시 실행할 명령을 지정합니다. 일반적으로 package.json에 정의된 start 스크립트를 사용하여 서버를 시작하는 npm start를 실행합니다.
 
@@ -144,14 +143,12 @@ CMD ["npm","start"]
 
 version: '3.8'
 services:
-  backend:
-    build: ./backend
-    ports:
-      - '5000:5000'
-  frontend:
-    build: ./frontend
-    ports:
-      - '3000:3000'
+backend:
+build: ./backend
+ports: - '5000:5000'
+frontend:
+build: ./frontend
+ports: - '3000:3000'
 ```
 
 `backend`: 백엔드 서비스를 정의합니다. 백엔드 디렉토리에서 Docker 이미지를 빌드하고 포트 5000으로 매핑합니다. `frontend`: 프론트엔드 서비스를 정의합니다. 프론트엔드 디렉토리에서 Docker 이미지를 빌드하고 포트 3000으로 매핑합니다.
@@ -161,16 +158,13 @@ services:
 ```md
 version: '3.8'
 services:
-  backend:
-    build: ./backend
-    ports:
-      - '5000:5000'
-    depends_on:
-      - mongo
-  mongo:
-    image: mongo:latest
-    ports:
-      - '27017:27017'
+backend:
+build: ./backend
+ports: - '5000:5000'
+depends_on: - mongo
+mongo:
+image: mongo:latest
+ports: - '27017:27017'
 ```
 
 <div class="content-ad"></div>

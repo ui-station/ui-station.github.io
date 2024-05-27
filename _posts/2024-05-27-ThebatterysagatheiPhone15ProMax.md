@@ -3,7 +3,7 @@ title: "배터리 사가, 아이폰15 프로 맥스"
 description: ""
 coverImage: "/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_0.png"
 date: 2024-05-27 17:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_0.png
 tag: Tech
 originalTitle: "The battery saga , the iPhone15 Pro Max"
@@ -11,7 +11,6 @@ link: "https://medium.com/macoclock/the-battery-saga-the-iphone15-pro-max-f621bb
 ---
 
 
-```markdown
 ![2024-05-27-ThebatterysagatheiPhone15ProMax_0.png](/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_0.png)
 
 # 또 다른 하루 또 다른 이야기
@@ -19,7 +18,7 @@ link: "https://medium.com/macoclock/the-battery-saga-the-iphone15-pro-max-f621bb
 나와 내 iPhone 15 Pro Max에게는 이상한 한 주가 지났어요.
 
 나에게는 이번 주에 두 번 모험했습니다! 나 자신을 은둔자로 묘사하려는 것이 아닌데, 본성상 나는 외로운 사람이라서 이 콘텐츠 창작 일은 나에게 완벽해요. 스스로 쓰고 편집하는 데 많은 시간을 보낼 수 있지만, 그로 인해 자리에 머무르는 습관을 낳아요. 올해 스튜디오에서 너무 멀리 나가지 않았다는 것을 깨달았기 때문에, 이번 주에는 그것을 바꾸고 살짝 변화를 주기로 결정했어요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -71,7 +70,7 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![The Battery Saga - the iPhone 15 Pro Max](/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_4.png)
 
 # 일에 착수하기
@@ -79,7 +78,7 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 주요 광각 24mm 렌즈의 모든 초점 거리를 시험해보기로 했다. 일주일 전에 이를 조사하기 시작했지만, 런던의 모든 명소를 둘러보면서 정말 카메라를 즐길 수 있을 것이라고 생각했다.
 
 아래에 유명한 피카딜리 서커스 광고판의 몇 장의 사진이 있다. 첫 번째 사진은 1배 확대 24mm로 촬영한 것이고, 두 번째 사진은 5배 확대 120mm로 촬영한 것이다. 이미지를 200%로 확대해도 매우 많은 선명함이 유지되며, 점이 놀랍게 날카로운 것을 알 수 있다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -3,7 +3,7 @@ title: " 어떤 HTML5 게임 엔진이 최고일까요"
 description: ""
 coverImage: "/assets/img/2024-05-27-WhatAretheBestHTML5GameEngines_0.png"
 date: 2024-05-27 16:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-WhatAretheBestHTML5GameEngines_0.png
 tag: Tech
 originalTitle: "🕹️ What Are the Best HTML5 Game Engines?"
@@ -11,7 +11,6 @@ link: "https://medium.com/gamezop/%EF%B8%8F-what-are-the-best-html5-game-engines
 ---
 
 
-```markdown
 ![HTML5 Game Engine](/assets/img/2024-05-27-WhatAretheBestHTML5GameEngines_0.png)
 
 HTML5 게임 개발에 뛰어들 때, 프로젝트의 성공을 위해 올바른 게임 엔진을 선택하는 것이 중요합니다. 여기에는 몇 가지 최고의 HTML5 게임 엔진, 그들의 기능, 그리고 다양한 사용자 요구를 충족하는 방법에 대한 자세한 정보가 있습니다.
@@ -19,7 +18,7 @@ HTML5 게임 개발에 뛰어들 때, 프로젝트의 성공을 위해 올바른
 ## 🔹 1. Phaser
 
 나는 Phaser 게임 엔진으로 게임 개발 경력을 시작했습니다. 그 시절에는 카지노 게임을 만들고 있었고, Phaser는 가장 많이 분기되고 이야기된 프레임워크 중 하나였습니다. 잘 문서화된 API와 매우 다양한 기능을 이해할 수 있는 많은 예제를 제공하는 완벽한 게임 엔진으로, Phaser는 최고의 선택 중 하나였습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -27,7 +26,7 @@ Phaser에는 편집기가 없기 때문에 게임 객체의 디자인 및 배치
 
 이러한 어려움에도 불구하고, 나는 Phaser를 좋아했습니다. 코드 중심적인 접근 방식으로 인해 게임 개발 중의 메카닉과 동작에 대한 더 깊은 이해를 얻을 수 있었습니다. 그러나 Cocos Creator를 사용한 후에 시각적 인터페이스 게임 엔진의 중요성을 깨달았습니다. Cocos Creator는 게임 UI를 디자인 미리보기대로 제작하는 데 소요되는 시간을 크게 줄여줍니다. 이를 통해 제작 프로세스가 더욱 간소하고 효율적으로 진행됩니다.
 
-특징: 
+특징:
 
 - 매우 인기가 높고 잘 문서화되어 있습니다.
 - 다양한 예제와 튜토리얼이 있습니다.

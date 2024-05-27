@@ -3,13 +3,12 @@ title: "Python 스크립트를 가벼운 도커 스케줄러로 조율하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-OrchestratingPythonscriptswithalightweightdockerscheduler_0.png"
 date: 2024-05-27 17:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-OrchestratingPythonscriptswithalightweightdockerscheduler_0.png
 tag: Tech
 originalTitle: "Orchestrating Python scripts with a lightweight docker scheduler"
 link: "https://medium.com/@flavio-mtps/orchestrating-python-scripts-with-a-lightweight-docker-scheduler-e5d69ac9340c"
 ---
-
 
 <img src="/assets/img/2024-05-27-OrchestratingPythonscriptswithalightweightdockerscheduler_0.png" />
 
@@ -21,7 +20,7 @@ link: "https://medium.com/@flavio-mtps/orchestrating-python-scripts-with-a-light
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-OrchestratingPythonscriptswithalightweightdockerscheduler_1.png)
 
 문제는... Cronicle은 기본적으로 셸 및 HTTP 요청 두 가지 유형의 작업만 지원합니다. 셸 스크립트에서 Python을 실행하는 것이 항상 최상의 경험은 아니며 (게다가 이미지에는 Python이 설치되어 있지도 않습니다. Cronicle은 Node.js에서 실행됩니다).
@@ -39,8 +38,9 @@ COPY bin/python-script-plugin.py /opt/cronicle/bin/python-script-plugin.py
 RUN chmod +x /opt/cronicle/bin/python-script-plugin.py
 COPY config/plugins.pixl /tmp/plugins.pixl
 RUN /opt/cronicle/bin/control.sh import /tmp/plugins.pixl
-```   
-```  
+```
+
+
 
 <div class="content-ad"></div>
 
@@ -56,9 +56,13 @@ RUN /opt/cronicle/bin/control.sh import /tmp/plugins.pixl
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![Image](/assets/img/2024-05-27-OrchestratingPythonscriptswithalightweightdockerscheduler_3.png)
 
 The link to my repository with the image is [here](repository_link).
 Feel free to access my other repositories, I post a lot of snippets and personal projects that could help you!
-```
+
+
+
+

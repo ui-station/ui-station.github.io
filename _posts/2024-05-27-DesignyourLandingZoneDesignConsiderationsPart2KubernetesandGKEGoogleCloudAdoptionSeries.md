@@ -3,23 +3,22 @@ title: "랜딩 존 디자인하기  디자인 고려 사항 파트 2  쿠버네�
 description: ""
 coverImage: "/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_0.png"
 date: 2024-05-27 17:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_0.png
 tag: Tech
 originalTitle: "Design your Landing Zone — Design Considerations Part 2 — Kubernetes and GKE (Google Cloud Adoption Series)"
 link: "https://medium.com/google-cloud/design-your-landing-zone-design-considerations-part-2-kubernetes-and-gke-google-cloud-5a500384cb03"
 ---
 
-
 마음에 드시는 markdown 형식의 표를 아래에 참조해보세요:
 
-```markdown
+
 | 구분               | 설명                                                                          |
 |--------------------|------------------------------------------------------------------------------|
 | 착륙 지역이란?    | 착륙 지역의 정의 및 필요성에 대해 다룸                                       |
 | 디자인 프로세스 개요 | 착륙 지역 디자인 프로세스 개요 소개                                         |
 | 디자인 고려 사항 카테고리 | 착륙 지역 디자인 시 고려해야 할 7가지 카테고리 및 주요 디자인 결정 사항 소개 |
-```
+
 
 <div class="content-ad"></div>
 
@@ -57,6 +56,7 @@ GKE은 Google의 관리형 Kubernetes 플랫폼이에요. 이를 통해 Google C
 ![AutoPilot](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_0.png)
 
 안녕하세요! Autopilot은 기본 클러스터 배포 모드로 이미 장기간 사용되어 왔어요. 이 기능은 다음과 같은 몇 가지 모범 사례를 기본으로 제공합니다:
+
 - 릴리스 채널로의 의무적 등록. 이것은 클러스터가 자동으로 패치되고 유지되며, 오래된 보안 취약한 쿠버네티스 버전을 실행할 수 없다는 것을 의미합니다.
 - 클러스터는 regional로, 클러스터의 고가용성을 보장합니다.
 - 클러스터 자동 스케일링 - GKE가 기본으로 노드 수를 자동으로 조정해 줍니다.
@@ -187,7 +187,7 @@ VPC에서 클러스터 간에 범위를 공유하기로 결정한다면, 이 점
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_4.png)
 
 내 추천 (그리고 구글의 추천)은 항상 클러스터를 릴리스 채널에 등록하는 것입니다. 릴리스 채널을 사용하면 구글이 클러스터 업그레이드를 관리해줍니다. 워커 노드는 롤링 서지 업그레이드 전략을 사용하여 자동으로 업그레이드되어 워크로드에 미치는 영향을 최소화합니다. 따라서 클러스터 관리자는 클러스터 업그레이드에 시간이나 노력을 들일 필요가 없습니다.
@@ -195,7 +195,7 @@ VPC에서 클러스터 간에 범위를 공유하기로 결정한다면, 이 점
 GKE Standard를 사용하면 릴리스 채널을 사용하지 않을 수 있습니다. 이렇게 하려면 클러스터를 특정 버전의 Kubernetes로 유지하고 싶을 때 사용할 수 있습니다. 그러나 제 경험상, 릴리스 채널에 선택적으로 가입하지 않는 기관은 곧 자신들의 취약한 클러스터가 가득한 시스템을 운영하게 됩니다. 그러한 기관들은 큰 패치 문제를 안게 될 것입니다!
 
 ![image](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -224,7 +224,7 @@ GKE Autopilot을 사용하면 릴리스 채널을 선택해 사용하지 않을 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_6.png)
 
 릴리스 채널의 한 가지 문제는 클러스터가 언제 업그레이드될지 보장할 수 없다는 것입니다. 최종 비 프로드 환경 및 프로드 환경을 동일한 릴리스 채널(구글에서 권장하는 최상의 방법)에 등록하면 비 프로드 환경이 프로드 환경보다 먼저 업그레이드되도록 보호막을 구현하고 싶을 것입니다. GKE fleets 및 scopes를 사용하면 쉽게 이를 수행할 수 있습니다.
@@ -232,7 +232,7 @@ GKE Autopilot을 사용하면 릴리스 채널을 선택해 사용하지 않을 
 다음은 이러한 배포 순서의 예시입니다:
 
 ![이미지](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_7.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -259,9 +259,9 @@ GKE에는 네 가지 스케일링 차원이 있습니다:
 
 <div class="content-ad"></div>
 
-- 워크로드는 수요에 따라 가로 방향으로 확장됩니다. Pod를 추가하거나 제거함으로써 관리됩니다. 이는 가로 방향 팟 오토스케일러(HPA)에 의해 관리되며, 수요에 따라 빠르게 확장됩니다. HPA는 CPU 사용률과 같은 표준 메트릭 또는 초당 요청과 같은 사용자 정의 메트릭에 응답합니다. 
+- 워크로드는 수요에 따라 가로 방향으로 확장됩니다. Pod를 추가하거나 제거함으로써 관리됩니다. 이는 가로 방향 팟 오토스케일러(HPA)에 의해 관리되며, 수요에 따라 빠르게 확장됩니다. HPA는 CPU 사용률과 같은 표준 메트릭 또는 초당 요청과 같은 사용자 정의 메트릭에 응답합니다.
 - 인프라는 클러스터 노드를 추가하거나 제거함으로써 가로 방향으로 확장됩니다. 이는 예약된 팟을 수용하기 위해 클러스터 자동스케일러(CA)에 의해 예측적으로 관리됩니다. 예를 들어, 새로 생성된 팟을 예약할 노드가 없는 경우, 클러스터 자동스케일러가 새 노드를 만듭니다.
-- 워크로드는 팟 크기를 조절함으로써 세로 방향으로 확장됩니다. 이는 세로 방향 팟 오토스케일러(VPA)에 의해 관리됩니다. VPA는 시간이 경과함에 따라 팟의 CPU 및 메모리 사용률을 모니터링하고 이에 따라 팟 크기를 조정합니다. 이로써 보다 최적화되고 비용 효율적인 팟 크기를 얻을 수 있습니다. 
+- 워크로드는 팟 크기를 조절함으로써 세로 방향으로 확장됩니다. 이는 세로 방향 팟 오토스케일러(VPA)에 의해 관리됩니다. VPA는 시간이 경과함에 따라 팟의 CPU 및 메모리 사용률을 모니터링하고 이에 따라 팟 크기를 조정합니다. 이로써 보다 최적화되고 비용 효율적인 팟 크기를 얻을 수 있습니다.
 - 인프라는 가장 효율적인 팟의 바이너리 패킹을 달성하기 위해 최적화된 노드(VM) 사이즈로 노드 풀을 배포하거나 삭제함으로써 세로 방향으로 확장됩니다. 이를 "노드 자동 프로비저닝"이라고 하며, 다른 종류의 확장에 비해 상대적으로 느립니다.
 
 아래는 몇 가지 팁입니다:
@@ -316,7 +316,7 @@ GKE를 랜딩 존에서 성공적으로 디자인하는 데 고려해야 할 주
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_9.png)
 
 # 링크
@@ -342,7 +342,7 @@ GKE를 랜딩 존에서 성공적으로 디자인하는 데 고려해야 할 주
 - 기업용 기초 설계 청사진
 
 # 시리즈 내비게이션
-```  
+
 
 <div class="content-ad"></div>
 

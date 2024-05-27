@@ -3,7 +3,7 @@ title: "특정 지역 자원 및 잘못된 로컬라이제이션 - 안드로이�
 description: ""
 coverImage: "/assets/img/2024-05-27-RegionspecificresourcesandbrokenlocalizationAndroid_0.png"
 date: 2024-05-27 17:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-RegionspecificresourcesandbrokenlocalizationAndroid_0.png
 tag: Tech
 originalTitle: "Region specific resources and broken localization — Android"
@@ -11,7 +11,6 @@ link: "https://medium.com/proandroiddev/region-specific-resources-and-broken-loc
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-27-RegionspecificresourcesandbrokenlocalizationAndroid_0.png)
 
 이 기사의 일환으로, 우리 애플리케이션에서 로컬라이제이션 지원을 망가뜨린 리소스 구성에 대한 최근 경험을 설명하겠습니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/proandroiddev/region-specific-resources-and-broken-loc
 프랑스어 번역에서 망가진 부분의 샘플은 다음과 같습니다.
 
 우리의 클라이언트 애플리케이션은 라이브러리를 사용하여 이 UI에 노출됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -36,9 +35,9 @@ link: "https://medium.com/proandroiddev/region-specific-resources-and-broken-loc
 
 우리 애플리케이션에는 지역별이 아닌 프랑스어 문자열이 공통 파일에 저장되어 있어요👇
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-RegionspecificresourcesandbrokenlocalizationAndroid_2.png)
-```
+
 
 앱 수준 build.gradle에 다음 구성을 추가하기 전에 예상대로 작동했습니다
 
@@ -63,7 +62,7 @@ Kotlin
         ...
         resConfigs "en", "fr"
          // 또는
-        resourceConfigurations += ["en", "fr"] 
+        resourceConfigurations += ["en", "fr"]
     }
 }
 ```

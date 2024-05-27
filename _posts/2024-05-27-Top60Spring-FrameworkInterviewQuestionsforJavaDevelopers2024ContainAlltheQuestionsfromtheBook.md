@@ -3,13 +3,12 @@ title: "2024년을 위한 자바 개발자를 위한 상위 60개의 스프링 �
 description: ""
 coverImage: "/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_0.png"
 date: 2024-05-27 15:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_0.png
 tag: Tech
 originalTitle: "Top 60 Spring-Framework Interview Questions for Java Developers 2024(Contain All the Questions from the Book)"
 link: "https://medium.com/@rathod-ajay/top-60-spring-framework-interview-questions-for-java-developers-2024-contain-all-the-questions-from-f15621f77d2a"
 ---
-
 
 ## 안녕하세요! Java 개발자라면, 백엔드 개발에 필수적인 스프링 프레임워크를 정복하는 것이 중요합니다. 스프링 부트 프로젝트의 기초 역할을 하는데, 스프링 프레임워크는 깊게 파고들 필수 기술입니다. 이 기사에는 스프링 프레임워크 인터뷰 질문이 모두 포함되어 있습니다. 이를 통해 인터뷰에 성공할 수 있을 것입니다. 함께 더 알아보세요!
 
@@ -23,7 +22,7 @@ link: "https://medium.com/@rathod-ajay/top-60-spring-framework-interview-questio
 
 테이블 태그를 Markdown 형식으로 변경해 보겠습니다.
 
-```markdown
+
 It’s like learning the basics before using a time-saving tool that’s built on those basics. So, by mastering Spring first, you’ll have a better grip on Spring Boot and make smarter choices when creating modern applications.
 
 Let’s dive into the Spring framework interview questions,
@@ -31,7 +30,7 @@ Let’s dive into the Spring framework interview questions,
 # What is Spring Framework?
 
 The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications — on any kind of deployment platform.
-```
+
 
 <div class="content-ad"></div>
 
@@ -42,7 +41,6 @@ Spring의 중요 요소 중 하나는 애플리케이션 수준에서의 인프�
 전통적인 프로그래밍에서는 애플리케이션이 필요로 하는 모든 객체를 수동으로 생성하고 관리해야 합니다. 이런 방식은 복잡하고 오류가 발생하기 쉬울 수 있습니다.
 
 다음은 IOC가 어떻게 보이는지 보여주는 다이어그램입니다,
-
 
 <div class="content-ad"></div>
 
@@ -89,6 +87,7 @@ DI 원칙에 따라 코드가 더 깔끔해지고, 객체가 의존성이 주어
 DI는 주로 생성자 기반 의존성 주입과 Setter 기반 의존성 주입 두 가지 주요 변형이 있습니다. 일반적으로 다이어그램은 다음과 같이 보입니다.
 
 ## 제어의 역전과 의존성 주입의 차이는 무엇인가요?
+
 ![다이어그램](/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_4.png)
 
 ## 의존성 주입의 유형과 그것을 사용함으로써 얻는 이점은 무엇인가요?
@@ -503,8 +502,7 @@ Spring에서 빈을 자동 와이어링에서 제외하는 방법은 다음과 �
 XML 구성에서 제왈하고 싶은 'bean' 요소에 autowire-candidate="false" 속성을 추가하세요:
 
 ```js
-<bean id="myBean" class="com.example.MyBean" autowire-candidate="false">
-</bean>
+<bean id="myBean" class="com.example.MyBean" autowire-candidate="false"></bean>
 ```
 
 2. @Lazy 주석 사용하기 (지연 초기화를 위해):
@@ -549,7 +547,7 @@ In Spring Boot, use `@SpringBootApplication(exclude = 'MyBeanAutoConfiguration.c
 
 <div class="content-ad"></div>
 
-```Markdown
+
 ![2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_8.png](/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_8.png)
 
 # 스프링에서 @Bean 어노테이션이란?
@@ -564,8 +562,9 @@ public MyService myService() {
 return new MyServiceImpl();
 }
 }
-``` 
 ```
+
+
 
 <div class="content-ad"></div>
 
@@ -608,7 +607,7 @@ Markdown 형식으로 변경해 드릴까요?
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_9.png)
 
 # @Value 어노테이션 내부의 $와 #은 무엇을 하는 것인가요?
@@ -616,7 +615,7 @@ Markdown 형식으로 변경해 드릴까요?
 $ 기호는 속성 값을 다양한 소스(예: 속성 파일, 환경 변수 및 시스템 속성)에서 주입하는 데 사용됩니다. 예를 들어, 다음 코드는 application.properties 파일에서 app.name 속성의 값을 주입합니다:
 
 예:
-```
+
 
 <div class="content-ad"></div>
 
@@ -724,10 +723,10 @@ Spring에서 빈 간의 순환 종속성을 처리하는 여러 가지 방법이
 
 - Lazy Initialization: 순환에 관여하는 빈 중 하나에 @Lazy 주석을 사용하여 필요할 때만 초기화할 수 있습니다.
 
-```
+
 @Lazy
 @Autowired
-```
+
 
 <div class="content-ad"></div>
 
@@ -738,7 +737,7 @@ private BeanA beanA;
 ```java
 public class BeanA {
     private final BeanB beanB;
-    
+
     public BeanA(BeanB beanB) {
         this.beanB = beanB;
     }
@@ -755,7 +754,7 @@ BeanFactory를 사용하세요: 빈을 직접 주입하는 대신, 실제로 필
 public class BeanA {
 
     private BeanB beanB;
-    
+
     @Autowired
     public BeanA(BeanFactory beanFactory) {
         this.beanB = beanFactory.getBean(BeanB.class);
@@ -812,7 +811,7 @@ HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이�
 1. 설정:
 
    - 필터를 Spring 구성에서 빈으로 정의합니다.
-   
+
    - 필터가 실행되는 순서를 지정합니다.
 
 <div class="content-ad"></div>
@@ -900,7 +899,7 @@ Spring MVC는 @Controller 및 @RestController 컴포넌트가 요청 매핑, 요
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 @Controller
 public class HelloController {
@@ -917,20 +916,24 @@ return "index";
 @RequestMapping 주석을 사용하여 요청을 컨트롤러 메소드에 매핑할 수 있습니다. URL, HTTP 메소드, 요청 매개변수, 헤더 및 미디어 유형에 따라 일치시킬 수 있는 다양한 속성이 있습니다. 클래스 수준에서 사용하여 공유 매핑을 나타낼 수도 있고, 메소드 수준에서 사용하여 특정 엔드포인트 매핑으로 좁힐 수도 있습니다. 요청 매핑 프로세스:
 
 또한 @RequestMapping의 HTTP 메소드별 바로 가기 변형도 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 - @GetMapping
 - @PostMapping
 - @PutMapping
 - @DeleteMapping
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ## @PatchMapping
 
 **Request Reception:** The DispatcherServlet receives an incoming HTTP request containing the request URI, HTTP method (GET, POST, PUT, DELETE, etc.), and request parameters.
@@ -938,7 +941,8 @@ return "index";
 **Mapping Lookup:** The DispatcherServlet utilizes a HandlerMapping component to lookup the appropriate handler method for the received request. The HandlerMapping maintains a registry of mappings between request patterns and handler methods.
 
 **Pattern Matching:** The HandlerMapping compares the request URI and HTTP method against the registered request patterns. It uses pattern matching rules to identify the most specific matching pattern.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -1029,7 +1033,8 @@ return "Hello, World!"; // JSON 또는 XML로 "Hello, World!"을 반환합니다
 @Requestparam:
 
 @Requestparam 어노테이션을 사용하여 서블릿 요청 매개변수(쿼리 매개변수 또는 폼 데이터)를 컨트롤러의 메소드 인수에 바인딩할 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -1086,7 +1091,7 @@ Spring MVC는 Java 웹 애플리케이션을 구축하기 위한 인기있는 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_12.png](/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_12.png)
 
 고객이 요청을 보냅니다: 사용자가 브라우저 또는 다른 클라이언트 응용 프로그램을 통해 Spring MVC 애플리케이션에 요청을 보냅니다.
@@ -1094,7 +1099,7 @@ Spring MVC는 Java 웹 애플리케이션을 구축하기 위한 인기있는 �
 DispatcherServlet이 요청을 받습니다: DispatcherServlet은 Spring MVC 아키텍처의 중앙 컨트롤러입니다. 클라이언트로부터 요청을 받고 요청을 처리할 컨트롤러를 결정합니다.
 
 HandlerMapping이 적절한 컨트롤러를 선택합니다: HandlerMapping 구성 요소는 Spring 구성 파일에서 구성된 URL 패턴을 기반으로 요청 URL을 적절한 컨트롤러에 매핑합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -1116,7 +1121,6 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 
 컨트롤러 어노테이션:
 
-
 <div class="content-ad"></div>
 
 @Controller: 클래스를 컨트롤러로 지정하여 HTTP 요청을 처리하고 응답을 렌더링하는 역할을 담당합니다.
@@ -1129,7 +1133,7 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 
 <div class="content-ad"></div>
 
-```markdown
+
 @GetMapping, @PostMapping, @PutMapping, @DeleteMapping, @PatchMapping: 특정 HTTP 메서드에 매핑하는 편리한 바로 가기입니다.
 
 @PathVariable: URL의 경로 세그먼트 변수에 메서드 매개변수를 바인딩합니다.
@@ -1137,7 +1141,7 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 @RequestParam: 요청 URL의 쿼리 매개변수에 메서드 매개변수를 바인딩합니다.
 
 데이터 바인딩 어노테이션:
-```
+
 
 <div class="content-ad"></div>
 
@@ -1284,7 +1288,8 @@ log.info("Started method: " + joinPoint.getSignature().getName());
 # 싱글톤 빈을 프로토타입 빈에서 호출하거나 그 반대로 프로토타입 빈을 싱글톤 빈에서 호출하면 몇 개의 객체가 반환됩니까?
 
 싱글톤 빈이 프로토타입 빈 또는 그 반대로부터 호출될 때 동작은 의존성 주입 방식에 따라 다릅니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -1379,13 +1384,13 @@ HTTP 요청과 응답을 Java 객체와 그에 해당하는 메시지 형식 (�
 
 <div class="content-ad"></div>
 
-* 요청이 도착하면 Spring은 요청의 Content-Type 헤더를 기반으로 적합한 HttpMessageConverter를 찾습니다.
+- 요청이 도착하면 Spring은 요청의 Content-Type 헤더를 기반으로 적합한 HttpMessageConverter를 찾습니다.
 
-* 일치하는 항목을 찾으면 컨버터가 요청 본문을 읽고 컨트롤러가 처리할 수 있는 Java 객체로 변환합니다.
+- 일치하는 항목을 찾으면 컨버터가 요청 본문을 읽고 컨트롤러가 처리할 수 있는 Java 객체로 변환합니다.
 
 응답 처리:
 
-* 컨트롤러가 객체를 반환할 때 Spring은 다시 요청의 Accept 헤더나 기본 변환기를 기반으로 적절한 HttpMessageConverter를 찾습니다.
+- 컨트롤러가 객체를 반환할 때 Spring은 다시 요청의 Accept 헤더나 기본 변환기를 기반으로 적절한 HttpMessageConverter를 찾습니다.
 
 <div class="content-ad"></div>
 
@@ -1393,13 +1398,13 @@ HTTP 요청과 응답을 Java 객체와 그에 해당하는 메시지 형식 (�
 
 <div class="content-ad"></div>
 
-```markdown
+
 - FormHttpMessageConverter (폼 데이터용)
 - ByteArrayHttpMessageConverter (바이너리 데이터용)
 - Jaxb2RootElementHttpMessageConverter (XML용, JAXB 사용)
 
 # Spring MVC를 사용하여 RESTful 웹 서비스를 소비하는 방법?
-```
+
 
 <div class="content-ad"></div>
 

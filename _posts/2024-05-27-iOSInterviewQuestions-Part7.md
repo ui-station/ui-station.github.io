@@ -3,13 +3,12 @@ title: "iOS 인터뷰 질문-제7파"
 description: ""
 coverImage: "/assets/img/2024-05-27-iOSInterviewQuestions-Part7_0.png"
 date: 2024-05-27 16:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-iOSInterviewQuestions-Part7_0.png
 tag: Tech
 originalTitle: "iOS Interview Questions-Part 7"
 link: "https://medium.com/swift-interview-preparations/ios-interview-questions-part-7-86894abed8e8"
 ---
-
 
 Swift, iOS, Xcode에 관한 인터뷰 질문
 
@@ -179,23 +178,23 @@ print(“\(이름)이(가) 초기화되고 있습니다.”)
 
 <div class="content-ad"></div>
 
-```
+
 ' deinit '
 
 print("\"\(name) is being deinitialized.\"")
 
-' 
-```
+'
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 var person1: Person? = Person(name: “Alice”)
 
 var person2: Person? = person1 // person1 and person2 now both reference the same Person instance
 
 person1 = nil // The reference count of the Person instance decreases to 1
-```
+
 
 <div class="content-ad"></div>
 
@@ -241,7 +240,7 @@ autorelease 풀은 `release` 메시지를 "나중에"까지 보낼 수 있게 �
 
 # 25. 블록에서 변수에 액세스하는 방법은?
 
-__block 저장 유형을 사용하면 됩니다.
+\_\_block 저장 유형을 사용하면 됩니다.
 
 만약 이 글을 즐겁게 읽으셨다면 공유하고 박수를 두드려주세요 👏🏻👏🏻👏🏻👏🏻👏🏻
 

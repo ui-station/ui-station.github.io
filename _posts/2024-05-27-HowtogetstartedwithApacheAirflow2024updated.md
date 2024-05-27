@@ -3,13 +3,12 @@ title: "Apache Airflow을 시작하는 방법 2024 최신 업데이트"
 description: ""
 coverImage: "/assets/img/2024-05-27-HowtogetstartedwithApacheAirflow2024updated_0.png"
 date: 2024-05-27 16:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowtogetstartedwithApacheAirflow2024updated_0.png
 tag: Tech
 originalTitle: "How to get started with Apache Airflow [2024 updated]"
 link: "https://medium.com/@hugolu87/how-to-get-started-with-apache-airflow-2024-updated-c388fb5433e4"
 ---
-
 
 <img src="/assets/img/2024-05-27-HowtogetstartedwithApacheAirflow2024updated_0.png" />
 
@@ -100,7 +99,7 @@ Apache Airflow를 시작하려면 로컬 머신 또는 서버에 설치하고 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 python -m venv airflow_env source airflow_env/bin/activate  # Windows에서는 `airflow_env\Scripts\activate`를 사용하십시오
 
 - Apache Airflow 설치: Apache Airflow는 호환 가능한 종속성을 지정하기 위해 constraints 파일을 사용합니다. 아래 명령어를 사용하여 설치할 수 있습니다:
@@ -113,7 +112,8 @@ pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}
 ```
 
 # 2. 데이터베이스 초기화
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -143,7 +143,8 @@ Airflow 웹 인터페이스에 액세스할 수 있는 관리자 사용자를 �
 # 4. 에어플로우 웹 서버 및 스케쥴러 시작
 
 - 웹 서버 시작:
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -160,7 +161,8 @@ airflow scheduler
 웹 브라우저를 열고 http://localhost:8080로 이동하세요. 이전에 생성한 관리자 자격 증명을 사용하여 로그인할 수 있습니다.
 
 # 6. 첫 번째 DAG(Directed Acyclic Graph) 생성하기
-```
+
+
 
 <div class="content-ad"></div>
 

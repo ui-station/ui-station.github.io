@@ -3,13 +3,12 @@ title: "루비를 사용하여 LLM 애플리케이션을 Langchain과 Qdrant를 
 description: ""
 coverImage: "/assets/img/2024-05-27-Step-by-StepGuidetoBuildingLLMApplicationswithRubyUsingLangchainandQdrant_0.png"
 date: 2024-05-27 16:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Step-by-StepGuidetoBuildingLLMApplicationswithRubyUsingLangchainandQdrant_0.png
 tag: Tech
 originalTitle: "Step-by-Step Guide to Building LLM Applications with Ruby (Using Langchain and Qdrant)"
 link: "https://medium.com/@shaikhrayyan123/step-by-step-guide-to-building-llm-applications-with-ruby-using-langchain-and-qdrant-5345f51d8a76"
 ---
-
 
 <img src="/assets/img/2024-05-27-Step-by-StepGuidetoBuildingLLMApplicationswithRubyUsingLangchainandQdrant_0.png" />
 
@@ -108,21 +107,22 @@ rbenv install 명령은 rbenv에 기본적으로 포함되어 있지 않습니�
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 최신 안정 버전 목록:
 rbenv install -l
 # 모든 로컬 버전 목록:
 rbenv install -L
 # Ruby 버전 설치:
 rbenv install 3.1.2
-```
+
 
 # 왜 Ruby를 선택해야 하는가?
 
 Ruby는 프로그래밍 세계에서 실무자들 사이에 잘 보호된 비밀 같은 존재입니다. AI와 ML 분야에서 Python의 높은 인기에 가려져, Ruby의 이 분야에서의 능력은 종종 간과되곤 합니다.
 
 Ruby의 진정한 강점은 그 간단함에 있으며 사용자들에게 제공하는 생산성입니다. 이 언어의 우아한 구문과 튼튼한 표준 라이브러리는 신속한 개발 주기에 이상적인 후보입니다. 코드 작성의 용이성뿐만 아니라, 그것을 유지하는 용이성에 있습니다. Ruby의 가독성이 뛰어나고 직관적인 코드베이스는 장기 프로젝트를 위한 큰 도움이 됩니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -146,11 +146,12 @@ puts processed_data
 ## 출력
 
 ```js
-[4, 8, 12, 16, 20]
+[4, 8, 12, 16, 20];
 ```
 
 ## 루비로 하는 기본 머신 러닝
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -186,7 +187,8 @@ puts "예측 값: #{predictions_array}"
 ### 아키텍처: LangChain, Mistral 7B, GPU 노드 위의 Qdrant
 
 저희 Ruby 기반 AI 시스템 아키텍처에서는 LangChain, Mistra 7B, 그리고 Qdrant 세 가지 주요 구성 요소를 통합하고 있습니다. 각 구성 요소는 시스템의 기능성에 중요한 역할을 하며 특히 GPU 노드에서 활용될 때 중요합니다. 각 구성 요소에 대해 자세히 살펴보고 전체 아키텍처에 어떻게 기여하는지 이해해 봅시다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -506,6 +508,7 @@ Retriever (Qdrant): Qdrant는 RAG 모델에서 우리의 검색기 역할을 합
 <div class="content-ad"></div>
 
 ## 생성기 (Mistral 7B):
+
 Mistral 7B는 transformer 모델로, 생성기 역할을 합니다. 이 모델은 텍스트 임베딩을 생성하는 데 사용되며 (Qdrant에 저장하기 위해) 입력 프롬프트와 Qdrant에서 검색된 문맥 데이터를 기반으로 사람과 유사한 텍스트를 생성합니다.
 
 오케스트레이션 (LangChain):

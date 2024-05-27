@@ -3,13 +3,12 @@ title: "Grafana Alloy OpenTelemetry"
 description: ""
 coverImage: "/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_0.png"
 date: 2024-05-27 17:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_0.png
 tag: Tech
 originalTitle: "Grafana Alloy , OpenTelemetry"
 link: "https://medium.com/@magstherdev/grafana-alloy-opentelemetry-59c171d2ebfc"
 ---
-
 
 ## Alloy에 인사를 전해보세요
 
@@ -277,12 +276,12 @@ Grafana에서 제공하는 기본 클러스터 탐색 기능을 활용하여 Kub
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![GrafanaAlloyOpenTelemetry_1](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_1.png)
 ![GrafanaAlloyOpenTelemetry_2](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_2.png)
 ![GrafanaAlloyOpenTelemetry_3](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_3.png)
 ![GrafanaAlloyOpenTelemetry_4](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_4.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -3,13 +3,12 @@ title: "현재 날짜나 시간을 기준으로 데이터브릭에서 여러 파
 description: ""
 coverImage: "/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_0.png"
 date: 2024-05-27 17:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_0.png
 tag: Tech
 originalTitle: "How To Dynamically Load Multiple Files in Databricks Based on Current Date or Hour"
 link: "https://medium.com/@oindrila-chakraborty88/how-to-dynamically-load-multiple-files-in-databricks-based-on-current-date-or-hour-21244bfe34e4"
 ---
-
 
 Batch 시스템에서는 여러 번 클라이언트가 이미 추출된 파일을 동일한 경로에 유지하고, 도착한 추출 파일이 Bronze 레이어에 로드되기를 원하는 경우가 많습니다.
 
@@ -32,11 +31,11 @@ Batch 시스템에서는 여러 번 클라이언트가 이미 추출된 파일�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Third File](/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_3.png)
 
 The content of the Fourth File arrived today is as follows -
-```
+
 
 <div class="content-ad"></div>
 
@@ -78,7 +77,7 @@ CREATE TABLE IF NOT EXISTS hive_metastore.practice.person_bronze
 LOCATION "dbfs:/mnt/iobdatabronze/practice-zone/delta-table/person_bronze"
 ```
 
-외부 델타 테이블은 Databricks 워크스페이스의 "practice" 데이터베이스 내부에 생성됩니다 - 
+외부 델타 테이블은 Databricks 워크스페이스의 "practice" 데이터베이스 내부에 생성됩니다 -
 
 ![image](/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_6.png)
 
@@ -108,7 +107,7 @@ file_name_date_format = current_date.strftime("%Y%m%d")
 print(file_name_date_format)
 ```
 
-출력 - 
+출력 -
 
 <img src="/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_8.png" />
 
@@ -283,7 +282,8 @@ print(file_name_date_and_hour_format)
 단계 2.2: 파일이 보관된 ADLS 디렉토리의 "Mounted Path"를 지정합니다.
 그런 다음, 해당 지정된 디렉토리에서 모든 파일을 나열합니다.
 마지막으로 해당 지정된 디렉토리의 파일 이름 중 "현재 날짜"의 "현재 시간"이 있는 파일만 필터링하여 Python List에 저장합니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -336,6 +336,7 @@ print(list_of_dfs)
 
 ```md
 # 각 DataFrame의 모든 값들을 Python 리스트의 각 객체로 사용하여 하나의 DataFrame으로 결합하십시오. "reduce()" 함수를 사용하고 "union()" 메서드를 함께 사용하십시오.
+
 final_df = reduce(lambda df1, df2: df1.union(df2), list_of_dfs)
 display(final_df)
 ```
@@ -345,10 +346,12 @@ display(final_df)
 <img src="/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_22.png" />
 
 따라서 위 이미지에서 현재 시간에 도착한 두 파일의 레코드를 모두 포함하는 "final_df" DataFrame을 확인할 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
 스텝 2.5: "final_df" 데이터프레임의 내용을 첫 번째 부분에 표시된 PySpark 코드를 사용하여 Bronze 테이블 "person_bronze"에 삽입합니다.
 
 마지막으로, 첫 번째 부분에 표시된 "Spark SQL" 쿼리를 사용하여 방금 삽입한 데이터가 Bronze 테이블 "person_bronze"에 있는지 확인하세요.
+

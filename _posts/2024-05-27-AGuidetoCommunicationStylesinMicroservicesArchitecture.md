@@ -3,15 +3,14 @@ title: "마이크로서비스 아키텍처에서의 소통 스타일 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-27-AGuidetoCommunicationStylesinMicroservicesArchitecture_0.png"
 date: 2024-05-27 16:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AGuidetoCommunicationStylesinMicroservicesArchitecture_0.png
 tag: Tech
 originalTitle: "A Guide to Communication Styles in Microservices Architecture"
 link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microservices-architecture-9a8ae4bc21b2"
 ---
 
-
-```markdown
+```
 ![A Guide to Communication Styles in Microservices Architecture](/assets/img/2024-05-27-AGuidetoCommunicationStylesinMicroservicesArchitecture_0.png)
 
 마이크로서비스 아키텍처에서 의사소통은 중요한 요소로, 다양한 토론이 진행되어 상호 서비스 상호 작용에 대한 가장 효과적인 방법을 선택하는 데 초점을 맞춥니다. 이 입문용 블로그 포스트에서는 마이크로서비스를 위한 최적의 의사소통 전략을 탐색하고 요약하여 언제 어디서 각 의사소통 스타일을 효과적으로 활용해야 하는지에 대한 통찰을 제공할 것입니다.
@@ -73,9 +72,9 @@ REST에서의 중요한 개념 중 하나는 자원(resource)입니다. 자원�
 REST API에서의 과제
 
 - 하나의 요청으로 여러 자원 검색하기
-REST 자원은 종종 고객(Customer) 및 주문(Orders)과 같은 비즈니스 객체에 집중하기 때문에 하나의 요청으로 여러 관련 객체를 검색하는 것이 어려울 수 있습니다. 예를 들어 주문과 해당 고객을 얻기 위해서는 일반적으로 여러 API 호출이 필요합니다. 공통적인 해결책은 고객이 연관 자원을 단일 호출로 가져올 수 있도록 API를 개선하는 것입니다. "expand" 쿼리 매개변수를 사용하여 관련 자원을 지정하는 GET 요청을 이용하는 것이 일반적입니다. 많은 경우에 효과적이지만 이 방법은 구현하기 복잡하고 시간이 소요될 수 있으며, 이로 인해 데이터 검색을 보다 간편하게 하는 GraphQL과 같은 대안 기술의 등장에 영향을 미쳤습니다.
+  REST 자원은 종종 고객(Customer) 및 주문(Orders)과 같은 비즈니스 객체에 집중하기 때문에 하나의 요청으로 여러 관련 객체를 검색하는 것이 어려울 수 있습니다. 예를 들어 주문과 해당 고객을 얻기 위해서는 일반적으로 여러 API 호출이 필요합니다. 공통적인 해결책은 고객이 연관 자원을 단일 호출로 가져올 수 있도록 API를 개선하는 것입니다. "expand" 쿼리 매개변수를 사용하여 관련 자원을 지정하는 GET 요청을 이용하는 것이 일반적입니다. 많은 경우에 효과적이지만 이 방법은 구현하기 복잡하고 시간이 소요될 수 있으며, 이로 인해 데이터 검색을 보다 간편하게 하는 GraphQL과 같은 대안 기술의 등장에 영향을 미쳤습니다.
 - 작업을 HTTP 동사에 매핑하기
-REST API 설계에서 주목할 만한 도전 과제는 비즈니스 객체에서 특정 작업을 올바른 HTTP 동사에 할당하는 방법입니다. 예를 들어, 주문 업데이트는 취소 또는 수정과 같은 다양한 작업을 수반할 수 있으며, 모든 업데이트가 반드시 멱등성(idempotent)을 보장하는 것은 아닙니다. 이는 HTTP PUT 방법을 사용하는 데 필요합니다. 일반적인 접근 방식은 구분된 업데이트 작업을 위한 하위 자원을 생성하는 것입니다. 예를 들어, 취소(POST /orders/'orderId'/cancel)나 수정(POST /orders/'orderId'/revise)에 POST를 사용하는 것입니다. 또 다른 방법은 작업을 URL 쿼리 매개변수로 포함하는 것입니다. 그러나 이러한 방법은 REST 원칙을 완전히 준수하지 않을 수 있습니다. 작업을 HTTP 동사에 매핑하는 점의 어려움은 gRPC와 같은 대체 기술의 인기에 영향을 미쳤습니다.
+  REST API 설계에서 주목할 만한 도전 과제는 비즈니스 객체에서 특정 작업을 올바른 HTTP 동사에 할당하는 방법입니다. 예를 들어, 주문 업데이트는 취소 또는 수정과 같은 다양한 작업을 수반할 수 있으며, 모든 업데이트가 반드시 멱등성(idempotent)을 보장하는 것은 아닙니다. 이는 HTTP PUT 방법을 사용하는 데 필요합니다. 일반적인 접근 방식은 구분된 업데이트 작업을 위한 하위 자원을 생성하는 것입니다. 예를 들어, 취소(POST /orders/'orderId'/cancel)나 수정(POST /orders/'orderId'/revise)에 POST를 사용하는 것입니다. 또 다른 방법은 작업을 URL 쿼리 매개변수로 포함하는 것입니다. 그러나 이러한 방법은 REST 원칙을 완전히 준수하지 않을 수 있습니다. 작업을 HTTP 동사에 매핑하는 점의 어려움은 gRPC와 같은 대체 기술의 인기에 영향을 미쳤습니다.
 
 ## REST의 장단점
 
@@ -115,6 +114,7 @@ gRPC에는 여러 가지 이점이 있습니다:
 - 다양한 언어로 작성된 클라이언트와 서비스 간의 상호 운용성을 제공합니다.
 
 gRPC에는 몇 가지 단점이 있습니다:
+
 - JavaScript 클라이언트가 gRPC 기반 API를 소비하는 데 REST/JSON 기반 API보다 더 많은 작업이 필요합니다.
 - 오래된 방화벽은 HTTP/2를 지원하지 않을 수 있습니다.
 

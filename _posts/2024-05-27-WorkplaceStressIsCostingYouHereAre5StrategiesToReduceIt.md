@@ -3,7 +3,7 @@ title: "직장 스트레스가 비용 손해를 야기하고 있습니다 이를
 description: ""
 coverImage: "/assets/img/2024-05-27-WorkplaceStressIsCostingYouHereAre5StrategiesToReduceIt_0.png"
 date: 2024-05-27 16:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-WorkplaceStressIsCostingYouHereAre5StrategiesToReduceIt_0.png
 tag: Tech
 originalTitle: "Workplace Stress Is Costing You. Here Are 5 Strategies To Reduce It"
@@ -11,7 +11,6 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 ---
 
 
-```markdown
 ![Workplace Stress](/assets/img/2024-05-27-WorkplaceStressIsCostingYouHereAre5StrategiesToReduceIt_0.png)
 
 일은 우리 삶의 큰 부분입니다. 잘 하면 기쁨의 원천이 될 수 있습니다. 그러나 처리가 잘못되면 종종 스트레스, 불안 및 불만을 일으킬 수 있습니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 일에서 약간의 스트레스를 피하기는 불가능하며, 노력할 필요도 없습니다. 결국 모든 스트레스가 나쁜 것은 아닙니다. 종종, 가치 있는 일을 하고 있다는 신호를 보여줍니다. 가치를 추가하고 영향을 창출하는 데 관심이 있는 것을 보여줍니다. 스트레스는 당신을 활력 있게 만들어 일어나는 일을 성취할 노력을 기울일 수 있도록 해줄 수도 있습니다.
 
 그러나 만약 스트레스로 인해 기능 저하가 되었다면 어떻게 해야 할까요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +92,7 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 이러한 일은 의식적으로 하루를 계획하고 우선순위를 정하지 않을 때 자주 발생합니다. 제가 말하고 싶은 것은 계획을 세웠다고 해서 문제가 발생하지 않을 것이라는 것은 아닙니다. 그러나 계획을 세워두면 우연에 좀 더 남기고 당신이 대응 방식을 선택할 수 있는 정신적 공간을 제공해줍니다.
 
-일정에 대한 더 나은 통제를 통해 당신은 앞으로 나아가는 데 도움이 되고 스트레스가 스며들기 어려운 작업을 선택하고 수행할 수 있습니다. 
+일정에 대한 더 나은 통제를 통해 당신은 앞으로 나아가는 데 도움이 되고 스트레스가 스며들기 어려운 작업을 선택하고 수행할 수 있습니다.
 
 ## 3. 명확함을 추구
 

@@ -3,13 +3,12 @@ title: "모듈화된 단일 모놀리스의 보안을 OAuth2와 Spring Security�
 description: ""
 coverImage: "/assets/img/2024-05-27-SecuringModularMonolithwithOAuth2andSpringSecurity_0.png"
 date: 2024-05-27 15:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SecuringModularMonolithwithOAuth2andSpringSecurity_0.png
 tag: Tech
 originalTitle: "Securing Modular Monolith with OAuth2 and Spring Security"
 link: "https://medium.com/itnext/securing-modular-monolith-with-oauth2-and-spring-security-43f2504c4e2e"
 ---
-
 
 <img src="/assets/img/2024-05-27-SecuringModularMonolithwithOAuth2andSpringSecurity_0.png" />
 
@@ -121,7 +120,7 @@ spring:
     │   ├── KeycloakJwtAuthenticationConverter.java
     │   └── UserAccount.java
     └── LibraryWebSecurityConfiguration.java
-```  
+```
 
 <div class="content-ad"></div>
 
@@ -129,12 +128,12 @@ spring:
 
 Markdown 형식의 테이블로 변환하면 다음과 같습니다.
 
-```markdown
+
 | 모듈 | 설명 |
 | ----- | -----|
 | 대출 | 사용자 계정 모듈을 사용하여 현재 승인된 사용자의 세부 정보를 가져옵니다. |
 | 카탈로그 | 사용자 계정 모듈을 사용하여 현재 승인된 사용자의 세부 정보를 가져옵니다. |
-```
+
 
 @SpringBoot 애플리케이션 클래스에 @Modulithic 어노테이션을 설정하고 공유 모듈을 정의할 수 있습니다. 이렇게 하면 Spring Modulith가 항상 사용자 계정 모듈을 부트스트랩하도록 할 수 있습니다.
 
@@ -149,9 +148,9 @@ Markdown 형식의 테이블로 변환하면 다음과 같습니다.
  * 사용자 계정을 나타내는 모델입니다.
  * 아직 필요가 없기 때문에 집계로 이동되지 않았습니다.
  */
-public record UserAccount(String firstName, 
-                          String lastName, 
-                          String email, 
+public record UserAccount(String firstName,
+                          String lastName,
+                          String email,
                           List<String> roles) {}
 ```
 
@@ -192,7 +191,7 @@ ResponseEntity<BookDto> addBookToInventory(@RequestBody AddBookRequest request) 
 }
 ```
 
-사용자의 역할은 JWT 토큰에서 식별됩니다. 역할이 어느 클레임에서 사용 가능할지는 인가 서버가 결정합니다. 저희의 경우 Keycloak에서는 realm_access.roles[] 클레임에서 역할을 사용할 수 있습니다. Spring Security가 역할로 인식하려면 역할에는 기본적으로 ROLE_ 접두사가 있어야 하지만, GrantedAuthorityDefaults를 사용하여 변경할 수도 있습니다. 토큰 처리 중에 각 역할을 GrantedAuthority로 변환합니다. Authorization 결정을 내릴 때 AccessDecisionManager에 의해 이러한 권한이 읽힙니다.
+사용자의 역할은 JWT 토큰에서 식별됩니다. 역할이 어느 클레임에서 사용 가능할지는 인가 서버가 결정합니다. 저희의 경우 Keycloak에서는 realm*access.roles[] 클레임에서 역할을 사용할 수 있습니다. Spring Security가 역할로 인식하려면 역할에는 기본적으로 ROLE* 접두사가 있어야 하지만, GrantedAuthorityDefaults를 사용하여 변경할 수도 있습니다. 토큰 처리 중에 각 역할을 GrantedAuthority로 변환합니다. Authorization 결정을 내릴 때 AccessDecisionManager에 의해 이러한 권한이 읽힙니다.
 
 <div class="content-ad"></div>
 
@@ -269,7 +268,7 @@ void setUp() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 @Test
 void addBookToCatalogSucceedsWithStaff() throws Exception {
     mockMvc.perform(post("/catalog/books")
@@ -288,13 +287,13 @@ void addBookToCatalogSucceedsWithStaff() throws Exception {
             .andExpect(jsonPath("$.catalogNumber.barcode", equalTo("12345")))
             .andExpect(jsonPath("$.isbn", equalTo("9780062316097"))
             .andExpect(jsonPath("$.author.name", equalTo("Yuval Noah Harari"));
-```
+
 
 만약 역할이 없는 경우 403 Access Denied 응답이 반환되며, 헤더에는 WWW-Authenticate:"Bearer error="insufficient_scope", error_description="The request requires higher privileges than provided by the access token.", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1""가 포함됩니다.
 
 두 번째 요구 사항에서는 대출 모듈은 인증된 사용자의 이메일 주소에서 Patron을 식별합니다. 따라서 가짜 JWT 토큰에는 이메일 클레임이 필요합니다. 이 작업은 쉽게 할 수 있습니다.
 
-```
+
 @Test
 void checkoutBookRestCall() throws Exception {
     mockMvc.perform(post("/borrow/holds/018dc74a-4830-75cf-a194-5e9815727b02/checkout")
@@ -303,8 +302,9 @@ void checkoutBookRestCall() throws Exception {
             .andExpect(jsonPath("$.patronId", equalTo("john.wick@continental.com"))
             .andExpect(jsonPath("$.dateOfCheckout").exists());
 }
-```
-```  
+
+
+
 
 <div class="content-ad"></div>
 
@@ -332,8 +332,10 @@ spring:
 ## 결론
 
 Spring Security에 대해 더 말할 수 있는 부분이 많이 있습니다. 그러나 이 블로그에서는 Spring Security 관련 코드가 모듈식 모놀리스 코드베이스에 어떻게 들어 맞는지 살펴보았습니다. 또한 Spring Security를 사용하여 OAuth2 플로우를 구현하고 설정을 통합 테스트했습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
 만약 코드를 확인하고 실행해보고 싶다면 아래를 확인해보세요.
+

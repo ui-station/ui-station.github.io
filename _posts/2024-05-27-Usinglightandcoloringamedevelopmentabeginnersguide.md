@@ -3,13 +3,12 @@ title: "게임 개발에서 빛과 색상 활용하기 초심자를 위한 가�
 description: ""
 coverImage: "/assets/img/2024-05-27-Usinglightandcoloringamedevelopmentabeginnersguide_0.png"
 date: 2024-05-27 16:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Usinglightandcoloringamedevelopmentabeginnersguide_0.png
 tag: Tech
 originalTitle: "Using light and color in game development: a beginner’s guide"
 link: "https://medium.com/my-games-company/using-light-and-color-in-game-development-a-beginners-guide-400edf4a7ae0"
 ---
-
 
 빛과 색은 감정을 전달하고 분위기를 조성하는 데 가장 강력한 도구 중 하나입니다. 그러나 이 도구들을 올바르게 활용하기 위해서는 일정한 예술적 지식이 필요합니다. 이 글에서는 크래시 코스와 앞으로의 방향에 대해 알아볼 거예요!
 
@@ -71,7 +70,7 @@ link: "https://medium.com/my-games-company/using-light-and-color-in-game-develop
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Using light and color in game development: a beginner's guide](/assets/img/2024-05-27-Usinglightandcoloringamedevelopmentabeginnersguide_4.png)
 
 # 구성, 톤, 색상
@@ -79,7 +78,7 @@ link: "https://medium.com/my-games-company/using-light-and-color-in-game-develop
 그래서 빛은 게임이나 영화 내에서 프레임 및 구성에서 중요한 요소입니다. 그러나 이 요소는 예술적인 규칙을 고려한다면에만 작용합니다: 선, 모양, 관점, 톤, 색 이론. 빛을 구성할 때 이론을 공부하고 적용하면 게임이 더 표현력 있고 흥미로워집니다.
 
 이론을 살펴보고 빛을 설정할 때 적용하는 것은 게임을 더 표현력 있고 흥미롭게 만듭니다. 기본적인 사항에 대해 알아보겠습니다. 구성부터 시작해봅시다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -137,9 +136,9 @@ link: "https://medium.com/my-games-company/using-light-and-color-in-game-develop
 
 아래 늑대 사진을 살펴보죠: 관찰자에게 얼마나 가까운지에 따라 빛과 톤으로 동물들을 그룹화한 것을 보여줍니다. 이 분할이 없다면, "카메라" 바로 앞에 앉아 있는 늑대와 먼 곳에 앉아 있는 늑대를 구별하기가 매우 어려울 것입니다.
 
-```markdown
+
 ![늑대 사진](/assets/img/2024-05-27-Usinglightandcoloringamedevelopmentabeginnersguide_8.png)
-```
+
 
 톤 키도 고려할 가치가 있는 유용한 도구입니다. 이는 사진, 프레임, 일러스트레이션의 표현 범위에 대한 정보를 제공하는 종류의 안내서입니다. 이 도구는 특히 게임에서 조명을 다룰 때 유용하며, 이야기 속에서 원하는 분위기를 원하는 시점에 달성할 수 있도록 도와줍니다.
 
@@ -152,7 +151,7 @@ link: "https://medium.com/my-games-company/using-light-and-color-in-game-develop
 - 어떤 분위기를 전달해야합니까?
 - 어떤 감정을 일으켜야합니까?
 
-보다 높은 컬러 키는 평온하고 희망을 전달할 수 있으며, 낮은 키는 긴장, 호기심, 위험을 전달할 수 있습니다. 
+보다 높은 컬러 키는 평온하고 희망을 전달할 수 있으며, 낮은 키는 긴장, 호기심, 위험을 전달할 수 있습니다.
 
 ![이미지](/assets/img/2024-05-27-Usinglightandcoloringamedevelopmentabeginnersguide_9.png)
 
@@ -178,7 +177,7 @@ link: "https://medium.com/my-games-company/using-light-and-color-in-game-develop
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-Usinglightandcoloringamedevelopmentabeginnersguide_12.png)
 
 이론에 따르면 항상 잘 어울리는 서로 다른 색상 세트가 있으며, 특별한 색상 바퀴를 사용하여 이러한 색상을 식별할 수 있습니다. 사실 다양한 조합이 있습니다: 상보적인 색상은 원의 반대편에 위치하며, 단일 색상 팔레트의 경우, 한 가지 색상을 취하고 조톤을 변경합니다; 유사한 색상은 색상 바퀴 상에서 서로 이어진 색상입니다.
@@ -186,7 +185,7 @@ link: "https://medium.com/my-games-company/using-light-and-color-in-game-develop
 각각의 예시를 살펴보겠습니다.
 
 ![image](/assets/img/2024-05-27-Usinglightandcoloringamedevelopmentabeginnersguide_13.png)
-```
+
 
 <div class="content-ad"></div>
 

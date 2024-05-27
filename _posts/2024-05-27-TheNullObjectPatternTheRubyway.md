@@ -3,7 +3,7 @@ title: "널 객체 패턴 - 루비 스타일"
 description: ""
 coverImage: "/assets/img/2024-05-27-TheNullObjectPatternTheRubyway_0.png"
 date: 2024-05-27 16:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TheNullObjectPatternTheRubyway_0.png
 tag: Tech
 originalTitle: "The Null Object Pattern — The Ruby way"
@@ -11,7 +11,6 @@ link: "https://medium.com/kode-art/the-null-object-pattern-the-ruby-way-0749ce7c
 ---
 
 
-```markdown
 ![image](/assets/img/2024-05-27-TheNullObjectPatternTheRubyway_0.png)
 
 # 소개
@@ -19,7 +18,7 @@ link: "https://medium.com/kode-art/the-null-object-pattern-the-ruby-way-0749ce7c
 당신은 아마도 위의 기사 이미지에서 보듯 유사한 오류를 만나본 적이 있을 것입니다. 뭔가 다음과 같은 내용이 포함되어 있죠: "undefined method 'username' for nil:NilClass".
 
 이 문구는 그저 'username' 메서드를 누락된 객체에 적용할 수 없다는 것을 의미합니다. 즉, 당신이 메서드 이름을 잘못 입력했거나 데이터베이스에서 제공된 ID로 찾는 객체가 삭제되었을 수 있습니다. 따라서, 이곳이 바로 Null 객체 패턴을 사용하여 이러한 공포스러운 화면을 피할 수 있는 정확한 장소입니다.
-```
+
 
 <div class="content-ad"></div>
 

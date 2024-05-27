@@ -65,9 +65,9 @@ helm repo update
 
 c. 설치
 
-```
+
 helm install argocd argo/argo-cd -n argocd
-```
+
 
 # Argo CD CLI:
 
@@ -258,7 +258,7 @@ data:
 ```
 
 "accounts.demouser.enabled"은 비밀번호를 활성화하거나 비활성화하는 데 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -321,7 +321,7 @@ C:\Users\vikas>kubectl edit configmap/argocd-rbac-cm -n argocd
 ```
 
 이 링크에서 각 정책 파일의 각 속성에 대한 자세한 내용을 찾을 수 있어요 RBAC Configuration — Argo CD — Declarative GitOps CD for Kubernetes (argo-cd.readthedocs.io)
-```
+
 
 <div class="content-ad"></div>
 

@@ -742,7 +742,7 @@ def calculate_discount(price):
 
 같은 코드를 한 번 이상 작성하지 않도록 합니다. 대신 함수, 클래스, 모듈, 라이브러리 또는 기타 추상화를 사용하여 코드를 재사용하세요. 이렇게 하면 코드가 더 효율적이고 일관되며 유지 보수가 용이해집니다.
 
-````
+```
 
 <div class="content-ad"></div>
 
@@ -760,7 +760,7 @@ def calculate_laptop_price(quantity, price):
 
 def calculate_product_price(product_quantity, product_price):
     return product_quantity * product_price
-````
+```
 
 ## LAW 41: 존중할 만한 코딩 기준을 따르세요.
 

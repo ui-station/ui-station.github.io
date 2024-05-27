@@ -223,7 +223,7 @@ val backVisible = when (windowWidthSize) {
 ## SupportingPaneScaffold
 
 새로운 적응형 레이아웃 기능을 탐색하기 위해 SupportingPaneScaffold를 간단히 살펴보겠습니다. 이 구성 요소는 핵심 기능인 탐색 관리와 창 내용 표시를 ListDetailPaneScaffold와 유사한 점을 가지고 있습니다. 하지만 SupportingPaneScaffold는 주요 콘텐츠 창과 오른쪽에 있는 더 작은 "보조" 창을 함께 사용하는 경우에 맞게 설계되었습니다. 이는 보조 콘텐츠가 주요 콘텐츠를 보완하거나 부가 정보를 제공하지만 동일한 화면 공간이 필요하지 않은 상황에 이상적입니다.
-```
+
 
 <div class="content-ad"></div>
 

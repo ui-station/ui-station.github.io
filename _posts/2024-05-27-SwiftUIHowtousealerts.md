@@ -3,13 +3,12 @@ title: "SwiftUI 얼럿alerts 사용 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-SwiftUIHowtousealerts_0.png"
 date: 2024-05-27 16:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SwiftUIHowtousealerts_0.png
 tag: Tech
 originalTitle: "[SwiftUI] How to use alerts"
 link: "https://medium.com/@ganeshrajugalla/swiftui-how-to-use-alerts-29a5ceef24d9"
 ---
-
 
 <img src="/assets/img/2024-05-27-SwiftUIHowtousealerts_0.png" />
 
@@ -80,10 +79,10 @@ Text를 사용하여 제목 아래에 자세한 메시지를 설정할 수 있�
 import SwiftUI
 
 struct AlertsBootCamp: View {
-    
+
     // MARK: - 속성
     @State private var isShowAlert: Bool = false
-    
+
     // MARK: - 본문
     var body: some View {
         Button(action: {
@@ -120,10 +119,10 @@ struct AlertsBootCamp: View {
 import SwiftUI
 
 struct AlertsBootCamp: View {
-    
+
     // MARK: - Properties
     @State private var isShowAlert: Bool = false
-    
+
     // MARK: - Body
     var body: some View {
         Button(action: {
@@ -161,15 +160,15 @@ struct AlertsBootCamp: View {
 
 <div class="content-ad"></div>
 
-3개의 버튼이 있는 테이블을 만들려면 
+3개의 버튼이 있는 테이블을 만들려면
 다음 Markdown 형식을 사용하실 수 있습니다.
 
-```markdown
+
 | Header1 | Header2 | Header3 |
 |---------|---------|---------|
 | Data1   | Data2   | Data3   |
 | Data4   | Data5   | Data6   |
-```
+
 
 <div class="content-ad"></div>
 
@@ -179,13 +178,13 @@ Button("Title", role: ButtonRole?, action: { action button })
 
 3가지 유형을 지정할 수 있습니다:
 
-1) 취소
+1. 취소
 
-2) 파괴성
+2. 파괴성
 
 <div class="content-ad"></div>
 
-3) 아무 값도 지정하지 않으면 버튼은 기본 스타일인 파란색으로 나타납니다.
+3. 아무 값도 지정하지 않으면 버튼은 기본 스타일인 파란색으로 나타납니다.
 
 .cancel
 취소 버튼은 진한 파란색으로 스타일이 지정됩니다. 버튼이 두 개인 경우 항상 왼쪽에 위치하며, 세 개 이상인 경우에는 맨 아래에 위치합니다.
@@ -203,10 +202,10 @@ Button("Title", role: ButtonRole?, action: { action button })
 import SwiftUI
 
 struct AlertsBootCamp: View {
-    
+
     // MARK: - Properties
     @State private var isShowAlert: Bool = false
-    
+
     // MARK: - Body
     var body: some View {
         Button(action: {
@@ -223,7 +222,7 @@ struct AlertsBootCamp: View {
                 })
         })
         .alert("제목", isPresented: $isShowAlert) {
-            
+
             Button("삭제", role: .destructive) {
                 // 동작이 여기에 들어갑니다.
             }
@@ -245,11 +244,11 @@ iOS14 이전에는 특별한 조치가 필요했습니다.
 
 ```js
 struct ContentView: View {
-    
+
     // MARK: - Properties
     @State private var isShowAlert1: Bool = false
     @State private var isShowAlert2: Bool = false
-    
+
     // MARK: - Body
     var body: some View {
         VStack {

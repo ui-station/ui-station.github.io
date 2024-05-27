@@ -3,13 +3,12 @@ title: "APKTOOL을 사용하여 APK를 디컴파일하고 재컴파일하는 방
 description: ""
 coverImage: "/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_0.png"
 date: 2024-05-27 16:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_0.png
 tag: Tech
 originalTitle: "Decompile and Recompile APK using APKTOOL : Beginners Guide"
 link: "https://medium.com/@ps.sujith/decompile-and-recompile-apk-using-apktool-beginners-guide-4ad03c2c5b8f"
 ---
-
 
 개인 실험을 위한 앱의 디컴파일 및 다시 컴파일하는 과정을 찾다가 많은 기사와 블로그를 만나게 되었습니다. 그 중 일부는 몇 단계를 놓치거나 다른 도구를 사용했습니다. 그래서 저는 apktool을 사용하여 앱을 디컴파일하고 다시 컴파일하는 방법에 대한 기사를 쓰기로 생각했습니다. 제가 수집한 모든 정보를 통합하고 샘플 표현과 함께 제시하겠습니다.
 
@@ -46,10 +45,11 @@ brew install apktool
 
 화면에 "Original App"이라는 텍스트를 표시하는 앱의 프로가드가 활성화된 — 서명된 APK가 있어요
 우리 실험의 목표는
-* 이 APK를 디컴파일하기
-* 배경색과 텍스트 색상 변경하기
-* 텍스트 "Original App"을 "Recompiled App"으로 바꾸기
-* 성공적으로 재컴파일하고 앱에 서명하기
+
+- 이 APK를 디컴파일하기
+- 배경색과 텍스트 색상 변경하기
+- 텍스트 "Original App"을 "Recompiled App"으로 바꾸기
+- 성공적으로 재컴파일하고 앱에 서명하기
 
 <div class="content-ad"></div>
 
@@ -88,8 +88,7 @@ Stage 2 : 파일 수정
 
 <div class="content-ad"></div>
 
-```markdown
-![Image](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_4.png)
+mage](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_4.png)
 
 Android Studio에서는 이 리소스 파일을 창으로 드래그하거나 XML 편집기를 사용하여 열 수 있습니다.
 배경색을 빨간색으로, 텍스트 색상을 노란색으로 변경했습니다. 그런 다음, 텍스트를 "재컴파일된 앱"으로 변경했습니다.
@@ -97,7 +96,6 @@ Android Studio에서는 이 리소스 파일을 창으로 드래그하거나 XML
 Stage 3: 디컴파일된 리소스를 APK로 재컴파일하기
 
 변경 사항을 적용한 후, 다음 명령을 사용하여 디컴파일된 파일을 APK로 재컴파일할 예정입니다:
-```
 
 <div class="content-ad"></div>
 
@@ -113,7 +111,6 @@ apktool b [디컴파일된 파일의 루트 폴더 위치]
 
 <div class="content-ad"></div>
 
-```markdown
 ![image](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_6.png)
 
 Stage 4: Zipalign the apk for the optimal loading
@@ -121,7 +118,8 @@ Stage 4: Zipalign the apk for the optimal loading
 Zipalign is a zip archive alignment tool that helps ensure that all uncompressed files in the archive are aligned relative to the start of the file. Zipalign tool can be found in the “Build Tools” folder within the Android SDK path.
 
 ![image](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_7.png)
-```  
+
+`
 
 <div class="content-ad"></div>
 
@@ -162,7 +160,6 @@ apksigner sign --ks [키스토어 이름] --v1-signing-enabled true --v2-signing
 
 <div class="content-ad"></div>
 
-```markdown
 <img src="/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_11.png" />
 
 Stage 7: Verify the signed APK
@@ -171,8 +168,8 @@ The zip-aligned — signed APK can be verified using the same apksigner.
 
 ```js
 apksigner verify [signed apk location]
-``` 
 ```
+
 
 <div class="content-ad"></div>
 
@@ -188,7 +185,7 @@ adb install /Users/matrix/Documents/APK/experimentapp_zipaligned.apk
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![앱의 배경과 텍스트 색상이 변경되었어요](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_13.png)
 
 와우! 앱의 배경과 텍스트 색상이 변경되었어요.
@@ -196,7 +193,7 @@ adb install /Users/matrix/Documents/APK/experimentapp_zipaligned.apk
 ![실험 성공](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_14.png)
 
 실험 성공 .....
-```
+
 
 <div class="content-ad"></div>
 

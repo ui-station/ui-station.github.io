@@ -3,13 +3,12 @@ title: "100배 빠르게 - 수십억 개의 임베딩을 위한 RAG 앱 확장�
 description: ""
 coverImage: "/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_0.png"
 date: 2024-05-27 16:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_0.png
 tag: Tech
 originalTitle: "100x Faster — Scaling Your RAG App for Billions of Embeddings"
 link: "https://medium.com/gitconnected/100x-faster-scaling-your-rag-app-for-billions-of-embeddings-ded34fccd16a"
 ---
-
 
 가장 큰 문제 중 하나는 RAG 어플리케이션의 연산 검색 시간입니다. 1조 개의 임베딩 벡터 기록이 있는 벡터 데이터베이스가 있다고 상상해보세요. 사용자 쿼리를 1조 개의 벡터와 일치시키려고 하면 올바른 정보를 검색하는 데 1분 이상이 걸릴 것입니다.
 
@@ -48,20 +47,21 @@ Chunkdot을 설치하려면 다른 라이브러리와 마찬가지인 유사한 
 
 <div class="content-ad"></div>
 
-```md
 # chunkdot 설치하기
+
+```bash
 pip install chunkdot
 ```
 
 무엇이든 실행하기 전에 먼저 Kaggle 환경에서 사용 가능한 메모리를 확인해야 합니다.
 
-```md
 # 사용 가능한 메모리 확인하기
+
+```bash
 !free -h
 ```
 
 <img src="/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_1.png" />
-```
 
 <div class="content-ad"></div>
 
@@ -90,34 +90,34 @@ import timeit
 def cosine_pseudocode(query_v, doc_v, num_indices):
     """
     Embedding 벡터와 쿼리 벡터 간의 가장 높은 코사인 유사도 값을 가진 인덱스를 반환합니다.
-    
+
     매개변수:
         query_v (numpy.ndarray): 쿼리 벡터.
         doc_v (list of numpy.ndarray): Embedding 벡터의 목록.
         num_indices (int): 반환할 상위 인덱스 개수.
-        
+
     반환값:
         list of int: 가장 높은 코사인 유사도 값을 가진 인덱스들.
     """
     cosine_similarities = []  # 코사인 유사도를 저장할 빈 리스트를 초기화합니다.
 
     query_norm = np.linalg.norm(query_v)  # 쿼리 벡터의 노름을 계산합니다.
-    
+
     # 리스트에 있는 각 문서의 임베딩 벡터에 대해 반복합니다.
     for vec in doc_v:
         dot_product = np.dot(vec, query_v.T)  # 임베딩 벡터와 쿼리 벡터 간의 내적을 계산합니다.
         embedding_norm = np.linalg.norm(vec)  # 임베딩 벡터의 노름을 계산합니다.
         cosine_similarity = dot_product / (embedding_norm * query_norm)  # 코사인 유사도 계산
         cosine_similarities.append(cosine_similarity)  # 코사인 유사도를 리스트에 추가합니다.
-    
+
     cosine_similarities = np.array(cosine_similarities)  # 리스트를 넘파이 배열로 변환합니다.
-    
+
     # 배열을 내림차순으로 정렬합니다.
     sorted_array = sorted(range(len(cosine_similarities)), key=lambda i: cosine_similarities[i], reverse=True)
 
     # 상위 num_indices 값을 가져옵니다.
     top_indices = sorted_array[:num_indices]
-    
+
     # 가장 높은 코사인 유사도 값을 가진 인덱스를 반환합니다.
     return top_indices
 ```
@@ -138,24 +138,24 @@ def cosine_pseudocode(query_v, doc_v, num_indices):
 def cosine_chunkdot(query_v, doc_v, num_indices, max_memory):
     """
     청크닷 라이브러리를 사용하여 코사인 유사도를 계산합니다.
-    
+
     매개변수:
         query_v (numpy.ndarray): 쿼리 벡터.
         doc_v (numpy.ndarray): 임베딩 벡터 목록.
         num_indices (int): 검색할 상위 인덱스 수.
         max_memory (float): 사용할 최대 메모리.
-        
+
     반환값:
-        numpy.ndarray: 상위 k 인덱스. 
+        numpy.ndarray: 상위 k 인덱스.
     """
-    
+
     # 코사인 유사도 계산
-    cosine_array = cosine_similarity_top_k(embeddings=query_v, embeddings_right=doc_v, 
+    cosine_array = cosine_similarity_top_k(embeddings=query_v, embeddings_right=doc_v,
                                          top_k=num_indices, max_memory=max_memory)  # 청크닷을 사용하여 코사인 유사도 계산
 
     # 상위 값의 인덱스 가져오기
     top_indices = cosine_array.nonzero()[1]
-    
+
     # 상위 유사 결과 반환
     return top_indices
 ```
@@ -205,7 +205,7 @@ chunkdot을 사용한 상위 인덱스: [4]
 ```js
 # 소요 시간 계산
 def calculate_execution_time(query_v, doc_v, num_indices, max_memory, times):
-    
+
     # 의사코드 함수 실행에 걸리는 시간 계산
     pseudocode_time = round(timeit.timeit(lambda: cosine_pseudocode(query_v, doc_v, num_indices), number=times), 5)
 
@@ -247,7 +247,8 @@ calculate_execution_time(user_query, doc_embeddings, top_indices, max_memory, 10
 ![그래프](/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_2.png)
 
 Chunkdot은 유사도 비교 코드와 비교해 더 많은 시간이 소요됩니다. 이는 Chunkdot이 먼저 청크를 생성하고 각 청크에서 계산을 수행한 후 병합하기 때문입니다. 따라서 이 소규모 예제에 대해서는 적합한 해결책이 아닐 수 있습니다. 그러나 나중에 더 큰 예제를 다룰 때 Chunkdot의 이점을 확인하게 될 것입니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -304,7 +305,7 @@ print(doc_embeddings.nbytes / (1024 * 1024 * 1024),
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_5.png)
 
 17GB의 사용 가능한 메모리가 있습니다. 어떠한 메모리 오류도 피하기 위해 max_memory 매개변수의 안전한 값을 12GB로 설정할 것입니다. 결과를 확인해 봅시다.
@@ -327,7 +328,8 @@ calculate_execution_time(user_query, doc_embeddings, top_indices, max_memory, ti
 ```
 
 ![image](/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_6.png)
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -363,8 +365,8 @@ top_indices = 100 # 검색할 상위 인덱스 수
 max_memory = 5E9 # 최대 메모리를 5GB로 설정
 
 # 진행 표시 막대와 함께
-output_array = cosine_similarity_top_k(user_query, doc_embeddings, 
-                        top_k=top_indices, 
+output_array = cosine_similarity_top_k(user_query, doc_embeddings,
+                        top_k=top_indices,
                         show_progress=True)
 ```
 
@@ -374,22 +376,22 @@ Chunkdot의 출력은 희소 행렬이며, 다음을 사용하여 배열로 변�
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 출력 변환
 output_array.toarray()
-```
+
 
 Chunkdot은 문서 임베딩에 대해서만 사용할 수 있습니다. 이는 각 문서 임베딩 요소에 대해 가장 유사한 상위 k개 요소를 반환할 것입니다.
 
-```markdown
+
 # 총 5개의 문서 임베딩
 embeddings = np.random.randn(5, 256)
 
 # 각각의 상위 2개 가장 유사한 항목 인덱스 반환
 cosine_similarity_top_k(embeddings, top_k=2).toarray()
-```
 
-```markdown
+
+
 ### 출력 ###
 array([[1.        , 0.        , 0.        , 0.        , 0.09924064],
        [0.        , 1.        , 0.        , 0.09935381, 0.        ],
@@ -397,7 +399,7 @@ array([[1.        , 0.        , 0.        , 0.        , 0.09924064],
        [0.        , 0.09935381, 0.        , 1.        , 0.        ],
        [0.09924064, 0.        , 0.        , 0.        , 1.        ]]
 ### 출력 ###
-```
+
 
 <div class="content-ad"></div>
 

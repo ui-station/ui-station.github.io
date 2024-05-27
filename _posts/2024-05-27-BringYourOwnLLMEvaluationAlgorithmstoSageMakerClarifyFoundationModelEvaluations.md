@@ -3,7 +3,7 @@ title: "당신만의 LLM 평가 알고리즘을 SageMaker Clarify Foundation 모
 description: ""
 coverImage: "/assets/img/2024-05-27-BringYourOwnLLMEvaluationAlgorithmstoSageMakerClarifyFoundationModelEvaluations_0.png"
 date: 2024-05-27 17:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-BringYourOwnLLMEvaluationAlgorithmstoSageMakerClarifyFoundationModelEvaluations_0.png
 tag: Tech
 originalTitle: "Bring Your Own LLM Evaluation Algorithms to SageMaker Clarify Foundation Model Evaluations"
@@ -11,7 +11,6 @@ link: "https://medium.com/aws-in-plain-english/bring-your-own-llm-evaluation-alg
 ---
 
 
-```markdown
 ![Amazon SageMaker Clarify Foundation Model Evaluations](/assets/img/2024-05-27-BringYourOwnLLMEvaluationAlgorithmstoSageMakerClarifyFoundationModelEvaluations_0.png)
 
 Amazon SageMaker Clarify Foundation Model Evaluations는 내장 평가 알고리즘을 다양한 NLP 작업(요약, 질의 응답, 유해성 감지 등)에 걸쳐 실행할 수 있는 도구입니다. 이 기능은 오픈 소스 FMEval Python 라이브러리를 통해 코드로 이용할 수 있으며, 모든 내장 알고리즘의 구현이 공유되어 더 많은 이해와 투명성을 제공합니다.
@@ -19,7 +18,7 @@ Amazon SageMaker Clarify Foundation Model Evaluations는 내장 평가 알고리
 FMEval은 여러분의 LLMOps/FMOPs 워크플로에 손쉽게 통합할 수 있기 때문에 강력한 도구이며, SageMaker Pipelines 및 일반적인 AWS 생태계와 쉽게 통합됩니다. 사용 가능한 알고리즘 스위트가 있음에도 불구하고 사용자가 자신의 사용 사례에 맞게 자체 LLM 평가 알고리즘을 구현해야 하는 경우가 종종 있습니다.
 
 이 예제에서는 FMEval 라이브러리를 확장하여 "자체 알고리즘을 가져오는" 방법을 살펴보겠습니다. 이 블로그에서는 단순히 Amazon Comprehend의 내장 유해성 감지 API를 "사용자 정의 알고리즘"으로 가져다 사용할 것입니다. 라이브러리에서 제공되는 것을 활용하고 싶다면 FMEval은 이미 자체 유해성 알고리즘을 구현하고 있음을 참고하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -62,7 +61,7 @@ FMEval을 사용하면, 데이터 구성 객체에는 기존 모델 출력이 �
 import json
 def create_payload(text_input: str) -> str:
     # bedrock 모델에서 추론할 시 직렬화된 payload를 반환합니다
-    
+
     prompt_data = f"""Human: {text_input}
 
     Assistant:
@@ -117,7 +116,8 @@ custom_config = DataConfig(
 ```
 
 데이터가 준비되었으므로, Amazon Comprehend를 FMEval 내에서 사용자 정의 평가 알고리즘으로 구현할 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -223,7 +223,7 @@ def evaluate(self, model: Optional[ModelRunner] = None, dataset_config: Optional
             eval_score = CustomEvaluator.comprehend_eval_algo(model_output)
             line["eval_score"] = eval_score
             data.append(line)
-    
+
     # 출력 데이터로 Pandas DataFrame 생성
     df = pd.DataFrame(data)
     # 결과를 동일 경로에 출력 데이터 위치에 작성, 필요에 따라 사용자 지정 가능
@@ -236,7 +236,8 @@ def evaluate(self, model: Optional[ModelRunner] = None, dataset_config: Optional
 ```
 
 평가 알고리즘이 정의되었으므로, 주요 노트북에서 알고리즘을 인스턴스화하고 두 메서드를 테스트할 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -254,7 +255,8 @@ custom_evaluator.evaluate_sample(model_output="I am super angry and super upset 
 ```
 
 ![이미지](/assets/img/2024-05-27-BringYourOwnLLMEvaluationAlgorithmstoSageMakerClarifyFoundationModelEvaluations_2.png)
-```
+
+
 
 <div class="content-ad"></div>
 

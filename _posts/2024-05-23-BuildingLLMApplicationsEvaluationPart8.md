@@ -409,7 +409,7 @@ benchmark = BigBenchHard(
 # 'mistral_7b'를 사용자 정의 모델로 교체
 benchmark.evaluate(model=mistral_7b)
 print(benchmark.overall_score)
-````
+```
 
 다시 한번 DeepEval의 BBH 문서 페이지에서 더 많은 정보를 얻을 수 있습니다.
 

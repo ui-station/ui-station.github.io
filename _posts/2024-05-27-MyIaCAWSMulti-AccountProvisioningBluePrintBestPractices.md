@@ -3,13 +3,12 @@ title: "내 IaC AWS 다중 계정 프로비저닝 블루프린트, 최고의 관
 description: ""
 coverImage: "/assets/img/2024-05-27-MyIaCAWSMulti-AccountProvisioningBluePrintBestPractices_0.png"
 date: 2024-05-27 17:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-MyIaCAWSMulti-AccountProvisioningBluePrintBestPractices_0.png
 tag: Tech
 originalTitle: "My IaC AWS Multi-Account Provisioning BluePrint , Best Practices…"
 link: "https://medium.com/@hector-reyesaleman/my-iac-aws-multi-account-provisioning-blueprint-best-practices-4d18e280d403"
 ---
-
 
 ## SSO 사용자와 함께 Terraform 실행 역할을 가정하는 방법.
 
@@ -321,13 +320,13 @@ EOF
 
 Terragrunt가 생성기에 보간을 허용하므로 모든 대상 AWS 계정에 대해 매개변수화할 수 있습니다.
 
-## infrastructure/live/_env/app.hcl
+## infrastructure/live/\_env/app.hcl
 
 <div class="content-ad"></div>
 
-```markdown
+
 테이블 태그를 마크다운 형식으로 변경해주세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -404,7 +403,7 @@ AWS 계정에 권한 집합을 만드는 방법 및 권한 집합을 AWS 계정�
 최소한의 애플리케이션을 위해 DNS, 네트워킹 및 식별 관리 역할 및 정책과 같은 플랫폼 리소스를 제공해야 합니다.
 
 ```js
-➜  live git:(main) ✗ tree   
+➜  live git:(main) ✗ tree
 .
 ├── _env
 │   ├── route53-zones.hcl
@@ -482,7 +481,7 @@ locals {
     test = "arn:aws:iam::555555555555:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_terraform-test_ab2"
     production = "arn:aws:iam::555555555555:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_terraform-production_ab3"
   }
-  
+
   # 기타 플랫폼 구성 값들
   # ===================================
   # DNS
@@ -563,7 +562,7 @@ inputs = {
 
 ## infrastructure/modules/platform/iam-roles
 
-"Iam:*"에 대한 범위를 좁히고 있음을 알려드립니다. 이는 Terraform이 응용 프로그램을 위해 Role 및 정책을 생성, 제거 및 업데이트해야하기 때문에 필요한 권한입니다. 그러나 이 경우 ":role/app/*" 내의 Roles 및 Policies로 범위를 좁힐 수 있습니다.
+"Iam:_"에 대한 범위를 좁히고 있음을 알려드립니다. 이는 Terraform이 응용 프로그램을 위해 Role 및 정책을 생성, 제거 및 업데이트해야하기 때문에 필요한 권한입니다. 그러나 이 경우 ":role/app/_" 내의 Roles 및 Policies로 범위를 좁힐 수 있습니다.
 
 ```json
 data "aws_caller_identity" "current" {}
@@ -707,7 +706,7 @@ output=json
 
 <div class="content-ad"></div>
 
-```markdown
+
 혹시 매핑할까요? 아니면 환경과 접두사를 추가할까요?….
 
 ```js
@@ -717,7 +716,7 @@ remote_state {
   }
   config = {
    ........
-    
+
     # 여기가 문제입니다
     profile        = "terraform" # 혹은 "terraform-test" 또는 "terraform-production"
   }
@@ -773,7 +772,7 @@ locals {
     test = "arn:aws:iam::555555555555:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_terraform-test_ab2"
     production = "arn:aws:iam::555555555555:role/aws-reserved/sso.amazonaws.com/AWSReservedSSO_terraform-production_ab3"
   }
-  
+
   # Other Platform Config Values Below
   # ===================================
   # DNS
@@ -990,7 +989,7 @@ aws-vault exec terraform-production terragrunt apply
 ## 결과
 
 ```js
- $ aws-vault exec terraform-production terragrunt apply                           
+ $ aws-vault exec terraform-production terragrunt apply
 
 
 

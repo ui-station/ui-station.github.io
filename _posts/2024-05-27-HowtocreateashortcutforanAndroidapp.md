@@ -3,7 +3,7 @@ title: "안드로이드 앱을 위한 바로 가기 생성 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-HowtocreateashortcutforanAndroidapp_0.png"
 date: 2024-05-27 16:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowtocreateashortcutforanAndroidapp_0.png
 tag: Tech
 originalTitle: "How to create a shortcut for an Android app."
@@ -11,7 +11,6 @@ link: "https://medium.com/@charles.raj412/how-to-create-a-shortcut-for-an-androi
 ---
 
 
-```markdown
 ![image](/assets/img/2024-05-27-HowtocreateashortcutforanAndroidapp_0.png)
 
 안녕 친구들,
@@ -19,7 +18,7 @@ link: "https://medium.com/@charles.raj412/how-to-create-a-shortcut-for-an-androi
 안드로이드 애플리케이션에서 특정 작업이나 동작에 대한 바로 가기를 만드는 방법을 보여드릴 것을 기대합니다.
 
 먼저 의존성을 추가해보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -44,14 +43,14 @@ implementation ("androidx.core:core-google-shortcuts:1.1.0")
 그리고 해당 액티비티로 이동하기 위한 Intent 도 추가해야 해요. targetPackage 이름이 앱의 패키지 이름과 일치하는지 확인해 주세요.
 
 ```js
-android:targetPackage="com.task.master"
+android: targetPackage = "com.task.master";
 ```
 
 그렇게 하면 안드로이드 OS가 앱을 찾을 수 있어요. 그리고 바로 가기에 고유한 Id를 부여했는지 확인해 주세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
 
     <shortcut
@@ -101,13 +100,13 @@ android:targetPackage="com.task.master"
     </shortcut>
 
 </shortcuts>
-```
+
 
 안드로이드 앱에 파일 및 코드를 추가한 후 xml/shortcuts.xml에 정의한 바로가기가 표시됩니다.
 
 이제 액티비티에서 동적으로 바로 가기를 추가하는 방법을 보여드리겠습니다. ShortcutInfoCompat을 사용하여 동적으로 바로 가기를 추가할 수 있고 ShortcutManagerCompat을 사용하여 해당 바로 가기를 푸시할 수 있습니다. 아래 코드를 확인하여 동적 바로 가기를 추가하는 방법을 알아보세요.
 
-```markdown
+
   val context = this.baseContext
         val shortcut = ShortcutInfoCompat.Builder(context, "dynamic_Id")
             .setShortLabel("Dynamic Item")
@@ -121,7 +120,7 @@ android:targetPackage="com.task.master"
             )
             .build()
         ShortcutManagerCompat.pushDynamicShortcut(context, shortcut)
-```
+
 
 <div class="content-ad"></div>
 

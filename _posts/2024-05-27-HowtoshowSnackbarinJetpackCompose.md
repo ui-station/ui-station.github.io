@@ -3,17 +3,16 @@ title: "제트팩 컴포즈에서 스낵바를 어떻게 보여줄 수 있을까
 description: ""
 coverImage: "/assets/img/2024-05-27-HowtoshowSnackbarinJetpackCompose_0.png"
 date: 2024-05-27 16:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowtoshowSnackbarinJetpackCompose_0.png
 tag: Tech
 originalTitle: "How to show Snackbar in Jetpack Compose?"
 link: "https://medium.com/@jurajkunier/how-to-show-snackbar-in-jetpack-compose-3f2d81891f87"
 ---
 
-
 안녕하세요! 아래는 Markdown 형식으로 변경된 테이블 태그입니다.
 
-```markdown
+
 ![Jetpack Compose Snackbar](/assets/img/2024-05-27-HowtoshowSnackbarinJetpackCompose_0.png)
 
 저는 Snackbars에 대해 쓸 예정이며, Jetpack Compose에서 가장 쉬운 방법을 소개해 드릴 예정입니다.
@@ -21,7 +20,7 @@ link: "https://medium.com/@jurajkunier/how-to-show-snackbar-in-jetpack-compose-3
 따라서, 이어서 용어를 명확히 정리하면서 시작해 보겠습니다.
 
 # Snackbars란 무엇인가요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -39,8 +38,8 @@ link: "https://medium.com/@jurajkunier/how-to-show-snackbar-in-jetpack-compose-3
 
 - 스낵바 코포저블은 보여주거나 숨기는 옵션이나 애니메이션 없이 머터리얼 디자인 가이드라인에 정의된 스낵바의 시각적 표현에 불과합니다.
 - 스낵바 호스트는 스낵바의 표시 및 숨김, 그리고 애니메이션을 담당하는 구성 요소입니다. 이는 이전에 언급한 스낵바를 감싸는 UI 래퍼입니다.
-- 스낵바 호스트 상태는 스낵바 호스트 내에 표시되는 현재 스낵바 및 나중에 표시할 스낵바 대기열을 제어합니다. 한 번에 최대 하나의 스낵바만 표시할 수 있도록 보장합니다. 
-showSnackbar()라는 중단 메서드가 있어 새로운 스낵바를 표시할 수 있습니다.
+- 스낵바 호스트 상태는 스낵바 호스트 내에 표시되는 현재 스낵바 및 나중에 표시할 스낵바 대기열을 제어합니다. 한 번에 최대 하나의 스낵바만 표시할 수 있도록 보장합니다.
+  showSnackbar()라는 중단 메서드가 있어 새로운 스낵바를 표시할 수 있습니다.
 
 자, 이제 스낵바가 무엇이며 어떻게 구현되는지 명확해졌습니다. 처음에 말한대로 최선의 방법으로 표시하는 방법을 보여드리도록 하겠습니다. 하지만 먼저, 스카폴드를 간단히 소개하겠습니다.
 
@@ -104,7 +103,8 @@ fun SnackbarDemo() {
 이 문제를 해결하기 위해 현재 스레드를 차단하지 않고 새로운 코루틴을 시작하는 코루틴 범위를 사용합니다. 이제 버튼을 누르면 스낵바가 화면에 나타나야 합니다.
 
 표시된 스낵바가 해제되었는지, 사용자가 스낵바의 액션을 클릭했는지 확인하려면 중단된 함수에 의해 반환된 SnackbarResult를 확인하면 됩니다. SnackbarResult는 Dimissined 또는 ActionPerformed 값을 갖는 enum이며 업무 로직을 이에 따라 구현할 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -136,4 +136,7 @@ fun SnackbarDemo() {
 구현 내용을 확인하려면 YouTube 비디오를 참조하십시오. 전체 튜토리얼과 최종 결과를 녹화한 영상이 있습니다.
 
 이 기사가 마음에 드시면 좋아요를 눌러 주시고 피드백을 남기시고 친구들과 공유해 주세요. 즐거운 코딩되세요!
-```
+
+
+
+

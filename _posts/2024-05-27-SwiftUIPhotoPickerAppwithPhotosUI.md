@@ -3,7 +3,7 @@ title: "SwiftUI Photo Picker 앱을 PhotosUI로 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-27-SwiftUIPhotoPickerAppwithPhotosUI_0.png"
 date: 2024-05-27 16:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SwiftUIPhotoPickerAppwithPhotosUI_0.png
 tag: Tech
 originalTitle: "SwiftUI Photo Picker App with PhotosUI"
@@ -11,7 +11,6 @@ link: "https://medium.com/@rizal_hilman/swiftui-photo-picker-app-with-photosui-0
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-27-SwiftUIPhotoPickerAppwithPhotosUI_0.png)
 
 SwiftUI와 PhotosUI는 iOS 앱에서 풍부하고 인터랙티브한 사용자 인터페이스를 만드는 강력한 도구를 제공합니다. 이 튜토리얼에서는 사용자가 사진 라이브러리에서 사진을 선택하고 표시할 수 있는 앱을 만들겠습니다.
@@ -21,7 +20,7 @@ SwiftUI와 PhotosUI는 iOS 앱에서 풍부하고 인터랙티브한 사용자 �
 - Xcode를 열고 새 SwiftUI 프로젝트를 생성합니다.
 - 프로젝트의 이름을 지정합니다 (예: "PhotoPickerApp").
 - 사용자 인터페이스로 SwiftUI를 선택하고 프로그래밍 언어로 Swift를 선택해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -130,7 +129,7 @@ private var imagesSection: some View {
 private func loadSelectedPhotos() {
     images.removeAll()
     errorMessage = nil
-    
+
     Task {
         await withTaskGroup(of: (UIImage?, Error?).self) { taskGroup in
             for photoItem in selectedPhotos {
@@ -146,7 +145,7 @@ private func loadSelectedPhotos() {
                     }
                 }
             }
-            
+
             for await result in taskGroup {
                 if let error = result.1 {
                     errorMessage = "한 개 이상의 이미지를 불러오지 못했습니다."
@@ -187,7 +186,7 @@ private func loadSelectedPhotos() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](https://miro.medium.com/v2/resize:fit:720/1*AtvjZ8d79WvKb85R-jBVVg.gif)
 
 # 요약
@@ -195,7 +194,7 @@ private func loadSelectedPhotos() {
 이 튜토리얼은 사용자가 사진을 선택하고 표시할 수 있는 SwiftUI 앱을 만드는 방법을 안내했습니다. 상태 관리, 비동기 작업 및 이미지 처리를 다루었습니다. 이 앱은 사진 편집, 저장 또는 공유와 같은 추가 기능으로 확장할 수 있습니다. SwiftUI와 PhotosUI를 활용하여 앱의 기능과 사용자 경험을 향상시켜 보세요.
 
 즐거운 코딩되세요!
-```
+
 
 <div class="content-ad"></div>
 

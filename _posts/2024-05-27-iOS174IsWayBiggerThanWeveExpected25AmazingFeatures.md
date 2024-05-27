@@ -3,13 +3,12 @@ title: "iOS 174는 예상 이상으로 매우 큽니다 - 놀라운 25가지 기
 description: ""
 coverImage: "/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_0.png"
 date: 2024-05-27 18:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_0.png
 tag: Tech
 originalTitle: "iOS 17.4 Is Way Bigger Than We’ve Expected — 25+ Amazing Features!"
 link: "https://medium.com/macoclock/ios-17-4-is-way-bigger-than-weve-expected-25-amazing-features-b690cf7156c2"
 ---
-
 
 애플이 이렇게 슬퍼한 적이 없었어요.
 
@@ -21,7 +20,7 @@ iOS에 대한 상당히 중요한 (그리고 매우 필요한) 업데이트이�
 
 <div class="content-ad"></div>
 
-그러나 Apple은 이점을 위해 뭔가를 했습니다. 현재, EU가 요구하는 기능은 EU 기반 아이폰에만 적용되며, 이는 전체 수익의 7%를 차지합니다. 대단한 아이디어네요. 
+그러나 Apple은 이점을 위해 뭔가를 했습니다. 현재, EU가 요구하는 기능은 EU 기반 아이폰에만 적용되며, 이는 전체 수익의 7%를 차지합니다. 대단한 아이디어네요.
 
 그래서 Apple은 세계의 다른 나라에서도 독점 노래를 부를 수 있습니다. 그리고 사람들은 그 맥락에서 멜로디를 즐겨 들을 지 여부와는 상관없이 그것을 듣는 다른 선택지가 없습니다.
 
@@ -103,15 +102,15 @@ iOS에서 사이드 로딩이 시작되었습니다!
 
 하지만 이것은 브라우저인 사파리의 설정에서는 표시되지 않습니다. 이것도 브라우저인데 이상하네요...
 
-```markdown
+
 <img src="/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_1.png" />
-```
+
 
 하지만 기본 브라우저를 크롬, 파이어폭스 또는 사파리가 아닌 다른 브라우저로 변경하면 사파리 설정에서도 이 부분이 마법처럼 나타납니다.
 
-```markdown
+
 <img src="/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_2.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -206,15 +205,15 @@ Apple은 iOS에서 엔진을 실행하기 전에 철저한 검사를 실시할 �
 
 iOS 17.3의 "The Stolen Device Protection" 기능은 사용자의 개인 정보 보호와 보안을 위한 iOS의 훌륭한 새로운 추가입니다.
 
-이는 생체 인증 확인과 중요한 시스템 설정을 변경하려고 할 때 1시간의 지연을 설정합니다. 자세한 정보는 이 기사에서 확인하세요 → 
+이는 생체 인증 확인과 중요한 시스템 설정을 변경하려고 할 때 1시간의 지연을 설정합니다. 자세한 정보는 이 기사에서 확인하세요 →
 
 그러나 가정 또는 직장과 같이 익숙한 장소에 있는 경우에는 지연이 강제로 적용되지 않습니다. 익숙한 장소가 아니라면 이 둘 다 해야 합니다.
 
-하지만 iOS 17.4에서 Apple은 iPhone이 위치와 관계없이 1시간의 지연을 강제로 적용할 수 있는 유용한 기능을 가져왔습니다. (설정에서 조정하세요 ⚙️ ` Face ID & Passcode 🙂 ` Stolen Device Protection)
+하지만 iOS 17.4에서 Apple은 iPhone이 위치와 관계없이 1시간의 지연을 강제로 적용할 수 있는 유용한 기능을 가져왔습니다. (설정에서 조정하세요 ⚙️ `Face ID & Passcode 🙂` Stolen Device Protection)
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_8.png)
 
 - Selecting 'Always' always implements a 1-hour delay.
@@ -223,11 +222,11 @@ iOS 17.3의 "The Stolen Device Protection" 기능은 사용자의 개인 정보 
 ## #8. Access to 'Contactless & NFC' for 3rd party apps
 
 There is a new section called 'Contactless & NFC' in Settings ⚙️ Privacy & Security ✋.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_9.png)
 
 Inside, it's empty for now — but it says:
@@ -235,7 +234,7 @@ Inside, it's empty for now — but it says:
 So Apple’s allowing 3rd party apps to use iPhone's built-in NFC payments feature (for tap-to-pay or cardless POS machine payments).
 
 And in the EU, Apple allows users to select a 3rd-party contactless payment app as default — instead of Wallet. Cool, right?
-```
+
 
 <div class="content-ad"></div>
 
@@ -259,7 +258,7 @@ Safari에서 탭 바를 사용하는 경우 (상단이 아닌 하단에 탭이 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image 1](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_11.png)
 
 I didn’t like it, but maybe it takes some time to get used to it.
@@ -267,7 +266,7 @@ I didn’t like it, but maybe it takes some time to get used to it.
 ## #11. ‘Play All Animations’ in a webpage
 
 ![Image 2](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_12.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -349,7 +348,7 @@ Apple Cash Card는 Apple Wallet에 좋은 추가입니다.
 
 ![이미지](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_18.png)
 
-이것은 설정 ⚙️ ` 개인정보 및 보안 ✋ ` 분석 및 개선의 새로운 분석 옵션입니다.
+이것은 설정 ⚙️ `개인정보 및 보안 ✋` 분석 및 개선의 새로운 분석 옵션입니다.
 
 <div class="content-ad"></div>
 
@@ -513,7 +512,7 @@ iOS 17부터는 친구나 가족과 함께 차 안에서 SharePlay 음악을 공
 
 <div class="content-ad"></div>
 
-아니오, iOS 17이 멋지지 않나요? 
+아니오, iOS 17이 멋지지 않나요?
 
 iOS 17의 280여 가지 이상의 새로운 기능: 컴필레이션 (항상 업데이트됨):
 

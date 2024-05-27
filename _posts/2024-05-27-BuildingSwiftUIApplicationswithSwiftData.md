@@ -3,7 +3,7 @@ title: "Swft Data로 SwiftUI 어플리케이션 개발하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-BuildingSwiftUIApplicationswithSwiftData_0.png"
 date: 2024-05-27 18:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-BuildingSwiftUIApplicationswithSwiftData_0.png
 tag: Tech
 originalTitle: "Building SwiftUI Applications with Swift Data"
@@ -11,7 +11,6 @@ link: "https://medium.com/@raj.anand09/building-swiftui-applications-with-swift-
 ---
 
 
-```markdown
 ![Image](/assets/img/2024-05-27-BuildingSwiftUIApplicationswithSwiftData_0.png)
 
 # Swift UI는 Swift Data를 시작하는 가장 쉬운 방법입니다
@@ -21,7 +20,7 @@ link: "https://medium.com/@raj.anand09/building-swiftui-applications-with-swift-
 - 데이터 자동 가져오기 및 뷰 업데이트
 
 # Swift Data 소개
-``` 
+
 
 <div class="content-ad"></div>
 
@@ -35,8 +34,8 @@ class Category {
 
   @Attribute(.unique) var name: String
   var imageName: String
-  
-  init(name: String, 
+
+  init(name: String,
        imageName: String = "rupeesign.circle",
        type: CategoryType) {
     self.name = name
@@ -51,7 +50,8 @@ class Category {
 Modifies all stored properties
 
 @Model
-```
+
+
 
 <div class="content-ad"></div>
 

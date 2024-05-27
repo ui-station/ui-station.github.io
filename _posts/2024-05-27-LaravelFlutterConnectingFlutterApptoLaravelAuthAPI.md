@@ -115,7 +115,7 @@ class AuthService {
 1] dio/dio.dart 패키지 가져오기: 이 import 문은 dio.dart 패키지에서 HTTP 요청을 수행하는 데 사용되는 주요 클래스인 Dio 클래스를 가져옵니다.
 
 2] Dio 인스턴스 초기화: 클래스에는 Dio 인스턴스로 초기화된 private _dio 필드가 있습니다. BaseOptions 매개변수를 사용하여 HTTP 요청의 기본 URL 및 기본 헤더를 구성합니다.
-```
+
 
 <div class="content-ad"></div>
 

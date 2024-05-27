@@ -3,7 +3,7 @@ title: "한 줄의 코드로 Python 함수를 데코레이터로 바꿔보세요
 description: ""
 coverImage: "/assets/img/2024-05-27-TurnYourPythonFunctionintoaDecoratorwithOneLineofCode_0.png"
 date: 2024-05-27 16:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TurnYourPythonFunctionintoaDecoratorwithOneLineofCode_0.png
 tag: Tech
 originalTitle: "Turn Your Python Function into a Decorator with One Line of Code"
@@ -11,7 +11,6 @@ link: "https://medium.com/towards-data-science/turn-your-python-function-into-a-
 ---
 
 
-```markdown
 ![이미지](/assets/img/2024-05-27-TurnYourPythonFunctionintoaDecoratorwithOneLineofCode_0.png)
 
 데코레이터를 작성하고 싶지만 구문을 기억하지 못하시나요? 데코레이터는 많은 보일러플레이트 코드가 포함된 꽤 어려운 구문을 갖고 있습니다. 이 기사에서는 데코레이터를 작성하는 더 간단한 방법을 소개합니다. 이 새로운 방법은 훨씬 더 짧고 명확하며 가독성이 뛰어날 것입니다. 함께 코딩해봅시다!
@@ -19,11 +18,11 @@ link: "https://medium.com/towards-data-science/turn-your-python-function-into-a-
 # 데코레이터 작성의 기본 방법
 
 아래 코드는 데코레이터를 생성하는 기본 방법입니다. 데코레이터로 래핑된 함수가 실행되는 시간을 측정합니다. 깊이 파고든 이 기사를 확인해보세요.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 def timer(name:str) -> Callable:
     def decorator(func:Callable) -> Callable:
         @wraps(func)
@@ -36,7 +35,7 @@ def timer(name:str) -> Callable:
                 print(f"TIMER:   {name} finished in {time.perf_counter() - strt}")
         return decorator_implementation
     return decorator
-```
+
 
 이렇게 하면 코드를 다음과 같이 사용할 수 있습니다:
 
@@ -94,8 +93,7 @@ my_func(name="마이크", age=34)
 
 <div class="content-ad"></div>
 
-```markdown
-```js
+
 타이머와 함께(context manager와 함께)
 
 우리는 동일한 데코레이터 함수를 데코레이터 및 context-manager로도 사용할 수 있습니다.
@@ -111,8 +109,9 @@ as ctx라는 이름의 타이머와 함께:
 # 타이머:  AS DEC가 3.7000000000023126e-06초에 완료되었습니다
 # 컨텍스트 매니저 내부
 # 타이머:  as ctx가 3.0000000000002247e-05초에 완료되었습니다
-``` 
 ```
+
+
 
 <div class="content-ad"></div>
 
@@ -151,3 +150,4 @@ contextlib은 내부에서 작동하는 방식이 상당히 복잡하며 별도�
 - Mike
 
 P.S: 제 하는 일 좋아하시나요? 제 팔로우 해주세요!
+

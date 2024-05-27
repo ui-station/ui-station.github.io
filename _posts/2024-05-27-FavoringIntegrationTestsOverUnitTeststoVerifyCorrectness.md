@@ -3,7 +3,7 @@ title: "단위 테스트보다 통합 테스트를 선호하여 정확성 확인
 description: ""
 coverImage: "/assets/img/2024-05-27-FavoringIntegrationTestsOverUnitTeststoVerifyCorrectness_0.png"
 date: 2024-05-27 16:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-FavoringIntegrationTestsOverUnitTeststoVerifyCorrectness_0.png
 tag: Tech
 originalTitle: "Favoring Integration Tests Over Unit Tests to Verify Correctness"
@@ -11,7 +11,6 @@ link: "https://medium.com/mjukvare/favoring-integration-tests-over-unit-tests-to
 ---
 
 
-```markdown
 ![unit test image](/assets/img/2024-05-27-FavoringIntegrationTestsOverUnitTeststoVerifyCorrectness_0.png)
 
 저는 전문적인 코딩을 시작한 이후로 단위 테스트를 작성해 왔어요. 그 속에는 특별한 "영감"이 있죠. 다른 개발자가 여러분의 코드를 사용해야 한다는 점을 생각하게 만들어요.
@@ -19,7 +18,7 @@ link: "https://medium.com/mjukvare/favoring-integration-tests-over-unit-tests-to
 그 "다른 개발자"가 바로 여러분의 미래 자신이기도 해요.
 
 단위 테스트를 작성할 때마다, 정확성을 검증할 뿐만 아니라 클래스의 작업 편의성도 평가하려고 해요. 좋은 코드를 작성하는 중요한 측면 중 하나는 함께 작업하기 즐거운 코드를 작성하는 것이라고 생각해요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -47,10 +46,10 @@ public void SaveNewUser()
 
    var user = new User();
    var sut = new UserManager(repository);
-  
+
    // Act
    sut.SaveUser(user);
-  
+
    // Assert
    repository.Received(1).SaveUser(Arg.Any<User>());
 }
@@ -111,24 +110,24 @@ public class UserManagerShould(DatabaseFixture fixture) : IClassFixture<Database
      // Arrange
      UserDbContext context = new TestDbContextFactory(fixture.ConnectionString)
          .CreateDbContext(null!);
-    
+
      await context.Database.EnsureCreatedAsync();
      await context.Users.ExecuteDeleteAsync();
-  
+
      var repository = new EfUserRepository(context);
-    
+
      var user = new User();
      var sut = new UserManager(repository);
-  
-  
+
+
      // Act
      sut.SaveUser(user);
-    
+
      // Assert
      List<User> result = context.Users
          .AsNoTracking()
          .ToList();
-    
+
      result.Should()
            .HaveCount(1);
   }
@@ -140,7 +139,8 @@ public class UserManagerShould(DatabaseFixture fixture) : IClassFixture<Database
 이제 "SaveUser(user)" 메서드를 호출하면 실제 데이터베이스에 삽입이 수행되며, 사용자에게 이름이 없기 때문에 오류가 발생합니다: Npgsql.PostgresException 23502: null value in column "Name" of relation "Users" violates not-null constraint.
 
 실제로 잘못된 상황에서 오류가 발생하는 이러한 테스트는 사용자를 저장하기 전에 추가적인 확인 절차를 수행해야 함을 알려줍니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -165,3 +165,4 @@ public class UserManagerShould(DatabaseFixture fixture) : IClassFixture<Database
 <div class="content-ad"></div>
 
 린크드인에 연결하지 않는 것을 잊지 마세요.
+

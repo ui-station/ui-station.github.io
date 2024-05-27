@@ -249,7 +249,7 @@ Splunk UF를 다시 시작하세요.
 ```shell
 cd /opt/splunkforwarder/bin
 sudo ./splunk restart
-````
+```
 
 # 단계 3: Splunk 인덱서에서 입력 구성
 

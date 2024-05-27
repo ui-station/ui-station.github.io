@@ -3,7 +3,7 @@ title: "iOS에서 Compose Multiplatform을 사용하는 앱 이제 베타 - 2024
 description: ""
 coverImage: "/assets/img/2024-05-27-AppsusingComposeMultiplatformoniOSnowbetain2024developerinsights_0.png"
 date: 2024-05-27 18:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AppsusingComposeMultiplatformoniOSnowbetain2024developerinsights_0.png
 tag: Tech
 originalTitle: "Apps using Compose Multiplatform on iOS (now beta!) in 2024 — developer insights"
@@ -11,14 +11,11 @@ link: "https://medium.com/@jacobras/apps-using-compose-multiplatform-on-ios-now-
 ---
 
 
-```markdown
 Compose Multiplatform for iOS가 오늘 공식적으로 베타로 승격되었어요, 하지만 기업들이 이미 장기간 생산에 성공적으로 사용하고 있어요! 몇몇 애플리케이션을 살펴보죠. iOS에서 Compose Multiplatform (비공식적으로 CMP로 약칭)를 사용한 경험을 설명해 달라고 여러 개발자들에게 물었더니 다음과 같은 이야기를 들었어요.
 
 이것은 2023년에 Kotlin Multiplatform(KMP)을 사용하는 인기 애플리케이션들을 따르는 다음 단계이며, (포브스와 볼트와 같은) 더 많은 애플리케이션이 가입했지만, 이 게시물에서는 사용자 인터페이스를 공유하는 애플리케이션에 중점을 두었어요.
 
 안드로이드와 iOS 버전 모두의 공개 애플리케이션에 대한 링크가 포함되어 있어요, 그래서 직접 시도해 볼 수 있어요(그리고 혹시 머티리얼 리플을 발견할 수 있을지도 😉).
-
-```
 
 
 
@@ -40,7 +37,7 @@ KotlinConf 2024에서 "Compose Multiplatform on mobile at Instabee for over a ye
 
 # Markaz (1M+)
 
-![이미지](/assets/img/2024-05-27-AppsusingComposeMultiplatformoniOSnowbetain2024developerinsights_1.png)  
+![이미지](/assets/img/2024-05-27-AppsusingComposeMultiplatformoniOSnowbetain2024developerinsights_1.png)
 
 <div class="content-ad"></div>
 
@@ -76,7 +73,7 @@ IceRock (캠퍼스 개발자)의 CTO인 Aleksey Mikhailov
 <div class="content-ad"></div>
 
 앱 스토어: [https://apps.apple.com/ru/app/кампус-расписание-занятий/id1534975833](https://apps.apple.com/ru/app/кампус-расписание-занятий/id1534975833)  
-플레이 스토어: [https://play.google.com/store/apps/details?id=ru.dewish.campus](https://play.google.com/store/apps/details?id=ru.dewish.campus)  
+플레이 스토어: [https://play.google.com/store/apps/details?id=ru.dewish.campus](https://play.google.com/store/apps/details?id=ru.dewish.campus)
 
 # Ashampoo Photo Organizer (예정)
 

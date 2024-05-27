@@ -3,7 +3,7 @@ title: "젯팩 컴포즈 부가 효과 자세히 알아보기"
 description: ""
 coverImage: "/assets/img/2024-05-27-JetpackComposeSideEffectsinDetails_0.png"
 date: 2024-05-27 16:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-JetpackComposeSideEffectsinDetails_0.png
 tag: Tech
 originalTitle: "Jetpack Compose Side Effects in Details"
@@ -11,7 +11,6 @@ link: "https://medium.com/@mortitech/exploring-side-effects-in-compose-f2e8a8da9
 ---
 
 
-```markdown
 ![Jetpack Compose](/assets/img/2024-05-27-JetpackComposeSideEffectsinDetails_0.png)
 
 Jetpack Compose는 Android에서 UI 개발을 훨씬 쉽게 만들었지만, UI 효과를 효율적으로 관리하는 방법을 이해하는 것이 성능 향상에 매우 중요합니다. 본 문서에서는 UI 효과를 효과적으로 관리하는 데 도움이 되는 세 가지 중요한 Composable 함수인 SideEffect, LaunchedEffect 및 DisposableEffect을 살펴보겠습니다.
@@ -19,7 +18,7 @@ Jetpack Compose는 Android에서 UI 개발을 훨씬 쉽게 만들었지만, UI 
 # 왜 부작용(side-effect)이 필요한가요?
 
 Jetpack Compose에서 부작용의 목적은 Composable 함수 외부에서 앱의 상태를 변경하는 UI와 관련 없는 작업을 제어 가능하고 예측 가능한 방식으로 실행할 수 있게 하는 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -83,13 +82,13 @@ fun Counter() {
 fun Counter() {
     // count를 위한 상태 변수 정의
     val count = remember { mutableStateOf(0) }
-    
+
     // count의 현재 값 로그 남기기 위해 SideEffect 사용
     SideEffect {
         // 재구성마다 호출됨
         log("Count is ${count.value}")
     }
-    
+
     Column {
         Button(onClick = { count.value++ }) {
             // 버튼이 탭될 때마다 바깥쪽 부작용이 트리거되지 않음
@@ -299,7 +298,8 @@ fun RunTimerScreen() {
 onDispose 함수에서 job.cancel() 호출을 제거하면, TimerScreen Composable이 더 이상 사용되지 않더라도 코루틴이 계속 실행되어 메모리 누수 및 다른 성능 문제를 야기할 수 있습니다.
 
 DisposableEffect와 CoroutineScope를 이렇게 함께 사용함으로써, CoroutineScope에서 시작된 코루틴이 TimerScreen Composable이 더 이상 사용되지 않을 때 취소되고 리소스가 정리되도록 합니다. 이를 통해 메모리 누수 및 다른 성능 문제를 방지하고 앱의 성능과 안정성을 향상시킬 수 있습니다.
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -340,7 +340,7 @@ fun MyComposable() {
             initializeBluetooth()
             loadDataFromFile()
             initializeLibrary()
-            
+
             isInitialized.value = true
         }
     }
@@ -356,4 +356,7 @@ SideEffect, DisposableEffect 및 LaunchedEffect 간의 차이 요약:
 - SideEffect는 부모 Composable이 recomposed될 때 실행되며, Composable의 상태나 props에 의존하지 않는 작업을 실행하는 데 유용합니다.
 - DisposableEffect는 부모 Composable이 처음 렌더링될 때 실행되며, Composable이 더 이상 사용되지 않을 때 정리해야하는 리소스를 관리하는 데 유용합니다. 첫 번째 구성 또는 키 변경시 트리거되며, 종료시 onDispose 메서드를 호출합니다.
 - LaunchedEffect는 별도의 코루틴 스코프에서 부작용을 실행하며, UI 스레드를 블로킹하지 않고 긴 작업을 실행하는 데 유용합니다. 첫 번째 구성 또는 키 변경시 트리거됩니다.
-```
+
+
+
+

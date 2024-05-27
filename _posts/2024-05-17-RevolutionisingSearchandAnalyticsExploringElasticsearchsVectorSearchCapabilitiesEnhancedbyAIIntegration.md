@@ -121,7 +121,7 @@ Elasticsearch의 script_score 함수를 사용하면 사용자가 특정 요구 
 
 아래는 Markdown 형식으로 테이블 태그를 변경한 예시 코드에요:
 
-````js
+```js
 {
   "query": {
     "script_score": {
@@ -137,11 +137,11 @@ Elasticsearch의 script_score 함수를 사용하면 사용자가 특정 요구 
     }
   }
 }
-````
+```
 
 예시 코드 실행:
 
-````js
+```js
 from elasticsearch import Elasticsearch
 # Elasticsearch 인스턴스에 연결
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
@@ -162,7 +162,7 @@ query_body = {
 # 검색 쿼리 실행
 res = es.search(index="my_index", body=query_body)
 print(res)
-````
+```
 
 <div class="content-ad"></div>
 

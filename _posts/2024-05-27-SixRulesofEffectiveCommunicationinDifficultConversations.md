@@ -3,7 +3,7 @@ title: "어려운 대화에서 효과적인 커뮤니케이션의 여섯 가지 
 description: ""
 coverImage: "/assets/img/2024-05-27-SixRulesofEffectiveCommunicationinDifficultConversations_0.png"
 date: 2024-05-27 16:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SixRulesofEffectiveCommunicationinDifficultConversations_0.png
 tag: Tech
 originalTitle: "Six Rules of Effective Communication in Difficult Conversations"
@@ -11,7 +11,6 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 ---
 
 
-```markdown
 ![Six Rules of Effective Communication in Difficult Conversations](/assets/img/2024-05-27-SixRulesofEffectiveCommunicationinDifficultConversations_0.png)
 
 우리가 목표를 달성하기 위해서는 타인과 원할한 소통이 필요합니다. 그러나 중요한 순간에 건전한 대화를 나누는 대신에 우리는 종종 최악의 상태에 있습니다. 우리는 어리석고 비용이 드는 농담거리, 논쟁, 공격, 조종 또는 다른 자기패배적인 방식으로 행동합니다.
@@ -19,7 +18,7 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 어려운 대화는 본질적으로 까다로운 것입니다. 이야기하기를 원치 않는 민감한 주제들로 구성됩니다. 의견의 차이, 감정적 문제, 민감한 주제 또는 충돌의 잠재적인 원인들을 다뤄야 합니다 — 우리가 논하기 어려운 모든 것들을 포함합니다.
 
 어려운 대화는 불편함, 불확실성 및 복잡한 감정을 헤쳐나가야 하기 때문에 도전적입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -67,7 +66,7 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 
 <div class="content-ad"></div>
 
-상황: 자신이 받을 만한 좋은 기회를 놓치다. 
+상황: 자신이 받을 만한 좋은 기회를 놓치다.
 그 대신에: 자신이 원하는 것을 얻지 못한 데 대해 매니저에게 불평하거나 원망을 표현하는 대신에
 다음과 같이 해보세요: 실망을 표현하지만, 그들의 결정에 대해 존중을 보여주세요. 다음에 그런 기회를 얻을 수 있도록 어디가 부족한지 이해하려고 노력해보세요.
 
@@ -159,7 +158,7 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 - 너무 많은 정보는 상대방을 심심하게 만들고, 너무 적은 정보는 혼란스럽게 만듭니다. 좋은 커뮤니케이션은 명확하고 간결하며 핵심적입니다. 이해하고 행동하기 쉽도록 의견을 표현하세요.
 - 표현은 건강한 표현은 하지만 당신의 유일한 방어 수단이 되어서는 안 됩니다. 영향을 명확히 표현하는 것은 중요합니다. 문제를 해결하고 표준 솔루션에 동의하기 위해 필요한 뇌의 사고 부분을 활성화합니다.
 - 어려운 대화에서의 선의는 충분하지 않습니다. 명시적으로 표현해야 합니다. 다른 사람이 당신의 목적과 일치하면 건강한 이야기를 나누고 해결책을 찾기가 쉬워집니다.
-- 우리는 어려운 대화가 우리의 의견을 공유하고 기대를 밝히며 불만을 표현하는 것이라고 생각합니다. 그러나 모든 말을 할 때 중요한 것을 잊어버립니다-다른 사람의 견해를 듣고 높이 평가하는 것. 
+- 우리는 어려운 대화가 우리의 의견을 공유하고 기대를 밝히며 불만을 표현하는 것이라고 생각합니다. 그러나 모든 말을 할 때 중요한 것을 잊어버립니다-다른 사람의 견해를 듣고 높이 평가하는 것.
 - 마지막으로 일부 문제가 될 수 있는 대화는 폭력적이거나 공격적일 수 있습니다. 이런 순간에 침착함을 잃는다면 상황을 더욱 악화시킬 수 있습니다. 나중에 연결하라고 상대방에게 요청하여 긴장을 풀어보세요.
 
 <div class="content-ad"></div>

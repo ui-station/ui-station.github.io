@@ -3,7 +3,7 @@ title: "Swift 동시성 뒤엉킨 것들 풀어내기"
 description: ""
 coverImage: "/assets/img/2024-05-27-SwiftConcurrencyUn-tangledup_0.png"
 date: 2024-05-27 16:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SwiftConcurrencyUn-tangledup_0.png
 tag: Tech
 originalTitle: "Swift Concurrency: Un-tangled up!"
@@ -11,7 +11,6 @@ link: "https://medium.com/@thekrazyjames/swift-concurrency-un-tangled-up-0d27ae5
 ---
 
 
-```markdown
 <img src="/assets/img/2024-05-27-SwiftConcurrencyUn-tangledup_0.png" />
 
 Swift 5.5부터는 concurrent programming을 위해 async/await 접근 방식이 도입되어 비동기 작업 관리가 변경되었습니다. 이 방식은 올바르게 구현할 때 많은 이점을 제공하며 고려해야 할 사항도 몇 가지 있습니다.
@@ -19,7 +18,7 @@ Swift 5.5부터는 concurrent programming을 위해 async/await 접근 방식이
 # 이것은 무엇인가요?
 
 Concurrency는 concurrent code를 처리하는 도구를 제공하는 라이브러리로, 이러한 도구는 쓰레드를 다룰 때 안전성을 제공하기 위한 것입니다. 이는 쓰레드를 관리할 때 발생하는 모든 종류의 문제를 포함하며, 흔한 문제 몇 가지를 들자면 다음과 같습니다:
-```
+
 
 <div class="content-ad"></div>
 

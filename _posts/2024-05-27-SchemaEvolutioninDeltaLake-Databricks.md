@@ -3,13 +3,12 @@ title: "델타 레이크에서의 스키마 진화 - 데이터브릭스"
 description: ""
 coverImage: "/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_0.png"
 date: 2024-05-27 17:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_0.png
 tag: Tech
 originalTitle: "Schema Evolution in Delta Lake - Databricks"
 link: "https://medium.com/@oindrila-chakraborty88/schema-evolution-in-delta-lake-databricks-ccb567262ea9"
 ---
-
 
 요즘 현대의 빅 데이터 세계에서는 클라이언트가 소스 빅 데이터 파일을 보내서 처리하는 경우가 많습니다. 이 소스 파일의 "구조"는 시간이 지남에 따라 계속 변화합니다.
 
@@ -67,7 +66,7 @@ CREATE DATABASE IF NOT EXISTS practice
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_4.png)
 
 단계 2: 다음 "Spark SQL" 쿼리를 사용하여 외부 델타 테이블 "person_bronze"을 생성합니다 -
@@ -85,11 +84,13 @@ LOCATION "/mnt/iobdatabronze/practice-zone/delta-table/person_bronze"
 ```
 
 외부 델타 테이블은 Databricks 워크스페이스의 "practice" 데이터베이스 내에 생성됩니다 -
-```
+
+
 
 <div class="content-ad"></div>
 
-```markdown
+
+
 ![2024-05-27-SchemaEvolutioninDeltaLake-Databricks_5](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_5.png)
 
 단계 3: 다음의 "Spark SQL" 쿼리를 사용하여 Delta Table "person_bronze"에 다음 두 레코드를 수동으로 삽입합니다 -
@@ -101,7 +102,8 @@ INSERT INTO hive_metastore.practice.person_bronze (Id, FirstName, LastName) VALU
 ```
 
 "Just inserted data"가 Bronze Table "person_bronze"에 있는지 "Spark SQL" 쿼리를 사용하여 확인합니다 -
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -118,7 +120,7 @@ Step 4: 고객이 새로운 소스 빅 데이터 파일을 추가하여 새로�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_7.png)
 
 이제, 새로운 소스 빅 데이터 파일을 DataFrame으로 읽어 들입니다.
@@ -141,7 +143,8 @@ display(df)
 ```
 
 출력 -
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -163,7 +166,11 @@ Output -
 단계 5: 시간이 지남에 따라 소스 파일의 "구조"가 변경된 시나리오를 처리하기 위해, 변경된 열을 "대상 Delta 테이블"에 추가하기 위해 Databricks에서 제공하는 "mergeSchema" 기능을 사용하여 DataFrame의 내용을 Delta 테이블에 쓰는 코드에서 "mergeSchema" 기능을 "true"로 설정합니다. 이를 위해 다음 구문을 사용합니다 -
 
 ```js
-df.write.format("delta").option("mergeSchema", "true").mode("append").saveAsTable("hive_metastore.practice.person_bronze")
+df.write
+  .format("delta")
+  .option("mergeSchema", "true")
+  .mode("append")
+  .saveAsTable("hive_metastore.practice.person_bronze");
 ```
 
 <div class="content-ad"></div>
@@ -217,7 +224,11 @@ display(df)
 이제 Databricks에서 제공하는 "mergeSchema" 기능을 사용하여 DataFrame의 내용을 Bronze 레이어의 Delta Table "person_bronze"에 추가해 보세요.
 
 ```js
-df.write.format("delta").option("mergeSchema", "true").mode("append").saveAsTable("hive_metastore.practice.person_bronze")
+df.write
+  .format("delta")
+  .option("mergeSchema", "true")
+  .mode("append")
+  .saveAsTable("hive_metastore.practice.person_bronze");
 ```
 
 위의 작업은 오류가 발생하지 않고 성공적으로 실행될 것입니다.
@@ -281,7 +292,11 @@ display(df)
 Databricks에서 제공하는 "mergeSchema" 기능을 사용하여 Bronze 레이어의 Delta Table "person_bronze"에 DataFrame의 내용을 추가해 보세요.
 
 ```js
-df.write.format("delta").option("mergeSchema", "true").mode("append").saveAsTable("hive_metastore.practice.person_bronze")
+df.write
+  .format("delta")
+  .option("mergeSchema", "true")
+  .mode("append")
+  .saveAsTable("hive_metastore.practice.person_bronze");
 ```
 
 이 작업은 다음과 같은 오류로 실패할 것입니다. "Company"와 "Company" 필드를 병합하지 못했습니다. StringType 및 IntegerType과(와) 호환되지 않는 데이터 유형을 병합하지 못했습니다.
@@ -301,7 +316,7 @@ df.write.format("delta").option("mergeSchema", "true").mode("append").saveAsTabl
 
 <div class="content-ad"></div>
 
-```markdown
+
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 
@@ -316,14 +331,15 @@ person_schema = StructType([
 # 도착한 새로운 소스 빅 데이터 파일의 내용 읽기
 df = spark.read.format("csv").option("header", "true").schema(person_schema).load("/mnt/iobdatalanding/practice-zone/input-files/Person_4.csv")
 display(df)
-```
+
 
 출력 -
 
 <img src="/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_18.png" />
 
 이제 Databricks에서 제공하는 "mergeSchema" 기능을 사용하여 DataFrame의 내용을 Bronze Layer의 Delta Table "person_bronze"에 추가해 보세요.
-```
+
+
 
 <div class="content-ad"></div>
 

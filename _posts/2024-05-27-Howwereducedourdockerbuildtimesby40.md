@@ -3,13 +3,12 @@ title: "우리가 도커 빌드 시간을 40 줄인 방법"
 description: ""
 coverImage: "/assets/img/2024-05-27-Howwereducedourdockerbuildtimesby40_0.png"
 date: 2024-05-27 17:22
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Howwereducedourdockerbuildtimesby40_0.png
 tag: Tech
 originalTitle: "How we reduced our docker build times by 40%"
 link: "https://medium.com/datamindedbe/how-we-reduced-our-docker-build-times-by-40-afea7b7f5fe7"
 ---
-
 
 많은 기업들과 마찬가지로, 저희 회사도 제품에 사용되는 모든 구성 요소에 대한 도커 이미지를 빌드합니다. 시간이 지남에 따라 몇 가지 이미지가 점점 커지고, 또한 CI 빌드 시간이 점점 오래 걸리게 되었습니다. 제 목표는 CI 빌드가 5분을 넘지 않도록 하는 것입니다. 이 아이디어는 커피를 마시기에 이상적인 시간이기 때문에 나왔습니다. 그 시간을 넘어가면, 개발자의 생산성이 떨어지게 됩니다.
 
@@ -89,23 +88,23 @@ Buildx를 사용하면 캐시 정보를 원격 위치(예: 컨테이너 레지�
 
 <div class="content-ad"></div>
 
-```markdown
+
 docker buildx build --platform linux/amd64 . \
 -t someImage:someVersion --push \
 --cache-to type=inline,mode=max \
 --cache-from someImage:somePreviousVersion
-``` 
+
 
 "max" 모드는 결과 이미지에 사용되지 않는 레이어도 모든 빌드 정보를 저장한다는 것을 의미합니다 (예: 멀티 스테이지 빌드 사용 시). 기본적으로 "min" 모드가 사용되며 최종 이미지에 존재하는 레이어에 대한 빌드 정보만 저장합니다.
 
 캐싱의 특수 사례는 캐시 데이터를 "inline"으로 저장하는 것이며, 이미지와 함께 캐싱된다는 것을 의미합니다. 이 옵션은 Buildx 없이 Buildkit을 사용할 때도 지원됩니다. 멀티 스테이지 빌드를 사용할 때 시작하기 가장 쉽지만 출력물과 캐시 사이에 명확한 구분을 제공하지 않으며 조심해야 합니다. 캐시 데이터를 "inline"으로 저장하는 명령어는 다음과 같습니다:
 
-```markdown
+
 docker buildx build --platform linux/amd64 . \
 -t someImage:someVersion --push \
 --cache-to type=inline,mode=max \
 --cache-from someImage:somePreviousVersion
-```
+
 
 <div class="content-ad"></div>
 

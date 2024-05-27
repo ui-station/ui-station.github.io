@@ -3,13 +3,12 @@ title: "Terraform을 활용한 Multi-Cloud 관리 마스터하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-MasteringMulti-CloudManagementwithTerraform_0.png"
 date: 2024-05-27 17:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-MasteringMulti-CloudManagementwithTerraform_0.png
 tag: Tech
 originalTitle: "Mastering Multi-Cloud Management with Terraform"
 link: "https://medium.com/@bijit211987/mastering-multi-cloud-management-with-terraform-0615675415d9"
 ---
-
 
 <img src="/assets/img/2024-05-27-MasteringMulti-CloudManagementwithTerraform_0.png" />
 
@@ -142,31 +141,32 @@ Terraform의 리소스 유형은 일관된 인터페이스를 제공하기 위�
 
 ```md
 리소스 "azurerm_subnet" "public" {
-  #...
+#...
 }
 ```
 
 ```md
 리소스 "azurerm_network_interface" "nic" {
-  #...
-  subnet_id = azurerm_subnet.public.id
+#...
+subnet_id = azurerm_subnet.public.id
 }
 리소스 "azurerm_virtual_machine" "main" {
-  #...
-  
-  network_interface_ids = [
-    azurerm_network_interface.nic.id,
-  ]
-  depends_on = [
-    azurerm_network_interface.nic
-  ]
+#...
+
+network_interface_ids = [
+azurerm_network_interface.nic.id,
+]
+depends_on = [
+azurerm_network_interface.nic
+]
 }
 ```
 
 테라폼은 리소스 간 종속성을 분석하고 변경 사항을 올바른 순서로 적용합니다.
 
 멀티 클라우드 환경에서의 종속성에 대한 팁:
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -187,7 +187,7 @@ Terraform의 리소스 유형은 일관된 인터페이스를 제공하기 위�
 다음은 운용 규칙의 몇 가지 예시입니다:
 
 - VM 유형 제한
-- 데이터 주권을 위한 지역 및 존 제어 
+- 데이터 주권을 위한 지역 및 존 제어
 - 태깅 규칙과 표준 설정
 - 네트워킹 노출 제한
 - 암호화 요구 사항 강제
@@ -251,15 +251,15 @@ aws_instance_disallowed_type = rule {
 
 테이블 형식을 Markdown 형식으로 변경하실래요.
 
-```markdown
-| Pairing | 
+
+| Pairing |
 |--------|
 | Connect cloud regions to on-prem data centers. Useful for migration and hybrid workloads. |
 
 | Hub-and-Spoke |
 |---------------|
 | Central hub VPC with connectivity to multiple cloud spokes. Enables transitivity between spokes. |
-```
+
 
 <div class="content-ad"></div>
 
@@ -291,7 +291,7 @@ aws_instance_disallowed_type = rule {
   tunnel1_ike_versions   = ["ikev2"]
   tunnel2_ike_versions   = ["ikev2"]
   tunnel1_phase1_dh_group_numbers = [31]
-  tunnel2_phase1_dh_group_numbers = [31] 
+  tunnel2_phase1_dh_group_numbers = [31]
 }
 # Azure 측
 리소스 "azurerm_local_network_gateway" "lgw" {
@@ -309,7 +309,7 @@ aws_instance_disallowed_type = rule {
   virtual_network_gateway_id = azurerm_virtual_network_gateway.vgw.id
   local_network_gateway_id   = azurerm_local_network_gateway.lgw.id
   shared_key = aws_vpn_connection.main.tunnel1_preshared_key
-  
+
   ipsec_policy {
     dh_group         = "DHGroup31"
     ike_encryption   = "AES256"
@@ -325,7 +325,8 @@ aws_instance_disallowed_type = rule {
 이 방법을 통해 멀티 클라우드에 일관된 방식으로 전체 연결 구성을 정의할 수 있습니다.
 
 # 배포 패턴
-```  
+
+
 
 <div class="content-ad"></div>
 
@@ -364,7 +365,8 @@ resource "aws_lb" "main" {
 그런 다음 로드 밸런서를 통해 점진적으로 파란 색에서 초록 색으로 트래픽을 이동합니다.
 
 카나리아
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -404,9 +406,9 @@ module "west" {
 ```
 
 ```js
-# 동부 지역 
+# 동부 지역
 module "east" {
-  source = "./region" 
+  source = "./region"
   providers = {
     azurerm.east = azurerm.east
   }
@@ -480,7 +482,8 @@ resource "null_resource" "check_connectivity" {
 이렇게 하면 안전하게 변경 사항을 테스트할 수 있는 격리된 환경이 생성됩니다.
 
 다른 예시:
-```
+
+
 
 <div class="content-ad"></div>
 
@@ -515,7 +518,7 @@ resource "azurerm_monitor_diagnostic_setting" "app" {
 }
 resource "google_logging_project_sink" "app" {
   name        = "app-sink"
-  destination = google_storage_bucket.logs.name  
+  destination = google_storage_bucket.logs.name
 }
 ```
 
@@ -583,7 +586,7 @@ resource "aws_subnet" "public" {
   vpc_id = aws_vpc.main.id
   cidr_block = "10.1.1.0/24"
 }
-# Azure VNet 
+# Azure VNet
 resource "azurerm_virtual_network" "main" {
   name                = "app-network"
   address_space       = ["10.2.0.0/16"]
@@ -629,14 +632,14 @@ resource "azurerm_container_group" "app" {
   ip_address_type     = "public"
   dns_name_label      = "app-aci"
   os_type             = "Linux"
-```  
+```
 
 <div class="content-ad"></div>
 
 ```js
   container {
     name   = "app"
-    image  = "myapp:v1" 
+    image  = "myapp:v1"
     cpu    = "1"
     memory = "1"
     ports {
@@ -674,7 +677,7 @@ resource "aws_ecs_service" "web" {
 resource "aws_lb" "web" {
   name               = "myapp-lb"
   internal           = false
-  
+
   subnets = [
     aws_subnet.public.id
   ]
@@ -686,7 +689,7 @@ resource "azurerm_lb" "web" {
   name                = "myapp-lb"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
-   
+
   frontend_ip_configuration {
     name                 = "public"
     public_ip_address_id = azurerm_public_ip.main.id

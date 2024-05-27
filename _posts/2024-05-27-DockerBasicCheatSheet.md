@@ -3,7 +3,7 @@ title: "도커 기본 요약 시트"
 description: ""
 coverImage: "/assets/img/2024-05-27-DockerBasicCheatSheet_0.png"
 date: 2024-05-27 17:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DockerBasicCheatSheet_0.png
 tag: Tech
 originalTitle: "Docker Basic CheatSheet"
@@ -11,7 +11,6 @@ link: "https://medium.com/aws-in-plain-english/docker-basic-cheatsheet-011b8ccf7
 ---
 
 
-```markdown
 ![Docker Basic Cheat Sheet](/assets/img/2024-05-27-DockerBasicCheatSheet_0.png)
 
 # Basic Commands:
@@ -19,7 +18,7 @@ link: "https://medium.com/aws-in-plain-english/docker-basic-cheatsheet-011b8ccf7
 ## Container Lifecycle:
 
 - docker run: Create and start a container.
-```
+
 
 <div class="content-ad"></div>
 
@@ -119,16 +118,16 @@ $ docker cp file.txt my_container:/path/to/destination
 
 <div class="content-ad"></div>
 
-```markdown
+
 $ docker pause my_container
 $ docker unpause my_container
-```
+
 
 docker inspect: 디테일한 컨테이너 정보 표시
 
-```markdown
+
 $ docker inspect my_container
-```
+
 
 # 네트워킹:
 

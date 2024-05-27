@@ -3,7 +3,7 @@ title: "안드로이드 오토 튜토리얼 단계별 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_0.png"
 date: 2024-05-27 16:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_0.png
 tag: Tech
 originalTitle: "Android Auto Tutorial Step by Step Guide"
@@ -11,7 +11,6 @@ link: "https://medium.com/proandroiddev/android-auto-tutorial-step-by-step-guide
 ---
 
 
-```markdown
 ![Android Auto](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_0.png)
 
 # 안드로이드 오토란?
@@ -19,7 +18,7 @@ link: "https://medium.com/proandroiddev/android-auto-tutorial-step-by-step-guide
 안드로이드 오토는 안드로이드 폰과 안드로이드 오토 앱을 가진 사용자들을 위한 운전자 최적화 앱 경험을 제공합니다. 호환되는 자동차에 연결된 안드로이드 스마트폰의 확장판으로, 일부 앱, 엔터테인먼트, 그리고 자동차 대시보드에 메시지를 표시할 수 있습니다. USB 또는 블루투스를 사용하여 기기를 연결할 수 있습니다.
 
 ![Android Auto Tutorial Step by Step Guide](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -71,7 +70,7 @@ chmod +x ./desktop-head-unit
 ```
 
 ```js
-./desktop-head-unit --usb  
+./desktop-head-unit --usb
 ```
 
 <div class="content-ad"></div>
@@ -98,17 +97,17 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 
 아래는 마크다운 형식으로 변환한 표입니다.
 
-```
+
 - Tab bar with app icon and up to 4 tabs (no back button)
 - Embedded template, which can be any of the following types: List, Grid, Search, Pane, or Message
 - List or Grid Template
 
 ![Image](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_6.png)
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_7.png)
 
 - Message or Long Message Template
@@ -116,11 +115,11 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 ![Image](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_8.png)
 
 - Search Template
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_9.png)
 
 - Place List (map) Template
@@ -129,11 +128,11 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 # 자동차용 미디어 앱을 만들기 위한 단계
 
 - Manifest 파일에서 Android Auto 지원 선언하기
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Step 10](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_10.png)
 
 ![Step 11](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_11.png)
@@ -141,7 +140,7 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 - 미디어 브라우저 서비스를 선언하세요
 
 ![Step 12](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_12.png)
-```  
+
 
 <div class="content-ad"></div>
 

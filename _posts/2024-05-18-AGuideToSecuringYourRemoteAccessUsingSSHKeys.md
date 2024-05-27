@@ -178,7 +178,7 @@ Debian/Ubuntu:
 ```js
 sudo systemctl reload ssh
 sudo systemctl restart ssh
-````
+```
 
 Redhat/CentOS:
 
