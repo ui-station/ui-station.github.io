@@ -702,7 +702,7 @@ spec:
 
 <div class="content-ad"></div>
 
-```hcl
+```js
 locals {
   yaml_files = fileset("${path.module}/config_files", "*.yml")
   yaml_content = { for file in local.yaml_files : file => file("${path.module}/config_files/${file}") }
