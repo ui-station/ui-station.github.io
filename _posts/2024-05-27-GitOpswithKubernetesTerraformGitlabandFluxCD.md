@@ -60,7 +60,6 @@ Terraform을 사용하면 선언적 구성 언어를 사용하여 가상 머신,
 
 <div class="content-ad"></div>
 
-
 ```js
 1) AWS 계정
 2) Gitlab 클라우드 계정 / 자체 호스팅된 Gitlab
@@ -75,7 +74,6 @@ ECR Repository 생성
 
 <div class="content-ad"></div>
 
-
 AWS ECR 레지스트리에 로그인합니다.
 
 ```bash
@@ -84,13 +82,13 @@ aws ecr get-login-password | docker login --username AWS --password-stdin <aws_a
 
 Docker Hub에서 Nginx 이미지를 가져옵니다.
 
-```
+````
 
 <div class="content-ad"></div>
 
 ```js
 도커 pull nginx:latest
-```
+````
 
 당신의 ECR 저장소에 Nginx 이미지를 태그하기
 
@@ -99,8 +97,6 @@ Docker Hub에서 Nginx 이미지를 가져옵니다.
 ```
 
 이미지를 ECR 저장소에 푸시하기
-
-
 
 <div class="content-ad"></div>
 
@@ -459,15 +455,13 @@ flux가 이 작업을 수행하려면 복제 데모 리포지토리의 config_fi
 
 <div class="content-ad"></div>
 
-
 ├── config_files
-│   ├── app-nginx.yml
-│   ├── ecr-sync.yml
-│   └── nginx.yml
+│ ├── app-nginx.yml
+│ ├── ecr-sync.yml
+│ └── nginx.yml
 ├── main.tf
 ├── variables.tf
 └── versions.tf
-
 
 이제 이 파일들 각각을 살펴보고 그 내용을 살펴보겠습니다. 우선 app-nginx.yaml 파일부터 시작해봅시다.
 
@@ -560,8 +554,6 @@ spec:
     strategy: Setters
 ```
 
-
-
 <div class="content-ad"></div>
 
 위 구성에서는 아래 구성 요소를 정의했습니다:
@@ -585,13 +577,13 @@ metadata:
   name: ecr-credentials-sync
   namespace: flux-system
 rules:
-- apiGroups: [""]
-  resources:
-  - secrets
-  verbs:
-  - get
-  - create
-  - patch
+  - apiGroups: [""]
+    resources:
+      - secrets
+    verbs:
+      - get
+      - create
+      - patch
 ---
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
@@ -599,8 +591,8 @@ metadata:
   name: ecr-credentials-sync
   namespace: flux-system
 subjects:
-- kind: ServiceAccount
-  name: ecr-credentials-sync
+  - kind: ServiceAccount
+    name: ecr-credentials-sync
 roleRef:
   kind: Role
   name: ecr-credentials-sync
@@ -632,50 +624,50 @@ spec:
           serviceAccountName: ecr-credentials-sync
           restartPolicy: Never
           volumes:
-          - name: token
-            emptyDir:
-              medium: Memory
+            - name: token
+              emptyDir:
+                medium: Memory
           initContainers:
-          - image: amazon/aws-cli
-            name: get-token
-            imagePullPolicy: IfNotPresent
-            # You will need to set the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables if not using
-            # IRSA. It is recommended to store the values in a Secret and load them in the container using envFrom.
-            # envFrom:
-            # - secretRef:
-            #     name: aws-credentials
-            env:
-            - name: REGION
-              value: us-east-1 # change this if ECR repo is in a different region
-            volumeMounts:
-            - mountPath: /token
-              name: token
-            command:
-            - /bin/sh
-            - -ce
-            - aws ecr get-login-password --region ${REGION} > /token/ecr-token
+            - image: amazon/aws-cli
+              name: get-token
+              imagePullPolicy: IfNotPresent
+              # You will need to set the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables if not using
+              # IRSA. It is recommended to store the values in a Secret and load them in the container using envFrom.
+              # envFrom:
+              # - secretRef:
+              #     name: aws-credentials
+              env:
+                - name: REGION
+                  value: us-east-1 # change this if ECR repo is in a different region
+              volumeMounts:
+                - mountPath: /token
+                  name: token
+              command:
+                - /bin/sh
+                - -ce
+                - aws ecr get-login-password --region ${REGION} > /token/ecr-token
           containers:
-          - image: ghcr.io/fluxcd/flux-cli:v0.25.2
-            name: create-secret
-            imagePullPolicy: IfNotPresent
-            env:
-            - name: SECRET_NAME
-              value: ecr-credentials
-            - name: ECR_REGISTRY
-              value: <account id>.dkr.ecr.<region>.amazonaws.com # fill in the account id and region
-            volumeMounts:
-            - mountPath: /token
-              name: token
-            command:
-            - /bin/sh
-            - -ce
-            - |-
-              kubectl create secret docker-registry $SECRET_NAME \
-                --dry-run=client \
-                --docker-server="$ECR_REGISTRY" \
-                --docker-username=AWS \
-                --docker-password="$(cat /token/ecr-token)" \
-                -o yaml | kubectl apply -f -
+            - image: ghcr.io/fluxcd/flux-cli:v0.25.2
+              name: create-secret
+              imagePullPolicy: IfNotPresent
+              env:
+                - name: SECRET_NAME
+                  value: ecr-credentials
+                - name: ECR_REGISTRY
+                  value: <account id>.dkr.ecr.<region>.amazonaws.com # fill in the account id and region
+              volumeMounts:
+                - mountPath: /token
+                  name: token
+              command:
+                - /bin/sh
+                - -ce
+                - |-
+                  kubectl create secret docker-registry $SECRET_NAME \
+                    --dry-run=client \
+                    --docker-server="$ECR_REGISTRY" \
+                    --docker-username=AWS \
+                    --docker-password="$(cat /token/ecr-token)" \
+                    -o yaml | kubectl apply -f -
 ```
 
 <div class="content-ad"></div>
@@ -874,8 +866,6 @@ docker tag nginx:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/nginx-re
 
 # 결론
 
-
-
 <div class="content-ad"></div>
 
 그래서 결론적으로, 우리는 flux, gitlab, terraform, kubernetes를 사용하여 gitops 워크플로우를 설정했고, 새 이미지를 컨테이너 저장소에 푸시할 때마다 flux가 배포를 관리할 것입니다.
@@ -883,4 +873,3 @@ docker tag nginx:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/nginx-re
 # 참고 자료:
 
 Flux 문서: [https://fluxcd.io/flux/](https://fluxcd.io/flux/)
-
