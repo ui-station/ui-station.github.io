@@ -205,7 +205,7 @@ puts "Name: #{name}, City: #{city}"
 
 # 개선 사항
 
-핵심 클래스를 전역적으로 수정하는 것은 예상치 못한 부작용과 충돌을 야기할 수 있으며, 특히 대규모 코드베이스나 공유 라이브러리에서는 특히 그렇습니다.```
+핵심 클래스를 전역적으로 수정하는 것은 예상치 못한 부작용과 충돌을 야기할 수 있으며, 특히 대규모 코드베이스나 공유 라이브러리에서는 특히 그렇습니다.
 
 <div class="content-ad"></div>
 
@@ -247,7 +247,7 @@ Refinement를 사용할 때 중요한 함정 중 하나는, 코드가 실행되�
 
 <div class="content-ad"></div>
 
-```md
+
 lazy_numbers = (1..Float::INFINITY).lazy
 result = lazy_numbers.select { |n| n % 2 == 0 }
                      .map { |n| n * n }
@@ -255,14 +255,14 @@ result = lazy_numbers.select { |n| n % 2 == 0 }
                      .to_a
 
 puts result.inspect
-```
+
 
 단점: 지연 열거자는 연산이 체인의 끝까지 연기되기 때문에 디버깅이 더 어려울 수 있습니다. 또한, 모든 열거자 메서드가 지연 열거자에서 사용 가능한 것은 아닙니다.
 
 # Enumerator::Chain
 
 여러 열거 가능한 항목을 연결하는 경우 연결이 필요했으며 표현력이 낮아 종종 가독성이 떨어지는 코드로 이어졌습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -316,7 +316,7 @@ puts calc.power(2, 3)     # 결과: 8
 # `it` 매개변수
 
 블록 변수를 명시적으로 사용하는 것은, 특히 map과 같이 단일 매개변수가 필요한 Enumerable 메소드들에 대한 간단한 작업에 대해 최대한 설명하기 위한 경우, 반복적이고 간결하지 않은 코드를 작성할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

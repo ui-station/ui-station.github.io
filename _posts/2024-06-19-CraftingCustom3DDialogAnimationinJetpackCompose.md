@@ -21,7 +21,7 @@ link: "https://medium.com/@kappdev/crafting-custom-3d-dialog-animation-in-jetpac
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-CraftingCustom3DDialogAnimationinJetpackCompose_0.png)
 
 # AnimatedDialog 함수
@@ -38,7 +38,7 @@ fun AnimatedDialog(
     content: @Composable (triggerDismiss: () -> Unit) -> Unit,
 )
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

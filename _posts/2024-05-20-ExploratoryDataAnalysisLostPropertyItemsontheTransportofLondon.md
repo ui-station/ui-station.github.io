@@ -217,7 +217,7 @@ The output looks like this:
 
 ![Map Image](/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_7.png)
 
-I have been to London several times, but my knowledge of London stations is not that good. Let’s draw all locations on the map, so it will be easier to see the places. I will use a Python geopy library to get the coordinates:```
+I have been to London several times, but my knowledge of London stations is not that good. Let’s draw all locations on the map, so it will be easier to see the places. I will use a Python geopy library to get the coordinates:
 
 <div class="content-ad"></div>
 

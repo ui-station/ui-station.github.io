@@ -11,7 +11,7 @@ link: "https://medium.com/@abhishek.talakeriv/java-tricky-interview-questions-fe
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-Javatrickyinterviewquestions_0.png)
 
 안녕하세요! 오늘은 핵심 Java에 관련된 어려운 인터뷰 질문을 살펴보겠습니다. 이 자료는 면접 준비 중인 개인들을 돕기 위해 특별히 설계되었습니다. 기술 면접을 해결하거나 이해력을 향상시키려는 경우, 이 시리즈는 성공으로 향하는 여정에서 귀하에게 가치 있는 자산이 되도록 목표하고 있습니다.
@@ -27,7 +27,7 @@ public static void main(String[] args) {
 
 }
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -102,7 +102,7 @@ public static void main(String[] args) {
   System.out.println(arr[0]);
 
  }
- ```
+ 
 
 답변: 0
 
@@ -110,7 +110,6 @@ public static void main(String[] args) {
 
 7. 아래 코드의 출력은 무엇입니까?
 
-```java
 public static void main(String[] args) {
 
   int i = 0;
@@ -118,7 +117,6 @@ public static void main(String[] args) {
   System.out.println(j);
 
 }
-```
 
 답: 2
 
@@ -126,25 +124,20 @@ public static void main(String[] args) {
 
 <div class="content-ad"></div>
 
-```java
-```js
 public static void main(String[] args) {
 
   System.out.println("Hello" == new String("Hello"));
 
  }
-```
 
 답변: False
 
 9. 아래 코드의 결과는 무엇입니까?
 
-```java
 int a = 5;
 int b = 10;
 a ^= b ^= a ^= b;
 System.out.println(a + "-" + b);
-```
 
 <div class="content-ad"></div>
 
@@ -152,13 +145,11 @@ System.out.println(a + "-" + b);
 
 10. 이 코드는 무엇을 출력합니까?
 
-```js
 public static void main(String[] args) {
 
   System.out.println(10 + 20 + "30" + 40 + 50);
 
  }
-```
 
 답변 : 30304050
 
@@ -166,7 +157,6 @@ public static void main(String[] args) {
 
 11. 아웃풋은 무엇인가요?
 
-```java
  public static void main(String[] args) {
 
   String s1 = "abc";
@@ -174,7 +164,6 @@ public static void main(String[] args) {
   System.out.println(s1.equals(s2) && s1 == s2);
 
  }
-```
 
 답: False
 
@@ -182,8 +171,8 @@ public static void main(String[] args) {
 
 <div class="content-ad"></div>
 
-```md
- ```java
+```
+ java
 public static void main(String[] args) {
 
  Integer a = 127;
@@ -191,8 +180,8 @@ public static void main(String[] args) {
  System.out.println(a == b);
 
 }
-```
-```
+
+
 
 답변: True
 
@@ -329,7 +318,7 @@ public static void main(String[] args) {
 
  }
 ```
-```
+
 
 <div class="content-ad"></div>
 
@@ -368,10 +357,10 @@ public static void main(String[] args) {
 
 <div class="content-ad"></div>
 
-```markdown
+
 테이블 태그를 Markdown 형식으로 변경하실래요.
 
-```
+
 
 <div class="content-ad"></div>
 

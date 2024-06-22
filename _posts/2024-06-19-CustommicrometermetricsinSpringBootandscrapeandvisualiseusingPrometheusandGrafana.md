@@ -76,13 +76,13 @@ management.endpoints.web.exposure.include=*
 
 Around 어드바이스를 생성하세요. 이를 위해 어노테이션을 만들었습니다. AOP에 대한 전체 기사를 작성했습니다. 한 번 시도해보세요. JaMon은 개발자가 애플리케이션을 쉽게 모니터링할 수 있게 하는 Java 애플리케이션 모니터링 API입니다. JaMon 의존성을 주입하세요:
 
-```markdown
+
 <dependency>
    <groupId>com.jamonapi</groupId>
    <artifactId>jamon</artifactId>
    <version>2.82</version>
 </dependency>
-```
+
 
 <div class="content-ad"></div>
 
@@ -276,7 +276,7 @@ public class HealthMetrics {
 }
 ```
 
-이제 애플리케이션을 다시 시작하면 새로 생성된 메트릭인 application_health를 볼 수 있습니다.```
+이제 애플리케이션을 다시 시작하면 새로 생성된 메트릭인 application_health를 볼 수 있습니다.
 
 <div class="content-ad"></div>
 

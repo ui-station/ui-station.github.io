@@ -147,7 +147,7 @@ Inset 크기 조정기
 
 예를 들어, Inset 크기 수정자를 사용하여 상태 표시줄과 내비게이션 바에 패딩을 제공하도록 마지막 코드를 다음과 같이 작성할 수 있습니다. 이렇게 하면 동일한 결과가 생성됩니다.
 
- ```js
+ js
 setContent {
     Column {
         Spacer(
@@ -170,7 +170,7 @@ setContent {
         )
     }
 }
-```
+
 
 이전과 같이 DarkGrey Box에 Insets 패딩을 추가하는 대신, 상태 표시줄과 내비게이션 바의 정확한 크기를 차지하는 LightGray Spacer를 추가했습니다.
 

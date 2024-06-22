@@ -137,7 +137,7 @@ get_similarities(questions, answers)
 
 # 결과 및 관찰
 
-첫 번째 질문과 대답 쌍에 대한 결과:```
+첫 번째 질문과 대답 쌍에 대한 결과:
 
 <div class="content-ad"></div>
 

@@ -51,7 +51,7 @@ Snowflake는 자사의 프로프라이어터리 테이블 형식을 시작한 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Snowflake Polaris and Databricks Unity Catalog](/assets/img/2024-06-19-SnowflakePolarisandDatabricksUnityCatalogTheageofOpenandInteroperableMetastores_3.png)
 
 최근 출시된 Polaris 카탈로그는 Iceberg의 오픈 소스 REST 프로토콜을 기반으로 하여 사용자가 Iceberg Rest API를 지원하는 Apache Spark, Flink, Trino 등과 같은 원하는 엔진을 사용하여 데이터에 액세스하고 검색할 수 있는 오픈 표준을 제공합니다. Polaris는 다음 90일간(약 2024년 4분기) 오픈 소스로 공개될 예정입니다.
@@ -59,7 +59,7 @@ Snowflake는 자사의 프로프라이어터리 테이블 형식을 시작한 �
 # 개방성은 호환성을 의미하지 않을 수 있습니다
 
 이러한 프로젝트들을 오픈 소스 Apache 이니셔티브로 오픈하는 것은 긍정적인 단계이지만, 데이터 솔루션 아키텍처적인 측면에서 보면, 코드를 오픈할 필요는 없고 오히려 노출되는 인터페이스가 오픈되어야 합니다. 이 글을 쓰는 동안, Polaris는 원래 Iceberg만을 지원하며, Unity는 UniForm을 사용하여 네이티브 Delta 이외의 다른 OTF(Open Table Format)를 간접적으로 지원하고, Tabular 인수 이후 Iceberg와의 새로운 통합을 수행하고 있습니다.
-```  
+
 
 <div class="content-ad"></div>
 

@@ -36,7 +36,7 @@ link: "https://medium.com/towards-data-science/securing-your-containerised-model
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Containerized Security](/assets/img/2024-06-19-SecuringyourContainerisedModelsandWorkloads_0.png)
 
 보안은 종종 다층 접근법으로 간주됩니다. 공격자가 컨테이너에 들어갈 경우 사용자로서 가지는 권한이 첫 번째 방어층이 됩니다. 만약 컨테이너 사용자가 루트 액세스를 할당받는다면, 공격자는 컨테이너 내 모든 것을 자유롭게 제어할 수 있습니다. 이러한 넓은 액세스로 인해 잠재적인 취약점을 이용하여 호스트로 탈출하고 모든 연결된 시스템에 완전한 액세스를 획들할 수도 있습니다. 그 결과는 심각하며 다음과 같습니다:
@@ -47,7 +47,7 @@ link: "https://medium.com/towards-data-science/securing-your-containerised-model
 - 데이터베이스와 같은 연결된 민감한 서비스에 액세스 획득
 
 ![Containerized Security](/assets/img/2024-06-19-SecuringyourContainerisedModelsandWorkloads_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +96,7 @@ Once you are inside the container, feel free to try out various commands. Keep i
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-SecuringyourContainerisedModelsandWorkloads_4.png)
 
 시스템 전반적인 제한은 보안에 좋지만, 특정 파일 및 디렉터리에 대한 쓰기 권한이 필요한 경우가 많이 발생하며, 그러한 허용 사항에 대응해야 합니다.
@@ -104,7 +104,7 @@ Once you are inside the container, feel free to try out various commands. Keep i
 다음 섹션에서는 기계 학습 운영 수명 주기의 네 가지 시나리오 예제를 제공합니다. 이러한 예제를 통해 대부분의 다른 경우에 대한 구현 방법을 이해할 수 있을 것입니다.
 
 # 네 가지 시나리오
-```
+
 
 <div class="content-ad"></div>
 
@@ -118,7 +118,7 @@ Once you are inside the container, feel free to try out various commands. Keep i
 
 <div class="content-ad"></div>
 
-```markdown
+
 # Dockerfile
 FROM python:3.11-slim
 
@@ -136,14 +136,14 @@ RUN adduser --no-create-home nonroot
 USER nonroot
 
 CMD ["python", "inference.py"]
-```
+
 
 이 Dockerfile은 먼저 nonroot라는 새로운 시스템 사용자를 만드는 두 가지 간단한 명령어를 가지고 있습니다. 두 번째로, 마지막 CMD 라인 바로 전에 루트에서 nonroot 사용자로 전환됩니다. 기본 non-root 사용자의 경우 쓰기 및 실행 권한이 없기 때문에, 이전 단계에서 필요한 파일을 설치하거나 복사하거나 조작할 수 없습니다.
 
 이제 Docker에서 non-root 사용자를 할당하는 방법을 알았으니, 다음 단계로 넘어가 봅시다.
 
 ## 2) 데이터 처리 파이프라인 실행하기 — 컨테이너 내에서 작성
-```
+
 
 <div class="content-ad"></div>
 
@@ -179,7 +179,7 @@ CMD ["python", "preprocess.py"]
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Securing your Containerised Models and Workloads](/assets/img/2024-06-19-SecuringyourContainerisedModelsandWorkloads_8.png)
 
 ![Securing your Containerised Models and Workloads](/assets/img/2024-06-19-SecuringyourContainerisedModelsandWorkloads_9.png)

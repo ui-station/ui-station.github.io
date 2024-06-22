@@ -157,7 +157,7 @@ extension Service where Input == Void{
 }
 ```
 
-단일 인터페이스를 가지고 있어, 다음과 같은 것을 할 수 있습니다.```
+단일 인터페이스를 가지고 있어, 다음과 같은 것을 할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -208,7 +208,7 @@ class ViewModel<AllShowsService: AllShowsServiceType, MarkShowAsWatchedService: 
 - Service`Void, [Show]`
 - Service`(show: Show, episode: Episode?), Void`
 
-Service가 단일 인터페이스이기 때문에 앱 전체의 모든 서비스에 적용할 수 있는 각 측면마다 인터페이스의 구현만 있으면 됩니다.```
+Service가 단일 인터페이스이기 때문에 앱 전체의 모든 서비스에 적용할 수 있는 각 측면마다 인터페이스의 구현만 있으면 됩니다.
 
 <div class="content-ad"></div>
 
@@ -369,7 +369,7 @@ AllShowsService()
 
 ## 데코레이터 자동화
 
-Sourcery는 많은 보일러플레이트 코드를 자동화하는 훌륭한 메타프로그래밍 도구입니다. 데코레이터는 이 도구를 적용하기에 좋은 후보입니다. 특히 동일한 측면을 많은 다른 인터페이스에 적용하려는 경우에 유용합니다. 여기를 확인해보세요.```
+Sourcery는 많은 보일러플레이트 코드를 자동화하는 훌륭한 메타프로그래밍 도구입니다. 데코레이터는 이 도구를 적용하기에 좋은 후보입니다. 특히 동일한 측면을 많은 다른 인터페이스에 적용하려는 경우에 유용합니다. 여기를 확인해보세요.
 
 <div class="content-ad"></div>
 

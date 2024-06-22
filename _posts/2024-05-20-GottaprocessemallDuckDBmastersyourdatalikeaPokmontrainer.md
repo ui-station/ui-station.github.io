@@ -113,7 +113,7 @@ curl -s https://pokeapi.co/api/v2/pokemon/bulbasaur | jq .
 
 # 프로젝트 설정
 
-새로운 Python 프로젝트를 만들기 시작합니다. 이를 위해 새 폴더를 만듭니다. 이 폴더 내에서 내장된 venv 모듈을 사용하여 가상 환경을 생성합니다:```
+새로운 Python 프로젝트를 만들기 시작합니다. 이를 위해 새 폴더를 만듭니다. 이 폴더 내에서 내장된 venv 모듈을 사용하여 가상 환경을 생성합니다:
 
 <div class="content-ad"></div>
 
@@ -132,7 +132,7 @@ pip install pandas
 pip install requests
 ```
 
-여기까지 준비가 되었습니다. 다음 장에서는 포켓몬 API를 활용한 DuckDB의 일부 기능을 살펴볼 것입니다. 이 코드를 프로젝트 내의 Python 파일로 복사하여 실행할 수 있습니다.```
+여기까지 준비가 되었습니다. 다음 장에서는 포켓몬 API를 활용한 DuckDB의 일부 기능을 살펴볼 것입니다. 이 코드를 프로젝트 내의 Python 파일로 복사하여 실행할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -200,7 +200,7 @@ df = pd.DataFrame({"some_values" : [42, 7411, 4]})
 print(duckdb.query("SELECT SUM(some_values) FROM df").to_df())
 ```
 
-하지만 일단은 포켓몬으로 계속해 봅시다.```
+하지만 일단은 포켓몬으로 계속해 봅시다.
 
 <div class="content-ad"></div>
 
@@ -249,7 +249,7 @@ duckdb.sql("""
 
 피카츄를 라이츄로 진화시킬 수 있을까요? 물론 가능합니다! 이전 예제의 결과를 사용하면, url이라는 열을 가지고 있어 각 포켓몬에 대한 더 많은 세부 정보를 얻기 위해 요청해야 합니다. read_json_auto와 같은 함수는 테이블 수준 함수이기 때문에 각 행에 적용할 수 없습니다.
 
-DuckDB는 Python과 완벽하게 통합되어 있어 열에 있는 각 url 값에 대해 간단히 Python 함수를 호출할 수 있는 방법이 있습니다. 이는 다른 데이터베이스 시스템에서 알 수 있는 사용자 정의 함수(UDF)와 유사합니다.```
+DuckDB는 Python과 완벽하게 통합되어 있어 열에 있는 각 url 값에 대해 간단히 Python 함수를 호출할 수 있는 방법이 있습니다. 이는 다른 데이터베이스 시스템에서 알 수 있는 사용자 정의 함수(UDF)와 유사합니다.
 
 <div class="content-ad"></div>
 
@@ -494,7 +494,7 @@ duckdb.sql("""
 df_agg = df.explode("abilities").groupby("abilities", as_index=False).agg(count=("id", "count"))
 ```
 
-그리고 df_agg 변수에 저장된 데이터프레임을 SQL에서 사용할 수 있습니다. 처음 보았을 때 정말 놀랐던 부분이죠.```
+그리고 df_agg 변수에 저장된 데이터프레임을 SQL에서 사용할 수 있습니다. 처음 보았을 때 정말 놀랐던 부분이죠.
 
 <div class="content-ad"></div>
 
@@ -509,7 +509,7 @@ LIMIT 8;
 
 # 데모 7: 데이터 유지 및 로드
 
-매번 실행할 때마다 API를 호출하는 것은 가장 효율적인 해결책은 아닙니다. 물론 결과를 기다리는 동안 맛있는 커피 한 잔을 마실 수 있는 기회를 제공하지만, DuckDB는 데이터를 유지할 수도 있습니다. 예를 들어 데이터를 파일로 직렬화하여 파일 시스템에 저장할 수 있습니다.```
+매번 실행할 때마다 API를 호출하는 것은 가장 효율적인 해결책은 아닙니다. 물론 결과를 기다리는 동안 맛있는 커피 한 잔을 마실 수 있는 기회를 제공하지만, DuckDB는 데이터를 유지할 수도 있습니다. 예를 들어 데이터를 파일로 직렬화하여 파일 시스템에 저장할 수 있습니다.
 
 <div class="content-ad"></div>
 

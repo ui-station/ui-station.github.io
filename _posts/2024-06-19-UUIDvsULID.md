@@ -117,4 +117,3 @@ UUID 예제에서는 새 UUID 생성, 문자열에서 UUID 파싱, 두 UUID 비�
 ULID 예제에서는 com.github.brianrubin.ulid.ULID 라이브러리를 사용하여 ULID를 다루는 방법을 보여줍니다. 새 ULID 생성, 문자열에서 ULID 파싱, 두 ULID 비교, ULID를 JSON 객체로 변환하는 방법을 보여줍니다.
 
 두 방식의 주요 차이점은 ULID가 식별 정보를 사전순으로 정렬할 수 있도록 설계되었으며 UUID와는 다르게 타임스탬프 구성 요소를 포함한다는 점입니다. 특정 응용 프로그램에서 유용할 수 있습니다.
-```

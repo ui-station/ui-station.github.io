@@ -150,7 +150,7 @@ resource "azurerm_private_dns_a_record" "dns_a" {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-HowtoTroubleshootanAzureStorageAccountwithaPrivateEndpointandaContainerwithTerraform_1.png)
 
 공개 액세스를 종료해야만 Private Endpoint를 구현하는 의미가 있습니다.
@@ -198,7 +198,7 @@ resource "azurerm_storage_container" "external" {
 # 4. 특정 네트워크에서 액세스 권한 활성화
 
 따라서 이 문제를 해결하기 위해 특정 네트워크에서의 공개 액세스를 허용할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

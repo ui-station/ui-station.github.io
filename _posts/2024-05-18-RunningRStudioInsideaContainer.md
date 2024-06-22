@@ -83,7 +83,7 @@ docker.io/rocker/rstudio:latest
 rocker/rstudio  최신        7039fb162243   2일 전       1.94GB
 ```
 
-이제 Rocker Project에서 제안한 명령어를 사용하여 docker run 명령어로 컨테이너 내에서 RStudio를 시작해 봅시다.```
+이제 Rocker Project에서 제안한 명령어를 사용하여 docker run 명령어로 컨테이너 내에서 RStudio를 시작해 봅시다.
 
 <div class="content-ad"></div>
 

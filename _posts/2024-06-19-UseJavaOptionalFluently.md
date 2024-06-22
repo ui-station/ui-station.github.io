@@ -21,7 +21,7 @@ Java Optional의 기본 사항을 다시 확인해 봅시다. 아래는 사용�
 
 <div class="content-ad"></div>
 
-```markdown
+
 // 사용자 레코드
 record User(String uid, String name, 
             Address address, boolean ceo){
@@ -55,14 +55,14 @@ if (oUser.isPresent()) {
    // User를 처리합니다. 비어있지 않습니다
    String name = oUser.get().name();
 }
-```
+
 
 위 예시에서 Users 클래스에는 getUser(...)라는 메서드가 있는데 이 메서드는 User 타입의 Optional을 반환합니다. 이는 호출자에게 반환된 User 값이 null일 수 있다는 것을 나타냅니다. Optional 값 자체가 null이 되어선 안 됩니다.
 
 Users.getUser(...)의 호출자는 Optional의 isPresent() 메서드를 사용하여 유효한 값이 있는지 확인하고 있다면 사용자를 처리할 것입니다. Optional 클래스를 사용하는 이점은 호출자가 null 반환 값을 처리하는 방법을 고려하게끔 만든다는 점입니다. 이로써 Null Pointer Exception을 방지하고 코드를 견고하게 만듭니다. 본질적으로 이 아이디어는 호출자가 Exception을 처리할 수 있도록 강제하는 것과 유사합니다.
 
 다수의 개발자가 사용할 라이브러리를 작성할 때 Java Optional을 반환하는 것이 권장됩니다. 모든 메서드 호출이 null을 반환할 수 있는 경우에 Optional을 반환하도록 설계하는 것은 목적이 아닙니다. 예를 들어 Java Streams API와 Spring Boot 라이브러리는 많은 곳에서 Java Optional을 반환합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -151,7 +151,7 @@ User user = oUser.orElse(User.DEFAULT_USER);
 
 그러나 기본 사용자가 상수보다 조금 복잡하고 어떤 로직에 의해 검색되어야 하는 경우는 어떨까요?
 
-Optional 클래스가 해결책을 제공합니다. orElseGet(..) 메소드를 사용할 수 있습니다.```
+Optional 클래스가 해결책을 제공합니다. orElseGet(..) 메소드를 사용할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -268,7 +268,7 @@ Optional<String> name
 Fluent 스타일 개발을 사용하면 코드의 가독성이 뚜렷하게 향상된 것을 볼 수 있습니다. Fluent 스타일의 프로그래밍은 사용에 익숙해지려면 약간의 연습이 필요합니다.
 
 # flatMap() 메서드
-```
+
 
 <div class="content-ad"></div>
 
@@ -338,7 +338,7 @@ Optional<String> zip = Users.getUser(uid)
 
 # `stream()` 메소드
 
-마지막으로, `Optional`은 `stream()` 메소드도 가지고 있는데, 이 메소드는 0 또는 1개의 값을 가지는 스트림을 생성합니다. 만약 `Optional`이 비어있다면 0개의 요소를 가진 스트림을 반환하고, 유효한 값이 있는 경우 1개의 요소를 가진 스트림을 반환할 것입니다. 그런 다음 사용 가능한 스트림 메소드 중 하나를 사용하여 스트림을 함수형 스타일로 조작할 수 있습니다.```
+마지막으로, `Optional`은 `stream()` 메소드도 가지고 있는데, 이 메소드는 0 또는 1개의 값을 가지는 스트림을 생성합니다. 만약 `Optional`이 비어있다면 0개의 요소를 가진 스트림을 반환하고, 유효한 값이 있는 경우 1개의 요소를 가진 스트림을 반환할 것입니다. 그런 다음 사용 가능한 스트림 메소드 중 하나를 사용하여 스트림을 함수형 스타일로 조작할 수 있습니다.
 
 <div class="content-ad"></div>
 

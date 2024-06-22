@@ -87,6 +87,5 @@ FoodCategoriesViewModel 인스턴스(foodCategoriesViewModel)는 UI 상태(foodC
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![How to Use ViewModel with Jetpack Compose](/assets/img/2024-06-19-HowtoUseViewModelwithJetpackCompose_0.png)
-```

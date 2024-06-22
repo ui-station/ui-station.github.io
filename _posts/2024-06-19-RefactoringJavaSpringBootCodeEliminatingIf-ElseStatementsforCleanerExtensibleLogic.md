@@ -70,12 +70,12 @@ public class PaypalPayment implements PaymentStrategy {
 
 테이블 태그를 마크다운 형식으로 변경하십시오.
 
-```markdown
+
 | 구분 | 설명 |
 |---|---|
 | 1 | 첫 번째 |
 | 2 | 두 번째 |
-```
+
 
 <div class="content-ad"></div>
 
@@ -126,7 +126,7 @@ public class OrderService {
 다형성은 객체를 실제 클래스가 아닌 부모 클래스의 인스턴스로 취급할 수 있게 합니다. 이를 통해 부모 클래스의 참조를 통해 파생 클래스의 재정의된 메소드를 호출할 수 있습니다.
 
 ## Example: Notification System
-```
+
 
 <div class="content-ad"></div>
 
@@ -312,7 +312,7 @@ public class UserService {
 # 결론
 
 이러한 전략을 적용함으로써 Java Spring Boot 프로젝트에서 if-else 문의 사용을 크게 줄일 수 있습니다. 이는 코드를 더 읽기 쉽게 만들 뿐만 아니라 유지보수성과 확장성을 향상시킵니다. 이러한 패턴과 관행을 받아들여 더 깨끗하고 효율적인 코드를 작성해 보세요.
-``` 
+
 
 <div class="content-ad"></div>
 

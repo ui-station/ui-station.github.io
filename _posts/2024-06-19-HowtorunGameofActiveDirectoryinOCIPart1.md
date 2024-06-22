@@ -45,15 +45,15 @@ Oracle Cloud Infrastructure 이미지
 
 OCI에서 우분투의 기본 사용자는 ubuntu이므로 goad.sh의 모든 참조는 ubuntu 사용자를 사용할 것입니다:
 
-```
+
 ![2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_2](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_2.png)
-```
+
 
 4. 스크립트 아래에, 저는 설치 후 우분투 서버의 선행 조건을 설치하기 위해 setup_oci.sh 스크립트를 만들었습니다.
 
-```
+
 ![2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_3](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -308,7 +308,7 @@ options {
 
 The DHCP configuration part is essential, as if it’s not properly configured, it will result in the failure of the ansible jobs. If the terraform variable will not add the search domain, you need to do this manually:
 
-Go to the VCN → DHCP Options:```
+Go to the VCN → DHCP Options:
 
 <div class="content-ad"></div>
 
@@ -420,7 +420,7 @@ instance_options {
 ```
 
 windowsvm.tf
-```
+
 
 <div class="content-ad"></div>
 
@@ -503,13 +503,13 @@ output "windows_instance_opc_passwords" {
 ```
 
 프로비저닝 중 발생한 일반적인 오류입니다.
-```
+
 
 <div class="content-ad"></div>
 
 다음과 같이 Markdown 형식에 맞게 표 태그를 변경하십시오.
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_9.png)
 
 모든 TF가 생성된 후, GOAD git 저장소가 정상적으로 동기화된 경우 다음을 실행해야 합니다:
@@ -517,7 +517,7 @@ output "windows_instance_opc_passwords" {
 abirzu@abirzu-mac GOAD % ./goad.sh -t destroy -l GOAD -p oci -m local
 
 모든 서버가 가동되고 작동 중인 것을 확인할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

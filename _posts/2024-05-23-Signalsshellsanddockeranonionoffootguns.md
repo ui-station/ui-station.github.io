@@ -250,26 +250,26 @@ ci-agent는 사실상 도커에게 스크립트를 실행하라고 지시하는 
 
 <div class="content-ad"></div>
 
-```md
+
 ci-agent
 └─docker
 └─bash
 └─test_pipeline
 └─pytest
-```
+
 
 도커가 신호를 베쉬에게 전달하나요? 도커는 각 컨테이너마다 새로운 pid 네임스페이스를 생성하기 때문에 실행되는 명령이 pid 1이 됩니다. 1은 매우 특별한 pid입니다 (일반적으로 init 프로세스) 그리고 기본 신호 처리기를 가져오지 않습니다. 이 문제를 해결하기 위해 tini 또는 dumb-init을 pid 1로 사용하는 것이 일반적입니다.
 
 이미지를 조사한 결과 이미 우리는 dumb-init을 사용하고 있었다는 것이 밝혀졌습니다. 그래서 다음과 같은 트리가 남았습니다.
 
-```md
+
 ci-agent
 └─docker
 └─dumb-init
 └─bash
 └─test_pipeline
 └─pytest
-```
+
 
 <div class="content-ad"></div>
 

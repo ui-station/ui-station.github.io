@@ -163,14 +163,14 @@ do {
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="https://miro.medium.com/v2/resize:fit:592/1*cfrDQghry5EPpPhMSFFDaA.gif" />
 
 각각의 오류에 대한 설명 은 오류가 처음에 발생한 이유입니다.
 사용자가 사용자를 피할 수 있는 가능한 조치입니다.
 
 우리는 Error enum에 해당 정보를 변수로 추가할 수 있습니다. 그러나 이미 모든 이 정보를 그룹화하기 위한 프로토콜이 있습니다: LocalizedError. 우리의 사용 사례에서 우리는 failureReason 및 recoverySuggestion 변수 만 구현하면 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -226,7 +226,7 @@ struct AppError: Error {
 ```
 
 이렇게 함으로써 로깅 오류 로직을 한 곳에 중앙 집중화할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

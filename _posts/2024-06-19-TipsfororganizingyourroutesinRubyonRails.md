@@ -11,7 +11,7 @@ link: "https://medium.com/unagi/tips-for-organizing-your-routes-in-ruby-on-rails
 ---
 
 
-```markdown
+
 ![Route Organization Tips](/assets/img/2024-06-19-TipsfororganizingyourroutesinRubyonRails_0.png)
 
 routes.rb 파일은 Ruby on Rails 개발 프로젝트의 중요한 부분입니다. 이 파일은 사실상 우리 애플리케이션의 지도 역할을 합니다. 따라서 이를 잘 구성하는 것이 중요합니다. 보통 모듈로 라우트를 구성하거나 알파벳 순으로 정리하여 시작하지만, 시간이 지남에 따라 이 파일은 종종 길들이기 어려운 정글로 변할 수 있습니다.
@@ -19,7 +19,7 @@ routes.rb 파일은 Ruby on Rails 개발 프로젝트의 중요한 부분입니�
 이는 집 안의 창고와 비슷합니다. 정리되지 않은 물건들을 보관하는 곳으로, 처음에는 무엇이 어디에 있는지 알 수 있지만 언젠가는 들어가서 무언가를 찾으려 하면, 과거에 사용한 스케이트보드와 할머니가 남긴 썩은 나무 상자 위에 오래된 사진과 첫 번째 애왔던 Tony의 목줄이 있는 전쟁터 같아집니다.
 
 나는 그런 혼돈을 좋아하지 않기 때문에, 이 글에서는 routes.rb라는 그 창고를 잘 정리하는 데 매우 유용했던 몇 가지 실천 방법을 공유하겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -113,7 +113,7 @@ resources :articles do
 end
 ```
 
-## 리소스와 관련이 없는 라우트는 어떻게 처리해야 합니까?```
+## 리소스와 관련이 없는 라우트는 어떻게 처리해야 합니까?
 
 <div class="content-ad"></div>
 

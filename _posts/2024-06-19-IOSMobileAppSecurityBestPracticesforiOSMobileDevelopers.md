@@ -11,7 +11,7 @@ link: "https://medium.com/@pratap89singh/ios-mobile-app-security-best-practices-
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-19-IOSMobileAppSecurityBestPracticesforiOSMobileDevelopers_0.png)
 
 iOS 개발자들은 OWASP Top 10을 기반으로 코드 보안, 데이터 저장 및 통신 보안에 중점을 두어야 합니다. iOS는 안드로이드보다 취약성이 적지만 여전히 보안 문제에 직면합니다. 코드와 데이터 통신을 안전하게 보호하여 변조 및 무단 코드 접근을 방지하는 것은 개발자/조직의 책임입니다.
@@ -19,7 +19,7 @@ iOS 개발자들은 OWASP Top 10을 기반으로 코드 보안, 데이터 저장
 개발자가 주의를 기울여야 할 초보 수준의 위협을 다루기 위해 모든 iOS 개발자는 다음을 주의깊게 살펴봐야 합니다:
 
 # 1. 화면 녹화 및 화면 캡처:
-```
+
 
 <div class="content-ad"></div>
 
@@ -146,7 +146,7 @@ func assignJailBreakCheckType() -> Bool {
 }
 ```
 
-# 3. 키체인 데이터 보호:```
+# 3. 키체인 데이터 보호:
 
 <div class="content-ad"></div>
 
@@ -219,7 +219,7 @@ persistentStoreCoordinator.addPersistentStore(ofType: NSSQLiteStoreType, configu
 ```
 
 # 5. 암호 필드 표시/숨기기:
-```
+
 
 <div class="content-ad"></div>
 

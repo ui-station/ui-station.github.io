@@ -11,7 +11,7 @@ link: "https://medium.com/@sevbanbuyer/better-debugging-quality-in-android-devel
 ---
 
 
-```markdown
+
 ![Better Debugging Quality in Android Development](/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_0.png)
 
 개발 중에는 때때로, 이 검사 또는 등록 양식을 한 번 더 다시 쓰지 않으면 안 되는 상황이 발생합니다. 와락그러면서도 작은 버그를 찾기 위해 그 순응하지 않는 작은 고집스러운 버그를 발견하게 됩니다. 바로 이 점 때문에 우리에게 현저한 피해를 줄 수 있다는 것을 잊지 마세요. 그러므로 더 이상 그만 하기로 해야 합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@sevbanbuyer/better-debugging-quality-in-android-devel
 이 기사에서는 개발자로서 우리에게 매우 보편적인 보스 같은 여정을 겪어볼 것입니다. 지금 우리는 왼쪽, 오른쪽, 여기저기에 명령을 내리는 것을 좋아하는 우리 개발자들에게 익숙한 이야기죠 😀.
 
 오늘 하루, 우리는 테스트 디바이스나 에뮬레이터를 제어하는 것뿐만 아니라 그 양식을 여러 번 작성하는 본능적 욕구도 제어할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -53,11 +53,11 @@ adb exec-out uiautomator dump /dev/tty
 ```
 
 이 명령어가 마법이 시작되는 곳입니다. UI Automator는 XML 형식의 현재 화면 보기 계층에 대한 덤프를 생성합니다. 이 명령을 입력하면 이 파일이 터미널에 표시될 것입니다. 그리고 우리가 관심 있는 부분은 실제로 이 파일의 각 요소의 [bounds] 태그이며, 다음은 그 노드 중 하나의 서식이 적용된 버전입니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_1.png" />
 
 그렇게 말하니까 아마 이해가 가실 거에요. 우리는 각 요소의 경계를 가져오기 위한 파서를 만들어야 합니다. 물론 원하는 때마다 관련 요소에 접근 하는 방법은 그들의 이름을 호출하는 것입니다 :). 아래 스크립트에서 우리는 효과적으로 해당 목표를 달성하기 위해 터미널 명령을 사용합니다.
@@ -104,7 +104,7 @@ function getCoords() {
 ```
 
 이렇게 하면 모든 것이 훨씬 더 쉬워집니다. 예를 들어 로그인 플로우를 만들었습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -124,7 +124,7 @@ tapIfExists "SIGN IN"
 <img src="/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_2.png" />
 
 <img src="/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_3.png" />
-```  
+
 
 <div class="content-ad"></div>
 
@@ -170,7 +170,7 @@ tapIfExists "로그인"
 Applescript에 완전한 경로가 포함된 스크립트를 제공하면, Settings에서 `Keyboard` Keyboard Shortcuts  `Services` General로 이동하고 그 섹션에 스크립트가 표시됩니다. 이제 원하는 단축키를 할당할 수 있습니다.
 
 <img src="/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_4.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -186,7 +186,7 @@ dumpsys 명령어는 장치에서 실행 중인 모든 시스템 서비스에 �
 
 위의 표를 다음과 같이 변경해 주세요:
 
-```
+
 | 주제               | 설명                                      |
 |--------------------|-------------------------------------------|
 | 활동 및 프래그먼트 | - 활동 및 프래그먼트에 대한 정보          |
@@ -194,7 +194,7 @@ dumpsys 명령어는 장치에서 실행 중인 모든 시스템 서비스에 �
 | 알람               | - 알람 설정 및 관리에 관한 정보            |
 | 패키지 정보       | - 앱 패키지 정보에 대한 정보               |
 | 작업 스케줄러     | - 작업 스케줄러 사용법과 정보에 대한 정보 |
-```
+
 
 이 서비스들과 상호작용하면서 코드를 통해 어떤 일이 벌어지는지를 알아내므로 버그에 대한 효율적인 추측이 가능합니다.
 
@@ -242,7 +242,7 @@ adb shell dumpsys | grep "BottomNavigationItemView"
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_6.png)
 
 안드로이드는 앱의 리소스에 쉽게 액세스할 수 없도록 허용하지 않는다는 점이 좋은 것 같아요. 
@@ -250,11 +250,11 @@ adb shell dumpsys | grep "BottomNavigationItemView"
 그런데 앱의 내부 데이터의 정확한 경로는 다음과 같아요: /data/user/0/`your.package.name` 그래도 저 정확한 경로를 알아도 들어가지 못하는 걸 보면 다른 방법이 필요할 걸요.
 
 이를 위해 안드로이드의 각 앱이 사실 별칭으로 패키지 이름을 가진 사용자라는 사실을 활용할 거에요:
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot 1](/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_7.png)
 
 우리는 run-as 명령어를 사용하여 앱이 셀프인 것처럼 속이는 데 사용했습니다. 이제 우리는 앱의 내부 저장소를 lsin 할 수 있고, sharedPref, 데이터베이스 또는 파일과 같은 데이터를 볼 수 있습니다. 이 데이터들은 코드베이스 내에서 파일 API를 사용하여 생성된 것입니다.
@@ -262,7 +262,7 @@ adb shell dumpsys | grep "BottomNavigationItemView"
 ![Screenshot 2](/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_8.png)
 
 그리고 BUM! 여기가 제 앱의 공유 프리퍼런스 파일이고, onboarding_key와 해당 값을 볼 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 

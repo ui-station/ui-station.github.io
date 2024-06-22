@@ -206,12 +206,12 @@ sudo vi /opt/splunkforwarder/etc/system/local/inputs.conf
 
 <div class="content-ad"></div>
 
-```md
+
 [monitor:///var/log/]
 disabled = false
 index = default
 sourcetype = log
-```
+
 
 ## outputs.conf
 

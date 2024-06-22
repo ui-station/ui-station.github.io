@@ -91,7 +91,7 @@ public class Person {
 ![이미지](/assets/img/2024-06-19-HowtheHumbleSynchronizedbeatsReentrantLockSimplifiedforalongsufferingJavaProgrammer_1.png)
 
 ## 두꺼운 락
-```
+
 
 <div class="content-ad"></div>
 
@@ -137,7 +137,7 @@ public class CopyOnWriteArrayList<E> {
 일부 사람들은 Java21 프로젝트 Loom을 통해 JVM이 내포된 잠금보다 ReentrantLock을 사용할 때 더 잘 작동할 수 있다고 의견을 제시합니다.
 
 ## 참고문헌: 
-```
+
 
 <div class="content-ad"></div>
 

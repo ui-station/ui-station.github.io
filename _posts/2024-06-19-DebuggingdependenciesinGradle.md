@@ -102,16 +102,16 @@ Gradle 문서에서는 각 종속성마다 나열된 주석 기호의 의미를 
 
 <div class="content-ad"></div>
 
-```md
+
 ./gradlew :app:dependencyInsight --configuration debugRuntimeClasspath
 --dependency androidx.compose.foundation > dependencyInsight.txt
-```
+
 
 여기서도 구성을 전달하고 관심 있는 종속성을 인수로 추가합니다. 또한 결과를 파일에 보내어 변경 전과 변경 후의 결과를 diff 할 수 있습니다. --scan 플래그를 사용하여 웹 버전도 있습니다.
 
 파일 상단에는 종속성에 대한 메타데이터와 요청된 버전 및 해결된 버전에 대한 정보가 표시됩니다:
 
-```md
+
 > 작업 :app:dependencyInsight
 androidx.compose.foundation:foundation:1.7.0-beta02
   Variant releaseRuntimeElements-published:
@@ -129,7 +129,7 @@ androidx.compose.foundation:foundation:1.7.0-beta02
        - 제약 조건으로 인해
        - 제약 조건으로 인해 Text의 심각한 버그 방지
        - 버전 1.7.0-beta02, 1.6.7, 1.4.0 및 1.6.0 사이의 충돌 해결로 인해
-```
+
 
 <div class="content-ad"></div>
 
@@ -169,16 +169,16 @@ implementation(libs.compose.navigation) {
 
 <div class="content-ad"></div>
 
-```markdown
+
 compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "2.8.0-beta02" 
-```
+
 
 그리고 원하는 버전을 포함시키는 것을 잊지 마세요:
 
-```markdown
+
 implementation(libs.compose.foundation)
 implementation(libs.compose.foundation.layout)
-```
+
 
 where:
 

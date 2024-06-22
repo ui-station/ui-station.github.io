@@ -61,17 +61,17 @@ sudo DEBIAN_FRONTEND=noninteractive apt install -y netfilter-persistent iptables
 
 <div class="content-ad"></div>
 
-```md
+
 sudo reboot
-```
+
 
 # STEP-3:
 
 Raspberry Pi는 독립 와이어리스 네트워크를 실행하고 관리합니다. 또한 와이어리스 및 이더넷 네트워크 간 경로를 제공하여 와이어리스 클라이언트에게 인터넷 액세스를 제공합니다. Raspberry Pi를 서버로 설정하기 위해서는 와이어리스 포트에 고정 IP 주소를 할당해야 합니다. 이 작업은 dhcpcd 구성 파일을 편집하여 수행할 수 있습니다. dhcpcd.conf 파일을 편집하려면 아래 명령을 실행하세요.
 
-```md
+
 sudo nano /etc/dhcpcd.conf
-```
+
 
 <div class="content-ad"></div>
 

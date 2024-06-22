@@ -13,7 +13,7 @@ link: "https://medium.com/@dksoni4530/terraform-interview-questions-4988bedcec80
 
 먼저, 아래 Markdown 형식으로 표 태그를 변경하실 수 있습니다.
 
-```markdown
+
 ![image](/assets/img/2024-06-19-TerraformInterviewQuestions_0.png)
 
 Q1: 테라폼을 사용하여 ec2 인스턴스를 만들었다고 가정해보겠습니다. 그리고 생성 후, 상태 파일에서 해당 항목을 제거했습니다. 그럼, terraform apply를 실행하면 어떻게 될까요?
@@ -21,7 +21,7 @@ Q1: 테라폼을 사용하여 ec2 인스턴스를 만들었다고 가정해보�
 - 상태 파일에서 항목을 제거했기 때문에 terraform은 더 이상 해당 리소스를 관리하지 않게 됩니다. 따라서, 다음 apply에서는 새로운 리소스를 생성하게 됩니다.
 
 Q2: Terraform에서 상태 파일(State file)이란 무엇인가요?
-```
+
 
 <div class="content-ad"></div>
 

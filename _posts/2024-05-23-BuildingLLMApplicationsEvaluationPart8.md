@@ -1533,7 +1533,7 @@ Calculation
 
 To calculate the relevance of the answer to the given question, we follow two steps:
 
-```
+
 
 <div class="content-ad"></div>
 

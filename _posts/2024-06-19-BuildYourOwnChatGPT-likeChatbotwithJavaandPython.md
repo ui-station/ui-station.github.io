@@ -39,7 +39,7 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_1.png)
 
 먼저, 클라이언트가 무엇으로 구성되는지, 특히 사용자가 시스템과 상호 작용하기 위해 필요한 도구나 인터페이스가 무엇인지를 결정해야 합니다. 위에서 설명한 것처럼, 시스템이 현재 완전히 구현되어 작동 중인 기능적인 단위로 가정하고 클라이언트 및 클라이언트-시스템 연결에 중점을 두도록 합니다. 클라이언트의 경우 인터페이스는 다목적으로 설계된 웹 사이트를 통해 이용할 수 있으며 주로 데스크톱 장치를 대상으로 합니다. 모바일 앱도 개발되어 동일한 시스템 서비스를 사용하고 특정 인터페이스를 통합할 수 있지만, 추상적인 관점에서 모든 종류의 클라이언트를 하나로 통합하는 것이 바람직합니다. 즉, 웹 클라이언트입니다.
@@ -47,7 +47,7 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 그 후, 클라이언트와 시스템을 연결하여 정보 교환(예: 쿼리)이 발생할 수 있도록 해야 합니다. 이 단계에서 웹 클라이언트는 JavaScript와 같은 특정 기술에 의존하며, 이에 따른 모든 통신적인 함의가 있음을 유의해야 합니다. 다른 유형의 플랫폼의 경우, 해당 기술은 아마도 변경될 것이고, 예를 들어 모바일 클라이언트에서는 Java로, IoT 장치에서는 C/C++로 변경될 수 있으며, 호환성 요구 사항으로 시스템이 그에 맞게 적응해야 할 수 있습니다.
 
 ![이미지](/assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_2.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -99,7 +99,7 @@ API를 구축하기 위한 여러 기술이 있지만, 이 프로젝트에서는
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_5.png)
 
 웹 클라이언트를 구성할 엔드포인트 중 하나는 기본 URL인 '/'로 표시되는 것입니다. 따라서 사용자가 위에 표시된 것과 같은 기본 HTTP 요청을 통해 서버에 액세스하면 API는 인터페이스를 표시하고 LLM 서비스로 요청을 시작하는 데 필요한 HTML 코드를 반환할 것입니다.
@@ -107,7 +107,7 @@ API를 구축하기 위한 여러 기술이 있지만, 이 프로젝트에서는
 ![이미지](/assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_6.png)
 
 동시에 사용자가 인터페이스에 액세스한 후 클라이언트의 요청을 지원해야 할 것입니다. 이러한 요청은 특별한 방법으로 관리되어야 하므로 쿼리 데이터가 해당 JSON 형식으로 전송될 'arranca'라는 자체 엔드포인트가 있을 것이며, API는 노드 트리를 사용하여 처리한 후 해결된 쿼리를 반환할 것입니다. 이 엔드포인트에서 서버는 계층 구조의 루트 노드와 사전에 설정된 소켓 채널을 사용하여 쿼리를 전달하고, 동기화 메커니즘을 통해 해당 응답을 기다릴 것입니다.
-```
+
 
 <div class="content-ad"></div>
 

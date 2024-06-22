@@ -51,7 +51,7 @@ variable "aws_region" {
 }
 ```
 
-그런 다음 AWS 관리 콘솔로 이동해서 “S3” AWS 서비스로 이동하여 나중에 사용할 Terraform 상태 파일을 저장할 S3 버킷을 생성하세요. "key" 속성으로 지정된 경로에 생성할 거에요. 저는 "my-api-gateway-lambda-terraform-state"라고 이름지었어요. 모든 옵션을 기본값으로 남겨두세요.```
+그런 다음 AWS 관리 콘솔로 이동해서 “S3” AWS 서비스로 이동하여 나중에 사용할 Terraform 상태 파일을 저장할 S3 버킷을 생성하세요. "key" 속성으로 지정된 경로에 생성할 거에요. 저는 "my-api-gateway-lambda-terraform-state"라고 이름지었어요. 모든 옵션을 기본값으로 남겨두세요.
 
 <div class="content-ad"></div>
 
@@ -1076,15 +1076,15 @@ resource "aws_api_gateway_method" "POST_method" {
 
 <div class="content-ad"></div>
 
-```md
+
 aws cognito-idp admin-initiate-auth --user-pool-id <USER_POOL_ID> --client-id <CLIENT_ID> --auth-flow ADMIN_NO_SRP_AUTH --auth-parameters USERNAME=mattia,PASSWORD=Test@123
-```
+
 
 위 명령어에서 User Pool ID, User Pool client ID, 그리고 이전에 정의한 테스트 사용자의 사용자 이름과 암호를 교체해야 합니다.
 
 우리는 Cognito 사용자 풀에 대한 테스트 사용자를 인증하고, 그 결과로 액세스 토큰을 받습니다. 위 명령어의 출력은 아래와 유사합니다:
 
-```md
+
 {
 "ChallengeParameters": {},
 "AuthenticationResult": {
@@ -1095,7 +1095,7 @@ aws cognito-idp admin-initiate-auth --user-pool-id <USER_POOL_ID> --client-id <C
 "IdToken": <ID_TOKEN> # ID 토큰의 값을 복사하세요
 }
 }
-```
+
 
 <div class="content-ad"></div>
 

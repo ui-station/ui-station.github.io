@@ -85,7 +85,7 @@ struct ContentView: View {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1200/1*JtKMxr1kTj-vWjPfBfa0bw.gif)
 
 이 무엇이 일어나고 있는지 이해해 봅시다. 뷰의 가장 바깥 쪽 알람만 작동합니다. 그래서 홀수 번째 알람은 작동하지만 짝수 번째는 작동하지 않습니다. 의왕, 컴파일러는 심지어 경고도 표시하지 않습니다. 그렇다면 해결책은 무엇일까요?
@@ -93,11 +93,11 @@ struct ContentView: View {
 # 해결책 1:
 
 한 알람을 여러 뷰에 할당할 수 있습니다. 그래서 단일 뷰에 한 개 이상의 알람이 없습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```swift
 struct ContentView: View {
     @State private var showEvenAlert: Bool = false
@@ -130,7 +130,7 @@ struct ContentView: View {
 <img src="https://miro.medium.com/v2/resize:fit:1188/1*QoWoOOrtm-jHFuuIjTYEag.gif" />
 
 # 해결책 2:
-```
+
 
 <div class="content-ad"></div>
 

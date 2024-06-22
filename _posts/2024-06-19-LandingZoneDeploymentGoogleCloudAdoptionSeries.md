@@ -181,7 +181,7 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![그룹에 사용자 추가](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_13.png)
 
 그런 다음 이 그룹에 사용자를 추가하세요. 몇 가지 샘플 사용자를 만들어 두었습니다:
@@ -189,7 +189,7 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 ![샘플 사용자](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_14.png)
 
 이 사용자들은 자동 이메일을 받게 됩니다. 물론... 유효한 메일함이 있는 경우에만요! (이와 같은 데모용으로, 일반적으로 *@my-domain 전달 규칙을 설정해 유효한 이메일 계정으로 전달하곤 합니다.)
-```
+
 
 <div class="content-ad"></div>
 
@@ -213,7 +213,7 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_17.png)
 
 ## 4 — 청구
@@ -221,7 +221,7 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 이 단계에서는 청구 계정을 생성하고(이미 보유하고 있지 않은 경우) 새 Google Cloud 조직과 연결합니다. 예산 설정, 청구 알림 및 청구 내보내기를 선택적으로 구성할 수도 있습니다.
 
 청구 계정은 소비한 모든 Google Cloud 자원을 지불하는 데 사용됩니다. 자원 소비(및 비용)은 프로젝트 수준에서 누적되며, 각 프로젝트는 청구 계정과 연결됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -462,7 +462,7 @@ Google Cloud 설정 권장 사항은 다음과 같을 것입니다:
 
 아래와 같이 Markdown 형식으로 테이블 태그를 변경해주세요.
 
-```markdown
+
 Go ahead and “Confirm draft configuration.”
 
 ![image](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_30.png)
@@ -470,7 +470,7 @@ Go ahead and “Confirm draft configuration.”
 ## 7 — VPC Networks
 
 In this step, we set up a pair of shared virtual private cloud (VPC) networks, as per the dual shared VPC pattern: one in prod, and one in non-prod.
-```
+
 
 <div class="content-ad"></div>
 
@@ -718,15 +718,15 @@ terraform init
 
 다음은 명령의 출력입니다.
 
-```
+
 ![2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_42](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_42.png)
-```
+
 
 GCS 버킷의 콘솔 뷰를 새로고침하면 이제 버킷에 Terraform 상태 파일이 생성된 것을 확인할 수 있습니다:
 
-```
+
 ![2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_43](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_43.png)
-```
+
 
 <div class="content-ad"></div>
 

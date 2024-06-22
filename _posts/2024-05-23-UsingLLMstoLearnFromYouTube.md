@@ -677,7 +677,7 @@ AmplifyBranch:
     EnableAutoBuild: true
 ```
 
-이렇게 최종 배포가 완료되면, AWS Amplify 콘솔에서 제공된 링크를 통해 누구에게나 접근 가능합니다. 이렇게 접근한 앱의 데모 기록은 다음에서 확인할 수 있습니다:```
+이렇게 최종 배포가 완료되면, AWS Amplify 콘솔에서 제공된 링크를 통해 누구에게나 접근 가능합니다. 이렇게 접근한 앱의 데모 기록은 다음에서 확인할 수 있습니다:
 
 <div class="content-ad"></div>
 

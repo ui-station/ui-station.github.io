@@ -45,7 +45,7 @@ brew install php
 ## 단계 3: PHP 버전 확인
 
 PHP가 올바르게 설치되었는지 확인하려면 기기에 설치된 PHP 버전을 확인할 수 있습니다. 터미널 앱에서 다음 몤령을 실행하세요:
-```
+
 
 <div class="content-ad"></div>
 

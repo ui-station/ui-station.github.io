@@ -357,7 +357,7 @@ python3 -m mlc_llm package
 명령어가 성공적으로 실행된 후, 아래와 같은 결과를 확인하실 수 있습니다.
 
 ![Screenshot](/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_16.png)
-```
+
 
 <div class="content-ad"></div>
 

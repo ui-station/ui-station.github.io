@@ -31,7 +31,7 @@ Compose를 통해 Android는 ImageVector를 사용하여 아이콘을 정의하�
 
 <div class="content-ad"></div>
 
-```
+
 ![WebP](/assets/img/2024-06-19-WebPImageFormatonAndroid_0.png)
 
 ## 웹피(WebP)란?
@@ -39,7 +39,7 @@ Compose를 통해 Android는 ImageVector를 사용하여 아이콘을 정의하�
 웹피(WebP)는 Google에서 개발한 이미지 형식으로, JPEG와 PNG보다 더 나은 압축을 제공합니다. 이 형식은 유실 압축과 비유실 압축을 모두 지원하며 투명도도 지원합니다.
 
 Google에 따르면, WebP의 사용은 비손실 압축의 경우 PNG보다 평균 26% 더 작은 파일 크기를 가지게 되고, 유실 압축의 경우 25-34% 정도 더 작아진다고 합니다.
-```
+
 
 <div class="content-ad"></div>
 

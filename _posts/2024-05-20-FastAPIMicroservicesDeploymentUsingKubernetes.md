@@ -287,18 +287,18 @@ spec:
 
 <div class="content-ad"></div>
 
-```md
+
 $ kubectl apply -f microservice_1.yaml
 $ kubectl apply -f microservice_2.yaml
 $ kubectl apply -f ingress.yaml
-```
+
 
 호스트 이름을 Minikube IP에 매핑하기 위해 호스트 파일을 업데이트하세요.
 
-```md
+
 $ echo "$(minikube ip) microservice1.local" | sudo tee -a /etc/hosts
 $ echo "$(minikube ip) microservice2.local" | sudo tee -a /etc/hosts
-```
+
 
 이제 microservice1.local 및 microservice2.local로 이동하면 다음과 같은 출력이 나타납니다:
   

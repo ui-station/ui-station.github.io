@@ -301,7 +301,7 @@ my-first-secret
 
 # 쿠버네티스 Pod에서 비밀 액세스
 
-위 단계를 사용하여 Vault를 설치하고 Vault 역할(vault-role)을 구성하여 서비스 계정(vault-serviceaccount)이 Vault에 저장된 비밀에 액세스할 수 있도록 했습니다.```
+위 단계를 사용하여 Vault를 설치하고 Vault 역할(vault-role)을 구성하여 서비스 계정(vault-serviceaccount)이 Vault에 저장된 비밀에 액세스할 수 있도록 했습니다.
 
 <div class="content-ad"></div>
 

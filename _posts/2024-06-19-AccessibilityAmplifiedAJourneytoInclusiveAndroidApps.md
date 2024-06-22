@@ -218,7 +218,7 @@ XML:
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-Jetpack Compose:```
+Jetpack Compose:
 
 <div class="content-ad"></div>
 
@@ -368,7 +368,7 @@ val highContrastTheme = myTheme.copy(
 ```
 
 # 접근성이 좋은 폼
-```  
+
 
 <div class="content-ad"></div>
 
@@ -399,7 +399,7 @@ TextField(
 ```
 
 # 동적 텍스트 및 폰트 크기 조정하기
-```
+
 
 <div class="content-ad"></div>
 

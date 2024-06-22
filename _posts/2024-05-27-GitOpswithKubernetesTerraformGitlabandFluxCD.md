@@ -82,13 +82,13 @@ aws ecr get-login-password | docker login --username AWS --password-stdin <aws_a
 
 Docker Hub에서 Nginx 이미지를 가져옵니다.
 
-````
+
 
 <div class="content-ad"></div>
 
 ```js
 도커 pull nginx:latest
-````
+```
 
 당신의 ECR 저장소에 Nginx 이미지를 태그하기
 
@@ -328,7 +328,7 @@ main.tf
 
 <div class="content-ad"></div>
 
-```md
+
 모듈 "eks" {
 source = "terraform-aws-modules/eks/aws"
 version = "~> 20.0"
@@ -406,7 +406,7 @@ provisioner "local-exec" {
 command = "aws eks update-kubeconfig --name ${module.eks.cluster_name} --region ${var.aws_region}"
 }
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -451,7 +451,7 @@ command = "aws eks update-kubeconfig --name ${module.eks.cluster_name} --region 
 
 이 두 컨트롤러는 ECR 리포지토리에서 태그를 가져오거나 업데이트할 책임을 질 것입니다.
 
-flux가 이 작업을 수행하려면 복제 데모 리포지토리의 config_files 폴더에서 찾을 수 있는 몇 가지 추가 구성 요소를 정의해야 합니다.```
+flux가 이 작업을 수행하려면 복제 데모 리포지토리의 config_files 폴더에서 찾을 수 있는 몇 가지 추가 구성 요소를 정의해야 합니다.
 
 <div class="content-ad"></div>
 
@@ -690,7 +690,7 @@ spec:
 
 이 작은 단편은 flux에게 컨테이너 이미지를 업데이트할 때 사용해야 하는 정책을 알려줍니다.
 
-이 모든 파일은 이것을 적용하기 위해 flux 폴더로 복사되어 메인.tf 파일의 아래 코드 단편을 통해 eks 클러스터에 적용될 것입니다.```
+이 모든 파일은 이것을 적용하기 위해 flux 폴더로 복사되어 메인.tf 파일의 아래 코드 단편을 통해 eks 클러스터에 적용될 것입니다.
 
 <div class="content-ad"></div>
 
@@ -828,7 +828,7 @@ kubectl get deployment nginx-deployment -o=jsonpath='{.spec.template.spec.contai
 
 UI를 통해 레포지토리의 커밋 히스토리를 확인하거나 레포지토리를 복제한 후 아래 명령어를 실행할 수 있습니다.
 
-아래 명렁어를 실행해보세요:```
+아래 명렁어를 실행해보세요:
 
 <div class="content-ad"></div>
 

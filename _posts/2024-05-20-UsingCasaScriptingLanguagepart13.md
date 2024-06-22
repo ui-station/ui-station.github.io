@@ -21,13 +21,13 @@ link: "https://medium.com/@fwsgonzo/using-c-as-a-scripting-language-part-13-cb99
 
 <div class="content-ad"></div>
 
-```md
+
 Benchmarking it, it took around 50ns. That’s not too bad. But, it can be improved just by avoiding all the calls that do nothing but call another function.
 
 So, the first thing to do is to call the system call wrapper directly. This meant that I had to forego the return value from free, because in C the free function doesn’t have a return value. Otherwise the A0 register would be clobbered, and I would have a very mysterious bug on my hands. Running it, I found that it heavily reduced the run-time, now at 31ns. A 38% run-time reduction.
 
 The last thing to try, was to write inline functions for new and delete, which would call my inline assembly functions sys_malloc and sys_free:
-```
+
 
 <div class="content-ad"></div>
 

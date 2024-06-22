@@ -22,21 +22,21 @@ Spring Boot Actuator가 제공하는 운영 준비 기능을 활용하여 애플
 
 <div class="content-ad"></div>
 
-```markdown
+
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-actuator</artifactId>
 </dependency>
-```
+
 
 아래는 application.properties 파일에서 필요한 엔드포인트를 활성화하는 방법입니다:
 
-```markdown
+
 management.endpoints.web.exposure.include=health,info,metrics,threaddump,env
-```
+
 
 성능 메트릭
-```
+
 
 <div class="content-ad"></div>
 

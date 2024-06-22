@@ -11,7 +11,7 @@ link: "https://medium.com/@kmorpex/5-essential-net-microservices-patterns-c7d38a
 ---
 
 
-```markdown
+
 ![2024-06-19-5EssentialNETMicroservicesPatterns_0](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_0.png)
 
 소프트웨어 개발의 끊임없는 세계에서, 마이크로서비스 아키텍처는 특히 .NET의 광범위한 영역에서 인기 있는 선택지가 되었습니다. .NET은 확장 및 적응이 가능한 능력으로 대규모의 데이터 및 트래픽을 처리할 수 있는 이상적인 플랫폼입니다. 
@@ -19,11 +19,11 @@ link: "https://medium.com/@kmorpex/5-essential-net-microservices-patterns-c7d38a
 이 기사에서는 마이크로서비스 아키텍처를 숙달하고자 하는 .NET 개발자들을 위한 다섯 가지 필수 패턴을 탐구할 것입니다. 우리는 실용적인 예제와 실행 가능한 조언을 제공하여 마이크로서비스의 우수성을 달성하는 여정에서 당신을 돕겠습니다.
 
 ## 1. 게이트웨이 집계 패턴
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_1.png)
 
 마이크로서비스 아키텍처에서는 클라이언트 응용 프로그램이 상호 작용해야 할 여러 서비스가 있는 것이 일반적입니다. 각 개별 서비스와 직접 상호 작용하는 대신 API 게이트웨이를 사용하는 것이 더 좋습니다. 이 방법은 클라이언트 코드를 간소화하고 백엔드 서비스에 액세스하기 위한 단일 진입점을 생성합니다.
@@ -49,11 +49,11 @@ public async Task<AggregatedResult> AggregateData()
 ```
 
 ## 2. 회로 차단기 패턴
-```
+
 
 <div class="content-ad"></div>
 
-```md
+
 ![Circuit Breaker](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_2.png)
 
 서킷 브레이커를 구현하면 네트워크 또는 서비스 장애가 다른 서비스로 전파되는 것을 방지할 수 있습니다. 서비스 장애가 발생하면 서킷 브레이커가 이를 감지하고 그 서비스로의 후속 호출을 일정 기간 동안 자동으로 차단합니다.
@@ -71,11 +71,11 @@ await circuitBreakerPolicy.ExecuteAsync(async () =>
 ```
 
 ## 3. 서비스 디스커버리 패턴
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_3.png)
 
 마이크로서비스 아키텍처를 확장할수록 다양한 서비스 엔드포인트를 추적하기가 더 어려워집니다. 이 문제를 해결하기 위해 서비스 디스커버리를 구현할 수 있습니다. 이를 통해 서비스가 동적으로 서로를 찾을 수 있습니다.
@@ -146,7 +146,7 @@ public class ConsulService : IConsulService
 ```
 
 ## 4. 이벤트 소싱 패턴
-```  
+
 
 <div class="content-ad"></div>
 
@@ -174,7 +174,7 @@ public async Task SaveEvents(Guid entityId, IEnumerable<Event> events, long expe
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_5.png)
 
 Command Query Responsibility Segregation (CQRS)는 시스템의 읽기 및 쓰기 작업을 분리하는 디자인 패턴입니다. 이 접근 방식은 마이크로서비스에 적합하며 복잡한 데이터 모델을 관리하고 시스템을 더 효과적으로 확장하는 데 도움이 됩니다.
@@ -203,7 +203,7 @@ public class AddUserCommandHandler : ICommandHandler<AddUserCommand>
     }
 }
 ``` 
-```
+
 
 <div class="content-ad"></div>
 

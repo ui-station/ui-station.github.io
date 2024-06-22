@@ -27,11 +27,11 @@ iOS 개발 중 에러를 만나면 “Linker command failed with exit code 1”�
 
    1. 먼저 맥에서 터미널을 엽니다.
    2. 아래 명령어를 따릅니다:
-      ```
+      
       cd 당신의_프로젝트_경로
       pod deintegrate
       pod update
-      ```
+      
 
 만약 문제가 계속되면 다음을 시도해보세요:
 

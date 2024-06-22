@@ -21,7 +21,7 @@ link: "https://medium.com/bumble-tech/how-to-use-gradle-managed-devices-with-you
 
 <div class="content-ad"></div>
 
-```md
+
 android {
     testOptions {
         managedDevices {
@@ -35,7 +35,7 @@ android {
         }
     }
 }
-```
+
 
 위의 구성을 사용하면 pixel2api30Check 작업을 통해 UI 테스트를 실행할 수 있으며, 기기를 연결하거나 에뮬레이터를 실행할 필요가 없습니다. 이 테스트 실행 환경은 다양한 기계에서 동일합니다.
 
@@ -101,7 +101,7 @@ android {
 
 프로젝트를 동기화하려고 하면 다음 예외가 발생합니다: 이 컨테이너에서 MyDevice를 생성할 수 없습니다. 이것은 android.testOptions.managedDevices.devices 컨테이너가 MyDevice를 인스턴스화할 방법을 모르기 때문입니다. 왜냐하면 MyDevice가 인터페이스이기 때문입니다.
 
-그렇다면 Android Gradle 플러그인은 이 문제를 어떻게 관리할까요? com.android.build.api.dsl.ManagedVirtualDevice를 검색하면 다음 코드를 찾을 수 있습니다:```
+그렇다면 Android Gradle 플러그인은 이 문제를 어떻게 관리할까요? com.android.build.api.dsl.ManagedVirtualDevice를 검색하면 다음 코드를 찾을 수 있습니다:
 
 <div class="content-ad"></div>
 
@@ -377,7 +377,7 @@ register("remoteDevice", MyDevice) {
 
 ![이미지](/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_5.png)
 
-주의 깊게 읽는 독자는 이미 코드 없이 이를 수행할 수 있다는 것을 올바르게 알아차릴 수 있을 것입니다. 원격 장치를 adb 장치 목록에 표시하려면 adb connect IP:PORT를 호출하기만 하면 된다는 것이 충분하며, Android Studio 드롭다운 메뉴 안에서도 바로 확인할 수 있습니다. Gradle Managed Devices로 할 수 없는 테스트 디버깅을 할 수도 있습니다. 그러나 이러한 점을 수행할 수 있다는 것은 다음 단계에 중요한 요소입니다.```
+주의 깊게 읽는 독자는 이미 코드 없이 이를 수행할 수 있다는 것을 올바르게 알아차릴 수 있을 것입니다. 원격 장치를 adb 장치 목록에 표시하려면 adb connect IP:PORT를 호출하기만 하면 된다는 것이 충분하며, Android Studio 드롭다운 메뉴 안에서도 바로 확인할 수 있습니다. Gradle Managed Devices로 할 수 없는 테스트 디버깅을 할 수도 있습니다. 그러나 이러한 점을 수행할 수 있다는 것은 다음 단계에 중요한 요소입니다.
 
 <div class="content-ad"></div>
 

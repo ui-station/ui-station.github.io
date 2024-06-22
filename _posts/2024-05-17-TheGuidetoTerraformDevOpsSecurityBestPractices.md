@@ -421,7 +421,7 @@ resource "azurerm_backup_protected_vm" "protected_vm" {
 
 이런 모범 사례를 따르면 Terraform으로 관리되는 인프라의 보안을 크게 향상시키고 잠재적인 취약점과 잘못된 구성의 위험을 줄일 수 있습니다.
 
-고려해야 할 몇 가지 부가 사항이 있습니다:```
+고려해야 할 몇 가지 부가 사항이 있습니다:
 
 <div class="content-ad"></div>
 

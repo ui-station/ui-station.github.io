@@ -240,7 +240,7 @@ Text(
 )
 ```
 
-반응형 글꼴 크기:```
+반응형 글꼴 크기:
 
 <div class="content-ad"></div>
 
@@ -319,7 +319,7 @@ emulator -avd Pixel_6_API_32 -orientation portrait
 이러한 테스트 전략을 개발 워크플로에 통합함으로써, 앱이 다양한 화면 크기, 해상도, 방향에서 매끄럽게 작동함을 보장할 수 있습니다. Espresso로 로컬에서 테스트하거나 Firebase Device Farm에서 다양한 설정을 탐색하거나 사용자 정의 에뮬레이터를 만들 때, 포괄적인 테스트 접근 방식은 높은 품질의 사용자 경험을 제공하는 데 중요합니다.
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

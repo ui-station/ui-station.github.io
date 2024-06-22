@@ -162,7 +162,7 @@ TURBO_STREAM 요청이 하는 일은 무엇인가요?
 
 <div class="content-ad"></div>
 
-```markdown
+
 ## 게시물 생성하기
 
 ```ruby
@@ -198,7 +198,7 @@ TURBO_STREAM 요청이 하는 일은 무엇인가요?
 # 결론: 
 
 Turbo는 Basecamp에 의해 소개된 Hotwire 프레임워크의 일부입니다. 최소한의 JavaScript를 사용하여 HTML을 통해 전송함으로써 현대적인 웹 애플리케이션을 구축하는 방법을 제공하도록 설계되었습니다. Turbo에는 세 가지 주요 부분이 있습니다: Turbo Drive, Turbo Frames 및 Turbo Streams.
-```
+
 
 <div class="content-ad"></div>
 

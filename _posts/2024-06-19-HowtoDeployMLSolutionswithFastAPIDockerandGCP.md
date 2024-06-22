@@ -97,7 +97,7 @@ df = pl.scan_parquet('app/data/video-index.parquet')
 dist_name = 'manhattan'
 dist = DistanceMetric.get_metric(dist_name)
 ```
-이제 API 작업을 정의합니다. 여기서 3개의 GET 요청을 생성할 것입니다. 첫 번째 요청은 아래 코드 블록에 표시되어 있습니다.```
+이제 API 작업을 정의합니다. 여기서 3개의 GET 요청을 생성할 것입니다. 첫 번째 요청은 아래 코드 블록에 표시되어 있습니다.
 
 <div class="content-ad"></div>
 
@@ -116,7 +116,7 @@ def health_check():
 이를 위해 입력이 없고 "health_check" 키와 값이 "OK"인 사전을 반환하는 Python 함수를 정의합니다. 이 함수를 API 엔드포인트로 변환하려면 단순히 데코레이터를 추가하고 엔드포인트의 경로를 지정하면 됩니다. 여기서는 루트인 즉, "/"를 사용합니다.
 
 또 다른 예제를 살펴보겠습니다. 여기서는 API에 대한 자세한 정보를 반환하는 info라는 엔드포인트가 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -219,7 +219,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-HowtoDeployMLSolutionswithFastAPIDockerandGCP_3.png" />
 
 이제 리포지토리를 복제하고 코드를 추가한 후 GitHub로 푸시합니다. 코드를 추가한 후 디렉토리 구조는 다음과 같이 보입니다.
@@ -227,7 +227,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
 <img src="/assets/img/2024-06-19-HowtoDeployMLSolutionswithFastAPIDockerandGCP_4.png" />
 
 코드가 준비되었으면 새 Google Cloud Platform 프로젝트를 만들 수 있습니다. GCP 콘솔로 이동하여 프로젝트 목록을 클릭한 다음 "새 프로젝트"를 선택하여 진행합니다.
-```
+
 
 <div class="content-ad"></div>
 

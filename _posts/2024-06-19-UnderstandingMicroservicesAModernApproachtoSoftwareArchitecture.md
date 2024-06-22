@@ -197,9 +197,9 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 그런 다음, 우리는 이 구성을 추가합니다.
 
-```
+
 <img src="/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_12.png" />
-```
+
 
 그리고 애플리케이션을 시작합니다.
 
@@ -207,7 +207,7 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_13.png)
 
 기본적으로 서비스는 서비스가 실행 중인 서버의 서비스 이름과 서버 이름으로 등록됩니다. 그러나 현실적인 시나리오에서는 서버 이름 대신 IP 주소가 필요합니다. 따라서 각 마이크로서비스 수준에 이러한 속성을 추가해야 합니다.
@@ -215,7 +215,7 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_14.png)
 
 defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8761/eureka URL로 지정합니다. 그러나 실제로는 적절한 IP 주소를 사용해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -280,7 +280,7 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 
 <div class="content-ad"></div>
 
-```
+
 ![Understanding Microservices](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_25.png)
 
 특정 계정에 대한 정보를 얻기 위해 계정 서비스에 요청을 보낼 때, 먼저 해당 계정을 데이터베이스에서 찾습니다. 그런 다음, 계정과 연결된 고객 ID를 검색하고 해당 고객에 대한 정보를 얻기 위해 고객 서비스에 요청을 보냅니다. 최종적으로 결과를 구성하여 클라이언트에게 보냅니다.
@@ -288,7 +288,7 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 내부 요청을 보내기 위해 다양한 라이브러리를 사용할 수 있으며, 가장 흔한 것은 OpenFeign입니다.
 
 다음 종속성을 추가합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -344,7 +344,7 @@ Circuit Breaker 패턴을 구현하기 위해서는 필요한 종속성을 추�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_30.png)
 
 예외 상황 발생 시 기본 데이터 또는 캐싱된 데이터로 응답하겠습니다. 일정 기간이 지난 후에는 해당 서비스와의 통신을 재개할 것입니다. 서비스가 응답하고 클로즈드 서킷 모드로 전환되면, 그렇지 않을 경우 오픈 서킷 모드로 전환하겠습니다.
@@ -352,11 +352,11 @@ Circuit Breaker 패턴을 구현하기 위해서는 필요한 종속성을 추�
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_31.png)
 
 간단한 예제를 살펴보죠: 모든 서비스를 시작한 후 고객 서비스를 중단할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_32.png)
 
 We can see that the account service is still working, and the customer data returned is just default data.
@@ -364,7 +364,7 @@ We can see that the account service is still working, and the customer data retu
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_33.png)
 
 Config-Service
-```
+
 
 <div class="content-ad"></div>
 
@@ -389,7 +389,7 @@ Config-Service
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_35](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_35.png)
 
 구성이 변경되면 구성 서비스에서 관련된 마이크로서비스로 요청이 전송됩니다 (/actuator/refresh로의 POST 요청), 그것에게 다시 시작하지 않고 구성을 새로 고쳐 달라는 것을 요청합니다. 그럼 마이크로서비스는 업데이트된 구성을 구성 서버에서 요청하고, 저장된 버전과 비교해서 변경된 부분만을 보내줍니다.
@@ -397,7 +397,7 @@ Config-Service
 그래서 우리는 각 마이크로서비스에 Actuator 종속성을 추가해야 합니다.
 
 ![UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_36](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_36.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -431,7 +431,7 @@ Config-Service
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_41.png)
 
 Building Images:
@@ -440,7 +440,7 @@ Building Images:
 - This ensures that each service starts with the latest configurations.
 
 Health Checks:
-```
+
 
 <div class="content-ad"></div>
 
@@ -458,9 +458,9 @@ Health Checks:
 
 예를 들어
 
-```
+
 ![UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_42](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_42.png)
-```
+
 
 Docker Compose를 사용할 때는 DISCOVERY_SERVICE_URL 환경 변수를 활용합니다. 수동으로 실행하는 경우에는 일반적으로 localhost:8761/eureka를 사용합니다.
 

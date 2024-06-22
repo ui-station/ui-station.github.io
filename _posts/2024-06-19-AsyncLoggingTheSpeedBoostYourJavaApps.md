@@ -29,7 +29,7 @@ link: "https://medium.com/@knowledge.cafe/async-logging-the-speed-boost-your-jav
 
 <div class="content-ad"></div>
 
-```md
+
         <!-- Async Loggers will auto-flush in batches, so switch off immediateFlush. -->
         <RandomAccessFile name="RandomAccessFile" fileName="target/async.log" immediateFlush="false" append="false">
             <PatternLayout>
@@ -41,18 +41,18 @@ link: "https://medium.com/@knowledge.cafe/async-logging-the-speed-boost-your-jav
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
  
-```
+
 
 위 코드를 실행하면 Async 로깅의 영향을 확인할 수 있습니다. 제 개인 노트북에서 실행 후 아래 출력을 확인했습니다. 이 시나리오에서 Async 로깅이 동기 로깅보다 약 72.98% 빠름을 보여줍니다.
 
-```md
+
 === 처리 시간 요약 ===
 동기 로깅 시간 2184 ms
 Async 로깅 시간 590 ms
-```
+
 
 ## Async 로깅의 장점
-```
+
 
 <div class="content-ad"></div>
 

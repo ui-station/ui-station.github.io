@@ -33,7 +33,7 @@ queue.async {
 }
 ```
 
-# 디스패치 큐 유형```
+# 디스패치 큐 유형
 
 <div class="content-ad"></div>
 

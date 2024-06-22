@@ -10,7 +10,7 @@ originalTitle: "A Guide to Communication Styles in Microservices Architecture"
 link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microservices-architecture-9a8ae4bc21b2"
 ---
 
-```
+
 ![A Guide to Communication Styles in Microservices Architecture](/assets/img/2024-05-27-AGuidetoCommunicationStylesinMicroservicesArchitecture_0.png)
 
 마이크로서비스 아키텍처에서 의사소통은 중요한 요소로, 다양한 토론이 진행되어 상호 서비스 상호 작용에 대한 가장 효과적인 방법을 선택하는 데 초점을 맞춥니다. 이 입문용 블로그 포스트에서는 마이크로서비스를 위한 최적의 의사소통 전략을 탐색하고 요약하여 언제 어디서 각 의사소통 스타일을 효과적으로 활용해야 하는지에 대한 통찰을 제공할 것입니다.
@@ -18,7 +18,7 @@ link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microser
 # 상호 작용 스타일
 
 마이크로서비스 아키텍처 내에서 서비스가 어떻게 의사소통하는지 효과적으로 이해하기 위해 사용 가능한 상호 작용 스타일에 익숙해지는 것이 중요합니다. 각 스타일은 고유한 장단점을 가지고 있습니다. 이러한 세부 사항을 정확히 이해하는 것은 서비스에 가장 적합한 의사소통 메커니즘에 대한 정보를 얻기 전 중요합니다. 이 기본 지식은 선택한 방법이 시스템의 특정 요구 사항과 도전에 잘 부합되도록 보장합니다.
-```
+
 
 <div class="content-ad"></div>
 

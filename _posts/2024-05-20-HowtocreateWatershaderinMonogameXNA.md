@@ -506,7 +506,7 @@ float4 refractionColor = tex2D(refractionSampler, refractionTex);
 
 ## 프레넬
 
-프레넬 효과가 무엇인지 모르겠다면, Dorian의 아주 좋은 설명을 보여드리겠습니다.```
+프레넬 효과가 무엇인지 모르겠다면, Dorian의 아주 좋은 설명을 보여드리겠습니다.
 
 <div class="content-ad"></div>
 

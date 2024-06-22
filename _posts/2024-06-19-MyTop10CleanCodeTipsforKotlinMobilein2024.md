@@ -53,7 +53,7 @@ link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-MyTop10CleanCodeTipsforKotlinMobilein2024_1.png)
 
 이렇게 관련된 구성 요소가 함께 그룹화되어 있으면 코드베이스를 빠르게 탐색하고 이해하기 쉬워집니다.
@@ -61,7 +61,7 @@ link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin
 # 2. 하나, 둘… 리팩토링!
 
 즉, 세 번 까지의 규칙입니다. 이 규칙은 코드를 리팩토링할 시간을 이해하는 데 도움이 됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -111,7 +111,6 @@ getUserRole 함수는 사용자 입력을 받아와서 해당 사용자의 역�
 
 대안으로 Kotlin의 when 구문을 사용할 수도 있습니다:
 
-```js
 fun getUserRole(userInput: UserInput): String? {
     return when {
         userInput.login.isEmpty() -> UserRole.Unknown
@@ -121,7 +120,6 @@ fun getUserRole(userInput: UserInput): String? {
         else -> userRole(userInput.login)
     }
 }
-```
 ```
 
 <div class="content-ad"></div>
@@ -195,7 +193,7 @@ class UserManager(private val database: Database) {
 ```
 
 ## 5. 전역 상태와 싱글톤의 한계를 설정하세요
-```
+
 
 <div class="content-ad"></div>
 
@@ -297,7 +295,7 @@ user.let {
 ```
 
 비교해보세요
-``` 
+
 
 <div class="content-ad"></div>
 
@@ -454,7 +452,7 @@ class MainViewModel(
 - 새로운 구조는 UserManager 내에서 부수 효과로 사용자 상태를 수정하는 일을 피합니다. 대신 사용자에 대한 변경사항이 명시적이고 투명하게 이루어집니다.
 - ParentalControlManager, MarketingManager 및 UserManager는 더 이상 서로 의존하지 않으며 이러한 모든 객체가 MainViewModel에 전달됩니다. 이는 테스트를 개선하고 의존성 주입을 사용할 수 있도록 분명한 방식으로 객체 초기화를 허용하는 좋은 사례입니다.
 
-# 10. 잘 자세요```
+# 10. 잘 자세요
 
 <div class="content-ad"></div>
 

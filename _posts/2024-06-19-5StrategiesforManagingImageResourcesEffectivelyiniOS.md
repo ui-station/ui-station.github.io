@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/5-effective-strategies-for-managing-image
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_0.png)
 
 이미지 리소스 관리는 엔지니어들이 종종 간과하는 측면입니다. 충분한 주의를 기울이지 않으면 앱의 성능 뿐만 아니라 생산성에도 영향을 미칠 수 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/gitconnected/5-effective-strategies-for-managing-image
 이 기사에서는 이미지 리소스를 관리하는 데 우리 엔지니어링 팀이 사용하는 몇 가지 효과적인 전략을 소개하겠습니다. 이러한 전략을 프로젝트에 적용하면 앱 크기를 줄이고 메모리 사용량을 줄이며 응용 프로그램의 성능을 향상시킬 수 있습니다.
 
 시작해 보겠습니다!
-```  
+
 
 <div class="content-ad"></div>
 
@@ -48,7 +48,7 @@ Xcode 15 이전에는 아카이브할 때 Xcode가 PDF 이미지를 3개의 PNG 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image1](/assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_1.png)
 
 Now, let’s compare the “Asset.car” file size between using PNG images vs using PDF images:
@@ -56,7 +56,7 @@ Now, let’s compare the “Asset.car” file size between using PNG images vs u
 ![image2](/assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_2.png)
 
 The “Assets.car” size in the project that uses PNG images is much smaller than using PDF images.
-```
+
 
 <div class="content-ad"></div>
 
@@ -187,7 +187,7 @@ FengNiao는 사용되지 않는 이미지를 감지하고 제거하는 데 도�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_5.png)
 
 ## 제안:
@@ -195,7 +195,7 @@ FengNiao는 사용되지 않는 이미지를 감지하고 제거하는 데 도�
 - 이 도구를 CI 워크플로우에 통합하여 사용하지 않는 이미지가 있을 때 팀에 Slack 알림을 보낼 수 있습니다. 팀은 필요에 따라 이미지를 확인하고 수동으로 제거할 수 있습니다.
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 
@@ -209,6 +209,5 @@ FengNiao는 사용되지 않는 이미지를 감지하고 제거하는 데 도�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:1200/0*CN-R8hHdtZlcJFoV.gif)
-```

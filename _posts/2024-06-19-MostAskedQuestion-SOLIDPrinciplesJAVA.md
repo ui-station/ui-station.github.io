@@ -11,7 +11,7 @@ link: "https://medium.com/@diptendud/most-asked-question-solid-principles-java-1
 ---
 
 
-```markdown
+
 ![SOLID Principles in JAVA](/assets/img/2024-06-19-MostAskedQuestion-SOLIDPrinciplesJAVA_0.png)
 
 - **S — Single Responsibility Principle (SRP)**
@@ -19,7 +19,7 @@ link: "https://medium.com/@diptendud/most-asked-question-solid-principles-java-1
   - A unit can be a class, module, function, or component.
   - Keeps code modular and reduces tight coupling.
   - Example: A class that handles user authentication should not also manage database connections.
-```  
+
 
 <div class="content-ad"></div>
 

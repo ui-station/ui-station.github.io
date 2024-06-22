@@ -200,7 +200,7 @@ print(sh.wc('-l', _인=sh.ls('.', '-1'))
 
 <div class="content-ad"></div>
 
-```md
+
 시도:
 sh.cat('/tmp/doesnt/exist')
 except sh.ErrorReturnCode as e:
@@ -212,13 +212,13 @@ curl.wait(timeout=3)
 except sh.TimeoutException:
 print("Command timed out...")
 curl.kill()
-```
+
 
 선택적으로, 만약 프로세스가 시그널에 의해 종료된다면, SignalException을 받게 될 거에요. 특정 시그널을 확인할 수 있는데 예를 들면 SignalException_SIGKILL(또는 \_SIGTERM, \_SIGSTOP 등)으로 확인할 수 있어요.
 
 이 라이브러리에는 내장된 로깅 지원도 있어요. 켜기만 하면 되는데요. 다음 코드가 도와줄 거에요:
 
-```md
+
 import logging
 
 # 기본 로깅 켜기:
@@ -240,7 +240,7 @@ sh.ls('-la')
 # DEBUG:sh.command.process:<Command '/usr/bin/ls -la'>.<Process 1631666 ['/usr/bin/ls', '-la']>: started process
 
 # ...
-```
+
 
 
 <div class="content-ad"></div>

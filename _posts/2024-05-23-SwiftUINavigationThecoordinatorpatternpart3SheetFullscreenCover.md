@@ -356,7 +356,7 @@ struct FirstView: View {
 
 ℹ️ 또한 다른 필요한 수식어(modifier)들이 coordinate() 함수에서 반환되기 전에 뷰에 적용될 수 있습니다.
 
-예를 들어, 시트에 presentationDetents를 적용하려면. 그리고 뷰 내부에서 심지어 그것에 대해 알 필요조차 없을 수 있습니다.```
+예를 들어, 시트에 presentationDetents를 적용하려면. 그리고 뷰 내부에서 심지어 그것에 대해 알 필요조차 없을 수 있습니다.
 
 <div class="content-ad"></div>
 

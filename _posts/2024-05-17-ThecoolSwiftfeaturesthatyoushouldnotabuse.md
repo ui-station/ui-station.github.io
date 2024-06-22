@@ -40,12 +40,12 @@ $0는 매우 편리하지만 코드 리뷰에서는 코드를 덜 가독성 있�
 
 <div class="content-ad"></div>
 
-```md
+
 // ❌를 피하기 위해
 numbers.sort { $0 > $1 }
 // ✅를 선호하기 위해
 numbers.sort { leftNumber, rightNumber in leftNumber > rightNumber }
-```
+
 
 # 서브스크립트
 

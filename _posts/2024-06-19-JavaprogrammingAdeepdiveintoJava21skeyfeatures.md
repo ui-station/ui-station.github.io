@@ -51,7 +51,7 @@ link: "https://medium.com/capital-one-tech/java-programming-a-deep-dive-into-jav
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Java Programming](/assets/img/2024-06-19-JavaprogrammingAdeepdiveintoJava21skeyfeatures_3.png)
 
 Java는 여전히 Kotlin 및 Scala와의 강력한 경쟁 속에서 매우 인기 있는 것을 볼 수 있습니다. 몇 년 동안 약간의 감소가 있었지만, 다른 프로그래밍 언어 및 생태계 (예: Python, Go, Rust)에 의해 조각이 빼앗겼습니다.
@@ -59,7 +59,7 @@ Java는 여전히 Kotlin 및 Scala와의 강력한 경쟁 속에서 매우 인�
 # Java 탐험: 역호환성에 대한 헌신
 
 Java가 최근 몇 년간 무엇을 해 왔는지 및 강한 인기에 기여하는 다른 요소들을 살펴보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -339,7 +339,7 @@ public static Integer calculateAccountBalance(List transactions) {
 ```
 
 이 코드는 조금 더 깔끔하고 장황하지 않게 보입니다. switch 키워드에 주목하세요. Java에는 오랫동안 사용 가능했습니다. Java 17에서 switch는 람다와 익숙한 문법을 지원하는 표현식을 지원하도록 했고, Java 19 및 21에서는 switch가 레코드에 대한 패턴 매칭을 지원하도록 더욱 향상되었습니다.
-```
+
 
 <div class="content-ad"></div>
 

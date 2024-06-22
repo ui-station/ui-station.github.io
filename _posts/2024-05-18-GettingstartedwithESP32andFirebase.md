@@ -475,7 +475,7 @@ humidity_json.set("value", humidity);
 }
 ```
 
-다음으로 예전의 database_test() 함수를 삭제하고 새로운 uploadSensorData() 함수로 교체해야 합니다. 노드 설명을 온도와 습도로 변경했습니다. 마지막으로 Firebase.set() 대신 Firebase.setJSON() 함수를 사용하여 온도와 습도 정보를 가진 두 개의 JSON 객체를 전달합니다. 마지막으로 main while 루프에서 database_test() 함수를 새로운 uploadSensorData() 함수로 교체합니다. 최종 코드 버전은 Github에서 확인할 수 있습니다.```
+다음으로 예전의 database_test() 함수를 삭제하고 새로운 uploadSensorData() 함수로 교체해야 합니다. 노드 설명을 온도와 습도로 변경했습니다. 마지막으로 Firebase.set() 대신 Firebase.setJSON() 함수를 사용하여 온도와 습도 정보를 가진 두 개의 JSON 객체를 전달합니다. 마지막으로 main while 루프에서 database_test() 함수를 새로운 uploadSensorData() 함수로 교체합니다. 최종 코드 버전은 Github에서 확인할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -534,7 +534,7 @@ void loop() {
 
 <img src="/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_31.png" />
 
-애플리케이션을 더 현실적으로 만들기 위해 데이터베이스에 흥미로운 센서 데이터를 채워 넣어야 합니다.```
+애플리케이션을 더 현실적으로 만들기 위해 데이터베이스에 흥미로운 센서 데이터를 채워 넣어야 합니다.
 
 <div class="content-ad"></div>
 

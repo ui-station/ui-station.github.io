@@ -79,7 +79,7 @@ Spring Boot 프레임워크의 기본 웹 컨테이너 인 Tomcat을 예로 들�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-SpringBootHowManyRequestsCanSpringBootHandleSimultaneously_3.png)
 
 이것은 기본적으로 Tomcat이 최대 8192개의 연결을 허용한다는 것을 의미합니다 (8192 = 8 * 1024).
@@ -87,7 +87,7 @@ Spring Boot 프레임워크의 기본 웹 컨테이너 인 Tomcat을 예로 들�
 여기서 한 가지 생각할 수 있습니다. '기본적으로 Spring Boot는 8192개의 요청을 동시에 처리할 수 있다.' 라고 생각할 수 있지만, 이는 잘못된 생각입니다. 왜 일까요?
 
 Tomcat은 최대 8192개의 연결을 허용할 수 있지만, Tomcat은 또한 최대 대기 숫자를 가지고 있습니다. 이것은 8192에 도달하면 요청의 연결을 저장할 수 있는 대기 큐가 있는 것을 의미합니다.
-```
+
 
 <div class="content-ad"></div>
 

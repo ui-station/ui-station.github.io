@@ -335,7 +335,7 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 <div class="content-ad"></div>
 
 
-```md
+
 ![이미지](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_17.png)
 
 그 후, 각 앵커, 거리, 그리고 관계에 d-차원 임베딩이 적용됩니다. 이들은 크기 d의 벡터로 매핑됩니다. 예를 들어, d=3인 경우, 앵커, 거리, 그리고 관계에 대한 결과 행렬은 방정식 (2)와 일치하는 다음과 같을 수 있습니다:
@@ -343,7 +343,7 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 ![이미지](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_18.png)
 
 물론 각 행렬의 값은 예시입니다 — 실제 모델에서는 아마 무작위 숫자들이 될 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -748,7 +748,7 @@ NodePieceTransE(
 )
 
 
-이전에 설명한 이론 부분과 완벽하게 일치합니다.```
+이전에 설명한 이론 부분과 완벽하게 일치합니다.
 
 <div class="content-ad"></div>
 

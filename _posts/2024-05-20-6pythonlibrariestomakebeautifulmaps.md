@@ -101,20 +101,20 @@ This library is probably the most popular in the industry, since it’s interact
 
 <div class="content-ad"></div>
 
-```md
+
 import folium
 map = folium.Map(location=(50, 0), zoom_start=8) # 위치 - 맵의 중앙, 확대 수준 - 해상도
 map
-```
+
 
 ![이미지](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_5.png)
 
 다른 기본 타일 또는 사용자 정의 타일을 사용할 수 있습니다:
 
-```md
+
 map = folium.Map(location=(50, 0), zoom_start=8, tiles="Cartodb Positron")
 map
-```
+
 
 <div class="content-ad"></div>
 

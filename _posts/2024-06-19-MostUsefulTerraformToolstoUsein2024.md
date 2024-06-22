@@ -61,7 +61,7 @@ Datadog와 같은 도구가 등장하기 전에는 홈메이드 제품이 초기
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_2.png" />
 
 TFLint는 Terraform을 위한 강력한 오픈 소스 린트 도구로 솟아납니다. 그 실력은 구문 오류부터 리소스 명명 규칙 및 사용되지 않는 변수까지 다양한 문제를 식별하는 데 있습니다. TFLint는 여러분의 도구 상자의 필수품으로, Terraform 코드가 높은 품질 기준을 준수하도록 보장합니다.
@@ -69,7 +69,7 @@ TFLint는 Terraform을 위한 강력한 오픈 소스 린트 도구로 솟아납
 ## Terrascan: 보안 및 규정 준수
 
 <img src="/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_3.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -93,7 +93,7 @@ Checkov은 인프라 코드 파일을 세심하게 검사하는 보안 스캐너
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Brainboard](https://miro.medium.com/v2/resize:fit:1400/1*F9cAb0NT-xSvFhnEXx9SiQ.gif)
 
 Brainboard은 클라우드 인프라 관리를 위한 최첨단 플랫폼으로 나타납니다. 그 강점은 복잡한 클라우드 아키텍처를 디자인, 배포 및 관리하는 직관적인 시각적 인터페이스를 제공하는 데 있습니다. 프로세스를 단순화하고 협업을 강화함으로써, Brainboard는 클라우드 인프라를 효율적이고 확장 가능하게 만들어 현대의 데브옵스 팀에게 꼭 필요한 도구가 됩니다.
@@ -101,7 +101,7 @@ Brainboard은 클라우드 인프라 관리를 위한 최첨단 플랫폼으로 
 ## Terragrunt: Module Management
 
 ![Terragrunt](/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_6.png)
-```
+
 
 <div class="content-ad"></div>
 

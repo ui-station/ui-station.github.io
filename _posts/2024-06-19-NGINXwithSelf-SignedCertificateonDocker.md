@@ -32,7 +32,7 @@ link: "https://medium.com/better-programming/nginx-self-signed-certificate-docke
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_1.png" />
 
 첫 번째 단계에서 Alpine Linux 이미지를 사용합니다. Alpine의 패키지 관리자인 APK를 사용하여 OpenSSL을 설치합니다. 다음 단계에서 OpenSSL을 사용하여 셀프 서명 인증서와 관련 개인 키를 생성합니다.
@@ -40,7 +40,7 @@ link: "https://medium.com/better-programming/nginx-self-signed-certificate-docke
 두 번째 단계에서 NGINX 이미지를 사용합니다. 빌드는 이전 단계에서 생성된 인증서와 개인 키를 포함하도록 이미지를 수정하고 HTTPS를 활성화하기 위한 간단한 NGINX 구성을 작성합니다.
 
 # Dockerfile
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +96,7 @@ EOF
 
 ## Stage 1: 인증서 생성
 
-인증서 및 개인 키를 생성하기 위해 OpenSSL을 사용하며 필요한 모든 정보를 인수로 전달하여 대화형 모드가 아닌 모드에서 명령을 실행합니다. 다음과 같은 Docker ARG를 지정하여 이 단계를 자신의 요구에 맞게 조정할 수 있습니다.```
+인증서 및 개인 키를 생성하기 위해 OpenSSL을 사용하며 필요한 모든 정보를 인수로 전달하여 대화형 모드가 아닌 모드에서 명령을 실행합니다. 다음과 같은 Docker ARG를 지정하여 이 단계를 자신의 요구에 맞게 조정할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -128,9 +128,9 @@ docker build . -t nginx-self-signed
 
 이미지를 실행할 때, Docker Engine이 실행 중인 컴퓨터에서 80번 포트를 HTTP용, 그리고 443번 포트를 HTTPS용으로 사용할 수 있도록 해 주세요. 아래 명령어를 사용하여 컨테이너를 시작할 수 있습니다:
 
-```
+
 docker run -p 80:80 -p 443:443 nginx-self-signed
-```
+
 
 ![NGINXwithSelf-SignedCertificateonDocker_3](/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_3.png)
 
@@ -146,7 +146,7 @@ curl localhost
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Screenshot](/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_4.png)
 
 여기에 볼 건 별거 없어요. HTTP 접근은 예상대로 작동합니다.
@@ -154,7 +154,7 @@ curl localhost
 ## HTTPS 접근
 
 curl https://localhost
-```
+
 
 <div class="content-ad"></div>
 

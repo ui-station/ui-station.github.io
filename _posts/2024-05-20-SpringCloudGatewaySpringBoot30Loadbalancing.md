@@ -139,14 +139,14 @@ eureka.instance.ip-address=localhost
 
 <div class="content-ad"></div>
 
-```md
+
 <dependency>
    <groupId>org.springframework.cloud</groupId>
    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 </dependency>
-```
 
-```md
+
+
 <!--
 https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway -->
 <dependency>
@@ -154,7 +154,7 @@ https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starte
    <artifactId>spring-cloud-starter-gateway</artifactId>
    <version>4.1.2</version>
 </dependency>
-```
+
 
 그래서 최신 버전(내 경우 3.2.4v)의 스프링 부트 프로젝트를 만들고 위의 종속성을 추가합니다.
 

@@ -320,17 +320,17 @@ Kubernetes에서의 QoS(Quality of Service)는 요청하고 사용하는 리소�
 
 <div class="content-ad"></div>
 
-```md
+
 resources:
       requests:
         memory: "3Gi"
-```
 
-```md
+
+
 # Burstable의 또 다른 예:
-```
 
-```md
+
+
 resources:
       requests:
         memory: "3Gi"
@@ -341,7 +341,7 @@ resources:
 # 이 예제에서 메모리 요청과 제한은 같지만
 # CPU 요청이 제한보다 작으므로,
 # 팟은 Burstable로 분류됩니다.
-```
+
 
 - BestEffort: 컨테이너 내에 CPU 또는 메모리에 대한 요청 또는 제한 구성이 없는 경우 팟은 BestEffort로 분류됩니다. 적어도 하나의 컨테이너에 요청이나 제한 구성이 있는 경우 분류가 Burstable로 변경됩니다.
 

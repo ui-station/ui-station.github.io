@@ -95,7 +95,7 @@ Gradle 동기화가 완료되면 툴바에서 실행 버튼을 사용하여 iOS 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-KotlinMultiPlatformKMP_7.png)
 
 다음 규칙을 따라 예상 및 실제 선언을 정의합니다:
@@ -103,7 +103,7 @@ Gradle 동기화가 완료되면 툴바에서 실행 버튼을 사용하여 iOS 
 - 공통 소스 세트에서 표준 코틀린 구조를 선언합니다. 이는 함수, 속성, 클래스, 인터페이스, 열거형 또는 주석일 수 있습니다.
 
 2. 이 구조물에 expect 키워드를 표시합니다. 이것이 예상 선언입니다. 이러한 선언은 공통 코드에서 사용할 수 있지만 구현은 포함하면 안 됩니다. 대신, 플랫폼별 코드가이 구현을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -236,7 +236,7 @@ fun EmojiHubScreen() {
 ## iOS 플랫폼의 ViewModel
 
 <img src="/assets/img/2024-06-19-KotlinMultiPlatformKMP_11.png" />
-```
+
 
 <div class="content-ad"></div>
 
@@ -274,7 +274,7 @@ struct ContentView: View {
 ```
 
 # 5. 네트워킹
-```
+
 
 <div class="content-ad"></div>
 
@@ -648,7 +648,7 @@ iOSApp에서 startKoin을 호출하세요.
 
 <div class="content-ad"></div>
 
-```markdown
+
 @ main 
  구조체 iOSApp: 앱 {
 
@@ -662,11 +662,11 @@ iOSApp에서 startKoin을 호출하세요.
        }
     }
 }
-```
+
 
  그리고 GithubViewModelHelper은 iOS에서 GithubViewModel을 주입하는 데 사용됩니다.
 
-```markdown
+
 class EmojiHubViewModelHelper: KoinComponent {
 
     private val emojiHubViewModel: EmojiHubViewModel = get()
@@ -674,10 +674,10 @@ class EmojiHubViewModelHelper: KoinComponent {
     @NativeCoroutinesState
     val items = emojiHubViewModel.items
 }
-```
+
 
 ![이미지](/assets/img/2024-06-19-KotlinMultiPlatformKMP_15.png)
-```
+
 
 <div class="content-ad"></div>
 

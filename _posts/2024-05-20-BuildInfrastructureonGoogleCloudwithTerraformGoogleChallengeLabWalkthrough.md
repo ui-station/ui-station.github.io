@@ -182,7 +182,7 @@ terraform init
 
 <div class="content-ad"></div>
 
-```md
+
 module "tf_instance_1" {
   source        = "./modules/instances"
   instance_name = "tf-instance-1"
@@ -196,7 +196,7 @@ module "tf_instance_2" {
   zone          = var.zone
   region        = var.region
 }
-```
+
 
 각 모듈 정의에는 고유한 레이블이 있어야 합니다.
 

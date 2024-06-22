@@ -72,7 +72,7 @@ cat domains.txt | katana | grep js | httpx -mc 200 | tee js.txt
 - httpx -mc 200: 이 명령어는 httpx 도구를 사용하여 필터링된 URL에 HTTP 요청을 보내고 응답을 검색합니다. -mc 200 옵션은 성공적인 HTTP 상태 코드 200(OK)를 반환하는 URL만 표시됨을 보장합니다. 이렇게 함으로써 존재하지 않거나 오류를 반환하는 URL을 필터링합니다.
 - tee js.txt: tee 명령어는 필터링된 URL을 화면에 표시하고 동시에 js.txt라는 파일에 저장합니다. 이 파일에는 스캔 과정 중에 식별된 JavaScript 파일 URL 목록이 포함됩니다.
 
-전반적으로, 이 명령어 시퀀스는 제공된 도메인을 JavaScript 파일에 대해 스캔하고 관련 없는 URL을 필터링하며 적절한 JavaScript 파일 URL을 추가 분석이나 테스트를 위해 저장하는 데 효과적입니다.```
+전반적으로, 이 명령어 시퀀스는 제공된 도메인을 JavaScript 파일에 대해 스캔하고 관련 없는 URL을 필터링하며 적절한 JavaScript 파일 URL을 추가 분석이나 테스트를 위해 저장하는 데 효과적입니다.
 
 <div class="content-ad"></div>
 
@@ -96,9 +96,9 @@ done < "$file"
 
 <div class="content-ad"></div>
 
-```md
+
 grep -r -E "aws_access_key|aws_secret_key|api key|passwd|pwd|heroku|slack|firebase|swagger|aws_secret_key|aws key|password|ftp password|jdbc|db|sql|secret jet|config|admin|pwd|json|gcp|htaccess|.env|ssh key|.git|access key|secret token|oauth_token|oauth_token_secret|smtp" *.js
-```
+
 
 **BOOM GUYS**
 

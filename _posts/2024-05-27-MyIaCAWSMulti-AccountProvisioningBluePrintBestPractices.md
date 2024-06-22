@@ -238,7 +238,7 @@ module "ssm_params" {
 
 여기에는 하나의 terragrunt.hcl 구성 파일을 사용하여 멀티 계정 배포를 구성하는 방법이 나와 있어요.
 
-테라폼 워크스페이스 구성과 Terragrunt 구성을 비교해보겠습니다.```
+테라폼 워크스페이스 구성과 Terragrunt 구성을 비교해보겠습니다.
 
 <div class="content-ad"></div>
 

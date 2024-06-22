@@ -58,7 +58,7 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_2.png)
 
 2. 기대값
@@ -66,7 +66,7 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 - #expect 매크로:
 
 ![이미지](/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -134,7 +134,7 @@ Swift Tests와 XCTest의 구성 요소 비교:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_11.png)
 
 2. 기대
@@ -142,7 +142,7 @@ Swift Tests와 XCTest의 구성 요소 비교:
 두 프레임워크의 기대는 매우 다릅니다.
 
 ![이미지](/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_12.png)
-```
+
 
 <div class="content-ad"></div>
 

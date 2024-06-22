@@ -189,7 +189,7 @@ route_df = pd.concat([pd.DataFrame(row, index=[0]) for row in route_rows], ignor
 
 이 방법을 사용하면 선택한 경로의 각 포트에 대해 dl.Marker()를 사용하여 마커를 생성하고 dl.Tooltip()을 사용하여 툴팁을 만듭니다. 그런 다음 dl.LayerGroup()를 사용하여 이러한 마커를 단일 레이어 그룹으로 그룹화합니다. LayerGroup() 구성 요소는 여러 지도 요소(마커 등)를 단일 레이어로 그룹화하는 데 사용됩니다. 이를 통해 이러한 요소를 함께 관리하고 제어할 수 있습니다. 예를 들어, 사용자가 한 번의 동작으로 모든 마커를 표시하거나 숨길 수 있으며, 마커를 하나씩 선택하는 대신 모두 선택할 수 있습니다.
 
-바다에서의 경로 계산으로 넘어가면, 아래와 같이 SeaRoute 라이브러리를 사용하여 이를 달성할 수 있습니다:```
+바다에서의 경로 계산으로 넘어가면, 아래와 같이 SeaRoute 라이브러리를 사용하여 이를 달성할 수 있습니다:
 
 <div class="content-ad"></div>
 
@@ -316,7 +316,7 @@ def get_route_line(route_var):
 ```
 
 따라서, 모든 계산은 두 개의 함수로 처리됩니다: 
-```
+
 
 <div class="content-ad"></div>
 

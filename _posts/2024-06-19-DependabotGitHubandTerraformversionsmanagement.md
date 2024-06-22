@@ -106,7 +106,7 @@ updates:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_3.png)
 
 In a minute, we’ll have open Pull Requests:
@@ -114,7 +114,7 @@ In a minute, we’ll have open Pull Requests:
 ![image](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_4.png)
 
 ![image](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_5.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -128,7 +128,7 @@ In a minute, we’ll have open Pull Requests:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_7.png)
 
 But Renovate does it much better.
@@ -136,7 +136,7 @@ But Renovate does it much better.
 # Dependabot, and GitHub Secrets
 
 Another nuance is the GitHub Secrets that are available to Dependabot.
-```
+
 
 <div class="content-ad"></div>
 

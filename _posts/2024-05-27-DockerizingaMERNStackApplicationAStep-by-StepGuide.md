@@ -138,7 +138,7 @@ CMD ["npm","start"]
 
 <div class="content-ad"></div>
 
-```md
+
 # docker-compose.yml
 
 version: '3.8'
@@ -149,13 +149,13 @@ ports: - '5000:5000'
 frontend:
 build: ./frontend
 ports: - '3000:3000'
-```
+
 
 `backend`: 백엔드 서비스를 정의합니다. 백엔드 디렉토리에서 Docker 이미지를 빌드하고 포트 5000으로 매핑합니다. `frontend`: 프론트엔드 서비스를 정의합니다. 프론트엔드 디렉토리에서 Docker 이미지를 빌드하고 포트 3000으로 매핑합니다.
 
 만약 몽고 DB와 같은 추가 서비스를 추가해야 한다면, 다음과 비슷한 추가 서비스를 backend에 의존하도록 추가하면 됩니다.
 
-```md
+
 version: '3.8'
 services:
 backend:
@@ -165,7 +165,7 @@ depends_on: - mongo
 mongo:
 image: mongo:latest
 ports: - '27017:27017'
-```
+
 
 <div class="content-ad"></div>
 

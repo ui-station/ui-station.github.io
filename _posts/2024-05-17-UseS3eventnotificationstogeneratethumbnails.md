@@ -652,7 +652,7 @@ func main() {
 
 이제 GitHub workflow를 설정하여 람다 코드를 배포해야 합니다.
 
-.github/workflows 폴더에 deploy-lambda.yml이라는 새 파일을 추가하고 다음 코드를 추가하세요:```
+.github/workflows 폴더에 deploy-lambda.yml이라는 새 파일을 추가하고 다음 코드를 추가하세요:
 
 <div class="content-ad"></div>
 

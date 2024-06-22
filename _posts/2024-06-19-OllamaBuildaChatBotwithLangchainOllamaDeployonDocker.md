@@ -102,13 +102,13 @@ docker exec -it ollama-langchain-ollama-container-1 ollama run phi
 
 <img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_10.png" />
 
-로컬 폴더 ./data/ollama에서 다운로드된 모델 파일 및 매니페스트를 확인할 수 있어야 합니다. 이 폴더는 내부적으로 컨테이너에 매핑되어 있으며(Ollama가 다운로드된 모델을 제공하기 위해 찾는 위치인 /root/.ollama에 매핑됨)```
+로컬 폴더 ./data/ollama에서 다운로드된 모델 파일 및 매니페스트를 확인할 수 있어야 합니다. 이 폴더는 내부적으로 컨테이너에 매핑되어 있으며(Ollama가 다운로드된 모델을 제공하기 위해 찾는 위치인 /root/.ollama에 매핑됨)
 
 <div class="content-ad"></div>
 
 아래는 Markdown 형식으로 변경한 테이블입니다.
 
-```
+
 | `<img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_11.png" />` |
 |---|
 | Lets now run access our streamlit application by opening [http://localhost:8501](http://localhost:8501) on the browser. The following screenshot shows the interface |
@@ -116,7 +116,7 @@ docker exec -it ollama-langchain-ollama-container-1 ollama run phi
 | `<img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_12.png" />` |
 |---|
 | Lets try to run a prompt “generate a story about dog called bozo”. You shud be able to see the console logs reflecting the API calls, that are coming from our Streamlit application, as shown below |
-```
+
 
 <div class="content-ad"></div>
 

@@ -592,7 +592,7 @@ aws iam attach-role-policy \
   --policy-arn arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess
 ```
 
-이 명령은 CloudWatchReadOnlyAccess 정책을 지정된 IAM 역할에 첨부하여 필요한 권한을 부여합니다.```
+이 명령은 CloudWatchReadOnlyAccess 정책을 지정된 IAM 역할에 첨부하여 필요한 권한을 부여합니다.
 
 <div class="content-ad"></div>
 
@@ -743,7 +743,7 @@ amplify console
 
 ## API를 위한 AWS AppSync 설정
 
-AWS AppSync는 확장 가능하고 안전한 GraphQL API 개발을 간소화하는 관리형 서비스입니다. 개발자는 AppSync를 사용하여 애플리케이션을 다양한 데이터 원본에 쉽게 연결할 수 있으며, DynamoDB, Lambda 또는 HTTP 데이터 소스를 포함한 AWS 서비스에 연결할 수 있습니다. AppSync는 실시간 데이터 동기화 및 오프라인 기능을 제공하여, 반응성 있고 협업을 위한 애플리케이션을 구축하는 데 효율적입니다.```
+AWS AppSync는 확장 가능하고 안전한 GraphQL API 개발을 간소화하는 관리형 서비스입니다. 개발자는 AppSync를 사용하여 애플리케이션을 다양한 데이터 원본에 쉽게 연결할 수 있으며, DynamoDB, Lambda 또는 HTTP 데이터 소스를 포함한 AWS 서비스에 연결할 수 있습니다. AppSync는 실시간 데이터 동기화 및 오프라인 기능을 제공하여, 반응성 있고 협업을 위한 애플리케이션을 구축하는 데 효율적입니다.
 
 <div class="content-ad"></div>
 

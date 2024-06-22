@@ -181,7 +181,7 @@ resource "aws_eks_addon" "kube_proxy" {
 # EKS 컨트롤 플레인 업그레이드 후
 
 EKS 1.30을 위해 권장되는 핵심 배포 및 데몬 세트를 업그레이드하는 것을 잊지 마세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -220,7 +220,7 @@ Server Version: v1.30.0-eks-036c24b
 # 요약 및 결론
 
 이전보다 더 빠르게 EKS 클러스터를 업그레이드했어요. 8분 만에 제어플레인 업그레이드 작업이 완료되었어요. 클러스터 및 노드 업그레이드를 실행하기 위해 Terraform을 사용하고, GitHub Actions 파이프라인을 통해 쉽고 편리하게 작업을 처리할 수 있어요.
-```
+
 
 <div class="content-ad"></div>
 

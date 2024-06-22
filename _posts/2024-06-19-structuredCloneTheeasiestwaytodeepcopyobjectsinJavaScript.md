@@ -90,8 +90,7 @@ structuredClone()은 매우 강력하지만 알아야 할 중요한 약점이 �
 
 해석 결과에 더 이상 수정할 내용이 없습니다. 해당 내용은 다음과 같습니다:
 
-```markdown
+
 ![image](/assets/img/2024-06-19-structuredCloneTheeasiestwaytodeepcopyobjectsinJavaScript_12.png)
 
 structuredClone()는 JavaScript 개발자의 도구상자에 속한 귀중한 요소로, 객체 복제를 이전보다 쉽게 만들어줍니다.
-```

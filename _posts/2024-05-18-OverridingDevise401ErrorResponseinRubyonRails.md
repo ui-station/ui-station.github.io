@@ -11,7 +11,7 @@ link: "https://medium.com/passgage-tech/overriding-devise-401-error-response-in-
 ---
 
 
-```
+
 ![Image](/assets/img/2024-05-18-OverridingDevise401ErrorResponseinRubyonRails_0.png)
 
 안녕하세요, 여러분! 오늘은 루비 온 레일즈 앱에서 뷰와 엔드포인트를 동시에 가지고 있을 때 Devise 401 에러 응답을 어떻게 오버라이딩하는지 이야기하려고 해요. 우선, 제 문제를 소개하고 해결책에 대해 논의하려고 해요. 다른 해결책이 있다면 제게 공유해주세요.
@@ -72,7 +72,7 @@ end
 }
 ```
 
-## 이를 수정하는 데는 2단계가 필요합니다.```
+## 이를 수정하는 데는 2단계가 필요합니다.
 
 <div class="content-ad"></div>
 

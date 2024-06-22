@@ -13,7 +13,7 @@ link: "https://medium.com/@thehosk/complaining-about-projects-is-good-for-develo
 
 아래는 HTML의 코드를 마크다운 형식으로 바꾼 것입니다.
 
-```markdown
+
 ![image](/assets/img/2024-06-19-ComplainingAboutProjectsisGoodForDevelopers_0.png)
 
 소프트웨어 개발은 어려운 일입니다. 그래서 회사들이 개발자들에게 좋은 돈을 지불하여 소프트웨어를 만들어내게 합니다. 개발자들이 필요한 것은 기술적인 능력 뿐만 아니라, 프로젝트가 뒤처지고 있는 상황에서도 냉정함을 유지하는 능력이 필요합니다.
@@ -21,7 +21,7 @@ link: "https://medium.com/@thehosk/complaining-about-projects-is-good-for-develo
 소프트웨어 개발은 마음, 몸, 기술적인 능력, 정신력을 시험받습니다.
 
 개발자들은 어려운 시기에 어떻게 사기를 유지할까요?
-```
+
 
 <div class="content-ad"></div>
 

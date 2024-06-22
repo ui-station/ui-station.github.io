@@ -121,7 +121,7 @@ fun DrawScope.drawConvexBorderShadow(
 <img src="/assets/img/2024-06-19-HowtoCreateaStunning3DBorderinJetpackCompose_1.png" />
 
 ## convexBorder 구현
-```
+
 
 <div class="content-ad"></div>
 

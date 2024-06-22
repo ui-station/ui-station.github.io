@@ -166,7 +166,7 @@ class PopupProperties(
 
 ## Focusable 및 DismissOnBackPress
 
-focusable이 true일 때 팝업은 IME 이벤트와 키 입력을 수신하고, 뒤로 가기 버튼이 눌렸을 때와 같이 역할을 합니다. 그러나 팝업 뒤에 있는 것에 대한 터치가 비활성화됩니다.```
+focusable이 true일 때 팝업은 IME 이벤트와 키 입력을 수신하고, 뒤로 가기 버튼이 눌렸을 때와 같이 역할을 합니다. 그러나 팝업 뒤에 있는 것에 대한 터치가 비활성화됩니다.
 
 <div class="content-ad"></div>
 

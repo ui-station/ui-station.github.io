@@ -53,15 +53,15 @@ choco install fvm
 
 <div class="content-ad"></div>
 
-```markdown
-```
+
+
 4. Configure VSCode to use the current active Flutter SDK version of a project. Add these lines in the Preferences Settings.
 
-```markdown
-C:\Users\[current_user]\AppData\Roaming\Code\User\settings.json
-```
 
-```markdown
+C:\Users\[current_user]\AppData\Roaming\Code\User\settings.json
+
+
+
 "dart.flutterSdkPath": ".fvm/flutter_sdk",
 "dart.flutterSdkPaths": ["/Users/usr/fvm/versions"],
 // Remove .fvm files from search
@@ -72,7 +72,7 @@ C:\Users\[current_user]\AppData\Roaming\Code\User\settings.json
 "files.watcherExclude": {
     "**/.fvm": true
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ FVM 설정 및 Flutter 버전 관리: FVM를 설치했으므로 이제 손쉽게
 
 - Flutter 프로젝트를 저장할 새 디렉토리를 만드세요. 예를 들어, 사용자 폴더에 "Projects" 디렉토리를 생성할 수 있습니다.
 - 명령 프롬프트나 PowerShell 창을 열고 프로젝트를 생성할 디렉토리로 이동하세요.
-- FVM를 초기화하기 위해 다음 명령어를 실행하세요:```
+- FVM를 초기화하기 위해 다음 명령어를 실행하세요:
 
 <div class="content-ad"></div>
 

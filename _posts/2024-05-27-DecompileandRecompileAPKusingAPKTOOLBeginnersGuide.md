@@ -197,8 +197,8 @@ adb install /Users/matrix/Documents/APK/experimentapp_zipaligned.apk
 
 <div class="content-ad"></div>
 
-```md
+
 dex2jar [classes.dex 파일 위치 디컴파일 된 폴더]
 
 jd-gui [classes-dex2jar.jar 파일 위치]
-```
+

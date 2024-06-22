@@ -142,7 +142,7 @@ RAG(검색증대생성)가 등장했습니다. 이 기법은 외부 소스에서
 
 아래는 Markdown 형식입니다.
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_18.png)
 
 다음은 RAG 컴포넌트 각각에 대해 자세히 살펴볼 것입니다:
@@ -151,13 +151,13 @@ RAG(검색증대생성)가 등장했습니다. 이 기법은 외부 소스에서
 - RAG 프롬프트
 
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_19.png)
-```
+
 
 <div class="content-ad"></div>
 
 아래는 Markdown 형식입니다.
 
-```markdown
+
 ![BuildingLLM-poweredapplicationsinRuby_20](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_20.png)
 
 벡터 임베딩은 데이터의 의미론적인 의미를 벡터 공간에서 나타냅니다. 이를 "잠재 공간"이라고도 합니다.
@@ -165,7 +165,7 @@ RAG(검색증대생성)가 등장했습니다. 이 기법은 외부 소스에서
 ![BuildingLLM-poweredapplicationsinRuby_21](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_21.png)
 
 LLM에 전달할 관련 컨텍스트를 찾기 위해 의미론적으로 유사한 문서들을 찾습니다. 보통 벡터 검색 데이터베이스에 저장된 벡터 임베딩 중에서 전달된 쿼리와의 거리를 계산하는 과정이 유사성 검색입니다.
-```
+
 
 <div class="content-ad"></div>
 

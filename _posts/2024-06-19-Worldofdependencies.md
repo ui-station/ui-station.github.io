@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/world-of-dependencies-4639100d16ef"
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-06-19-Worldofdependencies_0.png" />
 
 아직 어리기는 했지만, Y2K 버그를 생생히 기억합니다. 친숙하지 않은 분들을 위해 설명드리자면 (놀랍게도!), Y2K 버그는 컴퓨터 시스템에서 날짜가 저장되는 방식에 연결된 문제였습니다. 이는 '98'을 1998년으로 나타내는 두 자리 연도 표기법의 널리 사용에서 비롯되었습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/gitconnected/world-of-dependencies-4639100d16ef"
 따라서 2000년이 다가오자, 컴퓨터 시스템이 '00'을 1900년이 아닌 2000년으로 오해할 수 있음을 우려했습니다. 이는 모든 컴퓨터 시스템이 사실상 100년 전으로 되돌아갈 수도 있어, 상당한 혼란을 초래할 수 있었습니다.
 
 그 시대의 개발자들은 이 문제를 해결하는 데 일을 했습니다. 그들은 주로 COBOL과 같은 언어를 사용했는데, 이 언어는 goto 문을 자주 사용했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -211,7 +211,7 @@ addItemToCart 및 removeItemToCart 함수는 명백히 globalShoppingCart 배열
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-Worldofdependencies_10.png)
 
 UI는 API를 통해 데이터베이스에서 현재 시니어 정보와 고양이 프로필을 가져옵니다.
@@ -219,7 +219,7 @@ UI는 API를 통해 데이터베이스에서 현재 시니어 정보와 고양�
 UI는 API를 통해 랭킹 알고리즘에 액세스하고 시니어 데이터를 가져와 고양이 목록을 생성합니다.
 
 데이터베이스에서 고양이 목록을 가져온 후, 랭킹 알고리즘은 정렬하여 UI로 다시 보냅니다.
-```
+
 
 <div class="content-ad"></div>
 

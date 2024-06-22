@@ -72,7 +72,7 @@ VS Code에서 Ruby 언어 지원을 제공하는 기본 확장 프로그램입�
 
 아래는 Markdown 형식으로 작성해주세요.
 
-```markdown
+
 Demo :
 
 ![Demo](https://miro.medium.com/v2/resize:fit:1400/1*c1SG3mtt1y-oC5Zhh7M-sA.gif)
@@ -80,7 +80,7 @@ Demo :
 # 4. ERB Formatter/Beautify
 
 이것은 erb 파일을 서식 지정하는 데 가장 좋은 확장 프로그램 중 하나입니다. Kai Wood가 제공했습니다. 이 확장 프로그램은 기본 설정이 필요합니다. 설정에 대해 설명 된 설명을 따라 할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -130,7 +130,7 @@ Demo :
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](https://miro.medium.com/v2/resize:fit:520/1*AABMRsz0rJzqgV5YGfzaVw.gif)
 
 ## 8. 루비 온 레일즈
@@ -138,7 +138,7 @@ Demo :
 루비 온 레일즈 코드 단편을 위한 또 다른 확장 기능입니다. 이는 Hridoy가 제공합니다. 컨트롤러에서 CRUD에 대한 메소드를 작성하려면 CRUD를 입력하면 모든 인스턴스 변수와 함께 모든 메소드가 생성됩니다. 더 많은 사용법 관련 정보는 VS Code의 세부 정보 또는 마켓플레이스의 개요를 확인하세요.
 
 다운로드 링크: Ruby on Rails
-```
+
 
 <div class="content-ad"></div>
 

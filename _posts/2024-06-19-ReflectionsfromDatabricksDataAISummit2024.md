@@ -11,7 +11,7 @@ link: "https://medium.com/@haricharanshivram/reflections-from-databricks-data-ai
 ---
 
 
-```markdown
+
 ![Reflections from Databricks Data + AI Summit 2024](/assets/img/2024-06-19-ReflectionsfromDatabricksDataAISummit2024_0.png)
 
 # 개요:
@@ -19,7 +19,7 @@ link: "https://medium.com/@haricharanshivram/reflections-from-databricks-data-ai
 2024년 Databricks Data + AI Summit에 참석한 것은 눈을 뜨게 하는 경험이었어요. 놀라운 주제 발표에서부터 분과 세션, 그리고 연구 내용까지 깊게 들여다보며, 이번 세미나는 오늘날의 디지턈 환경에서 높은 품질의 데이터와 AI의 변혁적인 힘을 강조했어요.
 
 이 개인적인 관점에서, 나에게 정말 기억에 남는 이벤트로 만든 몇 가지 주요 포인트와 영감을 주는 이야기들을 탐구해보겠어요.
-```
+
 
 <div class="content-ad"></div>
 

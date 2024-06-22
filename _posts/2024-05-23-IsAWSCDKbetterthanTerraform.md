@@ -394,7 +394,7 @@ private createGetData(): PythonFunction {
 
 이 작업은 Terraform에서 수행할 수 없습니다.
 
-참고: AWS에서 풀 스택 개발을 수행 중이거나 AWS SDK 및 동시에 AWS 인프라 생성에 작업 중인 경우에 매우 유용합니다.```
+참고: AWS에서 풀 스택 개발을 수행 중이거나 AWS SDK 및 동시에 AWS 인프라 생성에 작업 중인 경우에 매우 유용합니다.
 
 <div class="content-ad"></div>
 

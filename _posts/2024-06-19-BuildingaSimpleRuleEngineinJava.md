@@ -11,7 +11,7 @@ link: "https://medium.com/@kiarash.shamaii/building-a-simple-rule-engine-in-java
 ---
 
 
-```markdown
+
 ![Building a Simple Rule Engine in Java](/assets/img/2024-06-19-BuildingaSimpleRuleEngineinJava_0.png)
 
 소프트웨어 개발에서는 종종 데이터를 필터링하거나 처리하기 위해 일련의 규칙이나 조건을 적용해야 하는 상황이 있습니다. 전통적인 if 및 else 문을 사용하여 이러한 규칙을 관리하면 유지 관리하기 어렵고 번거로울 수 있습니다. 규칙 엔진은 이러한 규칙을 정의하고 실행하는 더 유연하고 조직화된 방법을 제공합니다. 이 기사에서는 함수형 프로그래밍 원칙을 사용하여 Java에서 간단한 규칙 엔진을 구축하는 방법을 탐색하겠습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@kiarash.shamaii/building-a-simple-rule-engine-in-java
 준비 사항
 
 규칙 엔진을 구축하기에 앞서 필요한 구성 요소를 정의해 보겠습니다:
-```
+
 
 <div class="content-ad"></div>
 

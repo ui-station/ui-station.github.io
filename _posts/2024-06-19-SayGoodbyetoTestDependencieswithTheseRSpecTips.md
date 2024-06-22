@@ -11,7 +11,7 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-19-SayGoodbyetoTestDependencieswithTheseRSpecTips_0.png)
 
 개발자가 직면하는 일반적인 문제 중 하나는 테스트 의존성을 관리하는 것입니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 여기서 테스트 더블이 구원을 줍니다. 테스트 더블은 실제 객체 대신 사용되며 해당 객체의 동작을 제어할 수 있습니다.
 
 # RSpec 3에서 응답 구성하기
-```
+
 
 <div class="content-ad"></div>
 

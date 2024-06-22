@@ -11,7 +11,7 @@ link: "https://medium.com/@faisalkuzhan/day-25-90-interview-questions-on-aws-f0e
 ---
 
 
-```markdown
+
 ![](/assets/img/2024-06-19-DAY_2590INTERVIEWQUESTIONSONAWS_0.png)
 
 Below are some basic AWS interview questions along with the answers.✍
@@ -19,7 +19,7 @@ Below are some basic AWS interview questions along with the answers.✍
 # 1. What is Cloud Computing and what are its features?
 
 Cloud computing is a general term for the delivery of hosted computing services and IT resources over the internet with pay-as-you-go pricing.
-```
+
 
 <div class="content-ad"></div>
 

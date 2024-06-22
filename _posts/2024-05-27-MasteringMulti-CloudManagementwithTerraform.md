@@ -139,13 +139,13 @@ Terraform의 리소스 유형은 일관된 인터페이스를 제공하기 위�
 
 <div class="content-ad"></div>
 
-```md
+
 리소스 "azurerm_subnet" "public" {
 #...
 }
-```
 
-```md
+
+
 리소스 "azurerm_network_interface" "nic" {
 #...
 subnet_id = azurerm_subnet.public.id
@@ -160,7 +160,7 @@ depends_on = [
 azurerm_network_interface.nic
 ]
 }
-```
+
 
 테라폼은 리소스 간 종속성을 분석하고 변경 사항을 올바른 순서로 적용합니다.
 
@@ -245,7 +245,7 @@ aws_instance_disallowed_type = rule {
 
 # 네트워킹 토폴로지
 
-다양한 클라우드 간 네트워크 연결성을 관리하는 것은 복잡성을 증가시킵니다. 일부 하이브리드 클라우드 네트워크 토폴로지는 다음과 같습니다:```
+다양한 클라우드 간 네트워크 연결성을 관리하는 것은 복잡성을 증가시킵니다. 일부 하이브리드 클라우드 네트워크 토폴로지는 다음과 같습니다:
 
 <div class="content-ad"></div>
 

@@ -231,7 +231,7 @@ SERPER_API_KEY=<>
 from crewai_tools import FileReadTool, SerperDevTool
 ```
 
-새로운 기능을 빠르고 간단하게 애플리케이션 범위를 확장하기 위해 툴을 추가하고 에이전트에 할당하는 것이 중요합니다.```
+새로운 기능을 빠르고 간단하게 애플리케이션 범위를 확장하기 위해 툴을 추가하고 에이전트에 할당하는 것이 중요합니다.
 
 <div class="content-ad"></div>
 
@@ -441,7 +441,7 @@ class AgentsFactory:
 
 ## LLM
 
-LLM 선택에 관한 옵션 범위는 계속 확장되어 매주 새로운 모델이 출시됩니다. 이 설정에서는 특히 gpt-4–32k 버전 0613의 Azure Open AI 모델과 작업하게 될 것입니다. 그러나 선호하는 LLM으로 코드를 조정하고 테스트해보세요.```
+LLM 선택에 관한 옵션 범위는 계속 확장되어 매주 새로운 모델이 출시됩니다. 이 설정에서는 특히 gpt-4–32k 버전 0613의 Azure Open AI 모델과 작업하게 될 것입니다. 그러나 선호하는 LLM으로 코드를 조정하고 테스트해보세요.
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 ---
 
 
-```md
+
 ![Image](/assets/img/2024-05-18-HowIturnedmyrentalapartmentintotheultimatesmarthome_0.png)
 
 여름 저녁에 아파트 건물에 다가가서 핸드폰으로 건물 입구를 열 수 있다면 어떨까요? 아파트 문에 다가가서 문이 자동으로 열리고 불이 켜지며, 에어컨이 작동되고, 천장 선풍기가 돌아가고, 블라인드도 저녁을 위해 닫히는 모습을 상상해 보세요.
@@ -19,7 +19,7 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 몇 년 전에 이 모든 것이 자동으로 발생하는 것은 비전문가가 거의 불가능했을 뿐만 아니라 렌탈 아파트에서도 예산 내에 이루어지지 않았을 것입니다. 다행히, 이를 가능하게 하는 기술은 지금은 쉽게 구할 수 있으며 매달 가격도 싸지고 있습니다. 1940년대에 처음 지어진 렌탈 아파트에서 이를 성취했기 때문에 이것을 알고 있습니다. 계속 읽어보세요.
 
 ## 이 글에서 다룰 내용:
-```
+
 
 <div class="content-ad"></div>
 

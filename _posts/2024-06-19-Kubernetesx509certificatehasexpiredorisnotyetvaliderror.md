@@ -11,7 +11,7 @@ link: "https://medium.com/@houcem.laouiti/kubernetes-x509-certificate-has-expire
 ---
 
 
-```markdown
+
 <img src="/assets/img/2024-06-19-Kubernetesx509certificatehasexpiredorisnotyetvaliderror_0.png" />
 
 만약 잘 작동되던 쿠버네티스 환경에서 갑자기 "x509: certificate has expired or is not yet valid" 오류가 발생한다면 어떻게 하시겠어요?
@@ -19,7 +19,7 @@ link: "https://medium.com/@houcem.laouiti/kubernetes-x509-certificate-has-expire
 오늘 나에게 일어난 것과 똑같이요. 저도 이 오류를 경험했어요. 왜 나타나는지도 모르는데, 뭔가 조치를 취하지 않은 상태에서 발생한 문제였죠!
 
 저는 인증서 만료 문제라고 알고 있었지만, 문제를 어떻게 해결할지 알려고 많은 시간을 보냈어요. 그래서 이 주제에 대해 짧은 기사를 써서 이런 문제를 겪는 다른 분들에게 도움이 되길 바라는 마음으로 준비했어요.
-```
+
 
 <div class="content-ad"></div>
 

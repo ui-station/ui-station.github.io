@@ -21,7 +21,7 @@ link: "https://medium.com/javarevisited/how-to-collect-a-java-stream-into-a-prim
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Java Stream with Primitive Collections](/assets/img/2024-06-19-HowtocollectaJavaStreamintoaprimitiveCollection_1.png)
 
 이전에 블로그에서 Java에서 박싱이 왜 나쁜지, Java 개발자로서 애플리케이션 및 라이브러리에서 메모리 및 성능 효율성을 개선하는 옵션에 대해 언급했습니다. 저의 박싱이 왜 나쁜지에 대해 이해하고 싶다면 아래의 블로그를 읽어보세요.
@@ -29,7 +29,7 @@ link: "https://medium.com/javarevisited/how-to-collect-a-java-stream-into-a-prim
 그렇다면 Java Stream의 훌륭한 세계와 Java의 효율적인 기본 컬렉션의 간극을 어떻게 좁힐 수 있을까요?
 
 우리는 박싱한 상태로 있지 않고 몇 가지 해결책을 살펴보겠습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -328,7 +328,6 @@ public void streamToLongBag()
 
 이 예제는 BigDecimal 스트림을 DoubleList로 변환합니다.
 
-```java
 /**
  * DoubleList로의 스트림 처리
  */
@@ -351,7 +350,6 @@ public void streamToDoubleList()
             DoubleLists.mutable.with(0.0d, 1.0d, 2.0d, 10.0d);
     Assertions.assertEquals(expected, doubles);
 }
-```
 
 <div class="content-ad"></div>
 

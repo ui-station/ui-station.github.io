@@ -113,7 +113,7 @@ print(file_name_date_format)
 
 단계 2.2: 파일이 보관된 ADLS 디렉토리의 "마운트된 경로"를 지정합니다.
 그런 다음, 해당 지정된 디렉토리에서 모든 파일을 나열합니다.
-마지막으로, 그 지정된 디렉토리의 파일 이름에 "현재 날짜"가 포함된 파일만 걸러내어 Python List에 저장합니다.```
+마지막으로, 그 지정된 디렉토리의 파일 이름에 "현재 날짜"가 포함된 파일만 걸러내어 Python List에 저장합니다.
 
 <div class="content-ad"></div>
 
@@ -334,12 +334,12 @@ print(list_of_dfs)
 
 <div class="content-ad"></div>
 
-```md
+
 # 각 DataFrame의 모든 값들을 Python 리스트의 각 객체로 사용하여 하나의 DataFrame으로 결합하십시오. "reduce()" 함수를 사용하고 "union()" 메서드를 함께 사용하십시오.
 
 final_df = reduce(lambda df1, df2: df1.union(df2), list_of_dfs)
 display(final_df)
-```
+
 
 출력 -
 

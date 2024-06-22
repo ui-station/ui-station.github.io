@@ -509,7 +509,7 @@ fun NavGraphBuilder.loginGraph(navController: NavController) {
 }
 ```
 
-NavGraphBuilder를 확장 메소드로 만들면 미리 작성된 navigation, composable, dialog 익스텐션 메소드와 함께 사용할 수 있습니다.```
+NavGraphBuilder를 확장 메소드로 만들면 미리 작성된 navigation, composable, dialog 익스텐션 메소드와 함께 사용할 수 있습니다.
 
 <div class="content-ad"></div>
 

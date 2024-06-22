@@ -11,7 +11,7 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 ---
 
 
-```markdown
+
 ![CharlesProxyDevelopersGuide_0](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_0.png)
 
 ## 목표
@@ -20,7 +20,7 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 네, 저는 이 제품을 구매하는 데 전적으로 찬성합니다. 이를 만들어 준 Karl von Randow에게 너무 감사드려야 합니다. 이 최고의 가이드를 만들어 줘서✌️
 
 ## 일정
-```
+
 
 <div class="content-ad"></div>
 
@@ -52,7 +52,7 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_2.png)
 
 이제 iPhone에서 인증서를 설치할 시간입니다—
@@ -64,7 +64,7 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 인증: 비활성화
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_3.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -187,7 +187,7 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Charles Proxy Developers Guide 11](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_11.png)
 
 이제 https://jsonplaceholder.typicode.com/users/1를 요청하면 실제 서버가 제공하는 대신 모의 JSON 응답을 받게 됩니다. 이것을 보여드릴게요 —
@@ -195,7 +195,7 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 ![Charles Proxy Developers Guide 12](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_12.png)
 
 📕 노트: 매우 특이한 API 응답을 재현하고 싶을 때에는 이 Map Local을 사용하여 클라이언트에 제공할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -278,7 +278,7 @@ API 엔드포인트를 우클릭하고 "Repeat Advance"를 선택해보세요 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_22.png)
 
 Also, you can configure your repeat settings — 
@@ -286,7 +286,7 @@ Also, you can configure your repeat settings —
 Setting Iteration to 100 and Concurrency to 3 means you will send 100 HTTP API requests in batches of 3 requests each time.
 
 📕 Notebook: I mostly use this to perform load tests on the API to check if it responds with 2xx status codes.
-```
+
 
 <div class="content-ad"></div>
 

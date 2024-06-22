@@ -84,7 +84,7 @@ plt.show()
 
 <div class="content-ad"></div>
 
-```md
+
 # 생존 상태에 대한 막대 그래프 플롯하기
 plt.figure(figsize=(8, 6))
 sns.countplot(x='survived', data=titanic, color='red')
@@ -92,7 +92,7 @@ plt.title('생존 상태 분포')
 plt.xlabel('생존 상태')
 plt.ylabel('카운트')
 plt.show()
-```
+
 
 ![이미지](/assets/img/2024-05-20-DataVisualizationTechniquesinPythonwithCodeExamples_4.png)
 

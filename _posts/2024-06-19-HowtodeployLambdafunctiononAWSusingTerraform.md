@@ -253,7 +253,7 @@ def lambda_handler(event, context):
 <img src="/assets/img/2024-06-19-HowtodeployLambdafunctiononAWSusingTerraform_1.png" />
 
 # 쇼타임!
-```
+
 
 <div class="content-ad"></div>
 
@@ -387,16 +387,14 @@ data.archive_file.zip_python_lambda_code: 읽기 완료 소요 시간 0초 [id=1
       + version                        = (적용 후 알려짐)
     }
 
-계획: 4개 추가, 0개 변경, 0개 제거.```
+계획: 4개 추가, 0개 변경, 0개 제거.
 
 앞서 설명한 변경 사항을 적용시키기 위해 terraform apply를 실행할 수 있습니다.
 
 그 후 콘솔에 성공 메시지가 표시될 것입니다. 이는 모든 리소스가 AWS 측에 생성된 것을 의미합니다. AWS GUI에서 람다 함수를 확인하고 실행하거나 CLI에서 람다 함수를 확인할 수 있습니다.
 
-```js
 aws lambda list-functions --region us-east-1 | grep Override_Name 
 
 "FunctionName": "Override_Name",
 "FunctionArn": "arn:aws:lambda:us-east-1:11111:function:Override_Name",
 "LogGroup": "/aws/lambda/Override_Name"
-```

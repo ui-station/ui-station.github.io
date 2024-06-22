@@ -175,7 +175,7 @@ ui.run()
 
 <img src="/assets/img/2024-05-20-CreateyourownGeminiAI-chatbotwithatwistusingPythonJinja2andNiceGUI_5.png" />
 
-Python으로 완전히 작성된 UI로는 꽤 괜찮은 결과가 나온 것 같네요.```
+Python으로 완전히 작성된 UI로는 꽤 괜찮은 결과가 나온 것 같네요.
 
 <div class="content-ad"></div>
 
@@ -205,7 +205,7 @@ ui.input(label="Prompt").bind_value(app.storage.client, "prompt").classes("col-s
 
 그리고 NiceGUI는 버튼 및 기타 요소에 on_click 매개변수를 정의할 수 있도록 합니다. 이 매개변수는 일반 Python 함수에 대한 참조를 취합니다. 이렇게 하면 웹 애플리케이션을 상호 작용 가능하게 할 수 있습니다.
 
-먼저 send() 함수를 소개하겠습니다. 나중에 Gemini LLM과 상호 작용하기 위해 사용할 것입니다. 현재 입력 양식의 현재 입력 값을 사용자에게 간단히 보여줄 것입니다.```
+먼저 send() 함수를 소개하겠습니다. 나중에 Gemini LLM과 상호 작용하기 위해 사용할 것입니다. 현재 입력 양식의 현재 입력 값을 사용자에게 간단히 보여줄 것입니다.
 
 <div class="content-ad"></div>
 
@@ -244,7 +244,7 @@ ui.run()
 
 ![image](/assets/img/2024-05-20-CreateyourownGeminiAI-chatbotwithatwistusingPythonJinja2andNiceGUI_6.png)
 
-# Jinja2를 활용한 모듈화된 프롬프트들```
+# Jinja2를 활용한 모듈화된 프롬프트들
 
 <div class="content-ad"></div>
 
@@ -297,15 +297,15 @@ env = Environment(
 
 ![image](/assets/img/2024-05-20-CreateyourownGeminiAI-chatbotwithatwistusingPythonJinja2andNiceGUI_8.png)
 
-다음 내용을 prompt.jinja 템플릿에 추가해 봅시다. 이것은 기본 템플릿입니다:```
+다음 내용을 prompt.jinja 템플릿에 추가해 봅시다. 이것은 기본 템플릿입니다:
 
 <div class="content-ad"></div>
 
-```md
+
 { 성격 }
 
 { 프롬프트 }
-```
+
 
 이제, santaclaus.jinja에 다음 내용을 추가하여 산타클로스 성격을 정의해 봅시다:
 

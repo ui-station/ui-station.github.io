@@ -11,7 +11,7 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 ---
 
 
-```markdown
+
 ![2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_0](/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_0.png)
 
 리모트 서버에서의 개발은 생각보다 어렵지 않습니다. 사실 저렴한 VPS 도플릿이나 클러스터를 사용하는 것은 로컬 이진 해석기를 여러 개 사용하거나 Mac용 Docker를 사용하는 것보다 미쳤다고 할 정도의 혜택이 있습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 2022년 업데이트: 요즘에는 님버스(Nimbus)만 사용합니다.
 
 여기에서 한 발 더 나아가서, 컨테이너 중심 환경에서 어떻게 작업하는지 배워보겠습니다. 여기서 우리는 완전한 네이티브 리눅스 성능과 17시간 배터리, 그리고 제로 팬 소음을 얻을 것입니다. 우리는 작은 도플릿 VPS를 임대하고, VSCode 및 JetBrains의 IntelliJ Idea CE를 통해 원격 개발 환경을 설정할 것입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -134,7 +134,7 @@ MVP 시간이네요! DigitalOcean에서 가장 저렴한 드롭렛을 구입했�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_4.png)
 
 ## 가격
@@ -142,7 +142,7 @@ MVP 시간이네요! DigitalOcean에서 가장 저렴한 드롭렛을 구입했�
 원격 개발 방법의 가격은 노트북을 구매하는 것과 비슷합니다. 시장에서 절대 최고의 노트북을 구할 수 있습니다 — 저렴한 M1 MacBook Pro. 프로젝트 및 팀 구성원에 따라 다르지만, 약 500달러에서 1500달러 정도를 절약했습니다.
 
 이제 드롭렛이나 EC2 인스턴스를 임대하고, 매월 15달러부터 50달러까지 지불합니다. 업타임만 지불한다면 훨씬 적게 지불할 수 있습니다. 그래도 가장 비싼 것을 가정해보면, 50달러입니다!
-```
+
 
 <div class="content-ad"></div>
 
@@ -156,7 +156,7 @@ MVP 시간이네요! DigitalOcean에서 가장 저렴한 드롭렛을 구입했�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_5.png)
 
 물론 어느 기준에서도 인상적한 160GB의 RAM과 40개의 CPU 코어로 확장 가능한 드롭렛이 있습니다. 30분 안에 ML을 훈련해야 한다면, 그 유명한 Turbo 버튼을 눌러 몬스터 드롭렛을 생성해보세요.
@@ -164,7 +164,7 @@ MVP 시간이네요! DigitalOcean에서 가장 저렴한 드롭렛을 구입했�
 EC2 인스턴스는 심지어 더 나은 성능을 자랑합니다 (다만 관리하고 예측하기 어려울 수 있습니다). GPU 최적화된 작업 부하를 사용하거나 운영 업무 시간을 기준으로 청구 금액을 절약할 수 있는 매우 구체적인 인스턴스를 사용할 수 있습니다.
 
 숙련도가 충분하다면 기존 k8s 클러스터에 연결하고 이미 사용 가능한 다른 서비스를 사용할 수도 있습니다. 이에 대해 자세히 모르지만 Telepresence와 같이 해당 목적에 맞춘 특수 도구가 있다는 것은 여러해 전부터 알고 있습니다. 그렇지 않으면 DigitalOcean 관리 클러스터를 생성해보세요. 1클릭/무난한 작업으로 간단합니다!
-```
+
 
 <div class="content-ad"></div>
 
@@ -343,7 +343,7 @@ JetBrains는 다른 아이디어를 가지고 있습니다. Docker 컨테이너 
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Example image](/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_10.png)
 
 상상할 수 있겠지만, 이 방법에는 몇 가지 단점이 있습니다. 관리하기 어려울 뿐만 아니라 개발자가 코드를 컨테이너를 먼저 보는 관점을 보는 것만큼 깔끔하지 않습니다. 그러나 이 접근 방식은 로컬 에디터에서 했던 것과 매우 비슷합니다.
@@ -351,7 +351,7 @@ JetBrains는 다른 아이디어를 가지고 있습니다. Docker 컨테이너 
 저는 JetBrains 제품을 오랫동안 사용해왔습니다. 그들이 얼마나 부피가 크고 압도적인지 항상 싫어했지만, 동시에 PHP, Ruby, Java 또는 Python을 다룰 때에는 더 좋은 IDE가 없다는 것을 직접 경험했습니다. 그러나 지난 몇 년간 특히 Python 및 PHP에서는 VSCode로 점점 더 많이 기울어졌습니다. 제 기능을 잃는 것이 어떻게든 개발의 용이성으로 보상된다는 점 때문입니다.
 
 따라 주셔서 감사합니다.
-```
+
 
 <div class="content-ad"></div>
 

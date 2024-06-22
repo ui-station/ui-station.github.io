@@ -98,7 +98,7 @@ Ollama를 설치한 후에는 하나 이상의 대형 언어 모델(LLM)을 설�
 
 <div class="content-ad"></div>
 
-```md
+
 오레카 풀라마 2:13b
 
 모델을 다운로드하고 하드 드라이브에 저장하는 프로세스가 시작됩니다. 프로세스를 시작하기 전에 충분한 여유 공간이 있는지 확인하세요. 공간이 부족한 경우,  llama:7b와 같은 더 작은 모델을 다운로드할 수도 있습니다. 이는 동일한 명령으로 수행할 수 있습니다: "llama:13b"를 "llama:7b"로 교체하면 됩니다. 7b 모델은 4.7GB이며, llama:13b 대신 사용할 수 있습니다.
@@ -106,7 +106,7 @@ Ollama를 설치한 후에는 하나 이상의 대형 언어 모델(LLM)을 설�
 성공적인 설치 후 다음 화면을 볼 수 있어야 합니다:
 
 ![image](/assets/img/2024-05-20-RunningLargeLanguageModelsonyourPCprivacyandbeyond_4.png)
-```
+
 
 <div class="content-ad"></div>
 

@@ -79,7 +79,7 @@ link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-w
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-UnlockingthePowerofContainerizationWhyDataScientistsNeedtoLearnDockersandKubernetes_2.png)
 
 컨테이너는 코드, 라이브러리, 시스템 도구 및 설정을 포함하여 응용 프로그램을 실행하는 데 필요한 모든 것이 포함된 가볍고 휴대 가능한 실행 가능한 소프트웨어 패키지입니다.
@@ -87,7 +87,7 @@ link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-w
 컨테이너는 컨테이너의 내용과 구성을 정의하는 이미지에서 생성되며, 호스트 운영 체제 및 동일한 시스템의 다른 컨테이너로부터 격리됩니다.
 
 이 격리는 가상화 및 프로세스 격리 기술을 사용하여 가능하며, 이를 통해 컨테이너는 호스트 운영 체제의 하나의 인스턴스의 자원을 공유하면서 응용 프로그램을 실행하는 안전하고 예측 가능한 환경을 제공합니다.
-```
+
 
 <div class="content-ad"></div>
 

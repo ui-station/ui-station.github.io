@@ -274,7 +274,7 @@ CoreDNS이 https://10.0.0.100:6443/api/v1/namespaces/kube-system/services/kube-d
 
 이제 밴자이라 클러스터를 일반에서 멋지게 업그레이드해 봅시다. 새 응용 프로그램을 쉽게 배포하고 클러스터를 모니터링할 수 있는 몇 가지 널리 사용되는 도구를 설정해 보겠습니다. 여기서 ArgoCD, Prometheus 및 Grafana 설치 방법을 안내하겠습니다! 이 세 가지 오픈소스 프로젝트가 우리의 클러스터를 다음 수준으로 끌어올립니다.
 
-계속하기 전에, 이러한 도구들에 대한 모든 설정 변경 사항을 추적하기 위한 원격 git 저장소를 만들어 보시기를 권장합니다. 특히 ArgoCD를 사용할 때, 각 도구나 추가 응용 프로그램을 배포할 때마다 거기를 통해 추가합니다.```
+계속하기 전에, 이러한 도구들에 대한 모든 설정 변경 사항을 추적하기 위한 원격 git 저장소를 만들어 보시기를 권장합니다. 특히 ArgoCD를 사용할 때, 각 도구나 추가 응용 프로그램을 배포할 때마다 거기를 통해 추가합니다.
 
 <div class="content-ad"></div>
 
@@ -342,15 +342,15 @@ sudo cp /etc/fstab /etc/fstab.bak
 
 <div class="content-ad"></div>
 
-```md
+
 /dev/sda1 /mnt/usb vfat defaults,uid=youruid,gid=yourgid,dmask=002,fmask=113 0 0
-```
+
 
 이제 우리 노드 사용자의 사용자 및 그룹 설정으로 장치를 마운트합니다.
 
-```md
+
 sudo mount -o uid=youruid,gid=yourgid,dmask=002,fmask=113 /dev/sdX1 /mnt/usb
-```
+
 
 이제 우리는 PersistentVolume과 PersistentVolumeChain을 가진 Kubernetes 자원을 생성하려고 합니다.
  

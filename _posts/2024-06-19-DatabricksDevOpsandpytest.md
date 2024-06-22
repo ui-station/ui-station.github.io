@@ -82,7 +82,7 @@ class TestColumnFuntions(object):
 
 함수와 관련된 테스트를 구현한 후에는 이제 Azure DevOps에서 파이프라인을 설정할 수 있습니다.
 
-파이프라인(pipeline_pytest.yml)에 대해 가상 환경을 Python용으로 생성하고 필요한 패키지를 설치한 다음 'tests' 디렉토리에서 pytest를 실행합니다. 이 경우 pytest-azurepipelines를 사용하여 pytest를 DevOps 파이프라인에 통합합니다. 이제 pytest는 'test_.py'로 시작하거나 '_test.py'로 끝나는 모든 테스트를 찾아 이 경로를 따라 이동합니다.```
+파이프라인(pipeline_pytest.yml)에 대해 가상 환경을 Python용으로 생성하고 필요한 패키지를 설치한 다음 'tests' 디렉토리에서 pytest를 실행합니다. 이 경우 pytest-azurepipelines를 사용하여 pytest를 DevOps 파이프라인에 통합합니다. 이제 pytest는 'test_.py'로 시작하거나 '_test.py'로 끝나는 모든 테스트를 찾아 이 경로를 따라 이동합니다.
 
 <div class="content-ad"></div>
 
@@ -113,7 +113,7 @@ steps:
 
 <img src="/assets/img/2024-06-19-DatabricksDevOpsandpytest_1.png" />
 
-# 결론```
+# 결론
 
 <div class="content-ad"></div>
 

@@ -60,7 +60,7 @@ export default AnimatedTyping;
 
 # 매우 쉽게 설명하기 🚀
 
-In Plain English 커뮤니티의 일원이 되어 주셔서 감사합니다! 떠나시기 전에:```
+In Plain English 커뮤니티의 일원이 되어 주셔서 감사합니다! 떠나시기 전에:
 
 <div class="content-ad"></div>
 

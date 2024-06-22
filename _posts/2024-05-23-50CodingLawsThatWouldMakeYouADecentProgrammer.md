@@ -397,7 +397,7 @@ final_result = calculate(x, y) * 2
 
 <div class="content-ad"></div>
 
-```md
+
 # 나쁜 예시
 
 def calc(x, y):
@@ -407,13 +407,13 @@ pass
 
 def calculate_total_price(quantity, unit_price):
 pass
-```
+
 
 ## 법칙 25: 경로 하드코딩 피하기
 
 파일 경로나 URL을 하드코딩하지 말고, 대신 구성 파일 또는 환경 변수를 사용해주세요.
 
-```md
+
 # 나쁜 예시
 
 file_path = "/path/to/file.txt"
@@ -422,7 +422,7 @@ file_path = "/path/to/file.txt"
 
 import os
 file_path = os.getenv("FILE_PATH")
-```
+
 
 <div class="content-ad"></div>
 
@@ -480,7 +480,7 @@ except Exception:
 
 ## 법칙 29: 함수는 변이하거나 값을 반환해야 하나 둘 다 하면 안 된다.
 
-함수를 작성할 때 해당 함수가 정확히 무엇을 해야 하는지 유의해야 합니다. 인수를 변이시킬까요? 아니면 반환해야 하나요?```
+함수를 작성할 때 해당 함수가 정확히 무엇을 해야 하는지 유의해야 합니다. 인수를 변이시킬까요? 아니면 반환해야 하나요?
 
 <div class="content-ad"></div>
 
@@ -742,7 +742,7 @@ def calculate_discount(price):
 
 같은 코드를 한 번 이상 작성하지 않도록 합니다. 대신 함수, 클래스, 모듈, 라이브러리 또는 기타 추상화를 사용하여 코드를 재사용하세요. 이렇게 하면 코드가 더 효율적이고 일관되며 유지 보수가 용이해집니다.
 
-```
+
 
 <div class="content-ad"></div>
 

@@ -11,7 +11,7 @@ link: "https://medium.com/proandroiddev/exploring-firebase-authentication-in-com
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_0.png)
 
 Compose Multiplatform은 개발자에게 뛰어난 가능성의 세계를 열어주어 안드로이드와 iOS용 네이티브 모습을 하나의 코드베이스로 구축할 수 있게 합니다. 이러한 앱에 인증을 통합하는 것은 어렵게 느껴질 수 있지만, 이 기사에서는 Firebase REST API 인증을 Compose Multiplatform과 통합하는 단계와 혜택을 탐색할 것입니다.
@@ -19,7 +19,7 @@ Compose Multiplatform은 개발자에게 뛰어난 가능성의 세계를 열어
 # 왜 Firebase REST API를 사용하는가?
 
 우리는 Android, iOS 및 Web 플랫폼용 다양한 Firebase SDK가 있음을 알고 있지만 Compose Multiplatform용 안정적인 SDK는 없습니다. 또한, 다양한 Compose Multiplatform 예제에서 사용 사례를 보여주기 위해 REST API를 사용하는 것을 보았습니다. 따라서 하나의 코드베이스를 사용하고 여러 플랫폼을 대상으로 하기 위해 Firebase REST API를 인증에 사용하는 것을 선호했습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -58,7 +58,7 @@ Firebase 프로젝트를 구성하면 프로젝트 설정을 방문하여 Fireba
 
 Kotlin의 Ktor 프레임워크는 강력하고 유연한 HTTP 클라이언트를 제공하여 외부 API와의 상호 작용을 원활하게 만들어줍니다. 구현에 앞서 필요한 종속성이 포함된 Kotlin 프로젝트를 설정했는지 확인해보세요. Ktor의 클라이언트 라이브러리를 포함하여 프로젝트에 Ktor 클라이언트를 추가할 수 있습니다. 이를 위해 libs.versions.toml 파일 내 gradle 폴더에 다음 종속성을 포함하면 됩니다.
 
-```
+
 [versions]
 ...
 kotlin = "1.9.21"
@@ -79,11 +79,11 @@ androidLibrary = { id = "com.android.library", version.ref = "agp" }
 jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-```
+
 
 libs.versions.toml 파일 내의 라이브러리를 추가했으면, build.gradle.kts 파일의 composeApp 내부에 종속성을 추가하고 프로젝트를 동기화해주면 됩니다:
 
-```
+
 androidMain.dependencies {
     ...
     implementation(libs.ktor.client.okhttp)
@@ -98,7 +98,7 @@ desktopMain.dependencies {
     ..
     implementation(libs.ktor.client.okhttp)
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -189,7 +189,7 @@ fun login(
 SQLDelight는 플랫폼에 중립적인 SQL 쿼리를 작성하기 위한 강력한 코틀린 라이브러리로, 캐싱과 결합하여 앱의 효율성을 높이는 동적 이중체를 형성합니다. 여기서는 login 및 signUp API 호출의 응답에서 얻은 refreshToken을 저장할 것입니다. 따라서 사용자가 앱을 다시 열 때 인증을 요청하지 않을 것입니다.
 
 ## SQLDelight 종속성 설정
-```
+
 
 <div class="content-ad"></div>
 
@@ -350,7 +350,7 @@ Database.sq 파일이 위치하는 폴더 구조 스크린샷은 아래에서 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 <img src="/assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_4.png" />
 
 다음 코드를 Database.sq 파일에 추가하세요. 이 파일은 createTable, insertUser, removeAllUsers, getAllUsers 등의 쿼리를 포함합니다.
@@ -358,7 +358,7 @@ Database.sq 파일이 위치하는 폴더 구조 스크린샷은 아래에서 �
 프로젝트를 컴파일하면 생성된 Kotlin 코드가 composeApp/build/generated/sqldelight 디렉토리에 저장됩니다. 또는 터미널에서 ./gradlew generateSqlDelightInterface 명령어를 사용하여 sqldelight 코틀린 코드를 생성할 수도 있습니다.
 
 ## 데이터베이스 드라이버 생성
-```
+
 
 <div class="content-ad"></div>
 

@@ -61,7 +61,7 @@ BigQuery은 서버리스, 멀티 클라우드 데이터 웨어하우스로, 바�
 
 <div class="content-ad"></div>
 
-```
+
 ```js
 gcloud services enable cloudaicompanion.googleapis.com –project PROJECT_ID
 ```

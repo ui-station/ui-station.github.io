@@ -154,7 +154,7 @@ dynamic "maintenance_window_node_os" {
 # 변수 정의
 
 Terraform 구성을 더 유연하고 재사용 가능하게 만들기 위해 유지 보수 창 설정에 대한 변수를 정의합니다. 이러한 변수는 업그레이드 채널, 빈도, 기간, 시작 시간 및 기타 매개변수를 사용자 정의할 수 있도록 합니다.
-```
+
 
 <div class="content-ad"></div>
 

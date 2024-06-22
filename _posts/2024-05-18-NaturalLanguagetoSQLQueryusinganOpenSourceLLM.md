@@ -247,7 +247,7 @@ transaction = [
 ```
 
 3. 다음과 같은 테이블 이름인 transaction과 열 목록인 [‘transaction_id’, ‘transaction_amount’, ‘transaction_date’, ‘transaction_type’, ‘transaction_status’, ‘transaction_description’, ‘transaction_source_account’, ‘transaction_destination_account’, ‘transaction_currency’, ‘transaction_fee’]을 사용하여 다음 질문에 대한 SQL 쿼리를 생성하십시오:
-(‘transaction_type의 count와 평균 transaction_amount를 가져오고 transaction_type으로 정렬하십시오’).```
+(‘transaction_type의 count와 평균 transaction_amount를 가져오고 transaction_type으로 정렬하십시오’).
 
 <div class="content-ad"></div>
 
@@ -273,7 +273,7 @@ transaction = [
 ```
 
 5. 다음 테이블 이름과 열 목록을 사용하여 SQL 쿼리를 생성하십시오: transaction 및 열: ['transaction_id', 'transaction_amount', 'transaction_date', 'transaction_type', 'transaction_status', 'transaction_description', 'transaction_source_account', 'transaction_destination_account', 'transaction_currency', 'transaction_fee'], 다음 질문에 답하십시오:
-(‘각 거래 유형의 최대 거래 금액을 찾아 거래 유형으로 정렬하는 SQL 쿼리를 생성하세요’).```
+(‘각 거래 유형의 최대 거래 금액을 찾아 거래 유형으로 정렬하는 SQL 쿼리를 생성하세요’).
 
 <div class="content-ad"></div>
 

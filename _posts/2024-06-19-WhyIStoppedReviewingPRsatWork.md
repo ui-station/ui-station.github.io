@@ -11,7 +11,7 @@ link: "https://medium.com/@tsecretdeveloper/why-i-stopped-reviewing-prs-at-work-
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-WhyIStoppedReviewingPRsatWork_0.png)
 
 The Secret Developer is a seasoned software developer who loves helping colleagues move their tickets to the right.
@@ -19,7 +19,7 @@ The Secret Developer is a seasoned software developer who loves helping colleagu
 So how have they suddenly had a moment of clarity where they realize their efforts need to stop for the good of themselves and the team.
 
 # The Situation
-```
+
 
 <div class="content-ad"></div>
 
@@ -113,11 +113,11 @@ PR 실천에 허용되는 명확한 기준을 설정하세요. 필요하다면 �
 
 제가 개발자이기 때문에, 테이블 태그를 마크다운 형식으로 변경하도록 하겠습니다.
 
-```
+
 
 # About The Author
 
-```
+
 
 <div class="content-ad"></div>
 

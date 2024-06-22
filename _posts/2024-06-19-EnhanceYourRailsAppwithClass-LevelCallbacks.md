@@ -31,7 +31,7 @@ link: "https://medium.com/@abhirampai/how-to-use-callback-directly-on-the-class-
 
 <div class="content-ad"></div>
 
-```markdown
+
 # ActiveJob in the gem
 class MyJob < ActiveJob::Base
   def perform
@@ -41,18 +41,18 @@ class MyJob < ActiveJob::Base
     end
   end
 end
-```
+
 
 이 스니펫에서는 호스트 애플리케이션의 ModelName 클래스가 after_result 클래스 메소드를 갖고 있는지 확인합니다. 해당 메소드가 있다면 블록을 사용하여 작업 결과를 이 메소드로 전달합니다.
 
 ## Host Application Class Method
 
 호스트 애플리케이션에서는 클래스 내에 after_result 메소드를 정의합니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 # 호스트 응용프로그램의 클래스
 Class ModelName
   def self.after_result
@@ -64,14 +64,14 @@ Class ModelName
     # 결과를 처리합니다
   end
 end
-```
+
 
 여기서 yield는 작업 결과를 after_result 메서드로 전달하며, 결과가 있는 경우 처리합니다.
 
 ## 인스턴스 메서드 콜백
 
 인스턴스 메서드와 Rails 콜백을 사용한다면 조금 다르게 보일 것입니다. define_callbacks와 set_callback을 사용하여 클래스 인스턴스에서 콜백을 정의할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -96,7 +96,7 @@ end
 
 ## 젬 내 수정된 ActiveJob
 
-인스턴스 메서드 콜백을 사용하려면 작업을 다음과 같이 수정하십시오:```
+인스턴스 메서드 콜백을 사용하려면 작업을 다음과 같이 수정하십시오:
 
 <div class="content-ad"></div>
 

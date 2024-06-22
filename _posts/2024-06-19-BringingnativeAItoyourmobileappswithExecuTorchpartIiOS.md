@@ -109,7 +109,6 @@ RCT_EXPORT_METHOD(applyStyleTransfer:(NSString *)imageUri resolver:(RCTPromiseRe
 // StyleTransferModule.mm
 // ...
 
-```javascript
 // StyleTransferModule.mm
 // ...
 
@@ -123,13 +122,11 @@ RCT_EXPORT_METHOD(applyStyleTransfer:(NSString *)imageUri resolver:(RCTPromiseRe
   int32_t sizes[] = {1, numChannels, imageSize, imageSize};
   TensorImpl inputTensorImpl(ScalarType::Float, std::size(sizes), sizes, imageData);
   Tensor inputTensor = Tensor(&inputTensorImpl);
-```
 
 이제 UIImage를 가져와서 사용자 정의 ImageProcessor에 전달합니다. 이것은 사용 사례와 모델에 따라 다양한 전처리 부분입니다. 여기서는 640x640 크기의 이미지 및 float 값 배열이 필요합니다. 크기 조정이 항상 필요한 것은 아니며 동적 입력 형태로 모델을 내보낼 수 있습니다. ImageProcessor가 정확히 무엇을 하는지 보려면 여기를 클릭하세요. 이후에는 해당 데이터로부터 텐서를 생성해야 하므로 데이터 및 텐서 크기를 TensorImpl 생성자에 전달해야 합니다. 마지막으로 TensorImpl을 Tensor 자체로 전달해야 합니다.
 
 다음 단계는 텐서를 모델에 전달하는 것입니다. 이 부분은 매우 간단합니다. 이전에 생성된 Tensor를 EValue로 래핑하고 벡터에 넣은 다음 forward() 메서드(또는 내보낸 다른 메서드)를 실행하기만 하면 됩니다. 벡터에 넣는 이유는 여러 입력을 예상하는 모델이 있기 때문입니다.
 
-```javascript
 // StyleTransferModule.mm
 // ...
 
@@ -143,13 +140,11 @@ NSError *error = [NSError
 }
 const float *outputData = result->at(0).toTensor().const_data_ptr<float>();
 free(imageData);
-```
 
 <div class="content-ad"></div>
 
 추론 중에 오류가 발생했는지 확인하려면 .ok() 메서드를 호출하면 됩니다. outputData 변수는 모델 호출 결과에 대한 포인터입니다. 이는 분류 작업의 확률부터 LLM 출력까지 어떤 것이든 될 수 있습니다. 마지막으로 후속 처리 단계를 수행하고 출력 이미지 URI를 JS 쪽에 반환해야 합니다.
 
-```js
 // StyleTransferModule.mm
 // ...
 
@@ -164,7 +159,6 @@ if ([UIImagePNGRepresentation(outputImage) writeToFile:outputPath atomically:YES
 } else {
   reject(@"img_write_error", @"Failed to write processed image to file", nil);
 }
-```
 
 그것이 거의 다입니다. 이 접근 방식을 React Native 앱에서 어떻게 사용할 수 있는지 보여주는 데모 앱을 준비했습니다. 왼쪽에 원본 이미지, 오른쪽에 모델 출력이 표시됩니다.
 

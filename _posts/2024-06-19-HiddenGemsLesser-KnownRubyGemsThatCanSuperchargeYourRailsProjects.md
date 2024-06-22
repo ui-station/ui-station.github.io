@@ -11,7 +11,7 @@ link: "https://medium.com/devops-dev/hidden-gems-lesser-known-ruby-gems-that-can
 ---
 
 
-```markdown
+
 ![Hidden Gems: Lesser-Known Ruby Gems That Can Supercharge Your Rails Projects](/assets/img/2024-06-19-HiddenGemsLesser-KnownRubyGemsThatCanSuperchargeYourRailsProjects_0.png)
 
 루비온레일즈는 강력한 프레임워크이며, 우리는 모두 Devise, RSpec, 그리고 Sidekiq과 같은 인기있는 젬들에 대해 알고 있지만, 몇 가지 잘 알려지지 않은 젬들이 있습니다. 이러한 숨겨진 보석들을 살펴보고 개발 경험을 높일 수 있는 방법을 탐구해 봅시다.
@@ -19,7 +19,7 @@ link: "https://medium.com/devops-dev/hidden-gems-lesser-known-ruby-gems-that-can
 # 1. Dalli
 
 Dalli은 Memcached 캐싱 시스템과 시원찮게 통합되는 강력한 루비 젬입니다. 이는 빠르고 빈번하게 접근되는 데이터를 캐싱함으로써 응용 프로그램의 성능을 크게 향상시킬 수 있습니다. 세션 데이터, 조각 캐싱 또는 전체 페이지 캐싱을 다루고 있다면, Dalli가 모두 대처할 것입니다. 이렇게 사용할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -67,7 +67,7 @@ config.middleware.use Rack::Cache,
 캐시 머니는 ActiveRecord 모델의 캐싱을 간편하게 해주는 젬입니다. 모델 인스턴스를 자동으로 캐시하고, 레코드가 업데이트될 때 캐시 만료를 처리합니다. 데이터베이스 쿼리의 속도를 높이고 데이터베이스 서버 부하를 줄이는 데 사용하세요.
 
 ## 6. IdentityCache
-```
+
 
 <div class="content-ad"></div>
 

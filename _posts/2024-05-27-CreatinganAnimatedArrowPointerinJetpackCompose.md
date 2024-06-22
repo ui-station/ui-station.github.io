@@ -108,7 +108,7 @@ object SimpleArrow : Shape {
 
 <div class="content-ad"></div>
 
-```md
+
 ![이미지](/assets/img/2024-05-27-CreatinganAnimatedArrowPointerinJetpackCompose_1.png)
 
 # 그리기
@@ -116,7 +116,7 @@ object SimpleArrow : Shape {
 이제 함수 구현에 가까워졌어요. 하지만 그 전에, 경로와 포인터 머리를 그리기 위한 두 개의 지원 함수를 정의해야 해요.
 
 ## 화살 경로 그리기
-```
+
 
 <div class="content-ad"></div>
 
@@ -268,7 +268,7 @@ AnimatedArrowPointer(
 
 ## Top-Right
 
-To point to the top-right, rotate the layout by -90 degrees:```
+To point to the top-right, rotate the layout by -90 degrees:
 
 <div class="content-ad"></div>
 
@@ -321,7 +321,7 @@ AnimatedArrowPointer(
 좋아할 만한 내용이 있을 것 같아요 👇
 
 이 기사를 읽어 주셔서 감사합니다! ❤️ 즐거우시고 가치 있게 보내셨으면 좋겣습니다. 만약 좋았다면 만세 👏를 눌러서 감사를 표현해 주시고 Kappdev를 팔로우하여 더욱 흥미로운 기사를 읽어보세요 😊
-```  
+
 
 <div class="content-ad"></div>
 

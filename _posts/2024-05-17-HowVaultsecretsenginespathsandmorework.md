@@ -286,7 +286,7 @@ Vault는 이를 그룹을 사용하여 모델링합니다. 그룹은 임의의 �
 
 <div class="content-ad"></div>
 
-```
+
 ![image](/assets/img/2024-05-17-HowVaultsecretsenginespathsandmorework_5.png)
 
 이제 그룹은 정책과 연관시킬 수 있습니다. 해당 그룹의 모든 엔티티는 해당 그룹이나 부모, 조부모 그룹의 정책을 받습니다.
@@ -294,7 +294,7 @@ Vault는 이를 그룹을 사용하여 모델링합니다. 그룹은 임의의 �
 이제 엔티티 그룹의 액세스를 한 곳에서 관리할 수 있습니다.
 
 그룹 외에도 Vault는 그룹 별칭의 개념을 지원합니다. 이 별칭은 Active Directory 그룹과 같은 외부 그룹과 관련이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

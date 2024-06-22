@@ -11,7 +11,7 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_0.png)
 
 여러 플랫폼에서 iOS 18에서 새로운 Siri UI 또는 애플이 애플 인텔리전스 UI를 활성화하지 않은 것에 대한 게시물을 본 적이 있을 것입니다. 그러나 iOS 18 Developer Beta 1 (빌드 109)에는 아직 새로운 Siri 관련 기능이 포함되어 있지 않습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 하지만 좋은 소식이 있습니다! 다음 단계를 따라 새 Siri 인터페이스의 미리보기를 볼 수 있습니다.
 
 # 중요 사항:
-```
+
 
 <div class="content-ad"></div>
 
@@ -46,7 +46,7 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Step 2: Connect Your Device](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_2.png)
 
 2. Connect Your Device: Use a USB cable to connect your iPhone or iPad to your Mac.
@@ -54,11 +54,11 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 ![Step 3: Open Cowabunga Lite](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_3.png)
 
 3. Open Cowabunga Lite. You’ll be greeted with this screen.
-```
+
 
 <div class="content-ad"></div>
 
-````markdown
+
 ![Image 1](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_4.png)
 
 4. Navigate to the Custom Operation tab on the left.
@@ -66,12 +66,12 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 ![Image 2](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_5.png)
 
 5. Import the Configuration File: Click on Import .cowperation, then select the iOS_18_Siri.cowperation
-````
+
 
 <div class="content-ad"></div>
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_6.png)
 
 6. 새 Siri UI 활성화: 편집을 클릭하고 "활성화" 옵션이 선택되었는지 확인하세요.
@@ -79,7 +79,7 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 ![이미지](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_7.png)
 
 7. 조정 적용: 왼쪽에있는 "적용" 탭으로 이동하여 조정 적용 버튼을 클릭하세요. 이 과정은 시간이 걸릴 수 있습니다. 기기가 다시 시작되고 설정 화면이 표시됩니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -211,7 +211,7 @@ CREATE TABLE cities_population (
 );
 ```
 
-이제 Python에서 데이터를 첫 번째 SQL 테이블로 전송합니다:```
+이제 Python에서 데이터를 첫 번째 SQL 테이블로 전송합니다:
 
 <div class="content-ad"></div>
 
@@ -235,7 +235,7 @@ cities_info_non_rel.to_sql('cities_info',   # 파이썬에서 SQL로 데이터�
 
 첫 번째 시도는 로컬에서 이루어졌습니다. 나중에 Google Cloud Platform 인스턴스를 추가하면 "host" 필드를 편집하여 이 데이터를 클라우드에 직접 전송할 수 있습니다.
 
-SQL에 첫 번째 테이블이 생성되면 cities_info에 포함된 데이터를 검색하여 두 번째 cities_population 데이터 프레임에서 해당 cities_id 열을 인덱스로 사용할 수 있습니다:```
+SQL에 첫 번째 테이블이 생성되면 cities_info에 포함된 데이터를 검색하여 두 번째 cities_population 데이터 프레임에서 해당 cities_id 열을 인덱스로 사용할 수 있습니다:
 
 <div class="content-ad"></div>
 
@@ -565,7 +565,7 @@ from datetime import datetime
 
 ![image](/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_10.png)
 
-requirements 섹션에서는 Python 모듈이 아닌 패키지만 추가해야 합니다. 미리 알려드리자면, 여기 Python 모듈들의 종합 목록이 있습니다: [Python 모듈 목록](https://docs.python.org/3/py-modindex.html)```
+requirements 섹션에서는 Python 모듈이 아닌 패키지만 추가해야 합니다. 미리 알려드리자면, 여기 Python 모듈들의 종합 목록이 있습니다: [Python 모듈 목록](https://docs.python.org/3/py-modindex.html)
 
 <div class="content-ad"></div>
 

@@ -240,7 +240,7 @@ plt.grid(True)
 plt.show()
 ```
 
-이슈: 창 메서드와 동일한 문제가 여기에도 있습니다:```
+이슈: 창 메서드와 동일한 문제가 여기에도 있습니다:
 
 <div class="content-ad"></div>
 

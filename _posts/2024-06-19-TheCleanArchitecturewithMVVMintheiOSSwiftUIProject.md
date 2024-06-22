@@ -11,7 +11,7 @@ link: "https://medium.com/stackademic/the-clean-architecture-with-mvvm-in-the-io
 ---
 
 
-```markdown
+
 ![Clean Architecture](/assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_0.png)
 
 Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트웨어 디자인 원칙입니다. Hexagonal Architecture, Onion Architecture, Screaming Architecture 등 소프트웨어 아키텍처에 대한 몇 가지 아이디어가 있었습니다. 이러한 아키텍처들의 주요 개념은 관심사의 분리입니다.
@@ -19,11 +19,11 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 이 기사에서는 클린 아키텍처를 논의하고, 데모 프로젝트를 통해 iOS SwiftUI 앱에 Clean Architecture와 MVVM을 적용하는 방법을 살펴볼 것입니다.
 
 # 클린 아키텍처
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![그림](/assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_1.png)
 
 위 그래프에서 확인할 수 있듯이, 원들은 소프트웨어의 서로 다른 영역을 나타냅니다. 가장 바깥쪽 층은 소프트웨어의 가장 낮은 수준이며, 깊이 들어갈수록 소프트웨어의 수준이 높아집니다. 내부 층은 외부 층에 대해 아무것도 알지 못합니다. 보통, 층이 깊어질수록 해당 층은 변하기 적은 경향이 있습니다.
@@ -31,7 +31,7 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 클린 아키텍처의 주요 규칙은 내부 층에서 외부 층으로의 의존성을 갖지 않는 것입니다. 의존성은 외부 층에서 내부 층으로 연결되어야 합니다. 바깥쪽에서 안쪽으로 향하는 화살표가 의존성 규칙입니다.
 
 클린 아키텍처에는 다양한 층이 있으며, 그룹화한 후에 프레젠테이션, 도메인 및 데이터 층 세 개로 구분할 수 있습니다.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -349,7 +349,7 @@ final class DefaultProductListRepository: ProductListRepository {
 ProductListService
 
 ProductListService는 네트워크에서 제품 데이터를 가져 오는 fetchProductListFromNetwork 함수 내에서 사용되는 apiDataService에 액세스 권한이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -482,7 +482,7 @@ final class AppDIContainer {
 
 # 결론
 
-클린 아키텍처는 매우 확장 가능하고 테스트 가능하며 유지보수 가능한 소프트웨어를 구축하는 데 도움을 줍니다. 각 계층이 특정 역할을 가지고 다른 부분과 격리되도록 응용 프로그램을 여러 계층으로 분리하여 관련성을 제공합니다. 이는 재사용성의 가능성을 높이고 비즈니스 요구 사항 및 경쟁 시장의 변화에 대응할 수 있도록 보장합니다.```
+클린 아키텍처는 매우 확장 가능하고 테스트 가능하며 유지보수 가능한 소프트웨어를 구축하는 데 도움을 줍니다. 각 계층이 특정 역할을 가지고 다른 부분과 격리되도록 응용 프로그램을 여러 계층으로 분리하여 관련성을 제공합니다. 이는 재사용성의 가능성을 높이고 비즈니스 요구 사항 및 경쟁 시장의 변화에 대응할 수 있도록 보장합니다.
 
 <div class="content-ad"></div>
 

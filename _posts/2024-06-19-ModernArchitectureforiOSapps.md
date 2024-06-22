@@ -103,7 +103,7 @@ Elm 아키텍처는 웹 개발에서 잘 알려져 있지만, 모바일 개발�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-ModernArchitectureforiOSapps_3.png)
 
 지금까지 우리가 가지고 있는 내용을 정리해 봅시다:
@@ -116,7 +116,7 @@ Elm 아키텍처는 웹 개발에서 잘 알려져 있지만, 모바일 개발�
 - Reducer — Event를 Environment와 현재 State에 의해 Effect로 변환하는 "이벤트 핸들러"와 현재 State에 사이드 이펙트를 적용하여 새로운 State를 생성하는 "이펙트 핸들러" 두 가지 순수 함수를 포함하는 유한 상태 머신
 
 처음에는 조금 복잡해 보일 수 있지만, 실제로 사용하는 데 매우 쉽습니다. 특정 엔티티의 한정된 세트가 있고 각각이 특정 작업에만 책임 있기 때문입니다. 일방향 흐름이기 때문에 이를 따르고 무슨 일이 일어나고 있는지 이해하는 것이 쉽습니다. 대부분의 로직은 순수 함수이며, 진실의 단일 출처이며, 비즈니스 및 프리젠테이션 로직이 확실히 분리되어 있습니다. 이 모든 것을 고려할 때, 이 접근 방식은 정말 높은 수준의 테스트 가능성을 가지고 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -265,11 +265,11 @@ public enum SceneReducer {
 ```
 
 사용자 인터페이스와 비즈니스 로직을 연결하는 모든 것은 딱 한 가지 함수 뿐이며, 따라서 UI 부분을 다른 것으로 쉽게 대체할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 func bind(state: AnyPublisher<SceneState, Never>) -> AnyPublisher<SceneEvent, Never> {
         state
             .receive(on: DispatchQueue.main)
@@ -283,19 +283,19 @@ func bind(state: AnyPublisher<SceneState, Never>) -> AnyPublisher<SceneEvent, Ne
         
         return eventSubject.eraseToAnyPublisher()
     }
-```
+
 
 환경은 모든 종속성 및 라우팅을 포함하며, 장면 관점에서 봤을 때, 서비스 종속성과 다른 화면에서 값을 가져오는 것 사이에 기본적인 차이가 없습니다. 두 종속성 모두 순수 함수로 표현할 수 있습니다.
 
-```markdown
+
 public struct SceneEnvironment {
     let getRandomNumber: () -> AnyPublisher<Int, Never>
     let selectSomething: () -> AnyPublisher<Int?, Never>
 }
-```
+
 
 ## 추가 개발
-```  
+
 
 <div class="content-ad"></div>
 
@@ -390,7 +390,7 @@ public enum ExampleReducer {
     }
 ```
 
-The full implementation of XCTestCase for the Elm architecture can be found here.```
+The full implementation of XCTestCase for the Elm architecture can be found here.
 
 <div class="content-ad"></div>
 

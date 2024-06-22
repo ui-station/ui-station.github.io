@@ -290,7 +290,7 @@ resources:
 --encryption-provider-config=/path/to/encryption-config.yaml
 ```
 
-4. API 서버 재시작: API 서버가 새 구성을 사용하도록 합니다.```
+4. API 서버 재시작: API 서버가 새 구성을 사용하도록 합니다.
 
 <div class="content-ad"></div>
 
@@ -325,7 +325,7 @@ resources:
 --encryption-provider-config=/path/to/encryption-config.yaml
 ```
 
-5. API 서버 재시작: 구성 변경을 적용하세요.```
+5. API 서버 재시작: 구성 변경을 적용하세요.
 
 <div class="content-ad"></div>
 

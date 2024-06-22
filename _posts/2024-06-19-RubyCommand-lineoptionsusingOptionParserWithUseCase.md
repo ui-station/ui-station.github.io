@@ -62,7 +62,7 @@ link: "https://medium.com/pengenpaham/ruby-command-line-options-using-optionpars
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_1.png)
 
 6번 라인을 살펴보세요. 옵션과 인자를 사용하여 스크립트를 실행하면 모든 값을 배열 값으로 출력합니다.
@@ -73,7 +73,7 @@ link: "https://medium.com/pengenpaham/ruby-command-line-options-using-optionpars
 ```
 
 ARGV에 대해 더 많이 알고 싶다면 [이 링크](https://link-to-more-info-about-ARGV)를 확인하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -172,7 +172,7 @@ scrapper.rb:17:in `<main>': missing argument: -t (OptionParser::MissingArgument)
 
 <div class="content-ad"></div>
 
-```md
+
 ➜ ruby scrapper.rb --format HTML
 scrapper.rb:19:in `<main>': 올바르지 않은 인수입니다: --format HTML (OptionParser::InvalidArgument)
 
@@ -186,14 +186,14 @@ scrapper.rb:19:in `<main>': 인수가 누락되었습니다: --format (OptionPar
 ➜ ruby scrapper.rb -f JSON
 []
 {:format=>"JSON"}
-```
+
 
 ## 상세모드
 
 마지막으로 --verbose라는 옵션이 있으면 15번 라인에 이것을 추가하세요.
 
 ![Ruby Command Line Options Using OptionParser with Use Case](/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_6.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -232,7 +232,7 @@ Usage: scrapper [options]
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_7.png)
 
 Try it out:
@@ -247,7 +247,7 @@ Try it out:
 ```
 
 # 결론
-```
+
 
 <div class="content-ad"></div>
 

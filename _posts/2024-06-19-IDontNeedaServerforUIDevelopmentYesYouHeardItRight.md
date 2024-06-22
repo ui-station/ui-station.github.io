@@ -222,7 +222,7 @@ empty_shows.json
 {}
 ```
 
-여기서 /v1/biggboss/shows API에 대해 shows-empty가 요구되는 경우 empty_shows.json 파일을 설정하고 있습니다.```
+여기서 /v1/biggboss/shows API에 대해 shows-empty가 요구되는 경우 empty_shows.json 파일을 설정하고 있습니다.
 
 <div class="content-ad"></div>
 
@@ -273,7 +273,7 @@ shows-reviewers-only시나리오와 일치하도록 스텁 구성
 }
 ```
 
-only_reviewers.json```
+only_reviewers.json
 
 <div class="content-ad"></div>
 
@@ -314,7 +314,7 @@ only_reviewers.json```
 - /scenario/shows/reviewers를 호출하여 “shows-reviewers-only” 시나리오를 트리거
 - 리뷰어만 내보내는 JSON 응답을 받기 위해 클라이언트 API /v1/biggboss/shows 호출
 
-동일한 방식으로 “N”개의 시나리오와 해당 클라이언트 스텁을 구성할 수 있습니다.```
+동일한 방식으로 “N”개의 시나리오와 해당 클라이언트 스텁을 구성할 수 있습니다.
 
 <div class="content-ad"></div>
 

@@ -56,7 +56,7 @@ struct Post: Identifiable, Codable {
 
 <div class="content-ad"></div>
 
-```markdown
+
 // Services/ApiEndpoints.swift
 
 import Foundation
@@ -67,9 +67,9 @@ class ApiEndpoints {
     static var posts: String { return "\(baseURL)/posts" }
     static func post(id: Int) -> String { return "\(baseURL)/posts/\(id)" }
 }
-```
 
-```markdown
+
+
 // Services/ApiService.swift
 
 import Foundation
@@ -118,12 +118,12 @@ class ApiService {
         return makeRequest(url: url, method: "DELETE")
     }
 }
-```
+
 
 # ViewModels
 
 이제, PostViewModel을 만들어서 게시물을 가져오고 만들어봅시다.
-```
+
 
 <div class="content-ad"></div>
 

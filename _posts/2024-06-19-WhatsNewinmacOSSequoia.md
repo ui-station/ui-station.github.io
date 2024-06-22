@@ -143,15 +143,15 @@ Apple 실리콘의 힘을 빌려, Apple Intelligence는 언어와 이미지를 �
 - Mail 앱의 중요 메시지는 가장 긴급한 이메일(이벤트나 탑승권과 같은)을 보여주는 인박스 상단에 새 섹션을 추가합니다. Mail 앱은 또한 사용자가 전체 이메일을 열어 읽을 필요 없이 이메일 요약을 표시합니다.
 - 스마트 답장은 이메일의 질문을 분석하고 식별하여 빠른 응답을 위한 제안을 제공하며, 모든 것이 답변되도록 보장합니다.
 
-```markdown
+
 <img src="/assets/img/2024-06-19-WhatsNewinmacOSSequoia_5.png" />
-```
+
 
 ### 2. 이미지 만들기
 
-```markdown
+
 <img src="/assets/img/2024-06-19-WhatsNewinmacOSSequoia_6.png" />
-```
+
 
 <div class="content-ad"></div>
 

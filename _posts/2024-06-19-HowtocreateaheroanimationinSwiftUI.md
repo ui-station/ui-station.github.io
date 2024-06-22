@@ -71,7 +71,7 @@ var body: some View {
 @Namespace var animation
 ```
 
-다음으로, matchedGeometryEffect를 두 사각형에 적용하겠습니다. 여기서, 두 사각형에 동일한 id를 설정하여 서로 일치시킵니다. 그리고 이제 우리의 네임스페이스를 할당합니다. 추가로, 크기, 위치 또는 둘 다(기본값)에 대한 일치 여부를 정의하기 위해 매개변수 속성을 정의할 수 있습니다:```
+다음으로, matchedGeometryEffect를 두 사각형에 적용하겠습니다. 여기서, 두 사각형에 동일한 id를 설정하여 서로 일치시킵니다. 그리고 이제 우리의 네임스페이스를 할당합니다. 추가로, 크기, 위치 또는 둘 다(기본값)에 대한 일치 여부를 정의하기 위해 매개변수 속성을 정의할 수 있습니다:
 
 <div class="content-ad"></div>
 
@@ -87,7 +87,7 @@ var body: some View {
 - 상태 변수 정의
 - 정의된 상태 변수에 따라 두 개의 뷰를 구별할 수 있는 if-else 블록 구현
 - 같은 id를 사용하여 matched 되어야 하는 뷰에 modifier를 첨부
-- animation 블록 내에서 상태 변경하기```
+- animation 블록 내에서 상태 변경하기
 
 <div class="content-ad"></div>
 

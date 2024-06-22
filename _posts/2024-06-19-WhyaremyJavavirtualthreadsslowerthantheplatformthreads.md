@@ -48,7 +48,7 @@ Spring Boot에서 Java 가상 스레드를 활성화하려면 "application.prope
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 spring.threads.virtual.enabled=true // 클릭 한 번으로 쉽게 설정 !!
 ```
@@ -169,7 +169,7 @@ JNIEXPORT jint JNICALL Java_calculateFee (JNIEnv *env, jobject obj, jint a, jint
 ```
 
 - 외부 함수: 다른 프로그래밍 언어로 작성된 함수로서, Foreign Function Interface (FFI)를 통해 가상 스레드에 노출된 함수입니다. FFIs는 다른 언어로 작성된 코드들이 함께 동작할 수 없는 상황에서 사용됩니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -189,7 +189,7 @@ public interface PythonFunctions extends Library {
 - -Djdk.tracePinnedThreads=full: 고정된 상태에서 스레드가 고정되어 있을 때 완전한 스택 추적을 출력하며, 네이티브 프레임과 모니터를 보유한 프레임을 강조합니다.
 - -Djdk.tracePinnedThreads=short: 문제가 있는 프레임만을 포함하여 출력을 제한합니다.
 
-로그에는 가상 스레드 내에서의 메서드 호출의 스택 추적이 표시됩니다. 이 스레드는 JDBC(Java Database Connectivity) 및 특히 MySQL 연결과 상호 작용하는 메서드를 실행합니다.```
+로그에는 가상 스레드 내에서의 메서드 호출의 스택 추적이 표시됩니다. 이 스레드는 JDBC(Java Database Connectivity) 및 특히 MySQL 연결과 상호 작용하는 메서드를 실행합니다.
 
 <div class="content-ad"></div>
 

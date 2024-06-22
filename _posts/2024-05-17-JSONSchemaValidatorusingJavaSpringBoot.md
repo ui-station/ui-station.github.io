@@ -31,7 +31,7 @@ SpringBoot와 Json Schema를 사용하는 단계별 가이드입니다. 이를 �
 
 <div class="content-ad"></div>
 
-```md
+
 ![image](/assets/img/2024-05-17-JSONSchemaValidatorusingJavaSpringBoot_0.png)
 
 알림: spring-boot 및 java의 모든 버전 및 프로젝트 유형을 선택할 수 있습니다.
@@ -169,7 +169,7 @@ public class JsonSchemaController {
 }
 ```
 
-## 7. Start the SpringBoot Application and start sending requests.```
+## 7. Start the SpringBoot Application and start sending requests.
 
 <div class="content-ad"></div>
 

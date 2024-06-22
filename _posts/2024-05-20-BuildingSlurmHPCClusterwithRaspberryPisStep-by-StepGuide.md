@@ -132,7 +132,7 @@ EOF"
 $ sudo exportfs -ra
 ```
 
-노드에 방화벽이 활성화되어 있는 경우 NFS 포트를 열어야 할 수 있습니다. NFSv4는 TCP 및 UDP 포트 2049를 사용하며, NFSv3는 추가 포트를 사용합니다. 방화벽 구성에 따라 ufw 또는 iptables을 사용하여 이러한 포트를 열 수 있습니다.```
+노드에 방화벽이 활성화되어 있는 경우 NFS 포트를 열어야 할 수 있습니다. NFSv4는 TCP 및 UDP 포트 2049를 사용하며, NFSv3는 추가 포트를 사용합니다. 방화벽 구성에 따라 ufw 또는 iptables을 사용하여 이러한 포트를 열 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -328,7 +328,7 @@ StorageLoc=slurm_acct_db
 EOF"
 ```
 
-이 파일은 Slurm 데이터베이스 데몬 구성 정보를 설명합니다. slurmdbd가 실행되는 컴퓨터에만 존재해야 하며, slurm 사용자만 읽을 수 있어야 합니다.```
+이 파일은 Slurm 데이터베이스 데몬 구성 정보를 설명합니다. slurmdbd가 실행되는 컴퓨터에만 존재해야 하며, slurm 사용자만 읽을 수 있어야 합니다.
 
 <div class="content-ad"></div>
 
@@ -579,7 +579,7 @@ PARTITION AVAIL  TIMELIMIT  NODES  STATE NODELIST
 batch*       up 30-00:00:0      1   idle rpnode[01]
 ```
 
-이제 간단한 Slurm srun 명령어를 실행하고 출력을 확인해봅시다.```
+이제 간단한 Slurm srun 명령어를 실행하고 출력을 확인해봅시다.
 
 <div class="content-ad"></div>
 
@@ -628,7 +628,7 @@ $ srun -w rpnode02 hostname
 rpnode02
 ```
 
-As you can see, this job was executed on the second compute node, so it returns the hostname rpnode02 this time.```
+As you can see, this job was executed on the second compute node, so it returns the hostname rpnode02 this time.
 
 <div class="content-ad"></div>
 

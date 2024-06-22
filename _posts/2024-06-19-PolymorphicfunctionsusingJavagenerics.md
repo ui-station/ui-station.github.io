@@ -31,7 +31,7 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-PolymorphicfunctionsusingJavagenerics_1.png)
 
 답은: no입니다. 이 코드는 다음 코드 스니펫에서 강조하는 것처럼 Dog 추상화 자체로 쉽게 바꿀 수 있습니다. 이러한 경우에는 제네릭을 사용할 필요가 없습니다.
@@ -39,7 +39,7 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 ![image](/assets/img/2024-06-19-PolymorphicfunctionsusingJavagenerics_2.png)
 
 그렇다면, Java 제네릭이 언제 진정으로 유용한가요? 먼저, 클래스 제네릭 유형과 메서드 제네릭 유형 두 가지 유형의 일반 유형이 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

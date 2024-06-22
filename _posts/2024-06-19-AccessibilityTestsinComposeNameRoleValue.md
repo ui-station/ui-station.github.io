@@ -83,7 +83,7 @@ link: "https://medium.com/proandroiddev/accessibility-tests-in-compose-name-role
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Accessibility test](/assets/img/2024-06-19-AccessibilityTestsinComposeNameRoleValue_3.png)
 
 우리는 아이템에 이름(즉, "이 항목 즐겨찾기")과 버튼 역할, 그리고 해당 항목이 즐겨찾기되었는지 여부를 알리는 상태가 있는지 확인하고 싶습니다.
@@ -91,7 +91,7 @@ link: "https://medium.com/proandroiddev/accessibility-tests-in-compose-name-role
 다음 테스트는 다음을 보장합니다:
 
 다시 말하지만, 이름의 설정과 확인은 다른 두 구성 요소와 유사합니다. 그러나 구성 요소가 버튼 역할을 갖고 있는지 확인하려면 SemanticsMatcher를 사용해야 합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -69,7 +69,7 @@ GROUP BY sales_manager
 
 <img src="/assets/img/2024-05-17-OneTime-SavingSQLKeywordYouNeedtoKnowin2024_3.png" />
 
-그러나 이 출력을 받은 후 이 두 제품 카테고리에서 'Sofia'나 'Pablo'가 모든 달에 얼마나 많은 제품을 배송했는지 정확히 알고 싶어질 것입니다.```
+그러나 이 출력을 받은 후 이 두 제품 카테고리에서 'Sofia'나 'Pablo'가 모든 달에 얼마나 많은 제품을 배송했는지 정확히 알고 싶어질 것입니다.
 
 <div class="content-ad"></div>
 
@@ -115,7 +115,7 @@ GROUP BY sales_manager;
 
 <div class="content-ad"></div>
 
-```md
+
 ![SQL Keyword](/assets/img/2024-05-17-OneTime-SavingSQLKeywordYouNeedtoKnowin2024_5.png)
 
 많은 노력이 필요했죠, 맞죠?

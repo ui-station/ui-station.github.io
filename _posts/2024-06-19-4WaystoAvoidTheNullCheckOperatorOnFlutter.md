@@ -11,7 +11,7 @@ link: "https://medium.com/@mario-gunawan/4-ways-to-avoid-the-null-check-operator
 ---
 
 
-```markdown
+
 ![4 Ways to Avoid the Null Check Operator on Flutter](/assets/img/2024-06-19-4WaystoAvoidTheNullCheckOperatorOnFlutter_0.png)
 
 널 체크 연산자는 컴파일러에게, 널일 수 있는 변수가 실제로 널이 아님을 알려주는 연산자입니다. 이것은 변수 뒤에 느낌표를 붙여서 수행됩니다. 예를 들어, 아래 코드는 (!) 없이 실행시 오류를 발생시킵니다:
@@ -25,7 +25,7 @@ String getString() {
 ```
 
 이는 기본적으로 "믿어봐, 안전해!"라고 컴파일러에 말하며, 코드의 오류를 평가하는 린터가(위의 예제에서는 널이 아닌 함수에서 널이 가능한 문자열을 반환하는 부분) 오류를 발생시키는 것을 방지합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -33,7 +33,7 @@ String getString() {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-4WaystoAvoidTheNullCheckOperatorOnFlutter_1.png)
 
 문제에서 쉽게 벗어나는 방법입니다. 기본적으로 널 병합 연산자가 하는 일은 연산의 왼쪽 부분을 확인합니다. 만약 왼쪽 부분이 널이 아니라면 그 값을 사용하고, 그렇지 않다면 대신 오른쪽 부분을 사용합니다. 반환 값인 nullableString ?? “”은 다음과 같이 해석할 수 있습니다:
@@ -48,11 +48,11 @@ else {
 ```
 
 ## 전략 2: 선택적 체이닝 (?.)과 널 병합 (??) 사용하기
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-4WaystoAvoidTheNullCheckOperatorOnFlutter_2.png)
 
 옵셔널 체이닝 연산자는 오브젝트가 널일 수 있는 상황에서 유용합니다. nullableString?.contains("haha") ?? false 코드는 다음과 같이 해석할 수 있습니다:
@@ -65,7 +65,7 @@ if(nullableString != null) {
 ```
 
 또한 이 연산자를 사용하여 조건부로 작업을 호출할 수도 있습니다. 예를 들어 API에서 가져온 널 가능한 데이터 페쳐가 있다면 다음과 같이 호출할 수 있습니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -79,7 +79,7 @@ dataFetcher?.getData();
 dataFetcher != null ? dataFetcher.getData() : undefined;
 ```
 
-## 전략 3: 삼항 연산자(?) 사용하기```
+## 전략 3: 삼항 연산자(?) 사용하기
 
 <div class="content-ad"></div>
 
@@ -95,7 +95,7 @@ condition ? valueIfTrue : valueIfFalse
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-4WaystoAvoidTheNullCheckOperatorOnFlutter_4.png)
 
 그래서 제 시니어로부터 받은 피드백을 기반으로, 긴 삼항 연산 대신 간단한 if-else 문을 사용하는 것이 더 나은 것 같아요. 그들의 규칙은 한 줄이라면 삼항 연산을 사용하는 것이라고 합니다. 저도 그것에 동의합니다.
@@ -103,7 +103,7 @@ condition ? valueIfTrue : valueIfFalse
 ## 전략 4: 배열에 조건 스프레딩(…?) 사용하기 
 
 ![image](/assets/img/2024-06-19-4WaystoAvoidTheNullCheckOperatorOnFlutter_5.png)
-```
+
 
 <div class="content-ad"></div>
 

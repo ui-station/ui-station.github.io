@@ -11,7 +11,7 @@ link: "https://medium.com/@peterfraedrich/its-time-for-a-new-programming-languag
 ---
 
 
-```
+
 ![New Programming Language](/assets/img/2024-06-19-ItsTimeforaNewProgrammingLanguage_0.png)
 
 요즘은 프로그래밍 언어의 역사에서 다른 모든 시점과 비교할 때 선택의 여지가 많아서 선택 장애를 느낍니다. 언어 디자인의 발전, LLVM과 같은 도구 상자, 인터넷을 통한 프로그래밍의 민주화, 그리고 많은 다른 요인들이 새로운 언어들의 황금 시대로 이끌고 있습니다. 매주 Zig, Deno, Nim, Rust, Flutter, Kotlin, Go, Crystal, Carbon 등 많은 새로운 언어가 인기를 얻는 것을 볼 수 있습니다. 그러나 실제로 사용되는 언어들을 조사해 보면, 대부분 계속해서 JavaScript, TypeScript, Python, Java, Ruby, PHP 등 평범한 언어들이 사용되고 있습니다. 이에 대한 이유는 새로운 언어들이 항상 등장하지만, 일부는 혁신적인 디자인 결정이나 기본 기능을 갖추고 있더라도, 그중에서 심각한 제품 수준의 작업과 아키텍처를 위해 설계된 것이 거의 없다는 것입니다. 저는 그것들을 '장난감 언어'라고 부르기는 싫지만, Deno나 Crystal 같은 언어로 작동하는 심각한 제품 서비스가 곧 나올 것으로 생각되지는 않습니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@peterfraedrich/its-time-for-a-new-programming-languag
 "그러면 평범한 언어들에 무엇이 문제인가요?" 라고 물어볼 수도 있습니다.
 
 그런데 그것은 정말 좋은 질문일 것입니다. 솔직히 말해서, 문제는 그들이 무엇이 잘못됐는지보다는, 어떻게 현재의 아키텍처와 생태계에 적합하며 어떤 종류의 작업을 수행할지입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -65,13 +65,13 @@ link: "https://medium.com/@peterfraedrich/its-time-for-a-new-programming-languag
 
 간단히 말해서 루비는 💩야.
 
-```markdown
+
 # PHP
 
 PHP는 올바르게 하는 것들에 대해 모두, 보안 취약점과 성능 병목 현상의 거대한 혼란입니다. PHP의 멋진 점은 HTTP 요청의 맥락에서 독점적으로 실행될 수 있다는 것이고, 그게 멋진 점의 전부다.
 
 PHP의 구문은 말할 수 없을 만큼 이상해. .를 사용한 문자열 연결? 욕나올 정도로 추해.
-```
+
 
 <div class="content-ad"></div>
 

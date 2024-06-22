@@ -41,7 +41,7 @@ ViewModel 코드를 살펴보면 ComponentActivity 생성자 내부의 활동/�
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-EverwonderwhyViewModelretaindataonlyforconfigurationchanges_4.png)
 
 ComponentActivity는 Fragment 및 AppCompactActivity의 상위 클래스입니다. 라이프사이클 콜백이 발생할 때마다 트리거되며 onDestroy() 콜백이 발생하고 구성 변경이 아닌 경우에만 ViewModelStore를 지우게 됩니다.
@@ -49,7 +49,7 @@ ComponentActivity는 Fragment 및 AppCompactActivity의 상위 클래스입니�
 각 활동/프래그먼트마다 ViewModel 인스턴스를 유지하는 것은 실제로 해결되는 사용 사례가 없는 상태에서 더 많은 메모리를 차지하는 것이 맞다고 생각됩니다. 구성 변경 이상으로 동일한 ViewModel 인스턴스를 사용하고 싶은 사용 사례를 생각해 볼 수 있나요?
 
 ![이미지](/assets/img/2024-06-19-EverwonderwhyViewModelretaindataonlyforconfigurationchanges_5.png)
-```
+
 
 <div class="content-ad"></div>
 

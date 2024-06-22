@@ -11,7 +11,7 @@ link: "https://medium.com/@patrykrogedu/what-are-test-doubles-and-how-to-use-the
 ---
 
 
-```markdown
+
 ![Test Doubles](/assets/img/2024-06-19-WhatAreTestDoublesandHowToUseTheminRSpec3_0.png)
 
 # 소프트웨어 개발에서의 테스트 더블 이해
@@ -19,7 +19,7 @@ link: "https://medium.com/@patrykrogedu/what-are-test-doubles-and-how-to-use-the
 소프트웨어에 대한 테스트를 작성할 때, 종종 실제 객체나 의존성의 동작을 시뮬레이션하기 위해 "테스트 더블" 또는 "모의 객체"를 만들어야 합니다. 각각 특정 목적을 위해 사용되는 다양한 종류의 테스트 더블이 있습니다.
 
 # 테스트 더블의 종류
-```
+
 
 <div class="content-ad"></div>
 

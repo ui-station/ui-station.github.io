@@ -159,7 +159,7 @@ Poetry가 도와줄 수있는 세 가지 주요 작업은 빌드, 게시 및 추
 
 <div class="content-ad"></div>
 
-```
+
 ![Create an AI-Driven Movie Quiz with GeminiLL, MPython, FastAPI, Pydantic, RAG, and more](/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_2.png)
 
 시를 사용하면 가상 환경을 쉽게 생성할 수 있어요. 기본적으로 시는 시스템 내의 중앙 폴더에 가상 환경을 만들어요. 그러나 저와 같이 프로젝트 폴더 내에서 가상 환경을 사용하길 원한다면 간단한 설정 변경이 필요해요:
@@ -195,7 +195,7 @@ poetry add jinja2
 
 <div class="content-ad"></div>
 
-```md
+
 [tool.poetry]
 name = "gemini-movie-detectives-api"
 version = "0.1.0"
@@ -219,7 +219,7 @@ pre-commit = "^3.7.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-```
+
 
 # FastAPI로 API 만들기
 

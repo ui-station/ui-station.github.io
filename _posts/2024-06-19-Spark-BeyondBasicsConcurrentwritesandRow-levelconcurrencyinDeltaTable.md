@@ -11,7 +11,7 @@ link: "https://medium.com/towardsdev/spark-beyond-basics-concurrent-writes-and-r
 ---
 
 
-```markdown
+
 ![image](/assets/img/2024-06-19-Spark-BeyondBasicsConcurrentwritesandRow-levelconcurrencyinDeltaTable_0.png)
 
 Databricks와 델타 테이블은 데이터 엔지니어의 삶을 쉽게 만들어줍니다. 😍🥰
@@ -19,7 +19,7 @@ Databricks와 델타 테이블은 데이터 엔지니어의 삶을 쉽게 만들
 하지만 이 엔지니어들은 어쩔 수 없이 그들에게 맞서려고 할 것입니다. 😒😒
 
 델타 테이블이 제공하는 ACID 속성에 대해 이미 알고 있다면 좋겠지만(알지 못하신다고요? 읽어보세요), 이러한 속성은 델타 테이블에서 동시에 발생하는 쓰기 작업을 다루지 않습니다.
-```
+
 
 <div class="content-ad"></div>
 

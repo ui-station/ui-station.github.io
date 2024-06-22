@@ -11,7 +11,7 @@ link: "https://medium.com/proandroiddev/creating-custom-pdfviewer-in-jetpack-com
 ---
 
 
-```markdown
+
 ![PDFViewer](/assets/img/2024-06-19-CreatingCustomPDFViewerinJetpackComposeAndroid_0.png)
 
 PDF는 우리가 매일 사용하는 가장 일반적인 파일 형식 중 하나입니다. 그러나 Jetpack Compose에서 공식 PDF 뷰어가 아직 없습니다. 그렇다면 왜 만들지 않을까요?
@@ -19,7 +19,7 @@ PDF는 우리가 매일 사용하는 가장 일반적인 파일 형식 중 하�
 ## 어떻게 가능한가요?
 
 우리의 계획 개요를 살펴봅시다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -50,7 +50,7 @@ val connection = URL(url).openConnection() as HttpURLConnection
 connection.connect()
 ```
 
-위의 코드들이 작동하여 PDF 파일을 가져올 것입니다. 작업이 완료되었고 필요한 Input stream을 얻었는지 확인해보세요.```
+위의 코드들이 작동하여 PDF 파일을 가져올 것입니다. 작업이 완료되었고 필요한 Input stream을 얻었는지 확인해보세요.
 
 <div class="content-ad"></div>
 
@@ -264,7 +264,7 @@ Image(
 ```
 
 나머지 부분은 상당히 직관적이고 이해하기 쉽습니다.
-```
+
 
 <div class="content-ad"></div>
 

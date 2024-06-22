@@ -11,7 +11,7 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 ---
 
 
-```md
+
 ![Surrogate Key](/assets/img/2024-05-18-SpeedingUpPowerBITheCaseforSurrogateKeysinDimensionalModeling_0.png)
 
 # 문제 설명
@@ -19,7 +19,7 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 최근에 나는 대체키를 조합키 대신 사용하는 것을 연구하는 업무를 맡았습니다. 지금까지 우리 팀은 레코드를 고유하게 나타내고 차원과 사실을 차원 모델에 연결하는 데 조합 키를 사용했습니다. 조합 키는 작업을 수행했지만 Power BI 측에서 쿼리 실행 시간이 만족스럽지 않았습니다. 조인이 오랜 시간이 걸렸는데 그 이유는 조합된 키의 열 크기가 큰 것입니다. Power BI에서는 대규모 관계(키) 열이있을 때 쿼리가 훨씬 느리게 실행됩니다.
 
 내 목표는 Power BI에서 쿼리 실행 시간을 줄일 방법을 찾는 것이었습니다. 차원과 사실을 결합하기 위해 대체 키를 조합 키로 교체하는 것은 제가 자세히 탐색한 대안 중 하나였습니다. 이 기사에서는 대체 키의 정의, 목적 및 구현하는 대안 방법에 대해 안내하겠습니다. 실용적인 예제는 PySpark에서 보여집니다.
-```
+
 
 <div class="content-ad"></div>
 

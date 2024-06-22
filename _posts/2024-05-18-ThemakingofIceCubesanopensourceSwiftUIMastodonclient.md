@@ -272,13 +272,13 @@ AvatarView(url: notification.account.avatar)
 
 <div class="content-ad"></div>
 
-```md
+
 Button {
    routerPath.presentedSheet = .addAccount
 } label: {
    Image(systemName: "person.badge.plus")
 }
-```
+
 
 그럼 이만!
 

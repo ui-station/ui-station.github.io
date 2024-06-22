@@ -106,7 +106,7 @@ void updateBatteryLevel() {
   BLE.advertise();
 ```
 
-“setLocalName” 메서드는 광고 패키지 내의 모든 근처 장치로 전송될 이름 정보를 정의합니다. 이것은 예를 들어 모바일 폰과 연결하고 싶을 때 장치를 식별하는 데 도움이 됩니다. 더 자세한 정보는 “ArduinoBLE” 라이브러리 페이지를 확인해 주세요.```
+“setLocalName” 메서드는 광고 패키지 내의 모든 근처 장치로 전송될 이름 정보를 정의합니다. 이것은 예를 들어 모바일 폰과 연결하고 싶을 때 장치를 식별하는 데 도움이 됩니다. 더 자세한 정보는 “ArduinoBLE” 라이브러리 페이지를 확인해 주세요.
 
 <div class="content-ad"></div>
 
@@ -321,7 +321,7 @@ defaultConfig {
 ...
 ```
 
-Android 12(API 레벨 31 미만) 미만의 기기를 사용하려면 다른 매니페스트 설정이 필요합니다:```
+Android 12(API 레벨 31 미만) 미만의 기기를 사용하려면 다른 매니페스트 설정이 필요합니다:
 
 <div class="content-ad"></div>
 
@@ -377,7 +377,7 @@ class MainActivity: FlutterActivity() {
     }
 }
 ```
-그리고 "android/app/build.gradle"에 "rxandroidble2" 종속성을 추가해야 합니다.```
+그리고 "android/app/build.gradle"에 "rxandroidble2" 종속성을 추가해야 합니다.
 
 <div class="content-ad"></div>
 
@@ -567,7 +567,7 @@ void _onScanUpdate(DiscoveredDevice d) {
 }
 ```
 
-발견된 장치에 연결하려면 해당 ID를 사용해야 합니다. Android에서는 MAC 주소이고, iOS에서는 UUID입니다. 나중에 사용하기 위해 영구적으로 저장하려고 할 때, iOS와 Android 모두 시간이 지남에 따라 이들이 바뀔 수 있으므로 주의해야 합니다.```
+발견된 장치에 연결하려면 해당 ID를 사용해야 합니다. Android에서는 MAC 주소이고, iOS에서는 UUID입니다. 나중에 사용하기 위해 영구적으로 저장하려고 할 때, iOS와 Android 모두 시간이 지남에 따라 이들이 바뀔 수 있으므로 주의해야 합니다.
 
 <div class="content-ad"></div>
 

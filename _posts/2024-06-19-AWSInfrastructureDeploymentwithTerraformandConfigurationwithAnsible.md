@@ -156,7 +156,7 @@ resource "aws_route_table_association" "public-subnets-asso" {
 
 ## 6. 보안 그룹 구성:
 
-EC2 인스턴스로의 들어오고 나가는 트래픽을 제어하기 위해 보안 그룹 규칙을 지정합니다. 이렇게 하면 사전 정의된 규칙 세트에 따라 액세스를 제한하여 네트워크 보안이 강화되며 잠재적인 보안 취약점을 완화할 수 있습니다.```
+EC2 인스턴스로의 들어오고 나가는 트래픽을 제어하기 위해 보안 그룹 규칙을 지정합니다. 이렇게 하면 사전 정의된 규칙 세트에 따라 액세스를 제한하여 네트워크 보안이 강화되며 잠재적인 보안 취약점을 완화할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -200,7 +200,7 @@ resource "aws_vpc_security_group_egress_rule" "sg_eg_rule" {
 
 ## 7. 데이터 소스를 활용한 AMI 구성:
 
-Terraform의 데이터 소스를 활용하여 지정된 필터에 따라 기존 AWS AMI에 대한 정보를 가져올 수 있습니다. 이러한 필터는 지역, 운영 체제 및 아키텍처와 같은 미리 정의된 것으로 구성됩니다. 이는 EC2 인스턴스에 가장 적합한 AMI를 동적으로 선택함으로써 배포 간의 호환성 및 일관성을 보장합니다.```
+Terraform의 데이터 소스를 활용하여 지정된 필터에 따라 기존 AWS AMI에 대한 정보를 가져올 수 있습니다. 이러한 필터는 지역, 운영 체제 및 아키텍처와 같은 미리 정의된 것으로 구성됩니다. 이는 EC2 인스턴스에 가장 적합한 AMI를 동적으로 선택함으로써 배포 간의 호환성 및 일관성을 보장합니다.
 
 <div class="content-ad"></div>
 
@@ -236,7 +236,7 @@ data "aws_ami" "rhel9" {
 
 ## 8. EC2 인스턴스 프로비저닝:
 
-인스턴스 유형, 키페어, 보안 그룹을 포함한 EC2 인스턴스 구성을 정의합니다. Terraform은 VPC 내에서 EC2 인스턴스를 프로비저닝하여 지정된 구성을 준수하면서 연결성과 리소스 격리를 보장합니다.```
+인스턴스 유형, 키페어, 보안 그룹을 포함한 EC2 인스턴스 구성을 정의합니다. Terraform은 VPC 내에서 EC2 인스턴스를 프로비저닝하여 지정된 구성을 준수하면서 연결성과 리소스 격리를 보장합니다.
 
 <div class="content-ad"></div>
 
@@ -248,7 +248,7 @@ data "aws_ami" "rhel9" {
 
 이 코드는 Terraform을 사용하여 AWS EC2 인스턴스를 생성하는 예시입니다. 우리는 AMI ID, 인스턴스 유형, 키 이름, 서브넷 ID, 보안 그룹 ID 등을 정의하고 있습니다. 이를 통해 인프라스트럭처 스택에 EC2 인스턴스를 통합할 수 있습니다. 태그를 지정하여 리소스를 식별할 수도 있습니다.
 
-```markdown
+
 테이블
 ------
 제목  | 설명
@@ -261,7 +261,7 @@ VPC 보안 그룹 ID | aws_security_group.sg.id
 퍼블릭 IP 주소 연결 | true
 
 태그 :
-```
+
 
 <div class="content-ad"></div>
 
@@ -308,7 +308,7 @@ terraform.exe apply
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![AWS Infrastructure Deployment with Terraform and Configuration with Ansible 7](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_7.png)
 
 ![AWS Infrastructure Deployment with Terraform and Configuration with Ansible 8](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_8.png)
@@ -316,11 +316,11 @@ terraform.exe apply
 # Let’s Go on our AWS Console to verify this deployment.
 
 ## VPC ARCHITECTURE:
-```  
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_9](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_9.png)
 
 ![AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_10](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_10.png)
@@ -328,7 +328,7 @@ terraform.exe apply
 ## SECURITY GROUP :
 
 ![AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_11](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_11.png)
-```  
+
 
 <div class="content-ad"></div>
 
@@ -376,7 +376,7 @@ vim <file-name>.yml
 ![AWS Infrastructure Deployment with Terraform and Configuration with Ansible](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_15.png)
 
 ![AWS Infrastructure Deployment with Terraform and Configuration with Ansible](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_16.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -459,7 +459,7 @@ vim <file-name>.yml
 - 아파치 서비스 시작.
 
 ## ANSIBLE PLAYBOOK 실행하기
-```
+
 
 <div class="content-ad"></div>
 
@@ -475,7 +475,7 @@ ansible-playbook <file-name>.yml
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![AWS Infrastructure Deployment with Terraform and Configuration with Ansible](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_19.png)
 
 # 결론:
@@ -483,4 +483,3 @@ ansible-playbook <file-name>.yml
 요약하면, Terraform과 Ansible의 통합은 AWS 인프라 자동화에서 강력한 패러다임 변화를 나타냅니다. 인프라 프로비저닝에 Terraform을 활용하고 구성 관리에는 Ansible을 활용함으로써, 조직은 클라우드 배포에서 전례 없는 민첩성, 확장성 및 신뢰성을 달성할 수 있습니다. 이 통합 접근 방식을 통해 팀은 DevOps 성숙도로 나아가는 여정을 가속화하고 클라우드 자동화의 모든 잠재력을 발휘할 수 있습니다.
 
 오늘 Terraform과 Ansible의 힘을 받아 AWS 인프라 배포 및 구성 워크플로를 혁신하세요! 🚀🔧
-```

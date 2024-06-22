@@ -549,7 +549,7 @@ train_mental_health_model();
 
 저는 세밀하게 튜닝된 모델을 Hugging Face에 푸시했어요. 따라서 세밀 튜닝 과정을 건너뛰고 싶다면 거기서 모델을 가져올 수 있어요.
 
-![Fine-tuned model](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_13.png)```
+![Fine-tuned model](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_13.png)
 
 <div class="content-ad"></div>
 

@@ -41,12 +41,12 @@ implementation "androidx.work:work-runtime-ktx:2.7.1"
 
 테이블 태그를 마크다운 형식으로 변경해주세요.
 
-```md
+
 | Header One | Header Two | Header Three  |
 | ---------- | ---------- | ------------- |
 | Row 1      | Data 1     | Description 1 |
 | Row 2      | Data 2     | Description 2 |
-```
+
 
 <div class="content-ad"></div>
 
@@ -88,7 +88,7 @@ WorkManager.getInstance(context)
     .enqueue()
 ```
 
-3. Observing Work Status: You can observe the status of your work requests using LiveData:```
+3. Observing Work Status: You can observe the status of your work requests using LiveData:
 
 <div class="content-ad"></div>
 

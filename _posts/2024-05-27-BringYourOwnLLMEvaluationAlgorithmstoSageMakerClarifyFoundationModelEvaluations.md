@@ -168,7 +168,7 @@ class CustomEvaluator(EvalAlgorithmInterface):
 - evaluate(): 정의한 평가 알고리즘으로 DataConfig 객체 전체를 평가합니다.
 - evaluate_sample(): 전달한 단일 데이터 포인트를 평가합니다. 독성의 경우에는 모델 출력만 필요하지만, 다른 알고리즘의 경우에는 목표 및 모델 출력이 모두 필요할 수 있습니다.
 
-먼저 하나의 데이터 포인트에 대한 evaluate_sample()을 정의합니다:```
+먼저 하나의 데이터 포인트에 대한 evaluate_sample()을 정의합니다:
 
 <div class="content-ad"></div>
 

@@ -82,7 +82,7 @@ Relay의 메인 게임 네트워크 코드를 위한 가장 인기 있는 두 �
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_3.png)
 
 Photon Realtime은 멀티플레이어 게임용 핵심 레이어이자(그리고 Photon의 더 복잡한 네트워크 솔루션에서도) 플레이어 매칭 및 확장 가능한 방식으로 빠른 통신과 같은 문제를 다룹니다. Photon Realtime은 게임에서뿐만 아니라 더 구체적인 멀티플레이어 솔루션에서도 사용됩니다.
@@ -90,7 +90,7 @@ Photon Realtime은 멀티플레이어 게임용 핵심 레이어이자(그리고
 Photon Realtime은 퓨전이나 퀀텀 솔루션에서 찾을 수 있는 게임 상태 및 시뮬레이션 동기화 메커니즘을 포함하지 않고 대신 네트워크 상의 메시지 전송에 초점을 맞춥니다.
 
 Photon Realtime이라는 용어는 또한 클라이언트와 서버 간 상호 작용을 정의하는 API, 도구 및 서비스의 포괄적인 프레임워크를 포함합니다.
-```
+
 
 <div class="content-ad"></div>
 

@@ -31,23 +31,23 @@ PySpark를 사용하여 변환 작업이나 데이터 분석 작업을 시작하
 
 <div class="content-ad"></div>
 
-```md
+
 from pyspark.sql import SparkSession
 from pyspark.sql import types
 from pyspark.sql.types import SparkType, StructField, StringType, IntegerType, DataType
 from pyspark.sql.functions import col, date, year, time, sum, avg, upper, count, Broadcast, expr
 from pyspark.sql import window
 from pyspark.sql import functions as F
-```
 
-```md
+
+
 spark = SparkSession.builder.appName("application").getOrCreate()
 # read any file as given either csv, excel, parquet, or Avro any format of data
 data = spark.read.csv("filePath", header=True, inferschema=True) # if we want given data types as it is
 schema = StructType([StructField("id", IntegerType), StructField("name", StringType),
 StructField("dept", StringType)]) # if we want our required data types then we use this 
 # also for better performance of executions we will be using our custom schema rather depending on inferschema
-```
+
 
 Let’s kickstart our PySpark application by first creating a Spark Session, the entry point to PySpark functionality.
 
@@ -209,7 +209,7 @@ df.select("column name we want to retrieve").where(col("column name we want to r
 .groupBy("column name we want to retrieve").count().orderBy("count", ascending=False).show(10)
 
 
-## 함수 작성하기:```
+## 함수 작성하기:
 
 <div class="content-ad"></div>
 

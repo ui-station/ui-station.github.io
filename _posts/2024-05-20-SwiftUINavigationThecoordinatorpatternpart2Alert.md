@@ -89,7 +89,7 @@ struct AlertPath {
 }
 ```
 
-또한 설정한 후 경고를 처리하는 CoordinatedView를 업데이트해야 합니다.```
+또한 설정한 후 경고를 처리하는 CoordinatedView를 업데이트해야 합니다.
 
 <div class="content-ad"></div>
 
@@ -152,7 +152,7 @@ struct AlertModifier: ViewModifier {
 - 알림의 제목은 title 속성에서 가져옵니다.
 - alertPath의 존재 여부에 따라 수동으로 getter 및 setter를 설정한 Binding`Bool`를 전달합니다. 따라서 alert가 존재하는 경우 알림을 표시합니다. 그리고 알림이 닫힐 때 alert를 nil로 설정합니다.
 - 사용 가능한 각 버튼에 대해 제공된 title, role 및 action으로 SwiftUI Button을 만듭니다. 버튼을 하나도 보내지 않으면 시스템이 단일 'OK' 버튼 알림으로 기본 설정됩니다.
-- 필요에 따라 알림 아래에 제목 아래에 알림에 대한 일부 설명 정보가 포함될 수 있습니다.```
+- 필요에 따라 알림 아래에 제목 아래에 알림에 대한 일부 설명 정보가 포함될 수 있습니다.
 
 <div class="content-ad"></div>
 

@@ -59,7 +59,7 @@ image: talha/mynewapp
 ```
 
 애플리케이션에 대한 Docker 컨테이너 이미지의 이름을 지정합니다. talha/mynewapp를 Docker Hub 저장소의 이름으로 교체하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -90,7 +90,7 @@ image: talha/mynewapp
     - KAMAL_REGISTRY_PASSWORD
 ```
 
-어플리케이션 이미지가 호스팅된 Docker 이미지 레지스트리에 액세스하는 자격 증명을 지정합니다. KAMAL_REGISTRY_USERNAME 및 KAMAL_REGISTRY_PASSWORD를 Docker 허브 자격 증명으로 교체하세요.```
+어플리케이션 이미지가 호스팅된 Docker 이미지 레지스트리에 액세스하는 자격 증명을 지정합니다. KAMAL_REGISTRY_USERNAME 및 KAMAL_REGISTRY_PASSWORD를 Docker 허브 자격 증명으로 교체하세요.
 
 <div class="content-ad"></div>
 
@@ -295,7 +295,7 @@ traefik:
 
 asset_path: /rails/public/assets
 ``` 
-```
+
 
 <div class="content-ad"></div>
 
@@ -319,7 +319,7 @@ ssh root@your_server_ip
 adduser deploy
 ```
 
-새 사용자에 대한 암호를 설정하고 추가 정보를 입력하라는 프롬프트가 표시됩니다. 선택 사항을 건너뛰려면 Enter 키를 누르세요.```
+새 사용자에 대한 암호를 설정하고 추가 정보를 입력하라는 프롬프트가 표시됩니다. 선택 사항을 건너뛰려면 Enter 키를 누르세요.
 
 <div class="content-ad"></div>
 
@@ -346,7 +346,7 @@ apt install -y apt-transport-https ca-certificates curl software-properties-comm
 ```
 
 시스템에 Docker의 공식 GPG 키를 추가하세요.
-```
+
 
 <div class="content-ad"></div>
 
@@ -360,7 +360,7 @@ Docker 리포지토리를 APT 원본에 추가하세요:
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 ```
 
-한번 더 패키지 인덱스를 업데이트하세요:```
+한번 더 패키지 인덱스를 업데이트하세요:
 
 <div class="content-ad"></div>
 
@@ -419,7 +419,7 @@ mkdir -p /letsencrypt && touch /letsencrypt/acme.json && chmod 600 /letsencrypt/
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 kamal setup
 ```
@@ -429,7 +429,7 @@ kamal setup
 카말의 명령어를 사용하여 매일 배포 작업을 수행하세요:
 
 앱의 새 버전을 배포하려면:
-```
+
 
 <div class="content-ad"></div>
 

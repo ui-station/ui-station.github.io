@@ -124,19 +124,19 @@ SQLFiddle은 다양한 데이터베이스 시스템에서 SQL 쿼리를 작성�
 
 <div class="content-ad"></div>
 
-```md
+
 -- 예제 SQL 쿼리
 CREATE TABLE studs (
     id INT AUTO_INCREMENT,
     name VARCHAR(50),
     age INT
 );
-```
 
-```md
+
+
 INSERT INTO studs (name, age)
 VALUES ('Dave', 25), ('Jane', 28), ('Gill', 22);
-```
+
 
 멋진 기능들:
 
@@ -417,7 +417,7 @@ VALUES (1, '위젯', 19.99), (2, '가젯', 29.99), (3, '두다드', 9.99);
 
 SQL 프로그래밍 기술을 시험해 볼 수 있는 가장 좋은 방법은 기초부터 시작해 점차 어려운 연습 문제로 나아가는 것입니다. 연습할 때 플랫폼이 제공하는 피드백에 주의를 기울이는 것이 중요합니다. 이 피드백은 강점과 약점을 판별하는 데 도움을 주고, 실수로부터 배울 수 있도록 도와줍니다.
 
-SQL 실습을 위한 몇 가지 추가 팁은 다음과 같습니다:```
+SQL 실습을 위한 몇 가지 추가 팁은 다음과 같습니다:
 
 <div class="content-ad"></div>
 

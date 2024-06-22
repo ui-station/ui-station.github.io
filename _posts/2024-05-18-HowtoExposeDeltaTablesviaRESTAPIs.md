@@ -94,7 +94,7 @@ https://github.com/rebremer/expose-deltatable-via-restapi
 - 아키텍처 B: 컴퓨팅 계층으로 작용하는 Synapse Serverless.
 - 아키텍처 C: 최적화된 저장 계층으로 작용하는 Azure SQL.
 
-배포된 후 테스트를 실행할 수 있습니다. 다음 단락에서 테스트에 대해 설명하겠습니다.```
+배포된 후 테스트를 실행할 수 있습니다. 다음 단락에서 테스트에 대해 설명하겠습니다.
 
 <div class="content-ad"></div>
 

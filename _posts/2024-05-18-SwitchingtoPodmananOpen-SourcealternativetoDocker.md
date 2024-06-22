@@ -81,13 +81,13 @@ Docker Compose를 Podman과 함께 작동하도록 하려면 다음 단계를 �
 이러한 단계를 따라도 Docker Compose가 여전히 동일한 오류("Docker 데몬에 연결할 수 없음...")를 표시한다면, 아래 두 가지 해결 방법 중 하나를 시도해 보세요:
 
 - 다음 명령을 사용하여 DOCKER_HOST를 내보내려 해보세요: 
-  ```sh
+  sh
   export DOCKER_HOST=`unix:///Users/your-user/.local/share/containers/podman/machine/podman-machine-default/podman.sock`
-  ```
+  
 - rootful 권한으로 Podman Machine을 설정하려면 다음 명령을 사용하세요:
-  ```sh
+  sh
   podman machine stop && podman machine set --rootful && podman machine start
-  ```
+  
 
 # Podman 명령어
 

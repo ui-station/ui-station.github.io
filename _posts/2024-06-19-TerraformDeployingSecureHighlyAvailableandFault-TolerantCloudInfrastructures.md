@@ -265,7 +265,7 @@ Terraform을 사용하여 인프라스트럭처를 생성할 때 리소스 인�
 
 <div class="content-ad"></div>
 
-```markdown
+
 이러한 동적 값들을 관리하기 위해 변수를 사용하는 것이 중요합니다. 변수를 사용하면 배포 사항 전반에 걸쳐 일관성을 유지하고, 코드를 읽고 유지하기 쉽게 만들며, 코드의 재사용성을 가능케 합니다.
 
 아래 코드에서 정의한 많은 변수들을 살펴봅시다 —
@@ -273,7 +273,7 @@ Terraform을 사용하여 인프라스트럭처를 생성할 때 리소스 인�
 ## 코드 설명
 
 이곳에서는 이 Terraform 프로젝트에서 동적 값들을 사용할 수 있게 해주는 일련의 변수들을 정의합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -349,9 +349,9 @@ terraform apply
 
 브라우저에서 웹 페이지에 액세스하려면 ALB의 DNS URL을 복사하여 저장하세요.
 
-```md
+
 ![ALB DNS URL](/assets/img/2024-06-19-TerraformDeployingSecureHighlyAvailableandFault-TolerantCloudInfrastructures_6.png)
-```
+
 
 이제 리소스가 생성되었는지 확인하기 위해 관리 콘솔에서 검토해봅시다.
 

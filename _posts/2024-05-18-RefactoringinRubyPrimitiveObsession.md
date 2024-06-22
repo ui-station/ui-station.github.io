@@ -36,7 +36,7 @@ Ruby 언어에 관심이 있다면, 해당 언어에서 리팩터링 및 디자�
 
 <div class="content-ad"></div>
 
-```md
+
 # 달러로 표시된 당신의 월급
 salary = 5000
 
@@ -46,13 +46,13 @@ house_cost = 100,000
 eur_to_usd_rate = 1.09
 
 ((house_cost * eur_to_usd_rate) / salary).ceil # => 21
-```
+
 
 우리는 보듯이, 이 코드는 그리 좋아보이지 않습니다. 어떤 값이 어떤 통화에 있는지 알기 위해서는 코드에 추가적인 주석을 달 필요가 있습니다. 또한 값을 다른 통화로 변환할 수 있는 변수를 정의해야 합니다.
 
 계속 이 프로그램을 작업하기 쉽게 만들기 위해, 우리가 돈을 보다 쉽게 다룰 수 있는 새로운 클래스를 생성해야 할 것입니다.
 
-```md
+
 class Money
   attr_reader :amount, :currency
 
@@ -81,7 +81,7 @@ class Money
     amount * 1.09
   end
 end
-```
+
 
 <div class="content-ad"></div>
 

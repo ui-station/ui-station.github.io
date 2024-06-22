@@ -64,7 +64,7 @@ United States,USA,2022-04-17,Weekly new hospital admissions per million,32.8
 ```
 
 ulits.py:
-```
+
 
 <div class="content-ad"></div>
 
@@ -104,11 +104,11 @@ def clean_clients(df):
     return df
 ```
 
-모듈에서 이러한 함수를 사용하려는 사람은 아래 예시와 같이 import 명령을 사용하여 노트북에 쉽게 추가할 수 있습니다.```
+모듈에서 이러한 함수를 사용하려는 사람은 아래 예시와 같이 import 명령을 사용하여 노트북에 쉽게 추가할 수 있습니다.
 
 <div class="content-ad"></div>
 
-```
+
 ![UnitTestingandCodeModularizationinDatabricks1](/assets/img/2024-06-19-UnitTestingandCodeModularizationinDatabricks_1.png)
 
 Similarly, it’s possible to import transformation functions from the module and remove duplicated records from the DataFrame.
@@ -116,7 +116,7 @@ Similarly, it’s possible to import transformation functions from the module an
 ![UnitTestingandCodeModularizationinDatabricks2](/assets/img/2024-06-19-UnitTestingandCodeModularizationinDatabricks_2.png)
 
 # Unit Testing in Databricks
-```
+
 
 <div class="content-ad"></div>
 

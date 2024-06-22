@@ -99,7 +99,7 @@ aws iam create-policy \
 }
 ```
 
-4. 다음 명령어를 실행하여 IAM 역할을 만드세요.``` 
+4. 다음 명령어를 실행하여 IAM 역할을 만드세요. 
 
 <div class="content-ad"></div>
 
@@ -146,21 +146,21 @@ helm repo add secrets-store-csi-driver https://kubernetes-sigs.github.io/secrets
 
 <div class="content-ad"></div>
 
-```md
+
 # 기본 값 가져오기
 helm show values secrets-store-csi-driver/secrets-store-csi-driver > secrets-store-csi-driver.yaml
-```
+
 
 - secrets-store-csi-driver.yaml 파일에서 다음 값을 업데이트하세요.
 
-```md
+
 ## K8S Secrets 동기화에 필요한 RBAC 역할 및 바인딩 설치 여부
 syncSecret:
   enabled: true
 
 ## 시크릿 로테이션 기능 활성화 [알파]
 enableSecretRotation: true
-```
+
 
 위의 구성은 "secrets-store-csi-driver"가 AWS Secret Manager에서 최신 값을 가져와 해당 값을 Kubernetes Secrets 객체에 업데이트할 수 있게 합니다.
 
@@ -388,7 +388,7 @@ metadata:
 ```
 
 2. AWS Secret Manager에서 시크릿 업데이트하기
-```
+
 
 <div class="content-ad"></div>
 

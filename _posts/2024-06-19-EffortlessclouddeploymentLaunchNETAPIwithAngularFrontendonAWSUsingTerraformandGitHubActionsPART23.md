@@ -352,7 +352,7 @@ ENTRYPOINT ["dotnet", "TheApp.dll"]
 
 ## ECS 및 로드 밸런서 소개
 
-Amazon Elastic Container Service (ECS)는 Docker를 사용하여 컨테이너화된 응용 프로그램을 배포, 관리 및 확장하기 쉽게 만들어주는 완전관리형 컨테이너 오케스트레이션 서비스입니다. ECS를 활용하면 기본 인프라를 관리할 필요없이 응용 프로그램을 구축하는 데 집중할 수 있습니다.```
+Amazon Elastic Container Service (ECS)는 Docker를 사용하여 컨테이너화된 응용 프로그램을 배포, 관리 및 확장하기 쉽게 만들어주는 완전관리형 컨테이너 오케스트레이션 서비스입니다. ECS를 활용하면 기본 인프라를 관리할 필요없이 응용 프로그램을 구축하는 데 집중할 수 있습니다.
 
 <div class="content-ad"></div>
 
@@ -363,7 +363,7 @@ Amazon Elastic Container Service (ECS)는 Docker를 사용하여 컨테이너화
 ## ECS를 위한 Terraform 구성
 
 코드 예시
-```markdown
+
 # main.tf
 
 provider "aws" {
@@ -396,7 +396,7 @@ resource "aws_iam_role_policy" "ecs_task_secrets_policy" {
     ]
   })
 }
-```
+
 
 <div class="content-ad"></div>
 
@@ -483,7 +483,7 @@ resource "aws_ecs_service" "app_service" {
 - Data sources are defined to fetch details of the existing VPC and subnets based on tags.
 
 ## Security Group for ECS:
-```
+
 
 <div class="content-ad"></div>
 

@@ -255,7 +255,7 @@ Column {
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![Image](https://miro.medium.com/v2/resize:fit:826/1*5IdpszpbEX4LHPABjORO-g.gif)
 
 You might also like 👇
@@ -263,10 +263,9 @@ You might also like 👇
 Thank you for reading this article! ❤️ I hope you’ve found it enjoyable and valuable. Feel free to show your appreciation by hitting the clap 👏 if you liked it and follow Kappdev for more exciting articles 😊
 
 Happy coding!
-```
+
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![image](/assets/img/2024-06-19-HowtoCreateaCute3DRadioButtoninJetpackCompose_2.png)
-```

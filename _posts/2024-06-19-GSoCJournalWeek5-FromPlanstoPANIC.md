@@ -11,7 +11,7 @@ link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7
 ---
 
 
-```markdown
+
 ![이미지1](/assets/img/2024-06-19-GSoCJournalWeek5-FromPlanstoPANIC_0.png)
 
 # 환상에서 마감일까지
@@ -19,7 +19,7 @@ link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7
 5월 27일에 GSoC 여정을 시작해야 했는데, 1, 2, 3, 4, 5, 6, 7, 8... 안녕하세요 6월 3일! 내가 내 프로젝트가 막힌 줄 알았던 환상에 빠져 있었지만, 현실이 나를 두드려: 그렇지 않았다.
 
 ![이미지2](/assets/img/2024-06-19-GSoCJournalWeek5-FromPlanstoPANIC_1.png)
-```
+
 
 <div class="content-ad"></div>
 
@@ -65,11 +65,10 @@ link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![GSoC Journal Week 5](/assets/img/2024-06-19-GSoCJournalWeek5-FromPlanstoPANIC_4.png)
 
 Find me on social media:
 
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rd4dev/)
 - GitHub: [GitHub](https://github.com/Rd4dev)
-```

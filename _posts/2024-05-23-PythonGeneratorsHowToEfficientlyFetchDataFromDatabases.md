@@ -196,7 +196,7 @@ http://eae08d1f4bf6:8888/?token=8a45d846d03cf0c0e4584c3b73af86ba5dk9e83c8ac47ee7
 
 좋아요! Jupyter에서 몇 가지 코드를 실행할 준비가 모두 끝났어요.
 
-하지만 그 전에 MinIO의 버킷과 상호 작용하려면 새로운 access_key와 secret_access_key를 생성해야 합니다:```
+하지만 그 전에 MinIO의 버킷과 상호 작용하려면 새로운 access_key와 secret_access_key를 생성해야 합니다:
 
 <div class="content-ad"></div>
 

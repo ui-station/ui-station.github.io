@@ -103,7 +103,7 @@ private:
 
 <div class="content-ad"></div>
 
-```markdown
+
 ```js
 struct Location {
   int x = 0, y = 0, z = 0;
@@ -151,7 +151,7 @@ register_script_function(11, [](Script& script) {
 ```
 
 이제 조금 설명이 필요합니다. 게임 엔진의 콜백 함수는 프로그램에서 발생하는 호출로부터 인수를 검색한 다음 호출된 함수에 따라 유용한 작업을 수행합니다. 프로그램이 이렇게 수행한다고 가정해보세요:
-```
+
 
 <div class="content-ad"></div>
 
@@ -185,7 +185,7 @@ LocationGet(1, 2, 3) 비어 있었어요!
 ```
 
 그래서 이 프로그램은 먼저 (1, 2, 3) 위치에 있는 LocationData를 생성하고 비어 있는지 확인합니다. 비어 있었습니다. 그런 다음 4바이트 벡터에서 할당하고, 커밋하며, 새로운 (1, 2, 3) 위치에 있는 LocationData를 만들고 이제 4바이트를 포함하였다는 것을 확인할 수 있습니다.
-```
+
 
 <div class="content-ad"></div>
 

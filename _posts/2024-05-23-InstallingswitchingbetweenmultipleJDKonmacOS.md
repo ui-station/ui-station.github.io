@@ -184,12 +184,12 @@ brew install openjdk@XX
 
 <div class="content-ad"></div>
 
-```md
+
 $ sudo ln -sfn /opt/homebrew/opt/openjdkXXX/libexec/openjdkXXX.jdk /Library/Java/JavaVirtualMachines/openjdkXXX.jdk
-```
+
 
 - Add one more alias under `~/.zshrc` to quickly switch between JDK
 
-```md
+
 alias java-XX="export JAVA_HOME=\`/usr/libexec/java_home -v XX\`; java -version"
-```
+

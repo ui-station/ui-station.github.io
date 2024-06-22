@@ -36,9 +36,9 @@ sudo rm -rf /opt/homebrew
 <div class="content-ad"></div>
 
 3. Homebrew 다시 설치하기:
-```markdown
+
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+
 
 4. 터미널을 종료하고 다시 시작하세요.
 

@@ -69,7 +69,7 @@ struct DecodingError: Error {
   - internalServerError: 서버 오류임을 나타냅니다 (HTTP 500).
   - unknownError: 다른 HTTP 상태 코드 오류를 나타내며 상태 코드를 캡슐화합니다.
 
-DecodingError: 해독 중 추가 오류 정보를 제공하기 위한 사용자 정의 오류 구조체입니다.```
+DecodingError: 해독 중 추가 오류 정보를 제공하기 위한 사용자 정의 오류 구조체입니다.
 
 <div class="content-ad"></div>
 
@@ -415,7 +415,7 @@ final class DefaultPostsListRepository: PostsListRepositoryProtocol {
 # 결론
 
 이 코드베이스의 네트워크 레이어 디자인은 모듈화, 확장 가능성, 견고한 오류 처리, 테스트 용이성 및 성능 모니터링을 강조하여 확장 가능한 애플리케이션에 적합합니다. 이러한 특성들은 유지 보수성과 신뢰성을 저해하지 않고 앱이 기능과 복잡성을 향상시킬 수 있음을 보장합니다.
-```
+
 
 <div class="content-ad"></div>
 

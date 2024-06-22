@@ -163,7 +163,7 @@ sealed class Event {
 ```
 
 View에서 변경사항을 받음
-```
+
 
 <div class="content-ad"></div>
 
@@ -184,7 +184,7 @@ View에서 변경사항을 받음
 State Reducer은 함수형 프로그래밍에서 나온 개념으로 이전 상태를 입력으로 받아 이전 상태에서 새로운 상태를 계산합니다.
 
 참석자가 크리에이터를 팔로우하는 기능을 예로 들어서 이해해봅시다. 사용자가 팔로우 버튼을 클릭했을 때 어떤 일이 일어날까요?
-```
+
 
 <div class="content-ad"></div>
 
@@ -222,13 +222,13 @@ onClick {
 
 <div class="content-ad"></div>
 
-```md
+
 만약 followableOrganizer가 팔로우되어 있다면 {
     상태 { onUnfollow(::event, ::effect) }
 } 그렇지 않으면 {
     상태 { onFollow(::event, ::effect) }
 }
-```
+
 
 액션 3: 리듀서
 

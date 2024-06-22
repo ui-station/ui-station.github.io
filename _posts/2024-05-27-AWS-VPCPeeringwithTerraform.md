@@ -560,7 +560,7 @@ module "vpc_peering_configureB" {
 }
 ```
 
-## 단계 7: 라우트 테이블을 위한 모듈 만들기 및 가져오기```
+## 단계 7: 라우트 테이블을 위한 모듈 만들기 및 가져오기
 
 <div class="content-ad"></div>
 

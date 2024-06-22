@@ -11,7 +11,7 @@ link: "https://medium.com/@rohitsainier/building-a-robust-network-layer-in-ios-u
 ---
 
 
-```markdown
+
 ![이미지](/assets/img/2024-06-19-BuildingaRobustNetworkLayeriniOSUsingSwift_0.png)
 
 현대 iOS 개발에서 API 호출 및 데이터 검색을 효율적이고 안전하게 처리하기 위해 잘 구조화된 네트워크 레이어를 갖는 것이 중요합니다. 이 기사에서는 제공된 코드를 기반으로 Swift로 견고한 네트워크 레이어를 만드는 방법을 안내합니다.
@@ -19,7 +19,7 @@ link: "https://medium.com/@rohitsainier/building-a-robust-network-layer-in-ios-u
 # 개요
 
 우리의 네트워크 레이어는 여러 중요한 구성 요소로 구성됩니다:
-```
+
 
 <div class="content-ad"></div>
 
@@ -392,7 +392,7 @@ extension NetworkManager {
 
 다음은 친절한 톤으로 번역한 내용입니다.
 
-```markdown
+
 downloadImage 메서드: URL에서 이미지를 다운로드하며 선택적으로 캐싱합니다.
 
 - 캐싱이 활성화된 경우 먼저 캐시를 확인합니다.
@@ -403,7 +403,7 @@ downloadImage 메서드: URL에서 이미지를 다운로드하며 선택적으�
 cacheImage 메서드: 이미지를 캐시에 저장합니다.
 
 loadImageFromCache 메서드: 캐시에서 이미지를 로드합니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -476,7 +476,7 @@ func fetchExampleData() async {
 
 `table` 태그를 Markdown 형식으로 변경해주세요.
 
-```
+
 fetchExampleData 함수: async/await를 활용하여 요청을 수행하고 응답을 처리하는 방법을 보여줍니다.
 
 # 이미지 다운로드
@@ -521,7 +521,7 @@ struct HomeView_Previews: PreviewProvider {
 ```
 
 설명:
-```
+
 
 <div class="content-ad"></div>
 

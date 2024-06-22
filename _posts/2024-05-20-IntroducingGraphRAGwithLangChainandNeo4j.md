@@ -157,7 +157,7 @@ print(f"관계:{graph_documents[0].relationships}")
 관계:[Relationship(source=Node(id='Mr. Dursley', type='Person'), target=Node(id='Mrs. Dursley', type='Person'), type='MARRIED_TO'), Relationship(source=Node(id='Mr. Dursley', type='Person'), target=Node(id='Dudley', type='Person'), type='PARENT_OF'), Relationship(source=Node(id='Mrs. Dursley', type='Person'), target=Node(id='Dudley', type='Person'), type='PARENT_OF'), Relationship(source=Node(id='Mr. Dursley', type='Person'), target=Node(id='Grunnings', type='Organization'), type='WORKS_AT'), Relationship(source=Node(id='Mr. Dursley', type='Person'), target=Node(id='Privet Drive', type='Location'), type='LIVES_AT'), Relationship(source=Node(id='Mrs. Dursley', type='Person'), target=Node(id='Privet Drive', type='Location'), type='LIVES_AT'), Relationship(source=Node(id='Mrs. Dursley', type='Person'), target=Node(id='Mrs. Potter', type='Person'), type='SISTER_OF'), Relationship(source=Node(id='The Dursleys', type='Family'), target=Node(id='The Potters', type='Family'), type='WANTS_TO_AVOID')]
 ```
 
-보시다시피, llm_transformer는 우리가 지정할 필요 없이 데이터에서 관련 엔티티와 관계를 캡처했습니다. 이제 이러한 노드와 관계를 AuraDB에 저장해야 합니다.```
+보시다시피, llm_transformer는 우리가 지정할 필요 없이 데이터에서 관련 엔티티와 관계를 캡처했습니다. 이제 이러한 노드와 관계를 AuraDB에 저장해야 합니다.
 
 <div class="content-ad"></div>
 
@@ -173,7 +173,7 @@ graph.add_graph_documents(
 
 <img src="/assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_6.png" />
 
-또한 우리 DB의 그래픽 표현을 다음의 Python 함수로 그릴 수도 있습니다:```  
+또한 우리 DB의 그래픽 표현을 다음의 Python 함수로 그릴 수도 있습니다:  
 
 <div class="content-ad"></div>
 

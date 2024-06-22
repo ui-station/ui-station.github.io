@@ -59,7 +59,7 @@ Pydantic의 유효성 검사 도구는 데이터 작업 시 강력한 도구입�
 
 <div class="content-ad"></div>
 
-```
+
 ```python
 from pydantic import field_validator, BaseModel
 

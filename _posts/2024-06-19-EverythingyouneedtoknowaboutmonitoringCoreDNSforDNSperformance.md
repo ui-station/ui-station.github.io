@@ -11,7 +11,7 @@ link: "https://medium.com/@seifeddinerajhi/everything-you-need-to-know-about-mon
 ---
 
 
-```markdown
+
 ![CoreDNS Monitoring](/assets/img/2024-06-19-EverythingyouneedtoknowaboutmonitoringCoreDNSforDNSperformance_0.png)
 
 # 📚 소개:
@@ -19,7 +19,7 @@ link: "https://medium.com/@seifeddinerajhi/everything-you-need-to-know-about-mon
 DNS 집중 워크로드를 실행할 때 종종 DNS 쓰로틀링에 의한 간헐적인 CoreDNS 실패가 발생할 수 있습니다. 이러한 문제는 애플리케이션에 중대한 영향을 미칠 수 있습니다.
 
 이러한 중단은 서비스의 신뢰성과 성능에 영향을 미칠 수 있으므로 모니터링 솔루션이 필수적입니다.
-```
+
 
 <div class="content-ad"></div>
 
@@ -379,23 +379,23 @@ aws eks create-addon --addon-name adot --addon-version v0.66.0-eksbuild.1 --clus
 kubectl get po -n opentelemetry-operator-system
 ```
 
-다음 절차는 배포를 모드 값으로 사용하는 예제 YAML 파일을 사용합니다. 이는 기본 모드이며 ADOT Collector를 독립 애플리케이션과 유사하게 배포합니다. 이 구성은 샘플 애플리케이션으로부터 OTLP 메트릭을 수신하고 클러스터의 pod에서 스크래핑된 Amazon Managed Service for Prometheus 메트릭을 수신합니다.```
+다음 절차는 배포를 모드 값으로 사용하는 예제 YAML 파일을 사용합니다. 이는 기본 모드이며 ADOT Collector를 독립 애플리케이션과 유사하게 배포합니다. 이 구성은 샘플 애플리케이션으로부터 OTLP 메트릭을 수신하고 클러스터의 pod에서 스크래핑된 Amazon Managed Service for Prometheus 메트릭을 수신합니다.
 
 <div class="content-ad"></div>
 
-```markdown
-```markdown
+
+
 curl -o collector-config-amp.yaml https://raw.githubusercontent.com/aws-observability/aws-otel-community/master/sample-configs/operator/collector-config-amp.yaml
-```
+
 
 collector-config-amp.yaml 파일에서 다음을 본인의 값으로 바꿔주세요: * mode: deployment * serviceAccount: adot-collector * endpoint: "" * region: "" * name: adot-collector
 
-```markdown
+
 kubectl apply -f collector-config-amp.yaml
-```
+
 
 adot collector가 배포되면 메트릭이 Amazon Prometheus에 성공적으로 저장됩니다.
-```
+
 
 <div class="content-ad"></div>
 

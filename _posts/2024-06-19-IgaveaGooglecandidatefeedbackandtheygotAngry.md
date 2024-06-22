@@ -11,7 +11,7 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 ---
 
 
-```markdown
+
 ![Image](/assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_0.png)
 
 # 소개
@@ -19,7 +19,7 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 2020년 구글에 합류하여 후보자 인터뷰를 진행하는 방법을 배웠습니다. 일부 후보자들은 수준을 높였으며, 일부 후보자들은 많이 고심했습니다.
 
 인터뷰 대상자에게 피드백을 제공하기 위해 훈련을 받은 후, 한 명의 후보자만이 피드백에 너무 화를 내어 면접 중에 나가버렸습니다.
-```  
+
 
 <div class="content-ad"></div>
 
@@ -127,7 +127,7 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 <div class="content-ad"></div>
 
-```markdown
+
 ![2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_5](/assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_5.png)
 
 The mock interview went well. I could tell the candidate had practiced their data structures and algorithms and coded very well.
@@ -135,7 +135,7 @@ The mock interview went well. I could tell the candidate had practiced their dat
 What was missing was the follow-up questions to make their algorithms even more efficient.
 
 The response from the candidate was:
-```
+
 
 <div class="content-ad"></div>
 

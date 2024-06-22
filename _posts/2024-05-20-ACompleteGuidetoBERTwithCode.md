@@ -495,7 +495,7 @@ print(batch_encoder['attention_mask'])
 
 <div class="content-ad"></div>
 
-```md
+
 벡터 인코더 키:
 dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
 
@@ -508,7 +508,7 @@ tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
          0, 0, 0, 0, 0, 0, 0, 0]])
-```
+
 
 모든 리뷰 인코딩:
 
@@ -830,7 +830,7 @@ def preprocess_dataset(path):
         df_dataset (pd.DataFrame): self.dataset 경로에서 로드한 원시 데이터가 있는 DataFrame입니다. "review"와 "sentiment" 열 외에도 다음이 포함됩니다:
             - review_cleaned: "review" 열의 사본이고 HTML 줄 바꿈 태그와 불필요한 공백이 제거된 컬럼
             - sentiment_encoded: "sentiment" 열의 사본이며 "부정" 값을 0으로 매핑하고 "긍정" 값을 1로 매핑한 컬럼
-    ```
+    
   
 
 <div class="content-ad"></div>
@@ -838,7 +838,6 @@ def preprocess_dataset(path):
 작업에 중립적인 파인튜닝 파이프라인 클래스:
 
 
-```js
 from datetime import datetime
 import numpy as np
 import pandas as pd
@@ -902,12 +901,10 @@ class FineTuningPipeline:
         of tokens per input sequence (512 for BERT).
 
 ...
-```  
 
 
 감정 분석을 위한 클래스 사용 예 (IMDb 데이터셋):
 
-```js
 # 매개변수 초기화
 dataset = preprocess_dataset('IMDB Dataset Very Small.csv')
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
@@ -929,7 +926,6 @@ fine_tuned_model = FineTuningPipeline(
 
 # 유효성 검사 데이터셋을 사용하여 일부 예측 수행
 model.predict(model.val_dataloader)
-```
 
 <div class="content-ad"></div>
 

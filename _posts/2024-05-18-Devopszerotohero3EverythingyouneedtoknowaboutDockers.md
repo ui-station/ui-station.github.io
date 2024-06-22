@@ -302,16 +302,13 @@ docker ps
 ```js
 도커 네트워크를 검사하는 방법: 
 
-```docker network inspect blog-network```
 
 ![사진](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_20.png)
 
 Nginx 컨테이너를 검사하는 방법: 
 
-```docker inspect nginx-con```
 
 ![사진](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_21.png)
-```
 
 <div class="content-ad"></div>
 
@@ -327,10 +324,8 @@ Nginx 컨테이너를 검사하는 방법:
 
 ## 3. 호스트 네트워크
 
-```js
 docker run -td --network host --name nginx-server nginx:latest
 docker ps
-```
 
 ![image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_23.png)
 
@@ -342,9 +337,7 @@ docker ps
 
 만약 컨테이너의 IP 주소를 확인하려면
 
-```js
 docker inspect nginx-server | grep IPAddress
-```
 
 아래 그림을 참고하세요:
 
@@ -400,7 +393,6 @@ docker inspect nginx-server | grep IPAddress
 
 우리는 호스트 머신의 동일한 디렉토리/폴더를 4개의 컨테이너에 마운트했습니다.
 
-```js
 mkdir docker-bind-mount
 docker run -t -d  -v docker-bind-mount:/app/log  --name captain-america busybox
 docker run -t -d  -v docker-bind-mount:/app/log  --name thor busybox
@@ -410,7 +402,6 @@ docker run -t -d  -v docker-bind-mount:/app/log  --name iron-man  alpine
 # --mount 옵션을 사용한 명령어
 docker run -t -d --mount type=bind,source=docker-bind-mount,target=/app/log \
   --name captain-america busybox
-```
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_25.png" />
 
@@ -448,10 +439,8 @@ docker run -t -d --mount type=bind,source=docker-bind-mount,target=/app/log \
 
 <div class="content-ad"></div>
 
-```js
 # 도커 컨테이너 조회 명령어: docker inspect <컨테이너 이름 또는 컨테이너 ID>
 docker inspect hulk
-```
 
 ![도커 컨테이너 및 볼륨에 대한 자세한 정보](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_29.png)
 
@@ -462,7 +451,7 @@ docker inspect hulk
 
 <div class="content-ad"></div>
 
-```md
+```
 # 도커 볼륨 생성하기
 도커 볼륨 생성 thor-vol
 도커 볼륨 생성 hulk-vol
@@ -477,15 +466,15 @@ docker inspect hulk
 #  ls          볼륨 목록 보기
 #  prune       사용하지 않는 로컬 볼륨 제거
 #  rm          한 개 이상의 볼륨 제거
-```
+
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_30.png" />
 
 볼륨 검사하기
 
-```md
+
 도커 볼륨 inspect thor-vol
-```
+
 
 <div class="content-ad"></div>
 
@@ -581,7 +570,7 @@ requirements.txt
 Flask
 ```
 
-이제 Docker 이미지를 빌드하기 위한 Dockerfile을 생성할 것입니다.```
+이제 Docker 이미지를 빌드하기 위한 Dockerfile을 생성할 것입니다.
 
 <div class="content-ad"></div>
 
@@ -631,10 +620,10 @@ Docker Hub repository를 만들어보겠습니다. 아직 계정이 없다면 �
 
 <div class="content-ad"></div>
 
-```md
+
 # docker tag <local image> <docker hub username>/<repository name>:<tag>
 docker tag flask-image livingdevopswithakhilesh/docker-demo-docker:1.0
-```
+
 
 ![Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_38.png)
 
