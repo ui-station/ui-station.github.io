@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>Rails에서 낙관적 락킹은 무엇인가요 | ui-station</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://ui-station.github.io///post/2024-06-19-Whatisoptimisticlockinginrails" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="Rails에서 낙관적 락킹은 무엇인가요 | ui-station" data-gatsby-head="true"/><meta property="og:title" content="Rails에서 낙관적 락킹은 무엇인가요 | ui-station" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://ui-station.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://ui-station.github.io///post/2024-06-19-Whatisoptimisticlockinginrails" data-gatsby-head="true"/><meta name="twitter:title" content="Rails에서 낙관적 락킹은 무엇인가요 | ui-station" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | ui-station" data-gatsby-head="true"/><meta name="article:published_time" content="2024-06-19 22:17" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BHFR6GTH9P"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-BHFR6GTH9P');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-4a646156c659a948.js" defer=""></script><script src="/_next/static/chunks/348-d11c34b645b13f5b.js" defer=""></script><script src="/_next/static/chunks/162-4172e84c8e2aa747.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-4f7b40c1114f0d09.js" defer=""></script><script src="/_next/static/o1YmnmSuZvAX2O4TI9r41/_buildManifest.js" defer=""></script><script src="/_next/static/o1YmnmSuZvAX2O4TI9r41/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">UI STATION</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">Rails에서 낙관적 락킹은 무엇인가요</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="Rails에서 낙관적 락킹은 무엇인가요" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">UI STATION</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jun 19, 2024</span><span class="posts_reading_time__f7YPP">4<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-06-19-Whatisoptimisticlockinginrails&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<p>낙관적 락킹은 데이터베이스 시스템에서 동시에 여러 사용자가 데이터에 동시 액세스를 관리하는 동시성 제어 메커니즘입니다. 충돌이 드물고 트랜잭션이 일반적으로 서로 간섭하지 않을 것으로 가정합니다. 비관적 락킹과 달리 최적적 락킹은 데이터를 처음 액세스할 때 잠그는 대신, 트랜잭션이 커밋하려고 할 때만 충돌을 확인합니다.</p>
+<p>다음은 작동 방식입니다:</p>
+<ul>
+<li>
+<p>트랜잭션 시작: 트랜잭션이 레코드를 읽을 때 해당 레코드와 연관된 버전 번호 또는 타임스탬프도 검색합니다.</p>
+</li>
+<li>
+<p>트랜잭션 처리: 트랜잭션은 데이터를 로컬로 변경합니다.</p>
+</li>
+<li>
+<p>커밋: 커밋하기 전에 트랜잭션은 데이터베이스에서 레코드의 버전 번호 또는 타임스탬프를 확인합니다:</p>
+<ul>
+<li>트랜잭션이 시작되었을 때 버전 번호나 타임스탬프가 변경되지 않았다면, 트랜잭션은 변경 사항을 커밋합니다.</li>
+<li>버전 번호나 타임스탬프가 변경되었다면 (다른 트랜잭션이 레코드를 수정했다는 것을 나타냄), 해당 트랜잭션은 중지되고 다시 시도해야 합니다.</li>
+</ul>
+</li>
+</ul>
+<h1>낙관적 락킹 예시</h1>
+<p>간단한 예시로 온라인 상점의 제품을 위한 데이터베이스 테이블을 고려해 봅시다:</p>
+<h2>제품 테이블:</h2>
+<p><img src="/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png" alt="Products Table"></p>
+<h2>시나리오</h2>
+<ul>
+<li>
+<p>사용자 A는 버전 번호가 1인 "위젯"(ProductID=1)의 제품 세부 정보를 읽습니다.</p>
+</li>
+<li>
+<p>사용자 B는 동일한 제품 "위젯"의 버전 번호가 1인 제품 세부 정보를 읽습니다.</p>
+</li>
+<li>
+<p>사용자 A가 "위젯"의 가격을 $12.00으로 업데이트하고 트랜잭션을 커밋하려고 합니다:</p>
+</li>
+<li>
+<p>시스템은 데이터베이스 내 "위젯"의 현재 버전 번호를 확인합니다(아직 1).</p>
+</li>
+<li>
+<p>버전 번호가 일치하므로 업데이트가 진행되고, 가격이 $12.00으로 설정되고, 버전 번호가 2로 증가합니다.</p>
+</li>
+</ul>
+<ol start="4">
+<li>이제 사용자 B가 "위젯"의 가격을 $11.00으로 업데이트하려고 합니다:</li>
+</ol>
+<ul>
+<li>시스템은 데이터베이스에서 "위젯"의 현재 버전 번호를 확인합니다 (현재 2).</li>
+<li>버전 번호가 변경되었으므로 다른 트랜잭션이 레코드를 수정했다는 것을 나타내어, 사용자 B의 트랜잭션이 실패합니다.</li>
+<li>사용자 B는 업데이트된 레코드(버전 2)를 읽어 트랜잭션을 다시 시도해야 합니다.</li>
+</ul>
+<h1>장단점</h1>
+<p>장점:</p>
+<ul>
+<li>Non-blocking: 낙관적 잠금은 잠금을 유지하는 오버헤드를 피함으로써 여러 사용자가 대기없이 동일한 데이터로 작업할 수 있습니다.</li>
+<li>확장성: 충돌 비율이 낮은 환경에서 더 확장 가능하며, 이는 리소스에 대한 경합을 줄여줍니다.</li>
+</ul>
+<p>단점:</p>
+<ul>
+<li>다시 시도 필요: 충돌이 커밋 시간에 감지되면 트랜잭션이 다시 시도될 수 있습니다.</li>
+<li>고 갈등 환경에 적합하지 않음: 고 갈등 환경에서는 충돌 가능성이 증가하여 더 자주 다시 시도하게 되고 성능이 감소할 수 있습니다.</li>
+</ul>
+<p>다음은 루비 온 레일즈에서 낙관적 잠금을 구현하는 예시입니다.</p>
+<p>우리가 제품 테이블을 가지고 있다고 가정해봅시다:</p>
+<pre><code class="hljs language-ruby"><span class="hljs-keyword">class</span> <span class="hljs-title class_">CreateProducts</span> &#x3C; <span class="hljs-title class_ inherited__">ActiveRecord::Migration</span>[<span class="hljs-number">6.1</span>]
+  <span class="hljs-keyword">def</span> <span class="hljs-title function_">change</span>
+    create_table <span class="hljs-symbol">:products</span> <span class="hljs-keyword">do</span> |<span class="hljs-params">t</span>|
+      t.string <span class="hljs-symbol">:name</span>
+      t.decimal <span class="hljs-symbol">:price</span>, <span class="hljs-symbol">precision:</span> <span class="hljs-number">8</span>, <span class="hljs-symbol">scale:</span> <span class="hljs-number">2</span>
+      t.integer <span class="hljs-symbol">:lock_version</span>, <span class="hljs-symbol">default:</span> <span class="hljs-number">0</span>, <span class="hljs-symbol">null:</span> <span class="hljs-literal">false</span>
+
+      t.timestamps
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<h2>모델 정의</h2>
+<p>다음으로 Product 모델을 정의하세요. lock_version 열은 Rails에서 낙관적 락킹에 자동으로 사용됩니다.</p>
+<pre><code class="hljs language-ruby"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Product</span> &#x3C; <span class="hljs-title class_ inherited__">ApplicationRecord</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<h2>예시 사용법</h2>
+<p>담아 두고 있는 상황에서는 어떻게 낙관적 락을 사용할 수 있을까요:</p>
+<h2>사용자 A와 사용자 B가 동일한 레코드를 읽고 있는 경우</h2>
+<pre><code class="hljs language-js"># 사용자 A
+user_a_product = <span class="hljs-title class_">Product</span>.<span class="hljs-title function_">find</span>(<span class="hljs-number">1</span>) # id가 <span class="hljs-number">1</span>인 제품을 읽음
+# user_a_product.<span class="hljs-property">lock_version</span>은 <span class="hljs-number">0</span>입니다
+
+# 사용자 B
+user_b_product = <span class="hljs-title class_">Product</span>.<span class="hljs-title function_">find</span>(<span class="hljs-number">1</span>) # 동일한 제품을 읽음
+# user_b_product.<span class="hljs-property">lock_version</span>도 <span class="hljs-number">0</span>입니다
+</code></pre>
+<h2>사용자 A가 레코드를 업데이트합니다</h2>
+<pre><code class="hljs language-js"># 사용자 A가 가격을 업데이트합니다
+user_a_product.<span class="hljs-property">price</span> = <span class="hljs-number">12.00</span>
+user_a_product.<span class="hljs-property">save</span>
+# 이로써 lock_version이 <span class="hljs-number">1</span>로 증가합니다
+</code></pre>
+<h2>사용자 B가 레코드를 업데이트하려고 합니다</h2>
+<pre><code class="hljs language-js"># 사용자 B가 가격을 업데이트하려고 합니다
+user_b_product.<span class="hljs-property">price</span> = <span class="hljs-number">11.00</span>
+begin
+  user_b_product.<span class="hljs-property">save</span>
+rescue <span class="hljs-title class_">ActiveRecord</span>::<span class="hljs-title class_">StaleObjectError</span>
+  puts <span class="hljs-string">"이전 정보가 감지되었습니다."</span>
+  # 충돌을 처리하기 위해 레코드를 다시 불러와서 재시도할 수 있습니다
+  user_b_product.<span class="hljs-property">reload</span>
+  # 이제 user_b_product.<span class="hljs-property">lock_version</span>은 <span class="hljs-number">1</span>입니다
+  # 사용자 B가 업데이트를 다시 시도할지 결정할 수 있습니다
+end
+</code></pre>
+<h2>충돌 처리</h2>
+<p>ActiveRecord::StaleObjectError가 발생하면, 해당 레코드가 읽힌 후 다른 트랜잭션에 의해 수정되었음을 나타냅니다. 이를 처리하기 위해 레코드를 다시 불러오고 사용자에게 알릴 수도 있으며, 트랜잭션을 다시 시도하거나 애플리케이션 로직에 따라 변경 사항을 병합할 수 있습니다.</p>
+<h2>완전한 예제</h2>
+<pre><code class="hljs language-js"><span class="hljs-keyword">class</span> <span class="hljs-title class_">ProductsController</span> &#x3C; <span class="hljs-title class_">ApplicationController</span>
+  def update
+    @product = <span class="hljs-title class_">Product</span>.<span class="hljs-title function_">find</span>(params[:id])
+    @product.<span class="hljs-title function_">assign_attributes</span>(product_params)
+
+    begin
+      @product.<span class="hljs-property">save</span>
+      flash[:notice] = <span class="hljs-string">"제품이 성공적으로 업데이트되었습니다."</span>
+    rescue <span class="hljs-title class_">ActiveRecord</span>::<span class="hljs-title class_">StaleObjectError</span>
+      flash[:alert] = <span class="hljs-string">"제품이 다른 사용자에 의해 업데이트되었습니다. 변경 사항을 검토하고 다시 시도해주세요."</span>
+      @product.<span class="hljs-property">reload</span>
+      # 선택적으로 사용자의 변경 사항을 다시 적용하고 통합된 양식을 사용자에게 제시할 수 있음
+    end
+
+    redirect_to @product
+  end
+
+  private
+
+  def product_params
+    params.<span class="hljs-built_in">require</span>(:product).<span class="hljs-title function_">permit</span>(:name, :price)
+  end
+end
+</code></pre>
+<h2>결론</h2>
+<p>이 예는 Ruby on Rails 애플리케이션에서 낙관적 잠금을 사용하는 방법을 보여줍니다. lock_version 열을 포함하고 Active Record의 내장 메커니즘을 사용하여 Rails는 버전 확인을 자동으로 처리하고 충돌이 감지되면 예외를 발생시킵니다. 이를 통해 애플리케이션이 적절하게 처리할 수 있도록 합니다.</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"Rails에서 낙관적 락킹은 무엇인가요","description":"","date":"2024-06-19 22:17","slug":"2024-06-19-Whatisoptimisticlockinginrails","content":"\n\n낙관적 락킹은 데이터베이스 시스템에서 동시에 여러 사용자가 데이터에 동시 액세스를 관리하는 동시성 제어 메커니즘입니다. 충돌이 드물고 트랜잭션이 일반적으로 서로 간섭하지 않을 것으로 가정합니다. 비관적 락킹과 달리 최적적 락킹은 데이터를 처음 액세스할 때 잠그는 대신, 트랜잭션이 커밋하려고 할 때만 충돌을 확인합니다.\n\n다음은 작동 방식입니다:\n\n- 트랜잭션 시작: 트랜잭션이 레코드를 읽을 때 해당 레코드와 연관된 버전 번호 또는 타임스탬프도 검색합니다.\n- 트랜잭션 처리: 트랜잭션은 데이터를 로컬로 변경합니다.\n- 커밋: 커밋하기 전에 트랜잭션은 데이터베이스에서 레코드의 버전 번호 또는 타임스탬프를 확인합니다:\n\n    - 트랜잭션이 시작되었을 때 버전 번호나 타임스탬프가 변경되지 않았다면, 트랜잭션은 변경 사항을 커밋합니다.\n    - 버전 번호나 타임스탬프가 변경되었다면 (다른 트랜잭션이 레코드를 수정했다는 것을 나타냄), 해당 트랜잭션은 중지되고 다시 시도해야 합니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n# 낙관적 락킹 예시\n\n간단한 예시로 온라인 상점의 제품을 위한 데이터베이스 테이블을 고려해 봅시다:\n\n## 제품 테이블:\n\n![Products Table](/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png)\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 시나리오\n\n- 사용자 A는 버전 번호가 1인 \"위젯\"(ProductID=1)의 제품 세부 정보를 읽습니다.\n- 사용자 B는 동일한 제품 \"위젯\"의 버전 번호가 1인 제품 세부 정보를 읽습니다.\n- 사용자 A가 \"위젯\"의 가격을 $12.00으로 업데이트하고 트랜잭션을 커밋하려고 합니다:\n\n- 시스템은 데이터베이스 내 \"위젯\"의 현재 버전 번호를 확인합니다(아직 1).\n- 버전 번호가 일치하므로 업데이트가 진행되고, 가격이 $12.00으로 설정되고, 버전 번호가 2로 증가합니다.\n\n4. 이제 사용자 B가 \"위젯\"의 가격을 $11.00으로 업데이트하려고 합니다:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n- 시스템은 데이터베이스에서 \"위젯\"의 현재 버전 번호를 확인합니다 (현재 2).\n- 버전 번호가 변경되었으므로 다른 트랜잭션이 레코드를 수정했다는 것을 나타내어, 사용자 B의 트랜잭션이 실패합니다.\n- 사용자 B는 업데이트된 레코드(버전 2)를 읽어 트랜잭션을 다시 시도해야 합니다.\n\n# 장단점\n\n장점:\n\n- Non-blocking: 낙관적 잠금은 잠금을 유지하는 오버헤드를 피함으로써 여러 사용자가 대기없이 동일한 데이터로 작업할 수 있습니다.\n- 확장성: 충돌 비율이 낮은 환경에서 더 확장 가능하며, 이는 리소스에 대한 경합을 줄여줍니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n단점:\n\n- 다시 시도 필요: 충돌이 커밋 시간에 감지되면 트랜잭션이 다시 시도될 수 있습니다.\n- 고 갈등 환경에 적합하지 않음: 고 갈등 환경에서는 충돌 가능성이 증가하여 더 자주 다시 시도하게 되고 성능이 감소할 수 있습니다.\n\n다음은 루비 온 레일즈에서 낙관적 잠금을 구현하는 예시입니다.\n\n우리가 제품 테이블을 가지고 있다고 가정해봅시다:\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```ruby\nclass CreateProducts \u003c ActiveRecord::Migration[6.1]\n  def change\n    create_table :products do |t|\n      t.string :name\n      t.decimal :price, precision: 8, scale: 2\n      t.integer :lock_version, default: 0, null: false\n\n      t.timestamps\n    end\n  end\nend\n```\n\n## 모델 정의\n\n다음으로 Product 모델을 정의하세요. lock_version 열은 Rails에서 낙관적 락킹에 자동으로 사용됩니다.\n\n```ruby\nclass Product \u003c ApplicationRecord\nend\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 예시 사용법\n\n담아 두고 있는 상황에서는 어떻게 낙관적 락을 사용할 수 있을까요:\n\n## 사용자 A와 사용자 B가 동일한 레코드를 읽고 있는 경우\n\n```js\n# 사용자 A\nuser_a_product = Product.find(1) # id가 1인 제품을 읽음\n# user_a_product.lock_version은 0입니다\n\n# 사용자 B\nuser_b_product = Product.find(1) # 동일한 제품을 읽음\n# user_b_product.lock_version도 0입니다\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 사용자 A가 레코드를 업데이트합니다\n\n```js\n# 사용자 A가 가격을 업데이트합니다\nuser_a_product.price = 12.00\nuser_a_product.save\n# 이로써 lock_version이 1로 증가합니다\n```\n\n## 사용자 B가 레코드를 업데이트하려고 합니다\n\n```js\n# 사용자 B가 가격을 업데이트하려고 합니다\nuser_b_product.price = 11.00\nbegin\n  user_b_product.save\nrescue ActiveRecord::StaleObjectError\n  puts \"이전 정보가 감지되었습니다.\"\n  # 충돌을 처리하기 위해 레코드를 다시 불러와서 재시도할 수 있습니다\n  user_b_product.reload\n  # 이제 user_b_product.lock_version은 1입니다\n  # 사용자 B가 업데이트를 다시 시도할지 결정할 수 있습니다\nend\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 충돌 처리\n\nActiveRecord::StaleObjectError가 발생하면, 해당 레코드가 읽힌 후 다른 트랜잭션에 의해 수정되었음을 나타냅니다. 이를 처리하기 위해 레코드를 다시 불러오고 사용자에게 알릴 수도 있으며, 트랜잭션을 다시 시도하거나 애플리케이션 로직에 따라 변경 사항을 병합할 수 있습니다.\n\n## 완전한 예제\n\n```js\nclass ProductsController \u003c ApplicationController\n  def update\n    @product = Product.find(params[:id])\n    @product.assign_attributes(product_params)\n\n    begin\n      @product.save\n      flash[:notice] = \"제품이 성공적으로 업데이트되었습니다.\"\n    rescue ActiveRecord::StaleObjectError\n      flash[:alert] = \"제품이 다른 사용자에 의해 업데이트되었습니다. 변경 사항을 검토하고 다시 시도해주세요.\"\n      @product.reload\n      # 선택적으로 사용자의 변경 사항을 다시 적용하고 통합된 양식을 사용자에게 제시할 수 있음\n    end\n\n    redirect_to @product\n  end\n\n  private\n\n  def product_params\n    params.require(:product).permit(:name, :price)\n  end\nend\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n## 결론\n\n이 예는 Ruby on Rails 애플리케이션에서 낙관적 잠금을 사용하는 방법을 보여줍니다. lock_version 열을 포함하고 Active Record의 내장 메커니즘을 사용하여 Rails는 버전 확인을 자동으로 처리하고 충돌이 감지되면 예외를 발생시킵니다. 이를 통해 애플리케이션이 적절하게 처리할 수 있도록 합니다.","ogImage":{"url":"/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png"},"coverImage":"/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png","tag":["Tech"],"readingTime":4},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cp\u003e낙관적 락킹은 데이터베이스 시스템에서 동시에 여러 사용자가 데이터에 동시 액세스를 관리하는 동시성 제어 메커니즘입니다. 충돌이 드물고 트랜잭션이 일반적으로 서로 간섭하지 않을 것으로 가정합니다. 비관적 락킹과 달리 최적적 락킹은 데이터를 처음 액세스할 때 잠그는 대신, 트랜잭션이 커밋하려고 할 때만 충돌을 확인합니다.\u003c/p\u003e\n\u003cp\u003e다음은 작동 방식입니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e트랜잭션 시작: 트랜잭션이 레코드를 읽을 때 해당 레코드와 연관된 버전 번호 또는 타임스탬프도 검색합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e트랜잭션 처리: 트랜잭션은 데이터를 로컬로 변경합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e커밋: 커밋하기 전에 트랜잭션은 데이터베이스에서 레코드의 버전 번호 또는 타임스탬프를 확인합니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e트랜잭션이 시작되었을 때 버전 번호나 타임스탬프가 변경되지 않았다면, 트랜잭션은 변경 사항을 커밋합니다.\u003c/li\u003e\n\u003cli\u003e버전 번호나 타임스탬프가 변경되었다면 (다른 트랜잭션이 레코드를 수정했다는 것을 나타냄), 해당 트랜잭션은 중지되고 다시 시도해야 합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003e낙관적 락킹 예시\u003c/h1\u003e\n\u003cp\u003e간단한 예시로 온라인 상점의 제품을 위한 데이터베이스 테이블을 고려해 봅시다:\u003c/p\u003e\n\u003ch2\u003e제품 테이블:\u003c/h2\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png\" alt=\"Products Table\"\u003e\u003c/p\u003e\n\u003ch2\u003e시나리오\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e사용자 A는 버전 번호가 1인 \"위젯\"(ProductID=1)의 제품 세부 정보를 읽습니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e사용자 B는 동일한 제품 \"위젯\"의 버전 번호가 1인 제품 세부 정보를 읽습니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e사용자 A가 \"위젯\"의 가격을 $12.00으로 업데이트하고 트랜잭션을 커밋하려고 합니다:\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e시스템은 데이터베이스 내 \"위젯\"의 현재 버전 번호를 확인합니다(아직 1).\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e버전 번호가 일치하므로 업데이트가 진행되고, 가격이 $12.00으로 설정되고, 버전 번호가 2로 증가합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003col start=\"4\"\u003e\n\u003cli\u003e이제 사용자 B가 \"위젯\"의 가격을 $11.00으로 업데이트하려고 합니다:\u003c/li\u003e\n\u003c/ol\u003e\n\u003cul\u003e\n\u003cli\u003e시스템은 데이터베이스에서 \"위젯\"의 현재 버전 번호를 확인합니다 (현재 2).\u003c/li\u003e\n\u003cli\u003e버전 번호가 변경되었으므로 다른 트랜잭션이 레코드를 수정했다는 것을 나타내어, 사용자 B의 트랜잭션이 실패합니다.\u003c/li\u003e\n\u003cli\u003e사용자 B는 업데이트된 레코드(버전 2)를 읽어 트랜잭션을 다시 시도해야 합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003e장단점\u003c/h1\u003e\n\u003cp\u003e장점:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eNon-blocking: 낙관적 잠금은 잠금을 유지하는 오버헤드를 피함으로써 여러 사용자가 대기없이 동일한 데이터로 작업할 수 있습니다.\u003c/li\u003e\n\u003cli\u003e확장성: 충돌 비율이 낮은 환경에서 더 확장 가능하며, 이는 리소스에 대한 경합을 줄여줍니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e단점:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e다시 시도 필요: 충돌이 커밋 시간에 감지되면 트랜잭션이 다시 시도될 수 있습니다.\u003c/li\u003e\n\u003cli\u003e고 갈등 환경에 적합하지 않음: 고 갈등 환경에서는 충돌 가능성이 증가하여 더 자주 다시 시도하게 되고 성능이 감소할 수 있습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e다음은 루비 온 레일즈에서 낙관적 잠금을 구현하는 예시입니다.\u003c/p\u003e\n\u003cp\u003e우리가 제품 테이블을 가지고 있다고 가정해봅시다:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-ruby\"\u003e\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eCreateProducts\u003c/span\u003e \u0026#x3C; \u003cspan class=\"hljs-title class_ inherited__\"\u003eActiveRecord::Migration\u003c/span\u003e[\u003cspan class=\"hljs-number\"\u003e6.1\u003c/span\u003e]\n  \u003cspan class=\"hljs-keyword\"\u003edef\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003echange\u003c/span\u003e\n    create_table \u003cspan class=\"hljs-symbol\"\u003e:products\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003edo\u003c/span\u003e |\u003cspan class=\"hljs-params\"\u003et\u003c/span\u003e|\n      t.string \u003cspan class=\"hljs-symbol\"\u003e:name\u003c/span\u003e\n      t.decimal \u003cspan class=\"hljs-symbol\"\u003e:price\u003c/span\u003e, \u003cspan class=\"hljs-symbol\"\u003eprecision:\u003c/span\u003e \u003cspan class=\"hljs-number\"\u003e8\u003c/span\u003e, \u003cspan class=\"hljs-symbol\"\u003escale:\u003c/span\u003e \u003cspan class=\"hljs-number\"\u003e2\u003c/span\u003e\n      t.integer \u003cspan class=\"hljs-symbol\"\u003e:lock_version\u003c/span\u003e, \u003cspan class=\"hljs-symbol\"\u003edefault:\u003c/span\u003e \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e, \u003cspan class=\"hljs-symbol\"\u003enull:\u003c/span\u003e \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e\n\n      t.timestamps\n    \u003cspan class=\"hljs-keyword\"\u003eend\u003c/span\u003e\n  \u003cspan class=\"hljs-keyword\"\u003eend\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eend\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003e모델 정의\u003c/h2\u003e\n\u003cp\u003e다음으로 Product 모델을 정의하세요. lock_version 열은 Rails에서 낙관적 락킹에 자동으로 사용됩니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-ruby\"\u003e\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eProduct\u003c/span\u003e \u0026#x3C; \u003cspan class=\"hljs-title class_ inherited__\"\u003eApplicationRecord\u003c/span\u003e\n\u003cspan class=\"hljs-keyword\"\u003eend\u003c/span\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003e예시 사용법\u003c/h2\u003e\n\u003cp\u003e담아 두고 있는 상황에서는 어떻게 낙관적 락을 사용할 수 있을까요:\u003c/p\u003e\n\u003ch2\u003e사용자 A와 사용자 B가 동일한 레코드를 읽고 있는 경우\u003c/h2\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e# 사용자 A\nuser_a_product = \u003cspan class=\"hljs-title class_\"\u003eProduct\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003efind\u003c/span\u003e(\u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e) # id가 \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e인 제품을 읽음\n# user_a_product.\u003cspan class=\"hljs-property\"\u003elock_version\u003c/span\u003e은 \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e입니다\n\n# 사용자 B\nuser_b_product = \u003cspan class=\"hljs-title class_\"\u003eProduct\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003efind\u003c/span\u003e(\u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e) # 동일한 제품을 읽음\n# user_b_product.\u003cspan class=\"hljs-property\"\u003elock_version\u003c/span\u003e도 \u003cspan class=\"hljs-number\"\u003e0\u003c/span\u003e입니다\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003e사용자 A가 레코드를 업데이트합니다\u003c/h2\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e# 사용자 A가 가격을 업데이트합니다\nuser_a_product.\u003cspan class=\"hljs-property\"\u003eprice\u003c/span\u003e = \u003cspan class=\"hljs-number\"\u003e12.00\u003c/span\u003e\nuser_a_product.\u003cspan class=\"hljs-property\"\u003esave\u003c/span\u003e\n# 이로써 lock_version이 \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e로 증가합니다\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003e사용자 B가 레코드를 업데이트하려고 합니다\u003c/h2\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e# 사용자 B가 가격을 업데이트하려고 합니다\nuser_b_product.\u003cspan class=\"hljs-property\"\u003eprice\u003c/span\u003e = \u003cspan class=\"hljs-number\"\u003e11.00\u003c/span\u003e\nbegin\n  user_b_product.\u003cspan class=\"hljs-property\"\u003esave\u003c/span\u003e\nrescue \u003cspan class=\"hljs-title class_\"\u003eActiveRecord\u003c/span\u003e::\u003cspan class=\"hljs-title class_\"\u003eStaleObjectError\u003c/span\u003e\n  puts \u003cspan class=\"hljs-string\"\u003e\"이전 정보가 감지되었습니다.\"\u003c/span\u003e\n  # 충돌을 처리하기 위해 레코드를 다시 불러와서 재시도할 수 있습니다\n  user_b_product.\u003cspan class=\"hljs-property\"\u003ereload\u003c/span\u003e\n  # 이제 user_b_product.\u003cspan class=\"hljs-property\"\u003elock_version\u003c/span\u003e은 \u003cspan class=\"hljs-number\"\u003e1\u003c/span\u003e입니다\n  # 사용자 B가 업데이트를 다시 시도할지 결정할 수 있습니다\nend\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003e충돌 처리\u003c/h2\u003e\n\u003cp\u003eActiveRecord::StaleObjectError가 발생하면, 해당 레코드가 읽힌 후 다른 트랜잭션에 의해 수정되었음을 나타냅니다. 이를 처리하기 위해 레코드를 다시 불러오고 사용자에게 알릴 수도 있으며, 트랜잭션을 다시 시도하거나 애플리케이션 로직에 따라 변경 사항을 병합할 수 있습니다.\u003c/p\u003e\n\u003ch2\u003e완전한 예제\u003c/h2\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eProductsController\u003c/span\u003e \u0026#x3C; \u003cspan class=\"hljs-title class_\"\u003eApplicationController\u003c/span\u003e\n  def update\n    @product = \u003cspan class=\"hljs-title class_\"\u003eProduct\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003efind\u003c/span\u003e(params[:id])\n    @product.\u003cspan class=\"hljs-title function_\"\u003eassign_attributes\u003c/span\u003e(product_params)\n\n    begin\n      @product.\u003cspan class=\"hljs-property\"\u003esave\u003c/span\u003e\n      flash[:notice] = \u003cspan class=\"hljs-string\"\u003e\"제품이 성공적으로 업데이트되었습니다.\"\u003c/span\u003e\n    rescue \u003cspan class=\"hljs-title class_\"\u003eActiveRecord\u003c/span\u003e::\u003cspan class=\"hljs-title class_\"\u003eStaleObjectError\u003c/span\u003e\n      flash[:alert] = \u003cspan class=\"hljs-string\"\u003e\"제품이 다른 사용자에 의해 업데이트되었습니다. 변경 사항을 검토하고 다시 시도해주세요.\"\u003c/span\u003e\n      @product.\u003cspan class=\"hljs-property\"\u003ereload\u003c/span\u003e\n      # 선택적으로 사용자의 변경 사항을 다시 적용하고 통합된 양식을 사용자에게 제시할 수 있음\n    end\n\n    redirect_to @product\n  end\n\n  private\n\n  def product_params\n    params.\u003cspan class=\"hljs-built_in\"\u003erequire\u003c/span\u003e(:product).\u003cspan class=\"hljs-title function_\"\u003epermit\u003c/span\u003e(:name, :price)\n  end\nend\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch2\u003e결론\u003c/h2\u003e\n\u003cp\u003e이 예는 Ruby on Rails 애플리케이션에서 낙관적 잠금을 사용하는 방법을 보여줍니다. lock_version 열을 포함하고 Active Record의 내장 메커니즘을 사용하여 Rails는 버전 확인을 자동으로 처리하고 충돌이 감지되면 예외를 발생시킵니다. 이를 통해 애플리케이션이 적절하게 처리할 수 있도록 합니다.\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-06-19-Whatisoptimisticlockinginrails"},"buildId":"o1YmnmSuZvAX2O4TI9r41","isFallback":false,"gsp":true,"scriptLoader":[{"async":true,"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686","strategy":"lazyOnload","crossOrigin":"anonymous"}]}</script></body></html>

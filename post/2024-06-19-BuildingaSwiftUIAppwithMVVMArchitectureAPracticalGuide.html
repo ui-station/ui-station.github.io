@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>MVVM 아키텍처로 SwiftUI 앱 구축하기 실전 안내 | ui-station</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://ui-station.github.io///post/2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="MVVM 아키텍처로 SwiftUI 앱 구축하기 실전 안내 | ui-station" data-gatsby-head="true"/><meta property="og:title" content="MVVM 아키텍처로 SwiftUI 앱 구축하기 실전 안내 | ui-station" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://ui-station.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://ui-station.github.io///post/2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide" data-gatsby-head="true"/><meta name="twitter:title" content="MVVM 아키텍처로 SwiftUI 앱 구축하기 실전 안내 | ui-station" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | ui-station" data-gatsby-head="true"/><meta name="article:published_time" content="2024-06-19 10:58" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BHFR6GTH9P"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-BHFR6GTH9P');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-4a646156c659a948.js" defer=""></script><script src="/_next/static/chunks/348-d11c34b645b13f5b.js" defer=""></script><script src="/_next/static/chunks/162-4172e84c8e2aa747.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-4f7b40c1114f0d09.js" defer=""></script><script src="/_next/static/o1YmnmSuZvAX2O4TI9r41/_buildManifest.js" defer=""></script><script src="/_next/static/o1YmnmSuZvAX2O4TI9r41/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">UI STATION</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">MVVM 아키텍처로 SwiftUI 앱 구축하기 실전 안내</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="MVVM 아키텍처로 SwiftUI 앱 구축하기 실전 안내" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">UI STATION</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jun 19, 2024</span><span class="posts_reading_time__f7YPP">7<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<p>이 튜토리얼에서는 MVVM(Model-View-ViewModel) 아키텍처를 사용하여 간단한 SwiftUI 애플리케이션을 만드는 방법을 안내합니다. 데이터 처리 및 네트워킹을 위해 Combine 프레임워크를 활용할 것입니다. 이 예제에서는 REST API에서 데이터를 가져오고 게시하는 방법을 보여줍니다.</p>
+<h1>개요</h1>
+<p>다음과 같은 간단한 앱을 만들 것입니다:</p>
+<ul>
+<li>서버에서 게시물 목록을 가져오기.</li>
+<li>SwiftUI 뷰에서 게시물을 표시하기.</li>
+<li>새 게시물을 생성하기.</li>
+</ul>
+<h1>프로젝트 설정</h1>
+<p>먼저 Xcode에서 새로운 SwiftUI 프로젝트를 생성하세요. 그런 다음, 더 나은 구성을 위해 다음과 같은 폴더를 설정합니다:</p>
+<ul>
+<li>Models</li>
+<li>ViewModels</li>
+<li>Views</li>
+<li>Services</li>
+</ul>
+<h1>Models</h1>
+<p>"Post" 모델을 시작해봅시다. 이 모델은 Identifiable과 Codable을 준수합니다.</p>
+<pre><code class="hljs language-swift"><span class="hljs-comment">// Models/Post.swift</span>
+
+<span class="hljs-keyword">import</span> Foundation
+
+<span class="hljs-keyword">struct</span> <span class="hljs-title class_">Post</span>: <span class="hljs-title class_">Identifiable</span>, <span class="hljs-title class_">Codable</span> {
+    <span class="hljs-keyword">let</span> id: <span class="hljs-type">Int</span>
+    <span class="hljs-keyword">let</span> title: <span class="hljs-type">String</span>
+    <span class="hljs-keyword">let</span> body: <span class="hljs-type">String</span>
+}
+</code></pre>
+<h1>서비스</h1>
+<p>네트워크 요청을 처리하기 위한 서비스 레이어가 필요합니다. ApiService와 ApiEndpoints를 만들 것입니다.</p>
+<p>// Services/ApiEndpoints.swift</p>
+<p>import Foundation</p>
+<p>class ApiEndpoints {
+static let baseURL = "<a href="https://jsonplaceholder.typicode.com" rel="nofollow" target="_blank">https://jsonplaceholder.typicode.com</a>"</p>
+<pre><code>static var posts: String { return "\(baseURL)/posts" }
+static func post(id: Int) -> String { return "\(baseURL)/posts/\(id)" }
+</code></pre>
+<p>}</p>
+<p>// Services/ApiService.swift</p>
+<p>import Foundation
+import Combine</p>
+<p>class ApiService {
+static let shared = ApiService()
+private init() {}</p>
+<pre><code>private func makeRequest&#x3C;T: Decodable>(url: String, method: String, body: Data? = nil) -> AnyPublisher&#x3C;T, Error> {
+    guard let url = URL(string: url) else {
+        fatalError("Invalid URL")
+    }
+    
+    var request = URLRequest(url: url)
+    request.httpMethod = method
+    if let body = body {
+        request.httpBody = body
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    }
+    
+    return URLSession.shared.dataTaskPublisher(for: request)
+        .tryMap { output in
+            guard let response = output.response as? HTTPURLResponse,
+                  response.statusCode >= 200 &#x26;&#x26; response.statusCode &#x3C; 300 else {
+                throw URLError(.badServerResponse)
+            }
+            return output.data
+        }
+        .decode(type: T.self, decoder: JSONDecoder())
+        .eraseToAnyPublisher()
+}
+
+func get&#x3C;T: Decodable>(url: String) -> AnyPublisher&#x3C;T, Error> {
+    return makeRequest(url: url, method: "GET")
+}
+
+func post&#x3C;T: Decodable, U: Encodable>(url: String, body: U) -> AnyPublisher&#x3C;T, Error> {
+    guard let bodyData = try? JSONEncoder().encode(body) else {
+        fatalError("Invalid body data")
+    }
+    return makeRequest(url: url, method: "POST", body: bodyData)
+}
+
+func delete&#x3C;T: Decodable>(url: String) -> AnyPublisher&#x3C;T, Error> {
+    return makeRequest(url: url, method: "DELETE")
+}
+</code></pre>
+<p>}</p>
+<h1>ViewModels</h1>
+<p>이제, PostViewModel을 만들어서 게시물을 가져오고 만들어봅시다.</p>
+<pre><code class="hljs language-swift"><span class="hljs-comment">// ViewModels/PostViewModel.swift</span>
+
+<span class="hljs-keyword">import</span> Foundation
+<span class="hljs-keyword">import</span> Combine
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">PostViewModel</span>: <span class="hljs-title class_">ObservableObject</span> {
+    <span class="hljs-meta">@Published</span> <span class="hljs-keyword">var</span> posts: [<span class="hljs-type">Post</span>] <span class="hljs-operator">=</span> []
+    <span class="hljs-meta">@Published</span> <span class="hljs-keyword">var</span> isLoading <span class="hljs-operator">=</span> <span class="hljs-literal">false</span>
+    <span class="hljs-meta">@Published</span> <span class="hljs-keyword">var</span> errorMessage: <span class="hljs-type">String</span>? <span class="hljs-operator">=</span> <span class="hljs-literal">nil</span>
+    
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> cancellables <span class="hljs-operator">=</span> <span class="hljs-type">Set</span>&#x3C;<span class="hljs-type">AnyCancellable</span>>()
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">let</span> apiService <span class="hljs-operator">=</span> <span class="hljs-type">ApiService</span>.shared
+    
+    <span class="hljs-keyword">func</span> <span class="hljs-title function_">fetchPosts</span>() {
+        <span class="hljs-keyword">self</span>.isLoading <span class="hljs-operator">=</span> <span class="hljs-literal">true</span>
+        <span class="hljs-keyword">self</span>.errorMessage <span class="hljs-operator">=</span> <span class="hljs-literal">nil</span>
+        
+        apiService.get(url: <span class="hljs-type">ApiEndpoints</span>.posts)
+            .receive(on: <span class="hljs-type">DispatchQueue</span>.main)
+            .sink(receiveCompletion: { [<span class="hljs-keyword">weak</span> <span class="hljs-keyword">self</span>] completion <span class="hljs-keyword">in</span>
+                <span class="hljs-keyword">self</span><span class="hljs-operator">?</span>.isLoading <span class="hljs-operator">=</span> <span class="hljs-literal">false</span>
+                <span class="hljs-keyword">switch</span> completion {
+                <span class="hljs-keyword">case</span> .failure(<span class="hljs-keyword">let</span> error):
+                    <span class="hljs-keyword">self</span><span class="hljs-operator">?</span>.errorMessage <span class="hljs-operator">=</span> error.localizedDescription
+                <span class="hljs-keyword">case</span> .finished:
+                    <span class="hljs-keyword">break</span>
+                }
+            }, receiveValue: { [<span class="hljs-keyword">weak</span> <span class="hljs-keyword">self</span>] posts <span class="hljs-keyword">in</span>
+                <span class="hljs-keyword">self</span><span class="hljs-operator">?</span>.posts <span class="hljs-operator">=</span> posts
+            })
+            .store(in: <span class="hljs-operator">&#x26;</span>cancellables)
+    }
+    
+    <span class="hljs-keyword">func</span> <span class="hljs-title function_">createPost</span>() {
+        <span class="hljs-keyword">let</span> newPost <span class="hljs-operator">=</span> <span class="hljs-type">Post</span>(id: <span class="hljs-number">101</span>, title: <span class="hljs-string">"New Post"</span>, body: <span class="hljs-string">"This is a new post."</span>)
+        
+        apiService.post(url: <span class="hljs-type">ApiEndpoints</span>.posts, body: newPost)
+            .receive(on: <span class="hljs-type">DispatchQueue</span>.main)
+            .sink(receiveCompletion: { completion <span class="hljs-keyword">in</span>
+                <span class="hljs-keyword">switch</span> completion {
+                <span class="hljs-keyword">case</span> .failure(<span class="hljs-keyword">let</span> error):
+                    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Error: <span class="hljs-subst">\(error.localizedDescription)</span>"</span>)
+                <span class="hljs-keyword">case</span> .finished:
+                    <span class="hljs-built_in">print</span>(<span class="hljs-string">"Post created successfully"</span>)
+                }
+            }, receiveValue: { (post: <span class="hljs-type">Post</span>) <span class="hljs-keyword">in</span>
+                <span class="hljs-built_in">print</span>(<span class="hljs-string">"Created post: <span class="hljs-subst">\(post)</span>"</span>)
+            })
+            .store(in: <span class="hljs-operator">&#x26;</span>cancellables)
+    }
+}
+</code></pre>
+<h1>Views</h1>
+<p>마지막으로, SwiftUI 뷰를 생성하여 게시물을 표시하고 사용자 상호작용을 처리합니다.</p>
+<pre><code class="hljs language-swift"><span class="hljs-comment">// Views/PostListView.swift</span>
+
+<span class="hljs-keyword">import</span> SwiftUI
+
+<span class="hljs-keyword">struct</span> <span class="hljs-title class_">PostListView</span>: <span class="hljs-title class_">View</span> {
+    <span class="hljs-meta">@StateObject</span> <span class="hljs-keyword">private</span> <span class="hljs-keyword">var</span> viewModel <span class="hljs-operator">=</span> <span class="hljs-type">PostViewModel</span>()
+    
+    <span class="hljs-keyword">var</span> body: <span class="hljs-keyword">some</span> <span class="hljs-type">View</span> {
+        <span class="hljs-type">NavigationView</span> {
+            <span class="hljs-type">VStack</span> {
+                <span class="hljs-keyword">if</span> viewModel.isLoading {
+                    <span class="hljs-type">ProgressView</span>(<span class="hljs-string">"로딩 중..."</span>)
+                } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> <span class="hljs-keyword">let</span> errorMessage <span class="hljs-operator">=</span> viewModel.errorMessage {
+                    <span class="hljs-type">Text</span>(<span class="hljs-string">"오류: <span class="hljs-subst">\(errorMessage)</span>"</span>)
+                } <span class="hljs-keyword">else</span> {
+                    <span class="hljs-type">List</span>(viewModel.posts) { post <span class="hljs-keyword">in</span>
+                        <span class="hljs-type">VStack</span>(alignment: .leading) {
+                            <span class="hljs-type">Text</span>(post.title)
+                                .font(.headline)
+                            <span class="hljs-type">Text</span>(post.body)
+                                .font(.subheadline)
+                        }
+                    }
+                }
+            }
+            .navigationTitle(<span class="hljs-string">"게시물"</span>)
+            .onAppear {
+                viewModel.fetchPosts()
+            }
+            .toolbar {
+                <span class="hljs-type">Button</span>(action: {
+                    viewModel.createPost()
+                }) {
+                    <span class="hljs-type">Image</span>(systemName: <span class="hljs-string">"plus"</span>)
+                }
+            }
+        }
+    }
+}
+
+<span class="hljs-keyword">struct</span> <span class="hljs-title class_">PostListView_Previews</span>: <span class="hljs-title class_">PreviewProvider</span> {
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">var</span> previews: <span class="hljs-keyword">some</span> <span class="hljs-type">View</span> {
+        <span class="hljs-type">PostListView</span>()
+    }
+}
+</code></pre>
+<h1>모두 함께 적용하기</h1>
+<p>모두가 동작하는 것을 보려면 PostListView를 App 구조체의 진입점으로 설정하세요.</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// demoApp.swift</span>
+
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">SwiftUI</span>
+
+@main
+struct <span class="hljs-attr">demoApp</span>: <span class="hljs-title class_">App</span> {
+    <span class="hljs-keyword">var</span> <span class="hljs-attr">body</span>: some <span class="hljs-title class_">Scene</span> {
+        <span class="hljs-title class_">WindowGroup</span> {
+            <span class="hljs-title class_">PostListView</span>()
+        }
+    }
+}
+</code></pre>
+<p>이 튜토리얼에서는 SwiftUI 애플리케이션에서 간단한 MVVM 아키텍처를 구현했습니다. 이 구조는 관심사를 분리하여 코드를 보다 깨끗하고 유지보수하기 쉽게 만들어주며, Combine과 같은 Swift의 강력한 기능을 활용하여 비동기 데이터 스트림 처리에도 도움이 됩니다.</p>
+<p>이 안내를 따르면 SwiftUI 프로젝트에서 MVVM을 설정하고 사용하는 방법에 대해 잘 이해할 수 있을 것입니다. 코딩을 즐기세요!</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"MVVM 아키텍처로 SwiftUI 앱 구축하기 실전 안내","description":"","date":"2024-06-19 10:58","slug":"2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide","content":"\n\n이 튜토리얼에서는 MVVM(Model-View-ViewModel) 아키텍처를 사용하여 간단한 SwiftUI 애플리케이션을 만드는 방법을 안내합니다. 데이터 처리 및 네트워킹을 위해 Combine 프레임워크를 활용할 것입니다. 이 예제에서는 REST API에서 데이터를 가져오고 게시하는 방법을 보여줍니다.\n\n# 개요\n\n다음과 같은 간단한 앱을 만들 것입니다:\n\n- 서버에서 게시물 목록을 가져오기.\n- SwiftUI 뷰에서 게시물을 표시하기.\n- 새 게시물을 생성하기.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n# 프로젝트 설정\n\n먼저 Xcode에서 새로운 SwiftUI 프로젝트를 생성하세요. 그런 다음, 더 나은 구성을 위해 다음과 같은 폴더를 설정합니다:\n\n- Models\n- ViewModels\n- Views\n- Services\n\n# Models\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n\"Post\" 모델을 시작해봅시다. 이 모델은 Identifiable과 Codable을 준수합니다.\n\n```swift\n// Models/Post.swift\n\nimport Foundation\n\nstruct Post: Identifiable, Codable {\n    let id: Int\n    let title: String\n    let body: String\n}\n```\n\n# 서비스\n\n네트워크 요청을 처리하기 위한 서비스 레이어가 필요합니다. ApiService와 ApiEndpoints를 만들 것입니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n\n// Services/ApiEndpoints.swift\n\nimport Foundation\n\nclass ApiEndpoints {\n    static let baseURL = \"https://jsonplaceholder.typicode.com\"\n    \n    static var posts: String { return \"\\(baseURL)/posts\" }\n    static func post(id: Int) -\u003e String { return \"\\(baseURL)/posts/\\(id)\" }\n}\n\n\n\n// Services/ApiService.swift\n\nimport Foundation\nimport Combine\n\nclass ApiService {\n    static let shared = ApiService()\n    private init() {}\n    \n    private func makeRequest\u003cT: Decodable\u003e(url: String, method: String, body: Data? = nil) -\u003e AnyPublisher\u003cT, Error\u003e {\n        guard let url = URL(string: url) else {\n            fatalError(\"Invalid URL\")\n        }\n        \n        var request = URLRequest(url: url)\n        request.httpMethod = method\n        if let body = body {\n            request.httpBody = body\n            request.setValue(\"application/json\", forHTTPHeaderField: \"Content-Type\")\n        }\n        \n        return URLSession.shared.dataTaskPublisher(for: request)\n            .tryMap { output in\n                guard let response = output.response as? HTTPURLResponse,\n                      response.statusCode \u003e= 200 \u0026\u0026 response.statusCode \u003c 300 else {\n                    throw URLError(.badServerResponse)\n                }\n                return output.data\n            }\n            .decode(type: T.self, decoder: JSONDecoder())\n            .eraseToAnyPublisher()\n    }\n    \n    func get\u003cT: Decodable\u003e(url: String) -\u003e AnyPublisher\u003cT, Error\u003e {\n        return makeRequest(url: url, method: \"GET\")\n    }\n    \n    func post\u003cT: Decodable, U: Encodable\u003e(url: String, body: U) -\u003e AnyPublisher\u003cT, Error\u003e {\n        guard let bodyData = try? JSONEncoder().encode(body) else {\n            fatalError(\"Invalid body data\")\n        }\n        return makeRequest(url: url, method: \"POST\", body: bodyData)\n    }\n    \n    func delete\u003cT: Decodable\u003e(url: String) -\u003e AnyPublisher\u003cT, Error\u003e {\n        return makeRequest(url: url, method: \"DELETE\")\n    }\n}\n\n\n# ViewModels\n\n이제, PostViewModel을 만들어서 게시물을 가져오고 만들어봅시다.\n\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n```swift\n// ViewModels/PostViewModel.swift\n\nimport Foundation\nimport Combine\n\nclass PostViewModel: ObservableObject {\n    @Published var posts: [Post] = []\n    @Published var isLoading = false\n    @Published var errorMessage: String? = nil\n    \n    private var cancellables = Set\u003cAnyCancellable\u003e()\n    private let apiService = ApiService.shared\n    \n    func fetchPosts() {\n        self.isLoading = true\n        self.errorMessage = nil\n        \n        apiService.get(url: ApiEndpoints.posts)\n            .receive(on: DispatchQueue.main)\n            .sink(receiveCompletion: { [weak self] completion in\n                self?.isLoading = false\n                switch completion {\n                case .failure(let error):\n                    self?.errorMessage = error.localizedDescription\n                case .finished:\n                    break\n                }\n            }, receiveValue: { [weak self] posts in\n                self?.posts = posts\n            })\n            .store(in: \u0026cancellables)\n    }\n    \n    func createPost() {\n        let newPost = Post(id: 101, title: \"New Post\", body: \"This is a new post.\")\n        \n        apiService.post(url: ApiEndpoints.posts, body: newPost)\n            .receive(on: DispatchQueue.main)\n            .sink(receiveCompletion: { completion in\n                switch completion {\n                case .failure(let error):\n                    print(\"Error: \\(error.localizedDescription)\")\n                case .finished:\n                    print(\"Post created successfully\")\n                }\n            }, receiveValue: { (post: Post) in\n                print(\"Created post: \\(post)\")\n            })\n            .store(in: \u0026cancellables)\n    }\n}\n```\n\n# Views\n\n마지막으로, SwiftUI 뷰를 생성하여 게시물을 표시하고 사용자 상호작용을 처리합니다.\n\n```swift\n// Views/PostListView.swift\n\nimport SwiftUI\n\nstruct PostListView: View {\n    @StateObject private var viewModel = PostViewModel()\n    \n    var body: some View {\n        NavigationView {\n            VStack {\n                if viewModel.isLoading {\n                    ProgressView(\"로딩 중...\")\n                } else if let errorMessage = viewModel.errorMessage {\n                    Text(\"오류: \\(errorMessage)\")\n                } else {\n                    List(viewModel.posts) { post in\n                        VStack(alignment: .leading) {\n                            Text(post.title)\n                                .font(.headline)\n                            Text(post.body)\n                                .font(.subheadline)\n                        }\n                    }\n                }\n            }\n            .navigationTitle(\"게시물\")\n            .onAppear {\n                viewModel.fetchPosts()\n            }\n            .toolbar {\n                Button(action: {\n                    viewModel.createPost()\n                }) {\n                    Image(systemName: \"plus\")\n                }\n            }\n        }\n    }\n}\n\nstruct PostListView_Previews: PreviewProvider {\n    static var previews: some View {\n        PostListView()\n    }\n}\n```\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n# 모두 함께 적용하기\n\n모두가 동작하는 것을 보려면 PostListView를 App 구조체의 진입점으로 설정하세요.\n\n```js\n// demoApp.swift\n\nimport SwiftUI\n\n@main\nstruct demoApp: App {\n    var body: some Scene {\n        WindowGroup {\n            PostListView()\n        }\n    }\n}\n```\n\n이 튜토리얼에서는 SwiftUI 애플리케이션에서 간단한 MVVM 아키텍처를 구현했습니다. 이 구조는 관심사를 분리하여 코드를 보다 깨끗하고 유지보수하기 쉽게 만들어주며, Combine과 같은 Swift의 강력한 기능을 활용하여 비동기 데이터 스트림 처리에도 도움이 됩니다.\n\n\u003cdiv class=\"content-ad\"\u003e\u003c/div\u003e\n\n이 안내를 따르면 SwiftUI 프로젝트에서 MVVM을 설정하고 사용하는 방법에 대해 잘 이해할 수 있을 것입니다. 코딩을 즐기세요!","ogImage":{"url":"/assets/img/2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide_0.png"},"coverImage":"/assets/img/2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide_0.png","tag":["Tech"],"readingTime":7},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cp\u003e이 튜토리얼에서는 MVVM(Model-View-ViewModel) 아키텍처를 사용하여 간단한 SwiftUI 애플리케이션을 만드는 방법을 안내합니다. 데이터 처리 및 네트워킹을 위해 Combine 프레임워크를 활용할 것입니다. 이 예제에서는 REST API에서 데이터를 가져오고 게시하는 방법을 보여줍니다.\u003c/p\u003e\n\u003ch1\u003e개요\u003c/h1\u003e\n\u003cp\u003e다음과 같은 간단한 앱을 만들 것입니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e서버에서 게시물 목록을 가져오기.\u003c/li\u003e\n\u003cli\u003eSwiftUI 뷰에서 게시물을 표시하기.\u003c/li\u003e\n\u003cli\u003e새 게시물을 생성하기.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003e프로젝트 설정\u003c/h1\u003e\n\u003cp\u003e먼저 Xcode에서 새로운 SwiftUI 프로젝트를 생성하세요. 그런 다음, 더 나은 구성을 위해 다음과 같은 폴더를 설정합니다:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eModels\u003c/li\u003e\n\u003cli\u003eViewModels\u003c/li\u003e\n\u003cli\u003eViews\u003c/li\u003e\n\u003cli\u003eServices\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003eModels\u003c/h1\u003e\n\u003cp\u003e\"Post\" 모델을 시작해봅시다. 이 모델은 Identifiable과 Codable을 준수합니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-swift\"\u003e\u003cspan class=\"hljs-comment\"\u003e// Models/Post.swift\u003c/span\u003e\n\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e Foundation\n\n\u003cspan class=\"hljs-keyword\"\u003estruct\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003ePost\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eIdentifiable\u003c/span\u003e, \u003cspan class=\"hljs-title class_\"\u003eCodable\u003c/span\u003e {\n    \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e id: \u003cspan class=\"hljs-type\"\u003eInt\u003c/span\u003e\n    \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e title: \u003cspan class=\"hljs-type\"\u003eString\u003c/span\u003e\n    \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e body: \u003cspan class=\"hljs-type\"\u003eString\u003c/span\u003e\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1\u003e서비스\u003c/h1\u003e\n\u003cp\u003e네트워크 요청을 처리하기 위한 서비스 레이어가 필요합니다. ApiService와 ApiEndpoints를 만들 것입니다.\u003c/p\u003e\n\u003cp\u003e// Services/ApiEndpoints.swift\u003c/p\u003e\n\u003cp\u003eimport Foundation\u003c/p\u003e\n\u003cp\u003eclass ApiEndpoints {\nstatic let baseURL = \"\u003ca href=\"https://jsonplaceholder.typicode.com\" rel=\"nofollow\" target=\"_blank\"\u003ehttps://jsonplaceholder.typicode.com\u003c/a\u003e\"\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003estatic var posts: String { return \"\\(baseURL)/posts\" }\nstatic func post(id: Int) -\u003e String { return \"\\(baseURL)/posts/\\(id)\" }\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e}\u003c/p\u003e\n\u003cp\u003e// Services/ApiService.swift\u003c/p\u003e\n\u003cp\u003eimport Foundation\nimport Combine\u003c/p\u003e\n\u003cp\u003eclass ApiService {\nstatic let shared = ApiService()\nprivate init() {}\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003eprivate func makeRequest\u0026#x3C;T: Decodable\u003e(url: String, method: String, body: Data? = nil) -\u003e AnyPublisher\u0026#x3C;T, Error\u003e {\n    guard let url = URL(string: url) else {\n        fatalError(\"Invalid URL\")\n    }\n    \n    var request = URLRequest(url: url)\n    request.httpMethod = method\n    if let body = body {\n        request.httpBody = body\n        request.setValue(\"application/json\", forHTTPHeaderField: \"Content-Type\")\n    }\n    \n    return URLSession.shared.dataTaskPublisher(for: request)\n        .tryMap { output in\n            guard let response = output.response as? HTTPURLResponse,\n                  response.statusCode \u003e= 200 \u0026#x26;\u0026#x26; response.statusCode \u0026#x3C; 300 else {\n                throw URLError(.badServerResponse)\n            }\n            return output.data\n        }\n        .decode(type: T.self, decoder: JSONDecoder())\n        .eraseToAnyPublisher()\n}\n\nfunc get\u0026#x3C;T: Decodable\u003e(url: String) -\u003e AnyPublisher\u0026#x3C;T, Error\u003e {\n    return makeRequest(url: url, method: \"GET\")\n}\n\nfunc post\u0026#x3C;T: Decodable, U: Encodable\u003e(url: String, body: U) -\u003e AnyPublisher\u0026#x3C;T, Error\u003e {\n    guard let bodyData = try? JSONEncoder().encode(body) else {\n        fatalError(\"Invalid body data\")\n    }\n    return makeRequest(url: url, method: \"POST\", body: bodyData)\n}\n\nfunc delete\u0026#x3C;T: Decodable\u003e(url: String) -\u003e AnyPublisher\u0026#x3C;T, Error\u003e {\n    return makeRequest(url: url, method: \"DELETE\")\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e}\u003c/p\u003e\n\u003ch1\u003eViewModels\u003c/h1\u003e\n\u003cp\u003e이제, PostViewModel을 만들어서 게시물을 가져오고 만들어봅시다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-swift\"\u003e\u003cspan class=\"hljs-comment\"\u003e// ViewModels/PostViewModel.swift\u003c/span\u003e\n\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e Foundation\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e Combine\n\n\u003cspan class=\"hljs-keyword\"\u003eclass\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003ePostViewModel\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eObservableObject\u003c/span\u003e {\n    \u003cspan class=\"hljs-meta\"\u003e@Published\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e posts: [\u003cspan class=\"hljs-type\"\u003ePost\u003c/span\u003e] \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e []\n    \u003cspan class=\"hljs-meta\"\u003e@Published\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e isLoading \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e\n    \u003cspan class=\"hljs-meta\"\u003e@Published\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e errorMessage: \u003cspan class=\"hljs-type\"\u003eString\u003c/span\u003e? \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-literal\"\u003enil\u003c/span\u003e\n    \n    \u003cspan class=\"hljs-keyword\"\u003eprivate\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e cancellables \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-type\"\u003eSet\u003c/span\u003e\u0026#x3C;\u003cspan class=\"hljs-type\"\u003eAnyCancellable\u003c/span\u003e\u003e()\n    \u003cspan class=\"hljs-keyword\"\u003eprivate\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e apiService \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-type\"\u003eApiService\u003c/span\u003e.shared\n    \n    \u003cspan class=\"hljs-keyword\"\u003efunc\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003efetchPosts\u003c/span\u003e() {\n        \u003cspan class=\"hljs-keyword\"\u003eself\u003c/span\u003e.isLoading \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-literal\"\u003etrue\u003c/span\u003e\n        \u003cspan class=\"hljs-keyword\"\u003eself\u003c/span\u003e.errorMessage \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-literal\"\u003enil\u003c/span\u003e\n        \n        apiService.get(url: \u003cspan class=\"hljs-type\"\u003eApiEndpoints\u003c/span\u003e.posts)\n            .receive(on: \u003cspan class=\"hljs-type\"\u003eDispatchQueue\u003c/span\u003e.main)\n            .sink(receiveCompletion: { [\u003cspan class=\"hljs-keyword\"\u003eweak\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eself\u003c/span\u003e] completion \u003cspan class=\"hljs-keyword\"\u003ein\u003c/span\u003e\n                \u003cspan class=\"hljs-keyword\"\u003eself\u003c/span\u003e\u003cspan class=\"hljs-operator\"\u003e?\u003c/span\u003e.isLoading \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-literal\"\u003efalse\u003c/span\u003e\n                \u003cspan class=\"hljs-keyword\"\u003eswitch\u003c/span\u003e completion {\n                \u003cspan class=\"hljs-keyword\"\u003ecase\u003c/span\u003e .failure(\u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e error):\n                    \u003cspan class=\"hljs-keyword\"\u003eself\u003c/span\u003e\u003cspan class=\"hljs-operator\"\u003e?\u003c/span\u003e.errorMessage \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e error.localizedDescription\n                \u003cspan class=\"hljs-keyword\"\u003ecase\u003c/span\u003e .finished:\n                    \u003cspan class=\"hljs-keyword\"\u003ebreak\u003c/span\u003e\n                }\n            }, receiveValue: { [\u003cspan class=\"hljs-keyword\"\u003eweak\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eself\u003c/span\u003e] posts \u003cspan class=\"hljs-keyword\"\u003ein\u003c/span\u003e\n                \u003cspan class=\"hljs-keyword\"\u003eself\u003c/span\u003e\u003cspan class=\"hljs-operator\"\u003e?\u003c/span\u003e.posts \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e posts\n            })\n            .store(in: \u003cspan class=\"hljs-operator\"\u003e\u0026#x26;\u003c/span\u003ecancellables)\n    }\n    \n    \u003cspan class=\"hljs-keyword\"\u003efunc\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003ecreatePost\u003c/span\u003e() {\n        \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e newPost \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-type\"\u003ePost\u003c/span\u003e(id: \u003cspan class=\"hljs-number\"\u003e101\u003c/span\u003e, title: \u003cspan class=\"hljs-string\"\u003e\"New Post\"\u003c/span\u003e, body: \u003cspan class=\"hljs-string\"\u003e\"This is a new post.\"\u003c/span\u003e)\n        \n        apiService.post(url: \u003cspan class=\"hljs-type\"\u003eApiEndpoints\u003c/span\u003e.posts, body: newPost)\n            .receive(on: \u003cspan class=\"hljs-type\"\u003eDispatchQueue\u003c/span\u003e.main)\n            .sink(receiveCompletion: { completion \u003cspan class=\"hljs-keyword\"\u003ein\u003c/span\u003e\n                \u003cspan class=\"hljs-keyword\"\u003eswitch\u003c/span\u003e completion {\n                \u003cspan class=\"hljs-keyword\"\u003ecase\u003c/span\u003e .failure(\u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e error):\n                    \u003cspan class=\"hljs-built_in\"\u003eprint\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Error: \u003cspan class=\"hljs-subst\"\u003e\\(error.localizedDescription)\u003c/span\u003e\"\u003c/span\u003e)\n                \u003cspan class=\"hljs-keyword\"\u003ecase\u003c/span\u003e .finished:\n                    \u003cspan class=\"hljs-built_in\"\u003eprint\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Post created successfully\"\u003c/span\u003e)\n                }\n            }, receiveValue: { (post: \u003cspan class=\"hljs-type\"\u003ePost\u003c/span\u003e) \u003cspan class=\"hljs-keyword\"\u003ein\u003c/span\u003e\n                \u003cspan class=\"hljs-built_in\"\u003eprint\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"Created post: \u003cspan class=\"hljs-subst\"\u003e\\(post)\u003c/span\u003e\"\u003c/span\u003e)\n            })\n            .store(in: \u003cspan class=\"hljs-operator\"\u003e\u0026#x26;\u003c/span\u003ecancellables)\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1\u003eViews\u003c/h1\u003e\n\u003cp\u003e마지막으로, SwiftUI 뷰를 생성하여 게시물을 표시하고 사용자 상호작용을 처리합니다.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-swift\"\u003e\u003cspan class=\"hljs-comment\"\u003e// Views/PostListView.swift\u003c/span\u003e\n\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e SwiftUI\n\n\u003cspan class=\"hljs-keyword\"\u003estruct\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003ePostListView\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eView\u003c/span\u003e {\n    \u003cspan class=\"hljs-meta\"\u003e@StateObject\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eprivate\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e viewModel \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e \u003cspan class=\"hljs-type\"\u003ePostViewModel\u003c/span\u003e()\n    \n    \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e body: \u003cspan class=\"hljs-keyword\"\u003esome\u003c/span\u003e \u003cspan class=\"hljs-type\"\u003eView\u003c/span\u003e {\n        \u003cspan class=\"hljs-type\"\u003eNavigationView\u003c/span\u003e {\n            \u003cspan class=\"hljs-type\"\u003eVStack\u003c/span\u003e {\n                \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e viewModel.isLoading {\n                    \u003cspan class=\"hljs-type\"\u003eProgressView\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"로딩 중...\"\u003c/span\u003e)\n                } \u003cspan class=\"hljs-keyword\"\u003eelse\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003elet\u003c/span\u003e errorMessage \u003cspan class=\"hljs-operator\"\u003e=\u003c/span\u003e viewModel.errorMessage {\n                    \u003cspan class=\"hljs-type\"\u003eText\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e\"오류: \u003cspan class=\"hljs-subst\"\u003e\\(errorMessage)\u003c/span\u003e\"\u003c/span\u003e)\n                } \u003cspan class=\"hljs-keyword\"\u003eelse\u003c/span\u003e {\n                    \u003cspan class=\"hljs-type\"\u003eList\u003c/span\u003e(viewModel.posts) { post \u003cspan class=\"hljs-keyword\"\u003ein\u003c/span\u003e\n                        \u003cspan class=\"hljs-type\"\u003eVStack\u003c/span\u003e(alignment: .leading) {\n                            \u003cspan class=\"hljs-type\"\u003eText\u003c/span\u003e(post.title)\n                                .font(.headline)\n                            \u003cspan class=\"hljs-type\"\u003eText\u003c/span\u003e(post.body)\n                                .font(.subheadline)\n                        }\n                    }\n                }\n            }\n            .navigationTitle(\u003cspan class=\"hljs-string\"\u003e\"게시물\"\u003c/span\u003e)\n            .onAppear {\n                viewModel.fetchPosts()\n            }\n            .toolbar {\n                \u003cspan class=\"hljs-type\"\u003eButton\u003c/span\u003e(action: {\n                    viewModel.createPost()\n                }) {\n                    \u003cspan class=\"hljs-type\"\u003eImage\u003c/span\u003e(systemName: \u003cspan class=\"hljs-string\"\u003e\"plus\"\u003c/span\u003e)\n                }\n            }\n        }\n    }\n}\n\n\u003cspan class=\"hljs-keyword\"\u003estruct\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003ePostListView_Previews\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003ePreviewProvider\u003c/span\u003e {\n    \u003cspan class=\"hljs-keyword\"\u003estatic\u003c/span\u003e \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e previews: \u003cspan class=\"hljs-keyword\"\u003esome\u003c/span\u003e \u003cspan class=\"hljs-type\"\u003eView\u003c/span\u003e {\n        \u003cspan class=\"hljs-type\"\u003ePostListView\u003c/span\u003e()\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch1\u003e모두 함께 적용하기\u003c/h1\u003e\n\u003cp\u003e모두가 동작하는 것을 보려면 PostListView를 App 구조체의 진입점으로 설정하세요.\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u003cspan class=\"hljs-comment\"\u003e// demoApp.swift\u003c/span\u003e\n\n\u003cspan class=\"hljs-keyword\"\u003eimport\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eSwiftUI\u003c/span\u003e\n\n@main\nstruct \u003cspan class=\"hljs-attr\"\u003edemoApp\u003c/span\u003e: \u003cspan class=\"hljs-title class_\"\u003eApp\u003c/span\u003e {\n    \u003cspan class=\"hljs-keyword\"\u003evar\u003c/span\u003e \u003cspan class=\"hljs-attr\"\u003ebody\u003c/span\u003e: some \u003cspan class=\"hljs-title class_\"\u003eScene\u003c/span\u003e {\n        \u003cspan class=\"hljs-title class_\"\u003eWindowGroup\u003c/span\u003e {\n            \u003cspan class=\"hljs-title class_\"\u003ePostListView\u003c/span\u003e()\n        }\n    }\n}\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e이 튜토리얼에서는 SwiftUI 애플리케이션에서 간단한 MVVM 아키텍처를 구현했습니다. 이 구조는 관심사를 분리하여 코드를 보다 깨끗하고 유지보수하기 쉽게 만들어주며, Combine과 같은 Swift의 강력한 기능을 활용하여 비동기 데이터 스트림 처리에도 도움이 됩니다.\u003c/p\u003e\n\u003cp\u003e이 안내를 따르면 SwiftUI 프로젝트에서 MVVM을 설정하고 사용하는 방법에 대해 잘 이해할 수 있을 것입니다. 코딩을 즐기세요!\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-06-19-BuildingaSwiftUIAppwithMVVMArchitectureAPracticalGuide"},"buildId":"o1YmnmSuZvAX2O4TI9r41","isFallback":false,"gsp":true,"scriptLoader":[{"async":true,"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686","strategy":"lazyOnload","crossOrigin":"anonymous"}]}</script></body></html>
