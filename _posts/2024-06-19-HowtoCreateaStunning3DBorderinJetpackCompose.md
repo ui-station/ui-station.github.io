@@ -3,13 +3,12 @@ title: "제트팩 콤포즈에서 멋진 3D 테두리를 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtoCreateaStunning3DBorderinJetpackCompose_0.png"
 date: 2024-06-19 10:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtoCreateaStunning3DBorderinJetpackCompose_0.png
 tag: Tech
 originalTitle: "How to Create a Stunning 3D Border in Jetpack Compose"
 link: "https://medium.com/@kappdev/how-to-create-a-stunning-3d-border-in-jetpack-compose-e040fbb6b8de"
 ---
-
 
 환영합니다! 👋
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@kappdev/how-to-create-a-stunning-3d-border-in-jetpack
 
 ![image](/assets/img/2024-06-19-HowtoCreateaStunning3DBorderinJetpackCompose_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Convex Border
 
@@ -29,7 +39,18 @@ Modifier를 위한 주요 convexBorder 확장 기능을 정의하는 것부터 �
 
 이전에 윤곽 효과의 스타일을 나타내는 ConvexStyle 데이터 클래스를 만들어서 명확성을 높입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 data class ConvexStyle(
@@ -53,7 +74,18 @@ fun Modifier.convexBorder(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ⭐ color ➜ 테두리의 색상입니다.
 
@@ -63,7 +95,18 @@ fun Modifier.convexBorder(
 
 ⭐ convexStyle ➜ 테두리에 적용된 볼록 효과의 스타일입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구현
 
@@ -73,7 +116,18 @@ fun Modifier.convexBorder(
 
 convexBorder 함수를 구현하기 전에, 볼록한 효과를 만들기 위해 그림자를 그리는 지원 함수 drawConvexBorderShadow를 정의해야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 fun DrawScope.drawConvexBorderShadow(
@@ -122,8 +176,18 @@ fun DrawScope.drawConvexBorderShadow(
 
 ## convexBorder 구현
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 drawConvexBorderShadow 함수를 사용하여 볼록한 테두리를 그리는 주요 함수를 정의할 수 있습니다.
 
@@ -164,7 +228,18 @@ fun Modifier.convexBorder(
 
 <img src="/assets/img/2024-06-19-HowtoCreateaStunning3DBorderinJetpackCompose_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 축하드려요🥳! 성공적으로 만들었네요👏. 전체 코드 구현은 GitHub Gist에서 확인하실 수 있어요🧑‍💻. 이제 이 기능을 활용해 아름다운 사용자 정의 검색 바를 만드는 방법을 알아보겠어요.
 
@@ -174,7 +249,18 @@ fun Modifier.convexBorder(
 
 <img src="/assets/img/2024-06-19-HowtoCreateaStunning3DBorderinJetpackCompose_3.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 실용적인 예제 💁
 
@@ -231,7 +317,18 @@ BasicTextField(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결과 😍
 
@@ -241,7 +338,18 @@ BasicTextField(
 
 이 글을 읽어 주셔서 감사합니다! ❤️ 즐겁고 유익한 시간이 되셨기를 바랍니다. 좋아하신다면 박수 👏를 눌러주세요. Kappdev를 팔로우하시면 더 많은 흥미로운 글을 만나보실 수 있습니다 😊
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 행복한 코딩하세요!
 

@@ -3,13 +3,12 @@ title: "요청당 스레드 VS WebFlux VS 가상 스레드 최신 비교"
 description: ""
 coverImage: "/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_0.png"
 date: 2024-06-22 22:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_0.png
 tag: Tech
 originalTitle: "Thread Per Request VS WebFlux VS VirtualThreads"
 link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualthreads-vs-webflux-33c9089d22fb"
 ---
-
 
 # 개요
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 세 가지 서비스가 동일한 기능을 수행하며 사용하는 프레임워크만 다릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_0.png)
 
@@ -33,7 +43,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 # 측정 매개변수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 기준을 사용하여 성능을 측정하고 접근법/프레임워크를 평가할 예정이에요:
 
@@ -45,7 +66,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 # 0번째 로드 테스트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자 수: 150
 램프업: 10
@@ -57,8 +89,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 ![이미지 2](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![ThreadPerRequestVSWebFluxVSVirtualThreads_3](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_3.png)
 
@@ -68,9 +110,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 ![ThreadPerRequestVSWebFluxVSVirtualThreads_5](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_5.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Latency](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_6.png)
 
@@ -78,8 +129,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 ![Chart 2](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_8.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_9.png" />
 
@@ -91,10 +152,20 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 ## 기계 성능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변환한 텍스트입니다.
-
 
 ![image1](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_10.png)
 
@@ -104,9 +175,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 ## ThroughPut
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![ThreadPerRequestVSWebFluxVSVirtualThreads_13](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_13.png)
 
@@ -116,9 +196,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 ## Latency
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image 16](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_16.png)
 
@@ -128,8 +217,18 @@ link: "https://medium.com/@sridharrajdevelopment/thread-per-request-vs-virtualth
 
 # 2’th LoadTest
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자: 300
 RampUp: 10
@@ -141,17 +240,35 @@ RampUp: 10
 
 ![이미지 2](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_20.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![ThroughPut](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_22.png)
 
 ![Image](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_23.png)
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_24.png)
 
@@ -161,8 +278,18 @@ RampUp: 10
 
 ![](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_26.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_27.png" />
 
@@ -174,8 +301,18 @@ RampUp: 10
 
 ## 기계 성능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![그림 28](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_28.png)
 
@@ -185,11 +322,20 @@ RampUp: 10
 
 ## 처리량
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 표시한 내용입니다.
-
 
 ![Image 1](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_31.png)
 
@@ -199,9 +345,18 @@ RampUp: 10
 
 ## Latency
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_34.png)
 
@@ -211,8 +366,18 @@ RampUp: 10
 
 # Summary
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-ThreadPerRequestVSWebFluxVSVirtualThreads_37.png" />
 

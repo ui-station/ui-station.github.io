@@ -18,7 +18,18 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 그 후, 모델은 정렬되거나 지시 튜닝을 받아 이 지식을 최상으로 활용하고 사용자의 질문에 더 자연스럽게 응답하는 방법을 배울 수 있습니다. 때로는 모델의 지식이 충분하지 않을 수 있습니다. 왜냐하면 이 질문은 일반적이며 관심 영역에 맞게 맞춰져 있지 않을 수 있기 때문입니다. 모델은 RAG를 통해 외부 메모리에 접근할 수 있지만, 새로운 도메인에 모델을 적응시키는 데 미세 튜닝을 통해 장점을 얻을 수 있다고 여겨집니다. 일반적으로 이 미세 튜닝은 인간 주석자나 다른 LLM들이 작성한 입력을 사용하여 실시됩니다. 이 단계에서 모델은 추가적인 사실적 지식을 만나 매개변수에 통합합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실제로, 기계적인 수준에서는 이러한 상호작용이 어떻게 일어나는지 정말로 알지 못합니다. 게다가 일부에 따르면, 이 새로운 지식에 노출되는 것이 모델이 환각을 경험하게 할 수도 있습니다. 이는 모델이 이전에 보유한 지식에 근거하지 않는 사실을 생성하도록 훈련되어 있기 때문입니다(또는 모델의 이전 지식과 충돌할 수도 있습니다). 게다가 앞서 본 것처럼 모델은 훈련 코퍼스에서 덜 빈번한 엔티티(예: 이전 코퍼스에서 덜 빈번한 엔티티)에 대해 어려움을 겪을 수 있습니다.
 
@@ -26,7 +37,18 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 저자들은 모델이 미세 조정을 거치고 새로운 지식을 습득한 후 반응이 어떻게 변하는지에 대해 자세히 조사했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 그들은 세밀한 조정 후 예시를 위한 지식 수준으로 분류하려고 노력했습니다. 새로운 예시는 모델의 지식과 일치하지 않을 수 있는 지식을 내재적으로 갖고 있습니다. 예시는 알려진 것일 수도 있고 알려지지 않은 것일 수도 있습니다. 알려진 경우에도 고도로 알려진 지식, 어느 정도 알려진 지식 또는 약하게 알려진 지식을 보유하고 있을 수 있습니다.
 
@@ -36,7 +58,18 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 저자들은 모델을 세밀하게 조정하고 환청을 테스트하기로 결정했습니다. 그들에게 알려지지 않은 사실의 높은 비율은 성능 저하를 초래한다고 판단하였으며 (이는 긴 세밀한 조정 시간으로 보상받을 수 없습니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-CanaLLMReallyLearnNewThings_3.png" />
 
@@ -46,7 +79,18 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 <img src="/assets/img/2024-05-23-CanaLLMReallyLearnNewThings_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저자들은 정확도와 알려진 및 알려지지 않은 예제 간의 관골을 양적으로 측정할 수 있는지, 그리고 선형인지 의문을 제기합니다. 결과는 알려지지 않은 예제가 성능에 해를 끼치고, 알려진 예제는 그것을 향상시키는 강력한 선형 관련이 있다는 것을 보여줄 것입니다 (이 선형 회귀의 연관 계수는 거의 같습니다).
 
@@ -56,8 +100,18 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 재미있는 결과는 최상의 결과가 매우 잘 알려진 예제와 함께 얻어지는 것이 아니라 아마도 알려진 예제와 함께 얻어진다는 것입니다. 다시 말해, 이러한 예제들은 모델이 이전 지식을 더 잘 활용할 수 있게 합니다 (너무 잘 알려진 사실은 모델에 유용한 영향을 미치지 않습니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 6](/assets/img/2024-05-23-CanaLLMReallyLearnNewThings_6.png)
 
@@ -67,8 +121,18 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 ![Image 7](/assets/img/2024-05-23-CanaLLMReallyLearnNewThings_7.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 글을 요약하면, 모델은 파인튜닝 중에 알 수 없는 지식을 받을 경우 손상될 수 있습니다. 게다가, 이 성능 하락은 환각증 증가와 관련이 있습니다. 반면, 알 수 있는 예시는 긍정적인 효과가 있을 수 있습니다. 따라서, 이는 모델이 새로운 지식을 통합하는 데 어려움을 겪는 것을 보여줍니다. 다시 말해, 모델이 배운 것과 새로운 지식을 어떻게 사용하는지 사이에 충돌이 있을 수 있습니다. 이는 조정 및 지시 파인튜닝과 관련이 있을 수 있습니다 (불행히도 이에 대한 연구는 이 연구에서 다루지 않았습니다).
 
@@ -78,7 +142,18 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 어쨌든, 이 연구는 흥미로우며 파인튜닝과 새로운 지식과 기존 지식 간의 충돌이 어떻게 해소되는지에 대해 여전히 명확하지 않은 요소가 있다는 것을 보여줍니다. 이는 항상 파인튜닝 전후 모델의 결과를 테스트하는 이유 중 하나입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 어떻게 생각하세요? 포인트 파인튜닝 후 환각증이 증가했나요?
 
@@ -88,7 +163,18 @@ link: "https://medium.com/gitconnected/can-a-llm-really-learn-new-things-d926b45
 
 여기 저의 GitHub 저장소 링크가 있습니다. 여기서 머신 러닝, 인공 지능 및 기타 관련 자료 및 코드를 모아두고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또는 최근에 작성한 제 논문 중 하나에 관심이 있을 수 있습니다:
 

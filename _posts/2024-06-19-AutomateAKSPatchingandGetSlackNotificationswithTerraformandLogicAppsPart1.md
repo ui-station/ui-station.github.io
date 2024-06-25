@@ -3,13 +3,12 @@ title: "AKS 패칭 자동화 및 Terraform과 Logic Apps를 사용하여 Slack �
 description: ""
 coverImage: "/assets/img/2024-06-19-AutomateAKSPatchingandGetSlackNotificationswithTerraformandLogicAppsPart1_0.png"
 date: 2024-06-19 13:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-AutomateAKSPatchingandGetSlackNotificationswithTerraformandLogicAppsPart1_0.png
 tag: Tech
 originalTitle: "Automate AKS Patching and Get Slack Notifications with Terraform and Logic Apps (Part 1)"
 link: "https://medium.com/@sahayagodson/automate-aks-patching-and-get-slack-notifications-with-terraform-and-logic-apps-part-1-d5cb2a5ac2d5"
 ---
-
 
 AKS 완전 자동 패칭 소개: 최신 패치와 업데이트로 Azure Kubernetes 서비스 (AKS) 클러스터를 최신 상태로 유지하는 것은 보안, 안정성 및 성능을 유지하는 데 중요합니다. 패치되지 않은 클러스터는 알려진 보안 취약점, 버그 및 성능 문제에 취약해지며, 다운타임, 데이터 침해 및 기타 비용 소모적인 결과로 이어질 수 있습니다.
 
@@ -19,7 +18,18 @@ AKS 완전 자동 패칭 소개: 최신 패치와 업데이트로 Azure Kubernet
 
 Terraform 및 Azure의 유지 보수 창 기능을 활용하여 AKS 패칭 프로세스를 간편하게 진행하고 클러스터가 최신 상태로 안정하게 유지되도록 할 수 있습니다. 설정 작업이나 다운타임을 최소화하면서 클러스터를 업데이트할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사전 준비 사항 (초보자용)
 
@@ -31,7 +41,18 @@ AKS 패치 자동화를 위해 Terraform을 사용하여 시작하려면 다음 
 
 이러한 사전 준비 사항을 갖추었다면, Terraform 코드를 구성하여 AKS 패치 자동화를 진행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Azure Provider 구성하기 (초보자용)
 
@@ -45,7 +66,18 @@ provider "azurerm" {
 
 features 블록을 사용하여 공급자의 동작을 사용하거나 비활성화하여 사용자 정의할 수 있습니다. 이 경우 비워 두었지만 필요에 따라 여기에 기능 플래그를 추가할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Azure Provider를 구성함으로써 Terraform은 Azure 리소스를 사용할 때 Azure Resource Manager(azurerm) 제공자를 사용하도록 알고 있습니다. 이 제공자를 통해 Terraform은 Azure 구독 내에서 리소스를 생성, 관리 및 업데이트할 수 있습니다.
 
@@ -60,7 +92,18 @@ resource "azurerm_resource_group" "example" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블록에서는 azurerm_resource_group 리소스를 사용하여 새로운 Azure 리소스 그룹을 정의합니다. "name" 인수는 리소스 그룹의 이름을 "example-resources"로 지정합니다. "location" 인수는 리소스 그룹이 생성될 Azure 지역을 설정하며, 이 경우 "West Europe"입니다.
 
@@ -70,7 +113,18 @@ resource "azurerm_resource_group" "example" {
 
 이제, azurerm_kubernetes_cluster 리소스를 사용하여 AKS 클러스터를 정의해 봅시다. 클러스터 이름, 위치, 리소스 그룹, DNS 접두사, 기본 노드 풀 및 시스템 자동 할당 관리 ID와 같은 필요한 구성을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 resource "azurerm_kubernetes_cluster" "example" {
@@ -99,7 +153,18 @@ dns_prefix는 클러스터에 대한 고유한 DNS 접두어로, 클러스터의
 
 default_node_pool 블록은 클러스터의 기본 노드 풀 구성을 정의합니다. 노드 풀의 이름을 default로 설정하고, 단일 노드를 지정하고(노드 수 = 1), Standard_D2_v2 가상 머신 크기를 선택합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이덴티티 블록은 AKS 클러스터에 시스템 지정 관리되는 아이덴티티를 사용하려는 것을 나타냅니다. 이 관리되는 아이덴티티는 클러스터가 Azure Container Registry와 같은 다른 Azure 리소스에 액세스할 수 있도록 사용할 수 있습니다.
 
@@ -109,7 +174,18 @@ default_node_pool 블록은 클러스터의 기본 노드 풀 구성을 정의�
 
 AKS 패치를 자동화하기 위해 AKS 클러스터 리소스 내에서 maintenance_window_auto_upgrade 및 maintenance_window_node_os 블록을 활용할 것입니다. 이러한 블록을 사용하여 자동 업그레이드 및 노드 OS 업그레이드를 위한 주기, 간격, 월별 일, 지속 시간, 시작 시간, UTC 오프셋 및 시작 날짜를 정의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 var.automatic_channel_upgrade 및 var.node_os_channel_upgrade 변수의 값에 따라 조건에 따라 유지 관리 창 구성을 동적 블록을 사용하여 포함합니다.
 
@@ -132,7 +208,18 @@ dynamic "maintenance_window_auto_upgrade" {
 
 마찬가지로, maintenance_window_node_os 블록은 노드 OS 이미지의 업그레이드 설정을 구성하는 데 사용됩니다. 업그레이드 채널 (Unmanaged, SecurityPatch, NodeImage 또는 None), 빈도, 달의 날짜, 지속 시간, 시작 시간, UTC 오프셋 및 시작 날짜를 지정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 dynamic "maintenance_window_node_os" {
@@ -155,8 +242,18 @@ dynamic "maintenance_window_node_os" {
 
 Terraform 구성을 더 유연하고 재사용 가능하게 만들기 위해 유지 보수 창 설정에 대한 변수를 정의합니다. 이러한 변수는 업그레이드 채널, 빈도, 기간, 시작 시간 및 기타 매개변수를 사용자 정의할 수 있도록 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 변수를 정의합니다:
 
@@ -182,7 +279,18 @@ Terraform 구성을 더 유연하고 재사용 가능하게 만들기 위해 유
 
 또한 유지 관리 창 설정을 구성하는 변수들을 정의합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 variable "auto_upgrade_frequency" {
@@ -230,7 +338,18 @@ variable "node_os_upgrade_start_date" {...}
 variable "node_os_upgrade_interval" {...}
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 변수를 정의함으로써, 쿠버네티스 클러스터와 노드 OS 이미지의 유지 보수 창 설정을 쉽게 사용자 정의하고 조정할 수 있습니다. 이는 우리의 테라폼 구성을 다양한 환경과 요구 사항에 걸쳐 더 유연하고 재사용 가능하게 만들어 줍니다.
 
@@ -250,7 +369,18 @@ output "kube_config" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 client_certificate 출력은 Kubernetes 클러스터와 인증하는 데 필요한 클라이언트 인증서를 제공합니다. Terraform이 sensitive = true로 표시함으로써, 해당 값이 계획 출력에 표시되지 않거나 상태 파일에 저장되지 않도록 보장합니다.
 
@@ -260,7 +390,18 @@ kube_config_raw 출력에는 클러스터 엔드포인트, 클라이언트 인�
 
 # 경보 및 작업 그룹 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AKS 클러스터의 생성 또는 업데이트 작업을 모니터링하기 위해, azurerm_monitor_activity_log_alert 리소스를 사용하여 Azure Monitor Activity Log Alert를 설정했습니다. 이 경고는 AKS 클러스터의 생성 또는 업데이트 작업이 시작될 때 트리거되어 진행 중인 변경 사항을 추적할 수 있도록 합니다.
 
@@ -300,7 +441,18 @@ resource "azurerm_monitor_action_group" "aks-activity-log-action-Started" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 경고 및 액션 그룹을 설정함으로써 AKS 클러스터를 효과적으로 모니터링하여 생성 또는 업데이트 작업이 발생할 때 필요에 따라 추가 작업이나 알림을 수행하는 로직 앱을 트리거할 수 있습니다.
 
@@ -310,7 +462,18 @@ resource "azurerm_monitor_action_group" "aks-activity-log-action-Started" {
 
 이 자동화 프로세스에 관련된 주요 단계는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Azure Provider를 구성하고 리소스 그룹을 생성합니다.
 - 필요한 구성, 노드 풀 및 관리 식별자와 함께 AKS 클러스터를 정의합니다.

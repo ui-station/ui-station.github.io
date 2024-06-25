@@ -3,13 +3,12 @@ title: "도커 다이어트 보안 및 속도를 위한 데비안 이미지"
 description: ""
 coverImage: "/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_0.png"
 date: 2024-05-20 17:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_0.png
 tag: Tech
 originalTitle: "Docker on a Diet: Distroless Images for Security , Speed"
 link: "https://medium.com/@sajal.devops/docker-on-a-diet-distroless-images-for-security-speed-2a4145f5c56d"
 ---
-
 
 <img src="/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_0.png" />
 
@@ -19,7 +18,18 @@ Distroless 이미지는 극단적으로 최소한한 이미지입니다. 패키�
 
 # 왜 Distroless를 사용해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Distroless 이미지를 사용하는 이점은 매우 많습니다:
 
@@ -31,7 +41,18 @@ Distroless 이미지를 사용하는 이점은 매우 많습니다:
 
 Distroless는 다양한 언어 및 런타임을 지원하는 기본 이미지를 제공합니다. 다음은 이를 사용하는 빠른 가이드입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이미지 선택: 사용 가능한 이미지를 탐색하려면 GitHub의 Distroless 프로젝트(https://github.com/GoogleContainerTools/distroless)로 이동하세요. 인기 있는 옵션으로는 일반 목적의 애플리케이션용 gcr.io/distroless/base 및 언어별 이미지인 gcr.io/distroless/java17이 있습니다.
 - Dockerfile 빌드: Dockerfile에서 선택한 Distroless 이미지를 기본 레이어로 사용하세요.
@@ -44,7 +65,18 @@ Distroless 이미지 사용의 장점을 설명하기 위해 Java 애플리케�
 
 애플리케이션 이미지를 빌드하는 데 사용된 샘플 Dockerfile입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```docker
 FROM gcr.io/distroless/java17:nonroot
@@ -59,9 +91,18 @@ CMD ["app.jar"]
 
 이전 취약점 통계: 총 96개 | 중요: 0 | 높음: 23 | 중간: 73
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_1.png)
 
@@ -71,8 +112,18 @@ Java distroless 이미지 사용 중
 
 ![이미지](/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_2.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 베이스 Java 이미지 크기: 226MB [이미지 크기의 50% 감소]
 
@@ -82,7 +133,18 @@ Java distroless 이미지 사용 중
 
 애플리케이션 이미지를 빌드하는 데 사용된 샘플 Dockerfile입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```docker
 # Nginx를 빌드 이미지로 사용
@@ -125,9 +187,18 @@ Nginx 베이스 이미지의 취약점 카운트와 이미지 크기를 비교 �
 
 이전 취약성 통계 "Total: 32 | Critical: 1 | High: 13 | Medium: 18"
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Dockerona Diet Distroless Images for Security Speed 3](/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_3.png)
 
@@ -137,8 +208,18 @@ Current Vulnerability Stats: Total: 0 | Critical: 0 | High: 0 | Medium: 0
 
 ![Dockerona Diet Distroless Images for Security Speed 4](/assets/img/2024-05-20-DockeronaDietDistrolessImagesforSecuritySpeed_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본 Nginx 이미지의 크기: 28MB [이미지 크기 30% 감소]
 
@@ -149,7 +230,18 @@ Distroless는 큰 장점을 제공하지만 몇 가지 주의할 점이 있습�
 - 쉘 액세스 없음: Distroless 이미지에는 디자인상 셸이 없습니다. 컨테이너 내에서 디버깅을 하려면 추가 도구나 멀티 스테이지 빌드가 필요할 수 있습니다.
 - 기능 제한: 패키지 관리자가 없기 때문에 애플리케이션이 필요로 하는 추가 라이브러리, 유틸리티 또는 인증서를 명시적으로 포함해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Distroless 또는 Alpine...어느 쪽을 선택해야 할까요?
 
@@ -159,6 +251,17 @@ Distroless와 Alpine 이미지의 장단점을 이해하여, 귀하의 애플리
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Distroless 이미지는 안전하고 효율적인 도커 컨테이너를 만드는 매력적인 옵션입니다. 미니멀리즘을 포용함으로써 더 작은 공격 표면, 빠른 배포 및 향상된 성능을 얻을 수 있습니다. 다음 번에 도커 이미지를 만들 때는 여분의 부담을 줄이고 Distroless 기본 이미지를 선택하는 것을 고려해보세요.

@@ -3,13 +3,12 @@ title: "얼마나 쉽게 탈취 가능 내가 도둑이라면 아이폰을 훔�
 description: ""
 coverImage: "/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_0.png"
 date: 2024-06-23 01:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_0.png
 tag: Tech
 originalTitle: "Here’s How I’d Steal Your iPhone If I Were A Thief — [Step-by-Step]"
 link: "https://medium.com/macoclock/heres-how-i-d-steal-your-iphone-if-i-were-a-thief-step-by-step-1706499310ed"
 ---
-
 
 ![image](/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/macoclock/heres-how-i-d-steal-your-iphone-if-i-were-a-
 
 2년 넘게 애플에 대해 글을 쓰고 있는 블로거로서 나는 애플에 관한 꽤 괜찮은 지식을 갖고 있는 사람이라고 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이폰을 훔치는 방법을 설명할게요 — 만약 제가 도둑이었다면 — 그리고
 
@@ -31,7 +41,18 @@ link: "https://medium.com/macoclock/heres-how-i-d-steal-your-iphone-if-i-were-a-
 
 마지막으로 해당 전략으로부터 아이폰을 보호하는 가장 좋은 보안 관행을 설명하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (진짜, 디지턈 ID가 쉽게 훔쳐질 줄 누가 알겠어요.)
 
@@ -46,7 +67,18 @@ link: "https://medium.com/macoclock/heres-how-i-d-steal-your-iphone-if-i-were-a-
 5 — 은행 비우기
 6 — 아이폰 초기화 후 판매
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 장-2: 최상의 보안 관행
 
@@ -59,7 +91,18 @@ link: "https://medium.com/macoclock/heres-how-i-d-steal-your-iphone-if-i-were-a-
 
 # #1. 쉬운 아이폰 찾기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쉽게 아이폰을 구할 수 있는 최고의 장소들은 바입니다.
 
@@ -69,7 +112,18 @@ link: "https://medium.com/macoclock/heres-how-i-d-steal-your-iphone-if-i-were-a-
 
 나는 (훔치는) 아이폰을 안드로이드보다 선호합니다. 왜냐하면...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! iPhone은 안드로이드보다 재판매 가치가 더 높아요. iPhone을 사용하는 사람들은 보통 더 많은 돈을 가지고 있거나 적어도 큰 신용을 가지고 있어요.
 
@@ -79,7 +133,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 
 더 구체적으로 "Pro" iPhone을 찾을 거예요. 왜냐하면요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 사용된 비 Pro 모델은 보통 $300-400에 판매됩니다.
 - 그러나 사용된 Pro 모델은 저장 용량에 따라 $650 이상에 판매됩니다. 1TB면 심지어 $900까지도 붙일 수 있어요.
@@ -91,7 +156,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 아, 멋진 iPhone을 발견했네요!
 이제 접근해서 음료를 제안하고 소소하게 이야기를 나눠보면, 당신이 나를 멋진 사람으로 생각할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 작년에 해변에서 가족과 찍은 사진을 보여주고 싶어할지도 몰라요 (또는 내가 호기심을 갖고 물어볼 지도 몰라요).
 
@@ -101,7 +177,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 
 당신이 아이폰을 잠금 해제하여 사진을 보여줄 때, 당신의 손가락/화면을 관찰하여 패스코드를 얻을 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알겠어요. 이제 도둑질 할 시간이에요.
 
@@ -111,7 +198,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 
 ("이런! 잠겨 있어요. 여는 법 알려주실래요?")
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 하면 다음에 iPhone을 잠금 해제하려고 할 때 Face ID를 사용할 수 없게 됩니다. 대신 패스코드를 사용해야 할 거에요 — 그러면 제 두 번째 기회가 됩니다.
 
@@ -121,7 +219,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 
 여전히 패스 코드를 얻지 못하면, 당신이 패스 코드를 입력하는 동안 어깨 뒤에서 비디오 녹화를 한 동료 도둑에게 물어볼거예요. 그가 패스 코드를 획득했는지 물을 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그렇다면, 강도 시간이다!
 
@@ -131,7 +240,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 
 빠르게 안전한 곳에 도착하여 다음 단계를 시작할 거에요. 그냥 당신을 영구적으로 Apple ID에서 차단하고 당신이 소유한 모든 것(디지털적으로)을 내 것으로 만들기 위해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 1: Apple ID 비밀번호 변경하기
 
@@ -143,7 +263,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 
 ## 단계 2: 모든 기기에서 로그아웃하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비밀번호를 변경한 후 iPhone에서는 Apple ID에서 다른 기기에서 로그아웃할 지 여부를 묻게 됩니다.
 
@@ -153,7 +284,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 
 그래서 iPhone을 잃어버렸다는 것을 깨달아도 Apple Watch나 친구의 iPhone에서 빠르게 로그인할 수 없게 되죠. 왜냐면요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 Apple ID 암호를 모르기 때문에 몇 번의 무의미한 시도를 계속하고 있네요.
 
@@ -163,7 +305,18 @@ iPhone을 찾을 때 제일 눈에 띄는 카메라 렌즈를 봐요:
 
 ## 단계-3: '내 iPhone 찾기' 끄기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하지 않겠습니다.
 
@@ -173,13 +326,35 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 ![이미지](/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그냥 번거로워서 꼭 필요하지는 않지만, 편안함을 위한 선택적 단계입니다. 당신의 Face ID에 제 얼굴을 등록합니다. 이렇게 하면 매번 암호를 입력해야 할 때마다 번거롭지 않고 간편하게 Face ID로 로그인할 수 있습니다.
 
 하지만 똑똑한 도둑으로서, 먼저 당신의 계정 복구 방법을 모두 닫아야 하기 때문에 이를 미루겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만, 내가 어떻게 할 지 말해줄게요:
 
@@ -192,7 +367,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 #### (또는: 계정 복구 방법을 모두 막는 법)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 말했던 대로, 여전히 등록된 전화번호 및 이메일을 사용하여 Apple Watch 및 Mac을 통해 계정을 복구할 수 있는 기회가 있습니다.
 
@@ -204,8 +390,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 - 로그인 & 보안 🛡️,
 - Apple ID에서 전화번호 및 이메일을 등록 해제합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Step-1](/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_5.png)
 
@@ -216,8 +412,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 ![Step-3](/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계-3
 
@@ -228,7 +434,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 이것으로 작업이 완료되었습니다. 이제 Apple ID에 액세스할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 영원히 말이에요. 지구와 태양이 존재할 때까지.
 
@@ -236,7 +453,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 심장을 아프게 할 거예요 — 하지만 돈을 벌어야 했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # #4. 당신의 자산 비우기
 
@@ -247,7 +475,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 이어서, PayPal과 Venmo와 같은 지갑 앱으로 이동할 건데, 거래 비밀번호를 입력할 필요가 없어요. 그냥 Face ID만 있으면 돈이 내 계정으로 들어와요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 은행 앱을 이용해볼게요.
 만약 그것들이 Face-ID로 보호되어 있다면, 아주 좋아요. 이미 당신의 Face ID를 해킹했거든요.
@@ -256,21 +495,43 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 신의 길이 길으시기를 바랍니다만, 만약 2단계 인증을 활성화했다면...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 아이클라우드 키체인에서 확인 코드를 사용하면(Face ID로도 사용할 수 있도록 이 기사를 따라 하세요), 그것도 채울 수 있어요.
 - 전화 번호로 OTP를 사용하면,
-문제 없어요... 이미 당신의 SIM 카드를 가지고 있으니까.
+  문제 없어요... 이미 당신의 SIM 카드를 가지고 있으니까.
 - 좋아하는 장소가 어디냐, 엄마의 부친 이름이 뭐냐 하는 보안 질문을 사용하면, 당신의 사진과 노트에서 그것들을 찾아보겠어요.
 
-당신의 은행이 거래 PIN을 요구하면, 당신의 iPhone 암호를 시도할 거고요. 그게 안 먹히면, 당신의 노트나 문서에서 단서를 찾아볼 거에요. 
+당신의 은행이 거래 PIN을 요구하면, 당신의 iPhone 암호를 시도할 거고요. 그게 안 먹히면, 당신의 노트나 문서에서 단서를 찾아볼 거에요.
 
 그리고 아시나요?
 카드, 공인 신분증, 그리고 다른 법적 문서들의 사본을 찍어서 암호화하지 않은 로컬에 저장해 두셨다면, 나는 더 운이 좋아질 거에요.
 
 은행이 거래가 사기인지 의심하고 당신을 확인하고 싶을 때, 그것들이 큰 도움이 될 거에요. 나는 당신을 대신해서 확인에 참석할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 은행을 비우신 후, Apple Wallet에 신용카드나 신용 한도가 있다면 쇼핑을 하러 갈 거에요. 당신의 신용을 다 써버릴 거에요. 다음 달에 그 비용을 지불하게 될 거예요.
 
@@ -278,10 +539,20 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 마지막으로, 당신의 아이폰을 초기화하고 판매할 거에요. 초기화하는 방법은 다음과 같아요:
 
-- 설정으로 이동해서 ⚙️ ` 일반 ` ⚙️ ` iPhone 초기화나 재설정 ` 모든 콘텐츠 및 설정 지우기,
+- 설정으로 이동해서 ⚙️ `일반` ⚙️ `iPhone 초기화나 재설정` 모든 콘텐츠 및 설정 지우기,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_9.png)
 
@@ -291,8 +562,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 재판매 가격에 관해서는 이전에 언급한 것처럼,
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 만약 Pro가 아닌 iPhone이라면, $300에서 $400에 판매할 수 있어요.
 - 만약 Pro iPhone이라면, $650에서 $900에 판매가 가능해요.
@@ -303,7 +584,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 이미 말씀드렸지만, 이것이 미국에서 iPhone을 훔치는 도둑들의 방식, 특히 바에서 사람들로부터 하는 방법이에요. 여러분은 이것이 방탄 같은 전략임을 부인할 수 없죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그저 당신의 iPhone과 해당 암호만 필요해요. 그리고 퍼미션이 금방 사라져버려요.
 
@@ -313,7 +605,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 ### **1. 암호가 최고**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도난, Apple ID 액세스 상실 및 돈… 이 모든 일들은 도둑이 당신의 패스코드를 알고 있었다는 사실에 귀결됩니다.
 
@@ -323,7 +626,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 간단한 4자리 패스코드 대신 6자리 패스코드를 사용해보세요. 또는 더 나아가 사용자 지정 숫자 또는 알파벳 패스코드를 사용하세요. 그러면 도둑은 그것을 이해하는 데 어려움을 겪을 겁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_10.png" />
 
@@ -334,7 +648,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 # #2. iCloud 키체인 버리기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이클라우드 키체인은 가장 안전하지 않은 비밀번호 관리자입니다. 왜냐하면?
 
@@ -344,7 +669,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 이를 통해 비밀번호 뿐만 아니라 여권이나 운전면허증 사본과 같은 중요 파일도 저장할 수 있습니다. 이러한 파일을 암호화되지 않은 채로 로컬 저장소에 남겨두지 않아도 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 도둑을 당신의 은행 계좌로부터 떨어뜨리고 그가 당신을 가장 확실히 사칭할 수 있는 중요 문서에 접근하는 것을 막습니다.
 
@@ -352,8 +688,18 @@ Apple ID에 대한 액세스를 아직 잃지 않았으니, 위험을 감수하�
 
 Screen Time은 iPhone에서 보내는 시간을 계산하는 것 이상의 일을 합니다. 그것은 또한 도둑들이 여기로 들어가는 것을 방지하는 데 도움이 됩니다️ ↓ (정확히 그들이 당신의 iPhone을 훔친 후 첫 방문하는 곳):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_11.png)
 
@@ -367,9 +713,18 @@ How? (Assuming you have Screen Time turned on)
 
 Now come back and you’ll see the area greyed out:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Step 12](/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_12.png)
 
@@ -379,8 +734,18 @@ He also won’t be able to find Face ID & Passcode section in Settings ⚙️.
 
 ![Step 13](/assets/img/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step_13.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 그가 당신의 아이폰을 훔칠 수 있지만, 그것은 그에게 벽돌만큼 좋습니다. 그리고 당신은 어디서든지 아이폰을 잠글 수 있는 기회가 있을 거에요.
 
@@ -390,7 +755,18 @@ He also won’t be able to find Face ID & Passcode section in Settings ⚙️.
 
 이 업데이트는 1월 22일에 시작되는 주에 출시될 예정이며, 아마도 화요일인 1월 23일에 출시될 것으로 보입니다. (출처: Forbes)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 보안 기능은 기본 설정에서 비활성화되어 있습니다. 설정에서 활성화해야 합니다 ⚙️ ` Face ID & Passcode 🙂.
 
@@ -400,7 +776,18 @@ He also won’t be able to find Face ID & Passcode section in Settings ⚙️.
 
 일반적으로 iOS는 민감한 작업에 접근할 때 두 번의 Face ID 시도를 제공하고, 그런 다음 패스코드 인증으로 넘어가는 것이 맞죠?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 장치 도난 방지가 활성화되면, Face/Touch ID가 민감한 작업에 대한 유일한 인증 방법이 될 것입니다 (곧 모두 나열할게요).
 
@@ -410,7 +797,18 @@ He also won’t be able to find Face ID & Passcode section in Settings ⚙️.
 
 보안 장치 보호가 비활성화될 때까지 그는 작업에 패스코드를 사용할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 도둑이 이를 끄려고 시도하면 생체 인증을 통과해야 하고 (그것은 불가능합니다) 그런 다음 이를 할 수 있기 전에 1시간의 카운트다운 지연이 필요합니다(공식적으로 보안 지연이라고 함).
 
@@ -418,9 +816,20 @@ He also won’t be able to find Face ID & Passcode section in Settings ⚙️.
 
 그러나 Apple은 iPhone이 집이나 직장과 같은 익숙한 위치에 있으면 딜레이가 없을 것이라고 합니다.
 
-이를 위해 부정 위치가 사용 가능해야 합니다(설정 ⚙️ ` 개인 정보 및 보안 ✋ ` 위치 서비스 📍 ` 시스템 서비스 ⚙️ ` 부정 위치).
+이를 위해 부정 위치가 사용 가능해야 합니다(설정 ⚙️ `개인 정보 및 보안 ✋` 위치 서비스 📍 `시스템 서비스 ⚙️` 부정 위치).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 활성화되지 않았다면, iPhone은 집이나 사무실에서도 항상 보안 딜레이를 요구합니다.
 
@@ -437,7 +846,18 @@ He also won’t be able to find Face ID & Passcode section in Settings ⚙️.
 
 ## 도난 방지 기능이 활성화되어 있는 경우 Face ID 또는 Touch ID, 그리고 보안 딜레이를 요구하는 작업:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Apple ID 비밀번호 변경
 - 일부 Apple ID 계정 보안 설정 업데이트 — 신뢰하는 기기, 전화 번호, 복구 키, 복구 연락처 관리
@@ -452,7 +872,18 @@ He also won’t be able to find Face ID & Passcode section in Settings ⚙️.
 
 이를 통해 아이폰을 찾거나 원격으로 잠그거나 지울 시간을 충분히 확보할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 공공 장소에 있을 때는 항상 주머니에 iPhone이 있는지 규칙적으로 확인하십시오. 만약 없다면, Apple Watch나 친구의 iPhone을 사용하여 즉시 Lost Mode로 설정하십시오.
 
@@ -462,7 +893,18 @@ He also won’t be able to find Face ID & Passcode section in Settings ⚙️.
 
 ## 마침내,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 새로운 iOS 및 Mac 앱을 탐험하는 것을 좋아한다면 (저와 같이), Setapp 구독을 고려해보세요. 매월 $9.99에 240개 이상의 멋진 앱을 선별하여 이용할 수 있습니다. 이것은 개별 구매 시 수백 달러가 들 수도 있는데요.
 

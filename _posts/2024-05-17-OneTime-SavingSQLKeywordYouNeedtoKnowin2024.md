@@ -3,13 +3,12 @@ title: "2024년에 알아야 할 시간을 절약하는 SQL 키워드 하나"
 description: ""
 coverImage: "/assets/img/2024-05-17-OneTime-SavingSQLKeywordYouNeedtoKnowin2024_0.png"
 date: 2024-05-17 19:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-OneTime-SavingSQLKeywordYouNeedtoKnowin2024_0.png
 tag: Tech
 originalTitle: "One Time-Saving SQL Keyword You Need to Know in 2024"
 link: "https://medium.com/learning-sql/one-time-saving-sql-keyword-you-need-to-know-in-2024-28eeb4cc472d"
 ---
-
 
 ## SQL
 
@@ -19,7 +18,18 @@ link: "https://medium.com/learning-sql/one-time-saving-sql-keyword-you-need-to-k
 
 'GROUP BY... WITH ROLLUP'란 무엇인가요? — 예제와 함께 설명합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQL, 여러분들도 잘 아시다시피, 관계형 데이터베이스와 상호 작용하기 위해 사용하는 언어입니다. 필요한 데이터를 추출하고 변환하는 데 사용됩니다.
 
@@ -29,7 +39,18 @@ SQL, 여러분들도 잘 아시다시피, 관계형 데이터베이스와 상호
 
 지난 번 글 중 하나에서 이미 GROUP BY를 쉽게 사용하고 얼마든지 숙달시킬 수 있는 방법을 설명했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셨으면 좋겠어요!
 
@@ -39,7 +60,18 @@ WITH ROLLUP을 사용하면 하나의 쿼리로 집계 및 초계수준의 데�
 
 무슨 뜻인지 보여 드릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 간단한 9999 x 11 데이터셋이 있습니다.
 
@@ -49,7 +81,18 @@ WITH ROLLUP을 사용하면 하나의 쿼리로 집계 및 초계수준의 데�
 
 이는 일반적인 GROUP BY와 집계 함수인 SUM을 사용한 전형적인 예시입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sql
 SELECT sales_manager
@@ -71,7 +114,18 @@ GROUP BY sales_manager
 
 그러나 이 출력을 받은 후 이 두 제품 카테고리에서 'Sofia'나 'Pablo'가 모든 달에 얼마나 많은 제품을 배송했는지 정확히 알고 싶어질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 가지 방법은 상기 결과로부터 total_quantity 열을 수동으로 합산하는 방법이 있습니다. 이 방법은 다소 지루할 수 있습니다.
 
@@ -92,8 +146,18 @@ GROUP BY sales_manager
         , product_category;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![OneTime-SavingSQLKeywordYouNeedtoKnowin2024](/assets/img/2024-05-17-OneTime-SavingSQLKeywordYouNeedtoKnowin2024_4.png)
 
@@ -113,8 +177,18 @@ AND product_category IN ("Healthcare", "Fashion")
 GROUP BY sales_manager;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![SQL Keyword](/assets/img/2024-05-17-OneTime-SavingSQLKeywordYouNeedtoKnowin2024_5.png)
 
@@ -134,10 +208,20 @@ AND product_category IN ("Healthcare", "Fashion")
 GROUP BY sales_manager
         , product_category
         , month_name WITH ROLLUP;
-``` 
+```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-17-OneTime-SavingSQLKeywordYouNeedtoKnowin2024_6.png)
 
@@ -147,7 +231,18 @@ GROUP BY sales_manager
 
 위 출력에서 빨간색으로 강조된 행은 2번 질문에 대한 답을 제공합니다: 이 두 제품 카테고리 전체 월에 ‘Sofia’ 또는 ‘Pablo’가 보낸 제품 수는 얼마나 될까요? 파란색으로 강조된 행은 3번 질문에 답하는 데 도움이 됩니다: ‘Sofia’ 또는 ‘Pablo’가 총 보낸 제품 수는 얼마일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지난 행은 아직 물어보지 않았지만 답변하는 질문을 다루고 있어요: ‘Pablo’와 ‘Sofia’가 이 두 제품 카테고리에서 함께 몇 개의 제품을 발송했는지요?
 
@@ -157,7 +252,18 @@ WITH ROLLUP은 데이터의 2가지 보기를 옆에 나란히 제공하는데, 
 
 이러한 종류의 집계는 특히 데이터를 이해하고 그 안에 있는 트렌드와 패턴을 식별하는 데 도움이 될 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기까지...
 
@@ -167,7 +273,18 @@ GROUP BY 절에 WITH ROLLUP을 추가하면 하나의 SQL 쿼리로 상세한 �
 
 유용하게 느껴진 부분 강조하고 생각에 대해 의견을 나눠주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 전문가 팁과 노하우를 위해 팔로우해주세요. 이 글을 꼭 여러분의 네트워크와 공유해주세요!
 

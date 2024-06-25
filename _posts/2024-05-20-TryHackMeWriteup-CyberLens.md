@@ -3,13 +3,12 @@ title: "TryHackMe Writeup - CyberLens를 번역해보겠습니다"
 description: ""
 coverImage: "/assets/img/2024-05-20-TryHackMeWriteup-CyberLens_0.png"
 date: 2024-05-20 18:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TryHackMeWriteup-CyberLens_0.png
 tag: Tech
 originalTitle: "TryHackMe Writeup - CyberLens"
 link: "https://medium.com/@MrHDK/cyberlens-5d39ea4ff23b"
 ---
-
 
 ## CyberLens 웹 서버를 악용하고 숨겨진 플래그를 발견할 수 있을까요?
 
@@ -20,7 +19,18 @@ link: "https://medium.com/@MrHDK/cyberlens-5d39ea4ff23b"
 
 🕵️‍♂️ 준비가 되셨나요? 룸을 찾을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 🔍 챌린지 설명 확인: 챌린지에 대한 자세한 내용은 방의 내용을 확인하세요.
 
@@ -30,8 +40,18 @@ link: "https://medium.com/@MrHDK/cyberlens-5d39ea4ff23b"
 
 1. IP를 /etc/hosts 파일에 추가하세요: `sudo echo [IP] cyberlens.thm >> /etc/hosts`
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 공간은 CyberLens 및 그들의 전문 도구에 대해 다루며, 스테가노그래피에 초점을 맞출 수도 있습니다. 화법 및 메타데이터를 위해 이미지를 분석하거나 숨겨진 플래그를 찾기 위해 이러한 도구 내의 취약점을 이용할 수도 있습니다.
 
@@ -49,7 +69,7 @@ Not shown: 995 closed tcp ports (reset)
 PORT     STATE SERVICE       VERSION
 80/tcp   open  http          Apache httpd 2.4.57 ((Win64))
 |_http-server-header: Apache/2.4.57 (Win64)
-| http-methods: 
+| http-methods:
 |_  Potentially risky methods: TRACE
 |_http-title: CyberLens: Unveiling the Hidden Matrix
 135/tcp  open  msrpc         Microsoft Windows RPC
@@ -59,7 +79,7 @@ PORT     STATE SERVICE       VERSION
 | ssl-cert: Subject: commonName=CyberLens
 | Not valid before: 2024-05-17T13:10:13
 |_Not valid after:  2024-11-16T13:10:13
-| rdp-ntlm-info: 
+| rdp-ntlm-info:
 |   Target_Name: CYBERLENS
 |   NetBIOS_Domain_Name: CYBERLENS
 |   NetBIOS_Computer_Name: CYBERLENS
@@ -76,12 +96,12 @@ Network Distance: 2 hops
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Host script results:
-| smb2-time: 
+| smb2-time:
 |   date: 2024-05-18T13:47:41
 |_  start_date: N/A
 |_clock-skew: mean: -10s, deviation: 0s, median: -10s
-| smb2-security-mode: 
-|   3:1:1: 
+| smb2-security-mode:
+|   3:1:1:
 |_    Message signing enabled but not required
 
 TRACEROUTE (using port 587/tcp)
@@ -93,7 +113,18 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 464.64 seconds
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 80/tcp: Apache httpd 2.4.57에서 오픈된 HTTP — CVE 발견 안 됨
 - 135/tcp: Microsoft Windows RPC 오픈
@@ -107,7 +138,18 @@ Nmap done: 1 IP address (1 host up) scanned in 464.64 seconds
 
 우리의 관심을 끄는 두 가지 발견:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 연락 양식: 현재 유용한 정보가 없습니다.
 2. 이미지 추출기: 저희 조사에 대한 잠재적인 통찰력을 약속하는 온라인 메타데이터 추출 서비스입니다.
@@ -118,7 +160,18 @@ Nmap done: 1 IP address (1 host up) scanned in 464.64 seconds
 
 다음으로 "메타데이터 가져오기" 버튼을 조사하고 해당 이벤트를 추적했습니다. 이로써 다음이 드러났습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-TryHackMeWriteup-CyberLens_3.png" />
 
@@ -128,7 +181,18 @@ nmap 결과에 이 포트가 나오지 않았어요. 이 포트는 일반적이�
 
 첫 번째로는 해당 아파치 티카 버전에 대한 CVE를 찾아보는 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Metasploit을 시작하고,
 
@@ -138,7 +202,18 @@ Metasploit을 시작하고,
 
 Metasploit을 구성하고 (set RHOSTS, RPORT, LPORT), 그런 다음 exploit을 실행합니다. 그리고 바로 Meterpreter 세션을 열었습니다. 와우!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-TryHackMeWriteup-CyberLens_6.png)
 
@@ -148,7 +223,18 @@ Metasploit을 구성하고 (set RHOSTS, RPORT, LPORT), 그런 다음 exploit을 
 
 힌트에서 이해한대로 대부분의 Windows 깃발은 데스크톱에 있기 때문에 거기로 가서 첫 번째 깃발을 얻었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-TryHackMeWriteup-CyberLens_8.png" />
 
@@ -159,7 +245,18 @@ Metasploit을 구성하고 (set RHOSTS, RPORT, LPORT), 그런 다음 exploit을 
 
 다음으로 모든 서비스를 나열했습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 sc.exe query state=all
@@ -171,8 +268,18 @@ sc.exe query state=all
 
 <img src="/assets/img/2024-05-20-TryHackMeWriteup-CyberLens_9.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세션을 설정하고 모듈을 실행하여 총 세 가지 취약점을 발견했어요. 먼저 첫 번째 취약점부터 시작해서 해당 옵션을 구성한 후(exploit를 실행하기 전에 LHOST, LPORT, SESSION을 설정해주세요).
 
@@ -182,7 +289,18 @@ sc.exe query state=all
 
 관리자의 데스크톱에 깃발이 있을 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

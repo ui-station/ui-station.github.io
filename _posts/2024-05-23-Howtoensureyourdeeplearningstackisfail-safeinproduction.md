@@ -3,13 +3,12 @@ title: "재밌는 주제 프로덕션 환경에서 신뢰할 수 있는 딥러�
 description: ""
 coverImage: "/assets/img/2024-05-23-Howtoensureyourdeeplearningstackisfail-safeinproduction_0.png"
 date: 2024-05-23 17:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Howtoensureyourdeeplearningstackisfail-safeinproduction_0.png
 tag: Tech
 originalTitle: "How to ensure your deep learning stack is fail-safe in production?"
 link: "https://medium.com/decodingml/how-to-ensure-your-deep-learning-stack-is-fail-safe-in-production-2673c0e3b03d"
 ---
-
 
 Prometheus, Triton, 그리고 Grafana를 사용하여 엔드 투 엔드 모니터링 대시보드를 구축해보세요.
 
@@ -19,7 +18,18 @@ ML 시스템을 배포하기 전에, 엔지니어들은 로컬 및 대규모에�
 
 이 글에서는 배포 설정 및 모니터링의 워크플로우에 대해 다루겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 목차
 
@@ -31,9 +41,21 @@ ML 시스템을 배포하기 전에, 엔지니어들은 로컬 및 대규모에�
 
 2. 메트릭 스크랩 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로메테우스 타겟을 추가하기
+
 - 그라파나 데이터소스 추가하기
 - 헬스체크 대상 스크랩
 
@@ -44,7 +66,18 @@ ML 시스템을 배포하기 전에, 엔지니어들은 로컬 및 대규모에�
 
 4. 시각화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로 넘어가기 전에 사용할 도구들을 살펴봅시다:
 
@@ -59,7 +92,18 @@ ML 시스템을 배포하기 전에, 엔지니어들은 로컬 및 대규모에�
 
 각 서비스가 무엇을 하는지 설명하고, 이러한 서비스를 캡슐화하고 실행할 도커 컴포즈를 준비하는 것부터 시작해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같은 내용이 있습니다:
 
@@ -69,10 +113,21 @@ ML 시스템을 배포하기 전에, 엔지니어들은 로컬 및 대규모에�
 
 ```yaml
 # cat docker-compose-monitoring.yaml
-version: '3.4'
+version: "3.4"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 services:
@@ -136,7 +191,12 @@ services:
               capabilities: [gpu]
     volumes:
       - ${TRITON_MODELS_REPOSITORY}:/models
-    command: ["tritonserver","--model-repository=/models", "--strict-model-config=false"]
+    command:
+      [
+        "tritonserver",
+        "--model-repository=/models",
+        "--strict-model-config=false",
+      ]
     networks:
       monitor-net:
         ipv4_address: ${TRITON_IP}
@@ -145,10 +205,10 @@ networks:
     driver: bridge
     internal: false
     ipam:
-        driver: default
-        config:
-            - subnet: ${SUBNET}
-              gateway: ${GATEWAY}
+      driver: default
+      config:
+        - subnet: ${SUBNET}
+          gateway: ${GATEWAY}
 ```
 
 보시다시피, .yaml 설정에 일부 마스킹된 $'변수'가 있습니다. 이들은 .env 파일 내부에서 자동으로 상속되어 로컬 개발 및 CI/CD 파이프라인에서 최상의 관행을 따르는 흐름을 가지고 있습니다.
@@ -163,13 +223,24 @@ CADVISOR_PORT=8080
 MONITORING_CONFIGURATIONS=<your_configuration_files에 대한_경로>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # == 자격 증명 ==
 GRAFANA_PWD=admin
 GRAFANA_USER=admin
-# == TIS 변수 == 
+# == TIS 변수 ==
 TRITON_MODELS_REPOSITORY=<당신의_triton_모델_저장소_경로>
 # == 기본 네트워크 ==
 SUBNET=172.17.0.0/16
@@ -184,7 +255,7 @@ GRAFANA_IP=172.72.0.6
 대부분의 변수가 설정되었지만, 여기서 살펴봐야 할 주요한 2가지 변수는 다음과 같습니다:
 
 - MONITORING_CONFIGURATIONS
-이것은 이러한 구조가 있는 폴더를 가리켜야 합니다
+  이것은 이러한 구조가 있는 폴더를 가리켜야 합니다
 
 ```js
 .__ monitoring
@@ -193,10 +264,21 @@ GRAFANA_IP=172.72.0.6
 |  |_ prometheus.monitoring.yml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - TRITON_MODEL_REPOSITORY
-모델 저장소의 구조는 다음과 같아야 합니다:
+  모델 저장소의 구조는 다음과 같아야 합니다:
 
 ```js
 model_repository
@@ -211,7 +293,18 @@ model_repository
 
 # 2. 프로메테우스 스크래핑 구성 정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 Prometheus 대상을 구성해 보겠습니다. `prometheus.monitoring.yml` 파일에 작성하겠습니다.
 
@@ -223,25 +316,36 @@ global:
 
 ```yaml
 scrape_configs:
-  - job_name: 'prometheus'
+  - job_name: "prometheus"
     static_configs:
-      - targets: ['172.17.0.5:9090']
-  - job_name: 'triton-server'
+      - targets: ["172.17.0.5:9090"]
+  - job_name: "triton-server"
     static_configs:
-      - targets: ['172.72.0.3:8002']
-  
-  - job_name: 'cadvisor'
+      - targets: ["172.72.0.3:8002"]
+
+  - job_name: "cadvisor"
     static_configs:
-      - targets: ['172.72.0.4:8080']
+      - targets: ["172.72.0.4:8080"]
 ```
 
 3개의 대상이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 프로메테우스 — 모니터링 프로메테우스 자체를 유지하는 것이 건강한 모니터링을 위한 모범 사례로 작용합니다. 수천 개의 메트릭을 처리하면 병목 현상이 발생할 수 있으며 프로메테우스 자체의 자원 사용량을 알고 있는 것이 유용합니다.
 - Triton Server — 이것은 이 딥러닝 스택의 핵심에 있어 중요합니다. ML 모델을 제공하고 관리하기 때문입니다.
-Triton은 인퍼런스 프로세스 전반에 걸쳐 다양한 메트릭을 제공하는 포트 8002의 내장된 프로메테우스 엔드포인트가 있습니다.
+  Triton은 인퍼런스 프로세스 전반에 걸쳐 다양한 메트릭을 제공하는 포트 8002의 내장된 프로메테우스 엔드포인트가 있습니다.
 - cAdvisor — 이 배포에서 컨테이너 전반의 CPU/RAM 사용량 정보를 얻기 위해 사용됩니다.
 
 모두 구성한 뒤, 컴포저를 시작하고 문제가 있는지 검사할 수 있습니다.
@@ -253,7 +357,18 @@ docker compose -f docker-compose-monitoring.yaml up -d
 
 프로메테우스 대상을 검사해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 웹 브라우저로 가서 전체 Prometheus URL(IP:9090)을 입력해주세요.
 - 상태 → 대상(Targets)으로 이동해주세요.
@@ -265,7 +380,18 @@ docker compose -f docker-compose-monitoring.yaml up -d
 
 Grafana WebUI 대시보드에 액세스하려면 브라우저를 열고 `localhost:3000`으로 이동해주세요. 여기서 3000은 Grafana 컨테이너를 실행하는 포트입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로그인 페이지로 이동하면 사용자 이름/암호 필드에 `admin/admin`을 사용하십시오. 더 높은 보안이 권장되지만, 이는 이 기사의 범위에 포함되지 않습니다.
 
@@ -277,7 +403,18 @@ Grafana 웹을 열었으면 다음을 수행해야 합니다:
 
 #3.1 Prometheus 데이터 소스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 왼쪽 패널에서 기어 아이콘(설정)을 클릭하고 DataSources를 선택하세요.
 다음과 같은 뷰가 나타날 것입니다:
@@ -288,7 +425,18 @@ Grafana 웹을 열었으면 다음을 수행해야 합니다:
 
 여기에는 Prometheus 엔드포인트의 URL을 추가해야 합니다. 우리의 도커 컴포즈 배포에서는 `http://prometheus:9090`을 사용할 것입니다. 이 템플릿을 따르면 `http://container_name:container_port`가 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-Howtoensureyourdeeplearningstackisfail-safeinproduction_2.png" />
 
@@ -299,7 +447,18 @@ Grafana 웹을 열었으면 다음을 수행해야 합니다:
 
 왼쪽 패널에서 “+” 표시를 클릭하고 `Dashboard`를 선택하세요. 이렇게 하면 미리 정의된 패널 그룹이 있는 새 대시보드 페이지로 이동합니다. 우리는 모든 것을 처음부터 만들고 있으므로 `Empty Panels`만 사용하여 주요 지표를 표시할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 한 예제에 대한 따라할 프로세스입니다:
 
@@ -310,7 +469,18 @@ Grafana 웹을 열었으면 다음을 수행해야 합니다:
 
 이제, 트리튼 추론 서버 모델 서빙 플랫폼을 모니터링하기 위해 몇 가지 사용자 정의 쿼리를 추가할 것입니다. 하지만 먼저 다음 참고 사항을 유념해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 쿼리를 설정해보겠습니다. 이 쿼리는 성공적인 요청의 수를 고려하여 모델이 하나의 추론 요청을 수행하는 데 걸리는 시간(밀리초)을 측정할 것입니다. 우리는 시간이 지남에 따라 진행 상황을 보고 싶기 때문에 이 차트는 `시계열(time-series)`이 될 것입니다.
 다음은 해당 지표를 작성하는 쿼리입니다:
@@ -323,7 +493,18 @@ Grafana 웹을 열었으면 다음을 수행해야 합니다:
 
 아래에서 쿼리의 모습을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 새 차트의 설정을 구성할 때, 오른쪽에 다음을 지정할 수 있습니다:
 
@@ -336,7 +517,18 @@ Grafana 웹을 열었으면 다음을 수행해야 합니다:
 위의 흐름에 따라, 나머지 차트를 생성할 수 있습니다.
 전체 성능 모니터링 차트를 컴파일하려면 나머지 패널을 추가하십시오. 다음 각각에 대해 새 패널을 만들고 해당 세부 정보로 채워넣습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - GPU 사용된 바이트 - VRAM 사용량의 백분율
 
@@ -354,7 +546,18 @@ Grafana 웹을 열었으면 다음을 수행해야 합니다:
 범례: NULL
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 입력 시간/요청 — 클라이언트가 입력 데이터를 Triton 서버로 보내는 데 걸린 시간.
 
@@ -372,7 +575,18 @@ Chart Type: 시계열
 Legend: {model}-{version}
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. DB 비율 (#요청/#실행) — 성공적인 요청의 전체 요청 대비 비율
 
@@ -390,7 +604,18 @@ Legend: {model}-{version}
 범례: {모델}-{버전}
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7. 집계된 입력/추론/출력 - 입력 출력 및 추론을 한 차트에 표시합니다.
 
@@ -412,17 +637,39 @@ C: rate(nv_inference_compute_output_duration_us{job="triton-server"}[$__interval
 - 서버에서 클라이언트로의 출력 송신 시간
 - 성공 요청/전체 요청 비율
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이런 종류의 대시보드는 배포된 스택의 성능 및 스트레스 테스트 속에서의 동작을 모니터링하기 위한 시작점을 제시합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이런 종류의 대시보드는 배포된 스택의 성능 및 스트레스 테스트 속에서의 동작을 모니터링하기 위한 시작점을 제시합니다.
 
 이는 배포의 실패 및 위험 지점을 연구하는 구체적인 방법을 제공하며 SLI(서비스 수준 지표)를 모니터링하는 데 도움이 됩니다.
 
-서비스 수준 지표는 SLA(서비스 수준 계약)를 준수하고 SLO(서비스 수준 목표)를 달성하기 위해 모니터링되는 메트릭입니다. 우리가 만든 대시보드는 제공되는 서비스 수준 계약을 준수하기 위한 목표에 도달하기 위한 가치 있는 통찰을 제공할 수 있습니다. 
+서비스 수준 지표는 SLA(서비스 수준 계약)를 준수하고 SLO(서비스 수준 목표)를 달성하기 위해 모니터링되는 메트릭입니다. 우리가 만든 대시보드는 제공되는 서비스 수준 계약을 준수하기 위한 목표에 도달하기 위한 가치 있는 통찰을 제공할 수 있습니다.
 
 또한 이는 다중 복제본을 추가하거나 추론 서빙 프레임워크를 실행하는 여러 기계로의 확장 전략을 계획하는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -433,7 +680,18 @@ C: rate(nv_inference_compute_output_duration_us{job="triton-server"}[$__interval
 모니터링은 MLOps 시스템의 중요한 부분입니다!
 이 튜토리얼을 따라 하면 테스트 환경에서 단일 배포로 ML 애플리케이션을 위한 모니터링 파이프라인을 구조화하고 배포하거나, 클라우드 시나리오 설정에서 여러 입력 소스를 결합하고 전체 스택 배포를 모니터링하는 단일 대시보드 소비자 지점을 갖도록 구성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 더 많은 내용을 원하신다면!
 
@@ -443,6 +701,17 @@ C: rate(nv_inference_compute_output_duration_us{job="triton-server"}[$__interval
 
 # 더 많은 글 보기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물과 관련성에 따라 정렬되었습니다.

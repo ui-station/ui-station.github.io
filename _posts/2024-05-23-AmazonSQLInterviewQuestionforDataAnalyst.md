@@ -18,7 +18,18 @@ link: "https://medium.com/@mail2asimmanna/amazon-sql-interview-question-for-data
 
 <img src="/assets/img/2024-05-23-AmazonSQLInterviewQuestionforDataAnalyst_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요기 데이터 있어요. 이제 병원 안에 있는 직원의 emp_id를 찾아야 해요.
 
@@ -28,7 +39,18 @@ link: "https://medium.com/@mail2asimmanna/amazon-sql-interview-question-for-data
 
 여기서 우리는 각 직원의 최신 출근 시간과 최신 퇴근 시간을 찾을 거예요. 직원은 최신 출근 시간이 최신 퇴근 시간보다 늦거나 최신 퇴근 시간이 알려지지 않은 경우에 병원에 있을 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 결과를 통해 emp_id 2, 3, 4가 조건을 만족시킨다는 것을 확인할 수 있습니다. 따라서 이들 직원들은 병원 안에 있습니다.
 
@@ -36,7 +58,18 @@ link: "https://medium.com/@mail2asimmanna/amazon-sql-interview-question-for-data
 
 <img src="/assets/img/2024-05-23-AmazonSQLInterviewQuestionforDataAnalyst_3.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 방법 2
 
@@ -46,7 +79,18 @@ link: "https://medium.com/@mail2asimmanna/amazon-sql-interview-question-for-data
 
 이제 해당 시간에 직원의 활동을 찾아보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-AmazonSQLInterviewQuestionforDataAnalyst_5.png" />
 
@@ -56,7 +100,18 @@ link: "https://medium.com/@mail2asimmanna/amazon-sql-interview-question-for-data
 
 방법 3: 여기서 우리는 각 emp_id의 행 번호를 내림차순으로 시간 순서대로 생성할 것입니다. 그런 다음 CTE를 생성한 다음, 행 번호가 =1이고 활동이 'in'인 emp_id를 추출할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 SELECT *,ROW_NUMBER() OVER(PARTITION BY emp_id ORDER BY time DESC) AS rnk
@@ -72,7 +127,17 @@ Please clap if you find the solution helpful.
 
 Let's connect on LinkedIn! 🤝
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포트폴리오를 확인해보세요.

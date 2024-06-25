@@ -3,13 +3,12 @@ title: "스캐니버스가 안드로이드를 지원하게 되었습니다"
 description: ""
 coverImage: "/assets/img/2024-05-23-ScaniverseextendssupporttoAndroid_0.png"
 date: 2024-05-23 14:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ScaniverseextendssupporttoAndroid_0.png
 tag: Tech
 originalTitle: "Scaniverse extends support to Android"
 link: "https://medium.com/scaniverse/scaniverse-extends-support-to-android-638eb75d8818"
 ---
-
 
 ## 다양한 플랫폼에서 3D 스캐닝과 가우시안 스플래팅을 경험해보세요
 
@@ -19,7 +18,18 @@ link: "https://medium.com/scaniverse/scaniverse-extends-support-to-android-638eb
 
 ![이미지](/assets/img/2024-05-23-ScaniverseextendssupporttoAndroid_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3D 창조물을 촬영, 편집 및 공유하세요
 
@@ -29,7 +39,18 @@ link: "https://medium.com/scaniverse/scaniverse-extends-support-to-android-638eb
 
 Scaniverse의 안드로이드 버전을 만드는 것은 도전적이지만 보람 있는 여정이었습니다. 여기에는 어떻게 만들었는지에 대한 소개가 있습니다. 원래의 iOS 앱은 Swift와 네이티브 C++ 코드를 사용하여 만들어졌습니다. 안드로이드에서는 가능한 경우 네이티브 C++ 구성 요소를 재사용하여 플러터 프레임워크를 선택하여 크로스 플랫폼 구현을 만들었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현대 iPhones 중 일부는 LIDAR 센서가 장착된 반면, Android 폰은 그렇지 않아서 포토그램메트리 모드를 통해 3D 재구성할 때 카메라 데이터에만 의존해야 했습니다. 또한 다양한 SoC, CPU 및 GPU를 갖춘 Android 기기 범위에 대한 성능 및 안정성을 최적화하려면 상당한 노력이 필요했습니다. 고사양 Android 기기에서 처리 시간을 30분 이상에서 단 4~5분으로 줄였습니다. 초기 릴리스가 현대 iPhones의 속도에 미치지 못할 수도 있지만, 오늘날 Android 기기에서 훌륭한 성능과 품질을 제공합니다.
 
@@ -39,7 +60,18 @@ Scaniverse의 안드로이드 버전을 만드는 것은 도전적이지만 보�
 
 ![이미지](https://miro.medium.com/v2/resize:fit:600/1*TfpgfZYjKOkVC_6fibRbIA.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 안드로이드에서의 여정이 이제 막 시작됐습니다. 우리는 iOS 앱과 기능의 동일성을 달성하고, 스캔 품질을 향상시키며, 각 업데이트마다 성능을 향상시키겠다는 다짐을 하고 있습니다. 여러분의 피드백은 저희에게 매우 중요합니다. Scaniverse가 여러분을 어떻게 더 잘 도울 수 있는지 support@scaniverse.com으로 연락주시면 감사하겠습니다.
 

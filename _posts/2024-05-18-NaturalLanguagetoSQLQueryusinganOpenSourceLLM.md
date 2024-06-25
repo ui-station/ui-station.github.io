@@ -3,13 +3,12 @@ title: "오픈 소스 LLM을 활용한 자연어를 SQL 쿼리로 변환하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-NaturalLanguagetoSQLQueryusinganOpenSourceLLM_0.png"
 date: 2024-05-18 18:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-NaturalLanguagetoSQLQueryusinganOpenSourceLLM_0.png
 tag: Tech
 originalTitle: "Natural Language to SQL Query using an Open Source LLM"
 link: "https://medium.com/@khadkechetan/natural-language-to-sql-query-using-an-open-source-llm-6b4b91a5519a"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@khadkechetan/natural-language-to-sql-query-using-an-o
 
 Mistral 7B는 NLP 작업에서 뛰어난 성능과 정밀도로 높이 평가 받고 있습니다. 그룹화된 쿼리 어텐션(GQA) 및 슬라이딩 윈도우 어텐션(SWA)과 같은 혁신적인 기능들을 갖춘 Mistral 7B는 수학 및 코드 생성을 포함한 다양한 벤치마크에서 우수한 성과를 거두고 있습니다. Code-Llama 7B의 코딩 능력에 가까워짐과 동시에 NLP 발전에서의 중요성을 강조하며 다양한 분야에서 우수성을 유지하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Phi-3 는 작은 언어 모델(SLMs) 분야에서의 Microsoft의 최신 혁신으로, AI의 풍경을 변화시키는 대단한 제품입니다. Phi-3-mini, Phi-3-small 및 Phi-3-medium으로 구성된 이 모델군은 간결한 구성으로 뛰어난 성능을 제공합니다. 38억 개의 파라미터를 자랑하는 Phi-3-mini는 더 큰 모델들과 견줄 만한 성능을 발휘하면서도 스마트폰에서 효율적으로 동작합니다. Phi-3의 성공 뒤에는 견고함, 안전성 및 대화 능력을 중시하는 정교하게 선별된 학습 데이터셋이 있습니다. Phi-3-small 및 Phi-3-medium은 Phi-3의 능력을 더욱 확장하여 다양한 응용 분야에 대응합니다. 정교하게 설계된 아키텍처와 학습 방법을 통해 Phi-3은 AI 기술의 큰 발전을 상징하며, 다양한 생성형 AI 작업에 대한 우수한 성능과 효율성을 약속합니다.
 
@@ -29,7 +39,18 @@ NLP와 SQL의 교차점을 탐색하여 Mistral 7B와 Microsoft Phi-3의 활용�
 
 # 학습 목표
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 포스트에서는 오픈 소스 Mistral 7B 모델을 NL2SQL 작업에 활용하는 복잡성을 탐색할 것입니다. 또한 NL2SQL 애플리케이션을 위해 모델을 맞춤화하고 훈련하는 방법에 대해 논의할 것입니다. 기사의 나머지 부분은 다음과 같은 내용을 다룹니다.
 
@@ -39,7 +60,18 @@ NLP와 SQL의 교차점을 탐색하여 Mistral 7B와 Microsoft Phi-3의 활용�
 
 또한 이러한 모델에서 내재된 자동화는 쿼리 실행을 가속화하여 전반적인 효율성과 생산성을 높입니다. 오픈 소스 LLMs의 영향력은 광범위하며 다양한 산업 전반에 혁신과 변화를 격려합니다. 이 기술은 재무, 건강 관리 및 전자 상거래 분야와 같이 데이터 주도적 의사 결정이 중요한 분야에서 이해하기 쉬운 인사이트를 추출할 수 있도록 이해권자를 돕습니다. 더 나아가, 고급 분석 플랫폼과 인공 지능 시스템과의 통합을 통해 조직을 데이터 주도적 우수성으로 이끕니다. 탐구 문화를 육성하고 데이터 상호작용을 간소화함으로써 오픈 소스 LLMs는 데이터 자산의 모든 잠재력을 발휘함으로써 산업 전반에 혁신과 성장을 촉진합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1. NL2SQL을 위한 사전 훈련 모델 (Mistral 7B)
 
@@ -56,7 +88,18 @@ Mistral AI가 개발한 70억 개의 파라미터를 가진 언어 모델인 Mis
 
 ## Sliding Window Attention
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Mistral 7B은 전통적인 주의 메커니즘에서 발생하는 도전에 효과적으로 대처할 수 있는 슬라이딩 윈도우 어텐션(Sliding Window Attention, SWA) 메커니즘을 포함하고 있습니다. 전자는 토큰 수가 증가함에 따라 추론 중 지연 시간이 증가하고 처리량이 감소할 수 있으며, 시퀀스 길이와 메모리와 관련된 연산이 이차적으로 증가하고 메모리가 선형적으로 증가할 수 있습니다. 반면에 SWA는 각 토큰의 주의를 이전 레이어의 W개 토큰을 최대한으로 제한하여 주어진 윈도우 크기 W를 넘어서 주의를 확장합니다.
 - SWA는 트랜스포머의 계층 구조를 활용하여 위치 i의 숨겨진 상태가 입력 레이어의 토큰을 W x k 토큰까지 액세스할 수 있도록 지원합니다. 최종 레이어에서 W = 4096의 윈도우 크기로, SWA는 이론적으로 대략 131K 토큰의 주의 범위를 달성할 수 있습니다. 실제적으로 W = 4096 및 FlashAttention과 xFormers의 최적화 기법을 사용하여, 16K 토큰 시퀀스의 경우 바닐라 주의 기준에 비해 주목할만한 2배의 속도 향상이 가능합니다. 따라서, SWA는 주의 메커니즘의 성능을 혁신적으로 향상시킬 수 있는 강력하고 효율적인 접근 방식입니다.
@@ -67,7 +110,18 @@ Mistral AI가 개발한 70억 개의 파라미터를 가진 언어 모델인 Mis
 
 ### c. 사전 채움 및 청크 분할
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 시퀀스 생성 과정에서는 문맥 정보에 기반하여 순차적으로 토큰을 예측하는데, (k, v) 캐시를 사용하여 효율적으로 최적화됩니다. 알려진 프롬프트로 미리 채워진 캐시를 활용하여 효율성을 높입니다. 긴 프롬프트를 관리하기 위해 지정된 윈도우 크기를 사용하여 작은 청크로 나누고, 각 청크를 사용하여 캐시를 미리 채웁니다. 이 전략적 접근 방식은 시퀀스 생성 프로세스 중 캐시 내부 및 현재 청크 전체에서 주의력을 계산하는 것을 포함합니다. 이 방법을 활용함으로써 Mistral 7B는 시퀀스 생성의 효율성을 향상시키며, 캐시에 저장된 미리 알려진 프롬프트를 효율적으로 활용하여 각 예측된 토큰을 이전 토큰과 조화롭게 정렬합니다.
 - 언어 모델의 동적인 환경에서 Mistral 7B의 등장은 성능과 효율성 면에서 큰 도약을 의미합니다. 포괄적인 평가 파이프라인을 통해 Mistral 7B는 자신의 능력을 입증하며, 이전 제품인 Llama 2 7B 및 Llama 2 13B뿐만 아니라 Llama 1 34B와 같은 핵심 벤치마크에서 뛰어난 성능을 보여줌으로써 뛰어난 경쟁력을 나타냅니다.
@@ -80,7 +134,18 @@ Mistral AI가 개발한 70억 개의 파라미터를 가진 언어 모델인 Mis
 
 # 평가의 차이점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 불일치 사항을 투명하게 다루면서, 평가 규정의 변화를 유의하는 것이 중요합니다. 어떤 벤치마크에서는 Llama 2의 MBPP와 Mistral 7B의 평가 결과 사이에 차이가 발생합니다. TriviaQA에서 손으로 검증된 데이터를 사용하는 것이 Mistral 7B의 성능 지표의 신뢰성에 기여하는 강건한 평가 과정을 확인하게 됩니다.
 
@@ -90,38 +155,60 @@ Mistral AI가 개발한 70억 개의 파라미터를 가진 언어 모델인 Mis
 
 ```js
 transaction = [
-        "transaction_id",
-        "transaction_amount",
-        "transaction_date",
-        "transaction_type",
-        "transaction_status",
-        "transaction_description",
-        "transaction_source_account",
-        "transaction_destination_account",
-        "transaction_currency",
-        "transaction_fee"
-    ]
+  "transaction_id",
+  "transaction_amount",
+  "transaction_date",
+  "transaction_type",
+  "transaction_status",
+  "transaction_description",
+  "transaction_source_account",
+  "transaction_destination_account",
+  "transaction_currency",
+  "transaction_fee",
+];
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 코드 구현
 
 - 패키지 설치하기
 
 ```js
-!pip install git+https://github.com/huggingface/transformers.git 
+!pip install git+https://github.com/huggingface/transformers.git
 !pip install deepspeed --upgrade
 !pip install accelerate
 !pip install sentencepiece
 !pip install langchain
 !pip install torch
 !pip install bitsandbytes
-``` 
+```
 
 2. 패키지 불러오기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import os
@@ -139,27 +226,39 @@ from transformers import LlamaTokenizer, LlamaForCausalLM, pipeline
 
 ```js
 base_model = LlamaForCausalLM.from_pretrained(
-     "mistralai/Mistral-7B-Instruct-v0.1",
-     load_in_8bit=True,
-     device_map='auto',
-    )
-tokenizer = LlamaTokenizer.from_pretrained("mistralai/Mistral-7B-Instruct-v0.1")
+  "mistralai/Mistral-7B-Instruct-v0.1",
+  (load_in_8bit = True),
+  (device_map = "auto")
+);
+tokenizer = LlamaTokenizer.from_pretrained(
+  "mistralai/Mistral-7B-Instruct-v0.1"
+);
 pipe = pipeline(
-        "text-generation",
-        model=base_model,
-        tokenizer=tokenizer,
-        max_length=500,
-        temperature=0.3,
-        top_p=0.95,
-        repetition_penalty=1.2
-    )
-local_llm = HuggingFacePipeline(pipeline=pipe)
+  "text-generation",
+  (model = base_model),
+  (tokenizer = tokenizer),
+  (max_length = 500),
+  (temperature = 0.3),
+  (top_p = 0.95),
+  (repetition_penalty = 1.2)
+);
+local_llm = HuggingFacePipeline((pipeline = pipe));
 ```
 
 4. SequenceMatcher
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 Python 함수는 difflib 모듈의 SequenceMatcher 클래스를 활용하여 쿼리와 지정된 사전의 열 이름 간의 유사도 점수를 계산하여 쿼리 이해력과 대체를 향상시킵니다.
 
@@ -173,7 +272,7 @@ try:
       if score > 91:
         question_list[index] = string1 + ","
   return " ".join(question_list)
-  
+
 except:
  return question
 ```
@@ -185,36 +284,46 @@ def query_generator(tble, cols, question):
 
   template = """Generate a SQL query using the following table name: {Table}, and columns as a list: {Columns}, to answer the following question:
   {question}.
-  
+
   Output Query:
-  
+
   """
-  
+
   prompt = PromptTemplate(template=template, input_variables=["Table", "question", "Columns"])
-  
+
   llm_chain = LLMChain(prompt=prompt, llm=local_llm)
-  
+
   response = llm_chain.run({"Table": tble, "question": question, "Columns": cols})
   print(response)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 표
 
-
 transaction = [
-        "transaction_id",
-        "transaction_amount",
-        "transaction_date",
-        "transaction_type",
-        "transaction_status",
-        "transaction_description",
-        "transaction_source_account",
-        "transaction_destination_account",
-        "transaction_currency",
-        "transaction_fee"
-    ]
+"transaction_id",
+"transaction_amount",
+"transaction_date",
+"transaction_type",
+"transaction_status",
+"transaction_description",
+"transaction_source_account",
+"transaction_destination_account",
+"transaction_currency",
+"transaction_fee"
+]
 
     inputs = ["transaction_id가 10인 경우 transaction_amount, transaction_date, transaction_type,transaction_description을 검색하는 SQL 쿼리 생성",
              "transaction_status가 'completed'인 경우 transaction_id, transaction_date, transaction_type, transaction_source_account을 검색하는 SQL 쿼리 생성",
@@ -225,21 +334,31 @@ transaction = [
     for input in inputs:
         query_generator("transaction",transaction ,question=find_columns_match(input,transaction))
 
-
 # 응답
 
 - 다음과 같은 테이블 이름을 사용하고 컬럼을 나열한 리스트를 사용하여 SQL 쿼리를 생성하십시오: transaction 및 [‘transaction_id’, ‘transaction_amount’, ‘transaction_date’, ‘transaction_type’, ‘transaction_status’, ‘transaction_description’, ‘transaction_source_account’, ‘transaction_destination_account’, ‘transaction_currency’, ‘transaction_fee’], 다음 질문에 대한 응답을 위해 SQL 쿼리를 생성하십시오: (‘transaction_id가 10인 경우 transaction_amount, transaction_date, transaction_type,transaction_description을 검색하는 SQL 쿼리 생성’).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-출력 쿼리: 
+출력 쿼리:
 
   SELECT transaction_amount, transaction_date, transaction_type, transaction_description FROM transaction WHERE transaction_id = 10;
 ```
 
 2. 다음과 같은 테이블 이름인 transaction과 열 목록인 [‘transaction_id’, ‘transaction_amount’, ‘transaction_date’, ‘transaction_type’, ‘transaction_status’, ‘transaction_description’, ‘transaction_source_account’, ‘transaction_destination_account’, ‘transaction_currency’, ‘transaction_fee’]을 사용하여 다음 질문에 대한 SQL 쿼리를 생성하십시오:
-(‘transaction_status가 ‘completed’인 경우 transaction_id, transaction_date, transaction_type, transaction_source_account를 검색하는 SQL 쿼리를 생성하십시오’).
+   (‘transaction_status가 ‘completed’인 경우 transaction_id, transaction_date, transaction_type, transaction_source_account를 검색하는 SQL 쿼리를 생성하십시오’).
 
 ```js
 출력 쿼리:
@@ -247,9 +366,20 @@ transaction = [
 ```
 
 3. 다음과 같은 테이블 이름인 transaction과 열 목록인 [‘transaction_id’, ‘transaction_amount’, ‘transaction_date’, ‘transaction_type’, ‘transaction_status’, ‘transaction_description’, ‘transaction_source_account’, ‘transaction_destination_account’, ‘transaction_currency’, ‘transaction_fee’]을 사용하여 다음 질문에 대한 SQL 쿼리를 생성하십시오:
-(‘transaction_type의 count와 평균 transaction_amount를 가져오고 transaction_type으로 정렬하십시오’).
+   (‘transaction_type의 count와 평균 transaction_amount를 가져오고 transaction_type으로 정렬하십시오’).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 결과 쿼리:
@@ -261,7 +391,7 @@ transaction = [
 ```
 
 4. 다음 테이블 이름과 열 목록을 사용하여 SQL 쿼리를 생성하십시오: transaction 및 열: ['transaction_id', 'transaction_amount', 'transaction_date', 'transaction_type', 'transaction_status', 'transaction_description', 'transaction_source_account', 'transaction_destination_account', 'transaction_currency', 'transaction_fee'], 다음 질문에 답하십시오:
-(‘리스트에서 각 소스 계정의 총 거래 금액을 내림차순으로 정렬하여 조회하는 SQL 쿼리를 생성하세요’).
+   (‘리스트에서 각 소스 계정의 총 거래 금액을 내림차순으로 정렬하여 조회하는 SQL 쿼리를 생성하세요’).
 
 ```js
 결과 쿼리:
@@ -273,9 +403,20 @@ transaction = [
 ```
 
 5. 다음 테이블 이름과 열 목록을 사용하여 SQL 쿼리를 생성하십시오: transaction 및 열: ['transaction_id', 'transaction_amount', 'transaction_date', 'transaction_type', 'transaction_status', 'transaction_description', 'transaction_source_account', 'transaction_destination_account', 'transaction_currency', 'transaction_fee'], 다음 질문에 답하십시오:
-(‘각 거래 유형의 최대 거래 금액을 찾아 거래 유형으로 정렬하는 SQL 쿼리를 생성하세요’).
+   (‘각 거래 유형의 최대 거래 금액을 찾아 거래 유형으로 정렬하는 SQL 쿼리를 생성하세요’).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 출력 쿼리:
@@ -292,8 +433,18 @@ transaction = [
 
 Phi-3를 만나보세요, Microsoft의 최신 오픈 AI 모델의 주요 성과입니다. Phi-3-mini, Phi-3-small 및 Phi-3-medium을 통해, 이 작은 언어 모델 (SLM)의 Phi-3 패밀리는 AI 모델의 세계를 혁신하도록 설계되었습니다. 38억 개의 파라미터를 사용하고 33조 개의 토큰으로 훈련된 Phi-3-mini는 높은 성능을 발휘하며 Mixtral 8x7B 및 GPT-3.5와 같은 큰 모델과 같은 성능을 보여줍니다. 게다가, 이 모델은 스마트폰 장치에서 효율적으로 작동할 수 있습니다. Phi-3의 성공은 훈련 데이터셋에 기인합니다. Phi-2의 데이터셋의 진화된 버전입니다. 상세히 걸러낸 웹 데이터 및 합성 입력을 통해 이러한 모델은 강도, 안전 및 대화 능력에 우선순위를 두어 다양한 응용프로그램에 적합합니다. 7B 및 14B 파라미터를 가진 Phi-3-small 및 Phi-3-medium은 효율 유지와 함께 Phi-3의 기능을 더욱 향상시키도록 설계되었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Phi 3 Architecture and Evaluation
 
@@ -303,7 +454,18 @@ Phi-3-mini: 이 모델은 38억 개의 파라미터를 갖추고 33조 개의 �
 
 Phi-3-small: 70억 개의 파라미터로 훈련된 Phi-3-small은 48조 개의 토큰을 사용합니다. 이 모델은 100K 어휘 사전과 8천 개의 디폴트 콘텍스트 길이를 갖추었습니다. 아키텍처는 32개의 레이어, 32개의 어텐션 헤드, 그리고 4096개의 히든 디멘션으로 이루어져 있습니다. 이 모델은 메모리 사용량을 최적화하기 위해 그룹화된 쿼리 어텐션과 번갈아가며 쓰이는 밀집/희소 어텐션을 활용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Phi-3-medium: 이 미리보기 모델은 140억 개의 매개변수를 자랑하며 4.8조 개의 토큰으로 학습되었습니다. 40개의 레이어, 40개의 어텐션 헤드, 그리고 임베딩 크기는 5120입니다.
 
@@ -321,7 +483,18 @@ Phi-3-medium: 이 미리보기 모델은 140억 개의 매개변수를 자랑하
 
 ## 안전성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Phi-3-mini은 Microsoft의 책임 있는 AI 원칙에 따라 만들어진 AI 모델입니다. 이 프로젝트는 개발 초기부터 안전을 우선시하는 원칙을 중요시하여 만들어졌습니다. 모델이 윤리 기준을 준수하고 잠재적인 피해를 최소화할 수 있는 능력을 보장하기 위해 포괄적인 전략이 채택되었습니다.
 
@@ -331,7 +504,18 @@ Phi-3-mini은 Microsoft의 책임 있는 AI 원칙에 따라 만들어진 AI 모
 
 더 나아가, Phi-3-mini는 의견 데이터 세트를 활용하여 응답을 더욱 개선합니다. 특정 테스트 중 확인된 잠재적인 피해 범주에 대응하기 위해 내부에서 생성된 데이터 세트가 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 코드 구현
 
@@ -352,7 +536,18 @@ Phi-3-mini은 Microsoft의 책임 있는 AI 원칙에 따라 만들어진 AI 모
 
 2. 패키지 가져오기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from datasets import load_dataset
@@ -373,7 +568,18 @@ dataset
 
 4. 데이터셋 형식화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def create_prompt(sample):
@@ -418,12 +624,20 @@ print(print_gpu_utilization())
 
 6. 모델 추론
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프롬프트 정의
-
 
 ```bash
     prompt = [
@@ -549,25 +763,28 @@ print(print_gpu_utilization())
 
 10. LoRA 매개변수
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 peft_config = LoraConfig(
-            lora_alpha=16,
-            lora_dropout=0.05,
-            r=16,
-            bias="none",
-            task_type="CAUSAL_LM",
-          target_modules=[
-            'q_proj',
-            'k_proj',
-            'v_proj',
-            'dense',
-            'fc1',
-            'fc2',
-        ])
+  (lora_alpha = 16),
+  (lora_dropout = 0.05),
+  (r = 16),
+  (bias = "none"),
+  (task_type = "CAUSAL_LM"),
+  (target_modules = ["q_proj", "k_proj", "v_proj", "dense", "fc1", "fc2"])
+);
 ```
 
 9. Training Parameters
@@ -594,11 +811,25 @@ training_arguments = TrainingArguments(
 
 10. Data Prepare for the training
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-train_dataset = instruct_tune_dataset.map(batched=True, remove_columns=['answer', 'question', 'context'])
-train_dataset
+train_dataset = instruct_tune_dataset.map(
+  (batched = True),
+  (remove_columns = ["answer", "question", "context"])
+);
+train_dataset;
 ```
 
 11. Fine-Tuned
@@ -620,26 +851,39 @@ trainer.train()
 ```
 
 12. Test inference with the fine-tuned adapter
- 
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-base_model_id = "microsoft/Phi-3-mini-4k-instruct"
-tokenizer = AutoTokenizer.from_pretrained(base_model_id, use_fast=True)
+base_model_id = "microsoft/Phi-3-mini-4k-instruct";
+tokenizer = AutoTokenizer.from_pretrained(base_model_id, (use_fast = True));
 
-compute_dtype = getattr(torch, "float16")
+compute_dtype = getattr(torch, "float16");
 bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_compute_dtype=compute_dtype,
-        bnb_4bit_use_double_quant=True,
-)
+  (load_in_4bit = True),
+  (bnb_4bit_quant_type = "nf4"),
+  (bnb_4bit_compute_dtype = compute_dtype),
+  (bnb_4bit_use_double_quant = True)
+);
 model = AutoModelForCausalLM.from_pretrained(
-          base_model_id, trust_remote_code=True, quantization_config=bnb_config, device_map={"": 0}
-)
-adapter = "/content/phi3-results/checkpoint-400"
-model = PeftModel.from_pretrained(model, adapter)
+  base_model_id,
+  (trust_remote_code = True),
+  (quantization_config = bnb_config),
+  (device_map = { "": 0 })
+);
+adapter = "/content/phi3-results/checkpoint-400";
+model = PeftModel.from_pretrained(model, adapter);
 ```
 
 13. 수행하기
@@ -703,8 +947,18 @@ print("Average --- %s tokens/seconds ---" % (tok_sec))
 
 14. 모델 저장하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import locale
@@ -793,8 +1047,18 @@ print("Average --- %s tokens/seconds ---" % (tok_sec))
 
 # Conclusion
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자연어 처리(NLP)와 SQL 쿼리 엔진의 결합은 데이터베이스와 상호 작용하는 것을 더 쉽고 효율적으로 만들었습니다. 이전에는 SQL에 대한 심층적인 이해가 필요했기 때문에 많은 사용자들에게 어려움이 있었습니다. 그러나 Mistral 7B와 Microsoft Phi-3와 같은 오픈 소스 대형 언어 모델(LLMs)은 이를 바꿨습니다. 이 모델들은 자연어 쿼리를 구조화된 SQL 쿼리로 신속하게 변환하여, 방대한 SQL 전문 지식이 필요 없게 했습니다.
 
@@ -804,7 +1068,18 @@ Mistral 7B와 Microsoft Phi-3는 NLP 작업에서 우수한 성능을 발휘하�
 
 NLP와 SQL의 융합을 통해 오픈 소스 LLMs는 데이터 접근을 민주화시키고 효율성, 생산성, 기업 성공을 촉진했습니다. 이는 데이터 자산의 최대 잠재력을 발휘하도록 허용하여 이해당사자들이 실행 가능한 통찰을 추출하기 쉬워지고, 여러 부문에서 탐구와 혁신의 문화를 육성했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노트북: phi3
 

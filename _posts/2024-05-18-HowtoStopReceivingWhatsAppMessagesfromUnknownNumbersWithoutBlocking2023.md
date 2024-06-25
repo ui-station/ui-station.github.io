@@ -3,13 +3,12 @@ title: "2023년에 블록하지 않고 알려지지 않은 번호로부터 Whats
 description: ""
 coverImage: "/assets/img/2024-05-18-HowtoStopReceivingWhatsAppMessagesfromUnknownNumbersWithoutBlocking2023_0.png"
 date: 2024-05-18 21:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-HowtoStopReceivingWhatsAppMessagesfromUnknownNumbersWithoutBlocking2023_0.png
 tag: Tech
 originalTitle: "How to Stop Receiving WhatsApp Messages from Unknown Numbers Without Blocking 2023"
 link: "https://medium.com/@techtotools/how-to-stop-receiving-whatsapp-messages-from-unknown-numbers-without-blocking-2023-fcaf7f76bd1f"
 ---
-
 
 ![How to Stop Receiving WhatsApp Messages from Unknown Numbers Without Blocking](/assets/img/2024-05-18-HowtoStopReceivingWhatsAppMessagesfromUnknownNumbersWithoutBlocking2023_0.png)
 
@@ -19,7 +18,18 @@ If you want to stop receiving WhatsApp messages from unknown numbers without res
 
 ## Privacy settings
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Whats App을 열고 메뉴에서 "설정"으로 이동하세요. "계정"을 선택한 다음 "개인정보"를 클릭하세요. 여기에서 프로필 사진, 상태 및 최종 활동을 볼 수 있는 사람을 사용자 정의할 수 있습니다. 이러한 옵션을 연락처에만 제한하면 알 수 없는 번호가 이 정보에 액세스하거나 이를 기반으로 대화를 시작할 수 없습니다.
 
@@ -29,7 +39,18 @@ Whats App을 열고 메뉴에서 "설정"으로 이동하세요. "계정"을 선
 
 ## 그룹 초대 제한
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알 수 없는 번호에 의해 무작위 그룹에 추가되는 것을 피하려면 "개인 정보" 섹션으로 돌아가 "그룹"을 탭하세요. 거기에는 "모두", "내 연락처", "제외한 연락처" 세 가지 옵션이 제공됩니다. "내 연락처" 또는 "제외한 연락처"를 선택하면 동의 없이 타인이 당신을 그룹에 추가하는 것을 방지할 수 있습니다.
 
@@ -39,7 +60,18 @@ Whats App을 열고 메뉴에서 "설정"으로 이동하세요. "계정"을 선
 
 특히 성가신 알 수 없는 번호에서 메시지를 받으면 해당 번호를 개별적으로 차단할 수 있습니다. 채팅을 열고 상단의 연락처 이름을 탭한 후 "차단"을 선택하세요. 이 동작은 해당 특정 번호로부터의 추가 메시지를 방지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 스팸 신고
 

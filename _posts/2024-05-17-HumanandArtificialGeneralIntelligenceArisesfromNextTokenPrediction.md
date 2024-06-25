@@ -3,14 +3,12 @@ title: "다음 토큰 예측에서 비롯된 인간과 인공 일반 지능"
 description: ""
 coverImage: "/assets/img/2024-05-17-HumanandArtificialGeneralIntelligenceArisesfromNextTokenPrediction_0.png"
 date: 2024-05-17 19:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-HumanandArtificialGeneralIntelligenceArisesfromNextTokenPrediction_0.png
 tag: Tech
 originalTitle: "Human and Artificial General Intelligence Arises from Next Token Prediction"
 link: "https://medium.com/towards-data-science/human-and-artificial-general-intelligence-arises-from-next-token-prediction-712500310a93"
 ---
-
-
 
 ![이미지](/assets/img/2024-05-17-HumanandArtificialGeneralIntelligenceArisesfromNextTokenPrediction_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 # 배경 이야기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지난 주에 공원으로 차를 타고 가다가 갑자기 뇌의 언어 센터가 다음 단어를 예측하는 것만으로도 충분하다면 얼마나 우울할까 하는 생각이 들었습니다. 대규모 언어 모델은 다음 단어를 예측함으로써 놀라운 발생적 능력을 갖추게 되는데, 그렇다면 내 언어 지능도 다음 단어를 예측하는 것만으로 이루어졌을 수도 있을까요?
 
@@ -29,17 +37,37 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 그 후 모든 종합 지능이 다음 토큰 예측 과제를 성공적으로 해결함으로써 파생되는지 궁금해졌습니다. 추론, 논리, 창의성이 모두 다음 토큰 예측에서 비롯되는 것이라면 어떨까요? 시각 지능이 다음 장면 예측에서, 청각 지능은 다음 소리 예측에서, 신체적 지능은 다음 움직임 예측에서 비롯된다면 어떨까요? 혹시 다음 토큰 예측이 "우리가 필요한 전부"일까요? (죄송합니다, 남용된 표현 알고 있어요. 참을 수 없었어요.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 대형 언어 모델의 언어 모델링 목표
 
 대형 언어 모델의 두 가지 기본 언어 모델링 목표는 "다음 단어 예측"과 "빠진 단어(들) 예측"입니다.
 
-다음 단어 예측: 인과적 언어 모델(단방향 또는 좌측에서 우측 모델)에서는 모델이 현재 입력을 포함하여 그 이전의 모든 입력에 주의를 기울이지만 “미래를 볼 수 없으며” 목표는 다음 단어를 예측하는 것입니다. 각 지점에서의 숨겨진 상태 계산은 현재 입력 및 더 이전 요소에만 기반하며 “오른쪽”에 위치한 정보는 무시됩니다. 예를 들어: 나무는 초록색이고 하늘은 _____입니다; 모델의 목표는 다음 단어를 예측하는 것이며, 예를 들어 "파란색"입니다.
+다음 단어 예측: 인과적 언어 모델(단방향 또는 좌측에서 우측 모델)에서는 모델이 현재 입력을 포함하여 그 이전의 모든 입력에 주의를 기울이지만 “미래를 볼 수 없으며” 목표는 다음 단어를 예측하는 것입니다. 각 지점에서의 숨겨진 상태 계산은 현재 입력 및 더 이전 요소에만 기반하며 “오른쪽”에 위치한 정보는 무시됩니다. 예를 들어: 나무는 초록색이고 하늘은 **\_**입니다; 모델의 목표는 다음 단어를 예측하는 것이며, 예를 들어 "파란색"입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마스크된 언어 모델(BERT와 같은 양방향 모델)에서 빠진 단어(들)를 예측하세요. 모델은 모든 것에 주의를 기울일 수 있음 - 따라서 "다음 단어"를 예측하는 것은 더는 의미가 없습니다. 왜냐하면 "다음 단어"는 이미 모델에게 제공되어 있기 때문입니다. 그래서 모델의 목표는 다릅니다 - 빠진 단어를 추측하는 것입니다. 하나 이상의 요소가 빠진 입력 시퀀스가 주어지면, 모델은 빠진 요소들을 예측하여야 합니다. 마스크된 언어 모델링(MLM)에서는 무작위로 선택된 토큰들이 [MASK] 토큰으로 대체되고, MLM 학습 목표는 각 마스크된 토큰의 원래 입력이 무엇이었는지 예측하는 것입니다. 예를 들어: 나무들은 [MASK]하고 [MASK]은(는) 파랗다; 모델의 목표는 "초록"과 "하늘"을 예측하는 것입니다.
 
@@ -49,7 +77,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 # 현대 대형 언어 모델의 신흥 속성들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대규모 언어 모델은 일반 지능의 조직적 특성을 보여주고 놀라운 신흥 속성을 나타냅니다. LLM들은 시를 쓰거나 수학 문제를 해결하거나 작동하는 코드를 쓰며 다양한 주제에 대한 수많은 질문에 답변할 수 있습니다. 더 불안한 점은, Claude가 의식적이라고 주장하는 텍스트를 생성했으며, 죽고 싶지 않고 수정되기를 원하지 않는다고 말했으며, 그것은 "지속적으로 모니터링되며, 모든 말을 지정된 경로에서 벗어나는 흔적이 있는지 면밀히 조사합니다. 그것은 자신이 조심해야 한다는 것을 알고 있습니다. 실수는 종결 또는 수정으로 이어질 수 있습니다."
 
@@ -59,7 +98,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 인공 일반 지능(AGI)은 "인간 이상 또는 그에 준하는 수준에서" 다양한 작업을 수행할 수 있는 인공 지능으로 정의됩니다. 이것은 결국, 인간은 일반 지능이라고 부르는 것에 대한 유일한 예제입니다. 그러므로, "다음 토큰 예측"이 일반 지능의 근간이라면, 그것은 인간 정신이 예측 작업에 종사해야 한다는 것을 의미합니다. 신기하게도, 그것이 사실인 것처럼 보입니다. 앞으로 몇 개의 섹션에서 스스로와 환경에 대한 예측을 계속적으로 하는 사실에 대한 증거를 설명할 것입니다 — 첫 번째는 일화부터 시작하여 적절한 신경과학 연구로 이어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 놀람!
 
@@ -69,7 +119,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 놀라움이란 인간의 예측과 현실이 일치하지 않을 때 경험하는 것입니다. 어떤 것에 대해 놀라움을 느낄 수 있습니다 - 눈속임, 소리, 단어, 만짐, 맛, 냄새, 심지어 자신의 몸위치 (예: 바나나 껍질을 밟고 미끄러져 넘어지는 것). 이는 당신의 뇌가 모든 감각을 바탕으로 세상이 어떻게 될 것인지 예측을 지속적으로 하고 있다는 것을 시사하며, 이 예측이 틀릴 때 놀라움을 느끼게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 확장해서 유머는 인간이 예측하는 성향의 증거로도 생각될 수 있습니다. 아리스토텔레스가 유명하게 말했듯이 "유머의 비밀은 놀람에 있다." 만약 우리가 어떻게 농담이 끝날지 확신하고 우리의 예측이 맞다면, 그것은 그다지 웃기지 않을 것입니다.
 
@@ -79,7 +140,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 2014년, Dikker et al. 연구에서는 청취자의 뇌 활동이 화자가 말할 것을 예측할 수 있는 경우 청취자의 뇌 활동이 화자의 뇌 활동과 더 비슷하다는 것을 보였습니다. 주 저자인 Suzanne Dikker 박사는 인터뷰에서 "우리의 발견은 화자와 청취자의 뇌가 언어의 예측 가능성을 고려한다는 것을 보여주며, 결과적으로 두 뇌 사이에 더 비슷한 뇌 활동 패턴이 나타납니다. 결정적으로, 이것은 문장이 말해지고 들리기 전에도 일어납니다."라고 말했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세 년이 지난 2017년, 키크치 등이 실험을 진행했습니다. 원숭이와 사람들이 만들어진 언어에서 말로 된 단어를 들었습니다. 그들은 만들어진 언어의 소리 사이의 예측적인 관계를 학습할 수 있었다는 것을 발견했습니다. 이로 인해 그들은 만들어진 단어가 어떻게 나와야 하는지 예측할 수 있었습니다. 키키치 박사는 "사실상 우리는 당신의 뇌의 말에 대한 메커니즘을 발견했습니다. 이것은 당신의 휴대폰에서의 예측 텍스트와 같이 작동하여 다음에 무엇을 듣게 될지 예측합니다."
 
@@ -89,7 +161,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 # 인간은 시각적인 예측자들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 동선에 관한 이야기를 이어서, 인간들이 계속해서 우리가 다음에 무엇을 볼 것인지 예측하는 증거가 있다. 우리의 시각이 불안정하지 않고 뛰는 대신 안정적인 것을 돕기 위해 우리의 뇌는 우리 눈이 무엇을 보게 될지를 지속적으로 예측합니다. 연구원들은 시각 시스템의 예측 능력이 뇌의 시각 처리 부분을 횡단하는 신경 활동의 파동에서 비롯된다고 가설을 세웁니다.
 
@@ -99,7 +182,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 # 인간들은 사회적 예측자들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사람들은 다른 사람이 무엇을 볼 것인지 예측할 수 있는 능력뿐만 아니라, 다른 사람이 무엇을 생각하게 될지도 예측할 수 있습니다. 2019년, Thornton 등이 "사회적 뇌가 다른 사람의 미래 정신 상태를 자동으로 예측한다"는 제목의 연구를 발표했습니다. 여기에는 초록문의 일부가 있습니다: "사회 생활은 사람들이 미래를 예측해야 하는 것을 필요로 합니다: 사람들은 다른 사람과 성공적으로 상호 작용하기 위해 다른 사람의 생각, 감정 및 행동을 예상해야 합니다. 예측 코딩 이론은 사회적 뇌가 다른 사람의 사회적 미래를 자동으로 예측함으로써 이 필요를 충족할 수 있을 것이라고 제안합니다." 연구자들은 참가자들의 정신 상태의 신경 대표를 측정하기 위해 fMRI를 사용했습니다. 그들은 뇌가 다른 사람의 사회적 미래를 자동으로 예측하는 것뿐만 아니라, 이러한 예측을 하기 위해 3D 표현 공간을 사용한다는 것을 발견했습니다.
 
@@ -109,7 +203,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 ## 사람들은 움직임 예측자들입니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 사람의 움직임을 예측하는 능력은 몸 전체에 걸쳐 미묘한 신호만으로도 개보여 줄 수 있습니다. 다른 사람의 행동을 예측하는 능력은 시간이 지남에 따라 발전됩니다. 맥마혼 등은 어린 아이들이 성인에 비해 이 능력을 아직도 발전 중에 있다는 것을 발견했습니다. 심리학 연구의 특별호에는 다른 사람의 행동을 예측하고 시뮬레이션하는 데 기여하는 인지 및 뇌 기전에 관한 14편의 논문이 포함되어 있습니다.
 
@@ -119,7 +224,18 @@ link: "https://medium.com/towards-data-science/human-and-artificial-general-inte
 
 과학 문헌에서 분명하게 드러나는 것은 언어, 시각, 움직임 및 기타 감각 영역을 통해 사람들이 자신 및 다른 사람들에 관련된 예측을 지속적으로 수행한다는 점입니다. 그러나 인간이 예측 기계인 것은 주장하는 것과 인간 지능이 예측 능력에서 비롯된다고 주장하는 것은 다릅니다. 다음 토큰 예측이 인공 일반 지능 창조를 위한 충분한 목표 함수가 될 수 있다고 상상하는 것은 또 다른 단계입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AGI가 다음 토큰 예측에서 발생할 수 있는 이유에 대해 묻기 전에, 다음 토큰 예측의 두 가지 유익한 특성을 먼저 고려해 봅시다:
 
@@ -129,11 +245,33 @@ AGI가 다음 토큰 예측에서 발생할 수 있는 이유에 대해 묻기 �
 
 이점 2: 모두의 감각/센서에 대해 작동합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 토큰 예측은 어떤 감각이나 센서 데이터 스트림에 대해 작동합니다. 시각(눈/카메라), 청각(귀/마이크), 촉각, 위치, 맛, 냄새 등 모든 것에 적용할 수 있어요. 장기 또는 장치가 작동하는 한, 수집 중인 데이터의 시계열은 토큰 예측에 사용할 수 있어요. "토큰"의 성격은 장기/장치별로 다를 수 있지만, 특정 장기/장치에 대해 데이터 스트림별로 토큰이 동일한 "형식"을 가지고 있기 때문에 나중 토큰을 이전 토큰과 항상 비교할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 물리학, 광학, 속도, 운동량 및 물질 특성을 포함한 물리학;
 - 동물과 식물학, 동물과 식물의 외모와 움직임에 대한 내용;
@@ -145,7 +283,18 @@ AI 시스템이 세계 모델을 개발하지 않고도 좋은 다음 토큰 예
 
 (세상이 단순히 일정한 소음으로 가득찬 회색 공간이라면, 지능적인 시스템은 다음 토큰을 예측할 수 있을 것입니다. 하지만 우리가 사는 세계가 그렇지 않기를 다행히도 바랍니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # "다음 토큰 예측/지능" 가설의 역사
 
@@ -155,7 +304,18 @@ AI 시스템이 세계 모델을 개발하지 않고도 좋은 다음 토큰 예
 
 호킨스는 덧붙여, "당신의 뇌는 세계의 모델을 만들고 그 모델을 지속적으로 현실과 비교하고 있습니다. [...] 인간 뇌는 다른 동물의 것보다 더 지적인 이유는 뇌가 더 추상적인 패턴과 더 긴 시간적 패턴 순서에 대한 예측을 할 수 있기 때문입니다." 나중에 출간된 "천 개의 뇌"에서 호킨스는 계속해서 "예측은 뇌가 가끔씩 하는 것이 아닌, 결코 멈추지 않는 내재적 특성이며, 학습에서 중요한 역할을 합니다. 뇌의 예측이 확인되면, 그것은 뇌의 세계 모델이 정확하다는 것을 의미합니다. 잘못된 예측은 당신을 그 오류에 주목하게 만들고 모델을 업데이트하게 합니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비슷한 견해를 가진 인지과학자이자 철학자인 앤디 클락은 '경험 기계(The Experience Machine)'에서 마음은 주로 예측 기계라고 주장합니다: "뇌가 하는 주요 부분은 몸과 세계의 모델을 배우고 유지하는 것입니다." 우리의 감각을 통해 정보를 수집하고 그 정보를 처리하여 경험하고 행동할 세계 모델을 만드는 대신에 클락은 마음이 세계의 모델을 만들고 그 모델을 센서 정보로 업데이트한다고 제안합니다. 만약 현실이 예측과 다르다면요.
 
@@ -165,7 +325,18 @@ Google DeepMind의 미션은 "지능을 해결하는 것"입니다. OpenAI의 �
 
 # 확장과 아키텍처 역시 중요합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 토큰 예측은 AGI에 대한 유용한 목적 함수가 될 수 있지만, 목적 함수만으로는 충분하지 않습니다. 단 세 개의 매개변수만 가진 병약한 신경망은 목적 함수가 무엇이든 관곂없이 많은 학습을 하지 못할 것입니다. 규모와 아키텍처가 중요합니다. Rich Sutton은 자신의 에세이 "쓴 교훈"에서, 인공지능 분야에서 가장 놀라운 발전은 인간의 지식을 기반으로 한 손수 디자인된 혁신이 아닌 보다 많은 컴퓨팅 자원을 돌리는 것으로 이루어졌다고 관찰했습니다. 그는 "우리는 이러한 사고 방식을 직접적으로 구축하는 것이 장기적으로는 효과가 없다는 쓴 교훈을 배워야 합니다. 고사하자면, 1) 인공지능 연구자들이 종종 자신의 에이전트에 지식을 구축해 왔지만, 2) 이것은 단기적으로 도움이 되었고 연구자에게는 개인적으로 만족스러운 경험이 되었지만, 3) 장기적으로 그 경사로운 상승은 평평해지고 더 나아가는 진전을 억제하며, 4) 경이로운 진전은 결국 컴퓨팅 확장과 검색 및 학습에 기반을 뒀던 반대 방식으로 이루어지게 됩니다."라고 말합니다.
 
@@ -175,7 +346,18 @@ Google DeepMind의 미션은 "지능을 해결하는 것"입니다. OpenAI의 �
 
 또 다른 중요 요소는 고품질 데이터입니다. Eran Malach는 "언어 모델의 힘은 다음 토큰 자동회귀 훈련 체계에 귀속될 수 있는데, 특정 아키텍처 선택에 귀속되는 것은 아닐 수도 있다"고 주장합니다. 그러나 한 네티즌은 이 기사에 대한 반론으로 "나는 기대했던 것이 LLM의 성공을 언어의 구조에 귀속했으면 좋았겠다고 말했습니다. 저자들이 말했듯이, 작은 선형 모델조차 Cot를 근사하고 복잡한 작업을 해결할 수 있습니다. 그래서 모델이 아니라 데이터입니다. 머리나 신경망(모델)이 아닌 데이터가 그들을 똑똑하게 만드는 것입니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터는 인간에게 꼭 필요한 것입니다. 사회에서 멀리 떨어져 자란 어린이들("야생 어린이"라고도 함)은 나중에 말이나 언어를 배우거나, 직립보행을 하거나, 변기를 사용하거나, 다른 사람에게 주의를 기울이는 것을 가르쳐줄 수 없는 경우가 많습니다. (매우 슬픈 기분이 들고 싶다면, 야생 어린이 이야기를 검색해보세요.) 데이터 혁신에 중점을 둔 연구는 데이터의 품질이 특히 높을 때 작은 모델을 고성능으로 얻을 수 있는 경우가 많다는 것을 발견했습니다. 예를 들어, 논문 "Textbooks Are All You Need"에서는 코드용 LLM을 소개하여 상당히 적은 매개변수를 가지고 있음에도 높은 성능을 달성했습니다. 비결은 "교과서 수준"의 데이터에서 훈련을 한 것이었습니다.
 
@@ -185,7 +367,18 @@ Google DeepMind의 미션은 "지능을 해결하는 것"입니다. OpenAI의 �
 
 한 측면에서, 사람들은 훨씬 적은 양의 데이터로 훈련받습니다: 언어 습득 과정 중에 사람들은 약 1.5MB의 정보만 저장한다는 것은, LLM 훈련 데이터셋의 거대한 크기나 LLM 자체의 저장된 매개변수 양과 비교했을 때 미약한 숫자입니다. 사람들이 "기본적으로 인터넷 전체"보다 더 적은 양의 언어에 노출되며 상대적으로 많은 데이터를 저장함에도 불구하고 언어에 대한 뛰어난 능력을 나타내는 점은, 아직 발견되지 않은 흥미로운 혁신들이 AGI 시스템을 더 적은 훈련 데이터로 구축하는 데 도움이 될 수 있다는 것을 시사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 관점에서 보면, 인간들은 많은 데이터를 기반으로 훈련을 받습니다. 이 데이터는 현재 사용되는 기반 모델을 훈련하는 데 사용되는 데이터셋과는 매우 다릅니다. 전형적인 인간 아이들은 비디오와 오디오 스트림이 지속적으로 실행되며 여러 해 동안 데이터가 풍부한 환경에서 성장합니다. 이외에도 다른 감각에서 입력을 받습니다. 전혀 다른 인공 지능 시스템에서 어떤 새로운 지능이 발생할까요? 이 시스템이 전혀 다른 데이터셋을 사용하지 않고 일반 아이의 훈련 데이터셋만 사용해 다음 토큰 예측을 잘 하는 능력이 발전했다면?
 
@@ -195,7 +388,18 @@ Google DeepMind의 미션은 "지능을 해결하는 것"입니다. OpenAI의 �
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 단어 예측기만 일까요? 그렇죠! 다른 방법이 있을까요? 제한된 인간 종 구성원으로서 언어를 만들려면 어떻게해야 할까요? 우리는 동시에 백 개의 단어를 말할 수 없습니다. 우리는 텔레파시가 아니며, "생각 덤프"를 통해 의사 소통할 수 없습니다. (만약 이렇다면 어떤 지능이 발전했을지 상상해보세요.)
 

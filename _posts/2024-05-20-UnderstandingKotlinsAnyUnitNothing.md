@@ -3,14 +3,12 @@ title: "코틀린의 Any, Unit, Nothing 이해하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-UnderstandingKotlinsAnyUnitNothing_0.png"
 date: 2024-05-20 17:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-UnderstandingKotlinsAnyUnitNothing_0.png
 tag: Tech
 originalTitle: "Understanding Kotlin’s Any, Unit, Nothing"
 link: "https://medium.com/@khush.panchal123/understanding-kotlins-any-unit-nothing-7bcaad73fbc1"
 ---
-
-
 
 ![Understanding Kotlin's Any, Unit, Nothing](/assets/img/2024-05-20-UnderstandingKotlinsAnyUnitNothing_0.png)
 
@@ -31,7 +29,18 @@ public open class Any {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 클래스 계층 구조의 루트입니다. 모든 Kotlin 클래스는 Any로부터 상속받습니다.
 - Java의 Object에 해당됩니다.
@@ -59,7 +68,18 @@ public static final void printAny(@Nullable Object value) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Unit
 
@@ -80,7 +100,18 @@ public object Unit {
 
 예시
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 fun printMessage(message: String) { // Unit을 명시적으로 작성할 필요가 없습니다.
@@ -112,7 +143,18 @@ fun main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 () -` Unit은 함수 유형을 나타내며 Unit은 해당 함수 유형이 의미 있는 값을 반환하지 않음을 나타냅니다.
 
@@ -130,7 +172,18 @@ package kotlin
 public class Nothing private constructor()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 아무 값이 없음을 나타내며 함수가 일반적인 방식으로 반환하지 않을 것을 나타냅니다.
 - 사용자가 정의한 Kotlin 유형을 포함한 모든 형식의 하위 유형입니다.
@@ -163,7 +216,18 @@ public static final Void fail(@NotNull String message) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소스 코드: 깃허브
 

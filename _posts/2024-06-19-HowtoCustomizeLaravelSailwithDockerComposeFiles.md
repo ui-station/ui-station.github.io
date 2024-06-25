@@ -3,13 +3,12 @@ title: "라라벨 세일과 도커 컴포즈 파일을 사용자 정의하는 �
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtoCustomizeLaravelSailwithDockerComposeFiles_0.png"
 date: 2024-06-19 12:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtoCustomizeLaravelSailwithDockerComposeFiles_0.png
 tag: Tech
 originalTitle: "How to Customize Laravel Sail with Docker Compose Files?"
 link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files-52d51465a60d"
 ---
-
 
 ![](/assets/img/2024-06-19-HowtoCustomizeLaravelSailwithDockerComposeFiles_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 이 문서에서는 Docker Compose를 사용하여 라라벨 Sail을 사용자 정의하는 방법에 대해 알아보겠습니다. 서비스, 볼륨, 포트, 환경 변수를 조정하여 개발 경험을 효율적으로 만들고 프로젝트 요구 사항에 완벽하게 부합하도록 만들어 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 도커-컴포즈.yml 파일 이해하기
 
@@ -29,7 +39,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 이 섹션은 도커 컴포즈 파일 형식 버전을 지정합니다. 최신 버전이 더 많은 기능을 제공하지만, Sail은 보다 널리 접근 가능한 지원되는 버전을 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 2. 서비스
 
@@ -41,7 +62,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 각 서비스 정의에는 기본 이미지(예: php:8.1), 노출할 포트(예: 웹 트래픽용으로 80:80), 마운트할 볼륨(프로젝트 코드 및 데이터) 및 구성에 대한 환경 변수와 같은 세부 정보가 포함됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. 볼륨
 
@@ -51,7 +83,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 이 섹션은 컨테이너 간 통신을 위한 사용자 정의 네트워크를 정의합니다. 기본적으로 Sail은 환경 내에서 서비스 간 통신을 위해 브리지 네트워크를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5. 환경
 
@@ -61,7 +104,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 # 서비스 사용자 정의하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 본 것처럼, docker-compose.yml 파일의 서비스 섹션은 Sail 환경에서 실행되는 각 컨테이너를 정의합니다. 이것이 맞춤화의 마법이 일어나는 곳입니다! 프로젝트에 맞춰 서비스를 개인화하는 몇 가지 방법을 살펴봅시다:
 
@@ -71,7 +125,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 ## 2. 포트:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적으로 Sail은 특정 컨테이너 포트를 호스트 머신 포트로 매핑합니다. 이를 통해 편리한 URL(일반적으로 http://localhost:80)을 통해 응용 프로그램에 액세스할 수 있습니다. 그런데 여러 프로젝트를 동시에 작업하고 있을 때는 어떻게 해야 할까요? 각 프로젝트의 laravel.test 서비스에 대해 포트를 사용자 정의하여 충돌을 피할 수 있습니다. 다음은 방법입니다:
 
@@ -81,7 +146,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 볼륨은 호스트 머신과 컨테이너 간에 공유되는 디렉터리입니다. 이를 통해 컨테이너가 다시 생성되어도 응용 프로그램 코드 및 데이터베이스 파일과 같은 데이터를 지속적으로 유지할 수 있습니다. Sail은 일부 볼륨을 사전 구성하지만 특정 요구 사항에 따라 추가 볼륨을 추가할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 프로젝트 디렉토리 외부에 사용자 지정 구성 파일이 있다고 상상해보세요. laravel.test 서비스에서 이 파일을 볼륨으로 마운트할 수 있습니다.
 
@@ -91,7 +167,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 환경 변수는 코드 자체를 수정하지 않고 응용 프로그램을 구성하는 방법을 제공합니다. Sail은 일부 기본 환경 변수를 정의하지만, 프로젝트에 특정한 사용자 정의 환경 변수를 추가할 수 있습니다. 다음은 예시입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 환경 변수는 env() 도우미 함수를 사용하여 Laravel 애플리케이션 내에서 액세스할 수 있습니다.
 
@@ -101,7 +188,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 # 1. 네트워크:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적으로 Sail은 서비스간 통신을 위해 브릿지 네트워크를 사용합니다. 그러나 더 세밀한 제어가 필요한 복잡한 애플리케이션의 경우, docker-compose.yml 파일에서 사용자 정의 네트워크를 정의할 수 있습니다. 이러한 네트워크를 사용하면 서비스를 격리하고 통신 패턴을 제어할 수 있습니다.
 
@@ -111,7 +209,18 @@ link: "https://medium.com/codex/customize-laravel-sail-with-docker-compose-files
 
 Sail은 MySQL과 같은 미리 구성된 서비스를 제공하지만, 캐싱을 위해 Memcached나 이메일 테스트를 위해 Mailhog와 같은 추가 서비스가 필요한 경우는 어떨까요? Docker Compose의 장점은 다양한 서비스를 통합할 수 있는 능력에 있습니다. docker-compose.yml 파일에서 원하는 이미지와 구성 옵션을 지정하여 사용자 정의 서비스를 정의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어 Memcached 서비스를 추가하려면:
 
@@ -121,7 +230,18 @@ Sail은 MySQL과 같은 미리 구성된 서비스를 제공하지만, 캐싱을
 
 보안이 중요합니다. 데이터베이스 자격 증명과 같은 민감한 정보를 docker-compose.yml 파일에 직접 저장하는 것은 권장되지 않습니다. Docker Compose는 "비밀"이라고 불리는 안전한 솔루션을 제공합니다. 이 비밀은 docker-compose.yml 파일 외부에서 정의하고 서비스 내에서 환경 변수를 사용하여 참조할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중요 사항: Docker 시크릿을 사용하려면 추가 구성이 필요하며, 민감한 정보를 위한 별도의 파일을 관리해야 할 수도 있습니다. 이 옵션을 구현하기 전에 Docker 보안 모베스트 프랙티스를 충분히 이해해야 합니다.
 
@@ -131,7 +251,18 @@ Sail은 MySQL과 같은 미리 구성된 서비스를 제공하지만, 캐싱을
 
 Laravel Sail은 사전 구성된 Docker 환경을 활용하여 Laravel 개발 워크플로우를 간소화할 수 있습니다. 하지만 진정한 매력은 사용자 정의할 수 있다는 점에 있습니다. Docker Compose 파일을 활용하여 Sail 설정을 프로젝트 요구 사항에 완벽히 맞게 조정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 서비스 베이스 이미지 및 포트를 조정하여 볼륨을 마운트하고 사용자 정의 환경 변수를 정의하는 등 다양한 사용자 정의 옵션을 살펴보았습니다. 우리는 심화된 영역으로 들어가 커스텀 네트워크를 추가하고 서비스를 추가하며 Docker 시크릿을 활용하여 보안을 강화했습니다.
 

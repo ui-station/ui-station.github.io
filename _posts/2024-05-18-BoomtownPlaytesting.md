@@ -3,13 +3,12 @@ title: "블로그 포스트 제목 스타일로 번역하겠습니다프론트�
 description: ""
 coverImage: "/assets/img/2024-05-18-BoomtownPlaytesting_0.png"
 date: 2024-05-18 16:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-BoomtownPlaytesting_0.png
 tag: Tech
 originalTitle: "Boomtown Playtesting"
 link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 ---
-
 
 <img src="/assets/img/2024-05-18-BoomtownPlaytesting_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 게임은 사람들이 플레이할 때만 존재하고, 가끔은 게임 디자인의 기능은 이미 플레이된 게임을 기록하는 것이라고 주장하기도 해요 — 내 머릿속에서만 플레이했다 해도요. 일부 사람은 플레이테스팅에 대해 비판을 품지만, 저는 그것을 즐기죠. 다른 사람들과 함께 게임을 할 기회가 어디서도 얻을 수 없는 독특한 경험이기 때문이죠. 테이블의 필요에 맞게 게임을 바꾸는 것을 게임을 살아 숨쉬는 존재로서 직접 경험하는 아름다운 기회가 또 있을까요? 디자이너들에게 플레이테스트를 추천하는 건 최종 작품의 품질을 향상시킨다는 것 때문은 아니에요 (잘 활용한다면 물론, 그게 가치 있는 도구이긴 해요) 다만 그것이 정말 재미있어서 그래요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 13살 때부터 사용해 온 플레이 테스트 방법이 있습니다. 이 방법은 친구 Eclipse가 이 방법에 대한 글을 올리면서 그 가치와 역할에 대해 제 주의를 환기시켰을 때까지는 전혀 눈에 띄지 않는 방법인데요. 저는 이를 '커뮤니티 플레이테스팅'이라고 생각하고 있어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 # 커뮤니티 플레이테스팅이란?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 금이 강에서 발견되었습니다. 견습광부들은 눈앞이 반짝이며 도착합니다. 시내 주변에 집들이 솟아납니다. 상점 주인들은 물건을 옮기느라 서둘러합니다. 모든 사람들은 두 달 후에는 온 동네가 황무지가 될 것을 알지만, 현재는 살아있습니다. 커뮤니티 플레이테스팅은 매우 비슷한 프로젝트입니다. 특정 게임에 대한 플레이테스팅과 피드백만을 위해 만들어진 임시 커뮤니티 공간입니다. 이 커뮤니티 공간은 당신의 번창하는 마을, 활동과 흥분이 넘치는 곳이며 결국 가라앉을 겁니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 번창하는 마을은 당신의 게임을 위한 커뮤니티입니다. 친구와 플레이 파트너를 초대하세요 (그들이 항상 함께하진 않을 수 있으니 이해하세요!), 팬들을 초대하세요, 당신과 같은 작업을 하는 사람들을 초대하세요. 공간 안 모두가 당신의 이익을 생각하며 게임을 최고로 만들고자 하는 열망을 갖고 있고, 당신이 함께 플레이하고 싶은, 프로젝트에 열정적인 사람들입니다. 그들은 성심성의, 동정심, 흥분으로 당신이 만드는 모든 것에 참여할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **Boom Town**은 플레이테스트 및 반복에 사용되는 공간입니다. 게임을 자주 실행하고 커뮤니티가 본인의 게임을 실행할 수 있도록 권한을 부여하며 실험적인 아이디어를 시험해보라고 사람들을 격려하세요. 게임을 거의 당신만큼 잘 알고 있는 사람들로 가득 찬 방에서 아이디어를 교환하고 까다로운 설명을 해결하는 데 도움을 받으세요. 플레이스토밍 세션을 진행해보세요. 경험 많은 플레이테스터들과 음성 통화를 통해 아직 규칙을 만들지 않은 게임 부분을 다루며 새로운 메카닉을 어떻게 새롭게 만들 수 있는지 보세요.
 
@@ -49,17 +81,39 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 저는 태보이기(TTRPG)에 손 대기도 전에 라이브 액션 롤플레이(LARP) 디자이너였습니다. 14살 때, Wayfinder Experience를 통해 거대한 인원들을 위한 LARP를 운영하며 전문 스텝과 제작 예산을 가졌습니다. 이러한 LARP는 모두 원샷이었고, 기계적 중첩이 있었지만 플레이테스트를 할 능력이 없었습니다. 한 번 운영한 후 버리고, 좋은 아이디어를 다음 것으로 가져갔습니다. 플레이테스트의 부재는 베타 리딩 및 피드백을 받아야 했지만, 실제로 게임을하지 않았습니다. 어떻게요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이른바 구글 문서의 초기 버전은 20명 이상의 다른 사람들의 메모들로 얽힌 엉망진창이었습니다. 구글 문서의 기능으로 댓글이 추가되기 전에는 친구마다 자신의 텍스트를 나타내기 위한 다른 색상을 선택했고, 게임 텍스트의 각 단락 아래에서 효과에 대해 논의하는 긴 대화를 나누었습니다. 나는 고등학교에 진학할 때, 이 무지개 교환이 곧 긴 코멘트 스레드와 이벤트를 준비하는 스태프와의 그룹 채팅으로 대체되었습니다.
 
 이것은 내 작업에 대한 엄격한 피드백을 받아들이기 시작한 첫 번째 순간이었습니다. 제작 스태프는 4주 동안 일하고 카페인, 니코틴, 벌레 살충제로 에너지를 보충하는 사람들보다 게임 메커닉에 더 냉정한 사람이 없습니다. 그래서 저에게 내 게임에 대해 코멘트를 남겨주도록 요청하는 비즈니스 파트너인 그래비라는 이유가 있습니다. 아름답고 지적인 여성이 나에게 비판적인 태도를 취하는 유일한 방법이니까요.
 
-게임 주변의 계속된 소란이 제 창조적 프로세스의 핵심입니다. 주변의 사람들이 피드백을 제공하면 제게는 필요합니다. 난립한 피드백 속에서 내가 사용할 수 있는 것을 찾아내야 합니다. 테이블탑 게임으로 이동하면서도 이 같은 과정을 플레이테스터들과 함께 진행했습니다. 게임이 완성될 때까지 수백 시간을 게임하는 것이 가능했기 때문에 플레이테스트저에게 수백 시간을 투자하게 되어 제 도움을 받았습니다. 게임의 크기와 복잡성에 따라 2부분으로 나누어 처리했습니다. 작은 게임 중 많은 것이 Possum Creek Patreon을 통해 커뮤니티로부터 플레이테스트 받습니다. 이 방법은 나에게 적합합니다. 작은 게임을 개발할 때는 친구들에게 아이디어를 계속해서 개인적으로 보내거나, Creekside 커뮤니티 센터 채널에서 이야기를 나누지만, 그것은 Boom Town 구조가 필요하지 않습니다.  
+게임 주변의 계속된 소란이 제 창조적 프로세스의 핵심입니다. 주변의 사람들이 피드백을 제공하면 제게는 필요합니다. 난립한 피드백 속에서 내가 사용할 수 있는 것을 찾아내야 합니다. 테이블탑 게임으로 이동하면서도 이 같은 과정을 플레이테스터들과 함께 진행했습니다. 게임이 완성될 때까지 수백 시간을 게임하는 것이 가능했기 때문에 플레이테스트저에게 수백 시간을 투자하게 되어 제 도움을 받았습니다. 게임의 크기와 복잡성에 따라 2부분으로 나누어 처리했습니다. 작은 게임 중 많은 것이 Possum Creek Patreon을 통해 커뮤니티로부터 플레이테스트 받습니다. 이 방법은 나에게 적합합니다. 작은 게임을 개발할 때는 친구들에게 아이디어를 계속해서 개인적으로 보내거나, Creekside 커뮤니티 센터 채널에서 이야기를 나누지만, 그것은 Boom Town 구조가 필요하지 않습니다.
 
 현재 내 열정적인 프로젝트는 The Seven-Part Pact라는 확장형 시뮬레이션 위자드 게임입니다. 게임의 구조에 많은 경험이 있는 플레이테스터들이 필요합니다. 압력이 많은 부분을 감지하고 약한 부분을 탐색할 수 있기 때문입니다. 나에게 수개월이나 몇 년이 걸릴 대규모 게임이며, 그래서 Boom Town은 장기적으로 유용할 것입니다. 그리고 이것은 이상하며, 소셜 미디어의 굶주린 입에 바로 던질 경우 많은 실험 없이는 분리될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 특정한 친구들과 Patreon 서버에 관심 있는 사람들을 함께 모아 'Boom Town'을 건설했어요. 현재 이 곳은 80명 이상의 대규모 커뮤니티이며, 누출되는 정보나 흘러들어오는 동안에 계속해서 성장하고 있어요. 저는 제게 게임 플레이테스트를 진행하는 사람들에게 서버로 자신의 친구를 초대하도록 허용하고 있어요. 이 서버에는 다음과 같은 채널들이 있어요:
 
@@ -74,7 +128,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 모든 디자이너는 자신만의 구조를 필요로 할 것이며, 누구든지 자신의 공간을 원하는 대로 디자인할 수 있어요. 이것은 Seven-Part Pact에 대해서 제가 발견한 방식이며, 미래 플레이테스트를 위해서는 다르게 구조화할 것이지만요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 플레이테스트에 대한 비고
 
@@ -84,7 +149,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 ## 커뮤니티 관리는 기술입니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 어떻게 커뮤니티 플레이테스팅 공간을 운영하는 데 편안함을 느끼는 이유는 커뮤니티가 어떻게 작동하는지에 익숙하고 10년 이상의 커뮤니티 관리 경험이 있기 때문입니다. 이 분야가 익숙하지 않다면, 처음부터 커뮤니티를 시작하는 데 시간과 노력이 필요할 것입니다. 사람들은 처음에 말을 꺼리고 사회적 규범이 확립될 때 충돌이 있을 것입니다. 이를 해결할 수 있는 몇 가지 방법이 있어요!
 
@@ -95,7 +171,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 ## 당신이 디자이너이지, 그들은 아닙니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 커뮤니티 플레이테스팅 공간에서 작업할 때는 받는 피드백과 응답의 폭풍에 압도당하기 쉽습니다. 게임에 투자한 사람들이 있을 것이고, 그들은 게임이 어떻게 되어야 하는지에 대한 강력한 조언을 가지고 있을 것입니다. 그들은 자신들의 소중한 게임 메커니즘이 제거될 때 슬퍼하고, 플레이테스터들을 만족시키기 위해 모든 것을 희생하는 유혹을 느낄 수도 있습니다.
 
@@ -105,7 +192,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 유용한 커뮤니티 플레이테스팅은 일반적인 플레이테스팅 조언에서 나온 것인데, 공간 내 사람들의 수의 증가로 인해 더욱 향상됩니다. 게임의 새롭고 연약한 부분을 제시할 때, 가정하고 판단하는 것 대신 질문하고 탐구하는 문화를 만드세요. 누군가 처음으로 텍스트를 보는 경우, 그들은 그것이 어떻게 작동하는지에 대한 많은 질문을 가질 수 있지만, 실행해보기 전에는 그것이 어떻게 느껴지는지 알 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정한 피드백을 제공하기 위해 사용할 수 있는 도구는 대화를 중재하는 데 도움이 될 수 있습니다. 저는 피드백을 위해 Liz Lerman의 Critical Response Process를 수정한 것을 선호합니다.
 
@@ -115,7 +213,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 플레이테스트, 사용자 경험 디자인 및 베타 리딩에 대한 다른 기사에서 이미 다뤄졌지만, 여기서 간단히 설명하겠습니다. 게임 중에 플레이테스터가 감정적 경험을 한다면, 그들이 경험한 감정은 정확하고 유효합니다. 그러나 플레이테스터가 감정에 대해 어떻게 대처해야 하는지 제안하는 것은 아닐 수 있습니다. 플레이테스터가 자신의 클래스 능력이 부족하다고 불만스럽게 느낀다면, 해답은 반드시 능력을 강화하는 것이 아니라 다른 클래스를 약화시키거나 적을 약화시키거나 메카닉을 변경하는 것일 수도 있습니다. 게임은 종종 복잡한 기계처럼 느껴지는데, 누군가가 제대로 연기를 들이대기는 하지만 종종 그 연기의 원인을 올바르게 분명히 알 수 없거나 심지어 그 연기가 나쁜 것인지조차 잘못 알고 있는 경우가 많습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 버블에 갇히지 마세요
 
@@ -125,7 +234,18 @@ link: "https://medium.com/@possumcreek/boomtown-playtesting-0c6536ae48b0"
 
 '붐 타운'은 일시적인 공간이에요; 커뮤니티를 영원히 운영하고 싶지 않을 거예요. 게임이 끝나면(아마도 itch.io에 업로드하거나 크라우드펀딩을 하면서), '붐 타운'을 종료하기 시작하세요. 사람들이 만족할 수 있도록 대단한 최종 세션 하나 또는 둘 정도를 진행하세요. 사람들이 연락처를 교환하고 다른 서버에서 연락하도록 장려하세요. 게임에 특히 열정적인 사람이 있다면, 별도의 팬 스페이스를 만들 것을 권장하세요. 모두가 당신에게 자신의 이름을 제공할 방법을 제공하며, 최종 게임에서 그들에게 크레딧을 줄 수 있도록 하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임을 더 이상 플레이테스트할 필요가 없을 때가 오면, Boom Town을 종료할 수 있어요... 다음 게임이 나올 때까지요.
 

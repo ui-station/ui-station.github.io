@@ -18,7 +18,18 @@ link: "https://medium.com/@kvs-vishnu23/is-aws-cdk-better-than-terraform-85194e7
 
 그러나 그에 앞서, IaC를 이해해 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # IaC(Infrastructure as Code)이란 무엇인가요?
 
@@ -28,7 +39,18 @@ IaC 또는 Infrastructure as Code는 클라우드 인프라가 코드를 통해 
 
 IaC를 적용하는 주요 이유는 재사용성, 일관성, 자동화 및 확장성입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Terraform과 AWS CDK를 이해해 봅시다.
 
@@ -38,7 +60,18 @@ Terraform은 HashiCorp가 개발한 IaC 도구입니다. Terraform을 사용하�
 
 S3 버킷을 생성하는 Terraform 스크립트의 간단한 예제입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # main.tf
@@ -58,7 +91,18 @@ AWS CDK(Cloud Development Kit)는 AWS가 개발한 오픈소스 프로젝트로,
 
 AWS CDK를 사용하면 Typescript, Python, Java, Go 등과 같은 익숙한 프로그래밍 언어를 사용하여 인프라 코드를 작성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS CDK를 사용하여 Typescript로 S3 버킷을 만드는 간단한 예제입니다.
 
@@ -87,7 +131,18 @@ new MyS3BucketStack(app, "MyS3BucketStack");
 
 # Terraform vs AWS CDK
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것말고는 실제로 표 스타일이 아니라지만, 저희가 그 내용을 잘 이해할 수 있도록 글의 형식으로 바꿔 드릴게요.
 
@@ -99,7 +154,18 @@ Terraform은 클라우드에 중립적입니다. 즉, AWS, Azure, GCP, Alibaba �
 
 AWS CDK는 AWS 팀이 특히 AWS 클라우드용으로 만들었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 다양한 클라우드 공급업체에서 작업 중이라면, Terraform이 최상의 선택일 것입니다. 몇몇 클라우드 공급업체는 자체 IaC 도구인 Azure의 Bicep과 같은 것들이 있지만, 아직 채택 초기 단계에 있습니다.
 
@@ -109,7 +175,18 @@ AWS CDK는 AWS 팀이 특히 AWS 클라우드용으로 만들었습니다.
 
 AWS CDK는 Typescript, Python, Java 등과 같은 일반 목적 프로그래밍 언어를 지원합니다. 따라서 새로운 언어를 배울 필요가 없습니다. 익숙한 프로그래밍 언어를 선택하고 IaC 작성을 시작할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로그래밍 언어는 견고하고 유연합니다. IaC에서 OOPS, 함수형 프로그래밍과 같은 다양한 프로그래밍 패러다임을 사용할 수 있어요. 이는 DSL(Domain Specific language)보다 많은 장점을 가지고 있어요.
 
@@ -119,7 +196,18 @@ AWS CDK는 Typescript, Python, Java 등과 같은 일반 목적 프로그래밍 
 
 제 경험 상으로, 테라폼 상태를 관리하는 것이 꽤 복잡할 수 있다는 것을 알았어요. 프로젝트 내에서 상태의 드리프트를 마주치는 것이 일반적이며, 이를 해결하는 데 시간이 많이 소요될 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS CDK는 상태가 없는 방식으로 작동합니다. 상태를 관리하기 위해 Git과 같은 버전 관리 시스템을 신뢰합니다. 배포할 때마다 최신 변경 사항을 가져와서 발생하는 모든 충돌을 해결하고 배포를 진행합니다. 이 방식은 깔끔하며 일관성을 유지합니다.
 
@@ -129,7 +217,18 @@ AWS CDK는 상태가 없는 방식으로 작동합니다. 상태를 관리하기
 
 그에 반해 AWS CDK는 AWS가 직접 유지하고 있기 때문에 의존성을 간단히 관리하여 신속한 업데이트를 제공합니다. 이를 통해 시간이 지남에 따라 부드러운 전환과 더 적은 호환성 문제를 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 연결성
 
@@ -139,7 +238,18 @@ AWS CDK는 상태가 없는 방식으로 작동합니다. 상태를 관리하기
 
 아래 테라폼 코드를 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 provider "aws" {
@@ -216,7 +326,18 @@ const app = new App();
 new MyStack(app, "MyStack");
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드에서는 먼저 S3 버킷을 생성한 다음 람다 함수를 생성합니다. 람다 함수 코드 자체 안에서 S3를 이벤트 소스로 생성할 수 있음을 알 수 있습니다. 이것은 멋지며 프로그래밍의 힘을 보여줍니다.
 
@@ -226,7 +347,18 @@ new MyStack(app, "MyStack");
 
 AWS 내에서 보안을 논의할 때 IAM(Identity and Access Management)이 중심에 있습니다. IAM 역할과 정책은 사용자 액세스를 관리하고 서비스 간 안전한 통신을 용이하게 하는 데 사용되는 중요한 구성 요소입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테라폼 코드에서는 aws_lambda_permission 리소스 블록을 사용하여 S3이 람다를 호출할 수 있도록 필요한 권한을 부여했습니다. 그러나 CDK 코드에서는 그런 작업을 하지 않았습니다. CDK가 IAM 권한을 내부적으로 설정하기 때문입니다. CDK는 필요한 권한만 부여하여 더 안전합니다.
 
@@ -235,25 +367,25 @@ AWS 내에서 보안을 논의할 때 IAM(Identity and Access Management)이 중
 먼저 CDK 코드를 살펴보겠습니다.
 
 ```js
-import * as cdk from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-import * as lambda from 'aws-cdk-lib/aws-lambda';
-import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
+import * as cdk from "aws-cdk-lib";
+import { Construct } from "constructs";
+import * as lambda from "aws-cdk-lib/aws-lambda";
+import * as dynamodb from "aws-cdk-lib/aws-dynamodb";
 
 export class MyStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
     // DynamoDB 테이블 생성
-    const table = new dynamodb.Table(this, 'MyTable', {
-      partitionKey: { name: 'id', type: dynamodb.AttributeType.STRING },
+    const table = new dynamodb.Table(this, "MyTable", {
+      partitionKey: { name: "id", type: dynamodb.AttributeType.STRING },
       billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
     });
 
     // 람다 함수 생성
-    const myLambda = new lambda.Function(this, 'MyLambda', {
-      code: lambda.Code.fromAsset('path/to/your/lambda/code'), // 필요한 경우 경로를 조정
-      handler: 'index.handler',
+    const myLambda = new lambda.Function(this, "MyLambda", {
+      code: lambda.Code.fromAsset("path/to/your/lambda/code"), // 필요한 경우 경로를 조정
+      handler: "index.handler",
       runtime: lambda.Runtime.NODEJS_14_X,
     });
 
@@ -263,10 +395,21 @@ export class MyStack extends cdk.Stack {
 }
 
 const app = new cdk.App();
-new MyStack(app, 'MyStack');
+new MyStack(app, "MyStack");
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마음에 드실 정도로 간결하고 깔끔한 코드입니다. 우리는 ddb 테이블과 람다를 생성했습니다. 그 다음으로는 ddb 테이블의 grantReadWriteData 메서드를 사용하여 해당 람다를 전달했습니다. 이것으로 모든 필요한 IAM 권한을 처리합니다.
 
@@ -346,7 +489,18 @@ resource "aws_lambda_function" "my_lambda" {
 
 이 코드가 얼마나 지루한지 보이실 것입니다. 먼저 ddb 테이블을 생성하고, 그런 다음 람다 역할을 만듭니다. 이후 필요한 권한을 지정하는 정책을 만들고 해당 역할에 첨부합니다. 마지막으로 람다를 만들고 이 역할을 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 코드는 너무 길고 정책 문서에서 수동으로 권한을 지정하고 있습니다. 이렇게 하면 올바른 권한을 지정하지 않으면 액세스 문제가 발생할 수 있습니다.
 
@@ -356,7 +510,18 @@ AWS CDK는 AWS SDK와 강력한 통합을 가지고 있습니다. 더 잘 이해
 
 AWS 람다가 리눅스를 지원하고 있으며 Amd 및 Arm 기반의 두 가지 CPU 아키텍처만 지원한다는 점을 알고 있습니다. 또한 AWS는 파이썬, Node.js, Go 등 다양한 런타임을 지원합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제, 만약 람다 함수가 ARM 기반과 파이썬 런타임을 사용하고 개발자가 Windows 기계에서 작업 중이라면, 그는 OS에서 번들을 생성할 수 없을 것입니다. Lambda 런타임과 호환되지 않을 것입니다. 이 문제는 ARM 기반 리눅스 이미지를 사용하여 코드를 빌드하는 파이프라인을 사용하면 해결할 수 있습니다.
 
@@ -370,7 +535,18 @@ aws-cdk-lib » aws_lambda_nodejs » NodejsFunction
 
 패키지를 사용하면 람다 함수의 소스 코드를 가리킬 수 있고 코드를 번들로 만들 필요가 없습니다. 번들링 옵션을 직접 선택할 수 있습니다. Node.js의 경우 esbuild, 다른 런타임의 경우 docker가 좋은 선택지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 private createGetData(): PythonFunction {
@@ -396,7 +572,18 @@ private createGetData(): PythonFunction {
 
 참고: AWS에서 풀 스택 개발을 수행 중이거나 AWS SDK 및 동시에 AWS 인프라 생성에 작업 중인 경우에 매우 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마지막으로
 
@@ -406,6 +593,17 @@ private createGetData(): PythonFunction {
 
 저는 Candletower(www.candletower.com)라는 프로젝트를 만들었습니다. 이 웹사이트는 캔들스틱 패턴 분석을 기반으로 한 주식 시장 분석을 제공합니다. 투자를 하거나 주식 시장에 입문하려는 경우, 이 웹사이트를 꼭 확인해보세요. 광고 없음, 로그인 없음, 완전 무료입니다. 여러분의 생각을 알려주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 읽어 주셔서 감사합니다!

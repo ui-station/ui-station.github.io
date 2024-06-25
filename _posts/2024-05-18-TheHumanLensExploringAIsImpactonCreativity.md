@@ -3,13 +3,12 @@ title: "인간의 시선 AI가 창의력에 미치는 영향 탐구"
 description: ""
 coverImage: "/assets/img/2024-05-18-TheHumanLensExploringAIsImpactonCreativity_0.png"
 date: 2024-05-18 20:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TheHumanLensExploringAIsImpactonCreativity_0.png
 tag: Tech
 originalTitle: "The Human Lens: Exploring AI’s Impact on Creativity"
 link: "https://medium.com/algography-art/the-human-lens-exploring-ais-impact-on-creativity-2a44d73c9d6f"
 ---
-
 
 <img src="/assets/img/2024-05-18-TheHumanLensExploringAIsImpactonCreativity_0.png" />
 
@@ -19,9 +18,20 @@ link: "https://medium.com/algography-art/the-human-lens-exploring-ais-impact-on-
 
 # 모두에게 붓을 전달
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-생성적 AI는 예술 창작을 민주화하여, 현대 예술에서 핑커가 비판한 엘리트주의를 흔드는 역할을 합니다. 이제 전통적인 재능의 부재로 인해 창의적인 영혼이 억압받을 필요가 없습니다. 스킬이 항상 신체 민첩성에 결합되지 않는다는 점에 주목한 피커는 이를 예상한 것입니다. 이것이 바로 AI 예술이 구현하는 것입니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+생성적 AI는 예술 창작을 민주화하여, 현대 예술에서 핑커가 비판한 엘리트주의를 흔드는 역할을 합니다. 이제 전통적인 재능의 부재로 인해 창의적인 영혼이 억압받을 필요가 없습니다. 스킬이 항상 신체 민첩성에 결합되지 않는다는 점에 주목한 피커는 이를 예상한 것입니다. 이것이 바로 AI 예술이 구현하는 것입니다.
 
 # 새로운 예술적 도전
 
@@ -29,7 +39,18 @@ link: "https://medium.com/algography-art/the-human-lens-exploring-ais-impact-on-
 
 # 디지털 시대의 예술 재정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 핑커는 특정 예술 형식의 사라짐을 애도하지만, AI는 예술 표현의 완전히 새로운 시대를 열어줍니다. 이 발전은 우리에게 예술을 기술과 아방가르드 아이디어를 넘어서 바라보게 만듭니다. 창의적 영감의 원천이 중요할까요? 기계가 '아티스트'가 될 수 있을까요, 아니면 인간의 지시의 연장으로 존재할까요? 핑커는 마음을 진화의 산물로 보고, AI 아트는 자연적이고 인공적인 창의성을 결합하여 예술이 무엇을 '예술'로 만드는지에 대한 신념적 질문을 던집니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/algography-art/the-human-lens-exploring-ais-impact-on-
 
 # 보이지 않는 것을 느낄 수 있을 때
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 핑커는 현대 예술이 감정적 연결이 부족할 수 있다고 주장하지만, AI가 이 논쟁의 불을 지피고 있다고 합니다. 기계는 우리를 움직이는 작품을 만들어내지만, 인간의 영혼이 그것이 발생하는 시점을 결정합니다. 동굴 벽화부터 아티스트들은 형식과 내용을 동기부여하고 깊은 감정을 일으키기 위해 노력했습니다. 지금은 우리를 강요하여 감정의 근원을 재정의하도록 이끕니다. 예술이 본질적으로 공유된 경험인 경우, 인간이 만든 것인지 기계가 만든 것인지 상관이 있을까요? 예술 경험은 관객 안에서 독특하게 이루어집니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/algography-art/the-human-lens-exploring-ais-impact-on-
 
 # 새로운 윤리적 풍경을 탐색하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 예술은 피커가 자주 탐구하는 사회적 갈등을 반영하여 윤리적 문제의 폭풍우를 드러냅니다. 저작권부터 진정성에 대한 우려, 그리고 '영감' 자체의 본질까지, 생성적 AI는 우리에게 현존하는 도덕적 틀을 재고하도록 강요합니다.
 

@@ -18,7 +18,18 @@ link: "https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-an
 
 그러나 구현 세부 정보에 대해 깊이 파고들기 전에, gitops가 다루는 문제 설명과 테라폼이 어떻게 관련되는지에 대해 이해해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # GitOps의 무엇과 왜
 
@@ -28,7 +39,18 @@ link: "https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-an
 
 # GitOps에 대한 Terraform 선택이유
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금쯤이면 terraform이 어떻게 관련되며 어떻게 도움이 되는지 궁금해할 수 있습니다. 이전 섹션에서는 구성을 매치하는 자동화된 방법에 대해 이야기했습니다. 일반적인 Kubernetes 환경에서는 fluxcd와 같은 도구를 사용하여 이를 수행합니다. 그러나 이러한 추가 구성과 설정이 필요합니다. 여기서 terraform이 등장합니다. terraform을 사용하면 인프라를 구축할 뿐만 아니라 flux와 같은 도구를 설치하고 구성할 수도 있습니다. 이렇게 하면 한 번에 Kubernetes 클러스터를 구축하고 flux를 부트스트랩하며 그에 따라 gitops 워크플로우를 설정할 수 있습니다. 이렇게 하면 처음부터 완전히 기능적인 gitops 워크플로우가 구축됩니다.
 
@@ -38,7 +60,18 @@ link: "https://medium.com/@prag-matic/gitops-with-kubernetes-terraform-gitlab-an
 
 Flux는 Kubernetes 클러스터를 구성 소스(예: Git 저장소)와 동기화하고 새 코드를 배포할 때 구성을 자동으로 업데이트하는 도구입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Gitlab:
 
@@ -48,7 +81,18 @@ GitLab은 응용 프로그램 빌드 및 릴리스 프로세스를 자동화하�
 
 Terraform을 사용하면 선언적 구성 언어를 사용하여 가상 머신, 네트워크, 저장소 및 기타 클라우드 서비스와 같은 인프라 리소스를 정의하고 프로비저닝할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 우리가 만들 것:
 
@@ -58,7 +102,18 @@ Terraform을 사용하면 선언적 구성 언어를 사용하여 가상 머신,
 
 # 준비 사항:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 1) AWS 계정
@@ -72,7 +127,18 @@ Terraform을 사용하면 선언적 구성 언어를 사용하여 가상 머신,
 ECR Repository 생성
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS ECR 레지스트리에 로그인합니다.
 
@@ -82,9 +148,18 @@ aws ecr get-login-password | docker login --username AWS --password-stdin <aws_a
 
 Docker Hub에서 Nginx 이미지를 가져옵니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 pull nginx:latest
@@ -98,7 +173,18 @@ Docker Hub에서 Nginx 이미지를 가져옵니다.
 
 이미지를 ECR 저장소에 푸시하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 푸시 <aws_account_id>.dkr.ecr.<region>.amazonaws.com/nginx-repo:0.0.1
@@ -118,7 +204,18 @@ PAT 토큰 생성
 - 토큰을 저장하세요.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트 설정:
 
@@ -139,7 +236,18 @@ PAT 토큰 생성
 
 Terraform 구성 및 스니펫을 사용하여 인프라를 구축하기 전에 아래 명령어를 사용하여 AWS 자격 증명을 설정해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS 자격 증명 설정
 
@@ -153,7 +261,18 @@ AWS 자격 증명 설정
 
 GitLab 토큰 설정 (Linux/MacOS)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 export GITLAB_TOKEN=<Gitlab 설정에서 저장한 토큰>
@@ -167,7 +286,18 @@ $env: GITLAB_TOKEN = "<Gitlab 설정에서 저장한 토큰>";
 
 # 안내:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데모 레포지토리 복제
 
@@ -181,7 +311,18 @@ git clone https://gitlab.com/devops5480719/devops-samples.git
 cd devops-samples/gitops-gitlab/infra/
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디렉토리 안으로 들어가시면 아래의 파일과 폴더를 찾을 수 있어요.
 
@@ -199,7 +340,18 @@ cd devops-samples/gitops-gitlab/infra/
 
 우선 terraform 파일들을 자세히 살펴보도록 해봐요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 변수 구성
 
@@ -224,7 +376,18 @@ variable "aws_region" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 코드 조각에서 기본 값 대신에 gitlab 섹션에서 이전에 복사한 이름이있는 gitlab_group으로 대체하십시오. gitlab_project에 대해서도 마찬가지입니다.
 
@@ -234,7 +397,18 @@ aws_region으로는 리소스를 배포할 지역을 선택하십시오.
 
 이제 versions.tf 파일에서 공급자 구성을 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 변수.tf 파일에는 인증 및 권한 부여를 위한 각 프로바이더 블록의 필수 구성 및 필수 제공자가 포함되어 있습니다.
 
@@ -286,7 +460,18 @@ provider "flux" {
 
 ## 리소스 구성:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자원 구성을 살펴보겠습니다.
 
@@ -315,7 +500,18 @@ module "vpc" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 EKS 구성
 
@@ -326,8 +522,18 @@ EKS를 위해 아래 리소스를 정의할 것입니다.
 
 main.tf
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모듈 "eks" {
 source = "terraform-aws-modules/eks/aws"
@@ -407,8 +613,18 @@ command = "aws eks update-kubeconfig --name ${module.eks.cluster_name} --region 
 }
 }
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 자바스크립트
@@ -453,7 +669,18 @@ command = "aws eks update-kubeconfig --name ${module.eks.cluster_name} --region 
 
 flux가 이 작업을 수행하려면 복제 데모 리포지토리의 config_files 폴더에서 찾을 수 있는 몇 가지 추가 구성 요소를 정의해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ├── config_files
 │ ├── app-nginx.yml
@@ -554,7 +781,18 @@ spec:
     strategy: Setters
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 구성에서는 아래 구성 요소를 정의했습니다:
 
@@ -568,7 +806,18 @@ ImageUpdateAutomation 아래 파일에서, flux가 이미지 태그를 업데이
 
 위 구성 이후에는 또한 ecr 동기화 파일을 정의해야 합니다. 이 파일은 ecr에 대한 인증을 자동화하고 이미지 자동화 컨트롤러가 ecr 리포지토리에서 이미지 태그를 가져올 수 있도록 합니다. 아래 파일은 매 6시간마다 ecr에서 인증하는 데 필요한 권한을 가진 크론 작업을 설정하고 비밀 정보를 업데이트합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 kind: Role
@@ -670,7 +919,18 @@ spec:
                     -o yaml | kubectl apply -f -
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 apiVersion: apps/v1
@@ -692,7 +952,18 @@ spec:
 
 이 모든 파일은 이것을 적용하기 위해 flux 폴더로 복사되어 메인.tf 파일의 아래 코드 단편을 통해 eks 클러스터에 적용될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 locals {
@@ -718,7 +989,18 @@ resource "gitlab_repository_file" "yaml_files" {
 terraform init
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 진행되는 모든 리소스를 확인하려면 plan 명령어를 실행해주세요.
 
@@ -732,7 +1014,18 @@ terraform plan
 terraform apply --auto-approve
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 Terraform이 다음 작업을 수행할 것입니다.
 
@@ -748,7 +1041,18 @@ Terraform 실행이 완료되면 아래 명령을 실행하세요.
 kubectl get po -n flux-system
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래의 Flux 구성 요소가 모두 실행 중인 것을 확인해야 합니다.
 
@@ -768,7 +1072,18 @@ source-controller-86b8b57796-vl2fp             1/1     Running   0          39s
 kubectl get cronjob -n flux-system
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 출력을 얻어야 합니다.
 
@@ -788,7 +1103,18 @@ flux-system       Opaque                           3      5분 39초
 nginx-auth-pat    Opaque                           2      4분 19초
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 출력에서 확인할 수 있듯이 ecr-credentials라는 시크릿이 있습니다.
 
@@ -806,7 +1132,18 @@ NAME                            LAST RUN                        SUSPENDED       
 imageupdateautomation/nginx     2024-05-23T16:55:39+05:30       False           True    레포지토리가 최신 상태입니다
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 출력에서 볼 수 있듯이, 이미지 정책은 ECR에서 최신 이미지 태그를 스캔하고 가져왔습니다.
 
@@ -818,7 +1155,18 @@ kubectl get deployment nginx-deployment -o=jsonpath='{.spec.template.spec.contai
 
 아래는 우리가 얻은 출력입니다. 이미지가 업데이트된 것을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <aws-account-id>.dkr.ecr.<aws-region>.amazonaws.com/nginx:0.0.1
@@ -830,7 +1178,18 @@ UI를 통해 레포지토리의 커밋 히스토리를 확인하거나 레포지
 
 아래 명렁어를 실행해보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 git log --author="flux" --since="today 00:00" --until="today 23:59" --pretty=format:"%h %s" -- clusters/flux-cluster/nginx.yml
@@ -844,7 +1203,18 @@ git log --author="flux" --since="today 00:00" --until="today 23:59" --pretty=for
 
 위의 출력에서 확인할 수 있듯이 flux가 nginx.yml 파일에서 임의의 이미지 번호에서 실제 태그로 이미지를 업데이트했으며, 동일한 업데이트가 배포에서 수행되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지의 새로운 버전을 푸시해보고 flux가 자동으로 업데이트되는지 확인해봐요.
 
@@ -856,7 +1226,18 @@ docker tag nginx:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/nginx-re
 
 이제 아래 명령어를 사용하여 배포가 정상적으로 업데이트되었는지 확인해보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 표시되는 출력 값 입니다:
 
@@ -866,7 +1247,18 @@ docker tag nginx:latest <aws_account_id>.dkr.ecr.<region>.amazonaws.com/nginx-re
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 결론적으로, 우리는 flux, gitlab, terraform, kubernetes를 사용하여 gitops 워크플로우를 설정했고, 새 이미지를 컨테이너 저장소에 푸시할 때마다 flux가 배포를 관리할 것입니다.
 

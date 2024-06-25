@@ -3,14 +3,12 @@ title: "마법 같은 우체통에서 발생하는 HTTP Parameter Pollution HPP 
 description: ""
 coverImage: "/assets/img/2024-05-20-HTTPParameterPollutionHPPAttacksinamagicalmailbox_0.png"
 date: 2024-05-20 16:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HTTPParameterPollutionHPPAttacksinamagicalmailbox_0.png
 tag: Tech
 originalTitle: "HTTP Parameter Pollution (HPP) Attacks in a magical mailbox!"
 link: "https://medium.com/@l0ok/http-parameter-pollution-hpp-attack-in-a-magical-mailbox-c84e2dee4a02"
 ---
-
-
 
 ![Magic Mailbox](/assets/img/2024-05-20-HTTPParameterPollutionHPPAttacksinamagicalmailbox_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@l0ok/http-parameter-pollution-hpp-attack-in-a-magical
 
 그런데 어느 날 장난기 많은 친구가 장난을 치려고 합니다. 당신이 알아차리지 못하는 사이에 편지에 추가적인 지시 사항을 몰래 넣습니다. 그래서 "쿠키 만들기"와 "방 청소하기"만 있는 대신에 마법사가 "쿠키 만들기", "멍멍이 키우기", "방 청소하기"와 같이 추가 지시서를 받게 됩니다. 더 많은 지시사항 때문에 마법사가 헷갈리게 되고, 때로는 어떤 것을 따를지 모를 때도 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이 음모적인 트릭은 HTTP 매개 변수 공격(HPP)과 비슷합니다. 이를 단계별로 분석해 보죠:
 
@@ -31,7 +39,18 @@ HTTP (하이퍼텍스트 전송 프로토콜)은 인터넷을 위한 마법의 �
 
 ## 매개 변수란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파라미터는 웹 사이트 서버에 보내는 명령입니다. 무엇을 해야 하는지 알려줍니다. 예를 들어, 웹 사이트에서 "고양이"를 검색하려면, 파라미터는 이렇게 보일 수 있습니다: search=고양이. 이것은 서버에게 고양이에 대한 정보를 찾으라고 말해주는 것입니다.
 
@@ -41,7 +60,18 @@ HTTP 파라미터 오염은 교활한 공격자 (장난스러운 친구와 같�
 
 ## HPP가 문제가 되는 이유?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. Serve에 혼란: 마법사가 뒤죽박죽된 지시를 받는 것처럼, 서버도 혼란스러워서 제대로 작동하지 않을 수 있습니다. 의도하지 않은 일을 할 수도 있습니다.
 
@@ -51,7 +81,18 @@ HTTP 파라미터 오염은 교활한 공격자 (장난스러운 친구와 같�
 
 ## HPP 공격은 어떻게 발생하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 다중 매개변수 전송: 공격자는 동일한 이름을 가진 여러 매개변수를 서버로 보냅니다. 예를 들어, 단순히 search=cats가 아니라 search=cats&search=dogs와 같이 보낼 수 있습니다.
 
@@ -61,7 +102,18 @@ HTTP 파라미터 오염은 교활한 공격자 (장난스러운 친구와 같�
 
 ## HPP에 대한 어떻게 방어할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 입력 유효성 검사: 서버가 모든 들어오는 매개변수를 확인하고 정리하여 필요한 것들만 받아들이고 올바르게 포맷되었는지 확인해주세요.
 
@@ -71,7 +123,18 @@ HTTP 파라미터 오염은 교활한 공격자 (장난스러운 친구와 같�
 
 ## 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HTTP 매개변수 오염은 친구가 마법사에게 편지에 혼란스러운 추가 지시를 넣는 것과 같아요. 이는 마법사(서버)가 당신이 요청하지 않은 일을 하거나 심지어 나쁜 일을 할 수 있게 합니다. 이를 방지하기 위해 지시사항을 주의 깊게 확인하고 올바른 지시사항만 따르는 것이 중요해요.
 
@@ -83,6 +146,17 @@ HTTP 매개변수 오염은 친구가 마법사에게 편지에 혼란스러운 
 - Portswigger: 서버측 매개변수 오염
 - HackTricks: 매개변수 오염
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 만나기까지, 행복한 마법을 부리세요!

@@ -3,13 +3,12 @@ title: "데이터 인프라 및 대형 언어 모델"
 description: ""
 coverImage: "/assets/img/2024-05-20-DataInfraandLargeLanguageModel_0.png"
 date: 2024-05-20 16:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-DataInfraandLargeLanguageModel_0.png
 tag: Tech
 originalTitle: "Data Infra and Large Language Model"
 link: "https://medium.com/@yuguang.mou/data-infra-and-large-language-model-80bbcbc4ad12"
 ---
-
 
 데이터 인프라 산업, CRM 및 사이버 보안 산업은 언제나 전 세계에서 소프트웨어 부문 중 상위 세 분야 중 하나였습니다. (가트너 2023: 데이터 인프라 15%, CRM 14%, 사이버 보안 10%). 데이터 인프라 분야에서는 Oracle과 같은 거물 기업이 3000억 달러 이상의 가치를 지니고 있습니다. 또한 Snowflake, Databricks, MongoDB와 같은 신생 기술 스택, 포괄적인 제품 포트폴리오를 갖춘 세 가지 주요 클라우드 제공업체와 함께 수백 개의 데이터베이스가 DB-Engines.com에 의해 모니터링되고 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@yuguang.mou/data-infra-and-large-language-model-80bbc
 
 2024년 2월 28일, Snowflake는 회계 연도의 제4 분기 재무 결과를 발표했습니다. 실망스러운 전체 연간 지침을 제공한 후, 회사는 미국 데이터 인프라 산업을 충격받게 할 또 다른 소식을 발표했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미국 소프트웨어 역사상 가장 전설적인 CEO 중 한 명인 프랭크 슬룻만이 Snowflake의 CEO로서 사임을 발표했습니다. 새 CEO는 Neeva의 인도계 창업자 인 스리다르 라마스와미입니다. 스리다르는 지난해 Neeva를 Snowflake에 판매한 후 Snowflake에 합류했고, 모든 새 AI 관련 비즈니스를 감독하는 Snowflake의 AI SVP로 임명되었습니다. 단 년 만에 매각되었던 회사의 창업자에서 상위 회사의 새 CEO로 전환했습니다.
 
@@ -32,7 +42,18 @@ Snowflake의 천사 투자자이자 창업 CEO 마이크 스페이서도 프랭�
 - 이후 이사회는 다음 큰 도전이 공개 상장하고 확장하는 것인 것을 깨닫고, 회사 전체에 높은 강도와 긴급함을 전파할 수 있는 프랭크 슬룻만을 찾아내어 성장을 가속화하고 최종적으로 회사를 공개시켰습니다.
 - 스페이서와 슬룻만 모두 스리다르가 Snowflake의 다음 세대 리더로 가장 적절한 지도자라고 믿습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CEO 교체는 칼을 바꾸는 것과 같아요. LLM이 주도하는 데이터 인프라의 다가오는 시대에는, Frank가 Snowflake를 위한 가장 적합한 CEO가 아닐 수도 있어요. 이것이 Mike Speiser를 설득했는데, 그는 각 CEO 교체에서 좋은 결과를 보았기 때문에 Sridhar가 다음 단계에 더 적합할 수도 있다고 믿게 되었어요.
 
@@ -42,7 +63,18 @@ CEO 교체는 칼을 바꾸는 것과 같아요. LLM이 주도하는 데이터 �
 
 이 변화는 단순히 Snowflake의 선택일 뿐만 아니라 많은 소프트웨어 회사들이 내릴 결정일 수 있어요. AI 배경을 갖춘 CEO는 어디에 AI에 투자해야 하는지 명확히 이해할 수 있고, 어떤 제품과 기술 능력을 보충해야 하는지, 이 사업을 운영하기 위한 적절한 인재를 찾을 수 있는 곳을 알 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 선점자 이점, 시간은 아무도 기다려주지 않아요. 다음 섹션에서 이에 대해 더 깊이 파고들어보겠습니다.
 
@@ -52,7 +84,18 @@ CEO 교체는 칼을 바꾸는 것과 같아요. LLM이 주도하는 데이터 �
 
 몽고디비의 2023년 Q4 실적 보고서에서, 기업은 이번에 처음으로 전통적인 데이터 인프라 기업들이 이 분야에서 아직 큰 수익을 내지 못한 이유에 대해 설명했습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 인프라 기업은 대형 언어 모델 (LLM) 영역에서 모델 학습, 미세 조정 및 추론 세 가지 계층에 참여할 수 있습니다.
 - MongoDB의 기존 기술 스택은 주로 후자 두 계층 (미세 조정 및 추론)과 관련이 있지만, 현재 고객 사용 사례를 기반으로 하면 대다수의 고객이 여전히 첫 번째 계층 (모델 학습)에 있습니다.
@@ -64,8 +107,18 @@ CEO 교체는 칼을 바꾸는 것과 같아요. LLM이 주도하는 데이터 �
 
 이전 Relit 블로그 게시물에서 언급된대로, 그들의 대형 언어 모델은 Databricks의 기술 스택과 함께 세 대 주요 클라우드 제공업체의 인프라를 많이 활용하여 모델 학습 프로세스를 완료했습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Databricks — 검증된 솔루션으로 지난 10년을 보냈습니다
 
@@ -78,7 +131,18 @@ Databricks은 가장 주목받는 새로운 세대의 데이터 인프라 플레
 - 더 합리적인 비교는 총 마진입니다. 클라우드 제공업체의 매출을 제외한 경우, Databricks의 총 마진은 Snowflake의 약 65%에 해당하며, 빠른 성장을 고려했을 때, Databricks의 마진은 2023년 제 4 분기에 약 70%로 Snowflake의 마진에 가까워졌습니다 (이는 Databricks의 높은 마진 소프트웨어 비즈니스 비중을 반영합니다).
 - 추세를 살펴보면, Databricks는 2023년에 매출 성장을 가속화했으며, 2024년에도 성장률이 60%까지 가속화될 것으로 예상됩니다. 이를 뒷받침하는 증거로, Databricks는 2023년 제 4 분기에 거의 100%의 연간 예약 성장을 기록했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Databricks의 현재 성공에 비해, 지난 10년간의 개발은 원활하지 않았습니다. 이는 검증 과정을 거치는 10년의 여정이었습니다.
 
@@ -90,17 +154,39 @@ Databricks는 오픈 소스 Spark에서 시작하여 후에 대표 제품인 Del
 
 다른 대표 제품 Delta Lake도 Databricks를 가장 큰 상업용 데이터 레이크 서비스 제공업체로 만들었습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 머신 러닝 데이터를 처리할 때는 대량의 구조화되지 않은 데이터가 필요하며, 데이터 레이크가 가장 비용 효율적인 저장 방법이 되었습니다.
 - 그러나 스노우플레이크가 거대한 시장 기회와 더 쉽게 이해할 수 있는 데이터 웨어하우스 개념으로 급속히 성장함에 따라, 데이브릭스는 그림자를 드리운 채로 남아 있었습니다.
-- "보다 맛있는" 데이터 웨어하우스 사업을 잡기 위해 데이브릭스는 레이크하우스 컨셉을 제안했습니다. 
+- "보다 맛있는" 데이터 웨어하우스 사업을 잡기 위해 데이브릭스는 레이크하우스 컨셉을 제안했습니다.
 - 데이브릭스 역시 고객에게 더 많은 자율성을 부여하여 고객이 큰 부피로 인해 구름에서 큰 할인을 받을 수 있는 매우 큰 고객들에게 매우 친숙합니다.
 - 데이브릭스 SQL은 스노우플레이크에 비해 높은 계산량의 복잡한 시나리오에서 데이터 웨어하우스 능력의 고유한 결함으로 인해 성능 대 가격 비율이 다소 떨어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-Databricks는 개발 과정에서 여러 가지 어려움을 겪었지만 결국 승리를 거뒀습니다. 오랫동안 홍보되어온 Spark와 Lakehouse 제품은 대규모 언어 모델 시대에 대한 주요 무기가 되었습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+Databricks는 개발 과정에서 여러 가지 어려움을 겪었지만 결국 승리를 거뒀습니다. 오랫동안 홍보되어온 Spark와 Lakehouse 제품은 대규모 언어 모델 시대에 대한 주요 무기가 되었습니다.
 
 - 현재 단계에서 기술 스택의 완성도와 플랫폼 기능성(목표를 종단-to-종단으로 구현하는 능력)은 단일 기능의 우수한 성능보다 중요합니다.
 - 대규모 언어 모델 시대에 비정형 데이터 처리의 폭발적인 성장에서 Delta Lake + Databricks Spark는 비정형 데이터 처리의 황금 콤보가 되어 ETL/Feature Engineering 워크로드의 상당 부분을 차지하게 되었습니다.
@@ -111,7 +197,18 @@ Databricks는 개발 과정에서 여러 가지 어려움을 겪었지만 결국
 
 언제나 비정형 데이터와 기계 학습에 중점을 둔 Databricks와 달리, Snowflake의 경로는 더 다양했으며, 기계 학습 분야에는 상대적으로 적은 투자를 한 다고 말할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Snowflake의 공동 창업자인 Benoit Dageville은 2023년 이전에 Unistore와 Snowpark에 중점을 둔 Snowflake의 기술 로드맵을 책임지고 있습니다. 먼저 Unistore에 대해 논의해 봅시다:
 
@@ -124,7 +221,18 @@ Unistore와 비교하여 Snowpark의 논리는 더 직관적입니다:
 - Open-Source Spark(주로 AWS 고객들 사이에서 EMR 제품으로 판매되는 제품)과 비교하여, Snowpark의 비용 효율성 이점은 매우 명확합니다. 그러나 최적화된 상업용 제품인 Databricks Spark와 비교하면, Snowpark는 이미 Snowflake 제품을 사용 중인 고객들을 위해 데이터 처리에 더 초점을 맞추고 있습니다.
 - Snowpark는 데이터 엔지니어링 작업을 신속하게 따라잡을 수 있고 기술적 장벽도 높지 않습니다. 그러나 머신러닝 영역에서는 아직 많은 작업이 남아 있으며, 특히 Spark의 오픈소스 이점에 직면하여 Snowpark는 특정 전통적인 산업을 위한 머신러닝 기능을 제공하는데 초점을 맞추고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스노우파크가 2022년 말에 상용화된 이후, 수익 규모는 Databricks의 ETL 수익의 약 5~10%로 빠르게 성장하고 있어요. Databricks의 경쟁 제품인 Databricks SQL과 비교하면, 그 규모는 Databricks SQL의 약 1/3 수준으로, 출시 시기도 Databricks SQL보다 1년 뒤입니다.
 
@@ -136,7 +244,18 @@ Unistore와 비교하여 Snowpark의 논리는 더 직관적입니다:
 
 Sridhar가 Snowflake에 합류한 후, 그는 새 제품 Cortex에 집중하기도 했다요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Cortex는 대화 및 관련 분석을 위한 제품을 주로 하는 새 투자인 Mistral AI를 포함한 Snowflake를 위해 외부 대규모 언어 모델 파트너를 가져왔어요.
 - Cortex에는 Document AI와 Databricks의 LakehouseIQ와 유사한 Snowflake Copilot도 포함되어 있어요. Text2SQL 및 지식베이스에 대한 솔루션을 제공합니다.
@@ -150,7 +269,18 @@ Sridhar는 Snowflake가 부족한 점을 잘 알고 있고 투자해야 할 노�
 
 CEO 교체 후, Snowflake는 "All in AI" 전략을 취하고 모든 제품이 AI를 중심으로 한 것으로 나타났어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 회사의 주요 사업이 데이터 웨어하우징인 회사에서 AI를 하는 것은 두 번째 스타트업을 하는 것과 같습니다. 하지만 Snowflake는 아직 멀은 길이 남아 있어요.
 
@@ -160,7 +290,18 @@ Databricks와 Snowflake와 달리 MongoDB는 분석 쪽이 아니며, 제품은 
 
 2023년 초에는 MongoDB가 데이터 인프라 공간에서 최고의 타깃이었는데, 당시 시장 논리는 다음과 같았습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 몽고DB는 문서 데이터베이스를 기반으로 개발되어서 데이터 구조에 대한 과도한 고려 없이 데이터를 먼저 수용하고, 그런 다음 매우 높은 사용 편의성으로 데이터를 처리할 수 있습니다.
 - 대규모 언어 모델의 교육과 추론은 많은 비구조화 데이터를 사용하며, 몽고DB의 주요 제품은 반구조화 및 비구조화 데이터를 저장, 읽기, 쓰기 및 쿼리하기 위한 것입니다.
@@ -174,7 +315,18 @@ Databricks와 Snowflake와 달리 MongoDB는 분석 쪽이 아니며, 제품은 
 
 추론 측면에서 몽고DB의 기회를 조사하는 것:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이전 두 회사와 비교했을 때, 추론 측면에서 데이터 애플리케이션 및 API 레이어에 더 중점을 둔 MongoDB는 엔드 유저에게 서비스를 제공할 수 있으며, 이는 OLTP 포지셔닝과 밀접하게 관련되어 있습니다.
 - MongoDB의 Atlas Vector Search 서비스는 2024년 초에 가장 먼저 GA 및 상용화된 벡터 검색 기능을 제공했습니다.
@@ -188,7 +340,18 @@ Databricks와 Snowflake와 달리 MongoDB는 분석 쪽이 아니며, 제품은 
 
 # 세계에는 엔드투엔드 기술 스택이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 표에는 세 회사의 LLM 진척 상황이 나와 있습니다. 첫 번째는 교육 분야입니다:
 
@@ -205,7 +368,18 @@ Databricks와 Snowflake와 달리 MongoDB는 분석 쪽이 아니며, 제품은 
 - 전통 기업은 또한 LLM 예산을 늘리고 있습니다. 이는 고객 서비스와 같은 시나리오에 대해 오픈 소스 모델을 교육하거나 다른 써드파티 소프트웨어 응용 프로그램 솔루션을 구매하는 것을 통해 이루어질 수 있습니다.
 - 그러나 역사적으로 초기 응용 솔루션 제공 업체는 자체 내장 데이터 인프라를 제공할 수 있지만, 생태계가 통합되면 고객은 모든 써드파티 솔루션을 지원하기 위해 자체 데이터 인프라를 사용할 가능성이 더 높습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 전투는 새로운 장을 여는 새로운 시작이기도 합니다
 
@@ -216,7 +390,18 @@ Databricks와 Snowflake와 달리 MongoDB는 분석 쪽이 아니며, 제품은 
 - 그들은 가능한 한 빨리 새로운 제품을 만들어 추가적인 시장을 확보할 수 있을까요?
 - 새로운 제품을 만들 수 없고 LLM 팀을 영입하지 못한다면, 영원히 뒤처지고 예전 제품에서도 점유율을 잃을 것인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 우리는 Snowflake과 같은 기업이 AI에 올인하기 위해 CEO를 대체하는 움직임을 보게 됩니다.
 
@@ -226,7 +411,18 @@ Databricks와 Snowflake 이외의 다른 회사가 MosaicML을 인수하거나 D
 
 6월의 연간 제품 이벤트에서 이러한 기업들이 새로운 제품을 대거 선보일 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터브릭스는 Vector 검색 및 컨테이너 서비스 솔루션을 GA할 수 있습니다.
 - Snowflake는 Cortex 기능, 컨테이너 서비스, SnowparkML, 노트북, Iceberg, Streamlit 솔루션을 GA할 수 있으며, 진행 속도가 빠르다면 Vector 검색도 GA할 수 있습니다.

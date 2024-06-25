@@ -10,7 +10,6 @@ originalTitle: "Turn Your Python Function into a Decorator with One Line of Code
 link: "https://medium.com/towards-data-science/turn-your-python-function-into-a-decorator-with-one-line-of-code-1ebd738f31c0"
 ---
 
-
 ![이미지](/assets/img/2024-05-27-TurnYourPythonFunctionintoaDecoratorwithOneLineofCode_0.png)
 
 데코레이터를 작성하고 싶지만 구문을 기억하지 못하시나요? 데코레이터는 많은 보일러플레이트 코드가 포함된 꽤 어려운 구문을 갖고 있습니다. 이 기사에서는 데코레이터를 작성하는 더 간단한 방법을 소개합니다. 이 새로운 방법은 훨씬 더 짧고 명확하며 가독성이 뛰어날 것입니다. 함께 코딩해봅시다!
@@ -19,23 +18,31 @@ link: "https://medium.com/towards-data-science/turn-your-python-function-into-a-
 
 아래 코드는 데코레이터를 생성하는 기본 방법입니다. 데코레이터로 래핑된 함수가 실행되는 시간을 측정합니다. 깊이 파고든 이 기사를 확인해보세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 def timer(name:str) -> Callable:
-    def decorator(func:Callable) -> Callable:
-        @wraps(func)
-        def decorator_implementation(*args, **kwargs):
-            try:
-                print(f"TIMER:   {name} start")
-                strt = time.perf_counter()
-                return func(*args, **kwargs)
-            finally:
-                print(f"TIMER:   {name} finished in {time.perf_counter() - strt}")
-        return decorator_implementation
-    return decorator
-
+def decorator(func:Callable) -> Callable:
+@wraps(func)
+def decorator_implementation(*args, \*\*kwargs):
+try:
+print(f"TIMER: {name} start")
+strt = time.perf_counter()
+return func(*args, \*\*kwargs)
+finally:
+print(f"TIMER: {name} finished in {time.perf_counter() - strt}")
+return decorator_implementation
+return decorator
 
 이렇게 하면 코드를 다음과 같이 사용할 수 있습니다:
 
@@ -52,7 +59,18 @@ my_func(name="mike", age=34)
 
 ## 이 접근 방식의 문제점은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 개발자이며 개인적으로 데코레이터를 작성하는 방법을 항상 기억하지 못하고 이전 프로젝트에서 코드를 복사하여 붙여넣어야 합니다. 이는 3개의 중첩된 함수가 포함된 약간 읽기 어려운 구문 때문에 데코레이터를 이해하기 어렵게 만들기 때문이라고 생각합니다. 우리는 이를 어떻게 단순화할 수 있는지 알아보겠습니다.
 
@@ -71,7 +89,18 @@ def timer(name:str) -> Generator:
         print(f"TIMER:   {name} finished in {time.perf_counter() - strt}")
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모두 같은 방식으로 함수를 사용할 수 있어요:
 
@@ -91,8 +120,18 @@ my_func(name="마이크", age=34)
 
 개인적으로 새로운 함수가 더 읽기 쉽고 이해하기 쉽다고 생각해요. 몇 가지 간단한 변경이 필요하지만 그만큼 다양한 기능을 제공해요. 함수에 데코레이터를 적용하는 것이 훨씬 쉬워지고 데코레이터 함수(예: 위의 timer)를 데코레이터 및 컨텍스트 매니저로 모두 사용할 수도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 타이머와 함께(context manager와 함께)
 
@@ -111,9 +150,18 @@ as ctx라는 이름의 타이머와 함께:
 # 타이머:  as ctx가 3.0000000000002247e-05초에 완료되었습니다
 ```
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 어떻게 작동합니까?
 
@@ -123,7 +171,18 @@ as ctx라는 이름의 타이머와 함께:
 
 ## 단점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 데코레이터는 많은 기능을 제공하지만 몇 가지 단점이 있습니다. 그 중 가장 중요한 것은 데코레이터 함수 내에서 실제로 데코레이션하는 함수에 액세스할 수 없다는 점입니다. 또한 해당 함수의 args와 kwargs에 액세스할 수도 없습니다. 이로 인해 이러한 변수를 수정할 수 없지만 제 생각에는 이를 드물게 해야 하는 것입니다.
 
@@ -133,7 +192,18 @@ as ctx라는 이름의 타이머와 함께:
 
 @contextmanager를 사용하면 데코레이터를 쉽고 가독성있게 작성할 수 있습니다. 많은 쓰기 장치를 처리해주며 심지어 콘텍스트 매니저 역할도 수행합니다. 그러나 이 자동화와 "하드코딩된 마법"으로 인해 함수와 인수에 액세스할 수 있는 제어를 일부 상실하게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 contextlib은 내부에서 작동하는 방식이 상당히 복잡하며 별도의 기사가 필요하므로 관심이 있다면 저를 따라오세요!
 
@@ -145,9 +215,19 @@ contextlib은 내부에서 작동하는 방식이 상당히 복잡하며 별도�
 
 즐거운 코딩 되세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Mike
 
 P.S: 제 하는 일 좋아하시나요? 제 팔로우 해주세요!
-

@@ -3,13 +3,12 @@ title: "기술 면접에서 돛을 올리고 싶나요 제발, 제발 용어를 
 description: ""
 coverImage: "/assets/img/2024-05-17-WantToAceThatTechJobInterviewPleasePleaseExplainYourJargon_0.png"
 date: 2024-05-17 18:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-WantToAceThatTechJobInterviewPleasePleaseExplainYourJargon_0.png
 tag: Tech
 originalTitle: "Want To Ace That Tech Job Interview? Please, Please Explain Your Jargon!"
 link: "https://medium.com/gitconnected/want-to-ace-that-tech-job-interview-please-please-explain-your-jargon-1ce6ea719279"
 ---
-
 
 ## 좌절한 오랜 면접관의 유용한 전술
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/want-to-ace-that-tech-job-interview-pleas
 
 저는 소프트웨어 엔지니어 및 엔지니어매니저로서 20년의 경력을 가진 입장에서 75회 이상의 채용 면접을 진행했으며, 이 작은 하나의 문제가 저를 화나게 만들었습니다: 지원자가 낯선 용어를 설명하지 못할 때. 여기서 말하는 '용어'란 기술 이름, 기업 내부 용어, 그리고 아크로니뮹들을 말합니다.¹
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 현재 Yelp에서 행동 면접을 진행하고 있습니다. 저는 iOS 엔지니어이며, 대부분의 지원자들이 아니지만, 여러분의 회복력, 대인 관계 기술, 감성 지능 등을 평가하는 데 제게 장애물이 되어선 안 되겠죠. 이러한 질을 알아보기 위해 이전 학교나 업무 경험에 대해 물어보게 되는데, 여러분의 설명하지 않은 용어로 당황스러워질 때가 있어요. 가령, "... Kinesis에서 실행 중인 Kubelet 컨테이너 내의 Kafka 커넥터..." 같은 말을 하면, 그 순간 제게는 완전히 외국어가 되죠.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/gitconnected/want-to-ace-that-tech-job-interview-pleas
 
 # 용어 설명을 위한 전술
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 면접관을 미리 조사하세요
 
@@ -39,7 +60,18 @@ link: "https://medium.com/gitconnected/want-to-ace-that-tech-job-interview-pleas
 
 복잡한 설명을 시작하기 전에 "내 말이 통하지 않으면 언제든지 방해해주세요"라고 시작할 수 있습니다. 적은 개선이긴 하지만, 특히 면접관이 수동 청취 방식으로 변경하는 경우에 좋은 방법입니다. 저와 같이 경험이 많은 면접관은 이해 못 할 것을 떠들어서 시간을 낭비하지 않게 하기 위해 언제든지 당신을 방해할 겁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 인터뷰어가 혼란스러워하는 것을 미리 예측하거나 알아차리세요
 
@@ -49,7 +81,18 @@ link: "https://medium.com/gitconnected/want-to-ace-that-tech-job-interview-pleas
 
 비언어적 단서를 읽는 전문가가 아니더라도, 말하려는 내용이 약간이라도 특수하다면 물어보세요. “...아, 잠깐, k3s Kubernetes on Talos에 대해 얼마나 알고 있는가요?”
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 인터뷰어가 명확한 설명을 요청하면 다시 조정해보세요
 
@@ -59,7 +102,18 @@ link: "https://medium.com/gitconnected/want-to-ace-that-tech-job-interview-pleas
 
 인터뷰어가 당신을 방해한다면, 혼란스럽게 하지 마세요. 한 숨 돌리고 다시 집중하고, 나머지 인터뷰에서 설명하는 방법을 재조정해보세요. 이 전략은 너무 당연하고 쉽다고 느껴질 수 있지만, 취직 면접의 압력속에서 상기시키는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리 맺으며
 
@@ -69,9 +123,21 @@ link: "https://medium.com/gitconnected/want-to-ace-that-tech-job-interview-pleas
 
 당신의 용어를 설명하는 것은 당신의 생각을 전달하는 데 큰 도움이 되며, 명확한 커뮤니케이션이 모든 것을 높이는 기본 기술입니다. 취업 인터뷰에서 잘 커뮤니케이션한다면 다른 모든 것이 자연스럽게 잘 맞춰질 겁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-_________________
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+---
+
 ¹ OMG = Oh My God; sometimes Oh-My-God (faster); sometimes even Oh-My-Gawd in certain cultural contexts.
 
 ² I made that up; I have no idea if that’s a feasible or reasonable server stack. I’m an iOS Engineer, damn it. Don’t @ me.

@@ -3,13 +3,12 @@ title: "루비로 LLM-파워 어플리케이션 만들기"
 description: ""
 coverImage: "/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_0.png"
 date: 2024-06-19 10:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_0.png
 tag: Tech
 originalTitle: "Building LLM-powered applications in Ruby"
 link: "https://medium.com/@rushing_andrei/building-llm-powered-applications-in-ruby-6e16d8a17548"
 ---
-
 
 <img src="/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rushing_andrei/building-llm-powered-applications-in-r
 
 생성 모델 인공지능은 텍스트, 이미지, 오디오, 비디오 등 다양한 유형의 콘텐츠를 생성할 수 있는 인공지능 기술입니다. 이 블로그 글의 범위 내에서는 주로 텍스트 생성에 초점을 맞출 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대규모 언어 모델(LLMs)은 일반적인 언어 이해 및 생성 기능을 갖춘 딥 러닝 인공 신경망(모델)으로, Transformers 아키텍처를 소개한 2017년 Attention Is All You Need 연구 논문 이후 인기를 얻으며 대폭 성장했습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@rushing_andrei/building-llm-powered-applications-in-r
 
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대형 언어 모델은 다음과 같은 작업에서 우수한 성과를 보입니다:
 
@@ -44,7 +65,18 @@ link: "https://medium.com/@rushing_andrei/building-llm-powered-applications-in-r
 
 젠 AI 모델이 미래에는 데이터베이스, 캐시, 암호화, 큐, 람다 함수 등과 마찬가지로 각기 기술 스택의 필수 구성 요소가 될 것을 제안하고 싶습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 그것이 의미하는 것은 팀이 GitHub Copilot이나 ChatGPT를 사용하여 코드를 생성할 것이라는 것만이 아닙니다. AI는 코드 자체에서 지능적인 컴퓨팅 엔진이 될 것입니다.
 
@@ -54,7 +86,18 @@ link: "https://medium.com/@rushing_andrei/building-llm-powered-applications-in-r
 
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 실제 적용 예시가 있습니다: 의사 결정 트리 순회입니다.
 
@@ -64,7 +107,18 @@ link: "https://medium.com/@rushing_andrei/building-llm-powered-applications-in-r
 
 루비 온 레일스 프레임워크가 그토록 사랑받는 이유는 개발자가 비즈니스 로직 작성에 집중할 수 있게 해주고 공학 문제 해결을 공학 문제 해결만을 위한 것으로 다루지 않기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레일즈 애플리케이션에서 대다수의 비즈니스 로직은 모델 및 서비스 객체에 있습니다. AI를 사용하면 일부 비즈니스 로직이 프롬프트에도 함께 존재하게 될 것입니다.
 
@@ -74,7 +128,18 @@ link: "https://medium.com/@rushing_andrei/building-llm-powered-applications-in-r
 
 AI는 비즈니스 로직을 조정하고 비즈니스가 구성된 서비스를 활용할 것입니다. 위의 슬라이드에서 AI는 왼쪽의 프롬프트를 활용하여 결제 게이트웨이, 재고 관리 시스템, 배송 서비스 및 기타 서비스를 연결합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사실 이 실험을 진행하고 결과를 여기에 문서화했습니다: [https://github.com/patterns-ai-core/ecommerce-ai-assistant-demo](https://github.com/patterns-ai-core/ecommerce-ai-assistant-demo).
 
@@ -84,7 +149,18 @@ AI는 비즈니스 로직을 조정하고 비즈니스가 구성된 서비스를
 
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 에이전트는 비교적 신뢰할 수 없다고 알려져 있어요. AI 에이전트가 맡는 작업이 많을수록 더 믿을 수 없는 경향이 있어요. AI 에이전트가 작동하는 결정 트리의 가지와 잎이 적을수록 더 신뢰할 수 있어요.
 
@@ -94,7 +170,18 @@ AI 에이전트는 비교적 신뢰할 수 없다고 알려져 있어요. AI 에
 
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_12.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 이러한 시스템을 프로덕션 환경에 배포하는 데 망설이고 계신다면 — 외롭지 않습니다! Gen AI의 기업 채택이 예상한 것보다 훨씬 더 느리게 진행되고 있습니다.
 
@@ -108,7 +195,18 @@ AI 에이전트는 비교적 신뢰할 수 없다고 알려져 있어요. AI 에
 
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM은 환각 및 오래된 데이터(모델은 특정 시점의 데이터로 훈련되었습니다)와 같은 몇 가지 결함을 보여줍니다. 또한 특정 사용 사례에 대한 관련/동일 정보를 활용하지 않는다는 점도 그중 하나입니다.
 
@@ -118,7 +216,18 @@ LLM은 환각 및 오래된 데이터(모델은 특정 시점의 데이터로 �
 
 "훈련 데이터에 있다!"라고 말합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세부 사항을 조금 바꿔보는 것, 예를 들어 "여기서 한 걸음 씩 생각해 봅시다"나 "깊게 숨을 들이마시고 이 문제를 해결해 봅시다"와 같이 친근한 어조로 지시사항을 바꾸면, 큰 언어 모델이 최적화된 결과를 제되는 것으로 밝혀졌어요.
 
@@ -128,7 +237,18 @@ LLM은 환각 및 오래된 데이터(모델은 특정 시점의 데이터로 �
 
 ![이미지 2](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_16.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 외부 사용자의 자유 형식 입력을 모델에 프롬프트로 전달하는 것은 무한한 문제의 가능성을 열어둘 수 있습니다. 이러한 취약점의 99번째 백분위를 어떻게 다루어야 할지 배우기 전까지는 미래에는 AI 에이전트가 시스템 간 상호작용을 담당하고 고객과 시스템 간 상호작용을 담당하지 않게 될 것입니다.
 
@@ -138,25 +258,45 @@ RAG(검색증대생성)가 등장했습니다. 이 기법은 외부 소스에서
 
 현재 일반적으로 사용되는 사례는 AI 챗봇을 구축하여 독점적인 기업 데이터 위에 질문에 답할 수 있는 기능을 가지게 하는 것입니다. 물론, 상자 밖의 AI는 귀하의 조직의 독점적 데이터에 대해 훈련받지 않았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식입니다.
-
 
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_18.png)
 
 다음은 RAG 컴포넌트 각각에 대해 자세히 살펴볼 것입니다:
+
 - 벡터 임베딩
 - 유사도 검색
 - RAG 프롬프트
 
 ![이미지](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_19.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식입니다.
-
 
 ![BuildingLLM-poweredapplicationsinRuby_20](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_20.png)
 
@@ -166,8 +306,18 @@ RAG(검색증대생성)가 등장했습니다. 이 기법은 외부 소스에서
 
 LLM에 전달할 관련 컨텍스트를 찾기 위해 의미론적으로 유사한 문서들을 찾습니다. 보통 벡터 검색 데이터베이스에 저장된 벡터 임베딩 중에서 전달된 쿼리와의 거리를 계산하는 과정이 유사성 검색입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_22.png" />
 
@@ -177,7 +327,18 @@ LLM에 전달할 관련 컨텍스트를 찾기 위해 의미론적으로 유사�
 
 모두 함께 넣어 보면— 이것이 순진한 RAG 구현을 위해 얻게 되는 스키마입니다. 고급 RAG 전략은 현재 활발히 연구되고 있는 핫한 주제입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_24.png" />
 
@@ -188,7 +349,18 @@ LLM에 전달할 관련 컨텍스트를 찾기 위해 의미론적으로 유사�
 - 관련 요약 찾기
 - 스텝 #1에서 찾은 문서 요약과 연결된 관련 문서 청크 찾기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_25.png)
 
@@ -198,7 +370,18 @@ LLM에 전달할 관련 컨텍스트를 찾기 위해 의미론적으로 유사�
 
 저희가 취하는 방식은 최고의 루비 온 레일즈 패션 — 배터리 포함 및 모범 사례를 포함한 방식입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![BuildingLLM-poweredapplicationsinRuby_27](/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_27.png)
 
@@ -208,7 +391,18 @@ LLM에 전달할 관련 컨텍스트를 찾기 위해 의미론적으로 유사�
 
 루비는 인공 지능/기계 학습 또는 어떤 종류의 데이터 과학 작업에 관련이 있을 때 특히 역설적인 기술로 선택되어 왔다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 시대에는 특정 언어 선택보다는 전에는 그랬던 것보다 훨씬 덜 중요한 것 같아요. 저는 Ruby를 사용한 이유는 Ruby로 아이디어를 가장 효과적으로 전달할 수 있기 때문이에요.
 
@@ -218,7 +412,18 @@ AI 시대에는 특정 언어 선택보다는 전에는 그랬던 것보다 훨�
 
 인기 있는 오픈소스 프로젝트를 운영하면서 경험한 것을 통해, 다른 오픈소스 소프트웨어 유지보수자들에게 깊은 존경과 감사의 마음을 갖게 되었어요. 그들은 대부분 매우 친절하고 수면 부족한 사람들로, 낯선 사람들을 도와주기를 즐기면서 아무것도 기대하지 않고 도와줘요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-BuildingLLM-poweredapplicationsinRuby_30.png" />
 
@@ -228,7 +433,18 @@ Wroclove.rb 주최자분들께 감사의 인사를 전합니다. 지난 18개월
 
 ## 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Advanced RAG 기술: 그림으로 설명한 개요
 - LLM에서는 이제 임베딩 작업에 대한 도구를 제공합니다

@@ -3,13 +3,12 @@ title: "파이썬에서 typingTYPE_CHECKING이 30초 안에 설명하기"
 description: ""
 coverImage: "/assets/img/2024-06-19-typingTYPE_CHECKINGinPythonExplainedin30Seconds_0.png"
 date: 2024-06-19 10:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-typingTYPE_CHECKINGinPythonExplainedin30Seconds_0.png
 tag: Tech
 originalTitle: "“typing.TYPE_CHECKING” in Python Explained in 30 Seconds"
 link: "https://medium.com/gitconnected/typing-type-checking-in-python-explained-in-30-seconds-4ee494f94143"
 ---
-
 
 <img src="/assets/img/2024-06-19-typingTYPE_CHECKINGinPythonExplainedin30Seconds_0.png" />
 
@@ -25,7 +24,18 @@ print(TYPE_CHECKING)
 # False
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적인 경우에는 TYPE_CHECKING 변수가 그냥 False로 설정되어 있습니다. 하지만 이 경우에 왜 사용하는 걸까요?
 
@@ -35,7 +45,18 @@ typing.TYPE_CHECKING은 정적 타입 체크(myppy 등)를 할 때 True로 설�
 
 # 경우 1 — 개 대 인간
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에는 서로 가져오는 dog.py와 human.py가 있습니다.
 
@@ -61,7 +82,18 @@ class Human:
 
 여기서 서로를 가져오는 순환 포함이 있다는 것을 주의하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - dog.py에서 human.py를 가져오고
 - human.py에서는 dog.py를 가져옵니다
@@ -69,14 +101,25 @@ class Human:
 그래서 dog.py나 human.py 또는 dog.py나 human.py를 가져오는 다른 Python 스크립트 중 하나를 실행하면 순환 임포트 오류가 발생합니다:
 
 ```js
-ImportError: cannot import name 'Human' from 
-partially initialized module 'human' 
-(most likely due to a circular import) 
+ImportError: cannot import name 'Human' from
+partially initialized module 'human'
+(most likely due to a circular import)
 ```
 
 # Case 2 — Dog VS Human, but with TYPE_CHECKING
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Dog와 Human만 유형 주석에 필요하기 때문에 `-` Human과 `-` Dog와 같이 전체 클래스를 가져올 필요는 실제로 없습니다. 원형 가져오기 문제를 피하기 위해 다음 구문을 사용할 수 있습니다.
 
@@ -106,7 +149,18 @@ class Human:
 
 여기에서 이전 코드에 몇 가지 변경 사항을 가했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - `typing`에서 `TYPE_CHECKING`을 import하는 부분을 추가했어요.
 - `TYPE_CHECKING` 조건문 아래에서 import 문들을 옮겼어요.
@@ -120,7 +174,18 @@ class Human:
 def get_human() -> Human:
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 예제는 다음과 같이 변경되었습니다:
 
@@ -132,7 +197,18 @@ def get_human() -> "Human":
 
 # 그렇다면 TYPE_CHECKING이 왜 필요한가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 큰 파이썬 프로젝트에서는 어쩌면 언젠가는 mypy와 같은 정적 타입 체커를 사용할 것입니다.
 
@@ -142,9 +218,20 @@ def get_human() -> "Human":
 
 요컨대, TYPE_CHECKING이 추가된 이유는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-- 순환 가져오기 문제가 발생하지 않습니다 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+- 순환 가져오기 문제가 발생하지 않습니다
 - 해당 스크립트를 실행할 때 정적 유형 검사를 여전히 제대로 수행할 수 있습니다 (원래 유형 주석을 제거할 필요가 없음)
 
 # 결론
@@ -153,7 +240,18 @@ def get_human() -> "Human":
 
 # 만약 제작자로서 저를 지원하고 싶다면
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이 이야기에 대해 50번 박수를 쳐주세요
 - 생각을 말씀해 주시는 댓글을 남겨주세요
@@ -165,6 +263,17 @@ YouTube: https://www.youtube.com/@zlliu246
 
 LinkedIn: https://www.linkedin.com/in/zlliu/
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 Ebooks: [https://zlliu.co/ebooks](https://zlliu.co/ebooks)

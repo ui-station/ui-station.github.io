@@ -18,7 +18,18 @@ link: "https://medium.com/design-bootcamp/top-midjourney-sref-codes-every-interi
 
 sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양한 프롬프트와 결합할 때 이러한 스타일은 더 넓은 표현 범위를 얻습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어 동일한 sref 코드를 일러스트레이션 또는 사실적인 사진과 결합하면 전혀 다른 모습이 나올 수 있습니다. 인테리어 렌더링에서 현실감을 높이고 싶다면 "photoreal"과 같은 현실주의 키워드를 프롬프트에 추가할 수 있습니다.
 
@@ -28,7 +39,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 다음은 다양한 sref 코드의 효과를 보여주기 위한 실내 스타일 몇 가지입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # - sref 681456853
 
@@ -38,8 +60,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 # - sref 3251128856
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_2.png)
 
@@ -49,9 +81,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_5.png)
 
@@ -61,8 +102,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_7.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # — sref 1842833095
 
@@ -72,8 +123,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 # — sref 364111995
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_10.png)
 
@@ -83,9 +144,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 ![Image 3](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_12.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_13.png)
 
@@ -95,8 +165,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 ![Image 3](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_15.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # — sref 7000
 
@@ -106,8 +186,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 # — sref 4000
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-TopMidjourneysrefcodeseveryinteriordesignershouldknow_18.png)
 
@@ -117,8 +207,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 마지막으로, Midjourney V7은 sref 코드를 지원하지 않지만, V6은 여전히 인테리어 디자인에 강력한 도구를 제공합니다. 다양한 sref 코드와 스타일 가중치를 실험함으로써, 현대적인 미니멀리즘부터 일본어 젠까지 다양한 미학을 표현할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 매개변수를 통해 정밀한 제어가 가능해지며, 창의적인 비전을 실현하는 데 도움이 됩니다. sref 코드는 시각적으로 매력적인 인테리어 디자인을 만드는 데 소중한 자산이 됩니다.
 
@@ -128,7 +228,18 @@ sref 매개변수는 자체적으로 독특한 스타일을 만들지만, 다양
 
 ## 이 기사를 좋아하셨나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예, 그렇다면:
 

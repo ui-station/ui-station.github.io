@@ -3,13 +3,12 @@ title: "쿠버네티스와 커널 패닉"
 description: ""
 coverImage: "/assets/img/2024-05-18-KubernetesAndKernelPanics_0.png"
 date: 2024-05-18 17:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-KubernetesAndKernelPanics_0.png
 tag: Tech
 originalTitle: "Kubernetes And Kernel Panics"
 link: "https://medium.com/netflix-techblog/kubernetes-and-kernel-panics-ed620b9c6225"
 ---
-
 
 넷플릭스의 컨테이너 플랫폼이 리눅스 커널 패닉을 쿠버네티스 파드로 연결하는 방법
 
@@ -19,7 +18,18 @@ link: "https://medium.com/netflix-techblog/kubernetes-and-kernel-panics-ed620b9c
 
 이러한 고아 파드들은 시스템 전체 파드 중 소수지만 사용자들에게 진짜 고통을 미칩니다. 정확히 어디로 가는 것인가요? 왜 사라졌나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 포스트는 최악의 시나리오인 커널 패닉부터 Kubernetes(k8s)까지 연결하여 마침내 우리 운영자들이 우리의 k8s 노드가 왜 어떻게 사라지는지 추적할 수 있도록 안내하는 방법을 보여줍니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/netflix-techblog/kubernetes-and-kernel-panics-ed620b9c
 
 ![이미지](/assets/img/2024-05-18-KubernetesAndKernelPanics_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 설명은 설득력이 부족했나봐요. 에이전트가 어디로 사라졌는지 궁금하죠?
 
@@ -39,7 +60,18 @@ link: "https://medium.com/netflix-techblog/kubernetes-and-kernel-panics-ed620b9c
 
 우리는 어떻게 해야 할까요? 모든 사라진 인스턴스에 이유를 부여하고, 그 이유를 감안하며, 이것을 포드까지 전달할 수 있을까요? 이 모든 것은 주석에서 시작돼요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 {
@@ -59,9 +91,19 @@ pod-termination-reason 주석은 다음과 같은 인간이 읽을 수 있는 �
 - “이 파드는 하부 하드웨어의 장애($failuretype)로 종료되어야 했습니다”
 - “$user가 노드에서 sudo halt 명령을 실행했기 때문에 이 파드를 종료해야 했습니다”
 - “하부 노드 커널이 패닉 상태에 빠져 이 파드가 예기치 않게 종료되었습니다!”
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 기다려봐, 커널 패닉에 빠진 노드에 대한 팟을 어떻게 주석 처리할 수 있을까요?
 
@@ -71,7 +113,18 @@ pod-termination-reason 주석은 다음과 같은 인간이 읽을 수 있는 �
 
 Google Spanner 논문에서 영감을 받아 Spanner 노드가 리스 및 락을 해제하기 위해 "마지막 끼통" UDP 패킷을 보내는 것처럼, 당신도 주식 리눅스 모듈인 netconsole을 사용하여 커널 패닉 시 서버를 설정할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 넷콘솔 설정
 
@@ -81,7 +134,18 @@ Google Spanner 논문에서 영감을 받아 Spanner 노드가 리스 및 락을
 
 # 넷콘솔 "마지막 발악" 패킷
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 netconsole을 설정하면, 충돌하는 커널로 인한 마지막 노후는 예상대로 UDP 패킷 세트처럼 보입니다. UDP 패킷의 데이터는 간단히 커널 메시지의 텍스트입니다. 커널 패닉인 경우, 다음과 같이 보일 것입니다 (한 줄에 하나의 UDP 패킷):
 
@@ -114,7 +178,18 @@ Kernel panic - not syncing: buffer overrun at 0x4ba4c73e73acce54
 
 마지막 단계는 쿠버네티스(k8s)에 연결하는 것입니다. 다음을 수행하는 k8s 컨트롤러가 필요합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 포트 6666에서 netconsole UDP 패킷을 수신하여 노드에서 발생하는 커널 패닉처럼 보이는 것을 감시합니다.
 - 커널 패닉 발생 시, 들어오는 netconsole 패킷의 IP 주소와 관련된 k8s 노드 객체를 찾습니다.
@@ -144,7 +219,18 @@ for {
 
 그리고 3부와 4부는 다음과 같이 보일 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 func handleKernelPanicOnNode(ctx context.Context, addr *net.UDPAddr, nodeInformer cache.SharedIndexInformer, podInformer cache.SharedIndexInformer, kubeClient kubernetes.Interface, line string) {
@@ -171,8 +257,18 @@ func handleKernelPanicOnNode(ctx context.Context, addr *net.UDPAddr, nodeInforme
 
 # 결론
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업이 커널 패닉 때문에 실패했다는 것을 고객님에게 알리는 것은 만족스럽지 않을 수도 있습니다. 그러나 커널 패닉을 해결하기 위해 필요한 관측 도구를 갖추게 된 사실에 기쁨을 느끼실 수 있을 거예요!
 

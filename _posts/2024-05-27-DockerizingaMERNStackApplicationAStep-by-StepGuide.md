@@ -18,7 +18,18 @@ Docker는 애플리케이션과 그 종속성을 표준화된 단위인 컨테�
 
 Docker Compose는 쉽게 다중 컨테이너 애플리케이션을 정의하고 실행하기 위한 도구입니다. YAML 파일(일반적으로 docker-compose.yml로 명명됨)을 사용하여 애플리케이션의 서비스(컨테이너)와 그들 간의 관계를 구성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작하기 전에 시스템에 다음 항목이 설치되어 있는지 확인하세요:
 
@@ -29,30 +40,49 @@ Docker Compose는 쉽게 다중 컨테이너 애플리케이션을 정의하고 
 
 ## 단계 1: MERN 애플리케이션 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가정하에 기본적인 MERN 애플리케이션이 다음과 같이 구성되어 있다고 가정하고, 다음과 같은 Dockerfile 및 docker-compose 파일을 만들어야 합니다.
 
-
 my-mern-app/
 ├── backend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── server.js
+│ ├── Dockerfile
+│ ├── package.json
+│ ├── server.js
 ├── frontend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── public/
-│   ├── src/
+│ ├── Dockerfile
+│ ├── package.json
+│ ├── public/
+│ ├── src/
 ├── docker-compose.yml
-
 
 ## 단계 2: 백엔드와 프론트엔드 도커 파일 설정
 
 백엔드 설정
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 지시사항을 백엔드 도커 파일에 포함해야 합니다.
 
@@ -85,7 +115,18 @@ CMD ["npm", "start"]
 
 이는 npm install을 컨테이너 내에서 실행하여 package.json에 지정된 모든 종속성을 설치합니다. COPY . .는 나머지 애플리케이션 코드를 컨테이너의 작업 디렉토리로 복사합니다. EXPOSE 5000은 컨테이너가 실행 중인 포트 5000에서 수신하는 것을 Docker에 알립니다. 이는 내부 포트를 호스트 머신의 외부 포트에 매핑하는 데 유용합니다. CMD ["npm", "start"]는 컨테이너 시작 시 실행할 명령을 지정합니다. 일반적으로 package.json에 정의된 start 스크립트를 사용하여 서버를 시작하는 npm start를 실행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프론트엔드 설정
 
@@ -124,7 +165,18 @@ CMD ["npm","start"]
 
 프론트엔드 및 백엔드 애플리케이션용 도커 파일을 설정할 때, 대부분의 지시사항이 매우 유사하다는 것을 알게 될 것입니다. 주요 차이점은 타임아웃 및 캐시 구성에 있습니다. 특정 요구 사항에 따라 추가 단계가 필요할 수도 있고 아닐 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 컨테이너 내의 캐시 디렉토리를 사용하세요 (/app/.npm-cache).
 - 패키지를 가져올 때 재시도 횟수를 늘리세요 (fetch-retries).
@@ -136,8 +188,18 @@ CMD ["npm","start"]
 
 루트 도커 컴포즈 파일에 아래 구성을 포함해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # docker-compose.yml
 
@@ -150,11 +212,9 @@ frontend:
 build: ./frontend
 ports: - '3000:3000'
 
-
 `backend`: 백엔드 서비스를 정의합니다. 백엔드 디렉토리에서 Docker 이미지를 빌드하고 포트 5000으로 매핑합니다. `frontend`: 프론트엔드 서비스를 정의합니다. 프론트엔드 디렉토리에서 Docker 이미지를 빌드하고 포트 3000으로 매핑합니다.
 
 만약 몽고 DB와 같은 추가 서비스를 추가해야 한다면, 다음과 비슷한 추가 서비스를 backend에 의존하도록 추가하면 됩니다.
-
 
 version: '3.8'
 services:
@@ -166,8 +226,18 @@ mongo:
 image: mongo:latest
 ports: - '27017:27017'
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 4: 애플리케이션 빌드 및 실행
 
@@ -179,7 +249,18 @@ docker-compose up — build
 
 Docker Compose가 이미지를 빌드하고 컨테이너를 시작합니다. 프론트엔드는 http://localhost:3000에서, 백엔드는 http://localhost:5000에서 접속할 수 있습니다. 참조 코드는 여기에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Docker Compose를 사용하여 MERN 스택 애플리케이션을 성공적으로 Docker화했습니다. 이 설정은 각 구성 요소에 대해 격리된 환경을 제공하여 애플리케이션을 관리하고 배포하기 쉽게합니다. 설정을 더 맞춤화하여 개발 및 프로덕션 요구 사항에 맞게 사용할 수 있습니다.
 

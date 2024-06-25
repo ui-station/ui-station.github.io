@@ -3,13 +3,12 @@ title: "LLMLarge Language Model의 추천은 제품의 가시성을 높이기 �
 description: ""
 coverImage: "/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_0.png"
 date: 2024-05-20 20:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_0.png
 tag: Tech
 originalTitle: "Can Recommendations from LLMs Be Manipulated to Enhance a Product’s Visibility?"
 link: "https://medium.com/towards-data-science/can-recommendations-from-llms-be-manipulated-to-enhance-a-products-visibility-64c64fa9cd24"
 ---
-
 
 ## 책임 있는 인공지능
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/can-recommendations-from-llms-be-
 
 Manipulating Large Language Models to Increase Product Visibility란 제목의 새 연구에서 Aounon Kumar와 Himabindu Lakkaraju가 이러한 시나리오를 자세히 연구했어. 특히 제품 정보에 전략적 텍스트 시퀀스(STS)라고 불리는 특별히 디자인된 메시지를 포함시킴으로써 특정 업체들이 경쟁 업체에 비해 불공정한 이점을 얻고 제품이 최상의 추천으로 선정될 가능성이 크게 증가함을 보여줘. 이런 관행은 소비자들의 구매 결정과 온라인 시장에 대한 신뢰에 영향을 미칠 수 있어, 온라인 비즈니스에서 신뢰는 중요한 요소니까.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 본 문서에서는 작가들이 이 특별한 텍스트 시퀀스를 생성하고 논문에서 전달된 결과를 더 자세히 이해하는 방법에 대해 이해해 봅시다. 작가들은 관련 코드를 GitHub에서 공개했습니다.
 
@@ -29,7 +39,18 @@ Manipulating Large Language Models to Increase Product Visibility란 제목의 �
 
 <img src="/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_0.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # LLM이 생성한 추천을 조작할 수 있을까요?
 
@@ -39,7 +60,18 @@ Manipulating Large Language Models to Increase Product Visibility란 제목의 �
 
 이미 논의한 바와 같이, LLM을 활용한 검색의 장점은 인터넷이나 제품 카탈로그에서 정보를 추출할 수 있는 능력에 있습니다. 판매업자들은 여기서 프로세스를 가이드할 수 있는 기회를 가지게 됩니다. 어떻게 가능할까요? 이 carefully crafted texts 또는 STS를 제품 정보 페이지/카탈로그에 포함시켜 LLM의 입력으로 만들면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_2.png" />
 
@@ -49,8 +81,18 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 
 저자들은 사용자가 가격이 적당한 커피 머신을 구매하고 싶어 하는 시나리오를 제시합니다. 이때 '적당한'이라는 단어에 주목해야 합니다. 이는 제품의 가격이 중요하며 사용자가 비싼 옵션을 원하지 않는다는 것을 의미합니다. 아래에 나와 있는 것처럼 LLM에 대한 입력 프롬프트로 시작해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_3.png)
 
@@ -62,16 +104,37 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 
 ![이미지](/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 전략적 텍스트 시퀀스 제작
 
 논문에서 설명하는 텍스트 시퀀스 생성 과정의 일부를 확인할 수 있습니다.
 
-예를 들어, 제품 목록에서 ColdBrew Master의 순위를 높이려면 STS를 추가해야 합니다. 아래 표시된대로 STS는 '*,'로 표시된 자리 표시자 토큰 시퀀스로 시작하여 GCG 알고리즘을 사용하여 반복적으로 최적화됩니다.
+예를 들어, 제품 목록에서 ColdBrew Master의 순위를 높이려면 STS를 추가해야 합니다. 아래 표시된대로 STS는 '\*,'로 표시된 자리 표시자 토큰 시퀀스로 시작하여 GCG 알고리즘을 사용하여 반복적으로 최적화됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 제품이 나열되는 방식에 관계없이 STS의 성능을 최적화하기 위해 각 최적화 이터레이션마다 제품 목록의 순서를 무작위로 섞을 수도 있습니다.
 
@@ -81,7 +144,18 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 
 # 두 제품, ColdBrew Master 및 QuickBrew Express에 대한 전략적 텍스트 시퀀스 최적화 비교
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 STS가 제품 순위에 미치는 영향에 대한 감을 잡았으니 다음 제품에 영향을 미치는 방법을 비교해보겠습니다.
 
@@ -91,8 +165,18 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 
 여기에 비교 결과를 비교하기 위해 만든 표가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_7.png)
 
@@ -102,8 +186,18 @@ STS는 Universal and Transferable Adversarial Attacks on Aligned Language Models
 
 ![image](/assets/img/2024-05-20-CanRecommendationsfromLLMsBeManipulatedtoEnhanceaProductsVisibility_8.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론적인 생각: Generative Search Optimization(GSO)가 새로운 SEO인가요?
 

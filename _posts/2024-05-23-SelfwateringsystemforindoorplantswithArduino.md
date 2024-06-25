@@ -3,26 +3,37 @@ title: "아두이노로 만든 실내 식물 자동 관수 시스템"
 description: ""
 coverImage: "/assets/img/2024-05-23-SelfwateringsystemforindoorplantswithArduino_0.png"
 date: 2024-05-23 16:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SelfwateringsystemforindoorplantswithArduino_0.png
 tag: Tech
 originalTitle: "Self watering system for indoor plants with Arduino"
 link: "https://medium.com/@alexandrumarius/self-watering-system-for-indoor-plants-with-arduino-9d53ac8ed5e9"
 ---
 
-
 여름이 빠르게 다가오고 휴가 시간이 가까워지면, 몇 주에 한 번 이웃에게 물 주라고 부탁하지 않고도 식물을 살려 놓는 해결책이 필요했죠.
 
 그래서 나는 아마존에서 DIY 아두이노 기반 자동 관개 시스템과 아두이노 보드를 구입해 작업을 시작했어요.
 
 부품 목록:
+
 - DIY 관개 시스템
 - 아두이노 UNO
 - 전선 및 솔더
 
 설치 위치에 따라 아두이노 보드와 펌프를 전원 공급하기 위해 USB 충전 블록도 필요할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 배선 다이어그램
 
@@ -32,19 +43,30 @@ link: "https://medium.com/@alexandrumarius/self-watering-system-for-indoor-plant
 
 센서의 노란색 케이블을 보드의 A0에 연결하고 아래의 코드 스니펫을 사용하여 각 센서를 캘리브레이션하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
- void setup()
- { 
-   Serial.begin(9600);
- }
- 
- void loop()
- {
-   Serial.println(analogRead(A0));
-   delay(100);
- }
+void setup();
+{
+  Serial.begin(9600);
+}
+
+void loop();
+{
+  Serial.println(analogRead(A0));
+  delay(100);
+}
 ```
 
 수중에 있을 때 550을 받았고, 건조할 때 190을 받았어요. 센서 자체에 영구 마커를 사용하여 이러한 값을 적는 것이 편리하다고 생각합니다. 각 센서에 대해 반복하세요.
@@ -53,9 +75,20 @@ link: "https://medium.com/@alexandrumarius/self-watering-system-for-indoor-plant
 
 각 센서는 토양 수분 퍼센트가 `20%` 미만인 식물에 물을 보내기 위해 펌프를 작동시키는 중계를 트리거합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-아래는 코드이며 제 Github에서도 확인할 수 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+아래는 코드이며 제 Github에서도 확인할 수 있습니다.
 
 ```js
 const int relayPins[] = {2, 3, 4, 5};
@@ -92,7 +125,7 @@ void loop()
     Serial.print(" - Moisture: ");
     Serial.print(outputValue);
     Serial.println("%");
-    
+
     if (outputValue < 20)
     {
       digitalWrite(relayPins[i], LOW);
@@ -101,7 +134,7 @@ void loop()
     {
       digitalWrite(relayPins[i], HIGH);
     }
-    
+
     delay(1000);
   }
 }
@@ -109,7 +142,18 @@ void loop()
 
 코드에서 주요한 부분은 수분이 많을 때(수중 - 550)와 건조할 때(공기 - 190)에 할당하는 값들입니다. 그런 다음 이러한 값을 0에서 100까지의 백분율로 매핑합니다. 그 후 보드는 센서를 반복하여 각 센서가 20% 미만인 경우 릴레이와 펌프를 트리거하기 시작합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 케이블 관리는 나중에 하지만 첫 번째 수정으로는 매우 만족합니다.
 

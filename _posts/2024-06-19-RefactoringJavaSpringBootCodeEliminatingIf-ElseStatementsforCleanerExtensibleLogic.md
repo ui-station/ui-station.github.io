@@ -3,13 +3,12 @@ title: "Java Spring Boot 코드 리팩터링 더 깔끔하고 확장 가능한 �
 description: ""
 coverImage: "/assets/img/2024-06-19-RefactoringJavaSpringBootCodeEliminatingIf-ElseStatementsforCleanerExtensibleLogic_0.png"
 date: 2024-06-19 09:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-RefactoringJavaSpringBootCodeEliminatingIf-ElseStatementsforCleanerExtensibleLogic_0.png
 tag: Tech
 originalTitle: "Refactoring Java Spring Boot Code: Eliminating If-Else Statements for Cleaner, Extensible Logic"
 link: "https://medium.com/@akintopbas96/refactoring-java-spring-boot-code-eliminating-if-else-statements-for-cleaner-extensible-logic-f1314cf9724e"
 ---
-
 
 if-else 문은 널리 사용되지만 과용하면 복잡하고 유지보수가 어려운 코드를 작성하게 될 수 있습니다. 이 기사에서는 Java Spring Boot 프로젝트에서 if-else 구조의 사용을 줄이는 다양한 전략을 탐색하며 코드를 모듈화하고 유지보수 가능하며 가독성 있게 만드는 데 초점을 맞춥니다.
 
@@ -24,7 +23,18 @@ if-else 문은 널리 사용되지만 과용하면 복잡하고 유지보수가 
 - 명령 패턴
 - 가드 절(recipes)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 전략에 대해 예제와 함께 자세히 파헤쳐 봅시다.
 
@@ -34,7 +44,18 @@ if-else 문은 널리 사용되지만 과용하면 복잡하고 유지보수가 
 
 ### 예제: 결제 처리 시스템
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 PaymentStrategy 인터페이스를 정의합니다:
 
@@ -66,18 +87,38 @@ public class PaypalPayment implements PaymentStrategy {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경하십시오.
 
+| 구분 | 설명    |
+| ---- | ------- |
+| 1    | 첫 번째 |
+| 2    | 두 번째 |
 
-| 구분 | 설명 |
-|---|---|
-| 1 | 첫 번째 |
-| 2 | 두 번째 |
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시: 주문 상태 관리
 
@@ -110,7 +151,18 @@ public enum OrderStatus {
 
 이 enum을 서비스에서 사용하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Service
@@ -127,8 +179,18 @@ public class OrderService {
 
 ## Example: Notification System
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 // `Notification` 인터페이스와 그 구현 클래스 정의:
@@ -171,7 +233,18 @@ public class NotificationService {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 4. 람다 표현식과 함수형 인터페이스
 
@@ -181,7 +254,18 @@ public class NotificationService {
 
 람다 표현식을 사용하는 할인 서비스를 정의하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import java.util.HashMap;
@@ -208,7 +292,18 @@ The Command Pattern encapsulates a request as an object, thereby allowing you to
 
 ## Example: File Operations
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Command 인터페이스와 구체적인 명령어를 정의한 코드입니다:
 
@@ -277,7 +372,18 @@ public class FileInvoker {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6. 가드 구문
 
@@ -287,7 +393,18 @@ public class FileInvoker {
 
 사용자 입력을 유효성 검사하기 위해 if-else 문을 중첩하는 대신, 가드 구문을 사용하여 잘못된 경우를 미리 처리하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class UserService {
@@ -313,8 +430,18 @@ public class UserService {
 
 이러한 전략을 적용함으로써 Java Spring Boot 프로젝트에서 if-else 문의 사용을 크게 줄일 수 있습니다. 이는 코드를 더 읽기 쉽게 만들 뿐만 아니라 유지보수성과 확장성을 향상시킵니다. 이러한 패턴과 관행을 받아들여 더 깨끗하고 효율적인 코드를 작성해 보세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료
 

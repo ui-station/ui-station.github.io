@@ -3,13 +3,12 @@ title: "스프링 부트 개발자를 위한 도커에 오신 것을 환영합�
 description: ""
 coverImage: "/assets/img/2024-06-19-WelcometoDockerforSpringBootDevelopers_0.png"
 date: 2024-06-19 12:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-WelcometoDockerforSpringBootDevelopers_0.png
 tag: Tech
 originalTitle: "Welcome to Docker for Spring Boot Developers"
 link: "https://medium.com/@zjawad333/welcome-to-docker-for-spring-boot-developers-1e610d6d843c"
 ---
-
 
 ![Docker](/assets/img/2024-06-19-WelcometoDockerforSpringBootDevelopers_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@zjawad333/welcome-to-docker-for-spring-boot-developer
 
 # Docker란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커는 2013년 Solomon Hykes에 의해 개발된 널리 사용되는 오픈 소스 컨테이너 엔진입니다. 초기에는 편리성으로 인식되었지만, 응용 프로그램 내에서 컨테이너를 관리하고 시작하는 데 중요한 도구로 진화하여 가상 머신(VM)과 같은 하드웨어 할당 대신 물리적 머신에서 자원 공유를 가능케했습니다.
 
@@ -29,7 +39,18 @@ IBM, Microsoft, Google 등 주요 기업들의 지원으로 인해 도커는 소
 
 # 도커 엔진 구성 요소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본 구성 요소는 다음과 같습니다:
 
@@ -45,7 +66,18 @@ IBM, Microsoft, Google 등 주요 기업들의 지원으로 인해 도커는 소
 
 Dockerfile은 Docker 이미지를 자동으로 생성하고 구성하는 지침을 포함하는 텍스트 파일입니다. Linux와 유사한 명령을 사용하여 이미지 생성을 간소화하고 가독성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Dockerfile을 생성한 후에는 Docker 이미지를 빌드하기 위해 docker build 명령을 실행합니다. 그런 다음, Docker 이미지가 준비되면 실행 명령을 사용하여 컨테이너를 생성합니다.
 
@@ -64,7 +96,18 @@ Dockerfile을 생성한 후에는 Docker 이미지를 빌드하기 위해 docker
 
 # Docker Compose
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Docker Compose은 여러 컨테이너 애플리케이션을 관리하기 위한 도구입니다. 단일 YAML 파일을 사용하여 서비스를 정의하고 제어하며, 간단한 명령을 사용하여 전체 애플리케이션 스택을 시작하고 중지하고 관리할 수 있습니다.
 
@@ -76,7 +119,18 @@ Docker Compose 사용 방법:
 
 샘플 docker-compose.yml 파일은 데이터베이스와 애플리케이션과 같은 서비스를 정의합니다. 명령어는 다음과 같습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이미지를 빌드하고 서비스를 시작하려면 `docker-compose up -d`를 사용하세요.
 - 배포 정보를 확인하려면 `docker-compose logs`를 사용하세요.
@@ -87,13 +141,13 @@ Docker Compose 사용 방법:
 다음은 MySQL 및 Redis와 함께 Spring Boot 애플리케이션을 위한 Docker Compose YAML 파일(docker-compose.yml)의 예시입니다:
 
 ```yaml
-version: '3.8'
+version: "3.8"
 
 services:
   spring-boot-app:
     image: spring-boot-image:latest
     ports:
-      - '8080:8080'
+      - "8080:8080"
     depends_on:
       - mysql-db
       - redis-cache
@@ -106,7 +160,7 @@ services:
   mysql-db:
     image: mysql:latest
     ports:
-      - '3306:3306'
+      - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: mysql_root_password
       MYSQL_DATABASE: database_name
@@ -116,12 +170,23 @@ services:
   redis-cache:
     image: redis:latest
     ports:
-      - '6379:6379'
+      - "6379:6379"
 ```
 
 이 파일에서:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - spring-boot-app은 Spring Boot 애플리케이션을 위한 서비스입니다.
 - mysql-db는 MySQL 데이터베이스를 위한 서비스입니다.
@@ -133,14 +198,36 @@ Spring Boot 앱은 MySQL과 Redis에 의존하며(dependes_on), Spring Boot 앱�
 
 # Spring Boot으로 Docker 이미지 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring Boot 2.3에서는 Spring Boot 애플리케이션용 Docker 이미지를 만드는 간단하고 효율적인 방법을 소개했습니다. 기존에는 Docker 이미지를 Dockerfile 및 docker build 명령을 사용하여 만들었지만, 이 방법은 몇 가지 단점이 있었습니다.
 첫째로 Spring Boot이 생성한 fat jar에 의존했기 때문에, 특히 컨테이너 환경에서 부팅 시간에 영향을 줄 수 있습니다. 이를 해결하기 위해 jar 파일의 폭발된 내용을 포함할 수 있습니다.
 둘째로 Docker 이미지는 계층으로 구성됩니다. Spring Boot fat jar을 사용하면 모든 애플리케이션 코드와 타사 라이브러리가 하나의 계층으로 묶입니다. 이는 작은 코드 변경이라도 전체 계층을 다시 빌드해야 한다는 것을 의미합니다.
 이미지를 빌드하기 전에 jar 파일을 폭파시키면 애플리케이션 코드와 타사 라이브러리가 별도 계층으로 구성됩니다. 이를 통해 Docker의 캐싱 메커니즘을 활용할 수 있습니다. 결과적으로 코드 변경이 발생하면 해당 계층만 재빌드하면 되어 효율성이 크게 향상되고 빌드 시간이 줄어듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring Boot 2.3에서 소개된 두 가지 새로운 기능은 이미지 작성 기술을 개선하는 데 도움이 되었습니다: Buildpacks와 Layered jars support.
 
@@ -150,7 +237,18 @@ Buildpacks는 Docker 이미지 작성을 간편화하여 필요한 프레임워�
 
 예를 들어, Maven을 사용하여 pom.xml 파일을 변경하지 않고 다음을 실행합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=myorg/app
@@ -164,7 +262,18 @@ Gradle를 사용하는 경우:
 
 첫 번째 빌드는 컨테이너 이미지 및 JDK를 다운로드해야 하기 때문에 시간이 오래 걸릴 수 있지만, 그 이후의 빌드는 빠릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령어는 먼저 표준 Fat Jar를 빌드한 다음 Docker 이미지 생성을 시작합니다. Packeto 빌더를 사용하여 클라우드 네이티브 빌드팩을 구현합니다. 이는 프로젝트를 분석하고 필요한 프레임워크 및 라이브러리(예: Spring Boot)를 식별하여 이미지에 추가합니다.
 
@@ -174,7 +283,18 @@ Gradle를 사용하는 경우:
 
 Spring Boot은 jar에 레이어 인덱스 파일을 추가하는 것을 지원합니다. 이 인덱스는 레이어 목록과 해당 레이어에 포함되어야 하는 jar의 부분을 제공합니다. 인덱스의 레이어 목록은 Docker/OCI 이미지에 추가할 순서로 정렬됩니다. 기본적으로 다음 레이어가 지원됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 종속성
 - spring-boot-loader
@@ -199,7 +319,18 @@ Spring Boot은 jar에 레이어 인덱스 파일을 추가하는 것을 지원�
 
 이 레이어링은 응용 프로그램 빌드 간에 얼마나 자주 변경될 수 있는지에 따라 코드를 분리하는 데 사용됩니다. 라이브러리 코드는 빌드 간에 변경될 가능성이 낮기 때문에 캐시로부터 레이어를 재사용할 수 있도록 자체 레이어에 배치됩니다. 응용 프로그램 코드는 빌드 간에 변경될 가능성이 더 높기 때문에 별도의 레이어에 격리됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Docker 이미지를 만드는 데 이것을 어떻게 활용할 수 있는지 살펴보겠습니다.
 
@@ -207,19 +338,30 @@ Docker 이미지를 만드는 데 이것을 어떻게 활용할 수 있는지 �
 
 ```js
 <plugin>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-maven-plugin</artifactId>
-    <configuration>
-        <layers>
-            <enabled>true</enabled>
-        </layers>
-    </configuration>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-maven-plugin</artifactId>
+  <configuration>
+    <layers>
+      <enabled>true</enabled>
+    </layers>
+  </configuration>
 </plugin>
 ```
 
 - JAR 재빌드: pom.xml을 구성한 후에는 mvn clean package를 사용하여 Spring Boot JAR을 재빌드하여 새로운 계층화된 JAR을 생성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플리케이션의 루트 디렉토리로 이동한 다음 다음 명령어를 실행하여 레이어와 그 순서를 표시하세요:
 
@@ -233,7 +375,18 @@ java -Djarmode=layertools -jar target/app.jar list
 $ java -Djarmode=layertools -jar app.jar
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Dockerfile 생성하기: Docker 이미지에 이러한 레이어들을 포함하는 가장 쉬운 방법은 Dockerfile을 사용하는 것입니다:
 
@@ -260,7 +413,18 @@ ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
 
 - Docker 이미지 빌드하기: 위의 Dockerfile이 현재 디렉토리에 있다고 가정하면, 도커 이미지는 docker build . 명령을 사용하여 빌드할 수 있습니다. 또는 다음 예시와 같이 애플리케이션 jar 파일의 경로를 지정할 수도 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ docker build --build-arg JAR_FILE=path/to/app.jar .
@@ -272,7 +436,18 @@ Jib은 구글이 개발한 Java 도구로 Java 앱을 위한 Docker 이미지를
 
 Jib은 의존성, 리소스, 클래스와 같은 애플리케이션을 구별하는 레이어로 구성하고 Docker 이미지 레이어 캐싱을 이용하여 변경 사항만 다시 빌드하는 방식으로 빌드를 빠르게 유지합니다. Jib의 레이어 구조와 작은 베이스 이미지는 전체 이미지 크기를 작게 유지하여 성능과 이식성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 배포하기 전에 Docker 저장소에 대한 로컬 인증 설정을 하는 것이 매우 중요합니다. 예를 들어 DockerHub 자격 증명을 .m2/settings.xml 파일에 포함할 수 있습니다. 그러나 이 파일에 암호를 평문으로 저장하는 것은 권장되지 않습니다.
 
@@ -294,7 +469,18 @@ id 필드가 이 자격 증명이 지정된 레지스트리 서버와 일치하�
 
 Jib를 사용하여 Docker Hub에 배포하려면 jib-maven-plugin이나 그와 동등한 Gradle을 사용할 수 있습니다. 간단히 다음과 같은 명령을 실행하면 됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 mvn compile com.google.cloud.tools:jib-maven-plugin:3.1.1:build -Dimage=$IMAGE_PATH
@@ -306,35 +492,46 @@ mvn compile com.google.cloud.tools:jib-maven-plugin:3.1.1:build -Dimage=$IMAGE_P
 
 ## 추가 커스터마이징
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Jib 빌드를 Dockerfile과 비슷한 방식으로 사용자 정의할 수 있습니다. 이는 환경 변수를 추가하는 등의 방식입니다. 아래는 그 방법입니다:
 
 ```js
 <project>
-    ...
-    <build>
-        <plugins>
-            ...
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>jib-maven-plugin</artifactId>
-                <version>3.1.1</version>
-                <configuration>
-                    <to>
-                        <image>${IMAGE_PATH}</image>
-                    </to>
-                    <container>
-                        <environment>
-                            <ENV_VAR>VALUE</ENV_VAR>
-                        </environment>
-                    </container>
-                </configuration>
-            </plugin>
-            ...
-        </plugins>
-    </build>
-    ...
+  ...
+  <build>
+    <plugins>
+      ...
+      <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>jib-maven-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <to>
+            <image>${IMAGE_PATH}</image>
+          </to>
+          <container>
+            <environment>
+              <ENV_VAR>VALUE</ENV_VAR>
+            </environment>
+          </container>
+        </configuration>
+      </plugin>
+      ...
+    </plugins>
+  </build>
+  ...
 </project>
 ```
 
@@ -344,7 +541,18 @@ Jib 빌드를 Dockerfile과 비슷한 방식으로 사용자 정의할 수 있�
 mvn compile jib:build
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 옵션으로 Docker를 설치한 경우, 로컬 Docker 설치로 빌드할 수 있습니다. 이렇게 하면 이미지를 다른 로컬 컨테이너처럼 검사하거나 실행할 수 있습니다:
 

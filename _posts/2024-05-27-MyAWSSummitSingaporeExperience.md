@@ -3,13 +3,12 @@ title: "나의 AWS Summit 싱가포르 체험"
 description: ""
 coverImage: "/assets/img/2024-05-27-MyAWSSummitSingaporeExperience_0.png"
 date: 2024-05-27 17:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-MyAWSSummitSingaporeExperience_0.png
 tag: Tech
 originalTitle: "My AWS Summit Singapore Experience"
 link: "https://medium.com/@iggyyuson09/my-aws-summit-singapore-experience-7dfb89c81c75"
 ---
-
 
 <img src="/assets/img/2024-05-27-MyAWSSummitSingaporeExperience_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@iggyyuson09/my-aws-summit-singapore-experience-7dfb89
 
 모든 것은 필리핀의 AWS 커뮤니티 히어로인 Raphael Quisumbing이 저에게 AWS Summit Singapore Developer Lounge의 Call for Papers (CFP)를 보내준 것으로 시작되었습니다. CFP(출판물로서의 AWS 파르스 폼)를 본 순간, 나는 요구 사항을 보고 즉시 망설이기 시작했습니다. 해당 양식은 번개 토크를 신청하거나 데모를 신청할 수 있는 두 가지 선택지를 제시했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 처음에는 여러 개의 사이드 프로젝트가 있어 데모에 지원해볼까 고민했습니다. 그러나 클라우드 포트폴리오를 검토하면서 내 프로젝트 중 어느 것도 큰 “와우 요소”를 가지고 있지 않다는 것을 깨달았습니다. 번개 토크에 지원해볼 생각은 전혀 없었는데, CFP에는 AWS를 이용하여 애플리케이션을 개발하는 개발자들에게 유용하고 영향력 있는 내용을 제안해야 한다고 명시되어 있어 이를 의미하는 것이 서버리스 프레임워크나 람다 파워툴 같은 혁신적인 개발 도구를 제시해야 한다고 생각했습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@iggyyuson09/my-aws-summit-singapore-experience-7dfb89
 
 제출 후 몇 일이 지나면서, 번개 토크에 지원한 것을 완전히 잊어버렸다는 사실을 인정해야 했습니다. 그런데 갑자기 이메일을 받았어요…
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![AWSSummitSingaporeExperience](/assets/img/2024-05-27-MyAWSSummitSingaporeExperience_1.png)
 
@@ -39,7 +60,18 @@ AWS 팀은 제 발표 준비 과정에서 항상 도와주었어요. 마감 기�
 
 리허설이 꽤 복잡했었어요. 믿기지 않겠지만, 이번 토크가 20분 동안만 진행되는 것은 처음이었어요. 평소 30분에서 1시간 동안 토크를 하는 것에 익숙했는데요. 20분 토크는 정말 색다른 경험이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 싱가포르 여행
 
@@ -49,7 +81,18 @@ AWS 팀은 제 발표 준비 과정에서 항상 도와주었어요. 마감 기�
 
 친구인 Raphael Jambalos 씨와 함께 싱가포르 쇼핑 중심지 오차드 로드로 갔어요. 여기에서 가장 인상적이었던 순간은 키노쿠니야에 갔을 때였어요. 이곳은 제가 가 본 중에서 가장 크고 다양한 서점이었어요! 만화책부터 소설 책, 심지어 기술 서적까지, 뭐든 있다고 확신해요. 하지만 주의할 점은, 책을 좋아하신다면 이곳에서 돈을 많이 쓸 거라는 거에요 😂.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 다음, 우리는 필리핀 분위기를 느끼기 위해 럭키 플라자로 갔어요. 거기에 도착했을 때 정말 크게 웃었어요. 분위기가 너무 필리핀식이라 다른 나라에 있는 것 같지 않았어요 😂. 그리고 우리는 차이나타운의 호커 센터에서 점심을 먹었어요. 거기서 싱가포르 음식을 처음으로 맛보았죠.
 
@@ -59,7 +102,18 @@ AWS 팀은 제 발표 준비 과정에서 항상 도와주었어요. 마감 기�
 
 ## 곳 서밋 전날
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서밋 하루 전, 편리하게 접근하기 위해 우리가 참석 패스를 수령했다. 여기에서 이벤트 준비과정을 목격하고, 저는 내 번개 토크를 전달할 개발자 라운지를 방문했습니다. 내일 이벤트에 참여하는 번개 토크 발표자 명단에 내 이름이 있는 것을 보니 너무 흥분되었고 동시에 긴장되기도 했습니다.
 
@@ -69,7 +123,18 @@ AWS 팀은 제 발표 준비 과정에서 항상 도와주었어요. 마감 기�
 
 ![이미지](/assets/img/2024-05-27-MyAWSSummitSingaporeExperience_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 세션에 참여한 워크샵은 Mark Pergola가 진행한 것이었습니다. “발표의 아키텍처”라는 주제였어요. 제가 꼭 필요하다고 생각하지 않았던 워크샵 종류였어요! 그는 기본부터 차근차근 알려주시면서 기술적이든 그렇지 않든 효과적인 발표를 작성하는 방법에 대해 설명했어요. 가장 좋은 점은 그의 워크샵을 모방할 수 있다는 거에요! 자세한 내용은 여기에서 확인할 수 있어요. 정말 감사드리고 Mark에게 큰 찬사를 보냅니다! 제가 저의 지역 사용자 그룹에서 이걸 꼭 시도해볼 거예요!
 
@@ -79,7 +144,18 @@ AWS 팀은 제 발표 준비 과정에서 항상 도와주었어요. 마감 기�
 
 # D-Day
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-MyAWSSummitSingaporeExperience_6.png" />
 
@@ -89,7 +165,18 @@ AWS 팀은 제 발표 준비 과정에서 항상 도와주었어요. 마감 기�
 
 동시에 20분 동안 발표하는 것이 처음이어서 걱정되기도 했어요. 이전 연사 활동에서는 프레젠테이션을 작성하는 것이 이미 저의 습관이었지요. 발표 중에 기억이 나는 것을 덧붙여 말하는 습관도 있었어요. 그렇지만 20분 동안의 발표에서는 준비한 엄격한 대본을 따라야 했죠. 관객이 이해해야 할 내용을 간결하게 전달해야 하고 동시에 시간을 낭비하지 않도록 너무 오래 설명하지 않아야 했기에 제 발표가 다소 기술적인 내용을 담고 있다는 점이 정말 어려운 도전이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![My AWS Summit Singapore Experience](/assets/img/2024-05-27-MyAWSSummitSingaporeExperience_7.png)
 
@@ -99,7 +186,18 @@ AWS 팀은 제 발표 준비 과정에서 항상 도와주었어요. 마감 기�
 
 오늘까지의 내 경력을 꽤 잘 요약한 필리핀어로 된 GenZ 명언이 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 경험은 정말 나에게 또 하나의 캐논 이벤트였어요. 싱가포르를 떠날 때 큰 미소를 지으며 행복했고, 이번 경험으로 배운 모든 것을 다바오시의 로컬 테크 씬에 전달할 거예요. 지금은 다바오시를 필리핀의 주요 테크 허브로 만드는 내 미션을 계속할 열정이 더 크게 타오르고 있어요. 이를 위해 코드 한 줄 한 줄로 전진할 거예요. (그리고 물론 AWS 클라우드 기술로 뒷받침을 받으며 🤪).
 

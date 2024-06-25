@@ -3,13 +3,12 @@ title: "자바에서의 락lock - 파트 63  스탬프락 메서드, 읽기 뷰 
 description: ""
 coverImage: "/assets/img/2024-05-27-LocksInJavaPart63StampedLockMethodsReadViewandWriteView_0.png"
 date: 2024-05-27 16:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-LocksInJavaPart63StampedLockMethodsReadViewandWriteView_0.png
 tag: Tech
 originalTitle: "Locks In Java — Part 6.3 [ Stamped Lock Methods , Read View and Write View ]"
 link: "https://medium.com/@avinashsoni9829/locks-in-java-part-6-3-stamped-lock-methods-read-view-and-write-view-333579a644f4"
 ---
-
 
 본 기사에서는 자바의 stamped lock 메서드에 대해 알아보고 이를 통해 제공되는 view 개념을 살펴볼 것입니다.
 
@@ -19,13 +18,35 @@ link: "https://medium.com/@avinashsoni9829/locks-in-java-part-6-3-stamped-lock-m
 
 이 메서드들은 상태 값을 확인하여 true 또는 false를 결정하기 위해 일부 검사를 계속 수행하기 때로 이해하기가 상당히 간단합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽기 뷰:
 
 이것은 락 인터페이스를 구현하는 내부 클래스이며 Stamped 락에 있는 메서드들을 감싸는 래퍼 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메소드가 있습니다.
 
@@ -40,7 +61,18 @@ link: "https://medium.com/@avinashsoni9829/locks-in-java-part-6-3-stamped-lock-m
 
 asReadLock()
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 stamped lock의 Read Lock 뷰를 생성합니다.
 
@@ -50,7 +82,18 @@ asReadLock()
 
 asReadLock () 및 asWriteLock () 메서드를 사용하고 ReadWriteLock 인터페이스를 구현하는 ReadWriteView도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 자바 락 시리즈를 완료했습니다. 자바의 대부분의 락을 다루려고 노력했습니다.
 
@@ -68,6 +111,17 @@ asReadLock () 및 asWriteLock () 메서드를 사용하고 ReadWriteLock 인터�
 
 코드 : [GitHub 링크](https://github.com/avinashsoni9829/Threading/tree/main/locks)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 읽어주셔서 감사합니다! 피드백을 공유해 주시면 감사하겠습니다.

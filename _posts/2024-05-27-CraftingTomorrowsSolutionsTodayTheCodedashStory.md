@@ -3,13 +3,12 @@ title: "내일을 위한 솔루션을 만들어가는 과정 코딩대쉬 이야
 description: ""
 coverImage: "/assets/img/2024-05-27-CraftingTomorrowsSolutionsTodayTheCodedashStory_0.png"
 date: 2024-05-27 16:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-CraftingTomorrowsSolutionsTodayTheCodedashStory_0.png
 tag: Tech
 originalTitle: "Crafting Tomorrow’s Solutions Today: The Codedash Story"
 link: "https://medium.com/codedash/crafting-tomorrows-solutions-today-the-codedash-story-005daf85c459"
 ---
-
 
 디지털 랜드스케이프가 끊임없이 변화하는 시대에는 혁신, 민첩성, 그리고 신기술에 대한 심도 있는 이해가 필수적입니다. Codedash는 AI 기반의 사용자 중심 접근 방식을 활용하여 웹, 모바일 및 서버 개발 솔루션 분야에서 선두주자로서 비즈니스의 미래를 형성합니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/codedash/crafting-tomorrows-solutions-today-the-codeda
 
 Codedash에서 우리는 단순히 기술 회사가 아닙니다. 오늘날 기업이 직면한 독특한 과제에 대처하는 맞춤형 솔루션을 만드는 데 헌신된 노련한 전문가들의 팀입니다. 우리의 미션은 조직이 장기적인 성공을 보장하는 확장 가능하고 적응 가능하며 미래지향적인 솔루션을 통합함으로써 기관을 더 강력하게 만드는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 우리의 철학: 협업과 민첩성
 
@@ -29,7 +39,18 @@ Codedash에서 우리는 단순히 기술 회사가 아닙니다. 오늘날 기�
 
 ## 우리의 솔루션: 미래를 위해 설계되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당사는 비즈니스 운영을 높이고 성장을 촉진하기 위해 설계된 혁신적인 제품 스위트를 제공합니다:
 
@@ -41,7 +62,18 @@ Codedash에서 우리는 단순히 기술 회사가 아닙니다. 오늘날 기�
 
 전문지식과 혁신성: 당사 팀은 기술과 혁신에 열정적인 전문가들로 구성되어 있습니다. 우리는 업계 동향을 선행하여 고객들에게 경쟁 우위를 제공하는 첨단 솔루션을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자 중심 디자인: 저희의 솔루션은 사용자를 염두에 두고 디자인되었습니다. 우리는 사용자 경험을 우선시하여 제품이 기능적일 뿐만 아니라 직관적이고 사용하기 즐겁도록 보장합니다.
 
@@ -51,7 +83,18 @@ Codedash에서 우리는 단순히 기술 회사가 아닙니다. 오늘날 기�
 
 우리가 미래를 바라보며, 우리의 비전은 기술 분야에서 가능한 한 한계를 뛰어넘기를 계속하는 것입니다. 우리는 디지털 전환의 선두에 서 있어 기업이 디지털 시대의 복잡성을 자신 있게 해결하도록 지원합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 우리의 여정에 참여하세요
 

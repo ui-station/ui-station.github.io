@@ -3,13 +3,12 @@ title: "내부 데이터 제품을 데이터 엔지니어로서 고려하는 방
 description: ""
 coverImage: "/assets/img/2024-05-18-HowtothinkaboutInternalDataProductsasaDataEngineer_0.png"
 date: 2024-05-18 15:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-HowtothinkaboutInternalDataProductsasaDataEngineer_0.png
 tag: Tech
 originalTitle: "How to think about Internal Data Products as a Data Engineer"
 link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-products-as-a-data-engineer-42cef9081ebf"
 ---
-
 
 # 나에 대해
 
@@ -19,7 +18,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 # 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재는 데이터 팀 인원의 급격한 감소와 데이터에서 가치 추출 능력의 감소 때문에 Data Products이 현재 핫한 주제입니다. 데이터를 제품으로 생각하거나 "데이터를 제품처럼 취급하기"는 데이터를 이해하고 관리하며 데이터 엔지니어링 팀이 비즈니스를 위해 생산하는 Data Products의 속도와 수용을 향상시키는 인기있는 접근 방식입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 다양한 강연, 소셜 미디어 게시물, 블로그 게시물 및 사고 리더십 자료들을 제외하고 데이터 제품은 본질적으로 간단한 개념입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이디어는 이중으로 이루어져 있어요. 첫 번째는 데이터에 제품 관리 원칙을 적용하는 것입니다. 작업 방식이 있습니다. 아래에 나열된 아이디어의 예시는 다음과 같아요:
 
@@ -45,7 +66,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 두 번째 아이디어는 데이터를 다른 사람에게 제공하는 서비스로 보는 대신에 제품으로 취급하는 것입니다. 이것은 Moody's나 Factset과 같은 기업에게는 훨씬 더 많은 의미를 갖게 됩니다. 그들의 시장은 데이터를 판매하는 것이기 때문에 이것은 훨씬 더 명확합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거의 모든 기업이 데이터 기업이 되고 있다는 말에 흥분을 느낄 수 있지만, 대부분의 경우에는 현실적이지 않거나 지속할 수 없는 것입니다. 따라서 더 큰 데이터 제품 흥행은 내부 데이터 제품에 집중되어 있거나 비즈니스의 다른 이해 관계자들을 위해 데이터 엔지니어링 팀이 하는 일에 대해 생각하는 것입니다.
 
@@ -55,7 +87,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 ## 제품으로서의 데이터를 고려하기 전에
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 팀은 서비스 데스크로 운영되며 요청을 수락합니다.
 - 데이터 팀이 제공하는 것: 테이블, 대시보드, 가끔 예측 모델
@@ -70,7 +113,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 이것이 잠재적으로 흥미로운 데이터 제품의 "작업 방식" 변화입니다. 자원소모가 더 많을 수 있지만, 더 적으면 더 나은 것이고, 자가 서비스 분석이 신화라면, 이 접근 방식은 많은 데이터 팀에게 더 나은 옵션일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 제품 예시
 
@@ -83,7 +137,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 - 해결책: 관련 정보가 담긴 대시보드, 그러나 특정 오류에 대한 관련 이해 관계자에 대한 자동 슬랙 알림도 함께 제공. 누가 무엇을 제어하는지에 관한 Confluence 문서화
 - 추가 기능: 전송된 알림 수, 대시보드 사용량, 및 파이프라인 비용 추적
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오케스트라에서는 "데이터 제품이란 무엇을 의미하는가"에 대한 의미에서, 우리가 이 중 하나를 가지고 있으며, 바로 위에 설명된 것과 똑같습니다.
 
@@ -93,7 +158,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 의사 결정이 필요할 때 이해관계자들을 알리기 위한 알림이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `<img src="/assets/img/2024-05-18-HowtothinkaboutInternalDataProductsasaDataEngineer_1.png" />`
 
@@ -105,7 +181,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 이러한 기능 집합과 서비스 데스크 스타일 메인에서 변경되는 프로세스는 데이터 제품 주도 접근 방식과 표준 데이터 기능 접근 방식의 차이입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 제품을 만드는 방법은 무엇인가요?
 
@@ -115,7 +202,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 ## 고가치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고가치 사용 사례를 선택하세요. 이상적으로 첫 번째 데이터 제품은 중요한 사람에게 중요한 기능을 제공하거나 중요한 문제를 해결해야 합니다. 초기 단계부터 데이터 제품의 가치를 증명하는 데 중요합니다.
 
@@ -125,7 +223,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 더 나은 예는 간단한 제품 사용 대시보드나 영업팀을 위한 지능형 분석이 될 수 있습니다. 후자의 예에서는 일반적으로 소수의 소스에서 데이터를 추출하여 내부 데이터 제품을 구축하는 원형 과정을 단순화할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 격리
 
@@ -135,7 +244,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 이상적으로는, 사람들이 익숙한 파이프라인을 선택해야 합니다. 이렇게 하면 결과물에 대한 이해도가 높으며 기대하는 이해 관계자가 무엇을 기대하는지에 대한 확신이 생깁니다. 이렇게 하면 더 빨리 제공할 수 있습니다(무엇을 제공하는지 알기 때문에)만 일반적인 가치를 빠르게 추가할 수도 있습니다(가치 있는 것으로 이미 알고 있는 것을 보강하게 됩니다). 다른 한편으로는, 완전히 새로운 일을 하지 않도록 노력해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 참여 독려
 
@@ -145,7 +265,18 @@ link: "https://medium.com/data-engineer-things/how-to-think-about-internal-data-
 
 생성적 인공지능이 이 구조에 매우 잘 맞는 것을 알 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI Chatbot와 같은 제품은 데이터 파이프라인을 통해 활성화됩니다. 비구조적 데이터를 수집하고 Generative AI를 사용하여 정리한 다음 이를 임베딩으로 변환할 수 있습니다.
 
@@ -155,7 +286,18 @@ AI Chatbot와 같은 제품은 데이터 파이프라인을 통해 활성화됩�
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 데이터 제품 주변에 왜 관심이 쏠렸는지와 그 의미에 대해 논의했습니다. 모든 기업이 데이터 기업으로 발전하는 것이 아니라 데이터 팀이 비즈니스 이해관계자를 위해 어떻게 일하는지에 초점을 맞추었습니다.
 
@@ -165,7 +307,18 @@ AI Chatbot와 같은 제품은 데이터 파이프라인을 통해 활성화됩�
 
 더 자세히 이야기하거나 생각을 나누고 싶다면 언제든지 알려주세요! DM은 열려 있어요 🌲
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 오케스트라에 대해 더 알아보기
 

@@ -3,13 +3,12 @@ title: "자바 가상 스레드가 플랫폼 스레드보다 느린 이유는 �
 description: ""
 coverImage: "/assets/img/2024-06-19-WhyaremyJavavirtualthreadsslowerthantheplatformthreads_0.png"
 date: 2024-06-19 21:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-WhyaremyJavavirtualthreadsslowerthantheplatformthreads_0.png
 tag: Tech
 originalTitle: "Why are my Java virtual threads slower than the platform threads?"
 link: "https://medium.com/ascend-developers/why-are-my-java-virtual-threads-slower-than-the-platform-threads-74612a1587f3"
 ---
-
 
 혹시 팀 애플리케이션 서비스에 기능을 구현하려다가 예상대로 되지 않은 적이 있나요? 저도 정확히 그런 일이 발생했어요!
 
@@ -20,13 +19,35 @@ link: "https://medium.com/ascend-developers/why-are-my-java-virtual-threads-slow
 
 플랫폼 스레드의 문제는 I/O 작업 완료를 기다리는 시간입니다. 해당 스레드가 다른 작업을 수행할 수 없어 기본적으로 아이들 상태가 됩니다. 이는 많은 동시 요청을 처리하는 응용 프로그램에게 특히 비효율적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 사진에서 보여지는 시나리오에서 플랫폼 스레드가 두 번 블록되어 프로그램이 크게 느려질 수 있습니다. 이는 흔히 발생하는 일입니다. 그러나 이러한 상황을 해결하기 위해 리액티브 프레임워크라 불리는 비차단 솔루션이 등장했습니다.
 
 Spring Boot은 Project Reactor를 기반으로 한 Spring WebFlux 스택을 제공합니다. Spring WebFlux를 사용하는 개발자들은 전체 개발 프로세스를 수정해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2017년, 자바 엔지니어들은 문제를 해결하기 위해 "프로젝트 룸"을 시작했습니다. 결국, 그들은 "가상 스레드"를 개발했습니다.
 
@@ -36,7 +57,18 @@ Spring Boot은 Project Reactor를 기반으로 한 Spring WebFlux 스택을 제�
 
 ![이미지](/assets/img/2024-06-19-WhyaremyJavavirtualthreadsslowerthantheplatformthreads_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 팀원이 점심 시간에 (블로킹 I/O)다른 플랫폼 스레드로 이동하여 소포 트럭이 중단되지 않고 여정을 계속할 수 있도록 하는 택배 회사의 전략을 상상해 보세요. 이 방식은 물류 운영 시간을 단축시키고 생산성을 높이며 회사를 경쟁력이 더 뛰어나게 만들었습니다.
 
@@ -46,11 +78,21 @@ Spring Boot은 Project Reactor를 기반으로 한 Spring WebFlux 스택을 제�
 
 Spring Boot에서 Java 가상 스레드를 활성화하려면 "application.properties"에 이 구성을 추가하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-spring.threads.virtual.enabled=true // 클릭 한 번으로 쉽게 설정 !!
+spring.threads.virtual.enabled = true; // 클릭 한 번으로 쉽게 설정 !!
 ```
 
 참고: 이 설정은 JDK 21 이상과 Spring Boot 3.2 이상을 필요로 합니다.
@@ -63,18 +105,29 @@ public class PerformanceTestController {
 
     @GetMapping("/test")
     public ResponseEntity<String> testPerformance() throws InterruptedException {
-    
+
         System.out.println("Sleeping ...");
         // CPU 바인드되지 않는 작업 시뮬레이션, 3초 동안 sleep
         Thread.sleep(3000);
-        
+
         return ResponseEntity.ok("테스트 완료");
     }
 
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Apache HTTP 서버 벤치마킹 도구를 사용하여 서비스 성능을 측정할 수 있어요
 
@@ -86,7 +139,18 @@ public class PerformanceTestController {
 ab -c 300 -n 1000 -r “http://localhost:8443/test"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - -c 300: 동시 요청 수입니다. 이 경우에는 서버를 동시에 폭격하기 위해 가상 사용자 [300]명이 시뮬레이션됩니다.
 - -n 1000: 최종적으로 실행될 총 요청 수입니다 [1000].
@@ -98,7 +162,18 @@ ab -c 300 -n 1000 -r “http://localhost:8443/test"
 
 # 실세계에서의 가상 스레드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 팀의 API 분석
 
@@ -115,7 +190,18 @@ ab -c 300 -n 1000 -r “http://localhost:8443/test"
 가상 스레드: 502.80 TPS, 평균 응답 시간은 66.54ms
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가상 스레드가 플랫폼 스레드보다 느리다고 테스트 결과에서 나왔다니, 무슨 실수를 한 걸까요?
 
@@ -125,7 +211,18 @@ ab -c 300 -n 1000 -r “http://localhost:8443/test"
 
 캐리어 스레드는 가상 스레드가 현재 실행 중인 플랫폼 스레드를 정의하는 또 다른 용어입니다. 핀닝은 가상 스레드가 플랫폼 스레드에 매핑되어 있는 상태를 말하며, 캐리어 스레드에 붙어서 떨어질 수 없는 상태를 묘사합니다. 이는 가상 스레드의 상태를 힙 메모리에 저장할 수 없기 때문에 발생합니다. 핀닝된 스레드는 다른 스레드가 동일한 플랫폼 스레드를 사용하는 것을 막습니다. 몇 가지 가능한 원인을 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 동기화된 블록 또는 메서드: 한 번에 한 스레드만 들어갈 수 있습니다. 다른 스레드들은 현재(실행 중인) 스레드가 나갈 때까지 차단됩니다. 경합 조건을 방지하고 데이터의 정확한 상태를 유지하기 위해 공유 리소스에 중단되지 않은 액세스가 필요합니다.
 
@@ -143,13 +240,24 @@ class MyService {
 
 MyService.java
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class MyService {
   public static void main(String[] args) {
     System.out.println(calculateFee(5, 3));
-  }  
+  }
   public static native int calculateFee(int a, int b);
   static {
     // Loads the native library from file named "nativemethod.c".
@@ -170,13 +278,23 @@ JNIEXPORT jint JNICALL Java_calculateFee (JNIEnv *env, jobject obj, jint a, jint
 
 - 외부 함수: 다른 프로그래밍 언어로 작성된 함수로서, Foreign Function Interface (FFI)를 통해 가상 스레드에 노출된 함수입니다. FFIs는 다른 언어로 작성된 코드들이 함께 동작할 수 없는 상황에서 사용됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public interface PythonFunctions extends Library {
-  /** 
-   * 이 정적 final 필드는 `PythonFunctions` 인터페이스의 싱글톤 인스턴스를 생성합니다. 
+  /**
+   * 이 정적 final 필드는 `PythonFunctions` 인터페이스의 싱글톤 인스턴스를 생성합니다.
    * 이는 `Library.getInstance` 메서드에서 인스턴스를 검색하고 이 인터페이스 유형으로 캐스팅합니다.
    */
   PythonFunctions INSTANCE = (PythonFunctions) Library.getInstance("python_functions");
@@ -191,7 +309,18 @@ public interface PythonFunctions extends Library {
 
 로그에는 가상 스레드 내에서의 메서드 호출의 스택 추적이 표시됩니다. 이 스레드는 JDBC(Java Database Connectivity) 및 특히 MySQL 연결과 상호 작용하는 메서드를 실행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주목할 점은 이러한 메서드 호출 중 몇 가지가 `= monitors:1` 표기를 포함하고 있어서 가상 스레드가 이 코드 실행 블록 내에서 계속 고정되어 있는 것을 나타낸다.
 
@@ -201,7 +330,18 @@ public interface PythonFunctions extends Library {
 
 다음 단계로 나아가는 내 선택지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - MySQL Connector/J 버전 9.0.0 이상으로 업그레이드하세요: 이 버전은 가상 스레드가 데이터베이스 상호 작용을 최적으로 수행하도록 합니다.
 - 새 라이브러리 탐험: 새 라이브러리를 찾아 새로운 코드를 작성하고 테스트해 보세요. 도전적이며 상당한 노력이 필요할 수 있습니다.

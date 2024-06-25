@@ -3,17 +3,14 @@ title: "AI Boogeyman 공포를 들추고 현실을 받아들이다"
 description: ""
 coverImage: "/assets/img/2024-05-20-AIBoogeymanexposingthefearsembracingthereality_0.png"
 date: 2024-05-20 21:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AIBoogeymanexposingthefearsembracingthereality_0.png
 tag: Tech
 originalTitle: "AI Boogeyman: exposing the fears, embracing the reality"
 link: "https://medium.com/ai-advances/ai-boogeyman-exposing-the-fears-embracing-the-reality-7d65e690cce5"
 ---
 
-
-
 ![AI Boogeyman](/assets/img/2024-05-20-AIBoogeymanexposingthefearsembracingthereality_0.png)
-
 
 작년 겨울, 나는 정보 디자인에 관한 세 번째 학년 대학 과목을 강의할 기회를 가졌어. 캐나다에서는 이러한 수업에 학생들의 다양한 조합을 찾을 수 있다는 게 꽤 보편적이야. 이 중엔 세 번 혹은 네 번 길 수 있는 프로그램(학사 및 학사 with Honours)을 마치는 마지막 해에 있는 학생들도 있고, 컴퓨터 과학, 수학, 심리학, 언어 등의 다양한 학부 출신 학생들도 있어. 특히 학제간 프로그램을 수료하고 있는 학생들이 늘어나는 추세인데, 이는 현재 학계에서 눈에 띄는 트렌드야.
 
@@ -21,7 +18,18 @@ link: "https://medium.com/ai-advances/ai-boogeyman-exposing-the-fears-embracing-
 
 이들 중 상당수는 디자인과 커뮤니케이션 분야에서의 커리어를 준비하고 있었는데, 기술 문서 작성과 사용자 경험(UX)과 같은 분야에 특히 관심이 많았어. 이러한 흥미진진한 토론 속에서 나는 밑바닥에 숨은 불안감에 민감해졌어. 그것은 'AI 보게이먼을 드러내는 것, 현실을 받아들이는 것'이라는 구절로 간결하게 표현될 수 있는 두려움이었어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 깨달음은 해당 주제에 대한 전용 블로그 토론이 필요하다는 점을 강조했습니다.
 
@@ -29,7 +37,18 @@ link: "https://medium.com/ai-advances/ai-boogeyman-exposing-the-fears-embracing-
 
 홍보 웹사이트에 대한 코멘터리는 새로운 AI를 활용한 비디오 'Rugby Titans'에 대한 논란을 일으켰고, 그에 대한 의문을 품는 이들 또는 소셜 미디어 애호가들의 "해터"라 불리는 사람들도 늘었다. 일부 코멘터는 AI를 활용하는 것이 스포츠를 홍보하는데 해로운 방향으로 흘러간다고 제안했는데, 특히 생성된 인물들이 모두 하얀 피부인데 스포츠계의 다양성으로 유명한 종목인데도 그렇다는 점을 고려해보라고 했습니다. 한 코멘터는 더 다양한 언어를 사용하며 이를 만든 사람을 "키보드와 함께 지하실에 있는 사람"으로 언급했고, 이것이 전통적인 창의성이 부여되지 않았다고 말했습니다. 다른 코멘트는 이렇습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 하나의 경우:
 
@@ -39,7 +58,18 @@ link: "https://medium.com/ai-advances/ai-boogeyman-exposing-the-fears-embracing-
 
 인공지능은 실제로 추상적인 기술 논쟁의 영역을 넘어 우리 일상속으로 그 존재를 느끼게 하고 있습니다. 기술로서, AI는 로봇이나 미래의 자동차의 영역을 훨씬 뛰어넘어 우리 집, 직장, 심지어 포켓에 든 장치들까지 침투하는 현실입니다. 그렇다면 그것이 일상인들에게 불길하게 그림자 속에 숨은 악랄한 힘으로 자초했던 이야기를 먹었던 평범한 사람들에게 미치는 영향은 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 인공지능의 실체를 분석해보기
 
@@ -49,7 +79,18 @@ link: "https://medium.com/ai-advances/ai-boogeyman-exposing-the-fears-embracing-
 
 Netflix나 Prime과 같은 스트리밍 서비스에서 다음에 뭘 보아야 할지 제안하는 추천 엔진부터, 우리의 스마트 홈을 관리하는 가상 어시스턴트에 이르기까지, AI는 우리의 일상 기술 상호작용에서 많은 편리함과 개인화된 경험을 주도하는 조용한 엔진입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스마트 홈
 
@@ -59,7 +100,18 @@ Netflix나 Prime과 같은 스트리밍 서비스에서 다음에 뭘 보아야 
 
 AI가 우리의 집을 성실히 관리하는 동시에 많은 양의 데이터를 수집합니다. 우리 집에서의 AI 역할에 대한 진실은 개인화된 자동화의 럭셔리를 위해 우리의 일부 개인 정보를 거래한다는 점입니다. 중요한 것은 정보 동의와 개인 정보를 존중하고 보호하는 견고한 보안 조치에 있습니다. AI 집 동료의 범위를 이해하고 설정하여 우리가 넘지 않는 한 우리를 봉사하며, 편리함과 기밀 보장을 유지하면서 스마트 홈을 안전하게 유지할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 직장에서의 AI
 
@@ -69,7 +121,18 @@ AI가 육체적인 일을 대신 하면서 직원들은 인간의 창의력과 �
 
 # 주머니 속의 AI와 웨어러블 기기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 스마트폰과 웨어러블 기기는 지금 우리와 AI 기술 간의 가장 개인적인 접촉점이 되었어요. 하지만 이 관계는 널리 보급되어 있어서 종종 간과되곤 해요. 이러한 기기들에서 AI의 역할을 분석하면 우리의 일상 활동을 향상시키는 여러 기능이 나타나요: 우리 타자 습관을 학습하여 의사 소통을 간소화하는 예측 텍스트, 우리 명령에 대답할 준비가 된 가상 비서, 우리의 생체 신호를 주의 깊게 추적하고 더 건강한 생활을 추천해주는 건강 모니터링 애플리케이션 등이 있어요.
 
@@ -79,7 +142,18 @@ AI를 적용한 우리의 기기는 우리에게 맞춤형 경험을 제공하�
 
 AI가 더 큰 선순환에 기여할 수 있는 가능성은 건강 및 교육 분야와 같은 분야에서 가장 선명하게 볼 수 있어요. 여기서 혁신뿐만 아니라 웰빙과 사회 발전에 미치는 심오한 영향에 대해 이야기할 수 있죠. 예를 들어, 의료 분야에서 AI는 암과 같은 질병을 더 정확하게 그리고 초기 단계에서 감지할 수 있는 고급 진단 도구로 분야를 혁신하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 교육에서, 인공지능이 제작한 맞춤형 학습 경험은 학생들의 수준에 맞추어 제공되어 학습 속도에 맞게 적응하며 발전하는 요구 사항에 맞게 콘텐츠를 맞춤화하여 포괄적이고 효과적인 교육 환경을 조성합니다. 그러나 이러한 민감한 영역에서 인공지능을 적용하는 것은 상당한 제약과 윤리적 고려 사항이 수반됩니다. 우려는 AI의 효능뿐만 아니라 그 권장 사항 및 결정의 함의에 대한 것입니다.
 
@@ -89,7 +163,18 @@ AI가 더 큰 선순환에 기여할 수 있는 가능성은 건강 및 교육 �
 
 인공지능의 창조적 영역으로의 침투는 예술가의 팔레트가 기술에 의해 끝없이 확장되는 새 시대를 예고합니다. 인공지능은 더 이상 음악, 미술, 글쓰기 영역에서 잠잠한 관전자가 아니라 활발히 참여하는 주체가 되었습니다. 알고리즘은 심포니를 작곡하고 멋진 시각적 작품을 생성할 수 있고, 인간 감정과 공감대를 형성하는 서사를 창작할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 이 급속히 발전하는 능력 속에서는 인공지능 지원 창작과 원본성의 성역 사이의 경계에 대한 숙고가 필요합니다. 논쟁은 저작권과 창의성의 본질에 관한 질문을 중심으로 전개되고 있습니다: 기계가 창의적일 수 있을까요, 아니면 인간의 창의력을 단지 보완할 뿐인가요? 이 새로운 세상에서 예술적 과정이 재검토되고, 원작의 정의가 진화 중에 있음을 확인할 수 있습니다 — 최근 'Drake'와 'The Weeknd'의 목소리를 모방한 인기를 끌었던 인공지능 히트곡 "Heart on My Sleeve"의 저작권 문제만 언급해도 충분합니다. 이러한 사건을 포함하여 이와 유사한 다른 사례들은 우리에게 AI와의 권리 사이의 상호작용을 어떻게 이해해야 하는지 강요합니다. AI가 음악가에게 화음 진전을 제안하거나 작가에게 서술 가능성을 제공할 수 있다 한들, 인간 예술가는 이러한 제안을 의미와 맥락과 함께 부여함으로써 창의적 과정을 소유합니다. 이 상호협력은 디지턼 시대에 창의성을 다시 생각하도록 우리에게 도전을 던지며, 다음을 인식하게 됩니다:
 
@@ -99,7 +184,18 @@ AI가 더 큰 선순환에 기여할 수 있는 가능성은 건강 및 교육 �
 
 개발자들은 이제 더 다양한 데이터셋을 사용하여 AI를 학습시키고, 편향을 식별하고 보정할 수 있는 알고리즘을 설계하고 있습니다. 게다가, AI의 윤리적 배치를 안내하기 위해 윤리학자와 사회학자가 포함된 다학제적 팀에 대한 강조가 높아지고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 투명성 또한 매우 중요합니다. AI 시스템이 결정에 도달한 방식과 그 이유를 이해하는 것은 그 속에 내재된 편견을 식별하는 데 도움이 될 수 있습니다. 이러한 노력은 국제 표준과 규제의 지속적인 발전과 결합하여 AI 시스템이 공정하게 작동하도록 보장하기 위한 것입니다. 목표는 더 똑똑한 AI를 구축하는 것뿐만 아니라, 우리가 준수해야 할 최고의 윤리 기준을 반영한 시스템을 형성함으로써 우리 삶의 기술에 대한 신뢰와 진실성을 육성하는 것입니다.
 
@@ -109,7 +205,18 @@ AI가 더 큰 선순환에 기여할 수 있는 가능성은 건강 및 교육 �
 
 실시간으로 교통 흐름, 에너지 소비, 비상 서비스를 최적화하는 AI가 스마트 시티를 상상해보세요. 건강관리 분야에서 AI가 세계 건강 결과 데이터베이스를 기반으로 맞춤형 치료법을 구상하는 경우를 상상해보세요. 교육 분야에서 AI의 잠재력을 고려해보세요. AI는 학습을 맞춤화할 뿐만 아니라 각 학생의 독특한 강점을 식별하고 발전시키기도 합니다. 이러한 것들은 멀리서 꿈꾸는 상황이 아닌, 당신도 닿을 수 있는 범위 내의 발전이며, 흔한 것을 특별한 것으로 변화시키기 위해 준비가 마련되어 있는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미래에 인공지능이 보편화될 준비를 하는 데에는 적응적인 마음가짐과 선제적인 조치가 필요합니다. 교육 시스템은 개인들이 인공지능과 협업할 수 있는 기술을 갖추도록 진화해야 하며, 인공지능이 어떻게 작동하며 어떻게 긍정적 결과로 이끌 수 있는지에 대해 이해할 수 있도록 지원해야 합니다.
 
@@ -119,7 +226,18 @@ AI가 더 큰 선순환에 기여할 수 있는 가능성은 건강 및 교육 �
 
 자칭 '테크 휴머니스트'인 저는 다른 사람들의 불안과 많은 이들이 겪고 있는 공포에 매우 민감하며, 그것이 동기부여와 계획에 영향을 미친다는 점을 잘 알고 있습니다. 알고리즘에 의해 점점 더 조정되는 세상에서, 인공지능을 받아들일 때 우리의 인간성을 단호하게 지키는 것은 동시에 도전과 기회가 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI를 활용하여 작업 자동화를 수행하면 배우기, 창의성을 즐기거나 단순히 휴식을 취하고 가족과 연결하는 데 투자할 수 있는 시간을 되찾을 수 있습니다. AI는 우리의 일정을 관리하고 건강 목표를 추적하는 데 도움을 주며, 새로운 언어를 배우는 데도 도움을 줌으로써 우리의 성장과 발전 능력을 높일 수 있습니다. 그러나 AI와 우리의 삶을 뒤섞으면서 개인 정보 보호와 주체성을 유지하는 것이 중요해집니다. 이를 보호하기 위한 전략에는 AI 시스템 작동 방식 및 수집하는 데이터의 성격에 대해 정기적으로 정보를 습득하고, 장치 및 애플리케이션의 개인 정보 보호 설정을 정기적으로 검토하고 기술 기업으로부터 개인 데이터 사용에 대한 투명성과 통제를 지원하고 요구하는 것이 포함됩니다.
 
@@ -127,7 +245,18 @@ AI가 우리의 삶을 어디와 어떻게 도와야 하는지를 선택적으�
 
 내 소개: 안녕하세요, 제 이름은 Kem-Laurin이고, Human Tech Futures의 공동 창업 팀 중 한 명입니다. 현재 워터루 대학교에서 박사 학위를 취득 중입니다. 제 연구는 시민들의 데이터가 수집되고 활용되는 현대 사례 연구(사법)를 통해 정체성 구축에 관한 것입니다. 데이터가 불법적으로 수집되었는지 의도적으로 공유되었는지에 따라 결과적인 알고리즘 구성은 정보를 통해 정량화된 사용자들에게 엄청난 권력을 행사합니다. 제 연구 목표는 (1) 비판적 이해를 개발하여 (2) 제 공학 설계 시스템에서 사용할 구체적 휴리스틱 원칙을 생성하는 데 도움이 되는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 주요 HCD 전략가 및 디자인 사고 코치로 활동하고 있습니다. 이전에는 블랙베리 Autodesk의 대규모 디자인 및 연구팀을 이끌었으며 독일의 시멘스에서도 일했습니다. 여가 시간에는 열대 분위기의 다층 정원을 만들면서 135파운드짜리 GSD가 지켜보고 있습니다. 오늘은 세계가 현재의 모습으로 변하기 전 25개 이상의 나라를 여행한 기회를 가졌다는 점이 축복이라고 느낍니다. 다양한 인간 경험을 쌓을 수 있었습니다. 정기적으로 세계를 더 나은 곳으로 만들고자 하는 비판적 사고 능력을 갖춘 HCD 연구자들을 위한 적극적인 멘토로 활동하며 학생들에게 기여하고 있습니다.
 

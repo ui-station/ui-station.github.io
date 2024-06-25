@@ -3,14 +3,12 @@ title: "한 사람이 인터넷의 보안을 구했다"
 description: ""
 coverImage: "/assets/img/2024-05-20-OnePersonSavedTheSecurityoftheInternet_0.png"
 date: 2024-05-20 21:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-OnePersonSavedTheSecurityoftheInternet_0.png
 tag: Tech
 originalTitle: "One Person Saved The Security of the Internet"
 link: "https://medium.com/@billatnapier/one-person-saved-the-security-of-the-internet-9e8ed6d40df6"
 ---
-
-
 
 ![Image](/assets/img/2024-05-20-OnePersonSavedTheSecurityoftheInternet_0.png)
 
@@ -19,9 +17,19 @@ link: "https://medium.com/@billatnapier/one-person-saved-the-security-of-the-int
 그래서 누군가 (아니면, 더 정확히는 일부 국가/법 집행 기관)가 인터넷에 백도어를 설치하려고 했으며, 방송 매체는 거의 전혀 이야기에 언급하지 않았습니다. 놀랍게도, 사이버 보안 정보 기관 중 많은 기관들은 기본적으로 조언만 반복하는 것 외에는 조용했습니다. 루머를 퍼뜨리고 싶지 않지만... [거기로 가면 안 되겠죠, "그들"이 감시 중일 수 있으니까].
 
 ## 안드레스 프로인트
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사회공학의 이야기이자 APT(Advanced Persistent Threat)의 가장 좋은 예시 중 하나로, 뛰어난 기술력을 자랑하는 사례입니다. 그리고 마치 Scooby Doo에서 말했던 것처럼, "그 성가신 개발자가 방해 안 한다면 우리는 성공했을 거야" 그랬죠. 그 성가신 개발자는 Microsoft의 소프트웨어 엔지니어인 38세의 Andres Freund입니다. 그의 주요 업무는 PostgreSQL 소프트웨어를 개발하는 것입니다.
 
@@ -31,7 +39,18 @@ Andres는 이를 통해 어떤 소프트웨어 도구가 왜 느린지에 대해
 
 문제는 LZMA라는 일반적으로 사용되는 압축 방법과 관련이 있으며 XZ 프로젝트에서 제공됩니다. 성공적으로 공격자가 백도어를 설치하여 원격으로 제어할 수 있는 시스템에 침입할 수 있었습니다. 이제 취약점 등급이 10으로 지정된 CVE–2024–3094로 정의되었습니다. 악의적인 코드는 이제 "Jia Tan"이라는 위협 요소에게로 연결되었는데, 그의 GitHub 계정은 2021년부터 거슬러 올라가며, 2022년에 처음 XZ 프로젝트에 참여했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것은 악의를 품은 천재가 인터넷의 핵심 부분에 침투하여 후문을 삽입하는 할리우드 시나리오 중 하나 같은 느낌이었죠. 그 후 그들은 누구도 감지되지 않고 모두의 비밀 통신을 청취할 수 있습니다. 하지만 이것은 공상 과학이 아니에요. 실제로 "Jia Tan"이라는 사람이 SSH에 후문을 만들었고 거의 미궁에 빠져들 뻔했습니다. 그래서 하트블리드 이후 가장 심각한 취약점인 XZ 후문을 조사해봅시다.
 
@@ -39,8 +58,18 @@ XZ 취약점은 CVSS 값이 10으로 평가된 심각한 결함입니다. 이것
 
 Jia Tan은 이 라이브러리에 후문을 삽입한 사람 또는 그룹입니다. 그들은 코드에 대한 사회 공학 공격에 참여했습니다. 이 공격은 수년 동안 진행된 것으로 보입니다. 많은 사람들이 이 이메일이 인공지능에 의해 생성된 것처럼 보인다고 관찰했고, 아마도 국가 주체의 활동을 의미하는 표시입니다. 목표는 Linux 서버이며 취약점은 마이크로소프트 직원 (PostgreSQL 개발자인 Andres Freund)에 의해 발견되었습니다. [여기]에서 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![One Person Saved The Security of the Internet](/assets/img/2024-05-20-OnePersonSavedTheSecurityoftheInternet_2.png)
 
@@ -50,8 +79,18 @@ Jia Tan은 이 라이브러리에 후문을 삽입한 사람 또는 그룹입니
 
 Jia의 최초의 중요한 업데이트 커밋은 이 게시물 이후에 발생했으며, Jia가 저자로 정의되었습니다. 그럼에도 불구하고 Jigar는 여전히 느린 업데이트를 불평했습니다. Dennis Ens를 비롯한 다른 사람들도 Lasse에게 압박을 가하였습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 시점에서 Lasse는 Jia가 프로젝트에서 더 큰 역할을 맡아야 한다고 보고했으며, Jigar는 계속해서 Jia가 더 큰 역할을 맡아야 한다고 주장했습니다. 이후 Lasse는 Jia에게 저장소 관리자의 역할을 맡길 것을 허락했습니다. Jigar나 Dennis는 인터넷 상에서 찾을 수 없으며, Jia가 액세스를 얻도록 노력한 가짜 ID일 가능성이 높습니다. 그러나 2022년 9월에는 Jia가 5.4.0 릴리스를 개괄하고, 2022년 11월까지 Lasse가 README에 프로젝트 관리자로 Lasse Collin과 Jia Tan이 있다고 기술했습니다.
 
@@ -61,7 +100,18 @@ GitHub 커밋에서 Jia의 첫 흔적은 2024년 1월에 나타났으며, 버전
 
 ![image](/assets/img/2024-05-20-OnePersonSavedTheSecurityoftheInternet_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 완벽한 10점 평가
 
@@ -71,7 +121,18 @@ GitHub 커밋에서 Jia의 첫 흔적은 2024년 1월에 나타났으며, 버전
 
 배키도어는 xz의 tarballs(버전 5.6.0부터)에서 발견되었으며, 감지를 피하기 위해 은폐되어 있었습니다. 이는 liblzma 라이브러리 내의 코드를 수정하고 데이터를 가로채고 수정하는 데 사용됩니다. 하나 주목할 만한 발견은 OpenSSH 데몬이 해당 배키도어의 영향을 받았지만, 직접적으로 liblzma에 연결되어 있지 않았다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 xz 코드는 XZ 파일을 생성하고 데이터 스트림과 블록을 통합하며, 읽을 때 빠른 무작위 액세스를 지원합니다. 이는 lzma 모듈 내에서 지원되지 않으며, 무작위 액세스 쿼리에서 이전 블록을 모두 읽어야 합니다. 여기서 예제가 있습니다:
 
@@ -94,7 +155,18 @@ xz와 관련된 많은 GitHub 저장소들이 오프라인이거나 비활성화
 
 이제 table 태그를 Markdown 형식으로 바꿨습니다. 페이지를 다시 열어보시면 변경된 내용을 확인할 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The seriousness of the vulnerability cannot be emphasized enough. Anthony Weems successfully reverse engineered the backdoor and developed a proof-of-concept exploit for Remote Code Execution (RCE) [here]:
 
@@ -104,6 +176,17 @@ Under certain conditions, an external attacker could bypass sshd authentication 
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 GitHub를 운영하고 다른 사람들이 참여하도록 하려면, 비디오 링크를 통해 직접 상대방과 대화하고 그들의 신원을 확인하세요. APT에서는 자주 시간, 자원 및 전문지식을 가진 위협 요소들을 볼 수 있으며, 그들은 쉽게 어떤 시스템이든 침투할 수 있습니다. AI의 급부상으로, 이 모든 것이 몇 단계 높아지고 영상 및 오디오 사용이 공격의 일부로서 활용될 것을 볼 것입니다.

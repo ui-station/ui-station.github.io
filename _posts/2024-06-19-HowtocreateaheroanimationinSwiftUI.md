@@ -3,13 +3,12 @@ title: "SwiftUI에서 히어로 애니메이션을 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtocreateaheroanimationinSwiftUI_0.png"
 date: 2024-06-19 11:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtocreateaheroanimationinSwiftUI_0.png
 tag: Tech
 originalTitle: "How to create a hero animation in SwiftUI?"
 link: "https://medium.com/mobile-app-circular/how-to-create-a-hero-animation-in-swiftui-154c6c6980ef"
 ---
-
 
 ## matchedGeometryEffect를 사용하여 최초 인상을 남기세요
 
@@ -19,7 +18,18 @@ link: "https://medium.com/mobile-app-circular/how-to-create-a-hero-animation-in-
 
 ![hero animation](https://miro.medium.com/v2/resize:fit:1400/1*aSTfSWLDnjQlp7QIOzyaDQ.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 앱 중 하나에서는 우리 자신의 디자인을 위해 이 애니메이션을 재현하고 싶었습니다. 이를 위해 modifier matchedGeometryEffect을 사용했습니다. 이 흥미로운 modifier을 사용하는 방법에 대해 약간의 통찰력을 제공하고자 합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/mobile-app-circular/how-to-create-a-hero-animation-in-
 
 ![애니메이션](https://miro.medium.com/v2/resize:fit:1400/1*99ZmB-w_SJZVhhiPTLqFTQ.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 state 변수인 shouldAnimate에 따라 두 가지 모양 중 하나를 보여주는 뷰가 표시됩니다. withAnimation(_:_:) 함수에서는 뷰를 탭하는 제스처에 응답하여 이 상태를 전환합니다. 이렇게 함으로써 두 직사각형 간 전환할 때 전환 효과를 제공합니다.
 핵심은 단순히 애니메이션만 사용하는 대신 matchedGeomeryEffect를 활용하여 두 모양 간 부드러운 전환을 이루는 것입니다.
@@ -37,7 +58,7 @@ state 변수인 shouldAnimate에 따라 두 가지 모양 중 하나를 보여�
 ```js
 @Namespace var animation
 @State private var shouldAnimate = false
-    
+
 var body: some View {
     VStack {
         if shouldAnimate {
@@ -61,7 +82,18 @@ var body: some View {
 
 애플은 해당 수정자를 다음과 같이 정의합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은, 수정자가 두 뷰의 크기와 위치를 동기화하여 하나가 사라지고 다른 하나가 나타날 때 두 뷰를 보간하고 두 뷰가 동일한 것처럼 보이게 합니다. 한 위치와 크기에서 다른 위치와 크기로 이동하는 것처럼 보입니다.
 
@@ -73,7 +105,18 @@ var body: some View {
 
 다음으로, matchedGeometryEffect를 두 사각형에 적용하겠습니다. 여기서, 두 사각형에 동일한 id를 설정하여 서로 일치시킵니다. 그리고 이제 우리의 네임스페이스를 할당합니다. 추가로, 크기, 위치 또는 둘 다(기본값)에 대한 일치 여부를 정의하기 위해 매개변수 속성을 정의할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 .matchedGeometryEffect(id: "shape", in: animation)
@@ -89,7 +132,18 @@ var body: some View {
 - 같은 id를 사용하여 matched 되어야 하는 뷰에 modifier를 첨부
 - animation 블록 내에서 상태 변경하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 인상적인 히어로 애니메이션 구현
 
@@ -99,7 +153,18 @@ var body: some View {
 
 이를 달성하기 위해, 우리는 먼저 Card 및 CardDetail 뷰를 구현하고, 상태 변수인 isShowingDetail을 조건으로 하는 if-else 블록 내에 삽입했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 우리는 네임스페이스를 만들고 Card와 CardDetail 뷰로 변수를 전달했습니다. Card 뷰 내에서 우리는 카드를 탭했을 때 바인딩을 true로 설정하기 위해 onTapGesture를 추가했는데, 이는 암시적 애니메이션으로 수행됩니다. CardDetail 뷰에서는 닫기 버튼을 탭했을 때 바인딩을 false로 설정했습니다.
 
@@ -107,7 +172,7 @@ var body: some View {
 struct ContentView: View {
     @State private var isShowingDetail = false
     @Namespace var animation
-        
+
     var body: some View {
         ZStack {
             if isShowingDetail {
@@ -132,7 +197,18 @@ struct ContentView: View {
 - 코너 반경과 모양
 - 텍스트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발 중에 우리는 Apple 문서에서 설명하지 않는 modifier의 독특한 특성을 발견했습니다. 이러한 특성에 대해 토론하고 우리의 경험을 공유하고 싶습니다.
 
@@ -147,7 +223,18 @@ Image("header")
     .frame(height: 240)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 애니메이션을 자세히 정의하기
 
@@ -163,7 +250,18 @@ Image("header")
 
 ## 3. 텍스트 크기는 기본적으로 애니메이션화되지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 예시에서는 카드가 열릴 때 텍스트 크기가 더 큰 글꼴 크기로 변경됩니다. 이러한 애니메이션은 크기가 변경될 때 정확히 무엇을 해야 하는지 알아야 해서 더 많은 제어가 필요합니다. 그래서 우리는 matchedGeometryEffect를 animatable text와 결합해야 했습니다. 이를 위해 Hacking with Swift에서 AnimatableSystemFontModifier를 사용하여 전환 중 폰트 크기를 애니메이트했습니다.
 
@@ -172,7 +270,7 @@ Image("header")
 ```swift
 struct AnimatableTitle: View {
     let isAppeared: Bool
-    
+
     var body: some View {
         Text("Learning: Do a\nSwiftUI tutorial")
             .animatableSystemFont(size: isAppeared ? 32 : 16, weight: .bold)
@@ -194,7 +292,18 @@ AnimatableTitle(isAppeared: isAppeared)
 
 ## 4. 적절한 전환 스타일
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 일치하는 뷰에 matchedGeometryEffect를 적용한 후, 전환 스타일을 .scale()로 설정합니다. SwiftUI에게 애니메이션을 혼합하는 것이 아니라 크기를 조절하도록 하기 위한 조치입니다. 이로써 큰 차이를 만들어냅니다!
 
@@ -207,7 +316,18 @@ Card(animation: animation)
 
 matchedGeometryEffect는 한 뷰에서 다른 뷰로의 전환을 애니메이션화하는 강력한 수정자입니다. 이 수정자를 사용하면 멋진 히어로 애니메이션을 만들 수 있습니다. 그러나 이 수정자에는 Apple 문서에서 정의되지 않은 일부 특정 특성이 있습니다. 우리가 제공한 내용이 여러분의 고유한 히어로 애니메이션 구현에 도움이 되었으면 좋겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 코드의 세부 사항에 관심이 더 있다면, GitHub를 확인해보세요:
 

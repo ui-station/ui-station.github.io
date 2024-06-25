@@ -10,7 +10,6 @@ originalTitle: "SwiftUI Photo Picker App with PhotosUI"
 link: "https://medium.com/@rizal_hilman/swiftui-photo-picker-app-with-photosui-09cf032ac434"
 ---
 
-
 ![이미지](/assets/img/2024-05-27-SwiftUIPhotoPickerAppwithPhotosUI_0.png)
 
 SwiftUI와 PhotosUI는 iOS 앱에서 풍부하고 인터랙티브한 사용자 인터페이스를 만드는 강력한 도구를 제공합니다. 이 튜토리얼에서는 사용자가 사진 라이브러리에서 사진을 선택하고 표시할 수 있는 앱을 만들겠습니다.
@@ -21,8 +20,18 @@ SwiftUI와 PhotosUI는 iOS 앱에서 풍부하고 인터랙티브한 사용자 �
 - 프로젝트의 이름을 지정합니다 (예: "PhotoPickerApp").
 - 사용자 인터페이스로 SwiftUI를 선택하고 프로그래밍 언어로 Swift를 선택해야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 코드 설명
 
@@ -36,7 +45,18 @@ import PhotosUI
 - SwiftUI: 사용자 인터페이스를 구축하기 위한 프레임워크입니다.
 - PhotosUI: 사진 및 비디오 선택 및 관리를 위한 프레임워크입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 2: 상태 변수 정의
 
@@ -56,7 +76,18 @@ struct ContentView: View {
 
 ## 단계 3: 메인 뷰 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 var body: some View {
@@ -92,7 +123,18 @@ private var photoPickerSection: some View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - PhotosPicker: 사진을 선택하는 UI 구성 요소입니다.
 - selection: `selectedPhotos`에 바인딩됩니다.
@@ -121,7 +163,18 @@ private var imagesSection: some View {
 - Image(uiImage:): 각 이미지를 표시합니다.
 - .resizable(), .scaledToFit(), .frame(maxWidth: .infinity), .clipShape(), .padding(): 이미지를 스타일링합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 6: 선택한 사진 불러오기
 
@@ -170,7 +223,18 @@ private func loadSelectedPhotos() {
 
 ## 단계 7: 뷰 미리보기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # Preview {
@@ -184,8 +248,18 @@ private func loadSelectedPhotos() {
 
 이제 프로젝트를 시뮬레이터나 실제 장치에 실행하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:720/1*AtvjZ8d79WvKb85R-jBVVg.gif)
 
@@ -195,8 +269,18 @@ private func loadSelectedPhotos() {
 
 즐거운 코딩되세요!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 완성된 코드
 

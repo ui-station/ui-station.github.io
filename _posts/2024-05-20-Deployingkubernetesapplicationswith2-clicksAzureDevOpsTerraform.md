@@ -3,13 +3,12 @@ title: "2클릭으로 Kubernetes 애플리케이션 배포하기  Azure DevOps, 
 description: ""
 coverImage: "/assets/img/2024-05-20-Deployingkubernetesapplicationswith2-clicksAzureDevOpsTerraform_0.png"
 date: 2024-05-20 17:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-Deployingkubernetesapplicationswith2-clicksAzureDevOpsTerraform_0.png
 tag: Tech
 originalTitle: "Deploying kubernetes applications with 2-clicks | Azure DevOps , Terraform"
 link: "https://medium.com/@geralexgr/deploying-kubernetes-applications-with-2-clicks-azure-devops-terraform-944fe008a9cb"
 ---
-
 
 제목을 보고 클릭베이트일 것이라고 생각할 수 있지만, 이 기사를 끝까지 읽어보는 것이 좋습니다. 인프라를 코드로 생성하면 Azure DevOps와 테라폼을 사용하여 k8s 애플리케이션을 배포하는 것이 매우 쉬워질 수 있음을 확인할 수 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@geralexgr/deploying-kubernetes-applications-with-2-cl
 
 ![이미지](/assets/img/2024-05-20-Deployingkubernetesapplicationswith2-clicksAzureDevOpsTerraform_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트 구조는 아래 그림과 같이 구성되어 있습니다.
 
@@ -30,10 +40,20 @@ link: "https://medium.com/@geralexgr/deploying-kubernetes-applications-with-2-cl
 
 예제를 시도해 보려면 먼저 Azure DevOps 내에 변수 그룹을 생성하고 두 가지 값을 저장해야 합니다. 첫 번째 값은 Azure DevOps 리소스를 만들 때 사용할 비밀 개인 액세스 토큰입니다. 두 번째 값은 Azure DevOps 조직의 URL입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 마크다운 형식으로 변경한 코드입니다:
-
 
 ![Deploying Kubernetes applications with 2 clicks Azure DevOps Terraform](/assets/img/2024-05-20-Deployingkubernetesapplicationswith2-clicksAzureDevOpsTerraform_2.png)
 
@@ -44,8 +64,18 @@ link: "https://medium.com/@geralexgr/deploying-kubernetes-applications-with-2-cl
 코드는 Github에 호스팅되어 있습니다.
 https://github.com/geralexgr/globalazuregreece2024
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://blog.geralexgr.com에 2024년 5월 19일에 원래 게시되었습니다.
 더 많은 기사를 보려면 내 계정을 팔로우해보세요. Medium의 모든 이야기에 완전 액세스하려면 회원이 되어주세요.

@@ -3,13 +3,12 @@ title: "당신의 Git 히스토리 정리하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-SanitisingYourGitHistory_0.png"
 date: 2024-05-17 20:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-SanitisingYourGitHistory_0.png
 tag: Tech
 originalTitle: "Sanitising Your Git History"
 link: "https://medium.com/gitconnected/sanitising-your-git-history-67558cbcc117"
 ---
-
 
 2005년에 창설된 이후 Git은 버전 관리 시스템(VCS)의 왕으로 부상했습니다. 빠르고 간단하며 분산 속성을 갖춘 Git은 두 대 혁신적인 클라우드 VCS 제공업체인 GitHub와 GitLab의 채택과 함께 다른 VCS를 대체했습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/sanitising-your-git-history-67558cbcc117"
 
 Git을 처음 사용하는 경우, 계속하기 전에 여기에서 Git 소개를 읽어보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-SanitisingYourGitHistory_0.png" />
 
@@ -29,7 +39,18 @@ Git(또는 다른 VCS)의 아름다움은 버전 내역에 있습니다. 그것�
 
 <img src="/assets/img/2024-05-17-SanitisingYourGitHistory_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이 큰 파일은 feature 브랜치 1에서 처음 소개되었고 사용자 1에 의해 마스터 브랜치로 병합되었습니다.
 - 마스터 브랜치는 사용자 2에 의해 feature 브랜치 2로 쪼개졌습니다.
@@ -42,7 +63,18 @@ Git(또는 다른 VCS)의 아름다움은 버전 내역에 있습니다. 그것�
 
 # Git 히스토리 프로파일링
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저장소의 Git 기록은 숨겨진 폴더 .git에 저장됩니다. 로컬로 저장소의 사본을 복제하고 다음 명령을 실행하여 그 크기를 빠르게 확인할 수 있습니다. 이 Git 기록이 약 416Mb임을 알 수 있습니다.
 
@@ -64,7 +96,18 @@ Git을 프로파일링하는 훌륭한 도구는 git-sizer라는 도구를 사�
 brew install git-sizer
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저장소로 이동해서 다음 명령어를 실행해주세요.
 
@@ -126,7 +169,18 @@ git-sizer --verbose
 | * 서브모듈 수         [10] |     2     |                                |
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Git 히스토리 삭제하기
 
@@ -144,10 +198,21 @@ git remote -v
 
 여기에 파일이나 텍스트를 삭제하는 몇 가지 일반적인 예시 명령어를 포함했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 특정한 절대 파일 이름을 가진 파일을 삭제하는 방법
-- (*)를 사용하여 특정 유형의 모든 파일을 삭제하는 방법
+- (\*)를 사용하여 특정 유형의 모든 파일을 삭제하는 방법
 - 실수로 패스워드를 커밋한 경우와 같이 파일이나 스크립트에서 특정 텍스트를 대체하는 방법.
 
 ```js
@@ -166,7 +231,18 @@ git filter-repo --replace-text <(echo "mypassword==>REPLACED") --force
 
 완료되면 정리된 복사본을 원격 저장소에 푸시할 수 있습니다. 이 도구는 안전상의 이유로 git 원격 URL을 자동으로 제거합니다. 따라서 다시 추가해야 합니다. 그런 다음 기존 브랜치를 원격에 강제로 푸시할 수 있습니다. 다른 브랜치가 있는 경우 체크아웃하여 그것들도 푸시해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # git filter-repo를 실행한 후 원격 저장소를 다시 추가하세요
@@ -186,8 +262,18 @@ git push --set-upstream origin <branch> --force
 
 Git 해시는 병합/풀 요청, Git 태그 또는 릴리스와 같은 VCS 플랫폼에서 참조로 사용됩니다. 이들은 작동하지 않고 특히 Git 히스토리에서 깊숙이 포함된 것을 제거하고 싶은 경우 문제가 될 수 있습니다. 중요하다면 저장소의 복사본을 만드는 것이 좋습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요약
 

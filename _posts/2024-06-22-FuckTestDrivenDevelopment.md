@@ -3,13 +3,12 @@ title: "테스트 주도 개발TDD을 피해야 하는 이유"
 description: ""
 coverImage: "/assets/img/2024-06-22-FuckTestDrivenDevelopment_0.png"
 date: 2024-06-22 23:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-FuckTestDrivenDevelopment_0.png
 tag: Tech
 originalTitle: "Fuck Test Driven Development"
 link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9"
 ---
-
 
 ![이미지](/assets/img/2024-06-22-FuckTestDrivenDevelopment_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 
 # 서식지
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 기사에서는 역사, 사회학, 심리학 등과 같은 학문에 크게 의존하고 있어요. 소프트웨어 분야에 깊이 몰두하고 있지만, 인간의 영향력이 여전히 중요합니다. 인공지능이 모든 것을 독점하지는 못하기 때문이죠. 코딩과 기술에 종사하는 사람들은 역사, 사회학, 심리학과 같은 보다 광범위한 요인들에 불가피하게 영향을 받고 있어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 
 저는 사람들을 관찰하는 것에 깊은 매혹을 느낍니다. 이는 동시에 즐겁고 매우 깨우침을 줍니다. 저는 인류의 가장 강력한 중독은 헤로인이 아니라 오히려 선뜻 따르고 순종하며 믿음에 기대하는 성향이라고 믿어요. 사람들은 어떤 물질보다 의심하지 않는 순종과 믿음에 더 중독되어 있는 것처럼 보입니다. 이 무조건적인 순종의 근원적인 이유는 놀랍게도 간단해요: “무책임함.”
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 부주의는 모든 계층과 분야의 개인들에게 궁극적인 피난처이자 탈출이죠. 인간의 자부심이 직접적으로 받아들이지 못하게 하지만, 문제없는 복종과 믿음으로부터 오는 책임과 양심에서의 해방만큼 자유로운 약이 존재하지 않습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 
 "상사가 지시한 대로 했을 뿐이에요"라고 생각하면 마음이 편안해지기도 했나요? 어려운 순간에는 종종 책임을 다른 사람에게 전가하는 게 더 쉬운 법이지요. 많은 사람들이 누군가에게 책임을 맡기는 데 대한 안도를 경험해본 적이 있습니다. 솔직히 말해서, 그 느낌이 환상적이었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 종교들이 메시아, 마다이, 그리고 성인 등의 구원자 인물을 가지는 이유는 우리가 용기와 인내심이 부족할 때 다른 누군가가 부담을 지도록 바라기 때문입니다. 이 경향은 다양한 종교에서 구원자 인물들이 나타나는 것을 통해 볼 수 있으며, 우리들이 어려운 업무를 처리할 수 있는 타인을 찾으려는 성향을 대변합니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 
 # The Poison
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전문가 세계에서 약 23년을 보낸 경험이 있습니다. 20년 이상 소프트웨어 또는 IT 작업으로 수입을 올린 적이 있어요. 제 여정은 최악의 상사가 있는 회사, 가장 흥미로운 스타트업, 가장 명문적인 기업 환경을 경험했어요.
 
@@ -60,7 +103,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 
 # Test-Driven Development Creed
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 멘토들은 저가 존경하며, 하지만 절대로 그들이나 다른 누군가의 신념이나 말을 맹목적으로 받아들이지 않습니다.
 
@@ -73,7 +127,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 - Test Driven Development 비용은?
 - Test Driven Development의 단점은?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과는 Google과 ChatGPT가 TDD에 대해 과도하게 부정적인 응답을 제공하는 것을 피하는 것을 보여줍니다. 그들은 약점을 강조할 때에도 그것을 장점과 균형있게 조화시키려고 노력합니다. 부정적인 측면이나 비판은 일반적으로 완화되거나 최소화됩니다.
 
@@ -83,8 +148,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 
 이 관점을 더 탐구하되, TDD의 심층 기술적 측면이 아닌 개발 주기에 초점을 맞추어보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Test Driven Development](/assets/img/2024-06-22-FuckTestDrivenDevelopment_1.png)
 
@@ -96,19 +171,42 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 - 함수가 유당 테스트를 통과하지 못하면, 밑바닥의 이슈나 버그를 해결하기 위해 대응하도록 유도됩니다.
 - 유당 테스트는 함수의 성공을 검증하며, 어떤 실패도 버그 해결과 재테스트의 필요성을 나타냅니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. TDD에서 'Refactoring'으로 버그 해결하는 것은 종종 'Refactoring'이라고 합니다만, 이 용어를 혼동하지 않는 것이 중요합니다.
+
 - TDD 주기에서 버그 해결은 'Refactoring'으로 분류되지만, 이는 전통적인 버그 해결 방법과 구분됩니다.
 - TDD 과정은 버그 해결을 'Refactoring'으로 레이블링하지만, 이는 일반적인 버그 해결 방법과 다릅니다.
 
 3. 버그 해결과 리팩터링 구분하기
+
 - TDD의 'Refactoring' 단계를 통해 버그를 해결하는 것은 표준적인 버그 해결과 동일하지 않습니다.
 - TDD의 버그 수정과 실제 리팩터링 활동을 구별하는 것이 중요합니다.
 - TDD에서 'Refactoring'의 일환으로 버그를 해결하는 것은 전통적인 버그 해결 방법과 동의어가 아닙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 TDD 리팩터링과 더 리팩터링은 꽤 다른 전략입니다. TDD를 간단히 설명하자면 리팩터링은 버그를 해결하는 것뿐이에요.
 
@@ -123,7 +221,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 
 위 질문들을 확장하고 다양화할 수 있지만, TDD가 충분히 답하지는 못할 수도 있어요. TDD는 이상적인 실험실 환경, 특정 매개변수, 알려진 계산 및 예측 가능한 반환 값으로 작동한다는 가정하에 운영됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과적으로 작성된 테스트는 오직 이 이상적인 시나리오만 다룹니다. 하지만 사용자나 테스터들이 예기치 못한 동작을 수행하는 현실 세계에서는, TDD로 개발된 많은 함수들이 기대와 다르게 동작하지 않거나 에러를 발생시킬 수 있습니다. 다시 말해, 사용자나 테스터가 예기치 않은 동작을 수행할 때, 많은 TDD 적용 함수들이 기대대로 동작하지 않거나 에러를 발생할 수 있습니다.
 
@@ -133,7 +242,18 @@ link: "https://medium.com/@efsunengine/fuck-test-driven-development-a6ad9be895c9
 
 복잡하거나 긴 예시 대신, 제품을 조회하는 간단한 UI - API Backend - Database 흐름을 검토해보겠습니다. 어떤 이유로 제품에 연속적인 ID를 할당하고 이 ID를 쿼리에서 사용합니다. 사용된 기술 스택은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - **UI** – JavaScript
 - **API Backend I** – JavaScript
@@ -146,7 +266,18 @@ JavaScript은 타입 안전하지 않은 언어입니다. 데이터 형식에 �
 
 Java는 타입 안전한 언어로 데이터 형식에 기반하여 작동합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MongoDB은 NoSQL 데이터베이스이며, 순차 ID가 숫자로 정의되어 있을 때 형식 검사가 항상 보장되지는 않습니다. 따라서 소프트웨어 개발자는 형식 검사를 관리하기 위한 조치를 취해야 합니다.
 
@@ -159,7 +290,18 @@ MongoDB은 NoSQL 데이터베이스이며, 순차 ID가 숫자로 정의되어 �
 
 # 단위 테스트의 다양한 측면
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제품 쿼리 플로우를 검토해 볼까요? 각 쿼리 단계에 대해 요구 사항에 따라 하나 이상의 함수를 만들 수 있습니다. 우리는 몇 가지를 만들었어요.
 
@@ -175,7 +317,18 @@ MongoDB은 NoSQL 데이터베이스이며, 순차 ID가 숫자로 정의되어 �
 - 백엔드: UI에서 요청을 처리하는 백엔드 함수에 대한 단위 테스트가 작성됩니다.
 - 데이터베이스: 데이터베이스 필드와 사양의 무결성을 확인하는 단위 테스트를 작성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 이 테스트들은 서로 독립적입니다. 또한 UI -` 백앤드 I -` 백앤드 II -` DB에 걸쳐야 하는 통합 테스트도 작성해야 합니다. TDD에 열정적이고 주석을 달거나, 로깅하거나, 디버깅하는 것을 피하려는 사람들을 위해 이후에 이에 대해 다루겠습니다.
 
@@ -188,7 +341,18 @@ MongoDB은 NoSQL 데이터베이스이며, 순차 ID가 숫자로 정의되어 �
 - 알파벳 및 숫자 조합 유효성 검사
 - 길이 확인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UI: 자바스크립트로 코딩되어 있기 때문에 이러한 검증 사항들을 세심하게 설정하고 테스트해야 합니다. 어느 하나도 놓치거나 건너뛸 여유가 없기 때문에 모든 검증을 해야 합니다. 1개의 필드 → 4가지의 검증 → 4개의 단위 테스트로 생각해 보세요.
 
@@ -198,7 +362,18 @@ UI: 자바스크립트로 코딩되어 있기 때문에 이러한 검증 사항�
 
 이러한 검증 사항들을 하나의 단위 테스트에 포함할 수도 있고, 여러 개의 테스트를 작성할 수도 있습니다. 단일 책임 원칙을 자랑스럽게 지키기 위해 TDD 추종자들은 여러 개의 테스트를 옹호할 것입니다. 😊
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 문제 발생
 
@@ -210,7 +385,18 @@ UI: 자바스크립트로 코딩되어 있기 때문에 이러한 검증 사항�
 - 악의적인 사용자가 API를 중간에 가로채서 제품 쿼리에 예상치 못한 문자를 삽입할 수 있어요.
 - UI와 백엔드 API에 대해 서로 다른 개발 노력이 진행되어 프로젝트 전반에 일관적으로 이러한 제어가 구현되지 않을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친 경우 또는 테스트하지 않은 경우, TDD 또는 당신이 취할 행동은 무엇인가요?
 
@@ -222,7 +408,18 @@ UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친
 
 심각한 문제는 사용자/소비자가 다른 API를 사용하는 경우 요청이 끊임없이 반복될 수 있다는 것입니다. 그 API는 올바른 응답을 받을 때까지 서비스를 계속 시도할 수 있습니다. TDD는 이러한 시나리오에 어떻게 대응할까요? (이러한 시나리오는 곱셈될 수 있습니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예기치 못한 상황에서 API와 TDD는 모두 마비 상태에 놓일 수 있습니다. TDD가 의인화된다면, 그것은 움직이지 않는 물고기와 같을 것이며 대응할 수 없을 겁니다. 프로젝트 구성 요소 전체의 개발자들은 모든 단위 테스트가 성공적으로 실행되었고 이전에 이러한 문제를 만나지 않았다고 주장할 수 있으며, "내 컴퓨터에서는 작동하는데" 증후군으로 이어집니다.
 
@@ -232,7 +429,18 @@ UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친
 
 이러한 상황에서 프로젝트 테스터 또는 모든 개발자들은 힘을 모아 시나리오를 재현하고 전체 프로젝트를 세심하게 디버깅하고 중요한 위치에 임시 로그를 남겨야 합니다. 디버깅에 대해 주저하는 사람이나 가치를 부정하는 사람들에게: 디버깅은 반드시 필요합니다. 디버깅을 싫어하거나 디버깅이 쓸모없다고 말하는 사람들에게는, 디버깅이 당신의 장례식을 치를 것임을 확신하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 우리가 주요한 실패나 큰 실수에 대해 이야기한다면, 그것은 결함이 있는 이러한 시나리오의 반복입니다. 대부분의 경우, 이러한 결함이 있는 시나리오를 반복할 수 없습니다. 숙련된 개인이나 광범위한 프로젝트에 깊이 참여한 사람들은 사용자가 마주한 동일한 오류를 잡고 반복하는 것이 종종 오류 자체를 해결하는 것보다 더 어려울 수 있다는 것을 알고 있습니다.
 
@@ -242,7 +450,18 @@ UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친
 
 # 기억하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저의 개인 경험을 공유하고 싶습니다. 제 목표는 제 행동을 자랑하거나 특정 회사나 팀을 탓하는 것이 아닙니다. 대신 대규모 프로젝트와 팀의 맥락 속에서 발생한 작은 실수들이 어떻게 크고 해결하기 어려운 문제로 번질 수 있는지를 강조하고 싶습니다.
 
@@ -252,7 +471,18 @@ UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친
 
 저는 합류했을 때 이미 제 팀이 심각한 문제에 직면하고 있었습니다. 첫날에 동료들이 그 문제에 대해 화이트보드에서 토의하고 있는 상황이었습니다. 테스트와 디버깅을 45~50일 동안 진행한 후에 팀은 "저희는 철저히 테스트하고 디버깅했지만 고객이 오류를 경험했던 시나리오를 재현할 수 없어 문제를 정확히 파악하고 해결할 수가 없습니다." 라며 한탄하고 있었습니다. 동료들에게 몇 가지 질문을 하면서 함수의 작동 및 가능한 시나리오에 중점을 두었습니다. 그들의 설명으로 문제의 근원이 우리 함수에 있지 않다고 확신하였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 API를 사용하고 있다고 상상해봐요. 60일 후에 문제가 우리 쪽이 아닌 당신 쪽에서 발생했다고 말한다면 나를 대신해 꽤 좌절스러울 거 같아요. 60일이나 걸려 버그가 우리 것인 걸 발견하는 데, 만약 버그가 당신 것이었다면 360일이 걸렸을 것이고, 내 칭찬의 끝은 상당히 어둡지 않았을까 생각해봐요.
 
@@ -264,7 +494,18 @@ UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친
 - 1,440시간 동안 고객들과 다른 프로젝트 소유자들이 삶을 힘들게 했네요.
 - 1,440시간이 지난 뒤 문제가 당신의 잘못이 아니었음을 깨달았을 때, 상당한 탓과 좌절을 느낄 수 있었네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다시 TDD
 
@@ -279,7 +520,18 @@ UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친
 
 가장 중요한 질문은 다음과 같습니다: 우리는 TDD를 사용하여 이상적인 조건을 철저히 테스트하고 프로젝트를 성공적으로 배포했습니다. 그런데 간단한 오류나 복잡한 오류를 포착하고 관리할 수 있는 메커니즘이 없습니다. 우리의 응용 프로그램 또는 API가 다양한 사용자나 플랫폼에 의해 다양한 방식으로 액세스되는 상황에서 이러한 신흥 오류를 어떻게 해결할 것인가요? 오류 관리가 불가능하거나 하찮다면, 왜 TDD와 같은 신성한 방법론에 투자하는 건가요? 그냥 코딩하고 배포하면 되지 않나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # TDD에 대한 소강점, 결론
 
@@ -289,7 +541,18 @@ UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친
 
 이러한 오류는 귀여운 TDD 논리로는 잡을 수 없다. 별도의 테스트를 개발하거나 특별한 테스트 팀을 구성해도, 이러한 오류를 찾고 상황을 재현할 확률은 매우 낮다. 특히 현재의 마이크로서비스 열풍 속에서는 거의 불가능하다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상상해보세요. 수천 개의 서비스가 있고 서로 호출하고 있는데, 그 중 하나가 모든 것을 호출하고 모든 것이 한 가지를 호출하는 상황을 말해보세요. 천 개의 서비스가 서로 복잡하게 상호작용하면 인프라가 쉽게 혼란스러운 막다른 골목이 될 수 있습니다.
 
@@ -299,7 +562,18 @@ UI에서 잘못된 ID를 받았고 API-I에서 숫자-알파벳 검사를 놓친
 
 어떤 것이 더 현명한가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - TDD로 반복적인 코드 및 테스트 반복에 따른 비용이 발생합니다.
 - 잘 설계된 오류 처리 및 로깅 메커니즘에 따른 비용이 발생합니다.
@@ -310,8 +584,18 @@ TDD의 유지보수가 가장 중요한 고려 사항 중 하나입니다. 의�
 
 행운을 빕니다,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Alper Akalın
 

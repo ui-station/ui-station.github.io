@@ -3,13 +3,12 @@ title: "모노게임 XNA에서 물 쉐이더를 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-HowtocreateWatershaderinMonogameXNA_0.png"
 date: 2024-05-20 16:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowtocreateWatershaderinMonogameXNA_0.png
 tag: Tech
 originalTitle: "How to create Water shader in Monogame XNA"
 link: "https://medium.com/@gabriel.enrique.digiorgio/how-to-create-water-shader-in-monogame-xna-0a7e82092c85"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@gabriel.enrique.digiorgio/how-to-create-water-shader-
 
 우리 쉐이더가 어떻게 작동하는지 더 잘 이해하기 위해 여러 단계로 나눠 설명하겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 쿼드/플랫 표면 추가하기
 - 반사 및 굴절 텍스처 추가하기 (프레넬 효과를 사용하여 둘 사이의 러핑)
@@ -35,7 +45,18 @@ link: "https://medium.com/@gabriel.enrique.digiorgio/how-to-create-water-shader-
 - 물 그리기
 - 장면에서 다른 개체 그리기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 순서는 원하는 시각적 효과를 달성하기 위해 각 구성 요소가 올바른 순서로 렌더링되도록합니다.
 
@@ -45,7 +66,18 @@ link: "https://medium.com/@gabriel.enrique.digiorgio/how-to-create-water-shader-
 
 먼저 우리는 우리의 쿼드, 그의 월드 매트릭스, 높이 및 파도 속도를 생성할 것입니다. 나중에는 쉐이더 매개변수에서 파도 속도를 사용할 것입니다. 또한 이 높이는 반사와 굴절을 계산하는 중요한 요소가 될 것입니다. 게다가 우리는 쉐이더를 선언할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```csharp
 // 카메라
@@ -83,8 +115,18 @@ protected override void Initialize()
 
 # 평면 반사
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드를 진행하기 전에 우리는 평면 반사가 어떻게 작동하는지 이해해야 합니다. 평면 반사의 예시를 살펴보겠습니다:
 
@@ -94,7 +136,18 @@ protected override void Initialize()
 
 ## 반사 카메라 위치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 반사 카메라 위치를 계산하겠습니다. 이미 카메라 위치, 평면 위치 및 평면 법선을 알고 있으므로 카메라 위치에서 평면 위치를 빼면 뷰 방향 벡터를 얻을 수 있습니다:
 
@@ -105,9 +158,20 @@ protected override void Initialize()
 또한 투영 벡터를 추가했는데 이것은 다음과 같습니다. 그런 다음 해당 투영의 길이를 사용하여 평면상의 해당 지점까지의 거리를 찾을 수 있습니다.
 이제 우리는 직각 삼각형을 가지고 있습니다. 투영 길이는 다음과 같아야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-투영 길이 = 시야 방향 * cos(각도)
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+투영 길이 = 시야 방향 \* cos(각도)
 
 각도는 평면 법선과 시야 방향 사이의 각도를 의미합니다.
 
@@ -115,17 +179,39 @@ protected override void Initialize()
 
 투영 길이 = 내적(평면 법선, 시야 방향)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요, 이제 우리에게는 프로젝션 길이가 있습니다. 이것을 사용하여 반사 카메라 위치를 얻을 수 있습니다:
 
-반사 카메라 위치 = 카메라 위치 — 2 * 평면 법선 * 프로젝션 길이
+반사 카메라 위치 = 카메라 위치 — 2 _ 평면 법선 _ 프로젝션 길이
 
 ## 반사 카메라 뷰 매트릭스
 
 반사 카메라 뷰 매트릭스를 얻으려면 반사 카메라 포워드를 계산해야 합니다. 함수 Reflect(vector, normal)를 사용하여 특정 법선을 갖는 표면에서 벡터의 반사를 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 카메라 반사 벡터를 계산한 후, Reflection Camera Up을 계산하는 다음 단계입니다. 카메라의 위쪽 벡터를 반사면의 법선을 기준으로 반사하는 Vector3.Reflect 함수를 다시 사용할 것입니다.
 
@@ -133,7 +219,18 @@ Reflection Camera Up = Vector3.Reflect(Camera Up, Plane Normal)
 
 Reflection Camera Position, Reflection Camera Forward 및 Reflection Camera Up 벡터가 모두 계산되었으므로 이제 Reflection Camera View Matrix를 구성하는 데 필요한 모든 구성 요소를 갖추게 되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리플렉션 카메라 뷰 = Matrix.CreateLookAt(리플렉션 카메라 위치, 리플렉션 카메라 위치 + 리플렉션 카메라 전방, 리플렉션 카메라 위치)
 
@@ -146,44 +243,66 @@ private void DrawReflection(Matrix world, Matrix view, Matrix projection, GameTi
 {
     // 렌더 타겟을 리플렉션 텍스처로 설정
     GraphicsDevice.SetRenderTarget(_reflectionRenderTarget);
-    GraphicsDevice.Clear(ClearOptions.Target | 
+    GraphicsDevice.Clear(ClearOptions.Target |
     ClearOptions.DepthBuffer, Color.CornflowerBlue, 1f, 0);
-            
-    var quadNormal = Vector3.Up;         
-    var viewDirection = _freeCamera.Position - _quadWorld.Translation;       
+
+    var quadNormal = Vector3.Up;
+    var viewDirection = _freeCamera.Position - _quadWorld.Translation;
     var projLength = Vector3.Dot(quadNormal, viewDirection);
     var reflectionCamPos = _freeCamera.Position - 2 * quadNormal * projLength;
-    var reflectionCamForward = Vector3.Reflect(_freeCamera.FrontDirection, 
+    var reflectionCamForward = Vector3.Reflect(_freeCamera.FrontDirection,
     quadNormal);
-    var reflectionCamUp = Vector3.Reflect(_freeCamera.UpDirection, quadNormal);  
-    var reflectionCamView = Matrix.CreateLookAt(reflectionCamPos, 
+    var reflectionCamUp = Vector3.Reflect(_freeCamera.UpDirection, quadNormal);
+    var reflectionCamView = Matrix.CreateLookAt(reflectionCamPos,
                 reflectionCamPos + reflectionCamForward, reflectionCamUp);
-    
+
     // 리플렉션 카메라 시점에서 씬 그리기
-    DrawScene(reflectionCamView, projection, reflectionCamPos, 
+    DrawScene(reflectionCamView, projection, reflectionCamPos,
     _reflectionClippingPlane);
-    
+
     // 렌더 타겟을 기본(화면)으로 재설정
     GraphicsDevice.SetRenderTarget(null);
-         
+
     // 물 그리기
     DrawWater(world, view, projection, reflectionCamView, gameTime);
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DrawWater 메서드에서는 필요한 매개변수를 전달할 것이며, 이에 대해 나중에 자세히 다룰 것입니다.
 
 ## 클리핑 평면
 
-클리핑 평면 _reflectionClippingPlane이 아직 설명되지 않았다는 것을 눈치채셨나요? 그 목적에 대해 자세히 살펴보겠습니다. 이 클리핑 평면은 수면 위에 있는 객체만 그릴 때 사용됩니다. 이를 통해 객체의 상단 반만이 물에 반사되어 실제 반사에서 관찰되는 것과 동일하게 됩니다. 다음과 같이 선언할 수 있습니다:
+클리핑 평면 \_reflectionClippingPlane이 아직 설명되지 않았다는 것을 눈치채셨나요? 그 목적에 대해 자세히 살펴보겠습니다. 이 클리핑 평면은 수면 위에 있는 객체만 그릴 때 사용됩니다. 이를 통해 객체의 상단 반만이 물에 반사되어 실제 반사에서 관찰되는 것과 동일하게 됩니다. 다음과 같이 선언할 수 있습니다:
 
 ```js
 private readonly Vector4 _reflectionClippingPlane = new Vector4(0f, 1f, 0f, -QuadHeight);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 평면은 수학적 방정식 (Ax + By + Cz + D = 0)으로 정의됩니다. 여기서 (A, B, C)는 평면에 수직인 법선 벡터를 나타내고, D는 해당 법선 벡터를 따라 원점으로부터의 거리를 나타냅니다.
 
@@ -191,7 +310,8 @@ private readonly Vector4 _reflectionClippingPlane = new Vector4(0f, 1f, 0f, -Qua
 
 우리는 물 속 객체를 다루는 셰이더를 위해 반사 클리핑 평면 방정식에 -QuadHeight 값을 활용합니다. 이 값은 나중에 픽셀 셰이더에서 clip 함수를 사용하여 Reflection Plane 아래의 픽셀을 클리핑할 때 사용됩니다. 다음은 예시입니다:
 
-*Uniforms*
+_Uniforms_
+
 ```js
 float4 ClippingPlane;
 
@@ -200,7 +320,7 @@ struct VertexShaderInput
     float4 Position : POSITION0;
     float4 Normal : NORMAL;
 };
- 
+
 struct VertexShaderOutput
 {
     float4 Position : POSITION0;
@@ -212,7 +332,7 @@ struct VertexShaderOutput
 VertexShaderOutput MainVS(VertexShaderInput input)
 {
     VertexShaderOutput output = (VertexShaderOutput) 0;
- 
+
     float4 worldPosition = mul(input.Position, World);
     float4 viewPosition = mul(worldPosition, View);
     output.Position = mul(viewPosition, Projection);
@@ -223,19 +343,30 @@ VertexShaderOutput MainVS(VertexShaderInput input)
     이 결과 거리는 해당 픽셀을 픽셀 셰이더에서 버릴지 여부를 결정하는 데 사용됩니다
     */
     output.Clipping = dot(worldPosition, ClippingPlane);
- 
+
     return output;
 }
 
 float4 MainPS(VertexShaderOutput input) : COLOR0
 {
     clip(input.Clipping);
-    
+
     // 픽셀 셰이더의 나머지 부분
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클립 함수는 지정된 조건에 따라 픽셀을 삭제하는 기능을 담당합니다. 셰이더에서 -QuadHeight를 활용하여 물 표면 아래에 있는 물체를 나타내는 픽셀들이 렌더링 중에 삭제되어 최종 반사 이미지에서 클리핑되는 효과가 있습니다.
 
@@ -247,9 +378,20 @@ private readonly Vector4 _refractionClippingPlane = new(0f, -1f, 0f, QuadHeight)
 
 # 굴절
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-리프렉션을 렌더 대상에 그리는 것은 반사를 렌더링하는 것과 비교할 때 간단한 프로세스입니다. 이 작업은 카메라의 관점에서 장면을 렌더링하면서 _refractionClippingPlane을 사용하여 수면 위의 픽셀을 버립니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+리프렉션을 렌더 대상에 그리는 것은 반사를 렌더링하는 것과 비교할 때 간단한 프로세스입니다. 이 작업은 카메라의 관점에서 장면을 렌더링하면서 \_refractionClippingPlane을 사용하여 수면 위의 픽셀을 버립니다.
 
 ```js
 private void DrawRefraction()
@@ -257,10 +399,10 @@ private void DrawRefraction()
     // Refraction Texture을 렌더 타겟으로 설정
     GraphicsDevice.SetRenderTarget(_refractionRenderTarget);
     GraphicsDevice.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, Color.CornflowerBlue, 1f, 0);
-            
+
     // 수면 위에 있는 객체를 자르면서 장면을 일반적으로 그립니다
     DrawScene(_freeCamera.View, _freeCamera.Projection, _freeCamera.Position, _refractionClippingPlane);
-            
+
     // 렌더 타겟을 기본값(화면)으로 재설정
     GraphicsDevice.SetRenderTarget(null);
 }
@@ -270,7 +412,18 @@ private void DrawRefraction()
 
 # 수 쉐이더
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 우리의 물 쉐이더에 필요한 균일 및 텍스처를 선언할 것입니다. 이에는 조명, 카메라 위치, 물의 움직임 및 사용할 다양한 맵에 대한 텍스처 샘플러를 위한 매개변수가 포함됩니다:
 
@@ -339,7 +492,18 @@ sampler2D normalMapSampler = sampler_state
 
 왜곡 맵에는 다음과 같은 모양의 텍스처를 사용할 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-HowtocreateWatershaderinMonogameXNA_2.png)
 
@@ -349,7 +513,18 @@ Normal Map으로는 다른 텍스처를 사용할 것입니다. 여기 예시가
 
 ![이미지](/assets/img/2024-05-20-HowtocreateWatershaderinMonogameXNA_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 지도에는 물과 빛이 상호 작용하는 방식을 시뮬레이션하기 위해 필수적인 표면 법선에 대한 정보가 포함되어 있습니다. 왜곡 맵이 텍스처 좌표를 조작하는 데 사용되는 반면, 법선 맵은 빛 관련 계산에 사용됩니다.
 
@@ -381,29 +556,40 @@ VertexShaderOutput MainVS(in VertexShaderInput input)
 
     // 버텍스 위치를 클립 공간에 변환합니다
     output.Position = mul(input.Position, WorldViewProjection);
-    
+
     // 버텍스 위치를 월드 공간으로 변환합니다
     output.WorldPosition = mul(input.Position, World);
-    
+
     // 어떤 변경도 없이 버텍스 법선을 전달합니다
     output.Normal = input.Normal;
-    
+
     // 타일링 요소로 텍스처 좌표를 조정합니다
     output.TextureCoordinates = input.TextureCoordinates * Tiling;
-    
+
     // 반사 위치와 월드 매트릭스를 계산합니다
     float4x4 reflectProjectWorld = mul(ReflectionView, Projection);
     reflectProjectWorld = mul(World, reflectProjectWorld);
     output.ReflectionPosition = mul(input.Position, reflectProjectWorld);
-    
+
     // 굴절 위치는 클립 공간 위치와 동일합니다
     output.RefractionPosition = output.Position;
-    
+
     return output;
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요, 이제 정점 셰이더 부분을 완료했으니 픽셀 셰이더로 넘어갈 수 있겠네요.
 
@@ -413,7 +599,18 @@ VertexShaderOutput MainVS(in VertexShaderInput input)
 
 먼저, 프로젝티브 굴절 텍스처 좌표를 정규화 장치 좌표 (NDC) 공간으로 변환합니다. 그런 다음, DirectX (DX) 텍스처를 정확히 샘플링할 수 있도록 xy 좌표를 적절하게 조정하여 크기를 조절하고 오프셋을 적용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```csharp
 float4 MainPS(VertexShaderOutput input) : COLOR
@@ -422,30 +619,30 @@ float4 MainPS(VertexShaderOutput input) : COLOR
 
     float4 refractionTexCoord;
     refractionTexCoord = input.RefractionPosition;
-    
+
     // 화면 위치 좌표
     refractionTexCoord.xyz /= refractionTexCoord.w;
-    
+
     // 오프셋 조정
     refractionTexCoord.x = 0.5f * refractionTexCoord.x + 0.5f;
     refractionTexCoord.y = -0.5f * refractionTexCoord.y + 0.5f;
-    
+
     // 카메라로부터의 거리에 따라 굴절 더하기
     refractionTexCoord.z = 0.001f / refractionTexCoord.z;
     float2 refractionTex = refractionTexCoord.xy - refractionTexCoord.z;
-    
+
     // 반사
 
     float4 reflectionTexCoord;
     reflectionTexCoord = input.ReflectionPosition;
-    
+
     // 화면 위치 좌표
     reflectionTexCoord.xyz /= reflectionTexCoord.w;
-    
+
     // 오프셋 조정
     reflectionTexCoord.x = 0.5f * reflectionTexCoord.x + 0.5f;
     reflectionTexCoord.y = -0.5f * reflectionTexCoord.y + 0.5f;
-    
+
     // 카메라로부터의 거리에 따라 반사 더하기
     reflectionTexCoord.z = 0.001f / reflectionTexCoord.z;
     float2 reflectionTex = reflectionTexCoord.xy + reflectionTexCoord.z;
@@ -460,7 +657,18 @@ float4 MainPS(VertexShaderOutput input) : COLOR
 
 ## 왜곡 맵 / DuDv 맵
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 위에 표시된 왜곡 맵을 사용하여 반사 및 굴절 텍스처를 샘플링할 예정입니다.
 
@@ -469,14 +677,25 @@ float4 MainPS(VertexShaderOutput input) : COLOR
 이 값을 (-1.0, -1.0)에서 (1.0, 1.0) 사이로 변환하기 위해 단순히 2를 곱하고 1을 뺍니다. 그런 다음 이 값을 사용하여 간단히 반사 및 굴절 텍스처 좌표를 왜곡시킵니다.
 
 ```js
-float2 distortion = (tex2D(distortionSampler, Input.TextureCoordinates)).rg 
+float2 distortion = (tex2D(distortionSampler, Input.TextureCoordinates)).rg
                     * 2.0 - 1.0) * WaveStrength;
 
 reflectionTex += distortion;
 refractionTex += distortion;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 왜곡은 기본 설정에서 조금 강할 수 있습니다. 그래서 우리는 이 왜곡을 약간 낮추기 위해 이전에 선언한 WaveStrength로 사용할 것입니다.
 
@@ -486,8 +705,18 @@ refractionTex += distortion;
 
 이 효과를 얻기 위해 MoveFactor를 텍스처 좌표의 X 구성 요소에 추가하고 왜곡 맵을 샘플링합니다. 그 후 Y 구성 요소를 위해 두 번째 샘플링을 수행하여 다른 방향으로 추가 왜곡을 적용합니다. 이 프로세스는 왜곡 효과의 현실성을 강화하여 보다 동적인 외관을 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 float2 distortedTexCoords = tex2D(distortionSampler, float2(input.TextureCoordinates.x + MoveFactor, input.TextureCoordinates.y)) * 0.01;
@@ -508,7 +737,18 @@ float4 refractionColor = tex2D(refractionSampler, refractionTex);
 
 프레넬 효과가 무엇인지 모르겠다면, Dorian의 아주 좋은 설명을 보여드리겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 효과를 구현하려면 다음과 같이 물에서부터의 뷰 방향과 법선을 사용해야 합니다:
 
@@ -523,7 +763,18 @@ float refractiveFactor = dot(viewDirection, normalize(input.Normal.xyz));
 float4 finalColor = lerp(reflectionColor, refractionColor, refractiveFactor);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 아직 끝나지 않았어요! 마지막으로 추가해야 할 것은 노멀 맵과 조명입니다.
 
@@ -533,7 +784,18 @@ float4 finalColor = lerp(reflectionColor, refractionColor, refractiveFactor);
 
 따라서, 우리는 노멀 맵 색의 파란 구성 요소를 노멀 벡터의 Y 구성 요소로 사용할 것이고, 노멀 맵의 빨간색과 초록색 구성 요소를 노멀 벡터의 X 및 Z 구성 요소로 사용할 수 있습니다. (R, G, B) -` (R, B, G).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 유일한 문제는 절대 음수 색상을 가질 수 없기 때문에 법선 벡터의 구성 요소도 양수여야한다는 것입니다. Y 구성 요소에 대해서는 문제가 되지 않습니다. 왜냐하면 표면 법선이 어느 정도로든 위로 향하도록 항상 원하기 때문입니다. 그러나 법선이 항상 양의 X 및 Z 방향을 가리키도록 하길 바라는 것은 아닙니다. 법선은 음의 X 및 Z 방향을 가리키도록도 할 수 있어야 합니다.
 
@@ -547,7 +809,18 @@ normal = normalize(normal);
 
 이 추출된 법선 벡터를 활용하여 조명 효과를 계산할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 조명
 
@@ -560,7 +833,18 @@ float3 lightDirection = normalize(LightPosition - input.WorldPosition.xyz);
 float3 halfVector = normalize(lightDirection + viewDirection);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 벡터들을 사용하여, 우리는 NdotL과 NdotH라는 닷 프로덕트를 계산합니다. 이는 각각 노멀 벡터와 라이트 방향, 그리고 노멀 벡터와 하프 벡터 사이의 각도를 나타냅니다.
 
@@ -575,7 +859,18 @@ float NdotH = saturate(dot(normal, halfVector));
 float3 specularLight = sign(NdotL) * KSpecular * LightColor * pow(NdotH, Shininess);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 반사광을 미리 계산된 반사 및 굴절 색과 결합하여 최종 색상 출력을 결정합니다.
 
@@ -595,27 +890,38 @@ private void DrawWater(Matrix world, Matrix view, Matrix projection, Matrix refl
     _waterShader.Parameters["WorldViewProjection"].SetValue(world * view * projection);
     _waterShader.Parameters["ReflectionView"].SetValue(reflectionView);
     _waterShader.Parameters["Projection"].SetValue(projection);
-            
+
     _waterShader.Parameters["ReflectionTexture"].SetValue(_reflectionRenderTarget);
     _waterShader.Parameters["RefractionTexture"].SetValue(_refractionRenderTarget);
     _waterShader.Parameters["DistortionMap"].SetValue(_distortionMap);
     _waterShader.Parameters["NormalMap"].SetValue(_normalMap);
     _waterShader.Parameters["Tiling"].SetValue(Vector2.One * 20f);
-            
+
     _waterShader.Parameters["MoveFactor"].SetValue(WaveSpeed * (float)gameTime.TotalGameTime.TotalSeconds);
     _waterShader.Parameters["WaveStrength"].SetValue(0.01f);
-            
+
     _waterShader.Parameters["CameraPosition"].SetValue(_freeCamera.Position);
     _waterShader.Parameters["LightPosition"].SetValue(_lightPosition);
     _waterShader.Parameters["LightColor"].SetValue(Color.White.ToVector3());
     _waterShader.Parameters["Shininess"].SetValue(25f);
     _waterShader.Parameters["KSpecular"].SetValue(0.3f);
-            
+
     _quad.Draw(_waterShader);
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 제 경우에는 다음과 같이 보입니다:
 

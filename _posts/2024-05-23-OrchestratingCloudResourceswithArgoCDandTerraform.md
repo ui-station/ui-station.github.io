@@ -18,7 +18,18 @@ link: "https://medium.com/gitconnected/orchestrating-cloud-resources-with-argocd
 
 최근 RKE2 Kubernetes 클러스터를 사용하여 Cilium을 기본 네트워킹 솔루션으로 활용하는 프로젝트에 착수했습니다. 여러 테넌트 및 다양한 프로젝트를 효율적으로 처리하기 위해 애플리케이션 오케스트레이션을 ArgoCD로 선택했습니다. 이는 인기 있는 선택이지만, GitLab, GitHub 및 Bitbucket과 같은 다양한 버전 컨트롤 시스템에서 설정을 산재시킬 수 있는 선언적 애플리케이션 설정 방식을 가지고 있습니다. 전체적인 오케스트레이션 시스템을 구축하는 것은 많은 구성 요소를 고려해야 합니다. 이 게시물에서는 ArgoCD와 Terraform의 통합에 초점을 맞추어 이러한 도구들이 효과적인 애플리케이션 오케스트레이션을 위해 어떻게 원활하게 함께 작동하는지 강조하겠습니다. 이 접근 방식을 다양한 프로젝트에 성공적으로 통합하여 이해하기 쉽고 원활한 관리를 나타내었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # ArgoCD
 
@@ -28,7 +39,18 @@ link: "https://medium.com/gitconnected/orchestrating-cloud-resources-with-argocd
 
 이 유연성을 통해 회사 내 다른 팀의 액세스 수준을 자동화하고 제어하는 파트를 결정할 수 있습니다. 우리가 탐구할 설정은 생산 환경에서 효과적임이 입증되었으며, 이 프로젝트에 나중에 참여한 개발자들에게도 잘 받아들여졌습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 설계 선택 사항을 다루었으니, 기술적 세부 정보로 들어가 봅시다.
 
@@ -39,7 +61,18 @@ link: "https://medium.com/gitconnected/orchestrating-cloud-resources-with-argocd
 - Bitnami의 Sealed Secrets
 - Helm CLI 도구
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 쿠버네티스 배포 버전은 중요한 요소가 아닙니다. 배포 애플리케이션에 필요한 액세스만 있으면 됩니다. 저는 Rancher Kubernetes Engine 2 (RKE2)를 선택했는데, 이는 가벼우면서 다재다능한 Kubernetes 배포로 알려져 있어 간편하고 사용하기 쉽다는 장점이 있습니다. 또한 최신 보안 기준을 준수합니다. RKE2에 대한 더 깊은 통찰력을 얻으려면 이전 기사를 살펴보시고, Cilium의 기능과 어떻게 매끄럽게 통합되는지 알아보세요:
 
@@ -49,19 +82,39 @@ Sealed Secrets를 사용하기로 한 결정은 온프레미스 배포로 인해
 
 # Terraform
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해드리겠습니다.
 
+| 번호 | 항목 | 설명        |
+| ---- | ---- | ----------- |
+| 1    | 이름 | 샘플 사용자 |
+| 2    | 나이 | 30세        |
+| 3    | 성별 | 여성        |
 
-| 번호 | 항목   | 설명                            |
-|----|------|-------------------------------|
-| 1  | 이름   | 샘플 사용자                    |
-| 2  | 나이   | 30세                           |
-| 3  | 성별   | 여성                            |
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - ArgoCD 및 Sealed-Secrets Helm 차트 설치하기
 - ArgoCD 구성이 저장된 저장소를 참조 및 연결하기
@@ -73,7 +126,18 @@ Sealed Secrets를 사용하기로 한 결정은 온프레미스 배포로 인해
 
 Terraform 스크립트에서 강조되는 중요한 부분은 SSH 비밀 키를 암호화하기 위해 Sealed-secrets를 설치하고 활용하는 것입니다. 이 키는 ArgoCD가 특정 GitHub 저장소에서 응용 프로그램 구성을 검색하고 연결하는 데 필수적입니다. 이를 구성하는 다양한 방법이 있지만, 우리는 Kubernetes Secret 개체에 argocd.argoproj.io/secret-type: repo-creds 라벨을 사용하기로 선택했습니다. 이 라벨은 특정 접두사로 시작하는 저장소, 예를 들어 git@github.com:`your-github-username`,는 본인 인증을 위해 이 시크릿(우리의 경우 SSH 비밀 키)을 사용할 수 있음을 ArgoCD에 알려줍니다. 보다 명확한 이해를 위해, 이 파일 ssh-secret.yaml의 완전한 구성을 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 apiVersion: v1
@@ -96,8 +160,18 @@ data:
 
 # ArgoCD Configuration Repository
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ArgoCD의 선언적 구성을 사용하면 재배포 가능성이 권장됩니다. 이 저장소는 Argo의 구성의 기본 소스 역할을 합니다. 특히, UI를 통해 앱을 만들 경우, ArgoCD를 재배포하는 동안 자동으로 다시 생성되지 않음을 염두에 두세요.
 
@@ -120,7 +194,18 @@ ArgoCD의 선언적 구성을 사용하면 재배포 가능성이 권장됩니�
 
 각 파일의 합리적인 근거와 이 구조를 권장하는 이유를 명확히 하기 위해 각 파일의 내용을 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - ./apps: 이 디렉토리는 ArgoCD Application 객체의 구성을 관리하고 응용 프로그램 구성이 저장된 외부 저장소를 가리킵니다. /apps/demo/config.yaml 파일의 예는 다음과 같습니다:
 
@@ -165,7 +250,18 @@ spec:
     targetRevision: <대상-브랜치>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데모 애플리케이션을 위한 구성 파일이 이러한 폴더에 추가되었습니다:
 
@@ -217,7 +313,18 @@ spec:
 
 - repositories/demo-app-config.yaml:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 apiVersion: v1
@@ -245,7 +352,18 @@ stringData:
 - 접근 제어: 소스 코드와 구성 리포지토리를 분리하면 개발 중인 응용 프로그램에 작업하는 개발자가 프로덕션 환경에 직접 액세스할 수 없도록 구분된 액세스 제어를 제공합니다.
 - CI 파이프라인의 안정성: 무한한 작업 루프와 Git 커밋 트리거를 피하기 위해 매니페스트 변경을 별도 리포지토리에 푸시하여 CI 파이프라인의 안정성을 유지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그게 전체 설정이에요 — 우리가 인프라 자원으로 흔히 참조하는 것들을 위한 한 저장소, 각 인프라 구성요소에 특화된 구성을 위한 별도의 저장소, 그리고 애플리케이션 매니페스트를 위한 세 번째 저장소가 있어요. 진짜 멋지죠?
 

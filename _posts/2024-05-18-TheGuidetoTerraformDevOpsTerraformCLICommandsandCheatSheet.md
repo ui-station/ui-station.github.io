@@ -3,13 +3,12 @@ title: "테라폼 DevOps 안내서 테라폼 CLI 명령어 및 치트 시트"
 description: ""
 coverImage: "/assets/img/2024-05-18-TheGuidetoTerraformDevOpsTerraformCLICommandsandCheatSheet_0.png"
 date: 2024-05-18 17:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TheGuidetoTerraformDevOpsTerraformCLICommandsandCheatSheet_0.png
 tag: Tech
 originalTitle: "The Guide to Terraform DevOps: Terraform CLI Commands and Cheat Sheet"
 link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-terraform-cli-commands-and-cheat-sheet-581a5b029b53"
 ---
-
 
 ![이미지](/assets/img/2024-05-18-TheGuidetoTerraformDevOpsTerraformCLICommandsandCheatSheet_0.png)
 
@@ -34,7 +33,18 @@ link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-terraform-cl
 
 # Terraform CLI 및 명령어 치트 시트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테라폼 명령어는 인프라를 자동으로 프로비저닝하고 관리합니다. 이를 통해 수동으로 구성 작업을 줄이고 시간을 절약하며 오류를 줄일 수 있습니다.
 
@@ -42,7 +52,18 @@ link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-terraform-cl
 
 아래는 자주 사용되는 명령어에 대한 빠른 참조 가이드입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 초기화:
 
@@ -52,7 +73,18 @@ link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-terraform-cl
 
 ![이미지](/assets/img/2024-05-18-TheGuidetoTerraformDevOpsTerraformCLICommandsandCheatSheet_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 구성 관리:
 
@@ -63,7 +95,18 @@ link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-terraform-cl
 
 ## 인프라 관리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - terraform plan: 인프라 변경에 대한 자세한 실행 계획을 생성합니다.
 - terraform apply: 계획된 인프라 변경을 계획에 따라 적용합니다.
@@ -77,7 +120,18 @@ link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-terraform-cl
 
 ## 상태 관리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - terraform state list: Terraform이 관리하는 모든 리소스를 상태 파일에서 나열합니다.
 - terraform state show: 상태 파일에서 특정 리소스의 세부 정보를 표시합니다.
@@ -89,7 +143,18 @@ link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-terraform-cl
 
 ## Workspaces:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - terraform workspace new: 새 워크스페이스를 만듭니다.
 - terraform workspace select: 기존 워크스페이스를 선택합니다.
@@ -101,7 +166,18 @@ link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-terraform-cl
 
 ## 로그 레벨 활성화 및 제어하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 테라폼은 TF_LOG 환경 변수를 사용하여 로그의 상세 수준을 제어합니다. 이를 다음 수준 중 하나로 설정할 수 있습니다:
 - ERROR: 오직 오류만 기록합니다 (기본값)
@@ -121,7 +197,18 @@ terraform plan
 - TF_LOG_PATH 환경 변수를 사용하여 테라폼이 로그를 작성할 특정 파일을 정의합니다.
 - 예시 (로그를 “terraform.log”에 작성):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 export TF_LOG_PATH="terraform.log"
@@ -137,8 +224,18 @@ terraform apply
 terraform plan -no-color 2>&1 | tee plan.log
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-TheGuidetoTerraformDevOpsTerraformCLICommandsandCheatSheet_8.png)
 
@@ -154,8 +251,18 @@ terraform plan -no-color 2>&1 | tee plan.log
 - terraform output: Terraform 구성에서 출력 값들을 표시합니다.
 - terraform version: Terraform 버전 정보를 표시합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 추가 팁:
 
@@ -166,7 +273,18 @@ terraform plan -no-color 2>&1 | tee plan.log
 
 Terraform CLI를 숙달하고 중요한 명령어와 구성을 이해하면 인프라를 코드로 효율적으로 관리하고, 배포를 간소화하며, 확장 가능하고 재현 가능한 환경을 유지할 수 있습니다. 이는 인프라의 신뢰성과 민첩성을 향상시킬 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 감사합니다! 🙌🏻 구독하지 않고 CLAP 👏을 누르지 말고 잊지 마세요! 다음 기사에서 만나요.🤘
 
@@ -176,7 +294,18 @@ Terraform CLI를 숙달하고 중요한 명령어와 구성을 이해하면 인�
 
 저자(Joel O. Wembo)에 대한 더 많은 정보는 방문하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 링크:
 

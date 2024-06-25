@@ -3,14 +3,12 @@ title: "아름다운 지도를 만들기 위한 6가지 파이썬 라이브러�
 description: ""
 coverImage: "/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_0.png"
 date: 2024-05-20 18:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_0.png
 tag: Tech
 originalTitle: "6 python libraries to make beautiful maps"
 link: "https://medium.com/@alexroz/6-python-libraries-to-make-beautiful-maps-9fb9edb28b27"
 ---
-
-
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@alexroz/6-python-libraries-to-make-beautiful-maps-9fb
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Cartopy는 스칼라 또는 폴리곤 데이터를 사용하여 정적 지도를 그리는 데 완벽한 강력한 잘 알려진 라이브러리입니다. 땅, 물 및 행정 국경에 많은 내장된 레이어를 제공합니다. 매우 쉽게 사용할 수 있으며 직관적인 명령어 세트가 있습니다.
 
@@ -33,7 +41,18 @@ Cartopy는 스칼라 또는 폴리곤 데이터를 사용하여 정적 지도를
 !pip install cartopy
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 데이터를 로드해 봅시다:
 
@@ -58,7 +77,7 @@ ax.set_extent([-160, -105, 40 ,70], crs=ccrs.PlateCarree())#MODIS 제품 지역�
 plt.contourf(lons, lats, data,
              transform=ccrs.PlateCarree(), cmap = 'summer') #matplotlib을 사용하여 데이터의 등고선을 추가합시다
 '''좋은 cartopy 기능 추가하기'''
-ax.add_feature(cfeature.BORDERS, edgecolor='black', linewidth=1) 
+ax.add_feature(cfeature.BORDERS, edgecolor='black', linewidth=1)
 ax.add_feature(cfeature.LAKES,  alpha=0.5)
 ax.add_feature(cfeature.LAND)
 ax.add_feature(cfeature.COASTLINE, edgecolor='black', linewidth=1)
@@ -71,12 +90,22 @@ ax.add_feature(states_provinces, edgecolor='black', zorder=10, linestyle = '-', 
 
 ax.gridlines(draw_labels=True)#그리드 형식 지정
 
-lon, lat = -122.8414, 55.1119 
+lon, lat = -122.8414, 55.1119
 ax.plot(lon,lat,  'bo', markersize=6, color = 'red', transform=ccrs.Geodetic())#지도에 임의의 마커 추가하기
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_2.png)
 
@@ -86,9 +115,18 @@ ax.plot(lon,lat,  'bo', markersize=6, color = 'red', transform=ccrs.Geodetic())#
 
 ![Image 2](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_3.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Python libraries to make beautiful maps](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_4.png)
 
@@ -98,26 +136,42 @@ Cartopy is one of the tools I regularly use in my work, and I hope that you’ll
 
 This library is probably the most popular in the industry, since it’s interactive (it has JS under the hood) and highly customizable. And to start plotting (after installation) you can simply call:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 import folium
 map = folium.Map(location=(50, 0), zoom_start=8) # 위치 - 맵의 중앙, 확대 수준 - 해상도
 map
 
-
 ![이미지](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_5.png)
 
 다른 기본 타일 또는 사용자 정의 타일을 사용할 수 있습니다:
 
-
 map = folium.Map(location=(50, 0), zoom_start=8, tiles="Cartodb Positron")
 map
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_6.png)
 
@@ -136,8 +190,18 @@ map
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_7.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. Plotly
 
@@ -148,14 +212,24 @@ Plotly는 아름다운 대화형 차트로 유명한 또 다른 라이브러리�
 ```python
 import plotly.express as px
 
-fig = px.choropleth(df, locations='iso_a3', hover_name='name', 
+fig = px.choropleth(df, locations='iso_a3', hover_name='name',
                     color='gdp_md_est',
                     projection='natural earth')
 fig.show()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*XGb8bY8LL26sKv2Wmkb-AQ.gif)
 
@@ -170,38 +244,77 @@ m = Map(center=(45, 2), zoom=5)
 m
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_8.png)
 
 별 거 없죠? 그럼 이제 MODIS Terra 제품을 배경지도로 사용해 봅시다!
 
 ```js
-m = Map(basemap=basemap_to_tiles(basemaps.NASAGIBS.ModisTerraTrueColorCR, "2023-08-08"),
-    center=(45, 2), zoom=5)
-m
+m = Map(
+  (basemap = basemap_to_tiles(
+    basemaps.NASAGIBS.ModisTerraTrueColorCR,
+    "2023-08-08"
+  )),
+  (center = (45, 2)),
+  (zoom = 5)
+);
+m;
 ```
 
 ![image](/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_9.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VIIRS 데이터를 사용하여 밤에 지구를 시각화할 수도 있어요:
 
 ```js
-m = Map(basemap=basemaps.NASAGIBS.ViirsEarthAtNight2012,
-    center=(45, 2), zoom=5)
-m
+m = Map(
+  (basemap = basemaps.NASAGIBS.ViirsEarthAtNight2012),
+  (center = (45, 2)),
+  (zoom = 5)
+);
+m;
 ```
 
 <img src="/assets/img/2024-05-20-6pythonlibrariestomakebeautifulmaps_10.png" />
 
 다른 옵션들도 함께 살펴보세요! 옵션이 많이 있답니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 실제 데이터를 시각화해 봅시다. 발견한 라이브러리 중 가장 인상적인 기능 중 하나는 속도 시각화입니다. 이를 위해 1° 해상도를 가진 NCEP(WMC) 예측 데이터를 사용할 수 있습니다. 해당 데이터셋은 2016년 4월 30일 06:00에 가져와졌고, ipyleaflet 라이브러리의 문서에서 제공되었습니다. 이를 읽기 위해 netCDF4 파일을 읽는 데 적합한 xarray를 사용할 것입니다.
 
@@ -238,7 +351,18 @@ m
 
 보시다시피 결과물은 단순히 상호작용형 지도가 아니라 애니메이션 지도입니다. 그렇기 때문에 데이터의 표현력을 향상시키고 데이터가 말하도록 만들어 줍니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5. geemap
 
@@ -259,7 +383,18 @@ DW = ee.ImageCollection("GOOGLE/DYNAMICWORLD/V1")\
 DW_list = DW.toList(DW.size()) # 데이터를 GEE 리스트로 변환
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 그래픽 플로팅을 할 수 있어요:
 
@@ -286,7 +421,18 @@ display(m)
 
 geemap은 GEE와 함께 사용하기 훌륭한 도구라고 생각해요. 다양한 기능을 제공하여 다양한 작업을 해결할 수 있어요. 주요하고 유일한 단점은 사용자 친화적이지 않다는 점이에요. geemap을 사용하기 전에 ee 라이브러리 문법을 알아야 하고, GEE가 어떻게 작동하는지 일반적으로 이해해야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 6. ridgemap
 
@@ -298,7 +444,18 @@ geemap은 GEE와 함께 사용하기 훌륭한 도구라고 생각해요. 다양
 !pip install ridge_map mplcyberpunk
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 맵을 만들어 봅시다:
 
@@ -330,7 +487,18 @@ mplcyberpunk.add_glow_effects() # 빛나는 효과 추가
 
 내 의견으로는 이것이 정말 멋지네요! 이 라이브러리를 확인하고 다른 시각화를 찾아보고 자신만의 시각화를 올려보세요 :)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나중에 이 라이브러리들이 유용하고 당신의 도구상자에 포함할 가치가 있다고 느끼길 바랍니다.
 
@@ -340,6 +508,17 @@ mplcyberpunk.add_glow_effects() # 빛나는 효과 추가
 
 부. (지리)데이터 과학, 머신러닝/인공지능, 기후 변화에 열정적입니다. 그래서 어떤 프로젝트에서 함께 일하고 싶다면 여기나 LinkedIn에서 연락주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 내용을 보려면 팔로우해주세요! 🚀🌌

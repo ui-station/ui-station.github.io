@@ -3,13 +3,12 @@ title: "5개의 무료 엔드 투 엔드 데이터 엔지니어링 프로젝트"
 description: ""
 coverImage: "/assets/img/2024-06-19-5FREEEnd-To-EndDataEngineeringProjects_0.png"
 date: 2024-06-19 12:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-5FREEEnd-To-EndDataEngineeringProjects_0.png
 tag: Tech
 originalTitle: "5 FREE End-To-End Data Engineering Projects"
 link: "https://medium.com/datavidhya/5-free-end-to-end-data-engineering-projects-6477f19370f2"
 ---
-
 
 이 5개의 프로젝트를 수행함으로써 AWS, GCP 및 Azure를 배울 수 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/datavidhya/5-free-end-to-end-data-engineering-projects
 
 데이터 엔지니어링은 복잡한 분야로 들릴 수 있지만, 솔직히 말해서 그렇습니다. 하지만 자전거를 타는 것을 배우는 것처럼 연습을 통해 더 쉽고 직관적으로 되는 법이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작하거나 기술을 향상시키는 데 도움이 되기 위해, 무료로 작업할 수 있는 멋진 다섯 가지 프로젝트를 골라왔어요. 이 프로젝트들은 어떤 것이든 아니에요; 즐겁고 매력적이며 다양한 주제와 도구를 다루고 있어요. 함께 시작해봐요!
 
@@ -29,7 +39,18 @@ link: "https://medium.com/datavidhya/5-free-end-to-end-data-engineering-projects
 
 개발할 수 있는 기술:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Python 및 PySpark으로 코딩하기
 - 데이터 관리를 위한 기본 SQL
@@ -42,7 +63,18 @@ Twitter는 데이터의 보고이에요. 이 프로젝트에서는 Twitter 데�
 
 개발할 기술:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Python 프로그래밍
 - Airflow를 사용하여 작업 자동화
@@ -55,7 +87,18 @@ Twitter는 데이터의 보고이에요. 이 프로젝트에서는 Twitter 데�
 
 개발할 기술:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 실시간 애플리케이션 구축
 - 데이터 스트림을 위한 Kafka 이해
@@ -68,7 +111,18 @@ Uber의 데이터는 방대하고 다양하여 분석 프로젝트에 이상적�
 
 개발할 수 있는 기술:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 모델링 및 분석
 - ETL 스크립트 작성 및 자동화
@@ -81,8 +135,18 @@ Uber의 데이터는 방대하고 다양하여 분석 프로젝트에 이상적�
 
 개발할 수 있는 기술:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - API에서 데이터 추출하기
 - 데이터 엔지니어링을 위해 Azure 서비스 사용하기
@@ -95,6 +159,17 @@ Uber의 데이터는 방대하고 다양하여 분석 프로젝트에 이상적�
 
 데이터 엔지니어링/과학/분석/LLM에 관한 놀라운 블로그를 더 많이 게시할 예정입니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 환영합니다!

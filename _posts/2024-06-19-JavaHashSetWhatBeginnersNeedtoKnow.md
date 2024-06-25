@@ -3,13 +3,12 @@ title: "자바 HashSet 초보자가 꼭 알아야 할 내용"
 description: ""
 coverImage: "/assets/img/2024-06-19-JavaHashSetWhatBeginnersNeedtoKnow_0.png"
 date: 2024-06-19 10:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-JavaHashSetWhatBeginnersNeedtoKnow_0.png
 tag: Tech
 originalTitle: "Java HashSet— What Beginners Need to Know"
 link: "https://medium.com/@AlexanderObregon/java-hashset-what-beginners-need-to-know-ea36588989b8"
 ---
-
 
 <img src="/assets/img/2024-06-19-JavaHashSetWhatBeginnersNeedtoKnow_0.png" />
 
@@ -19,7 +18,18 @@ Java HashSet은 Java에서 가장 일반적으로 사용되는 데이터 구조 
 
 # HashSet이란 무엇인가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HashSet은 Java Collections Framework의 일부이며 Set 인터페이스를 구현합니다. 이는 해시 테이블 (실제로는 HashMap 인스턴스)에 기반하며 중복 요소를 허용하지 않습니다. HashSet의 주요 특징은 다음과 같습니다:
 
@@ -31,7 +41,18 @@ HashSet은 Java Collections Framework의 일부이며 Set 인터페이스를 구
 
 HashSet은 해싱을 사용하여 요소를 저장하고 검색합니다. HashSet에 요소를 추가할 때 다음 단계가 발생합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 해시 코드 계산: 객체의 hashCode 메서드를 호출하여 해시 코드를 계산합니다. 이 해시 코드는 객체의 메모리 주소를 간단히 나타내는 정수 값입니다.
 - 해시 코드 모듈로 연산: 그런 다음 해시 코드를 해시 테이블의 버킷(슬롯) 수로 나누고 나머지를 사용하여 요소를 저장할 버킷의 인덱스로 사용합니다. 이를 통해 해시 코드가 사용 가능한 버킷의 범위 내에 매핑되도록 합니다.
@@ -44,7 +65,18 @@ contains 또는 remove와 같은 작업을 수행할 때 요소의 해시 코드
 
 HashSet은 다양한 시나리오에 적합하게 만드는 여러 장점을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 중복 제거: HashSet은 각 요소가 고유하다고 자동으로 보장합니다. 이는 중복이 허용되지 않는 항목의 컬렉션을 저장해야 하는 경우 유용합니다. 예를 들어, 고유한 사용자 이름이나 제품 ID 목록 등.
 - 효율적인 조회: HashSet은 추가, 삭제, 요소 존재 여부 확인과 같은 기본 작업에 대해 상수 시간 성능을 제공합니다. 이로 인해 캐싱 메커니즘이나 멤버십 테스팅과 같이 빠른 조회가 중요한 사용 사례에 이상적입니다.
@@ -62,19 +94,30 @@ public class HashSetExample {
     public static void main(String[] args) {
         // HashSet 생성
         HashSet<String> set = new HashSet<>();
-        
+
         // HashSet에 요소 추가
         set.add("Avocado");
         set.add("Peach");
         set.add("Cherry");
-        
+
         // HashSet 출력
         System.out.println("HashSet: " + set);
     }
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제에서는 문자열의 HashSet을 만들고 세 가지 요소를 추가합니다. System.out.println 문은 세트의 요소를 출력합니다. 요소의 순서가 보장되지 않는 점을 유의하세요.
 
@@ -87,7 +130,18 @@ public class HashSetExample {
 - 로드 팩터: 로드 팩터는 해시 테이블의 용량이 자동으로 증가되기 전에 얼마나 가득 찰 수 있는지를 측정하는 지수입니다. 기본 로드 팩터 0.75는 시간과 공간 비용 사이의 적절한 균형을 유지합니다.
 - 다시 해싱: 요소 수가 로드 팩터와 현재 용량의 곱을 초과하면 해시 테이블이 리사이징되고(일반적으로 크기가 두 배로 늘어남) 요소가 새 버킷에 다시 해싱됩니다. 이를 통해 HashSet이 성능 특성을 유지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 내부 메커니즘을 이해함으로써, 자바의 HashSets의 효율성과 유연성을 더 잘 이해할 수 있습니다.
 
@@ -97,7 +151,18 @@ public class HashSetExample {
 
 HashSet에 요소를 추가하는 방법은 add 메서드를 사용하는 것입니다. 이미 HashSet에 요소가 있는 경우 다시 추가되지 않습니다. 요소를 제거하는 방법은 remove 메서드를 사용하여 수행할 수 있습니다. 이 작업을 보여주는 예제는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import java.util.HashSet;
@@ -106,18 +171,18 @@ public class HashSetOperations {
     public static void main(String[] args) {
         // Creating a HashSet
         HashSet<String> set = new HashSet<>();
-        
+
         // Adding elements to the HashSet
         set.add("Avocado");
         set.add("Peach");
         set.add("Cherry");
         set.add("Avocado"); // Duplicate element, won't be added
-        
+
         System.out.println("HashSet after adding elements: " + set);
-        
+
         // Removing an element
         set.remove("Peach");
-        
+
         System.out.println("HashSet after removing Peach: " + set);
     }
 }
@@ -129,7 +194,18 @@ public class HashSetOperations {
 
 HashSet이 특정 요소를 포함하는지 확인하려면 contains 메서드를 사용할 수 있습니다. 이 메서드는 요소가 있으면 true를 반환하고 그렇지 않으면 false를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import java.util.HashSet;
@@ -141,11 +217,11 @@ public class HashSetContains {
         set.add("Avocado");
         set.add("Peach");
         set.add("Cherry");
-        
+
         // Checking for elements
         boolean containsAvocado = set.contains("Avocado");
         boolean containsGrape = set.contains("Grape");
-        
+
         System.out.println("Contains Avocado: " + containsAvocado);
         System.out.println("Contains Grape: " + containsGrape);
     }
@@ -158,7 +234,18 @@ public class HashSetContains {
 
 for-each 루프나 반복자(iterator)를 사용하여 HashSet의 요소를 반복할 수 있습니다. HashSet은 요소의 특정 순서를 유지하지 않기 때문에 반복 순서는 보장되지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 For-Each Loop을 사용하는 방법
 
@@ -195,7 +282,7 @@ public class HashSetIterator {
         set.add("Avocado");
         set.add("Peach");
         set.add("Cherry");
-        
+
         // Iterator 사용
         System.out.println("Iterator 사용:");
         Iterator<String> iterator = set.iterator();
@@ -206,7 +293,18 @@ public class HashSetIterator {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제에서는 for-each 루프와 반복자가 모두 HashSet의 요소를 순회하는 데 사용됩니다. 요소들은 콘솔에 출력되지만 순회 순서는 지정되지 않습니다.
 
@@ -224,16 +322,27 @@ public class HashSetSize {
         set.add("Avocado");
         set.add("Peach");
         set.add("Cherry");
-        
+
         // HashSet의 크기 가져오기
         int size = set.size();
-        
+
         System.out.println("HashSet의 크기: " + size);
     }
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예에서는 size 메서드를 사용하여 HashSet의 요소 수를 결정하고 그 값을 콘솔에 출력합니다.
 
@@ -251,16 +360,27 @@ public class HashSetClear {
         set.add("Avocado");
         set.add("Peach");
         set.add("Cherry");
-        
+
         // HashSet 지우기
         set.clear();
-        
+
         System.out.println("HashSet 지우기 후: " + set);
     }
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서 clear 메서드는 모든 요소를 제거하여 빈 세트를 만듭니다.
 
@@ -275,22 +395,33 @@ public class HashSetIsEmpty {
     public static void main(String[] args) {
         // HashSet 만들기
         HashSet<String> set = new HashSet<>();
-        
+
         // HashSet이 비어 있는지 확인
         boolean isEmpty = set.isEmpty();
-        
+
         System.out.println("HashSet이 비어 있는가? " + isEmpty);
-        
+
         // 요소 추가 후 다시 확인
         set.add("Avocado");
         isEmpty = set.isEmpty();
-        
+
         System.out.println("요소를 추가한 후 HashSet이 비어 있는가? " + isEmpty);
     }
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제에서는 HashSet에 요소를 추가하기 전후에 비어 있는지 확인합니다. 출력 결과는 집합의 상태 변화를 반영합니다.
 
@@ -300,7 +431,18 @@ public class HashSetIsEmpty {
 
 HashSet은 사용자 지정 객체를 저장할 수 있지만, 이러한 객체에서 equals 및 hashCode 메소드를 올바르게 재정의하는 것이 중요합니다. 이렇게 하면 HashSet이 두 객체가 동일한지 올바르게 판별하고 해싱을 효과적으로 처리할 수 있습니다. 다음은 사용자 지정 Person 클래스 예제입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import java.util.HashSet;
@@ -309,12 +451,12 @@ import java.util.Objects;
 class Person {
     private String name;
     private int age;
-    
+
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
     }
-    
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -322,12 +464,12 @@ class Person {
         Person person = (Person) o;
         return age == person.age && Objects.equals(name, person.name);
     }
-    
+
     @Override
     public int hashCode() {
         return Objects.hash(name, age);
     }
-    
+
     @Override
     public String toString() {
         return name + " (" + age + ")";
@@ -340,7 +482,7 @@ public class HashSetCustomObjects {
         set.add(new Person("Alice", 30));
         set.add(new Person("Bob", 25));
         set.add(new Person("Alice", 30)); // Duplicate, won't be added
-        
+
         System.out.println("HashSet: " + set);
     }
 }
@@ -352,8 +494,18 @@ public class HashSetCustomObjects {
 
 HashSet은 기본 연산에 대해 상수 시간 성능을 제공하지만 여러 요인이 효율에 영향을 미칠 수 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 해시 함수: 좋은 해시 함수는 성능에 중요합니다. 요소를 균일하게 버킷에 분산시켜 충돌을 최소화해야 합니다. 제대로 구현되지 않은 hashCode 메서드는 많은 충돌을 일으켜 성능을 저하시킬 수 있습니다.
 - 초기 용량 및 로드 요소: HashSet의 초기 용량과 로드 요소(기본값은 0.75)는 리해싱이 발생하는 시점을 결정합니다. 리해싱은 해시 테이블을 크기를 조정하고 요소를 재분배하는 비용이 많이 드는 작업을 포함합니다. 예상 요소 수에 기반하여 이러한 매개변수를 조정하면 성능을 최적화할 수 있습니다.
@@ -365,7 +517,18 @@ HashSets는 다양한 시나리오에서 다양하게 사용할 수 있습니다
 
 - 중복 제거: HashSets는 목록에서 중복 요소를 필터링하는 데 이상적입니다. 예를 들어 더 큰 컬렉션에서 고유한 사용자 이름 목록을 얻기 위해 HashSet를 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import java.util.HashSet;
@@ -380,7 +543,7 @@ public class RemoveDuplicates {
         usernames.add("Alice"); // 중복
 
         HashSet<String> uniqueUsernames = new HashSet<>(usernames);
-        
+
         System.out.println("고유한 사용자명: " + uniqueUsernames);
     }
 }
@@ -410,7 +573,18 @@ public class MembershipTesting {
 
 - 집합 연산: HashSet은 합집합, 교집합, 차집합과 같은 수학적 집합 연산을 수행할 수 있습니다. 이러한 연산은 데이터 필터링, 컬렉션 간 공통 요소 찾기, 특정 항목을 세트에서 제외하는 등의 시나리오에서 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import java.util.HashSet;
@@ -451,7 +625,18 @@ public class SetOperations {
 
 Java의 HashSet은 고유한 요소의 컬렉션을 관리하는 멋진 도구입니다. 요소 추가, 제거, 확인을 위한 효율적인 작업을 제공하여 성능과 고유성이 중요한 시나리오에 이상적입니다. HashSet의 기본 사항, 고급 사용법 및 주요 사용 사례를 이해함으로써 이 유연한 데이터 구조를 사용하여 더 효과적이고 효율적인 Java 프로그램을 작성할 수 있습니다. 중복 필터링, 집합 연산 수행, 사용자 정의 객체 관리와 같은 작업을 수행할 때 HashSet은 컬렉션 요구 사항에 대한 강력한 솔루션을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Java HashSet 문서
 - Java 컬렉션 프레임워크

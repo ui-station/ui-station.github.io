@@ -3,13 +3,12 @@ title: "잘 검토할 수 있는 풀 리퀘스트를 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-19-HowICreateEasy-to-ReviewPullRequests_0.png"
 date: 2024-06-19 10:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowICreateEasy-to-ReviewPullRequests_0.png
 tag: Tech
 originalTitle: "How I Create Easy-to-Review Pull Requests"
 link: "https://medium.com/stackademic/how-i-create-easy-to-review-pull-requests-48fb62c41882"
 ---
-
 
 ## 생산성 | 프로그래밍 | 혁신
 
@@ -19,7 +18,18 @@ link: "https://medium.com/stackademic/how-i-create-easy-to-review-pull-requests-
 
 그러므로, 리뷰하기 쉬운 풀 리퀘스트를 만드는 것이 매우 중요하다고 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. 변경된 파일이 너무 많습니까?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/stackademic/how-i-create-easy-to-review-pull-requests-
 
 ## 2. 요약 섹션 강화하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 중요한 것은 풀 리퀘스트 요약 섹션을 개선하는 것이라고 생각해요. 리뷰에 필요한 모든 정보를 요약 섹션에 모아두는 걸 염두에 두고 있어요.
 
@@ -49,7 +70,18 @@ link: "https://medium.com/stackademic/how-i-create-easy-to-review-pull-requests-
 
 또한 팀 내에서 템플릿을 만들고 해당 항목에 따라 만드는 것도 중요하다고 생각해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. 리뷰 요청하기 전 자가 검토
 
@@ -59,7 +91,18 @@ link: "https://medium.com/stackademic/how-i-create-easy-to-review-pull-requests-
 
 자가 검토를 실시함으로써 리뷰를 요청하기 전 리드 타임은 조금 더 길어지지만 그 결과로 리뷰어의 부담이 줄어들고 리뷰해야 할 영역에 집중할 수 있습니다. 우리는 자가 검토를 중요시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 자기평가 항목 중 일부를 소개하고 싶어요. 이것은 어떤 사람들은 너무 자명해서 확인할 필요가 없다고 생각할 수 있는 항목이라고 생각해요. 그러나 두려움이나 긴장 상태일 때는 이런 중요한 항목도 놓치기 쉬우니, 리뷰를 제출하기 전에 이 항목들을 한 번 확인해요.
 
@@ -72,7 +115,18 @@ link: "https://medium.com/stackademic/how-i-create-easy-to-review-pull-requests-
 
 ## 코드 이외의 확인할 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 파일 변경 사항이 너무 많나요? 10개 이상의 파일이 있는 경우 주의하세요.
 - 풀 리퀘스트를 생성할 때 자신을 할당했나요?
@@ -84,7 +138,18 @@ link: "https://medium.com/stackademic/how-i-create-easy-to-review-pull-requests-
 
 그러나 저는 보통의 일을 철저히 하는 것이 중요하다고 믿습니다. 비즈니스 성장 속도를 높이기 위해, 계속해서 리뷰하기 쉬운 풀 리퀘스트를 작성할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스택아데믹
 

@@ -3,13 +3,12 @@ title: "Jetpack Compose 내비게이션 초보부터 고급까지 전체 가이�
 description: ""
 coverImage: "/assets/img/2024-05-18-NavigationinJetpackcomposeFullguideBeginnertoAdvanced_0.png"
 date: 2024-05-18 17:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-NavigationinJetpackcomposeFullguideBeginnertoAdvanced_0.png
 tag: Tech
 originalTitle: "Navigation in Jetpack compose. Full guide Beginner to Advanced."
 link: "https://medium.com/@KaushalVasava/navigation-in-jetpack-compose-full-guide-beginner-to-advanced-950c1133740"
 ---
-
 
 아래는 Markdown 형식으로 변환되었습니다.
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@KaushalVasava/navigation-in-jetpack-compose-full-guid
 
 Android JetPack 네비게이션은 고수준의 네비게이션을 간편하게 구현하는 데 도움을 줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네비게이션 컴포넌트는 세 가지 주요 부분으로 구성되어 있어요:
 
@@ -33,7 +43,18 @@ Android JetPack 네비게이션은 고수준의 네비게이션을 간편하게 
 
 네비게이션 컴포넌트는 Jetpack Compose 애플리케이션을 지원해줍니다. 네비게이션 컴포넌트의 인프라와 기능을 활용하면서 컴포저블들 간을 이동할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Jetpack Compose에서 탐색을 시작하려면 프로젝트의 build.gradle 파일에 필수 종속성을 포함해야 합니다:
 
@@ -45,7 +66,18 @@ Jetpack Compose에서 탐색에 대한 기본 개념.
 
 ## NavController:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NavController은 네비게이션 컴포넌트의 중심 API입니다. 상태를 유지하며, 앱의 화면을 구성하는 컴포저블의 백 스택 및 각 화면의 상태를 추적합니다.
 
@@ -57,7 +89,18 @@ val navController = rememberNavController()
 
 NavController를 만들 때는 모든 컴포저블이 해당 NavController에 액세스할 수 있는 컴포저블 계층구조의 적절한 위치에서 만들어야 합니다. 이는 상태 끌어올리기(state hoisting)의 원리를 따르며, 현재 currentBackStackEntryAsState()를 통해 제공되는 NavController 및 상태를 통해 화면 외부의 컴포저블을 업데이트하는 데 참고할 수 있도록 합니다. 이러한 기능의 예시는 바텀 네비게이션바와의 통합을 참고하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## NavHost:
 
@@ -73,7 +116,18 @@ NavHost(navController = navController, startDestination = "profile") {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시: 네비게이션 그래프, 네브호스트 및 네비게이션 아이템 설정하는 방법
 
@@ -81,7 +135,7 @@ NavHost(navController = navController, startDestination = "profile") {
 
 ```kotlin
 enum class Screen {
-    HOME,    
+    HOME,
     LOGIN,
 }
 sealed class NavigationItem(val route: String) {
@@ -92,7 +146,18 @@ sealed class NavigationItem(val route: String) {
 
 단계 2: NavHost 및 화면을 정의합니다. 예시. AppNavHost.kt
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -139,10 +204,20 @@ class MainActivity : ComponentActivity() {
 
 ## 네비게이션 인자:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-네비게이션 Compose는 코틀린을 사용하여 콤포저블 목적지 간에 인수를 전달하는 것을 지원합니다. 이를 위해 기본 네비게이션 라이브러리를 사용할 때 딥 링크에 인수를 추가하는 방식과 유사한 방식으로 라우트에 인수 자리 표시자를 추가해야 합니다. 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+네비게이션 Compose는 코틀린을 사용하여 콤포저블 목적지 간에 인수를 전달하는 것을 지원합니다. 이를 위해 기본 네비게이션 라이브러리를 사용할 때 딥 링크에 인수를 추가하는 방식과 유사한 방식으로 라우트에 인수 자리 표시자를 추가해야 합니다.
 
 ## 사용 사례:
 
@@ -151,7 +226,18 @@ class MainActivity : ComponentActivity() {
 
 3. 사용자가 정의한 데이터 유형 같은 복잡한 인수를 사용할 때
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 선택적 매개변수
 
@@ -167,7 +253,18 @@ NavHost(navController = navController, startDestination = "profile") {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 간단한 인수로:
 
@@ -182,7 +279,18 @@ NavHost(startDestination = "profile/{userId}") {
 
 기본적으로 모든 인수는 문자열로 구문 분석됩니다. composable()의 인수 매개변수는 NamedNavArguments의 목록을 허용합니다. navArgument 메서드를 사용하여 NamedNavArgument를 빠르게 만들고 그 정확한 유형을 지정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 NavHost(startDestination = "profile/{userId}") {
@@ -190,7 +298,7 @@ NavHost(startDestination = "profile/{userId}") {
     composable(
         "profile/{userId}",
         arguments = listOf(navArgument("userId"){
-           type = NavType.StringType 
+           type = NavType.StringType
         })
     ) {...}
 }
@@ -208,10 +316,21 @@ NavHost(startDestination = "profile/{userId}") {
 
 대상으로 전달하려면 navigate 호출 시 경로에 추가해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-navController.navigate("profile/user1234")
+navController.navigate("profile/user1234");
 ```
 
 지원되는 유형 목록을 보려면 전달 방법을 참조하세요.
@@ -220,11 +339,22 @@ navController.navigate("profile/user1234")
 
 이동할 때 복잡한 데이터 객체를 전달하는 것은 권장되지 않지만 대신 고유 식별자 또는 기타 형식의 ID와 같이 최소한의 정보를 인수로 전달해야합니다. 이를 통해 이동 작업 수행 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // 새로운 대상으로 이동할 때 사용자 ID만 전달하실 때
-navController.navigate("profile/user1234")
+navController.navigate("profile/user1234");
 ```
 
 복잡한 객체는 데이터 레이어와 같은 단일 진실의 원천으로 저장해야 합니다. 이동 후 목적지에 도착하면 전달된 ID를 사용하여 단일 진실의 원천에서 필요한 정보를로드할 수 있습니다. 데이터 레이어에 액세스하는 ViewModel에서 인수를 검색하려면 SavedStateHandle를 사용할 수 있습니다.
@@ -241,8 +371,8 @@ class UserViewModel(
     private val userInfo: Flow<UserInfo> = userInfoRepository.getUserInfo(userId)
 
    --------------- OR -----------------
- 
-    // 네트워크 또는 데이터베이스에서 데이터 가져오기    
+
+    // 네트워크 또는 데이터베이스에서 데이터 가져오기
     private val _dataFlow =
             MutableStateFlow<UserInfo>(userInfoRepository.getUserInfo(userId))
     val dataFlow get() = _dataFlow.asStateFlow()
@@ -251,16 +381,27 @@ class UserViewModel(
 
 적합한 기능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 //Navhost
 composable("profile/{userId}") { backStackEntry ->
    val userId = backStackEntry.arguments?.getString("userId")
    // 여기서 사용자 데이터를 가져와야 합니다
-   val userInfo by taskViewModel.dataFlow.collectAsState()   
+   val userInfo by taskViewModel.dataFlow.collectAsState()
    Profile(
-      navController, 
+      navController,
       userInfo
    )
 }
@@ -278,8 +419,18 @@ fun Profile(navController: NavController, userInfo: UserInfo){
 
 ## 선택적 인수 추가하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Navigation Compose는 선택적 네비게이션 인수도 지원합니다. 선택적 인수는 필수 인수와 두 가지 방법으로 다릅니다:
 
@@ -310,7 +461,18 @@ composable(
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 대상에 인수가 전달되지 않더라도 defaultValue = "user1234"가 대신 사용됩니다.
 
@@ -320,7 +482,18 @@ composable(
 
 결과 값을 사용하여 되돌아가는 것이 가장 일반적인 작업입니다. 즉, 필터 대화상자를 열고 필터를 선택한 다음 해당 필터를 적용하기 위해 선택된 필터와 함께 되돌아가는 경우입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 개의 화면이 있습니다. 1. 첫 번째 화면과 2. 두 번째 화면입니다. 우리는 두 번째 화면에서 첫 번째 화면으로 데이터를 필요로 합니다.
 
@@ -343,13 +516,24 @@ NavHost.kt : 내비게이션 그래프 설정.
 
 FirstScreen.kt: NavController의 현재 백 스택 항목의 savedStateHandle를 사용하여 두 번째 화면에서 다시 이동한 후 데이터를 검색합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
 fun FirstScreen(navController: NavController) {
     // 다음 화면에서 데이터를 가져옵니다
-    val msg = 
+    val msg =
         navController.currentBackStackEntry?.savedStateHandle?.get<String>("msg")
     Column(
         Modifier.fillMaxSize(),
@@ -390,7 +574,7 @@ fun SecondScreen(navController: NavController) {
         Button(onClick = {
 
            // 데이터를 savedStateHandle에 넣어 이전 화면에서 데이터를 가져옵니다
-   
+
             navController.previousBackStackEntry?.savedStateHandle?.set("msg", text)
             navController.popBackStack()
         }) {
@@ -400,10 +584,20 @@ fun SecondScreen(navController: NavController) {
 }
 ```
 
-비디오: 
+비디오:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://github.com/KaushalVasava/JetPackCompose_Basic/assets/49050597/1d96d44f-66e1-4f3b-bba1-2844ab6553cc
 
@@ -413,7 +607,18 @@ GitHub 저장소: https://github.com/KaushalVasava/JetPackCompose_Basic/tree/nav
 
 Navigation Compose은 암시적 딥 링크를 지원하며 composable() 함수의 일부로 정의할 수 있습니다. 딥 링크 매개변수 deepLinks는 navDeepLink 메소드를 사용하여 빠르게 생성할 수 있는 NavDeepLinks 목록을 수용합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 val uri = "https://www.example.com"
@@ -438,8 +643,18 @@ composable(
 
 다른 앱에 의해 트리거된 경우 딥 링크가 활성화될 때 해당 composable로 자동으로 이동합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 동일한 딥 링크는 콤포저블에서 적절한 딥 링크와 함께 PendingIntent를 작성하는 데 사용할 수도 있습니다:
 
@@ -454,11 +669,11 @@ val deepLinkIntent = Intent(
 )
 val deepLinkPendingIntent: PendingIntent? = TaskStackBuilder.create(context).run {
     addNextIntentWithParentStack(deepLinkIntent)
-    
+
     val flag = if(Build.VERSION.SDK_INT > Build.VERSION_CODES.S){
                     PendingIntent.FLAG_IMMUTABLE
-                } 
-                else 
+                }
+                else
                     PendingIntent.FLAG_UPDATE_CURRENT
     getPendingIntent(0, flag)
 }
@@ -468,8 +683,18 @@ val deepLinkPendingIntent: PendingIntent? = TaskStackBuilder.create(context).run
 
 # 중첩된 내비게이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-NavigationinJetpackcomposeFullguideBeginnertoAdvanced_1.png)
 
@@ -478,9 +703,19 @@ val deepLinkPendingIntent: PendingIntent? = TaskStackBuilder.create(context).run
 중첩 그래프는 메인 그래프처럼 대상을 그룹화하며 해당 경로에 대한 지정된 시작 대상이 필요합니다. 이것은 중첩된 그래프의 경로에 액세스할 때 이동할 위치입니다.
 
 NavHost에 중첩된 그래프를 추가하려면 네비게이션 익스텐션 함수를 사용할 수 있습니다.
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 NavHost(navController, startDestination = "home") {
@@ -511,7 +746,18 @@ fun NavGraphBuilder.loginGraph(navController: NavController) {
 
 NavGraphBuilder를 확장 메소드로 만들면 미리 작성된 navigation, composable, dialog 익스텐션 메소드와 함께 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 NavHost(navController, startDestination = "home") {
@@ -545,7 +791,7 @@ NavHost(navController = navController, startDestination = "home") {
         }
         composable("register") {
             val viewModel = it.sharedViewModel<SampleViewModel>(navController)
-        } 
+        }
         composable("forgot_password") {
             val viewModel = it.sharedViewModel<SampleViewModel>(navController)
         }
@@ -562,7 +808,18 @@ NavHost(navController = navController, startDestination = "home") {
 
 NavBackStack entry를 위한 확장 함수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -581,8 +838,18 @@ inline fun <reified T : ViewModel> NavBackStackEntry.sharedViewModel(navControll
 
 BottomNavigation 및 BottomNavigationItem 구성 요소를 사용하려면 Android 애플리케이션에 androidx.compose.material 종속성을 추가하십시오.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 좌측 테이블을 Markdown 형식으로 변환했습니다.
@@ -599,7 +866,18 @@ sealed class Screen(val route: String, @StringRes val resourceId: Int) {
 
 이후 BottomNavigationItem에서 사용할 수 있는 리스트에 해당 항목을 넣으십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val items = listOf(
@@ -643,10 +921,20 @@ Scaffold(
         composable(Screen.FriendsList.route) { FriendsList(navController) }
     }
 }
-```  
+```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NavController.currentBackStackEntryAsState() 메소드를 활용하여 네비게이션 컨트롤러 상태를 NavHost 함수 밖으로 빼내어 BottomNavigation 컴포넌트와 공유합니다. 이렇게 하면 BottomNavigation이 항상 최신 상태를 가지게 됩니다.
 
@@ -656,6 +944,17 @@ NavController.currentBackStackEntryAsState() 메소드를 활용하여 네비게
 
 안드로이드, 코틀린 및 KMP 관련 도움이 필요하시다면 언제든지 도와드리겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Medium, LinkedIn, Twitter, GitHub, Instagram에서 나를 팔로우하고 DM으로 앱 개발 프리랜싱 업무를 문의해주세요.

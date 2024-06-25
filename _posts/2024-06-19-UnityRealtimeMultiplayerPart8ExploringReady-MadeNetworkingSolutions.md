@@ -3,13 +3,12 @@ title: "유니티 실시간 멀티플레이어, 파트 8 사용 가능한 네트
 description: ""
 coverImage: "/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_0.png"
 date: 2024-06-19 11:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_0.png
 tag: Tech
 originalTitle: "Unity Realtime Multiplayer, Part 8: Exploring Ready-Made Networking Solutions"
 link: "https://medium.com/my-games-company/unity-realtime-multiplayer-part-8-exploring-ready-made-networking-solutions-10f3b6f76cf9"
 ---
-
 
 멀티플레이어 게임에서는 클라이언트들이 동기화되어야 합니다. 데이터 패킷을 직접 교환하는 것이 가능하지만, 이는 경험이 적은 개발자들에겐 복잡할 수 있습니다. 그러므로 우리는 다양한 케이스에 대한 준비된 네트워킹 솔루션을 살펴보겠습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/my-games-company/unity-realtime-multiplayer-part-8-exp
 
 # 전송에 대한 간단한 메모
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 멀티플레이어 게임에서 서버와 클라이언트는 네트워크를 통해 패킷을 보내는 방식으로 데이터를 교환합니다. 서로 다른 위치에서 접속한 플레이어들을 위해 공유된 가상 공간을 만들기 위해, 게임 프로세스에서 발생하는 이벤트(캐릭터 이동 또는 오브젝트 생성과 같은)는 다른 클라이언트와 동기화되어 데이터 패킷을 보내는 것으로 처리됩니다. 네트워크를 통해 패킷을 송수신하는 책임을 맡고 있는 부분을 전송 계층이라고 부릅니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/my-games-company/unity-realtime-multiplayer-part-8-exp
 
 유니티는 Netcode 패키지 두 가지를 제공합니다: GameObjects용 Netcode(미리보기 릴리스 단계), Entities용 Netcode(실험 모드) 그리고 폐기된 UNET. 또한 Unity Relay 서비스를 제공하여 게임 클라이언트를 연결합니다 - 이에 대해 간단히 언급하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 유니티 릴레이
 
@@ -39,7 +60,18 @@ link: "https://medium.com/my-games-company/unity-realtime-multiplayer-part-8-exp
 
 릴레이 서비스를 통해 플레이어들은 UDP, DTLS 및 안전한 WebSocket (WSS)를 포함한 여러 다양한 프로토콜을 통해 통신할 수 있습니다. 릴레이 서버를 선택한 후에 클라이언트는 앞에서 언급한 프로토콜 중 하나를 사용하여 직접 릴레이 서버와 통신합니다. WebSocket 연결을 통해 WebGL을 사용하는 브라우저에서 멀티플레이어 연결이 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Relay는 모든 게임 엔진과 함께 작동합니다. Unity에서 Relay를 사용하는 경우 Unity Transport Package (UTP)와 통합된 Relay SDK를 사용하는 것이 좋습니다.
 
@@ -49,7 +81,18 @@ Unity Transport은 멀티플레이어 게임을 개발하기 위한 저수준 �
 
 Unity Transport는 UDP 및 WebSockets 위에 제공된 연결 기반 추상화 계층(내장된 네트워크 드라이버) 덕분에 Unity Engine에서 지원하는 모든 플랫폼을 손쉽게 지원합니다. UDP 및 WebSockets를 암호화 여부에 관계없이 구성할 수 있습니다. 신뢰성, 패킷 순서, 패킷 분할과 같은 추가 기능을 제공하기 위해 파이프라인도 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Transport 2.0의 주요 기능은 WebGL 지원이 추가되었습니다. 이를 통해 Unity Transport 패키지를 Unity Engine의 모든 지원 플랫폼에서 사용할 수 있게 되었습니다. Transport 사용자들은 이제 Websocket 전송의 구현에 접근할 수 있습니다. TLS를 사용하든 사용하지 않든 움직이는 플레이어는 일반적으로 셀룰러 타워 사이에서 네트워크 이동을 투명하게 활용할 수 있습니다. 이 기능은 현재 클라이언트 측과 UDP 전송에만 제한되어 있습니다.
 
@@ -59,7 +102,18 @@ Unity Transport를 사용하려면 Unity Editor 버전 2022.2 이상을 설치�
 
 Relay는 Unity Transport (UTP)와 함께 작동합니다. 이를 통해 엄격한 방화벽과 같은 라우팅 제한으로 인해 통신할 수 없는 클라이언트들이 연결할 수 있게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Unity Relay 제한 사항
 
@@ -72,7 +126,18 @@ Relay는 다음과 같은 제한 사항이 있습니다:
 
 제한 사항이 있지만, Relay 서비스는 플레이어 연결을 간편화하고 원활한 멀티플레이어 게임 경험을 제공하는 강력한 도구입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # GameObjects를 위한 Netcode
 
@@ -80,8 +145,18 @@ Relay의 메인 게임 네트워크 코드를 위한 가장 인기 있는 두 �
 
 대부분의 경우 NGO를 사용하는 것이 권장되는 최상의 방법이며, 네트워크 변수, 씬 관리, 원격 프로시저 호출 (RPC), 그리고 메시징과 같은 안정적인 핵심 기능을 제공합니다. 그러나, API Mirror Networking은 NGO가 제공하는 전체 기능 세트를 요구하지 않는 게임에도 간편하고 사용하기 쉬운 기능을 제공하기 때문에 훌륭합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_3.png)
 
@@ -91,8 +166,18 @@ Photon Realtime은 퓨전이나 퀀텀 솔루션에서 찾을 수 있는 게임 
 
 Photon Realtime이라는 용어는 또한 클라이언트와 서버 간 상호 작용을 정의하는 API, 도구 및 서비스의 포괄적인 프레임워크를 포함합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 Photon Realtime 클라이언트는 세 가지 명확한 작업으로 나뉜 전용 서버 시퀀스에 연결합니다: 인증 및 지역 배포 (Name Server), 플레이어 매칭 (Master Server) 및 게임 플레이 (Game Server). 이러한 서버들은 Realtime API를 통해 관리되므로 걱정할 필요가 없습니다. 하지만 이러한 서버에 대한 이해는 확실히 도움이 될 수 있습니다.
 
@@ -102,17 +187,39 @@ Photon Realtime에서는 방 데이터를 쉽게 저장하고 로드할 수 있�
 
 # Photon Fusion
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_4.png)
 
-포톤 퓨전은 Unity를 위한 네트워크 상태 동기화를 위한 새로운 고성능 라이브러리입니다. 두 가지 주요하게 다른 네트워크 토폴로지를 지원하며, API 하나를 사용하여 네트워크 연결이 없는 경우에도 플레이어 한 명을 위한 모드를 지원합니다. 
+포톤 퓨전은 Unity를 위한 네트워크 상태 동기화를 위한 새로운 고성능 라이브러리입니다. 두 가지 주요하게 다른 네트워크 토폴로지를 지원하며, API 하나를 사용하여 네트워크 연결이 없는 경우에도 플레이어 한 명을 위한 모드를 지원합니다.
 
 Fusion은 Unity 워크플로에 통합하기 쉽도록 설계되었으며, 데이터 압축, 클라이언트 측 예측, 지연 보상 등의 고급 기능을 해당 제품에 기본으로 제공합니다.
 
 예를 들어 Fusion에서 RPC 및 네트워크 상태는 MonoBehaviour 메서드 및 속성에 속성을 사용하여 정의되므로 명시적 직렬화 코드가 필요하지 않으며, 네트워크 오브젝트는 Unity 프리팹의 최신 기능을 모두 사용하여 정의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 퓨전은 최신 압축 알고리즘을 사용하여 대역폭 요구량을 줄이고 프로세서에 미미한 오버헤드를 발생시킵니다. 데이터는 완전 압축된 스냅샷으로 전송되거나 후속 일관성을 보장하는 부분 블록으로 전송됩니다. 후자의 경우, 매우 큰 플레이어 수를 지원하는 맞춤형 관심 영역 시스템이 제공됩니다.
 
@@ -122,7 +229,18 @@ Fusion은 Unity 워크플로에 통합하기 쉽도록 설계되었으며, 데�
 
 퓨전은 빠른 게임 또는 프로토타입 생성을 위해 다양한 사전 구축된 NetworkBehaviours를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Fusion은 입력 처리를 두 단계로 구분합니다: 로컬 하드웨어에서 입력을 수집하고 구조체에 넣은 다음 해당 입력을 읽어 게임 상태를 변경합니다(시뮬레이션을 진행).
 
@@ -132,7 +250,18 @@ Fusion은 일반 Fusion 입력 또는 [Networked] 속성 사용이 가장 실용
 
 ![이미지](/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포톤 퀀텀은 멀티플레이어 게임용으로 완전한 결정론적 엔진입니다. 예측/롤백 방식에 기반한 이 엔진은 딜레이에 민감한 온라인 게임에 완벽하게 적합합니다. 액션 RPG, 스포츠 게임, 대전 게임, FPS 등과 같은 게임들에 특히 유용합니다.
 
@@ -142,7 +271,18 @@ Fusion은 일반 Fusion 입력 또는 [Networked] 속성 사용이 가장 실용
 
 결정론적인 게임은 치팅에 저항력이 내재되어 있습니다. 치트에 대항하기 위한 가장 효과적인 방법은 재생 또는 서버-판정 시뮬레이션을 확인하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 플레이어 입력은 Photon Cloud 서버로 전송되어 다른 플레이어들 사이에 분산됩니다. 웹훅(Webhooks)을 사용하면 자체 백엔드와 플러그인을 연결하여 서버 측에서 사용자 정의 코드를 실행할 수 있습니다.
 
@@ -152,7 +292,18 @@ Quantum에서 인코딩된 시뮬레이션은 Unity에 종속성이 없어 어�
 
 # 노름코어(Normcore)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_7.png" />
 
@@ -162,7 +313,18 @@ RealtimeTransform 컴포넌트를 추가하면 Normcore는 모든 객체 변환�
 
 Normcore의 주요 장점 중 하나는 WebRTC를 기반으로 한 빠른 데이터 전송입니다. 전송 중 단편화를 발생시키지 않는 최대 패킷 크기를 사용하여 데이터 전송 프로세스를 가속화합니다. Normcore의 모든 데이터 패킷은 기본적으로 암호화되어 있어 사용자 데이터의 보안과 기밀성을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노름코어는 델타 업데이트 시스템을 사용합니다. 이는 마지막 데이터 패킷이 전송된 이후의 모든 변경 사항을 추적하고, 새로운 패킷을 전송할 때 어떤 것을 포함해야 하는지 이미 알고 있는 것을 의미합니다. 이를 통해 자원을 절약하고 성능을 향상시킵니다. 노름코어의 데이터 직렬화 기능은 CPU 사용량 최적화를 가능하게 합니다. 모든 직렬화 코드는 프로젝트 컴파일 전에 자동으로 생성되어 빠르고 효율적인 자원 사용을 보장합니다.
 
@@ -172,7 +334,18 @@ Normcore의 주요 장점 중 하나는 WebRTC를 기반으로 한 빠른 데이
 
 ![이미지](/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Mirror Networking은 Unity용 고수준 네트워크 라이브러리로, 사용 편의성과 신뢰성을 최적화했습니다. 이 라이브러리는 네트워크 연결을 다루는 과정을 간단하게 만들어 개발자가 프로젝트 작성에 집중할 수 있도록 설계되었습니다.
 
@@ -182,7 +355,18 @@ Mirror Networking은 12가지 이상의 저수준 프로토콜과 호환되며 �
 
 # Nakama
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![FishNet image](/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_9.png)
 
@@ -192,17 +376,39 @@ Mirror Networking은 12가지 이상의 저수준 프로토콜과 호환되며 �
 
 # FishNet
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-19-UnityRealtimeMultiplayerPart8ExploringReady-MadeNetworkingSolutions_10.png)
 
-Fish-Networking은 무료 오픈 소스 라이브러리로, Unity에서 개발된 네트워킹 솔루션을 제공하는 것입니다. 이는 경험 많은 게임 디자이너가 개발했으며, 일반적으로 유료 솔루션에서만 사용할 수 있는 많은 기능을 제공합니다. 
+Fish-Networking은 무료 오픈 소스 라이브러리로, Unity에서 개발된 네트워킹 솔루션을 제공하는 것입니다. 이는 경험 많은 게임 디자이너가 개발했으며, 일반적으로 유료 솔루션에서만 사용할 수 있는 많은 기능을 제공합니다.
 
 Fish-Networking의 주요 장점은 대역폭 및 리소스 최적화(서버 비용 절감), 수십 명에서 수백 명까지의 많은 플레이어를 지원하며, 클라이언트 예측, 지연 보상, 서버 부하 분산, 중첩 네트워크 객체 지원 등의 내장 기능이 있습니다.
 
 # 솔루션 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 표는 유니티에서 게임 개발을 위한 다양한 네트워크 솔루션을 프로토콜 사용, 지원되는 위상들, 세션 당 최대 플레이어 수, 최소 지원 유니티 버전 및 현재 상태로 비교하여 제공합니다.
 

@@ -10,7 +10,6 @@ originalTitle: "RAG Technology: A Comprehensive Exploration for Maximizing Large
 link: "https://medium.com/@interprobeit/rag-technology-a-comprehensive-exploration-for-maximizing-large-language-model-potential-1b4a172ee03b"
 ---
 
-
 ![RAG Technology](/assets/img/2024-05-23-RAGTechnologyAComprehensiveExplorationforMaximizingLargeLanguageModelPotential_0.png)
 
 대형 언어 모델(LLM)은 자연어 처리(NLP)를 혁신적으로 변화시켰습니다. 기계가 이전에는 인간만 할 수 있었던 작업을 수행할 수 있게 했습니다. 그러나 대규모 학습 데이터셋에 대한 의존 및 새로운 도메인에 적응하는 어려움을 포함한 제한 사항이 존재합니다. 검색 증강 생성(RAG) 기술은 더 다재다능하고 효율적인 NLP 프레임워크를 위해 정보 검색과 LLM 강점을 결합한 해결책으로 등장했습니다.
@@ -19,8 +18,18 @@ link: "https://medium.com/@interprobeit/rag-technology-a-comprehensive-explorati
 
 풍부한 텍스트 데이터로 학습된 LLM의 등장은 NLP를 변혁했습니다. 이러한 모델은 인간과 유사한 품질의 텍스트를 생성하고 언어를 번역하며 창의적인 콘텐츠를 작성하고 질문에 정보적으로 답할 수 있습니다. 그러나 놀라운 능력을 가지고 있지만, LLM은 제한 사항을 직면하고 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 의존성: 최신 정보를 유지하고 특정 도메인에 적응하는 것은 대규모 훈련 데이터 세트에 의존하기 때문에 어려울 수 있습니다.
 - 계산 비용: LLM(대형 언어 모델)을 훈련하고 배포하는 것은 계산적으로 비용이 많이 들 수 있어서, 리소스가 제한된 연구자와 실무자들의 접근성이 제한될 수 있습니다.
@@ -33,7 +42,18 @@ link: "https://medium.com/@interprobeit/rag-technology-a-comprehensive-explorati
 - 사용자 맥락과 선호도에 기반한 맞춤형 추천 및 출력 생성합니다.
 - 지식 기반이나 문서 저장소를 간단히 변경함으로써 새로운 도메인에 적응합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RAG 아키텍처
 
@@ -50,7 +70,18 @@ RAG는 두 가지 주요 구성 요소로 구성되어 있습니다:
 
 RAG 워크플로우
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RAG 워크플로우는 세 단계 프로세스를 따릅니다:
 
@@ -62,7 +93,18 @@ RAG의 장점
 
 RAG는 전통적인 LLM 접근 방식보다 여러 가지 장점을 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 실시간 정보 접근: 외부 정보 소스에 실시간으로 접근하고 처리하여 최신 응답을 보장합니다.
 - 맞춤형 추천 및 결과물: 사용자 컨텍스트와 선호도에 기반한 맞춤형 추천과 결과물을 생성합니다.
@@ -79,7 +121,18 @@ RAG는 다양한 분야에서 다양한 잠재적인 응용 프로그램을 제�
 - 고객 서비스: 고객의 상황을 이해하고 관련 정보 및 지원을 제공하여 맞춤형 고객 서비스를 제공합니다.
 - 리스크 관리와 사기 분석: 다양한 소스에서 대량의 데이터를 분석하여 잠재적인 위험과 사기를 식별합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RAG 대 Model Fine-tuning
 
@@ -91,7 +144,18 @@ RAG와 Model Fine-tuning 중 어떤 것을 선택할지는 여러 요소에 따�
 
 기술적 고려 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최적 RAG 성능을 위한 몇 가지 기술적 고려 사항이 있습니다:
 
@@ -113,7 +177,18 @@ RAG의 미래 방향
 
 RAG 기술이 계속 발전함에 따라, 더 많은 진전을 위한 유망한 연구 분야가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Explainable AI (XAI): RAG 시스템이 결과물에 도달하는 방법을 설명하는 기술을 개발하여 사용자 신뢰를 촉진하고 잠재적인 오류를 해결하는 데 도움을 줍니다.
 - RAG 시스템을 위한 평생 학습: RAG 모델이 시간이 지남에 따라 지속적으로 학습하고 적응하는 방법을 탐구하여 새로운 정보를 통합하고 장거리 재훈련 없이 성능을 향상시킵니다.

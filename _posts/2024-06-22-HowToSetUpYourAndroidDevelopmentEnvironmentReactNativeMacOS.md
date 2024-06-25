@@ -3,14 +3,12 @@ title: " Mac OS에서 React Native를 사용한 Android 개발 환경 설정 방
 description: ""
 coverImage: "/assets/img/2024-06-22-HowToSetUpYourAndroidDevelopmentEnvironmentReactNativeMacOS_0.png"
 date: 2024-06-22 23:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-HowToSetUpYourAndroidDevelopmentEnvironmentReactNativeMacOS_0.png
 tag: Tech
 originalTitle: "📱 How To Set Up Your Android Development Environment (React Native , Mac OS)"
 link: "https://medium.com/@tiaeastwood/how-to-set-up-your-android-development-environment-react-native-mac-os-b2727b8b4f3f"
 ---
-
-
 
 ![Image](/assets/img/2024-06-22-HowToSetUpYourAndroidDevelopmentEnvironmentReactNativeMacOS_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@tiaeastwood/how-to-set-up-your-android-development-en
 
 Homebrew는 macOS용 패키지 매니저로 소프트웨어 설치를 간편하게 해줘요. 아직 설치하지 않았다면, 터미널을 열고 다음을 실행하세요:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -33,7 +41,18 @@ Homebrew는 macOS용 패키지 매니저로 소프트웨어 설치를 간편하�
 
 - 이러한 모든 것을 설치하려면 Homebrew를 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 brew install nvm
@@ -50,7 +69,18 @@ nvm install node
 
 - 그런 다음 Java를 다운로드하고 설치하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 3: 안드로이드 스튜디오 설치
 
@@ -62,7 +92,18 @@ https://developer.android.com/studio 에서 안드로이드 스튜디오를 다�
 
 체크 박스가 보이지 않는 경우 나중에 안드로이드 스튜디오의 SDK 관리자를 통해 이러한 구성 요소를 설치할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 4: JAVA_HOME 변수 설정하기
 
@@ -75,7 +116,18 @@ echo export "JAVA_HOME=\$(/usr/libexec/java_home)" >> ~/.bash_profile
 
 - macOS Catalina 이상을 실행 중이라면 zsh를 사용 중이라고 가정하는 경우 대신 다음과 같이해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 echo export "JAVA_HOME=\$(/usr/libexec/java_home)" >> ~/.zshrc
@@ -87,7 +139,18 @@ echo export "JAVA_HOME=\$(/usr/libexec/java_home)" >> ~/.zshrc
 
 React Native는 Android SDK의 위치를 알아야합니다. 이는 ANDROID_HOME 환경 변수를 설정하여 달성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 터미널을 엽니다.
 - 파일을 만들거나 이미 있는 경우 파일을 엽니다:
@@ -108,7 +171,18 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 앱을 실행할 Android Virtual Device(AVD)가 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 안드로이드 스튜디오를 열어주세요.
 - 상단 메뉴에서 Device Manager를 클릭해주세요.
@@ -123,7 +197,18 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # 8단계: 새 애플리케이션 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모두 준비되었습니다! 다음 명령을 실행하여 새로운 React Native 애플리케이션을 만들 수 있어요:
 
@@ -139,7 +224,18 @@ Android 가상 장치에서 React Native 애플리케이션을 실행하려면:
 - 터미널이나 코드 편집기에서 npm start 명령을 실행하세요.
 - 그런 다음 Android에서 실행하려면 "a"를 입력하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기요! 지금 모두 잘 되고 있기를 바라요. 앱 만드는 즐거움이 가득하길!
 

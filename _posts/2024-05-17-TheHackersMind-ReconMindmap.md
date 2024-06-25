@@ -3,13 +3,12 @@ title: "해커의 마음 - Recon 마인드 맵"
 description: ""
 coverImage: "/assets/img/2024-05-17-TheHackersMind-ReconMindmap_0.png"
 date: 2024-05-17 20:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-TheHackersMind-ReconMindmap_0.png
 tag: Tech
 originalTitle: "The Hacker’s Mind -Recon Mind map"
 link: "https://medium.com/@tamhacker1/the-hackers-mind-recon-mind-map-39d14e3750fb"
 ---
-
 
 By Tahir Mujawar, 인증된 윤리적 해커 및 사이버 보안 연구원
 
@@ -19,7 +18,18 @@ By Tahir Mujawar, 인증된 윤리적 해커 및 사이버 보안 연구원
 
 Recon은 정보 수집뿐만 아니라 통찰력, 선견지달력 및 보이지 않는 위협에 대항하는 촉매의 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Recon Mind Map을 만드는 목적은 학습을 체계적으로 진행하는 데 있습니다. 온라인으로 다양한 자료가 풍부하게 제공되지만, 나와 같은 열정적인 사람들은 종종 어디에 초점을 맞춰야 할지 판별하기 어렵다고 느낍니다. Recon Mind Map은 웹 애플리케이션 탐색에 필수적인 모든 주요 주제를 아우르며, 학습 여정에서 명확성과 방향성을 제공합니다.
 
@@ -31,7 +41,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 - NetCrunch
 - SolarWinds
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 방화벽 식별
 
@@ -42,7 +63,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 - lbd
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. ASN
 
@@ -57,7 +89,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 - Amass Intel
 - ipaddressguide.com
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 6. IP 블록 / 서브넷
 
@@ -73,7 +116,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 오픈 포트, 서비스, 버전
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Masscan
 - Naabu
@@ -86,9 +140,20 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 - Home Lister Directory
 
-## * Horizontal / Acquisitions Enumeration
+## \* Horizontal / Acquisitions Enumeration
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - WhoisXMLAPI
 - CrunchBase
@@ -101,7 +166,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 - 수동 소스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 지피노
 - 아매스
@@ -121,11 +197,22 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 3. 재귀적 열거
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 수동 소스
 
-## * 활성화 목록
+## \* 활성화 목록
 
 - DNS 무차별 강제 공격
 
@@ -133,7 +220,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 - Cewl
 - FFUF
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 순열
 
@@ -145,7 +243,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 - 겟제이에스
 - 고스파이더
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. Google Analytics
 
@@ -157,7 +266,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 - httpx
 - dnsx
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 6. VHOST 프로빙
 
@@ -169,7 +289,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 - Unimap
 - httpx
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Whatweb
 - Wappalyzer
@@ -189,7 +320,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 2. Parameters
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Param-Miner
 - x8
@@ -207,7 +349,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 ### 4. Directory & File Enumeration
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - FFUF
 - Dirb
@@ -231,7 +384,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 - AWS Bucket Dump
 - CloudBrute
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Wpscan
 - CMSmap
@@ -252,8 +416,18 @@ Recon Mind Map은 다음과 같은 요소들을 포함합니다:
 
 위에 언급한 마인드 맵이 있어요. 더 잘 보기 위해서는 중간 앱을 사용하거나 컴퓨터/노트북에서 여세요. PNG 파일을 받으려면 LinkedIn에서 연락 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 C
 onnect me on LinkedIn

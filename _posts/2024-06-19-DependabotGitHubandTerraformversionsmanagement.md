@@ -3,13 +3,12 @@ title: "의존성 관리자 Dependabot GitHub 및 Terraform 버전 관리"
 description: ""
 coverImage: "/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_0.png"
 date: 2024-06-19 13:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_0.png
 tag: Tech
 originalTitle: "Dependabot: GitHub, and Terraform versions management"
 link: "https://medium.com/itnext/dependabot-github-and-terraform-versions-management-29b1bde6baa9"
 ---
-
 
 ![image](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/itnext/dependabot-github-and-terraform-versions-manage
 
 이와 같은 프로세스를 자동화하는 다양한 솔루션이 있지만, 가장 일반적으로 사용되는 것은 Renovate와 Dependabot입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우크라옵스 슬랙 투표 결과에 따르면, Renovate가 훨씬 많은 투표를 받았으며 실제로 Dependabot보다 더 많은 작업을 수행할 수 있습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/itnext/dependabot-github-and-terraform-versions-manage
 
 그러나 — 이게 제게는 큰 놀램이었습니다 — Dependabot은 Helm 차트와 함께 작동하지 않습니다. 그러나 Terraform에서 작동하며 이미 일부 파이썬 코드 저장소에서 사용 가능합니다. 그러니 먼저 그것에 대해 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 미래를 내다보면, 저는 Renovate를 훨씬 더 좋아했고, 이후에는 Renovate를 사용할 것입니다.
 
@@ -44,7 +65,18 @@ link: "https://medium.com/itnext/dependabot-github-and-terraform-versions-manage
 - …
 - 수익 창출!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오늘은 무엇을 할까요?
 
@@ -56,7 +88,18 @@ link: "https://medium.com/itnext/dependabot-github-and-terraform-versions-manage
 
 지원되는 저장소 및 생태계 — Dependabot이 지원하는 시스템을 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Dependabot과 Terraform
 
@@ -66,7 +109,18 @@ Terraform의 맥락에서 Dependabot으로 모니터링할 수 있는 것은 프
 
 ![이미지](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Dependabot가 이들에서 버전을 모니터링하도록 시작하려면 디렉토리 .github를 생성하고 그 안에 dependabot.yml 파일을 만듭니다:
 
@@ -90,7 +144,18 @@ updates:
     open-pull-requests-limit: 10
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보편적으로 매개변수 이름에서 모든 것이 명확해요:
 
@@ -102,10 +167,20 @@ updates:
 
 리포지토리에 푸쉬하고 상태를 확인해보세요.
 
-리포지토리에서 Insights ` Dependency graph ` Dependabot로 이동하여 체크가 시작되었음을 확인하세요:
+리포지토리에서 Insights `Dependency graph` Dependabot로 이동하여 체크가 시작되었음을 확인하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_3.png)
 
@@ -115,8 +190,18 @@ In a minute, we’ll have open Pull Requests:
 
 ![image](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_5.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 동시에, Dependabot은 업데이트에 대한 세부 정보를 주석으로 추가합니다 — 릴리스 노트, 변경 내역 등:
 
@@ -126,8 +211,18 @@ In a minute, we’ll have open Pull Requests:
 
 예를 들어, Lambda 모듈의 업데이트는 세부 정보 없이 생성되었습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_7.png)
 
@@ -137,8 +232,18 @@ But Renovate does it much better.
 
 Another nuance is the GitHub Secrets that are available to Dependabot.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트의 terraform 디렉토리에 변경 내용이 있는 PR이 올라오면, 우리는 GitHub Actions Workflow를 실행합니다. 해당 Workflow에서는 Terraform의 체크를 수행합니다 (GitHub Actions: Terraform deployments with a review of planned changes 참조).
 
@@ -148,7 +253,18 @@ Another nuance is the GitHub Secrets that are available to Dependabot.
 
 ![Dependabot Error](/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 워크플로 자체는 모든 비밀을 secrets: inherit:를 통해 전달합니다.
 
@@ -163,7 +279,7 @@ jobs:
       aws-env: ${ vars.AWS_ENV }
       pr-num: ${ github.event.pull_request.number }
       environment: ops
-      slack-channel: '#cicd-devops'      
+      slack-channel: '#cicd-devops'
     secrets:
       inherit
 ```
@@ -172,7 +288,18 @@ jobs:
 
 <img src="/assets/img/2024-06-19-DependabotGitHubandTerraformversionsmanagement_9.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 비밀을 추가했고, 이제 확인이 작동합니다:
 
@@ -182,7 +309,18 @@ jobs:
 
 다른 것들 중에, 우리는 개인 저장소에 저장된 자체 Terraform 모듈을 가지고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의존성 보트에 액세스할 때 "의존성 보트가 ORG_NAME/atlas-tf-modules에 액세스할 수 없습니다"라는 오류가 발생합니다:
 
@@ -192,7 +330,18 @@ jobs:
 
 두 번째 옵션은 단순히 '액세스 권한 부여'를 클릭하는 것입니다. 이렇게 하면 조직의 모든 저장소에 대해 해당 저장소의 액세스가 열립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 테이블 태그를 마크다운 형식으로 변경하거나 수동으로 변경하세요. 조직 설정으로 이동한 후 `보안 코드` 및 `전역 설정`으로 이동하여 `사적 저장소에 Dependabot 액세스 권한 부여` 섹션에서 원하는 저장소에 대한 액세스를 추가하세요:
 
@@ -202,7 +351,18 @@ jobs:
 
 접근 권한을 추가했다면, 다시 저장소로 돌아가 Insights -> Dependency graph -> Dependabot으로 이동한 후 업데이트 확인을 클릭하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 작동 중입니다:
 
@@ -212,7 +372,18 @@ jobs:
 
 일반적으로 그게 전부에요. 이제 우리는 모든 저장소를 직접 관리하지 않아도 Terraform 업데이트를 받게 될 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한번 더 말해도, Renovate가 정말로 더 좋아. Renovate: GitHub을 보고, Helm Charts 버전 관리를 확인해봐.
 

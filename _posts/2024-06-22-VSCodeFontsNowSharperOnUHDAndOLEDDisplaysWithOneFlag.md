@@ -3,13 +3,12 @@ title: "VSCode의 글꼴이 UHD 및 OLED 디스플레이에서 더 선명해진 
 description: ""
 coverImage: "/assets/img/2024-06-22-VSCodeFontsNowSharperOnUHDAndOLEDDisplaysWithOneFlag_0.png"
 date: 2024-06-22 22:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-VSCodeFontsNowSharperOnUHDAndOLEDDisplaysWithOneFlag_0.png
 tag: Tech
 originalTitle: "VSCode Fonts Now Sharper On UHD And OLED Displays With One Flag"
 link: "https://medium.com/@tomaszs2/vscode-now-sharper-on-uhd-and-oled-displays-5dd655e02632"
 ---
-
 
 <img src="/assets/img/2024-06-22-VSCodeFontsNowSharperOnUHDAndOLEDDisplaysWithOneFlag_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tomaszs2/vscode-now-sharper-on-uhd-and-oled-displays-
 
 일반적으로 VSCode의 개선 사항은 생산성, 개발자 경험 및 Copilot과 같은 통합과 같은 개발자 도구를 중심으로합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 항상 그렇지만은 않고 때로는 변화가 상당히 놀라울 수 있어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@tomaszs2/vscode-now-sharper-on-uhd-and-oled-displays-
 
 간단한 설명에서는 다음과 같은 것을 배울 수 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Illustration을 확인해보세요:
 
@@ -39,7 +60,18 @@ Illustration을 확인해보세요:
 
 보이는 바에 따르면, 그 버전은 UHD 모니터를 사용하는 몇몇 개발자들, Retina 디스플레이를 사용하는 Mac 노트북 사용자들을 포함한 다른 많은 사람들에게 더 나은 선택이 될 것 같습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 모든 사람이 화면에서 변경 사항을 보지 못할 수도 있고, 모든 사람이 그것을 좋아하지도 않을 것입니다.
 
@@ -49,7 +81,18 @@ Illustration을 확인해보세요:
 
 이것을 이해하려면 90년대로 돌아가 봐야 합니다. 사람들이 점점 더 컴퓨터를 사용하기 시작했습니다. 운영 체제 개발 회사들은 소비자 시장에 더 집중하기로 결정했습니다. 이를 위해 최상의 사용자 경험을 제공해야 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 온라인 비디오 플랫폼이 없었기 때문에 사람들은 800x600 픽셀 모니터에서 텍스트를 작성하고 마인스위퍼를 플레이하던 컴퓨터를 주로 사용했어요.
 
@@ -59,7 +102,18 @@ Illustration을 확인해보세요:
 
 하지만 텍스트의 경우는 그렇게 쉽지 않아요. 다른 요소들과 비교했을 때 글자와 기호들은 매우 구체적인 구조를 가지고 있어요. 그것들을 많이 변경할 수 없는 이유는 더 이상 가독성이 없어지거나 다른 글자와 유사해질 수 있기 때문이에요. 예를 들어, 글자 O와 숫자 0은 구분되어야 하므로 약간 다르게 보이도록 해야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작은 해상도에서는 정말로 어려워요.
 
@@ -69,7 +123,18 @@ Illustration을 확인해보세요:
 
 소비자들이 좋아하지 않는 것이었죠. 그래서 그 시기에는 물리적 해상도를 늘릴 수 없었기 때문에 많은 해결 방안이 제안되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안티 앨리어싱으로 구제!
 
@@ -79,7 +144,18 @@ Illustration을 확인해보세요:
 
 이 방법은 픽셀 아트에서 디자인을 부드럽게 만드는 데에도 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 글꼴의 경우는 세부 사항 때문에 일반적인 안티앨리어싱만으로는 충분하지 않았습니다. 그래서 1990년대에 Microsoft와 Apple은 유사한 솔루션을 도입했습니다.
 
@@ -89,7 +165,18 @@ Windows의 경우, ClearType이 그것입니다. 화면에 표시되는 텍스�
 
 화면에서 본 픽셀은 사실 빨강, 녹색 및 파랑(RGB)과 같은 서로 가깝게 배치된 서로 다른 색상의 서브픽셀입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 서블 픽셀의 위치를 알고 있다면 LCD 스크린에 대해 90년대에 알려졌듯이 이 서블 픽셀을 사용하여 글꼴의 안티 앨리어싱을 할 수 있습니다. 이렇게 하면 이웃하는 서블 픽셀들이 부드럽게 변할 수 있는 더 세련된 효과를 낼 수 있습니다.
 
@@ -99,7 +186,18 @@ Windows의 경우, ClearType이 그것입니다. 화면에 표시되는 텍스�
 
 그럼에도 불구하고 모든 사람들이 만족했습니다. ClearType를 비활성화할 수 있었기 때문이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 새로운 디스플레이로 LCD 최적화 방법이 오래되었습니다
 
@@ -109,7 +207,18 @@ Windows의 경우, ClearType이 그것입니다. 화면에 표시되는 텍스�
 
 예를 들면 이렇게요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-06-22-VSCodeFontsNowSharperOnUHDAndOLEDDisplaysWithOneFlag_3.png](/assets/img/2024-06-22-VSCodeFontsNowSharperOnUHDAndOLEDDisplaysWithOneFlag_3.png)
 
@@ -119,7 +228,18 @@ OLED 및 다른 비-LCD 장치에서 특히 선명해졌어요.
 
 예를 들어, 많은 브라우저에서는 어떤 종류의 글꼴 평활화를 적용할 지를 사용자가 결정할 수 있어요. 이 옵션은 웹 앱이 액세스할 수 없는 많은 변수(하위화소 레이아웃과 같은)에 따라 결정해야 하는 매우 특정한 경우에만 사용되어야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만일 VSCode에 대해 구체적으로 언급한다면, 이 IDE는 TypeScript로 작성되었고 Electron과 Chromium을 사용합니다.
 

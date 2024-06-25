@@ -3,13 +3,12 @@ title: "마이크로소프트는 너무 커서 보안하기 어려울까요"
 description: ""
 coverImage: "/assets/img/2024-05-23-IsMicrosoftTooBigtoSecure_0.png"
 date: 2024-05-23 16:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-IsMicrosoftTooBigtoSecure_0.png
 tag: Tech
 originalTitle: "Is Microsoft Too Big to Secure?"
 link: "https://medium.com/@megamobileman/is-microsoft-too-big-to-secure-4276d41913bc"
 ---
-
 
 정부의 기술 거점체 의존에 따른 숨겨진 비용
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@megamobileman/is-microsoft-too-big-to-secure-4276d419
 
 본 기사는 이러한 실패 사례를 해소하고 전반적인 글로벌 사이버 보안을 강화할 수 있는 향상된 지원, 더 나은 협력, 그리고 더 집중된 보안 방안을 탐구합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정부 기술 파트너십에서 마이크로소프트가 주목받는 위치에 있는데요, 특히 사이버 방어 분야에서 그들을 반복되고 광범위한 보안 위협과 관련된 일반적인 부정적 영향으로부터 격리시켰어요. 주요 정부 관계자들은 마이크로소프트를 비판하지 않는데요, 회사의 지속적인 보안 결함 역사에도 불구하고 국가 안보에 중대한 영향을 미치고 있어요. 이러한 마이크로소프트에 대한 비반 마인드는 확대되는 정부의 마이크로소프트 의존으로 인해 주요 사이버 공격을 막는 데에 워싱턴의 능력을 억제할 수 있어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@megamobileman/is-microsoft-too-big-to-secure-4276d419
 
 마이크로소프트의 보안 실패를 다루기 위해서는 지원, 협업, 엄격한 보안 조치를 통합한 다각적인 방법이 필요해요. 여기에서 보안 전문가들이 상당한 영향을 줄 수 있는 중요한 영역들이 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 기본 보안 방어책 구현하기
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@megamobileman/is-microsoft-too-big-to-secure-4276d419
 
 현대적인 사이버 위협에 대비하기 위해 마이크로소프트의 레거시 시스템을 현대화하는 것이 중요합니다. 보안 전문가들은 오래된 소프트웨어를 종합적으로 개선하고 견고한 보안 아키텍처를 구현하는 것을 촉구해야 합니다. 이 재설계 작업은 이러한 시스템이 공격에 취약한 근본적인 이슈를 해결할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 책임과 투명성 강화
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@megamobileman/is-microsoft-too-big-to-secure-4276d419
 
 위험 완화에 있어서 단일 기술 공급 업체에 대한 의존 감소는 본질적으로 중요합니다. 보안 전문가들은 정부와 기타 기관에게 기술 공급 업체를 다양화하도록 장려해야 합니다. 이 접근법은 사이버 공격 위험을 여러 공급 업체에 걸쳐 분산시켜 단일 장애 지점의 잠재적 영향을 줄일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 정부의 영향력과 감시 강화
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@megamobileman/is-microsoft-too-big-to-secure-4276d419
 
 마이크로소프트 내에서 안전을 우선시하는 마음가집니다 촉진하는 것이 중요합니다. 보안 전문가들은 독과점적인 기업이 안전을 우선시할 수 있도록 장려하는 인센티브를 주장해야 합니다. 이는 강력한 보안 관행을 보여주는 기업들에 대한 세금으로 인한 혜택이나 그렇지 않은 기업들에 대한 벌칙을 포함할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7. 수익 중심 보안 접근법 대응
 
@@ -69,7 +123,18 @@ link: "https://medium.com/@megamobileman/is-microsoft-too-big-to-secure-4276d419
 
 정부와 마이크로소프트 사이의 협력은 보안 프로그램의 효과적인 실행을 보장하기 위한 필수요소입니다. 보안 전문가들은 마이크로소프트의 Secure Future Initiative와 같은 프로젝트를 지원하고 모니터링하여 이러한 노력이 포괄적이고 효과적임을 보증해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 9. 벤더 다양성 촉진
 
@@ -79,7 +144,18 @@ link: "https://medium.com/@megamobileman/is-microsoft-too-big-to-secure-4276d419
 
 마지막으로, 보안 전문가들은 주요 기술 기업들이 보안 침해에 대한 책임을 져야 한다는 중요성을 강조하기 위해 입법자들과 소통해야 합니다. 기술 거물들이 시장 지배력을 이용하여 감시를 회피하지 못하도록 하는 정책을 촉진하는 것이 전체 사이버 보안을 향상시키는 데 필수적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 중요한 영역에 초점을 맞추고 지원 및 협업의 중요성을 강조함으로써 보안 전문가들은 Microsoft의 보안 관행에서 상당한 향상을 이룰 수 있습니다. 이러한 노력을 통해 사이버 보안을 강화하면 취약점을 줄이고 민감한 데이터를 보호하여 안전한 디지털 환경으로 이끌 수 있습니다.
 
@@ -89,7 +165,18 @@ Microsoft 규제 감시 강화 및 기술 의존 다변화
 
 더 강화된 안전 요구사항을 위한 입법: 정부는 Microsoft를 포함한 모든 기술 공급업체에 대해 보다 엄격한 보안 요구사항을 강제하는 입법을 제정할 수 있습니다. 예를 들어, 제안된 입법은 정기적인 제3자 보안 감사와 발견된 모든 취약점의 즉각적인 공개를 요구할 수 있습니다. 이를 통해 Microsoft가 견고한 보안 관행을 유지하는 데 책임을 져야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공개적 책임처 사항:
 
@@ -99,7 +186,18 @@ Microsoft 규제 감시 강화 및 기술 의존 다변화
 
 US 상원의원 론 와이든이 제안한 단일 공급업체 솔루션 점진적 단계적 철회 방안에 따라, 단일 공급업체 솔루션인 Microsoft Office에 대한 의존을 서서히 줄이고, 보다 다양화된 기술 생태계를 선호할 수 있습니다. 이는 오픈 소스 대안 채택이나 서로 다른 공급업체의 소프트웨어 혼합 사용을 통해 단일 장애점 위험을 줄이는 방향으로 이뤄질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다중 공급업체 전략 구현하기:
 
@@ -109,7 +207,18 @@ US 상원의원 론 와이든이 제안한 단일 공급업체 솔루션 점진�
 
 ~연방 기관을 위한 다중 클라우드 전략 시나리오~
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 호출 액션
 
@@ -119,7 +228,18 @@ US 상원의원 론 와이든이 제안한 단일 공급업체 솔루션 점진�
 
 기관이 여러 클라우드 환경에 작업을 분산시킴으로써, 어떤 단일 제공 업체에서 보안 침해가 발생할 경우 전체 서비스 중단의 위험을 줄일 수 있습니다. 게다가 이 방식은 각 클라우드 제공 업체가 경쟁력을 유지하기 위해 높은 보안 기준을 유지하도록 격려합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 권고 조치를 채택함으로써 당국은 Microsoft와 같은 단일 기술 공급업체에 대한 지나친 의존으로 인한 지속적인 위험을 완화할 수 있습니다. 규제 감사를 강화하여 책임과 투명성을 보장하고, 기술 다양화를 촉진하여 전반적인 사이버 보안 강도를 높일 수 있습니다.
 
@@ -136,7 +256,18 @@ US 상원의원 론 와이든이 제안한 단일 공급업체 솔루션 점진�
 - 법안 전진: 법안을 의회 위원회를 통해 옹호하고 전진시킵니다.
 - 공급업체 협의: 대체 기술 공급업체 (예: AWS, Google Cloud)와 초기 능력 및 통합 잠재력을 평가하기 위해 사전 논의를 개시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 7~9월: 실행 계획 수립 및 조기 준수
 - 준수 프레임워크: 새 보안 법률을 위한 준수 프레임워크 개발, 제3자 보안 감사 및 공개 보고 요구 사항에 대한 지침 포함.
@@ -161,7 +292,18 @@ US 상원의원 론 와이든이 제안한 단일 공급업체 솔루션 점진�
 
 주요 요소들을 고려해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 제도 및 준수:
 
@@ -173,7 +315,18 @@ US 상원의원 론 와이든이 제안한 단일 공급업체 솔루션 점진�
 - 단일 제공 업체에 대한 의존을 줄이기 위해 다양한 제공 업체 전략을 계획하고 실행.
 - 다양한 제공 업체 통합을 평가하고 최적화 처리.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 지속적인 모니터링과 개선:
 
@@ -185,7 +338,18 @@ US 상원의원 론 와이든이 제안한 단일 공급업체 솔루션 점진�
 - 보안 조치를 강화하기 위해 대체 업체와 협력.
 - 다중업체 환경에 대한 교육을 통해 정부 IT 직원의 역량 강화.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에 언급된 현실적인 일정을 따라가면; 당국은 마이크로소프트의 현재 취약점과 관련된 주요 보안 리스크를 체계적으로 해결하고 지원 및 협력을 통해 전반적인 사이버 보안 탄력성을 향상시킬 수 있습니다.
 

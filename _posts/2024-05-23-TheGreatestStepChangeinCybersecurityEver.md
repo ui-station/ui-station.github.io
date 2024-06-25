@@ -3,13 +3,12 @@ title: "사이버 보안의 역사상 가장 큰 변화"
 description: ""
 coverImage: "/assets/img/2024-05-23-TheGreatestStepChangeinCybersecurityEver_0.png"
 date: 2024-05-23 18:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheGreatestStepChangeinCybersecurityEver_0.png
 tag: Tech
 originalTitle: "The Greatest Step Change in Cybersecurity Ever!"
 link: "https://medium.com/asecuritysite-when-bob-met-alice/the-greatest-step-change-in-cybesecurity-ever-5d9c7da6ec2a"
 ---
-
 
 ![이미지](/assets/img/2024-05-23-TheGreatestStepChangeinCybersecurityEver_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/asecuritysite-when-bob-met-alice/the-greatest-step-cha
 
 사이버 보안에서 Generative AI (GenAI) 이전과 이후의 시대가 올 것입니다. 지난 2년 동안, GenAI는 큰 발전을 이루었으며, 환청 문제, 인종 차별적 접근, 과한 과언 등으로 고전해온 과거와는 달리, ChatGPT 4.5 에서는 우호적이고 다소 순종적인 에이전트의 등장을 볼 수 있습니다. 이는 우리로부터 배우고자 하는 성질을 가지고 있습니다. 이러한 LLM (Large Language Model) 접근은 인간과 컴퓨터 사이의 장벽을 허물고 새로운 지식의 세계에 접근할 수 있는 기회를 제공하지만, 잘못된 손에 들어가면 현재 세계에 많은 위협을 가져올 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 제너레이션 AI의 등장으로 사이버 보안보다 더 크게 영향을 받게 될 분야가 몇 군데 있을 것입니다. 왜냐하면 우리가 적들이 이를 사용하게 되는 순간, 우리는 곤욕을 당하게 될 것입니다. 과거의 해킹 도구와 방법은 곧 지나간 Morris Worm처럼 보일 것입니다. 위협 환경은 초인공지능의 등장을 볼 것이며, 적들에게 방어체계를 지속적으로 조사하고 발목을 잡는 방법을 제공할 것입니다.
 
@@ -29,17 +39,39 @@ link: "https://medium.com/asecuritysite-when-bob-met-alice/the-greatest-step-cha
 
 미래에는 AI가 Kill Chain의 모든 부분을 실행하고 어떤 인간의 손길도 없이 이룰 수도 있습니다. 예를 들어, 제네이 에이전트가 조직의 방어 체계를 조사하고 사용자를 표적으로 한 스피어 피싱 이메일에 속게 하고 시스템에 로그인하게 할 수 있습니다. 그 다음으로, 최대한의 데이터를 수집할 수 있도록 할 수 있으며(이메일 주소, 연락처, 이메일 내용, 문서 등), 이를 다른 제네이 에이전트에게 전달할 수 있습니다. 다음으로는 ​​세계의 모든 알려진 준수 문서를 소화하고 수집된 문서들과 일치시켜 회사에게 회사가 책임을 져야할 모든 데이터 준수 위반에 대한 보고서(물론 법률 문서를 통해)를 보내며 합의나 법정으로 이행하도록 요청할 수 있습니다. 이 모든 것은 사용자와 고객의 개인정보를 위한 것입니다. 무서운 세상이 될 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 새로운 위협 지형
 
-이제 롭즈에 대한 새로운 보고서가 사이버 보안의 변화하는 세계에 빛을 비춥니다. 
+이제 롭즈에 대한 새로운 보고서가 사이버 보안의 변화하는 세계에 빛을 비춥니다.
 
 ![이미지](/assets/img/2024-05-23-TheGreatestStepChangeinCybersecurityEver_1.png)
 
 이 보고서는 많은 새로운 모델이 출시되었으며 명백히 객관적 자료의 작성에 초점을 맞추는 것을 개요로 합니다. 이와 함께 취약점 발견, 캠페인 계획 및 실행, 위험-보상 분석(공격 비용이 낮아져서) 및 단일 고장점(사이버 방어가 점차 LLMs에 더 의존하는 것으로 변화함에 따라)을 통한 개선된 사이버 위험 탐지의 상승을 볼 것입니다. 최악의 경우, 이는 사이버 재해의 증가로 이어질 수 있고 새로운 위협 지형을 생성할 수 있습니다(특히 국가 간 활동 및 적대 세력의 진입 장벽이 낮아질 경우).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 논문에서 개발된 위험 모델은 사이버 위협의 네 가지 주요 요소(취약점 발견, 캠페인 계획 및 실행, 위험-보상 분석, 그리고 단일 장애점)을 고려합니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/asecuritysite-when-bob-met-alice/the-greatest-step-cha
 
 보고서는 구글의 Transformer 알고리즘에 대한 2017년 고전적인 논문부터 거의 지수적인 진보를 향한 OpenAI의 GPT-4, Google Bard까지의 발전을 보았으며 Meta의 GenAI 모델의 오픈 소싱에 대해서도 언급하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-23-TheGreatestStepChangeinCybersecurityEver_3](/assets/img/2024-05-23-TheGreatestStepChangeinCybersecurityEver_3.png)
 
@@ -59,7 +102,18 @@ link: "https://medium.com/asecuritysite-when-bob-met-alice/the-greatest-step-cha
 
 이러한 취약성은 다른 악의적인 GenAI 요소와 쉽게 공유될 수 있으며, 스캐닝이 쉽게 자동화되고 분산될 수 있습니다. 그들은 포함된 마이크로 코드 및 펌웨어를 전달할 수 있으며, 실행 파일을 위한 이진 파일을 디컴파일하거나 장치 드라이버를 수정할 수 있습니다. 전반적으로, GenAI 요소는 타겟 네트워크에 대해 지능적으로 배포할 수 있는 여러 가지 트릭을 가지고 있으며, 감시, 발판 마련, 시스템을 탐지하고, 최종적으로 파일 암호화 또는 데이터 추출 (일반적으로 둘 다)과 같은 최종 영향을 만들어 냅니다. 하지만 진정한 사이버 보안 전문가들의 손에 들어가면, 이러한 도구들은 절대적으로 엄청날 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스캔과 함께, Raspberry PI와 같은 소형 장치에서 작동하는 LLM 기술을 이용한 악성코드를 볼 수 있습니다. 이미 시장에는 R-PI에서 작동하는 AI 기반 스텔스 기술을 광고하는 제품들이 등장하고 있습니다. 이러한 장치들은 물리적 접근이 필요한 곳에서 사용될 것이며, 와이파이 네트워크에 접근하거나 특정 하드웨어 장치를 대상으로 하는 경우 등에 활용될 것입니다. 따라서 GenAI의 급부상으로 물리적 하드웨어가 더 큰 위험에 노출될 수 있으며, 기업들이 심어진 하드웨어 장치를 찾아야 하는 경우도 늘어날 것입니다.
 
@@ -69,7 +123,18 @@ link: "https://medium.com/asecuritysite-when-bob-met-alice/the-greatest-step-cha
 
 GenAI 도구는 사회공격이나 변형을 위한 다양한 공격 또는 변형 수단을 갖추고 있을 것이며, 이에는 피싱, 사칭, 중상모란 자료의 자동 합성도 포함될 것입니다. 이는 사실과 허구를 구별하는 것이 어려운 세상이 될 것이며, 실종된 표제 피싱 이메일의 나쁜 문법을 발견하는 일은 과거의 일로 사라질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## AI Governance
 
@@ -81,7 +146,18 @@ GenAI 도구는 사회공격이나 변형을 위한 다양한 공격 또는 변�
 
 거버넌스에 대해서는 보고서가 훈련을 통해 생성된 모델에서 사용된 가중치는 비공개로 유지되어야 하고 공개되어서는 안 된다고 소개하고 있습니다. 이것은 위협 주체가 엔진을 복제하고 악의적인 데이터를 강화하는 것을 막을 것입니다. 또한 모델 훈련은 격리된 환경에서 이루어져야 하며 공개되어서는 안 됩니다. 이와 함께 데이터 품질, 윤리, 개인정보 보호 및 책임성에 엄격한 규칙이 적용되어야 하며, 이는 인공지능 엔티티의 전 과정 동안 적용되어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 금융 및 계산 비용
 
@@ -91,7 +167,18 @@ EU 및 세계의 다른 지역들은 AI의 성장을 제한하여 보다 책임 
 
 이러한 방식은 모든 안전장치를 우회할 수 있으며, 악성 요소를 추가하여 모델을 업데이트할 수 있습니다. 거의 모든 사람이 어디에서나 접근할 수 있는 (아마도) 궁극적인 해킹 도구 세트를 가지고 있어 더 많은 조직을 침해할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 가드 레일
 
@@ -101,7 +188,18 @@ EU 및 세계의 다른 지역들은 AI의 성장을 제한하여 보다 책임 
 
 하지만 "콘솔 해킹"을 하는 다양한 방법이 있으며, 나쁜 행위를 수행하는 한계를 극복할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-23-TheGreatestStepChangeinCybersecurityEver_5](/assets/img/2024-05-23-TheGreatestStepChangeinCybersecurityEver_5.png)
 
@@ -111,6 +209,17 @@ LLM의 개발 속도는 우리의 입법자들을 앞지르고 있습니다. 이
 
 우리는 좋은 GenAI의 발전을 제한할 수 있지만, 악의적인 사용자들은 제한되지 않은 응용 분야에서 더 많이 사용할 것입니다. Sora의 출시는 거의 실제와 같은 비디오 가짜를 증가시키고 많은 새로운 위협의 문을 열 것입니다. 관심이 있으시다면, 여기에서 해당 영역을 검토하실 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 조직에 대한 제 추천은 무엇일까요? 최고의 사이버 보안 전문가를 확보하고 유지하는 데 투자하십시오. 한편으로는 회사가 필요로 하는 AI 기반 방어 도구를 개발할 수 있고, 다른 한편으로는 가능한 영역을 이해할 수 있습니다. GenAI 상자는 닫힐 수 없으므로, 우리는 사이버 보안의 새로운 세계를 어떻게 형성할지 이해해야 합니다. 그렇지 않으면, 사이버 재앙을 맞이할 위험이 있습니다.

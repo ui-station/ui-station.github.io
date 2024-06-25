@@ -3,13 +3,12 @@ title: "여기까지 보고 놀랄 수밖에 없는 애플 단축어 11가지"
 description: ""
 coverImage: "/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_0.png"
 date: 2024-06-23 01:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_0.png
 tag: Tech
 originalTitle: "The 11 craziest and most advanced Apple shortcuts I’ve ever seen"
 link: "https://medium.com/macoclock/the-11-craziest-and-most-advanced-apple-shortcuts-ive-ever-seen-37d3ec7814f3"
 ---
-
 
 ![image](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/macoclock/the-11-craziest-and-most-advanced-apple-shor
 
 너무 강력해서 안타깝게도 잘 활용되지 못하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 11가지 복잡하고 고급 단축키에 대해 설명해 드릴게요 — 저는 대부분 이것들을 정기적으로 사용해요.
 
@@ -30,7 +40,18 @@ link: "https://medium.com/macoclock/the-11-craziest-and-most-advanced-apple-shor
 어떻게 할까요? 리마인더를 이용해서요.
 제가 설명해 드릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단축키를 시작하려면 다음을 수행해야 합니다: - 미리 알림 앱에서 새 목록을 생성합니다. 그리고 자동 메시지에 등록하여 작업에 사용하도록 설정합니다.
 
@@ -40,7 +61,18 @@ link: "https://medium.com/macoclock/the-11-craziest-and-most-advanced-apple-shor
 
 ![이미지](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 옵션으로 메시지를 개별 연락처에 예약하는 기능을 시도해 보세요.
 
@@ -53,7 +85,18 @@ link: "https://medium.com/macoclock/the-11-craziest-and-most-advanced-apple-shor
 
 선택한 시간을 기준으로 모든 세부 사항이 포함된 리마인더가 생성됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_3.png)
 
@@ -63,7 +106,18 @@ link: "https://medium.com/macoclock/the-11-craziest-and-most-advanced-apple-shor
 
 ![이미지](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정말 멋지죠!
 
@@ -74,15 +128,37 @@ link: "https://medium.com/macoclock/the-11-craziest-and-most-advanced-apple-shor
 - 바로 가기 내에서 즐겨찾기 및 그룹 생성할 수 있어요.
 - 개별, 그룹 또는 다중 그룹에 메시지를 보낼 수 있어요.
 - 메시지를 재스케줄하거나 취소할 수 있어요.
-(팁: 이를 직접 알림을 조정하여 할 수 있어요)
+  (팁: 이를 직접 알림을 조정하여 할 수 있어요)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 직관적인 스크린샷이 지루할 수 있지만, 그 장치의 이미지로 프레임을 설정하면 환상적으로 보입니다.
 
 ![이미지](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 애플 블로거로서, 그것을 해야만 합니다. 제 기사들의 대부분의 스크린샷은 프레임 안에 삽화되어 있거든요.
 
@@ -94,7 +170,18 @@ link: "https://medium.com/macoclock/the-11-craziest-and-most-advanced-apple-shor
 iFrames가 어떻게 작동하는지 알아보세요:
 실행하면 iPhone, iPad, Mac, Apple Watch 또는 Apple TV에서 찍은 스크린샷과 해당 프레임으로 사용하고자 하는 기기를 요청합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거의 다 이제 맥 모의도를 로컬에 저장할 수 있습니다.
 
@@ -104,7 +191,18 @@ iFrames가 어떻게 작동하는지 알아보세요:
 
 ![이미지](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모의 모형을 생성하는 데 10초 미만이 걸립니다(안정적인 인터넷 연결 상태에서).
 - 자주 사용하는 프레임이 있다면 상단에 고정시키거나 오프라인으로 사용할 수도 있습니다!
@@ -118,7 +216,18 @@ iFrames가 어떻게 작동하는지 알아보세요:
 
 ## 3. Song.Link
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 Apple Music을 좋아하는 팬인데, 제 친구들 대부분은 Spotify를 사용해요. 특히 안드로이드 기기를 사용하는 친구들이 그렇더라고요.
 
@@ -128,8 +237,18 @@ iFrames가 어떻게 작동하는지 알아보세요:
 
 그래서 제가 하는 방법은 — Song.Link(바로 가기)로 그 노래를 공유하는 거예요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_8.png)
 
@@ -139,8 +258,18 @@ Then I click Spotify and directly share its link to him, simple!
 
 ![Image 2](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_9.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 좋은 부분은 곡을 Song.Link에 입력하는 방법이 5가지나 있답니다:
 
@@ -154,17 +283,39 @@ Then I click Spotify and directly share its link to him, simple!
 
 # YouTube의 단축키
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #4. SW-DLT
 
 내가 iPhone에서 YouTube 동영상을 다운로드하는 방법에 대해 알려줄게 — 엄청 쉬운 방법이야.
 
-우선, 설치해야 할 것이 있어. 바로 SW-DLT*와 두 앱 중 하나 — a-Shell 또는 a-Shell mini. 공간을 절약하려면 후자를 선호해.
+우선, 설치해야 할 것이 있어. 바로 SW-DLT\*와 두 앱 중 하나 — a-Shell 또는 a-Shell mini. 공간을 절약하려면 후자를 선호해.
 
 이제, 과정을 시작해보자:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Safari나 YouTube 앱에서 비디오를 열기
 - SW-DLT로 공유하기
@@ -178,7 +329,18 @@ Then I click Spotify and directly share its link to him, simple!
 
 무려 SW-DLT는 YouTube뿐만 아니라 다양한 웹사이트에서 미디어를 다운로드할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **YouTube PiP 기능은 SW-DLT -DL 도구를 위한 단축키 래퍼입니다.**
 
@@ -188,11 +350,22 @@ Then I click Spotify and directly share its link to him, simple!
 
 또는 직접 여기에서 다운로드하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-YouTube는 PiP(화면 안 화면) 기능을 프리미엄 구독자를 대상으로 한정했어요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-만약 iPhone에서 무언가 다른 일(생산적인 일을 하길 희망합니다)을 하면서 영상을 시청하는 것을 선호한다면, 이 기능은 굉장히 편리할 거예요. 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+YouTube는 PiP(화면 안 화면) 기능을 프리미엄 구독자를 대상으로 한정했어요.
+
+만약 iPhone에서 무언가 다른 일(생산적인 일을 하길 희망합니다)을 하면서 영상을 시청하는 것을 선호한다면, 이 기능은 굉장히 편리할 거예요.
 
 돈을 지불하지 않고도 이를 실현하기 위한 해킹 방법이 있답니다 — YouTube PiP, 바로가기를 이용해보세요.
 
@@ -201,7 +374,18 @@ YouTube는 PiP(화면 안 화면) 기능을 프리미엄 구독자를 대상으�
 - 동영상 로드될 때까지 잠시 기다리기
 - 화면을 최소화하기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 작업을 할 때 동영상이 계속 PiP로 재생됩니다.
 
@@ -211,7 +395,18 @@ YouTube는 PiP(화면 안 화면) 기능을 프리미엄 구독자를 대상으�
 
 PS: 또 다른 방법으로 할 수 있는 방법이 있습니다 (앱을 사용하여) ↓
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # #6. 일부 알람 설정하기
 
@@ -222,7 +417,18 @@ PS: 또 다른 방법으로 할 수 있는 방법이 있습니다 (앱을 사용
 
 그래서 나는 나를 괴롭히고 침대에서 일어나게끔 5분 간격으로 여러 개의 알람을 설정했습니다. - 그리고 많은 사람들이 비슷한 일을 한다고 확신합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자체적으로 모두 설정하는 대신 저는 이 바로가기를 사용해요: Set Some Alarms.
 
@@ -235,7 +441,18 @@ PS: 또 다른 방법으로 할 수 있는 방법이 있습니다 (앱을 사용
 
 그리고 다음 낮잠에서 깨워 줄 알람을 즉시 생성해 줘요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_12.png)
 
@@ -245,7 +462,18 @@ PS: 또 다른 방법으로 할 수 있는 방법이 있습니다 (앱을 사용
 
 # #7. DND 메뉴
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 및 macOS에서는 Do Not Disturb(또는 다른 포커스 모드)를 영구적으로 켜거나, 다음 세 가지 옵션에 따라 사용할 수 있습니다:
 
@@ -255,7 +483,18 @@ iOS 및 macOS에서는 Do Not Disturb(또는 다른 포커스 모드)를 영구�
 
 그러나 DND Menu라는 바로 가기를 통해 이러한 기능을 사용할 수 있습니다. 이 바로 가기를 실행하면 두 가지 옵션을 볼 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_15.png)
 
@@ -267,7 +506,18 @@ iOS 및 macOS에서는 Do Not Disturb(또는 다른 포커스 모드)를 영구�
 멋지죠!
 다음 20분 동안 집중하고 싶을 때나 30분 동안 주의를 집중시키고 싶을 때 큰 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 텍스트를 친근한 톤으로 한국어로 번역해 드리겠습니다.
 
@@ -279,12 +529,23 @@ QR Anything - 맞죠 - QR 코드로 거의 모든 것을 변환할 수 있습니
 
 - Wi-Fi 네트워크
 - 이미지
-(익명으로 Imgur에 업로드되고 해당 링크가 QR 코드로 변환됩니다)
+  (익명으로 Imgur에 업로드되고 해당 링크가 QR 코드로 변환됩니다)
 - URL
 - 텍스트
 - 클립보드 내용
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 트리거하면:
 
@@ -294,9 +555,20 @@ QR 코드로 변환하고 싶은 것을 선택하고 제공된 단계를 따라 
 
 만약 커피숍을 운영 중이라면, 고객들이 와이파이 비밀번호를 입력하는 데 어려움을 겪는 대신 네트워크를 위한 QR 코드를 만들어서 스캔하도록 하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-혹시 링크를 QR 코드로 변환하고 친구를 속일 수도 있겠네요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+혹시 링크를 QR 코드로 변환하고 친구를 속일 수도 있겠네요.
 
 그리고 더 좋은 점은, 어떤 것을 QR 코드로 변환하고 싶을 때는 'QR Anything'을 직접 공유 시트를 통해 공유하면 되니까, 바로 당신 스스로 단축키를 실행시킬 필요가 없다는 거죠.
 
@@ -304,7 +576,18 @@ QR 코드로 변환하고 싶은 것을 선택하고 제공된 단계를 따라 
 
 ## 9. Google 번역
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입니다. 무료 API를 이용하여 빠릅니다.
 
@@ -314,7 +597,18 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 
 이제 번역을 시작하려면, 그냥 단축키를 실행하면 되요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 영어로 된 내용을 입력하세요,
 - 번역하고 싶은 언어를 선택하세요.
@@ -325,7 +619,18 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 
 <img src="/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_18.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 텍스트를 친절한 어조로 한국어로 번역하겠습니다:
 
@@ -336,7 +641,18 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 
 신기하죠?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 바로 다운로드할 수도 있어요.
 
@@ -346,7 +662,18 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 
 (충전 주기란 배터리가 100%와 동등한 수준으로 방전될 때를 의미합니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 충전 주기 수는 배터리 수명에 대해 걱정하는 사람이라면 추적해야 할 중요한 지표입니다.
 
@@ -356,7 +683,18 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 
 음… 저는 iPhone 14 Pro Max를 사용 중이에요 (그리고 업그레이드할 확실한 이유가 없어요).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 아이폰 15 시리즈가 이를 표시하지 않는다는 것은 배터리 사이클을 추적하지 않는다는 것뿐만이 아닙니다. 그들은 하지만, 애플이 그들을 표시하지 않도록 프로그래밍했습니다.
 
@@ -365,12 +703,22 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 아이폰 15 시리즈를 사용하는 경우 배터리 사이클 수를 확인하는 방법은 다음과 같습니다:
 
 - 바로 가기인 PowerUtil을 설치합니다.
-- 설정으로 이동 ⚙️ ` 개인정보 및 보안 ✋ ` 분석 및 향상.
+- 설정으로 이동 ⚙️ `개인정보 및 보안 ✋` 분석 및 향상.
 - '아이폰 분석 공유' 아래의 '분석 데이터'를 클릭합니다.
 - 이름이 Analytics-20XX로 시작하는 (가장 최근의) 파일을 찾아 터치합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_20.png)
 
@@ -380,8 +728,18 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 
 - 이제 잠시 기다리고 나타나는 것을 확인해보세요. 여기엔 제 것이 있어요:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_22.png" />
 
@@ -390,15 +748,26 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 - 소비된 배터리 사이클 횟수,
 - 평균 온도,
 - 배터리 상태,
-(설정에서 확인할 수 있습니다 ⚙️ ` 배터리 🔋 ` 배터리 상태 및 충전)
+  (설정에서 확인할 수 있습니다 ⚙️ `배터리 🔋` 배터리 상태 및 충전)
 - 더 정확한 배터리 상태.
-(PowerUtil의 고유 알고리즘으로 계산됨)
+  (PowerUtil의 고유 알고리즘으로 계산됨)
 
 ```js
 참고: 아이패드 사용자에게 더 유용할 수 있습니다 - 애플은 기본적으로 배터리 상태를 공개하지 않는 사용자들을 위한 것입니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (Analytics-20XX 파일에는 Cycle Count, 평균 온도 및 배터리 상태가 깊숙한 곳에 기록되어 있습니다. 단축키를 사용하면 정규식을 이용하여 이를 찾아서 표시합니다.)
 
@@ -410,7 +779,18 @@ Google 번역을 앱이나 웹사이트 없이 사용할 수 있는 단축키입
 
 또는 여기에서 직접 다운로드할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # #11. Snap (Mac 전용)
 
@@ -420,7 +800,18 @@ Snap을 만나봐요.
 
 Snap은 창 관리자의 경량화된 단축키 버전으로, 간단하게 보이지만 실제로는 복잡한 코드가 내장되어 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 사용 방법이 있습니다:
 (먼저, 단축키에서 Snap을 마우스 오른쪽 버튼 클릭하고 ‘도크에 추가’를 클릭하십시오.)
@@ -433,7 +824,18 @@ Snap은 창 관리자의 경량화된 단축키 버전으로, 간단하게 보�
 
 - 클릭하고 완료를 클릭합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그게 전부고, 창이 원하는 레이아웃에 맞게 자동으로 정렬됩니다. 제가 함께 한 내용 중 하나를 보여드릴게요:
 
@@ -444,7 +846,18 @@ Snap은 창 관리자의 경량화된 단축키 버전으로, 간단하게 보�
 
 ![image](/assets/img/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen_24.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 재밌는 사실:
@@ -457,7 +870,18 @@ Snap은 MacStories가 주최한 Automation April 대회에서 "최고의 Mac 바
 
 ## 마지막으로,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 새로운 iOS 및 Mac 앱을 탐험하는 것을 좋아한다면, Setapp에 가입하는 것을 고려해보세요. 매달 $9.99에 약 240개 이상의 멋진 앱을 소장할 수 있습니다. 이 앱을 개별로 구매하면 수백 달러가 들겠지요.
 

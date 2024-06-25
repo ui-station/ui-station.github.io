@@ -3,13 +3,12 @@ title: "게임 엔진을 위한 저지연 스크립팅 소개, 파트 2"
 description: ""
 coverImage: "/assets/img/2024-06-19-AnIntroductiontoLow-LatencyScriptingforGameEnginesPart2_0.png"
 date: 2024-06-19 11:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-AnIntroductiontoLow-LatencyScriptingforGameEnginesPart2_0.png
 tag: Tech
 originalTitle: "An Introduction to Low-Latency Scripting for Game Engines, Part 2"
 link: "https://medium.com/@fwsgonzo/an-introduction-to-low-latency-scripting-with-libriscv-part-2-4fce605dfa24"
 ---
-
 
 고급 예제, 게스트 할당, RPC
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@fwsgonzo/an-introduction-to-low-latency-scripting-wit
 
 ## 1. 고급 API 설계와 호스트 제어 힙
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게스트 힙은 샌드박스 바깥에서 완전히 제어됩니다. 게스트는 알려진 시스템 호출을 실행하여 메모리를 할당하고 해제하며 각각 할당과 해제를 처리합니다. 또한 calloc 및 realloc도 지원됩니다.
 
@@ -35,7 +45,18 @@ struct LocationData {
 
 위치의 의미는 여기서 중요하지 않습니다. 중요한 것은 어딘가에 해당하는 구조체라는 것뿐입니다. 계속 진행하기 전에 몇 가지 알아야 할 사항이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모든 힙 할당은 64비트로 정렬됩니다. 그것은 우리가 제어합니다.
 - 데이터를 수정하고 모든 작업이 완전히 완료된 후에만 커밋할 수 있는 능력을 원합니다.
@@ -58,7 +79,18 @@ DEFINE_DYNCALL(11, location_commit, void(int, int, int, const void*, size_t));
 
 ABI는 레지스터에 직접 2개의 원소 구조체를 반환할 수 있다고 합니다. 이는 효율적입니다. 따라서 x, y 및 z를 레지스터에 유지하려고 시도할 것입니다.모두 인수로 전달합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 간단하고 직관적인 클래스를 만드는 것이 좋습니다:
 
@@ -101,8 +133,18 @@ private:
 
 게임 엔진 쪽에서 이를 아주 빠르게 구현할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 struct Location {
@@ -152,8 +194,18 @@ register_script_function(11, [](Script& script) {
 
 이제 조금 설명이 필요합니다. 게임 엔진의 콜백 함수는 프로그램에서 발생하는 호출로부터 인수를 검색한 다음 호출된 함수에 따라 유용한 작업을 수행합니다. 프로그램이 이렇게 수행한다고 가정해보세요:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```cpp
 LocationData loc(1, 2, 3);
@@ -186,8 +238,18 @@ LocationGet(1, 2, 3) 비어 있었어요!
 
 그래서 이 프로그램은 먼저 (1, 2, 3) 위치에 있는 LocationData를 생성하고 비어 있는지 확인합니다. 비어 있었습니다. 그런 다음 4바이트 벡터에서 할당하고, 커밋하며, 새로운 (1, 2, 3) 위치에 있는 LocationData를 만들고 이제 4바이트를 포함하였다는 것을 확인할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LocationData의 생성자는 다음과 같습니다:
 
@@ -201,9 +263,20 @@ if (res.data) {
 
 이 코드는 게임 엔진에 location_get을 실행하도록 요청하며, 이를 콜백 10으로 번호를 매깁니다. 콜백 10이 실행되고, 즉시 첫 번째로 받은 3개의 인자를 정수형으로 가져와 x, y, z를 만듭니다. 그런 다음 이를 위치들 지도에 찾아보고, 찾지 못하면 (0, 0)를 반환합니다. 이것은 다른 한 쪽에 포인터가 있고, 다른 하나는 정수인 두 레지스터를 0으로 설정하는 것으로 상상할 수 있습니다.
 
-이후, LocationData가 비어있게 되고, 그것이 출력됩니다. 그런 다음에 데이터를 할당하고 commit()를 호출합니다. Commit은 location_commit인 콜백 11을 호출할 것입니다. 콜백을 확인하면 4개의 인자를 읽어옵니다: x, y, z 및 `span<uint8_t>`입니다. 이것은 동적인 스팬이므로 2개의 레지스터를 소비해서 총 5개로 만들어집니다. 이는 프로그램의 정의와 일치하는데, void(int, int, int, const void*, size_t)입니다. 즉, 포인터를 위한 하나의 레지스터, 그리고 데이터의 크기를 위한 두 번째 레지스터가 필요합니다. 그리고 이 데이터는 해당 위치의 지도로 복사됩니다.
+이후, LocationData가 비어있게 되고, 그것이 출력됩니다. 그런 다음에 데이터를 할당하고 commit()를 호출합니다. Commit은 location_commit인 콜백 11을 호출할 것입니다. 콜백을 확인하면 4개의 인자를 읽어옵니다: x, y, z 및 `span<uint8_t>`입니다. 이것은 동적인 스팬이므로 2개의 레지스터를 소비해서 총 5개로 만들어집니다. 이는 프로그램의 정의와 일치하는데, void(int, int, int, const void\*, size_t)입니다. 즉, 포인터를 위한 하나의 레지스터, 그리고 데이터의 크기를 위한 두 번째 레지스터가 필요합니다. 그리고 이 데이터는 해당 위치의 지도로 복사됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내, LocationData를 다시 (1, 2, 3)로 만들었고, 이번에는 데이터를 찾았어요. 4바이트가 저장되고 프로그램으로 검색되었으며, 데이터와 크기는 2개의 레지스터로 전달되었어요. 호스트 측의 콜백 함수에서는 다음과 같은 절차가 진행됩니다:
 
@@ -215,7 +288,18 @@ if (res.data) {
 
 이 예제 API에 대한 마지막 참고 사항은 상당히 남용 방지 메커니즘이 있다는 것입니다. 우리가 적대적인 행동을 기대하는 경우, 생성될 수 있는 위치의 수에 제한을 두었어야 했지만, 이를 제외하고는 libriscv API가 극단적인 값들을 예방하는 데 탁월한 역할을 합니다. 예를 들어, 방대한 범위는 즉시 실패합니다. 잘못된 메모리 읽기 또는 쓰기는 실행이 실패합니다. 너무 오랫동안 지연하는 시도도 실패합니다. 간단히 말해, 정말 딱글딱글하게 만드는 경우가 있어 무한 루프에 빠진 적도 있지만, 이로 인해 게임에 영향을 준 적은 없었습니다. 잠시 실행되다가 결국 스스로 실패하고 멈춘 지점도 알려줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 원격 프로시저 호출
 
@@ -225,7 +309,18 @@ if (res.data) {
 
 우리가 하려는 다른 방법은 고정 크기 lambda 캡쳐를 사용하는 것입니다. 우리가 신경 쓰는 것들을 (값으로!) 람다 함수에 복사하여 원격 위치로 전송하고 그것을 인자로서 트램폴린에 전달할 수 있습니다. 그런 다음 트램폴린은 캡쳐와 함께 람다를 호출하고 와! 원격 프로시저 호출이 이뤄집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 API를 다음과 같이 만들어 봅시다:
 
@@ -254,7 +349,18 @@ static void rpc(riscv::Function<void()> func)
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 하는 일은 inline 함수를 사용하여 전달 된 `remote_lambda`를 호출하는 것입니다. 이 함수는 포인터로 변환 할 수있는 내부 함수를 취하며 해당 포인터를 고정 크기 캡처 함수로 변환할 수 있습니다. 그런 다음 호출합니다. 그리고 두 번째 및 세 번째 인수는 함수와 해당 크기입니다. 즉, 3 개의 인수가 있습니다. : 함수 포인터, Function`void()` 포인터 및 해당 크기.
 
@@ -274,7 +380,18 @@ register_script_function(12, [](Script& script) {
 
 여기서는 함수 포인터 주소를 검색한 다음 32 바이트 std::array에 대한 제로 복사 포인터를 얻습니다. 내부적으로 메모리가 올바르며 범위 내에 있는지 확인하려고 고정 크기 1 요소 span이 생성됩니다. 그런 다음 배열로 변환되며 정렬 확인 후에 처리됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 우리는 프로그램에서 캡처 스토리지를 사용하여 함수를 호출할 수 있는 능력을 가졌습니다. 따라서 함수를 호출하기 위해 다른 Script 인스턴스를 만들겠습니다:
 
@@ -292,7 +409,18 @@ Hello from a remote virtual machine!
 x = 42
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 두 프로그램이 동일할 때 안전하고 신뢰할 수 있는 RPC를 구현하는 데 함수 주소와 캡처 저장소만 필요하다는 것을 보여줍니다. 이것은 제가 게임 개발에서 많이 활용하는 기능입니다.
 
@@ -302,7 +430,18 @@ x = 42
 
 첫째, 단순히 이름으로 함수를 찾아 미리 합의된 매개변수를 사용하여 호출하는 것이 가장 쉽지만 약간 오류가 발생할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 myscript.call("my_function", 1, 2, 3, "four");
@@ -316,7 +455,18 @@ myscript.call("my_function", 1, 2, 3, "four");
 DEFINE_DYNCALL(13, my_callback, void(const char*, void(*)(int)));
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 게임 안의 엔티티를 식별하는 첫 번째 문자열을 가져와서 함수 포인터를 사용합니다. 이벤트가 발생할 때 함수 포인터가 호출되며, 엔티티의 ID인 정수를 전달할 것입니다. 호스트에서 핸들러를 구현하는 예시입니다:
 
@@ -339,7 +489,18 @@ register_script_function(13, [](Script& script) {
 
 그래서 이러한 호스트에서의 콜백을 사용하면, 호출되면 엔티티를 찾아서, 해당 엔티티의 on_event 콜백을 설정하여 이전에 제공된 함수 포인터로 스크립트 함수를 호출하고 엔티티 ID를 인수로 전달하게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스크립트 안에는 이제 이렇게 이벤트 핸들러를 만들 수 있습니다:
 
@@ -353,7 +514,18 @@ my_callback("entity1", [] (int id) {
 
 콜백에 대한 세 번째이자 마지막 방법은 위와 동일하지만, 스크립트에서 Function`void()`를 사용합니다. 호스트에서 캡처 스토리지를 람다로 복사하여 이벤트 핸들러에 전달한 후, 이벤트가 트리거될 때 함수 호출 중에 캡처 스토리지를 스택에 푸시합니다. RPC의 예와 비슷합니다. 이렇게 함으로써 캡처 스토리지를 가진 이벤트를 만들 수 있습니다. 매우 편리하죠!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 단계별로 구현을 마무리해 봅시다. 먼저, 스크립트에서 정의를 수정하여 추가적인 const void*, size_t 매개변수를 받도록 하고, 그 다음으로 함수 포인터를 수정하여 나중에 캡처 저장소를 가져올 수 있도록 void* 인수를 추가하세요:
 
@@ -375,7 +547,18 @@ static void entity_on_event(const char* name, riscv::Function<void(int)> callbac
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도움 함수는 복잡한 호출을 간단하게 만들어줍니다. 함수를 다시 자체로 캐스팅하는 중간 함수가 추가되며, 일반적인 인수로 호출됩니다. 또한 반환 값을 전달할 수도 있습니다.
 
@@ -405,7 +588,18 @@ register_script_function(13, [](Script& script) {
 });
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 변경된 부분은 capture storage를 값으로 복사하여 on_event lambda에 넣은 다음, void* 인수로서 마지막 인수로 넣어 스택에 푸시하는 것입니다. 이것은 void* 인수입니다. 이 예제에서는 실제로 배열을 포인터로 반환했습니다: `std::array<uint8_t, 32>*`, 그리고 이것은 그 데이터에 대한 제로-코피 포인터를 제공합니다. 하지만, 그것을 값으로 capture해야 합니다.
 

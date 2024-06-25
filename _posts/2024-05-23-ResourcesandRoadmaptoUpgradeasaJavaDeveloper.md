@@ -3,13 +3,12 @@ title: "자바 개발자로 성장하기 위한 자료와 로드맵"
 description: ""
 coverImage: "/assets/img/2024-05-23-ResourcesandRoadmaptoUpgradeasaJavaDeveloper_0.png"
 date: 2024-05-23 13:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ResourcesandRoadmaptoUpgradeasaJavaDeveloper_0.png
 tag: Tech
 originalTitle: "Resources and Roadmap to Upgrade as a Java Developer"
 link: "https://medium.com/code-like-a-girl/resources-and-roadmap-to-upgrade-as-a-java-developer-fcf7787cfbbc"
 ---
-
 
 ## DSA, 데이터베이스, 시스템 설계, 객체지향 프로그래밍, 자바, 테스팅, 그리고 더 많은 것들…
 
@@ -19,7 +18,18 @@ link: "https://medium.com/code-like-a-girl/resources-and-roadmap-to-upgrade-as-a
 
 LinkedIn, Medium, 그리고 친구들로부터 제가 발전하기 위해 사용한 자원에 관한 메시지를 많이 받았어요. 기다리셨던 대로요! 이제 내가 항상 활용하는 자원들을 여러분과 공유하려고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 현재 마이크로소프트에서 근무하기 전 주로 Java에 대한 배경을 가지고 있었습니다. 이 영역에서 자원과 고급 기술을 공유하는 데 초점을 맞출 것입니다. 하지만 다른 분야에서도 일반적인 자원 및 IT 산업에서 업그레이드하는 로드맵을 참고할 수 있습니다.
 
@@ -33,7 +43,18 @@ LinkedIn, Medium, 그리고 친구들로부터 제가 발전하기 위해 사용
 
 질문이 있으면 언제든지 물어보시거나 LinkedIn에서 DM을 보내주시기 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 로드맵과 자원
 
@@ -43,7 +64,18 @@ LinkedIn, Medium, 그리고 친구들로부터 제가 발전하기 위해 사용
 
 Java와 여러분이 주력으로 하는 언어에서 전문가가 되도록 노력하세요. 여러분이 뛰어난 분야를 가지는 것은 유익합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발자님 안녕하세요!
 
@@ -55,7 +87,18 @@ Java와 여러분이 주력으로 하는 언어에서 전문가가 되도록 노
 
 ## 객체 지향 프로그래밍 (OOPs):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 개념의 중요성을 이해하고 문제를 실질적으로 해결하는 방법을 배웁시다.
 
@@ -65,7 +108,18 @@ Java와 여러분이 주력으로 하는 언어에서 전문가가 되도록 노
 
 문제 해결을 위한 필수 데이터 구조와 알고리즘을 마스터하는 것이 중요합니다. 제품 중심 기업에서의 면접을 성공적으로 통과하는 데 필수적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘에는 서비스 기반 조직들도 클라이언트의 요구에 따라 DSA 질문을 하기도 합니다.
 
@@ -77,7 +131,18 @@ DSA는 논리 개발과 알고리즘 구축에도 유용합니다. 예를 들어
 - Tim Buchalka, Goran Lochert의 "자바를 사용한 자료 구조 및 알고리즘 심층 탐구" (Udemy)
 - LeetCode (매일 연습)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 중급 스킬
 
@@ -87,7 +152,18 @@ DSA는 논리 개발과 알고리즘 구축에도 유용합니다. 예를 들어
 
 저는 내 인터뷰 중 대략 60% 정도에서 이러한 주제에 관한 질문을 받았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 자료:
 
@@ -100,21 +176,54 @@ DSA는 논리 개발과 알고리즘 구축에도 유용합니다. 예를 들어
 
 Spring Framework: 자바 개발자로서 계속 발전하려면, 의존성 주입, 제어의 역전, 그리고 관점 지향 프로그래밍과 같은 중요한 Spring Framework 개념을 탐구하고 Spring Core, Spring Data, Spring MVC 및 기타 관련 Spring 개념을 다루는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나의 자원: Spring 튜토리얼 | Baeldung
 
-MySQL: 이것은 중요하며 프로젝트와 인터뷰에서 관계형 데이터베이스, SQL 쿼리 및 데이터베이스 설계 작업에 능숙해지기 위해 항상 필요할 것입니다. 
+MySQL: 이것은 중요하며 프로젝트와 인터뷰에서 관계형 데이터베이스, SQL 쿼리 및 데이터베이스 설계 작업에 능숙해지기 위해 항상 필요할 것입니다.
 
 Hibernate: 처음에는 ORM(Object-Relational Mapping)에 대해 알아야 하고 Hibernate를 사용하여 데이터베이스와 상호 작용하는 방법을 알아야 했습니다.
 
 소프트웨어 디자인 원칙: 경험 많은 개발자로서 반드시 갖춰야 할 기술은 최적화된 시스템을 설계하는 것이므로 면접이나 지식 습득 시 빠뜨리지 마세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소프트웨어 디자인 원리:
 
@@ -128,7 +237,18 @@ Hibernate: 처음에는 ORM(Object-Relational Mapping)에 대해 알아야 하�
 
 ## 스프링 부트:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스프링 부트는 스프링 플랫폼에 추가된 기능으로, 설정보다는 규약에 중점을 둔다.
 
@@ -138,7 +258,18 @@ Hibernate: 처음에는 ORM(Object-Relational Mapping)에 대해 알아야 하�
 
 ## 마이크로서비스 아키텍처:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 3부에서 언급했지만, 요즘 개발자 인터뷰에서 가장 많이 묻는 주제 중 하나에요.
 
@@ -148,7 +279,18 @@ Hibernate: 처음에는 ORM(Object-Relational Mapping)에 대해 알아야 하�
 
 이것들은 개발자에게 추가로 좋은 기술들이에요. 널리 사용되며 개발자의 실용적인 지식을 향상시킬 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스케일러블하고 분산 시스템을 구축하기 위한 메시지 브로커에 대해 알아보세요.
 
@@ -158,7 +300,18 @@ Hibernate: 처음에는 ORM(Object-Relational Mapping)에 대해 알아야 하�
 
 ## AWS:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS 및 AWS, Azure, GCP 등과 같은 모든 클라우드 서비스는 중요합니다. 매일 다른 취직 공고에서 이에 관한 언급을 찾을 수 있을 거에요.
 
@@ -168,7 +321,18 @@ AWS 및 AWS, Azure, GCP 등과 같은 모든 클라우드 서비스는 중요합
 
 호스팅, 저장 및 컴퓨팅을 위한 클라우드 서비스를 탐색해보세요. 여기서 배운 것의 "무엇"과 "왜"도 알아야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 자료: [NEW] Ultimate AWS Certified Cloud Practitioner CLF-C02 — by Stephane Maarek (Udemy)
 
@@ -178,7 +342,18 @@ AWS 및 AWS, Azure, GCP 등과 같은 모든 클라우드 서비스는 중요합
 
 RESTful API를 설계하고 구현하는 방법을 배워보세요. 마이크로서비스에서 RESTful API가 널리 사용되고 개발자들로부터 기대되므로 이를 숙지하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 통합 테스팅 및 유닛 테스팅:
 
@@ -188,7 +363,18 @@ JUnit, Mockito, Cucumber, 그리고 Chai(node.js)와 같은 도구들이 유명�
 
 유닛 테스트는 온라인 평가 및 머신 코딩 인터뷰 라운드의 일부가 되기도 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 외에도, 이러한 것들은 개발자가 코드에서 채택해야 하는 매우 유익한 관행들입니다.
 
@@ -198,7 +384,18 @@ JUnit, Mockito, Cucumber, 그리고 Chai(node.js)와 같은 도구들이 유명�
 
 SSEs에서는 HLDs가 깊게 다뤄지며, LLDs는 상위 수준에서 기대됩니다. 기본 LLDs도 SSEs로부터 요청될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, 확장 가능하고 신뢰할 수 있는 시스템을 설계하는 기술을 숙달해보세요. 어떤 구성 요소를 사용할지, 왜 사용하는지, 그리고 어떻게 사용할지를 알아야 합니다.
 
@@ -209,7 +406,18 @@ SSEs에서는 HLDs가 깊게 다뤄지며, LLDs는 상위 수준에서 기대됩
 - 시스템 설계 튜토리얼 — GeekforGeeks
 - 초보자를 위한 시스템 설계 — YouTube
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 5. 도구 및 기술
 
@@ -219,7 +427,18 @@ Docker, Kubernetes: 애플리케이션을 배포하고 관리하기 위한 컨�
 
 Jenkins, JIRA: Agile 개발을 위한 CI/CD 파이프라인과 프로젝트 관리 도구에 대해 이해해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6. 전문 기술
 
@@ -229,7 +448,18 @@ Jenkins, JIRA: Agile 개발을 위한 CI/CD 파이프라인과 프로젝트 관�
 
 - 애자일 방법론: 요즘은 거의 80% 이상의 회사가 인터뷰 후보자가 스크럼이나 칸반 등 애자일 원칙 및 방법론, 그리고 JIRA, Confluence, SDLC와 같은 도구에 대해 이해하거나 경험이 있기를 기대해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 요약
 
@@ -239,7 +469,18 @@ DSA와 함께 '||'가 있으면 DSA가 다른 모든 수준과 병렬로 처리�
 
 2024년 현재 Java 개발자에게 필요한 최고의 기술은 DSA, 시스템 디자인, Java, 마이크로서비스, Spring Boot, AWS/Azure와 같은 클라우드 플랫폼, Apache Kafka/RabbitMQ와 같은 메시지 브로커, MySQL과 같은 데이터베이스, 그리고 Redis와 같은 캐싱 메커니즘이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 경험 많은 직원들에게 기대되는 기본적인 기술은 Git, CI/CD 파이프라인에 대한 이해, 그리고 자동화 도구 구축입니다.
 
@@ -249,7 +490,18 @@ GitHub Actions, Telemetry, Spinnaker, Datadog, New Relic 등의 APM 도구는 �
 
 지금까지 만난 가장 중요한 기술들이며 이러한 분야에서 뛰어나거나 이를 뛰어넘는다면 다수의 개발자들 사이에서 돋보이게 되어 어려운 인터뷰에 성공하거나 MAANGs와 같은 주요 기술 회사에서 취업할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 학습하거나 복습하고 있는 개념이 있나요? 저는 레벨 5에 있어서 Docker와 Kubernetes를 배우고 있어요.
 

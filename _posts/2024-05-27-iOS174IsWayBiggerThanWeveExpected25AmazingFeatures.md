@@ -18,7 +18,18 @@ iOS 17.4를 소개합니다. 개발자와 경쟁 업체들에게는 좋은 날�
 
 iOS에 대한 상당히 중요한 (그리고 매우 필요한) 업데이트이지만, 일부 변경 사항은 애플이 즐거워하기 위해 한 게 아니라는 것을 알아두세요. 오히려 EU의 강제법률과 조치들을 준수하기 위한 것으로, 이는 바로 애플의 EU 기술에 대한 통제에 직접적인 타격을 입고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 Apple은 이점을 위해 뭔가를 했습니다. 현재, EU가 요구하는 기능은 EU 기반 아이폰에만 적용되며, 이는 전체 수익의 7%를 차지합니다. 대단한 아이디어네요.
 
@@ -66,7 +77,18 @@ iOS에 대한 상당히 중요한 (그리고 매우 필요한) 업데이트이�
 26 — 앱 스토어에서 구매 기록
 27 — 독일어에서 Siri 호출 시 ‘Hey’ 삭제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # — EU-SPECIFIC CHANGES —
 
@@ -77,7 +99,18 @@ iOS에서 사이드 로딩이 시작되었습니다!
 
 이 기능은 기존 앱 스토어 외 다른 원본에서 앱을 설치할 수 있는 기능입니다(대체 앱 마켓이라고도 함) — 예를 들어 Play Store, Amazon Appstore, 그리고 Setapp과 같은 곳에서 (iOS로 이동할지 여부는 확실하지 않지만, 감을 잡기 위해서 들어주었습니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (App Marketplace ≈ 다른 iOS 앱을 설치할 수 있는 iOS 앱)
 
@@ -87,7 +120,18 @@ iOS에서 사이드 로딩이 시작되었습니다!
 
 가장 좋은 점은 다른 앱 스토어를 기본 앱 스토어로 설정할 수 있다는 것입니다 — 기본 브라우저를 변경하는 것만큼 쉽게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 애플은 개인 정보보호와 보안 서약에 따라 대체 앱 스토어에서 설치된 앱에 대한 악성 코드를 경고하고, 이에 해당하는 경우 해당 앱을 열지 못하도록 막을 것입니다.
 
@@ -98,21 +142,39 @@ iOS에서 사이드 로딩이 시작되었습니다!
 이것을 주목한 적이 있나요?
 기본 브라우저가 Safari인 경우, 설정 ⚙️ ` 같이 Safari가 아닌 브라우저를 활성화한 경우, 기본 브라우저를 변경할 수 있는 섹션이 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이것은 브라우저인 사파리의 설정에서는 표시되지 않습니다. 이것도 브라우저인데 이상하네요...
 
-
 <img src="/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_1.png" />
-
 
 하지만 기본 브라우저를 크롬, 파이어폭스 또는 사파리가 아닌 다른 브라우저로 변경하면 사파리 설정에서도 이 부분이 마법처럼 나타납니다.
 
-
 <img src="/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_2.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플이 여러분이 Safari를 기본 브라우저로 유지하기를 원하는 정도입니다.
 
@@ -122,7 +184,18 @@ iOS에서 사이드 로딩이 시작되었습니다!
 
 표시되는 브라우저는 국가마다 다르며 각 사용자마다 무작위로 지정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이폰에 설치되어 있지 않아도 브라우저가 나타납니다. 브라우저를 기본 브라우저로 설정하려면 다운로드해야 합니다.
 
@@ -137,7 +210,18 @@ iOS에서 사이드 로딩이 시작되었습니다!
 모든 브라우저는 속도와 추가 기능을 위해 자체 엔진을 개선할 수 있습니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Apple는 처음부터 iOS에서 여러 브라우저를 허용해 왔지만 엔진은 한 가지뿐이었습니다 - Webkit (Apple 고유). 다른 곳에서 Blink와 Gecko를 사용하는 Chrome과 Firefox조차도 iOS에서는 WebKit에 맞춰야 했습니다.
 
@@ -147,7 +231,18 @@ Apple는 처음부터 iOS에서 여러 브라우저를 허용해 왔지만 엔�
 
 Apple은 iOS에서 엔진을 실행하기 전에 철저한 검사를 실시할 것이지만, 가장 인기 있는 엔진들이 대부분 허용될 것이라 확신합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # — 일반적인 변경사항 —
 
@@ -157,7 +252,18 @@ Apple은 iOS에서 엔진을 실행하기 전에 철저한 검사를 실시할 �
 
 새롭게 도입된 이모지 15.1 표준을 준수하는 애플의 16개의 새로운 이모지입니다. 이러한 것이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_4.png)
 
@@ -169,7 +275,18 @@ Apple은 iOS에서 엔진을 실행하기 전에 철저한 검사를 실시할 �
 
 ## #5. 비즈니스 메시지
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설정 ⚙️ ` 메시지 💬`에서 '비즈니스 및 개인 정보에 대한 메시지'라는 하이퍼링크가 있었어요.
 
@@ -179,7 +296,18 @@ Apple은 iOS에서 엔진을 실행하기 전에 철저한 검사를 실시할 �
 
 ## #6. Siri can read out messages in different languages
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘 Siri가 메시지를 보내기 전에 확인을 요청하는 단계를 건너뛸 수 있다는 걸 알고 계셨나요?
 
@@ -189,7 +317,18 @@ Apple은 iOS에서 엔진을 실행하기 전에 철저한 검사를 실시할 �
 
 하지만 iOS 17.4에서는 해당 부분이 ‘Siri로 메시지 보내기’로 대체되었는데, 메시지 자동으로 전송하는 것 외에도 Siri가 메시지를 읽을 때 사용할 몇 가지 언어를 선택할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 테이블 태그를 변경했습니다.
 
@@ -201,7 +340,18 @@ Apple은 iOS에서 엔진을 실행하기 전에 철저한 검사를 실시할 �
 
 ## #7. 도난 방지 기능의 중요한 변경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 17.3의 "The Stolen Device Protection" 기능은 사용자의 개인 정보 보호와 보안을 위한 iOS의 훌륭한 새로운 추가입니다.
 
@@ -211,8 +361,18 @@ iOS 17.3의 "The Stolen Device Protection" 기능은 사용자의 개인 정보 
 
 하지만 iOS 17.4에서 Apple은 iPhone이 위치와 관계없이 1시간의 지연을 강제로 적용할 수 있는 유용한 기능을 가져왔습니다. (설정에서 조정하세요 ⚙️ `Face ID & Passcode 🙂` Stolen Device Protection)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_8.png)
 
@@ -223,9 +383,18 @@ iOS 17.3의 "The Stolen Device Protection" 기능은 사용자의 개인 정보 
 
 There is a new section called 'Contactless & NFC' in Settings ⚙️ Privacy & Security ✋.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_9.png)
 
@@ -235,8 +404,18 @@ So Apple’s allowing 3rd party apps to use iPhone's built-in NFC payments featu
 
 And in the EU, Apple allows users to select a 3rd-party contactless payment app as default — instead of Wallet. Cool, right?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #9. 새로운 지역 식별자
 
@@ -246,7 +425,18 @@ And in the EU, Apple allows users to select a 3rd-party contactless payment app 
 
 지금은 이에 대한 정보가 없지만, 애플이 EU에 있는지 여부를 식별하여 EU 특정 기능에 액세스할 수 있도록 하는 방법일 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자신이 EU에 있다고 청구 주소를 변경하거나 Apple ID 지역을 변경하거나 VPN을 사용하여 속이는 것은 불가능합니다. Apple은 이를 확인하기 위해 알 수 없는 강력한 방법을 사용하고 있습니다.
 
@@ -256,8 +446,18 @@ And in the EU, Apple allows users to select a 3rd-party contactless payment app 
 
 Safari에서 탭 바를 사용하는 경우 (상단이 아닌 하단에 탭이 표시되는 경우), 이제 다소 넓어졌다는 차이를 발견할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_11.png)
 
@@ -267,8 +467,18 @@ I didn’t like it, but maybe it takes some time to get used to it.
 
 ![Image 2](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_12.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 ‘모든 애니메이션 재생’ 옵션을 Safari에서 사용하면 한 번에 웹페이지의 모든 GIF 애니메이션을 재생할 수 있어요.
 
@@ -278,7 +488,18 @@ I didn’t like it, but maybe it takes some time to get used to it.
 
 ![이미지](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 팟캐스트를 좋아하는 사용자들이 영원히 사랑할 멋진 기능이에요.
 
@@ -288,7 +509,18 @@ I didn’t like it, but maybe it takes some time to get used to it.
 
 ## 13번. 에피소드 이름을 눌러 정보보기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기능이 정말 멋져요. — 이제 에피소드 이름을 탭하여 해당 정보 페이지로 이동할 수 있어요.
 
@@ -298,7 +530,18 @@ Apple이 아래에 표시된 것처럼 프롬프트를 통해 제안할 거에�
 
 # • 새로운 시계 변경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #14. 새 시계 위젯
 
@@ -308,7 +551,18 @@ Apple이 아래에 표시된 것처럼 프롬프트를 통해 제안할 거에�
 
 이 위젯은 다른 모든 City 위젯들이 보여주는 정보를 보여줍니다 — 그러나 정사각형 모양이고 디지털 시간을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #15. 스톱워치에 라이브 활동 추가
 
@@ -318,7 +572,18 @@ Apple이 아래에 표시된 것처럼 프롬프트를 통해 제안할 거에�
 
 <img src="/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_16.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 새로운 지갑 변경 사항
 
@@ -328,7 +593,18 @@ Apple Cash Card는 Apple Wallet에 좋은 추가입니다.
 
 아마도 당신이 친구나 가족으로부터 돈을 송금하고 받는 가장 간단한 방법일 것입니다. 또한 Apple Pay를 허용하는 상점에서 다른 선불 카드와 같이 사용할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 Apple Pay를 받아들이지 않고 대신 카드 세부정보를 요청하는 상점/웹사이트는 어떻게 해야 하나요?
 
@@ -338,7 +614,18 @@ Apple Cash Card는 Apple Wallet에 좋은 추가입니다.
 
 가장 좋은 점은,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 카드 정보가 유출됐다고 의심된다면 언제든지 새로운 정보 세트를 생성할 수 있어요 — 이전 정보는 더 이상 사용할 수 없게 됩니다.
 - 업데이트된 카드 정보는 자동으로 Safari 자동완성에 저장돼요.
@@ -350,7 +637,18 @@ Apple Cash Card는 Apple Wallet에 좋은 추가입니다.
 
 이것은 설정 ⚙️ `개인정보 및 보안 ✋` 분석 및 개선의 새로운 분석 옵션입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 켜 놓으면, 계정 정보를 익명으로 Apple과 공유하여 연결된 계정 경험을 향상시킵니다.
 
@@ -360,7 +658,18 @@ Apple Cash Card는 Apple Wallet에 좋은 추가입니다.
 
 Apple이 WWDC22에서 차세대 CarPlay를 미리 살펴보여주었고, 우리에게 2023년 말에 도착할 것을 기대하라고 말해주었어요. 그러나 우리가 기다리던 2023년이 이미 지났군요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플이 CarPlay 웹페이지를 업데이트하여 "첫 번째 모델은 2024년 도착 예정"이라고 말했습니다. 그리고 𝕏의 Aaron(@aaronp613)은 iOS 17.4 코드에서 새로운 아이콘과 애니메이션 중 일부를 찾아내었습니다.
 
@@ -370,7 +679,18 @@ Apple이 WWDC22에서 차세대 CarPlay를 미리 살펴보여주었고, 우리�
 
 ![이미지](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_19.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #19. 새로운 CarPlay 앱 및 아이콘들
 
@@ -387,13 +707,35 @@ Aaron은 CarPlay 2.0에서 새로운 아이콘들을 발견했습니다. 𝕏에
 - Tyre Pressure: 각 타이어의 공기압을 표시하고 고 또는 낮은 압력 및 펑크된 타이어 알림을 제공합니다.
 - Trips: 여행에 대한 평균 속도, 연료 또는 에너지 효율성, 소요 시간 및 이동 거리 등의 정보를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 인기 차 제조업체가 이미 자사의 자동차에 CarPlay 2.0을 도입하기로 약속한 상태입니다.
 
 - 새로운 백엔드 변경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #20. 게임 스트리밍이 이제 가능합니다
 
@@ -407,7 +749,18 @@ Aaron은 CarPlay 2.0에서 새로운 아이콘들을 발견했습니다. 𝕏에
 
 지금까지 iOS에서 게임 스트리밍은 브라우저를 통해 웹앱을 통해서만 이용할 수 있었는데, 이는 게임을 경험하기에 편안하거나 몰입할 수 있는 방법이 아니었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만이 변경으로 Xbox Cloud Gaming과 Nvidia GeForce NOW와 같은 서비스가 독립 앱으로 앱 스토어에 진입할 수 있게됩니다. 게이머들에게는 좋은 소식이에요.
 
@@ -418,7 +771,18 @@ Aaron이 보도한 바에 따르면, iOS 17.4의 코드에는 다음과 같은 �
 - USB-C 커넥터가 장착된 이어팟
 - USB-C에서 3.5mm 헤드폰 잭 어댑터
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이건 놀랍군요! 제 예상을 뛰어넘는 애플의 행보네요. 이번 펌웨어 업데이트로 플로피 와이어까지 지원한다니요.
 
@@ -428,7 +792,18 @@ Aaron이 보도한 바에 따르면, iOS 17.4의 코드에는 다음과 같은 �
 
 ## #22. 프로필링 아이콘 재구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Files 앱의 iCloud 아이콘이 업데이트되었어요.
 
@@ -438,7 +813,18 @@ Files 앱의 iCloud 아이콘이 업데이트되었어요.
 
 ## #23. 책, 음악, & 팟캐스트를 위한 홈 섹션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플이 모든 주요 섹션인 Books, Music 및 Podcasts 앱의 이름을 '홈'으로 변경하였습니다. 이는 간결함과 일관성을 가져다 줍니다.
 
@@ -449,7 +835,18 @@ Files 앱의 iCloud 아이콘이 업데이트되었어요.
 
 ![이미지](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_21.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #24. 팟캐스트의 '재생 중' 바가 Apple Music을 모방합니다.
 
@@ -459,7 +856,18 @@ Files 앱의 iCloud 아이콘이 업데이트되었어요.
 
 ![이전 이미지](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_22.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제는:
 
@@ -469,7 +877,18 @@ Files 앱의 iCloud 아이콘이 업데이트되었어요.
 
 ## #25. HomePod 및 Apple TV와 함께 SharePlay Music
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신은 이미 아시다시피 —
 iOS 17부터는 친구나 가족과 함께 차 안에서 SharePlay 음악을 공유할 수 있습니다. 허가를 받은 사람은 Apple Music 구독이 활성화되어 있지 않아도 재생을 제어할 수 있습니다.
@@ -480,7 +899,18 @@ iOS 17부터는 친구나 가족과 함께 차 안에서 SharePlay 음악을 공
 
 ![image](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_24.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Apple TV를 tvOS 17.4 업데이트와 함께 사용 중이라면, QR 코드를 Apple TV 화면에 바로 표시할 수 있어요.
 
@@ -490,7 +920,18 @@ iOS 17부터는 친구나 가족과 함께 차 안에서 SharePlay 음악을 공
 
 앱 스토어에서 이제 ‘구매 내역’이라는 새로운 섹션에서 모든 구매 내역을 전체로 확인할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 이미지를 확인하려면 앱 스토어를 열고 프로필을 클릭한 후, ‘구매 기록’을 클릭하세요.
 
@@ -500,7 +941,18 @@ iOS 17부터는 친구나 가족과 함께 차 안에서 SharePlay 음악을 공
 
 또한 ‘구매한 항목’ 섹션이 이제 ‘앱’으로 이름이 변경됐습니다. 위의 이미지를 보세요. 그것이 첫 번째입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #27. 독일어로 Siri를 부를 때 "Hey" 제외하기
 
@@ -510,7 +962,18 @@ iOS 17부터는 친구나 가족과 함께 차 안에서 SharePlay 음악을 공
 
 그러나 아직 모든 언어와 호환되지는 않습니다. iOS 17.4에서는 독일어가 호환 언어로 포함되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아니오, iOS 17이 멋지지 않나요?
 
@@ -520,7 +983,18 @@ iOS 17의 280여 가지 이상의 새로운 기능: 컴필레이션 (항상 업�
 
 새로운 iOS 및 Mac 앱을 탐험하는 것을 좋아한다면 (제가 그렇듯), Setapp에 가입해보세요. 매달 $9.99에 놀라운 앱 240여 개의 선별된 컬렉션에 액세스할 수 있습니다. 개별 구매 시 수백 달러가 드는 앱들이군요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 지금부터 여러분의 Setapp 여정을 시작할 때 제 제휴 링크를 사용해보세요! (30일 무료 이용 가능합니다)
 - 여기에서 Setapp에서 제가 추천하는 70가지 이상의 최고의 macOS 앱 목록을 무료로 받아보세요.
@@ -531,7 +1005,18 @@ iOS 17의 280여 가지 이상의 새로운 기능: 컴필레이션 (항상 업�
 
 ![2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_28.png](/assets/img/2024-05-27-iOS174IsWayBiggerThanWeveExpected25AmazingFeatures_28.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 처음 두 줄의 이모지
 
@@ -551,7 +1036,18 @@ iOS 17의 280여 가지 이상의 새로운 기능: 컴필레이션 (항상 업�
 - 🧑🦽➡️ — 오른쪽을 향한 수동 휠체어 이용자
 - 🧑🦼➡️ — 오른쪽을 향한 전동 휠체어 이용자
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비슷한 여러 피부색과 성별을 나타내는 이모지가 더 있어요. Emojipedia에서 모두 확인해보세요.
 
@@ -561,7 +1057,18 @@ iOS 17의 280여 가지 이상의 새로운 기능: 컴필레이션 (항상 업�
 
 이 네 개의 이모지는 가족 이모지 세트를 대체해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 사용할 수 있는 이모지 대체 목록입니다:
 
@@ -586,7 +1093,18 @@ iOS 17의 280여 가지 이상의 새로운 기능: 컴필레이션 (항상 업�
 - 👩‍👩‍👦 — 두 엄마와 아들이 있는 가족
 - 👩‍👩‍👧 — 두 엄마와 딸이 있는 가족
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세 번째 이모지가 바뀝니다:
 

@@ -3,13 +3,12 @@ title: "Swift에서의 관점 지향 프로그래밍"
 description: ""
 coverImage: "/assets/img/2024-05-20-Aspect-OrientedProgramminginSwift_0.png"
 date: 2024-05-20 17:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-Aspect-OrientedProgramminginSwift_0.png
 tag: Tech
 originalTitle: "Aspect-Oriented Programming in Swift"
 link: "https://medium.com/the-swift-cooperative/aspect-oriented-programming-in-swift-f2366350c527"
 ---
-
 
 <img src="/assets/img/2024-05-20-Aspect-OrientedProgramminginSwift_0.png" />
 
@@ -19,7 +18,18 @@ Aspect-oriented programming (AOP로 앞으로 표기함)은 코드 베이스에 
 
 "Aspect Oriented Programming"이라는 용어를 처음 만났던 그 때를 아직 기억합니다. 많은 시간이 흘렀고, Swift가 아직 존재하지 않았으며, 우리는 기쁘게 Objective-C 코드를 작성하고 있었습니다. ARAnalytics는 AOP 패러다임을 채택하여 코드 베이스 전반에 걸쳐 분석을 추가하는 것을 간단하게 한 최초의 라이브러리 중 하나였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드를 더 자세히 살펴보면 Objective-C에서 AOP를 구현하는 것이 Peter Steinberger가 그의 Aspects 라이브러리에서 언급한 것처럼 메소드 스위즐링을 구현하는 것이라는 것을 알 수 있어요.
 
@@ -30,7 +40,18 @@ Objective-C와는 달리 Swift는 메시지를 가로채고 실행 중에 동작
 
 시작해봐요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Swift에서의 AOP: 좋은 디자인을 향해서
 
@@ -47,7 +68,18 @@ protocol ShowService {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 말했던 대로 소프트웨어의 대부분은 주관적이며 특정 맥락에 따라 토론의 여지가 있음에도 불구하고, 우리를 안내하는 "원칙"들이 있으면 좋습니다. 그 원칙들은 보통 SOLID 원칙들입니다.
 
@@ -62,7 +94,7 @@ struct ShowServiceMock: ShowService {
     func allShows() -> [Show] {
         shows
     }
-    
+
     func allEpisodes(for show: Show) -> [Episode] {
         XCTFail("호출되지 않아야 함")
         return []
@@ -78,7 +110,18 @@ struct ShowServiceMock: ShowService {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## SRP 위반
 
@@ -88,7 +131,18 @@ ISP를 위반할 때, SRP를 위반하는 일도 상당히 흔합니다. SRP는 
 
 TV 프로그램과 관련된 새로운 기능을 추가하려면 ShowService에 새로운 메서드를 추가해야 하며, 서비스의 모든 구현이 그 변경 사항을 수용하고 컴파일 오류를 수정해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 큰 인터페이스는 병목 현상을 유발하기 쉽습니다
 
@@ -98,7 +152,18 @@ TV 프로그램과 관련된 새로운 기능을 추가하려면 ShowService에 
 
 첫 번째 접근 방식은 큰 인터페이스를 읽기와 쓰기를 위한 두 가지 구분된 인터페이스로 분리하는 것입니다. 이를 Command Query Responsibility Segregation(CQRS)이라고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 // 읽기
@@ -120,13 +185,35 @@ protocol ShowCommandService {
 
 ## 두 번째 접근 방법: 작은 서비스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 깨끗한 아키텍처와 유즈 케이스로 작업하는 데 익숙하다면, 이것들이 정확히 그것입니다.
 
 일부 장단점이 있습니다. 각 메서드 당 프로토콜을 갖는 것은 인터페이스의 폭발을 일으킬 수 있습니다. 그러나 이것은 이전에 이야기한 일부 SOLID 원칙을 준수하는 주요 이점도 가지고 있습니다. 이제 ISP(인터페이스 분리 원칙)를 준수하고 있고 아마도 SRP(단일 책임 원칙)을 준수하고 있을 것입니다. 또한 새로운 기능을 추가할 때는 새로운 튜플(인터페이스, 구현)을 만들기만 하면 되므로 코드를 많이 수정하거나 재컴파일하는 영향을 최소화할 수 있습니다. 그러니 전체가 나쁜 것만은 아닙니다. 기억하세요, 모든 것은 의존합니다. 소프트웨어는 모든 것이 트레이드오프에 관한 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 "Aspects"에 대해 생각해보면, 필요한 각 측면마다 프로토콜 당 하나의 구현을 해야 합니다. 예를 들어 "로그 기록 Aspect"를 구현하려면 AllShowsLoggingService와 MarkShowAsWatchedLoggingService 등이 필요합니다. 그래서 우리 앱에서 관심사를 구현하는 데 적합한 방법이 아닌 것 같습니다.
 
@@ -136,7 +223,18 @@ protocol ShowCommandService {
 
 AOP를 확장 가능한 방식으로 구현하려면 "aspects"를 적용할 모든 서비스에 대해 단일 인터페이스/시마가 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 프로토콜 Service<Input, Output> {
@@ -159,7 +257,18 @@ extension Service where Input == Void{
 
 단일 인터페이스를 가지고 있어, 다음과 같은 것을 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 class AllShowsService: Service {
@@ -210,7 +319,18 @@ class ViewModel<AllShowsService: AllShowsServiceType, MarkShowAsWatchedService: 
 
 Service가 단일 인터페이스이기 때문에 앱 전체의 모든 서비스에 적용할 수 있는 각 측면마다 인터페이스의 구현만 있으면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 몇 가지를 구현해 보겠습니다! 확인하시겠지만, 모든 측면은 데코레이터 패턴을 따라 매우 유사합니다.
 
@@ -224,7 +344,7 @@ class LoggingService<Decoratee: Service>: Service {
     typealias Output = Decoratee.Output
 
     let decoratee: Decoratee
-    
+
     init(decoratee: Decoratee) {
         self.decoratee = decoratee
     }
@@ -237,7 +357,18 @@ class LoggingService<Decoratee: Service>: Service {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 프리미엄 사용자 측면
 
@@ -269,7 +400,18 @@ class PremiumService<Decoratee: Service>: Service {
 
 ## 캐싱 측면
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 다른 일반적인 측면은 캐싱 또는 메모이제이션입니다. 단순히 서비스 입력을 해시 가능한 것으로 제한하고 출력을 Codable로 정의함으로써 모든 서비스에 대해 구현할 수 있습니다.
 
@@ -302,7 +444,18 @@ class CachingService<Decoratee: Service>: Service where Decoratee.Output: Codabl
 
 네트워크 링크 조절기(Network Link Conditioner)는 다양한 유형의 네트워크 상황을 시뮬레이션하고 인터넷 연결을 매우 나쁘게 만드는 매우 유용한 도구입니다. 우리는 여기에 측면(Aspect)을 활용하여 정확히 그것을 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class DelayService<Decoratee: Service>: Service {
@@ -330,8 +483,18 @@ class DelayService<Decoratee: Service>: Service {
 
 모든 측면을 준비한 후에는 간단히 뷰 모델을 수정하여 필요한 서비스 유형을 주입하고 여러 측면으로 꾸밀 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 let viewModel = ViewModel( allShowsService: DelayService(decoratee: LoggingService(decoratee: AllShowsService()), nanoseconds: 5 * NSEC_PER_SEC), markShowAsWatchedService: LoggingService(decoratee: MarkShowAsWatchedService()) )
@@ -343,7 +506,18 @@ let viewModel = ViewModel( allShowsService: DelayService(decoratee: LoggingServi
 
 ## 편의성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데코레이터를 연결하는 것은 조금 귀찮을 수 있지만, 확장 기능을 활용하여 작업성을 개선하고 더 관용적으로 조합할 수 있습니다.
 
@@ -371,7 +545,18 @@ AllShowsService()
 
 Sourcery는 많은 보일러플레이트 코드를 자동화하는 훌륭한 메타프로그래밍 도구입니다. 데코레이터는 이 도구를 적용하기에 좋은 후보입니다. 특히 동일한 측면을 많은 다른 인터페이스에 적용하려는 경우에 유용합니다. 여기를 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

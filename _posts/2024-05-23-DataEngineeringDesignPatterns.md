@@ -3,13 +3,12 @@ title: "데이터 엔지니어링 디자인 패턴"
 description: ""
 coverImage: "/assets/img/2024-05-23-DataEngineeringDesignPatterns_0.png"
 date: 2024-05-23 14:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DataEngineeringDesignPatterns_0.png
 tag: Tech
 originalTitle: "Data Engineering Design Patterns"
 link: "https://medium.com/@gchandra/data-engineering-design-patterns-9e06454ab40e"
 ---
-
 
 디자인 패턴은 소프트웨어 엔지니어들만을 위한 것은 아닙니다. 최신 데이터 솔루션을 구축하는 데 도움이 되는 인기있는 데이터 엔지니어링 디자인 패턴을 알아봅시다.
 
@@ -19,7 +18,18 @@ ELT 패턴: 추출, 로드, 변환
 
 이는 RDBMS 세계에서 인기있던 ETL 패턴의 후속입니다. 데이터 엔지니어들이 다양한 소스(RDBMS, API 또는 스크래핑)에서 데이터를 추출하고, S3, ADLS Gen 2, 또는 GCS와 같은 객체 스토어에 로드한 후 Databricks와 같은 현대적인 도구를 사용하여 효율적으로 변환하는 인기있는 공통 패턴입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Lakehouse Pattern](/assets/img/2024-05-23-DataEngineeringDesignPatterns_1.png)
 
@@ -27,7 +37,18 @@ Databricks은 Lakehouse 아키텍처의 선두주자입니다. 이는 데이터 
 
 ![Lakehouse Pattern](/assets/img/2024-05-23-DataEngineeringDesignPatterns_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중개 아키텍처 패턴:
 
@@ -37,7 +58,18 @@ DeltaLake 아키텍처 패턴:
 
 Delta Lake은 초기에 Databricks에서 개발된 오픈 소스 프로젝트입니다. 이 프로젝트는 데이터 호수에 안정성을 제공합니다. Deltalake는 ACID 트랜잭션, 타임 트래벌, z-order, CDC, 스키마 진화 및 기타 최적화로 데이터 호수를 개선합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kappa Architecture Pattern:
 
@@ -47,7 +79,18 @@ Serverless Architecture Pattern:
 
 데이터 엔지니어링에서 서버리스는 클라우드 지역/IP 제약 사항이나 기타 기본 인프라 제약 조건에 대해 걱정하지 않고 데이터 파이프라인을 구축할 수 있습니다. 특히 변수 사용 패턴을 갖는 워크로드에 대한 즉시 클러스터 가용성과 비용 효율적인 스케일링을 위해 유용합니다. 많은 클라우드 제공업체가 이를 제공하고 있습니다. Databricks SQL은 Serverless를 제공하며, SQL 웨어하우스를 3초 미만의 시간 안에 론칭할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MLFlow 아키텍처 패턴:
 

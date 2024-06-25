@@ -3,14 +3,12 @@ title: "마이크로소프트의 응용 프로그램 업데이트 접근 방식�
 description: ""
 coverImage: "/assets/img/2024-05-17-MicrosoftsFlawedApproachtoAppUpdatesWreaksHavoconWindowsPCs_0.png"
 date: 2024-05-17 18:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-MicrosoftsFlawedApproachtoAppUpdatesWreaksHavoconWindowsPCs_0.png
 tag: Tech
 originalTitle: "Microsoft’s Flawed Approach to App Updates Wreaks Havoc on Windows PCs"
 link: "https://medium.com/pcmag-access/microsofts-flawed-approach-to-app-updates-wreaks-havoc-on-windows-pcs-8afb2555b61a"
 ---
-
-
 
 ![image](/assets/img/2024-05-17-MicrosoftsFlawedApproachtoAppUpdatesWreaksHavoconWindowsPCs_0.png)
 
@@ -20,8 +18,18 @@ Chris Hoffman 작성
 
 여전히 적극적으로 악용되고 있는 방대한 보안 결함을 가진 WinRAR은 자동 업데이트를 지원하지 않는 많은 Windows 애플리케이션 중 하나입니다. 개발자는 전 세계적으로 5억 개 이상의 WinRAR 설치를 자랑하며, 따라서 수억 대의 PC가 오늘날 악성 ZIP 파일로부터 취약할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2023년에 세계에서 가장 인기 있는 데스크톱 운영 체제가 설치된 응용 프로그램을 쉽게 업데이트할 수 있는 방법을 제공하지 않는다니, 어떻게 된 일인가요?
 
@@ -31,7 +39,18 @@ Windows 업데이트는 보안 패치를 설치하지만 여기서 그치고 있
 
 파일 아카이빙 프로그램 WinRAR의 결함은 특수하게 디자인된 ZIP 아카이브를 다운로드하고 열면 공격자가 PC에서 원하는 코드를 실행할 수 있다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공격자들이 2023년 초부터 이 버그를 악용해왔습니다. WinRAR 개발사 RARLAB은 8월에 이 취약점을 수정한 업데이트를 출시했지만, 수개월 후에도 여전히 이 버그에 대해 언급 중입니다. 왜냐하면 정부 지원 사이버 범죄 조직을 포함한 기관들이 여전히 이를 악용하고 있기 때문입니다. 이는 구글의 위협 분석 그룹에 따르면 "여러 국가의 그룹들"이라고 합니다.
 
@@ -41,7 +60,18 @@ Windows 업데이트는 보안 패치를 설치하지만 여기서 그치고 있
 
 그렇다면 왜 자동 업데이트 기능이 없는 걸까요? 저는 RARLAB에 연락을 취해보았고 WinRAR 개발자인 Eugene Roshall은 Windows가 웹사이트에서 다운로드한 데스크톱 앱을 자동으로 업데이트할 수 있는 방법을 제공하지 않는다고 말했습니다. "모든 개발자는 모든 보안 및 기술적 문제를 고려하여 바퀴를 다시 발명해야 합니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로샬은 RARLAB이 업데이트 알림을 구현하는 것을 고려해 왔지만 기업 시스템 관리자들이 이 아이디어를 좋아하지 않고 사용자 컴퓨터에 팝업 알림이 나타나는 대신 소프트웨어 업데이트에 대해 중앙 집중식 접근을 선호한다고 말했습니다.
 
@@ -51,7 +81,18 @@ Windows 업데이트는 보안 패치를 설치하지만 여기서 그치고 있
 
 저는 개인적으로 항상 7-Zip을 선호해 왔지만, 그것도 내장된 업데이트 확인기가 없습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 윈도우 8 문제의 시작
 
@@ -61,7 +102,18 @@ Windows 업데이트는 보안 패치를 설치하지만 여기서 그치고 있
 
 2011년 마이크로소프트 빌드에서 최초로 발표된 Windows Store는 윈도우 8에서 그런 종류의 경험을 제공할 수 있었을 것입니다. 그러나 마이크로소프트는 새로운 '메트로 앱'을 위한 새로운 스토어만을 제공하기로 결정했습니다. (그러나 개발자들은 전통적인 데스크톱 앱에 대한 목록을 게시하고 직접 PC 사용자를 웹사이트로 이동할 수 있었습니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그보다 나쁜 것은, Windows 8 스토어가 한 때 사기 가득했다는 것이었습니다. "VLC" 같은 것을 검색하면 VLC를 다운로드할 위치를 보여주는 애플리케이션을 지불하라는 저금급한 결과물들로 가득찼습니다. 이 문제를 강조한 첫 번째 사람은 아니었지만, 2014년에 이 사기에 대해 강조한 것은 어디서나 Windows 사용자들의 불만을 대변했습니다. 결국, Microsoft는 2015년에 스토어를 개선하기로 약속하며 일반인들의 압력에 반응했습니다.
 
@@ -71,7 +123,18 @@ Windows 10은 Windows 8의 많은 문제를 해결했지만, 여전히 Microsoft
 
 Windows 10이 출시된 시점에도 스토어는 "Universal Windows Platform" 애플리케이션만 허용했습니다. 이것은 합리적이지 않았습니다. 그때쯤에는 Windows Phone이 사라졌으므로, 유니버설 플랫폼은 데스크톱 PC, Xbox 및 HoloLens가 되는 것인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Windows 8과 Windows 10에서 PC 사용자들은 상점을 무시하도록 훈련을 받았습니다.
 
@@ -81,7 +144,18 @@ Windows 8과 Windows 10에서 PC 사용자들은 상점을 무시하도록 훈�
 
 이제 개발자들은 전통적인 Windows 데스크톱 앱을 Windows 스토어에 넣을 수 있으며, PC 사용자들은 전통적인 Windows 데스크톱 앱을 설치할 수 있습니다. 스토어를 통해 응용프로그램을 중앙 집중식으로 업데이트할 수 있습니다. 하지만 우리는 다 무시하도록 훈련되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 나쁜 것은 최신 Windows 11 PC에서 앱 스토어를 둘러보다가 스토어에 있는 VLC 같은 앱들이 "제공 및 업데이트한 사람"이라고 되어 있는 걸 발견했어요. 그래서 스토어에서 앱을 설치해도, 해당 앱이 여전히 자체 업데이트를 설치할 확률이 높아요.
 
@@ -91,7 +165,18 @@ Windows 8과 Windows 10에서 PC 사용자들은 상점을 무시하도록 훈�
 
 전문가들은 소프트웨어 업데이터 유틸리티나 winget, Chocolatey 같은 패키지 매니저를 활용할 수 있어요. 그러나 일반 Windows PC 사용자들은 여전히 웹사이트에서 프로그램을 다운로드하고 설치하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 차트 태그를 마크다운 형식으로 변경해 주세요.
 

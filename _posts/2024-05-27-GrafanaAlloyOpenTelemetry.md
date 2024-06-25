@@ -18,7 +18,18 @@ Grafana 에이전트가 최근에 Alloy로 전환되었습니다. 이 게시물�
 
 OpenTelemetry Collector를 사용하면 사용자는 데이터를 효과적으로 제어하여 변형, 보완 및 벤더 중립적인 대상 결정을 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저번 포스트인 "OpenTelemetry as a Service"를 참고해보세요. 그곳에서 중앙 OpenTelemetry 수집기(게이트웨이)를 설정하는 더 많은 정보를 얻을 수 있습니다.
 
@@ -28,7 +39,18 @@ Grafana Alloy는 OpenTelemetry (OTEL) 에이전트로 작동하여 다양한 소
 
 Alloy는 OpenTelemetry 수집기나 Grafana 에이전트와 같은 데이터 수집 구성 요소를 대체합니다. 하지만 Mimir, Tempo, 또는 Loki와 같은 도구를 대체하지는 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, Grafana에서 로그, 메트릭 및 추적 데이터를 소화하고 표시하려는 경우, Loki, Mimir 및 Tempo를 데이터 원본으로 설정하고 Alloy를 배포하여 데이터를 스크랩하고 전송할 수 있습니다.
 
@@ -38,7 +60,18 @@ Alloy는 OpenTelemetry 수집기나 Grafana 에이전트와 같은 데이터 수
 
 ## Prerequisites
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작하기 전에 Kubernetes 클러스터를 설정해 두세요. 다음 명령을 실행하여 새로운 로컬 Kubernetes 클러스터를 만들 수 있어요: kind create cluster
 
@@ -51,7 +84,18 @@ helm repo add grafana https://grafana.github.io/helm-charts
 helm repo update
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 환경 설정 설정
 
@@ -61,7 +105,18 @@ Grafana Alloy를 Grafana Cloud에서 Kubernetes 클러스터에 구성하는 두
 
 Grafana Cloud에서 Kubernetes 클러스터용 Grafana Alloy를 구성하려면 다음 단계를 따라주십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Grafana Cloud에서 인프라스트럭처 `Kubernetes` 구성으로 이동합니다.
 - 활성화하려는 기능을 선택합니다.
@@ -76,7 +131,18 @@ Grafana Cloud에서 Kubernetes 클러스터용 Grafana Alloy를 구성하려면 
 
 그러나 데이터를 별도의 OpenTelemetry Collector로 전송하려면 대체 2를 계속하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 대안 2 (권장하는 방법)
 
@@ -94,7 +160,18 @@ basicAuth:
   password: <my_secret_password>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 쿠버네티스 클러스터에 Helm 차트를 배포하세요.
 
@@ -109,7 +186,18 @@ helm repo add grafana https://grafana.github.io/helm-charts &&
 
 kubectl get all -n default을 사용하여 배포가 성공적으로 이루어졌는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 PODS
@@ -161,7 +249,18 @@ To inspect the Grafana Alloy configuration, run:
 kubectl get cm grafana-k8s-monitoring-alloy -o yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에서 OpenTelemetry Collector 내에서 사용되는 수신기, 프로세서, 커넥터 및 익스포터 구성 세부 정보를 살펴볼 수 있습니다.
 
@@ -187,7 +286,18 @@ Grafana Alloy가 먼저 다양한 Kubernetes 리소스에 대한 Kubernetes 발�
      }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## OTLP 수신기
 
@@ -217,7 +327,18 @@ Grafana Alloy가 먼저 다양한 Kubernetes 리소스에 대한 Kubernetes 발�
 
 output 블록은 메트릭, 로그 및 추적이 otelcol.processor.resourcedetection.default.input이라는 프로세서로 전송되어야 함을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 처리기
 
@@ -234,7 +355,18 @@ otelcol.processor.batch             # 데이터 처리를 일괄로 처리합니
 otelcol.processor.filter            # 데이터를 필터링합니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Exporters
 
@@ -244,7 +376,18 @@ otelcol.processor.filter            # 데이터를 필터링합니다.
 
 주석을 기반으로 동적으로 포드 및 서비스에서 메트릭을 발견하고 스크랩하기 위해 규칙이 정의되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 스크래핑 구성
 
@@ -254,7 +397,18 @@ otelcol.processor.filter            # 데이터를 필터링합니다.
 
 규칙은 메트릭 및 로그에 부착된 레이블을 수정하기 위해 정의됩니다. 예를 들어 레이블 이름 바꾸기, 불필요한 레이블 삭제 및 특정 메트릭 필터링 등이 포함됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 인증
 
@@ -264,7 +418,18 @@ otelcol.processor.filter            # 데이터를 필터링합니다.
 
 요구 사항에 맞게 Grafana Alloy 설정을 검토하고 구성한 후 UI로 돌아가서 모든 것이 예상대로 작동하는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_0.png" />
 
@@ -274,16 +439,36 @@ otelcol.processor.filter            # 데이터를 필터링합니다.
 
 Grafana에서 제공하는 기본 클러스터 탐색 기능을 활용하여 Kubernetes 클러스터에 대한 유용한 통찰을 얻어보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![GrafanaAlloyOpenTelemetry_1](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_1.png)
 ![GrafanaAlloyOpenTelemetry_2](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_2.png)
 ![GrafanaAlloyOpenTelemetry_3](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_3.png)
 ![GrafanaAlloyOpenTelemetry_4](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 비용 모니터링
 
@@ -293,7 +478,18 @@ Grafana의 비용 개요 페이지를 활용하여 클라우드 비용을 모니
 
 중요한 이벤트에 대한 예방적인 모니터링과 즉각적인 대응을 위해 경보 규칙 및 기록 규칙을 설정하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Cardinality
 
@@ -303,7 +499,18 @@ Grafana Cloud의 적응형 메트릭을 사용하여 증가한 카디널리티 �
 
 ![이미지](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 애플리케이션 기기 설정
 
@@ -313,7 +520,18 @@ Grafana Cloud의 적응형 메트릭을 사용하여 증가한 카디널리티 �
 
 ## 메트릭과 로그
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리의 메트릭과 로그가 Kubernetes 클러스터에서 Grafana Alloy로 흘러들어가고, 중앙 OpenTelemetry Collector를 거쳐 Grafana Cloud에서 시각화됩니다.
 
@@ -323,7 +541,18 @@ Grafana Cloud의 적응형 메트릭을 사용하여 증가한 카디널리티 �
 
 그렇다면 추적은 어떨까요? 추적은 사용자 요청이 응용 프로그램을 통해 이동하는 과정에 대한 중요한 통찰을 제공합니다. 추적을 활용하려면 데이터를 Grafana Alloy로 보내도록 설정된 계기가 설치된 응용 프로그램이 필요합니다. 이를 위해 응용 프로그램이 다음 주소 중 하나로 데이터를 보내도록 설정해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - OTLP/gRPC 엔드포인트: http://grafana-k8s-monitoring-grafana-agent.default.svc.cluster.local:4317
 - OTLP/HTTP 엔드포인트: http://grafana-k8s-monitoring-grafana-agent.default.svc.cluster.local:4318
@@ -337,7 +566,18 @@ Spring Boot 애플리케이션에서는 다음 주소를 OTEL_EXPORTER_OTLP_ENDP
 
 또한 springboot-service에 OTEL_SERVICE_NAME 변수를 추가했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 - name: OTEL_SERVICE_NAME
@@ -350,7 +590,18 @@ Spring Boot 애플리케이션에서는 다음 주소를 OTEL_EXPORTER_OTLP_ENDP
 
 Tempo로 추적을 탐색해 봅시다. Tempo는 오픈 소스 분산 추적 시스템으로, 분산 시스템 간 요청 흐름에 대한 가시성을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 분산 시스템에서 추적(trace)은 단일 사용자 요청이 다양한 서비스를 거쳐 이동하는 여정을 나타내는 데이터 집합입니다. 이 여정의 각 단계를 스팬(span)이라고 하며, 서비스 이름, 수행된 작업, 소요된 시간 등의 정보가 포함됩니다. 추적 및 스팬을 통해 개발자는 복잡하고 연결된 환경에서 애플리케이션의 성능 및 동작을 이해하는 데 도움을 받습니다.
 
@@ -360,7 +611,18 @@ Explore 도구에서 grafanacloud-`name`-traces 데이터 소스를 선택합니
 
 자세한 통찰을 얻으려면 어떤 추적이든 클릭하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-GrafanaAlloyOpenTelemetry_7.png)
 
@@ -370,6 +632,17 @@ Explore 도구에서 grafanacloud-`name`-traces 데이터 소스를 선택합니
 
 이 단계를 따르면 오픈텔레미트리의 강력함을 활용하여 Kubernetes 클러스터에 Grafana Alloy를 성공적으로 배포할 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 내용이 도움이 되었다면 👏 버튼을 클릭하시고 제 프로필을 팔로우해주세요. 더 많은 기사를 확인할 수 있습니다!

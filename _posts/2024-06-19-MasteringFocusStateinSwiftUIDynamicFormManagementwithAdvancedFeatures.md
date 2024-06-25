@@ -3,13 +3,12 @@ title: "SwiftUI에서 FocusState를 마스터하기 고급 기능을 활용한 �
 description: ""
 coverImage: "/assets/img/2024-06-19-MasteringFocusStateinSwiftUIDynamicFormManagementwithAdvancedFeatures_0.png"
 date: 2024-06-19 10:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-MasteringFocusStateinSwiftUIDynamicFormManagementwithAdvancedFeatures_0.png
 tag: Tech
 originalTitle: "Mastering FocusState in SwiftUI: Dynamic Form Management with Advanced Features"
 link: "https://medium.com/@wesleymatlock/mastering-focusstate-in-swiftui-dynamic-form-management-with-advanced-features-fbb083281cf7"
 ---
-
 
 <img src="/assets/img/2024-06-19-MasteringFocusStateinSwiftUIDynamicFormManagementwithAdvancedFeatures_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@wesleymatlock/mastering-focusstate-in-swiftui-dynamic
 
 FocusState는 SwiftUI에서 도입된 프로퍼티 래퍼로, 텍스트 필드와 같은 뷰의 포커스 상태를 관리하는 데 도움을 주는 역할을 합니다. FocusState를 사용하면 어떤 입력 필드에 포커스를 맞출지를 프로그래밍적으로 제어할 수 있어 사용자 경험을 더 부드럽게 만들 수 있습니다, 특히 폼에서의 경우에 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 커스텀 입력 폼 만들기
 
@@ -29,7 +39,18 @@ FocusState는 SwiftUI에서 도입된 프로퍼티 래퍼로, 텍스트 필드�
 
 1. 양식 필드와 포커스 상태 정의하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 다양한 폼 필드를 나타내는 열거형을 정의합니다. 그런 다음, 폼 상태와 포커스 상태를 나타내는 구조체를 생성합니다.
 
@@ -57,7 +78,18 @@ struct FormState {
 
 이제, 폼 필드를 포함하는 뷰를 생성해보겠습니다. @FocusState 프로퍼티 래퍼를 사용하여 포커스 상태를 관리하고 더 많은 고급 기능을 추가할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct CustomFormView: View {
@@ -159,7 +191,18 @@ struct CustomFormView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Explanation
 
@@ -169,7 +212,18 @@ struct CustomFormView: View {
 
 - **사용자 지정 키보드 툴바:** 키보드에 사용자 정의 툴바가 추가되어 "완료" 버튼을 탭함으로써 키보드를 해제할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 • 양식 제출 및 유효성 검사: validateForm 함수는 양식 제출과 유효성 검사를 처리합니다. 비어있는 필드, 유효한 이메일 형식 및 일치하는 비밀번호를 확인한 후에야 양식 제출이 진행됩니다.
 
@@ -179,7 +233,18 @@ struct CustomFormView: View {
 
 SwiftUI에서 FocusState를 사용하면 입력 필드의 포커스 상태를 관리하여 동적이고 사용자 친화적인 양식을 만들 수 있습니다. 조건부 포커스, 키보드 관리 및 사용자 정의 유효성 검사와 같은 고급 기능을 통합함으로써 SwiftUI 애플리케이션에서 사용자 경험을 향상시키고 더 견고한 양식을 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원하는 경우 원시 모바일 개발에 대해 더 알아보려면 여기에서 다른 기사들을 확인해보세요: [https://medium.com/@wesleymatlock](https://medium.com/@wesleymatlock)
 

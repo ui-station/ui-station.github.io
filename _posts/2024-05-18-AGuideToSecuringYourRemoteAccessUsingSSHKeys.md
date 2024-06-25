@@ -3,13 +3,12 @@ title: "원격 액세스 보안하는 방법 SSH 키 사용 안내"
 description: ""
 coverImage: "/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_0.png"
 date: 2024-05-18 17:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_0.png
 tag: Tech
 originalTitle: "A Guide To Securing Your Remote Access Using SSH Keys"
 link: "https://medium.com/bugbountywriteup/a-guide-to-securing-your-remote-access-using-ssh-keys-84b48097f3bf"
 ---
-
 
 SSH 키 기반 인증을 사용하여 SSH 연결을 안전하게 하는 단계별 가이드
 
@@ -19,7 +18,18 @@ SSH 키 기반 인증을 사용하여 SSH 연결을 안전하게 하는 단계�
 
 # 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SSH (Secure Shell) 키 기반 인증은 원격 서버에서 사용자의 신원을 인증하기 위해 암호화 키 쌍을 사용하는 보안 방법입니다. 이 방법은 컴퓨터에 공개 및 비밀 키 쌍을 생성하여 저장하고, SSH 서버를 구성하여 이러한 키를 인식하고 수락하도록 설정하는 것을 포함합니다. 이는 기존 암호 기반 인증과 관련된 위험을 줄이는 것으로 보안을 크게 향상시킵니다.
 
@@ -30,7 +40,18 @@ SSH 키는 쌍으로 생성되고 일반 텍스트 파일로 저장됩니다. �
 
 ## 작동 방식
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 컴퓨터에서 공개 및 개인 키 쌍을 생성합니다.
 - 서버는 공개 키를 인식하고 해당하는 개인 키가 인증 중에 사용되면 액세스를 허용하도록 구성됩니다.
@@ -45,7 +66,18 @@ SSH 키 기반 인증은 비밀번호보다 더 나은 대안이므로 보안성
 - 사용의 용이성: 사용자들은 복잡한 암호를 기억하거나 적어두지 않아도 되므로, 암호 관련 위반 사례의 위험이 줄어듭니다.
 - 자동화 지원: 암호 입력이 필요하지 않기 때문에 작업을 자동화할 수 있으며, 수동 개입 없이 Ansible과 같은 스크립트 및 도구가 SSH 서버와 상호작용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # SSH를 위한 공개 키 인증 설정하기
 
@@ -55,7 +87,18 @@ SSH 키 쌍을 만드는 두 가지 옵션이 있습니다: Windows 기계 또�
 
 ## 방법 1: Linux에서 SSH 키 쌍 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스텝 1: Ed25519 알고리즘을 사용하여 새 SSH 키 쌍을 생성하세요.
 
@@ -67,7 +110,18 @@ Ed25519 알고리즘을 사용하여 새 키 쌍을 생성하세요:
 ssh-keygen -t ed25519 -C "cybersecmav@warfare.systems"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - -t: 알고리즘의 종류 (키), 우리의 경우 Ed25519.
 - -C: SSH 키를 구분할 수 있도록 도와주는 설명 (선택 사항).
@@ -78,7 +132,18 @@ ssh-keygen -t ed25519 -C "cybersecmav@warfare.systems"
 
 단계 2: 원격 서버 준비하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 ~/.ssh 디렉토리와 authorized_keys 파일이 존재하지 않는다면 다음을 실행해주세요:
 
@@ -91,7 +156,18 @@ touch ~/.ssh/authorized_keys
 
 ~/.ssh 디렉토리와 authorized_keys 파일에 적절한 파일 권한을 설정해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 chmod 700 ~/.ssh
@@ -105,9 +181,20 @@ chmod 600 ~/.ssh/authorized_keys
 
 ```js
 scp id_ed2551.pub cybersecmav@warfare.systems:/home/cybersecmav/id_ed2551.pub
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 업로드한 공개 키를 .ssh/ 디렉터리로 이동해 주세요:
 
@@ -122,7 +209,18 @@ chmod 600 ~/.ssh/id_ed2551.pub
 cat ~/.ssh/id_ed2551.pub >> ~/.ssh/authorized_keys
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 authorized_keys의 내용을 확인하여 공개 키가 추가되었는지 확인해보세요:
 
@@ -143,7 +241,18 @@ drwxr-xr-x 5 cybersecmav cybersecmav 4096 Apr 29 13:32 ..
 -rw-r--r-- 1 cybersecmav cybersecmav  109 Apr 23 19:49 id_ed2551.pub
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step 3: 공개 키 인증을 지원하도록 SSH 서버 구성하기
 
@@ -155,7 +264,18 @@ sudo nano /etc/ssh/sshd_config
 
 PubkeyAuthentication 설정을 찾아서 아래로 스크롤합니다. "no"에서 "yes"로 변경하세요. 또한, AuthorizedKeysFile로 시작하는 줄이 주석 처리되어 있지 않은지 확인하거나 누락된 경우 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```plaintext
 PubkeyAuthentication yes
@@ -168,8 +288,18 @@ AuthorizedKeysFile .ssh/authorized_keys .ssh/authorized_keys2
 
 4단계: 구성 변경을 적용하기 위해 SSH 서버를 다시로드하세요
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 sshd_config 파일을 변경할 때는 변경 사항이 적용되려면 SSH 서버를 다시로드하거나 다시 시작해야 합니다.
 
@@ -182,7 +312,18 @@ sudo systemctl restart ssh
 
 Redhat/CentOS:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 sudo systemctl reload sshd
@@ -196,7 +337,18 @@ sudo systemctl restart sshd
 - 다음 위치에서 PuTTY를 다운로드하세요: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 - puttygen.exe를 엽니다. 기본적으로 RSA를 키 생성으로 선택하지만, 원격 SSH 서버가 지원하는 경우 ED25519를 선택할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_3.png" />
 
@@ -206,8 +358,18 @@ sudo systemctl restart sshd
 
 - 나중에 원격 서버의 ~/.ssh/ 디렉토리의 authorized_keys 파일에 붙여 넣을 공개 키를 복사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_5.png)
 
@@ -218,9 +380,18 @@ sudo systemctl restart sshd
 
 - Alternatively, you can save them using the File menu option
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Save and keep a copy of your SSH keys](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_7.png)
 
@@ -228,8 +399,18 @@ sudo systemctl restart sshd
 
 ![SSH key image 3](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_9.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - `/home/username/.ssh/authorized_keys` 파일에 공개 키 값을 새 줄에 붙여 넣으세요.
 
@@ -240,7 +421,18 @@ sudo systemctl restart sshd
 
 ![Step 11](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 지금 가장 중요한 단계는 리모트 서버에 연결하기 전에 방금 생성한 올바른 개인 키를 선택했는지 확인하는 것입니다.
 
@@ -250,7 +442,18 @@ sudo systemctl restart sshd
 
 - 이제 새로운 공개/개인 키 쌍을 사용하여 인증된 SSH 세션이 열려 있어야 합니다. 아래 예시를 확인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_13.png" />
 
@@ -260,7 +463,18 @@ sudo systemctl restart sshd
 
 SSH 키 기반 인증의 기본 사항을 다룬 이제, SSH 서버를 보다 더 보호하기 위한 몇 가지 추가 보안 팁을 살펴봅시다. 이러한 모범 사례를 시행함으로써 SSH 서버의 보안성을 높일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 팁 1: 비밀번호 인증 비활성화
 
@@ -268,11 +482,22 @@ SSH 키 기반 인증이 작동하는지 확인한 후, SSH 구성 파일인 /et
 
 ```sh
 sudo nano /etc/ssh/sshd_config
-``` 
+```
 
 ![이미지](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 팁 2: 루트 로그인 제한
 
@@ -282,7 +507,18 @@ SSH를 통한 직접적인 루트 액세스를 방지하려면 PermitRootLogin�
 
 ## 팁 3: 비표준 SSH 포트 사용
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본 SSH 포트를 22에서 더 높거나 보통과 다른 숫자로 변경하면 무분별한 자동 스캔 및 브루트포스 공격이 더 어려워질 수 있습니다. 이는 위협의 대부분을 이루는 것입니다. 그러나 SSH 서버를 모든 공격으로부터 완전히 보호하는 것은 아니라는 것을 명심하세요. 결정적인 해커는 여전히 SSH 포트를 찾아내고 대상으로 삼을 수 있습니다.
 
@@ -292,7 +528,18 @@ SSH를 통한 직접적인 루트 액세스를 방지하려면 PermitRootLogin�
 
 SSH 로깅이 활성화되어 있어야 연결 시도를 추적하고 이상한 활동을 감지할 수 있습니다. 무단 액세스나 브루트포스 공격의 징후를 탐지하기 위해 로그를 정기적으로 모니터링하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 시스템에서 SSH 로깅은 기본적으로 활성화되어 있습니다. 그러나 SSH 설정 파일 /etc/ssh/sshd_config을 확인하여 비활성화되어 있지 않은지 확인해보세요.
 
@@ -302,7 +549,18 @@ SyslogFacility를 "AUTH"로 설정하고 LogLevel은 "INFO"로 설정하세요.
 
 ![이미지](/assets/img/2024-05-18-AGuideToSecuringYourRemoteAccessUsingSSHKeys_17.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 로그 레벨을 탐색하려면 아래 섹션을 참조하세요. Verbose 및 Debug는 많은 로그를 생성하므로 진단 또는 디버깅에만 유용하기 때문에 권하지 않습니다.
 
@@ -317,7 +575,18 @@ SSH 로그 레벨
 
 단계 2: 로그 저장소 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보통 SSH 로그는 /var/log/auth.log (Debian/Ubuntu) 또는 /var/log/secure (Red Hat/CentOS)에 저장됩니다.
 
@@ -332,7 +601,18 @@ $ ls -la /var/log/auth.log
 chmod 640 /var/log/auth.log
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 팁 5: 침입 탐지 (Fail2ban) 구현하기
 
@@ -342,7 +622,18 @@ Fail2Ban을 설정하고 구성하는 것은 이 글의 범위를 벗어납니�
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 SSH 키 기반 인증의 혜택을 다루었는데, 이를 통해 보안을 강화하고 브루트포스 공격의 위험을 줄일 수 있다는 점을 강조했습니다. SSH 키를 생성하고 서버에 구성하는 방법을 안내하며 적절한 보안을 유지하는 방법을 보여드렸습니다. 또한 SSH 서버를 안전하게 유지하기 위한 추가 팁을 살펴봤는데, 이에는 기본 포트 변경, Fail2Ban 구현, 그리고 철저한 SSH 로깅 및 모니터링 활성화가 포함되었습니다.
 
@@ -352,7 +643,18 @@ Fail2Ban을 설정하고 구성하는 것은 이 글의 범위를 벗어납니�
 
 이러한 단계를 따라가면 안전하고 신뢰할 수 있는 SSH 설정으로 나아갈 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 안내서를 통해 함께해 주셔서 감사합니다. SSH 연결을 안전하게 유지하고 서버를 안전하게 보호하는 데 도움이 되었으면 좋겠습니다! 🔐
 

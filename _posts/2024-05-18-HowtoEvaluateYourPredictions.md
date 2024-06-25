@@ -3,13 +3,12 @@ title: "예측 결과를 평가하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-HowtoEvaluateYourPredictions_0.png"
 date: 2024-05-18 20:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-HowtoEvaluateYourPredictions_0.png
 tag: Tech
 originalTitle: "How to Evaluate Your Predictions"
 link: "https://medium.com/towards-data-science/how-to-evaluate-your-predictions-cef80d8f6a69"
 ---
-
 
 ## 선택한 측정 기준을 신중하게 고려하세요
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/how-to-evaluate-your-predictions-
 
 예측하고자 하는 변수인 랜덤 변수 Y를 X의 공변량 벡터에서 예측하고자 하는 경우를 고려해보세요. 아래 예제에서 Y는 소득이고 X는 나이와 교육과 같은 특성일 것입니다. 우리는 일부 학습 데이터에서 예측자 f를 학습하고 이제 Y를 f(x)로 예측합니다. 보통 가장 잘 예측하려면 x가 주어졌을 때 y의 기댓값을 예측합니다. 즉, f(x)는 E[Y | X=x]를 근사해야 합니다. 그러나 보다 일반적으로 f(x)는 중앙값, 다른 백분위수, 또는 전체 조건부 분포 P(Y | X=x)의 추정량일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 새로운 테스트 지점 y에 대해 우리는 예측을 점수화하려고 합니다. 즉, 당신이 할 수 있는 최선의 일을 할 때 최소화되는 함수 S(y,f(x))를 원합니다. 예를 들어, 우리가 E[Y | X=x]를 예측하려면, 이 점수는 MSE로 주어집니다: S(y, f(x))= (y-f(x))².
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-data-science/how-to-evaluate-your-predictions-
 
 사항을 설명하기 위해 수입 데이터를 모방하는 간단한 데이터셋을 시뮬레이션할 것입니다. 이 간단한 예제를 통해 개념을 설명하는 데 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```r
 library(dplyr)
@@ -52,7 +73,7 @@ education_probs <- c(0.4, 0.4, 0.2)
 education <- sample(education_levels, n, replace = TRUE, prob = education_probs)
 
 # 나이와 관련된 경험을 약간의 랜덤 오차와 상관시켜 경력 시뮬레이션
-experience <- age - 20 + round(rnorm(n, mean = 0, sd = 3)) 
+experience <- age - 20 + round(rnorm(n, mean = 0, sd = 3))
 
 # 임금을 위한 비선형 함수 정의
 wage <- exp((age * 0.1) + (case_when(education == "High School" ~ 1,
@@ -68,7 +89,18 @@ hist(wage)
 
 중요한 점은 이 왜곡이 나이, 교육, 경험을 특정 값으로 고정했을 때에도 발생한다는 점입니다. 특정 인물 Dave를 살펴보자. 그는 30세이고, 경제학 학사 학위를 소지하며 10년의 경험이 있습니다. 데이터 생성 프로세스에 따른 실제 소득 분포를 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```r
 나이데이브 <- 30
@@ -90,8 +122,18 @@ hist(임금데이브, main="데이브의 임금 분포", xlab="임금")
 
 또한 여러 사람에 대한 테스트 세트를 생성합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```R
 ## 테스트 세트 생성
@@ -119,8 +161,18 @@ wagetest <- exp((agetest * 0.1) + (case_when(educationtest == "High School" ~ 1,
 
 데이터 과학과 머신 러닝에서는 종종 예측하려는 분포의 "중심" 또는 "가운데"를 나타내는 단일 숫자에 중점을 둡니다. 즉, (조건부) 평균 또는 중앙값입니다. 이를 위해 평균 제곱 오차(MSE)가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![How to Evaluate Your Predictions 3](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_3.png)
 
@@ -130,8 +182,18 @@ and the mean absolute error (MAE):
 
 An important takeaway is that the MSE is the appropriate metric for predicting the conditional mean, while the MAE is the measure to use for the conditional median. Mean and median are not the same thing for skewed distributions like the one we study here.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 예제에 매우 간단한 예측 변수를 사용하여 설명하겠습니다 (실제 상황에서는 이런 변수에 접근할 수 없겠지만), 예시를 위해:
 
@@ -164,13 +226,31 @@ conditionalmedianest <-
 즉, 나이, 교육 및 경험의 고정된 값에 대해 모델을 시뮬레이션한 후 (이는 올바른 조건부 분포에서의 시뮬레이션일 것입니다) 평균/중앙값을 간단히 취하여 평균 및 중앙값을 추정합니다. Dave에게 이를 시험해 봅시다:
 
 ```js
-hist(wageDave, main="Dave의 임금 분포", xlab="임금")
-abline(v=conditionalmeanest(ageDave, educationDave, experienceDave), col="darkred", cex=1.2)
-abline(v=conditionalmedianest(ageDave, educationDave, experienceDave), col="darkblue", cex=1.2)
+hist(wageDave, (main = "Dave의 임금 분포"), (xlab = "임금"));
+abline(
+  (v = conditionalmeanest(ageDave, educationDave, experienceDave)),
+  (col = "darkred"),
+  (cex = 1.2)
+);
+abline(
+  (v = conditionalmedianest(ageDave, educationDave, experienceDave)),
+  (col = "darkblue"),
+  (cex = 1.2)
+);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![How to Evaluate Your Predictions](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_5.png)
 
@@ -185,7 +265,18 @@ meanest<-sapply(1:nrow(Xtest), function(j)  conditionalmeanest(Xtest$age[j], Xte
 median<-sapply(1:nrow(Xtest), function(j)  conditionalmedianest(Xtest$age[j], Xtest$education[j], Xtest$experience[j])  )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 다양한 조건부 평균/중앙값 범위를 제공합니다. 이제 평균 제곱 오차(MSE)와 평균 절대 오차(MAE)를 계산해 봅시다:
 
@@ -208,7 +299,18 @@ MAE1 < MAE2
 
 ## 분위수 및 구간 예측에 대한 점수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가정해보겠습니다. 우리는 양도 q_x의 추정치 f(x)를 점수 매길 때
 
@@ -218,8 +320,18 @@ MAE1 < MAE2
 
 이 경우, 우리는 백분위수 점수를 고려할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_8.png)
 
@@ -229,8 +341,18 @@ whereby
 
 To unpack this formula, we can consider two cases:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (1) y가 f(x)보다 작습니다:
 
@@ -240,14 +362,22 @@ To unpack this formula, we can consider two cases:
 
 (2) y가 f(x)보다 큽니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지 태그를 다음과 같이 수정해주세요:
 
-
 ![이미지](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_11.png)
-
 
 즉, y가 f(x)로부터 멀어질수록 벌점이 커집니다.
 
@@ -255,8 +385,18 @@ To unpack this formula, we can consider two cases:
 
 ![이미지](/assets/img/2024-05-18-HowtoEvaluateYourPredictions_12.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MAE를 단순히! 이것은 0.5 분위가 중앙값이기 때문에 의미가 있습니다.
 
@@ -266,7 +406,18 @@ MAE를 단순히! 이것은 0.5 분위가 중앙값이기 때문에 의미가 �
 
 사실, l_x가 alpha/2 분위이고 u_x가 1-alpha/2 분위인 경우 이를 만족합니다. 따라서 이제 이 두 분위수를 추정하고 점수를 매길 수 있습니다. f(x)=(f_1(x), f_2(x))로 취급하면, 여기서 f_1(x)은 l_x의 추정값이고 f_2(x)는 u_x의 추정값입니다. 우리는 "이상적" 추정자와 "단순한" 추정자를 제공합니다. 이상적 추정자는 참 프로세스에서 다시 시뮬레이션한 다음 필요한 분위를 예측하는 것이고, "단순한" 추정자는 정확한 커버리지를 가지지만 너무 큽니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 library(scoringutils)
@@ -337,7 +488,18 @@ qs_uppernaive <- mean(quantile_score(wagetest,
 
 <img src="/assets/img/2024-05-18-HowtoEvaluateYourPredictions_14.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서 대수적인 매직을 통해 우리는 alpha/2와 1-alpha/2 분위의 점수를 평균하여 예측 구간의 점수를 매길 수 있습니다. 흥미로운 점은, 결과적인 구간 점수가 좁은 예측 구간을 장려하며, 관측값이 그 구간에서 벗어나면 alpha에 따라 패널티가 부여된다는 점입니다. 분위점 점수의 평균을 사용하는 대신, 패키지 scoringutils로 이 점수를 직접 계산할 수도 있습니다.
 
@@ -358,18 +520,37 @@ mean(interval_score(
 
 ## 분포 예측에 대한 점수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 점점 더 다양한 분야에서는 분포 예측과 관련된 문제를 다뤄야 합니다. 다행히 이 문제를 해결하는 데 도움이 되는 척도가 있습니다. 특히, 여기서는 '에너지 점수'라고 불리는 것에 초점을 맞춥니다:
 
-
 for f(x) being an estimate of the distribution P(Y | X=x). The second term takes the expectation of the Eucledian distance between two independent samples from f(x). This is akin to a normalizing term, establishing the value if the same distribution was compared. The first term then compares the sample point y to a draw X from f(x). In expectation (over Y drawn from P(Y | X=x)) this will be minimized if f(x)=P(Y | X=x).
-
 
 따라서 단순히 평균이나 분위수를 예측하는 대신, 이제 우리는 각 테스트 지점에서 월급의 전체 분포를 예측하려고 합니다. 본질적으로 우리는 Dave를 위해 그래프로 나타낸 조건부 분포를 예측하고 평가하려고 합니다. 이것은 조금 더 복잡합니다. 정확히 학습된 분포를 어떻게 나타내어야 할까요? 실제로 이는 예측된 분포로부터 샘플을 얻을 수 있는 것으로 해결됩니다. 따라서 예측된 분포에서 얻은 N개의 샘플을 단일 테스트 지점과 비교합니다. R에서는 scoringRules 패키지의 es_sample을 사용하여 이를 수행할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 라이브러리(scoringRules)
 
@@ -416,8 +597,18 @@ scorenaive <- mean(sapply(1:nrow(Xtest), function(j)  {
 
 우리는 예측 평가 방법에 대해 다양한 방법을 살펴보았습니다. 올바른 측정 항목에 대해 생각하는 것은 중요합니다. 잘못된 측정 항목은 예측 작업에 잘못된 모델을 선택하고 유지하게 할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특히 분포 예측을 위해서는 이러한 점수 부여가 어려운 작업이며 실제로는 그렇게 큰 영향력을 가지지 못할 수 있음을 알아두어야 합니다. 즉, 심한 개선을 이끌어내는 방법조차도 조금 더 낮은 점수만을 갖는 경우가 있을 수 있습니다. 그러나 실제로는 두 가지 방법 중 어느 것이 더 나은지 신뢰할 수 있는 방법으로 식별할 수 있다면 이는 본질적인 문제가 아닙니다.
 
@@ -427,9 +618,18 @@ scorenaive <- mean(sapply(1:nrow(Xtest), function(j)  {
 
 ## 부록: 코드 모두 한 곳에
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```R
 library(dplyr)
@@ -451,7 +651,7 @@ education_probs <- c(0.4, 0.4, 0.2)
 education <- sample(education_levels, n, replace = TRUE, prob = education_probs)
 
 # 나이와 상관된 경험 시뮬레이션 및 랜덤 오차 추가
-experience <- age - 20 + round(rnorm(n, mean = 0, sd = 3)) 
+experience <- age - 20 + round(rnorm(n, mean = 0, sd = 3))
 
 # 월급에 대해 비선형 함수 정의
 wage <- exp((age * 0.1) + (case_when(education == "고등학교" ~ 1,

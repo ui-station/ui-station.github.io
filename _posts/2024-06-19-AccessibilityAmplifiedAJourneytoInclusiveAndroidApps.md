@@ -3,13 +3,12 @@ title: "접근성 강화 포용적 안드로이드 앱으로의 여정"
 description: ""
 coverImage: "/assets/img/2024-06-19-AccessibilityAmplifiedAJourneytoInclusiveAndroidApps_0.png"
 date: 2024-06-19 13:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-AccessibilityAmplifiedAJourneytoInclusiveAndroidApps_0.png
 tag: Tech
 originalTitle: "Accessibility Amplified: A Journey to Inclusive Android Apps"
 link: "https://medium.com/gitconnected/accessibility-amplified-a-journey-to-inclusive-android-apps-120d86b56f56"
 ---
-
 
 ![이미지](/assets/img/2024-06-19-AccessibilityAmplifiedAJourneytoInclusiveAndroidApps_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/accessibility-amplified-a-journey-to-incl
 
 이 글은 개발자들이 자신들의 안드로이드 애플리케이션의 접근성을 향상시킬 수 있는 다양한 방법에 대해 자세히 안내합니다. 사용자 친화적인 기능을 포함하고 포용적 설계 원칙을 준수하는 등 어플리케이션을 더 접근 가능하게 만드는 실용적 기술들을 살펴봅니다. 또한, 우리는 테스트의 중요한 요소를 살펴보며 제공된 솔루션이 참으로 포괄적인지 보장하는 방법과 도구에 대해 알아봅니다. 안드로이드 접근성의 복잡한 세계를 탐험하는 과정에서, 개발자들에게 국경을 초월하고 보편적 설계의 정신을 수용하는 디지털 경험을 구축하도록 영감을 줄 수 있기를 희망합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 포용
 
@@ -29,7 +39,18 @@ link: "https://medium.com/gitconnected/accessibility-amplified-a-journey-to-incl
 
 반면에 디지털 접근성 부족은 편견과 문화적 장애를 악화시킬 수 있습니다. 화면 판독기와 호환되지 않거나 그림에 대한 대체 텍스트를 제공하지 않는 웹사이트나 앱은 시각 장애를 가진 사람들을 효과적으로 배제시킬 수 있습니다. 이러한 배제는 단순히 불편을 초래하는 것 이상으로 교육, 취업 및 사회 참여에 대한 장애물을 만들어냅니다. 예를 들어 접근성 기능이 충분하지 않은 취업 지원 포털은 장애를 가진 유능한 개인이 채용 공고에 지원하는 것을 방해할 수 있어 전문적 발전 가능성을 제한할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 액세스할 수없는 기술은 디지털 격차를 악화시킬 수 있습니다. 디지털 풍경을 쉽게 탐색할 수 있는 사람과 앞을 굳이 막는 장애물을 마주치는 사람 간의 격차를 만들어 낼 수 있습니다. 학습 장애를 가진 학생이 교육 자료에 엑세스하기 어렵다면 애플리케이션이 접근성 기능을 제공하지 않는 경우 어떻게 될까요? 이는 그들의 학업 진행을 방해할 뿐만 아니라 향후 취업 및 사회적 상호작용으로 이어지는 배제의 피라미드를 유발할 수 있습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/gitconnected/accessibility-amplified-a-journey-to-incl
 
 유럽 접근성 법안(EAA)은 유럽 연합 내에서 보다 포용적이고 접근성 있는 디지털 풍경을 창출하기 위한 전환이라고 말할 수 있습니다. 장애를 가진 사람들이 직면한 장애물을 철폐하기 위해 제정된 EAA는 디지털 서비스 및 제품 스펙트럼에 걸쳐 접근성 표준을 강제하는 포괄적인 프레임워크를 제시합니다. 그 중요성은 법률적 틀 내뿐만 아니라 수십만 명의 디지털 배제를 오래 겪어온 개인들의 삶에 미치는 영향에서도 드러납니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 핵심적으로 EAA는 기술이 방해요소가 아닌 오히려 촉진요소로 작용하는 사회 조성을 위한 의지를 반영합니다. 그 중요 조항 중 하나는 유럽 연합 내에서 운영되는 많은 기업들이 2025년까지 자사의 디지털 서비스와 제품들이 접근성을 보장해야 한다는 것을 명시하고 있습니다. 이는 웹사이트부터 모바일 애플리케이션, ATM, 그리고 e북까지 다양한 디지털 인터페이스를 포함하고 있습니다. 이 기한을 부과함으로써, EAA는 기업들이 디지털 제품을 제공하는 데 있어 접근성을 우선시하는 것을 강요하여 기술 산업에서 패러다임 변화를 촉발시킵니다.
 
@@ -49,7 +81,18 @@ EAA의 중요성은 장애를 가진 개인들의 삶에 미칠 전환적인 영
 
 요약하자면, 유럽 접근성법은 디지털 접근성이 법으로 강제되는 것뿐만 아니라 사회적 필요성으로 받아들여지는 새로운 시대를 예고합니다. 비즈니스들이 포용성을 우선시하도록 강요함으로써, EAA는 장벽을 허물고 디지털 시대의 혜택이 모든 이에게 접근 가능하도록 보장하고, 보다 공정하고 조화로운 디지털 미래를 위한 기초를 마련하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 접근성 높은 안드로이드 앱 만들기
 
@@ -59,7 +102,18 @@ EAA의 중요성은 장애를 가진 개인들의 삶에 미칠 전환적인 영
 
 명확하고 가독성 있는 글꼴을 사용하여 가독성을 보장하세요. 글꼴 크기와 대비 비율을 조정하여 시각 장애가 있는 사용자나 작은 텍스트를 읽는 데 어려움이 있는 사용자들의 가시성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코틀린:
 
@@ -79,7 +133,18 @@ XML:
     android:textColor="@color/textColor"/>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젯팩 컴포즈:
 
@@ -95,7 +160,18 @@ Text(
 
 모터 장애가 있는 사용자나 터치 인터페이스를 사용하는 사용자들을 위해 클릭 실수의 위험을 줄이기 위해 더 큰 터치 대상과 버튼을 구현하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kotlin:
 
@@ -114,7 +190,18 @@ XML:
     android:layout_height="150dp"/>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젯팩 컴포즈:
 
@@ -131,25 +218,48 @@ Button(
 
 컨텐츠 설명 또는 대체 텍스트를 사용하여 이미지와 기타 텍스트가 아닌 요소에 대한 설명을 제공하세요. 이렇게 하면 스크린 리더를 사용하는 사용자들이 콘텐츠와 문맥을 이해할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kotlin (이미지용):
 
 ```js
-imageView.contentDescription = "이미지에 대한 설명 텍스트"
+imageView.contentDescription = "이미지에 대한 설명 텍스트";
 ```
 
 XML (ImageView용):
 
 ```js
 <ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:contentDescription="이미지에 대한 설명 텍스트"
-    app:srcCompat="@drawable/your_image"/>
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:contentDescription="이미지에 대한 설명 텍스트"
+  app:srcCompat="@drawable/your_image"
+/>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젯팩 컴포즈 (이미지용):
 
@@ -165,27 +275,50 @@ Image(
 
 정보를 전달하기 위해 오로지 색상에 의존하지 말고, 색맹이나 시각 장애가 있는 사용자도 고려하여 중요 정보가 다른 시각적 신호를 통해서도 확인할 수 있도록 해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kotlin:
 
 ```js
 // 색상만으로 정보 전달에 의존하지 말고,
 // 아이콘이나 레이블과 같은 다른 시각적 단서를 사용하세요
-textView.setBackgroundResource(R.drawable.rounded_corner_background)
+textView.setBackgroundResource(R.drawable.rounded_corner_background);
 ```
 
 XML:
 
 ```js
 <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/rounded_corner_background"
-    android:text="중요 정보"/>
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:background="@drawable/rounded_corner_background"
+  android:text="중요 정보"
+/>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젯팩 콤포즈:
 
@@ -195,7 +328,18 @@ XML:
 
 코틀린:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 //적응형 레이아웃을 위해 ConstraintLayout을 사용하세요
@@ -220,7 +364,18 @@ XML:
 
 Jetpack Compose:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # TalkBack 및 화면 판독기
 
@@ -238,15 +393,25 @@ ViewCompat.setAccessibilityDelegate(view, object : AccessibilityDelegateCompat()
 
 XML:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 <View
     android:id="@+id/view"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:contentDescription="TalkBack를 위한 사용자 정의 설명"/> 
+    android:contentDescription="TalkBack를 위한 사용자 정의 설명"/>
 ```
 
 젯팩 Compose:
@@ -255,7 +420,18 @@ XML:
 
 터치 인터페이스 사용에 어려움을 겪을 수 있는 사용자들을 위해 키보드를 사용한 부드러운 탐색을 활성화하세요. 앱 내에서 논리적이고 직관적인 키보드 탐색 경로를 구현해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코틀린:
 
@@ -276,7 +452,18 @@ XML:
     android:focusableInTouchMode="true"/>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젯팩 콤포즈:
 
@@ -294,7 +481,18 @@ TextField(
 
 음성 명령 기능을 통합하여 사용자가 음성을 사용하여 앱과 상호 작용할 수 있도록합니다. 이는 접근성이 떨어지는 개인이나 무료 경험을 선호하는 사람들에게 큰 혜택이 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Markdown:
 
@@ -306,7 +504,18 @@ Markdown:
     android:imeOptions="actionDone"/>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 자막 및 대본
 
@@ -316,26 +525,49 @@ Kotlin:
 
 ```js
 // 비디오에 대한 자막 설정
-videoView.contentDescription = "비디오에 대한 자막"
+videoView.contentDescription = "비디오에 대한 자막";
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 XML:
 
 ```js
 <VideoView
-    android:id="@+id/videoView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:contentDescription="동영상을 위한 캡션"/>
+  android:id="@+id/videoView"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:contentDescription="동영상을 위한 캡션"
+/>
 ```
 
 Jetpack Compose:
 
 # 고대비 테마
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저시안을 가진 사용자 또는 특정 시각적 선호도를 갖는 사용자를 위해 시각성을 향상시키는 고대비 테마나 모드를 제공해보세요.
 
@@ -343,12 +575,23 @@ Kotlin:
 
 ```js
 // 고대비 테마로 동적으로 전환하기
-AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 ```
 
 Markdown:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <!-- styles.xml에 고대비 테마를 정의하세요 -->
@@ -369,8 +612,18 @@ val highContrastTheme = myTheme.copy(
 
 # 접근성이 좋은 폼
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 친절한 톤으로 번역해보겠습니다:
 
@@ -386,7 +639,18 @@ editText.inputType = InputType.TYPE_CLASS_TEXT
 
 XML:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 // Compose에서는 TextField 또는 기타 관련 컴포넌트를 사용하여 Form을 구축할 수 있습니다
@@ -400,8 +664,18 @@ TextField(
 
 # 동적 텍스트 및 폰트 크기 조정하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱 설정에서 텍스트 크기를 사용자 정의할 수 있도록 허용하여 사용자가 인터페이스를 개인적인 필요에 맞게 조정할 수 있게 합니다.
 
@@ -416,7 +690,18 @@ val textSize = sharedPreferences.getFloat("text_size", 16f)
 textView.textSize = textSize
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 XML:
 
@@ -432,7 +717,18 @@ Jetpack Compose:
 
 이 예시들은 각 접근성 요소가 Kotlin, XML 및 Jetpack Compose에서 어떻게 처리될 수 있는지에 대한 간략한 통찰력을 제공합니다. 앱의 아키텍처 및 디자인에 따라 이러한 개념을 적절하게 조정 및 통합해야 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드 앱의 접근성 테스트
 
@@ -442,7 +738,18 @@ Jetpack Compose:
 
 TalkBack은 안드로이드 기기용 화면 리더기로, 시각 장애를 가진 사용자들을 위해 음성으로 피드백을 제공합니다. TalkBack로 수동 테스트하는 방법은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 기기 설정에서 TalkBack을 활성화하세요.
 - 터치 제스처를 사용하여 앱을 탐색하고 TalkBack이 UI 요소를 읽는 방법을 확인해보세요.
@@ -454,7 +761,18 @@ TalkBack은 안드로이드 기기용 화면 리더기로, 시각 장애를 가�
 - 기기 설정에서 스위치 액세스를 활성화하세요.
 - 스위치 장치를 연결하고 앱을 탐색하면서 모든 상호 작용 요소에 접근하고 사용할 수 있는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 음성 액세스
 
@@ -465,7 +783,18 @@ TalkBack은 안드로이드 기기용 화면 리더기로, 시각 장애를 가�
 
 # 접근성 스캐너
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 접근성 스캐너는 잠재적인 접근성 문제를 검사하는 자동화 도구입니다. Accessibility Scanner를 사용하려면:
 
@@ -476,7 +805,18 @@ TalkBack은 안드로이드 기기용 화면 리더기로, 시각 장애를 가�
 
 Google Play 콘솔의 APK 사전 발매 보고서는 앱의 접근성 성능에 대한 통찰을 제공합니다. 보고서를 생성하려면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Play Console에 앱을 업로드하세요.
 - "릴리스 관리"로 이동하여 "사전 론칭 보고서"를 확인하고 접근성 섹션을 검토하세요.
@@ -488,7 +828,18 @@ UIAutomatorViewer는 앱의 UI 구성 요소를 검사하는 도구입니다. UI
 - Android SDK 도구에서 뷰어를 실행하세요.
 - 기기를 연결하고 앱을 열어 UI 요소를 적절한 레이블과 계층 구조로 검사하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 린트
 
@@ -499,12 +850,23 @@ UIAutomatorViewer는 앱의 UI 구성 요소를 검사하는 도구입니다. UI
 
 # 에스프레소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 에스프레소는 안드로이드용 강력한 테스팅 프레임워크로, UI 테스팅 및 접근성 측면에서 사용할 수 있습니다. 에스프레소를 사용하여 가시성을 테스트하는 간단한 예제를 확인해보세요:
 
 ```js
-AccessibilityChecks.enable().setRunChecksFromRootView(true)
+AccessibilityChecks.enable().setRunChecksFromRootView(true);
 ```
 
 ```js
@@ -518,7 +880,18 @@ AccessibilityChecks.enable().apply {
 
 # 사용자 테스팅
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **마지막으로, 다양한 능력을 가진 사람들을 대상으로 한 사용자 테스트는 앱의 접근성에 대한 귀중한 통찰을 제공합니다. 다음을 고려해 보세요:**
 
@@ -529,7 +902,18 @@ AccessibilityChecks.enable().apply {
 
 # **결론**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 드디어 안드로이드 앱 개발에서 접근성을 채택하는 것은 준수를 넘어서 모든 능력을 가진 사용자를 환영하는 포용적인 디지털 세계를 만들기 위한 약속입니다. 접근성 있는 앱을 개발하는 길은 다양한데, 가시성과 간결함을 우선시하는 디자인 원칙을 구현하는 것부터 첨단 테스트 방법을 활용하는 등 모든 것을 포함합니다.
 
@@ -539,6 +923,17 @@ TalkBack, Switch Access, Voice Access와 같은 수동 테스트부터 Accessibi
 
 하지만 가장 통찰력 있는 피드백은 종종 실제 사용자로부터 옵니다. 특히 다양한 능력을 가진 사용자들을 참여시키는 사용자 테스트는 접근성 평가에 질적인 차원을 제공합니다. 그들의 경험과 시각은 개발자들을 자신들의 앱을 개선하도록 이끄는 데 도움이 되며, 앱을 보다 직관적이고 탐색 가능하며 보편적으로 환영받는 것으로 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 접근성에 대한 약속은 고정적인 것이 아닙니다. 계속된 학습과 적응이 필요하며, 만능 디자인 원칙을 준수하는 디지턈 환경을 만들기 위한 변함없는 헌신이 필요합니다. 앞으로 나아가면서, 우리는 규제적인 기준을 준수하는 것뿐만 아니라, 제약을 넘어진 디지턈 경험을 개발하고 진정한 포용의 정신을 대변하는 것을 목표로 할 것입니다. 이렇게 함으로써, 법적 요구사항을 충족할 뿐만 아니라, 기술이 다양한 삶의 방식을 가진 사람들을 통합하는 다리 역할을 하며 미래에 기여할 수 있습니다.

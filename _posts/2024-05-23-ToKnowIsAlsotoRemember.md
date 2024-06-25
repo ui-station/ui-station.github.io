@@ -3,13 +3,12 @@ title: "알고 있는 것은 기억하는 것과도 같아요"
 description: ""
 coverImage: "/assets/img/2024-05-23-ToKnowIsAlsotoRemember_0.png"
 date: 2024-05-23 17:22
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ToKnowIsAlsotoRemember_0.png
 tag: Tech
 originalTitle: "To Know Is Also to Remember"
 link: "https://medium.com/towards-data-science/to-know-is-also-to-remember-e786cc6242ae"
 ---
-
 
 ![이미지](/assets/img/2024-05-23-ToKnowIsAlsotoRemember_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/to-know-is-also-to-remember-e786c
 
 인공 신경망(ANN)은 우리 뇌에서 작동하는 실제 신경망에서 영감을 받았습니다. 실제로 ANNs는 실제 신경세포가 어떻게 상호 연결되고 위에서 설명한 상황을 설명하는 추상화일 뿐입니다. 개미군 최적화, 차분 진화, 입자 미래 등의 프로세스와 유사하게, ANNs는 실제 과정의 본질을 포착하여 현재 대부분의 AI 솔루션 뒤에 있는 알고리즘을 설계하는 데 사용됩니다. ANNs가 정말로 학습하는지, 그들이 하는 일을 지능이라고 해야 하는지에 대한 논의는 넓고 계속됩니다. 그러나 그들의 다용도성과 성능은 부정할 수 없습니다. 새로운 ANN 구성은 매일 개발되고 있으며 다양한 문제에 성공적으로 적용되고 있습니다. 이러한 변형의 대부분은 여전히 실제 신경망의 행동에서 영감을 받고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RNN(RNNs)은 일련의 메모리 구성요소를 통합하여 처리하는데, 수년 전에 자연어 처리(NLP)에서 중요한 접근 방식을 나타냅니다. RNNs는 Long-Short Term Memory (LSTM) Networks로 나아가는 길을 열며, NLP 응용 프로그램에서 신경망의 성능을 높였습니다. 이후 LSTM 네트워크는 트랜스포머 모델과 GPT(Generative Pre-trained Transformer)에 의해 대체되었는데, 이것이 ChatGPT의 기초가 되었습니다. 이 기사에서는 LSTM 네트워크가 무엇이며, 그들을 특별하게 만드는 이유에 대해 살펴봅니다.
 
@@ -29,17 +39,39 @@ LSTM 네트워크가 어떻게 작동하는지 이해하기 위해서는 그 목
 
 이전 날짜의 온도를 기반으로 새로운 온도를 예측하는 아이디어는 다른 응용 분야로 확장할 수 있습니다. 소개에서 언급된 것처럼, RNN은 NLP 중 첫 접근 방식 중 하나였습니다. 아이디어는 RNN을 텍스트로 학습한 다음, RNN을 사용하여 입력 후 다음에 나오는 단어 또는 단어 그룹을 예측하는 것입니다. 이러한 아이디어는 자동 번역뿐만 아니라 음성 및 필기 인식과 같은 과제에도 적용할 수 있습니다. RNN이 이러한 과제들을 다룰 때 직면하는 문제 중 하나는 죽거나 폭발하는 기울기(vanishing/exploding gradients)로 인한 어려움입니다. 이 문제의 해법은 LSTM 네트워크의 적용입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Figure 1은 완전히 연결된 인공 신경망(ANNs)과 순환 신경망(RNNs) 간의 주요 구조적 차이를 보여줍니다. 이 간단한 예에서는 (X1,Y1) 및 (X2,Y2)의 값이 Y3의 새로운 값 계산에 사용됩니다. 실제로는 ANN과 RNN이 많은 입력-출력 쌍으로 훈련됩니다. 훈련 과정이 완료되면 네트워크는 새로운 값을 예측하는 데 사용됩니다. 이 프로세스에 익숙하지 않다면, 이 기사의 끝에 유용한 참고 자료를 추가했습니다. 여기에 이 프로세스를 설명한 나의 시도도 곁들였습니다. ANNs와 RNNs 사이의 훈련 및 예측의 일반적인 아이디어는 비슷하지만, 구조적으로 큰 차이가 있습니다. RNN에서는 Y1과 Y2의 값이 X1과 X2 대신 네트워크를 훈련하는 데 사용됨을 주목하십시오. 또한 첫 번째 단위와 두 번째 단위를 연결하는 가중치가 있으며, 이는 이전 단위에서 온 활성화를 나타냅니다. 이 가중치는 RNN의 "기억" 구성 요소를 나타냅니다. 더 큰 가중치는 RNN이 이전 값에 더 많은 중요성을 부여함을 의미하고, 더 작은 가중치는 RNN이 과거 값을 잘 기억하지 못한다는 것을 의미합니다. 이것은 신경망 구조의 가중치이므로, 그 값은 프로세스 중에 학습되며, RNN은 재현하려는 순서가 더 많은지 덜 많은지를 결정할 수 있습니다.
 
 ![Image](/assets/img/2024-05-23-ToKnowIsAlsotoRemember_1.png)
 
-RNN의 훈련 및 적용 중 중요한 측면은 네트워크가 읽고 훈련 및 예측에 사용하는 값 시퀀스의 길이입니다. 시퀀스 길이가 15라고 가정해 봅시다. 이는 RNN이 15개의 입력 값을 읽은 후 16번째 값을 찾아 훈련한다는 것을 의미합니다(항상 그렇지는 않습니다. 동적 RNN도 있기 때문입니다). 시퀀스 길이로 돌아가보면, 더 긴 시퀀스 길이는 RNN이 최종 출력에 여러 읽기를 통합할 수 있어 유익합니다. 그러나 더 긴 시퀀스 길이는 사라지는/폭주하는 그래디언트를 유발합니다. LSTM 네트워크는 이 문제를 어떻게 극복할까요? 
+RNN의 훈련 및 적용 중 중요한 측면은 네트워크가 읽고 훈련 및 예측에 사용하는 값 시퀀스의 길이입니다. 시퀀스 길이가 15라고 가정해 봅시다. 이는 RNN이 15개의 입력 값을 읽은 후 16번째 값을 찾아 훈련한다는 것을 의미합니다(항상 그렇지는 않습니다. 동적 RNN도 있기 때문입니다). 시퀀스 길이로 돌아가보면, 더 긴 시퀀스 길이는 RNN이 최종 출력에 여러 읽기를 통합할 수 있어 유익합니다. 그러나 더 긴 시퀀스 길이는 사라지는/폭주하는 그래디언트를 유발합니다. LSTM 네트워크는 이 문제를 어떻게 극복할까요?
 
 # LSTM 네트워크
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LSTM 네트워크는 어떤 정보를 “기억”하고 어떤 정보를 “잊을지” 결정하도록 훈련됩니다. RNN에서는 이전 유닛의 활성화에만 적용되는 메모리 구성 요소에 대한 가중치가 있습니다. 그러나 LSTM에서는 메모리 구성 요소의 개념이 장기 메모리 구성 요소(셀 상태)와 단기 메모리 구성 요소(은닉 상태)로 대체됩니다. 각 구성 요소는 서로 다른 게이트에 분산된 일련의 편향 및 가중치와 관련이 있습니다. 이는 각 입력이 네트워크에서 얼마나 많은 정보를 유지하고 얼마나 버릴지 결정하는 게이트(또는 단계)를 통과한다는 것을 의미합니다. 이 결정은 훈련 과정 중에 학습된 가중치와 편향 값에 기반합니다.
 
@@ -51,7 +83,18 @@ LSTM 네트워크는 어떤 정보를 “기억”하고 어떤 정보를 “잊
 
 <img src="/assets/img/2024-05-23-ToKnowIsAlsotoRemember_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 LSTM 네트워크 셀의 구조를 파악했으니 여기서 발생하는 계산에 더 가깝게 살펴보겠습니다. Figure 3은 LSTM 네트워크 셀을 더 자세히 보여줍니다. 입력, 단기 기억 구성 요소 및 장기 기억 구성 요소는 각각 x, h 및 C로 표시됩니다. 이들 각각의 글자는 분석 중인 시간 기간에 해당하는 아래 첨자를 가지고 있습니다. t-1의 아래 첨자는 값이 이전 반복에 속한다는 것을 의미합니다. 예를 들어, forget gate는 현재 입력(xt)과 이전 반복의 단기 기억 구성 요소(ht-1)를 고려합니다. 게이트들은 또한 일련의 가중치와 편향을 고려합니다. forget 및 output 게이트에는 각각 3개의 매개변수가 있습니다:
 
@@ -63,7 +106,18 @@ LSTM 네트워크는 어떤 정보를 “기억”하고 어떤 정보를 “잊
 
 LSTM 네트워크 셀에 대해 이해해야 할 마지막 중요한 측면은 새로운 C 및 h가 어떻게 계산되는지입니다. 이전 장기 기억 구성 요소는 먼저 forget 게이트의 출력과 곱해진 후 입력 게이트의 결과에 추가됩니다. 이는 forget 게이트가 C의 얼마나 다음 반복에 전달하는지를 결정하고, input 게이트가 C의 새 값에 얼마나 추가할지를 결정합니다. 단기 기억 구성 요소 계산을 위해 output 게이트의 결과는 새로운 C의 tanh와 곱해집니다. 이는 output 게이트가 장기 기억 구성 요소를 다음 반복에 얼마나 전달할지 결정합니다. C의 값이 1 이상일 수 있으므로, 값이 -1과 1 사이로 제한되도록 tanh 연산이 적용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-ToKnowIsAlsotoRemember_3.png)
 
@@ -73,7 +127,18 @@ LSTM 네트워크 셀에 대해 이해해야 할 마지막 중요한 측면은 �
 
 # 앞으로 나아가기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LSTM 네트워크는 다른 인공 신경망(ANN)에서 사용되는 방법론과 유사한 방법으로 훈련될 수 있습니다. 문제에 따라 각 순전파 사이클 이후 업데이트되는 손실 함수를 정의합니다. 그런 다음 이 손실 함수를 사용하여 역전파 과정을 통해 가중치와 편향을 업데이트합니다. RNN 및 LSTM 네트워크의 경우, 역전파는 일반적으로 모든 반복 유닛을 통해 가중치와 편향을 누적하는 과정이기 때문에 시간을 거슬러 역전파(backpropagation through time, BPTT)라고합니다. 이는 LSTM 네트워크의 단일 유닛을 읽는 LSTM 네트워크 셀에서 순전파 과정이 어떻게 진행되는지 설명하는 간단한 구현과 순전파, 역전파 과정에 대해 상세히 설명하는 주피터 노트북입니다.
 
@@ -83,15 +148,37 @@ LSTM 네트워크는 다른 인공 신경망(ANN)에서 사용되는 방법론�
 
 # 더 많은 유닛?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지의 숫자와 예제는 단일 유단 LSTM 네트워크를 보여주었지만, 다른 유형의 네트워크와 마찬가지로 LSTM 네트워크는 여러 개의 유닌을 가질 수 있습니다. 단위 수에 따라 매개 변수 수는 어떻게 변하나요? 두 개의 유닌을 갖는 LSTM 네트워크의 경우, 학습할 매개 변수가 12개가 아닌 32개가 있습니다. 추가된 20개의 매개 변수는 어디에 있을까요? 그러면, 이제 조금 복잡해 질 것입니다. 이를 여러 부분으로 나눠서 살펴보겠습니다.
 
-첫 번째 유닛에는 12개의 매개 변수가 있습니다. 이전에 설명한 것과 같은 매개 변수들입니다: 입력을 곱하는 4개의 가중치, 숨겨진 상태(h)를 곱하는 4개의 가중치, 그리고 각 게이트에 대한 4개의 바이어스입니다. 두 번째 유닌도 12개의 관련된 매개 변수를 가지고 있습니다. 이는 지금까지 총 24개의 매개 변수를 가지게 되었다는 것을 의미합니다. 
+첫 번째 유닛에는 12개의 매개 변수가 있습니다. 이전에 설명한 것과 같은 매개 변수들입니다: 입력을 곱하는 4개의 가중치, 숨겨진 상태(h)를 곱하는 4개의 가중치, 그리고 각 게이트에 대한 4개의 바이어스입니다. 두 번째 유닌도 12개의 관련된 매개 변수를 가지고 있습니다. 이는 지금까지 총 24개의 매개 변수를 가지게 되었다는 것을 의미합니다.
 
 LSTM 네트워크는 특정 유형의 RNN이므로 각 유닌 사이에 연결이 있을 것입니다. 이는 유닌 1에서 처리된 정보가 유닌 2로 전달된다는 것을 의미합니다. 각각의 연결은 고유의 가중치를 갖습니다. 두 개의 유닌을 갖는 LSTM 네트워크에서, 이전에 언급된 24개의 매개 변수 외에, 유닌 2의 각 게이트와 유닌 1의 각 게이트 사이의 연결 및 유닌 1의 숨겨진 상태와 유닌 2의 게이트 사이의 연결에 해당하는 8개의 매개 변수가 추가로 필요합니다. 그림 7은 유닌 2의 잊기 게이트에서 활성화를 계산하는 방법을 보여줍니다. 이 게이트가 이전 게이트와 이전 숨겨진 상태에 연결되어 있다는 점에 주목하세요. 그림에는 새로운 가중치가 5개만 표시되어 있지만, 실제로는 첫 번째 유닌의 숨겨진 상태가 두 번째 유닌의 각 게이트에 연결되기 때문에 8개의 가중치가 있습니다. n개의 유닌에 대한 매개 변수 수는 12n+4n(n-1) 또는 간소화된 표현으로 8(n+n²/2)입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-ToKnowIsAlsotoRemember_7.png" />
 
@@ -101,7 +188,18 @@ LSTM 네트워크는 특정 유형의 RNN이므로 각 유닌 사이에 연결�
 
 <img src="/assets/img/2024-05-23-ToKnowIsAlsotoRemember_8.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 응용 프로그램
 
@@ -111,17 +209,39 @@ LSTM 네트워크는 특정 유형의 RNN이므로 각 유닌 사이에 연결�
 
 이것은 처음부터 LSTM 네트워크를 구현하는 매우 간단한 예시입니다. 여기서 배울 중요한 교훈은 LSTM 네트워크에 데이터를 공급하기 전에 데이터를 올바르게 준비하는 중요성입니다. LSTM 네트워크로 모델링하고 싶은 연속 함수가 있다면, 먼저 입력-타겟 데이터의 쌍을 생성해야 합니다 (Figure 1 참조). 이 데이터는 시퀀스 길이에 따라 달라집니다. 예를 들어, 시퀀스 길이가 15인 경우, 각 입력 항목은 15개의 값이 포함되며 16번째 값은 해당 입력의 타겟이 됩니다. 네트워크에 입력하기 전에 데이터를 정규화하는 것도 중요합니다. 이 예시에서는 sin(x) 함수와 함께 웰에서의 석유 생산 행동을 모델링하기 위해 간단한 LSTM 네트워크가 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-## 워드 예측기를 구축하기 위한 바닐라 LSTM 네트워크  
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-이 예시에서는 이전의 바닐라 LSTM 네트워크가 워드 예측 문제에 적용되었습니다. 짧은 텍스트로 훈련된 후, 모델은 다음에 나올 단어를 예측합니다. 실제로 워드 처리 및 워드 예측 문제는 이 예시처럼 다가가지 않습니다. 그러나 LSTM 네트워크의 가능한 응용에 대한 간단하고 명확한 설명입니다.  
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-## Keras의 LSTM 네트워크를 사용하여 워드 예측기 구축  
+## 워드 예측기를 구축하기 위한 바닐라 LSTM 네트워크
+
+이 예시에서는 이전의 바닐라 LSTM 네트워크가 워드 예측 문제에 적용되었습니다. 짧은 텍스트로 훈련된 후, 모델은 다음에 나올 단어를 예측합니다. 실제로 워드 처리 및 워드 예측 문제는 이 예시처럼 다가가지 않습니다. 그러나 LSTM 네트워크의 가능한 응용에 대한 간단하고 명확한 설명입니다.
+
+## Keras의 LSTM 네트워크를 사용하여 워드 예측기 구축
 
 이 예시는 Keras의 LSTM 네트워크를 사용하여 긴 텍스트로 훈련된 후 다음 단어가 무엇인지 예측하는 더 현실적인 예제입니다. 이 예시에서는 NLP 문제에서 일반적인 추가인 임베딩 레이어를 사용합니다. 임베딩 레이어는 단어의 정수로 인코딩된 표현(인덱스)을 밀집된 벡터로 변환하여 단어 사이의 관계를 더 잘 모델링하는 데 도움이 되는 고정 크기의 벡터로 변환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

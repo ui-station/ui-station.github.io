@@ -3,13 +3,12 @@ title: "Jetpack Compose에서 사용자 정의 3D 대화 상자 애니메이션 
 description: ""
 coverImage: "/assets/img/2024-06-19-CraftingCustom3DDialogAnimationinJetpackCompose_0.png"
 date: 2024-06-19 22:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-CraftingCustom3DDialogAnimationinJetpackCompose_0.png
 tag: Tech
 originalTitle: "Crafting Custom 3D Dialog Animation in Jetpack Compose."
 link: "https://medium.com/@kappdev/crafting-custom-3d-dialog-animation-in-jetpack-compose-b4038f7888d5"
 ---
-
 
 환영합니다 👋
 
@@ -19,8 +18,18 @@ link: "https://medium.com/@kappdev/crafting-custom-3d-dialog-animation-in-jetpac
 
 다행히도, 젯팩 컴포즈를 사용하면 이를 쉽게 할 수 있습니다 🤗
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-CraftingCustom3DDialogAnimationinJetpackCompose_0.png)
 
@@ -37,10 +46,20 @@ fun AnimatedDialog(
     properties: DialogProperties = DialogProperties(),
     content: @Composable (triggerDismiss: () -> Unit) -> Unit,
 )
-``` 
+```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 함수는 여러 개의 매개변수를 사용합니다. 함께 살펴보겠습니다:
 
@@ -50,7 +69,18 @@ fun AnimatedDialog(
 
 ✨ outAnimDuration ➜ 대화 상자의 사라짐 애니메이션 지속 시간입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ✨ properties ➜ 대화 상자의 설정 속성입니다.
 
@@ -60,7 +90,18 @@ fun AnimatedDialog(
 
 자, 이제 애니메이션 구현으로 넘어갈까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 변수 정의
 
@@ -79,7 +120,18 @@ val animationSpec = tween<Float>(
 
 ## 애니메이션 상태
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 다음으로, alpha, rotationX 및 scale에 대한 세 가지 애니메이션 상태를 정의해야합니다:
 
@@ -104,7 +156,18 @@ val dialogScale by animateFloatAsState(
 
 또한 다이얼로그를 종료 애니메이션으로 닫을 람다 함수를 정의해야하며, 이것은 컨텐츠에 전달할 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 val dismissWithAnimation: () -> Unit = {
@@ -129,7 +192,18 @@ LaunchedEffect(Unit) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 대화창 만들기
 
@@ -157,7 +231,18 @@ Dialog(
 
 축하합니다🥳! 성공적으로 만들었어요👏. 전체 코드 구현은 GitHub Gist에서 확인하실 수 있습니다🧑‍💻. 이제 어떻게 활용할 수 있는지 알아봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 광고
 
@@ -167,7 +252,18 @@ Dialog(
 
 # 사용법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요, 이제 이 기능을 사용하여 일반적인 샘플을 만들어볼게요.
 
@@ -179,7 +275,18 @@ Dialog(
 var showDialog by remember { mutableStateOf(false) }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 대화 상자를 트리거하는 버튼
 
@@ -195,7 +302,18 @@ Button(
 
 ## 대화 상자 표시
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, showDialog가 true로 설정되면 다이얼로그가 표시됩니다:
 
@@ -244,7 +362,18 @@ if (showDialog) {
 
 ![결과 확인](https://miro.medium.com/v2/resize:fit:1200/1*3rjr41FLlYZwKl-SFagv4w.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:1200/1*A8bBm5VjKaGTe-jMEoLDUg.gif)
 
@@ -254,7 +383,18 @@ if (showDialog) {
 
 이 기사를 읽어 주셔서 감사합니다! ❤️ 즐겁고 가치 있는 시간이었길 바랍니다. 마음에 드셨다면 박수를 치는 👏 버튼을 눌러 감사를 표현하고, 더 많고 흥미로운 기사를 보시려면 Kappdev를 팔로우해 주세요 😊
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 행복한 코딩!
 

@@ -3,13 +3,12 @@ title: "젯팩 콤포즈로 귀여운 3D 라디오 버튼을 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtoCreateaCute3DRadioButtoninJetpackCompose_0.png"
 date: 2024-06-19 10:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtoCreateaCute3DRadioButtoninJetpackCompose_0.png
 tag: Tech
 originalTitle: "How to Create a Cute 3D Radio Button in Jetpack Compose"
 link: "https://medium.com/@kappdev/how-to-create-a-cute-3d-radio-button-in-jetpack-compose-9068deb2a71c"
 ---
-
 
 환영합니다 👋
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@kappdev/how-to-create-a-cute-3d-radio-button-in-jetpa
 
 ![이미지](/assets/img/2024-06-19-HowtoCreateaCute3DRadioButtoninJetpackCompose_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 상수 정의
 
@@ -45,7 +55,18 @@ private val RadioButtonSize = 22.dp
 
 # 다양한 상태를 위한 색상 정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 단계는 라디오 버튼이 다양한 상태(선택됨, 선택되지 않음, 활성화됨, 비활성화됨)에서 사용하는 색상을 정의하는 것입니다. 이러한 색상을 관리하는 ConvexRadioButtonColors 클래스를 만들 것입니다.
 
@@ -79,7 +100,18 @@ class ConvexRadioButtonColors(
 
 # 기본 색상 제공하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 라디오 버튼의 기본 색상 값을 제공하는 ConvexRadioButtonDefaults 객체를 생성할 것입니다.
 
@@ -99,7 +131,18 @@ object ConvexRadioButtonDefaults {
 
 # Convex Radio Button 정의하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 주요 ConvexRadioButton composable 함수를 선언하고 그 매개변수들을 살펴볼 수 있습니다.
 
@@ -119,7 +162,18 @@ fun ConvexRadioButton(
 
 💎 modifier ➜ 이 라디오 버튼에 적용할 Modifier입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 💎 enabled ➜ 라디오 버튼이 사용자 상호 작용을 위해 활성화되는지 여부를 나타냅니다.
 
@@ -129,7 +183,18 @@ fun ConvexRadioButton(
 
 💎 onClick ➜ 라디오 버튼이 클릭될 때 호출되는 람다 함수입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Convex Radio Button 구현
 
@@ -139,7 +204,18 @@ fun ConvexRadioButton(
 
 이 기능을 구현하기 위해 innerShadow 및 convexBorder 수정자를 활용해야 합니다. 자세한 설명은 아래 제공된 관련 기사를 참조하거나👇 또는 InnerShadow Gist, ConvexBorder Gist에서 코드를 가져오세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 구현
 
@@ -203,7 +279,18 @@ fun ConvexRadioButton(
 
 축하해요🥳! 성공적으로 만들어냈어요👏. 전체 코드 구현은 GitHub Gist에서 확인할 수 있습니다🧑‍💻. 이제 어떻게 활용할 수 있는지 살펴보도록 하죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 광고
 
@@ -213,7 +300,18 @@ fun ConvexRadioButton(
 
 # 실용적인 예시 💁
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알겠어요, 결제 옵션을 선택하기 위한 간단한 예제를 만들어 봅시다.
 
@@ -229,7 +327,18 @@ enum class PaymentOption(val displayName: String) {
 
 다음으로, 현재 선택된 옵션을 저장하기 위한 상태 변수가 필요합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 var selectedOption by remember { mutableStateOf(PaymentOption.CreditCard) }
@@ -253,8 +362,18 @@ Column {
 
 ## 결과:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:826/1*5IdpszpbEX4LHPABjORO-g.gif)
 
@@ -264,8 +383,17 @@ Thank you for reading this article! ❤️ I hope you’ve found it enjoyable an
 
 Happy coding!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-HowtoCreateaCute3DRadioButtoninJetpackCompose_2.png)

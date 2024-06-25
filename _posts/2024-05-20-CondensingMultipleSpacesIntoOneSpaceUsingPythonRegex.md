@@ -3,29 +3,38 @@ title: "Python 정규 표현식을 사용하여 여러 공백을 하나의 공�
 description: ""
 coverImage: "/assets/img/2024-05-20-CondensingMultipleSpacesIntoOneSpaceUsingPythonRegex_0.png"
 date: 2024-05-20 15:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-CondensingMultipleSpacesIntoOneSpaceUsingPythonRegex_0.png
 tag: Tech
 originalTitle: "Condensing Multiple Spaces Into One Space Using Python Regex"
 link: "https://medium.com/gitconnected/condensing-multiple-spaces-into-one-space-using-python-regex-8b5378bd9e45"
 ---
 
-
-
 ![image](/assets/img/2024-05-20-CondensingMultipleSpacesIntoOneSpaceUsingPythonRegex_0.png)
 
 만약 여러 개의 공백 문자를 하나의 공백 문자로 변환해야 한다면, 이 기사가 여러분을 위한 것입니다.
 
 ```js
-x = 'apple   orange  pear     pineapple'
+x = "apple   orange  pear     pineapple";
 ```
 
 ^ 이 문자열에서 단어 사이에 여러 개의 공백이 있습니다. 여러 개의 공백을 하나의 공백으로 압축해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-output = 'apple orange pear pineapple'
+output = "apple orange pear pineapple";
 ```
 
 # 수동 방법
@@ -47,7 +56,18 @@ print(condense(x))
 - 리스트 내포는 모든 빈 문자열을 필터링하고 [`apple`, `orange`, `pear`, `pineapple`]를 얻습니다.
 - ` ` .join()은 이 4개 단어를 `apple orange pear pineapple`로 결합합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이 방법은 다소 수동적입니다. 한 줄의 코드로 정규식을 사용하여 이 문제를 해결할 수 있다는 걸 아셨나요?
 
@@ -68,7 +88,18 @@ print(re.sub(' +', ' ', x))
 - 각각의 경우가 한 개의 공백으로 대체됩니다.
 - 이게 전부입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -80,7 +111,18 @@ print(re.sub(' +', ' ', x))
 - 생각을 나누는 댓글을 남겨주세요
 - 이야기에서 가장 마음에 드는 부분을 강조해주세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 감사합니다! 이런 작은 행동들이 큰 도움이 되어요. 정말 감사드려요!
 

@@ -26,7 +26,18 @@ link: "https://medium.com/@hector-reyesaleman/my-iac-aws-multi-account-provision
 - 안전하게 SSO AWS 임시 자격 증명 구성
 - AWS-VAULT
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테라그런트
 
@@ -36,7 +47,18 @@ link: "https://medium.com/@hector-reyesaleman/my-iac-aws-multi-account-provision
 
 ![테라그런트 구조](/assets/img/2024-05-27-MyIaCAWSMulti-AccountProvisioningBluePrintBestPractices_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 주의해야 할 점은 terragrunt를 자원을 조정하는 데 과도하게 사용하지 않아야 합니다.
 
@@ -46,7 +68,18 @@ Terragrunt는 이미 통합된 Terraform 모듈을 서로 다른 환경에 배�
 
 # 응용 프로그램 모듈을 생성하는 데 Terraform을 사용하고, 다른 환경에 배포하는 데 Terragrunt를 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플리케이션 모듈(왼쪽)을 만들 때 Terragrunt를 사용하지 마세요. 그렇지 않으면 복잡해질 수 있고 테라폼 상태가 앱 단위가 아닌 구성 요소 단위로 생성될 수 있습니다. Terragrunt를 사용하는 경우 배포(오른쪽)에만 사용하세요.
 
@@ -56,7 +89,18 @@ Terragrunt는 이미 통합된 Terraform 모듈을 서로 다른 환경에 배�
 
 저의 몇몇 프로젝트 중 하나에서 저는 Terragrunt에서 Terraform 워크스페이스로 다중 계정 배포 방법을 변경하는 작업을 맡게 되었습니다. 이것은 서로 다른 AWS 환경을 관리하기 위해 조직의 표준 절차에 맞추기 위한 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로세스는 Terragrunt가 단순히 테라폼 래퍼일 뿐이기 때문에 매우 간단할 수 있었을 것입니다.
 
@@ -67,7 +111,18 @@ Terragrunt는 이미 통합된 Terraform 모듈을 서로 다른 환경에 배�
 T
 erraform은 애플리케이션이나 플랫폼 서비스를 위해 서로 다른 모듈을 번들로 묶을 것으로 의도되어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시: 최소한의 애플리케이션 인프라 리소스:
 
@@ -157,7 +212,18 @@ module "ssm_params" {
 - IAM Lambda 실행 역할
 - 이전에 생성된 리소스의 ARN 또는 ID를 보관하는 SSM 매개변수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 빠진 것은 다른 기사에서 보여준 것처럼 백엔드 S3 및 AWS 제공자 구성입니다... 여기서 Terragrunt가 등장합니다...
 
@@ -167,7 +233,18 @@ module "ssm_params" {
 
 하지만 우리는 어떻게 알 수 있을까요? 무엇을 플랫폼 인프라에 위치시키고 어떤 것을 애플리케이션 인프라에 위치시켜야 할지요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 플랫폼 인프라스트럭처:
 
@@ -180,7 +257,18 @@ module "ssm_params" {
 
 ## 응용 프로그램 인프라스트럭처:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 응용 프로그램 인프라는 특정 응용 프로그램 또는 응용 프로그램 세트를 실행하는 데 필요한 구성 요소와 리소스로 구성됩니다. 이는 종종 다음을 포함합니다:
 
@@ -193,7 +281,18 @@ module "ssm_params" {
 
 예를 들어 Serverless Framework나 AWS SAM이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서버리스 애플리케이션에 대해서는 테라폼과 서버리스를 사용하는 멋진 가이드가 있어요.
 
@@ -203,7 +302,18 @@ module "ssm_params" {
 
 ‘live‘ 디렉토리 내에서 배포할 환경을 지정하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ├── README.md
@@ -240,7 +350,18 @@ module "ssm_params" {
 
 테라폼 워크스페이스 구성과 Terragrunt 구성을 비교해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 변수 정의는 "거의" 같은 상태로 유지되고 있으며, Terragrunt Live 디렉터리를 다른 환경의 이름으로 구조화하고 있습니다.
 
@@ -250,7 +371,18 @@ AWS 환경 이름과 디렉터리 이름이 일치하므로 간단한 정규 표
 
 여기에 완전한 terragrunt.hcl 파일이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 backend.tf와 provider.tf 생성기에서 "profile" 매개변수를 주목해주세요. 다음 섹션에서 이들을 제거할 예정입니다.
 
@@ -322,13 +454,33 @@ Terragrunt가 생성기에 보간을 허용하므로 모든 대상 AWS 계정에
 
 ## infrastructure/live/\_env/app.hcl
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해주세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Terraform 프로비저닝 인프라에 필요한 역할 설정하기
 
@@ -340,7 +492,18 @@ account_role_name     = "apps-terraform-execution-role" # <--- 전환할 역할
 
 그러나 이 설정은 하나의 엔터티(terraform-multiaccount-role)가 모든 계정에서 terraform-role을 가정(Assume)할 수 있도록 허용합니다. 이는 개발팀이 자체 인프라를 개발 환경에서 관리할 수 있도록 하려는 경우에는 편리하지 않습니다. 따라서 개발 팀이 Dev 계정에서만 역할을 전환할 수 있는 엔터티와 Test 및 Production에 대한 다른 엔터티가 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## AWS Identity Center 위임된 관리자 계정 및 권한 집합
 
@@ -350,7 +513,18 @@ AWS 계정에 권한 집합을 만드는 방법 및 권한 집합을 AWS 계정�
 
 각 권한 집합에 대한 대상 계정에 다음과 같은 내부 정책을 만드세요. 허용하는 권한 집합(Identity 계정에 설정된)이 공유 서비스 계정에 배포되어 다음 계정에서 역할을 가정할 수 있도록합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 보이는 3가지 다른 권한 세트가 있습니다:
 
@@ -396,7 +570,18 @@ AWS 계정에 권한 집합을 만드는 방법 및 권한 집합을 AWS 계정�
 
 참고: "terraform-production"에게도 Test에서 역할을 수행할 수 있도록 정책을 약간 조정할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 플랫폼 인프라 (IaC)
 
@@ -442,7 +627,18 @@ AWS 계정에 권한 집합을 만드는 방법 및 권한 집합을 AWS 계정�
 
 ## 로컬 변수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여러 개의 계정 값들을 하나의 장소에서 중앙화하는 방법의 예시입니다:
 
@@ -558,7 +754,18 @@ inputs = {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## infrastructure/modules/platform/iam-roles
 
@@ -642,7 +849,18 @@ module "iam_assumable_role" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # AWS 인가: SSO를 사용할 예정이므로 장기적으로 유효한 자격 증명이 필요하지 않아요 🥳
 
@@ -652,7 +870,18 @@ module "iam_assumable_role" {
 
 요기 못생긴 닭과 계란 문제가 있는데... 깔끔한 AWS 계정이 있고, 플랫폼 인프라 프로비저닝에 권한을 부여해야 해요. 이건 IaC를 사용할 수 없어서 할 수 없는 문제에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS 콘솔이나 CLI를 사용하여 Terraform 플랫폼에 대한 IAM 또는 IAM Identity Center 사용자를 수동으로 설정해야 합니다. 설정이 완료되면 IaC를 프로비저닝할 수 있습니다.
 
@@ -670,7 +899,18 @@ output=json
 
 ## 응용 프로그램 리소스 (개발자가 쓰기 액세스를 얻는 곳)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-MyIaCAWSMulti-AccountProvisioningBluePrintBestPractices_1.png" />
 
@@ -704,8 +944,18 @@ output=json
 
 어머머... 휴스턴, 문제 발생했어요.... AWS 계정 별로 다른 권한 세트가 있어요... 이제 더 이상 `profile = shared-services`를 사용할 수 없게 됐네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 혹시 매핑할까요? 아니면 환경과 접두사를 추가할까요?….
 
@@ -862,7 +1112,18 @@ EOF
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 배포
 
@@ -893,7 +1154,18 @@ terragrunt apply
 
 ## 어플리케이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서는 방금 만든 새 역할을 사용합니다.
 
@@ -927,7 +1199,18 @@ terragrunt apply
 
 AWS Vault은 개발 환경에서 AWS 자격 증명을 안전하게 저장하고 액세스하는 도구입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS Vault은 IAM 자격 증명을 사용자의 운영 체제 안전한 키 저장소에 저장한 다음 해당 자격 증명을 임시 자격 증명으로 생성하여 쉘 및 응용 프로그램에 노출합니다. 이는 AWS CLI 도구와 함께 보조적으로 사용되도록 설계되었으며 ~/.aws/config에 있는 프로필과 구성을 인식합니다.
 
@@ -939,7 +1222,18 @@ brew install --cask aws-vault
 
 # AWS-Vault로 배포하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 플랫폼
 
@@ -982,7 +1276,18 @@ aws-vault exec terraform-production terragrunt plan
 aws-vault exec terraform-production terragrunt apply
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-MyIaCAWSMulti-AccountProvisioningBluePrintBestPractices_2.png" />
 

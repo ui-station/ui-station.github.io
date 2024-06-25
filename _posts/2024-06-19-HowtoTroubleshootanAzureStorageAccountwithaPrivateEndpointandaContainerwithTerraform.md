@@ -3,13 +3,12 @@ title: "Azure Storage Account에 개인 엔드포인트와 Terraform을 사용�
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtoTroubleshootanAzureStorageAccountwithaPrivateEndpointandaContainerwithTerraform_0.png"
 date: 2024-06-19 13:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtoTroubleshootanAzureStorageAccountwithaPrivateEndpointandaContainerwithTerraform_0.png
 tag: Tech
 originalTitle: "How to Troubleshoot an Azure Storage Account with a Private Endpoint and a Container with Terraform"
 link: "https://medium.com/@gmusumeci/how-to-troubleshoot-an-azure-storage-account-with-a-private-endpoint-and-a-container-with-terraform-c907f8f49d2b"
 ---
-
 
 <img src="/assets/img/2024-06-19-HowtoTroubleshootanAzureStorageAccountwithaPrivateEndpointandaContainerwithTerraform_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@gmusumeci/how-to-troubleshoot-an-azure-storage-accoun
 
 # 1. 우리의 시나리오
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 테라폼이 실행 중인 가상 머신이 있습니다.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@gmusumeci/how-to-troubleshoot-an-azure-storage-accoun
 
 - 리소스 그룹 "kopicloud-core-dev-we-dns-rg"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 새로운 Azure Storage Account와 프라이빗 엔드포인트를 배포할 것입니다.
 
@@ -43,7 +64,18 @@ link: "https://medium.com/@gmusumeci/how-to-troubleshoot-an-azure-storage-accoun
 
 이 코드에 대해 설명은 이 이야기에서 하지 않겠습니다. 더 자세한 내용은 "Terraform을 사용한 Azure Storage Account의 프라이빗 엔드포인트" 이야기를 확인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 "network-variables.tf" 파일입니다:
 
@@ -89,7 +121,18 @@ resource "azurerm_subnet" "endpoint-subnet" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "storage-account.tf" 파일:
 
@@ -148,8 +191,18 @@ resource "azurerm_private_dns_a_record" "dns_a" {
 
 기본적으로 이 코드는 공개 액세스가 있는 스토리지 계정을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-HowtoTroubleshootanAzureStorageAccountwithaPrivateEndpointandaContainerwithTerraform_1.png)
 
@@ -170,9 +223,20 @@ resource "azurerm_storage_account" "storage" {
 
   public_network_access_enabled = false
 }
-``` 
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "Terraform Apply" 명령을 실행하여 공개 액세스가 비활성화되었음을 확인했습니다.
 
@@ -182,15 +246,26 @@ resource "azurerm_storage_account" "storage" {
 
 이제 다음 코드로 스토리지 계정 컨테이너를 생성할 차례입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-```hcl
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+```js
 // 외부 저장소 계정용 Azure Storage 컨테이너 생성
 resource "azurerm_storage_container" "external" {
   name                  = "container"
   storage_account_name  = azurerm_storage_account.storage.name
   container_access_type = "private"
-} 
+}
 ```
 
 "Terraform Apply" 명령을 실행했는데 오류가 발생했습니다.
@@ -199,8 +274,18 @@ resource "azurerm_storage_container" "external" {
 
 따라서 이 문제를 해결하기 위해 특정 네트워크에서의 공개 액세스를 허용할 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 "azurerm_storage_account" 리소스를 수정하여 public_network_access_enabled = true 라인을 추가하겠습니다.
 
@@ -231,7 +316,18 @@ resource "azurerm_storage_account_network_rules" "rules" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 “Terraform Apply” 명령을 실행했을 때 다시 403 오류가 발생했어요.
 
@@ -250,14 +346,25 @@ data "azurerm_subnet" "core" {
 # Azure Storage Account 네트워크 규칙 생성
 resource "azurerm_storage_account_network_rules" "rules" {
   storage_account_id = azurerm_storage_account.storage.id
-  
+
   default_action = "Deny"
   virtual_network_subnet_ids = [ azurerm_subnet.endpoint-subnet.id, data.azurerm_subnet.core.id ]
   bypass         = ["Metrics", "Logging", "AzureServices"]
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "Terraform Apply" 명령을 실행했는데 다시 403 오류가 발생했어요.
 
@@ -267,7 +374,18 @@ resource "azurerm_storage_account_network_rules" "rules" {
 
 # 6. 코어와 스토리지 가상 네트워크 간 피어링 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 후에, 어쩌면 두 가상 네트워크 사이에 피어링이 필요할지도 모른다고 생각했어요.
 
@@ -304,7 +422,18 @@ resource "azurerm_virtual_network_peering" "storage-to-core" {
 
 그리고 "Terraform Apply" 명령어를 실행했더니, 마침내 우리 코드가 잘 실행되고 있어요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최종 네트워크 구성은 다음과 같아야 합니다:
 

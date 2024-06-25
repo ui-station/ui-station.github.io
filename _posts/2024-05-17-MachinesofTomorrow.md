@@ -3,13 +3,12 @@ title: "내일의 기계들"
 description: ""
 coverImage: "/assets/img/2024-05-17-MachinesofTomorrow_0.png"
 date: 2024-05-17 19:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-MachinesofTomorrow_0.png
 tag: Tech
 originalTitle: "Machines of Tomorrow"
 link: "https://medium.com/@uriarecio/machines-of-tomorrow-8103bf92dfa0"
 ---
-
 
 # 내일의 기계: AI 원래부터 초지능 및 넘인간성까지, 어떻게 AI가 우리의 세계를 형성할 것인가
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@uriarecio/machines-of-tomorrow-8103bf92dfa0"
 
 우리의 뉴스레터 구독하여 모든 챕터를 받아보세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Machines of Tomorrow](/assets/img/2024-05-17-MachinesofTomorrow_0.png)
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@uriarecio/machines-of-tomorrow-8103bf92dfa0"
 
 AI가 가까운 미래와 중기에 고용과 교육에 어떤 영향을 미칠까요? AI가 우리 사회, 경제, 정부, 문화 및 지정학에 어떤 영향을 미칠까요? AI 구현의 유토피아적 및 디스토피아적 결과는 무엇이며 누가 영향을 받을 것인가요? 중국과 새로운 AI 무기 경쟁에 대해 실제로 무슨 일이 벌어지고 있을까요? 합성생물학이 정말 인간-사이보그 공존으로 이끌 것이며 결국 인간 진화에 영향을 미칠까요? 이 기술의 불가피한 진전에 대비하려면 리더들에게 지금 어떤 것을 요구해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Pedro Uria-Recio와 Randy McGraw가 제기하고 대답한 몇 가지 신선하고 논쟁적인 질문들 중 일부입니다. Pedro Uria-Recio는 McKinsey 컨설턴트 출신, Randy McGraw는 AI 부문 최고 책임자 및 Amazon 전 임직원으로 이들은 수년간 이 기술을 전 세계적으로 활용해 왔습니다.
 
@@ -39,7 +60,18 @@ Pedro Uria-Recio와 Randy McGraw가 제기하고 대답한 몇 가지 신선하�
 
 AI는 우리의 새로운 마음입니다. 로봇공학은 새로운 신체입니다. 우리는 탄소와 실리콘의 교차로에서 새로운 종이 어떻게 될까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI가 기하급수적으로 발전하고 있습니다.
 
@@ -49,7 +81,18 @@ AI 독재가 위협적입니다.
 
 AI는 진실을 무효화하고, 자유를 재정의하며, 일자리 부족을 불러올 것입니다. 우리는 아직도 AI를 모두의 이익을 위해 형성할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지구정치의 역학화.
 
@@ -59,7 +102,18 @@ AI는 진실을 무효화하고, 자유를 재정의하며, 일자리 부족을 
 
 신화에서 큐브릭까지. 아리스토텔레스에서 샘 알트만까지. 레오나르도 다 빈치에서 보스턴 다이내믹스까지. 오늘부터 초인지능까지.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 장 `` 차례
 
@@ -69,7 +123,18 @@ AI는 진실을 무효화하고, 자유를 재정의하며, 일자리 부족을 
 
 아마존이나 구글 리드에서 리뷰 작성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 뉴스레터 구독을 신청하시면 모든 챕터를 받아보실 수 있어요
 

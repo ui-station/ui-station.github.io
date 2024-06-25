@@ -3,23 +3,33 @@ title: "랜딩 존 배포 Google Cloud 채택 시리즈"
 description: ""
 coverImage: "/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_0.png"
 date: 2024-06-19 13:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_0.png
 tag: Tech
 originalTitle: "Landing Zone Deployment (Google Cloud Adoption Series)"
 link: "https://medium.com/google-cloud/landing-zone-deployment-google-cloud-adoption-series-bdc0b36106d0"
 ---
 
-
 구글 클라우드 채택 및 이전 시리즈에 다시 오신 것을 환영합니다. 이 글이 좀 늦게 나온 점 죄송합니다. 기술적인 문제가 있어서요! (나중에 더 설명하겠죠.)
 
 이전에는 핵심 LZ 팀을 구성하는 방법, 필요한 지원을 받는 방법, 실행해야 할 워크샵, 그리고 설계를 기록하고 문서화하는 방법을 다뤘습니다.
 
-오늘은 재미있는 부분에 진입합니다! 이제 실제로 LZ를 배포해 봅시다! 
+오늘은 재미있는 부분에 진입합니다! 이제 실제로 LZ를 배포해 봅시다!
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # LZ를 배포하는 네 가지 방법
 
@@ -32,7 +42,18 @@ Google 클라우드 랜딩 존을 배포하는 네 가지 접근 방법이 있�
 
 # 사전 요구사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 방식을 선택하든, LZ 설계 단계를 완료하는 것이 중요합니다. 해야 할 결정 사항이 많이 있습니다.
 
@@ -42,7 +63,18 @@ Google 클라우드 랜딩 존을 배포하는 네 가지 접근 방법이 있�
 
 ## 누구를 위한 것인가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 매우 작은 조직 및 매우 작은 Google Cloud 플랫폼 팀을 대상으로하며, Terraform 기술이 거의나 전혀 없는 경우가 많습니다.
 
@@ -54,7 +86,18 @@ Google 클라우드 랜딩 존을 배포하는 네 가지 접근 방법이 있�
 
 ## 단점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 최종 LZ의 제한된 구성 가능성.
 - 반복성 없음.
@@ -76,7 +119,18 @@ Google 클라우드 랜딩 존을 배포하는 네 가지 접근 방법이 있�
 
 실제 배포 단계는 설정의 8단계 이후에만 발생합니다. 이 지점까지 모든 것은 적용할 구성입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세부 단계를 자세히 살펴보기 전에 먼저 Google Cloud 설정 체크리스트를 시작해 보세요. 이 체크리스트는 프로세스를 완료하는 데 단계별 지침을 제공합니다. 체크리스트의 각 번호가 매겨진 항목은 더 많은 세부 정보를 보여줍니다.
 
@@ -86,7 +140,18 @@ Google 클라우드 랜딩 존을 배포하는 네 가지 접근 방법이 있�
 
 우선 Google Cloud Identity를 설정해야 하며(이미 Cloud Identity 또는 Google Workspace 고객이 아닌 경우), 그런 다음 Cloud Identity 계정을 Google Cloud 조직에 연결해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아직 구글 클라우드 아이덴티티 고객이 아니라면, 클라우드 아이덴티티 가입 페이지를 열어 진행할 것입니다. 클라우드 아이덴티티에는 무료 및 프리미엄 버전이 있지만, 이 프로세스에서는 무료 티어를 사용하는 방법을 안내해 드릴게요.
 
@@ -96,7 +161,18 @@ Google 클라우드 랜딩 존을 배포하는 네 가지 접근 방법이 있�
 
 ![클라우드 아이덴티티 가입 페이지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 비즈니스 도메인 이름을 지정해야 합니다. 이것은 우리의 Google Cloud 조직 이름이 될 것입니다.
 
@@ -106,7 +182,18 @@ Google 클라우드 랜딩 존을 배포하는 네 가지 접근 방법이 있�
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 슈퍼 관리자 계정 세부 정보를 입력해야 합니다. 이 이메일 주소는 Google Cloud Identity의 슈퍼-관리자가 될 것입니다. Google Cloud Identity Admin 콘솔에 로그인하는 데 사용할 이메일 주소입니다. (Google Cloud 콘솔과는 구별되어야 합니다.) 방금 전에 지정한 비즈니스 도메인과 관련된 이메일이어야 합니다. 예를 들어: mydomain.com의 Bob이 슈퍼 관리자라면, super-bob@mydomain.com과 같은 주소를 사용하는 것이 좋습니다.
 
@@ -116,7 +203,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 도메인 이름을 확인해야 합니다.
 
@@ -126,7 +224,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 도메인이 확인되면 Google Cloud 조직 리소스가 자동으로 생성됩니다. 이는 Google Cloud의 최상위 조직입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어드민 콘솔에서는 사용자를 만드는 것을 제안합니다. 그러나 Cloud Identity 어드민 콘솔이 아닌 Google Cloud 콘솔에서 진행하려고 합니다. 그래서 "Google Cloud 콘솔에서 설정" 링크를 클릭해주세요.
 
@@ -136,7 +245,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 ![Google Cloud 콘솔에서 설정](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 현재 이 단계에서 - Cloud Identity 관리자 콘솔에서 - 제안드리는 것이 있습니다:
 
@@ -148,7 +268,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 - 계정 복구 설정.
 - 암호 만료를 포함한 암호 정책 정의.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1단계가 완료되었습니다!
 
@@ -158,7 +289,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 구글 클라우드 설정으로 돌아가 Step 2로 이동할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_10.png" />
 
@@ -169,7 +311,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 <img src="/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_11.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 그러나 가장 쉬운 방법은 Google Cloud Setup의 "모든 그룹 생성" 버튼을 사용하여 그룹을 만드는 것입니다. 이렇게 하면 클라우드 ID에서 권장하는 그룹이 자동으로 할당됩니다.
 
@@ -179,8 +332,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 이제이 그룹에 사용자(멤버)를 추가할 수 있습니다. "Google 관리자 콘솔로 이동"을 클릭하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![그룹에 사용자 추가](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_13.png)
 
@@ -188,10 +351,20 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 ![샘플 사용자](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_14.png)
 
-이 사용자들은 자동 이메일을 받게 됩니다. 물론... 유효한 메일함이 있는 경우에만요! (이와 같은 데모용으로, 일반적으로 *@my-domain 전달 규칙을 설정해 유효한 이메일 계정으로 전달하곤 합니다.)
+이 사용자들은 자동 이메일을 받게 됩니다. 물론... 유효한 메일함이 있는 경우에만요! (이와 같은 데모용으로, 일반적으로 \*@my-domain 전달 규칙을 설정해 유효한 이메일 계정으로 전달하곤 합니다.)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 해당 그룹에 그들을 추가하겠습니다:
 
@@ -201,7 +374,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_16.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 "관리 액세스로 계속"을 클릭할 수 있습니다.
 
@@ -211,8 +395,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 구글 클라우드 설정은 이전에 생성한 각 그룹에 할당될 역할을 제안할 것입니다. "저장 및 액세스 권한 부여"를 클릭하여 진행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_17.png)
 
@@ -222,8 +416,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 청구 계정은 소비한 모든 Google Cloud 자원을 지불하는 데 사용됩니다. 자원 소비(및 비용)은 프로젝트 수준에서 누적되며, 각 프로젝트는 청구 계정과 연결됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 해당 데모를 위해 사용할 기본 청구 계정 유형인 온라인("셀프 서비스") 유형으로 계속하겠습니다. 자격을 갖춘 조직은 나중에 청구서 청구 계정으로 변경할 수 있습니다.
 
@@ -231,7 +435,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_19.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 청구 계정 설정을 완료하려면 결제 카드 정보를 입력해야 합니다. 걱정하지 마세요. 아직 요금이 청구되지는 않을 거에요. 참고로 Google Cloud 초기 설정에는 300달러의 무료 크레딧이 제공됩니다.
 
@@ -241,7 +456,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_21.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예산 및 알림을 클릭한 후 예산 생성을 선택하세요. 예산 이름을 지정하고 시간 범위를 설정하고 적용할 프로젝트를 선택하세요 ("모두" 프로젝트가 기본 설정입니다).
 
@@ -251,7 +477,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_23.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 5 - 리소스 계층구조와 액세스
 
@@ -261,7 +498,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_24.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한동안 이 기사를 완성하는 데 방해가 된 것은 할당량 요청 단계였어요. Google은 2영업일 이내에 요청에 대응해야 한다고 했지만 작성 시점에서 할당량 상승을 처리하는 구글 프로세스가 조금 문제가 있었네요. 그래서 수동 개입이 필요했죠! 구글 친구들이 이 문제가 곧 해결될 것이라고 말해 주었어요.
 
@@ -271,7 +519,18 @@ Cloud Identity Admin 콘솔에 로그인하십시오:
 
 목록에서 계층을 선택하면 콘솔에서 생성된 계층이 어떻게 보일지 미리 보여 줍니다. 함께 비교해 볼까요…
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단하고 환경 중심의 계층 구조입니다:
 
@@ -300,7 +559,18 @@ Org/
 - 여기서 Prod와 Nonprod에서 두 개의 공유 VPC 디자인을 구현하고 있음에 주목하세요. Common에는 각각의 호스트 프로젝트가 있습니다.
 - 이 디자인은 환경 당 메트릭 범위를 갖는 모니터링 디자인을 구현합니다. 각 메트릭 범위를 호스팅할 프로젝트가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단하고 팀 중심적인 등급체계:
 
@@ -330,7 +600,18 @@ Org/
 - 여기서 최상위 분류는 환경이 아닌 팀에 따라 구성됩니다.
 - 각 팀은 그런 다음 세 환경을 위한 폴더로 나뉩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 조직/
@@ -414,7 +695,18 @@ Org/
         └── 개발/
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 여기서는 비즈니스 단위, 상위 레벨의 팀, 환경을 카테고리화합니다.
 
@@ -428,7 +720,18 @@ Org/
 
 상당한 규모의 조직의 경우 환경 중심의 계층 구조 (환경 → 비즈니스 단위 → 팀)을 선호하는 편이며, 이 데모에서 이 계층 구조를 사용하려고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리는 계층 구조의 폴더와 프로젝트에 IAM 역할을 적용해야 합니다. Google Cloud 설정은 각 그룹에 추가해야 할 역할을 권장합니다. 그러나 이번에는 조직 수준에서만 적용하는 것이 아니라 리소스 계층에 적용합니다. IAM 정책은 계층 구조를 따라 상속되며 권한이 누적됩니다. 따라서 유효한 액세스는 각 수준에서 상속된 정책과 가장 낮은 수준의 정책을 합한 것입니다.
 
@@ -438,7 +741,18 @@ Google Cloud 설정 권장 사항은 다음과 같을 것입니다:
 
 "드래프트 구성 확인"을 클릭해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6 - 중앙 집중식 로깅
 
@@ -448,7 +762,18 @@ Google Cloud 설정 권장 사항은 다음과 같을 것입니다:
 
 시작 로깅 구성을 클릭하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_28.png" />
 
@@ -458,10 +783,20 @@ Google Cloud 설정 권장 사항은 다음과 같을 것입니다:
 
 또한 BigQuery로 로그 라우팅 및 아카이브 로깅(예: 규정 준수 목적)을 더 저렴한 GCS 버킷으로 라우팅할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 Markdown 형식으로 테이블 태그를 변경해주세요.
-
 
 Go ahead and “Confirm draft configuration.”
 
@@ -471,8 +806,18 @@ Go ahead and “Confirm draft configuration.”
 
 In this step, we set up a pair of shared virtual private cloud (VPC) networks, as per the dual shared VPC pattern: one in prod, and one in non-prod.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크다운 형식의 이미지 테그를 변경하세요.
 
@@ -484,7 +829,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 
 추천드리는 것은:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 한 지역에서 첫 번째 프로드 Subnet을 생성하고, 다른 지역에서 두 번째 프로드 Subnet을 생성하세요. 이렇게 함으로써 지역적인 Redundancy가 필요한 이중 지역 아키텍처를 배포할 수 있습니다. 또한 제가 여기서 설명한 대로 99.99% SLA를 갖는 HA Hybrid Connectivity를 구성할 수 있습니다.
 - 비 프로드에도 비슷한 두 개의 Subnet을 구성하세요. 참고: 비 프로드 VPC에는 프로드 VPC에 선택한 IP CIDR 범위와 동일한 것을 사용할 수 있습니다. 이는 IP가 특정 VPC 내에서만 고유해야 한다는 점 때문입니다. 그러나 이로 인해 프로드 Subnet을 비프로드 Subnet에 피어링할 수 없게 되지만, 이 분리를 강제하고 싶을 수도 있습니다.
@@ -500,7 +856,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 
 “서비스 프로젝트로 계속하기”를 클릭하세요. 이렇게 하면 우리가 이전에 구성한 프로젝트를 서비스 프로젝트로 연결할 수 있는 화면으로 이동합니다. 이를 통해 이러한 프로젝트가 공유 VPC를 사용할 수 있도록 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, "확인된 초안 설정"을 클릭하세요.
 
@@ -510,7 +877,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_34.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작하면 다음과 같은 화면을 볼 수 있습니다:
 
@@ -520,7 +898,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 
 ## 배포 또는 다운로드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 중요한 선택이 있습니다. 지금까지 구성한 모든 것을 적용할 수 있는 콘솔에서 직접 배포할 수 있습니다.
 
@@ -530,7 +919,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 
 여기서 위에서 한 모든 단계는 동일합니다. 그러나 콘솔에서 배포하는 대신에 Terraform을 다운로드합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_36.png" />
 
@@ -542,7 +942,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 - 기본 클릭 옵션 설정에 추가적인 사용자 정의 및 구성을 추가할 수 있기를 원합니다.
 - Fabric FAST와 같이 더 정교한 엔터프라이즈 LZ 배포로 진행하기에 충분히 강력한 플랫폼 팀이 필요하지는 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 장점
 
@@ -558,7 +969,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 - Terraform 기술이 약간 필요합니다.
 - 자동화된 CI/CD 파이프라인, 테넌트 팩토리 또는 프로젝트 팩토리를 생성하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Terraform 설정 파일 다운로드하기
 
@@ -568,7 +990,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 
 그런 다음, 테라폼 구성 파일을 다운로드하세요. 이 파일은 terraform.tar.gz로 로컬 기기에 다운로드됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테라폼을 클라우드 셸에 업로드하세요
 
@@ -579,7 +1012,18 @@ Google Cloud 설정은 각 VPC마다 쌍으로 서브넷을 구성해야 합니�
 
 이 데모를 위해 간단하게 클라우드 셸을 사용하겠습니다. 테라폼으로 기본 구성을 배포하는 데 필요한 모든 것이 미리 설치되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드 셸에 인증하고 Terraform 구성을 위한 폴더를 만들어봅시다:
 
@@ -599,7 +1043,18 @@ cd $_
 tar -xzvf ../terraform.tar.gz
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 폴더에 이 파일들이 있습니다:
 
@@ -626,7 +1081,18 @@ gcloud services enable cloudidentity.googleapis.com
 gcloud services enable orgpolicy.googleapis.com
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 조직에서 현재 가지고 있는 프로젝트를 간단히 살펴봅시다:
 
@@ -636,7 +1102,18 @@ gcloud services enable orgpolicy.googleapis.com
 
 이제 백엔드.tf 파일에서 상태 유지에 사용될 버킷을 살펴보겠습니다. 실제로 제 버킷 이름을 더 의미 있는 것으로 변경했습니다. 또한 전 세계적으로 고유한 이름이어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_39.png" />
 
@@ -648,7 +1125,18 @@ gsutil mb gs://tfstate-28844
 
 다음을 통해 만들어졌는지 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_40.png" />
 
@@ -679,7 +1167,18 @@ gh repo create gcp-demos-foundation-setup --private --source=.
 git push -u origin master
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요. 이제 우리 코드는 안전하게 추적되어 있고 팀원들에게 제공됩니다.
 
@@ -689,7 +1188,18 @@ git push -u origin master
 
 조직 관리자 그룹이 시드 프로젝트에서 적절한 역할을 부여받았는지 확인해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 gcloud 조직 add-iam-policy-binding $ORG_ID \
@@ -714,21 +1224,39 @@ gcloud 프로젝트 add-iam-policy-binding $PROJECT_ID \
 terraform init
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 명령의 출력입니다.
 
-
 ![2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_42](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_42.png)
-
 
 GCS 버킷의 콘솔 뷰를 새로고침하면 이제 버킷에 Terraform 상태 파일이 생성된 것을 확인할 수 있습니다:
 
-
 ![2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_43](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_43.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 잘 진행되고 있어요.
 
@@ -741,7 +1269,18 @@ terraform plan -out=plan.out
 
 ![이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_44.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 이제 진실의 순간입니다. 마침내 저희의 랜딩 존을 배포할 수 있습니다!
 
@@ -754,7 +1293,18 @@ terraform apply plan.out
 
 ![랜딩 존 배포 이미지](/assets/img/2024-06-19-LandingZoneDeploymentGoogleCloudAdoptionSeries_45.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제, 만든 모든 것을 파괴하고 싶다면, 이렇게 하면 됩니다:
 
@@ -766,7 +1316,18 @@ terraform destroy
 
 한 가지 주의할 점: 클라우드 설정에서의 Terraform 구성에는 여러 하드코딩된 프로젝트 ID가 포함되어 있습니다. 위에서 설명한대로 LZ를 파괴하면 이러한 프로젝트 ID가 즉시 해제되지 않습니다. 결과적으로, 단순히 Terraform 구성을 다시 적용할 수 없습니다. 다시 적용하려면 프로젝트 ID를 변경해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3 — 클라우드 기반 패브릭 FAST
 
@@ -776,7 +1337,18 @@ terraform destroy
 
 ## 방법은?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실은, 이 주제에 대해 이전에 상세히 다룬 바 있습니다. 그래서 여기서 다시 다루지 않겠습니다.
 
@@ -787,7 +1359,18 @@ terraform destroy
 - LZ 디자인
 - LZ "기술 온보딩"을 위한 LZ 코어 팀 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에는 LZ를 실제로 배포하는 방법을 안내했습니다.
 
@@ -797,7 +1380,18 @@ terraform destroy
 
 # 가기 전에
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 관심 있는 사람들에게 공유해주세요. 그들에게 도움이 될 수도 있고, 저에게 큰 도움이 됩니다!
 - 박수를 좀 주세요! 여러 번 박수 치는 거, 알고 계시죠?
@@ -819,10 +1413,21 @@ terraform destroy
 - 구글 클라우드 아키텍처 프레임워크
 - 엔터프라이즈 기본 토대
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 시리즈 탐색
 
 - 시리즈 전체 내용 및 구조
-- 이전: 랜딩 존 기술 입사 - "어떻게" 
+- 이전: 랜딩 존 기술 입사 - "어떻게"
 - 다음: 클라우드 소비자 및 테넌트를 활성화하기

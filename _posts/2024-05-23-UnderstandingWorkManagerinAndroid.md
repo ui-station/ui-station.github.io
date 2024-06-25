@@ -10,7 +10,6 @@ originalTitle: "Understanding Work Manager in Android"
 link: "https://medium.com/@riztech.dev/understanding-work-manager-in-android-aa970cbf654d"
 ---
 
-
 ![Work Manager](/assets/img/2024-05-23-UnderstandingWorkManagerinAndroid_0.png)
 
 워크 매니저(Work Manager)는 안드로이드 젯팩(Android Jetpack)의 중요한 구성 요소로, 백그라운드 작업의 미룰 수 있고 보장된 실행을 간단하게 만들기 위해 설계되었습니다. 앱이 종료되거나 장치가 다시 시작되더라도 실행이 보장되어야 하는 작업을 수행해야 하는 경우, Work Manager는 견고하고 유연하며 효율적인 솔루션을 제공합니다. 다양한 안드로이드 버전에서 작동하는 통합 API를 제공하여 현대적인 안드로이드 개발에 필수적인 도구입니다.
@@ -24,8 +23,18 @@ link: "https://medium.com/@riztech.dev/understanding-work-manager-in-android-aa9
 - 작업 연결: Work Manager를 사용하면 여러 작업을 연결하고 복잡한 작업 시퀀스를 관리할 수 있습니다. 이는 이전 작업이 완료된 후에 다음 작업이 시작되어야 하는 종속 작업에 유용합니다.
 - 모니터링 기능:LiveData 또는 콜백 리스너를 통해 작업 상태를 모니터링하고 작업 실행에 대한 제어 및 통찰력을 제공할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Work Manager 시작하기
 
@@ -37,18 +46,38 @@ link: "https://medium.com/@riztech.dev/understanding-work-manager-in-android-aa9
 implementation "androidx.work:work-runtime-ktx:2.7.1"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해주세요.
-
 
 | Header One | Header Two | Header Three  |
 | ---------- | ---------- | ------------- |
 | Row 1      | Data 1     | Description 1 |
 | Row 2      | Data 2     | Description 2 |
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 제약 조건 처리: 작업에 제약 조건을 지정할 수 있습니다. 네트워크 연결이 필요한 경우와 같이:
 
@@ -67,7 +96,18 @@ WorkManager.getInstance(context).enqueue(workRequest)
 
 1. 주기적인 작업: 정기적으로 반복되어야 하는 작업에는 PeriodicWorkRequest을 사용하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 val periodicWorkRequest = PeriodicWorkRequestBuilder<MyWorker>(1, TimeUnit.HOURS)
@@ -90,7 +130,18 @@ WorkManager.getInstance(context)
 
 3. Observing Work Status: You can observe the status of your work requests using LiveData:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 WorkManager.getInstance(context).getWorkInfoByIdLiveData(workRequest.id)
@@ -107,8 +158,18 @@ Work Manager는 안드로이드 애플리케이션의 백그라운드 작업을 
 
 ## 1. 적절한 유형의 Work Request 선택하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **일회성 작업 요청 대 비주기적 작업 요청:**
 
@@ -119,7 +180,18 @@ Work Manager는 안드로이드 애플리케이션의 백그라운드 작업을 
 
 제약 조건을 현명하게 사용하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 필요한 제약 조건만 설정하여 작업 수행이 불필요하게 지연되지 않도록 합니다. 일반적인 제약 조건으로는 네트워크 가용성, 장치 충전 상태 및 배터리 레벨이 있습니다.
 - 예시:
@@ -135,7 +207,18 @@ val constraints = Constraints.Builder()
 
 긴 실행 시간이 걸리는 작업을 피하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 긴 실행 시간이 소요되는 작업을 작은 관리 가능한 조각으로 나눠보세요. 작업이 상당한 시간이 걸릴 것으로 예상된다면, 여러 작업 요청으로 분할하고 연결하는 것을 고려해보세요.
 
@@ -145,19 +228,44 @@ val constraints = Constraints.Builder()
 
 ## 4. 작업 체인 관리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의존 작업 체인:
 
 - 의존 작업을 연속적으로 실행하도록 작업 체이닝을 사용하십시오. 이는 한 작업의 출력이 다음 작업에서 필요한 워크플로우에 유용합니다.
 
 ```js
-WorkManager.getInstance(context).beginWith(workRequest1).then(workRequest2).enqueue();
+WorkManager.getInstance(context)
+  .beginWith(workRequest1)
+  .then(workRequest2)
+  .enqueue();
 ```
 
 체인된 작업에서 오류 처리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 워커 클래스에서 적절한 오류 처리를 구현하여 연쇄적으로 발생하는 실패를 관리하세요. 필요한 경우 Result.retry()를 사용하여 작업을 다시 예약하세요.
 
@@ -167,7 +275,18 @@ WorkManager.getInstance(context).beginWith(workRequest1).then(workRequest2).enqu
 
 - Kotlin의 Flow를 활용하여 작업 요청의 상태를 관찰하세요. 이는 LiveData보다 더 현대적이고 유연한 접근 방식을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 import kotlinx.coroutines.flow.collect
@@ -192,7 +311,18 @@ lifecycleScope.launch {
 
 - 작업 요청에 태그를 할당하여 특정 작업을 쉽게 관리하고 쿼리할 수 있습니다. 특히 특정 작업 세트를 취소하거나 관찰하는 데 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 val workRequest = OneTimeWorkRequestBuilder<MyWorker>()
@@ -206,19 +336,45 @@ val workRequest = OneTimeWorkRequestBuilder<MyWorker>()
 
 ## 7. 고유한 작업 요청 처리하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 유효한 작업에 고유한 작업 사용하기:
 
 - 중복 작업을 피하기 위해 고유한 작업 요청을 사용하세요. enqueueUniqueWork을 사용하면 특정 작업 요청의 인스턴스가 한 번에 하나만 실행됩니다.
 
 ```js
-WorkManager.getInstance(context).enqueueUniqueWork("고유작업이름", ExistingWorkPolicy.REPLACE, workRequest);
+WorkManager.getInstance(context).enqueueUniqueWork(
+  "고유작업이름",
+  ExistingWorkPolicy.REPLACE,
+  workRequest
+);
 ```
 
 ## 8. 자원 사용량 최적화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리소스 영향 최소화:
 
@@ -229,7 +385,18 @@ WorkManager.getInstance(context).enqueueUniqueWork("고유작업이름", Existin
 
 - Work Manager의 내장 최적화 기능을 활용하여 배터리 및 네트워크를 고려한 스케줄링을 통해 효율적인 작업 실행을 보장하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 9. 테스트 및 디버깅
 
@@ -239,7 +406,18 @@ WorkManager.getInstance(context).enqueueUniqueWork("고유작업이름", Existin
 
 로깅 및 디버깅 도구 사용하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 작업 실행 문제를 해결하기 위해 로깅 및 Work Manager의 디버깅 도구를 활용해보세요. adb shell dumpsys activity service를 사용하면 Work Manager의 내부 상태를 확인할 수 있습니다.
 

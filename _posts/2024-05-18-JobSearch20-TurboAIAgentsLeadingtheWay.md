@@ -3,14 +3,12 @@ title: "구직 20-터보 AI 에이전트가 선두를 달리다"
 description: ""
 coverImage: "/assets/img/2024-05-18-JobSearch20-TurboAIAgentsLeadingtheWay_0.png"
 date: 2024-05-18 19:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-JobSearch20-TurboAIAgentsLeadingtheWay_0.png
 tag: Tech
 originalTitle: "Job Search 2.0-Turbo: AI Agents Leading the Way"
 link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177"
 ---
-
-
 
 ![이미지](/assets/img/2024-05-18-JobSearch20-TurboAIAgentsLeadingtheWay_0.png)
 
@@ -22,8 +20,18 @@ link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177
 - 취업 과정 최적화를 위한 AI 에이전트의 중요한 역할 (무엇..)
 - 과정에 AI 에이전트 기능 소개 (어떻게..)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 직접 해보기: AI 기반 취업 검색 엔진 구현
 
@@ -45,7 +53,18 @@ link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177
 
 취업 검색은 어렵고 시간이 많이 소요될 수 있습니다. 취업을 위해 구인 공고를 탐색하는 데는 몇 주에서 몇 달이 걸릴 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Job Search](/assets/img/2024-05-18-JobSearch20-TurboAIAgentsLeadingtheWay_1.png)
 
@@ -55,7 +74,18 @@ link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177
 
 취업을 위한 성공 요소 중 하나는 제출된 지원서의 수입니다. 한 연구 결과에 따르면, 적절한 직책을 찾기 위해 필요한 평균 지원서 수는 100~200건 이상이며, 시장, 경제 상황 및 지원자의 전문성에 따라 이상치가 발생할 수 있습니다. 취업을 위해 지원서를 작성하고 노력하는 데 드는 양이 많기 때문에, 효율적이고 확장 가능한 해결책을 개발하여 수천 시간을 절약해 주는 동기가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 모든 구직자가 직면하는 공통적인 도전과제 (왜 그럴까요..)
 
@@ -65,7 +95,18 @@ link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177
 
 적절한 역할을 찾는 데 걸리는 시간은 개인의 경험, 지원 시기, 그리고 구직 시장에서 기술이 얼마나 요구되는지에 따라 다릅니다. 그리고 적용하는 산업 및 기업에 영향을 미치는 등의 제어할 수 없는 요소들이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 AI 기반의 취업 검색 엔진을 구축하는 과정에서 다루는 주요 과제들은 주로 취업 검색 및 매칭 과정을 최적화하는 데 초점을 맞추고 있습니다. 따라서 아래와 같은 주요 과제를 해결하고 있습니다:
 
@@ -78,7 +119,18 @@ link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177
 
 열거된 과제들은 반복적인 작업을 포함하며, 강력한 추론 능력과 명확한 실행 가능한 목록에 도달하기 위해 소화해야 할 대량의 콘텐츠를 요구합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 작업은 LLM 파워에 기반을 둔 에이전트를 채용하는 주요 특성을 완벽하게 충족시킵니다.
 
@@ -88,7 +140,18 @@ link: "https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177
 
 수백 명의 구직자가 구인 광고를 검토하고 광고 회사와 그들의 채용 공고를 심층적으로 평가하며, 마지막으로 귀하의 요구에 가장 적합한 권장 사항을 맞춤 제작하는 것의 최종 결과를 상상해보세요. 온라인 구인 광고를 검토하는 데 소요되는 시간을 크게 줄이는 자동화 및 추론에 기초한 완전한 엔드 투 엔드 프로세스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 에이전트의 능력을 분석해 보겠습니다. 일자리 검색과 추천을 자동화하고 개인화하는 데에서의 능력에 초점을 맞춥니다. 다음 섹션에서 엔진을 구축하는 것에 대해 더 자세히 살펴볼 것입니다. 현재는 AI 에이전트가 갖고 있는 장점에 초점을 맞춥니다.
 
@@ -98,7 +161,18 @@ AI 에이전트의 능력을 분석해 보겠습니다. 일자리 검색과 추�
 
 2. 에이전트는 상당량의 정보를 소화할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 모델의 콘텍스트 창 크기가 점점 커지면서(1밀리초 이상), 때로는 무한한 콘텍스트 창에 이를 정도로, 에이전트들이 소화하고 논할 수 있는 정보량은 계속해서 증가하고 있습니다. 제대로 분배된다면, 에이전트들은 무한한 양의 정보를 분석하고 사용자에게 최종 요약된 버전을 제공할 수 있습니다.
 
@@ -108,7 +182,18 @@ AI 에이전트의 추론 능력에는 제한이 있을 수 있지만, 점점 �
 
 4. 에이전트가 결과를 요약하고 구조화할 수 있습니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대량의 정보를 처리할 수 있는 도구는 가치가 있지만, 그 정보를 효율적이고 구조화된 방식으로 전달하지 못하는 경우 가치가 상실됩니다. AI 에이전트는 환각에 취약할 수 있으며, 이는 정보를 요약하고 보고하는 방식에 영향을 미칠 수 있습니다. 잘 설계된 프롬프트 및 추가적인 유효성 검사 단계를 제공하여 에이전트가 올바르고 신뢰할 수 있는 결과로 작업을 수행하도록 보장합니다.
 
@@ -118,7 +203,18 @@ AI 에이전트의 추론 능력에는 제한이 있을 수 있지만, 점점 �
 
 6. 에이전트는 확장 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대규모 요소들을 병렬 실행 작업으로 동적 할당하는 것은 매우 강력합니다. 이 방식은 문제를 작은 조각으로 나누고 별도의 요소들이 작업에 참여할 수 있는 경우 빛을 발합니다. 다수의 요소들이 일괄 작업에 할당될 수 있으며, 각 요소는 과정의 한 단계를 처리하고 결과를 다음 단계에 넘기는 역할을 맡습니다. 마지막으로, 요소들은 결과를 모아 최종 요약 및 구조화를 수행할 수 있습니다. 이러한 방식은 다중 채널이나 원본을 통해 구인 광고를 빠르고 확장 가능하게 처리할 수 있는 방법 중 하나입니다.
 
@@ -128,7 +224,18 @@ AI 에이전트의 추론 능력에는 제한이 있을 수 있지만, 점점 �
 
 모든 AI 기능을 활용하는 솔루션을 보장하기 위해, 프로세스의 각 단계에 요소를 도입합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 에이전트들은 구인 광고에 관한 정보를 검색하기 위해 도구를 사용할 것입니다. 초기 구인 공고는 사용자 쿼리를 기반으로 검색됩니다.
 - 에이전트들은 사용자의 이력서와 쿼리를 기반으로 구인 공고에 대한 등급 및 그에 대한 이유를 제공할 것입니다.
@@ -141,7 +248,18 @@ AI 에이전트의 추론 능력에는 제한이 있을 수 있지만, 점점 �
 
 이번 섹션에서는 완벽한 구현 단계별로 안내하며 최종 결과를 분석하고 잠재적 개선 사항을 살펴볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프로젝트 구조
 
@@ -152,7 +270,6 @@ AI 에이전트의 추론 능력에는 제한이 있을 수 있지만, 점점 �
 - models 디렉토리: 기대 출력 스키마를 정의하는 모델을 포함
 - utils 디렉토리: 필요한 지원 함수를 포함
 - agents_factory.py 및 tasks_factory.py: 구성에 기반하여 에이전트 및 작업의 인스턴스를 동적으로 생성하는 데 사용됩니다.
-
 
 project/
 ├── configs
@@ -176,8 +293,18 @@ project/
 │
 └── main.py # 메인
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프레임워크
 
@@ -187,9 +314,20 @@ project/
 
 ```js
 pip install 'crewai[tools]'
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `crewai[tools]` 패키지 설치는 애플리케이션을 실행하는 데 필요한 모든 패키지를 포함해야 합니다.
 
@@ -199,7 +337,18 @@ pip install 'crewai[tools]'
 
 에이전트는 할당된 작업을 수행하기 위해 일련의 도구가 필요합니다. 도구를 에이전트에 할당하는 것은 요청 흐름 아키텍처를 어떻게 정의하고 정보가 한 에이전트에서 다른 에이전트로 전송되는지에 따라 달라집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 crewAI 내에서 이미 사용 가능한 두 가지 도구를 사용하여 우리의 사용 사례를 테스트해야 합니다.
 
@@ -209,7 +358,18 @@ crewAI 내에서 이미 사용 가능한 두 가지 도구를 사용하여 우�
 
 우리 애플리케이션의 범위 내에서는 이미 검색된 JSON 응답 샘플 sample_jobs.json을 사용하여 작업 세부 정보 목록을 갖고 솔루션을 집중적으로 보여주도록 할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생성된 이력서 샘플 **sample_resume.txt**은 에이전트가 제공하는 평점을 테스트하기 위해 사용할 수 있습니다.
 
@@ -219,7 +379,18 @@ crewAI 내에서 이미 사용 가능한 두 가지 도구를 사용하여 우�
 
 API 키가 **.env** 파일에 정의되어 있는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 SERPER_API_KEY=<>
@@ -233,17 +404,39 @@ from crewai_tools import FileReadTool, SerperDevTool
 
 새로운 기능을 빠르고 간단하게 애플리케이션 범위를 확장하기 위해 툴을 추가하고 에이전트에 할당하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터
 
-샘플_jobs.json은 사용 사례의 테스트 데이터로 합성으로 생성된 샘플 구인 광고 목록의 JSON 응답을 포함하고 있습니다.
+샘플\_jobs.json은 사용 사례의 테스트 데이터로 합성으로 생성된 샘플 구인 광고 목록의 JSON 응답을 포함하고 있습니다.
 
 기사에 제시된 구인 데이터는 JSON 형식으로 표시되지만, 에이전트들이 구문 분석할 수 있는 다른 형식으로 쉽게 변환될 수 있습니다. 예를 들어 PDF 또는 Excel 파일로 저장된 간단한 텍스트, 직접 수집한 구인 설명 데이터 문서 등이 있습니다.
 
 검색 프로세스를 완전히 활용하려면 에이전트들이 작업 플랫폼 API와 상호 작용하는 도구를 사용하여 데이터 수집 프로세스를 자동화하고 확장해야 합니다. 이러한 공식적인 구인 검색 API 제공업체의 예로는 Glassdoor나 Jooble이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 {
@@ -283,14 +476,25 @@ Github에서 파일의 전체 내용을 확인할 수 있습니다.
 
 # 작업
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업은 해당 작업을 완료할 수 있는 적절한 도구와 기술을 갖춘 에이전트에게 배정됩니다.
 
 각 작업은 설명, 예상 출력 및 작업을 완료할 책임이 있는 에이전트로 정의됩니다.
 
 ```js
-# configs/tasks.yml 
+# configs/tasks.yml
 
 job_search:
   description: |
@@ -326,10 +530,21 @@ structure_results:
 
 TasksFactory 클래스를 사용하여 모든 필요한 작업을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-# project/tasks_factory.py 
+# project/tasks_factory.py
 
 from textwrap import dedent
 from typing import Optional
@@ -373,7 +588,7 @@ class TasksFactory:
 에이전트는 선택된 작업을 가장 잘 완료하기 위해 역할, 목표 및 소개가 정의됩니다.
 
 ```js
-# configs/tasks.yml 
+# configs/tasks.yml
 
 job_search_expert:
   role: 최고의 취업 전문가
@@ -396,12 +611,23 @@ summarization_expert:
   backstory: 필요한 대로 출력물에 보고하는 방법과 올바른 구조를 알고 있는 최고의 보고 전문가
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 태스크 팩토리와 유사하게, 에이전트 팩토리 클래스는 설정에 기반하여 필요한 모든 AI 에이전트를 생성하는 데 사용됩니다.
 
 ```python
-# project/agents_factory.py 
+# project/agents_factory.py
 
 from typing import Any, List, Optional
 
@@ -443,7 +669,18 @@ class AgentsFactory:
 
 LLM 선택에 관한 옵션 범위는 계속 확장되어 매주 새로운 모델이 출시됩니다. 이 설정에서는 특히 gpt-4–32k 버전 0613의 Azure Open AI 모델과 작업하게 될 것입니다. 그러나 선호하는 LLM으로 코드를 조정하고 테스트해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Azure OpenAI 모델을 사용하려면 API KEY와 ENDPOINT가 필요합니다. Azure는 이러한 모델을 설정하고 배포하기 위한 훌륭한 문서를 제공합니다.
 
@@ -457,7 +694,18 @@ AZURE_OPENAI_ENDPOINT = <>
 
 아래 코드를 사용하여 선택한 모델을 가져와 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 from langchain_openai import AzureChatOpenAI
@@ -485,21 +733,32 @@ from pydantic import BaseModel
 class Job(BaseModel):
     id: Optional[str]
     location: Optional[str]
-    title: Optional[str] 
+    title: Optional[str]
     company: Optional[str]
     description: Optional[str]
     jobProvider: Optional[str]
     url: Optional[str]
-    rating: Optional[int] 
-    rating_description: Optional[str] 
-    company_rating: Optional[int] 
-    company_rating_description: Optional[str]  
-    
-class JobResults(BaseModel): 
+    rating: Optional[int]
+    rating_description: Optional[str]
+    company_rating: Optional[int]
+    company_rating_description: Optional[str]
+
+class JobResults(BaseModel):
     jobs: Optional[List[Job]]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 모든 것을 함께 넣어보자: 승무원
 
@@ -608,7 +867,7 @@ if __name__ == "__main__":
     print("-------------------------------")
     query = input(
         dedent("""
-      찾고 있는 직업의 특성 목록을 제공하세요: 
+      찾고 있는 직업의 특성 목록을 제공하세요:
     """)
     )
 
@@ -628,7 +887,18 @@ if __name__ == "__main__":
     print(result)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업 실행 후에는 JSON 출력이 정의된 모델 스키마로 유효성이 검사되도록 검증 확인을 실행합니다. 또한, 에이전트가 필요한 구조를 반환하는 것을 보장하기 위해 추가적인 유효성 검사 루프를 추가할 수도 있습니다. 이 완전한 프로세스를 구현하는 세부 정보에 대해 다루지는 않겠지만, 관심이 있다면 이 주제에 대한 훌륭한 글을 확인해보세요.
 
@@ -640,7 +910,18 @@ if __name__ == "__main__":
 python main.py
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 초기 에이전트 쿼리에는 다음을 입력했습니다.
 
@@ -654,7 +935,18 @@ python main.py
 
 Output:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 터미널 결과를 보면 첫 번째 에이전트가 성공적으로 실행되어 도구를 사용하여 작업 목록 콘텐츠를 검색했습니다.
 
@@ -664,8 +956,18 @@ Output:
 
 ![이미지2](/assets/img/2024-05-18-JobSearch20-TurboAIAgentsLeadingtheWay_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발자님의 진행 상황을 보여주는 상세한 디버깅 정보를 건너뛰고 최종 결과로 넘어가겠습니다.
 
@@ -674,12 +976,23 @@ Output:
 이제 해당 평가가 실제로 사용자 이력서와 일치하는 과정을 반영하는지 더 테스트해 보려면 쿼리를 다음과 같이 조정해보겠습니다
 
 ```js
-찾고 있는 직업의 특성 목록을 제공해 주세요: 
+찾고 있는 직업의 특성 목록을 제공해 주세요:
 
 미국의 웹 개발자 직업
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웹 개발자 역할을 요청하면서 기계 학습 및 데이터 과학 포지션에 최적화된 이력서를 갖고 계시다가 평가가 실제로 낮아졌다는 것을 관찰했습니다.
 
@@ -689,7 +1002,18 @@ Output:
 
 # 요약
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 전통적으로 시간이 많이 소요되는 구직 과정에 AI 에이전트를 도입하는 것이 어떤 엄청난 영향을 미치는지에 대해 논의했습니다. 특히, 온라인 구인 광고와 요구 사항을 평가하고 매칭하는 단계에 초점을 맞췄습니다. 우리는 구직 과정의 주요 도전과제를 살펴보고, 인간이 완료하는 데 주로 몇 주, 아니면 몇 달이 걸릴 작업들을 AI 에이전트가 몇 초만에 수행할 수 있는 위치에 AI 에이전트를 위치시켰습니다. 마지막으로, 사용자에 대한 적합한 직업을 찾도록 작업하는 AI 에이전트를 자동화하는 데 필요한 코드를 구현했으며, 여러 도구를 활용하여 작업을 완료했습니다.
 
@@ -699,7 +1023,18 @@ Output:
 
 본 문서에서 논의된 사용 사례는 AI 기반 구직 엔진에 추가될 수 있는 잠재적인 기능 중 일부에 불과합니다. 나는 구직 플랫폼이 결국 이러한 도구들을 통합하고 거대한 고객 기반을 활용할 것이라고 믿습니다. 이를 새로운 수준으로 끌어올릴 수 있는 것은 자신의 요구 사항에 맞게 맞춤형으로 제작된 크로스 플랫폼 솔루션을 직접 구축하는 것입니다. 선택한 모델을 통합하고 에이전트와 작업을 특정 요구 사항에 맞게 조정하는 유연성을 가질 수 있는것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 목록에 다시 그림카드를 설치할 것이 좋습니다.
 
@@ -715,7 +1050,18 @@ Output:
 
 더 많은 유사한 기사에 관심이 있으시다면 아래 목록을 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료
 
@@ -725,6 +1071,17 @@ Tao, Zhengwei 등. 대형 언어 모델의 이벤트 추론에 대한 포괄적 
 
 일자리를 얻기 위해 몇 번의 지원이 필요할까요? — movement to work. Movement to Work — Movement to Work는 영국 기업이 청소년 실업 문제를 해결하기 위해 고품질 직업 훈련과 청소년을 위한 직무 경험 기회를 제공을 통해 자발적으로 협력하는 단체입니다. (2022, 7월 15일). https://movementtowork.com/how-many-applications-does-it-take-to-get-a-job/
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 크루에이아이 - 다중 AI 에이전트 시스템을 위한 플랫폼

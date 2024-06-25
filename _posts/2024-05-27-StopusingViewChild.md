@@ -3,13 +3,12 @@ title: "ViewChild를 사용하지 말아요"
 description: ""
 coverImage: "/assets/img/2024-05-27-StopusingViewChild_0.png"
 date: 2024-05-27 16:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-StopusingViewChild_0.png
 tag: Tech
 originalTitle: "Stop using @ViewChild"
 link: "https://medium.com/@rk22mar/stop-using-viewchild-36479592bef7"
 ---
-
 
 네이티브 DOM 요소에 액세스하는 것은 웹 개발에서 기본적인 작업입니다. 그러나 현대적인 프레임워크는 다양한 전략을 활용하여 직접 DOM 액세스의 필요성을 최소화합니다. 예를 들어 Angular는 *ngIf와 같은 디렉티브를 사용하여 요소를 조건부로 추가하거나 제거하고 *ngFor를 사용하여 요소를 반복합니다. 이러한 기술은 직접적인 DOM 조작을 추상화하여 Angular이나 유사한 프레임워크에서 어플리케이션을 개발할 때 덜 걱정해도 되도록 만듭니다.
 
@@ -41,7 +40,18 @@ export class MapComponentComponent implements AfterViewInit {
 
 이 접근 방식은 작동하지만 세 가지 주요 문제점을 도입합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 템플릿에서 div 요소를 제거하면 코드가 깨져서 맵 기능을 재사용할 수 없게 됩니다.
 - 네이티브 요소에 대한 참조는 ngAfterViewInit 라이프사이클 후크 이후에만 사용할 수 있습니다.
@@ -75,7 +85,18 @@ export class GoogleMapDirective implements OnInit {
 <div class="map-container" appGoogleMap></div>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 사용 사례를 고려해 보겠습니다: 캔버스 요소에 도형이나 이미지를 그리는 것입니다. 간단한 방법은 @ViewChild를 사용하여 네이티브 요소에서 그리기 컨텍스트를 가져오는 것입니다.
 
@@ -129,6 +150,17 @@ export class CanvasDirective {
 
 좋아 보이죠? 그런데 기다려 보세요, 더 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 첫 두 문제를 해결했지만 속성 지시자는 여전히 여러 책임을 처리하고 있습니다. 더 분해할 수 있을까요? 다음 블로그에서 그것을 더 탐구해보겠습니다.

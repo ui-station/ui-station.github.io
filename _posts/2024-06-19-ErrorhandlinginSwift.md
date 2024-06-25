@@ -3,13 +3,12 @@ title: "Swift에서의 오류 처리"
 description: ""
 coverImage: "/assets/img/2024-06-19-ErrorhandlinginSwift_0.png"
 date: 2024-06-19 11:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-ErrorhandlinginSwift_0.png
 tag: Tech
 originalTitle: "Error handling in Swift"
 link: "https://medium.com/@blorenzop/error-handling-in-swift-f9ca87490e26"
 ---
-
 
 ## 사용자에게 경고하기 위해 do-catch 문과 사용자 정의 오류를 던지는 방법 (코드 예제와 함께)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@blorenzop/error-handling-in-swift-f9ca87490e26"
 
 간단한 throw 및 do-catch 문을 사용하여 간단한 에러 처리를 어떻게 달성할 수 있는지 보여드릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-에러핸들링인Swif_0.png" />
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@blorenzop/error-handling-in-swift-f9ca87490e26"
 
 일반적으로 enum이 시작하기에 가장 좋은 방법입니다. 네트워크 에러를 처리하고 싶다고 가정해보면, 아래 enum을 정의할 수 있습니다👇
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 열거형 NetworkError: 오류 {
@@ -55,7 +76,18 @@ func createRequest(from url: String, method: ApiMethod) throws -> ApiRequest {
 
 ## 오류 처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 사용자 정의 오류를 갖고 있고, 이를 throw하고 있습니다. 하지만, 이를 어떻게 잡을 수 있을까요?
 
@@ -72,7 +104,18 @@ do {
 
 가끔씩 우리는 잡은 오류 형식(또는 오류 값)에 따라 특정 작업을 트리거하길 원합니다. 이를 패턴을 사용하여 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 do {
@@ -81,7 +124,7 @@ do {
   // ...
 } catch {
   print(error)
-  // 
+  //
 }
 ```
 
@@ -112,7 +155,18 @@ func getUserFromJSON(_ jsonString: String) -> User? {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## try? & try!
 
@@ -125,7 +179,18 @@ let request = try? createRequest(from: "malformedurl", method: .GET)
 // request = nil
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한편, 때때로 특정한 던지기 함수가 런타임에서 실패하지 않을 것을 확신할 수 있습니다. 이런 경우에는 try!를 사용할 수 있습니다. 그리고 try?와 마찬가지로 do-catch 클로저를 사용할 필요가 없습니다.
 
@@ -137,7 +202,18 @@ let request = try! createRequest(from: "https://myapi.com/", method: .GET)
 
 에러를 던지는 것은 비동기 코드와 잘 작동합니다. 함수 선언에서 throws 키워드 앞에 async 키워드를 넣어주어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비동기 함수를 호출할 때는 try await (키워드 순서 스와이프)를 사용합니다.
 
@@ -153,7 +229,7 @@ do {
   // ...
 } catch {
   print(error)
-  // 
+  //
 }
 ```
 
@@ -161,8 +237,18 @@ do {
 
 에러 구조를 구축했으니, 이제 사용자들에게 무엇이 잘못되었는지 알려줄 필요가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="https://miro.medium.com/v2/resize:fit:592/1*cfrDQghry5EPpPhMSFFDaA.gif" />
 
@@ -171,15 +257,25 @@ do {
 
 우리는 Error enum에 해당 정보를 변수로 추가할 수 있습니다. 그러나 이미 모든 이 정보를 그룹화하기 위한 프로토콜이 있습니다: LocalizedError. 우리의 사용 사례에서 우리는 failureReason 및 recoverySuggestion 변수 만 구현하면 됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 enum OrderError: LocalizedError {
   case unexpected
   case outOfCoffee(coffee: Coffee)
   case minimumNotMet(currentPrice: Float)
-  
+
   var failureReason: String? {
     switch self {
     case .unexpected:
@@ -190,7 +286,7 @@ enum OrderError: LocalizedError {
       return "앱에서 주문하려면 최소 $10 이상 사용해야 합니다."
     }
   }
-  
+
   var recoverySuggestion: String? {
     switch self {
     case .unexpected:
@@ -216,7 +312,7 @@ struct AppError: Error {
     return "\(type.failureReason ?? ErrorConstants.defaultError) \n\n \(type.recoverySuggestion ?? ErrorConstants.defaultAction)"
   }
   // 필요한 만큼 많은 속성을 추가
-  
+
   init(type: LocalizedError, debugInfo: String? = nil) {
       self.type = type
       guard let debugInfo else { return }
@@ -227,8 +323,18 @@ struct AppError: Error {
 
 이렇게 함으로써 로깅 오류 로직을 한 곳에 중앙 집중화할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내 사용자 정의 AppError를 사용하여 경고를 표시하는 간단한 View 확장을 만들 수 있습니다.
 
@@ -269,7 +375,7 @@ struct OrderConfirmationView: View {
 final class ConfirmationViewModel: ObservableObject {
     var appError: AppError?
     var showError = false
-    
+
     func tryToPlaceOrder(_ order: Order) {
         do {
             try OrdersManager.shared.add(order)

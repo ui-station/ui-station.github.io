@@ -19,7 +19,18 @@ Clean Architecture의 주요 기반 중 하나는 레이어링입니다. 핵심 
 
 Clean Architecture의 규칙 중 하나는 의존성 원칙인데, 이것은 소스 코드 의존성이 내부로만 향한다는 것을 말합니다. 즉, 데이터 레이어에서 뭔가를 얻거나 수행하려면 항상 중간에 프록시 역할을 하는 것을 생성해야 하며, 일반적으로 그것이 유스케이스입니다. 유스케이스는 시스템이 수행해야 하는 단일 재사용 가능한 작업에 대한 비즈니스 로직을 캡슐화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 줄로 된 UseCase
 
@@ -38,7 +49,18 @@ class GetUserUseCase(
 
 GetUserUseCase에는 규칙이 없고 다른 레이어로의 프록시 역할만 수행합니다. 어떻게 하면 추가적인 로직 없이 모든 사용자에 대한 CRUD를 갖을 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 class GetUserUseCase(
@@ -88,8 +110,18 @@ class UpdateUserUseCase(
 
 조금 생각해 봅시다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시간이 흘러감에 따라 '한 줄짜리 사용 사례'의 기여로 인해 사용 사례의 수가 너무 많아질 수 있습니다. 프로젝트에는 50, 100, 200, 500개 이상의 사용 사례가 쌓일 수 있습니다. 이 많은 수의 사용 사례는 문제를 야기할 수 있습니다.
 
@@ -99,13 +131,25 @@ class UpdateUserUseCase(
 
 다중 저장소 아키텍처를 사용합니까? 이는 각 팀이 자체 저장소를 사용하여 다른 별도 프로젝트에서 작업하고, 이러한 모든 프로젝트가 라이브러리 형식으로 주 애플리케이션에 포함되는 구조를 말합니다. 이러한 경우 필요한 사용 사례가 다른 저장소에 있을 수 있으며 이를 찾고 재사용하는 것이 더 어려울 수 있습니다. 기본적으로 사용 사례를 찾기 위해 다양한 프로젝트를 검색해야 하며, 아마도 사용할 수 없을 것입니다. 사용 사례가 캡슐화되어 있을 수 있기 때문입니다. 만약 캡슐화되어 있지 않더라도 다른 팀이 변경을 가할 경우 코드가 깨질 수 있으므로 캡슐화돼 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [기능 모듈화](https://developer.android.com/topic/modularization)와 관련된 내용입니다. 기능의 코드 변경이 다른 기능 또는 애플리케이션에 영향을 미치지 않아야 합니다. 기능 모듈의 고유성(cohesion)을 높이고 싶다면, 내부(modifier)로 접근 가능하도록 하여 재사용성을 의도적으로 줄일 수 있습니다.
 
 의존성 규칙을 엄격히 준수하며 use case를 작성하는 주요 이유는 다음과 같습니다: "언제나 use case를 사용하여 코드를 앞으로의 변경으로부터 보호하게 됩니다. 예를 들어, 지불 전송에 추가 단계가 필요한 경우 새로운 use case를 생성하고 해당 repository 기능을 사용하던 모든 ViewModel을 use case로 대체해야 합니다." 그러나 실제로는 어떤가요?
 
 예제를 살펴보겠습니다. 은행 앱에서 신용 카드 목록을 제공하는 use case가 있다고 가정해봅시다.
+
 ```js
 class GetCreditCartsUseCase(
     private val creditCardRepository: CreditCardRepository
@@ -117,7 +161,18 @@ class GetCreditCartsUseCase(
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 앱 전체에 이 데이터를 여러 곳에 표시해야 합니다.
 
@@ -127,7 +182,18 @@ class GetCreditCartsUseCase(
 
 하지만 문제가 있습니다: 요구 사항이 한 화면에 대해서만 변경되었습니다. 개요 화면에서는 가장 최근에 획득한 신용카드 하나만 보여주어야 합니다. 이제 기존 유스케이스를 재사용하는 대신 새로운 유스케이스를 만들고 영향을 받는 viewModel을 수정해야 합니다. 제 경험 상, 대부분의 경우 요구 사항과 유스케이스가 이렇게 되는 것입니다. (미래를 예측할 수 있는 경우를 제외하고는, 무엇을, 어디를 재사용할 수 있는지 알 수 없습니다)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-TheComplexitiesofCleanArchitectureUseCases_2.png" />
 
@@ -152,7 +218,18 @@ class UserSettingsViewModel(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 익숙한 것 같나요? 댓글 달 건 없어요. (하지만, 공정하게 말하자면, 생성자에 10-20-40개 이상의 인수가 허용되는 경우에는 문제가 되지 않아요).
 
@@ -164,7 +241,18 @@ https://developer.android.com/topic/architecture/domain-layer#data-access-restri
 
 "하지만, 잠재적으로 상당한 단점은 데이터 레이어에 대한 간단한 함수 호출일 때에도 유즈 케이스를 추가해야 하므로, 작은 혜택을 위해 복잡성을 추가할 수 있다는 것입니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋은 방법은 필요한 경우에만 사용 사례를 추가하는 것입니다. UI 레이어가 대부분의 경우 사용 사례를 통해 데이터에 액세스하는 것을 발견하면 데이터에 이렇게만 액세스하는 것이 더 낫다고 할 수 있습니다.
 
@@ -174,7 +262,18 @@ https://developer.android.com/topic/architecture/domain-layer#data-access-restri
 
 Facade
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만, 만약 관심사 분리를 유지하고 깔끔한 아키텍처 계층 원칙을 완전히 따르면서 지나치게 한 줄 논리 사용 사례의 함정에 빠지지 않으려면 Facade 패턴을 사용하는 것을 고려해보세요.
 
@@ -214,7 +313,18 @@ Facade 패턴은 하위 시스템을 더 쉽게 사용할 수 있도록 단일�
 
 어떠한 다른 옵션들, 예를 들어 모든 데이터 형식과 재사용할 수 있는 일반 타입의 Facade, 같은 작업이 무엇을 가장 잘 수행하는지 찾아보기 위한 실험이 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단일 책임 원칙
 
@@ -263,7 +373,18 @@ class UserRegistrationUseCase(
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 UseCase를 살펴보면 SRP를 위반하는 것 같네요. 아마도 맞을 겁니다. 코드가 별도의 UseCase로 추출되고 재사용될 수 있는 부분이 있습니다. 함께 해결해보죠.
 
@@ -346,8 +467,18 @@ class PrepareNewUserUseCase(
 
 그러나 이 접근은 엄청난 **맥락적 오버헤드**를 초래합니다. 함수가 많아질수록 일어나게 됩니다. 이 예시에서는 전체 그림을 파악하려면 9개 파일 간을 이동해야 합니다. 한 책의 한 문장이 일어나는 것을 이해하기 위해 해당 문단을 읽은 다음 다음 페이지로 넘어가서 특정 문단을 읽은 다음 다시 원래 페이지로 돌아가서 다음 문장을 읽은 다음 책의 끝까지 가서 다른 문단을 읽는 것을 상상해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-TheComplexitiesofCleanArchitectureUseCases_4.png)
 
@@ -357,8 +488,18 @@ class PrepareNewUserUseCase(
 
 또한 디버깅할 때도 귀찮은 작업인데, 다른 파일의 중단점 사이를 이동해야하고, 디버거의 데이터는 일반적으로 현재 클래스에만 표시됩니다. 코드 리뷰에 있어서도 마찬가지로 도전적입니다. 파일과 함수 사이를 쉽게 이동하는 것이 항상 가능한 것은 아니기 때문입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단지 2-3-4개의 유스케이스만으로도 코드가 해독하기 어려워집니다. 예시의 기능은 간단하고 쉽지만, 실제 프로젝트에서는 보통 더 복잡하며, 이름이 항상 명확하거나 대표적이지는 않습니다 (이름 짓기가 어려워요).
 
@@ -368,7 +509,18 @@ class PrepareNewUserUseCase(
 
 이 룰을 엄밀히 준수할 필요가 없는 경우에도 코드를 작업하고 유지하는 것이 훨씬 쉽다고 생각해요 (그런데 이 룰들은 많은 년이 지나도 수정되지 않았죠).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약
 
@@ -378,7 +530,18 @@ class PrepareNewUserUseCase(
 
 - 기하급수적 성장: 사용 사례 수가 급속히 증가함에 따라 코드베이스를 유지하고 탐색하는 것이 어려움을 초래할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 복잡성과 오버헤드: SRP를 엄격히 준수하면 하나의 사용 사례를 많은 작은 사용 사례로 분해하여 시스템의 복잡성과 맥락 상의 오버헤드를 증가시킬 수 있습니다.
 

@@ -3,14 +3,12 @@ title: "OpenAI API를 통해 GPT-4o에 접속하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-AccessingGPT-4oviaOpenAIAPI_0.png"
 date: 2024-05-20 21:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AccessingGPT-4oviaOpenAIAPI_0.png
 tag: Tech
 originalTitle: "Accessing GPT-4o via OpenAI API"
 link: "https://medium.com/@atulkumar_68871/accessing-gpt-4o-via-openai-api-edaa9a2adf11"
 ---
-
-
 
 ![image](/assets/img/2024-05-20-AccessingGPT-4oviaOpenAIAPI_0.png)
 
@@ -20,8 +18,18 @@ OpenAI가 최근에 발표한 GPT-4o는 텍스트, 이미지, 비디오 및 오�
 
 # 특징
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 일반 텍스트 생성
 - JSON 모드의 텍스트 생성
@@ -36,7 +44,18 @@ OpenAI 시크릿 키로 라이브러리를 설치하고 가져온 후, 환경 �
 pip install --upgrade openai --quiet
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 단계는 OpenAI 클라이언트를 설정하는 것입니다. 이를 위해 먼저 시크릿 키로 환경 변수를 만들어야 합니다. OPENAI_KEY=xyz와 같이 OpenAI 시크릿 키가 저장된 .env 파일을 만들어주세요.
 
@@ -57,7 +76,18 @@ client = OpenAI(api_key=api_key)
 
 일반 텍스트 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 completion = client.chat.completions.create(
@@ -77,20 +107,33 @@ print("조수: " + completion.choices[0].message.content)
 
 Json 모드에서 텍스트 생성하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 completion = client.chat.completions.create(
-  model=MODEL,
-  response_format={"type": "json_object"},
-  messages=[
-    {"role": "system", "content": "You are a trainer who always responds in JSON"},
-    {"role": "user", "content": "Create a weekly workout routine for me"}
-  ]
-)
+  (model = MODEL),
+  (response_format = { type: "json_object" }),
+  (messages = [
+    {
+      role: "system",
+      content: "You are a trainer who always responds in JSON",
+    },
+    { role: "user", content: "Create a weekly workout routine for me" },
+  ])
+);
 
-json.loads(completion.choices[0].message.content)
+json.loads(completion.choices[0].message.content);
 ```
 
 출력:
@@ -101,7 +144,18 @@ json.loads(completion.choices[0].message.content)
 
 - 이미지 이해
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 이미지 사용하기
 
@@ -142,7 +196,19 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 ```bash
 삼각형의 면적을 찾기 위해 직갛각 삼각형의 면적을 구하는 공식을 사용할 수 있습니다: \[ \text{면적} = \frac{1}{2} \times \text{밑변} \times \text{높이} \] 이 삼각형에서 밑변은 20 cm이고 높이는 15 cm입니다. \[ \text{면적} = \frac{1}{2} \times 20 \, \text{cm} \times 15 \, \text{cm} \] \[ \text{면적} = \frac{1}{2} \times 300 \, \text{cm}² \] \[ \text{면적} = 150 \, \text{cm}² \] 따라서, 삼각형의 면적은 \( 150 \, \text{cm}² \)입니다.
 ```
@@ -151,23 +217,43 @@ URL을 사용하는 예시
 
 ```js
 response = client.chat.completions.create(
-    model=MODEL,
-    messages=[
-        {"role": "system", "content": "마크다운으로 응답하는 유용한 도우미입니다."},
-        {"role": "user", "content": [
-            {"type": "text", "text": "이 이미지에서 무엇을 보고 무슨 감정이 표현되었는지 설명해주세요."},
-            {"type": "image_url", "image_url": {
-                "url": "https://pbs.twimg.com/media/GNeb4-Ua8AAuaKp?format=png&name=small"}
-            }
-        ]}
-    ],
-    temperature=0.0,
-)
+  (model = MODEL),
+  (messages = [
+    { role: "system", content: "마크다운으로 응답하는 유용한 도우미입니다." },
+    {
+      role: "user",
+      content: [
+        {
+          type: "text",
+          text: "이 이미지에서 무엇을 보고 무슨 감정이 표현되었는지 설명해주세요.",
+        },
+        {
+          type: "image_url",
+          image_url: {
+            url: "https://pbs.twimg.com/media/GNeb4-Ua8AAuaKp?format=png&name=small",
+          },
+        },
+      ],
+    },
+  ]),
+  (temperature = 0.0)
+);
 
-print(response.choices[0].message.content)
+print(response.choices[0].message.content);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지:
 
@@ -177,7 +263,18 @@ print(response.choices[0].message.content)
 
 이 이미지는 웃는 사람을 보여줍니다. 전달되는 감정은 행복이나 만족으로 보입니다. 웃음은 긍정적이고 즐거운 기분을 시사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기능 호출
 
@@ -280,7 +377,18 @@ response = function_calling()
 print(response.choices[0].message.content)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 출력:
 
@@ -290,6 +398,17 @@ print(response.choices[0].message.content)
 
 마무리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 전체 기사를 읽으셔서 GPT-4o 모델을 활용해 텍스트 생성, JSON 모드, 이미지 이해, 그리고 함수 호출을 OpenAI API를 통해 사용할 준비가 되셨습니다. API에 오디오 및 비디오 지원이 추가되면 다시 블로그를 쓸 계획입니다. 그 때까지 계속 탐험하고 배우세요!

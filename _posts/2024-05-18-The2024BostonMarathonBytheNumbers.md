@@ -3,13 +3,12 @@ title: "2024 보스턴 마라톤을 숫자로 살펴보기"
 description: ""
 coverImage: "/assets/img/2024-05-18-The2024BostonMarathonBytheNumbers_0.png"
 date: 2024-05-18 17:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-The2024BostonMarathonBytheNumbers_0.png
 tag: Tech
 originalTitle: "The 2024 Boston Marathon By the Numbers"
 link: "https://medium.com/runners-life/the-2024-boston-marathon-by-the-numbers-6f856079b40f"
 ---
-
 
 ![Image](/assets/img/2024-05-18-The2024BostonMarathonBytheNumbers_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/runners-life/the-2024-boston-marathon-by-the-numbers-6
 
 그리고 그 뒤에는 다수의 러너들이 자격 기준을 충족시켜 입상 자격을 얻은 것으로, 이는 모든 주요 마라톤 중에서 가장 인상적인 집단이라 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 4월의 날씨는 예측하기 어려운 경우가 많아요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/runners-life/the-2024-boston-marathon-by-the-numbers-6
 
 이것이 완주자들에게 미친 영향은 무엇이었을까요? 그리고 완주자 데이터를 분석했을 때 어떤 결론들을 얻을 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자세히 살펴보고 숫자로 알아봅시다. 2024 보스턴 마라톤을 탐색해 보세요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/runners-life/the-2024-boston-marathon-by-the-numbers-6
 
 더 큰 데이터셋으로 들어가기 전에, 더 간단한 질문부터 시작해보죠. 우승자들은 어떻게 한 걸까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 남자 부분에서는 Sisay Lemma가 선두를 달렸어. 그는 일찍 앞서 나가서, 처음에는 그가 조금씩 따라잡힐 것으로 생각했어. 나는 나의 일요일 나만의 마라톤 경주 리포트를 쓰는 중이었기 때문에 경주를 보며 조금 멀리 빠져 있었어. 올려다볼 때, 그가 선두를 넓힌 것을 보고 조금 놀랐어.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/runners-life/the-2024-boston-marathon-by-the-numbers-6
 
 Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록에서 3분 남짓한 시간이 나왔어. 하지만 이것은 역대 여성 선수들의 상위 20위 명단에 들기에 충분하지 않았어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 소식으로:
 
@@ -61,7 +104,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 ## 2024년 보스턴 마라톤 참가자들의 나이와 성별
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현장의 나머지 부분으로 넘어가 볼까요? 간단한 질문부터 시작해봅시다.
 
@@ -71,7 +125,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 작년에만 더 큰 컷오프가 있었던 2021년을 떠올려봅시다. 그 해에는 참가자 수가 적어 7:47의 컷오프가 적용되었습니다. 2019년에도 4:52의 컷오프가 있었지만, 그 해는 예전 예선 기준을 사용하여, 효과적으로 가장 쉬운 해로 취급되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서 그 시간 제한은 경기 참가자 구성에 영향을 미칩니까?
 
@@ -81,7 +146,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 연령 측면에서, 가장 큰 차이점은 35세 미만의 젊은 남성 참가자와 50대 및 60대의 참가자들 사이에서 나타났습니다. 앞선 연령 그룹은 상당한 감소를 보였고, 후자의 연령 그룹은 상당한 증가를 보였습니다. 이는 깊은 시간 제한이 있기 때문에 이해할 수 있으며, 더 젊은 참가자 수가 줄어들고 더 많은 연장자들이 있었던 유일한 해는 2021년이었습니다(더 깊은 시간 제한과 참가자 수가 적은 연도).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이번 대회 우승자는 어느 주 출신인가요?
 
@@ -91,7 +167,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 이후로 캘리포니아, 뉴욕, 텍사스가 가장 일반적인 주입니다. 다시 말해, 이것은 그들이 모두 미국에서 가장 인구 많은 주들 중 상위에 있기 때문에 합리적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 주가 과대 또는 과소 대표되는지 더 잘 이해하기 위해, 총 완주자 수를 인구에 비교했습니다. 이는 인구조사국의 2023년 인구 추정자료를 기반으로 하였습니다.
 
@@ -101,7 +188,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 다른 최상위 주들은 유타와 콜로라도이며, 이 두 주는 강력한 러닝 전통을 갖고 있습니다. 두 주 모두 해발고가로, 바닷물 수준에서 마라톤을 뛴다면 쉽게 예선을 통과할 수 있을 가능성이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 다른 잘 대표되는 주들은 해안 지역이나 중서부에 위치하고 있습니다. 보통, 미국 중부 지역에서는 예선자가 적고, 남부에서 더더욱 적다고 합니다.
 
@@ -111,7 +209,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 어떤 이유 때문인지, 알래스카가 여기서 좀 놀랐어요. 백만 명 당 예선자 수를 기준으로 보면, 그들은 중위권에 위치하고 있어요. 제게 물었으면, 저는 그들이 목록에서 더 아래쪽에 있을 것으로 예상했을 텐데요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 국제 참가자에 대해서는 어떻게 될까요?
 
@@ -119,7 +228,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 이 그래프는 인구에 크기에 따라 조정되어 있지 않습니다. 따라서 파란색의 진하기는 특정 국가에서 온 참가자의 절대 수를 나타냅니다. 예를 들어 중국은 상당히 많은 참가자를 보유하고 있었지만, 비례적으로는 훨씬 낮을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 북미와 유럽이 가장 많은 러너들을 보유하고 있으며, 남미와 동아시아가 그 뒤를 이었습니다.
 
@@ -129,7 +249,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 캐나다와 영국은 꾸준히 1위와 2위를 유지하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2018년 이후로, 멕시코와 브라질이 순위를 올라갔어요. 대만도 상당히 크게 증가했는데요 - 2018년 약 100명에서 2024년 약 300명으로 늘었어요.
 
@@ -139,7 +270,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 이 국제 러너들에 대한 최종 시각화에서 미국이 아닌 다른 국가에 거주하는 완주자 총 수를 보여줘요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2020년(레이스가 없었던 해)와 2021년(참가자 수가 크게 감소한 해)에는 분명히 하락이 있었습니다. 그러나 2022년 이후부터 국제 참여가 완전히 회복되었습니다.
 
@@ -149,7 +291,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 # 참가자들의 시간이 영향을 받았을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 — 대중들이 경주에서 실제로 어떻게 하셨나요? 평소보다 빨랐나요? 더 느렸나요?
 
@@ -159,7 +312,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 왼쪽을 보면 — 중위값을 살펴보면 — 2023년과 2024년 사이에 큰 점프가 있습니다. 남성 혹은 여성을 보더라도 동일합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오른쪽으로 가면 언덕이 덜컥합니다. 그러나 보통 남녀 모두, 그리고 모든 연령 그룹에서, 올해의 완주자들 중 90번째 백분위는 작년에 비해 2~3분 느렸습니다.
 
@@ -169,7 +333,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 모든 조건이 동일하다면, 올해의 완주 시간이 지난 두 해보다 빠를 것으로 예상됩니다. 그러나 실제로 그렇지 않았습니다. 이것은 다른 요인(아마도 날씨)이 완주 시간에 상당한 영향을 미쳤다는 명백한 신호입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 느린 러너(중간값과 같은)들이 나중에 출발하고 코스에서 더 많은 시간을 소비하는 것을 감안할 때, 따뜻한 날씨로부터 더 큰 영향을 받을 것이라는 것은 합리적입니다.
 
@@ -179,7 +354,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 처음에는 거의 모든 사람이 재예선할 것이라고 생각할 수 있지 않나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 보스톤에서 참가 자격 시간을 충족하지 못하는 이유가 몇 가지 있습니다:
 
@@ -191,7 +377,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 위 차트는 각 보스톤 마라톤의 완주자 수를 보여줍니다. 2019년부터 2024년까지, 그들이 보스톤에서 자신의 연령 그룹에 해당하는 자격 시간을 충족했을 때의 수를 보여줍니다. 즉, 다시 자격을 얻은 러너들의 수를 보여주는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 왼쪽의 막대는 예선 시간을 얼마나 넘어섰는지 나타내고, 오른쪽의 막대는 적어도 예선 시간보다 다섯 분 이상 빠른 러너 수를 나타냅니다.
 
@@ -201,7 +398,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 2019년과 2021년은 여기에 함께 포함되어 있지만, 이번 해와 직접 비교하기에는 적합하지 않습니다. 2021년에는 참가자 수가 훨씬 적었으므로 더 적은 자격 획득자가 나타날 것으로 예상됩니다. 2019년에는 러너들이 이전 기준에 따라 자격을 획득했으므로, 전체가 (평균적으로) 약간 느렸다고 가정해 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 2024 보스턴 마라톤에 대한 생각이 어땠나요?
 
@@ -211,7 +419,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 하지만 경기 후에 여러 러너들이 오후의 더위를 견뎌낸 경험을 담은 경기 보고서와 감상문을 읽었어요. 여름을 통해 훈련하고 열에 적응한 사람들에게는 그리 나쁘지 않았을 수도 있지만, 겨울을 겨우 지나고 나온 사람들에게는 그랬나 봐요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 완주 시간 데이터는 이것이 상당히 일반적인 결과였음을 시사하는 것 같습니다.
 
@@ -221,7 +440,18 @@ Obiri의 최종 시간 — 2:22:37 —은 Buzunesh Deba의 2014년 코스 기록
 
 이 질문에 대한 더 철저한 답변은 데이터를 더 심층적으로 조사해야 하지만, 그 부분은 다른 날로 미루겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 당신이 이에 관심이 있다면 — 또는 마라톤에 관한 다른 데이터 중심 이야기에 대해서라도 — 이메일 업데이트를 구독해주세요.
 

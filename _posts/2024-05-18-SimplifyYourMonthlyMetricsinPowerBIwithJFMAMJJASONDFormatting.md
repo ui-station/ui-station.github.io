@@ -3,13 +3,12 @@ title: "파워 BI에서 JFMAMJJASOND 형식으로 매월 메트릭을 간편하�
 description: ""
 coverImage: "/assets/img/2024-05-18-SimplifyYourMonthlyMetricsinPowerBIwithJFMAMJJASONDFormatting_0.png"
 date: 2024-05-18 17:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-SimplifyYourMonthlyMetricsinPowerBIwithJFMAMJJASONDFormatting_0.png
 tag: Tech
 originalTitle: "Simplify Your Monthly Metrics in Power BI with JFMAMJJASOND Formatting"
 link: "https://medium.com/microsoft-power-bi/simplify-your-monthly-metrics-in-power-bi-with-jfmamjjasond-formatting-c541072f840e"
 ---
-
 
 ## 이 문서는 월별 메트릭 보고서를 시각적으로 매력적으로 만드는 방법을 안내합니다. 이를 위해 월 이름을 약어로 변환하여 더 깔끔한 모양을 만들어봅시다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/microsoft-power-bi/simplify-your-monthly-metrics-in-po
 
 메트릭이란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메트릭(Metric)은 특정 활동을 측정함으로써 비즈니스 성과를 추적하는 방법입니다. 목표에 얼마나 가까운지를 보여주는 점수표와 같은 역할을 합니다. 전닻 활동에서 다운로드 횟수부터 새로운 리드가 영업으로 이어지는 횟수까지 거의 모든 것을 측정할 수 있습니다.
 
@@ -29,7 +39,18 @@ KPI(Key Performance Indicator)는 메트릭과 유사하게 측정 가능한 값
 
 이들은 어떻게 관련되어 있나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 피라미드를 상상해보세요. 피라미드의 바닥은 메트릭으로 이루어져 있습니다. 이는 추적하는 모든 개별 측정값입니다. 이러한 메트릭은 그 다음으로 가는 피라미드 위쪽의 구성 요소인 KPI로 전달됩니다. KPI는 그러한 메트릭을 가져와 구체적인 목표에 연결합니다. 마지막으로, 피라미드의 꼭대기에는 전반적인 비즈니스 목표가 있습니다. 따라서 메트릭은 기초를 제공하고, KPI는 그러한 측정값에 목적을 부여하며, 둘 다 함께 작동하여 큰 그림 목표를 달성하는 데 도움이 됩니다.
 
@@ -39,59 +60,113 @@ KPI(Key Performance Indicator)는 메트릭과 유사하게 측정 가능한 값
 
 ![이미지](/assets/img/2024-05-18-SimplifyYourMonthlyMetricsinPowerBIwithJFMAMJJASONDFormatting_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단계 1: 월 번호 추출하기
 
 테이블에 새 열을 추가하고 다음 공식을 입력하여 날짜 열에서 숫자 월 값을 추출하십시오. 월 약자를 나중에 날짜순으로 정렬할 때 이 월 번호가 유용합니다:
 
 ```js
-MonthNumber = MONTH('Table1'[YourDateColumn])
+MonthNumber = MONTH("Table1"[YourDateColumn]);
 ```
 
 단계 2: 월 이름 추출하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 날짜 열에서 전체 월 이름을 추출하세요. 나중에 이러한 이름을 해당하는 JFMAMJJASOND 약어로 변환할 것입니다. 이를 위해 다른 계산 열을 추가하고 다음 수식을 사용하세요:
 
 ```js
-MonthNameLong = FORMAT('Table1'[YourDateColumn], "MMMM")
+MonthNameLong = FORMAT("Table1"[YourDateColumn], "MMMM");
 ```
 
 단계 3: 월 이름을 약어로 변환
 
 전체 월 이름을 JFMAMJJASOND 약어로 변환하고 정렬 문제를 피하기 위해 세 번째 계산 열을 만드세요. 요렇게 합니다: 중복 약어가 있는 월에 대해 첫 글자 뒤에 공백을 추가해야 합니다 (예: 'January'는 'J', 'June'는 'J ' (한 칸 띄우기), 'July'는 'J ' (두 칸 띄우기)로 변환). 이렇게 하면 정확한 정렬을 보장할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 SWITCH 문은 이 작업을 수행합니다:
 
 ```js
-MonthAbbr = 
-SWITCH(
+MonthAbbr = SWITCH(
   Table1[MonthNameLong],
-  "January", "J",
-  "February", "F",
-  "March", "M",
-  "April", "A",
-  "May", "M ",
-  "June", "J ",
-  "July", "J  ",
-  "August", "A ",
-  "September", "S",
-  "October", "O",
-  "November", "N",
-  "December", "D"
-)
+  "January",
+  "J",
+  "February",
+  "F",
+  "March",
+  "M",
+  "April",
+  "A",
+  "May",
+  "M ",
+  "June",
+  "J ",
+  "July",
+  "J  ",
+  "August",
+  "A ",
+  "September",
+  "S",
+  "October",
+  "O",
+  "November",
+  "N",
+  "December",
+  "D"
+);
 ```
 
 단계 4: 월 약어를 월 번호로 정렬
 
 마지막 단계에서는 'MonthNumber' 열에 따라 'MonthAbbr' 열을 정렬하여 월이 원하는 JFMAMJJASOND 순서로 표시되도록합니다. Power BI의 'Sort By Column' 기능을 사용하여 이 작업을 쉽게 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-05-18-SimplifyYourMonthlyMetricsinPowerBIwithJFMAMJJASONDFormatting_2.png)
 
@@ -101,8 +176,18 @@ Now, simply replace your current month field with the newly created ‘MonthAbbr
 
 ![image3](/assets/img/2024-05-18-SimplifyYourMonthlyMetricsinPowerBIwithJFMAMJJASONDFormatting_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 접근법을 dimDate 테이블에도 적용할 수 있습니다. dimDate 테이블을 만드는 데 관련된 자세한 정보는 이 문서를 참고하실 수 있습니다:
 

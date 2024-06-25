@@ -3,13 +3,12 @@ title: "루비 온 레일스 개발자로서 알아야 할 5가지 디자인 패
 description: ""
 coverImage: "/assets/img/2024-05-20-5DesignPatternsYouShouldKnowasaRubyonRailsDeveloper_0.png"
 date: 2024-05-20 15:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-5DesignPatternsYouShouldKnowasaRubyonRailsDeveloper_0.png
 tag: Tech
 originalTitle: "5 Design Patterns You Should Know as a Ruby on Rails Developer"
 link: "https://medium.com/@patrickkarsh/5-design-patterns-you-should-know-as-a-ruby-on-rails-developer-d054acd41296"
 ---
-
 
 <img src="/assets/img/2024-05-20-5DesignPatternsYouShouldKnowasaRubyonRailsDeveloper_0.png" />
 
@@ -19,18 +18,37 @@ link: "https://medium.com/@patrickkarsh/5-design-patterns-you-should-know-as-a-r
 
 ## 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 두고 있어요. 애플리케이션을 세 가지 연결된 구성 요소로 구분합니다:
 
 - Model: 데이터와 비즈니스 로직을 관리합니다.
-  
 - View: 정보의 표시를 관리합니다.
-  
 - Controller: 사용자 입력을 처리하고 Model과 상호 작용하여 View를 렌더링합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-5DesignPatternsYouShouldKnowasaRubyonRailsDeveloper_1.png)
 
@@ -40,8 +58,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 테스트 용이성: 각 구성 요소를 격리시켜 개별적으로 테스트하기가 더 쉽습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시
 
@@ -51,7 +79,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 ## 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서비스 객체는 모델이나 컨트롤러에 자연스럽게 맞지 않는 비즈니스 로직을 캡슐화합니다. 이 패턴을 사용하면 모델과 컨트롤러를 가볍게 유지하고 주요 책임에 집중할 수 있습니다.
 
@@ -61,7 +100,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 단일 책임 원칙: 각 서비스 객체는 특정 작업을 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 재사용성: 비즈니스 로직은 애플리케이션의 다른 부분에서 재사용할 수 있습니다.
 
@@ -71,7 +121,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 # 데코레이터 패턴
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 개요
 
@@ -81,7 +142,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 확장성: 기존 코드를 변경하지 않고 쉽게 새로운 기능을 추가할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프레젠테이션 로직 분리: 모델에서 프레젠테이션 로직을 유지합니다.
 
@@ -91,7 +163,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 # FORM OBJECT PATTERN
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 개요
 
@@ -101,7 +184,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 ## 장점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 관심사 분리: 모델과 컨트롤러에서 양식 로직을 분리합니다.
 
@@ -111,7 +205,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 ![image](/assets/img/2024-05-20-5DesignPatternsYouShouldKnowasaRubyonRailsDeveloper_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 쿼리 오브젝트 패턴
 
@@ -121,7 +226,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 ## 장점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 관심사의 분리: 쿼리 논리를 모델 외부로 유지합니다.
 
@@ -131,7 +247,18 @@ MVC 패턴은 루비 온 레일 애플리케이션의 아키텍처에 근간을 
 
 ## 예제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-5DesignPatternsYouShouldKnowasaRubyonRailsDeveloper_9.png" />
 

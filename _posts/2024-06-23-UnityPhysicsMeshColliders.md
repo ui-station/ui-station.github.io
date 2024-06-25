@@ -3,13 +3,12 @@ title: "유니티 물리 시스템 메쉬 콜라이더 완벽 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-23-UnityPhysicsMeshColliders_0.png"
 date: 2024-06-23 00:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UnityPhysicsMeshColliders_0.png
 tag: Tech
 originalTitle: "Unity Physics — Mesh Colliders"
 link: "https://medium.com/@geraldclarkaudio/unity-physics-mesh-colliders-fd37028adb26"
 ---
-
 
 너는 Unity를 사용하면서 메시 콜라이더를 본 적이 있을 거야. 하지만 정확히 뭘까?
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@geraldclarkaudio/unity-physics-mesh-colliders-fd37028
 
 이 바럴이야. 메시 콜라이더 컴포넌트를 추가하면, 객체를 정확히 표현하는 콜라이더가 생성돼. 지금까지 다룬 다른 객체들처럼, 이 객체가 그냥 바닥으로 떨어지도록 원한다면.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임을 실행하면 오류가 발생합니다.
 
@@ -29,8 +39,18 @@ link: "https://medium.com/@geraldclarkaudio/unity-physics-mesh-colliders-fd37028
 
 하지만 이것의 장점은 무엇일까요? 리짏바디를 isKinematic으로 설정하고 이 객체를 사용하여 씬의 다른 리짏바디에 영향을 줄 수 있습니다. 예를들어,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![sphere](https://miro.medium.com/v2/resize:fit:1400/1*Q7N3AFYNvo9bzu-BxBVkjw.gif)
 
@@ -40,13 +60,22 @@ As you can see, the sphere is affected by the shape of this barrel. If I use a n
 
 Using the non-convex option also gives you a visual of the collider Unity generates.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 테이블 태그를 Markdown 형식으로 변경해 주세요.
 
-
-| Header One | Header Two |
-|------------|------------|
+| Header One  | Header Two  |
+| ----------- | ----------- |
 | Row 1 Col 1 | Row 1 Col 2 |
 | Row 2 Col 1 | Row 2 Col 2 |

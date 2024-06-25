@@ -3,13 +3,12 @@ title: "시니어 엔지니어로부터 온 편지 앱 개발자를 위해"
 description: ""
 coverImage: "/assets/img/2024-06-19-ALetterfromaSeniorEngineerForAppDevelopers_0.png"
 date: 2024-06-19 10:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-ALetterfromaSeniorEngineerForAppDevelopers_0.png
 tag: Tech
 originalTitle: "A Letter from a Senior Engineer: For App Developers"
 link: "https://medium.com/@hiteshkohli/a-letter-from-a-senior-engineer-for-app-developers-4f1dd064294d"
 ---
-
 
 "오늘의 시장 동향과 미래 기술 살펴보기
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@hiteshkohli/a-letter-from-a-senior-engineer-for-app-d
 
 # 리포트: 감원과 IT 산업"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레이오프와 IT 산업은 마치 음양처럼 얽혀 있는 관계입니다. 회사가 자금 부족으로 어려움을 겪을 때, 레이오프가 종종 따라오곤 합니다. 이는 과거에도 통용된 것으로, 오늘날에도 계속되고 있습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@hiteshkohli/a-letter-from-a-senior-engineer-for-app-d
 
 고객들이 앱 뒤에 사용된 언어를 신경 쓰지는 않습니다. 그들이 중요하게 생각하는 것은 보안과 개인 정보입니다. Flutter와 React Native은 앱을 만들기 위한 좋은 옵션들이지만, 네이티브 앱은 더 많은 사용자 정의를 허용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 엔지니어들이 저조한 급여로 시작합니다(20,000달러에서 30,000달러 정도). 만약 여러분이 이러한 위치에 있다면, 시간이 흐름에 따라 여러분의 기술을 향상시키는 데 집중하세요. 하루가 끝날 때, 앱 개발자로서의 경험과 끈기 있는 노력은 운에 뒤지지 않을 것입니다.
 
@@ -39,9 +60,20 @@ IT 산업은 항상 발전하고 있습니다. VR, AR 또는 새로운 것이 �
 
 # 완벽한 이력서 작성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이력서 작성 시 우선순위는 다음과 같습니다: 경험 ` 프로젝트 ` 학위. 이력서의 대부분 내용은 인사 담당자가 시간 부족으로 충분히 읽지 않습니다. 인상을 주기 위해 몇 초밖에 주어지지 않으니, 이 우선순위를 명심해주세요.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이력서 작성 시 우선순위는 다음과 같습니다: 경험 `프로젝트` 학위. 이력서의 대부분 내용은 인사 담당자가 시간 부족으로 충분히 읽지 않습니다. 인상을 주기 위해 몇 초밖에 주어지지 않으니, 이 우선순위를 명심해주세요.
 
 신입 사원의 경우, 학위와 성적은 중요하지만, 첫 직장 이후로는 그다지 중요하지 않아요.
 

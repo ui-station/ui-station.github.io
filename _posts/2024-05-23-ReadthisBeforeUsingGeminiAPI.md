@@ -3,13 +3,12 @@ title: "제이미니 API 사용 전에 읽어보세요"
 description: ""
 coverImage: "/assets/img/2024-05-23-ReadthisBeforeUsingGeminiAPI_0.png"
 date: 2024-05-23 13:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ReadthisBeforeUsingGeminiAPI_0.png
 tag: Tech
 originalTitle: "Read this Before Using Gemini API"
 link: "https://medium.com/@jessicajimantoro/read-this-before-using-gemini-api-4933becad899"
 ---
-
 
 ## Gemini API를 최대한 활용할 수 있도록 도와주는 개발자 안내서
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@jessicajimantoro/read-this-before-using-gemini-api-49
 
 ![이미지](/assets/img/2024-05-23-ReadthisBeforeUsingGeminiAPI_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Gemini AI를 처음 사용하시는 분이라면, 이는 텍스트, 이미지 및 오디오 등 다양한 유형의 데이터 입력에서 콘텐츠를 생성할 수 있는 모델로 정의되는 생성적 AI입니다.
 
@@ -29,7 +39,18 @@ Gemini AI를 처음 사용하시는 분이라면, 이는 텍스트, 이미지 �
 
 Gemini API는 AI 기반 응용 프로그램을 만들고 싶은 분들을 대상으로 하고 있습니다. 게다가 유료 버전에서는 귀하의 프롬프트 및 응답을 제품 개선에 사용하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 토큰
 
@@ -39,7 +60,18 @@ Gemini API는 AI 기반 응용 프로그램을 만들고 싶은 분들을 대상
 
 ## topK
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 topK 매개변수는 모델이 출력 토큰을 선택하는 방식을 변경합니다. 간단히 말해, 가능한 출력 토큰을 K개로 제한합니다.
 
@@ -48,6 +80,7 @@ topK 매개변수는 모델이 출력 토큰을 선택하는 방식을 변경합
 The quick brown fox jumps over the …
 
 다음 단어의 확률:
+
 1. squirrel: 0.08
 2. sleeping rabbit: 0.3
 3. lazy dog: 0.9
@@ -55,7 +88,18 @@ The quick brown fox jumps over the …
 
 예시에서...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 topK를 1로 설정하면 (탐욕 디코딩), 출력 결과는 가장 높은 확률을 가진 단어만 표시됩니다. 즉, "게으른 개"가 됩니다.
 
@@ -65,13 +109,25 @@ The quick brown fox jumps over the …
 
 topP 매개변수, 또한 넉클리어 샘플링이라고 불리는 것은 모델이 출력 토큰을 선택하는 방식을 변경합니다. 간단히 말해, 출력 토큰의 확률 합이 topP 값과 동일하거나 그 이상인 경우까지만 토큰을 생성하는 방식입니다. topP 값은 0.0에서 1.0 사이의 범위로 설정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-예시: 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+예시:
 다음 단어를 완성해야 합니다:
 수영은 매우…
 
 다음 단어의 확률:
+
 1. 인기 있는: 0.3
 2. 치유적인: 0.1
 3. 건강한: 0.4
@@ -81,7 +137,18 @@ topP 매개변수, 또한 넉클리어 샘플링이라고 불리는 것은 모�
 
 가장 높은 확률을 가진 단어는 "건강한" (0.4)이지만, 임계 값을 충족하지 못하므로 두 번째로 높은 "인기 있는" (0.3)으로 이동합니다. 따라서 출력은 "건강한" (0.4)과 "인기 있는" (0.3)입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 온도
 
@@ -92,7 +159,18 @@ topP 매개변수, 또한 넉클리어 샘플링이라고 불리는 것은 모�
 - 낮은 온도 (≤ 0.5)는 더 구체적이거나 덜 창의적인 출력이 필요할 때 적합합니다. 사용 사례 예시로는 요약, 질문 응답, 팩트-체킹, 번역 등이 있습니다.
 - 높은 온도 (≥ 0.5)는 더 창의적인 출력이 필요할 때 적합합니다. 사용 사례 예시로는 이야기 작성, 퀴즈 생성 등이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 가격 책정
 
@@ -118,7 +196,18 @@ Future<void> main() async {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # JSON 생성하기
 
@@ -128,7 +217,18 @@ Dart에서 GenerationConfig 내부에 responseMimeType: 'application/json' 속�
 
 Gemini 1.0 Pro를 사용하지 않는 경우에는 프롬프트할 때 출력을 지정할 수 있습니다. ' '예제': '문자열' ' 이런 JSON 구조로 ...를 생성해줘 라고 간단히 요청하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 다트(Dart)에서의 예시가 있어요:
 
@@ -148,7 +248,18 @@ void main() {
 
 시스템 지침은 사용자가 특정 요구 사항과 사용 사례에 따라 모델의 동작을 조정할 수 있도록 합니다. AI 역할, 언어 스타일 또는 출력을 지정할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다트 코드 예시를 보여드립니다:
 
@@ -170,7 +281,18 @@ void main() {
 
 클라이언트 측에서 직접 Gemini API를 호출하는 것은 API 키 유출, 서비스 거부(DoS) 공격 등과 같은 위협에 노출될 수 있습니다. 클라이언트 측은 프로토타입에만 사용해야 합니다. 가장 안전한 방법은 서버 측에서 구현하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모두 끝났어요!
 

@@ -16,7 +16,18 @@ link: "https://medium.com/gitconnected/100x-faster-scaling-your-rag-app-for-bill
 
 MIT 라이선스 하에 Chunkdot은 밀집(dense) 및 희소(sparse) 행렬에 대한 멀티 스레드 행렬 곱셈을 제공하기 위해 특별히 설계되었습니다. Numba를 사용하여 계산을 가속화하며 항목 행렬 표현(임베딩)을 세분화하여 대규모 항목에 대한 K개의 가장 유사한 항목을 계산하는 데 적합합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Chunkdot GitHub 저장소
 
@@ -26,7 +37,18 @@ Chunkdot의 접근 방식과 코사인 유사도의 의사 코드를 비교할 �
 
 본 블로그의 모든 코드는 제 GitHub 저장소에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 목차
 
@@ -45,7 +67,18 @@ Chunkdot의 접근 방식과 코사인 유사도의 의사 코드를 비교할 �
 
 Chunkdot을 설치하려면 다른 라이브러리와 마찬가지인 유사한 설치 과정이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # chunkdot 설치하기
 
@@ -63,7 +96,18 @@ pip install chunkdot
 
 <img src="/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Chunkdot 에게 사용 가능한 메모리를 확인하는 것은 매우 중요합니다. 벡터 데이터베이스 크기가 증가할수록 계산 메모리도 증가합니다. 사용 가능한 메모리를 초과하지 않도록 하려면 하드웨어의 남은 메모리를 모니터링하는 것이 중요합니다. 제 경우에는 버퍼/캐시를 제외하고 25GB의 여유 공간이 있습니다.
 
@@ -82,7 +126,18 @@ import timeit
 
 # 코딩 의사 코드 알고리즘
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 데이터베이스나 로컬에 저장된 수백만 벡터들과 사용자 쿼리 벡터 간의 코사인 유사도를 계산하는 의사 코드 알고리즘을 만들어 볼게요.
 
@@ -128,7 +183,18 @@ def cosine_pseudocode(query_v, doc_v, num_indices):
 - doc_v는 어딘가에 저장된 문서들의 임베딩 벡터들입니다.
 - num_indices는 유사한 상위 k결과로부터 문서의 인덱스 번호입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 코딩 Chunkdot 알고리즘
 
@@ -162,7 +228,18 @@ def cosine_chunkdot(query_v, doc_v, num_indices, max_memory):
 
 이 Chunkdot 함수는 네 개의 입력을 받습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - query_v은 사용자 쿼리의 임베딩 벡터를 나타냅니다.
 - doc_v는 어딘가에 저장된 문서의 임베딩 벡터들을 나타냅니다.
@@ -194,7 +271,18 @@ chunkdot을 사용한 상위 인덱스: [4]
 ### 출력 ###
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문서 임베딩에 대한 유사한 항목의 인덱스를 최고의 코사인 유사도를 기반으로 한 항목만 반환한다는 것을 의미하는 top_indices 매개변수를 1로 설정했습니다. 메모리 사용량을 5E9로 설정했는데, 이는 5GB와 동일합니다. 두 함수 모두 동일한 인덱스 4를 반환하여 두 함수를 정확하게 코딩했음을 나타냅니다.
 
@@ -217,7 +305,18 @@ def calculate_execution_time(query_v, doc_v, num_indices, max_memory, times):
     print("chunkdot 함수에 걸리는 시간:", chunkdot_time, "초")
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 이미 이 함수로 전달되는 매개변수를 검토했습니다. 여기서 새로운 매개변수는 times입니다. 이 매개변수는 코드를 몇 번 실행할지를 함수에 알려줍니다. 더 큰 규모에서 Chunkdot 성능을 테스트해 봅시다.
 
@@ -227,7 +326,18 @@ def calculate_execution_time(query_v, doc_v, num_indices, max_memory, times):
 
 각 접근 방식의 계산 시간을 계산하기 위해 각각 100번 실행하여 효율성을 테스트해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 doc_embeddings = np.random.randn(10000, 1536)  # 10K 문서 임베딩 (1536 차원)
@@ -248,9 +358,18 @@ calculate_execution_time(user_query, doc_embeddings, top_indices, max_memory, 10
 
 Chunkdot은 유사도 비교 코드와 비교해 더 많은 시간이 소요됩니다. 이는 Chunkdot이 먼저 청크를 생성하고 각 청크에서 계산을 수행한 후 병합하기 때문입니다. 따라서 이 소규모 예제에 대해서는 적합한 해결책이 아닐 수 있습니다. 그러나 나중에 더 큰 예제를 다룰 때 Chunkdot의 이점을 확인하게 될 것입니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 100k 벡터 임베딩 테스트
 
@@ -273,7 +392,18 @@ times = 1 # 함수를 실행할 횟수
 calculate_execution_time(user_query, doc_embeddings, top_indices, max_memory, times)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 100,000개의 문서 임베딩, 차원이 1536인 경우, 두 알고리즘을 한 번씩 실행하여 비교한 결과는 다음과 같습니다:
 
@@ -283,7 +413,18 @@ Chunkdot은 의사코드에 비해 거의 절반의 시간이 소요됩니다. �
 
 1백만 벡터 임베딩을 위한 테스트 중입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 백만 개의 임베딩을 다루는 작업 중에, 첫 번째로 확인해야 할 사항은 문서 임베딩 벡터가 얼마나 많은 메모리를 차지하는지입니다.
 
@@ -303,8 +444,18 @@ print(doc_embeddings.nbytes / (1024 * 1024 * 1024),
 
 저희 문서 임베딩은 대략 12GB를 차지합니다. 남은 공간을 확인해 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_5.png)
 
@@ -329,9 +480,18 @@ calculate_execution_time(user_query, doc_embeddings, top_indices, max_memory, ti
 
 ![image](/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_6.png)
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ChunkDot은 실제로 계산을 효과적으로 줄입니다. 진지한 RAG 앱을 만들려면 적어도 백만 개의 쿼리부터 시작하는 것이 좋습니다. 높은 차원의 임베딩 모델로 작업을하는 경우 4000까지 증가합니다. 이 접근 방식은 훨씬 더 효율적이어질 것입니다.
 
@@ -341,7 +501,18 @@ ChunkDot은 실제로 계산을 효과적으로 줄입니다. 진지한 RAG 앱�
 
 ![이미지](/assets/img/2024-05-27-100xFasterScalingYourRAGAppforBillionsofEmbeddings_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 세 가지 방법을 그래프로 나타내었고, 문서 임베딩의 수를 늘릴 때 Chunkdot이 모든 방법 중에서 가장 우수하다는 것을 확인했습니다. 이제 임베딩 벡터의 차원이 계산 시간에 어떤 영향을 미치는지 살펴보겠습니다.
 
@@ -351,7 +522,18 @@ ChunkDot은 실제로 계산을 효과적으로 줄입니다. 진지한 RAG 앱�
 
 # Chunkdot의 특징
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Chunkdot에는 진행 표시 막대를 표시할 수 있는 기능이 있어서 얼마만큼의 계산이 남았는지 추적할 수 있습니다.
 
@@ -374,34 +556,55 @@ output_array = cosine_similarity_top_k(user_query, doc_embeddings,
 
 Chunkdot의 출력은 희소 행렬이며, 다음을 사용하여 배열로 변환할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 출력 변환
-output_array.toarray()
 
+output_array.toarray()
 
 Chunkdot은 문서 임베딩에 대해서만 사용할 수 있습니다. 이는 각 문서 임베딩 요소에 대해 가장 유사한 상위 k개 요소를 반환할 것입니다.
 
-
 # 총 5개의 문서 임베딩
+
 embeddings = np.random.randn(5, 256)
 
 # 각각의 상위 2개 가장 유사한 항목 인덱스 반환
+
 cosine_similarity_top_k(embeddings, top_k=2).toarray()
 
+### 출력
 
-
-### 출력 ###
 array([[1.        , 0.        , 0.        , 0.        , 0.09924064],
        [0.        , 1.        , 0.        , 0.09935381, 0.        ],
        [0.02358785, 0.        , 1.        , 0.        , 0.        ],
        [0.        , 0.09935381, 0.        , 1.        , 0.        ],
-       [0.09924064, 0.        , 0.        , 0.        , 1.        ]]
-### 출력 ###
+       [0.09924064, 0.        , 0.        , 0.        , 1.]]
 
+### 출력
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비슷한 방법으로 top_k 매개변수에 음수 값을 제공하여 가장 다른 항목을 반환할 수도 있습니다.
 
@@ -426,7 +629,18 @@ array([[ 0.        ,  0.        , -0.04357524,  0.        , -0.05118288],
 
 당신의 상황이 아닐 수도 있지만, 1만 차원까지의 희소한 임베딩을 처리하는 경우 density 매개변수를 사용하여 계산을 더 효율적으로 줄일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 희소 임베딩 생성을 위해

@@ -3,13 +3,12 @@ title: "Swift 배열은 강력합니다"
 description: ""
 coverImage: "/assets/img/2024-05-18-SwiftArraysarepowerful_0.png"
 date: 2024-05-18 15:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-SwiftArraysarepowerful_0.png
 tag: Tech
 originalTitle: "Swift Arrays are powerful"
 link: "https://medium.com/@paulwall_21/swift-arrays-are-powerful-1624a371ea1b"
 ---
-
 
 <img src="/assets/img/2024-05-18-SwiftArraysarepowerful_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@paulwall_21/swift-arrays-are-powerful-1624a371ea1b"
 
 # 사용자 지정 예측자 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문서를 살펴보면 대부분의 메소드에는 사용자 정의 "조건자"를 사용할 수 있는 API에 대한 추가 클로저가 있음을 알 수 있습니다. 이 기능은 강력하면서도 활용도가 낮습니다. 종종, 우리는 Int나 String과 같은 기본 유형이 아니라 앱의 데이터를 나타내는 사용자 지정 데이터 유형과 작업합니다. 사용자 정의 조건자를 사용하면 사용자 지정 데이터 유형에 대해 이러한 메소드를 사용하고 사용자 정의할 수 있습니다. min 메소드 사용 예제를 살펴보겠습니다:
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@paulwall_21/swift-arrays-are-powerful-1624a371ea1b"
 
 # 더 표현력을 강조하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원하는 대로 코드를 작동시키는 것은 전투의 일부일 뿐입니다. 또 다른 중요한 개념은 코드를 가독성 있게 만드는 것입니다. 다른 사람들이 코드를 읽을 때 합리적인 시간 내에 이해할 수 있도록 코드를 읽기 쉬우게 만들어야 합니다. 몇 주 동안 코드를 보지 않은 후에도 코드를 읽게 될 수도 있습니다. 코드에 가독성을 더하는 노력과 시간을 할애하는 가치가 있습니다. Arrays로부터 많은 메소드를 사용하여 코드가 더 표현력 있고 이해하기 쉬워지도록 도와줍니다. 여기 간단한 예제가 있습니다:
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@paulwall_21/swift-arrays-are-powerful-1624a371ea1b"
 
 필터 메소드를 사용한 또 다른 일반적인 예제를 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시, 이 코드는 일이 잘 됩니다. 필터 메서드는 유통 기한이 지난 모든 식품 항목을 반환합니다. 이 방법은 작동하지만 좀 더 설명적인 방법을 살펴봅시다:
 

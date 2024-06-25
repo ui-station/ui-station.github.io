@@ -3,13 +3,12 @@ title: "프로그래밍 언어를 만드는 단계별 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-22-AStep-By-StepGuidetoBuildingaProgrammingLanguage_0.png"
 date: 2024-06-22 23:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-AStep-By-StepGuidetoBuildingaProgrammingLanguage_0.png
 tag: Tech
 originalTitle: "A Step-By-Step Guide to Building a Programming Language"
 link: "https://medium.com/towards-data-science/a-step-by-step-guide-to-building-a-programming-language-5f5b84246991"
 ---
-
 
 ## 몇 시간 안에 처음부터 프로그래밍 언어 구축하기
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/a-step-by-step-guide-to-building-
 
 이 문서에서는 처음부터 해석형 프로그래밍 언어를 만들고 람다 대수와 프로그래밍 언어 전반에 대해 알아가는 과정을 조금 배웁니다. 여기서 만들어볼 언어는 꽤 독특할 수 있지만, 이 과정을 통해 당신이 자신만의 특정 용도 언어를 설계하는 방법과 프로그래밍 언어가 어떻게 작동하는지에 대해 유용한 정보를 가르칠 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 게임 계획
 
@@ -29,34 +39,63 @@ link: "https://medium.com/towards-data-science/a-step-by-step-guide-to-building-
 
 기본적으로, 우리는 우리가 작성하려는 대상 언어로 된 몇 가지 구체적인 구문(코드)으로 시작하고, 이를 추상 구문 트리로 변환하는 구문 분석기에 전달합니다(이것은 작업하기 쉬운 코드의 트리 표현입니다). 그 후에 실행된 추상 구문 트리를 우리에게 최종 결과를 제공하는 해석기에 전달합니다. 구문 분석기와 해석기는 이미 존재하는 호스트 언어로 작성됩니다 — 예를 들어 C 언어의 초기 구문 분석기와 컴파일러는 어셈블리어로 작성되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-**참고: 여기서 사용하는 "파서"는 파싱 프로세스 전체를 포괄합니다. 일반적으로 렉싱은 "파싱" 이전에 수행됩니다. 그러나 이 경우 파싱은 구체적인 구문을 추상 구문으로 변환하는 프로세스입니다. 이 프로세스에는 다양한 형태가 있을 수 있습니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+\*\*참고: 여기서 사용하는 "파서"는 파싱 프로세스 전체를 포괄합니다. 일반적으로 렉싱은 "파싱" 이전에 수행됩니다. 그러나 이 경우 파싱은 구체적인 구문을 추상 구문으로 변환하는 프로세스입니다. 이 프로세스에는 다양한 형태가 있을 수 있습니다.
 
 예를 들어, 기본 산술 연산을 위한 간단한 언어에 대한 다음 명세를 고려해보십시오:
 
 ```js
-EXPR = number
-       | EXPR + EXPR
-       | EXPR - EXPR
-       | EXPR * EXPR
-       | EXPR / EXPR
-       | (EXPR)
+EXPR =
+  number | (EXPR + EXPR) | (EXPR - EXPR) | (EXPR * EXPR) | (EXPR / EXPR) | EXPR;
 ```
 
-위의 내용은 컨텍스트-프리 문법에 대한 EBNF입니다. 여기서 깊이 들어가진 않겠지만, 이 형태의 프로그래밍 언어는 모두 CYK 알고리즘을 통해 다항 시간 내에 파싱할 수 있습니다. 이 EBNF에서 (4 + 4) * 3과 같은 것은 유효한 프로그램이지만, def f(x): return 5; f(5)와 같은 것은 유효하지 않습니다.**
+위의 내용은 컨텍스트-프리 문법에 대한 EBNF입니다. 여기서 깊이 들어가진 않겠지만, 이 형태의 프로그래밍 언어는 모두 CYK 알고리즘을 통해 다항 시간 내에 파싱할 수 있습니다. 이 EBNF에서 (4 + 4) \* 3과 같은 것은 유효한 프로그램이지만, def f(x): return 5; f(5)와 같은 것은 유효하지 않습니다.\*\*
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이제 우리가 구체적인 구문 (4 + 4) * 3을 주어졌다고 가정해 봅시다. 파싱 후에는 다음과 같은 추상 구문 트리(AST)를 얻어야 합니다:
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이제 우리가 구체적인 구문 (4 + 4) \* 3을 주어졌다고 가정해 봅시다. 파싱 후에는 다음과 같은 추상 구문 트리(AST)를 얻어야 합니다:
 
 ![AST](/assets/img/2024-06-22-AStep-By-StepGuidetoBuildingaProgrammingLanguage_2.png)
 
 그런 다음 우리의 해석기는 루트에서 시작하여 트리를 재귀적으로 타고 내려가면서 답인 24를 얻습니다.
 
-이 문법이 모호한 점에 대한 간단한 언급을 해보면 — 예를 들어, 표현식 4 + 4 * 3은 어떻게 파싱되어야 할까요? 이것은 위에 언급된 ((4 + 4) * 3)로 파싱되거나, 4 + (4 * 3)로 파싱될 수 있습니다 — 이 둘 다 유효한 파싱 트리이기 때문에 더 이상 “정확한” 파싱이라고 말할 수 없습니다. 이와 같은 경우에는 파서가 언어를 파싱하는 방법에 대해 임의로 결정해야 합니다.
+이 문법이 모호한 점에 대한 간단한 언급을 해보면 — 예를 들어, 표현식 4 + 4 _ 3은 어떻게 파싱되어야 할까요? 이것은 위에 언급된 ((4 + 4) _ 3)로 파싱되거나, 4 + (4 \* 3)로 파싱될 수 있습니다 — 이 둘 다 유효한 파싱 트리이기 때문에 더 이상 “정확한” 파싱이라고 말할 수 없습니다. 이와 같은 경우에는 파서가 언어를 파싱하는 방법에 대해 임의로 결정해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 저희 구문 설계하기
 
@@ -102,9 +141,20 @@ COMMENT: '😴' .*? '⏰' -> skip;
 LINE_COMMENT: '🥱' ~[\r\n]* -> skip;
 ```
 
-** 참고: 위 명세서는 ANTLR이라는 도구에서 사용되도록 작성되었으며, 곧 다시 이에 대해 다룰 거예요.
+\*\* 참고: 위 명세서는 ANTLR이라는 도구에서 사용되도록 작성되었으며, 곧 다시 이에 대해 다룰 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론 언어 자체가 우스꽝스러워 보이지만 몇 가지 이유로 흥미로운 점들이 있어요. 우선, 모든 표현은 괄호로 둘러싸야 하는 것이 필수적이에요. 이렇게 하니 코드 작성이 매우 귀찮지만, 문법이 모호하지 않다는 장점이 있어요. 둘째로, 익명 함수만 정의할 수 있다는 점을 주목해봐요 — 파이썬의 def와 같은 구문이 없어요. 마지막으로, 이 언어의 모든 함수 (기본 계산 외)는 정확히 하나의 인수를 가져야 해요. 조금 후에 이 두 가지 설계 결정의 영향을 살펴볼게요.
 
@@ -114,7 +164,18 @@ LINE_COMMENT: '🥱' ~[\r\n]* -> skip;
 
 사용법은 꽤 간단해요. 아래 단계를 따라해보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 여기에서 ANTLR Java 이진 파일을 다운로드하세요.
 - 문법에 맞는 .g4 파일(위와 같은)을 만드세요. ANTLR는 이모지를 잘 처리하지 못하기 때문에, 언어에 이모지를 사용할 계획이라면 다음 파이썬 스크립트를 실행하여 문법에서 이모지를 제거해주십시오:
@@ -128,10 +189,10 @@ def demojify_file(input_file, output_file):
         input_text = f.read()
 
     input_text = emoji.demojize(input_text)
-    
+
     with open(output_file, "w", encoding="utf-8") as f:
         f.write(input_text)
-        
+
 if __name__ == "__main__":
     input_file = sys.argv[1]
     output_file = sys.argv[2]
@@ -142,7 +203,18 @@ if __name__ == "__main__":
 
 그런 다음 생성된 구문 분석 파일을 가져와 다음과 같이 사용할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from antlr4 import *
@@ -162,7 +234,7 @@ if __name__ == "__main__":
     token_stream = CommonTokenStream(lexer)
     parser = EmojiLangParser(token_stream)
     tree = parser.program()
-    
+
     if parser.getNumberOfSyntaxErrors() > 0:
         exit(1)
 ```
@@ -173,8 +245,18 @@ if __name__ == "__main__":
 
 트리를 다루고 있기 때문에 우리의 해석기는 자연스럽게 재귀적인 개념이 될 것입니다. 그러나 일부 기능을 정확히 어떻게 구현할지에 대한 선택지가 있습니다. 이 튜토리얼에서는 변수를 주소에 바인딩하는 환경을 사용한 뒤, 주소를 값에 매핑하는 가변 스토어를 사용하는 해석기를 구축할 것입니다. 이 아이디어는 꽤 흔한데, 모든 곳에서 사용되는 것은 아니지만 적절한 범위를 유지하고 변수 변이를 지원할 수 있게 합니다. 구현의 편의를 위해 우리의 해석기는 공통 값 구조체를 반환하도록 할 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 값, 저장소 및 환경
 
@@ -184,18 +266,18 @@ if __name__ == "__main__":
 class Value:
     def __init__(self, value):
         self.value = value
-        
+
     def __str__(self) -> str:
         return str(self.value)
-        
+
 class NumValue(Value):
     def __init__(self, value: float):
         super().__init__(value)
-        
+
 class StringValue(Value):
     def __init__(self, value: str):
         super().__init__(value)
-        
+
 class BoolValue(Value):
     def __init__(self, value: bool):
         super().__init__(value)
@@ -203,42 +285,53 @@ class BoolValue(Value):
 
 변수를 값들로 매핑하기 위해, 우리는 환경과 저장소도 만들어 볼 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 class EnvLookupException(Exception):
     pass
-        
+
 class Environment:
     def __init__(self):
         self.vars = {}
-        
+
     def set_var(self, name, addr: int):
         self.vars[name] = addr
-        
+
     def get_var(self, name):
         if name not in self.vars:
             raise EnvLookupException(f"Variable {name} not found in environment")
         return self.vars[name]
-    
+
     def copy(self):
         new_env = Environment()
         new_env.vars = self.vars.copy()
         return new_env
-    
+
 class Store:
     def __init__(self):
         self.store = []
-        
+
     def alloc(self, value: Value):
         self.store.append(value)
         return len(self.store) - 1
-    
+
     def get(self, addr: int):
         if addr >= len(self.store):
             raise EnvLookupException(f"Address {addr} not found in store")
         return self.store[addr]
-    
+
     def set(self, addr: int, value: Value):
         if addr >= len(self.store):
             raise EnvLookupException(f"Address {addr} not found in store")
@@ -257,12 +350,23 @@ class ClosureValue(Value):
         self.param = param
         self.body = body
         self.env = env
-        
+
     def __str__(self) -> str:
         return f"<function>"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 너가 환경을 함수에 저장해야 하는 이유에 대해 물을 수도 있겠지만, 만약에 우리가 다음과 같은 함수 값을 가지고 있는 경우를 상상해보자:
 
@@ -273,7 +377,7 @@ class FunctionValue(Value):
         super().__init__(None)
         self.param = param
         self.body = body
-        
+
     def __str__(self) -> str:
         return f"<function>"
 ```
@@ -303,7 +407,18 @@ def g2(y):
 print(f(4))  # Should crash
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 케이스에서 g에 대한 여전히 y 범위를 보장하려면 동적 스코핑을 구현해야 합니다 (프로그램이 실행되는 동안 변수가 지워지지 않고 환경에 추가되는 범위). 서퍼 코드가 실제로 실행되고 9를 인쇄할 수 있도록 클로저 없이 동적 스코핑을 적용해야 합니다. 그러나 하단 코드가 제대로 충돌하려면 동적 스코프를 구현할 수 없습니다. 따라서 함수가 생성된 환경을 효과적으로 기억하도록 하려면 환경을 클로저 클래스에 추가해야 합니다⁵.
 
@@ -314,7 +429,7 @@ print(f(4))  # Should crash
 ```js
 class EmojiLangException(Exception):
     pass
-        
+
 TOP_ENV = Environment()
 
 class Interpreter(EmojiLangListener):
@@ -322,7 +437,18 @@ class Interpreter(EmojiLangListener):
         self.store = Store()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 모든 표현 사례를 처리하는 interp 메서드를 생성해야 합니다. 아래와 같이 보일 것입니다:
 
@@ -390,7 +516,18 @@ def interp_atom(self, atm):
     raise EmojiLangException(f"Unknown atom {atm.getText()}")
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 if 조건은 꽤 간단합니다. 조건을 해석한 다음, 조건이 참이면 참인 경우를 해석한 결과를 반환하고 거짓인 경우는 거짓인 경우를 해석한 결과를 반환하면 됩니다. 코드는 다음과 같습니다.
 
@@ -413,7 +550,18 @@ def interp(self, prog, env: Environment) -> Value:
   # ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 기본 계산이 있습니다. 많은 작업을 처리해야하기 때문에 코드 양이 상당한 편이지만, 복잡하지는 않아요:
 
@@ -432,7 +580,7 @@ def interp_base_computation(self, base_computation, env: Environment):
         if isinstance(left, ClosureValue):
             raise EmojiLangException("함수를 비교할 수 없습니다")
         return BoolValue(left.value == right.value)
-    
+
     # 숫자만 계산
     if not isinstance(left, NumValue) or not isinstance(right, NumValue):
         raise EmojiLangException(f"기본 계산 평가 시 숫자가 예상됩니다. {left}과 {right}을(를) 받았습니다")
@@ -445,7 +593,7 @@ def interp_base_computation(self, base_computation, env: Environment):
             raise EmojiLangException("0으로 나눌 수 없습니다")
         return NumValue(left.value / right.value)
     elif base_computation.op.text == "≤":
-        return BoolValue(left.value <= right.value)   
+        return BoolValue(left.value <= right.value)
 ```
 
 아마도 사전(dictionary)을 사용하여 조금 정리할 수도 있지만, 그것은 크게 중요하지 않아요. 그 다음에는 변수 할당이 있습니다. 이것도 별로 복잡하지 않죠. 여기서 우리가 정확히 무엇을 원하는지에 대한 몇 가지 선택 사항이 있습니다. 구체적으로, 새 변수가 새롭게 생성되는 것을 허용할지 기존 변수만 수정할지 결정해야 합니다. 저는 후자를 선택하겠습니다. 그 결과 코드는 다음과 같습니다:
@@ -458,7 +606,18 @@ def interp_var_assignment(self, var_assign, env: Environment):
     return value
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 함수 적용이 있습니다. 여기서는 네 가지 단계를 따라야 합니다. 먼저 호출하는 함수를 해석하여 클로저를 가져옵니다. 그런 다음 인수를 해석합니다. 그런 다음 인수를 클로저의 환경 복사본에 바인딩합니다. 마지막으로 새로운 환경에서 클로저의 본문을 해석합니다. 코드는 다음과 같이 보이게 됩니다:
 
@@ -489,15 +648,26 @@ if __name__ == "__main__":
     token_stream = CommonTokenStream(lexer)
     parser = EmojiLangParser(token_stream)
     tree = parser.program()
-    
+
     if parser.getNumberOfSyntaxErrors() > 0:
         exit(1)
-    
+
     interpreter = Interpreter()
     interpreter.interp(tree.expr(), TOP_ENV)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 우리 언어로 놀아보기
 
@@ -511,12 +681,21 @@ if __name__ == "__main__":
 
 그리고 이를 실행하려면 단순히 이렇게 하시면 돼요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 > python emoji_lang.py helloworld.eml
-Hello World!
-
+> Hello World!
 
 (위 코드는 물론, 해당 프로그램이 helloworld.eml이라는 파일에 존재한다고 가정합니다.)
 
@@ -524,7 +703,18 @@ Hello World!
 
 첫 번째 섹션에서 언급했듯이, 우리의 프로그래밍 언어는 함수가 하나의 인수만을 가져야 한다는 점에서 흥미로운 특징을 가지고 있습니다. 그렇다면 다변수 함수와 유사한 효과를 어떻게 만들 수 있을까요? 예를 들어, 다음의 파이썬 코드를 살펴보십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def f(x, y):
@@ -546,37 +736,55 @@ print((f(3))(4))
 
 위와 같은 고차 arity 함수를 일변량 함수로 변환하는 개념을 currying 이라고 합니다. 이는 어떤 arity 의 함수에 대해서도 동작하며, arity 가 n 인 함수 f 에 대해 n-1 번의 currying 만을 수행하면 됩니다. 이를 이모지 언어에서 표현하면 다음과 같이 프로그램을 작성할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 🏃‍♂️🏃‍♂️🏃‍♂️
-   (📋
-       (🖨️ ("두 숫자를 입력하여 합계를 계산합니다."))
-       (🖨️
-           (🏭
-               (🏭 
-                   (🧑‍🏭 x ⚒️ 
-                       (🧑‍🏭 y ⚒️
-                           ((x) ➕ (y))
-                       )
-                   )
-               (🔢))
-           (🔢))
-       )
-   )
+(📋
+(🖨️ ("두 숫자를 입력하여 합계를 계산합니다."))
+(🖨️
+(🏭
+(🏭
+(🧑‍🏭 x ⚒️
+(🧑‍🏭 y ⚒️
+((x) ➕ (y))
+)
+)
+(🔢))
+(🔢))
+)
+)
 🛑🛑🛑
 
-
 이것의 Python 번역은:
-
 
 print("두 숫자를 입력하여 합계를 계산합니다.")
 print(((lambda x: (lambda y: x + y)))(float(input()))(float(input())))
 
-
 또는 더 읽기 쉽게,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 print("두 숫자를 입력하여 합산합니다.")
@@ -593,6 +801,7 @@ print(f(x)(y))
 ```
 
 또한 처음의 Python 반복이 이름이 지정된 함수를 사용하지 않았다는 것에 유의하십시오. 하지만 우리가 실제로 필요하지는 않지만, 물론 가독성을 위해 유용합니다. 그런 다음,
+
 ```js
 > python emoji_lang.py currying.eml
 두 숫자를 입력하여 합산하시오
@@ -603,7 +812,18 @@ print(f(x)(y))
 
 ## 재귀
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 똑똑한 작은 요령을 쓸 수 있어요. 함수들이 값이기 때문에, 함수를 호출할 때 자기 자신에 대한 함수를 전달할 수 있어요. 그렇게 하면 재귀 호출이 가능해져요.
 
@@ -616,7 +836,18 @@ while n > 0:
   n -= 1
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 이를 재귀 버전으로 변환할 수 있습니다. 다음과 같은 방법을 사용할 수 있어요:
 
@@ -639,13 +870,13 @@ def while_loop(condition, body):
 class Box:
     def __init__(self, n):
         self.n = n
-    
+
     def set_n(self, n):
         self.n = n
-        
+
     def get_n(self):
         return self.n
-    
+
 n = Box(int(input()))
 
 def body():
@@ -675,19 +906,30 @@ def body():
 
 def call_while(loop_func, condition, body):
     loop_func(loop_func, condition, body)
-    
+
 call_while(while_loop, lambda: n.get_n() > 0, body)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실제로, while_loop 함수가 자신을 매개변수로 취하도록 만듭니다. 그럼에도 불구하고 while_loop 함수 내에서 자신을 호출할 수 있게 되어 while_loop 함수가 재귀적으로 자신을 호출할 수 있게 됩니다.
 
 물론, 우리의 언어에 lambda화하고 커링해야 하므로, 다음과 동등한 코드를 만들어야 합니다:
 
 ```js
-(((lambda while_loop: 
-    lambda n: 
+(((lambda while_loop:
+    lambda n:
         while_loop(while_loop)
                   (lambda bogus: n.get_n() > 0)
                   (lambda bogus: print(n.get_n()) or n.set_n(n.get_n() - 1)))
@@ -700,7 +942,18 @@ call_while(while_loop, lambda: n.get_n() > 0, body)
 
 이것은 약간 복잡할 수 있지만 작동합니다. 이를 이모지 언어로 표현하면
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 🏃‍♂️🏃‍♂️🏃‍♂️
@@ -716,10 +969,10 @@ call_while(while_loop, lambda: n.get_n() > 0, body)
                         )))
                 ))
             😴
-                아래는 while 함수입니다. 재귀 호출을 위해 자신을 인자로 받습니다 
+                아래는 while 함수입니다. 재귀 호출을 위해 자신을 인자로 받습니다
                 (이 외에도 이를 수행하는 다른 방법이 있지만, 재귀 호출을 통한 자기 전달은 상당히 간단합니다)
 
-                ARGS: 
+                ARGS:
                 1. self(자기 자신)
                 2. condition_func (참 또는 거짓을 반환하는 0인자 함수)
                 3. body (참일 때 실행할 아무것도 반환하지 않는 0인자 함수)
@@ -731,16 +984,16 @@ call_while(while_loop, lambda: n.get_n() > 0, body)
                 (🧑‍🏭 condition_func ⚒️
                     (🧑‍🏭 body ⚒️
                         (
-                            🤔 (🏭 (condition_func) ("BOGUS")) ❓ 
-                                (📋 
-                                    (🏭 (body) ("BOGUS")) 
+                            🤔 (🏭 (condition_func) ("BOGUS")) ❓
+                                (📋
+                                    (🏭 (body) ("BOGUS"))
                                     (🏭 (🏭 (🏭 (self) (self))
                                             (condition_func))
-                                            (body))) : 
+                                            (body))) :
                                 (👎)
                         ))))
         )
-    (🔢))       
+    (🔢))
 🛑🛑🛑
 ```
 
@@ -757,8 +1010,18 @@ call_while(while_loop, lambda: n.get_n() > 0, body)
 
 ## 추가 보너스: Y 컴비네이터
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 호출할 때마다 while에 자체를 전달하는 것은 다소 귀찮은 작업일 수 있습니다. 그래서 이미 커리된 상태로 자체가 있는 while 함수를 만들 수 있다면 어떨까요? 이를 달성할 수 있는 것이 Y Combinator입니다. Y 컴비네이터는 다음과 같이 보입니다:
 
@@ -770,65 +1033,74 @@ Y = lambda g: (lambda f: g(lambda arg: f(f)(arg))) (lambda f: g(lambda arg: f(f)
 
 이 컴비네이터를 사용하면 우리의 코드를 다음과 같이 변경할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 🏃‍♂️🏃‍♂️🏃‍♂️
-    (🏭
-        (🏭
-            (🏭
-                (🧑‍🏭 y_combinator ⚒️
-                    (🧑‍🏭 while ⚒️
-                        (🧑‍🏭 n ⚒️
-                            (📋
-                                🥱 y-combinate our while
-                                (📦 while 🔜 (🏭 (y_combinator) (while)))
-                                (🏭 (🏭 (while)
-                                        (🧑‍🏭 bogus ⚒️ (🤔 ((n) ≤ (0)) ❓ (👎) : (👍))))
-                                        (🧑‍🏭 bogus ⚒️ (📋
-                                                (🖨️ (n))
-                                                (📦 n 🔜 ((n) ➖ (1)))
-                                        ))
-                                )
-                            )
-                        )
-                    )
-                )
-                😴
-                    Our y combinator function - this allows for recursion without e.g. self passing
-                    by effectively currying the function and passing it to itself.
-                ⏰
-                (🧑‍🏭 fn_nr ⚒️
-                    (🏭
-                       (🧑‍🏭 cc ⚒️
-                            (🏭 (fn_nr) 
-                                (🧑‍🏭 x ⚒️ (🏭 (🏭 (cc) (cc)) (x)))
-                            )
-                       )
-                       (🧑‍🏭 cc ⚒️
-                            (🏭 (fn_nr) 
-                                (🧑‍🏭 x ⚒️ (🏭 (🏭 (cc) (cc)) (x)))
-                            )
-                       )
-                    )
-                )
-            )
-            (🧑‍🏭 while ⚒️
-                    (🧑‍🏭 condition_func ⚒️
-                        (🧑‍🏭 body ⚒️
-                            (
-                                🤔 (🏭 (condition_func) ("BOGUS")) ❓ 
-                                    (📋 
-                                        (🏭 (body) ("BOGUS")) 
-                                        (🏭 (🏭 (while)
-                                                (condition_func))
-                                                (body))) : 
-                                    (👎)
-                            ))))
-        )  
-    (🔢))    
+(🏭
+(🏭
+(🏭
+(🧑‍🏭 y_combinator ⚒️
+(🧑‍🏭 while ⚒️
+(🧑‍🏭 n ⚒️
+(📋
+🥱 y-combinate our while
+(📦 while 🔜 (🏭 (y_combinator) (while)))
+(🏭 (🏭 (while)
+(🧑‍🏭 bogus ⚒️ (🤔 ((n) ≤ (0)) ❓ (👎) : (👍))))
+(🧑‍🏭 bogus ⚒️ (📋
+(🖨️ (n))
+(📦 n 🔜 ((n) ➖ (1)))
+))
+)
+)
+)
+)
+)
+😴
+Our y combinator function - this allows for recursion without e.g. self passing
+by effectively currying the function and passing it to itself.
+⏰
+(🧑‍🏭 fn_nr ⚒️
+(🏭
+(🧑‍🏭 cc ⚒️
+(🏭 (fn_nr)
+(🧑‍🏭 x ⚒️ (🏭 (🏭 (cc) (cc)) (x)))
+)
+)
+(🧑‍🏭 cc ⚒️
+(🏭 (fn_nr)
+(🧑‍🏭 x ⚒️ (🏭 (🏭 (cc) (cc)) (x)))
+)
+)
+)
+)
+)
+(🧑‍🏭 while ⚒️
+(🧑‍🏭 condition_func ⚒️
+(🧑‍🏭 body ⚒️
+(
+🤔 (🏭 (condition_func) ("BOGUS")) ❓
+(📋
+(🏭 (body) ("BOGUS"))
+(🏭 (🏭 (while)
+(condition_func))
+(body))) :
+(👎)
+))))
+)  
+ (🔢))  
 🛑🛑🛑
-
 
 이제, y-컴비네이트 된 후 while에 대한 호출이 그 자신을 전달할 필요가 없이 조건과 본문을 전달하는 것만 포함되어 있다는 점에 주목하세요. 그리고 여전히 다음 결과를 얻을 수 있습니다.
 
@@ -843,24 +1115,42 @@ Y = lambda g: (lambda f: g(lambda arg: f(f)(arg))) (lambda f: g(lambda arg: f(f)
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 축하드려요! 이제 아마도 여러분만의 프로그래밍 언어를 만들었고 그 안에서 재미있는 일들을 코딩했을 거예요. EmojiLang 같은 것은 실제로 많은 유용성이 없지만, 여러분만의 언어를 만들어 다양한 용도로 활용해볼 수 있다는 것을 상상할 수 있어요. 예를 들어 자주 하는 작업을 빠르게 수행할 수 있는 초 특정한 스크립팅 언어를 만들어보는 것 등이 있겠죠.
 
 도전을 좋아하신다면, 아래 연습 문제들을 시도해보세요:
 
-**연습 1:** ANTLR를 사용하지 않고 아래 언어에 대한 간단한 파서와 인터프리터를 만드세요. 괄호가 우선순위를 갖고, 그 외 연산은 동등한 우선순위를 갖도록 해보세요. (예: 4 + 4 * 3은 24로 계산되어야 하며, 16이 아니어야 합니다)
+**연습 1:** ANTLR를 사용하지 않고 아래 언어에 대한 간단한 파서와 인터프리터를 만드세요. 괄호가 우선순위를 갖고, 그 외 연산은 동등한 우선순위를 갖도록 해보세요. (예: 4 + 4 \* 3은 24로 계산되어야 하며, 16이 아니어야 합니다)
 
 ```js
-EXPR = 숫자
-       | EXPR + EXPR
-       | EXPR - EXPR
-       | EXPR * EXPR
-       | EXPR / EXPR
-       | (EXPR)
+EXPR =
+  숫자 | (EXPR + EXPR) | (EXPR - EXPR) | (EXPR * EXPR) | (EXPR / EXPR) | EXPR;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Exercise 2: 위의 코드를 수정하여 연산자 우선순위를 추가해보세요.
 
@@ -889,7 +1179,18 @@ FUNDEF = 'def' <name> '(' <args>* '):' EXPR
 
 Exercise 4 (Easy → Very Very Hard): 다양한 실제 언어에 대한 .g4 파일은 여기서 찾을 수 있습니다. 그 중 하나에 대한 인터프리터를 구현해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 문의 사항이 있으시면 mchak@calpoly.edu 로 연락해주세요.
 
@@ -903,7 +1204,18 @@ Exercise 4 (Easy → Very Very Hard): 다양한 실제 언어에 대한 .g4 파�
 - 여전히 환경에서 상자 값을 사용하여 변이를 허용할 수는 있지만, 스토어는 대부분의 언어가 하는 것과 더 유사하며, 적어도 나에게는 더 직관적입니다.
 - 자세한 정보는 7 Functions Anywhere (brown.edu) 참조하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 6. 여기서 상자를 사용해야 하는 이유는 Python 환경이 우리와 같은 방식으로 작동하지 않기 때문입니다. 예를 들어, 다음을 실행할 수 없습니다:
 
@@ -912,12 +1224,12 @@ Exercise 4 (Easy → Very Very Hard): 다양한 실제 언어에 대한 .g4 파�
 def get_body_and_cond(inp):
     n = inp
     condition = lambda: n > 0
-    
+
     def body():
         print(n)
         n -= 1
     return condition, body
-    
+
 c, b = get_body_and_cond(float(input()))
 
 while_loop(c, b)

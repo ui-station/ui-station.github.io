@@ -3,14 +3,12 @@ title: "iOS에서 이미지 자원을 효율적으로 관리하는 5가지 전�
 description: ""
 coverImage: "/assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_0.png"
 date: 2024-06-19 11:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_0.png
 tag: Tech
 originalTitle: "5 Strategies for Managing Image Resources Effectively in iOS"
 link: "https://medium.com/gitconnected/5-effective-strategies-for-managing-image-resources-in-ios-45681f475461"
 ---
-
-
 
 ![Image](/assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/gitconnected/5-effective-strategies-for-managing-image
 
 시작해 보겠습니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 목차
 
@@ -35,7 +43,18 @@ link: "https://medium.com/gitconnected/5-effective-strategies-for-managing-image
 
 이전 프로젝트에서 팀은 모든 이미지에 PDF 형식을 사용했습니다. 주된 이유는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 유지 관리가 쉽습니다: 3 개의 PNG 이미지(1x, 2x, 3x) 대신 1 개의 PDF 이미지만 유지 관리하면 됩니다.
 - Xcode는 PDF 형식에 대한 벡터 데이터 보존을 지원합니다.
@@ -46,8 +65,18 @@ Xcode 15 이전에는 아카이브할 때 Xcode가 PDF 이미지를 3개의 PNG 
 
 다음 이미지는 예제 프로젝트를 아카이브한 후의 "Assets.car" 파일입니다. 각 PDF 이미지가 3개의 PDF 이미지로 생성됨을 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_1.png)
 
@@ -57,8 +86,18 @@ Now, let’s compare the “Asset.car” file size between using PNG images vs u
 
 The “Assets.car” size in the project that uses PNG images is much smaller than using PDF images.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 권장 사항:
 
@@ -69,7 +108,18 @@ The “Assets.car” size in the project that uses PNG images is much smaller th
 
 앱 크기를 줄이는 두 번째 방법은 이미지를 프로젝트에 추가하기 전에 압축하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 이미지를 살펴봅시다. 이미지를 몇 번 압축한 후 이미지 크기가 83% 감소했지만 품질 차이를 거의 느끼지 못할 수 있어요(특히 iPhone 화면에서). 이미지가 사용되는 용도를 고려하면 앱에 최적의 압축 설정을 결정하는 데 도움이 될 거에요.
 
@@ -80,7 +130,18 @@ The “Assets.car” size in the project that uses PNG images is much smaller th
 - TinyImage Compressor를 사용하세요 — Figma 플러그인 도구로 Figma에서 직접 압축된 이미지를 내보내는 데 도움이 됩니다.
 - 저희 대규모 엔지니어링 팀에서는 수백 개의 아이콘이 있어요. 크기를 관리하기 위해 사전 커밋 후크 워크플로에 스크립트를 추가합니다. 최근에 추가된 아이콘의 크기가 100 KB를 초과하는지 확인해요. 그렇다면, 엔지니어에게 압축할 것을 요청합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. 이미지 다운샘플링
 
@@ -90,7 +151,18 @@ The “Assets.car” size in the project that uses PNG images is much smaller th
 
 이미지를 표시하는 데 필요한 메모리 푸트프린트를 계산하는 공식은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 5MB 크기의 이미지(6000x4000px)가 있다면, 해당 이미지를 디코딩하고 표시하는 데 필요한 메모리 공간은 96MB에 달할 거예요.
 
@@ -100,7 +172,18 @@ The “Assets.car” size in the project that uses PNG images is much smaller th
 
 ## 자동화하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대형 이미지를 표시함으로써 불필요한 메모리를 낭비하고 있는지 어떻게 알 수 있을까요? 수동 접근 방식은 이미지 크기와 이미지 뷰의 프레임을 비교해야 합니다.
 
@@ -110,7 +193,18 @@ The “Assets.car” size in the project that uses PNG images is much smaller th
 
 다음은 접근 방식의 예시 버전입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 final class CustomImageView: UIImageView {
@@ -131,7 +225,7 @@ final class CustomImageView: UIImageView {
                 blurBackground.frame = bounds
                 blurBackground.alpha = 0.7
                 self.blurBackground = blurBackground
-                
+
                 let warning = UIImageView(image: UIImage(systemName: "exclamationmark.triangle"))
                 warning.tintColor = .red
                 warning.translatesAutoresizingMaskIntoConstraints = false
@@ -148,9 +242,9 @@ final class CustomImageView: UIImageView {
         }
 #endif
     }
-    
+
 // 이미지가 이미지 뷰의 프레임보다 큰지 확인
-    private var isImageTooLarge: Bool { 
+    private var isImageTooLarge: Bool {
         guard let image = image else { return false }
         return image.size.height * image.size.width > self.frame.height * self.frame.width
     }
@@ -163,7 +257,18 @@ final class CustomImageView: UIImageView {
 
 ## 제안:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 특정 크기로 이미지를 가져오는 fetch 지원, 예: https://'PATH_TO_IMAGE'/'IMAGE_ID'/'size'.jpg
 - 이미지 크기를 조정하기 위해 다운샘플링 기술 사용
@@ -174,7 +279,18 @@ final class CustomImageView: UIImageView {
 
 우리 팀은 중복 이미지를 확인하는 프로세스를 자동화했습니다. 프로젝트의 모든 이미지를 스캔하고 중복을 비교하기 위한 Python 스크립트를 작성했습니다. 더 나아가, 이 스크립트를 우리의 CI 워크플로에 통합하여 때때로 확인하고, 그런 다음 팀에 보고서를 보내게 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제안:
 
@@ -185,8 +301,18 @@ GitHub에서는 중복 이미지를 감지하는 오픈 소스 Python 프로젝�
 중복 이미지와 유사하게 사용되지 않는 이미지는 앱 크기를 불필요하게 증가시키기 때문에 제거해야 해요.
 FengNiao는 사용되지 않는 이미지를 감지하고 제거하는 데 도움이 되는 오픈 소스 도구에요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-5StrategiesforManagingImageResourcesEffectivelyiniOS_5.png)
 
@@ -196,8 +322,18 @@ FengNiao는 사용되지 않는 이미지를 감지하고 제거하는 데 도�
 
 # 결론
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지 리소스를 관리하는 데 조금 더 노력하면 앱의 성능을 효과적으로 개선할 수 있어요.
 
@@ -207,7 +343,17 @@ FengNiao는 사용되지 않는 이미지를 감지하고 제거하는 데 도�
 
 읽어 주셔서 감사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:1200/0*CN-R8hHdtZlcJFoV.gif)

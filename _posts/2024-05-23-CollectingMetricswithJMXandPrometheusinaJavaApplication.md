@@ -18,7 +18,18 @@ link: "https://medium.com/@estevaosaleme/collecting-metrics-with-jmx-and-prometh
 
 우리는 지표를 수집하고 분석함으로써 응용 프로그램의 상태, 동작 및 건강 상태에 대한 통찰력을 얻을 수 있습니다. JMX 및 프로메테우스와 같은 도구를 활용하여 간단한 방식으로 자바 응용 프로그램 지표에 대한 심도있는 가시성을 제공하는 강력한 모니터링 인프라를 구축할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글에서는 다음을 배울 것입니다:
 
@@ -32,7 +43,18 @@ link: "https://medium.com/@estevaosaleme/collecting-metrics-with-jmx-and-prometh
 
 # JMX란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 JMX (Java Management Extensions)은 애플리케이션, 시스템 객체, 장치 및 서비스 중심 네트워크를 관리하고 모니터링하는 도구를 제공하는 네이티브 Java 기술입니다. 이러한 자원들은 MBeans(또는 관리되는 빈)이라고 불리는 객체로 나타낼 수 있습니다.
 
@@ -42,7 +64,18 @@ JMX (Java Management Extensions)은 애플리케이션, 시스템 객체, 장치
 
 ## Mbeans 구현하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 JMX에 메트릭을 노출하는 MBean 규칙은 다음과 같습니다:
 
@@ -60,7 +93,18 @@ public interface DemoJmxMBean {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로 이 인터페이스를 구현해야 합니다 (단계 2). 다음과 같이 DemoJmx 클래스에서 작업해 봅시다:
 
@@ -98,7 +142,18 @@ try {
     mbs.registerMBean(demoService, name);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시간을 절약하기 위해 전체 코드는 제 Github에서 확인할 수 있어요. 원하는 IDE를 선택하고 이 기사를 따라해보세요.
 
@@ -108,7 +163,18 @@ try {
 
 <img src="/assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 나처럼 JConsole을 사용 중이라면 MBeans 탭으로 이동하면 DemoJmxMetrics라는 우리의 MBeans가 있을 것입니다 (그림 2).
 
@@ -118,7 +184,18 @@ JConsole UI에 노출된 volume 속성을 확인할 수 있습니다. 그러나 
 
 # Prometheus란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로메테우스는 신뢰성과 확장성을 위해 설계된 오픈 소스 시스템 모니터링 및 경고 도구입니다. 특히 동적 클라우드 환경, 컨테이너화된 응용프로그램 및 마이크로서비스 아키텍처의 모니터링에 적합합니다. 프로메테우스는 Cloud Native Computing Foundation (CNCF)의 일부입니다. 이 어떻게 우리를 도울까요?
 
@@ -128,7 +205,18 @@ JConsole UI에 노출된 volume 속성을 확인할 수 있습니다. 그러나 
 
 ## 프로메테우스 JMX 내보내기로 JMX 메트릭 노출하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단순해요. 먼저 GitHub 릴리스 페이지에서 최신 jmx_prometheus_javaagent-`버전`.jar 파일을 다운로드하세요.
 
@@ -141,7 +229,18 @@ rules:
 - pattern: ".*"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로메테우스에 메트릭 유형을 지정하려면 config.yaml에서해야 합니다. 이것은 JMX 익스포터 설명서에 설명되어 있습니다.
 
@@ -151,7 +250,18 @@ rules:
 
 위와 동일합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 java -javaagent:./../jmx_prometheus_javaagent-0.20.0.jar=8080:./../config.yaml -classpath mbeans-example/target/classes com.example.DemoJmx
@@ -163,8 +273,18 @@ java -javaagent:./../jmx_prometheus_javaagent-0.20.0.jar=8080:./../config.yaml -
 
 ![이미지](/assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 데이터가 캡처되는 것을 확인했지만, 이는 확실히 시각화하기에 최적의 방법은 아닙니다. 다음에는 이에 대해 처리해 봅시다.
 
@@ -174,7 +294,18 @@ java -javaagent:./../jmx_prometheus_javaagent-0.20.0.jar=8080:./../config.yaml -
 
 ![Figure 5](/assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼, 새로운 작업을 추가하여 prometheus.yml 구성 파일을 업데이트합니다:
 
@@ -188,7 +319,18 @@ java -javaagent:./../jmx_prometheus_javaagent-0.20.0.jar=8080:./../config.yaml -
 
 마지막으로, prometheus.yml 파일을 위한 볼륨을 만들어 컨테이너 이미지를 사용하여 Prometheus 서버를 실행합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 docker run \
@@ -203,8 +345,18 @@ docker run \
 
 ![이미지](/assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 볼륨 측정치의 변화를 시각화하기 위해 JConsole 인터페이스를 사용하여 볼륨을 증가하거나 감소시킬 수 있습니다 (그림 7).
 
@@ -214,7 +366,18 @@ increaseVolume() 또는 decreaseVolume()을 클릭한 후에는 볼륨 속성이
 
 그래프를 시각화하기 위해 Graph 메뉴로 이동하여 원하는 메트릭을 검색할 수 있습니다. 그림 8에서는 볼륨이라는 데모용으로 생성한 메트릭을 찾고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-CollectingMetricswithJMXandPrometheusinaJavaApplication_8.png" />
 
@@ -224,7 +387,18 @@ increaseVolume() 또는 decreaseVolume()을 클릭한 후에는 볼륨 속성이
 
 이 기사에서는 MBean 규약을 따르는 방법을 배웠습니다. 또한, 시계열 방식으로 이러한 메트릭을 시각화하기 위해 프로메테우스 서버를 설정했습니다. 프로메테우스가 노출하는 데이터를 시각화하기 위해 Grafana와 같은 다른 도구를 사용할 수 있음에 유의하십시오. Grafana는 대시보드를 생성, 탐색 및 공유하는 데 풍부한 기능 세트를 제공하는 도구입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기타 유의할 점은 Kafka, RabbitMQ, ActiveMQ 등을 포함한 많은 인기있는 Java 기반 라이브러리들이 기본적으로 JMX(metrics)를 제공한다는 것입니다. 이러한 메트릭들은 여기에서 배운 방법과 마찬가지로 노출될 수 있습니다. 따라서 이러한 MBeans를 활용하여 사용 가능한 메트릭을 찾고 응용 프로그램에서 간편하게 모니터링할 수 있습니다.
 

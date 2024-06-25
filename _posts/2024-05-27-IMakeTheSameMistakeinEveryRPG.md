@@ -3,13 +3,12 @@ title: "모든 RPG에서 늘 같은 실수를 하곤 해"
 description: ""
 coverImage: "/assets/img/2024-05-27-IMakeTheSameMistakeinEveryRPG_0.png"
 date: 2024-05-27 16:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-IMakeTheSameMistakeinEveryRPG_0.png
 tag: Tech
 originalTitle: "I Make The Same Mistake in Every RPG"
 link: "https://medium.com/@xander51/i-make-the-same-mistake-in-every-rpg-2405c985e46c"
 ---
-
 
 다이아블로 IV는 대부분의 다른 비디오 게임 RPG와 마찬가지로 다양한 플레이 메카닉과 시스템이 풍부합니다. 플레이어들은 다양한 장비, 스킬, 업그레이드, 재사용 대기시간, 회피, 공격 등을 균형 있게 유지해야 하며, 도전으로 가득한 큰 오픈 월드를 탐험합니다.
 
@@ -19,9 +18,20 @@ link: "https://medium.com/@xander51/i-make-the-same-mistake-in-every-rpg-2405c98
 
 여기서 말하는 것은 단순한 치유 포션이 아니라 게임이 제공하는 다른 어떤 포션이든 말이죠. 다이아블로 IV에서는 다양한 일시적인 스탯 부스트 포션과 엘릭서를 찾거나 제작할 수 있습니다. 이러한 포션들은 경험치 보너스나 추가 공격 속도와 같은 큰 혜택을 제공하며 종종 15분이나 30분과 같은 긴 시간 동안 지속됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-안타깝게도, 이런 유용한 아이템들은 주 인벤토리 페이지보다 더 낮은 위치에 있는 탭에 숨겨져 있습니다. 게임 초반에 한 번만 안내를 받는다는 점이 아쉬울 때가 많아요. 그 이후로 수십 시간을 플레이했는데도, 항상 포션 탭을 확인해봐야겠다는 것을 잊어버리곤 해요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+안타깝게도, 이런 유용한 아이템들은 주 인벤토리 페이지보다 더 낮은 위치에 있는 탭에 숨겨져 있습니다. 게임 초반에 한 번만 안내를 받는다는 점이 아쉬울 때가 많아요. 그 이후로 수십 시간을 플레이했는데도, 항상 포션 탭을 확인해봐야겠다는 것을 잊어버리곤 해요.
 
 가끔씩 생각해보게 되면, 다른 번거로운 문제가 생겨요. 나와 많은 RPG 팬들의 머릿속에 있는 작은 도깨비가 나타나는데, 이 도깨비는 어떤 한정된 아이템을 사용하지 말라고 제게 조언해요. "만약에 추후에 필요할 때를 대비해 두는 게 어때?" 라며 악몽 같은 미소를 짓죠. "이 아이템이 주는 보너스를 사용하지 않고 낭비하게 되면 어떡해? 아이템을 낭비하고 싶지 않겠지?" 그는 의심스러운 주장을 하지만, 매번 이게 이상하게 끌리는 거예요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@xander51/i-make-the-same-mistake-in-every-rpg-2405c98
 
 숨겨진 인벤토리 탭 문제는 조금 더 수정 가능해 보여요. 만약 Diablo IV 포션이 UI의 더 자주 액세스되는 부분에 있다면, 기억하기도 쉬울 것 같아요. 아마 그런데 이 도깨비를 설득할 수만 있다면요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 다른 게임에서도 같은 문제를 겪었어요. 작은 스탯 강화 아이템을 사용하는 게임들이 많거든요. 드래곤 에이지 인퀴지션에서는 무기 공격을 강화하는 다양한 물약과 독을 활용할 수 있는데, 그것들은 메뉴 안에서 더 재미난 마법 주문과 능력들 뒤에 숨겨져 있어요. 암살자의 길 리벨레이션에서는 플레이어들이 다양한 작은 투척 무기와 폭탄을 제작할 수 있는 복잡하고 인상적인 시스템이 있는데, 대부분을 사용하지 않는 이유는 게임의 핵심 메커니즘이 더 쉽게 접근 가능했기 때문이에요.
 
@@ -39,6 +60,17 @@ UI 요소들이 잘 숨겨져 있어서 스탯 강화 물약 같은 것들이 �
 
 RPG 장르의 "장점" 중 하나는 매력적인 기계적 요소들이죠. 그들은 깊이와 플레이어의 선택지로 충만해요. 모든 시스템에 참여할 필요는 없지만, 가장 좋은 시간을 보내고 싶다면 그들과 상호작용해 보는 게 좋아요. 그래서, 아마 한 번에 모든 이상한 물약과 스탯 강화 아이템을 모두 소비해 보세요. 인벤토리가 완전히 비어질 때까지 모두 사용해 보세요. 다시 채우려면 더 많은 것들을 클릭해서 디지털 가방에 다시 채워 넣을 수 있으니까요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상기 게임 제작사 중 어느 누구로부터 글을 쓰도록 요청받지도, 돈을 받지도 않았어요. 언급된 모든 게임은 제 자신이 현금으로 구입했습니다.

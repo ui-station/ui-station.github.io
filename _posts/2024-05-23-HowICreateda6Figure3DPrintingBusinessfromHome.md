@@ -18,7 +18,18 @@ link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-
 
 그리고 이제 집에서 맞춤 작업에 주간 약 2-4시간만 쓰면 될 정도로 자동화했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것을 어떻게 했는지 배우고 싶으세요?
 
@@ -28,7 +39,18 @@ link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-
 
 내가 당신에게 어떤 제품을 만들고 팔기 위해 가장 적합한 제품을 식별하는 방법을 보여줄 것이며, 어떤 니치들의 예시들을 들어주어 당신에게 아이디어 스프링보드를 제공할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 이를 시작할 때 3D 프린팅 취미를 갖고 제품을 판매할 수 있는 것을 찾는 사람이 아니었습니다.
 
@@ -38,7 +60,18 @@ link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-
 
 그 아이디어를 실현하는 방법을 보여드리고 싶었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2016년에는 시가 모양이 필요한 새로운 마켓이 형성되었습니다.
 
@@ -46,7 +79,18 @@ link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-
 
 바로 이 분야에 진입하고, 능숙하게 다루고, 선도하고 싶다는 생각이 들었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나의 주요 사업인 Cannagar Tools은 수입 금액을 육자리 숫자로 만들어 준 것이에요. 이것은 제가 만든 브랜드와 도구 세트입니다.
 
@@ -56,7 +100,18 @@ link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-
 
 우리는 다양한 모양과 그런 것들이 필요했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사이가 모양을 제조하는 회사들에 연락했어요. 나무로 만들어진 선반과 나 무상의 제품들을 온라인에서 소량 구매하고 제작할 수 있는 것을 찾았는데, 나무에는 그과가 있어서 이 과정에 적합하지 않다는 문제가 생긴 거예요. 플라스틱 제품이 좋은 솔루션이 될 것 같았지만, 맞춤 모양의 최소 주문 수량(Minimum Order Quantity) 때문에 테스트하기 위해 한 가지 사이즈를 주문하면 만 달러에 가까운 비용이 소요될 거예요.
 
@@ -66,7 +121,18 @@ link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-
 
 그래서 제가 그 도구를 판매하기 시작했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 후에 웹사이트를 출시했고, 그 이후의 일은 역사가 되었습니다.
 
@@ -76,7 +142,18 @@ link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-
 
 저는 필요한 도구를 만들기 위해 자신을 위해 3D 프린터를 구입했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3D 디자인 경험이 전혀 없었어요. CAD도 몰랐고, 거기에 대한 지식도 없었어요.
 
@@ -86,7 +163,18 @@ link: "https://medium.com/@automatedincomelifestyle/how-i-created-a-6-figure-3d-
 
 Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판매해도 되나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아니요, 그것은 금지되어 있습니다. 비록 그 모델들이 무료로 제공되긴 하지만, 그 대부분은 상업적으로 이용할 수 없습니다.
 
@@ -96,7 +184,18 @@ Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판
 
 또한 3D 프린팅 서비스를 시작하는 것도 어려울 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거대 기업들과 경쟁 중이네요.
 
@@ -106,7 +205,18 @@ Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판
 
 ## 그래서 저는 특정 분야에 집중하는 것을 추천합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것이 궁극적으로 비즈니스를 성장시키고 귀하의 평판을 쌓는 데 기여할 것입니다. 나중에는 다양한 3D 프린팅 파트너에게 접근하여 비즈니스와 귀하의 제품에 대한 수요를 보여주고 이들과 거래를 체결하여 생산을 맡길 수 있습니다.
 
@@ -116,7 +226,18 @@ Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판
 
 인쇄된 부분 이상의 전문가가 되는 데에 노력할수록, 모든 것이 훨씬 쉬워질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3D 프린팅을 이미 알고 계신 분야에 적용하는 방법을 찾으시면, 훨씬 적은 노력으로 관련 분야를 발전시킬 수 있을 거에요.
 
@@ -126,7 +247,18 @@ Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판
 
 이것들이 여러분에게 많은 영감을 줄 수 있을 거라고 생각해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # OEM 복제 자동차 부품
 
@@ -136,7 +268,18 @@ Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판
 
 친구 중에 한다는 사람이 있어요. 그는 혼다 마니아인데, 나한테 몇 개의 부품들을 만들어달라고 요청했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 당신이 차에 관심이 많은 개발자라면, 이것은 당신에게 적합한 특정 분야일지도 모르겠어요. 당신만의 올바른 것을 찾아 행동해보세요.
 
@@ -146,7 +289,18 @@ Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판
 
 이것은 이미 취미를 가지고 있고 무언가에 열중하는 경우의 또 다른 예시입니다. 스스로에게 묻고 생각해보세요, 내가 원하는 것은 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 무엇이 필요하신가요?
 
@@ -156,8 +310,18 @@ Thingiverse에서 온라인으로 찾은 3D 모델을 그대로 출력해서 판
 
 # 맞춤식 교정용 교정기 / 보청기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot](/assets/img/2024-05-23-HowICreateda6Figure3DPrintingBusinessfromHome_4.png)
 
@@ -167,8 +331,18 @@ There is no limit to the way you can enhance or make more useful through intuiti
 
 # Pet Prosthetics
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-HowICreateda6Figure3DPrintingBusinessfromHome_5.png" />
 
@@ -178,7 +352,18 @@ There is no limit to the way you can enhance or make more useful through intuiti
 
 이것들은 모두 3D 프린팅 된 예시들이고, 정말 멋지게 생겼죠!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이런 것들은 집에서 만들어 사람들의 삶을 더 풍요롭게 할 수 있고, 사람들의 애완동물 삶을 더 행복하게 만들어 줄 수 있어 정말 의미 있는 일을 하는 것 같아요.
 
@@ -188,7 +373,18 @@ There is no limit to the way you can enhance or make more useful through intuiti
 
 ## 읽어줘서 감사합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 즐거우셨다면, 도와주실 수 있는 세 가지 방법이 있어요:
 
@@ -200,7 +396,18 @@ There is no limit to the way you can enhance or make more useful through intuiti
 
 ## 앞으로 나아가고 올라가요 여러분!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Chris
 

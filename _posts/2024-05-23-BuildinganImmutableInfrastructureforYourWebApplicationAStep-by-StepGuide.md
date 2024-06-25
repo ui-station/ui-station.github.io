@@ -3,14 +3,12 @@ title: "웹 애플리케이션을 위한 변경 불가능한 인프라 구축하
 description: ""
 coverImage: "/assets/img/2024-05-23-BuildinganImmutableInfrastructureforYourWebApplicationAStep-by-StepGuide_0.png"
 date: 2024-05-23 14:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-BuildinganImmutableInfrastructureforYourWebApplicationAStep-by-StepGuide_0.png
 tag: Tech
 originalTitle: "Building an Immutable Infrastructure for Your Web Application: A Step-by-Step Guide"
 link: "https://medium.com/@kalimitalha8/building-an-immutable-infrastructure-for-your-web-application-a-step-by-step-guide-ffd7906f95de"
 ---
-
-
 
 # 소개
 
@@ -18,7 +16,18 @@ link: "https://medium.com/@kalimitalha8/building-an-immutable-infrastructure-for
 
 www.linkedin.com/in/mohammedtalhakalimi
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 불변 인프라란?
 
@@ -28,7 +37,18 @@ www.linkedin.com/in/mohammedtalhakalimi
 
 # 프로젝트 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트에서는 Node.js 웹 애플리케이션을 위한 불변 인프라를 만들 것입니다. 이 프로젝트에는 다음이 포함됩니다:
 
@@ -41,12 +61,23 @@ www.linkedin.com/in/mohammedtalhakalimi
 
 # 단계 1: Docker를 사용하여 애플리케이션을 컨테이너화하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 Docker를 사용하여 웹 애플리케이션을 컨테이너화해야 합니다. 프로젝트 디렉토리에 Dockerfile을 만들어주세요:
 
 ```js
-Dockerfile
+Dockerfile;
 ```
 
 ```js
@@ -68,7 +99,18 @@ EXPOSE 3000
 CMD ["node", "app.js"]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 이미지를 빌드하고 테스트해보세요:
 
@@ -79,7 +121,18 @@ docker run -p 3000:3000 my-web-app
 
 # 단계 2: 쿠버네티스로 오케스트레이션하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 도커 컨테이너를 쿠버네티스 클러스터에 배포할 것입니다. deployment.yaml 및 service.yaml 파일을 생성해주세요:
 
@@ -100,10 +153,10 @@ spec:
         app: web-app
     spec:
       containers:
-      - name: web-app
-        image: my-web-app:latest
-        ports:
-        - containerPort: 3000
+        - name: web-app
+          image: my-web-app:latest
+          ports:
+            - containerPort: 3000
 ```
 
 ```yaml
@@ -124,7 +177,18 @@ spec:
 
 쿠버네티스 구성을 적용해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 kubectl apply -f deployment.yaml
@@ -137,7 +201,18 @@ www.linkedin.com/in/mohammedtalhakalimi
 
 테라폼을 사용하여 쿠버네티스 클러스터를 프로비저닝할 것입니다. main.tf 파일을 작성해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # main.tf
@@ -174,7 +249,18 @@ terraform init
 terraform apply
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 클러스터를 사용하도록 kubectl을 구성하세요:
 
@@ -186,7 +272,18 @@ LinkedIn 프로필: www.linkedin.com/in/mohammedtalhakalimi
 
 # 단계 4: CI/CD로 자동화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, GitHub Actions를 사용하여 CI/CD 파이프라인을 설정할 것입니다. .github/workflows/ci-cd-pipeline.yaml 파일을 만들어주세요:
 
@@ -204,39 +301,50 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v1
-    - name: Login to Docker Hub
-      uses: docker/login-action@v1
-      with:
-        username: ${secrets.DOCKER_USERNAME}
-        password: ${secrets.DOCKER_PASSWORD}
-    - name: Build and push Docker image
-      run: |
-        docker build -t my-web-app:latest .
-        docker tag my-web-app:latest ${secrets.DOCKER_USERNAME}/my-web-app:latest
-        docker push ${secrets.DOCKER_USERNAME}/my-web-app:latest
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${secrets.DOCKER_USERNAME}
+          password: ${secrets.DOCKER_PASSWORD}
+      - name: Build and push Docker image
+        run: |
+          docker build -t my-web-app:latest .
+          docker tag my-web-app:latest ${secrets.DOCKER_USERNAME}/my-web-app:latest
+          docker push ${secrets.DOCKER_USERNAME}/my-web-app:latest
   deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Set up kubectl
-      uses: azure/setup-kubectl@v1
-      with:
-        version: 'v1.20.0'
-    - name: Deploy to Kubernetes
-      run: |
-        kubectl apply -f deployment.yaml
-        kubectl apply -f service.yaml
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up kubectl
+        uses: azure/setup-kubectl@v1
+        with:
+          version: "v1.20.0"
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl apply -f deployment.yaml
+          kubectl apply -f service.yaml
 ```
 
 www.linkedin.com/in/mohammedtalhakalimi
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

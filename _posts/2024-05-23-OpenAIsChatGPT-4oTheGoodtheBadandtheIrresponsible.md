@@ -10,7 +10,6 @@ originalTitle: "OpenAI’s ChatGPT-4o: The Good, the Bad, and the Irresponsible"
 link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-and-the-irresponsible-1b6c71ccd69d"
 ---
 
-
 ![OpenAI GPT-4o](/assets/img/2024-05-23-OpenAIsChatGPT-4oTheGoodtheBadandtheIrresponsible_0.png)
 
 지난 주, OpenAI가 GPT-4o ("o는 'onmi'의 약자)의 발표를 했습니다. 놀랍게도, 기대보다는 두려움을 느꼈습니다. 그 느낌이 가시지 않았죠.
@@ -19,8 +18,18 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 
 기술 옹호자일 뿐만 아니라 동시에 그에 의해 초래된 임박한 재앙감을 경험하고 있는 이 상반된 감정 때문에 대형(소형 포함) 기술, 인식적 부당한대, 그리고 인공지능 서사에 대해 탐구의 길로 빠졌습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 우울주의자였나요? 숨은 러다이트주의자였나요? 아니면 그냥 시야가 좁았을 뿐이었나요?
 
@@ -30,7 +39,18 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 
 이 기사에서 OpenAI가 어떻게 중요한 기여자인지 보여주면서 그 대화를 극단적으로 이혁하는 데 어떤 역할을 하는지를 살펴봅니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - ChatGPT-4o 발표 소식에 대한 내용 — 그리고 그렇지 않은 것
 - OpenAI의 작동 방식
@@ -43,7 +63,18 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 
 잘 구성된 발표였어요. 그들의 웹사이트에 있는 공지에는 CTO인 Mira Murati가 진행하는 20분 이상의 비디오가 포함되어 있습니다. 그녀는 새로운 기능에 대해 논의하고 다른 OpenAI 동료들과 함께 몇 가지 데모를 수행합니다. 응용 프로그램 예시와 모델 평가, 안전, 가용성과 같은 주제에 대한 매우 고수준의 정보가 있는 작은 동영상과 스크린샷도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 ChatGPT-4o와 OpenAI에 대한 공식 발표를 통해 배운 내용을 공유할게요.
 
@@ -56,7 +87,18 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 
 ## OpenAI의 대형 기술 플레이북 채택
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 “업데이트”는 인공지능 회사가 실리콘밸리에서 “보스”처럼 보이는 방법에 대해 알아야 한다는 메모를받았음을 보여줍니다.
 
@@ -67,7 +109,18 @@ link: "https://medium.com/code-like-a-girl/openais-chatgpt-4o-the-good-the-bad-a
 
 불행하게도 60년 전의 챗봇 ELIZA 이후에는 많은 변화가 일어나지 않았습니다...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 인간화
 
@@ -78,7 +131,18 @@ OpenAI는 ChatGPT-4o의 능력을 묘사할 때 "이성"과 "이해"와 같은 �
 
 그러나 OpenAI는 AI 규제가 필요하다고 주장하면서도 GPT-4o를 그들의 준비 프레임워크에 따라 평가하고 자발적 약속을 준수하기로 선택했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게이트키퍼피드백
 OpenAI는 “그들”이 사이버 보안, CBRN (화학, 생물학, 방사선, 핵 위협), 설득력 및 모델 자율성의 평가에서 GPT-4o가 추가적으로 수행된 테스트의 추가 증거 없이 중간 위험 이상을 얻지 못했다는 것을 말할 때, 안심하고 계속 진행해야 한다고 말합니다.
@@ -89,7 +153,18 @@ OpenAI는 “그들”이 사이버 보안, CBRN (화학, 생물학, 방사선, 
 
 전문분야 목록을 보면 역사, 지리 또는 철학과 같은 영역을 볼 수 없습니다. 또한, 70명 이상의 전문가가 누구인지 또는 그들이 이 행성에 살고 있는 80억 명의 사람들 사이의 다양성을 어떻게 다룰 수 있는지도 볼 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약하면, OpenAI는 모두를 위해 개발하지만 몇 명의 선택된 사람들의 피드백만을 토대로 합니다.
 
@@ -100,7 +175,18 @@ OpenAI는 “그들”이 사이버 보안, CBRN (화학, 생물학, 방사선, 
 
 뿐만 아니라, 우리를 베타 테스터로서 초대합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제가 뭘까요? 제품은 이미 세상에 공개되었습니다.
 
@@ -111,7 +197,18 @@ OpenAI는 “그들”이 사이버 보안, CBRN (화학, 생물학, 방사선, 
 
 그러나 얼굴 표정이 감정을 나타낸다는 믿음을 뒤엎는 과학적 연구가 많이 있습니다. 게다가, AI 공급업체들이 그 수작을 통해 이익을 얻는 것에 대해 과학자들이 비판을 퍼부었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OpenAI가 그 오해들에 대해 마케팅 수단으로 활용하는 대신 대중에게 그것들에 대해 교육을 돕는 것을 기대해야 할 텐데요?
 
@@ -125,7 +222,18 @@ OpenAI가 그 오해들에 대해 마케팅 수단으로 활용하는 대신 대
 
 하지만, 이것만으로는 제가 느끼는 불안한 기분을 설명하지 못했습니다. 패턴이 그것을 설명했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # OpenAI의 청사진: 이건 기능이지 결함이 아니에요
 
@@ -136,7 +244,18 @@ OpenAI의 모든 제품 발표는 비슷해요: 그들이 일방적으로 결정
 - 트럼프 대통령 임기
 - 코로나19 전염병
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 두 가지 요소 - 어느 순간 얽혀 있는 것처럼 - 저와 수백만 명의 사람들의 삶이 인류에 대한 배려가 없는 무언가/누군가의 변덕에 위험에 처해 있다는 느낌을 일으킨다.
 
@@ -147,7 +266,18 @@ OpenAI의 모든 제품 발표는 비슷해요: 그들이 일방적으로 결정
 
 OpenAI로 돌아와서, 지난 세 달 동안 ChatGPT-4o의 공개를 위해 따르던 동일한 방식의 사례들을 몇 가지 보았습니다. 저는 그 중 세 가지를 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## OpenAI Releases Sora
 
@@ -159,7 +289,18 @@ OpenAI로 돌아와서, 지난 세 달 동안 ChatGPT-4o의 공개를 위해 따
 - "Sora가 해로운 영역을 평가하는 레드 팀원에게 이용 가능해지고 있다"는 것에 대해 우리는 확언받았습니다.
 - 이 새로운 기술의 긍정적인 사용 사례를 식별하고 세계적인 정책 입안자, 교육자 및 예술가들과의 대화가 나준에 있을 것"이라고 우리는 나중에만 알게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론, 우리는 Sora를 약 한 달도 되지 않아, Taylor Swift의 비동의 성적 수치화된 딥페이크 영상이 X에서 확산된 후에 공개한 것은 무모했다는 것에도 경고받았습니다. 이는 유명인 문제가 아니었습니다 - 딥페이크의 96%가 비동의 성적 성향이며, 그 중 99%는 여성을 대상으로 합니다.
 
@@ -167,7 +308,18 @@ OpenAI로 돌아와서, 지난 세 달 동안 ChatGPT-4o의 공개를 위해 따
 
 ## OpenAI Releases Voice Engine
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3월 29일, OpenAI가 "사용자 지정 음성을 만드는 모델인 Voice Engine의 소형 미리보기에서 얻은 교훈"을 공유하는 블로그를 게시했습니다.
 
@@ -177,7 +329,18 @@ OpenAI로 돌아와서, 지난 세 달 동안 ChatGPT-4o의 공개를 위해 따
 
 ## OpenAI, AI 에로티카, 과도한 그로티, 모욕 생성 허용
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5월 8일, OpenAI가 ChatGPT 내의 AI 기술이 어떻게 행동해야 하는지에 대한 초안 가이드라인을 발표했고, '책임 있게' 음란 콘텐츠를 생성하는 방법을 탐구 중이라고 밝혔습니다.
 
@@ -185,7 +348,18 @@ OpenAI로 돌아와서, 지난 세 달 동안 ChatGPT-4o의 공개를 위해 따
 
 OpenAI 문서에서 작업한 OpenAI 직원 Joanne Jang은 출력물이 음란물로 간주되는지 여부는 "당신의 정의에 달렸다"며 추가로 "우리가 가지길 원하는 정확히 이 대화들입니다"라고 말했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비반 키드론, 영국 파벤치 피어이자 아동 온라인 안전을 위한 캠페인가, 가 말한 것에 동의할 수밖에 없어요.
 
@@ -195,7 +369,18 @@ OpenAI 문서에서 작업한 OpenAI 직원 Joanne Jang은 출력물이 음란�
 
 패턴을 봤나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이기적인 행동
 - 예측할 수 없음
@@ -209,7 +394,18 @@ ChatGPT-4o 발표 후, 안전 담당 상급 OpenAI 직원 두 명이 회사를 �
 
 먼저 OpenAI 공동 창업자이자 최고 과학자인 이리야 숫스케버는 X에 떠났다고 게시했다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그날 나중에, Superalignment의 공동 리더이자 OpenAI의 임원인 삶 스쿠버와 함께 일하는 얀 라이케가 사임을 발표했습니다.
 
@@ -219,7 +415,18 @@ X 쓰레드에서 그는 다음과 같이 말했습니다.
 
 OpenAI 안전 리더들이 배를 떠나면 우리에게 무슨 의미가 될까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 우리 정치인들에게 모든 책임이 있어
 
@@ -229,7 +436,18 @@ Leike의 트윗에 대답하기 위해, OpenAI가 신뢰할 만하고 윤리적�
 
 둘째, 그건 그들의 역할이 아니기 때문에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 역할은 누구의 것인가요? 우리 정치 대표자들이 정부 기관을 규제하도록 요구하며, 이에 따라 그러한 프레임워크를 개발하고 시행해야 합니다.
 

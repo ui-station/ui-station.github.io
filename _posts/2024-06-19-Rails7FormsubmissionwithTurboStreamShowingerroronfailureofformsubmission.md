@@ -3,13 +3,12 @@ title: "Rails 7 폼 제출과 Turbo Stream  폼 제출 실패시 에러 표시"
 description: ""
 coverImage: "/assets/img/2024-06-19-Rails7FormsubmissionwithTurboStreamShowingerroronfailureofformsubmission_0.png"
 date: 2024-06-19 22:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-Rails7FormsubmissionwithTurboStreamShowingerroronfailureofformsubmission_0.png
 tag: Tech
 originalTitle: "Rails 7 Form submission with Turbo Stream || Showing error on failure of form submission"
 link: "https://medium.com/@kanhu.dubey9/rails-7-form-submission-with-turbo-stream-showing-error-on-failure-of-form-submission-cd93e3f5168a"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ Hotwire 스위트의 일부인 Turbo Stream은 Rails 애플리케이션에서 �
 
 시작하기 전에 다음 사항을 확인하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Rails 7 애플리케이션을 설정했어요.
 - Turbo와 Stimulus 라이브러리가 프로젝트에 포함되어 있어요. (이들은 Rails 7 앱에서 기본으로 제공돼요)
@@ -30,7 +40,18 @@ Hotwire 스위트의 일부인 Turbo Stream은 Rails 애플리케이션에서 �
 
 ## 모델 및 컨트롤러 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 유효성 정의
 
@@ -45,7 +66,18 @@ end
 
 # 단계 2: 폼 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 새로운 게시물을 제출하기 위한 양식을 만들어보겠습니다. PostsController에서 new 및 create 액션을 정의하세요:
 
@@ -76,9 +108,20 @@ end
 
 ## 양식 부분
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-폼 부분을 생성하려면 다음 파일을 만드세요 (app/views/posts/_form.html.erb):
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+폼 부분을 생성하려면 다음 파일을 만드세요 (app/views/posts/\_form.html.erb):
 
 ```ruby
 <%= form_for post, html: { class: 'row' } do |f| %>
@@ -103,9 +146,21 @@ end
 <%= render 'form', post: @post %>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이제 레일즈 7에서 오류가 발생합니다.
+
 새로운 포스트를 생성하기 위해 폼을 제출할 때.
 
 ```js
@@ -120,7 +175,18 @@ turbo.es2017-esm.js:2115 Error: Form responses must redirect to another location
 
 TURBO_STREAM 요청이 하는 일은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 전체 페이지를 다시로드하지 않고 페이지에 터보 프레임을 업데이트합니다.
 
@@ -134,7 +200,7 @@ TURBO_STREAM 요청이 하는 일은 무엇인가요?
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to @post, notice: '게시물이 성공적으로 생성되었습니다.'    
+      redirect_to @post, notice: '게시물이 성공적으로 생성되었습니다.'
     else
       respond_to do |format|
         format.turbo_stream { render turbo_stream: turbo_stream.replace(@post, partial: 'posts/form', locals: { post: @post }) }
@@ -144,7 +210,18 @@ TURBO_STREAM 요청이 하는 일은 무엇인가요?
   end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 터보 스트림.replace 메소드는 레일즈의 Turbo Streams 라이브러리의 일부입니다. 이 메소드는 전체 페이지 새로고침 없이 페이지의 일부를 교체하는 Turbo Stream 액션을 생성합니다.
 
@@ -160,8 +237,18 @@ TURBO_STREAM 요청이 하는 일은 무엇인가요?
 
 또한, 폼 제출 실패를 처리하기 위해 뷰에 오류를 추가할 예정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 게시물 생성하기
 
@@ -195,11 +282,21 @@ TURBO_STREAM 요청이 하는 일은 무엇인가요?
 
 이렇게 수정하면 우리는 Rails 7에서 양식 제출 실패를 처리하는 문제를 해결할 수 있습니다.
 
-# 결론: 
+# 결론:
 
 Turbo는 Basecamp에 의해 소개된 Hotwire 프레임워크의 일부입니다. 최소한의 JavaScript를 사용하여 HTML을 통해 전송함으로써 현대적인 웹 애플리케이션을 구축하는 방법을 제공하도록 설계되었습니다. Turbo에는 세 가지 주요 부분이 있습니다: Turbo Drive, Turbo Frames 및 Turbo Streams.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 단계를 따라 하셨다면 Rails 7 애플리케이션에서 Turbo Stream을 성공적으로 구현하셨습니다. 이 방법을 통해 사용자 경험을 향상시켜 전체 페이지 새로고침 없이 즉각적인 피드백을 제공하고 Hotwire의 Turbo 라이브러리의 능력을 활용할 수 있습니다.

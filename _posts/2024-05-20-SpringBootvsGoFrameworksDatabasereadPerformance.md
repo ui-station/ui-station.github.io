@@ -3,13 +3,12 @@ title: "스프링 부트 대 Go 프레임워크 데이터베이스 조회 성능
 description: ""
 coverImage: "/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_0.png"
 date: 2024-05-20 15:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_0.png
 tag: Tech
 originalTitle: "SpringBoot vs Go Frameworks: Database read Performance"
 link: "https://medium.com/deno-the-complete-reference/springboot-vs-go-frameworks-database-read-performance-80b6e159451f"
 ---
-
 
 <img src="/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/deno-the-complete-reference/springboot-vs-go-framework
 
 이번 기사에서는 좀 더 실제적인 케이스에 초점을 맞출 것입니다: 데이터베이스 조회입니다. 간단한 사용 예는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - HTTP 요청 받기
 - 요청 본문(JSON)에서 userEmail 매개변수 추출하기
@@ -33,8 +43,18 @@ link: "https://medium.com/deno-the-complete-reference/springboot-vs-go-framework
 - SpringBoot 3.2.5 (Java 21.0.3)
 - Go 1.22.3
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트는 Bombardier 로드 테스터를 사용하여 진행됩니다.
 
@@ -44,11 +64,33 @@ link: "https://medium.com/deno-the-complete-reference/springboot-vs-go-framework
 
 SpringBoot
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기록을 표시해왔던 다음과 같은 과정을 반복하셨습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 차트 형식으로 결과가 제공됩니다:
 
@@ -56,8 +98,18 @@ SpringBoot
 - ![이미지2](/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_2.png)
 - ![이미지3](/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_4.png)
 
@@ -67,8 +119,18 @@ SpringBoot
 
 ![Image 4](/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_7.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-SpringBootvsGoFrameworksDatabasereadPerformance_8.png" />
 
@@ -78,7 +140,18 @@ SpringBoot
 
 # 분석
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, Spring Boot와 Go 프레임워크는 매우 다릅니다. Spring의 기능 세트는 간단한 Go 프레임워크에 비해 너무 방대합니다.
 
@@ -88,6 +161,17 @@ Spring Boot의 CPU 사용량은 모든 Go 프레임워크와 비교할 만큼 �
 
 승자: Fiber
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에 비슷한 "hello world" 비교가 있습니다:

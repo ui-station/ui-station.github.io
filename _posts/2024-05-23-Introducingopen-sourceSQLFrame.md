@@ -19,7 +19,18 @@ SQL의 강점에도 불구하고, 이 언어는 종종 데이터 파이프라인
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*JZ4jUIBrQAf-oovf3IFN1w.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 오픈소스 SQLFrame 소개! 🎉
 
@@ -29,7 +40,18 @@ SQLFrame은 데이터 전문가들이 SQL 및 PySpark 데이터프레임과 상�
 
 공개적으로 접근 가능한 출생 데이터를 기반으로 단일 아동을 선택한 새 가족의 수를 분석하는 시나리오를 고려해 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 js
 from sqlframe.bigquery import BigQuerySession
@@ -37,62 +59,70 @@ from sqlframe.bigquery import functions as F
 from sqlframe.bigquery import Window
 
 # SQLFrame에서 제공하는 고유 기능: 빅쿼리에 직접 연결할 수 있는 능력
+
 session = BigQuerySession(default_dataset="sqlframe.db1")
 table_path = "bigquery-public-data.samples.natality"
 df = (
-    session.read.table(table_path)
-    .where(F.col("ever_born") == 1)
-    .groupBy("year")
-    .agg(F.count("*").alias("num_single_child_families"))
-    .withColumn("percent_change", 1 - F.lag(F.col("num_single_child_families"), 1).over(Window.orderBy("year")) / F.col("num_single_child_families"))
-    .orderBy(F.abs(F.col("percent_change")).desc())
-    .select(
-        F.col("year").alias("Year"),
-        F.format_number("num_single_child_families", 0).alias("number of new families single child"),
-        F.format_number(F.col("percent_change") * 100, 2).alias("percent change"),
-    )
-    .limit(5)
+session.read.table(table_path)
+.where(F.col("ever_born") == 1)
+.groupBy("year")
+.agg(F.count("_").alias("num_single_child_families"))
+.withColumn("percent_change", 1 - F.lag(F.col("num_single_child_families"), 1).over(Window.orderBy("year")) / F.col("num_single_child_families"))
+.orderBy(F.abs(F.col("percent_change")).desc())
+.select(
+F.col("year").alias("Year"),
+F.format_number("num_single_child_families", 0).alias("number of new families single child"),
+F.format_number(F.col("percent_change") _ 100, 2).alias("percent change"),
 )
-# SQLFrame에서 제공하는 고유 기능: DataFrame의 SQL 확인 가능
-df.sql()
+.limit(5)
+)
 
+# SQLFrame에서 제공하는 고유 기능: DataFrame의 SQL 확인 가능
+
+df.sql()
 
 SQLFrame를 사용하면 특별한 빅쿼리 클래스를 활용하여 빅쿼리 환경과 시스템을 원활하게 통합할 수 있습니다. DataFrame 작업은 PySpark에서 수행하는 것과 유사하지만 SQLFrame를 이용하면 df.sql() 메서드를 사용하여 실시간으로 생성 및 검토하는 대응하는 SQL 쿼리도 볼 수 있습니다.
 
 js
 WITH `t94228` AS (
-  SELECT
-    `natality`.`year` AS `year`,
-    COUNT(*) AS `num_single_child_families`
-  FROM `bigquery-public-data`.`samples`.`natality` AS `natality`
-  WHERE
-    `natality`.`ever_born` = 1
-  GROUP BY
-    `natality`.`year`
+SELECT
+`natality`.`year` AS `year`,
+COUNT(_) AS `num_single_child_families`
+FROM `bigquery-public-data`.`samples`.`natality` AS `natality`
+WHERE
+`natality`.`ever_born` = 1
+GROUP BY
+`natality`.`year`
 ), `t34770` AS (
-  SELECT
-    `t94228`.`year` AS `year`,
-    `t94228`.`num_single_child_families` AS `num_single_child_families`,
-    1 - LAG(`t94228`.`num_single_child_families`, 1) OVER (ORDER BY `t94228`.`year`) / `t94228`.`num_single_child_families` AS `percent_change`
-  FROM `t94228` AS `t94228`
-  ORDER BY
-    ABS(`percent_change`) DESC
+SELECT
+`t94228`.`year` AS `year`,
+`t94228`.`num_single_child_families` AS `num_single_child_families`,
+1 - LAG(`t94228`.`num_single_child_families`, 1) OVER (ORDER BY `t94228`.`year`) / `t94228`.`num_single_child_families` AS `percent_change`
+FROM `t94228` AS `t94228`
+ORDER BY
+ABS(`percent_change`) DESC
 )
 SELECT
-  `t34770`.`year` AS `year`,
-  FORMAT('%\'.0f', ROUND(CAST(`t34770`.`num_single_child_families` AS FLOAT64), 0)) AS `number of new families single child`,
-  FORMAT('%\'.2f', ROUND(CAST(`t34770`.`percent_change` * 100 AS FLOAT64), 2)) AS `percent change`
+`t34770`.`year` AS `year`,
+FORMAT('%\'.0f', ROUND(CAST(`t34770`.`num_single_child_families` AS FLOAT64), 0)) AS `number of new families single child`,
+FORMAT('%\'.2f', ROUND(CAST(`t34770`.`percent_change` _ 100 AS FLOAT64), 2)) AS `percent change`
 FROM `t34770` AS `t34770`
 LIMIT 5
 
-
 이 기능은 이해를 증진시킬 뿐만 아니라 SQL 출력이 결정론적이어서 버전 관리에 적합하게 만듭니다. 이렇게 함으로써 파이썬 및 SQL 파이프라인의 표현을 모두 버전 관리할 수 있고 동료들이 가장 잘 맞는 형식을 선택할 수 있게 합니다!
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![SQLFrame](https://miro.medium.com/v2/resize:fit:808/1*y_ZC1qkDPllTA3Yk3XiC8A.gif)
 
@@ -101,21 +131,32 @@ SQLFrame은 SQL을 생성하는 것 이상을 제공합니다: PySpark DataFrame
 예를 들어, .sql()을 .show()로 바꾸면 파이프라인에서 빅쿼리에서 결과를 직접 표시할 수 있습니다. 이는 PySpark에서와 같은 방식으로 작동합니다.
 
 python
->>> df.show()
-+------+-------------------------------------+----------------+
-| year | number of new families single child | percent change |
-+------+-------------------------------------+----------------+
-| 1989 |              1,650,246              |     20.01      |
-| 1974 |               783,448               |     12.66      |
-| 1977 |              1,057,379              |     10.22      |
-| 1985 |              1,308,476              |     10.03      |
-| 1975 |               868,985               |      9.84      |
-+------+-------------------------------------+----------------+
 
+> > > df.show()
+> > > +------+-------------------------------------+----------------+
+> > > | year | number of new families single child | percent change |
+> > > +------+-------------------------------------+----------------+
+> > > | 1989 | 1,650,246 | 20.01 |
+> > > | 1974 | 783,448 | 12.66 |
+> > > | 1977 | 1,057,379 | 10.22 |
+> > > | 1985 | 1,308,476 | 10.03 |
+> > > | 1975 | 868,985 | 9.84 |
+> > > +------+-------------------------------------+----------------+
 
 `
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 카탈로그 작업이 지원되며 listColumns와 같은 것이 지원됩니다:
 
@@ -134,7 +175,18 @@ Name: state, Data Type: STRING, Desc: The two character postal code for the stat
 
 <img src="https://miro.medium.com/v2/resize:fit:720/1*JQ7uBfQn-4VWWWlfl5D_sA.gif" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQLFrame은 현재 BigQuery, DuckDB 및 Postgres를 지원하고 있으며, Clickhouse, Redshift, Snowflake, Spark 및 Trino가 개발 중에 있습니다. 다른 엔진을 위한 SQL 생성 실험을 원하는 경우 Standalone 세션에서 유연한 테스트 환경을 제공합니다.
 

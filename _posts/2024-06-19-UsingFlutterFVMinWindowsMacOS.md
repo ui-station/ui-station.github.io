@@ -3,13 +3,12 @@ title: "플러터 FVM을 Windows 및 MacOS에서 사용하기"
 description: ""
 coverImage: "/assets/img/2024-06-19-UsingFlutterFVMinWindowsMacOS_0.png"
 date: 2024-06-19 11:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-UsingFlutterFVMinWindowsMacOS_0.png
 tag: Tech
 originalTitle: "Using Flutter FVM in Windows , MacOS"
 link: "https://medium.com/@iliyass.zamouri/using-flutter-fvm-in-windows-1c23e38bccdb"
 ---
-
 
 <img src="/assets/img/2024-06-19-UsingFlutterFVMinWindowsMacOS_0.png" />
 
@@ -19,7 +18,18 @@ FVM을 진행하기 전에 먼저 Flutter를 설치해야 합니다. 다음은 �
 
 단계 1: Flutter 설치하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Flutter 웹 사이트(https://flutter.dev/)에 방문하고 “시작하기” 버튼을 클릭하세요.
 - “Windows” 버튼을 클릭하여 Windows용 Flutter SDK를 다운로드하세요.
@@ -37,10 +47,21 @@ FVM을 진행하기 전에 먼저 Flutter를 설치해야 합니다. 다음은 �
 
 - 명령 프롬프트 또는 PowerShell 창을 열고 다음 명령을 실행하여 Chocolatey를 설치하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))   
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
 2. Install FVM using Chocolatey in the same PowerShell session:
@@ -51,30 +72,46 @@ choco install fvm
 
 3. Make FVM usable globally.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. Configure VSCode to use the current active Flutter SDK version of a project. Add these lines in the Preferences Settings.
 
-
 C:\Users\[current_user]\AppData\Roaming\Code\User\settings.json
-
-
 
 "dart.flutterSdkPath": ".fvm/flutter_sdk",
 "dart.flutterSdkPaths": ["/Users/usr/fvm/versions"],
 // Remove .fvm files from search
 "search.exclude": {
-    "**/.fvm": true
+"**/.fvm": true
 },
 // Remove from file watching
 "files.watcherExclude": {
-    "**/.fvm": true
+"**/.fvm": true
 }
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 맥OS에서:
 
@@ -85,7 +122,18 @@ C:\Users\[current_user]\AppData\Roaming\Code\User\settings.json
 
 - Flutter 환경 변수 설정하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 터미널을 열고 다음 명령을 실행하세요: open ~/.bash_profile.
 - 파일 끝에 다음 라인을 추가하세요:
@@ -101,22 +149,44 @@ export PATH="$PATH:/Users/your_username/.pub-cache/bin"
 
 2단계: Flutter Version Management (FVM) 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - FVM 설치하기:
 
-    - 터미널을 열고 다음 명령을 실행하세요: brew install fvm.
-    - 설치가 완료되면 fvm doctor를 실행하여 FVM이 올바르게 설치되었는지 확인하세요.
-  
+  - 터미널을 열고 다음 명령을 실행하세요: brew install fvm.
+  - 설치가 완료되면 fvm doctor를 실행하여 FVM이 올바르게 설치되었는지 확인하세요.
+
 - FVM 환경 변수 설정하기:
 
-    - 터미널을 열고 다음 명령을 실행하세요: open ~/.bash_profile.
-    - 파일 끝에 다음 줄을 추가하세요.
+  - 터미널을 열고 다음 명령을 실행하세요: open ~/.bash_profile.
+  - 파일 끝에 다음 줄을 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
-export FVM_HOME=~/.fvm 
+export FVM_HOME=~/.fvm
 export PATH="$PATH:$FVM_HOME/default/bin"
 ```
 
@@ -129,7 +199,18 @@ FVM 설정 및 Flutter 버전 관리: FVM를 설치했으므로 이제 손쉽게
 - 명령 프롬프트나 PowerShell 창을 열고 프로젝트를 생성할 디렉토리로 이동하세요.
 - FVM를 초기화하기 위해 다음 명령어를 실행하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 fvm use stable
@@ -144,7 +225,18 @@ fvm install <version>
 
 - 프로세스가 완료되면 다음 명령을 사용하여 새로운 Flutter 프로젝트를 생성할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 fvm flutter create my_flutter_project
@@ -159,6 +251,17 @@ fvm use <version>
 
 - "version"을 원하는 Flutter 버전으로 대체하세요. "stable" 또는 "2.5.0"과 같은 것이 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론: Windows에서 Flutter Version Management (FVM)을 사용하여 Flutter를 설치하면 여러 개의 Flutter 버전을 관리할 수 있습니다.

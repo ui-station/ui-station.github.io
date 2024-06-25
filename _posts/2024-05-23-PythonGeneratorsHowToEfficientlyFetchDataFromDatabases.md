@@ -20,7 +20,18 @@ link: "https://medium.com/gitconnected/python-generators-how-to-efficiently-fetc
 - 아파치 카프카 & 아파치 스파크를 이용한 데이터 스트리밍 나노디그리 (UDACITY)
 - 파이스파크를 이용한 스파크 및 파이썬 빅데이터 과정 (UDEMY)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아직 Medium 회원이 아니신가요? Medium이 제공하는 모든 것에 액세스하려면 매월 $5로 가입하는 것을 고려해보세요!
 
@@ -30,7 +41,18 @@ link: "https://medium.com/gitconnected/python-generators-how-to-efficiently-fetc
 
 이 경우 Airflow 인스턴스에서 사용 가능한 메모리의 큰 부분을 사용하여 데이터 팀의 다른 동료들의 작업에 영향을 주지 않고 작업을 수행하는 방법을 찾아야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이썬 생성기가 메모리 피크를 피하면서 데이터베이스에서 데이터를 효율적으로 가져올 때 사용될 수 있는 좋은 옵션이 될 수 있습니다.
 
@@ -40,7 +62,18 @@ link: "https://medium.com/gitconnected/python-generators-how-to-efficiently-fetc
 
 파이썬에서 표준 함수는 단일 값 계산 후 종료되지만, 생성기는 필요에 따라 일시 중지하고 다시 시작하면서 시간이 지남에 따라 값 시퀀스를 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제너레이터는 값을 시퀀스로 생성하기 위해 return 대신 yield 문을 사용하는 특별한 함수입니다. 값은 한 번에 하나씩 생성되며 전체 시퀀스를 메모리에 저장할 필요가 없습니다.
 
@@ -56,7 +89,18 @@ def squares_generator(n):
     num += 1
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 함수를 호출하면 이터레이터만 반환됩니다:
 
@@ -81,7 +125,18 @@ for num in squares_generator(5):
 16
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 효율적이고 세련된 옵션은 함수 대신 한 줄로 작성된 생성기 표현식을 만드는 것입니다:
 
@@ -100,7 +155,18 @@ print(next(generator_exp)) # 9
 print(next(generator_exp)) # 16
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 볼 수 있듯이, 제너레이터 함수에서 값이 반환되는 방식은 일반적인 파이썬 함수와는 즉각적으로 직관적이지 않습니다. 아마도 그것이 많은 데이터 엔지니어들이 발생해야 할 정도로 제너레이터를 사용하지 않는 이유일 것입니다.
 
@@ -110,7 +176,18 @@ print(next(generator_exp)) # 16
 
 이 자습서의 목표는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Postgres DB로부터 데이터를 가져와서 pandas 데이터프레임으로 저장합니다.
 - pandas 데이터프레임을 Parquet 형식으로 S3 버킷에 씁니다.
@@ -123,7 +200,18 @@ print(next(generator_exp)) # 16
 - MinIO = AWS S3 버킷을 시뮬레이션하는 데 사용될 서비스로, awswrangler 패키지를 사용하여 pandas 데이터프레임을 Parquet 형식으로 쓸 때 도움이 될 것입니다.
 - Jupyter Notebook = 익숙한 컴파일러를 통해 Python 코드 조각을 대화식으로 실행하는 데 사용될 서비스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 설명한 내용을 시각적으로 보여주는 그래프입니다:
 
@@ -136,7 +224,18 @@ git clone git@github.com:anbento0490/projects.git &&
 cd fetch_data_with_python_generators
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 세 가지 서비스를 시작하는 도커 컴포즈를 실행할 수 있어요:
 
@@ -155,7 +254,18 @@ docker compose up -d
 
 - 포스트그레스 데이터베이스에 transactions 테이블이 생성되었고 5백만 개의 레코드가 포함되어 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 docker exec -it postgres-db /bin/bash
@@ -181,7 +291,18 @@ mainDB=# select count(*) from transactions;
 
 - Jupyter Notebook UI는 localhost:8889에서 접근할 수 있으며 아래에 토큰을 검색하여 액세스할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 docker exec -it jupyter-notebooks /bin/bash
@@ -198,7 +319,18 @@ http://eae08d1f4bf6:8888/?token=8a45d846d03cf0c0e4584c3b73af86ba5dk9e83c8ac47ee7
 
 하지만 그 전에 MinIO의 버킷과 상호 작용하려면 새로운 access_key와 secret_access_key를 생성해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-PythonGeneratorsHowToEfficientlyFetchDataFromDatabases_4.png" />
 
@@ -237,7 +369,18 @@ batch_size = 1000000
 wr.config.s3_endpoint_url = 'http://minio:9000'
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 mainDB에 연결하고 쿼리를 실행하기 위한 커서를 만듭니다. 또한 generators-test-bucket와 상호 작용하기 위한 기본 세션이 설정됩니다.
 
@@ -248,7 +391,18 @@ wr.config.s3_endpoint_url = 'http://minio:9000'
 - 메모리: 한꺼번에 전체 데이터 세트를 가져오면 OOM 오류가 발생하거나 전체 인스턴스/클러스터의 성능에 영향을 줄 수 있습니다.
 - 속도: 행을 하나씩 가져오는 것도 비싼 I/O 네트워크 작업을 초래할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 방법 #1: 일괄적으로 데이터 가져오기
 
@@ -283,7 +437,18 @@ def create_df_batch(cursor, batch_size):
 
 위 코드는 다음을 수행합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 빈 df를 생성;
 - 쿼리를 실행하고 전체 결과를 커서 객체에 캐싱;
@@ -308,7 +473,18 @@ CPU 시간: 사용자 9.97초, 시스템: 13.7초, 총: 23.7초
 실제 시간: 25초
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Python Generators](/assets/img/2024-05-23-PythonGeneratorsHowToEfficientlyFetchDataFromDatabases_5.png)
 
@@ -343,8 +519,18 @@ def create_df_gen(cursor):
     return df
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드 스니펫에서는 쿼리를 실행하고 행을 시퀀스로 반환하는 'generate_dataset' 보조 함수를 생성합니다. 이 함수는 'pd.DataFrame()' 절의 데이터 인수에 직접 전달되며, 내부적으로 모든 검색된 레코드를 순회하고 행이 소진될 때까지 요소를 생성합니다.
 
@@ -364,7 +550,18 @@ CPU 소요 시간: 사용자 9.04초, 시스템 2.1초, 총 11.1초
 
 <img src="/assets/img/2024-05-23-PythonGeneratorsHowToEfficientlyFetchDataFromDatabases_6.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 가지 방법 모두 데이터 프레임이 반환되기 때문에 메모리 사용량이 동일할 것 같지만, 이는 사실이 아닙니다. 데이터 프레임이 생성되는 동안 데이터 처리 방식이 다르기 때문입니다:
 
@@ -375,7 +572,18 @@ CPU 소요 시간: 사용자 9.04초, 시스템 2.1초, 총 11.1초
 
 가끔 데이터 엔지니어는 데이터베이스에 저장된 대량의 데이터를 가져와서 이러한 레코드를 외부(예: 규제기관, 감사인, 파트너)와 공유해야 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적인 해결책은 클라우드 객체 저장소를 생성하는 것입니다. 데이터가 전달되어 제 3자(적절한 액세스 권한이 부여된)가 데이터를 읽고 자신의 시스템으로 복사할 수 있게 합니다.
 
@@ -385,7 +593,18 @@ awswrangler의 장점은 pandas 데이터프레임과 매우 잘 작동하며 �
 
 ## 방법 #1: 일괄 처리를 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 사용 사례의 경우, 일반적으로 데이터를 일괄적으로 가져와서 쓰는 것이 일반적이며 전체 데이터 집합이 순회될 때까지 계속됩니다 :
 
@@ -434,7 +653,18 @@ Writing DF batch #5 to S3 bucket...
 Batch successfully written to S3 bucket!
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-PythonGeneratorsHowToEfficientlyFetchDataFromDatabases_7.png" />
 
@@ -461,7 +691,18 @@ def write_df_to_s3_gen(cursor, bucket, folder, parquet_file_name):
     print('데이터가 성공적으로 S3 버킷에 쓰여졌습니다!\n')
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def wirte_df_to_s3_gen(cursor, bucket, folder_gen, parquet_file_name):
@@ -474,7 +715,18 @@ Data successfully written to S3 bucket!
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적인 Python 함수보다 직관성이 떨어지는 제너레이터는 메모리를 적게 차지하면서도 좋은 성능을 제공하기 때문에 덜 사용되지만 이점이 많습니다.
 

@@ -3,13 +3,12 @@ title: "안드로이드에서 공유 ViewModel의 내부 메커니즘 이해하�
 description: ""
 coverImage: "/assets/img/2024-06-23-TheInternalMechanismofSharedViewModelinAndroid_0.png"
 date: 2024-06-23 01:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TheInternalMechanismofSharedViewModelinAndroid_0.png
 tag: Tech
 originalTitle: "The Internal Mechanism of Shared ViewModel in Android"
 link: "https://medium.com/@sandeepkella23/the-internal-mechanism-of-shared-viewmodel-in-android-3a0ccda4e344"
 ---
-
 
 ![이미지](/assets/img/2024-06-23-TheInternalMechanismofSharedViewModelinAndroid_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sandeepkella23/the-internal-mechanism-of-shared-viewm
 
 # Shared ViewModel은 어떻게 작동하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 서프라이즈 파티를 준비하고 있다고 상상해보세요. 여러 명의 친구들(당신의 조각들)이 계획에 대한 변경 사항마다 각각에게 전화를 걸지 않고도 업데이트를 유지해야 합니다. 이 때 공유된 ViewModel이 등장합니다. 이는 모두가 동일한 페이지에 머무를 수 있도록하는 마스터 파티 플래너와 같은 역할을 합니다.
 
@@ -29,7 +39,18 @@ ViewModelProvider은 마스터 파티 플래너와 같습니다. 파티 세부 �
 
 다음은 ViewModel을 가져오는 방법입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 val viewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
@@ -41,7 +62,18 @@ requireActivity()을 사용하면 ViewModel이 해당 activity의 모든 fragmen
 
 뒷면에는 모든 계획(ViewModels)이 보관되는 저장 공간(ViewModelStore)이 있습니다. 이 방은 활동의 수명주기에 묶여 있습니다. 따라서 활동이 살아있는 한 계획은 안전하게 보관됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 3: 계획의 수호자(ViewModelStoreOwner)
 
@@ -66,7 +98,18 @@ public class MainActivity extends AppCompatActivity implements ViewModelStoreOwn
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 4: 모두가 최신 상태 유지하기 (데이터 공유)
 
@@ -110,7 +153,18 @@ class SecondFragment : Fragment() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 FirstFragment이 viewModel.data를 업데이트하면, SecondFragment도 업데이트를 받습니다. 마치 한 친구가 그룹 채팅에 글을 올리면 모두가 즉시 메시지를 받는 것처럼 동작합니다.
 

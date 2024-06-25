@@ -3,13 +3,12 @@ title: "NVIDIA Jetson Nano에서 Intel RealSense Depth Camera를 사용하여 RO
 description: ""
 coverImage: "/assets/img/2024-05-18-NVIDIAJetsonNanowithIntelRealSenseDepthCameraUsingROS2Humble_0.png"
 date: 2024-05-18 19:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-NVIDIAJetsonNanowithIntelRealSenseDepthCameraUsingROS2Humble_0.png
 tag: Tech
 originalTitle: "NVIDIA Jetson Nano with Intel RealSense Depth Camera Using ROS2 Humble"
 link: "https://medium.com/@kabilankb2003/nvidia-jetson-nano-with-intel-realsense-depth-camera-using-ros2-humble-c5926566a4d8"
 ---
-
 
 <img src="/assets/img/2024-05-18-NVIDIAJetsonNanowithIntelRealSenseDepthCameraUsingROS2Humble_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@kabilankb2003/nvidia-jetson-nano-with-intel-realsense
 
 # Prerequisites
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작하기 전에 다음 구성 요소가 있는지 확인하십시오:
 
@@ -35,7 +45,18 @@ ROS2 RealSense 패키지 설치
 sudo apt install ros-humble-realsense2-camera
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RealSense 노드를 시작해주세요:
 
@@ -64,7 +85,18 @@ def generate_launch_description():
 
 란치 파일을 실행하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <table>
     <tr>
@@ -80,7 +112,18 @@ rqt에서 데이터 시각화:
 
 ![이미지](/assets/img/2024-05-18-NVIDIAJetsonNanowithIntelRealSenseDepthCameraUsingROS2Humble_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 rqt에 RealSense 데이터 추가하기:
 
@@ -91,7 +134,18 @@ rqt에 RealSense 데이터 추가하기:
 
 ![이미지](/assets/img/2024-05-18-NVIDIAJetsonNanowithIntelRealSenseDepthCameraUsingROS2Humble_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 깊이 이미지
 
@@ -101,7 +155,18 @@ rqt에 RealSense 데이터 추가하기:
 
 깊이 이미지는 각 픽셀이 카메라에서 씬 내 객체까지의 거리를 나타내는 회색조 이미지입니다. 색상 정보를 포함하는 일반적인 RGB 이미지와 달리, 깊이 이미지는 깊이 정보를 인코딩하여 환경의 3D 구조를 인식할 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 주요 주제 및 메시지
 
@@ -112,7 +177,18 @@ ROS 2에서 RealSense 카메라의 깊이 이미지는 특정 토픽, 보통은 
 
 ## sensor_msgs/Image 메시지
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 sensor_msgs/Image 메시지에는 여러 필드가 포함되어 있지만, 깊이 이미지에 가장 관련있는 필드는 다음과 같습니다:
 
@@ -128,7 +204,18 @@ sensor_msgs/Image 메시지에는 여러 필드가 포함되어 있지만, 깊�
 
 깊이 이미지는 애플리케이션에 따라 다양한 방식으로 처리할 수 있습니다. 일반적인 작업은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 객체 감지 및 인식: 3D 모양에 기반하여 객체를 식별하고 분류합니다.
 - 장애물 피하기: 로봇의 경로에서 장애물을 감지하고 피하기 위해 깊이 정보를 활용합니다.

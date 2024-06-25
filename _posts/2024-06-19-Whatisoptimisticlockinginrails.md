@@ -3,13 +3,12 @@ title: "Rails에서 낙관적 락킹은 무엇인가요"
 description: ""
 coverImage: "/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png"
 date: 2024-06-19 22:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png
 tag: Tech
 originalTitle: "What is optimistic locking in rails?"
 link: "https://medium.com/@imvishalpandey/what-is-optimistic-locking-in-rails-66fef33c3c19"
 ---
-
 
 낙관적 락킹은 데이터베이스 시스템에서 동시에 여러 사용자가 데이터에 동시 액세스를 관리하는 동시성 제어 메커니즘입니다. 충돌이 드물고 트랜잭션이 일반적으로 서로 간섭하지 않을 것으로 가정합니다. 비관적 락킹과 달리 최적적 락킹은 데이터를 처음 액세스할 때 잠그는 대신, 트랜잭션이 커밋하려고 할 때만 충돌을 확인합니다.
 
@@ -19,10 +18,21 @@ link: "https://medium.com/@imvishalpandey/what-is-optimistic-locking-in-rails-66
 - 트랜잭션 처리: 트랜잭션은 데이터를 로컬로 변경합니다.
 - 커밋: 커밋하기 전에 트랜잭션은 데이터베이스에서 레코드의 버전 번호 또는 타임스탬프를 확인합니다:
 
-    - 트랜잭션이 시작되었을 때 버전 번호나 타임스탬프가 변경되지 않았다면, 트랜잭션은 변경 사항을 커밋합니다.
-    - 버전 번호나 타임스탬프가 변경되었다면 (다른 트랜잭션이 레코드를 수정했다는 것을 나타냄), 해당 트랜잭션은 중지되고 다시 시도해야 합니다.
+  - 트랜잭션이 시작되었을 때 버전 번호나 타임스탬프가 변경되지 않았다면, 트랜잭션은 변경 사항을 커밋합니다.
+  - 버전 번호나 타임스탬프가 변경되었다면 (다른 트랜잭션이 레코드를 수정했다는 것을 나타냄), 해당 트랜잭션은 중지되고 다시 시도해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 낙관적 락킹 예시
 
@@ -32,7 +42,18 @@ link: "https://medium.com/@imvishalpandey/what-is-optimistic-locking-in-rails-66
 
 ![Products Table](/assets/img/2024-06-19-Whatisoptimisticlockinginrails_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 시나리오
 
@@ -45,7 +66,18 @@ link: "https://medium.com/@imvishalpandey/what-is-optimistic-locking-in-rails-66
 
 4. 이제 사용자 B가 "위젯"의 가격을 $11.00으로 업데이트하려고 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 시스템은 데이터베이스에서 "위젯"의 현재 버전 번호를 확인합니다 (현재 2).
 - 버전 번호가 변경되었으므로 다른 트랜잭션이 레코드를 수정했다는 것을 나타내어, 사용자 B의 트랜잭션이 실패합니다.
@@ -58,7 +90,18 @@ link: "https://medium.com/@imvishalpandey/what-is-optimistic-locking-in-rails-66
 - Non-blocking: 낙관적 잠금은 잠금을 유지하는 오버헤드를 피함으로써 여러 사용자가 대기없이 동일한 데이터로 작업할 수 있습니다.
 - 확장성: 충돌 비율이 낮은 환경에서 더 확장 가능하며, 이는 리소스에 대한 경합을 줄여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단점:
 
@@ -69,7 +112,18 @@ link: "https://medium.com/@imvishalpandey/what-is-optimistic-locking-in-rails-66
 
 우리가 제품 테이블을 가지고 있다고 가정해봅시다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```ruby
 class CreateProducts < ActiveRecord::Migration[6.1]
@@ -94,7 +148,18 @@ class Product < ApplicationRecord
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시 사용법
 
@@ -112,7 +177,18 @@ user_b_product = Product.find(1) # 동일한 제품을 읽음
 # user_b_product.lock_version도 0입니다
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 사용자 A가 레코드를 업데이트합니다
 
@@ -139,7 +215,18 @@ rescue ActiveRecord::StaleObjectError
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 충돌 처리
 
@@ -173,7 +260,18 @@ class ProductsController < ApplicationController
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결론
 

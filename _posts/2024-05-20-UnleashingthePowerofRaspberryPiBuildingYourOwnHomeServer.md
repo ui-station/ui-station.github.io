@@ -3,13 +3,12 @@ title: "라즈베리 파이의 힘을 발휘해보세요 나만의 홈 서버 �
 description: ""
 coverImage: "/assets/img/2024-05-20-UnleashingthePowerofRaspberryPiBuildingYourOwnHomeServer_0.png"
 date: 2024-05-20 19:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-UnleashingthePowerofRaspberryPiBuildingYourOwnHomeServer_0.png
 tag: Tech
 originalTitle: "Unleashing the Power of Raspberry Pi: Building Your Own Home Server"
 link: "https://medium.com/@ojaashampiholi/unleashing-the-power-of-raspberry-pi-building-your-own-home-server-86d717f00213"
 ---
-
 
 ![이미지](/assets/img/2024-05-20-UnleashingthePowerofRaspberryPiBuildingYourOwnHomeServer_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@ojaashampiholi/unleashing-the-power-of-raspberry-pi-b
 
 라즈베리 파이는 취미주의자의 꿈일 뿐만 아니라, 다양한 작업을 처리할 수 있는 강력한 컴퓨팅 플랫폼입니다. 미디어 스트리밍부터 네트워크 저장소 등 다양한 작업을 처리할 수 있어서 라즈베리 파이의 다재다능함은 무한합니다. 기술 애호가든 DIY 초보자든, 라즈베리 파이로 홈 서버를 구축하는 것은 접근하기 쉽고 보람찬 노력입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 라즈베리 파이는 DIY 컴퓨팅 세계를 혁신하여 열정적으로 실험하고 혁신할 수 있는 저렴하면서도 강력한 플랫폼을 제공합니다. 이 흥미진진한 장치로 나의 여정을 시작했던 것입니다. 라즈베리 파이 재단이 개발한 이 작은 장치는 2012년에 처음 선보이면서 거대한 팬층을 확보했습니다. 각 새로운 세대마다 라즈베리 파이는 그 가능성의 경계를 더욱 넓혀왔습니다. 사용자들은 창의력을 발휘하고 놀라운 프로젝트를 구축할 수 있도록 하였고, 특히 IoT 및 홈 서버 공간에서 주목받았습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@ojaashampiholi/unleashing-the-power-of-raspberry-pi-b
 
 1. 처리 능력: 라즈베리 파이의 처리 능력은 계산 작업을 효율적으로 처리할 수 있는 능력을 결정합니다. 클럭 속도가 높고 다중 코어가 있는 모델은 계산 집약적이고 동적이며 요구가 높은 애플리케이션에 적합합니다. 한편 정적이고 전통적인 서버 애플리케이션인 광고 차단과 같은 애플리케이션은 낮은 컴퓨팅 장치에서도 호스팅될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 메모리 용량: RAM은 멀티태스킹 및 전체 시스템 성능에서 중요한 역할을 합니다. 여러 서비스를 동시에 실행할 때 원활한 작동을 보장하기 위해 충분한 메모리가 장착된 라즈베리 파이 모델을 선택해주세요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@ojaashampiholi/unleashing-the-power-of-raspberry-pi-b
 
 예를 들어, 자원 집약적인 응용 프로그램을 실행하거나 여러 서비스를 동시에 호스팅할 계획이라면, 4코어 프로세서와 최대 8GB의 RAM을 지원하는 라즈베리 파이 4/5와 같이 강력한 모델을 선택하는 것이 이상적일 것입니다. 반면에 서버 요구 사항이 간단하다면, 라즈베리 파이 제로가 충분할 수 있으며, 소형이면서 에너지 효율적인 솔루션을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![라즈베리 파이 하드웨어 및 운영 체제 설정](/assets/img/2024-05-20-UnleashingthePowerofRaspberryPiBuildingYourOwnHomeServer_1.png)
 
@@ -47,7 +79,18 @@ link: "https://medium.com/@ojaashampiholi/unleashing-the-power-of-raspberry-pi-b
 
 먼저 제조사의 지침에 따라 라즈베리 파이를 조립하십시오. 마이크로 SD 카드, 전원 공급 장치, 키보드, 마우스 및 디스플레이를 라즈베리 파이에 연결하되, 모든 연결이 안전하다는 것을 확인하세요. 조립이 완료되면, 운영 체제를 마이크로 SD 카드에 플래시하는 작업을 시작하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 라즈베리 파이 OS는 이제 Raspbian Desktop 64 비트로 알려져 있으며, 초심자에게 권장되는 선택지로 사용자 친화적인 인터페이스와 다양한 소프트웨어 지원을 자랑합니다 (라즈베리 파이 4 이상 모델을 사용한다고 가정합니다). 또는 Ubuntu를 포함한 일반 리눅스 OS 또는 홈 서버 응용 프로그램을 특별히 대상으로 하는 OpenMediaVault나 NextCloudPi와 같은 전문 배포판을 설치할 수도 있습니다. 이러한 배포판은 미리 구성된 설정을 제공하여 손쉬운 배포를 가능케 합니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@ojaashampiholi/unleashing-the-power-of-raspberry-pi-b
 
 라즈베리 파이가 부팅되면 초기 설정 프로세스를 통해 안내를 받을 수 있습니다 (OS 선택에 따라 단계가 약간 다를 수 있습니다). 이 프로세스에는 시간대 설정, 사용자 계정 설정, 네트워크 연결 설정이 포함됩니다. 화면 안내에 따라 설정을 완료하고 라즈베리 파이 데스크톱 환경을 환영받을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 홈 서버의 기본 네트워킹 개념
 
@@ -67,7 +121,18 @@ link: "https://medium.com/@ojaashampiholi/unleashing-the-power-of-raspberry-pi-b
 
 IP 주소 할당 이해는 네트워킹에 근본적입니다. 네트워크 내 각 장치는 데이터 교환을 용이하게하기 위해 고유한 IP 주소가 필요합니다. 예를 들어, 라즈베리 파이 서버에는 정적 IP 주소가 할당되어 있어 일관된 접근성을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더불어, 포트 포워딩은 서버에 호스팅된 특정 서비스에 대한 외부 액세스를 가능하게 합니다. 예를 들어 포트 80에서 웹 서버를 실행 중이라면, 라우터에서 포트 포워딩을 구성하여 내부로 들어오는 웹 트래픽을 라즈베리 파이로 리다이렉트시켜 웹사이트에 어디에서나 액세스할 수 있게 됩니다. 이는 RPi를 인터넷 일반 액세스로 노출시켜 외부 공격을 받을 수 있는 가능성이 있으므로 고급 리눅스 사용자를 대상으로 권장됩니다. 그렇다고 하더라도, 다음과 같은 일반적인 단계를 통해 포트 포워딩을 설정할 수 있습니다:
 
@@ -80,7 +145,18 @@ IP 주소 할당 이해는 네트워킹에 근본적입니다. 네트워크 내 
 
 라즈베리 파이를 사용하여 홈 서버를 구축하는 탐험을 마쳤습니다. 이제 이 흥미로운 여정에 도전할 지식과 자신감을 갖추었습니다. 미디어 컬렉션을 중앙 집중화하고 집 안전을 강화하거나 홈 오토메이션 세계를 탐험하고 싶다면, 라즈베리 파이는 강력하고 비용 효율적인 솔루션이 될 것입니다. 전세계 DIY 애호가들의 행렬에 합류하여 디지털 성소에서 라즈베리 파이의 힘을 해방하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고 자료:
 

@@ -3,13 +3,12 @@ title: "여러분은 핫 코너를 제대로 활용하지 않고 있어요 이�
 description: ""
 coverImage: "/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_0.png"
 date: 2024-05-17 18:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_0.png
 tag: Tech
 originalTitle: "You’re Underutilizing ‘Hot Corners’ (Hacks Nobody Told You Before!)"
 link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobody-told-you-before-0c40aac45d15"
 ---
-
 
 맥 macOS의 핫 코너 기능이 정말 소홀히 다루어지고 있는 기능이에요. 왜냐하면 이렇게 말할 수 있어요:
 
@@ -18,7 +17,18 @@ link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobod
 
 핫 코너를 통해 맥 화면의 네 구석 중 아무 쪽 모서리로도 포인터를 스와이프하여 10가지 사전 정의된 작업 중 하나를 실행할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것들은 10가지 사전 정의된 작업입니다:
 
@@ -26,9 +36,20 @@ link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobod
 
 (‘—’는 아무 행동도 없음을 나타냄.)
 
-시스템 설정 ⚙️ ` 데스크톱 및 독 🖥️ ` 핫 코너에서 핫 코너를 원하시는대로 구성할 수 있습니다.
+시스템 설정 ⚙️ `데스크톱 및 독 🖥️` 핫 코너에서 핫 코너를 원하시는대로 구성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (설정에 깊이 들어갈 필요가 있나요? 네, 따라서 직접 해당 페이지로 이동하는 이 바로 가기를 사용해보세요. 이 URL을 사용합니다: x-apple.systempreferences:com.apple.Desktop-Settings.extension?HotCorners)
 
@@ -38,7 +59,18 @@ link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobod
 
 그러므로 그에게는(swiping towards)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 왼쪽 상단 모서리는 아무 기능도 하지 않습니다.
 - 왼쪽 하단 모서리에서는 현재 애플리케이션 창들이 표시됩니다.
@@ -51,7 +83,18 @@ link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobod
 
 생산성을 위해 만든 구성이 실제로 그것을 방해하고 있다는 것이 그에게 거슬리는 문제입니다. 그는 심지어 핫 코너를 공백으로 되돌리고 싶다고 생각한 적도 있었어요 — 그런데 이 꿀팁을 몰라서 그랬던 게죠:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # "수정자 키"를 설정하여 의도하지 않은 핫 코너 트리거 방지하기
 
@@ -61,7 +104,18 @@ link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobod
 
 ![이미지](/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 의미는 데스크톱을 활성화시키기 위해서는 ⌘을 누른 채로 포인터를 그 모서리쪽으로 스와이프해야 합니다 (보통의 스와이프는 작동하지 않습니다).
 
@@ -74,7 +128,18 @@ link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobod
 - Option ⌥
 - Command ⌘
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알지만?
 무심코 트리거가 작동할 확률을 거의 0으로 줄이기 위해 두 개 이상의 수정자 키를 함께 사용하는 것도 좋을지 몰라요:
@@ -85,7 +150,18 @@ link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobod
 
 # 이제, 프로 사용자를 위한 꿀팁 (그리고 그 중요성)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 터미널을 통한 핫 코너 구성
 2. 쉬운 핫 코너 구성을 위해 이 오토메이터 앱을 가져다 쓰세요
@@ -98,21 +174,43 @@ link: "https://medium.com/macoclock/youre-underutilizing-hot-corners-hacks-nobod
 
 그래서 여기에 제가 터미널 명령어를 사용하여 핫 코너를 구성하는 방법이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예를 들어,
 
 아래 명령어는 bottom-left 핫 코너를 수정 없이 Mission Control로 설정합니다.
 
 ```js
-defaults write com.apple.dock wvous-bl-corner -int 2; 
-defaults write com.apple.dock wvous-bl-modifier -int 0; 
+defaults write com.apple.dock wvous-bl-corner -int 2;
+defaults write com.apple.dock wvous-bl-modifier -int 0;
 killall Dock
 ```
 
 하지만 어떻게 해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 명령어의 각 부분을 설명합니다...
 
@@ -125,7 +223,18 @@ killall Dock
 - `tr`은 오른쪽 위를 나타내며,
 - `tl`은 왼쪽 위를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코너는 작업을 실행하도록 코너를 구성하고 있어요.
 
@@ -147,7 +256,18 @@ killall Dock
 • 13: 화면 잠금
 • 14: 빠른 노트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 -int `integer` 명령어를 사용하면 Hot Corner 작업에 수정자를 설정할 수 있어요. 이 경우 0은 수정자가 없음을 의미해요.
 
@@ -175,28 +295,50 @@ killall Dock 명령은 Dock(및 Hot Corner)을 가장 최신 변경 사항을 �
 
 ## 더 나은 이해를 위한 예제 명령어 (‘killall Dock’를 제외한)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 왼쪽 위 모서리를 미션 컨트롤로 설정하려면:
 
 ```js
-defaults write com.apple.dock wvous-tl-corner -int 2; 
+defaults write com.apple.dock wvous-tl-corner -int 2;
 defaults write com.apple.dock wvous-tl-modifier -int 0
 ```
 
 - 오른쪽 위 모서리를 Command(⌘) 키와 함께 데스크톱으로 설정하려면:
 
 ```js
-defaults write com.apple.dock wvous-tr-corner -int 4; 
+defaults write com.apple.dock wvous-tr-corner -int 4;
 defaults write com.apple.dock wvous-tr-modifier -int 1048576
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Shift+Command (⇧+⌘)를 사용하여 왼쪽 하단 모서리를 시작 화면 보호기로 설정하십시오:
 
 ```js
-defaults write com.apple.dock wvous-bl-corner -int 5; 
+defaults write com.apple.dock wvous-bl-corner -int 5;
 defaults write com.apple.dock wvous-bl-modifier -int 1179648
 ```
 
@@ -205,9 +347,20 @@ defaults write com.apple.dock wvous-bl-modifier -int 1179648
 당신의 고통을 이해합니다 —
 터미널을 통해 Hot Corners를 구성하는 것은 시스템 설정에서 직접 수행하는 것보다 훨씬 어렵고 복잡합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-그래서 이 Automator 앱(Hot Corners Configurator)을 만들었습니다. 이 앱을 사용하면 작업이 10배 쉬워집니다. (앱이 작동하지 않는 경우에는 다시 시도하기 전에 Hot Corners에 무작위 조치를 할당하세요.) 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+그래서 이 Automator 앱(Hot Corners Configurator)을 만들었습니다. 이 앱을 사용하면 작업이 10배 쉬워집니다. (앱이 작동하지 않는 경우에는 다시 시도하기 전에 Hot Corners에 무작위 조치를 할당하세요.)
 
 한 번 더 James의 Hot Corners 구성을 살펴보겠습니다. (이제는 수식어를 사용합니다):
 
@@ -215,8 +368,18 @@ defaults write com.apple.dock wvous-bl-modifier -int 1179648
 
 그리고 이것이 Automator 앱을 실행했을 때 나타나는 화면입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot](/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_6.png)
 
@@ -226,8 +389,18 @@ It also contains an additional option — ‘CLEAR ALL HOT CORNERS’ — that c
 
 James wants to configure his empty top-left corner to open Launchpad with the modifier as Control (⌃). So he selects TOP-LEFT ↖, and sees this:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_7.png" />
 
@@ -237,7 +410,18 @@ James wants to configure his empty top-left corner to open Launchpad with the mo
 
 여기서 'Control, ⌃'를 선택하고 OK를 클릭합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 새로운 액션 및 수정자는 macOS 시스템 설정에서 구성됩니다. 확인하려면 핫 코너를 시도해보거나 앱을 다시 시작하여 변경 사항이 반영되는지 확인할 수 있습니다:
 
@@ -247,7 +431,18 @@ James wants to configure his empty top-left corner to open Launchpad with the mo
 
 ## 앱의 AppleScript 코드를 보고 싶으세요? 여기를 클릭하시면 별지에서 내려갈 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # #3. 핫 코너 프로필 만들기, 내보내기 및 적용
 
@@ -258,7 +453,18 @@ James wants to configure his empty top-left corner to open Launchpad with the mo
 
 일반적으로 말해 - 하루 종일 사용할 핫 코너 구성의 다양한 프로필을 만들 수 있어야 합니다. 한 번 프로필을 적용하면, 기존의 모든 구성이 새로운 구성으로 대체되어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 여러분이 이를 달성하는 데 도움을 드릴게요.
 
@@ -270,7 +476,18 @@ James wants to configure his empty top-left corner to open Launchpad with the mo
 defaults read com.apple.dock | grep wvous > myProfile.txt
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내Profile.txt 파일이 데스크톱에 생성될 것입니다. 제 프로필을 위해 그 안에 있는 내용은 다음과 같습니다(참고용):
 
@@ -289,21 +506,43 @@ defaults read com.apple.dock | grep wvous > myProfile.txt
 
 이제 새 프로필(이름을 myNewProfile로 지정합시다)을 위해 이전에 제공한 Automator 앱을 사용하여 서로 다른 Hot Corner 구성을 설정할 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 모든 프로필을 안전한 장소에 저장하고 원할 때 적용하세요. 그런데 어떻게 적용하죠?
 
 다음 명령어를 사용하세요:
 
 ```js
-defaults write com.apple.dock wvous-<corner_name>-corner -int <integer>; 
-defaults write com.apple.dock wvous-<corner_name>-modifier -int <integer>; 
+defaults write com.apple.dock wvous-<corner_name>-corner -int <integer>;
+defaults write com.apple.dock wvous-<corner_name>-modifier -int <integer>;
 killall Dock
 ```
 
 그냥 `corner_name`과 `integer`를 해당 값으로 대체하세요. 각 모서리마다 한 번씩 해야 합니다 (총 네 번). 그러면 전체 프로필이 적용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이해합니다 — 다시 어려워졌네요. 그래서 여기 Automator 앱이 있어요. 프로필 관련 작업이 쉽게 이루어집니다.
 
@@ -311,7 +550,18 @@ killall Dock
 
 토글되면, 새 프로필을 만들 건지 기존 프로필을 적용할 건지 선택하라는 창이 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_10.png)
 
@@ -321,7 +571,18 @@ killall Dock
 
 ![image](/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클릭 OK할 때 프로필이 "Hot Corner Profiles"라는 데스크톱 폴더에 저장되고 현재 핫 코너 구성이 포함됩니다.
 
@@ -332,7 +593,18 @@ killall Dock
 
 ## '기존 프로필 적용'을 선택하는 경우:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 기존 프로필이 표시됩니다
 
@@ -342,7 +614,18 @@ killall Dock
 
 ![프로필 이미지](/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번 Apply Profile을 클릭하면 선택한 프로필에 따라 Hot Corners가 구성됩니다.
 
@@ -353,7 +636,18 @@ killall Dock
 
 ![image](/assets/img/2024-05-17-YoureUnderutilizingHotCornersHacksNobodyToldYouBefore_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 어플리케이션의 AppleScript 코드를 보고 싶으세요? 별지의 해당 부분으로 스크롤 다운하는 건 어때요?
 
@@ -363,7 +657,18 @@ killall Dock
 
 ## 터미널 명령어에 열광하시나요? 그렇다면 이 이야기들을 읽는 걸 즐기실 거에요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 마지막으로,
 
@@ -374,7 +679,18 @@ killall Dock
 
 새로운 스토리를 게시할 때마다 알림을 받기 위해 460명이 넘는 다른 구독자들과 함께 참여하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 부록
 
@@ -567,8 +883,17 @@ if selectedCorner is not false then
 
                                 set actionCommand to "defaults write com.apple.dock wvous-"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```
 
-JavaScript 코드입니다. 함수와 변수를 정의하고 사용자 선택에 따라 프로필을 생성하거나 적용합니다. 조건문과 반복문을 사용하여 프로필 파일을 읽고 해당하는 설정을 적용합니다. 
+JavaScript 코드입니다. 함수와 변수를 정의하고 사용자 선택에 따라 프로필을 생성하거나 적용합니다. 조건문과 반복문을 사용하여 프로필 파일을 읽고 해당하는 설정을 적용합니다.

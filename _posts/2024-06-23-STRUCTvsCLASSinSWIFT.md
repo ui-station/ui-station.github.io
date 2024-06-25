@@ -3,13 +3,12 @@ title: "SWIFT에서 STRUCT와 CLASS 비교 분석"
 description: ""
 coverImage: "/assets/img/2024-06-23-STRUCTvsCLASSinSWIFT_0.png"
 date: 2024-06-23 01:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-STRUCTvsCLASSinSWIFT_0.png
 tag: Tech
 originalTitle: "STRUCT vs CLASS in SWIFT"
 link: "https://medium.com/@pragati91pandey/struct-vs-class-in-swift-ef9dd1771462"
 ---
-
 
 스위프트에서는 Struct와 Class를 모두 사용하지만 언제 어떤 것을 사용해야 하는지와 그 차이점이 무엇인지 혼란스러울 수 있습니다. 이 둘 사이의 주요 차이점은 다음과 같습니다:
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@pragati91pandey/struct-vs-class-in-swift-ef9dd1771462
 
 더 나은 이해를 위해 예시를 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct Person {
@@ -44,13 +54,23 @@ print(person2.name)//prints "Mary"
 
 더 나은 이해를 위해 위 예제를 클래스 관점에서 살펴보겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class Person {
     var name: String
-    
+
     init(name: String) {
         self.name = name
     }
@@ -82,19 +102,30 @@ struct Employee: Person { // 컴파일 시간 오류
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클래스: 클래스는 상속을 지원합니다. 다른 클래스로부터 속성, 메서드 및 기능을 상속할 수 있습니다.
 
 ```js
-class Employee: Person {   
+class Employee: Person {
 
     var employeeId: Int
-    
+
     init(employeeId: Int, name: String) {
         self.employeeId = employeeId
         super.init(name: name)
-    }    
+    }
 }
 
 var obj = Employee(employeeId: 20, name: "Abhay")
@@ -114,14 +145,25 @@ var person1 = Person(name: "Joy")
 person1.name = "Mary"// 올바르게 작동하여 수정됩니다
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클래스(Class): let 또는 var로 선언된 클래스는 변경 가능(mutable)합니다.
 
 ```js
 class Person {
     var name: String
-    
+
     init(name: String) {
         self.name = name
     }
@@ -150,14 +192,25 @@ struct Person {
 // 둘 다 작동합니다
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클래스: 클래스에서는 모든 프로퍼티가 초기화되어 있어야 오류가 발생하지 않도록 해야 합니다. 클래스에는 지정 이니셜라이저와 편의 이니셜라이저가 있습니다.
 
 ```js
 class Person {
     var name: String
-    
+
     init(name: String) {
         self.name = name
     }

@@ -3,14 +3,12 @@ title: "루비 온 레일즈에서 Devise 401 오류 응답 덮어쓰기"
 description: ""
 coverImage: "/assets/img/2024-05-18-OverridingDevise401ErrorResponseinRubyonRails_0.png"
 date: 2024-05-18 15:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-OverridingDevise401ErrorResponseinRubyonRails_0.png
 tag: Tech
 originalTitle: "Overriding Devise 401 Error Response in Ruby on Rails"
 link: "https://medium.com/passgage-tech/overriding-devise-401-error-response-in-ruby-on-rails-35e060d492c8"
 ---
-
-
 
 ![Image](/assets/img/2024-05-18-OverridingDevise401ErrorResponseinRubyonRails_0.png)
 
@@ -28,7 +26,18 @@ def active_for_authentication?
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 메서드는 사용자가 활성화되어 있는지 여부를 확인합니다. 사용자가 활성화되어 있지 않으면 Devise가 세션을 생성하는 것을 허용하지 않습니다.
 
@@ -46,7 +55,18 @@ end
 
 우리는 Devise::SessionsController에서 Api::V2::SessionsController의 create 메서드를 오버라이드합니다. 하지만 active_for_authentication? 메서드의 응답 키나 값을 오버라이드할 수 없습니다. 일반적으로 응답은 아래와 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 {
@@ -74,7 +94,18 @@ end
 
 ## 이를 수정하는 데는 2단계가 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 새로운 관심사를 만들기
 
@@ -114,10 +145,21 @@ end
 ```js
  config.warden do |manager|
     manager.failure_app = CustomAuthFailure
-  end 
+  end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The Links:
 

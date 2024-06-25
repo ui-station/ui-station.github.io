@@ -3,13 +3,12 @@ title: "앱 테마 변경하기  접근성 맞춤 설정하기"
 description: ""
 coverImage: "/assets/img/2024-05-27-ChangeAppThemePersonalizingAccessibility_0.png"
 date: 2024-05-27 17:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-ChangeAppThemePersonalizingAccessibility_0.png
 tag: Tech
 originalTitle: "Change App Theme — Personalizing Accessibility"
 link: "https://medium.com/proandroiddev/change-app-theme-personalizing-accessibility-3ceecf919d25"
 ---
-
 
 <img src="/assets/img/2024-05-27-ChangeAppThemePersonalizingAccessibility_0.png" />
 
@@ -20,7 +19,18 @@ link: "https://medium.com/proandroiddev/change-app-theme-personalizing-accessibi
 
 이전 게시물에서 설명한 것처럼, 일반적으로 개인화는 접근성을 개선하는 열쇠가 될 수 있다는 것과 아이콘과 레이블을 숨기거나 표시하는 설정을 추가하는 구체적인 예시를 제시했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 포스트에서는 구체적인 예시를 계속 다루겠습니다. 앱의 테마를 변경할 수 있는 설정을 추가할 것입니다. 사용자는 시스템 설정을 따르는 것(기본값), 밝은 테마, 어두운 테마, 고대비 색상 테마 중에서 선택할 수 있습니다. 함께 알아보겠습니다.
 
@@ -30,7 +40,18 @@ link: "https://medium.com/proandroiddev/change-app-theme-personalizing-accessibi
 
 그래서 사용자에게 제어력을 주는 것이 중요합니다. 이런 종류의 설정을 위한 최소 옵션은 시스템 기본값, 밝은 테마, 어두운 테마입니다. 하지만 고대비 테마는 어떨까요? 왜 추가해야 하며 누가 필요로 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 고대비 테마
 
@@ -40,7 +61,18 @@ WebAIM은 2018년에 저시력 사용자들을 대상으로 설문조사를 실�
 
 # 어떻게?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱 테마를 변경할 수 있는 기능을 추가하는 흐름은 이전 블로그 게시물의 레이블 및 아이콘과 유사합니다. 설정 화면에 설정을 추가하고 설정 값을 데이터 저장소에 저장한 다음 앱에서 해당 값을 사용하여 어떤 테마를 표시할지 결정합니다.
 
@@ -50,7 +82,18 @@ WebAIM은 2018년에 저시력 사용자들을 대상으로 설문조사를 실�
 
 ## 데이터 저장하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 이전 블로그 게시물에서 설정 저장에 사용한 설정 데이터 저장소에 키-값 쌍을 추가하려고 합니다. 이전 블로그 게시물에서 언급했듯이, 블로그 게시물을 단순하게 유지하기 위해 데이터 저장소는 SettingsRepository에서 정의되고 상호 작용됩니다.
 
@@ -68,7 +111,18 @@ enum class Theme {
 
 데이터 저장소는 enum 값들을 저장할 수 없으므로, enum을 문자열로 변환하고 다시 변환할 방법이 필요합니다. 문자열로 변환하는 부분은 쉽습니다 - toString() 함수를 사용할 수 있습니다. 다른 변환에 대해서는 도우미 함수를 정의해야 합니다. enum 클래스에 추가해보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 enum class Theme {
@@ -105,7 +159,18 @@ val colorThemeFlow: Flow<Theme?> = dataStore.data
     }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼, 먼저 preferences 키 오브젝트에 preferences 키를 추가합니다. 플로우를 위해 데이터 스토어에서 값을 읽은 다음, 앞서 정의한 Theme.from()을 사용하여 문자열을 Theme-enum으로 파싱합니다.
 
@@ -123,14 +188,25 @@ suspend fun setColorScheme(theme: Theme?) {
 
 이 함수에서는 enum의 문자열 값을 정의한 preference 키를 사용하여 데이터 저장소에 설정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로 할 일은 SettingsViewModel을 업데이트하는 것입니다. 먼저, 테마 값을 저장할 Mutable State Flow를 추가하고 UI에서 사용합니다:
 
 ```kotlin
 // SettingsViewModel.kt
 
-private var _colorScheme = 
+private var _colorScheme =
     MutableStateFlow<Theme?>(Theme.Dark)
 val colorScheme = _colorScheme.asStateFlow()
 ```
@@ -155,7 +231,18 @@ fun setColorScheme(theme: Theme?) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 앱을 열 때 초기값을 얻기 위해 init 블록에서 getColorScheme()을 호출하는 것입니다:
 
@@ -172,12 +259,23 @@ init {
 
 지난 게시물과 마찬가지로 SettingsViewModel에서 값을 사용하는 방법을 보여주지는 않겠지만, 접근성 및 의미론적인 관점에서 몇 가지 사항을 언급하고 싶습니다: 각 색상 옵션은 선택 가능한 변경자를 가져야하며, 색상 옵션을 감싸는 구성 요소는 selectableGroup()-변경자를 가져야합니다. 내 코드에서 이러한 것들은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 부모 컴포넌트에서 다음을 사용하고 있어요:
 
 ```js
-// SettingsScreen.kt 
+// SettingsScreen.kt
 
 Column(
     modifier = Modifier.selectableGroup(),
@@ -192,7 +290,18 @@ Column(
 
 ## UI에 대한 테마 변경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최종 단계는 테마의 저장된 값 사용하여 해당 값을 업데이트하는 것입니다. 저장된 값에 따라 테마를 설정하는 로직을 추가해야 합니다.
 
@@ -202,7 +311,18 @@ Theme.kt 파일에서 애플리케이션 테마의 기본 구현에 추가적인
 
 AppTheme 코파서블에 Theme 유형의 선택적 매개변수를 추가하고 해당 값을 사용하여 MaterialTheme 구성 요소에 설정할 색상을 결정합니다. 테마가 null이 아닌 경우 값을 기준으로 색상을 설정하고, null이면 시스템의 기본 색상을 사용해야 합니다. 이를 위해 isSystemInDarkTheme 값을 확인하여 색상을 설정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 앱의 루트가 정의된 MainActivity에서 우리는 저장된 테마의 값을 읽은 다음 그 값을 AppTheme-composable에 전달합니다:
 
@@ -218,7 +338,18 @@ AppTheme(theme = theme.value) { ... }
 
 # 마무리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 글에서는 앱에서 사용자가 테마를 선택할 수 있도록 설정을 추가하여 사용자가 소프트웨어의 테마를 결정하는 방법을 살펴보았어요. 제공되는 테마는 밝은 테마, 어두운 테마, 고대비 테마 또는 시스템의 기본 테마를 따를 수 있어요.
 

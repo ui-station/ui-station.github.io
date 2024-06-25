@@ -3,13 +3,12 @@ title: "프로처럼 코딩하는 데 도움이 되는 유용한 C NET 코드 �
 description: ""
 coverImage: "/assets/img/2024-05-18-10UsefulCNETSnippetsToCodeLikeaPro_0.png"
 date: 2024-05-18 15:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-10UsefulCNETSnippetsToCodeLikeaPro_0.png
 tag: Tech
 originalTitle: "10 Useful C# .NET Snippets To Code Like a Pro"
 link: "https://medium.com/@kmorpex/10-useful-c-net-snippets-to-code-like-a-pro-cb196dbc86d4"
 ---
-
 
 <img src="/assets/img/2024-05-18-10UsefulCNETSnippetsToCodeLikeaPro_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@kmorpex/10-useful-c-net-snippets-to-code-like-a-pro-c
 
 불변 컬렉션은 스레드 안전 작업 및 데이터 무결성을 보장하는 데 필수적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```csharp
 var originalList = new List<string> { "Alice", "Bob", "Charlie" };
@@ -43,7 +53,18 @@ public async Task<string> FetchDataAsync(string url)
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. LINQ 쿼리
 
@@ -59,7 +80,18 @@ var highScores = from score in scores
 // highScores에는 이제 97, 92, 81이 포함됩니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 널 참조 예외를 피하기 위해 안전한 널 체크를 위해 널 조건부 연산자를 사용하세요.
 
@@ -74,7 +106,18 @@ var length = array?.Length ?? 0;
 
 튜플과 해체를 사용하여 여러 값을 반환하여 메서드 출력을 간소화하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```cs
 public (int, string) GetPerson()
@@ -93,9 +136,20 @@ var (id, name) = GetPerson();
 var person = (Id: 1, Name: "Jane Doe");
 
 Console.WriteLine($"{person.Name}는 ID가 {person.Id}입니다.");
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 7. 패턴 매칭
 
@@ -112,7 +166,18 @@ if (obj is int i)
 
 ## 8. 확장 메서드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기존 클래스의 기능을 향상시키는 방법은 소스 코드를 수정하지 않고 해당 클래스를 사용하는 것입니다.
 
@@ -133,7 +198,18 @@ Console.WriteLine(myString.Quote());
 
 새로운 using 선언을 사용하여 가역 개체의 관리를 간소화하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 var streamReader = new StreamReader("file.txt");
@@ -157,7 +233,18 @@ using (var context = new DataContext())
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드 조각들을 매일의 코딩 작업에 통합하면 코드의 효율성과 명확성을 향상할 뿐만 아니라 강력하고 확장 가능한 응용 프로그램을 만들기 위해 C# 및 .NET의 모든 잠재력을 발휘할 수 있습니다. 이러한 코드 조각들은 .NET 프로그래밍의 광활한 세계를 탐험하는 데 사용되며, 생산하는 각 줄 코드가 품질과 전문성에 대한 당신의 헌신을 반영하도록 보장합니다.
 

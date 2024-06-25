@@ -3,13 +3,12 @@ title: "Jetpack Compose에서 안정성을 마스터하여 앱 성능 최적화�
 description: ""
 coverImage: "/assets/img/2024-05-17-OptimizeAppPerformanceByMasteringStabilityinJetpackCompose_0.png"
 date: 2024-05-17 18:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-OptimizeAppPerformanceByMasteringStabilityinJetpackCompose_0.png
 tag: Tech
 originalTitle: "Optimize App Performance By Mastering Stability in Jetpack Compose"
 link: "https://medium.com/proandroiddev/optimize-app-performance-by-mastering-stability-in-jetpack-compose-69f40a8c785d"
 ---
-
 
 ![Jetpack Compose](/assets/img/2024-05-17-OptimizeAppPerformanceByMasteringStabilityinJetpackCompose_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/proandroiddev/optimize-app-performance-by-mastering-st
 
 이 기사에서는 제트팩 컴포즈의 내부 작업을 이해하고, 안정성을 관리하여 애플리케이션의 성능을 향상시키는 방법을 안내하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Jetpack Compose 단계
 
@@ -29,7 +39,18 @@ link: "https://medium.com/proandroiddev/optimize-app-performance-by-mastering-st
 
 Jetpack Compose는 한 프레임의 렌더링을 세 가지 구분된 단계를 통해 실행합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 구성: 이 단계에서는 Composable 함수에 대한 설명을 생성하고 여러 메모리 슬롯을 할당함으로써 프로세스가 시작됩니다. 이러한 슬롯은 각 Composable 함수를 메모이즈하여 런타임 중에 효율적인 호출 및 실행을 가능하게 합니다.
 - 레이아웃: 이 단계에서는 Composable 트리 내 각 노드의 위치를 설정합니다. 레이아웃 단계는 주로 각 Composable 노드를 측정하고 적절히 배치하여 UI의 전체 구조 내에서 모든 요소가 정확히 배열되도록 보장합니다.
@@ -41,7 +62,18 @@ Jetpack Compose는 한 프레임의 렌더링을 세 가지 구분된 단계를 
 
 ![이미지](/assets/img/2024-05-17-OptimizeAppPerformanceByMasteringStabilityinJetpackCompose_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 재구성은 입력 변경에 대한 응담으로 조합 가능한 함수가 새롭게 실행되어 Composition 단계에서 시작됩니다. 이 프로세스는 State에서 관찰하거나 내재적으로 Compose 런타임과 컴파일러 메커니즘들이 연관된 다양한 요소에 의해 트리거될 수 있습니다.
 
@@ -51,7 +83,18 @@ Jetpack Compose는 한 프레임의 렌더링을 세 가지 구분된 단계를 
 
 이제 안정성 개념을 탐구하고 재구성 비용을 최적화하여 응용 프로그램 성능을 향상시킬 방법을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안정성 이해
 
@@ -61,7 +104,18 @@ Compose 컴파일러는 Composable 함수의 매개변수를 안정적인 것과
 
 # 안정함 vs. 불안정함
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제, 어떻게 매개변수가 안정적인지 불안정한지로 분류되는지 궁금할 수 있습니다. 이 결정은 Compose 컴파일러에 의해 이루어집니다. 컴파일러는 Composable 함수에서 사용된 매개변수의 유형을 검토하고 다음 기준에 따라 안정적인지를 분류합니다:
 
@@ -73,7 +127,18 @@ Compose 컴파일러는 Composable 함수의 매개변수를 안정적인 것과
 
 Composable 컴파일러에 의해 안정적으로 간주되는 불변 기본 속성으로 구성된 User 데이터 클래스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나, Composable 함수 내에서 매개변수 유형을 평가하는 컴파일러는 아래 기준에 따라 해당 유형을 불안정하다고 식별합니다:
 
@@ -84,7 +149,18 @@ Composable 컴파일러에 의해 안정적으로 간주되는 불변 기본 속
 
 User 데이터 클래스는 기본 속성으로 구성되어 있지만, 가변 이름 속성의 존재로 인해 Compose 컴파일러가 이를 불안정하다고 분류합니다. 이 분류는 안정성이 모든 속성의 종합적인 안정성을 평가하여 단일 가변 속성이 전체 클래스를 불안정하게 만들 수 있기 때문에 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스마트 재구성
 
@@ -94,7 +170,18 @@ User 데이터 클래스는 기본 속성으로 구성되어 있지만, 가변 �
 
 스마트 재구성이 작동하는 원칙 중 일부는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 등가성 확인: Composable 함수에 새 입력이 전달될 때마다 해당 입력은 반드시 클래스의 equals() 메서드를 사용하여 이전 입력과 비교됩니다.
 - 안정성에 따른 결정:
@@ -106,7 +193,18 @@ User 데이터 클래스는 기본 속성으로 구성되어 있지만, 가변 �
 
 Jetpack Compose는 스마트한 다시 구성을 기본적으로 제공하지만, Composable 함수에서 사용되는 클래스를 안정화하고 최대한 다시 구성을 줄이는 방법을 숙지하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 합성 가능한 함수 추론하기
 
@@ -116,7 +214,18 @@ Jetpack Compose는 스마트한 다시 구성을 기본적으로 제공하지만
 
 컴파일러는 합성 가능한 함수를 시작 가능함, 이동 가능함, 대체 가능함 등으로 분류하여 실행을 최적화합니다. 이 게시물에서는 특히 재구성에 중요한 역할을 하는 시작 가능한 유형에 대해 자세히 살펴볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다시 시작 가능한
 
@@ -126,7 +235,18 @@ Compose 런타임에서 제공하는 특정 주석으로 Composable 함수를 �
 
 # 건너뛰기 가능한
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Skipable은 또 다른 Composable 함수의 특성을 나타내며, 이는 이전 섹션에서 논의된 스마트 recomposition에 의해 설정된 적절한 조건 하에서 전체 recomposition 프로세스를 완전히 우회할 수 있음을 의미합니다. 따라서, skipable 함수가 바로 recomposition을 건너뛰고 UI 성능을 향상시킬 수 있는 잠재력과 직접적으로 연결된다고 단언할 수 있습니다. 이는 특정 상황에 따라서 달려있는데요.
 
@@ -136,8 +256,18 @@ Composable 함수가 재시작 가능(restartable)이면서 동시에 skippable�
 
 # Compose Compiler Metrics
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Compose 컴파일러 플러그인을 사용하면 Compose에 고유한 특정 개념에 중점을 둔 자세한 보고서와 메트릭을 생성할 수 있습니다. 이러한 통찰력은 Compose 코드의 복잡성을 파헤치는 데 유용하며, 마이크로 레벨에서 작동 방식을 정확하게 이해할 수 있도록 도와줍니다.
 
@@ -147,8 +277,18 @@ Compose 컴파일러 메트릭을 생성하려면, 아래 예제에 설명된 �
 
 ## 최상위 메트릭 (modules.json)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 보고서는 Compose에 특화된 고수준 메트릭을 제공하며, 주로 추적할 수 있는 숫자 데이터 지점을 생성하는 데 목적이 있습니다. 이러한 메트릭 간의 관계는 통찰력 있는 관찰을 제공할 수 있습니다. 예를 들어, "skippableComposables"의 수를 "restartableComposables"의 수와 비교하면, Composable 함수의 재구성이 건너뛰어질 비율을 나타내는 백분율이 도출됩니다.
 
@@ -172,7 +312,18 @@ Compose 컴파일러 메트릭을 생성하려면, 아래 예제에 설명된 �
 
 ## Composable Signatures (composables.txt)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 보고서는 사람이 이해하기 쉽도록 작성된 의사 Kotlin 스타일 함수 서명을 사용합니다. 이 모듈 내의 각 구성 가능한 함수를 자세히 살펴보며 각 매개변수를 분석하고 특정 통찰을 제공합니다.
 
@@ -182,7 +333,18 @@ Compose 컴파일러 메트릭을 생성하려면, 아래 예제에 설명된 �
 
 다음은 Composable 함수에 대한 샘플 보고서입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 restartable skippable scheme("[androidx.compose.ui.UiComposable]") fun Avatar(
@@ -203,7 +365,18 @@ This report also utilizes pseudo-Kotlin style function signatures crafted for hu
 The stability assessment is based on the class’s fields, with each field listed under the class and labeled as stable, unstable, or runtime stable. The bottom line reveals the “expression” employed to determine this stability at runtime, providing a comprehensive overview of how each class`s stability is evaluated.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 stable class StreamShapes {
@@ -224,8 +397,18 @@ stable class StreamShapes {
 
 이제 Compose 컴파일러가 안정성을 처리하는 방식과 이러한 안정성 결정이 다시 구성에 어떻게 영향을 미치는지, 그리고 당신의 애플리케이션 성능에 어떻게 영향을 미칠 수 있는지 통찰력을 얻었어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Composed of immutability and stability annotations, let's take a journey into transforming changeable classes into reliable ones using annotations from the compose-runtime library. The main actors in this process are @Immutable and @Stable.
 
@@ -235,7 +418,18 @@ When you decorate your class with the @Immutable annotation, you reassure the Co
 
 To make sure your classes are distinctly marked as stable with the @Immutable annotation, adhere to the guidelines below:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모든 공용 속성에 val 키워드를 사용하여 불변성을 보장하세요.
 - 사용자 지정 setter를 피하고 공용 속성이 변경 가능성을 지원하지 않도록 합니다.
@@ -248,7 +442,18 @@ To make sure your classes are distinctly marked as stable with the @Immutable an
 
 # 안정함
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `@Stable` 어노테이션은 `@Immutable` 어노테이션보다 Compose 컴파일러에 더 강력하지만 약간 덜 엄격한 커밋먼트를 나타냅니다. 함수나 프로퍼티에 적용되면, `@Stable` 어노테이션은 해당 유형이 가변할 수 있다는 것을 나타냅니다. 처음에는 약간 모순적으로 보일 수도 있습니다. 이 문맥에서 "Stable"이라는 용어는 함수가 동일한 입력에 대해 항상 동일한 결과를 반환할 것이라는 의미로, 잠재적인 가변성에도 불구하고 예측 가능한 동작을 보장합니다.
 
@@ -258,7 +463,18 @@ State와 MutableState를 통한 데모로 보여 준 것처럼, MutableState에 
 
 # Immutable vs Stable
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **@Immutable**과 **@Stable** 주석 사이의 구별과 어떤 것을 사용해야 하는지 결정하는 것은 처음에는 혼란스러울 수 있습니다. 하지만 실제로는 꽤 간단합니다. 이전에 언급했듯이, **@Immutable** 주석은 클래스의 모든 공용 속성이 불변이라는 의미로, 생성된 후에 상태가 변경될 수 없음을 나타냅니다. 반면에 **@Stable** 주석은 가변 객체에 적용될 수 있으며, 동일한 입력에 대해 일관된 결과를 생성해야 하는 것을 요구합니다.
 
@@ -268,7 +484,18 @@ State와 MutableState를 통한 데모로 보여 준 것처럼, MutableState에 
 
 **@Stable** 주석을 적용하면 **UiState** 클래스를 안정적으로 지정할 수 있습니다. 이는 최적화된 건너뛰기와 지능적인 재구성을 가능하게 하여 업데이트의 효율성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # NonRestartableComposable
 
@@ -278,7 +505,18 @@ Jetpack Compose의 @NonRestartableComposable 주석은 특정 구성 가능한 �
 
 @NonRestartableComposable의 일부로 동작하는 대표적인 예는 Compose 런타임 라이브러리의 Side-effect API 내에서 발견됩니다. 예를 들어 LaunchedEffect의 구현은 이 주석을 사용하여 효과가 불필요하게 다시 시작되지 않도록 보장합니다. 아래 코드에서 보여진 것처럼요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 @NonRestartableComposable 주석을 사용할 때 주의해야 하며 앱 성능을 향상시키기 위한 수단으로만 사용해서는 안 됩니다. 선별적으로 사용하지 않으면 원하지 않는 결과로 이어질 수 있습니다.
 
@@ -288,7 +526,18 @@ Jetpack Compose의 @NonRestartableComposable 주석은 특정 구성 가능한 �
 
 이전에 언급했던 바와 같이 스마트 recomposition 중 Composable 함수를 건너뛸 수 있는 능력은 해당 함수의 각 매개변수의 안정성에 의해 결정됩니다. 스마트 recomposition을 위해 Composable 함수 내에서 사용되는 모든 매개변수가 안정적임을 보장하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 섹션에서는 Composable 함수를 스킵할 수 있는 네 가지 다른 전략을 탐구하여 효율적인 recomposition으로 성능을 향상시킬 수 있습니다.
 
@@ -298,7 +547,18 @@ Jetpack Compose의 @NonRestartableComposable 주석은 특정 구성 가능한 �
 
 아래의 좋은 예제를 살펴보면 그 이유를 이해할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 userList 필드는 List로 선언되어 있습니다. List는 기본적으로 요소의 수정을 허용하지 않습니다. 그러나 첫 번째 줄에서 나와 있듯이, 이 List는 MutableList로부터 생성될 수 있습니다. 이는 List 인터페이스 자체가 수정을 제한하지만 해당 내부 구현이 변경 가능할 수 있다는 것을 의미합니다. Compose 컴파일러는 구현 유형을 추론할 수 없어, 이러한 인스턴스들을 안정적이지 않은 것으로 간주하여 정확한 동작을 보장합니다.
 
@@ -308,7 +568,18 @@ kotlinx.collections.immutable 라이브러리는 ImmutableList 및 ImmutableSet�
 
 이제 Compose 컴파일러가 kotlinx.collections 대비 kotlinx.collections.immutable의 안정성을 결정할 때 고려하는 주요 요소에 대해 궁금해 할 수 있습니다. 구분은 Compose 컴파일러가 변경 불가능 컬렉션을 이해하는 데 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 자세한 통찰을 얻으려면 Compose 컴파일러 라이브러리의 일부인 KnownStableConstructs.kt 파일을 참고하십시오. 아래 코드를 보면, Compose 컴파일러가 안정적으로 간주해야 하는 클래스의 패키지 이름 목록을 수동으로 유지한다는 것을 확인할 수 있습니다:
 
@@ -318,7 +589,18 @@ kotlinx.collections.immutable 라이브러리는 ImmutableList 및 ImmutableSet�
 
 Compose 컴파일러에서는 Kotlin 람다 표현식의 처리가 독특한 접근 방식을 취합니다. 이전에 설명한 바와 같이, Compose 컴파일러는 IR(Intermediate Representation) 변환을 통해 개발자가 작성한 소스 코드를 수정합니다. 따라서 컴파일러는 Composable 함수에 전달된 람다의 실행을 최적화하기 위해 Compose 런타임에 일부 규칙을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Compose 컴파일러는 람다 표현식을 처리할 때 람다가 값을 캡처하는지 여부에 따라 다른 방식으로 다룹니다. 클로저의 맥락에서 값들을 캡처하는 것은 람다 표현식이 직접적인 범위 외부에 있는 변수에 의존한다는 의미입니다. 외부 변수에 독립적인 람다라면 아래 예시처럼 값들을 캡처하지 않는다고 말할 수 있습니다:
 
@@ -328,17 +610,39 @@ Compose 컴파일러는 람다 표현식을 처리할 때 람다가 값을 캡�
 
 결과적으로, 람다가 값들을 캡처하는지 여부에 관계없이, 해당 람다는 Composable 함수 내에서 안정적으로 간주됩니다. Composable 함수가 Any 유형의 매개변수를 수용하는 시나리오를 고려해보면, Any가 변경 불가능한 값을 포함하는 등 다양한 값 범위를 포함할 수 있기 때문에, Compose 컴파일러에서는 불안정하게 취급됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-그러나 아래 예시와 같이 람다 표현식을 사용하여 값을 제공하는 경우, Compose 컴파일러는 람다 매개변수를 안정적으로 처리합니다:  
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-# Wrapper Class  
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-Composable 함수를 안정화하는 또 다른 효과적인 전략은 제어 범위를 벗어난 불안정한 클래스에 대한 래퍼 클래스를 만드는 것입니다. 이러한 경우에는 예시와 같이 안정성 주석을 직접 적용할 수 없는 클래스에 적용할 수 있습니다.  
+그러나 아래 예시와 같이 람다 표현식을 사용하여 값을 제공하는 경우, Compose 컴파일러는 람다 매개변수를 안정적으로 처리합니다:
+
+# Wrapper Class
+
+Composable 함수를 안정화하는 또 다른 효과적인 전략은 제어 범위를 벗어난 불안정한 클래스에 대한 래퍼 클래스를 만드는 것입니다. 이러한 경우에는 예시와 같이 안정성 주석을 직접 적용할 수 없는 클래스에 적용할 수 있습니다.
 
 그런 다음 Composable 함수의 매개변수 유형으로 이 래퍼 클래스를 활용할 수 있습니다. 아래 코드에서 보여지는 것처럼요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 파일 구성
 
@@ -348,7 +652,18 @@ Compose 컴파일러 버전 1.5.5부터 구성 파일에서 클래스를 나열�
 
 다음으로, 앱 모듈의 루트 디렉토리에 compose_compiler_config.conf 파일을 아래와 같이 생성하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // LocalDateTime을 안정적으로 간주합니다.
@@ -367,7 +682,18 @@ com.example.GenericClass<*,_>
 
 기억해야 할 중요한 점은 구성 파일이 정의된 클래스들을 기본적으로 안정적으로 만들지 않습니다. 대신, 구성 파일을 활용하여 Compose 컴파일러와 계약을 맺는 것입니다. 따라서이 기능을 분별있게 사용하여 특정 시나리오에서 스마트 재구성 프로세스를 우연히 건너뛰는 일을 피해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 멀티 모듈 아키텍처의 안정성
 
@@ -377,7 +703,18 @@ com.example.GenericClass<*,_>
 
 그러나, Jetpack Compose 런타임 라이브러리에 직접 의존하지 않고 순수한 Kotlin/JVM 라이브러리에 초점을 맞춘 경우에는 compose 런타임 라이브러리에 의존하는 것이 이상적이지 않은 경우가 있을 수 있습니다. 이러한 시나리오에서 두 가지 주요 솔루션이 제시됩니다: compose-stable 마커 라이브러리를 채택하거나 안정성을 보장하기 위해 파일 구성을 활용하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안정적인 마커 작성기
 
@@ -388,7 +725,18 @@ com.example.GenericClass<*,_>
 
 해당 라이브러리의 좋은 사용 사례는 Compose용 Stream의 적응 가능한 채팅 및 비디오 SDK의 코어 모듈에서 발견할 수 있습니다. 이러한 SDK의 코어 모듈은 compose-stable 마커를 활용하여 도메인 클래스를 안정적으로 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 compose-stable-marker 라이브러리에 대해 더 알아보려면 GitHub 저장소를 방문해 주세요.
 
@@ -398,7 +746,18 @@ compose-stable-marker 라이브러리에 대해 더 알아보려면 GitHub 저�
 
 한 가지 강조해야 할 점은 이 기능을 분별하여 사용해야 합니다. Compose 컴파일러는 이러한 클래스들을 안정적으로 지속적으로 다룰 것이므로 스마트한 재구성 행동을 조정하여 의도하지 않은 동작을 유발할 수 있습니다. 또한, 이러한 강제적인 안정성으로 인한 디버깅 문제는 애플리케이션 내에서 해결하기 어려울 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 강한 스킵 모드
 
@@ -408,7 +767,18 @@ compose-stable-marker 라이브러리에 대해 더 알아보려면 GitHub 저�
 
 강한 스킵 모드는 재구성 중에 컴포저블 함수를 건너뛸 때 Compose 컴파일러가 사용하는 전통적인 안정성 기준을 수정합니다. 일반적인 상황에서 컴포저블 함수는 오직 안정적인 매개변수만 포함하고 있는 경우에만 건너뛸 수 있는 것으로 간주됩니다. 그러나 강한 스킵 모드는 이 전통을 변경합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기능이 활성화되면 모든 다시 시작 가능한 Composable 함수가 건카볼입니다. 이전 값을 무시하고 불안정한 매개변수가 포함되었는지 여부에 관계없이. 그러나, 다시 시작할 수 없는 Composable 함수는 영향을 받지 않으며 건너뛸 수 없습니다.
 
@@ -418,7 +788,18 @@ compose-stable-marker 라이브러리에 대해 더 알아보려면 GitHub 저�
 
 Composable 함수를 강력한 건카볼 모드에서 제외하고 다시 시작할 수 있지만 건너뛸 수 없도록 만들려면 @NonSkippableComposable 주석을 적용할 수 있습니다. 이는 매개변수 안정성과 관계없이 항상 재조합을 위해 해당 함수가 고려됨을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한편, 객체 동등성(object equality)을 사용하여 객체를 비교하려면 여전히 도메인 모델 클래스에 @Stable 주석을 추가해야 합니다.
 이 기능과 람다 메모이제이션(Lambda Memoization)의 향상된 개념에 대한 더 깊은 이해를 위해 '강력한 스킵 모드(Strong Skipping Mode)'에 대한 상세 가이드를 참조해보세요.
@@ -429,10 +810,32 @@ Composable 함수를 강력한 건카볼 모드에서 제외하고 다시 시작
 
 안정성의 중요성을 깨달으면 화면에 UI 노드를 렌더링하는 메커니즘에 영향을 줌으로써 최종적으로 응용 프로그램의 성능에 영향을 미치게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 테이블 태그를 마크다운 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원래 getstream.io에 게시되었습니다.

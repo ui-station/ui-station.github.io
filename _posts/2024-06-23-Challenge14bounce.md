@@ -3,13 +3,12 @@ title: "Challenge 14 바운스 방법 이해 및 구현"
 description: ""
 coverImage: "/assets/img/2024-06-23-Challenge14bounce_0.png"
 date: 2024-06-23 00:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-Challenge14bounce_0.png
 tag: Tech
 originalTitle: "Challenge 14: bounce"
 link: "https://medium.com/@danielepolencic/challenge-14-bounce-2ba683214e7b"
 ---
-
 
 쿠버네티스 서비스: 생각했던 대로 항상 작동하지 않을 수 있어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@danielepolencic/challenge-14-bounce-2ba683214e7b"
 
 하지만, Cilium으로 작성된 eBPF를 사용하는 대안이 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "왜 "표준" 로드 밸런서를 사용하지 않는 거죠?
 
@@ -29,8 +39,18 @@ link: "https://medium.com/@danielepolencic/challenge-14-bounce-2ba683214e7b"
 
 세 개의 노드와 두 개의 팟이 있는 다음 클러스터를 고려해보세요."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-Challenge14bounce_0.png" />
 
@@ -43,8 +63,18 @@ NodePort로 요청을 보내면, 해당 트래픽이 동일 노드의 파드 2�
 - 트래픽이 파드 2에 도착할 확률은 33% 입니다
 - 위의 어느 것도 아닙니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 해결책
 
@@ -54,7 +84,18 @@ NodePort를 생성하면 클러스터의 각 노드가 30000~32767 범위의 포
 
 `노드 IP`:30000으로 curl 요청을 발행하면 무슨 일이 일어날까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IP 헤더의 대상 IP 주소는 Kubernetes에 서비스가 존재하지 않기 때문에 다시 작성됩니다(그리고 그들은 트래픽을 리디렉션하고 전달하는 규칙의 모음일 뿐입니다).
 
@@ -64,7 +105,18 @@ IP 헤더의 대상 IP 주소는 Kubernetes에 서비스가 존재하지 않기 
 
 이는 클러스터에 있는 어느 노드에서 클러스터를 받았는지에 관계없이 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만, 토론할 가치가 있는 두 가지 흥미로운 경계 사례가 있습니다:
 
@@ -75,7 +127,18 @@ IP 헤더의 대상 IP 주소는 Kubernetes에 서비스가 존재하지 않기 
 
 이것이 낭비라고 생각할 수 있지만, 이는 타협점입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 테이블 태그를 마크다운 형식으로 변경하시면 추가 hop이 발생하여 포드 간에 우수한 인트라 클러스터 로드 밸런싱을 할 수 있거나 항상 서비스를 구성하여 현재 노드의 포드로 트래픽을 전달하도록 설정할 수 있습니다.
 
@@ -87,7 +150,18 @@ IP 헤더의 대상 IP 주소는 Kubernetes에 서비스가 존재하지 않기 
 - 매주 발행하는 Learn Kubernetes Weekly 뉴스레터.
 - 20주 동안 게시한 20가지 Kubernetes 개념 시리즈.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 링크
 

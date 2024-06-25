@@ -3,13 +3,12 @@ title: "루비온레일즈에서 낮은 결합의 중요성"
 description: ""
 coverImage: "/assets/img/2024-05-27-TheImportanceofLowCouplinginRubyonRails_0.png"
 date: 2024-05-27 16:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TheImportanceofLowCouplinginRubyonRails_0.png
 tag: Tech
 originalTitle: "The Importance of Low Coupling in Ruby on Rails"
 link: "https://medium.com/@patrickkarsh/the-importance-of-low-coupling-in-ruby-on-rails-017f46ffb149"
 ---
-
 
 <img src="/assets/img/2024-05-27-TheImportanceofLowCouplinginRubyonRails_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@patrickkarsh/the-importance-of-low-coupling-in-ruby-o
 
 보다 쉬운 유지 보수: 애플리케이션의 구성 요소가 느슨하게 결합되어있을 때 한 부분의 변경이 다른 부분에 영향을 미칠 가능성이 적어집니다. 이 격리는 유지 보수를 단순화하고 코드를 수정할 때 버그를 도입할 위험을 줄입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경했습니다.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@patrickkarsh/the-importance-of-low-coupling-in-ruby-o
 
 ## 예시: Rails에서의 사용자 등록 및 알림
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자 등록을 구현하고 등록에 성공했을 때 환영 이메일을 보내는 시나리오를 고려해 봅시다. 이 시나리오에서 낮은 결합도를 달성하는 것은 사용자 등록 로직을 이메일 전송 로직에서 분리하는 것을 의미합니다.
 
@@ -41,11 +62,33 @@ link: "https://medium.com/@patrickkarsh/the-importance-of-low-coupling-in-ruby-o
 
 ![이미지](/assets/img/2024-05-27-TheImportanceofLowCouplinginRubyonRails_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저렇게 테이블 태그를 마크다운 형식으로 변경해주시면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메일러:
 
@@ -55,9 +98,20 @@ link: "https://medium.com/@patrickkarsh/the-importance-of-low-coupling-in-ruby-o
 
 ![Controller Image](/assets/img/2024-05-27-TheImportanceofLowCouplinginRubyonRails_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-## 설명 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+## 설명
 
 **역할 분리**: UsersController는 HTTP 요청과 응답을 처리하는 데 전적으로 책임이 있습니다. UserRegistrationService는 사용자 등록의 비즈니스 로직을 처리하고, UserMailer는 이메일 전송을 관리합니다. 각 클래스는 단일 책임을 가지고 있어 코드를 이해하고 유지하기 쉽게 만듭니다.
 
@@ -65,7 +119,18 @@ link: "https://medium.com/@patrickkarsh/the-importance-of-low-coupling-in-ruby-o
 
 **유연성**: 이메일 전송 메커니즘이 변경되더라도(예: 다른 이메일 서비스로 전환) UserMailer 클래스만 수정하면 되어 사용자 등록 로직에 영향을 주지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

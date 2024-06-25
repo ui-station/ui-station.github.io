@@ -3,13 +3,12 @@ title: "효율적으로 BigQuery를 사용하는 결정적 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-23-ADefinitiveGuidetoUsingBigQueryEfficiently_0.png"
 date: 2024-05-23 16:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ADefinitiveGuidetoUsingBigQueryEfficiently_0.png
 tag: Tech
 originalTitle: "A Definitive Guide to Using BigQuery Efficiently"
 link: "https://medium.com/towards-data-science/burn-data-rather-than-money-with-bigquery-the-definitive-guide-1b50a9fdf096"
 ---
-
 
 ## 빅쿼리 사용을 최대한 활용하여 실질적 가치를 창출할 때, 돈 대신 데이터를 소모하세요. 실용적 기술로 진짜 가치를 창출해보세요.
 
@@ -41,7 +40,18 @@ link: "https://medium.com/towards-data-science/burn-data-rather-than-money-with-
 
 # 📝 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 웨어하우징 분야에서는 보편적인 진실이 있어요: 데이터 관리는 비용이 많이 들 수 있다는 거죠. 마치 보물을 지키는 드래곤처럼, 저장된 각 바이트와 실행된 각 쿼리는 금화의 일부를 요구합니다. 하지만 제가 여러분께 드래곤을 달래는 마법 주문을 전해드리겠어요: 돈을 사용하는 게 아니라 데이터를 태워버리세요!
 
@@ -49,7 +59,18 @@ link: "https://medium.com/towards-data-science/burn-data-rather-than-money-with-
 
 # 💎 빅쿼리 기본 사항 및 비용 이해
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빅쿼리는 그냥 도구가 아니라 구글에서 관리하는 확장 가능한 컴퓨트 및 저장 기술의 패키지입니다. 빠른 네트워크를 통해 모든 것을 관리합니다. 빅쿼리는 분석 목적을 위한 서버리스 데이터 웨어하우스로, 빅쿼리 ML과 같은 기능이 내장되어 있습니다. 빅쿼리는 구글의 Jupiter 네트워크를 통해 저장과 컴퓨트를 분리하여 1 Petabit/sec의 총 이분면 대역폭을 활용합니다. 저장 시스템은 구글의 반정형 데이터를 위한 전용 열 지향 저장 형식인 Capacitor를 사용하며, 하부 파일 시스템은 구글의 분산 파일 시스템인 Colossus입니다. 컴퓨트 엔진은 Dremel을 기반으로 하며, 수천 개의 Dremel 작업을 클러스터 내에서 실행하는 클러스터 관리에 Borg를 사용합니다.
 
@@ -59,7 +80,18 @@ link: "https://medium.com/towards-data-science/burn-data-rather-than-money-with-
 
 데이터는 Colossus에 저장될 수 있지만, 구글 클라우드 스토리지에 저장된 데이터 위에 빅쿼리 테이블을 만드는 것도 가능합니다. 이 경우 쿼리는 여전히 빅쿼리 컴퓨트 인프라를 사용하여 처리되지만 GCS에서 데이터를 읽습니다. 이러한 외부 테이블은 일부 단점이 있지만 경우에 따라 GCS에 데이터를 저장하는 것이 더 비용 효율적일 수 있습니다. 때로는 빅 데이터가 아니라 기존 CSV 파일에서 데이터를 간단히 읽는 것뿐인 경우도 있습니다. 이러한 종류의 테이블을 사용하는 것이 간단하고 편리할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **Markdown 형식으로 테이블 태그 변경**
 
@@ -71,7 +103,18 @@ BigQuery의 모든 잠재력을 활용하기 위해서는 데이터를 BigQuery 
 
 ## 저장소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저장 공간은 GB당 $0.02이며, 활성 데이터는 GB당 $0.04, 비활성 데이터(최근 90일간 수정되지 않은 데이터)는 GB당 $0.01입니다. 테이블이나 파티션을 90일 연속으로 수정하지 않으면 장기 저장으로 간주되어 저장 공간 비용이 자동으로 50% 떨어집니다. 할인은 테이블 또는 파티션 단위로 적용됩니다. 데이터 수정 시 90일 카운터가 재설정됩니다.
 
@@ -81,7 +124,18 @@ BigQuery는 쿼리 실행 시간이 아닌 스캔된 데이터에 대해 청구�
 
 즉,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쿼리를 실행할 때, BigQuery는 처리될 데이터량을 추정합니다. BigQuery Studio 쿼리 편집기에 쿼리를 입력한 후에는 오른쪽 상단에 추정치를 확인할 수 있어요.
 
@@ -93,7 +147,18 @@ BigQuery는 쿼리 실행 시간이 아닌 스캔된 데이터에 대해 청구�
 1.27 GB / 1024 = 0.0010 TB * $8.13 = $0.0084 총 비용
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분 예측은 비관적인 계산이며, 종종 옵티마이저는 캐시된 결과, 자재화된 뷰 또는 기타 기술을 사용하여 실제 청구 바이트가 예측보다 낮게 될 수 있습니다. 여전히 작업의 영향을 대략적으로 파악하기 위해 이 예측을 확인하는 것이 좋은 실천법입니다.
 
@@ -103,7 +168,18 @@ BigQuery는 쿼리 실행 시간이 아닌 스캔된 데이터에 대해 청구�
 
 ![image](/assets/img/2024-05-23-ADefinitiveGuidetoUsingBigQueryEfficiently_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아쉽게도 현재까지는 쿼리당 기본값을 설정하는 것이 불가능합니다. 하루에 사용자당 프로젝트당 또는 프로젝트당 모든 바이트에 대해 청구된 바이트를 제한하는 것만 가능합니다.
 
@@ -113,7 +189,18 @@ BigQuery를 처음 사용할 때는 대부분 온디맨드 컴퓨트 요금 모�
 
 # 📐 데이터 모델링
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 데이터 유형
 
@@ -142,7 +229,18 @@ TIMESTAMP  | 8 논리 바이트
 
 NULL은 0 논리 바이트로 계산됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시:
 
@@ -171,9 +269,20 @@ CREATE TABLE gold.some_table (
   = 5.78 GB
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-우리가 이 테이블에 대해 SELECT *를 실행한다고 가정하면, Europe-west3에서는 5.78 GB / 1024 = 0.0056 TB * $8.13 = $0.05가 든다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+우리가 이 테이블에 대해 SELECT _를 실행한다고 가정하면, Europe-west3에서는 5.78 GB / 1024 = 0.0056 TB _ $8.13 = $0.05가 든다.
 
 데이터 모델을 설계하기 전에 이러한 계산을 하는 것은 좋은 생각입니다. 데이터 유형 사용을 최적화하는 것뿐만 아니라 작업 중인 프로젝트에 대한 비용을 예상할 수도 있기 때문입니다.
 
@@ -181,7 +290,18 @@ CREATE TABLE gold.some_table (
 
 데이터베이스 설계 및 관리 영역에서 데이터 정규화와 비정규화는 효율적인 저장, 검색 및 조작을 위해 데이터 구조를 최적화하기 위한 근본적인 개념들입니다. 전통적으로 정규화는 중복을 줄이고 데이터 무결성을 보존하는 것을 강조한 최고의 실천 방법으로 광명해왔습니다. 그러나 BigQuery와 다른 현대 데이터 웨어하우스의 맥락에서는 상황이 변하며 비정규화가 종종 선호되는 접근 방식으로 떠오르게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정규화된 데이터베이스에서는 데이터가 여러 개의 테이블로 구조화되어 있으며, 각 테이블은 서로 다른 개체나 개념을 나타내며, 일대일, 일대다 또는 다대다와 같은 관계를 통해 연결됩니다. 이 접근 방식은 데이터베이스 정규화 양식에 의해 제시된 원칙을 따르며, 예를 들어 제1정규형(1NF), 제2정규형(2NF), 제3정규형(3NF) 등이 있습니다.
 
@@ -191,7 +311,18 @@ CREATE TABLE gold.some_table (
 
 데이터 정규화는 전통적인 관계형 데이터베이스에서는 가치가 있는 반면, BigQuery와 같은 현대적인 분석 플랫폼과 상호작용할 때는 패러다임이 변경됩니다. BigQuery는 대량의 데이터를 처리하고 규모에 맞는 복잡한 분석 쿼리를 수행하기 위해 설계되었습니다. 이 환경에서는 저장 공간을 최소화하는 것보다 쿼리 성능을 최적화하는 데 중점이 두어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BigQuery에서는 여러 이유로 비정규화가 선호되는 전략으로 부상합니다:
 
@@ -204,7 +335,18 @@ BigQuery에서는 여러 이유로 비정규화가 선호되는 전략으로 부
 
 ![image](/assets/img/2024-05-23-ADefinitiveGuidetoUsingBigQueryEfficiently_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비정규화는 일반적으로 모든 상황에 적합한 해결책은 아니지만, 비용 및 성능 최적화를 위해 고려되어야 합니다. 그러나 다양한 측면이 있어 비용 효율적인 설계로 이어질 수 있습니다.
 
@@ -214,7 +356,18 @@ BigQuery가 Broadcast Join을 사용하지 않을 때는 해시 조인 방식을
 
 해시 조인이 사용되는 상황에 있다면, 여전히 성능을 개선할 수 있는 방법이 있습니다. 적어도 조인 열을 클러스터 열로 정의하는 것을 목표로 설정하세요. 이렇게 하면 데이터가 동일한 열 파일에 공존되어 셔플링의 영향이 줄어듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 최상의 접근 방식은 데이터 모델의 구체적인 내용과 정규화된 테이블의 크기에 따라 다릅니다. 정규화된 구조로 중복을 줄일 수 있고 동시에 JOIN 테이블의 크기를 작게 유지하여 Broadcast Joins를 사용할 수 있다면, 이것은 비정규화된 접근 방식보다 나은 해결책입니다. 그러나 10G 이상의 테이블에 대해서는 구체적인 벤치마킹을 통해 평가해야 하며, 이로 인해 아래의 황금 규칙이 나오게 됩니다:
 
@@ -224,17 +377,39 @@ BigQuery가 Broadcast Join을 사용하지 않을 때는 해시 조인 방식을
 
 파티션은 한 가지 특정 열을 기준으로 테이블을 세그먼트로 나눕니다. 파티션 열은 3가지 접근 방식 중 하나를 사용할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 🗂️ 정수 범위 분할: 시작, 끝 및 간격을 기준으로 정수 열에 따라 분할하기
 
 ⏰ 시간 단위 분할: 시간 단위, 일별, 월별 또는 연간 단위로 테이블의 날짜, 타임스탬프 또는 날짜/시간 열에 따라 분할하기
 
-⏱️ 적재 시간 분할: 현재 시간을 기준으로 데이터를 삽입할 때 _PARTITIONTIME이라는 가상 열을 사용하여 파티션 자동 할당하기
+⏱️ 적재 시간 분할: 현재 시간을 기준으로 데이터를 삽입할 때 \_PARTITIONTIME이라는 가상 열을 사용하여 파티션 자동 할당하기
 
 파티션 열을 정의하는 것은 여러분에게 달려 있지만, 처리된 바이트량/청구액을 줄일 수 있는지 현명하게 선택하는 것이 매우 권장됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-ADefinitiveGuidetoUsingBigQueryEff_8.png)
 
@@ -254,7 +429,18 @@ OPTIONS (
 
 위 예시에서는 partition_expiration_days 옵션을 설정하는 방법도 확인할 수 있어요. 이 옵션은 X일 이전의 파티션을 자동으로 삭제해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 클러스터링
 
@@ -264,7 +450,18 @@ OPTIONS (
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 CREATE TABLE IF NOT EXISTS silver.some_partitioned_table (
@@ -285,7 +482,18 @@ OPTIONS (
 
 중첩된 열은 struct 타입을 사용하여 특정 속성을 하나의 객체로 결합합니다. 중첩 반복 열은 테이블의 단일 행에 대해 저장된 struct 배열입니다. 예를 들어, 사용자의 각 로그인마다 한 줄씩 저장하는 테이블이 있다면 해당 사용자의 ID 및 등록 국가와 함께 각 사용자의 로그인마다 ID 및 국가에 대한 중복이 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 사용자당 하나의 행을 저장하고 ARRAY STRUCT 유형의 열에 그 사용자의 모든 로그인을 저장할 수 있습니다. STRUCT는 날짜 및 장치와 같은 로그인에 연결된 모든 속성을 보유합니다. 다음 그림은 이 예시를 시각화한 것입니다:
 
@@ -310,7 +518,18 @@ OPTIONS (
 );
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 예제는 partition column에 필터링이 없는 쿼리를 방지하는 require_partition_filter의 활용을 보여줍니다.
 
@@ -320,7 +539,18 @@ OPTIONS (
 
 ## 색인화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하나 이상의 열에 대한 검색 인덱스를 정의함으로써 BigQuery는 이를 사용하여 SEARCH 함수를 사용한 쿼리를 가속화할 수 있습니다.
 
@@ -332,7 +562,18 @@ CREATE SEARCH INDEX example_index ON silver.some_table(ALL COLUMNS);
 
 ALL COLUMNS를 사용하면 인덱스가 모든 STRING 및 JSON 열에 대해 자동으로 생성됩니다. 또한 더 선택적이며 열 이름 목록을 추가할 수도 있습니다. SEARCH 함수로는 인덱스를 활용하여 모든 열 또는 특정 열 내에서 검색할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 SELECT * FROM silver.some_table WHERE SEARCH(some_table, 'needle');
@@ -344,8 +585,18 @@ SELECT * FROM silver.some_table WHERE SEARCH(some_table, 'needle');
 
 ## 물리적 바이트 저장 요금
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빅쿼리는 저장에 대해 두 가지 요금 체계를 제공합니다: 표준 및 물리 바이트 저장 요금 청구. 올바른 모델을 선택하는 것은 데이터 액세스 패턴과 압축 능력에 따라 다릅니다.
 
@@ -355,18 +606,40 @@ SELECT * FROM silver.some_table WHERE SEARCH(some_table, 'needle');
 
 그렇다면 어떤 모델을 선택해야 할까요? 여기에 간단한 안내가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표에 있는 내용을 Markdown 형식으로 변경해주세요.
 
 표:
 
-| 항목 | 설명 |
-|---|---|
-| 표준 모델 선택 | - 데이터가 고도로 압축되지 않았을 때. <br> - 간단하고 쉽게 관리할 수 있는 방식을 선호할 때. |
-| PBSB 선택 | - 데이터가 고도로 압축되었을 때. <br> - 비용을 최적화하기 위해 다양한 저장 등급을 관리하는 데 편안한 경우. |
+| 항목           | 설명                                                                                                       |
+| -------------- | ---------------------------------------------------------------------------------------------------------- |
+| 표준 모델 선택 | - 데이터가 고도로 압축되지 않았을 때. <br> - 간단하고 쉽게 관리할 수 있는 방식을 선호할 때.                |
+| PBSB 선택      | - 데이터가 고도로 압축되었을 때. <br> - 비용을 최적화하기 위해 다양한 저장 등급을 관리하는 데 편안한 경우. |
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터셋의 고급 옵션에서 요금 청구 모델을 변경할 수 있어요. 또한 테이블 세부정보를 확인하여 논리적 vs 물리적 바이트를 비교할 수 있어서 모델 선택이 더 쉬워집니다.
 
@@ -376,7 +649,18 @@ SELECT * FROM silver.some_table WHERE SEARCH(some_table, 'needle');
 
 2023년 7월 이후로 BigQuery는 미적용된 기본 키 및 외래 키 제약 조건을 도입했어요. BigQuery가 고전적인 RDBMS가 아니라는 것을 염두에 두세요. 이 기능을 사용하여 데이터 모델을 정의하면 그런 느낌을 받을 수 있지만요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 키가 강제로 적용되지 않고 우리가 아는 관계형 데이터베이스가 아니라면 이것의 의미가 무엇일까요? 답은 다음과 같습니다: 쿼리 옵티마이저가 Inner Join Elimination, Outer Join Elimination, Join Reordering과 같은 개념을 사용하여 쿼리를 더 잘 최적화할 수 있습니다.
 
@@ -394,7 +678,18 @@ CREATE TABLE gold.inventory (
 
 # ⚙️ 데이터 작업
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 데이터 / 표 복사
 
@@ -412,7 +707,18 @@ FROM project_x.bronze.login_count;
 
 위 쿼리는 변환을 허용하지만, 많은 경우 단순히 데이터를 한 곳에서 다른 곳으로 복사하고 싶을 뿐입니다. 위 쿼리로 청구되는 바이트는 복사 대상에서 읽어야 하는 데이터 양에 해당합니다. 그러나 다음 쿼리로 이를 무료로 수행할 수도 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 토론_가장 login_count
@@ -427,7 +733,18 @@ bq cp project_x:bronze.login_count project_x:silver.login_count
 
 이렇게 하면 데이터를 복사하는 데 비용이 발생하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 데이터 로드
 
@@ -437,7 +754,18 @@ bq cp project_x:bronze.login_count project_x:silver.login_count
 
 ORC 스토리지 형식을 사용하는 분할된 하이브 테이블에서 데이터를 업로드한다고 가정해 봅시다. 데이터를 업로드하는 것은 distcp를 사용하거나 단순히 먼저 HDFS에서 데이터를 가져와서 사용 가능한 CLI 도구 중 하나를 사용하여 GCS로 업로드하는 것으로 이루어질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가정하에 우리가 월이라는 하나의 파티션을 포함한 파티션 구조를 갖고 있다고 가정하면, 파일은 다음과 같이 보일 것입니다:
 
@@ -459,7 +787,18 @@ OPTIONS(
 );
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ORC 파일에서 스키마를 파생하고 파티션 열도 감지할 수 있습니다. GCS에서 BigQuery 스토리지로 데이터를 이동하는 가장 단순한 접근 방법은 이제 BigQuery에 테이블을 만든 다음 실용적인 INSERT INTO ... SELECT FROM 접근 방법을 따르는 것입니다.
 
@@ -485,7 +824,18 @@ WITH PARTITION COLUMNS (
 
 이 문을 사용하면 직접 데이터가 포함된 BigQuery 테이블을 얻게 되며, 먼저 외부 테이블을 만들 필요가 없습니다! 또한 이 쿼리는 0 비용으로 제공됩니다. OVERWRITE는 선택 사항입니다. 데이터가 추가되는 대신 테이블을 덮어쓸 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에서 볼 수 있듯이 파티션 열도 지정할 수 있습니다. 변환을 적용할 수 없더라도 한 가지 주요한 장점이 있습니다. 이미 클러스터 열을 정의할 수 있습니다. 이렇게 하면 추가 비용 없이 후속 처리를 위한 대상 테이블의 효율적인 버전을 만들 수 있습니다!
 
@@ -495,7 +845,18 @@ WITH PARTITION COLUMNS (
 
 ![image](/assets/img/2024-05-23-ADefinitiveGuidetoUsingBigQueryEfficiently_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BigQuery는 MERGE 문을 제공하지만 순진한 접근 방식은 먼저 대상 테이블에서 영향을 받는 파티션을 삭제한 다음 데이터를 삽입하는 것입니다.
 
@@ -510,7 +871,18 @@ DELETE FROM silver.target WHERE day IN (
 
 두 경우 모두 day가 파티션 열이라 할지라도, 이 작업은 여러 비용과 관련이 있습니다. 그러나 다시 한 번 0 비용으로 제공되는 대안 솔루션이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 DROP TABLE silver.target$20240101
@@ -527,7 +899,18 @@ DO
 END FOR;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또는 Airflow 및/또는 dbt를 사용하여 먼저 파티션을 선택한 다음 특정 템플릿화된 쿼리를 반복해서 실행할 수 있습니다.
 
@@ -537,7 +920,18 @@ END FOR;
 
 위의 예제에서 우리는 파티션이 있는 BigQuery 테이블의 고유한 파티션을 가져오기 위해 다음 방법을 사용했습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 SELECT DISTINCT day
@@ -552,7 +946,18 @@ FROM bronze.ingest
 
 BigQuery는 테이블, 열 및 파티션에 대한 많은 유용한 메타데이터를 유지합니다. 이 정보에는 INFORMATION_SCHEMA를 통해 액세스할 수 있으며, 이 메타데이터를 사용하면 동일한 결과를 간단히 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 SELECT PARSE_DATE('%Y%m%d', partition_id) AS day
@@ -568,7 +973,18 @@ WHERE table_name = 'ingest'
 
 149GB와 10MB를 비교하면 엄청난 차이가 납니다. 이 방법을 사용하면 거의 0 비용으로 거대한 테이블에 대한 고유한 파티션을 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 계산된 측정치 유지하지 마세요
 
@@ -578,7 +994,18 @@ WHERE table_name = 'ingest'
 
 ![이미지](/assets/img/2024-05-23-ADefinitiveGuidetoUsingBigQueryEfficiently_12.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것이 비용 절감과 어떤 관련이 있을까요? 가정해봅시다. 고전적인 펙트 테이블이나 어떤 테이블이든 특정 KPI를 제공하는 테이블이 있다고 합시다. 이 테이블은 그런 다음 Looker, Excel, PowerBI 또는 다른 도구에서 분석/보고용으로 사용됩니다.
 
@@ -588,7 +1015,18 @@ WHERE table_name = 'ingest'
 
 물론 이러한 측정값이 사용될 때 CPU 사용량이 증가할 수 있지만, 반대로 기본 테이블의 총 크기를 줄일 수 있는 큰 장점이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 원리를 설명하기 위해 다음 사실 테이블을 기초로 삼아보겠습니다:
 
@@ -622,7 +1060,18 @@ SELECT
 FROM gold.some_fact_table;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서는 두 개의 INT64 값을 영속화하지 않을 수 있었습니다. 이 중 하나는 8개의 논리적인 바이트를 사용합니다. 만약 우리의 팩트 테이블이 1,000,000,000 행을 가지고 있다면, 이것은 우리가 다음을 저장한다는 것을 의미합니다:
 
@@ -634,7 +1083,18 @@ FROM gold.some_fact_table;
 
 # 📚 요약
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 용량을 보존하는 것이 아니라, 데이터를 스마트하게 관리하고 최적화하는 방법을 배워봐! 이 뜨거운 접근 방식을 통해 빅쿼리를 비용 부담이 아닌 데이터 탐색을 위한 강력한 엔진으로 변화시킬 수 있어. 이를 통해 돈이 아닌 데이터를 소모할 수 있을 거야!
 
@@ -647,7 +1107,18 @@ FROM gold.some_fact_table;
 
 ## 비용 효율성을 위한 데이터 작업 마스터하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 전송 시 요금을 부과하지 않고 테이블 간 데이터를 복사하려면 CREATE TABLE ... COPY 또는 bq cp 명령을 사용하세요.
 - LOAD DATA 문을 사용하여 클라우드 스토리지에서 BigQuery 테이블로 데이터를 직접 로드하는 것도 무료입니다.

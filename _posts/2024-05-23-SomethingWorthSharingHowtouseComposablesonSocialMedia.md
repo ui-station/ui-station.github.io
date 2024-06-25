@@ -3,13 +3,12 @@ title: "유용한 정보 공유 - 소셜 미디어에서 Composables 사용하�
 description: ""
 coverImage: "/assets/img/2024-05-23-SomethingWorthSharingHowtouseComposablesonSocialMedia_0.png"
 date: 2024-05-23 12:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SomethingWorthSharingHowtouseComposablesonSocialMedia_0.png
 tag: Tech
 originalTitle: "Something Worth Sharing — How to use Composables on Social Media"
 link: "https://medium.com/@christopher.mederos/something-worth-sharing-cf3e3f5083cf"
 ---
-
 
 ![Screenshot](/assets/img/2024-05-23-SomethingWorthSharingHowtouseComposablesonSocialMedia_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@christopher.mederos/something-worth-sharing-cf3e3f508
 
 최근에 Viz 앱에 공유 기능을 추가했어요. 이제 다이버와 스노클러도 이 의식에 참여할 수 있어요. 당시에는 Compose에서 생성된 아름다운 뷰를 Instagram, TikTok, Twitter 등에서 공유 가능한 이미지로 어떻게 변환하는지에 대해 온라인에 많이 쓰여 있지 않았어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 다른 쪽으로 나와서 스스로 구현하는 방법을 안내해 드릴게요! 순서는 대략 다음과 같아요:
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@christopher.mederos/something-worth-sharing-cf3e3f508
 
 # 공유 가능한 형식 디자인하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 삼격하고 상대적으로 높은 이동성을 가지고 있는 정사각형은 모든 소셜 미디어 플랫폼에서 최적의 화면 비율이에요. 인스타그램을 예로 들어보면—이 모양은 스크롤 피드에서 "게시물"로 공유되거나 전체 화면 "스토리"에 쉽게 가운데 정렬될 수 있어요.
 
@@ -42,7 +63,18 @@ link: "https://medium.com/@christopher.mederos/something-worth-sharing-cf3e3f508
 
 저는 안드로이드에서 400.dp부터 500.dp 크기가 이 두 목표를 모두 잘 이루어낼 수 있다고 생각해요. 대부분의 휴대폰에서 전체 화면 크기로 변환될 거예요. 그리고 이 크기에서 '제목', '헤드라인', '본문'과 같은 폰트 스타일을 사용하면 본인만의 원시 폰트 크기를 계산할 필요 없이 손쉽게 사용할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -96,8 +128,18 @@ fun MyShareContent() {
 
 Compose의 최신 버전(1.7)에서는 훌륭한 GraphicsLayer API가 소개되었습니다. 이는 Composable의 그리기를 캡처하고 다른 위치에서 재생하는 방법을 제공합니다. 결국 이를 사용하여 Composable을 이미지 파일로 기록할 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 var graphicsLayer = rememberGraphicsLayer()
@@ -127,9 +169,19 @@ Box(modifier = Modifier
 - record 메서드를 사용하여 그림을 저장된 graphicsLayer 변수로 리디렉션
 
 # 컴포저블 그리기를 완전히 건너뛰기
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컴포저블을 화면에서 숨기고 전혀 표시하지 않을 수도 있습니다.
 
@@ -173,7 +225,18 @@ Box(modifier = Modifier
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 코드 스니펫의 주요 기능은 다음과 같습니다:
 
@@ -186,7 +249,18 @@ Box(modifier = Modifier
 
 Android 플랫폼에 파일을 작성할 때, 성능, 권한, API의 가용성 등 여러 가지 고려할 사항이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간결함과 집중을 위해 여기에 기본적인 해결책을 제시할게요. 안드로이드 14에서 잘 작동하는데요, 미디어 저장소 API로의 이동이라는 소문에도 불구하고요. 파일을 공유 Pictures 디렉토리에 쓰고, 미디어 스캐너를 사용하여 공유 가능한 URI를 생성함으로써 대부분의 권한 고려 사항을 회피할 수 있어요.
 
@@ -199,11 +273,22 @@ Android 플랫폼에 파일을 작성할 때, 성능, 권한, API의 가용성 �
 - PNG를 Pictures 디렉토리에 파일로 쓰기
 - 새 이미지 파일의 URI 가져오기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 private suspend fun GraphicsLayer.saveAsShareableFile(context: Context): Uri? {
-    
+
     // 비트맵으로 변환
     val bitmap = this.toImageBitmap().asAndroidBitmap()
 
@@ -243,8 +328,18 @@ suspend fun File.scanPath(context: Context): Uri? {
 
 이미지 URI를 얻은 후에는 공유 인텐트를 생성하여 어디든 전송할 수 있습니다. 이렇게 하면 Android 공유 시트가 열리고 나머지 프로세스를 자동으로 처리합니다 — 추가적인 코드는 필요하지 않습니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val context = LocalContext.current
@@ -292,7 +387,18 @@ Button(onClick = {
 
 이러한 기능은 ViewModel에서 구현하는 것이 좋을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전체 과정은 다른 상태와 상호 작용할 필요 없이 구성 가능한 내부에 포함될 수 있습니다.
 
@@ -302,7 +408,18 @@ Button(onClick = {
 
 그래 — 이제 복사/붙여넣기 시간입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kt
 // 모든 명확하지 않은 임포트
@@ -431,7 +548,18 @@ suspend fun File.scanPath(context: Context): Uri? {
 
 저는 Viz 앱을 개발하고 운영하는 독립 개발자입니다. 이 앱은 Kotlin Multiplatform을 활용한 네이티브 iOS 및 Android 앱입니다. 호주에서 다이빙, 스노클링 또는 프리다이빙을 즐기는 분들에게 꼭 한번 확인해보세요! 이 앱은 사람들이 서로 물 조건을 공유하고 해저 사진을 업로드하며 다이빙 로그를 유지할 수 있는 공간입니다. 항상 무료이며 가입이 필요하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잘못된 부분이나 버그를 발견하셨나요? 제안이나 대안이 있으시다면 언제든지 편하게 피드백해주세요! 이 기사에 몇 가지 수정사항을 추가하는 것에 항상 열려있습니다!
 

@@ -3,13 +3,12 @@ title: "K9s를 사용하여 스타일리시하게 Kubernetes 클러스터를 간
 description: ""
 coverImage: "/assets/img/2024-05-18-Hassle-freemanagementofyourKubernetesclusterinstyleusingK9s_0.png"
 date: 2024-05-18 16:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-Hassle-freemanagementofyourKubernetesclusterinstyleusingK9s_0.png
 tag: Tech
 originalTitle: "Hassle-free management of your Kubernetes cluster in style using K9s"
 link: "https://medium.com/@mrpunitsolanki/hassle-free-management-of-your-kubernetes-cluster-in-style-using-k9s-28bdac4142b4"
 ---
-
 
 일상생활에서 마이크로서비스 및 컨테이너 오케스트레이션을 다루는 개발자라면, 이전에 제가 자주 만났던 상황에 있었을지도 모릅니다. 쿠버네티스 명령어를 입력하는 것은 재미있을 수 있지만, 모든 작업과 명령어에 익숙해지면 그저 응소가 된다는 느낌을 받을 수 있습니다.
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@mrpunitsolanki/hassle-free-management-of-your-kuberne
 
 어느 순간에는 삶이 매우 단조로워지고, 이것은 철학적인 이야기가 아닙니다! 동일한 오래된 명령 프롬프트나 터미널이 어느 순간 짜증을 유발하기 시작할 수 있습니다. 이해합니다. 당신의 삶에 가질 수 있는 유일한 두 가지 색상은 아니라는 것을 알고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 만약 이렇게 해볼 수 있다고 말한다면:
 
@@ -27,7 +37,18 @@ link: "https://medium.com/@mrpunitsolanki/hassle-free-management-of-your-kuberne
 
 ![이미지2](/assets/img/2024-05-18-Hassle-freemanagementofyourKubernetesclusterinstyleusingK9s_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 멋지게 보이죠, 맞지 않나요?! 이렇게 하는 방법을 배워봅시다!
 
@@ -37,7 +58,18 @@ link: "https://medium.com/@mrpunitsolanki/hassle-free-management-of-your-kuberne
 
 K9s는 Linux, macOS 및 Windows 플랫폼에서 사용할 수 있습니다. 여기에서 자신의 OS에 알맞게 K9s를 설치하세요. 또는 저와 같이 게으르다면, 아래를 따라가 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 홈브류를 통해 설치하기
@@ -62,8 +94,18 @@ choco install k9s
 
 여기까지가 가장 어려운 부분이라고 믿어줘요. 이제부터는 모든 게 매우 쉽고 직관적입니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트를 위해 Azure에서 클러스터를 만들었어요.
 
@@ -73,7 +115,18 @@ choco install k9s
 
 ![연결 명령어 이미지](/assets/img/2024-05-18-Hassle-freemanagementofyourKubernetesclusterinstyleusingK9s_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 명령 프롬프트 또는 터미널에서 k9s -A를 입력하면 멋진 UI가 팝업됩니다! UI의 좌측 상단에 언급된 일부 세부 정보를 확인하여 올바른 클러스터에 연결되어 있는지, 올바른 컨텍스트를 사용하고 있는지, 그리고 한눈에 CPU 및 메모리 활용을 확인할 수 있습니다.
 
@@ -83,7 +136,18 @@ choco install k9s
 
 이제 pod, 네임스페이스, 인그레스 등과 같은 리소스에 빠르게 액세스하려면 여기에 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 참고 사항:
 
@@ -100,11 +164,33 @@ choco install k9s
 
 <img src="/assets/img/2024-05-18-Hassle-freemanagementofyourKubernetesclusterinstyleusingK9s_6.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경하세요.
 
@@ -128,7 +214,18 @@ choco install k9s
 - b: Kubernetes 벤치마크 표시
 - t: 테이블 및 YAML 모드 간 보기 전환
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고 자료:
 

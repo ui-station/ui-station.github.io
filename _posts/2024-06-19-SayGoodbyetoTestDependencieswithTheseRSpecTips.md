@@ -3,14 +3,12 @@ title: "이 RSpec 팁들로 테스트 종속성을 작별하세요"
 description: ""
 coverImage: "/assets/img/2024-06-19-SayGoodbyetoTestDependencieswithTheseRSpecTips_0.png"
 date: 2024-06-19 22:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-SayGoodbyetoTestDependencieswithTheseRSpecTips_0.png
 tag: Tech
 originalTitle: "Say Goodbye to Test Dependencies with These RSpec Tips!"
 link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-these-rspec-tips-68dd88d07e23"
 ---
-
-
 
 ![image](/assets/img/2024-06-19-SayGoodbyetoTestDependencieswithTheseRSpecTips_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 
 # RSpec 3에서 응답 구성하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테스트 더블 생성하기
 
@@ -31,7 +39,18 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 
 특정 값을 반환하도록 메서드를 구성하는 데 allow를 사용할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-SayGoodbyetoTestDependencieswithTheseRSpecTips_1.png" />
 
@@ -41,7 +60,18 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 
 <img src="/assets/img/2024-06-19-SayGoodbyetoTestDependencieswithTheseRSpecTips_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 블록에 양보하기
 
@@ -51,7 +81,18 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 
 # 여러 값을 반환하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 연이어 호출할 때 다른 값을 반환하는 방법이 필요하다면 and_return에 여러 인수를 전달할 수 있습니다:
 
@@ -61,7 +102,18 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 
 부분 더블은 실제 객체의 메서드를 모의(Mock)하거나 스텁(Stub)하는 동시에 객체의 나머지 동작을 유지하는 것을 가능하게 합니다. 객체의 특정 부분 동작을 테스트하고 싶을 때 전체 객체를 대체하지 않고 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 원본 메서드 호출하기
 
@@ -71,7 +123,18 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 
 # 원본 메서드 감싸기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메소드의 동작을 수정하면서 원본 구현을 호출할 수도 있어요:
 
@@ -81,7 +144,18 @@ link: "https://medium.com/@patrykrogedu/say-goodbye-to-test-dependencies-with-th
 
 ## 간헐적 동작
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보다 복잡한 동작을 시뮬레이션하기 위해 네트워크 장애와 같은 부분적인 특성을 정의하기 위해 블록을 사용하세요:
 

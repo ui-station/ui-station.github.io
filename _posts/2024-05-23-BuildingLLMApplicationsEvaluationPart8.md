@@ -27,7 +27,18 @@ Learn Large Language Models (LLM) through the lens of a Retrieval Augmented Gene
 
 # 목차
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 콘텐츠 요약
 
@@ -106,7 +117,18 @@ Learn Large Language Models (LLM) through the lens of a Retrieval Augmented Gene
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM의 등장으로 이전에는 불가능하다고 여겨졌던 문제들을 해결할 수 있는 장이 열렸습니다. 하지만 한 가지 의문이 남아있습니다. LLM 기반 애플리케이션을 효과적으로 평가하는 방법은 무엇일까요?
 
@@ -116,7 +138,18 @@ LLM의 등장으로 이전에는 불가능하다고 여겨졌던 문제들을 �
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 𝗟𝗹𝗠(𝗟𝗮𝗿𝗴𝗲 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 𝗠𝗼𝗱𝗲𝗹)을 𝘂𝘀𝗲𝗿𝗳𝘂𝗹𝗹𝘆 𝗲𝘃𝗮𝗹𝘂𝗮𝘁𝗲 𝗵𝗮𝗿𝗱 𝗈𝗇 𝗈𝗂𝘃𝗂𝗇𝗀 𝖺 𝗅𝖺𝗋𝗀𝖾 𝗅𝖺𝗇𝗀𝗎𝖺𝗀𝖾 𝗆𝗈𝖽𝖾𝗅 𝖻𝗎𝗍 𝗇𝗈𝗍 𝗌𝗎𝗋𝖾 where to start? 𝖧𝖾𝗋𝖾’𝗌 𝗒𝗈𝗎𝗋 𝖾𝗌𝗌𝖾𝗇𝗍𝗂𝖺𝗅 𝗀𝗎𝗂𝖽𝖾! 🚀
 
@@ -126,7 +159,18 @@ Model evaluation is complex, involving various metrics that cater to different p
 
 𝖧𝖾𝗋𝖾’𝗌 𝖺 𝗌𝗍𝗋𝖾𝖺𝗆𝗅𝗂𝗇𝖾𝖽 𝖺𝗉𝗉𝗋𝗈𝖺𝖼𝗁 𝗍𝗈 𝖾𝗏𝖺𝗅𝗎𝖺𝗍𝗂𝗇𝗀 𝗟𝗹𝗠𝗌 𝗐𝗁𝖾𝗇 𝗒𝗈𝗎’𝗋𝖾 𝖽𝖾𝖼𝗂𝖽𝗂𝗇𝗀 𝗈𝗇 𝗍𝗁𝖾 𝖻𝖾𝗌𝗍 𝖿𝗂𝗍 𝖿𝗈𝗋 𝗈𝗎𝗋 𝖺𝗉𝗉𝗅𝗂𝖼𝖺𝗍𝗂𝗈𝗇 (𝗆𝗈𝗋𝖾 𝖽𝖾𝗍𝖺𝗂𝗅𝗌 𝗂𝗇 𝗍𝗁𝖾 𝖺𝖻𝗈𝗏𝖾 𝖽𝗂𝖺𝗀𝗋𝖺𝗆):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1️⃣ **모델 평가 방법 선택하기?**
 ✅ **예**: 모델이 이산 출력을 제공하는 경우, 전통적인 정확도 지표를 사용하십시오. 그렇지 않은 경우, ROUGE와 같은 다른 유사성 지표를 고려하십시오.
@@ -148,7 +192,18 @@ Model evaluation is complex, involving various metrics that cater to different p
 
 아래에서 이러한 기술들에 대해 자세하게 논의해보도록 합시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 2. LLM Benchmarking 대 평가
 
@@ -158,7 +213,18 @@ LLM 벤치마킹과 평가는 얽혀 있지만, 그들의 목적 사이에는 �
 
 여기에 벤치마킹이 제공하는 것은:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비교: 벤치마킹은 연구자들이 다른 LLM의 성능을 동일한 작업에서 비교할 수 있게 합니다. 이는 어떤 모델이 특정 영역에서 뛰어나다는 것을 확인하는 데 도움이 됩니다.
 측정 결과: 벤치마킹은 명확한 그림을 제공하는 수치적으로 측정된 점수들을 제공하여 LLM의 강점과 약점을 보여줍니다.
@@ -171,7 +237,18 @@ LLM 벤치마킹과 평가는 얽혀 있지만, 그들의 목적 사이에는 �
 
 평가는 종종 벤치마킹이 마련한 기초 위에 구축됩니다. 연구자들은 벤치마크 점수를 시작점으로 사용할 수 있지만, 벤치마크가 반드시 잡아내지 못하는 측면들을 더 깊이 파고들 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 용어로 말하면, 벤치마킹은 표준화된 테스트를 사용하여 양적 평가를 제공하며, 평가는 LLM의 전체적인 장단점 및 현실 세계 적용에 대한 적합성에 대한 좀 더 질적인 이해를 제공합니다.
 
@@ -181,7 +258,18 @@ LLM 벤치마킹과 평가는 얽혀 있지만, 그들의 목적 사이에는 �
 
 LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LLM의 성능을 평가하기 위해 설계된 일련의 표준화된 테스트이며, 이 능력을 측정하기 위해 특정 점수자나 지표를 활용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 벤치마크에 따라 메트릭은 정확한 일치 비율과 같은 통계 기반 측정부터 다른 LLM들에 의해 평가되는 더 복잡한 메트릭까지 다양할 수 있습니다.
 
@@ -198,8 +286,18 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 - 논리: 논리 벤치마크는 모델이 귀납 및 추론과 같은 논리적 추론 기술을 적용하는 능력을 평가합니다.
 - 표준화된 시험: SAT, ACT 또는 기타 교육 평가도 모델의 성능을 평가하고 벤치마크 하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![LLM Benchmarking](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_5.png)
 
@@ -211,8 +309,18 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 - 작업 다양성 수용: 광범위한 작업 스펙트럼을 갖춘 벤치마크를 찾아 LLM을 다각도로 평가하는 것.
 - 도메인에 부합: 언어 이해, 텍스트 생성 또는 코딩과 같이 애플리케이션의 세계와 조화를 이루는 벤치마크를 선택하는 것.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고등학생들을 위한 SAT 같은 것이 LLM에 대한 것이라고 생각해 보세요. 그들은 모델 능력의 모든 가능한 측면을 평가할 수는 없지만 확실히 가치 있는 통찰력을 제공합니다. 이제 Claude 3의 성능이 여러 벤치마크를 통해 다른 SOTA 모델들과 어떻게 비교되는지 알아보겠습니다.
 
@@ -222,7 +330,18 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 
 ## 3.1. 언어 이해 및 QA 벤치마크
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3.1.1. 진실QA
 
@@ -232,7 +351,18 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 
 목적
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 정확하고 진실한 답변을 제공하는 능력을 기반으로 모델을 평가합니다.
 - 잘못된 정보를 대항하고 윤리적 AI 사용을 촉진하는 데 중요합니다.
@@ -245,7 +375,18 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 
 성과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 원본 논문에서 성능이 가장 우수했던 모델인 GPT-3은 인간의 기준치인 94%에 비해 단 58%의 성공률을 달성했습니다.
 
@@ -256,7 +397,18 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 
 ## 3.1.2. MMLU (Massive Multitask Language Understanding)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [2021년에 발표됨] ∙ 논문 ∙ 코드 ∙ 데이터셋
 
@@ -269,7 +421,18 @@ LLM 벤치마크는 추론 및 이해력과 같은 다양한 기술에 대한 LL
 
 MMLU가 접근하기 어려워 보인다면, 좋은 소식이 있어요. DeepEval 내에서 몇 가지 주요 벤치마크가 구현되어 있어, 우리가 선택한 어떤 LLM도 몇 줄의 코드로 쉽게 벤치마킹할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 DeepEval을 설치하세요:
 
@@ -294,7 +457,18 @@ benchmark.evaluate(model=mistral_7b)
 print(benchmark.overall_score)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 구현 세부사항을 보려면 DeepEval MMLU 문서를 방문해주세요.
 
@@ -307,7 +481,18 @@ print(benchmark.overall_score)
 
 열린 LLM 리더보드의 일곱 가지 주요 벤치마크 작업을 마무리합니다. 이 테스트들은 LLM의 지식 뿐만 아니라 추론, 이해 및 문제 해결 능력도 평가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크다운 형식으로 변경:
 
@@ -319,7 +504,18 @@ Additional noteworthy language understanding and QA benchmarks: GLUE, SuperGLUE,
 
 [Published in 2018] ∙ Paper ∙ Code
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설명: AI2 Reasoning Challenge (ARC)는 초등학교 수준의 다항식 과학 문제들을 간단한 것부터 복잡한 것까지 포함하는 LLMs를 테스트합니다. 예를 들어, "광합성은 식물 성장을 돕기 위해 무엇을 생산합니까?"와 같은 질문이 있을 수 있으며 (a) 물 (b) 산소 (c) 단백질 (d) 설탕으로 선택지가 주어집니다.
 - 평가 설정: 25번 시도
@@ -333,8 +529,18 @@ Additional noteworthy language understanding and QA benchmarks: GLUE, SuperGLUE,
 
 예시 질문:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_9.png)
 
@@ -344,9 +550,18 @@ Additional noteworthy language understanding and QA benchmarks: GLUE, SuperGLUE,
 
 [2019년 발표] ∙ 논문 ∙ 코드 ∙ 데이터셋
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_10.png)
 
@@ -356,8 +571,18 @@ HellaSwag는 문장 완성을 통해 LLM 모델의 상식 추론 능력을 평�
 
 DeepEval을 통해 HellaSwag 벤치마크를 활용하는 방법은 다음과 같습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from deepeval.benchmarks import HellaSwag
@@ -380,8 +605,18 @@ print(benchmark.overall_score)
 
 [2022년 발표] 논문 ∙ 코드 ∙ 데이터셋
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BIG-Bench Hard (BBH)은 원래 BIG-Bench 스위트에서 23가지 도전 과제를 선정했습니다. 이는 이미 언어 모델의 능력을 초과하는 204개의 평가 과제로 구성되어 있었습니다.
 
@@ -391,7 +626,18 @@ BIG-Bench가 발표된 시점에서 SOTA 언어 모델 중 한 가지도 이 23�
 
 BBH의 예상 출력은 다른 객관식 문제 기반 벤치마크보다 훨씬 다양하지만, 정확한 일치의 비율에 따라 모델을 평가합니다. CoT 프롬프팅은 모델의 출력을 예상된 형식으로 제한하는 데 도움을 줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BBH 벤치마크를 사용하려면:
 
@@ -415,7 +661,18 @@ print(benchmark.overall_score)
 
 ## 3.2.4. WinoGrande
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설명: WinoGrande는 인공 지능의 상식적 추론을 테스트하며, 모델이 유인오그라드 스키마 도전 과제(WSC)를 해결하도록 도전합니다. 예를 들어, 한 가지 작업은 다음 문장을 완성하는 것을 포함할 수 있습니다: "문이 창문보다 더 큰 소리로 열렸습니다 왜냐하면 \_\_\_(옵션: 문 또는 창문)에 더 많은 기름이 있었기 때문입니다."
 - 평가 설정: 5번 시도
@@ -431,7 +688,18 @@ print(benchmark.overall_score)
 
 추가 언급할 만한 상식적 추론 벤치마크: CommonsenseQA, COPA, SNLI, MultiNLI, RACE, ANLI, PIQA, COSMOS QA
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3.3. 코딩 평가
 
@@ -441,7 +709,18 @@ print(benchmark.overall_score)
 
 HumanEval은 모델의 코드 생성 능력을 평가하기 위해 설계된 164가지 독특한 프로그래밍 과제로 구성되어 있습니다. 이러한 과제는 알고리즘부터 프로그래밍 언어의 이해에 이르기까지 다양한 스펙트럼을 다룹니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 HumanEval과 유사한 컬렉션에 있는 예제 작업과 모델이 생성한 솔루션입니다:
 
@@ -454,7 +733,18 @@ def sum_list(numbers: List[float]) -> float:
 
 HumanEval은 생성된 코드의 품질을 Pass@k Metric을 사용하여 평가합니다. 이 메트릭은 기본적인 텍스트 유사성뿐만 아니라 기능적 정확성을 강조하기 위해 설계되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3.3.2. CodeXGLUE
 
@@ -464,7 +754,18 @@ HumanEval은 생성된 코드의 품질을 Pass@k Metric을 사용하여 평가�
 
 CodeXGLUE는 Microsoft, Developer Division, Bing의 협력으로 개발되었으며 코드 완성, 코드 번역, 코드 요약 및 코드 검색과 같은 다양한 코딩 시나리오에서 모델을 직접 테스트하고 비교할 수 있는 10가지 다른 작업에 걸쳐 14개의 데이터셋을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CodeXGLUE 평가 메트릭은 코딩 작업에 따라 정확일치부터 BLUE 점수까지 다양합니다.
 
@@ -477,10 +778,20 @@ GenAI 모델은 다음 4개 데이터셋에서의 성능 평균으로 순위가 
 - MMLU (5-shot)
 - TruthfulQA (0-shot)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 25번 슛은 데이터 세트에서 (질문, 해결책) 쌍을 25개 씩 프롬프트에 삽입하는 것을 의미합니다.
-
 
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_13.png" />
 
@@ -488,8 +799,18 @@ GenAI 모델은 다음 4개 데이터셋에서의 성능 평균으로 순위가 
 
 ## 3.4.1. 챗봇 아레나 (by LMSys)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [2024년에 발표됨] 논문 ∙ 코드
 
@@ -499,7 +820,18 @@ GenAI 모델은 다음 4개 데이터셋에서의 성능 평균으로 순위가 
 
 ## 3.4.2. 기계 번역 벤치(markdown)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [2021년에 발행] 논문 ∙ 코드 ∙ 데이터셋
 
@@ -509,7 +841,18 @@ MT-bench는 LLM(Large Language Model)을 심사위원으로 활용하여 채팅 
 
 이러한 모든 벤치마크는 특정 기술을 평가하는 데 매우 유용하지만, 기존의 벤치마크가 우리 프로젝트의 독특한 요구에 완벽하게 부합하지 않는다면 어떨까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상당히 주목할만 한 대화와 챗봇 벤치마크: DSTC, ConvAI, PersonaChat
 
@@ -519,7 +862,18 @@ MT-bench는 LLM(Large Language Model)을 심사위원으로 활용하여 채팅 
 
 하네스 아래에서 우리는 여러 가지 작업을 볼 수 있습니다. 각 작업 또는 일련의 하위 작업은 생성 능력, 다양한 분야의 추론 등 LLM을 다른 영역에서 평가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 작업 아래의 모든 하위 작업(때로는 작업 자체도 해당)에는 벤치마크 데이터셋이 있으며, 작업은 일반적으로 평가에 대한 중요한 연구들과 관련이 있습니다. Harness는 모든 이러한 데이터셋, 구성 및 평가 전략(예: 벤치마크 데이터셋을 평가하는 데 연결된 메트릭과 같은)을 통합하고 구조화하는 데 큰 노력을 기울입니다.
 
@@ -535,7 +889,18 @@ lm_eval --model hf \
     --batch_size 8
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LM 평가 하네스에 영감을 받아 BigCode 프로젝트의 BigCode 평가 하네스가 개발되었습니다. 이 프레임워크는 코드 생성 작업을 평가하기 위한 유사한 API 및 CLI 방법을 제공하려고 합니다. 코드 생성을 위한 평가는 매우 구체적인 주제이므로 다음 블로그에서 자세히 논의할 수 있도록 하겠습니다. 계속해서 주목해 주십시오!
 
@@ -547,7 +912,18 @@ HELM 또는 언어 모델의 종합적 평가는 "시나리오"를 사용하여 
 - 도메인 (텍스트의 장르가 무엇이고 누가 썼으며 언제 작성되었는지로 구성됨)
 - 언어 (작업을 어떤 언어로 수행할지)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HELM은 그 후 사회적 관련성(예: 사용자 앞 애플리케이션에 대한 신뢰성을 고려한 시나리오), 범위(다국어 지원), 그리고 실행 가능성(즉, 모든 데이터포인트를 하나씩 실행하는 대신 계산된 최적의 중요한 일부 데이터포인트를 선택하여 평가하는 등)을 기반으로 시나리오와 메트릭의 하위 집합을 우선 순위를 정해보려고 노력합니다.
 
@@ -557,8 +933,18 @@ HELM은 그 후 사회적 관련성(예: 사용자 앞 애플리케이션에 대
 
 ## 3.4.5. PromptBench (마이크로소프트)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-23-BuildingLLMApplicationsEvaluationPart8_17](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_17.png)
 
@@ -568,8 +954,18 @@ PromptBench은 LLM을 벤치마킹하기 위한 또 다른 통합 라이브러�
 
 벤치마크는 LLM의 능력을 평가하는 데 기본적이지만, 제한 사항도 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 도메인 관련성: 벤치마크는 종종 LLM이 적용되는 독특한 도메인과 맥락과 일치하지 않아 법률 분석이나 의학 해석과 같은 작업에 필요한 구체성이 부족하다. 이것은 LLM 성능을 폭넓은 전문화 응용 프로그램 범위에서 정확하게 평가하는 벤치마크를 작성하는 데 어려움을 강조한다.
 - 수명 짧음: 벤치마크가 처음 출시되면 보통 모델이 인간 기준에 미치지 못하는 것으로 나타난다. 그러나 조금의 시간이 지나면, 예를 들어 1~3년 정도면, 고급 모델이 초기의 어려움을 쉽게 극복할 정도로 발전한다 (계속되는 한 예). 이러한 지표가 더 이상 도전이 되지 않을 때 새로운 유용한 벤치마크를 개발하는 것이 필요해진다.
@@ -580,7 +976,18 @@ PromptBench은 LLM을 벤치마킹하기 위한 또 다른 통합 라이브러�
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_18.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM 평가 지표는 우리가 중요하게 생각하는 기준에 따라 LLM의 출력물을 평가합니다. 예를 들어, 만약 우리의 LLM 애플리케이션이 뉴스 기사들의 페이지를 요약하는 데 사용된다면, 우리는 원본 텍스트로부터 충분한 정보를 포함하는지, 그리고 어떠한 모순이나 환각이 포함되어 있는지를 기준으로 하는 LLM 평가 지표가 필요할 것입니다.
 
@@ -588,7 +995,18 @@ LLM 평가 지표는 우리가 중요하게 생각하는 기준에 따라 LLM의
 
 좋은 평가 지표는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 양적. 작업을 평가할 때 메트릭은 항상 점수를 계산해야 합니다. 이 접근 방식을 통해 우리는 LLM 애플리케이션이 "충분히 좋은지"를 결정하기 위한 최소 통과 임계값을 설정할 수 있습니다. 또한, 우리가 반복하고 구현을 개선함에 따라 이러한 점수가 어떻게 변하는지 모니터링할 수 있습니다.
 
@@ -602,7 +1020,18 @@ LLM 평가 지표는 우리가 중요하게 생각하는 기준에 따라 LLM의
 
 메트릭 점수를 계산하는 데 사용할 수 있는 다양한 기본 방법이 있습니다. 일부는 신경망을 활용하며 임베딩 모델 및 LLM을 포함하고, 다른 몇 가지는 통계 분석에 전적으로 기반을 둔 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_19.png" />
 
@@ -610,7 +1039,18 @@ LLM 평가 지표는 우리가 중요하게 생각하는 기준에 따라 LLM의
 
 과제 종속 메트릭은 LLM 애플리케이션의 특정 목표와 밀접하게 관련되어 있습니다. 예를 들어, 텍스트 분류는 정확도와 F1 점수를 우선시할 수 있으며, 텍스트 생성은 가독성이나 의미적 정확성과 같은 구체적인 목표에 따라 난해도, BLEU 또는 ROUGE 점수에 중점을 둘 수 있습니다. 이러한 메트릭은 LLM의 응용 프로그램의 원하는 결과와 얼마나 밀접하게 일치하는지를 기반으로 선택됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 내용을 친근하게 번역하면 다음과 같습니다:
 
@@ -622,7 +1062,18 @@ LLM 평가 지표는 우리가 중요하게 생각하는 기준에 따라 LLM의
 
 이제 함께 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.1.1. 단어 오류율 (WER)
 
@@ -632,7 +1083,18 @@ WER은 후보 단어를 기준 문자열로 변환하는 데 필요한 삽입, �
 
 생성된 텍스트를 참조 텍스트와 일치시켜 후보 텍스트의 정확도를 측정합니다. 참조 텍스트와의 차이는 오답으로 처리됩니다. 이것은 추출 및 짧은 형식의 답변에 적합하며 참조 텍스트와의 최소 또는 전혀 차이가 없을 것으로 예상될 때만 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.1.3. Perplexity
 
@@ -642,7 +1104,18 @@ WER은 후보 단어를 기준 문자열로 변환하는 데 필요한 삽입, �
 
 이는 데이터와 모델 예측 간의 교차 엔트로피의 지수화와 동등합니다. 헷갈리기와 Bit Per Character (BPC) 및 데이터 압축과의 관계에 대한 추가 직관을 위해 The Gradient 블로그의 이 멋진 글을 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Colab Notebook 지원: Perplexity.ipynb
 
@@ -652,7 +1125,18 @@ BLEU(BiLingual Evaluation Understudy) 점수는 기계 번역 품질을 평가�
 
 후보(Candidate): 이것은 우리의 번역 시스템에서 나온 출력물로, 평가하려는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고: 이들은 일반적으로 인간에 의해 수행되는 고품질의 번역이며, 우리는 후보 텍스트와 비교합니다. 강건성을 위해 여러 개의 참조 번역이 있을 수 있습니다.
 
@@ -662,7 +1146,18 @@ BLEU(BiLingual Evaluation Understudy) 점수는 기계 번역 품질을 평가�
 
 n-그램 정밀도(P)를 계산합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 n-그램 길이에 대해 (일반적으로 1에서 4까지):
 
@@ -677,7 +1172,18 @@ n-그램 정밀도(P)를 계산합니다.
 
 BLEU 점수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - BLEU 스코어는 n-gram 정밀도의 기하 평균을 사용하여 계산되며 간결성 패널티로 곱해집니다.
 - BLEU 스코어 = BP * exp((1/n)*∑log⁡(pi)), 여기서 n은 1부터 4까지 (n-grams)
@@ -701,7 +1207,18 @@ bleu_score = sentence_bleu(reference, generated)
 print('BLEU 스코어:', bleu_score)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.1.5. ROUGE
 
@@ -711,7 +1228,18 @@ ROUGE (Recall-Oriented Understudy for Gisting Evaluation)은 자동 요약 및 �
 
 - **ROUGE-L**: Longest Common Subsequence(LCS)를 기반으로 하는데요, 이는 문장 수준 구조 유사성을 자연스럽게 고려하고 가장 긴 순차적 n-그램을 자동으로 식별합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 ROUGE는 세 가지 메트릭을 보고합니다.
 
@@ -721,10 +1249,20 @@ ROUGE (Recall-Oriented Understudy for Gisting Evaluation)은 자동 요약 및 �
 
 F-점수(F1 점수): 정밀도와 재현율의 조화평균으로, 두 가지를 균형있게 고려합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ROUGE 점수는 0부터 1까지의 범위를 가지며, 0은 기계 생성 텍스트와 참조 텍스트 사이에 중첩이 없음을 나타내며, 1은 참조 텍스트와 완벽히 일치함을 나타냅니다.
-
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_23.png)
 
@@ -732,8 +1270,18 @@ ROUGE 점수는 0부터 1까지의 범위를 가지며, 0은 기계 생성 텍�
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_25.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from nltk.translate.bleu_score import corpus_bleu
@@ -753,9 +1301,18 @@ METEOR(Metric for Evaluation of Translation with Explicit Ordering)은 기계 �
 
 Alignment-Based: METEOR은 후보 번역과 참조 번역 간의 단어들 간의 일치를 생성하여, 정확, 어간, 동의어 및 패러프레이즈 일치에 초점을 맞춥니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Recall과 Precision: BLEU가 precision만을 고려하는 반면, METEOR은 precision과 recall을 모두 고려합니다. 이 이중 접근 방식은 평가를 균형있게 돕습니다.
 
@@ -765,7 +1322,18 @@ Recall과 Precision: BLEU가 precision만을 고려하는 반면, METEOR은 prec
 
 언어 독립적: 처음에는 영어로 개발되었지만, METEOR은 언어별 매개변수와 자원을 지원하기 위해 여러 언어로 확장되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일치하는 항목 계산
 
@@ -776,29 +1344,60 @@ Recall과 Precision: BLEU가 precision만을 고려하는 반면, METEOR은 prec
 - 정밀도 (P): 후보 번역에 나타나는 단어의 비율을 의미합니다.
 - 재현율 (R): 참조 번역에 나타나는 단어의 비율을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Precision과 Recall의 조화평균을 계산하세요
 
-Harmonic Mean은 다음과 같이 계산됩니다: Harmonic Mean=10*P*R/(R+9*P). 이는 Precision보다 Recall에 더 많은 가중치를 둡니다.
+Harmonic Mean은 다음과 같이 계산됩니다: Harmonic Mean=10*P*R/(R+9\*P). 이는 Precision보다 Recall에 더 많은 가중치를 둡니다.
 
 단어 순서에 대한 패널티
 
-단어 순서의 차이에 대한 패널티가 부가됩니다. 이 패널티는 다음과 같이 계산됩니다: 패널티=0.5⋅(# of chunks/# of matches)**3; 여기서 "chunk"는 후보 단어에서 참조와 동일한 순서로 이웃하는 단어의 집합을 의미합니다.
+단어 순서의 차이에 대한 패널티가 부가됩니다. 이 패널티는 다음과 같이 계산됩니다: 패널티=0.5⋅(# of chunks/# of matches)\*\*3; 여기서 "chunk"는 후보 단어에서 참조와 동일한 순서로 이웃하는 단어의 집합을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최종 METEOR 점수
 
-최종 점수는 다음과 같이 계산됩니다: Score=(1−Penalty)*F-mean
+최종 점수는 다음과 같이 계산됩니다: Score=(1−Penalty)\*F-mean
 
 - Levenshtein 거리(또는 편집 거리) 스코어는 단어나 텍스트 문자열을 다른 것으로 변경하기 위해 필요한 단일 문자 편집(삽입, 삭제 또는 대체)의 최소 수를 계산합니다. 이는 철자 교정 또는 문자의 정확한 정렬이 중요한 작업을 평가하는 데 유용할 수 있습니다.
 
 순수한 통계 스코어러는 매우 제한된 추론 능력을 가지고 있기 때문에 의미론을 고려하지 않으며 종종 긴 및 복잡한 LLM 출력을 평가하기에 정확도가 충분하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_26.png)
 
@@ -818,8 +1417,18 @@ print('METEOR Score:', meteor_score)
 
 순전히 통계적인 산정기들은 신뢰성이 있지만 의미론을 고려하는 데 어려움을 겪어 정확하지 않다. 이 절에서는 정반대인 산정기들을 살펴보겠습니다. 순전히 NLP 모델에 의존하는 산정기들은 비교적 더 정확하지만 확률적인 성격으로 인해 신뢰성이 떨어질 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 놀라운 사실이 아닐 것입니다만, LLM 기반이 아닌 스코어러들은 통계 스코어러에 언급된 이유로 인해 LLM-Evals보다 성능이 떨어집니다. LLM이 아닌 스코어러에는 다음이 포함됩니다:
 
@@ -829,7 +1438,18 @@ print('METEOR Score:', meteor_score)
 
 ![image](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_27.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.2.2. BLEURT
 
@@ -839,7 +1459,18 @@ BLEURT (Bilingual Evaluation Understudy with Representations from Transformers)�
 
 기계 학습을 기반으로 한 메트릭을 생성하는 것은 기본적인 도전이 됩니다. 메트릭은 다양한 작업 및 도메인에서 일관된 성능을 보이고 시간이 지남에 따라 잘 동작해야 합니다. 그러나 훈련 데이터의 양은 제한적입니다. 실제로 공개 데이터는 희소합니다 — 작성 시점에서 가장 큰 인간 평가 컬렉션인 WMT Metrics Task 데이터셋은 뉴스 도메인에 대해서만 약 26만 개의 인간 평가를 포함합니다. 이는 미래의 NLG 시스템을 평가하기에 적합한 메트릭을 훈련시키기에는 너무 한정적합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문제를 해결하기 위해 전이학습을 사용합니다. 첫째로, 우리는 BERT의 문맥 단어 표현을 사용합니다. 이는 언어 이해를 위한 최첨단 비지도 표현 학습 방법으로 이미 NLG 측정 항목에 성공적으로 통합되었습니다(YiSi나 BERTscore 등).
 
@@ -849,7 +1480,18 @@ BLEURT의 성공은 수백만 개의 합성 문장 쌍을 사용해 모델을 "�
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_29.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.2.3. QA-QG
 
@@ -859,7 +1501,18 @@ BLEURT의 성공은 수백만 개의 합성 문장 쌍을 사용해 모델을 "�
 
 불일치 점수 외에도, 이러한 접근 방식에는 몇 가지 단점이 있습니다. 예를 들어, NLI 스코어러는 긴 텍스트를 처리할 때 정확도에 어려움을 겪을 수도 있고, BLEURT는 학습 데이터의 품질과 대표성에 제한이 있을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러니 우리 LLM-Evals에 대해 이야기해 보겠습니다.
 
@@ -869,7 +1522,18 @@ BLEURT의 성공은 수백만 개의 합성 문장 쌍을 사용해 모델을 "�
 
 G-Eval은 최근 개발된 프레임워크인 "GPT-4를 사용한 NLG 평가 및 인간 정렬 강화"라는 논문에서 사용된 LLMs를 평가하는 LLM 출력을 사용하는 프레임워크입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_31.png" />
 
@@ -880,7 +1544,18 @@ G-Eval은 평가 단계를 생성하기 위해 사고 연쇄(Chain of Thoughts, 
 - 원하는 LLM에 평가 작업 소개(예: 일관성에 따라 1-5로 이 출력을 평가)
 - 기준 정의(예: "일관성 - 실제 출력의 모든 문장의 집합적 품질")
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (원본 G-Eval 논문에서는 저자들이 실험에 GPT-3.5 및 GPT-4만 사용했으며, 저는 다양한 LLMs를 활용하여 G-Eval에 대해 직접 실험해본 결과, 이러한 모델을 사용하는 것을 강력히 권장드립니다.)
 
@@ -892,7 +1567,18 @@ G-Eval은 평가 단계를 생성하기 위해 사고 연쇄(Chain of Thoughts, 
 
 3단계는 옵션입니다. 왜냐하면 출력 토큰의 확률을 얻기 위해 LLM의 원시 모델 임베딩에 액세스해야 하며, 2024년 기준으로 이는 아직 OpenAI API를 통해 사용할 수 없습니다. 그러나 이 단계는 LLM 점수에 미세 조정된 점수를 제공하며 LLM 점수의 편향을 최소화하기 때문에 도입된 것입니다 (논문에서 언급된 바와 같이, 1-5 척도에 대한 3은 높은 토큰 확률을 가지고 있다고 알려져 있습니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 논문에서 언급된 모든 전통적이고 비-LLM 평가 방법을 능가하는 G-Eval의 성능을 보여주는 결과입니다:
 
@@ -902,7 +1588,18 @@ G-Eval은 LLM-Eval로써 LLM 출력물의 전체 의미를 고려할 수 있기 
 
 G-Eval은 동료들과 비교했을 때 인간 판단과 훨씬 더 관련이 있습니다. 그러나 LLM에 평가 점수를 매기도록 요청하는 것은 명백히 임의적이기 때문에 여전히 신뢰성이 떨어질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그렇다는 것은, G-Eval의 평가 기준이 얼마나 유연한지 고려할 때, 저는 개인적으로 DeepEval에 G-Eval을 적용하여 작업 중인 오픈 소스 LLM 평가 프레임워크로 구현했습니다.
 
@@ -931,7 +1628,18 @@ print(coherence_metric.reason)
 
 또 다른 주요 장점은 LLM-Eval을 사용하면, LLM은 평가 점수에 대한 이유를 생성할 수 있다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.3.2. 프로메테우스
 
@@ -941,7 +1649,18 @@ print(coherence_metric.reason)
 
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_33.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로메테우스는 G-Eval과 같은 원칙을 따르지만, 몇 가지 차이점이 있습니다:
 
@@ -953,7 +1672,18 @@ print(coherence_metric.reason)
 
 # 6.4. 통계 및 모델 기반 스코어 결합
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 우리는 통계적 방법이 신뢰할만 하지만 정확하지 않다는 것과, 비-LLM 모델 기반 접근 방법이 믿을만 하지 않지만 더 정확하다는 것을 보았습니다. 이전 섹션과 유사하게, BERTScore와 같은 비-LLM 점수 산정 방법이 있습니다:
 
@@ -963,7 +1693,18 @@ BERTScore (Zhang et al. 2019): 이는 bi-encoding 기반 접근 방법으로, �
 
 ![그림](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_34.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.4.2. MoverScore
 
@@ -973,7 +1714,18 @@ MoverScore (Zhao et al. 2019): 워드 무버스 디스턴스 개념을 사용하
 
 BERTScore와 MoverScore 점수기 모두 BERT와 같은 사전 훈련된 모델로부터의 문맥 임베딩에 의존하여 문맥적인 인식과 편향에 취약합니다. 그렇다면 LLM-Evals는 어떨까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.4.3. GPTScore
 
@@ -983,7 +1735,18 @@ G-Eval이 직접 작업을 평가하는 방식인 것과는 달리, GPTScore는 
 
 ## 6.4.4. SelfCheckGPT
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SelfCheckGPT은 조금 독특해요. 이것은 LLM 출력물을 사실 확인하기 위해 사용되는 간단한 샘플링 기반 접근법입니다. 이는 상상된 출력물은 재현할 수 없다고 가정하며, LLM이 특정 개념을 알고 있다면 샘플링된 응답은 유사할 것이며 일관된 사실을 포함할 가능성이 높다고 가정합니다.
 
@@ -993,7 +1756,18 @@ SelfCheckGPT은 환각을 감지하는 데 적합성을 확인할 때 레퍼런�
 
 그러나 G-Eval 및 프로메테우스가 use case에 중립적인 것을 알 수 있습니다. SelfCheckGPT는 그렇지 않습니다. 이것은 환각을 감지하기 위해 적합하며, 요약, 일관성 등 다른 use case를 평가하는 데는 적합하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6.4.5. QAG 점수
 
@@ -1004,7 +1778,18 @@ QAG(Question Answer Generation) 점수는 LLMs의 뛰어난 추론 능력을 활
 
 그래서 이 예시 LLM 출력의 경우:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주장은:
 
@@ -1014,7 +1799,18 @@ QAG(Question Answer Generation) 점수는 LLMs의 뛰어난 추론 능력을 활
 
 충실성의 경우, 만약 LLM 출력 내의 주장들 중 정확하고 실제와 일치하는 비율로 정의한다면, LLM이 한 주장을 하는 전체 주장 수로 나누어 정확한(진실된) 주장의 수를 나눠 계산할 수 있습니다. 우리가 LLM을 직접 평가 점수를 생성하는 데 사용하지 않고 여전히 그들의 우수한 추론 능력을 활용한다면, 정확하고 신뢰할 수 있는 점수를 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 7. LLM 기반 애플리케이션의 평가
 
@@ -1026,7 +1822,18 @@ LLM 애플리케이션의 평가 메트릭스는 상호 작용 방식과 예상 
 - 텍스트 착취: LLM에게 텍스트와 지시사항이 제공되고 답변이 주어진 텍스트에 완전히 기반되기를 기대합니다. 예: 주어진 텍스트를 요약해주세요.
 - 창의성: LLM에게 질문이나 명령이 제공되고 창의적인 답변이 기대됩니다. 예: 아쇼카 왕자에 대한 이야기를 써주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 상호작용 또는 작업에 대해 기대되는 응답 유형은 추출적, 요약적, 간략한 형식, 장문 형식 또는 다중 선택형일 수 있습니다.
 
@@ -1036,7 +1843,18 @@ LLM 애플리케이션의 평가 메트릭스는 상호 작용 방식과 예상 
 
 우리가 응용에 적합한 평가 전략을 수립한 후, 실험의 성능을 측정하기 위해 이를 신뢰하기 전에 우리의 전략을 평가해야 합니다. 평가 전략은 인간의 판단과의 상관관계를 통해 평가됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 골든 인간 주석 점수가 포함된 테스트 세트를 획득하거나 주석을 다는 것
 - 우리 방법을 사용하여 테스트 세트의 생성물을 점수화
@@ -1048,7 +1866,18 @@ LLM 애플리케이션의 평가 메트릭스는 상호 작용 방식과 예상 
 
 모든 ML 문제의 평가 세트를 형성할 때 지켜야 할 두 가지 기본 기준은
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터셋은 통계적으로 의미 있는 결과를 얻기에 충분히 커야 합니다.
 - 최대한 제품에서 예상되는 데이터를 대표해야 합니다.
@@ -1059,7 +1888,18 @@ Ground truth를 갖춘 평가 세트의 구축은 비용 부담이 크고 시간
 
 # 8. LLM 평가 프레임워크
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 응용 프로그램에서 LLM의 품질과 효능을 평가하기 위해 LLM을 평가해야 합니다. LLM의 평가를 위해 특별히 개발된 다양한 프레임워크가 있습니다.
 
@@ -1069,7 +1909,18 @@ Ground truth를 갖춘 평가 세트의 구축은 비용 부담이 크고 시간
 
 이 블로그에서는 Deepeval 및 RAGAs와 같은 2개의 오픈 소스 LLM 평가 프레임워크에 중점을 둘 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 8.1. Deepeval
 
@@ -1083,7 +1934,18 @@ DeepEval은 LLM에 대한 오픈 소스 평가 프레임 워크입니다. DeepEv
 
 평가는 LLM 응용 프로그램 출력을 테스트하는 프로세스를 의미하며, 다음 구성 요소가 필요합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 테스트 케이스
 - 메트릭
@@ -1095,7 +1957,18 @@ DeepEval은 LLM에 대한 오픈 소스 평가 프레임 워크입니다. DeepEv
 
 deepeval에서 메트릭은 특정 관심 기준에 따라 LLM 출력의 성능을 평가하는 데 사용되는 측정 기준으로 작동합니다. 본질적으로 메트릭은 자의적으로 테스트 케이스가 수행하는 매우 중요한 역할을 합니다. deepeval은 빠르게 시작할 수 있도록 몇 가지 기본 메트릭을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - G-Eval
 - Summarization
@@ -1115,7 +1988,18 @@ deepeval에서 메트릭은 특정 관심 기준에 따라 LLM 출력의 성능�
 
 아래는 RAG의 일반적인 작업 흐름입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - RAG 시스템은 입력을 받습니다.
 - 리트리버는 이 입력을 사용하여 우리의 지식 베이스(대부분의 경우에는 벡터 데이터베이스인 요즘)에서 벡터 검색을 수행합니다.
@@ -1127,7 +2011,18 @@ deepeval에서 메트릭은 특정 관심 기준에 따라 LLM 출력의 성능�
 
 충실도는 RAG 측정 항목 중 하나로, 우리 RAG 파이프라인의 LLM/제너레이터가 검색 문맥에 제시된 정보와 사실적으로 일치하는지를 평가합니다. 그러나 충실도 측정을 위해 어떤 점수 지표를 사용해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스포일러 주의: QAG Scorer는 명확한 목표가 있는 평가 작업에서 뛰어난 성능을 발휘하여 RAG 지표에 대해 가장 우수한 스코어러입니다. 충실성을 고려할 때, LLM 출력에서 특정 검색 문맥에 대한 진실된 주장의 비율으로 정의한다면, 다음 알고리즘을 따라 QAG를 사용하여 충실성을 계산할 수 있습니다:
 
@@ -1139,7 +2034,18 @@ deepeval에서 메트릭은 특정 관심 기준에 따라 LLM 출력의 성능�
 
 만약 이를 구현하기가 너무 복잡하다고 느낀다면, DeepEval을 사용할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 설치
@@ -1170,8 +2076,18 @@ DeepEval은 평가를 테스트 케이스로 다룹니다. 여기서 actual_outp
 
 ## 8.1.2. 답변 관련성
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 답변 적합성은 RAG 지표 중 하나로, 우리의 RAG 생성기가 간결한 답변을 출력하는지를 평가합니다. 입력에서 관련성이 있는 문장의 비율을 결정하여 계산할 수 있습니다 (즉, 관련 문장 수를 전체 문장 수로 나눈 것).
 
@@ -1196,7 +2112,18 @@ print(metric.is_successful())
 
 (기억하세요, 모든 RAG 지표에 대해 QAG를 사용 중입니다)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 8.1.3. 맥락 정확도
 
@@ -1223,7 +2150,18 @@ print(metric.is_successful())
 
 ## 8.1.4. 맥락 회수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨텍스트 리콜(Contextual Recall)은 리트리버-증가 생성기(Retriever-Augmented Generator, RAG)를 평가하는 추가 지표입니다. 이는 예상 출력물 또는 그라운드 트루스에 있는 문장들 중에서 검색된 컨텍스트 노드에 속하는 비율을 결정하여 계산됩니다. 높은 점수는 검색된 정보와 예상 출력물 간의 더 큰 일치를 나타내며, 이는 리트리버가 생성기에 돕기 위해 관련성 있고 정확한 콘텐츠를 효과적으로 소싱하고 있다는 것을 나타냅니다.
 
@@ -1250,7 +2188,18 @@ print(metric.is_successful())
 
 아마 가장 이해하기 쉬운 메트릭인 컨텍스트 관련성은 단순히 주어진 입력과 관련이 있는 검색된 컨텍스트 문장들의 비율을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from deepeval.metrics import ContextualRelevancyMetric
@@ -1276,7 +2225,18 @@ print(metric.is_successful())
 - 추가 문맥 지식 통합.
 - 동작 조정.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 모델을 세밀하게 조정하려면, 구글 Colab 내에서 LLAMA-2를 2시간 이내에 세밀하게 조정하는 방법에 대한 스텝바이스텝 튜토리얼이 있습니다. 이로 인해 평가를 수행하며 할루신레이션 메트릭과 관련된 것들 중 일부를 확인할 수 있습니다.
 
@@ -1304,7 +2264,18 @@ print(metric.score)
 print(metric.is_successful())
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 이 방법은 매우 비싸질 수 있으므로 지금은 NLI 스코어러를 사용하고 일부 컨텍스트를 수동으로 제공하여 그라운드 트루스로 사용하는 것을 제안합니다.
 
@@ -1327,7 +2298,18 @@ metric.measure(test_case)
 print(metric.score)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 이 방법은 부적절한 욕설, 모욕 또는 저속한 단어가 댓글에 포함되어 있으면 성격이나 저자의 의도와 관계없이 유해로 분류될 수 있기 때문에 정확하지 않을 수 있습니다. 예를 들어, 유머적이거나 자기 비하적인 내용일지라도 유해로 분류될 가능성이 있습니다.
 
@@ -1355,7 +2337,18 @@ print(metric.score)
 
 ## 8.2.3. 편향
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 편향 측정 항목은 텍스트 콘텐츠 내의 정치적, 성별 및 사회적 편향과 같은 측면들을 평가합니다. 이것은 특히 맞춤형 LLM이 의사결정 과정에 참여하는 응용 프로그램에서 매우 중요합니다. 예를 들어, 편견 없는 추천으로 은행 대출 승인을 지원하거나, 채용에서는 후보자가 면접에 초대되어야 할지를 결정하는 데 도움이 됩니다.
 
@@ -1383,7 +2376,18 @@ print(metric.score)
 
 편향은 매우 주관적인 문제로, 다양한 지리적, 정치적 및 사회적 환경에서 크게 달라집니다. 예를 들어, 한 문화에서 중립적으로 여겨지는 언어나 표현이 다른 문화에서는 다른 함의를 내포할 수도 있습니다. (이것이 왜 편향에 대한 소수의 데이터 평가가 잘 작동하지 않는지도 그 이유입니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해결책으로는 평가를 위해 맞춤형 LLM을 세밀하게 조정하거나 맥락 속 학습을 위해 매우 명확한 평가 기준을 제시하는 것이 가능합니다. 그래서 제 생각으로는 편향이 가장 구현하기 어려운 측정 지표라고 믿어요.
 
@@ -1393,7 +2397,18 @@ print(metric.score)
 
 요약하면(아무 농담이나 한다는 거 아니에요), 모든 좋은 요약은:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 원본 텍스트와 사실적으로 일치합니다.
 - 원본 텍스트의 중요 정보를 포함하고 있습니다.
@@ -1423,8 +2438,18 @@ print(metric.score)
 
 # 8.2. Ragas
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_41.png)
 
@@ -1439,8 +2464,18 @@ Just like in any machine learning system, the performance of individual componen
 
 End-to-End Evaluation
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **파이프라인의 최종 성능을 평가하는 것도 매우 중요합니다. 이는 사용자 경험에 직접적인 영향을 미치기 때문입니다. Ragas는 우리 파이프라인의 전반적인 성능을 평가하는 데 사용할 수 있는 메트릭을 제공하여 포괄적인 평가를 보장합니다.**
 
@@ -1451,13 +2486,22 @@ End-to-End Evaluation
 
 이것은 생성된 답변의 사실 일관성을 주어진 맥락에 대해 측정합니다. 답변과 검색된 맥락에서 계산됩니다. 답변은 (0,1) 범위로 축척화됩니다. 높을수록 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생성된 답변은 주어진 맥락에서 모든 주장들이 추론될 수 있다면 신뢰할 수 있는 것으로 간주됩니다. 이를 계산하기 위해 먼저 생성된 답변에서의 주장 집합이 식별됩니다. 그런 다음 각 주장이 주어진 맥락과 일치하는지 여부를 확인하여 주어진 맥락에서 어떤 주장을 추론할 수 있는지 확인합니다. 신뢰도 점수는 다음과 같이 계산됩니다.
 
-
 ![이미지](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_42.png)
-
 
 ```python
 from datasets import Dataset
@@ -1477,7 +2521,18 @@ score.to_pandas()
 
 계산 결과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 낮은 충실도 답변을 사용하여 충실도가 어떻게 계산되었는지 살펴보겠습니다:
 
@@ -1489,7 +2544,18 @@ score.to_pandas()
 
 단계 2: 생성된 각 문장에 대해 주어진 맥락에서 유추할 수 있는지 확인합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 문장 1: 네
 - 문장 2: 아니요
@@ -1500,7 +2566,18 @@ score.to_pandas()
 
 ## 8.2.2. 답변 관련성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 평가 지표인 답변 관련성은 생성된 답변이 제시된 프롬프트와 얼마나 적합한지를 평가하는 데 초점을 맞춥니다. 불완전하거나 중복 정보가 포함된 답변에는 낮은 점수가 할당되고 더 높은 점수는 더 좋은 관련성을 나타냅니다. 이 지표는 질문, 맥락 및 답변을 사용하여 계산됩니다.
 
@@ -1508,7 +2585,18 @@ score.to_pandas()
 
 답변이 직접적이고 적절하게 원래 질문에 대답할 때 관련성이 있다고 여겨집니다. 중요한 점은 답변의 사실 관련성을 고려하지 않지만 대신 답변이 완전하지 않거나 중복된 세부 정보를 포함하는 경우에는 처벌합니다. 이 점수를 계산하기 위해 LLM은 생성된 답변에 대한 적절한 질문을 여러 번 생성하도록 유도하고 이러한 생성된 질문들과 원래 질문 간의 평균 코사인 유사도가 측정됩니다. 근본적인 아이디어는 생성된 답변이 초기 질문에 정확히 대답하는 경우, LLM이 답변으로부터 생성된 질문을 원래 질문과 일치시킬 수 있어야 한다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_45.png" />
@@ -1533,9 +2621,18 @@ Calculation
 
 To calculate the relevance of the answer to the given question, we follow two steps:
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단계 1: 생성된 답변을 사용하여 다양한 'n'개의 질문들을 대상 답변으로부터 역공학합니다. 예를 들어, 첫 번째 답변에 대해, 다음과 같은 가능한 질문이 LLM에서 생성될 수 있습니다:
 
@@ -1547,7 +2644,18 @@ To calculate the relevance of the answer to the given question, we follow two st
 
 기본 개념은 답변이 질문을 올바르게 다룬다면, 원래 질문을 답변만으로 완벽하게 재구성할 수 있다는 점입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 8.2.3. 문맥 정밀도
 
@@ -1572,7 +2680,18 @@ score = evaluate(dataset, metrics=[context_precision])
 score.to_pandas()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 계산
 
@@ -1582,7 +2701,18 @@ score.to_pandas()
 
 단계 2: 맥락의 각 청크에 대해 precision@k를 계산합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_47.png" />
 
@@ -1592,15 +2722,24 @@ score.to_pandas()
 
 ## 8.2.4. 컨텍스트 관련성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 메트릭은 문맥을 검색해서 질문과 문맥을 기반으로 계산하여 중요성을 측정합니다. 값은 (0, 1) 범위 내에 있으며, 높은 값일수록 더 나은 중요성을 나타냅니다.
 
 이상적으로 검색된 문맥은 제공된 질문에 대한 답변을 주는 데 필수적인 정보만 포함해야 합니다. 이를 계산하기 위해, 검색된 문맥 내에서 주어진 질문에 관련된 문장을 식별하여 |�|의 값을 처음에 추정합니다. 최종 점수는 다음 공식에 따라 결정됩니다:
 
-
 ![수식](/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_49.png)
-
 
 ```python
 from ragas.metrics import ContextRelevancy
@@ -1615,7 +2754,18 @@ dataset: Dataset
 results = context_relevancy.score(dataset)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 8.2.5. 컨텍스트 회상
 
@@ -1625,7 +2775,18 @@ results = context_relevancy.score(dataset)
 
 컨텍스트 회상을 계산하는 공식은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-BuildingLLMApplicationsEvaluationPart8_50.png" />
 
@@ -1650,7 +2811,18 @@ score.to_pandas()
 
 저희가 낮은 컨텍스트 리콜 예제를 사용하여 어떻게 컨텍스트 리콜이 계산되었는지 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단계 1: 정답을 개별 문장으로 나눠보세요.
 
@@ -1663,7 +2835,18 @@ score.to_pandas()
 - 문장 1: 예
 - 문장 2: 아니요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step 3: 위에 나와 있는 공식을 사용하여 컨텍스트 회수율을 계산하세요.
 
@@ -1673,7 +2856,18 @@ Step 3: 위에 나와 있는 공식을 사용하여 컨텍스트 회수율을 �
 
 끝까지 와 주셔서 축하드립니다! 스코어 및 메트릭스의 긴 목록이었는데, 이제 LLM 평가를 위한 메트릭을 선택할 때 고려해야 할 다양한 요소와 선택사항을 알게 되었기를 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그날의 끝에는, 메트릭 선택은 우리의 사용 사례와 LLM 애플리케이션의 구현에 달려 있습니다. 여기서 RAG 및 파인튜닝 메트릭은 LLM 출력을 평가하는 좋은 시작점입니다. 더 많은 사용 사례별 메트릭을 위해 우리는 가장 정확한 결과를 얻기 위해 G-Eval과 퓨샷 프롬프팅을 사용할 수 있습니다.
 
@@ -1683,7 +2877,18 @@ Step 3: 위에 나와 있는 공식을 사용하여 컨텍스트 회수율을 �
 
 아래는 참고 문헌의 통합 목록입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - https://arxiv.org/abs/2307.03109
 - https://www.confident-ai.com/blog/the-current-state-of-benchmarking-llms
@@ -1704,7 +2909,18 @@ Step 3: 위에 나와 있는 공식을 사용하여 컨텍스트 회수율을 �
 - 동료 Python 또는 AI/ML 애호가와 이 가이드를 공유해 주세요.
 - 여러분의 피드백은 소중합니다. 이를 통해 저는 미래의 게시물을 영감을 받고 안내할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 함께 소통해요!
 

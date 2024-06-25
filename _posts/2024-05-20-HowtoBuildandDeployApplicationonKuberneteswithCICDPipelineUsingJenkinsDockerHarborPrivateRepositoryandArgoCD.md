@@ -3,13 +3,12 @@ title: "Kubernetes에서 Jenkins, Docker, Harbor Private Repository 및 ArgoCD�
 description: ""
 coverImage: "/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_0.png"
 date: 2024-05-20 17:22
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_0.png
 tag: Tech
 originalTitle: "How to Build and Deploy Application on Kubernetes with CI CD Pipeline Using Jenkins, Docker, Harbor Private Repository, and ArgoCD"
 link: "https://medium.com/@tanmaybhandge/how-to-build-and-deploy-application-on-kubernetes-with-ci-cd-pipeline-using-jenkins-docker-harbor-45ade4fee59b"
 ---
-
 
 오늘날의 소프트웨어 개발 환경에서 고품질 소프트웨어를 효과적으로 생산하기 위해서는 CI/CD 파이프라인이 필수적입니다. 이 글에서는 Jenkins, Docker 이미지, Harbour 프라이빗 저장소, Git 및 ArgoCD를 사용하여 지속적인 통합/배포 파이프라인(CI/CD)을 어떻게 설정하는지 설명합니다. 이를 통해 이미지를 원활하게 생성하고 harbor에 푸시한 다음 쿠버네티스 파드에 자동으로 배포할 수 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tanmaybhandge/how-to-build-and-deploy-application-on-
 
 1. Docker 파일 생성: 먼저 Docker 파일을 만들어야 합니다. 이 파일에서는 DevOps 엔지니어가 애플리케이션에 필요한 환경 및 종속성을 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 리포지토리에 코드를 커밋합니다: Git과 같은 리포지토리는 소스 코드와 Docker 파일을 저장합니다. 저는 GitHub에 이 리포지토리를 저장할 것입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@tanmaybhandge/how-to-build-and-deploy-application-on-
 
 5. 배포 리포지토리 업데이트: 젠킨스는 애플리케이션에 필요한 쿠버네티스 배포 구성이 포함된 배포 파일 리포지토리에 변경 사항을 가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 6. ArgoCD와 동기화: 모든 것이 최신 상태인지 확인하기 위해 ArgoCD라는 Kubernetes 연속 전달 도구는 배포 소스에서 가장 최근 업데이트를 검색합니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@tanmaybhandge/how-to-build-and-deploy-application-on-
 
 # 구현
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 필요한 도구
 
@@ -54,7 +86,18 @@ link: "https://medium.com/@tanmaybhandge/how-to-build-and-deploy-application-on-
 
 아래에 언급된 Docker 파일을 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 index.html 파일을 사용하고 있습니다.
 
@@ -64,7 +107,18 @@ GitHub 저장소에서 모든 파일을 찾을 수 있습니다: https://github.
 
 저희는 Jenkins에서 두 개의 작업을 구성했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 작업(상위 작업)은 최신 소스 코드를 얻기 위해 GitHub 저장소를 복제하는 작업을 포함합니다. 이 코드에서 Docker 이미지가 생성됩니다. 그런 다음 이미지를 빌드하고 Harbor 프라이빗 레지스트리에 로그인한 후 이미지를 푸시하고 상위 작업의 빌드 번호와 태깅합니다.
 
@@ -74,7 +128,18 @@ GitHub 저장소에서 모든 파일을 찾을 수 있습니다: https://github.
 
 한 Jenkins 작업이 다른 작업을 시작할 때, 프로세스를 시작하는 작업을 상위 작업이라고하고, 결과로 시작되는 작업을 하위 작업이라고합니다. 아래 예시에서 Build_Docker_Image_Push_Harbor은 상위 작업이고 push_image_tag_git은 하위 작업입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 작업: 도커 이미지 빌드 및 Harbor로 푸시
 
@@ -105,7 +170,7 @@ pipeline {
 
                     // 이미지에 태그 추가
                     sh 'docker tag library/harbor_cicd_v2 10.1.1.1/library/harbor_cicd:v${BUILD_NUMBER}'
-                    
+
                     // Harbor로 이미지 푸시
                     sh 'docker push 10.1.1.1/library/harbor_cicd:v${BUILD_NUMBER}'
                 }
@@ -120,7 +185,18 @@ pipeline {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업 "Build_Docker_Image_Push_Harbor"에서는 선택된 체크박스가 없습니다. 위 스크립트를 그대로 Pipeline 스크립트에 붙여넣기만 하면 됩니다.
 
@@ -130,7 +206,18 @@ pipeline {
 
 각 스테이지에 대한 설명입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Build
 
@@ -144,7 +231,18 @@ Harbor로 푸시
 - Docker Tag: 빌드된 Docker 이미지에 Jenkins 빌드 번호를 포함한 새 태그를 추가합니다. 현재 파이프라인의 태그로 빌드 번호를 사용할 것입니다.
 - Docker Push: 태그가 붙은 Docker 이미지를 지정된 Harbor 저장소로 푸시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GitHub Push를 트리거합니다.
 
@@ -155,7 +253,18 @@ GitHub Push를 트리거합니다.
 
 이 작업은 GitHub에 호스팅된 Kubernetes 배포 YAML 파일을 수정하여 상위 작업에서 푸시된 새 이미지 태그를 포함시킵니다. 이를 위해 다음이 필요합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Parameterized Trigger Plugin
 - GitHub Plugin
@@ -167,8 +276,18 @@ push_image_tag_git이라는 이름의 Freestyle 프로젝트를 생성합니다.
 
 A. This project is parameterised 옵션이 선택되었는지 확인한 후, 문자열 매개변수를 적절하게 구성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지1](/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_1.png)
 
@@ -178,16 +297,35 @@ B. 소스 코드 관리 섹션에서 Git을 선택하고 저장소 URL을 붙여
 
 C. 빌드 단계에 실행 셸을 추가하고 다음을 붙여넣으세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 스크립트는 Deployment.yaml 파일에서 이미지 태그를 찾아 해당 버전을 Jenkins 빌드의 ($ 'Build_Number_Image')로 바꿉니다. 또한 Git 커밋을 위해 이메일과 이름을 구성하고, 수정된 모든 파일을 Git 스테이징 영역에 추가하고, 설명적인 메시지로 변경 사항을 커밋합니다.
 
 D. 'Post-Build Actions' 섹션에서 '빌드 성공 시에만 푸시'를 선택한 다음 'Branches' 필드 아래에서 브랜치 이름과 대상 원격 이름을 지정합니다. 저는 브랜치 이름을 'main', 대상 원격 이름을 'origin'으로 지정했습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_4.png" />
 
@@ -197,7 +335,18 @@ D. 'Post-Build Actions' 섹션에서 '빌드 성공 시에만 푸시'를 선택�
 
 Build_Docker_Image_Push_Harbor
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 빌드 단계: GitHub 저장소를 복제하고 Docker 이미지를 빌드합니다.
 - Harbor에 푸시하는 단계: Harbor 레지스트리에 로그인하여 이미지에 빌드 번호를 태깅하고 푸시합니다.
@@ -209,7 +358,18 @@ Push_image_Tag_Git
 
 여기 Status 출력 결과입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_5.png" />
 
@@ -219,7 +379,18 @@ Push_image_Tag_Git
 
 ## 4. 더 새로운 이미지 버전으로 Pods 다시 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ArgoCD 애플리케이션을 설정하여 deployment.yaml 파일을 주시하고 Kubernetes 클러스터에서 모든 것이 동기화되고 최신 상태를 유지하도록 하였습니다. 따라서 우리의 deployment.yaml에서 조정이 발생할 때마다 ArgoCD가 바로 개입하여 손을 거치지 않고도 Kubernetes 배포 환경이 동기화되도록 합니다.
 
@@ -232,8 +403,18 @@ ArgoCD 애플리케이션을 설정하여 deployment.yaml 파일을 주시하고
 
 쿠버네티스 클러스터에 webapp 네임스페이스를 생성해야 할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-HowtoBuildandDeployApplicationonKuberneteswithCICDPipelineUsingJenkinsDockerHarborPrivateRepositoryandArgoCD_7.png)
 
@@ -243,8 +424,18 @@ ArgoCD 애플리케이션을 설정하여 deployment.yaml 파일을 주시하고
 
 ArgoCD 배포가 모두 정상적으로 보인다면, 배포된 애플리케이션을 테스트할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노드 포트 서비스를 통해 배포를 노출했습니다. 테스트 목적으로 사용할 수 있습니다. 어플리케이션에 액세스하려면 워커 노드의 IP 주소와 서비스 포트를 사용하십시오. 이 설정을 통해 웹페이지에 쉽게 액세스하여 앱의 기능을 테스트하고 유효성을 검사할 수 있습니다.
 

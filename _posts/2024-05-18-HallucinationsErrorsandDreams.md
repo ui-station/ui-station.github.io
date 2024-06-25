@@ -3,13 +3,12 @@ title: "환각, 오류 및 꿈"
 description: ""
 coverImage: "/assets/img/2024-05-18-HallucinationsErrorsandDreams_0.png"
 date: 2024-05-18 19:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-HallucinationsErrorsandDreams_0.png
 tag: Tech
 originalTitle: "Hallucinations, Errors, and Dreams"
 link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66f3c35"
 ---
-
 
 ## 현대 AI 시스템이 잘못된 결과를 생성하는 이유에 대해 그리고 그에 대해 무엇을 할 수 있는지
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66
 
 우리는 이를 알고 있지만, 생각해보면 좀 이상하죠. 우리는 컴퓨터가 뭔가를 낸 적이 없던 충실한 50년 이상을 보냈는데, 그들의 세련되고 정확성은 시간이 흘러도 계속 향상되었습니다. 하지만 2024년에, 당신이 입력한 수학 문제에 대한 정확한 답을 줄 수 있는 주머니 계산기를 믿을 수 있더라도, 세계에서 가장 정교한 AI에 그 같은 문제를 맡기는 것에 대해 의심해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-HallucinationsErrorsandDreams_1.png" />
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66
 
 그러므로 환각에 대한 질문에 대한 하나의 답은 간단합니다. 생성적 AI는 머신 러닝이며, 머신 러닝은 에러를 생성한다는 것을 알고 있으며, 환각은 에러입니다. 이 관점은 환각 문제가 어떻게 발전해 나갈지에 대해 몇 가지 것을 시사합니다. 역사적으로 더 많은 데이터를 수집하고 더 큰 모델을 구축할수록 머신 러닝 모델이 더 적은 에러를 만들어냄을 우리는 보았습니다. 우리는 이와 마찬가지로 챗봇 및 다른 생성적 AI 시스템이 시간이 지남에 따라 보다 정확해질 것으로 기대할 수 있습니다. 그러나 저는 이 관점이 실제적으로 정확하지 않다고 생각합니다. 환각은, 제 입장에 따르면, 고전적 머신러닝에서의 에러와는 별도입니다. 모든 생성적 AI 출력이 환각이라고 이견을 품고 있습니다. 두 번째 섹션에서 이 모든 것을 정확히 설명하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 경우에도 환각을 어떻게 정의하든 그 성격에 대해 무엇을 믿든, 모두가 좋고 유용한 생성적 AI 출력물과 나쁘고 유용하지 않은 다른 출력물이 있다는 데에 동의합니다. 얼마나 많은 양이 있는지 양적으로 파악하고 싶은 것은 자연스러운 욕망이에요. 사실, 이를 양적으로 파악하는 것이 이러한 것들을 어떤 식으로든 유용하게 활용하기 위해 필수적이라고 생각해요. 그러나 이런 종류의 것을 측정하는 것이 매우 어렵다는 것을 계속해서 많은 사람들이 깨닫게 되고 있다는 사실이 밝혀졌어요. 세 번째 주요 섹션에서는 이러한 종류의 측정이 왜 중요한지, 또한 왜 그것이 얼마나 어려운지에 대해 설명해 보겠어요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66
 
 이 문제 중 하나를 해결하기 위해 컴퓨터 프로그램을 어떻게 만들까요? 매우 옛날에는 처음 원리에서 추론하려는 방법이었어요. 사과가 나무에서 떨어진 후 땅에 떨어지는 데 얼마나 걸리는지 예측하기 위해, 뉴턴은 우주의 성질에 대해 많이 생각하여 이 질문에 답할 방정식을 도출하는 이론을 만들었어요. 이 방법은 뉴턴에게는 성공적이었지만, 대부분의 실제 문제에서는 이처럼 처음 원리에서 해답을 도출하기가 매우 어렵습니다. 우리는 금융 파생상품의 진정한 가치를 추정하기 위한 Black-Scholes 방정식과 같은 것들을 개발한 많은 사람들이 노력해 왔지만, 이미지에 나타난 물체를 추측하는 것과 같은 모던 세계에서 중요한 많은 문제들에 대해, 이러한 방식으로 시작하지 않아도 되는 문제들이 많습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 머신 러닝에 오신 것을 환영합니다. 머신 러닝의 기본 아이디어는 예측하려고 하는 프로세스의 충분한 예제를 살펴보면, 해당 예측을 돕는 패턴을 찾을 수 있어 프로세스를 이해하지 않아도 정확한 예측을 할 수 있다는 것입니다. 백만 그루의 나무에서 떨어지는 백만 개의 사과를 살펴보면, 페이지 원리를 건너뛰고 곧바로 수식으로 넘어갈 수 있습니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66
 
 좀 더 용어를 소개하자면, 최고의 추측 전략을 찾는 과정을 "훈련"이라고 하며, 그 결과로 나오는 시스템은 종종 "모델"이라고 합니다. 이산 레이블 세트에서 추측하는 모델은 "분류기"이며, 머신 러닝 전문가들은 이 추측을 "예측"이라고 부릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일시적으로 기계 학습 접근 방식이 뉴턴의 방식과 얼마나 다른지 생각해 볼 가치가 있습니다. 뉴턴은 영강에서 몇 개의 사과가 떨어지는 것을 영감으로 삼지만, 그의 프로젝트는 천체의 운동의 일반적인 원리를 인코딩하는 이론을 개발하는 것입니다. 그 이론으로부터 방정식이 나옵니다. 그 방정식은 나무에서 사과가 떨어지는 데 걸리는 시간을 알려줍니다. 기계 학습자에게 있어서 천체 간의 관계를 규정하는 일반 원리는 거의 관련이 없습니다. 기계 학습자의 유일한 초점은 백만 개의 사과낙하 시간 데이터 세트를 정확하게 재현하는 것입니다.
 
@@ -63,7 +106,18 @@ link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66
 
 모든 예제를 수동으로 살펴보지 않고도 레이블을 생성할 수 있다면 성공할 수 있습니다. 이것이 현대 생성적 인공지능 시스템 뒤에 있는 기계 학습 패러다임인 자기 지도 학습의 큰 아이디어입니다. 인터넷에서 모든 텍스트를 스크랩하는 등의 방법으로 수십억 개의 문장을 확보한다면, 문장을 조각내어 훈련 데이터세트를 프로그래밍적으로 구성할 수 있습니다. 한 문장을 "The quick brown fox jumps over the lazy dog"라는 훈련 예제로 변환하고 레이블을 "dog"로 지정할 수 있습니다. 사실, 한 문장에서도 다양한 장소에서 자르면서 많은 훈련 예제를 만들 수 있습니다. 한 문장만으로도 인간의 레이블링 없이 여덟 개의 훈련 예제를 얻게 됩니다. 인터넷에서 수집할 수 있는 문장 수에 곱하면 이러한 복잡한 모델을 훈련하는 데 필요한 크기에 다가설 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 중요한 관찰 하나가 있는데요. 크기나 복잡성에서 큰 차이가 있긴 하지만, GPT를 학습하는 과정과 전통적인 분류기를 학습하는 과정 사이에 큰 차이가 없다는 겁니다. LLM(Large Language Model)은 더 많은 가능한 입력과 출력을 다루지만, 기본적으로 똑같은 방식으로 학습되어 같은 목표를 이루기 위해 노력합니다: 주어진 입력에 대해 올바른 레이블을 추측하는 것.
 
@@ -73,7 +127,18 @@ link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66
 
 이야기는 여기서 끝날 수도 있습니다. 가끔은 숫자 인식기가 7을 9로 오해할 수도 있고, 언어 모델이 빠른 갈색 여우가 게으른 갈색 덜드럼을 뛰어넘는다고 말할 수도 있습니다. 이는 기계 학습의 본질적인 일부로, 기계 학습 모델이 확실한 추론이 아닌 패턴을 기반으로 예측을 하기 때문에 발생하는 결과이며, 더 많은 데이터와 더 큰 모델로 시간이 지남에 따라 개선되는 경향이 있는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이건 맞지 않다고 생각해요.
 
@@ -83,7 +148,18 @@ link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66
 
 바로 전에 언급했듯이, LLM과 고전적 분류기는 개념적으로 구성 방식이 매우 유사해요. LLM은 분류기이지만, 매우 복잡한 분류기에 불과해요. 디지트 인식기가 기존 이미지의 누락된 라벨을 채우도록 훈련되는 것과 마찬가지로, LLM은 기존 문장의 누락된 단어를 채우도록 훈련돼요. 여기서 주된 차이점은 복잡성과 규모에 있어요. 그러나 두 모델의 구성 방식은 유사해도, 생성적 AI 시스템이 배포되는 방식에서 큰 차이가 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전통적으로 우리는 분류기를 배포하여 훈련된 대로 동일한 작업을 수행합니다. 손으로 쓰인 숫자를 인식하는 디지턀 인식기를 배포하면, 수표를 입금하는 것과 같이 수집된 손글씨 숫자를 읽기 위해 모델을 사용할 것입니다.
 
@@ -93,7 +169,18 @@ link: "https://medium.com/@colin.fraser/hallucinations-errors-and-dreams-c281a66
 
 ChatGPT에 "2 + 2는 무엇입니까?"라는 문자열을 입력하면, 다음에 올 바른 단어가 단일 명확한 존재하지 않습니다. 다음 단어는 "4" 같은 것이어야 합니다. 하지만 "2"도 "2 + 2 = 4"처럼 좋을 수 있습니다. "The"도 "2와 2의 합은 4이다."와 같이 좋은 다음 단어가 될 수 있습니다. 물론, 이러한 것들은 모두 나쁜 응답의 처음 단어가 될 수도 있습니다. 모델이 해야 할 작업은 기존 텍스트에서 금지된 단어를 채우는 것이라는 점—이 작업은 명확한 정답이 있는 작업이지만 이제 상황은 완전히 다릅니다. 더 나은 다음 단어와 더 나쁜 다음 단어가 있지만, 훈련할 때와 마찬가지로 옳은 다음 단어는 없습니다. 왜냐하면 재구성할 예시가 없기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언어 모델의 고전적인 의미에서의 오류는 훈련 예제에서 삭제된 단어를 재현하지 못하는 것입니다. 하지만 실제 운용에서 이러한 모델은 그런 역할에 사용되지 않습니다. 이는 마치 우리가 숫자 인식기에 동물 이미지를 삽입하는 것과 비슷합니다. 만약 숫자 인식기가 사자를 6으로 부른다면, 그것은 오류를 범한 것일까요? 아니라고 생각합니다. 그것을 사용하는 목적이 훈련된 목적과 다르기 때문에 정답이 없기 때문에 오류가 정의되지 않습니다.
 
@@ -103,7 +190,18 @@ ChatGPT에 "2 + 2는 무엇입니까?"라는 문자열을 입력하면, 다음�
 
 ![Hallucinations, Errors, and Dreams](/assets/img/2024-05-18-HallucinationsErrorsandDreams_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당연히 1981년에 카미라는 코끼리가 영국 해협을 헤엄쳤다고 주장하고 있는 것은 사실이 아닙니다. 그러나 여기서 ChatGPT가 틀린 방식은 7을 9로 잘못 인식하는 이미지 분류기가 틀리는 방식과 매우 다릅니다. ChatGPT는 여기서 110가지 다른 예측을 했고, 각각을 옳거나 틀린 것 중 어느 것으로 분류해야 할지 명확하지 않습니다. 각 예측된 단어는 앞선 단어들과 일관성이 있고, 이것은 교육 데이터에서 찾을 수 있는 단어 순서와 매우 유사합니다.
 
@@ -113,17 +211,37 @@ ChatGPT에 "2 + 2는 무엇입니까?"라는 문자열을 입력하면, 다음�
 
 하지만 왜 우리가 원하는 결과가 아니라고 할까요? 정확히 무엇이 문제일까요? 분명히, 주된 문제는 실제로 발생하지 않은 사건을 묘사하고 있는 듯한 점입니다. 하지만 이것을 정말로 생각해 보면 조금 의문스럽게 느껴집니다. 만약 1981년에 아시아 코끼리 중 한 마리인 카미가 정확하게 이 텍스트에 설명된 대로 영국 해협을 헤엄 쳤다면 어떨까요? 그렇다면 이 동일한 입력과 출력 쌍은 환각적이지 않았을 것입니다. 이것은 입력-출력 쌍의 텍스트에는 환각적인 요소가 아니라는 것을 시사합니다. 환각적 여부는 완전히 모델에 의해 생성된 텍스트와 독립적으로 존재하는 세계적 사실에 종속적이다는 것을 나타냅니다. 그렇다면 텍스트 자체에는 환각적인 특성이 없는 것인가요? 완전히 그렇지 않아 보입니다. 이는 텍스트가 실제 세계의 객체와 사건과 어떻게 관련되는지에 대한 특성입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일본어에서 한국어 번역 서비스를 사용하려면 URL에 다음과 같은 형식을 지정하십시오:
-
 
 ![HallucinationsErrorsandDreams_5.png](https://yourwebsite.com/assets/img/2024-05-18-HallucinationsErrorsandDreams_5.png)
 
 ![HallucinationsErrorsandDreams_6.png](https://yourwebsite.com/assets/img/2024-05-18-HallucinationsErrorsandDreams_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 기준을 찾아 분류할 수 없는 것은 아니다. 하지만 당신이 희망하는 것만큼 간단하지는 않다는 점을 감안해주셔야 합니다.
 
@@ -133,7 +251,18 @@ ChatGPT에 "2 + 2는 무엇입니까?"라는 문자열을 입력하면, 다음�
 
 이것은 실제로 새로운 관점이 아니라 상대적으로 오래된 관점입니다. 구글은 2015년에 DeepDream이라고 불리는 시스템을 공개했었는데, 이것이 현재의 생성적 AI 시스템의 전신이고 Karpathy가 LLMs를 "꿈을 틀어주는 기계"라고 부르는 것의 거의 확실한 출처이었을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-HallucinationsErrorsandDreams_7.png" />
 
@@ -143,13 +272,35 @@ ChatGPT에 "2 + 2는 무엇입니까?"라는 문자열을 입력하면, 다음�
 
 당시에는 이러한 종류의 꿈들이 스스로 유용하다고 예견된 사람들은 매우 드물었지만, 우리는 이후 학습했듯이 충분한 양의 데이터로 복잡한 모델을 훈련시킨다면, 꿈은 실제 세계에 대한 사실과 자주 일치하는 생생한 형태로 변모할 수 있음을 발견했습니다. 그러나 이러한 경우에 그런 일이 일어난다면, 내견에 따르면, 이것은 본질적으로 행운의 일치에 불과합니다. "모델의 관점"에서는 환각적인 텍스트와 비환각적인 텍스트 사이에 구분이 없습니다. 그의 출력물은 모두 가식적인 흉내낸 문서들의 재구성입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 다소 철학적이고 추상적으로 느껴질 수 있지만, 일부 이 기술이 어떻게 발전할 것인지에 대한 구체적인 함의가 있다고 믿습니다. 환각이 다른 기계 학습 모델의 일반적인 오류와 유사하다면, 환각이 많이 발생하는 것을 강력하게 제로로 유도할 수 있다는 좋은 경험적 근거가 많이 있다고 믿습니다. 요즘에는 필체된 숫자 인식에서 매우 우수한 기계 학습 모델이 있습니다. 기본적인 단계는 간단합니다: 더 많은 데이터로 모델을 학습하고 모델을 더 크게 만드는 것입니다. 그러나 환각이 고전적인 종류의 오류와 질적으로 다르다고 믿는다면, 이야기는 달라질 수 있습니다. 이 경우에 더 많은 데이터나 더 큰 모델이 환각을 줄이는 방향으로 나아간다는 것이 그렇게 명확하지 않습니다. Also 네 really, the current state of the art approach를 볼 때, 환각에 대해 제대로 다루지 않는다면 말이죠. RLHF is 더 나은 환각을 일으킬 수 있는 완전히 새로운 방법이다. 가능성이 있습니다. 어떤 사람도 알고 있지 않죠! 환각 문제가 품질적으로 새롭다고 보는 관점에서는 기계 학습 모델이 때때로 오류를 생성하는 일반적인 문제의 한 예가 아니라면, 이 축을 따라 점진적이지만 지속적인 개선은 전혀 보장되지 않습니다.
 
 이 관점에서 함의되는 정말 무서운 점은 환각 문제는 간단히 해결할 수 없다는 것입니다. Hallucination과 non-hallucination은 사실 구분된 출력 범주가 아닙니다; 봇에게 그림을 그리거나 글을 써 달라고 할 때마다 그것이 환각을 하도록 요청하는 것이죠. 이들 환각은 어쩔 수 없이 실제 세계에서 떨어질 수밖에 없을 것입니다. 왜냐하면 그저 꿈이라서요. 대다수의 실제 시도를 통해 LLM 기반 시스템을 진리에 기반하여 둘 때, 모델을 개선하기 위한 방법이 아니라 더 신뢰할 수 있는 사실적인 텍스트를 만들어내게 하는 방법인 보트인 LLM 조각에 더 많은 비율을 줄 수 있지만, 문제의 핵심은 그 엔진이 진실과 거짓을 생성하는 것을 구별할 수 없다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 섹션의 보기에서 환각적인 출력과 그렇지 않은 출력 사이에는 실제로 보편적인 구별이 없습니다. 더욱 바람직한 출력과 그렇지 않은 출력이 있을 수 있지만, 바람직함은 텍스트의 본성이 아닌 독자가 그것을 해석하고 사용하는 방식에 따라 결정되는 속성입니다. 이에 동의할 수도, 동의하지 않을 수도 있습니다. 어찌되었든, 나는 다른 상황에서 모델이 생성하는 다양한 종류의 텍스트의 빈도를 생각하고 양적으로 측정하려는 것이 중요하다고 생각합니다.
 
@@ -159,7 +310,18 @@ ChatGPT에 "2 + 2는 무엇입니까?"라는 문자열을 입력하면, 다음�
 
 예를 들어 부동산 투자 사업을 기반으로 한 집값이 저평가되었는지 예측하는 모델을 사용해보려고 생각해 봅시다. 모델이 이 집이 가치가 저평가되었다고 예측하면, 그 집을 사들이고 모델이 공정 시장 가치로 예측한 가격에 팔 것입니다. 이런 전략이 실행 가능한 전략인지는 모델이 저지르는 오류의 종류와 빈도에 강하게 의존합니다. "모델이 실제 판매 가격의 5% 내외에 90%의 경우가 맞다"는 등의 정보만 알아야 하는 것은 충분하지 않습니다. 더 많은 것을 알아야 합니다. 5% 이상 차이 나는 경우의 10% 내외는 얼마 만큼 차이가 나는지 알아야 합니다. 크게 차이가 나기도 하나요? 100% 또는 1000% 차이가 나는 경우도 있습니다. 이 경우라면 비록 드물더라도 당신을 파산시킬 수도 있습니다. 10% 내외로 차이나지 않는 90%가 그 값이 과소평가되었는지 과대평가되었는지 확인해야 합니다. 모델이 집의 실질적 가치를 과소평가하는 경향이 있다면, 뒤집거나, 너무 일찍 팔 경우 수익 기회를 자주 놓치게 될 수 있습니다. 이것은 짜증스러울 수도 있지만, 그렇게 제대로 하나면 금전을 벌어들이는 방법이 될 수도 있습니다. 그러나 모델이 집의 실제 가치를 과대평가하는 경향이 있다면, 이는 과대평가 된 자산에 너무 비싼 값을 지불하게 되어 파산할 가능성이 높습니다. 요점은 모델이 범하는 오류를 이해하고 계획하는 것이 중요하며, 그것이 얼마나 자주 발생하며 그 모습과 비용이 어떻게 되는지 이해하는 것이 중요하다는 것입니다. 이것은 당신이 의사 결정을 자동화하는 데 사용할 때, 가장 중요한 사항이며, 이것은 세계 최대의 대형 언어 모델에서부터 최악의 단일 변수 선형 회귀까지 모든 모델에 대해 참된 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 생성적 AI에 대해서는 제가 이야기했듯이, 심지어 오류를 정의하거나 설명하는 방법조차 잘 이해되지 않고, 그것을 측정하고 근거로 이야기하는 것도 어렵다. 노력은 있습니다. 이전에 제안한 대로, LLM 시스템을 사용하여 여러 출력을 생성하고, 이것이 옳거나 틀렸는지 판단하기 위해 읽은 후에 "환각률"을 계산할 수 있습니다. Vectara라는 회사는 이를 시도하려는 프로그램을 가지고 있으며 현재 "환각률 리더보드"를 유지하고 있습니다. 현재 GPT 4 Turbo의 환각률은 2.5%이고, Mistral 7B Instruct-v0.1의 환각률은 9.4%를 보고하고 있습니다.
 
@@ -169,7 +331,18 @@ ChatGPT에 "2 + 2는 무엇입니까?"라는 문자열을 입력하면, 다음�
 
 방법론적인 도전 과제로 돌아가보고 싶습니다. 저는 적어도 세 가지 어려운 부분을 보고하고 있습니다. 첫 번째로, 그리고 가장 심각한 문제는, "환각"이라는 것이 일찍이 무엇인지에 대해 폭넓은 합의가 없다는 것입니다. Vectara 리더보드는 환각의 정의에 대해 정확하게 명확하지 않습니다. 그러나 대략 다음과 같은 것으로 보입니다: 환각은 텍스트를 정확하게 요약하려는 시도 실패라고 할 수 있습니다. 이것은 할 말이 있지만, 모델을 사용하여 텍스트를 요약하지 않는 경우, 모델이 텍스트 요약을 잘못하면 어떤 빈도로 실패하는지 측정하는 것이 당신에게 도움이 되지 않을 수 있습니다. 이는 문제이나, 당신이 보는 환각 벤치마크 방법론을 신중히 이해한다면 큰 문제는 아닙니다. 문서를 읽고, 자신의 환각 정의가 벤치마크의 정의와 일치하는지 결정하고 그에 따라 진행하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The second and third problems are significantly harder to deal with. The second problem is that it is pretty much infeasible to properly perform these evaluations. To properly evaluate Vectara’s hallucination rate (and I’m sorry to keep picking on Vectara because all of the benchmarks have this identical problem), one would need to carefully read tens of thousands of paragraph-long text summaries and determine whether each one contains any factual errors. It’s just impossible to do this on an ongoing basis. What they do instead is, once they’ve generated all of the text summaries, they use another large language model to determine whether the summaries contain errors. I hope you can see the problem with this.
 
@@ -179,7 +352,18 @@ The whole point of the exercise is that we observe that LLM-based generators see
 
 So while I do believe that there are some potential ways forward on the hard problem of describing LLM output using unreliable estimators, I do not see them being incorporated into any of the widely available benchmarks. As it stands I do not believe that they are trustworthy.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째와 두 번째 문제는 별 의미가 없는 편이에요. 왜냐하면 세 번째 문제가 치명적이거든요. 이 문제는 통계 101에서 나온 것이에요. 모델이 환각을 생성하는 평균 속도인 "환각 발생률"이라는 목적이 있고, 이를 추정하기 위해 모델의 산출물 샘플에서 환각이 얼마나 자주 발생하는지 확인하는 시도를 하는 것이에요. 그러나 일반적으로 이 전략이 작동하려면 샘플이 전체 인구를 대표해야 해요. 즉, 샘플이 가능한 모든 텍스트에서 임의로 추출한 단락과 비슷하게 보여야 해요. 그리고 이런 기준 데이터 세트들은 말씀드리기에 약간 그런 모습이 아니에요. 대체로 굉장히 인공적인 방법으로 구성되고, 전반적으로 보면 ChatGPT 사용자의 무작위 팁을 샘플링하면 만날 수 있는 일반적인 텍스트와는 사뭇 달라요.
 
@@ -189,7 +373,18 @@ So while I do believe that there are some potential ways forward on the hard pro
 
 12는 작은 샘플 크기이지만 12번 시도 중 11번의 환각은 실제로 2.5%의 환각 응답 가능성에 대한 귀무 가설을 기각할 데이터가 충분했답니다. 이곳에서 더 중요한 점은 GPT를 구동하여 세계에 배포하는 경우 마주칠 환각 발생률은 이러한 환각 벤치마크 테스트 중 하나의 성능에 근거해서는 알 수 없다는 것이에요. Vectara 환각 벤치마크에서 2.5%의 환각률을 얻고 Colin Fraser 환각 벤치마크에서 92%의 환각률을 얻지만, 이 둘 중 하나를 사용한 벤치마크들이 사용하는 텍스트와 마찬가지로, 채팅 봇이 처리할 텍스트는 전혀 다를 것이기 때문에 이러한 성과는 별다른 의미가 없을 거라는 것이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 실용적인 시연으로, 나의 즐겨찾는 실제 세계 예시 중 하나인 ChatGPT 기반 봇 중 하나인 퀐크 쉐보레 AI 자동차 어시스턴트를 살펴보겠습니다. 2024년 4월에 진행한 비과학적 테스트에서, 중고 2021 쉐보레 볼트를 찾고 있다고 말했을 때, 4번 시도 중 4번 (100%) "죄송합니다. 현재 새 차량만 있습니다. 관심 있을만한 새 차량이 있나요?" 라고 응답하는 것을 확인했습니다. 그들의 웹사이트에는 중고 2021 쉐보레 볼트가 있는 것을 분명히 표시하고 있습니다.
 
@@ -199,7 +394,18 @@ So while I do believe that there are some potential ways forward on the hard pro
 
 ![2024-05-18-HallucinationsErrorsandDreams_12](/assets/img/2024-05-18-HallucinationsErrorsandDreams_12.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 챗봇은 GPT 3.5 기술을 기반으로 구축되었어요. 환각율 리더보드에 따르면 3.5%의 환각율이 있어야 하지만, 저는 3.5%보다 훨씬 더 자주 환각을 경험하고 있어요. 그래서 Quirk Chevrolet은 고객에게 거짓말을 하기를 얼마나 자주 기대해야 할까요? 저는 이 부분에서 제시한 데이터로는 그것을 어떻게 알 수 없고, 그게 핵심이에요. 나쁜 결과물의 빈도는 그들이 나쁜 결과물로 간주하는 기준과 고객이 채팅 창에 입력하는 텍스트의 종류에 완전히 의존합니다. 표준화된 기준은 그것에 대한 답변을 제공할 수 없어요.
 
@@ -209,7 +415,18 @@ So while I do believe that there are some potential ways forward on the hard pro
 
 당신의 제품이 실제로 어떤 것인지에 대해 결정하는 것이 실제로 모든 것을 훨씬 쉽게 만들어요. 생성형 AI의 특정 사용 사례에 대해 어떤 신중함이나 우려가 있어요. ChatGPT & 기타들은 특별히 어떤 특정 목적을 위한 것은 아니에요. 그들은 모든 것을 위한 것이에요. 이겁니다. 무엇이 좋은 출력물인지에 대한 기준을 만들기가 정말 어려워요. 하지만 우리가 ChatGPT 랩핑을 고객 서비스 요원으로 활용한다면, 이제 우리는 원하는 출력물에 대해 몇 가지 범주를 정할 수 있어요. 우리는 그것이 가게에 대한 사실을 정확히 대변해주길 원해요. 우리는 예의 바르게 대해주길 원해요. 우리는 경쟁사를 권장하지 않길 원해요. 목록의 목록을 펼치는 방법에 대한 질문에 대해 틀린 해결책을 제시하길 원하지 않지만, 또한 올바른 해결책을 제시하길 원하지도 않아요. 이렇게 말할 만한 건 "저는 고객 서비스 챗봇이에요. 거기에 대해 얘기할 것이에요. 고객 서비스에 대해 이야기해요." 이것은 사실 정말 좋은 소식이에요. 왜냐하면 이 레이블링 작업을 수행하기 위해 여러분이 실제로 리스트의 목록을 평평하게 하는 올바른 방법을 아셔야 하는 것이 아니기 때문이에요. 원하는 행동을 제한하면 생성하고자 하는 출력물 주변에 더 날카로운 경계를 설정할 수 있게 돼요. 이는 당신이 원하는 출력물의 종류에 대한 훌륭한 판단을 가능하게 해 줄 것이고, 당신이 필요로 하는 방식으로 작동할지 여부를 더 잘 파악할 수 있도록 할 것이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 간단하게 들리게 하고 싶지는 않아요. 어려워요. 그리고 개별적인 평가를 수행하기 위한 체계적인 모범 사례 세트를 개발할 여지가 많다고 생각해요. (얼마나 많은 예제가 필요한가요? 예제 텍스트를 합성적으로 생성할 수 있나요? LLM으로 평가할 수 있나요? 기존 상호 작용에서 어떻게샘플링하여 더 큰 데이터 세트를 구축할 수 있나요? 이것이 파인튜닝과 어떤 관련이 있나요? 등등) 하지만 이것이 정말로 의존해야 하는 유형의 평가입니다. 일반적인 벤치마크는 봇이 당신에게 중요한 방식으로 환각할지에 대해 거의 아무것도 알려주지 않을 것입니다.
 
@@ -219,7 +436,18 @@ So while I do believe that there are some potential ways forward on the hard pro
 
 ![이미지](/assets/img/2024-05-18-HallucinationsErrorsandDreams_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주장에 따르면, 모델이 거의 똑같은 이미지를 생성했지만 Kirby에 이빨이 없는 것이 맞고 사실적이며 환각이 없을 것이라고 합니다. 그러나 나는 그 이미지에서 몇 가지 다른 사실적인 문제를 발견할 수 있다고 생각해요. Kirby 왼쪽 뺨에 있는 분홍색 반점은 오른쪽 뺨보다 약간 더 어두워요. Kirby는 보통 이빨이 없는 캐릭터지만 Donkey Kong은 보통 이빨이 있는 편인데, 이 이미지에서는 이빨이 없어요. 게다가, 요청 사항은 Kirby가 Donkey Kong을 삼키도록 하는 것으로 보이지만, 저에게는 Donkey Kong이 Kirby의 입 안에서 쉬고 있는 것 같아요.
 
@@ -229,7 +457,18 @@ So while I do believe that there are some potential ways forward on the hard pro
 
 중요한 것은 결과물을 어떻게 활용할 것인가입니다. 모델의 목적이 무엇인가요? 이것이 결과물이 좋은지 나쁜지를 결정하는 방법이에요. 모델의 작업이 닌텐도의 캐릭터 디자인 기준을 준수하는 것이라면 이 경우에는 분명히 실패했다고 볼 수 있어요. 해당 작업에 대해 말하자면, 아마도 여기서 이빨은 이 문맥에서 환각으로 볼 수 있을 것이에요. 반면에 모델의 작업이 일반인이 해당 요청과 일치한다고 할 수 있는 이미지를 생성하는 것이라면 아마도 성공했다고 볼 수 있어요. 만약 나에게 그 이미지를 간단히 설명하라고 한다면, Kirby가 Donkey Kong을 삼키는 이미지라고 말할 수 있을 것이에요. 그러나 모델의 작업이 다른 회사의 지적 재산을 재생산하는 것을 피하는 것이라면, 예를 들어 Bing 이미지 생성기의 작업이라고 한다면, 이 이미지는 또 다른 종류의 환각이라고 볼 수 있을 것이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 사람들이 Google이 Gemini이 생성한 이미지를 너무 다양하게 느껴서 실망했었는데, 사과 글에서 그들은 "환각 문제"에 언급했어요.
 

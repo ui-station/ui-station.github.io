@@ -3,13 +3,12 @@ title: "하드웨어 보안의 중요성은 무엇인가요"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhyHardwareSecurity_0.png"
 date: 2024-05-20 19:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WhyHardwareSecurity_0.png
 tag: Tech
 originalTitle: "Why Hardware Security….?"
 link: "https://medium.com/@abhijithboppe/why-hardware-security-a9c07a05ebf5"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@abhijithboppe/why-hardware-security-a9c07a05ebf5"
 
 본 내용은 이전에 작성한 "하드웨어 보안의 필요성" 블로그 글의 연장선입니다. 아직 확인하지 않으셨다면, 해당 글을 먼저 읽어보시기 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 하드웨어 공격
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@abhijithboppe/why-hardware-security-a9c07a05ebf5"
 
 이 시나리오에서 게임 콘솔의 지적 재산이 침해되었지만, 공격자는 기기에 대한 접근이 아니라 사용자가 자신의 장치를 해킹하기를 원할 때 누구든지 공격을 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## IoT 원격 모니터링 카메라
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@abhijithboppe/why-hardware-security-a9c07a05ebf5"
 
 ## TV with USB interface:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공격자가 단지 몇 초 동안 USB 장치를 꽂기만 하면 TV에 악성 코드를 쉽게 삽입할 수 있다고 상상해보세요. 이 취약점으로 인해 공격자는 TV 화면에 원하는 그림을 투사하고자 할 수 있습니다.
 

@@ -3,13 +3,12 @@ title: "기본 웹 애플리케이션 아키텍처와 회고 핵심 개념 및 �
 description: ""
 coverImage: "/assets/img/2024-06-23-ReflectionsandBasicWebApplicationArchitecture_0.png"
 date: 2024-06-23 00:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ReflectionsandBasicWebApplicationArchitecture_0.png
 tag: Tech
 originalTitle: "Reflections and Basic Web Application Architecture"
 link: "https://medium.com/@blaizebodda/reflections-and-basic-web-application-architecture-1d8ec693ec75"
 ---
-
 
 <img src="/assets/img/2024-06-23-ReflectionsandBasicWebApplicationArchitecture_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@blaizebodda/reflections-and-basic-web-application-arc
 
 이번 주에 웹 애플리케이션 아키텍처의 기본을 배우고, 배운 내용을 강화하기 위해 간단한 설정을 디자인하는 데 많은 시간을 보냈어요. AWS와 어떻게 관련이 있는지 알아볼까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 웹 애플리케이션 아키텍처
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@blaizebodda/reflections-and-basic-web-application-arc
 
 ![웹 애플리케이션 아키텍처 다이어그램](/assets/img/2024-06-23-ReflectionsandBasicWebApplicationArchitecture_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 용어 설명
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@blaizebodda/reflections-and-basic-web-application-arc
 
 프론트엔드: 웹사이트나 앱의 일부로, 사용자가 보고 상호 작용하는 부분을 말합니다. 화면에 나타나는 모든 것인 버튼, 그림, 텍스트, 메뉴 등을 포함합니다. HTML, CSS, JavaScript와 같은 도구를 사용하여 멋지게 보이고 매끈하게 작동하도록 만들어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도메인 이름 시스템(Domain Name System)은 전화번호부와 비슷해요. www.amazon.com 같은 웹사이트를 방문하려고 할 때 브라우저에 입력하면 DNS가 빠르게 웹사이트가 저장된 위치(IP 주소)를 찾아내고 컴퓨터에게 어떻게 찾아갈 지 알려줘요. 이렇게 하면 복잡한 주소를 알 필요 없이 원하는 웹사이트에 방문할 수 있어요. AWS Route 53은 AWS가 제공하는 DNS 서비스에요.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@blaizebodda/reflections-and-basic-web-application-arc
 
 서버는 인터넷을 통해 다른 컴퓨터와 정보를 저장하고 공유하는 강력한 컴퓨터에요. 폰에서 웹사이트나 앱을 사용할 때 실제로 세계 어딘가의 서버에 연결하게 될 거예요. 이 서버는 온라인에서 보거나 상호작용하는 모든 사진, 비디오, 텍스트 등을 저장해요. 인터넷 상의 모든 것이 원할하고 빠르게 작동할 수 있도록 노력하며, 좋아하는 웹사이트와 앱에 언제든지 접속할 수 있도록 해줘요. AWS는 클라이언트가 활용할 수 있도록 전 세계의 큰 데이터 센터에 EC2 서버를 구축해 두고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터베이스: 웹 애플리케이션 데이터베이스는 사용자 이름, 비밀번호, 사진 등 웹 사이트가 기억해야 하는 모든 중요한 정보를 보관하는 디지털 컨테이너와 같습니다. 웹 사이트에 가입하거나 댓글을 게시할 때 이 정보는 데이터베이스에 저장되어, 웹 사이트가 다음 방문 때에도 해당 정보를 기억할 수 있습니다. 데이터베이스는 웹 사이트의 모든 것이 원할하게 작동하고 정보가 안전하고 조직적으로 유지되도록 보장합니다. AWS RDS(관계형 데이터베이스 서비스)가 이러한 예시 중 하나입니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@blaizebodda/reflections-and-basic-web-application-arc
 
 이번 주 중요한 부분 중 하나는 웹 애플리케이션 아키텍처를 이해하는 데 헌신했습니다. 웹 사이트가 원활하게 작동하도록 보장하는 설계도와 같다는 것을 배웠어요. 이는 세 가지 핵심 부분으로 구성되어 있어요: 사용자가 버튼과 시각적 요소와 상호작용하는 프론트엔드, 로직 처리와 배경에서의 처리를 담당하는 백엔드, 모든 웹 사이트 정보를 안전하게 저장하는 데이터베이스가 있어요. 이러한 구성 요소는 협력하여 통일된 사용자 경험을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미래를 기대하며, 웹 애플리케이션 아키텍처의 복잡성에 더 깊이 파고들기를 기대하고 있어요. 다음 주에는 이러한 기본 개념이 AWS 서비스와 어떻게 통합되어 내 이해력과 기술 세트를 더욱 향상시키는지 살펴볼 거에요. 클라우드 엔지니어링의 매혹적인 세계에 대한 더 많은 통찰력을 기대해 주세요!
 

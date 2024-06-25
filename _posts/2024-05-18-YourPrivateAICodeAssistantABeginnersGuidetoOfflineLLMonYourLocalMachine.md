@@ -3,13 +3,12 @@ title: "당신만의 개인 AI 코드 어시스턴트 로컬 머신에서 오프
 description: ""
 coverImage: "/assets/img/2024-05-18-YourPrivateAICodeAssistantABeginnersGuidetoOfflineLLMonYourLocalMachine_0.png"
 date: 2024-05-18 21:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-YourPrivateAICodeAssistantABeginnersGuidetoOfflineLLMonYourLocalMachine_0.png
 tag: Tech
 originalTitle: "Your Private AI Code Assistant: A Beginner’s Guide to Offline LLM on Your Local Machine"
 link: "https://medium.com/@jaroslav-pantsjoha/your-private-ai-playground-a-beginners-guide-to-offline-models-on-your-local-machine-7a078f70bbef"
 ---
-
 
 # 당신의 개인 AI 코딩 어시스턴트 — 인터넷 연결이 필요 없음
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@jaroslav-pantsjoha/your-private-ai-playground-a-begin
 
 이 비교적 빠른 가이드는 클라우드 서비스로 데이터가 업로드되지 않는 개인용 로컬 오프라인 대규모 언어 모델 (LLM)을 시작하는 방법을 설명합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이 프로세스가 작동하는 방식부터 시작해서 모델을 선택하는 데 도움을 드립니다.
 - 노트북에 구성하는 방법을 설명해 드립니다.
@@ -31,7 +41,18 @@ link: "https://medium.com/@jaroslav-pantsjoha/your-private-ai-playground-a-begin
 
 하지만, 여기서 얼마 후에 우리는 공감을 얻을 수 있을 거라고 확신합니다. Google Astra 또는 GPT-4의 실제 리테일 사용이 가능해질 때에 대해 별도로 다룰 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘 우리는 개인용 개인 AI 어시스턴트를 찾고 있죠. 개인 정보를 존중하며 인터넷 연결이 없어도 마법을 부리는 일이 가능한 어시스턴트 말이에요. 이제 과학 소설이 아니에요. 노트북에서 강력한 AI 모델을 직접 실행하는 것은 가능할 뿐만 아니라 놀랍게도 쉽답니다.
 
@@ -41,7 +62,18 @@ link: "https://medium.com/@jaroslav-pantsjoha/your-private-ai-playground-a-begin
 
 # 여기서 시작해보세요 — 기본 사항을 먼저 알아봐요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-YourPrivateAICodeAssistantABeginnersGuidetoOfflineLLMonYourLocalMachine_1.png)
 
@@ -51,8 +83,18 @@ link: "https://medium.com/@jaroslav-pantsjoha/your-private-ai-playground-a-begin
 
 이 글을 쓰는 시점에서 Huggingface의 LLM Repo에는 658,281개의 모델이 있어요. 맞아요, 잘 이해하셨어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-YourPrivateAICodeAssistantABeginnersGuidetoOfflineLLMonYourLocalMachine_2.png)
 
@@ -62,8 +104,18 @@ It’s mostly found on Huggingface, but there are other repos like Kaggle — Th
 
 Huggingface Does have handy leaderboards, where you can pick the “Best Performing Model for it’s purpose” be it for chat, reasoning, Coding and other use cases, may want to poke around here to have an idea of what model you may want to pick for You use case — perhaps even in the future.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-YourPrivateAICodeAssistantABeginnersGuidetoOfflineLLMonYourLocalMachine_3.png)
 
@@ -74,7 +126,18 @@ Huggingface Does have handy leaderboards, where you can pick the “Best Perform
 
 ## 들어보세요. 주의해야 할 점이 있어요. 쉽거나 어려울 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생성적(오프라인) AI 모델의 세계에서 "최고"를 찾는 것은 단순히 벤치마킹에서 성능이 우수한 것을 선택하는 것만큼 간단하지 않습니다. 성능과 기계가 처리할 수 있는 것 사이의 적절한 균형을 찾는 것입니다.
 
@@ -84,7 +147,18 @@ Huggingface Does have handy leaderboards, where you can pick the “Best Perform
 
 - 빠른 JavaScript 스니펫을 생성하기 위한 가벼운 모델을 찾고 있습니까, 아니면 복잡한 작업을 위한 보다 강력한 모델을 찾고 있습니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kaggle 및 Hugging Face와 같은 리소스는 모델 기능 및 요구 사항에 대한 자세한 정보를 제공합니다. 평가 결과를 찾아보고 모델 크기 및 계산 요구 사항을 고려할 수 있습니다.
 
@@ -94,7 +168,18 @@ Kaggle 및 Hugging Face와 같은 리소스는 모델 기능 및 요구 사항�
 
 ## 1. Ollama로 시작해보세요. 다운로드하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LM Studio와 유사하지만 내 개인 의견으로 Ollama는 훨씬 간단하고 깔끔하다고 생각해요.
 
@@ -105,7 +190,18 @@ LM Studio와 유사하지만 내 개인 의견으로 Ollama는 훨씬 간단하�
 
 ## 2. IDE에 로컬 모델 LLM 확장프로그램 다운로드하기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 저는 VSCode를 사용하고 있어요. Continue.dev를 좋아하며, 또는 Cody LLM을 사용할 수도 있어요. 이것 또한 시작하기 쉽고 깔끔해요.
 
@@ -115,7 +211,18 @@ LM Studio와 유사하지만 내 개인 의견으로 Ollama는 훨씬 간단하�
 
 ![image2](/assets/img/2024-05-18-YourPrivateAICodeAssistantABeginnersGuidetoOfflineLLMonYourLocalMachine_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 완료
 
@@ -125,7 +232,18 @@ LM Studio와 유사하지만 내 개인 의견으로 Ollama는 훨씬 간단하�
 
 # 마무리. 끝났고, 설정되었으니 — 행운을 빕니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상상해보세요 — 창의적인 텍스트 생성, 빠른 코드 작성, 아이디어 떠올리기, 심지어 매력적인 대화를 나누기까지, 모두 클라우드로 데이터를 보내지 않아도 가능합니다. 이것이 오프라인 생성 AI 모델을 실행하는 마법입니다.
 
@@ -138,7 +256,19 @@ LM Studio와 유사하지만 내 개인 의견으로 Ollama는 훨씬 간단하�
 
 도움이 되었으면 좋겠습니다. LinkedIn에서 #GenAI의 #지수 및 #혁신적 시대에 대한 나의 생각을 공유해주시기 바랍니다. 좋아요, 공유하기, 구독하기, 팔로우해주시면 감사하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # OwnYourAI를 통해 AI를 소유하여 당신과 조화를 이루세요.
+
 JP

@@ -10,7 +10,6 @@ originalTitle: "Mapping Entities to DTOs and vice versa in Java"
 link: "https://medium.com/thefreshwrites/mapping-entities-to-dtos-and-vice-versa-in-java-fe126f6bb6b2"
 ---
 
-
 ![Mapping entities to DTOs in Java](/assets/img/2024-05-23-MappingEntitiestoDTOsandviceversainJava_0.png)
 
 In Java, entities and DTOs are two different types of classes often used together. Entities are used to represent data in the database, while DTOs are used to represent data that is sent to or received from a client.
@@ -19,8 +18,18 @@ To map data from an entity to a DTO, you need to define a mapping between the at
 
 ## Manual mapping
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수동 매핑은 엔티티를 DTO로 매핑하는 가장 간단한 방법입니다. 이 접근 방식에서는 엔티티의 속성에서 DTO의 속성으로 값을 복사하는 코드를 작성합니다.
 
@@ -38,7 +47,18 @@ public CustomerDto toDto(Customer customer) {
 
 이 방법은 간단하고 유연하지만, 특히 복잡한 엔티티나 많은 매핑이 있는 경우에는 반복적이고 오류가 발생할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 자동 매핑
 
@@ -48,7 +68,18 @@ public CustomerDto toDto(Customer customer) {
 
 예를 들어, 다음 코드는 Customer 엔티티의 속성을 CustomerDTO의 속성에 매핑하는 매핑 규칙을 정의합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Mapper
@@ -72,7 +103,18 @@ public interface CustomerMapper {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ModelMapper라고 하는 강력한 라이브러리도 있어요. 이 라이브러리는 객체 매핑 프로세스를 간단하게 해주며 매핑 동작을 사용자 정의하는 데 많은 유연성을 제공해요.
 
@@ -88,11 +130,20 @@ Java 프로젝트에서 ModelMapper를 사용하려면 프로젝트에 ModelMapp
 
 만약 Gradle을 사용 중이라면 build.gradle 파일에 다음을 추가하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 implementation 'org.modelmapper:modelmapper:2.4.2'
-
 
 프로젝트에 ModelMapper 라이브러리를 추가한 후, 서로 다른 구조를 갖는 두 개의 객체 간에 매핑을 시작할 수 있습니다.
 
@@ -124,7 +175,18 @@ public class Main {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 예에서는 User 및 UserDTO라는 두 개의 다른 구조를 갖는 두 개의 객체가 있습니다. User 객체에는 이름(name)과 나이(age) 필드가 있고, UserDTO 객체에는 풀 네임(fullName)과 사용자 나이(userAge) 필드가 있습니다. User 객체를 UserDTO로 매핑하기 위해 ModelMapper 인스턴스를 사용합니다. map() 메서드는 소스 객체와 대상 객체 클래스 두 가지 인수를 사용합니다.
 
@@ -134,7 +196,18 @@ ModelMapper를 사용하고 사용자화하는 방법에 대한 자세한 안내
 
 # 따라서, 어떤 접근 방식을 선택해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 엔티티를 DTO로 매핑하는 가장 좋은 방법은 여러 요소에 따라 다릅니다. 일반적으로, 간단한 클래스나 매핑이 적은 경우 수동 매핑이 좋은 선택이 됩니다. 복잡한 클래스나 많은 매핑이 필요한 경우 자동 매핑이 좋은 선택입니다.
 
@@ -146,7 +219,18 @@ ModelMapper를 사용하고 사용자화하는 방법에 대한 자세한 안내
 
 최종적으로, 엔티티를 DTO로 매핑하는 가장 좋은 방법은 애플리케이션의 특정 요구사항을 충족시키는 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 추가 고려 사항
 
@@ -158,7 +242,18 @@ ModelMapper를 사용하고 사용자화하는 방법에 대한 자세한 안내
 
 이러한 사항들을 따르면, 매핑 코드가 정확하고 효율적임을 보장할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

@@ -3,13 +3,12 @@ title: "컨테이네라이제이션의 힘을 발휘하기 데이터 과학자�
 description: ""
 coverImage: "/assets/img/2024-06-19-UnlockingthePowerofContainerizationWhyDataScientistsNeedtoLearnDockersandKubernetes_0.png"
 date: 2024-06-19 12:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-UnlockingthePowerofContainerizationWhyDataScientistsNeedtoLearnDockersandKubernetes_0.png
 tag: Tech
 originalTitle: "Unlocking the Power of Containerization: Why Data Scientists Need to Learn Dockers and Kubernetes?"
 link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-why-data-scientists-need-to-learn-dockers-and-kubernetes-b112456c62fc"
 ---
-
 
 데이터 과학 분야가 계속 발전함에 따라, 전문가들이 최신 도구와 기술에 대해 최신 정보를 학습하는 것이 점점 더 중요해지고 있습니다. 이 중 가장 중요한 두 가지는 Docker와 Kubernetes입니다. 이 두 도구는 소프트웨어 응용 프로그램을 개발하고 배포하는 방식을 변화시켰습니다. 그렇다면 이 도구들은 정확히 무엇이고, 데이터 과학자에게 어떤 이점을 제공할까요?
 
@@ -19,24 +18,35 @@ link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-w
 
 ## 목차:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 도커에 대한 포괄적인 소개
-1.1. 도커란 무엇인가요?
-1.2. 컨테이너란 무엇인가요?
-1.3. 도커 도구 및 용어
-1.4. 도커의 장점
+  1.1. 도커란 무엇인가요?
+  1.2. 컨테이너란 무엇인가요?
+  1.3. 도커 도구 및 용어
+  1.4. 도커의 장점
 - 쿠버네티스에 대한 포괄적인 소개
-2.1. 쿠버네티스란 무엇인가요?
-2.2. 쿠버네티스를 통한 컨테이너 오케스트레이션
-2.3. 쿠버네티스의 역할은 무엇인가요?
-2.4. 쿠버네티스의 장점
+  2.1. 쿠버네티스란 무엇인가요?
+  2.2. 쿠버네티스를 통한 컨테이너 오케스트레이션
+  2.3. 쿠버네티스의 역할은 무엇인가요?
+  2.4. 쿠버네티스의 장점
 - 도커와 쿠버네티스의 차이
 - 데이터 과학자로서 쿠버네티스와 도커를 왜 배워야 할까요?
-4.1. 데이터 과학자로서 도커를 배워야 하는 이유는 무엇인가요?
-4.2. 데이터 과학자가 데브옵스 팀이 있는 상황에서 도커를 배워야 하는가
-4.3. 데이터 과학자로서 도커를 배우는 장점은?
-4.4. 데이터 과학자가 쿠버네티스를 배워야 하는가?
+  4.1. 데이터 과학자로서 도커를 배워야 하는 이유는 무엇인가요?
+  4.2. 데이터 과학자가 데브옵스 팀이 있는 상황에서 도커를 배워야 하는가
+  4.3. 데이터 과학자로서 도커를 배우는 장점은?
+  4.4. 데이터 과학자가 쿠버네티스를 배워야 하는가?
 
 만약 무료로 데이터 과학 및 기계 학습을 공부하고 싶다면, 다음 자료를 확인해보세요:
 
@@ -46,7 +56,18 @@ link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-w
 
 데이터 과학 및 인공 지능 분야에서 경력을 시작하고 싶지만 어떻게 시작해야 할지 모르겠다면, 데이터 과학 멘토링 세션과 장기적인 경력 멘토링을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 멘토링 세션: [링크](https://lnkd.in/dXeg3KPW)
 - 장기 멘토링: [링크](https://lnkd.in/dtdUYBrM)
@@ -57,7 +78,18 @@ link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-w
 
 ![이미지](/assets/img/2024-06-19-UnlockingthePowerofContainerizationWhyDataScientistsNeedtoLearnDockersandKubernetes_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1.1. 도커란 무엇인가요?
 
@@ -67,7 +99,18 @@ link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-w
 
 이러한 컨테이너 이미지들은 Kubernetes, Docker Swarm, Mesos 또는 HashiCorp Nomad와 같은 컨테이너를 지원하는 어떤 플랫폼에서도 실행할 수 있습니다. 도커의 플랫폼은 개발자가 이러한 컨테이너 이미지를 생성하고 관리하기 쉽도록하며, 다양한 환경에서 응용 프로그램을 빌드하고 배포하는 프로세스를 간소화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커는 컨테이너화된 애플리케이션을 패키징하고 배포하는 효율적인 수단을 제공하지만, 대규모로 컨테이너를 관리하고 실행하는 것은 상당한 어려움을 야기할 수 있습니다. 여러 서버 또는 클러스터 간에 컨테이너를 조정하고 예약하고, 다운타임을 유발하지 않고 애플리케이션을 배포하며, 컨테이너 건강 상태를 모니터링하는 것만 몇 가지 복잡성 중 일부에 해당합니다.
 
@@ -77,8 +120,18 @@ link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-w
 
 ## 1.2. 컨테이너란 무엇인가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-UnlockingthePowerofContainerizationWhyDataScientistsNeedtoLearnDockersandKubernetes_2.png)
 
@@ -88,8 +141,18 @@ link: "https://medium.com/gitconnected/unlocking-the-power-of-containerization-w
 
 이 격리는 가상화 및 프로세스 격리 기술을 사용하여 가능하며, 이를 통해 컨테이너는 호스트 운영 체제의 하나의 인스턴스의 자원을 공유하면서 응용 프로그램을 실행하는 안전하고 예측 가능한 환경을 제공합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너는 소프트웨어 개발 및 배포에서 널리 사용되는데, 응용 프로그램 관리를 간소화하고 확장성을 향상시키며 인프라 비용을 줄일 수 있기 때문에 매력적입니다.
 
@@ -99,7 +162,18 @@ Linux 커널은 프로세스 격리 및 가상화 기능을 제공하여 컨테�
 
 결과적으로 컨테이너 기술은 VM의 모든 기능과 이점(응용 프로그램 격리, 비용 효율적인 확장성 및 처분 가능성을 포함)을 제공하는 동시에 중요한 추가 혜택을 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 더 가벼운 무게: 컨테이너는 필요한 운영 체제 프로세스와 종속성만 포함하여 애플리케이션 코드를 실행하는 반면, 가상 머신(VM)과는 큰 차이가 있습니다. 이로 인해 컨테이너는 일반적으로 메가바이트로 측정되며, VM은 기가바이트 저장 공간을 필요로 할 수 있는 반면, 컨테이너는 훨씬 작습니다. 또한, 컨테이너는 하드웨어 리소스를 더 효율적으로 활용하며 VM보다 훨씬 빨리 시작할 수 있습니다.
 
@@ -114,7 +188,18 @@ Linux 커널은 프로세스 격리 및 가상화 기능을 제공하여 컨테�
 - Docker Image: Docker 이미지는 실행 가능한 애플리케이션 소스 코드뿐만 아니라 모든 도구, 라이브러리 및 종속성을 포함하고 있습니다. Docker 이미지를 실행하면 컨테이너의 한 인스턴스(또는 여러 인스턴스)가 됩니다. Docker 이미지를 처음부터 만들 수 있지만 대부분의 개발자는 이러한 이미지를 일반적인 저장소에서 다운로드합니다. 동일한 베이스 이미지로부터 여러 Docker 이미지를 만들고 그들의 스택에서 일반적인 사항을 공유할 수 있습니다.
 - Docker 컨테이너: Docker 컨테이너는 Docker 이미지의 실시간 실행 인스턴스입니다. Docker 이미지는 읽기 전용 파일이지만, 컨테이너는 실행 가능한 일회성 내용입니다. 사용자는 이와 상호 작용할 수 있으며, 관리자는 Docker 명령어를 사용하여 설정 및 조건을 조정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커는 개발자가 간단한 명령어를 사용하여 이러한 네이티브 컨테이너화 기능에 액세스할 수 있도록 하고, 작업을 절약하는 응용 프로그램 프로그래밍 인터페이스(API)를 통해 자동화할 수 있습니다. 도커는 다음을 제공합니다:
 
@@ -129,7 +214,18 @@ Linux 커널은 프로세스 격리 및 가상화 기능을 제공하여 컨테�
 
 ![이미지](/assets/img/2024-06-19-UnlockingthePowerofContainerizationWhyDataScientistsNeedtoLearnDockersandKubernetes_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2.1. 쿠버네티스란?
 
@@ -139,7 +235,18 @@ Google에서 최초 개발된 쿠버네티스는 수십억 개의 컨테이너�
 
 Google에 따르면 쿠버네티스는 복잡한 분산 시스템의 배포와 관리를 단순화하면서 컨테이너화의 장점을 활용하여 리소스 활용을 최적화하는 데 설계되었습니다. 쿠버네티스의 널리 퍼지는 채택으로 인해 제품 환경에서 컨테이너화된 응용 프로그램의 관리 및 확장에 중요한 도구로 부상했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쿠버네티스는 독립적인 기능이 있는 각각의 컨테이너를 실행하는 Docker와는 달리, 하나의 머신에서 여러 컨테이너 그룹을 관리하여 네트워크 오버헤드를 줄이고 자원 이용을 최적화할 수 있는 실용적인 해결책을 제공합니다. 예를 들어, 컨테이너 세트는 응용 프로그램 서버, Redis 캐시, 그리고 SQL 데이터베이스로 구성될 수 있습니다.
 
@@ -149,7 +256,18 @@ Google에 따르면 쿠버네티스는 복잡한 분산 시스템의 배포와 �
 
 ## 2.2. 쿠버네티스를 사용한 컨테이너 오케스트레이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너의 보급으로 기업들은 수백 개나 수천 개의 컨테이너를 가지게 될 수 있습니다. 이는 운영 팀이 컨테이너 배포, 네트워킹, 확장성 및 가용성을 자동화하는 것이 중요하다는 것을 필수적으로 만듭니다. 이것이 컨테이너 오케스트레이션 시장의 출현으로 이어졌습니다.
 
@@ -159,7 +277,18 @@ Google에 따르면 쿠버네티스는 복잡한 분산 시스템의 배포와 �
 
 ## 2.3. Kubernetes가 하는 일은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kubernetes는 애플리케이션 수명 주기 전반에 걸쳐 컨테이너 관련 작업을 스케줄하고 자동화합니다. 이러한 작업에는 다음이 포함됩니다:
 
@@ -177,7 +306,18 @@ Kubernetes는 애플리케이션 수명 주기 전반에 걸쳐 컨테이너 관
 - 인프라 추상화: Kubernetes는 배정된 리소스를 대신하여 관리하고 응용프로그램 코드 작성에 집중할 수 있도록 해줍니다. 이를테면 컴퓨팅, 네트워킹 또는 스토리지의 기본 인프라 대신에 개발자가 애플리케이션 코드를 작성할 수 있습니다.
 - 서비스 상태 모니터링: Kubernetes는 운영 환경을 지속적으로 모니터링하고 의도된 구성과 일치 여부를 확인합니다. 서비스에 대한 건강 검사를 자동으로 수행하고 실패나 중단이 발생한 경우 컨테이너를 다시 시작합니다. Kubernetes는 서비스가 가동되어 있을 때에만 서비스를 노출합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Docker & Kubernetes의 차이점
 
@@ -187,7 +327,18 @@ Docker와 Kubernetes는 모두 컨테이너화 생태계에서 중요한 구성 
 
 Docker는 컨테이너화에 대해 직관적이고 효과적인 방법을 제공하는 반면, Kubernetes는 자동 스케일링, 자가 치유, 컨테이너 배포 등과 같은 고급 기능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4. 데이터 과학자로서 Kubernetes 및 Docker를 배워야 하는 이유
 
@@ -197,7 +348,18 @@ Docker는 컨테이너화에 대해 직관적이고 효과적인 방법을 제�
 
 상상해보세요. 로컬 머신에서 완벽하게 작동하는 머신러닝 솔루션이 개발되었다고 가정해봅시다. 그러나 이를 다른 운영 체제나 라이브러리 버전이 다른 서버에 배포하려고 하면 코드가 예상대로 작동하지 않을 수 있습니다. 이는 개발자들에게는 좌절스러운 경험이 될 수 있지만, 이는 흔히 발생하는 일입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문제의 해결책은 Docker를 사용하는 것입니다. Docker를 사용하면 프로젝트에 일관성 있고 정확한 환경을 정의할 수 있습니다. Docker를 사용하면 코드를 모든 필요한 종속성과 라이브러리와 함께 패키징하여 어느 기기에서나 실행할 수 있는 컨테이너로 만들 수 있습니다. 이는 대상 배포 환경에 관계없이 코드가 원활하고 일관되게 실행되도록 보장합니다.
 
@@ -207,7 +369,18 @@ Docker는 컨테이너화에 대해 직관적이고 효과적인 방법을 제�
 
 ## 4.3. 데이터 과학자로서 Docker를 배우는 이점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 과학자로서 Docker를 배우는 것은 여러 가지 이점을 제공합니다:
 
@@ -220,7 +393,18 @@ Docker는 컨테이너화에 대해 직관적이고 효과적인 방법을 제�
 
 데이터 과학자가 Kubernetes를 배워야 하는지에 대한 의견은 분분할 수 있지만, 컨테이너화 및 Kubernetes와 같은 오케스트레이션 기술에 대한 기본적인 이해를 갖는 것이 유익하다고 널리 인정받고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 이유 중 하나는 데이터 과학자가 데브옵스 및 인프라 팀과 더 잘 소통할 수 있도록 도울 수 있다는 것입니다. 쿠버네티스에 대한 기본적인 이해를 갖고 있는 데이터 과학자는 모델 및 응용 프로그램을 프로덕션 환경에 배포하기 위한 인프라 요구 사항을 이해할 수 있습니다. 이는 데이터 과학자와 다른 팀 간의 원활한 소통과 협력을 촉진하여 더 효율적인 워크플로 및 빠른 배포 시간을 이끌어낼 수 있습니다.
 
@@ -230,7 +414,18 @@ Docker는 컨테이너화에 대해 직관적이고 효과적인 방법을 제�
 
 종합하면, 데이터 과학자가 쿠버네티스 전문가가 될 필요는 없을지라도 이 기술에 대한 기본적인 이해를 갖는 것은 다른 팀과 더 효과적으로 작업하고 모델 및 응용 프로그램을 더 효율적으로 배포하는 데 도움이 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 주제에 대해 더 많은 정보를 보려면 다음 블로그 포스트를 참조하세요:
 
@@ -245,7 +440,18 @@ Docker는 컨테이너화에 대해 직관적이고 효과적인 방법을 제�
 - Kubernetes vs. Docker: 포괄적인 비교
 - 데이터 과학을 위한 도커: 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 글을 좋아하고 제를 지원하고 싶으시다면, 반드시:
 
@@ -258,7 +464,18 @@ Docker는 컨테이너화에 대해 직관적이고 효과적인 방법을 제�
 
 데이터 과학과 인공지능 분야에서 경력을 시작하고자 하지만 방법을 모르는 경우. 데이터 과학 멘토링 세션과 장기적인 경력 멘토링을 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 멘토링 세션: [링크](https://lnkd.in/dXeg3KPW)
 - 장기 멘토링: [링크](https://lnkd.in/dtdUYBrM)

@@ -3,13 +3,12 @@ title: "Git-활성화된 패브릭 워크스페이스 사용을 위한 최상의
 description: ""
 coverImage: "/assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_0.png"
 date: 2024-05-20 18:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_0.png
 tag: Tech
 originalTitle: "Best Practices for Using Git-Enabled Fabric Workspaces"
 link: "https://medium.com/@mjtpena/best-practices-for-using-git-enabled-fabric-workspaces-8bffd92d4bd5"
 ---
-
 
 효율적으로 데이터 파이프라인을 관리하는 것은 원활한 개발, 테스트 및 배포 프로세스를 보장하기 위한 중요한 요소입니다. Microsoft Fabric 작업 공간과 Git을 통합하면 이러한 파이프라인을 효과적으로 관리할 수 있습니다. 데이터 아키텍트 및 엔지니어로 전환하기 전에 다양한 소프트웨어 프로젝트에서 CI/CD를 활용하는 데 중점을 둔 소프트웨어 엔지니어였습니다. 이 게시물은 Git을 활용한 Fabric 작업 공간의 최선의 실천 방법을 이해하기 위해 그림을 활용한 나의 해석에 대해 다룹니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@mjtpena/best-practices-for-using-git-enabled-fabric-w
 
 ## Azure DevOps (Git)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 • Main Branch: 안정적인 릴리스를 위한 메인 브랜치입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@mjtpena/best-practices-for-using-git-enabled-fabric-w
 
 ## Microsoft Fabric (Workspaces)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 릴리스 파이프라인: 다양한 환경(개발, 스테이징, 프로덕션)으로의 릴리스를 관리합니다.
 - 개발 작업 공간: 개별 개발자 환경.
@@ -40,7 +61,18 @@ link: "https://medium.com/@mjtpena/best-practices-for-using-git-enabled-fabric-w
 
 ## 브랜칭 전략
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이프라인, 노트북, 리포트, 데이터 웨어하우스, 레이크하우스 등을 작업할 수 있는 Fabric "개발자"들이 git을 배워야 합니다. 나는 많은 데이터 엔지니어가 분석가나 DBA 경로에서 왔다는 것을 경험상 알기에, git을 배우는 것이 어려울 수 있다는 걸 알고 있어요. 이들의 경력 초창기에 git을 배우지 않은 경우가 많았습니다. 그러나 특히 Microsoft Fabric에서 큰 프로젝트를 수행하는 경우에는 협업을 위해 git이 필수적입니다.
 
@@ -50,7 +82,18 @@ link: "https://medium.com/@mjtpena/best-practices-for-using-git-enabled-fabric-w
 
 본 브랜치: 이 브랜치를 제품용 코드의 진리의 원천으로 유지하세요. 여기에는 안정적이고 테스트된 코드만 병합해야 합니다. 나중에 변경 내용을 롤백해야 하는 경우를 대비해 나중을 위해 충분한 태깅 전략을 사용하세요. 보너스로, 메인 브랜치에 유지된 히스토리가 두 가지다 하더라도 릴리스#1과 릴리스#75를 분리하는 릴리스 태그를 구현하는 것도 좋은 연습입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메인 브랜치가 패브릭 워크스페이스에서 git을 사용할 수 없는 것에 유의해주세요. 워크스페이스에 연결된 브랜치는 개발 브랜치 뿐입니다. 다음 섹션에서 이에 대해 더 설명하겠습니다.
 
@@ -60,8 +103,18 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 
 이를 위해 워크스페이스 설정을 클릭하고 "Git 통합" 탭으로 이동하세요. 이를 Azure DevOps에 연결하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_1.png)
 
@@ -70,9 +123,19 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 즉, 모든 이러한 파일들:
 
 ![image2](/assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_2.png)
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 Azure DevOps 저장소에서 테이블 태그가 표시됩니다:
 
@@ -82,7 +145,18 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 
 ![2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_4.png](/assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미 이전에 언급한대로, 개발자들은 기능 브랜치를 워크스페이스에 연결합니다. 이 방식의 단점 또는 "불편함"은 개발자들이 새로운 기능을 개발할 때 이 프로세스를 반복해야 한다는 점입니다. 미래에는 "원 클릭 워크스페이스 생성" 기능이 있으면 더 원할텐데, 이 기능은 일시적인 워크스페이스를 의도한 것입니다. 그러나 반대로, 보통 기능 개발에는 몇 일이 걸리기 때문에 매주 한두 번 이 프로세스를 수행해야 한다는 것은 익숙해지면 나쁘지 않습니다.
 
@@ -92,7 +166,18 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 
 여기서 Git과 릴리스 관리 간의 분리선이 깨지게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 릴리스 관리
 
@@ -104,7 +189,18 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 - "비개발자"는 Git을 사용할 필요가 없습니다. 대규모 조직에서는 이해관계자 및 임원과 같은 다른 역할이 Git을 사용할 필요가 없을 수 있습니다. 그러나 반대로 보고서를 보고 권한을 행사하고 싶어할 것입니다. 이 접근 방식은 이러한 시나리오에서 잘 작동합니다.
 - 승인 시나리오. 스테이징 및 프로덕션으로의 릴리스 승인을 위해 누군가가 Git을 통해 확인할 필요가 없습니다. 대규모 조직에서는 적절한 릴리스 프로세스가 있지만 이 방식의 장점은 사실 "매니저"나 승인자가 개발자가 브랜치를 병합하는 대신 버튼을 클릭할 수 있다는 것입니다. 감사 추적은 관리자 X가 배포를 승인했음을 말할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_7.png" />
 
@@ -116,7 +212,18 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 - 멀티테넌시, 즉 스테이징과 프로덕션에 서로 다른 도메인이 있는 경우 (Entra ID). 이는 더 복잡한 기업 내 관계에도 적용됩니다.
 - Azure DevOps에 액세스할 수 없는 경우 (당연히)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약하면, 이 방법은 팀으로 작업하고 협업하는 데 도움이 되기 위해 Microsoft fabric 작업 공간에 Git를 활용하는 접근 방식입니다. 주요 강조점은 다음과 같습니다:
 
@@ -128,6 +235,17 @@ Microsoft 패브릭 워크스페이스(파워 BI 워크스페이스 포함)는 g
 
 ![다이어그램](/assets/img/2024-05-20-BestPracticesforUsingGit-EnabledFabricWorkspaces_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법에 대해 어떻게 생각하시나요? 놓친 부분이 있나요? 더 좋은 대안이 있다고 생각하시나요? 댓글로 알려주세요.

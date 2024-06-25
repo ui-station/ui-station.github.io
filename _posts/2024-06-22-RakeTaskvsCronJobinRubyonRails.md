@@ -3,13 +3,12 @@ title: "Ruby on Rails에서 Rake Task와 Cron Job 비교 어느 것을 선택해
 description: ""
 coverImage: "/assets/img/2024-06-22-RakeTaskvsCronJobinRubyonRails_0.png"
 date: 2024-06-22 22:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-RakeTaskvsCronJobinRubyonRails_0.png
 tag: Tech
 originalTitle: "Rake Task vs. Cron Job in Ruby on Rails"
 link: "https://medium.com/@yelilan01/rake-task-vs-cron-job-in-ruby-on-rails-e50a50b1341f"
 ---
-
 
 루비 온 레일즈로 작업을 하고 계신다면, 레이크 태스크와 크론 작업에 대해 들어보신 적이 있을 것입니다. 두 도구는 작업을 자동화하는 데 도움을 주지만, 다른 방식으로 사용됩니다. 이를 언제 어떻게 사용해야 하는지 이해하면 많은 시간을 절약하고 애플리케이션을 더 효율적으로 만들 수 있습니다. 이 글에서는 레이크 태스크와 크론 작업이 무엇인지, 어떻게 다른지, 언제 사용해야 하는지, 그리고 어떻게 사용해야 하는지 알아보겠습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@yelilan01/rake-task-vs-cron-job-in-ruby-on-rails-e50a
 
 ## 레이크 태스크를 사용하는 이유?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Rake 작업은 Rails 애플리케이션과 완벽하게 통합되어 있어 매우 유용합니다. 이는 Rake 작업 내에서 모델, 라이브러리 및 설정을 쉽게 액세스할 수 있다는 것을 의미합니다. 예를 들어, 데이터베이스에서 모든 사용자 레코드를 업데이트해야 하는 경우, 모델 클래스를 사용하여 업데이트를 수행하는 Rake 작업을 작성할 수 있습니다.
 
@@ -37,7 +47,18 @@ namespace :example do
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 작업을 실행하려면 터미널에 다음 명령을 입력하세요:
 
@@ -49,7 +70,18 @@ rake example:say_hello
 
 ## Rake 작업의 일반적인 사용법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터베이스 마이그레이션: 데이터를 한 구조에서 다른 구조로 자동 이동하는 프로세스를 자동화합니다.
 - 데이터 씨딩: 초기 데이터나 테스트 데이터로 데이터베이스를 채웁니다.
@@ -62,7 +94,18 @@ rake example:say_hello
 
 ## 왜 크론 작업을 사용해야 하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 크론 작업은 수동 개입 없이 정기적으로 실행해야 하는 작업을 자동화할 수 있어 강력합니다. 매일, 매주 또는 규칙적인 간격으로 발생해야 하는 작업에 이상적입니다. 예를 들어, 매일 자정에 보고서를 생성하는 스크립트가 있을 수 있습니다.
 
@@ -74,17 +117,29 @@ rake example:say_hello
 0 0 * * * /path/to/your/script.sh
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이 예제에서 0 0 * * *은 일정 시간을 지정하는 것(매일 자정)이고, /path/to/your/script.sh는 실행할 명령입니다. 이 명령은 간단한 셸 스크립트에서부터 레일즈 애플리케이션과 상호작용하는 복잡한 명령까지 어떤 것이든 될 수 있습니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이 예제에서 0 0 \* \* \*은 일정 시간을 지정하는 것(매일 자정)이고, /path/to/your/script.sh는 실행할 명령입니다. 이 명령은 간단한 셸 스크립트에서부터 레일즈 애플리케이션과 상호작용하는 복잡한 명령까지 어떤 것이든 될 수 있습니다.
 
 ## 크론 구문 분석
 
 크론 구문은 공백으로 구분된 다섯 가지 필드로 구성되어 있습니다:
 
+- - - - - command_to_run
 
-* * * * * command_to_run
-- - - - -
+---
+
 | | | | |
 | | | | +---- 주의 요일 (0-7) (일요일은 0과 7 둘 다)
 | | | +------ 월 (1-12)
@@ -92,10 +147,20 @@ rake example:say_hello
 | +---------- 시간 (0-23)
 +------------ 분 (0-59)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-위의 예시 0 0 * * *를 살펴보겠습니다:
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+위의 예시 0 0 \* \* \*를 살펴보겠습니다:
 
 - 분 (0): 이 필드는 작업이 실행되어야 하는 시간의 분을 나타냅니다. 여기서 0은 시간의 0분에 작업이 실행됨을 의미합니다.
 - 시간 (0): 이 필드는 24시간 형식의 하루의 시간을 나타냅니다. 여기서 0은 자정(00:00)에 작업이 실행됨을 의미합니다.
@@ -103,7 +168,7 @@ rake example:say_hello
 - 월 (*): 이 필드의 별표 *는 작업이 매월 실행됨을 의미합니다.
 - 주의 날짜 (*): 이 필드의 별표 *는 작업이 매주 매일 실행됨을 의미합니다.
 
-따라서, 0 0 * * *은 다음과 같습니다:
+따라서, 0 0 \* \* \*은 다음과 같습니다:
 
 - 분: 0 (시간의 시작)
 - 시간: 0 (자정)
@@ -111,7 +176,18 @@ rake example:say_hello
 - 월: 매월
 - 주의 날짜: 매주 매일
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 말해, 이 일정은 매일 자정(00:00)에 명령을 실행한다는 뜻입니다.
 
@@ -124,7 +200,18 @@ rake example:say_hello
 
 # Rake 작업과 Cron 작업의 차이점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 양쪽 Rake 작업과 Cron 작업은 작업을 자동화할 수 있지만, 다른 방식으로 작동하며 서로 다른 유형의 작업에 적합합니다.
 
@@ -135,7 +222,18 @@ rake example:say_hello
 
 ## 실행 방식
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Rake 작업: 수동으로 실행하거나 자동으로 실행하도록 설정해야 합니다. 이렇게 하면 작업이 언제, 어떻게 실행되는지 정확하게 제어할 수 있지만, 자동으로 실행되도록 설정하는 데 더 많은 작업이 필요합니다.
 - Cron 작업: crontab에서 설정한 시간에 자동으로 실행됩니다. Cron 작업은 수동 개입 없이 정기적으로 실행해야 하는 작업에 적합합니다.
@@ -147,7 +245,18 @@ rake example:say_hello
 
 # 언제 Rake 작업을 사용해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 일회성 데이터 변경: 한 번에 데이터를 이동하거나 변경해야 하는 경우 Rake 작업을 사용하세요. 예를 들어, 데이터베이스의 모든 사용자 레코드를 업데이트해야 하는 경우 Rake 작업은 효율적으로 수행할 수 있습니다.
 - 사용자 지정 유지 보수 작업: 레일 모델에 액세스해야 하는 작업에 사용하세요. Rake 작업은 레일 앱 내에서 실행되기 때문에 앱의 데이터와 로직과 손쉽게 상호 작용할 수 있습니다.
@@ -161,7 +270,18 @@ rake example:say_hello
 
 # Rake 작업과 크론 작업을 결합하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가끔은 Rake 작업과 Cron 작업을 함께 사용하는 것이 가장 좋을 때가 있어요. 예를 들어, Rails 앱에서 복잡한 작업을 처리하는 Rake 작업을 만든 다음 그 작업을 정기적으로 실행하도록 Cron 작업을 설정할 수 있어요.
 
@@ -180,7 +300,18 @@ namespace :db do
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서 db:cleanup 작업은 데이터베이스에서 이전 레코드를 정리합니다.
 
@@ -192,7 +323,18 @@ end
 0 3 * * * cd /path/to/your/app && bundle exec rake db:cleanup RAILS_ENV=production
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령은 매일 새벽 3시에 db:cleanup 작업을 설정합니다. cd /path/to/your/app 부분은 명령이 올바른 디렉토리에서 실행되도록 하고, bundle exec rake db:cleanup RAILS_ENV=production은 Rake 작업을 프로덕션 환경에서 실행합니다.
 

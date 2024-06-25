@@ -3,13 +3,12 @@ title: "OCI에서 Active Directory 게임을 실행하는 방법  1부"
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_0.png"
 date: 2024-06-19 13:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_0.png
 tag: Tech
 originalTitle: "How to run Game of Active Directory in OCI — Part 1"
 link: "https://medium.com/learnoci/how-to-run-game-of-active-directory-in-oci-part-1-5be51387a7a2"
 ---
-
 
 제가 정말 즐겁게 즐겼던 프로젝트 중 하나는 GOAD입니다. 게임 오브 스로운즈 팬으로서 사이버 지식을 시험하고 동시에 즐길 수 있는 수단이었습니다. 만약 여러분이 스로운즈의 팬이라면, 이 Windows/AD/SCCM 랩은 여러분을 위한 것입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/learnoci/how-to-run-game-of-active-directory-in-oci-pa
 
 https://github.com/adibirzu/GOAD/blob/main/docs/install_with_oci.md
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 랩 환경으로서 VCN 보안 목록에서 엄격한 ACL을 구현하지는 않았어요. 그러나 모든 포트에서 192.168.0.0/16에서의 액세스는 허용했어요.
 
@@ -29,7 +39,18 @@ Oracle Cloud Infrastructure 이미지
 
 2- 테라폼 스크립트와 PowerShell 스크립트는 ad →GOAD →providers →OCI 하위에 추가됐어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_0.png)
 
@@ -41,21 +62,39 @@ Oracle Cloud Infrastructure 이미지
 
 ![Screenshot](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OCI에서 우분투의 기본 사용자는 ubuntu이므로 goad.sh의 모든 참조는 ubuntu 사용자를 사용할 것입니다:
 
-
 ![2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_2](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_2.png)
-
 
 4. 스크립트 아래에, 저는 설치 후 우분투 서버의 선행 조건을 설치하기 위해 setup_oci.sh 스크립트를 만들었습니다.
 
-
 ![2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_3](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_3.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5- 오라클 클라우드 인프라에서 랩을 프로비저닝하는 방법을 설명하는 docs/install_with_oci.md를 업데이트했습니다.
 
@@ -65,11 +104,33 @@ OCI에서 우분투의 기본 사용자는 ubuntu이므로 goad.sh의 모든 참
 
 ![이미지](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경하였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 9- ad → GOAD → providers → oci → terraform 폴더에 Terraform/PowerShell 파일을 만들어주세요:
 
@@ -113,9 +174,20 @@ Update-Module -Name PowerShellGet -Force -AllowClobber -Confirm:$false
 
 - profile.tf
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-```hcl
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+```js
 provider "oci" {
   tenancy_ocid      = var.tenancy_ocid
   user_ocid         = var.user_ocid
@@ -127,7 +199,7 @@ provider "oci" {
 
 variables.tf
 
-```hcl
+```js
 variable "tenancy_ocid" {
   description = "The OCID of your tenancy."
   type        = string
@@ -206,10 +278,23 @@ variable "windows2019_image_ocid" {
 ```
 
 network.tf
-```hcl
+
+```js
+
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 resource “oci_core_vcn” “generated_oci_core_vcn” {
@@ -310,7 +395,18 @@ The DHCP configuration part is essential, as if it’s not properly configured, 
 
 Go to the VCN → DHCP Options:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_7.png" />
 
@@ -320,7 +416,18 @@ Go to the VCN → DHCP Options:
 
 이 부분에서 DNS 문제를 해결해야합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 options {
@@ -351,7 +458,7 @@ source_details {
  source_id = var.image_ocid
  source_type = "이미지"
  }
-#이미지 OCID’S https://docs.oracle.com/en-us/iaas/images/image/bd616d0a-fae4-490e-bd31-a9406095b844/ 
+#이미지 OCID’S https://docs.oracle.com/en-us/iaas/images/image/bd616d0a-fae4-490e-bd31-a9406095b844/
  create_vnic_details {
  assign_ipv6ip = false
  assign_private_dns_record = true
@@ -421,8 +528,18 @@ instance_options {
 
 windowsvm.tf
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 리소스 "oci_core_instance" "windows_instance" {
@@ -504,11 +621,20 @@ output "windows_instance_opc_passwords" {
 
 프로비저닝 중 발생한 일반적인 오류입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 Markdown 형식에 맞게 표 태그를 변경하십시오.
-
 
 ![이미지](/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_9.png)
 
@@ -518,8 +644,18 @@ abirzu@abirzu-mac GOAD % ./goad.sh -t destroy -l GOAD -p oci -m local
 
 모든 서버가 가동되고 작동 중인 것을 확인할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-HowtorunGameofActiveDirectoryinOCIPart1_10.png" />
 
@@ -529,7 +665,18 @@ abirzu@abirzu-mac GOAD % ./goad.sh -t destroy -l GOAD -p oci -m local
 
 이 랩은 실제로 다섯 개의 가상 머신으로 구성되어 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - kingslanding: DC01는 Windows Server 2019에서 실행 중입니다(기본으로 windefender가 활성화됨)
 - winterfell: DC02는 Windows Server 2019에서 실행 중입니다(기본으로 windefender가 활성화됨)
@@ -544,7 +691,18 @@ abirzu@abirzu-mac GOAD % ./goad.sh -t destroy -l GOAD -p oci -m local
 
 도메인: sevenkingdoms.local
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - kingslanding: DC02
 - castelrock: SRV01 (자원 부족으로 비활성화됨)
@@ -556,7 +714,18 @@ abirzu@abirzu-mac GOAD % ./goad.sh -t destroy -l GOAD -p oci -m local
 
 인터넷에서 몇 가지 가이드를 따르거나 자신만의 방법을 찾아 시작할 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AD | Mayfly (mayfly277.github.io)
 
@@ -566,17 +735,38 @@ Solving Game of Active Directory (GOAD) by Orange Cyberdefense Part-1 | by n00�
 
 OCI 통합:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. OCI Management Agent:
 
 - 설명: 클라우드 작업을 자동화하고 모니터링합니다.
-  
 - 통합: GOAD 환경 내 자원의 배포 및 관리를 간소화합니다.
 
 2. Sysmon 및 로깅 분석:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 • 설명: Sysmon은 시스템 활동을 기록하여 침입 탐지를 지원합니다.
 
@@ -586,7 +776,18 @@ OCI 통합:
 
 • 설명: Arkime은 오픈 소스 패킷 캡처 및 검색 도구입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 • 통합: 효율적인 데이터 색인 및 검색을 위해 OCI OpenSearch를 활용합니다. 자세한 내용은 여기에서 확인할 수 있습니다.
 

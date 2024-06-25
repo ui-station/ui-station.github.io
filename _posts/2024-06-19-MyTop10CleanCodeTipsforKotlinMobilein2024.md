@@ -3,13 +3,12 @@ title: "2024년을 위한 Kotlin Mobile의 최고의 10가지 클린 코드 팁"
 description: ""
 coverImage: "/assets/img/2024-06-19-MyTop10CleanCodeTipsforKotlinMobilein2024_0.png"
 date: 2024-06-19 10:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-MyTop10CleanCodeTipsforKotlinMobilein2024_0.png
 tag: Tech
 originalTitle: "My Top 10 Clean Code Tips for Kotlin Mobile in 2024"
 link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin-development-in-2024-e9639cd971cf"
 ---
-
 
 <img src="/assets/img/2024-06-19-MyTop10CleanCodeTipsforKotlinMobilein2024_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin
 
 싱클레어 베이직부터 파스칼, 델파이, 얼랭을 거쳐 모바일 애플리케이션을 위해 Objective-C와 Java, 그리고 이제 Kotlin과 Swift로 이어지는 애플리케이션 개발의 오랜 이야기를 가지고 있습니다. 제가 진로 중 최근에 일한 여러 기술들을 살펴보면, 오늘부터 당신이 코드의 품질을 향상시키기 위해 사용할 수 있는 여러 기술을 채택했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 모든 원칙과 팁 중에서 꼭 기억해야 할 중요한 한 가지가 있습니다:
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin
 
 # 1. 프로젝트 파일 구성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트의 파일 구조에 영향을 미치는 여러 가지 널리 논의된 코드 아키텍처가 있습니다. 가장 널리 인식되는 것 중 하나는 Clean Architecture입니다. 그러나 이는 Hexagonal이나 Onion과 같은 다른 아키텍처가 나쁘다는 것을 의미하는 것은 아닙니다. 기존의 아키텍처는 대부분의 개발자가 직면하는 일반적인 문제를 해결하지만, 아키텍처의 선택은 개발 요구 사항에 적합한 것과 팀이 효과적으로 지원할 수 있는 것에 따라 다릅니다.
 
@@ -41,7 +62,18 @@ link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin
 - MainScreen, OtherScreen: 구성 가능한 화면에 대한 이름입니다(또는 old-style의 MainActivity, MainFragment).
 - MainViewModel, MenuViewModel: ViewModel 클래스에 대한 이름입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 명명 규칙은 MainActivity, MainScreen 및 MainViewModel과 같은 다른 구성 요소 간의 관계를 손쉽게 추적할 수 있도록 합니다. 서로 다른 패키지에 위치해 있더라도요.
 
@@ -51,8 +83,18 @@ link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin
 
 제 프로젝트에서는 내게 쉽게 탐색할 수 있는 방식으로 구조를 사용했습니다. UI 패키지는 계층적으로 구성되어 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-MyTop10CleanCodeTipsforKotlinMobilein2024_1.png)
 
@@ -62,8 +104,18 @@ link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin
 
 즉, 세 번 까지의 규칙입니다. 이 규칙은 코드를 리팩토링할 시간을 이해하는 데 도움이 됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 무언가를 처음으로 코딩할 때는 그냥 시작하세요.
 - 두 번째로 반복할 때는 주의 깊게 유지하세요.
@@ -75,7 +127,18 @@ link: "https://medium.com/@sporentusjourney/my-top-10-clean-code-tips-for-kotlin
 
 깊은 중첩은 여러 개의 반복문 및 조건문과 같은 제어 구조의 계층이 서로 중첩되어 있을 때 코드의 가독성과 명확성을 상당히 떨어뜨릴 수 있습니다. 코드를 이해하고 유지하는 것을 더 어렵게 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 깊게 중첩된 예제는 복잡성을 보여줍니다:
 
@@ -102,7 +165,18 @@ fun getUserRole(userInput: UserInput): String? {
 
 조기 종료를 사용하여 코드를 리팩토링하면 구조를 단순화하고 가독성을 높일 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 getUserRole 함수는 사용자 입력을 받아와서 해당 사용자의 역할을 반환하는 함수입니다. 입력된 사용자 정보가 비어있는 경우 Unknown 역할을 반환하고, 사용자가 존재하지 않는 경우 NotExists 역할을 반환합니다. 입력된 비밀번호가 유효하지 않은 경우 Unauthorized 역할을 반환합니다. 그 외의 경우에는 해당 사용자의 역할을 반환합니다.
@@ -122,7 +196,18 @@ fun getUserRole(userInput: UserInput): String? {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 깊은 중첩을 피하고 초기 종료 및 when 문과 같은 전략을 활용함으로써 코드를 더 접근 가능하고 유지 보수성이 높아지며 작업하기 쉬워집니다. 이 방식은 코드의 전반적인 가독성을 향상시키는 구조를 제공합니다. 또한 어떤 코드가 리팩토링이 필요한지 감지하는 데 도움이 될 수 있습니다.
 
@@ -132,7 +217,18 @@ fun getUserRole(userInput: UserInput): String? {
 
 그러나 몇 년 동안 유지 보수 가능한 코드를 제공하려면 문서화해야 합니다. 그러나 각 줄마다 주석을 다는 것은 좋은 방법이 아닙니다 :)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 주의해야 할 때 코멘트를 작성해야 하는 경우
 
@@ -145,7 +241,18 @@ fun getUserRole(userInput: UserInput): String? {
 
 깔끔한 코드가 중요하지만, 코드 명확성에 대한 절대적인 해결책은 아니며, 특히 데이터 암호화나 사용자 지정 하드웨어 통합과 같이 복잡한 시스템에서는 더욱 그렇습니다. 이러한 경우에 잘 쓰여진 코드조차 밀집하고 완전히 자명하지 않을 수 있습니다. 균형을 잡는 것이 중요합니다 - 코드를 보완하기 위해 코멘트를 사용하여 코드만으로는 충분하지 않은 부분에 통찰력을 제공합니다. 코드를 가능한 한 읽기 쉽게 만드는 데 중점을 둘 뿐만 아니라 복잡한 섹션을 명확하게 해주기 위해 코멘트가 필요한 경우를 인정하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어:
 
@@ -169,7 +276,18 @@ data class HardwareConnection(
 
 그러나 너무 많이 설명하는 것은 코드를 혼란스럽게 만들고 가독성을 떨어뜨릴 수 있습니다. 명백한 문장에 주석을 추가하거나 기본적인 작업을 설명할 필요는 없습니다. 주석은 가치를 더해야 하며 이미 명확한 함수와 변수명에서 알 수 있는 내용을 반복해서 설명하는 것은 피해야 합니다. 각 주석이 코드를 압도하지 않으면서 명확한 목적을 제공하는 적절한 지점을 찾는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 // 사용자의 나이를 저장하는 변수를 정의합니다
@@ -194,8 +312,18 @@ class UserManager(private val database: Database) {
 
 ## 5. 전역 상태와 싱글톤의 한계를 설정하세요
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱을 개발할 때는 종단 없이 존재하는 값을 또는 인스턴스를 관리해야 하는 경우가 많습니다.
 
@@ -205,7 +333,18 @@ class UserManager(private val database: Database) {
 
 예측 불가능한 동작: 예를 들어, 컨텍스트 객체나 런타임 권한을 저장하는 경우, 이 값들은 시간이 지남에 따라 변경될 수 있습니다. 전역 상태는 이러한 상태를 항상 최신 상태로 유지할 것을 보장하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 복잡한 테스트: 전역 변수의 복잡한 상태를 모방하는 것은 어려울 수 있고, 테스트들이 서로 간섭할 수 있습니다. 이는 신뢰할 수 없거나 잘못된 테스트 결과로 이어질 수 있습니다.
 
@@ -215,7 +354,18 @@ class UserManager(private val database: Database) {
 
 재생성/재초기화 문제: 안드로이드가 앱을 중지하고 다시 시작하기로 결정하는 경우, 전역 상태의 모든 변수가 제대로 초기화될 것을 보장할 수 없습니다. 이는 Kotlin의 비-널러블 필드에서 심지어 Null Pointer Exception이 발생할 수 있어 디버깅이 매우 어려워질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 싱글톤 또는 글로벌 객체를 사용하는 대신, 앱의 구성 요소 사이에 클래스 인스턴스를 전달하거나 데이터를 직접 저장하지 않고 특정 소스에서 데이터를 검색하는 도우미/서비스 클래스를 사용하는 것을 고려해보세요. Koin 또는 Hilt와 같은 의존성 주입 프레임워크를 사용하면 객체 관리와 생성을 간편화할 수 있습니다.
 
@@ -227,7 +377,18 @@ class UserManager(private val database: Database) {
 
 # 6. 복잡한 한 줄 코드 피하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표 태그는 공간을 절약하거나 코드를 이해하기 어렵게 만드는 것만이 아니라요. 예를 들어 아래와 같이요.
 
@@ -244,7 +405,18 @@ val result = someColdFlowOrList
     .takeIf { it.size() > 2 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 7. `it` 대신 값에 이름 사용하기
 
@@ -252,8 +424,8 @@ val result = someColdFlowOrList
 
 ```kotlin
 data class User(
-    val name: String, 
-    val address: Address? = null, 
+    val name: String,
+    val address: Address? = null,
     val age: Int? = null
 )
 
@@ -270,7 +442,18 @@ user.let { user ->
 
 이렇게 하면 더 읽기 쉬워집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 user.let { user ->
@@ -285,7 +468,7 @@ user.let { user ->
 ```kotlin
 user.let {
     println("이름: ${it.name}")
-    it.address?.let { 
+    it.address?.let {
         println("도시: ${it.city}")
     }
     it.age?.let {
@@ -296,8 +479,18 @@ user.let {
 
 비교해보세요
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 user?.let { user ->
@@ -324,9 +517,20 @@ filters
             isActive = !filters[index].isActive
         )
     }
-``` 
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 덜 중첩되어 있어서 읽기가 더 쉬워질 거예요.
 
@@ -341,7 +545,18 @@ if (index != -1) {
 
 # 9. IfNeeded 및 Maybe 함수 피하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 유형의 함수는 조건부 논리를 내부에 캡슐화하여 일부 부작용을 초래합니다.
 
@@ -351,8 +566,8 @@ if (index != -1) {
 
 ```js
 class User(
-    val name: String, 
-    val email: String, 
+    val name: String,
+    val email: String,
     val age: Int,
     val emailMarketingEnabled: Boolean
 )
@@ -387,7 +602,18 @@ class MainViewModel(private val userManager: UserManager) : ViewModel() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서는 고전적인 논리 함정이 발생했습니다. 앱은 사용자를 업데이트해야 하지만 특정 경우에만 그렇게 해야 합니다. 여기서는 미성년자에 대한 경우입니다. 사용자가 만 18세 미만이라면 앱은 그들의 권한을 확인해야 합니다. 또한 사용자를 업데이트할 수 있는 성공적인 콜백이 있는 것으로 가정할 수 있습니다.
 
@@ -402,7 +628,18 @@ class MainViewModel(private val userManager: UserManager) : ViewModel() {
 
 작은 조치로는 함수를 작은 함수로 분리하거나 관리자를 매개변수로 전달하는 것과 같은 것으로 문제를 해결할 수 없습니다. 이 클래스는 완전히 리팩토링되어 업데이트 기능만 포함하도록 해야 합니다. 권한 확인 및 마케팅 작업은 UserManager 바깥으로 이동되어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class ParentalControlManager {
@@ -431,7 +668,7 @@ class MainViewModel(
     private val marketingManager : MarketingManager,
     private val userManager : UserManager
     ) : ViewModel() {
-    
+
 // ...
    fun onActivatePromotionEmails() {
         if (parentalControlManager.canUpdateProfile(user)) {
@@ -454,6 +691,17 @@ class MainViewModel(
 
 # 10. 잘 자세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 나은 코드를 작성하기 위한 주요 팁은 휴식을 취하고 자신을 이해하는 것입니다. 충분한 휴식을 취하지 않으면 복잡한 코드 솔루션을 추적하기 어렵거나 작업을 향상시키기 위한 열망이 떨어질 수 있습니다. 업무-생활 균형을 유지하고 매일 7~8시간의 수면을 목표로 삼으며, 마음을 쉬게 해주는 활동을 할 것을 권장합니다. 화면이 아닌 좋은 책을 읽는 것도 좋은 방법입니다. 기억하세요, 당신의 정신적 건강은 기술적 기량만큼 중요합니다. 충분한 휴식과 건강한 상태의 개발자일수록 효율적이고 오류가 적으며 유지보수가 쉬운 코드를 작성할 가능성이 높습니다.

@@ -3,13 +3,12 @@ title: "AWS Rekognition은 어떻게 아이들을 지킴에 도움을 주나요"
 description: ""
 coverImage: "/assets/img/2024-05-27-HowAWSRekognitionHelpsProtectChildhood_0.png"
 date: 2024-05-27 16:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-HowAWSRekognitionHelpsProtectChildhood_0.png
 tag: Tech
 originalTitle: "How AWS Rekognition Helps Protect Childhood"
 link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect-childhood-2386eddda9d0"
 ---
-
 
 ## 어린이 안전을 혁신하다
 
@@ -19,7 +18,18 @@ link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect
 
 이 맥락에서, 데이터 보호법은 미성년자의 신원이 노출되지 않도록 현명하게 규정하고 있습니다. 이를 위해 가족/부모의 명시적 허락을 받지 않으면 이러한 이미지를 배포해서는 안 된다는 요구 사항을 비롯한 다양한 제약이 설정되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 모든 과정은 감정 표현 아이콘을 겹쳐 놓거나 잘라내거나 삭제하는 귀찮은 익명화 수동 프로세스로 이어집니다. 수동 프로세스이기 때문에 오류가 없고 규모에 비해 잘 작동하지 않습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect
 
 이 아이디어와 함께, 나는 그것을 구현하기 시작했습니다: 간단한 웹 응용 프로그램과 서버 측 API. 나는 단순한 것을 준비했고, 준비가 끝난 후 도메인을 등록하고 처음 발표 전에 첫 번째 테스트 중에 이것이 다소 인위적인 단계임을 깨달았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사진을 찍고 공유하려면 대개 모바일 폰에서 하게되는데, 사진을 다듬기 위해 여러 애플리케이션을 거치고 싶지 않을 때가 있습니다 (적어도 대부분의 사람이 그러하지는 않지만), 아예 타사 웹사이트를 통해 지나치게 다듬는 것은 훨씬 더 그렇습니다. 이러한 까칠함은 애플리케이션을 받아들이기 어렵게 만들어, 다른 방법을 시도해보기로 결정했습니다: 텔레그램 봇.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect
 
 ## 아키텍처 단계
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 건축 설계의 근거가 아래에 자세히 나와 있습니다. 이것은 솔루션의 진화를 보여줍니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect
 
 ![AWS Rekognition Helps Protect Childhood](/assets/img/2024-05-27-HowAWSRekognitionHelpsProtectChildhood_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 두 번째 반복: EC2에서 IaaS
 
@@ -59,7 +102,18 @@ link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect
 
 ## 최종 후보 아키텍처 (실행되지 않음)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 진화와 수요가 발생하는 경우 알맞은 버전은 필요 시 스케일 업할 수 있는 ALB가 있는 작은 Fargate Spot Fleet를 생성하는 것이었습니다. 이 버전은 예비적이며, 개발된 것은 없었으며, 폴링 대신 웹소켓을 사용하고 노드 밸런싱을 위해 외부 스토리지인 Redis에 세션 관리를 포함시키기 위해 코드를 리팩토링해야 했습니다.
 
@@ -69,7 +123,18 @@ link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect
 
 코드의 흥미로운 부분은 Rekognition 응답을 처리하는 섹션입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 그와 함께, 얼굴을 익명화하기 위해 가우시안 블러 효과를 적용하는 섹션을 변경하겠습니다:
 
@@ -79,7 +144,18 @@ link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect
 
 이 섹션은 예기치 않은 도전에 직면하거나 다양한 기술을 실험하며, 무엇보다도 사이드 프로젝트로 디지털 제품을 출시하려는 노력에서 배운 교훈을 공유하는 데 전념합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 프리미엄이나 기부 기반 모델을 구현하는 것은 쉬운 일이 아닙니다.
 - 사람들은 스마트폰 상에서 봇과 상호 작용을 매우 잘합니다.
@@ -90,7 +166,18 @@ link: "https://medium.com/aws-in-plain-english/how-aws-rekognition-helps-protect
 
 # 쉽게 이해하는 AWS 관련 기사들 🚀
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 In Plain English 커뮤니티에 참여해 주셔서 감사합니다! 떠나시기 전에:
 

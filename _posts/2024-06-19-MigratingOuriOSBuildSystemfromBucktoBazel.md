@@ -3,13 +3,12 @@ title: "iOS 빌드 시스템을 Buck에서 Bazel로 전환하기"
 description: ""
 coverImage: "/assets/img/2024-06-19-MigratingOuriOSBuildSystemfromBucktoBazel_0.png"
 date: 2024-06-19 14:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-MigratingOuriOSBuildSystemfromBucktoBazel_0.png
 tag: Tech
 originalTitle: "Migrating Our iOS Build System from Buck to Bazel"
 link: "https://medium.com/airbnb-engineering/migrating-our-ios-build-system-from-buck-to-bazel-ddd6f3f25aa3"
 ---
-
 
 <img src="/assets/img/2024-06-19-MigratingOuriOSBuildSystemfromBucktoBazel_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/airbnb-engineering/migrating-our-ios-build-system-from
 
 Airbnb에서는 엔지니어들에게 최고의 경험을 제공하기 위해 노력하고 있습니다. 모든 플랫폼에서 일관되고 효율적인 빌드 경험을 제공하기 위해 저희는 빌드 시스템으로 Bazel을 도입하기로 결정했습니다. Bazel은 산업에서 널리 사용되는 견고한 빌드 시스템입니다. Airbnb의 기술 계획에 부합하여, 백엔드 및 프론트엔드 팀은 모두 Bazel로의 이관 프로세스를 시작했습니다. 첫 번째 Bazel 포스트에서는 iOS 개발에서 Buck에서 Bazel로의 이관 작업에 대해 시작합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 두 가지 주요 작업으로 구성된 이주 접근 방식을 설명하겠습니다: 빌드 구성 이주 및 IDE 통합 이주. 이러한 전환은 엔지니어들의 작업 흐름을 방해하거나 새로운 기능 개발을 저해할 수 있지만, 우리는 개발자들의 일상 경험을 방해하지 않고 성공적으로 이주할 수 있었습니다. 저희 목표는 현재 유사한 이주를 진행하고 있는 분들이나 이와 유사한 이주를 계획 중인 분들을 도와드릴 수 있도록 하는 것입니다.
 
@@ -29,7 +39,18 @@ Airbnb에서는 엔지니어들에게 최고의 경험을 제공하기 위해 �
 
 하지만, Buck와 Bazel은 서로 다른 매개변수를 가진 구별된 규칙을 사용합니다. 예를 들어, Buck은 apple_library 및 apple_binary와 같은 규칙을 제공하는 반면, Bazel은 외부 규칙 세트에 따라 swift_library와 apple_framework와 같은 규칙을 갖습니다. 두 시스템 모두 genrule과 같은 이름의 규칙이 있는 경우라도, 해당 규칙을 구성하는 구문은 종종 다릅니다. 이 두 시스템의 다른 디자인 철학은 다양한 호환성 문제로 이어집니다. 예를 들어, Bazel은 macro에서 명령줄 옵션을 읽는 read_config 함수를 갖고 있지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## rules_shim으로 차이점 숨기기
 
@@ -39,31 +60,48 @@ Buck와 Bazel의 심층 분석을 수행한 후, 두 시스템 간의 차이점�
 
 이 아키텍처의 핵심에는 rules_shim 레이어가 있으며, Buck와 Bazel을 위한 두 세트의 규칙을 도입합니다. 이 규칙 세트는 네이티브 및 외부 규칙 주변에 래퍼 역할을 하여 상위 레이어에 대한 통합된 인터페이스를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 rules_shim이 정확히 어떻게 작동하는지 궁금하신가요? 로컬 저장소를 활용하여 rules_shim 저장소를 빌드 시스템에 따라 다른 구현으로 지정할 수 있습니다.
 
 Buck의 .buckconfig에서 결과물이 어떻게 나타나는지 살펴보겠습니다:
 
 ```js
-[repositories]
-  rules_shim = rules_shim/buck
-
-[buildfile]
-  name = BUILD
+[repositories];
+rules_shim = rules_shim / buck[buildfile];
+name = BUILD;
 ```
 
 또한, 이미 존재하는 BUCK 파일들을 BUILD로 이름을 변경하고 Buck에서도 config 파일로 사용하도록 설정했으므로, Buck와 Bazel에서 동일한 구성을 인식할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Bazel의 WORKSPACE에서는 다음을 수행합니다:
 
 ```js
-local_repository(
-  name = "rules_shim",
-  path = "rules_shim/bazel"
-)
+local_repository((name = "rules_shim"), (path = "rules_shim/bazel"));
 ```
 
 일반적인 BUILD 파일에서는 my_library를 사용하여 네이티브 규칙을 감싸고 각 애플리케이션에 동일한 인터페이스를 제공합니다:
@@ -72,7 +110,18 @@ local_repository(
 load("@rules_shim//:defs.bzl", "my_library", …)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱별 규칙 레이어는 구현이 아닌 인터페이스만을 알아야 합니다. 그 결과로 Buck 또는 Bazel 명령을 실행할 때, 빌드 시스템은 rules_shim 레이어에서 해당 구현을 검색할 수 있습니다. 이 설계의 주목할만한 장점은 마이그레이션 이후에 rules_shim/buck를 쉽게 제거할 수 있다는 것입니다.
 
@@ -82,7 +131,18 @@ load("@rules_shim//:defs.bzl", "my_library", …)
 
 ![링크 텍스트](/assets/img/2024-06-19-MigratingOuriOSBuildSystemfromBucktoBazel_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## read_config을 select로 교체하기
 
@@ -99,7 +159,18 @@ deps = select({
 
 전체적으로, 이 설계를 통해 빌드 시스템의 빌드 구성을 단일로 활용하며, BUILD 파일 자체에는 최소한의 변경이 있습니다. 실제로 Airbnb의 iOS 엔지니어들은 주로 BUILD 파일을 수동으로 수정할 일이 거의 없습니다. 이 파일들은 주로 기본 소스 코드 분석을 통해 자동으로 업데이트됩니다. 그러나 파일을 직접 수정해야 하는 경우에는 특정 빌드 시스템에 대한 지식이 필요하지 않고 통합된 인터페이스에 의존할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # IDE 통합 마이그레이션
 
@@ -109,7 +180,18 @@ Bazel 생태계에서는 Xcode 워크스페이스를 생성하기 위한 다양�
 
 ![이미지](/assets/img/2024-06-19-MigratingOuriOSBuildSystemfromBucktoBazel_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 세 단계로 구성된 마이그레이션 프로세스를 구현했어요.
 
@@ -119,7 +201,18 @@ Bazel 생태계에서는 Xcode 워크스페이스를 생성하기 위한 다양�
 
 마지막으로, 충분한 수의 사용자가 Bazel을 선택하고 모든 Bazel 기능이 철저히 테스트를 거친 후, --bazel 옵션을 기본값으로 설정하여 Bazel로의 원활한 전환을 완료했어요. 문제가 발생했다면 손쉽게 롤백할 수 있는 선택권이 있었어요. 수주 후에는 생성된 프로젝트에서 Buck 지원을 제거했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 마이그레이션의 최종 결과는 인상적입니다. Buck로 생성된 프로젝트와 비교하여 XcodeGen을 사용한 생성 시간이 60% 줄어들었고, Xcode의 오픈 시간도 70% 이상 감소했습니다. 이로 인해 이 새로운 워크스페이스 설정은 내부 개발자 경험 조사에서 최상위 순위를 차지하며, 이 프로세스를 통해 달성된 중요한 개선 사항을 보여주었습니다.
 
@@ -129,7 +222,18 @@ Buck를 사용한 부분에 대해 공통 인터페이스 추상화를 도입하
 
 Bazel이 iOS 빌드 시스템이 된 후, 증분 빌드에 특히 빌드 시간이 크게 개선되었음을 관찰했습니다. 이러한 전환으로 인해 Airbnb 내에서 원격 캐시와 같은 공유 인프라를 활용할 수 있게 되었으며, 결과적으로 여러 플랫폼 간의 협업이 촉진되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 iOS 빌드 시스템을 이전하는 것은 에어비앤비에서 진행 중이거나 완료된 여러 Bazel 마이그레이션 중 첫 번째입니다. 저희는 Java/Kotlin/Scala로 된 JVM 기반 언어, JavaScript, Go용 리포지토리를 보유하고 있는데, 이미 Bazel을 사용 중인 것이나 미래에 사용할 것입니다. 전체 코드베이스에 걸쳐 함께 사용되는 단일 빌드 도구를 믿고 있어서 빌드 도구 및 교육에 대한 투자를 효과적으로 활용할 수 있을 것으로 기대합니다. 미래에는 다른 Bazel 마이그레이션에서 얻은 교훈을 공유할 예정입니다.
 
@@ -139,7 +243,18 @@ iOS Bazel 마이그레이션의 기술 리드인 Qing Yang은 구성 아키텍�
 
 또한 Bazel iOS 커뮤니티에 우리의 마이그레이션 여정 동안 제공해준 다양한 오픈 소스 프로젝트와 지원에 대해 감사의 마음을 전합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희가 App Store에서 최고의 iOS 앱을 만들기 위한 여정에 참여하고 싶으시다면, 열려 있는 iOS 및 개발자 플랫폼 직무를 확인해주세요.
 

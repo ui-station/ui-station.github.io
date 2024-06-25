@@ -3,13 +3,12 @@ title: "Spring Boot Spring Boot가 동시에 처리할 수 있는 요청의 양�
 description: ""
 coverImage: "/assets/img/2024-06-19-SpringBootHowManyRequestsCanSpringBootHandleSimultaneously_0.png"
 date: 2024-06-19 09:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-SpringBootHowManyRequestsCanSpringBootHandleSimultaneously_0.png
 tag: Tech
 originalTitle: "Spring Boot: How Many Requests Can Spring Boot Handle Simultaneously?"
 link: "https://medium.com/@haiou-a/spring-boot-how-many-requests-can-spring-boot-handle-simultaneously-a57b41bdba6a"
 ---
-
 
 ![이미지](/assets/img/2024-06-19-SpringBootHowManyRequestsCanSpringBootHandleSimultaneously_0.png)
 
@@ -19,7 +18,18 @@ Spring Boot은 Java 개발에서 중요한 프레임워크로, 개발자에게 �
 
 정확히 말하면, Spring Boot가 동시에 처리할 수 있는 요청의 수는 Spring Boot 프레임워크 자체에 의해 결정되는 것이 아닙니다. 그 대신 중첩된 웹 컨테이너에 달려 있습니다 (웹 컨테이너의 동작이 Spring Boot의 동작을 결정하기 때문에 이 두 질문의 답을 같은 것으로 간주할 수 있습니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1. 세 가지 주요 웹 컨테이너
 
@@ -29,7 +39,18 @@ Spring Boot은 Java 개발에서 중요한 프레임워크로, 개발자에게 �
 
 그들의 차이점은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1.1 Tomcat
 
@@ -39,7 +60,18 @@ Spring Boot은 Java 개발에서 중요한 프레임워크로, 개발자에게 �
 
 톰캣은 SSL, 연결 풀링 등 다양한 기업 수준의 기능을 지원하여 대규모 복잡한 기업 응용 프로그램을 실행하기에 적합합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 안정성과 성숙성은 기업 수준의 응용 프로그램을 통해 증명되었습니다. 이를 통해 많은 기업들이 선호하는 웹 컨테이너가 되었습니다.
 
@@ -49,7 +81,18 @@ Undertow은 레드햇에서 개발된 유연하고 고성능의 웹 서버 및 �
 
 WildFly 응용 프로그램 서버의 기본 웹 컨테이너입니다. Undertow는 낮은 메모리 사용량과 높은 동시성을 위해 설계되었으며, RESTful API 서비스와 같은 대량의 짧은 연결을 처리하는 데 뛰어납니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언더토우는 Servlet 3.1, WebSocket 및 non-blocking IO (NIO)를 지원하며 HTTP/2 프로토콜을 지원하는 현대적인 서버 중 하나입니다.
 
@@ -59,7 +102,18 @@ WildFly 응용 프로그램 서버의 기본 웹 컨테이너입니다. Undertow
 
 젯티는 Eclipse Foundation이 유지보수하는 오픈 소스 경량 웹 서버 및 Servlet 컨테이너입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 표의 Markdown 형식입니다.
 
@@ -71,25 +125,56 @@ WildFly 응용 프로그램 서버의 기본 웹 컨테이너입니다. Undertow
 
 ![이미지](/assets/img/2024-06-19-SpringBootHowManyRequestsCanSpringBootHandleSimultaneously_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 2. 최대 연결 수 및 최대 대기 수
 
 Spring Boot 프레임워크의 기본 웹 컨테이너 인 Tomcat을 예로 들어, 동시에 처리할 수 있는 요청 수는 spring-configuration-metadata.json 파일에 구성되어 있습니다. 이 파일에서 'server.tomcat.max-connections' (Tomcat의 최대 연결 수)를 검색하면 아래와 같은 결과가 나옵니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-SpringBootHowManyRequestsCanSpringBootHandleSimultaneously_3.png)
 
-이것은 기본적으로 Tomcat이 최대 8192개의 연결을 허용한다는 것을 의미합니다 (8192 = 8 * 1024).
+이것은 기본적으로 Tomcat이 최대 8192개의 연결을 허용한다는 것을 의미합니다 (8192 = 8 \* 1024).
 
 여기서 한 가지 생각할 수 있습니다. '기본적으로 Spring Boot는 8192개의 요청을 동시에 처리할 수 있다.' 라고 생각할 수 있지만, 이는 잘못된 생각입니다. 왜 일까요?
 
 Tomcat은 최대 8192개의 연결을 허용할 수 있지만, Tomcat은 또한 최대 대기 숫자를 가지고 있습니다. 이것은 8192에 도달하면 요청의 연결을 저장할 수 있는 대기 큐가 있는 것을 의미합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래요, Spring Boot가 동시에 처리할 수 있는 연결 수는 Tomcat의 최대 연결 수와 Tomcat의 최대 대기 수와 같습니다.
 
@@ -99,7 +184,18 @@ Tomcat은 최대 8192개의 연결을 허용할 수 있지만, Tomcat은 또한 
 
 ![이미지](/assets/img/2024-06-19-SpringBootHowManyRequestsCanSpringBootHandleSimultaneously_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 말은 기본적으로 Tomcat의 최대 대기 수가 100임을 의미합니다.
 
@@ -109,7 +205,18 @@ Tomcat은 최대 8192개의 연결을 허용할 수 있지만, Tomcat은 또한 
 
 물론, 이 두 값은 아래 구성에서 보여지는 Spring Boot 구성 파일에서 수정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 server:
@@ -124,7 +231,18 @@ Spring Boot 프레임워크에서 웹 컨테이너를 Jetty 또는 Undertow로 �
 
 # 4.1 컨테이너를 Jetty로 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring Boot 프레임워크의 웹 컨테이너를 Jetty로 설정하려면, 다음과 같이 pom.xml 파일을 수정하면 됩니다:
 
@@ -154,7 +272,18 @@ Spring Boot 프레임워크의 웹 컨테이너를 Jetty로 설정하려면, 다
 
 # 4.2 Undertow 컨테이너로 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring Boot 프레임워크의 웹 컨테이너를 Undertow로 설정하려면 Jetty 구현 방법과 비슷합니다. 아래에 표시된대로 pom.xml 파일을 수정하면 됩니다:
 

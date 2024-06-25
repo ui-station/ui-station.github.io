@@ -3,13 +3,12 @@ title: "스파크와 데이터브릭스에서 파티셔닝으로 성능 향상�
 description: ""
 coverImage: "/assets/img/2024-05-20-SuperchargingPerformancewithPartitioninginDatabricksandSparkPart13_0.png"
 date: 2024-05-20 17:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SuperchargingPerformancewithPartitioninginDatabricksandSparkPart13_0.png
 tag: Tech
 originalTitle: "Supercharging Performance with Partitioning in Databricks and Spark (Part 1 3)"
 link: "https://medium.com/data-engineer-things/supercharging-performance-with-partitioning-in-databricks-and-spark-part-1-3-aebcfb48c3b"
 ---
-
 
 ## 데이터 엔지니어가 파티셔닝을 이해해야 하는 이유!
 
@@ -21,7 +20,18 @@ Spark 및 Databricks의 가장 중요한 기능 중 하나를 다루는 세 개�
 
 # 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 관련해서 말씀드리면, "빅데이터" 개념은 종종 3V(또는 소스에 따라 가끔 더)로 정의됩니다: 양(volume), 다양성(variety), 그리고 속도(velocity).
 
@@ -33,7 +43,18 @@ Spark 및 Databricks의 가장 중요한 기능 중 하나를 다루는 세 개�
 
 Partitioning은 이것이 가능하게 하는 핵심입니다. 대용량 데이터셋을 파티션이라는 더 작고 관리하기 쉬운 조각으로 나누는 것을 포함합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 딥레닉과 같은 분산 데이터 처리 시스템에서는 파티션을 사용하여 데이터를 여러 노드에 분산시켜 병렬 처리와 뛰어난 성능을 확보합니다.
 
@@ -43,7 +64,18 @@ Partitioning은 이것이 가능하게 하는 핵심입니다. 대용량 데이�
 
 반면에 비효율적인 파티셔닝은 성능 병목 현상, 자원 낭비 및 처리 시간 증가로 이어질 수 있습니다. 따라서 딥레닉과 같은 분산 데이터 처리 시스템에서 성능을 최적화하기 위해 올바른 파티셔닝 전략을 선택하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Databricks와 Spark에서 파티셔닝 이해하기
 
@@ -53,7 +85,18 @@ Partitioning은 이것이 가능하게 하는 핵심입니다. 대용량 데이�
 
 Databricks의 계산 엔진은 Spark입니다. Databricks에서 SQL, Scala, R 또는 Python을 사용하여 코드를 작성할 때, 우리는 단지 해당 API를 사용하여 내부 Spark 엔진에 액세스합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스파크는 기본 데이터 구조로 RDDs(탄력적 분산 데이터 집합)를 사용합니다. 그들의 이름에서 알 수 있듯이, RDDs는 분산 데이터 집합입니다. 요즘에는 RDDs와 직접 작업하는 것보다는 DataFrame API와 함께 작업하는 것이 인기가 없지만, DataFrame API는 이름을 붙일 수 있는 열을 제공하는 RDDs의 상위 수준 추상화인 DataFrame 객체를 제공합니다. 따라서 DataFrame은 전통적인 관계형 데이터베이스의 테이블과 유사합니다. 게다가, DataFrames는 많은 성능 최적화 옵션을 제공합니다.
 
@@ -63,7 +106,18 @@ Databricks의 계산 엔진은 Spark입니다. Databricks에서 SQL, Scala, R �
 
 RDDs 또는 DataFrames로 작업할 때, 스파크는 파티션 프로세스를 자동으로 처리해 줍니다. 심지어 우리가 명시적으로 지정하지 않았더라도요. 이미 파티션된 테이블에서 데이터를 가져올 때, 기존 파티션 구조가 고려된다는 점을 언급하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 화면 캡처에서 보듯이 나는 파티션이 없는 테이블에서 데이터를 로드하고 있습니다. 이는 Spark가 아래에서 다룰 여러 구성에 기반하여 파티셔닝을 처리할 것을 의미합니다.
 
@@ -71,7 +125,18 @@ RDDs 또는 DataFrames로 작업할 때, 스파크는 파티션 프로세스를 
 
 데이터를 섞는 일부 작업을 수행할 때, Spark는 "spark.sql.shuffle.partitions" 구성을 기반으로 데이터를 파티션으로 분할합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 이 같은 속성은 데이터를 간단히 읽을 때 파티션 수도 제어합니다. 디폴트로 200으로 설정되어 있어 Spark는 200개의 파티션을 생성합니다. 그러나 "spark.sql.files.maxPartitionBytes" 구성 설정도 이 프로세스에 한도를 두고 있습니다.
 
@@ -82,7 +147,18 @@ RDDs 또는 DataFrames로 작업할 때, 스파크는 파티션 프로세스를 
 
 데이터프레임 파티션의 크기를 제어하는 다른 방법은 .repartition() 또는 .coalesce() 메서드를 사용하여 DataFrame을 다시 파티션하고 파티션 수 또는 파티션화하려는 열을 지정하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - repartition()은 DataFrame 또는 RDD의 파티션 수를 증가 또는 감소시키는 데 사용됩니다. .repartition()을 사용하면 Spark가 데이터를 섞고 지정된 파티션 수에 기반하여 새로운 파티션을 생성합니다.
 - coalesce()는 DataFrame 또는 RDD의 파티션 수를 감소시키는 데 사용됩니다. .coalesce()를 사용하면 Spark가 기존 파티션을 결합하여 새로운 파티션을 생성하려고 합니다. repartition()과 달리, coalesce()는 데이터를 섞지 않습니다.
@@ -93,7 +169,18 @@ RDDs 또는 DataFrames로 작업할 때, 스파크는 파티션 프로세스를 
 
 모든 테이블에 대한 보편적인 해결책은 없으며, 우선 순위와 목표를 균형 있게 유지해야 합니다. 각 시나리오는 요구 사항과 도전에 대응하기 위한 맞춤형 접근 방식이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DataFrame / RDD 수준의 파티셔닝은 데이터를 병렬 처리를 위해 클러스터 노드에 분산하는 것을 다루고, 테이블 수준의 파티셔닝은 저장 시스템 내에서 데이터를 조직화하여 쿼리 성능을 최적화하는 데 초점을 맞춥니다.
 

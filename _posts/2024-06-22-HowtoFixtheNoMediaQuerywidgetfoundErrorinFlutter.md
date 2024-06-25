@@ -3,13 +3,12 @@ title: "Flutter에서 No MediaQuery widget found 오류 해결 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-HowtoFixtheNoMediaQuerywidgetfoundErrorinFlutter_0.png"
 date: 2024-06-22 23:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-HowtoFixtheNoMediaQuerywidgetfoundErrorinFlutter_0.png
 tag: Tech
 originalTitle: "How to Fix the ‘No MediaQuery widget found’ Error in Flutter"
 link: "https://medium.com/@kasata/how-to-fix-the-no-mediaquery-widget-found-error-in-flutter-705858adddd2"
 ---
-
 
 플러터 개발자들은 개발 과정 중에 종종 'No MediaQuery widget found' 메시지를 마주하게 됩니다. 특히 초보자들에게는 이 오류가 혼란스러울 수 있습니다. 이 글에서는 이 오류의 원인을 살펴보고, 쉽게 이해할 수 있는 단계와 설명으로 해결하는 방법에 대해 알아보겠습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@kasata/how-to-fix-the-no-mediaquery-widget-found-erro
 
 ## 오류를 유발하는 전형적인 시나리오들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 다음과 같은 시나리오 중 하나에서 오류가 발생합니다:
 
@@ -30,7 +40,18 @@ link: "https://medium.com/@kasata/how-to-fix-the-no-mediaquery-widget-found-erro
 
 ## 1. MaterialApp으로 감싸기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위젯 트리를 MaterialApp로 래핑하는 것이 가장 일반적인 해결책입니다. 예를 들어:
 
@@ -46,7 +67,18 @@ void main() {
 
 ## 2. Using WidgetsApp
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 Material 컴포넌트를 사용하지 않는다면 대신 WidgetsApp을 사용할 수도 있어요:
 
@@ -63,7 +95,18 @@ WidgetsApp은 후손에 MediaQuery를 동일하게 제공해줍니다.
 
 ### 3. BuildContext 무결성 보장하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 항상 MediaQuery.of(context)에서 사용하는 BuildContext가 MaterialApp 또는 WidgetsApp 아래에 있는 위젯에서 왔는지 확인해주세요.
 
@@ -88,6 +131,17 @@ class MyHomePage extends StatelessWidget {
 
 Flutter에서 'No MediaQuery widget found' 오류는 위젯 트리가 적절하게 MaterialApp 또는 WidgetsApp으로 래핑되어 있는지 확인함으로써 쉽게 해결할 수 있습니다. MediaQuery를 사용하는 맥락을 이해하여 이 흔한 함정을 피하는 것이 중요합니다. 위에서 설명한 단계를 따르면 이 오류를 만남 없이 Flutter 애플리케이션에서 MediaQuery를 효과적으로 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 즐거운 코딩하세요!

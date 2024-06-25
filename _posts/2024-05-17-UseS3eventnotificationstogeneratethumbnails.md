@@ -3,13 +3,12 @@ title: "S3 이벤트 알림을 사용하여 썸네일 생성하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-UseS3eventnotificationstogeneratethumbnails_0.png"
 date: 2024-05-17 18:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-UseS3eventnotificationstogeneratethumbnails_0.png
 tag: Tech
 originalTitle: "Use S3 event notifications to generate thumbnails"
 link: "https://medium.com/gitconnected/use-s3-event-notifications-to-generate-thumbnails-7fb2fb11a584"
 ---
-
 
 ## 이벤트 기반 서버리스 아키텍처
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/use-s3-event-notifications-to-generate-th
 
 애플리케이션에서 파일을 클라우드에 저장하는 것은 파일 지속성의 한 방법으로 매우 일반적입니다. 이를 통해 애플리케이션이 어디에서 어떻게 사용될지에 대한 많은 유연성을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS는 객체를 저장할 수 있는 옵션으로 관리형 서비스 S3 (Simple Storage Service)를 제공합니다. 이 서비스는 높은 가용성, 확장성 및 성능을 갖추고 있습니다. 주로 웹 애플리케이션의 저장 서비스로 사용됩니다.
 
@@ -29,7 +39,18 @@ S3는 버킷 안에서 객체 작업에 대한 알림을 받을 수 있는 기�
 
 우리는 이벤트 알림을 수신하고 섬네일을 생성하는 Go로 작성된 람다 함수를 가질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해보자구요!
 
@@ -41,7 +62,18 @@ S3는 버킷 안에서 객체 작업에 대한 알림을 받을 수 있는 기�
 
 # 아키텍처
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-UseS3eventnotificationstogeneratethumbnails_1.png" />
 
@@ -51,7 +83,18 @@ S3 버킷 이벤트에 람다를 직접 대상으로 지정하지 않을 것입�
 
 # Terraform을 사용하여 인프라 구성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이미지 S3 버킷
 
@@ -74,7 +117,18 @@ provider "aws" {
 
 만약 테라폼이 인프라 상태를 추적하도록 하려면, AWS에서 S3 버킷을 생성하고 상태 백엔드로 설정할 수 있습니다. 아래 코드에서처럼 하시면 됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 terraform {
@@ -116,7 +170,18 @@ resource "aws_s3_object" "thumbnails_folder" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 버킷 속성에서는 버킷에 고유한 이름을 사용해야 합니다. 왜냐하면 S3 버킷 이름은 모든 AWS 전역에서 고유하기 때문입니다. 이름을 제공하지 않으려면 비워두고 AWS가 고유한 버킷 이름을 할당해 줄 것입니다.
 
@@ -126,13 +191,24 @@ resource "aws_s3_object" "thumbnails_folder" {
 
 이제 알림 주제와 메시지 대기열을 설정해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 # messaging.tf
 
 resource "aws_sns_topic" "topic" {
-  name   = "image-events"
+name   = "image-events"
 }
 ```
 
@@ -151,19 +227,41 @@ variable "account_id" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 variables.tfvars라는 또 다른 파일을 만들어 변수를 설정하세요:
 
 ```js
-region = "eu-central-1" // 원하는 지역을 설정하세요
+region = "eu-central-1"; // 원하는 지역을 설정하세요
 ```
 
 나중에 테라폼 명령어에 전달할 account_id는 나중에 인수로 전달할 것입니다.
 
 ## S3 이벤트 알림
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 S3에 대한 이벤트 알림을 설정해 봅시다.
 
@@ -182,7 +280,18 @@ resource "aws_s3_bucket_notification" "images_put_notification" {
 
 이를 활성화하려면 S3 버킷이 해당 topic으로 알림을 발행할 수 있도록 SNS topic에 정책을 추가해야 합니다. messaging.tf 파일로 이동하여 다음 정책을 추가하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 리소스 "aws_sns_topic" "topic" {
@@ -221,9 +330,19 @@ resource "aws_s3_bucket_notification" "images_put_notification" {
 ## 기본 람다 추가하기
 
 이제 람다의 기반 인프라를 추가하기만 남았습니다. 이후에 코드를 추가할 기본 람다를 설정할 것입니다. Go 언어로 코드를 작성할 예정입니다.
- 
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 람다 함수를 초기화할 기본 코드가 필요합니다. 그래서 iac 폴더에 lambda_init_code라는 폴더를 만들어주세요. 여기서 소스 코드를 가져와서 메인 컴파일된 파일을 직접 사용하거나 README.md 파일의 지시에 따라 새로운 실행 가능 파일을 컴파일할 수 있습니다.
 
@@ -279,7 +398,18 @@ data "aws_iam_policy_document" "lambda_role_policies" {
 
 이렇게 하면 런타임으로 Go를 사용하는 람다 함수를 생성하고 역할을 만들며, 람다 함수가 이 역할을 가정하고 클라우드워치에 로깅할 수 있도록 권한을 부여합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 람다가 트리거될 수 있도록 SNS 주제에 대한 구독을 만들어야 합니다. lambdas.tf 파일에 다음 코드를 추가할 수 있습니다:
 
@@ -384,7 +514,18 @@ data "aws_iam_policy_document" "lambda_role_policies" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 SNS 토픽이 람다를 이벤트와 함께 호출할 수 있도록 권한을 부여할 것입니다.
 
@@ -394,7 +535,18 @@ data "aws_iam_policy_document" "lambda_role_policies" {
 
 이제 우리가 코드로 정의한 인프라를 배포하기 위해 GitHub 액션을 사용해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드에 .github/workflows 폴더를 만들고 deploy-infra.yml 파일을 추가하여 GitHub 액션 워크플로우를 정의하세요:
 
@@ -414,7 +566,7 @@ defaults:
 
 jobs:
   terraform:
-    name: 'Terraform'
+    name: "Terraform"
     runs-on: ubuntu-latest
     steps:
       # GitHub Actions 러너에 리포지토리를 체크아웃
@@ -458,7 +610,18 @@ jobs:
 
 이제 코드를 GitHub에 푸시하고 워크플로우가 완료되면 인프라가 생성되는 것을 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트하려면 이미지/ 폴더에 파일을 업로드하고 CloudWatch에서 람다 로그를 확인할 수 있습니다.
 
@@ -468,9 +631,20 @@ S3는 두 개의 폴더로 생성되어야 합니다:
 
 SNS는 구독이 있는 상태로 생성되어야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-<img src="/assets/img/2024-05-17-UseS3eventnotificationstogeneratethumbnails_3.png" /> 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<img src="/assets/img/2024-05-17-UseS3eventnotificationstogeneratethumbnails_3.png" />
 
 Lambda를 SNS 트리거와 함께 생성해야합니다:
 
@@ -478,7 +652,18 @@ Lambda를 SNS 트리거와 함께 생성해야합니다:
 
 # Lambda 구현
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인프라가 설치되었으므로 썸네일 생성기 코드를 구현해야 합니다.
 
@@ -495,7 +680,18 @@ go get github.com/disintegration/imaging
 
 원하는 경우 example.com/thumbnail-generator를 선호하는 모듈 이름으로 교체할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 main.go 파일을 만들고 다음 코드를 추가하세요:
 
@@ -654,7 +850,18 @@ func main() {
 
 .github/workflows 폴더에 deploy-lambda.yml이라는 새 파일을 추가하고 다음 코드를 추가하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 name: Deploy Thumbnail Generator Lambda
@@ -706,8 +913,18 @@ jobs:
 
 <img src="/assets/img/2024-05-17-UseS3eventnotificationstogeneratethumbnails_5.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트하려면 S3 버킷의 images/ 폴더에 이미지를 업로드해야 합니다. 업로드가 성공하면 잠시 기다린 후 새로 만든 섬네일을 확인할 수 있습니다.
 
@@ -717,7 +934,18 @@ jobs:
 
 또한 S3 이벤트를 SNS 토픽에 보내어 이를 다른 소스(다른 SNS 토픽 포함)로 확산할 수 있는 방법도 배웠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 Go로 작성된 람다 함수도 만들었어요. 이 함수는 SNS 메시지를 통해 호출되어 S3 버킷에서 파일을 다운로드하고 이미지에서 썸네일을 생성한 다음 이 썸네일을 S3에 업로드합니다.
 

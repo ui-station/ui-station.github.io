@@ -3,13 +3,12 @@ title: "비즈니스를 보호하기 위해 3가지 주요 LLM 보안 위협 완
 description: ""
 coverImage: "/assets/img/2024-05-18-Mitigate3MajorLLMSecurityThreatstoProtectYourBusiness_0.png"
 date: 2024-05-18 21:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-Mitigate3MajorLLMSecurityThreatstoProtectYourBusiness_0.png
 tag: Tech
 originalTitle: "Mitigate 3 Major LLM Security Threats to Protect Your Business"
 link: "https://medium.com/generative-ai/mitigate-3-major-llm-security-threats-to-protect-your-business-99be786a2c89"
 ---
-
 
 ![Image](/assets/img/2024-05-18-Mitigate3MajorLLMSecurityThreatstoProtectYourBusiness_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/generative-ai/mitigate-3-major-llm-security-threats-to
 
 LLM 채택에 대한 토의는 종종 잠재적인 직업 저해를 중점으로 하지만, 보안 전문가들은 이런 혁신 기술들과 함께 새로운 보안 취약점의 출현을 강조하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-Mitigate3MajorLLMSecurityThreatstoProtectYourBusiness_1.png" />
 
@@ -29,7 +39,18 @@ LLM 채택에 대한 토의는 종종 잠재적인 직업 저해를 중점으로
 
 # #1. 민감한 데이터 노출
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM(언어 모델)을 사이버 보안 워크플로에 통합하는 것은 생산성 향상을 약속하며, 루틴 작업을 자동화하고 문제 식별을 돕고, 심지어 보고서 작성을 지원합니다. 이러한 시스템 내에서 민감한 데이터의 잠재적 노출은 중요한 보안 우려를 불러일으킵니다.
 
@@ -39,7 +60,18 @@ LLM(언어 모델)을 사이버 보안 워크플로에 통합하는 것은 생�
 
 또한, LLM(언어 모델) 통합을 갖춘 최근에 출시된 제품도 최종 사용자들의 개인 정보 보호를 고려해야 합니다. 사람들은 여괄적인 응용 프로그램에 여권 번호나 기밀 의료 세부사항과 같은 개인 식별 정보(PII)를 입력할 수 있습니다. 이러한 데이터를 책임 있게 처리하여 잠재적인 도난을 예방하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 민감한 데이터 노출을 완화하는 전략
 
@@ -52,7 +84,18 @@ LLM과 상호 작용할 때 기밀 정보를 보호하는 핵심 단계는 다�
 
 더 읽어보기: LLM에서 환각: 통합 전에 알아야 할 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # #2. 프롬프트 주입 공격
 
@@ -62,7 +105,18 @@ LLM과 상호 작용할 때 기밀 정보를 보호하는 핵심 단계는 다�
 
 이 위협 유형을 이해하기 위해서는 프롬프트를 LLM에 제공하는 지침으로 상상해보세요. 공격자는 이러한 지침과 관련 데이터를 신중하게 설계하여 도구가 원래의 프로그래밍을 무시하거나 의도와는 다르게 행동하도록 속일 수 있습니다. 이러한 조작은 현실 세계 응용 프로그램에서 광범위한 영향을 미칠 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최근 삼성 데이터 누출 사건은 빠른 인젝션의 피해 가능성을 보여줍니다. 회사의 ChatGPT 사용 제한은 언어 모델에 의한 민감한 정보 노출 위험을 강조합니다. 이 사례는 LLM 구성 요소로써 다양한 솔루션과 시스템에서 점점 더 보편화되는 공격에 대한 이해와 대비의 중요성을 강조합니다.
 
@@ -74,7 +128,18 @@ LLM과 상호 작용할 때 기밀 정보를 보호하는 핵심 단계는 다�
 - 음성: 음성 입력은 최종적으로 텍스트로 변환되므로, 공격자는 음성-텍스트 변환 LLM 구성 요소를 이용해 프롬프트 인젝션을 할 수 있습니다.
 - 비디오: 진정한 비디오 기반 모델이 아직 널리 보급되지 않았지만, 비디오를 이미지와 오디오로 분해하는 것은 프롬프트 인젝션이 추후에 위험할 수 있다는 가능성을 시사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 중요한 프롬프트 주입 방어 전략
 
@@ -87,7 +152,18 @@ LLM과 상호 작용할 때 기밀 정보를 보호하는 핵심 단계는 다�
 
 ## #3. LLM이 전통적인 웹 애플리케이션 취약점을 강화하는 방법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM을 고객을 대상으로 한 서비스에 통합하는 급발진은 새로운 위협 벡터를 만들어냅니다 - LLM 웹 공격입니다. 사이버 범죄자는 모델이 원래 데이터, API 및 사용자 정보에 액세스할 수 있는 특성을 활용하여 직접 수행할 수 없는 악의적인 조치를 취할 수 있습니다.
 
@@ -99,7 +175,18 @@ LLM을 고객을 대상으로 한 서비스에 통합하는 급발진은 새로�
 
 개념적으로, 많은 LLM 기반 공격은 서버 측 요청 위조(SSRF) 취약점과 유사점을 공유합니다. 두 경우 모두, 공격자는 서버 측 구성 요소를 조작하여 직접 액세스할 수 없는 시스템에 대한 사건을 촉진합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-Mitigate3MajorLLMSecurityThreatstoProtectYourBusiness_4.png" />
 
@@ -113,7 +200,18 @@ LLM 통합은 새로운 위험 요인을 소개하는 한편, 기존의 웹 및 
 - Cross-Site Scripting (XSS). 인공 지능 도구가 사용자가 입력한 정보에 따라 출력을 표시하는 웹 인터페이스가 있는 경우, XSS 공격 가능성이 있습니다. 사용자들은 세션 데이터나 기타 기밀 정보를 훔치는 악성 스크립트를 받을 수 있습니다.
 - 보안되지 않은 직접 개체 참조 (IDOR). LLM이 객체(파일 또는 데이터베이스 레코드 등)와 상호 작용할 때 사용자 입력에 따라, 공격자들은 양적인 권한 없이 객체에 액세스하거나 수정하는 IDOR 결함을 악용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전의 보안 문제와 유사하게, 이러한 증폭된 취약점을 완화하는 것은 견고한 입력 필터링 및 유효성 검사, 제로 트러스트 아키텍처, 최소 권한 원칙 등과 같은 동일한 전략에 의존합니다.
 
@@ -123,7 +221,18 @@ Responsible Generative AI: Limitations, Risks, and Future Directions of Large La
 
 ![이미지](/assets/img/2024-05-18-Mitigate3MajorLLMSecurityThreatstoProtectYourBusiness_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM 기술은 엄청난 속도로 발전하고 있습니다. 따라서 보안 관행에 적응할 수 있도록 유동적으로 유지하는 것이 중요합니다. 위험을 선제적으로 완화하기 위해 전문가들은 LLM에 특화된 취약점을 이해하고 효과적으로 대처할 수 있는 실용적인 도구가 필요합니다.
 
@@ -133,7 +242,18 @@ LLM 기술은 엄청난 속도로 발전하고 있습니다. 따라서 보안 �
 
 또한 고객의 요구 사항에 따라 응용 프로그램의 가능한 위험 목록을 도입했습니다. 이를 통해 관리자들은 잠재적 위험을 인식하고 이에 대처하기 위한 필요 조치를 마련하여 사용자의 안전을 보장할 수 있습니다. 이는 모든 기업에게 최우선 과제입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM 보안 우려가 혁신을 막지 못하도록 합시다. 우리와 협력하여 안전하고 믿을 수 있는 AI 애플리케이션을 구축하는 데 우리의 전문지식을 활용해 보세요. 귀하의 정확한 요구 사항을 논의하고 언어 모델의 전체 잠재력을 최대한 발휘하며 안전성을 최우선에 두기 위해 오늘 MOCG에 연락해 주세요.
 
@@ -143,7 +263,17 @@ LLM 보안을 높이고 사이버 위협에 앞서 나가세요. AI 안전성을
 
 이 이야기는 Generative AI에서 발행됩니다. LinkedIn에서 저희와 연락하고 최신 AI 이야기에 대한 소식을 받아보려면 Zeniteq를 팔로우해 주세요. 함께 AI의 미래를 함께 만들어 봅시다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-Mitigate3MajorLLMSecurityThreatstoProtectYourBusiness_7.png" />

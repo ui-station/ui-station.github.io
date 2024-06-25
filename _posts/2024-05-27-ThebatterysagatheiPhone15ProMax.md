@@ -10,7 +10,6 @@ originalTitle: "The battery saga , the iPhone15 Pro Max"
 link: "https://medium.com/macoclock/the-battery-saga-the-iphone15-pro-max-f621bb9bc8b2"
 ---
 
-
 ![2024-05-27-ThebatterysagatheiPhone15ProMax_0.png](/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_0.png)
 
 # 또 다른 하루 또 다른 이야기
@@ -19,8 +18,18 @@ link: "https://medium.com/macoclock/the-battery-saga-the-iphone15-pro-max-f621bb
 
 나에게는 이번 주에 두 번 모험했습니다! 나 자신을 은둔자로 묘사하려는 것이 아닌데, 본성상 나는 외로운 사람이라서 이 콘텐츠 창작 일은 나에게 완벽해요. 스스로 쓰고 편집하는 데 많은 시간을 보낼 수 있지만, 그로 인해 자리에 머무르는 습관을 낳아요. 올해 스튜디오에서 너무 멀리 나가지 않았다는 것을 깨달았기 때문에, 이번 주에는 그것을 바꾸고 살짝 변화를 주기로 결정했어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일자별 계획은 콘텐츠 중심으로 구성되어 있었고, 주로 iPhone 15 Pro Max에 많이 의존했습니다. 정기적으로 저를 읽는다면 삼성 S24 울트라를 구매할 생각이 있었음을 아실 것입니다. 그 제품에 흥미를 느꼈지만, 무엇보다도 콘텐츠가 필요했기 때문에 그 제품을 더욱 탐내게 되었습니다!
 
@@ -30,7 +39,18 @@ link: "https://medium.com/macoclock/the-battery-saga-the-iphone15-pro-max-f621bb
 
 이번 주 초에는 윈저, 이튼, 배터시를 방문했고, 오늘은... 오늘은 저는 런던의 웨스트 엔드에서 막 돌아왔습니다. 수도시 거리를 돌아다니며 보낸 멋진 날이었고, 애플 대리점 두 곳 - 애플 리젠트 스트리트와 애플 나이츠브리지 두 곳도 방문한 날이었답니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![iPhone 15 Pro Max](/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_1.png)
 
@@ -40,7 +60,18 @@ link: "https://medium.com/macoclock/the-battery-saga-the-iphone15-pro-max-f621bb
 
 이번 주 초에 우연히 배터리가 주인공이 되었습니다. 그 날은 그저 멋진 비디오와 사진 몇 장을 찍기 위해 나갔는데 — 제가 한 것 같다고 생각합니다. 그러나 집에서 8시간을 벗어나서 폰을 그 의도대로 사용한 결과, 결국 집에 왔을 때 배터리가 거의 다 닳아 있었습니다. 저는 20%만 남았죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pro라 불리며, 프로 작업을 수행할 수 있다는 의미입니다.
 
@@ -50,7 +81,18 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 # 계속해서 이어짐
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저번 여행 이야기를 쓴 후 누군가가 전력 소비 데이터를 살펴보라고 제안해주었어요! 정말 좋은 조언이었어요 — 감사합니다!
 
@@ -58,7 +100,18 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 저는 오전 11시 이전에 99%의 배터리로 집을 떠났어요 — 오늘은 분명 더 나은 결과를 얻을 수 있을 거예요...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 너무 가까워
 
@@ -68,8 +121,18 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 차에서 내려서 iPhone으로 사진을 찍기 시작했어요. Mac의 사진 앱을 보니 오늘은 200장 가까운 사진과 영상을 찍은 것 같아요. 어디를 바라보아도 또 다른 사진 촬영 기회가 있었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![The Battery Saga - the iPhone 15 Pro Max](/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_4.png)
 
@@ -79,8 +142,18 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 아래에 유명한 피카딜리 서커스 광고판의 몇 장의 사진이 있다. 첫 번째 사진은 1배 확대 24mm로 촬영한 것이고, 두 번째 사진은 5배 확대 120mm로 촬영한 것이다. 이미지를 200%로 확대해도 매우 많은 선명함이 유지되며, 점이 놀랍게 날카로운 것을 알 수 있다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_5.png)
 
@@ -90,7 +163,18 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 ![이미지](/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번 주까지는 5배 줌 기능을 많이 사용하지 않았어요. 일상생활에서는 별로 필요 없는데, 오늘 같은 날에는 정말 그 밋밋함에서 벗어나야 할 때입니다. 첫 번째 1배 24mm 샷으로 내가 얼마나 떨어져 있었는지 조금 감을 잡을 수 있어요. RAF 폭격기 기억비의 뾰족한 봉우리를 5배 줌으로 얼마나 잘 찾아냈는지 볼 수 있죠. 인상적네요.
 
@@ -100,7 +184,18 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 이번 주 런던에서 시험해보지 못한 것 중 하나는 120mm 렌즈의 디지털 줌 기능이었어요. 기억하세요, 저는 5배 줌 초심자라구요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-27-ThebatterysagatheiPhone15ProMax_10.png](/assets/img/2024-05-27-ThebatterysagatheiPhone15ProMax_10.png)
 
@@ -110,7 +205,18 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 사과 로고 주변에는 120mm에서도 조리개 ƒ2.8/80 ISO, 셔터 속도 1/100으로 심하게 고스트링이 나타납니다. 하지만 400mm까지 확대하면 (ƒ2.8/ 50 ISO) 사용할 수 없을 정도로 심해집니다 — 이때의 셔터 속도는 이제 1/148이었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 다른 이야기에서 언급했지만, iPhone의 배경에서 행해지는 기기 내 계산 보정을 살펴볼 때 메타데이터에 흥미로워하곤 합니다. 사진을 촬영할 때마다 올바른 설정을 계산해 주는데, 이것에 대해 우리는 한 번도 생각해보지 않았습니다. 그 결과는 대체로 훌륭합니다. 메인 24mm 카메라의 세 개의 초점 거리는 특히 인상적합니다.
 
@@ -120,7 +226,18 @@ Pro Max모델은 iPhone 중에서 가장 큰 배터리를 가지고 있어서 Pr
 
 # 최종 생각
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iPhone 15 Pro Max를 정말 탐험하기 시작한 시간을 가졌어서 기뻐요. S24 Ultra를 사서 빠르고 싸게 클릭만 하는 것이 아니라 이미 가지고 있는 것에 더 투자해봤어요.
 
@@ -130,7 +247,18 @@ iPhone 15 Pro Max를 정말 탐험하기 시작한 시간을 가졌어서 기뻐
 
 하지만...그 모든 좋은 점들에도 아직은 오래 지속되는 걱정이 있어요. 지난 주에 두 번이나 Pro Max를 이용해 보았는데, 두 번 모두 거의 하루를 버텨내지 못했네요. 그 50% 문제가 실재하는 것 같아요. 약 2시간 만에 54%에서 17%로 떨어지는 것을 볼 수 있어요. 그리고 그 동안 중 일부 시간 동안 iPhone은 차 안에 있어서 음악을 스트리밍 할 뿐이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래도 배터리 문제는 한쪽에 두고 — 이제 내 15 Pro Max에서 정말 많은 것을 얻고 있는 느낌을 받고 있고, 정말 즐기고 있어요.
 

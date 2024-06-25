@@ -3,13 +3,12 @@ title: "건설이 다시 생각되다 하이브 마인드"
 description: ""
 coverImage: "/assets/img/2024-05-20-ConstructionReimaginedHiveMind_0.png"
 date: 2024-05-20 19:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ConstructionReimaginedHiveMind_0.png
 tag: Tech
 originalTitle: "Construction Reimagined: Hive Mind"
 link: "https://medium.com/@sincerelyandtotallyangela/construction-reimagined-hive-mind-e9e7dbabf4af"
 ---
-
 
 ## 행운아.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sincerelyandtotallyangela/construction-reimagined-hiv
 
 집을 소유하고 가족을 지원하며 재정적 안정을 누릴 수 있는 특권은 종종 당연시되곤 합니다. 하지만 많은 사람에게 집을 갖는 게 왜 이렇게 어려운 걸까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 주택 위기
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@sincerelyandtotallyangela/construction-reimagined-hiv
 
 공급 및 수요 역학이 문제를 악화시킵니다. 주거 수요가 공급을 초과하면 공사 비용이 급증합니다. 수요가 높을수록 자재 및 노동비용이 올라가며, 비쌀 수밖에 없는 주거 비용의 악순환을 야기합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 깊게 알아보자: 주택 가격 상승 - 부동산 가격과 임대료가 급등하고 있습니다. 미국에서는 예를 들어, 중위 주택 가격이 지난 10년 동안 50% 이상 치솟았는데, 가구 평균 소득은 겨우 10% 늘었습니다. 주택 비용의 급격한 상승으로 인해 가족들이 계속 저축하기 어려워지고, 마련금을 모으거나 주택 담보 대출을 받거나 심지어 매달 임대료를 감당하는 것이 점점 어려워지고 있습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@sincerelyandtotallyangela/construction-reimagined-hiv
 
 공급 부족:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도시 지역에서 수요가 가장 큰 곳은 새로운 주택 개발이 심각한 부족으로 직면하고 있습니다. 미국의 국가저소득주택연합에 따르면, 미국은 소득이 낮은 가족들을 위한 700만 가구 이상의 임대용 주택이 부족합니다. 이 부족은 엄격한 존업 법, 높은 토지 비용 및 새로운 개발에 대한 승인 과정을 포함한 다양한 요소의 결과입니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@sincerelyandtotallyangela/construction-reimagined-hiv
 
 저소득 가족들이 주택 위기의 짐을 안게 하고 있습니다. 모든 임차인 가운데 거의 절반에 해당하는 사람들이 주거비에 수입의 30% 이상을 지출하며 “비용 부담”이라고 불리는 상황입니다. 이 가족들에게 높은 주거 비용에 대한 재정 부담은 음식, 건강 관리, 교육과 같은 다른 필수품에 대한 여유 공간을 남기지 않습니다. 이는 헤아릴 수 없는 빈곤의 악순환을 유지시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 경제적 격차는 많습니다. 일부 사람들은 여러 부동산을 구매하거나 부동산에 투자할 수 있지만, 다른 사람들은 기본 주택을 확보하기 위해 노력합니다. 주택 가격 격차는 소득 불평등과 사회 정의와 관련된 보다 광범위한 문제를 강조합니다. 주택 위기에 대처하기 위해서는 가격이 저렴한 주택의 입수량을 늘리고, 임금을 인상하며, 가장 필요한 사람들에게 지원을 제공하는 다각적인 접근이 필요합니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@sincerelyandtotallyangela/construction-reimagined-hiv
 
 ![Hive Mind](/assets/img/2024-05-20-ConstructionReimaginedHiveMind_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언제나 친근하게 답변하겠습니다.
 
@@ -71,7 +125,18 @@ link: "https://medium.com/@sincerelyandtotallyangela/construction-reimagined-hiv
 
 저렴하고 고품질 주택을 모든 이에게 제공할 수 있는 미래를 상상해 보세요. 하이브 마인드와 함께라면, 그 미래는 가능성뿐만 아니라 불가피한 현실입니다. 혁신을 수용하고 전통적인 건설 방법을 재고함으로써, 주택 소유의 꿈이 모두에게 접근 가능한 세계를 만들어갈 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 어떻게 해야 할까요?
 
@@ -81,7 +146,18 @@ link: "https://medium.com/@sincerelyandtotallyangela/construction-reimagined-hiv
 
 Hive Mind은 건설 프로세스의 모든 부분을 조정하기 위해 "hive mind"라는 중앙 집중식 AI 시스템을 사용합니다. 이 AI는 인간형 로봇과 대규모 3D 프린터와 원활하게 작동하여 정확도와 속도로 가정을 건설합니다. 작동 방식은 다음과 같습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## AI 주도의 계획 및 디자인
 
@@ -91,7 +167,18 @@ Hive Mind은 건설 프로세스의 모든 부분을 조정하기 위해 "hive m
 
 ## 현장 준비 및 자재 제조
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사이트 준비
 
@@ -105,7 +192,18 @@ Hive Mind은 건설 프로세스의 모든 부분을 조정하기 위해 "hive m
 
 동기화된 건축: 사이트가 준비되고 자재가 준비되면, 인간형 로봇과 3D 프린터가 작업을 시작합니다. 로봇들은 벽돌 쌓기, 용접 그리고 부품 조립과 같은 작업을 처리하고, 3D 프린터는 레이어별로 큰 구조 요소를 제작합니다. 모든 행동을 조율하는 하이브마인드는 최대 효율성과 정밀도를 보장합니다. 이는 바이올린 대신 벽돌로 이루어진 교향곡 같은 느낌입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **실시간 적응:** AI는 전체 건설 과정을 주시하며 날씨 조건, 자재 가용성, 예상치 못한 장애물과 같은 변화에 실시간으로 조정합니다. 이를 통해 다운타임을 최소화하고 건설이 원활하게 진행됩니다. AI는 각 프로젝트에서 배우며 지속적으로 향상과 최적화를 거듭합니다. 마치 학습을 멈추지 않는 코치와 경기장 빈틈으로부터 당신을 혼내는 일이 없는 친구가 있는 것과 같습니다.
 
@@ -115,7 +213,18 @@ Hive Mind은 건설 프로세스의 모든 부분을 조정하기 위해 "hive m
 
 자동 검사: 고해상도 카메라와 센서가 장착된 드론이 철저한 품질 점검을 수행합니다. AI는 데이터를 분석하여 계획에서의 결함이나 차이를 발견해 최고 품질을 보장합니다. 오븐을 켜놓은 채로 나온 것은 아닌지도 확인할 수 있었으면 좋겠죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술 측면 개요:
 
@@ -125,7 +234,18 @@ Hive Mind은 건설 프로세스의 모든 부분을 조정하기 위해 "hive m
 
 ![ConstructionReimaginedHiveMind_5](/assets/img/2024-05-20-ConstructionReimaginedHiveMind_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 인간형 로봇: 미세한 손과 이동성을 갖춘 최신형 로봇으로, 높은 정밀도로 다양한 건설 작업을 수행할 수 있습니다. 이러한 로봇은 인간에게는 위험할 수 있는 환경에서 작업할 수 있어 건설 현장의 안전성을 높일 수 있습니다.
 
@@ -136,7 +256,18 @@ Hive Mind은 건설 프로세스의 모든 부분을 조정하기 위해 "hive m
 
 # 경제적 인센티브
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하이브 마인드 기술의 경제적 이점은 엄청나요:
 
@@ -146,7 +277,18 @@ Hive Mind은 건설 프로세스의 모든 부분을 조정하기 위해 "hive m
 
 일자리 창출: 전통적인 건설 일자리는 대체될 수 있지만, 로봇공학, AI 개발 및 첨단 제조 등 새로운 일자리가 등장할 것입니다. 이 변화는 혁신을 주도하며 첨단 기술 고용 기회를 창출하여 경제 성장을 촉진할 것입니다. 따라서 여러분이 로봇과 함께 일한다고 말하고 싶었다면, 이제 기회가 왔습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지속 가능성: 재생 가능한 자원을 사용하고 폐기물을 줄이면 건설의 환경 영향이 감소합니다. 이는 세계적인 지속 가능성 목표와 일치하며 생태의식 소비자와 구매자의 관심을 끌어 시장 가치와 수요를 증가시킬 수 있습니다. 지속 가능한 실천은 장기적인 운영 비용을 줄여 주택 소유주들에게 이익이 됩니다. 행성을 구하는 것이자 돈을 아끼는 것? 이건 양쪽 다 이길거에요. 추가 현금을 쇼핑에 털어보지 않는 이상 말이죠. 😉
 
@@ -156,7 +298,18 @@ Hive Mind Construction이 왜 중요한가요? 저희의 사명은 주택을 저
 
 우리의 비전은 혁신적인 기술로 건설된 고품질 친환경 주택에 모든 사람들이 접근할 수 있는 세계를 상상하고 있습니다. 우리는 인공지능, 로봇공학, 지속 가능한 재료를 활용하여 건설 방식을 재정의하고 모든 사람을 위한 미래를 창조하기 위해 헌신하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 그것이 가져올 영향
 
@@ -166,7 +319,18 @@ Hive Mind Construction이 왜 중요한가요? 저희의 사명은 주택을 저
 
 삶의 질 향상: 더 많은 사람들이 고품질이며 튼튼한 주택에 접근할 수 있게 되어 전반적인 생활 수준과 복지가 향상될 것입니다. 안정적인 주거는 더 나은 건강 상태, 교육 결과 및 경제 기회와 연결돼 있습니다. 품질 좋은 주택들.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요약
 

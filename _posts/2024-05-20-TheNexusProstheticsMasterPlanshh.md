@@ -3,13 +3,12 @@ title: "넥서스 보철제 마스터 플랜 쉿"
 description: ""
 coverImage: "/assets/img/2024-05-20-TheNexusProstheticsMasterPlanshh_0.png"
 date: 2024-05-20 19:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TheNexusProstheticsMasterPlanshh_0.png
 tag: Tech
 originalTitle: "The Nexus Prosthetics Master Plan (shh…)"
 link: "https://medium.com/@parsaahm/the-nexus-prosthetics-master-plan-shh-e8a9d8923a72"
 ---
-
 
 ## 넥서스 공동 창업자
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@parsaahm/the-nexus-prosthetics-master-plan-shh-e8a9d8
 
 이러한 목표를 달성하기 위해서는 어떤 절충도 없는 보청 솔루션이 필수적입니다. 저희는 사용자를 위해 자유도와 기능성을 더하고 보청 솔루션이 무엇을 의미하는지를 재정의하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 일부는 수백만 명의 사람들이 보조 기술이 필요한 글로벌 상황에서 이 노력이 정말로 차이를 만드는지에 대해 의심할지도 모릅니다. 우리가 시장에 또 다른 옵션을 추가하기만 하는 건가요? 접근성과 가용성에 현저한 영향을 줄까요?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@parsaahm/the-nexus-prosthetics-master-plan-shh-e8a9d8
 
 혁신에 대한 헌신에 따라 모든 자원이 연구 및 개발에 재투자됩니다. 넥서스 프로스테틱을 구매할 때마다 우리 기술 발전 및 접근성 확대에 직접 기여하게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금, 보조 기구와 관련된 두 가지 일반적인 우려사항에 대해 이야기해 보겠습니다 — 가격과 기능성.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@parsaahm/the-nexus-prosthetics-master-plan-shh-e8a9d8
 
 우리는 보조 기구 사용자에 따라 나일론 또는 폴리카보네이트를 사용합니다. 나일론은 가벼우며 유연하여 보조 기구의 원활한 이동과 자연스러운 느낌을 제공합니다. 폴리카보네이트는 더 튼튼한 필요에 사용됩니다. 액티브한 스포츠나 건설 작업과 같은 활동에 적합합니다. 고 충격 강도와 내열성으로 알려져 있어 튼튼함과 내구성이 필요한 보조 기구에 적합합니다. 또한 가볍기 때문에 사용자의 편안함을 높이는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 생체 적합성 수지를 사용합니다. 이는 생방송 조직(예: 피부)과의 장기적인 접촉이 안전하도록 특별히 제조된 3D 프린팅 소재 유형입니다. 이러한 수지는 이미 의료 산업에서 사용되고 있습니다. 저희는 Stratasys MED610을 사용하고 있습니다. 주로 의료 기기 프로토타이핑에 사용되지만, MED610 수지는 특정 보조기 적용에도 활용될 수 있습니다. 고강도, 내구성 및 생체 적합성을 제공하여 소켓 및 브레이스와 같은 보조 부품을 제작하는 데 적합합니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@parsaahm/the-nexus-prosthetics-master-plan-shh-e8a9d8
 
 EMG는 주로 근육이 생성하는 전기 신호를 측정합니다. 이것은 사용자의 팔다리에 일부 근육 조직이 남아 있는 경우에만 사용됩니다. 예를 들어, 주먹을 쥘 때나 풀 때 특정 진폭이 생성됩니다. 이러한 상태들을 분류하기 위해 AI 모델을 사용하고, 이는 보조기의 입력이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 뇌파(EEG)는 신경세포에서 생성된 전기 신호를 측정하는 것입니다. 근육 조직이 없는 사용자에게만 EEG를 활용합니다. 이는 EMG와 매우 유사하게 작동합니다. 운동 중에 특정 진폭이 생성되며, 이는 AI 모델에 의해 해독됩니다. EEG는 ERPs 또는 사건 관련 전위를 감지할 수도 있습니다. 이것은 특정 선택 또는 감정을 해독하는 데 사용될 수 있습니다. 우리는 ERPs를 가까운 미래에 우리의 보조 기구에 통합하려고 합니다.
 
@@ -59,7 +102,18 @@ EMG는 주로 근육이 생성하는 전기 신호를 측정합니다. 이것은
 
 그래서, Nexys Prosthetics의 마스터 플랜은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 저희의 기술의 최대 잠재력을 보여주는 고급 보조기 솔루션을 개발합니다.
 - 수익을 활용하여 더 많은 사람들을 위한 저렴한 보조기 옵션을 개발합니다.

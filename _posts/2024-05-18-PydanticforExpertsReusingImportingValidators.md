@@ -3,13 +3,12 @@ title: "파이다닉Pydantic 전문가를 위한 Validator 재사용과 가져�
 description: ""
 coverImage: "/assets/img/2024-05-18-PydanticforExpertsReusingImportingValidators_0.png"
 date: 2024-05-18 15:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-PydanticforExpertsReusingImportingValidators_0.png
 tag: Tech
 originalTitle: "Pydantic for Experts: Reusing , Importing Validators"
 link: "https://medium.com/data-engineer-things/pydantic-for-experts-reusing-importing-validators-2a4300bdcc81"
 ---
-
 
 ## 파이썬 모델들 사이에서 검증을 재사용하고 가져오는 고급 기술들.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/data-engineer-things/pydantic-for-experts-reusing-impo
 
 ![이미지](/assets/img/2024-05-18-PydanticforExpertsReusingImportingValidators_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 배경
 
@@ -29,14 +39,25 @@ Pydantic은 스키마 강제에 대한 새로운 사고 방식을 소개합니�
 
 ## Pydantic은 스키마 강제를 위해 3가지 방법을 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 엄격 모드:
-객체에 대해 강제 변환을 수행하지 않습니다 → 예: '"number": "123"'은 실패할 것입니다, 왜냐하면 "123"은 숫자가 아니라 문자열이기 때문입니다.
+  객체에 대해 강제 변환을 수행하지 않습니다 → 예: '"number": "123"'은 실패할 것입니다, 왜냐하면 "123"은 숫자가 아니라 문자열이기 때문입니다.
 - 관대 모드:
-"합리적 형식"에서 예상 형식으로 변환을 수행합니다. 예를 들어 위의 예시는 성공할 것입니다 → 대체: 정수 필드의 부울 값은 0 또는 1로 변환됩니다.
+  "합리적 형식"에서 예상 형식으로 변환을 수행합니다. 예를 들어 위의 예시는 성공할 것입니다 → 대체: 정수 필드의 부울 값은 0 또는 1로 변환됩니다.
 - 사용자 정의 유효성 검사기:
-내부적인 pydantic 유효성 검사 전후에 사용자 정의 유효성 검사 논리를 수행할 수 있습니다. 예를 들어, float(`inf`)를 999_999_999으로 대체할 수 있습니다. 참고: 사용자 정의 유효성 검사기는 엄격 모드 또는 관대 모드와 함께 작동합니다.
+  내부적인 pydantic 유효성 검사 전후에 사용자 정의 유효성 검사 논리를 수행할 수 있습니다. 예를 들어, float(`inf`)를 999_999_999으로 대체할 수 있습니다. 참고: 사용자 정의 유효성 검사기는 엄격 모드 또는 관대 모드와 함께 작동합니다.
 
 사용자 정의 유효성 검사기에 관한 ↓
 
@@ -47,7 +68,18 @@ Pydantic은 스키마 강제에 대한 새로운 사고 방식을 소개합니�
 - 일반적 (또는 "합리적") 변환은 기본 동작입니다 (관대 모드와 함께).
 - 사용자 지정 변환은 사용자 정의 동작을 처리하기 위해 구현될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 소개
 
@@ -57,8 +89,18 @@ Pydantic의 유효성 검사 도구는 데이터 작업 시 강력한 도구입�
 
 제목 형식이어야 하는 필드가 있다고 가정해 봅시다. 이러한 제약 조건을 필드 수준에서 다음과 같이 강제할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from pydantic import field_validator, BaseModel
@@ -66,7 +108,7 @@ from pydantic import field_validator, BaseModel
 
 class Model(BaseModel):
     first_name: str = "Samuel"
-    
+
     @field_validator('first_name')
     def must_be_title_case(cls, v: str) -> str:
         if v != v.title():
@@ -82,16 +124,25 @@ from pydantic import field_validator, BaseModel
 class Model(BaseModel):
     first_name: str = "Samuel"
     last_name: str = "Colvin"
-    
+
     @field_validator('first_name', 'last_name')
     def must_be_title_case(cls, v: str) -> str:
 ```
 
 그러나 여러 모델에서 여러 필드에 걸쳐 이 유효성 검사기를 공유하려면 어떻게 해야 할까요?
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 솔루션 개요:
 
@@ -103,7 +154,18 @@ class Model(BaseModel):
 
 # 옵션 1. 모델 간에 재사용할 수 있는 하나의 유효성 검사 함수 정의하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 프로젝트 내에서 유효성 검사기를 가져와 재사용할 수 있도록 가능하게 합니다.
 
@@ -121,14 +183,14 @@ def must_be_title_case(v: str) -> str:
 class Model1(BaseModel):
     first_name: str = "Samuel"
     last_name: str = "Colvin"
-    
+
     validate_fields = field_validator("first_name", "last_name")(must_be_title_case)
 
 
 class Model2(Model1):
     """Model1에서 필드를 상속받음"""
-    organization: str = "Pydantic" 
-     
+    organization: str = "Pydantic"
+
     validate_fields = field_validator("organization")(must_be_title_case)
 ```
 
@@ -142,11 +204,22 @@ class Model1(BaseModel):
 class Model2(Model1):
     """Model1에서 필드를 상속받음"""
     organization: str = "Pydantic"
-     
+
     validate_fields = field_validator("first_name", "last_name", "organization")(must_be_title_case)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 더 많은 예시를 보여드리겠습니다:
 
@@ -190,7 +263,7 @@ for v in [
     "Colvin"   # 자식의 유효성 검사에 실패할 것이며, L을 포함해서는 안 됩니다.
 ]:
   try:
-    
+
     m = Model2(last_name="colvin")
   except ValidationError as e:
     print(e)
@@ -200,7 +273,18 @@ for v in [
 
 # 옵션 2. Annotated Validator로 유효성 검사 정의하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 재사용 가능한 유효성 검사된 "타입"을 정의할 수 있게 해줍니다. 매우 높은 유연성을 제공합니다.
 
@@ -240,7 +324,18 @@ class Model2(Model1):
 - Pydantic의 유효성 검사 후, 우리의 유효성 검사기 함수를 실행할 것입니다 (AfterValidator로 선언됨) — 이것이 성공하면 반환된 값이 설정됩니다.
 - 대신 어노테이션에서 BeforeValidator를 선언하여 값을 변환하기 전에 함수를 실행할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 사용자 정의 유형 가져오기:
 
@@ -269,7 +364,18 @@ project-root
 
 request_models.people에 사용자 정의 유형이 필요한 경우, 다음과 같이 코드를 작성할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from models.base import MyCustomBaseClass
@@ -287,8 +393,18 @@ class PersonRequestModel(MyCustomBaseClass):
 
 # 옵션 3. 주석이 달린 유형 상속하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특별한 유형 MySpecialString을 상속하고 유효성 검사기를 추가하려면 다음과 같이 할 수 있습니다:
 
@@ -313,7 +429,18 @@ class Model1(BaseModel):
 
 특히, 기존 동작을 추가해야 할 대규모 pydantic 모델 코드베이스와 상호 작용할 때 이 기능이 매우 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 옵션 4. 상속된 모델 유효성 검사기(Class validators)를 사용하여 필드를 서로 비교하십시오.
 
@@ -343,7 +470,18 @@ except ValidationError as e:
   print(e)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 유효성 검사를 재사용하는 것은 ValidatorBase를 상속받는 것만으로 간단합니다.
 
@@ -353,7 +491,18 @@ except ValidationError as e:
 
 # 옵션 5. 일반 모델 유효성 검사의 매핑 및 사적 속성을 통한 적용
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 다른 디자인 접근 방식은 일반적인 모델 유효성 검사자의 매핑을 만들어 키워드를 통해 모델에 할당하는 것입니다.
 
@@ -398,20 +547,42 @@ class Model1(ValidationBase):
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 작업 시 Validator는 중요한 도구입니다. Pydantic은 사용자 정의 검증을 구현하는 여러 방법을 제공합니다. 이 기사에서는 사용자 지정 Validator를 다시 정의하지 않고 동일한 검증 논리를 구현하는 방법을 몇 가지 살펴보았습니다.
 
 # 전문가를 위한 Pydantic 시리즈:
 
 - 이 Pydantic V2의 획기적인 기능들을 보기 전까지 다른 코드 줄을 작성하지 마세요.
-V2에서 소개된 몇 가지 기능에 대한 개요.
+  V2에서 소개된 몇 가지 기능에 대한 개요.
 - 전문가를 위한 Pydantic: Pydantic V2에서의 판별 된 연합
-모델 선택을 구별하다.
+  모델 선택을 구별하다.
 
 ## 참고:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Pydantic 문서
 - 이 게시물을 영감을 준 스택 오버플로우 질문: Pydantic 모델의 여러 필드를 유효성 검사하는 방법은?

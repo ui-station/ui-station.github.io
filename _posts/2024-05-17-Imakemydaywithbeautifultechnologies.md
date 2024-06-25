@@ -3,13 +3,12 @@ title: "나는 아름다운 기술들과 함께 내 하루를 보내요"
 description: ""
 coverImage: "/assets/img/2024-05-17-Imakemydaywithbeautifultechnologies_0.png"
 date: 2024-05-17 19:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-Imakemydaywithbeautifultechnologies_0.png
 tag: Tech
 originalTitle: "I make my day with beautiful technologies"
 link: "https://medium.com/@nikitadevatale06/make-beautiful-day-with-technology-cffac5ecb15e"
 ---
-
 
 놀라운 기술로 모양잡힌 하루를 상상해보세요. 설렘이 가득한 곳에 혁신이 모든 순간을 건드립니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@nikitadevatale06/make-beautiful-day-with-technology-c
 
 조용한 아침에 전기를 탄생시킨 뛰어난 두뇌 니콜라 테슬라를 떠올립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 원하는 대로 알고 있는 스마트 머신이 완벽하게 내려먹은 커피를 마시며, 나는 내 부엌에 있는 전구들에 대해 감사를 표합니다. 이는 테슬라의 영감을 받은 것입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@nikitadevatale06/make-beautiful-day-with-technology-c
 
 ![Image](/assets/img/2024-05-17-Imakemydaywithbeautifultechnologies_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사무실에서 기술은 알렉산더 그레이엄 벨이 상상하지 못했을 정도로 창의성과 팀워크를 촉진합니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@nikitadevatale06/make-beautiful-day-with-technology-c
 
 ![Image](/assets/img/2024-05-17-Imakemydaywithbeautifultechnologies_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 점심 시간은 내 스마트 주방 덕분에 즐거운 시간이에요. 인공지능이 선정한 레시피는 내 영양 요구와 취향을 딱 맞춰줘요.
 
@@ -49,8 +81,18 @@ link: "https://medium.com/@nikitadevatale06/make-beautiful-day-with-technology-c
 
 태양광으로 작동하는 벤치에서 기기를 충전하고, 상호작용하는 키오스크에서 지역 식물과 동물 정보를 공유하는 것도 재미있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Grace Hopper](/assets/img/2024-05-17-Imakemydaywithbeautifultejsonlogies_3.png)
 
@@ -60,8 +102,18 @@ Grace Hopper, 컴퓨터 프로그래밍의 선구자로서 데이터가 얼마�
 
 고대 로마로 옮겨져 폐허 사이를 걸으며 역사가 살아나는 것을 보게 됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기술은 컴퓨터 그래픽 분야에서 이반 서덜랜드의 초기 작업을 기반으로하며 나의 시야를 넓히고 감각을 사로잡습니다.
 
@@ -71,7 +123,18 @@ Grace Hopper, 컴퓨터 프로그래밍의 선구자로서 데이터가 얼마�
 
 이러한 원활한 기술 통합은 인터넷 창조자부터 고급 알고리즘 개발자에 이르기까지 여러 혁신가들을 위한 예방으로 이루어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술이 얼마나 깊게 뿌리를 내리고 있는지 알 수 있어요. 위대한 과학자들의 영감을 받은 기술은 우리 삶 안에 얽혀들어 있어요.
 

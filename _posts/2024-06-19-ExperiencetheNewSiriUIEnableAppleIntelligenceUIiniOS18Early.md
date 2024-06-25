@@ -3,14 +3,12 @@ title: "iOS 18 Early에서 새로운 Siri UI애플 인텔리전스 UI를 만나�
 description: ""
 coverImage: "/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_0.png"
 date: 2024-06-19 14:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_0.png
 tag: Tech
 originalTitle: "Experience the New Siri UI (Enable Apple Intelligence UI) in iOS 18 Early"
 link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-intelligence-ui-in-ios-18-early-73045d70492c"
 ---
-
-
 
 ![이미지](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 
 # 중요 사항:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 새로운 Siri UI를 활성화하면 사용자 인터페이스만 변경됩니다. Apple Intelligence 기능은 아직 제공되지 않습니다.
 
@@ -30,10 +38,21 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 ## 시작하기 전에
 
 - 장치 백업: 진행하기 전에 장치를 백업해야 합니다. 데이터는 중요하며 보호해야 합니다.
-- Find My iPhone/iPad 비활성화: 설정에서 ` [당신의 Apple ID] ` Find My ` Find My iPhone/iPad로 이동하여 일시적으로 비활성화하세요.
+- Find My iPhone/iPad 비활성화: 설정에서 `[당신의 Apple ID]` Find My ` Find My iPhone/iPad로 이동하여 일시적으로 비활성화하세요.
 - 필수 조건: 이 프로세스에는 Mac 또는 Windows PC가 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_1.png" />
 
@@ -42,10 +61,20 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 ## Mac 사용자를 위한 방법
 
 - Cowabunga Lite 다운로드 및 설치:
-이 Github 링크로 이동하여 macOS 12 버전을 다운로드하십시오.
+  이 Github 링크로 이동하여 macOS 12 버전을 다운로드하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Step 2: Connect Your Device](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_2.png)
 
@@ -55,9 +84,18 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 
 3. Open Cowabunga Lite. You’ll be greeted with this screen.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_4.png)
 
@@ -67,10 +105,18 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 
 5. Import the Configuration File: Click on Import .cowperation, then select the iOS_18_Siri.cowperation
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-ExperiencetheNewSiriUIEnableAppleIntelligenceUIiniOS18Early_6.png)
 
@@ -80,8 +126,18 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 
 7. 조정 적용: 왼쪽에있는 "적용" 탭으로 이동하여 조정 적용 버튼을 클릭하세요. 이 과정은 시간이 걸릴 수 있습니다. 기기가 다시 시작되고 설정 화면이 표시됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 경고: "iPhone 부분 설정됨"이라는 화면을 만나면 큰 파란 버튼을 누르지 마세요. 대신 데이터를 보호하려면 "부분 설정으로 계속"을 눌러주세요.
 
@@ -91,7 +147,18 @@ link: "https://medium.com/macoclock/experience-the-new-siri-ui-enable-apple-inte
 
 ## Windows 사용자를 위한
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Cowabunga Lite 다운로드 및 설치: 구글에서 소프트웨어를 검색합니다.
 - 기기 연결: USB 케이블을 사용하여 iPhone 또는 iPad을 PC에 연결합니다.

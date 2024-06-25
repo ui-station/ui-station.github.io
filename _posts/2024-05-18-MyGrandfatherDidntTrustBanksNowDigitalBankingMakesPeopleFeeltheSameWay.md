@@ -3,13 +3,12 @@ title: "할아버지는 은행을 믿지 않았다 이제, 디지털 뱅킹이 �
 description: ""
 coverImage: "/assets/img/2024-05-18-MyGrandfatherDidntTrustBanksNowDigitalBankingMakesPeopleFeeltheSameWay_0.png"
 date: 2024-05-18 20:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MyGrandfatherDidntTrustBanksNowDigitalBankingMakesPeopleFeeltheSameWay_0.png
 tag: Tech
 originalTitle: "My Grandfather Didn’t Trust Banks. Now, Digital Banking Makes People Feel the Same Way."
 link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-now-digital-banking-makes-people-feel-the-same-way-4bd564d14998"
 ---
-
 
 ![image](/assets/img/2024-05-18-MyGrandfatherDidntTrustBanksNowDigitalBankingMakesPeopleFeeltheSameWay_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 ## 할아버지는 옛 방식으로은 뱅킹을 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 은행에 간 적이 있던 유일한 경우는 월급을 현금화하기 위한 것이었습니다. 그는 그 돈을 모두 매트리스 아래에 넣어두었습니다. 청구해야 할 청구서가 있으면, 그는 사업장으로 가서 현금을 전달했습니다. 차를 포함한 물건을 살 때도 현금으로 지불했습니다. 돈이 없으면 사지 않았습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 오늘은 매우 달라졌습니다. 내 지갑에 현금이 있던 마지막 시간을 기억할 수가 없어요. 모두 카드나 앱을 사용하거나, 시장 앞에서 과자를 판매하는 걸스카우트조차도 그렇습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현금을 사용하는 유일한 시간은 복권을 사는 드문 경우일 때뿐이에요. 복권 관계자들은 똑똑해요. 카드는 받지 않아요. 그 대신, 장보는 돈을 내고 현금을 받아오면, 바로 매장 앞의 복권 판매기로 가요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 일부 사람들은 수표와 현금이 여전히 물건을 지불하는 더 나은 방법이라고 믿어요. 그들이 틀렸다는 게 너무나 안타까운게요, 상황이 많이 바뀌었거든요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 아직 수표를 사용 중이라면 문제가 있을 수 있어요.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 수표장도 훔치면 일이 더 간단해져요. 모바일 뱅킹 앱을 통해 앞뒤를 촬영하여 수표를 입금할 수 있죠. 도용범이 여러분의 서명을 맞추지 못해도 문제가 되지 않아요. 도둑은 단지 돈을 다른 계정으로 넣어 출금할 수 있는 만큼만 잠시 보관하면 돼요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 할아버지처럼 현금만 사용해서 벗어날 수 있을까 궁금했지만, 수표보다 문제가 더 많았어. 우리 모두는 할아버지가 돈을 숨겨 둔 곳을 잘 알고 있었으며, 몇 장을 몰래 꺼내도 괜찮겠지만, 그가 얼마나 많은 돈을 가졌는지 정확히 알지 못할까 두려워했어. 할아버지는 가끔씩 현금을 옮긴다고 주장했지만, 믿는 사람은 아무도 없었어.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 대마초 흡연자들이 도와줄 수도 있을 거야. 그들은 가짜 비어 있는 캔, 병, 그리고 다른 가정용품을 사용해 자신의 판매품을 감췄다. "비밀을 폭로했다"고 나에게 화내지 말아 줘. 이건 도둑질 기초 수업이니까.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이제, 디지턈 뱅킹에 대해 이야기해 봐요.
 
@@ -69,7 +123,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 청구서를 예약할 수도 있어요. 만기일에 맞춰 청구서를 스케줄링하여 한 번에 모두 지불한 뒤 잊어버릴 수도 있어요. 자동 결제도 도와줄 거예요. 이제 무언가를 지불했는지 기억해야 하는 수고는 없어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 사람들이 월급을 직접 예금으로 받지만, 여러분은 자동으로 월급을 다른 계좌에 나눠 넣을 수 있다는 사실을 알고 계셨나요?
 
@@ -79,7 +144,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 이전에 언급한 바와 같이, 이는 기술에 어려움을 겪는 노인들과 관련이 없습니다. 자녀들도 자신의 비밀번호를 기억하거나 이중 인증을 사용하려는 점에서 탁월하지 않습니다. 젊은 사람들이 기술에 둘러싸여 자라고 있기 때문에 이점이 있다고 해서 유리한 것은 아닙니다고 진술했어요. 그들도 결국 여러분과 마찬가지로 소비자일 뿐이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 신원이 도용되는 건 대개 당신이 실수를 한 결과입니다. 아마도 자기가 너무 기술에 능숙하다고 생각해서 사기에 속지 않을 거라 생각할 수도 있지만, 돈을 훔치는 방법들은 점점 더 정교해지고 있는 중이에요. 전 세계적인 거대 기업의 부사장인 친구가 있었는데, 최근에 6,000달러를 잃었던 사기 사건을 해결하는 데 도와줬어요. 그의 문제는 뭘까요? 약한 암호였어요.
 
@@ -89,7 +165,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 여러 사이트에서 동일한 암호를 재사용하나요? 노튼에 따르면 암호를 재사용하는 사람들 때문에 사고가 발생한다고 하네요. 이 통계는 우리 중 91%가 암호를 재사용하는 것은 보안 위험이라는 걸 알고 있다는 점에서 두드러지네요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애완동물의 이름이나 생일을 비밀번호로 사용하는 것도 좋지 않은 생각이에요. 이것 역시 사기꾼들에게는 너무 쉬운 방법이죠.
 
@@ -99,7 +186,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 비밀번호 관리자가 없더라도 기기들이 비밀번호를 저장할 것인지 묻는 경우가 있을 거에요. 이는 괜찮은 일이에요. 왜냐하면 로그인 정보가 강력하고, 이중 요소 인증을 사용하고 있으니까 말이죠? 제가 디지털 자산을 보호하는 실용적인 방법들을 마지막에 다룰게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이제, 복잡성에 대해 이야기해 봅시다.
 
@@ -109,7 +207,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 앱과 기기도 마찬가지에요. 중요한 일을 해내기 위한 충분한 지식만 알면 돼요. 나이가 무엇이든지, 새로운 일을 배우고 있는데, 그럼 왜 휴대폰 앱을 배우는 것이 다른 거라 생각하는 건지요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결론: 스스로를 보호할 수 있는 방법은 많이 있습니다.
 
@@ -119,7 +228,18 @@ link: "https://medium.com/illumination-curated/my-grandfather-didnt-trust-banks-
 
 금액이나 빚을 기프트 카드로 지불하지 마십시오. 예를 들어, IRS가 왜 기프트 카드로 지불하길 원할까요? 안타깝게도 이에 속은 친구가 있습니다. 애플 스토어에서 우리는 사기당하는 사람들을 돕기위해 기프트 카드가 어떻게 사용될지 물어보는 교육을 받았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공항, 커피숍, 도서관 및 호텔에서 사용할 때 공공 와이파이를 사용해서는 절대 은행 업무를 하거나 물건을 구매하지 마세요. 이메일이나 문자 메시지에서 은행 링크를 클릭하거나 전화번호를 걸지 마세요.
 

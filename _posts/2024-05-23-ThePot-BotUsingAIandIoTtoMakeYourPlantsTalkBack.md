@@ -18,12 +18,23 @@ link: "https://medium.com/@barzik/the-pot-bot-using-ai-and-iot-to-make-your-plan
 
 프로젝트의 핵심은 Raspberry Pi로 이루어진 것입니다. 화분 내 센서에서 정보를 수집하고, 이 데이터는 Python 코드를 사용하여 처리됩니다. 센서의 정보를 가볍고 Tiny Dolphin이라는 모델로 변환한 후 이를 장치 내에서 실행되는 espeak로 전송합니다. 그리고 Tiny Dolphin에서 나온 출력은 화분 옆의 Bluetooth 연결 스피커로 전송됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_1.png)
 
 What you will need:
+
 - Raspberry Pi, and the knowledge to SSH into it.
 - Moisture sensor.
 - Jumper wires.
@@ -32,8 +43,18 @@ What you will need:
 
 # Preparing the Environment
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫째로, Raspberry Pi를 업그레이드하세요:
 
@@ -48,7 +69,18 @@ sudo apt-get upgrade
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_2.png" />
 
@@ -60,8 +92,18 @@ ollama run tinydolphin
 
 "Send a message (/? for help)"가 나타나면 모델이 준비된 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_3.png)
 
@@ -71,8 +113,18 @@ ollama run tinydolphin
 
 ![Image 2](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 블루투스 연결 설정
 
@@ -86,7 +138,18 @@ bluetoothctl;
 
 2. 장치 검색:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 scan on
@@ -102,7 +165,18 @@ connect 4C:65:A8:5E:CE:95
 trust 4C:65:A8:5E:CE:95
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_6.png" />
 
@@ -115,7 +189,18 @@ pulseaudio - version;
 pacmd - version;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 블루투스 스피커를 기본 오디오 출력 장치로 설정해보세요:
 
@@ -131,7 +216,18 @@ wget https://freewavesamples.com/files/Police-Siren.wav
 aplay Police-Siren.wav
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 텍스트 음성 변환기 설치하기
 
@@ -144,7 +240,18 @@ espeak "hello"
 
 # 모든 것을 함께 적용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트 폴더와 `index.py` 파일을 만들어주세요. 이 스크립트는 CPU 온도를 읽고 Tiny Dolphin에 프롬프트를 보내며 응답을 음성으로 변환합니다.
 
@@ -201,7 +308,18 @@ if __name__ == "__main__":
 
 # 센서 연결하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 라즈베리 파이의 GPIO에 직접 센서를 연결하여 냄비가 CPU 온도가 아닌 자신에 대해 이야기하도록 설정해보세요.
 
@@ -211,8 +329,18 @@ GPIO를 사용하면 다양한 센서로부터 입력을 받아 라즈베리 파
 
 이제 습도 센서를 연결해보겠습니다. 많은 온라인 상점에서 구할 수 있습니다. 디지털 센서가 필요하며, 더 쉽고 테스트하기 편한 워터 센서를 사용할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_8.png)
 
@@ -222,8 +350,18 @@ There should be three pins with VCC, GND, and DO—if there are four pins (with 
 
 Let`s connect the jumpers. You should connect the GND to the ground pin, the VCC to the 3V outlet, and the DO to GPIO17.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 테스트해보세요: 이 Python 코드를 temp.py 파일로 작성하고 "python3 temp.py"로 실행하세요.
 
@@ -252,7 +390,18 @@ finally:
 
 ![이미지](/assets/img/2024-05-23-ThePot-BotUsingAIandIoTtoMakeYourPlantsTalkBack_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 센서를 연결할 수 있어요. 연결할수록 식물이 더 많은 데이터를 가지고, 환경에 대해 더 나은 대응을 할 거예요. 하지만 지금은 물 센서로만 진행하죠.
 
@@ -314,7 +463,18 @@ if __name__ == "__main__":
     main()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고... 말합니다!
 

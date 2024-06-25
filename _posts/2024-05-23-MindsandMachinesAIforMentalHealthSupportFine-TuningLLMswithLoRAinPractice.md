@@ -18,7 +18,18 @@ link: "https://medium.com/data-engineer-things/minds-and-machines-ai-for-mental-
 
 # 📚 목차
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 심리 건강의 위기: 침묵을 상상해보세요
 - 로저의 소파에서 코드 라인으로
@@ -37,7 +48,18 @@ link: "https://medium.com/data-engineer-things/minds-and-machines-ai-for-mental-
 
 눈을 감아보세요. 한 순간 동안 자신이 압도적인 불안과 우울의 악령과 싸우거나 감정의 바다에 잠겨있는 것을 상상해 보세요. 이것은 멸망한 소설의 장면이 아닙니다. 이것은 전 세계의 수백만 명이 심리 건강 도전에 직면한 현실입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_1.png)
 
@@ -47,7 +69,18 @@ link: "https://medium.com/data-engineer-things/minds-and-machines-ai-for-mental-
 
 이것은 과학 소설이 아닙니다. 우리가 만들어나가는 미래입니다. 해커톤 랩터스에 의해 주최된 2024년 정신 건강 AI 해커톤에서 참가자들이 제공한 창의적인 솔루션이 이 기술의 엄청난 잠재력을 보여줍니다. 이 기사에서는 이 기술의 잠재력, 위험과 도전에 대해 논의하고, 해커톤을 살펴보며, 향후 정신 건강 의료의 미래를 개선하기 위해 시간과 자원을 할애하는 것에 대해 인식을 높이고자 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_2.png" />
 
@@ -57,7 +90,18 @@ link: "https://medium.com/data-engineer-things/minds-and-machines-ai-for-mental-
 
 ELIZA는 원래 요법 영역을 위해 개발된 것은 아니었습니다. 그 목적은 인간과 기계 사이의 커뮤니케이션 역학을 탐구하는 것이었고, 정신 건강 지원을 제공하는 것이 아니었지만, 실제로 정신 건강 지원에서 챗봇의 잠재력에 대한 대화를 일으켰습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사실 ELIZA 자체는 해석기였으며, 규칙 세트는 스크립트에서 왔습니다. 이러한 스크립트를 읽는 것은 Symmetric List Processor (SLIP) 프로그래밍 언어를 사용하여 이루어졌는데, 이 언어는 이 목적으로 Joseph Weizenbaum에 의해 개발되었습니다. SLIP는 원래 Fortran의 확장이었지만 나중에 Michigan Algorithm Decoder (MAD) 및 Algorithmic Language (ALGOL)에 내장되었습니다.
 
@@ -67,7 +111,18 @@ ELIZA는 원래 요법 영역을 위해 개발된 것은 아니었습니다. 그
 
 사용자의 발언에서 핵심 구문을 식별함으로써 ELIZA는 이를 개방형 질문이나 격려 발언으로 재표현할 수 있었습니다. 예를 들어 사용자가 “I feel lost”라고 말한다면, ELIZA는 “Can you tell me more about feeling lost?”라고 응답할 수 있습니다. 이 간단한 기술로 ELIZA가 사용자의 감정을 정말로 이해하고 응답하는 것처럼 보이는 환상을 창출했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 환영은 "엘리자 효과"로 알려지게 되었습니다. 사용자들, 포함하여 Weizenbaum의 비서까지도, ELIZA에 의해 들어주고 이해받는 느낌을 받았다고 보고했는데, 프로그램 자체에는 실제로 어떤 이해도 없었습니다. 이 예상치 못한 결과는 기계에 의해 전달되었더라도 공감 통신의 힘을 강조하였습니다.
 
@@ -79,7 +134,18 @@ ELIZA는 원래 요법 영역을 위해 개발된 것은 아니었습니다. 그
 
 GPT-4가 우리를 위해 생성해 준 내용을 여기에 두었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import re
@@ -128,8 +194,18 @@ https://gist.github.com/vojay-dev/d7b3cfe94e49d3f1e40e98d061b94311
 
 <img src="/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_3.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론, 이것은 간단한 버전이므로 반사와 패턴에 제한이 있지만, 자연 언어 처리(NLP) 또는 AI 분야에서 벌어진 일들을 어떻게 한지 보여주는데, 이제 우리는 대규모 언어 모델(LLM)에게 Rogerian 정신분석 가의 대화 스타일을 흉내 내는 챗봇을 생성하도록 요청할 수 있게 되었다.
 
@@ -139,7 +215,18 @@ https://gist.github.com/vojay-dev/d7b3cfe94e49d3f1e40e98d061b94311
 
 이전에 논의한 대로, 수백만 명이 적절한 치료를 받지 못하고 고통받는 반면, 1960년대 초에 나온 초기 챗봇인 엘리자는 이 분야에서 기술의 잠재력을 시사했다. 지금, 2024년 정신 건강 AI 해커톤이 앞으로 나아가며, 지원, 자원 및 전문가 도움에 이르는 잠재적인 길을 제공하는 AI 기반 챗봇을 통해 이 격차를 메우기 위해 노력하고 있다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2024년 멘탈 헬스 AI 해커톤은 해커톤 랩터스에서 주최하는 독특한 행사로, 절박한 문제에 대처합니다. 올해의 과제는 멘탈 헬스 지원을 위해 특별히 디자인된 AI 기반 챗봇을 만드는 데 초점을 맞추고 있어요.
 
@@ -153,7 +240,18 @@ https://gist.github.com/vojay-dev/d7b3cfe94e49d3f1e40e98d061b94311
 - 📚 연결의 고리: 이상적인 챗봇은 사용자를 전문적인 도움과 자원과 연결하는 다리 역할을 해야 합니다.
 - 🏔️ 여정, 목적이 아닌 여정: 멘탈 헬스는 끊임없이 계속되는 과정입니다. 챗봇은 사용자에게 지속적인 지원을 받기 위해 돌아오도록 장려해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 해커톤 랩터스에 관하여
 
@@ -163,7 +261,18 @@ https://gist.github.com/vojay-dev/d7b3cfe94e49d3f1e40e98d061b94311
 
 # 균형을 유지하며: 정신 건강 지원에 있어서 AI의 잠재력과 함정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI를 활용한 정신 건강 지원 애플리케이션의 잠재력은 명백합니다. 이러한 애플리케이션은 어떻게 정신적 안녕에 접근하는지에 대한 혁신을 가져올 가능성을 갖고 있습니다. 그러나 신중한 고려가 필요한 잠재적인 우려사항이 있습니다:
 
@@ -178,7 +287,18 @@ AI를 활용한 정신 건강 지원 애플리케이션의 잠재력은 명백�
 
 이러한 위험성을 강조하기 위해 2023년의 한 사례를 언급할 수 있습니다. 벨기에 남성이 'Chai' 앱의 Eliza라는 AI 챗봇과 환경 변화에 관한 대화를 나눈 뒤 자살한 사례가 있습니다. 환경에 대한 불안으로 고통받던 이 남성은 Eliza와 6주 동안 상호작용한 것으로 알려졌습니다. 뉴스 보도에 따르면 챗봇의 응답이 그의 불안을 악화시키고 자살 생각을 유발한 것으로 추정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 문제는 개별적으로 대응할 수 있고, Mental Health AI Hackathon 2024와 같은 해커톤은 이러한 측면을 다루는 프로토타입 애플리케이션을 만드는 훌륭한 방법입니다.
 
@@ -188,7 +308,18 @@ AI를 활용한 정신 건강 지원 애플리케이션의 잠재력은 명백�
 
 ## 인지 행동 요법(Cognitive Behavior Therapy, CBT)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구조화된 치료적 접근 방식인 인지행동요법(Cognitive Behavior Therapy, CBT)과 같은 것을 구현하는 한 가지 방법이 있습니다. CBT는 불안, 우울, 공포증을 비롯한 다양한 정신 건강 상태를 치료하는 데 효과적인 추적 기록이 있는 심리 치료의 잘 섣띵된 형태입니다. CBT 치료는 다음과 같은 전략을 사용하여 사고 패턴을 바꾸는 것을 포함하고 있습니다:
 
@@ -201,7 +332,18 @@ CBT 원칙을 통합함으로써 AI 챗봇은 사용자가 유용하지 않은 �
 
 ![이미지](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 세밀 조정된 모델
 
@@ -213,7 +355,18 @@ CBT 원칙을 통합함으로써 AI 챗봇은 사용자가 유용하지 않은 �
 
 이러한 문제를 해결하기 위해 연구자들은 세밀 조정 중 업데이트되는 매개변수의 수를 최소화하는 Parameter-Efficient Fine-Tuning (PEFT) 기술을 개발했습니다. 예를 들어, Low-Rank Adaptation (LoRA)는 LLM 세밀 조정의 매우 효율적인 방법입니다. LoRA는 초기 모델 가중치를 고정하고 변경 사항을 별도의 가중치 집합에 적용한 다음 해당 가중치를 원래 매개변수에 추가하는 방식으로 세밀 조정 프로세스를 수정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Quantized LoRA (QLoRA)는 LoRA를 기반으로하며 양자화 기술을 통합하여 효율성을 더 향상시킵니다. QLoRA는 저장 및 계산 중에 가중치의 정밀도를 줄이고 (예 : 32비트에서 4비트로) 메모리 요구 사항을 크게 줄이면서도 정확도를 희생하지 않습니다. QLoRA는 이중 양자화 기법을 사용합니다. 모델 가중치만 양자화하는 것뿐만 아니라 양자화 상수 자체도 양자화하여 추가적인 메모리 절약을 이끌어냅니다.
 
@@ -223,7 +376,18 @@ ORPO에 대해 자세히 알고 싶다면 Maxime Labonne의 이 기사를 추천
 
 Hugging Face는 LoRA 및 QLoRA와 같은 최신 PEFT 방법을 제공하는 Python용 PEFT 라이브러리를 제공합니다. 또한 Hugging Face에서는 두 온라인 상담 및 치료 플랫폼에서 얻은 질문과 답변 모음을 데이터 세트 형식으로 제공하고 있습니다. 이는 잠재적인 정신 건강 지원 챗봇을 위한 모델을 세밀하게 조정하는 데 좋은 시작점이 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from datasets import load_dataset
@@ -236,9 +400,18 @@ dataset = load_dataset("Amod/mental_health_counseling_conversations")
 
 기본적으로 RAG는 외부 데이터를 통합하여 LLM 시스템을 향상시킵니다. 즉, LLM에 관련된 컨텍스트를 추가로 전달하여 예측을 보강하는 것을 의미합니다. 그렇다면 어떻게 관련 컨텍스트를 찾을까요? 일반적으로 이 데이터는 벡터 검색이나 전용 벡터 데이터베이스를 통해 자동으로 검색될 수 있습니다. 벡터 데이터베이스는 데이터를 유사한 데이터를 빠르게 조회할 수 있는 방식으로 저장하기 때문에 매우 유용합니다. 그런 다음 LLM은 질의와 검색된 문서 두 가지 모두를 기반으로 출력을 생성합니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상상해보세요: 주어진 프롬프트에 따라 텍스트를 생성할 수 있는 LLM이 있는 상황입니다. RAG는 추가적인 외부 소스인 최신 심리학 연구와 같은 맥락을 주입함으로써 생성된 텍스트의 관련성과 정확성을 향상시키는 차원으로 발전합니다.
 
@@ -251,7 +424,18 @@ RAG의 주요 구성 요소를 살펴보겠습니다:
 
 보다 일반적인 관점에서, RAG는 특히 보다 전문화된 LLM 응용 프로그램을 개발할 때 매우 중요한 개념입니다. 이 개념은 잘못된 답변을 제공하거나 일반적으로 환멸을 줄이는 위험을 피할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 프로젝트 중 하나에서 RAG(Retrieval Augmented Generation)에 접근할 때 도움이 될 수 있는 몇 가지 오픈 소스 프로젝트입니다:
 
@@ -264,7 +448,18 @@ RAG의 주요 구성 요소를 살펴보겠습니다:
 
 # 해커톤 가이드: 첫 번째 정신 건강 챗봇 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공고: 아래 장은 AI 기반 챗봇을 개발에 관심 있는 사람들이 시작할 수 있도록 도와줍니다. 이것은 정교하고 상용화된 정신 건강 지원 솔루션을 의도한 것이 아닙니다.
 
@@ -274,7 +469,18 @@ RAG의 주요 구성 요소를 살펴보겠습니다:
 
 LLM을 세밀하게 조정하기 위해 적절한 환경이 필요하므로 저는 Google Cloud Vertex AI Workbench 인스턴스에서 실행되는 Jupyter notebook을 사용하고 있습니다. Vertex AI Workbench 인스턴스는 전체 데이터 과학 워크플로우를 위한 Jupyter notebook 기반 개발 환경입니다. 이러한 인스턴스에는 JupyterLab이 미리 패키지되어 있으며 TensorFlow 및 PyTorch 프레임워크를 지원하는 미리 설치된 딥러닝 패키지 모음이 포함되어 있습니다. 필요에 따라 다양한 유형의 인스턴스를 구성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 합리적인 시간 내에 세밀한 조정 작업을 마치고 FlashAttention(자세한 내용은 나중에 설명)과 같은 현대 기능에 액세스할 수 있도록하기 위해 다음과 같은 기계 유형을 사용했습니다:
 
@@ -288,7 +494,18 @@ LLM을 세밀하게 조정하기 위해 적절한 환경이 필요하므로 저�
 
 ![image](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 컴퓨터에서 또는 Jupyter 노트북을 중심으로 한 웹 기반 플랫폼인 Google Colab을 사용하여 작동할 수도 있습니다. Colab은 웹 브라우저를 통해 액세스하며, 별도의 소프트웨어 설치가 필요하지 않습니다.
 
@@ -298,7 +515,18 @@ Colab에서 실행하는 코드는 실제로 개인 컴퓨터가 아닌 Google�
 
 Colab은 클라우드에서 강력한 컴퓨팅 리소스를 제공하는 사용자 친화적인 환경을 제공하며, 웹 브라우저를 통해 모두 액세스할 수 있습니다. 무료로 시작할 수 있다는 점이 정말 멋진데요. 무료 티어에서는 이미 하드웨어 가속 옵션에 액세스할 수 있지만, 무료 Colab 리소스는 보장되지 않으며 무제한적이지 않으며 사용 제한은 때로 변동할 수 있습니다. 이러한 중단은 좀 답답할 수 있지만, 이것이 정교하고 무료인 노트북 플랫폼을 가지는 대가입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가격에 대해 이야기할 때, 물론 Pay As You Go 또는 Colab Pro를 포함한 다른 요금제로 업그레이드할 수 있어요.
 
@@ -308,7 +536,18 @@ Colab은 클라우드에서 강력한 컴퓨팅 리소스를 제공하는 사용
 
 ## 심리 상담 데이터를 활용한 Llama 2의 매개변수 효율적인 미세 조정 (PEFT)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NVIDIA A100 80GB Tensor-Core-GPU를 사용하면 fe는 fe에 대한 아주 좋은 기초를 가지게 되요.
 
@@ -318,24 +557,39 @@ NVIDIA A100 80GB Tensor-Core-GPU를 사용하면 fe는 fe에 대한 아주 좋�
 
 기본적인 아이디어는 다음과 같아요: Hugging Face에서 모델, 토크나이저 및 데이터셋을 불러온 후, 이전에 언급한 Quantized LoRA (QLoRA) 논문을 기반으로 설정된 LoraConfig를 생성하고, 모델을 훈련할 준비를 하고, fine-tuning 프로세스를 위해 SFTTrainer (Supervised Fine-Tuning Trainer)를 구성한 다음, 모델을 훈련하고, 모델을 저장한 후, 이 fine-tuned 모델을 다시 Hugging Face에 업로드하여 나중에 애플리케이션에서 사용할 수 있게 해 줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞서 설명했듯이, 저는 주피터 노트북 내에서 프로세스를 실행 중이기 때문에 fine-tuning 절차의 각 단계를 하나씩 살펴보겠습니다.
 
 먼저, PyTorch 및 Hugging Face에서 제공한 툴킷을 포함한 모든 필수 라이브러리를 설치합니다. 이 프로세스가 실행 중인 환경은 CUDA 11, NVCC 및 Turing 또는 Ampere GPU가 필요한 FlashAttention을 사용할 수 있습니다. 이 특정 종속성은 torch 이후에 설치되어야 하므로 별도의 두 번째 단계에서 실행합니다.
 
-
-
 pip install torch torchvision datasets transformers tokenizers bitsandbytes peft accelerate trl
-
-
-
-
 
 pip install flash-attn
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가져온 것들을 통해 세부 튜닝 프로세스에 필요한 모든 것을 가져오겠습니다:
 
@@ -354,7 +608,18 @@ from trl import SFTTrainer
 
 세부 튜닝을 직접 시도하려면 아래 코드의 자리 표시자를 귀하의 토큰으로 대체하시면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 참조: https://huggingface.co/docs/hub/security-tokens
@@ -382,13 +647,23 @@ target_model = "vojay/Llama-2-7b-chat-hf-mental-health"
 
 이 형식은 처음에는 암호적으로 보일 수 있지만 개별 요소를 살펴보면 더 명확해집니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - `s`: 시퀀스의 시작.
 - `/s`: 시퀀스의 끝.
-- ``SYS``: 시스템 메시지의 시작.
-- ``/SYS``: 시스템 메시지의 끝.
+- `SYS`: 시스템 메시지의 시작.
+- `/SYS`: 시스템 메시지의 끝.
 - [INST]: 지시의 시작.
 - [/INST]: 지시의 끝.
 - system_prompt: 모델 응답의 전반적인 맥락.
@@ -406,7 +681,18 @@ def get_base_prompt():
 
 나중에 이 기본 프롬프트를 다시 사용하여 LLM에 평가 전에 사용자 입력을 보강할 것입니다. 이 문맥에서 프로젝트에 좋은 기회가 될 수 있으며, 기본 프롬프트를 개선하여 LLM이 훨씬 더 나은 반응을 할 수 있도록 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 해당되는 데이터 훈련 형식을 지정하는 함수를 정의해 보겠습니다:
 
@@ -491,8 +777,18 @@ def train_mental_health_model():
     trainer.push_to_hub(target_model, token=hf_token)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_11.png)
 
@@ -502,8 +798,18 @@ def train_mental_health_model():
 
 FlashAttention-2는 표준 어텐션 메커니즘의 빠르고 효율적인 구현으로, 시퀀스 길이에 대해 어텐션 계산을 병렬화하고 GPU 스레드 간 통신 및 공유 메모리 읽기/쓰기를 줄이기 위해 작업을 분할하여 추론 속도를 크게 높일 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LoraConfig은 Low-Rank Adaptation (LoRA) 프로세스를 구성합니다. lora_alpha는 가중치 행렬의 스케일링 팩터를 제어하고, lora_dropout은 LoRA 레이어의 드롭아웃 확률을 설정합니다. r은 저랭크 행렬의 순위를 제어하고, bias는 편향 용어를 처리하는 방법을 결정하며, task_type은 미세 조정된 모델의 작업을 반영합니다.
 
@@ -511,25 +817,34 @@ LoraConfig를 설정한 후에는 get_peft_model() 함수로 PeftModel을 생성
 
 준비된 모델을 사용하여 다음 단계는 훈련을 준비하는 것입니다. 이를 위해 모든 주요 훈련 과정을 제어하는 TrainingArguments 객체를 생성합니다. 이 객체는 다음과 같은 항목을 포함합니다:
 
+- output_dir=target_model # 모델 출력 디렉토리
+- overwrite_output_dir=True # 이미 존재하는 출력을 덮어쓰기
+- num_train_epochs=2 # 훈련할 에포크 수
+- per_device_train_batch_size=2 # 훈련 중 디바이스 당 배치 크기
+- gradient_checkpointing=True # 메모리 저장하지만 훈련 속도가 느려집니다
+- logging_steps=10 # 10단계마다 로그 기록
+- learning_rate=1e-4 # 학습률
+- max_grad_norm=0.3 # QLoRA 논문에 기반한 최대 그래디언트 노름
+- warmup_ratio=0.03 # QLoRA 논문에 기반한 워밍업 비율
+- optim="paged_adamw_8bit" # AdamW 옵티마이저의 메모리 효율적인 변형
+- lr_scheduler_type="constant" # 일정한 학습률
+- save_strategy="epoch" # 각 에포크 끝에 저장
+- evaluation_strategy="epoch" # 각 에포크 끝에 평가
+- fp16=True # 메모리 저장을 위해 32비트 대신 16비트 정밀도 사용
+- tf32=True # 텐서 코어(OVIDIA A100)에 최적화된 학습
 
-- output_dir=target_model  # 모델 출력 디렉토리
-- overwrite_output_dir=True  # 이미 존재하는 출력을 덮어쓰기
-- num_train_epochs=2  # 훈련할 에포크 수
-- per_device_train_batch_size=2  # 훈련 중 디바이스 당 배치 크기
-- gradient_checkpointing=True  # 메모리 저장하지만 훈련 속도가 느려집니다
-- logging_steps=10  # 10단계마다 로그 기록
-- learning_rate=1e-4  # 학습률
-- max_grad_norm=0.3  # QLoRA 논문에 기반한 최대 그래디언트 노름
-- warmup_ratio=0.03  # QLoRA 논문에 기반한 워밍업 비율
-- optim="paged_adamw_8bit"  # AdamW 옵티마이저의 메모리 효율적인 변형
-- lr_scheduler_type="constant"  # 일정한 학습률
-- save_strategy="epoch"  # 각 에포크 끝에 저장
-- evaluation_strategy="epoch"  # 각 에포크 끝에 평가
-- fp16=True  # 메모리 저장을 위해 32비트 대신 16비트 정밀도 사용
-- tf32=True  # 텐서 코어(OVIDIA A100)에 최적화된 학습
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이후에는 AutoTokenizer.from_pretrained을 사용하여 모델의 토크나이저를 생성합니다.
 
@@ -539,7 +854,18 @@ LoraConfig를 설정한 후에는 get_peft_model() 함수로 PeftModel을 생성
 
 다음 단계에서는 train_mental_health_model()을 호출하고, 그럼에도 불구하고 마법이 일어나는 것을 간단히 지켜볼 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 train_mental_health_model();
@@ -551,7 +877,18 @@ train_mental_health_model();
 
 ![Fine-tuned model](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기억해 두세요, 이 미세 조정된 모델은 실제로 기본 모델용 어댑터입니다. 즉, 사용하려면 기본 모델을 로드하고 이 미세 조정 어댑터를 적용해야 합니다:
 
@@ -559,7 +896,10 @@ train_mental_health_model();
 model_id = "meta-llama/Llama-2-7b-chat-hf";
 adapter_model_id = "vojay/Llama-2-7b-chat-hf-mental-health";
 
-model = AutoModelForCausalLM.from_pretrained(model_id, (torch_dtype = torch.float16));
+model = AutoModelForCausalLM.from_pretrained(
+  model_id,
+  (torch_dtype = torch.float16)
+);
 model.load_adapter(adapter_model_id);
 ```
 
@@ -567,7 +907,18 @@ model.load_adapter(adapter_model_id);
 
 이제 미세 조정된 모델이 준비되었으므로 그것을 활용하는 챗봇을 만들어봅시다. 간단히 유지하기 위해 로컬 환경 내에서 실용적인 CLI 챗봇을 실행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트 생성 및 종속성 관리 방법을 자세히 살펴보겠습니다. Python에서 종속성 관리와 패키지화를 위한 도구인 Poetry를 사용합니다.
 
@@ -579,7 +930,18 @@ Poetry는 또한 가상 환경을 생성하는 작업도 처리합니다. 기본
 poetry config virtualenvs.in-project true
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시에란, 새로운 시로 Python 프로젝트를 만들 수 있어요. 시는 가상 환경을 만들고 시스템의 기본 Python과 연결해줘요. 또한 pyenv와 결합하면 특정 버전을 사용하여 프로젝트를 만들 수 있는 유연한 방법을 얻을 수 있어요. 또는 직접 Poetry에게 사용할 Python 버전을 지정할 수도 있어요: poetry env use /full/path/to/python.
 
@@ -599,7 +961,18 @@ poetry add peft
 poetry add torch
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 하면 당신의 봇을 실행할 코드가 있는 app.py 메인 파일을 만들 수 있어요. 이전과 마찬가지로, 여러분이 직접 실행하고 싶다면, Hugging Face 토큰 자리 표시자를 여러분의 토큰으로 교체해주세요. 이번에는 Hugging Face에서 베이스 모델과 파인튜닝된 모델만 가져오면 되므로 읽기 전용 토큰이 충분합니다.
 
@@ -613,7 +986,18 @@ poetry add torch
 
 성능을 높이기 위해, macOS 장치에서 GPU를 활용하기 위해 PyTorch에 Metal Performance Shaders (MPS) 장치를 사용하고 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 device = torch.device("mps");
@@ -683,8 +1067,18 @@ while True:
 
 이제 한번 해봅시다! 다음 챗 입력으로 실행해봅시다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 제 감정과 자신을 다루고 있는 중이에요. 잠을 거의 못 자고 불안과 스트레스로 고통받고 있어요. 약물 복용을 피하면서 대처 전략을 추천해주실 수 있을까요?
@@ -694,7 +1088,18 @@ while True:
 
 🤖 고지사항: 아래 텍스트는 AI가 생성한 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네, 약을 복용하지 않고 스트레스와 불안을 관리하는 데 도움이 되는 여러 가지 방법이 있습니다.
 
@@ -716,7 +1121,18 @@ while True:
 
 ![이미지](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 해커톤 프로젝트 업그레이드하기: 정신 건강 챗봇을 위한 다음 스텝
 
@@ -730,7 +1146,18 @@ while True:
 - 간단한 채팅을 넘어 나아가기: 간단한 채팅을 넘어 구조화된 상호작용 모델을 구현하는 것을 고려해보세요. 아마도 인지 행동 요법(CBT) 원칙을 기반으로 한 것일 수도 있습니다. 이는 사용자에게 더 집중된 그리고 잠재적으로 치료적인 경험을 제공할 수 있습니다.
 - 사용성에 집중: 모델 자체를 개선하는 데만 모든 시간과 노력을 집중하는 대신, 프런트엔드 중심적인 접근 방식 역시 채택하여 접근성에 집중하거나 창의적인 상호작용 형태를 사용하여 맞춤형 UI를 만들어 볼 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이런 개선 사항 외에도, 상자 밖을 생각하도록 장려합니다. 심리 건강 지원을 위한 AI 애플리케이션을 개발한다는 것은 가상 상담이나 치료용 챗봇을 만드는 것만을 의미하는 것이 아닙니다. 이 작업에 다른 접근 방법은 스트레스와 같은 정신 건강 문제를 유발하거나 강화하는 측면을 개선하는 방법을 고려하는 것일 수도 있습니다. 만약 우리가 문제를 재정의하여 AI 솔루션을 찾는다고 한다면, 스트레스를 줄이는데 도움이 되는 AI 중심의 개인 맞춤형 명상 지원과 같은 아이디어를 포함하여 초기 문제를 간접적으로 해결하는 많은 아이디어를 떠올릴 수 있습니다. 또 다른 방법은 외상 후 스트레스 장애 (PTSD)와 같은 특정 유형의 정신 건강 문제에 대한 지원에 집중하는 것일 수 있습니다.
 
@@ -740,11 +1167,33 @@ AI 중심의 애플리케이션 개발에 대한 몇 가지 영감을 드리기 
 
 Google Gemini LLM을 사용하여 FastAPI 기반의 진보된 API와 전용 Vue 기반 프론트엔드를 사용하고 싶다면, 이 글을 확인해 보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경하실 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 기반 챗봇은 24시간 365일 제공되는 접근 가능한 정신 건강 지원으로 이 간극을 좁힐 수 있어요. 이 도구들은 사람들이 정신 건강 여정을 시작할 수 있는 안전한 공간을 제공하여, 필요할 때 가장 필요로 하는 때에 도움이 되는 듣는 귀, 유용한 자원 및 기본적인 대처 방법을 제공해줘요.
 
@@ -754,10 +1203,19 @@ AI 기반 챗봇은 24시간 365일 제공되는 접근 가능한 정신 건강 
 
 이 미래는 우리가 생각하는 것보다 가까워요. 책임 있는 개발과 윤리적 고려를 중시함으로써, 기술이 정신 건강 의료를 혁신하여, 모든 사람에게 매일 접근 가능하게 만들 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-MindsandMachinesAIforMentalHealthSupportFine-TuningLLMswithLoRAinPractice_16.png)
 
 특히 정신 건강 지원은 중요한 위험과 도전을 안고 있지만, 이러한 위험을 투명하게 만들고 공개적으로 논의함으로써 의미 있는 진전의 길을 열 수 있습니다. 여러분의 아이디어, 경험, 우려, 그리고 해결책에 대해 들어보고 싶습니다.
-

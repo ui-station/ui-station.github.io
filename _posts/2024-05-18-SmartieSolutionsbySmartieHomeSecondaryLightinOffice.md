@@ -3,14 +3,12 @@ title: "스마티 홈의 스마트한 솔루션 - 사무실의 보조 조명"
 description: ""
 coverImage: "/assets/img/2024-05-18-SmartieSolutionsbySmartieHomeSecondaryLightinOffice_0.png"
 date: 2024-05-18 18:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-SmartieSolutionsbySmartieHomeSecondaryLightinOffice_0.png
 tag: Tech
 originalTitle: "Smartie Solutions by Smartie Home — Secondary Light in Office"
 link: "https://medium.com/smartie-home/smartie-solutions-by-smartie-home-secondary-light-in-office-2afd88eeb61a"
 ---
-
-
 
 ![Office Light](/assets/img/2024-05-18-SmartieSolutionsbySmartieHomeSecondaryLightinOffice_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/smartie-home/smartie-solutions-by-smartie-home-seconda
 
 저녁 늦게 사무실에서 근무할 때 필요한 빛 조명을 조절할 수있는 광원이 필요했습니다. 사무실에는 팬이 달린 주요 광원이 있지만, 스마트 라이트가 설치되어 있더라도 상당히 밝습니다. 최저 설정일 때도 상당량의 빛을 내뿜습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이론
 
@@ -31,7 +39,18 @@ link: "https://medium.com/smartie-home/smartie-solutions-by-smartie-home-seconda
 
 오늘날, 스마트 조명 솔루션에 대한 여러 가지 옵션이 더 많이 제공되고 있습니다. 그러나 저는 내 결정을 지지하며, 선택의 기회가 주어진다면 다시 이 스마트 솔루션을 선택할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사무실을 디자인할 때, 화이트보드와 책상을 배치했지만 코너에 부엌을 설치하여 켜고 끌 수 있는 보조 조명도 원했습니다. 초기에는 이전에 구매한 Hue 조명을 사용하여 주 조명을 설치했습니다. 그러나 세 개의 조명에서 나오는 높은 밝기때문에 즉시 후회했습니다. Hue 조명은 한 두 개일 때 좋지만 한 곳에 세 개의 조명이 모여 있으면 상당히 강력할 수 있습니다. (어두울 때 가끔 켜 둡니다만 보통 꺼 두었습니다)
 
@@ -41,7 +60,18 @@ link: "https://medium.com/smartie-home/smartie-solutions-by-smartie-home-seconda
 
 Nanoleaf 캔버스 벽은 코너에 설치되어 내 책상의 스위치, 홈 앱 또는 움직임을 통해 활성화될 수 있습니다. 스마트 라이트는 훌륭하지만, 이것을 스마트하게 만드는 것은 Eve 모션 센서와의 연결입니다. 만약 8시부터 10시 사이에 방 안에서 움직임을 감지하면 Nanoleaf를 낮은 50%의 노란빛 강도로 자동으로 켜집니다. 놀라움을 피하기 위해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-SmartieSolutionsbySmartieHomeSecondaryLightinOffice_1.png" />
 
@@ -51,7 +81,18 @@ Nanoleaf Canvas 스마터 키트
 
 Eve 모션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결과
 
@@ -61,6 +102,17 @@ Eve 모션
 
 💯 확실한 스마트한 솔루션이죠!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제가 발생했을 때 스마트한 해결책을 찾고 싶다면 저희에게 연락해주세요. 스마트 기술을 활용해 스마트한 해결책을 찾아보도록 하죠!

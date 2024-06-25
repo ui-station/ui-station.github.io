@@ -3,13 +3,12 @@ title: "기술 부채Tech Debt란 정확히 무엇인가요"
 description: ""
 coverImage: "/assets/img/2024-05-18-Whatexactlyistechdebt_0.png"
 date: 2024-05-18 15:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-Whatexactlyistechdebt_0.png
 tag: Tech
 originalTitle: "What exactly is “tech debt”?"
 link: "https://medium.com/atomic-engineer/what-exactly-is-tech-debt-45750ac27039"
 ---
-
 
 저는 팀들이 기술 부채에 대해 이야기하는 것을 많이 듣고 온 경험이 있어요. 몇몇 팀은 이를 어떻게 관리해야 하는지 이해하고 있었고, 다른 팀 몇몇은 이로 인해 손실을 겪었어요. 그리고 어떤 기업은 실제로 처리되지 않은 기술 부채로 크게 실패했었죠.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/atomic-engineer/what-exactly-is-tech-debt-45750ac27039
 
 부채 비유는 관련이 있는 것이에요. 처음으로 이 비유를 만든 엔지니어가 더 설명했던 내용에 대해 알아보죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술적 부채가 발생하는 방법에 대해 언급해볼게요. 그 전에 기술적 부채의 원인과 성격에 대한 일반적인 오해를 이해하는 것이 중요합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/atomic-engineer/what-exactly-is-tech-debt-45750ac27039
 
 "나쁜 코드"를 "나쁜 개발자"에서 거의 볼 수 없어요. 적어도 프로젝트의 제품에서는요. (그것이 코드 리뷰가 필요한 이유죠.) 내가 보는 "나쁜 코드" 대부분은 제약 조건 하에서 일하는 좋은 개발자에서 나옵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 신화 2: 기술 부채가 틀렸다
 
@@ -39,7 +60,18 @@ link: "https://medium.com/atomic-engineer/what-exactly-is-tech-debt-45750ac27039
 
 이 오해는 소프트웨어가 건설과 같다는 믿음에서 비롯된 것 같아요. 건설에서 (및 이 비유에서) 작업은 순서대로 발생합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 건축가는 건물을 설계하고 계획을 제작하여 전달합니다.
 - 작업자들은 기초를 다지고 벽을 세우며 전기 및 배관을 설치하고 가구를 추가합니다.
@@ -51,7 +83,18 @@ link: "https://medium.com/atomic-engineer/what-exactly-is-tech-debt-45750ac27039
 
 정원 관리 비유에서, 기능을 구축하는 것은 (작물을 심는 것과 같이) 장기적인 작업의 단계 중 하나에 불과합니다. 정원이 커질수록 더 많은 유지 보수가 필요합니다. 이것은 레이아웃을 변경하기 위해 다시 심기(refactoring), 정원을 확장하고 새로운 작물을 심는 작업(새로운 기능 추가 - 이 또한 유지 보수가 필요합니다) 외의 작업입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소프트웨어 총 비용의 90%는 유지보수와 관련이 있습니다. 몇 년 동안 이 지표를 알고 있었지만, 그것에 대해 생각하면 여전히 놀라워요.
 
@@ -61,7 +104,18 @@ link: "https://medium.com/atomic-engineer/what-exactly-is-tech-debt-45750ac27039
 
 기술 부채의 또 다른 정의는 아마 이럴 것입니다: 현재 프로젝트의 위치와 우리가 그 동안 얻은 지식을 토대로 프로젝트를 깨끗한 상태에서 시작했다면 어디에 있을지의 차이입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술 부채는 두 가지 소스에서 나옵니다:
 
@@ -72,7 +126,18 @@ link: "https://medium.com/atomic-engineer/what-exactly-is-tech-debt-45750ac27039
 
 기술 부채를 피하는 방법에 대한 교훈이 여기에 있습니다. 다음 게시물에서 자세히 다루겠습니다. 하지만 "기술 부채를 피할 수 있을까?"에 대한 간단한 답은 "네, 하지만 부채는 적이 아닌 도구입니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 기술적 부채 측정
 
@@ -82,7 +147,18 @@ link: "https://medium.com/atomic-engineer/what-exactly-is-tech-debt-45750ac27039
 
 기술 부채와 높은 상관 관계를 가지는 다른 측정 항목이 있습니다. (a) 정량화 가능하며, (b) 기술적 부채와 높은 상관 관계를 가지는 요소가 있습니다: 유지보수 부하.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 유지보수 부담은 프로젝트의 연령과 구축 방법에 따라 달라집니다. 이는 지속적으로 개발자의 노력으로 측정됩니다.
 

@@ -16,7 +16,18 @@ Batch 시스템에서는 여러 번 클라이언트가 이미 추출된 파일�
 
 이미지를 보면 오늘 날짜는 2024년 5월 25일임을 알 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2024년 5월 22일에 첫 번째 파일이 도착했습니다.
 2024년 5월 23일에 두 번째 파일이 도착했습니다.
@@ -29,15 +40,35 @@ Batch 시스템에서는 여러 번 클라이언트가 이미 추출된 파일�
 
 오늘 도착한 두 번째 파일 내용은 다음과 같습니다 -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Third File](/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_3.png)
 
 The content of the Fourth File arrived today is as follows -
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_4.png" />
 
@@ -47,7 +78,18 @@ The content of the Fourth File arrived today is as follows -
 
 단계 1: 브론즈 테이블 생성하기 -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 다음 "Spark SQL" 쿼리를 사용하여 "practice"라는 데이터베이스를 생성하십시오 -
 
@@ -61,7 +103,18 @@ CREATE DATABASE IF NOT EXISTS practice
 
 ![이미지](/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 다음 "Spark SQL" 쿼리를 사용하여 외부 델타 테이블 "person_bronze"을 생성하세요 -
 
@@ -81,7 +134,18 @@ LOCATION "dbfs:/mnt/iobdatabronze/practice-zone/delta-table/person_bronze"
 
 ![image](/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생성된 External Delta Table "person_bronze"의 폴더 경로는 제공된 위치에 ADLS에 생성되었습니다-
 
@@ -91,7 +155,18 @@ LOCATION "dbfs:/mnt/iobdatabronze/practice-zone/delta-table/person_bronze"
 
 단계 2.1: Python의 "datetime" 모듈을 사용하여 "현재 날짜"의 값을 가져와, 도착 파일의 이름에 사용된 형식과 일치하도록 "현재 날짜"의 값을 포맷팅해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import os
@@ -115,7 +190,18 @@ print(file_name_date_format)
 그런 다음, 해당 지정된 디렉토리에서 모든 파일을 나열합니다.
 마지막으로, 그 지정된 디렉토리의 파일 이름에 "현재 날짜"가 포함된 파일만 걸러내어 Python List에 저장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 파일이 위치한 ADLS 디렉토리의 마운트 경로 지정하기
@@ -138,7 +224,18 @@ print(matching_files)
 그런 다음 각 일치하는 파일의 내용을 각각 별도의 DataFrame에 로드하세요.
 마지막으로 각 DataFrame을 이미 생성된 "Python 리스트"에 "객체"로 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 빈 리스트 생성
@@ -162,7 +259,18 @@ print(list_of_dfs)
 
 2.4단계: 각 데이터프레임의 모든 값들을 단일 데이터프레임으로 연결하고, 각 데이터프레임의 값들이 이제 "파이썬 리스트"의 각 객체로 되는 단일 데이터프레임을 생성하기 위해 "reduce()" 함수와 "union()" 메서드를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 각 데이터프레임의 모든 값을 연결하여 하나의 데이터프레임으로 만들기
@@ -177,7 +285,18 @@ display(final_df)
 
 따라서 위 이미지에서 오늘 도착한 네 개의 파일에서 모든 레코드의 조합이 포함된 "final_df" 데이터프레임이 있음을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 개발자십에 관심이 있나봐요! 친철한 톤으로 번역해 드리겠습니다.
 
@@ -196,7 +315,18 @@ final_df.write.format("delta").mode("append").saveAsTable("hive_metastore.practi
 SELECT * FROM hive_metastore.practice.person_bronze;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 출력 -
 
@@ -206,7 +336,18 @@ SELECT * FROM hive_metastore.practice.person_bronze;
 
 <img src="/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_13.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 2024년 5월 25일이고, 현재 시간은 오후 8시입니다. 위 그림에서 볼 수 있듯이, 마지막 두 파일이 "현재 시간"인 즉, 8시에 도착했습니다.
 
@@ -216,7 +357,18 @@ SELECT * FROM hive_metastore.practice.person_bronze;
 
 배치 시스템에서는 고객이 이미 추출된 파일을 도착한 추출된 파일과 동일한 경로에 유지하고 브론즈 레이어에 로드하길 원하는 경우가 많습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서 현재 일 또는 현재 시간에 도착한 파일만 고려하여 디렉터리에있는 파일 목록에서 해당 파일의 내용을 처리하고 브론즈 계층으로 로드하는 개발자의 책임이 있습니다.
 
@@ -229,7 +381,18 @@ SELECT * FROM hive_metastore.practice.person_bronze;
 세 번째 파일은 2024년 5월 24일에 도착했습니다.
 나머지 네 번째 파일은 2024년 5월 25일, 즉 오늘 도착했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오늘 도착한 첫 번째 파일 내용은 다음과 같습니다 -
 
@@ -239,7 +402,18 @@ SELECT * FROM hive_metastore.practice.person_bronze;
 
 ![Second File](/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_16.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 시간에 도착한 첫 번째 파일의 내용은 다음과 같습니다 -
 
@@ -249,7 +423,18 @@ SELECT * FROM hive_metastore.practice.person_bronze;
 
 ![](/assets/img/2024-05-27-HowToDynamicallyLoadMultipleFilesinDatabricksBasedonCurrentDateorHour_18.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step 1: Create a Bronze Table -
 
@@ -259,7 +444,18 @@ Step 2: 오늘 현재 시간 기준으로 Databricks에서 마지막 두 파일�
 
 Step 2.1: Python의 "datetime" 모듈을 사용하여 "현재 날짜"의 "현재 시간" 값을 가져와서 "현재 날짜"의 "현재 시간" 값을 적시되어 파일 도착 이름 및 "날짜" 및 "시간" 부분과 일치하도록 형식화하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import os
@@ -283,9 +479,18 @@ print(file_name_date_and_hour_format)
 그런 다음, 해당 지정된 디렉토리에서 모든 파일을 나열합니다.
 마지막으로 해당 지정된 디렉토리의 파일 이름 중 "현재 날짜"의 "현재 시간"이 있는 파일만 필터링하여 Python List에 저장합니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 파일이 위치한 ADLS 디렉토리의 마운트 경로를 지정합니다
@@ -308,7 +513,18 @@ Output -
 그런 다음 각 일치하는 파일의 내용을 각각 별도의 DataFrame으로 로드합니다.
 마지막으로, 각 해당 DataFrame을 이미 생성된 "Python List"에 "객체"로서 추가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 빈 목록 생성
@@ -332,14 +548,23 @@ print(list_of_dfs)
 
 단계 2.4: 각 데이터프레임의 모든 값들을 단일 데이터프레임으로 연결합니다. 각 데이터프레임의 값은 이제 "Python List"의 각 객체이며, "reduce()" 함수와 "union()" 메소드를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 각 DataFrame의 모든 값들을 Python 리스트의 각 객체로 사용하여 하나의 DataFrame으로 결합하십시오. "reduce()" 함수를 사용하고 "union()" 메서드를 함께 사용하십시오.
 
 final_df = reduce(lambda df1, df2: df1.union(df2), list_of_dfs)
 display(final_df)
-
 
 출력 -
 
@@ -347,11 +572,19 @@ display(final_df)
 
 따라서 위 이미지에서 현재 시간에 도착한 두 파일의 레코드를 모두 포함하는 "final_df" DataFrame을 확인할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스텝 2.5: "final_df" 데이터프레임의 내용을 첫 번째 부분에 표시된 PySpark 코드를 사용하여 Bronze 테이블 "person_bronze"에 삽입합니다.
 
 마지막으로, 첫 번째 부분에 표시된 "Spark SQL" 쿼리를 사용하여 방금 삽입한 데이터가 Bronze 테이블 "person_bronze"에 있는지 확인하세요.
-

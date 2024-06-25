@@ -3,13 +3,12 @@ title: "깊은 학습 모델이 GPU에서 더 빨리 실행되는 이유 CUDA �
 description: ""
 coverImage: "/assets/img/2024-05-23-WhyDeepLearningModelsRunFasteronGPUsABriefIntroductiontoCUDAProgramming_0.png"
 date: 2024-05-23 17:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-WhyDeepLearningModelsRunFasteronGPUsABriefIntroductiontoCUDAProgramming_0.png
 tag: Tech
 originalTitle: "Why Deep Learning Models Run Faster on GPUs: A Brief Introduction to CUDA Programming"
 link: "https://medium.com/towards-data-science/why-deep-learning-models-run-faster-on-gpus-a-brief-introduction-to-cuda-programming-035272906d66"
 ---
-
 
 ## .to("cuda") 가 무엇을 하는지 이해하고 싶은 분들을 위해
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/why-deep-learning-models-run-fast
 
 GPU(그래픽 처리 장치)는 원래 이미지, 2D 및 3D 그래픽의 렌더링을 가속화하기 위해 설계되었습니다. 그러나 다수의 병렬 작업을 수행할 수 있는 능력으로 인해 그 유용성은 그 이상으로 확장되어 딥 러닝과 같은 응용 프로그램에까지 이어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 깊은 학습 모델에 GPU를 사용한 것은 2000년대 중후반 경에 시작되었으며 2012년에 AlexNet이 등장하면서 매우 인기를 끌었습니다. AlexNet은 Alex Krizhevsky, Ilya Sutskever 및 Geoffrey Hinton이 디자인한 합성곱 신경망으로, 2012년 ImageNet 대규모 시각 인식 챌린지(ILSVRC)에서 우승했습니다. 이 승리는 깊은 신경망을 통한 이미지 분류의 효과성 및 대형 모델 학습에 GPU 사용을 보여주어 중요한 이정표가 되었습니다.
 
@@ -29,7 +39,18 @@ GPU(그래픽 처리 장치)는 원래 이미지, 2D 및 3D 그래픽의 렌더�
 
 신경망, CNNs, RNNs 및 트랜스포머와 같은 깊은 학습 아키텍처는 기본적으로 행렬 덧셈, 행렬 곱셈 및 행렬에 함수를 적용하는 수학 연산을 사용하여 구축됩니다. 따라서 이러한 연산을 최적화하는 방법을 찾으면 깊은 학습 모델의 성능을 개선할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러니까, 간단하게 시작해 봅시다. 두 벡터 C = A + B를 추가하고 싶다고 상상해 보세요.
 
@@ -45,7 +66,18 @@ void AddTwoVectors(float A[], float B[], float C[]) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에서 볼 수 있듯이 컴퓨터는 벡터를 반복해서 각 쌍의 요소를 순차적으로 더해야 합니다. 그러나 이러한 작업은 서로 독립적입니다. i번째 쌍의 요소를 더하는 것은 다른 쌍에 의존하지 않습니다. 그래서 만약 이러한 작업들을 병렬로 실행할 수 있다면 어떨까요?
 
@@ -55,7 +87,18 @@ void AddTwoVectors(float A[], float B[], float C[]) {
 
 CPU 연산이 GPU보다 단일 작업에서 빠를 수 있지만 GPUs의 장점은 병렬화 능력에 있습니다. 이것의 이유는 그들이 서로 다른 목표로 설계되었기 때문입니다. CPU는 가능한 한 빠르게 연산 순서(스레드)를 실행하는 데 설계되었지만(동시에 약 10여 개의 스레드만 실행할 수 있음) GPU는 수백만 개의 연산을 병렬로 실행하는 데 설계되었습니다(개별 스레드의 속도를 희생하면서).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래의 비디오를 확인해보세요:
 
@@ -65,7 +108,18 @@ CPU 연산이 GPU보다 단일 작업에서 빠를 수 있지만 GPUs의 장점�
 
 더 높은 병렬 기능을 제공하기 위해 GPU 설계는 데이터 캐싱 및 흐름 제어 보다는 데이터 처리에 더 많은 트랜지스터를 할당합니다. 이는 CPU와는 달리, CPU가 단일 스레드 성능 및 복잡한 명령 실행을 최적화하기 위해 상당 부분의 트랜지스터를 할당하는데 사용하는 것과 대조적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 그림은 CPU와 GPU의 칩 자원 분포를 보여줍니다.
 
@@ -75,7 +129,18 @@ CPU는 강력한 코어와 더 복잡한 캐시 메모리 아키텍처(이를 �
 
 이러한 기본 개념을 이해했으니, 실전에서 이러한 병렬 처리 능력을 어떻게 활용할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # CUDA 소개
 
@@ -85,7 +150,18 @@ CPU는 강력한 코어와 더 복잡한 캐시 메모리 아키텍처(이를 �
 
 더 나아가기 전에, CUDA 프로그래밍 개념과 용어를 몇 가지 이해해 보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 호스트: CPU 및 해당 메모리를 가리킵니다.
 - 장치: GPU 및 해당 메모리를 가리킵니다.
@@ -111,11 +187,22 @@ int main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CUDA C/C++에서 프로그래머는 CUDA 스레드에 의해 병렬로 N번 실행되는 C/C++ 함수 인 켤널이라고 불리는 함수를 정의할 수 있습니다.
 
-켤널을 정의하려면 __global__ 선언 지정자를 사용하고, 이 켤널을 실행하는 CUDA 스레드의 수는 ... 표기법을 사용하여 지정할 수 있습니다:
+켤널을 정의하려면 **global** 선언 지정자를 사용하고, 이 켤널을 실행하는 CUDA 스레드의 수는 ... 표기법을 사용하여 지정할 수 있습니다:
 
 ```js
 #include <stdio.h>
@@ -136,7 +223,18 @@ int main() {
 
 각 스레드는 켤널을 실행하고 내장 변수를 통해 켤널 내에서 액세스할 수있는 고유한 스레드 ID threadIdx가 제공됩니다. 위의 코드는 크기가 N 인 두 벡터 A와 B를 더하여 결과를 벡터 C에 저장합니다. 순차적으로 각 쌍-wise 추가를 실행하는 루프 대신, CUDA는 우리에게 모든 이러한 작업을 N 개의 스레드를 사용하여 동시에 수행할 수 있도록 허용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이 코드를 실행하기 전에 다른 수정 작업을 해야 합니다. 커널 함수는 장치(GPU) 내에서 실행되기 때문에 모든 데이터는 장치 메모리에 저장되어야 합니다. 다음 CUDA 내장 함수를 사용하여 이 작업을 수행할 수 있습니다:
 
@@ -169,7 +267,7 @@ int main() {
 
     // N 개의 스레드로 커널 호출
     AddTwoVectors<<<1, N>>>(d_A, d_B, d_C);
-    
+
     // 디바이스에서 호스트로 벡터 C 복사
     cudaMemcpy(C, d_C, N * sizeof(float), cudaMemcpyDeviceToHost);
 
@@ -180,7 +278,18 @@ int main() {
 
 이를 넘어서 cudaMalloc을 사용하여 장치에 메모리를 할당하고, cudaMemcpy를 사용하여 호스트와 장치 간에 데이터를 복사해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 벡터 A와 B의 초기화를 추가하고 코드 끝에 cuda 메모리를 새로고침할 수 있습니다.
 
@@ -194,7 +303,7 @@ __global__ void AddTwoVectors(float A[], float B[], float C[]) {
 }
 
 int main() {
-    
+
     int N = 1000; // 벡터의 크기
     float A[N], B[N], C[N]; // 벡터 A, B, C에 대한 배열
 
@@ -217,7 +326,7 @@ int main() {
 
     // N 스레드를 사용하여 커널 호출
     AddTwoVectors<<<1, N>>>(d_A, d_B, d_C);
-    
+
     cudaDeviceSynchronize(); // 커널 호출 뒤 cudaDeviceSynchronize() 추가
 
     // 장치에서 호스트로 벡터 C 복사
@@ -234,7 +343,18 @@ int main() {
 
 또한 GPU에서 버그를 식별할 수 있도록 일부 CUDA 오류 확인을 추가하는 것이 중요합니다. 이 확인을 추가하지 않으면 코드가 계속해서 호스트 스레드(CPU)를 실행하고 CUDA 관련 오류를 식별하는 것이 어려울 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래에 두 기술의 구현이 있습니다.
 
@@ -248,7 +368,7 @@ __global__ void AddTwoVectors(float A[], float B[], float C[]) {
 }
 
 int main() {
-    
+
     int N = 1000; // 벡터의 크기
     float A[N], B[N], C[N]; // 벡터 A, B 및 C를 위한 배열
 
@@ -278,10 +398,10 @@ int main() {
         printf("CUDA 오류: %s\n", cudaGetErrorString(error));
         exit(-1);
     }
-    
+
     // 모든 CUDA 스레드가 실행될 때까지 대기
     cudaDeviceSynchronize();
-    
+
     // 장치에서 호스트로 벡터 C 복사
     cudaMemcpy(C, d_C, N * sizeof(float), cudaMemcpyDeviceToHost);
 
@@ -300,20 +420,42 @@ nvcc example.cu -o compiled_example # 컴파일
 ./compiled_example # 실행
 
 # 버그 감지 산소화 도구로 코드 실행도 가능합니다
-compute-sanitizer --tool memcheck ./compiled_example 
+compute-sanitizer --tool memcheck ./compiled_example
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나, 우리의 코드는 아직 완벽하게 최적화되지 않았습니다. 위의 예시에서는 크기가 N = 1000인 벡터를 사용했습니다. 그러나 이는 GPU의 병렬화 능력을 완전히 보여주지 못하는 작은 숫자입니다. 또한, 딥러닝 문제를 다룰 때는 종종 수백만 개의 매개변수를 가진 대규모 벡터를 다루게 됩니다. 그러나, 예를 들어 N = 500000으로 설정하고 위의 예시와 같이 1, 500000로 커널을 실행하면 오류가 발생할 것입니다. 이러한 작업을 개선하고 수행하기 위해서는 먼저 CUDA 프로그래밍의 중요한 개념인 Thread 계층 구조를 이해해야 합니다.
 
 # Thread 계층 구조
 
-커널 함수를 호출할 때는 블록의_개수, 블록당_쓰레드_개수 표기법을 사용합니다. 따라서, 위의 예시에서는 1개의 블록을 N개의 CUDA 쓰레드로 실행했습니다. 그러나, 각 블록은 지원할 수 있는 쓰레드 개수에 제한이 있습니다. 이는 블록 내의 모든 쓰레드가 동일한 스트리밍 멀티프로세서 코어에 있어야 하고 해당 코어의 메모리 자원을 공유해야 하기 때문에 발생합니다.
+커널 함수를 호출할 때는 블록의*개수, 블록당*쓰레드\_개수 표기법을 사용합니다. 따라서, 위의 예시에서는 1개의 블록을 N개의 CUDA 쓰레드로 실행했습니다. 그러나, 각 블록은 지원할 수 있는 쓰레드 개수에 제한이 있습니다. 이는 블록 내의 모든 쓰레드가 동일한 스트리밍 멀티프로세서 코어에 있어야 하고 해당 코어의 메모리 자원을 공유해야 하기 때문에 발생합니다.
 
 다음 코드 스니펫을 사용하여 이 제한을 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 int device;
@@ -329,7 +471,18 @@ printf("블록당 최대 스레드 수: %d\n", props.maxThreadsPerBlock);
 
 이제 스레드 ID는 다음과 같이 액세스할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```c
 __global__ void AddTwoVectors(float A[], float B[], float C[], int N) {
@@ -337,7 +490,7 @@ __global__ void AddTwoVectors(float A[], float B[], float C[], int N) {
     if (i < N) // 배열 범위를 초과하지 않도록
         C[i] = A[i] + B[i];
 }
-``` 
+```
 
 그래서 우리의 스크립트는 다음과 같아졌습니다:
 
@@ -406,8 +559,18 @@ int main() {
 
 # 성능 비교
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 다른 벡터 크기에 대해 CPU 및 GPU 연산을 비교한 것입니다.
 
@@ -417,7 +580,18 @@ int main() {
 
 # 다차원 스레드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요, 이제 간단한 배열 작업의 성능을 향상시키는 방법을 알게 되었습니다. 그러나 딥 러닝 모델을 다룰 때는 행렬 및 텐서 작업을 처리해야 합니다. 이전 예제에서는 N 스레드를 사용하여 1차원 블록만 사용했습니다. 그러나 최대 3차원까지 다차원 스레드 블록을 실행할 수도 있습니다. 행렬 작업을 실행해야 할 경우 편리하게 NxM 스레드의 스레드 블록을 실행할 수 있습니다. 이 경우에는 행 = threadIdx.x, 열 = threadIdx.y와 같이 행렬 행 및 열 인덱스를 얻을 수 있습니다. 또한 편리하게 number_of_blocks 및 threads_per_block을 정의하는 데 dim3 변수 유형을 사용할 수 있습니다.
 
@@ -444,7 +618,18 @@ int main() {
 
 이 예제를 여러 블록을 처리할 수 있도록 확장할 수도 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 #include <stdio.h>
@@ -468,7 +653,7 @@ int main() {
 }
 ```
 
-이런 멀티 차원 데이터를 다루는 법을 알게 되어서 좋습니다. 또한, 커널 내에서 함수를 호출하는 방법을 알아보겠습니다. 기본적으로 이는 __device__ 선언 지정자를 사용하여 간단히 수행할 수 있습니다. 이는 기기(GPU)에서 직접 호출할 수 있는 함수를 정의합니다. 따라서 이러한 함수들은 오직 __global__ 또는 다른 __device__ 함수에서만 호출할 수 있습니다. 아래 예시는 시그모이드 연산을 벡터에 적용하는 방법을 보여줍니다.
+이런 멀티 차원 데이터를 다루는 법을 알게 되어서 좋습니다. 또한, 커널 내에서 함수를 호출하는 방법을 알아보겠습니다. 기본적으로 이는 **device** 선언 지정자를 사용하여 간단히 수행할 수 있습니다. 이는 기기(GPU)에서 직접 호출할 수 있는 함수를 정의합니다. 따라서 이러한 함수들은 오직 **global** 또는 다른 **device** 함수에서만 호출할 수 있습니다. 아래 예시는 시그모이드 연산을 벡터에 적용하는 방법을 보여줍니다.
 
 ```js
 #include <math.h>
@@ -482,11 +667,22 @@ __device__ float sigmoid(float x) {
 __global__ void sigmoidActivation(float input[], float output[]) {
     int i = threadIdx.x;
     output[i] = sigmoid(input[i]);
-   
+
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, 이제 CUDA 프로그래밍의 기본적인 중요한 개념을 알았으니 CUDA 커널을 만들기 시작할 수 있어요. 딥 러닝 모델의 경우, 그들은 기본적으로 합, 곱셈, 컨볼루션, 정규화 등과 같은 매트릭스 및 텐서 연산들의 집합입니다. 예를 들어, 단순한 행렬 곱셈 알고리즘은 다음과 같이 병렬화될 수 있어요:
 
@@ -511,7 +707,18 @@ __global__ void matMul(float A[M][N], float B[N][P], float C[M][P]) {
 
 이제 이것을 아래의 두 행렬 곱셈의 일반 CPU 구현과 비교해보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // CPU 버전
@@ -535,7 +742,18 @@ GPU 버전에는 더 적은 루프가 있어서 작업이 빨라진다는 것을
 
 행렬의 크기가 커질수록 GPU 처리의 성능 향상이 더 큰 것을 관찰할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 기본 신경망을 고려해 보세요. 주로 y = σ(Wx + b) 작업을 포함하는데, 아래 그림과 같이 구성됩니다:
 
@@ -545,7 +763,18 @@ GPU 버전에는 더 적은 루프가 있어서 작업이 빨라진다는 것을
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물에서는 GPU 처리에 대한 입문적인 개념을 다루어 딥러닝 모델의 성능을 향상시키는 방법에 대해 알아보았어요. 그러나 본 포스트에서 다룬 내용은 기초적인 것들뿐이며, 더 많은 것을 배울 수 있습니다. PyTorch와 Tensorflow와 같은 라이브러리는 최적화 기술을 구현하고 있으며, 최적화된 메모리 액세스, 배치 연산 등과 같은 보다 복잡한 개념들을 활용합니다 (이들은 cuBLAS 및 cuDNN과 같은 CUDA 기반 라이브러리 위에서 구축된 라이브러리를 활용합니다). 그러나 "cuda"로 지정하고 GPU에서 딥러닝 모델을 실행할 때 무슨 일이 벌어지는지에 대한 배경 정보를 이해하는 데 이 게시물이 도움이 되기를 바랍니다.
 
@@ -555,7 +784,18 @@ GPU 버전에는 더 적은 루프가 있어서 작업이 빨라진다는 것을
 
 NVIDIA CUDA 프로그래밍 문서 — NVIDIA CUDA 프로그래밍 가이드.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CUDA 문서 — NVIDIA의 완전한 CUDA 문서입니다.
 

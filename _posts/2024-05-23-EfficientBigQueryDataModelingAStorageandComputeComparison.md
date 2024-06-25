@@ -3,13 +3,12 @@ title: "효율적인 BigQuery 데이터 모델링 저장 및 계산 비교"
 description: ""
 coverImage: "/assets/img/2024-05-23-EfficientBigQueryDataModelingAStorageandComputeComparison_0.png"
 date: 2024-05-23 15:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-EfficientBigQueryDataModelingAStorageandComputeComparison_0.png
 tag: Tech
 originalTitle: "Efficient BigQuery Data Modeling: A Storage and Compute Comparison"
 link: "https://medium.com/google-cloud/efficient-bigquery-data-modeling-a-storage-and-compute-comparison-ca7f3744e467"
 ---
-
 
 ## BigQuery 저장 및 컴퓨팅 동적을 비교한 정규화, 비정규화 및 중첩 모델: 실행 가능한 최적화, 권장사항 및 모범 사례를 포함한 심층 분석.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/google-cloud/efficient-bigquery-data-modeling-a-storag
 
 좋은 데이터 모델링은 최상의 스키마 설계를 선택하고 그대로 고수하는 것이 아니라 여러 스키마 디자인을 결합하는 것입니다. 대신, 좋은 데이터 모델은 정규화, 중첩 또는 비정규화 테이블 및 뷰의 실용적인 혼합물입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글은 여러분의 맥락에 최선의 도움이 되도록 처음부터 이 결론까지 안내하고자 합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/google-cloud/efficient-bigquery-data-modeling-a-storag
 
 그러나 비용 최적화만으로는 충분하지 않습니다. 이 글의 끝에는 다른 요인들, 권장 사항 및 최상의 실천 방법을 여러분과 공유하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요약
 
@@ -50,7 +71,18 @@ link: "https://medium.com/google-cloud/efficient-bigquery-data-modeling-a-storag
 
 가장 복잡한 스키마 디자인부터 시작해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 발견한 것은 약간의 역설인데, 중첩 스키마가 일반적으로 가장 무서운 것으로 여겨집니다. 그러나 때로는 데이터를 표현하는 가장 자연스러운 방법이기도 합니다. 그런데 왜 그런지를 이해하기 위해 과거로 돌아가 봅시다.
 
@@ -60,7 +92,18 @@ link: "https://medium.com/google-cloud/efficient-bigquery-data-modeling-a-storag
 
 얘기는 여기까지 하고, 저희 예시로 들어가 봅시다. 소매업계의 세계에 오신 것을 환영합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 기사와 첫 번째 예제를 시작해봅시다. 쇼핑 바구니(또는 영수증)의 경우를 고려해보겠습니다. 영수증이란 무엇인가요? 상점에서 고객이 구매한 총 가격과 특정 날짜를 나타내는 객체입니다. 하지만 총 가격 이상으로, 여러 줄을 포함하고 있습니다. 이러한 줄들은 판매된 제품, 구매 가격, 수량 등을 나타냅니다.
 
@@ -70,7 +113,18 @@ BigQuery나 소매업계에 입문하신 분이라면, 저는 간단한 바구�
 
 중첩 스키마를 사용하여 현실 세계에서 일어나는 일을 반영했습니다. 한 행은 하나의 바구니 헤더를 나타냅니다. 각 바구니 헤더는 세부사항을 포함하고 있습니다. 상세 항목의 각 "하위 행"은 판매된 제품을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 https://www.mockaroo.com/에서 가짜 데이터를 사용하여 이 표를 채웠고, 수백 번의 데이터를 복제하여 약 10GB 크기의 표를 만들었습니다.
 
@@ -80,17 +134,39 @@ BigQuery나 소매업계에 입문하신 분이라면, 저는 간단한 바구�
 
 정규화된 스키마 또는 스타 스키마(보다 복잡한 경우 스노우플레이크 스키마)는 각 테이블이 특정 엔티티나 관계에 집중된 구조로, 외래 키를 사용하여 테이블 간 관계를 설정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 관계형 데이터베이스에 대해 생각하는 표준 방법입니다. 이는 제 1 정규형(1NF)을 따릅니다. 모든 열은 단일 값 속성(배열 없음)이어야하며 복합 값(구조체 또는 중첩 없음)을 포함해서는 안됩니다.
 
-1NF 규칙을 따르면, 바구니 테이블을 바구니_헤더와 바구니_세부 테이블로 분해합니다. 위의 쿼리를 고려하면서.
+1NF 규칙을 따르면, 바구니 테이블을 바구니*헤더와 바구니*세부 테이블로 분해합니다. 위의 쿼리를 고려하면서.
 
 거의 대부분의 데이터베이스에서는 이러한 종류의 스키마 설계가 있습니다. 이는 관계형 데이터베이스를 관리하는 역사적(그리고 가장 쉬운) 방법입니다.
 
-"가장 쉬운"이라고 말한 이유는 기본 SQL 쿼리로 데이터를 얻을 수 있기 때문입니다. 한 테이블은 한 개체/기능/객체입니다. 개체 간의 관계는 외부 키로 설정됩니다. 우리의 경우, 각 바구니_헤더 행이 한 개 이상의 바구니_세부 행에 연결될 것임을 알고 있습니다.
+"가장 쉬운"이라고 말한 이유는 기본 SQL 쿼리로 데이터를 얻을 수 있기 때문입니다. 한 테이블은 한 개체/기능/객체입니다. 개체 간의 관계는 외부 키로 설정됩니다. 우리의 경우, 각 바구니*헤더 행이 한 개 이상의 바구니*세부 행에 연결될 것임을 알고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 이미지에서 보는 것처럼, 이러한 종류의 구조의 장점은 각 테이블이 특정 entity에 대한 답변을 제공하는 방식에 있습니다. 바구니 헤더는 자체 테이블에, 바구니 상세 정보도 독립적인 테이블에 있습니다. 데이터가 분할되어 있지만 바구니 헤더의 기본 키로 쉽게 결합할 수 있습니다 (이미지에서의 화살표).
 
@@ -100,7 +176,18 @@ BigQuery나 소매업계에 입문하신 분이라면, 저는 간단한 바구�
 
 비정규화는 사전 계산된 조인의 결과로 볼 수 있는 스키마 설계입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이름에서 볼 때 정규화의 반대로 이해할 수 있지만, 이 스키마를 그렇게 보면 안 돼요. 사실 이 구조는 정규화된 스키마를 잘 보완해주죠. (여러 스키마 디자인을 선택해 데이터를 표현하는 가장 좋은 방법이 어떤 것인지 예측하고 있죠?)
 
@@ -110,7 +197,18 @@ BigQuery나 소매업계에 입문하신 분이라면, 저는 간단한 바구�
 
 새로 만든 이 테이블에서 보듯이, 비정규화는 쿼리 복잡성을 줄여줍니다. 결합할 테이블이 여러 개 없으며 중첩/반복되는 필드도 없어요. 간단히 말해, 조인은 이미 완료되었고 영수증 세부내역만 남아 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 쿼리가 이 테이블 스키마로 쉬워진다는 장점이 있지만, 중복 데이터가 포함되어 있습니다. 여기서 헤더 데이터는 각 라인마다 반복됩니다. 이로 인해 중복성이 높아지고 일관성 문제가 발생할 수 있습니다. 게다가 헤더에 업데이트를 적용하는 것이 더 어려워보입니다. 한 가지 더 언급할 점은 데이터가 x번 복제되기 때문에 헤더에 대한 업데이트를 적용하는 것이 더 복잡해진다는 것입니다. 이 테이블의 또 다른 어려움은 "조인(join)"의 수가 증가함에 따라 테이블의 세분성(granularity)을 인식하는 것입니다.
 
@@ -120,7 +218,18 @@ BigQuery나 소매업계에 입문하신 분이라면, 저는 간단한 바구�
 
 성능 테스트로 넘어가기 전에 특정 사항에 주목해 주고 싶습니다. 언제든 다른 스키마로 전환할 수 있습니다. 이겦거보시죠: 이 기사에서는 먼저 중첩 형식을 만들고, 이 초기 테이블을 기반으로 다른 형식을 구성했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약해보면 다음과 같습니다:
 
@@ -132,7 +241,18 @@ BigQuery나 소매업계에 입문하신 분이라면, 저는 간단한 바구�
 
 다음 표는 BigQuery에서 세 가지 다른 스키마 디자인 기술을 사용하여 동일한 10GB 데이터를 저장하는 데 필요한 저장소를 비교합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중첩 형식이 데이터를 계층 구조로 저장하여 자연스러운 압축을 가능하게 하기 때문입니다. 정규화 형식은 그렇게 멀지 않습니다. 중복은 없지만 기본 키에 대한 추가 열이 작성되어야 합니다. 반면에 비정규화 형식의 평면 구조는 데이터 반복으로 인해 가장 공간 효율적이지 않음을 입증합니다.
 
@@ -142,7 +262,18 @@ BigQuery나 소매업계에 입문하신 분이라면, 저는 간단한 바구�
 
 물리적 또는 논리적 (기본) 저장소 가격 아래에 있더라도 중첩 스키마 설계는 더 저렴한 송장으로 이어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # BigQuery 아키텍처
 
@@ -152,7 +283,18 @@ BigQuery가 어떻게 구성되어 있는지 이해하는 것은 여전히 중�
 
 ![이미지](/assets/img/2024-05-23-EfficientBigQueryDataModelingAStorageandComputeComparison_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 왜 스토리지의 차이점만 다른 부분에서 다루었느냐고 물으면, 이는 이해하기 쉬운 섹션을 만들기 위해서이기도 하지만 BigQuery 아키텍처의 논리를 따르기 위해서입니다.
 
@@ -165,7 +307,18 @@ BigQuery가 어떻게 구성되어 있는지 이해하는 것은 여전히 중�
 
 이러한 기본 원칙을 이해한다면 BigQuery가 어떻게 고성능이고 확장 가능한 데이터 분석을 실현하는지 알 수 있을 것입니다. 그리고 확실히 최적화하는 방법도 이해하게 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 연산 비교
 
@@ -175,7 +328,18 @@ BigQuery가 어떻게 구성되어 있는지 이해하는 것은 여전히 중�
 
 자연 및 알고리즘적 데이터 압축은 저장 속에서 쿼리 가격에 중요한 초기 영향을 미칩니다. 이 아이디어를 염두에 두고 연산에 특화된 차이점을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 중첩 및 비정규화 형식을 비교해보면 쿼리 응답 시간이 유사함을 알 수 있습니다. BigQuery는 컴퓨팅을 병렬화하는 방식으로 관리하기 때문에 사용자에게 컴퓨팅 리소스가 우수했음을 알리지 않습니다. 그러나 실제로는 그렇습니다. 컴퓨팅 리소스는 약 2배 더 높아요! (슬롯 수인 "완료된 단위" 및 "총 슬롯 시간"을 참조하세요).
 
@@ -185,7 +349,18 @@ BigQuery가 어떻게 구성되어 있는지 이해하는 것은 여전히 중�
 
 BigQuery에서 오른쪽 테이블이 상당한 크기를 갖게 되면 셔플링과 복잡한 병렬 계산이 트리거되어 두 테이블을 조인합니다. 일반적으로 이 크기 제한은 약 10MB 정도로 이해되지만, Google이 정확한 숫자를 발표하지 않으며 쿼리 계획에 따라 달라질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 약 10GB의 근사 데이터 양을 가지고 비교를 진행할 때, 우리는 이 셔플링을 명확하게 관찰하며 추가적인 계산 리소스가 필요함을 알 수 있습니다. 이 "작은" 양에 대해 우리는 약 10배 정도의 수요를 관찰하고 있습니다! (그러므로, 슬롯 기반 요금 모델 하에서 운영 중이라면 주의가 필요합니다).
 
@@ -195,9 +370,20 @@ BigQuery에서 오른쪽 테이블이 상당한 크기를 갖게 되면 셔플�
 
 조인이 상당한 계산 리소스를 필요로 하는 이유에 대해 약속했었죠. 이 질문에 답하고 데이터 양이 스키마 디자인 간의 성능에 미치는 영향에 대해 탐구해볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이번에는 1GB에서 1TB 범위의 초기 데이터를 대상으로 정확히 동일한 SELECT COUNT(*) FROM... 쿼리를 사용했어요.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이번에는 1GB에서 1TB 범위의 초기 데이터를 대상으로 정확히 동일한 SELECT COUNT(\*) FROM... 쿼리를 사용했어요.
 
 단순함을 위해 중첩 스키마 디자인과 정규화된 스키마 디자인만을 비교했고, 중첩된 디노멀라이즈된 디자인은 입력 데이터 양에 따라 선형적으로 발전한다고 가정합니다.
 
@@ -205,7 +391,18 @@ BigQuery에서 오른쪽 테이블이 상당한 크기를 갖게 되면 셔플�
 
 시각적으로 나타내기 위해 다음 그래프를 고려해보세요. 읽기 어려운 부분이 있어 마인드에 그래프 상 각 점에 대한 안내 문구를 제공했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알았어요. 테이블 안의 데이터 양이 처리된 데이터 양과 선형 관계에 있습니다 (네, 둘은 같은 것이므로 이해가 됩니다).
 
@@ -215,7 +412,18 @@ BigQuery에서 오른쪽 테이블이 상당한 크기를 갖게 되면 셔플�
 
 요약하자면, 온디맨드 가격 모델(테라바이트 당 요금)을 사용하는 경우, 최적화되지 않은 스키마 디자인에 대해 더 많은 비용을 지불할 필요는 없지만 응답 시간이 크게 증가할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 용량 요금 모델 (슬롯-시간 당)을 사용 중이시라면, 청구서에서 정규화된 스키마 모델의 영향을 볼 수 있을 거예요. FinOps는 당신을 좋아하지 않을 것 같아요. 하지만 중첩된 스키마 모델로 전환해서 비용을 아주 많이 낮출 수 있고, FinOps를 당신의 친구로 만들어보세요!
 
@@ -225,7 +433,18 @@ BigQuery에서 오른쪽 테이블이 상당한 크기를 갖게 되면 셔플�
 
 정규화된 스키마의 장점은 중복을 최소화하고 쿼리를 용이하게 만들며 데이터 업데이트(UPDATE)를 쉽게 허용하는 것입니다. 그러나 이 데이터를 쿼리하기 위해 테이블을 조인하는 것은 비용이 많이 들 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Denormalized 스키마는 데이터 쿼리 중 응답 및 연산 시간을 최소화하는 장점을 제공합니다. 이는 정규화된 모델에서 쿼리의 결과로 생각할 수 있는 표현입니다. 그러나 더 많은 저장 공간을 사용하고 데이터에 중복을 도입합니다.
 
@@ -238,7 +457,18 @@ Denormalized 스키마는 데이터 쿼리 중 응답 및 연산 시간을 최�
 - 중첩 형식은 반드시 이해하기 쉬워야 하며 실제 세계를 대변해야 합니다. 예를 들어, 영수증에는 라인이 있고, 영수증과 라인 간에는 자연스러운 계층 구조가 있습니다. 존재하지 않는 계층적 표현을 강제로 만들려는 경향이 없도록 주의하세요. 예를 들어, 영수증과 상품 재고는 함께 그룹화할 수 없는 두 가지 독립적인 것입니다.
 - 중첩 형식은 복잡합니다. 내가 이것에 익숙할 수도 있고, 당신도 그럴 수 있지만, 모든 사용자의 경우에 해당되는 것은 아닙니다. 이를 고려하세요; 최적화가 항상 재정적인 것은 아닙니다. 대부분의 사람들이 더 쉽게 쿼리할 수 있는 평면화된, 비정규화된 형식으로 최적화하세요. 사용 편의성을 위해 최적화하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 추천 사항
 
@@ -248,7 +478,18 @@ Denormalized 스키마는 데이터 쿼리 중 응답 및 연산 시간을 최�
 
 간단히 말해서, 숙련된 사용자에게 중첩 형식을 제공하고 데이터를 다른 더 "전통적인" 형식으로 펼치는 뷰를 추가로 제공해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사의 초점은 중첩 형식의 장점을 홍보하는 데 있었지만, 여전히 가장 간단한 방법이 가장 좋습니다. 테이블을 파티션하고 클러스터를 추가해보세요; 이렇게 하면 조인을 크게 최적화할 수 있고 거의 100GB에 도달하지 않습니다. 중첩 형식은 참으로 흥미로워지는데, 조인에서 100GB를 넘어설 때입니다. 전체적인 상황을 고려해 볼까요. 100GB는 $0.625입니다. 몇 센트를 절약하는 데 하루를 낭비하나요? 팀에 제공하는 가치에 집중하고, 그런 다음 최적화하세요.
 
@@ -258,6 +499,17 @@ Denormalized 스키마는 데이터 쿼리 중 응답 및 연산 시간을 최�
 
 이 기사가 여러분에게 가치 있는 통찰력을 제공하고, 미래의 결정을 이끌어내며, 데이터 모델 설계 사이에서 선택할 때 비판적 사고를 가르쳐 주었기를 바랍니다. 각 디자인의 이점을 최대한 활용하고, 데이터 웨어하우스에서 현명하게 결합하여 사용량과 비용을 최적화하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 동안 긴 글을 읽어 주셔서 감사합니다! 만약 도움이 되었다면 이 기사를 공유하고, 박수를 보내거나 댓글을 남기거나 구독하거나 LinkedIn에서 팔로우해 주세요.

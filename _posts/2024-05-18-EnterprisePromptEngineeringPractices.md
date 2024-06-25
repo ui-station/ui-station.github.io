@@ -3,13 +3,12 @@ title: "기업용 프롬프트 엔지니어링 관행"
 description: ""
 coverImage: "/assets/img/2024-05-18-EnterprisePromptEngineeringPractices_0.png"
 date: 2024-05-18 19:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-EnterprisePromptEngineeringPractices_0.png
 tag: Tech
 originalTitle: "Enterprise Prompt Engineering Practices"
 link: "https://medium.com/@cobusgreyling/enterprise-prompt-engineering-practices-2ea7593f5e9b"
 ---
-
 
 # 소개
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@cobusgreyling/enterprise-prompt-engineering-practices
 
 프롬프트는 비전문가에게 LLM에 접근할 수 있게 돕긴 하지만, 복잡하거나 특정 작업에 대한 효과적인 프롬프트를 만드는 것은 어렵습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델을 원하는 결과물로 이끄는 것에는 기술, 지식 및 반복적 개선이 필요합니다.
 
@@ -29,7 +39,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 일반적으로 프롬프트에는 내장 예시, 템플릿, 필요한 출력물에 대한 설명, 지시사항 및 In-Context Learning을 위한 문맥 데이터가 포함될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결과
 
@@ -39,7 +60,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 이어서 연구는 리뷰 및 주석 프로세스에서 나온 더 포괄적인 결과에 대해 심층적으로 다루며 질적 관측을 통합합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 프롬프트 편집 세션은 일반적으로 상당한 기간 동안 진행되었으며, 평균 세션은 약 43.4분의 시간이 소요되었습니다.
 - 사용자들은 종종 모델 매개변수를 조정하는 대신에 또는 함께 프롬프트를 편집하는 데 집중합니다.
@@ -49,7 +81,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 성공적인 결과를 얻으려면 사용자들이 프롬프트를 조금씩 반복적으로 변경하는 경향이 있는 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 매개변수 변경은 변경이 발생한 세션의 백분율로 기록되었습니다.
 
@@ -59,7 +102,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 이것은 다시 한번 보여주는 것입니다. 인컨텍스트 러닝(ICL)을 유지하는 관점에서 맥락은 매우 중요하며, 그 다음이 작업 지시사항이라는 것을 입증합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 그래프는 사용된 모델 수를 보여줍니다. 대부분의 세션은 두 개의 모델을 살펴본 것이 흥미로운데, 아마도 쉬운 A/B 테스트 접근법을 수행했을 것입니다.
 
@@ -69,7 +123,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 분석된 프롬프트와 사용 사례 대부분은 콘텍스트 기반입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프롬프트 안에 입력, 배경 데이터 또는 예시가 통합되어 있었으며, 작업 지시와는 분리되었습니다.
 
@@ -80,11 +145,33 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 - 대화 시뮬레이션 및
 - 예시 추가.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경하실 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 22%의 편집이 여러 번의 변화를 만들고 나서야 다시 프롬프트를 제출하는, 다중 편집이었습니다.
 
@@ -94,7 +181,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 # 롤백
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 약 11%의 프롬프트 편집이 이전 변경 사항을 취소하거나 다시 실행하는 것을 포함했습니다. 이에도 불구하고 이러한 작업은 개별 편집으로 계산되었습니다.
 
@@ -104,7 +202,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 예를 들어, instruction:handle-unknown에 대한 편집의 40%가 되돌려졌으며, instruction:output-length에 대해 25%가, 라벨에 대해 24%가, instruction:persona 편집에 대해서는 18%가 되돌려졌습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -114,7 +223,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 이러한 편집 중 많은 것들은 완전한 개조보다는 단일 프롬프트에 대한 소규모 조정이나 반복입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 품질 분석 결과를 살펴보면 사용자들이 주로 예시, 기반 문서, 그리고 입력 쿼리와 같은 프롬프트 컨텍스트를 수정한다는 것을 강조합니다.
 
@@ -124,7 +244,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 이러한 통찰력은 현재의 프롬프트 편집 관행을 살펴보고 더 효과적인 프롬프트 엔지니어링 지원을 위한 미래 방향을 제시해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ⭐️ 제 LinkedIn에서 큰 언어 모델에 관한 업데이트를 받아보세요 ⭐️
 
@@ -134,8 +265,18 @@ IBM 연구팀은 사용자가 프롬프트를 반복하면서 어떻게 사용�
 
 ![이미지](/assets/img/2024-05-18-EnterprisePromptEngineeringPractices_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-18-EnterprisePromptEngineeringPractices_3](/assets/img/2024-05-18-EnterprisePromptEngineeringPractices_3.png)
 

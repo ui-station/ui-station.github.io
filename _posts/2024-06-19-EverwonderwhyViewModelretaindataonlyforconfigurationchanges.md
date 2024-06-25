@@ -3,13 +3,12 @@ title: "뷰모델이 데이터를 구성 변경만 유지하는 이유에 대해
 description: ""
 coverImage: "/assets/img/2024-06-19-EverwonderwhyViewModelretaindataonlyforconfigurationchanges_0.png"
 date: 2024-06-19 11:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-EverwonderwhyViewModelretaindataonlyforconfigurationchanges_0.png
 tag: Tech
 originalTitle: "Ever wonder why ViewModel retain data only for configuration changes?"
 link: "https://medium.com/@pranay-panda/android-viewmodel-retaining-data-eb8467445ce1"
 ---
-
 
 `<img src="/assets/img/2024-06-19-EverwonderwhyViewModelretaindataonlyforconfigurationchanges_0.png" />`
 
@@ -19,7 +18,18 @@ ViewModel이 데이터를 구성 변경으로 유지하지만 활동을 다시 �
 
 여기가 라이프사이클 소유자인 MainActivity입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 회전 또는 구성 변경 전:
 
@@ -29,7 +39,18 @@ ViewModel이 데이터를 구성 변경으로 유지하지만 활동을 다시 �
 
 ![이미지2](/assets/img/2024-06-19-EverwonderwhyViewModelretaindataonlyforconfigurationchanges_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 활동(소유자)의 인스턴스와 라이프사이클이 회전 후에 변경되는 것을 명확히 볼 수 있습니다.
 
@@ -39,8 +60,18 @@ ViewModel이 데이터를 구성 변경으로 유지하지만 활동을 다시 �
 
 ViewModel 코드를 살펴보면 ComponentActivity 생성자 내부의 활동/프래그먼트 수명주기에 대한 Observer가 설정되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-EverwonderwhyViewModelretaindataonlyforconfigurationchanges_4.png)
 
@@ -50,8 +81,18 @@ ComponentActivity는 Fragment 및 AppCompactActivity의 상위 클래스입니�
 
 ![이미지](/assets/img/2024-06-19-EverwonderwhyViewModelretaindataonlyforconfigurationchanges_5.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드를 살펴보면 판단 기준인 isChangingConfigurations()를 알 수 있어요.
 

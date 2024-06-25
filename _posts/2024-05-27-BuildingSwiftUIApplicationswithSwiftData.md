@@ -10,7 +10,6 @@ originalTitle: "Building SwiftUI Applications with Swift Data"
 link: "https://medium.com/@raj.anand09/building-swiftui-applications-with-swift-data-7e698c4e5462"
 ---
 
-
 ![Image](/assets/img/2024-05-27-BuildingSwiftUIApplicationswithSwiftData_0.png)
 
 # Swift UI는 Swift Data를 시작하는 가장 쉬운 방법입니다
@@ -21,12 +20,33 @@ link: "https://medium.com/@raj.anand09/building-swiftui-applications-with-swift-
 
 # Swift Data 소개
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표를 마크다운 형식으로 변경해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Model
@@ -51,9 +71,18 @@ Modifies all stored properties
 
 @Model
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 강력한 새로운 스위프트 매크로
 - 코드로 스키마 정의하기
@@ -67,7 +96,18 @@ Modifies all stored properties
 - 기본 값 유형 지원
 - 구조체, 열거형, Codable 및 값 유형의 컬렉션과 같은 복잡한 값 유형의 지원
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @관계
 
@@ -79,7 +119,18 @@ Modifies all stored properties
 
 더 많은 정보: Swift Data로 스키마 모델링하기 (WWDC 2023)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 작업하기
 
@@ -95,7 +146,18 @@ Modifies all stored properties
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모델 컨텍스트
 
@@ -108,7 +170,18 @@ Modifies all stored properties
 
 더 많은 정보: SwiftData에 대한 깊은 탐구 (WWDC 2023)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # SwiftUI와 통합
 
@@ -120,7 +193,18 @@ SwiftData는 SwiftUI를 염두에 두고 만들어졌으며 함께 사용하는 
 - .modelContainer로 데이터 구성
 - SwiftUI 환경 전체에 전파됨
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @Query Property Wrapper
 
@@ -135,7 +219,18 @@ var body: some View {
 
 SwiftData와 SwiftUI가 함께 작동하여 기본 데이터가 변경될 때 뷰에 실시간 업데이트를 제공하며 결과를 수동으로 새로 고침할 필요가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 변경 사항 관찰
 
@@ -145,7 +240,18 @@ SwiftData와 SwiftUI가 함께 작동하여 기본 데이터가 변경될 때 �
 
 # 자동 지속성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SwiftData는 사용자 모델로 사용자 지정 스키마를 빌드하고 효율적으로 필드를 기반 저장소에 매핑합니다. SwiftData가 관리하는 객체는 필요할 때 데이터베이스에서 가져오고 추가 작업없이 적절한 시점에 자동으로 저장됩니다. 또한 ModelContext API를 사용하여 완전한 제어를 할 수도 있습니다.
 
@@ -155,7 +261,18 @@ SwiftData는 사용자 모델로 사용자 지정 스키마를 빌드하고 효�
 
 # Core Data와 호환 가능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SwiftData는 Core Data의 검증된 저장 아키텍처를 사용하므로 동일한 기본 저장소를 사용하여 동일한 앱에서 둘 다 사용할 수 있습니다. 준비가 되면 Xcode가 Core Data 모델을 SwiftData와 함께 사용할 클래스로 변환할 수 있습니다.
 

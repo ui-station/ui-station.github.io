@@ -3,13 +3,12 @@ title: "머신 러닝을 위한 피처 엔지니어링"
 description: ""
 coverImage: "/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_0.png"
 date: 2024-05-20 20:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-FeatureEngineeringforMachineLearning_0.png
 tag: Tech
 originalTitle: "Feature Engineering for Machine Learning"
 link: "https://medium.com/towards-data-science/feature-engineering-for-machine-learning-eb2e0cff7a30"
 ---
-
 
 ## 알고리즘이 마법을 발휘할 수 있도록 허용하기
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/feature-engineering-for-machine-l
 
 일반적으로, 기능 엔지니어링을 두 가지 구성 요소로 나눌 수 있습니다: 1) 새로운 기능 생성 및 2) 이러한 기능을 처리하여 해당 기계 학습 알고리즘과 최적으로 작동하도록 만드는 과정입니다. 이 글에서는 횡단면, 구조화된, NLP가 아닌 데이터 집합에 대한 기능 엔지니어링의 이 두 가지 구성 요소에 대해 논의하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 새로운 기능 생성
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-data-science/feature-engineering-for-machine-l
 
 이 기법은 이름 그대로 여러 데이터 포인트를 결합하여 더 통합된 관점을 만들 수 있게 도와줍니다. 우리는 일반적으로 count, sum, average, minimum, maximum, percentile, standard deviation, variation 계수와 같은 표준 함수를 사용하여 연속적인 수치 데이터에 집계를 적용합니다. 각 함수는 다른 정보 요소들을 포착할 수 있으며, 사용할 최상의 함수는 특정 사용 사례에 따라 다릅니다. 종종, 우리는 그 문제의 맥락상 의미 있는 특정 시간이나 사건 창을 통해 집계를 적용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가져온 신용 카드 거래가 사기인지 예측하려고 하는 예시를 살펴봅시다. 이 경우에는 거래별 특징을 사용할 수 있겠지만, 이러한 특징들과 함께 고객 단위의 집계된 특징을 만드는 것이 유익할 수 있습니다:
 
@@ -40,17 +61,40 @@ link: "https://medium.com/towards-data-science/feature-engineering-for-machine-l
 
 ## 2. Differences and Ratios
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 유형의 문제에서 집합 패턴의 변경은 예측이나 이상 탐지에 대한 유용한 신호가 될 수 있습니다. 차이와 비율은 숫자 특성의 변화를 나타내는 효과적인 기술입니다. 집계와 마찬가지로 이러한 기술들을 그 문제의 맥락에서 의미 있는 시간 창 위에도 적용할 수 있습니다.
 
 예시:
+
 - 지난 1시간 동안의 새 상인 거래의 백분율과 지난 30일 동안의 새 상인 거래의 백분율 간의 차이: 빠른 연속으로 발생하는 많은 새 상인 거래의 높은 비율은 사기 위험을 나타낼 수 있지만, 이 행동이 고객의 과거 행동과 비교하여 변경된 것을 보면 더 명백한 신호가 됩니다.
 - 현재 날짜의 거래 건수를 지난 30일간의 중앙값 일일 거래 건수로 나눈 비율: 신용카드가 침해를 당하면 짧은 시간 동안 많은 거래가 발생할 가능성이 높으며, 이는 과거 신용카드 사용 패턴과 일치하지 않을 수 있습니다. 현재 날짜의 거래 건수를 지난 30일간의 중앙값 일일 거래 건수로 나눈 비율이 상당히 높으면 사기 사용 패턴을 나타낼 수 있습니다.
 
 <img src="/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. 연령 인코딩
 
@@ -61,8 +105,18 @@ link: "https://medium.com/towards-data-science/feature-engineering-for-machine-l
 - 최근에 신용카드를 사용한 날로부터 경과한 일수: 오랜 기간 사용되지 않았던 신용카드에서 갑작스러운 거래는 사기 가능성이 높을 수 있습니다. 우리는 신용카드를 마지막으로 사용한 날짜와 현재 거래 날짜 사이의 시간 차이를 이용하여 이 특성을 계산할 수 있습니다.
 - 고객이 사용한 기기가 처음 사용된 날로부터 경과한 일수: 새로운 기기로부터 발생한 거래를 볼 때, 해당 거래는 고객이 오랫동안 사용한 기기에서 만든 거래보다 더 위험할 수 있습니다. 우리는 고객이 이 기기를 처음 사용한 날로부터 현재 거래 날짜 사이의 차이를 나타내는 기기 연령의 특성을 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Feature Engineering for Machine Learning](/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_3.png)
 
@@ -72,8 +126,18 @@ Indicator 또는 Boolean feature는 이진 값 '1, 0' 또는 'True, False'를 �
 
 Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비숫자 데이터 포인트 간의 비교를 나타내는 도구로서 indicator encoding을 활용할 수 있습니다. 이 특성은 비숫자 특성의 변화를 측정하는 방법을 만드는 데 특히 강력합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시:
 
@@ -84,7 +148,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 ## 5. One-Hot Encoding
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기술은 우리의 특성 데이터가 범주형 형식인 경우에 적용할 수 있습니다. 숫자 또는 숫자가 아닌 형식으로서 자료가 되는 자료를 말합니다. 숫자-범주형 형식은 비연속적이거나 측정되지 않는 데이터, 예를 들어 지리적 지역 코드, 상점 ID 등과 같은 데이터를 포함하는 숫자 데이터를 참조합니다. 원핫 인코딩 기술은 이러한 특성을 기곽 학습 모델에 사용할 수 있는 지표 특성 세트로 변환할 수 있습니다. 범주형 특성에 원핫 인코딩을 적용하면 해당 범주형 변수의 모든 범주마다 하나의 새로운 이진 특성을 생성합니다. 새로운 특성의 수가 범주의 수가 증가함에 따라 증가하기 때문에 이 기술은 특히 범주의 수가 적은 특성에 적합합니다. 특히 데이터셋이 작은 경우 이 기술을 적용하라는 표준 기준 중 하나는 범주당 최소 열 개의 레코드가 있을 때 이 기술을 적용하는 것을 제안합니다.
 
@@ -95,7 +170,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 ![이미지](/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 6. Target Encoding
 
@@ -106,7 +192,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 - 가맹점 이름: 특정 가맹점에 대한 거래가 사기 활동을 나타낼 수 있습니다. 수천 개의 이러한 가맹점이 있을 수 있으며, 각각이 다른 사기 거래 위험을 가질 수 있습니다. 가맹점 이름을 포함한 피처에 원-핫 인코딩을 적용하면 원하지 않게 수천 개의 새로운 피처가 도입될 수 있는데, 이는 바람직하지 않습니다. 이런 경우에 타겟 인코딩을 통해 가맹점의 사기 위험 정보를 캡쳐할 수 있습니다.
 - 거래 우편번호: 가맹점과 마찬가지로, 서로 다른 우편번호로 이루어진 거래는 서로 다른 사기 위험 수준을 나타낼 수 있습니다. 우편번호가 숫자 값이지만 연속형 측정 변수는 아니며 그대로 모델에 사용해서는 안됩니다. 대신, 우편번호와 관련된 사기 위험 정보를 포함할 수 있도록 타겟 인코딩과 같은 기술을 적용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_6.png" />
 
@@ -116,7 +213,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 피처 처리는 머신러닝 모델이 의도한 대로 데이터에 적합하게 만들기 위한 일련의 데이터 처리 단계를 의미합니다. 일부 피처 처리 단계는 특정 머신러닝 알고리즘을 사용할 때 필수적이지만, 다른 단계들은 피처와 고려 중인 머신러닝 알고리즘 간에 좋은 작동 화학 반응을 일으키도록 하는 역할을 합니다. 이 섹션에서는 몇 가지 일반적인 피처 처리 단계와 그 필요성에 대해 논의하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. 이상값 처리
 
@@ -129,7 +237,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 ![image](/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-20-FeatureEngineeringforMachineLearning_8](/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_8.png)
 
@@ -139,7 +258,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 실제 데이터셋에서 결측 데이터는 매우 흔합니다. XGBoost와 같은 몇 가지 제외하고 대부분의 전통적인 머신 러닝 알고리즘은 훈련 데이터셋에서 결측값을 허용하지 않습니다. 그러므로 결측값을 해결하는 것은 머신 러닝 모델링에서의 루틴 작업 중 하나입니다. 결측값을 처리하는 여러 기술이 있지만, 어떤 기술을 실행하기 전에 결측 데이터의 원인을 이해하거나 적어도 데이터가 무작위로 누락되었는지를 알아야 합니다. 데이터가 무작위로 누락되지 않은 경우, 특정 부분집단이 결측 데이터를 더 자주 가지고 있는 경우가 많아 그러한 값에 대한 대치가 어려울 수 있습니다. 데이터가 무작위로 누락된 경우, 아래에서 설명한 몇 가지 일반적인 처리 기술을 사용할 수 있습니다. 이들은 각각 장단점을 가지고 있으며, 어떤 방법이 사용 사례에 가장 적합한지 결정은 우리에게 달려 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 삭제: 최소한 하나의 결측값이 있는 관측치를 삭제할 수 있습니다. 그러나 다양한 특성의 결측값이 많을 경우, 많은 관측치를 잃을 수도 있습니다.
 - 삭제: 특정 특성에 결측값이 많은 경우 해당 특성을 삭제할 수 있습니다.
@@ -152,7 +282,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 머신러닝 모델에서 사용하는 특성들은 종종 서로 다른 범위를 가집니다. 스케일링 없이 사용하면 절대값이 큰 특성이 예측 결과를 지배할 수 있습니다. 그 대신, 각 특성이 예측 결과에 공평하게 기여할 수 있도록 하기 위해 모든 특성을 동일한 척도로 조정해야 합니다. 가장 일반적인 스케일링 기술은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 정규화: 이 스케일링 기술은 특징 값들을 0과 1 사이로 제한합니다. 정규화를 적용하기 위해 우리는 특징의 최소값을 뺀 다음 그 특징의 범위(최솟값과 최댓값의 차이)로 나눕니다. 정규화는 몇 가지 특징이 급격하게 치우친 경우나 몇 개의 극단값을 가지고 있는 경우에는 좋은 기술이 아닐 수 있습니다.
 - 표준화: 이 기술은 특징 데이터 분포를 표준 정규 분포로 변환합니다. 이 기술을 적용하는 방법은 평균을 빼고 표준 편차로 나누는 것입니다. 이 기술은 특징이 급격한 치우침이나 몇 개의 극단값을 가진 경우에 일반적으로 선호됩니다.
@@ -163,7 +304,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 ![이미지](/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 4. 차원 축소
 
@@ -173,7 +325,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 ![Image](/assets/img/2024-05-20-FeatureEngineeringforMachineLearning_12.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 5. 정규 분포로 변환하기
 
@@ -183,7 +346,18 @@ Indicator feature의 일반적인 발생 및 사용을 넘어서, 우리는 비�
 
 참고: 피처 전처리 단계를 모든 순서로 구현할 수 있지만, 그 적용 순서를 신중히 고려해야 합니다. 예를 들어, 평균값 대체를 사용한 누락 값 처리는 아웃라이어 탐지 전이나 후에 구현할 수 있습니다. 그러나 대체에 사용하는 평균값은 누락된 값을 아웃라이어 처리 전이나 후에 다르게 처리할 수 있습니다. 이 기사에서 제시된 피처 처리 순서는 성공적인 후속 처리 단계에 미치는 영향의 순서대로 문제를 해결합니다. 따라서 이 순서를 따르면 대부분의 문제를 해결하는데 효과적일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

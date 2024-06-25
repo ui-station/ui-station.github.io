@@ -3,13 +3,12 @@ title: "스피치브레인 모델을 사용하여 음성에서 배경 소음 제
 description: ""
 coverImage: "/assets/img/2024-05-18-RemovingbackgroundnoisefromspeechusingSpeechBrainmodels_0.png"
 date: 2024-05-18 20:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-RemovingbackgroundnoisefromspeechusingSpeechBrainmodels_0.png
 tag: Tech
 originalTitle: "Removing background noise from speech using SpeechBrain models"
 link: "https://medium.com/@jaimonjk/removing-background-noise-from-speech-using-speechbrain-models-e5546d103355"
 ---
-
 
 SpeechBrain은 음성 처리를 위해 설계된 오픈 소스, 올인원 툴킷입니다. PyTorch를 기반으로 구축되었으며 음성 인식, 화자 식별 및 음성 향상을 포함한 다양한 음성 관련 작업을 위한 포괄적인 도구 모음을 제공합니다. 모듈식이며 유연한 구조로 연구자와 개발자 모두에게 접근하기 쉽도록 설계되어 최신 음성 처리 모델로의 신속한 개발과 실험을 가능하게 합니다.
 
@@ -19,7 +18,18 @@ SpeechBrain은 매우 모듈식으로, 사용자가 자신의 요구에 따라 �
 
 # 음성 분리를 위해 SpeechBrain 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Jupyter Notebook에 SpeechBrain을 설치하는 방법부터 시작하겠습니다.
 
@@ -35,21 +45,46 @@ import torchaudio
 from IPython.display import Audio
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 HuggingFace에서 모델을 다운로드할 것입니다. 우리는 SpeechBrain으로 구현된 sepformer-wham16k-enhancement 모델을 사용할 예정입니다.
 
 ```js
-model = separator.from_hparams(source="speechbrain/sepformer-wham16k-enhancement", savedir='pretrained_models/sepformer-wham16k-enhancement')
+model = separator.from_hparams(
+  (source = "speechbrain/sepformer-wham16k-enhancement"),
+  (savedir = "pretrained_models/sepformer-wham16k-enhancement")
+);
 ```
 
 이제 모델을 사용하여 오디오에서 배경 소음을 분리할 준비가 끝났습니다.
 
 ```js
-audio_sources = model.separate_file(path='original_audio.wav')
+audio_sources = model.separate_file((path = "original_audio.wav"));
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델은 텐서 출력을 생성합니다. 우리는 torchaudio를 사용하여 텐서를 오디오 파일로 변환할 수 있습니다.
 
@@ -61,7 +96,18 @@ torchaudio.save("converted_audio.wav", audio_sources[:, :, 0], 16000)
 
 SpeechBrain의 효과를 테스트하기 위해 Wikimedia에서 제공하는 두 개의 샘플 오디오 파일을 사용할 것입니다: 배경 소음이 많이 섞인 파일과 배경 소음이 적은 파일입니다. 이 오디오를 SpeechBrain을 사용하여 처리하고 결과를 비교할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 샘플 오디오 1: 가벼운 백그라운드 소음
 
@@ -71,7 +117,18 @@ SpeechBrain의 효과를 테스트하기 위해 Wikimedia에서 제공하는 두
 
 처리된 오디오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 샘플 오디오 2: 강한 백그라운드 소음
 
@@ -81,7 +138,18 @@ SpeechBrain의 효과를 테스트하기 위해 Wikimedia에서 제공하는 두
 
 처리된 오디오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 발견 사항
 
@@ -91,7 +159,18 @@ SpeechBrain의 소음 제거 능력을 평가한 결과가 복합적이었습니
 
 # 이상적인 사용 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 결과를 고려해봤을 때, SpeechBrain은 다음과 같은 경우에 적합할 것으로 생각됩니다:
 
@@ -103,6 +182,17 @@ SpeechBrain의 소음 제거 능력을 평가한 결과가 복합적이었습니
 
 모두를 위한 오픈 소스 대화형 AI. SpeechBrain. (출처: https://speechbrain.github.io/)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Speechbrain/Sepformer-WHAM16K-enhancement · Hugging Face. speechbrain/sepformer-wham16k-enhancement · Hugging Face. (n.d.). [https://huggingface.co/speechbrain/sepformer-wham16k-enhancement](https://huggingface.co/speechbrain/sepformer-wham16k-enhancement)

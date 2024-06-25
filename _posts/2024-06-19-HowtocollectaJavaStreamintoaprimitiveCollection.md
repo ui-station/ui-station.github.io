@@ -3,13 +3,12 @@ title: "자바 스트림을 기본형 컬렉션으로 수집하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtocollectaJavaStreamintoaprimitiveCollection_0.png"
 date: 2024-06-19 09:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtocollectaJavaStreamintoaprimitiveCollection_0.png
 tag: Tech
 originalTitle: "How to collect a Java Stream into a primitive Collection"
 link: "https://medium.com/javarevisited/how-to-collect-a-java-stream-into-a-primitive-collection-0a90e246c16e"
 ---
-
 
 자바 스트림에 원시 컬렉션 브릿지를 사용하여 박싱을 피해보세요.
 
@@ -19,8 +18,18 @@ link: "https://medium.com/javarevisited/how-to-collect-a-java-stream-into-a-prim
 
 자바의 박싱된 컬렉션 유형은 Set`Integer`나 List`Double`과 같은 유형으로, 컬렉션에있는 int나 double과 같은 원시 값들을 Integer나 Double과 같은 박싱된 래퍼에 저장해야 하는 유형입니다. 자바의 박싱된 래퍼와 컬렉션 유형이 메모리를 조용히 소모하고 시간을 낭비하며 에너지를 소비합니다. 단일 박싱된 컬렉션의 비용은 일반적으로 무시할 정도입니다. 불행히도, 박싱된 컬렉션이 조용히 수백만 개의 자바 힙을 오염시켜, 아무것도 모르는 한 두 마리의 북극곰의 빙을 녹일 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Java Stream with Primitive Collections](/assets/img/2024-06-19-HowtocollectaJavaStreamintoaprimitiveCollection_1.png)
 
@@ -30,8 +39,18 @@ link: "https://medium.com/javarevisited/how-to-collect-a-java-stream-into-a-prim
 
 우리는 박싱한 상태로 있지 않고 몇 가지 해결책을 살펴보겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Java 기본형 스트림
 
@@ -41,7 +60,18 @@ link: "https://medium.com/javarevisited/how-to-collect-a-java-stream-into-a-prim
 
 다른 옵션으로 기본 스트림을 기본 배열로 변환하는 것이 있습니다. 아쉽게도, 자바의 배열은 유용한 동작이 없습니다. 길이를 알려줄 뿐이며 요소에 대한 가변 액세스 권한을 제공하여 루프를 돌거나 변경할 수 있습니다. int[], long[], double[] 배열을 Arrays.stream() 메서드를 사용하여 다시 기본적인 스트림으로 감쌀 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 해결책은 int, long, double 유형에만 작동합니다. boolean, byte, char, short, float 유형은 어떻게 해야 할까요? Java 스트림을 기본 Collection 유형으로 매핑하는 솔루션이 모든 여덟 가지 Java 기본 유형을 지원할 수 있는 방법이 있습니까?
 
@@ -51,7 +81,18 @@ link: "https://medium.com/javarevisited/how-to-collect-a-java-stream-into-a-prim
 
 Java 개발자들은 10년 동안 Java Stream을 사용해 왔으며 대부분은 기본 Stream과 Collector를 함께 사용할 수 없음에 직면해 왔을 것입니다. Java에는 기본 Collection 유형이 없기 때문에 기본 Collection Collector가 필요하지 않았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 우리가 Java Stream을 매핑하고 기본 Collection을 수집하려면, Eclipse Collections 또는 기타 기본 Collection 라이브러리에 의존해야 합니다. 이를 통해 여덟 가지 Java 기본 유형에 대한 기본 Collection에 액세스할 수 있습니다. 이 의존성을 추가하기 전에 무엇을 얻을 수 있는지 알아봅시다.
 
@@ -61,7 +102,18 @@ Java 개발자들은 10년 동안 Java Stream을 사용해 왔으며 대부분�
 
 IntStream, LongStream, DoubleStream에 Three Musketeer 버전의 collect가 있습니다. 기본 collect 메서드의 Three Musketeers 이름은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 공급자
 - Obj(Int/Long/Double)Consumer
@@ -91,7 +143,18 @@ public void intStreamToIntList()
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## LongStream을 LongSet으로 수집하기
 
@@ -99,7 +162,7 @@ public void intStreamToIntList()
 @Test
 public void longStreamToLongSet()
 {
-    LongStream longStream = 
+    LongStream longStream =
             LongStream.rangeClosed(1, 5);
 
     // Three Musketeer collect
@@ -119,7 +182,18 @@ public void longStreamToLongSet()
 
 그렇다면 Java Stream에서 다른 다섯 가지 기본 유형을 어떻게 수집할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 옵션 2: 객체 스트림과 함께 기본 Collector 사용하기
 
@@ -129,7 +203,18 @@ public void longStreamToLongSet()
 
 어떤 객체 유형의 Stream부터 시작하여 해당 Stream을 모든 여덟 가지 기본 유형에 대한 여러 기본 컬렉션으로 어떻게 변환할 수 있는지 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Stream`String`을 BooleanBag으로 수집
 
@@ -154,7 +239,18 @@ public void streamToBooleanBag()
 
 ## Stream`String`을 ByteList로 수집
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제는 String Stream을 ByteList로 변환합니다.
 
@@ -166,7 +262,7 @@ public void streamToByteList()
 
     ByteList bytes = stream.collect(
             Collectors2.collectByte(
-                    Byte::parseByte, 
+                    Byte::parseByte,
                     ByteLists.mutable::empty));
 
     ByteList expected = ByteLists.mutable.with(
@@ -183,7 +279,18 @@ public void streamToByteList()
 
 이 예제는 Character 인스턴스의 Stream을 CharSet으로 변환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Test
@@ -237,7 +344,18 @@ public void streamToShortBag()
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Stream`BigInteger`을 IntList로 수집하기
 
@@ -267,7 +385,18 @@ public void streamToIntList()
 
 ## Stream`BigDecimal`을 FloatSet으로 수집하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시는 BigDecimal의 스트림을 FloatSet으로 변환합니다.
 
@@ -297,7 +426,18 @@ public void streamToFloatSet()
 
 이 예시는 LocalDate의 스트림을 LongBag으로 변환하여 LocalDate 인스턴스를 epochDay로 변환한 것을 포함합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 /**
@@ -351,7 +491,16 @@ public void streamToDoubleList()
     Assertions.assertEquals(expected, doubles);
 }
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 효율성은 여전히 우리의 문제입니다
 
@@ -361,8 +510,18 @@ public void streamToDoubleList()
 
 Valhalla가 도착했을 때, 우리 모두가 그것을 배우고 적용해 애플리케이션에서 새로운 효율성을 활용하여 모두가 함께 풋프린트를 줄이고 애플리케이션 성능을 향상시킬 수 있었으면 좋겠어요. 효율성은 우리의 문제입니다. 오늘날 사용 가능한 솔루션을 채택하든, Project Valhalla를 기다리든, 효율적인 컬렉션 코드를 작성하는 문제는 우리의 문제입니다. 혹시 Valhalla가 어떠한 효율성을 도입하여 우리가 어떠한 노력도 하지 않아도 메모리 및 성능 절약을 마법같이 제공할 수 있다면 그건 물론 환영받을 일이겠지요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셔서 감사합니다! 새롭고 유용한 정보를 배우셨길 바랍니다!
 
 저는 Eclipse Collections OSS 프로젝트의 창조자이자 기여자입니다. Eclipse Collections는 Eclipse Foundation에서 관리되고 있습니다. Eclipse Collections는 기여를 환영합니다.
+```

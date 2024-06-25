@@ -3,13 +3,12 @@ title: "BOSS FIGHTERS, 최고의 게이밍 길드와 팀을 이루다"
 description: ""
 coverImage: "/assets/img/2024-06-22-BOSSFIGHTERSTeamsUpwithTopGamingGuilds_0.png"
 date: 2024-06-22 23:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-BOSSFIGHTERSTeamsUpwithTopGamingGuilds_0.png
 tag: Tech
 originalTitle: "BOSS FIGHTERS Teams Up with Top Gaming Guilds!"
 link: "https://medium.com/@PlayBossFighters/boss-fighters-teams-up-with-top-gaming-guilds-1f226844f812"
 ---
-
 
 ![BOSSFIGHTERSTeamsUpwithTopGamingGuilds](/assets/img/2024-06-22-BOSSFIGHTERSTeamsUpwithTopGamingGuilds_0.png)
 
@@ -19,7 +18,18 @@ BOSS FIGHTERS 커뮤니티에 큰 소식이 있어요! 저희가 5개의 멋진 
 
 연금술사로 시작하는데, 이들이 저희 크루에 합류한 첫번째입니다. 이들은 새로운 영토를 개척하고 활기찬 커뮤니티를 구축하는 데 주력하고 있어요 — 자신의 Discord에 가입해보세요. 이들은 게임 세계의 선구자이며, 우리가 이들과 함께할 수 있어 기쁘게 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전략의 천재: BigTime Warriors
 
@@ -29,7 +39,18 @@ BOSS FIGHTERS 커뮤니티에 큰 소식이 있어요! 저희가 5개의 멋진 
 
 다음은 The Nest DAO인데, 이는 브라질의 Web3 게임 길드입니다. 이들은 참가자들에게 실질적인 권력을 부여하는 데 열정적입니다. 그것을 우리도 사랑합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양성 속의 통일: VIG와 BUG
 
@@ -39,7 +60,18 @@ BOSS FIGHTERS 커뮤니티에 큰 소식이 있어요! 저희가 5개의 멋진 
 
 ![이미지](/assets/img/2024-06-22-BOSSFIGHTERSTeamsUpwithTopGamingGuilds_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 파트너십 파티를 시작하기 위해 대규모 경품 이벤트를 진행 중입니다! 슬릭한 스킨부터 에픽 계약까지 30개의 디지털 자산이 준비되어 있어요. 참여하고 싶나요? 이 게시물에 좋아요, 공유 및 댓글을 남기세요! 참여하려면 새로운 모든 파트너와 BOSS FIGHTERS를 팔로우하는 것을 잊지 마세요.
 

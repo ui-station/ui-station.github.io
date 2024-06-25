@@ -3,13 +3,12 @@ title: "2024년에 경력있는 Java 개발자를 위한 카프카 인터뷰 질
 description: ""
 coverImage: "/assets/img/2024-05-23-KafkaInterviewQuestionforexperiencedJavadeveloperin2024_0.png"
 date: 2024-05-23 12:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-KafkaInterviewQuestionforexperiencedJavadeveloperin2024_0.png
 tag: Tech
 originalTitle: "Kafka Interview Question for experienced Java developer in 2024"
 link: "https://medium.com/@rathod-ajay/kafka-interview-question-for-experienced-developer-in-2024-01b95d126cdd"
 ---
-
 
 ## 안녕하세요 여러분, 카프카와 관련된 또 다른 기사에 오신 것을 환영합니다. 요즘 대부분의 기술 인터뷰에서 자바, 프런트엔드, 백엔드 및 풀스택 개발자 인터뷰에서 카프카 관련 질문이 나온다고 하죠. 하지만 왜 그럴까요? 분산 환경에서 여러 애플리케이션을 연결하기 위해 미들웨어가 필요하고 카프카는 인기 있는 미들웨어이면서 매우 강력합니다. 업계는 이를 신속하게 채택했기 때문에 카프카는 인터뷰에서 중요하다고 할 수 있습니다. 이제 물어볼 수 있는 질문 유형으로 들어가보겠습니다. 초보자나 신입 개발자는 이 부분을 건너 뛰어도 됩니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rathod-ajay/kafka-interview-question-for-experienced-
 
 아파치 카프카는 기술 산업에서 인기가 많은데, 그 이유는 몇 가지 주요한 이유로 인해입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 높은 처리량과 낮은 지연 시간: Kafka는 대량의 메시지를 신속하게 처리하여 실시간 데이터 처리에 적합합니다.
 - 확장성: Kafka의 분산 아키텍처로 수평적 확장이 가능하며, 더 많은 노드를 추가함으로써 데이터 요구량을 수용할 수 있습니다.
@@ -37,7 +47,18 @@ LinkedIn, Netflix, Uber, Airbnb와 같은 주요 기술 기업은 Kafka를 강�
 
 ## Kafka의 주요 구성 요소는 무엇인가요? (프로듀서, 컨슈머, 브로커, 토픽, 주키퍼)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로듀서: 이들은 데이터 스트림을 Kafka에 발행하는 애플리케이션이나 서비스입니다. 특정 카테고리나 피드인 토픽에 메시지를 작성합니다 (아래에서 설명됨). 프로듀서들은 소비자와 직접 상호작용하지 않고 Kafka로 데이터를 발행합니다.
 
@@ -47,7 +68,18 @@ LinkedIn, Netflix, Uber, Airbnb와 같은 주요 기술 기업은 Kafka를 강�
 
 브로커: 이들은 Kafka 클러스터를 형성하는 서버들입니다. 단일 Kafka 클러스터는 함께 작동하는 하나 이상의 브로커를 가질 수 있습니다. 브로커들은 프로듀서가 발행한 메시지를 저장하고 이를 컨슈머에 제공합니다. 메시지 복제, 파티션 관리 (아래에서 설명됨) 및 전체 Kafka 클러스터 조정을 담당합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Zookeeper: 카프카 클러스터의 상태를 관리하는 외부 서비스인 Zookeeper. 토픽, 브로커, 소비자 그룹을 추적하여 클러스터 내에서 모든 것이 원활하게 작동하도록 합니다. 조정에 중요하지만, Zookeeper 자체는 실제 데이터 메시지를 저장하지는 않습니다.
 
@@ -57,7 +89,18 @@ Zookeeper: 카프카 클러스터의 상태를 관리하는 외부 서비스인 
 
 Kafka는 주로 복제라는 기술을 통해 데이터 내구성과 오류 허용을 보장합니다. 작동 방식은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 토픽 및 파티션: Kafka 토픽은 데이터 스트림의 범주입니다. 내부적으로 각 토픽은 파티션이라고 하는 작은 순서대로 정렬된 세그먼트로 나뉩니다. 이 파티션은 병렬 처리와 확장성을 가능하게 합니다.
 - 복제 팩터: 각 파티션은 Kafka 클러스터 내의 여러 브로커에 걸쳐 복제됩니다. 파티션의 복사본 수는 복제 팩터라는 구성 매개변수에 의해 결정됩니다. 더 높은 복제 팩터는 더 큰 장애 허용성을 보장합니다.
@@ -72,7 +115,18 @@ Kafka는 주로 복제라는 기술을 통해 데이터 내구성과 오류 허�
 
 복제 및 확인 전략을 통해 Kafka는 브로커 장애로 인한 데이터 손실을 방지합니다. 브로커가 다운되어도 해당 데이터는 복제본에 유지되어 시스템이 복구하고 운영을 계속할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 카프카의 내결함 허용성에 기여하는 다른 요소들이 있지만, 복제가 핵심 메커니즘입니다.
 
@@ -82,7 +136,18 @@ Kafka는 주로 복제라는 기술을 통해 데이터 내구성과 오류 허�
 
 리더 복제본:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 책임:
   - 배정된 파티션에 대한 생산자로부터 쓰기(새 메시지)를 수락합니다.
@@ -101,7 +166,18 @@ Follower 레플리카:
 
 ## 소비자 그룹이란 무엇이며 어떻게 작동합니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소비자 그룹은 Kafka에서 데이터 스트림의 병렬 처리를 가능하게 하고 각 메시지가 그룹 내 정확히 하나의 소비자에 전달되도록 하는 기본적인 개념입니다. 다음은 그들이 작동하는 방식입니다:
 
@@ -112,7 +188,18 @@ Follower 레플리카:
 
 부하 분산 및 병렬 처리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 소비자 그룹이 주제를 구독하면 해당 주제의 파티션은 그룹 내의 소비자들 사이에 자동으로 나눠집니다. 이 분배는 소비자와 파티션의 수에 기반하여 균형을 유지하도록 지능적으로 이루어집니다.
 - 그룹 내 각 소비자는 할당된 파티션에서 메시지를 처리하는 책임이 있습니다. 이 병렬 처리를 통해 소비자 그룹이 대량의 데이터를 효율적으로 처리할 수 있습니다.
@@ -123,7 +210,18 @@ Follower 레플리카:
 
 소비자 리밸런싱:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 파티션의 분배는 소비자들 사이에서 동적으로 변경될 수 있습니다. 이는 다음과 같은 시나리오에서 발생합니다:
   - 소비자가 그룹에 가입하거나 나가는 경우.
@@ -139,7 +237,18 @@ Follower 레플리카:
 
 소비자 그룹 사용 사례:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소비자 그룹은 여러 소비자 간에 데이터 처리를 병렬화해야 하는 다양한 시나리오에서 가치가 있습니다. 예를 들어 다음과 같은 경우에 사용됩니다:
 
@@ -151,7 +260,18 @@ Follower 레플리카:
 
 Kafka에서 오프셋은 소비자 그룹 또는 각각의 소비자가 토픽 파티션 내에서 진행 상황을 추적하는 포인터 역할을 합니다. 이것들은 본질적으로 각 파티션 내에서 0부터 시작하는 순차적으로 할당된 정수로, 각 메시지에 대한 진행 상황을 나타냅니다. 여기에 오프셋에 대한 더 깊은 내용과 커밋 방법이 나와 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **Offset 이해:**
 
@@ -164,9 +284,20 @@ Kafka에서 오프셋은 소비자 그룹 또는 각각의 소비자가 토픽 �
   - 적어도 한 번: 이것은 기본 설정입니다. 컨슈머는 메시지 처리 후 오프셋을 커밋합니다. 그러나 컨슈머가 오프셋을 커밋하기 전에 충돌하면 메시지가 다시 전달될 수 있어 재시작 시 중복 처리 가능성이 있습니다.
   - 최대 한 번: 컨슈머는 메시지를 받자마자 오프셋을 커밋합니다. 처리가 실패하면 메시지가 다시 시도되지 않을 수 있어 데이터 손실 가능성이 있습니다.
   - 정확히 한 번 (트랜잭션): 이것은 가장 복잡하지만 각 메시지가 정확히 한 번 전달 및 처리됨을 보장합니다. Kafka 트랜잭션과 Kafka Streams API를 사용해야 합니다.
-- 오프셋 커밋 과정: 일반적으로 컨슈머는 Kafka가 유지하는 "__consumer_offsets"라는 특별한 내부 토픽에 오프셋을 커밋합니다. 이 토픽은 모든 컨슈머 그룹과 파티션에 대한 커밋된 오프셋을 저장합니다.
+- 오프셋 커밋 과정: 일반적으로 컨슈머는 Kafka가 유지하는 "\_\_consumer_offsets"라는 특별한 내부 토픽에 오프셋을 커밋합니다. 이 토픽은 모든 컨슈머 그룹과 파티션에 대한 커밋된 오프셋을 저장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오프셋을 커밋하는 중요성:
 
@@ -177,7 +308,18 @@ Kafka에서 오프셋은 소비자 그룹 또는 각각의 소비자가 토픽 �
 
 오프셋 커밋 전략의 선택은 응용 프로그램의 요구 사항에 따라 달라집니다. 데이터 손실이 절대 허용되지 않는 경우, 정확히 한 번의 전달이 필요하며 (더 복잡하지만) 구현해야 합니다. 어느 정도의 메시지 중복은 허용되는 경우, at-least-once 전략이 더 간단한 접근 방식입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Kafka가 높은 처리량과 낮은 지연 시간을 어떻게 달성하는가?
 
@@ -188,7 +330,18 @@ Kafka는 설계 선택과 기술의 조합을 통해 높은 처리량과 낮은 
 - 분산 아키텍처: Kafka의 분산 아키텍처는 클러스터 내 여러 브로커에 부하를 분산시켜 대규모 데이터 양을 처리할 수 있도록 합니다. 이를 통해 필요에 따라 더 많은 머신을 추가함으로써 수평 확장이 가능합니다.
 - 분할: Kafka의 주제는 파티션이라는 더 작은 단위로 나누어집니다. 프로듀서는 이러한 파티션에 병렬로 메시지를 발행할 수 있으며, 이는 전체 처리량을 향상시킵니다. 소비자는 할당된 파티션에서 메시지를 동시에 소비함으로써 처리를 병렬화할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 효율적인 데이터 저장 및 액세스:
 
@@ -201,7 +354,18 @@ Kafka는 설계 선택과 기술의 조합을 통해 높은 처리량과 낮은 
 
 - 프로듀서 및 소비자: 프로듀서와 소비자는 독립적으로 작동합니다. 프로듀서는 소비자가 구독한 것을 알 필요 없이 주제에 메시지를 발행합니다. 이 분리는 프로듀서가 소비자 확인을 기다리지 않기 때문에 전체 대기 시간이 줄어듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비동기 통신:
 
@@ -212,7 +376,18 @@ Kafka는 설계 선택과 기술의 조합을 통해 높은 처리량과 낮은 
 - 미리 가져오기: 소비자는 로컬 버퍼로 구성된 메시지를 사전에 가져올 수 있습니다. 이는 후속 메시지 가져오기의 지연 시간을 줄이며 데이터가 메모리에 이미 사용 가능하게 함.
 - 효율적인 소비자 그룹 관리: 소비자 그룹은 다시 조정 알고리즘을 활용하여 파티션을 효율적으로 소비자들 사이에 분배합니다. 이로써 균형 잡힌 부하 및 전반적인 처리 시간을 줄입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Kafka의 실제 사용 사례는 무엇인가요? (로그 집계, 마이크로서비스 통신)
 
@@ -223,7 +398,18 @@ Kafka는 설계 선택과 기술의 조합을 통해 높은 처리량과 낮은 
 - Kafka는 다양한 분산 애플리케이션, 서비스 및 마이크로서비스에서 로그를 수집하는 데 뛰어납니다. 이러한 로그는 Kafka의 특정 토픽으로 스트림으로 발행됩니다.
 - 중앙 집계된 로그를 사용하면 애플리케이션의 실시간 분석, 문제 해결 및 성능 모니터링이 가능해집니다. ELK 스택(Elasticsearch, Logstash, Kibana)과 같은 도구를 Kafka와 통합하여 로그 데이터를 소비하고 시각화하여 더 깊은 인사이트를 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이크로서비스 통신:
 
@@ -236,7 +422,18 @@ Kafka는 설계 선택과 기술의 조합을 통해 높은 처리량과 낮은 
 - 아파치 플링크나 아파치 스파크 스트리밍과 같은 스트림 처리 프레임워크를 카프카와 통합하여 토픽에서 데이터 스트림을 소비하고 실시간 연산, 필터링 또는 변환을 수행할 수 있습니다.
 - 이를 통해 애플리케이션은 사기 탐지, 이상 분석 또는 추천 엔진을 위한 실시간 데이터 통찰에 반응할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IoT 데이터 수집 및 처리:
 
@@ -249,7 +446,18 @@ IoT 데이터 수집 및 처리:
 - Kafka는 마이크로서비스 및 응용 프로그램을 위한 중앙 이벤트 저장소로 사용될 수 있습니다. 상태 변경 또는 작업을 나타내는 이벤트는 Kafka 토픽에 메시지로 발행됩니다.
 - 이 이벤트 로그는 분산 시스템에서 언제든지 응용 프로그램 상태를 재구성하거나 최종 일관성 패턴을 구현하는 데 사용될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **실시간 사기 탐지:**
 
@@ -260,7 +468,18 @@ IoT 데이터 수집 및 처리:
 
 ## 카프카 소비자가 뒤처지는 상황을 어떻게 처리하시겠어요? (소비자 리밸런싱, 구성 조정)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 카프카 소비자가 생산자를 따라잡지 못하고 메시지 처리에서 뒤처지기 시작하는 상황을 해결하는 방법을 다음과 같이 제시해 드립니다.
 
@@ -271,7 +490,18 @@ IoT 데이터 수집 및 처리:
 
 소비자 측 해결책:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 소비자 코드 최적화: 소비자 코드를 검토하고 개선할 부분을 식별합니다. 이 작업에는 다음이 포함될 수 있습니다:
   - 메시지 처리 논리를 최적화하여 메시지당 처리 시간을 줄입니다.
@@ -286,7 +516,18 @@ IoT 데이터 수집 및 처리:
 
 ## 카프카에서 한 소비자로 중복 메시지 소비 방지하기를 선택하는 방법?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정확히 한 번만 메시지가 전달되고 소비자에 의해 한 번만 처리되는 정확히 한 번의 의미를 달성하려면 Apache Kafka에서는 적어도 한 번 또는 최대 한 번 전달보다 더 많은 노력이 필요합니다. Kafka에서 단일 소비자에 의한 중복 처리를 피하기 위한 두 가지 주요 방법은 다음과 같습니다:
 
@@ -297,7 +538,18 @@ IoT 데이터 수집 및 처리:
 
 프로세스의 분해는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 소비자는 메시지를 소비하기 전에 Kafka 트랜잭션을 시작합니다.
 - 소비자는 메시지를 처리하고 필요한 작업을 수행합니다.
@@ -313,7 +565,18 @@ IoT 데이터 수집 및 처리:
 
 여기에 일반적인 아이디어가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 사용자는 받은 각 메시지에 고유 식별자(동질성 키)를 할당합니다.
 - 메시지를 처리하기 전에 사용자는 동일한 동질성 키를 가진 메시지를 이미 처리했는지 확인합니다. 이를 위해 처리된 키를 데이터베이스나 분산 캐시에 저장하여 확인할 수 있습니다.
@@ -329,7 +592,18 @@ IoT 데이터 수집 및 처리:
 
 적절한 방법 선택하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 트랜잭션 소비자(카프카 스트림 API)는 간단하고 정확히 한 번 배송이 보장되는 접근 방식으로 일반적으로 권장됩니다.
 - 수동 오프셋 관리와 이덤포턴스는 대안일 수 있지만, 이의 효율을 위해서 더 많은 개발 노력이 필요하며, 이덤포턴시 키 및 오프셋을 관리하는 데 잠재적인 복잡성을 도입할 수 있습니다.
@@ -340,7 +614,18 @@ IoT 데이터 수집 및 처리:
 
 컨슈머 그룹:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 소비자는 "group.id"라는 고유 식별자를 사용하여 그룹화될 수 있습니다. 동일한 그룹에 속하는 모든 소비자는 소비자 그룹을 형성합니다.
 - 각 소비자 인스턴스는 구성 중에 해당하는 그룹 소속을 지정합니다.
@@ -353,7 +638,18 @@ IoT 데이터 수집 및 처리:
 
 독점 청취:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 각 주제 내의 각 파티션은 한 번에 그룹 내의 하나의 소비자에게 할당됩니다. 이는 그룹 내에서 중복 처리를 방지합니다.
 - 소비자가 메시지를 처리하는 동안 주기적으로 오프셋을 커밋합니다. 이를 통해 Kafka에게 각 파티션의 마지막으로 성공적으로 처리한 메시지를 알립니다.
@@ -365,7 +661,18 @@ IoT 데이터 수집 및 처리:
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 명의 소비자(소비자 A 및 소비자 B)가 3개 파티션을 가진 주제에 가입한 소비자 그룹을 상상해보세요. Kafka는 파티션을 다음과 같이 분배할 수 있습니다:
 
@@ -376,7 +683,18 @@ IoT 데이터 수집 및 처리:
 
 중요 참고사항:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 카프카는 소비자 그룹 내에서 중복 처리를 방지하지만, 동일한 주제에 두 개의 소비자 그룹이 모두 구독되어 있다면 메시지가 여러 소비자 그룹으로 전달될 수 있습니다. 소비자 그룹에 관계없이 메시지가 한 번만 처리되도록 보장해야 한다면, 이벤트 중복성과 같은 기술을 활용하여 소비자 내에서 추가 로직을 구현해야 합니다 (이전 질문에 다루어졌습니다).
 
@@ -386,7 +704,18 @@ IoT 데이터 수집 및 처리:
 
 1. 카프카 오프셋 커밋과 소비자 리발란싱 활용하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 오프셋 커밋: 카프카는 소비자 측 오프셋 커밋을 활용하여 진행 상황을 추적합니다. 소비자들은 주기적으로 오프셋을 커밋하여 구독 중인 각 파티션에서 마지막으로 성공적으로 처리한 메시지를 나타냅니다.
 - 소비자 리밸런싱: 소비자가 실패하거나 새로운 소비자가 그룹에 가입하면, 카프카는 소비자 리밸런싱을 트리거합니다. 이 과정은 나머지 소비자들 사이에서 파티션을 재분배합니다.
@@ -399,7 +728,18 @@ IoT 데이터 수집 및 처리:
 
 2. 소비자에서 오류 처리 및 재시도 구현:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 에러 처리: 소비자 애플리케이션에서 예외나 처리 실패를 감지하기 위한 견고한 에러 처리 메커니즘을 갖추는 것이 중요합니다.
 - 재시도 논리: 에러가 발생할 때 소비자는 메시지 처리를 다시 시도하는 재시도 논리를 구현해야 합니다. 이는 일시적 에러의 경우 브로커를 과도하게 사용하지 않도록 백오프 전략을 사용하여 재시도하는 것을 포함할 수 있습니다.
@@ -413,7 +753,18 @@ IoT 데이터 수집 및 처리:
 
 4. 올바른 오프셋 커밋 전략 선택:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Kafka의 기본 옵셋 커밋 전략은 적어도 한 번은 입니다. 이는 메시지가 최소한 한 번은 전달되도록 보장하지만, 소비자가 오프셋을 커밋하기 전에 실패할 경우 중복이 발생할 수 있습니다.
 - 더 엄격한 전달 보증을 위해 Kafka Transactions 및 Kafka Streams API를 사용하여 정확히 한 번만 전달되는 의미론을 고려하십시오. 이 방식은 각 메시지가 한 번만 전달되고 처리되도록 보장하지만, 더 복잡한 구성 및 개발 노력이 필요합니다.
@@ -424,12 +775,23 @@ IoT 데이터 수집 및 처리:
 
 필요한 Kafka 종속성을 pom.xml(Maven용)이나 build.gradle(Gradle용) 파일에 추가하십시오. Spring Boot은 핵심 Kafka 종속성이 포함된 편리한 spring-kafka 스타터를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-kafka</artifactId>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-kafka</artifactId>
 </dependency>
 ```
 
@@ -442,9 +804,19 @@ Spring Boot는 application.yml 또는 application.properties와 같은 애플리
 - spring.kafka.producer.key-serializer: 이 속성은 응용 프로그램에서 생성한 메시지 키의 직렬화에 사용되는 직렬화기를 지정합니다. 기본적으로 StringSerializer가 사용됩니다. JSON 키의 경우와 같이 메시지 키 데이터 유형에 따라 다른 직렬화기를 선택할 수 있습니다 (예: JSON 키의 경우의 경우 JsonSerializer).
 - spring.kafka.producer.value-serializer: 이 속성은 응용 프로그램에서 생성한 메시지 값의 직렬화에 사용되는 직렬화기를 정의합니다. 키 직렬화기와 유사하게, 메시지 값 데이터 유형에 따라 적절한 직렬화기를 선택하세요.
 - (선택 사항) spring.kafka.consumer.auto-offset-reset: 이 속성은 소비자 그룹이 리밸런스되거나 장애 발생 후 다시 시작할 때 소비자 오프셋이 어떻게 처리되는지를 제어합니다. 기본값은 earliest로, 이는 소비자가 파티션의 처음부터 읽기를 시작함을 의미합니다. 최신 메시지부터 읽기를 시작하려면 latest로 설정할 수 있습니다.
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. Kafka 프로듀서와 컨슈머 생성하기:
 
@@ -472,7 +844,18 @@ public class MyKafkaApp {
 
 ## Kafka 작업 시 개발자들이 자주 하는 일반적인 실수는 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설정 및 사용에 대한 오류:
 
@@ -488,7 +871,18 @@ public class MyKafkaApp {
 - 비효율적인 소비자 코드: 최적화되지 않은 소비자 코드는 메시지 처리 속도를 늦추고 전반적인 처리량을 저해할 수 있습니다.
 - 소비자 랙 모니터링 미흡: 소비자 랙을 모니터링하지 않으면 잠재적인 병목 현상이나 부하 분배의 불균형에 대해 알지 못할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발 및 오류 처리:
 
@@ -500,7 +894,18 @@ Kafka 대체 제품 및 비교:
 
 메시지 스트리밍 세계에서 Kafka가 우세한 플레이어이지만 귀하의 특정 요구 사항에 따라 고려할 수 있는 다른 옵션도 있습니다. 여기에는 Kafka와 두 가지 인기 있는 대체 제품인 RabbitMQ 및 Apache Pulsar의 비교가 포함됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RabbitMQ:
 
@@ -513,7 +918,18 @@ RabbitMQ:
 - 유연성: 다양한 메시지 교환 패턴을 지원하여 다양한 통신 시나리오에 적합합니다.
 - 성숙하고 안정적인: 큰 커뮤니티와 포괄적인 실전 테스트로 지탱되어 안정성이 뛰어납니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 약점:
 
@@ -529,7 +945,18 @@ Apache Pulsar:
 
 - 초점: Pulsar는 상대적으로 새로운 오픈 소스 메시지 스트리밍 플랫폼으로 고성능, 확장성 및 낮은 지연 시간을 위해 설계되었습니다. Kafka와 유사한 기능을 제공하지만 멀티테넌시와 지리적 복제에 중점을 둡니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 장점:
 
@@ -544,7 +971,18 @@ Apache Pulsar:
 - 성숙도: Kafka의 확립된 생태계와 비교할 때, Pulsar는 비교적 신생 프로젝트로 생태계 및 툴 통합이 덜 성숙할 수 있습니다.
 - 복잡성: 고급 기능으로 인해 Kafka보다 설정 및 관리가 다소 복잡할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용 사례:
 
@@ -556,7 +994,18 @@ Apache Pulsar:
 
 Kafka, RabbitMQ 및 Pulsar 중에서 최상의 선택을 하려면 특정 요구 사항을 고려해야 합니다. 다음은 간략한 가이드라인입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 간단한 메시지 라우팅 및 가벼운 통신에는 RabbitMQ를 사용하세요.
 - 고 처리량과 낮은 지연 시간, 확장성을 갖춘 스트리밍에는 Kafka 또는 Pulsar를 사용하세요.
@@ -569,7 +1018,18 @@ Kafka, RabbitMQ 및 Pulsar 중에서 최상의 선택을 하려면 특정 요구
 
 # 읽어 주셔서 감사합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 👏 이야기에 박수를 보내 주시고 저를 팔로우하세요 👉
 - 📰 제 Medium 페이지에서 더 많은 콘텐츠를 읽어보세요 (Java 개발자 면접을 위한 60개의 이야기)

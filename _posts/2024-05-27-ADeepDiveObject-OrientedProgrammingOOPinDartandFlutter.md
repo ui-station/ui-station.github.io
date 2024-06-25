@@ -18,7 +18,18 @@ link: "https://medium.com/@shahzebnaqvi/a-deep-dive-object-oriented-programming-
 
 캡슐화는 데이터와 데이터를 조작하는 메서드를 하나의 클래스라는 단위 내에 묶는 것을 말합니다. 이는 객체의 내부 상태를 외부 세계로부터 숨기고 필요한 기능을 명확히 정의된 인터페이스를 통해 노출하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Dart에서 캡슐화는 public, private 및 protected와 같은 접근 한정자를 통해 달성됩니다. 기본적으로 멤버는 public이지만 밑줄(\_)을 사용하여 private로 표시할 수도 있습니다.
 
@@ -56,7 +67,18 @@ void main() {
 
 ## 2. 상속
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상속은 하위 클래스(subclass)가 다른 클래스(슈퍼클래스)로부터 속성과 메소드를 상속받을 수 있는 메커니즘입니다. 이는 코드 재사용을 촉진하고 클래스 간에 계층적인 관계를 정립합니다.
 
@@ -84,7 +106,18 @@ void main() {
 
 ## 3. 다형성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다형성은 서로 다른 클래스의 객체를 공통 부모 클래스의 객체로 다룰 수 있게 합니다. 이는 코드의 유연성과 확장성을 가능하게 합니다.
 
@@ -122,7 +155,18 @@ void main() {
 
 ## 4. 추상화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추상화는 복잡한 구현 세부사항을 숨기고 객체의 필수적인 특성만을 보여주는 과정입니다. 이는 프로그래밍 복잡성을 줄이고 대규모 코드베이스를 효과적으로 관리하는 데 도움이 됩니다.
 
@@ -148,7 +192,18 @@ void main() {
 
 # 메서드 재정의와 오버로딩
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 메소드 오버라이딩
 
@@ -176,7 +231,18 @@ void main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 메소드 오버로딩
 
@@ -202,7 +268,18 @@ void main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 상속 이해
 
@@ -212,7 +289,18 @@ void main() {
 
 ## 1. 단일 상속
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 개의 수퍼클래스로부터 속성과 메소드를 상속받는 것을 단일 상속이라고 합니다. Dart에서 클래스는 하나의 수퍼클래스만 확장할 수 있습니다.
 
@@ -240,7 +328,18 @@ void main() {
 
 이 예시에서 Dog 클래스는 Animal 클래스로부터 eat() 메소드를 상속받습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 다중 상속
 
@@ -275,7 +374,18 @@ void main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 랩라도 클래스는 Dog 클래스를 상속하고, Dog 클래스는 Animal 클래스를 상속합니다.
 
@@ -285,7 +395,18 @@ void main() {
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dart
 class Animal {
@@ -323,9 +444,18 @@ void main() {
 
 캡슐화는 객체 지향 프로그래밍의 핵심 원칙 중 하나로, 데이터(변수) 및 해당 데이터를 조작하는 메서드(함수)를 하나로 묶은 클래스라는 단위로 묶는 것을 목표로 합니다. 이 접근 방식은 개체의 일부 구성 요소에 대한 직접적인 액세스를 제한하여 의도하지 않은 간섭 및 남용을 방지하는 데 필수적입니다. Dart 및 Flutter에서 캡슐화는 멤버 변수 캡슐화, 함수 캡슐화 및 클래스 캡슐화의 세 가지 주요 방법으로 달성됩니다. 각 유형을 구체적인 예를 통해 자세히 살펴보겠습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. 멤버 변수 캡슐화
 
@@ -358,7 +488,18 @@ void main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제에서 \_name 변수는 private이며 getter 및 setter 메서드를 통해서만 액세스하거나 수정할 수 있습니다. 이 캡슐화는 \_name에 대한 모든 수정이 확인되도록 보장합니다.
 
@@ -368,7 +509,18 @@ void main() {
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class Calculator {
@@ -395,7 +547,18 @@ void main() {
 
 클래스 캡슐화는 관련된 변수와 메서드를 하나의 클래스로 묶는 것을 의미합니다. 이는 모듈성과 재사용성을 촉진하여 코드를 보다 조직적이고 관리하기 쉽도록 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시:
 
@@ -422,7 +585,18 @@ void main() {
 
 # 추상화 이해하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추상화는 객체 지향 프로그래밍(OOP)에서 중요한 원칙으로, 문제에 적합한 클래스를 모델링하여 복잡한 시스템을 간단하게 만들어줍니다. 이는 구현 세부 정보를 숨기고 사용자에게 기능만 표시함으로써 도움이 됩니다. Dart와 Flutter에서 추상화는 깔끔하고 유지보수 가능하며 모듈식 코드를 작성하는 데 다양한 형태로 적용될 수 있습니다. 이 블로그에서는 OOP에서 다양한 종류의 추상화인 데이터 추상화, 프로세스 추상화, 공개 지정자를 사용한 추상화, 그리고 비공개 분류자를 사용한 추상화에 대해 다룰 것입니다. 함께 알아보겠습니다!
 
@@ -432,8 +606,18 @@ void main() {
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추상 클래스인 Animal은 사운드()라는 추상 메서드를 정의합니다. 이 메서드는 Dog 클래스에서 구현됩니다. Animal 클래스의 사용자로부터 사운드()의 구현 세부사항을 숨기고 필요한 기능만 노출시킵니다.
 
@@ -441,8 +625,18 @@ void main() {
 
 프로세스 추상화는 복잡한 프로세스나 작업을 간단하고 관리하기 쉬운 메서드로 추상화하는 것을 의미합니다. 이를 통해 복잡한 기능을 작은 재사용 가능한 메서드로 분해하는 데 도움이 됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시:
 
@@ -468,7 +662,18 @@ void main() {
 
 ## 3. 공개 지정자를 사용한 추상화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Dart에서의 공개 지정자는 클래스의 특정 부분을 노출시키면서 다른 부분을 숨길 때 사용됩니다. 이는 클래스의 명확한 인터페이스를 정의하는 데 중요하며 내부 상태를 보호하는 데 도움이 됩니다.
 
@@ -501,7 +706,18 @@ void main() {
 
 이 예시에서는 \_accountNumber 및 \_balance 변수가 비공개이지만 balance getter 및 deposit 메서드는 공개되어 있습니다. 이를 통해 잔액에 제한된 액세스권을 부여하면서 계좌 번호를 숨길 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 4. 비공개 분류자를 사용한 추상화
 
@@ -537,7 +753,18 @@ void main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예에서 \_calculateBonus 메서드는 private이며 Employee 클래스 내에서만 액세스할 수 있습니다. 보너스 getter는 실제 계산 프로세스를 숨기고 계산된 보너스를 노출합니다.
 
@@ -547,6 +774,17 @@ Dart 및 Flutter 애플리케이션에서 깨끗하고 유지보수가능하며 
 
 또한 Dart와 Flutter에서 다양한 유형의 상속을 이해하는 것은 효율적이고 유지보수 가능한 코드베이스를 설계하는 데 중요합니다. 상속을 효과적으로 활용하면 코드 재사용을 촉진하고 계층적 관계를 수립하고 쉽게 확장 가능한 애플리케이션을 구축할 수 있습니다. 간단한 클래스 계층 구조를 작성하거나 복잡한 객체 구조를 설계하든 상속은 Dart 및 Flutter 프로젝트의 아키텍처를 형성하는 데 중요한 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 댓글에 Dart와 Flutter에서의 OOP에 대한 생각과 경험을 자유롭게 공유해주세요!

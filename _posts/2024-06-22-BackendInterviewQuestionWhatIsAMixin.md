@@ -3,21 +3,31 @@ title: "백엔드 면접 질문  믹스인이란 무엇인가요"
 description: ""
 coverImage: "/assets/img/2024-06-22-BackendInterviewQuestionWhatIsAMixin_0.png"
 date: 2024-06-22 22:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-BackendInterviewQuestionWhatIsAMixin_0.png
 tag: Tech
 originalTitle: "Backend Interview Question — What Is A Mixin?"
 link: "https://medium.com/gitconnected/backend-interview-question-what-is-a-mixin-3e9922838635"
 ---
 
-
-Interviewer가 데이터 구조 및 알고리즘 질문에 대한 면접을 마치면 임의로 짧은 기술 질문을 할 수 있습니다. 
+Interviewer가 데이터 구조 및 알고리즘 질문에 대한 면접을 마치면 임의로 짧은 기술 질문을 할 수 있습니다.
 
 예를 들어, 믹스인(Mixin)이 무엇이며 왜 사용하는지 설명해보세요.
 
 그리고 그 외에도 많은 다른 질문들이 있습니다. 이 질문들의 상당수에 대해 괜찮은 답변을 준비하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Mixin이란 무엇인가요?
 
@@ -30,15 +40,26 @@ class BarkMixin:
         print('woof')
 
 class Animal:
-    ... 
+    ...
 
 class Dog(Animal, BarkMixin):
-    ... 
+    ...
 ```
 
 ^ 여기서 BarkMixin은 해당 클래스에서 상속 받은 클래스에 'bark' 메소드를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BarkMixin이 Dog의 부모 클래스로 사용되는 것이 아니라, 단순히 Dog에게 짖는 메서드를 제공하도록 설계되었습니다.
 
@@ -60,7 +81,18 @@ class SqueakMixin:
 
 ^ 각 믹스인에는 일반적으로 소수의 함수가 포함되어 있습니다. 이렇게 하면 조합하여 더 편리하게 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```javascript
 class Monster1(BarkMixin, MeowMixin):
@@ -87,7 +119,18 @@ m.squeak()  # squeak
 
 그리고 Monster2가 짖고 야옹하며 삑삑 소리를 낼 수 있게 하려면 BarkMixin, MeowMixin, SqueakMixin에서 상속받으면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 그런데, 클래스 내에서 이들을 정의하는 것이 어떨까요???
 
@@ -113,7 +156,18 @@ class 삑삑포함:
 - 몬스터4는 삑삑만 할 수 있습니다.
 - 몬스터5는 짖거나 삑삑을 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 천천히 하나씩 mixins을 사용해보죠.
 
@@ -122,7 +176,7 @@ class Monster1:
     def bark(self):
         print('woof')
 
-    def meow(self): 
+    def meow(self):
         print('meow')
 
 class Monster2:
@@ -180,7 +234,18 @@ class Monster4(SqueakMixin): pass
 class Monster5(BarkMixin, SqueakMixin): pass
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 훨씬 깔끔하고, 코드 반복이 훨씬 적으며, 읽기도 훨씬 쉬워요
 
@@ -192,9 +257,20 @@ class Monster5(BarkMixin, SqueakMixin): pass
 - 상당 수의 클래스들이 필요로 하는
 - 혼합 및 매칭이 필요한
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-테이블 태그를 Markdown 형식으로 변경해 보시는 것을 권장해 드립니다. 이 설명이 명확하고 이해하기 쉬웠으면 좋겠네요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+테이블 태그를 Markdown 형식으로 변경해 보시는 것을 권장해 드립니다. 이 설명이 명확하고 이해하기 쉬웠으면 좋겠네요.
 
 # 만약 제가 창작자로서 지원받길 원하신다면
 
@@ -204,7 +280,18 @@ class Monster5(BarkMixin, SqueakMixin): pass
 
 감사합니다! 이런 작은 조치들이 큰 도움이 되고 정말 감사히 받아들입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 YouTube: https://www.youtube.com/@zlliu246
 

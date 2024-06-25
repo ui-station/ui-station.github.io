@@ -3,13 +3,12 @@ title: "Read the Docs 트래픽 분석을 위해 Vizro-AI를 활용한 재사용
 description: ""
 coverImage: "/assets/img/2024-05-17-IBuiltaReusableDashboardforReadtheDocsTrafficAnalyticsUsingVizro-AI_0.png"
 date: 2024-05-17 19:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-IBuiltaReusableDashboardforReadtheDocsTrafficAnalyticsUsingVizro-AI_0.png
 tag: Tech
 originalTitle: "I Built a Reusable Dashboard for Read the Docs Traffic Analytics Using Vizro-AI"
 link: "https://medium.com/towards-data-science/i-built-a-reusable-dashboard-for-read-the-docs-traffic-analytics-using-vizro-47dc15dc04f8"
 ---
-
 
 ## (50 줄 미만의 코드로)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/i-built-a-reusable-dashboard-for-
 
 ## 요약?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 당신이 바로 시작하고 싶다면, 내 GitHub 레포지토리에서 대시보드에 대한 Jupyter Notebook 코드를 찾을 수 있어.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-data-science/i-built-a-reusable-dashboard-for-
 
 ![RTD Traffic Chart](/assets/img/2024-05-17-IBuiltaReusableDashboardforReadtheDocsTrafficAnalyticsUsingVizro-AI_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추가적인 시각적 출력을 위해 Google Analytics (GA)를 활용할 수 있습니다. 그러나 일부 프로젝트에서는 유럽 연합(EU)에서 특히 논란이 되는 일반 데이터 보호 규정(GDPR)과의 준수 때문에 GA를 사용하지 않기를 선호하기도 합니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/towards-data-science/i-built-a-reusable-dashboard-for-
 
 예시를 직접 실행하려면 가짜 데이터(또는 직접 다운로드한 데이터)와 Jupyter Notebook 코드가 필요합니다. 이는 기본 수준에서 쉽게 진행할 수 있지만 보다 고급 사용자는 확장할 수 있습니다. 개선된 버전을 만드신 경우 알려주시면 감사하겠습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Vizro와 Vizro-AI란 무엇인가요?
 
@@ -49,7 +81,18 @@ Vizro는 Plotly와 Dash를 기반으로 한 프레임워크로, 사용자 정의
 
 ## Vizro-AI 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노트북 코드를 실행하기 전에 Vizro-AI를 Python 3.9 이상의 가상 환경 안에 설정해야 합니다. pip install vizro_ai 명령을 사용하여 패키지를 설치해주세요.
 
@@ -59,7 +102,18 @@ Vizro는 Plotly와 Dash를 기반으로 한 프레임워크로, 사용자 정의
 
 이 시점에서 주피터 노트북을 열어 첫 차트를 만들거나, 제 저장소에서 노트북을 열어 내가 작성한 코드를 차례로 살펴보고, RTD 데이터(또는 제공한 가짜 데이터)를 pandas DataFrame에 불러와주세요. 아래 코드에서는 df로 이름을 지었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 코드는 Vizro-AI에 요청을 제출하여 Read the Docs 프로젝트 대시보드의 차트와 유사한 차트를 생성하는 방법을 보여줍니다. 이 차트는 날짜별 조회수를 보여주며 문서의 안정 버전과 최신 버전으로 데이터를 분할하여 두 개의 추적 값으로 나뉩니다:
 
@@ -69,7 +123,18 @@ Vizro-AI는 "가장 최신 및 안정 버전의 각 날짜별 조회 수 행을 
 
 Vizro-AI가 제공하는 인사이트 텍스트는 트래픽 데이터 조작 방법을 설명합니다. 코드 섹션은 코드 스니펫이 요청된 선 그래프를 생성하는 방법에 따라 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-IBuiltaReusableDashboardforReadtheDocsTrafficAnalyticsUsingVizro-AI_2.png" />
 
@@ -79,7 +144,18 @@ Vizro-AI가 제공하는 인사이트 텍스트는 트래픽 데이터 조작 �
 
 ## 더 많은 차트 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Vizro-AI가 제공하는 코드를 활용하여 추가 차트를 작성했습니다. 다음과 같이 교통량을 자세히 설명하는 몇 가지 차트를 작성했습니다.
 
@@ -89,7 +165,18 @@ Vizro-AI가 데이터를 조작하고 차트를 생성하는 코드를 생성해
 
 Vizro-AI 코드와 동일한 Jupyter Notebook에서 Vizro를 사용할 수 있습니다. Vizro 설명서에 설명된대로 pip install vizro를 수행해 주세요. 여기에는 차트 생성이 없는 간단한 대시보드의 구조를 위한 코드가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 시점에서 두 가지 옵션이 있습니다:
 
@@ -100,7 +187,18 @@ Vizro-AI 코드와 동일한 Jupyter Notebook에서 Vizro를 사용할 수 있�
 
 다음은 대시보드 코드를 포함하는 셀입니다. 이 코드는 Vizro-AI를 통해 호출하는 함수를 사용하여 첫 번째 옵션을 보여줍니다. (자신의 실행을 계획하고 있다면, 이 코드를 실행하려면 내 레포지토리의 노트북을 사용하고 데이터를 로드하고 Vizro-AI에 대한 호출 설정을 설정하는 셀을 실행해야 합니다):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 약간 다른 버전을 제공해본다. 여기서 두 번째 옵션을 사용하여 차트 중 하나를 생성했다. Plotly 조작은 제한되어 있어서 Python 코드를 약간 수정하여 라인의 색을 변경했다. (여러분이 직접 실행하려는 경우, 내 저장소의 노트북을 사용하고 데이터를 로드하고 차트 생성 함수를 설정하는 셀을 실행했는지 확인하세요).
 
@@ -112,19 +210,43 @@ Vizro-AI 코드와 동일한 Jupyter Notebook에서 Vizro를 사용할 수 있�
 Vizro().build(dashboard).run(port=8006) # 브라우저에서 localhost8006
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 다른 방법(Anthony 님 감사합니다!)으로, 위의 두 번째 대시보드 예제에서 보여 드린 대로, 대시보드를 보기 위한 클릭 가능한 링크를 생성할 수 있습니다:
 
 ```js
-Vizro().build(dashboard).run(jupyter_mode="external")
+Vizro()
+  .build(dashboard)
+  .run((jupyter_mode = "external"));
 ```
 
 # 마무리
 
 이 예에서는 Vizro-AI를 사용하여 문서 트래픽을 시각화하기 위한 Plotly 차트를 생성하고, 그 차트를 Vizro 대시보드에 구축하는 방법을 보여드렸습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 데이터 과학과 파이썬 기술이 있고 디자인에 재능이 있다면, Plotly와 Dash로 대시보드를 구축하는 도전에 도전해 보고 싶을 것입니다. 하지만 이런 기술이 없는 사람들에게는 OpenAI를 활용하여 위와 같은 결과물을 얻을 수 있다는 것이 정말 큰 변화입니다. 이제 50줄 정도의 코드로 Read the Docs 트래픽 데이터에 대한 유용한 시각화를 얻었습니다. 전문적으로 보이며 확장 가능하고 상대적으로 쉽게 공유할 수 있습니다. 추가적인 노력으로 필터, 매개변수 또는 별도의 탐색 가능한 페이지와 같은 사용자 정의 기능을 추가하여 더 개선할 수 있습니다.
 

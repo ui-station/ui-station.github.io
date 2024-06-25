@@ -10,7 +10,6 @@ originalTitle: "How Kubernetes uses health probes during application deployment,
 link: "https://medium.com/@rdalal3/how-kubernetes-uses-health-probes-during-application-deployment-scaling-and-failover-dbaa1e654fe9"
 ---
 
-
 ![Health probes](/assets/img/2024-05-23-HowKubernetesuseshealthprobesduringapplicationdeploymentscalingandfailover_0.png)
 
 헬스 프로브는 견고한 클러스터를 유지하는 중요한 부분입니다. 프로브를 사용하면 클러스터가 응답 여부를 반복적으로 조사하여 응용 프로그램의 상태를 결정할 수 있습니다.
@@ -21,8 +20,18 @@ link: "https://medium.com/@rdalal3/how-kubernetes-uses-health-probes-during-appl
 - 건강한 팟에게만 요청을 보내어 장애 극복 및 부하 분산
 - 팟이 실패하는 시기와 이유를 결정하여 모니터링
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프로브 유형
 
@@ -32,7 +41,18 @@ link: "https://medium.com/@rdalal3/how-kubernetes-uses-health-probes-during-appl
 
 준비 프로브는 어플리케이션이 요청을 처리할 준비가 되어 있는지 확인합니다. 준비 프로브가 실패하면 쿠버네티스가 해당 어플리케이션에 대한 클라이언트 트래픽이 도달하는 것을 방지하기 위해 서비스 리소스에서 포드의 IP 주소를 제거합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 준비성 검사는 애플리케이션에 영향을 미칠 수 있는 일시적 문제를 감지하는 데 도움을 줍니다. 예를 들어, 애플리케이션이 시작될 때 초기 네트워크 연결을 설정하거나 캐시에 파일을 로드하거나 완료하는 데 시간이 걸리는 초기 작업을 수행해야 하기 때문에 애플리케이션이 일시적으로 사용할 수 없을 수 있습니다. 애플리케이션이 가끔은 긴 일괄 작업을 실행해야 할 수도 있어 클라이언트에게 일시적으로 사용할 수 없게 만듭니다.
 
@@ -42,7 +62,18 @@ Kubernetes는 애플리케이션이 실패한 후에도 계속해서 검사를 �
 
 ## 생존성 검사
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 준비 프로브와 마찬가지로, 라이브니스 프로브는 응용 프로그램의 수명 동안 호출됩니다. 라이브니스 프로브는 응용 프로그램 컨테이너가 건강한 상태인지를 확인합니다. 응용 프로그램이 라이브니스 프로브에 충분한 횟수로 실패하면 클러스터는 다시 시작 정책에 따라 파드를 다시 시작합니다.
 
@@ -52,7 +83,18 @@ Kubernetes는 애플리케이션이 실패한 후에도 계속해서 검사를 �
 
 시작 프로브는 응용 프로그램의 시작이 완료된 시점을 결정합니다. 라이브니스 프로브와 달리, 시작 프로브는 성공한 후에도 호출되지 않습니다. 설정 가능한 시간 초과 후에 시작 프로브가 성공하지 않으면, 해당 파드는 다시 시작 정책 값에 기반하여 다시 시작됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱 시작 시간이 긴 애플리케이션에 스타트업 프로브를 추가하는 것을 고려해보세요. 스타트업 프로브를 사용하면 라이브니스 프로브를 짧고 빠르게 유지할 수 있습니다.
 
@@ -62,7 +104,18 @@ Kubernetes는 애플리케이션이 실패한 후에도 계속해서 검사를 �
 
 HTTP GET
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 번 업된 때는 물고기가 클러스터에게 지정된 HTTP 엔드포인트로 요청을 보냅니다. 요청에 대한 응답이 200에서 399 사이의 HTTP 응답 코드로 오면 테스트는 성공한 것으로 간주됩니다. 다른 응답은 테스트를 실패하게 만듭니다.
 
@@ -72,7 +125,18 @@ HTTP GET
 
 TCP 소켓
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로브가 실행될 때마다 클러스터는 컨테이너에 소켓을 열려고 시도합니다. 연결이 수립되어야만 테스트가 성공합니다.
 
@@ -82,7 +146,18 @@ TCP 소켓
 
 예를 들어, 실패 임계값이 3이고 주기 초가 5인 프로브는 전체 프로브가 실패하기 전에 최대 세 번 실패할 수 있습니다. 이 프로브 구성을 사용하면 문제가 해결되기 전 10초 동안 문제가 발생할 수 있습니다. 그러나 너무 자주 프로브를 실행하면 리소스를 낭비할 수 있습니다. 프로브를 설정할 때 이러한 값을 고려해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시 1
 
@@ -132,7 +207,18 @@ timeoutSeconds: 1 # 응답을 기다리는 시간(초)
 failureThreshold: 3 # 재시작하기 전에 허용되는 실패 횟수
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오픈쉬프트에서 oc set probe 명령은 배포에 프로브를 추가하거나 수정합니다. 예를 들어, 다음 명령은 front-end라는 배포에 준비 상태 프로브를 추가합니다:
 

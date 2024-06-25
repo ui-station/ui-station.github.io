@@ -3,13 +3,12 @@ title: "도커에서 자체 서명 인증서를 사용한 NGINX"
 description: ""
 coverImage: "/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_0.png"
 date: 2024-06-19 12:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_0.png
 tag: Tech
 originalTitle: "NGINX with Self-Signed Certificate on Docker"
 link: "https://medium.com/better-programming/nginx-self-signed-certificate-docker-f3861c0f03e"
 ---
-
 
 <img src="/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/better-programming/nginx-self-signed-certificate-docke
 
 # 보안 주의사항과 경고
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 자체 서명된 인증서는... 당신만 신뢰할 수 있습니다. 생산 환경에서 데이터를 제공하는 수단으로 사용할 수 없습니다. 그런 경우에는 적절한 인증서를 사용하세요.
 - 이 글에서 제시된 HTTPS로 콘텐츠를 제공하게끔 NGINX 구성은 작업을 수행하기 위한 최소한의 것입니다. 본격적인 TLS가 적용된 프로덕션 NGINX를 수정하려면 공식 가이드를 참고하세요.
@@ -30,8 +40,18 @@ link: "https://medium.com/better-programming/nginx-self-signed-certificate-docke
 
 빌드는 2단계 Docker 빌드로 설계되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_1.png" />
 
@@ -41,8 +61,18 @@ link: "https://medium.com/better-programming/nginx-self-signed-certificate-docke
 
 # Dockerfile
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dockerfile
 # syntax=docker/dockerfile:1
@@ -98,7 +128,18 @@ EOF
 
 인증서 및 개인 키를 생성하기 위해 OpenSSL을 사용하며 필요한 모든 정보를 인수로 전달하여 대화형 모드가 아닌 모드에서 명령을 실행합니다. 다음과 같은 Docker ARG를 지정하여 이 단계를 자신의 요구에 맞게 조정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - DOMAIN_NAME: 이는 인증서가 유효한 도메인입니다. 이는 자체 서명된 인증서이므로 여기에 지정한 도메인 이름은 중요한 역할을 하지 않지만, 해당 인증서를 사용해야 하는 응용 프로그램이 있는 경우, 액세스할 리소스의 도메인 이름과 일치하도록 변경해야 할 수 있습니다. 빌드에 사용된 기본 도메인은 localhost입니다.
 - DAYS_VALID: 인증서가 유효한 일수입니다. 테스트를 완료할 수 있도록 충분히 큰 숫자를 사용하십시오. 빌드에 사용된 기본 유효 기간은 30일입니다.
@@ -110,7 +151,18 @@ EOF
 직접 이미지 상에 다른 구성을 사용하려는 경우, heredoc를 자체 콘텐츠로 대체하거나 결과 이미지를 확장하여 자체 이미지에 추가할 수 있습니다. 이미지를 자체 구성 파일로 확장하는 경우, 해당 파일은 다음 위치에 배치해야 합니다.
 /etc/nginx/conf.d/default.conf.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이미지 빌드하기
 
@@ -122,19 +174,39 @@ docker build . -t nginx-self-signed
 
 ![이미지](/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이미지 실행하기
 
 이미지를 실행할 때, Docker Engine이 실행 중인 컴퓨터에서 80번 포트를 HTTP용, 그리고 443번 포트를 HTTPS용으로 사용할 수 있도록 해 주세요. 아래 명령어를 사용하여 컨테이너를 시작할 수 있습니다:
 
-
 docker run -p 80:80 -p 443:443 nginx-self-signed
-
 
 ![NGINXwithSelf-SignedCertificateonDocker_3](/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이미지 테스트 중
 
@@ -144,8 +216,18 @@ docker run -p 80:80 -p 443:443 nginx-self-signed
 
 curl localhost
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot](/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_4.png)
 
@@ -155,8 +237,18 @@ curl localhost
 
 curl https://localhost
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_5.png" />
 
@@ -166,7 +258,18 @@ curl: (60) SSL certificate problem: self signed certificate
 
 이것은 HTTPS를 위한 기본 TLS를 설정하는 데 사용된 자체 서명된 인증서가 컴퓨터에 의해 신뢰되지 않기 때문입니다. 그렇다면 어떻게 해야 할까요? 여기에는 몇 가지 다른 옵션이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 자체 서명된 인증서를 OS의 신뢰/인증서 저장소에 가져올 수 있습니다.
 - curl에 보안 인증서를 수락하도록 지시할 수 있습니다.
@@ -177,7 +280,18 @@ curl https://localhost --insecure
 
 ![이미지](/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 curl은 이제 기초 리소스의 내용을 즐겁게 출력합니다.
 
@@ -187,7 +301,18 @@ curl은 이제 기초 리소스의 내용을 즐겁게 출력합니다.
 
 Chrome에서 '고급' 버튼을 클릭한 다음 'localhost로 진행(안전하지 않음)' 옵션을 클릭할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-NGINXwithSelf-SignedCertificateonDocker_8.png" />
 
@@ -197,7 +322,18 @@ Chrome에서 '고급' 버튼을 클릭한 다음 'localhost로 진행(안전하�
 
 ## 1. 여러분 자신의 콘텐츠 제공
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본 NGINX 환영 페이지를 제공하는 것은 누구에게나 큰 가치가 없을 것 같아요. 자신의 콘텐츠로 사용자 정의 NGINX 이미지를 가리킬 수 있도록 로컬 폴더를 컨테이너에 마운트하면 됩니다:
 
@@ -212,7 +348,18 @@ nginx-self-signed
 
 컨테이너 내부에 콘텐츠를 마운트하고 싶지 않을 경우, NGINX를 구성하여 이미 실행 중인 다른 서버에 대한 역방향 프록시로 사용할 수 있습니다. 다음 코드 조각은 이러한 구성을 설정하는 데 도움이 되나요. 그러나 역방향 프록시는 아래의 간단한 예제보다 더 복잡한데, 실제로 프록시하는 내용에 따라 다양한 문제가 발생할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NGINX 설정 파일의 상단에 upstream 서버를 정의해주세요:
 
@@ -237,7 +384,18 @@ location /api/ {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -247,7 +405,18 @@ location /api/ {
 
 이 글을 읽어주셔서 감사합니다. 다음 글에서 다시 뵙기를 기대합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 🔔 새 이야기를 발행할 때마다 알림을 받고 싶으세요? 제 콘텐츠는 항상 제가 본 것이나 일했던 것을 바탕으로 한 실용적인 기술 팁과 소프트웨어 엔지니어링 조언을 제공합니다:
 https://nmichas.medium.com/subscribe

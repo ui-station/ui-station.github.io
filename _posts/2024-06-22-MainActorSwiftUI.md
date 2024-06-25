@@ -3,13 +3,12 @@ title: "SwiftUI에서 MainActor를 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-MainActorSwiftUI_0.png"
 date: 2024-06-22 23:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-MainActorSwiftUI_0.png
 tag: Tech
 originalTitle: "MainActor — SwiftUI"
 link: "https://medium.com/@hasanalidev/mainactor-swiftui-4d7b2545927c"
 ---
-
 
 안녕하세요 여러분, 이 기사에서는 @MainActor를 사용하여 Swift 및 SwiftUI에서 주 스레드에서 작업을 수행하는 방법에 대해 논의할 것입니다.
 
@@ -19,7 +18,18 @@ Swift에서 @MainActor를 소개하면 동시성 관리에서 중요한 단계�
 
 Swift 5.5 이상에서 @MainActor 속성은 async/await 동시성 모델에서 중요한 역할을 합니다. 이 기능은 코드의 특정 부분을 주 스레드에서 실행하도록 자동으로 조정하여 동시성 프로그래밍을 더 접근 가능하고 안전하며 오류 발생 가능성이 적도록 만듭니다. UIKit 및 SwiftUI는 데이터 문제를 예방하고 좋은 사용자 경험을 보장하기 위해 이러한 작업이 주 스레드에서 실행되어야 합니다. UI 관련 작업에 대해 매우 중요하므로 주요하게 고려해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 글로벌 액터의 주요 목표는 주 스레드에 초점을 맞추고 사용자 인터페이스를 업데이트하는 작업을 관리하는 것입니다. MainActor라는 글로벌 액터는 주 스레드를 나타내며 사용자 인터페이스에 빠른 변경이 필요한 상황에서 매우 유용합니다.
 
@@ -29,7 +39,18 @@ Swift 5.5 이상에서 @MainActor 속성은 async/await 동시성 모델에서 �
 
 주 스레드는 UI 관련 변경이 반드시 발생해야 하는 특별한 스레드로 간주됩니다. 애플리케이션에서 API 응답을 기다리거나 파일을 압축하거나 파일을 다운로드하는 것과 같은 시간이 많이 소요되는 작업이 있는 경우 이 작업을 별도의 백그라운드 스레드에서 실행한 다음 작업이 완료되면 사용자 인터페이스를 업데이트하기 위해 다시 주 스레드로 돌아가는 것이 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Xcode에서 UI를 업데이트할 때 변수의 값을 변경하는지 확인할 수 없는 경우 오류가 발생합니다. 따라서 주 스레드에서 작업을 관리하는 것이 매우 중요합니다.
 
@@ -43,7 +64,18 @@ DispatchQueue.main.async {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 Swift 동시성을 사용할 경우, 다른 @MainActor 클로저를 동기화하거나 MainActor.run() 메서드 대신 사용할 수 있습니다. 이를 위해 선호하는 세 가지 다른 방법이 있습니다.
 
@@ -70,7 +102,18 @@ Task {
 
 @MainActor의 가장 인상적인 기능은 주로 업무를 수행하기 위해 일반적으로 우리가 추가적인 작업을 수행할 필요 없이 함수나 모든 변수를 주 스레드에서 자동으로 실행할 수 있는 능력입니다. 대부분의 경우 컴파일러가 자동으로 작업을 처리하기 때문에 수동으로 주 스레드에 입력하고 작업을 수행할 필요가 없어졌습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사실 클래스, 구조체, 함수 또는 변수에 @MainActor 선언을 추가하면 Swift 컴파일러에게 "이 코드가 메인 스레드에서 실행되도록 해주세요!" 라고 말하는 것입니다. 이 기능은 특히 UI 업데이트, 이벤트 처리 및 메인 스레드에 의존하는 API와 상호 작용할 때 유용합니다.
 
@@ -102,7 +145,18 @@ class LoginViewModel {
 
 또는 클래스를 직접 표시할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @MainActor
@@ -120,7 +174,18 @@ class NewWeatherViewModel: ObservableObject {
 
 ## 이 모든 것을 요약하면
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주로 사용자 인터페이스를 업데이트하는 작업과 관련이 있지만, @MainActor의 영향은 iOS 애플리케이션의 기본 아키텍처에도 미치는 것이죠. 이 기능은 더 예측 가능하고 안전한 동시성 모델을 제공하여 보다 견고하고 지속 가능한 코드 작성을 촉진합니다. MainActor를 사용할 때 다음 사항에 주의하는 것이 중요합니다:
 

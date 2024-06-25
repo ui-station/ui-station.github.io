@@ -10,7 +10,6 @@ originalTitle: "SwiftUI Navigation — The coordinator pattern — part 3 Sheet 
 link: "https://medium.com/@ales.dieo/swiftui-navigation-the-coordinator-pattern-part-3-sheet-fullscreencover-05eb1412f562"
 ---
 
-
 ![이미지](/assets/img/2024-05-23-SwiftUINavigationThecoordinatorpatternpart3SheetFullscreenCover_0.png)
 
 이 글은 이전 글들을 이어서 작성되었으며, 그 위에 쌓아 올릴 것입니다.
@@ -22,8 +21,18 @@ SwiftUI 네비게이션 파트 2 — 알림
 시작해 봅시다! 이전 글들에서는 결정적 목적지로 조정하기 위해 Routes를 사용했습니다. 그러나 SwiftUI는 어떻게 이루어지는 걸까요?
 뷰 계층 구조의 루트에 있는 NavigationStack에 대한 네비게이션 경로에 대한 바인딩이 있습니다. Apple의 문서 예제를 살펴보겠습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 NavigationStack(path: $presentedParks) {
@@ -55,7 +64,18 @@ NavigationStack(path: $presentedParks) {
 public func navigationDestination<D, C>(for data: D.Type, @ViewBuilder destination: @escaping (D) -> C) -> some View where D : Hashable, C : View
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 뭐 이건 Data.Type을 받아들이는 ViewModifier인데, 그런 다음에 destination이라고 불리는 클로저가 주입되는데, 이 클로저는 hashable해야 할 that Data.Type의 인스턴스를 주입하고 구체적인 View를 반환해야 해요...... 그렇죠. 😵
 
@@ -66,7 +86,18 @@ public func navigationDestination<D, C>(for data: D.Type, @ViewBuilder destinati
 PreferenceKeys를 사용하여 .navigationDestination(\_:)이 NavigationStack에 하는 것처럼 내비게이션 목적지를 전달할 수 있을까요?
 우리는 곧 알게 될 거예요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시트 및 풀스크린 커버의 ViewModifier를 검사해 봅시다.
 
@@ -80,7 +111,18 @@ PreferenceKeys를 사용하여 .navigationDestination(\_:)이 NavigationStack에
 
 Routes도 Identifiable을 준수하도록 만들어 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 enum FirstTabCoordinatorRoute: Codable, Hashable, Identifiable { // <-- Identifiable
@@ -118,7 +160,18 @@ extension View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네비게이션 목적지()가 sheetDestination()와 coverDestination() 선호 키 모두 호출자의 모든 값을 하나의 [String: NavigationViewFactory] 사전으로 줄입니다.
 
@@ -127,7 +180,18 @@ extension View {
 여기에는 데이터 유형을 설명하는 ID와 AnyView를 반환하는 타입 지워진 NavigationViewFactory가 있습니다.
 AnyView는 SwiftUI에서 제공되는 타입 지워진 뷰 래퍼로 성능에 부담이 있으므로 절약해서 사용해야 합니다. 그러나 한 번에 하나의 시트나 커버만 표시할 수 있기 때문에 수용할만한 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NavigationController로 다시 가서 코드를 추가해 봅시다.
 
@@ -198,7 +262,18 @@ struct CoverContainer: Identifiable {
 - 우리는 데이터 작업의 구체적인 유형을 지우기 위해 타입 이레이저를 사용하지만, 우리가 수용할 수 있는 유형으로만 컨테이너를 초기화할 수 있도록 하여, 지워진 타입 값은 일종의 Identifiable, Hashable 및 Codable 유형이 되도록 보장합니다.
 - 또한, 해당 데이터 유형의 설명을 Identifiable 준수를위한 식별자로 저장하여 우리의 뷰 팩토리 콜백 딕셔너리에서 구분할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여전히 함께 계신다니 너무 기쁘네요! 이제 모든 것을 함께 연결해보려 합니다.
 
@@ -291,7 +366,18 @@ enum FirstTabCoordinatorRoute: Codable, Hashable, Identifiable {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 와, 정말 깔끔하네요!
 rootView 계산 속성 내에서 PreferenceKeys를 설정하여 모든 정보가 코디네이터의 Route.Types를 해결하는 데 필요한 정보를 코디네이트(coordinates) 함수로 보냅니다. 이 함수는 특정 코디네이터가 좌표를 맡은 모든 뷰를 생성합니다. 🤔 꽤 괜찮죠.
@@ -320,7 +406,18 @@ struct CoordinatedView<C: Coordinator>: View {
 
 그러니까 이 경우를 위해 우리의 view와 viewModel을 검사해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct FirstView: View {
@@ -358,7 +455,18 @@ struct FirstView: View {
 
 예를 들어, 시트에 presentationDetents를 적용하려면. 그리고 뷰 내부에서 심지어 그것에 대해 알 필요조차 없을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Observable final class FirstTabCoordinator: Coordinator {
@@ -380,7 +488,3 @@ struct FirstView: View {
 이 글에서 어떤 통찰을 얻으셨다면 좋겠네요. 피드백이나 개선 제안이 있다면 알려주세요. 이 글이 가치 있다고 느끼신다면 공유해주세요!
 
 즐거운 코딩하세요!
-
-
-
-

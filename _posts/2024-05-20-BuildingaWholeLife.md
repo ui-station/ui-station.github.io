@@ -3,13 +3,12 @@ title: "인생 전체를 쌓아 올리다"
 description: ""
 coverImage: "/assets/img/2024-05-20-BuildingaWholeLife_0.png"
 date: 2024-05-20 19:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BuildingaWholeLife_0.png
 tag: Tech
 originalTitle: "Building a Whole Life"
 link: "https://medium.com/the-diy-diaries/building-a-whole-life-1683d3fd96ca"
 ---
-
 
 ## 가족
 
@@ -19,7 +18,18 @@ link: "https://medium.com/the-diy-diaries/building-a-whole-life-1683d3fd96ca"
 
 아버지의 부모님은 영농인은 아니지만 상당량의 농지를 소유하게 되어 운이 좋았고, 청춘 시절의 부모님에게 토지를 선물로 주었어요. 그 후에 아버지는 가족과 친구들의 도움을 받아 나 자란 집을 짓기 시작했어요. 몇 년 후, 우리는 모두 함께(아마 제가 여섯 살이었을 때였는데, 정말로 수월하게 도와줬던 것 같아) 한 토지 떨어진 곳에 이모, 이모부, 사촌들을 위해 또 한 채의 집을 짓기 시작했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내가 알기로는 내 부모님은 세상을 만드셨어요. 그들은 우리 집을 짓고, 캐비닛이나 주방 테이블부터, 계단 아래 작은 숨기, 개 우리집, 창고, 그네 세트, 그리고 거실 옆 큰 데크까지 만들었어요. 엄마는 내 옷을 직접 만들어 주셨어요(일상적으로 입는 옷부터 특별한 날의 의상까지), 결혼식 드레스와 신부들의 드레스도 직접 만들었다는 건 제가 확실해요. 저랑 결혼할 때에도 그 전통을 이어 받아 제 드레스와 베일을 직접 만들어 주셨어요. 자라면서 내 침실 창문이나 옷장을 위한 커튼을 만들어 주시고, 할로윈 의상과 교회 크리스마스 연극을 위한 옷, 그리고 내 인형들을 위한 새 드레스까지 손수 만들어 주셨어요(가끔은 인형도 직접 만들기도 했어요). 자전거 사고로 쇄골을 부러졌을 때는 의사가 진찰해 줄 때까지 입을 수 있는 천 슬링도 만들어 주셨어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/the-diy-diaries/building-a-whole-life-1683d3fd96ca"
 
 우리 집에서는 유명한 이야기가 돈다. 마을 이동 스테이션에 가던 길에 죽은 꿤가 있는 걸 발견했던 엄마의 이야기인데요. 차에 치여 죽은 걸로 보여, 그것이 나갈 때는 없었기에 신선하다는 걸 알아냈어요. 꿤를 집으로 가져왔고, 오빠들에게 전화를 걸어 청소법을 가르쳐달라고 했죠. 결과적으로 우리는 저녁에 꿤 수프를 먹었어요. 그래서 우리는 도로킬을 먹었던 셈이 되었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어른 부모로서, 나는 나의 아들에게 로라 잉걸스 와일더의 '큰 숲 속 작은 집'을 읽어 주었어요 - 정말 적절한 제목이죠, 왜냐하면 제 어린 시절 집 옆에는 "큰 숲"과 "작은 숲"이 모두 있었거든요. 그 책은 정말 지루했어요. 아빠가 집에 오면 바이올린을 연주하고 모두가 웃는다고요? 제 아빠는 다양한 악기를 연주해 주시고 노래를 부르고 이야기를 만들어 주셨어요. 바느질하고 베이킹하고 요리를 한다구요? 함께 밖에서 놀기도 하죠? 그것들은 다 어릴 적에 경험한 일들이죠. 맞아요, 할아버지가 만들어 주신 제 이름이 쓰인 목재 썰매가 있었죠. 이 책에서 정말 멋진 일이 있었나요?!
 
@@ -40,7 +61,18 @@ link: "https://medium.com/the-diy-diaries/building-a-whole-life-1683d3fd96ca"
 Amanda Laughtland에게 감사드립니다.
 The DIY Diaries를 운영하며 우리에게 그녀의 이야기로 기억과 상상력을 일깨워 주고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 📖 www.churchpoems.wordpress.com
 | 내 이야기 구독하기 |

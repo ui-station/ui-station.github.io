@@ -3,13 +3,12 @@ title: "안녕하세요 안드로이드 코틀린에서 Retrofit을 사용한 AP
 description: ""
 coverImage: "/assets/img/2024-05-18-APICallswithRetrofitinAndroidKotlinAComprehensiveGuide_0.png"
 date: 2024-05-18 15:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-APICallswithRetrofitinAndroidKotlinAComprehensiveGuide_0.png
 tag: Tech
 originalTitle: "API Calls with Retrofit in Android Kotlin: A Comprehensive Guide"
 link: "https://medium.com/@imkuldeepsinghrai/api-calls-with-retrofit-in-android-kotlin-a-comprehensive-guide-e049e19deba9"
 ---
-
 
 현대 소프트웨어 개발 세계에서, 다양한 소프트웨어 구성 요소 간의 커뮤니케이션이 중요합니다. 이를 달성하는 가장 일반적인 방법 중 하나는 API (응용 프로그램 프로그래밍 인터페이스)를 통해입니다. 안드로이드 앱 개발에서 API 호출을 수행하는 경우, Retrofit은 단순성, 효율성 및 견고성으로 인해 주로 사용되는 라이브러리가 되었습니다. 이 기사에서는 Kotlin 기반 안드로이드 애플리케이션에서 Retrofit을 사용하여 API 호출하는 방법을 자세히 살펴보겠습니다. 추가로 Retrofit 인스턴스 및 ApiService를 효율적이고 일관된 방식으로 사용하기 위해 싱글톤 패턴을 구현할 것입니다.
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@imkuldeepsinghrai/api-calls-with-retrofit-in-android-
 - Kotlin 프로그래밍 언어에 대한 기본적인 이해가 있어야 합니다.
 - API 테스트를 위한 인터넷 연결이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 싱글톤 패턴으로 Retrofit 설정하기:
 
@@ -39,7 +49,18 @@ dependencies {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트를 동기화하여 새로운 종속성이 추가되었는지 확인하세요.
 
@@ -69,7 +90,18 @@ object ApiClient {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 구현을 통해 애플리케이션 전반에 걸쳐 액세스할 수 있는 Retrofit 및 ApiService의 하나의 인스턴스를 갖게 됩니다.
 
@@ -88,8 +120,18 @@ interface ApiService {
 }
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 예시에서는 ID로 게시물을 가져오는 간단한 API 엔드포인트를 정의했습니다. 데이터 모델을 사용하여 Post를 교체해주세요.
 
@@ -132,7 +174,18 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론:
 
@@ -146,6 +199,17 @@ Retrofit을 사용하면 안드로이드 애플리케이션에서 API 호출하�
 - OkHttp를 사용하여 앱의 네트워킹 레이어 강화하기: OkHttp
 - 인증 및 요청 사용자화와 같은 고급 Retrofit 주제에 대해 깊이 파고들기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Retrofit 및 Android 앱 개발에서 네트워킹에 능숙해지기 위해서는 연습과 실험이 중요하다는 것을 기억해주세요.

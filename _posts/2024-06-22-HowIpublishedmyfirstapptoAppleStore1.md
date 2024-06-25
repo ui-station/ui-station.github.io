@@ -3,13 +3,12 @@ title: "제가 처음으로 애플 스토어에 앱을 배포한 방법 1"
 description: ""
 coverImage: "/assets/img/2024-06-22-HowIpublishedmyfirstapptoAppleStore1_0.png"
 date: 2024-06-22 23:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-HowIpublishedmyfirstapptoAppleStore1_0.png
 tag: Tech
 originalTitle: "How I published my first app to Apple Store #1"
 link: "https://medium.com/@uladz.mikula/how-i-published-my-first-app-to-apple-store-1-5df0007e2c51"
 ---
-
 
 ![이미지](/assets/img/2024-06-22-HowIpublishedmyfirstapptoAppleStore1_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@uladz.mikula/how-i-published-my-first-app-to-apple-st
 
 지난 몇 년 동안 자신의 일을 시작하고자 끊임없이 생각했어요. 나 자신을 위해 일하는 것을 꿈꿨죠. 새로운 사업을 시작하기 위한 기준은 몇 가지가 있었어요. 여가 시간에 해야하고 필요한 기술이나 배우기를 원하는 욕망이 있어야 했어요. 그리고 초기 투자가 적고 6개월 이내에 초기 결과를 볼 수 있는 잠재력이 있어야 했어요. 드롭 배송이나 프린트 온 디맨드 티셔츠 스토어부터 내 카페나 어린이 장난감 가게까지 아이디어는 다양했어요. 많은 아이디어가 지루해서 폐기되었지만 무언가가 동작하지 않을까 두려워서 대부분이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 해 전에 아빠가 되었고 성장하는 아기의 활동을 추적하기 위해 앱을 다운로드했어요. 이름은 기억이 안 나지만 목적을 잘 해결해 주었어요. 유료로 제공되어야 했던 몇 가지 기능이 구독 없이 사용할 수 없어서 아쉬웠지만, 급하게 제 자신의 앱을 만들어보려고 생각했어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@uladz.mikula/how-i-published-my-first-app-to-apple-st
 
 첫 번째 일은 무엇을 작성할지와 어느 플랫폼을 위해 작성할지를 결정하는 것이었어요. iOS에만 제한하지 않기로 결정해서 안드로이드 스마트폰 사용자들이 제 아름다운 작품을 사용할 기회를 놓치지 않게 하려고 했죠. 그래서 React Native과 Flutter 중에서 선택했어요. 회사에서 내부 서비스를 지원하기 위해 React를 배워야 했는데, React Native를 선호하는 이유였죠. 공식 문서를 보고 예상대로 시작해봤는데, 시뮬레이터에서 Hello World 예제를 실행하려고 해보니 예상보다 순조롭지 않았어요. 환경 설정 과정이 어색해서 제 동기부여가 금방 떨어졌어요. 종속성이 설치되지 않고, 시뮬레이터가 실행되지 않거나 이유를 알 수 없이 다운되기도 했어요. 게다가 앱 릴리스 프로세스가 불분명해서 2~3주간 투쟁한 끝에 아이디어를 포기했어요. 게다가 우리 아이의 일상이 안정되고 유료 앱을 사용하지 않게 되었거든요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![앱 이미지](/assets/img/2024-06-22-HowIpublishedmyfirstapptoAppleStore1_2.png)
 
@@ -39,12 +60,23 @@ link: "https://medium.com/@uladz.mikula/how-i-published-my-first-app-to-apple-st
 
 지금까지입니다! 끝까지 읽어 주신 모든 분들께 감사드려요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 게시물에서는 다음과 같은 주제를 다룰 예정입니다:
 
-- 개발 프로세스 및 왜 스위프트를 배우지 않고 ChatGPT에게 물어보기로 결정했는지 
-- 첫 번째 릴리스 
+- 개발 프로세스 및 왜 스위프트를 배우지 않고 ChatGPT에게 물어보기로 결정했는지
+- 첫 번째 릴리스
 - 향후 계획
 
 여기서 스크린샷을 확인하거나 다운로드할 수 있습니다. 광고나 등록이 필요하지 않으며 무료로 제공됩니다.

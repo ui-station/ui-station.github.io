@@ -3,13 +3,12 @@ title: "Swift에서 weak와 unowned의 차이점 예제 포함"
 description: ""
 coverImage: "/assets/img/2024-06-22-DifferencesbetweenweakandunownedinSwiftwithexamples_0.png"
 date: 2024-06-22 23:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-DifferencesbetweenweakandunownedinSwiftwithexamples_0.png
 tag: Tech
 originalTitle: "Differences between weak and unowned in Swift with examples"
 link: "https://medium.com/@quasaryy/differences-between-weak-and-unowned-in-swift-with-examples-d6a54357dd1c"
 ---
-
 
 <img src="/assets/img/2024-06-22-DifferencesbetweenweakandunownedinSwiftwithexamples_0.png" />
 
@@ -19,17 +18,40 @@ Swift에서는 메모리 관리가 ARC(Automatic Reference Counting)를 통해 �
 
 # weak 참조
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 약한 참조는 한 객체가 다른 객체 없이 존재할 수 있을 때 사용됩니다. 이는 객체의 참조 카운트를 증가시키지 않아 강력한 참조 순환을 방지하는 데 도움이 됩니다.
 
 약한 참조의 특징:
+
 - 가리키는 객체가 해제될 수 있기 때문에 항상 옵셔널 변수(var)로 선언됩니다. 이 경우에 참조는 nil이 됩니다.
 - 델리게이트와 클로저를 사용할 때 메모리 누수를 방지하는 데 특히 유용합니다.
 
 약한 참조를 사용한 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 class Department {
@@ -66,8 +88,18 @@ manager = nil
 
 클로저에서 weak를 사용하는 것은 강한 참조 순환을 방지하기 위해 종종 필요한데, 특히 클로저가 self, 즉 클래스 인스턴스를 캡처할 때입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ViewController 클래스는 비동기 작업을 수행하는 클래스입니다. 이 작업이 완료된 후에 코드가 실행되도록 하고, 동시에 강한 참조 순환에 의한 메모리 누수를 방지해야 합니다.
 
@@ -108,7 +140,18 @@ class DataLoader {
 
 위 예시에서:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - ViewController에는 DataLoader의 loadData 메서드를 호출하는 fetchData 메서드가 있습니다.
 - loadData에 전달된 클로저 내에서 [weak self]를 사용하여 ViewController의 인스턴스인 self에 강한 참조를 방지합니다. 이는 DataLoader가 클로저를 오랫동안 유지할 수 있기 때문에 중요합니다. 예를 들어 비동기 작업 중에 발생할 수 있습니다.
@@ -120,7 +163,18 @@ unowned 참조는 weak와 유사하지만 두 가지 주요 차이점이 있습�
 
 ## unowned 참조의 특징:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다른 객체가 해제되기 전까지 한 객체를 해제하지 않을 때 사용됩니다.
 - 객체가 해제된 후 비소유 참조에 접근하면 충돌이 발생합니다.
@@ -132,7 +186,7 @@ unowned 참조는 weak와 유사하지만 두 가지 주요 차이점이 있습�
 class Customer {
     let name: String
     var card: CreditCard?
-    
+
     init(name: String) {
         self.name = name
     }
@@ -160,12 +214,23 @@ var john: Customer? = Customer(name: "John")
 john!.card = CreditCard(number: 1234_5678_9012_3456, customer: john!)
 
 john = nil
-// 출력: "John 해제 중" 그리고 "카드 #1234567890123456 해제 중" 
+// 출력: "John 해제 중" 그리고 "카드 #1234567890123456 해제 중"
 ```
 
 여기서 Customer가 해제된 후 관련된 CreditCard 객체도 해제되어 메모리 누수를 방지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 약한 참조와 미소유 참조 비교
 

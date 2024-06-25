@@ -3,13 +3,12 @@ title: "파이썬 패키지 Yellowbrick와 PiML으로 소중한 데이터와 모
 description: ""
 coverImage: "/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_0.png"
 date: 2024-05-20 18:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_0.png
 tag: Tech
 originalTitle: "Unlocking Valuable Data and Model Insights with Python Packages Yellowbrick and PiML (with Code)"
 link: "https://medium.com/towards-data-science/unlocking-valuable-data-and-model-insights-with-python-packages-yellowbrick-and-piml-with-code-945d5a39da9c"
 ---
-
 
 <img src="/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_0.png" />
 
@@ -27,7 +26,18 @@ link: "https://medium.com/towards-data-science/unlocking-valuable-data-and-model
 - 모델 견고성 분석
 - 모델 분할 진단 분석
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # A. 옐로브릭
 
@@ -37,7 +47,18 @@ link: "https://medium.com/towards-data-science/unlocking-valuable-data-and-model
 
 분류 정확도가 0.97인 것을 볼 수 있습니다. 이는 높은 수준의 정확도를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 A.1.1 학습 데이터 양 충분성
 
@@ -46,7 +67,18 @@ Yellowbrick를 사용하여 모델의 학습 곡선을 플로팅하여 학습 �
 - 더 많은 데이터를 추가하면 모델의 일반화 능력이 향상될 수 있는지 여부.
 - 과적합/과소적합이 있는지 여부. 이는 학습 및 검증 점수가 수렴하는 방식에 따라 달라집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 학습曲선은 다음을 보여줍니다:
 
@@ -58,7 +90,18 @@ A.1.2. 특정 매개변수 조정이 분류 성능에 미치는 영향
 
 아래 코드 스니펫에서 RandomForest 분류기의 최대 트리 깊이는 값 1부터 11까지 변화합니다. 그런 다음 'max_depth' (최대 트리 깊이)가 변하는 것을 추적할 수 있도록 모델 성능 변화를 보여주는 검증 곡선 시각화기가 생성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Unlocking Valuable Data and Model Insights with Python Packages Yellowbrick and PiML with Code](/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_2.png)
 
@@ -68,7 +111,18 @@ A.1.2. 특정 매개변수 조정이 분류 성능에 미치는 영향
 
 ## A.2 클러스터링
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로 와인 데이터에 K-Means 클러스터링 방법을 적용하고 알고리즘 성능을 시각적으로 확인하기 위해 Yellowbrick을 활용할 것입니다. 그러나 그 전에, 볼 수 있는 게 드물지만 유용한 Yellowbrick 그래프를 사용할 것입니다. 이는 와인의 특성 분포에 관한 것입니다(도표 3). 세 가지 클래스에 대한 대부분의 특성이 서로 겹치는 것을 볼 수 있지만, '알콜'과 '프로린' 등 일부 주목할 만한 차이점이 있습니다. Shapley 분석에서도 이 두 가지 특성이 중요한지 확인하는 것이 흥미로울 것입니다.
 
@@ -78,7 +132,18 @@ A.1.2. 특정 매개변수 조정이 분류 성능에 미치는 영향
 
 <img src="/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 클러스터링 알고리즘의 결과입니다. 아래의 내용을 보면, 클래스 1과 2에서 4개의 샘플이 잘못 분류되었지만, 전반적으로 결과는 좋습니다.
 
@@ -86,7 +151,18 @@ Yellowbrick의 도움을 받아 PCA 도메인에서 클러스터를 시각화할
 
 마지막으로, Yellowbrick의 다차원 스케일링(MDS)을 사용하여 클러스터 간 거리를 시각화할 것입니다. MDS는 데이터 세트의 개별 데이터 지점의 유사성을 시각화하는 데 중점을 둡니다. 유사성 또는 상이성을 보존하므로 클러스터 간 거리를 시각화하는 데 적합한 도구입니다. 그림 6에서 세 클러스터 간에 큰 거리가 있음을 볼 수 있으며, PCA 도메인에서 명확한 클래스 분리와 일치합니다. 왼쪽 하단의 파선 원은 각 클래스에 속한 샘플 수를 나타냅니다(34: 클래스 0, 44: 클래스 1, 41: 클래스 2).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_6.png" />
 
@@ -96,8 +172,18 @@ Yellowbrick의 도움을 받아 PCA 도메인에서 클러스터를 시각화할
 
 Yellowbrick가 아름다운 시각화로 사용자를 기쁘게 하듯이, PiML은 EDA부터 모델 강건성 및 신뢰성 분석, 그리고 약한 조각 식별까지 다양한 기능으로 인상을 주는 것입니다. 그러나 PiML의 기능을 논의하기 전에, 분석에 사용할 데이터 세트에 대해 알아보겠습니다. UCI Machine Learning Laboratory의 Adult 데이터 세트 또는 Census Income 데이터 세트로 알려진 이 데이터는 수입을 분류하고 50K를 초과하는지 예측하는 데 사용될 수 있습니다. 이 데이터 세트에는 48842개의 인스턴스와 14가지 피처 및 대상 수입 변수가 포함되어 있습니다. 그 피처들의 일부를 아래에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_7.png)
 
@@ -107,8 +193,18 @@ PiML은 사용자로부터 매우 적은 프로그래밍을 필요로 합니다.
 
 한 줄로 된 코드 아래에서 PiML에서 EDA (탐색적 데이터 분석)를 하는 방법을 보여줍니다. 그리고 이것이 모든 PiML 기능에 접근하는 방법입니다: 한 줄로 된 명령어로.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 그림 7에서 나타나는 것처럼, PiML은 일변량 및 이변량 특성 분석을 수행하고 히트맵을 표시할 수 있습니다.
 
@@ -118,7 +214,18 @@ PiML은 사용자로부터 매우 적은 프로그래밍을 필요로 합니다.
 
 그림 8은 데이터 준비 모듈 화면을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_9.png" />
 
@@ -128,7 +235,18 @@ PiML은 사용자로부터 매우 적은 프로그래밍을 필요로 합니다.
 
 ## B.2 모델 분석
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 B.2.1 다섯 가지 숫자 측정치를 사용한 예측 성능 평가
 
@@ -136,7 +254,18 @@ Figure 10은 선정된 모델에 대한 리더보드를 보여주며, 테스트 
 
 따라서 리더보드는 EBM 알고리즘이 모든 다른 모델보다 모든 지표에서 테스트 및 훈련 세트에서 뛰어남을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 B.2.2 전역 및 지역 설명
 
@@ -146,7 +275,18 @@ B.2.2 전역 및 지역 설명
 
 지역 설명에 대해, PiML은 LIME과 SHAP을 제공합니다. 피규어 12는 LIME 결과를 보여줍니다. 여기서 '자본이익'이 상당히 긍정적인 가중치를 가지고 해당 긍정적인 효과를 갖는 것을 관찰합니다. 이는 자본이익 증가가 모델의 출력값을 긍정적으로 이동시키는 것과 강하게 관련이 있다는 것을 의미합니다. '나이' 또한 긍정적인 가중치와 효과를 가지고 있어, 나이가 높아질수록 모델 결과에 긍정적으로 기여한다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-UnlockingValuableDataandModelInsightswithPythonPackagesYellowbrickandPiMLwithCode_13.png)
 
@@ -156,7 +296,18 @@ In PiML, this analysis is referred to as 'weakspot' analysis. Underperformance c
 
 Let's delve into the different parameters. When calling the model_diagnose function, the following parameters are passed:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 'model': 우리가 평가하고 싶은 모델입니다.
 - 'show': 우리가 하고 싶은 작업을 나타냅니다.
@@ -173,7 +324,18 @@ Let's delve into the different parameters. When calling the model_diagnose funct
 
 상단 플롯은 'marital-status'의 함수로서 모델의 정확도를 나타내며, 버킷으로 분할됩니다. 단계별 함수는 'marital-status' 기능의 서로 다른 범위에서 모델의 정확도가 크게 변한다는 것을 나타냅니다. 빨간 점선은 원하는 임계 정확도를 나타냅니다. 빨간 '0' 마커는 모델의 정확도가 원하는 임계 미만인 특정 간격을 강조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하단 플롯은 데이터셋의 특징 값 히스토그램을 보여줍니다. 색상(“임계값 이상”은 파란색, “임계값 미만”은 연한 파란색)은 각 ‘marital-status’ 범주에서의 샘플이 성적 임계값을 초과하거나 미만한 횟수를 나타냅니다.
 
@@ -183,7 +345,18 @@ Let's delve into the different parameters. When calling the model_diagnose funct
 
 그리고 결과는 다음과 같습니다: '0: ‘Married’, 1: ‘NotMarried’, 2: ‘Separated’, 3: ‘Widowed’'
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 B.2.4 모델 신뢰성 분석
 
@@ -191,7 +364,18 @@ B.2.4 모델 신뢰성 분석
 
 아래 코드 스니펫에서 'show' 매개변수의 값이 이제 'reliability_distance'이고, 'distance_metric'이라는 새 매개변수를 PSI 값으로 정의합니다. 이 코드는 Figure 14를 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 그래프는 모델의 특성이 'Unreliable vs. Remaining Regions'간에 어떻게 분포가 변화하는지 보여주기 위해 인구 안정성 지수(PSI)를 사용하고 있습니다. PSI는 변수의 분포가 시간적으로나 다른 데이터셋 간에 얼마나 많이 변했는지를 측정하는 데 사용되는 지표입니다. 더 높은 PSI 값은 더 큰 변화를 나타내며, 이는 모델의 안정성에 문제가 될 수 있습니다.
 
@@ -201,7 +385,18 @@ B.2.4 모델 신뢰성 분석
 
 모델의 견고성은 ML 모델이 다양한 시나리오에서 특히 새로운 데이터를 처리할 때 성능을 유지하는 능력을 말합니다. 모델 견고성의 측면에는 (a) 새로운 데이터에서 잘 동작하는 일반화 능력, (b) 입력값의 작은 변화에 크게 영향을 받지 않는 안정성, (c) 입력 데이터의 오류에 영향을 받지 않는 노이즈 허용성이 포함됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도형 15에 나타난 그래프는 EBM 모델의 모든 피처에 대한 교란(즉, 의도적인 변화)이 어떤 영향을 미치는지를 보여줍니다. 아래는 해당 그래프를 생성한 코드입니다. 'perturb_size'는 교란의 단계 크기를 나타내며, 'perturb_method'는 'quantile'로 설정되어 있습니다. 이 매개변수에는 'raw'와 'quantile' 두 가지 선택지가 있습니다. 'raw' 값은 피처에 가우시안 노이즈가 추가됨을 의미하며, 많은 피처가 이산형임을 감안할 때 'quantile' 값이 더 나은 선택입니다. 이 값은 사분위 범위 내의 교란을 의미합니다.
 
@@ -211,7 +406,18 @@ B.2.4 모델 신뢰성 분석
 
 제로 교란은 데이터에 대한 수정 없이 모델의 기본 성능을 나타냅니다. 모델은 최고의 성능을 발휘하며, 높은 중앙값 정확도와 견고한 IQR로 나타납니다. 교란 크기가 커질수록 정확도가 저하하는 경향이 뚜렷하게 나타납니다. 이는 입력 데이터가 점점 교란을 받을수록 모델의 정확도가 낮아진다는 것을 나타냅니다. 예상대로, 성능 저하는 교란이 커질수록 더욱 뚜렷해집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 유형의 분석은 모델이 입력 데이터의 변화에 얼마나 민감한지 이해하는 데 중요하며, 입력 데이터가 훈련 중에 본 조건과 다를 수 있는 실제 시나리오에서 모델이 얼마나 잘 수행될 수 있는지를 평가하는 데 도움이 될 수 있습니다.
 
@@ -221,7 +427,18 @@ B.2.6 세분화된 진단 분석
 
 결과는 아래와 같습니다. 세그먼트 ID는 정확도를 오름차순으로 정렬하여 할당됩니다. 따라서 세그먼트 ID=0은 가장 낮은 정확도를 가진 세그먼트 2에 할당됩니다. 크기 매개변수는 세그먼트에 포함된 샘플 수를 보여줍니다. 가장 낮은 정확도를 가진 세그먼트에는 가장 적은 수의 샘플이 포함되어 있는 것은 좋은 소식입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 결과를 더 자세히 조사할 수 있습니다. 특히 가장 낮은 정확도를 보여주는 세그먼트 0을 살펴볼 필요가 있습니다. 아래 코드 조각은 'show' 매개변수에 'accuracy_table' 값을 할당하여 이를 수행합니다.
 
@@ -231,9 +448,20 @@ B.2.6 세분화된 진단 분석
 
 Yellowbrick와 PiML은 데이터 과학자와 분석가들에게 모델 동작에 대한 이해를 심화하고자 하는 사람들에게 가치 있는 자원을 제공합니다. 이 도구들이 제공하는 시각화와 통찰력을 통해 사용자들은 데이터 품질 및 모델 성능과 관련된 여러 문제를 해결하고 이를 개선할 수 있습니다. 이를 통해 다양한 시나리오와 데이터 세그먼트에 대해 정확하고 견고하며 신뢰할 수 있는 모델을 보유할 수 있습니다. 이 글에서는 이러한 패키지의 일부 기능만 다루었습니다. 특히 PiML은 데이터 품질 평가, 모델 내구성 등과 같은 다양한 기능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-또한, 오늘날 증가하는 개인정보 보호에 대한 우려를 고려할 때, 로컬에서 작업하는 것이 사이버 보안 계획의 중요한 측면이 될 수 있습니다. 또 다른 문제는 오늘날 데이터의 증가하는 복잡성입니다. 이미지, 오디오 및 텍스트가로 결합되는 로봇학 및 다중 모달 LLM을 사용한 상황 객체 감지와 같은 다중 모달 응용 프로그램이 있습니다. 이러한 모든 모달리티의 관심 대상은 가능한 정확하게 모델링되어야 하므로, 다양한 모델의 다른 측면을 어떻게 평가하는지에 대해 알고하는 것이 중요합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+또한, 오늘날 증가하는 개인정보 보호에 대한 우려를 고려할 때, 로컬에서 작업하는 것이 사이버 보안 계획의 중요한 측면이 될 수 있습니다. 또 다른 문제는 오늘날 데이터의 증가하는 복잡성입니다. 이미지, 오디오 및 텍스트가로 결합되는 로봇학 및 다중 모달 LLM을 사용한 상황 객체 감지와 같은 다중 모달 응용 프로그램이 있습니다. 이러한 모든 모달리티의 관심 대상은 가능한 정확하게 모델링되어야 하므로, 다양한 모델의 다른 측면을 어떻게 평가하는지에 대해 알고하는 것이 중요합니다.
 
 모든 논의된 예제의 코드는 제 Github 저장소에서 찾을 수 있습니다: [https://github.com/theomitsa/Yellowbrik-PIML](https://github.com/theomitsa/Yellowbrik-PIML)
 
@@ -241,7 +469,18 @@ Yellowbrick와 PiML은 데이터 과학자와 분석가들에게 모델 동작�
 
 # 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Kaggle 노트북, 소득 분류 모델, https://www.kaggle.com/code/jieyima/income-classification-model
 
@@ -252,6 +491,17 @@ Yellowbrick와 PiML은 데이터 과학자와 분석가들에게 모델 동작�
 - 와인 데이터셋: UCI Machine Learning Repository, https://archive.ics.uci.edu/dataset/109/wine, 라이센스: 본 데이터셋은 크리에이티브 커먼즈 저작자표시 4.0 국제 라이센스에 따라 라이센스가 부여됩니다.
 - 성인 (인구조사 소득) 데이터셋: UCI Machine Learning Repository, https://archive.ics.uci.edu/dataset/2/adult 라이센스: 본 데이터셋은 크리에이티브 커먼즈 저작자표시 4.0 국제 라이센스에 따라 라이센스가 부여됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **참고: "저자가 아닌 경우, 모든 이미지는 저자에게 속합니다."**

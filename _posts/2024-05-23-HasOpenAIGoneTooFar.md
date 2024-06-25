@@ -3,13 +3,12 @@ title: "오픈에이아이가 지나쳤을까요"
 description: ""
 coverImage: "/assets/img/2024-05-23-HasOpenAIGoneTooFar_0.png"
 date: 2024-05-23 17:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HasOpenAIGoneTooFar_0.png
 tag: Tech
 originalTitle: "Has OpenAI Gone Too Far?"
 link: "https://medium.com/@ignacio.de.gregorio.noblejas/has-openai-gone-too-far-2f32f0bdbd82"
 ---
-
 
 OpenAI 안에서는 GPT-4o 출시 한 주 후에 상황이 이렇게 엉망이 될 것이라고 예상한 사람은 거의 없었을 것입니다.
 
@@ -19,7 +18,18 @@ OpenAI 안에서는 GPT-4o 출시 한 주 후에 상황이 이렇게 엉망이 �
 
 이 모든 것이 결합되어, OpenAI가 제품의 안전에 신경을 쓰고 있는지, 그리고 규칙을 준수하려는 의지가 여전히 있는지에 대해 심각한 의문을 제기합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 인셀 자아와 스타들의 화를 격려하는 연료
 
@@ -29,7 +39,18 @@ OpenAI 안에서는 GPT-4o 출시 한 주 후에 상황이 이렇게 엉망이 �
 
 음, GPT-4o는 명백히 멀티모달리티나 지연 같은 핵심 측면에서 한 걸음 나아간 것임은 틀림없지만, 반응은 만족스럽지 않았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아직, 주요 사건들을 안내하겠지만, 이 모든 것이 의미하는 바에 초점을 맞출 거예요. 우리가 가장 선도적인 소프트웨어를 보유한 회사에 대해 이야기하고 있으니까요.
 
@@ -39,17 +60,39 @@ OpenAI 안에서는 GPT-4o 출시 한 주 후에 상황이 이렇게 엉망이 �
 
 이것이 우연일 수도 있지만, 그렇지 않은 것 같아 보이네요. ‘Her’ 영화에서 스칼릿이 음성을 맡았던 것을 알고 계셨죠. 사만 알트만의 최애 영화였던 ‘Her’에서 스칼릿이 음성을 맡고 있었어요. 게다가 알트만 본인이 발표 이후 다음과 같이 트윗을 게시해 불을 지푸는 듯이 더 하였네요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 놀랍게도, 스칼렛은 이 모든 것을 곧 공개적으로 비난하여 OpenAI로 하여금 그 특정 음성을 당분간 중단하도록 만들었습니다.
 
 ![이미지](/assets/img/2024-05-23-HasOpenAIGoneTooFar_0.png)
 
-만약 OpenAI가 정말로 스칼렛에게 다가갔다면, 그들이 노력을 많이 한 것은 분명한데요 — 
+만약 OpenAI가 정말로 스칼렛에게 다가갔다면, 그들이 노력을 많이 한 것은 분명한데요 —
 
 ‘그녀’를 현실로 만들려고 한 것이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 여기서 주요한 포인트는 스칼렛에게(그녀는 이를 극복할 것입니다) 가 아니라 이 전례가 사회에 실제로 무엇을 의미하는지입니다.
 
@@ -59,7 +102,18 @@ OpenAI 안에서는 GPT-4o 출시 한 주 후에 상황이 이렇게 엉망이 �
 
 우리가 여러 차례 다룬 대로, ChatGPT와 같은 대형 언어 모델(Large Language Models, LLMs)의 사전 훈련 단계에서는 우리의 세계에 대해 배우는 데 조제 양의 데이터가 수조 단위로 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서, 더 똑똑한 모델을 만드는 방법을 찾는 동안 실제로는 오늘날의 트렌드가 전혀 다르다는 것을 알게 될 겁니다. AI 연구소들은 데이터를 적게 필요로 하는 인공지능을 만드는 대신, 찾은 모든 데이터 포인트를 사용해야 하는데, 실제로 소유자의 명시적 승인이 없어도 말이죠.
 
@@ -69,7 +123,18 @@ OpenAI 안에서는 GPT-4o 출시 한 주 후에 상황이 이렇게 엉망이 �
 
 그러나 일반인들의 입장에서는 모델이 'x' 또는 'y' 소스 데이터를 사용했음을 증명하는 것이 매우 어려울 수 있습니다. 모델 트레이너들이 이를 공개적으로 인정하지 않는 한, 재판을 피하기 위해 경주하는 연구소들이 반복적으로 탄마마를 타는 일입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리즈 Suits에서 배운 점 중 하나는 뉴욕 타임즈와 같은 언론 기관들이 제기한 이 소송들이 결국 해결안으로 끝나게 될 것이라는 것이다.
 
@@ -79,7 +144,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 하지만 더 걱정되는 것이 있으며, 그것은 이 인공 지능(AI)들이 특정 사회 집단을 향한 방향이다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 인공지능을 은인화하는 중
 
@@ -89,7 +165,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 그래서 우리는 경제적 지위를 표현하지 못하거나 하향 평균 이하의 외모 특성, 철저히 내성적인 성격때문에 친구를 사귈 수 없거나 애인을 찾기 어려운 새로운 사회적 카테고리를 창출하고 있습니다. 이들 중 상당 부분이 심지어 사회적 관계의 미미한 티 한 끼를 찾기도 어려워하는 상황입니다. 이 친구들을 인천스(incels)라고 이름 붙였는데, 그들은 찾을 수 없는 인간적 연결에 절망하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 혹시 가능할까요? 음, 이제 가능합니다... 심지어 연결이 인간이 아니더라도요.
 
@@ -99,7 +186,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 과장한다고 생각하기 전에, 이미 선례가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어 인플루언서가 Caryn AI를 만들어서 팬들이 '그녀와 대화할' 수 있게 했고, 이를 통해 수십만 달러를 벌었습니다. 한 번 생각해 보세요; 우리는 로봇과 대화하기 위해 지불하는 사람들에 대해 이야기하고 있습니다. 그 로봇은 그들의 꿈 속 소녀처럼 들리는 로봇인데요. 가장 중요한 점은 그들이 그것이 실제로 그녀가 아니라는 것을 알고 있다는 것입니다.
 
@@ -109,7 +207,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 그래서 데일리 쇼(The Daily Show)와 같은 주류 매체가 ChatGPT-4o를 "남자들의 자존심을 강화시키는 프로그램"이자 "음란한 챗봇"으로 정의할 때, 갑자기 연결이 명백해집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 여러분들은 모르겠지만, 이것은 매력적인 미래로 보이지 않아요. 우리는 우리 아이들을 실내가 아닌 야외에서 놀게 하고 싶어하죠. 그리고 이 특정한 AI 사례는 이러한 추세를 악화시키고 있습니다.
 
@@ -119,7 +228,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 비교적 주목할만한 놀라운 일로는, OpenAI의 수석 과학자이자 공동 창업자인 이ль야 숫스케벨이 회사를 떠나기로 결정했다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 우리가 보고있는 딥러닝 혁명의 시작점을 제프리 힌튼(Geoffrey Hinton)과 알렉스 크리즈프스키(Alex Krizhevsky)와 함께 한 남자에게 인사를 드리고 싶습니다. 이런 방향으로 연구 분야를 무시했던 수십 년 동안 계속 무시했던 세계가 그들을 따르도록 이끌었습니다 (얀 르쿤(Yann LeCun)과 전에 언급한 제프리는 제가 언급하고자 하는 것을 알 수 있습니다).
 
@@ -129,7 +249,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 2023년 7월, OpenAI는 일리야 숯스케버(Ilya Sutskever)와 전 구글 딥마인드 최고 연구원인 얀 라이케(Jan Leike)가 선두에 서는 '초중립적 팀'이라는 새 팀의 창설을 발표했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물에서 LLMs에 대해 더 많은 세부 정보를 제공하고 있지만, 현재의 현황에서 맞춤 개념은 이러한 모델이 유해한 내용을 말하지 않도록 방지하기 위해 상당히 강력한 개입이 필요하다는 것입니다.
 
@@ -139,7 +270,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 하지만 이것이 슈퍼 정렬의 목적은 아닙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 슈퍼 정렬은 미래를 중심으로 한 것으로, 우리가 한 날 우리를 최고로 만들 수 있는 통제 절차를 식별하는 데 초점을 맞추고 있습니다. 그것은 잠재적으로 인간을 뛰어넘는 수준의 모델을 가지려는 목표를 갖고 있습니다. 즉, 우리가 심지어 이해할 수 없는 모델을 말합니다...
 
@@ -149,7 +291,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 그러므로 안전에 충분한 주의를 기울이지 않고도 모델을 구축하려는 회사들이 모든 사람들을 속이며 이러한 모델을 만들려는 아이디어는 실질적인 문제입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 그들을 믿을 이유가 줄고 있다는 이유를 잃어 가고 있습니다.
 
@@ -159,7 +312,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 그로부터 1년도 채 지나지 않아 Jan Leike의 트윗 스레드를 통해 그가 퇴사한다는 발표를 기반으로 하면, 그것은 사실에 맞지 않는 멋진 이야기일 뿐이었는데, 그는 충분한 컴퓨트를 받지 못했고, 즉, 투자된 20% 컴퓨트는 거짓이었다고 주장했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1월은 오픈AI가 더 이상 안전 중심의 기업이 아니라고 생각하고 스타트업의 방향에 공개적으로 반대했다고 밝혔습니다.
 
@@ -167,7 +331,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 하지만 우리가 정말로 이해하기 어려울지도 몰라요. 그렇다면 지금은 어떻게 해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이건 어떻게 봐야할까: 우리는 이럴 거란 걸 이미 알고 있었지요.
 
@@ -177,7 +352,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 하지만 이해해요. 억만장자가 되었을 후에 약속을 이행하기에 받는 엄청난 압박이 도움이 되지 않을 거라는 걸요. 사실, 이덕을 보이려 하지 말아요; 우리가 그들 자리에 있었다면 정확히 같은 방식으로 행동할 가능성이 높을 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 우리는 LLMs 교육 비즈니스에서 여유가 없음을 확신할 수 있습니다. Anthropic에서 이를 보았으며 Mistral의 CEO도 인정했습니다.
 
@@ -187,7 +373,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 요컨대, 이 시점에서는 OpenAI 없이 Microsoft가 존재할 수 없습니다. 오히려 반대로 그렇습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지난 설명에 따르면, GenAI 제품은 전반적으로 실망스러우며, 고객 유지율이 나쁘고 이탈률이 높습니다. ChatGPT와 같은 경우조차도 그렇습니다. 우수한 제품을 빠르게 출시해야 하는 압박이 상당할 것입니다.
 
@@ -197,7 +394,18 @@ OpenAI가 소송을 제기한 일부가 분명히 있다. 하지만, TV 시리�
 
 사실, 이러한 모델이 제3자에 의해 평가되면, 놀랍게도 그것들은 쉽게 탈옥할 수 있다는 것이 밝혀졌습니다. 영국의 AI 안전 연구소가 입증한 것처럼, 우리에게 "안전"이 얼마나 중요한지 알려줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다행히도 문제는 해결할 수 있어요; 우리는 이 회사들에 안전에 집중하도록 강요하거나 데이터셋을 공개하여 저작권 데이터가 사용되지 않도록 보장할 수 있어요. 그러나 AI의 전선에서의 노력이 주로 이윤 추구에 기인한다면 문제는 더욱 악화될 것입니다.
 

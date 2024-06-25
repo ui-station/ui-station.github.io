@@ -3,13 +3,12 @@ title: "2024년을 위한 딥 러닝을 위한 멀티 GPU 리눅스 머신 설�
 description: ""
 coverImage: "/assets/img/2024-05-20-HowtoSetupaMulti-GPULinuxMachineforDeepLearningin2024_0.png"
 date: 2024-05-20 17:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowtoSetupaMulti-GPULinuxMachineforDeepLearningin2024_0.png
 tag: Tech
 originalTitle: "How to Setup a Multi-GPU Linux Machine for Deep Learning in 2024"
 link: "https://medium.com/towards-data-science/how-to-setup-a-multi-gpu-linux-machine-for-deep-learning-in-2024-df561a2d3328"
 ---
-
 
 ## 다중 GPU로 딥 러닝
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/how-to-setup-a-multi-gpu-linux-ma
 
 본 기사는 중요한 라이브러리를 갖춘 Nvidia 다중 GPU(Linux) 머신을 설정하는 방법에 대한 가이드를 제공합니다. 이를 통해 실험에 소요되는 시간을 아낄 수 있고 개발을 시작하는 데 도움이 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 딥러닝을 위한 멀티 GPU 설정을 활용할 수 있는 인기 있는 오픈 소스 라이브러리로의 링크가 제공됩니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-data-science/how-to-setup-a-multi-gpu-linux-ma
 
 ©️ 이 이야기에서 언급된 모든 라이브러리 및 정보는 오픈 소스이거나 공개적으로 사용 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 시작하기
 
@@ -39,7 +60,18 @@ link: "https://medium.com/towards-data-science/how-to-setup-a-multi-gpu-linux-ma
 
 이 페이지를 따라 설치하지 않은 경우 Nvidia 드라이버를 설치하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우분투 22.04에 NVIDIA 드라이버를 설치하는 방법 - Linux 자습서 - Linux 구성 학습 - (출처: linuxconfig.org)
 
@@ -49,7 +81,18 @@ link: "https://medium.com/towards-data-science/how-to-setup-a-multi-gpu-linux-ma
 
 PyTorch 라이브러리용 필요한 CUDA 버전을 확인하세요: 로컬에서 시작하기 | PyTorch (저희는 CUDA 12.1을 설치하고 있습니다)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CUDA Toolkit 12.1 Downloads | NVIDIA Developer 에 방문하여 CUDA 12.1을 설치하기 위한 Linux 명령어를 얻을 수 있어요 (OS 버전과 해당하는 “deb (local)” 설치 프로그램 유형을 선택).
 
@@ -67,7 +110,18 @@ sudo apt-get update
 sudo apt-get -y install cuda
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ⚠️ CUDA 툴킷을 설치하는 동안, 설치 프로그램이 커널 업데이트를 요구할 수 있습니다. 터미널에서 커널 업데이트를 요청하는 팝업이 나타나면 esc 버튼을 눌러 취소하세요. 이 단계에서는 커널을 업데이트하지 마세요! — 이렇게 하면 Nvidia 드라이버가 손상될 수 있습니다 ☠️.
 
@@ -79,7 +133,18 @@ nano /home/$USER/.bashrc
 
 .bashrc 파일 맨 아래로 스크롤하여 다음 두 줄을 추가하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 export PATH="/usr/local/cuda-12.1/bin:$PATH"
@@ -98,7 +163,18 @@ ctrl + o             --> 저장
 ctrl + x             --> 편집기 닫기
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 터미널을 닫고 다시 열어주세요. 그러면 nvcc --version 명령을 실행하면 설치된 CUDA 버전이 터미널에 표시될 겁니다.
 
@@ -108,7 +184,18 @@ PyTorch를 설치하기 전에 Miniconda를 설치하고, 그 안에 PyTorch를 
 
 Downloads 폴더에서 터미널을 열고 다음 명령을 실행하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 mkdir -p ~/miniconda3
@@ -118,6 +205,7 @@ rm -rf ~/miniconda3/miniconda.sh
 ```
 
 # initiate conda
+
 ```bash
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
@@ -129,8 +217,18 @@ rm -rf ~/miniconda3/miniconda.sh
 
 (선택 사항) — 프로젝트용 새로운 conda 환경을 생성하세요. `environment-name`을 원하는 이름으로 바꿀 수 있어요. 일반적으로 제 프로젝트 이름으로 지정해요. 💡 프로젝트 작업 전후에 conda activate `environment-name` 및 conda deactivate `environment-name` 명령어를 사용할 수 있어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 conda create -n <environment-name> python=3.11
@@ -147,8 +245,18 @@ pip3 install torch torchvision torchaudio
 
 위 명령어는 PyTorch 설치 가이드 — 로컬에서 시작 | PyTorch 에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![PyTorch Installation](/assets/img/2024-05-20-HowtoSetupaMulti-GPULinuxMachineforDeepLearningin2024_3.png)
 
@@ -164,8 +272,18 @@ python
 
 이 명령은 시스템에 설치된 GPU의 수를 출력해야 합니다 (내 경우엔 8개), 그리고 nvidia-smi 명령에 나열된 GPU 수와 일치해야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 바로 시작해도 괜찮아요! 여러 개의 GPU를 활용하는 딥 러닝 프로젝트에 대해 작업할 준비가 되었어요 🥳.
 
@@ -175,7 +293,18 @@ python
 
 2. 💬 추론에 대한 설치 (LLM 모델 사용)를 위해 exllamav2를 별도의 환경에 복제하고 설치하세요. 이렇게 하면 모든 GPU가 사용되어 더 빠른 추론이 가능합니다: (자세한 튜토리얼은 제 미디엄 페이지를 확인하세요)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 👨‍🏫 파인 튜닝이나 훈련을 위해 torchtune을 복제하고 설치할 수 있습니다. 지침을 따라 모델을 전체 미세 조정하거나 Lora 미세 조정할 수 있습니다. GPU를 최대한 활용하세요: (자세한 튜토리얼은 내 미디엄 페이지를 확인해주세요)
 

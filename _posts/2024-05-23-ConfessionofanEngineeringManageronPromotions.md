@@ -10,7 +10,6 @@ originalTitle: "Confession of an Engineering Manager on Promotions"
 link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-on-promotions-48b2514b6b57"
 ---
 
-
 ![이미지](/assets/img/2024-05-23-ConfessionofanEngineeringManageronPromotions_0.png)
 
 많이 들어온 것 중에 한 가지 예제로 좋은 매니저의 핵심 지표는 누군가를 승진시키는 능력이라고 들거나 들어 봤습니다. 표면적으로는 충분히 합리적으로 들립니다. 결국, 매니저는 자신의 사람들을 승진시킬 수 없다면 무엇을 하는 걸까요?
@@ -19,7 +18,18 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 
 저는 듣긴 했고, 유감스럽게도 스스로도 이를 말해본 적이 있습니다. 엔지니어링 매니저로서 승진 판정 회의에 참여하면 마치 후보를 대신해서 타석에 들어가는 것이 야구에서 대타수 비슷하다는 말씀을 들어왔습니다. 후보는 스트라이크 피치이고, 매니저의 일은 대타로서 4구짜리 패스트볼을 홈런으로 쳐야 하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특이사항이 잘못되었습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 
 첫째, 좋은 시기에는 기업들이 유동성과 낮은 이자율로 자극을 받고, 경영진의 목표는 성장을 위해 모두 사용하게 됩니다. 이러한 환경에서 조직은 가로 및 세로로 확장해야 하므로, 빠르게 사람을 승진시키는 것은 필수적인 일과 신입사원을 유치하는 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어려운 시기에는 프로모션이 종종 지연되거나 훨씬 더 엄격한 검토를 받을 수 있습니다. 대형 테크 기업은 일반적으로 해고(유감없는)와 이직(유감 있는)으로 구성된 최소 15%의 교체 대상을 갖고 있습니다. 시장이 활발할 때, 자발적인 이직은 일반적으로 적어도 10%는 발생하기 때문에 해고를 최소화하려고 합니다. 그러나 시장이 침체할 때, 이직은 감소하고 기업은 해고를 증가시키고 인력을 오래 유지하려고 합니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 
 그에 비해 대기업들 및 특히 대규모 기술 기업들은 종종 그 반대로 행동합니다. 그들은 모든 분야에서 다음 단계에 존재함이 입증될 때까지 직원들을 현재 수준에 유지시키곤 합니다. 냉소적으로 바라보면, 누군가가 확실하게 다음 수준에 준비되어 있지 않으면 승진이 불가능하다는 뜻입니다. 또한, 그러한 기업에서는 고문련 엔지니어 포지션이 일반적으로 경력의 맥이며, 그 이후의 다음 수준으로 진출하는 탈출 속도가 다른 곳보다 훨씬 높습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 나쁜 경우 — 뜨거운 시장에서 소규모 회사, 승진은 대부분 담당자가 자신의 직원을 구두로 잘 홍보하는 능력에 달려 있습니다. 지정타자의 비유가 꼭 어울립니다. 결과는 종종 잘못 계산되고 불공평할 수 있습니다. 자신의 매니저가 황금처럼 말 잘하는 사람은 다른 사람의 비용으로 승진할 수 있습니다.
 
@@ -50,7 +82,18 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 - 코딩: diff\* 개수, diff 당 평균 수정 횟수, 코드 리뷰 횟수
 - 문서화: 설계 문서 (RFC\*\*) 개수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - diff는 주 코드베이스에 병합된 코드 변경의 단위이며, 병합 요청 등으로도 알려져 있어요.
 
@@ -62,7 +105,18 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 - 디자인: 디자인의 견고성, 코멘트 대응
 - 운영: 인시던트 관리, 당직 교대체제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 제기된 비정상적인 상황을 제외하고 승진을 안정적으로 이룰 수 있는 세 가지 중요 권고 사항입니다:
 
@@ -76,7 +130,18 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 
 어떤 사람들은 현재 수준에서 뛰어난 성과를 낸 후에야 그보다 한 단계 높은 수준의 성과를 얻으려는 실수를 범할 때가 있습니다. 예를 들어, 중급 직원에게 요구되는 평가 지표는 일반적으로 우수한 코딩 생산성입니다(시니어 직원보다 더 높은 수준). 코드 작성 능력이 탁월하고 빠른 속도로 작업을 완료하는 능력을 보여주지 않은 채 프로젝트를 주도하려는 것은 실수일 수 있습니다. 결국, 제한된 시간 내에 두 가지 모두 최적화하는 것은 매우 어려울 수 있습니다. 여기에서 매니저의 역할은 직원들의 승진 경로를 저해하지 않도록 올바르게 배치하는 일입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 미래 프로모션 엔도서와 협업하기
 
@@ -86,7 +151,18 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 
 \*현재 수준이 중급이라면 L+2는 스태프 엔지니어, L+3은 시니어 스태프 엔지니어가 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 경쟁사 파악하기
 
@@ -96,7 +172,18 @@ link: "https://medium.com/@vincesackschen/confession-of-an-engineering-manager-o
 
 지표는 업무 성과의 대리품이지만 그 자체로는 아니기 때문에 조작될 수 있습니다. 매니저로서, 자신의 직원을 홍보하고 다른 직원을 방해하는 것이 아닌, 종종 칭찬받는 좋은 매니저의 질로 자신의 직원에 대해 종합적이고 진실한 데이터를 제시하는 것이 더 유익합니다. 또한 다른 매니저들이 정직하게 유지할 수 있도록 하는 것이 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 후보의 코딩 생산성이 비정상적으로 높은가요? 구성 변경이 이에 포함되나요? 설계 문서의 저자로 명시된 후보가 실제 참여한 내용이 다른 공동 저자보다 적은가요? 관리자는 플랫폼 팀 대비 제품 팀의 코딩 생산성을 구분하나요? 현재 수준에서 뛰어나지 않은 상태에서 "짧은 장면"을 보이나요?
 

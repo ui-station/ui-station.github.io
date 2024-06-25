@@ -3,13 +3,12 @@ title: "자바 8부터 자바 21까지의 포괄적인 여정 중요 API 개선 
 description: ""
 coverImage: "/assets/img/2024-06-19-AComprehensiveJourneyfromJava8toJava21withCodeExamplesofEssentialAPIEnhancements_0.png"
 date: 2024-06-19 21:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-AComprehensiveJourneyfromJava8toJava21withCodeExamplesofEssentialAPIEnhancements_0.png
 tag: Tech
 originalTitle: "A Comprehensive Journey from Java 8 to Java 21 with Code Examples of Essential API Enhancements”"
 link: "https://medium.com/gitconnected/a-comprehensive-journey-from-java-8-to-java-21-with-code-examples-of-essential-api-enhancements-6817d2ab3ba8"
 ---
-
 
 ## 안녕하세요 친구들, 이 기사에서는 다양한 Java 버전에 대해 이야기하고 싶습니다. 나는 Java 8부터 Java 21까지의 각 버전에서 소개된 모든 중요한 기능과 API를 다루고, 좀 더 심도있는 통찰력을 얻기 위해 코딩 예제를 제시하려고 합니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/a-comprehensive-journey-from-java-8-to-ja
 
 ![이미지](/assets/img/2024-06-19-AComprehensiveJourneyfromJava8toJava21withCodeExamplesofEssentialAPIEnhancements_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 특징:
 
@@ -30,7 +40,18 @@ link: "https://medium.com/gitconnected/a-comprehensive-journey-from-java-8-to-ja
 
 함수형 인터페이스:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 람다 표현식을 사용하는 데 도움이되는 단일 추상 메소드를 가진 인터페이스입니다.
 - @FunctionalInterface 어노테이션을 사용하여 해당 인터페이스를 표시합니다.
@@ -42,7 +63,18 @@ link: "https://medium.com/gitconnected/a-comprehensive-journey-from-java-8-to-ja
 
 메소드 참조:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 람다 표현식에 대한 간편한 표기법을 제공합니다.
 - 메서드나 생성자를 :: 연산자를 사용하여 참조할 수 있습니다.
@@ -54,7 +86,18 @@ Optional 클래스:
 
 새로운 날짜 및 시간 API:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - java.time 패키지는 날짜와 시간을 다루는 보다 포괄적이고 유연한 API를 소개했습니다.
 - 이전의 java.util.Date 및 java.util.Calendar 클래스에서 발생한 다양한 문제를 해결합니다.
@@ -66,7 +109,18 @@ Optional 클래스:
 
 Nashorn JavaScript 엔진:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이전 Rhino JavaScript 엔진을 대체합니다.
 - 더 나은 성능을 제공하며 최신 JavaScript 표준과 더 호환됩니다.
@@ -78,7 +132,18 @@ Parallel Streams:
 
 Collectors:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 일반적인 축소 작업을 위한 Collectors 클래스의 유틸리티 메서드 집합을 소개합니다. 예를들어 toList(), toSet(), joining() 등이 있습니다.
 
@@ -88,7 +153,18 @@ java.util.function 패키지의 함수형 인터페이스:
 
 ## 개선된 Process API:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 자바 9은 원시 프로세스를 더 잘 제어할 수 있도록 Process API에 개선 사항을 도입했습니다. 새로운 ProcessHandle 클래스를 사용하면 개발자가 프로세스와 관련된 정보를 얻고 상호 작용할 수 있습니다.
 
@@ -107,7 +183,18 @@ public class ProcessHandleExample {
 
 - 자바 9에서는 컬렉션 인터페이스(List, Set, Map 등)에 새로운 정적 팩토리 메서드를 추가하여 이러한 컬렉션의 불변 인스턴스를 더 편리하게 생성할 수 있게 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import java.util.List;
@@ -179,7 +266,18 @@ public class StreamAPIImprovementsExample {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제에서:
 
@@ -191,7 +289,18 @@ public class StreamAPIImprovementsExample {
 
 - Java 9의 인터페이스는 비공개 메서드를 가질 수 있습니다. 이를 통해 공통 기능을 인터페이스 내에 캡슐화하여 외부 클래스에 노출하지 않고 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // 프라이빗 메서드를 가진 인터페이스
@@ -232,7 +341,18 @@ public class HttpClientExample {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 변수 타입 추론 (var):
 
@@ -275,7 +395,18 @@ public class LocalVarInference {
 
 Optional API - 새로운 메소드가 도입되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class OptionalApi {
@@ -324,7 +455,18 @@ public class HttpClientBasicExample {
 
 ## 새로운 파일 메서드:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Java 11에서는 java.nio.file 패키지에 여러 가지 새로운 메서드가 추가되었는데, 파일 및 디렉토리 작업에 대한 추가 기능을 제공합니다. 주목할 만한 몇 가지 메서드는 다음과 같습니다:
 
@@ -334,7 +476,18 @@ Java 11에서는 java.nio.file 패키지에 여러 가지 새로운 메서드가
 
 2. Files.readAllLines(Path path) 및 Files.write(Path path, Iterable<? extends CharSequence> lines, OpenOption... options):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이러한 메서드는 파일 내용을 문자열 목록으로 읽고 쓰는 작업을 간단하게 해줍니다. readAllLines 메서드는 파일에서 모든 줄을 목록으로 읽고, write 메서드는 문자열 컬렉션을 파일에 쓰기 위한 메서드입니다.
 
@@ -344,7 +497,18 @@ Java 11에서는 java.nio.file 패키지에 여러 가지 새로운 메서드가
 
 4. files.mismatch(Path path1, Path path2):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이 메서드는 두 파일의 내용을 비교하여 첫 번째 불일치하는 바이트의 위치를 반환합니다. 파일이 동일한 경우 -1을 반환합니다.
 
@@ -379,7 +543,18 @@ public class NewFilesMethods {
 
 Java 12에서 JEP 357의 일환으로 "콤팩트 숫자 포맷팅"이라는 새로운 기능이 소개되었습니다. 이 개선은 지역별 방식으로 대형 숫자를 더 간결하게 포맷하는 방법을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 java.text 패키지의 NumberFormat 클래스가 새로운 Style enum을 지원할 수 있도록 업데이트되었습니다. 이 Style에는 Style.SHORT 및 Style.LONG 상수가 포함되어 있습니다. 이러한 스타일은 특정 로케일에 기반해 큰 숫자를 간결한 형태로 포맷하는 데 사용할 수 있습니다.
 
@@ -410,7 +585,18 @@ public class CompactNumberFormattingExample {
 
 - Java 12의 String 클래스에는 indent(int n)이라는 새로운 메서드가 도입되었습니다. 이 메서드는 문자열의 각 줄의 들여쓰기를 지정된 공백 수만큼 조정하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 String indentedString = "Hello\nWorld".indent(3);
@@ -423,7 +609,18 @@ java.util.Arrays에 추가된 새로운 메서드 (JEP 326):
 
 java.util.stream.Collectors의 개선 사항 (JEP 325):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Java 12에서 도입된 Collectors 유틸리티 클래스에는 teeing과 같은 새로운 수집기가 추가되었는데, 이를 사용하면 두 개의 수집기를 결합하여 하나의 수집기로 만들 수 있습니다.
 
@@ -448,11 +645,23 @@ public class NewFilesMethod {
 ```
 
 특별히 흥미로운 일은 없었습니다:
+
 - ByteBuffer에 대한 API 업데이트
 - 지역화 업데이트 (새로운 문자 및 이모지 지원)
 - GC 업데이트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## “Switch Expressions” (SE) 대신 “Switch Statements” (SS):
 
@@ -469,7 +678,18 @@ String dayType = switch (dayOfWeek) {
 };
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "수확" 문장:
 
@@ -491,7 +711,18 @@ String dayType = switch (dayOfWeek) {
 
 또 다른 예시,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 /**
@@ -576,7 +807,18 @@ public class SwitchExpressions {
 
 텍스트 블록을 사용하지 않은 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 String html = """
@@ -590,7 +832,18 @@ String html = """
 
 텍스트 블록의 주요 기능은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 여러 줄 문자열: 텍스트 블록을 사용하면 여러 줄 문자열을 더 자연스럽게 표현할 수 있어 코드 가독성을 향상시킵니다.
 - 공백 제어: 각 줄의 시작과 끝 공백이 제거되어 들여쓰기를 더 잘 제어할 수 있습니다.
@@ -628,7 +881,7 @@ public class TextBlocks {
 
     private static void emptyBlock() {
         print("******** 빈 블록 ********");
-        String text = """ 
+        String text = """
                 """;
         print("|" + text + "|");
     }
@@ -676,7 +929,18 @@ public class TextBlocks {
 
 ## instanceof에 대한 패턴 매칭:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바 16의 instanceof에 대한 패턴 매칭은 유용한 기능으로 형식 검사와 추출을 개선합니다. 여기에 이 기능의 주요 측면을 요약해 두었어요:
 
@@ -688,7 +952,18 @@ public class TextBlocks {
 
 혜택:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 번거로운 코드 줄이기: 별도의 instanceof 확인, 형 변환 및 변수 선언이 필요 없게 합니다.
 - 가독성 향상: 코드가 더 명확해지고 복잡한 유형 계층 구조에 대해 이해하기 쉬워집니다.
@@ -708,7 +983,18 @@ if (obj instanceof String s) {
 
 예제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class PatternMatchingForInstanceof {
@@ -738,8 +1024,18 @@ public class PatternMatchingForInstanceof {
 
 - 이들의 주요 특성을 살펴봅시다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 간결함:
 
@@ -753,7 +1049,18 @@ public class PatternMatchingForInstanceof {
 
 - 레코드 필드는 final로 선언되어 있어, 레코드가 생성된 후에는 그 내부에 저장된 데이터를 변경할 수 없습니다. 이는 데이터 일관성을 보장하고 스레드 안전성에 대한 고려사항을 단순화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 가독성:
 
@@ -763,7 +1070,18 @@ public class PatternMatchingForInstanceof {
 
 - 보일러플레이트를 최소화함으로써 레코드는 getter를 잊거나 equals를 잘못 구현하는 것과 같은 일반적인 실수의 위험을 줄입니다. 이는 더 견고하고 신뢰할 수 있는 코드로 이어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전반적으로 레코드는 Java 개발자가 간결하고 불변 그리고 가독성 좋은 데이터 구조를 만드는 데 유용한 도구입니다. 이는 보다 깔끔하고 유지보수 가능한 코드를 유도합니다.
 
@@ -827,7 +1145,18 @@ public record Product(String name, int price) {
 - SimpleDateFormat과 같은 이전 서식기와 DateTimeFormatter의 비교: 각 접근 방식의 장단점 탐색
 - 특정 형식 작업에 DateTimeFormatter 사용 예제: 다양한 로케일에서 날짜 형식화, 타임존 처리, 더 사람이 이해하기 쉬운 표현 생성하기 등을 포함하여.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class DateTimeFormatterApi {
@@ -861,7 +1190,18 @@ Java 16에서 Stream API에 흥미로운 변경 사항이 있었습니다. 더�
 
 1. Stream.toList() 메서드: 이 새로운 메서드는 스트림의 요소를 목록으로 수집하는 간결한 방법을 제공합니다. 이전에는 collect(Collectors.toList())를 사용해야 했지만, 이제는 약간 중복된 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. Stream.mapMulti() 메소드: 이 메소드를 사용하면 스트림의 각 요소를 제로 또는 그 이상의 요소로 매핑하여 결과 요소의 새로운 스트림을 생성할 수 있습니다. 복잡한 데이터 구조를 분할하거나 펼치는 데 편리합니다.
 
@@ -872,7 +1212,18 @@ Java 16에서 Stream API에 흥미로운 변경 사항이 있었습니다. 더�
 - 이제 문자열 스트림은 중간 작업이 필요하지 않고 limit 및 skip 메소드를 직접 지원합니다.
 - peek 메소드를 병렬 스트림과 함께 사용할 수 있으므로 병렬성에 영향을주지 않고 부작용을 발생시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class StreamApi {
@@ -895,8 +1246,18 @@ Sealed 클래스는 Java 17 (JEP 409)에서 소개된 새로운 기능으로 상
 
 1. 향상된 타입 안전성: 허용된 하위 클래스를 명시함으로써 코드를 손상시키거나 보안 취약점을 도입할 수 있는 예기치 않은 확장을 방지합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 개선된 라이브러리 디자인: 라이브러리 내에서 폐쇄된 생태계를 만들 수 있어서, 사용자가 승인된 확장 기능만 사용하고 호환되지 않는 구현을 만들지 않도록 보장할 수 있습니다.
 
@@ -906,7 +1267,18 @@ sealed 클래스는 어떻게 작동합니까?
 
 sealed 키워드를 사용하여 클래스 또는 인터페이스를 sealed로 선언합니다. 그런 다음 permits 절을 사용하여 확장하거나 구현할 수 있는 클래스 목록을 지정합니다. 이 허용된 클래스만 직접 상속할 수 있고, 다른 모든 클래스는 금지됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 sealed class Shape {
@@ -928,10 +1300,21 @@ class Rectangle extends Shape {
 
 이점:
 
-- 1) 의도를 전달하여 잘 정의되고 제한된 가능한 구현을 강제화할 수 있음
-- 2) 더 나은 보안 — 제 3자 코드로부터의 예기치 않은 또는 무단 서브클래싱과 행위 예방을 돕습니다
+- 1. 의도를 전달하여 잘 정의되고 제한된 가능한 구현을 강제화할 수 있음
+- 2. 더 나은 보안 — 제 3자 코드로부터의 예기치 않은 또는 무단 서브클래싱과 행위 예방을 돕습니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 규칙:
 
@@ -939,8 +1322,8 @@ class Rectangle extends Shape {
 - 2. 하위 클래스는 반드시 final, sealed 또는 non-sealed 이어야 합니다. (그렇지 않으면 코드가 컴파일되지 않습니다)
 - 3. 허용된 하위 클래스는 상위 sealed 클래스를 확장해야 합니다. permit을 사용하지 않고 허용하는 것은 허용되지 않습니다.
 - 4. permits로 지정된 클래스들은 상위 클래스와 근접하게 위치해야 합니다:
-    - 동일한 모듈에 있어야 합니다 (상위 클래스가 명명된 모듈에 있는 경우) (Java 9 모듈화 참조)
-    - 동일한 패키지에 있어야 합니다 (상위 클래스가 무명 모듈에 있는 경우).
+  - 동일한 모듈에 있어야 합니다 (상위 클래스가 명명된 모듈에 있는 경우) (Java 9 모듈화 참조)
+  - 동일한 패키지에 있어야 합니다 (상위 클래스가 무명 모듈에 있는 경우).
 
 4번 항목에 대한 더 자세한 내용:
 
@@ -948,7 +1331,18 @@ class Rectangle extends Shape {
 - 모듈화된 환경에서는 "동일한 모듈"; 모듈화되지 않은 환경에서는 이를 가장 잘 나타내는 것이 "동일한 패키지"입니다.
 - 모듈을 사용한다면 모듈이 제공하는 안전한 경계 때문에 몇 가지 추가적인 유연성을 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 기본 UTF-8 설정:
 
@@ -979,7 +1373,18 @@ public class Utf8ByDefault {
 
 ## 간단한 웹 서버:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 새로운 API는 정적 파일을 제공하는 기본 웹 서버를 제공하여 빠른 프로토타이핑 및 임베디드 애플리케이션에 이상적입니다.
 
@@ -1022,7 +1427,18 @@ public class SimpleWebServer {
 </html>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같은 방법으로 실행해보세요:
 
@@ -1034,7 +1450,18 @@ public class SimpleWebServer {
 - 웹 브라우저를 열고 http://localhost:8080 (또는 지정된 포트)로 이동합니다.
 - 정적 파일 디렉토리에서 기본 파일 (보통 index.html)이 제공되는 것을 확인할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 서버를 중지하는 방법:
 
@@ -1042,19 +1469,41 @@ public class SimpleWebServer {
 
 가장 간단한 방법으로 시작하기:
 
-1) 이 패키지(java18)에서 터미널을 엽니다.
+1. 이 패키지(java18)에서 터미널을 엽니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-2) "java -version"을 실행하고 Java가 적어도 18 버전인지 확인해주세요.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-3) "jwebserver" 명령어를 실행해주세요.
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+2. "java -version"을 실행하고 Java가 적어도 18 버전인지 확인해주세요.
+
+3. "jwebserver" 명령어를 실행해주세요.
 
 다음과 같은 메시지가 표시되어야 합니다:
 
 기본적으로 루프백에 바인딩됩니다. 모든 인터페이스에 대해 사용하려면 "-b 0.0.0.0" 또는 "-b ::"를 사용하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 127.0.0.1 포트 8000에서 경로/디렉토리 및 하위 디렉토리를 제공하고 있어요.
 
@@ -1064,7 +1513,18 @@ HTML 페이지는 이제 다음 주소에서 제공됩니다: http://127.0.0.1:8
 
 IP 주소, 포트 및 기타 매개변수를 변경할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## HEAD() 편의 메서드 추가:
 
@@ -1090,7 +1550,18 @@ Method Handles로 Core Reflection 재구현: 이 재구현은 리플렉션 기�
 
 제거를 위한 Finalization 과거화: 자원 정리를 위해 고안된 Finalization은 고유한 단점이 있습니다. 이를 과거화함으로써 더 안전하고 신뢰할 수 있는 대안들이 제공됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미리보기 또는 인큐베이터 기능:
 
@@ -1098,7 +1569,18 @@ Method Handles로 Core Reflection 재구현: 이 재구현은 리플렉션 기�
 
 이 기능은 운영 체제 스레드 위에서 실행되는 가벼운 스레드를 소개하여 이를 통해 동시 프로그래밍을 간단히하고 특정 작업 부하의 성능을 향상시키는 것을 목표로합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Java 21에서 가상 스레드를 소개하는 간단한 데모입니다:
 
@@ -1118,7 +1600,18 @@ Thread vThread2 = Thread.ofVirtual().start(() -> {
 });
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 완료 대기:
 
@@ -1131,7 +1624,18 @@ vThread2.join();
 
 이렇게 하면 두 가상 스레드의 출력이 교차되어 풀 OS 스레드의 오버헤드 없이 동시 실행이 나타납니다. 다음과 같은 내용을 볼 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 가상 스레드 1: 0
@@ -1151,8 +1655,18 @@ vThread2.join();
 - 개선된 병행성: 제한된 수의 OS 스레드 내에 효율적으로 더 많은 가상 스레드를 관리할 수 있어서, 특정 작업 부하에 대한 자원을 더 잘 활용할 수 있습니다.
 - 단순화된 병행성 프로그래밍: 가상 스레드는 복잡한 스레드 관리와 동기화를 제거하여, 개발자들에게 병행 프로그래밍을 더 쉽게 만들어 줍니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 가상 스레드의 예제이며 OS/플랫폼 스레드와 대조적입니다. 이 프로그램은 ExecutorService를 사용하여 10,000개의 작업을 생성하고 모든 작업이 완료될 때까지 기다립니다. JDK는 배완 스레드와 OS 스레드의 제한된 수에서 이를 실행하여 쉽게 동시 코드를 작성할 수 있도록 지원합니다.
 
@@ -1171,7 +1685,18 @@ try (var executor = Executors.newVirtualThreadPerTaskExecutor()) {
 
 레코드는 Java 14에서 미리보기로 도입되었으며, Java 열거형도 함께 제공되었습니다. record는 Java의 또 다른 특별한 종류이며, 클래스 개발 프로세스를 단순한 데이터 운반자로만 동작하는 클래스로 쉽게 만들 수 있도록 도와줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 JDK 21에서 레코드 패턴과 타입 패턴을 중첩하여 사용하여 데이터 탐색 및 처리를 선언적이고 조합 가능한 형태로 가능하게 되었습니다.
 
@@ -1196,7 +1721,18 @@ static void printTodo(Object obj) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레코드 패턴의 다른 장점은 중첩된 레코드 및 해당 값에 액세스하는 기능입니다. JEP 정의 자체에서 제시된 예시는 ColoredPoint에 중첩된 Rectangle 내부의 Point 값을 얻는 능력을 보여줍니다. 이전보다 더 유용해졌습니다. 이전에는 레코드를 매번 분해해야 했는데, 이제 중첩된 레코드의 값을 쉽게 얻을 수 있습니다.
 
@@ -1214,7 +1750,18 @@ static void printColorOfUpperLeftPoint(Rectangle r) {
 
 JDK 21에서는 새로운 컬렉션 인터페이스 세트가 소개되어 컬렉션 사용 경험을 향상시킵니다. 예를 들어, 컬렉션에서 요소의 역순을 얻고 싶다면, 사용 중인 컬렉션에 따라 번거로울 수 있습니다. 사용 중인 컬렉션에 따라 등장 순서를 가져오는 데 불일치가 있을 수 있습니다. 예를 들어, SortedSet은 하나를 구현하지만 HashSet는 그렇지 않기 때문에 서로 다른 데이터 세트에서 이 작업을 수행하는 것이 번거로울 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-AComprehensiveJourneyfromJava8toJava21withCodeExamplesofEssentialAPIEnhancements_2.png" />
 
@@ -1236,7 +1783,18 @@ interface SequencedCollection<E> extends Collection<E> {
 
 ## 문자열 템플릿:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문자열 템플릿은 JDK 21의 미리 보기 기능입니다. 그러나 이는 문자열 조작에 더 많은 신뢰성과 더 나은 경험을 제공하여 때로는 원하지 않는 결과로 이어질 수 있는 일반적인 함정을 피하기 위해 노력합니다. 이제 템플릿 표현식을 작성하고 문자열에서 렌더링할 수 있습니다.
 
@@ -1251,7 +1809,18 @@ System.out.println(greeting);
 
 # 읽어 주셔서 감사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 👏 위 이야기에 박수를 보내주시고 저를 팔로우해주세요 👉
 - 📰 미디엄에서 더 많은 콘텐츠를 읽어보세요 (자바 개발자 인터뷰에 관한 총 50개의 이야기)

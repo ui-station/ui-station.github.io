@@ -3,13 +3,12 @@ title: "sh와 Bash의 차이점"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhatstheDifferenceBetweenshandBash_0.png"
 date: 2024-05-20 17:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WhatstheDifferenceBetweenshandBash_0.png
 tag: Tech
 originalTitle: "What’s the Difference Between sh and Bash?"
 link: "https://medium.com/@shalinpatel./whats-the-difference-between-sh-and-bash-f8fa6b2cd9f0"
 ---
-
 
 <img src="/assets/img/2024-05-20-WhatstheDifferenceBetweenshandBash_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@shalinpatel./whats-the-difference-between-sh-and-bash
 
 # 2. 쉘이란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쉘은 사용자가 명령을 입력하고 해석한 다음 처리하기 위해 운영 체제로 전달하는 컴퓨터 프로그램입니다. 따라서 사용자와 운영 체제 사이의 인터페이스 역할을 하며 사용자가 컴퓨터와 상호 작용할 수 있게 해줍니다. 쉘과 상호 작용하기 위해서는 gnome-terminal, konsole 또는 st와 같은 터미널 에뮬레이터가 필요합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@shalinpatel./whats-the-difference-between-sh-and-bash
 
 우리는 /etc/passwd 파일을 grep을 사용해서 간단히 읽어 현재 사용 중인 쉘을 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ grep $USER /etc/passwd
@@ -44,7 +65,18 @@ hey:x:1000:998::/home/hey:/bin/bash
 
 # 2.2. 설치된 셸
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희가 현재 설치된 모든 셸을 확인하려면 /etc/shells 파일을 읽어보면 됩니다:
 
@@ -62,7 +94,18 @@ $ cat /etc/shells
 
 저희는 기계에 셸이 세 개 설치되어 있는 것을 확인할 수 있습니다. 기술적으로, 두 개의 셸만 있지만 다음 섹션에서 그 이유를 알아볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. sh
 
@@ -72,7 +115,18 @@ sh은 또한 Bourne Shell로 알려져 있으며 POSIX 표준에 따라 정의�
 
 POSIX는 IEEE에서 정의한 표준 군으로, 공급 업체들이 운영 체제를 호환되도록 만들기 위한 것입니다. 이것은 우리가 일련의 지침을 따라 다중 운영 체제를 위한 크로스 플랫폼 소프트웨어를 개발할 수 있도록 도와줍니다. sh는 이러한 표준을 준수합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 Linux 시스템에서 sh은 Bourne Shell의 실제 구현으로의 심볼릭 링크입니다. 다음 명령을 통해 확인할 수 있습니다:
 
@@ -80,14 +134,25 @@ POSIX는 IEEE에서 정의한 표준 군으로, 공급 업체들이 운영 체�
 $ file -h /bin/sh
 /bin/sh: symbolic link to dash
 ```
+
 우리는 /bin/sh가 dash에 심볼릭 링크된 것을 볼 수 있습니다. 이는 Debian 기반 배포판에서 사용되는 POSIX 호환 쉘입니다. 쉘 스크립트에서는 #!/bin/sh를 첫 번째 줄에 넣을 수 있는데, 이렇게 하면 dash에서 실행됩니다:
 
 ```js
 #!/bin/sh
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 echo Hello, World!
@@ -99,8 +164,18 @@ echo Hello, World!
 
 대부분의 셸 스크립트는 첫 번째 줄에 #!/bin/sh를 가지고 있지만, /bin/sh가 Bourne 호환 셸을 가리키는 심볼릭 링크일 수 없다는 점을 알아야 합니다. 때로는 스크립트 작성자들이 /bin/sh가 /bin/bash 또는 /bin/dash를 가리킨다고 가정하지만, 이러한 것은 필수적이지 않을 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서 스크립트를 작성하고 실행하기 전에 /bin/sh의 유형을 확인하는 것이 좋은 실천입니다.
 
@@ -110,7 +185,18 @@ sh와 마찬가지로 Bash(Bourne Again Shell)는 명령어 언어 처리기이�
 
 Bash가 출시된 이후, Linux 운영 체제의 사실상 표준 쉘로 사용되어 왔습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4.1. Bash를 POSIX 규격 셸로 사용하기
 
@@ -122,7 +208,18 @@ Bash가 출시된 이후, Linux 운영 체제의 사실상 표준 쉘로 사용�
 $ bash --posix
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대안으로 Bash 스크립트를 POSIX 표준에 맞게 조정할 수도 있습니다:
 
@@ -137,7 +234,18 @@ echo Hello, World
 
 set 명령어는 스크립트 내에서 옵션을 활성화하는데, 이 경우에는 스크립트를 POSIX 모드로 실행하게 됩니다. 따라서 FreeBSD 및 UNIX와 같은 다른 운영 체제에서도 스크립트를 사용할 수 있게 만들어줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4.2. 특징
 
@@ -152,7 +260,18 @@ Bash는 현대적인 프로그래밍 언어와 많이 닮은 많은 유연성과
 
 # 4.3. Bash 스크립트 작성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Bash는 파일에서 명령어를 읽을 수도 있습니다. 첫 번째 줄에 #!/bin/bash Shebang을 지정한 후에 스크립트를 작성합니다:
 
@@ -172,8 +291,18 @@ fi
 
 스크립트 파일을 저장하고 실행 가능하도록 만들어주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 $ chmod +x is_even.sh
@@ -188,8 +317,18 @@ $ ./is_even
 
 두 쉘 모두 유용하며, 다른 상황에서 활용할 수 있습니다. 예를 들어, sh를 사용하면 스크립트를 여러 시스템 간에 호환되게 할 수 있습니다. 반면에 Bash는 유연한 구문과 더 매력적인 기능을 제공하기 때문에 선택할 수도 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래도 휴대성과 호환성에 대해 걱정한다면 Bash를 사용하여 순수한 POSIX 모드에서 실행할 수 있습니다. 또한, sh 스크립트를 작성하면 대부분 변경하지 않고 Bash에서 실행될 것입니다. 왜냐하면 Bash는 sh와 하위 호환성이 있기 때문입니다.
 

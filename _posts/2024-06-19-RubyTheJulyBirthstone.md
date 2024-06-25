@@ -3,13 +3,12 @@ title: "루비 7월의 탄생석"
 description: ""
 coverImage: "/assets/img/2024-06-19-RubyTheJulyBirthstone_0.png"
 date: 2024-06-19 10:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-RubyTheJulyBirthstone_0.png
 tag: Tech
 originalTitle: "Ruby: The July Birthstone"
 link: "https://medium.com/@davidblountporter/ruby-the-july-birthstone-a510fd734e96"
 ---
-
 
 ![Ruby Birthstone](/assets/img/2024-06-19-RubyTheJulyBirthstone_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@davidblountporter/ruby-the-july-birthstone-a510fd734e
 
 루비 보석은 불타오르는 붉은 색조와 착한 열정, 활력, 용기를 일으키는 강력한 에너지로 유명합니다. 활력과 힘의 돌로서, 루비는 뿌리 체크라를 자극하여 활력과 기반을 증진시키고 몸과 마음을 활기차게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루비에도 물리적인 이점 이외에도 감정적인 탄력, 용기 및 결단력을 강화한다고 믿어집니다. 루비는 자신감, 열정 및 삶에 대한 열정을 불어 넣어 개인들이 자신의 열정을 쫓고 우아하고 탄력 있게 장애물을 극복할 수 있도록 돕습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@davidblountporter/ruby-the-july-birthstone-a510fd734e
 
 전체 기사는 여기에서 읽을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## PS. 그럼 루비 주얼리는 어디서 사나요?
 

@@ -3,13 +3,12 @@ title: "UI 개발을 위해 서버가 필요하지 않아요 - 네, 정말 그�
 description: ""
 coverImage: "/assets/img/2024-06-19-IDontNeedaServerforUIDevelopmentYesYouHeardItRight_0.png"
 date: 2024-06-19 11:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-IDontNeedaServerforUIDevelopmentYesYouHeardItRight_0.png
 tag: Tech
 originalTitle: "I Don’t Need a Server for UI Development — Yes, You Heard It Right!"
 link: "https://medium.com/@boobalaninfo/i-dont-need-a-server-for-ui-development-yes-you-heard-it-right-a6334b31a210"
 ---
-
 
 <!--
 /assets/img/2024-06-19-IDontNeedaServerforUIDevelopmentYesYouHeardItRight_0.png
@@ -21,7 +20,18 @@ UI 개발 세계에서 많은 사람들이 지속적인 서버 개발, 배포 �
 참조 동영상은 여기에서 확인할 수 있습니다.
 -->
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # WireMock을 사용하는 이유
 
@@ -31,7 +41,18 @@ WireMock은 개발 중에 서버 의존성을 제거하는 데 도움이 됩니�
 
 로컬 머신에서 WireMock을 설정하려면 다음 단계를 따르세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리포지토리를 복제하세요:
 
@@ -43,20 +64,42 @@ WireMock 실행: 터미널을 열고 로컬 서버를 설정하기 위해 다음
 java -jar wiremock-standalone-3.6.0.jar --port 9191 --verbose --global-response-templating --jetty-header-buffer-size 16384
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령은 WireMock 서버를 9191 포트에서 시작하며 자세한 로깅과 전역 응답 템플릿 사용이 활성화됩니다.
 
 ## 폴더 구조
 
-- __file
-  - __files 폴더는 응답 일부로 제공될 수 있는 정적 파일을 저장하는 데 사용됩니다. 이러한 파일에는 JSON, XML 또는 기타 반환하려는 콘텐츠가 포함될 수 있습니다.
+- \_\_file
+  - \_\_files 폴더는 응답 일부로 제공될 수 있는 정적 파일을 저장하는 데 사용됩니다. 이러한 파일에는 JSON, XML 또는 기타 반환하려는 콘텐츠가 포함될 수 있습니다.
 - mappings
-  - __files 폴더는 모의 요청에 대한 응답의 일부로 제공될 수 있는 정적 파일을 저장하는 데 사용됩니다. 이 파일에는 JSON, XML, HTML 또는 기타 반환하려는 콘텐츠가 포함될 수 있습니다.
+  - \_\_files 폴더는 모의 요청에 대한 응답의 일부로 제공될 수 있는 정적 파일을 저장하는 데 사용됩니다. 이 파일에는 JSON, XML, HTML 또는 기타 반환하려는 콘텐츠가 포함될 수 있습니다.
 
 ![이미지](/assets/img/2024-06-19-IDontNeedaServerforUIDevelopmentYesYouHeardItRight_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 JSON 응답을 반환하는 스텁을 만들고 싶다면 다음과 같이 작성할 수 있습니다. GET 요청이 /v1/biggoss/shows로 들어오는 경우를 가정하겠습니다.
 
@@ -81,7 +124,18 @@ java -jar wiremock-standalone-3.6.0.jar --port 9191 --verbose --global-response-
 
 # API 유효성 검사
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 /v1/biggboss/shows 엔드포인트를 유효성 검사하려면 다음 단계를 따라 주세요:
 
@@ -137,7 +191,18 @@ java -jar wiremock-standalone-3.6.0.jar --port 9191 --verbose --global-response-
 
 이제 시나리오 기반 구성으로 넘어가 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # WireMock의 기본 키워드 이해하기
 
@@ -147,7 +212,18 @@ WireMock에서 처리할 URL을 정의합니다.
 
 ## Priority
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 환경 설정의 우선순위를 설정합니다. 여러 개의 설정이 존재하는 경우, 우선 순위가 가장 높은 것(숫자가 가장 작은 것)이 선택됩니다. 기본값은 5이며, 여기서 1이 가장 높은 우선 순위이고 Integer.MAX_VALUE(Java)가 가장 낮은 우선 순위입니다.
 
@@ -159,7 +235,18 @@ WireMock에서 처리할 URL을 정의합니다.
 
 ## newScenarioState
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - **정의:** 요청이 일치되고 응담이 제공된 후 시나리오가 전환하는 상태입니다.
 - **목적:** 시나리오가 다른 상태로 이동하여 순차적인 상태 기반 상호작용이 가능하도록 합니다.
@@ -173,7 +260,18 @@ WireMock에서 처리할 URL을 정의합니다.
 
 # 빈 시나리오 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 엔드포인트/시나리오/shows/empty를 만들어서 "shows-empty" 상태를 트리거하는게 좋을 거예요.
 
@@ -196,7 +294,18 @@ WireMock에서 처리할 URL을 정의합니다.
 
 이제 이 상태를 감지하고 /v1/biggboss/shows에 대한 응답을 구성해볼까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 {
@@ -219,12 +328,24 @@ WireMock에서 처리할 URL을 정의합니다.
 empty_shows.json
 
 ```js
-{}
+{
+}
 ```
 
 여기서 /v1/biggboss/shows API에 대해 shows-empty가 요구되는 경우 empty_shows.json 파일을 설정하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 실행 단계
 
@@ -236,7 +357,18 @@ empty_shows.json
 
 shows-reviewers-only 시나리오를 트리거하기 위한 새로운 엔드포인트/scenario/shows/reviewers 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 {
@@ -244,7 +376,7 @@ shows-reviewers-only 시나리오를 트리거하기 위한 새로운 엔드포�
   "newScenarioState": "shows-reviewers-only",
   "request": {
     "method": "POST",
-    "urlPathPattern" : "/scenario/shows/reviewers"
+    "urlPathPattern": "/scenario/shows/reviewers"
   },
   "response": {
     "status": 200,
@@ -261,7 +393,7 @@ shows-reviewers-only시나리오와 일치하도록 스텁 구성
   "requiredScenarioState": "shows-reviewers-only",
   "request": {
     "method": "GET",
-    "url" : "/v1/biggboss/shows"
+    "url": "/v1/biggboss/shows"
   },
   "response": {
     "status": 200,
@@ -275,7 +407,18 @@ shows-reviewers-only시나리오와 일치하도록 스텁 구성
 
 only_reviewers.json
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 {
@@ -316,7 +459,18 @@ only_reviewers.json
 
 동일한 방식으로 “N”개의 시나리오와 해당 클라이언트 스텁을 구성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모든 API에 대한 전역 오류 처리
 
@@ -328,12 +482,23 @@ only_reviewers.json
 - 503 서비스를 사용할 수 없음: server-maintenance-error-started
 - 404 찾을 수 없음: server-api-not-found-error-started
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 전역 오류에 대한 클라이언트 스텁을 구성하는 데 몇 가지 특별한 고려 사항이 있습니다:
 
 - 우선 순위: "priority"를 1로 설정하세요. 기본적으로 스텁 우선 순위는 5이지만, 1로 설정하면 요청이 발생할 때 이 스텁이 가장 높은 우선 순위를 갖게 됩니다. WireMock는 모든 요청을 가로채고 requiredScenarioState를 확인한 후 시스템 상태가 일치하는 경우 적절한 오류 응답을 반환합니다.
-- urlPathPattern: "/(.*)"을 사용하세요. 이 와일드카드 정규식은 모든 엔드포인트와 일치하여 오류 응답이 전역적으로 적용되도록 합니다.
+- urlPathPattern: "/(.\*)"을 사용하세요. 이 와일드카드 정규식은 모든 엔드포인트와 일치하여 오류 응답이 전역적으로 적용되도록 합니다.
 
 ```js
 {
@@ -352,12 +517,23 @@ only_reviewers.json
 
 ## 실행 단계
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 목 서버를 시작하세요.
 - /scenario/trigger-server-down-error를 호출하여 "500 에러" 시나리오를 시작하세요.
 - /v1/biggboss/shows 클라이언트 API를 호출하여 500 에러 응답을 받으세요. 실제로 시스템은 모든 API 호출에 대해 이 500 에러를 반환합니다.
-- 모든 시나리오를 재설정하려면 __admin/scenarios/reset을 호출하세요.
+- 모든 시나리오를 재설정하려면 \_\_admin/scenarios/reset을 호출하세요.
 
 # 결론
 

@@ -3,14 +3,12 @@ title: "Power BI 최적화 차원 모델링에서 서로간키의 필요성"
 description: ""
 coverImage: "/assets/img/2024-05-18-SpeedingUpPowerBITheCaseforSurrogateKeysinDimensionalModeling_0.png"
 date: 2024-05-18 18:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-SpeedingUpPowerBITheCaseforSurrogateKeysinDimensionalModeling_0.png
 tag: Tech
 originalTitle: "Speeding Up Power BI: The Case for Surrogate Keys in Dimensional Modeling"
 link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for-surrogate-keys-in-dimensional-modeling-2a6d060a0ab7"
 ---
-
-
 
 ![Surrogate Key](/assets/img/2024-05-18-SpeedingUpPowerBITheCaseforSurrogateKeysinDimensionalModeling_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 
 내 목표는 Power BI에서 쿼리 실행 시간을 줄일 방법을 찾는 것이었습니다. 차원과 사실을 결합하기 위해 대체 키를 조합 키로 교체하는 것은 제가 자세히 탐색한 대안 중 하나였습니다. 이 기사에서는 대체 키의 정의, 목적 및 구현하는 대안 방법에 대해 안내하겠습니다. 실용적인 예제는 PySpark에서 보여집니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 대리 키란 무엇인가요?
 
@@ -31,8 +39,18 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 
 아래 직원 테이블에서 직원 ID 열이 대리 키의 예시입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Surrogate Key](/assets/img/2024-05-18-SpeedingUpPowerBITheCaseforSurrogateKeysinDimensionalModeling_1.png)
 
@@ -42,8 +60,18 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 
 구글의 주식 심볼을 예로 들 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원래 구글 주식의 종류는 GOOG 주식 심볼을 가지고 있었습니다. 2014년 4월, 회사는 GOOGLE 주식 심볼 아래 새로운 주식 종류를 만들었습니다. 데이터베이스 디자인에서 구글 주식을 나타내는 주요 키로 원래 GOOG 심볼을 사용하고 있다면, 이 변경 사항을 반영하기 위해 적절한 수정을 해야 할 것입니다. Kimball (1998)은 이를 정확히 이유로 자연 키를 사용하는 것을 지양해야 한다고 주장했습니다. 그는 트랜잭션 데이터베이스의 자연 키는 "생산의 지시에 따라 생성, 형식화, 업데이트, 삭제, 재활용 및 재사용"되기 때문에 트랜잭션 데이터베이스 수준에서 발생하는 변경 사항에 지속적으로 의존해야 한다고 설명했습니다.
 
@@ -53,7 +81,18 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 
 대리 키 구현에 대한 제 연구로 결과적으로 대리 키를 생성하는 주요 방법은 두 가지라고 결론내렸습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 가지 방법은 단조 증가하는 정수를 생성하는 전통적인 함수를 통해 정수를 만드는 것입니다. 이 함수는 테이블의 고유한 값에 대해 정수를 생성합니다.
 
@@ -63,19 +102,41 @@ link: "https://medium.com/data-engineer-things/speeding-up-power-bi-the-case-for
 
 ## 단조 증가하는 정수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쇼핑 목록에 제품 목록과 제품이 목록에 추가된 타임스탬프가 있는 테이블이 있다고 상상해보세요.
 
-| Product      | Timestamp            |
-|--------------|----------------------|
-| Product A    | 2024-09-15 10:30:00  |
-| Product B    | 2024-09-15 11:45:00  |
-| Product C    | 2024-09-15 13:20:00  |
+| Product   | Timestamp           |
+| --------- | ------------------- |
+| Product A | 2024-09-15 10:30:00 |
+| Product B | 2024-09-15 11:45:00 |
+| Product C | 2024-09-15 13:20:00 |
 
 제품 차원의 서로 다른 키를 생성하려면 monotonically_increasing_id() 함수를 사용해야 합니다. 이 함수를 적용하기 전에 제품 목록이 고유한지 확인해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 제품 테이블은 바나나와 빵이 2일에 나누어서 입력되어서 두 번씩 나타납니다. 따라서 단계는 제품 열만 선택한 다음, 값을 고유하게 만들고 monotonically_increasing_id() 함수를 적용하는 것입니다.
 
@@ -99,8 +160,18 @@ df_sk=df_distinct.withColumn(
 
 출력 결과는 다음과 같을 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-SpeedingUpPowerBITheCaseforSurrogateKeysinDimensionalModeling_3.png)
 
@@ -110,8 +181,18 @@ df_sk=df_distinct.withColumn(
 
 ## 해싱 함수
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해싱 함수에 대한 내 연구는 그들이 무엇인지 이해하고 대체 키 생성을 위한 전통적인 함수들이 언제 선호되는지를 이해하는 데 국한되어 있었습니다. 따라서 해싱 함수들 간의 차이점이나 그들을 어떻게 구현하는지에 대해 자세히 다루지는 않겠습니다. PySpark에서 구현 측면을 다루는 이 Medium 기사를 발견했습니다.
 
@@ -121,7 +202,18 @@ df_sk=df_distinct.withColumn(
 
 # 요약
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 Power BI에서 쿼리 성능을 향상시키는 데 중점을 두며, 차원 모델의 컴포지트 키에 대한 효율적인 대안으로서 대리키의 사용을 탐색했습니다.
 
@@ -131,18 +223,40 @@ df_sk=df_distinct.withColumn(
 
 # 자원
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-| Author                    | Title                                                                       | Year | Source           |
-|---------------------------|-----------------------------------------------------------------------------|------|------------------|
-| Ben                       | Database Keys: The Complete Guide (Surrogate, Natural, Composite & More)    | 2022 | Database Star   |
-| Connor, Dave              | Surrogate Keys In dbt: Integers or Hashes?                                   | 2022 | dbt             |
-| Kimball, R.               | Surrogate Keys                                                              | 1998 | Kimball Group   |
-| Stiglich, Peter           | Performance Benefits of Surrogate Keys in Dimensional Models                | -----| EWS Solutions   |
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-| 저자 | 제목 | 출판연도 | 출처 |
-|---|---|---|---|
-| Wikstrom, Max | Power BI Data Types In Relationships- Does It Matter? | 2022 | Data, Business Intelligence and Beyond |
-| Zaman, Ahmed Uz | PySpark Hash Functions: A Comprehensive Guide | 2023 | Medium |
+| Author          | Title                                                                    | Year  | Source        |
+| --------------- | ------------------------------------------------------------------------ | ----- | ------------- |
+| Ben             | Database Keys: The Complete Guide (Surrogate, Natural, Composite & More) | 2022  | Database Star |
+| Connor, Dave    | Surrogate Keys In dbt: Integers or Hashes?                               | 2022  | dbt           |
+| Kimball, R.     | Surrogate Keys                                                           | 1998  | Kimball Group |
+| Stiglich, Peter | Performance Benefits of Surrogate Keys in Dimensional Models             | ----- | EWS Solutions |
+
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+| 저자            | 제목                                                  | 출판연도 | 출처                                   |
+| --------------- | ----------------------------------------------------- | -------- | -------------------------------------- |
+| Wikstrom, Max   | Power BI Data Types In Relationships- Does It Matter? | 2022     | Data, Business Intelligence and Beyond |
+| Zaman, Ahmed Uz | PySpark Hash Functions: A Comprehensive Guide         | 2023     | Medium                                 |

@@ -18,7 +18,18 @@ link: "https://medium.com/@oindrila-chakraborty88/schema-evolution-in-delta-lake
 
 # "스키마 진화(Schema Evolution)" 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가정해보겠습니다. 도착한 소스 대규모 데이터 파일의 데이터 처리를 브론즈 레이어의 델타 테이블로 처리하는 "파이프라인"이 있습니다. 이 "구조"는 다음과 같습니다 -
 
@@ -28,7 +39,18 @@ link: "https://medium.com/@oindrila-chakraborty88/schema-evolution-in-delta-lake
 
 ![schema](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 시간이 지난 후에, 도착하는 소스 대용량 데이터 파일의 "구조"가 다음과 같이 추가 열 "City"를 수용할 수 있도록 변경됩니다 -
 
@@ -39,7 +61,18 @@ link: "https://medium.com/@oindrila-chakraborty88/schema-evolution-in-delta-lake
 
 더욱이, 나중에 도착하는 소스 대용량 데이터 파일의 "구조"가 다시 변경되어 기존 열 "LastName"을 제거하고 추가 열 "Company"를 수용할 수 있게 될 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-27-SchemaEvolutioninDeltaLake-Databricks_3.png](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_3.png)
 
@@ -50,7 +83,18 @@ link: "https://medium.com/@oindrila-chakraborty88/schema-evolution-in-delta-lake
 
 도착하는 소스 대규모 데이터 파일의 "구조"가 변경되는 경우, 추가 열을 수용하거나 이미 존재하는 열을 제거하기 위해 델타 테이블의 "스키마"를 조정하는 것을 "스키마 진화"라고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 예시로 “Schema Evolution” 설명하기
 
@@ -64,8 +108,18 @@ CREATE DATABASE IF NOT EXISTS practice
 
 데이터베이스는 Databricks 워크스페이스에 생성됩니다 -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_4.png)
 
@@ -85,11 +139,18 @@ LOCATION "/mnt/iobdatabronze/practice-zone/delta-table/person_bronze"
 
 외부 델타 테이블은 Databricks 워크스페이스의 "practice" 데이터베이스 내에 생성됩니다 -
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-27-SchemaEvolutioninDeltaLake-Databricks_5](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_5.png)
 
@@ -103,9 +164,18 @@ INSERT INTO hive_metastore.practice.person_bronze (Id, FirstName, LastName) VALU
 
 "Just inserted data"가 Bronze Table "person_bronze"에 있는지 "Spark SQL" 쿼리를 사용하여 확인합니다 -
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 %sql
@@ -118,8 +188,18 @@ Output -
 
 Step 4: 고객이 새로운 소스 빅 데이터 파일을 추가하여 새로운 열 "City"를 보냅니다. 새로운 소스 빅 데이터 파일의 내용은 다음과 같습니다 -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_7.png)
 
@@ -144,21 +224,44 @@ display(df)
 
 출력 -
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `<img src="/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_8.png" />`
 
 DataFrame의 내용을 Bronze Layer의 Delta Table "person_bronze"에 추가하려고 시도해보세요. 다음과 같은 오류 "Delta 테이블에 쓸 때 스키마 불일치가 감지되었습니다"가 발생합니다 -
 
 ```js
-df.write.format("delta").mode("append").saveAsTable("hive_metastore.practice.person_bronze")
+df.write
+  .format("delta")
+  .mode("append")
+  .saveAsTable("hive_metastore.practice.person_bronze");
 ```
 
 Output -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 이미지에서 알 수 있듯이, 새로 도착한 "City" 열의 정보는 브론즈 레이어의 델타 테이블 "person_bronze"의 "Schema"에 포함되어 있지 않습니다.
 이것이 바로 브론즈 레이어의 Delta 테이블 "person_bronze"에 DataFrame의 내용을 추가하는 "append" 작업이 실패한 이유입니다.
@@ -173,7 +276,18 @@ df.write
   .saveAsTable("hive_metastore.practice.person_bronze");
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 PySpark 코드가 오류를 발생시키지 않고 성공적으로 실행되었습니다.
 
@@ -186,7 +300,18 @@ SELECT * FROM hive_metastore.practice.person_bronze;
 
 결과 -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 이미지에서 볼 수 있듯이 새로운 소스 빅 데이터 파일에서 가져온 새 콘텐츠가 Bronze Layer의 Delta Table에 성공적으로 삽입된 것을 확인할 수 있습니다. 새로운 추가 열 "City"가 추가되었습니다.
 새로 추가된 열 "City"에 대해 기존의 Bronze Layer의 Delta Table의 기존 행에는 값이 제공되지 않았기 때문에 기존 행의 "City" 열 값에 "NULL"이 설정되었습니다.
@@ -195,7 +320,18 @@ SELECT * FROM hive_metastore.practice.person_bronze;
 
 ![이미지](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 새로운 소스 빅데이터 파일을 DataFrame으로 읽어봅시다.
 
@@ -219,7 +355,18 @@ display(df)
 
 <img src="/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_12.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Databricks에서 제공하는 "mergeSchema" 기능을 사용하여 DataFrame의 내용을 Bronze 레이어의 Delta Table "person_bronze"에 추가해 보세요.
 
@@ -235,7 +382,18 @@ df.write
 
 삽입된 데이터가 Bronze Table "person_bronze"에 올바르게 입력되었는지 확인하려면 "Spark SQL" 쿼리를 사용하세요 -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 %sql
@@ -250,7 +408,18 @@ Output -
 새로 추가된 열 "Company"를 위해 기존 델타 테이블의 이미 존재하는 행들에는 값이 제공되지 않았기 때문에, 기존 행들의 "City" 열 값으로 "NULL"이 설정되었습니다.
 또한, "LastName" 열은 이미 브론즈 레이어의 델타 테이블의 "스키마"에 존재하지만, 새로운 소스의 빅 데이터 파일의 내용에는 존재하지 않기 때문에, 새로운 소스에서 오는 행들에 대해 "LastName" 열 값으로 "NULL"이 설정되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Databricks의 "mergeSchema" 기능의 제한
 
@@ -261,7 +430,18 @@ Output -
 
 ![이미지](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 새로운 소스 빅데이터 파일을 DataFrame으로 읽어보세요.
 
@@ -287,7 +467,18 @@ display(df)
 
 <img src="/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_15.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Databricks에서 제공하는 "mergeSchema" 기능을 사용하여 Bronze 레이어의 Delta Table "person_bronze"에 DataFrame의 내용을 추가해 보세요.
 
@@ -303,7 +494,18 @@ df.write
 
 ![이미지](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_16.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 소스 파일의 열 이름과 대상 테이블의 열 이름이 동일하지만 대/소문자만 다른 경우에 대해 어떻게 처리되는지 알아봅시다.
 
@@ -314,24 +516,36 @@ df.write
 
 이제 새로운 데이터 소스 대용량 파일을 DataFrame으로 읽어봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-from pyspark.sql.functions import *
-from pyspark.sql.types import *
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+from pyspark.sql.functions import _
+from pyspark.sql.types import _
 
 # 도착한 새로운 소스 빅 데이터 파일의 구조 정의
+
 person_schema = StructType([
-    StructField("Id", IntegerType(), False),
-    StructField("FirstName", StringType(), False),
-    StructField("LastName", StringType(), False),
-    StructField("City", StringType(), False),
-    StructField("company", StringType(), False),
+StructField("Id", IntegerType(), False),
+StructField("FirstName", StringType(), False),
+StructField("LastName", StringType(), False),
+StructField("City", StringType(), False),
+StructField("company", StringType(), False),
 ])
+
 # 도착한 새로운 소스 빅 데이터 파일의 내용 읽기
+
 df = spark.read.format("csv").option("header", "true").schema(person_schema).load("/mnt/iobdatalanding/practice-zone/input-files/Person_4.csv")
 display(df)
-
 
 출력 -
 
@@ -339,12 +553,25 @@ display(df)
 
 이제 Databricks에서 제공하는 "mergeSchema" 기능을 사용하여 DataFrame의 내용을 Bronze Layer의 Delta Table "person_bronze"에 추가해 보세요.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-df.write.format("delta").option("mergeSchema", "true").mode("append").saveAsTable("hive_metastore.practice.person_bronze")
+df.write
+  .format("delta")
+  .option("mergeSchema", "true")
+  .mode("append")
+  .saveAsTable("hive_metastore.practice.person_bronze");
 ```
 
 모든 작업이 오류 없이 성공적으로 실행되었습니다.
@@ -353,6 +580,17 @@ df.write.format("delta").option("mergeSchema", "true").mode("append").saveAsTabl
 
 ![Image](/assets/img/2024-05-27-SchemaEvolutioninDeltaLake-Databricks_19.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 이미지에서 볼 수 있듯이, 새로운 소스 빅데이터 파일에서 콘텐츠의 열 이름 "회사(Company)"이 "company"로 표시되었음에도 불구하고 데이터가 브론즈 레이어의 델타 테이블에 성공적으로 삽입되었습니다. 이것은 "아파치 스파크(Apache Spark)"가 기본적으로 대소문자를 구분하지 않기 때문에 가능했습니다. 따라서 "회사(Company)"와 "company" 열 모두 동일하게 처리되었습니다.

@@ -10,7 +10,6 @@ originalTitle: "Docker Basic CheatSheet"
 link: "https://medium.com/aws-in-plain-english/docker-basic-cheatsheet-011b8ccf78fc"
 ---
 
-
 ![Docker Basic Cheat Sheet](/assets/img/2024-05-27-DockerBasicCheatSheet_0.png)
 
 # Basic Commands:
@@ -19,8 +18,18 @@ link: "https://medium.com/aws-in-plain-english/docker-basic-cheatsheet-011b8ccf7
 
 - docker run: Create and start a container.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```docker
 $ docker run -d --name my_container nginx
@@ -36,7 +45,18 @@ $ docker restart my_container
 
 docker ps: 실행 중인 컨테이너 목록을 표시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ docker ps
@@ -50,7 +70,18 @@ $ docker ps -a
 
 ## 이미지 관리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 풀: 레지스트리에서 이미지를 다운로드합니다.
 
@@ -64,7 +95,18 @@ $ docker pull ubuntu
 $ docker build -t my_image .
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 이미지: 모든 로컬 이미지를 목록으로 확인할 수 있어요.
 
@@ -78,7 +120,18 @@ $ docker images
 $ docker rmi my_image
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 컨테이너 작업:
 
@@ -90,7 +143,18 @@ $ docker rmi my_image
 $ docker exec -it my_container bash
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 첨부: 실행 중인 컨테이너에 연결합니다.
 
@@ -104,7 +168,18 @@ $ docker attach my_container
 $ docker logs my_container
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 컨테이너 자원 관리:
 
@@ -116,22 +191,40 @@ $ docker cp file.txt my_container:/path/to/destination
 
 도커 일시정지/재개: 실행 중인 컨테이너를 일시정지하거나 다시 시작합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 $ docker pause my_container
 $ docker unpause my_container
 
-
 docker inspect: 디테일한 컨테이너 정보 표시
-
 
 $ docker inspect my_container
 
-
 # 네트워킹:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 네트워킹:
 
@@ -143,7 +236,18 @@ $ docker network ls
 
 도커 네트워크 생성: 새 네트워크를 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ docker network create my_network
@@ -158,7 +262,18 @@ $ docker network disconnect my_network my_container
 
 # 볼륨 관리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 볼륨:
 
@@ -170,7 +285,18 @@ $ docker volume ls
 
 도커 볼륨 생성: 볼륨을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ docker volume create my_volume
@@ -184,7 +310,18 @@ $ docker volume rm my_volume
 
 도커 볼륨 조회: 자세한 볼륨 정보 표시하기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 $ docker volume inspect my_volume

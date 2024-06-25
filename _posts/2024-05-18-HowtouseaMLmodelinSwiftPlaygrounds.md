@@ -3,13 +3,12 @@ title: "스위프트 플레이그라운드에서 머신 러닝 모델을 사용�
 description: ""
 coverImage: "/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_0.png"
 date: 2024-05-18 17:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_0.png
 tag: Tech
 originalTitle: "How to use a ML model in Swift Playgrounds"
 link: "https://medium.com/@ramon217gomez/how-to-use-a-ml-model-in-swift-playgrounds-7bb96432d98e"
 ---
-
 
 <img src="/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@ramon217gomez/how-to-use-a-ml-model-in-swift-playgrou
 
 반면에 Core ML (Core Machine Learning)은 Apple이 개발한 프레임워크로, iOS, macOS, watchOS 및 tvOS 앱에 머신 러닝 모델을 통합할 수 있게 해줘. Core ML을 사용하면 개발자들은 사전 훈련된 머신 러닝 모델을 활용하여 이미지 인식, 자연어 처리, 데이터 분석 등의 작업을 인터넷 연결 없이 효율적이고 실시간으로 수행할 수 있어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 표준 Swift 프로젝트에서 Core ML을 사용하는 것은 매우 간단합니다. 우리 모델을 프로젝트에 추가하기만 하면 앱에서 사용할 수 있습니다. 그러나 이 글을 작성하는 시점에서 Swift Playground에서의 사용은 조금 복잡합니다. 후자의 형식에서는 앱에서 모델을 사용하려면 해당 모델이 앱에 의해 사용되도록 설정해야 하는 일련의 단계를 따라야 합니다. 이는 잘 문서화되어 있고 웹의 다양한 위치에서 찾을 수 있습니다. 그럼에도 불구하고, Xcode 15가 출시되면서 사용자들 사이에 널리 알려지지 않은 마지막 단계가 있습니다.
 
@@ -29,8 +39,18 @@ Swift Playgrounds 프로젝트에서 ML 모델을 사용하려면, 모델의 .ml
 
 첫 번째 단계에서는, 단순히 임시 앱을 빌드하고, Xcode 파일 탐색기에서 .mlmodel 파일을 클릭한 다음 Model Class 옆에 우리 CoreML 모델의 이름을 클릭하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![ML model class file](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_1.png)
 
@@ -40,9 +60,18 @@ This will take you to the class file of our CoreML model, which acts as the inte
 
 While completing the remaining steps, we need to create a copy of this file and save it in another folder. Right-click on the file, choose "Show in Finder," and create a duplicate.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![ML model in Swift Playgrounds](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_3.png)
 
@@ -52,8 +81,18 @@ While completing the remaining steps, we need to create a copy of this file and 
 
 ~/Library/Developer/Xcode/DerivedData
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 디렉터리 내에서 임시 앱 이름으로된 폴더를 찾아 들어가야 해요.
 
@@ -63,7 +102,18 @@ While completing the remaining steps, we need to create a copy of this file and 
 
 ![Folder 6](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![그림1](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_7.png)
 
@@ -73,7 +123,18 @@ While completing the remaining steps, we need to create a copy of this file and 
 
 ![그림3](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 우리가 원하던 것을 찾을 수 있습니다: 컴파일된 ML 모델, .mlmodelc 파일(c는 컴파일된 형태를 의미합니다). 클래스 파일과 마찬가지로 이 파일의 사본을 만들어 쉽게 접근할 수 있는 위치에 저장하세요.
 
@@ -83,7 +144,18 @@ While completing the remaining steps, we need to create a copy of this file and 
 
 ## 두 번째 단계: 플레이그라운드 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 프로젝트를 구하는 데 도움이 된 단계로 넘어갑시다. 모델을 사용하려면 플레이그라운드를 마무리하려면 몇 가지 최종 조정이 필요합니다. 먼저, 클래스 파일을 프로젝트 내에 배치하십시오. 추가로, ML 모델을 넣을 폴더를 만들고 다른 것은 아무것도 넣지 마십시오. 저는 편의상 MLFile이라는 이름을 붙였습니다.
 
@@ -93,7 +165,18 @@ While completing the remaining steps, we need to create a copy of this file and 
 
 ![이미지](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_12.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 Playgrounds 프로젝트의 내용을 보여줄 것입니다. 그 안에서 Package.swift 파일을 찾아 열어봅니다.
 
@@ -103,7 +186,18 @@ While completing the remaining steps, we need to create a copy of this file and 
 
 ![프로젝트 구성](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 targets 섹션 내에서 .executableTarget() 메서드로 이동하여 아래 내용을 매개변수로 추가해주세요:
 
@@ -118,7 +212,18 @@ resources: [
 
 ![이미지](/assets/img/2024-05-18-HowtouseaMLmodelinSwiftPlaygrounds_15.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이제 모두 준비되었습니다!
 

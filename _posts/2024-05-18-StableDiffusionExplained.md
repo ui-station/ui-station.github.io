@@ -3,13 +3,12 @@ title: "안정적인 확산에 대한 설명"
 description: ""
 coverImage: "/assets/img/2024-05-18-StableDiffusionExplained_0.png"
 date: 2024-05-18 20:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-StableDiffusionExplained_0.png
 tag: Tech
 originalTitle: "Stable Diffusion Explained"
 link: "https://medium.com/@onkarmishra/stable-diffusion-explained-1f101284484d"
 ---
-
 
 ## Stable 확산이 어떻게 작동합니까? 텍스트에서 이미지 생성 기술 설명
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@onkarmishra/stable-diffusion-explained-1f101284484d"
 
 Stable 확산 모델은 이미지 생성을 위해 최첨단 결과를 달성했습니다. Stable 확산은 특정 유형의 확산 모델인 Latent 확산 모델에 기초합니다. 이 모델은 CompVis, LMU 및 RunwayML의 연구원 및 엔지니어들에 의해 제안된 'Latent 확산 모델을 사용한 고해상도 이미지 합성'에 기반합니다. 이 모델은 LAION-5B 데이터베이스의 하위 집합에서 512x512 이미지로 초기에 교육되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 주로 CLIP와 같은 사전 훈련된 언어 모델을 사용하여 텍스트 입력을 잠재 벡터로 인코딩함으로써 달성됩니다. 확산 모델은 텍스트로부터 이미지 데이터를 생성하는 데 최첨단 결과를 달성할 수 있습니다. 그러나 잡음 제거 프로세스는 고해상도 이미지를 생성할 때 매우 느리며 많은 메모리를 소비합니다. 따라서 이러한 모델을 훈련하고 추론에 사용하는 것이 어려운 과제입니다.
 
@@ -29,7 +39,18 @@ Stable 확산 모델은 이미지 생성을 위해 최첨단 결과를 달성했
 
 Stable Diffusion은 수십억 장의 이미지로 훈련된 대규모 텍스트에서 이미지로 확산 모델입니다. 이미지 확산 모델은 이미지를 잡음 제거하여 출력 이미지를 생성하는 방법을 배웁니다. Stable Diffusion은 훈련 데이터에서 인코딩된 잠재 이미지를 입력으로 사용합니다. 또한 주어진 이미지 z0에 대해, 확산 알고리즘은 이미지에 점진적으로 잡음을 추가하여 소음이 섞인 이미지 zt를 생성합니다. 여기서 t는 잡음이 추가된 횟수를 나타냅니다. t가 충분히 크면 이미지는 순수한 잡음에 가까워집니다. 시간 단계 t, 텍스트 프롬프트, 이미지 확산 알고리즘 등의 입력 집합이 주어진 경우, 확산 알고리즘은 노이즈를 예측하는 네트워크를 학습합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잠재 확산에는 주로 세 가지 주요 구성요소가 있습니다:
 
@@ -41,7 +62,18 @@ Stable Diffusion은 수십억 장의 이미지로 훈련된 대규모 텍스트�
 
 VAE 모델은 인코더와 디코더 두 부분으로 구성됩니다. 잠재 확산 학습 중에 인코더는 512*512*3 이미지를 순방향 확산 과정을 위한 사이즈가 64*64*4인 낮은 차원의 잠재 표현으로 변환합니다. 우리는 이미지의 이러한 작은 인코딩된 버전을 잠재라고 부릅니다. 학습 각 단계에서 이러한 잠재에 더 많은 잡음을 적용합니다. 이미지의 인코딩된 잠재 표현은 U-Net 모델의 입력으로 작용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서는 (3, 512, 512) 모양의 이미지를 (4, 64, 64) 모양의 잠재 이미지로 변환하여 메모리를 48배 더 적게 사용합니다. 이는 픽셀 공간 확산 모델과 비교했을 때 메모리 및 계산 요구 사항을 줄여줍니다. 따라서 16GB Colab GPU에서도 512 × 512 이미지를 매우 빠르게 생성할 수 있습니다.
 
@@ -68,7 +100,18 @@ def pil_to_latent(input_im):
     return 0.18215 * latent.latent_dist.sample()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. UNet
 
@@ -78,7 +121,18 @@ Unet은 노이즈가 있는 잠재 변수(x)를 입력으로 사용하고 노이
 
 따라서, 모델은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from diffusers import UNet2DConditionModel
@@ -98,8 +152,18 @@ noise_pred = unet(latents, t, encoder_hidden_states=text_embeddings)["sample"]
 
 텍스트-인코더는 입력 프롬프트를 임베딩 공간으로 변환하여 U-Net에 입력으로 제공합니다. Unet을 노이즈 제거 프로세스에 학습시킬 때 노이즈가 많은 latents를 안내하는 역할을 합니다. 텍스트-인코더는 일반적으로 간단한 트랜스포머 기반 인코더로, 입력 토큰 시퀀스를 잠재적인 텍스트-임베딩 시퀀스로 매핑합니다. Stable Diffusion은 새로운 텍스트 인코더를 학습하지 않고 이미 학습된 텍스트 인코더인 CLIP을 사용합니다. 텍스트 인코더는 입력 텍스트에 해당하는 임베딩을 생성합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 토큰화
 
@@ -125,9 +189,20 @@ Embedding 결과
 # 토큰에서 출력 임베딩 가져오기
 output_embeddings = text_encoder(text_input.input_ids.to(torch_device))[0]
 print('모양:', output_embeddings.shape)
-```   
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다 모아보면, 모델은 추론 과정 중에 다음과 같이 작동합니다:
 
@@ -137,8 +212,18 @@ print('모양:', output_embeddings.shape)
 
 위에서 언급된 3가지 외에도 이미지에 노이즈를 추가하고 모델을 사용하여 노이즈를 예측하는 데 사용되는 스케줄러가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 diffusers에서 LMSDiscreteScheduler를 가져와주세요
@@ -153,10 +238,19 @@ scheduler.set_timesteps(15)
 ```
 
 Stable Diffusion과 같은 Latent Diffusion Model은 다양한 창의적인 응용 프로그램을 가능하게 합니다:
-  
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 텍스트에서 이미지로 변환
 - 이미지에서 이미지 생성 - 시작점을 기반으로 새 이미지를 생성하거나 수정
@@ -169,7 +263,18 @@ Stable Diffusion과 같은 Latent Diffusion Model은 다양한 창의적인 응�
 
 참고:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 롬바흐, R., 블랫만, A., 로렌츠, D., 에셀, P., & 오머, B. (2022). 잠재 확산 모델을 사용한 고해상도 이미지 합성. IEEE/CVF 컴퓨터 비전과 패턴 인식 컨퍼런스 논문집 (pp. 10684–10695).
 - 장, L., & 아그라와라, M. (2023). 텍스트-이미지 확산 모델에 조건부 제어 추가. arXiv 사전 인쇄 arXiv:2302.05543.

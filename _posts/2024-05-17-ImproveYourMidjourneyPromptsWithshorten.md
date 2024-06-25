@@ -3,13 +3,12 @@ title: "중간 과정 프롬프트를 Shorten으로 개선하세요"
 description: ""
 coverImage: "/assets/img/2024-05-17-ImproveYourMidjourneyPromptsWithshorten_0.png"
 date: 2024-05-17 20:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-ImproveYourMidjourneyPromptsWithshorten_0.png
 tag: Tech
 originalTitle: "Improve Your Midjourney Prompts With  shorten"
 link: "https://medium.com/ai-advances/improve-your-midjourney-prompts-with-shorten-9f34c15e1a1a"
 ---
-
 
 <img src="/assets/img/2024-05-17-ImproveYourMidjourneyPromptsWithshorten_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/ai-advances/improve-your-midjourney-prompts-with-short
 
 /shorten 명령어는 프롬프트를 분석하는 유용한 도구입니다. 미드절니의 알고리즘이 프롬프트를 해석하는 방식을 파악하고, 원하는 이미지를 만들기에 더 적합한 더 짧은 프롬프트를 제안해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서 Midjourney Discord 인터페이스에서 `/shorten` 명령어가 어떻게 작동하는지 알게 될 것입니다. 그런 다음 두 가지 예제를 통해 안내해 드리겠습니다:
 
@@ -30,7 +40,18 @@ link: "https://medium.com/ai-advances/improve-your-midjourney-prompts-with-short
 
 Midjourney 봇은 프롬프트를 단어 또는 짧은 구문으로 구성된 토큰으로 분할합니다. 그런 다음 이러한 토큰과 교육 데이터의 연관성을 기반으로 이미지를 작성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 직감과는 반대로 간결하고 간결한 프롬프트가 긴 설명보다 더 나은 성능을 발휘할 수 있다고 합니다. Midjourney는 시적인 언어와 과도한 설명이 이미지에 예상치 못한 객체들이 나타나게 할 수 있다고 설명합니다.
 
@@ -40,7 +61,18 @@ Midjourney 봇은 프롬프트를 단어 또는 짧은 구문으로 구성된 �
 
 ![2024-05-17-ImproveYourMidjourneyPromptsWithshorten_1.png](/assets/img/2024-05-17-ImproveYourMidjourneyPromptsWithshorten_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자에게 추가 옵션이 두 가지 더 있어요:
 
@@ -51,7 +83,18 @@ Midjourney 봇은 프롬프트를 단어 또는 짧은 구문으로 구성된 �
 
 알고리즘은 이미지 구성 요소와 각각의 색상, 스타일에 중점을 둡니다. 구성은 덜 중요한 것으로 보이며 리본에 쓰인 단어의 설명도 마찬가지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 가족 모습
 
@@ -61,7 +104,18 @@ Midjourney 봇은 프롬프트를 단어 또는 짧은 구문으로 구성된 �
 
 ![가족 모습](/assets/img/2024-05-17-ImproveYourMidjourneyPromptsWithshorten_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생성된 장면에는 요청한 모든 객체들이 포함되어 있지만, 구성이 예상대로 되지는 않았어요. 예를 들어, 부엌 카운터 위에 있는 태비 고양이 한 마리 대신 바닥에 두 마리가 있었어요. 바닥에는 장난감이 있지만, 아이들이 그것들과 놀고 있지는 않았어요. 하지만 정말 당황한 건 창문의 아랫부분이 빠져있던 거에요.
 
@@ -71,7 +125,18 @@ Midjourney 봇은 프롬프트를 단어 또는 짧은 구문으로 구성된 �
 
 봇은 또한 프롬프트를 다섯 가지 요약된 버전으로 제안했어요. 그것들은 프롬프트의 인식에 따라 중요한 부분을 포착하고 적절하지 않은 세부사항은 제외한 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 패널에서는 "사실적인, 화창한 아침 가족 장면, 부엌에서 스무디를 준비하는 여성, 두 아이, 장난감 자동차로 뒤덮인 바닥. 태비 고양이, 과일, 커튼"에서 "사실적인, 화창한, 가족, 스무디"로 줄어든 프롬프트에 대한 이미지가 보입니다.
 
@@ -81,7 +146,18 @@ Midjourney 봇은 프롬프트를 단어 또는 짧은 구문으로 구성된 �
 
 ![이미지](/assets/img/2024-05-17-ImproveYourMidjourneyPromptsWithshorten_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 시적인 언어 줄이기
 
@@ -91,7 +167,18 @@ Midjourney 봇은 프롬프트를 단어 또는 짧은 구문으로 구성된 �
 
 이것은 총 5개 중 3번째 프롬프트였지만, 그 이후로는 포도와 키위가 사라지기 시작했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 패널은 두 프롬프트를 나란히 비교한 것을 보여줍니다. 원본 38단어 중 8단어만 남은 단축된 프롬프트는 장면을 충실하게 재구성합니다.
 
@@ -101,7 +188,18 @@ Midjourney 봇은 프롬프트를 단어 또는 짧은 구문으로 구성된 �
 
 첫 번째 복잡한 프롬프트 예제에서, /shorten 명령어와 Midjourney 봇이 제공한 단축된 프롬프트는 내 문제를 직접 해결하지 못했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `/shorten`와 상호 작용하면 알고리즘을 더 잘 이해할 수 있었어요. 각 토큰에 부여하는 가중치를 알면, 지나치게 강조된 단어를 제외하고 다른 곳에서 설명을 개선할 수 있었어요.
 

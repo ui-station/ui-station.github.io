@@ -18,7 +18,18 @@ Windows Server 2022에서 Windows 업데이트를 확인했을 때 다음과 같
 
 그리고 KB5034439를 설치하는 동안 오류가 발생했음을 확인했는데, 해결해야 할 여러 제안이 있었지만 문제를 해결하지 못했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 마침내 그 문제를 해결할 수 있는 올바른 참조를 찾았어요. 이제 아래 단계를 따라주세요.
 
@@ -28,7 +39,18 @@ Windows Server 2022에서 Windows 업데이트를 확인했을 때 다음과 같
 
 ![이미지](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. WinRE가 설치된 경우, WinRE 디렉토리 경로가 있는 "Windows RE 위치"가 있어야 합니다. WinRE 상태를 확인하려면 reagentc /info를 실행하세요. 예시: "Windows RE 위치:
 
@@ -38,21 +60,40 @@ Windows Server 2022에서 Windows 업데이트를 확인했을 때 다음과 같
 
 3. WinRE 비활성화를 위해 reagentc /disable를 실행하세요"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Error Screenshot](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_3.png)
 
 4. Shrink the OS partition and prepare the disk for a new recovery partition.
-a. To shrink the OS, run diskpart
+   a. To shrink the OS, run diskpart
 
 ![Error Screenshot](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_4.png)
 
 b. Run list disk
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Error message](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_5.png)
 
@@ -62,9 +103,18 @@ c. To select the OS disk, run `sel disk OS disk index`. This should be the same 
 
 d. To check the partition under the OS disk and find the OS partition, run `list part`
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Error Image 1](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_7.png)
 
@@ -74,9 +124,18 @@ e. To select the OS partition, run `sel part OS partition index`
 
 f. Run `shrink desired=250 minimum=250`
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Error Screenshot 9](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_9.png)
 
@@ -86,20 +145,39 @@ g. To select the WinRE partition, run `sel part WinRE partition index`
 
 h. To delete the WinRE partition, run `delete partition override`
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_11.png)
 
 5. 새 복구 파티션을 생성합니다.
 
-a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Master Boot Record (MBR)인지 확인합니다. 이를 확인하려면 list disk를 실행합니다. "Gpt" 열에 별표(*)가 있는지 확인합니다. 별표(*)가 있는 경우 드라이브가 GPT이고, 그렇지 않으면 MBR입니다.
+a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Master Boot Record (MBR)인지 확인합니다. 이를 확인하려면 list disk를 실행합니다. "Gpt" 열에 별표(_)가 있는지 확인합니다. 별표(_)가 있는 경우 드라이브가 GPT이고, 그렇지 않으면 MBR입니다.
 
 ![이미지](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_12.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. GPT 디스크인 경우, create partition primary id=de94bba4-06d1-4d40-a16a-bfd50179d6ac 명령을 실행한 다음 gpt attributes =0x8000000000000001 명령을 실행하세요.
 
@@ -109,8 +187,18 @@ a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Ma
 
 3. 파티션을 포맷하려면, format quick fs=ntfs label="Windows RE tools" 명령을 실행하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_14.png" />
 
@@ -120,9 +208,18 @@ a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Ma
 
 7. To exit from diskpart, run `exit`
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Error Image 1](/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_16.png)
 
@@ -132,8 +229,18 @@ a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Ma
 
 9. To confirm where WinRE is installed, run `reagentc /info`
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-Error0x80070643wheninstallingKB5034439onWindowsServer2022_18.png" />
 
@@ -143,6 +250,17 @@ a. 먼저, 디스크 파티션 스타일이 GUID Partition Table (GPT) 또는 Ma
 
 이게 도움이 되기를 바라며, 행운을 빕니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고문헌:

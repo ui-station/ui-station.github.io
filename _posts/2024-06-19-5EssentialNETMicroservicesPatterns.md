@@ -3,26 +3,33 @@ title: "5가지 필수 NET 마이크로서비스 패턴"
 description: ""
 coverImage: "/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_0.png"
 date: 2024-06-19 11:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_0.png
 tag: Tech
 originalTitle: "5 Essential .NET Microservices Patterns"
 link: "https://medium.com/@kmorpex/5-essential-net-microservices-patterns-c7d38ab888a2"
 ---
 
-
-
 ![2024-06-19-5EssentialNETMicroservicesPatterns_0](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_0.png)
 
-소프트웨어 개발의 끊임없는 세계에서, 마이크로서비스 아키텍처는 특히 .NET의 광범위한 영역에서 인기 있는 선택지가 되었습니다. .NET은 확장 및 적응이 가능한 능력으로 대규모의 데이터 및 트래픽을 처리할 수 있는 이상적인 플랫폼입니다. 
+소프트웨어 개발의 끊임없는 세계에서, 마이크로서비스 아키텍처는 특히 .NET의 광범위한 영역에서 인기 있는 선택지가 되었습니다. .NET은 확장 및 적응이 가능한 능력으로 대규모의 데이터 및 트래픽을 처리할 수 있는 이상적인 플랫폼입니다.
 
 이 기사에서는 마이크로서비스 아키텍처를 숙달하고자 하는 .NET 개발자들을 위한 다섯 가지 필수 패턴을 탐구할 것입니다. 우리는 실용적인 예제와 실행 가능한 조언을 제공하여 마이크로서비스의 우수성을 달성하는 여정에서 당신을 돕겠습니다.
 
 ## 1. 게이트웨이 집계 패턴
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_1.png)
 
@@ -34,9 +41,9 @@ public async Task<AggregatedResult> AggregateData()
 {
     var userTask = _userService.GetUser();
     var ordersTask = _orderService.GetOrdersForUser();
-    
+
     await Task.WhenAll(userTask, ordersTask);
-    
+
     var user = await userTask;
     var orders = await ordersTask;
 
@@ -50,9 +57,18 @@ public async Task<AggregatedResult> AggregateData()
 
 ## 2. 회로 차단기 패턴
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Circuit Breaker](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_2.png)
 
@@ -72,9 +88,18 @@ await circuitBreakerPolicy.ExecuteAsync(async () =>
 
 ## 3. 서비스 디스커버리 패턴
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_3.png)
 
@@ -147,8 +172,18 @@ public class ConsulService : IConsulService
 
 ## 4. 이벤트 소싱 패턴
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_4.png" />
 
@@ -172,8 +207,18 @@ public async Task SaveEvents(Guid entityId, IEnumerable<Event> events, long expe
 
 ## 5. CQRS 패턴
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-5EssentialNETMicroservicesPatterns_5.png)
 
@@ -202,10 +247,20 @@ public class AddUserCommandHandler : ICommandHandler<AddUserCommand>
         Console.WriteLine($"User {command.Name} added");
     }
 }
-``` 
+```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ID로 사용자를 가져오는 쿼리
 
@@ -248,7 +303,18 @@ public interface IQueryHandler<TQuery, TResult>
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 다섯 가지 방식을 따라가면 .NET 마이크로서비스를 숙달하기에 한 발짝 더 다가갈 것입니다. 이것들을 구성 요소로 활용하고 프로젝트에 맞게 사용자 정의하여 사용하세요. 당신의 마이크로서비스는 번성할 것입니다. 코딩을 즐기세요!
 

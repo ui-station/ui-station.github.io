@@ -3,13 +3,12 @@ title: "Rails 크론 잡 - Rails에서 작업 스케줄링 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-RailsCronJobsTaskSchedulingInRails_0.png"
 date: 2024-06-22 22:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-RailsCronJobsTaskSchedulingInRails_0.png
 tag: Tech
 originalTitle: "Rails Cron Jobs — Task Scheduling In Rails"
 link: "https://medium.com/@hasnatraza.dev/rails-cron-jobs-task-scheduling-in-rails-f7662106feaa"
 ---
-
 
 ![image](/assets/img/2024-06-22-RailsCronJobsTaskSchedulingInRails_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@hasnatraza.dev/rails-cron-jobs-task-scheduling-in-rai
 
 Whenever Gem을 사용한 Rails에서 Cron 작업을 사용하는 방법에 대해 설명하기 전에, cron 작업이 무엇인지 간단히 설명해 드리겠습니다. (이 주제에 대해 자세한 기사를 곧 쓸 것입니다)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단히 말해서, Cron은 특정 시간에 반복적으로 작업을 예약하고 실행할 수 있게 해주는 명령줄 도구입니다. 이러한 작업들을 'cron jobs'라고 합니다. Cron은 Linux/Unix 시스템에 내장되어 있기 때문에 추가적인 종속성을 설치할 필요가 없습니다. 일반적으로 cron jobs는 'crontab'이라는 파일에 작성됩니다. 'crontab'은 Cron Table의 약자입니다. crontab 작업/cron job의 구문은 다섯 개의 숫자로 구성되어 있으며 각각은 작업을 실행해야 하는 시간을 나타내며 그 뒤에 실행할 스크립트가 따릅니다. 구문은 다음과 같아야 합니다:
 
@@ -39,7 +49,18 @@ Whenever Gem을 사용한 Rails에서 Cron 작업을 사용하는 방법에 대�
 
 <img src="/assets/img/2024-06-22-RailsCronJobsTaskSchedulingInRails_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레일즈 작업을 예약하는 데는 crontab을 사용할 수 있지만, 낡고 복잡하게 느껴질 수 있습니다. 이 프로세스는 다음 명령어를 사용하는 것을 포함합니다:
 
@@ -51,7 +72,18 @@ Whenever Gem을 사용한 Rails에서 Cron 작업을 사용하는 방법에 대�
 
 이제 레일즈에서 cron 작업을 다루는 더 나은 방법에 대해 설명해 드리겠습니다. 전통적이고 다소 난잡한 crontab을 다루는 대신, 일정을 잡는 것이 훨씬 간편하고 우아한 루비 젬이 있습니다. 이 용도로 가장 많이 사용되는 젬은 Whenever입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 'Whenever'은 크론 작업을 설정하는 과정을 간소화하는 젬입니다. 크론탭을 수동으로 편집하는 대신 Whenever을 사용하여 루비 코드로 크론 작업을 작성할 수 있습니다. 이 젬은 크론탭을 자동으로 업데이트해줍니다.
 
@@ -63,7 +95,18 @@ Whenever Gem을 사용한 Rails에서 Cron 작업을 사용하는 방법에 대�
 gem 'whenever', require: false
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 젬을 초기화하기 위해 아래 명령을 실행해보세요.
 
@@ -75,7 +118,18 @@ bundle exec .wheneverize
 
 이제 젬을 설정한 후 작업을 실제로 예약해 보겠습니다. 이를 위해서 Rake 작업을 만들어 시작하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 레일즈 g task batch send_messages
@@ -99,8 +153,18 @@ end
 
 Rake 태스크에 로직을 추가했다면, schedular.rb 파일에 등록해 보세요. 여기서는 예시로 1분 간격으로 설정하겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 매 분마다
@@ -116,7 +180,18 @@ whenever --update-crontab
 
 Cron Job을 성공적으로 설정했습니다. 특정 시간에 실행되도록 예약되었습니다. 또한 whenever --clear-crontab 명령을 사용하여 crontab을 지울 수 있고, crontab을 보려면 crontab -l을 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Sidekiq-Cron Gem
 
@@ -126,7 +201,18 @@ Sidekiq에서 작업을 예약하는 것은 일반적으로 엔터프라이즈 �
 
 간단히 말하면, Sidekiq-cron은 공식 엔터프라이즈 버전을 지불하지 않고도 Sidekiq 내에서 작업을 예약할 수 있게 해주는 도구입니다. 비슷한 예약 기능을 제공하여 작업이 언제와 얼마나 자주 실행되어야 하는지 지정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Sidekiq-Cron Gem 설정하기
 
@@ -138,7 +224,18 @@ gem 'sidekiq-cron'
 
 그런 다음 config/ 디렉토리에 schedule.yml 파일을 생성하세요. Whenever 젬의 경우처럼 파일을 초기화하는 기능은 제공되지 않지만, 다행히 Sidekiq-Cron은 파일을 초기화하는 기능을 제공하지 않습니다. 또한 config/initializers 디렉토리에 sidekiq.rb라는 이름의 파일을 생성하여 아래 내용을 추가해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 schedule_file = "config/schedule.yml"
@@ -155,7 +252,18 @@ rails generate job send_bulk_emails
 
 그리고 이 코드에 일부 기능을 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고: 레일즈 백그라운드 작업/워커를 설정, 생성 및 사용하는 방법에 대한 자세한 튜토리얼이 필요하시다면 이 기사를 참조해주세요.
 
@@ -182,7 +290,18 @@ email_job:
    class: "SendBulkEmailJob"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 워커를 실행하려면 터미널에서 새 탭을 열어주세요. 앱이 활성화된 상태에서도 워커가 계속 실행되어야 하는 점을 주의해 주세요. 레일즈 서버를 시작하거나 기타 작업을 실행해야 하는 경우 다른 탭으로 전환해야 합니다.
 
@@ -192,6 +311,17 @@ email_job:
 
 요약하면, 크론 작업은 Unix/Linux 시스템에서 반복적인 작업을 자동화하는 데 필수적입니다. Whenever 젬은 루비 코드로 작성하고 크론 작업을 예약하는 레일즈 애플리케이션에서 간단하게 사용할 수 있도록 하며 crontab을 자동으로 업데이트합니다. Sidekiq-Cron은 Sidekiq에서 작업을 예약하는 데 유용한 젬입니다. 두 젬은 크론 작업을 관리하고 실행하는 과정을 간소화하여 애플리케이션의 자동화와 효율성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞으로의 기사에서는 Rails가 어떻게 작동하는지에 대해 더 알아볼 것입니다. 그러니 계속해서 주의 깊게 지켜보고 배우세요!

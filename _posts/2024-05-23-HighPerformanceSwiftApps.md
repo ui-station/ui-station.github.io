@@ -18,7 +18,18 @@ Reddit의 착한 사용자들은 저의 아이디어, 증명 개념, 출시까�
 
 ![image](/assets/img/2024-05-23-HighPerformanceSwiftApps_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Check ‘em은 수백만 개의 2FA 코드를 미래로 계산하고 각 숫자를 처리하여 흥미로운 코드인지 확인하고 푸시 알림(GETs)으로 흥미로운 코드를 예약합니다.
 
@@ -30,7 +41,18 @@ v1.0은 꽤 잘 작동하지만, 오늘은 성능에 집중할 거에요.
 - 병목 현상을 식별하기 위해 Instruments를 사용하여 앱을 프로필링합니다.
 - 이를 가이드로 사용하여 코드 개선을 구현합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문제 우선 접근 방식을 통해, 자전거 에관한 논의를 피하고 실제 병목 현상에 집중할 수 있어요.
 
@@ -40,7 +62,18 @@ v1.0은 꽤 잘 작동하지만, 오늘은 성능에 집중할 거에요.
 
 ## 처리 속도
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 큰 성능 문제는 바로 여기에 있어요: 2단계 인증 코드를 계산하는 동안 숫자를 처리할 때 발생합니다. 이 처리는 앱에 로그인할 때, 2단계 인증 계정을 변경하거나 GETs 선택 사항을 업데이트할 때마다 실행됩니다.
 
@@ -50,8 +83,18 @@ TOTP 계산 자체는 간단하지 않은 기능으로, 바이트 조작, 문자
 
 사용자가 희귀한 GETs(예: 055555 또는 012340와 같은 근처 계수 순서)를 보고 싶어하는 경우, 총 처리 시간이 10초를 초과할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*e66r8CS6JsTQmQzq_wIytA.gif)
 
@@ -61,8 +104,18 @@ As expected, this is by far the biggest performance bottleneck.
 
 ## Time-to-first code
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱이 상당히 간단해서 Swift로 1500줄 정도밖에 안 되기 때문에 잠재적 성능 문제의 표면적인 영역은 꽤 제한적입니다.
 
@@ -72,7 +125,18 @@ As expected, this is by far the biggest performance bottleneck.
 
 ![GIF](https://miro.medium.com/v2/resize:fit:1400/1*D1B8yFO7YH8fN6FHT0_NQA.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Instruments를 이용한 프로파일링
 
@@ -82,7 +146,18 @@ As expected, this is by far the biggest performance bottleneck.
 
 성능 프로파일링에 새로 오신 분들을 위해 Instruments는 별도의 앱으로, Xcode 개발자 도구 메뉴에서 열 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-HighPerformanceSwiftApps_1.png" />
 
@@ -92,7 +167,18 @@ As expected, this is by far the biggest performance bottleneck.
 
 이제 모든 설정이 완료되었으니 조사를 시작할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 처리 속도
 
@@ -104,7 +190,18 @@ As expected, this is by far the biggest performance bottleneck.
 - 'Call Tree 반전'은 측정된 되추적(traceback)을 반전시킵니다. 즉, CPU에서 실행되는 저수준 iOS 시스템 호출이 아닌 우리 자신의 기능을 호출 스택 상단에 표시할 수 있습니다.
 - '시스템 라이브러리 숨기기'는 시스템 라이브러리 프로세스를 제거하여 보고서를 정리하고 자신의 코드를 쉽게 찾을 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리는 예상대로 백그라운드 스레드에서 발생하는 모든 처리 작업을 쉽게 볼 수 있습니다.
 
@@ -114,7 +211,18 @@ As expected, this is by far the biggest performance bottleneck.
 
 우리는 증거를 찾았습니다. 지금까지 가장 느린 계산은 checkThoseSexts() 메서드인데, 이 메서드는 엄청난 계산 비용이 드는 것으로 보이는 정규식을 감싸고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 extension String {
@@ -128,7 +236,18 @@ extension String {
 
 이 분석을 통해 더 깨달은 것이 있습니다: 이러한 과중 처리는 단일 백그라운드 스레드에서 직렬로 실행되며, 모든 중요한 작업이 고우선순위 인배체 Task로부터 생성된 \_dispatch_workloop_worker_thread에 전적으로 할당됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단일 CPU 코어가 TOTP를 생성하고 그들의 흥미로움을 확인하는 역할만 한다는 뜻입니다. 만일 똑똑하게 처리한다면, 이 프로세스는 병렬화될 수 있을 것입니다.
 
@@ -138,7 +257,18 @@ extension String {
 
 코드에서 찾아야 하는 정확한 시작점과 끝점을 알고 있다면 — 앱을 실행하여 처음 나타나는 코드까지 — print() 문과 타임스탬프를 사용하여 이 문제를 프로파일링할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 07:35:54.2640 - 앱 초기화
@@ -158,7 +288,18 @@ extension String {
 
 여기에는 두 번의 비교적 긴 대기 시간이 표시됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 메인 뷰에서 앱 초기화와 onAppear 작동 사이의 시간
 - 뷰 모델에서 계정 설정 및 TOTP 코드를 얻기 위해 이를 새로 고칠 때의 시간
@@ -169,7 +310,18 @@ extension String {
 
 # 코드 개선
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Check ‘em의 기본 실행에서 두 가지 성능 문제가 발견되었습니다:
 
@@ -182,7 +334,18 @@ Check ‘em의 기본 실행에서 두 가지 성능 문제가 발견되었습�
 - TOTP와 흥미를 계산하는 병렬성을 도입합니다.
 - 초기 코드 생성을 런칭 후 빨리 실행하도록 변경합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 앱에서 얼마나 많은 속도를 뽑아낼 수 있는지 확인해봅시다!
 
@@ -192,7 +355,18 @@ Instruments를 사용하여 첫 번째 큰 병목 현상은 느린 정규식으�
 
 계산에서는 극히 드물게 발생하는 GET만 사용하여 우리의 결과를 벤치마킹해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 흔하지 않으니까 이 CPU는 이 흥미로운 GET을 찾기 위해 TOTP를 100배 더 많이 연산해야 해요. 그래서 64개의 흥미로운 GET을 찾는 데는 훨씬 더 오래 걸려요.
 
@@ -213,7 +387,18 @@ private func checkRepeatedDigits(count: Int) -> Bool {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번의 단일 기능 변경으로 섹츄플 확인 작업 자체가 10배 이상 빠르게 동작하여 총 연산 시간이 21초로 줄었습니다. 그래 동작이 두 배 가까이 빨라졌어요!
 
@@ -223,7 +408,18 @@ private func checkRepeatedDigits(count: Int) -> Bool {
 
 더 간편한 방법이 있습니다. 수 많은 숫자 목록을 하드코딩하는 방식이죠. 이를 통해 비용이 많이 드는 문자열 할당을 반복하는 일을 피할 수 있어요. 우리는 퀘트, 퀸트, 그리고 카운팅을 찾는 무거운 작업에도 동일한 방법을 적용할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // Interestingness.swift
@@ -263,10 +459,20 @@ We’ve handily eliminated the biggest bottleneck: The checkThoseSexts method ha
 
 Now, this gives me a bright idea.
 
-There are only 1 million possible 6-digit TOTPs. Perhaps, as an upper bound, 1 in 100 are interesting*.
+There are only 1 million possible 6-digit TOTPs. Perhaps, as an upper bound, 1 in 100 are interesting\*.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만 가지 숫자는 그리 크지 않아요. 이들을 사전(dictionary)과 같은 효율적 데이터 구조에 저장하고, 메모리에 보관하여 어렵지 않게 처리할 수 있습니다. 이렇게 하면 메모리에서 관심 있는 정보를 O(1) 연산으로 조회할 수 있어요.
 
@@ -276,7 +482,18 @@ There are only 1 million possible 6-digit TOTPs. Perhaps, as an upper bound, 1 i
 
 이것은 CPU 코어를 활용하는 적절한 시기입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 병렬 처리
 
@@ -286,7 +503,18 @@ There are only 1 million possible 6-digit TOTPs. Perhaps, as an upper bound, 1 i
 
 일별, 주별 또는 월별로 그렇게 할 수는 없어요. 왜냐하면 우리가 사용하지 못할 정도로 많은 계산을 실행할 수도 있습니다 — iOS에서는 한 번에 최대 64개의 알림을 예약할 수밖에 없거든요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 복잡성을 최소화하는 방법을 찾아봅시다.
 
@@ -311,7 +539,18 @@ otpComputationTask = Task.detached(priority: .high) {
 
 이후, 이 6개의 병렬 프로세스를 실행하여 미래로부터 매 6번째 TOTP 코드를 계산할 수 있습니다. 각 프로세스는 총 흥미로운 숫자 중 1/6을 찾으면 종료됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 // CodeGenerator.swift
@@ -334,10 +573,21 @@ func generateCodes(accounts: [Account], startingIncrement: Int) {
 
 `
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-ProcessInfo.processInfo.processorCount - 1
+ProcessInfo.processInfo.processorCount - 1;
 ```
 
 이야~ 이제 꼭 좋아졌네요! 이렇게 하면 5개의 무거운 작업 쓰레드와 한 개의 아주 차분한 UI 쓰레드가 나올 거예요. 홈으로 돌아가서 손 편지를 쓸 만큼의 지루한 시간은 전혀 없어요.
@@ -346,7 +596,18 @@ ProcessInfo.processInfo.processorCount - 1
 
 우리는 5개의 코어를 사용하고 있어요. 왜 이건 깔끔하게 5배 더 빨라지지 않는 걸까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 수학과 배우들
 
@@ -356,7 +617,18 @@ ProcessInfo.processInfo.processorCount - 1
 
 이 문제는 두 가지 측면으로 나뉩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 먼저, 일부 스레드에서 숫자를 너무 많이 세고, 다른 스레드에서는 너무 적게 세어 잠재적인 숫자들을 놓치고 있습니다.
 - 둘째, 스레드가 처리하는 시간이 매우 다르기 때문에 각 스레드가 정확히 동일한 시간을 소요하는 것에 비해 CPU를 효율적으로 활용하지 못하고 있습니다.
@@ -379,7 +651,18 @@ actor CodeIncrementor {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 병렬화 시도와 비교했을 때, 각 스레드가 독립적으로 모든 5번째 TOTP를 계산하는 것을 허용했던 방법과 달리, 이 접근 방식은 프로세스 간의 조정이 필요합니다.
 
@@ -399,7 +682,18 @@ func generateCodes(accounts: [Account], incrementor: CodeIncrementor) async {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것이 얼마나 성능을 발휘하는지 측정해 봅시다!
 
@@ -409,23 +703,41 @@ func generateCodes(accounts: [Account], incrementor: CodeIncrementor) async {
 
 ## 병렬성이 없는 원래 스피드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 23:10:55.2940 Computation 시작
 23:11:09.9220 Computation 완료
-
 
 총 14.628초 소요됐습니다.
 
 ## 청킹과 (n-1) 쓰레드를 사용한 속도
 
-
 23:07:00.4700 Computation 시작
 23:07:09.5980 Computation 완료
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 9.128 seconds in total.
 
@@ -438,7 +750,18 @@ func generateCodes(accounts: [Account], incrementor: CodeIncrementor) async {
 
 7.822 seconds in total.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 액터를 사용하여 추가 쓰레드 조절 오버헤드를 감당할 가치가 있다는 것을 보여줍니다. 이 프로세스는 더 정확하고 CPU 코어를 더 효율적으로 활용하며, 전체적으로 이 계산 단계를 47% 빠르게 만듭니다!
 
@@ -463,7 +786,18 @@ var body: some View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 onAppear가 나타나도록 기다렸다가 뷰 모델에서 계정을 설정하고, 1초 타이머가 작동할 때 다시 기다립니다.
 
@@ -485,7 +819,18 @@ final class CodeViewModel {
 
 앱 로드와 코드 생성 간의 시간이 1.764초에서 0.400초로 대폭 줄어듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 20:41:35.6890 앱 초기화
@@ -499,9 +844,18 @@ final class CodeViewModel {
 
 # 결론
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Check ‘em — The Based 2FA App은 제가 사이드 프로젝트로 만들었던 열정적인 아이디어였는데, 정말 즐거운 시간을 보냈어요.
 
@@ -512,4 +866,3 @@ Check ‘em — The Based 2FA App은 제가 사이드 프로젝트로 만들었�
 - 2FA 코드가 시작하자마자 나타나요.
 - 흥미로운 코드를 찾는 알고리즘이 훨씬 빠릅니다.
 - 강력한 멀티 코어 CPU가 병렬 계산으로 완전히 활용되고 있어요.
-

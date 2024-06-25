@@ -3,13 +3,12 @@ title: "부담갖지 마세요 여러분의 부활절 브런치나 뷔페를 한
 description: ""
 coverImage: "/assets/img/2024-05-18-ElevateYourEasterBrunchorBuffet_0.png"
 date: 2024-05-18 19:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-ElevateYourEasterBrunchorBuffet_0.png
 tag: Tech
 originalTitle: "Elevate Your Easter Brunch or Buffet"
 link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3be9bb22f07b"
 ---
-
 
 ## DIY/EASTER/FOOD
 
@@ -19,7 +18,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 이걸 단계별로 보여드릴 테니 걱정 마세요. 빠르고 쉽고 비용 효율적인 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 옛날 존슨 앤 웨일스 조리예술 학교에 다녀갔을 때 졸업식마다 그랜드 뷔페가 열렸어요. 주방 브리게이드 모두가 참여했던 행사였죠.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 ![](/assets/img/2024-05-18-ElevateYourEasterBrunchorBuffet_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 셰프가 나에게 장식된 프레처 포, 프랑스 마카롱, 그리고 올 두브르 사이즈 크림 퍼프를 만들어 보라고 시키셨어요.
 
@@ -39,15 +60,37 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 저렇게 강사님을 감명 시킬 수 있는 방법이 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이때쯤, 나는 취미로 스테인드 글라스도 만들고 있었어. 내 디저트를 높이는 아이디어는 결혼식 케이크에 사용되는 윌튼 케이크 분리기와 기둥에서 왔어. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-나는 손가락 디저트를 유리 탑 위에 배열하고 신선한 꽃과 함께 유리 탑 위에 서고 싶다고 생각했어. 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이때쯤, 나는 취미로 스테인드 글라스도 만들고 있었어. 내 디저트를 높이는 아이디어는 결혼식 케이크에 사용되는 윌튼 케이크 분리기와 기둥에서 왔어.
+
+나는 손가락 디저트를 유리 탑 위에 배열하고 신선한 꽃과 함께 유리 탑 위에 서고 싶다고 생각했어.
 
 내가 할당된 자리에 내 탑을 만들고 나니, 강사가 다가와 나를 보며 미소를 지었어; 그는 절대 웃지 않았었어. 그는 내가 만든 것에 감명을 받아 전체 그랜드 뷔페의 주요 초점으로 방 중앙에 재조합해달라고 했어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그는 후에 그 아이디어를 베끼고 Chamberlin의 일요일 브런치에서 사용했어요.
 
@@ -57,7 +100,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 나는 반사 품질이 마음에 들어 유리에서 거울로 바꿨어요. 사실, 거울은 음식 대회에서 자주 사용돼요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 약속한 대로 여기에 당신만의 뷔페 센터피스를 만드는 단계별 가이드가 있어요.
 
@@ -67,7 +121,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 바닥 레벨로 20인치 x 24인치의 경사면이 있는 유리 거울을 사용했어요. 지역 홈센터에서 $19.95에 구입했어요. 상단 두 레벨에는 12인치 정사각형 거울을 사용했어요. 한 상자에 여섯 개가 들어있어서 $12뿐이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컵보드에서 네 개의 캔을 꺼내 첫 번째 레벨을 만들어 보세요. 거울의 뒷면에 부드러운 코팅이 스크래치되는 것을 막기 위해 나프킨이나 덕트 테이프를 사용해봐요.
 
@@ -77,7 +142,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 이제 수프캔을 숨겨야 해요. 이를 위한 방법은 정말 다양해요. 저는 패스텔 테이블보로 바닥 주변에 펴고 1.99달러짜리 국산에서 사온 데이지꽃을 사용했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 베이스는 단지 당신의 상상력에 의해서만 제한됩니다.
 
@@ -87,7 +163,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 첫 번째 레벨에 네 개의 기둥으로 tall Weck jars를 사용했습니다. 이들을 적합한 장식물로 채울 수 있습니다. 부활절 달걀, 솔방울과 가을 잎, 꽃, 크리스마스 호랑가시, 선택할 수 있는 것은 끝이 없고 재미있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현지 달러 상점에는 유리 기둥 및 내부에 넣을 수 있는 다양한 물건들이 많습니다. 와인 잔이 잘 작동합니다.
 
@@ -97,7 +184,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 ## 단계 네
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-ElevateYourEasterBrunchorBuffet_5.png" />
 
@@ -107,7 +205,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 어떤 아기 샤워 행사에서는 유아용 나무 블록을 필라로 붙여서 한쪽에는 "baby", 다른 한쪽에는 "girl"이라고 썼어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이스터를 위해 나는 맨 위에 튤립 꽃병을 추가했어요. 그러나 최종 상단 장식에 매우 창의적일 수 있어요.
 
@@ -117,7 +226,18 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 첫 번째 층에는 여러 번 Wilton 웨딩 케이크 분수기를 사용했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 타워가 완성되었으며, 음식만 추가하면 됩니다.
 
@@ -127,9 +247,20 @@ link: "https://medium.com/the-diy-diaries/elevate-your-easter-brunch-or-buffet-3
 
 ![이미지2](/assets/img/2024-05-18-ElevateYourEasterBrunchorBuffet_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-저는 대사관, 상원의원, 그리고 해군 중장들을 위해 이렇게 만들었습니다. 하지만 이것들은 생일 파티, 교회 모임, 소규모 자선 행사, 그리고 집에서의 휴일 행사에서도 즐깁니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+저는 대사관, 상원의원, 그리고 해군 중장들을 위해 이렇게 만들었습니다. 하지만 이것들은 생일 파티, 교회 모임, 소규모 자선 행사, 그리고 집에서의 휴일 행사에서도 즐깁니다.
 
 읽어 주셔서 감사합니다. 여러분에게 조금이나마 아이디어와 영감을 주어 자신만의 타워와 뷔페 센터피스를 만드는 데 도움이 되었으면 좋겠어요.
 

@@ -16,7 +16,18 @@ link: "https://medium.com/@mhmtkrnlk/how-to-validate-textfields-in-swiftui-like-
 
 먼저, 예제를 아주 간단하게 유지할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세 개의 텍스트 필드와 사용자 입력을 저장하는 비밀번호를 위한 한 개의 보안 필드가 있는 화면이 있다고 가정해봅시다. 이 숫자는 간단히 유지하기 위한 것이며, 실제 상황에서는 10개가 될 수도 있습니다.
 
@@ -52,7 +63,18 @@ struct ContentView: View {
 
 #나쁜 방식
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 Button {
@@ -78,8 +100,18 @@ Button {
 
 이제 진짜 작업이 시작되었지만, 먼저 이 솔루션을 사용하기 위해 SwiftUI의 일부 주요 기능을 알아야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **PreferenceKey**
 
@@ -89,7 +121,18 @@ PreferenceKey는 이미 NavigationView의 타이틀이나 TabViews 선택 및 �
 
 우리가 어떻게 사용자 정의 preference key를 정의할 수 있는지 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 구조체 ValidationPreferenceKey : PreferenceKey {
@@ -109,7 +152,18 @@ static var defaultValue: [Bool] = []
 
 이 기본 값은 Equatable을 준수하는 한 어떤 것이든 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 static func reduce(value: inout [Bool], nextValue: () -> [Bool]) {
@@ -123,8 +177,18 @@ static func reduce(value: inout [Bool], nextValue: () -> [Bool]) {
 
 TextField에서 이를 사용하려면 두 단계가 필요합니다
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1- 뷰 수정자
 
@@ -145,7 +209,18 @@ struct ValidationModifier : ViewModifier  {
    }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 수정자는 그 특정 뷰에 해당하는 키를 등록합니다.
 
@@ -157,7 +232,18 @@ let validation: () -> Bool
 
 그리고 이 확장은 이를 일부 특정 유형의 뷰에 대해서만 적용합니다. TextFields 및 SecureFields와 같은 뷰입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 extension TextField {
@@ -181,8 +267,18 @@ extension SecureField {
 
 이 modifier를 다른 뷰에서 사용할 수 없도록 유지하려면 동일한 파일에서 modifier와 확장을 정의하고 modifier를 private으로 만들 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막 부분 빼고는 설정이 완료되었어요.
 
@@ -210,7 +306,18 @@ struct TextFormView<Content : View> : View {
 
 이 컨테이너 뷰는 이 키 타입에서 로직을 실행하고, Vstack 또는 TabView와 같은 뷰를 내부에 가져옵니다. .onPreferenChange 수정자를 본 적 있나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 수정자는 이 키에서 자식 뷰 업데이트를 잡습니다.
 
@@ -225,7 +332,18 @@ struct TextFormView<Content : View> : View {
 
 이렇게 업데이트됩니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 .onPreferenceChange(ValidationPreferenceKey.self) { value in
@@ -246,7 +364,18 @@ private func validate() -> Bool {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 함수는 그냥 제가 생각해 낸 것일 뿐이에요. 필수적이지는 않지만 저는 좋아해요.
 
@@ -259,7 +388,18 @@ private func validate() -> Bool {
 
 이제 이것을 우리 뷰에서 사용할 수 있고, 다음과 같이 될 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 유효성 검사를 만들었지만, 실제 상황에서는 정규식과 다른 로직을 사용하여 유효성을 검사해야 합니다. 어쩌다 그렇게 했어요.
 
@@ -311,7 +451,18 @@ struct ContentView: View {
 
 미리 말씀드린 대로 이미지 삽입과 함께, 어떻게 동작하는지 보여주기 위해 validate()을 출력했어요. 모든 필드가 함께 유효성을 검사하는 모습이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기까지 읽어 주셔서 감사합니다.
 

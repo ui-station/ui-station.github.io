@@ -3,13 +3,12 @@ title: "기술된 규칙을 기반으로 한글 제목을 다음과 같이 바�
 description: ""
 coverImage: "/assets/img/2024-06-23-AdvancedAWSLambdaAnObscureFeatureYouMustAbsolutelyUse_0.png"
 date: 2024-06-23 00:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AdvancedAWSLambdaAnObscureFeatureYouMustAbsolutelyUse_0.png
 tag: Tech
 originalTitle: "Advanced AWS Lambda — An Obscure Feature You Must Absolutely Use"
 link: "https://medium.com/aws-tip/advanced-aws-lambda-an-obscure-feature-you-must-absolutely-use-2d03110d563f"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/aws-tip/advanced-aws-lambda-an-obscure-feature-you-mus
 
 ![이미지](https://miro.medium.com/v2/resize:fit:480/1*HLkvF3q4nyCWnwjiUiH5qA.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물에서는 Docker 및 AWS Lambda 개념에 대한 기본적인 이해만 있으면 함수 실행에 필요한 사용자 정의 런타임을 제공하는 Docker 이미지를 쉽고 간단히 만드는 방법을 설명하겠습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/aws-tip/advanced-aws-lambda-an-obscure-feature-you-mus
 
 ![AWS Lambda 내부 구조](/assets/img/2024-06-23-AdvancedAWSLambdaAnObscureFeatureYouMustAbsolutelyUse_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS Lambda 서버리스 실행은 세 가지 구성 요소 덕분에 가능해집니다:
 
@@ -41,7 +62,18 @@ AWS Lambda 서버리스 실행은 세 가지 구성 요소 덕분에 가능해�
 
 주로 런타임과 함수 코드로 구성된 파란색 사각형에 초점을 맞출 것입니다. 우리 Lambda 함수가 작동하도록 수정해야 하는 부분입니다. 일반적으로 지원되는 AWS Lambda 런타임은 런타임 API를 지속적으로 폴링하여 새 이벤트를 수신하고, 함수 핸들러를 로드하고, 이벤트를 수신하면 실행하여 결과를 런타임 API로 다시 보내며, 이를 통해 클라이언트(이 경우 Lambda 서비스)에 결과를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS는 우리에게 OS전용 런타임이라고 불리는 것을 제공합니다. 이는 언어 지원을 제공하며, 실행 스크립트를 실행하는 데 필요한 환경 변수 및 인증서와 같은 추가 설정을 제공하고, Lambda 서비스와 상호 작용하기 위한 모든 필요한 API를 구성합니다 [1]. 모든 것을 할 일은 작은 스크립트를 추가하고, 코드와 번들로 만든 후, AWS OS 전용 런타임을 기반으로 새로운 도커 이미지를 빌드하고, 이 이미지를 ECR에 업로드한 후, 마지막으로 AWS Lambda의 이미지로 사용하는 것뿐입니다. 쉽고 간단해요!
 
@@ -51,8 +83,18 @@ AWS는 우리에게 OS전용 런타임이라고 불리는 것을 제공합니다
 
 이 섹션에서는 AWS Lambda 사용자 정의 런타임을 위한 도커 이미지를 빌드하는 데 필요한 스크립트와 코드를 제공하겠습니다. 준비가 되셨나요? 코드 정글로의 여행에 깊이 파고 들어가기 전에 커피를 가져오세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:600/1*-AMtT2H3qw0N26uRiqTVwQ.gif)
 
@@ -87,8 +129,18 @@ The first line "set -euo pipefail" is to configure the shell to handle errors ro
 
 This script starts by loading the function handler through the source command.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 다음, invocation/next API를 호출하여 Runtime API에서 새 이벤트를 조사하기 위한 루프가 시작됩니다.
 
@@ -98,7 +150,18 @@ This script starts by loading the function handler through the source command.
 
 마지막으로, invocation/$Request_ID/response를 호출하여 Runtime API로 응답을 보냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 FROM public.ecr.aws/lambda/provided:al2023
@@ -120,8 +183,18 @@ ENTRYPOINT ["/var/task/bootstrap"]
 
 이후 이전 부트스트랩 스크립트와 우리의 셸 스크립트를 $LAMBDA_TASK_ROOT로 복사합니다 (Lambda 런타임 환경 변수로 정의된, 함수 코드 디렉토리 `/var/task`를 참조하는 Lambda 환경 변수) [4]
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 스크립트를 실행할 수 있도록 만들고, 마지막으로 실행 시점을 기다리는 새 이벤트를 기다리는 부트스트랩 스크립트로 설정합니다.
 
@@ -144,7 +217,18 @@ runtime-tutorial
 └ function.sh
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 직접 테스트해보세요
 
@@ -154,7 +238,18 @@ runtime-tutorial
 
 그래서 저는 이전 스크립트를 포함하고 사용자 정의 런타임 람다를 생성하고 자체적으로 그 인보케이션을 테스트할 필요한 AWS 리소스를 생성하는 Terraform 모듈을 만들었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Lambda 함수와 해당 사용자 지정 런타임을 배포하고 탐색하려면 작성하고 실행해야 하는 Terraform 스크립트입니다:
 
@@ -187,7 +282,18 @@ module "custom-lambda" {
 
 제 블로그 시리즈 '고급 AWS Lambda'의 첫 번째 글에서는 Lambda 런타임을 사용자 지정하여 작성한 스크립트에 사용한 어떤 프로그래밍 언어든 지원할 수 있는 방법을 살펴보았습니다. 이것은 Go나 Rust와 같은 AOT 컴파일된 언어로 작업할 때 스크립트의 실행 성능이 중요할 때 매우 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그가 유용했기를 바라요. 피드백이나 이 블로그 주제에 대한 질문 또는 앞으로 논의하고 싶은 다른 기술 주제에 대해 궁금한 점이 있으면 제 LinkedIn(https://www.linkedin.com/in/ifezouaniilyass/)에서 연락해 주세요.
 
@@ -197,7 +303,18 @@ module "custom-lambda" {
 
 ## 노트:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AWS는 Docker 이미지 대신 직접 zip을 가져올 수 있는 OS-only provided.al2023 런타임을 지원합니다. 이 문서에서는 코드에 다른 종속성을 포함해야 하는 경우를 다루기 위해 Docker 이미지를 사용하기로 선택했습니다. Docker 이미지 내에서 패키지/모듈을 직접 더 쉽게 설치하고 패키징할 수 있습니다.
 - Go 또는 Rust와 같이 AOT 컴파일된 언어의 경우, AWS는 런타임을 구현하는 라이브러리를 제공하며 해당 기능을 사용하여 메인 프로세스를 랩핑할 수 있습니다. 이 문서에서는 셸 스크립트를 배포하려고 한다고 가정할 때, 런타임 API 호출과 프로세스 실행을 수행하는 스크립트를 작성해야 합니다.
@@ -208,7 +325,18 @@ module "custom-lambda" {
 
 [2] https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [3] [Amazon Linux 2023 Runtime for AWS Lambda 소개](https://aws.amazon.com/fr/blogs/compute/introducing-the-amazon-linux-2023-runtime-for-aws-lambda/)
 

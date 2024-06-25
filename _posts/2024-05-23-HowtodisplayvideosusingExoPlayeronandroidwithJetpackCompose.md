@@ -3,13 +3,12 @@ title: "안녕하세요 오늘은 안드로이드에서 ExoPlayer를 사용하�
 description: ""
 coverImage: "/assets/img/2024-05-23-HowtodisplayvideosusingExoPlayeronandroidwithJetpackCompose_0.png"
 date: 2024-05-23 12:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowtodisplayvideosusingExoPlayeronandroidwithJetpackCompose_0.png
 tag: Tech
 originalTitle: "How to display videos using ExoPlayer on android with Jetpack Compose"
 link: "https://medium.com/@munbonecci/how-to-display-videos-using-exoplayer-on-android-with-jetpack-compose-1fb4d57778f4"
 ---
-
 
 이 튜토리얼에서는 Jetpack Compose와 함께 ExoPlayer를 사용하는 간단한 방법을 보여드리기로 했어요.
 
@@ -17,13 +16,24 @@ link: "https://medium.com/@munbonecci/how-to-display-videos-using-exoplayer-on-a
 
 ```js
 // in .kts
-implementation("androidx.media3:media3-exoplayer:1.2.0")
-implementation("androidx.media3:media3-ui:1.2.0")
+implementation("androidx.media3:media3-exoplayer:1.2.0");
+implementation("androidx.media3:media3-ui:1.2.0");
 ```
 
 현재 컨텍스트를 LocalContext.current로 가져오세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
     // 현재 컨텍스트 가져오기
@@ -38,8 +48,18 @@ val exoPlayer = ExoPLayer.Builder(context).build()
 
 ExoPlayer의 라이프사이클을 관리하여 필요하지 않을 때 리소스를 해제해야 합니다. DisposableEffect와 LaunchedEffect를 사용하여 라이프사이클 이벤트를 처리할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // MediaSource를 ExoPlayer에 설정합니다.
@@ -73,7 +93,18 @@ AndroidView(
 
 상수 EXAMPLE_VIDEO_URI를 만들어 샘플 비디오의 URL을 정의합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 const val EXAMPLE_VIDEO_URI = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
@@ -87,8 +118,18 @@ manifest.file에 인터넷 권한을 추가해주세요.
 
 이전에 만든 완성된 코드입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 /**
@@ -147,7 +188,18 @@ fun ExoPlayerView() {
 ExoPlayerView()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드를 실행하고 결과를 확인해보세요.
 
@@ -157,7 +209,18 @@ ExoPlayerView()
 
 ## 그러나, 더 복잡한 설정과 동영상 컨트롤을 숨기는 기능이 포함된 다음 두 가지 화면으로 구성된 샘플 프로젝트가 있습니다. 첫 번째는 동영상 목록이고 두 번째는 선택된 동영상의 상세 정보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 /**
@@ -170,9 +233,9 @@ ExoPlayerView()
  * @param modifier 스타일링 및 위치 지정을 위한 Modifier입니다.
  *
  * UnstableApi에 대한 OptIn 주석은 API가 여전히 실험적이며 미래에 변경될 수 있음을 나타냅니다.
- * 
+ *
  * OpaqueUnitKey 사용에 대한 경고를 억제하기 위해 이용되는 SuppressLint 주석입니다.
- * 
+ *
  * 실험적인 Animation API 사용을 위해 ExperimentalAnimationApi 주석이 적용되었습니다.
  */
 @OptIn(UnstableApi::class)
@@ -305,7 +368,18 @@ MediaItems 및 ExoPlayer 설정:
 - 비디오 정보를 담을 MediaItems 목록 생성.
 - ExoPlayer를 해당 MediaItems로 구성하고 준비하며, 비디오 변경 및 재생 상태 변경과 같은 이벤트를 처리할 수 있도록 리스너가 추가됨.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 라이프사이클 관리:
 
@@ -316,7 +390,18 @@ AndroidView 및 PlayerView 통합:
 - AndroidView Composable은 안드로이드 PlayerView를 Jetpack Compose에 삽입하는 데 사용됩니다.
 - PlayerView는 ExoPlayer 인스턴스, 레이아웃 매개변수 및 리사이즈 모드와 플레이어 컨트롤의 가시성과 같은 속성과 함께 구성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 휴지통 효과를 위한 정리:
 

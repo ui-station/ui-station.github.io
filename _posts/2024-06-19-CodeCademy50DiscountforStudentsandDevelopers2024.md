@@ -3,13 +3,12 @@ title: "CodeCademy 2024 학생 및 개발자를 위한 50 할인"
 description: ""
 coverImage: "/assets/img/2024-06-19-CodeCademy50DiscountforStudentsandDevelopers2024_0.png"
 date: 2024-06-19 10:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-CodeCademy50DiscountforStudentsandDevelopers2024_0.png
 tag: Tech
 originalTitle: "CodeCademy 50% Discount for Students and Developers 2024"
 link: "https://medium.com/javarevisited/codecademy-50-discount-for-students-and-developers-2024-49b2816e26ca"
 ---
-
 
 ## CodeCademy은 오늘 유료 요금제에 50% 할인을 제공합니다. 할인을 받으려면 코드 AISUMMER를 사용하십시오
 
@@ -19,7 +18,18 @@ link: "https://medium.com/javarevisited/codecademy-50-discount-for-students-and-
 
 이제 프로 또는 프로 학생 요금제 1년 구독을 50% 할인된 가격에 잠그는 데 프로모션 코드 AISUMMER을 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CodeCademy가 무엇인지 모르신다면 제 이야기를 들어보세요. 어떻게 CodeCademy를 만나고 나서 개발자들을 위한 많은 핵심 기술을 배우는 데 사용했는지 알려드릴게요.
 
@@ -29,7 +39,18 @@ CodeCademy가 무엇인지 모르신다면 제 이야기를 들어보세요. 어
 
 수업은 작고 매우 매력적이었어요. 이는 코드에서 80% 사용되는 20%의 개념을 빠르게 배울 수 있도록 도와주었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 이후로 CodeCademy Pro Plan을 사용하고 있어요. 뭘 배우든지, 되새기든지 지루할 때는 항상 CodeCademy로 갑니다. 이제 동일한 요금제를 50% 할인된 가격에 구매할 수 있어요. 할인 코드는 AISUMMER를 사용하세요.
 
@@ -39,7 +60,18 @@ CodeCademy가 무엇인지 모르신다면 제 이야기를 들어보세요. 어
 
 유료 요금제를 구입하면, 수요가 높은 기술을 배울 수 있는 최고의 CodeCademy 강좌를 확인할 수 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 파이썬 3 배우기
 - 자바 배우기

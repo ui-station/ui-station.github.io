@@ -3,13 +3,12 @@ title: "반복 신경망 시퀀스 모델링 소개"
 description: ""
 coverImage: "/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_0.png"
 date: 2024-05-17 19:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_0.png
 tag: Tech
 originalTitle: "Recurrent Neural Networks: An Introduction to Sequence Modelling"
 link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-introduction-to-sequence-modelling-478e0e07c4ec"
 ---
-
 
 ![img](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 그렇다면, 이러한 유형의 데이터를 어떻게 예측할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "우리는 순환 신경망이라고 불리는 것으로 넘어갑니다!
 
@@ -29,8 +39,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 다음은 순환 신경망(RNNs)을 설명하는 다이어그램입니다:"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![RecurrentNeuralNetworksAnIntroductiontoSequenceModelling](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_1.png)
 
@@ -40,8 +60,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 예를 들어, Y_1을 예측할 때, X_1의 입력 및 이전 시간 단계 Y_0에서의 출력을 사용할 것입니다. Y_0가 Y_1에 영향을 미치기 때문에 Y_0가 Y_2에도간접적으로 영향을 줄 수 있다는 것을 알 수 있습니다. 이 알고리즘의 순환성을 명확하게 보여주는 사례입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 숨겨진 상태
 
@@ -51,7 +81,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 간단한 경우에는 숨겨진 상태가 셀의 출력인 경우도 있습니다. 즉, h=Y입니다. 그러나 우리가 나중에 살펴볼 것처럼, 장기 단기 메모리(LSTM) 및 게이트 순환 유닛(GRU)과 같은 보다 복잡한 셀의 경우에는 이것이 항상 참일 수 있는 것은 아닙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서 각 뉴런으로 전달하는 것과 각 뉴런으로부터의 전달을 명시적으로 하는 것이 가장 좋습니다. 이것이 대부분의 문헌에서 위와 같이 표시되는 이유입니다.
 
@@ -61,12 +102,23 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 ![Recurrent Neural Networks](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서:
 
 - h_t는 시간 t에서의 은닉 상태입니다.
-- h_'t−1'는 이전 시간 단계의 은닉 상태입니다.
+- h\_'t−1'는 이전 시간 단계의 은닉 상태입니다.
 - x_t는 시간 t에서의 입력 데이터입니다.
 - W_h는 은닉 상태에 대한 가중치 행렬입니다.
 - W_x는 입력 데이터에 대한 가중치 행렬입니다.
@@ -77,7 +129,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 ![Recurrent Neurons](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위와 같이:
 
@@ -89,7 +152,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 각 숨겨진 층은 여러 반복 뉴런을 포함할 수 있으므로 각 후속 입력 뉴런에 숨겨진 상태의 벡터를 전달하게 됩니다. 이를 통해 네트워크는 데이터에서 더 복잡한 패턴을 포착하고 표현할 수 있습니다. 각 시간 단계에서 미니 신경망으로 생각할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 작업 예시
 
@@ -99,7 +173,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 1, 2, 3의 숫자 시퀀스가 있다고 가정해 보겠습니다. 이 시퀀스에서 다음 숫자인 4를 예측하기 위해 RNN을 훈련하려고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 RNN은 다음과 같은 구조를 가지고 있을 것입니다:
 
@@ -114,7 +199,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 - b_h (은닉 바이어스): 0
 - 𝑏_𝑦 (출력 바이어스): 0
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 텍스트를 친근한 톤으로 한국어로 번역해 드리겠습니다.
 
@@ -127,7 +223,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 - h_0 = 0
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Time Step 1 (Input: 1)
 
@@ -137,7 +244,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 그리고 출력은 다음과 같이 계산됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Recurrent Neural Networks](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_6.png)
 
@@ -147,10 +265,20 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 이제 최근에 계산된 h_1 값 사용하여 시간 단계 2에서 다음 입력 값을 위한 위 과정을 반복할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 테이블 태그를 바꿔본 것입니다.
-
 
 ![이미지](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_7.png)
 
@@ -160,8 +288,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 ## 시간 단계 3 (입력: 3)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막 입력 값과 세 번째 타임 스텝에서는 다음 이미지가 예측 모델을 보여줍니다:
 
@@ -171,7 +309,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 현재 모델은 다음 숫자를 0.984로 예측하고 있습니다. 실제 값인 4와는 분명히 멀리 떨어져 있습니다. 실제로는 더 많은 훈련 세트를 사용하여 시간을 거슬러 거슬러 역전파를 수행하여 매개 변수를 최적화할 것입니다. 이 내용은 다음 글에서 다룰 예정입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다행히도 이 모든 계산과 최적화는 PyTorch와 TensorFlow와 같은 패키지를 통해 Python에서 수행됩니다. 제가 이 기사에서 이를 하는 방법의 예시를 나중에 보여 드리겠습니다!
 
@@ -181,7 +330,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 그러나 다른 작업을 위한 여러 종류의 RNN이 있으며, 우리는 지금 그것들을 살펴볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 일대일
 
@@ -191,7 +351,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 ## 일대다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하나의 입력이 여러 출력으로 이어집니다. 이미지 캡션을 만들거나 음악을 생성하는 데 사용할 수 있습니다.
 
@@ -201,8 +372,18 @@ link: "https://medium.com/towards-data-science/recurrent-neural-networks-an-intr
 
 여러 입력이 하나의 최종 출력을 생성합니다; 이 아키텍처는 감성 분석에 사용됩니다. 영화 리뷰를 제공하면 영화가 좋은지 나쁜지에 따라 +1 또는 -1을 할당합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Many-To-Many](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_13.png)
 
@@ -210,8 +391,18 @@ This one gets an input at every step and produces an output at each step. This a
 
 ![Many-To-Many](/assets/img/2024-05-17-RecurrentNeuralNetworksAnIntroductiontoSequenceModelling_14.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 인코더-디코더
 
@@ -221,7 +412,18 @@ This one gets an input at every step and produces an output at each step. This a
 
 # PyTorch 예시
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위는 PyTorch에서 간단한 RNN을 구현하는 간단한 예제입니다. 위에서 해결한 문제를 시연합니다. 입력이 1,2,3이고 순서에 따라 다음 숫자를 예측하려고 합니다.
 
@@ -283,9 +485,18 @@ print(f'Input: {test}, Predicted Next Number: {predicted:.2f}')
 
 소스 코드는 저의 GitHub에서 확인하실 수 있습니다: (GitHub URL)
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 장점 대비 단점
 
@@ -297,7 +508,18 @@ print(f'Input: {test}, Predicted Next Number: {predicted:.2f}')
 - 정확한 가중치와 편향이 모든 시간 단계에서 공유되어, 더 적은 매개변수와 더 나은 일반화를 이끌어냅니다.
 - 재귀적 성격으로 인해 RNN은 가변 길이의 순차 데이터를 처리할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단점
 
@@ -308,7 +530,18 @@ print(f'Input: {test}, Predicted Next Number: {predicted:.2f}')
 
 RNN은 시퀀스 모델링에 매우 유용하며, 이전 실행의 정보와 메모리를 유지한 채 다음 예측으로 전파됩니다. 그들의 장점은 임의 길이의 입력을 처리할 수 있으며, 모델 크기가 이 입력 크기로 증가하지 않는다는 것입니다. 그러나 재귀적인 성격을 가지고 있기 때문에 병렬화할 수 없어 계산 효율이 낮으며, 사라지는 그래디언트 문제로 심각하게 고통받을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 또 다른 것!
 
@@ -319,7 +552,18 @@ RNN은 시퀀스 모델링에 매우 유용하며, 이전 실행의 정보와 �
 - LinkedIn, X (트위터), 또는 인스타그램
 - 기술적인 데이터 과학과 머신 러닝 개념을 배울 수 있는 제 유튜브 채널!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료 및 더 읽을거리
 

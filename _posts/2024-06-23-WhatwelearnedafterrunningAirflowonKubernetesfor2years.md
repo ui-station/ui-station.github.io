@@ -3,13 +3,12 @@ title: "Kubernetes에서 2년간 Airflow를 운영하며 배운 교훈들"
 description: ""
 coverImage: "/assets/img/2024-06-23-WhatwelearnedafterrunningAirflowonKubernetesfor2years_0.png"
 date: 2024-06-23 01:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-WhatwelearnedafterrunningAirflowonKubernetesfor2years_0.png
 tag: Tech
 originalTitle: "What we learned after running Airflow on Kubernetes for 2 years"
 link: "https://medium.com/apache-airflow/what-we-learned-after-running-airflow-on-kubernetes-for-2-years-0537b157acfd"
 ---
-
 
 ![이미지](/assets/img/2024-06-23-WhatwelearnedafterrunningAirflowonKubernetesfor2years_0.png)
 
@@ -19,7 +18,18 @@ Apache Airflow은 우리 데이터 플랫폼에서 가장 중요한 구성 요�
 
 본 게시물을 통해, 확장 가능하고 신뢰할 수 있는 환경을 구축하는 데에 도움이 된 저희 배포의 중요한 측면을 공유하고자 합니다. 혹시 지금 Airflow를 프로덕션 환경에서 시작하는 중이거나 다른 아이디어를 평가하고 사용 사례에 적용하고자 하는 경우 도움이 되기를 바라겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 현재 Airflow 구현의 주요 측면에 따라 나눠볼 거예요:
 
@@ -32,7 +42,18 @@ Apache Airflow은 우리 데이터 플랫폼에서 가장 중요한 구성 요�
 
 여기서는 Kubernetes에서 모든 것을 실행합니다. 그래서 Airflow의 경우도 다를 바 없습니다. 처음에는 Executor 선택이 명백해 보였습니다: 쿠버네티스 Executor를 사용합시다! 런타임 격리, 쿠버네티스를 활용하여 원활한 작업 확장성, 그리고 관리해야 할 구성 요소가 적다는 장점들이 모두 아주 좋아 보였죠. 그렇게 우리의 여정을 시작했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 저희 스택에서 중요한 특징 하나가 있습니다: 대부분의 작업은 가벼운 DBT 증분 변환 작업이며, 아주 소수의 작업만 장기 실행되는 모델(+/- 1시간)입니다.
 
@@ -42,7 +63,18 @@ Apache Airflow은 우리 데이터 플랫폼에서 가장 중요한 구성 요�
 
 <img src="/assets/img/2024-06-23-WhatwelearnedafterrunningAirflowonKubernetesfor2years_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제는 Karpenter를 사용하여 k8s 클러스터의 리소스 사용량을 최적화하고 있어서 더욱 악화되었습니다. 따라서 몇 개의 Pods가 완료된 후에 노드의 스케일인이 매우 빠르게 발생했습니다. 이 동작은 해당 노드에 남아 있는 나머지 Pods를 추방하여 다른 노드로 재배포하여 총 노드 수를 줄이고 비용을 절감하는 것입니다.
 
@@ -52,7 +84,18 @@ Apache Airflow은 우리 데이터 플랫폼에서 가장 중요한 구성 요�
 
 Airflow의 공식 최신 helm 차트를 사용함으로써, KEDA 오토스케일러의 도움을 받아 필요에 따라 셀러리 워커의 수를 증가 또는 감소시킬 수 있습니다. 따라서 아이들 상태의 워커에 대해 추가 비용을 지불할 필요가 없게 됩니다. 이는 Airflow의 데이터베이스에서 실행 중이거나 대기 중인 작업의 수를 가져와서 작업자 병행성 구성에 따라 작업자 수를 조정함으로써 작동합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자원을 더 많이 필요로 하는 맞춤형 작업의 경우, KubernetesPodOperator를 사용하여 실행할 수 있는 옵션이 있습니다. 이를 통해 Airflow의 이미지에 설치하지 않고도 특정 종속성에 대한 런타임 분리를 유지하고 각 작업에 개별 자원 요청을 정의할 수 있습니다.
 
@@ -62,7 +105,18 @@ Airflow의 공식 최신 helm 차트를 사용함으로써, KEDA 오토스케일
 
 데이터 엔지니어링 팀뿐만 아니라 각 팀이 자체 DAG를 작성하는 시나리오를 수용하기 위해 DAG에 대한 멀티 레포 접근 방식이 필요했습니다. 그러나 동시에 일관성을 유지하고 지침을 강제할 필요가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## DAGs를 위한 다중 저장소 접근 지원
 
@@ -72,7 +126,18 @@ DAGs는 각각 다른 팀이 소유하는 개별 저장소에서 개발될 수 �
 
 <img src="/assets/img/2024-06-23-WhatwelearnedafterrunningAirflowonKubernetesfor2years_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 DAG는 팀이 소유한 DAG에 대한 경로에 따라 동기화 프로세스에 의해 어딘가의 버킷에 끝나게 됩니다.
 
@@ -82,7 +147,18 @@ DAGs는 각각 다른 팀이 소유하는 개별 저장소에서 개발될 수 �
 
 ## 그런데, Airflow로 DAG를 어떻게 동기화할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Airflow에 DAG가 반영되려면, 스케줄러, 워커 등을 실행하는 Pod의 로컬 파일 시스템과 버킷 내용을 동기화해야 합니다. 이를 위해 우리는 Objinsync를 사용하고 있습니다. Objinsync는 가벼운 데몬으로 원격 객체 스토어를 로컬 파일 시스템으로 점진적으로 동기화합니다.
 
@@ -92,7 +168,18 @@ Airflow에 DAG가 반영되려면, 스케줄러, 워커 등을 실행하는 Pod�
 
 이를 더 효과적으로 처리하는 이상적인 방법은 스케줄러에 부착된 부가 컨테이너로써 objinsync 프로세스를 하나만 실행하고 버킷 내용을 영구 볼륨에 복사하는 것입니다. 그래서 해당 PV가 모든 Airflow 구성 요소에 장착됩니다. 여기에는 DAG가 서로 다른 Airflow 구성 요소 사이에 동기화 문제가 발생하지 않는 장점이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 죄송하지만, 현재는 클러스터 노드에 대해서는 EBS 볼륨만 지원하고 있어서 이러한 해결책을 아직 적용할 수 없습니다. 서로 다른 노드에 PV를 마운트하려면 ReadWriteMany 액세스 모드가 필요합니다. 현재 이 모드는 AWS EKS에서만 EFS 볼륨 모드를 사용할 때에만 사용할 수 있습니다.
 
@@ -102,7 +189,18 @@ Airflow에 DAG가 반영되려면, 스케줄러, 워커 등을 실행하는 Pod�
 
 규모에 맞게 DAG를 생성하려면 DAG 템플릿 및 프로그래밍 방식의 생성을 활용해야 합니다. 더 이상 DAG를 수동으로 모두 작성할 필요가 없습니다 😂
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 간단한 방법으로 DAG를 동적으로 생성하는 방법은 단일 파일 방식을 사용하는 것입니다. 루프에서 DAG 객체를 생성하고 globals() 사전에 추가하는 하나의 파일이 있습니다.
 
@@ -112,7 +210,18 @@ Airflow에 DAG가 반영되려면, 스케줄러, 워커 등을 실행하는 Pod�
 
 Astronomer에는 단일 파일 방법과 다중 파일 방법에 대한 훌륭한 기사가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 세부 구성 조정
 
@@ -122,7 +231,18 @@ CeleryExecutor로 이동한 순간, 우리가 한 문제를 해결했지만 새�
 
 ![차트](/assets/img/2024-06-23-WhatwelearnedafterrunningAirflowonKubernetesfor2years_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 업무는 주로 셀러리 워커에 의해 실행되는 DBT 작업으로 구성되어 있습니다. 이 때 거의 지속적으로 증가하는 메모리 사용량은 우리를 혼란스럽게 했었죠. 우리는 작업 간에 메모리 누수가 있는 것으로 의심하기 시작했습니다.
 
@@ -132,7 +252,18 @@ CeleryExecutor로 이동한 순간, 우리가 한 문제를 해결했지만 새�
 
 따라서 동일한 워커 프로세스 내 작업 간 메모리 누수를 방지하기 위해 때때로 해당 프로세스를 재시작하는 것이 좋습니다. 이 구성이 설정되지 않으면 기본적으로 해당 워커 프로세스는 재시작하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 번째 설정인 worker_max_memory_per_child은, 단일 워커 프로세스가 실행되기 전에 교체되는 최대 주거 중인 메모리 양을 제어합니다. 이는 기본적으로 메모리 사용량을 제어합니다. 기본 설정은 제한이 없으므로 항상 설정하는 것이 좋습니다.
 
@@ -154,7 +285,18 @@ CUSTOM_CELERY_CONFIG.update(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 values.yaml에서 이 사용자 정의 구성물을 가리키도록 합니다.
 
@@ -170,7 +312,18 @@ airflow:
 
 ## 노드 회전을 대비하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 k8s 노드는 고장이 발생하거나 쿠버네티스 클러스터를 관리하는 인프라 팀에 의해 예정된 노드 회전으로 인해 회전할 수 있습니다. 또한, 워커 노드(Pods)는 릴리스 이벤트 발생 시, 구성 변경(예: 환경 변수)이나 베이스 이미지 변경 시 회전합니다. 노드 회전은 당연히 Pods가 종료되는 결과를 가져옵니다.
 
@@ -178,13 +331,22 @@ k8s 노드는 고장이 발생하거나 쿠버네티스 클러스터를 관리�
 
 이를 방지하기 위해 개별적인 요구 사항에 따라 Worker Termination Grace Period 구성을 설정하는 것이 중요합니다. 이 구성은 쉘러리 워커가 릴리스 프로세스나 노드 회전에 의해 종료되기 전에 해당 시간(초)까지 기다리도록 만들 것입니다. 이것은 Airflow의 차트 값(values.yaml)에서 쉽게 설정할 수도 있습니다.
 
-
 airflow:
-   workers:
-      terminationGracePeriodSeconds: <int>
+workers:
+terminationGracePeriodSeconds: <int>
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 오래 걸리는 작업 완료 시간의 1.5배로 설정하는 것이 좋습니다. 이렇게 하면 모든 작업이 그 기간 내에 완료될 것이므로, 작업자를 원할하게 종료할 수 있습니다.
 
@@ -194,11 +356,33 @@ airflow:
 
 Airflow의 가장 일반적인 사용 사례 중 하나는 특정 작업 이벤트, 예를 들어 파일 처리, 클린업 작업 또는 작업 실패 후에 사용자 지정 알림을 보내는 것입니다. Airflow를 사용하는 여러 팀이 있는 환경에서 작업 알림 메커니즘을 통합하는 것이 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 커스텀 알림은 템플릿화되어 있어서 팀들은 표준 형식으로 Slack에서 정보 메시지를 만드는 데 사용할 수 있습니다. 또 다른 장점은 이 접근 방식을 사용하는 개별 팀이 개별 알림 대상의 비밀을 관리할 필요가 없다는 것입니다.
 
@@ -208,7 +392,18 @@ Airflow의 가장 일반적인 사용 사례 중 하나는 특정 작업 이벤�
 
 Kubernetes에서 실행할 때 관심 있는 모든 이벤트에 대해 PrometheusRule을 설정하여 수행할 수 있습니다. 예를 들어 스케줄러 노드의 상태, 사용 가능한 워커 노드 수 또는 스케줄러 루프 시간과 같은 특정 Airflow 메트릭을 모니터링할 수 있습니다. 또한 AlertManager를 실행하면 다양한 대상 (Slack, PagerDuty, Opsgenie 등)으로 경보를 발생시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 다른 현명한 일은 Airflow 메트릭을 활용하여 환경의 가시성을 향상시키는 것입니다. 현재 Airflow는 StatsD와 OpenTelemetry로 메트릭을 전송하는 것을 지원합니다. 후자가 더 우선되는데, 왜냐하면 OpenTelemetry가 Logs와 Traces를 지원하는 더 완전한 프레임워크이기 때문입니다. 그러나 현재 Airflow는 아직 OTEL을 통한 로그 및 추적을 지원하지 않습니다. (하지만 미래에 지원할 예정입니다!)
 
@@ -218,7 +413,18 @@ Kubernetes에서 실행할 때 관심 있는 모든 이벤트에 대해 Promethe
 
 ❗️경고: 이 이미지는 미리보기용이므로 이미지가 표시되지 않을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 유용한 지표는 DAG 구문 분석 시간과 스케줄러 루프 시간입니다. 이를 통해 Airflow에 영향을 미치는 문제를 빠르게 식별하고 전체 애플리케이션을 속도조절하는 데 도움을 줄 수 있습니다.
 
@@ -228,7 +434,18 @@ Kubernetes에서 실행할 때 관심 있는 모든 이벤트에 대해 Promethe
 
 Airflow 노드 및 위에서 언급한 성능 지표를 모니터링하는 것 외에도 데이터베이스의 건강 지표를 모니터링하는 것이 중요합니다. PostgreSQL 또는 MySQL을 사용하는지에 따라 다르지만, CPU 사용량, 사용 가능한 스토리지, 열린 연결 수 등이 가장 일반적인 지표입니다.😂
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경하면 더 좋은 방법입니다.
 
@@ -240,7 +457,18 @@ Kubernetes를 사용하는 경우에는 Airflow 차트에 추가 리소스로 Cr
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 작성한 텍스트가 Airflow on Kubernetes를 사용하는 여러 팀들이 함께 사용하는 협업 환경에서 여정을 시작하는 데 도움이 될 것을 희망합니다.
 

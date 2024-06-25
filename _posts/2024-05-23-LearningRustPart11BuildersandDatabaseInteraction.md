@@ -18,7 +18,18 @@ link: "https://medium.com/gitconnected/learning-rust-part-11-builders-and-databa
 
 부분 1 — 기본 개념
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Part 2 — 메모리
 
@@ -28,7 +39,18 @@ Part 4 — 옵션/결과 및 컬렉션
 
 Part 5 — 트레이트, 제네릭 및 클로저
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 6부 — 매크로, 반복자 및 파일 처리
 
@@ -38,7 +60,18 @@ Part 5 — 트레이트, 제네릭 및 클로저
 
 제 9부 — 명령행 인수, 워크스페이스 및 테스팅
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 10부 — 상자 포인터 및 웹 앱
 
@@ -48,7 +81,18 @@ Part 5 — 트레이트, 제네릭 및 클로저
 
 이것은 러스트 학습 시리즈의 열한 번째 섹션입니다. 이번에는 러스트에서 빌더 패턴을 다룰 것입니다. 이 공통된 패턴은 구조체를 안전하고 투명하게 초기화하는 좋은 방법입니다. 다음으로, 우리는 포스트그레스와 SQLX 프레임워크를 사용하여 데이터베이스에서 CRUD 작업을 수행하는 방법을 살펴볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 준비물
 
@@ -58,7 +102,18 @@ Part 5 — 트레이트, 제네릭 및 클로저
 
 빌더 패턴은 복잡한 객체의 구성을 해당 표현에서 분리하는 디자인 패턴입니다. 이 패턴을 사용하면 유효성 검사를 수행하고 기본값으로 대체하며 값을 부분적으로 할당한 후에 항목을 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Rust로 그 구현하는 방법을 살펴볼 거예요. 이것이 우리의 코드입니다.
 
@@ -131,7 +186,18 @@ fn main() {
 
 먼저, 충전 세션 정보를 저장하는 구조체를 정의했습니다. 이 시리즈의 이전 예제에서 하나의 필드인 세션용 차량 ID 번호인 vin을 추가했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 데이터 구조체와 동일한 필드를 가진 빌더를 위한 구조체를 정의합니다.
 
@@ -143,7 +209,18 @@ fn main() {
 
 이를 통해 빌더 패턴의 우아함과 Rust 내에서의 구현 방법을 살펴보았습니다. 이것이 앱이나 라이브러리에 코드를 구현하는 훌륭한 방법임을 알 수 있기를 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 섹션인 데이터베이스로 넘어가 봅시다.
 
@@ -153,7 +230,18 @@ fn main() {
 
 ## 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 프로젝트를 시작해봅시다. db_app이라고 이름 짓고, cargo new db_app으로 생성할 수 있어요. 기본 디렉토리에 몇 개의 파일을 생성할 거에요. 첫 번째 파일은 docker-compose.yml이라고 하며 다음 내용이 있어야 합니다. Postgres와 Pgadmin이 노출되는 임의의 포트를 선택했으며, 컴퓨터에 설치된 다른 앱들과 충돌하지 않도록 했어요.
 
@@ -195,7 +283,18 @@ PGADMIN_DEFAULT_EMAIL=admin@admin.com
 PGADMIN_DEFAULT_PASSWORD=password123
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 내용과 함께 데이터베이스 사용자, 비밀번호, 그리고 Pgadmin에 대한 연결 정보를 제공해 드렸습니다.
 
@@ -207,7 +306,18 @@ docker-compose up
 
 시작된 모든 것을 확인한 후에는 언제든지 -d 스위치를 사용하여 데몬 모드로 시작할 수 있습니다. 완료되면 두 컨테이너가 시작되었는지 확인해 봅시다. 다음과 같이 명령을 실행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 docker ps
@@ -219,7 +329,18 @@ docker ps
 
 만약 두 개의 컨테이너가 표시되지 않는다면, docker-compose를 실행한 터미널에서 에러를 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번 이들이 실행되면 DB에 연결해 봅시다. Pgadmin을 포트 5050에서 실행하도록 구성했으니 브라우저에서 http://localhost:5050을 입력하면 pgadmin의 로그인 화면이 표시됩니다. .env 파일에 구성된 자격 증명(관리자@관리자.com/비밀번호123)을 사용하여 pgadmin에 로그인할 수 있습니다. 그런데 아직 데이터베이스에 연결되지 않았습니다. 이를 위해 다음을 실행해야 합니다.
 
@@ -231,7 +352,18 @@ docker inspect postgres
 
 로그인한 후 "새 서버 추가" 버튼을 클릭하고, "호스트 이름/주소"로 이전에 복사한 IP 주소를 포함한 필수 자격 증명을 제공하고 "저장" 버튼을 클릭하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서버에 로그인하면 데이터베이스 charging_session을 볼 수 있습니다.
 
@@ -241,7 +373,18 @@ docker inspect postgres
 
 이제 Rust 앱의 종속성을 구성해 봅시다. 처음에는 모두 필요하지 않지만 결국 필요하게 될 것이므로 지금 추가해 두는 것이 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Cargo.toml 파일의 종속성 부분을 다음과 같이 수정하세요.
 
@@ -262,7 +405,18 @@ uuid = { version = "1.6.1", features = ["serde", "v4"] }
 
 다음으로, 필요한 테이블을 만들기 위해 sqlx-cli 마이그레이션 기능을 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우선 명령 줄에서 다음을 실행하여 CLI를 설치해야 합니다.
 
@@ -276,7 +430,18 @@ cargo install sqlx-cli --no-default-features --features rustls,postgres
 sqlx migrate add initial-tables
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령어는 우리가 마이그레이션 스크립트를 작성하기 위해 새 파일 migrations/`timestamp`\_initial-tables.sql을 생성합니다.
 
@@ -284,22 +449,31 @@ sqlx migrate add initial-tables
 
 이 파일을 열고 아래 SQL 문을 추가하여 테이블을 생성하세요.
 
-
 create table locations (
-  id bigserial primary key,
-  name varchar(255) unique not null
+id bigserial primary key,
+name varchar(255) unique not null
 );
 
 create table sessions (
-  id bigserial primary key,
-  location_id bigint not null,
-  watts bigint not null,
-  vin varchar(255) not null,
-  constraint fk_location foreign key (location_id) references locations(id) on delete cascade
+id bigserial primary key,
+location_id bigint not null,
+watts bigint not null,
+vin varchar(255) not null,
+constraint fk_location foreign key (location_id) references locations(id) on delete cascade
 );
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 예제에서 사용할 두 개의 테이블 정의입니다. 이 시리즈의 충전 세션에 대한 표준 예제를 확장하여, 충전 장치의 위치를 저장할 locations 테이블을 추가했습니다.
 
@@ -311,7 +485,18 @@ sqlx migrate run
 
 그러면 즉시 20231212235431/migrate initial-tables (타임스탬프 부분은 달라질 수 있음)과 같은 메시지가 표시됩니다. 이제 Pgadmin에 가서 테이블을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-LearningRustPart11BuildersandDatabaseInteraction_4.png" />
 
@@ -321,7 +506,18 @@ sqlx migrate run
 
 이 섹션에서는 데이터베이스 상호 작용의 다양한 유형과 Rust 구현을 살펴볼 것입니다. 이는 데이터베이스에 연결하는 것으로 시작됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DB에 연결하기
 
@@ -360,7 +556,18 @@ async fn main() {
 
 시작 부분의 #[tokio::main] 매크로를 주목해주세요. 이는 async fn main()을 동기 fn main()로 변환하여 런타임 인스턴스를 초기화하고 async main 함수를 실행하게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 코드를 실행하면 출력 로깅에서 다음 메시지가 표시됩니다.
 
@@ -370,7 +577,18 @@ async fn main() {
 
 ## Inserts
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 연결 풀이 준비되었으니, 우리가 살펴볼 첫 번째 데이터베이스 로직은 삽입입니다. sqlx를 사용하여 삽입하는 방법은 다음과 같습니다.
 
@@ -396,7 +614,18 @@ match insert_result {
 
 ## 질의하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 데이터베이스를 조회하는 방법을 살펴보겠습니다.
 
@@ -416,7 +645,18 @@ match insert_result {
 
 ## 업데이트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 작업은 데이터베이스를 업데이트하는 것입니다. 이는 이전에 삽입한 것과 비슷할 것입니다.
 
@@ -443,7 +683,18 @@ match insert_result {
 
 ## Deletes
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 데이터베이스에서 레코드를 삭제하는 CRUD 작업을 완료합니다. 우리의 목적은 데이터베이스를 정리하는 데 사용할 것이며, 이렇게 하면 언제든지 응용 프로그램을 실행할 수 있습니다.
 
@@ -461,7 +712,18 @@ info!("✕ 세션 테이블에서 {}개의 행 삭제됨", rows_deleted);
 
 ## 트랜잭션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```rust
    let tx = pool.begin().await.expect("트랜잭션을 시작할 수 없습니다");
@@ -475,7 +737,18 @@ info!("✕ 세션 테이블에서 {}개의 행 삭제됨", rows_deleted);
 
 ## 완전한 응용 프로그램
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드는 우리가 이전에 논의한 모든 다양한 기능이 하나의 애플리케이션에 모두 포함된 완전한 애플리케이션입니다.
 
@@ -675,7 +948,18 @@ async fn main() {
 
 <img src="/assets/img/2024-05-23-LearningRustPart11BuildersandDatabaseInteraction_5.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위와 같이 데이터베이스 상호작용 토론을 마쳤습니다. sqlx를 사용하여 데이터베이스 작업을 수행하는 방법에 대해 좋은 개요를 제공했을 겁니다.
 
@@ -685,7 +969,18 @@ async fn main() {
 
 다음으로, 우리는 Rust를 사용하여 데이터베이스인 특히 Postgres와 상호작용하는 방법을 검토했습니다. 우리는 마이그레이션을 실행하고 데이터베이스에 연결하는 방법을 보았으며, 그 후 DB에 대해 여러 가지 CRUD 작업을 수행하는 방법을 살펴보았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 러스트 학습 여정에 함께해줘서 고마워요.
 

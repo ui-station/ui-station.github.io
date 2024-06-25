@@ -3,13 +3,12 @@ title: "iOS 푸시 알림 통합하기Using Swift"
 description: ""
 coverImage: "/assets/img/2024-05-20-IntegratingiOSPushNotificationsUsingSwift_0.png"
 date: 2024-05-20 16:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-IntegratingiOSPushNotificationsUsingSwift_0.png
 tag: Tech
 originalTitle: "Integrating iOS Push Notifications Using Swift"
 link: "https://medium.com/@sachinsiwal/integrating-ios-push-notifications-using-swift-209d99862ec2"
 ---
-
 
 푸시 알림은 사용자 참여와 유지에 핵심적인 역할을 합니다. 사용자를 최신 상태로 유지하고 사용자가 구매로 이어지는 FOMO를 만들어내죠. 게다가 iOS에서는 Apple의 푸시 알림 서비스 (APNs)라는 추가 혜택이 있습니다. 이 서비스는 앱 서버와 사용자 장치 사이에 중개자 역할을 하면서 앱이 활성화되지 않았거나 사용자가 다른 앱을 확인하고 있어도 푸시 알림을 전달할 수 있게 해줍니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sachinsiwal/integrating-ios-push-notifications-using-
 
 iOS 푸시 알림은 사용자 참여, 유지 및 전체적인 사용자 경험을 개선합니다. 푸시 알림이 전략적으로 사용될 때 모바일 앱의 효과를 다양한 비즈니스 분야 전반에 크게 향상시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 특정 목적을 위해 푸시 알림을 배포할 수 있습니다.
 
@@ -36,7 +46,18 @@ iOS 푸시 알림은 사용자 참여, 유지 및 전체적인 사용자 경험�
 
 # iOS 알림의 구성 요소는 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 푸시 알림은 일반적으로 세 가지 주요 구성 요소로 구성됩니다:
 
@@ -48,7 +69,18 @@ iOS 푸시 알림은 일반적으로 세 가지 주요 구성 요소로 구성�
 
 좋아요, 기본 내용을 다뤘습니다. 이제 Swift를 사용하여 iOS 푸시 알림 설정에 대해 좀 더 깊게 파고들어보겠습니다. 이는 Apple 개발자 포털, Xcode, 앱 서버 및 디바이스 토큰 등에서 중요한 단계를 거쳐 설정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 앱 ID 및 프로비저닝 프로필 설정하기
 
@@ -65,7 +97,18 @@ Apple 개발자 포털에서 다음 단계를 따라주십시오 (참고: 소유
 - 사용하려는 앱 기능을 활성화하기 위해 해당 확인란을 선택합니다. 앱 및 프로그램 멤버십 유형에 따라 사용 가능한 기능은 기능 아래에 나타납니다. 확인란은 기술이 명시적 App ID를 요구하고 와일드카드 App ID를 만드는 경우에 비활성화되거나 기술이 기본적으로 활성화되어 있는 경우에 비활성화됩니다. 모든 플랫폼에 모든 기능이 적용되는 것은 아닙니다.
 - 계속을 클릭한 후 등록 정보를 검토한 다음 등록을 클릭합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 프로세스를 설명하는 비디오입니다:
 
@@ -83,7 +126,18 @@ Apple 개발자 포털에서 다음 단계를 따라주십시오 (참고: 소유
 - 프로필에 의미 있는 이름을 입력하고 생성을 클릭합니다.
 - 다운로드를 클릭하여 프로비저닝 프로필을 다운로드하고 Xcode에서 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Xcode 설정 구성하기
 
@@ -93,7 +147,18 @@ Xcode 프로젝트 설정에서 App ID를 사용해야 합니다. 이를 통해 
 
 푸시 알림 기능을 활성화한 후에는 AppDelegate 파일에 푸시 알림 코드를 구현해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알림: 먼저 UserNotifications 프레임워크를 가져와야 합니다.
 
@@ -108,7 +173,18 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     // 다른 설정 코드
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // 알림 권한 요청
@@ -130,8 +206,18 @@ return true
 
 원격 알림을 등록하려면 UIApplication의 registerForRemoteNotifications() 메서드를 호출해야 합니다. 앱의 AppDelegate에서 이를 호출하여 원격 알림을 등록하고 기기 토큰을 받아옵니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -162,13 +248,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 애플리케이션을 통해 알림을 등록한 후, 기기 토큰을 얻어야 합니다. 이는 사용자 기기를 식별하여 나중에 서버에서 알림을 보낼 수 있게 해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 예시에서는 성공적 및 실패적인 기기 등록 방법을 구현했습니다. 등록이 올바르게 작동하면 기기 토큰을 얻게 되며, 이후 서버로 해당 사용자에게 저장할 수 있도록 전송해야 합니다. 기기 토큰이 없으면 이 기기로 알림을 보낼 수 없습니다.
 
 # 원격 알림 처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기기 토큰을 받은 후에는 앱이 알림을 수신할 준비가 되었습니다. 이제 서버로부터 수신되는 알림을 처리하기 위한 관련 메서드를 구현해야 합니다. 이러한 메서드는 앱의 상태에 기반하며, 앱이 전경 또는 배경에서 작동하는지에 따라 다를 것입니다.
 
@@ -186,7 +294,18 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱이 활성 상태로 실행 중인 경우, iOS는 알림을 알림 센터에 표시하지 않습니다. 대신, 앱으로 알림을 직접 전달할 것입니다. 사용자에게 경고를 표시하려면 코드를 작성해야 합니다.
 
@@ -199,7 +318,18 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
     // 받은 원격 알림 처리
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
     // 푸시 알림 페이로드를 출력합니다
@@ -220,8 +350,18 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
 
 # 앱 서버에서 알림 보내기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서버에 저장된 디바이스 토큰을 사용하여 특정 디바이스로 알림을 보내려면 백엔드 서버에 코드를 구현해야 합니다. 이 코드는 애플 푸시 알림 서버로 요청을 트리거하고 해당 디바이스로 알림을 전송합니다.
 
@@ -232,37 +372,62 @@ npm install apn
 ```
 
 ```js
-const apn = require('apn');
+const apn = require("apn");
 // 자격 증명으로 APNs를 구성
 const apnProvider = new apn.Provider({
   token: {
-    key: 'path/to/APNsAuthKey.p8',  // APNs Auth Key의 경로
-    keyId: 'YourKeyID',
-    teamId: 'YourTeamID',
+    key: "path/to/APNsAuthKey.p8", // APNs Auth Key의 경로
+    keyId: "YourKeyID",
+    teamId: "YourTeamID",
   },
-  production: false,  // 운영 환경에 대해 true로 설정
+  production: false, // 운영 환경에 대해 true로 설정
 });
 // 알림 페이로드 생성
 const notification = new apn.Notification({
-  alert: 'Hello Bugfender Testing!',
-  sound: 'default',
+  alert: "Hello Bugfender Testing!",
+  sound: "default",
   badge: 1,
 });
 // 대상 디바이스의 디바이스 토큰 지정
-const deviceToken = 'xxxx';  // 실제 디바이스 토큰으로 대체
+const deviceToken = "xxxx"; // 실제 디바이스 토큰으로 대체
 // 알림 보내기
-apnProvider.send(notification, deviceToken).then(result => {
-  console.log('알림을 보냈습니다:', result);
-}).catch(error => {
-  console.error('알림 보내기 오류:', error);
-});
+apnProvider
+  .send(notification, deviceToken)
+  .then((result) => {
+    console.log("알림을 보냈습니다:", result);
+  })
+  .catch((error) => {
+    console.error("알림 보내기 오류:", error);
+  });
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `table` 태그를 Markdown 형식으로 변경하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 JSON 페이로드의 예시를 살펴봅시다:
 
@@ -284,7 +449,18 @@ apnProvider.send(notification, deviceToken).then(result => {
 
 크기 제한을 유의하십시오. 페이로드는 JSON 객체여야 하며 최대 크기 제한이 4KB입니다. 이 제한은 알림 전달에 문제가 없도록 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 조용한 알림
 
@@ -296,16 +472,27 @@ apnProvider.send(notification, deviceToken).then(result => {
 
 다음은 조용한 알림의 편리한 예시입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 {
-    "aps": {
-        "content-available": 1,
-        "priority": "5"
-    },
-    "updateType": "newArticles",
-    "timestamp": "2024-01-12T10:00:00Z"
+  "aps": {
+    "content-available": 1,
+    "priority": "5"
+  },
+  "updateType": "newArticles",
+  "timestamp": "2024-01-12T10:00:00Z"
 }
 ```
 
@@ -315,7 +502,18 @@ apnProvider.send(notification, deviceToken).then(result => {
 
 # 지역 알림
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 로컬 알림은 특별한 분류로, 어플리케이션이 서버와 독립적으로 특정 시간에 또는 특정 이벤트에 응답하여 알림을 자체적으로 예약하는 것을 가능케 합니다. 이러한 알림은 알림, 캘린더 이벤트 또는 유사한 시나리오에 매우 유용합니다. 이를 작동시키려면 원격 푸시 알림과 마찬가지로 사용 권한을 요청해야 합니다.
 
@@ -344,7 +542,18 @@ UNUserNotificationCenter.current().add(request) { error in
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 푸시 알림을 테스트하고 실제 장치로 전송해보기
 
@@ -354,7 +563,18 @@ UNUserNotificationCenter.current().add(request) { error in
 
 거기에 그치지 않아요: 서버나 도구에서 보낸 알림이 장치로 제대로 수신되었는지 확인할 수도 있고, 앱에서 구현한 경우 알림의 처리 및 리디렉션을 확인할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시뮬레이터에서 알림을 테스트하는 단계:
 
@@ -367,7 +587,18 @@ UNUserNotificationCenter.current().add(request) { error in
 
 다음 curl을 사용하여 테스트 푸시 알림을 보낼 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 curl --header "apns-topic: your.bundle.identifier" \\
@@ -389,8 +620,18 @@ curl --header "apns-topic: your.bundle.identifier" \\
 
 iOS 애플리케이션에서 푸시 알림을 쉽게 통합하고 테스트할 수 있는 여러 서드 파티 서비스 및 도구가 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 서비스들은 타겟팅된 메시지 전송, 분석 및 기타 기능을 포함하여 전체 푸시 알림 경험을 향상시키고 데이터를 분석하기 위한 다양한 기능을 제공합니다. 여기 몇 가지 주목할만한 제품들이 있습니다:
 
@@ -407,7 +648,18 @@ iOS 애플리케이션에서 푸시 알림을 쉽게 통합하고 테스트할 �
 
 # iOS에서 푸시 알림이란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS에서의 푸시 알림은 서버에서 iOS 기기로 전송되는 짧은 메시지로, 사용자에게 기기에 설치된 앱과 관련된 새로운 정보, 업데이트 또는 이벤트를 알리는 데 사용됩니다. 이러한 알림은 사용자의 기기로 직접 전달되며, 앱이 실행되지 않은 상태에서도 받을 수 있습니다.
 
@@ -417,7 +669,18 @@ iOS에서의 푸시 알림은 서버에서 iOS 기기로 전송되는 짧은 메
 
 # 푸시 알림은 텍스트만으로 제한되나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네, iOS의 푸시 알림은 풍족한 미디어를 포함할 수 있어요. iOS 개발자로서, 이미지, 소리 및 기타 상호 작용 항목을 포함할 수 있는 풍족한 푸시 알림을 보낼 수 있는 옵션이 있어요. 개발자와 마케터가 사용자의 관심을 더 잡을 수 있는 시각적으로 매력적인 알림을 만들 수 있게 해줘요.
 
@@ -427,7 +690,18 @@ iOS에서의 푸시 알림은 서버에서 iOS 기기로 전송되는 짧은 메
 
 # 모든 iOS 기기에서 푸시 알림이 지원되나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네, 모든 iOS 기기에서 푸시 알림을 지원합니다. iPhone 및 iPad를 포함한 모든 기기에서 작동합니다. 해당 기기가 호환되는 iOS 버전을 실행 중이고 사용자가 해당 앱의 알림을 허용한 경우, 모든 iOS 기기에서 푸시 알림을 보내고 받을 수 있습니다.
 
@@ -437,7 +711,18 @@ iOS에서의 푸시 알림은 서버에서 iOS 기기로 전송되는 짧은 메
 
 # 요약하자면
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 단계와 원칙을 결합하여 개발자들은 사용자 만족도, 참여도 및 모바일 애플리케이션 전반적인 성공을 위한 동적이고 효과적인 알림 전략을 만들 수 있습니다.
 

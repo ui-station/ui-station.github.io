@@ -3,13 +3,12 @@ title: "첫 번째 타투를 받는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-HowtoGetYourFirstTattoo_0.png"
 date: 2024-05-20 19:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowtoGetYourFirstTattoo_0.png
 tag: Tech
 originalTitle: "How to Get Your First Tattoo"
 link: "https://medium.com/the-diy-diaries/how-to-get-your-first-tattoo-23e4e823710d"
 ---
-
 
 ## 나 자신
 
@@ -19,7 +18,18 @@ Talking Heads의 말을 빌리자면, 47살에 여러분에게 새로운 첫 번
 
 # 당신의 이유 찾기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여러 해 동안 문신을 하고 싶다는 생각을 했어요. 시간이 흐를수록 그 생각이 더 커졌어요. 인스타그램에서 문신 예술가를 팔로우했고, 문신에 관한 기사를 읽기도 했어요. 친구들에게 문신을 받으면서 경험한 이야기를 물어봤고, 자신들의 몸에 어떤 이미지를 원하는지 어떻게 결정했는지도 물어봤어요 (영원히!).
 
@@ -30,7 +40,18 @@ Talking Heads의 말을 빌리자면, 47살에 여러분에게 새로운 첫 번
 - 관계와는 별개로 나를 위해 개인적으로 의미 있는 일들을 찾기로 결심했어요.
 - 내가 세상에서 보고 싶은 창의적인 배드엣을 되어야 한다는 것을 깨달았어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 나의 인생 나머지 시간을 소비하며 자신만의 창의적이고 예술적인 조각을 가져 나를 성장하게 하는 여자를 만나기를 희망해 왔다. 혹은 왜 나 자신을 위해 그런 여자가 되는 방법을 찾는 데 더 의도적일 수 없을까?
 
@@ -40,7 +61,18 @@ Talking Heads의 말을 빌리자면, 47살에 여러분에게 새로운 첫 번
 
 투타를 받겠다고 결정할 때, 고통을 무시하지 않고 투타 과정에 함께하고 싶었다. 예술가가 손으로 바늘을 재충전하여 단독 점을 찔러주는 과정에서 허파를 쉴 수 있게 해주는 더 느립고 DIY 느낌이 나에게 중요하게 느껴졌다. 나는 투타를 느끼고 그것을 수용하고 싶었다. 그냥 서둘러 끝내려고 하는 대신에 투타로 인한 고통을 견딜 수 있기를 바랐다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 추가하고 싶은 내용이 있어요. 온라인에서 손끝 문신을 위한 DIY 자재를 구매할 수는 있지만, 그렇게 하는 것은 추천하지 않아요. 이미 그림을 잘 그리는 능력이 있고, 문신 예술을 배우는 데 많은 시간을 투자하고, 위생에 엄격하다면 할 수 있지만요! 이미 수십 년 경력을 쌓고 수장들과의 견습을 거친 경험 많은 예술가들이 많이 있어요. 온라인 조사를 통해 당신의 비전과 맞는 작가를 찾을 수 있어요.
 
@@ -50,7 +82,18 @@ Talking Heads의 말을 빌리자면, 47살에 여러분에게 새로운 첫 번
 
 최종적으로, 나에게는 사소하지만 깊은 의미가 있는 어떤 이미지를 문신으로 표현하고 싶다는 것을 깨달았어요. 연필의 이미지를 선택했죠. 작은 이미지가 물리적인 문신 과정에 불편함을 느낄 경우 관리하기 쉬워 보였어요. 다음에 큰 문신을 시도해 보아도 되기 때문에, 작게 시작하는 것이 옳다고 느꼈어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 선택한 문신 예술가에게 이메일을 보냈어 (몇 달 동안 그녀의 인스타그램 게시물을 팔로우하고 몇몇 친한 친구들과 상의한 끝에) 그리고 1980년대의 딕슨 타이콘데로가를 참고 이미지로 보냈어. 그것은 내가 어릴 적에 사용한 연필과 비슷했어.
 
@@ -60,7 +103,18 @@ Talking Heads의 말을 빌리자면, 47살에 여러분에게 새로운 첫 번
 
 예술가를 직접 만나게 되었을 때, 그녀가 왜 그 이미지를 선택했느냐고 물었고, 나는 항상 종이에 초고를 쓰던 시인이라고 말했어 ― 그리고 갑자기 노예 릴리안 버논 카탈로그에서 할아버지, 할머니가 나를 위해 개인화된 연필을 주문했던 일이 떠올랐어: 그들은 황금 문자로 "MANDY"라고 쓰여진 것이었어. 난 그 연필을 사랑했어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상담에서 타투에 대해 이야기하니 나는 내 사랑스러운 어린 시절 할아버지와 할머니, 그리고 연필들과 더 연결된 것 같아요. 작가가 그림을 조정하고 내 팔에 가장 잘 맞는 크기와 위치를 선택하며 협력적인 프로세스를 감사하게 생각했어요.
 
@@ -70,6 +124,17 @@ Talking Heads의 말을 빌리자면, 47살에 여러분에게 새로운 첫 번
 
 이 타투로 정말 행복해요. 매일 보면 미소 짓게 되고, 연평생 해보고 싶었던 것에 마침표를 찍게 된 걸 기뻐해요. 다음에는 또 무엇을 할지 알 수가 없죠?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "The DIY Diaries"에서는 창의성과 성장 이야기를 공유하실 것을 초대합니다. 때로는 최고의 DIY 전문가는 전문가와 함께 일할 때를 알고 있어요 (저의 타투 아티스트처럼!). 다른 때에는 프로젝트를 처음부터 끝까지 직접 이끌기도 합니다. 어떤 길을 선택하든, 여러분의 이야기를 보내어 함께 공유해 주세요.

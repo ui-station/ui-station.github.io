@@ -3,13 +3,12 @@ title: "Logstash에서 Ruby 코드를 공유하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-23-HowtoshareRubycodeinLogstash_0.png"
 date: 2024-05-23 12:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowtoshareRubycodeinLogstash_0.png
 tag: Tech
 originalTitle: "How to share Ruby code in Logstash"
 link: "https://medium.com/@ingrid.jardillier/how-to-share-ruby-code-in-logstash-8d772ee42569"
 ---
-
 
 이전 기사에서는 루비 필터를 사용하여 문서를 비정규화하는 방법을 살펴보았습니다. 이 기사에서는 코드를 개선하고 필터간에 코드를 공유하는 방법을 보여드리겠습니다.
 
@@ -66,7 +65,18 @@ def filter(event)
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보시다시피, 우리에게는 매개변수를 설명하는 register 함수와 필터 기능을 구현하는 다른 함수가 2개뿐입니다. 그러나 기능 전체를 한 방법에 구현하는 것은 가독성, 유지 관리 가능성, 테스트 가능성 등 여러 가지 이유로 최선의 선택이 아닙니다.
 
@@ -76,7 +86,18 @@ end
 
 예를 들어, 우리는 일부 코드 조각을 간단한 함수로 외부화할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 원본 이벤트를 얻기 위한 함수(원하면 현재 이벤트를 유지하려면)
 - 이벤트로부터 상품 배열을 얻기 위한 함수
@@ -126,7 +147,18 @@ end
 
 그 이후에 필터의 주요 코드는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```javascript
 require './script/denormalized_by_prizes_utils.rb'
@@ -154,7 +186,7 @@ function filter(event) {
     if (!prizes) {
         return items;
     }
-   
+
     // 클론 기본 이벤트 생성
     var eventBase = getEventBase(event);
 
@@ -173,8 +205,18 @@ function filter(event) {
 
 # 모듈 생성하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 방법으로 코드를 공유하는 방법은 모듈을 만드는 것입니다. 이 모듈은 같은 기능적 범위의 코드 조각을 그룹화할 것입니다. 우리는 공유 함수를 사용하기 전에 모듈 이름을 지정해야 하기 때문에 충돌이 발생하지 않을 것입니다.
 
@@ -226,7 +268,18 @@ end
 
 logger 인스턴스를 사용할 수 있도록 Loggable Util 모듈을 포함해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주요 코드는 다음과 같습니다:
 
@@ -256,12 +309,12 @@ def filter(event)
     if prizes.nil?
         return items
     end
-   
+
     # 복제된 기본 이벤트 생성
     eventBase = LogStash::Util::DenormalizationByPrizesHelper::getEventBase(event);
 
     # 필요한 수정을 가한 상품 항목별로 이벤트 생성
-    prizes.each { |prize| 
+    prizes.each { |prize|
         items.push LogStash::Util::DenormalizationByPrizesHelper::createEventForPrize(eventBase, prize);
     }
 

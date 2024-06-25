@@ -3,14 +3,12 @@ title: "구글 지원자에게 피드백을 줬는데 화를 내더라구요"
 description: ""
 coverImage: "/assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_0.png"
 date: 2024-06-19 11:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_0.png
 tag: Tech
 originalTitle: "I gave a Google candidate feedback and they got Angry."
 link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-they-got-angry-9a4944008370"
 ---
-
-
 
 ![Image](/assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 인터뷰 대상자에게 피드백을 제공하기 위해 훈련을 받은 후, 한 명의 후보자만이 피드백에 너무 화를 내어 면접 중에 나가버렸습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 그들에게 첫 번째 피드백을 주었어요:
 
@@ -31,7 +39,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 ![이미지](/assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 신입사원 및 구글 지원자 중 처음으로 지원하는 분들은 온라인 코딩 평가를 진행하게 됩니다. 여기서의 성적은 단순히 심사 과정이며, 이후 인터뷰 기회에 영향을 미치지 않습니다.
 
@@ -42,7 +61,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 성공하면 대면 인터뷰로 진행됩니다. 실패하면 데이터 구조와 알고리즘을 계속 공부해야 한다는 뜻입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 전화 인터뷰
 
@@ -52,7 +82,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 후보자 중 50% 미만이 이 정도까지 올라오는 것이므로, 이 자체가 성취입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구글의 전화 인터뷰 중 하나는 현장 면접 중 하나가 원격으로 진행됩니다.
 
@@ -62,7 +103,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 이 전화 인터뷰는 현장 면접과 동일한 기준으로 진행됩니다. 후보자가 이를 통과할 수 있다면 현장 면접을 통과할 수 있는 기술을 갖추고 있다는 의도입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분은 그렇지 않아요. 대신 사용할 수 있는 옵션들이 있어요:
 
@@ -73,7 +125,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 # 현장 면접
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `<img src="/assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_3.png" />`
 
@@ -85,7 +148,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 - 데이터 구조 및 알고리즘
 - 행동 기술 (또는 구글러스)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거의 아무도 여기까지 오지 못하고 심지어 통과하는 사람은 더 적습니다. 그러나 여기까지 온 누구에게든 데이터 구조와 알고리즘은 후보자들이 실패하는 주요 이유가 아닙니다.
 
@@ -95,7 +169,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 # 면접관으로 훈련받기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_4.png" />
 
@@ -105,7 +190,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 모든 근로자는 후보자를 공정하게 선별하기 위한 온라인 모듈을 수강한 후 경험 있는 면접관을 옆에서 도우며 그 역할에 숙달됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이후에는 독립적으로 혼자서 지원자에게 면접을 볼 수 있어요!
 
@@ -115,7 +211,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 그래서 구글은 온사이트 지원자를 직접 면접하는 대신에, 후보자들이 면접 준비할 수 있도록 모의 면접 프로그램을 운영해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 핸드폰 화면에서 시작되어 온사이트 면접에서도 물을 수 있습니다.
 
@@ -125,8 +232,18 @@ link: "https://medium.com/gitconnected/i-gave-a-google-candidate-feedback-and-th
 
 # 어떻게 시작되고 어떻게 끝났는지.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_5](/assets/img/2024-06-19-IgaveaGooglecandidatefeedbackandtheygotAngry_5.png)
 
@@ -136,8 +253,18 @@ What was missing was the follow-up questions to make their algorithms even more 
 
 The response from the candidate was:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 후보자에게 솔루션을 개선하도록 요청했지만 수정된 솔루션 없이 막다른 상황에 봉착했습니다.
 
@@ -147,7 +274,18 @@ The response from the candidate was:
 
 하지만 그걸 공손하게 말하는 것은 쉽지 않아요. 제 직접적인 피드백은 후회되는 부분이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지원자가 이미 해당 주제에 민감하다는 것을 알고 있었기 때문에 자신의 피드백에 동의하는 구글 스킬로 그들을 맹비난할 수 있는 게 더 좋았을지도 모릅니다.
 
@@ -160,7 +298,18 @@ The response from the candidate was:
 
 하지만 저는 피드백을 너무 빨리 주는 실수를 했고, 그들이 나를 대변하는 기업에 대해 좋지 않은 인상을 갖고 화가 나게 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리 글
 
@@ -170,7 +319,18 @@ Google에서 면접을 보는 대부분의 지원자들은 코딩을 할 수 있
 
 # 떠나시기 전에
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 박수 카운터가 50까지 올라갈 수 있다는 것 알고 계셨나요?
 - 내 리트코드 팁

@@ -3,13 +3,12 @@ title: "지난 18개월간의 내부 개발자 플랫폼 붐"
 description: ""
 coverImage: "/assets/img/2024-05-27-TheBoomofInternalDeveloperPlatformsintheLast18Months_0.png"
 date: 2024-05-27 17:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-TheBoomofInternalDeveloperPlatformsintheLast18Months_0.png
 tag: Tech
 originalTitle: "The Boom of Internal Developer Platforms in the Last 18 Months"
 link: "https://medium.com/@rphilogene/the-boom-of-internal-developer-platforms-in-the-last-18-months-2a6e90579f16"
 ---
-
 
 지난 18개월 동안 내부 개발자 플랫폼(IDP)에 대한 관심이 급증했습니다. 이 추세는 개발자 친화적 인프라 관리 솔루션에 대한 필요성이 증대되고 있다는 것을 반영합니다. 그렇다면 이런 폭증을 촉발하는 것은 무엇이며, 현재의 상황은 어떻게 보이나요?
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rphilogene/the-boom-of-internal-developer-platforms-i
 
 개발자들은 소프트웨어를 더 빠르고 신뢰할 수 있게 제공해야 하는 지속적인 압박을 받고 있습니다. IDP는 개발자가 코딩에 집중할 수 있도록 반복적인 작업을 자동화하고 복잡한 워크플로우를 간단하게 만들어 생산성을 향상시킴으로써 개발자의 효율성을 높입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 현대 애플리케이션의 복잡성
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@rphilogene/the-boom-of-internal-developer-platforms-i
 
 효율적인 자원 사용이 중요합니다. IDP는 인프라를 최적화하고 낭비를 줄이며 특히 대규모 기업에게 비용 효율성을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 보안 및 규정 준수
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@rphilogene/the-boom-of-internal-developer-platforms-i
 
 ![Image](/assets/img/2024-05-27-TheBoomofInternalDeveloperPlatformsintheLast18Months_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내부 개발자 플랫폼의 풍경은 내부 개발자 포털과 내부 개발자 플랫폼 두 가지 주요 범주로 나눌 수 있습니다. 각각의 특징은 다르지만, 그들 사이의 경계가 흐려지기 시작했습니다.
 
@@ -47,7 +79,18 @@ link: "https://medium.com/@rphilogene/the-boom-of-internal-developer-platforms-i
 
 내부 개발자 플랫폼은 코드부터 배포까지 인프라 관리에 대한 완전한 솔루션을 제공함으로써 한 걸음 더 나아갑니다. 환경 프로비저닝, CI/CD 파이프라인, 모니터링 등을 자동화하여 개발 운영을 위한 포괄적인 플랫폼을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주요 산업 기업이 개발자 효율성의 가치를 인정하고 자체 IDP 제품을 적극적으로 개발 중임을 알 수 있습니다. Atlassian은 Compass를 소개했고, Red Hat은 자체 솔루션을 개발 중이며, HashiCorp는 Waypoint을 출시했습니다. 기술 세계는 IDP에 대해 열광하고 있습니다! IDP의 중요성은 점점 더 많은 사람들이 참여함에 따라 급속하게 증가하고 있습니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@rphilogene/the-boom-of-internal-developer-platforms-i
 - Qovery: 훌륭한 개발자 경험에 초점을 맞춘 내부 개발자 플랫폼을 제공하는 Qovery는 포털을 포함한 기능을 확장했습니다.
 - Port: 원래 내부 개발자 포털이었던 Port는 이제 더 많은 통합 및 기능을 통합하여 플랫폼으로 변화하고 있습니다. 자동화된 인프라 생성이 필요한 단명 환경과 같은 사용 사례를 제안하는 등 종합적인 내부 개발자 플랫폼의 상징적인 특징을 갖추고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-27-TheBoomofInternalDeveloperPlatformsintheLast18Months_2.png)
 

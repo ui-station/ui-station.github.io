@@ -3,14 +3,12 @@ title: "SwiftUI 모양으로 하는 심장 애니메이션"
 description: ""
 coverImage: "/assets/img/2024-05-20-SwiftUIHeartanimationwithshape_0.png"
 date: 2024-05-20 16:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SwiftUIHeartanimationwithshape_0.png
 tag: Tech
 originalTitle: "[SwiftUI] Heart animation with shape"
 link: "https://medium.com/@ganeshrajugalla/swiftui-heart-animation-with-shape-db2b2b5a5861"
 ---
-
-
 
 ![Heart Shape](/assets/img/2024-05-20-SwiftUIHeartanimationwithshape_0.png)
 
@@ -25,7 +23,7 @@ struct HeartShape: Shape {
     let maxX = 100
     let minY = 10
     let maxY = 100
-    
+
     func path(in rect: CGRect) -> Path {
         Path { path in
             path.move(to: CGPoint(x: centerX, y: maxY))
@@ -39,8 +37,18 @@ struct HeartShape: Shape {
 }
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이곳에서 도형에 대해 더 많이 배워보세요
 
@@ -74,6 +82,17 @@ struct HeartAnimation: View {
 
 ![이동](https://miro.medium.com/v2/resize:fit:590/1*_RXEvVkvqCafU2ke7Fe17Q.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 감사합니다!

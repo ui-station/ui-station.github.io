@@ -18,8 +18,18 @@ Asycd에서는 스스로에게 이렇게 물었습니다: AI를 활용하여 예
 
 # 왜 우리가 TEV1을 만들었는가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![TEV1 Image 1](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_1.png)
 
@@ -29,8 +39,18 @@ TEV1의 시작은 예술적 창작 프로세스를 단순화하고 향상시키�
 
 ![TEV1 Image 2](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_2.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한 이미지 생성 능력의 발전에 큰 투자 관심을 가지고 있습니다. 이미지 생성 도구를 사용하여 아이디어를 반영적 이미지로 변환하는 능력은 이미 훌륭하지만, 우리가 생각하는 것과 볼 수 있는 것 사이의 간격을 좁히는 것이 중요합니다.
 
@@ -40,8 +60,18 @@ TEV1의 시작은 예술적 창작 프로세스를 단순화하고 향상시키�
 
 TEV1은 최첨단 AI 기술인 DALL-E 3과 이미지 생성 및 콘텍스트 이해, 이미지 프롬프트 향상을 위해 GPT-4o를 사용하여 구축되었습니다. 사용자가 주제를 입력하면 TEV1은 이러한 고급 모델을 사용하여 주제를 분석하고 해당 주제의 본질을 담은 시각적 표현물을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_3.png)
 
@@ -51,8 +81,18 @@ TEV1은 최첨단 AI 기술인 DALL-E 3과 이미지 생성 및 콘텍스트 이
 
 ![이미지](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Asycd의 설립 이후로 우리는 예술을 생성하고 텍스트 설명을 만드는 작업을 진행해 왔습니다. 이러한 텍스트 설명은 대부분 내부에서 저장되어 사용되어 왔지만, 앞으로 출시될 웹 애플리케이션을 위한 TEV1 모델 훈련에 사용될 예정입니다.
 
@@ -62,7 +102,18 @@ Asycd의 설립 이후로 우리는 예술을 생성하고 텍스트 설명을 �
 
 우리는 이 데이터를 활용하여 이전 작품에 성공적인 프롬프트 기술과 스타일을 사용하여 새로운 작품을 생성합니다. 이를 통해 과거 작업에서 영감을 빨아들이면서도 지속적이고 고품질의 예술을 만들어낼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # TEV1: 예시 및 사용 사례 소개
 
@@ -72,7 +123,18 @@ TEV1은 다양한 시각 디자인 분야에서 사용되며 다양한 매체에
 
 TEV1의 주요 사용 사례 중 하나는 예술적 영감을 제공하는 것입니다. 예술가들은 '어두운 심리학'부터 '로맨티시즘'까지 다양한 주제를 입력할 수 있으며, TEV1은 이러한 주제와 일치하는 이미지를 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-TEV1RedefiningArtCreationwithAI-EnhancedThematicExploration_6.png)
 
@@ -82,7 +144,18 @@ TEV1은 짧은 아이디어나 개념을 이야기를 담은 예술작품으로 
 
 ## 그래픽 디자인과 웹 디자인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 취미로 즐기는 분들과 열정적인 창작가들을 위해 TEV1은 개인 프로젝트를 현실로 만들어 주는 견고한 플랫폼을 제공합니다. 개인 블로그를 위한 독특한 시각적 콘텐츠 작성, 소설을 위한 스토리보드 디자인, DIY 프로젝트를 위한 주제별 아트워크 초안 작성 등, TEV1은 창작하는 여러분의 작품에 전문적인 손길을 더해줍니다.
 
@@ -92,7 +165,18 @@ TEV1은 짧은 아이디어나 개념을 이야기를 담은 예술작품으로 
 
 웹 디자이너들은 TEV1 이미지 생성기를 활용하여 자신들의 웹사이트에 완벽한 배경 씬을 설정할 수 있는 매료되는 이미지를 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래픽 디자이너들에게 TEV1 세대는 가능성의 보물창고입니다. 그들은 끝없는 패턴, 생동감 넘치는 디자인, 그리고 고유한 구성에 접근하여 창의적인 과정을 시작하거나 프로젝트에 마지막 손짓을 더할 수 있습니다. 이는 올해 초부터 "VALENHEARTS" 컬렉션에서 작업한 예술가들에 의해 그렇게 사용되었고, 이 도구의 창의적인 힘을 조금 오박사 단계에서 목격했습니다.
 
@@ -102,7 +186,18 @@ TEV1은 짧은 아이디어나 개념을 이야기를 담은 예술작품으로 
 
 우리는 이것을 창의적이거나 디자인 중심의 모든 것에 사용할 수 있다고 생각합니다. 우리는 캔버스로 시작했지만, 희망적으로 다른 모든 가능한 사용 사례를 탐색할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 마케팅 및 광고: 캠페인, 소셜 미디어 게시물 및 광고를 위한 독특하고 화려한 시각물을 제작합니다.
 - 게임 개발: 컨셉 아트, 캐릭터 디자인 및 환경 텍스처를 생성합니다.

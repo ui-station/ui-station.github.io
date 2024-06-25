@@ -3,13 +3,12 @@ title: "루비에서의 리팩터링  기본적 허락"
 description: ""
 coverImage: "/assets/img/2024-05-18-RefactoringinRubyPrimitiveObsession_0.png"
 date: 2024-05-18 15:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-RefactoringinRubyPrimitiveObsession_0.png
 tag: Tech
 originalTitle: "Refactoring in Ruby | Primitive Obsession"
 link: "https://medium.com/@kroolar/refactoring-in-ruby-primitive-obsession-3d38c702db03"
 ---
-
 
 Primitive Obsession은 도메인 개념을 나타내기 위해 전용 클래스를 만들기보다 문자열, 숫자 또는 배열과 같은 기본 데이터 유형을 과도하게 사용하는 것을 의미합니다. 이는 이해하기 어려우며 유지보수 및 확장이 어려운 코드로 이어질 수 있습니다.
 
@@ -19,7 +18,18 @@ Ruby 언어에 관심이 있다면, 해당 언어에서 리팩터링 및 디자�
 
 # 문제들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코드 중복 - 코드베이스 전체에서 프리미티브 데이터 유형(예: 문자열 또는 해시)을 조작하는 동일한 로직이 반복되면 코드 중복이 발생할 수 있습니다.
 - 의미 부족 - 문자열이나 정수와 같은 프리미티브 데이터 유형에는 의미적 의미가 부족합니다.
@@ -34,56 +44,78 @@ Ruby 언어에 관심이 있다면, 해당 언어에서 리팩터링 및 디자�
 
 달러로 급여를 받는다고 상상해보세요(상상할 필요 없는 경우 제외). 스페인에서 집을 사려고 하는데, 그 집의 가격이 유로로 설정되어 있습니다. 그런 집을 구입하는 데 몇 달이 걸릴지 계산할 수 있는 간단한 프로그램을 작성해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 달러로 표시된 당신의 월급
+
 salary = 5000
 
 # 유로로 표시된 집값
+
 house_cost = 100,000
 
 eur_to_usd_rate = 1.09
 
-((house_cost * eur_to_usd_rate) / salary).ceil # => 21
-
+((house_cost \* eur_to_usd_rate) / salary).ceil # => 21
 
 우리는 보듯이, 이 코드는 그리 좋아보이지 않습니다. 어떤 값이 어떤 통화에 있는지 알기 위해서는 코드에 추가적인 주석을 달 필요가 있습니다. 또한 값을 다른 통화로 변환할 수 있는 변수를 정의해야 합니다.
 
 계속 이 프로그램을 작업하기 쉽게 만들기 위해, 우리가 돈을 보다 쉽게 다룰 수 있는 새로운 클래스를 생성해야 할 것입니다.
 
-
 class Money
-  attr_reader :amount, :currency
+attr_reader :amount, :currency
 
-  def initialize(amount, currency)
-    @amount = amount
-    @currency = currency
-  end
-
-  def dollar?
-    currency == "$"
-  end
-
-  def euro?
-    currency == "€"
-  end
-
-  def to_euro
-    return amount if euro?
-
-    amount * 0.92
-  end
-  
-  def to_dollar
-    return amount if dollar?
-
-    amount * 1.09
-  end
+def initialize(amount, currency)
+@amount = amount
+@currency = currency
 end
 
+def dollar?
+currency == "$"
+end
 
-<div class="content-ad"></div>
+def euro?
+currency == "€"
+end
+
+def to_euro
+return amount if euro?
+
+    amount * 0.92
+
+end
+
+def to_dollar
+return amount if dollar?
+
+    amount * 1.09
+
+end
+end
+
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 새 클래스를 사용해 보겠습니다.
 
@@ -98,7 +130,18 @@ salary = Money.new 5000, "$"
 
 ## 장점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 가독성과 표현력 향상 - 도메인별 클래스는 도메인 개념을 더 잘 반영하는 의미 있는 추상화를 제공합니다.
 - 향상된 유형 안정성 - 도메인별 클래스는 행동과 유효성 검증 논리를 캡슐화하여 더 강력한 유형 안정성을 제공합니다.
@@ -115,6 +158,17 @@ salary = Money.new 5000, "$"
 
 ![이미지](/assets/img/2024-05-18-RefactoringinRubyPrimitiveObsession_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루비에서 리팩터링에 관한 책을 작업 중이에요. 이 주제에 관심이 있다면, 제 뉴스레터에 가입하실 수 있어요 📪️: [https://mailchi.mp/e3dd49dfada1/medium](https://mailchi.mp/e3dd49dfada1/medium). 제 구독자들은 출판 후 즉시 무료로 전자책 링크를 받을 수 있어요. 🆓

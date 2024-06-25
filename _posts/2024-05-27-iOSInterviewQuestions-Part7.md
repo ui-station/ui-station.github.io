@@ -18,7 +18,18 @@ Swift, iOS, Xcode에 관한 인터뷰 질문
 
 Swift에서 옵셔널은 타입 앞에 ?를 추가하여 만들 수 있습니다. 예를 들어
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 var name: String?
@@ -30,7 +41,18 @@ Optional Binding은 옵셔널이 값을 포함하고 있는지 여부를 확인�
 우리는 옵셔널 값을 가져와서 논 옵셔널 상수에 연결할 것입니다. 우리는 If let 구조 또는 Guard 문을 사용합니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. 옵셔널 체이닝이란 무엇인가요?
 
@@ -40,7 +62,18 @@ Optional Binding은 옵셔널이 값을 포함하고 있는지 여부를 확인�
 
 # 4. iOS 애플리케이션 개발에서 사용되는 디자인 패턴을 설명해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 본질적으로, 디자인 패턴은 전형적인 소프트웨어 문제를 해결하기 위해 반복적으로 적용할 수 있는 코드 솔루션입니다. 프로젝트에서 디자인 패턴을 사용하면 더 모듈식이고 확장 가능하며 최적화된 소프트웨어를 얻을 수 있습니다. 다른 사람들의 코드를 더 잘 이해할 수 있게 되어, 디자인 패턴을 즉시 인식할 수 있게 될 것입니다.
 
@@ -52,7 +85,18 @@ Optional Binding은 옵셔널이 값을 포함하고 있는지 여부를 확인�
 - 구조 디자인 패턴 — Decorator, Facade, Adapter.
 - 행동 디자인 패턴 — Observer, Memento.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5. Swift에서 옵셔널 값을 해제하는 여러 방법은 무엇입니까?
 
@@ -68,7 +112,18 @@ Optional Binding은 옵셔널이 값을 포함하고 있는지 여부를 확인�
 
 ??을 사용하여, 연산자의 왼쪽에 nil 값이 있으면 ?? 오른쪽의 값이 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 7. iOS의 코어 데이터란 무엇인가요?
 
@@ -78,7 +133,18 @@ Optional Binding은 옵셔널이 값을 포함하고 있는지 여부를 확인�
 
 애플은 이렇게 말합니다: "코어 데이터를 사용하여 애플리케이션의 오프라인 사용을 위한 영구 데이터를 저장하고, 임시 데이터를 캐시하며, 앱에서 단일 장치에서 취소 기능을 추가하세요." 😮
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코어 데이터는 지속성, 개별 또는 일괄적으로 변경 내용을 실행 취소 및 다시 실행, 백그라운드 데이터 작업, 뷰 동기화, 버전 및 이전 버전 마이그레이션 등의 기능을 제공합니다.
 
@@ -88,7 +154,18 @@ Optional Binding은 옵셔널이 값을 포함하고 있는지 여부를 확인�
 
 데이터 모델 파일을 만든 후, 앱의 모델 레이어를 지원하는 협업 클래스를 설정하십시오. 이러한 클래스들은 총칭하여 코어 데이터 스택이라고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 Core Data 구성 요소 몇 가지가 있습니다:
 
@@ -101,7 +178,18 @@ Optional Binding은 옵셔널이 값을 포함하고 있는지 여부를 확인�
 
 많은 앱이 다양한 유형의 정보를 영속적으로 저장하고 표시해야 합니다. Core Data는 일반적인 데이터베이스에서 사용되는 Date 나 Decimal 유형과 같은 속성뿐만 아니라 Transformable 유형으로 처리되는 비표준 속성을 포함하여 다양한 속성을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 9. 관리 대상 객체 컨텍스트란 무엇인가요?
 
@@ -112,7 +200,18 @@ Optional Binding은 옵셔널이 값을 포함하고 있는지 여부를 확인�
 정적 바인딩: 이벤트는 컴파일 시간에 발생합니다. 정적 바인딩에서 실행이 빠릅니다. 초기 바인딩이 있습니다. "컴파일 시간"에 해결됩니다. 메소드 오버로딩은 정적 바인딩의 예시입니다.
 동적 바인딩: 이벤트는 실행 시간에 발생합니다. 동적 바인딩에서 실행이 느립니다. 지연 바인딩이 있습니다. "실행 시간"에 가상 바인딩으로 해결됩니다. 메소드 오버라이딩은 동적 바인딩의 예시입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 11. Entity 상속은 무엇인가요?
 
@@ -123,7 +222,18 @@ entity 상속은 클래스 상속과 유사하게 작동합니다. 때로는 많
 
 네, Core Data에서 멀티스레딩이 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 13. Deinit이란 무엇인가요?
 
@@ -133,7 +243,18 @@ DeInitializer는 클래스의 인스턴스가 확보 해제되기 직전에 호�
 
 이미 할당된 객체의 재사용성입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `reuseIdentifier`은 UITableView에서 모든 비슷한 행을 그룹화하는 데 사용됩니다.
 
@@ -143,7 +264,18 @@ UITableView는 일반적으로 테이블에서 보이는 내용을 표시할만�
 
 ### 16. UITableViewCell 생성자에서 재사용 식별자를 왜 사용하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 재사용할 식별자를 설정하지 않으면 TableView는 새로운 UITableViewCell을 할당하도록 강제합니다.
 재사용 식별자의 사용 목적은 비슷한 행 내용을 UITableView에서 그룹화하는데 사용되지만 데이터 내용은 다를 수 있습니다.
@@ -154,7 +286,18 @@ UITableView는 일반적으로 테이블에서 보이는 내용을 표시할만�
 
 ## 18. Objective-C에서 @synthesize란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `@synthesize`는 컴파일러에게 변수에 대한 setter와 getter 프로퍼티를 생성하도록 하는 것이에요.
 
@@ -166,7 +309,18 @@ ARC (Automatic Reference Count)는 iOS 애플리케이션에서 사용되며 애
 class Person {
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 명함: 문자열
 
@@ -176,8 +330,18 @@ self.name = name
 
 print(“\(이름)이(가) 초기화되고 있습니다.”)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ' deinit '
 
@@ -185,9 +349,18 @@ print("\"\(name) is being deinitialized.\"")
 
 '
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 var person1: Person? = Person(name: “Alice”)
 
@@ -195,8 +368,18 @@ var person2: Person? = person1 // person1 and person2 now both reference the sam
 
 person1 = nil // The reference count of the Person instance decreases to 1
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 person2 = nil // Person 인스턴스의 참조 카운트가 0으로 감소하고 인스턴스가 해제됩니다.
 
@@ -206,7 +389,18 @@ person2 = nil // Person 인스턴스의 참조 카운트가 0으로 감소하고
 
 인터페이스 빌더에서 사용되는 속성인 IBDesignable 및 IBInspectable은 특정 속성(색상/폭/그림자 및 테두리와 같은)이 스토리보드에서 라이브로 구성될 수 있도록 도와주며 인터페이스 빌더에서 해당 요소를 직접 렌더링하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 21. ‘assign’와 ‘retain’ 키워드의 차이점을 설명해주세요.
 
@@ -216,7 +410,18 @@ Assign — 세터가 단순 할당을 사용한다는 것을 명시합니다. fl
 
 # 22. iBeacons이란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iBeacon.com에서는 iBeacon을 Apple의 기술 표준으로 정의하며, 이를 통해 Mobile Apps이 물리적 세계에서 비콘에서 신호를 수신하고 그에 맞게 반응할 수 있습니다. iBeacon 기술을 통해 Mobile Apps은 마이크로 로컬 스케일에서 위치를 이해하고 위치에 기반한 하이퍼 컨텍스트 콘텐츠를 사용자에게 제공할 수 있습니다. 기술은 Bluetooth Low Energy를 기반으로 합니다.
 
@@ -226,7 +431,18 @@ Apple의 Bluetooth Low Energy(BLE) 무선 기술인 iBeacon은 iPhones 및 기�
 
 객체에 autorelease 메시지를 보내면 해당 객체는 로컬 AutoReleasePool에 추가됩니다. 그렇기 때문에 더 이상 해당 객체를 신경 쓸 필요가 없습니다. AutoReleasePool이 소멸될 때 (주 실행 루프에서), 해당 객체는 릴리스 메시지(참조 횟수가 하나 감소)를 받으며, RetainCount가 0이되면 가비지 수집기가 해당 객체를 제거합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 릴리스: `release` 메시지를 객체에 보낼 때 보유 카운트가 하나 감소합니다.
 
@@ -236,7 +452,18 @@ Apple의 Bluetooth Low Energy(BLE) 무선 기술인 iBeacon은 iPhones 및 기�
 
 autorelease 풀은 `release` 메시지를 "나중에"까지 보낼 수 있게 해주는 편의 기능입니다. 이 "나중에"는 여러 곳에서 발생할 수 있지만, Cocoa GUI 애플리케이션에서 가장 흔한 시점은 현재 런 루프 사이클의 끝입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 25. 블록에서 변수에 액세스하는 방법은?
 
@@ -246,11 +473,33 @@ autorelease 풀은 `release` 메시지를 "나중에"까지 보낼 수 있게 �
 
 또한 저와 연락할 수도 있습니다 📲
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크다운 형식으로 테이블 태그를 변경해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아무 의견, 질문 또는 추천이 있으시면 아래 댓글 섹션에 자유롭게 남겨주세요💬
 
@@ -260,6 +509,17 @@ autorelease 풀은 `release` 메시지를 "나중에"까지 보낼 수 있게 �
 
 Swiftfy를 팔로우하여 더 많은 업데이트를 받아보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 기사를 보고 싶다면 참고하세요:

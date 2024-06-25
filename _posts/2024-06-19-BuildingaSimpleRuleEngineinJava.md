@@ -3,14 +3,12 @@ title: "자바로 간단한 규칙 엔진 구축하기"
 description: ""
 coverImage: "/assets/img/2024-06-19-BuildingaSimpleRuleEngineinJava_0.png"
 date: 2024-06-19 22:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-BuildingaSimpleRuleEngineinJava_0.png
 tag: Tech
 originalTitle: "Building a Simple Rule Engine in Java"
 link: "https://medium.com/@kiarash.shamaii/building-a-simple-rule-engine-in-java-2d88eff7b465"
 ---
-
-
 
 ![Building a Simple Rule Engine in Java](/assets/img/2024-06-19-BuildingaSimpleRuleEngineinJava_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@kiarash.shamaii/building-a-simple-rule-engine-in-java
 
 규칙 엔진을 구축하기에 앞서 필요한 구성 요소를 정의해 보겠습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 규칙:
 
@@ -31,7 +39,18 @@ link: "https://medium.com/@kiarash.shamaii/building-a-simple-rule-engine-in-java
 
 규칙 엔진은 규칙 컬렉션을 관리하고 이를 객체 집합에 적용하는 것을 담당합니다. 정의된 규칙에 기반하여 객체를 필터링하고 필터된 결과를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 대상-객체:
 
@@ -41,7 +60,18 @@ link: "https://medium.com/@kiarash.shamaii/building-a-simple-rule-engine-in-java
 
 규칙 엔진을 단계별로 구축해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 규칙 정의:
 먼저 Rule이라는 enum을 사용하여 규칙을 정의합니다. enum의 각 규칙은 우리가 평가하고 싶은 특정 조건이나 기준을 나타냅니다. 예를 들어, 코드에서 우리는 AGE_GREATER_THAN_30과 NAME_STARTS_WITH_B 두 가지 규칙을 정의했습니다. 각 규칙에는 해당 규칙의 조건을 정의하는 프레디케이트가 있습니다.
@@ -72,7 +102,18 @@ Rule Engine 생성:
 필터링 로직 구현:
 RuleEngine 클래스의 filter 메서드에서는 개체 목록을 반복하고 Java 8 Stream API의 allMatch 메서드를 사용하여 각 규칙을 적용합니다. 이 메서드는 주어진 개체에 대해 모든 규칙이 통과되었는지 확인합니다. 모든 규칙이 통과되면 해당 개체를 필터링된 목록에 추가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 public interface TestRule {
@@ -129,7 +170,18 @@ public class Person {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모두 함께 해보기
 
@@ -162,7 +214,18 @@ public class Main {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

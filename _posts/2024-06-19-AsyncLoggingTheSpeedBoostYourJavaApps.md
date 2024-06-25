@@ -3,13 +3,12 @@ title: "비동기 로깅 자바 앱에 제공되는 속도 향상"
 description: ""
 coverImage: "/assets/img/2024-06-19-AsyncLoggingTheSpeedBoostYourJavaApps_0.png"
 date: 2024-06-19 10:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-AsyncLoggingTheSpeedBoostYourJavaApps_0.png
 tag: Tech
 originalTitle: "Async Logging: The Speed Boost Your Java Apps"
 link: "https://medium.com/@knowledge.cafe/async-logging-the-speed-boost-your-java-apps-d9d161ad1fe4"
 ---
-
 
 <img src="/assets/img/2024-06-19-AsyncLoggingTheSpeedBoostYourJavaApps_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@knowledge.cafe/async-logging-the-speed-boost-your-jav
 
 간단한 Java 응용 프로그램을 만들어 비동기식 로깅의 영향을 시연해보겠습니다. 저는 log4j-api.2.17.1, log4-core.2.17.1 및 lmax disruptor.4.0.0 같은 종속성을 가진 JDK 17을 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 코드는 GitHub에서 사용할 수 있습니다.
 
@@ -27,8 +37,18 @@ link: "https://medium.com/@knowledge.cafe/async-logging-the-speed-boost-your-jav
 
 아래 log4j2.xml 스니펫은 두 개의 appender인 RandomAccessFile과 Console을 정의합니다. RandomAccessFile appender는 특정 패턴 레이아웃을 사용하여 "target" 디렉토리의 "async.log" 파일에 메시지를 로깅하며, Console appender는 다른 패턴 레이아웃으로 시스템 콘솔에 메시지를 로깅합니다. 파일 appender는 성능을 향상시키기 위해 일괄로 flush되도록 설정되어 있습니다. 추가로 루트 로거는 "info" 레벨의 메시지를 파일 appender에 로깅하도록 구성되어 있고, "syncLogger"라는 별도의 로거가 콘솔 appender에 메시지를 로깅하도록 정의되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
         <!-- Async Loggers will auto-flush in batches, so switch off immediateFlush. -->
         <RandomAccessFile name="RandomAccessFile" fileName="target/async.log" immediateFlush="false" append="false">
@@ -36,25 +56,31 @@ link: "https://medium.com/@knowledge.cafe/async-logging-the-speed-boost-your-jav
                 <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern>
             </PatternLayout>
         </RandomAccessFile>
-        
+
         <Console name="Console" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
- 
-
 
 위 코드를 실행하면 Async 로깅의 영향을 확인할 수 있습니다. 제 개인 노트북에서 실행 후 아래 출력을 확인했습니다. 이 시나리오에서 Async 로깅이 동기 로깅보다 약 72.98% 빠름을 보여줍니다.
-
 
 === 처리 시간 요약 ===
 동기 로깅 시간 2184 ms
 Async 로깅 시간 590 ms
 
-
 ## Async 로깅의 장점
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바 애플리케이션에 대한 비동기 로깅은 성능 및 응답성 향상부터 높은 로깅 양을 처리하고 확장성을 향상시키는 장점을 제공합니다.
 
@@ -64,7 +90,18 @@ Async 로깅 시간 590 ms
 
 확장성: 로깅 인프라는 더 많은 로그를 수용하도록 순조롭게 확장되어 애플리케이션의 핵심 기능에 영향을 주지 않습니다. 로깅을 주 애플리케이션 스레드로부터 분리함으로써 비동기 로깅은 수평 확장을 가능케 합니다. Disruptor 풀에 더 많은 워커 스레드를 추가함으로써 로깅 성능을 확장하여 더 높은 로그 양을 처리할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자원 사용량 줄이기: 주 스레드의 컨텍스트 전환 오버헤드와 메모리 소비를 최소화하세요.
 
@@ -77,7 +114,18 @@ Async 로깅 시간 590 ms
 - 로그 메시지의 순서: 비동기 로깅은 특히 여러 스레드가 동시에 로깅할 때 로그 메시지의 순서가 뒤죽박죽이 될 수 있습니다. 로거는 로그 메시지의 순서를 보존하려 노력하지만 로깅의 비동기적인 특성으로 인해 결정론적이지 않은 동작을 가져올 수 있습니다.
 - 디버깅 및 문제 해결: 비동기 로깅 문제를 디버깅하는 것은 도전적일 수 있습니다. 특히 레이스 컨디션, 데드락 또는 예상치 못한 로깅 동작과 관련된 경우에는 신중한 분석과 테스트가 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결론
 

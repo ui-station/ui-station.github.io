@@ -3,13 +3,12 @@ title: "LeetCode 3068번 문제 해결하기 노드 값의 최대 합 찾기"
 description: ""
 coverImage: "/assets/img/2024-05-20-SolvingLeetCode3068FindtheMaximumSumofNodeValues_0.png"
 date: 2024-05-20 15:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SolvingLeetCode3068FindtheMaximumSumofNodeValues_0.png
 tag: Tech
 originalTitle: "Solving LeetCode 3068. Find the Maximum Sum of Node Values"
 link: "https://medium.com/@yash-soni/solving-leetcode-3068-find-the-maximum-sum-of-node-values-4817bed75282"
 ---
-
 
 # 문제 설명:
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@yash-soni/solving-leetcode-3068-find-the-maximum-sum-
 - nums[u] = nums[u] XOR k
 - nums[v] = nums[v] XOR k
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Alice가 작업을 여러 번 수행하여 얻을 수 있는 값의 최대 합을 반환합니다.
 
@@ -38,7 +48,18 @@ Explanation: Alice가 다음을 수행하여 최대 합 6을 얻을 수 있습�
 가능한 최대 값 합은 6임을 보여줄 수 있습니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예제 2:
 
@@ -55,7 +76,18 @@ It can be shown that 9 is the maximum achievable sum of values.
 
 예제 3:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 Input: nums = [7,7,7,7,7,7], k = 3, edges = [[0,1],[0,2],[0,3],[0,4],[0,5]]
@@ -65,7 +97,7 @@ Explanation: 최대 가능한 합은 42로, Alice가 작업을 수행하지 않�
 
 제한사항:
 
-- 2 `= n == nums.length `= 2 * 104
+- 2 `= n == nums.length `= 2 \* 104
 - 1 `= k `= 109
 - 0 `= nums[i] `= 109
 - edges.length == n - 1
@@ -73,7 +105,18 @@ Explanation: 최대 가능한 합은 42로, Alice가 작업을 수행하지 않�
 - 0 `= edges[i][0], edges[i][1] `= n - 1
 - 입력은 edges가 유효한 트리를 나타내도록 생성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 방법: 탐욕법 (정렬 기반 접근)
 
@@ -83,7 +126,18 @@ Explanation: 최대 가능한 합은 42로, Alice가 작업을 수행하지 않�
 
 만약 이 순 변화가 양수라면, 모든 노드 값의 총합은 증가합니다. 그렇지 않으면 감소합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "가정해보겠습니다. 노드 쌍에서 노드 합에 가장 큰 증가를 제공하는" 효율적인 작업 "을 수행하려고 한다고 가정해봅시다. 가장 큰 양수 netChange 값을 가진 노드를 선택하면 노드 합에 가장 큰 증가를 제공할 것입니다.
 
@@ -93,7 +147,18 @@ Explanation: 최대 가능한 합은 42로, Alice가 작업을 수행하지 않�
 
 ## 알고리즘"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. nums의 크기인 n의 netChange 배열과 현재 nums의 합을 저장하는 정수 nodeSum을 초기화합니다.
 
@@ -103,7 +168,18 @@ Explanation: 최대 가능한 합은 42로, Alice가 작업을 수행하지 않�
 
 3. netChange 배열을 내림차순으로 정렬합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. netChange 배열을 반복합니다 (0부터 n-1까지, 단계 크기 = 2):
 
@@ -114,7 +190,18 @@ Explanation: 최대 가능한 합은 42로, Alice가 작업을 수행하지 않�
 
 ## 구현
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 class Solution {

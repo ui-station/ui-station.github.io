@@ -20,7 +20,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 # 주요 기술
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테이블 구문 분석
 
@@ -30,8 +41,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 제 현재 이해에 따르면, Figure 1에 나타난 것처럼 여러 가지 방법이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_0.png)
 
@@ -42,8 +63,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 (b). Table Transformer와 같은 전문적인 표 감지 모델을 활용하여 표 구조를 식별합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 입력: 이미지로 된 PDF 페이지
 - 출력: 이미지로 된 테이블
@@ -55,7 +86,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 (d). Nougat, Donut 등의 end-to-end 모델을 사용하여 전체 문서를 구문 분석하고 테이블 관련 콘텐츠를 추출하세요. 이 접근 방식은 OCR 모델을 필요로하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 입력: PDF 또는 이미지 형식의 문서
 - 출력: 전체 문서의 구문 분석 결과를 통해 얻은 LaTeX 또는 JSON 형식의 표
@@ -66,7 +108,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 ## 색인 구조
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 색인 구조에 따라 해결책은 대략 다음 카테고리로 나뉩니다:
 
@@ -76,7 +129,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 (g). LaTeX 형식의 색인 표만 있는 경우.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### (h). 테이블 요약만 색인화합니다.
 
@@ -87,7 +151,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 ![Figure 2](/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에서 논의한 대로 Table summary는 일반적으로 LLM을 사용하여 생성됩니다:
 
@@ -98,7 +173,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 일부 알고리즘은 테이블 파싱이 필요하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (j). 관련 이미지(PDF 페이지)와 사용자 쿼리를 VQA 모델(예: DAN 등)이나 멀티모달 LLM에 보내고 답변을 받습니다.
 
@@ -110,7 +196,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 - 색인할 내용: 텍스트 형식의 문서
 - LLM에 전송되는 내용: 쿼리 + 해당 텍스트 형식의 페이지
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (l) 사용자의 쿼리와 관련 이미지(PDF 페이지), 텍스트 청크를 다중 모달 LLM(예: GPT-4V 등)에 보내고 답변을 직접 반환합니다.
 
@@ -121,7 +218,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 ![image](/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (m). 먼저, 문서의 모든 표를 이미지 형태로 변환하기 위해 (a)부터 (d) 범주 중 하나의 방법을 적용하세요. 그런 다음 모든 표 이미지와 사용자 질의를 멀티모달 LLM(예: GPT-4V 등)에 직접 전송하여 답변을 받아보세요.
 
@@ -132,7 +240,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 (n). (m)에서 추출된 이미지 형식의 표를 사용하여 OCR 모델을 이용해 표 안의 모든 텍스트를 인식한 후, 표 안의 모든 텍스트와 사용자 질의를 LLM에 직접 전송하여 답변을 받아보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 색인할 콘텐츠: 없음
 - LLM에 보내지는 콘텐츠: 사용자 쿼리 + 모든 테이블 내용(텍스트 형식)
@@ -144,7 +263,18 @@ RAG를 구현하는 것은 도전적인 과제를 제공하는데, 특히 비구
 
 # 기존 오픈 소스 솔루션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 섹션에서는 RAG의 테이블에 대한 주요 기술을 요약하고 분류했습니다. 이 글이 구현하는 해결책을 제안하기 전에 오픈 소스 솔루션 중 일부를 탐색해보겠습니다.
 
@@ -157,7 +287,18 @@ LlamaIndex는 네 가지 방법을 제안했는데, 처음 세 가지는 다중 
 
 이 글의 분류에 따르면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이 기사에서의 (j) 항목과 유사한 첫 번째 방법은 테이블 구문 분석이 필요하지 않습니다. 그러나 결과는 이미지에 정답이 있더라도 올바른 답을 내놓지 못하는 것을 보여줍니다.
 - 두 번째 방법은 테이블 구문 분석을 포함하며 (a) 항목과 일치합니다. 색인된 콘텐츠는 GPT-4V의 결과에 따라 테이블 콘텐츠 또는 요약이며, 이는 (f) 또는 (h)에 해당할 수 있습니다. 이 방법의 단점은 GPT-4V가 이미지에서 테이블을 식별하고 내용을 추출하는 능력이 불안정하다는 것이며, PDF 형식에서 발생하는 테이블, 텍스트 및 다른 이미지가 혼합된 경우에 특히 해당됩니다.
@@ -171,7 +312,18 @@ Langchain은 일부 솔루션을 제안했습니다. Semi-structured RAG의 주�
 - 테이블 구문 분석은 비구조적을 사용하며, 이는 (c) 항목에 해당합니다.
 - 색인 방법은 문서 요약 색인이며, 이는 (i) 항목에 해당합니다. 작은 청크 콘텐츠: 테이블 요약, 큰 청크 콘텐츠: 원시 테이블 콘텐츠(텍스트 형식).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 그림 5에 나타난 대로:
 
@@ -181,7 +333,18 @@ Langchain은 일부 솔루션을 제안했습니다. Semi-structured RAG의 주�
 
 ![Figure 6](/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 옵션 1은 이 기사의 (l) 범주와 유사합니다. 멀티모달 임베딩(예: CLIP)을 사용하여 이미지와 텍스트를 임베드하고 유사성 검색을 통해 둘 다 검색하며, 생 이미지 및 청크를 멀티모달 LLM에게 전달하여 답변 합성을 수행합니다.
 
@@ -192,7 +355,18 @@ Langchain은 일부 솔루션을 제안했습니다. Semi-structured RAG의 주�
 
 옵션 3은 이미지로부터 텍스트 요약을 생성하기 위해 멀티모달 LLM(예: GPT-4V, LLaVA, 또는 FUYU-8b)를 사용합니다. 그런 다음 이미지 요약을 임베드하고 검색하여 원본 이미지에 대한 이미지 요약과 함께 반환하고, 원본 이미지 및 텍스트 청크를 멀티모달 LLM에게 전달하여 답변 합성을 수행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 제안된 솔루션
 
@@ -204,7 +378,18 @@ Langchain은 일부 솔루션을 제안했습니다. Semi-structured RAG의 주�
 - 문서 요약 인덱스 구조(catogery (i)): 작은 청크의 내용에는 테이블 요약이, 큰 청크의 내용에는 LaTeX 형식의 해당 테이블과 텍스트 형식의 테이블 캡션이 포함됩니다. 이를 다중 벡터 검색기를 사용하여 구현합니다.
 - 테이블 요약 획득 방법: 테이블과 테이블 캡션을 LLM에 보내 요약을 받습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법의 장점은 테이블을 효율적으로 구문 분석하면서 테이블 요약과 테이블 간의 관계를 포괄적으로 고려한다는 것입니다. 또한, 멀티모달 LLM이 필요하지 않아 비용을 절감할 수 있습니다.
 
@@ -214,7 +399,18 @@ Nougat은 도넛 아키텍처를 바탕으로 개발되었습니다. Figure 8에
 
 ![Nougat Principle](/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 누가(Nougat)가 수식을 분석하는 능력이 인상적이에요. 테이블 분석에도 능숙해요. 더불어, 테이블 캡션을 연결하여 보여줄 수 있어 편하지요. 그림 9에서 보여졌듯이요:
 
@@ -224,11 +420,33 @@ Nougat은 도넛 아키텍처를 바탕으로 개발되었습니다. Figure 8에
 
 중간 결과가 없는 엔드 투 엔드 모델이므로, 훈련 데이터에 많이 의존할 것으로 예상됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 누가(Nougat)는 이전 파싱 도구에서 어려웠던 부분인 수식 및 표와 같은 부분을 정확하게 LaTeX 소스 코드로 파싱할 수 있습니다.
 - 누가(Nougat)의 파싱 결과는 마크다운과 유사한 반구조화된 문서입니다.
@@ -243,7 +461,18 @@ Nougat은 도넛 아키텍처를 바탕으로 개발되었습니다. Figure 8에
 
 ## 코드 구현
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 관련 Python 패키지를 설치해주세요.
 
@@ -268,7 +497,18 @@ chromadb                                 0.4.24
 nougat-ocr                               0.1.17
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 환경을 설정하고 라이브러리를 가져와주세요:
 
@@ -342,7 +582,18 @@ mmd_path = output_dir + '/' + os.path.splitext(file_path)[0].split('/')[-1] + ".
 tables = june_get_tables_from_mmd(mmd_path)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 함수 june_get_tables_from_mmd은 Figure 10에 표시된 mmd 파일에서 'table'부터 'table'까지의 모든 내용 및 'table' 다음 줄을 추출하는 데 사용됩니다.
 
@@ -352,7 +603,18 @@ tables = june_get_tables_from_mmd(mmd_path)
 
 PDF에서 표를 구문 분석한 결과는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표 1: 다양한 레이어 유형에 대한 최대 경로 길이, 레이어당 복잡성 및 최소 순차 작업 수가 표시됩니다.
 
@@ -362,7 +624,18 @@ PDF에서 표를 구문 분석한 결과는 다음과 같습니다:
 
 표 4: Transformer가 영어 구성 구문 분석에 잘 일반화되며, WSJ 23 섹션의 결과가 제시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-AdvancedRAG07ExploringRAGforTables_10.png" />
 
@@ -396,7 +669,18 @@ retriever.docstore.mset(list(zip(table_ids, tables)))
 
 모든 준비가 되었습니다. 간단한 RAG 파이프라인을 구축하고 쿼리를 수행해보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 프롬프트 템플릿
@@ -432,8 +716,18 @@ print(체인.invoke("Which parser performs best for WSJ 23 F1"))  # 테이블 4�
 
 전체 코드는 아래와 같습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import os
@@ -570,9 +864,18 @@ print(chain.invoke("Which parser performs best for WSJ 23 F1"))  # Query about t
 
 이 문서에서는 표를 파싱하는 데 nougat을 사용합니다. 그러나 더 빠르고 효과적인 파싱 도구가 있다면 nougat을 대체 고려할 것입니다. 우리의 도구에 대한 태도는 먼저 올바른 아이디어를 가지고, 그런 다음 도구를 찾아 실현하는 것에 있으며, 특정 도구에 의존하는 대신입니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 모든 테이블 콘텐츠를 LLM에 입력합니다. 그러나 실제 시나리오에서는 표가 LLM 콘텍스트 길이를 초과하는 경우를 고려해야 합니다. 이 문제를 효과적인 청킹 방법을 사용하여 해결할 수 있습니다.
 
@@ -582,7 +885,18 @@ RAG 기술에 관심이 있다면, 다른 기사들도 확인해보세요.
 
 마지막으로, 이 기사에 오류나 누락된 내용이 있다면, 또는 궁금한 점이 있으면 댓글 섹션에서 언급해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 친근한 어조로 번역한 내용 🚀
 

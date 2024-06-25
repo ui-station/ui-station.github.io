@@ -3,13 +3,12 @@ title: "SwiftData로 원격 API에서 데이터 저장하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-UsingSwiftDatatoStoreDatafromaRemoteAPI_0.png"
 date: 2024-06-22 23:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-UsingSwiftDatatoStoreDatafromaRemoteAPI_0.png
 tag: Tech
 originalTitle: "Using SwiftData to Store Data from a Remote API"
 link: "https://medium.com/@jpmtech/using-swiftdata-to-store-data-from-a-remote-api-9f283834aa50"
 ---
-
 
 앱 사용자에게 오프라인 기능을 제공하고 앱 운영 비용을 줄이는 데 중요한 로컬 데이터 저장은 매우 중요합니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@jpmtech/using-swiftdata-to-store-data-from-a-remote-a
 
 # API 호출로부터 SwiftData를 사용하여 로컬로 데이터 저장하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드로 넘어가기로 하겠습니다. SwiftData에 익숙하지 않으신 경우, 새로운 내용을 익히시려면 이 기사를 확인해보세요.
 
@@ -40,7 +50,18 @@ struct PhotoDTO: Identifiable, Codable {
 
 SwiftData로 시작하는 기사를 읽으신 경우, 이 내용은 익숙하게 느껴질 것입니다. 클래스에 새로운 코드 조각을 추가했는데, 그것은 편의 이니셜라이저입니다. 이를 통해 DTO를 직접 전달하여 SwiftData entity를 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 //  PhotoObject.swift
@@ -54,7 +75,7 @@ class PhotoObject {
     var title: String
     var url: String
     var thumbnailUrl: String
-    
+
     init(albumId: Int, id: Int, title: String, url: String, thumbnailUrl: String) {
         self.albumId = albumId
         self.id = id
@@ -62,7 +83,7 @@ class PhotoObject {
         self.url = url
         self.thumbnailUrl = thumbnailUrl
     }
-    
+
     convenience init(item: PhotoDTO) {
         self.init(
             albumId: item.albumId,
@@ -110,7 +131,7 @@ class WebService {
 
         return downloadedData
     }
-    
+
     private func downloadData<T: Codable>(fromURL: String) async -> T? {
         do {
             guard let url = URL(string: fromURL) else { throw NetworkError.badUrl }
@@ -118,7 +139,7 @@ class WebService {
             guard let response = response as? HTTPURLResponse else { throw NetworkError.badResponse }
             guard response.statusCode >= 200 && response.statusCode < 300 else { throw NetworkError.badStatus }
             guard let decodedResponse = try? JSONDecoder().decode(T.self, from: data) else { throw NetworkError.failedToDecodeResponse }
-            
+
             return decodedResponse
         } catch NetworkError.badUrl {
             print("There was an error creating the URL")
@@ -131,7 +152,7 @@ class WebService {
         } catch {
             print("An error occured downloading the data")
         }
-        
+
         return nil
     }
 }
@@ -139,8 +160,18 @@ class WebService {
 
 뷰 레이어에서는 데이터베이스에서 PhotoObjects를 읽어와 목록으로 표시합니다. 목록 내에서는 AsyncImage 구성 요소를 사용해 API에서 이미지를 표시하고 해당 항목의 ID를 이미지 옆에 표시합니다. 목록의 하단에는 몇 가지 다른 변형을 추가했습니다. overlay 변형은 목록이 비어 있을 때 진행 스피너를 표시합니다. task 변형은 목록이 비어 있으면 API에서 데이터를 자동으로 가져오도록 합니다. 또한, refreshable 변형을 사용해 목록 구성 요소에 pull to refresh를 추가했습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "task" 및 "refreshable" 수정자를 사용하면 사용자가 업데이트된 데이터를 확인하려고 할 때만 API가 호출되도록 보장합니다(API를 실행하는 비용을 줄임). 이는 앱을 런칭할 때마다 API에서 데이터를 가져오는 대신 두 번째로 데이터가 데이터베이스에서 가져와지게 함을 의미합니다.
 
@@ -154,13 +185,13 @@ import SwiftUI
 struct ContentView: View {
     @Environment(\.modelContext) var modelContext
     @Query(sort: \PhotoObject.id) var photos: [PhotoObject]
-    
+
     var body: some View {
         List(photos) { item in
             HStack {
                 Text(item.id, format: .number)
                 Spacer()
-                
+
                 AsyncImage(url: URL(string: item.url)!) { imagePhase in
                     switch imagePhase {
                     case .empty:
@@ -207,7 +238,7 @@ struct ContentView: View {
             thumbnailUrl: "https://via.placeholder.com/150/92c952"
         )
         container.mainContext.insert(sampleObject)
-        
+
         return ContentView().modelContainer(container)
     } catch {
         fatalError("Failed to create model container")
@@ -217,6 +248,17 @@ struct ContentView: View {
 
 이 글이 유익하다고 느끼신다면, 제를 팔로우하는 것, 이 글에 👏 반응을 보내는 것, 또는 공유하여 다른 사람이 더 쉽게 찾을 수 있도록 돕는 것도 고려해주세요."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 주제에 대해 궁금한 점이 있거나 동일한 작업을 수행하는 다른 방법을 알고 계신다면, 이 게시물에 답글을 달거나 친구에게 공유하여 의견을 얻을 수 있습니다. Native 모바일 개발에 대해 더 배우고 싶다면, 여기에서 작성한 다른 기사들을 확인해보세요: [https://medium.com/@jpmtech](https://medium.com/@jpmtech). Native 모바일 개발로 제작된 앱들을 보고 싶다면, 여기에서 제가 만든 앱들을 확인해보세요: [https://jpmtech.io/apps](https://jpmtech.io/apps). 제 작품을 확인해주셔서 감사합니다!

@@ -3,13 +3,12 @@ title: "Mac 장치에서 10년 이상의 macOS 지원을 볼 수 있을까요"
 description: ""
 coverImage: "/assets/img/2024-05-18-AreWeAboutToSeeDecadeMacOSSupportForMacs_0.png"
 date: 2024-05-18 17:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-AreWeAboutToSeeDecadeMacOSSupportForMacs_0.png
 tag: Tech
 originalTitle: "Are We About To See Decade+ MacOS Support For Macs?"
 link: "https://medium.com/bricksnbrackets/are-we-about-to-see-decade-macos-support-for-macs-9fa52aa7dd22"
 ---
-
 
 2020년은 좋은 해였다. 그 말을 취소하겠다. 2020년은 많은 면에서 형편없는 해였다. 모두 잊고 싶어하는 전 세계적 재앙이었다. 하지만 몇몇 사람들에게는 그 해를 조금 더 나은 해로 만드는 무언가가 있었고, 그것이 바로 Apple Silicon이었다. 개인 컴퓨팅의 방향을 근본적으로 바꿔놓은 것으로 여겨지는 구세주다. 이것은 전체 산업이 주목하고 Apple의 발자취를 따르는 가치가 있다고 결론지었다. 그러나 하드웨어의 이번 변화는 무언가를 열어주었고, 그것은 이제는 가능성이 희박했던 것이라고 할 수 있는 장기적인 소프트웨어 지원이다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/bricksnbrackets/are-we-about-to-see-decade-macos-suppo
 
 그리고 시간이 흐를수록 이것은 더 나빠질 것으로 생각된다. Apple은 기술적으로 2024년 최초로 인텔 기계 지원을 완전히 중단할 수 있으며, 하위 Mac 제품에 합리적인 가격 및 교체 프로그램이 있기 때문에 2019년 인텔 기계를 보유하고 있는 모든 사람은 최신 macOS를 원한다면 그냥 Apple Silicon으로 넘어가야 한다고 주장할 수 있다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런데 물론 Mac Pro가 있죠, 이 부분이 좀 복잡해요. Apple은 2023년에만 Apple 실리콘 Mac Pro를 출시했기 때문에 최신 인텔 머신은 실제로 2022년 머신이란 사실입니다. 그러므로 수만 달러가 든 하드웨어 지원을 중단하는 것은 매우 대담한 결정일 수 있겠죠. 그래도 그 가능성을 완전히 배제할 수는 없지만, 그들의 사이트에서 2019년 머신으로 명시했으니 (2023년 상반기까지 판매되었음) 이에 대한 고려가 필요합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/bricksnbrackets/are-we-about-to-see-decade-macos-suppo
 
 역사를 보면 어떤 면에서는 모두가 10년간 소프트웨어 지원을 포기해야 한다는 주장도 나올 것입니다. 인텔 전용 머신을 위해 설계된 마지막 OS인 MacOS 카탈리나는 2019년에 출시되었고, 그가 지원하는 가장 오래된 머신은 2012년 출시된 것입니다. 8년입니다. 그러나 2010년 머신은 이미 2006년부터 Intel 기반 머신으로 운영되는 것을 고려하면 Apple은 실제로 10년까지 갈 수도 있었을 것입니다. 이론상으로 말이죠. 혹시 모르니까요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플의 역사에서 파워PC와 인텔 시대는 동일한 문제를 겪었습니다. 크릠토자이트(쿠퍼티노 옆의 도시이며 애플 본사가 있는 곳) 거인은 하드웨어 디자인과 개발을 일부만 제어했습니다. IBM-모토로라 파트너십에서 인텔로 이동하면서도 그것은 결국 파트너십이었습니다. 잘못 알아들지 마세요, 이 이동은 필요했고 애플을 크게 돕게 되었습니다. 요즘 우리가 인텔을 비웃거나 깎아내리더라도, 불과 몇 년씩 조금씩 향상된 매우 뜨거운 프로세서들은 맥을 그 어느 때보다 인기 있게 만들었습니다. 큰 그림에서 보면, 이는 인텔보다 애플을 훨씬 더 도와준 것입니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/bricksnbrackets/are-we-about-to-see-decade-macos-suppo
 
 ![이미지](/assets/img/2024-05-18-AreWeAboutToSeeDecadeMacOSSupportForMacs_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 흥미로운 이유는 128GB M3 Max Machine에서이 숫자를 보고 있기 때문입니다. Apple의 "유선" 메모리는 작업 가능한 총 메모리에 따라 동적으로 변경됩니다. 보고된 바에 의하면, 작동 중에 약 10개의 앱이 열린 상태에서 브라우저에서 몇 십 개의 탭과 함께 실행되어도 필요한 최대 메모리는 약 4GB입니다. 이것은 좋은 소식이지만, 2020 M1 MacBook Air의 8GB 메모리에서 2030 버전 macOS가 원활하게 실행될 것이라고 납득시킬만큼 충분한 이유는 아닙니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/bricksnbrackets/are-we-about-to-see-decade-macos-suppo
 
 M1 머신을 사용한 우리 모두와 현재 Apple Silicon의 데뷔 SOC 능력을 이제야 발견하고 있는 사람들까지도 모두 동의하는 것은 그 속도가 엄청나게 빠르다는 것입니다. 그리고 메모리는 여전히 메모리이지만, 충분히 있다면 표준 생산성 앱을 실행하는 데 어려움이 없을 것이며, 현재 Apple은 모든 기기에 대한 블랭킷 규칙으로 7년 규칙을 적용하는 것으로 보입니다. 이것이 Mac, iPhone 또는 기타 무엇이든.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 동안 앞으로 수년 동안 현명한 선택이었을 수도 있지만, Apple Silicon Mac은 단순히 더 이상 OS 업데이트가 없어서 7년 후에 그들을 버릴 수밖에 없다는 이유로 간주되기에는 훨씬 더 능숙하다고 느껴집니다. 물론, 구시 버전의 OS를 사용할 수는 있지만, 그게 반드시 필요한 이유가 없다는 점도 알 수 있습니다. 7년이 되면 기기의 배터리는 분명히 소진될 것이지만, 그 기기 자체가 사용할 수 없게 되는 것은 아닙니다. Apple은 다음과 같이 명시하고 있습니다.
 
@@ -59,7 +102,18 @@ Apple의 역사적 데이터를 살펴보고 고갈되거나 폐기된 기기에
 
 지난 몇 년 동안 수만 달러를 Mac Pro에 투자한 사람들은 이미 이상한 상황에 처해 있습니다. macOS Sonoma에 있는 5 가지 기능은 이미 Apple Silicon에만 적용되어 있습니다. Intel Mac Pro가 얼마나 강력하더라도, 특정 Sonoma 기능은 단순히 사용할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Presenter Overlay는 Apple의 신경 엔진을 사용하여 주제를 배경에서 분리합니다. 이 기능을 자주 사용하는데, 아마 필수적이지는 않지만 정말 멋진 기능이에요.
 - "Siri"를 약자로 사용하게 되었네요. 인텔 맥을 사용할 때 "Hey"를 생략할 수 없다는 게 밝혀졌어요. 웃기지만 그게 현실이에요.
@@ -73,8 +127,18 @@ PowerPC와 Intel에 대한 결합 지원은 4년 동안에만 지속되었고 �
 
 ![이미지](/assets/img/2024-05-18-AreWeAboutToSeeDecadeMacOSSupportForMacs_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-AreWeAboutToSeeDecadeMacOSSupportForMacs_2.png)
 

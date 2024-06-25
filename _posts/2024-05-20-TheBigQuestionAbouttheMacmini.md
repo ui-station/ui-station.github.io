@@ -3,14 +3,12 @@ title: "맥 미니에 대한 큰 질문"
 description: ""
 coverImage: "/assets/img/2024-05-20-TheBigQuestionAbouttheMacmini_0.png"
 date: 2024-05-20 18:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TheBigQuestionAbouttheMacmini_0.png
 tag: Tech
 originalTitle: "The Big Question About the Mac mini"
 link: "https://medium.com/macoclock/the-big-question-about-the-mac-mini-5b21553e506c"
 ---
-
-
 
 ![](/assets/img/2024-05-20-TheBigQuestionAbouttheMacmini_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/macoclock/the-big-question-about-the-mac-mini-5b21553e
 
 24인치 iMac과 마찬가지로 Mac mini도 Apple로부터 냉대를 받은 적이 많아요. Intel 시대에는 너무 오랫동안 방치되어 왔다는 느낌이었지만, M1 칩이 도입되면서 최종적인 소멸에 대한 불안이 다행히도 걷혔어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희가 오늘 이야기할 상황은 조금 다릅니다. 올해 초에 M2 및 M2 Pro 칩이 내장된 새로운 맥 미니를 받았어요. 제 스튜디오에는 후자가 있고, 스튜디오 디스플레이에 자랑스럽게 연결되어 있습니다. 이 기계는 뛰어난 성능을 자랑합니다.
 
@@ -31,7 +39,18 @@ link: "https://medium.com/macoclock/the-big-question-about-the-mac-mini-5b21553e
 
 만약 그 그룹에 속해 계신다면, 도와드리고 싶어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## M3 맥 미니가 나올까요?
 
@@ -41,7 +60,18 @@ link: "https://medium.com/macoclock/the-big-question-about-the-mac-mini-5b21553e
 
 이겁니다만 이에 대한 근거가 전혀 없어요 (이게 문제의 일부인 것 같아요) 하지만 Gurman과 그의 친구들을 여러 년간 지켜봤는데, 주변에서 관찰할 때 분명하게 그들은 한 번은 신뢰할 만했던 이곳의 내부인 사람들과 연락을 끊었거나, 아니면 그들과 동일한 연락처들이 단지 그들과 재미를 느끼고 있는 것 같아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 몇 주, 몇 달 또는 몇 년 동안 읽을 수 있는 정보들 중에서, 새로운 맥 미니가 언제 출시될지 알고 있는 사람들은 애플 제품 출시를 책임지고 있는 사람들 뿐입니다. 그들은 공개적으로 많은 얘기를 하지 않죠.
 
@@ -51,7 +81,18 @@ link: "https://medium.com/macoclock/the-big-question-about-the-mac-mini-5b21553e
 
 하지만 지금 필요하다면 어떻게 해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알아볼 것부터 시작해 보죠 — 만약 최신 칩을 정말 원한다면.
 
@@ -61,7 +102,18 @@ M2 Mac mini의 가장 가까운 비교 대상은 최근 출시된 M3 iMac입니�
 
 제가 타자를 치며 이 글을 쓰는 동안, 저 뒤에 하나가 있습니다. 마크 엘리스 리뷰의 성능 테스트를 위해 언박싱을 기다리고 있는데요. 거의 3년 만에 M1 버전이 출시된 이후에 얼마나 발전했는지 기대됩니다. 하지만 여러분이 궁금한 건 아마도 M2 Mac mini를 사야 할지 여부일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 두 대의 Mac은 매우 유사하지만 매우 다릅니다. 먼저 칩의 차이가 있습니다. 베이스 M3 칩을 사용한 것은 초기 단계이며, 초기 스트레스 테스트 및 성능 벤치마크가 조금씩 나오기 시작했습니다. 그렇지만, 사양 스케일 하위에 속하는 것을 찾고 있다면, M2 Mac mini와 M3 iMac은 일상적인 사용에서 별 차이가 없을 것입니다.
 
@@ -71,7 +123,18 @@ M2 Mac mini의 가장 가까운 비교 대상은 최근 출시된 M3 iMac입니�
 
 M2 Mac mini와 M3 iMac를 비교할 수 있을까요? 불편하지만 그렇지 않습니다. 그렇기 때문에 후자를 선택할 것입니다. 단, 프로 성능이 필요하다면, M2 Pro Mac mini가 최고 선택일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 혹은 그렇지 않을까요?
 
@@ -81,7 +144,18 @@ M2 Mac mini와 M3 iMac를 비교할 수 있을까요? 불편하지만 그렇지 
 
 음, 꼭 그런 것은 아니에요. 베이스 모델인 M2 Pro 맥 미니는 1,399 파운드부터 시작해요. 이것에는 10코어 CPU, 16코어 GPU, 16GB의 통합 메모리, 그리고 512GB SSD가 포함되어 있어요. 저는 지금 제 것을 사용 중이고, 정말 멋지답니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 14인치 M3 Pro MacBook Pro의 기본 모델은 £2,099부터 시작하여 11코어 CPU, 14코어 GPU, 18GB의 통합 메모리 및 512GB SSD가 포함되어 있습니다.
 
@@ -91,7 +165,18 @@ M2 Mac mini와 M3 iMac를 비교할 수 있을까요? 불편하지만 그렇지 
 
 이것은 가장 예상치 못한 비교 중 하나라고 인정합니다만, 더 깊이 파고들수록 흥미로워집니다. 최종적으로 내리는 결정은 다시 한 번, 주변 기기와 디스플레이를 독립적으로 구입하고 싶은 욕망 및 이동이 필요한지 여부에 따라 달라질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 성능 차이는 낮은 사양의 M3 Pro MacBook Pro와 고성능 M2 Pro Mac mini 간에는 벤치마킹 그룹 외에는 미미할 것입니다. 그 사실을 잊지 마세요.
 
@@ -101,7 +186,18 @@ M2 Mac mini와 M3 iMac를 비교할 수 있을까요? 불편하지만 그렇지 
 
 M3 Mac mini는 오늘 도착할 수도 있고, 다음 주에 도착할 수도 있습니다. 우리는 2025년까지 기다려야 할 수도 있습니다. 아예 2024년을 건너뛸 수도 있어요. 또는 M4 칩이 나올 때까지 기다릴 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아무도 Mac mini에 대해 다음에 무엇을 할지 알지 못합니다. 오늘 이 블로그 글을 읽고 계신다면, 곧 필요하거나 원하시는 것이 있을 것으로 생각됩니다.
 
@@ -111,6 +207,17 @@ M3 Mac mini는 오늘 도착할 수도 있고, 다음 주에 도착할 수도 �
 
 내 이메일 뉴스레터에 가입하여 매주 테크 콘텐츠 크리에이터의 비하인드-더-신 페이지를 시청하세요! 본 게시물에는 제휴 링크가 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2023년 11월 9일에 https://markellisreviews.com에서 최초로 게시되었습니다.

@@ -10,7 +10,6 @@ originalTitle: "Swift Concurrency: Un-tangled up!"
 link: "https://medium.com/@thekrazyjames/swift-concurrency-un-tangled-up-0d27ae54cc7c"
 ---
 
-
 <img src="/assets/img/2024-05-27-SwiftConcurrencyUn-tangledup_0.png" />
 
 Swift 5.5부터는 concurrent programming을 위해 async/await 접근 방식이 도입되어 비동기 작업 관리가 변경되었습니다. 이 방식은 올바르게 구현할 때 많은 이점을 제공하며 고려해야 할 사항도 몇 가지 있습니다.
@@ -19,8 +18,18 @@ Swift 5.5부터는 concurrent programming을 위해 async/await 접근 방식이
 
 Concurrency는 concurrent code를 처리하는 도구를 제공하는 라이브러리로, 이러한 도구는 쓰레드를 다룰 때 안전성을 제공하기 위한 것입니다. 이는 쓰레드를 관리할 때 발생하는 모든 종류의 문제를 포함하며, 흔한 문제 몇 가지를 들자면 다음과 같습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 레이스(Data races). 여러 스레드가 동시에 동일한 데이터 조각에 액세스하여 조작하려고 할 때 발생합니다.
 - 데드락(Deadlocks). 여러 스레드가 서로가 완료되기를 기다리고 계속 지장을 일으킬 때 발생합니다.
@@ -33,7 +42,18 @@ Concurrency는 concurrent code를 처리하는 도구를 제공하는 라이브�
 - 병렬 코드는 다른 작업이 끝나기를 기다릴 필요 없이 동시에 실행될 수 있는 코드입니다.
 - 순차 코드는 이전 결과가 완료되어야 다음 작업을 계속할 수 있는 코드입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구현 방법
 
@@ -44,7 +64,18 @@ Concurrency는 concurrent code를 처리하는 도구를 제공하는 라이브�
 - Async는 비동기 작업을 표시하는 데 주로 사용되며, 작업 내에서 가능한 비동기 기능을 노출하는 데도 사용됩니다. 다시 말해, async 메서드 안에는 비동기 작업이 포함될 수 있습니다.
 - Await은 현재 컨텍스트의 실행이 중지될 수 있는 가능성이 있는 중단 지점을 표시하는 데 사용되며, 그 시간 동안 리소스를 사용하여 다른 작업을 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 일반적인 데이터 가져오기 방법은 완료될 때까지 시간이 걸릴 수 있습니다. 왜냐하면 로컬이거나 클라우드인 데이터베이스에 도달해야 하기 때문이죠.
 
@@ -79,7 +110,18 @@ fetchData { result in
 
 비동기/대기 접근 방식을 사용하면 다음과 같이 개선될 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모든 시간이 걸릴 수 있는 작업 또는 다른 시간이 많이 소요되는 작업을 async로 표시하여 컴파일러가 가능한 비동기 작업을 알 수 있게 합니다.
 - await로 가능한 중단 지점을 찾아보세요. 이 경우 URLSession은 이미 async/await 버전의 dataTask(with:)를 제공합니다. async context 내에서 사용할 수 있으며 완료까지 시간이 소요됩니다.
@@ -107,7 +149,18 @@ Task { // 3
 - 오류가 발생할 수 있는 가능성을 나타내기 위해 throws를 사용하세요.
 - 이러한 오류를 처리하세요(예: do-catch 블록 사용)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 혜택 및 고려 사항은 무엇인가요?
 
@@ -119,7 +172,18 @@ Task { // 3
 
 ## 고려 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 호환성. Async/Await을 사용하는 데 일부 우려 사항이 있는데, 이는 Swift 5.5부터 지원되며, 더 최신 버전은 사용법과 기능을 개선합니다.
 - Actors. 여러 동시 작업에서 액세스해서는 안 되는 기능을 격리하기 위해 액터의 사용을 고려해보세요.

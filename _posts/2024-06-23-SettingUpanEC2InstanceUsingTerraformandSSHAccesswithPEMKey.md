@@ -3,13 +3,12 @@ title: "Terraform과 PEM 키를 사용하여 EC2 인스턴스 및 SSH 접근 설
 description: ""
 coverImage: "/assets/img/2024-06-23-SettingUpanEC2InstanceUsingTerraformandSSHAccesswithPEMKey_0.png"
 date: 2024-06-23 00:22
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SettingUpanEC2InstanceUsingTerraformandSSHAccesswithPEMKey_0.png
 tag: Tech
 originalTitle: "Setting Up an EC2 Instance Using Terraform and SSH Access with PEM Key"
 link: "https://medium.com/@garvit1189/setting-up-an-ec2-instance-using-terraform-and-ssh-access-with-pem-key-a2236e0c2fb6"
 ---
-
 
 이 안내서는 PEM 키를 사용하여 SSH 액세스가 설정된 Terraform을 사용하여 EC2 인스턴스를 생성하는 데 도움이 될 것입니다.
 
@@ -22,7 +21,18 @@ link: "https://medium.com/@garvit1189/setting-up-an-ec2-instance-using-terraform
 - SSH 액세스용 보안 그룹.
 - 라우팅 테이블.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # AWS 자격 증명 구성
 
@@ -34,7 +44,18 @@ AWS CLI 구성: 아래 명령을 실행하여 AWS 자격 증명을 구성하세�
 aws configure
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 자격 증명을 입력해주세요:
 
@@ -51,7 +72,18 @@ Default output format [None]: json
 aws sts get-caller-identity
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령은 IAM 사용자에 대한 세부 정보가 포함된 JSON 응답을 반환해야 합니다.
 
@@ -64,7 +96,18 @@ mkdir terraform_project
 cd terraform_project
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모듈을 위한 하위 디렉토리를 생성해주세요:
 
@@ -79,19 +122,41 @@ cd ec2_setup
 touch main.tf variables.tf vpc.tf subnet.tf security_group.tf ec2.tf internet_gateway.tf route_table.tf key_pair.tf
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파일이 생성되었는지 확인하기 위해 파일 목록을 나열해보세요:
 
 ```js
-ls
+ls;
 ```
 
 ## 구성 시작
 
 ## 1. 제공자 정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 main.tf 파일에서 공급업체를 설정하십시오:
 
@@ -114,7 +179,18 @@ provider "aws" {
 
 variables.tf 파일에서 변수를 정의하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 variable "ssh_key_name" {
@@ -168,7 +244,18 @@ resource "aws_vpc" "my_vpc" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4. 서브넷 정의하기
 
@@ -184,7 +271,18 @@ resource "aws_subnet" "my_subnet" {
 
 # 5. 인터넷 게이트웨이 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 internet_gateway.tf 파일에서 인터넷 게이트웨이를 정의하세요:
 
@@ -198,7 +296,18 @@ resource "aws_internet_gateway" "my_igw" {
 
 security_group.tf 파일에서 보안 그룹을 정의하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 resource "aws_security_group" "ssh_access" {
@@ -257,7 +366,18 @@ resource "aws_instance" "my_ec2_instance" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 8. 라우트 테이블 생성
 
@@ -280,7 +400,18 @@ resource "aws_route_table_association" "my_route_table_assoc" {
 
 # 9. 키페어 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 key_pair.tf 파일에서 키페어를 정의하고 개인 키를 저장하세요:
 
@@ -305,13 +436,35 @@ resource "local_file" "my_private_key" {
 
 Terraform 구성을 초기화하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 테이블 태그를 Markdown 형식으로 변경하세요.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 terraform apply -var 'ssh_key_name=my_ssh_key' -var 'ec2_instance_type=t2.micro' -var 'ec2_instance_tag=["TestInstance"]' -var 'instance_count=1' -var 'private_key_file=my_private_key.pem' -var 'vpc_cidr_block=10.0.0.0/16' -var 'subnet_az=us-west-2a'
@@ -323,10 +476,20 @@ AWS에서 리소스를 확인해보세요:
 
 ![이미지2](/assets/img/2024-06-23-SettingUpanEC2InstanceUsingTerraformandSSHAccesswithPEMKey_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변경한 것입니다.
-
 
 ![이미지1](/assets/img/2024-06-23-SettingUpanEC2InstanceUsingTerraformandSSHAccesswithPEMKey_2.png)
 
@@ -338,7 +501,18 @@ PEM 키를 사용하여 인스턴스로 SSH 연결:
 ssh -i my_private_key.pem ubuntu@<public-ip>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-SettingUpanEC2InstanceUsingTerraformandSSHAccesswithPEMKey_4.png" />
 

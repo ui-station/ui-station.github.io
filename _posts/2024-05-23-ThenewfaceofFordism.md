@@ -3,13 +3,12 @@ title: "포디즘의 새로운 모습"
 description: ""
 coverImage: "/assets/img/2024-05-23-ThenewfaceofFordism_0.png"
 date: 2024-05-23 17:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ThenewfaceofFordism_0.png
 tag: Tech
 originalTitle: "The new face of Fordism"
 link: "https://medium.com/enrique-dans/the-new-face-of-fordism-6b89fb119406"
 ---
-
 
 <img src="/assets/img/2024-05-23-ThenewfaceofFordism_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/enrique-dans/the-new-face-of-fordism-6b89fb119406"
 
 BMW는 이미 공장에서 사용 중인 Optimus 로봇을 보유한 Tesla와 경쟁을 목표로 하고 있습니다. 이와 같이 인간 형상 로봇을 사용하여 반복적이고 위험한 작업을 수행하는 것에 대해 연구해온 Honda나 Boston Dynamics를 인수한 Hyundai 등의 자동차 제조사들은 기업들이 고용인력을 영입하고 유지하기 어려운 일부 여러 가치를 내지 않는 반복적인 작업이 바로 그들이 가장 어려워하는 작업이며, 회사들은 이에 대해 논의하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 다음 세대 로봇의 개발이 진행되고 있습니다. 이러한 로봇들은 사람들과 함께 공간을 공유하는 환경에서 완전히 안전하며, 일 중에 일어나는 학습 과정이 모방을 통해 이뤄집니다. 실제로 Figure의 접근 방식은 로봇이 기업이 생산성을 높이고 비용을 절감하며 더 안전하고 일관된 작업 환경을 조성하는 데 기여할 것으로 보고 있으며, 회사를 RaaS(로보틱스 서비스) 모델로 설립하고 로봇을 기업에 대여할 계획입니다. Figure는 인간의 형태 요소를 모방하고 손으로 수행되는 작업에서 높은 정밀도를 달성하는 데 초점을 맞추고 있습니다.
 

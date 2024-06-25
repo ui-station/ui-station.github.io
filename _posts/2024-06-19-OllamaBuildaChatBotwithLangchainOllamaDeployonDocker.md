@@ -3,13 +3,12 @@ title: "Ollama - Langchain을 사용해 챗봇 만들기, 도커로 배포하기
 description: ""
 coverImage: "/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_0.png"
 date: 2024-06-19 12:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_0.png
 tag: Tech
 originalTitle: "Ollama — Build a ChatBot with Langchain, Ollama , Deploy on Docker"
 link: "https://medium.com/@abvijaykumar/ollama-build-a-chatbot-with-langchain-ollama-deploy-on-docker-5dfcfd140363"
 ---
-
 
 ## 생성적 AI 시리즈
 
@@ -19,7 +18,18 @@ Ollama는 강력한 언어 모델을 손쉽게 컴퓨터에서 실행할 수 있
 
 ## Ollama를 위한 Langchain 챗봇 애플리케이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Langshan을 사용하여 챗봇 애플리케이션을 개발해 보겠습니다. Python 애플리케이션에서 모델에 액세스하기 위해 간단한 Streamlit 챗봇 애플리케이션을 만들 것입니다. 이 Python 애플리케이션을 컨테이너에 배포하고 다른 컨테이너에서 Ollama를 사용할 것입니다. Docker-compose를 사용하여 인프라를 구축할 것입니다. 만약 Docker 또는 docker-compose를 사용하는 방법을 모르신다면, 계속 진행하기 전에 인터넷에서 몇 가지 자습서를 참고해 주세요.
 
@@ -29,11 +39,22 @@ Langshan을 사용하여 챗봇 애플리케이션을 개발해 보겠습니다.
 
 컨테이너를 2개 생성할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Ollama 컨테이너는 모델을 저장하고 로드하기 위해 호스트 볼륨을 사용합니다 (/root/.ollama는 로컬 ./data/ollama로 매핑됩니다). Ollama 컨테이너는 내부적으로 11434로 매핑된 외부 포트인 11434에서 수신 대기합니다.
 - Streamlit 챗봇 애플리케이션은 내부적으로 8501로 매핑된 외부 포트인 8501에서 수신 대기합니다.
-코딩을 시작하기 전에 Python 가상 환경을 설정하겠습니다.
+  코딩을 시작하기 전에 Python 가상 환경을 설정하겠습니다.
 
 ```shell
 python3 -m venv ./ollama-langchain-venv
@@ -42,7 +63,18 @@ source ./ollama-langchain-venv/bin/activate
 
 다음은 streamlit 애플리케이션의 소스 코드입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_1.png" />
 
@@ -52,7 +84,18 @@ requirements.txt에서 종속성을 정의해 봅시다.
 
 <img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Streamlit 애플리케이션의 도커 이미지를 빌드하기 위한 Dockerfile을 정의해 보겠습니다.
 
@@ -62,7 +105,18 @@ requirements.txt에서 종속성을 정의해 봅시다.
 
 아래에 표시된 대로 docker build 명령을 사용하여 도커 이미지를 빌드할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![docker_image_4](/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_4.png)
 
@@ -72,7 +126,18 @@ requirements.txt에서 종속성을 정의해 봅시다.
 
 이제 스트림릿 애플리케이션 및 올라마 컨테이너의 네트워크를 정의하는 docker-compose 구성 파일을 만들어보겠습니다. 이렇게 하면 두 애플리케이션이 상호 작용할 수 있습니다. 또한 위의 그림에서 보듯이 다양한 포트 구성을 정의할 것입니다. 올라마에 대해서는 모델들이 영구적으로 유지되도록 볼륨 매핑도 수행할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_6.png" />
 
@@ -82,7 +147,18 @@ requirements.txt에서 종속성을 정의해 봅시다.
 
 아래 스크린샷에 표시된 대로 도커 컴포즈 ps 명령을 실행하여 컨테이너가 실행 중인 것을 확인할 수 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_8.png)
 
@@ -92,7 +168,18 @@ requirements.txt에서 종속성을 정의해 봅시다.
 
 이제 아래에 표시된 대로 docker exec 명령을 사용하여 도커 컨테이너에 로그인하여 필요한 모델을 다운로드해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 docker exec -it ollama-langchain-ollama-container-1 ollama run phi
@@ -104,27 +191,58 @@ docker exec -it ollama-langchain-ollama-container-1 ollama run phi
 
 로컬 폴더 ./data/ollama에서 다운로드된 모델 파일 및 매니페스트를 확인할 수 있어야 합니다. 이 폴더는 내부적으로 컨테이너에 매핑되어 있으며(Ollama가 다운로드된 모델을 제공하기 위해 찾는 위치인 /root/.ollama에 매핑됨)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변경한 테이블입니다.
 
-
-| `<img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_11.png" />` |
-|---|
+| `<img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_11.png" />`                                                                   |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Lets now run access our streamlit application by opening [http://localhost:8501](http://localhost:8501) on the browser. The following screenshot shows the interface |
 
-| `<img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_12.png" />` |
-|---|
+| `<img src="/assets/img/2024-06-19-OllamaBuildaChatBotwithLangchainOllamaDeployonDocker_12.png" />`                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Lets try to run a prompt “generate a story about dog called bozo”. You shud be able to see the console logs reflecting the API calls, that are coming from our Streamlit application, as shown below |
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 스크린샷에서 확인할 수 있듯이, 내가 보낸 프롬프트에 대한 응답을 받았어요.
 
 도커 컴포즈 다운을 호출하여 배포를 중지할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 스크린샷은 결과를 보여줍니다.
 
@@ -134,7 +252,18 @@ docker exec -it ollama-langchain-ollama-container-1 ollama run phi
 
 도움이 되었기를 바랍니다. 더 많은 실험으로 돌아오겠습니다. 그 동안 즐기고 코딩하세요!!! 곧 다시 만나요!!!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 전체 소스 코드에 액세스할 수 있습니다. abvijaykumar/ollama-langchain (github.com)
 

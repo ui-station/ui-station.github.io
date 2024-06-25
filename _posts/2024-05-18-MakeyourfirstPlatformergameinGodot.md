@@ -3,13 +3,12 @@ title: "당신의 첫 번째 플랫포머 게임을 Godot에서 만들어보세�
 description: ""
 coverImage: "/assets/img/2024-05-18-MakeyourfirstPlatformergameinGodot_0.png"
 date: 2024-05-18 15:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MakeyourfirstPlatformergameinGodot_0.png
 tag: Tech
 originalTitle: "Make your first Platformer game in Godot"
 link: "https://medium.com/@sindhoorarao3/make-your-first-platformer-game-in-godot-1b6da26f3148"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sindhoorarao3/make-your-first-platformer-game-in-godo
 
 Godot은 직관적인 인터페이스를 제공해 환경을 설계하고, 플레이어 캐릭터를 만들고, 애니메이션을 구현할 수 있는 다재다능한 게임 엔진이에요. Godot은 파이썬과 유사한 스크립팅 언어인 Gdscript를 사용해 새로운 이용자들에게 접근하기 쉽게 해줘요. Godot에서는 모든 요소가 노드로 표현돼요. 플레이어 캐릭터든, 오디오 소스든, 게임 개체든, 모두 씬 내에 구성된 노드들이에요. 게다가 씬들은 서로 중첩하여 복잡한 레벨 디자인과 상호 작용을 할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 게임은 세 가지 필수 구성 요소로 구성되어 있습니다:
 
@@ -31,7 +41,18 @@ Godot은 직관적인 인터페이스를 제공해 환경을 설계하고, 플�
 
 <img src="/assets/img/2024-05-18-MakeyourfirstPlatformergameinGodot_0.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 미리보기
 
@@ -41,7 +62,18 @@ Godot은 직관적인 인터페이스를 제공해 환경을 설계하고, 플�
 
 우선적으로, 여기서 Godot을 다운로드합니다. 이 프로젝트에 사용된 에셋은 Kenney의 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Godot을 시작하고 +새로 만들기 버튼을 클릭하고 프로젝트 이름을 입력합니다. 그런 다음 폴더 만들기를 클릭하고 프로젝트 경로를 지정합니다. 마지막으로 만들기 및 편집 버튼을 클릭합니다.
 
@@ -51,7 +83,18 @@ FileSystem에 assets, scripts 및 scenes라는 3개의 폴더를 생성합니다
 
 ![이미지](/assets/img/2024-05-18-MakeyourfirstPlatformergameinGodot_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 플레이어 씬 만들기
 
@@ -61,7 +104,18 @@ FileSystem에 assets, scripts 및 scenes라는 3개의 폴더를 생성합니다
 
 ![이미지](/assets/img/2024-05-18-MakeyourfirstPlatformergameinGodot_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-MakeyourfirstPlatformergameinGodot_4.png" />
 
@@ -71,7 +125,18 @@ FileSystem에 assets, scripts 및 scenes라는 3개의 폴더를 생성합니다
 
 <img src="/assets/img/2024-05-18-MakeyourfirstPlatformergameinGodot_5.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 플레이어를 게임에 넣으려면 플레이어 씬을 게임 씬으로 끌어다 놓기만 하면 됩니다. 제어하고 표시되는 내용을 보려면 카메라를 추가해야 합니다. 이를 위해 Cmd(Ctrl)+A를 누르고 카메라를 검색하세요. 생성을 클릭하고 게임에서 보이고 싶은 영역을 조정하세요.
 
@@ -81,7 +146,18 @@ FileSystem에 assets, scripts 및 scenes라는 3개의 폴더를 생성합니다
 
 ![이미지](/assets/img/2024-05-18-MakeyourfirstPlatformergameinGodot_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 플레이어가 이동하지 않네요 :(
 이 문제를 해결하려면 플레이어 노드를 열고 필터 막대 옆에있는 Attach new script 버튼을 클릭하세요. 기본 템플릿을 선택한 상태로 유지한 채, 경로에서 스크립트 폴더를 선택하고 생성을 클릭하세요.
@@ -92,7 +168,18 @@ FileSystem에 assets, scripts 및 scenes라는 3개의 폴더를 생성합니다
 
 캐릭터가 바로 떨어진 것이 보이나요? 이는 플레이어가 서 있을 땅이 없기 때문입니다! 플레이어는 이제 준비가 되었으니, 세계를 생성해봅시다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 월드 씬 만들기
 
@@ -102,7 +189,18 @@ FileSystem에 assets, scripts 및 scenes라는 3개의 폴더를 생성합니다
 
 # 킬존 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 킬존을 생성하려면, 인스펙터에서 캐릭터의 충돌 레이어를 1에서 2로 변경합니다. 이렇게 하면 캐릭터가 새 레이어에 배치되어 킬존 영역을 캐릭터에게만 할당할 수 있습니다.
 
@@ -112,7 +210,18 @@ FileSystem에 assets, scripts 및 scenes라는 3개의 폴더를 생성합니다
 
 킬존에 사용된 스크립트:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리
 
@@ -122,7 +231,18 @@ FileSystem에 assets, scripts 및 scenes라는 3개의 폴더를 생성합니다
 
 즐거운 코딩하시고, 여러분의 게임이 만드는 과정이 플레이하는 것만큼 즐거워지길 바래요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 참고 자료
 

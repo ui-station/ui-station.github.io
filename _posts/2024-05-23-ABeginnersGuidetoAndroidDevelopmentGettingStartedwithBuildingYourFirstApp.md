@@ -3,13 +3,12 @@ title: "안드로이드 개발 입문자를 위한 가이드 첫 앱 만들기 �
 description: ""
 coverImage: "/assets/img/2024-05-23-ABeginnersGuidetoAndroidDevelopmentGettingStartedwithBuildingYourFirstApp_0.png"
 date: 2024-05-23 12:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ABeginnersGuidetoAndroidDevelopmentGettingStartedwithBuildingYourFirstApp_0.png
 tag: Tech
 originalTitle: "A Beginner’s Guide to Android Development: Getting Started with Building Your First App"
 link: "https://medium.com/@truefactsworld/a-beginners-guide-to-android-development-getting-started-with-building-your-first-app-f341a61b7073"
 ---
-
 
 <img src="/assets/img/2024-05-23-ABeginnersGuidetoAndroidDevelopmentGettingStartedwithBuildingYourFirstApp_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@truefactsworld/a-beginners-guide-to-android-developme
 
 코딩을 시작하기 전에 개발 환경을 설정해야 합니다. 다음은 필요한 기본 도구입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Android Studio: 안드로이드 앱 개발을 위한 공식 통합 개발 환경(IDE)입니다. 안드로이드 앱 빌드 및 디버깅을 위한 포괄적인 도구 세트를 제공합니다.
 - Java 또는 Kotlin: 안드로이드 앱은 주로 Java 또는 Kotlin 프로그래밍 언어를 사용하여 개발됩니다. Java는 전통적으로 안드로이드 개발에 사용되었지만, Kotlin은 간결한 구문과 향상된 기능으로 인해 인기를 얻고 있습니다.
@@ -31,7 +41,18 @@ link: "https://medium.com/@truefactsworld/a-beginners-guide-to-android-developme
 
 안드로이드에서 활동(Activity)은 사용자 인터페이스를 가진 단일 화면을 나타냅니다. 활동은 안드로이드 앱의 구성 요소이며, 각 활동은 Activity 클래스의 하위 클래스로 구현됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 레이아웃:
 
@@ -41,7 +62,18 @@ link: "https://medium.com/@truefactsworld/a-beginners-guide-to-android-developme
 
 뷰는 화면에 표시되는 UI 구성 요소로, 버튼, 텍스트 필드 및 이미지와 같은 요소입니다. 각 뷰는 View 클래스의 서브클래스의 인스턴스이며 XML 속성 또는 프로그래밍적으로 외관과 동작을 사용자 정의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 첫 번째 앱 만들기
 
@@ -51,7 +83,18 @@ link: "https://medium.com/@truefactsworld/a-beginners-guide-to-android-developme
 
 Android Studio를 열고 환영 화면에서 "새 Android Studio 프로젝트 시작"을 선택합니다. 프로젝트 템플릿 선택, 앱의 이름과 패키지 이름 설정, 최소 SDK 버전 선택 등의 프로젝트 설정을 구성하는 안내에 따릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 2: 사용자 인터페이스 디자인
 
@@ -61,7 +104,18 @@ Android Studio를 열고 환영 화면에서 "새 Android Studio 프로젝트 �
 
 ## 단계 3: 코드 작성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 앱의 기능을 구현하는 코드를 작성해야 합니다. 주요 활동 파일 (MainActivity.java 또는 MainActivity.kt)을 열고 다음 코드를 추가하여 앱이 시작될 때 "Hello World" 메시지를 표시하십시오:
 
@@ -71,7 +125,18 @@ Android Studio를 열고 환영 화면에서 "새 Android Studio 프로젝트 �
 
 축하합니다! 첫 번째 Android 앱을 만들고 실행했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다음 단계
 

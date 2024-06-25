@@ -3,15 +3,14 @@ title: "GKE  Gemma  Ollama 유연한 LLM 배포를 위한 파워 트리오 "
 description: ""
 coverImage: "/assets/img/2024-05-18-GKEGemmaOllamaThePowerTrioforFlexibleLLMDeployment_0.png"
 date: 2024-05-18 16:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-GKEGemmaOllamaThePowerTrioforFlexibleLLMDeployment_0.png
 tag: Tech
 originalTitle: "GKE + Gemma + Ollama: The Power Trio for Flexible LLM Deployment 🚀"
 link: "https://medium.com/google-cloud/gke-gemma-ollama-the-power-trio-for-flexible-llm-deployment-5f1fa9223477"
 ---
 
-
-오늘은 구글 젬마를 중점으로 다양한 LLM 배포의 복잡성을 탐색하겠습니다. 선택한 플랫폼은  Ollama 프레임워크로부터 가치 있는 지원을 받는 GKE일 것입니다. 이 이정표를 달성하기 위한 여정은 Open WebUI에 의해 용이하게 이끌어질 것입니다. 이는 원래 OpenAI ChatGPT 프롬프트 인터페이스와 놀라운 유사성을 가지고 있어 사용자 경험을 원활하고 직관적으로 만들어줍니다.
+오늘은 구글 젬마를 중점으로 다양한 LLM 배포의 복잡성을 탐색하겠습니다. 선택한 플랫폼은 Ollama 프레임워크로부터 가치 있는 지원을 받는 GKE일 것입니다. 이 이정표를 달성하기 위한 여정은 Open WebUI에 의해 용이하게 이끌어질 것입니다. 이는 원래 OpenAI ChatGPT 프롬프트 인터페이스와 놀라운 유사성을 가지고 있어 사용자 경험을 원활하고 직관적으로 만들어줍니다.
 
 세부적인 내용에 대해 들어가기 전에, 가장 중요한 부분에 대해 이야기해 봅시다. 왜 먼저 이 방향으로 나아가는 것일까요? 제게는 이 이유가 명백하게 보이며, 여러 가지 강력한 요소로 요약될 수 있습니다:
 
@@ -20,7 +19,18 @@ link: "https://medium.com/google-cloud/gke-gemma-ollama-the-power-trio-for-flexi
 - 환경 간 이식성: Ollama의 디자인은 클라우드 및 플랫폼에 중립적이며, Docker를 수용하는 모든 공개 또는 개인 플랫폼에 배포할 자유를 제공합니다. 이는 Vertex AI 및 SageMaker와 같은 강력한 솔루션과 대조적입니다. 이 솔루션들은 그들 각자의 클라우드 환경과 결합되어 있습니다. Docker와 Kubernetes가 시장 전체를 섭렵한 이유가 있습니다. 이것은 x86에 대해서도 마찬가지입니다.
 - 개인 정보 보호 및 데이터 제어: 완전히 오픈 소스 모델인 LLaVA 및 젬마 같은 것을 활용하려는 사람들을 위해 완전히 개인적인 프레임워크 내에서 데이터 개인 정보 보호와 배포 환경에 대한 완전한 제어를 보장할 수 있는 최적의 방법을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## GKE 플랫폼
 
@@ -31,7 +41,18 @@ link: "https://medium.com/google-cloud/gke-gemma-ollama-the-power-trio-for-flexi
 - g2-standard-4 노드 풀 (NVIDIA L4 GPU): GPU 및 CPU 리소스의 강력한 조합으로, 머신 러닝 작업에 이상적입니다. 벤치마크 결과가 장점을 보여줄 것입니다.
 - 관리되는 NVIDIA GPU 드라이버: GKE에 드라이버를 직접 통합하여 설정 프로세스를 간소화하며, 클러스터가 준비되면 즉시 사용할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NVIDIA의 L4 GPU는 원시 사양과 결과에서 강력한 처리 능력을 발휘하며, 계산 집중적인 ML 작업에 대한 강력한 처리 능력을 제공합니다:
 
@@ -43,7 +64,18 @@ G2 Machine Series는 Intel Cascade Lake 기반의 플랫폼으로, GPU를 보완
 
 G2는 Spot VM을 지원합니다: 중지를 허용할 수 있는 ML 작업에 대해 대규모 비용 절감(약 67% 할인)을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 올라마 및 오픈 웹UI 배포하기 (이전 올라마 웹UI)
 
@@ -67,7 +99,18 @@ persistentVolume:
 
 한편, Open WebUI를 배포하는 경우에는 공식 차트와 커뮤니티에서 제공하는 Kustomize 템플릿을 사용하여 이 구현에 더 적합한 접근방식을 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Open WebUI은 Ollama 배포를 위한 매니페스트를 제공하지만, 저는 Helm Chart의 기능 풍부함을 선호했습니다. 배포 후에는 GCP 로드 밸런서의 IP 주소와 포트 8080으로 이동하여 Open WebUI 로그인 화면에 액세스할 수 있어야합니다.
 
@@ -77,7 +120,18 @@ ollama 네임스페이스에서 간단한 확인 작업을 수행하면 모든 �
 
 ![이미지](/assets/img/2024-05-18-GKEGemmaOllamaThePowerTrioforFlexibleLLMDeployment_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번 경험해보자! 왜 하늘은 파란색일까요?
 
@@ -87,7 +141,18 @@ ollama 네임스페이스에서 간단한 확인 작업을 수행하면 모든 �
 
 ## GPU 대 CPU — 속도의 문제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 플랫폼이 준비되어 있는데, 난 좋은 벤치마크 세션을 참여할 수 없다는 걸 알고 있지 😉. 다른 모델들에 걸쳐 두 종류의 벤치마크를 실행했어:
 
@@ -96,7 +161,18 @@ ollama 네임스페이스에서 간단한 확인 작업을 수행하면 모든 �
 
 걱정 마, 내가 완전한 LLM 격렬한 대결을 벌일 생각은 없어 — 그건 전혀 다른 문제고, 내 이해 범위를 넘어서지. 내 목표는 다른 머신 유형이 속도와 반응성에 미치는 영향을 추적하는 거였어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GPU 가속없이는 추론 성능이 주로 원시 CPU 성능과 메모리 대역폭에 의존했습니다. 당연히, 저는 CPU나 메모리 제한 없이 Ollama를 배포했고, CPU 활용률을 확인했습니다. 그러나 추론 작업은 종종 메모리 대역폭 가용성과 메모리 아키텍처에 의해 병목 현상을 겪을 수 있습니다.
 
@@ -108,7 +184,18 @@ GPU 가속없이는 추론 성능이 주로 원시 CPU 성능과 메모리 대�
 
 ![그래프 이미지](/assets/img/2024-05-18-GKEGemmaOllamaThePowerTrioforFlexibleLLMDeployment_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에는 많은 것이 풀어야 할 문제가 있지만, 경고로 시작하고 싶습니다: 여러분이 지금 볼 성능 숫자는 특정 시나리오에 대한 것으로만 나타나는 것에 주목하세요. LLM의 세계는 매우 넓고 빠르기 때문에, 현재 이 그림조차 며칠 안에 완전히 관련이 없어질 수도 있습니다. 약간 다른 시나리오에서도 그렇습니다.
 
@@ -120,7 +207,18 @@ GPU 우세성:
 
 CPU 고민:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 작은 CPU는 명백히 느리고 놀랍도록 비싸다.
 - 비용이 비슷한 CPU들도 (c3-highcpu-22 / c3d-highcpu-16) 처리량 면에서 L4 및 T4보다 뒤처진다.
@@ -133,7 +231,18 @@ CPU 고민:
 
 GPU의 성능 우위는 여기서도 유효하며, CPU는 이 도메인에서 단순히 경쟁할 수 없음을 보여준다. 흥미로운 점은 c3-standard-176이 마침내 c3-highcpu-22를 능가했는데, 이것은 C3나 내 설정에 버그가 있음을 의심하는 것을 해소시켰다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전통에 따라 모든 결과는 다음 Google 시트에서 공개적으로 이용 가능합니다:
 
@@ -147,7 +256,18 @@ Ollama에 대해 몇 가지 포인트를 논의하기 전에, 이 환경에서 �
 
 그리고 벤치마크가 실행된 방식에 대해:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 curl http://localhost:8080/api/generate -d \
@@ -173,7 +293,18 @@ curl http://localhost:8080/api/generate -d \
 - 스트리밍 비활성화
 - 모든 프롬프트에 동일한 시드값 사용함.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 올라마의 현재 한계: 더 깊게 파헤쳐보기
 
@@ -185,7 +316,18 @@ curl http://localhost:8080/api/generate -d \
 
 ## 주요 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GKE에서 Ollama와 함께 LLM을 배포하는 것은 맞춤화, 유연성, 잠재적인 비용 절감 및 LLM 솔루션 내에서의 개인 정보 보호를 우선시하는 사용자들에게 매력적인 옵션을 제공합니다. 이 접근 방식은 상업 플랫폼에서 사용할 수 없는 모델을 활용할 수 있게 해주며 배포 환경에 대한 완전한 제어권을 제공합니다. 중요한 점은 GPU 가속이 최적의 LLM 성능을 위해 필수적이며, 강력한 CPU 기반 인스턴스조차 크게 앞서갑니다. 그러나 Ollama의 현재 제약 사항, 예를 들어 레지스트리 의존성 및 순차적 요청 처리와 같은 것에 주의를 기울이는 것이 중요합니다. 이러한 제약 사항은 Ollama가 계속 성장함에 따라 해결될 가능성이 크며, 그 가능성을 더욱 높일 것입니다.
 

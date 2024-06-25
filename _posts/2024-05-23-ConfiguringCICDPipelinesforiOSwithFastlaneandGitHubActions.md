@@ -3,13 +3,12 @@ title: "iOS용 Fastlane과 GitHub Actions를 사용하여 CICD 파이프라인 �
 description: ""
 coverImage: "/assets/img/2024-05-23-ConfiguringCICDPipelinesforiOSwithFastlaneandGitHubActions_0.png"
 date: 2024-05-23 14:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ConfiguringCICDPipelinesforiOSwithFastlaneandGitHubActions_0.png
 tag: Tech
 originalTitle: "Configuring CI CD Pipelines for iOS with Fastlane and GitHub Actions"
 link: "https://medium.com/@hafizegungor/configuring-ci-cd-pipelines-for-ios-with-fastlane-and-github-actions-07efd3a837af"
 ---
-
 
 현재 소프트웨어 개발에서 필수적인 실천 방법인 지속적 통합 및 지속적 배포 (CI/CD)는 애플리케이션의 테스트, 빌드, 그리고 배포 과정을 자동화합니다. iOS 개발자들에게는 GitHub Actions와 Fastlane을 활용하여 이러한 방식을 효율적으로 구현할 수 있습니다.
 
@@ -20,11 +19,33 @@ iOS 개발에서 GitHub Actions와 Fastlane은 서로 완벽하게 보완적입�
 - GitHub Actions: GitHub에 직접 통합되어 있는 유연하고 확장 가능한 CI/CD 서비스로, 워크플로우를 자동화할 수 있습니다.
 - Fastlane: iOS 및 Android 앱을 빌드, 테스트 및 릴리스 자동화하는 오픈 소스 플랫폼으로, 복잡한 작업의 설정 및 관리를 간편화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일련의 테이블 태그를 Markdown 형식으로 변경해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 개발 프로세스는 새로운 기능을 작업하거나 버그를 수정하는 개발자로부터 시작됩니다. 이 작업은 주요 개발 브랜치에서 파생된 별도 브랜치에서 수행됩니다.
 
@@ -34,7 +55,18 @@ iOS 개발에서 GitHub Actions와 Fastlane은 서로 완벽하게 보완적입�
 
 3. CI가 단위 테스트를 실행합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 풀 리퀘스트를 생성하면 CI (Continuous Integration) 시스템이 자동으로 유닛 테스트를 실행하게 됩니다. 이 단계는 새 코드가 회귀를 발생시키지 않거나 기존 기능을 파괴하지 않았는지를 확인합니다.
 
@@ -44,7 +76,18 @@ iOS 개발에서 GitHub Actions와 Fastlane은 서로 완벽하게 보완적입�
 
 만약 코드가 팀에서 좋게 보이고 유닛 테스트가 통과하면, 개발자가 풀 리퀘스트를 병합합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 유닛 테스트가 통과하고 코드 리뷰가 만족스러운 경우, 개발자가 풀 리퀘스트를 메인 개발 브랜치에 병합합니다.
 
@@ -54,7 +97,18 @@ iOS 개발에서 GitHub Actions와 Fastlane은 서로 완벽하게 보완적입�
 
 이 워크플로우는 새로운 코드 변경사항이 본 브랜치에 통합되기 전에 철저히 테스트되고 리뷰되도록 보장합니다. CI/CD의 사용은 테스트 및 배포 프로세스를 자동화하여 효율성을 향상시키고 프로덕션 환경에 오류를 도입할 가능성을 줄입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 전제 조건
 
@@ -66,7 +120,18 @@ CI/CD 파이프라인을 설정하기 전에 다음 사항을 확인해주세요
 
 # CI/CD 설정 단계별 안내
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1. 초기 설정
 
@@ -79,7 +144,18 @@ cd your-ios-repo
 
 # 2. Fastlane 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Fastlane을 RubyGems를 이용하여 설치해보세요:
 
@@ -94,7 +170,18 @@ cd your-ios-repo
 fastlane init
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트용 Fastlane을 설정하는 방법을 따라하세요. 베타 배포와 테스팅을 자동화하는 옵션을 선택하세요.
 
@@ -119,7 +206,18 @@ platform :ios do
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4. GitHub Actions 설정하기
 
@@ -161,7 +259,18 @@ jobs:
 
 이 설정은 main 브랜치로의 모든 push 및 pull request에서 workflow를 트리거합니다. macOS 환경을 설정하고, Ruby와 Fastlane을 설치한 후 Fastlane 구성에서 정의된 테스트를 실행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 내용을 한국어로 번역하겠습니다.
 
@@ -192,7 +301,18 @@ jobs:
 
 # 5. 보안 관리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱을 배포하려면 API 키 및 인증서와 같은 민감한 정보를 안전하게 저장해야 합니다. GitHub 저장소에서 Settings > Secrets 메뉴로 이동하여 필요한 시크릿을 추가하세요:
 
@@ -204,7 +324,18 @@ jobs:
 
 # 6. 워크플로우 실행하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 깃허브에 변경 사항을 푸시하세요. 이 작업은 ci.yml에서 정의한 워크플로를 트리거합니다. 깃허브 저장소의 Actions 탭에서 워크플로 진행 상황을 확인할 수 있습니다.
 
@@ -214,7 +345,18 @@ GitHub Actions와 Fastlane을 사용하여 iOS 개발을 위한 CI/CD 파이프�
 
 지속적 통합 및 배포가 구현되면 문제를 빨리 파악하고 코드 품질을 보장하며 기능을 더 빠르고 신뢰할 수 있게 사용자에게 제공할 수 있습니다. 이는 현대 소프트웨어 개발의 최상의 관행을 구현하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 축하드려요! 🥳
 

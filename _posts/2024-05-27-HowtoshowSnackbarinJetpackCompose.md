@@ -12,7 +12,6 @@ link: "https://medium.com/@jurajkunier/how-to-show-snackbar-in-jetpack-compose-3
 
 안녕하세요! 아래는 Markdown 형식으로 변경된 테이블 태그입니다.
 
-
 ![Jetpack Compose Snackbar](/assets/img/2024-05-27-HowtoshowSnackbarinJetpackCompose_0.png)
 
 저는 Snackbars에 대해 쓸 예정이며, Jetpack Compose에서 가장 쉬운 방법을 소개해 드릴 예정입니다.
@@ -21,8 +20,18 @@ link: "https://medium.com/@jurajkunier/how-to-show-snackbar-in-jetpack-compose-3
 
 # Snackbars란 무엇인가요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스낵바는 앱 내부에서 어떤 것에 대한 경량화된 피드백을 제공하는 UI 구성 요소입니다. 기본적으로는 앱이 수행했거나 수행할 작업에 대해 사용자에게 간단히 알려주는 메시지입니다.
 
@@ -32,7 +41,18 @@ link: "https://medium.com/@jurajkunier/how-to-show-snackbar-in-jetpack-compose-3
 
 # 구현
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젯팩 콤포즈에서 스낵바가 구현되는 방법을 살펴봅시다. 기본적으로, 주요 구성 요소는 3가지입니다.
 
@@ -45,7 +65,18 @@ link: "https://medium.com/@jurajkunier/how-to-show-snackbar-in-jetpack-compose-3
 
 # 스카폴드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Scaffold는 기본적인 머티리얼 디자인 레이아웃 구조를 구현하는 레이아웃입니다. TopBar, BottomBar, Floating Action Button (FAB) 또는 Drawer와 같은 요소를 추가할 수 있습니다.
 
@@ -55,7 +86,18 @@ Scaffold는 모든 것이 머티리얼 디자인 가이드에 따라 올바른 �
 
 위에서 보듯이, Scaffold composable에는 SnackbarHostState와 Snackbar Host와 같은 다양한 매개변수가 포함되어 있습니다. 이러한 지식을 바탕으로 코드를 작성할 준비가 되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 코드
 
@@ -75,7 +117,18 @@ fun SnackbarDemo() {
 
 우리는 "remember" 메서드 내에 기본 ScaffoldState를 생성하여 재구성 후에도 동일한 상태를 사용할 수 있도록합니다. 앞서 언급했듯이, ScaffoldState에는 새로운 스낵바를 표시하는 데 사용할 수있는 SnackbarHostState가 포함되어 있습니다. 메시지 또는 작업 레이블과 같은 필요한 매개변수를 제공해야합니다. 그러나 snowSnackbar은 일시 중단된 함수이므로 직접 호출할 수는 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -104,9 +157,18 @@ fun SnackbarDemo() {
 
 표시된 스낵바가 해제되었는지, 사용자가 스낵바의 액션을 클릭했는지 확인하려면 중단된 함수에 의해 반환된 SnackbarResult를 확인하면 됩니다. SnackbarResult는 Dimissined 또는 ActionPerformed 값을 갖는 enum이며 업무 로직을 이에 따라 구현할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -136,7 +198,3 @@ fun SnackbarDemo() {
 구현 내용을 확인하려면 YouTube 비디오를 참조하십시오. 전체 튜토리얼과 최종 결과를 녹화한 영상이 있습니다.
 
 이 기사가 마음에 드시면 좋아요를 눌러 주시고 피드백을 남기시고 친구들과 공유해 주세요. 즐거운 코딩되세요!
-
-
-
-

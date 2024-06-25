@@ -3,13 +3,12 @@ title: "Java 제네릭을 이용한 다형 함수"
 description: ""
 coverImage: "/assets/img/2024-06-19-PolymorphicfunctionsusingJavagenerics_0.png"
 date: 2024-06-19 22:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-PolymorphicfunctionsusingJavagenerics_0.png
 tag: Tech
 originalTitle: "Polymorphic functions using Java generics"
 link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics-76e8074bc9c6"
 ---
-
 
 자바 함수형 프로그래밍 구축 요소
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 기사 말미에서, 저는 모든 것을 매우 유용하고 실용적인 예제로 하나로 조합할 것입니다. 이 기사가 당신에게 매우 유용하고 실질적인 예제가 될 것이라고 기대합니다. 이 기사가 당신에게 단단한 기초를 제공하고 댓글 섹션이나 스스로 더 탐구하도록 격려할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 계속 읽기 전에 주의할 점은, 이 문서가 제네릭 및 함수형 인터페이스 개념 및 구문을 배우는 초보자용 완전한 자습서로 제공되는 것이 아니라는 것입니다. 이미 Java 공식 문서 및 다양한 자습서 웹사이트에 많은 이러한 자습서가 존재합니다. 우리는 기본 사항을 빠르게 살펴볼 것이며, 이 글의 주요 목적은 왜 그리고 어떻게 실제로 유용한지 깊게 이해하려는 것입니다.
 
@@ -29,8 +39,18 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 가장 유혹적인 말은 "공통 부모를 공유하는 클래스가 있는 재사용 가능한 코드를 작성하기 위해서"라고 말하는 것입니다. — 또는 이와 같은 말입니다. 경우에 따라, 그리고 어느 정도로 그렇습니다. 하지만 이것이 정확히 무엇을 의미하는지는 무엇일까요? 아래 코드 조각을 살펴봅시다. 제네릭 유형을 사용하는 좋은 이유가 될까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-PolymorphicfunctionsusingJavagenerics_1.png)
 
@@ -40,8 +60,18 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 그렇다면, Java 제네릭이 언제 진정으로 유용한가요? 먼저, 클래스 제네릭 유형과 메서드 제네릭 유형 두 가지 유형의 일반 유형이 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클래스 제네릭 타입은 특히 여러 클래스 API 메소드들 사이에서 타입 일관성을 유지하는 데 유용합니다. 첫 번째 예시로는 List 인터페이스가 add나 get과 같은 여러 메소드에서 동일한 클래스 제네릭 타입 E를 시그니처에 재사용하는 것이 있습니다.
 
@@ -51,7 +81,18 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 다음 코드 스니펫에서 Java의 공변성/무변성 관련하여 어떤 것이 허용되고, 어떤 것이 안 되는지 살펴볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-PolymorphicfunctionsusingJavagenerics_3.png" />
 
@@ -61,7 +102,18 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 제네릭 유형은 상한, 하한 또는 명시적 바운드가 없을 수 있습니다(Object가 상한인 경우).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한계가 없는 제네릭 유형을 탐색해 봅시다. 이 유형들은 어떤 객체 유형이든 가능하게 합니다. 주로 여러 매개변수 및/또는 반환 유형에 동일한 유형을 적용하는 데 사용됩니다. 아래 코드 예제에서 볼 수 있듯이 다른 간단한 동작도 정의할 수 있습니다.
 
@@ -71,7 +123,18 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 ![이미지](/assets/img/2024-06-19-PolymorphicfunctionsusingJavagenerics_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번 멈춰서 일반적인 유형이 우리에게 무엇을 하는지 두 가지 관점에서 이해해 봅시다: 호출자의 관점과 구현의 관점에서.
 
@@ -81,7 +144,18 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 상한이 있는 제네릭 유형 목록으로는 요소를 추가할 수 없습니다. 이것을 생각해 보면 이해할 수 있으며, 그 이유를 찾아보는 것은 시간을 들여서 한 번 곰곰히 생각할 가치가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [1초 후]
 
@@ -91,7 +165,18 @@ link: "https://medium.com/gitconnected/polymorphic-functions-using-java-generics
 
 만약 상한이 정의된 타입에 추가할 수 있다면, List`Double` 입력 매개변수를 사용해 addSomething을 이론적으로 호출할 수 있고, 메서드 내에서 Double 목록에 Integer(또한 Number를 확장한)을 추가할 수 있습니다. 컴파일 시에 메서드가 어떤 타입으로 호출될지 알 수 없기 때문에, 언어가 목록의 타입 무결성을 잠재적으로 위반하지 못하도록 우리를 방해하는 것은 바로 이것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 우리가 일반 형식 소비자에 요소를 전달하려면(컬렉션이어야만 하는 것은 아님), 상위 바운드를 만들기 위해 super 키워드를 사용해야 합니다. 아래의 또 다른 예제를 살펴보고, 이전처럼 API 관점과 구현 관점에서 super가 우리에게 무엇을 보장해주는지 생각해봅시다.
 
@@ -101,7 +186,18 @@ API 관점에서는 populateGermanSheppards 메서드의 두 번째 매개변수
 
 [또 다른 시간이 흘렀습니다]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 populateGermanSheppards의 구현 내에서 두 번째 입력 매개변수가 List`GermanSheppard` 또는 List`Dog` 중 하나인 것을 알 수 있습니다. 따라서 해당 목록에 GermanSheppard를 추가해도 목록의 유형 무결성을 위반하지 않습니다. 왜냐하면 입력 매개변수 목록이 List`GermanSheppard`인 경우 GermanSheppard를 추가하는 것이 단순히 유효하며, List`Dog`인 경우 GermanSheppard는 Dog이므로 유형이 여전히 유효합니다. 더불어 부모 클래스에 대해서도 동일한 원리가 적용됩니다.
 
@@ -109,7 +205,18 @@ populateGermanSheppards의 구현 내에서 두 번째 입력 매개변수가 Li
 
 소비자는 요소를 받아들일 수 있는 능력과 관련이 있습니다. 예를 들어 List의 add 메소드는 요소를 받아들일 수 있기 때문에 소비자이며, 목록의 제네릭 유형을 소비자-슈퍼로 제한할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 우리가 논의한 것은 단순한 기본 구성 요소로, Java에서 일반적인 타입이 어떻게 실제로 작동하는지의 기본 설명입니다. 더 많은 내용이 있으며, 와일드카드 및 타입 이레이저에 대해 약간 읽어보고, 컬렉션을 중심으로하지 않는 더 많은 예시(예: Optional)를 살펴보면 일반 타입에 대해 더 익숙해질 수 있습니다.
 
@@ -119,7 +226,18 @@ populateGermanSheppards의 구현 내에서 두 번째 입력 매개변수가 Li
 
 함수형 인터페이스는 재사용 가능한 코드를 작성할 때 우리가 가진 도구 중 하나입니다. 또한 좋은 개발자 경험을 제공하는 유연한 API를 구축하고 싶다면 바운드된 제네릭 타입을 사용하여 개선할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이론적으로 함수형 인터페이스는 오직 하나의 비디폴트 메소드만 가진 인터페이스를 말합니다(즉, 구현이 없는 메소드가 하나뿐인 경우). 이러한 인터페이스들은 Java 유형을 제공하고 람다 표현식이나 메소드 참조 같은 호출 가능한 코드 조각을 참조하는 데 사용됩니다. 이러한 참조를 다른 객체 유형처럼 사용할 수 있게 해줍니다. 함수를 참조할 수 있고, 호출하지 않고 다른 함수에 전달할 수 있습니다.
 
@@ -131,7 +249,18 @@ Java 8부터 Java JDK 내에 여러 유형의 함수형 인터페이스가 있�
 - Consumer`T`: T형 인자를 가지고 void(아무것도)를 반환하는 함수를 나타냅니다.
 - Supplier`T`: 어떠한 인자도 받지 않고 T 유형 원소를 반환하는 함수를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 많은 작업을 수행할 수 있는 메소드의 예시를 살펴봅니다. 원리적으로는 리스트의 요소를 반복하고 특정 조건에서 특정 작업을 수행합니다. 메소드 자체에서는 구체적인 내용은 정의되어 있지 않으며, 이는 꽤 추상적입니다.
 
@@ -141,7 +270,18 @@ Java 8부터 Java JDK 내에 여러 유형의 함수형 인터페이스가 있�
 
 조건부 요소 소비자(conditionalElementsConsumer) 메소드 시그니처가 어떻게 보일지 생각해 보세요. 일반적인 타입을 완화하고 한정적인(혹은 제한된) 일반적인 타입을 사용한다면 어떨까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [a second of thinking passes]
 
@@ -151,7 +291,18 @@ PECS 약자에 대해 간단히 생각해 보면, 느슨한 서명은 다음 예
 
 새 예시에서 이전의 제한된 제네릭 유형이 새로운 케이스를 지원하기에 충분히 유연하지 못했음을 알 수 있습니다. 이 간단한 기능 인터페이스를 사용해 개념을 설명하고 있지만, 실제 프로젝트에서는 타입이 일치하도록 바꿀 수 없는 서드파티 코드의 메서드 참조와 유사한 상황을 마주하게 될 수 있습니다. 경계를 통해 제네릭 유형을 느슨하게 처리하면 이를 해결하는 데 도움이 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 지점에서 또 다른 좋은 연습은 위의 예제를 생각하고 152번 라인에서 컴파일 되는 메소드 호출의 실제 T 유형을 파악해 보는 것입니다.
 
@@ -161,7 +312,18 @@ PECS 약자에 대해 간단히 생각해 보면, 느슨한 서명은 다음 예
 
 # 고차 함수를 통한 데코레이터
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고차 함수는 다른 함수를 매개변수로 받거나 함수를 반환하는 함수형 프로그래밍 개념을 나타냅니다.
 
@@ -171,7 +333,18 @@ PECS 약자에 대해 간단히 생각해 보면, 느슨한 서명은 다음 예
 
 ![이미지](/assets/img/2024-06-19-PolymorphicfunctionsusingJavagenerics_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 위의 코드에서 발생한 컴파일 오류는 map 메서드에서 예상되는 메서드 시그니처 (즉, Function`T, R`)와 제공된 함수가 String을 가져와 List`String`을 반환하거나 IO Exception을 던질 수 있는 함수임을 고려할 때 발생합니다 (이러한 의미로는 JDK에 기본적으로 해당 함수형 인터페이스가 없음).
 
@@ -181,7 +354,18 @@ PECS 약자에 대해 간단히 생각해 보면, 느슨한 서명은 다음 예
 
 위의 코드 예제를 조금 설명해보겠습니다. 먼저, 제시된 3가지 옵션 중 어느 것을 사용하더라도 더 이상 컴파일 오류가 발생하지 않음을 관찰할 수 있습니다. 이제 map 메서드는 호출 시 예상대로 Function`Path, List`String``를 받는다고 볼 수 있는 mapSafeFunction을 수신하며, 또한 ExceptionalFunction 인터페이스를 정의할 때 코드가 완벽하게 컴파일되고 Files::readAllLines 메서드 참조가 어떤 컴파일 오류도 없이 허용됩니다. 즉, 이 문제는 예외 처리가 되지 않았던 것이 아니라 함수형 인터페이스 타입이 일치하지 않았기 때문임을 결론짓습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수학 함수에 대해 생각해보면, 입력을 받아 출력을 제공하며 예외를 throw하지 않습니다. 마찬가지로 여기서는 예외를 throw하는 함수를 throw하지 않는 함수로 변환하려고 합니다. 그렇다면 예외가 발생했을 때 어떻게 해야 할까요?
 
@@ -191,7 +375,18 @@ PECS 약자에 대해 간단히 생각해 보면, 느슨한 서명은 다음 예
 
 mapSafeFunction의 구현은 Files::readAllLines 또는 예외를 throw하는 기타 함수에 적용할 수 있습니다. 이 메서드는 전체 프로젝트 전반에 걸쳐 매우 재사용 가능하며 해결하는 문제가 매우 인기가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메소드 mapSafeFunction의 구현은 특별하거나 복잡한 것은 없습니다. 우리는 예외 처리 함수를 가져와 try/catch 예외 처리 논리를 처리하고 원래 함수를 호출하는 함수를 반환합니다. 추가적으로 Consumer`Exception`은 예외 로깅이나 처리 논리를 다루기 위한 유연한 API를 제공합니다. 호출자가 slf4j를 사용하여 예외를 로깅하거나, 콘솔에 로깅하거나, 소비자 내에서 런타임 예외를 다시 던지는 것을 막는 것은 없습니다. 이 방법은 덜 번거롭고 명시적이지 않은 API에 기본값을 제공하기위해 의도적으로 오버로드되었습니다.
 
@@ -201,7 +396,18 @@ mapSafeFunction의 구현은 Files::readAllLines 또는 예외를 throw하는 �
 
 함수형 프로그래밍(또는 단순히 Java Stream API)을 이해하려면 함수형 인터페이스를 이해해야 하며, 이는 다시 제네릭 유형에 의존합니다. 이러한 주제들은 서로 긴밀하게 연결되어 있으며, 개인적인 관찰에 따르면 후자는 종종 간과됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사의 개념들은 하나씩 쉽게 이해할 수 있지만 함께 사용하면 사용할 수 있는 코드가 매우 재사용 가능하다는 것을 알 수 있습니다, 특히 예외 기능 데코레이터의 예시에서 확인할 수 있습니다. 더 많은 응용 프로그램이 있으며, 이 중 한 가지가 제 개인적인 취향입니다.
 

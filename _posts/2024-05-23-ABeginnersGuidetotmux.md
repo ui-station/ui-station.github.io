@@ -27,7 +27,18 @@ link: "https://medium.com/pragmatic-programmers/a-beginners-guide-to-tmux-7e6daa
 
 Tmux는 터미널 멀티플렉서로, 하나의 터미널에서 여러 "가상 터미널"을 생성할 수 있습니다. 이는 단일 연결로 여러 프로그램을 실행할 때 매우 유용합니다. 특히 SSH를 사용하여 원격으로 컴퓨터에 연결할 때 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Tmux은 또한 프로그램을 주요 터미널에서 분리하여 우연한 연결 해제로부터 보호합니다. 현재 터미널에서 tmux를 분리할 수 있으며, 모든 프로그램이 안전하게 백그라운드에서 실행되어 계속됩니다. 나중에는 동일한 또는 다른 터미널에 tmux를 다시 연결할 수 있습니다.
 
@@ -42,8 +53,18 @@ Tmux은 또한 프로그램을 주요 터미널에서 분리하여 우연한 연
 
 다음은 사용자 지정 tmux 세션의 예시입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![tmux](/assets/img/2024-05-23-ABeginnersGuidetotmux_2.png)
 
@@ -53,8 +74,18 @@ Tmux은 Screen에서 발견되는 일부 기능과 동일한 기능을 제공하
 
 # tmux 설치
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 티먹스는 Fedora 및 Red Hat Enterprise Linux (RHEL) 표준 저장소에서 RHEL 8부터 사용할 수 있습니다. 다음 명령어로 설치할 수 있어요.
 
@@ -66,7 +97,18 @@ $ sudo dnf -y install tmux
 
 # 티먹스 시작하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 tmux를 사용하려면 터미널에 tmux를 입력하세요. 이 명령은 tmux 서버를 시작하고 기본 세션(번호 0)과 하나의 창을 생성한 후 해당 세션에 연결합니다.
 
@@ -78,7 +120,18 @@ $ tmux
 
 tmux에 연결되었으므로 일반적으로 명령이나 프로그램을 실행할 수 있습니다. 예를 들어, 긴 시간이 걸리는 프로세스를 시뮬레이션하려면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ c=1
@@ -97,7 +150,18 @@ Tmux 세션에서 분리하려면 Ctrl+B를 누르고 D를 누르세요. Tmux는
 
 더 이상 세션에 연결되어 있지 않지만 오랫동안 실행되는 명령이 안전하게 백그라운드에서 실행됩니다. 활성 tmux 세션을 tmux ls로 나열할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```plaintext
 $ tmux ls
@@ -119,7 +183,18 @@ $ tmux attach -t 0
 
 메시지가 계속 출력되는 것을 확인할 수 있습니다. 취소하려면 Ctrl+C를 입력하실 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 tmux 명령어는 약어로도 사용할 수 있습니다. 예를 들어, tmux attach 대신에 tmux a를 입력해도 작동합니다.
 
@@ -129,7 +204,18 @@ $ tmux attach -t 0
 
 Tmux는 tmux 세션에서 빠르게 명령어를 실행할 수 있게 해주는 여러 키바인딩을 제공합니다. 가장 유용한 몇 가지를 소개합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 별도의 tmux 세션을 생성하려면 이미 tmux 세션에 들어가 있지 않은 경우 새로운 tmux 세션을 생성하세요. 새 세션을 만들 때 tmux new 명령을 사용하고 -s '이름' 매개변수를 전달하여 세션의 이름을 지정할 수 있습니다:
 
@@ -169,7 +255,18 @@ $ tmux new -s Session1
 
 추가 키 바인딩은 tmux 매뉴얼 페이지를 참조하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마우스 사용하기
 
@@ -179,7 +276,18 @@ $ tmux new -s Session1
 
 ![image](/assets/img/2024-05-23-ABeginnersGuidetotmux_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마우스 커서 아래 화면 내용에 따라 메뉴가 변합니다.
 
@@ -189,7 +297,18 @@ tmux 구성을 영구적으로 변경할 수 있습니다. tmux 구성 파일을
 
 예를 들어, 기본 접두표 키 조합은 Ctrl+B이지만 때로는 이 조합을 누르기가 조금 어색하고 양손이 필요할 수도 있습니다. 구성 파일을 편집하여 다른 키로 변경할 수 있습니다. 저는 접두표 키를 Ctrl+A로 설정하는 것을 좋아합니다. 이를 위해 새 구성 파일을 만들어 다음 라인을 추가하면 됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 $ vi $HOME/.tmux.conf
@@ -212,9 +331,18 @@ bind C-a send-prefix
 
 Tmux의 상태 표시줄은 완벽하게 사용자 정의할 수 있습니다. 각 섹션의 색상 및 표시 내용을 변경할 수 있습니다. 이러한 많은 옵션이 있기 때문에 다룰 내용이 또 다른 기사가 필요할 정도이지만, 기초부터 시작하겠습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상태 표시줄 전체에 대한 표준 녹색 색상 때문에 각 섹션을 구별하기 어려울 수 있습니다. 특히 열려 있는 창의 수와 활성 창을 파악하기가 어려울 수 있습니다.
 
@@ -226,7 +354,18 @@ Tmux의 상태 표시줄은 완벽하게 사용자 정의할 수 있습니다. �
 - 비활성 창 색상 변경: set -g window-status-style bg=yellow
 - 활성 창 색상 변경: set -g window-status-current-style bg=red,fg=white
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 영구적 변경을 위해 해당 명령을 구성 파일에 추가해보세요.
 
@@ -236,7 +375,18 @@ Tmux의 상태 표시줄은 완벽하게 사용자 정의할 수 있습니다. �
 
 # 다음은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Tmux은 원격 연결을 보호하는 데 탁월한 도구이며 터미널을 오랜 시간 사용할 때 유용합니다. 이 기사에서는 기본 기능에 대해서만 다루고 있으며 더 많은 것을 탐험할 수 있습니다. tmux에 대한 추가 정보는 공식 위키 페이지를 참조하십시오.
 
@@ -246,7 +396,17 @@ The Pragmatic Bookshelf에서 출판된 Ricardo의 책을 확인해 보세요.
 
 Go 프로그래밍 언어로 직접 빠르고 신뢰할 수 있으며 크로스 플랫폼 명령 줄 도구를 작성해 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-23-ABeginnersGuidetotmux_7](/assets/img/2024-05-23-ABeginnersGuidetotmux_7.png)
-

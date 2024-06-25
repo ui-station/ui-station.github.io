@@ -3,13 +3,12 @@ title: "Ruby로 챗봇 개발하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-DevelopingChatbotsUsingRuby_0.png"
 date: 2024-06-22 22:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-DevelopingChatbotsUsingRuby_0.png
 tag: Tech
 originalTitle: "Developing Chatbots Using Ruby"
 link: "https://medium.com/@eg0rfull/developing-chatbots-using-ruby-8d6ca827924e"
 ---
-
 
 루비를 사용하면 챗봇을 빠르고 쉽게 개발할 수 있어요. 이 글에서는 루비를 사용하여 챗봇을 개발하는 장점을 코드 예제와 함께 살펴볼 거에요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@eg0rfull/developing-chatbots-using-ruby-8d6ca827924e"
 
 챗봇을 만드는 데 사용되는 프로그래밍 언어 중 하나가 루비예요. 루비는 챗봇 개발을 빠르고 쉽게 만들어주는 많은 도구와 라이브러리를 제공하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 코드 예제와 함께 챗봇 개발에 루비를 사용하는 장점을 살펴볼 것입니다.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@eg0rfull/developing-chatbots-using-ruby-8d6ca827924e"
 
 ## “Telegram Bot API” 라이브러리를 사용하여 루비로 간단한 챗봇 개발 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 require 'telegram_bot'
@@ -40,7 +61,7 @@ bot = TelegramBot.new(token: 'YOUR_TELEGRAM_BOT_TOKEN')
 
 bot.get_updates(fail_silently: true) do |message|
   puts "@#{message.from.username}: #{message.text}"
-  
+
   case message.text
   when '/start'
     response = 'Hello! I am a Ruby chatbot.'
@@ -49,7 +70,7 @@ bot.get_updates(fail_silently: true) do |message|
   else
     response = 'Sorry, I don’t understand your request.'
   end
-  
+
   bot.send_message(chat_id: message.chat.id, text: response) if response
 end
 
@@ -67,7 +88,7 @@ class MyBot < SlackRubyBot::Bot
   command 'hello' do |client, data, _match|
     client.say(channel: data.channel, text: 'Hello, I am a Ruby chatbot!')
   end
-  
+
   command 'weather' do |client, data, _match|
     # 날씨를 외부 API에서 가져오는 코드를 추가할 수 있습니다
     weather = get_weather()
@@ -78,7 +99,18 @@ end
 MyBot.run
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서는 "Slack Ruby Bot" 라이브러리를 사용하여 Slack에서 작동하는 챗봇을 개발합니다. 이 챗봇은 "/hello" 및 "/weather" 두 가지 명령에 응답합니다. "/hello" 명령을 받으면 인사 메시지를 보내고, "/weather" 명령을 받으면 날씨 정보를 검색해 외부 API에서 결과를 채팅으로 전송합니다.
 

@@ -18,7 +18,18 @@ UTM이란 무엇인가요?
 
 UTM은 "Universal Terminal Machine"의 약자로, macOS 및 iOS용으로 설계된 오픈 소스 가상화 도구입니다. 이 도구를 사용하면 M1 및 M2 맥을 비롯한 Apple Silicon 기기에서 가상 머신을 실행할 수 있습니다. UTM을 사용하면 리눅스 배포본, Windows 등 다양한 운영 체제를 에뮬레이트할 수 있습니다. Mac 용 UTM 앱은 공식 UTM 다운로드 링크에서 다운로드할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 M1/M2 Mac에 Linux 설치하기:
 
@@ -29,7 +40,18 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 - 위의 링크를 통해 UTM 앱을 다운로드하거나 Google에서 'Mac용 UTM'을 검색하여 다운로드할 수 있습니다.
 - 다운로드 후 DMG 파일을 열고 UTM 애플리케이션을 드래그하여 설치하기 위해 Applications 폴더로 이동하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 리눅스 디스크 이미지 얻기:
 
@@ -42,7 +64,18 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 - 응용 프로그램 폴더에서 UTM을 엽니다.
 - 새 가상 머신을 생성하려면 “+” 버튼을 클릭합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_1.png" />
 
@@ -52,7 +85,18 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 
 - 당연히 "Linux"를 선택하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Install Linux Ubuntu 20.04 on M1/M2 Mac Silicon Step 3](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_3.png)
 
@@ -62,8 +106,18 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 
 - 이제 가상 머신에 필요한 자원을 할당하세요. 최상의 성능을 위해 시스템 자원의 절반을 가상 머신에 할당하는 것을 강력히 권장합니다. 가상 OS에서 작업하는 동안 다른 응용 프로그램을 실행하지 않고 자원을 절약하고 성능을 향상시키기 위해 노력해주세요. 그렇지 않으면 시스템이 다운될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 5](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_5.png)
 
@@ -73,8 +127,18 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 
 ![Image 8](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_8.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 가상 머신 시작하기:
 
@@ -86,8 +150,18 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 - 가상 머신은 Linux ISO 이미지에서 부팅됩니다.
 - 화면 안내에 따라 가상 디스크에 Linux를 설치합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot 9](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_9.png)
 
@@ -97,9 +171,18 @@ UTM을 이용하여 Linux를 설치하는 방법에 대한 단계별 안내서�
 
 Select the keyboard configuration and the network connection configuration.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot 1](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_12.png)
 
@@ -110,9 +193,18 @@ Select the keyboard configuration and the network connection configuration.
 
 ![Screenshot 2](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_13.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_14.png" />
 
@@ -126,8 +218,18 @@ Select the keyboard configuration and the network connection configuration.
 
 다음 창에서 프로젝트나 업무에 유용하거나 사용할 서버 스냅을 선택하세요. 원한다면 나중에도 설치 가능합니다!!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-23-InstallLinuxUbuntu2004onM1M2MacSilicon_16.png)
 
@@ -137,7 +239,18 @@ Select the keyboard configuration and the network connection configuration.
 
 완료될 때까지 기다리세요. 완료되면 기계를 다시 부팅하라는 메시지가 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기계를 다시 시작한 후 설치된 미디어, 즉 VM 설정에서 iso 파일을 제거하고 기계를 다시 시작하세요.
 
@@ -147,7 +260,18 @@ Select the keyboard configuration and the network connection configuration.
 
 6. 데스크톱 환경 설치:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 우분투 데스크톱 시스템(gnome 3)을 설치하려면 다음을 실행하세요:
   $ sudo apt install ubuntu-desktop

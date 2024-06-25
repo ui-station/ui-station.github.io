@@ -18,7 +18,18 @@ link: "https://medium.com/@almmathis/sending-pi-web-logs-to-splunk-indexer-58575
 
 [Hackable Lego Train | Part 1 | Stux | by Stux | May, 2024 | Medium](https://medium.com/)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사의 주요 포인트:
 
@@ -32,7 +43,18 @@ link: "https://medium.com/@almmathis/sending-pi-web-logs-to-splunk-indexer-58575
 
 ![이미지](/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고: 물리적 PI가 SCP를 통해 로그를 Host B (Virtual Kali-Purple)로 전송하고 있습니다. Host B는 Splunk Universal Forwarder가 실행되고 있어 로그를 Host A (물리적 Windows) Splunk Indexer로 전송하고 있습니다.
 
@@ -42,7 +64,18 @@ link: "https://medium.com/@almmathis/sending-pi-web-logs-to-splunk-indexer-58575
 
 Kali Purple을 다음 사이트에서 다운로드하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kali Linux 2023.1 릴리스 (칼리 보라 & 파이썬 변경 사항) | Kali Linux 블로그
 
@@ -52,7 +85,18 @@ Kali Linux 2023.1 릴리스 (칼리 보라 & 파이썬 변경 사항) | Kali Lin
 
 제가 전체 네트워크를 실행하는 데 VMware Workstation을 사용했습니다. 가능하다면 여러분도 이를 추천합니다. 하지만 더 저렴한 옵션이 많이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <span>/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_3.png</span>
 
@@ -65,7 +109,18 @@ Kali Linux 2023.1 릴리스 (칼리 보라 & 파이썬 변경 사항) | Kali Lin
 
 # Kali-Purple + PI 로그 파일 전송
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **참고:** Kali Purple로 로그를 보내는 이유는 라즈베리파이에 Splunk UF가 작동하지 않아서 새 Linux 배포판을 재설치한 것입니다(문제 해결). 따라서 나중에 라즈베리파이 OS 기본 설정에서 작동할 수 있습니다.
 
@@ -77,7 +132,18 @@ Kali Linux 2023.1 릴리스 (칼리 보라 & 파이썬 변경 사항) | Kali Lin
 
 다음과 같이 진행할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 1: SSH 키 생성하기 (아직 설정되지 않은 경우)
 
@@ -90,7 +156,18 @@ ssh-copy-id stux@192.168.12.194
 
 # 단계 2: SCP 스크립트 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 코드를 한국어로 친근하게 번역해 드리겠습니다:
 
@@ -116,7 +193,18 @@ scp ${REMOTE_USER}@${REMOTE_IP}:${REMOTE_FILE} ${LOCAL_DIR}${LOCAL_FILE}
 chmod +x /home/youruser/scp_pull_log.sh
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 3: 크론 작업 설정하기
 
@@ -128,7 +216,18 @@ crontab - e;
 
 ![이미지](/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 라인을 추가하여 cron 작업을 예약합니다 (예: 매 시간마다 실행되도록):
 
@@ -140,7 +239,18 @@ crontab - e;
 
 Splunk Universal Forwarder를 다운로드하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Splunk Downloads 페이지를 방문하여 Linux 배포판에 맞는 버전을 다운로드하세요. 또한, 링크가 있다면 wget을 사용하여 직접 다운로드할 수도 있습니다.
 
@@ -152,7 +262,18 @@ wget -O splunkforwarder-<version>-Linux-x86_64.tgz "https://download.splunk.com/
 
 ![이미지](/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스플렁크 유니버설 포워더를 설치하세요:
 
@@ -166,7 +287,18 @@ cd /opt/splunkforwarder/bin
 
 # 단계 2: 스플렁크 유니버설 포워더 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Splunk Indexer를 설정해보세요:
 
@@ -180,7 +312,18 @@ Splunk Indexer를 설정해보세요:
 ./splunk add monitor /var/log/
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 부팅할 때 Splunk Forwarder를 시작하도록 설정하십시오:
 
@@ -192,7 +335,18 @@ Splunk Indexer를 설정해보세요:
 
 # inputs.conf
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 파일은 포워더가 모니터링하고 전달해야 하는 데이터를 지정하는 데 사용됩니다.
 
@@ -204,14 +358,23 @@ sudo vi /opt/splunkforwarder/etc/system/local/inputs.conf
 
 다음 내용을 추가하여 /var/log/ 디렉터리를 모니터링하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [monitor:///var/log/]
 disabled = false
 index = default
 sourcetype = log
-
 
 ## outputs.conf
 
@@ -219,19 +382,22 @@ sourcetype = log
 
 $SPLUNK_HOME/etc/system/local/에 위치한 outputs.conf 파일을 만들거나 편집하세요.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 sudo vi /opt/splunkforwarder/etc/system/local/outputs.conf
 
-
-
 다음 내용을 추가하여 데이터를 192.168.12.172로 전송하도록 설정하세요:
-
-
 
 [tcpout]
 defaultGroup = default-autolb-group
@@ -241,10 +407,20 @@ server = 192.168.12.172:9997
 
 [tcpout-server://192.168.12.172:9997]
 
-
 Splunk UF를 다시 시작하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```shell
 cd /opt/splunkforwarder/bin
@@ -257,7 +433,18 @@ Splunk 인덱서(192.168.12.172)에서:
 
 참고: 이 단계에 대해 더 자세히 설명은 아래에 제공됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스플렁크 웹 인터페이스에 로그인하세요.
 
@@ -267,7 +454,18 @@ Splunk 인덱서(192.168.12.172)에서:
 
 ![이미지](/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 데이터 입력을 로그로부터 전송하는 데이터 포워더를 구성하는 지시에 따르세요.
 
@@ -277,7 +475,18 @@ Splunk 인덱서(192.168.12.172)에서:
 
 # 단계 4: 구성 확인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Universal Forwarder(192.168.184.133)에서:
 
@@ -289,7 +498,18 @@ Splunk 인덱서(192.168.12.172)에서:
 
 # Windows에서 Splunk Enterprise 설정 - 호스트 A
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 단계 1: Splunk Enterprise 다운로드 및 설치
 
@@ -300,7 +520,18 @@ Splunk Enterprise 다운로드:
 
 Splunk Enterprise 설치:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다운로드한 설치 프로그램을 실행하세요.
 - 설치 마법사 지시에 따르세요. 사용권 계약에 동의하고 설치 디렉토리를 선택해야 합니다.
@@ -312,7 +543,18 @@ Splunk Enterprise 시작:
 
 - 설치 후 Splunk Enterprise가 자동으로 시작됩니다. 그렇지 않은 경우 수동으로 시작할 수 있습니다. Splunk 설치 디렉토리로 이동하여 splunk.exe start를 실행하세요. (예: C:\Program Files\Splunk\bin)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Splunk 웹 인터페이스에 로그인하세요:
 
@@ -323,7 +565,18 @@ Splunk 웹 인터페이스에 로그인하세요:
 
 Splunk Enterprise에서 데이터 수신 활성화합니다 (위에서 언급한 이미지와 함께):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설정으로 이동하여 `전달 및 수신` 수신 구성 ` 새 수신 포트를 구성하세요.
 - 포트 9997 (또는 원하는 다른 포트)를 추가하세요.
@@ -335,7 +588,18 @@ Splunk Enterprise에서 데이터 수신 활성화합니다 (위에서 언급한
 - 인덱서(192.168.12.172)에서:
 - 인덱서 로그를 확인하거나 Splunk 웹 인터페이스에서 데이터를 검색하여 Universal Forwarder로부터 데이터를 수신 중인지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image 1](/assets/img/2024-05-23-SendingPIWebLogstoSplunkIndexer_11.png)
 
@@ -345,7 +609,18 @@ Or:
 
 We now have a PI website logging data, Kali-Purple using SCP at a regular interval pulling the log and finally sending the log via Splunk UF to the Splunk Indexer. We can now monitor all traffic from the website.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 내용을 친근한 톤으로 한국어로 번역하면 다음과 같습니다.
 

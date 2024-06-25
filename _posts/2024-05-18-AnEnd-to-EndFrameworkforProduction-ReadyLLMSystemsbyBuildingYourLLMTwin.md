@@ -3,13 +3,12 @@ title: "프로덕션에 적합한 LLM 시스템을 위한 엔드 투 엔드 프�
 description: ""
 coverImage: "/assets/img/2024-05-18-AnEnd-to-EndFrameworkforProduction-ReadyLLMSystemsbyBuildingYourLLMTwin_0.png"
 date: 2024-05-18 20:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-AnEnd-to-EndFrameworkforProduction-ReadyLLMSystemsbyBuildingYourLLMTwin_0.png
 tag: Tech
 originalTitle: "An End-to-End Framework for Production-Ready LLM Systems by Building Your LLM Twin"
 link: "https://medium.com/decodingml/an-end-to-end-framework-for-production-ready-llm-systems-by-building-your-llm-twin-2cc6bb01141f"
 ---
-
 
 ## LLM TWIN COURSE: BUILDING YOUR PRODUCTION-READY AI REPLICA
 
@@ -19,7 +18,18 @@ link: "https://medium.com/decodingml/an-end-to-end-framework-for-production-read
 
 ![이미지](/assets/img/2024-05-18-AnEnd-to-EndFrameworkforProduction-ReadyLLMSystemsbyBuildingYourLLMTwin_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이 강의가 다른 이유는 무엇인가요?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/decodingml/an-end-to-end-framework-for-production-read
 
 데이터 수집부터 배포까지 실제 LLM 시스템을 설계하고 구축하는 방법을 배우실 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MLOps의 최상의 실천법을 활용하는 방법을 배울 것입니다. 실험 추적기, 모델 레지스트리, 즉시 모니터링, 그리고 버전 관리 등이 있습니다.
 
@@ -42,7 +63,18 @@ LLM 쌍의 아키텍처는 4개의 파이썬 마이크로서비스로 나뉩니�
 - 트레이닝 파이프라인: 디지털 데이터를 기반으로 사용자 정의 데이터세트를 생성합니다. QLoRA를 사용하여 LLM을 세밀하게 조정합니다. Comet ML의 실험 추적기를 사용하여 실험을 모니터링합니다. 최상의 모델을 Comet의 모델 레지스트리에 저장 및 평가합니다. (Qwak에 배포됨)
 - 인퍼런스 파이프라인: Comet의 모델 레지스트리에서 세밀하게 조정된 LLM을 로드하고 양자화합니다. 이를 REST API로 배포합니다. RAG를 사용하여 프롬프트를 향상시키고, LLM 쌍을 사용하여 콘텐츠를 생성합니다. Comet의 프롬프트 모니터링 대시보드를 사용하여 LLM을 모니터링합니다. (Qwak에 배포됨)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4개의 마이크로서비스를 통해 3가지 서버리스 도구를 통합하는 방법을 배울 수 있습니다:
 
@@ -54,7 +86,18 @@ LLM 쌍의 아키텍처는 4개의 파이썬 마이크로서비스로 나뉩니�
 
 대상: MLE, DE, DS 또는 SWE로서, LLMOps의 좋은 원칙을 사용하여 제품 준비 상태의 LLM 시스템을 설계하고 싶은 분들을 대상으로 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수준: 중급
 
@@ -64,7 +107,18 @@ LLM 쌍의 아키텍처는 4개의 파이썬 마이크로서비스로 나뉩니�
 
 이 강의에는 11개의 실습 수업 및 GitHub에서 액세스할 수 있는 오픈 소스 코드가 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모두 자신의 속도로 모든 것을 읽을 수 있어요.
 
@@ -74,7 +128,18 @@ LLM 쌍의 아키텍처는 4개의 파이썬 마이크로서비스로 나뉩니�
 
 기사와 코드는 완전히 무료에요. 언제나 무료로 제공될 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 코드를 실행하면서 읽으려면, 추가 비용이 발생할 수 있는 몇 가지 클라우드 도구를 사용한다는 것을 알아두어야 합니다.
 
@@ -84,7 +149,18 @@ LLM 쌍의 아키텍처는 4개의 파이썬 마이크로서비스로 나뉩니�
 
 ## 선생님들을 만나보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Decoding ML 우산 아래에서 개설 된 이 과정을 개발 한 사람들은 다음과 같습니다:
 
@@ -96,7 +172,18 @@ Decoding ML 우산 아래에서 개설 된 이 과정을 개발 한 사람들은
 
 이 과정은 총 11개의 수업으로 구성되어 있습니다. 매체 기사 하나당 하나의 수업으로 나뉩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - LLM 시스템의 제품용 엔드 투 엔드 프레임워크 구축을 통한 LLM Twin
 - 생성 모델 AI 시대의 데이터 파이프라인의 중요성
@@ -112,7 +199,18 @@ Decoding ML 우산 아래에서 개설 된 이 과정을 개발 한 사람들은
 
 첫 번째 레슨에서는 당신이 수강 기간 동안 구축할 프로젝트인 제품용 LLM Twin/AI 복제품을 소개할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이후에는 3-파이프라인 디자인이 무엇인지와 이것이 표준 ML 시스템에 어떻게 적용되는지 설명할 것입니다.
 
@@ -122,7 +220,18 @@ Decoding ML 우산 아래에서 개설 된 이 과정을 개발 한 사람들은
 
 다음 수업에서는 각 구성 요소의 코드를 검토하고 AWS 및 Qwak에 구현하고 배포하는 방법을 배울 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 목차
 
@@ -134,7 +243,18 @@ Decoding ML 우산 아래에서 개설 된 이 과정을 개발 한 사람들은
 
 이 과정의 목표는 당신만의 AI 레플리카를 구축하는 것입니다. 우리는 그것을 할 수 있도록 LLM을 사용할 것이며, 따라서 이 과정의 이름이 LLM Twin: 생산 준비가 완료된 AI 레플리카 구축입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM 쌍이 무엇인지 알고 싶으신가요?
 
@@ -144,7 +264,18 @@ LLM 쌍이 무엇인지 알고 싶으신가요?
 
 구체적으로 말하면, 여러분이 자신의 목소리로 소셜미디어 글이나 기술 기사(이렇게 작성된 것처럼)를 쓰는 AI 판본을 만드실 수 있을 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ChatGPT을 직접 사용하지 않는 이유가 무엇인가요? 궁금하시다면…
 
@@ -156,7 +287,18 @@ LLM을 사용하여 기사나 글을 생성할 때 결과물이 다음과 같은
 
 하지만 이런 문제를 해결하기 위해 우리가 할 일은 ↓↓↓
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, LinkedIn, Medium, Substack 및 GitHub에서 수집한 디지털 데이터로 LLM을 세밀하게 조정할 것입니다.
 
@@ -166,7 +308,18 @@ LLM을 사용하여 기사나 글을 생성할 때 결과물이 다음과 같은
 
 어느 정도 그것이 우리가 구축하려는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 우리의 사용 사례에서는 당신의 목소리를 반영하고 표현하는 소셜 미디어 게시물이나 글을 쓰는 LLM 쌍에 초점을 맞추겠습니다.
 
@@ -176,7 +329,18 @@ LLM을 사용하여 기사나 글을 생성할 때 결과물이 다음과 같은
 
 최종적으로, 정보를 얻기 위해 벡터 DB에 액세스하는 것 외에도 생성 프로세스의 기본 블록 역할을 하는 외부 링크를 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 위의 예시를 다음과 같이 수정해 볼 수 있어요: "이 링크의 기사를 기반으로 LLMs에 관한 1000단어 LinkedIn 게시물을 작성해주세요: [URL]."
 
@@ -186,7 +350,18 @@ LLM을 사용하여 기사나 글을 생성할 때 결과물이 다음과 같은
 
 우리 모두는 머신러닝 시스템이 얼마나 엉망이 될 수 있는지 알고 있어요. 이 때 3단계 파이프라인 구조가 필요해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3-파이프라인 디자인은 ML 시스템에 구조와 모듈성을 제공하면서 MLOps 프로세스를 개선합니다.
 
@@ -196,7 +371,18 @@ MLOps 도구의 발전에도 불구하고, 프로토타입에서 프로덕션으
 
 2022년에는 모델 중 54%만이 프로덕션 환경으로 이동한다고 합니다. 우웅.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 무슨 일이 생길까요?
 
@@ -208,7 +394,18 @@ MLOps 도구의 발전에도 불구하고, 프로토타입에서 프로덕션으
 
 어느 정도는 이 사실이 맞습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 현실은 많은 시나리오에서...
 
@@ -218,20 +415,43 @@ MLOps 도구의 발전에도 불구하고, 프로토타입에서 프로덕션으
 
 ## 솔루션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 → 3-파이프라인 아키텍처
 
 3-파이프라인 디자인이 무엇인지 알아봅시다.
 
 개발 과정을 단순화하고, 당신의 단일 ML 파이프라인을 3가지 구성 요소로 나누는 데 도움이 되는 정신적인 지도입니다:
+
 1. 피처 파이프라인
 2. 트레이닝 파이프라인
 3. 인퍼런스 파이프라인
 
 ...또한 피처/트레이닝/인퍼런스 (FTI) 아키텍처로 알려져 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #1. 피처 파이프라인은 데이터를 피처와 레이블로 변환하여, 해당 내용을 피처 스토어에 저장하고 버전을 관리합니다. 피처 스토어는 피처들의 중앙 저장소로 기능하며, 피처들은 피처 스토어를 통해서만 액세스하고 공유할 수 있습니다.
 
@@ -241,7 +461,18 @@ MLOps 도구의 발전에도 불구하고, 프로토타입에서 프로덕션으
 
 이것이 3개의 파이프라인 디자인이 아름다운 이유입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 직관적입니다.
 - 모든 머신 러닝 시스템은 이 3가지 구성 요소로 축소될 수 있어 더 높은 수준에서 구조를 가져옵니다.
@@ -258,7 +489,18 @@ MLOps 도구의 발전에도 불구하고, 프로토타입에서 프로덕션으
 
 ↳ 3-파이프라인 디자인에 대해 더 자세히 알고 싶으시다면, FTI 아키텍처의 창시자 중 한 명인 Jim Dowling이 작성한 훌륭한 [3] 글을 추천합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. LLM Twin System design
 
@@ -271,7 +513,18 @@ LLM twin의 아키텍처는 다음과 같이 4개의 Python 마이크로서비�
 - 훈련 파이프라인
 - 추론 파이프라인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보시다시피, 데이터 수집 파이프라인은 3-파이프라인 디자인을 따르지 않습니다. 이게 사실이에요.
 
@@ -281,7 +534,18 @@ LLM twin의 아키텍처는 다음과 같이 4개의 Python 마이크로서비�
 
 하지만 작은 팀의 구성원이라고 하면, 데이터 수집부터 모델 배포까지 모든 것을 직접 구축해야 할 수도 있겠죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그렇기 때문에 데이터 파이프라인이 FTI 아키텍처와 어떻게 잘 맞고 상호 작용하는지를 보여 드리겠습니다. 이제 각 구성 요소를 자세히 살펴봐서 개별적으로 어떻게 작동하고 서로 상호 작용하는지 이해해 보겠습니다. ↓↓↓
 
@@ -289,7 +553,18 @@ LLM twin의 아키텍처는 다음과 같이 4개의 Python 마이크로서비�
 
 그 범위는 주어진 사용자의 데이터를 크롤링하는 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Medium (기사)
 - Substack (기사)
@@ -298,11 +573,22 @@ LLM twin의 아키텍처는 다음과 같이 4개의 Python 마이크로서비�
 
 각 플랫폼마다 고유하므로, 우리는 각 웹사이트를 위해 다른 Extract Transform Load (ETL) 파이프라인을 구현했습니다.
 
-🔗 ETL  파이프라인에 대한 1분 소요 읽기 [4]
+🔗 ETL 파이프라인에 대한 1분 소요 읽기 [4]
 
 그러나 각 플랫폼에 대한 기본 단계는 동일합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서 각 ETL 파이프라인에 대해 다음과 같은 기본 단계를 추상화할 수 있습니다:
 
@@ -316,7 +602,18 @@ LLM twin의 아키텍처는 다음과 같이 4개의 Python 마이크로서비�
 
 왜 Mongo DB를 사용할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 텍스트와 같이 구조화되지 않은 데이터를 빠르게 저장할 수 있는 NoSQL 데이터베이스를 원했습니다.
 
@@ -326,7 +623,18 @@ LLM twin의 아키텍처는 다음과 같이 4개의 Python 마이크로서비�
 
 🔗 CDC 패턴에 대한 1분 간의 읽기 [5]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CDC를 간략히 설명하자면, 감시자는 Mongo DB에 발생하는 모든 CRUD 작업을 24/7 감지합니다.
 
@@ -336,7 +644,18 @@ CDC를 간략히 설명하자면, 감시자는 Mongo DB에 발생하는 모든 C
 
 예를 들어, 우리가 Mongo DB에 새 문서를 작성할 때, 감시자는 새 이벤트를 생성합니다. 이벤트가 RabbitMQ 큐에 추가되고, 최종적으로 기능 파이프라인이 소비하고 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이를 통해 Mongo DB와 Vector DB가 항상 동기화되도록 보장할 수 있습니다.
 
@@ -346,7 +665,18 @@ CDC 패턴을 사용하면, Mongo DB와 vector DB 간의 차이를 계산하기 
 
 데이터 파이프라인은 어디에 배포될 것인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 수집 파이프라인과 RabbitMQ 서비스는 AWS에 배포될 예정입니다. 또한 MongoDB의 프리미엄 서버리스 버전을 사용할 것입니다.
 
@@ -356,7 +686,18 @@ CDC 패턴을 사용하면, Mongo DB와 vector DB 간의 차이를 계산하기 
 
 이것은 데이터 수집 파이프라인과 완전히 다른 서비스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 파이프라인과 어떻게 통신하나요?
 
@@ -366,7 +707,18 @@ CDC 패턴을 사용하면, Mongo DB와 vector DB 간의 차이를 계산하기 
 
 그저 특정 큐를 듣고, 그곳에서 메시지를 소비하고 처리해야 한다는 것만 알고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 하면 두 구성 요소를 완전히 분리할 수 있습니다. 미래에는 여러 소스에서 메시지를 큐에 쉽게 추가할 수 있으며, 스트리밍 파이프라인이 이를 어떻게 처리해야 하는지 알게 될 것입니다. 유일한 규칙은 큐에 있는 메시지가 항상 동일한 구조/인터페이스를 준수해야 한다는 것입니다.
 
@@ -376,7 +728,18 @@ CDC 패턴을 사용하면, Mongo DB와 vector DB 간의 차이를 계산하기 
 
 큐를 통해 전달된 원시 데이터를 가져 와서 다음과 같은 작업을 수행할 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 정리하기;
 - 청크로 나누기;
@@ -389,7 +752,18 @@ CDC 패턴을 사용하면, Mongo DB와 vector DB 간의 차이를 계산하기 
 
 어떤 종류의 데이터가 저장될 것인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 학습 파이프라인은 피쳐 스토어에만 액세스할 수 있습니다. 우리의 경우, Qdrant 벡터 DB로 표현됩니다.
 
@@ -399,7 +773,18 @@ CDC 패턴을 사용하면, Mongo DB와 vector DB 간의 차이를 계산하기 
 
 1. 정제된 데이터(인덱스로 벡터를 사용하지 않고 NoSQL 방식으로 저장).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 정리된, 청크 처리된 및 내장된 데이터 (Qdrant의 벡터 인덱스를 활용)
 
@@ -409,7 +794,18 @@ CDC 패턴을 사용하면, Mongo DB와 vector DB 간의 차이를 계산하기 
 
 청크 처리된 데이터로는 프롬프트를 보강할 것입니다 (일명 RAG).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스트리밍 파이프라인을 배치 파이프라인 대신 구현해야 하는 이유는 무엇인가요?
 
@@ -419,7 +815,18 @@ CDC 패턴을 사용하면, Mongo DB와 vector DB 간의 차이를 계산하기 
 
 CDC + 스트리밍 파이프라인을 사용하면 소스 데이터베이스의 변경 사항만 처리하고 여분의 작업이 발생하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 번째 이유는 그렇게 함으로써 소스와 벡터 데이터베이스가 항상 동기화된 상태가 유지됩니다. 따라서 RAG를 수행할 때 최신 데이터에 항상 액세스할 수 있습니다.
 
@@ -429,7 +836,18 @@ Bytewax는 Python 인터페이스를 노출하는 Rust로 구축된 스트리밍
 
 기능 파이프라인은 어디에 배포될 것인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기능 파이프라인이 AWS에 배포될 예정입니다. 또한 우리는 Qdrant의 무료 서버리스 버전을 사용할 것입니다.
 
@@ -439,7 +857,18 @@ Bytewax는 Python 인터페이스를 노출하는 Rust로 구축된 스트리밍
 
 3.2절에서 강조한 대로, 모든 훈련 데이터는 기능 저장소에서 접근할 수 있습니다. 저희 경우에는 기능 저장소인 Qdrant 벡터 DB에 다음과 같은 데이터가 포함됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 우리는 프롬프트 및 답변을 생성할 정돈된 디지털 데이터를 사용할 것입니다.
 - RAG를 위해 청크와 임베디드된 데이터를 사용하여 정돈된 데이터를 보완할 것입니다.
@@ -450,7 +879,18 @@ Bytewax는 Python 인터페이스를 노출하는 Rust로 구축된 스트리밍
 
 또한, 우리는 각 클라이언트에 대해 벡터 DB에서 어떤 것을 쿼리하고 싶은지에 기반한 사용자 정의 동작을 추가할 것입니다. 그러나 이에 대해 자세히는 해당 레슨에서 설명하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 훈련 파이프라인은 무엇을 할까요?
 
@@ -460,7 +900,18 @@ Bytewax는 Python 인터페이스를 노출하는 Rust로 구축된 스트리밍
 
 모든 실험은 Comet ML의 실험 추적기에 로그가 남겨질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 미세 조정된 LLM의 결과를 평가하기 위해 더 큰 LLM(예: GPT4)을 사용할 것입니다. 이러한 결과는 Comet의 실험 추적기에 기록될 것입니다.
 
@@ -470,7 +921,18 @@ Bytewax는 Python 인터페이스를 노출하는 Rust로 구축된 스트리밍
 
 이후, Comet의 프롬프트 모니터링 대시보드를 사용하여 LLM 생산용 후보를 수동으로 검토할 것입니다. 최종 수동 검사가 통과되면, 우리는 모델 레지스트리의 LLM을 수락된 상태로 표시할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CI/CD 파이프라인이 실행되어 새로운 LLM 버전이 추론 파이프라인에 배포될 것입니다.
 
@@ -480,7 +942,18 @@ CI/CD 파이프라인이 실행되어 새로운 LLM 버전이 추론 파이프�
 
 Qwak은 ML 모델을 훈련하고 배포하는 서버리스 솔루션입니다. 작업 확장을 쉽게 할 수 있으며 건설에 집중할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 내용은 다음을 위해 Comet ML의 프리미엄 버전을 사용할 것입니다:
 
@@ -492,7 +965,18 @@ Qwak은 ML 모델을 훈련하고 배포하는 서버리스 솔루션입니다. 
 
 추론 파이프라인은 LLM 시스템의 최종 구성 요소입니다. 클라이언트가 상호 작용할 구성 요소입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 REST API 아래에 랩핑될 것입니다. 클라이언트들은 HTTP 요청을 통해 이를 호출할 수 있으며, 이는 ChatGPT나 비슷한 도구들과 유사한 경험입니다.
 
@@ -502,7 +986,18 @@ Qwak은 ML 모델을 훈련하고 배포하는 서버리스 솔루션입니다. 
 
 이 경우 RAG를 수행하기 위해 청크 데이터에 접근하는데 기능 저장소가 필요할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 얼마나 미세 조정된 LLM에 액세스할 수 있나요?
 
@@ -512,7 +1007,18 @@ Qwak은 ML 모델을 훈련하고 배포하는 서버리스 솔루션입니다. 
 
 우리는 여기서 추론 세계에 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM의 속도와 메모리 사용량을 최대한 최적화하려고 합니다. 그래서 모델 레지스트리에서 LLM을 다운로드한 후 양자화할 것입니다.
 
@@ -522,7 +1028,18 @@ LLM의 속도와 메모리 사용량을 최대한 최적화하려고 합니다. 
 
 Qdrant에서 검색된 도큐먼트를 프롬프트로 매핑할 쿼리가 있으면 해당 쿼리 후보를 매핑해줄 계층이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM이 답변을 생성한 후, 우리는 Comet의 프롬프트 모니터링 대시보드에 기록하고 클라이언트에게 반환할 것입니다.
 
@@ -532,7 +1049,18 @@ LLM이 답변을 생성한 후, 우리는 Comet의 프롬프트 모니터링 대
 
 추론 파이프라인은 어디에 배포될 것인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추론 파이프라인은 Qwak로 배포됩니다.
 
@@ -542,7 +1070,18 @@ LLM이 답변을 생성한 후, 우리는 Comet의 프롬프트 모니터링 대
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM Twin의 무료 코스 1번째 기사입니다.
 
@@ -552,7 +1091,18 @@ LLM Twin의 무료 코스 1번째 기사입니다.
 
 최종적으로 이 코스의 시스템 디자인을 살펴보고 각 마이크로서비스의 아키텍처 및 서로 상호작용 방법을 소개했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 수집 파이프라인
 - 피쳐 파이프라인
@@ -565,7 +1115,18 @@ LLM Twin의 무료 코스 1번째 기사입니다.
 
 ↓↓↓
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5천 명 이상의 엔지니어들과 함께하여, 프로덕션급 머신 러닝에 대한 검증된 컨텐츠를 살펴보세요. 매주 업데이트되는 콘텐츠를 놓치지 마세요:
 
@@ -575,7 +1136,18 @@ LLM Twin의 무료 코스 1번째 기사입니다.
 
 [2] Meta에서 새로운 AI 경험 소개(2023년), Meta
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - [3] Jim Dowling, From MLOps to ML Systems with Feature/Training/Inference Pipelines (2023), Hopsworks
 

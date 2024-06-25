@@ -3,13 +3,12 @@ title: "프라이버시 보호를 위한 라이드 헤일링의 필요성"
 description: ""
 coverImage: "/assets/img/2024-05-23-WhyWeNeedPrivacy-PreservingRide-Hailing_0.png"
 date: 2024-05-23 18:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-WhyWeNeedPrivacy-PreservingRide-Hailing_0.png
 tag: Tech
 originalTitle: "Why We Need Privacy-Preserving Ride-Hailing"
 link: "https://medium.com/@gurgen_60729/why-we-need-privacy-preserving-ride-hailing-c9f872117907"
 ---
-
 
 ![Why We Need Privacy-Preserving Ride-Hailing](/assets/img/2024-05-23-WhyWeNeedPrivacy-PreservingRide-Hailing_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@gurgen_60729/why-we-need-privacy-preserving-ride-hail
 
 예를 들어, 앨리스가 M 도시에서 일하고 C 회사에 다니고 있다고 가정해봅시다. 그녀의 일정은 유연해요: 일주일 중 절반은 사무실에서 보내고 나머지 절반은 카페나 집에서 보내요. M 도시에는 비슷한 라이드헤일링 서비스가 몇 개 있어요. 앨리스는 도시 안에서 다니는 다양한 방법을 사용하며 대중 교통을 이용하기도 하고 라이드헤일링 서비스를 선호하기도 해요. 그중 약 절반의 이동은 우버나 비슷한 서비스를 이용해요. 이동수단을 선택할 때 앨리스의 주요 고려 사항은 비용과 시간이에요. 따라서 그녀는 매번 여러 앱에서 여행 비용을 비교하고 이 정보를 기반으로 결정을 내려요. 앨리스 사례를 토대로 일반적인 라이드헤일링 서비스가 사용자에 대해 어떤 정보를 알 수 있는지 알아보려고 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## **앨리스에 대해 우버가 알고 있는 정보는 무엇인가요?**
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@gurgen_60729/why-we-need-privacy-preserving-ride-hail
 
 앨리스의 여행 이력은 단지 빙산의 일각에 불과합니다. 왜냐하면 이러한 데이터를 기반으로, 숙박업체는 훨씬 중요한 정보에 접근할 수 있기 때문입니다. 여행 이력으로부터 정확히 어떤 정보를 얻을 수 있는지 살펴보도록 하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Alice의 집과 사무실 주소: Alice의 경우, 가장 흔한 목적지는 집 주소와 일하는 회사의 사무실 주소일 것입니다.
 
@@ -39,7 +60,18 @@ Alice가 집을 떠나는 시간과 돌아오는 시간: 움직임 이력을 알
 
 Alice의 근무 일정: 앞선 두 가지 점을 유도하여, 라이드헤일링 서비스는 쉽게 Alice의 근무 일정을 결정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앨리스가 도시를 떠난 시기와 기간: 앨리스가 일시적으로 도시를 떠난 시기에 대한 정보를 추출하는 것은 꽤 간단합니다. 이는 특정 기간 동안의 여행이 전혀 없음을 확인함으로써 종종 확인됩니다. 공항으로부터 이동하거나 돌아오는 여행을 통해 추가적인 확실성을 얻을 수도 있습니다. 또한 많은 라이드헤일링 서비스가 다른 도시와 국가에서 운영되고 있으므로, 해당 서비스들은 앨리스의 여행 방향 또한 파악할 수 있습니다.
 
@@ -49,7 +81,18 @@ Alice의 근무 일정: 앞선 두 가지 점을 유도하여, 라이드헤일�
 
 회사 내부 정보만으로 라이드헤일링 서비스에게 제공되는 정보의 일부에 불과합니다. 그러나 회사 내부 정보 외에도 소셜 네트워크 및 기타 온라인 자원에 게시된 공개 정보에 접근할 수 있다는 점을 감안하면, 이 목록은 상당히 확장될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 국가에서 정부 기관들이 라이드헤일링 서비스의 활동을 밀접히 모니터하고 여정에 대한 모든 정보에 대한 접근을 요구하는 것은 우연이 아닙니다.
 

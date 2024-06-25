@@ -10,7 +10,6 @@ originalTitle: "User-defined Table Functions (UDTF)"
 link: "https://medium.com/@amandeep-singh-johar/user-defined-table-functions-udtf-f42af39cca9c"
 ---
 
-
 ![이미지](/assets/img/2024-05-23-User-definedTableFunctionsUDTF_0.png)
 
 Spark 3.5에서는 파이썬 사용자 정의 테이블 함수(UDTF)를 소개했습니다. 이것은 새로운 종류의 사용자 정의 함수입니다. 스칼라 함수는 각 호출에 대해 하나의 결과를 생성하는 반면, UDTF는 쿼리의 FROM 절 내에서 호출되며 전체 테이블을 출력합니다. UDTF 호출은 스칼라 식이나 완전한 입력 테이블을 나타내는 테이블 인수 중 어떤 것이든 사용할 수 있습니다.
@@ -19,8 +18,18 @@ Spark 3.5에서는 파이썬 사용자 정의 테이블 함수(UDTF)를 소개�
 
 ## 파이썬 UDTF 사용 이유
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 다양한 행과 열을 생성하면서 파이썬의 다양한 생태계를 활용하고 싶다면, Python UDTF가 이상적입니다.
 
@@ -30,7 +39,18 @@ Spark의 Python UDF는 입력으로 스칼라 값s 중 0개 이상을 받아들�
 
 ## Python UDTF 대 SQL UDTF
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQL UDTFs는 효율적이고 다재다능하지만, Python은 더 다양한 라이브러리와 도구를 제공합니다. 통계 함수나 머신 러닝 추론과 같이 고급 기술이 필요한 변환 또는 계산을 위해서는 Python UDTFs가 특히 유리합니다.
 
@@ -65,7 +85,18 @@ class KeywordsGenerator:
             yield (keyword, )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세부 정보:-
 

@@ -3,13 +3,12 @@ title: "통계적 유의성 재고하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-RethinkingStatisticalSignificance_0.png"
 date: 2024-05-23 15:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-RethinkingStatisticalSignificance_0.png
 tag: Tech
 originalTitle: "Rethinking Statistical Significance"
 link: "https://medium.com/towards-data-science/rethinking-statistical-significance-a6150f588b9a"
 ---
-
 
 <img src="/assets/img/2024-05-23-RethinkingStatisticalSignificance_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/rethinking-statistical-significan
 
 나와 다른 많은 이들이 문헌에서 찾아볼 수 있는 토론에서 볼 수 있는 것처럼, 논문들은 통계 검정 대신 핵심 데이터의 상세하고 균형 잡힌 플롯, 아마는 원시 데이터까지 제시해야 한다고 생각해요. 최근 몇 년간, 과학자들은 이와 비슷한 아이디어들을 제기하며 통계적 유의성 검정에서 파생된 "효과 vs. 무효"의 이진 측정에 의존하고 있다는 것이 우리를 오도하고 해석을 오해하게 할 수 있다고 주장하고 있습니다. 또한, 나는 중요한 부분이라고 생각하는 것은, 이러한 사고가 과학적 풍경을 왜곡시킬 수 있다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발자분이세요. 위의 텍스트를 친근한 톤으로 한국어로 번역하겠습니다.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/towards-data-science/rethinking-statistical-significan
 
 자연(Nature)의 간청은 문제를 명확하게 드러내는 것뿐만 아니라 몇 가지 조치도 제안합니다. 가장 극단적이고 지지밖에 남지 않는 조치는 통계적 유의성 개념을 완전히 포기하라는 것입니다. 대신, 연구자들은 "효과 추정량"과 그와 관련된 불확실성에 초점을 맞추도록 촉구됩니다. 나는 그들만큼 명확하게 더 언급하면, 연구자들은 데이터의 투명한 제시에 중점을 두어야 하며, 관련 텍스트에서는 가능한 해석을 동반할 수 있지만, "예" 또는 "아니요" 지표를 함께하는 공식 또는 알고리즘으로 계산해서는 안 됩니다. 즉, 과학 논문은 데이터를 가능한 한 오염되지 않게 제시하고, 관련 텍스트에서는 저자들의 해석에 대해 논의해야 하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "‘효과 추정’ 사용 촉진 정신과 동일하게, Nature에 발표된 논평은 ‘신뢰 구간’을 ‘호환성 구간’으로 대체할 것을 제안합니다. 이 재구성은 데이터와 호환되는 값 범위만 전달한다는 것을 의미하며, 다시 한번 ‘효과 대 무효’의 관점으로 생각하는 함정을 피합니다. 통계적 임계값에 기반한 단순한 ‘예/아니오’ 결정에서 벗어나, 손에 있는 증거를 더 포괄적으로 고려하는 것이 목표입니다.
 
@@ -41,7 +62,18 @@ link: "https://medium.com/towards-data-science/rethinking-statistical-significan
 
 ‘효과 크기’로의 이동 제안은 통계적 유의성과 무관하게 결과의 실용적 중요성을 인정하며, 결론을 독자가 더 많이 짓도록 합니다. 물론 연구를 수행한 사람들은 필요한 모든 주장과 함께 결론을 서술할 기회를 가집니다. 그러나 데이터는 데이터입니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터를 더 폭넓게 보여주는 포인트에 대해 유의할 점은, 현대 컴퓨터 미디어가 출판사들이 받아들여야 할 수많은 솔루션을 가능하게 한다는 점을 강조하고 싶습니다. 최근 제가 제시한 것처럼 웹에서 데이터를 시각적으로 표시하는 다양한 가능성을 보는 것만으로도 이러한 기술들 중 하나의 예를 들어보실 수 있습니다.
 
@@ -51,7 +83,18 @@ link: "https://medium.com/towards-data-science/rethinking-statistical-significan
 
 통계적 유의성을 완전히 없애는 제안이 급진적으로 보일지 모르지만, 이는 통계 분석에 대한 전통적인 접근 방식에 내재된 단점에 대한 점점 커지는 인식을 반영하고 있습니다. 투명성을 촉진하고 더 깊은 불확실성에 대한 더 깊은 이해, 심지어 겸손(특히 과학적 연구에서 매우 경쟁적인 분야에서)에 대한 깊은 인식을 통해 연구자들은 더 견고하고 신뢰할 수 있으며 개방적인 과학적 담론을 육성할 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자연 주석의 저자들이 제안한 (종류의) 패러다임 변화의 목표는 효과의 크기를 우선시하여 통계적 유의성에 상관없이 더 균형있고 편향되지 않은 연구 결과나 기준 또는 필요한 다른 어떤 비교도 얻을 수 있다는 것입니다. 더 나아가 연구 결과를 해석하는 데 연구 설계나 이전 지식과 같은 맥락적 요소들이 더 큰 역할을 할 수 있습니다.
 
@@ -61,7 +104,18 @@ link: "https://medium.com/towards-data-science/rethinking-statistical-significan
 
 엄격한 통계적 기준에 따라 결론이 어떻게 달라질 수 있는지에 대한 특정 예시를 알고 싶다면(다른 많은 예시 중에서 찾아볼 수 있습니다!) 이 흥미로운 기사를 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Nature에 나온 호소: Amrhein, V., Greenland, S., & McShane, B. (2024). 과학자들이 통계적 중요성에 반발하다. https://www.nature.com/articles/d41586-019-00857-9
 

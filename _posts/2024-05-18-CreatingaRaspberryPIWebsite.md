@@ -3,21 +3,31 @@ title: "라즈베리 파이 웹사이트 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-18-CreatingaRaspberryPIWebsite_0.png"
 date: 2024-05-18 19:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-CreatingaRaspberryPIWebsite_0.png
 tag: Tech
 originalTitle: "Creating a Raspberry PI Website"
 link: "https://medium.com/@almmathis/creating-a-raspberry-pi-website-b338ba40168f"
 ---
 
+아래는 메인 시리즈 "Hackable Lego Train"의 미니 파트입니다.
 
-아래는 메인 시리즈 "Hackable Lego Train"의 미니 파트입니다. 
-
-다음은 메인 시리즈를 확인할 수 있는 링크입니다: 
+다음은 메인 시리즈를 확인할 수 있는 링크입니다:
 
 Hackable Lego Train | Part 1 | Stux | 작성자: Stux | 2024년 5월 | Medium
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-CreatingaRaspberryPIWebsite_1.png" />
 
@@ -27,7 +37,18 @@ Hackable Lego Train | Part 1 | Stux | 작성자: Stux | 2024년 5월 | Medium
 
 전체적인 단계는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 새로운 OS(Kali)로 Pi 이미지 다시 만들기
 - Pi에서 SSH 활성화
@@ -41,7 +62,18 @@ Hackable Lego Train | Part 1 | Stux | 작성자: Stux | 2024년 5월 | Medium
 
 라즈베리 파이 OS — 라즈베리 파이
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Creating a Raspberry PI Website Image 2](/assets/img/2024-05-18-CreatingaRaspberryPIWebsite_2.png)
 
@@ -53,7 +85,18 @@ Hackable Lego Train | Part 1 | Stux | 작성자: Stux | 2024년 5월 | Medium
 
 ![Creating a Raspberry PI Website Image 3](/assets/img/2024-05-18-CreatingaRaspberryPIWebsite_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 호스트 컴퓨터에 PI SD 카드를 넣어주세요. 그리고 카드에 Kali를 WRITE해주세요.
 
@@ -63,7 +106,18 @@ Hackable Lego Train | Part 1 | Stux | 작성자: Stux | 2024년 5월 | Medium
 
 로그인하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서부터는 SSH를 사용해서 작업을 계속합니다. 그래서 셸 명령어에 익숙하신 것 같아요.
 
@@ -73,7 +127,18 @@ Hackable Lego Train | Part 1 | Stux | 작성자: Stux | 2024년 5월 | Medium
 
 ![CreatingaRaspberryPIWebsite_5](/assets/img/2024-05-18-CreatingaRaspberryPIWebsite_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 제 예시입니다:
 
@@ -108,7 +173,18 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def get_train_schedule():
@@ -128,40 +204,54 @@ templates/index.html 수정:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Big Cabooses</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+  </head>
+  <body>
     <div class="background"></div>
     <div class="content">
-        <h1>Big Cabooses 열차 일정</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>시간</th>
-                    <th>열차</th>
-                    <th>목적지</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for entry in schedule %}
-                <tr>
-                    <td>{{ entry.time }}</td>
-                    <td>{{ entry.train }}</td>
-                    <td>{{ entry.destination }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+      <h1>Big Cabooses 열차 일정</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>시간</th>
+            <th>열차</th>
+            <th>목적지</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for entry in schedule %}
+          <tr>
+            <td>{{ entry.time }}</td>
+            <td>{{ entry.train }}</td>
+            <td>{{ entry.destination }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
-</body>
+  </body>
 </html>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 static/css/styles.css 파일에 다음 내용을 입력해주세요:
 
@@ -218,7 +308,18 @@ static/background.jpg의 경로에 매력적인 배경 이미지를 업로드해
 
 ChatGPT를 이용하여 스스로 이미지를 만들 수 있게 위해서 돈을 지불했어요. 여러분도 자금이 있으시다면 강력히 추천합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웹사이트를 시작하세요!
 
@@ -230,7 +331,18 @@ sudo python3 app.py
 
 BUTTT!!!!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 로깅을 추가하고 내부 네트워크의 다른 컴퓨터에서 액세스할 수 있는 기능을 추가하길 원해요.
 
@@ -243,7 +355,18 @@ if __name__ == '__main__':
 
 반드시 "host="에 PI의 IP를 넣어 주세요!!!!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 웹 사이트에 로그 파일을 기록하려고 합니다. app.py 파일에 이 모든 내용을 추가해 보겠습니다:
 
@@ -277,6 +400,17 @@ if __name__ == '__main__':
 
 그런 다음, 간단한 접속 로그가 포함된 스타워즈 테마의 레고 기차 웹 사이트를 만들었습니다. 함께 빌드하는 과정을 즐겼습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 질문이든 하시거나 도움이 필요하시면 언제든지 메시지를 보내주세요. 즐겁게 즐기세요! 이것을 하면서 몇 번 굳었지만, 마침내 성공적으로 해냈고 결과물을 좋아합니다. -Stux

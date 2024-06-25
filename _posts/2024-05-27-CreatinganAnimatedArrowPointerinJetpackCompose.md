@@ -3,13 +3,12 @@ title: "Jetpack Compose에서 애니메이션 화살표 포인터 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-27-CreatinganAnimatedArrowPointerinJetpackCompose_0.png"
 date: 2024-05-27 16:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-CreatinganAnimatedArrowPointerinJetpackCompose_0.png
 tag: Tech
 originalTitle: "Creating an Animated Arrow Pointer in Jetpack Compose"
 link: "https://medium.com/@kappdev/creating-an-animated-arrow-pointer-in-jetpack-compose-83f1ddf432d5"
 ---
-
 
 환영합니다 👋
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@kappdev/creating-an-animated-arrow-pointer-in-jetpack
 
 ![Animated Arrow Pointer](https://miro.medium.com/v2/resize:fit:1400/1*jP0QAL3blRz6ynJ8IkjCuQ.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 함수 정의하기
 
@@ -42,7 +52,18 @@ fun AnimatedArrowPointer(
 
 ## ⚒️ 파라미터 설명
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ⚡ modifier ➜ 포인터 레이아웃에 적용할 수정자입니다.
 
@@ -52,7 +73,18 @@ fun AnimatedArrowPointer(
 
 ⚡ strokeWidth ➜ 화살표 포인터의 선 두께입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ⚡ pointerSize ➜ 화살표 포인터의 크기입니다.
 
@@ -62,7 +94,18 @@ fun AnimatedArrowPointer(
 
 ⚡ pointerShape ➜ 화살표 포인터의 모양입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ⚡ animationSpec ➜ 화살표 애니메이션 동작을 지정합니다.
 
@@ -72,11 +115,33 @@ fun AnimatedArrowPointer(
 
 ## ArrowPath
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## SimplePointer
 
@@ -106,8 +171,18 @@ object SimpleArrow : Shape {
 
 이해를 돕기 위해 다음 이미지를 확인해보세요 👇
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-CreatinganAnimatedArrowPointerinJetpackCompose_1.png)
 
@@ -117,8 +192,18 @@ object SimpleArrow : Shape {
 
 ## 화살 경로 그리기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 경로를 그리는 것은 간단합니다. 지정된 속성을 가진 캔버스에 일반적인 경로를 그리기만 하면 됩니다:
 
@@ -152,7 +237,18 @@ fun DrawScope.drawPathSegment(
 
 현재 경로 세그먼트의 끝에 동적으로 헤드를 그리려면 PathMeasure의 getPosition 및 getTangent를 활용하여 포인터의 위치와 올바른 방향을 가리키는 각도를 얻을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 fun DrawScope.drawPointerHead(
@@ -181,7 +277,7 @@ fun DrawScope.drawPointerHead(
         }
     }
 }
-```  
+```
 
 # 구현
 
@@ -235,7 +331,18 @@ fun AnimatedArrowPointer(
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 축하해요 🥳! 우리 성공적으로 만들었어요 👏. 전체 코드 구현을 확인하려면 GitHub Gist에 액세스할 수 있어요 🧑‍💻. 이제 사용 방법을 알아보아요.
 
@@ -245,7 +352,18 @@ fun AnimatedArrowPointer(
 
 <img src="/assets/img/2024-05-27-CreatinganAnimatedArrowPointerinJetpackCompose_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사용법
 
@@ -255,7 +373,18 @@ fun AnimatedArrowPointer(
 
 하단-우측 위치는 기본 포인팅 방향입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 AnimatedArrowPointer(
@@ -270,7 +399,18 @@ AnimatedArrowPointer(
 
 To point to the top-right, rotate the layout by -90 degrees:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 AnimatedArrowPointer(
@@ -287,7 +427,18 @@ AnimatedArrowPointer(
 
 Bottom-Left를 가리키려면 레이아웃을 x축에서 -1f로 확장하여 수평으로 반사합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 AnimatedArrowPointer(
@@ -304,7 +455,18 @@ AnimatedArrowPointer(
 
 왼쪽 위 방향을 위해, 먼저 레이아웃을 수평으로 반사한 다음, -90도로 회전시킵니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 AnimatedArrowPointer(
@@ -322,8 +484,18 @@ AnimatedArrowPointer(
 
 이 기사를 읽어 주셔서 감사합니다! ❤️ 즐거우시고 가치 있게 보내셨으면 좋겣습니다. 만약 좋았다면 만세 👏를 눌러서 감사를 표현해 주시고 Kappdev를 팔로우하여 더욱 흥미로운 기사를 읽어보세요 😊
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 행복한 코딩!
 

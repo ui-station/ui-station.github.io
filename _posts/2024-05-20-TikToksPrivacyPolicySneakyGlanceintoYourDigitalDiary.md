@@ -3,13 +3,12 @@ title: "틱톡의 개인정보 처리 방침 당신의 디지턈 일기에 몰�
 description: ""
 coverImage: "/assets/img/2024-05-20-TikToksPrivacyPolicySneakyGlanceintoYourDigitalDiary_0.png"
 date: 2024-05-20 21:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TikToksPrivacyPolicySneakyGlanceintoYourDigitalDiary_0.png
 tag: Tech
 originalTitle: "TikTok’s Privacy Policy: Sneaky Glance into Your Digital Diary"
 link: "https://medium.com/friendly-legal/tiktoks-privacy-policy-sneaky-glance-into-your-digital-diary-d5d90f9ddd52"
 ---
-
 
 최근 몇 년간 소셜 미디어는 디지털 호기심에서 수십억 명의 사람들에게 일상의 중심이 된 기초 요소로 발전해 왔습니다. Facebook, Instagram, X (이전 트위터), TikTok과 같은 플랫폼들은 의사 소통, 엔터테인먼트, 교육 (가끔), 심지어 비즈니스를 위한 주요 채널들로 성장했습니다. 이 인기 폭발적인 상승은 플랫폼이 작동하는 방식을 이해하는 것의 중요성을 보여줍니다. 특히 이용 약관과 개인정보 보호 정책에 관련하여 이해하는 것이 중요합니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/friendly-legal/tiktoks-privacy-policy-sneaky-glance-in
 
 대규모 사용자 기반과 영향력을 감안할 때, TikTok의 개인 정보 보호 정책을 사례 연구로 살펴보기로 결정했습니다. 우리의 목표는 데이터 수집 관행부터 동의 및 데이터 공유 정책까지 사용자들이 알아야 할 통찰을 발굴하고 강조하는 것입니다. 제 목표는 독자들이 플랫폼에서 안전하고 자신감 있게 활동할 수 있는 지식을 제공하는 데 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-TikToksPrivacyPolicySneakyGlanceintoYourDigitalDiary_0.png)
 
@@ -29,7 +39,18 @@ link: "https://medium.com/friendly-legal/tiktoks-privacy-policy-sneaky-glance-in
 
 ## 이 정책은 누구에게 적용되나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 정책은 TikTok을 사용하는 누구에게나 13세 이상을 대상으로 합니다. 13세 미만인 경우에는 어린이 개인정보 보호 정책이 따로 있습니다.
 
@@ -41,7 +62,18 @@ TikTok은 다음과 같은 정보를 수집할 수 있습니다:
 - 다른 사람으로부터 수집한 정보. 가끔, TikTok은 다른 사용자나 제3자 서비스와 같은 다른 곳에서 여러분에 대한 정보를 얻을 수 있습니다.
 - 자동으로 수집된 정보. TikTok은 여러분이 수동으로 입력하지 않아도 앱의 사용 방식이나 위치와 같은 여러분에 대한 일부 정보를 자동으로 수집할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 당신이 제공한 정보
 
@@ -58,7 +90,18 @@ TikTok은 다음과 같은 정보를 수집할 수 있습니다:
 
 틱톡에서 한 번의 탭, 입력, 셀카도 당신에 대해 수집하는 방대한 정보의 한 부분이 되어. 그들은 모든 것을 당신의 경험을 개선하기 위한 것이라고 약속하지만, 정말로 개인화된 것과 침입적인 것의 경계는 어디에 있는지 궁금해질 수밖에 없어. 틱톡의 데이터 제국의 광대한 체계 속에서, 우리는 사용자인가 혹은 사용되는 쪽일까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-20-TikToksPrivacyPolicySneakyGlanceintoYourDigitalDiary_1.png](/assets/img/2024-05-20-TikToksPrivacyPolicySneakyGlanceintoYourDigitalDiary_1.png)
 
@@ -72,7 +115,18 @@ TikTok은 다음과 같은 정보를 수집할 수 있습니다:
 - 입소문. 다른 사람들로부터의 정보. 비디오에서 언급된 적이 있거나 누군가가 당신의 연락처 정보를 틱톡과 공유한 적이 있나요? 그것은 허락을 받지 않아도 당신의 프로필에 추가되는 또 다른 퍼즐 조각입니다.
 - 정찰단. 외부 소스들. 틱톡의 촉수는 더 나아가서 공공 기록, 전문가 그룹 및 어디에서 어디까지든 데이터를 끌어모읍니다. 당신의 개인정보 설정이 얼마나 엄격하든 상관없습니다; 있다면, 틱톡이 그것을 캐내다가 있을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 이는 TikTok이 그들의 플랫폼에서 하는 일만을 주시하는 것이 아니라, 당신의 디지털 생활을 전반적으로 보고 있다는 것을 의미합니다. 맞춤형 콘텐츠와 광고는 멋진 트릭처럼 보일 수 있지만, 이들은 당신의 개인 정보를 희생하게 만들어 자세한 프로필로 이어지며, 디지턈 라인업에서 당신을 대신할 수도 있을 만큼 세밀합니다. TikTok은 이 모든 것이 더 나은 사용자 경험을 위한 것이라고 확신시켜 주지만, 우리가 언제 이렇게 철저하게 알려지기로 동의했는지 궁금할 때가 있습니다.
 
@@ -82,7 +136,18 @@ TikTok은 다음과 같은 정보를 수집할 수 있습니다:
 
 TikTok은 넓은 데이터 수집 네트워크 덕분에 우리를 우리 자신보다 더 잘 알고 있는 것 같습니다. 앱은 이 모든 것이 경험을 맞춤화하는 데 도움이 된다고 주장하지만, 그들이 빨아들이는 데이터 양을 생각해보면 화면을 멈춰있게 만듭니다. TikTok이 가지고 있는 디지털 도시에 대한 파일을 하나씩 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 미션: 스파이로 로그인
 
@@ -97,7 +162,18 @@ TikTok은 넓은 데이터 수집 네트워크 덕분에 우리를 우리 자신
 - TikTok에서의 활동. 어떤 비디오가 당신을 웃게 만드는지, 공유할 만큼 좋아하는 비디오, 심지어 업로드를 결정하는 콘텐츠 - 모두 TikTok 매트릭스의 데이터 점입니다.
 - 기기 정보. iPhone 소유자인지 아니면 Android 사용자인지, TikTok은 메모를 하며 성능을 맞춤화하여 당신을 못 놓을 만큽 유도합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 무서운 세부사항
 
@@ -110,7 +186,18 @@ TikTok은 넓은 데이터 수집 네트워크 덕분에 우리를 우리 자신
 - 메타데이터 마이닝. TikTok은 단순히 당신이 올린 것뿐만 아니라 각 콘텐츠의 어디, 언제, 어떻게를 파헤칩니다.
 - 크로스 디바이스 추적. 핸드폰에서 태블릿, 노트북으로 이동하면서? TikTok은 여러 기기를 통틀어 당신의 활동을 연결하여 디지털 생활의 상세한 초상을 그려냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그게 무슨 뜻이죠? TikTok은 당신에 대한 도신자가 모아놓은 것만큼의 정보를 가지고 있을 수도 있어요. 당신의 늦은 밤 미미 세션부터 주말 여행을 담은 포스트까지, TikTok은 모든 것을 갖고 있어요. 약속은 더 개인화된 피드인 반면, 교환은 빅 브라더조차 놀라워할 정도의 감시 수준입니다. 디지털 스컬이 제게된 시대에서 TikTok은 아마, 우리가 너무 많은 것을 공유하는지에 대한 뚜렷한 알리미입니다.
 
@@ -120,7 +207,18 @@ TikTok은 넓은 데이터 수집 네트워크 덕분에 우리를 우리 자신
 
 그렇다면, TikTok이 우리로부터 수집한 모든 정보를 정말로 어떻게 사용할까요? 그들은 이 모든 것을 우리의 TikTok 경험을 최대한 원활하게 만드는 데 사용한다고 말해요 - 앱을 버그 없이 유지하고, 고객 지원을 제공하고, 심지어 우리의 취향에 맞게 피드에 나타나는 내용을 맞춤화합니다. 듣기에는 멋지게 들리지만, 궁금한 이웃처럼 당신이 어떤 테이크아웃을 좋아하는지 추적하고 매일 무엇을 먹을지 결정하는 것과 조금 비슷해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 데이터를 사용하여 우리가 관심을 가질 만한 동영상을 보여주겠다고 주장합니다. 우리가 지역에서 트렌드인 것이나 이전에 시청한 것을 기반으로 추천해준다고 하네요. 우리가 좋아하는 컨텐츠를 보는 것도 멋지지만, 더 오래 화면에 묶여 있도록 하는 똑똑한 방법이기도 해요. 그리고 이 통찰력을 자기들만 가지고 있지 않고, 광고주들과 공유하고 있다고 합니다. 그래서 당신이 생각하던 스케이트보드 광고를 보게 되면 누구에게 감사를 표해야 할 지 아실 거예요.
 
@@ -130,7 +228,18 @@ TikTok의 소셜 측면은 우리 데이터를 수집하는 이유 중 하나입
 
 TikTok을 안전하게 유지하고 일부 기능을 위해 우리 신원을 확인하는 것은 존경스럽습니다. 그래도 안전을 위해서라면 얼마나 많은 감시에 동의하고 있는지 궁금해지지 않을 수 없네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 다음 의사 소통이 있습니다. TikTok으로부터 업데이트 또는 콘테스트에 대한 소식을 듣는 것은 펜팔로부터 편지를 받는 것 같은 느낌을 줄 수 있습니다. 다만, 이 경우에는 귀하의 개인 정보에 지나치게 관심이 많은 펜팔입니다.
 
@@ -140,7 +249,18 @@ TikTok을 안전하게 유지하고 일부 기능을 위해 우리 신원을 확
 
 ![이미지](/assets/img/2024-05-20-TikToksPrivacyPolicySneakyGlanceintoYourDigitalDiary_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 틱톡이 내 정보를 공유하는 방법
 
@@ -157,7 +277,18 @@ TikTok을 안전하게 유지하고 일부 기능을 위해 우리 신원을 확
 
 틱톡의 정보 공유 방식은 정보의 양 뿐 아니라, 함께 공유하는 기업 네트워크의 방대함으로 인해 눈길을 끕니다. 이들은 이를 원할한 서비스 제공의 일환으로 소개하지만, 운영에 대한 필수성과 우리의 개인정보 보호권 사이의 섬세한 균형에 있어서 의심이 듭니다. 신뢰와 안전 보장의 말로 포장되어 있더라도, 우리의 데이터가 어디로 가고 어떻게 사용되는지 항상 주의해야 함을 상기시켜줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![TikTok Privacy Policy](/assets/img/2024-05-20-TikToksPrivacyPolicySneakyGlanceintoYourDigitalDiary_5.png)
 
@@ -167,7 +298,18 @@ TikTok을 안전하게 유지하고 일부 기능을 위해 우리 신원을 확
 
 당신의 개인정보에 대한 우려를 처리할 수 있는 공인 대리인이 있나요? 그들의 적법성을 증명하기 위해 막다른 상황을 겪을 준비를 해야 할 거에요. 틱톡은 이 특별한 대리인이 당신을 대신하여 보낸 증거인으로 보유권 또는 일부 견고한 서면증거를 보기를 원합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그들은 매우 민감한 정보(예: 금융 상세정보 또는 운전 면허 번호)를 수집한다고 우리를 달래려고 노력합니다. 이 정보는 물건을 판매하거나 신분을 확인하는 등 필수적인 용도로만 사용된다고 말이에요. 이렇게 안심시켜 주는 게 어떨까요?
 
@@ -177,7 +319,18 @@ TikTok을 안전하게 유지하고 일부 기능을 위해 우리 신원을 확
 
 또한 기기 설정을 조정하여 TikTok이 수집하는 정보 중 일부를 제한할 수도 있습니다. 따분한 광고 ID를 제한해 보세요. 마케팅 이메일에 싫증이 나신다면? "구독 취소" 옵션을 선택할 수 있는 디지털 탈출구가 항상 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위치 추적에 관해서 TikTok은 "걱정하지 마세요, 미국 사용자들로부터 GPS 데이터 수집을 중단했습니다."라고 말합니다. 그러나 이전 버전의 앱을 사용 중이라면 GPS 데이터를 수집한 적이 있을 수 있으니, 기기에서 해당 권한을 비활성화해야 합니다.
 
@@ -187,7 +340,18 @@ TikTok을 안전하게 유지하고 일부 기능을 위해 우리 신원을 확
 
 ![이미지](/assets/img/2024-05-20-TikToksPrivacyPolicySneakyGlanceintoYourDigitalDiary_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 왜 이런 것들이 걱정되는 이유?
 
@@ -200,7 +364,18 @@ TikTok을 안전하게 유지하고 일부 기능을 위해 우리 신원을 확
 
 TikTok은 재미와 게임으로 보일 수 있지만, 개인정보와 보안 문제는 실제로 중요한 문제예요. 게임의 규칙이나 위험을 완전히 이해하지 않고 게임에 참여하는 것과 같아요. 흥미로워 보일 수 있겠지만, 당신이 예상보다 더 많은 위험에 직면할 수도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 고지사항
 

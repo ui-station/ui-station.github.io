@@ -3,13 +3,12 @@ title: "GitLab에서 Docker를 사용하여 Playwright 테스트 실행하는 �
 description: ""
 coverImage: "/assets/img/2024-06-23-RunningPlaywrighttestswithDockeronGitLab_0.png"
 date: 2024-06-23 00:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-RunningPlaywrighttestswithDockeronGitLab_0.png
 tag: Tech
 originalTitle: "Running Playwright tests with Docker on GitLab"
 link: "https://medium.com/@OnurDenizhan/running-playwright-tests-with-docker-on-gitlab-585ff45f734b"
 ---
-
 
 ![이미지](/assets/img/2024-06-23-RunningPlaywrighttestswithDockeronGitLab_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@OnurDenizhan/running-playwright-tests-with-docker-on-
 
 # 문제점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작하기 전에, 왜 우리가 도커 이미지에서 테스트를 실행하는지 설명하는 것이 중요합니다. 저희 프로젝트에서는 브랜치별 테스팅을 진행하고 있는데요, 그것은 스프린트 동안 개발 중인 기능 브랜치에 대해 테스트를 실행한다는 것을 의미합니다. 이 기능 브랜치는 테스트 프로젝트 이미지와 함께 풀되어 도커 컨테이너에서 실행되며, 그 후 해당 실행 애플리케이션에 대해 테스트를 실행합니다. 아래에 프로세스를 설명하는 스크린샷과 플로우차트를 포함하였습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@OnurDenizhan/running-playwright-tests-with-docker-on-
 
 ![이미지 링크](/assets/img/2024-06-23-RunningPlaywrighttestswithDockeronGitLab_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 설치
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@OnurDenizhan/running-playwright-tests-with-docker-on-
 
 로컬에서 테스트를 실행하려면 컴퓨터에 Docker를 설치해야 합니다. 이 링크에서 설치할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프로젝트에 Docker 추가하기
 
@@ -61,7 +93,18 @@ COPY . .
 CMD ["npx", "playwright", "test"]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사의 대상은 Docker에 대해 처음 접하는 사람부터 Docker 전문가까지 다양합니다. 모두가 명확히 이해할 수 있도록 한 줄씩 설명하겠습니다.
 
@@ -76,7 +119,18 @@ CMD ["npx", "playwright", "test"]
 
 # 로컬에서 테스트 실행
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬에서 테스트하려면 먼저 Docker를 시작하고 프로젝트 루트에 생성한 도커 파일을 빌드해야 합니다. VS Code 터미널을 사용하여 다음 명령을 사용하여 도커 파일을 빌드합니다. "docker build -t playwright-demo ."
 
@@ -86,7 +140,18 @@ CMD ["npx", "playwright", "test"]
 
 이미지가 성공적으로 빌드되면 "docker run -it — rm playwright-demo"으로 실행 준비가 완료됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-RunningPlaywrighttestswithDockeronGitLab_6.png" />
 
@@ -96,7 +161,18 @@ CMD ["npx", "playwright", "test"]
 
 프로젝트에 gitlab-ci.yml 파일을 추가하고 이를 구성하여 파이프라인에서 테스트를 실행해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```YAML
 기본값:
@@ -123,10 +199,10 @@ CMD ["npx", "playwright", "test"]
     - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY -u $CI_REGISTRY_USER --password-stdin
   script:
     - docker pull $CI_REGISTRY_IMAGE:latest || true
-    - docker build 
+    - docker build
       --cache-from $CI_REGISTRY_IMAGE:latest
-      --tag $CI_REGISTRY_IMAGE:latest 
-      --build-arg BUILDKIT_INLINE_CACHE=1 
+      --tag $CI_REGISTRY_IMAGE:latest
+      --build-arg BUILDKIT_INLINE_CACHE=1
       "."
     - docker push $CI_REGISTRY_IMAGE:latest
 
@@ -148,7 +224,7 @@ CMD ["npx", "playwright", "test"]
       - playwright-report
       - test-results
     expire_in: 1 주
-``` 
+```
 
 우리는 Docker 이미지를 정의합니다. 이 섹션 끝에서 몇 가지 중요한 사항을 주목해야 합니다.
 
@@ -156,8 +232,18 @@ CMD ["npx", "playwright", "test"]
 
 파이프라인의 초기 단계에서는 "before_script" 섹션 내에서 docker에 로그인하여 이미지를 가져옵니다. Gitlab 이미지 레지스트리에 이미지가 있는 경우에는 캐시에서 가져옵니다. 그렇지 않으면 로컬로 빌드한 다음 미래 빌드를 가속화하기 위해 이미지 레지스트리에 푸시합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 단계에서는 Docker에 로그인하고 우리의 테스트 결과를 Docker 이미지에서 Gitlab 아티팩트로 전송하기 위해 두 개의 폴더를 생성합니다. 스크립트 섹션에서는 우리의 이미지를 실행하고, 마지막으로 아티팩트 섹션에서 테스트 폴더의 경로를 지정합니다.
 
@@ -167,8 +253,18 @@ CMD ["npx", "playwright", "test"]
 
 변경 사항을 GitLab에 푸시하면 파이프라인에서 이와 유사한 내용이 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-RunningPlaywrighttestswithDockeronGitLab_7.png" />
 
@@ -178,8 +274,18 @@ CMD ["npx", "playwright", "test"]
 
 # 보고서에 접근하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보고서에 액세스하려면 페이지 우측 하단에 있는 "찾아보기" 버튼을 클릭하여 프로젝트 자료를 확인하세요.
 
@@ -189,7 +295,18 @@ CMD ["npx", "playwright", "test"]
 
 ![이미지](/assets/img/2024-06-23-RunningPlaywrighttestswithDockeronGitLab_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

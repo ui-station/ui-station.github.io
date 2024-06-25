@@ -3,13 +3,12 @@ title: "어렵게 배운 교훈 Cilium의 기본 Pod CIDR을 사용하지 마세
 description: ""
 coverImage: "/assets/img/2024-06-19-LearneditthehardwayDontuseCiliumsdefaultPodCIDR_0.png"
 date: 2024-06-19 13:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-LearneditthehardwayDontuseCiliumsdefaultPodCIDR_0.png
 tag: Tech
 originalTitle: "Learned it the hard way: Don’t use Cilium’s default Pod CIDR"
 link: "https://medium.com/@isalapiyarisi/learned-it-the-hard-way-dont-use-cilium-s-default-pod-cidr-89a78d6df098"
 ---
-
 
 전 eBPF에 상당히 오랫동안 관여해 왔습니다. 우리 팀장이 Azure CNI에서 Cilium CNI로 모든 클러스터를 라이브 이전하는 것을 제안했을 때, 기회에 바로 뛰어들었어요. 이 일은 내가 지금까지 맡았던 가장 힘든 일 중 하나였지만, 그 시간 동안 즐거웠어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@isalapiyarisi/learned-it-the-hard-way-dont-use-cilium
 
 ## 왜 Cilium을 선택했는가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Cilium을 선택한 우리의 주요 목표는 다음과 같습니다:
 
@@ -34,7 +44,18 @@ Cilium을 선택한 우리의 주요 목표는 다음과 같습니다:
 
 그리고 모든게 좋았는데...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사건
 
@@ -44,7 +65,18 @@ Cilium을 선택한 우리의 주요 목표는 다음과 같습니다:
 
 더 깊이 파고들기 전에, 빠른 다이어그램을 사용하여 우리의 네트워크 아키텍처(간소화된 버전)를 설명해 드리겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-LearneditthehardwayDontuseCiliumsdefaultPodCIDR_1.png" />
 
@@ -54,7 +86,18 @@ Cilium을 선택한 우리의 주요 목표는 다음과 같습니다:
 
 Wireshark와 Hubble을 통해, 방화벽에서 전송된 "SYN" 패킷이 서비스에 도달했지만 서비스로부터 해당하는 "ACK" 패킷이 전송되지 않았음을 확인했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제를 해결하기 위한 몇 차례의 무산된 시도 끝에 SRE 팀은 프로덕션으로의 릴리스를 승인했습니다. 중요한 수정 사항을 가능한 빨리 릴리즈해야 했기 때문입니다. 이 결정의 근거는 애플리케이션 수준의 변경이 인프라를 손상시킬 수 없으며, 이 일은 격리된 사건이었습니다.
 
@@ -64,7 +107,18 @@ Wireshark와 Hubble을 통해, 방화벽에서 전송된 "SYN" 패킷이 서비�
 
 스테이징에서의 문제가 여전히 해결되지 않아 전문 네트워크 전문가와 함께 전투실에 호출되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금쯤 SRE 팀은 광범위한 실험을 통해 많은 데이터를 수집했습니다. 우리 VPC 내의 다른 서브넷에 VM을 배포하는 실험을 해보았는데, 로컬 노드 풀 서브넷부터 다른 클러스터에 속한 원격 서브넷, 로드 밸런서 서브넷까지 다양한 곳에 시도해봤습니다. 모든 것이 예상대로 작동되었는데, 방화벽을 통해 통과하는 트래픽에서 문제가 발생했습니다.
 
@@ -72,7 +126,18 @@ Wireshark와 Hubble을 통해, 방화벽에서 전송된 "SYN" 패킷이 서비�
 
 Azure 네트워크 엔지니어가 합류하면서, SRE 팀은 그들이 지금까지 한 모든 단계에 대해 설명했습니다. 수집한 데이터를 분석한 후, 엔지니어는 방화벽 서브넷 내에 VM을 배포하고 문제가 있는 Kubernetes 클러스터로 TCP 연결을 시도하라는 제안을 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 SRE 팀은 방화벽 서브넷 내에 임시 VM을 빠르게 설정하고 로드 밸런서 IP로 telnet을 시도해 보았어요. 이 테스트 중에 우리가 직면한 동일한 문제를 관찰했는데, telnet 연결이 초기화되지 않았어요. 그래서 그들은 방화벽 서브넷과 로드 밸런서 서브넷 또는 노드 풀 서브넷 간 네트워크 피어링에 문제가 있는지 조사하기로 결정했어요.
 
@@ -82,7 +147,18 @@ Azure 네트워크 엔지니어가 합류하면서, SRE 팀은 그들이 지금�
 
 의아해하며, 그들에게 노드 풀 서브넷에 생성한 임시 VM을 사용하여 동일한 테스트를 수행해 보라고 요청했더니, 드디어 작동했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 루트 원인
 
@@ -92,7 +168,18 @@ Azure 네트워크 엔지니어가 합류하면서, SRE 팀은 그들이 지금�
 
 ![Image](/assets/img/2024-06-19-LearneditthehardwayDontuseCiliumsdefaultPodCIDR_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Cilium 노드 라우팅
 
@@ -102,7 +189,18 @@ Azure 네트워크 엔지니어가 합류하면서, SRE 팀은 그들이 지금�
 
 예를 들어, CIDR 범위인 10.0.0.0/8을 사용한다면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 노드 A는 서브넷 10.1.0.0/16을 받을 수 있습니다.
 - 노드 B는 서브넷 10.4.0.0/16을 받을 수 있습니다.
@@ -113,7 +211,18 @@ Azure 네트워크 엔지니어가 합류하면서, SRE 팀은 그들이 지금�
 
 보통은 정상적으로 작동합니다. 그러나 유감스럽게도, 노드에 할당된 서브넷 중 하나가 방화벽의 서브넷 범위와 겹치는 문제가 발생했습니다. 이로 인해 SYN 패킷이 팟에 성공적으로 도달하지만, 팟이 응답을 시도할 때 요청이 노드의 네트워크 인터페이스로 전달되는 상황이 발생했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 때, 노드의 IP 라우팅 규칙 때문에 패킷이 다른 노드로 라우팅되었습니다. 이는 방화벽의 VM IP 주소가 두 번째 노드의 서브넷 범위 내에 속했기 때문에 발생했습니다. 그러나 두 번째 노드에는 방화벽의 VM과 정확히 일치하는 IP 주소를 가진 pod가 없었기 때문에 패킷이 소멸하여 사라졌습니다.
 
@@ -123,7 +232,18 @@ Azure 네트워크 엔지니어가 합류하면서, SRE 팀은 그들이 지금�
 
 그 판명날인 첫 월요일 아침, SRE 팀이 개발 환경에서 스테이징으로 릴리스를 승격시키자마자 노드 스케일업을 트리거하여 충돌하는 CIDR 범위가 있는 노드가 생성되었고, 이로 인해 전체 통신 경로가 다운되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 문제 수정
 
@@ -133,7 +253,18 @@ Azure 네트워크 엔지니어가 합류하면서, SRE 팀은 그들이 지금�
 
 추가 테스트를 실행한 후에 우리의 프로덕션 클러스터도 동일한 문제를 겪었기 때문에, Cilium 문서에서 반대하고 있던 것에도 불구하고 clusterPoolIPv4PodCIDRList를 업데이트하여 문제를 영구적으로 해결하기로 결정했습니다. 이에 이해 관계자들로부터 동의를 받고 마이그레이션을 실행했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

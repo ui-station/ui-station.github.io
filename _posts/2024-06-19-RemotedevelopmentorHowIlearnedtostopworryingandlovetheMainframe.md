@@ -3,14 +3,12 @@ title: "원격 개발, 또는 메인프레임을 사랑하게 된 방법"
 description: ""
 coverImage: "/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_0.png"
 date: 2024-06-19 12:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_0.png
 tag: Tech
 originalTitle: "Remote development, or: How I learned to stop worrying and love the Mainframe"
 link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-worrying-and-love-the-mainframe-90165147a57d"
 ---
-
-
 
 ![2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_0](/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_0.png)
 
@@ -20,31 +18,52 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 
 여기에서 한 발 더 나아가서, 컨테이너 중심 환경에서 어떻게 작업하는지 배워보겠습니다. 여기서 우리는 완전한 네이티브 리눅스 성능과 17시간 배터리, 그리고 제로 팬 소음을 얻을 것입니다. 우리는 작은 도플릿 VPS를 임대하고, VSCode 및 JetBrains의 IntelliJ Idea CE를 통해 원격 개발 환경을 설정할 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 항상 글이 너무 길어서 연구 과정을 이야기하는데, 읽기 싫다면 "클라우드에서 로컬 개발 환경을 실행하세요. 생각한 것만큼 어렵지 않습니다" 라는 것만 기억해 주세요. 여기에 목차가 있습니다:
 
 - 🐳 개발에서의 Docker
-— Swapping and swinging
-— Docker For Mac을 포기한 이유
-— Parallels 모험
+  — Swapping and swinging
+  — Docker For Mac을 포기한 이유
+  — Parallels 모험
 - 💻 개발에서 얇은 클라이언트의 경우
-— 가격
-— 성능
-— 학습 기회
+  — 가격
+  — 성능
+  — 학습 기회
 - 🛰 원격 개발 서버 설정
-— 보안에 대한 메모
-— 자동 생성
+  — 보안에 대한 메모
+  — 자동 생성
 - 🌍 원격 개발 기능이 있는 코드 편집기
-— 서버에 액세스하기 위해 VSCode Remote 사용
-— 원격 서버와 함께 JetBrains Projector 사용 방법
+  — 서버에 액세스하기 위해 VSCode Remote 사용
+  — 원격 서버와 함께 JetBrains Projector 사용 방법
 
 # Docker에서 개발
 
 생산 환경에서 컨테이너를 사용하도록 설득하려고 하지 않을 것입니다. 그것은 이미 너무나 당연한 일입니다. 여기서 제가 살펴보고 있는 것은 Docker가 팀의 통합성과 생산성에 미치는 흔히 언급되지 않은 영향입니다. - 맥에서의 개발용 Docker.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 몇 년 전, 저는 꽤 큰 기업에서 꽤 큰 핵심 제품을 다루는 다양한 시니어도 함께하는 30명의 엔지니어 팀을 이끌었습니다. 시험적인 프로젝트로 Docker를 우리 프로덕션 환경에 (조심스럽게) 도입하는 것을 맡게 되었습니다.
 
@@ -62,7 +81,18 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 - 프로그램 코드 또는 설정 변경, 프로덕션 업그레이드 또는 잘못된 에셋 배치와 같은 지저분한 실천 방지합니다.
 - 그리고 더 많은 이점들이 있습니다...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드베이스의 일부로 최상위 레이어 또는 인프라를 유지하는 것은 모든 이해 관계자에게 도움이 됩니다. 이 방법으로 도구들을 서로 분리시키고 팀이 설정을 자유롭게 실험하고 매우 빨리 반복할 수 있게 합니다.
 
@@ -72,7 +102,18 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 
 이제 그들은 자신만의 스택을 소유하고 자랑스러워합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어쨌든, Docker가 좋은 성과를 냈습니다. 회사에서는 오늘날까지도 사용하고 있고, 제가 더 이상 그곳의 일원이 아니더라도, 그들이 널리 도입할 계획을 세우고 있다는 소식을 듣고 기뻤습니다.
 
@@ -82,7 +123,18 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 
 2021년에 대한 영감을 줄만한 재미있는 전쟁 스토리 시간입니다...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언젠가 오래 전에, 교수 블라디미르 렐리카닌은 저희 반에게 Git과 MAMP 환경 설정에 대해 가르치고 계셨어요. 농담으로 무언가 말씀하셨는데, 오늘까지 기억나는데요: "새 컴퓨터에 앉아서 30분 이내에 완전히 설정이 되고 코딩을 시작하지 못하면 시간을 낭비하는 거예요. 무언가가 잘못되었다는 신호에요. 아마도 스택을 이해하지 못하고 있다는 거죠".
 
@@ -92,7 +144,18 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 
 이제는 2021년이고, VPN과 SSH 키 뒤에 코드를 보관하는 게 더 좋을 것 같아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2016년에는 3D 및 VR 작업을 많이 수행하는 회사에서 일했습니다. 제 동료 Kole는 모든 것을 Dropbox에 보관했습니다. 만약 그가 강력한 컴퓨터가 필요한 프로젝트를 작업 중이었다면, 그는 그냥 Cmd+S를 눌러 더 강력한 데스크탑으로 전환할 수 있었습니다.
 
@@ -102,7 +165,18 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 
 내 30명의 엔지니어 팀을 기억하시나요? 모두에게 불행한 일이 되어버렸는데, Docker가 관련된 경우 Mac에서 코딩하는 성능과 일반적인 사용성에 만족스럽지 못했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 숙고하며 구멍 속으로 들어갈수록 더 어둡기만 했어요. 때로는 정말로 돌아갈 길이 없는 것 같아서 막막했죠. 회사로서는 200대의 우분투 컴퓨터를 사서 관련된 모두에게(그들의 코드베이스도 포함하여) 스위칭하는 법을 가르쳐야 했어요.
 
@@ -112,7 +186,18 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 
 ## Parallels 모험
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대처 전략 중 하나(파트#2에 개요되어 있음)은 D4M을 제거하고 새로운 도커 컨텍스트를 위한 하이퍼바이저로 Parallels VM을 사용하는 것이었습니다. 이를 통해 우분투용으로 개발된 Parallels 팀이 여러 해 동안 개발한 모든 멋진 최적화 기능을 활용할 수 있었습니다.
 
@@ -122,7 +207,18 @@ link: "https://medium.com/homullus/remote-development-or-how-i-learned-to-stop-w
 
 그러므로 한 가지 의문이 제기됩니다 — 이미 많은 어려움을 겪고 이러한 모든 도구를 사용하고 있는데, 왜 우리는 VM을 완전히 제거하지 않고 그냥 그것을 원격 위치로 보내고, 멋지고 강력한 곳에 연결하여 같은 도구를 사용하지 않는지요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_3.png" />
 
@@ -132,8 +228,18 @@ MVP 시간이네요! DigitalOcean에서 가장 저렴한 드롭렛을 구입했�
 
 빠르게 VSCode 인스턴스를 SSH를 통해 드롭렛에 연결하고 원격 폴더를 선택했어요. 코드를 편집하고 페이지를 다시로드했어요. 좋아, 충분히 잘 작동하네요, 예상대로요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_4.png)
 
@@ -143,8 +249,18 @@ MVP 시간이네요! DigitalOcean에서 가장 저렴한 드롭렛을 구입했�
 
 이제 드롭렛이나 EC2 인스턴스를 임대하고, 매월 15달러부터 50달러까지 지불합니다. 업타임만 지불한다면 훨씬 적게 지불할 수 있습니다. 그래도 가장 비싼 것을 가정해보면, 50달러입니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, 우리가 처음으로 저축한 돈은 이제 VPS 공급업체에 매월 작은 지불로 연중에 걸쳐 분할될 것입니다(절대 최악의 경우).
 
@@ -154,8 +270,18 @@ MVP 시간이네요! DigitalOcean에서 가장 저렴한 드롭렛을 구입했�
 
 내 현재 노트북은 BTO MacBook입니다. 미친 듯이 $4000에 가까운 가격을 태웠죠. 원격 개발 세계에서, 저는 배터리가 오래 가고 열이 덜 발생하는 $900의 M1 기계와 제 노트북보다 훨씬 강력한 드롭렛을 구입했습니다. $3000 할인으로 더 나은 두 가지 도구를 얻었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_5.png)
 
@@ -165,8 +291,18 @@ EC2 인스턴스는 심지어 더 나은 성능을 자랑합니다 (다만 관�
 
 숙련도가 충분하다면 기존 k8s 클러스터에 연결하고 이미 사용 가능한 다른 서비스를 사용할 수도 있습니다. 이에 대해 자세히 모르지만 Telepresence와 같이 해당 목적에 맞춘 특수 도구가 있다는 것은 여러해 전부터 알고 있습니다. 그렇지 않으면 DigitalOcean 관리 클러스터를 생성해보세요. 1클릭/무난한 작업으로 간단합니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_6.png" />
 
@@ -176,7 +312,18 @@ EC2 인스턴스는 심지어 더 나은 성능을 자랑합니다 (다만 관�
 
 ## 학습 기회
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 사람들은 주니어들이 이것을 받아들이기가 어려울 것이라고 할지도 모릅니다. 하지만 제 경험상 시니어 개발자들이 저항을 표했지만, 주니어들은 실제로 아주 빨리 이해했어요. 그들은 CLI 사용에 조금 더 배워야 할 수도 있고, 때로는 전체 서버를 망칠 수도 있지만 — 그러니까 뭐요? 로컬 머신과는 다르게, 새로운 서버를 생성하고, 단 둘만에 다시 트랙에 올라갈 수 있어요.
 
@@ -186,7 +333,18 @@ EC2 인스턴스는 심지어 더 나은 성능을 자랑합니다 (다만 관�
 
 # 원격 개발 서버 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 업데이트 16.11.2021: 이후로 저는 새로운 워크박스를 생성해야 할 때 사용하는 Readme 파일을 조금 작성하기 시작했습니다. 언젠가는 자동화할 거지만, 지금은 매우 대략적인 Readme.md를 제공해요.
 
@@ -196,7 +354,18 @@ EC2 인스턴스는 심지어 더 나은 성능을 자랑합니다 (다만 관�
 
 한 달에 20달러에 2 CPU는 꽤 좋은 거래에요. 충분한 RAM이 있어서 yarn 설치가 영원히 걸리지 않거나, 의존성 트리 계산 중에 Garbage Collection 한계에 부딪혀서 compose 설치가 실패하지 않아요. 여분의 돈이 있다면, 8GB/4CPU 설정을 추천합니다. 그 가치가 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 가까운 데이터 센터를 선택해주세요. 지연 시간은 별다른 문제가 없지만, 왜 안 하시겠어요! 옵션이 제공된다면 SSH 키와 모니터링을 삽입해주세요. 귀여운 이름을 지어서 만들어보세요!
 
@@ -206,7 +375,18 @@ SSH를 통해 VPS에 액세스하고, SSH 키를 생성하여 GitHub 계정에 �
 
 ## 보안에 대한 참고사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설정 중에 SSH 키를 추가하지 않았다면, 구글링해보세요. DigitalOcean에는 그것을 하는 방법과 비밀번호 인증을 비활성화하는 방법에 대한 많은 자습서가 있어요.
 
@@ -216,7 +396,18 @@ SSH를 통해 VPS에 액세스하고, SSH 키를 생성하여 GitHub 계정에 �
 
 저의 겸손한 의견으로는 이는 필요하지 않아요. SSH 키가 충분한 보호가 될 거에요 (안전하게 보관한다면요). 누군가가 HTTP로 공격하거나 스크랩을 하길 우려한다면, ufw에서 IP 주소를 화이트리스트에 추가하세요. 회사로서 이것을 읽는다면, 아마도 이미 회사 VPN을 가지고 계실 텐데, DigitalOcean에서 사설 네트워크를 생성하세요. 이에 대해 여전히 걱정이 된다면, DigitalOcean에 몇 가지 아이디어가 있는 것 같아요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 자동 생성물
 
@@ -226,7 +417,18 @@ DO에는 HTTP API, 테라폼 지원 및 심지어 앤서블 스크립트 지원�
 
 # 원격 개발 기능이 있는 코드 편집기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2021년이고 편집기들이 이 필요성을 알아보기 시작했다. 언제나 그래왔듯이, 오래된 학교의 편집기인 emacs와 vim은 이미 기본 설정으로 이 설정을 지원한다. 왜냐하면 그들을 droplet이나 컨테이너 내에서 실행할 수 있기 때문에 이 설정에 이미 액세스할 수 있다고!
 
@@ -236,7 +438,18 @@ DO에는 HTTP API, 테라폼 지원 및 심지어 앤서블 스크립트 지원�
 
 VSCode에는 내장된 "원격 컨테이너에 연결" 기능이 있습니다. 이 기능은 실제 편집기를 생성하고 컨테이너 내의 네이티브 인터프리터와 직접 작업할 수 있게 해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 할 일은 VSCode를 사용하여 원격 VPS에 SSH 워크스페이스로 연결하는 것입니다. .vscode/workspace.code-workspace 위치에 새 파일을 만들어 해당 폴더를 여러 프로젝트의 루트로 정의해야 합니다. 여기에는 표준 vscode 설정을 포함할 수도 있습니다. 예시는 다음과 같습니다:
 
@@ -292,7 +505,18 @@ VSCode에는 내장된 "원격 컨테이너에 연결" 기능이 있습니다. �
 
 컨테이너화된 앱을 시작하고, 쉘 파일, 도커 또는 도커 컴포즈가 됐던, 실행 중인 컨테이너에 "Attach to a Running Container" 기능을 사용하여 편집을 원하는 런타임을 포함한 컨테이너를 선택합니다. 이렇게 하면 해당 프로젝트가 있는 새 창이 열리며, 해당 프로젝트의 모든 설정과 린트가 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VSCode는 표준 .vscode 구성 파일에서 내린 모든 결정을 존중해줍니다. 그래서 보통처럼 자유롭게 사용할 수 있어요! 이러한 파일들은 일반적으로 프로젝트 내부에 커밋되어 프로젝트에 대해 모든 팀 멤버가 동일한 규칙과 에디터 설정을 사용하도록 보장합니다. 의존성과 규칙을 추가하는 방법을 아래 예시를 참고하세요:
 
@@ -313,7 +537,18 @@ $ cat .vscode/extensions.json
 
 이것이 저에게 다른 프로젝트를 이동하고 시작하고 중지하고 파일을 이동하며 도트파일, 설정 파일 또는 컨테이너를 만드는 매우 좋은 방법을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 docker-compose를 통해 프로젝트를 시작할 수 있습니다. 서로 다른 편집기 창을 서로 다른 컨테이너에 연결할 수 있습니다.
 
@@ -323,7 +558,18 @@ $ cat .vscode/extensions.json
 
 재미를 위해, 동일한 VPS에서 동시에 다른 클라이언트를 위한 완전히 다른 프로젝트를 시작해 보죠. 해당 프로젝트는 elixir로 실행되며 다른 컨테이너나 그들의 런타임에 대해 전혀 알지 못합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 VSCode 창마다 실제로 각 프로젝트 및 해당 런타임에 대해 매우 특화되고 간소화되어 있다는 것을 의미합니다. 각각이 서로 다른 설정(색상도 다름)을 가지고 있으며, 프로젝트의 로컬 .vscode 파일을 준수하고 서로 다른 일련의 확장 기능이 실행됩니다. Out of the box.
 
@@ -333,7 +579,18 @@ $ cat .vscode/extensions.json
 
 JetBrains는 다른 아이디어를 가지고 있습니다. Docker 컨테이너 내에서 편집기를 생성한 다음, Projector 앱이나 브라우저를 사용하여 연결하는 방법을 허용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 편집기는 프로젝트의 컨테이너 내에서 실행되지 않습니다. 대신 호스트에서 실행되며 호스트의 파일시스템 개요에 액세스할 수 있습니다. VPS에 직접 이진 파일로 설치하거나 Docker를 통해 별도의 컨테이너로 생성할 수 있습니다.
 
@@ -341,8 +598,18 @@ JetBrains는 다른 아이디어를 가지고 있습니다. Docker 컨테이너 
 
 그러나 JetBrains는 원격 인터프리터 사용을 가능하게 하는 데 많은 투자를 했기 때문에 모든 "두꺼운" 편집기가 원격 컨테이너 내에서 실행 중에 실행을 사용할 수 있습니다. 이는 편집기가 앱 실행과 동일한 런타임을 사용할 수 있는 능력이 있음을 의미합니다. 편집기는 컨테이너에 연결하고 편집기가 수행하는 컴파일에 대한 실행 시간을 사용할 수 있게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Example image](/assets/img/2024-06-19-RemotedevelopmentorHowIlearnedtostopworryingandlovetheMainframe_10.png)
 
@@ -352,8 +619,18 @@ JetBrains는 다른 아이디어를 가지고 있습니다. Docker 컨테이너 
 
 따라 주셔서 감사합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저에게 귀하의 생각을 듣고 싶습니다. 완벽하지는 않지만, 지금까지 만들어본 최고의 설정입니다.
 

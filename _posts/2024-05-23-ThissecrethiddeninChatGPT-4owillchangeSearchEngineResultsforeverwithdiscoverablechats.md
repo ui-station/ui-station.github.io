@@ -18,7 +18,18 @@ OpenAI의 새로운 모델인 GPT-4o와 그의 멀티모달 매직, 비교할 �
 
 ChatGPT 사용자들은 오랫동안 특정 대화에 대한 링크를 직접 복사하고 붙여넣기를 하지 않고도 친구나 동료들과 공유할 수 있었습니다(3.5버전과 4버전에서 작동합니다). 이를 통해 사용자들은 아이디어를 고민하고, 프롬프트를 공유하거나, 그냥 재미있는 채팅을 할 수 있었습니다. 이러한 순간들을 공유함으로써 생산성과 연결성을 증대시킬 수 있습니다. 그러나 4o의 "공유 링크" 기능은 다소 다릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-이챗GPT-4에숨겨진비밀은검색엔진결과를영원히변화시킬것입니다_0.png" />
 
@@ -28,7 +39,18 @@ ChatGPT 사용자들은 오랫동안 특정 대화에 대한 링크를 직접 �
 
 정말 알면 알수록 좋은 기능이죠. 걱정 마세요. 저는 발견한 내용을 안내해 드릴게요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 어떻게 작동하나요?
 
@@ -41,7 +63,18 @@ ChatGPT 사용자들은 오랫동안 특정 대화에 대한 링크를 직접 �
 
 <img src="/assets/img/2024-05-23-ThissecrethiddeninChatGPT-4owillchangeSearchEngineResultsforeverwithdiscoverablechats_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GPT-4o의 발견 가능 옵션은 아직 사용 중이 아니며, 동의한 채팅의 미래 사용을 가리킬 수 있습니다. OpenAI의 현재 FAQ에 따르면 채팅이 인터넷의 공개 검색 결과에 사용되지 않는다고 합니다. 그러나 새로운 옵션 상자는 이 기능의 미래 잠재력을 시사합니다 - 아직 알아차릴 수 없었더라도요!
 
@@ -51,7 +84,18 @@ GPT-4o의 발견 가능 옵션은 아직 사용 중이 아니며, 동의한 채�
 
 그래서, 이 기능을 최대한 활용하려면 어떻게 해야 할까요? 여기 GPT-4 채팅을 공유할 때 매우 유용할 수 있는 몇 가지 시나리오가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 챗지피티 대화의 기본 링크 공유 (비공개):
 
@@ -64,7 +108,18 @@ GPT-4o의 발견 가능 옵션은 아직 사용 중이 아니며, 동의한 채�
 - 소셜 미디어: 특히 웃기거나 통찰력 있는 대화가 있었나요? 네트워크 이외의 관객과 공유하세요. 바이럴이 될 수도 있어요!
 - 콘텐츠 제작: 블로거, 인플루언서 및 컨텐츠 제작자들은 채팅을 공유하여 참여도를 높이고 팔로워들에게 콘텐츠를 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 지금까지 가장 큰 응용 프로그램 중 하나 (좋다 나쁘다 모두)은 SEO에 미치는 잠재적 영향입니다. 정보가 색인화되고 발견되는 방식을 변경함으로써 SEO에 미치는 영향이 크게 변할 것입니다.
 
@@ -74,7 +129,18 @@ GPT-4o의 발견 가능 옵션은 아직 사용 중이 아니며, 동의한 채�
 
 다음과 같이 말이죠:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 가시성 증가: 공용 링크는 검색 엔진에서 색인화될 수 있어 콘텐츠가 검색 결과에 나타날 확률을 높일 수 있어요.
 - 키워드 최적화: 대화에서 키워드를 전략적으로 사용하여 발견 가능한 대화의 SEO 가치를 극대화할 수 있어요 (어떻게 키워드를 찾아야 하는지 모르겠다면, SurferSEO를 사용하는 걸 추천해요).
@@ -87,7 +153,18 @@ GPT-4o의 화려한 기능들이 주목을 받을 때, 검색 가능성과 발�
 
 🌟 여러분의 지원은 매우 감사히 받고 있으며, 이러한 기사가 계속되도록 도와주는 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 💡 여기 한 가지 팁이에요: 만지는 것 한 번으로 박수 버튼을 50번 칠 수 있어요!
 
@@ -97,7 +174,18 @@ GPT-4o의 화려한 기능들이 주목을 받을 때, 검색 가능성과 발�
 
 Jim the AI Whisperer은 AI 생성기를 사용하여 시각물을 만드는 방법에 대한 개인 트레이닝과, 흥미로운 콘텐츠를 위해 AI 출력을 개선하는 방법을 제공해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 만나서 반가워요!
 
@@ -107,7 +195,18 @@ Jim the AI Whisperer은 AI 생성기를 사용하여 시각물을 만드는 방�
 
 ## 최신 소식을 받아 보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI에 관한 최신 소식을 놓치고 싶지 않으시다면 구독해주세요! 제가 새 글을 올릴 때마다 이메일을 받을 수 있습니다. 정보를 제공하고 흥미로운 내용을 담아 미리알리는 스타일을 유지하고 있어요.
 
@@ -117,10 +216,19 @@ AI에 관한 최신 소식을 놓치고 싶지 않으시다면 구독해주세�
 
 이 이야기는 Generative AI에서 게시되었습니다. 최신 AI 이야기를 만나려면 LinkedIn에서 저희와 연결하고 Zeniteq를 팔로우해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 뉴스레터에 가입하여 창의적 AI에 관한 최신 뉴스 및 업데이트를 받아보세요. 함께 AI의 미래를 함께 만들어 봅시다!
 
-
 ![image](/assets/img/2024-05-23-ThissecrethiddeninChatGPT-4owillchangeSearchEngineResultsforeverwithdiscoverablechats_4.png)
-

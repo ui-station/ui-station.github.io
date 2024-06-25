@@ -3,14 +3,12 @@ title: "Android 개발에서 향상된 디버깅 품질"
 description: ""
 coverImage: "/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_0.png"
 date: 2024-06-19 13:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_0.png
 tag: Tech
 originalTitle: "Better Debugging Quality in Android Development"
 link: "https://medium.com/@sevbanbuyer/better-debugging-quality-in-android-development-4dda79483225"
 ---
-
-
 
 ![Better Debugging Quality in Android Development](/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@sevbanbuyer/better-debugging-quality-in-android-devel
 
 오늘 하루, 우리는 테스트 디바이스나 에뮬레이터를 제어하는 것뿐만 아니라 그 양식을 여러 번 작성하는 본능적 욕구도 제어할 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신은 개발자로서. 위의 텍스트를 친근한 어조로 한국어로 번역해주세요.
 
@@ -33,7 +41,18 @@ link: "https://medium.com/@sevbanbuyer/better-debugging-quality-in-android-devel
 
 우선, 장치/에뮬레이터와 상호작용할 명령어들이 여기 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 호스트 안드로이드 장치의 터미널에서 명령을 열거나 실행합니다.
@@ -54,9 +73,18 @@ adb exec-out uiautomator dump /dev/tty
 
 이 명령어가 마법이 시작되는 곳입니다. UI Automator는 XML 형식의 현재 화면 보기 계층에 대한 덤프를 생성합니다. 이 명령을 입력하면 이 파일이 터미널에 표시될 것입니다. 그리고 우리가 관심 있는 부분은 실제로 이 파일의 각 요소의 [bounds] 태그이며, 다음은 그 노드 중 하나의 서식이 적용된 버전입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_1.png" />
 
@@ -67,7 +95,7 @@ adb exec-out uiautomator dump /dev/tty
 function tapIfExists() {
     # UI 요소의 좌표 가져오기
     coords=$(getCoords "${1}")
-    
+
     # 좌표가 찾아졌는지 확인
     if [[ "$coords" != "-" ]]; then
         # adb를 사용하여 좌표 탭하기
@@ -79,21 +107,21 @@ function tapIfExists() {
 function getCoords() {
     # UI 계층 구조를 덤프하고 변수에 저장
     fastdump=$(/usr/bin/python3 -c "import uiautomator2 as u2;d=u2.connect(); out=d.dump_hierarchy(); print(out)")
-    
+
     # 지정된 텍스트가 있는 요소가 있는지 확인
     present=$(echo "$fastdump" | grep "text=\"${1}\"")
-    
+
     # 요소를 찾은 경우
     if [[ $? -eq 0 ]]; then
         # 덤프에서 좌표 추출
         arr=($(echo "$fastdump" | sed 's/></>\n</g' | grep "text=\"${1}\"" | grep -o "\[.*\]" | sed 's/\]\[/,/g' | sed 's/\]//g;s/\[//g;s/,/\n/g'))
-        
+
         # 중앙 x좌표 계산
         x=$(echo "(${arr[0]}+${arr[2]})/2" | bc)
-        
+
         # 중앙 y좌표 계산
         y=$(echo "(${arr[1]}+${arr[3]})/2" | bc)
-        
+
         # 좌표 출력
         echo "$x $y"
     else
@@ -105,8 +133,18 @@ function getCoords() {
 
 이렇게 하면 모든 것이 훨씬 더 쉬워집니다. 예를 들어 로그인 플로우를 만들었습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```javascript
 # ...
@@ -125,11 +163,21 @@ tapIfExists "SIGN IN"
 
 <img src="/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_3.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-# Automator의 applescript에 다음을 넣으세요       
+# Automator의 applescript에 다음을 넣으세요
 on run {input, parameters}
  do shell script "<path-to-your-script>"
 end run
@@ -167,12 +215,22 @@ $ADB_PATH input text "asdasdfasd"  # 주의 !
 tapIfExists "로그인"
 ```
 
-Applescript에 완전한 경로가 포함된 스크립트를 제공하면, Settings에서 `Keyboard` Keyboard Shortcuts  `Services` General로 이동하고 그 섹션에 스크립트가 표시됩니다. 이제 원하는 단축키를 할당할 수 있습니다.
+Applescript에 완전한 경로가 포함된 스크립트를 제공하면, Settings에서 `Keyboard` Keyboard Shortcuts `Services` General로 이동하고 그 섹션에 스크립트가 표시됩니다. 이제 원하는 단축키를 할당할 수 있습니다.
 
 <img src="/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_4.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 출력물이 있어요:
 
@@ -182,25 +240,45 @@ Applescript에 완전한 경로가 포함된 스크립트를 제공하면, Setti
 
 dumpsys 명령어는 장치에서 실행 중인 모든 시스템 서비스에 대한 진단 정보를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 표를 다음과 같이 변경해 주세요:
 
-
 | 주제               | 설명                                      |
-|--------------------|-------------------------------------------|
+| ------------------ | ----------------------------------------- |
 | 활동 및 프래그먼트 | - 활동 및 프래그먼트에 대한 정보          |
-| 배터리             | - 배터리 상태 및 관리에 관한 정보          |
-| 알람               | - 알람 설정 및 관리에 관한 정보            |
-| 패키지 정보       | - 앱 패키지 정보에 대한 정보               |
-| 작업 스케줄러     | - 작업 스케줄러 사용법과 정보에 대한 정보 |
-
+| 배터리             | - 배터리 상태 및 관리에 관한 정보         |
+| 알람               | - 알람 설정 및 관리에 관한 정보           |
+| 패키지 정보        | - 앱 패키지 정보에 대한 정보              |
+| 작업 스케줄러      | - 작업 스케줄러 사용법과 정보에 대한 정보 |
 
 이 서비스들과 상호작용하면서 코드를 통해 어떤 일이 벌어지는지를 알아내므로 버그에 대한 효율적인 추측이 가능합니다.
 
 "AlarmManager를 사용하여 알람을 설정했는데, 정말 설정되었을까요?"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "조각을 확장했지만 아무것도 보이지 않아요. 제가 제대로 한 걸까요?"
 
@@ -214,7 +292,18 @@ adb shell dumpsys <service>
 adb shell dumpsys battery
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_5.png)
 
@@ -228,7 +317,18 @@ adb shell dumpsys | grep "BottomNavigationItemView"
 
 # 로컬 파일의 내용 보기/변경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 스토리지를 다룰 때 종종 어려움을 겪곤 합니다.
 
@@ -240,20 +340,39 @@ adb shell dumpsys | grep "BottomNavigationItemView"
 - 앱의 내부 데이터는 data/path에 저장됩니다.
 - 이론적으로 우리는 cd, ls, echo, nano 등의 일반 터미널 명령어를 사용하여 기기에서 이 데이터를 볼 수 있지만 실제로는 이와 같은 문제가 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_6.png)
 
-안드로이드는 앱의 리소스에 쉽게 액세스할 수 없도록 허용하지 않는다는 점이 좋은 것 같아요. 
+안드로이드는 앱의 리소스에 쉽게 액세스할 수 없도록 허용하지 않는다는 점이 좋은 것 같아요.
 
 그런데 앱의 내부 데이터의 정확한 경로는 다음과 같아요: /data/user/0/`your.package.name` 그래도 저 정확한 경로를 알아도 들어가지 못하는 걸 보면 다른 방법이 필요할 걸요.
 
 이를 위해 안드로이드의 각 앱이 사실 별칭으로 패키지 이름을 가진 사용자라는 사실을 활용할 거에요:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot 1](/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_7.png)
 
@@ -263,29 +382,50 @@ adb shell dumpsys | grep "BottomNavigationItemView"
 
 그리고 BUM! 여기가 제 앱의 공유 프리퍼런스 파일이고, onboarding_key와 해당 값을 볼 수 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 \<img src="/assets/img/2024-06-19-BetterDebuggingQualityinAndroidDevelopment_9.png" />
 
 이제 이 선호 값을 어떻게 편집할 수 있어서 앱을 다시 빌드하지 않고 변경 사항을 확실히 적용하는 데 시간을 낭비하지 않을 수 있는지 묻게 될 것입니다. 일반적으로 터미널에서 사용하는 텍스트 편집기를 adb 쉘에서 사용할 수는 없지만 여기에 대한 해결책이 있습니다: sedcommand. -iflag로 파일을 직접 덮어쓸 수 있으므로 여기 제 앱의 온보딩 키에 대한 적용입니다:
 
 ```js
-emu64a:/data/user/0/com.sevban.tradejournal/shared_prefs $ grep "onboarding_key" presentation.MainActivity.xml                                                                          
+emu64a:/data/user/0/com.sevban.tradejournal/shared_prefs $ grep "onboarding_key" presentation.MainActivity.xml
     <boolean name="onboarding_key" value="true" />
-emu64a:/data/user/0/com.sevban.tradejournal/shared_prefs $ 
+emu64a:/data/user/0/com.sevban.tradejournal/shared_prefs $
 
-cat presentation.MainActivity.xml | 
-grep "onboarding_key" | 
+cat presentation.MainActivity.xml |
+grep "onboarding_key" |
 sed -i "s/true/false/g" presentation.MainActivity.xml
-           
-emu64a:/data/user/0/com.sevban.tradejournal/shared_prefs $ grep "onboarding_key" presentation.MainActivity.xml                                                                          
+
+emu64a:/data/user/0/com.sevban.tradejournal/shared_prefs $ grep "onboarding_key" presentation.MainActivity.xml
     <boolean name="onboarding_key" value="false" />
 ```
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안드로이드 개발에서 디버깅 프로세스를 개선하는 과정은 어렵지 않을 수 있어요. ADB 및 uiautomator와 같은 도구를 활용하여 양식 작성과 같은 반복적인 작업을 자동화하고 앱의 동작에 대한 깊은 통찰력을 얻을 수 있어요.
 
@@ -295,6 +435,17 @@ emu64a:/data/user/0/com.sevban.tradejournal/shared_prefs $ grep "onboarding_key"
 
 참고 문헌:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://www.youtube.com/watch?v=DcU1czPxQ10&t=1326s

@@ -3,13 +3,12 @@ title: "로컬 밴드들은 어디로 사라졌을까요"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhatEverHappenedToLocalBands_0.png"
 date: 2024-05-20 19:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WhatEverHappenedToLocalBands_0.png
 tag: Tech
 originalTitle: "What Ever Happened To Local Bands?"
 link: "https://medium.com/1ntune/what-ever-happened-to-local-bands-76337b50f2b6"
 ---
-
 
 ![WhatEverHappenedToLocalBands_0](/assets/img/2024-05-20-WhatEverHappenedToLocalBands_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/1ntune/what-ever-happened-to-local-bands-76337b50f2b6"
 
 몇 달에 한 번씩, 과거에는 2~3개의 밴드가 제작 및 홍보에 대한 지도나 도움을 요청할 것에 대해 기대했습니다. 그러나 최근에는 그런 경우가 거의 없습니다. 현재 많은 솔로 아티스트들이 있지만, 이제는 그룹이나 밴드에서 활동하고자 하는 젊은 예술가들을 거의 만나지 않게 되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 이유는 왜 그런 걸까요? 예전처럼 밴드가 더 이상 활동하지 않는 이유는 무엇일까요? 그리고 왜 모든 사람이 솔로로 활동하나요?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/1ntune/what-ever-happened-to-local-bands-76337b50f2b6"
 
 ### 리더십 도전
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리더십에 대한 문제도 있습니다. 밴드는 종종 한 두 명의 구성원에게 선돌러를 맡기는데, 다른 사람들은 그저 따라가기만 합니다. 이는 학교의 그룹 프로젝트와 비슷합니다. 누군가가 주도를 잡고, 다른 사람들은 따라가죠. 돈 문제도 있습니다. 꽤 괜찮은 예산이 있더라도 수입을 밴드원들 사이에서 나누면 모두가 돈을 벌지 않는다는 것을 깨닫게 됩니다. 레이블이 비용을 많이 차감해 가서, 그릇에 있는 돈을 더 줄입니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/1ntune/what-ever-happened-to-local-bands-76337b50f2b6"
 
 요즘엔 콘텐츠 제작이 중요합니다. 밴드는 충분한 음악을 제작하는 데 어려움을 겪습니다. 심지어 DIY로 해도, 노래를 쓰기 위해 일정을 맞추는 것이 어렵습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## DIY는 새로운 표준입니다
 
@@ -49,6 +81,17 @@ link: "https://medium.com/1ntune/what-ever-happened-to-local-bands-76337b50f2b6"
 
 ## 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼, 현지 밴드들은 앞으로 어디로 나아가야 할까요? 이젠 큰 질문이죠. 하지만 분명한 한 가지는 있습니다: 풍경이 변했고 밴드로서의 경력을 쌓으려면 많은 인내심과 멤버들 사이의 견고한 유대 관계가 필요할 것입니다. 오늘날 접근 가능한 다양한 도구들로 누구나 쉽게 솔로 여행을 떠날 수 있습니다.

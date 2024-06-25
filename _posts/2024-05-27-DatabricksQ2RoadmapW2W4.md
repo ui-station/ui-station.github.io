@@ -3,13 +3,12 @@ title: "데이터브릭스 Q2 로드맵 W2W4"
 description: ""
 coverImage: "/assets/img/2024-05-27-DatabricksQ2RoadmapW2W4_0.png"
 date: 2024-05-27 17:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DatabricksQ2RoadmapW2W4_0.png
 tag: Tech
 originalTitle: "Databricks Q2 Roadmap: W2W4"
 link: "https://medium.com/@matt_weingarten/databricks-q2-roadmap-w2w4-d6d186580153"
 ---
-
 
 ![이미지](/assets/img/2024-05-27-DatabricksQ2RoadmapW2W4_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@matt_weingarten/databricks-q2-roadmap-w2w4-d6d1865801
 
 # 유니티, 유니티, 유니티
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-DatabricksQ2RoadmapW2W4_1.png" />
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@matt_weingarten/databricks-q2-roadmap-w2w4-d6d1865801
 
 Unity의 새로운 기능 측면에서 외부 파티션 메타데이터에 대한 더 나은 지원이 곧 추가될 예정이며, 현재보다 Parquet 데이터 액세스 속도를 향상시킬 것입니다. 게다가 기존 계보를 통합하고 싶은 사람들을 위해 BYOL(본인의 계보 가져오기)이라는 개념도 곧 나올 예정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 대시보드/Databricks SQL
 
@@ -39,7 +60,18 @@ Unity의 새로운 기능 측면에서 외부 파티션 메타데이터에 대�
 
 저도 이게 아니었군요, 그러나 변형 데이터 유형이 드디어 Databricks에 추가될 예정입니다. JSON 필드 작업을 하는 사람으로써, 이것이 Snowflake에서 큰 도움이 되었고, 여기에도 도입되어 기쁩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 워크플로우/노트북
 
@@ -49,6 +81,17 @@ Unity의 새로운 기능 측면에서 외부 파티션 메타데이터에 대�
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번에 나오는 새로운 릴리스에 대해 기대되는 것이 많네요. 개발 노력을 계획하기 위해 항상 유익한 세션을 마련해 주셔서 Databricks에게 항상 감사드립니다.

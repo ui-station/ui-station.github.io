@@ -3,13 +3,12 @@ title: "개발 일지 3 피곤해요"
 description: ""
 coverImage: "/assets/img/2024-06-19-Devlog3Imtired_0.png"
 date: 2024-06-19 11:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-Devlog3Imtired_0.png
 tag: Tech
 originalTitle: "Devlog 3: I’m tired…"
 link: "https://medium.com/@schauermann/devlog-3-im-tired-28cb60dec53e"
 ---
-
 
 게임 개발은 어렵습니다. 만약 이 경로를 선택한다면, 프로젝트가 당신을 밤낮으로 괴롭힐 준비가 되어야 합니다. 계획을 잘 세우지 않는 편이에요. 보통 그냥 뛰어들어서 어디로 나아갈지 보는 편이에요. 저의 게임인 '아마도 아트(PROBABLY ART)'를 만들 때에, 이 접근 방식이 제 약점으로 드러났어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@schauermann/devlog-3-im-tired-28cb60dec53e"
 
 ![이미지](/assets/img/2024-06-19-Devlog3Imtired_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이야기: 우울한 토끼
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@schauermann/devlog-3-im-tired-28cb60dec53e"
 
 # 90-90 규칙
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임의 시각 측면을 만드는 것은 나머지 부분과 비교해 상대적으로 쉬웠어요. 난인티 난인티 법칙이 계속 머리 속에 떠오르더군요: "프로젝트의 처음 90%는 전체 시간의 90%를 차지하고, 나머지 10%는 남은 90%를 차지한다." 첫 90%는 재미있는 부분이었어요 — 게임은 거의 플레이 가능했고, 음악도 마무리되었지만 보이지 않는 모든 것들 — 마지막 10%인 버그 수정, 게임 로직 등 — 첫 90%만큼 시간이 걸렸어요. 게임이 필요로 하는 모든 백그라운드 작업이 저를 압도했고 솔직히 가끔 지루할 때도 있었어요. 작은 버그를 고치기 전에 몇 일이 지나기도 했죠. 하지만 많은 것을 배웠고, 네 달 후에 처음 프로토타입이 완성되었어요. 이전 블로그 게시물에서 언급했듯이, 그 당시 프로젝트는 여전히 “엄마가 날 특별하다고 말했다”라고 불렸어요.
 

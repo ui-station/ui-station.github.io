@@ -3,14 +3,12 @@ title: "소프트웨어 품질 보증  데이터베이스와의 시스템 통합
 description: ""
 coverImage: "/assets/img/2024-05-18-SoftwarequalityassuranceHowtoverifysystemintegrationwithdatabases_0.png"
 date: 2024-05-18 15:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-SoftwarequalityassuranceHowtoverifysystemintegrationwithdatabases_0.png
 tag: Tech
 originalTitle: "Software quality assurance — How to verify system integration with databases"
 link: "https://medium.com/itnext/software-quality-assurance-how-to-verify-system-integration-with-databases-acd1667fd7fa"
 ---
-
-
 
 ![이미지](/assets/img/2024-05-18-SoftwarequalityassuranceHowtoverifysystemintegrationwithdatabases_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/itnext/software-quality-assurance-how-to-verify-system
 
 데이터베이스는 대부분의 시스템에서 중요한 구성 요소입니다. 데이터베이스와 통신하기 위한 일반적인 설계 패턴은 액세스 요청을 SQL 쿼리로 변환하기 위한 데이터 액세스 계층을 갖는 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 다이어그램은 API 엔드포인트, 비즈니스 로직 및 데이터 액세스를 별도의 레이어로 분리하는 전통적인 디자인 패턴을 보여줍니다. 비즈니스 로직은 데이터 액세스 레이어에 의존하여 데이터베이스에서 읽기/쓰기 작업을 수행합니다.
 
@@ -31,7 +39,18 @@ link: "https://medium.com/itnext/software-quality-assurance-how-to-verify-system
 
 최근 취업 면접에서 소프트웨어 엔지니어와 이야기를 나눴습니다. 몇 년의 경험이 있더라도 자동화된 테스트가 표준적인 실천 방법이 되었음에도 불구하고 데이터 액세스 레이어에 대한 통합 테스트를 어떻게 구현하는지 알지 못하는 사람들도 있음을 깨달았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우선, 통합 테스트는 단위 테스트와 유사합니다. 테스트 범위는 예를 들어 데이터 액세스 레이어와 같은 단일 컴포넌트에 집중됩니다. 그러나 차이점은 단위 테스트에서 하는 것처럼 가짜 데이터베이스를 만들 수 없다는 것입니다. 대신, 독립 실행형 데이터베이스 엔진을 시작하여 데이터베이스와 상호 작용을 확인해야 합니다.
 
@@ -41,7 +60,18 @@ link: "https://medium.com/itnext/software-quality-assurance-how-to-verify-system
 
 # 샘플 데이터 스키마
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 직원 레코드의 간단한 데이터베이스 스키마를 기반으로 한 통합 테스트의 구현을 보여드리겠습니다. 직원 레코드에는 다음과 같은 데이터 필드가 포함되어 있습니다: 고유 식별자, 이름, 급여 및 부서.
 
@@ -62,7 +92,18 @@ CREATE TABLE EMPLOYEE (
 - 부서에 따른 직원 레코드 검색
 - 부서별 평균 급여 검색
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GitHub 레포지토리의 전체 소스 코드는 다음 링크를 참조해 주세요 (https://github.com/gavinklfong/data-access-layer-test-demo).
 
@@ -72,7 +113,18 @@ GitHub 레포지토리의 전체 소스 코드는 다음 링크를 참조해 주
 
 H2 데이터베이스는 인기 있는 내부 메모리 데이터베이스입니다. H2 데이터베이스를 활성화하려면 Maven의 pom.xml에 이 의존성을 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 H2 데이터베이스에서 테스트를 실행하는 것은 정말 편리합니다. 데이터베이스 시작업이 필요 없습니다. JDBC 연결 문자열 jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODEL=MYSQL을 사용하여 데이터베이스 연결을 생성하면 H2 데이터베이스가 자동으로 시작됩니다.
 
@@ -81,7 +133,18 @@ H2 데이터베이스에서 테스트를 실행하는 것은 정말 편리합니
 - DB_CLOSE_DELAY=-1 — JVM이 종료될 때까지 데이터베이스를 유지하려면 이 매개변수가 필요합니다.
 - MODEL=MYSQL — 실제 환경에서 사용되는 MYSQL과 SQL 구문을 호환되게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 시나리오에서 데이터베이스는 일반적으로 모두 공유되며, 데이터베이스 연결은 정적 멤버로 설정되어 있습니다. 처음에는 직원 테이블을 생성하는 schema.sql을 실행합니다.
 
@@ -126,30 +189,41 @@ class EmployeeDaoInMemoryH2Test {
 
 각 테스트 시나리오 시작 전에 data.sql이 실행되어 직원 테이블의 모든 레코드가 정리되고 테스트 레코드가 다시 삽입됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 DELETE FROM EMPLOYEE;
 
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (1, 'Rueben Hardy', 'FINANCE', 1291.8);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (2, 'Frank Dunlap', 'FINANCE', 10025.3);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (3, 'Anna Melendez', 'FINANCE', 8773.13);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (4, 'Joan Riggs', 'OPERATION', 6597.89);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (5, 'April Davidson', 'OPERATION', 1563.19);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (6, 'Molly Woodward', 'MARKETING', 10442.24);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (7, 'Roisin Noble', 'MARKETING', 7288.92);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (8, 'Abdullahi Morse', 'MARKETING', 1635.55);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (9, 'Gina Shepard', 'SALES', 7703);
-INSERT INTO EMPLOYEE(id, name, department, salary) 
+INSERT INTO EMPLOYEE(id, name, department, salary)
   VALUES (10, 'Cecil Burch', 'SALES', 3422.67);
 ```
 
@@ -159,7 +233,18 @@ INSERT INTO EMPLOYEE(id, name, department, salary)
 
 데이터 액세스 계층이 테스트 중이므로, 데이터 액세스 계층의 시스템 동작이 완전히 테스트되기 전에는 보장되지 않습니다. 따라서, 데이터 설정 및 확인은 데이터 액세스 계층의 메서드를 호출하는 대신 직접적인 SQL을 사용하여 수행해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러므로 데이터베이스 테스트 데이터 설정은 데이터 액세스 계층의 insertEmployee()를 사용하는 대신 SQL 스크립트 파일로 수행됩니다.
 
@@ -177,7 +262,7 @@ void testInsertEmployee() {
 
    // 새 직원 입력 테스트
    assertThat(employeeDao.insertEmployee(newEmployee)).isEqualTo(1);
-   
+
    // 이것은 좋은 방법이 아닙니다
    // getEmployeeById()를 사용하여 삽입된 레코드 확인
    assertThat(employeeDao.getEmployeeById(99))
@@ -188,7 +273,18 @@ void testInsertEmployee() {
 
 대안으로, 새로 삽입된 레코드를 검색하기 위한 일반 SQL을 사용하는 것이 더 안전한 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Test
@@ -221,9 +317,19 @@ void testInsertEmployee() {
 H2 데이터베이스가 지원하는 MySQL 호환 모델에도 불구하고, 시스템 동작은 아직 실제 MySQL 데이터베이스와 완전히 동일하지는 않습니다. MySQL 데이터베이스와 진지하게 테스트를 하려면 도커 컨테이너 내에서 MySQL 데이터베이스를 이용하는 것이 합리적인 선택입니다.
 
 이 개념은 인메모리 데이터베이스 사용과 유사합니다. 데이터베이스를 메모리에서 실행하는 대신, 도커 컨테이너에서 데이터베이스를 생성합니다. 그런 다음 테스트가 완료되면 컨테이너를 정지하고 제거합니다.
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 컨테이너에서 데이터베이스를 실행함으로써 목표 데이터베이스에 대한 데이터 액세스 레이어를 테스트할 수 있는 이점을 누릴 수 있어요. 이는 시스템 동작이 실제 환경의 데이터베이스에 가까워짐을 의미합니다.
 
@@ -231,15 +337,26 @@ Testcontainers는 도커 컨테이너를 테스트하기 위한 간편한 방법
 
 ```js
 <dependency>
-   <groupId>org.testcontainers</groupId>
-   <artifactId>mysql</artifactId>
-   <scope>test</scope>
+  <groupId>org.testcontainers</groupId>
+  <artifactId>mysql</artifactId>
+  <scope>test</scope>
 </dependency>
 ```
 
 각 테스트 시나리오마다 MySQL 데이터베이스를 시작하는 것은 가능하지만, 새로운 도커 컨테이너를 각 시나리오 전에 시작해야 하므로 권장하지 않아요. 도커 컨테이너는 시작하는 데 훨씬 더 오랜 시간이 걸리기 때문에 컴퓨팅 성능에 따라 약 4~5초가 소요될 수 있어요. 그리고 각 시나리오 전에 새 도커 컨테이너를 시작해야 한다면 10가지 테스트 시나리오를 실행하는 데 약 50초가 소요될 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 요구사항이 특별하지 않다면, 일반적인 관행은 MySQL 도커 컨테이너를 시작하고 모든 테스트 시나리오가 동일한 데이터베이스를 공유하도록하는 것입니다.
 
@@ -262,19 +379,19 @@ class EmployeeDaoMySQLTestContainersTest {
   static void beforeAll() {
      MYSQL_CONTAINER.start();
   }
-  
+
   @AfterAll
   static void afterAll() {
      MYSQL_CONTAINER.stop();
   }
-  
+
   @BeforeEach
   void setup() {
      jdbi = Jdbi.create(MYSQL_CONTAINER.getJdbcUrl(),
              MYSQL_CONTAINER.getUsername(), MYSQL_CONTAINER.getPassword());
-  
+
      employeeDao = new EmployeeDao(jdbi);
-  
+
      jdbi.withHandle(handle ->
          handle.createScript(ClasspathSqlLocator
                  .removingComments().getResource("employee.sql"))
@@ -285,7 +402,18 @@ class EmployeeDaoMySQLTestContainersTest {
 // 테스트 시나리오 ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너의 라이프사이클 관리를 간소화하기 위해 testcontainers 라이브러리는 @Testcontainers와 @Container 어노테이션을 제공합니다.
 
@@ -293,15 +421,26 @@ JUnit 5에서 testcontainers를 지원하기 위해 다음 의존성을 추가�
 
 ```js
 <dependency>
-   <groupId>org.testcontainers</groupId>
-   <artifactId>junit-jupiter</artifactId>
-   <scope>test</scope>
+  <groupId>org.testcontainers</groupId>
+  <artifactId>junit-jupiter</artifactId>
+  <scope>test</scope>
 </dependency>
 ```
 
 테스트 클래스에 @Testcontainers를 넣고 MySQLContainer에 @Container를 추가하면, @BeforeAll 및 @AfterAll을 사용하여 컨테이너를 시작 및 중지할 필요가 없어집니다. 컨테이너는 자동으로 시작되며, 모든 테스트 시나리오가 완료된 후에 중지됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Testcontainers
@@ -327,7 +466,17 @@ class EmployeeDaoMySQLTestContainersAnnotationTest {
 
 그러나 데이터베이스를 사용한 통합 테스트는 약간 다릅니다. 올바른 테스트를 수행하기 위해 실제 데이터베이스 엔진이 필요합니다. 이 글은 테스트를 원활하게 실행하기 위해 스키마 설정이 포함된 일회용 데이터베이스를 생성하는 방법에 대한 간략한 개요와 기술을 제공합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 GitHub 저장소(https://github.com/gavinklfong/data-access-layer-test-demo)를 참조하시면 전체 소스 코드를 확인하실 수 있습니다.

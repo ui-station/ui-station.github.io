@@ -3,13 +3,12 @@ title: "위즐리 가족의 홈 매직으로 당신의 주거 공간을 변신�
 description: ""
 coverImage: "/assets/img/2024-05-23-TheWeaselysHomeMagictoTransformYourLivingSpace_0.png"
 date: 2024-05-23 16:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheWeaselysHomeMagictoTransformYourLivingSpace_0.png
 tag: Tech
 originalTitle: "The Weasely’s Home Magic to Transform Your Living Space"
 link: "https://medium.com/@saimamushtaq/the-weaselys-home-magic-to-transform-your-living-space-0e07f7cd868f"
 ---
-
 
 <img src="/assets/img/2024-05-23-TheWeaselysHomeMagictoTransformYourLivingSpace_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@saimamushtaq/the-weaselys-home-magic-to-transform-you
 
 - 음성 검색 어시스턴트:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스마트 스피커인 아마존 에코와 구글 홈이 널리 사용되고 있어요. AI가 제공하는 음성 비서인 알렉사와 구글 어시스턴트는 음악 재생과 알람 설정을 넘어서 여러 기능들을 수행합니다. 이들은 사용자의 선호도를 학습하고, 스마트 홈 기기를 제어하며, 질문에 대답하며, 일정을 관리할 수 있습니다. 저녁 식사 준비 중에 온도 조절을 AI 비서에게 부탁하거나, 출근 준비를 할 때 AI가 뉴스를 읽어주기를 상상해보세요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@saimamushtaq/the-weaselys-home-magic-to-transform-you
 
 3. 친절한 집사:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![House Reversion](/assets/img/2024-05-23-TheWeaselysHomeMagictoTransformYourLivingSpace_1.png)
 
@@ -39,7 +60,18 @@ AI의 도움을 받아 로봇 청소기들은 다음 단계로 나아가고 있�
 
 4. 수면 성지 수호자:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아름다움을 향상시키고 건강한 마음을 키우기 위해서는 좋은 수면이 중요합니다. Eight Sleep Pod와 같은 스마트 매트리스는 AI를 활용하여 수면을 최적화하고 있습니다. 이러한 매트리스는 센서를 사용하여 수면 패턴, 온도, 심박수까지 추적합니다. AI 알고리즘은 이 데이터를 분석하여 밤 동안 매트리스의 단단함이나 온도를 조절하여 개인 맞춤형이고 편안한 수면 경험을 제공합니다.
 

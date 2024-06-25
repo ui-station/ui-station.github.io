@@ -3,13 +3,12 @@ title: "Docker, Uptime Kuma, 그리고 Traefik을 사용하여 웹사이트 모�
 description: ""
 coverImage: "/assets/img/2024-06-23-UseDockerUptimeKumaandTraefikToMonitorYourWebsite_0.png"
 date: 2024-06-23 00:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UseDockerUptimeKumaandTraefikToMonitorYourWebsite_0.png
 tag: Tech
 originalTitle: "Use Docker, Uptime Kuma, and Traefik To Monitor Your Website"
 link: "https://medium.com/gitconnected/use-docker-uptime-kuma-and-traefik-to-monitor-your-website-593373f9e0c2"
 ---
-
 
 <img src="/assets/img/2024-06-23-UseDockerUptimeKumaandTraefikToMonitorYourWebsite_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/use-docker-uptime-kuma-and-traefik-to-mon
 
 이 프로젝트는 오픈 소스로 GitHub에서 찾을 수 있습니다: https://github.com/louislam/uptime-kuma
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 대안을 사용하게 된 중요한 속성들은 다음과 같아요:
 
@@ -32,7 +42,18 @@ link: "https://medium.com/gitconnected/use-docker-uptime-kuma-and-traefik-to-mon
 
 Uptime Kuma를 서버 또는 로컬 머신에서 실행하려면 환경을 준비해야 해요. 저는 Traefik을 Docker Swarm에서 실행되는 리버스 프록시로 실행하여 Docker Compose로 배포하는 것을 좋아해요. Traefik을 사용하면 단일 Compose 파일을 만들어서 서비스를 배포하고 도메인에 대한 Let's Encrypt 인증서를 자동으로 발급할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 두 가지 전제 조건을 간단히 설명한 후, Uptime Kuma를 배포하는 방법을 보여드릴 거에요.
 
@@ -42,10 +63,20 @@ Docker는 다양한 종류의 애플리케이션을 개발하고 배포하며 �
 
 Docker를 사용하여 소프트웨어를 구현하면 흔한 "내 컴퓨터에서는 작동하는데" 같은 인프라 문제를 효과적으로 해결할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 'img' 태그를 Markdown 형식으로 변경해주세요.
-
 
 ![](/assets/img/2024-06-23-UseDockerUptimeKumaandTraefikToMonitorYourWebsite_1.png)
 
@@ -55,8 +86,18 @@ Docker를 사용하여 소프트웨어를 구현하면 흔한 "내 컴퓨터에�
 
 ## Traefik
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Traefik이란 무엇인가요?
 
@@ -66,7 +107,18 @@ Traefik은 도커 환경에서 배포된 서비스로 들어오는 요청을 전
 
 1. Traefik에서 사용되는 외부 네트워크를 생성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 필요한 변수 내보내기
 
@@ -75,11 +127,22 @@ Traefik은 도커 환경에서 배포된 서비스로 들어오는 요청을 전
 트라픽 대시보드에 접속하려면 https://dashboard.yourdomain.de 로 이동하고 다음으로 로그인하세요:
 
 ```js
-username: devadmin
-password: devto
+username: devadmin;
+password: devto;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 스웜 모드 환경에서 Traefik을 배포하는 방법은 다음과 같습니다. 이 도커 Compose 파일을 다운로드하고 1단계와 2단계를 수행한 후 다음과 같이 배포하면 됩니다:
 
@@ -89,7 +152,18 @@ Traefik에 대한 깊은 이해를 얻으려면 다음 기사에서 도커 내�
 
 Uptime Kuma를 배포하는 방법은 세 가지 환경에서 가능합니다: 로컬에서 도커로, 도커와 Traefik을 사용하여 서버에서, 그리고 도커를 실행하는 서버 클러스터에서 Traefik과 함께.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 로컬 Docker 환경에서 배포하기
 
@@ -99,7 +173,18 @@ Uptime Kuma를 테스트하는 가장 쉬운 방법은 새로운 Docker Compose 
 
 폴더로 이동하여 Docker Compose 파일을 실행하려면 다음과 같이 실행하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 명령이 완료되면 https://localhost:1337/을 열어 Uptime Kuma 인스턴스에 액세스할 수 있습니다.
 
@@ -109,7 +194,18 @@ Uptime Kuma를 테스트하는 가장 쉬운 방법은 새로운 Docker Compose 
 
 당신이 나의 튜토리얼에 설명된대로 Traefik 인스턴스를 설정했다고 가정하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 Docker Compose 파일을 만들고 다음 내용을 붙여넣으세요:
 
@@ -119,7 +215,18 @@ Uptime Kuma를 테스트하는 가장 쉬운 방법은 새로운 Docker Compose 
 
 Traefik을 사용하는 Docker in Docker Swarm 모드의 경우,이 Compose 파일을 사용하여 데이터를 저장하고 싶은 노드에 monitor이름의 새로운 노드 레이블을 작성하고 PRIMARY_DOMAIN을 내보낸 후 아래 명령어로 배포하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 몇 초/분 후에 Uptime Kuma가 성공적으로 배포되어서 https://monitor.PRIMARY_DOMAIN/에서 인스턴스에 액세스할 수 있게 됩니다.
 
@@ -129,7 +236,18 @@ Uptime Kuma가 성공적으로 배포된 후 처음으로 액세스하면 안전
 
 작업을 완료하신 후에는 이 버튼을 눌러 첫 번째 모니터를 추가해보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-06-23-UseDockerUptimeKumaandTraefikToMonitorYourWebsite_2.png](/assets/img/2024-06-23-UseDockerUptimeKumaandTraefikToMonitorYourWebsite_2.png)
 
@@ -139,7 +257,18 @@ Uptime Kuma가 성공적으로 배포된 후 처음으로 액세스하면 안전
 
 이제 첫 번째 모니터를 만들었으므로, Discord, 이메일 또는 기타 어떤 유형의 알림도 구성해야 합니다. 모니터가 예상대로 작동하지 않을 때마다 알림을 받게 됩니다. 이 과정은 보통 매우 쉽고 다음으로 설명될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 디스코드 알림 설정하기 (그리고 슬랙, 팀즈)
 
@@ -149,7 +278,18 @@ Uptime Kuma가 성공적으로 배포된 후 처음으로 액세스하면 안전
 
 ![디스코드 설정 화면](/assets/img/2024-06-23-UseDockerUptimeKumaandTraefikToMonitorYourWebsite_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **테이블 태그를 Markdown 형식으로 변경하면 됩니다.**
 
@@ -161,7 +301,18 @@ Uptime Kuma가 성공적으로 배포된 후 처음으로 액세스하면 안전
 
 # 마지막으로
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 Uptime Kuma를 로컬 또는 Docker 또는 Docker Swarm 환경에 Traefik 역방향 프록시와 함께 설치하는 방법을 보여드렸어요. 이 가벼운 도구는 설정이 쉽고 다양한 구성 옵션을 제공하기 때문에 어떤 웹사이트든 감시하는 데 아주 좋아요. 소프트웨어 개발자나 블로그 호스터라면 Uptime Kuma를 추천드릴게요. 이를 통해 서비스나 블로그가 제대로 작동하는지 확인할 수 있어요.
 
@@ -171,6 +322,17 @@ Uptime Kuma가 성공적으로 배포된 후 처음으로 액세스하면 안전
 
 누구에게든 이 기사를 공유하고 제 개인 블로그, LinkedIn, Twitter 및 GitHub에서 연락해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글은 제 블로그에도 게재되었습니다: [https://www.paulsblog.dev/use-docker-uptime-kuma-and-traefik-to-monitor-your-website/](https://www.paulsblog.dev/use-docker-uptime-kuma-and-traefik-to-monitor-your-website/)

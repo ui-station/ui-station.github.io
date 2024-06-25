@@ -3,14 +3,12 @@ title: "위치 기반의 위성 이미지의 시계열을 표시하는 대화형
 description: ""
 coverImage: "/assets/img/2024-05-18-CreateanInteractiveMaptoDisplayTimeSeriesofSatelliteImagery_0.png"
 date: 2024-05-18 17:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-CreateanInteractiveMaptoDisplayTimeSeriesofSatelliteImagery_0.png
 tag: Tech
 originalTitle: "Create an Interactive Map to Display Time Series of Satellite Imagery"
 link: "https://medium.com/towards-data-science/create-an-interactive-map-to-display-time-series-of-satellite-imagery-e9346e165e27"
 ---
-
-
 
 ![image](/assets/img/2024-05-18-CreateanInteractiveMaptoDisplayTimeSeriesofSatelliteImagery_0.png)
 
@@ -26,8 +24,18 @@ link: "https://medium.com/towards-data-science/create-an-interactive-map-to-disp
 
 ## 🌟 Introduction
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한동안 사용자가 특정 위치를 클릭할 때 상호작용 맵에 시계열 데이터가 표시되는 쉽고 직관적인 방법을 찾고 있었습니다. 저는 folium 라이브러리를 탐색하고 위성 이미지에서 추출한 시계열 데이터베이스를 folium과 연결하는 방법을 알아냈습니다. 오늘은 내 방법을 공유하겠습니다.
 
@@ -37,7 +45,18 @@ link: "https://medium.com/towards-data-science/create-an-interactive-map-to-disp
 
 ## 📌 관심 지역 (AOI)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소개에서 언급한 대로 상호작용적 지도에서 어떤 위치의 변수에 대한 시계열 데이터를 표시하려면 다음 단계를 따를 수 있습니다. 이 예시에서는 캘리포니아의 몇 개 호수의 물 픽셀을 계수하고 2024년에 촬영된 모든 Sentinel-2 이미지를 사용하여 표면적을 계산할 것입니다. QGIS에서 그 호수 주변에 폴리곤을 그리고 그것들을 shapefile로 저장했습니다. 관심 영역 (AOI)에 대한 shapefile을 만드는 방법을 배우고 싶다면, Medium의 첫 번째 스토리에서 "🛠️ QGIS에서 Shapefile 생성"이라는 섹션을 참조해주세요.
 
@@ -47,7 +66,18 @@ link: "https://medium.com/towards-data-science/create-an-interactive-map-to-disp
 
 ## 💾 Sentinel-2 영상 불러오기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 섹션의 목표는 다운로드 없이 아카이브된 위성 이미지를 메모리에 로드하는 것입니다. 특정 지역에 대한 오랜 기간에 걸친 위성 이미지 다운로드는 시간이 많이 소요되며 계산 비용이 많이 들며 비효율적일 수 있습니다. 특히 전체 장면에서 작은 영역의 변화를 탐색하려면 문제가 될 수 있습니다.
 
@@ -89,7 +119,18 @@ def search_satellite_images(collection="sentinel-2-l2a",
     return data
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 함수를 사용하면 위성 이미지 검색을 위한 매개변수를 지정할 수 있어서 다양한 관심 영역 및 시간대에 유연하고 쉽게 사용할 수 있습니다. 수집, 경계 상자, 날짜 범위 및 구름 양 등과 같은 기준에 따라 위성 이미지를 검색합니다. 이는 이미지를 찾기 위해 Earth Search API를 사용하고 일치하는 수를 출력하며 큐브 형식으로 클립 된 이미지를 반환합니다.
 
@@ -99,10 +140,31 @@ def search_satellite_images(collection="sentinel-2-l2a",
 
 이를 위해 Sentinel-2 이미지의 씬 분류 레이어에 있는 물 픽셀로 분류 된 픽셀을 추출 할 수 있습니다. 다시 말해, 각 씬에서 물 픽셀 수를 세어야합니다. 픽셀 해상도가 10m x 10m임을 감안하면 수를 100 제곱 미터 (10m x 10m)로 곱하면 각 호수의 표면적이 나올 것입니다. 그러나 여기서는 위성에 의해 촬영 된 이미지가 각 씬에서 전체 호수를 커버하도록해야합니다. 이를 설명하기 위해 1 월 7 일과 1 월 4 일에 촬영 된 이 두 장의 이미지 중 하나에 캡처된 호수 중 하나를 살펴 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import pandas as pd
@@ -189,7 +251,18 @@ def count_water_pixels(data,lake_id):
 
 ## 🌍 시계열과 함께 상호작용하는 지도 개발하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 섹션에서는 세 개의 스크립트를 작성할 것입니다. 첫 번째 스크립트는 다각형(AOI)의 바운딩 박스와 중심 좌표를 추출하는 함수입니다. 첫 번째 함수(search_satellite_images)를 실행하려면 바운딩 박스가 필요하며, 맵에 호수를 표시하는 데 중심 좌표가 필요합니다. 다음 코드로 이 작업을 수행할 수 있습니다:
 
@@ -247,7 +320,18 @@ print(lakes_df)
 
 <img src="/assets/img/2024-05-18-CreateanInteractiveMaptoDisplayTimeSeriesofSatelliteImagery_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 스크립트는 2024년 센티넬-2에 의해 촬영된 모든 이미지를 호수 위에서 루핑하고 두 번째 함수를 실행하여 커버리지 비율이 80%보다 높은 경우 각 이미지에서 표면적을 계산하며 각 호수의 표면적을 시계열로 보여주는 DataFrame을 보고하는 것을 포함합니다:
 
@@ -257,7 +341,7 @@ import pandas as pd
 from datetime import datetime
 import numpy as np
 
-all_water_pixels_dfs = [] 
+all_water_pixels_dfs = []
 
 for lake_id in lakes_df.ID:
     print(lake_id)
@@ -285,8 +369,18 @@ final_df = pd.concat(all_water_pixels_dfs, ignore_index=True)
 
 ![이미지](/assets/img/2024-05-18-CreateanInteractiveMaptoDisplayTimeSeriesofSatelliteImagery_5.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거의 다 왔어요!
 
@@ -332,7 +426,18 @@ for spot_id in lakes_df['ID']:
 
 이 스크립트에서는 함수가 각 호수의 시계열 데이터를 필터링하고, Plotly를 사용하여 라인 플롯을 생성하고, 플롯을 HTML 파일로 저장합니다. 다음으로 Folium을 사용하여 지도를 초기화합니다. 그런 다음 호수 DataFrame을 반복하면서, 각 호수의 중심 좌표에 마커를 추가하고, 각 마커에 팝업을 연결하여 시계열 플롯을 표시합니다. 최종 지도는 HTML 파일로 저장됩니다. 마지막으로, Plotly 플롯에 생성된 임시 HTML 파일을 삭제하여 정리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 완료되었습니다!
 
@@ -342,13 +447,35 @@ for spot_id in lakes_df['ID']:
 
 각 호수를 클릭하여 시계열이 표시되는지 확인해 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 모든 노력 끝에 이렇게 실용적인 지도가 만들어졌네요, 맞나요? :D
 
 ## 📄 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거의 매달 새로운 패키지와 라이브러리들이 나와서 데이터를 추출하고 분석하며 표시하고 시각화하는 법을 실용적으로 제공합니다. 그러나 이 분야에서 아직 남아 있는 두 가지 과제가 있습니다. 첫 번째는 데이터를 정확하게 분석하기 위해서는 테라바이트 또는 페타바이트에서 추출된 데이터가 정확한지 확인하기 위해 충분한 경험이 필요합니다. 두 번째는 이러한 라이브러리들을 연결하여 의미 있는 것을 만들어내는 아키텍처를 만드는 것입니다.
 
@@ -358,7 +485,18 @@ for spot_id in lakes_df['ID']:
 
 https://github.com/stac-utils/pystac-client/blob/main/docs/quickstart.rst
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://www.element84.com/earth-search/examples/
 
@@ -368,6 +506,17 @@ Copernicus 서비스 정보용 Copernicus 서비스 정보 [2024]
 
 📱 더 많은 흥미로운 콘텐츠를 제공하는 다른 플랫폼에서 저와 소통하세요! LinkedIn, ResearchGate, Github 및 Twitter.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 링크를 통해 확인할 수 있는 관련 게시물이 있습니다:

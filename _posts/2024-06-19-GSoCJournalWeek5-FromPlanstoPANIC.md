@@ -3,14 +3,12 @@ title: "GSoC 일지 5주차 - 계획에서 PANIC으로"
 description: ""
 coverImage: "/assets/img/2024-06-19-GSoCJournalWeek5-FromPlanstoPANIC_0.png"
 date: 2024-06-19 10:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-GSoCJournalWeek5-FromPlanstoPANIC_0.png
 tag: Tech
 originalTitle: "GSoC Journal: Week 5-From Plans to PANIC"
 link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7a1d0c5"
 ---
-
-
 
 ![이미지1](/assets/img/2024-06-19-GSoCJournalWeek5-FromPlanstoPANIC_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7
 
 ![이미지2](/assets/img/2024-06-19-GSoCJournalWeek5-FromPlanstoPANIC_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 지연된 시작, 지연된 마음
 
@@ -31,7 +39,18 @@ link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7
 
 이제 어떻게 해야 할까요? 어떻게 해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 아우!
 
@@ -42,7 +61,18 @@ link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7
 - 하루에 1개의 PR
 - 5일 동안 5개의 PR
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7일이 훌쩍 지났고, 내 첫 PR로 호러댄스를 추는 중이었어.
 
@@ -52,7 +82,18 @@ link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7
 
 # 추정 게임
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 일반적인 추정은 다음과 같습니다:
 
@@ -63,8 +104,18 @@ link: "https://medium.com/@rd4dev/gsoc-journal-week-4-from-plans-to-panic-62a4a7
 
 ##적어도 한 개의 PR을 완료해냈을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![GSoC Journal Week 5](/assets/img/2024-06-19-GSoCJournalWeek5-FromPlanstoPANIC_4.png)
 

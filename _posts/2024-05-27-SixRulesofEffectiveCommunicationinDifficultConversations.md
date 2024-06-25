@@ -10,7 +10,6 @@ originalTitle: "Six Rules of Effective Communication in Difficult Conversations"
 link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-in-difficult-conversations-49c3e99a446d"
 ---
 
-
 ![Six Rules of Effective Communication in Difficult Conversations](/assets/img/2024-05-27-SixRulesofEffectiveCommunicationinDifficultConversations_0.png)
 
 우리가 목표를 달성하기 위해서는 타인과 원할한 소통이 필요합니다. 그러나 중요한 순간에 건전한 대화를 나누는 대신에 우리는 종종 최악의 상태에 있습니다. 우리는 어리석고 비용이 드는 농담거리, 논쟁, 공격, 조종 또는 다른 자기패배적인 방식으로 행동합니다.
@@ -19,8 +18,18 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 
 어려운 대화는 불편함, 불확실성 및 복잡한 감정을 헤쳐나가야 하기 때문에 도전적입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어려운 대화를 피하는 것이 감정적으로 지치고 정신적으로 지친 상황을 피하는 것보다 의식적으로 직면하는 것이 훨씬 더 쉽습니다.
 
@@ -32,7 +41,18 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 
 대화가 얼마나 어려워도 그것을 영원히 미루거나 지체할 수는 없습니다. 문제에 직접 대응하고 명료함을 제공하며 마무리를 찾는 것은 신뢰와 존중을 얻고 스트레스를 줄이는 데 도움이 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 어려운 대화를 잘 다루기 위해서는 좋은 커뮤니케이션 관행을 따라야 합니다. 어려운 대화에서 효과적인 커뮤니케이션의 여섯 가지 규칙은 다음과 같습니다:
 
@@ -42,11 +62,33 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 
 여러분의 목적은 그들의 성격을 공격하거나 그들이 누구인지에 도전해 기분 나쁘게 만드는 것이 아닙니다. 이렇게 하면 그들의 자존심을 상처받아 여러분이 말하는 모든 것에 저항을 보이게 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 규칙 2: 명확하고 간결한 커뮤니케이션 실천하기
 
@@ -64,7 +106,18 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 다양한 시각을 추구하거나 토론에서 다른 사람들이 더 많이 참여하도록 장려하는 일반적인 조언을 공유하지 마세요. 그들은 그를 무시할 가능성이 높습니다.
 해주세요: 이전 토론이나 회의에서 그들이 다른 사람들의 의견을 무시한 사례를 공유하세요. 앞으로 어떻게 더 포용적일 수 있는지 물어보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상황: 자신이 받을 만한 좋은 기회를 놓치다.
 그 대신에: 자신이 원하는 것을 얻지 못한 데 대해 매니저에게 불평하거나 원망을 표현하는 대신에
@@ -78,11 +131,33 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 - 매니저가 1:1 미팅을 계속 취소한다면, 당황을 드러내는 대신 이러한 회의를 가지지 않는 것이 성장에 어떻게 제한이 되는지 설명해보세요.
 - 팀원이 당신의 아이디어에 대한 영괴를 독차지하려 한다면, 짜증내지 말고, 이런 행동을 계속하면 아이디어를 나누기를 중지할 것이라고 명확히 표현하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보편적으로 **잉크 테이블**은 데이터를 효율적으로 나타내기 위한 데 사용됩니다. 하지만 어떨 때는 이 테이블을 **마크다운** 형식으로 변경하고 싶을 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 그들의 우려나 오해에 대해 설명합니다 (하지 말아주세요: 당신이 의도하지 않은 내용).
 - 당신이 실제로 의도한 바를 명확히 합니다 (해주세요: 당신이 의도하는 내용).
@@ -96,7 +171,18 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 하지 말아주세요: 저의 목표는 우리 지난 프로젝트에서 벌어진 실수에 대해 누군가를 탓하는 것이 아닙니다.
 해주세요: 저는 그 경험에서 배우고, 다시 일어나지 않도록 사전에 예방하는 방법을 살펴보려고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 규칙 5: 먼저 이해하려고 하고 나중에 이해되려고 하세요
 
@@ -106,7 +192,18 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 
 효과적인 청취를 연습하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 명확성을 강조하고 대화하도록하여 오픈 질문을 통해 이야기를 이끌어보세요.
 
@@ -121,7 +218,18 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 
 3. 메시지 전달을 위해 중단하거나 방어적인 태도를 취하지 마세요. 상대방이 말을 끝내면 당신이 전달하고 싶은 바를 솔직하게 말해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 눈에 띄려 하지 마세요. 대화는 당신에 대한 것이 아닙니다.
 
@@ -133,7 +241,18 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 
 6. 현재 대화와 관련된 주제에 대해 논의하세요. 주제를 벗어나지 말고 진로를 유지하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 규칙 6: 평정 유지
 
@@ -143,7 +262,18 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 
 예를 들어, 다음과 같이 말할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 우리가 논의한 내용을 처리하는 데 더 많은 시간이 필요한 것 같아요. 생각해 본 후에 다시 만나는 것은 어떠세요?
 - 우리가 논의한 것에 대해 생각해 볼 시간을 가지면 도움이 될까요? 언제든 다시 만날 수 있습니다.
@@ -161,6 +291,17 @@ link: "https://medium.com/code-like-a-girl/six-rules-of-effective-communication-
 - 우리는 어려운 대화가 우리의 의견을 공유하고 기대를 밝히며 불만을 표현하는 것이라고 생각합니다. 그러나 모든 말을 할 때 중요한 것을 잊어버립니다-다른 사람의 견해를 듣고 높이 평가하는 것.
 - 마지막으로 일부 문제가 될 수 있는 대화는 폭력적이거나 공격적일 수 있습니다. 이런 순간에 침착함을 잃는다면 상황을 더욱 악화시킬 수 있습니다. 나중에 연결하라고 상대방에게 요청하여 긴장을 풀어보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기와 LinkedIn에서 더 많은 이야기를 읽어보세요. 이 이야기는 원래 https://www.techtello.com에서 발행되었습니다.

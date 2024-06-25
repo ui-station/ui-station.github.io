@@ -3,13 +3,12 @@ title: "Google Cloud에서 Terraform을 사용하여 인프라 구축하기 - Go
 description: ""
 coverImage: "/assets/img/2024-05-20-BuildInfrastructureonGoogleCloudwithTerraformGoogleChallengeLabWalkthrough_0.png"
 date: 2024-05-20 17:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BuildInfrastructureonGoogleCloudwithTerraformGoogleChallengeLabWalkthrough_0.png
 tag: Tech
 originalTitle: "Build Infrastructure on Google Cloud with Terraform — Google Challenge Lab Walkthrough"
 link: "https://medium.com/google-cloud/build-infrastructure-on-google-cloud-with-terraform-google-challenge-lab-walkthrough-30a592373d3e"
 ---
-
 
 구글 클라우드에서 Terraform으로 인프라를 구축하는 코스의 챌린지 랩 워크스루입니다.
 
@@ -24,7 +23,18 @@ link: "https://medium.com/google-cloud/build-infrastructure-on-google-cloud-with
 
 # 챌린지 랩 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Google은 구글 클라우드 스킬즈 부스트(이전 명칭: QwikLabs)라는 온라인 학습 플랫폼을 제공합니다. 이 플랫폼에서는 학습 경로에 맞는 교육 과정을 따르거나 특정 제품 또는 솔루션에 대한 교육 과정을 진행할 수 있습니다.
 
@@ -35,7 +45,18 @@ Google은 구글 클라우드 스킬즈 부스트(이전 명칭: QwikLabs)라는
 - 랩을 완료하는 데 가장 이상적인 경로로 이끄는 것을 보여드립니다.
 - 랩을 스스로 완료할 수 없는 특정 문제나 장애물을 해결하는 데 도움을 줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도움이 필요한 경우, 도전 과제에 대한 도움을 얻으려면 올바른 곳에 오신 것을 환영합니다. 그러나 먼저 퀘스트를 진행하고 직접 랩을 시도한 후에 계속 읽기를 강력히 권장합니다!
 
@@ -45,7 +66,18 @@ Google은 구글 클라우드 스킬즈 부스트(이전 명칭: QwikLabs)라는
 
 이 랩에서는 Terraform을 사용하여 Google Cloud에서 인프라를 생성, 배포 및 관리해야 합니다. 또한 일부 관리되지 않은 인스턴스를 구성에 가져와 수정해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 나의 해결책
 
@@ -61,7 +93,18 @@ prj=<프로젝트 ID 입력>
 
 ## 작업 1 — 구성 파일 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 폴더 구조를 만들라고 지시받았어요:
 
@@ -100,7 +143,18 @@ touch modules/storage/outputs.tf
 touch modules/storage/variables.tf
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 변수.tf 파일을 업데이트하여 다음 변수들을 포함하도록 합니다:
 
@@ -142,7 +196,18 @@ provider "google" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 테라폼을 초기화해야 합니다. 따라서 다음 명령을 실행하세요:
 
@@ -154,7 +219,18 @@ terraform init
 
 여기서의 목표는 지금까지 테라폼 외부에서 프로비저닝된 인프라를 테라폼 제어 아래로 가져오는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테라폼 가져오기 워크플로우를 사용할 거에요:
 
@@ -168,7 +244,18 @@ terraform init
 - 구성이 예상 상태와 인프라와 일치하는지 확인하기 위해 테라폼 계획을 검토하세요.
 - 구성을 적용하여 테라폼 상태를 업데이트하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 가져와야 할 기존 인프라 확인
 
@@ -180,23 +267,32 @@ terraform init
 
 다음으로, 우리는 main.tf에 우리의 인스턴스 모듈을 두 번 호출해야 합니다. 이 두 호출은 빈 정의를 포함할 것이므로 가져올 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 module "tf_instance_1" {
-  source        = "./modules/instances"
-  instance_name = "tf-instance-1"
-  zone          = var.zone
-  region        = var.region
+source = "./modules/instances"
+instance_name = "tf-instance-1"
+zone = var.zone
+region = var.region
 }
 
 module "tf_instance_2" {
-  source        = "./modules/instances"
-  instance_name = "tf-instance-2"
-  zone          = var.zone
-  region        = var.region
+source = "./modules/instances"
+instance_name = "tf-instance-2"
+zone = var.zone
+region = var.region
 }
-
 
 각 모듈 정의에는 고유한 레이블이 있어야 합니다.
 
@@ -206,7 +302,18 @@ module "tf_instance_2" {
 terraform init
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 instances.tf에 모듈 구성을 작성합니다. 우리는 포함해야 할 최소한의 구성 요소를 알려받았습니다:
 
@@ -247,7 +354,18 @@ variable "instance_name" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Terraform State로 기존 인프라 가져오기
 
@@ -266,7 +384,18 @@ terraform show
 
 <img src="/assets/img/2024-05-20-BuildInfrastructureonGoogleCloudwithTerraformGoogleChallengeLabWalkthrough_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 계획 및 적용
 
@@ -279,7 +408,18 @@ terraform apply
 
 ## 작업 3 — 원격 백엔드 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이건 꽤 쉬워요. 원격 GCS 백엔드에 Terraform 상태를 저장하려고 할 때 실행해야 하는 표준 단계들이에요:
 
@@ -291,7 +431,18 @@ terraform apply
 
 다음 리소스 정의를 main.tf에 추가하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드를 아래와 같이 번역해 드립니다.
 
@@ -313,7 +464,18 @@ terraform apply
 
 ## GCS 백엔드 추가하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 main.tf 파일을 수정하여 백엔드를 terraform 블록에 포함시키세요:
 
@@ -330,7 +492,18 @@ terraform {
 
 로컬 상태 파일에서 GCS 백엔드로 Terraform 상태를 이전하는 부분입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 terraform init -migrate-state
@@ -342,7 +515,18 @@ terraform init -migrate-state
 
 ## 작업 4 — 인프라 수정 및 업데이트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 machine_type을 포함하는 variables.tf를 업데이트해야합니다:
 
@@ -365,7 +549,18 @@ resource "google_compute_instance" "instance" {
   ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, main.tf를 수정해서 세 번째 인스턴스를 추가해야 합니다. 세 번째 모듈을 호출하여 main.tf에 추가합니다. 이미 기본값을 설정했으므로 machine_type을 전달할 필요가 없습니다.
 
@@ -378,7 +573,18 @@ terraform apply
 
 ## 작업 5 — 리소스 파기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전에 추가했던 인스턴스를 제거해 보겠습니다. main.tf에서 이 모듈 호출을 제거한 다음 다시 적용하십시오:
 
@@ -391,7 +597,18 @@ terraform apply
 
 Google Network Module를 사용하려고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 module "network" {
@@ -426,8 +643,18 @@ terraform apply
 
 인스턴스 모듈을 업데이트하여 네트워크 매개변수와 서브넷 매개변수를 사용하도록 하십시오.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 variables.tf:
 
@@ -456,7 +683,18 @@ network_interface {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 이렇게 인스턴스를 생성하도록 main.tf를 업데이트하세요:
 
@@ -488,7 +726,18 @@ terraform apply
 
 ## 작업 7 — 방화벽 추가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드를 Korean으로 번역하였습니다:
 
@@ -515,7 +764,17 @@ resource "google_compute_firewall" "default" {
 terraform apply
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 끝났어요!

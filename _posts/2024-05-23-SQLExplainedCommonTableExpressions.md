@@ -3,13 +3,12 @@ title: "SQL 설명 공통 테이블 표현식"
 description: ""
 coverImage: "/assets/img/2024-05-23-SQLExplainedCommonTableExpressions_0.png"
 date: 2024-05-23 15:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SQLExplainedCommonTableExpressions_0.png
 tag: Tech
 originalTitle: "SQL Explained: Common Table Expressions"
 link: "https://medium.com/towards-data-science/sql-explained-common-table-expressions-fc23e4675890"
 ---
-
 
 SQL에서 CTE(Common Table Expressions, CTE로 알려진)는 다른 SQL 쿼리에서 파생된 중간 데이터를 포함하는 일시적인 이름이 지정된 결과 세트입니다. CTE에 데이터가 있는 경우 동일한 쿼리 내에서 해당 데이터를 한 번 이상 참조할 수 있습니다.
 
@@ -19,7 +18,18 @@ SQL에서 CTE(Common Table Expressions, CTE로 알려진)는 다른 SQL 쿼리�
 
 또한, 일시적 테이블은 물리적 저장 공간을 소비하며, 여유 공간이 부족하고 많은 양의 일시적 테이블이 있다면 이는 고려할 사항일 수 있습니다. 게다가 일시적 테이블을 사용하는 쿼리를 살펴볼 때, 일시적 테이블에 어떤 데이터가 포함되어 있는지, 데이터가 어디서 왔는지 명확하지 않을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CTE(공통 테이블 표현식)에는 위에서 언급한 문제가 없어요. 일단, CTE는 일시적이기 때문에 SQL 세션이 종료되면 CTE가 범위에서 벗어나고 사용한 모든 메모리가 해제됩니다.
 
@@ -30,7 +40,18 @@ CTE의 이점뿐만 아니라, 특정 단점도 있어서 아래 경우에는 �
 - 쿼리에서 CTE에 포함될 데이터를 한 번 이상 참조해야 하는 경우. 이는 CTE가 참조될 때마다 다시 채워져야 하기 때문에 발생하는 문제예요. 그러나 CTE의 데이터 양이 작다면 이것이 사용 시 제약 사항이 되지 않을 수 있어요.
 - 위와 관련하여, CTE는 인덱싱할 수 없기 때문에 데이터 양이 많으면 인덱싱된 임시 테이블보다 성능이 떨어질 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러니까, 다음 시나리오에서 CTE를 사용해 보세요.
 
@@ -42,7 +63,18 @@ CTE의 이점뿐만 아니라, 특정 단점도 있어서 아래 경우에는 �
 
 이제 CTE의 정의와 기능을 보다 자세히 이해했으니, 사용 예제를 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테스트 환경 설정하기.
 
@@ -52,7 +84,18 @@ CTE의 이점뿐만 아니라, 특정 단점도 있어서 아래 경우에는 �
 
 재귀적이지 않은 CTE 예제를 위해 고객 거래 내역 테이블을 사용할 것입니다. 입력 테이블 및 데이터를 재생성하는 데 필요한 테이블 생성 및 데이터 삽입 문을 여기에 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 CREATE TABLE transactions (
@@ -105,7 +148,18 @@ TRANSACTIONID CUSTOMERID AMOUNT TRANSACTIONDATE
 WITH cte_name [(column_list)] AS (cte_query_definition) statement
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같은 표가 있습니다:
 
@@ -127,7 +181,18 @@ FROM CustomerTotals
 WHERE TotalSpent > 250;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 CUSTOMERID | TOTALSPENT
@@ -148,7 +213,18 @@ HAVING SUM(Amount) > 250;
 
 ## 테스트 2 — 더 복잡한 CTE
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CTE가 자신을 발휘하는 곳은 이와 유사한 쿼리를 갖고 있을 때입니다.
 
@@ -176,7 +252,18 @@ CUSTOMERID AVGAMOUNT
 1003       215
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 이것을 비-CTE 버전과 비교해 봤을 때,
 
@@ -198,7 +285,18 @@ HAVING AVG(Amount) > (
 
 ## 테스트 3 — 재귀 CTEs
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 재귀 CTE(Commmon Table Expressions)는 쿼리 중 하나의 CTE가 자신을 참조하는 쿼리입니다. 예제에서 별명 정보를 사용하여 위의 CTE 예제를 재귀 CTE를 사용하여 작성할 수 있다는 것을 기믈했을지도 모릅니다.
 
@@ -217,7 +315,7 @@ FROM CustomerAverages a, OverallAverage o
 WHERE a.AvgAmount > o.OverallAvg;
 ```
 
-두 번째 CTE인 OverallAverage에 필요한 정보는 이미 첫 번째 CTE인 CustomerAverages에 포함되어 있었기 때문에 첫 번째 CTE의 데이터를 두 번째 CTE의 계산에 사용할 수 있었습니다. 
+두 번째 CTE인 OverallAverage에 필요한 정보는 이미 첫 번째 CTE인 CustomerAverages에 포함되어 있었기 때문에 첫 번째 CTE의 데이터를 두 번째 CTE의 계산에 사용할 수 있었습니다.
 
 ```js
 with recursive cte(col1, col2 etc…) as my_cte
@@ -225,7 +323,18 @@ with recursive cte(col1, col2 etc…) as my_cte
 ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오라클은 CTE가 쿼리 내에서 자기 자신을 참조한다면 재귀적이라고 가정하기 때문에 특별한 재귀 키워드가 필요하지 않습니다.
 
@@ -235,16 +344,27 @@ with recursive cte(col1, col2 etc…) as my_cte
 
 우리의 작업은 매일의 고객 지출 총액을 보여주는 보고서를 생성하는 것입니다. 날짜에 대한 항목이 없는 경우, 해당 날짜의 고객 지출 값의 합계를 위해 제로를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 재귀 CTE에 대한 좋은 사용 사례입니다.
 
 ```js
 WITH DateRange (dt) AS (
-    SELECT MIN(TRANSACTIONDATE) 
+    SELECT MIN(TRANSACTIONDATE)
     FROM Transactions
     UNION ALL
-    SELECT dt + INTERVAL '1' DAY 
+    SELECT dt + INTERVAL '1' DAY
     FROM DateRange WHERE dt < (SELECT MAX(TRANSACTIONDATE) FROM Transactions)
 ),
 AggregatedData AS (
@@ -276,7 +396,18 @@ TRANSACTIONDATE  TOTAL_SPEND
 
 ## 요약
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론적으로, Common Table Expressions(CTEs)는 SQL에서 가독성, 유지 관리 및 복잡한 쿼리의 실행을 개선할 수 있는 다재다능하고 강력한 기능입니다. 이 글을 통해 CTE의 기본 구조와 기능을 탐색하며, 비재귀 및 재귀 유형을 살펴 다양한 시나리오에서 그 유틸리티를 보여주었습니다.
 
@@ -286,6 +417,17 @@ TRANSACTIONDATE  TOTAL_SPEND
 
 아직도 CTE에 대해 확신이 없다면, 제 3번 테스트 예제에서 CTE를 사용하지 않고 어떻게 문제를 해결할지 생각해보세요. 이런 문제에 대한 전통적인 SQL 접근 방식은 더 불편하고 효율적이지 않다는 것을 알게 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 컨텐츠가 마음에 드셨다면, 이 아티클도 흥미롭게 보실 것 같아요.

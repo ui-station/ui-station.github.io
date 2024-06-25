@@ -3,14 +3,12 @@ title: "SwiftUI 웃기고 독특한 사용자 정의 얼굴 애니메이션 회�
 description: ""
 coverImage: "/assets/img/2024-05-20-SwiftUIFunnyCustomFaceAnimationwithrotationeffect_0.png"
 date: 2024-05-20 16:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SwiftUIFunnyCustomFaceAnimationwithrotationeffect_0.png
 tag: Tech
 originalTitle: "[SwiftUI] Funny Custom Face Animation with rotation effect"
 link: "https://medium.com/@ganeshrajugalla/swiftui-funny-custom-face-animation-with-rotation-effect-b8d48d4ac289"
 ---
-
-
 
 ![Funny Custom Face Animation](/assets/img/2024-05-20-SwiftUIFunnyCustomFaceAnimationwithrotationeffect_0.png)
 
@@ -18,11 +16,11 @@ link: "https://medium.com/@ganeshrajugalla/swiftui-funny-custom-face-animation-w
 
 ```swift
 struct FunnyFaceView: View {
-    
+
     // MARK: - 속성
     @State private var isRotate: Bool = false
     @State private var rotationAngle: Double = 0
-    
+
     // MARK: - Body
     var body: some View {
         ZStack {
@@ -38,14 +36,14 @@ struct FunnyFaceView: View {
 }
 
 extension FunnyFaceView {
-    
+
     @ViewBuilder
     private func faceView() -> some View {
         Circle()
             .fill(Color.yellow)
             .frame(width: 300, height: 300)
     }
-    
+
     @ViewBuilder
     private func facePartsView() -> some View {
         VStack {
@@ -53,7 +51,7 @@ extension FunnyFaceView {
             mouthView()
         }
     }
-    
+
     @ViewBuilder
     private func eyesView() -> some View {
         HStack {
@@ -82,7 +80,7 @@ extension FunnyFaceView {
             isRotate.toggle()
         }
     }
-    
+
     @ViewBuilder
     private func mouthView() -> some View {
         RoundedRectangle(cornerRadius: 20, style: .continuous)
@@ -101,7 +99,17 @@ extension FunnyFaceView {
 
 ![Funny Custom Face Animation](https://miro.medium.com/v2/resize:fit:590/1*ZUIvBP0Uf6Me8MkBYtu0Sg.gif)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 감사합니다!

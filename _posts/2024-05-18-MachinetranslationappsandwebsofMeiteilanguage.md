@@ -3,13 +3,12 @@ title: "메이테이어 언어의 기계 번역 앱 및 웹 페이지"
 description: ""
 coverImage: "/assets/img/2024-05-18-MachinetranslationappsandwebsofMeiteilanguage_0.png"
 date: 2024-05-18 18:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MachinetranslationappsandwebsofMeiteilanguage_0.png
 tag: Tech
 originalTitle: "Machine translation apps and webs of Meitei language"
 link: "https://medium.com/@goutamkumaroina/machine-translation-apps-and-webs-of-meitei-language-276510cce9f2"
 ---
-
 
 ![2024-05-18-MachinetranslationappsandwebsofMeiteilanguage_0](/assets/img/2024-05-18-MachinetranslationappsandwebsofMeiteilanguage_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@goutamkumaroina/machine-translation-apps-and-webs-of-
 
 여기서는 실험을 목적으로 "매니푸르는 멋진 곳입니다."라는 문장을 사용합니다. 이 문장이 모든 앱과 웹에서 번역에 사용될 것입니다. 일부는 메이테이 메이에크 문자 (mni-Mtei), 또는 벵골 문자 (mni-Beng), 또는 라틴 문자 (mni-Latn)을 사용합니다. 여기서 "mni"은 "매니푸리어"를 나타내고 다른 코드 단어는 각각의 문자체계를 참조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 구글 번역 ???
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@goutamkumaroina/machine-translation-apps-and-webs-of-
 
 평가한다면 5점 중 3.5점을 받을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Microsoft Translator 리뷰
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@goutamkumaroina/machine-translation-apps-and-webs-of-
 
 평가하면 5점 만점에 4점을 줄 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ???
 
@@ -49,7 +81,18 @@ Bhashini은 인도 정부의 프로젝트로, 메이테이어 언어에는 Meete
 
 여기서 "Manipuri is a wonderful place"라는 문구를 "ꯃꯅꯤꯄꯨꯔ ꯑꯁꯤ ꯐꯖꯔꯕ ꯃꯐꯝ ꯑꯃꯅꯤ ꯫" (manipur asi phajaraba mapham amani.)로 번역합니다. 문구는 다른 번역 앱 및 웹과 달리 독특합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 평가해야 한다면 5점 만점에 4점을 줄 것입니다.
 
@@ -59,7 +102,18 @@ Bhashini은 인도 정부의 프로젝트로, 메이테이어 언어에는 Meete
 
 Glosbe 번역은 메이테이어 언어에 대해 벵골 문자를 사용합니다. 번역 정확도는 상당히 좋고 맞춤법 실수는 드물게 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 "Manipur is a wonderful place"는 "মনিপুর অসি য়াম্না ফবা মফম অমনি।" (manipur asi yaamna phaba mapham amani.)로 번역됩니다. 완벽하지는 않지만 언어 어휘의 이해 수준에 맞게 사용됩니다.
 
@@ -69,7 +123,18 @@ Glosbe 번역은 메이테이어 언어에 대해 벵골 문자를 사용합니�
 
 ![이미지](/assets/img/2024-05-18-MachinetranslationappsandwebsofMeiteilanguage_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현대적인 MT는 메이테이어어를 번역할 때 벵골어 스크립트를 사용합니다. 2024년 중반 기준으로 번역 정확도는 상당히 낮지만 이전보다 크게 개선 중입니다. 맞춤법 실수는 단어 선택 오류에 비해 적습니다. 대부분의 문장 번역 결과는 정확도가 떨어지지만, 단어 번역에 대해서는 꽤 좋습니다.
 
@@ -79,7 +144,18 @@ Glosbe 번역은 메이테이어 언어에 대해 벵골 문자를 사용합니�
 
 ## 그 외 ???
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 번역 서비스가 많이 있습니다. Bing AI의 Copilot, ELRA 카탈로그 등이 있어요.
 

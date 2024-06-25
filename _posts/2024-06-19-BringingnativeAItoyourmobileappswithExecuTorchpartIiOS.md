@@ -3,13 +3,12 @@ title: "원활한 사용을 위해 ExecuTorch와 함께 모바일 앱에 원시 
 description: ""
 coverImage: "/assets/img/2024-06-19-BringingnativeAItoyourmobileappswithExecuTorchpartIiOS_0.png"
 date: 2024-06-19 14:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-BringingnativeAItoyourmobileappswithExecuTorchpartIiOS_0.png
 tag: Tech
 originalTitle: "Bringing native AI to your mobile apps with ExecuTorch— part I — iOS"
 link: "https://medium.com/swmansion/bringing-native-ai-to-your-mobile-apps-with-executorch-part-i-ios-f1562a4556e8"
 ---
-
 
 <img src="/assets/img/2024-06-19-BringingnativeAItoyourmobileappswithExecuTorchpartIiOS_0.png" />
 
@@ -19,7 +18,18 @@ ExecuTorch는 PyTorch를 기반으로 한 새로운 프레임워크로, PyTorch 
 
 ## 1. 모델 내보내기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 먼저 해야 할 일은 PyTorch 모델을 .pte 파일로 내보내는 것인데, 이는 본질적으로 PyTorch 실행 가능 파일입니다. 이 부분은 이미 처리해 드렸지만, 만약 여러분의 모델을 사용하고 싶으시다면 ExecuTorch의 Python API를 사용하여 가능합니다. 만약 재현하고 싶다면, 저희 레포지토리에서 모델을 다운로드할 수 있습니다. 여기에서 내보낸 모델들은 PyTorch 예제 레포지토리에서 가져왔습니다. 이를 하기 전에, 환경 설정이 필수적입니다. 기본 내보내기 튜토리얼은 다음을 참조하세요:
 
@@ -29,7 +39,18 @@ ExecuTorch는 PyTorch를 기반으로 한 새로운 프레임워크로, PyTorch 
 
 이 튜토리얼에서는 이미지를 멋진 아트스타일로 변환하는 스타일 전송 모델을 사용할 것입니다. 만약 웹 및 비디오에 대해 비슷한 일을 하는 방법에 궁금하다면 이전 기사를 확인해보세요. 원하는 모델을 사용하고 싶다면 아래 스크립트를 사용할 수 있습니다. 이를 통해 CoreML 백엔드에 적합한 .pte 파일이 생성될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 라이브러리 빌드 및 설정하기
 
@@ -39,7 +60,18 @@ ExecuTorch는 PyTorch를 기반으로 한 새로운 프레임워크로, PyTorch 
 
 코딩에 들어가기 전에 빌드 설정 -` 다른 링커 플래그로 이동하여 -all_load 플래그를 추가해야 합니다. 이를 통해 라이브러리가 제대로 연결되도록 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. 코딩 파트 — Xcode
 
@@ -65,7 +97,7 @@ const int32_t numChannels = 3;
 RCT_EXPORT_METHOD(initModule:(NSString *)modelFileName resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     NSString *styleTransferPath = [[NSBundle mainBundle] pathForResource:modelFileName ofType:@"pte"];
     styleTransferModel= std::make_unique<Module>(styleTransferPath.UTF8String);
-    
+
     if (styleTransferModel) {
         resolve(@"Module created successfully");
     } else {
@@ -77,7 +109,18 @@ RCT_EXPORT_METHOD(initModule:(NSString *)modelFileName resolver:(RCTPromiseResol
 
 먼저 Module 클래스의 인스턴스를 만들어야 합니다. 이는 ExecuTorch 프레임워크의 일부입니다. 이를 통해 모델의 forward()와 같은 내보낸 메서드를 호출할 수 있습니다. 클래스를 인스턴스화하려면 이전에 언급한 .pte 파일의 경로를 전달해야 합니다. 또한 RCT_EXPORT_METHOD 매크로를 사용하여 메서드를 JS로 내보냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델을 실행하기 전에 다음 단계는 입력 텐서를 준비하는 것입니다. 머신 러닝 프레임워크와 작업을 해본 적이 있다면 텐서에 익숙할 것입니다. 고수준에서 말하면, 이것은 GPU에서 실행할 수 있는 배열입니다.
 
@@ -103,7 +146,18 @@ RCT_EXPORT_METHOD(applyStyleTransfer:(NSString *)imageUri resolver:(RCTPromiseRe
 
 다시 한번 해당 메서드를 JS에 내보냅니다. applyStyleTransfer라고 부르며, NSString 포인터를 받도록 만들었습니다. 이는 표준 JS 문자열과 해당됩니다. 이 문자열은 우리 입력 이미지의 URI가 될 것입니다. 이제 모델이 예상하는 데이터 형식인 원시 RGB 데이터 배열을 만들어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // StyleTransferModule.mm
@@ -114,10 +168,10 @@ RCT_EXPORT_METHOD(applyStyleTransfer:(NSString *)imageUri resolver:(RCTPromiseRe
 
   CGSize targetSize = CGSizeMake(imageSize, imageSize);
   UIImage *resizedImage = [ImageProcessor resizeImage:inputImage toSize:targetSize];
-  
+
   // to float array - the input
   float *imageData = [ImageProcessor imageToFloatArray:resizedImage size:&targetSize];
-  
+
   // make it a tensor
   int32_t sizes[] = {1, numChannels, imageSize, imageSize};
   TensorImpl inputTensorImpl(ScalarType::Float, std::size(sizes), sizes, imageData);
@@ -141,7 +195,16 @@ NSError *error = [NSError
 const float *outputData = result->at(0).toTensor().const_data_ptr<float>();
 free(imageData);
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추론 중에 오류가 발생했는지 확인하려면 .ok() 메서드를 호출하면 됩니다. outputData 변수는 모델 호출 결과에 대한 포인터입니다. 이는 분류 작업의 확률부터 LLM 출력까지 어떤 것이든 될 수 있습니다. 마지막으로 후속 처리 단계를 수행하고 출력 이미지 URI를 JS 쪽에 반환해야 합니다.
 
@@ -150,7 +213,7 @@ free(imageData);
 
 CGSize outputSize = CGSizeMake(imageSize, imageSize);
 UIImage *outputImage = [ImageProcessor imageFromFloatArray:outputData size:outputSize];
-  
+
 // save img to tmp dir, return URI
 NSString *outputPath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"processed_image.png"];
 if ([UIImagePNGRepresentation(outputImage) writeToFile:outputPath atomically:YES]) {
@@ -164,7 +227,16 @@ if ([UIImagePNGRepresentation(outputImage) writeToFile:outputPath atomically:YES
 
 <img src="/assets/img/2024-06-19-BringingnativeAItoyourmobileappswithExecuTorchpartIiOS_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 마지막으로
 
@@ -173,3 +245,4 @@ if ([UIImagePNGRepresentation(outputImage) writeToFile:outputPath atomically:YES
 이 시리즈의 다음 부분에서는 Android에서도 똑같이 할 수 있는 방법을 보여줄 거에요. 또한 곧 우리의 객체 제거 데모와 관련된 꽤 인상적인 기능을 구현하는 튜토리얼을 공개할 예정이에요 👀. 우리의 AI 및 멀티미디어 작업에 대해 계속해서 소식을 받고 싶다면 RTC.ON 소식지에 가입해주세요. 계속 연락을 유지해 주세요!
 
 우리는 소프트웨어 마스터즈(Software Mansion)입니다: 소프트웨어 개발 컨설턴트, AI 탐험가, 멀티미디어 전문가, React Native 코어 기여자 및 커뮤니티 빌더들이에요. 우리를 고용하고 싶다면 projects@swmansion.com 으로 연락해 주세요.
+```

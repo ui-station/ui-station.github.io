@@ -10,7 +10,6 @@ originalTitle: "Finally. We Have a New iMac. Here’s How to Buy Yours!"
 link: "https://medium.com/macoclock/finally-we-have-a-new-imac-heres-how-to-buy-yours-d8e440d87732"
 ---
 
-
 <img src="/assets/img/2024-05-23-FinallyWeHaveaNewiMacHeresHowtoBuyYours_0.png" />
 
 오랜만에 업데이트 없이 지내온 애플의 사랑받는 올인원 데스크탑 맥에 새로운 24인치 iMac이 드디어 출시되었습니다.
@@ -19,8 +18,18 @@ link: "https://medium.com/macoclock/finally-we-have-a-new-imac-heres-how-to-buy-
 
 이는 2021년 5월에 출시된 24인치 iMac과 동일한 샤시, 디스플레이 및 포트 상황을 갖추고 있습니다. 다만 이제는 내부에 M3 칩이 들어가 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플의 이 새로운 칩은 3나노미터 공정을 기반으로 하여 원래 M1 칩보다 상당한 성능 향상을 제공합니다. 성능 코어는 최대 30% 빨라졌으며, 빠른 신경 엔진이 탑재되었고 GPU는 다른 차원입니다.
 
@@ -30,7 +39,18 @@ link: "https://medium.com/macoclock/finally-we-have-a-new-imac-heres-how-to-buy-
 
 ## M1 또는 M3 24인치 iMac?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 eBay를 짧게 뒤져 보니, £1,000/$1,000 미만에 괜찮은 사양의 중고 24인치 M1 iMac을 구할 수 있다는 것을 알았어요. 하지만 어느 정도 좋은 제품을 찾기 위해 노력해야 합니다.
 
@@ -40,7 +60,18 @@ eBay를 짧게 뒤져 보니, £1,000/$1,000 미만에 괜찮은 사양의 중�
 
 제 경험상, 거의 2년 반된 iMac을 새로운 M3 변형 버전보다 선택하는 것을 정당화할 만한 절약된 가격이 아직은 없어요. 절대적인 깨진 제품을 찾거나 새 iMac이 할 수 있는 범위를 넘어서는 것이 필요하지 않다면요. 일반 관리, 웹 사용, 글쓰기, 가끔 창작 프로젝트에 관여하는 등의 용도라면, M1 플랫폼은 여전히 탁월한 선택이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정직하게 말하자면 - 당신은 M3 iMac에 흥미가 많아서 이것을 읽고 있는 거 아니에요?
 
@@ -50,7 +81,18 @@ eBay를 짧게 뒤져 보니, £1,000/$1,000 미만에 괜찮은 사양의 중�
 
 기본 모델인 M3 iMac은 8코어 CPU와 8코어 GPU가 탑재돼 있어요. 이것은 £1,399/$1,299에 구매할 수 있으며, 집이나 사무실에서 유용하게 사용할 일반적인 업무용 iMac으로 충분한 성능을 제공할 거에요. 비디오 편집이나 그래픽 집중 작업에 자주 뛰어들 계획이 없다면 더 강력한 것은 필요하지 않아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원하는 경우 더 많은 금액을 지출하고 싶으시다면 다른 칩 구성이 하나 더 있습니다. 동일한 8코어 CPU를 갖고 있지만, 10코어 GPU로 인해 그래픽 성능이 향상됩니다. 이것은 추가로 £200/$200이 드는데, 이 구성을 위해 따로 업그레이드 받는 유일한 것은 GPU 코어 2개 뿐이라는 점을 중요하게 알아두시기 바랍니다. 이 구성은 동일한 8GB 통합 메모리와 256GB 저장 공간을 갖고 있습니다.
 
@@ -60,7 +102,18 @@ eBay를 짧게 뒤져 보니, £1,000/$1,000 미만에 괜찮은 사양의 중�
 
 ## M3 iMac: 통합 메모리 얼마나 필요한가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 M3 iMac은 통합 메모리에 대해 세 가지 옵션이 있습니다. 이는 이전의 M1 버전의 16GB 한계를 능가하는 중요한 업그레이드입니다. M3 iMac은 최대 24GB의 통합 메모리로 구성할 수 있습니다.
 
@@ -70,7 +123,18 @@ M3 iMac은 통합 메모리에 대해 세 가지 옵션이 있습니다. 이는 
 
 24GB에 대해 어떻게 생각하시나요? 만약 그만큼의 메모리가 필요하다는 것을 알고 계신다면, 그만큼의 메모리가 필요한 거죠. 대규모 데이터 집합을 작업하거나 많은 플러그인과 샘플 라이브러리를 사용하여 음악을 제작하는 사람들은 가능한 한 많은 메모리를 원할 것이며, £400/$400 업그레이드는 가치가 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## M3 iMac: 저장 용량은 얼마인가요?
 
@@ -80,7 +144,18 @@ M3 iMac은 통합 메모리에 대해 세 가지 옵션이 있습니다. 이는 
 
 M3 iMac에 설치된 로컬 앱에 좀 더 여유 공간을 제공하기 위해 512GB 업그레이드를 하는 것은 합리적일 수 있지만, 추가 저장 용량이 필요하다면 언제나 타사 외장 SSD를 구매하는 것을 추천해요. 하더라도 그것들은 더 저렴하고, 크며, 무한히 확장 가능해요. 게다가 빛나는 새로운 iMac 뒤쪽에 깔끔하게 넣어두면 거기 없는 줄 알 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## M3 iMac: 포트와 주변장치
 
@@ -90,7 +165,18 @@ M3 iMac에 설치된 로컬 앱에 좀 더 여유 공간을 제공하기 위해 
 
 네덜란드 키보드는 iMac 선택에 따라 추가 비용이 £30/$30에서 £80/$80까지 발생할 수 있으며, 만약 마우스 대신 트랙패드를 좋아한다면 (강력히 추천드립니다), 해당 비용은 £50/$50이 소요됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 조언은요? Apple Watch가 있으면 Touch ID를 신경 쓰지 않아도 돼요 (맥을 잠금 해제하는 데 불필요하게 만들어요), 하지만 정말이지 Magic Mouse를 Magic Trackpad로 교체해보세요!
 
@@ -100,7 +186,18 @@ M3 iMac에 설치된 로컬 앱에 좀 더 여유 공간을 제공하기 위해 
 
 요약하자면, 심하게 그래픽 집중적인 작업을 하지 않는 한, 기본 M3 칩을 그대로 두고 통합 메모리와 저장 공간 업그레이드에 예산을 집중하세요 (하지만 후자에 좀 지나치게 들어가지는 마세요!).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 M1 iMac을 선택하셨나요? 어떤 용도로 사용할 건가요? 아래에서 의견을 공유해주세요!
 

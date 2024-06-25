@@ -3,13 +3,12 @@ title: "소프트웨어 개발 우리가 도대체 뭘 하는 거지"
 description: ""
 coverImage: "/assets/img/2024-05-18-SoftwareDevelopmentWhatonEarthAreWeDoing_0.png"
 date: 2024-05-18 15:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-SoftwareDevelopmentWhatonEarthAreWeDoing_0.png
 tag: Tech
 originalTitle: "Software Development: What on Earth Are We Doing?"
 link: "https://medium.com/@rico-fritzsche/software-development-what-on-earth-are-we-doing-d4d512be172c"
 ---
-
 
 <img src="/assets/img/2024-05-18-SoftwareDevelopmentWhatonEarthAreWeDoing_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rico-fritzsche/software-development-what-on-earth-are
 
 집을 짓는 것과 달리 보통 선형적이고 명확한 계획에 따른 명확한 종료가 있는 소프트웨어 개발은 변화하는 요구사항, 기술적 진전 및 사용자 피드백에 기반한 지속적인 적응, 진화 및 반복을 포함합니다. 이 인용구는 소프트웨어 개발의 독특한 도전과 방법을 인식하고 이를 과소평가하여 그 요구 사항과 복잡성을 과소평가하지 않기 위한 중요성을 강조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소프트웨어 개발은 코드를 작성하는 것만으로 이해되는 경우가 많지만, 소프트웨어 제품을 개발하는 데 필요한 요소를 이해하는 것이 종종 부족합니다. 사람들이나 조직이 모바일 앱이 필요하다고 미리 결정하는 경우가 많지만, 작은 웹 앱을 사용해도 충분할 수 있다는 사실을 확인할 때가 있습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@rico-fritzsche/software-development-what-on-earth-are
 
 소프트웨어 개발은 계속해서 배우는 것에 관한 것이며, 유감스럽게도 종종 잊혀지는 사실입니다. 도메인 주도 설계가 적용되거나 적어도 시도되었을 때 종종 단순한 기술적 개념으로 축소됩니다. 전략적 설계가 훨씬 중요하다고 믿습니다. 예를 들어, 이벤트 스토밍은 도메인을 이해하고 바운디드 컨텍스트와 서브도메인을 정의하는 데 훌륭합니다. 이것은 모두에게 의사소통하기 쉬우며, 개발자가 도메인에 참여하려는지 물리적인 작업을 메카닉하게 처리하려는지를 초기에 파악할 수 있습니다. 마이크로서비스를 사용할 계획인 경우 이벤트 스토밍을 통해 서비스 경계를 정의할 수 있습니다. 비즈니스 요구 사항을 단순히 코드로 번역하는 "생각 없는 프로그래머" 역할은 AI와 같은 새로운 기술과 경쟁하기 어려울 것이라고 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미래를 바라볼 때, 개발자의 역할은 명백히 변화하고 있습니다. AI 및 다른 기술들의 등장으로 인해 개발자를 단순한 프로그래머로만 보는 전통적인 시각에 도전받고 있습니다. 대신, 비판적 사고 능력, 지속적인 학습, 효과적인 협업 능력이 점점 중요해지고 있습니다. 이러한 기술들은 개발자가 풍부한 정보를 기반으로 결정을 내리고, 접근법을 재고조정하며, 현대 소프트웨어 개발의 복잡성을 탐색할 수 있게 합니다. 소프트웨어 개발은 결정을 내리는 것이며, 되돌아보고 수정해야 하는 자세를 갖추는 것입니다. 이건 과정이자, 학습 과정입니다. 무엇보다 중요한 것은 이겁니다: 이건 이해와 협업이 스테이크홀더들과의 소통과 협업을 통해 이루어지는 과정입니다.
 

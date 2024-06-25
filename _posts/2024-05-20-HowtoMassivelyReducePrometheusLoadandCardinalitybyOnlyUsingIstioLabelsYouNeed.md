@@ -3,13 +3,12 @@ title: "프로메테우스 부하와 카디널리티 대폭 줄이는 방법 필
 description: ""
 coverImage: "/assets/img/2024-05-20-HowtoMassivelyReducePrometheusLoadandCardinalitybyOnlyUsingIstioLabelsYouNeed_0.png"
 date: 2024-05-20 17:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowtoMassivelyReducePrometheusLoadandCardinalitybyOnlyUsingIstioLabelsYouNeed_0.png
 tag: Tech
 originalTitle: "How to Massively Reduce Prometheus Load and Cardinality by Only Using Istio Labels You Need"
 link: "https://medium.com/itnext/how-to-massively-reduce-prometheus-load-and-cardinality-by-only-using-istio-labels-you-need-75bcf41ff5d3"
 ---
-
 
 ![image](/assets/img/2024-05-20-HowtoMassivelyReducePrometheusLoadandCardinalitybyOnlyUsingIstioLabelsYouNeed_0.png)
 
@@ -19,23 +18,46 @@ link: "https://medium.com/itnext/how-to-massively-reduce-prometheus-load-and-car
 
 # 재미있는 부분으로 넘어가보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-우선, 우리가 이야기하는 것은 Istio (그리고 간접적으로 Kubernetes)입니다. 우리가 조정하고 있는 구체적인 구성 요소는 Istio Operator입니다. 
-익숙하지 않다면, Istio Operator는 istioOperator 사용자 지정 리소스를 관리하는 Kubernetes 컨트롤러입니다. 
-그 결과로 Istio Operator는 클러스터에서 Istio 리소스를 만들고 지속적으로 조정합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+우선, 우리가 이야기하는 것은 Istio (그리고 간접적으로 Kubernetes)입니다. 우리가 조정하고 있는 구체적인 구성 요소는 Istio Operator입니다.
+익숙하지 않다면, Istio Operator는 istioOperator 사용자 지정 리소스를 관리하는 Kubernetes 컨트롤러입니다.
+그 결과로 Istio Operator는 클러스터에서 Istio 리소스를 만들고 지속적으로 조정합니다.
 이에는 Gateway 리소스, Envoy Filters, Pilot (istiod) 등이 포함됩니다.
 
 Istio 문서에는 우리가 작업하는 기능을 참조하는데, 사용 방법에 대한 예시를 충분히 제공하지 않는 단 한 줄이 있습니다.
 
 그래서 우리는 설정해야 할 istioOperator 매니페스트가 있습니다. 그리고 metric 라벨을 덮어쓰기 위해 tags_to_remove 옵션을 사용한다는 것을 알고 있습니다.
 
-## 참고: Istio 구성을 업데이트할 때는 항상 실제 운영 환경이 아닌 환경에서 테스트해야 합니다. 
+## 참고: Istio 구성을 업데이트할 때는 항상 실제 운영 환경이 아닌 환경에서 테스트해야 합니다.
+
 메트릭 라벨에 대해 이야기하고 있더라도 의도치 않은 영향이 발생할 수 있습니다.
 예를 들어, 사용자 지정 메트릭을 사용하여 스케일링 동작을 정의하는 경우 전체 클러스터의 스케일링 동작을 망가뜨릴 수 있습니다.
 이것은 한 가지 예시일 뿐이지만, 이것을 염두에 두세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-HowtoMassivelyReducePrometheusLoadandCardinalitybyOnlyUsingIstioLabelsYouNeed_1.png" />
 
@@ -45,7 +67,18 @@ spec.telemetry.v2.prometheus.configOverride.inboundSidecar.metrics
 
 spec.telemetry.v2.prometheus.configOverride.outboundSidecar.metrics
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 더 완전한 예시를 살펴보세요 (이 이야기에서 필요한 구성만을 간략화하여 포함하였음을 유의해주세요):
 
@@ -106,7 +139,18 @@ spec:
 
 Istio Operator 구성이 업데이트되었습니다. 멋져요! 하지만… 이제 무엇을 해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아마도 별도의 운영 환경에 액세스할 수 있고 이 업데이트된 매니페스트를 해당 Kubernetes 클러스터에 적용할 수 있을 것으로 예상됩니다. Istio 오퍼레이터 파드의 로그를 추적하여 클러스터 리소스를 동기화하는 것을 확인할 수 있습니다. 구체적으로, Envoy 필터를 업데이트해야 합니다.
 
@@ -133,7 +177,18 @@ Istio Operator 구성이 업데이트되었습니다. 멋져요! 하지만… �
 
 전체적으로 너무 조심스러운 면이 있다고 생각되어 istio-system 네임스페이스에 있는 모든 것을 재시작하는 기회를 가졌습니다. 이는 모든 게이트웨이 및 istiod를 포함합니다. 이것이 완전히 필요한지는 모르지만, 제가 한 작업입니다. 변경 사항을 적용한 모든 클러스터에서 트래픽을 제거한 다음 변경을 적용하고 다시 시작했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 변경 사항을 적용하는 데 한 가지 더: 제 네임 스페이스 중 일부에서 메트릭 레이블 업데이트가 즉시 적용되지 않는 것을 발견했습니다. 이스티오 프록시 컨테이너가 실제로 Envoy 필터에 변경 사항을 적용하기 전에 다시 시작해야 한다는 이유로 이해됩니다. 100% 사실인지는 모르지만, 다시 말하지만 — 제 네임 스페이스 중 일부에서 제 관측 결과였습니다. 이것이 이례적으로 느껴지지는 않지만, 변경 사항을 할 때 주의하고 확인하는 것이 좋습니다.
 
@@ -143,8 +198,18 @@ Kubernetes 클러스터가 서비스로의 매우 많은 요청을 허용한다�
 
 고 카디널리티 레이블을 다음과 같이 줄일 때:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 {
@@ -197,6 +262,17 @@ Kubernetes 클러스터가 서비스로의 매우 많은 요청을 허용한다�
 
 S3 저장 비용이 크게 절감되었고, 단 몇 일 만에 압도적인 성능 향상을 볼 수 있었습니다. 또한 Prometheus 인스턴스에서 리소스 사용량이 줄어들었습니다. 다른 말로 — 요청 당 메트릭에서 불필요한 레이블을 식별하고 제거하는 것은 절대적으로 가치 있는 작업입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 작성한 워크스루가 몇몇 프로메테우스 운영자분들께서 관측성 스택을 최적화하는데 도움이 되길 바라요!

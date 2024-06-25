@@ -3,13 +3,12 @@ title: "iOS 앱에서 코디네이터 패턴 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-CoordinatorPatterniniOSApp_0.png"
 date: 2024-06-22 23:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-CoordinatorPatterniniOSApp_0.png
 tag: Tech
 originalTitle: "Coordinator Pattern in iOS App"
 link: "https://medium.com/@bondarenkotatiana96/coordinator-pattern-in-ios-app-bbdee8946cc2"
 ---
-
 
 # 코디네이터란 무엇인가요?
 
@@ -19,7 +18,18 @@ iOS 개발에서 코디네이터는 앱의 탐색 흐름을 처리하는 객체�
 
 코디네이터는 보통 정의하는 클래스이며, 뷰 컨트롤러를 생성, 표시, 해제할 수 있는 메서드와 함께 정의됩니다. 앱의 흐름이 복잡한 경우에는 다른 코디네이터와 필요한 경우 통신할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # MVVM+C 패턴이란 무엇인가요?
 
@@ -29,7 +39,18 @@ MVVM+C(가끔 "Coordinator 패턴"이라고도 부릅니다)은 앱 내에서 �
 
 간단히 설명하면, 이 패턴에서 ViewModel은 데이터를 UI 요소에 바인딩하고 데이터가 변경되는 즉시 UI를 변경합니다. ViewController의 책임은 UI에서 발생하는 이벤트를 ViewModel에 알리는 것이므로 ViewModel이 해당 이벤트에 적절히 반응할 수 있습니다. 그리고 Coordinator가 네비게이션 로직을 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 패턴에 대한 훌륭한 기사가 있어요. 꼭 읽어보시길 추천합니다!
 
@@ -42,7 +63,18 @@ MVVM+C(가끔 "Coordinator 패턴"이라고도 부릅니다)은 앱 내에서 �
 
 ## 코드 예시
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에는 “MainCoordinator”가 네비게이션 스택에 “ViewController”를 푸시하는 간단한 예제가 있습니다.
 
@@ -54,7 +86,7 @@ MVVM+C(가끔 "Coordinator 패턴"이라고도 부릅니다)은 앱 내에서 �
 protocol Coordinator {
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController { get set }
-    
+
     func start()
 }
 
@@ -74,7 +106,7 @@ class MainCoordinator: Coordinator {
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: false)
     }
-    
+
     func goToSecondVC() {
         let secondVC = SecondViewController.instantiate()
         secondVC.coordinator = self
@@ -101,7 +133,17 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 읽어 주셔서 감사합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Coordinator Pattern in iOS App](/assets/img/2024-06-22-CoordinatorPatterniniOSApp_0.png)

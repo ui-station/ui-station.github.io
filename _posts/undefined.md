@@ -3,13 +3,12 @@ title: "undefined"
 description: ""
 coverImage: "/assets/img/undefined_0.png"
 date: 2024-05-18 15:18
-ogImage: 
+ogImage:
   url: /assets/img/undefined_0.png
 tag: Tech
 originalTitle: "undefined"
 link: "https://medium.com/@asbahishaq/freeze-in-ruby-what-exactly-is-it-used-for-defbbd523e48"
 ---
-
 
 Ruby에서 freeze는 무엇에 사용되는 거죠?
 
@@ -23,7 +22,18 @@ end
 
 이제 여기 문제점이 있는데, 실제로는 상수가 아니에요. 적어도 오래된 루비에는 그렇지 않아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 동결이 어디에 들어가는 걸까요?
 
@@ -33,7 +43,18 @@ end
 
 상수라는 단어 자체가 변하지 않는 것을 의미합니다. 하지만 위의 예제에서 FIRST_CONSTANT은 변경할 수 없는 것일까요? 새로운 루비 버전에서는 기본적으로 상수지만, 이전 버전에서는 상수로 만들려면 .freeze를 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 메서드 내에서 상수를 정의하면 어떻게 됩니까?
 
@@ -47,7 +68,18 @@ end
 
 메서드 내에 상수를 정의하려고 시도하면 해당 메서드가 호출될 때마다 생성되기 때문에 오류가 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 메소드 안에서 변수를 어떻게 동결하면 될까요?
 
@@ -68,7 +100,18 @@ def test_method
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드는 새로운 값을 출력할 것입니다.
 
@@ -78,7 +121,18 @@ test_method 메서드가 호출될 때마다, 루비는 상수 1에 대한 새 �
 
 이제 상수 1이 어떻게 동결되는지 설명해 드리겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def test_method

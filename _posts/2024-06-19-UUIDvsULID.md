@@ -3,13 +3,12 @@ title: "UUID 대 ULID 어떤 것을 사용해야 할까요"
 description: ""
 coverImage: "/assets/img/2024-06-19-UUIDvsULID_0.png"
 date: 2024-06-19 10:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-UUIDvsULID_0.png
 tag: Tech
 originalTitle: "UUID vs ULID"
 link: "https://medium.com/@kiarash.shamaii/uuid-vs-ulid-1073e38017a3"
 ---
-
 
 먼저 UUID와 ULID는 무엇인가요?
 
@@ -21,7 +20,18 @@ UUID (Universally Unique Identifier):
 - UUID의 주요 장점은 고유성, 분산 생성 및 플랫폼 독립성입니다.
 - 그러나 UUID는 본질적으로 날짜 순서로 정렬할 수 없기 때문에 특정 사용 사례에서는 단점일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ULID (Universally Unique Lexicographically Sortable Identifier):
 
@@ -46,7 +56,18 @@ ULID는 UUID의 단점을 해결하려고 합니다. 또한 128비트이므로 U
 
 어떤 식별자를 선택할지 결정할 때는 애플리케이션의 특정 요구 사항에 따라 UUID와 ULID 중에서 선택하게 됩니다. UUID는 더 널리 채택되고 더 많은 지원을 받지만, ULID는 시간순서대로 정렬할 수 있는 이점을 제공합니다. 여러분의 기사에서는 두 식별자 간의 트레이드오프, 특히 한 쪽이 다른 쪽보다 선호되는 사용 사례를 탐구할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # UUID 및 ULID의 Java 예제:
 
@@ -78,7 +99,18 @@ public class UUIDExample {
 
 ULID 예제:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -3,13 +3,12 @@ title: "아두이노와 SX1278 Ra-02 LORA 모듈 연결하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-InterfacingSX1278Ra-02LORAModulewithArduino_0.png"
 date: 2024-05-20 19:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-InterfacingSX1278Ra-02LORAModulewithArduino_0.png
 tag: Tech
 originalTitle: "Interfacing SX1278 (Ra-02) LORA Module with Arduino"
 link: "https://medium.com/@shathiralakdilu/interfacing-sx1278-ra-02-lora-module-with-arduino-a02b7b520fc7"
 ---
-
 
 # LoRa란 무엇인가요?
 
@@ -19,17 +18,39 @@ LoRa는 채프 확산 스펙트럼(CSS) 기술을 기반으로 한 무선 변조
 
 LoRaWAN은 Semtech의 LoRa 변조 체계를 사용하는 포인트 투 멀티포인트 네트워킹 프로토콜입니다. 이는 LoRa 변조를 기반으로 구축된 미디어 액세스 제어(MAC) 레이어 프로토콜입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로라 프로토콜은 기본적으로 두 개의 LoRa 모듈 간 통신을 지원하지는 않지만, "라디오헤드 패킷 메소드" 기술을 통해 LoRa 프로토콜을 준수하면서 두 개의 LoRa 모듈 간 통신이 가능합니다.
 
-"라디오헤드"는 패킷 라디오 라이브러리로서 미세한 마이크로프로세서들을 위한 완전한 객체 지향 라이브러리로서 패킷화된 메시지를 송수신하기 위한 기능을 제공합니다. 
+"라디오헤드"는 패킷 라디오 라이브러리로서 미세한 마이크로프로세서들을 위한 완전한 객체 지향 라이브러리로서 패킷화된 메시지를 송수신하기 위한 기능을 제공합니다.
 
 # 아두이노와 LoRa SX1278
 
 ![LoRa SX1278 with Arduino](/assets/img/2024-05-20-InterfacingSX1278Ra-02LORAModulewithArduino_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## LoRa SX1278 모듈
 
@@ -39,7 +60,18 @@ LoRaWAN은 Semtech의 LoRa 변조 체계를 사용하는 포인트 투 멀티포
 
 ## Arduino LoRa SX1278 송신기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아두이노 LoRa SX1278 송신기의 회로도가 아래에 제시되어 있습니다. LoRa SX1278은 5V와 호환되지 않으므로 5V를 공급하지 마세요. 그렇게 하면 보드가 손상될 수 있습니다. VCC 핀에 연결하려면 아두이노의 3.3V를 사용하세요.
 
@@ -49,7 +81,18 @@ LoRaWAN은 Semtech의 LoRa 변조 체계를 사용하는 포인트 투 멀티포
 
 ## 아두이노 LoRa SX1278 수신기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아두이노 LoRa SX1278 수신기의 회로도가 아래에 제공되었습니다. OLED 디스플레이가 추가로 연결되어 수신된 값을 확인할 수 있습니다.
 
@@ -59,7 +102,18 @@ LoRaWAN은 Semtech의 LoRa 변조 체계를 사용하는 포인트 투 멀티포
 
 ## 아두이노 IDE 준비
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하드웨어 설정을 완료한 후 다음 단계는 아두이노 IDE를 활용하는 것입니다. LoRa 모듈과 상호 작용할 때 Sandeep Mistry에 의해 개발된 포괄적인 LoRa 라이브러리를 사용할 수 있습니다.
 
@@ -69,7 +123,18 @@ LoRaWAN은 Semtech의 LoRa 변조 체계를 사용하는 포인트 투 멀티포
 
 ## 송신기 코드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```c
 #include <SPI.h>
@@ -135,7 +200,7 @@ void setup() {
   }
   delay(2000);
   display.clearDisplay();
-  display.display(); 
+  display.display();
 
   while (!Serial);
   Serial.println("LoRa Receiver");
@@ -162,7 +227,7 @@ void loop() {
   if (packetSize) {
 
     Serial.print("Received packet '");
-    
+
     digitalWrite(led, HIGH);
     delay(1000);
     display.clearDisplay();
@@ -174,14 +239,14 @@ void loop() {
     display.display();
 
     Serial.println(packetSize);
- 
+
     // read packet
     while (LoRa.available()) {
-   
+
     // Serial.print((char)LoRa.read());
-     
+
     message += (char)LoRa.read();
-   
+
     }
 
     // display.clearDisplay();

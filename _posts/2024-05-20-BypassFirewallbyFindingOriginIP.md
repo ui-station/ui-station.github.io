@@ -3,13 +3,12 @@ title: "방화벽 우회하기 오리진 IP 찾아내기"
 description: ""
 coverImage: "/assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_0.png"
 date: 2024-05-20 21:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_0.png
 tag: Tech
 originalTitle: "Bypass Firewall by Finding Origin IP"
 link: "https://medium.com/@ott3rly/bypass-firewall-by-finding-origin-ip-41ba984e1342"
 ---
-
 
 웹 애플리케이션 방화벽이 진짜 짜증날 때가 있죠. 보안 취약점을 알고 있는데도요! 대개 오래된, 정말 잘 관리되지 않는 웹사이트들이겠지요. 그래서 대부분의 경우에는 그 위에 WAF를 두는 게 더 간단하죠. 그 방어층을 우회할 방법이 있다고 말해 드릴까요 — 저는 원본 IP 주소를 찾는 방법을 말하는 것입니다. 여러 가지 방법을 탐색해볼 거예요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@ott3rly/bypass-firewall-by-finding-origin-ip-41ba984e
 
 ![바이패스 방화벽을 찾는 방법](/assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반 사용자는 방화벽을 통해 요청을 보내고, 방화벽은 해당 요청을 확인하여 유효한 요청인지 확인한 후 서버로 전달합니다. 그런 다음 서버는 해당 요청을 처리하고 다시 방화벽으로 전송한 후 방화벽은 이를 클라이언트에게 보냅니다. 이것은 원본 서버가 자신의 IP를 클라이언트에게 노출하고 싶지 않기 때문에 이를 수행합니다. 반면 해커(해골 아이콘으로 표시)는 중간자를 통해 가지 않고 직접 서버로 가길 원합니다. 예를 들어 SQL 인젝션, XSS 또는 다른 페이로드를 전송하는 경우 - 이러한 요청은 방화벽 규칙에 의해 차단될 수 있습니다. 이것이 WAF 우회하는 고난을 건너뛰기 좋은 아이디어인 이유입니다. 서버의 위치를 알고 원본 IP를 찾음으로써 WAF를 우회할 수 있습니다.
 
@@ -29,8 +39,18 @@ link: "https://medium.com/@ott3rly/bypass-firewall-by-finding-origin-ip-41ba984e
 
 항상 해야 할 첫 번째 작업은 대상이 웹 애플리케이션 방화벽을 실제로 가지고 있는지 확인하는 것입니다. 이를 확인하는 몇 가지 쉬운 방법이 있습니다. 그래서, 제가 자주 하는 첫 번째 작업은 대상을 핑하는 것입니다. 이 예시에서는 제 자신의 웹사이트를 핑해보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지1](/assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_1.png)
 
@@ -40,9 +60,18 @@ link: "https://medium.com/@ott3rly/bypass-firewall-by-finding-origin-ip-41ba984e
 
 다른 해결 방법은 Wappalyzer 플러그인을 사용하는 것입니다. 이 웹 사이트를 검사하면 Cloudflare를 사용하고 있다는 것을 보여줍니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot](/assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_3.png)
 
@@ -54,8 +83,18 @@ dnsrecon -d ott3rly.com
 
 This command will access DNS records, which could also indicate what WAF the server could use:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-BypassFirewallbyFindingOriginIP_4.png" />
 
@@ -65,7 +104,18 @@ CLI 도구를 좋아하지 않는다면 대안으로 who.is 웹사이트를 확�
 
 # 방법 #1 — Shodan
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음에 권장하는 것은 원본 IP를 찾는 방법으로 Shodan을 사용하는 것입니다. 기본 검색을 사용하여 많은 유출된 IP를 확인하는 것도 쉽습니다. 알려진 WAF 헤더, 응답 등이 포함되지 않도록 이러한 IP를 필터링할 수 있습니다. 일반적으로 200 상태 코드로 필터링합니다. 나는 SSL Shodan dorks를 사용하는 것을 좋아하며 위에서 언급한 필터를 함께 사용합니다:
 
@@ -75,7 +125,18 @@ Shodan 도킹 기술에 관심이 있다면 그에 관한 기사를 갖고 있�
 
 # 방법 #2 — Censys
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IP recon을 위한 또 다른 좋은 도구는 censys를 사용하는 것입니다. 대상을 검색 창에 붙여넣으면 매우 흥미로운 결과를 받을 수 있습니다:
 
@@ -85,7 +146,18 @@ IP recon을 위한 또 다른 좋은 도구는 censys를 사용하는 것입니�
 
 # 방법 #3 — Security Trails
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 제가 가장 선호하는 방법은 Security Trails를 사용하는 것입니다. 무료 계정을 만드는 것을 추천하며 자유롭게 사용할 수 있습니다. 이 도구는 특정 웹사이트의 IP 주소를 파악하는 데 좋습니다. 예를 들어, 제 웹사이트를 예로 들어서 역사적 데이터에 접근해 보겠습니다:
 
@@ -95,7 +167,18 @@ IP recon을 위한 또 다른 좋은 도구는 censys를 사용하는 것입니�
 
 # 마지막 팁
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 해당 방법들을 대상에 시도한다면, WAF 레이더 아래에서 감지되지 않을 가능성이 있습니다. 퍼징 XSS, SQL 인젝션과 같은 특정 공격을 수행해야할 때 더 쉽게 되는데, 그렇게 할 수 있습니다. 따라서 정교한 payload를 만들기 전에 원본 IP를 찾는 것을 강력히 권장합니다.
 

@@ -3,13 +3,12 @@ title: "ICD 코딩을 위한 LLM 탐험 - 파트 1"
 description: ""
 coverImage: "/assets/img/2024-05-17-ExploringLLMsforICDCodingPart1_0.png"
 date: 2024-05-17 19:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-ExploringLLMsforICDCodingPart1_0.png
 tag: Tech
 originalTitle: "Exploring LLMs for ICD Coding — Part 1"
 link: "https://medium.com/towards-data-science/exploring-llms-for-icd-coding-part-1-959e48b58b9e"
 ---
-
 
 ## LLM(Large Language Model)을 활용한 자동 진단 코딩 시스템 구축
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/exploring-llms-for-icd-coding-par
 
 임상 코딩은 일반적으로 의료 전문가가 수행합니다. 이러한 코더들은 다양한 진단과 수술을 위한 특정 코드가 포함된 복잡하고 종종 계층적인 코딩 용어를 탐색합니다. 따라서 코더들은 사용된 코딩 용어에 대한 깊은 이해와 경험을 가져야 합니다. 그러나 문서를 수동으로 코딩하는 것은 느릴 수 있고, 오류가 발생할 수 있으며, 상당한 인적 전문 지식이 필요하여 병목 현상이 발생할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 심층 학습은 임상 코딩 자동화에 중요한 역할을 할 수 있습니다. 복잡한 의료 정보를 코드로 추출하고 번역함으로써, 심층 학습 시스템은 인간 중심 시스템 내에서 가치 있는 도구로 작용할 수 있습니다. 이러한 시스템은 코더들을 지원하여 대량의 데이터를 신속하게 처리하고 정확성을 향상시킬 수 있습니다. 이는 행정 업무를 간소화하고 청구 오류를 줄이며 환자 치료 결과를 향상시킬 수 있습니다.
 
@@ -35,7 +45,18 @@ link: "https://medium.com/towards-data-science/exploring-llms-for-icd-coding-par
 - 결론
 - 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # ICD 코딩이란 무엇인가요?
 
@@ -45,7 +66,18 @@ link: "https://medium.com/towards-data-science/exploring-llms-for-icd-coding-par
 
 # 자동 ICD 코딩에서 어떤 도전들이 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ICD 코딩은 효과적으로 작동하기 위해 자동화된 시스템이 극복해야 할 여러 가지 도전이 있습니다.
 
@@ -55,7 +87,18 @@ ICD 코딩은 효과적으로 작동하기 위해 자동화된 시스템이 극�
 
 ## 새로운 ICD 코드에 대한 적응:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 번거로우시겠지만, 테이블 태그를 마크다운 형식으로 변경해드릴게요!
 
@@ -67,7 +110,18 @@ ICD 코딩은 효과적으로 작동하기 위해 자동화된 시스템이 극�
 
 ![이미지](/assets/img/2024-05-17-ExploringLLMsforICDCodingPart1_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "Contextualization"란 여기서 무엇을 의미할까요? 의학 노트를 다룰 때 진단을 맥락에 맞게 처리하는 것은 관련 세부사항과 관련된 정보 — 예를 들어 영향을 받는 신체 부위 및 질환의 증상 — 를 연결하여 진단을 완전히 특성화하는 것을 의미합니다. 일반적으로 이 작업은 관계 추출로 참조됩니다.
 
@@ -77,7 +131,18 @@ ICD 코딩은 효과적으로 작동하기 위해 자동화된 시스템이 극�
 
 ## 새로운 및 드문 ICD 코드에 대한 적응:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLMs는 견고한 제로샷 및 퓨샷 학습 능력을 보여주며, 적은 예시와 프롬프트에서 제공된 지침으로 새로운 작업에 적응할 수 있습니다. 검색 증강 생성 (RAG)은 미세 조정 없이도 LLM이 새로운 작업에 적응하기 위해 더 많은 맥락 정보에 접근할 수 있는 패러다임입니다. 이는 특히 기존의 훈련 데이터셋에서 자주 나타나지 않을 수 있는 새로운 및/또는 희귀한 ICD 코드에 LLM을 조정하는 데 유용합니다. 이를 단지 몇 가지 설명 또는 사용 사례로부터 합니다.
 
@@ -87,7 +152,18 @@ LLMs는 임상 분야에서의 제로샷 관계 추출에서 효과적으로 확
 
 # "Automated clinical coding using off-the-shelf large language models" 논문 탐색하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM을 ICD 코딩에 적용한 최근 연구를 탐색하다가, 특정한 세부 조정 없이 LLM을 활용한 ICD 코딩에 관한 매우 흥미로운 논문을 발견했습니다. 저자들은 LLM을 활용한 ICD 코딩을 위해 LLM-지도된 트리 탐색이라는 방법을 개발했습니다 [5].
 
@@ -97,7 +173,18 @@ ICD 용어는 계층적인 트리 구조입니다. 각 ICD 코드는 이 계층�
 
 LLM-지도된 트리 탐색에서는 탐색이 루트에서 시작되고 LLM을 사용하여 탐색할 가지를 선택하며, 모든 경로가 고갈될 때까지 반복적으로 계속합니다. 실제로 이 과정은 트리의 임의의 수준에서 모든 코드의 설명과 의료 노트를 LLM에 프롬프트로 제공하고, 해당 의료 노트에 대한 관련 코드를 식별하도록 요청하는 것으로 구현됩니다. 각 인스턴스에서 LLM에 의해 선택된 코드는 더 구체적으로 탐색되고 조사됩니다. 이 방법을 사용하면 가장 관련성이 높은 ICD 코드가 식별되며, 이후 임상 노트에 대한 예측 레이블로 할당됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시를 통해 이를 명확히 해보겠습니다. ICD 코드 1과 ICD 코드 2라는 두 개의 루트 노드를 가진 트리를 상상해보세요. 각 노드는 코드를 특성화하는 평문 설명을 가지고 있습니다. 초기 단계에서 LLM에게 의학 노트와 코드 설명이 제공되고 의학 노트와 관련된 코드를 식별하도록 요청됩니다.
 
@@ -109,7 +196,18 @@ LLM-지도된 트리 탐색에서는 탐색이 루트에서 시작되고 LLM을 
 - 더 나아가, 본 논문은 LLM이 프롬프트에 관련 정보가 주어질 때 대규모 출력 공간에 효과적으로 적응할 수 있으며, macro-average 지표 측면에서 드문 코드에서 PLM-ICD [6]를 앞지를 수 있다는 것을 보여줍니다.
 - 이 기술은 또한 파라메트릭 지식에 기초하여 의학 노트의 ICD 코드를 예측하도록 LLM에 직접 요청하는 기준선을 능가합니다. 이는 LLM을 임상 코딩 작업을 해결하기 위한 도구나 외부 지식과 통합하는 잠재력을 강조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단점
 
@@ -121,24 +219,35 @@ LLM-지도된 트리 탐색에서는 탐색이 루트에서 시작되고 LLM을 
 
 이 기술을 구현하여 그 작동 방식을 더 잘 이해해 봅시다. 논문에서 언급했듯이, 해당 논문은 평가를 위해 CodiEsp 테스트 세트를 사용합니다. 이 데이터셋은 스페인어 의학 노트와 이에 대응하는 ICD 코드로 구성되어 있습니다. 데이터셋에는 영어로 번역된 버전도 포함되어 있지만, 저자들은 스페인어 의학 노트를 GPT-3.5를 사용하여 영어로 번역하였으며, 이를 통해 사전 번역된 버전을 사용하는 것보다 성능이 약간 향상되었다고 주장했습니다. 이 기능을 복제하고 노트를 영어로 번역해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def construct_translation_prompt(medical_note):
     """
     Construct a prompt template for translating Spanish medical notes to English.
-    
+
     Args:
         medical_note (str): The medical case note.
-        
+
     Returns:
         str: A structured template ready to be used as input for a language model.
-    """    
+    """
     translation_prompt = """You are an expert Spanish-to-English translator. You are provided with a clinical note written in Spanish.
 You must translate the note into English. You must ensure that you properly translate the medical and technical terms from Spanish to English without any mistakes.
 Spanish Medical Note:
 {medical_note}"""
-    
+
     return translation_prompt.format(medical_note = medical_note)
 ```
 
@@ -192,7 +301,18 @@ def get_icd_codes(medical_note, model_name="gpt-3.5-turbo-0613", temperature=0.0
     return assigned_codes
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 논문과 비슷하게, ICD-10 트리에 액세스하는 simple_icd_10_cm 라이브러리를 사용합니다. 이를 통해 트리를 탐색하고, 각 코드에 대한 설명에 액세스하며 유효한 코드를 식별할 수 있습니다. 먼저, 트리의 첫 번째 수준에서 노드를 가져옵니다.
 
@@ -202,10 +322,10 @@ import simple_icd_10_cm as cm
 def get_name_and_description(code, model_name):
     """
     ICD-10 코드의 이름과 설명을 검색합니다.
-    
+
     Args:
         code (str): ICD-10 코드.
-        
+
     Returns:
         tuple: 형식화된 설명과 코드의 이름이 포함된 튜플을 반환합니다.
     """
@@ -250,14 +370,25 @@ prompt_template_dict = {"gpt-3.5-turbo-0613" : """[사례 노트]:
 </응답>
 
 [작업]:
-예시 응답 형식을 정확히 따르십시오. (예) 판단하기 전에 전체 설명과 (예|아니오) 판단을 입력한 후에 새 줄을 추가하십시오. 
+예시 응답 형식을 정확히 따르십시오. (예) 판단하기 전에 전체 설명과 (예|아니오) 판단을 입력한 후에 새 줄을 추가하십시오.
 다음 ICD-10 코드 설명을 고려하고 사례 노트에서 관련 언급이 있는지 확인하십시오.
 
 {code_descriptions}"""
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의료 기록과 코드 설명에 기반한 프롬프트를 지금 만들어 보겠습니다. 프롬프트 및 코딩에서 우리에게 이점은 GPT-3.5 및 Llama 2 모두와 상호 작용하기 위해 동일한 openai 라이브러리를 사용할 수 있다는 것입니다. 단, Llama-2가 deepinfra를 통해 배포되어야 합니다. deepinfra는 LLM에 요청을 보내기 위한 openai 형식도 지원합니다.
 
@@ -265,11 +396,11 @@ prompt_template_dict = {"gpt-3.5-turbo-0613" : """[사례 노트]:
 def construct_prompt_template(case_note, code_descriptions, model_name):
     """
     주어진 케이스 노트와 ICD-10 코드 설명을 평가하는 프롬프트 템플릿 구성
-    
+
     Args:
         case_note (str): 의료 케이스 노트
         code_descriptions (str): ICD-10 코드 설명을 단일 문자열로 포맷팅
-        
+
     Returns:
         str: 언어 모델에 입력으로 사용할 준비된 구조화된 템플릿
     """
@@ -280,12 +411,12 @@ def construct_prompt_template(case_note, code_descriptions, model_name):
 def build_zero_shot_prompt(input_note, descriptions, model_name, system_prompt=""):
     """
     시스템 및 사용자 역할에 대한 제로샷 분류용 프롬프트 빌드
-    
+
     Args:
         input_note (str): 입력 노트 또는 질의
         descriptions (list of str): ICD-10 코드 설명 리스트
         system_prompt (str): 선택적 초기 시스템 프롬프트 또는 지시
-    
+
     Returns:
         list of dict: 각 메시지의 역할 및 내용을 정의하는 구조화된 사전 목록
     """
@@ -304,13 +435,13 @@ def build_zero_shot_prompt(input_note, descriptions, model_name, system_prompt="
 def get_response(messages, model_name, temperature=0.0, max_tokens=500):
     """
     채팅-완성 API를 통해 지정된 모델로부터 응답을 획득
-    
+
     Args:
         messages (list of dict): API 입력용 구조화된 메시지 목록
         model_name (str): 쿼리할 모델의 식별자
         temperature (float): 응답의 무작위성을 제어하는 값, 0이면 결정론적
         max_tokens (int): 응답의 토큰 수 제한
-        
+
     Returns:
         str: 모델에서의 응답 메시지 내용
     """
@@ -323,7 +454,18 @@ def get_response(messages, model_name, temperature=0.0, max_tokens=500):
     return response.choices[0].message.content
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요, 우리가 출력물을 얻었어요! 이 응답으로부터, 이제 LLM이 추가적인 탐색을 위해 관련있는 노드들과 거부한 노드들을 식별하기 위해 각 코드 설명을 구문 분석합니다. 우리는 출력 응답을 새 줄로 나누고 각 응답을 분할하여 LLM의 각 코드 설명에 대한 예측을 식별합니다.
 
@@ -337,18 +479,18 @@ def remove_noisy_prefix(text):
 def parse_outputs(output, code_description_map, model_name):
     """
     모델 출력을 구문 분석하여 주어진 설명 매핑에 따른 ICD-10 코드를 확인합니다.
-    
+
     Args:
         output (str): 확인을 포함하는 모델 출력입니다.
         code_description_map (dict): 설명과 ICD-10 코드의 매핑입니다.
-        
+
     Returns:
         list of dict: 확인된 코드 및 해당 설명의 목록입니다.
     """
     confirmed_codes = []
     split_outputs = [x for x in output.split("\n") if x]
     for item in split_outputs:
-        try:                
+        try:
             code_description, confirmation = item.split(":", 1)
             if model_name == "meta-llama/Llama-2-70b-chat-hf":
                 code_description = remove_noisy_prefix(code_description)
@@ -393,9 +535,20 @@ while prompt_count < 50:
     prompt_count += 1
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이제 예측된 코드를 반복하며 각 코드가 "leaf" 코드인지 확인합니다. 이는 코드가 유효하고 할당 가능한 ICD 코드임을 보증하는 것입니다. 예측된 코드가 유효하면 LLM이 그 의료 노트에 대한 예측으로 간주합니다. 유효하지 않으면 상위 코드에 추가하여 ICD 트리를 더 탐색하기 위해 자식 노드를 얻습니다. 더 이상 탐색할 상위 코드가 없을 경우 루프를 탈출합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이제 예측된 코드를 반복하며 각 코드가 "leaf" 코드인지 확인합니다. 이는 코드가 유효하고 할당 가능한 ICD 코드임을 보증하는 것입니다. 예측된 코드가 유효하면 LLM이 그 의료 노트에 대한 예측으로 간주합니다. 유효하지 않으면 상위 코드에 추가하여 ICD 트리를 더 탐색하기 위해 자식 노드를 얻습니다. 더 이상 탐색할 상위 코드가 없을 경우 루프를 탈출합니다.
 
 이론적으로 의료 노트 당 LLM 호출 수는 임의로 높을 수 있으며, 알고리즘이 많은 노드를 탐색하는 경우 지연 시간이 증가할 수 있습니다. 저자는 의료 노트 당 최대 50회 프롬프트/LLM 호출로 처리를 종료하는 최대 수를 시행했습니다. 이 한계는 우리가 구현에서도 채택합니다.
 
@@ -403,7 +556,18 @@ while prompt_count < 50:
 
 이제 GPT-3.5와 Llama-2를 LLM으로 사용하여 트리 탐색 알고리즘의 결과를 평가할 수 있습니다. 우리는 알고리즘의 성능을 마이크로-평균 및 매크로-평균 정밀도, 재현율 및 F1 점수를 통해 평가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![ExploringLLMsforICDCodingPart1_2](/assets/img/2024-05-17-ExploringLLMsforICDCodingPart1_2.png)
 
@@ -414,7 +578,18 @@ while prompt_count < 50:
 
 앞서 언급했듯이, 이 구현은 몇 가지 미세한 차이점을 가지고 있어 최종 성능에 영향을 미칩니다. 이 구현이 원본 논문과 어떻게 다른지에 대한 보다 자세한 내용은 링크된 저장소를 참조해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -424,7 +599,18 @@ LLMs를 임상 코딩을 위한 대리자로 활용하는 것이 성능을 더�
 
 ## 감사의 글
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법을 평가하는 데 도움을 준 이 논문의 주 저자 Joseph에게 큰 감사를 표합니다!
 
@@ -434,7 +620,18 @@ LLMs를 임상 코딩을 위한 대리자로 활용하는 것이 성능을 더�
 
 [2] Johnson, A. E., Pollard, T. J., Shen, L., Lehman, L. W. H., Feng, M., Ghassemi, M., … & Mark, R. G. (2016). MIMIC-III, a freely accessible critical care database Sci. Data, 3(1), 1.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [3] Agrawal, M., Hegselmann, S., Lang, H., Kim, Y., & Sontag, D. (2022). 대형 언어 모델은 소수의 적은 데이터로도 임상 정보를 추출합니다. arXiv 사전 인쇄 arXiv:2205.12689.
 
@@ -444,7 +641,18 @@ LLMs를 임상 코딩을 위한 대리자로 활용하는 것이 성능을 더�
 
 [6] Huang, C. W., Tsai, S. C., & Chen, Y. N. (2022). 사전 훈련된 언어 모델로 자동 ICD 코딩하기: PLM-ICD. arXiv 사전 인쇄 arXiv:2207.05289.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Miranda-Escalada, A., Gonzalez-Agirre, A., Armengol-Estapé, J., & Krallinger, M. (2020). CLEF (Working Notes), 2020에서 CodiEsp Track의 비영어 임상 사례에 대한 주석, 가이드라인 및 솔루션에 대한 개요.
 

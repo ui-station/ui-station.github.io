@@ -3,53 +3,84 @@ title: "Lakeview 대시보드를 통한 관측력 시리즈 - 기사 1 DBSQL 웨
 description: ""
 coverImage: "/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_0.png"
 date: 2024-05-18 16:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_0.png
 tag: Tech
 originalTitle: "Lakeview Dashboards for Observability Series — Article #1 DBSQL Warehouse Advisor"
 link: "https://medium.com/dbsql-sme-engineering/lakeview-dashboards-for-observability-series-article-1-dbsql-warehouse-advisor-f73ec8df1060"
 ---
 
-
 표 태그를 Markdown 형식으로 변경해보세요.
-
 
 ![Lakeview Dashboard](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_0.png)
 
 ## 저자:
+
 Cody Austin Davis
 
 # Lakeview 대시보드 템플릿 시리즈 - 기사 1 - DBSQL Warehouse Advisor
 
 ## 소개
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-Lakeview 대시보드는 Databricks SQL에서 사용할 수 있는 새로운 가벼운 대시보드 도구입니다. 막 출시했음에도 불구하고 이미 놀라운 성능을 자랑하는데요. 추가 비용이나 관리 부담 없이 빠르게 대시보드를 개발하고 공유할 수 있는 기능을 제공합니다. 예를 들어, 대부분의 고객이 필요로 하는 가장 중요한 측면 중 하나는 데이터 플랫폼의 가시성입니다. 대부분의 고객이 특정 사용 사례에 대한 모니터링과 가시성을 필요로 하기 때문에 나는 Lakeview 템플릿 중 일부를 공개하여 누구나 가져다 쓰고 자신의 환경에서 사용할 수 있도록 했어요. 여러분의 노력을 아낄 수 있게끔 도와주고 Lakeview 대시보드가 무엇을 할 수 있는지 보여줄 수 있도록 했죠! 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-이 기사에서는 DBSQL Warehouse Advisor 템플릿을 공유하고 소개할 거에요. 대시보드의 4개 섹션에 대해 간단히 검토하고 사용하는 방법을 가르쳐 드리며 각 섹션을 통해 어떤 핵심 질문을 해결할 수 있는지 논의할 거에요. 
+Lakeview 대시보드는 Databricks SQL에서 사용할 수 있는 새로운 가벼운 대시보드 도구입니다. 막 출시했음에도 불구하고 이미 놀라운 성능을 자랑하는데요. 추가 비용이나 관리 부담 없이 빠르게 대시보드를 개발하고 공유할 수 있는 기능을 제공합니다. 예를 들어, 대부분의 고객이 필요로 하는 가장 중요한 측면 중 하나는 데이터 플랫폼의 가시성입니다. 대부분의 고객이 특정 사용 사례에 대한 모니터링과 가시성을 필요로 하기 때문에 나는 Lakeview 템플릿 중 일부를 공개하여 누구나 가져다 쓰고 자신의 환경에서 사용할 수 있도록 했어요. 여러분의 노력을 아낄 수 있게끔 도와주고 Lakeview 대시보드가 무엇을 할 수 있는지 보여줄 수 있도록 했죠!
 
-먼저, 전반적으로, 이 대시보드가 무엇을 하는지와 어떤 부분에 초점을 맞추는지에 대해 알아볼까요. 공유될 여러 템플릿 중 첫 번째로, 템플릿을 언제, 어떻게 사용할지에 대한 맥락을 제시하고자 합니다. 
+이 기사에서는 DBSQL Warehouse Advisor 템플릿을 공유하고 소개할 거에요. 대시보드의 4개 섹션에 대해 간단히 검토하고 사용하는 방법을 가르쳐 드리며 각 섹션을 통해 어떤 핵심 질문을 해결할 수 있는지 논의할 거에요.
 
-DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하우스에 대해 필요한 모든 정보를 제공합니다. warehouse_events, billing, 그리고 query_history (system table의 프라이빗 프리뷰, API는 이미 GA에서 사용 가능) 시스템 테이블을 자동으로 구문 분석하여 다음과 같은 작업을 지원합니다: 
+먼저, 전반적으로, 이 대시보드가 무엇을 하는지와 어떤 부분에 초점을 맞추는지에 대해 알아볼까요. 공유될 여러 템플릿 중 첫 번째로, 템플릿을 언제, 어떻게 사용할지에 대한 맥락을 제시하고자 합니다.
+
+DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하우스에 대해 필요한 모든 정보를 제공합니다. warehouse_events, billing, 그리고 query_history (system table의 프라이빗 프리뷰, API는 이미 GA에서 사용 가능) 시스템 테이블을 자동으로 구문 분석하여 다음과 같은 작업을 지원합니다:
 
 - 섹션 1 — 요금 모니터 — 시스템 내의 billing.usage 시스템 테이블을 모니터링하여 시간별 비용을 요약합니다. 웨어하우스가 너무 빨리 확장되는 시점을 보여주는 내장된 탄력 지표를 제공합니다. BI 워크로드는 특히 변동이 심할 수 있으므로, 부드러운 탄력 지표는 비용 경보에 대한 더 나은 측정 항목을 제공할 수 있습니다. 이 쿼리를 사용하여 경보를 설정할 수 있습니다!
-- 섹션 2 — 크기 조정 모니터 — warehouse_events 시스템 테이블을 모니터링하여 웨어하우스의 크기 조정 비용과 효율성을 요약합니다. 변동이 심하고 고 동시성 워크로드의 사용량을 예측하고 추정하기 어려울 수 있습니다. 이 시각화를 사용하면 웨어하우스가 다른 크기 조정 수준에서 얼마나 시간을 보냈는지 요약하고 계획하기 쉬워집니다. 
-- 섹션 3 — 쿼리 성능 분석 — 이것은 매우 중요한 섹션입니다! (private preview 중인) query_history 시스템 테이블을 사용하여 웨어하우스의 전반적인 성능을 요약하고 문제가 되는 쿼리를 찾거나 병목 현상을 식별하며 SLAs를 추적하고 웨어하우스 시간이 어디에 소비되었는지 파악할 수 있습니다. 이 대시보드 하나에 고수준 모니터링부터 개별 쿼리 성능 튜닝까지 모두 담겨 있어요. 
+- 섹션 2 — 크기 조정 모니터 — warehouse_events 시스템 테이블을 모니터링하여 웨어하우스의 크기 조정 비용과 효율성을 요약합니다. 변동이 심하고 고 동시성 워크로드의 사용량을 예측하고 추정하기 어려울 수 있습니다. 이 시각화를 사용하면 웨어하우스가 다른 크기 조정 수준에서 얼마나 시간을 보냈는지 요약하고 계획하기 쉬워집니다.
+- 섹션 3 — 쿼리 성능 분석 — 이것은 매우 중요한 섹션입니다! (private preview 중인) query_history 시스템 테이블을 사용하여 웨어하우스의 전반적인 성능을 요약하고 문제가 되는 쿼리를 찾거나 병목 현상을 식별하며 SLAs를 추적하고 웨어하우스 시간이 어디에 소비되었는지 파악할 수 있습니다. 이 대시보드 하나에 고수준 모니터링부터 개별 쿼리 성능 튜닝까지 모두 담겨 있어요.
 - 섹션 4 — 쿼리 비용/시간 할당 요약 — 웨어하우스를 사용하여 내부 또는 외부 고객에게 서비스를 제공하고, 소비 기반의 가격 모델에 따라 그들에게 요금을 청구해야 한다면, 이 섹션을 사용하여 쿼리, 사용자 및 쿼리 태그 수준에서 웨어하우스 시간을 할당할 수 있습니다! 데이터 제품 및 많은 하위 팀에 서비스를 제공하는 중앙화된 데이터팀에게 매우 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-요약을 보여줬으니 이제 섹션을 살펴보겠습니다. 함께 따라오고 싶다면 템플릿을 다운로드하고 대시보드를 환경에 가져와서 데이터웨어하우스 ID를 입력하면 됩니다!* 템플릿을 가져오면 전체 대시보드 시각화와 대시보드를 구동하는 전체 백엔드 쿼리와 매개변수를 확인할 수 있습니다. 이 템플릿은 여러분의 특정한 사용 사례에 맞게 필요한 대로 수정하고 확장할 수 있습니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-- *참고: query_history를 위한 시스템 테이블 비공개 미리보기 상태에 있지 않은 경우, query history API를 사용하여 공개 미리보기가 될 때까지 해당 테이블을 생성할 수도 있습니다.
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+요약을 보여줬으니 이제 섹션을 살펴보겠습니다. 함께 따라오고 싶다면 템플릿을 다운로드하고 대시보드를 환경에 가져와서 데이터웨어하우스 ID를 입력하면 됩니다!\* 템플릿을 가져오면 전체 대시보드 시각화와 대시보드를 구동하는 전체 백엔드 쿼리와 매개변수를 확인할 수 있습니다. 이 템플릿은 여러분의 특정한 사용 사례에 맞게 필요한 대로 수정하고 확장할 수 있습니다.
+
+- \*참고: query_history를 위한 시스템 테이블 비공개 미리보기 상태에 있지 않은 경우, query history API를 사용하여 공개 미리보기가 될 때까지 해당 테이블을 생성할 수도 있습니다.
 
 # 섹션 1 — 요금 모니터
 
 ![이미지](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 DBSQL Warehouse Advisor의 청구 모니터입니다. 이 섹션은 간단합니다. Warehouse Id를 매개 변수에 입력하고 날짜 범위를 선택하여 DBUs 및 달러의 추이를 시간에 따라 볼 수 있습니다. 또한 해당 시간 프레임 내의 총 비용에 대한 큰 숫자 요약도 제공됩니다. 또한 DBSQL Warehouse의 목록 요금과 다른 경우에 사용할 클러스터 단위 가격 매개 변수도 있습니다.
 
@@ -59,7 +90,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 이것은 앞서 소개한 "높은 증가 % 장벽" 매개 변수와 결합됨으로써, 사용 패턴을 "높은 사용 증가 추세"로 판단하고 그것을 강조하여 빨간색으로 표시하는 임계값을 정의할 수 있습니다. 그런 다음 최근 값 쿼리에 LIMIT 1을 추가하여 비용 추세에 대한 경보를 설정하는 데 사용할 수 있는 정확한 기본 SQL 쿼리를 사용할 수 있습니다. 이 지표 차트는 "이전 기간보다 24시간 이동평균 증가량이 20% 이상 증가할 때 보여줘"라고 말합니다. 이는 이 기능이 종종 발생하는 일시적인 변동보다 지속적이고 심각한 비용 증가에 대한 경보를 보내는 데 좋은 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 섹션 2 — 데이터웨어하우스 동시성 스케일링 요약
 
@@ -69,8 +111,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 ...그리고 이를 예산 및 장기적인 워크로드 / 데이터웨어하우스 비용에 대한 기대로 전환하기 어렵습니다. 더구나, 클러스터 크기, 동시성 설정, 쿼리 성능 변경 시 어떤 일이 발생하는지 확인하기 어렵습니다. 이 탭을 사용하면 더 명확한 예측과 사용량에 대한 기대를 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Dashboard](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_4.png)
 
@@ -80,8 +132,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 워크로드를 최적화하거나 POC를 실행하거나 사용 사례를 추가할 경우, 이 대시보드를 사용하여 사용 패턴에 미치는 영향을 정확히 파악하여 미리 계획할 수 있습니다. 이 부분은 작지만 굉장히 유용합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 섹션 3 — 쿼리 성능 분석
 
@@ -91,8 +153,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 ![LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_5](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Lakeview Dashboards for Observability Series Article](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_6.png)
 
@@ -102,8 +174,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 예를 들어, Databricks SQL로 구동되는 Downstream 데이터 애플리케이션이 있다고 가정해보겠습니다. 사용자들은 앱이 대부분의 쿼리를 1~2초 이내 또는 그 이하로 수행할 것으로 예상하며, 10초 이상 걸리는 것은 용인할 수 없습니다. 쿼리 실행 시간 차트의 P99 및 P95 백분위 지표를 확인하여 SLA 준수를 먼저 확인할 수 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_8.png)
 
@@ -113,7 +195,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 이제 필요한 SLA 범위 내에 있습니다. 그러나 만약 우리의 P99가 3초였다면 어떨까요? 그럴 경우 문제가 생길 수 있습니다. 먼저 할 일은 위의 대시보드에서 쿼리 대기 시간을 살펴보는 것입니다. 대기 시간은 각 쿼리가 실행할 수 있는 슬롯을 기다리며 대기하는 시간입니다. SLA를 준수할 때는 대기가 괜찮지만 그렇지 않은 경우, 소중한 시간이 낭비되고 더 많은 동시성이 필요합니다! 이 시각화는 평균 쿼리 실행 시간과는 다르게 해석되며, 보통 대기 시간이 낮아야 합니다(~0초). 1초보다 훨씬 높아지면 쿼리가 쌓여서 대기열에 앉아있기 시작한다는 것을 의미하며, 이는 우리의 SLA에 영향을 미칩니다. 갱신된 3초 SLA를 고려한 우리 예시에서, 우리의 P99는 현재 5초이며, 이는 허용할 수 없는 수준입니다. 위 시각화에서 많은 쿼리가 거의 2초씩 대기한다는 것을 볼 수 있습니다! 동시 용량을 늘리는 것이 SLA에 더 가까워지는 데 도움이 될 수 있음을 보여줍니다 (DBSQL의 최소 최대 클러스터).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **기억하세요 — 원하는 SLA에서 시작해서 거꾸로 진행하세요.**
 
@@ -123,8 +216,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 우리는 쿼리 성능을 상태, 소스 및 문장 유형별로 시간에 따라 추세 분석할 수 있고, 심지어 쿼리 태그별 평균 쿼리 실행 시간도 모니터링할 수 있습니다. 대시보드에 내장된 기능이며, 다음 서명을 가진 템플릿된 코멘트를 찾습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 회사의 특정 사용 사례에 중점을 두어 전체 성능 분석에 도움을 줄 수 있습니다. 특히 ETL 워크로드에서 중요합니다.
 
@@ -132,8 +235,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 ![image](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_11.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래로 내려가면 각 쿼리당 할당된 비용을 계산하고, 쿼리 태그별로 그룹화할 수 있습니다 (기본적으로 위에서 정의되었지만, 필요에 맞게 이 템플릿을 변경할 수 있습니다!). 또한 성능 문제의 근본 원인을 확인하기 위해 쿼리 수준의 세부 정보를 전체 출력할 수도 있습니다. 대시보드에서는 사용자별 할당된 창고 비용, 사용자별 계산 사용량 % 및 사용자별 쿼리 수를 볼 수도 있습니다.
 
@@ -143,7 +256,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 # 섹션 4 — 쿼리 비용 할당 요약
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 섹션은 외부 데이터 제품을 가진 고객이 자신들의 데이터 제품에 합리적인 가격 모델을 개발하기 위해 쿼리 수준의 비용 가시성을 원하는 경우에 대해 우리가 자주 받는 질문입니다.
 
@@ -153,7 +277,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 요약 뿐만 아니라 대시보드에는 데이터 제품에 대해 세부적인 쿼리 수준 리포트가 포함되어 있어, 당신의 데이터 제품에 대한 세부적인 가격 책정을 할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_14.png" />
 
@@ -163,7 +298,18 @@ DBSQL Warehouse Advisor Lakeview 대시보드는 DBSQL에서 데이터 웨어하
 
 데이터 웨어하우스 실행 시간 = 시간 창 동안의 모든 쿼리 실행의 총 실행 시간
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쿼리 할당 비용 = 쿼리 실행 시간 / 데이터베이스 실행 시간
 
@@ -173,7 +319,18 @@ DBSQL Advisor 템플릿 외에도, DBT 데이터베이스에서 DBSQL로 푸시�
 
 ![이미지](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_15.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 쿼리 분석의 섹션 3과 4에서는 dbt 대상, 프로필 이름 또는 노드 ID와 같은 친숙한 메타데이터로 성능 및 쿼리 할당 지표를 분석할 수 있습니다. 이를 통해 DBT 모델에 대한 리소스가 정확히 어디에 사용되고 있는지 확인할 수 있습니다.
 
@@ -183,7 +340,18 @@ DBSQL Advisor 템플릿 외에도, DBT 데이터베이스에서 DBSQL로 푸시�
 
 ![이미지3](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_18.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 대시보드를 사용하면 DBSQL의 Lakeview와 함께 DBT 파이프라인을 이해하고 모니터링하는 데 상당히 도움을 받을 수 있습니다! 내부 분석부터 완전한 데이터 제품 제작까지, 데이터 플랫폼에 대한 완전한 제어 및 시각성을 갖게 됩니다.
 
@@ -193,7 +361,18 @@ DBSQL Advisor 템플릿 외에도, DBT 데이터베이스에서 DBSQL로 푸시�
 
 대시보드를 지원하는 SQL 논리 및 시각/매개변수 선택의 원천에 대해 깊이 파고들어 설명을 듣고 싶다면, 의견을 남겨주시면 감사하겠습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Lakeview Templates:
 
@@ -208,7 +387,17 @@ DBSQL Advisor 템플릿 외에도, DBT 데이터베이스에서 DBSQL로 푸시�
 - “파일에서 대시보드 가져오기”를 선택하고 다운로드한 JSON 템플릿을 업로드합니다.
 - 대시보드를 로드하고 사용 중인 데이터 웨어하우스 ID를 입력합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-LakeviewDashboardsforObservabilitySeriesArticle1DBSQLWarehouseAdvisor_19.png)

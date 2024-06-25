@@ -3,13 +3,12 @@ title: "안드로이드 프로젝트에 Kotlin Multiplatform Mobile KMM을 원�
 description: ""
 coverImage: "/assets/img/2024-05-20-SeamlesslyIntegrateKotlinMultiplatformMobileKMMintoYourAndroidProject_0.png"
 date: 2024-05-20 15:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SeamlesslyIntegrateKotlinMultiplatformMobileKMMintoYourAndroidProject_0.png
 tag: Tech
 originalTitle: "Seamlessly Integrate Kotlin Multiplatform Mobile (KMM) into Your Android Project"
 link: "https://medium.com/@jyotibhambhu/seamlessly-integrate-kotlin-multiplatform-mobile-kmm-into-your-android-project-efa76004ec46"
 ---
-
 
 <img src="/assets/img/2024-05-20-SeamlesslyIntegrateKotlinMultiplatformMobileKMMintoYourAndroidProject_0.png" />
 
@@ -19,7 +18,18 @@ Kotlin Multiplatform Mobile (KMM)은 Android 및 iOS 애플리케이션 간에 �
 
 필수 준비물:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 기존 Android 앱.
 
@@ -30,7 +40,18 @@ Kotlin Multiplatform Mobile (KMM)은 Android 및 iOS 애플리케이션 간에 �
 
 <img src="/assets/img/2024-05-20-SeamlesslyIntegrateKotlinMultiplatformMobileKMMintoYourAndroidProject_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 Android Studio에서 KMM 공유 모듈을 찾을 수 없다면 걱정하지 마세요. 설정에 숨겨져 있습니다.
 
@@ -43,7 +64,18 @@ Kotlin Multiplatform Mobile (KMM)은 Android 및 iOS 애플리케이션 간에 �
 implementation project(":shared")
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 3: Kotlin DSL용 빌드 스크립트 업데이트(필요한 경우):
 
@@ -67,7 +99,18 @@ kotlin {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 의존성 {
@@ -82,7 +125,18 @@ kotlin {
 
 ## 단계4: 앱에서 공유 코드 사용:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이제 KMM 모듈의 공유 코드를 Android 프로젝트에서 사용할 수 있습니다. 예를 들어 Android 액티비티나 프래그먼트에서 필요한 대로 공유 클래스 및 함수를 가져올 수 있습니다.
 
@@ -92,6 +146,17 @@ kotlin {
 
 이러한 단계를 따라서 기존 Android 프로젝트에 KMM을 성공적으로 통합할 수 있으며, Android와 기타 플랫폼 간에 코드를 원할하게 공유하여 개발 프로세스를 강화하고 노력의 중복을 줄일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 시리즈의 내용을 기대해주세요. KMM을 기존 iOS 프로젝트에 통합하는 방법을 살펴볼 예정입니다.

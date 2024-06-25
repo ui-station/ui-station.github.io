@@ -3,14 +3,12 @@ title: "당신의 안드로이드 앱에 다국어 지원다국어 추가하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-AddMultilingualsupportMultipleLanguagestoyourAndroidApp_0.png"
 date: 2024-05-20 17:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AddMultilingualsupportMultipleLanguagestoyourAndroidApp_0.png
 tag: Tech
 originalTitle: "Add Multilingual support (Multiple Languages) to your Android App"
 link: "https://medium.com/proandroiddev/add-multilingual-support-multiple-languages-to-your-android-app-4c0fd23cbdb8"
 ---
-
-
 
 ![다국어 지원 이미지](/assets/img/2024-05-20-AddMultilingualsupportMultipleLanguagestoyourAndroidApp_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/proandroiddev/add-multilingual-support-multiple-langua
 
 그러니 다국어 세계를 위해 함께 만들어봅시다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. 문자열 리소스를 체계화하세요.
 
@@ -30,24 +38,48 @@ link: "https://medium.com/proandroiddev/add-multilingual-support-multiple-langua
 올바르게
 
 ```js
-Text(stringResources(R.string.follow_me))
+Text(stringResources(R.string.follow_me));
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Using strings.xml, we will have a common place for all our string resources and we can then support multiple languages by adding more strings.xml files.
 
 ## 2. Add Multiple Languages
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미 모든 문자열 리소스를 저장할 수 있는 곳이 있습니다. 이제 모든 문자열 리소스를 다른 지원되는 언어로 번역하기만 하면 됩니다.
 
 ```js
 //힌디어 문자열 리소스 파일 예제
 <resources>
-    <string name="subscribe_to_sagar_malhotra">सागर मल्होत्रा की सदस्यता लें</string>
-    <string name="language">हिन्दी</string>
+  <string name="subscribe_to_sagar_malhotra">
+    सागर मल्होत्रा की सदस्यता लें
+  </string>
+  <string name="language">हिन्दी</string>
 </resources>
 ```
 
@@ -55,7 +87,18 @@ Using strings.xml, we will have a common place for all our string resources and 
 
 ![이미지](/assets/img/2024-05-20-AddMultilingualsupportMultipleLanguagestoyourAndroidApp_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. 언어 변경 트리거
 
@@ -72,8 +115,18 @@ onClick = {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 귀하는 해당 언어의 ISO-639 코드를 전달하여 OS에 언어 환경 설정 변경을 알릴 필요가 있습니다.
 
@@ -85,19 +138,44 @@ onClick = {
 class MainActivity : AppCompatActivity() { ... }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AppCompatActivity를 확장한 후에도, 특정 활동을 위해 지원되는 테마를 변경해야 합니다.
 
 ```js
-<style name="Theme.MultilingualApp" parent="Theme.AppCompat.Light.NoActionBar" />
+<style
+  name="Theme.MultilingualApp"
+  parent="Theme.AppCompat.Light.NoActionBar"
+/>
 ```
 
 ## 4. 로케일 설정 저장
 
 Android 12 이하 버전에서는 선택한 언어 환경 값을 수동으로 저장하거나 AndroidX가 로케일 환경을 스스로 처리하도록 AndroidManifest에서 이 구성을 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 <service//Inside application tag
@@ -116,14 +194,24 @@ In Android 13 and above, the Android OS also supports changing the Per-App Langu
 
 <img src="/assets/img/2024-05-20-AddMultilingualsupportMultipleLanguagestoyourAndroidApp_2.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 귀하의 응용 프로그램이 여러 언어도 지원한다는 것을 운영 체계에 알리려면 AndroidManifest 파일에 필요한 구성을 추가하십시오.
 
 ```js
 // application 태그에 다음을 추가하세요
-android:localeConfig="@xml/locale_config"
+android: localeConfig = "@xml/locale_config";
 ```
 
 local_config.xml 파일에 모든 지원하는 언어를 정의하세요.
@@ -138,7 +226,18 @@ local_config.xml 파일에 모든 지원하는 언어를 정의하세요.
 </locale-config>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 앱에서 시스템 설정에서 언어를 변경하는 것도 지원하게 됩니다.
 
@@ -148,12 +247,21 @@ local_config.xml 파일에 모든 지원하는 언어를 정의하세요.
 
 AndroidManifest를 사용하여 이 기본 동작을 방지할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 // 특정 활동 태그에 다음을 추가하십시오
 android:configChanges="layoutDirection|locale"
-
 
 ## 비디오:
 

@@ -3,14 +3,12 @@ title: "2024년 데이타브릭스 데이터  AI 서밋에서의 소감들"
 description: ""
 coverImage: "/assets/img/2024-06-19-ReflectionsfromDatabricksDataAISummit2024_0.png"
 date: 2024-06-19 12:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-ReflectionsfromDatabricksDataAISummit2024_0.png
 tag: Tech
 originalTitle: "Reflections from Databricks Data + AI Summit 2024"
 link: "https://medium.com/@haricharanshivram/reflections-from-databricks-data-ai-summit-2024-a59a870ceabd"
 ---
-
-
 
 ![Reflections from Databricks Data + AI Summit 2024](/assets/img/2024-06-19-ReflectionsfromDatabricksDataAISummit2024_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@haricharanshivram/reflections-from-databricks-data-ai
 
 이 개인적인 관점에서, 나에게 정말 기억에 남는 이벤트로 만든 몇 가지 주요 포인트와 영감을 주는 이야기들을 탐구해보겠어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 주요 연설:
 
@@ -33,7 +41,18 @@ link: "https://medium.com/@haricharanshivram/reflections-from-databricks-data-ai
 
 # 기술적 발표:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Databricks에서는 상당수의 릴리스가 있었는데, 그중 몇 가지를 발견해서 흥미롭다고 생각했습니다. 몇 개를 소개해 드리겠습니다. 뭔가 놓친 부분이 있을 수 있으니 양해 부탁드립니다.
 
@@ -50,7 +69,18 @@ LakeFlow 엔지니어링 디렉터와 쿠키 광고에 관한 마케팅 캠페�
 
 # 특별한 언급 — Compound AI Systems Workshop:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 것들은 키노트 중에 고수준 발표/데모였습니다. 우리가 다 알다시피, "악마는 세부 사항에 있다"고 합니다. 그러한 세션 중에서 더 자세히 다루는 유용한 세션들이 몇 가지 있었습니다.
 
@@ -63,7 +93,18 @@ LakeFlow 엔지니어링 디렉터와 쿠키 광고에 관한 마케팅 캠페�
 
 가죽자켓을 입은 CEO가 정확하게 지적했습니다 - "무엇이든 시작해보세요. 이것은 빠르게 움직이는 기차입니다. 지수적인 추세를 기다려보거나 관찰하고 있기 원치 않으실 겁니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저번 주에 이 서밋 전에, 제가 따라가며 읽어본 상대적인 AI 구현을 강화하기 위해 Snowflake가 발표한 멋진 기능들에 대해 알아보았어요. 이 글을 큰 생각과 함께 마무리 짓는군요 — "다음 단계는 너야, Snowflake. 이미!"
 

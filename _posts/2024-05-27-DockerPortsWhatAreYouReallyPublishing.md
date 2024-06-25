@@ -3,13 +3,12 @@ title: "도커 포트 정말로 노출되는 것은 무엇인가요"
 description: ""
 coverImage: "/assets/img/2024-05-27-DockerPortsWhatAreYouReallyPublishing_0.png"
 date: 2024-05-27 17:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-DockerPortsWhatAreYouReallyPublishing_0.png
 tag: Tech
 originalTitle: "Docker Ports: What Are You Really Publishing?"
 link: "https://medium.com/@caring_lion_hedgehog_829/docker-ports-what-are-you-really-publishing-df473669093c"
 ---
-
 
 ## 포트나 보안에 대해서만 하는 것이 아니라, 키보드 뒤에 있는 사람들이 중요해요.
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@caring_lion_hedgehog_829/docker-ports-what-are-you-re
 
 하지만 처음 써보는 사람들에게는 방화벽 설정을 모두 우회하고 컨테이너를 공개 인터넷에 노출시키는 일이 무서울 수 있어요. 최근 Docker 네트워킹 문서를 읽다가 페이지에 큰 주황색 경고문을 보고, Docker를 처음 사용했을 때 놀랐던 일을 떠올렸어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 도커의 이 특정 문제에 초점을 맞추고 있지만, 제 제기 사항은 실제로 도커와는 별개입니다. 도커가 현재의 방식으로 작동하는 이유는 충분히 타당합니다. 문서화된 정보도 상당히 많이 있습니다. 네트워킹 페이지의 선명한 경고가 있고, 조금 더 깊이 읽어보면 도커와 방화벽이 상호작용하는 내용을 명시적으로 설명하는 단락을 찾을 수 있습니다.
 
@@ -27,7 +37,18 @@ link: "https://medium.com/@caring_lion_hedgehog_829/docker-ports-what-are-you-re
 
 전문적인 세계에서 안전한 응용 프로그램을 보장하기 위해 경험 많은 개발자들로부터의 코드 리뷰, 보안 감사, 침투 테스트 및 다른 점검들이 이상적으로 이루어져야 합니다. 그러나 놀이삼아 응용 프로그램을 작성한 개인 개발자들 중 모든 사람이 이러한 점검을 수행할 노하우를 가지고 있거나 수행해야 한다는 것을 알지 못할 수도 있습니다. 바로 이러한 개발자들을 이 기사에서 다루고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 문제
 
@@ -37,7 +58,18 @@ link: "https://medium.com/@caring_lion_hedgehog_829/docker-ports-what-are-you-re
 
 “와우, 분명히 중요하군요! 사람들이 읽도록 큰 주황색 경고로 표시되어 다행이에요. 방화벽 설정을 다시 확인해야겠네요.”
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어느 날, 전혀 관련 없는 네트워크 문제를 디버깅하고 있었어요 — 아마도 노트북을 사용해서 Samba 공유를 디버깅하려고 다른 방에 있었던 것 같아요. 데스크톱에서 어떤 포트가 열려 있는지 확인하기 위해 nmap을 실행했는데, 방화벽에 3306번 포트에 대한 연결을 거부하는 명시적인 규칙이 있음에도 불구하고 열려 있다는 것을 발견했을 때 정말 놀랐어요.
 
@@ -47,7 +79,18 @@ link: "https://medium.com/@caring_lion_hedgehog_829/docker-ports-what-are-you-re
 
 분명히 나만 문제를 걱정하고 있는 것은 아닌 것 같아요. 이와 비슷한 버그 리포트가 있고, 다양한 플랫폼에 흩어진 토론과 기사들이 있으며, 이 문제를 해결하려는 프로젝트도 있어요. 버그 리포트의 토론들을 읽어보면, 이게 실제로 문제인지에 대한 끝없는 논쟁들을 찾을 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전에 언급한 대로, 나의 불평은 도커가 이렇게 작동하는 것이 아니라, 오히려 이러한 문제와 토론에 대답할 때 많은 사람들이 보이는 경멸적인 태도입니다. 아래 Reddit 댓글은 9년 전에 작성되었지만, 제 주장을 완벽히 보여 줍니다.
 
@@ -57,15 +100,37 @@ link: "https://medium.com/@caring_lion_hedgehog_829/docker-ports-what-are-you-re
 
 # 학습에 대한 부가적인 노트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-당신이 알지 못하는 것은 당신이 무엇을 모른다는 것입니다.  
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-우리는 피드백을 통해 가장 잘 배웁니다 — 코드를 작성하다가 뭔가 잘못되었다는 걸 바로 알 수 있기 때문에, 그 때 바로 수정하고 동작하는 걸 보는 것은 긍정적인 피드백을 주며, 그 문제를 해결하는 방법에 대한 접근 방식을 강화합니다. 이 즉각적인 피드백 루프는 프로젝트를 시작하고 발생하는 도전에 대처하며 코딩을 배우기 쉽게 만듭니다. 그러나 작성한 코드가 유지보수가 어렵거나 보안에 취약하면, 몇 달이든 몇 년이든 그런 피드백을 얻지 못할 수 있습니다. 그렇기 때문에 보안과 같은 개념은 시행착오를 통해 쉽게 스스로 학습할 수 없습니다.  
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+당신이 알지 못하는 것은 당신이 무엇을 모른다는 것입니다.
+
+우리는 피드백을 통해 가장 잘 배웁니다 — 코드를 작성하다가 뭔가 잘못되었다는 걸 바로 알 수 있기 때문에, 그 때 바로 수정하고 동작하는 걸 보는 것은 긍정적인 피드백을 주며, 그 문제를 해결하는 방법에 대한 접근 방식을 강화합니다. 이 즉각적인 피드백 루프는 프로젝트를 시작하고 발생하는 도전에 대처하며 코딩을 배우기 쉽게 만듭니다. 그러나 작성한 코드가 유지보수가 어렵거나 보안에 취약하면, 몇 달이든 몇 년이든 그런 피드백을 얻지 못할 수 있습니다. 그렇기 때문에 보안과 같은 개념은 시행착오를 통해 쉽게 스스로 학습할 수 없습니다.
 
 # 이 구체적인 도커 문제에 대한 해결책
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 계신 것이면 컨테이너를 보호하는 방법을 찾고 계실 것 같아요. 그렇다면, 지금까지 함께 가지고 머물러 주셔서 감사드려요. 여기 몇 가지 방안이 있어요:
 
@@ -78,16 +143,39 @@ link: "https://medium.com/@caring_lion_hedgehog_829/docker-ports-what-are-you-re
 
 # 일반 문제에 대한 해결책
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 몇 년째 쓰고 싶었던 이 글은 조금 화제적인 내용이에요. 개발자들의 태도가 저의 속앓이거든요. "내가 아는 것을 모르면 하는 건 안 된다"는 게이트키퍼식 마인드는 너무나 흔합니다.
 
 하지만 이 이상한 직업에서 우리 중 많은 사람들이 돈을 벌기 위해 하지만 다른 많은 사람들은 그냥 즐기기 위해 하는 경우도 있어요. 그래서 취미로 하는 보안 노력만으로 어플리케이션을 VPS나 예비 랩탑에 올리는 것에서 많은 흠들이 생기는 게 좀 불안해지죠.
 
 큰 그림에서 해결책은 이렇습니다:
+
 - 뭔가를 만들고 싶어하는 미숙한 개발자를 위해: 계속하세요! 가능한 한 많이 읽으세요. 사용하는 도구의 공식 문서를 건너뛰지 마세요. 많이 흡수하세요. 아직 모르는 것이 있음을 인식하고 배우는 가장 좋은 방법은 계속 새로운 것을 시도하는 것이라는 것을 기억하세요.
 - 널리 사용되는 오픈 소스 도구에 기여하고 있는 숙련된 개발자들에게, 기본 동작에 대한 중요한 설계 결정을 내리는 경우: 문서를 읽지 않을 것으로 예상되는 사람들을 보호하는 의무가 여전히 있음을 기억하세요. 다른 사람들이 써놓은 빠르게 훑어보는 튜토리얼을 의존하는 사람들에게도 말이죠. 우리는 안전한 기본값을 선택할 의무가 있습니다 — Docker에는 이미 늦었을지 모르지만, 다음 도구에는 이 기회를 잡을 수도 있을 겁니다. 우리의 도구가 의도되지 않은 방식으로 사용될 때면 대뜻하지 않고 무례하지 말고, 가르치고 교육의 순간으로 삼아보세요. 아마는 더욱 배울 수도 있죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비슷한 경험이 있나요? 기본적으로 보안에 취약한 방식으로 사용된 다른 도구를 보신 적이 있나요?

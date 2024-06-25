@@ -3,13 +3,12 @@ title: "라라벨  플러터 플러터 앱을 라라벨 인증 API에 연결하�
 description: ""
 coverImage: "/assets/img/2024-05-27-LaravelFlutterConnectingFlutterApptoLaravelAuthAPI_0.png"
 date: 2024-05-27 16:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-LaravelFlutterConnectingFlutterApptoLaravelAuthAPI_0.png
 tag: Tech
 originalTitle: "Laravel + Flutter: Connecting Flutter App to Laravel Auth API"
 link: "https://medium.com/@mohamad.razzi.my/laravel-flutter-connecting-flutter-app-to-laravel-auth-api-bbbde371d730"
 ---
-
 
 ![Screenshot](/assets/img/2024-05-27-LaravelFlutterConnectingFlutterApptoLaravelAuthAPI_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@mohamad.razzi.my/laravel-flutter-connecting-flutter-a
 
 # [0] 인증 API가 포함된 라라벨 프로젝트 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 글을 따라하거나 빠른 시작 프로젝트를 다운로드하세요.
 
@@ -29,14 +39,25 @@ link: "https://medium.com/@mohamad.razzi.my/laravel-flutter-connecting-flutter-a
 
 ...다음 기본 설정으로.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (파일 → pubspec.yaml)
 
 ```yaml
 version: 1.0.0+1
 environment:
-  sdk: '>=2.18.2 <3.0.0'
+  sdk: ">=2.18.2 <3.0.0"
 dependencies:
   flutter:
     sdk: flutter
@@ -54,7 +75,18 @@ flutter:
 
 dio.dart 패키지는 Dart용 인기있는 HTTP 클라이언트 라이브러리로, Flutter 애플리케이션에서 일반적으로 사용됩니다. 이는 HTTP 요청을 만들고 응답을 처리하며, 가로채기, 헤더 및 기타 고급 기능을 관리하기 위한 간단하고 직관적인 API를 제공하는 유연한 HTTP 클라이언트입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 pubspec.yaml 파일을 업데이트해주세요:
 
@@ -67,7 +99,18 @@ dependencies:
 
 (파일 →lib/services/auth_service.dart)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import 'package:dio/dio.dart';
@@ -114,10 +157,20 @@ class AuthService {
 
 1] dio/dio.dart 패키지 가져오기: 이 import 문은 dio.dart 패키지에서 HTTP 요청을 수행하는 데 사용되는 주요 클래스인 Dio 클래스를 가져옵니다.
 
-2] Dio 인스턴스 초기화: 클래스에는 Dio 인스턴스로 초기화된 private _dio 필드가 있습니다. BaseOptions 매개변수를 사용하여 HTTP 요청의 기본 URL 및 기본 헤더를 구성합니다.
+2] Dio 인스턴스 초기화: 클래스에는 Dio 인스턴스로 초기화된 private \_dio 필드가 있습니다. BaseOptions 매개변수를 사용하여 HTTP 요청의 기본 URL 및 기본 헤더를 구성합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - baseUrl: `https://demo.razzi.my/lara11breeze/public/api`: 이 설정은 API의 기본 URL을 설정합니다. 이 경우에는 지정된 URL에서 호스팅되는 데모 라라벨 API입니다.
 - headers: ' `Accept`: `application/json` ': 이 설정은 기본 `Accept` 헤더를 `application/json`으로 설정합니다. 이는 API가 JSON 응답을 반환해야 함을 나타냅니다.
@@ -128,7 +181,18 @@ class AuthService {
 
 5] 로그아웃 메서드: 로그아웃 메서드는 `_dio.post` 메서드를 사용하여 /logout 엔드포인트로 POST 요청을 보냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## [1.4] 로그인 화면 생성
 
@@ -201,18 +265,40 @@ class _LoginScreenState extends State<LoginScreen> {
 
 코드 설명:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1] 의존성 가져오기: 이 코드는 핵심 Flutter UI 위젯을 제공하는 flutter/material.dart 패키지와 AuthService 클래스를 포함하는 auth_service.dart 파일을 가져옵니다.
 
 2] LoginScreen 위젯: LoginScreen은 StatefulWidget으로 정의되어 있어 변경 가능한 상태를 가질 수 있습니다.
 
-3] _LoginScreenState 클래스: _LoginScreenState 클래스는 LoginScreen 위젯의 내부 상태 클래스입니다. 다음을 포함합니다:
+3] \_LoginScreenState 클래스: \_LoginScreenState 클래스는 LoginScreen 위젯의 내부 상태 클래스입니다. 다음을 포함합니다:
 
-- _authService: 로그인 작업을 수행하는 데 사용되는 AuthService 클래스의 인스턴스입니다.
-- _emailController 및 _passwordController: 이메일 및 비밀번호 필드의 입력 값을 관리하는 두 TextEditingController 인스턴스입니다.
+- \_authService: 로그인 작업을 수행하는 데 사용되는 AuthService 클래스의 인스턴스입니다.
+- \_emailController 및 \_passwordController: 이메일 및 비밀번호 필드의 입력 값을 관리하는 두 TextEditingController 인스턴스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4] \_login 메서드: \_login 메서드는 사용자가 "로그인" 버튼을 탭했을 때 호출되는 비동기 함수입니다. 다음을 수행합니다:
 
@@ -227,7 +313,18 @@ class _LoginScreenState extends State<LoginScreen> {
 - 텍스트 필드와 로그인 버튼 사이에 간격을 추가하기 위한 SizedBox가 있습니다.
 - 눌렸을 때 \_login 메서드를 호출하는 ElevatedButton 위젯이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## [1.5] 메인 업데이트
 
@@ -267,7 +364,18 @@ class MyApp extends StatelessWidget {
 
 이제 플러터 앱을 실행하면 MyHomePage 위젯이 아닌 LoginScreen이 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인증 기능을 더 강화하기 위해 더 많은 화면을 추가할 수 있습니다. 예를 들어, 등록 화면, 비밀번호 재설정 화면, 그리고 로그인에 성공한 후에 표시되는 홈 화면 등을 추가할 수 있습니다. 또한 사용자 인증 상태와 세션 관리를 다루는 로직을 추가할 수도 있습니다.
 
@@ -277,7 +385,18 @@ Flutter 앱을 실행하세요.
 
 1] 로그인 화면에서 Laravel 사용자의 이메일과 비밀번호를 입력하세요. 로그인 버튼을 누르세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2] 로그를 확인하세요. 모든 것이 잘 작동되면 아래와 같이 응답이 출력됩니다. 응답에는 사용자 토큰이 포함되어 있는데, 이를 이후 요청에 사용할 수 있습니다.
 

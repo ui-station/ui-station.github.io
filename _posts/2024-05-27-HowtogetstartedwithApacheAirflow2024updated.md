@@ -22,7 +22,18 @@ pip uninstall apache-airflow
 
 <img src="https://miro.medium.com/v2/resize:fit:534/0*iDdoQ91AdPvPcWGm.gif" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 죄송해요 — 이걸 쓸 때는 금요일이었어요!
 
@@ -32,7 +43,18 @@ Orchestra를 시도해보세요 🚀
 
 # Apache Airflow은 쉽게 배울 수 있나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아파치 에어플로우는 특히 초보자에게는 어느 정도의 도전이 될 수 있지만, 일부 필수적인 개념과 도구에 익숙해지면 더 쉬워집니다. 에어플로우를 배우기 위해 알아야 할 내용과 학습이 쉬운 또는 어려운 이유를 살펴보겠습니다:
 
@@ -45,7 +67,18 @@ Orchestra를 시도해보세요 🚀
 
 # 학습 곡선
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 초기 설정: Airflow를 설정하는 것은 여러 구성 요소(Web 서버, 스케줄러, 메타데이터 데이터베이스 등) 때문에 약간 복잡할 수 있어요.
 - DAGs (Directed Acyclic Graphs): Airflow의 핵심 개념은 DAGs를 중심으로 돌아갑니다. DAGs를 정의하고 관리하는 방법을 익히는 데는 시간이 필요하죠.
@@ -61,7 +94,18 @@ Orchestra를 시도해보세요 🚀
 
 # 실용적인 팁
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 간단히 시작하기: 간단한 DAG부터 시작하여 점차 복잡성을 높여가세요.
 - 실습 중심: 더 많이 연습할수록 더 편안해질 거에요. 작은 프로젝트를 만들어보거나 예제를 복제해보세요.
@@ -76,7 +120,18 @@ Orchestra를 시도해보세요 🚀
 
 전반적으로 Apache Airflow에는 학습 곡선이 있지만 자원과 커뮤니티 지원이 많아 프로세스가 보다 원활해질 수 있습니다. 일관된 연습과 탐색을 통해 Airflow를 숙달하는 것은 분명히 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Apache Airflow을 시작하는 방법은?
 
@@ -86,7 +141,18 @@ Apache Airflow를 시작하려면 로컬 머신 또는 서버에 설치하고 �
 
 # 1. Apache Airflow 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 준비 사항:
 
@@ -97,10 +163,20 @@ Apache Airflow를 시작하려면 로컬 머신 또는 서버에 설치하고 �
 
 - 가상 환경 만들기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-python -m venv airflow_env source airflow_env/bin/activate  # Windows에서는 `airflow_env\Scripts\activate`를 사용하십시오
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+python -m venv airflow_env source airflow_env/bin/activate # Windows에서는 `airflow_env\Scripts\activate`를 사용하십시오
 
 - Apache Airflow 설치: Apache Airflow는 호환 가능한 종속성을 지정하기 위해 constraints 파일을 사용합니다. 아래 명령어를 사용하여 설치할 수 있습니다:
 
@@ -113,9 +189,18 @@ pip install "apache-airflow==${AIRFLOW_VERSION}" --constraint "${CONSTRAINT_URL}
 
 # 2. 데이터베이스 초기화
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Airflow은 작업 인스턴스 및 다른 메타데이터를 추적하는 데 데이터베이스를 사용합니다. Airflow를 실행하기 전에 데이터베이스를 초기화해야 합니다.
 
@@ -127,7 +212,18 @@ airflow db init
 
 Airflow 웹 인터페이스에 액세스할 수 있는 관리자 사용자를 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 에어플로우 사용자 생성 \
@@ -144,9 +240,18 @@ Airflow 웹 인터페이스에 액세스할 수 있는 관리자 사용자를 �
 
 - 웹 서버 시작:
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 첫 번째 터미널 창에서:
@@ -162,9 +267,18 @@ airflow scheduler
 
 # 6. 첫 번째 DAG(Directed Acyclic Graph) 생성하기
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DAG은 실행하려는 작업을 관계와 종속성을 반영하는 방식으로 구성된 작업 모음입니다.
 
@@ -197,7 +311,18 @@ start >> end
 
 - 파일 저장: 이 파일을 example_dag.py로 저장하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 7. Airflow UI에서 DAG 확인하기
 
@@ -209,7 +334,18 @@ DAG 파일을 저장한 후 Airflow UI로 이동하면 새로운 DAG가 목록�
 - 튜토리얼 및 가이드: 여러 온라인 튜토리얼이 특정 사용 사례 및 고급 구성에 도움이 될 수 있습니다.
 - 커뮤니티 지원: Airflow의 Slack 채널이나 다른 커뮤니티 포럼에 가입하여 지원 및 네트워킹을 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 단계를 따라하면 Apache Airflow를 설정하고 실행하여 자체 워크플로를 만들고 관리할 수 있을 것입니다.
 
@@ -219,6 +355,17 @@ DAG 파일을 저장한 후 Airflow UI로 이동하면 새로운 DAG가 목록�
 
 ## Apache Airflow를 배우는 데 얼마나 시간이 걸릴까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 너무 길어요. 궁금하다면, Orchestra를 사용해보세요. 누구나 사용할 수 있고 기업용 오케스트레이터 및 감시 도구의 모든 기능을 가지고 있지만 수고를 덜 수 있어요.

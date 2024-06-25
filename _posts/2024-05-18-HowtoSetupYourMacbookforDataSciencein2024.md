@@ -3,13 +3,12 @@ title: "2024년을 위한 데이터 과학을 위한 MacBook 설정 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-HowtoSetupYourMacbookforDataSciencein2024_0.png"
 date: 2024-05-18 17:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-HowtoSetupYourMacbookforDataSciencein2024_0.png
 tag: Tech
 originalTitle: "How to Setup Your Macbook for Data Science in 2024"
 link: "https://medium.com/@tomergabay/how-to-setup-your-macbook-for-data-science-in-2024-43903ac40d4a"
 ---
-
 
 <img src="/assets/img/2024-05-18-HowtoSetupYourMacbookforDataSciencein2024_0.png" />
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@tomergabay/how-to-setup-your-macbook-for-data-science
 
 # 브라우저
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 브라우저부터 살펴보겠습니다. 나는 Google Chrome 또는 Arc와 같은 Chromium 기반 브라우저를 Safari보다 선호합니다. Chromium 기반 브라우저가 가지고 있는 확장 기능 라이브러리 때문에 그런데요. 나는 Chrome보다는 더 깔끔하고 우아한 느낌의 Arc를 사용합니다.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@tomergabay/how-to-setup-your-macbook-for-data-science
 
 ![이미지](/assets/img/2024-05-18-HowtoSetupYourMacbookforDataSciencein2024_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 비트워던 -` 다양한 비밀번호 관리자가 있지만, 비트워던은 그 중 하나입니다. 모든 기기에서 작동하며 무료 티어에서 다양한 기능을 제공하므로 제 선호도입니다.
 - 원세 -` 원세는 자주 열고 싶지만 그렇게 하기 전에 한 번 더 생각해야 할 웹사이트를 구성할 수 있는 확장 프로그램입니다. 소셜 미디어 및 뉴스 웹사이트 등의 예시가 있습니다. 이러한 URL로 이동하면 원세가 일정 시간 동안 웹사이트를 차단하여 실제로 해당 웹사이트를 방문하고 싶은지 여부를 두 번 생각할 수 있습니다. 제 모든 기기에서 사용하고 있으며 소셜 미디어 및 뉴스 웹사이트에서 많은 시간을 절약하도록 도와줍니다.
@@ -47,7 +68,18 @@ link: "https://medium.com/@tomergabay/how-to-setup-your-macbook-for-data-science
 - 원세 -` 앞에서 언급한 크롬 웹 확장 프로그램과 같은 아이디어입니다.
 - 마그넷 -` Windows에서 온 경우이며 Windows 10부터 사용할 수 있는 화면 분할 기능이 맥에서도 사용 가능하게 해주는 손쉬운 방법이 부족한가요? Magnet은 맥에서도 동일한 기능을 제공하지만 무료는 아닙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 터미널
 
@@ -57,7 +89,18 @@ MacOs의 기본 터미널은 괜찮아요. 저는 여러 해 동안 사용해 �
 
 Oh My Zsh는 여러분의 Zsh 구성을 관리하기 위한 오픈소스, 커뮤니티 주도의 프레임워크로, 테마와 플러그인을 제공하여 터미널 경험을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 다음 명령어를 입력하여 터미널에서 Oh My Zsh를 설치하세요:
 
@@ -69,7 +112,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 그런 다음 Homebrew를 설치하세요. Homebrew는 MacOS용 무료 오픈 소스 패키지 관리 시스템으로, 소프트웨어를 설치, 업데이트 및 관리하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -81,8 +135,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 <img src="/assets/img/2024-05-18-HowtoSetupYourMacbookforDataSciencein2024_3.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 튜토리얼을 따라 하면 VS Code에서 Warp를 더 원활하게 사용할 수 있습니다.
 
@@ -92,7 +156,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ![이미지](/assets/img/2024-05-18-HowtoSetupYourMacbookforDataSciencein2024_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 추천하는 글꼴을 설치하는 방법부터 시작할게요. 워프에서 활성화하려면 설정 -` 외형 -` 터미널 글꼴로 이동하여 MesloLGS NF를 선택하세요.
 
@@ -104,7 +179,18 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 source ~/.zshrc로 셸을 다시 시작하고 p10k configure를 실행하여 테마를 구성하세요! 설정 -` 외형 -` 프롬프트에서 쉘 프롬프트 대신 워프 프롬프트 설정되었는지 확인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## z
 
@@ -114,7 +200,18 @@ source ~/.zshrc로 셸을 다시 시작하고 p10k configure를 실행하여 테
 
 ## Python
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 데이터 과학자들은 주 프로그래밍 언어로 Python을 사용합니다. MacBook에는 기본 설치되어 있어야 합니다. 그러나 새로 시작할 때 python --version 명령이 실패할 수 있고 python3 --version은 작동할 수 있습니다. python3 명령뿐 아니라 python 명령을 실행하려면 ~/.zshrc 파일에 다음을 추가하십시오:
 
@@ -134,7 +231,18 @@ echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zsh
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이썬 버전을 확인하려면 pyenv install --list 명령을 사용하세요. 저는 일반적인 Python3 버전만 설치하고 싶어하여 pyenv install --list | grep ' 3\.' 를 사용합니다.
 
@@ -147,7 +255,18 @@ echo 'alias pip="pip3 --require-virtualenv"' >> ~/.zshrc
 그리고 pip 설정의 전역 설정에 require-virtualenv = true를 추가합니다:
 이미 pip 설정 파일이 있는지 확인하려면 cat ~/.config/pip/pip.conf를 사용하세요. 이미 설정 파일이 있다면 [global] 섹션에 require-virtualenv = true를 추가하세요. 설정 파일이 없다면 아래 명령을 사용하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 mkdir -p ~/.config/pip && echo "[global]\nrequire-virtualenv = true" > ~/.config/pip/pip.conf
@@ -159,6 +278,17 @@ mkdir -p ~/.config/pip && echo "[global]\nrequire-virtualenv = true" > ~/.config
 
 제가 사용 중인 MacBook 설정에 만족하실 것으로 기대하며 놓치고 있는 유용한 도구가 있으면 댓글로 알려주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## MLearning.ai의 작가 / Hacking GPTs Store / 20,000개 이상의 아트 프롬프트

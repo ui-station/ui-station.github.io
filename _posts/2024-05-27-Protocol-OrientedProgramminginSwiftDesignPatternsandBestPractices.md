@@ -3,13 +3,12 @@ title: "스위프트에서의 프로토콜 지향 프로그래밍 디자인 패�
 description: ""
 coverImage: "/assets/img/2024-05-27-Protocol-OrientedProgramminginSwiftDesignPatternsandBestPractices_0.png"
 date: 2024-05-27 16:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-Protocol-OrientedProgramminginSwiftDesignPatternsandBestPractices_0.png
 tag: Tech
 originalTitle: "Protocol-Oriented Programming in Swift: Design Patterns and Best Practices"
 link: "https://medium.com/@priyans05/protocol-oriented-programming-in-swift-design-patterns-and-best-practices-70b2ee030471"
 ---
-
 
 <img src="/assets/img/2024-05-27-Protocol-OrientedProgramminginSwiftDesignPatternsandBestPractices_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@priyans05/protocol-oriented-programming-in-swift-desi
 
 왜 프로토콜 지향 프로그래밍을 해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 POP은 작업이나 기능에 대한 청사진을 정의하는 데 프로토콜 사용을 장려합니다. 이 접근 방식은 여러 가지 이점을 제공합니다:
 
@@ -31,7 +41,18 @@ POP은 작업이나 기능에 대한 청사진을 정의하는 데 프로토콜 
 프로토콜을 활용하기
 기본 프로토콜 정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 프로토콜 Drivable {
@@ -57,8 +78,18 @@ car.drive()  // 출력: 속도: 120.0 km/h로 주행 중
 
 프로토콜 익스텐션을 사용하여 프로토콜 메서드에 대한 기본 구현을 제공할 수 있으며 주어진 유형의 기능을 확장할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로토콜 확장 예제
 
@@ -91,7 +122,18 @@ car.stop()   // 출력: 정지됨
 
 프로토콜 조합
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스위프트를 사용하면 여러 프로토콜을 조합하여 타입이 조합된 프로토콜을 준수할 수 있습니다.
 
@@ -128,7 +170,18 @@ flyingCar.fly()    // 출력: Flying at 1000.0 meters
 
 이 예시에서 FlyingCar 구조체는 Drivable 및 Flyable 프로토콜을 모두 준수하며, 프로토콜 조합이 복잡한 기능을 가능하게 함을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로토콜 중심의 디자인 패턴
 
@@ -138,7 +191,18 @@ flyingCar.fly()    // 출력: Flying at 1000.0 meters
 
 전략 패턴 예시
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 프로토콜 PaymentStrategy {
@@ -180,8 +244,18 @@ cart.checkout(amount: 200)  // 결과: 200.0 금액으로 PayPal을 사용해 �
 
 의존성 주입(Dependency Injection, DI)은 IoC(제어의 역전)를 구현하는 데 사용되는 디자인 패턴으로, 클래스가 내부적으로 생성하는 대신 외부 소스에서 의존성을 받을 수 있도록 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의존성 주입을 사용한 예제
 
@@ -218,7 +292,18 @@ print(testManager.getData())  // 출력: 모의 데이터입니다
 
 이 예제에서는 DataService 프로토콜이 데이터를 가져오는 메서드를 정의합니다. APIService와 MockService 구조체는 이 프로토콜을 준수하여 다른 구현을 제공합니다. DataManager는 데이터를 가져오기 위해 DataService에 의존하며, 실제 서비스와 테스트를 위한 모의 서비스를 쉽게 변경할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로토콜 지향 프로그래밍의 Best Practices
 

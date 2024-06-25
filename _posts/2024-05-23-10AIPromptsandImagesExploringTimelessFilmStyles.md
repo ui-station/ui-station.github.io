@@ -18,7 +18,18 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 
 영화는 우리에게 위안, 기쁨, 영감, 그리고 오락의 지속적인 원천이었습니다. 이러한 장편 이야기들은 수십 년 동안 관객들을 매료시켰으며, 무성 채도 흑백 필름부터 고도기술의 풀컬러 CGI 경험에 이르기까지 진화해왔습니다. 이 목록은 할리우드의 화려한 미학과 클래식한 흑백 스타일뿐만 아니라, 다큐멘터리 스타일의 핸드헬드 촬영과 같은 더 현대적인 접근방식을 포함하여 다양한 필름 형식을 선보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 10 AI Prompts and Images: Exploring Timeless Film Styles
 
@@ -28,8 +39,18 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 
 2. High contrast
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Retro 80s](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_2.png)
 
@@ -39,9 +60,18 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 
 4. Silent Film
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Cinematic](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_4.png)
 
@@ -51,9 +81,18 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 
 6. Grindhouse
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Surreal](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_6.png)
 
@@ -63,9 +102,18 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 
 8. Black & White
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_8.png" />
 
@@ -75,11 +123,19 @@ link: "https://medium.com/@mericreativAI/10-ai-prompts-and-images-exploring-time
 
 10. Old Hollywood Glamour
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-10AIPromptsandImagesExploringTimelessFilmStyles_10.png)
-
 
 읽어주셔서 너무 감사합니다! 항상 행복한 AI 이미지 생성되세요!

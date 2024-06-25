@@ -3,13 +3,12 @@ title: "테라폼 안전하고 고가용성이 높으며 고장 허용성이 있
 description: ""
 coverImage: "/assets/img/2024-06-19-TerraformDeployingSecureHighlyAvailableandFault-TolerantCloudInfrastructures_0.png"
 date: 2024-06-19 13:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-TerraformDeployingSecureHighlyAvailableandFault-TolerantCloudInfrastructures_0.png
 tag: Tech
 originalTitle: "Terraform: Deploying Secure, Highly Available, and Fault-Tolerant Cloud Infrastructures"
 link: "https://medium.com/towards-aws/terraform-deploying-secure-highly-available-and-fault-tolerant-cloud-infrastructures-be98126ca35e"
 ---
-
 
 ## "구름의 공포"
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-aws/terraform-deploying-secure-highly-availabl
 
 강력하고 신뢰할 수 있는 클라우드 인프라는 기업이 고객에게 원활한 서비스를 제공하는 데 중요합니다. 고가용성과 내결함성은 이러한 인프라의 중요한 구성 요소입니다. 이를 달성하기 위해 많은 조직이 Terraform과 같은 인프라 자동화 도구를 활용하여 클라우드 자원을 배포하고 관리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글에서는 Terraform을 사용하여 AWS에 높은 가용성과 장애 허용성을 갖춘 클라우드 환경을 배포하는 방법을 살펴보겠습니다. 사용자 정의 VPC의 프라이빗 서브넷에 걸쳐 두 가용 영역을 포함하는 Auto Scaling 그룹 (ASG)을 포함한 환경을 만들어봅니다. 또한 ASG를 퍼블릭 서브넷에 놓인 애플리케이션 로드 밸런서 (ALB)로 프론트 엔드로 사용하고, 적절한 게이트웨이와 라우트 테이블 구성에 대해 살펴봅니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-aws/terraform-deploying-secure-highly-availabl
 
 # 배경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테라폼
 
@@ -39,7 +60,18 @@ link: "https://medium.com/towards-aws/terraform-deploying-secure-highly-availabl
 
 ## 아마존 EC2 오토 스케일링 그룹 (ASG)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS에서 제공하는 Amazon EC2 Auto Scaling 그룹은 수요에 따라 그룹 내 EC2 인스턴스의 수를 자동으로 조정해주는 서비스입니다.
 
@@ -49,7 +81,18 @@ EC2 Auto Scaling 그룹은 다양한 스케일링 정책, 런치 구성, 인스�
 
 ## 애플리케이션 부하 분산기 (ALB)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS의 Application Load Balancer(ALB)는 애플리케이션 수준 콘텐츠를 기반으로 EC2 인스턴스와 같은 여러 대상에 대한 들어오는 트래픽을 분산시킬 수 있습니다.
 
@@ -59,7 +102,18 @@ ALB는 SSL/TLS 오프로딩, 연결 드레이닝, 스티키 세션과 같은 다
 
 # 필수 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Terraform 개념과 명령어에 대한 기본 지식 및 이해도
 - 기본적인 리눅스 명령 줄 지식
@@ -74,7 +128,18 @@ ALB는 SSL/TLS 오프로딩, 연결 드레이닝, 스티키 세션과 같은 다
 
 당신의 매니저가 AWS에 클라우드 인프라를 배포하여 가용성과 고장 허용성을 보장할 것을 지시했습니다. 당신은 고객이 항상 웹 사이트에 접속할 수 있도록 하기 위해 트래픽에 따라 EC2 Auto Scaling 그룹(ASG)을 배포하기 위해 Terraform을 활용하기로 결정했습니다. 이 그룹은 개인 서브넷에 배포되며 공개 서브넷의 응용 프로그램 로드 밸런서(ALB)에 의해 선전되며, 트래픽에 따라 자동으로 확장 또는 축소되어 웹 사이트가 항상 고객에게 응답 가능하도록 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 목표
 
@@ -89,7 +154,18 @@ ALB는 SSL/TLS 오프로딩, 연결 드레이닝, 스티키 세션과 같은 다
 
 AWS Cloud9은 Terraform이 사전 설치되어 있지만, 최신 버전으로 업그레이드하여 해당 기능과 기능을 완전히 활용하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드9 IDE에 최신 Terraform 버전을 설치하려면 다음 명령어를 차례대로 실행해주세요 —
 
@@ -103,7 +179,18 @@ sudo yum -y install terraform
 
 ![이미지](/assets/img/2024-06-19-TerraformDeployingSecureHighlyAvailableandFault-TolerantCloudInfrastructures_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이해를 높이고 데모를 더 효과적으로 따르기 위해 아래 링크를 클릭하여 GitHub에서 프로젝트 저장소를 클론해 주세요. 계속 진행하면서 필요한 대로 파일을 편집해도 괜찮아요.
 
@@ -113,7 +200,18 @@ sudo yum -y install terraform
 
 우리의 초기 목표는 AWS 환경 내에서 모든 리소스를 배포할 수 있는 커스텀 VPC를 구축하는 것입니다. 이를 위해 논리적으로 격리된 CIDR 블록을 정의하고 적합한 서브넷 및 해당 가용 영역(AZ)을 신중히 선택하여 배포해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 테라폼 파일 코드를 검토해 봅시다. 사용자 정의 VPC를 생성하고 구성하는 코드입니다.
 
@@ -123,7 +221,18 @@ sudo yum -y install terraform
 
 공개 서브넷은 map_public_ip_on_launch 속성이 true로 설정되어 있어 해당 서브넷에 배포된 인스턴스에는 자동으로 공개 IP 주소가 할당됩니다. 사설 서브넷은 해당 속성이 false로 설정되어 있어 해당 서브넷에 배포된 인스턴스는 NAT 게이트웨이를 통해 인터넷에서 접속할 수 없습니다. 각 서브넷에는 태그를 사용하여 이름이 지정되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 사용자 정의 VPC를 생성하고 구성했으니, 2단계로 넘어가서 인터넷 게이트웨이와 NAT 게이트웨이를 생성해 봅시다.
 
@@ -133,7 +242,18 @@ VPC에서 리소스를 배포할 때, 인터넷에 안전하고 효율적으로 
 
 인터넷 게이트웨이는 VPC 구성요소로서 VPC 내의 인스턴스와 인터넷 간의 통신을 허용합니다. 한편, NAT 게이트웨이는 사설 서브넷에 있는 인스턴스가 인터넷이나 다른 AWS 서비스에 연결할 수 있도록하며, 외부 트래픽에 대한 추가 보안도 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래에서 Terraform 파일을 만들고 구성하여 인터넷 게이트웨이와 NAT 게이트웨이를 생성하는 코드를 살펴보겠습니다 —
 
@@ -143,7 +263,18 @@ VPC에서 리소스를 배포할 때, 인터넷에 안전하고 효율적으로 
 
 좋아요! 이제 인터넷 게이트웨이와 NAT 게이트웨이가 생성되었으니, 다음은 — 3단계로 넘어가 공용 및 사설 라우트 테이블을 구성하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 3: 공용 라우트 테이블 및 사설 라우트 테이블 구성
 
@@ -153,7 +284,18 @@ VPC에서 리소스를 배포할 때, 인터넷에 안전하고 효율적으로 
 
 ## 코드 설명
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에서는 두 개의 라우팅 테이블을 생성 중입니다 — 공개 라우팅 테이블과 사설 라우팅 테이블. 공개 라우팅 테이블은 인터넷 게이트웨이로의 기본 경로를 갖고 있으며, 사설 라우팅 테이블은 NAT 게이트웨이로의 기본 경로를 갖고 있습니다.
 
@@ -163,7 +305,18 @@ VPC에서 리소스를 배포할 때, 인터넷에 안전하고 효율적으로 
 
 # Step 4: 공개 서브넷에 ALB를 실행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자의 ALB를 활성화하기 위한 과정을 살펴보겠습니다. 사용자 정의 VPC의 공용 서브넷에서 ALB를 생성하는 것은 여러 단계를 거칩니다. 이 단계에는 보안 그룹 생성, 대상 그룹, 리스너 및 라우팅 규칙 설정이 포함됩니다.
 
@@ -173,7 +326,18 @@ VPC에서 리소스를 배포할 때, 인터넷에 안전하고 효율적으로 
 
 이 Terraform 코드에서는 ALB와 함께 사용할 보안 그룹을 생성합니다. 보안 그룹은 이름과 설명과 함께 정의되며, 사용자 정의 VPC와 연관됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ingress 규칙을 통해 특정 CIDR 블록에서 HTTP 및 SSH 트래픽을 허용하고, 모든 트래픽을 허용하는 egress 규칙도 있습니다. 또한 보안 그룹에 쉽게 식별할 수 있도록 이름을 태그합니다.
 
@@ -183,7 +347,18 @@ Ingress 규칙을 통해 특정 CIDR 블록에서 HTTP 및 SSH 트래픽을 허�
 
 여기서 ALB 및 해당 리소스를 생성합니다. 먼저 ALB를 생성하고, 사용할 이름, 서브넷 및 보안 그룹을 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ALB가 트래픽을 전달할 타겟 그룹을 생성하여 이름, 포트, 프로토콜 및 헬스 체크 구성을 지정합니다.
 
@@ -193,7 +368,18 @@ ALB가 트래픽을 전달할 타겟 그룹을 생성하여 이름, 포트, 프�
 
 # Step 5: 비공용 서브넷에서 자동 스케일링 그룹 시작하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오토 스케일링 그룹(ASG)은 일반적으로 공용 서브넷에 배포되지만, 민감한 데이터를 다루거나 규제 요구 사항을 준수해야 하는 경우와 같이 사설 서브넷을 선호하는 경우가 많이 있습니다.
 
@@ -203,7 +389,18 @@ ALB가 트래픽을 전달할 타겟 그룹을 생성하여 이름, 포트, 프�
 
 우선, ASG 런치 템플릿용 보안 그룹을 생성하고, 이를 이전에 생성한 사용자 정의 VPC와 연결해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보안 그룹은 ALB의 보안 그룹에서 엄격히 HTTP 및 SSH 프로토콜에 대한 인바운드 트래픽을 허용합니다. 이렇게 함으로써 ASG에 대한 액세스는 ALB에서만 가능하게 되어 보안이 제공됩니다. 보안 그룹은 상태를 유지하므로 정의된 변수에서 지정된 CIDR 블록으로 어디서든지 아웃바운드 트래픽을 허용합니다.
 
@@ -213,7 +410,18 @@ ASG를 생성하기 위해 우리가 준비할 것은 ASG의 런치 템플릿에
 
 아래의 bash 스크립트를 살펴봅시다 —
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 코드 설명
 
@@ -223,7 +431,18 @@ ASG를 생성하기 위해 우리가 준비할 것은 ASG의 런치 템플릿에
 
 또한 스크립트는 인스턴스를 고부하로 테스트하는 데 사용할 수 있는 stress 패키지를 설치합니다. 마지막으로 스크립트는 기본 index.html 파일에 REX TECH에 오신 것을 환영합니다! 메시지가 포함된 사용자 정의 웹페이지를 Apache 문서 루트 디렉토리 /var/www/html/에 추가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ASG 생성 및 구성
 
@@ -233,7 +452,18 @@ ASG를 생성하기 위해 우리가 준비할 것은 ASG의 런치 템플릿에
 
 ASG를 생성할 때 최소, 최대 및 원하는 용량을 설정해야 합니다. 또한 ASG는 서브넷 ID로 식별되는 두 개의 사설 서브넷에서 시작됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 런치 템플릿(Launch Template)은 Amazon Machine Image (AMI), 인스턴스 유형 및 키파일과 같은 구성과 함께 생성됩니다. 여기에는 이전에 생성한 Bash 스크립트를 base64로 인코딩한 사용자 데이터 파일로 지정합니다. 이는 Apache 웹 서버를 설치하고 시작하고 사용자 정의 웹 페이지를 생성하는 스크립트를 실행합니다.
 
@@ -243,7 +473,18 @@ ASG를 생성할 때 최소, 최대 및 원하는 용량을 설정해야 합니�
 
 # Step 6: output.tf 파일을 활용하여 ALB의 퍼블릭 DNS를 얻기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ALB를 만든 후에는 ALB의 공개 DNS에 직접 액세스하는 것이 귀찮을 수 있습니다. 다행히도, 테라폼에서 output.tf 파일을 생성하여 ALB의 공개 DNS를 즉시 얻을 수 있는 쉬운 해결책을 제공할 수 있습니다. 이를 통해 들어오는 트래픽이 올바르게 타깃 그룹 내의 인스턴스로 경로 지정되도록 보장할 수 있습니다.
 
@@ -253,7 +494,18 @@ ALB를 만든 후에는 ALB의 공개 DNS에 직접 액세스하는 것이 귀�
 
 Outputs를 사용하면 테라폼 인프라에서 생성된 리소스의 값들을 볼 수 있습니다. 여기서 우리는 테라폼 인프라를 위해 여러가지 output을 생성합니다. 각 output은 다른 리소스를 참조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희의 출력물에는 VPC의 ID, 퍼블릭 및 프라이빗 서브넷의 ID, 인터넷 게이트웨이와 ALB의 DNS 이름이 포함됩니다. 이러한 출력물은 인프라에 대한 정보를 제공하기 위해 사용될 것입니다.
 
@@ -263,8 +515,18 @@ Outputs를 사용하면 테라폼 인프라에서 생성된 리소스의 값들�
 
 Terraform을 사용하여 인프라스트럭처를 생성할 때 리소스 인자에 동적 값들을 사용하는 것이 일반적입니다. 이러한 동적 값들은 사용자 입력, 환경 변수 또는 다른 리소스의 출력 값에 기반할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 동적 값들을 관리하기 위해 변수를 사용하는 것이 중요합니다. 변수를 사용하면 배포 사항 전반에 걸쳐 일관성을 유지하고, 코드를 읽고 유지하기 쉽게 만들며, 코드의 재사용성을 가능케 합니다.
 
@@ -274,8 +536,18 @@ Terraform을 사용하여 인프라스트럭처를 생성할 때 리소스 인�
 
 이곳에서는 이 Terraform 프로젝트에서 동적 값들을 사용할 수 있게 해주는 일련의 변수들을 정의합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 변수에는 이름, 기본값 및 유형이 있습니다. 기본값은 Terraform 코드를 실행할 때 특정 값이 지정되지 않은 경우 변수가 설정되는 값을 나타냅니다. 유형은 변수의 예상 데이터 유형을 지정합니다.
 
@@ -285,7 +557,18 @@ Terraform을 사용하여 인프라스트럭처를 생성할 때 리소스 인�
 
 변수를 정의함으로써 주요 구성 파일을 수정하지 않고 값이 쉽게 변경될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알겠어요! 이제 우리가 모든 Terraform 구성 파일들을 검토했으니, Step 8로 넘어갈게요 — 정의된 인프라를 배포하기 위해 Terraform 워크플로우를 실행해봅시다.
 
@@ -297,7 +580,18 @@ Cloud9 터미널에서 필요한 공급자를 초기화하려면 Cloud9 터미�
 terraform init
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 초기화 프로세스가 완료되면 아래와 같이 성공적인 프롬프트가 표시됩니다.
 
@@ -309,7 +603,18 @@ terraform init
 terraform validate
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 유효한 것으로 확인되는 성공 메시지를 생성하는 명령어여야 합니다.
 
@@ -321,7 +626,18 @@ terraform validate
 terraform plan
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테라폼이 기대하는 인프라 리소스에 적용할 변경 목록을 표시해야 합니다. "+" 기호는 추가될 내용을 나타내고, "-" 기호는 제거될 내용을 나타냅니다.
 
@@ -331,7 +647,18 @@ terraform plan
 
 참고 - 이 명령을 실행한 후에 변경 사항에 동의하기 위해 "yes"를 입력해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 terraform apply
@@ -343,19 +670,39 @@ terraform apply
 
 # 성공!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 추가된, 수정된 및 삭제된 리소스의 총 수를 명시하고 "적용 완료"라는 메시지로 프로세스를 마무리해야 합니다. 몇 가지 리소스 출력과 함께 해야 합니다.
 
 브라우저에서 웹 페이지에 액세스하려면 ALB의 DNS URL을 복사하여 저장하세요.
 
-
 ![ALB DNS URL](/assets/img/2024-06-19-TerraformDeployingSecureHighlyAvailableandFault-TolerantCloudInfrastructures_6.png)
-
 
 이제 리소스가 생성되었는지 확인하기 위해 관리 콘솔에서 검토해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 9: ASG 및 대상 그룹의 건강 상태에서 EC2 인스턴스 생성 확인
 
@@ -365,7 +712,18 @@ AWS 관리 콘솔에서 EC2 대시보드로 이동하여 ASG에서 시작된 두
 
 또한 왼쪽 창으로 이동하여 대상 그룹을 선택하고 대상 그룹을 확인하고, 하단으로 스크롤하여 인스턴스의 건강 상태가 정상인지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-TerraformDeployingSecureHighlyAvailableandFault-TolerantCloudInfrastructures_8.png" />
 
@@ -375,7 +733,18 @@ AWS 관리 콘솔에서 EC2 대시보드로 이동하여 ASG에서 시작된 두
 
 설정한 브라우저를 열고 ALB의 DNS URL을 브라우저에 붙여넣어 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **알림** - ALB에 연결하려면 "http://" 프로토콜을 사용해야 합니다. "https://"는 사용하지 마세요.
 
@@ -385,7 +754,18 @@ AWS 관리 콘솔에서 EC2 대시보드로 이동하여 ASG에서 시작된 두
 
 "The Terror In The Clouds"를 성공적으로 완료했어요. Terraform을 사용하여 신뢰할 수 있고 확장 가능한 클라우드 인프라를 구축하는 방법을 배웠습니다. 이 인프라는 높은 트래픽을 다룰 수 있으며 개별 구성 요소의 장애가 발생해도 가동 시간을 유지할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 정리하기
 
@@ -397,7 +777,18 @@ AWS 관리 콘솔에서 EC2 대시보드로 이동하여 ASG에서 시작된 두
 terraform destroy
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "작업이 완료될 때까지 기다려주세요. 마침내 '파괴가 완료되었습니다'라는 메시지와 함께 파괴된 리소스의 양이 표시됩니다.
 
@@ -407,7 +798,18 @@ terraform destroy
 
 Ifeanyi Otuonye는 클라우드/데브옵스 엔지니어로 클라우드 기술과 데브옵스 문화에 광신적인 엔지니어입니다. 배우려는 열정으로 움직이며 협업 환경에서 번영합니다. 정보 기술과 프로젝트 관리의 배경을 가지고 있으며 프로 선수의 삶을 균형 있게 유지하고 있습니다. 2021년 말부터 클라우드/데브옵스 엔지니어로 나아가기 위해 자기 학습을 시작했으며, 최근에는 Level Up In Tech 프로그램에 참여하였습니다!"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Master DynamoDB
 

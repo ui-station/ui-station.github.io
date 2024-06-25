@@ -10,7 +10,6 @@ originalTitle: "Why LLMs are not Good for Coding — Part II"
 link: "https://medium.com/towards-data-science/llms-coding-software-development-artificial-intelligence-68f195bb2ad3"
 ---
 
-
 ![WhyLLMsarenotGoodforCodingPartII_0](/assets/img/2024-05-23-WhyLLMsarenotGoodforCodingPartII_0.png)
 
 이 시리즈의 첫 번째 기사 "LLM은 코딩에 좋지 않은 이유"를 게시한 후에는 소셜 미디어에서 다음과 같은 여러 댓글을 받았어요:
@@ -19,8 +18,18 @@ link: "https://medium.com/towards-data-science/llms-coding-software-development-
 
 ChatGPT와 같은 LLM은 일부 상황에서 유용할 수 있지만, 종종 문법적으로는 정확할 수 있지만 최적이 아니거나 기능적으로 심지어 틀린 코드를 생성합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 기사에서는 토크나이저의 중요성, 코드에 적용될 때의 문맥 창의 복잡성, 그리고 훈련의 성격이 이러한 모델의 성능에 영향을 미칠 수 있는 방법에 대해 논의했습니다.
 
@@ -30,7 +39,18 @@ ChatGPT와 같은 LLM은 일부 상황에서 유용할 수 있지만, 종종 문
 
 LLM 기반의 코딩 어시스턴트는 현실입니다. GitHub Copilot은 오늘 가장 유명한 제품 중 하나로, 개발 환경 내에서 코드 완성 및 채팅 지원 기능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발자들이 말했듯이, "GitHub Copilot은 확률적 결정을 사용하여 제안을 생성합니다." 제품이 작동하는 방법에 대해 더 자세히 살펴보려면 문서를 자세히 살펴보세요:
 
@@ -40,7 +60,18 @@ LLM 기반의 코딩 어시스턴트는 현실입니다. GitHub Copilot은 오�
 
 그런데 한 가지 더 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 General LLM (Large Language Models)는 토큰 시퀀스가 주어졌을 때 다음 토큰을 예측하는 데 훈련되었습니다. 이는 커서 바로 전 줄까지만 추론에 사용된다는 의미인데요 (왼쪽에서 오른쪽으로 생성한 결과).
 
@@ -50,7 +81,18 @@ General LLM (Large Language Models)는 토큰 시퀀스가 주어졌을 때 다�
 
 ![AlphaCode](/assets/img/2024-05-23-WhyLLMsarenotGoodforCodingPartII_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 다이어그램의 (A) 섹션에서 볼 수 있듯이, 코딩을 위한 일반적인 LLMs는 자연어로 훈련된 기본 모델을 기반으로 구축되며 코드 베이스에서 사전 훈련을 받습니다. 예를 들어, print(", the model is trained to predict the completion hello")라는 문맥이 주어지면, 모델은 좌측에서 우측으로 생성하여 완성 hello를 예측하는 것을 훈련합니다.
 
@@ -60,7 +102,18 @@ General LLM (Large Language Models)는 토큰 시퀀스가 주어졌을 때 다�
 
 모델을 훈련한 후, 모델이 올바른 문맥을 인식하도록 보장하기 위한 또 다른 전략은 추론 중에 프롬프트의 일부로 전달하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 코드 채우기를 위해 프롬프트에 주변 코드가 포함될 수 있고, 이를 통해 고유 방향성 능력에 맞게 작업을 재구성할 수 있습니다.
 
@@ -70,7 +123,18 @@ General LLM (Large Language Models)는 토큰 시퀀스가 주어졌을 때 다�
 
 그러나 놓치지 않아야 할 중요한 제한 사항이 있습니다: 최신 패키지 및 기능들과의 최신성 유지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소프트웨어 개발에서는 효과적이고 안전한 코드를 생성하기 위해 이것이 필수적이지만, 실제로는 두 가지 이유로 LLM에 대해 매우 어려울 수 있습니다:
 
@@ -81,7 +145,18 @@ API와 같은 인터페이스는 자주 변경되며, 새로운 기능이 추가
 
 또한, 현대 소프트웨어 개발에서 의존성을 관리하는 것은 복잡하며, 최신 호환성 및 버전 정보가 부족한 경우 LLM이 최상의 조언을 제공하지 못할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모든 문제에는 해결책이 있어요
 
@@ -91,7 +166,18 @@ API와 같은 인터페이스는 자주 변경되며, 새로운 기능이 추가
 
 코딩 어시스턴트로 LLMs를 사용할 때, 소프트웨어 업데이트 및 문서를 동적으로 확인하는 기능이 제한될 수 있다는 점을 인식해야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 최종 생각
 
@@ -101,7 +187,18 @@ API와 같은 인터페이스는 자주 변경되며, 새로운 기능이 추가
 
 그러나 우리는 코드를 위해 맞춤화된 프롬프트 엔지니어링 전략을 채택하여 LLM을 우리가 원하는 출력물로 이끌 수 있습니다. 관심이 있다면, 아래 기사에서 더 읽을 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ⚠ 경고 ⚠
 
@@ -111,7 +208,18 @@ LLM(Large Language Models)이 항상 가장 효율적인 알고리즘을 제공�
 
 결국, 대형 언어 모델은 최대 우도 추정에 기초하고, 효율적인 소프트웨어 개발은 성능을 고려한 코드 생성 전략에 의존합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그게 다야! 읽어주셔서 정말 감사합니다!
 

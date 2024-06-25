@@ -3,13 +3,12 @@ title: "코틀린 고급 주제 필수"
 description: ""
 coverImage: "/assets/img/2024-06-19-KotlinAdvancedTopicsEssential_0.png"
 date: 2024-06-19 13:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-KotlinAdvancedTopicsEssential_0.png
 tag: Tech
 originalTitle: "Kotlin Advanced Topics (Essential)"
 link: "https://medium.com/@navinprasad/kotlin-advanced-topics-b0786f63a814"
 ---
-
 
 Kotlin Multiplatform (KMP)의 공식 릴리스와 안드로이드와의 통합으로 Kotlin은 엄청난 인기를 얻고 있습니다. Kotlin의 매력은 다양성에 있습니다. 개발자들이 단일 언어를 습득하고 백엔드, 프론트엔드(Android, iOS 및 웹)를 포함한 여러 플랫폼에서 활용할 수 있습니다. Kotlin이 계속 성장함에 따라 개발자들은 필수적이고 고급 주제를 탐색하여 기술을 향상시킬 수 있어야 합니다. 이를 통해 예외적인 코딩 표준을 유지하고 산업에서 앞서 나갈 수 있습니다.
 
@@ -19,7 +18,18 @@ Kotlin Multiplatform (KMP)의 공식 릴리스와 안드로이드와의 통합�
 
 Kotlin에서의 위임은 객체가 일부 책임을 다른 객체에 위임할 수 있도록 하는 디자인 패턴입니다. Kotlin은 by 키워드를 사용하여 위임에 대한 내장 지원을 제공합니다. Kotlin에서는 클래스 위임과 속성 위임 두 가지 주요 위임 유형이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 속성 위임
 
@@ -34,7 +44,18 @@ val myName: String by lazy {
 
 ## 클래스 위임
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클래스 위임은 한 클래스가 다른 클래스로 메서드 구현을 위임할 수 있게 합니다. 이는 합성을 위해 유용하며 상속 없이 다른 클래스의 동작을 통합할 수 있도록 합니다. 인터페이스 구현 또는 기능을 다른 클래스로 위임함으로써 코드 중복을 피할 수 있습니다.
 
@@ -57,7 +78,18 @@ val myName: String by lazy {
 
 Kotlin의 확장 함수를 사용하면 코드의 재사용성을 높이기 위해 우리만의 유틸리티 함수를 작성할 수 있습니다. 내부적으로 확장 함수는 컴파일 시점에 클래스에 대해 정적으로 해결되며 해당 클래스의 공개 멤버에 액세스할 수 있도록 합니다(소스 코드를 수정하지 않고).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val EMAIL_ADDRESS_PATTERN = Pattern.compile(
@@ -78,8 +110,18 @@ val EMAIL_ADDRESS_PATTERN = Pattern.compile(
 
 ## 기본 고차 함수
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 fun calculate(a: Int, b: Int, operator: (Int, Int) -> Int) {
@@ -117,8 +159,18 @@ fun main() {
 - noinline: 인라인 함수 내 람다 매개변수를 인라인화하지 못하게 합니다. 람다를 저장하거나 전달해야 할 때 유용합니다.
 - crossinline: 인라인 함수 내 람다의 비지역 반환을 방지합니다. 람다가 둘러싸는 함수로부터 반환하지 못하도록하여 람다의 예측 가능한 동작을 보장합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Sealed Class / Interface
 
@@ -140,7 +192,18 @@ sealed class Shape(area: Double) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 제네릭
 
@@ -159,7 +222,18 @@ fun main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 일반 함수들
 
@@ -178,7 +252,18 @@ fun main() {
 
 ## Variance
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 분산이란 일반적인 유형 간의 서브타이핑 관계를 정의합니다.
 
@@ -192,7 +277,18 @@ val intInvariant = Invariant<Int>(12)
 
 - 공산성은 요소를 생성만 할 수 있습니다. `T`의 슈퍼 클래스는 `T`를 대체할 수 있지만 서브타입은 아닙니다. `out T`입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 class Contravariant<out T>(private val value: T) {
@@ -224,8 +320,18 @@ fun main() {
 
 # 코루틴
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코루틴은 가볍고(쓰레드보다 훨씬 가볍습니다). 블로킹하지 않고, 어느 스레드도 차단하지 않지만 코드 실행을 일시 중단하고 다시 시작합니다. 디스패처(dispatchers)와 스코프(scopes)에 따라 코루틴이 널리 분류됩니다.
 
@@ -243,11 +349,22 @@ lifecycleScope.launch {
     // 코루틴 코드
 }
 viewModelScope.launch {
-    // 코루틴 코드    
+    // 코루틴 코드
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Coroutine Dispatchers
 
@@ -262,7 +379,18 @@ viewModelScope.launch {
 - `async`는 새로운 코루틴을 시작하고 향후 결과를 나타내는 Deferred를 반환합니다. 결과를 얻으려면 `await`를 사용하세요.
 - `runBlocking`은 해당 블록이 완료될 때까지 현재 스레드를 차단합니다. 주로 메인 함수 및 테스트에서 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 CoroutineScope(Dispatchers.Main).launch {

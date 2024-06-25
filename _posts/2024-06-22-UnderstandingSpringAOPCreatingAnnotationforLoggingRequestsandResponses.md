@@ -3,13 +3,12 @@ title: "Spring AOP 이해하기 요청과 응답을 로깅하는 애너테이션
 description: ""
 coverImage: "/assets/img/2024-06-22-UnderstandingSpringAOPCreatingAnnotationforLoggingRequestsandResponses_0.png"
 date: 2024-06-22 22:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-UnderstandingSpringAOPCreatingAnnotationforLoggingRequestsandResponses_0.png
 tag: Tech
 originalTitle: "Understanding Spring AOP: Creating Annotation for Logging Requests and Responses"
 link: "https://medium.com/dev-genius/understanding-spring-aop-creating-annotation-for-logging-requests-and-responses-d2e4221afe3d"
 ---
-
 
 자바 개발자들의 강력한 무기 중 하나는 Aspect-Oriented Programming (AOP)입니다. Spring Boot와 원활하게 통합되면 게임 체인저가 될 수 있습니다. 이 글에서는 Spring Boot AOP를 이해하기 위해 Annotation을 구축하여 재사용할 수 있는데, 어떤 요청 매핑에도 로깅을 위해 요청, 응답 및 상태를 기록할 수 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/dev-genius/understanding-spring-aop-creating-annotatio
 
 Aspect-Oriented Programming (AOP)은 개발자가 로깅, 오류 처리 및 보안과 같은 교차 관심 사항을 비즈니스 로직과 분리하여 모듈화할 수 있는 프로그래밍 패러다임입니다. AOP에서 이러한 관심 사항인 Aspect는 독립적으로 정의되고 특정 지점에서 코드에 엮이며 코드 중복을 줄이고 유지보수성을 향상시킵니다. 이 접근 방식은 코드 조직화를 개선하고 소프트웨어 개발에서 관심의 분리를 장려합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # AOP 개념
 
@@ -29,7 +39,18 @@ Aspect-Oriented Programming (AOP)은 개발자가 로깅, 오류 처리 및 보�
 
 로그인 또는 보안과 같은 교차 관심사를 캡슐화하는 모듈입니다. 측면은 코드에서 어떻게 하는지와 어디에서 하는지를 정의합니다. Spring AOP에서는 @Aspect 주석이 달린 일반 클래스를 사용하여 측면을 구현합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 조인 포인트
 
@@ -39,7 +60,18 @@ Aspect-Oriented Programming (AOP)은 개발자가 로깅, 오류 처리 및 보�
 
 특정 조인 포인트에서 Aspect가 취하는 조치를 말합니다. "before", "after" 등과 같은 다양한 유형의 어드바이스가 있습니다. Spring AOP에서 어드바이스는 조인 포인트 주변의 인터셉터 체인을 유지하며 작동합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 종류의 조언이 있습니다:
 
@@ -53,7 +85,18 @@ Aspect-Oriented Programming (AOP)은 개발자가 로깅, 오류 처리 및 보�
 
 조언이 적용해야 하는 조인 포인트를 나타내는 집합입니다. 조언은 포인트컷 표현식과 연관되어 있으며, 포인트컷과 일치하는 모든 조인 포인트에서 실행됩니다. 스프링은 기본적으로 AspectJ 포인트컷 표현식 언어를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 소개
 
@@ -63,7 +106,18 @@ Aspect-Oriented Programming (AOP)은 개발자가 로깅, 오류 처리 및 보�
 
 측면(Aspect)을 주요 응용 프로그램 코드와 통합하는 과정을 말합니다. 컴파일 시간, 로드 시간 또는 실행 시간에 발생할 수 있습니다. Spring AOP는 실행 시간에 엮기(Weaving)를 수행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 대상 객체
 
@@ -73,7 +127,18 @@ Aspect-Oriented Programming (AOP)은 개발자가 로깅, 오류 처리 및 보�
 
 Aspect contracts를 구현하기 위해 AOP 프레임워크에 의해 생성된 객체입니다. Spring에서 AOP 프록시는 JDK 다이내믹 프록시 또는 CGLIB 프록시가 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사용자 정의 어노테이션
 
@@ -86,7 +151,18 @@ Spring Boot에서 사용자 정의 어노테이션을 사용하면 코드에 자
 - 보존(Retention): 어노테이션 정보가 유지되는 시점을 정의합니다. 예: @Retention(RetentionPolicy.RUNTIME)은 실행 시점에 사용 가능하게 합니다.
 - 속성(Attributes): 어노테이션 내에서 속성을 정의합니다. 예: String value() default “기본 값”;
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구현
 
@@ -96,7 +172,18 @@ Spring Boot에서 사용자 정의 어노테이션을 사용하면 코드에 자
 
 먼저, spring AOP를 종속성으로 추가하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <!-- Spring AOP -->
@@ -120,9 +207,9 @@ import java.lang.annotation.Target;
 
 /**
  * @author Pratiyush Prakash
- * 
+ *
  * 이 어노테이션은 요청과 응답을 로깅하는 데 사용됩니다.
- * 
+ *
  * METHOD에만 적용되며,
  * 런타임에서 사용 가능합니다.
  */
@@ -132,7 +219,18 @@ public @interface LogRequestResponse {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 양상
 
@@ -151,13 +249,13 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author Pratiyush Prakash
- * 
+ *
  * 이 Aspect는 LogRequestResponse 어노테이션을 적용한 모든 요청과 응답을 로깅하는 모듈입니다.
  */
 @Aspect
 @Component
 public class RequestResponseLoggingAspect {
-    
+
     // LogRequestResponse 어노테이션에 대한 Pointcut 정의
     @Pointcut("@annotation(com.example.demo.annotations.LogRequestResponse)")
     public void logAnnotationPointcut() {
@@ -188,7 +286,18 @@ public class RequestResponseLoggingAspect {
 
 ## 어플리케이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 테스트하고 싶은 엔드포인트에 주석을 추가할 수 있습니다.
 
@@ -209,7 +318,7 @@ import com.example.demo.annotations.LogRequestResponse;
 
 /**
  * @Author Pratiyush Prakash
- * 
+ *
  * 여기에 모든 엔드포인트가 위치합니다
  */
 @RestController
@@ -264,7 +373,7 @@ public class DemoController {
                 return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-    
+
 }
 ```
 
@@ -272,7 +381,18 @@ public class DemoController {
 
 ## 데모
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리의 구현이 제대로 작동하는지 확인할 수 있습니다. 애플리케이션을 빌드하고 실행할 수 있습니다. Swagger UI를 열어 엔드포인트를 호출할 수도 있습니다. 그리고 로그에서 요청과 응답을 확인할 수 있는지 확인할 수 있습니다.
 
@@ -282,7 +402,18 @@ public class DemoController {
 
 # 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - [Spring Framework AOP](https://docs.spring.io/spring-framework/docs/3.2.x/spring-framework-reference/html/aop.html)
 - [Demystifying Proxy in Spring](https://medium.com/dev-genius/demystifying-proxy-in-spring-3ab536046b11)

@@ -3,23 +3,33 @@ title: "LLM을 사용하여 데이터베이스를 쿼리하는 동안 RAG를 사
 description: ""
 coverImage: "/assets/img/2024-05-18-Top4ChallengesusingRAGwithLLMstoQueryDatabaseText-to-SQLandhowtosolveit_0.png"
 date: 2024-05-18 18:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-Top4ChallengesusingRAGwithLLMstoQueryDatabaseText-to-SQLandhowtosolveit_0.png
 tag: Tech
 originalTitle: "Top 4 Challenges using RAG with LLMs to Query Database (Text-to-SQL) and how to solve it."
 link: "https://medium.com/wrenai/4-key-technical-challenges-using-rag-with-llms-to-query-database-text-to-sql-and-how-to-solve-it-5d5a3d6682e5"
 ---
 
-
 The Advent of LLMs shows the ability of machines to comprehend natural language. These capabilities have helped engineers to do a lot of amazing things, such as writing code documentation and code reviews, and one of the most common use cases is code generation; GitHub copilot has shown the capability of AI to comprehend engineers’ intention for code generation, such as Python, Javascript, and SQL, though LLM’s comprehension AI could understand what we want to do and generate code accordingly.
 
 # Using LLM to solve Text-to-SQL
 
-Based on the code generation capability of LLMs, many people have started considering using LLMs to solve the long-term hurdle of using natural language to retrieve data from databases, sometimes called “Text-to-SQL.” The idea of “Text-to-SQL” is not new; after the presence of “Retrieval Augmented Generation (RAG)” and the latest LLM models breakthrough, Text-to-SQL has a new opportunity to leverage LLM comprehension with RAG techniques to understand internal data and knowledge. 
+Based on the code generation capability of LLMs, many people have started considering using LLMs to solve the long-term hurdle of using natural language to retrieve data from databases, sometimes called “Text-to-SQL.” The idea of “Text-to-SQL” is not new; after the presence of “Retrieval Augmented Generation (RAG)” and the latest LLM models breakthrough, Text-to-SQL has a new opportunity to leverage LLM comprehension with RAG techniques to understand internal data and knowledge.
 
 ![Top 4 Challenges using RAG with LLMs to Query Database Text-to-SQL and how to solve it](/assets/img/2024-05-18-Top4ChallengesusingRAGwithLLMstoQueryDatabaseText-to-SQLandhowtosolveit_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # RAG를 사용한 텍스트-SQL의 도전 과제
 
@@ -29,7 +39,18 @@ Based on the code generation capability of LLMs, many people have started consid
 
 ## 도전 과제 1: 컨텍스트 수집 도전과제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다양한 원본 간 상호 운용성: 다양한 소스, 메타데이터 서비스 및 API 간에 원활하게 검색 및 통합된 정보를 일반화하고 표준화하는 것이 중요합니다.
 - 데이터와 메타데이터의 복잡한 링킹: 이는 데이터를 해당 문서 저장소의 메타데이터와 연결하는 것을 포함합니다. 관련성, 계산 및 집계와 같은 메타데이터, 스키마 및 컨텍스트를 저장하는 것이 포함됩니다.
@@ -41,7 +62,18 @@ Based on the code generation capability of LLMs, many people have started consid
 
 ## 도전 과제 3: SQL 생성 도전과제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - SQL 쿼리의 정확성 및 실행 가능성: 정확하고 실행 가능한 SQL 쿼리를 생성하는 것은 상당한 도전입니다. 이를 위해서는 LLM이 SQL 구문, 데이터베이스 스키마, 그리고 다양한 데이터베이스 시스템의 특정 방언에 대한 깊은 이해가 필요합니다.
 - 쿼리 엔진 방언 적응: 데이터베이스는 종종 SQL 구현에서 고유한 방언과 뉘앙스를 가집니다. 이러한 차이에 적응하고 다양한 시스템 간에 호환되는 쿼리를 생성할 수 있는 LLM을 설계하는 것은 도전의 복잡도를 더 높이는 요소입니다.
@@ -53,7 +85,18 @@ Based on the code generation capability of LLMs, many people have started consid
 
 더 많은 정보를 원하시나요? 각 도전에 대해 미래 게시물에서 자세히 공유할 계획입니다. 알림을 받으려면 Medium에서 팔로우해주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 어떻게 문제를 해결할 수 있을까요? LLM을 위한 의미론적 레이어.
 
@@ -63,7 +106,18 @@ LLM을 위한 의미론적 레이어에는 무엇이 포함되어야 할까요? 
 
 ## 데이터 해석 및 표현
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 비즈니스 용어 및 개념: 시맨틱 레이어는 비즈니스 용어와 개념의 정의를 포함합니다. 예를 들어, "수익"과 같은 용어는 시맨틱 레이어에 정의되어 있어서 비즈니스 사용자가 BI 도구에서 "수익"을 조회할 때 시스템이 어떤 데이터를 검색하고 어떻게 계산할지 정확히 알고 있습니다.
 
@@ -77,7 +131,18 @@ LLM을 위한 의미론적 레이어에는 무엇이 포함되어야 할까요? 
 
 ## 데이터 구조 및 조직
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 소스 매핑: 시맨틱 레이어는 비즈니스 용어와 개념을 실제 데이터 소스에 매핑합니다. 이는 각 비즈니스 용어에 해당하는 데이터베이스 테이블과 열을 지정하고, BI 도구가 올바른 데이터를 검색할 수 있도록 합니다.
 - 다차원 모델: 일부 BI 시스템에서 시맨틱 레이어에는 다차원 모델(예: OLAP 큐브)이 포함되어 복잡한 분석과 데이터 슬라이싱/다이싱이 가능합니다. 이러한 모델은 사용자가 쉽게 탐색하고 분석할 수 있는 차원과 측정 값을 구성합니다.
@@ -88,7 +153,18 @@ LLM을 위한 의미론적 레이어에는 무엇이 포함되어야 할까요? 
 
 # WrenAI 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-Top4ChallengesusingRAGwithLLMstoQueryDatabaseText-to-SQLandhowtosolveit_2.png)
 
@@ -98,7 +174,18 @@ WrenAI의 하부에는 이전 섹션에서 언급한 LLM을 위한 "Wren Engine"
 
 ## WrenAI에서의 모델링
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 소스와 연결이 완료되면 자동으로 모든 메타데이터를 수집하며 WrenAI UI를 통해 비즈니스 의미론과 관계를 추가할 수 있습니다. 미래의 의미론적 검색을 위해 자동으로 벡터 저장소를 업데이트할 것입니다.
 
@@ -108,7 +195,18 @@ WrenAI의 하부에는 이전 섹션에서 언급한 LLM을 위한 "Wren Engine"
 
 모델링을 마치고 나면 비즈니스 질문을 시작할 수 있습니다. WrenAI는 가장 관련성 높은 결과 3개를 찾아 제공할 것입니다. 옵션 중 하나를 선택하면 해당 데이터의 출처 및 요약을 단계별 설명으로 제공해 드립니다. 이를 통해 WrenAI가 제안하는 결과를 더 자신 있게 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 WrenAI로부터 결과를 받으면 반환된 결과를 기반으로 깊은 통찰이나 분석을 위한 후속 질문을 할 수 있습니다.
 
@@ -118,6 +216,17 @@ WrenAI로부터 결과를 받으면 반환된 결과를 기반으로 깊은 통�
 
 👉 GitHub: https://github.com/Canner/WrenAI
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 👉 디스코드: https://discord.gg/5DvshJqG8Z

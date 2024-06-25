@@ -3,13 +3,12 @@ title: "레일즈 앱에 클래스 레벨 콜백을 추가해보세요"
 description: ""
 coverImage: "/assets/img/2024-06-19-EnhanceYourRailsAppwithClass-LevelCallbacks_0.png"
 date: 2024-06-19 22:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-EnhanceYourRailsAppwithClass-LevelCallbacks_0.png
 tag: Tech
 originalTitle: "Enhance Your Rails App with Class-Level Callbacks"
 link: "https://medium.com/@abhirampai/how-to-use-callback-directly-on-the-class-3887af3d1e88"
 ---
-
 
 <img src="/assets/img/2024-06-19-EnhanceYourRailsAppwithClass-LevelCallbacks_0.png" />
 
@@ -19,9 +18,20 @@ link: "https://medium.com/@abhirampai/how-to-use-callback-directly-on-the-class-
 
 # Rails에서 콜백 이해하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-콜백은 객체의 라이프사이클 중 특정 시점에 호출되는 메서드입니다. Rails에서는 콜백이 널리 사용되어 객체의 생성, 업데이트 및 삭제 중에 코드를 자동으로 실행합니다. 콜백에 대해 더 알고 싶다면 Rails 가이드의 콜백 섹션을 참조해보세요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+콜백은 객체의 라이프사이클 중 특정 시점에 호출되는 메서드입니다. Rails에서는 콜백이 널리 사용되어 객체의 생성, 업데이트 및 삭제 중에 코드를 자동으로 실행합니다. 콜백에 대해 더 알고 싶다면 Rails 가이드의 콜백 섹션을 참조해보세요.
 
 # 예시 코드
 
@@ -29,19 +39,29 @@ link: "https://medium.com/@abhirampai/how-to-use-callback-directly-on-the-class-
 
 여기에는 호스트 애플리케이션의 클래스에서 메서드를 호출해야 하는 젬 내의 작업이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # ActiveJob in the gem
-class MyJob < ActiveJob::Base
-  def perform
-    result = # perform the job and get the result
-    if ModelName.respond_to?(:after_result, true)
-      ModelName.after_result { result }
-    end
-  end
-end
 
+class MyJob < ActiveJob::Base
+def perform
+result = # perform the job and get the result
+if ModelName.respond_to?(:after_result, true)
+ModelName.after_result { result }
+end
+end
+end
 
 이 스니펫에서는 호스트 애플리케이션의 ModelName 클래스가 after_result 클래스 메소드를 갖고 있는지 확인합니다. 해당 메소드가 있다면 블록을 사용하여 작업 결과를 이 메소드로 전달합니다.
 
@@ -49,22 +69,30 @@ end
 
 호스트 애플리케이션에서는 클래스 내에 after_result 메소드를 정의합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 호스트 응용프로그램의 클래스
-Class ModelName
-  def self.after_result
-    result = yield if block_given?
-    process(result) if result.present?
-  end
 
-  def self.process(result)
-    # 결과를 처리합니다
-  end
+Class ModelName
+def self.after_result
+result = yield if block_given?
+process(result) if result.present?
 end
 
+def self.process(result) # 결과를 처리합니다
+end
+end
 
 여기서 yield는 작업 결과를 after_result 메서드로 전달하며, 결과가 있는 경우 처리합니다.
 
@@ -72,8 +100,18 @@ end
 
 인스턴스 메서드와 Rails 콜백을 사용한다면 조금 다르게 보일 것입니다. define_callbacks와 set_callback을 사용하여 클래스 인스턴스에서 콜백을 정의할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```ruby
 # 호스트 응용 프로그램의 클래스
@@ -98,7 +136,18 @@ end
 
 인스턴스 메서드 콜백을 사용하려면 작업을 다음과 같이 수정하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # ActiveJob in the gem

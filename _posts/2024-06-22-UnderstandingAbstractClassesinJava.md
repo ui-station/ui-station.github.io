@@ -3,13 +3,12 @@ title: "Java 추상 클래스 완벽 이해하기"
 description: ""
 coverImage: "/assets/img/2024-06-22-UnderstandingAbstractClassesinJava_0.png"
 date: 2024-06-22 23:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-UnderstandingAbstractClassesinJava_0.png
 tag: Tech
 originalTitle: "Understanding Abstract Classes in Java"
 link: "https://medium.com/@chyesith/understanding-abstract-classes-in-java-60854f3e967c"
 ---
-
 
 ![Understanding Abstract Classes in Java](/assets/img/2024-06-22-UnderstandingAbstractClassesinJava_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@chyesith/understanding-abstract-classes-in-java-60854
 
 # 자바에서 추상 클래스란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바에서 추상 클래스는 독립적으로 인스턴스화할 수 없으며 하위 클래스로 사용되는 클래스입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@chyesith/understanding-abstract-classes-in-java-60854
 
 예를 들어보겠습니다. 두 개의 클래스인 Dog와 Cat을 가정해보세요. 이 두 클래스 모두 makeSound 메서드가 필요한 경우를 상상해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class Cat {
@@ -45,7 +66,18 @@ Animal이라는 추상 클래스를 만들 수 있습니다. 클래스를 추상
 다음은 선언하는 방법입니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public abstract class Animal {
@@ -69,7 +101,18 @@ public class Dog extends Animal {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class Cat extends Animal {
@@ -86,7 +129,18 @@ public class Cat extends Animal {
 
 추상 클래스와 인터페이스는 둘 다 추상화를 달성하는 데 사용될 수 있지만, 주요 차이점이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추상 클래스
 
@@ -101,7 +155,18 @@ public class Cat extends Animal {
 - 예를 들어, Bird, Plane 및 Superhero와 같은 다른 클래스들이 모두 fly() 메서드를 필요로 하는 경우, 이러한 클래스들이 Flyable 인터페이스를 구현할 수 있습니다.
 - 클래스는 여러 인터페이스를 구현할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

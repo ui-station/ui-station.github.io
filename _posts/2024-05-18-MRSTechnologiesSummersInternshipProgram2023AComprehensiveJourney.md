@@ -3,13 +3,12 @@ title: "MRS Technologies 2023 하계 인턴십 프로그램 - 포괄적인 여�
 description: ""
 coverImage: "/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_0.png"
 date: 2024-05-18 18:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_0.png
 tag: Tech
 originalTitle: "MRS Technologies Summers Internship Program 2023 — A Comprehensive Journey"
 link: "https://medium.com/@umerfarooqai/mrs-technologies-summers-internship-program-2023-a-comprehensive-journey-c89577b0302c"
 ---
-
 
 기술 분야에서 인턴십은 청년들을 전문가 생활로 이끄는 발판입니다. 그러나 대부분의 인턴들은 기초 프로젝트에 갇혀 실제 세계에서의 경험을 놓치곤 합니다. 이 추세와는 달리, MRS Technologies는 작년에 다른 길을 선택하여 2022년도 인턴십 프로그램을 통해 풍부한 학습 기회를 제공했습니다. 인턴들은 실무 경험을 쌓고 최소 실현 가능 제품(MVP)을 선정하는데 주도적 역할을 하였습니다. 이 접근 방식은 커뮤니티로부터 높은 칭찬을 받았습니다. 이 경험은 졸업 전에 취직 기회를 얻는 데 도움이 되었으며, 프로그램의 깊은 영향력을 보여주었습니다.
 
@@ -19,7 +18,18 @@ MRS Technologies의 CTO로써, 이 인턴십 프로그램은 나에게 특별한
 
 # 1) 2023년 인턴십 프로그램의 비젼 - 기업가 정신을 일으키다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MRS 인턴십 프로그램의 핵심은 현실적인 기업가 정신의 본질에 직접 뛰어 들 수 있는 스타트업 분위기를 재현하는 데 있습니다. 보통의 인턴십과는 달리, 이 여정은 24시간 7일간의 과제, 학습 및 성장의 혼합으로 변모하여 매일이 도전, 학습 및 성장의 철저한 경험으로 됩니다. 아이디어를 최소 실행 가능 제품(MVP)으로 구현하기 위해 필요한 노력을 직접 체험하면서, 시계 소리에 성공적인 기업가의 세계의 무몰개한 속도가 반영됩니다. 이 프로그램은 모든 인턴이 기업가처럼 생각하고 행동하게 만드는 것을 목표로 하며, 성공은 노력과 지혜로 와야 한다는 것을 교훈으로 받아들이는 것이 중요합니다.
 
@@ -27,7 +37,18 @@ MRS 인턴십 프로그램의 핵심은 현실적인 기업가 정신의 본질�
 
 2023년 MRS 인턴십 프로그램 발표는 학생들 사회에서 깊은 울림을 주었으며, 저희가 받은 13,500건 이상의 지원서 수를 반영했습니다. 이러한 관심의 파도는 숫자뿐만 아니라, 다양한 학위 및 전문 분야에서 이어지는 지원자들로 확장되었습니다. 이 섹션에 포함된 자세한 그래프는 이 분포를 생동감 있게 묘사하며, 이 프로그램의 광범위한 영향력과 매력을 강조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3) 선발 기준 및 최종 선발 과정:
 
@@ -37,7 +58,18 @@ MRS 인턴십 프로그램의 핵심은 현실적인 기업가 정신의 본질�
 
 이 신중한 과정은 광범위한 지원자 풀에서 가장 유망한 후보자들을 선발하도록 도왔으며, 프로그램의 학습과 성과를 위한 높은 기준을 보장했습니다. 이 철저하고 필수적인 선발 과정은 MRS 인턴십 프로그램 2023의 고수준의 학습과 성과 유지에 대한 우리의 결연한 헌신을 강조합니다. 이 엄격한 선발은 각 참가자의 미래 전문가 활동을 통해 울림이 남을 것으로 믿는 흥미진진하고 풍부하며 생산적인 여정을 준비했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3) 인턴십 프로그램의 톤 설정하기 - 첫째 날:
 
@@ -47,7 +79,18 @@ MRS 인턴십 프로그램의 핵심은 현실적인 기업가 정신의 본질�
 
 우리의 여정은 첫날의 조직적인 온보딩으로 시작되었는데, 각 인턴은 계정을 설정하고 업무 영역에 소개되었습니다. 그 후로는 우리 회사의 혁신적인 정신의 상징이 되는 혁신적인 프로젝트들을 엿볼 수 있는 층별 회사 투어가 인사팀이 이끄는 확장된 형태로 이어졌습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 투어를 따라 멘토와 함께하는 세션으로 에너지가 높아졌어요. 각 멘토가 자신을 소개하고 경험을 공유하며, 인턴들이 일상 업무와 프로젝트 목표를 이끌어나가는 데 중요한 역할을 강조했어요. 이 대화로 인턴들 사이에 기대감이 생기며, 존경과 협력의 초기 유대감이 형성되었어요.
 
@@ -57,7 +100,18 @@ MRS 인턴십 프로그램의 핵심은 현실적인 기업가 정신의 본질�
 
 그날의 하이라이트는 제가 진행한 마음을 나누는 세션이었어요. 저는 전문 경력, 프로그램의 본질과 기대치, 그리고 이 특별한 경험으로부터 최대 이득을 얻는 데 대한 몇 가지 지혜를 공유했어요. 이 프로그램을 통해 자신의 경력을 형성하는 데 전례없는 기회임을 강조하며, 전문적인 가르침을 제공했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하루가 마무리되었습니다. 영감을 주는 일이 있었죠. 이제는 명확한 비전과 증진된 목적 의식으로 조정된 사고를 갖고, 변화의 여정에 도전할 준비가 돼 있습니다.
 
@@ -67,7 +121,18 @@ MRS 인턴십 프로그램은 지식을 제공하고 호기심을 자극하며 �
 
 교육 모듈은 인턴에게 종합적인 기술 세트를 갖게끔 설계된 기술 및 비기술적 워크샵을 조심스럽게 조합한 것이었습니다. 몇 가지 주목할 만한 사례는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 브랜드 및 Figma 소개
 - 인간 심리학과 사용자 경험
@@ -88,7 +153,18 @@ MRS 인턴십 프로그램은 지식을 제공하고 호기심을 자극하며 �
 
 # 5) 임베디드 시스템과 사물인터넷(IoT) 교육:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 인턴십 프로그램에서는 내장 시스템과 사물 인터넷(IoT)에 대한 철저한 교육에 중점을 두고 있습니다. 이 특별한 교육은 저희 회사의 숙련된 강사들과 시니어 임베디드 팀 멤버들이 직접 진행하여, 풍부한 실습 경험을 제공합니다. 계획은 시장 관련 주제를 철저히 다루도록 구성되어 있어, 인턴들에게 인턴십 및 이후의 전문적인 노력을 위한 단단한 기반을 제공합니다.
 
@@ -98,7 +174,18 @@ MRS 인턴십 프로그램은 지식을 제공하고 호기심을 자극하며 �
 
 ![Training Image 4](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 철저한 교육을 통해 MRS에서 인턴은 견고한 최소 우선 제품(MVP)을 만들 준비가 되었으며, 앞으로의 경력을 위한 준비를 충분히 했습니다.
 
@@ -108,7 +195,18 @@ MRS 인턴십 프로그램은 mGreens를 개발하는 중인 인턴이 식물 �
 
 ![이미지](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 핵심 아이디어는 IoT 노드를 만들어 식물과 완벽하게 통합되며 주변 온도, 토양 온도, 습도, 그리고 토양 수분과 같은 다양한 요인을 세심하게 모니터링할 수 있는 것이었습니다. 이 지능형 노드는 각 식물에 맞는 최적 조건에서의 이탈을 감지하고, 사용자에게 즉각적으로 물 주기 또는 선풍기 가동과 같은 교정 조치를 취하도록 경고하는 방식으로 설계되었습니다. 따라서 이 플랫폼은 식물 목록을 표시하여 사용자가 건강하거나 관리가 필요한 식물을 구분해 줄 수 있었습니다.
 
@@ -118,10 +216,20 @@ MRS 인턴십 프로그램은 mGreens를 개발하는 중인 인턴이 식물 �
 
 UI/UX 팀은 브랜딩을 담당하며 Figma를 사용해 시각적으로 매력적인 인터페이스를 만들었고, 기술 팀은 백엔드로 AWS, 웹앱 개발로 React, 데스크톱 기반의 관리 포털로 QT를 활용했습니다. 또한 Android 모바일 앱과 WebFlow 마케팅 웹사이트를 개발했는데, 이는 프로그램 중에 UI/UX 팀이 4주도 안 되어서 개발한 것입니다. 소프트웨어에는 주요 식물에 대한 최적 값이 포함된 데이터베이스도 포함되어 있어 사용자들이 농작물을 모니터할 수 있는 기반을 제공하며, 숙련된 사용자들은 고유한 요구사항에 따라 임계 값을 수정할 수 있는 유연성도 가지고 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-여기 우리 인턴들이 만든 멋진 사진 몇 장이 있어요.  
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+여기 우리 인턴들이 만든 멋진 사진 몇 장이 있어요.
 
 ![Image 7](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_7.png)
 
@@ -129,9 +237,18 @@ UI/UX 팀은 브랜딩을 담당하며 Figma를 사용해 시각적으로 매력
 
 ![Image 9](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_9.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_10.png)
 
@@ -141,8 +258,18 @@ UI/UX 팀은 브랜딩을 담당하며 Figma를 사용해 시각적으로 매력
 
 # 7) Retrospective Meeting with Interns and Mentors
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MRS 인턴십 프로그램의 결론은 모든 인턴과 멘토가 참석한 회고 회의로 마무리되었습니다. 각 인턴은 지난 몇 주 동안의 여정을 5분간의 내러티브로 소개하며 자신의 경험을 나누었습니다. 그들의 말은 학습, 우정, 지식 향상을 위한 지속적 노력이 담긴 여정을 보여주었습니다.
 
@@ -150,8 +277,18 @@ MRS 인턴십 프로그램의 결론은 모든 인턴과 멘토가 참석한 회
 
 마지막으로 CTO로서, 저는 그들의 여정에 대한 생각과 앞으로의 방향성을 나눴습니다. 인턴들이 이 소중한 경험을 마지막 학년과 전문가 생활로 나아가면서 어떻게 활용할 수 있는지에 대해 논의했습니다. 이 대화는 인턴들을 위한 도로를 제공하고, 얻은 지식과 기술이 실제 세계에서 어떻게 활용될 수 있는지 상상하도록 도왔습니다. 이는 희망, 야망, 그리고 기술 세계에서 의미 있는 흔적을 남기고자 하는 공동의 꿈으로 가득한 따뜻한 세션이었습니다. 순간의 감정적 깊이가 느껴지며, 성장, 팀워크, 혁신의 여정을 완벽하게 마무리하는 모습을 보여주었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_14.png)
 
@@ -161,8 +298,18 @@ MRS 인턴십 프로그램의 여정은 최종 발표 및 폐회식을 통해 �
 
 참석자들로 붐볐던 이번 세션은 각 인턴이 진지한 발표로 시작하여 프로젝트에서의 역할, MVP에 기여한 부분, 프로그램 중의 개인적 경험, 그리고 좋아했던 워크샵과 멘토에 관해 따뜻한 이야기를 나누었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 열정적인 노력과 혁신의 결과물을 보여주며 MVP의 자세한 데모가 발표되면서 분위기는 흥분으로 넘쳤어요. 인턴들이 참여자들을 놀라게 한 mGreens에 대한 매력적인 데모 비디오를 선보여 방 안에 기쁨과 자부심이 가득했던 특별한 순간이 있었어요.
 
@@ -172,7 +319,18 @@ MRS 인턴십 프로그램의 여정은 최종 발표 및 폐회식을 통해 �
 
 이식은 Abdullah Umer에게 특별한 "리더십상"을 수여하며 절묘한 리더십과 프로그램 전체를 통틀어 뛰어난 성과를 인정받았어요. 이상의 시상은 인턴십 프로그램 동안 여러 명의 개인이 모니터링한 KPI를 기반으로 수여되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_15.png](/assets/img/2024-05-18-MRSTechnologiesSummersInternshipProgram2023AComprehensiveJourney_15.png)
 
@@ -182,7 +340,18 @@ MRS 인턴십 프로그램의 여정은 최종 발표 및 폐회식을 통해 �
 
 선발되지 않은 분들을 위해 그들에게는 단순한 신청 상태 통지 이상을 제공했습니다. 앞날을 안내하기 위해 상세한 이메일을 작성했습니다. 프로그램에 합격하지 못했더라도, 이 이메일은 LinkedIn 네트워킹, 블로깅과 콘텐츠 제작, 개인 브랜딩과 같은 중요 영역에 초점을 맞추는 데 도움이 되었습니다. 이를 통해 역경을 겪더라도, 그들이 전문 경력을 이어 나갈 명확한 방향을 가지도록 돕는 것이 목표였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -192,7 +361,18 @@ MRS 인턴십 프로그램의 여정은 최종 발표 및 폐회식을 통해 �
 
 인턴들이 배우기 위해 노력하는 것이 아니라 뛰어나기 위해 보이는 열정과 결단력, 멘토들의 지식을 공유하기 위한 헌신, 그리고 결과적으로 나타난 혁신적인 프로젝트들이 모두 2023년 MRS 인턴십 프로그램의 성공에 대해 많은 이야기를 전합니다. 올해의 프로그램을 마무리하면서 다음 집단이 어떤 성과를 이룰지에 대한 기대가 쌓이기 시작합니다. 업데이트를 위해 MRS 여름 인턴십 페이지를 주시해 주시길 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 정보를 원하거나 가이던스가 필요하다면, LinkedIn에서 저와 연락해주세요. 모든 지망 기술 전문가들을 위해 더 많은 학습, 혁신, 그리고 밝은 미래가 되길 바라겠습니다!
 

@@ -3,13 +3,12 @@ title: "CSRF로 인해 계정이 삭제될 수 있습니다"
 description: ""
 coverImage: "/assets/img/2024-05-23-CSRFLeadstoDeleteAccount_0.png"
 date: 2024-05-23 14:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-CSRFLeadstoDeleteAccount_0.png
 tag: Tech
 originalTitle: "CSRF Leads to Delete Account"
 link: "https://medium.com/@happyjester80/csrf-leads-to-delete-account-241f2cf8950b"
 ---
-
 
 # 안녕하세요!
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@happyjester80/csrf-leads-to-delete-account-241f2cf895
 - 날짜: 2024년 5월
 - 요약: Corp 앱에서 CSRF 취약점을 발견했습니다. 이 취약점을 이용하여 사용자 계정을 삭제할 수 있는 Deeplink와 delete-account 엔드포인트 간의 상호작용이 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 복제 단계
 
@@ -42,7 +52,18 @@ link: "https://medium.com/@happyjester80/csrf-leads-to-delete-account-241f2cf895
 
 - 'adb'를 사용하여 호출한 후에 /account/라는 Path로 이 Deeplink를 발견했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 지금은 설정에 있어요;
 - 잠시만 android:pathPrefix=/account/는 무슨 의미일까요?
@@ -57,7 +78,18 @@ adb shell am start -a android.intent.action.VIEW -n com.thredup.android/com.thre
 
 - 지금 CSRF로 만들어 봐요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```javascript
 <!DOCTYPE html>

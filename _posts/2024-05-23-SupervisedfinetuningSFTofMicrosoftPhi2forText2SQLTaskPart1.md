@@ -3,13 +3,12 @@ title: "마이크로소프트 Phi2의 Text2SQL 작업을 위한 지도 학습 �
 description: ""
 coverImage: "/assets/img/2024-05-23-SupervisedfinetuningSFTofMicrosoftPhi2forText2SQLTaskPart1_0.png"
 date: 2024-05-23 18:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SupervisedfinetuningSFTofMicrosoftPhi2forText2SQLTaskPart1_0.png
 tag: Tech
 originalTitle: "Supervised fine tuning (SFT) of Microsoft Phi2 for Text2SQL Task (Part 1)"
 link: "https://medium.com/@divyeshjagatiya/supervised-fine-tuning-sft-of-microsoft-phi2-for-text2sql-task-part-1-d56b216311f0"
 ---
-
 
 ![image](/assets/img/2024-05-23-SupervisedfinetuningSFTofMicrosoftPhi2forText2SQLTaskPart1_0.png)
 
@@ -26,7 +25,18 @@ link: "https://medium.com/@divyeshjagatiya/supervised-fine-tuning-sft-of-microso
 - (계속되는 내용은 Part 2에서)
 - 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 소개
 
@@ -36,7 +46,18 @@ link: "https://medium.com/@divyeshjagatiya/supervised-fine-tuning-sft-of-microso
 
 ## 사전 학습된 모델 선택
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미리 훈련된 모델을 사용하여 시작해 보세요. 미리 훈련된 모델의 정의는 무엇일까요?
 
@@ -46,20 +67,42 @@ link: "https://medium.com/@divyeshjagatiya/supervised-fine-tuning-sft-of-microso
 
 이 유형의 미리 훈련된 모델은 앞선 맥락을 기반으로 새로운 토큰을 생성할 수 있는 능력을 갖고 있습니다. 이 모델은 독립적인 질문, QA, 채팅 형식, 그리고 코드 생성과 같은 다양한 용도에 사용될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 모델을 QA 스타일로 텍스트2SQL 생성을 위해 미세 조정할 예정입니다.
 
 ## 입력/출력 형식
 
-| | |
-|------------------|----------------------------------|
-| **input**        | User question                    |
-| **output**       | SQL query                        |
+|            |               |
+| ---------- | ------------- |
+| **input**  | User question |
+| **output** | SQL query     |
 
 질문은 다음과 같습니다: LLM은 사용자 질문에서 어떻게 SQL을 생성할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인간이라도 할 수 없어요. 적어도 테이블 구조에 대한 정보와 샘플 데이터가 필요한데, 그럼에도 불구하고 질문에 대한 SQL 쿼리를 해결할 수 있을 거에요.
 
@@ -69,7 +112,18 @@ LLM과 유사하게, 어떤 맥락을 제공해야 해요. 따라서 우리의 �
 
 # 데이터셋 준비
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잠시 찾아보니 huggingface의 “gretelai/synthetic_text_to_sql” 데이터셋을 찾았어요. 제가 찾고 있던 작업에 가장 적합한 것 같아요. 데이터셋에 대해 더 많은 정보를 얻으려면 링크를 클릭해주세요.
 
@@ -101,7 +155,18 @@ DatasetDict({
 dataset['train'][0]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터셋이 무엇인지 감을 잡기 위해 하나의 샘플을 살펴봅시다. 여기서 우리는 "sql_context," "sql_prompt," 그리고 "sql" 필드를 사용할 것입니다.
 
@@ -120,7 +185,18 @@ dataset['train'][0]
  'sql': 'SELECT salesperson_id, name, SUM(volume) as total_volume FROM timber_sales JOIN salesperson ON timber_sales.salesperson_id = salesperson.salesperson_id GROUP BY salesperson_id, name ORDER BY total_volume DESC;'}
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 정리를 해봅시다
 
@@ -132,7 +208,18 @@ dataset['train'][0]
 - 테이블은 샘플 레코드를 가져야 합니다.
 - SQL 쿼리를 실행한 후에 결과를 얻을 수 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import sqlite3
@@ -176,7 +263,18 @@ DatasetDict({
 
 ## 하위 집합 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼,이 초기 실험을 위한 데이터셋이 훨씬 큽니다. 이를 위해 그 중 일부를 만들어 보겠습니다.
 
@@ -212,7 +310,18 @@ DatasetDict({
 })
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-SupervisedfinetuningSFTofMicrosoftPhi2forText2SQLTaskPart1_3.png" />
 
@@ -222,7 +331,18 @@ DatasetDict({
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문서에서는 SLM이 무엇인지 알아보고 fine-tuning을 통해 Text2SQL 작업을 어떻게 해결할 것인지에 대한 아이디어를 얻게 됩니다.
 

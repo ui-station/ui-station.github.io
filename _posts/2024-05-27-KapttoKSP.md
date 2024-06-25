@@ -3,13 +3,12 @@ title: "새로운 Kotlin 어노테이션 프로세서 KSP를 사용해보세요"
 description: ""
 coverImage: "/assets/img/2024-05-27-KapttoKSP_0.png"
 date: 2024-05-27 16:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-KapttoKSP_0.png
 tag: Tech
 originalTitle: "Kapt to KSP"
 link: "https://medium.com/@rk27/kapt-to-ksp-61a65208393c"
 ---
-
 
 안녕하세요 여러분, 이번 시리즈를 통해 KAPT에서 KSP로 변경하는 것에 대해 이야기할 거예요.
 
@@ -19,7 +18,18 @@ KAPT(코틀린 어노테이션 처리 도구)는 코틀린 코드에서 자바 �
 
 프로젝트 최상위 build.gradle.kts 파일에 KSP 플러그인을 포함하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 플러그인 {
@@ -37,21 +47,42 @@ KAPT(코틀린 어노테이션 처리 도구)는 코틀린 코드에서 자바 �
 
 KAPT 라이브러리를 KSP로 교체해주세요
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
     kapt 'androidx.room:room-compiler:2.5.0' //제거
     ksp 'androidx.room:room-compiler:2.5.0'  //추가
 ```
-  
+
 이 종속성을 추가한 후에 프로젝트를 동기화하세요.
 
 프로젝트에서 KAPT 플러그인을 제거하세요:
 
 더는 KAPT 요구 사항이 필요하지 않을 때 KAPT 플러그인을 삭제하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 plugins {

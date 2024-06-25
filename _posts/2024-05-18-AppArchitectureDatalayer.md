@@ -3,14 +3,12 @@ title: "응용 프로그램 아키텍처 데이터 레이어"
 description: ""
 coverImage: "/assets/img/2024-05-18-AppArchitectureDatalayer_0.png"
 date: 2024-05-18 17:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-AppArchitectureDatalayer_0.png
 tag: Tech
 originalTitle: "App Architecture: Data layer"
 link: "https://medium.com/proandroiddev/app-architecture-data-layer-8d681e8f8a6d"
 ---
-
-
 
 ![AppArchitectureDatalayer_0](/assets/img/2024-05-18-AppArchitectureDatalayer_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/proandroiddev/app-architecture-data-layer-8d681e8f8a6d
 
 데이터 레이어는 앱의 나머지 부분에 데이터를 노출하는 역할을 합니다. 다양한 데이터 소스를 관리하고 그들 사이의 충돌을 처리합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 저장소
 
@@ -31,7 +39,18 @@ link: "https://medium.com/proandroiddev/app-architecture-data-layer-8d681e8f8a6d
 
 ## 네이밍 규칙
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레포지토리 클래스는 담당하는 데이터를 따라 이름이 지어집니다.
 
@@ -41,7 +60,18 @@ link: "https://medium.com/proandroiddev/app-architecture-data-layer-8d681e8f8a6d
 
 ## 데이터 소스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레포지토리는 다양한 데이터 소스를 관리합니다 (예: 로컬, 메모리, 네트워크). 이 작업을 담당하는 구성 요소는 DataSource입니다. 이는 데이터베이스, 네트워크, ShearedPreference, WorkManager 및 파일과 같은 데이터 소스와 레포지토리 사이의 추상화입니다.
 
@@ -52,7 +82,18 @@ link: "https://medium.com/proandroiddev/app-architecture-data-layer-8d681e8f8a6d
 
 데이터 소스 클래스는 그들이 책임지는 데이터와 사용하는 소스를 기반으로 명명됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 유형 + 소스 유형 + DataSource.
 
@@ -62,9 +103,20 @@ link: "https://medium.com/proandroiddev/app-architecture-data-layer-8d681e8f8a6d
 
 UserApi 인터페이스는 네트워크 API 클라이언트의 구현을 숨깁니다. Retrofit 또는 GraphQL이 인터페이스를 지원하는데 차이가 없습니다. 인터페이스에 의존함으로써 앱에서 API 구현을 교체할 수 있습니다. 또한 이러한 방식은 유연성을 제공하며 의존성을 쉽게 교체할 수 있도록 합니다. 예를 들어, 테스트에서 가짜 데이터 소스 구현을 주입할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-데이터 원본은 오류 발생 시 예외 처리를 하는 좋은 위치입니다. 애플리케이션에 데이터 원본과 관련된 예외를 노출시키지 말고 대신 애플리케이션이 처리할 수 있는 예외로 매핑해야 합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+데이터 원본은 오류 발생 시 예외 처리를 하는 좋은 위치입니다. 애플리케이션에 데이터 원본과 관련된 예외를 노출시키지 말고 대신 애플리케이션이 처리할 수 있는 예외로 매핑해야 합니다.
 
 이전에 언급했던 대로, 리포지토리는 데이터 소스와 동시성을 관리하는 데 더 중점을 둔 것입니다.
 
@@ -72,7 +124,18 @@ UserApi 인터페이스는 네트워크 API 클라이언트의 구현을 숨깁�
 
 ## 수명주기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가능하다면 리포지토리를 무상태로 만들 것을 권장합니다. 동시에 싱글톤으로 유지하여(instance-duplication of data sources와 같은 버그를 피하기 위해 DI를 통해 관리) 안정성을 높일 수 있습니다. DataSource도 마찬가지로 싱글톤으로 만들고 캐시는 리포지토리에서 관리하는 것을 권장합니다.
 
@@ -82,7 +145,18 @@ UserApi 인터페이스는 네트워크 API 클라이언트의 구현을 숨깁�
 
 # 모델
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 레이어에는 도메인 레이어에서 모델을 반영하는 데이터 모델이 있지만 표현이 다를 수 있습니다. 별도의 데이터 모델을 사용하면 전송 프로토콜에 맞게 사용자 정의할 수 있는 유연성을 제공합니다. 예를 들어, 서버와 클라이언트 간의 통신에 JSON 형식을 사용하고 일부 필드는 JSON 프로토콜에 더 적합한 다른 유형을 가질 수 있습니다. 도메인 모델을 DTO로 매핑하는 로직 및 그 반대는 Repository 클래스에 배치되어야 합니다.
 
@@ -95,7 +169,18 @@ UserApi 인터페이스는 네트워크 API 클라이언트의 구현을 숨깁�
 
 모델 클래스는 책임을 지는 데이터 유형의 이름으로 지어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 유형 + DTO.
 
@@ -123,7 +208,18 @@ data/
 │ ├─ TicketsDataRepository
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리
 

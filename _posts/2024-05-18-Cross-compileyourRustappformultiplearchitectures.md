@@ -3,14 +3,12 @@ title: "러스트 앱을 여러 아키텍처용으로 크로스 컴파일하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-Cross-compileyourRustappformultiplearchitectures_0.png"
 date: 2024-05-18 19:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-Cross-compileyourRustappformultiplearchitectures_0.png
 tag: Tech
 originalTitle: "Cross-compile your Rust app for multiple architectures"
 link: "https://medium.com/gitconnected/cross-compile-your-rust-app-for-multiple-architectures-069bf98d0728"
 ---
-
-
 
 <img src="/assets/img/2024-05-18-Cross-compileyourRustappformultiplearchitectures_0.png" />
 
@@ -20,8 +18,18 @@ Rust는 앱 개발을 위한 포맷부터 문서 작성까지 포괄적인 도�
 
 크로스 컴파일 작업을 시작하기 전에, 특정 사전 준비물이 갖추어져 있어야 합니다. 계속 진행하기 전에 다음 사항을 확인하세요:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Rust이 컴퓨터에 설치되어 있습니다.
 - 당신은 싱글보드 컴퓨터 또는 컴퓨터와 다른 아키텍처를 가진 장치를 사용하고 있습니다. (저는 STM32MP1을 사용하지만 라즈베리파이, 비글본 또는 다른 장치를 사용할 수 있습니다)
@@ -34,7 +42,18 @@ Rust는 앱 개발을 위한 포맷부터 문서 작성까지 포괄적인 도�
 
 이제 백그라운드에서 실행되는 간단한 HTTP 서버를 생성할 준비가 되었습니다. Rust는 이 작업을 수행하기 위한 여러 우수한 옵션을 제공합니다. 저는 이 작업을 수행하기 위해 Axum을 선호합니다. 이는 이전 프로젝트에서의 경험과 Tokio 비동기 런타임 팀과의 관련성으로 인해입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 Cargo.toml 파일에 필요한 종속성을 추가해야 합니다.
 
@@ -53,7 +72,18 @@ tokio = { version = "1.35.0", features = ["full"] }
 
 저희가 가장 크게 변경하는 부분은 127.0.0.1:3000에 바인딩하는 대신에 실제로 물리적 네트워크 인터페이스 상에서 노출되지 않는 루프백 주소인 0.0.0.0:3000에 바인딩한다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 이제 로컬에서 cargo run을 통해 다시 실행하고 모든 것이 잘 작동하면 터미널에 "listening on..." 메시지를 볼 수 있습니다. 그런 다음 브라우저 탭을 열어 http://localhost:3000/으로 이동하여 "Hello from another architecture!" 헤더가 포함된 페이지가 제공되는지 확인합니다.
 
@@ -63,7 +93,18 @@ tokio = { version = "1.35.0", features = ["full"] }
 
 Rust를 크로스 컴파일하려면 보드에서 사용 중인 아키텍처를 확인해야 합니다. 한 번 결정되면, 현재 Rust 툴체인에 적합한 타겟 플랫폼을 설치해야 합니다. Rust는 Tier1, Tier2 및 Tier3 수준으로 분류된 많은 아키텍처에 대한 광범위한 지원을 제공합니다. 이러한 티어 간의 차이점에 대한 포괄적인 이해를 위해 문서를 참조하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 제 STM32MP1 보드에는 ARMv7 32비트 프로세서가 탑재되어 있습니다. 공식 Rust 책에 따르면, 이 구성을 위한 필수 대상은 armv7-unknown-linux-gnueabihf입니다. 대략적으로, 선택한 대상 구성 요소는 다음과 같은 의미를 갖습니다:
 
@@ -78,7 +119,18 @@ Rust를 크로스 컴파일하려면 보드에서 사용 중인 아키텍처를 
 rustup target add armv7-unknown-linux-gnueabihf
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 이 명령어를 사용하여 교차 컴파일을 시도해 봅시다:
 
@@ -92,7 +144,18 @@ cargo build --release --target=armv7-unknown-linux-gnueabihf
 error: linking with `cc` failed: exit code: 1
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2진 파일이 성공적으로 컴파일되었지만 링킹 실패가 발생했습니다. 이 문제가 발생하는 이유는 우리 개발 머신에서 Cargo가 x86 바이너리나 호스트 시스템의 특정 아키텍처를 위해 구성된 cc 및 ld에 의존하기 때문입니다. 이로 인해 ARM 바이너리를 조립할 필요한 지식이 부족합니다. 이 작업에 더 적합한 링커를 사용하도록 Cargo를 안내해야 합니다. 또한 ARM 아키텍처와 관련된 컴파일 또는 링크 작업을 처음 시도하는 경우 필요한 도구를 아직 설치하지 않았을 가능성이 높습니다. 이 문제를 해결하려면 Ubuntu에서 다음 명령을 사용하십시오:
 
@@ -104,12 +167,21 @@ sudo apt install gcc-arm-linux-gnueabihf
 
 그러나 Cargo가 바이너리의 링킹 단계에서 이를 활용하도록하려면 안내가 필요합니다. 이를 위해 ./.cargo/config라는 새 파일을 만들어 다음 내용을 입력해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [target.armv7-unknown-linux-gnueabihf]
 linker = "arm-linux-gnueabihf-gcc"
-
 
 이렇게 하면 ARM-specific 버전의 gcc를 사용하여 armv7-unknown-linux-gnueabihf Rust target을 위해 컴파일된 이진 파일을 링킹하는데 cargo가 지시됩니다.
 
@@ -117,7 +189,18 @@ linker = "arm-linux-gnueabihf-gcc"
 
 좋아요, 이제 보드의 아키텍처에 맞는 올바른 컴파일 설정을 성공적으로 설정했으니, 여러 단계를 고려하여 프로세스를 간소화하기 위해 셸 파일을 스크립팅하는 것이 좋겠네요. 이 스크립트는 배포 워크플로를 자동화하여 실행을 더 쉽게 할 것입니다. 동일한 디렉토리에 deploy.rs라는 이름의 텍스트 파일을 생성하고 다음 콘텐츠를 추가합니다. 각 명령어의 기능에 대한 명확성을 위해 주석도 추가했어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 chmod +x ./deploy.rs와 같은 명령으로 스크립트를 실행 가능하게 만들어 줍니다. 그러면 ./deploy를 통해 직접 실행할 수 있습니다. 이제 바로 시도해 볼 수 있고, 만약 deploy 스크립트에 매개변수를 올바르게 작성했다면, 서버에서 "listening on 'your board ip address'"라는 로그 라인을 마침내 볼 수 있게 됩니다. 이는 서버가 최종적으로 대상 보드에서 올바르게 실행되고 있음을 의미합니다!
 
@@ -127,6 +210,17 @@ linker = "arm-linux-gnueabihf-gcc"
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 관찰해 보았을 때, 크로스 컴파일은 인내와 해당 하드웨어에 대한 이해가 필요합니다. 그러나 러스트의 생태계와 관련 도구를 활용하면, 처음에 예상했던 것보다 덜 어려울 수 있습니다. 독자 여러분, 감사합니다!

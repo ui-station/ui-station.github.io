@@ -10,7 +10,6 @@ originalTitle: "Region specific resources and broken localization — Androi
 link: "https://medium.com/proandroiddev/region-specific-resources-and-broken-localization-android-27a0d20734c6"
 ---
 
-
 ![이미지](/assets/img/2024-05-27-RegionspecificresourcesandbrokenlocalizationAndroid_0.png)
 
 이 기사의 일환으로, 우리 애플리케이션에서 로컬라이제이션 지원을 망가뜨린 리소스 구성에 대한 최근 경험을 설명하겠습니다.
@@ -19,8 +18,18 @@ link: "https://medium.com/proandroiddev/region-specific-resources-and-broken-loc
 
 우리의 클라이언트 애플리케이션은 라이브러리를 사용하여 이 UI에 노출됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 라이브러리 개발자들이 문자열 리소스를 넣은 파일들입니다 👇
 
@@ -31,19 +40,39 @@ link: "https://medium.com/proandroiddev/region-specific-resources-and-broken-loc
 
 👆에서 보듯이, 프랑스어 문자열을 캐나다 지역을 대상으로 하는 파일에 넣었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 애플리케이션에는 지역별이 아닌 프랑스어 문자열이 공통 파일에 저장되어 있어요👇
 
-
 ![이미지](/assets/img/2024-05-27-RegionspecificresourcesandbrokenlocalizationAndroid_2.png)
-
 
 앱 수준 build.gradle에 다음 구성을 추가하기 전에 예상대로 작동했습니다
 
 Kotlin
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 안드로이드 {
@@ -69,7 +98,18 @@ Kotlin
 
 # 이 설정은 무엇을 하는 건가요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Android 개발자 문서에서의 정의
 
@@ -79,7 +119,18 @@ Kotlin
 
 이 시점에서 우리 케이스에서 프랑스어 지원이 깨졌다는 이유를 이해하셨으면 좋겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 애플리케이션에는 두 가지 리소스만 필요하다는 구성이 추가되었습니다.👇
 
@@ -93,7 +144,18 @@ resourceConfigurations += ["en", "fr"]
 
 # 문제를 해결해보는 시간입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 빠르게 이 문제를 해결하기 위해 몇 가지 옵션이 있습니다:
 
@@ -112,7 +174,18 @@ android {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 2nd
 
@@ -122,6 +195,17 @@ android {
 
 https://www.linkedin.com/in/navczydev/
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고문헌

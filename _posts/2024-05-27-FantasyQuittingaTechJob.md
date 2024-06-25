@@ -3,13 +3,12 @@ title: "판타지 테크 직장 그만두기"
 description: ""
 coverImage: "/assets/img/2024-05-27-FantasyQuittingaTechJob_0.png"
 date: 2024-05-27 16:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-FantasyQuittingaTechJob_0.png
 tag: Tech
 originalTitle: "Fantasy Quitting a Tech Job"
 link: "https://medium.com/@tsecretdeveloper/fantasy-quitting-a-tech-job-4e2d8368a057"
 ---
-
 
 ![Image](/assets/img/2024-05-27-FantasyQuittingaTechJob_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tsecretdeveloper/fantasy-quitting-a-tech-job-4e2d8368
 
 걱정 마세요, 이런 행동은 하지 않을 거니까요 — 어떤 직장을 찾아 새롭게 시작할 때 하고 싶은 일에 대해 상상하는 중이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 한 방향의 부재
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@tsecretdeveloper/fantasy-quitting-a-tech-job-4e2d8368
 
 # 지금 말해요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 회의 중에 발언하는 것을 허락받지 못하는 상황이었어요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@tsecretdeveloper/fantasy-quitting-a-tech-job-4e2d8368
 
 매니저에게 빠른 5분을 요청하며 눈물을 글썽이며 사임서를 쓰다가 제출했어요. 그 이후로 그들에게 연락하지 않았죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 한 번 더 나를 반복해줘
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@tsecretdeveloper/fantasy-quitting-a-tech-job-4e2d8368
 
 몇 번의 회의를 통해 이것을 반복하면 나는 공식적으로 퇴사할 필요가 없겠군.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 현실
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@tsecretdeveloper/fantasy-quitting-a-tech-job-4e2d8368
 
 그래서 이렇게 될 것 같아. 내 매니저에게 5분만 해달라고 부탁하고 나가겠다고 하고, 그리고 이메일로 퇴사서를 보낼 거야.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 쓴 말 중 서글픔을 느끼게 할 단서는 나는 어디로 가는지 말하지 않겠다는 점밖에 없습니다. 하지만 '다른 곳에 간다'고 말하는 것보다 더 전문적인 거겠죠?
 
@@ -69,7 +123,18 @@ link: "https://medium.com/@tsecretdeveloper/fantasy-quitting-a-tech-job-4e2d8368
 
 네, 취직을 지원했어요. 말했어. 가야할 때가 되어서 불필요한 문제를 일으키지 말아야 하겠죠. 이 게임에서 다시 만날 수도 있으니까요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 저자 소개
 

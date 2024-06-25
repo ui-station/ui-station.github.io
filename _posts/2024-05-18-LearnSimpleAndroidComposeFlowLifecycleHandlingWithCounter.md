@@ -3,13 +3,12 @@ title: "간단한 안드로이드 Compose Flow 라이프사이클 처리 및 카
 description: ""
 coverImage: "/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_0.png"
 date: 2024-05-18 15:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_0.png
 tag: Tech
 originalTitle: "Learn Simple Android Compose Flow Lifecycle Handling With Counter"
 link: "https://medium.com/mobile-app-development-publication/learn-simple-android-compose-flow-lifecycle-handling-with-counter-36d62c88a2cd"
 ---
-
 
 ## 안드로이드 개발 배우기
 
@@ -19,7 +18,18 @@ link: "https://medium.com/mobile-app-development-publication/learn-simple-androi
 
 여기, 매우 간단한 디자인인 카운터를 고안해 보았습니다. 이를 통해 각종 간단한 라이프사이클 시나리오를 살펴볼 수 있습니다. 도움이 되길 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 간단한 흐름
 
@@ -37,7 +47,18 @@ val counter = flow {
 
 MainActivity에서 트리거된 Composable 함수에서는, 상태 변수로 수집하고 표시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val stateVariable = viewModel.counter.collectAsState(0)
@@ -50,7 +71,18 @@ Text("${stateVariable.value}")
 
 화면을 회전할 때마다(세로에서 가로로 변경할 때) 숫자가 다시 시작돼요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_1.png" />
 
@@ -60,7 +92,18 @@ Text("${stateVariable.value}")
 val stateVariable = viewModel.counter.collectAsState(0)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 컬렉션은 새로운 플로우 이벤트를 시작합니다. 따라서 화면을 회전할 때 카운터가 재설정됩니다.
 
@@ -70,7 +113,18 @@ val stateVariable = viewModel.counter.collectAsState(0)
 
 이 문제를 해결하기 위해 제가 고안한 해결책은 다음과 같습니다. 카운터 값을 플로우에 저장하는 대신 외부에서 정의하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 var value = 0
@@ -91,7 +145,18 @@ Text("${stateVariable.value}")
 
 <img src="/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_3.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법은 작동합니다. 그리고 꾸준히 계속 작동합니다.
 
@@ -101,7 +166,18 @@ Text("${stateVariable.value}")
 
 하지만 한 가지 문제가 있습니다. 앱을 백그라운드로 이동시키면 작동이 멈추지 않고 계속 실행됩니다 (활동이 종료되지 않고 계속 활성 상태로 남아 있음).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_5.png" />
 
@@ -111,7 +187,18 @@ Text("${stateVariable.value}")
 
 ## CollectAsStateWithLifecycle가 구조안으로 와서 구원을 줍니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋은 소식이 있어요. 구글에서 Manuel Vivo가 공유한 collectAsStateWithLifecycle을 소개했어요.
 
@@ -124,7 +211,18 @@ Text("${stateVariable.value}")
 
 <img src="/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_6.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잠시 일시 중단해볼게요
 
@@ -134,7 +232,18 @@ Text("${stateVariable.value}")
 
 ViewModel은 회전되더라도 앱이 계속 실행되도록 할 수 있어 좋습니다. 그러나 시스템에 의해 앱이 종료될 경우 계속 실행되지 않을 수 있습니다. 기기 메모리가 부족한 경우에는 OS가 백그라운드에서 실행 중인 앱을 종료할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 되면 우리 카운터에 무슨 일이 벌어집니다.
 
@@ -153,7 +262,18 @@ val counter = flow {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # StateFlow With Lifecycle Aware
 
@@ -165,7 +285,18 @@ val stateFlow = savedStateHandle.getStateFlow(KEY, 0)
 
 flow와는 달리, stateFlow는 hot flow입니다. 이는 stateFlow 자체에서 값이 발행되지 않고, 외부에서 값을 받는다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, ViewModel에서 아래의 간단한 코드를 가지고 있어요.
 
@@ -184,12 +315,23 @@ init {
 그리고 Activity에서는 아래와 같이 수집도 해요.
 
 ```js
-val stateVariable 
+val stateVariable
     = viewModel.stateFlowCounter.collectAsStateWithLifecycle()
 Text("${stateVariable.value}")
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법은 상태Flow 변수를 저장하고 복원하므로 좋습니다.
 
@@ -199,7 +341,18 @@ Text("${stateVariable.value}")
 
 stateFlow는 핫 플로우이며, 발행 프로세스도 ViewModel에 있기 때문에 발행 프로세스는 라이프사이클을 인식하지 못한 채 계속 실행됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 init {
@@ -218,7 +371,18 @@ init {
 
 회전 문제와 저장 및 복원 문제를 해결했습니다. 그러나 백그라운드에서 일시 중지되지 않는 문제가 되돌아왔습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 이미지를 참고해 주세요.
 
@@ -227,7 +391,18 @@ init {
 답을 찾기 위해 검색한 후, 답을 찾도록 도와준
 Manuel Vivo님에게 감사드립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간략하게 말하자면, stateFlow에 대해 WhileSubscribed를 사용하여 구독자(수집 중인)가 있는 경우에만 stateFlow가 활성화되도록 해야합니다.
 
@@ -253,7 +428,18 @@ init {
 
 이렇게 해야합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val stateVariable
@@ -267,8 +453,18 @@ Text("${stateVariable.value}")
 
 원하는 동작을 모두 갖게 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지1](/assets/img/2024-05-18-LearnSimpleAndroidComposeFlowLifecycleHandlingWithCounter_13.png)
 
@@ -278,8 +474,18 @@ Text("${stateVariable.value}")
 
 # TL;DR
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 Google에서 권장하는 Lifecycle Aware한 Flow를 원한다면,
 

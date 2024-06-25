@@ -3,13 +3,12 @@ title: "여름 피부를 빛나게 하는 각질 제거"
 description: ""
 coverImage: "/assets/img/2024-05-18-ExfoliatingforSummerGlow_0.png"
 date: 2024-05-18 19:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-ExfoliatingforSummerGlow_0.png
 tag: Tech
 originalTitle: "Exfoliating for Summer Glow"
 link: "https://medium.com/@snobahar1352/exfoliating-for-summer-glow-627a299c86db"
 ---
-
 
 여름에 우리 피부는 땀과 기름을 더 처리해야 합니다, 특히 더운 다습한 날씨에서는 모공이 막힌 기름진 피부를 초래합니다. 땀, 선크림, 염소소독약, 소금물 등이 흔하며, 이에 대비하여 거품을 내는 세안제와 SPF가 들어간 가벼운 보습제를 사용하는 스킨케어 루틴이 필요합니다. 개선된 각질 제거는 여름 피부 문제에 효과적으로 대처하기 위해 필수적입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@snobahar1352/exfoliating-for-summer-glow-627a299c86db
 
 여름에는 귀한 각질 제거가 더욱 필수적이며, 죽은 피부세포를 빠르게 제거하여 피부의 홍조를 유지할 뿐만 아니라 더 효과적인 탈부각을 보장하여 피부의 생기를 유지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 엑스폴리에이션의 두 가지 주요 방법이 있습니다
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@snobahar1352/exfoliating-for-summer-glow-627a299c86db
 
 화학적 엑스폴리에이션은 AHAs나 BHAs와 같은 산 또는 효소를 사용하여 피부 속까지 깊이 스며들고 부드럽습니다. 알려진 AHAs로는 젖산 및 글리콜산 등이 있으며, 미세 주름, 주름, 모공, 그리고 피부 톤 불균일을 개선합니다. 살리실릭산 또는 버들나무 껍질 추출물과 같은 BHAs는 여드름, 블랙헤드, 화이트헤드, 그리고 햇볕으로부터 온 피부 손상의 외관을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 물리적 각질제거
 
@@ -40,13 +61,24 @@ link: "https://medium.com/@snobahar1352/exfoliating-for-summer-glow-627a299c86db
 
 피부가 얇거나 민감한 경우 화학적 각질제거제가 가장 적합할 수 있지만, 꼭 미리 패치 테스트를 해보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 여름에 안전하고 효과적인 각질 제거: 완벽한 결과를 위한 팁
 
 - 먼저, 피부 타입에 맞는 올바른 각질 제거제를 선택하세요.
-지성 피부인 경우 물리 각질 제거제를 선택하세요.
-건성 피부인 경우 더 부드러운 효소(화학) 각질 제거제를 선택하세요. 복합성 피부는 두 가지 타입을 사용하는 것이 좋습니다. 항상 패치 테스트를 먼저 해보세요.
+  지성 피부인 경우 물리 각질 제거제를 선택하세요.
+  건성 피부인 경우 더 부드러운 효소(화학) 각질 제거제를 선택하세요. 복합성 피부는 두 가지 타입을 사용하는 것이 좋습니다. 항상 패치 테스트를 먼저 해보세요.
 - 여름에는 부드럽지만 효과적으로 미지근하고 효생한 각질 제거제를 선택하세요.
 - DIY 스크럽에 대해 확인해보세요. 자연 및 유기농 성분을 사용한 많은 레시피를 찾을 수 있으며 도움이 될 수 있습니다.
 - 이어서 정기적으로 각질을 제거하세요. 이렇게 하면 피부를 부드럽게 유지하고 다른 스킨케어 제품이 더 잘 작용할 수 있습니다.

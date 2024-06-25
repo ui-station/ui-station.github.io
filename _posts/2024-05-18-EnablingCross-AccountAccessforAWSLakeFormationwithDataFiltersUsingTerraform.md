@@ -3,13 +3,12 @@ title: "AWS Lake Formation에서 데이터 필터를 사용하여 Terraform을 �
 description: ""
 coverImage: "/assets/img/2024-05-18-EnablingCross-AccountAccessforAWSLakeFormationwithDataFiltersUsingTerraform_0.png"
 date: 2024-05-18 16:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-EnablingCross-AccountAccessforAWSLakeFormationwithDataFiltersUsingTerraform_0.png
 tag: Tech
 originalTitle: "Enabling Cross-Account Access for AWS Lake Formation with Data Filters Using Terraform"
 link: "https://medium.com/@thulasirajkomminar/enabling-cross-account-access-for-lake-formation-with-data-filters-using-terraform-ed6e51528c3a"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@thulasirajkomminar/enabling-cross-account-access-for-
 
 ## 데이터 필터 수준
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 열 수준
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@thulasirajkomminar/enabling-cross-account-access-for-
 
 행 수준 필터링을 사용하여 데이터 카탈로그 테이블에 대한 권한을 부여하면 사용자가 액세스 권한이 있는 데이터의 특정 행만 볼 수 있습니다. 필터링은 하나 이상의 열 값에 기반하며, 중첩 열 구조도 행 필터 식에 포함할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 셀 수준
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@thulasirajkomminar/enabling-cross-account-access-for-
 
 이미 이전 블로그에서 자세히 설명한 Source Account에서 Lake Formation 설정을 완료했다고 가정하면, 이제 데이터 필터를 만드는 작업을 진행할 수 있습니다. IIoT 측정을 사용한 예제를 사용해보겠습니다. 여러 사이트에 퍼져있는 장비가 있고 특정 IAM 역할에 특정 사이트 및 열 액세스를 부여해야 하는 경우를 가정해보겠습니다. 이를 Terraform을 사용하여 어떻게 구현할지 알아보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 예시에서:
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@thulasirajkomminar/enabling-cross-account-access-for-
 
 이 설정을 통해 특정 IAM 역할이 정의된 사이트 및 열에만 액세스할 수 있도록 하여 보안과 데이터 관리를 강화할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 대상 계정과 공유 카탈로그
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@thulasirajkomminar/enabling-cross-account-access-for-
 
 이 스니펫에서는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터베이스 권한 공유: aws_lakeformation_permissions 리소스는 IIoTDataLake 데이터베이스를 대상 계정과 공유하여 DESCRIBE 권한을 부여합니다.
 - 테이블 권한 공유: 비슷하게, 해당 리소스는 측정 테이블을 대상 계정과 공유하며 SELECT 권한을 부여합니다. 이전에 생성한 데이터 필터도 포함되어 대상 계정이 정의된 기준에 따라 필터링된 데이터에만 액세스할 수 있도록 보장합니다.
@@ -70,8 +124,18 @@ link: "https://medium.com/@thulasirajkomminar/enabling-cross-account-access-for-
 
 대상 계정에 카탈로그와 테이블을 데이터 필터와 함께 공유한 후, 공유된 카탈로그 데이터에 액세스하기 위해 대상 계정으로 이동하여 리소스 링크를 설정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-EnablingCross-AccountAccessforAWSLakeFormationwithDataFiltersUsingTerraform_3.png)
 
@@ -82,8 +146,18 @@ In this setup:
 
 By creating this resource link, you enable seamless access to the shared data catalog from the target account, facilitating data utilization and analysis across accounts while maintaining security and compliance measures.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # IAM 역할에 권한 부여
 
@@ -93,7 +167,18 @@ By creating this resource link, you enable seamless access to the shared data ca
 
 이 구성에서:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터베이스 권한 부여: aws_lakeformation_permissions 리소스는 IIoTDataLake-Target 데이터베이스의 IAM 역할에 DESCRIBE 권한을 부여합니다. 이를 통해 역할은 데이터베이스 구조와 메타데이터를 설명할 수 있습니다.
 - 테이블 권한 부여: 마찬가지로, 해당 리소스는 공유 카탈로그의 measurements 테이블에 대한 SELECT 권한을 IAM 역할에 부여합니다. 이를 통해 역할은 테이블에서 데이터를 선택하고 읽을 수 있습니다.
@@ -104,7 +189,18 @@ By creating this resource link, you enable seamless access to the shared data ca
 
 이 블로그에서는 AWS Lake Formation과 Terraform을 사용하여 계정간 데이터 공유의 복잡성에 대해 살펴보았습니다. 데이터 필터를 구현하고 리소스 링크를 설정함으로써, 공유 데이터에 안전한 액세스를 보장하면서 권한을 세밀하게 제어할 수 있었습니다. 이러한 간소화된 접근 방식은 계정간 협업적인 데이터 분석을 용이하게하며, 팀이 효과적으로 통찰력을 얻을 수 있도록 도와주면서 데이터 보안 및 규정 준수 기준을 유지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료
 

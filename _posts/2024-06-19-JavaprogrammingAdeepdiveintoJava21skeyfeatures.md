@@ -3,13 +3,12 @@ title: "자바 프로그래밍 Java 21의 주요 기능을 깊이 탐구해 보�
 description: ""
 coverImage: "/assets/img/2024-06-19-JavaprogrammingAdeepdiveintoJava21skeyfeatures_0.png"
 date: 2024-06-19 21:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-JavaprogrammingAdeepdiveintoJava21skeyfeatures_0.png
 tag: Tech
 originalTitle: "Java programming: A deep dive into Java 21’s key features"
 link: "https://medium.com/capital-one-tech/java-programming-a-deep-dive-into-java-21s-key-features-8776f75bc6b8"
 ---
-
 
 ## 자바의 계속되는 중요성: 언어 진화에 대한 깊은 이해
 
@@ -19,7 +18,18 @@ link: "https://medium.com/capital-one-tech/java-programming-a-deep-dive-into-jav
 
 그렇다면, 왜 스칼라를 사용하지 않았을까요? 자바를 선택한 이유 중 일부는 언어에 대한 새로운 흥미로운 개선 사항이 있었기 때문이며, 자바의 현재 상태인 생태계, 프레임워크 및 라이브러리를 좀 더 탐색하고 싶었기도 했습니다. JVM 플랫폼을 대상으로 한 다른 최신 언어들은 많지만, 그 중에서도 스칼라와 코틀린이 가장 많은 관심을 받은 것은 자바와 마찬가지로 강력하고 정적으로 타이핑된 프로그래밍 언어입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 자바 대 스칼라 대 코틀린 비교
 
@@ -29,7 +39,18 @@ link: "https://medium.com/capital-one-tech/java-programming-a-deep-dive-into-jav
 
 ## 개발자들은 자바를 높게 평가합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스칼라, 코틀린 및 자바의 채택 및 인기에 대해 알아보겠습니다. 스택 오버플로 조사 및 TIOBE 그리고 Redmonk 언어 인기 지수를 살펴볼 예정입니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/capital-one-tech/java-programming-a-deep-dive-into-jav
 
 ## Redmonk 언어 지수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2023년 1월 현재 Redmonk 지수를 확인해보세요. 이 지수는 Github와 Stack Overflow 데이터를 기반으로 합니다. Java가 상위에 랭크되어 있고 Scala와 Kotlin도 비교적 높은 순위를 차지하고 있네요.
 
@@ -49,8 +81,18 @@ link: "https://medium.com/capital-one-tech/java-programming-a-deep-dive-into-jav
 
 이제 TIOBE 지수를 살펴보겠습니다. 이 지수는 25개 다른 검색 엔진에서의 검색어를 고려합니다. Java 또한 상위 언어 중 하나로 랭크되어 있습니다. Scala와 Kotlin은 상위 10위 안에 들지 못해서 차트에 표시되지 않았지만, 2023년 기준 Scala는 15위, Kotlin은 36위에 랭크되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Java Programming](/assets/img/2024-06-19-JavaprogrammingAdeepdiveintoJava21skeyfeatures_3.png)
 
@@ -60,8 +102,18 @@ Java는 여전히 Kotlin 및 Scala와의 강력한 경쟁 속에서 매우 인�
 
 Java가 최근 몇 년간 무엇을 해 왔는지 및 강한 인기에 기여하는 다른 요소들을 살펴보겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 인기는 Java의 DNA와 관련이 있습니다. Java의 DNA에는 강력한 하위 호환성을 유지하기로 한 의무가 포함되어 있습니다. 최근 몇 년간 투입적인 하위 호환성 파괴가 몇 차례 있었지만 이는 언어와 도구의 개선을 지원하기 위한 것입니다. 그러나 이러한 변경에 대해 평소보다 많은 고려와 타당한 이유가 있습니다. 이것이 Java가 기업 환경에서 인기를 얻는 큰 이유 중 하나입니다. JVM 플랫폼의 안정성이 더 많은 엔지니어가 생산적이며 비즈니스 문제 해결과 코드 출시에 집중할 수 있도록 해줍니다.
 
@@ -71,7 +123,18 @@ Java 9부터 OpenJDK는 "준비되었을 때 출시"에서 6개월 주기로 변
 
 이를 통해 개발자 커뮤니티가 피드백을 제공하고 다음 정기 릴리스에 최종화될 구현을 형성하는 데 도움을 줄 수 있습니다. 몇 년에 한 번씩 Oracle은 LTS (장기 지원 릴리스) 릴리스로 태깅된 다음 다른 JDK 공급 업체도 따를 것입니다. 예를 들어, Amazon Web Services는 Corretto JDK라는 자체 JDK 빌드를 유지하며 이에 대해 AWS가 장기적인 지원을 제공할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-JavaprogrammingAdeepdiveintoJava21skeyfeatures_4.png" />
 
@@ -81,7 +144,18 @@ Java의 또 다른 핵심인 마지막 이동자 장점에 대해 이야기해�
 
 # Java 10의 'var' 키워드가 언어의 불필요한 길이에 미치는 영향
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 최신 언어에 이미 숙달된 개발자들이 Java를 배우고 있는 경우, 가장 싫어하는 점을 물어보면, 말이 많다는 것이 상위권에 오릅니다. Java 10이 출시되기 전까지는 할당의 왼쪽에 변수 유형을 명시적으로 선언해야 했습니다. Java 10에서는 실제 유형 대신 사용할 수 있는 새로운 특별한 "var" 키워드가 도입되었습니다. 컴파일 단계에서 Java 컴파일러가 할당의 오른쪽 표현식에서 추론된 실제 유형을 삽입할 것입니다.
 
@@ -105,7 +179,18 @@ var accessRole = user.getUserAccessRole();
 
 예를 들어, Scala는 2004년에 처음 만들어진 이후부터 더 진보된 형식 추론을 가지고 있습니다. 그럼에도 불구하고, 이것은 Java에서 매우 환영받는 기능입니다. 형식 추론은 로컬 변수 선언에만 제한되는데, 즉 메소드 본문에서, 실제로 그것이 가장 중요한 곳입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## instanceof와 패턴 매칭으로 타입 체크 과제 극복하기
 
@@ -115,7 +200,18 @@ instanceof는 주어진 객체가 특정 타입인지 확인하기 위해 사용
 
 이 경우 해결책은 한 가지뿐입니다: 사각형 또는 원인지 확인하고 그에 따라 둘레를 계산하는 유틸리티 메서드를 구현하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 인터페이스 모양 {}
@@ -165,7 +261,18 @@ instanceof의 패턴 매칭을 사용하면 if-else 블록의 범위 내에서 �
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 컴파일러의 좋은 개선이에요. 점점 똑똑해지고 더 나아졌어요. instanceof를 위한 패턴 매칭은 자바의 나중 버전에서 계속 확장되었던 큰 노력이었고, 레코드 클래스에 대한 패턴 매칭도 포함되었는데, 다음으로 다루고 싶은 큰 기능입니다.
 
@@ -175,7 +282,18 @@ instanceof의 패턴 매칭을 사용하면 if-else 블록의 범위 내에서 �
 
 ## 다음 예시를 살펴보죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class Person {
@@ -184,7 +302,7 @@ public class Person {
     public final Integer age;
 
     public Person(String id, String name, Integer age) {
-        this.id = id; 
+        this.id = id;
         this.name = name;
         this.age = age;
     }
@@ -232,7 +350,18 @@ public class Person {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 할 일이 상당히 많다는 것을 알게 되었네요. 객체를 비교하는 규칙을 정의하기 위해 equals 및 hashCode를 override해야 합니다. 롬복(Lombok)과 같은 라이브러리는 이러한 메서드를 생성해주므로 직접 작성하지 않아도 됩니다. 그러나 이제 Java에는 이를 고유하게 처리할 수 있는 방법이 있습니다.
 
@@ -251,7 +380,18 @@ p1 == p2; //false, 여전히 두 개의 다른 인스턴스이기 때문에 예�
 
 ## Java records의 'with' 탐색하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Java 컴파일러는 우리를 위해 bytecode를 즐겁게 생성해 줍니다. equals와 hashCode 메서드를 구현하기 위해 정의된 모든 매개변수를 고려합니다. 레코드 클래스는 toString 및 getter 메서드를 제공하지만 setter는 제공하지 않습니다. 레코드 클래스는 변경할 수 없도록 설계되어 있어 한 번 인스턴스가 생성되면 객체 멤버들을 읽기만 가능하고 값을 변경할 수 없습니다.
 
@@ -263,7 +403,18 @@ p1 == p2; //false, 여전히 두 개의 다른 인스턴스이기 때문에 예�
 
 이미 이를 해결하기 위해 도움이 되는 몇 가지 라이브러리가 있습니다. record-builder라는 이 github 프로젝트를 살펴볼 수 있습니다. 레코드 객체를 수정하는 제한사항을 해결하는 것 외에도 더 복잡한 데이터 클래스에 매우 유용한 빌더를 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바 레코드에는 이 예시가 보여주는 것 이상의 기능이 있습니다. 레코드의 다른 기능은 사용자 정의 생성자 정의 능력이 있고 기본 데이터에 작용할 수 있는 일반적인 메소드를 정의할 수 있는 것입니다. 또한 레코드의 직렬화는 변경 불가능성에 의해 일반 클래스의 인스턴스의 직렬화보다 간단하고 안전합니다. 레코드는 또한 값을 분해하여 사용할 수 있으며, 다음 기능, 레코드용 패턴 매칭에 활용되는 것입니다.
 
@@ -273,7 +424,18 @@ p1 == p2; //false, 여전히 두 개의 다른 인스턴스이기 때문에 예�
 
 이게 전부가 아닌 걸로 갑시다. 패턴 매칭이란 무엇인가요? 클래스 생성자의 반대로 생각할 수 있습니다. 클래스 생성자는 데이터를 제공하여 객체를 생성할 수 있게 해주는 반면, 패턴 매칭은 객체 생성에 사용된 데이터를 분해하거나 추출할 수 있게 해줍니다. 실제로 이것이 어떻게 보이는지 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 패턴 매칭 예제
 
@@ -301,7 +463,18 @@ List transactions = List.of(
 
 만약 우리가 트랜잭션을 정의하는 코드베이스에 액세스할 수 없거나, 이 코드 부분이 잔액을 계산하는 책임을 지지 않아야한다고 가정해 봅시다. 우리 코드에서 calculateAccountBalance를 구현하는 한 가지 방법은 다음과 같습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public static Integer calculateAccountBalance(List transactions) {
@@ -340,8 +513,18 @@ public static Integer calculateAccountBalance(List transactions) {
 
 이 코드는 조금 더 깔끔하고 장황하지 않게 보입니다. switch 키워드에 주목하세요. Java에는 오랫동안 사용 가능했습니다. Java 17에서 switch는 람다와 익숙한 문법을 지원하는 표현식을 지원하도록 했고, Java 19 및 21에서는 switch가 레코드에 대한 패턴 매칭을 지원하도록 더욱 향상되었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Pattern matching을 사용할 때에는 첫 번째 경우에 나타난 것처럼 타입의 인스턴스를 참조하거나 두 번째와 세 번째 경우처럼 타입을 그 구성 요소로 분해할 수 있습니다. switch에 대한 패턴 매칭은 또한 새로운 when 키워드를 사용하여 부울 표현식에 따라 패턴을 일치시키는 것을 가능하게 합니다. 예를 들어, 동일한 타입을 여러 번 다른 조건으로 일치시키고 각 경우마다 다른 로직을 실행할 수 있습니다.
 
@@ -349,7 +532,18 @@ Pattern matching을 사용할 때에는 첫 번째 경우에 나타난 것처럼
 
 레코드에 대한 패턴 매칭의 사용 편의성은 Java 17에 다시 도입된 다른 언어 기능, sealed classes and interfaces ( JEP409)에 의해 더욱 개선되었습니다. 인터페이스를 sealed로 표시하면 Compiler에게 Transaction에 대한 구현이 한정적이라는 정보를 제공하므로, Compiler가 패턴 매칭에서 모든 경우가 처리되었는지를 확인할 수 있습니다. 구현 클래스는 sealed 인터페이스와 동일한 파일에 위치시키거나 인터페이스에서 permit 키워드를 사용하여 닫힌 유형 계층 구조를 지정할 수 있습니다(자세한 내용은 JEP를 참조하십시오).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리의 코드는 모든 경우를 처리하지 못했을 때 컴파일되지 않을 것입니다. 그러나 이를 보장하려면 보통 빠뜨릴 수 있는 부분을 처리하는 기본 케이스를 제거해야 합니다.
 
@@ -378,16 +572,37 @@ public static Integer calculateAccountBalance(List transactions) {
 
 이제 컴파일러는 다음과 같은 친절한 오류 메시지로 중단할 것입니다 — "컴파일 실패: switch 문이 모든 가능한 값을 다 다루지 않았습니다".
 
-
 인터페이스에 sealed 키워드를 사용하는 것은 초기 구현시 if-else 블록을 사용하는 것만큼 유용하지 않았습니다. 따라서 여기서는 패턴 매칭이 더 유리합니다. 이 글에서 다루지 않은 sealed 인터페이스/클래스에는 더 많은 내용이 있지만, 언어의 여러 기능이 잘 결합되어 코드의 견고성을 향상시키는 방법을 보여주는 예 중 하나입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 설명한 문제를 해결하기 위해 방문자 디자인 패턴을 사용할 수 있다는 사실을 언급할 가치가 있습니다. 그러나 이 패턴은 상당히 더 많은 복잡성과 코드 양을 도입합니다. Java 21은 봉인된 인터페이스와 패턴 매칭이 도입된 Java 17 이후의 기능을 더해 출시된 기능이 많은 버전입니다. 대규모 기업에서는 일반적으로 LTS 버전만 사용을 허용하므로 Java 21이 다음 LTS 릴리스로 선정된 것은 훌륭한 소식입니다.
 
 이 게시물에서 언급하지 않은 많은 흥미로운 새로운 기능들이 있습니다. Virtual Threads인 프로젝트 룸은 아마도 Java 21에서 마무리된 가장 기대되는 기능일 것이지만, 이는 별도의 블로그 게시물이 필요한 큰 주제이기 때문에 다루기 어렵습니다. OpenJDK 웹사이트에서 최근 JDK 21 릴리스에 대해 더 많은 정보를 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바는 안정적이고 책임감 있는 방식으로 발전하는 경향이 있습니다. 소프트웨어 업계가 어떻게 변화하는지와 언어 기능을 유지하기 위해 필요한 기능을 주의 깊게 관찰하면서, 기능을 신중하게 구현하고 역호환성을 보장합니다.
 
@@ -397,7 +612,18 @@ Capital One의 소프트웨어 엔지니어링에 대해 더 알아보세요.
 
 원문은 https://www.capitalone.com에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작성자: 마신 코사코프스키, 선임 소프트웨어 엔지니어. 마신은 스몰 비즈니스 카드에서 새로운 카드 제품을 만드는 데 도움을 주는 선임 소프트웨어 엔지니어입니다. 데이터 엔지니어링, 분산 및 이벤트 기반 시스템에 열정을 갖고 있습니다. 여가 시간에는 하이킹과 마운틴 바이크를 즐깁니다.
 

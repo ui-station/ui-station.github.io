@@ -3,13 +3,12 @@ title: "컨테이너 세계에서 Runc 대 Crun"
 description: ""
 coverImage: "/assets/img/2024-05-23-RuncvsCrunincontainersworld_0.png"
 date: 2024-05-23 14:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-RuncvsCrunincontainersworld_0.png
 tag: Tech
 originalTitle: "Runc vs Crun in containers world:"
 link: "https://medium.com/@kloudino/runc-vs-crun-in-containers-world-62b8143fd9d3"
 ---
-
 
 만약 컨테이너화 기술에 흥미가 있다면, runc에 대해 들어봤을 수도 있어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@kloudino/runc-vs-crun-in-containers-world-62b8143fd9d
 
 - 네임스페이스: 볼 수 있거나 접근할 수 있는 것을 제어합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Cgroup: 리소스(예: RAM 및 CPU) 얼마나 사용하는지 확인하는 데 사용됩니다.
 
@@ -29,7 +39,18 @@ Cgroup: 리소스(예: RAM 및 CPU) 얼마나 사용하는지 확인하는 데 �
 
 컨테이너 런타임은 이미 이야기한 컨테이너라고 불리는 격리된 환경을 관리하는 데 도움을 주는 소프트웨어입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Runc과 Crun은 현재 사용되는 두 가지 주요 컨테이너 런타임입니다.
 
@@ -39,7 +60,18 @@ Runc과 Crun은 현재 사용되는 두 가지 주요 컨테이너 런타임입�
 
 ![이미지](/assets/img/2024-05-23-RuncvsCrunincontainersworld_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 크리올(Containerd)과 크라이오(CRI-O)는 둘 다 컨테이너 런타임으로 runc를 사용합니다.
 
@@ -49,17 +81,39 @@ Runc과 Crun은 현재 사용되는 두 가지 주요 컨테이너 런타임입�
 
 하지만 차이점은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-1) runc은 Go로 작성되었고 crun은 C로 작성되어서 Linux 커널과 더 호환성이 높아요.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-2) runc는 도커에 의해 개발되었고 crun은 RedHat에 의해 개발되었어요.
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-3) crun은 더 가벼워서 메모리 소비가 낮아요. crun은 300K이고 runc는 15M이에요.
+1. runc은 Go로 작성되었고 crun은 C로 작성되어서 Linux 커널과 더 호환성이 높아요.
+
+2. runc는 도커에 의해 개발되었고 crun은 RedHat에 의해 개발되었어요.
+
+3. crun은 더 가벼워서 메모리 소비가 낮아요. crun은 300K이고 runc는 15M이에요.
 
 Podman은 어떠세요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포드맨은 컨테이너를 관리하는 데 책임이 있는 crun의 frontend 역할을 하는 도커와 비슷한 유틸리티입니다.
 
@@ -69,7 +123,18 @@ Podman은 어떠세요?
 
 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 것을 사용해야 할까요?
 
@@ -79,7 +144,18 @@ Podman은 어떠세요?
 
 그리고 이것이 Docker를 프로덕션 환경에서 사용하지 않아야 하는 또 다른 이유입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 쿠버네티스를 사용 중이라면 cri-o를 선택하세요. 그리고 runc에 만족스럽지 않다면 C 언어로 된 가벼운 런타임을 원한다면 crun으로 런타임을 쉽게 전환할 수 있습니다.
 

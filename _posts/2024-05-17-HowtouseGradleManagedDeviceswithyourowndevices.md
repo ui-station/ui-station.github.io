@@ -3,13 +3,12 @@ title: "자신의 디바이스와 함께 Gradle 관리 디바이스를 사용하
 description: ""
 coverImage: "/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_0.png"
 date: 2024-05-17 17:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_0.png
 tag: Tech
 originalTitle: "How to use Gradle Managed Devices with your own devices"
 link: "https://medium.com/bumble-tech/how-to-use-gradle-managed-devices-with-your-own-devices-750d6709552d"
 ---
-
 
 <img src="/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_0.png" />
 
@@ -19,23 +18,32 @@ link: "https://medium.com/bumble-tech/how-to-use-gradle-managed-devices-with-you
 
 처음에는 Gradle Managed Devices가 안드로이드 Gradle 플러그인에게 에뮬레이터의 생성, 시작 및 종료 과정을 위임하는 목적으로 출시되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 android {
-    testOptions {
-        managedDevices {
-            devices {
-                register("pixel2api30", com.android.build.api.dsl.ManagedVirtualDevice) {
-                    device = "Pixel 2"
-                    apiLevel = 30
-                    systemImageSource = "aosp"
-                }
-            }
-        }
-    }
+testOptions {
+managedDevices {
+devices {
+register("pixel2api30", com.android.build.api.dsl.ManagedVirtualDevice) {
+device = "Pixel 2"
+apiLevel = 30
+systemImageSource = "aosp"
 }
-
+}
+}
+}
+}
 
 위의 구성을 사용하면 pixel2api30Check 작업을 통해 UI 테스트를 실행할 수 있으며, 기기를 연결하거나 에뮬레이터를 실행할 필요가 없습니다. 이 테스트 실행 환경은 다양한 기계에서 동일합니다.
 
@@ -43,8 +51,18 @@ android {
 
 # Firebase Test Lab
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이어베이스 테스트 랩을 통한 Gradle Managed Devices는 Android Dev Summit 2022에서 최근 소개된 새로운 기능입니다. 이제 Gradle에서 바로 테스트 랩에서 UI 테스트를 실행할 수 있어서 명령줄 도구나 웹 UI를 사용할 필요가 없어졌어요.
 
@@ -71,7 +89,18 @@ android {
 
 우리 자신의 장치로도 같은 작업을 할 수 있을까요? 함께 알아봐요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 커스텀 디바이스 구현
 
@@ -81,7 +110,18 @@ android {
 
 새로 생성한 Gradle 플러그인 모듈에서 MyDevice를 선언하고 해당 디바이스를 애플리케이션 모듈의 build.gradle에서 사용해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 인터페이스 MyDevice : Device
@@ -103,7 +143,18 @@ android {
 
 그렇다면 Android Gradle 플러그인은 이 문제를 어떻게 관리할까요? com.android.build.api.dsl.ManagedVirtualDevice를 검색하면 다음 코드를 찾을 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 dslServices.polymorphicDomainObjectContainer(Device::class.java).apply {
@@ -139,7 +190,18 @@ class MyDevicePlugin : Plugin<Project> {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 plugins {
@@ -160,15 +222,25 @@ android {
 그래서 다시 동기화를 시도하여 다른 예외를 확인해 봅시다:
 
 ```js
-Caused by: java.lang.IllegalStateException: 지원되지 않는 관리형 장치 유형: 
+Caused by: java.lang.IllegalStateException: 지원되지 않는 관리형 장치 유형:
  class com.bumble.devicefarm.plugin.device.farm.DeviceFarmImpl_Decorated
  at com.android.build.gradle.internal.TaskManager.createTestDevicesForVariant(TaskManager.kt:1905)
 ```
 
 스택 추적을 따라가보면, gradle.properties에 android.experimental.testOptions.managedDevices.customDevice=true를 추가해야 하며 MyDevice는 ManagedDeviceTestRunnerFactory를 구현해야 한다는 것을 알 수 있습니다. 따라서 더 자세히 조사해 보겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 내부 추상 클래스 MyDeviceImpl(
@@ -213,8 +285,18 @@ interface ManagedDeviceTestRunner {
 
 runTests 메서드는 각 Gradle 모듈에 대해 호출되며, 테스트를 실행하는 데 사용할 수 있는 많은 데이터가 포함되어 있습니다. 여기서 testData를 사용하여 APK를 가져와 설치하고, 계장을 통해 테스트를 실행할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Instrumentation
 
@@ -226,7 +308,18 @@ runTests 메서드는 각 Gradle 모듈에 대해 호출되며, 테스트를 실
 adb shell am instrument -w <test_package_name>/<runner_class>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트를 실행하려면 runTests 메서드에서 동일한 작업을 해야 합니다. ADB 작업을 수행하기 위해 mobile.dev의 dadb 라이브러리를 사용할 것입니다. 이 라이브러리를 사용하면 ADB 실행 파일을 이용하지 않고 ADB 프로토콜을 통해 디바이스에 직접 연결할 수 있습니다. 이렇게 하면 작업 속도가 향상되며 편리하게 사용할 수 있습니다. 관련 블로그 포스트에서 이에 대해 자세히 읽을 수 있습니다.
 
@@ -255,7 +348,18 @@ override fun runTests(...): Boolean {
 
 runTests 메서드와 StaticTestData 클래스에는 많은 매개변수가 있습니다. 단순화를 위해 모든 것이 작동하는 데 필요한 최소한의 세트만 사용할 것입니다. 다음과 같은 것을 사용할 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - testData.testedApkFinder는 필요한 애플리케이션 APK를 가져오기 위해 사용됩니다. 라이브러리 모듈의 경우 빈 목록을 반환합니다. App Bundle에서 적절한 APK 목록을 제공하기 위해 DeviceConfigProvider를 받습니다.
 - testData.testApk은 androidTest 폴더에서 코드를 포함하는 instrumentation APK입니다.
@@ -268,7 +372,18 @@ runTests 메서드와 StaticTestData 클래스에는 많은 매개변수가 있�
 
 ![image](/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결과 가져오기
 
@@ -278,7 +393,18 @@ runTests 메서드는 모든 테스트가 통과되면 true를 반환해야 하�
 
 Android Gradle 플러그인은 RemoteAndroidTestRunner.StatusReporterMode.PROTO_STD 열거형을 사용하여 am instrument에서 원시 데이터를 수용할 수 있는 IInstrumentationResultParser 인스턴스를 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val mode = RemoteAndroidTestRunner.StatusReporterMode.PROTO_STD
@@ -306,8 +432,18 @@ Dadb.create(host, port).use { dadb ->
 
 IInstrumentationResultParser는 테스트와 상태에 대해 청취자들에게 알립니다. emptyList()를 전달했을 것을 알 수 있습니다. 어떤 파서를 사용해야 할지 고려해보겠습니다. 몇 가지 사전 제작된 구현이 있지만, Android Gradle 플러그인이 ManagedVirtualDevice를 실행할 때 사용하는 com.android.build.gradle.internal.testing.CustomTestRunListener를 사용해야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val xmlWriterListener = CustomTestRunListener(
@@ -329,9 +465,19 @@ CustomTestRunListener은 XmlTestRunListener를 확장하고 Android Gradle 플�
 만약 CustomTestRunListener로 보고서를 생성하지 않고 myDeviceDebugAndroidTest를 실행하려고 하면, com.android.build.gradle.internal.tasks.ManagedDeviceInstrumentationTestResultAggregationTask에서 예외로 실패할 것입니다. 적어도 TEST-로 시작하는 하나의 XML 보고서를 생성할 것으로 예상합니다. 그리고 CustomTestRunListener야말로 이를 강요합니다. 이 작업은 XML과 HTML 보고서를 생성할 것이며, 아래 스크린샷에서 확인할 수 있습니다:
 
 ![스크린샷](/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_4.png)
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 CustomTestRunListener를 사용하여 runTests 메서드에서 적절한 값을 반환할 수 있습니다. hasFailedTests 메서드에 액세스할 수 있기 때문입니다.
 
@@ -364,7 +510,18 @@ internal abstract class MyDeviceImpl(
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 register("remoteDevice", MyDevice) {
@@ -379,7 +536,18 @@ register("remoteDevice", MyDevice) {
 
 주의 깊게 읽는 독자는 이미 코드 없이 이를 수행할 수 있다는 것을 올바르게 알아차릴 수 있을 것입니다. 원격 장치를 adb 장치 목록에 표시하려면 adb connect IP:PORT를 호출하기만 하면 된다는 것이 충분하며, Android Studio 드롭다운 메뉴 안에서도 바로 확인할 수 있습니다. Gradle Managed Devices로 할 수 없는 테스트 디버깅을 할 수도 있습니다. 그러나 이러한 점을 수행할 수 있다는 것은 다음 단계에 중요한 요소입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 병렬 실행
 
@@ -389,7 +557,18 @@ AndroidJUnitRunner은 테스트를 샤드(shard)로 분할하여 하나의 샤�
 
 하지만 이를 실제로 활용하려고 하면 다음과 같은 내용이 나타날 것입니다 (출처):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 #!/usr/bin/env bash
@@ -421,8 +600,18 @@ Gradle Managed Devices는 android.experimental.androidTest.numManagedDeviceShard
 
 Gradle Managed Devices에서는 Device 추상화를 사용합니다. 이 추상화는 전체로 표현되는 여러 장치를 구현할 수 있습니다. 새로운 장치 유형을 소개하고 장치로 등록합시다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 인터페이스 MultipleDevices : Device {
@@ -452,8 +641,18 @@ ADB와 관련된 모든 것은 AdbRunner 클래스로 추출되었고 새 매개
 
 이제 테스트를 병렬로 실행하도록 ManagedDeviceTestRunner를 구현해야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 override fun runTests(...): Boolean {
@@ -505,24 +704,45 @@ override fun runTests(...): Boolean {
 
 <img src="/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_6.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 샤딩은 매우 중요하며 많은 UI 테스트 케이스에서 도움이 됩니다. 샘플 레파지토리에서는 라이브러리와 어플리케이션 모듈을 준비했는데, 두 모듈 모두 100개의 UI 테스트가 있습니다. 한 모듈에서 테스트를 실행하는 데 약 1분 10초가 걸립니다. 그러므로 두 모듈을 함께 실행하는 데는 약 2분 33초가 소요됩니다. 같은 테스트 스위트를 MultipleDevices에서 실행하면 약 1분 31초만에 완료됩니다. — 필요한 시간의 거의 절반입니다.
 
 ```js
-  에뮬레이터 수  시간      
- ----------- ----------- 
-  1           2분 33초     
-  2           1분 31초     
-  3           43초        
+  에뮬레이터 수  시간
+ ----------- -----------
+  1           2분 33초
+  2           1분 31초
+  3           43초
 ```
 
 <img src="/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_7.png" />
 
 # 병렬 원격 실행
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비록 이렇게 급격한 개선이 있었지만, 하나의 문제에서는 자유로울 수 없습니다: 로컬에서 에뮬레이터를 실행해야 하기 때문에, 개발자 노트북의 자원을 많이 소비합니다.
 
@@ -549,7 +769,18 @@ POST /release
 
 해당 서버는 우리만 사용할 수 있는 단말기나 에뮬레이터의 집합을 반환하며, 해당 API 호출로 이들을 해제할 때까지만 사용할 수 있습니다. 이를 "장치 브로커"라고 부르도록 합시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디바이스 브로커는 개발자뿐만 아니라 CI(지속적인 통합)에도 혜택을 줍니다. 일반적인 CI 흐름은 앱을 빌드하고 에뮬레이터에서 테스트를 실행하는 것입니다. 이 두 단계는 CPU 및 메모리를 많이 사용하는 작업이므로 이러한 작업을 병렬로 수행할 수도 있습니다. 에뮬레이터를 다른 서버로 외부위탁함으로써 빌드 서버는 앱을 빌드하고 테스트 결과를 확인하는 데에 자원을 공유하는 대신 집중할 수 있게 됩니다.
 
@@ -601,7 +832,18 @@ internal class DeviceFarmTestRunner : ManagedDeviceTestRunner {
 
 ![이미지](/assets/img/2024-05-17-HowtouseGradleManagedDeviceswithyourowndevices_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결과
 

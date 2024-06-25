@@ -3,14 +3,12 @@ title: "디자인 시스템 워크플로우를 Kelp 플러그인으로 Android S
 description: ""
 coverImage: "/assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_0.png"
 date: 2024-05-20 17:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_0.png
 tag: Tech
 originalTitle: "Enhance Your Design System Workflow with Kelp Plugin for Android Studio 🌱"
 link: "https://medium.com/proandroiddev/kelp-plugin-for-android-studio-4374127939aa"
 ---
-
-
 
 ![Kelp Plugin for Android Studio](/assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/proandroiddev/kelp-plugin-for-android-studio-437412793
 
 Kelp은 안드로이드 스튜디오 내에서 직관적이고 자동화된 지원을 통해 사용자 정의 디자인 시스템 사용 시 발생하는 일반적인 문제점을 해결해요. 아이콘, 색상 또는 구성 요소 함수를 다루더라도 Kelp은 가시성과 접근성을 향상시켜 주어요. 그렇게 함으로써 여러분은 뛰어난 앱을 만드는 데 집중할 수 있게 되어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 주요 기능
 
@@ -31,7 +39,18 @@ Kelp를 통해 디자인 시스템 컴포넌트 기능에 사용자 정의 아�
 
 ![Kelp 플러그인을 사용하여 디자인 시스템 작업 흐름 향상](/assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 🎨 디자인 시스템 아이콘
 
@@ -41,7 +60,18 @@ Kelp를 사용하면 디자인 시스템 아이콘을 코드 완성 드롭다운
 
 ## 🌈 색상 미리보기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kelp는 코드 완성 드롭다운 및 거터에서 색상 미리보기를 통해 디자인 시스템의 색상 팔레트를 살아있게 만듭니다. 이 기능은 기본 R.color 리소스를 반영하여 올바른 색상을 적용하는 프로세스를 간단하게하는 즉각적인 시각 참조를 제공합니다.
 
@@ -51,8 +81,18 @@ Kelp는 코드 완성 드롭다운 및 거터에서 색상 미리보기를 통�
 
 디자인 시스템 구성 요소를 쇼케이스하는 데모 앱 설치 및 탐색이 이제 더욱 간편해졌습니다. Kelp는 APK 설치를 용이하게 하고 코드에서 직접 특정 구성 요소 페이지를 열 수 있는 의도 작업을 제공하여 개발 프로세스를 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_4.png" />
 
@@ -62,8 +102,18 @@ Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에
 
 <img src="/assets/img/2024-05-20-EnhanceYourDesignSystemWorkflowwithKelpPluginforAndroidStudio_5.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ⌨️ 라이브 템플릿
 
@@ -73,7 +123,18 @@ Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에
 
 ## 🧩 사용자 정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 켈프의 진정한 힘은 구성 가능성에 있습니다. config.json 파일을 수정하여 플러그인을 프로젝트의 고유한 요구 사항에 맞게 조정할 수 있습니다. 이 JSON 기반 구성은 함수 접두사부터 색상 및 아이콘 렌더링에 이르기까지 세부적인 사용자 정의를 지원합니다.
 
@@ -108,7 +169,7 @@ Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에
     // 선택 사항, 열거형 클래스에서 색상 토큰
     "enumColorTokensEnabled": true,
   },
-  
+
   // 코드 완성 및 구두에 디자인 시스템 아이콘 렌더링
   // 일반적인 안드로이드 자원과 비슷합니다.
   "iconsRendering": {
@@ -117,7 +178,7 @@ Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에
     // 아이콘을 반환하고
     // 이름이 아이콘이라는 많은 속성을 가진 클래스
     "containerClassName": "com.your.designsystem.package.DsIcons",
-    
+
     // 선택 사항: 아이콘이 아닌 속성을 필터링
     "propertyNameFilter": {
       // 선택 사항:이 접두사가있는 속성만
@@ -126,14 +187,14 @@ Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에
       // 선택 사항:이 접두사가있는 모든 속성은 건너뜀
       "doesNotStartWith": ["allIconsAsList", "otherProperty"]
     },
-    
+
     // 속성 이름을 drawable 자원 이름으로 매핑
     "propertyToResourceMapper": {
       "addPrefix": "ic_", // 선택 사항
       "convertToSnakeCase": true // 선택 사항; 예: "AddAccount" -> "add_account"
     }
   },
-  
+
   // 의도 작업을 통해 데모 앱에서 구성 요소 페이지 열기
   "demoApp": {
     // 선택 사항: 의도 작업의 사용자 지정 이름
@@ -146,10 +207,10 @@ Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에
     // DS_COMPONENT_FQN_DEEPLINK_PLACEHOLDER가로 교체됩니다
     // 완전히 정규화 된 이름, 예 : com.your.designsystem.package.components.Badge
     "componentDeeplink": "yourscheme://component/DS_COMPONENT_FQN_DEEPLINK_PLACEHOLDER",
-    
+
     // 선택 사항
     // 데모 앱 (쇼케이스 앱)의 apk 파일을 설치 (미설치되어 있으면)합니다.
-    
+
     // 데모 앱 apk는 여기에 있어야합니다.
     // 이 이름 :/.idea/kelp/demoApp-VERSION_NAME.apk
     // 예 :/.idea/kelp/demoApp-0.12.0.apk
@@ -159,7 +220,7 @@ Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에
     // 플러그인은 장치에 apk를 설치합니다.
     "apkInstallation": true
   },
-  
+
   // IDE에 라이브 템플릿 설치
   // "MaterialTheme.colors."와 같은
   // 자주 사용하는 코드 작성에 유용합니다.
@@ -190,20 +251,42 @@ Kelp의 뛰어난 기능 중 하나는 Android Studio의 현재 제한 사항에
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 🛠️ 설치
 
 Kelp를 사용하여 시작하려면:
 
 - Android Studio Koala | 2024.1.1 Canary 3 또는 그 이상 버전을 사용하는지 확인합니다.
-- Kelp GitHub 저장소에서 최신 릴리스를 다운로드하여 설정/환경설정에서 수동으로 설치합니다. ` 플러그인 ` ⚙️ ` 디스크에서 플러그인 설치`...
+- Kelp GitHub 저장소에서 최신 릴리스를 다운로드하여 설정/환경설정에서 수동으로 설치합니다. `플러그인` ⚙️ ` 디스크에서 플러그인 설치`...
 - 원하는 경우, 모든 팀원이 플러그인을 사용하고 있는지 확실하게 하기 위해 externalDependencies.xml 파일을 생성하여 팀에 알립니다.
 - 프로젝트에 Kelp를 구성하기 위해 config.json 파일을 생성하고 필요에 따라 사용자 정의합니다.
 
 ## 🚀 개발 효율성을 높이세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kelp은 안드로이드 스튜디오 내에서 디자인 시스템과 상호 작용하는 방식을 변화시킵니다. 시각적 단서와 디자인 리소스에 간편하게 접근할 수 있도록 IDE에 직접 통합함으로써 추측을 제거하고 적절한 구성 요소를 찾는 데 소요되는 시간을 줄입니다.
 
@@ -213,6 +296,17 @@ Kelp를 사용하면 일관성을 보장하고 코드 가독성을 향상시키�
 
 Kelp의 잠재력에 흥분하신다면 GitHub에서 ⭐️을 부탁드립니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경해 주세요.

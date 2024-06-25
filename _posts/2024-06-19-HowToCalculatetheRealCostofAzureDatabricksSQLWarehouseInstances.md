@@ -3,13 +3,12 @@ title: "아저라 데이터브릭스 SQL 웨어하우스 인스턴스의 실제 
 description: ""
 coverImage: "/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_0.png"
 date: 2024-06-19 12:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_0.png
 tag: Tech
 originalTitle: "How To Calculate the Real Cost of Azure Databricks SQL Warehouse Instances"
 link: "https://medium.com/@gmusumeci/how-to-calculate-the-cost-of-azure-databricks-sql-warehouse-instances-8baa73411057"
 ---
-
 
 <img src="/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_0.png" />
 
@@ -19,7 +18,18 @@ Databricks SQL Warehouse는 Azure Databricks에서 데이터를 쿼리하고 탐
 
 현재 Azure Databricks에서는 3가지 유형의 SQL Warehouse를 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - SQL Warehouse Classic: SQL Warehouse Classic의 컴퓨팅 레이어는 저희 Azure 구독 계정에 존재하며 Photon을 지원하지만 Predictive IO나 Intelligent Workload Management은 지원하지 않습니다.
 - SQL Warehouse Pro: SQL Warehouse Pro의 컴퓨팅 레이어는 저희 Azure 구독 계정에 존재하며 Photon과 Predictive IO를 지원하지만 Intelligent Workload Management는 지원하지 않습니다.
@@ -28,9 +38,21 @@ Databricks SQL Warehouse는 Azure Databricks에서 데이터를 쿼리하고 탐
 위 목록에서 볼 수 있듯이, SQL Warehouse Classic과 SQL Warehouse Pro 사이의 가장 중요한 차이점은 컴퓨팅 레이어가 저희 Azure 구독 계정에 있고, SQL Warehouse Serverless가 저희 Azure Databricks 계정에 있다는 것입니다.
 
 ## 관련 이야기:
+
 - Microsoft 및 Databricks API를 사용하여 Azure Databricks 클러스터의 비용을 최적화하고 90%까지 줄이는 방법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1. DIY 방법
 
@@ -40,7 +62,18 @@ Databricks SQL Warehouse는 Azure Databricks에서 데이터를 쿼리하고 탐
 
 Azure Databricks SQL Warehouse Classic 또는 Azure Databricks SQL Warehouse Pro의 비용을 계산하려면 다음 구성 요소를 고려해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - SQL 계산 시간: SQL Warehouse가 실행되었던 시간.
 - Databricks Unit (DBU) 시간: SQL Warehouse에서 사용된 컴퓨팅 단위가 시간당 청구됩니다.
@@ -53,7 +86,18 @@ Azure Databricks SQL Warehouse Classic 또는 Azure Databricks SQL Warehouse Pro
 
 API 호출을 실행한 후, 모든 Databricks SQL Warehouse가 포함 된 JSON 응답을 받게됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQL Warehouse Classic의 JSON은 다음과 같습니다:
 
@@ -97,7 +141,18 @@ SQL Warehouse Classic의 JSON은 다음과 같습니다:
 
 <img src="/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1.1.2. Microsoft API를 통해 SQL Warehouse Classic 자원의 비용 가져오기
 
@@ -107,13 +162,25 @@ SQL Warehouse Classic의 JSON은 다음과 같습니다:
 
 API를 사용할 때 주의할 점들:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Azure 구독의 비용 세부 정보 데이터를 가져올 때, Databricks와 관련된 데이터만 필터링하고 다른 서비스와 비용이 연관되지 않은 데이터는 제거해야 합니다.
 - 결과를 Pay-as-you-go 또는 Enterprise 유형의 Azure 구독에 따라 조정해야 하며, 결과가 서로 다릅니다.
 - API는 한 달 이하의 데이터만 가져오도록 허용하며 13개월 이전의 데이터는 제공하지 않습니다.
 
 Microsoft API에서 데이터를 추출할 때, 보고서에서 다음 열을 선택해야 합니다:
+
 - SqlEndpointId: SQL Warehouse 인스턴스의 ID
 - ProductName: 사용된 Azure 리소스의 설명
 - MeterName: 청구되는 서비스 또는 리소스 유형을 식별하는 레이블
@@ -122,7 +189,18 @@ Microsoft API에서 데이터를 추출할 때, 보고서에서 다음 열을 �
 
 # 1.1.3. SQL Warehouse 클래식 인스턴스 비용 계산
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Microsoft Databricks 및 Azure API에서 데이터를 검색한 후, 마지막 단계는 SQL Endpoint ID를 사용하여 Azure 비용 데이터를 필터링하고 Databricks API의 SQL Endpoint ID와 일치시키는 것입니다.
 
@@ -132,7 +210,18 @@ Microsoft Databricks 및 Azure API에서 데이터를 검색한 후, 마지막 �
 
 SQL Warehouse Classic 인스턴스에서 제품은 Azure Databricks - Premium - SQL Analytics이며, 미터 이름은 Premium SQL Analytics DBU입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼, SQL Warehouse 인스턴스의 최종 비용을 계산하기 위해 모든 레코드를 추가합니다.
 
@@ -145,7 +234,18 @@ Azure Databricks SQL Warehouse Pro의 비용을 계산하기 위해 다음 구�
 - 저장 비용: 데이터 저장에 관련된 비용(해당하는 경우).
 - 대역폭 비용: 대역폭 전송에 관련된 비용(해당하는 경우).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API 호출을 실행한 후, 모든 Databricks SQL Warehouse에 대한 JSON 응답을 받게 됩니다.
 
@@ -187,7 +287,18 @@ API 호출을 실행한 후, 모든 Databricks SQL Warehouse에 대한 JSON 응�
 
 이와 유사한 데이터를 얻게 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_3.png)
 
@@ -197,7 +308,18 @@ SQL Warehouse Pro 비용을 계산하기 위해서는 검색된 사용 데이터
 
 Microsoft Generate Cost Details Report API를 사용하여 Databricks 클러스터가 실행 중인 Azure 구독에 대한 모든 데이터를 가져올 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API를 사용할 때 중요한 사항:
 
@@ -213,7 +335,18 @@ Microsoft API에서 데이터를 추출할 때, 보고서에서 다음 열을 �
 - CostInBillingCurrency: 사용된 Azure 리소스의 비용
 - BillingCurrency: 청구 통화 코드 (USD, EUR 등)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1.2.3. SQL Warehouse PRO Instances 비용 계산하기
 
@@ -223,7 +356,18 @@ Microsoft Databricks와 Azure API에서 데이터를 검색한 후, 최종 단�
 
 ![이미지](/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQL Warehouse Pro 인스턴스에서 Product가 Azure Databricks Regional — Premium — SQL Compute Pro이고 MeterName이 Premium SQL Compute Pro DBU인 경우, SQL Warehouse 인스턴스의 최종 비용을 계산하기 위해 모든 레코드를 추가합니다.
 
@@ -231,7 +375,18 @@ SQL Warehouse Pro 인스턴스에서 Product가 Azure Databricks Regional — Pr
 
 Azure Databricks SQL Warehouse Serverless 인스턴스는 Azure Databricks 계정 내에서 실행되므로 Databricks Unit (DBU) 시간 단위로 청구됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API 호출을 실행한 후, Databricks SQL Warehouse에 관한 JSON을 받게 됩니다.
 
@@ -272,7 +427,18 @@ API 호출을 실행한 후, Databricks SQL Warehouse에 관한 JSON을 받게 �
 
 이처럼 유사한 데이터를 얻을 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_5.png" />
 
@@ -282,7 +448,18 @@ API 호출을 실행한 후, Databricks SQL Warehouse에 관한 JSON을 받게 �
 
 Databricks 클러스터가 실행 중인 Azure 구독의 모든 데이터를 가져 오기 위해 Microsoft Generate Cost Details Report API를 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API를 사용할 때 중요한 사항:
 
@@ -298,7 +475,18 @@ Microsoft API에서 데이터를 추출할 때 다음 보고서 열을 선택해
 - CostInBillingCurrency: 사용한 Azure 리소스 비용
 - BillingCurrency: 청구 통화 코드 (USD, EUR 등)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1.3.3. SQL Warehouse Serveless 인스턴스 비용 계산하기
 
@@ -308,7 +496,18 @@ Microsoft Databricks와 Azure API에서 데이터를 검색한 후, 최종 단�
 
 ![이미지](/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQL 웨어하우스 서버러스 인스턴스에서, 제품은 Azure Databricks Regional — Premium — Serverless SQL이고 미터 이름은 프리미엄 서버러스 SQL DBU입니다.
 
@@ -318,7 +517,18 @@ SQL 웨어하우스 서버러스 인스턴스에서, 제품은 Azure Databricks 
 
 SQL 웨어하우스의 비용을 분 단위로 결정해야하는 경우, KopiCloud Azure Databricks 비용 도구를 사용하는 것이 쉽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내가 API 데이터를 가져오고 필터링하며 추출하는 경험을 토대로, Microsoft 및 Databricks API에서 검색한 데이터를 읽고 관리하는 프로세스를 간소화하기 위해 이 도구를 개발했습니다.
 
@@ -328,7 +538,18 @@ SQL 웨어하우스의 비용을 분 단위로 결정해야하는 경우, KopiCl
 
 도구는 Microsoft 및 Databricks API와 연결하고 화면 및 Excel 파일에서 서식이 지정된 데이터를 생성할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_7.png](/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_7.png)
 
@@ -338,7 +559,18 @@ SQL 웨어하우스의 비용을 분 단위로 결정해야하는 경우, KopiCl
 
 ![2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_8.png](/assets/img/2024-06-19-HowToCalculatetheRealCostofAzureDatabricksSQLWarehouseInstances_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도구는 모든 데이터를 Excel 파일로 출력하여 데이터를 조작하거나 사용자 정의 보고서를 작성할 수 있도록 합니다.
 
@@ -348,7 +580,18 @@ SQL 웨어하우스의 비용을 분 단위로 결정해야하는 경우, KopiCl
 
 그게 다에요. 만약 이 이야기가 마음에 드셨다면 👏을 눌러주세요. 읽어 주셔서 감사합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - KopiCloud Azure Databricks Cost 도구는 KopiCloud 웹사이트에서 다운로드할 수 있어요.
 - 만약 Databrick 클러스터 비용을 줄이는 데 도움이 필요하다면 Linkedin에서 저에게 연락해 주세요.

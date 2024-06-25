@@ -3,15 +3,14 @@ title: "AI의 거짓된 약속들"
 description: ""
 coverImage: "/assets/img/2024-05-20-TheFalsePromisesofAI_0.png"
 date: 2024-05-20 20:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TheFalsePromisesofAI_0.png
 tag: Tech
 originalTitle: "The False Promises of AI"
 link: "https://medium.com/@frank-andrade/the-false-promises-of-ai-fe23124e0fb9"
 ---
 
-
-1770년, 헝가리 작가이자 발명가인 볼프강 폰 켐펠렌(Wolfgang von Kempelen)은 "The Mechanical Turk"라고 불리는 자동 체스 기계를 선보였습니다. 이 장치는 유럽 전역에서 자동 체스 마스터의 기술을 선보이며 인간 상대로 경기에서 자주 승리를 거두었습니다. 심지어 나폴레옹과 벤자민 프랭클린 같은 유명 인물들까지 물론히 이겼다는 소문이 있습니다. "The Mechanical Turk"는 빠르게 거대한 인기를 얻었으며 그 시대의 놀라운 발명품으로 칭송받았습니다. 그러나 이 장치 주변에 떠도는 흥분은 결국 "자율성"과 관련된 기만이 드러남으로써 풀렸습니다. 즉, 테이블 아래에 숨어 있는 사람이 실제로 장치를 조종하고 있다는 사실이 밝혀졌습니다. 이 사람은 그 숨은 위치에서 경기 전략을 몰래 주도했습니다. 
+1770년, 헝가리 작가이자 발명가인 볼프강 폰 켐펠렌(Wolfgang von Kempelen)은 "The Mechanical Turk"라고 불리는 자동 체스 기계를 선보였습니다. 이 장치는 유럽 전역에서 자동 체스 마스터의 기술을 선보이며 인간 상대로 경기에서 자주 승리를 거두었습니다. 심지어 나폴레옹과 벤자민 프랭클린 같은 유명 인물들까지 물론히 이겼다는 소문이 있습니다. "The Mechanical Turk"는 빠르게 거대한 인기를 얻었으며 그 시대의 놀라운 발명품으로 칭송받았습니다. 그러나 이 장치 주변에 떠도는 흥분은 결국 "자율성"과 관련된 기만이 드러남으로써 풀렸습니다. 즉, 테이블 아래에 숨어 있는 사람이 실제로 장치를 조종하고 있다는 사실이 밝혀졌습니다. 이 사람은 그 숨은 위치에서 경기 전략을 몰래 주도했습니다.
 
 좀 더 간단히 말하면, 그 당시 모든 사람들이 믿었던 심오한 속임수였습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@frank-andrade/the-false-promises-of-ai-fe23124e0fb9"
 
 현재, 우리는 AI 모델이 초기에 훈련되는 방법으로 데이터 레이블링 작업을 하는 것은 주로 사람들이 함을 보고 있습니다. 이 접근 방식은 필수적이고 적절합니다. 그러나 문제는 AI가 우리에게 처음 마케팅된 방법이 다르고 오도된 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2022년에는 이 1,000명의 개인이 20 개의 Amazon GO 매장, 40 개의 Amazon Fresh 식료품 매장 및 2 개의 Whole Foods 매장에서 거래의 70%를 여전히 수동으로 검토하고 있었습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@frank-andrade/the-false-promises-of-ai-fe23124e0fb9"
 
 ## AI-Washing
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘 AI 용어가 이전보다 훨씬 더 많이 보인다는 것을 눈치채셨을 것 같아요. 이 기술은 단순히 유행하는 주제에서 일상적인 토론으로 변화했습니다. 2022년 이전까지 AI 용어는 주로 연구 논문에만 제한되어 있었기 때문에 대중의 관심을 끌지 못했죠. 심지어 GPT-3의 출시도 이와 같은 패턴을 따랐습니다. 그러나 2022년 초 이후에는 모든 것이 변했고, 특히 ChatGPT 출시 이후에는 갑자기 소셜 미디어와 웹사이트가 AI 관련 뉴스로 넘쳤고, "AI 기술 적용"과 같은 용어가 흔해졌어요 (다만, 제 의견으로는 다소 과용됐다고 생각합니다). 이러한 용어들이 널리 사용되는 것은 많은 경우 정당화되지만, 모두 AI 워싱(AI-washing)이라는 공통 문제가 있습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@frank-andrade/the-false-promises-of-ai-fe23124e0fb9"
 
 고맨 삭스(Goldman Sachs)에 따르면, S&P 500 기업 가운데 36%가 4분기 실적 보고서에서 AI를 언급했다고 하네요. 세계 최대 기업들이 이 기술을 공개적으로 선전하고 있다면, 작은 기업들도 마찬가지일 것이지만, 많은 기업들이 주장을 뒷받침할 명백한 결과가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2015년 이후 글로벌 기업의 AI 투자는 7배 증가했습니다. 많은 기업들이 최근 AI 열풍으로 상당한 성장을 경험하고 있습니다. 이는 경쟁력을 유지하기 위해 다른 기업들도 비즈니스 모델이나 제품에 AI를 통합하기 시작하도록 압박합니다. 하지만 실제 결과가 기대에 부응하는지 궁금할 수 있습니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@frank-andrade/the-false-promises-of-ai-fe23124e0fb9"
 
 이와 같은 잘못된 약속들이 기업들에 대한 고객 신뢰를 침식하는 것 외에도 다른 결과가 있는지 궁금할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 제품이 출시되면서 우리를 놀라게 하고 이 가짜 기대나 허울을 유지하려는 노력이 계속되고 있습니다. 세계적으로 가장 유명한 회사조차도 이 기술의 유혹에 빠질 수 없습니다. 인공지능 세탁의 가장 중요한 결과는 아마도 우리를 "기회"로 제시된 새로운 것에 쉽게 취약하게 만든다는 점일 것입니다.
 
@@ -59,7 +102,18 @@ AI 제품이 출시되면서 우리를 놀라게 하고 이 가짜 기대나 허
 
 지금은 인공지능에 관해서는 아직도 투자자들 사이에 신중한 감정이 아직 남아 있어 현재 우리가 경험하고 있는 성장은 보통입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 피터 오펜하이머(Goldman Sachs Research의 최고 글로벌 주식 전략가)는 다음과 같이 말했습니다: “우리는 아직도 새로운 기술 사이클의 초기 단계에 있다고 믿습니다. 이는 더욱 더 경쟁력 있는 성과로 이어질 것으로 예상됩니다.”
 
@@ -69,8 +123,18 @@ AI 제품이 출시되면서 우리를 놀라게 하고 이 가짜 기대나 허
 
 뜨거운 관심을 받는 신기술에 대한 Gartner Hype Cycle이라는 인정받은 패턴이 있습니다. 이것은 인간이 새로운 혁신 기술에 지나치게 열광하면서 그 영향을 과대평가하고 확대하는 경향을 설명합니다. 이와 같은 허프 단계 이후에는 시장이 자연스럽게 붕괴합니다. 그 후 살아남은 기업들이 진정한 가치로 시장에 재진입하고 새로운 기술의 발전을 주도하여 성숙해질 때까지 이끌게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Cycle diagram](/assets/img/2024-05-20-TheFalsePromisesofAI_0.png)
 
@@ -80,8 +144,18 @@ This interpretation of the current market indicates that in the short term, ther
 
 That’s it for now. If you’re interested in reading more about the stages of technological cycles, here’s a link to an article I recently wrote.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 35,000명 이상 구독자와 함께 나의 무료 치트 시트를 받으려면 뉴스레터에 가입하세요: ChatGPT, 웹 스크래핑, 데이터 과학을 위한 Python, 자동화 등에 대한 정보를 얻을 수 있습니다!
 

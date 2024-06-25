@@ -3,13 +3,12 @@ title: "Kubernetes K8s ConfigMap 또는 Secret가 업데이트될 때 배포 자
 description: ""
 coverImage: "/assets/img/2024-06-19-KubernetesAutoRestartDeploymentswhenK8sConfigMaporSecretisUpdated_0.png"
 date: 2024-06-19 13:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-KubernetesAutoRestartDeploymentswhenK8sConfigMaporSecretisUpdated_0.png
 tag: Tech
 originalTitle: "Kubernetes: Auto Restart Deployments when K8s ConfigMap or Secret is Updated"
 link: "https://medium.com/aws-in-plain-english/kubernetes-auto-restart-deployments-when-k8s-configmap-or-secret-is-updated-ad2c042a745f"
 ---
-
 
 ## 자동 롤아웃 재시작: K8s ConfigMap 또는 Secret가 업데이트될 때 배포 다시 시작하기
 
@@ -19,9 +18,20 @@ link: "https://medium.com/aws-in-plain-english/kubernetes-auto-restart-deploymen
 
 그렇다면 구성 맵이나 시크릿의 값을 업데이트했을 때는 어떨까요? 최신 값을 반영하려면 pod를 다시 시작해야합니다, 맞죠? 또는 롤아웃을 다시 시작하여 새로운 pod를 생성하게 할 수도 있습니다. 이제 상상해보세요. 공통 configmap 또는 secret을 사용하는 수백 개의 배포가 있고 그 값을 업데이트하고 사용하는 것이 최신 값이라는 것을 확실하게 해야한다고 가정해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-저희는 AWS Secrets Manager에 비밀을 저장하고, Kubernetes Secrets Store CSI Driver를 위해 AWS Secrets 및 구성 제공자(ASCP)로부터 Kubernetes Secrets를 생성합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+저희는 AWS Secrets Manager에 비밀을 저장하고, Kubernetes Secrets Store CSI Driver를 위해 AWS Secrets 및 구성 제공자(ASCP)로부터 Kubernetes Secrets를 생성합니다.
 
 이 블로그 게시물에서는 Secret 또는 ConfigMap이 업데이트될 때 Kubernetes 배포를 자동으로 롤아웃 및 다시 시작하는 방법에 대해 설명하겠습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/aws-in-plain-english/kubernetes-auto-restart-deploymen
 
 ![Architecture Diagram](/assets/img/2024-06-19-KubernetesAutoRestartDeploymentswhenK8sConfigMaporSecretisUpdated_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 시작해 봅시다!
 
@@ -42,12 +63,23 @@ link: "https://medium.com/aws-in-plain-english/kubernetes-auto-restart-deploymen
 
 ### 단계 1: ASCP를 위한 IAM 역할 및 정책 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ASCP(Amazon EKS Security Token Service)는 Amazon EKS 파드 ID를 검색하여 IAM 역할로 교환합니다. 해당 IAM 역할에 대한 IAM 정책에서 권한을 설정합니다. ASCP가 IAM 역할을 가정하면 권한을 부여받은 시크릿에 액세스할 수 있습니다. 다른 컨테이너는 IAM 역할과 연결되지 않는 한 시크릿에 액세스할 수 없습니다.
 
 - IAM 정책 문서 작성
-"secrets_policy"라는 이름의 파일을 만들고 다음 내용을 추가하십시오.
+  "secrets_policy"라는 이름의 파일을 만들고 다음 내용을 추가하십시오.
 
 ```js
 {
@@ -65,9 +97,20 @@ ASCP(Amazon EKS Security Token Service)는 Amazon EKS 파드 ID를 검색하여 
 ```
 
 2. 다음 명령을 실행하여 IAM 정책을 만듭니다.
-IAM 정책을 IAM 역할에 연결할 때 policy ARN을 메모하십시오.
+   IAM 정책을 IAM 역할에 연결할 때 policy ARN을 메모하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 aws iam create-policy \
@@ -76,7 +119,7 @@ aws iam create-policy \
 ```
 
 3. IAM 역할에 신뢰 정책 생성하기
-"trust_policy"라는 이름의 파일을 생성하고 다음 내용을 추가하세요. 올바른 값으로 대체해야 합니다. `SERVICE_ACCOUNT_NAME`은 임의로 지정할 수 있지만 Kubernetes에서 실제 서비스 계정을 생성할 때 동일한 이름을 사용해야 합니다.
+   "trust_policy"라는 이름의 파일을 생성하고 다음 내용을 추가하세요. 올바른 값으로 대체해야 합니다. `SERVICE_ACCOUNT_NAME`은 임의로 지정할 수 있지만 Kubernetes에서 실제 서비스 계정을 생성할 때 동일한 이름을 사용해야 합니다.
 
 ```js
 {
@@ -99,9 +142,20 @@ aws iam create-policy \
 }
 ```
 
-4. 다음 명령어를 실행하여 IAM 역할을 만드세요. 
+4. 다음 명령어를 실행하여 IAM 역할을 만드세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 aws iam create-role --role-name my-secret-manager-role --assume-role-policy-document file://trust_policy
@@ -115,7 +169,18 @@ aws iam attach-role-policy --policy-arn <your_policy_arn> --role-name my-secret-
 
 우리는 필요한 모든 IAM 역할과 정책을 생성했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 2: ASCP 설치 및 구성
 
@@ -131,7 +196,18 @@ helm repo add aws-secrets-manager https://aws.github.io/secrets-store-csi-driver
 helm install -n kube-system secrets-provider-aws aws-secrets-manager/secrets-store-csi-driver-provider-aws
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. Secrets Store CSI Driver 차트 설치
 
@@ -144,27 +220,48 @@ helm repo add secrets-store-csi-driver https://kubernetes-sigs.github.io/secrets
 
 - 기본값 확인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 기본 값 가져오기
-helm show values secrets-store-csi-driver/secrets-store-csi-driver > secrets-store-csi-driver.yaml
 
+helm show values secrets-store-csi-driver/secrets-store-csi-driver > secrets-store-csi-driver.yaml
 
 - secrets-store-csi-driver.yaml 파일에서 다음 값을 업데이트하세요.
 
-
 ## K8S Secrets 동기화에 필요한 RBAC 역할 및 바인딩 설치 여부
+
 syncSecret:
-  enabled: true
+enabled: true
 
 ## 시크릿 로테이션 기능 활성화 [알파]
-enableSecretRotation: true
 
+enableSecretRotation: true
 
 위의 구성은 "secrets-store-csi-driver"가 AWS Secret Manager에서 최신 값을 가져와 해당 값을 Kubernetes Secrets 객체에 업데이트할 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 회전-투표-간격은 기본적으로 2분으로 설정되어 있지만, 속성 rotationPollInterval을 설정함으로써 변경할 수 있습니다.
 
@@ -177,7 +274,18 @@ helm install -n kube-system csi-secrets-store secrets-store-csi-driver/secrets-s
 
 # 단계 3: AWS Secret Manager에 테스트 시크릿 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS Secret Manager에서 테스트 시크릿을 생성할 것입니다.
 
@@ -192,7 +300,18 @@ aws secretsmanager create-secret \
 
 이제 IAM 역할을 가정할 수 있도록 파드에 허용하는 ServiceAccount를 생성할 수 있습니다. 이 ServiceAccount는 K8s 배포에서 사용될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 serviceaccount.yaml이라는 이름의 파일을 생성해주세요.
 
@@ -211,7 +330,18 @@ metadata:
 kubectl apply -f serviceaccount.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 5: 테스트 객체 생성하기
 
@@ -289,7 +419,18 @@ spec:
           readOnly: true
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. manifest를 적용하십시오
 
@@ -303,7 +444,18 @@ kubectl apply -f my-test-secret-manifest.yaml
 - 볼륨 마운트가 있는 배포 - SecretProviderClass를 볼륨으로 마운트해야 합니다
 - Kubernetes Secret - 파드 내에서 환경 변수로 주입됩니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 다이어그램은 YAML을 적용할 때 뒷단에서 무슨 일이 벌어지는지 잘 시각화한 것입니다.
 
@@ -325,7 +477,18 @@ kubectl get po <pod_name> -o yaml
 kubectl get secret my-test-k8s-secret -o yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 6: Reloader 설치하기
 
@@ -338,7 +501,18 @@ Reloader는 ConfigMap과 Secret의 변경 사항을 감지하고 관련된 Deplo
 helm repo add stakater https://stakater.github.io/stakater-charts
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 기본값 가져오기
 
@@ -358,7 +532,18 @@ reloader:
     replicas: 2
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. Helm 차트 설치
 
@@ -370,9 +555,20 @@ helm install reloader -f reloader.yaml stakater/reloader -n kube-system
 # 단계 7: Secret 업데이트로 테스트하기
 
 - Reloader는 주석에 영향을 받습니다.
-기본 주석 reloader.stakater.com/auto는 주요 메타데이터에 있어야 합니다. 아래 명령을 사용하여 배포에 주석을 추가하세요.
+  기본 주석 reloader.stakater.com/auto는 주요 메타데이터에 있어야 합니다. 아래 명령을 사용하여 배포에 주석을 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 배포 주석 추가
@@ -389,8 +585,18 @@ metadata:
 
 2. AWS Secret Manager에서 시크릿 업데이트하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 aws secretsmanager put-secret-value \
@@ -418,7 +624,18 @@ kubectl exec -it <pod_name> -- bash
 
 # 단계 8: ConfigMap 업데이트를 테스트하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - "my-test-cm-manifest.yaml" 파일을 생성해주세요.
 
@@ -451,20 +668,20 @@ spec:
         app: ubuntu
     spec:
       containers:
-      - name: ubuntu
-        image: ubuntu
-        command: ["sleep", "123456"]
-        env:
-        - name: DRINK
-          valueFrom:
-            configMapKeyRef:
-              name: my-test-k8s-cm
-              key: drink
-        - name: MYVALUE
-          valueFrom:
-            configMapKeyRef:
-              name: my-test-k8s-cm
-              key: myvalue
+        - name: ubuntu
+          image: ubuntu
+          command: ["sleep", "123456"]
+          env:
+            - name: DRINK
+              valueFrom:
+                configMapKeyRef:
+                  name: my-test-k8s-cm
+                  key: drink
+            - name: MYVALUE
+              valueFrom:
+                configMapKeyRef:
+                  name: my-test-k8s-cm
+                  key: myvalue
 ```
 
 2. 매니페스트 적용
@@ -473,7 +690,18 @@ spec:
 kubectl apply -f my-test-cm-manifest.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. my-test-cm-manifest.yaml 파일에서 configmap을 업데이트하세요.
 
@@ -494,7 +722,18 @@ data:
 kubectl apply -f my-test-cm-manifest.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 확인
 
@@ -515,7 +754,18 @@ kubectl exec -it <pod_name> -- bash
 
 감사합니다!!!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 참고 자료:
 
@@ -531,7 +781,18 @@ kubectl exec -it <pod_name> -- bash
 
 In Plain English 커뮤니티의 일원이 되어 주셔서 감사합니다! 계속 참여해 주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 작가에게 박수를 보내고 팔로우를 눌러주세요 ️👏️️
 - 팔로우하기: X | LinkedIn | YouTube | Discord | Newsletter

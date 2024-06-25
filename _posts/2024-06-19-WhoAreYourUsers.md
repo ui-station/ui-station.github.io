@@ -3,14 +3,12 @@ title: "사용자분들은 누구인가요"
 description: ""
 coverImage: "/assets/img/2024-06-19-WhoAreYourUsers_0.png"
 date: 2024-06-19 11:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-WhoAreYourUsers_0.png
 tag: Tech
 originalTitle: "Who Are Your Users?"
 link: "https://medium.com/analysts-corner/who-are-your-users-a051b0dc7302"
 ---
-
-
 
 ![이미지](/assets/img/2024-06-19-WhoAreYourUsers_0.png)
 
@@ -20,9 +18,18 @@ link: "https://medium.com/analysts-corner/who-are-your-users-a051b0dc7302"
 
 이해관계자란 프로젝트에 적극적으로 참여하거나 프로젝트에 영향을 받는 개인 또는 그룹 또는 프로젝트의 방향을 결정할 수 있는 개인 또는 그룹을 말합니다. 그림 1에서 볼 수 있듯이 사용자 클래스는 제품의 사용자들의 하위 집합이며, 해당 사용자들은 제품의 고객들의 하위 집합이며, 이들은 이해관계자들의 하위 집합입니다. 각 사용자 클래스는 자체 요구사항과 제약 사항이 있을 것이며, 클래스 간에 일부 중복이 있을 수도 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![WhoAreYourUsers](/assets/img/2024-06-19-WhoAreYourUsers_1.png)
 
@@ -38,8 +45,18 @@ link: "https://medium.com/analysts-corner/who-are-your-users-a051b0dc7302"
 
 물리적 위치나 근무하는 비즈니스의 종류에 따라 사용자들을 클래스로 그룹화하는 것이 논리적으로 보일 수 있습니다. 은행 소프트웨어를 만드는 회사는 초기에 대형 상업 은행, 소규모 상업 은행, 저축 및 대부조합에서 근무하는지에 따라 사용자를 구분했습니다. 그러나 이러한 구별은 서로 다른 시장 세그먼트를 나타내는 것이 아니라 다른 사용자 클래스를 나타냅니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 나은 그룹화 기법은 다양한 사용자들이 수행할 작업 (사용 사례, 사용자 이야기 또는 프로세스 흐름으로 표현)을 고려하는 것입니다. 이러한 활동을 수행하는 개인들은 모든 금융 기관에서 유사한 기능적 요구를 갖게 될 것입니다. 모든 이러한 기관은 창구원, 대출 신청서를 처리하는 사람, 비즈니스 은행원, 지점 매니저 등을 고용합니다. 이것이 더 의미 있는 사용자 분류 체계입니다.
 
@@ -49,7 +66,18 @@ link: "https://medium.com/analysts-corner/who-are-your-users-a051b0dc7302"
 
 또 다른 사용자 분류를 무시하기로 결정할 수 있습니다. 그들은 제품을 사용할지라도 특별히 그들에게 맞게 디자인하지 않습니다. 선호되지 않고, 무시되지 않은 사용자 그룹은 제품 요구 사항에 영향을 미치는 데 있어 동등한 중요성을 가지고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간접 사용자 클래스를 간과하지 마세요. 그들은 당신의 응용 프로그램을 직접 사용하지 않을 수 있지만, 다른 응용 프로그램을 통해 데이터나 서비스에 접근하거나 보고서를 받아들일 수 있습니다. 한 번 제거된 당신의 고객도 여전히 당신의 고객이에요.
 
@@ -59,7 +87,18 @@ link: "https://medium.com/analysts-corner/who-are-your-users-a051b0dc7302"
 
 직접 및 간접 사용자 클래스 외에도 추가 요구 사항과 제약 조건을 제시할 수 있는 다양한 이해 관계자들을 고려하세요. 예를 들어, 개발 팀 구성원이 그들이 구축 중인 제품의 최종 사용자가 아니더라도, 효율성, 수정 가능성, 이식성 및 재사용성과 같은 내부 품질 속성에 관한 의견을 가질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 회사는 제품 설치마다 많은 비용이 필요하다는 문제점을 발견했습니다. 그들은 제품의 맞춤화 아키텍처를 개발하는 등 요구 사항에 중점을 둘 "설치자" 사용자 클래스를 고안했습니다. 이해관계자를 식별할 때 명백한 최종 사용자 이상을 고려해보세요.
 
@@ -69,7 +108,18 @@ link: "https://medium.com/analysts-corner/who-are-your-users-a051b0dc7302"
 
 다음으로, 유사한 요구 사항을 가진 그룹을 찾아 합칠 수도 있거나 여러 하위 클래스가 있는 주요 사용자 클래스로 취급할 수 있습니다. 약 65개 기업 고객을 위해 특화된 제품을 개발한 한 회사는 처음에 각 고객 회사를 고유한 요구 사항을 가진 별개의 사용자로 간주했습니다. 그들의 고객을 단순히 여섯 개의 사용자 클래스로 그룹화함으로써 요구 사항 도전에 간단하게 해결할 수 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 요구 분석 모델은 사용자 클래스를 식별하는 데 도움을 줄 수 있습니다. 컨텍스트 다이어그램에서 시스템 외부에 표시된 외부 엔터티는 사용자 클래스의 후보입니다. 기업 조직도는 잠재적 사용자와 다른 이해관계자를 발견하는 데 도움이 될 수 있습니다. 가상의 제약회사를 위한 일부 조직도가 있는 도표 2를 보여드립니다. 시스템의 대부분의 잠재적 사용자는 그러한 조직도 어딘가에 있을 확률이 높습니다. 이해관계자 및 사용자 분석을 수행하는 동안 조직도를 조사하여 다음을 찾아보세요:
 
@@ -81,7 +131,18 @@ link: "https://medium.com/analysts-corner/who-are-your-users-a051b0dc7302"
 
 조직도 분석을 통해 중요한 사용자 클래스를 놓치지 않을 확률이 줄어듭니다. 잠재적 사용자 대표를 발견할 수 있는 장소와 핵심 요구사항 결정자를 확인해 줍니다. 단일 부서 내에 다양한 요구를 가진 여러 사용자 클래스를 발견할 수도 있습니다. 반대로, 여러 부서에서 동일한 사용자 클래스를 인식하는 것은 요구 사항 수집을 단순화할 수 있습니다. 또한, 각 부서의 사용자가 관점에 따라 제공할 수있는 정보 유형을 생각해 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요구 사항 명세서, 도구 또는 계획에 사용자 클래스 및 특성 및 책임을 문서화하십시오. 각 사용자 클래스에 대한 모든 관련 정보를 포함하십시오. (예: 크기 및 선호되는 클래스). 이는 향후 변경 요청을 우선 순위로 지정하고 영향 평가를 수행하는 팀을 도울 것입니다. 거래량을 추정함으로써 테스터가 제품의 사용 프로필을 개발하고 검증 활동을 계획하는 데 도움이 됩니다.
 
@@ -89,7 +150,18 @@ link: "https://medium.com/analysts-corner/who-are-your-users-a051b0dc7302"
 
 저는 실제 화학 물질 추적 시스템 프로젝트에서 비즈니스 분석 노력을 주도했습니다. 화학가 사용자 클래스는 우리의 이해 관계자 그룹 중에서 가장 큰 그룹이었습니다. 모든 화학가들은 시스템에 대한 많은 요구 사항을 공통으로 가지고 있지만, 우리는 몇 가지 전문 요구 사항을 갖고 있는 화학가 하위 그룹이 있음을 깨달았습니다. 우리는 이러한 하위 그룹의 화학가 사용자 대표팀을 구성하여 전체 화학가 사용자 클래스에 대한 요구 사항을 잘 끌어내기 위해 노력했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자 클래스 분석은 시간이 소요되지만, 가능한 많은 이해관계자를 만족시키며 성공적인 제품 개발 노력을 위한 기초를 마련하는 중요한 단계입니다.
 

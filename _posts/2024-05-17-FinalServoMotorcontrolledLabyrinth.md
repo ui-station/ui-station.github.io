@@ -3,13 +3,12 @@ title: "최종 - 서보 모터로 조종되는 미로"
 description: ""
 coverImage: "/assets/img/2024-05-17-FinalServoMotorcontrolledLabyrinth_0.png"
 date: 2024-05-17 19:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-FinalServoMotorcontrolledLabyrinth_0.png
 tag: Tech
 originalTitle: "Final — Servo Motor controlled Labyrinth"
 link: "https://medium.com/@ymoussa1242/final-servo-motor-controlled-labyrinth-ec8509b0bb19"
 ---
-
 
 제 마지막 프로젝트에서는 게임을 만들고 싶었어요. 멀리 찾아보던 중에 이 튜토리얼을 발견했어요. 이 링크를 통해 프로젝트를 가이드받았지만, 최종적으로는 제가 독자적으로 만들었어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@ymoussa1242/final-servo-motor-controlled-labyrinth-ec
 
 다음 단계는 하드웨어를 조립하는 것이었어요. 원래는 Instructables에서 배선을 따랐지만, 전혀 운이 없었고 발표 날이 다가오고 있었어요. 아주 흔들거리는 전후 운동만 하는 것이었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 발표 날에 Danne Woo 교수님께서 도와주셔서 전선을 고쳐주셔서 정말 감사했어요. 그리고 코드도 수정해야 했어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@ymoussa1242/final-servo-motor-controlled-labyrinth-ec
 
 <img src="/assets/img/2024-05-17-FinalServoMotorcontrolledLabyrinth_0.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구조를 수정한 후 Arduino를 연결했을 때 똑같이 잘못된 위치에서 시작해서 조이스틱이 왼쪽으로 돌아가지 않는 문제들이 계속 발생했어요. 먼저 제가 한 일은 제한을 제거하는 것이었어요. 조이스틱이 잘못 연결된 것 같아 시리얼 모니터를 확인했지만 제대로 작동 중이었어요. 실제 문제를 해결한 것은 모터를 분리하고 45도로 돌리고 다시 연결한 후에 이전처럼 이동할 수 있었던 것이 해결책이었어요.
 

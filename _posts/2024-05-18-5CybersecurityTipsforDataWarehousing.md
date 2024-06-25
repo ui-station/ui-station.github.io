@@ -3,13 +3,12 @@ title: "데이터 웨어하우징을 위한 5가지 사이버보안 팁"
 description: ""
 coverImage: "/assets/img/2024-05-18-5CybersecurityTipsforDataWarehousing_0.png"
 date: 2024-05-18 18:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-5CybersecurityTipsforDataWarehousing_0.png
 tag: Tech
 originalTitle: "5 Cybersecurity Tips for Data Warehousing"
 link: "https://medium.com/@odsc/5-cybersecurity-tips-for-data-warehousing-ea8ca94df084"
 ---
-
 
 <img src="/assets/img/2024-05-18-5CybersecurityTipsforDataWarehousing_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@odsc/5-cybersecurity-tips-for-data-warehousing-ea8ca9
 
 # 1. 데이터 익명화 및 암호화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 창고에서 모든 데이터를 암호화하는 것이 첫 번째 단계입니다. 데이터에 높은 암호화 표준을 적용하면, 해커들이 액세스하더라도 그것이 쓸모없게 만들어질 것입니다. 홀모모르픽 암호화와 같은 새로운 기술은 당신이 데이터를 복호화하기 전에도 암호화된 데이터를 사용할 수 있도록 한 단계 더 나아간 것입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@odsc/5-cybersecurity-tips-for-data-warehousing-ea8ca9
 
 데이터 창고 사이버 보안의 다음 단계는 사용자의 액세스 권한을 제한하는 것입니다. 이 작업에 접근하는 가장 좋은 방법은 최소 권한 원칙(Least Privilege Principle, PoLP)을 따르는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PoLP(Principle of Least Privilege)는 작업을 올바르게 수행하기 위해 필요한 것만 액세스할 수 있어야 한다고 주장합니다. 기계 학습 모델과 작업하지 않는 직원은 기계 학습 훈련을 위해 구체적으로 데이터 웨어하우스에 액세스할 수 없어야 합니다. 마찬가지로, 데이터 과학자는 급여 데이터를 볼 수 없어야 합니다.
 
@@ -39,7 +60,18 @@ PoLP(Principle of Least Privilege)는 작업을 올바르게 수행하기 위해
 
 권한 제한은 신뢰할 수 있는 방법으로 누가 누구인지 판별할 수 있을 때에만 효과가 있음을 기억하세요. 따라서, PoLP를 강력한 인증 조치와 함께 실행해야 합니다. 가장 기본적인 수준에서는 다중 요소 인증(MFA)이 시행되어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MFA는 여러 방법으로 실행할 수 있지만, 모든 방법이 동일한 수준의 보안을 제공하는 것은 아닙니다. 예를 들어 SMS 기반 인증은 이메일 인증보다 더 안전합니다. 특정 장치에 액세스가 필요하기 때문입니다. 생체 인증은 암호보다 해킹이 더 어려울 수 있지만, 공격자가 생체 데이터에 액세스하면 변경할 수 없으므로, 민감한 창고에는 이상적이지 않을 수 있습니다.
 
@@ -49,7 +81,18 @@ MFA는 여러 방법으로 실행할 수 있지만, 모든 방법이 동일한 �
 
 먼저, 볼 수 없는 것은 안전으로 보호할 수 없습니다. 보안 소프트웨어 사용자의 약 60%가 데이터의 40% 미만만 분석한다고 합니다. 이는 중요한 취약점을 놓칠 수 있거나 침해를 인식하지 못할 수 있음을 의미합니다. 조직의 부재는 시각성을 제한하기 때문에 데이터를 분류하여 그룹으로 구성하여 보다 철저한 취약점 분석과 빠른 사고 대응을 가능하게 해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 분류는 엑세스 권한을 정제하는 데도 도움이 됩니다. 데이터를 사용 또는 민감도에 따라 정렬하면 누가 액세스할 수 있는지 결정하고 해당 정책을 시행하는 데 도움이 됩니다. 또한 행동 생체 인식을 구현할 수 있어 이로 인해 평상시에는 액세스할 수 없는 데이터에 접근하는 경우 경고를 받을 수 있습니다.
 
@@ -59,7 +102,18 @@ MFA는 여러 방법으로 실행할 수 있지만, 모든 방법이 동일한 �
 
 인공지능과 자동화는 여기서 꼭 필요합니다. 24시간 수동 모니터링은 많은 보안 인력이 필요합니다. 대부분의 기관에게는 선택사항이 아닙니다. 세계적으로 노동력 수요가 증가하더라도 사이버 보안 직원은 340만 명이 부족합니다. 자동화된 네트워크 모니터링은 실시간 사건 제한 및 부족한 보안 직원을 보완하기 위한 경고를 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 웨어하우징 보안에 대한 주의가 필요합니다
 
@@ -69,6 +123,17 @@ MFA는 여러 방법으로 실행할 수 있지만, 모든 방법이 동일한 �
 
 최초 게시물: OpenDataScience.com
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OpenDataScience.com에서 데이터 과학 관련 기사를 더 읽어보세요. 초보자부터 고급 수준까지의 튜토리얼과 안내서를 만나보실 수 있습니다! 매주 목요일마다 최신 소식을 받아보고 싶으시다면 여기를 클릭하여 주간 뉴스레터를 구독해보세요. 또한 Ai+ 트레이닝 플랫폼을 통해 언제 어디서든 데이터 과학을 학습할 수 있습니다. ODSC 이벤트에 참석하고 싶으신가요? 다가오는 이벤트에 대해 더 알아보고 싶으시다면 여기를 클릭해주세요.

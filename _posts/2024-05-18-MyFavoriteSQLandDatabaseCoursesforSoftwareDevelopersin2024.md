@@ -3,13 +3,12 @@ title: "2024년 소프트웨어 개발자를 위한 내가 가장 좋아하는 S
 description: ""
 coverImage: "/assets/img/2024-05-18-MyFavoriteSQLandDatabaseCoursesforSoftwareDevelopersin2024_0.png"
 date: 2024-05-18 18:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MyFavoriteSQLandDatabaseCoursesforSoftwareDevelopersin2024_0.png
 tag: Tech
 originalTitle: "My Favorite SQL and Database Courses for Software Developers in 2024"
 link: "https://medium.com/javarevisited/my-favorite-sql-and-database-courses-for-software-developers-in-2024-4f5ecdaf6a54"
 ---
-
 
 ## 소프트웨어 개발자가 SQL 및 데이터베이스 개념을 깊이 학습할 수 있는 최고의 온라인 강좌들입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/javarevisited/my-favorite-sql-and-database-courses-for
 
 이전에는 SQL을 배울 수 있는 최적의 위치와 최고의 무료 SQL 강좌를 공유했었는데요, 그 안에는 Udemy나 Coursera 및 다른 웹사이트의 무료 강좌들이 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 초보자와 중급 개발자를 위한 Udemy의 최고의 SQL 강좌를 소개할 것입니다.
 
@@ -29,7 +39,18 @@ SQL은 오랜 시간 동안 중요한 기술 기술이었지만 데이터 과학
 
 SQL은 회사의 데이터를 저장하기 위한 데이터베이스를 구축하고 데이터베이스와 상호 작용하기 위해 SQL 쿼리라고 불리는 명령을 사용하여 정보를 추출하고 데이터 분석 목적을 위해 필요한 정보만 남기기 위해 필터링하는 사람들을 위한 가장 인기 있는 언어입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터베이스는 테이블의 모음이며, 각 테이블에는 데이터를 보유하는 행(row)과 열(column)이 포함되어 있습니다.
 
@@ -39,7 +60,18 @@ SQL은 회사의 데이터를 저장하기 위한 데이터베이스를 구축�
 
 그런데, 만약 급한 대로 배우려 한다면, Udemy의 '15 Days of SQL: The Complete SQL Masterclass 2024' 코스를 참여하는 것을 제안합니다. 이 Udemy의 새 SQL 코스는 실생활 프로젝트에서 SQL을 딱 15일 만에 가르쳐줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-MyFavoriteSQLandDatabaseCoursesforSoftwareDevelopersin2024_1.png" />
 
@@ -49,7 +81,18 @@ SQL은 회사의 데이터를 저장하기 위한 데이터베이스를 구축�
 
 ## 1. The Complete SQL Bootcamp 2024: 처음부터 전문가까지
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Jose Portilla가 만든 이 강좌에는 41만 명 이상의 수강생이 있습니다. 이 데이터베이스나 이 언어에 이전 경험이 없는 초보자를 위한 이 가이드로 SQL 언어 학습 여정을 시작하는 것을 적극 추천합니다.
 
@@ -59,7 +102,18 @@ Jose Portilla가 만든 이 강좌에는 41만 명 이상의 수강생이 있습
 
 여기 이 강좌에 가입할 수 있는 링크가 있습니다 - The Complete SQL Bootcamp 2024: 제로부터 히어로까지 변화하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-MyFavoriteSQLandDatabaseCoursesforSoftwareDevelopersin2024_2.png" />
 
@@ -69,7 +123,18 @@ Jose Portilla가 만든 이 강좌에는 41만 명 이상의 수강생이 있습
 
 먼저 MySQL 데이터베이스의 중요 개념과 해당 환경을 컴퓨터에 설치하는 방법을 이해할 수 있게 될 것이고, 이후 MySQL에서 데이터베이스와 테이블을 생성하는 방법으로 나아갈 것이다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 이 데이터베이스에 데이터를 삽입하는 방법과 기타 사항을 배울 것입니다.
 
@@ -79,7 +144,18 @@ SQL 언어에서 CRUD 명령문에 대해 알게 될 것입니다: 생성(Create
 
 이 코스에 참여하기 위한 링크는 여기에 있습니다 — The Ultimate MySQL Bootcamp
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-MyFavoriteSQLandDatabaseCoursesforSoftwareDevelopersin2024_3.png)
 
@@ -89,7 +165,18 @@ SQL 언어에서 CRUD 명령문에 대해 알게 될 것입니다: 생성(Create
 
 우선 데이터베이스가 어떻게 작동하고 데이터를 저장하는지 이해하고, MySQL을 설치하고 SQL 명령어로 연습을 시작할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQL의 기본 명령어인 SELECT, INSERT, UPDATE, DELETE 및 집계 함수와 몇 가지 고급 주제를 학습한 후, 마지막으로 Tableau 소프트웨어와 결합하여 데이터 시각화를 수행할 수 있습니다.
 
@@ -99,7 +186,18 @@ SQL의 기본 명령어인 SELECT, INSERT, UPDATE, DELETE 및 집계 함수와 �
 
 ## 4. SQL 초보자를 위한강좌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 강좌에는 8시간 이상의 비디오 콘텐츠가 포함되어 있으며 MySQL 데이터베이스를 사용하여 시네마 예매 시스템을 만드는 실제 예제를 제공합니다.
 
@@ -109,7 +207,18 @@ SQL 언어를 사용하기 전에 시스템에 MySQL 데이터베이스를 설�
 
 이 강좌에 가입하려면 여기를 클릭하세요 - SQL for Beginners
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![마크다운](/assets/img/2024-05-18-MyFavoriteSQLandDatabaseCoursesforSoftwareDevelopersin2024_5.png)
 
@@ -119,7 +228,18 @@ SQL 언어를 사용하기 전에 시스템에 MySQL 데이터베이스를 설�
 
 먼저 간단한 SQL 명령어를 이해하고 적용한 다음, WHERE 절을 사용하여 데이터를 필터링하고 데이터를 정렬하며 여러 테이블에서 데이터를 추출하고 집계 함수를 사용하는 방법을 배울 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 수업에 참여하려면 다음 링크를 클릭해주세요 — Microsoft SQL for Beginners
 
@@ -129,7 +249,18 @@ SQL 언어를 사용하기 전에 시스템에 MySQL 데이터베이스를 설�
 
 Udemy를 좋아하지 않거나 Coursera와 같은 인기 있는 학습 플랫폼에서 최고의 SQL 과정을 찾고 있다면, 이 수업을 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 과학을 위한 SQL은 Coursera에서 가장 인기 있는 강좌 중 하나입니다.
 
@@ -139,7 +270,18 @@ SQL의 기본을 마스터하여 데이터 과학자처럼 데이터를 분석�
 
 Women in Data의 창립자/CEO이자 데이터 과학자인 Sadie St. Lawrence가 이 Coursera 강좌를 가르칩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 코스에 가입하려면 링크를 확인해보세요 — SQL For Data Science
 
@@ -149,7 +291,18 @@ Women in Data의 창립자/CEO이자 데이터 과학자인 Sadie St. Lawrence�
 
 2024년에 SQL과 데이터베이스를 배우기 위한 최고의 Udemy와 Coursera 온라인 강좌는 여기까지에요. 이 목록에는 SQL 기본 사항과 데이터베이스 기초를 배울 수 있는 수업들, 그리고 MySQL, PostgreSQL, 그리고 Microsoft SQL Server와 같은 인기 데이터베이스를 배울 수 있는 온라인 강좌가 포함되어 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 SQL을 배우는 데 적합한 데이터베이스로 수업을 듣는다는 것을 의미합니다. 이것은 초보자들의 관점에서 매우 중요합니다.
 
@@ -159,7 +312,18 @@ SQL 언어를 배우는 것은 데이터 과학자나 데이터 분석가와 같
 
 만약 이러한 강좌들을 좋아하지 않고 연습이 가득한 부트캠프 스타일의 강좌를 찾고 있다면 Andrei Negaoie의 Complete SQL and Databases Bootcamp 강좌가 시작하기에 좋은 강좌입니다. 이 강좌는 주요 SQL 개념을 가르치기 위한 연습과 SQL 쿼리가 가득합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고, 2024년에 SQL을 배우는 가장 좋은 방법을 보여주는 ByteByteGo의 멋진 비디오가 여기 있어요!
 

@@ -3,13 +3,12 @@ title: "2024년 게임 업계의 지속적인 리소그린드에 대해 무슨 �
 description: ""
 coverImage: "/assets/img/2024-05-20-Whatsupwiththeconstantgaminglayoffsin2024_0.png"
 date: 2024-05-20 16:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-Whatsupwiththeconstantgaminglayoffsin2024_0.png
 tag: Tech
 originalTitle: "What’s up with the constant gaming layoffs in 2024?"
 link: "https://medium.com/@thredmedia/whats-up-with-the-constant-gaming-layoffs-in-2024-5b2fe9a3139e"
 ---
-
 
 ![이미지](/assets/img/2024-05-20-Whatsupwiththeconstantgaminglayoffsin2024_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@thredmedia/whats-up-with-the-constant-gaming-layoffs-
 
 그 전에 EA, Microsoft, Epic, Sega, 그리고 Twitch는 2023년 동안 총 10,500명의 직원들을 해고한 적이 있었다고 신뢰할 수 있는 인원 감축 추적기에 따르면. 2024년 시작 90일이 되자 이미 이 숫자는 6,000명의 직원에 도달했고, 위기라는 단어가 분석가들 사이에서 등장하기 시작했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보드 게임이 대유행하면서 팬데믹으로 인한 외출 자제의 이유가 줄어들었다기보다 게임 업계 리더들은 게임이 팬데믹 기간 동안 눈부신 성공을 거두어 이 상황에 이르게 된 것이라는 데에 일치한다는 점에 동의하는 경향이 있습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@thredmedia/whats-up-with-the-constant-gaming-layoffs-
 
 몇 년이 지난 지금, 게임 사업 관계자들에게 현실은 그리 유치하지 않습니다. 2023년 게임 투자가 주요한 최저점을 기록했으며, 소니는 PS5 판매 대상을 크게 미달했으며, 미국의 수익은 4% 감소한 것으로 알려져 있습니다 — 무한한 이익이 기대되었던 것과는 크게 달라진 결과입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "‘이제는 믿기 힘들지만, 당시 문화적 대화는 이러한 이익이 계속 유지될 것이라는 믿음에 의해 주도되었다’고 컴퓨터 산업 교수 레인 누니가 설명했습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@thredmedia/whats-up-with-the-constant-gaming-layoffs-
 
 이 지점에 이르게 한 것은 지나치게 많은 인원 채용 뿐만 아니라, 충분하지 않은 점도 있습니다. 게임 발행사들에게는 항상 직원이 일회용으로 여겨졌으며, 게임 업계에서 오랫동안 활동한 대다수는 프로젝트마다 살아남기 위해 뛰놀며, 실제 고용 안정성이 전혀 없는 삶에 익숙할 것입니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비용이 품질이 향상된 제품에 대한 수요로 인해 뛰어오르면 벤처 자본이 신중한 투자자들로부터 소진되거나 새로운 기술 트렌드가 예상치 못하게 실패할 때 — 아니, 클라우드 게임 — 중복은 최고 관리자들에게 탈출구로 여겨집니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@thredmedia/whats-up-with-the-constant-gaming-layoffs-
 
 리뷰 사이트에서 주어진 지루한 평가로 인해 출시된 이번 실패작은 이전의 해적 게임인 Assassin's Creed: Black Flag와 Sea of Thieves에 대한 관심을 다시 불러일으키기만 했습니다. 심지어 Assassin's Creed 같은 사랑받는 시리즈에 추가 요소를 넣어도 성공을 보장할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 넓은 시야를 가져오면, 게임 배급사들로부터 갑자기 해고를 당한 사람들을 위해 격려하는 기초적 노력들이 있습니다.
 
@@ -59,6 +102,17 @@ link: "https://medium.com/@thredmedia/whats-up-with-the-constant-gaming-layoffs-
 
 최종적으로 소비자들로부터 더 많은 주의를 받을 필요가 있는 것이 아닌지, 이런 식의 '지도자들의 결정'을 고려해 볼 때가 아닌지도 모릅니다. 게임의 생명줄로써, 이러한 실천 방식은 허용 가능하거나 당연한 것으로 여겨질 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제이미 왷츠가 Thred를 위해 작성했습니다.

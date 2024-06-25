@@ -3,13 +3,12 @@ title: "게임 마스터리의 즐거움과 고통"
 description: ""
 coverImage: "/assets/img/2024-05-17-TheJoyandPainofGameMastery_0.png"
 date: 2024-05-17 18:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-TheJoyandPainofGameMastery_0.png
 tag: Tech
 originalTitle: "The Joy and Pain of Game Mastery"
 link: "https://medium.com/@GWBycer/the-joy-and-pain-of-game-mastery-d0e177fd7993"
 ---
-
 
 ![게임 마스터리의 즐거움과 고통](/assets/img/2024-05-17-TheJoyandPainofGameMastery_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@GWBycer/the-joy-and-pain-of-game-mastery-d0e177fd7993
 
 Doom Eternal 출시 후 업데이트를 놓쳤다면, 마스터 레벨은 DLC 챕터와 함께 지난 몇 년 동안 추가되었어요. 이들은 흐름이나 경로를 바꾸지 않는 레벨의 재판매로, 모든 교전과 아레나를 크게 다양하게 변화시키는 매우 어려운 리믹스에요. 이제는 그냥 복도였던 곳이 큰 적들이 당신을 향해 오는 작은 아레나가 될 수 있어요. 적들에게 새로운 능력이나 꼼수는 주어지지 않지만, 언제 어디서 무엇과 싸우느냐에 따라 완전히 다르다는 것이 좋은 액션 디자인의 핵심이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 도전에 무릎 꿇지 않기
 
@@ -29,7 +39,18 @@ Doom Eternal 출시 후 업데이트를 놓쳤다면, 마스터 레벨은 DLC �
 
 ![게임 마스터리의 기쁨과 고통](/assets/img/2024-05-17-TheJoyandPainofGameMastery_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것이 돔 이터널의 마스터 레벨이 정말 빛을 발하는 곳입니다. 플레이어는 같은 사이버악마, 같은 마라우더 등과 싸우지만 새로운 배치와 패턴을 보여줍니다. 좋은 적 디자인은 게임 전체를 통틀어 항상 좋다고 할 수 있습니다. 게임에서 기본 적으로 시작하는 적은 플레이어를 정말 테스트하고 싶다면 심술부리게 활용할 수 있습니다. 이는 Nintendo가 게임에서 칭찬받는 디자인의 종류와도 유사합니다. 게임에 초보자 친화적인 주요 어드벤스 파트를 제공하면서 전문 플레이어를 위한 어려운 보너스 콘텐츠를 제공하는 것입니다. 마지막으로 중요한 점은 대부분의 사람들이 게임에서 완벽한 숙달을 고민하는 것이 아니라는 점입니다. 게임을 모든 난이도 수준의 사람들을 위해 균형 있게 맞추는 것이 좋은 난이도 디자인입니다.
 
@@ -39,7 +60,18 @@ Doom Eternal 출시 후 업데이트를 놓쳤다면, 마스터 레벨은 DLC �
 
 # P는 고통을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 책을 쓰는 동안 내 자신에게 가해진 또 다른 시련은 Ultrakill의 P-Rank 도전을 하는 것이었습니다. Doom Eternal과 함께, 두 게임 모두 플레이하는 데 매우 기술적인 FPS 게임입니다. Doom Eternal은 다행히도 당신의 기술에 대해 점수를 매기지는 않지만, Ultrakill은 그렇습니다. 현재 게임에서 가장 어려운 도전인 P-2를 해제하려면 해당 지점까지의 모든 레벨에서 최상의 순위를 얻어야 합니다. 적을 모두 죽이고, 빠르게 하고, 세련되게 해야 합니다. 마지막 항목은 약간의 노력이 필요할 것입니다.
 
@@ -47,9 +79,20 @@ Ultrakill은 Doom Eternal보다 게임 플레이의 총기 사용에 대한 매�
 
 중요한 점은 Ultrakill이 다양한 무기의 행동 방식을 숨기지 않는다는 것입니다. 무기에 대한 모든 로그 엔트리는 플레이어가 사용할 수 있는 콤보를 명확히 설명하며, 이것은 특히 p-ranking 때문에 이루어집니다. P 레인지의 점수를 얻으려면 플레이어는 상등 평가를 유지하기 위해 지속적으로 무기를 바꿔야 하며, 물론 많이 맞지 않아야 합니다. Doom Eternal과 마찬가지로 Ultrakill에서 능숙해지면 게임이 더 쉬워집니다. 가브리엘과의 두 번째 전투는 처음 싸울 때 엄청난 난이도 상승으로 보일 수 있습니다. 그러나 한 번 P-rank를 획득하면 전투가 약 10초 정도로 단축됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-플레이어의 기술은 메커니즘을 배우면서 성장할 것이지만, 이는 게임 플레이를 더 쉽게 만드는 것은 아닙니다. P-2에 도달하면 지금까지 가장 어렵고 미친 투기장 전투가 펼쳐집니다. Ultrakill의 적 디자인은 다른 슈팅 게임과 구별되는 독특함을 지니고 있습니다. 각 적 유형은 특정한 역할뿐만 아니라 행동 방식에 대한 고유한 규칙과 요소를 갖추고 있습니다. 이러한 배치를 서로 다른 투기장과 다양한 적과 조합함으로써, 게임은 다른 슈팅 게임과 비교해 아주 쉬운 것에서 굉장히 어려운 전투로 순조롭게 이어질 수 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+플레이어의 기술은 메커니즘을 배우면서 성장할 것이지만, 이는 게임 플레이를 더 쉽게 만드는 것은 아닙니다. P-2에 도달하면 지금까지 가장 어렵고 미친 투기장 전투가 펼쳐집니다. Ultrakill의 적 디자인은 다른 슈팅 게임과 구별되는 독특함을 지니고 있습니다. 각 적 유형은 특정한 역할뿐만 아니라 행동 방식에 대한 고유한 규칙과 요소를 갖추고 있습니다. 이러한 배치를 서로 다른 투기장과 다양한 적과 조합함으로써, 게임은 다른 슈팅 게임과 비교해 아주 쉬운 것에서 굉장히 어려운 전투로 순조롭게 이어질 수 있습니다.
 
 'Doom Eternal'과 마찬가지로, 플레이어의 능력과 적의 통계는 특히 이 고급 도전을 위해 명시적으로 변경되는 것은 아니지만, 게임은 플레이어에게 승리할 희망을 품고 있다면 더 많은 것을 요구합니다. Ultrakill의 P-2를 넘기는 것, Sisyphus Prime을 포함한 것은 플레이어를 위한 시련의 도전입니다.
 
@@ -57,7 +100,18 @@ Ultrakill은 Doom Eternal보다 게임 플레이의 총기 사용에 대한 매�
 
 # 완벽한 고통
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 능숙함은 디자이너로서 플레이어에게 강요할 수 있는 것이 아니지만, 캐주얼 플레이어에게는 혜택이 있다는 것을 눈치 챘을지도 모릅니다. 게임을 시작부터 끝까지 진행하는 것 이상의 즐거움이 있다는 것을 알면 누군가는 게임의 메커니즘과 플레이를 더 깊게 탐구하게 될 수 있습니다. 이는 다양한 실력 수준이나 플레이 스타일을 가진 사람들이 게임을 플레이하는데 다양한 꿀팁을 배울 수 있게 합니다. 저는 Ultrakill의 코인 플립 테크 타이밍을 익힐 수는 없겠지만, 레일 캐논 트릭으로 P랭크를 얻을 수는 있습니다. 다양한 실력 수준을 수용할 수 있는 게임을 디자인하면 더 균형 잡힌 게임이 되고, 어떤 유형의 플레이어가 무엇을 하는지 아는 것으로 레벨과 도전 과제를 쉽게 구축할 수도 있습니다.
 
@@ -67,10 +121,21 @@ Ultrakill의 다양한 난이도를 살펴보면, 각 설정에 대한 변경 �
 
 여러분께 질문: 어떤 게임들이 그들의 내부적 능숙함을 촉진하고 장려한 좋은 사례로 떠오르시나요? 댓글로 알려주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 슈터 및 FPS 디자인에 대해 더 알고 싶다면 출시되는 순간, Game Design Deep Dive Shooters를 반드시 구입해보세요.
 
-더 많은 일일 스트리밍을 할 수 있도록 지원하고 싶다면, 제 패트론을 확인해주세요. 
+더 많은 일일 스트리밍을 할 수 있도록 지원하고 싶다면, 제 패트론을 확인해주세요.
 
 게임 및 게임 디자인에 대해 이야기를 나눌 수 있는 디스코드가 모든 사람들에게 열렸습니다.

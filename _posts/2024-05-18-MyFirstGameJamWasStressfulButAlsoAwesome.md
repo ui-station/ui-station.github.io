@@ -3,13 +3,12 @@ title: "첫 게임잼은 스트레스 받았지만 정말 멋있었어요"
 description: ""
 coverImage: "/assets/img/2024-05-18-MyFirstGameJamWasStressfulButAlsoAwesome_0.png"
 date: 2024-05-18 15:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MyFirstGameJamWasStressfulButAlsoAwesome_0.png
 tag: Tech
 originalTitle: "My First Game Jam Was Stressful But Also Awesome"
 link: "https://medium.com/illumination-gaming/my-first-game-jam-was-stressful-but-also-awesome-29620b27b981"
 ---
-
 
 ![My First Game Jam](/assets/img/2024-05-18-MyFirstGameJamWasStressfulButAlsoAwesome_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/illumination-gaming/my-first-game-jam-was-stressful-bu
 
 게다가, 더 큰 팀의 일원이 되는 것에 진심으로 관심이 있어요. 혼자 프리랜싱을 하다 보면 외로워 질 수 있어요. 게임 점프인은 외로움을 극복하기 위한 제 해결책이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 게임 잼이란 무엇인가요?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/illumination-gaming/my-first-game-jam-was-stressful-bu
 
 이 행사 이전에는 제가 협업한 개발자들만 알고 있었습니다. 그들은 본업과 개인 게임 프로젝트로 바쁘게 일하고 있었으며, 산업 내에서 아는 사람이 아무도 없었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참가한 게임 잼을 조직했습니다. 주최자들은 사람들을 효과적으로 관리하고 미지원된 역할에 따라 팀을 배정하는 데 훌륭한 일을 했습니다.
 
@@ -39,7 +60,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 ## 아이디어
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희들의 첫 만남 때, 일할 아이디어를 찾고 싶었어요. 우리는 가장 좋아하는 게임들에 대해 살펴보았죠. Spelunky, Skyrim, Rocket League 등.
 
@@ -49,7 +81,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 나는 언제나 개구리와 관련된 게임의 사운드 트랙을 작업해 보고 싶었습니다. 습지 같고 수변의, 푸릇푸릇하고 밝은, 귓가를 달래는, 분위기 있는 그리고 섬세한 아름다움을 담고 싶었죠. 이어나갈 수 있겠어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내가 그들에게 아이디어를 제안했어요: 이웃들에게 물건을 전달해야 하는 배달원이 되는 개구리 게임이에요. 이 게임의 주요 아이디어는 전달뿐만 아니라 함께하는 것에 대한 것이에요. 당시에는 그 아이디어에 완전히 열정적이지 않았기 때문에 최선을 다해 투고하지 않았어요. 최상의 경우에도 절반 정도만 되던 거죠.
 
@@ -59,7 +102,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 ## 게임 개발의 도전들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 모든 것이 쉽지 않을 것임을 알았지만 실제 게임 개발에는 그런 것 없을 거라고 생각했습니다. 음악 부분은 빨리 끝났지만, 그 부분은 추후에 다시 다루겠죠. 저는 결코 알 수 없을 프로그래밍 부분이 시간이 가장 오래 걸렸습니다.
 
@@ -69,7 +123,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 다행히도, 우리는 사전에 간단한 플랫포머 게임을 결정했습니다. 플레이어는 점프를 해 플랫폼에 붙기 위해 혀를 사용하는 개구리 주인공 Ribberto를 조종합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보너스로, 스케이트보드를 이용하여 속도를 내고, 레벨 디자인에는 플레이어가 속도를 내며 뛰어올라갈 수 있는 작은 램프가 포함되어 있습니다.
 
@@ -79,7 +144,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 여기에 있다. 오랫동안 원하던 팀이었고, 우리는 정말 잘 함께 일했습니다. 그러나 이 과정에서 어려움이 없지는 않았습니다. 때로는 진척이 느리게 느껴졌습니다. 우리는 모두 마감일을 다르게 존중해서 약간의 다툼도 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 예술가는 정말 대단했어요. 한 달 동안 계속해서 다양한 스프라이트, 배경 및 에셋들을 제공해 주었죠. 개발자들은 꾸준한 진전을 이뤄나갔어요.
 
@@ -89,7 +165,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 ## 재앙과 마감일
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임을 제출해야 할 시간 하루 앞서 재앙이 찾아왔다. 게임은 반쯤 플레이 가능했지만 모든 것이 의도한 대로 작동되지 않았다. 다양한 버그가 있었고 디버깅은 시간이 많이 걸렸다.
 
@@ -99,7 +186,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 10분 남았을 때, 한 플랫폼이 움직임을 멈춘 것을 발견했다. 이 플랫폼은 레벨을 완료하고 게임을 끝내는 데 극히 중요했다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 어떤 양보를 했습니다. 내 사운드 효과는 선택에서 떨어졌고, 시각 아티스트의 멋진 엔딩 크레딧 이미지가 삭제되었습니다. 게임 출시 시, 어떤 이상한 버그 때문에 플레이어가 게임을 완료할 수 없었죠.
 
@@ -109,7 +207,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 주요 개발자는 날 반이나 꼴반 만에 처음으로 잠자리에 들어갔고, 나는 평상시처럼 일상 업무를 계속했습니다. 하지만 진정한 기적은 한 주가 끝날 때 일어났어요. 행사 주최자들이 모든 게임 제출물의 플레이스루를 스트리밍했을 때 진짜 마법이 생겼습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스트림이 시작되자마자 참가자들 사이에 얼마나 많은 재능이 있는지에 대해 생각할 수밖에 없었습니다. 모두의 게임이 다르기 때문이죠. 일부는 2D 그래픽을 특징으로 하고, 다른 사람들은 기본적인 3D 디자인을 사용했습니다.
 
@@ -119,7 +228,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 ## 내 게임 이야기는 계속되어요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 게임이 어떤 부족함이 있었더라도 그 성과에 모두 만족했어요. 짧은 휴식 뒤, 우린 비공식적으로 우리만의 작은 인디 게임 스튜디오를 만들기로 결정했어요. 이 글을 쓰는 시점에서는 아직 제목이 없어요.
 
@@ -129,7 +249,18 @@ GDEX는 오하이오 주에 본사를 둔 게임 엑스포 회사로, 저가 참
 
 우리는 처음에 Hoppy Holidays 게임을 되살리기 위한 계획을 세웠었어요. 하지만 우리 개발자들이 그걸 당분간 다시 다루지 않을 것 같아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GDEX 팀에게 이벤트를 주최해 줘서 감사합니다. 당신들 덕분에 모두를 함께 모아 즐거운 추억을 만들 수 있었어요. 당신들처럼 창의적인 사람들이 우리를 자극해 우리가 좋아하는 것을 할 수 있게 해 줍니다.
 
@@ -139,9 +270,20 @@ GDEX 팀에게 이벤트를 주최해 줘서 감사합니다. 당신들 덕분�
 
 하지만 팀 첫 회의를 가지고 나서 정말 안도했어요. 우리 팀의 다양한 개성들이 에너지를 주었어요. 우리는 모두가 서로 잘 맞고 함께 일할 수 있었어요, 주고 받으며 함께 하기 좋았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-미래를 향해 나아가며, 미국과 캐나다 여러 곳에서 새로운 친구들을 만났어. 함께 다시 게임을 만들 수 있는 친구들이 생겼단 건 정말 멋진 일이라고 생각해. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+미래를 향해 나아가며, 미국과 캐나다 여러 곳에서 새로운 친구들을 만났어. 함께 다시 게임을 만들 수 있는 친구들이 생겼단 건 정말 멋진 일이라고 생각해.
 
 ## 앞으로 해볼 점
 
@@ -149,7 +291,18 @@ GDEX 팀에게 이벤트를 주최해 줘서 감사합니다. 당신들 덕분�
 
 그러니 한 번 참여해보는 건 어떨까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 구글 검색으로 현재 진행 중이거나 예정된 지역 및 온라인 게임 잼을 찾아볼 수 있어요.
 
@@ -159,7 +312,18 @@ Itch.io는 인디 게임과 관련된 모든 것에 대한 좋은 자료원입�
 
 우리 게임인 Hoppy Holidays를 여기에서 플레이할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "당신은 나의 개인 발전에 대한 더 많은 생각(이 경우에는 게임에 대한 생각)을 확인할 수 있습니다.
 

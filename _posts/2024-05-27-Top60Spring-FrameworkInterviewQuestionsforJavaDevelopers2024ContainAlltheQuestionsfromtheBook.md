@@ -18,10 +18,20 @@ link: "https://medium.com/@rathod-ajay/top-60-spring-framework-interview-questio
 
 이 지식을 통해 더 효율적이고 빠른 스프링의 버전인 스프링 부트가 왜 이런 방식으로 작업을 하는지 이해할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경해 보겠습니다.
-
 
 It’s like learning the basics before using a time-saving tool that’s built on those basics. So, by mastering Spring first, you’ll have a better grip on Spring Boot and make smarter choices when creating modern applications.
 
@@ -31,8 +41,18 @@ Let’s dive into the Spring framework interview questions,
 
 The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications — on any kind of deployment platform.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring의 중요 요소 중 하나는 애플리케이션 수준에서의 인프라 지원입니다. Spring은 기업 애플리케이션의 "배관 시스템"에 집중하여 팀이 애플리케이션 수준의 비즈니스 로직에 집중할 수 있도록 하며, 특정 배포 환경에 불필요한 결합을 만들지 않습니다.
 
@@ -42,7 +62,18 @@ Spring의 중요 요소 중 하나는 애플리케이션 수준에서의 인프�
 
 다음은 IOC가 어떻게 보이는지 보여주는 다이어그램입니다,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_1.png" />
 
@@ -52,7 +83,18 @@ Spring의 중요 요소 중 하나는 애플리케이션 수준에서의 인프�
 
 IoC는 의존성 주입(DI)로도 알려져 있습니다. 객체가 생성자 인수, 팩토리 메소드에 대한 인수 또는 생성 또는 팩토리 메소드에서 반환된 후 객체 인스턴스에 설정된 속성을 통해 단지 그 종속성(즉, 작동하는 다른 객체)을 정의하는 프로세스입니다. 컨테이너는 빈을 생성할 때 이러한 종속성을 주입합니다. 이 프로세스는 기본적으로 빈 자체가 직접 클래스를 사용하여 종속성을 제어하거나 위치를 찾는 것의 역(따라서 제어의 역전)입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스프링 IOC 컨테이너란 무엇인가요?
 
@@ -62,7 +104,18 @@ org. spring framework.context.ApplicationContext 인터페이스는 스프링 Io
 
 컨테이너는 구성 메타데이터를 읽어서 인스턴스화, 구성 및 조립할 객체에 대한 지침을 얻습니다. 구성 메타데이터는 XML, Java 주석 또는 Java 코드로 표현됩니다. 이를 통해 응용 프로그램을 구성하는 객체와 해당 객체 간의 풍부한 상호 종속성을 표현할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스프링에서 구성을 정의하는 방법은 몇 가지가 있을까요?
 
@@ -72,7 +125,18 @@ org. spring framework.context.ApplicationContext 인터페이스는 스프링 Io
 
 2. Java 기반 구성: XML 파일 대신 Java를 사용하여 애플리케이션 클래스 외부에 빈을 정의할 수 있습니다. 이러한 기능을 사용하려면 @Configuration, @Bean, @Import, @DependsOn 어노테이션을 참조하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 의존성 주입이란?
 
@@ -82,7 +146,18 @@ org. spring framework.context.ApplicationContext 인터페이스는 스프링 Io
 
 DI 원칙에 따라 코드가 더 깔끔해지고, 객체가 의존성이 주어질 때 결합이 더 효과적해집니다. 객체는 자체 의존성을 찾지 않으며 의존성의 위치나 클래스를 알지 못합니다. 결과적으로 클래스는 인터페이스나 추상 기본 클래스에 대한 의존성이 있을 때 특히 의존성이 단위 테스트에서 사용될 수 있도록 스텁 또는 모의 구현을 허용하는 경우 테스트하기 쉬워집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DI는 주로 생성자 기반 의존성 주입과 Setter 기반 의존성 주입 두 가지 주요 변형이 있습니다. 일반적으로 다이어그램은 다음과 같이 보입니다.
 
@@ -92,7 +167,18 @@ DI는 주로 생성자 기반 의존성 주입과 Setter 기반 의존성 주입
 
 ## 의존성 주입의 유형과 그것을 사용함으로써 얻는 이점은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의존성 주입(DI)은 객체가 자신의 종속성을 생성하는 대신 종속성을 제공받을 수 있는 디자인 패턴입니다. 여러 종류의 의존성 주입이 있으며, 각각의 장단점이 있습니다:
 
@@ -112,7 +198,18 @@ this.movieFinder = movieFinder;
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Setter 주입: 이 유형의 주입에서는 종속성이 클래스가 인스턴스화된 후에 setter 메서드로 전달됩니다. 이를 통해 종속성을 실행 중에 변경할 수 있어서 클래스를 다른 문맥에서 재사용할 수 있습니다.
 
@@ -134,7 +231,18 @@ public class SimpleMovieLister {
 
 생성자 기반 및 setter 기반 DI를 혼합하여 사용할 수 있기 때문에 필수적인 종속성에는 생성자를 사용하고 선택적 종속성에는 setter 메서드나 구성 메서드를 사용하는 것이 좋은 지침입니다. @Autowired 주석을 setter 메서드에 사용하여 속성을 필수 종속성으로 만들 수 있지만, 프로그래밍 방식으로 인수의 유효성을 검사하는 생성자 주입이 선호됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스프링 팀은 일반적으로 생성자 주입을 옹호합니다. 왜냐하면 이렇게 하면 애플리케이션 구성 요소를 변경 불가능한 객체로 구현할 수 있고 필수 종속성이 null이 되지 않도록 할 수 있기 때문입니다. 더불어 생성자 주입된 구성 요소는 항상 클라이언트(호출) 코드에 완전히 초기화된 상태로 반환됩니다.
 
@@ -144,7 +252,18 @@ public class SimpleMovieLister {
 
 # 컨테이너 내부에서 제어의 역전이 어떻게 작동하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제어의 역전(IoC)은 응용 프로그램 코드에서 외부 컨테이너로 제어가 전달되는 디자인 패턴입니다. Java 응용 프로그램의 경우, 해당 컨테이너는 보통 IoC 컨테이너 또는 의존성 주입(DI) 컨테이너로 불립니다.
 
@@ -154,7 +273,18 @@ IoC 컨테이너는 객체의 생성과 관리를 담당하며, 이를 위해 �
 
 구성: IoC 컨테이너를 사용하려면, 객체가 어떻게 생성되고 연결되어야 하는지를 정의하는 일련의 규칙으로 구성해야 합니다. 이 구성은 일반적으로 XML 또는 Java 어노테이션을 사용하여 수행됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 객체 생성: 애플리케이션이 컨테이너로부터 객체를 요청하면, 컨테이너는 구성 규칙을 사용하여 요청된 객체의 새 인스턴스를 만듭니다.
 
@@ -164,7 +294,18 @@ IoC 컨테이너는 객체의 생성과 관리를 담당하며, 이를 위해 �
 
 제어의 역전: 컨테이너를 통해 객체를 생성하고 관리하도록 의존하는 것으로, 애플리케이션 코드는 더 이상 객체 생성 프로세스를 직접 제어하지 않습니다. 대신, 컨테이너가 이 책임을 맡고, 애플리케이션 코드는 단순히 컨테이너로부터 필요한 객체를 요청합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다양한 스프링 모듈은 무엇인가요?
 
@@ -174,7 +315,18 @@ IoC 컨테이너는 객체의 생성과 관리를 담당하며, 이를 위해 �
 
 핵심 컨테이너(Core Container): 핵심 컨테이너 모듈은 스프링 프레임워크의 기초를 형성하며, 의존성 주입, 빈 라이프사이클 관리 및 리소스 관리와 같은 필수 서비스를 제공합니다. 애플리케이션 전체에서 객체를 생성, 구성 및 관리하는 역할을 수행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 접근/통합: 데이터 접근/통합 모듈은 관계형 데이터베이스, 객체-관계 매핑 (ORM) 프레임워크, 메시징 시스템 등 다양한 데이터 원본과의 데이터 접근 및 통합을 간소화하는 데 중점을 둡니다. JDBC 추상화, ORM 통합, 메시지 지향 미들웨어 (MOM) 지원과 같은 기능을 제공합니다.
 
@@ -184,7 +336,18 @@ AOP (Aspect-Oriented Programming): AOP 모듈은 로깅, 보안, 트랜잭션 �
 
 계측 (Instrumentation): 계측 모듈은 Spring 애플리케이션을 모니터링하고 성능을 관리하는 데 도움을 줍니다. 빈 생명주기 추적, 메모리 프로파일링, 성능 메트릭 수집과 같은 기능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트: 테스트 모듈은 Spring 애플리케이션의 테스트를 위한 도구와 프레임워크를 제공하며, 단위 테스트, 통합 테스트 및 웹 애플리케이션 테스트에서 의존성 주입을 지원합니다.
 
@@ -194,7 +357,18 @@ AOP (Aspect-Oriented Programming): AOP 모듈은 로깅, 보안, 트랜잭션 �
 
 스프링 MVC, 스프링 AOP 및 스프링 Core는 강력하고 확장 가능한 자바 애플리케이션을 구축하는 데 중요한 역할을 하는 스프링 프레임워크의 세 가지 불가결한 모듈입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스프링 MVC (Model-View-Controller)
 
@@ -204,7 +378,18 @@ AOP (Aspect-Oriented Programming): AOP 모듈은 로깅, 보안, 트랜잭션 �
 
 Dispatcher Servlet: 요청 처리 및 적절한 컨트롤러로의 디스패치를 중앙에서 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨트롤러 클래스: 사용자 요청을 처리하고 데이터를 처리하며 모델과 상호 작용하여 적절한 뷰를 선택합니다.
 
@@ -214,7 +399,18 @@ Spring AOP (Aspect-Oriented Programming)
 
 Spring AOP는 관점 지향 프로그래밍 (AOP)의 구현을 제공합니다. 이는 로깅, 보안, 트랜잭션 관리와 같은 교차 관심사를 모듈화하는 기술입니다. 개발자들은 이러한 관심사를 측면으로 캡슐화하고 응용 프로그램 실행 흐름 내에서 특정 지점에 적용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring AOP의 주요 기능은 다음과 같습니다:
 
@@ -224,13 +420,35 @@ Spring AOP의 주요 기능은 다음과 같습니다:
 
 - Aspect 실행: Aspect 조언(advice)의 호출을 처리하여, 조인 포인트에서 취해야 할 행동을 정의합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 Spring Core의 주요 기능입니다:
 
 - 의존성 주입: 객체에 필요한 의존성을 자동으로 제공하여 코드 복잡성을 줄이고 모듈성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빈 라이프사이클 관리: Spring 애플리케이션 컨텍스트 내의 객체 생성, 초기화, 파괴 및 범위를 처리합니다.
 
@@ -240,7 +458,18 @@ Spring AOP의 주요 기능은 다음과 같습니다:
 
 주석 발견: Spring 프레임워크는 주석 기반 구성을 사용하여 Spring 빈을 식별합니다. 지정된 패키지 및 하위 패키지에서 @Component, @Service, @Repository, @Controller 또는 다른 스테레오타입 주석이 지정된 클래스를 검사하여 응용 프로그램에서 빈의 역할을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빈 생성 및 등록: Spring Framework는 어노테이션으로 지정된 클래스를 발견하면 해당 클래스의 인스턴스를 생성하고 애플리케이션 컨텍스트에 Spring 빈으로 등록합니다. 애플리케이션 컨텍스트는 모든 관리되는 빈의 레지스트리를 유지하여 의존성 주입에 접근할 수 있게 합니다.
 
@@ -256,7 +485,18 @@ public class AppConfig {
 
 이 구성 클래스는 두 개의 어노테이션을 정의합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - `@Configuration`: 이 클래스를 Spring의 빈 정의 원천으로 표시합니다.
 
@@ -266,7 +506,18 @@ public class AppConfig {
 
 ApplicationContext는 빈 관리 및 Spring 애플리케이션에 서비스를 제공하는 핵심 컨테이너입니다. 빈 구성, 의존성 주입 및 자원 관리를 간단화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 사용해야 합니다.
 
@@ -281,7 +532,18 @@ context.close();
 
 # BeanFactory란 무엇이며 Spring에서 어떻게 사용하는가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BeanFactory는 Spring 애플리케이션에서 빈을 관리하기 위한 기본 컨테이너를 나타내는 인터페이스입니다. 빈을 생성, 검색 및 구성하는 메서드를 제공합니다. ApplicationContext는 보다 고급이며 일반적으로 사용되는 컨테이너이지만, BeanFactory는 기본적인 빈 관리를 위한 더 간단한 인터페이스를 제공합니다.
 
@@ -295,7 +557,18 @@ myService.doSomething();
 
 # 빈이란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빈: Spring에서 빈은 Spring IoC 컨테이너 내에서 관리되는 관리 객체입니다. Spring 프레임워크에 의해 생성, 관리 및 연결되는 클래스의 인스턴스입니다. 빈은 Spring 애플리케이션의 기본 구성 요소이며, 주로 주석 또는 XML 구성을 사용하여 구성 및 정의됩니다.
 
@@ -305,7 +578,18 @@ Spring 프레임워크에서 빈 스코프는 Spring IoC 컨테이너 내에서 
 
 다음은 Spring Framework에서 가장 일반적으로 사용되는 빈 스코프입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 싱글톤:
 
@@ -315,7 +599,18 @@ Spring 프레임워크에서 빈 스코프는 Spring IoC 컨테이너 내에서 
 
 임의의 개체 인스턴스 수에 대해 단일 빈 정의를 스코프 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요청:
 
@@ -325,7 +620,18 @@ Spring 프레임워크에서 빈 스코프는 Spring IoC 컨테이너 내에서 
 
 하나의 빈 정의를 HTTP 세션의 수명 주기에 한정합니다. 웹-aware Spring ApplicationContext의 맥락에서만 유효합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플리케이션:
 
@@ -335,7 +641,18 @@ Spring 프레임워크에서 빈 스코프는 Spring IoC 컨테이너 내에서 
 
 하나의 빈 정의를 웹소켓의 라이프사이클에 범위를 지정합니다. 웹 기반 Spring ApplicationContext의 컨텍스트에서만 유효합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스프링 빈 라이프사이클이란 무엇인가요?
 
@@ -345,7 +662,18 @@ Spring 프레임워크에서 빈 스코프는 Spring IoC 컨테이너 내에서 
 
 - 인스턴스화: 이 단계에서 Spring IoC 컨테이너는 빈의 인스턴스를 생성합니다. 스프링 프레임워크는 빈을 인스턴스화하는 여러 방법을 지원합니다. 생성자를 통해, 정적 팩토리 메서드를 통해, 또는 인스턴스 팩토리 메서드를 통해 등등.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설정: 이 단계에서는 Spring IoC 컨테이너가 새로 생성된 빈을 구성합니다. 이는 의존성 주입을 수행하고 빈 후처리기를 적용하며 초기화 및 소멸 콜백을 등록하는 것을 포함합니다.
 
@@ -355,7 +683,18 @@ Spring 프레임워크에서 빈 스코프는 Spring IoC 컨테이너 내에서 
 
 - @PostConstruct: 빈이 구성된 후에 호출되며 모든 종속성이 주입된 후에 호출됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - init-method: 빈이 생성되고 모든 의존성이 주입된 후 호출할 메서드를 지정합니다.
 
@@ -365,7 +704,18 @@ Spring 프레임워크에서 빈 스코프는 Spring IoC 컨테이너 내에서 
 
 Spring 빈 생명주기는 Spring IoC 컨테이너에 의해 제어되며, 빈의 생명주기를 생성, 구성 및 관리합니다. 개발자들은 빈 생명주기 콜백을 활용하여 빈에 사용자 정의 초기화 및 소멸 로직을 추가할 수 있으며, 객체의 생명주기를 쉽게 관리하고 리소스가 올바르게 처리되도록 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 애플리케이션 컨텍스트에서 빈 라이프사이클은 무엇인가요?
 
@@ -375,7 +725,18 @@ Spring 빈 생명주기는 Spring IoC 컨테이너에 의해 제어되며, 빈�
 
 - 빈 생성: 빈이 생성되고, 생성자 주입, 세터 주입 또는 다른 방법을 통해 초기화됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 빈 구성: 빈의 속성이 설정되고 필요한 초기화 콜백이 호출됩니다.
 
@@ -385,7 +746,18 @@ Spring 빈 생명주기는 Spring IoC 컨테이너에 의해 제어되며, 빈�
 
 빈 라이프사이클에서 애플리케이션 컨텍스트의 역할:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 애플리케이션 컨텍스트는 빈 생명주기를 관리하는 데 중요한 역할을 합니다. 빈의 생성, 구성, 사용 및 소멸을 제어하기 위한 다양한 메커니즘을 제공합니다.
 
@@ -395,7 +767,18 @@ Spring 빈 생명주기는 Spring IoC 컨테이너에 의해 제어되며, 빈�
 
 - 빈 범위 관리: 애플리케이션 컨텍스트는 빈의 범위를 관리하여 애플리케이션 내에서의 가시성과 수명을 결정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Bean Lifecycle Listeners: 애플리케이션 컨텍스트는 빈 생명주기 리스너를 지원하여 다른 빈의 생명주기 변경 사항을 알릴 수 있습니다.
 
@@ -405,7 +788,18 @@ Spring 빈 생명주기는 Spring IoC 컨테이너에 의해 제어되며, 빈�
 
 ## 스프링의 기본 빈 스코프는 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring의 기본 빈 스코프는 싱글톤입니다. 이는 빈의 인스턴스가 한 번만 만들어지고 스프링 컨테이너에 의해 관리된다는 것을 의미합니다. 요청 횟수에 상관 없이 동일한 빈 인스턴스가 사용됩니다. 이 스코프는 상태가 없는 빈에 유용하며, 내부 상태를 유지하지 않고 응용 프로그램의 다양한 부분에서 안전하게 공유될 수 있는 빈에 적합합니다.
 
@@ -415,7 +809,18 @@ Spring의 기본 빈 스코프는 싱글톤입니다. 이는 빈의 인스턴스
 
 빈이 어떻게 스프링 내에서 로드되는지 설명해 주시겠어요? 그리고 레이지 로딩과 이거 로딩의 차이점을 설명해 주실 수 있나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 봄에는 빈 로딩이 있어요:
 
@@ -425,7 +830,18 @@ Spring의 기본 빈 스코프는 싱글톤입니다. 이는 빈의 인스턴스
 
 빈 인스턴스 생성: 봄 프레임워크는 찾은 각 빈 클래스의 인스턴스를 생성해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빈 구성: 스프링 프레임워크는 각 빈을 구성하여 속성을 설정하고 의존성을 주입합니다.
 
@@ -435,7 +851,18 @@ Spring의 기본 빈 스코프는 싱글톤입니다. 이는 빈의 인스턴스
 
 Spring에서 빈은 지연로딩 또는 즉시로딩으로 설정할 수 있습니다. 지연로딩은 애플리케이션이 처음 요청할 때까지 빈이 생성되지 않는 것을 의미합니다. 즉시로딩은 애플리케이션이 시작될 때 빈이 생성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring의 기본 동작은 빈을 Eager로 로드하는 것입니다. 이는 실제로 필요한 빈만 만들기 때문에 애플리케이션의 성능을 향상시킬 수 있습니다. 그러나 lazy loading은 생성된 빈을 추적하기 어렵게 만들어 애플리케이션을 디버깅하기 어렵게 만들 수도 있습니다.
 
@@ -445,7 +872,18 @@ Eager loading은 애플리케이션이 시작하는 즉시 필요한 빈에 유�
 
 @Lazy 주석을 사용하여 빈을 lazy 로드할지 또는 eager로 로드할지 지정할 수 있습니다. 예를 들어, 다음 코드는 lazy로 로드되는 빈을 생성합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Lazy
@@ -464,7 +902,18 @@ public class MyEagerService {
 
 레이지 로딩과 이거 로딩을 언제 사용해야 하는지:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 애플리케이션이 시작될 때 즉시 필요하지 않은 bean에는 lazy loading을 사용하세요.
 - 애플리케이션이 시작될 때 즉시 필요한 bean에는 eager loading을 사용하세요.
@@ -477,7 +926,18 @@ public class MyEagerService {
 
 **자동 주입의 종류**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @Autowired 어노테이션이 지원하는 네 가지 자동 연결 유형이 있습니다:
 
@@ -487,7 +947,18 @@ public class MyEagerService {
 
 - byConstructor: Spring Framework는 종속성의 유형과 일치하는 단일 인수를 사용하는 생성자를 찾습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - byQualifier: 스프링 프레임워크는 지정된 값과 일치하는 한정자를 가진 빈을 찾습니다.
 
@@ -497,7 +968,18 @@ Spring에서 빈을 자동 와이어링에서 제외하는 방법은 다음과 �
 
 1. XML 구성에서 autowire-candidate를 false로 설정하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 XML 구성에서 제왈하고 싶은 'bean' 요소에 autowire-candidate="false" 속성을 추가하세요:
 
@@ -509,7 +991,18 @@ XML 구성에서 제왈하고 싶은 'bean' 요소에 autowire-candidate="false"
 
 빈 구성을 주석으로 사용하는 경우, 빈 클래스나 해당 @Bean 메서드에 @Lazy를 주석으로 추가하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Lazy
@@ -525,7 +1018,18 @@ In Spring Boot, use `@SpringBootApplication(exclude = 'MyBeanAutoConfiguration.c
 
 # Difference between `@Autowire` and `@Inject` in Spring?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @Autowired 및 @Inject 어노테이션은 둘 다 Spring 애플리케이션에서 의존성 주입에 사용됩니다. 그러나 이 두 어노테이션 간에는 몇 가지 주요 차이점이 있습니다.
 
@@ -535,7 +1039,18 @@ In Spring Boot, use `@SpringBootApplication(exclude = 'MyBeanAutoConfiguration.c
 
 @Inject(스프링이 아닌 애플리케이션 개발 시 사용)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `@Inject` 어노테이션은 표준 JSR-330 어노테이션입니다. 이 어노테이션은 JSR-330을 지원하는 의존성 주입 컨테이너에서 관리되는 빈에 의존성을 주입하는 데 사용됩니다. `@Inject` 어노테이션은 byType 및 byName 자동 연결과 함께만 사용할 수 있습니다.
 
@@ -545,8 +1060,18 @@ In Spring Boot, use `@SpringBootApplication(exclude = 'MyBeanAutoConfiguration.c
 
 # 싱글톤과 프로토타입 빈의 차이점은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_8.png](/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_8.png)
 
@@ -564,9 +1089,18 @@ return new MyServiceImpl();
 }
 ```
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서 myService() 메소드는 @Bean으로 주석 처리되어 있습니다. 이는 Spring 컨테이너에 MyServiceImpl 클래스의 인스턴스를 생성하고 라이프사이클을 관리하도록 알려줍니다. 그런 다음 해당 빈은 @Autowired 주석을 사용하여 다른 빈에 주입될 수 있습니다.
 
@@ -584,7 +1118,18 @@ return new MyServiceImpl();
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Spring 프로필을 구성하는 방법은?
 
@@ -594,7 +1139,18 @@ Spring 프로필을 구성하는 두 가지 방법이 있습니다:
 
 1. Spring Boot 속성 파일을 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring Boot 속성 파일은 일반적으로 application.properties 또는 application.yml로 명명되며 Spring 프로필을 구성하는 편리한 방법입니다. 속성 파일을 사용하여 프로필을 구성하려면 다음 속성을 추가하면 됩니다:
 
@@ -605,8 +1161,18 @@ Markdown 형식으로 변경해 드릴까요?
 
 # @component, @profile, @value 어노테이션은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_9.png)
 
@@ -616,8 +1182,18 @@ $ 기호는 속성 값을 다양한 소스(예: 속성 파일, 환경 변수 및
 
 예:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Value("$'app.name'")
@@ -630,7 +1206,18 @@ private String appName;
 
 예시.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Value("#'‘$'app.name'’.toUpperCase()'")
@@ -642,7 +1229,18 @@ private String appNameUppercase;
 
 Spring Framework에서 stateless bean은 메소드 호출 사이에 상태를 유지하지 않는 bean입니다. 이는 bean이 이전 호출에 대한 정보를 저장하지 않고 각 메소드 호출이 독립적으로 처리된다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Stateless beans are typically used for services that perform actions or calculations, but do not maintain any state between invocations. This can include services that perform mathematical calculations, access external resources, or perform other tasks that do not require the bean to maintain state.
 
@@ -652,7 +1250,18 @@ Stateless beans also have the advantage of being simpler and easier to reason ab
 
 # Spring에서 빈을 주입하는 방법은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 봄(Spring)에서 빈(bean)은 의존성 주입(Dependency Injection, DI) 패턴을 사용하여 다른 빈에 주입(또는 연결)됩니다. DI는 클래스가 스스로 생성하는 대신 의존성을 제공받을 수 있는 설계 패턴입니다.
 
@@ -669,7 +1278,18 @@ this.beanB = beanB;
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Setter 주입: 한 빈(Bean)을 다른 빈에 세터 메소드 인자로 전달하여 주입할 수 있습니다. 스프링(Spring)은 자동으로 세터 메소드를 호출하고 의존성 있는 빈(Bean)을 전달합니다.
 
@@ -692,7 +1312,18 @@ public class BeanA {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인터페이스 주입: 빈은 인터페이스를 구현함으로써 다른 빈에 주입될 수 있습니다. Spring은 의존성 빈을 필드에 자동으로 설정해 줍니다.
 
@@ -707,7 +1338,18 @@ private BeanB beanB;
 
 또한, Spring은 자동으로 빈을 연결하기 위해 Autowiring이라는 기술을 사용합니다. Autowiring은 타입, 이름 또는 생성자를 통해 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적으로 Spring은 빈을 유형별로 자동 연결하려고 시도하지만, 동일한 유형의 빈이 여러 개인 경우 구성 파일에서 정의된 빈의 이름을 사용하여 이름별로 자동 연결을 시도합니다.
 
@@ -717,18 +1359,38 @@ private BeanB beanB;
 
 빈 간 순환 종속성은 두 개 이상의 빈이 서로 상호 종속성을 갖는 경우 발생하며, 이로 인해 이러한 빈들의 생성 및 초기화에 문제가 발생할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring에서 빈 간의 순환 종속성을 처리하는 여러 가지 방법이 있습니다:
 
 - Lazy Initialization: 순환에 관여하는 빈 중 하나에 @Lazy 주석을 사용하여 필요할 때만 초기화할 수 있습니다.
 
-
 @Lazy
 @Autowired
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 private BeanA beanA;
 
@@ -746,7 +1408,18 @@ public class BeanA {
 
 프록시 사용: 프록시를 사용하여 한 빈의 초기화를 실제로 필요할 때까지 지연시켜 순환을 중단할 수 있습니다. Spring AOP를 사용하여 순환이 발생하는 빈 중 하나에 대한 프록시를 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BeanFactory를 사용하세요: 빈을 직접 주입하는 대신, 실제로 필요할 때 BeanFactory를 사용하여 빈을 검색할 수 있습니다.
 
@@ -764,7 +1437,18 @@ public class BeanA {
 
 Spring 부트 애플리케이션을 시작/로드하기 전에 어떤 메서드를 호출할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring Boot에서는 Spring Boot 애플리케이션을 시작하거나 로드하기 전에 호출할 수 있는 여러 메서드가 있습니다. 가장 일반적으로 사용되는 메서드 중 일부는 다음과 같습니다:
 
@@ -774,7 +1458,18 @@ main() 메서드: main() 메서드는 일반적으로 Spring Boot 애플리케�
 
 CommandLineRunner 인터페이스: CommandLineRunner 인터페이스는 빈에 의해 구현될 수 있으며 Spring Application 컨텍스트가 로드된 후에 특정 코드를 실행하는 데 사용될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ApplicationRunner 인터페이스: ApplicationRunner 인터페이스는 빈에 의해 구현될 수 있어 Spring 응용 프로그램 컨텍스트가로드되고 응용 프로그램 인수가 처리 된 후에 특정 코드를 실행하는 데 사용할 수 있습니다.
 
@@ -784,7 +1479,18 @@ ApplicationRunner 인터페이스: ApplicationRunner 인터페이스는 빈에 �
 
 Spring 프레임워크에서 예외를 처리하는 여러 가지 방법이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 try-catch 블록: 예외를 처리하고 처리할 수 있도록 try-catch 블록을 사용할 수 있습니다. 특정 예외를 처리하는 데 유용하며 특정 메소드 내에서 발생할 가능성이 있는 예외를 처리할 수 있습니다.
 
@@ -794,7 +1500,18 @@ try-catch 블록: 예외를 처리하고 처리할 수 있도록 try-catch 블�
 
 HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이스를 구현하여 전체 응용 프로그램에 대한 전역 예외 처리기를 만들 수 있습니다. 응용 프로그램 전체에서 특정 예외를 중앙에서 처리하는 데 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 에러 페이지: 응용 프로그램에서 특정 예외가 발생할 때 특정 페이지로 리디렉션하는 ErrorPage를 정의할 수 있습니다. 이 접근 방식은 예외가 발생했을 때 사용자 친화적인 에러 페이지를 표시하는 데 유용합니다.
 
@@ -804,7 +1521,18 @@ HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이�
 
 스프링에서 필터는 요청과 응답의 인터셉터 역할로, 실제 응용 프로그램 로직에 도달하기 전후에 처리합니다. 이들은 미리 정의된 규칙에 따라 요청을 수정, 거부 또는 허용할 수 있는 "수문장"과 같은 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 간략히 설명드리겠습니다:
 
@@ -814,7 +1542,18 @@ HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이�
 
    - 필터가 실행되는 순서를 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 요청 흐름:
 
@@ -824,7 +1563,18 @@ HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이�
 
 - 요청 헤더, 본문 및 기타 속성을 검사할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **변경 내용 또는 헤더를 수정합니다.**
 
@@ -834,7 +1584,18 @@ HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이�
 
 **· 요청이 응용 프로그램 논리에 도달하고 응답을 받으면, 응답이 역순으로 다시 필터를 통해 흐릅니다.**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 필터는 다시 다음을 수행할 수 있습니다:
 
@@ -843,7 +1604,18 @@ HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이�
 
 4. 일반적인 사용 사례:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 보안 필터: 사용자 인증을 확인하고 액세스 권한을 부여하며 보안 취약점을 방지합니다.
 
@@ -853,7 +1625,18 @@ HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이�
 
 - 캐싱 필터: 성능을 향상시키기 위해 자주 액세스되는 리소스를 캐싱합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 혜택:
 
@@ -863,7 +1646,18 @@ HandlerExceptionResolver 인터페이스: HandlerExceptionResolver 인터페이�
 
 - 여러 필터를 연결: 여러 필터를 결합하여 복잡한 처리 논리를 구현할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 디스패쳐 서블릿이란?
 
@@ -887,7 +1681,18 @@ registration.addMapping("/app/*");
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스프링에서 @Controller 주석은 무엇인가요?
 
@@ -897,8 +1702,18 @@ Spring MVC는 @Controller 및 @RestController 컴포넌트가 요청 매핑, 요
 
 예시.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Controller
@@ -917,22 +1732,36 @@ return "index";
 
 또한 @RequestMapping의 HTTP 메소드별 바로 가기 변형도 있습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - @GetMapping
 - @PostMapping
 - @PutMapping
 - @DeleteMapping
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## @PatchMapping
 
@@ -942,9 +1771,18 @@ return "index";
 
 **Pattern Matching:** The HandlerMapping compares the request URI and HTTP method against the registered request patterns. It uses pattern matching rules to identify the most specific matching pattern.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 핸들러 메서드 식별: 일치하는 패턴을 식별한 후 HandlerMapping은 해당 핸들러 메서드를 레지스트리에서 검색합니다. 이 핸들러 메서드는 들어오는 요청을 처리하는 책임이 있습니다.
 
@@ -954,7 +1792,18 @@ return "index";
 
 이것은 샘플 프로그램입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @RestController
@@ -978,7 +1827,18 @@ public void add(@RequestBody Person person) {
 
 전통적인 MVC 애플리케이션에 대한 컨트롤러로 클래스를 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 메서드는 뷰 이름(String)을 반환하며, 이는 뷰 리졸버에 의해 해결되어 뷰를 렌더링합니다 (예: HTML 페이지).
 
@@ -988,7 +1848,18 @@ public void add(@RequestBody Person person) {
 
 @RestController:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레스트풀 웹 서비스를 구축하는 데 특화된 컨트롤러입니다.
 
@@ -998,7 +1869,18 @@ public void add(@RequestBody Person person) {
 
 레스트 API 개발을 간단하게 만들어 줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각각을 사용하는 시점:
 
@@ -1008,7 +1890,18 @@ public void add(@RequestBody Person person) {
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Controller
@@ -1034,9 +1927,18 @@ return "Hello, World!"; // JSON 또는 XML로 "Hello, World!"을 반환합니다
 
 @Requestparam 어노테이션을 사용하여 서블릿 요청 매개변수(쿼리 매개변수 또는 폼 데이터)를 컨트롤러의 메소드 인수에 바인딩할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 코드 예시입니다.
 
@@ -1057,7 +1959,18 @@ public class EditPetForm {
 
 기본적으로 이 주석을 사용하는 메소드 파라미터는 필수입니다. 하지만 `@RequestParam` 주석의 `required` 플래그를 `false`로 설정하거나 `java.util.Optional` 래퍼로 인자를 선언함으로써 메소드 파라미터가 옵션임을 지정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @Pathparam
 
@@ -1068,7 +1981,18 @@ public class EditPetForm {
 
 사용 방법:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - @Pathparam 어노테이션을 메소드 매개변수에 적용합니다.
 - 어노테이션 내에서 URI 경로에서 변수의 이름을 지정하여 매개변수에 바인딩합니다.
@@ -1079,7 +2003,18 @@ public class EditPetForm {
 
 세션 스코프는 특정 HTTP 세션에 바인드된 객체의 라이프사이클을 관리하는 방법입니다. 세션 스코프에서 객체가 생성되면 세션에 저장되어 동일 세션에 속하는 모든 요청에서 접근할 수 있습니다. 이는 사용자별 정보를 저장하거나 여러 요청 간에 상태를 유지하는 데 유용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Spring에서 @Component, @Service, @Controller, @Repository 어노테이션의 차이는 무엇입니까?
 
@@ -1089,8 +2024,18 @@ public class EditPetForm {
 
 Spring MVC는 Java 웹 애플리케이션을 구축하기 위한 인기있는 웹 프레임워크입니다. 이는 Model-View-Controller 아키텍처를 제공하여 응용 프로그램 로직을 모델, 뷰, 컨트롤러 세 가지 구성 요소로 분리합니다. Spring MVC 흐름은 다음 단계를 포함합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_12.png](/assets/img/2024-05-27-Top60Spring-FrameworkInterviewQuestionsforJavaDevelopers2024ContainAlltheQuestionsfromtheBook_12.png)
 
@@ -1100,8 +2045,18 @@ DispatcherServlet이 요청을 받습니다: DispatcherServlet은 Spring MVC 아
 
 HandlerMapping이 적절한 컨트롤러를 선택합니다: HandlerMapping 구성 요소는 Spring 구성 파일에서 구성된 URL 패턴을 기반으로 요청 URL을 적절한 컨트롤러에 매핑합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨트롤러는 요청을 처리합니다: 컨트롤러는 요청을 처리하고 필요한 처리 로직을 수행합니다. 모델 구성 요소와 상호작용하여 데이터를 검색하거나 업데이트할 수 있습니다.
 
@@ -1111,7 +2066,18 @@ HandlerMapping이 적절한 컨트롤러를 선택합니다: HandlerMapping 구�
 
 뷰가 응답을 렌더링합니다: 뷰 템플릿이 렌더링되어 응답을 생성합니다. 모델 구성 요소에서 데이터를 포함할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DispatcherServlet은 응답을 보냅니다: DispatcherServlet은 JSP, HTML 또는 JSON과 같은 적절한 뷰 기술을 통해 응답을 클라이언트에 다시 보냅니다.
 
@@ -1121,7 +2087,18 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 
 컨트롤러 어노테이션:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @Controller: 클래스를 컨트롤러로 지정하여 HTTP 요청을 처리하고 응답을 렌더링하는 역할을 담당합니다.
 
@@ -1131,8 +2108,18 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 
 @RequestMapping: URL 패턴, HTTP 메서드(GET, POST, PUT, DELETE 등), 요청 매개변수 및 헤더에 기반하여 웹 요청을 특정 컨트롤러 메서드에 매핑합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @GetMapping, @PostMapping, @PutMapping, @DeleteMapping, @PatchMapping: 특정 HTTP 메서드에 매핑하는 편리한 바로 가기입니다.
 
@@ -1142,8 +2129,18 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 
 데이터 바인딩 어노테이션:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @ModelAttribute: 객체를 사용하여 모델 속성을 채워 뷰에서 사용할 수 있도록 합니다.
 
@@ -1153,7 +2150,18 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 
 @RequestBody: 요청 본문을 메서드 매개변수에 매핑하며 주로 JSON 또는 XML 데이터에 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 응답 처리 어노테이션:
 
@@ -1163,7 +2171,18 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 
 예외 처리 어노테이션:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @ExceptionHandler: 특정 유형의 예외를 처리하는 메서드를 정의하여 오류를 관리하는 중앙화된 방법을 제공합니다.
 
@@ -1172,7 +2191,18 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 - @SessionAttribute: 세션 속성에 액세스합니다.
 - @ModelAttribute: 컨트롤러의 모든 핸들러 메서드에 모델에 속성을 추가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @InitBinder: 컨트롤러의 데이터 바인딩 및 유효성 검사를 사용자 정의합니다.
 
@@ -1182,7 +2212,18 @@ Spring MVC 흐름은 순환적인 프로세스이며, 클라이언트가 애플�
 
 Spring의 싱글톤 빈은 모든 요청 간에 공유되는 단일 인스턴스를 갖습니다. 즉, 두 요청이 동시에 처리되더라도 동일한 빈 인스턴스를 공유하며 빈의 상태에 대한 액세스가 요청 사이에서 공유됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 싱글톤 빈이 상태를 유지하고 있고 그 상태가 요청 사이에 공유된다면, 이는 경합 조건 및 기타 동시성 문제로 이어질 수 있다는 점을 유의해야 합니다. 예를 들어, 두 요청이 동시에 동일한 데이터를 수정하려고 할 때 데이터 불일치 문제가 발생할 수 있습니다.
 
@@ -1192,7 +2233,18 @@ Spring의 싱글톤 빈은 모든 요청 간에 공유되는 단일 인스턴스
 
 결론적으로, 싱글톤 빈은 여러 병렬 요청을 처리할 수 있지만, 빈의 상태를 인식하고, 공유 상태가 있는 경우 스레드 안전하게 설계되어 있는지 확인하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Spring Framework 내부에서 사용된 디자인 패턴에 대해 알려주세요.
 
@@ -1202,7 +2254,18 @@ Spring Framework는 기능을 제공하기 위해 여러 디자인 패턴을 활
 
 - 싱글톤: Spring IoC 컨테이너 내에서 빈의 단일 인스턴스만 생성되도록 하기 위해 싱글톤 패턴이 사용됩니다. 싱글톤 패턴은 클래스의 단일 인스턴스를 생성하여 응용 프로그램 전체에서 공유하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Factory: 팩토리 패턴은 Spring에서 구성에 기반한 다른 클래스의 객체를 생성하는 데 사용됩니다. Spring은 빈을 생성하기 위한 팩토리 메소드 디자인 패턴을 기반으로 한 팩토리 패턴을 제공합니다.
 
@@ -1212,7 +2275,18 @@ Spring Framework는 기능을 제공하기 위해 여러 디자인 패턴을 활
 
 - Observer: 옵저버 패턴은 Spring에서 빈의 상태 변경을 다른 빈에 알리는 데 사용됩니다. Spring은 옵저버 패턴을 구현하는 데 사용할 수 있는 ApplicationEvent 및 ApplicationListener 인터페이스를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Command: 명령(Command) 패턴은 Spring에서 특정 코드 조각의 실행을 명령 객체(command object)에 캡슐화하는 데 사용됩니다. 이 패턴은 Spring에서 재사용 가능하고 테스트 가능한 코드를 생성하는 데 사용됩니다.
 
@@ -1222,7 +2296,18 @@ Spring Framework는 기능을 제공하기 위해 여러 디자인 패턴을 활
 
 # 스프링 프레임워크에서 공장(Factory) 디자인 패턴이 동작하는 방식은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 봄(Spring)에서는 구성에 따라 서로 다른 클래스의 객체를 생성하는 데 팩토리 디자인 패턴을 사용합니다. Spring IoC 컨테이너는 빈(beans)을 생성하기 위해 팩토리 패턴을 사용하는데, 이는 팩토리 메소드 디자인 패턴에 기반을 둡니다.
 
@@ -1232,7 +2317,18 @@ IoC 컨테이너는 빈을 생성하고 관리하는 역할을 담당합니다. 
 
 다음은 봄(Spring)에서 팩토리 디자인 패턴을 사용하여 빈을 정의하는 예시입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Configuration
@@ -1250,7 +2346,18 @@ Spring에서 프록시 디자인 패턴을 사용하는 또 다른 방법은 Fac
 
 Spring에서 프록시 디자인 패턴을 사용하는 방법에 대해 궁금해 하셨군요! 해당 내용에 대해 설명 드리겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프록시 디자인 패턴은 기존 객체에 추가 기능을 제공하기 위해 Spring에서 사용됩니다. Spring 프레임워크는 AOP(관점 지향 프로그래밍) 기능을 제공하기 위해 프록시 패턴을 사용하여, 로깅, 보안, 트랜잭션 관리와 같은 교차 관심 사항을 응용 프로그램에 모듈식이고 재사용 가능한 방식으로 추가할 수 있습니다.
 
@@ -1260,7 +2367,18 @@ AOP 프록시는 JDK 동적 프록시, CGLIB 프록시 또는 AspectJ 프록시 
 
 JDK 동적 프록시: 이것은 Spring에서의 기본 프록시 유형이며, 인터페이스를 프록시화하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CGLIB 프록시: 이 프록시 유형은 클래스를 프록시함으로써 작동하며 대상 빈의 서브클래스를 생성함으로써 작동합니다.
 
@@ -1270,7 +2388,18 @@ Spring은 AOP 기능을 제공하기 위해 프록시 패턴을 사용하여 대
 
 다음은 Spring AOP를 사용하여 빈에 로깅을 추가하는 예제입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Aspect
@@ -1289,9 +2418,18 @@ log.info("Started method: " + joinPoint.getSignature().getName());
 
 싱글톤 빈이 프로토타입 빈 또는 그 반대로부터 호출될 때 동작은 의존성 주입 방식에 따라 다릅니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 싱글톤 빈이 프로토타입 빈에 주입되면, 프로토타입 빈이 생성될 때마다 싱글톤 빈의 동일한 인스턴스를 수신합니다. 이는 싱글톤 빈은 애플리케이션 컨텍스트 시작 시에 한 번만 생성되며, 이후에는 동일한 인스턴스가 프로토타입 빈에 주입되기 때문입니다.
 
@@ -1314,7 +2452,18 @@ private SingletonBean singletonBean;
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제에서 프로토타입 빈이 생성되고 싱글톤 빈과 주입되면 각 생성마다 같은 싱글톤 빈의 인스턴스를 받게 됩니다. 그러나 싱글톤 빈이 생성되고 프로토타입 빈과 주입되면 각 호출마다 새로운 프로토타입 빈의 인스턴스를 받게 됩니다.
 
@@ -1324,7 +2473,18 @@ private SingletonBean singletonBean;
 
 다음은 스프링 프레임워크를 선택하는 몇 가지 이유입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 애플리케이션에 포괄적인 기능과 기능 세트가 필요합니다.
 - 필요한 컴포넌트만 선택하여 모듈식 애플리케이션을 구축하고 싶습니다.
@@ -1332,7 +2492,18 @@ private SingletonBean singletonBean;
 
 Spring Boot를 선택해야 하는 몇 가지 이유가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 많은 구성을 하지 않고도 독립적인 Spring 애플리케이션을 빠르게 설정하고 싶을 때
 - 미리 구성된 종속성과 합리적인 기본값을 활용하고 싶을 때
@@ -1340,7 +2511,18 @@ Spring Boot를 선택해야 하는 몇 가지 이유가 있습니다:
 
 전체적으로 Spring과 Spring Boot은 기업 수준의 애플리케이션을 구축하는 데 사용할 수 있는 강력한 프레임워크입니다. 둘 사이의 선택은 애플리케이션의 특정 요구 사항과 필요한 유연성 및 사용자 정의 수준에 따라 다를 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Spring에서 RestTemplate이란 무엇인가요?
 
@@ -1350,7 +2532,18 @@ RestTemplate은 Spring에서 외부 REST API로 HTTP 요청을 보내는 강력�
 
 - 외부 RESTful API에서 데이터 소비하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 내 애플리케이션 내부 마이크로서비스와 상호 작용하기
 - RESTful API 테스트하기
@@ -1358,7 +2551,18 @@ RestTemplate은 Spring에서 외부 REST API로 HTTP 요청을 보내는 강력�
 
 간단히 말해서: RestTemplate은 Spring에서 HTTP 요청을 보내는 번거로움을 덜어주며, 애플리케이션을 외부 세계와 연결하는 편리하고 유연한 방법을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스프링과 스프링 부트에서 사용 가능한 모든 HTTP 클라이언트는 무엇인가요?
 
@@ -1372,7 +2576,18 @@ RestTemplate은 Spring에서 외부 REST API로 HTTP 요청을 보내는 강력�
 
 # 스프링 REST에서 HttpMessageConverter란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HTTP 요청과 응답을 Java 객체와 그에 해당하는 메시지 형식 (예: JSON, XML) 간의 변환을 처리하는 중요 인터페이스에요.
 
@@ -1382,7 +2597,18 @@ HTTP 요청과 응답을 Java 객체와 그에 해당하는 메시지 형식 (�
 
 수신 요청 처리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 요청이 도착하면 Spring은 요청의 Content-Type 헤더를 기반으로 적합한 HttpMessageConverter를 찾습니다.
 
@@ -1392,12 +2618,33 @@ HTTP 요청과 응답을 Java 객체와 그에 해당하는 메시지 형식 (�
 
 - 컨트롤러가 객체를 반환할 때 Spring은 다시 요청의 Accept 헤더나 기본 변환기를 기반으로 적절한 HttpMessageConverter를 찾습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **테이블 태그를 Markdown 형식으로 변경해주세요.**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - FormHttpMessageConverter (폼 데이터용)
 - ByteArrayHttpMessageConverter (바이너리 데이터용)
@@ -1405,8 +2652,18 @@ HTTP 요청과 응답을 Java 객체와 그에 해당하는 메시지 형식 (�
 
 # Spring MVC를 사용하여 RESTful 웹 서비스를 소비하는 방법?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. RestTemplate 주입하기:
 
@@ -1416,7 +2673,18 @@ RestTemplate 인스턴스를 가져와서 HTTP 요청을 하는 스프링의 중
 
 2. HTTP 요청 만들기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 HTTP 작업에 RestTemplate 메서드를 사용해보세요:
 
@@ -1426,13 +2694,35 @@ postForObject(url, requestBody, responseType): POST 요청에 데이터를 보�
 
 put(url, requestBody): PUT 요청을 사용하여 데이터를 업데이트합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 응답 데이터 매핑:
 
 RestTemplate은 기대되는 응답 유형에 따라 응답 본문을 자동으로 Java 객체로 변환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @RestController
@@ -1451,7 +2741,18 @@ public class MyController {
 
 # Thanks for reading
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 👏 이야기에 박수를 보내주시고 저를 팔로우해주세요 👉
 - 📰 제 미디엄에서 더 많은 콘텐츠를 읽어보세요 (Java 개발자 인터뷰에 관한 50개의 이야기)

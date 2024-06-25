@@ -3,13 +3,12 @@ title: "Gradle에서 종속성을 디버깅하기"
 description: ""
 coverImage: "/assets/img/2024-06-19-DebuggingdependenciesinGradle_0.png"
 date: 2024-06-19 10:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-DebuggingdependenciesinGradle_0.png
 tag: Tech
 originalTitle: "Debugging dependencies in Gradle"
 link: "https://medium.com/proandroiddev/debugging-dependencies-in-gradle-54c8be444849"
 ---
-
 
 ## Android 앱에서 dependencyInsight 사용 방법 및 transient dependencies를 특정 버전으로 고치는 방법
 
@@ -19,7 +18,18 @@ link: "https://medium.com/proandroiddev/debugging-dependencies-in-gradle-54c8be4
 
 최근에 안드로이드 앱에서 종속성을 베타 버전(androidx.navigation:navigation-compose, 버전 2.8.0-beta02 정확히)으로 업그레이드해야 했습니다. 일반적으로 베타 버전의 종속성은 다른 Jetpack Compose 종속성(일시적 종속성)을 필요로 합니다. 그 중에는 알파 또는 베타 버전으로 지정된 것들도 있습니다. 일반적으로 이는 괜찮습니다. 알파 또는 베타 버전의 종속성에 문제가 있을 수 있고, 안정된 버전을 기다릴 수 있고 필요하다면 버그를 제기할 수 있다는 것을 받아들입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 내 경우에는 기다릴 수 없었습니다. 내 앱에 빨리 배포해야 하는 쿨한 새로운 기능을 새로운 네비게이션 라이브러리(Type-Safe Navigation yay!)에서 원했어요. 문제는, 일시적 종속성의 새로운 알파 버전이 앱에서 발생시키지 않으려고 했던 크래시를 일으켰다는 것이었어요(내 경우 HorizontalPager에서 NoSuchMethodError가 발생했어요)!
 
@@ -29,7 +39,18 @@ link: "https://medium.com/proandroiddev/debugging-dependencies-in-gradle-54c8be4
 
 이 시점에서 난 심지어 어떤 종속성이 일시적 종속성 버전 업그레이드를 유발하고 있는지도 몰랐어요 — 똑같은 작업에서 다른 종속성을 여러 개 업데이트했기 때문에 무엇이든지 가능합니다...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Gradle 의존성 트리 보기
 
@@ -41,7 +62,18 @@ link: "https://medium.com/proandroiddev/debugging-dependencies-in-gradle-54c8be4
 ./gradlew :app:dependencies
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에서도 언급했듯이 모듈을 지정하면 흥미로운 모듈 전체의 출력을 얻을 수 있습니다. 모듈을 제외하면 보통 원하는 결과가 아닌 상위 수준의 세부 정보만을 얻게 됩니다.
 
@@ -51,20 +83,42 @@ link: "https://medium.com/proandroiddev/debugging-dependencies-in-gradle-54c8be4
 
 ./gradlew :app:dependencies `dependencyTree.txt"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 의존성 트리 출력 이해하기
 
 만약 결과 파일을 살펴보면 엄청나게 크다는 것을 알 수 있습니다 (간단한 테스트 Hello World 앱으로는 7435줄이었어요). 원하는 설정을 지정하여 이를 줄일 수 있습니다. 대부분의 경우에는 compileClasspath, runtimeClasspath, testCompileClasspath, 그리고 testRuntimeClasspath를 확인할 수 있습니다. 저는 runtimeClasspath를 필요로 했고, 빌드 유형을 debug로 추가했어요:
 
 ```js
-./gradlew :app:dependencies --configuration debugRuntimeClasspath 
+./gradlew :app:dependencies --configuration debugRuntimeClasspath
 > dependencyTree.txt
 ```
 
 이제 제 파일은 단지 692줄이에요. 훨씬 사용하기 편리하죠!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리는 모든 종속성과 포함된 순환 종속성을 확인할 수 있어요. 예를 들어:
 
@@ -90,7 +144,18 @@ link: "https://medium.com/proandroiddev/debugging-dependencies-in-gradle-54c8be4
 
 Gradle 문서에서는 각 종속성마다 나열된 주석 기호의 의미를 이해하는 데 도움이 되는 설명이 명확하게 제공되어 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 여기서 androidx.navigation:navigation-compose:2.8.0-beta02가 androidx.compose.foundation:foundation-layout을 버전 1.7.0-beta02를 사용하도록 강제하는지 알 수 없어요. 큰 프로젝트에서는 문제가 되는 라이브러리의 각 언급을 모두 확인하고 비교하는 것도 매우 수고스러울 수 있어요.
 
@@ -100,21 +165,30 @@ Gradle 문서에서는 각 종속성마다 나열된 주석 기호의 의미를 
 
 ./gradlew :app:dependencyInsight — configuration debugRuntimeClasspath — dependency androidx.compose.foundation ` dependencyInsight.txt`
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ./gradlew :app:dependencyInsight --configuration debugRuntimeClasspath
 --dependency androidx.compose.foundation > dependencyInsight.txt
-
 
 여기서도 구성을 전달하고 관심 있는 종속성을 인수로 추가합니다. 또한 결과를 파일에 보내어 변경 전과 변경 후의 결과를 diff 할 수 있습니다. --scan 플래그를 사용하여 웹 버전도 있습니다.
 
 파일 상단에는 종속성에 대한 메타데이터와 요청된 버전 및 해결된 버전에 대한 정보가 표시됩니다:
 
-
 > 작업 :app:dependencyInsight
-androidx.compose.foundation:foundation:1.7.0-beta02
-  Variant releaseRuntimeElements-published:
+> androidx.compose.foundation:foundation:1.7.0-beta02
+> Variant releaseRuntimeElements-published:
+
     | 속성 이름                                      | 제공     | 요청    |
     |----------------------------------------------|---------|---------|
     | org.gradle.status                             | release |         |
@@ -130,8 +204,18 @@ androidx.compose.foundation:foundation:1.7.0-beta02
        - 제약 조건으로 인해 Text의 심각한 버그 방지
        - 버전 1.7.0-beta02, 1.6.7, 1.4.0 및 1.6.0 사이의 충돌 해결로 인해
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 해결된 버전과 그것을 요청한 종속성 목록을 볼 수 있습니다:
 
@@ -151,7 +235,18 @@ androidx.compose.foundation:foundation:1.7.0-beta02
 
 나무가 크고 어떤 라이브러리가 원인일 수 있다는 감이 있다면, 아래 설명된대로 제외를 수행한 후 명령어를 다시 실행하고 출력을 비교하여 변경된 내용을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 특정 종속성 버전 강제 지정
 
@@ -167,22 +262,40 @@ implementation(libs.compose.navigation) {
 
 위와 같이 사용하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "2.8.0-beta02" 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "2.8.0-beta02"
 
 그리고 원하는 버전을 포함시키는 것을 잊지 마세요:
-
 
 implementation(libs.compose.foundation)
 implementation(libs.compose.foundation.layout)
 
-
 where:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "1.6.7"}

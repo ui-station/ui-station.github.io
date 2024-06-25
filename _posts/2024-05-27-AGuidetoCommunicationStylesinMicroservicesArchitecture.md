@@ -10,7 +10,6 @@ originalTitle: "A Guide to Communication Styles in Microservices Architecture"
 link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microservices-architecture-9a8ae4bc21b2"
 ---
 
-
 ![A Guide to Communication Styles in Microservices Architecture](/assets/img/2024-05-27-AGuidetoCommunicationStylesinMicroservicesArchitecture_0.png)
 
 마이크로서비스 아키텍처에서 의사소통은 중요한 요소로, 다양한 토론이 진행되어 상호 서비스 상호 작용에 대한 가장 효과적인 방법을 선택하는 데 초점을 맞춥니다. 이 입문용 블로그 포스트에서는 마이크로서비스를 위한 최적의 의사소통 전략을 탐색하고 요약하여 언제 어디서 각 의사소통 스타일을 효과적으로 활용해야 하는지에 대한 통찰을 제공할 것입니다.
@@ -19,8 +18,18 @@ link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microser
 
 마이크로서비스 아키텍처 내에서 서비스가 어떻게 의사소통하는지 효과적으로 이해하기 위해 사용 가능한 상호 작용 스타일에 익숙해지는 것이 중요합니다. 각 스타일은 고유한 장단점을 가지고 있습니다. 이러한 세부 사항을 정확히 이해하는 것은 서비스에 가장 적합한 의사소통 메커니즘에 대한 정보를 얻기 전 중요합니다. 이 기본 지식은 선택한 방법이 시스템의 특정 요구 사항과 도전에 잘 부합되도록 보장합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 상호 작용 스타일은 두 가지 측면으로 분류할 수 있어요. 첫 번째 측면은 상호 작용이 일대일인지 일대다인지에요:
 
@@ -32,7 +41,18 @@ link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microser
 - 동기식 — 클라이언트는 서비스로부터 적시에 응답을 기대하며 대기하는 동안 차단될 수 있어요.
 - 비동기식 — 클라이언트는 차단되지 않고, 응답이 있다면 즉시 전달되지 않을 수도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 서로 다른 차원을 보여주는 표입니다.
 
@@ -44,7 +64,18 @@ link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microser
 - 비동기 요청/응답 — 서비스 클라이언트가 요청을 보내고, 서비스가 비동기적으로 응답합니다. 클라이언트는 대기하는 동안 블록되지 않습니다. 왜냐하면 서비스가 응답을 오랫동안 보내지 않을 수도 있기 때문입니다.
 - 일방향 통지 — 서비스 클라이언트가 요청을 보내지만, 응답을 기대하거나 보내지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 일대다 상호작용
 
@@ -55,7 +86,18 @@ link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microser
 
 클라이언트가 서비스에 요청을 보내고, 서비스는 요청을 처리한 후 응답을 되돌립니다. 일부 클라이언트는 응답을 기다리는 동안 블록될 수 있으며, 다른 클라이언트는 반응적인 논블로킹 아키텍처를 가지고 있을 수 있습니다. 그러나 메시징을 사용할 때와는 다르게, 클라이언트는 응답이 시간 이내에 도착할 것이라고 가정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 다이어그램은 RPI 작동 방식을 보여줍니다. 클라이언트의 비즈니스 로직은 PRI 프록시 어댑터 클래스에 구현된 프록시 인터페이스를 호출합니다. RPI 프록시는 서비스에 요청을 보냅니다.
 
@@ -65,7 +107,18 @@ link: "https://medium.com/@joudwawad/a-guide-to-communication-styles-in-microser
 
 # REST API
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 REST에서의 중요한 개념 중 하나는 자원(resource)입니다. 자원은 일반적으로 고객(Customer)이나 제품(Product)과 같은 단일 비즈니스 객체 또는 비즈니스 객체 모음을 나타냅니다. REST는 자원을 조작하기 위해 HTTP 동사를 사용하며, 이는 URL을 사용하여 참조됩니다. 예를 들어 GET 요청은 자원의 표현을 반환하며, 이는 종종 XML 문서 또는 JSON 객체 형식으로 제공되지만 바이너리와 같은 다른 형식을 사용할 수도 있습니다. POST 요청은 새 자원을 생성하고, PUT 요청은 자원을 업데이트합니다.
 
@@ -78,7 +131,18 @@ REST API에서의 과제
 
 ## REST의 장단점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 REST를 사용하는 것에는 많은 이점이 있습니다:
 
@@ -96,7 +160,18 @@ REST를 사용하는 것에는 많은 이점이 있습니다:
 - 한 요청에서 여러 리소스를 가져오는 것이 어려울 수 있습니다.
 - 여러 업데이트 작업을 HTTP 동사에 매핑하는 것이 때때로 어려울 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # gRPC 사용하기
 
@@ -106,7 +181,18 @@ REST API는 여러 개의 업데이트 작업을 효과적으로 처리하기 �
 
 gRPC에는 여러 가지 이점이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 업데이트 작업이 풍부한 API를 설계하는 것은 간단합니다.
 - 특히 큰 메시지를 교환할 때 효율적이고 간결한 IPC 메커니즘이 있습니다.
@@ -120,7 +206,18 @@ gRPC에는 몇 가지 단점이 있습니다:
 
 gRPC는 REST의 매력적인 대안이지만, REST처럼 동기식 통신 메커니즘이므로 일부 실패 문제도 겪을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 비동기 메시징 패턴을 사용하여 소통하기
 
@@ -130,7 +227,18 @@ gRPC는 REST의 매력적인 대안이지만, REST처럼 동기식 통신 메커
 
 - Gregor Hohpe와 Bobby Woolf의 책 "Enterprise Integration Patterns"에서 요약
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 메시지 소개
 
@@ -142,7 +250,18 @@ gRPC는 REST의 매력적인 대안이지만, REST처럼 동기식 통신 메커
 
 다양한 종류의 메시지가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - **문서** - 데이터만 포함한 일반 메시지입니다. 수신자가 어떻게 해석할지 결정합니다. 명령에 대한 응답이 문서 메시지의 예입니다.
 - **명령** - RPC 요청과 동등한 메시지입니다. 호출할 작업과 해당 매개변수를 지정합니다.
@@ -155,7 +274,18 @@ gRPC는 REST의 매력적인 대안이지만, REST처럼 동기식 통신 메커
 메시지는 채널을 통해 교환됩니다. 송신자에서의 비즈니스 로직은 송신 포트 인터페이스를 호출하며, 해당 포트는 내부 통신 메커니즘을 캡슐화합니다.
 송신 포트는 메시지 송신기 어댑터 클래스에 의해 구현되며, 이 클래스는 메시지 채널을 통해 수신자에게 메시지를 보냅니다. 메시지 채널은 메시징 인프라의 추상화입니다. 수신자의 메시지 핸들러 어댑터 클래스가 호출되어 메시지를 처리합니다. 이는 소비자의 비즈니스 로직에 의해 구현된 수신 포트 인터페이스를 호출합니다. 채널로부터 메시지를 보내는 송신자는 여러 명일 수 있습니다. 마찬가지로 채널에서 메시지를 수신하는 수신자도 여러 명일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 것이 매우 중요합니다.
 
@@ -166,7 +296,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 ## 요청/응답 및 비동기 요청/응답 구현하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라이언트와 서비스가 요청/응답 또는 비동기 요청/응답을 사용하여 상호 작용할 때, 클라이언트는 요청을 보내고 서비스는 응답을 다시 보냅니다. 두 상호 작용 스타일 간의 차이점은 요청/응답의 경우 클라이언트가 서비스가 즉시 응답할 것으로 기대하는 데 반해, 비동기 요청/응답에서는 그러한 기대가 없다.
 메시징은 본질적으로 비동기이므로 비동기적인 요청/응답만을 제공합니다. 그러나 클라이언트는 응답을 받을 때까지 블로킹될 수 있습니다.
@@ -178,7 +319,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 클라이언트와 서비스가 메시징을 사용하여 통신하기 때문에 상호 작용은 본질적으로 비동기적입니다. 이론적으로 메시징 클라이언트는 응답을 받을 때까지 블로킹될 수 있지만, 실제로는 클라이언트가 응답을 비동기적으로 처리합니다. 게다가, 응답은 일반적으로 클라이언트의 여러 인스턴스 중 하나에 의해 처리됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단방향 통지 구현
 
@@ -190,7 +342,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 클라이언트는 게시/구독 채널로 메시지를 게시하고, 여러 소비자가 읽습니다.
 서비스는 게시/구독을 사용하여 도메인 이벤트를 게시하는데, 이는 도메인 객체의 변경을 나타냅니다. 도메인 이벤트를 발행하는 서비스는 도메인 클래스에서 파생된 채널을 소유하며, 특정 도메인 객체의 이벤트에 관심이 있는 서비스는 해당 채널을 구독하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-AGuidetoCommunicationStylesinMicroservicesArchitecture_1.png" />
 
@@ -202,7 +365,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 비동기 API를 갖는 응용 프로그램의 각 서비스는 이러한 구현 기법 중 하나 이상을 사용합니다. 작업을 호출하는 비동기 API를 가진 서비스에는 요청을 위한 메시지 채널이 있습니다. 마찬가지로 이벤트를 발행하는 서비스는 이벤트 메시지 채널에 이를 발행할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 메시지 브로커 사용하기
 
@@ -212,7 +386,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 메시지 브로커는 모든 메시지가 흐르는 중간 매개체입니다. 발신자는 메시지를 메시지 브로커에 작성하고, 메시지 브로커가 수신자에게 전달합니다. 메시지 브로커를 사용하는 중요한 이점 중 하나는 발신자가 소비자의 네트워크 위치를 알 필요가 없다는 것입니다. 또 다른 이점은 메시지 브로커가 메시지를 버퍼링하여 소비자가 처리할 수 있을 때까지 메시지를 저장한다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 메시지 브로커를 선택할 수 있습니다. 인기있는 오픈 소스 메시지 브로커의 예시는 다음과 같습니다:
 
@@ -225,7 +410,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 어떤 종류의 메시지 브로커가 가장 잘 맞는지는 애플리케이션의 요구사항에 따라 다릅니다. 심지어 애플리케이션의 다른 부분도 서로 다른 메시징 요구사항을 가질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 메시지 브로커를 사용한 메시지 채널 구현
 
@@ -236,7 +432,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 # 메시지 브로커의 문제점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 경쟁 수신기와 메시지 순서 정렬
 
@@ -250,7 +457,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 아파치 카프카(Apache Kafka)나 AWS Kinesis와 같은 현대적인 메시지 브로커에서 사용되는 일반적인 해결책은 샤딩(파티셔닝)된 채널을 사용하는 것입니다.
 다음 다이어그램은 이 작동 방식을 보여줍니다. 이 해결책에는 세 부분이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 샤드 채널은 두 개 이상의 샤드로 구성되어 있으며 각 샤드는 채널처럼 작동합니다.
 - 발신자는 메시지 헤더에 샤드 키를 지정하며, 이는 일반적으로 임의의 문자열 또는 바이트 시퀀스입니다. 메시지 브로커는 샤드 키를 사용하여 메시지를 특정 샤드/파티션에 할당합니다. 예를 들어, 샤드 키의 해시를 샤드 수로 나눈 나머지를 계산하여 샤드를 선택할 수 있습니다.
@@ -263,7 +481,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 메시지를 사용할 때 대면해야 하는 또 다른 과제는 중복 메시지 처리입니다. 메시지 브로커는 이상적으로 각 메시지를 한 번만 전달해야 하지만, 정확히 한 번 메시지를 보장하는 것은 보통 너무 비용이 많이 듭니다. 대신 대부분의 메시지 브로커는 적어도 한 번 메시지를 전달할 것을 약속합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시스템이 정상적으로 작동할 때 최소한 한 번의 전달을 보장하는 메시지 브로커는 각 메시지를 한 번만 전달합니다. 그러나 클라이언트, 네트워크 또는 메시지 브로커의 장애로 인해 메시지가 여러 번 전달될 수 있습니다.
 예를 들어, 클라이언트가 메시지를 처리하고 데이터베이스를 업데이트한 후에 메시지를 확인하기 전에 충돌하는 경우가 있습니다.
@@ -276,7 +505,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 중복 메시지를 처리하는 몇 가지 다른 방법이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 아이덴포턴트 메시지 핸들러를 작성하십시오.
 - 메시지를 추적하고 중복을 제거하십시오.
@@ -287,7 +527,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 메시지를 처리하는 응용 프로그램 로직이 아이덴포턴트하다면, 중복된 메시지는 해를 끼치지 않습니다. 응용 프로그램 로직이 아이덴포턴트하다는 것은 동일한 입력 값으로 여러 번 호출하더라도 추가적인 효과가 없다는 것을 의미합니다. 예를 들어, 이미 취소된 주문을 다시 취소하는 것은 아이덴포턴트한 작업입니다. 또한, 클라이언트가 제공한 ID로 주문을 생성하는 것도 아이덴포턴트한 작업입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메시지 핸들러가 idempotent할 때 여러 번 안전하게 실행될 수 있습니다, 단 메시지 브로커가 메시지를 재전달할 때 순서를 유지해야 합니다.
 
@@ -298,7 +549,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 예를 들어 소비자 신용카드를 승인하는 메시지 핸들러를 고려해보겠습니다. 각 주문에 대해 카드를 정확히 한 번 승인해야 합니다. 이 응용 프로그램 로직의 경우 각 호출 시 다른 효과가 있습니다. 중복 메시지로 인해 메시지 핸들러가 이 로직을 여러 차례 실행하면 응용 프로그램이 잘못 동작할 수 있습니다. 이러한 종류의 응용 프로그램 로직을 실행하는 메시지 핸들러는 중복 메시지를 감지하고 삭제함으로써 독립적이어야 합니다.
 간단한 해결책은 메시지 소비자가 처리한 메시지를 메시지 ID를 사용하여 추적하고 중복을 버리는 것입니다. 예를 들어, 각 처리된 메시지의 메시지 ID를 데이터베이스 테이블에 저장할 수 있습니다. 다음 다이어그램은 전용 테이블을 사용하여 이러한 작업을 하는 방법을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소비자가 메시지를 처리할 때, 메시지 ID를 데이터베이스 테이블에 기록합니다. 이는 비즈니스 엔티티를 생성하고 업데이트하는 트랜잭션의 일부로서 수행됩니다. 이 예제에서 소비자는 PROCESSED_MESSAGES 테이블에 메시지 ID를 포함한 행을 삽입합니다. 만약 메시지가 중복이면, 삽입이 실패하고 소비자는 메시지를 폐기할 수 있습니다.
 
@@ -308,7 +570,18 @@ Point-To-Point 및 Publish-Subscribe 두 가지 채널 유형을 이해하는 �
 
 요약하자면, 마이크로서비스 아키텍처에서 통신 스타일을 선택하는 것은 애플리케이션 전체의 효율성과 확장성에 중요합니다. 이 게시물에서 동기 호출부터 비동기 메시징까지 다양한 통신 메커니즘을 탐색해봤습니다. 각각의 장단점과 적합한 사용 사례가 있습니다. 올바른 통신 전략은 성능을 향상시킬 뿐만 아니라 서비스 상호작용에서 탄력성과 유연성을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 커뮤니케이션 스타일을 선택할 때는 서비스 상호작용의 성격, 실시간 데이터 필요성, 그리고 서비스 복잡성과 같은 요소를 고려하는 것이 중요합니다. 조직의 요구 사항과 기술적 발전에 맞게 진화할 수 있는 견고한 아키텍처를 육성하는 것이 목표입니다.
 

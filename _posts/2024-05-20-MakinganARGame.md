@@ -3,13 +3,12 @@ title: "AR 게임 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-20-MakinganARGame_0.png"
 date: 2024-05-20 16:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-MakinganARGame_0.png
 tag: Tech
 originalTitle: "Making an AR Game"
 link: "https://medium.com/samsung-internet-dev/making-an-ar-game-with-aframe-529e03ae90cb"
 ---
-
 
 ## AFRAME, THREE.js 및 WebXR을 사용하여 4.5시간의 라이브 스트리밍 동안 게임을 만들었어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/samsung-internet-dev/making-an-ar-game-with-aframe-529
 
 라이브 스트림의 전체 네 시간 이상을 시청하고 싶다면 다음 URL을 참고하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Part 1: [https://youtu.be/ee7PPDmPuqY](https://youtu.be/ee7PPDmPuqY)
 - Part 2: [https://youtu.be/RWFQ2FqEMi4](https://youtu.be/RWFQ2FqEMi4)
@@ -31,7 +41,18 @@ link: "https://medium.com/samsung-internet-dev/making-an-ar-game-with-aframe-529
 
 ## AFrame 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우선 새 HTML 파일을 만드는 것이 중요합니다. index.html이라는 파일을 생성하고 일부 HTML 뼈대를 넣어주세요. 저는 VSCode에서 Emmet 약어를 사용하여 !를 입력하여 기본 HTML을 자동으로 작성합니다.
 
@@ -44,7 +65,7 @@ link: "https://medium.com/samsung-internet-dev/making-an-ar-game-with-aframe-529
   <title>My AR Game</title>
 </head>
 <body>
-  
+
 </body>
 </html>
 ```
@@ -55,14 +76,35 @@ link: "https://medium.com/samsung-internet-dev/making-an-ar-game-with-aframe-529
 <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테스트
 
 로컬 http 서버를 시작하여 컴퓨터에서 표시할 수 있도록 테스트해봅니다. node http-server 모듈을 사용하겠습니다. 만약 노드 환경이 없다면 Chrome Web Server 확장 프로그램이나 glitch.com과 같은 웹 사이트에서 구축할 수 있는 다른 옵션을 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 WebXR를 실행하려면 안전한 출처가 필요합니다. 안전한 출처는 일반적으로 https://로 시작하지만 특별한 안전한 출처인 http://localhost는 로컬 http 서버에 액세스할 수 있게 합니다.
 
@@ -72,8 +114,18 @@ WebXR를 실행하려면 안전한 출처가 필요합니다. 안전한 출처�
 
 핸드폰에서 테스트하려면 두 가지 옵션이 잘 동작합니다. 가장 편리한 옵션은 핸드폰을 USB로 연결하고 Chrome의 원격 디버깅을 사용하여 http 서버의 포트를 전달하는 것입니다. 이 기능에 액세스하려면 Chrome에서 chrome://inspect를 열어주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![AR Game Screenshot](/assets/img/2024-05-20-MakinganARGame_0.png)
 
@@ -83,31 +135,52 @@ WebXR를 실행하려면 안전한 출처가 필요합니다. 안전한 출처�
 
 ## AR 기능 활성화
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AR을 사용해보면 AFRame 씬에서 장면이 표시되기 전에 장치 카메라를 잠깐 볼 수 있다는 것을 먼저 알아차릴 수 있어요. 이것은 `a-sky` 요소가 전체 장면을 가리기 때문입니다.
 
 이 문제를 해결하기 위해 AR 모드로 전환될 때 객체를 숨기는 새로운 AFrame 컴포넌트를 추가할 거에요. 이 코드는 Klaus Weidner가 AFrame 데모 중 하나에서 작업한 것을 참고했어요:
 
 ```js
-AFRAME.registerComponent('hide-in-ar-mode', {
+AFRAME.registerComponent("hide-in-ar-mode", {
   init: function () {
-    this.el.sceneEl.addEventListener('enter-vr', (ev) => {
-      if (this.el.sceneEl.is('ar-mode')) {
-        this.el.setAttribute('visible', false);
+    this.el.sceneEl.addEventListener("enter-vr", (ev) => {
+      if (this.el.sceneEl.is("ar-mode")) {
+        this.el.setAttribute("visible", false);
       }
     });
-    this.el.sceneEl.addEventListener('exit-vr', (ev) => {
-      this.el.setAttribute('visible', true);
+    this.el.sceneEl.addEventListener("exit-vr", (ev) => {
+      this.el.setAttribute("visible", true);
     });
-  }
-})
+  },
+});
 ```
 
 나는 이 스니펫을 프로젝트 간에 복사하는 유용한 컴포넌트 라이브러리에 포함했어요. 다른 유용한 부분들도 함께 있어서 페이지에 그 스크립트를 추가할 거에요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <script src="https://ada.is/basketball-demo/ar-components.js"></script>
@@ -121,7 +194,18 @@ AFRAME.registerComponent('hide-in-ar-mode', {
 
 다른 문제는 크기입니다. AFrame의 Hello World 예제는 VR용으로 설계되었습니다. VR에서는 물리적으로 큰 장면이 잘 작동합니다. 무제한 공간을 활용할 수 있기 때문입니다. AFrame Hello World 예제에서 컨텐츠는 사용자로부터 5미터 떨어지고 높이가 2.5m인 큰 크기로 배치됩니다. 이는 VR에서 인상적으로 보이지만 AR에서는 많은 사람들의 실제 환경에 맞지 않을 정도로 매우 큽니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AR 씬을 디자인할 때는 콘텐츠의 크기가 0.5m보다 크지 않도록 하는 것이 좋습니다. 사람들이 그것을 환경에 맞춰놓을 수 있도록 할 수 있으니까요. 작은 아파트에서 살고 있는 사람으로서 이야기하는 거예요.
 
@@ -131,7 +215,18 @@ AR 씬을 디자인할 때는 콘텐츠의 크기가 0.5m보다 크지 않도록
 
 ## 히트 테스팅 추가하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 히트 테스트는 가상 콘텐츠에서 실제 세계로 광선을 쏘는 것을 의미합니다. 따라서 바닥, 테이블 및 벽과 같은 실제 세계 객체와 일치하게 가상 객체를 배치할 수 있습니다.
 
@@ -141,7 +236,18 @@ AR 씬을 디자인할 때는 콘텐츠의 크기가 0.5m보다 크지 않도록
 
 그러나 AFrame에서 XR 세션을 시작할 때 추가 정보를 요청할 수 있습니다. `a-scene` 요소에 webxr 구성 요소를 사용하여 다음과 같이 추가할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <a-scene webxr="optionalFeatures: hit-test;">
@@ -155,7 +261,18 @@ AR 씬을 디자인할 때는 콘텐츠의 크기가 0.5m보다 크지 않도록
 
 ar-hit-test 컴포넌트는 가장 관련된 사용자 입력을 사용하여 계속해서 히트 테스트를 수행하여 다양한 하드웨어에서 작동하는 무언가를 구축하는 데 도움을 줄 것입니다. 예를 들어, 헤드셋 위치를 기본으로 사용하지만 가능한 경우 VR 컨트롤러나 핸드 트래킹을 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어디에 맞은지와 상관없이 해당 객체를 배치합니다. 이는 AR에서 목표 지시 표시기로 사용하기 편리합니다.
 
@@ -163,23 +280,34 @@ ar-hit-test 컴포넌트는 가장 관련된 사용자 입력을 사용하여 �
 
 ```js
 <a-plane
- rotation="-90 0 0"
- width="0.2"
- height="0.2"
- src="./arrow.png"
- material="transparent:true;"
+  rotation="-90 0 0"
+  width="0.2"
+  height="0.2"
+  src="./arrow.png"
+  material="transparent:true;"
 ></a-plane>
 ```
 
 <img src="/assets/img/2024-05-20-MakinganARGame_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `div` 태그가 HTML에서 사용되는 것과 유사하게 AFrame에서는 `a-entity`를 사용합니다. 이는 3D 모델과 같은 추가 속성이 없는 일반 요소입니다. ar-hit-test 컴포넌트를 사용하여 위치를 조정하는 새로운 `a-entity`를 만들겠습니다.
 
 ```js
 <a-entity ar-hit-test="doHitTest:false" visible="false">
-Reticle HTML goes here ...
+  Reticle HTML goes here ...
 </a-entity>
 ```
 
@@ -187,7 +315,18 @@ Reticle HTML goes here ...
 
 ## 농구 골대 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리는 원하는 실제 세계 객체의 위치를 얻는 방법이 있습니다. 벽에 설치할 테스트할 방법을 만들어 보겠습니다.
 
@@ -197,17 +336,48 @@ Reticle HTML goes here ...
 
 후프는 3개의 간단한 모양으로 이루어질 것입니다. 배경 보드를 위한 평면, 후프를 위한 토러스 및 그물을 위한 열린 끝이 있는 원뿔입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 훈련 목표 설명하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 플레이어가 자신의 벽에 후프를 배치할 수 있도록 하고 싶습니다. 이 함수는 후프를 가시적으로 만들고, 선택이 발생할 때 선택한 위치에 후프를 위치시키는 역할을 합니다. 선택을 하면 함수가 호출됩니다. 하지만 이 단순한 함수는 후프를 조금 비스듬하게 만들 수 있습니다. 후프가 히트 테스트 원점을 향하도록 기울어져 있지만 정렬하기가 어려울 수 있습니다. 따라서 후프의 z 방향이 y 축과 일치하도록 하기 위해 일부 백터 수학을 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 조금 더 복잡한 함수는 시야를 수직 위치로 회전시키기 위해 필요한 쿼터니온 회전을 계산할 것입니다. 그런 다음 해당 회전과 시야의 회전을 곱하여 후크의 쿼터니온 회전을 설정합니다. 결과적으로, 방향이 올바른 후크가 만들어지지만 약간 휘어져 있어 상단을 가리킵니다.
 
@@ -217,7 +387,18 @@ Reticle HTML goes here ...
 
 물리학 객체에는 두 가지 유형이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 정적 바디는 움직이지 않고 다른 객체에 부딪혀도 반응하지 않습니다. 사실상 무한한 질량을 가지고 있으며 중력의 영향을 받지 않습니다. 사용하기는 저렴하지만 움직일 수 없습니다. 움직이지 말아야 하는 것은 바닥, 벽 및 이 경우 농구 골대와 같은 정적 바디여야 합니다.
 - 동적 바디는 질량을 가지며 중력에 의해 일정한 가속도로 떨어집니다. 정적 바디에서 튕길 수 있거나 다른 동적 바디와 충돌할 수 있습니다. 장면에서 유일한 동적 바디는 공 자체입니다.
@@ -232,28 +413,56 @@ Reticle HTML goes here ...
 
 장면을 설정하는 데 도움이 필요하면 디버그 값을 true로 설정하여 만들어진 모양을 빨간색 윤곽으로 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 다이나믹-바디 컴포넌트가 적용된 구를 추가합니다. 이 구가 공이 될 것입니다.
 
 ```js
-<a-sphere id="ball" dynamic-body radius="0.1" color="orange" position="0.1 2.36 -1.5"></a-sphere>
+<a-sphere
+  id="ball"
+  dynamic-body
+  radius="0.1"
+  color="orange"
+  position="0.1 2.36 -1.5"
+></a-sphere>
 ```
 
 페이지를 새로고침하면 공이 계속해서 떨어질 것입니다.
 
 다음 단계는 바닥면에 스태틱-바디를 추가하여 공을 막을 수 있는 물체를 만드는 것입니다. 또한, 공이 바닥면에 부딪히면 구를 굴릴 수 있도록 바닥면을 훨씬 크게 만들었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <a-plane
-    rotation="-90 0 0"
-    width="20"
-    height="20"
-    color="#43A367"
-    static-body
-    hide-in-ar-mode
+  rotation="-90 0 0"
+  width="20"
+  height="20"
+  color="#43A367"
+  static-body
+  hide-in-ar-mode
 ></a-plane>
 ```
 
@@ -263,7 +472,18 @@ Reticle HTML goes here ...
 
 여기서 꼼수는 가능한 한 많은 다각형을 가진 보이지 않는 토러스를 가지는 것입니다. 그것을 정적 바디로 만들지만 보이지 않게 하고 고해상도 모델 위에 놓습니다. 이것은 비디오 게임에서 공개된 객체보다 훨씬 간단한 기하학을 가진 물리 객체를 가지는 것이 일반적인 꼼수입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 <table scale="0.6 0.6 0.6" static-body="shape: mesh;" position="0 0.173 -0.1" visible="false" radius="0.27" radius-tubular="0.02" geometry="radius: 0.29; segmentsRadial: 5; segmentsTubular: 12">
@@ -276,17 +496,27 @@ AFrame 물리 시스템에는 두 개의 객체가 충돌했을 때 감지하거
 
 볼과 같은 객체의 위치와 속도를 설정하려면 이 메서드를 사용합니다. 현재 활성 컨트롤러에서 공을 발사하는 방법은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-const ball = document.getElementById('ball');
-reticle.addEventListener('select', function (e) {
+const ball = document.getElementById("ball");
+reticle.addEventListener("select", function (e) {
   // Set the ball location to the controller position
   const pose = e.detail.pose;
-  ball.body.position.copy(pose.transform.position);  // {x, y, z}
+  ball.body.position.copy(pose.transform.position); // {x, y, z}
   // Have an initial velocity vector of 5ms into the screen
-  tempVector.set(0, 0 ,-5);
+  tempVector.set(0, 0, -5);
   // Set our velocity vector direction to the controller orientation
   // {x, y, z, w}
   tempVector.applyQuaternion(pose.transform.orientation);
@@ -310,9 +540,20 @@ The last thing we need is to make some UI so that the user can say when they hav
     <button id="exit-button">Stop AR</button>
   </div>
 </div>
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 웹XR 컴포넌트에서 scene 객체에 그것을 선언하여 사용할 수 있습니다:
 
@@ -324,7 +565,18 @@ The last thing we need is to make some UI so that the user can say when they hav
 
 다만 유의해야 할 점은 사용자가 DOM 오버레이 요소를 탭하면 `click`, `mousedown`, `touchstart`와 같은 입력 이벤트가 일반적으로 발생하나 추가로 WebXR `select` 이벤트가 먼저 발생한다는 것입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 '`select`' 이벤트에서 HTML 버튼으로부터의 입력을 기다리는 중이라면 버튼이 눌러지지 않았는지 확인하기 위해 `setTimeout`을 사용해야 할 수 있습니다.
 
@@ -346,7 +598,18 @@ function hasDomOverlay(xrsession) {
 
 필수 경로에 DOM 오버레이를 사용 중이라면 이를 사용하여 가용성을 감지하고 대체 동작을 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 완성된 데모의 소스 코드 읽기
 

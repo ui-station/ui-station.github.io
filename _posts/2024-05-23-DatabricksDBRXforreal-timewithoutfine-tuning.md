@@ -18,7 +18,18 @@ DBRX는 Databricks의 최신 언어 모델 중 하나입니다. 언어 모델이
 
 DBRX는 Databricks에서 개발한 오픈, 일반 목적의 언어 모델입니다. 다양한 표준 벤치마크를 통해 DBRX는 이미 알려진 오픈 언어 모델들에 대한 최신 결과를 보여주고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DBRX는 고밀도 전문가 혼합(MoE) 아키텍처 덕분에 오픈 모델 중 효율성 면에서 최첨단 기술을 선도합니다. LLaMA2-70B보다 추론이 최대 2배 빠르고, 전체 및 활성 매개변수 개수 측면에서 Grok-1의 약 40% 크기입니다.
 
@@ -28,7 +39,18 @@ DBRX는 총 1320억 개의 매개변수 중 360억 개가 어떤 입력에 대�
 
 DBRX를 선택하는 이유는 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 오픈 소스 모델 우위: 데이터브릭스의 DBRX 모델은 LLaMA2-70B, Mixtral 및 Grok-1과 같은 주요 오픈 소스 모델과 비교하여 우수한 성능을 보여줍니다. 이는 데이터브릭스가 언어 이해, 프로그래밍, 수학 및 논리와 같은 여러 영역에서 오픈 소스 모델 품질 향상에 기여하겠다는 의지를 나타냅니다. 이는 데이터브릭스가 지원하기를 자랑스럽게 생각하는 트렌드입니다.
 
@@ -38,7 +60,18 @@ DBRX를 선택하는 이유는 무엇일까요?
 
 ![이미지 2](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - DBRX의 MoE 아키텍처로 향상된 효율성과 확장성: MegaBlocks 연구 및 오픈소스 프로젝트에서 개발된 DBRX의 Mixture-of-Experts(MoE) 모델 아키텍처는 초당 처리된 토큰 수에 대해 높은 속도를 제공합니다. Databricks는 이 혁신이 미래 오픈소스 모델이 MoE 구조를 채택하도록 이끌어내며, 대규모 모델의 훈련을 유지하면서 빠른 처리량을 유지할 수 있도록 할 것으로 기대합니다. DBRX는 총 1320억 개의 매개변수 중 언제든지 360억 개의 매개변수만을 활용하며, 속도와 성능 사이의 균형을 제공하여 사용자에게 효율적인 솔루션을 제공합니다.
 
@@ -48,7 +81,18 @@ DBRX를 선택하는 이유는 무엇일까요?
 
 LLM을 위한 지식 창고는 외부 소스의 실시간 정보를 추가함으로써 언어 모델을 더 스마트하게 만듭니다. 이는 다양한 주제에 걸쳐보다 정확하고 의미 있는 응답을 제공하는 데 도움을 줍니다. RAG, 또는 검색 증강 생성,은 이의 주요 구성 요소로서 정확한 정보를 찾아 활용하여 응답을 개선하는 데 도움을 줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![그림](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_4.png)
 
@@ -58,10 +102,20 @@ RAG(검색 보강 생성)이 무엇인가요?
 
 RAG 또는 검색 보강 생성은 언어를 이해하고 생성하는 새로운 방법입니다. 이 방법은 두 가지 종류의 모델을 결합합니다. 먼저, 관련 정보를 검색하고, 그 정보를 기반으로 텍스트를 생성합니다. 이 두 가지를 함께 사용함으로써 RAG는 놀라운 성과를 거두었습니다. 각 모델의 강점이 서로의 약점을 보완하기 때문에, RAG는 자연어 처리의 혁신적인 방법으로 각광을 받고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 표를 변환한 내용입니다.
-
 
 ![이미지](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_5.png)
 
@@ -71,8 +125,18 @@ RAG 또는 검색 보강 생성은 언어를 이해하고 생성하는 새로운
 
 - **벡터 저장소(Vector Store)**: 각 정보를 벡터로 나타내어 데이터를 저장하는 데이터베이스와 같은 역할입니다. 이러한 방식을 사용하면 각 정보를 다차원 공간에서 수학적으로 표현한 벡터로 저장할 수 있습니다. 이는 기존 인덱싱 방법이 아닌 유사성 측정 기준에 따라 데이터를 효율적으로 저장하고 검색할 수 있도록 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_6.png)
 
@@ -82,7 +146,18 @@ RAG 또는 검색 보강 생성은 언어를 이해하고 생성하는 새로운
 
 Hands-on RAG 데모:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 Databricks를 플랫폼으로 선택한 이유는 DBRX라는 기본 모델과 엔드 투 엔드 기계 학습 및 딥 러닝 워크플로에 맞춘 도구 및 라이브러리들을 제공하기 때문입니다.
 
@@ -92,7 +167,18 @@ Hands-on RAG 데모:
 
 ![image](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. Hugging Face에서 GPT Tokenizer를 가져오기
 
@@ -103,8 +189,18 @@ Hands-on RAG 데모:
 - get_pdf_text(): 제공된 문서에서 텍스트를 추출합니다.
 - Chunk_return(): 텍스트를 입력으로 받아 토큰화하고 거대한 텍스트를 청크로 분할합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_10.png)
 
@@ -115,8 +211,18 @@ Hands-on RAG 데모:
 - get_conve_chain(): 대화형 Q&A 체인을 가져오는 메서드이며, DBRX의 프롬프트 템플릿 및 언어 모델과 함께 반환합니다.
 - query(): 이 메서드는 LLM 체인과 Vector Library를 호출하여 언어 모델 (DBRX)에 공급하는 데 사용됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시:
 
@@ -126,12 +232,21 @@ Hands-on RAG 데모:
 
 - 지식 창과 함께 DBRX에 쿼리하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![DBRX](/assets/img/2024-05-23-DatabricksDBRXforreal-timewithoutfine-tuning_13.png)
 
 결론:
 
 Databricks의 최고 수준 언어 모델인 DBRX는 언어 및 코드를 이해하는 데 뛰어나지만 최근 업데이트에 대한 처리가 약간 어려울 수 있습니다. 따라서 우리는 이를 지원하기 위해 검색 증강 생성(Retrieval-Augmented Generation, RAG) 기술을 사용합니다. 이 기술은 정보를 찾아 새로운 텍스트를 생성하는 방식을 결합하여 DBRX를 더욱 똑똑하게 만듭니다. Databricks에서 구현된 RAG 및 DBRX는 머신 러닝을 보다 쉽고 효과적으로 만들어줍니다.
-

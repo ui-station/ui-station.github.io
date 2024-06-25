@@ -3,13 +3,12 @@ title: "한정된 AI 자원의 최대 활용 Kubernetes 접근법"
 description: ""
 coverImage: "/assets/img/2024-06-23-MaximizingtheUtilityofScarceAIResourcesAKubernetesApproach_0.png"
 date: 2024-06-23 00:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-MaximizingtheUtilityofScarceAIResourcesAKubernetesApproach_0.png
 tag: Tech
 originalTitle: "Maximizing the Utility of Scarce AI Resources: A Kubernetes Approach"
 link: "https://medium.com/towards-data-science/maximizing-the-utility-of-scarce-ai-resources-a-kubernetes-approach-0230ba53965b"
 ---
-
 
 ## 한정된 AI 트레이닝 가속기의 최적 활용
 
@@ -19,7 +18,18 @@ AI 개발의 끊임없는 변화 속에서 헤라클리투스에게 소속된 �
 
 최근 몇 년간 AI 개발에서 가장 어려운 발전 중 하나는 AI 모델을 훈련하는 데 필요한 하드웨어를 확보하기가 점점 어려워지고 있다는 것입니다. 세계적인 공급망 위기나 AI 칩 수요의 상당한 증가 등으로 인해 AI 개발을 위해 필요한 GPU(또는 대체 트레이닝 가속기)를 구하는 것이 더 어려워졌습니다. 신규 GPU 주문에 대한 기다림 시간이 길어진 점이나 한 때 GPU 기계의 거의 무한한 용량을 제공했던 클라우드 서비스 제공업체(CSP)조차 수요를 따라가기 어려워진 점으로 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 변화하는 시대에 따라 AI 개발 팀들은 한때 AI 액셀러레이터의 무한한 용량에 의존했을 수도 있는데, 접근성이 감소하고 경우에 따라 더 높은 비용이 요구되는 세계에 적응해야 합니다. 새 GPU 머신을 언제든 생성할 수 있다는 능력을 당연하게 여겼던 개발 프로세스는 종종 여러 프로젝트 및/또는 팀에 의해 공유되는 희귀한 AI 리소스 세계의 요구를 충족시키기 위해 수정되어야 합니다. 적응하지 못하는 경우 소멸의 위험이 있습니다.
 
@@ -29,7 +39,18 @@ AI 개발의 끊임없는 변화 속에서 헤라클리투스에게 소속된 �
 
 본 게시물은 Kubernetes에 대한 사전 지식을 요구하지는 않지만, 기본적인 이해가 도움이 됩니다. 이 게시물은 어떠한 방식으로도 Kubernetes 튜토리얼로 간주되어서는 안됩니다. Kubernetes에 대해 배우고 싶다면 관련 온라인 자료를 참조하시기 바랍니다. 여기서는 자원 활용의 극대화와 우선 순위 지정과 관련된 몇 가지 Kubernetes 속성만 논의할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 제시한 방법에 대체 도구 및 기술이 많이 있습니다. 각각 장단점이 있습니다. 저희가 이 게시물에서 하고 있는 것은 순전히 교육적인 목적입니다. 우리가 하는 선택 중 어떤 것도 지지한다고 보지 마십시오.
 
@@ -39,7 +60,18 @@ AI 개발의 끊임없는 변화 속에서 헤라클리투스에게 소속된 �
 
 우리의 토론을 간단히 하기 위해, 우리는 모델을 훈련하기 위해 한 대의 워커 노드를 사용할 수 있다고 가정해 봅시다. 이것은 GPU가 장착된 로컬 머신이거나 AWS의 p5.48xlarge 인스턴스나 GCP의 TPU 노드와 같은 클라우드에서 예약된 계산가속 인스턴스일 수 있습니다. 아래의 예시에서는 이 노드를 "내 소중한 자원"이라고 지칭할 것입니다. 일반적으로 우리는 이 기계에 많은 돈을 투자해 왔을 것입니다. 또한 여러 훈련 작업이 단일 연산 자원을 경쟁하며 각 작업이 몇 분에서 며칠까지 소요될 수 있다고 가정할 것입니다. 당연히, 연산 자원의 활용을 극대화하고 중요한 작업을 우선순위로 지정하려고 할 것입니다. 필요한 것은 어떤 형태의 우선순위 큐와 이에 대한 기반 우선순위 기반 스케줄링 알고리즘입니다. 원하는 동작에 대해 조금 더 구체적으로 설명해 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 일정 요구 사항
 
@@ -52,7 +84,18 @@ AI 개발의 끊임없는 변화 속에서 헤라클리투스에게 소속된 �
 
 대체 접근 방식 및 이 게시물에서 채택하는 방식은 요구 사항을 충족하는 우선순위 기반 일정 관리의 기존 솔루션을 활용하고 교육 개발 워크플로우를 해당 사용에 맞추는 것입니다. Kubernetes와 함께 제공되는 기본 스케줄러가 이러한 솔루션 중 하나의 예입니다. 다음 섹션에서는 희소한 AI 훈련 리소스의 활용을 최적화하는 문제를 해결하는 데 사용할 수 있는 방법을 보여드리겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 쿠버네티스를 활용한 ML 오케스트레이션
 
@@ -62,21 +105,43 @@ AI 개발의 끊임없는 변화 속에서 헤라클리투스에게 소속된 �
 
 쿠버네티스를 사용한 ML에 대한 다양한 온라인 자료가 있지만, 사용 방식이 항상 일치하는 것은 아니라는 점을 명심해야 합니다. 일부 자료는 오로지 클러스터를 배포하기 위해 쿠버네티스를 사용합니다. 클러스터가 가동되면 쿠버네티스 외부에서 훈련 작업을 시작합니다. 다른 자료는 전용 모듈을 사용해 훈련 작업(및 관련 리소스)을 완전히 다른 시스템에서 시작하는 파이프라인을 정의하기 위해 쿠버네티스를 사용합니다. 위 두 예시와는 대조적으로, 다른 많은 자료들은 훈련 워크로드를 쿠버네티스 노드에서 실행되는 쿠버네티스 Job 아티팩트로 정의합니다. 그러나 각각이 주로 초점을 맞추는 특성들이 상당히 다릅니다. 일부는 오토 스케일링 속성을 강조하고 다른 일부는 다중 인스턴스 GPU(MIG) 지원을 강조합니다. 또한 ElasticJob, TrainingWorkload, JobSet, VolcanoJob 등의 훈련 작업을 나타내는 정확한 아티팩트(Job 확장)에 대한 구현 세부사항도 크게 달라집니다. 이 게시물의 맥락에서도 우리는 훈련 워크로드를 쿠버네티스 Job으로 정의한다고 가정할 것입니다. 그러나 토론을 간단히 하기 위해 쿠버네티스의 핵심 객체만 다루고 ML을 위한 쿠버네티스 확장에 대한 토론은 추후 게시물에서 다루도록 하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 케이버네티스를 머신러닝에 사용하는 것에 반대하는 주장들
 
 여기 케이버네티스를 통해 머신러닝 모델을 학습하는 데에 반대할 수 있는 몇 가지 주장들이 있습니다.
 
 - 복잡성: 케이버네티스는 어렵다는 것은 그 사용자들조차 인정해야 합니다. 케이버네티스를 효과적으로 사용하려면 높은 전문 지식이 요구되며, 가파른 학습 곡선이 존재하고, 현실적으로 말하자면 전문 개발팀이 필요합니다. 케이버네티스를 기반으로 한 학습 솔루션을 설계하는 것은 전문가에 대한 의존성을 증가시키고, 결과적으로 문제가 발생할 수 있는 위험을 증가시키며, 개발이 지연될 수 있다는 위험을 증가시킵니다. 많은 대체 머신러닝 학습 솔루션은 개발자 독립성과 자유를 보장하며 개발 과정에서 버그의 위험을 줄일 수 있습니다.
-- 고정된 자원 요구 사항: 케이버네티스의 가장 큰 장점 중 하나인 확장성 — 작업의 수, 클라이언트 수(서비스 응용 프로그램의 경우), 자원 용량 등에 따라 자동으로 컴퓨팅 자원 풀을 확장하고 축소할 수 있는 능력에 대해 가장 주목받는 특성 중 하나입니다. 그러나 머신러닝 학습 작업의 경우 필요한 자원의 수가 일반적으로 학습 중에 고정된다는 점을 고려할 수 있습니다. 
+- 고정된 자원 요구 사항: 케이버네티스의 가장 큰 장점 중 하나인 확장성 — 작업의 수, 클라이언트 수(서비스 응용 프로그램의 경우), 자원 용량 등에 따라 자동으로 컴퓨팅 자원 풀을 확장하고 축소할 수 있는 능력에 대해 가장 주목받는 특성 중 하나입니다. 그러나 머신러닝 학습 작업의 경우 필요한 자원의 수가 일반적으로 학습 중에 고정된다는 점을 고려할 수 있습니다.
 - 고정된 인스턴스 유형: 케이버네티스는 컨테이너화된 응용 프로그램을 오케스트레이션하기 때문에 노드 풀 내의 머신 유형에 대해 매우 유연성을 제공합니다. 그러나 머신러닝의 경우 주로 GPU와 같은 전용 가속기를 갖춘 매우 구체적인 기계가 필요합니다. 게다가, 우리의 작업은 종종 매우 특정 인스턴스 유형에서 최적으로 실행될 수 있습니다.
 - 단일 애플리케이션 아키텍처: 현대 애플리케이션 개발에서 애플리케이션을 미니 서비스라고 불리는 작은 구성 요소로 분해하는 것이 일반적입니다. 케이버네티스는 이 설계의 핵심 구성 요소로 자주 볼 수 있습니다. 머신러닝 학습 응용 프로그램은 설계상 매우 단일식이며, 이는 마이크로 서비스 아키텍처에 자연스럽게 합치기 어려울 수 있다는 주장이 있습니다.
 - 자원 오버헤드: 케이버네티스를 실행하는 데 필요한 전용 프로세스는 각 노드에 일부 시스템 자원을 필요로 합니다. 따라서 이는 학습 작업에 일정한 성능 저하를 초래할 수 있습니다. 학습에 필요한 자원의 비용을 감안할 때, 이를 피하길 선호할 수 있습니다.
 
 물론, 우리는 케이버네티스를 머신러닝을 위한 프레임워크로 선택하는 데 필요한 아주 좋은 이유가 있어야 한다는 한면적인 견해를 가졌습니다. 위에서 제시된 주장에만 근거하여 보면, 케이버네티스를 선택하기 위한 뚜렷한 이유가 필요할 것으로 보입니다. 본 포스트에서 제시된 도전에는 희귀한 AI 컴퓨팅 자원의 유틸리티를 극대화하려는 열망이 바로 위의 주장에도 불구하고 케이버네티스를 사용하게끔 타당하게 만드는 유형의 정당화라고 생각합니다. 저희는 내장된 기본 스케줄러와 우선 순위와 선점을 지원하는 케이버네티스가 이러한 요구 사항을 충족시키는 데 선두주자임을 입증하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 장난감 예시
 
@@ -86,22 +151,39 @@ AI 개발의 끊임없는 변화 속에서 헤라클리투스에게 소속된 �
 
 Minikube start 명령을 사용하여 두 노드 클러스터를 생성해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 minikube start --nodes 2
 
-
 로컬 Kubernetes 클러스터를 시작하면 마스터(“control-plane”) 노드인 minikube와 하나의 워커 노드인 minikube-m02가 만들어집니다. 이 노드는 단일 AI 리소스를 시뮬레이트합니다. 이를 고유한 리소스 유형으로 식별하기 위해 my-precious 라벨을 적용해보세요:
-
 
 kubectl label nodes minikube-m02 node-type=my-precious
 
-
 Minikube 대시보드를 사용하여 결과를 시각화할 수 있습니다. 다음 명령을 실행하여 새로운 셸에서 생성된 브라우저 링크를 열어보세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 minikube 대시보드
@@ -113,7 +195,18 @@ minikube 대시보드
 
 ## PriorityClass 정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 아래에 표시된 priorities.yaml 파일에 low-priority와 high-priority 두 가지 PriorityClasses를 정의합니다. 새 작업은 기본적으로 low-priority 할당을 받게 됩니다.
 
@@ -140,7 +233,18 @@ globalDefault: false
 kubectl apply -f priorities.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 작업 생성
 
@@ -159,20 +263,31 @@ spec:
           image: busybox
           command: # 간단한 sleep 명령
             - sleep
-            - '100'
+            - "100"
           resources: # 모든 가능한 리소스 요구
             limits:
               cpu: "2"
             requests:
               cpu: "2"
       nodeSelector: # 우리의 고유한 리소스 지정
-          node-type: my-precious
+        node-type: my-precious
       restartPolicy: Never
 ```
 
 다음 명령어로 작업을 제출합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 kubectl apply -f job.yaml
@@ -184,9 +299,20 @@ Kubernetes가 작업을 처리하기 위해 대기열에 넣는 방식을 보여
 
 ```js
 kubectl apply -f jobs.yaml
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 이미지는 제출 직후 Minikube 대시보드에서 클러스터의 Workload 상태를 캡처한 것입니다. my-precious가 test1을 처리하기 시작했음을 확인할 수 있습니다. 다른 작업들은 차례를 기다리며 대기 중입니다.
 
@@ -196,7 +322,18 @@ test1 처리가 완료되면 test2 처리가 시작됩니다:
 
 ![Workload Status](/assets/img/2024-06-23-MaximizingtheUtilityofScarceAIResourcesAKubernetesApproach_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 우선순위가 높은 다른 작업이 제출되지 않는 한, 우리의 작업은 모두 완료될 때까지 한 번에 하나씩 처리될 것입니다.
 
@@ -229,7 +366,18 @@ spec:
           node-type: my-precious
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 이미지에서 작업 부하 상태의 영향이 표시됩니다:
 
@@ -239,8 +387,18 @@ test2 작업이 중단되었습니다. 더 높은 우선순위의 test-p1 작업
 
 아래 이미지는 모든 작업이 완료된 후의 작업 부하 상태를 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-MaximizingtheUtilityofScarceAIResourcesAKubernetesApproach_5.png)
 
@@ -250,7 +408,17 @@ test2 작업이 중단되었습니다. 더 높은 우선순위의 test-p1 작업
 
 # 요약
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 실리콘의 가용성이 감소함에 따라 ML 팀은 개발 프로세스를 조정해야 했습니다. 이전과 달리 개발자들이 필요에 따라 AI 리소스를 자유롭게 사용할 수 있던 과거와는 달리, 이제는 AI 컴퓨트 용량에 제약이 생겼습니다. 이는 전용 장치를 구매하거나 클라우드 인스턴스를 예약하는 등의 방법으로 AI 인스턴스를 확보해야 한다는 필요성을 의미합니다. 게다가, 개발자들은 이러한 자원을 다른 사용자 및 프로젝트와 공유해야 할 가능성을 인지해야 합니다. 희소한 AI 컴퓨트 파워가 최대한 활용되도록하기 위해, 유휴 시간을 최소화하고 핵심 워크로드에 우선 순위를 둔 일정 알고리즘을 정의해야 합니다. 본 기사에서는 쿠버네티스 스케줄러를 활용하여 이러한 목표를 달성하는 방법을 보여주었습니다. 앞서 강조했듯이, 이는 희소한 AI 자원의 유틸리티를 극대화하는 도전에 대처하기 위한 다양한 접근 방식 중 하나에 불과합니다. 당연히 선택하는 방식 및 구현 세부사항은 여러분의 AI 개발의 특정 요구에 따라 다를 것입니다.

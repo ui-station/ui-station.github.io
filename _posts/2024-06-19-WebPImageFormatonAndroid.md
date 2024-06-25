@@ -3,13 +3,12 @@ title: "안드로이드에서 WebP 이미지 형식"
 description: ""
 coverImage: "/assets/img/2024-06-19-WebPImageFormatonAndroid_0.png"
 date: 2024-06-19 11:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-WebPImageFormatonAndroid_0.png
 tag: Tech
 originalTitle: "WebP Image Format on Android"
 link: "https://medium.com/@domen.lanisnik/optimizing-android-app-size-by-leveraging-the-webp-image-format-87189f8c7603"
 ---
-
 
 드로어블은 앱 크기를 늘리는 주요 요인 중 하나입니다. 이제 웹피 이미지 형식으로 이동하여 이미지를 최적화하는 방법에 대해 알아볼 거에요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@domen.lanisnik/optimizing-android-app-size-by-leverag
 
 과거에 안드로이드 앱은 아이콘, 이미지 자산 및 기타 드로어블에 JPEG 및 PNG 형식을 사용했습니다. 같은 자산에 대해 서로 다른 해상도의 파일을 생성하여 drawable-xxxhdpi, drawable-xxhdpi 등과 같은 적절한 밀도 폴더에 배치하는 것이 표준적인 방법이었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나중에 Android 5.0(API 수준 21)은 VectorDrawable을 지원하게 되었어요. VectorDrawable은 XML 파일에 정의된 벡터 그래픽이에요. 품질 손실 없이 확대/축소할 수 있어서 같은 파일이 다른 화면 밀도에 대해 손실 없이 크기가 조정돼요. 이는 다른 해상도의 파일을 제공할 필요가 없어서 더 작은 앱 크기를 만들어냅니다.
 
@@ -29,8 +39,18 @@ Compose를 통해 Android는 ImageVector를 사용하여 아이콘을 정의하�
 
 더 복잡한 그림을 위해 주로 PNG 또는 JPG 형식을 계속 사용하며, 사진이나 배경 이미지와 같이 잘 작동하지만 더 큰 앱 크기를 가져올 수 있어요. 이때 WebP가 등장하는 거죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![WebP](/assets/img/2024-06-19-WebPImageFormatonAndroid_0.png)
 
@@ -40,8 +60,18 @@ Compose를 통해 Android는 ImageVector를 사용하여 아이콘을 정의하�
 
 Google에 따르면, WebP의 사용은 비손실 압축의 경우 PNG보다 평균 26% 더 작은 파일 크기를 가지게 되고, 유실 압축의 경우 25-34% 정도 더 작아진다고 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공식 페이지나 위키피디아에서 WebP의 작동 방식에 대해 더 많이 읽을 수 있어요.
 
@@ -51,7 +81,18 @@ Google에 따르면, WebP의 사용은 비손실 압축의 경우 PNG보다 평�
 
 기존의 BMP, JPG, PNG 또는 정적 GIF 이미지를 Android Studio를 사용하여 WebP 형식으로 변환할 수 있어요. Android Studio를 사용하여 무손실이나 투명한 WebP 이미지를 작성하려면 프로젝트가 minSdkVersion을 18 이상으로 선언해야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 왜 사용해야 하나요?
 
@@ -61,7 +102,18 @@ Google에 따르면, WebP의 사용은 비손실 압축의 경우 PNG보다 평�
 
 이로써 WebP는 Android에서 사용하기 좋은 이미지 형식입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이미지를 WebP로 변환하는 방법
 
@@ -71,7 +123,18 @@ Android Studio에는 JPG, PNG, BMP 또는 정적 GIF 이미지를 WebP 이미지
 
 ![이미지](/assets/img/2024-06-19-WebPImageFormatonAndroid_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 새 대화 상자가 열립니다. 여기에서 인코딩 유형과 품질을 설정할 수 있습니다. 손실 압축을 선택하면 인코딩 품질을 설정할 수 있습니다. 품질이 자동으로 100%로 설정되는 손실 없는 인코딩에는 이 설정이 사용할 수 없습니다. "미리보기/검토" 확인란이 선택되어 있는지 확인하여 원본 이미지와 변환된 이미지를 비교할 수 있습니다. 미리보기로 진행하려면 확인 버튼을 누르세요.
 
@@ -81,7 +144,18 @@ Android Studio에는 JPG, PNG, BMP 또는 정적 GIF 이미지를 WebP 이미지
 
 여러 파일을 변환할 때 각 이미지에 대해 이 비교 대화 상자가 제공됩니다. 각 이미지에 대한 설정을 조정하거나 모든 이미지에 대해 일괄 적용 및 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지를 변환하려면 Finish를 눌러주세요.
 
@@ -91,17 +165,39 @@ Android Studio에는 JPG, PNG, BMP 또는 정적 GIF 이미지를 WebP 이미지
 
 5. 이제 끝났어요! 코드를 수정할 필요가 없습니다. 표준 방식 (R.drawable.image_name)으로 드로어블을 참조하고 있다면요. 파일 이름으로 직접 참조하고 있다면 .png 또는 .jpg 확장자를 .webp로 변경해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 주의 사항
 
 1. PNG: PNG 이미지/아이콘을 변환할 때 대부분의 경우 손실 없는 (100% 품질) 설정을 사용할 수 있습니다. 품질에 손상이 없으며 변환된 파일이 상당히 작아집니다.
 
-    이 샘플 PNG 이미지의 경우, 변환된 파일 크기는 품질 손실 없이 65% 작아집니다 (22.0 KB 대 63.0 KB).
+   이 샘플 PNG 이미지의 경우, 변환된 파일 크기는 품질 손실 없이 65% 작아집니다 (22.0 KB 대 63.0 KB).
 
 ![PNG 이미지](/assets/img/2024-06-19-WebPImageFormatonAndroid_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 사용 사례: 선택하는 품질은 사용 사례에 따라 다릅니다. 화면 배경으로 이미지를 사용하는 경우에는 알아챌 수 없기 때문에 낮은 품질 설정이 허용됩니다. 화면에 두드러지게 표시되는 이미지에는 높은 품질 설정을 사용하세요.
 
@@ -111,7 +207,18 @@ Android Studio에는 JPG, PNG, BMP 또는 정적 GIF 이미지를 WebP 이미지
 
 ![2024-06-19-WebPImageFormatonAndroid_5](/assets/img/2024-06-19-WebPImageFormatonAndroid_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Initial dialog(2단계)에서 "변환 결과가 원본보다 큰 파일을 건너뛰기" 설정을 확인하여 변환된 파일이 큰 이미지를 걸러낼 수 있어요. 이 설정은 기본적으로 활성화되어 있어요.
 
@@ -121,7 +228,18 @@ JPG와 WebP 간 이미지 품질 및 파일 크기 차이를 볼 수 있는 샘�
 
 ![Image](/assets/img/2024-06-19-WebPImageFormatonAndroid_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 방향: Whatnot Engineering은 최근 ExifInterface의 버그로 WebP 이미지를 올바른 방향으로 표시하는 문제를 해결하는 데 어려움을 겪었던 내용을 하이퍼디프로 발표했습니다. 그들은 Google에 수정 사항을 제출했고, 최신 AndroidX 릴리스에서 이 문제가 해결되었을 것으로 예상됩니다.
 
@@ -131,7 +249,18 @@ JPG와 WebP 간 이미지 품질 및 파일 크기 차이를 볼 수 있는 샘�
 
 여러 기업이 앱 크기를 줄이기 위해 노력한 경험을 공유했습니다. 대부분의 경우에서 주요 요소는 적절한 형식을 사용하여 이미지를 압축하는 것입니다. 여기에는 이미지 자산을 WebP로 변환하여 앱 크기를 최적화한 회사들의 몇 가지 예시가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Square: [https://developer.squareup.com/blog/keeping-up-with-android-app-size-growth/](https://developer.squareup.com/blog/keeping-up-with-android-app-size-growth/)
 - Grab: [https://engineering.grab.com/project-bonsai](https://engineering.grab.com/project-bonsai)
@@ -143,7 +272,18 @@ Android는 WebP 형식의 인코딩 및 디코딩을 공식적으로 지원하�
 
 Coil 및 Glide를 사용하여 Compose에서 WebP 이미지를로드하는 방법을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 성능은 어떠한가요?
 
@@ -168,7 +308,18 @@ Samsung S21 Ultra (Android 14):
 | 최대             | 96  | 113  | +18%             |
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웹페이지 이미지를 불러오는 데 웹피 파일이 JPG 파일보다 12–21% 더 오래 걸린다는 것을 확인할 수 있었습니다. 차이는 밀리초 단위로 측정되며 사용자들이 눈으로 구별하기에는 미미합니다. 물론 변환 이미지에 선택한 이미지 품질에 따라 차이가 발생합니다. 저품질을 사용하면 더 빨리 불러와지고 파일 크기도 작아집니다.
 
@@ -178,7 +329,18 @@ Samsung S21 Ultra (Android 14):
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 WebP은 JPEG와 JPG보다 압축률이 더 높은 현대 이미지 파일 형식입니다. 따라서 다운로드 크기가 성공에 중요한 지표인 안드로이드 앱에 사용하기에 이상적인 후보입니다, 특히 개발도상국에서는 더욱 그렇습니다.
 
@@ -188,7 +350,18 @@ Android 시스템에서 API 레벨 18부터 완전히 지원되며, Android Stud
 
 이 내용이 유용하게 느껴졌으면 좋겠고, 이미지 자산을 WebP로 변환하여 앱 크기를 최적화하시기를 고려해 주셨으면 합니다. 이미 앱에서 WebP를 사용 중이라면 의견을 자유롭게 공유해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고 자료:
 

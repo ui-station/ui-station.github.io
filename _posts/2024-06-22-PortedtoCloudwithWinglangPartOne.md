@@ -3,13 +3,12 @@ title: "Winglang을 사용해 클라우드로 이전하는 방법 1부"
 description: ""
 coverImage: "/assets/img/2024-06-22-PortedtoCloudwithWinglangPartOne_0.png"
 date: 2024-06-22 22:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-PortedtoCloudwithWinglangPartOne_0.png
 tag: Tech
 originalTitle: "Ported to Cloud with Winglang (Part One)"
 link: "https://medium.com/itnext/ported-to-cloud-with-winglang-part-one-757d31fe5862"
 ---
-
 
 ## "Hexagonal Architecture Explained"에서 Blue Zone Application
 
@@ -19,7 +18,18 @@ link: "https://medium.com/itnext/ported-to-cloud-with-winglang-part-one-757d31fe
 
 이 시리즈에서는 주요 프로그래밍 언어에서 Winglang로 다양한 애플리케이션을 마이그레이션하는 경험을 공유하겠습니다. Wing에서 Hexagonal Architecture를 구현한 첫 경험은 "안녕, Winglang Hexagon!"이라는 제목의 기사에 보고되었습니다. 이는 이러한 조합에 대한 신뢰를 얻기에 충분했으나 과도하게 단순화된 "안녕하세요, 세계!" 인사 서비스에 제한된 핵심 구성 요소가 부족하여 이러한 접근 방식의 확장 가능성을 입증하기에 충분하지 않았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 첫 번째 파트에서는 최근 출간된 책 "헥사곤 아키텍처 설명"에 소개된 "블루 존" 애플리케이션을 자바에서 Wing으로 이식하는 데 초점을 맞추었습니다. "블루 존" 애플리케이션은 상당한 코드 베이스를 가져오는데, 복잡성이 해결하기 어려울 정도로 커지지 않아도 되지만, 많은 종류의 애플리케이션을 대표하는 것입니다. 또한, 이것이 기존의 주류 자바로 작성된 것이라는 사실은 이러한 애플리케이션의 클라우드 네이티브 변형 사례 연구를 제공합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/itnext/ported-to-cloud-with-winglang-part-one-757d31fe
 
 # 헥사곤 아키텍처 패턴 핵심요소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 “Hexagonal Architecture Explained” 책의 두 번째 장을 참고하여 패턴에 대한 자세하고 공식적인 설명을 보실 수 있습니다. 여기서는 제가 제 나만의 말로 이 패턴의 주된 의미를 간략히 요약해서 전달하겠습니다.
 
@@ -39,7 +60,18 @@ Hexagonal Architecture 패턴은 소프트웨어에서 관심사를 분리하는
 
 2. Application과 통신하거나 통신되는 외부 주체. 이들은 인간 최종 사용자, 전자 장치 또는 다른 애플리케이션일 수 있습니다. 원래 패턴은 더 나아가 제안하듯이 Primary (또는 Driving) Actors — Application과 상호 작용을 시작하는 주체들과 Secondary (또는 Driven) Actors — Application이 통신을 시작하는 주체들로 나뉘어야 한다고 제안합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 포트 — 주요 작용자가 사용할 수 있는 인터페이스의 공식 명세(드라이빙 포트라고도 함) 또는 보조 작용자가 구현해야 하는 인터페이스의 공식 명세(드리븐 포트라고도 함)를 가리킵니다. 포트는 인터페이스 동사(예: 주차 티켓 구매)의 공식 명세 외에 이러한 인터페이스를 통해 교환되는 데이터 구조에 대한 자세한 명세도 제공합니다.
 
@@ -49,7 +81,18 @@ Hexagonal Architecture 패턴은 소프트웨어에서 관심사를 분리하는
 
 일반적인 신념과는 달리, 이 패턴은 한 범주, 예를 들어 응용 프로그램이 다른 것보다 중요하다는 것을 의미하지 않으며, 다른 것들보다 크거나 작아야 한다는 결론을 내리지도 않습니다. 포트와 어댑터가 없으면 어떤 응용 프로그램도 실용적으로 사용할 수 없습니다. 상대적 크기는 확장성, 성능, 비용, 가용성 및 보안과 같은 비기능 요구 사항에 의해 종종 결정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 패턴은 한 번에 한 문제에 집중함으로써 복잡성과 위험을 줄이는 것을 제안하며, 다른 측면은 일시적으로 무시하는 것을 시사합니다. 또한 동일한 계산에 대한 여러 구성을 보장하는 실용적인 방법을 제안합니다. 각각이 몇 가지 특정 요구 사항을 해결하는 테스트 자동화 또는 다른 환경에서의 작업일 수 있습니다.
 
@@ -59,7 +102,18 @@ Hexagonal Architecture 패턴은 소프트웨어에서 관심사를 분리하는
 
 # "블루 존" 샘플 애플리케이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플리케이션 README에서:
 
@@ -69,7 +123,18 @@ Hexagonal Architecture 패턴은 소프트웨어에서 관심사를 분리하는
 
 "Hexagonal Architecture Explained" 책은 4.9장 "개발 순서는 무엇인가?"에서 합리적인 권장 사항을 제공합니다. "테스트부터 테스트"로 시작하고 더 나아가는 것이 타당합니다. 그러나 대부분의 소프트웨어 엔지니어들이 일반적으로 하는 것처럼, 저는 Java 코드를 Wing으로 번역하는 것부터 시작했습니다. 일부분의 시간을 할애하여 지금까지 외부 인터페이스를 시뮬레이션하면서 로컬에서 Wing에서 작동하는 것을 얻었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술적으로는 작동했지만, 결과 코드는 응용 프로그램의 크기와 관련하여 너무 크고, 심지어 저에게도 이해하기 어려웠으며, 미적으로 매력이 없었으며, 완전히 Wing 언어와 클라우드 환경의 특성과 부합하지 않았습니다. 그 후, 나는 Wing 언어와 클라우드 환경의 특정 사항에 적합한 핵심 패턴 아이디어의 가장 의미있는 표현을 찾기 위해 두 주간의 리팩토링 주기에 착수했습니다.
 
@@ -79,7 +144,18 @@ Hexagonal Architecture 패턴은 소프트웨어에서 관심사를 분리하는
 
 # 먼저 테스트로 시작하라# Thou Shalt Start with Tests
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 정확하고 최적의 방법은 체계적인 수용 테스트의 연속으로 시작하는 것입니다. 시스템의 아키텍처적으로 중요한 사용 사례에 관한 5.1 장 "헥사고널 아키텍처 설명" 책은 사용 사례 모델링과 헥사고널 아키텍처 간의 깊은 관련성을 자세히 다룹니다. 주의 깊게 읽어볼 가치가 있습니다.
 
@@ -90,7 +166,18 @@ Hexagonal Architecture 패턴은 소프트웨어에서 관심사를 분리하는
 
 차 운전사 작용자의 경우, 주요 사용 사례는 "티켓 구매"일 것이며, 주차 담당자의 경우, 주요 사용 사례는 "차량 확인"일 것입니다. 이러한 사용 사례의 구현을 통해 보조 외부 작용자와 나머지 요소를 식별할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 분석에서 나온 예비 사용 사례 모델은 아래에 제시되었습니다:
 
@@ -100,7 +187,18 @@ Hexagonal Architecture 패턴은 소프트웨어에서 관심사를 분리하는
 
 개발을 시작하기 전에 사용 사례 수락 기준을 명시하는 것은 내부 리팩터링을 수행하면서 시스템 안정성을 보장하는 매우 효과적인 기술입니다. "블루 존" 애플리케이션의 경우, 사용 사례 수락 테스트는 자바 프레임워크인 Cucumber를 사용하여 Gherkin 언어로 지정되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 Wing을 위한 Cucumber 프레임워크는 당연한 이유로 존재하지 않습니다 - Wing은 매우 젊은 언어이기 때문입니다. JavaScript용 공식 Cucumber가 존재하고 TypeScript Cucumber 튜토리얼도 있지만, 이 기술에 대한 조사를 연기하고 직접 Wing에서 몇 가지 테스트를 재현해보기로 결정했습니다.
 
@@ -166,7 +264,18 @@ test "Buy ticket for 2 hours; no error" {
 
 진정한 읽기 쉬운 텍스트는 아니지만 충분히 가깝고 이해하기 어렵지 않습니다. 여기서 해독할 사항이 꽤 많이 있습니다. 하나씩 진행해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테스트 구조
 
@@ -176,10 +285,21 @@ test "Buy ticket for 2 hours; no error" {
 
 테스트 소스의 다음 세 줄에서는 preflight Configurator 객체를 할당하고 이를 통해 두 개의 포인터를 추출합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-- _testFixture는 테스트 설정을 담당하는 사전 점검 클래스를 가리킵니다.
-- _systemUnderTest는 운전자를 위한 주 포트 인터페이스를 가리킵니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+- \_testFixture는 테스트 설정을 담당하는 사전 점검 클래스를 가리킵니다.
+- \_systemUnderTest는 운전자를 위한 주 포트 인터페이스를 가리킵니다.
 
 다음으로, 우리는 개별 단계를 구현하는 inflight BuyTicketTestSteps 객체를 할당합니다. 이 객체는 대부분 보이지 않는 언더스코어 이름을 갖게 되며, 이는 전체 테스트 가독성을 향상시킵니다. 이는 일반 목적의 호스트 언어에 내장된 도메인 특화 언어(DSL)를 개발하는 일반적인 기술입니다.
 
@@ -187,7 +307,18 @@ test "Buy ticket for 2 hours; no error" {
 
 물론, 단계가 구현되지 않았다면 테스트는 컴파일에도 통과하지 않을 것입니다. 진행하기 위해, 우리는 BuyTicketTestSteps 클래스 내부를 살펴봐야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테스트 단계 클래스
 
@@ -206,13 +337,13 @@ pub class BuyTicketTestSteps extends base.TestStepsBase {
     inflight var _currentBoughtTicket: ports.Ticket?;
 
     new(
-        testFixture: ports.ForAdministering, 
+        testFixture: ports.ForAdministering,
         systemUnderTest: ports.ForParkingCars
     ) {
         super(testFixture);
         this._systemUnderTest = systemUnderTest;
     }
-    
+
     inflight new() {
         this._currentBoughtTicket = nil;
         this._currentAvailableRates = Set<ports.Rate>[];
@@ -294,9 +425,20 @@ pub class BuyTicketTestSteps extends base.TestStepsBase {
 }
 ```
 
-이 클래스는 데이터를 파싱하여 구체적인 애플리케이션 데이터 구조로 통일하고, 테스트Fixture 또는_systemUnderTest 객체로 데이터를 보내고, 중간 결과를 유지하며, 적절한 경우 예상 대비 실제 결과를 비교합니다.
+이 클래스는 데이터를 파싱하여 구체적인 애플리케이션 데이터 구조로 통일하고, 테스트Fixture 또는\_systemUnderTest 객체로 데이터를 보내고, 중간 결과를 유지하며, 적절한 경우 예상 대비 실제 결과를 비교합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 유의해야 할 유일한 구체적인 사항은 프리플라이트 및 인플라이트 정의를 올바르게 처리하는 것입니다. 이를 올바르게 만들도록 도와준 Cristian Pallares에게 감사드립니다.
 
@@ -308,7 +450,18 @@ pub class BuyTicketTestSteps extends base.TestStepsBase {
 
 각각을 좀 더 자세히 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 파서
 
@@ -324,7 +477,7 @@ pub class Util {
     pub inflight static Rates(sRates: Array<Array<str>>): Set<ports.Rate> {
         return unsafeCast(
             structx.fromFieldArray(
-                sRates, 
+                sRates,
                 ports.Rate.schema()
             )
         );
@@ -335,7 +488,7 @@ pub class Util {
    ): ports.BuyTicketRequest {
         let requestSet: Set<ports.BuyTicketRequest> = unsafeCast(
             structx.fromFieldArray(
-                sRequest, 
+                sRequest,
                 ports.BuyTicketRequest.schema()
             )
         );
@@ -347,8 +500,8 @@ pub class Util {
    ): Set<ports.Ticket> {
         return unsafeCast(
             structx.fromFieldArray(
-                sTickets, 
-                ports.Ticket.schema(), 
+                sTickets,
+                ports.Ticket.schema(),
                 datetimex.DatetimeFormat.YYYYMMDD_HHMM
             )
         );
@@ -363,7 +516,7 @@ pub class Util {
    ): ports.PayRequest {
         let requestSet: Set<ports.PayRequest> = unsafeCast(
             structx.fromFieldArray(
-                sRequest, 
+                sRequest,
                 ports.PayRequest.schema()
             )
         );
@@ -375,13 +528,13 @@ pub class Util {
    ): ports.CheckCarRequest {
         let requestSet: Set<ports.CheckCarRequest> = unsafeCast(
             structx.fromFieldArray(
-                sRequest, 
+                sRequest,
                 ports.CheckCarRequest.schema()
             )
         );
         return requestSet.toArray().at(0);
     }
-    
+
     pub inflight static CheckCarResult(
      sResult: Array<Array<str>>
    ): ports.CheckCarResult {
@@ -395,7 +548,7 @@ pub class Util {
 
     pub inflight static DateTime(dateTime: str): std.Datetime {
         return datetimex.parse(
-            dateTime, 
+            dateTime,
             datetimex.DatetimeFormat.YYYYMMDD_HHMM
         );
     }
@@ -412,7 +565,18 @@ pub class Util {
 
 이 클래스는 알고리즘적인 관점에서는 정교하지 않지만, 아주 중요한 아키텍처 결정을 반영하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 시스템 Ports에 대한 의존성을 src\\application\ports 폴더에 위치한 것으로 발표합니다. "헥사고널 아키텍처 설명" 책 4.8장인 "내 파일을 어디에 넣어야 하나요?"는 명확한 문장을 제시합니다.
 
@@ -422,7 +586,18 @@ pub class Util {
 
 둘째, 클래스 이름이 Util인 클래스의 모든 public static inflight 메서드를 고객 모듈이 직접 액세스할 수 있는 특정 Wing 모듈 및 import 기능을 활용하여 코드 가독성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Third, it uses two Wing Standard Library extensions, datetimex, and structx, which were developed to compensate for some features I needed. These extensions were part of my “In Search for Winglang Middleware” project endor.w, which I reported about here, here, and here.
 
@@ -432,7 +607,18 @@ Justification for these extensions will be clarified when we look at the core ar
 
 Traditional strongly typed Object-Oriented languages like Java advocate encapsulating all domain elements as objects. If I followed this advice, the Ticket object would look something like this:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 pub inflight class Ticket {
@@ -443,7 +629,7 @@ pub inflight class Ticket {
   pub endingDateTime: std.Datetime;
   pub price: num;
   pub paymentId: str;
-  
+
   new (ticketCode: str, ...) {
     this.ticketCode = ticketCode;
     ...
@@ -484,8 +670,18 @@ pub inflight class Ticket {
 
 Wing에서는 Wing 표준 라이브러리에 소규모 조정을 가하여, 이러한 모든 접근 방식이 비효율적이고 불필요하다는 것이 입증되었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 티켓 데이터 구조는 다음과 같이 정의될 수 있습니다:
 
@@ -507,7 +703,18 @@ pub struct Ticket {                 //객체 데이터를 나타내는 데이터
 
 "Hexagonal Architecture Explained" 책의 권장에 따라 포트 네이밍은 `ActorName`에 대해 For`ActorName` 규칙을 따릅니다. 여기 주차 차량 외부 엑터를 위해 정의된 내용입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```rust
 pub struct BuyTicketRequest {  // 차 티켓을 구매하는 데 필요한 입력 데이터:
@@ -555,8 +762,18 @@ ForParkingCars는 Wing 인터페이스로 정의됩니다. 원래의 "Blue Zone"
 
 강력한 객체 캡슐화는 validate() 메소드를 BuyTicketRequest 클래스에 포함시키는 것을 권장하지만, 여기서 채택된 개방형 불변 데이터 구조와 같은 상황에서는 관련 use case 구현에 해당 로직을 포함시키는 것이 좋습니다. 그 반면, 포트 사양에 요청 유효성 검사 로직을 포함하면 너무 많은 구현 세부 사항이 너무 일찍 들어가게 됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 관리 포트 사용법
 
@@ -630,7 +847,18 @@ bring "./ForPaying.w" as forPaying;
 
 이제 우리는 한 단계 더 깊이 파고들어 애플리케이션 로직 구현을 살펴봐야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구현 세부 내용
 
@@ -667,7 +895,18 @@ public class ForParkingCarsBackend implements ports.ForParkingCars {
 
 이 클래스는 src/outside/backend 폴더에 위치해 있으며 직접적인 함수 호출에 적합한 ports.ForParkingCars 인터페이스의 구현을 제공합니다. 두 가지 추가 보조 포트인 ports.ForStoringData 및 ports.ForObtainingTime을 전제로하며 실제 구현은 두 Use Case 구현에 위임됩니다: BuyTicket 및 GetAvailableRates. BuyTicket Use Case 구현에 핵심 시스템 로직이 포함되어 있으므로 해당 부분을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 티켓 구매 사용 사례
 
@@ -737,7 +976,7 @@ pub 클래스 BuyTicket {
             paymentId: paymentId
         };
     }
-    
+
     /**
      * minutes = (euros * minutesPerHour) / eurosPerHour
      * endingDateTime = startingDateTime + minutes
@@ -761,7 +1000,18 @@ pub 클래스 BuyTicket {
 - 티켓 레코드 생성
 - 데이터베이스에 티켓 레코드 저장
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Implementing Use Cases as inflight functions is essential because all Wing event handlers are inflight functions. While direct function calls are handy for local testing, they will mostly be HTTP REST or GraphQL API calls in a real deployment.
 
@@ -771,7 +1021,18 @@ The validation of the BuyTicketRequest is actually handled by a utility class wi
 
 In line with suggestions from the "Hexagonal Architecture Explained" book, this is accomplished within a Configurator class as shown below:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import util;
@@ -801,7 +1062,7 @@ class Configurator extends outside.BlueZoneApiFactory {
         let apiType = this._getApiType(programType, mode);
         this._apiFactory = this._getApiFactory(
             name,
-            mode, 
+            mode,
             apiType,
             mockService,
             mockService,
@@ -849,13 +1110,13 @@ class Configurator extends outside.BlueZoneApiFactory {
         if (target.includes("sim")) {
             return ApiType.DIRECT_CALL;
         }
-        return ApiType.HTTP_REST;        
+        return ApiType.HTTP_REST;
     }
 
     _getApiFactory(name, mode, apiType, dataService, paymentService, dateTimeService) {
         let directCall = new outside.DirectCallApiFactory(
-            dataService, 
-            paymentService, 
+            dataService,
+            paymentService,
             dateTimeService
         );
         if (apiType === ApiType.DIRECT_CALL) {
@@ -890,7 +1151,18 @@ In this implementation, a special MockDataStore object implements all three Seco
 
 The main responsibility of the Configurator class is to determine which type of API should be used:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 직접 호출
 - 로컬 HTTP REST
@@ -904,7 +1176,18 @@ The main responsibility of the Configurator class is to determine which type of 
 
 이렇게 코드 재사용 수준을 달성한 것은 이번이 처음입니다. 결과적으로 코드 구조 리팩토링을 수행할 때 대부분 로컬 직접 호출 구성을 실행하며, 변경 없이 원격 테스트 및 프로덕션 환경에서 실행될 것을 확신합니다. 이는 Wing 클라우드 지향 프로그래밍 언어와 헥사고날 아키텍처가 정말로 우수한 조합임을 증명합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 큰 그림
 
@@ -970,7 +1253,18 @@ The main responsibility of the Configurator class is to determine which type of 
 └── tsconfig.json
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트의 응용 프로그램 논리적으로는 작지만 이미 구조를 제어하는 데 충분한 도전 과제를 제기합니다. 현재 버전은 다음과 같은 여러 기준 사이의 합리적인 균형을 이루려고 노력했습니다:
 
@@ -987,17 +1281,39 @@ src/: 41
 엄격한 가치 대 물건 비율: 16*100/55 = 29.09%
 확장된 가치 대 물건 비율: (15+19)*100/42 = 74.55%
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 크게 할지 작게 할지? 좋은 것일지 나쁜 것일지? 지금 당장은 확실히 말하기 어렵습니다. 초기 인상은 숫자가 건강하다는 것입니다. 더 근거 있는 결론을 내기 위해서는 추가적인 연구와 실험이 필요합니다. 실제 제품 시스템은 상당히 많은 테스트가 필요할 것입니다.
 
 인지 부담 관점에서, 43개의 파일은 인간의 커뮤니케이션 채널과 단기 기억의 유명한 7 ± 2 제한을 초과하는 많은 숫자입니다. 조직이 필요합니다. 현재 버전에서 한 수준에서의 최대 파일 수는 8개로 제한 내에 있습니다.
 
-제시된 계층 다이어그램은 실제 그래프 이미지를 부분적으로만 반영합니다. bring 문에 의한 파일 간 종속성이 보이지 않습니다. 또한 결과적인 패키지 크기에 영향을 미치는 외부 종속성을 반영하는 __node_files__ 폴더도 빠졌습니다.
+제시된 계층 다이어그램은 실제 그래프 이미지를 부분적으로만 반영합니다. bring 문에 의한 파일 간 종속성이 보이지 않습니다. 또한 결과적인 패키지 크기에 영향을 미치는 외부 종속성을 반영하는 **node_files** 폴더도 빠졌습니다.
 
 간단히 말하면, 도구 및 측정 방법론에 대한 추가 투자 없이는 그림이 부분적일 뿐입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 여전히 원하는 방향을 몇 가지 제시할 수 있습니다: 가능한 한 직접 가치를 창출하는 자산들과 이를 작동하게 만드는 데 필요한 지원 요소는 최소한으로 다루고 싶습니다. 이상적으로, 건강한 가치 대 지원물 비율은 언어 및 라이브러리 지원에서 나올 것입니다. 자동 코드 생성, 생성적 AI에 의해 수행되는 것을 포함하여 타이핑을 줄이지만 전반적인 인지 부담은 줄일 것입니다.
 
@@ -1007,7 +1323,18 @@ src/: 41
 
 ![클래스 다이어그램](/assets/img/2024-06-22-PortedtoCloudwithWinglangPartOne_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이용자들과 주차 감독관 주요 캐릭터와 BuyTicket, CheckCar 사용 케이스와는 이름이 다르다는 것을 주목해주세요. 이것은 실수가 아닙니다. 주요 포트 인터페이스의 이름은 특정 사용 케이스에서 주요 캐릭터 역할을 반영해야 합니다. 이러한 명명에 대한 자동적인 규칙은 없습니다. 선택된 이름이 직관적이기를 희망합니다.
 
@@ -1016,7 +1343,18 @@ src/: 41
 또한, 이것 또한 실수가 아닙니다. 주요 인터페이스와 해당 사용 케이스 구현 사이의 구체적인 연결은 설정에 따라 다르며 아래 UML 클래스 다이어그램에 반영됩니다:
 ![다이어그램](/assets/img/2024-06-22-PortedtoCloudwithWinglangPartOne_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 클래스 다이어그램에 따르면 구성자(Configurator)가 사용할 IBlueZoneApiFactory 구현체를 결정합니다. DirectApiCallFactory는 로컬 테스트용이며 HttpRestApiFactory는 HTTP를 통한 로컬 및 원격 테스트 및 프로덕션 배포용입니다.
 
@@ -1024,7 +1362,18 @@ src/: 41
 
 ![이미지](/assets/img/2024-06-22-PortedtoCloudwithWinglangPartOne_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 클라우드 리소스 다이어그램은 Wing 컴파일레이션 결과를 AWS 대상 플랫폼으로 반영한 것입니다. UML 클래스 다이어그램과는 매우 다르며, 다양한 종류의 다이어그램이 함께 동작하여 서로 보완하는 역할을 한다는 결론을 내리게 되었습니다. 클라우드 리소스 다이어그램은 비용, 성능, 신뢰성, 복구력, 보안과 같은 시스템의 운영 측면을 이해하고 제어하는 데 중요합니다.
 
@@ -1034,7 +1383,18 @@ src/: 41
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "최근 출간된 "Hexagonal Architecture Explained" 책에 소개된 "Blue Zone" 애플리케이션을 Java에서 Wing으로 이식하는 경험은 다음과 같은 임시 결론을 이끌어 냈습니다.
 
@@ -1048,7 +1408,18 @@ src/: 41
 
 이 출판물을 준비하는 동안 초안을 향상시키고 품질을 보장하기 위해 몇 가지 핵심 도구를 활용하였습니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 초안은 노션의 무료 구독을 통해 조직화할 수 있는 기능을 활용하여 아이디어를 구조화하고 발전시했습니다.
 
@@ -1058,7 +1429,18 @@ src/: 41
 
 UML 클래스 다이어그램은 PlantText UML 온라인 도구의 무료 버전을 사용하여 생성되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 단계 클래스(TestSteps)에서 사전 및 비행 정의를 올바르게 처리하는 데 Cristian Pallares의 도움이 중요했습니다.
 

@@ -3,13 +3,12 @@ title: "안녕하세요 안드로이드 스튜디오에서 기본 계산기 앱�
 description: ""
 coverImage: "/assets/img/2024-05-18-CreateaBasicCalculatorAppinAndroidStudio_0.png"
 date: 2024-05-18 15:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-CreateaBasicCalculatorAppinAndroidStudio_0.png
 tag: Tech
 originalTitle: "Create a Basic Calculator App in Android Studio"
 link: "https://medium.com/@nikhil725051/create-a-basic-calculator-app-in-android-studio-5d6aec52b159"
 ---
-
 
 <img src="/assets/img/2024-05-18-CreateaBasicCalculatorAppinAndroidStudio_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@nikhil725051/create-a-basic-calculator-app-in-android
 
 단계 1: 프로젝트 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 안드로이드 스튜디오를 실행하고 적절한 이름과 패키지로 새로운 안드로이드 프로젝트를 생성하세요.
 - 프로젝트에 적합한 형태 요소와 최소 API 레벨을 선택하세요.
@@ -31,7 +41,18 @@ link: "https://medium.com/@nikhil725051/create-a-basic-calculator-app-in-android
 
 activity_main.xml
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -129,7 +150,7 @@ activity_main.xml
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divideButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-```  
+```
 
 ```java
 package com.example.simplecalculator;
@@ -255,7 +276,18 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 calculateSquareRoot 메소드는 첫 번째 EditText 뷰에서 입력 숫자를 가져와 Math.sqrt 함수를 사용하여 제곱근을 계산하고 결과를 TextView에 소수점 둘째 자리까지 표시합니다.
 

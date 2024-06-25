@@ -3,16 +3,14 @@ title: "데이터 안전하게 보호되고 있나요 솔루션 소개 명칭 Lo
 description: ""
 coverImage: "/assets/img/2024-05-20-IsYourDataSafeIntroducingaSolutionItsCalledLockdown_0.png"
 date: 2024-05-20 17:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-IsYourDataSafeIntroducingaSolutionItsCalledLockdown_0.png
 tag: Tech
 originalTitle: "Is Your Data Safe? Introducing a Solution (It’s Called Lockdown)"
 link: "https://medium.com/@akileshjayaraman31/is-your-data-safe-introducing-a-solution-its-called-lockdown-a2052d47354a"
 ---
 
-
-
-![Lockdown](/assets/img/2024-05-20-IsYourDataSafeIntroducingaSolutionItsCalledLockdown_0.png)  
+![Lockdown](/assets/img/2024-05-20-IsYourDataSafeIntroducingaSolutionItsCalledLockdown_0.png)
 
 소개:  
 오늘날의 디지털 환경에서는 민감한 데이터를 보호하는 것이 이전보다 더 중요합니다. “Lockdown”은 귀하의 소중한 정보를 보호하기 위해 설계된 강력하면서도 사용자 친화적인 데이터 암호화 도구를 소개합니다. Lockdown을 사용하여 비즈니스에서 고객 기록을 처리하거나 개인 파일을 보호하는 경우에도 데이터를 쉽게 암호화하여 기밀성과 무결성을 보장할 수 있습니다.
@@ -22,8 +20,18 @@ link: "https://medium.com/@akileshjayaraman31/is-your-data-safe-introducing-a-so
 - 견고한 암호화: Linux 통합 키 설정 (LUKS) 표준을 사용하여 디스크 암호화에 강력한 보안을 제공합니다.
 - 사용하기 쉬운 인터페이스: Lockdown은 간단한 명령줄 인터페이스를 제공하여 암호화 및 복호화 작업을 직관적이고 쉽게 수행할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용 사례:
 
@@ -36,7 +44,18 @@ Lockdown은 오픈 소스로 GitHub에서 제공됩니다. [GitHub 저장소]를
 
 계속해서 주목해 주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 'Lockdown'을 완벽하게 만들어 강력하고 사용자 친화적인 데이터 암호화 도구로 발전시키고 있습니다. 개발이 진행됨에 따라 블로그에서 업데이트와 튜토리얼을 공유할 예정입니다.
 
@@ -48,7 +67,18 @@ Lockdown은 사용자가 데이터를 쉽고 효과적으로 암호화하여 무
 GitHub 저장소:
 GitHub에서 Lockdown을 살펴보세요: [GitHub 저장소]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작성자 소개:
 

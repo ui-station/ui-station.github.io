@@ -3,13 +3,12 @@ title: "BERT 코드와 함께하는 완벽 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-20-ACompleteGuidetoBERTwithCode_0.png"
 date: 2024-05-20 20:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ACompleteGuidetoBERTwithCode_0.png
 tag: Tech
 originalTitle: "A Complete Guide to BERT with Code"
 link: "https://medium.com/towards-data-science/a-complete-guide-to-bert-with-code-9f87602e4a11"
 ---
-
 
 ## 역사, 아키텍처, 사전 훈련 및 미세 조정
 
@@ -23,7 +22,18 @@ link: "https://medium.com/towards-data-science/a-complete-guide-to-bert-with-cod
 
 # 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 버트(Bidirectional Encoder Representations from Transformers)는 구글 AI Language에서 개발한 대규모 언어 모델(Large Language Model, LLM)로, 자연어 처리(Natural Language Processing, NLP) 분야에서 중요한 발전을 이루고 있습니다. 최근 몇 년간 많은 모델이 버트에 영감을 받아 발전하거나 직접적인 개선을 하였는데, RoBERTa, ALBERT, DistilBERT 등이 대표적입니다. 최초의 버트 모델은 OpenAI의 Generative Pre-trained Transformer (GPT) 이후 빠르게 공개되었으며, 둘 다 그 전년에 제안된 Transformer 아키텍처에 기반을 두었습니다. GPT는 자연어 생성(Natural Language Generation, NLG)에 초점을 맞추었지만, 버트는 자연어 이해(Natural Language Understanding, NLU)에 우선순위를 두었습니다. 이 두 개발은 NLP의 지형을 재편하며 기계 학습의 진전에 주목할 만한 이정표로 자리 잡았습니다.
 
@@ -33,7 +43,18 @@ link: "https://medium.com/towards-data-science/a-complete-guide-to-bert-with-cod
 
 1 — 버트의 역사 및 주요 기능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2 - 아키텍처 및 사전 훈련 목표
 
@@ -43,7 +64,18 @@ link: "https://medium.com/towards-data-science/a-complete-guide-to-bert-with-cod
 
 5 - 더 많은 독해
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1 — BERT의 역사 및 주요 기능
 
@@ -56,7 +88,18 @@ BERT 모델은 다음 네 가지 주요 기능에 의해 정의될 수 있습니
 
 이러한 기능 각각은 논문의 저자들이 만든 설계 선택사항이며, 이 모델이 생성된 시기를 고려하여 이해할 수 있습니다. 다음 섹션에서는 이러한 기능 각각을 살펴보고, 이러한 기능이 BERT의 동시대인 Transformer와 GPT에서 영감을 받았거나 그들을 개선하기 위한 것임을 보여줄 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1.1 — 인코더 전용 아키텍처
 
@@ -67,10 +110,21 @@ BERT 모델은 다음 네 가지 주요 기능에 의해 정의될 수 있습니
 - 목표: 입력 시퀀스에 대한 새로운 출력 시퀀스 예측
 - 개요: 트랜스포머의 디코더 블록은 인코더에 제공된 입력을 바탕으로 출력 시퀀스를 생성하는 역할을 합니다. 디코더 전용 모델은 인코더 블록을 완전히 생략하고 여러 디코더를 단일 모델에 쌓아 올려 생성됩니다. 이러한 모델은 입력으로 프롬프트를 받아들이고, 다음 가장 확률이 높은 단어를 하나씩 예측함으로써 응답을 생성하는 작업으로 알려진 Next Token Prediction (NTP)이라는 작업을 수행합니다. 그 결과, 디코더 전용 모델은 대화형 챗봇, 기계 번역 및 코드 생성과 같은 NLG 작업에서 뛰어난 성능을 발휘합니다. 이러한 종류의 모델은 ChatGPT에서 구동되는 디코더 전용 모델 (GPT-3.5 및 GPT-4)의 광범위한 사용으로 인해 일반 대중에게 가장 익숙할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인코더 전용 모델:
-  
+
 - 목표: 입력 시퀀스 내의 단어에 대한 예측 수행
 - 개요: Transformer의 인코더 블록은 입력 시퀀스를 수용하고 각 단어(또는 좀 더 구체적으로, 각 토큰)에 대한 풍부한 숫자 벡터 표현을 생성하는 역할을 합니다. 인코더 전용 모델은 디코더를 생략하고 여러 Transformer 인코더를 쌓아 하나의 모델을 생성합니다. 이러한 모델은 프롬프트를 수용하지 않고, 예측을 수행할 입력 시퀀스(예: 시퀀스 내의 빠진 단어를 예측)를 받습니다. 인코더 전용 모델은 새로운 단어 생성을 위해 디코더를 사용하지 않기 때문에 GPT와 같이 대화형 챗봇 애플리케이션에 사용되지 않습니다. 대신, 인코더 전용 모델은 대부분 NLU 작업인 Named Entity Recognition (NER) 및 감성 분석에 주로 사용됩니다. 인코더 블록에서 생성된 풍부한 벡터 표현은 BERT가 입력 텍스트를 심층적으로 이해하는 데 기여합니다. BERT 저자들은 이 구조적 선택이 BERT의 성능을 향상시킬 것이라고 주장했으며, 특히 디코더 전용 구조는 GPT와 비교하여 BERT의 성능을 향상시킬 것이라고 기술했습니다.
 
@@ -78,8 +132,18 @@ Transformer, GPT 및 BERT를 위한 아키텍처 다이어그램:
 
 지금까지 논의한 세 모델에 대한 아키텍처 다이어그램이 아래에 나와 있습니다. 이는 원본 Transformer 논문 "Attention is All You Need" [2]의 아키텍처 다이어그램을 적응하여 작성되었습니다. 모델의 인코더 또는 디코더 블록 수는 N으로 표시됩니다. 원래 Transformer에서 인코더와 디코더 각각은 쌓인 6개의 인코더 및 디코더 블록으로 이루어져 있기 때문에, N은 각각 6입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-ACompleteGuidetoBERTwithCode_0.png)
 
@@ -89,8 +153,18 @@ GPT은 BERT의 개발에 여러 가지 방식으로 영향을 미쳤습니다. �
 
 아날로지:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간략한 비유를 만들어보겠습니다. 감성 분석 작업을 생각해보세요. 여기서 목표는 표현된 감정에 기반하여 텍스트를 긍정 또는 부정으로 분류하는 것입니다. 예를 들어, 어떤 영화 리뷰에서 "이 영화를 사랑했다"라는 텍스트는 긍정으로 분류되고, "이 영화를 싫어했다"라는 텍스트는 부정으로 분류될 것입니다. 전통적인 언어 모델링 접근 방식에서는 이 작업에 특화된 새로운 아키텍처를 일반적으로 처음부터 학습할 것입니다. 이것은 영화 리뷰를 보여주는 것으로 영어를 처음부터 가르치는 것과 같다고 생각할 수 있습니다. 물론, 이것은 느리고 비용이 많이 들며 많은 학습 예제가 필요합니다. 게다가, 그 결과로 얻는 분류기는 여전히 이 한 가지 작업에만 능숙할 것입니다. 대조적으로, 사전 훈련 접근 방식에서는 범용 모델을 가져와서 이를 감성 분석 작업에 대해 미세 조정합니다. 이것은 이미 영어에 능숙한 사람에게 현재 작업에 익숙해지도록 모자란 수의 영화 리뷰를 보여주는 것으로 생각할 수 있습니다. 아마도 두 번째 접근 방식이 훨씬 더 효율적하다는 것이 직관적일 것입니다.
 
@@ -98,19 +172,41 @@ GPT은 BERT의 개발에 여러 가지 방식으로 영향을 미쳤습니다. �
 
 사전 훈련 개념은 OpenAI에 의해 발명된 것이 아니며, 그 이전 몇 년 동안 다른 연구자들에의해 탐구되어왔습니다. 한 가지 주목할만한 예는 Allen Institute의 연구자들이 개발한 ELMo 모델(Embeddings from Language Models)입니다. 이전 시도에도 불구하고, OpenAI의 큰 논문에서처럼 다른 연구자들은 사전 훈련의 효과를 명백하게 입증하지 못했습니다. 그들 자신의 말에 따르면, 팀은 이 발견으로 사전 훈련 패러다임을 앞으로의 언어 모델링에서 우세한 접근 방식으로 확립시켰습니다. 이 추세와 일치하도록, BERT 저자들도 사전 훈련 접근 방식을 완전히 채택했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1.3 — 모델 파인튜닝
 
 파인튜닝의 장점:
 
-파인튜닝은 오늘날 흔한 일로, 이러한 접근 방식이 주목받기 전 얼마나 최신인지 쉽게 간과하기 쉽습니다. 2018년 이전까지는 각기 다른 NLP 작업을 위해 새로운 모델 아키텍처를 도입하는 것이 일반적했습니다. 훈련을 사전에 시작함으로써 신규 모델 개발에 필요한 훈련 시간과 컴퓨팅 비용이 급격히 감소했을 뿐만 아니라 필요한 훈련 데이터의 양도 줄어들었습니다. 언어 모델을 처음부터 완전히 재설계하고 재훈련하는 대신 제네릭 모델인 GPT를 소량의 작업별 데이터로 파인튜닝함으로써 해당 시간을 분수로 줄일 수 있습니다. 
+파인튜닝은 오늘날 흔한 일로, 이러한 접근 방식이 주목받기 전 얼마나 최신인지 쉽게 간과하기 쉽습니다. 2018년 이전까지는 각기 다른 NLP 작업을 위해 새로운 모델 아키텍처를 도입하는 것이 일반적했습니다. 훈련을 사전에 시작함으로써 신규 모델 개발에 필요한 훈련 시간과 컴퓨팅 비용이 급격히 감소했을 뿐만 아니라 필요한 훈련 데이터의 양도 줄어들었습니다. 언어 모델을 처음부터 완전히 재설계하고 재훈련하는 대신 제네릭 모델인 GPT를 소량의 작업별 데이터로 파인튜닝함으로써 해당 시간을 분수로 줄일 수 있습니다.
 
 작업에 따라서 분류 헤드를 수정하여 다른 수의 출력 뉴런을 포함시킬 수 있습니다. 이는 감정 분석과 같은 분류 작업에 유용합니다. 예를 들어 BERT 모델의 원하는 출력이 리뷰가 긍정인지 부정인지 예측하는 것이라면, 헤드를 두 개의 출력 뉴런이 있는 형태로 변경할 수 있습니다. 각각의 활성화는 리뷰가 긍정인지 부정인지일 확률을 나타냅니다. 10 클래스로 구성된 다중 분류 작업의 경우, 헤드를 10개의 뉴런을 가진 출력 레이어로 변경할 수 있습니다. 이렇게 함으로써 BERT를 더 다양하게 활용할 수 있어 여러 하류 작업에 기본 모델이 사용될 수 있습니다.
 
 BERT의 파인튜닝:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BERT은 GPT의 발자취를 따르며 사전 훈련/미세 조정 접근 방식을 채택했습니다. 구글은 BERT의 두 가지 버전을 출시했는데, Base와 Large로 하드웨어 제약에 따라 모델 크기를 유저에게 유연하게 제공했습니다. 양쪽 모델 모두 많은 TPUs(텐서 처리 장치)에서 약 4일이 걸렸다고 하는데, BERT Base는 16개의 TPUs에서 훈련되었고 BERT Large는 64개의 TPUs에서 훈련되었습니다. 대부분의 연구자, 취미로 연구하는 사람들 및 산업 실무자들에게는 이 수준의 훈련이 현실적이지 않을 수 있습니다. 그래서 어떤 특정 작업에 기초 모델을 몇 시간 동안 미세 조정하는 아이디어는 훨씬 더 매력적인 대안입니다. 원래 BERT 아키텍처는 다양한 작업과 데이터셋에 걸쳐 수천 번의 미세 조정 이터레이션을 거쳤는데, 이 중 많은 것들이 Hugging Face와 같은 플랫폼에서 공개적으로 다운로드할 수 있습니다.
 
@@ -120,7 +216,18 @@ BERT은 GPT의 발자취를 따르며 사전 훈련/미세 조정 접근 방식�
 
 양방향성은 아마도 BERT의 가장 중요한 특징인데, NLU 작업에서 BERT의 높은 성능의 중요한 이유이며, 또한 모델의 인코더 전용 아키텍처의 주요 동기입니다. Transformer 인코더의 self-attention 메커니즘은 양방향 컨텍스트를 계산하지만, 이와 같은 것을 할 수 없는 디코더는 단방향 컨텍스트를 생산합니다. BERT 저자들은 GPT의 이 양방향성 부족으로 인해 BERT만큼의 언어 표현 깊이를 달성하지 못한다고 주장했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 양방향성 정의하기:
 
@@ -130,7 +237,18 @@ BERT은 GPT의 발자취를 따르며 사전 훈련/미세 조정 접근 방식�
 
 ![이미지]("/assets/img/2024-05-20-ACompleteGuidetoBERTwithCode_1.png")
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지 설명:
 
@@ -140,7 +258,18 @@ GPT의 경우, 목표는 전통적인 NTP 작업을 수행하는 것입니다. �
 
 ## 1.5 — BERT의 한계
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 양방향 모델로서 BERT는 두 가지 주요 단점을 가지고 있습니다:
 
@@ -150,7 +279,18 @@ GPT의 경우, 목표는 전통적인 NTP 작업을 수행하는 것입니다. �
 
 2. 언어 생성 작업에서 성능이 저하됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BERT는 NLU 작업을 해결하기 위해 특별히 설계되었으며, 디코더 및 새로운 시퀀스를 생성하는 능력을 포기하고 인코더 및 입력 시퀀스에 대한 풍부한 이해를 개발하는 것으로 대체했습니다. 결과적으로 BERT는 NER, 감정 분석 등과 같은 NLP 작업 부분에 최적화되어 있습니다. 특히, BERT는 프롬프트를 수용하지 않고 대신 입력 시퀀스를 처리하여 예측을 작성합니다. BERT는 기술적으로 새로운 출력 시퀀스를 생성할 수 있지만, LLM(언어 모델)의 설계적 차이를 인지하고 중대하게 생각해야 합니다. ChatGPT 시대 이후의 LLM들을 생각할 때와 BERT 설계의 현실과의 차이를 인지하는 것이 중요합니다.
 
@@ -160,7 +300,18 @@ BERT는 NLU 작업을 해결하기 위해 특별히 설계되었으며, 디코�
 
 양방향 모델을 훈련시키려면 좌/우 컨텍스트가 모두 예측에 활용되는 작업이 필요합니다. 따라서 저자들은 BERT의 언어 이해를 강화하기 위해 주의 깊게 2가지 사전 훈련 목표를 구성했습니다. 이것들은 Masked Language Model(MLM) 작업과 Next Sentence Prediction(NSP) 작업이었습니다. 각각의 훈련 데이터는 당시 사용 가능한 모든 영어 위키피디아 기사 (25억 단어)와 BookCorpus 데이터셋의 추가 11,038권의 책 (8억 단어)로 구성되었습니다. 초기 데이터는 구체적인 작업에 따라 전처리되어야 했지만, 아래에서 설명한 대로 수행되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2.2 — 마스크된 언어 모델링 (MLM)
 
@@ -170,7 +321,18 @@ MLM 개요:
 
 미세 조정과 사전 훈련 간 불일치 완화 방법:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저자들은 그러나 [MASK] 토큰은 훈련 데이터에만 나타나고 라이브 데이터(추론 시간)에는 나타나지 않기 때문에 사전 훈련과 세부 튜닝 간에 불일치가 있을 것이라고 지적했습니다. 이를 완화하기 위해 모든 마스킹된 단어가 [MASK] 토큰으로 대체되는 것은 아닙니다. 저자들은 대신 다음과 같이 설명합니다:
 
@@ -180,7 +342,18 @@ BERT는 BERT Base 및 BERT Large 모두 최대 512개의 토큰을 입력으로 
 
 ## 2.3 — 다음 문장 예측 (NSP)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개요:
 
@@ -192,7 +365,18 @@ NSP에 대해 사전 학습함으로써, BERT는 채의 흐름에 대한 이해�
 - 추론을 위한 가설-전제 쌍
 - 질문 응답에서 질문-통과 문장 쌍
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BERT에서의 NSP 구현:
 
@@ -202,7 +386,18 @@ BERT의 입력 임베딩:
 
 BERT의 입력 임베딩 과정은 위치 인코딩, 세그먼트 임베딩 및 토큰 임베딩 세 단계로 구성됩니다(아래 다이어그램 참조).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위치 인코딩:
 
@@ -212,7 +407,18 @@ Transformer 모델과 마찬가지로 각 토큰의 임베딩에 위치 정보�
 
 각 토큰이 속한 세그먼트를 인코딩하는 벡터도 추가됩니다. MLM 사전 훈련 작업 또는 다른 NSP 작업(단일 [SEP] 토큰만 있는 경우)의 경우 입력의 모든 토큰은 세그먼트 A에 속하는 것으로 간주됩니다. NSP 작업의 경우, 두 번째 [SEP] 이후의 모든 토큰은 세그먼트 B로 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 토큰 임베딩:
 
@@ -222,7 +428,18 @@ Transformer 모델과 마찬가지로 각 토큰의 임베딩에 위치 정보�
 
 ## 2.5 — 특별 토큰
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 이미지에서 볼 수 있었듯이 입력 시퀀스에는 [CLS] (분류) 토큰이 앞에 추가되었습니다. 이 토큰은 전체 입력 시퀀스의 의미론적 의미를 요약하고, BERT가 분류 작업을 수행하는 데 도움이 됩니다. 예를 들어, 감성 분석 작업에서 최종 층의 [CLS] 토큰은 입력 시퀀스의 감정이 긍정적인지 부정적인지 예측 추출하기 위해 분석될 수 있습니다. [CLS] 및 [PAD] 등은 BERT의 특수 토큰 예시입니다. 여기서 BERT의 특수 토큰은 총 다섯 개 있습니다. 아래에 요약을 제공합니다:
 
@@ -236,7 +453,18 @@ Transformer 모델과 마찬가지로 각 토큰의 임베딩에 위치 정보�
 
 BERT Base와 BERT Large는 아키텍처적으로 매우 유사합니다. 두 모델 모두 WordPiece 토크나이저를 사용하여(따라서 앞에서 설명한 동일한 특수 토큰을 사용) 최대 시퀀스 길이가 512 토큰입니다. BERT의 어휘 크기는 30,522이며, 그 중 약 1,000 개의 토큰은 "사용되지 않은" 상태를 유지합니다. 사용되지 않은 토큰은 사용자가 전체 토크나이저를 다시 훈련하지 않고 사용자 지정 토큰을 추가할 수 있도록 고의로 비워둡니다. 의료 및 법률 용어와 같은 도메인별 어휘와 함께 작업할 때 유용합니다. BERT Base와 BERT Large는 원래 Transformer의 embedding 차원 (d_model)보다 높은 수를 갖습니다. 이는 모델의 어휘에 대해 학습된 벡터 표현의 크기에 해당합니다. BERT Base의 d_model은 768이며, BERT Large의 d_model은 1024입니다(원래 Transformer의 512를 두 배 증가시킨 값).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 모델은 주로 네 가지 범주에서 차이가 있습니다:
 
@@ -249,7 +477,18 @@ BERT Base와 BERT Large는 아키텍처적으로 매우 유사합니다. 두 모
 
 ![이미지](/assets/img/2024-05-20-ACompleteGuidetoBERTwithCode_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3 — 감정 분석을 위한 BERT Feine-Tuning
 
@@ -259,7 +498,18 @@ BERT Base와 BERT Large는 아키텍처적으로 매우 유사합니다. 두 모
 
 세밀 조정의 첫 번째 단계는 특정 작업에 적합한 데이터 집합을 선택하는 것입니다. 이 예제에서는 스탠퍼드 대학이 제공하는 감정 분석 데이터 세트를 사용할 것입니다. 이 데이터 세트에는 인터넷 영화 데이터베이스 (IMDb)에서 가져온 5만 개의 온라인 영화 리뷰가 포함되어 있으며, 각 리뷰는 긍정적 또는 부정적으로 레이블이 지정되어 있습니다. 스탠퍼드 대학 웹사이트에서 데이터 세트를 직접 다운로드할 수도 있고, Kaggle에서 노트북을 만들어 작업 결과를 다른 사람들과 비교할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import pandas as pd
@@ -287,7 +537,18 @@ print('\n클리닝 후:')
 print(df.iloc[1]['review_cleaned'][0:72])
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 Before cleaning:
@@ -307,7 +568,18 @@ df['sentiment_encoded'] = df['sentiment'].\
 df.head()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-ACompleteGuidetoBERTwithCode_5.png" />
 
@@ -317,7 +589,18 @@ df.head()
 
 transformers 라이브러리의 Tokenizer 클래스들은 from_pretrained 메서드를 사용하여 사전 훈련된 토크나이저 모델을 간단히 생성할 수 있는 방법을 제공합니다. 이 기능을 사용하려면: 토크나이저 클래스를 가져와서 인스턴스화하고, from_pretrained 메서드를 호출하고, Hugging Face 모델 저장소에 호스팅된 토크나이저 모델 이름을 나타내는 문자열을 전달하면 됩니다. 또는 토크나이저가 요구하는 어휘 파일이 포함된 디렉토리 경로를 전달할 수도 있습니다. 이 예시에서는 모델 저장소에서 사전 훈련된 토크나이저를 사용할 것입니다. BERT를 다룰 때 주요한 옵션은 네 가지가 있으며, 각각 구글의 사전 훈련 토크나이저 어휘를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - bert-base-uncased — BERT의 작은 버전에 대한 어휘 사전으로 대소문자를 구분하지 않습니다 (예: 토큰 Cat과 cat은 동일하게 처리됩니다)
 - bert-base-cased — BERT의 작은 버전에 대한 어휘 사전으로 대소문자를 구분합니다 (예: 토큰 Cat과 cat은 동일하게 처리되지 않습니다)
@@ -330,7 +613,18 @@ BERT Base와 BERT Large는 동일한 어휘 사전을 사용하므로 bert-base-
 
 대소문자 사용 여부를 선택하는 것은 데이터셋의 특성에 따라 달라집니다. IMDb 데이터셋은 인터넷 사용자가 작성한 텍스트를 포함하고 있으며 대문자 사용에 일관성이 없는 경우가 있을 수 있습니다. 예를 들어 일부 사용자는 예상대로 대문자를 생략하거나 강조를 위해 대문자를 사용할 수 있습니다. 이러한 이유로 대소문자를 무시하고 bert-base-uncased 토크나이저 모델을 사용하기로 결정했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 상황에서는 케이스를 고려하여 성능상의 이점을 볼 수 있습니다. 여기 예제 중 하나는 Named Entity Recognition 작업에서, 즉 사람, 조직, 위치 등을 텍스트에서 식별하는 것이 목표인 경우입니다. 이 경우 대문자의 존재는 단어가 누군가의 이름인지 아니면 장소인지를 식별하는 데 매우 도움이 될 수 있어서, 이 상황에서는 bert-base-cased를 선택하는 것이 더 적절할 수 있습니다.
 
@@ -345,66 +639,83 @@ print(tokenizer)
 
 ```js
 BertTokenizer(
-  name_or_path='bert-base-uncased',
-  vocab_size=30522,
-  model_max_length=512,
-  is_fast=False,
-  padding_side='right',
-  truncation_side='right',
-  special_tokens={
-    'unk_token': '[UNK]',
-    'sep_token': '[SEP]',
-    'pad_token': '[PAD]',
-    'cls_token': '[CLS]',
-    'mask_token': '[MASK]'},
-  clean_up_tokenization_spaces=True),
+  (name_or_path = "bert-base-uncased"),
+  (vocab_size = 30522),
+  (model_max_length = 512),
+  (is_fast = False),
+  (padding_side = "right"),
+  (truncation_side = "right"),
+  (special_tokens = {
+    unk_token: "[UNK]",
+    sep_token: "[SEP]",
+    pad_token: "[PAD]",
+    cls_token: "[CLS]",
+    mask_token: "[MASK]",
+  }),
+  (clean_up_tokenization_spaces = True)
+),
+  (added_tokens_decoder = {
+    0: AddedToken(
+      "[PAD]",
+      (rstrip = False),
+      (lstrip = False),
+      (single_word = False),
+      (normalized = False),
+      (special = True)
+    ),
 
-added_tokens_decoder={
-  0: AddedToken(
-    "[PAD]",
-    rstrip=False,
-    lstrip=False,
-    single_word=False,
-    normalized=False,  
-    special=True),
+    100: AddedToken(
+      "[UNK]",
+      (rstrip = False),
+      (lstrip = False),
+      (single_word = False),
+      (normalized = False),
+      (special = True)
+    ),
 
-  100: AddedToken(
-    "[UNK]",
-    rstrip=False,
-    lstrip=False,
-    single_word=False,
-    normalized=False,
-    special=True),
+    101: AddedToken(
+      "[CLS]",
+      (rstrip = False),
+      (lstrip = False),
+      (single_word = False),
+      (normalized = False),
+      (special = True)
+    ),
 
-  101: AddedToken(
-    "[CLS]",
-    rstrip=False,
-    lstrip=False,
-    single_word=False,
-    normalized=False,
-    special=True),
+    102: AddedToken(
+      "[SEP]",
+      (rstrip = False),
+      (lstrip = False),
+      (single_word = False),
+      (normalized = False),
+      (special = True)
+    ),
 
-  102: AddedToken(
-    "[SEP]",
-    rstrip=False,
-    lstrip=False,
-    single_word=False,
-    normalized=False,
-    special=True),
-
-  103: AddedToken(
-    "[MASK]",
-    rstrip=False,
-    lstrip=False,
-    single_word=False,
-    normalized=False,
-    special=True),
-}
+    103: AddedToken(
+      "[MASK]",
+      (rstrip = False),
+      (lstrip = False),
+      (single_word = False),
+      (normalized = False),
+      (special = True)
+    ),
+  });
 ```
 
 인코딩 프로세스: 텍스트를 토큰으로 변환하여 토큰 ID로 변환하기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 토크나이저를 사용하여 정제된 파인 튜닝 데이터를 인코딩할 수 있어요. 이 과정은 각 리뷰를 토큰 ID들의 텐서로 변환할 거예요. 예를 들어, 리뷰인 'I liked this movie'는 다음 단계를 통해 인코딩되어요:
 
@@ -414,7 +725,18 @@ added_tokens_decoder={
 
 3. BERT가 기대하는 특수 토큰을 추가하기: [`[CLS]`, `i`, `liked`, `this`, `movie`, `[SEP]`]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 병합된 토큰을 bert-base-uncased 어휘에 따라 해당 토큰 ID로 변환합니다. (예: [CLS] - 101, i - 1045 등)
 
@@ -436,37 +758,99 @@ Token IDs: [ 101 1045 4669 2023 3185  102]
 Tokens   : ['[CLS]', 'i', 'liked', 'this', 'movie', '[SEP]']
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Truncation and Padding:
 
 BERT Base 및 BERT Large는 정확히 512토큰의 입력 시퀀스를 처리하기 위해 설계되었습니다. 그러나 입력 시퀀스가 이 제한에 맞지 않는 경우 어떻게 해야 할까요? 그 답은 Truncation과 Padding입니다! Truncation은 특정 길이 이상의 어떠한 토큰도 간단히 제거하여 토큰 수를 줄입니다. encode 메서드에서 truncation을 True로 설정하고 모든 인코딩된 시퀀스에 길이 제한을 부여할 max_length 인수를 지정할 수 있습니다. 이 데이터 세트의 여러 항목은 512토큰 제한을 초과하므로 여기서 max_length 매개변수가 모든 리뷰에서 가능한 가장 많은 텍스트를 추출하기 위해 512로 설정되었습니다. 리뷰가 512토큰을 초과하는 경우가 없다면 max_length 매개변수를 설정하지 않고 남기면 모델의 최대 길이로 기본 설정됩니다. 또는 Feine-Tuning 중에 학습 시간을 줄이기 위해 512보다 작은 최대 길이를 여전히 강제로 지정할 수 있지만 모델 성능의 손실이 발생합니다. (대부분이 그렇지만) 512토큰보다 짧은 리뷰의 경우 패딩 토큰이 추가되어 인코딩된 리뷰가 512토큰으로 확장됩니다. 이렇게 설정하는 방법에 대해서는 패딩 매개변수를 max_length로 설정하면 됩니다. encode 매서드에 대한 자세한 내용은 Hugging Face 문서를 참조하십시오 [10].
 
 ```js
-review = df['review_cleaned'].iloc[0]
+review = df["review_cleaned"].iloc[0];
 
 token_ids = tokenizer.encode(
-    review,
-    max_length = 512,
-    padding = 'max_length',
-    truncation = True,
-    return_tensors = 'pt')
+  review,
+  (max_length = 512),
+  (padding = "max_length"),
+  (truncation = True),
+  (return_tensors = "pt")
+);
 
-print(token_ids)
+print(token_ids);
 ```
 
 ```js
-tensor([[  101,  2028,  1997,  1996,  2060, 15814,  2038,  3855,  2008,  2044,
-          3666,  2074,  1015, 11472,  2792,  2017,  1005,  2222,  2022, 13322,
-          
-                                       ...
+tensor([
+  [
+    101,
+    2028,
+    1997,
+    1996,
+    2060,
+    15814,
+    2038,
+    3855,
+    2008,
+    2044,
+    3666,
+    2074,
+    1015,
+    11472,
+    2792,
+    2017,
+    1005,
+    2222,
+    2022,
+    13322,
 
-             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
-             0,     0,     0,     0,     0,     0,     0,     0,     0,     0,
-             0,     0]])
+    ...0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+  ],
+]);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Attention Mask을 encode_plus와 함께 사용하기:
 
@@ -477,38 +861,48 @@ Attention Mask을 encode_plus와 함께 사용하기:
 - attention_mask — 특정 토큰이 attention 과정에서 무시되어야 하는지 (0을 의미) 아니면 무시되어서는 안 되는지 (1을 의미) 나타내는 0과 1의 리스트
 
 ```js
-review = df['review_cleaned'].iloc[0]
+review = df["review_cleaned"].iloc[0];
 
 batch_encoder = tokenizer.encode_plus(
-    review,
-    max_length = 512,
-    padding = 'max_length',
-    truncation = True,
-    return_tensors = 'pt')
+  review,
+  (max_length = 512),
+  (padding = "max_length"),
+  (truncation = True),
+  (return_tensors = "pt")
+);
 
-print('Batch encoder keys:')
-print(batch_encoder.keys())
+print("Batch encoder keys:");
+print(batch_encoder.keys());
 
-print('\nAttention mask:')
-print(batch_encoder['attention_mask'])
+print("\nAttention mask:");
+print(batch_encoder["attention_mask"]);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 벡터 인코더 키:
 dict_keys(['input_ids', 'token_type_ids', 'attention_mask'])
 
 주의 마스크:
 tensor([[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 
                                       ...
 
          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
          0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
          0, 0, 0, 0, 0, 0, 0, 0]])
-
 
 모든 리뷰 인코딩:
 
@@ -535,10 +929,20 @@ for review in df['review_cleaned']:
 # 토큰 ID 및 주의 마스크 목록을 PyTorch 텐서로 변환
 토큰 ID = torch.cat(토큰 ID, dim=0)
 주의 마스크 = torch.cat(주의 마스크, dim=0)
-``` 
-  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3.3 — 트레인 및 검증 데이터로더 생성하기
 
@@ -576,9 +980,20 @@ train_data = TensorDataset(train_ids, train_masks, train_labels)
 train_dataloader = DataLoader(train_data, shuffle=True, batch_size=16)
 val_data = TensorDataset(val_ids, val_masks, val_labels)
 val_dataloader = DataLoader(val_data, batch_size=16)
-``` 
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3.4 — BERT 모델 인스턴스화
 
@@ -593,7 +1008,18 @@ val_dataloader = DataLoader(val_data, batch_size=16)
 
 물론, PyTorch 또는 Tensorflow에서 headless BERT 모델을 가져와 직접 분류 헤드를 만들 수도 있습니다. 그러나 우리의 경우에는 이미 필요한 선형 레이어를 포함하는 BertForSequenceClassification 모델을 가져와 사용할 수 있습니다. 이 선형 레이어는 무작위 가중치와 바이어스로 초기화되며, 미세 조정 중에 훈련될 것입니다. BERT Base는 768개의 임베딩 차원을 사용하므로, 숨겨진 레이어에는 모델의 최종 인코더 블록에 연결된 768개의 뉴런이 포함되어 있습니다. 출력 뉴런의 수는 num_labels 인수에 의해 결정되며, 고유한 감정 레이블의 수와 일치합니다. IMDb 데이터셋은 긍정과 부정만 포함하므로 num_labels 인수가 2로 설정됩니다. 중립 또는 혼합과 같은 레이블을 포함하여 보다 복잡한 감정 분석을 수행하려면 num_labels 값을 쉽게 조절할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 transformers 패키지에서 BertForSequenceClassification을 가져옵니다.
@@ -609,8 +1035,18 @@ Optimizer:
 
 분류 head가 학습 데이터의 일괄 처리를 만나면, 선형 레이어의 가중치와 바이어스를 업데이트하여 그 입력에 대한 모델 성능을 향상시킵니다. 여러 배치와 여러 epoch 동안, 이러한 가중치와 바이어스가 최적값으로 수렴하도록 하는 것이 목표입니다. 각 가중치와 바이어스에 필요한 변경 사항을 계산하기 위해 옵티마이저가 필요하며, PyTorch의 `optim` 패키지에서 가져올 수 있습니다. Hugging Face는 자신들의 예제에서 AdamW 옵티마이저를 사용하므로, 여기서도 이 옵티마이저를 사용할 것입니다 [13].
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 손실 함수:
 
@@ -620,7 +1056,18 @@ Optimizer:
 
 학습 속도라 불리는 매개변수는 분류 헤드의 가중치와 편향에 대한 변경의 크기를 결정하는 데 사용됩니다. 초기 배치와 에포크에서는 무작위로 초기화된 매개변수가 상당한 조정이 필요할 수 있으므로 큰 변경이 유용할 수 있습니다. 그러나 학습이 진행됨에 따라 가중치와 편향이 향상되면서 큰 변경이 역효과적일 수 있습니다. 스케줄러는 학습 과정이 계속되는 동안 학습 속도를 점차 감소시켜 각 가중치 및 편향에 대한 각 최적화 단계에서 발생하는 변경 크기를 줄이도록 설계되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from torch.optim import AdamW
@@ -649,16 +1096,25 @@ CUDA를 사용하여 GPU 활용:
 
 NVIDIA에서 만든 CUDA(Compute Unified Device Architecture)는 과학 및 공학 분야의 응용 프로그램 성능을 향상시키기 위한 컴퓨팅 플랫폼입니다 [14]. PyTorch의 cuda 패키지를 사용하면 Python에서 CUDA 플랫폼을 활용하여 머신 러닝 모델을 훈련할 때 GPU를 사용할 수 있습니다. torch.cuda.is_available 명령을 사용하여 GPU의 가용성을 확인할 수 있습니다. GPU가 없는 경우 코드는 가속 계산을 위해 그래픽 처리 장치 (GPU)를 사용할 수 없도록 기본 설정됩니다. 이후의 코드 스니펫에서는 PyTorch Tensor.to 메서드를 사용하여 텐서(모델 가중치 및 편향 등이 포함됨)를 더 빠른 계산을 위해 GPU로 이동합니다. 장치가 cpu로 설정된 경우 텐서가 이동되지 않고 코드에 영향을 미치지 않습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # GPU 사용 가능 여부 확인하여 빠른 학습 시간을 위한 준비
-if torch.cuda.is_available():
-    device = torch.device('cuda:0')
-else:
-    device = torch.device('cpu')
 
+if torch.cuda.is_available():
+device = torch.device('cuda:0')
+else:
+device = torch.device('cpu')
 
 학습 프로세스는 두 개의 for 루프를 통해 이루어집니다: 각 epoch마다 프로세스를 반복하는 외부 루프(모델이 모든 학습 데이터를 여러 번 보게하는 역할)와 각 배치마다 손실 계산 및 최적화 단계를 반복하는 내부 루프가 있습니다. 학습 루프를 설명하기 위해 아래 단계를 고려해 보세요. 학습 루프의 코드는 Chris McCormick과 Nick Ryan의 훌륭한 블로그 글[15]에서 적용되었으며 매우 추천합니다.
 
@@ -666,8 +1122,18 @@ else:
 
 1. 모델을 train 모드로 변경합니다. 모델 객체의 train 메서드를 사용하여 모델이 평가 모드일 때와는 다르게 작동하도록 합니다. 특히 batchnorm과 dropout 레이어와 함께 작업할 때 유용합니다. 이전에 BertForSequenceClassification 클래스의 소스 코드를 살펴봤다면, 분류 헤드에 실제로 dropout 레이어가 포함되어 있는 것을 보았을 겁니다. 따라서 fine-tuning 시에 training 및 evaluation 모드를 올바르게 구분해야 합니다. 이러한 종류의 레이어는 학습 중에만 활성화되어야 하며 추론 중에는 활성화되지 않아야 합니다. 따라서 학습과 추론을 위해 서로 다른 모드로 전환할 수 있는 기능은 유용한 기능입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 에포크 시작 시 훈련 손실을 0으로 설정하세요. 이것은 이후 에포크에서 모델의 훈련 데이터 손실을 추적하는 데 사용됩니다. 훈련이 성공적이라면 각 에포크마다 손실이 감소해야 합니다.
 
@@ -677,7 +1143,18 @@ BERT 저자들의 권장에 따라, 각 에포크의 훈련 데이터를 배치�
 
 3. 가능한 경우 토큰 ID, 어텐션 마스크 및 레이블을 GPU로 이동하여 처리 속도를 높이세요. 그렇지 않으면 이러한 데이터는 CPU에 유지됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 이 루프의 이전 반복에서 계산된 그래디언트를 재설정하기 위해 zero_grad 메서드를 호출하세요. PyTorch에서 기본 동작이 아닌 이유가 명확하지 않을 수 있지만, 이는 Recurrent Neural Networks와 같은 모델이 반복 사이에 그래디언트를 재설정해선 안 되는 이유로 제안됩니다.
 
@@ -687,7 +1164,18 @@ BERT 저자들의 권장에 따라, 각 에포크의 훈련 데이터를 배치�
 
 7. 모델에 역전파를 수행하고 분류기 헤드를 통해 손실을 전파하세요. 이를 통해 모델은 배치에 대한 성능을 향상시키기 위해 가중치와 편향을 조정해야 하는지를 결정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 8. 모델이 폭발하는 그래디언트 문제를 겪지 않도록 그래디언트를 1.0보다 크게 만들지 마세요.
 
@@ -697,8 +1185,18 @@ BERT 저자들의 권장에 따라, 각 에포크의 훈련 데이터를 배치�
 
 10. 에포크에서의 평균 손실과 소요 시간을 계산하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 for epoch in range(0, EPOCHS):
 
@@ -728,15 +1226,24 @@ for epoch in range(0, EPOCHS):
 
     average_train_loss = training_loss / len(train_dataloader)
 
-
 외부 루프 내에서 검증 단계가 수행되므로 각 epoch마다 평균 검증 손실을 계산합니다. epoch 숫자가 증가함에 따라 검증 손실이 감소하고 분류기 정확도가 증가할 것으로 기대됩니다. 검증 프로세스 단계는 아래에 설명되어 있습니다.
 
 에포크의 검증 단계:
 
 11. evaluation 메서드를 사용하여 모델을 평가 모드로 전환합니다. 이렇게 하면 드롭아웃 레이어가 비활성화됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 12. 검증 손실을 0으로 설정하세요. 이 값은 후속 에포크에서 모델의 검증 데이터에 대한 손실을 추적하는 데 사용됩니다. 학습이 성공적이었다면 손실은 각 에포크마다 감소해야 합니다.
 
@@ -746,7 +1253,18 @@ for epoch in range(0, EPOCHS):
 
 14. 사용 가능한 경우 토큰 ID, 어텐션 마스크 및 레이블을 GPU로 이동하여 처리 속도를 높이세요. 그렇지 않으면 이러한 값들은 CPU에 유지됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 15. 여기서는 최적화 단계를 수행하지 않고 추론만 할 것이기 때문에 모델이 그라디언트를 계산하지 않도록 no_grad 메서드를 호출하세요.
 
@@ -756,7 +1274,18 @@ for epoch in range(0, EPOCHS):
 
 18. 손실을 증가시키고 검증 데이터로더의 실제 레이블에 기반하여 정확도를 계산하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 19. 손실 및 정확도의 평균을 계산하세요.
 
@@ -807,7 +1336,18 @@ def calculate_accuracy(preds, labels):
     return accuracy
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3.7 — 완벽한 파인튜닝 파이프라인
 
@@ -830,10 +1370,19 @@ def preprocess_dataset(path):
         df_dataset (pd.DataFrame): self.dataset 경로에서 로드한 원시 데이터가 있는 DataFrame입니다. "review"와 "sentiment" 열 외에도 다음이 포함됩니다:
             - review_cleaned: "review" 열의 사본이고 HTML 줄 바꿈 태그와 불필요한 공백이 제거된 컬럼
             - sentiment_encoded: "sentiment" 열의 사본이며 "부정" 값을 0으로 매핑하고 "긍정" 값을 1로 매핑한 컬럼
-    
-  
 
-<div class="content-ad"></div>
+
+
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업에 중립적인 파인튜닝 파이프라인 클래스:
 
@@ -927,7 +1476,16 @@ fine_tuned_model = FineTuningPipeline(
 # 유효성 검사 데이터셋을 사용하여 일부 예측 수행
 model.predict(model.val_dataloader)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4 — 결론
 
@@ -937,7 +1495,16 @@ model.predict(model.val_dataloader)
 
 [1] J. Devlin, M. Chang, K. Lee, and K. Toutanova, BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding (2019), North American Chapter of the Association for Computational Linguistics
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [2] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser, and I. Polosukhin, Attention is All You Need (2017), Advances in Neural Information Processing Systems 30 (NIPS 2017)
 
@@ -947,7 +1514,16 @@ model.predict(model.val_dataloader)
 
 [5] Hugging Face, Fine-Tuned BERT Models (2024), HuggingFace.co
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 논문 및 참고 자료 목록
 
@@ -959,7 +1535,16 @@ model.predict(model.val_dataloader)
 
 - Hugging Face, Pre-trained Tokenizers (2024) HuggingFace.co
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [10] Hugging Face, Pre-trained Tokenizer Encode Method (2024) HuggingFace.co
 
@@ -969,8 +1554,18 @@ model.predict(model.val_dataloader)
 
 [13] Hugging Face, Run Glue, GitHub.com
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [14] NVIDIA, CUDA Zone (2024), Developer.NVIDIA.com
 
 [15] C. McCormick and N. Ryan, BERT Fine-tuning (2019), McCormickML.com
+```

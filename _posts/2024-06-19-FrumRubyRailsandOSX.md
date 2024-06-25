@@ -3,13 +3,12 @@ title: "프럼, 루비, 레일즈, 그리고 OS X"
 description: ""
 coverImage: "/assets/img/2024-06-19-FrumRubyRailsandOSX_0.png"
 date: 2024-06-19 10:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-FrumRubyRailsandOSX_0.png
 tag: Tech
 originalTitle: "Frum, Ruby, Rails and OS X"
 link: "https://medium.com/@spaquet/frum-ruby-rails-and-os-x-54acd94bccb3"
 ---
-
 
 ## OpenSSL 3를 찾아서
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@spaquet/frum-ruby-rails-and-os-x-54acd94bccb3"
 
 그래서 Apple 실리콘 기반 OS X Sonoma에서 내 설정을 업데이트한 것을 보여드릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 홈브루를 설치해주세요. 이미 설치되어 있지 않다면, 아래 좋은 설치 가이드를 읽어보세요
 - 레일즈 설정에 유용한 몇 가지 라이브러리를 설치해주세요: brew install readline libyaml openssl nvm

@@ -3,13 +3,12 @@ title: "WhatsApp의 감시 소프트웨어 거물에 대한 승리 페가수스�
 description: ""
 coverImage: "/assets/img/2024-05-23-WhatsAppsVictoryOverSpywareTitantheTakedownofPegasus_0.png"
 date: 2024-05-23 18:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-WhatsAppsVictoryOverSpywareTitantheTakedownofPegasus_0.png
 tag: Tech
 originalTitle: "WhatsApp’s Victory Over Spyware Titan: the Takedown of Pegasus"
 link: "https://medium.com/friendly-legal/whatsapps-victory-over-spyware-titan-the-takedown-of-pegasus-20e0dbc6a5e6"
 ---
-
 
 WhatsApp은 Meta가 소유한 메신저 앱으로, 매우 강력한 감청 소프트웨어를 만드는 이스라엘 회사인 NSO 그룹에 대한 주요 법적 싸움에서 승리했습니다. 미국 판사는 NSO 그룹에게 Pegasus, 그들의 가장 유명한 감청 소프트웨어뿐만 아니라 다른 감시 도구들의 코드를 WhatsApp에 전달하도록 명령했습니다. WhatsApp은 2019년 NSO의 감청 소프트웨어가 사용되어 1,400명의 사용자를 감시했다는 사실을 발견한 이후 제기한 소송의 일환입니다.
 
@@ -19,7 +18,18 @@ Pegasus는 모든 전화로 침투하고 소유자의 동의 없이 통화, 이�
 
 ![WhatsApp의 스파이웨어 거인 NSO 그룹 격파 - 2024년 5월 23일](/assets/img/2024-05-23-WhatsAppsVictoryOverSpywareTitantheTakedownofPegasus_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 배경 및 관련 당사자
 
@@ -29,7 +39,18 @@ Pegasus는 모든 전화로 침투하고 소유자의 동의 없이 통화, 이�
 
 # 법적 주장 및 주장들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 WhatsApp과 Facebook이 NSO 그룹에게 WhatsApp 플랫폼을 불법적으로 사용하여 스파이웨어를 배포했다는 주장을 중심으로 한 법적 주장 및 항의가 돌아가고 있습니다. 이 주장들은 다음과 같습니다:
 
@@ -42,7 +63,18 @@ WhatsApp과 Facebook이 NSO 그룹에게 WhatsApp 플랫폼을 불법적으로 �
 
 # Richmark 요인 분석
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리치마크 팩터(Richmark Corp. v. Timber Falling Consultants (1991))에 대한 분석은 법원 판결에서 특히 외국 법률이나 당사자가 관련된 경우에 어떤 발견 요청이 강제적으로 이루어져야 하는지를 평가하는 방법론적 접근을 포함합니다. 다음은 이 접근 방식에 대한 요약입니다:
 
@@ -56,7 +88,18 @@ WhatsApp과 Facebook이 NSO 그룹에게 WhatsApp 플랫폼을 불법적으로 �
 
 ![WhatsApp의 스파이어 타이탄 격파로 승리: 페가수스의 철퇴](/assets/img/2024-05-23-WhatsAppsVictoryOverSpywareTitantheTakedownofPegasus_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 발견 준수 및 국제적 고려사항
 
@@ -68,7 +111,18 @@ WhatsApp과 Facebook이 NSO 그룹에게 WhatsApp 플랫폼을 불법적으로 �
 
 # 법원의 동의에 관한 판결
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 법원은 발견 절차 및 사건 관리와 관련된 여러 동의 관련 움직임에 대한 주요 판결을 내렸습니다:
 
@@ -81,7 +135,18 @@ WhatsApp과 Facebook이 NSO 그룹에게 WhatsApp 플랫폼을 불법적으로 �
 
 # 디지털 감시와 사이버 보안에 대한 함의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문제의 핵심은 근본적인 질문이 있습니다: 미국인들은 외국 기관, 특히 이스라엘 회사에서 동의 없이 감시를 받고 싶어 할까요? 이는 사람들의 개인 정보 보호권과 디지털 세계에서 넘어가는 보이지 않는 경계에 대한 심오한 우려에 관련이 있습니다.
 
@@ -91,7 +156,18 @@ WhatsApp과 Facebook이 NSO 그룹에게 WhatsApp 플랫폼을 불법적으로 �
 
 #면책 조항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에 제공된 정보는 정보 및 교육 목적으로만 제공되는 것이며, 법률 자문이나 법률 자문 대체로 사용되어서는 안 됩니다. 본문의 정확성과 완전성을 보증하기 위해 노력했지만, 법률 원칙과 규정은 관할 지역과 구체적 상황에 따라 상당히 다를 수 있음을 감안해야 합니다. 따라서 이 기사는 결정적인 법적 자료나 법적 판단의 기초로 사용해서는 안 됩니다. 독자들은 각각의 사례가 상세하고 맞춤화된 법률 분석을 필요로 할 수 있으므로 법률 문제나 사안에 관해 자격 있는 변호사와 상담하기를 강력히 권고합니다.
 

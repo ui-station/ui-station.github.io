@@ -3,13 +3,12 @@ title: "4단계로 iOS 앱에 실시간 활동 추가하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-AddLiveActivitiestoyouriOSappin4steps_0.png"
 date: 2024-06-22 23:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-AddLiveActivitiestoyouriOSappin4steps_0.png
 tag: Tech
 originalTitle: "Add Live Activities to your iOS app in 4 steps"
 link: "https://medium.com/@blorenzop/live-activities-swift-6e95ee15863e"
 ---
-
 
 ## iOS에서 라이브 액티비티로 사용자 경험과 실시간 상호작용 향상
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@blorenzop/live-activities-swift-6e95ee15863e"
 
 푸시 알림을 보내지 않고 업데이트를 보내거나 실시간 정보를 표시할 수 있습니다. 그리고 가장 좋은 점은? 이를 추가하는 것이 놀랍도록 쉽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에 그것을 하는 방법이 있어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@blorenzop/live-activities-swift-6e95ee15863e"
 
 ## 단계1 — 라이브 활동 콘텐츠 정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 처음으로 할 일은 라이브 활동에서 보여줄 정보를 정의하는 것입니다. 제한된 공간 때문에 사용자가 중요하게 생각할 데이터에 집중해야 합니다.
 
@@ -47,7 +68,18 @@ public protocol ActivityAttributes : Decodable, Encodable {
 
 알 수 있듯이, 우리는 정보를 두 가지 범주로 나눌 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 정적 → ActivityAttributes를 구현하는 모델의 속성입니다.
 - 동적 → ContentState 타입에 저장됩니다.
@@ -59,14 +91,14 @@ public protocol ActivityAttributes : Decodable, Encodable {
 
 ```js
 struct OrderAttributes: ActivityAttributes {
-    
+
     struct ContentState: Codable, Hashable {
         enum OrderStatus: Float, Codable, Hashable {
             case inQueue = 0
             case aboutToTake
             case making
             case ready
-            
+
             var description: String {
                 switch self {
                 case .inQueue:
@@ -80,15 +112,26 @@ struct OrderAttributes: ActivityAttributes {
                 }
             }
         }
-        
+
         let status: OrderStatus
     }
-    
+
     let orderNumber: Int
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 2 — UI 생성하기
 
@@ -98,7 +141,7 @@ struct OrderAttributes: ActivityAttributes {
 
 ```js
 struct CoffeeShopWidgetLiveActivity: Widget {
-    
+
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: OrderAttributes.self) { context in
             // 여기에 잠금 화면/배너 UI가 들어갑니다
@@ -112,14 +155,25 @@ struct CoffeeShopWidgetLiveActivity: Widget {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LiveActivityView 내에서는 Live Activity UI를 구성합니다.
 
 ```js
-struct LiveActivityView: View { 
+struct LiveActivityView: View {
     let state: OrderAttributes.ContentState
-   
+
     var body: some View {
         VStack {
             HStack {
@@ -130,7 +184,7 @@ struct LiveActivityView: View {
                 Image(systemName: "cup.and.saucer.fill")
             }
             .padding(16)
-            
+
             Text("\(state.status.description)")
                 .font(.system(size: 18, weight: .semibold))
                 .padding(.bottom)
@@ -152,7 +206,18 @@ struct CoffeeShopWidgetBundle: WidgetBundle {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 3 — 라이브 활동 초기화
 
@@ -164,7 +229,18 @@ struct CoffeeShopWidgetBundle: WidgetBundle {
 - staleDate: 라이브 활동이 오래되었음을 OS에 알리기 위한 날짜입니다. staleDate가 지정되지 않으면, 8시간 후 OS가 라이브 활동을 종료합니다.
 - relevanceScore: 여러 개의 라이브 활동이 있는 경우, relevanceScore는 다이나믹 아일랜드에 표시할 우선순위와 잠금 화면의 순서를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 Activity 메서드 request(attributes: content: pushType:)를 호출하여 새로운 라이브 액티비티를 요청할 수 있어요.
 
@@ -175,7 +251,7 @@ struct CoffeeShopWidgetBundle: WidgetBundle {
 📣 중요한 알림: 새로운 Activity를 요청할 때 앱은 활성화 상태여야 해요.
 
 ```js
-let orderAttributes = OrderAttributes(orderNumber: 1)    
+let orderAttributes = OrderAttributes(orderNumber: 1)
 let initialState = OrderAttributes.ContentState(status: .inQueue)
 let content = ActivityContent(state: initialState, staleDate: nil, relevanceScore: 1.0)
 
@@ -190,11 +266,22 @@ do {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 4 — 라이브 활동 업데이트
 
-라이브 활동을 업데이트하려면 update(_:) 함수를 사용할 수 있습니다. 초기 상태를 생성한 것과 마찬가지로 업데이트로 ActivityContent를 작성할 수 있습니다.
+라이브 활동을 업데이트하려면 update(\_:) 함수를 사용할 수 있습니다. 초기 상태를 생성한 것과 마찬가지로 업데이트로 ActivityContent를 작성할 수 있습니다.
 
 ```js
 await orderActivity?.update(
@@ -205,21 +292,43 @@ await orderActivity?.update(
 )
 ```
 
-라이브 활동을 종료하려면 end(_:dismissalPolicy:) 함수를 사용합니다. 사용하는 종료 정책에 따라 라이브 활동은 사용자가 명시적으로 제거할 때까지 잠금 화면에 남게될 수 있습니다. 이것이 마지막 라이브 활동 상태를 전달하여 UI를 항상 최신 상태로 유지해야하는 이유입니다.
+라이브 활동을 종료하려면 end(\_:dismissalPolicy:) 함수를 사용합니다. 사용하는 종료 정책에 따라 라이브 활동은 사용자가 명시적으로 제거할 때까지 잠금 화면에 남게될 수 있습니다. 이것이 마지막 라이브 활동 상태를 전달하여 UI를 항상 최신 상태로 유지해야하는 이유입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용 가능한 해제 정책 옵션은 세 가지입니다.
 
 - default: 라이브 액티비티는 최대 4시간 동안 잠금 화면에 유지됩니다. (사용자가 제거할 때까지)
 - immediate: 운영 체제가 즉시 라이브 액티비티를 제거합니다.
-- after(_ date:): 라이브 액티비티를 해제할 날짜를 지정할 수 있습니다. (라이브 액티비티 종료 시간으로부터 4시간 이내여야 함)
+- after(\_ date:): 라이브 액티비티를 해제할 날짜를 지정할 수 있습니다. (라이브 액티비티 종료 시간으로부터 4시간 이내여야 함)
 
 # 다음 단계는 무엇인가요?
 
 앱의 사용 사례를 신중하게 고려해보세요. 라이브 액티비티는 배송 앱이나 스포츠 이벤트와 같은 실시간 애플리케이션에 특히 적합하지만, 푸시 알림에 대한 매력적인 대안으로도 사용될 수 있어 사용자에게 더 매력적인 경험을 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 풍부한 사용자 경험을 위해 라이브 활동에 딥 링크를 통합하여 사용자가 라이브 활동을 탭할 때 연결이 원활하도록 할 수 있습니다.
 

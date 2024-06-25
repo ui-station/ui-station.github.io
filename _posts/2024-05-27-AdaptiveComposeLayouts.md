@@ -3,13 +3,12 @@ title: "적응형 컴포즈 레이아웃"
 description: ""
 coverImage: "/assets/img/2024-05-27-AdaptiveComposeLayouts_0.png"
 date: 2024-05-27 17:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AdaptiveComposeLayouts_0.png
 tag: Tech
 originalTitle: "Adaptive Compose Layouts"
 link: "https://medium.com/@stefanoq21/adaptive-compose-layouts-86b7f1e51338"
 ---
-
 
 ## 모든 창 크기에 대한 흥미로운 소식
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@stefanoq21/adaptive-compose-layouts-86b7f1e51338"
 
 이전에 내가 이전 게시물에서 창 크기 클래스를 사용하여 반응형 레이아웃을 탐구했습니다. 그러나 Jetpack Compose의 흥미로운 새로운 발전으로 인해 해당 주제를 다시 살펴보게 되었습니다. WindowSizeClass의 새로운 구현뿐만 아니라 사용법을 간단하게 하는 새로운 Composable 함수들도 새롭게 나왔습니다. 또한 일반적인 레이아웃 동작을 단순화하는 새로운 Composable 함수들도 나왔는데, 사용자 정의 함수가 필요 없어졌습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 내용을 다뤄야 하니까, 첫 번째 주요 측면으로 넘어가 볼까요? WindowSizeClass의 새로운 구현을 살펴봅시다. 이해를 돕기 위해, 제 이전 글에서의 구현을 이전해 보겠습니다. 원하신다면 확인해보세요.
 
@@ -38,12 +48,23 @@ androidx-adaptive = { module = "androidx.compose.material3.adaptive:adaptive", v
 ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Gradle 종속성을 업데이트한 후 이제 이전 WindowSizeClass 구현에 의존했던 코드 섹션을 이주해 보겠습니다. 예를 들어, 창 크기에 따라 동적으로 열의 수를 결정하는 코드가 있다면 다음과 같이 업데이트할 수 있습니다:
 
 ```js
-val windowWidthSize = currentWindowAdaptiveInfo().windowSizeClass.windowWidthSizeClass  
+val windowWidthSize = currentWindowAdaptiveInfo().windowSizeClass.windowWidthSizeClass
 
 val columns = when (windowWidthSize) {
        WindowWidthSizeClass.COMPACT -> 1
@@ -56,16 +77,27 @@ val columns = when (windowWidthSize) {
 
 ## NavigationSuiteScaffold
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 윈도우 크기 클래스 이주를 다루었으니, 이제는 새로운 구성 가능 함수를 살펴봅시다. 먼저, NavigationSuiteScaffold가 등장합니다. 이 중요한 구성 가능 함수는 창 크기에 따라 하단 탐색 표시줄, 탐색 레일 및 서랍 사이를 전환할 때 사용자 정의 논리가 필요 없도록 해줍니다.
 
 이전 글에서는 탐색 요소 전환을 위한 사용자 정의 솔루션 구축을 탐구했습니다. 이제 NavigationSuiteScaffold가 이 프로세스를 간단하게 하는 방법을 살펴보겠습니다. 이 새로운 함수를 사용하여 동일한 결과를 얻는 방법은 다음과 같습니다:
 
 ```js
-... 
+...
 NavigationSuiteScaffold(
-        modifier = Modifier, 
+        modifier = Modifier,
         navigationSuiteItems = {
 
             bottomNavigationItems.forEach { bottomBarElement ->
@@ -109,12 +141,23 @@ NavigationSuiteScaffold(
 
 이 단일 구현은 현재 창 크기에 따라 적절한 탐색 경험을 제공하도록 자동으로 동작합니다. 이는 작은 화면의 경우 하단 표시줄과 큰 화면의 경우 탐색 레일과 같은 요소 간에 전환하는 적절한 탐색 경험을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 더 맞춤화된 접근을 선호하는 분들을 위해 NavigationSuiteScaffold는 NavigationSuiteType을 통해 유연성을 제공합니다. 여러분은 해당 스캐폴드 내에서 사용자 정의 동작을 매끄럽게 통합하여 스마트폰의 가로 모드에서도 네비게이션 레일과 같은 요소를 사용할 수 있습니다.
 
 ```js
-... 
+...
 val adaptiveInfo = currentWindowAdaptiveInfo()
 val customNavSuiteType = with(adaptiveInfo) {
             if (windowSizeClass.windowWidthSizeClass == WindowWidthSizeClass.EXPANDED) {
@@ -134,7 +177,7 @@ NavigationSuiteScaffold(
 동일한 원칙이 특정 시나리오에서 네비게이션을 완전히 숨기고 싶은 경우에도 적용됩니다.
 
 ```js
-... 
+...
 val adaptiveInfo = currentWindowAdaptiveInfo()
     val customNavSuiteType = with(adaptiveInfo) {
          when {
@@ -152,7 +195,18 @@ val adaptiveInfo = currentWindowAdaptiveInfo()
 ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ListDetailPaneScaffold
 
@@ -168,7 +222,18 @@ androidx-material3-adaptive-navigation-suite-android = { group = "androidx.compo
 ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Gradle 종속성을 사용하여 코드를 업데이트할 수 있습니다.
 
@@ -208,7 +273,18 @@ Gradle 종속성을 사용하여 코드를 업데이트할 수 있습니다.
 
 WindowSizeClass와 함께 ListDetailPaneScaffold를 사용하여 현재 창 크기에 기반한 동작을 맞춤화할 수 있습니다. 예를 들어 (스크린샷에서 볼 수 있듯이) 단일 패널 모드에서만 뒤로 화살표와 같은 요소를 조건부로 표시할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val windowWidthSize = currentWindowAdaptiveInfo().windowSizeClass.windowWidthSizeClass
@@ -224,8 +300,18 @@ val backVisible = when (windowWidthSize) {
 
 새로운 적응형 레이아웃 기능을 탐색하기 위해 SupportingPaneScaffold를 간단히 살펴보겠습니다. 이 구성 요소는 핵심 기능인 탐색 관리와 창 내용 표시를 ListDetailPaneScaffold와 유사한 점을 가지고 있습니다. 하지만 SupportingPaneScaffold는 주요 콘텐츠 창과 오른쪽에 있는 더 작은 "보조" 창을 함께 사용하는 경우에 맞게 설계되었습니다. 이는 보조 콘텐츠가 주요 콘텐츠를 보완하거나 부가 정보를 제공하지만 동일한 화면 공간이 필요하지 않은 상황에 이상적입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트에서 SupportingPaneScaffold을 구현하려면 ListDetailPaneScaffold에서 얻은 지식을 기반으로 활용할 수 있습니다. 더 깊은 이해를 위해 젯팩 코믹스의 공식 문서를 여기에 남겨 두겠습니다.
 
@@ -235,7 +321,18 @@ val backVisible = when (windowWidthSize) {
 
 이러한 새로운 기능은 Android 애플리케이션을 위한 정말로 반응적이고 사용자 친화적인 경험을 만들 수 있게 해줍니다. 적응형 레이아웃을 위한 최상의 실천 방법을 준수하고 이러한 도구들을 수용함으로써, 앱이 지속적으로 진화하는 Android 생태계에 매끄럽게 적응하여 모든 기기의 사용자에게 탁월한 경험을 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의견을 자유롭게 공유해주시거나, 원하신다면 LinkedIn에서 연락 주셔도 좋습니다.
 

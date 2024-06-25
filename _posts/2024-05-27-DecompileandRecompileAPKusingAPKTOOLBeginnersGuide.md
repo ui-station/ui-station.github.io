@@ -21,7 +21,18 @@ link: "https://medium.com/@ps.sujith/decompile-and-recompile-apk-using-apktool-b
 - Apksigner: APK에 서명하는 데 사용됩니다.
 - Zipalign: 디컴파일된 파일들을 정렬하는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추가 도구
 JD-GUI: Java 디컴파일러
@@ -33,7 +44,18 @@ Mac과 Linux에서 APK를 쉽게 디컴파일할 수 있습니다. Windows의 �
 
 Mac에서 Brew를 사용하여 Apktool 유틸리티를 설치하는 것은 매우 쉽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 brew install apktool
@@ -51,7 +73,18 @@ brew install apktool
 - 텍스트 "Original App"을 "Recompiled App"으로 바꾸기
 - 성공적으로 재컴파일하고 앱에 서명하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_1.png" />
 
@@ -62,7 +95,18 @@ brew install apktool
 ApkMirror.com 또는 다른 사이트에서 어떤 앱의 APK를 다운로드할 수 있습니다. 여기서는 샘플 앱 "experiment_app.apk"의 서명된 APK를 사용하겠습니다.
 먼저, 이 APK를 디컴파일해야 합니다. apktool을 사용하여 APK를 디컴파일하는 다음 명령을 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 apktool d [apk 위치] -o [디컴파일된 파일이 저장될 출력 폴더 위치]
@@ -74,7 +118,18 @@ apktool d [apk 위치] -o [디컴파일된 파일이 저장될 출력 폴더 위
 
 ![APKTOOL 사용하여 APK 디컴파일 및 재컴파일 시작 가이드](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 APK 파일에서 리소스 파일을 디컴파일하고 싶지 않다면, 대신 이 명령을 사용하세요
 
@@ -86,7 +141,18 @@ Stage 2 : 파일 수정
 
 저는 디컴파일된 파일 폴더에서 strings.xml과 colours.xml을 찾았어요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 mage](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_4.png)
 
@@ -97,7 +163,18 @@ Stage 3: 디컴파일된 리소스를 APK로 재컴파일하기
 
 변경 사항을 적용한 후, 다음 명령을 사용하여 디컴파일된 파일을 APK로 재컴파일할 예정입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 apktool b [디컴파일된 파일의 루트 폴더 위치]
@@ -109,7 +186,18 @@ apktool b [디컴파일된 파일의 루트 폴더 위치]
 
 아하.. 알겠네요..
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_6.png)
 
@@ -121,7 +209,18 @@ Zipalign is a zip archive alignment tool that helps ensure that all uncompressed
 
 `
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 APK를 zip align하려면 다음 명령을 실행하세요:
 
@@ -133,7 +232,18 @@ zipalign -v 4 [재컴파일 된 apk] [zip align된 apk를 저장할 위치 및 a
 
 단계 5: zip align된 APK에 서명하기 위한 새 키스토어 파일 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 명령어를 사용하여 keytool을 사용하여 키스토어 파일을 생성했어요. 이 명령을 사용하면 키스토어의 암호와 상세 정보를 입력하라는 프롬프트가 나타날 거에요.
 
@@ -145,7 +255,18 @@ keytool -genkey -v -keystore [키스토어 이름] -alias alias_name -keyalg RSA
 
 단계 6: apksigner를 사용하여 앱에 서명하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Apksigner 도구는 Android SDK 빌드 도구의 24.0.3 버전 이상에서 제공되며, APK를 서명하고 해당 APK가 지원하는 Android 플랫폼 버전에서 성공적으로 확인될 것임을 확인할 수 있습니다.
 Apk signer는 Android SDK 경로의 "build tools" 폴더 안에 ZipAlign과 함께 있습니다.
@@ -158,7 +279,18 @@ Apk signer는 Android SDK 경로의 "build tools" 폴더 안에 ZipAlign과 함�
 apksigner sign --ks [키스토어 이름] --v1-signing-enabled true --v2-signing-enabled true [zip align된 apk 위치]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_11.png" />
 
@@ -170,8 +302,18 @@ The zip-aligned — signed APK can be verified using the same apksigner.
 apksigner verify [signed apk location]
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_12.png" />
 
@@ -183,8 +325,18 @@ adb 명령어를 사용하거나 수동으로 설치하여 확인된 apk를 설�
 adb install /Users/matrix/Documents/APK/experimentapp_zipaligned.apk
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![앱의 배경과 텍스트 색상이 변경되었어요](/assets/img/2024-05-27-DecompileandRecompileAPKusingAPKTOOLBeginnersGuide_13.png)
 
@@ -194,11 +346,19 @@ adb install /Users/matrix/Documents/APK/experimentapp_zipaligned.apk
 
 실험 성공 .....
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 dex2jar [classes.dex 파일 위치 디컴파일 된 폴더]
 
 jd-gui [classes-dex2jar.jar 파일 위치]
-

@@ -3,13 +3,12 @@ title: "파이썬 FastAPI를 사용한 Kubernetes로의 Microservices 배포 방
 description: ""
 coverImage: "/assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_0.png"
 date: 2024-05-20 17:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_0.png
 tag: Tech
 originalTitle: "FastAPI Microservices Deployment Using Kubernetes"
 link: "https://medium.com/@sumangaire52/fastapi-microservices-deployment-using-kubernetes-35e6b8c4b52d"
 ---
-
 
 ![FastAPI 및 Kubernetes를 사용한 미니큐브에 두 마이크로서비스 배포하기](/assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sumangaire52/fastapi-microservices-deployment-using-k
 
 - **Kubernetes Deployment**: 쿠버네티스 배포는 애플리케이션 업데이트와 스케일링의 자동화를 담당합니다. 이는 애플리케이션의 원하는 상태를 정의하며, 레플리카 수, 사용할 컨테이너 이미지 및 업데이트 전략을 포함합니다. 배포 컨트롤러는 필요에 따라 파드를 작성하고 업데이트하여 애플리케이션의 실제 상태가 원하는 상태와 일치하도록 합니다. 배포는 롤링 업데이트, 롤백 기능 및 셀프 힐링을 지원하여 변경 사항 중에 애플리케이션 가용성과 안정성을 유지하기 쉽게 합니다. 이 추상화는 쿠버네티스 클러스터에서 스테이트리스 애플리케이션을 배포, 확장 및 관리를 간소화합니다. 자세한 정보는 [링크](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)를 참조하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **Kubernetes Service:** 쿠버네티스 서비스는 논리적인 포드 집합과 이에 접근하기 위한 정책을 정의하는 추상화입니다. 일반적으로 안정적인 IP 주소와 DNS 이름을 통해 접근합니다. 서비스를 통해 응용 프로그램의 다른 부분 간에 통신할 수 있으며 포드의 IP 주소를 알 필요가 없어집니다. 왜냐하면 그 주소는 변경될 수 있기 때문입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@sumangaire52/fastapi-microservices-deployment-using-k
 
 [자세히 알아보기](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마이크로서비스 1
 
@@ -48,9 +69,20 @@ app = FastAPI()
 @app.get("/")
 async def root():
     return {"message": "You requested microservice 1"}
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요구사항.txt 파일을 추가하세요
 
@@ -74,7 +106,18 @@ COPY . .
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 이미지를 빌드하고 도커허브에 푸시하세요.
 
@@ -87,7 +130,18 @@ $ docker push sumangaire96/microservice1:v1
 
 이와 같은 메시지가 나타날 것입니다. 만약 나타나지 않는다면, 도커에 로그인되어 있는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_1.png)
 
@@ -97,8 +151,18 @@ $ docker push sumangaire96/microservice1:v1
 
 microservice_1이라는 폴더를 만들고 main.py라는 파일을 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # main.py (microservice 2)
 
@@ -122,7 +186,18 @@ fastapi==0.111.0
 Add Dockerfile
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```Dockerfile
 FROM python:3.10-slim
@@ -147,8 +222,18 @@ $ docker push sumangaire96/microservice2:v1
 
 # Minikube
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미니큐브가 설치되어 있는지 확인하세요. 설치되어 있지 않다면 다음 링크를 따르세요: https://minikube.sigs.k8s.io/docs/start/. 터미널에서 미니큐브 클러스터와 상호 작용하기 위해 kubectl이 설치되어 있는지 확인하세요. 설치되어 있지 않다면 다음 링크를 따르세요: https://kubernetes.io/docs/tasks/tools/.
 
@@ -160,7 +245,18 @@ $ minikube start
 
 미니큐브에서 인그레스를 활성화하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 $ minikube addons enable ingress
@@ -186,10 +282,10 @@ spec:
         app: microservice1
     spec:
       containers:
-      - name: microservice1
-        image: sumangaire96/microservice1:v1
-        ports:
-        - containerPort: 80
+        - name: microservice1
+          image: sumangaire96/microservice1:v1
+          ports:
+            - containerPort: 80
 
 ---
 apiVersion: v1
@@ -208,7 +304,18 @@ spec:
 
 **2. Create kubernetes manifest file for microservice 2.**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 # kubernetes/microservice_2.yaml
@@ -228,10 +335,10 @@ spec:
         app: microservice2
     spec:
       containers:
-      - name: microservice2
-        image: sumangaire96/microservice2:v1
-        ports:
-        - containerPort: 80
+        - name: microservice2
+          image: sumangaire96/microservice2:v1
+          ports:
+            - containerPort: 80
 
 ---
 apiVersion: v1
@@ -260,57 +367,72 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: microservice1.local
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: microservice1-service
-            port:
-              number: 80
-  - host: microservice2.local
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: microservice2-service
-            port:
-              number: 80
+    - host: microservice1.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: microservice1-service
+                port:
+                  number: 80
+    - host: microservice2.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: microservice2-service
+                port:
+                  number: 80
 ```
 
 매니페스트를 적용하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 $ kubectl apply -f microservice_1.yaml
 $ kubectl apply -f microservice_2.yaml
 $ kubectl apply -f ingress.yaml
 
-
 호스트 이름을 Minikube IP에 매핑하기 위해 호스트 파일을 업데이트하세요.
-
 
 $ echo "$(minikube ip) microservice1.local" | sudo tee -a /etc/hosts
 $ echo "$(minikube ip) microservice2.local" | sudo tee -a /etc/hosts
 
-
 이제 microservice1.local 및 microservice2.local로 이동하면 다음과 같은 출력이 나타납니다:
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 표로 변환한 내용입니다.
 
-
-| 이미지 | 
-|---|
-| ![FastAPI와 Kubernetes를 사용한 2024-05-20 날짜의 마이크로서비스 배포 이미지](/assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_2.png) |
+| 이미지                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![FastAPI와 Kubernetes를 사용한 2024-05-20 날짜의 마이크로서비스 배포 이미지](/assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_2.png)         |
 | ![FastAPI와 Kubernetes를 사용한 2024-05-20 날짜의 또 다른 마이크로서비스 배포 이미지](/assets/img/2024-05-20-FastAPIMicroservicesDeploymentUsingKubernetes_3.png) |
 
 축하합니다! FastAPI로 2개의 마이크로서비스를 만들고 Kubernetes를 사용하여 성공적으로 배포했습니다. 앞으로 나올 문서를 기대해 주세요.

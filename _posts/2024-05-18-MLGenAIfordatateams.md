@@ -3,13 +3,12 @@ title: "ML, 데이터 팀을 위한 Gen AI"
 description: ""
 coverImage: "/assets/img/2024-05-18-MLGenAIfordatateams_0.png"
 date: 2024-05-18 18:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MLGenAIfordatateams_0.png
 tag: Tech
 originalTitle: "ML , Gen AI for data teams"
 link: "https://medium.com/@mikldd/ml-gen-ai-for-data-teams-b38d6f07c28e"
 ---
-
 
 ## 고전적인 ML 사용 사례와 Gen AI를 위한 신뢰성 있는 설계 구축
 
@@ -19,7 +18,18 @@ AI와 ML은 대부분의 데이터 팀에게 중요한 주제입니다. 회사�
 
 이 게시물에서는 데이터 팀에서 일하는 경우 이것이 무슨 의미를 하는지 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 팀에서의 AI 현황
 
@@ -27,7 +37,18 @@ AI는 많이 발전했습니다. 실제로 그렇습니다. 스탠포드 대학�
 
 ![이미지](/assets/img/2024-05-18-MLGenAIfordatateams_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘에는 ML 및 AI에 대한 수요가 급증하여 많은 데이터 팀이 업무 우선 순위를 재조정하게 되었습니다. 이는 ML 및 AI에서 데이터 팀의 역할에 대한 질문을 답하지 못한 채 남아 있습니다. 저희 경험상 데이터가 소유한 부분과 엔지니어가 소유한 부분 사이의 경계가 여전히 모호한 상황입니다.
 
@@ -37,9 +58,20 @@ AI 도입의 신호는 있지만, 대부분의 데이터 팀은 아직 일상적
 
 ![그림](/assets/img/2024-05-18-MLGenAIfordatateams_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이것은 곧 변경될 수 있습니다. 55%의 사람들이 곧 AI가 자가 데이터 탐색을 위해 혜택을 누리기를 기대하고 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이것은 곧 변경될 수 있습니다. 55%의 사람들이 곧 AI가 자가 데이터 탐색을 위해 혜택을 누리기를 기대하고 있습니다.
 
 ![AI 및 ML use cases](/assets/img/2024-05-18-MLGenAIfordatateams_2.png)
 
@@ -47,7 +79,18 @@ AI 도입의 신호는 있지만, 대부분의 데이터 팀은 아직 일상적
 
 # AI 및 ML 사용 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ML과 AI가 수십 년 동안 존재해왔다는 것을 알아야 합니다. 최신 AI 모델인 Gen AI 모델은 텍스트에서 SQL 코드를 생성하거나 비즈니스 질문에 자동으로 답변하는 것과 같은 첨단 사용 사례에 가장 적합할 수 있지만, 분류 및 회귀 모델과 같은 더 검증된 방법들도 중요한 목적을 가지고 있습니다.
 
@@ -57,9 +100,20 @@ ML과 AI가 수십 년 동안 존재해왔다는 것을 알아야 합니다. 최
 
 # 고전적인 머신 러닝 사용 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-대부분의 팀은 아직 전통적인 머신러닝 방법을 사용하지 않고 있습니다. 예를 들어, 분류, 회귀, 이상 감지와 같은 방법들이 있습니다. 이러한 방법들은 특히, 당신이 예측하고자 하는 명확한 결과 (예: 위험한 고객)와 예측 기능 (예: 가입 국가, 나이, 이전 사기)이 명확한 감독 학습에 유용할 수 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+대부분의 팀은 아직 전통적인 머신러닝 방법을 사용하지 않고 있습니다. 예를 들어, 분류, 회귀, 이상 감지와 같은 방법들이 있습니다. 이러한 방법들은 특히, 당신이 예측하고자 하는 명확한 결과 (예: 위험한 고객)와 예측 기능 (예: 가입 국가, 나이, 이전 사기)이 명확한 감독 학습에 유용할 수 있습니다.
 
 이러한 시스템들은 종종 설명하기 쉽고, 각 기능의 상대적 중요성을 추출할 수 있어 이를 통해 이유를 설명하기 쉽습니다. 이로써 이해관계자에게 고위험 고객을 거부하는 결정이 내려진 이유를 설명할 수 있게 됩니다.
 
@@ -69,7 +123,18 @@ ML과 AI가 수십 년 동안 존재해왔다는 것을 알아야 합니다. 최
 
 다양한 소스에서 수집된 원시 데이터를 활용하여 예측 기능을 구축하며, 이는 데이터 과학자의 전문 지식과 모델이 식별한 예상치 못한 패턴을 결합합니다. 핵심 개념은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Sources 및 데이터 마트: 시스템에서 추출된 원시 및 가공되지 않은 데이터로 데이터 과학자가 관련성이 있는 것으로 판단한 것
 - 특성: ML 모델에 공급되는 전처리된 데이터 (예: 대도시의 거리, 나이, 이전 사기)
@@ -86,7 +151,18 @@ ML과 AI가 수십 년 동안 존재해왔다는 것을 알아야 합니다. 최
 - 이 작업을 수행하기 위해 우리가 해야 하는 트레이드 오프는 무엇인가(예: 위험한 고객을 검토하기 위해 더 많은 운영 직원)
 - 모델 유지 및 모니터링에 대한 유지와 모니터링의 비용은 얼마인가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 차세대 및 Gen AI 사용 사례
 
@@ -96,7 +172,18 @@ ML과 AI가 수십 년 동안 존재해왔다는 것을 알아야 합니다. 최
 
 ![이미지](/assets/img/2024-05-18-MLGenAIfordatateams_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오늘의 사용 사례는 크게 두 가지 영역으로 그룹화될 수 있어요.
 
@@ -107,7 +194,18 @@ ML과 AI가 수십 년 동안 존재해왔다는 것을 알아야 합니다. 최
 
 ![image](/assets/img/2024-05-18-MLGenAIfordatateams_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예제 정보 검색 시스템 (출처: Langchain)
 
@@ -120,7 +218,18 @@ ML과 AI가 수십 년 동안 존재해왔다는 것을 알아야 합니다. 최
 
 임베딩에 익숙하지 않다면, 단어나 문서의 숫자적 표현이고 이들 사이에 존재하는 의미와 관계를 포착하는 것이다. 아래 코드 스니펫을 실행하면 실제로 무엇인지 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from gensim.models import Word2Vec
@@ -147,8 +256,18 @@ for word, embedding in word_embeddings.items():
 
 예시 정보 검색 시스템 (출처: Langchain)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자는 채팅과 새로운 질문을 결합하여 후속 질문을 할 수 있습니다.
 위의 임베딩 및 벡터 저장소를 사용하여 유사 문서를 찾을 수 있습니다.
@@ -160,7 +279,18 @@ for word, embedding in word_embeddings.items():
 
 Gen AI 모델의 성공을 위한 전형적인 도전 과제는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모델을 충분히 훈련할 만한 데이터가 있나요? 개인정보 문제로 사용이 제한되는 데이터가 있나요?
 - 모델이 해석 가능하고 설명 가능해야 하는가요? 예를 들어 고객이나 규제기관을 위해
@@ -172,7 +302,18 @@ Gen AI 모델의 성공을 위한 전형적인 도전 과제는:
 
 ML과 AI 시스템은 다릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ML 시스템이 수백 개 또는 수천 개의 다양한 소스에서 가져온 기능에 의존하는 것은 흔한 일입니다. 간단한 데이터 문제처럼 보일 수 있는 것들 — 누락된 데이터, 중복, 널 값 또는 빈 값, 이상치 — 이들은 비즈니스에 중대한 문제를 일으킬 수 있습니다. 이를 세 가지 다른 방법으로 생각해 볼 수 있습니다.
 
@@ -184,7 +325,18 @@ ML 시스템이 수백 개 또는 수천 개의 다양한 소스에서 가져온
 
 ![이미지](/assets/img/2024-05-18-MLGenAIfordatateams_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ML 시스템은 모델이 하나의 부분에 불과한 대규모 생태계입니다. — Google on Production ML Systems
 
@@ -194,7 +346,18 @@ ML 시스템은 모델이 하나의 부분에 불과한 대규모 생태계입�
 
 모델 성능은 ROC, AUC 및 F1 점수와 같이 잘 알려진 메트릭을 사용하여 간단히 모니터링할 수 있으며, 이러한 메트릭은 모델 성능의 단일 측정 항목을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상류 데이터 품질 문제의 예시
 
@@ -208,7 +371,18 @@ ML 시스템은 모델이 하나의 부분에 불과한 대규모 생태계입�
 - 계절별 제품 선호도: 계절에 따른 고객 선호도의 변화가 전자 상거래 추천에 영향을 미칩니다.
 - 금융 시장 변동: 경제적 사건으로 인한 시장의 급격한 변동이 주식 가격 예측 모델에 영향을 미치는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM에 대한 텍스트 데이터의 데이터 품질 문제 예시
 
@@ -219,7 +393,18 @@ LLM에 대한 텍스트 데이터의 데이터 품질 문제 예시
 
 우리는 데이터 팀이 소프트웨어 엔지니어링과 비교했을 때 신뢰할 수 있는 데이터 시스템을 제공하는 데 신뢰받지 못한다고 믿습니다. 인공지능 파동은 "쓰레기를 넣으면 쓰레기가 나온다" 모델과 그 모든 함의를 기하급수적으로 확장하고 있습니다. 모든 기업이 경쟁 우위를 위한 데이터를 활성화하는 새로운 방법을 찾는 압박 속에 있을 때입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 도구와 시스템이 모델 성능을 모니터링하기 위해 사용되지만, 이러한 도구들은 종종 데이터 웨어하우스의 상위 소스와 데이터 변환을 고려하지 않습니다. 데이터 신뢰성 플랫폼은 이를 위해 구축되었습니다.
 
@@ -229,7 +414,18 @@ LLM에 대한 텍스트 데이터의 데이터 품질 문제 예시
 
 고품질의 제품용 ML 및 AI 시스템을 지원하고 유지하기 위해 데이터 팀은 엔지니어들의 최상의 실천 방법을 채택해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![img](/assets/img/2024-05-18-MLGenAIfordatateams_11.png)
 
@@ -243,7 +439,18 @@ LLM에 대한 텍스트 데이터의 데이터 품질 문제 예시
 
 ![img](/assets/img/2024-05-18-MLGenAIfordatateams_12.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중요한 점은 다섯 가지 데이터 신뢰성 기둥을 구현하는 데 성공한다고 해도 문제가 발생하지 않는다는 것이 아니라, 단지 미리 발견할 가능성이 더 높아지고 자신감을 키워 고객에게 시간이 지남에 따라 어떻게 개선되고 있는지 전달할 수 있다는 것입니다.
 

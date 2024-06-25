@@ -3,13 +3,12 @@ title: "프론트엔드를 위한 백엔드BFF 패턴 - 왜 이를 알아야 할
 description: ""
 coverImage: "/assets/img/2024-05-20-BackendforfrontendBFFpatternwhydoyouneedtoknowit_0.png"
 date: 2024-05-20 17:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BackendforfrontendBFFpatternwhydoyouneedtoknowit_0.png
 tag: Tech
 originalTitle: "Backend for frontend (BFF) pattern— why do you need to know it?"
 link: "https://medium.com/mobilepeople/backend-for-frontend-pattern-why-you-need-to-know-it-46f94ce420b0"
 ---
-
 
 일반적인 문제는 모바일 앱에 API를 통합해야 할 때 발생합니다. 기존 시스템에 모바일 앱을 만들어야 하는 경우를 상상해보죠. 이 시스템은 API를 제공하여 웹 클라이언트만을 위한 단일 솔루션이었습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/mobilepeople/backend-for-frontend-pattern-why-you-need
 
 ![이미지](/assets/img/2024-05-20-BackendforfrontendBFFpatternwhydoyouneedtoknowit_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 경우에 도움이 될 수 있는 해결책은 Backend For Frontend 패턴입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/mobilepeople/backend-for-frontend-pattern-why-you-need
 
 ![백엔드 포 프론트엔드(BFF) 패턴](/assets/img/2024-05-20-BackendforfrontendBFFpatternwhydoyouneedtoknowit_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 친구를 위한 최상의 API 만드는 방법
 
@@ -39,7 +60,18 @@ link: "https://medium.com/mobilepeople/backend-for-frontend-pattern-why-you-need
 
 여기에서 이 단계에 대한 몇 가지 제안을 찾으실 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - UI/UX에 중점을 두고 필요한 데이터에 집중하세요.
 - 처음부터 모든 것을 일반화하려고 하지 마세요. 이렇게 하면 그 컴포넌트가 여러 조직에서 사용되며 많은 사람들이 기여하고자 할 수 있습니다.
@@ -52,7 +84,18 @@ link: "https://medium.com/mobilepeople/backend-for-frontend-pattern-why-you-need
 
 우리는 API를 훨씬 쉽게 유지하고 수정할 수 있으며, 심지어 특정 프론트엔드를 위한 API 버전 관리를 제공할 수 있습니다. 이는 사용자가 앱을 즉시 업데이트하지 않는 모바일 앱 관점에서 큰 이점입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프론트엔드와 백엔드 측면에서 시스템을 단순화해봅시다. 타협이 필요하지 않습니다.
 
@@ -62,7 +105,18 @@ BFF는 불필요하거나 민감한 데이터를 프론트엔드 애플리케이
 
 이에 더불어 성능 향상과 모바일에 대한 최적화 기회를 제공해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # BFF를 프로젝트에 소개하는 방법
 
@@ -71,13 +125,24 @@ BFF는 불필요하거나 민감한 데이터를 프론트엔드 애플리케이
 ![이미지](/assets/img/2024-05-20-BackendforfrontendBFFpatternwhydoyouneedtoknowit_4.png)
 
 그 다음 단계는 기존 프론트엔드를 위한 전체 BFF 구조였습니다. 아래 그림에서 각각의 마이크로서비스 유형과 사용법을 보여주는 도표를 확인해주세요:
+
 - 파란색은 리팩토링 중인 모노리스 시스템 위에 위치한 레이어들입니다.
 - 녹색은 두 BFF에서 동시에 사용되는 서비스입니다.
 - 반면, 노란색은 배포 관점에서 중복되어 각각의 BFF에 전용으로 제공되며 더 나은 성능을 제공합니다.
 - 빨간색은 모바일 BFF 전용이며, 알림, 메시지 큐 등과 같은 모바일에 특화된 솔루션을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![BFF Pattern](/assets/img/2024-05-20-BackendforfrontendBFFpatternwhydoyouneedtoknowit_5.png)
 
@@ -87,8 +152,18 @@ BFF는 불필요하거나 민감한 데이터를 프론트엔드 애플리케이
 
 ![BFF Pattern](/assets/img/2024-05-20-BackendforfrontendBFFpatternwhydoyouneedtoknowit_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # BFF를 사용하는 시점은?
 
@@ -98,7 +173,18 @@ BFF는 불필요하거나 민감한 데이터를 프론트엔드 애플리케이
 
 애플리케이션이 특정 프론트엔드 인터페이스를 위해 최적화된 백엔드를 개발해야 하거나, 클라이언트가 백엔드에서 집계를 필요로 하는 데이터를 소비해야 하는 경우, BFF는 확실히 적합한 선택지입니다. 물론, 추가 BFF 서비스를 배포하는 비용이 높다면 재고해야 할 수도 있지만, 대부분의 경우에 BFF가 제공할 수 있는 관심사 분리는 상당히 매력적인 제안으로 여겨질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -108,6 +194,17 @@ Backend For Frontend은 개발자와 더 중요한 사용자 및 사용자 경�
 
 # 다음 기사
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://medium.com/mobilepeople/bff-backend-is-a-friend-for-frontend-pros-and-cons-71857725fe7f

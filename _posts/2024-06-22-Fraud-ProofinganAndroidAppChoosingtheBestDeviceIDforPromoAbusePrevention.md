@@ -3,13 +3,12 @@ title: "안드로이드 앱 부정 방지 프로모션 남용을 막기 위한 �
 description: ""
 coverImage: "/assets/img/2024-06-22-Fraud-ProofinganAndroidAppChoosingtheBestDeviceIDforPromoAbusePrevention_0.png"
 date: 2024-06-22 23:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-Fraud-ProofinganAndroidAppChoosingtheBestDeviceIDforPromoAbusePrevention_0.png
 tag: Tech
 originalTitle: "Fraud-Proofing an Android App: Choosing the Best Device ID for Promo Abuse Prevention"
 link: "https://medium.com/@talsec/fraud-proofing-an-android-app-choosing-the-best-device-id-for-promo-abuse-prevention-aa4a2459637f"
 ---
-
 
 ⚡주요 요점:
 
@@ -23,7 +22,18 @@ link: "https://medium.com/@talsec/fraud-proofing-an-android-app-choosing-the-bes
 
 최근에 모바일 디바이스 식별에서 어려움에 부딪혔습니다 - 사용자 개인정보를 침해하지 않으면서 사기적인 디바이스를 식별하고 블록리스트에 올리는 방법은 무엇일까요. 이 문제는 결제 회피 또는 다양한 보너스를 악용하는 사용자들과 빈번히 대면하는 모바일 애플리케이션 소유자에게 특히 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 초기 가입 시 사용자들을 유혹하는 매력적인 보너스로 사용자를 유치하는 것은 흔한 일이지만, 이 전략은 내재적인 위험을 안고 있으며 남용될 수 있다는 점을 인지하는 것이 중요합니다. 이 악의적인 사용자들은 앱을 여러 번 다시 설치하여 계속해서 가입 보너스를 얻으려는 행위를 하는데, 이를 "멀티 인스턴싱"이라고 부릅니다.
 
@@ -33,7 +43,18 @@ link: "https://medium.com/@talsec/fraud-proofing-an-android-app-choosing-the-bes
 
 # 좋은 ID는 고유하며 충돌 방지, 지속적이고 개인정보 친화적이어야 합니다. 그리고 위조할 수 없어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 과거에는 특별한 권한을 요청하지 않고 MAC 주소나 IMEI를 통해 기기를 식별할 수 있었어요. 오늘날 안드로이드 개인 정보 보호를 위한 다양한 변경 사항 이후, Android 기기에서 AndroidID, MediaDRM, GSF ID, FID 및 InstanceID와 같은 여러 반영구적 ID가 사용 가능해졌어요. 물론, 사용자에게 상승된 액세스 및 잠재적 보안 문제를 가진 권한을 요청하는 것은 현실적이지 않아요.
 
@@ -41,7 +62,18 @@ link: "https://medium.com/@talsec/fraud-proofing-an-android-app-choosing-the-bes
 
 또 다른 방법으로는 다양한 디바이스 지문 라이브러리(예: fingerprintjs-android)를 사용하여 여러 기기 ID, 기기 상태, OS 지문 또는 설치된 앱을 기반으로 ID를 생성할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 ID들을 더 자세히 살펴보겠습니다.
 
@@ -55,7 +87,18 @@ link: "https://medium.com/@talsec/fraud-proofing-an-android-app-choosing-the-bes
 - InstanceID (GUID, UUID.randomUUID().toString())는 사용자 정의 생성 및 내부 저장 ID입니다만, 재설치를 견딜 수 없습니다.
 - Google 광고 ID는 전혀 적합하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약하면, 우리의 시나리오에서 나쁜 행위자를 식별하는 데 충분히 견고한 ID는 없습니다.
 
@@ -65,7 +108,18 @@ link: "https://medium.com/@talsec/fraud-proofing-an-android-app-choosing-the-bes
 
 위의 표를 다시 한 번 살펴보세요. 첫눈에는 하드웨어 지문 (위의 표 참조)가 최선의 선택일 수 있습니다. 이것은 인스턴트 앱 이벤트를 제외하고는 무엇이든 견딜 수 있습니다. 그러나 이 ID에는 한 가지 심각한 단점이 있습니다 — 충돌입니다. 이 충돌은 ID가 계산되는 방식에 의해 발생합니다. ID는 디바이스의 하드웨어에만 기반하기 때문에 발생합니다. 예를 들어, 조립 라인에서 직접 나오는 모든 삼성 갤럭시 Z 플립이 동일한 ID를 갖게 될 것입니다. 이 유형의 지문은 STABLE 지문이라고 불립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-06-22-Fraud-ProofinganAndroidAppChoosingtheBestDeviceIDforPromoAbusePrevention_2.png](/assets/img/2024-06-22-Fraud-ProofinganAndroidAppChoosingtheBestDeviceIDforPromoAbusePrevention_2.png)
 
@@ -75,7 +129,18 @@ link: "https://medium.com/@talsec/fraud-proofing-an-android-app-choosing-the-bes
 
 지문 예시: `f37fc958dc6d566a8f4bf1e0fd25b510`
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # MediaDRM
 
@@ -85,7 +150,18 @@ MediaDrm은 프리미엄 콘텐츠 재생을 위해 암호화 키를 안전하�
 
 하지만 여전히 제한 사항이 있습니다. MediaDrm을 지원하지 않는 장치에서는 사용할 수 없을 수 있습니다. 또한 동일한 제조업체의 장치 간에는 충돌이 많이 발생할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MediaDRM 예시: `e3af1aa4dacb6b6637846488b511e7643c6ac20b65c95baad164b122ecb036b6`
 
@@ -95,7 +171,18 @@ MediaDRM 예시: `e3af1aa4dacb6b6637846488b511e7643c6ac20b65c95baad164b122ecb036
 
 다중 인스턴싱 시나리오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 앱의 첫 설치
 - 앱 재설치
@@ -114,7 +201,18 @@ MediaDRM 예시: `e3af1aa4dacb6b6637846488b511e7643c6ac20b65c95baad164b122ecb036
 
 가장 중요한 관찰 결과를 여기에 나열하였습니다. 모든 테스트를 항상 수행할 수는 없었기 때문에 사소한 부분들은 모두 다시 시도했습니다 - 이는 공격자들이 시도할 것이기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 유지한 것 (= 좋은):
 
@@ -134,7 +232,18 @@ MediaDRM 예시: `e3af1aa4dacb6b6637846488b511e7643c6ac20b65c95baad164b122ecb036
 - OnePlus 8T의 병렬 공간에서 미디어 DRM이 변경되었습니다.
 - OnePlus 8T의 작업 프로필 및 게스트 사용자에서 Fingerprint V5 Optimal이 변경되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른:
 
@@ -145,7 +254,18 @@ MediaDRM 예시: `e3af1aa4dacb6b6637846488b511e7643c6ac20b65c95baad164b122ecb036
 
 # 원시 데이터 분석
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과를 양적으로 파악하기 위해 우리는 데이터를 살펴보고 해당 ID들의 행동을 평가하여 데이터를 기반으로 가장 적합한 ID를 찾아냈습니다. 사용자 기반의 기기와 비교하여 우리의 데이터가 왜곡되어 있고 대표적이지 않을 수 있다는 점을 기억해 주세요.
 
@@ -155,7 +275,18 @@ MediaDRM 예시: `e3af1aa4dacb6b6637846488b511e7643c6ac20b65c95baad164b122ecb036
 
 아래에서 각 ID의 고유 값 수와 이 데이터에서 캡처된 고유 디바이스 모델 수를 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AndroidID: 13 402 601
 
@@ -165,7 +296,18 @@ MediaDRM: 13 285 081
 
 InstanceId: 13 740 706
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 기기 모델: 14,175 (예: Pixel 4, SM-G973N, ONEPLUS A5000, LG-H930, ...)
 
@@ -175,7 +317,18 @@ InstanceId: 13 740 706
 
 그 후, 우리는 ID들 간의 동시 발생을 살펴보았습니다. 이를 통해 그들 간의 관련성을 파악해 보았어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 테이블을 읽는 방법입니다. 하나의 AndroidID에는 1.00557개의 고유한 MediaDRM이 있으며, 고유한 AndroidID 중 0.54%가 하나 이상의 MediaDRM을 가지고 있습니다.
 
@@ -183,7 +336,18 @@ InstanceId: 13 740 706
 
 데이터에 따르면, 우리는 여전히 "최적" 식별자를 찾고 있기 때문에 "다른 기기"가 무엇인지 말할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이디 당 평균 모델 수를 살펴봐요. ID마다 모델이 하나만 있는 것이 이상적입니다 — 서로 다른 디바이스에 동일한 ID가 있는 충돌이 최소화되기를 바랍니다. 아래 표를 빠르게 살펴보면 진정한 불일치가 있음을 알 수 있어요.
 
@@ -193,7 +357,18 @@ InstanceId: 13 740 706
 
 데이터 분석 결과, 다음과 같이 진술할 수 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - FingerprintV3는 다른 ID들에 비해 값이 너무 많아서 우리 시나리오에서는 덜 유용합니다.
 - 하나의 AndroidID/MediaDRM/InstanceID에는 보통 여러 개의 FingerprintV3가 있습니다.
@@ -213,7 +388,18 @@ InstanceId: 13 740 706
 - 한 MediaDRM 당 평균 제조업체 수: 1.000085
 - 한 제조업체 당 MediaDRM의 평균 모델 수: 1.006362
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## MediaDRM를 개선할 수 있을까요?
 
@@ -223,8 +409,18 @@ InstanceId: 13 740 706
 
 아래는 위와 동일한 공현 테이블이며, 이제 MediaDRM+모델과의 관계를 포함하고 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-22-Fraud-ProofinganAndroidAppChoosingtheBestDeviceIDforPromoAbusePrevention_6.png)
 
@@ -234,8 +430,18 @@ InstanceId: 13 740 706
 
 그러므로 데이터를 기반으로, 사기 탐지 사례를 검토할 때 MediaDRM과 기기 모델의 간단한 조합을 ID로 사용하는 것을 제안합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요약
 

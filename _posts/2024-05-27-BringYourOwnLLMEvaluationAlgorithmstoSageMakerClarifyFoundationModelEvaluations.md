@@ -10,7 +10,6 @@ originalTitle: "Bring Your Own LLM Evaluation Algorithms to SageMaker Clarify Fo
 link: "https://medium.com/aws-in-plain-english/bring-your-own-llm-evaluation-algorithms-to-sagemaker-clarify-foundation-model-evaluations-714ce6f02fbb"
 ---
 
-
 ![Amazon SageMaker Clarify Foundation Model Evaluations](/assets/img/2024-05-27-BringYourOwnLLMEvaluationAlgorithmstoSageMakerClarifyFoundationModelEvaluations_0.png)
 
 Amazon SageMaker Clarify Foundation Model Evaluations는 내장 평가 알고리즘을 다양한 NLP 작업(요약, 질의 응답, 유해성 감지 등)에 걸쳐 실행할 수 있는 도구입니다. 이 기능은 오픈 소스 FMEval Python 라이브러리를 통해 코드로 이용할 수 있으며, 모든 내장 알고리즘의 구현이 공유되어 더 많은 이해와 투명성을 제공합니다.
@@ -19,8 +18,18 @@ FMEval은 여러분의 LLMOps/FMOPs 워크플로에 손쉽게 통합할 수 있�
 
 이 예제에서는 FMEval 라이브러리를 확장하여 "자체 알고리즘을 가져오는" 방법을 살펴보겠습니다. 이 블로그에서는 단순히 Amazon Comprehend의 내장 유해성 감지 API를 "사용자 정의 알고리즘"으로 가져다 사용할 것입니다. 라이브러리에서 제공되는 것을 활용하고 싶다면 FMEval은 이미 자체 유해성 알고리즘을 구현하고 있음을 참고하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테이블 목차
 
@@ -30,7 +39,18 @@ FMEval은 여러분의 LLMOps/FMOPs 워크플로에 손쉽게 통합할 수 있�
 
 ## 1. 솔루션 개요 및 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드로 넘어가기 전에 먼저 FMEVal 뒤에 있는 핵심 구조물에 대해 간단히 상기해 볼게요. 이해해야 할 세 가지 객체가 있습니다:
 
@@ -40,7 +60,18 @@ FMEval을 사용하면, 데이터 구성 객체에는 기존 모델 출력이 �
 
 이 예제에서는 SageMaker Studio Notebook에서 ml.c5.large 인스턴스에서 conda_python3 커널을 사용할 것입니다. 노트북에서 사용되는 fmeval 및 기타 보조 라이브러리가 설치되어 있는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 더미 데이터 세트를 몇 가지 무작위 항목과 함께 만들었습니다. 실제 사용 사례에서는이 데이터 세트로 교체해야 합니다.
 
@@ -55,7 +86,18 @@ FMEval을 사용하면, 데이터 구성 객체에는 기존 모델 출력이 �
 
 페이로드를 준비하는 방법을 정의하고, 모델 출력이 포함된 새 JSONLines 파일을 만들게 됩니다. 이 경우에는 Amazon Bedrock를 통해 Claude 2.0을 사용하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import json
@@ -117,9 +159,18 @@ custom_config = DataConfig(
 
 데이터가 준비되었으므로, Amazon Comprehend를 FMEval 내에서 사용자 정의 평가 알고리즘으로 구현할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 2. 사용자 정의 평가 알고리즘 구현 및 실행
 
@@ -137,7 +188,18 @@ class CustomEvaluator(EvalAlgorithmInterface):
 
 여기서 우리는 사용자 정의 평가 알고리즘을 구현하는 메서드를 정의합니다. Comprehend의 경우, 이것은 단순한 API 호출입니다. Comprehend는 미리 학습된 NLP 모델을 사용하는 고수준 AI AWS 서비스이기 때문입니다. 실제 시나리오에서 사용할 사용자 고유의 평가 알고리즘 구현으로 이 메서드를 대체해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 @staticmethod
@@ -170,7 +232,18 @@ class CustomEvaluator(EvalAlgorithmInterface):
 
 먼저 하나의 데이터 포인트에 대한 evaluate_sample()을 정의합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def evaluate_sample(self, model_output: str) -> list:
@@ -237,9 +310,18 @@ def evaluate(self, model: Optional[ModelRunner] = None, dataset_config: Optional
 
 평가 알고리즘이 정의되었으므로, 주요 노트북에서 알고리즘을 인스턴스화하고 두 메서드를 테스트할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 # 알고리즘을 인스턴스화합니다.
@@ -256,14 +338,27 @@ custom_evaluator.evaluate_sample(model_output="I am super angry and super upset 
 
 ![이미지](/assets/img/2024-05-27-BringYourOwnLLMEvaluationAlgorithmstoSageMakerClarifyFoundationModelEvaluations_2.png)
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 다음 Data Config 객체와 Prompt 템플릿을 evaluate() 메서드에 전달합니다. 여기서 모델 출력이 없는 경우에는 Model Runner를 정의해야 합니다.
 
 ```js
-custom_evaluator.evaluate(dataset_config=custom_config, prompt_template="$feature", save=True)
+custom_evaluator.evaluate(
+  (dataset_config = custom_config),
+  (prompt_template = "$feature"),
+  (save = True)
+);
 ```
 
 그런 다음 출력된 JSONLines 파일을 구문 분석하여 데이터셋의 각 행에 대한 반환된 메트릭을 확인합니다. 이 경우, 각 데이터 포인트에 대해 메트릭이 매우 유사하여 모델이 비슷한 답변을 반환했음을 나타냅니다(부정적인 콘텐츠를 생성하지 않았습니다).
@@ -280,7 +375,18 @@ df = pd.DataFrame(data)
 df
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-BringYourOwnLLMEvaluationAlgorithmstoSageMakerClarifyFoundationModelEvaluations_3.png)
 
@@ -290,7 +396,18 @@ df
 
 FMEval을 사용하여 모델을 평가뿐만 아니라 이를 MLOps 워크플로에 원활하게 통합할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언제나 읽어 주셔서 감사합니다. 피드백을 자유롭게 남겨 주세요.
 
@@ -300,7 +417,18 @@ FMEval을 사용하여 모델을 평가뿐만 아니라 이를 MLOps 워크플�
 
 In Plain English 커뮤니티의 일원이 되어 주셔서 감사합니다! 떠나시기 전에:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 작가를 칭찬하고 팔로우도 잊지 말아주세요! 👏
 - 저희를 팔로우해주세요: X | LinkedIn | YouTube | Discord | Newsletter

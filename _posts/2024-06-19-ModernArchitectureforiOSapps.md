@@ -3,13 +3,12 @@ title: "iOS 앱을 위한 현대적 아키텍처"
 description: ""
 coverImage: "/assets/img/2024-06-19-ModernArchitectureforiOSapps_0.png"
 date: 2024-06-19 11:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-ModernArchitectureforiOSapps_0.png
 tag: Tech
 originalTitle: "Modern Architecture for iOS apps"
 link: "https://medium.com/@antony.karpov/modern-architecture-for-ios-apps-7a791439f9e3"
 ---
-
 
 ![이미지](/assets/img/2024-06-19-ModernArchitectureforiOSapps_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@antony.karpov/modern-architecture-for-ios-apps-7a7914
 
 본문에서는 좋은 아키텍처가 어떻게 보여야 하는지와 그 이유, 도래하는 혜택 및 최대한 활용하기 위해 현대 기술 스택을 활용하여 어떻게 구축해야 하는지에 대한 경험을 공유하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 고지사항
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@antony.karpov/modern-architecture-for-ios-apps-7a7914
 
 실제 앱에 적합한 좋은 아키텍처를 정의해 봅시다. 이에 대해 약간 다른 의견이 많이 있지만, 일반적으로 다음 요구 사항에 초점을 맞춥니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 쉽게 읽고 이해하기 쉽습니다.
 - 재사용, 확장 및 확장하기 쉽습니다.
@@ -45,7 +66,18 @@ link: "https://medium.com/@antony.karpov/modern-architecture-for-ios-apps-7a7914
 
 # 아키텍처에 대해 더 자세히 알아보기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아키텍처는 일종의 타협안이며, 결과가 따라온다는 것을 명심해야 해요. MVC, MVP, MVVM과 같은 이러한 아키텍처 패턴들은 매우 간단하고 짧은 학습 후에 쉽게 사용을 시작할 수 있어요. 하지만 이러한 간단함의 반대편은 이러한 패턴들이 보통 코드베이스의 분리 방법을 설명하기 때문에 실제로 해석과 구현이 상당히 다르다는 사실이에요. 결과적으로 각 팀은 레이어 사이의 분리를 유지하기 위해 자체 규칙을 가지고 있으며, 이러한 규칙은 일반적으로 쉽게(실제로는 아마도) 어기기 쉽다는 것이죠. 이러한 패턴의 전형적인 문제는 거대한 비즈니스 로직 레이어인데, 이는 레이어 간의 명확한 경계가 없으면 의존성 주입 없이도 서비스 레이어 및 다른 엔티티를 직접 사용하는 경향이 있어서 제대로 테스트하기 어렵다는 점이에요.
 
@@ -55,7 +87,18 @@ RIBs와 VIPER와 같은 고급 아키텍처 패턴도 있지만, 둘 다 기술�
 
 ## 현대 소프트웨어는 팀워크입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현대의 대부분의 경쟁력 있는 모바일 앱은 단독으로 개발되는 것이 아니라, 경우에 따라 수십 개의 팀에 의해 개발됩니다. 물론 시장에는 많은 독립 개발자들이 있지만, 대부분의 경우 비즈니스 앱과는 조금 다릅니다.
 
@@ -65,7 +108,18 @@ RIBs와 VIPER와 같은 고급 아키텍처 패턴도 있지만, 둘 다 기술�
 
 보통 사람들은 이에 대해 많이 이야기하지 않지만, 잘 구조화된 모듈화 수준이 높은 앱은 두 수준의 아키텍처를 갖고 있습니다. 첫 번째 수준은 건물 블록과 같은 것으로, MVC, MVP, MVVM 등과 같은 하나의 특정 화면 또는 해당 일부 (복잡한 화면의 경우)를 구축하는 책임이 있는 아키텍처입니다. 두 번째 수준은 모든 건물 블록을 조합하고 이를 위해 모든 필요한 종속성을 제공하며 앱의 다양한 부분 간의 라우팅을 포함하는 아키텍처를 담당합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중간 규모 이상의 모바일 앱을 위해서는 좋은 앱 아키텍처에 대한 위에서 언급한 모든 요구 사항을 충족시키기 위해 두 가지 아키텍처가 필요합니다. 예를 들어, 이 두 번째 아키텍처 없이는 앱의 각 부분에 대해 명확하고 강력한 경계를 설정하는 것이 불가능하며, 가로 확장성, 테스트 가능성, 디버깅 및 유지 관리와 같은 것들을 달성하는 것이 극도로 어려울 것입니다. 이 역할을 수행하기에 가장 적합한 후보 중 하나는 "Composition Root" 패턴입니다. 이에 대해 이 글에서 나중에 자세히 설명하겠습니다.
 
@@ -75,7 +129,18 @@ Elm 아키텍처는 웹 개발에서 잘 알려져 있지만, 모바일 개발�
 
 ## Elm 아키텍처란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 Elm 프로그램도 항상 다음과 같은 요소로 구분됩니다:
 
@@ -88,7 +153,18 @@ Elm 아키텍처는 웹 개발에서 잘 알려져 있지만, 모바일 개발�
 
 이를 기반으로, 몇 가지 매우 중요한 결과가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모델은 주로 모바일 개발에서 State로 명명되며, 앱의 현재 상태나 현재 화면 등을 나타내는 데 필요한 모든 것을 유지하는 단일한 진실의 원천입니다.
 - 뷰는 모바일 개발에서는 뷰 빌더라고하는 순수한 함수인 뷰로, 상태를 입력으로 받고 사용자 인터페이스를 출력으로 하는 기능입니다.
@@ -101,8 +177,18 @@ Elm 아키텍처는 웹 개발에서 잘 알려져 있지만, 모바일 개발�
 
 예를 들어 사용자가 Pull-to-Refresh 제스처를 수행하면 "사용자가 업데이트 요청함" 이벤트가 리듀서 함수로 전달됩니다. 리듀서는 첫 번째 부작용 "로딩이 시작됨"을 생성하고 새 데이터를 가져 오기 위해 네트워크 API 호출을 수행합니다. 그런 다음 API 호출이 완료되면 리듀서는 두 번째 부작용 "로딩이 중지됨"을 생성합니다. 세 번째 부작용은 API 호출의 결과에 따라 다르며, 성공하는 경우 리듀서는 "새로운 데이터가 도착함" 효과를 생성하고, 그렇지 않으면 "오류가 발생함" 효과가 됩니다. 각 효과는 현재 상태에 적용되며 각 상태의 변경 후, 뷰 빌더가 사용자를 위해 업데이트된 실제 UI를 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-ModernArchitectureforiOSapps_3.png)
 
@@ -117,8 +203,18 @@ Elm 아키텍처는 웹 개발에서 잘 알려져 있지만, 모바일 개발�
 
 처음에는 조금 복잡해 보일 수 있지만, 실제로 사용하는 데 매우 쉽습니다. 특정 엔티티의 한정된 세트가 있고 각각이 특정 작업에만 책임 있기 때문입니다. 일방향 흐름이기 때문에 이를 따르고 무슨 일이 일어나고 있는지 이해하는 것이 쉽습니다. 대부분의 로직은 순수 함수이며, 진실의 단일 출처이며, 비즈니스 및 프리젠테이션 로직이 확실히 분리되어 있습니다. 이 모든 것을 고려할 때, 이 접근 방식은 정말 높은 수준의 테스트 가능성을 가지고 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구현
 
@@ -129,7 +225,18 @@ iOS를 위한 Elm 아키텍처의 공식적인 구현은 없지만 적어도 두
 
 왜 이벤트/이펙트를 분리해야 하는 이유일까요? — 비즈니스 로직의 보호를 위해서입니다. 시스템에 이 분리가 없다면 시스템은 외부에서 내부 이펙트로 확장될 수 있는 공개 이벤트를 가로채고 로직을 망가뜨릴 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 왜 명확한 경계가 중요한가요? — 앱을 작은 독립적인 조각으로 분할하는 가능성은 중요합니다. 전체 코드베이스를 개별 패키지와 타겟으로 분리하면 적은 결합도와 각 부분의 제한된 범위가 유지되어 테스트 가능성, 디버깅 용이성 및 유지 관리에 필수적인 좋은 수준을 유지할 수 있습니다.
 
@@ -142,7 +249,18 @@ iOS를 위한 Elm 아키텍처의 공식적인 구현은 없지만 적어도 두
 - UIKit + Combine (iOS 13–16): Apple이 마침내 원시적인 반응형 프레임워크인 Combine을 제시했는데, RxSwift와 같은 일부 영역에서는 그만큼 강력하지 않지만, 일상적인 루틴에 충분히 좋으며 여전히 대부분의 앱에서 활발히 사용되고 있습니다.
 - SwiftUI + Async/Await (iOS 15+): 네이티브 SwiftUI를 사용한 선언적 UI의 새 시대의 시작으로 처음에는 충분히 안정적이지 않았지만, 매 iOS 릴리스마다 점점 더 안정되고 매력적으로 변화했습니다. Async/Await는 여러 해 동안 많이 원하던 언어 기능이 드디어 출시되었으며 구현이 훌륭하고 강력합니다. 여전히 개선 중이지만, 확실히 제작용으로 완성되었으며 적어도 다음 몇 년 동안 기술 표준이 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플리케이션이 잘 관리되고 리팩터링이 필요한 부분을 계속 수행하는 경우, 이러한 단계들은 서로 점진적으로 전환됩니다. 만약 앱이 iOS 16의 최소 배포 버전을 갖고 있지만 여전히 RxSwift를 적극적으로 사용 중이라면, 무언가 잘못되었을 가능성이 높으며 앱의 기술적 측면에 충분한 주의를 기울이지 않고 있는 것일 수도 있습니다.
 
@@ -152,7 +270,18 @@ iOS를 위한 Elm 아키텍처의 공식적인 구현은 없지만 적어도 두
 
 우리는 다 알다싶이 - "말은 싸다. 코드를 보여줘."라는 말처럼; Elm 아이디어를 기반으로 하고 SOLID와 Clean Architecture 원칙을 염두에 두어 오늘날 가장 인기있는 기술 스택인 Combine + UIKit으로 Elm 아키텍처를 내 비전대로 구현했습니다. 이 구현은 여기에서 찾아볼 수 있습니다: https://github.com/angryscorp/TEA-Combine.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 구현을 쉽게 평가할 수 있지만 몇 가지 순간을 강조하고 싶습니다.
 
@@ -184,22 +313,33 @@ public enum SceneEffect {
 
 어셈블리 함수는 부작용이 없는 순수 함수로, 현재 장면이 의존하는 모든 것을 쉽게 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 public struct MainScene {
-    
+
     public static func create(
         setRootVC: (UIViewController) -> Void,
         selectSomething: @escaping (UIViewController) -> AnyPublisher<Int?, Never>
     ) {
         let vc = ViewController()
-                
+
         let env = SceneEnvironment(
             getRandomNumber: { Just(Int.random(in: 1...9)).eraseToAnyPublisher() },
             selectSomething: { selectSomething(vc) }
         )
-        
+
         TEA.start(
             initialState: SceneState(),
             environment: env,
@@ -217,7 +357,7 @@ Reducer의 함수들도 순수하며, Event와 Effect가 단순히 열거형이�
 
 ```js
 public enum SceneReducer {
-    
+
     public static func transform(
         state: SceneState,
         event: SceneEvent,
@@ -228,12 +368,12 @@ public enum SceneReducer {
             return env.getRandomNumber()
                 .map { SceneEffect.resultDidReceive(-$0) }
                 .eraseToAnyPublisher()
-            
+
         case .userDidRequestIncrease:
             return env.getRandomNumber()
                 .map { SceneEffect.resultDidReceive($0) }
                 .eraseToAnyPublisher()
-            
+
         case .userDidRequestSomething:
             return env.selectSomething()
                 .map(SceneEffect.somethingDidReceive)
@@ -252,7 +392,7 @@ public enum SceneReducer {
                 currentValue: state.currentValue + value,
                 counter: state.counter + 1
             )
-            
+
         case let .somethingDidReceive(value):
             return .init(
                 something: value,
@@ -266,38 +406,54 @@ public enum SceneReducer {
 
 사용자 인터페이스와 비즈니스 로직을 연결하는 모든 것은 딱 한 가지 함수 뿐이며, 따라서 UI 부분을 다른 것으로 쉽게 대체할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 func bind(state: AnyPublisher<SceneState, Never>) -> AnyPublisher<SceneEvent, Never> {
-        state
-            .receive(on: DispatchQueue.main)
-            .sink(receiveValue: { [unowned self] state in
-                self.somethingLabel.text = "Something: " + (state.something.map {"\($0)"} ?? "nil")
-                self.counterLabel.text = "Counter: \(state.counter)"
-                self.currentValueLabel.text = "Current value: \(state.currentValue)"
-                
+state
+.receive(on: DispatchQueue.main)
+.sink(receiveValue: { [unowned self] state in
+self.somethingLabel.text = "Something: " + (state.something.map {"\($0)"} ?? "nil")
+self.counterLabel.text = "Counter: \(state.counter)"
+self.currentValueLabel.text = "Current value: \(state.currentValue)"
+
             })
             .store(in: &subscriptions)
-        
+
         return eventSubject.eraseToAnyPublisher()
     }
 
-
 환경은 모든 종속성 및 라우팅을 포함하며, 장면 관점에서 봤을 때, 서비스 종속성과 다른 화면에서 값을 가져오는 것 사이에 기본적인 차이가 없습니다. 두 종속성 모두 순수 함수로 표현할 수 있습니다.
 
-
 public struct SceneEnvironment {
-    let getRandomNumber: () -> AnyPublisher<Int, Never>
-    let selectSomething: () -> AnyPublisher<Int?, Never>
+let getRandomNumber: () -> AnyPublisher<Int, Never>
+let selectSomething: () -> AnyPublisher<Int?, Never>
 }
-
 
 ## 추가 개발
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 시간은 멈추지 않고 Combine에서 Async/Await와 SwiftUI로 이동할 시간입니다. 여기 Elm 아이디어가 여기서도 잘 작동하는 증거입니다: https://github.com/angryscorp/TEA-AsyncAwait.
 
@@ -305,7 +461,7 @@ public struct SceneEnvironment {
 
 ```swift
 public enum ExampleReducer {
-    
+
     public static func transform(
         state: ExampleState,
         event: ExampleEvent,
@@ -320,7 +476,7 @@ public enum ExampleReducer {
             return .newValue(newValue)
         }
     }
-    
+
     public static func apply(
         state: inout ExampleState,
         effect: ExampleEffect
@@ -336,7 +492,18 @@ public enum ExampleReducer {
 
 모든 이점이 동일합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 리듀서를 위한 순수 함수
 - 비즈니스 로직이 없는 뷰
@@ -354,7 +521,18 @@ public enum ExampleReducer {
 
 이미 테스트 가능성에 대한 언급을 조금 했었지만, 이번에 한 번 더 테스트의 중요성을 강조하고 싶습니다. 모바일 개발에서 일반적인 문제 중 하나는 테스트 작성이 인기 없다는 것입니다. 실제로 그 이유는 대부분 응용 프로그램 아키텍처가 안 좋기 때문입니다. 안 좋은 아키텍처는 기능을 테스트하기 어렵게 만듭니다. 테스트하기 어렵다는 것은 제대로 테스트하기 위해 많은 시간이 소요된다는 것을 의미합니다. 많은 시간이 든다는 것은 매우 비용이 소요된다는 것입니다. 매우 비용이 소요된다는 것은 비즈니스적인 측면에서 볼 때 이미 모든 게 올바르게 작동하고 있다고 보기 때문에 구현되지 않을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-ModernArchitectureforiOSapps_4.png)
 
@@ -366,7 +544,18 @@ public enum ExampleReducer {
 - 초기 상태
 - 기대되는 상태
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
     func test_userDidRequestIncrease() {
@@ -392,7 +581,18 @@ public enum ExampleReducer {
 
 The full implementation of XCTestCase for the Elm architecture can be found here.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단위 테스트 외에도 스냅샷 테스트가 존재합니다. 많은 이점이 있음에도 불구하고, 스냅샷 테스트는 모바일 개발에서 매우 인기가 없으며, 그 이유는 보통 비슷합니다. 스냅샷 테스트를 구현하려면 뷰를 초기화해야 하는데, 이는 품질이 낮거나 적절한 의존성 주입 메커니즘이 없는 경우 쉽지 않을 수 있습니다.
 
@@ -403,7 +603,18 @@ The full implementation of XCTestCase for the Elm architecture can be found here
 - UI 레이어를 재발을 보호하므로 어떠한 변경과 리팩터링도 두렵지 않고 수행할 수 있습니다.
 - 테스트의 필요성을 염두에 두고 뷰를 올바른 방식으로 구현하도록 개발자들에게 유도하므로 유지보수와 시스템 디버깅 수준을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구성 루트
 
@@ -414,7 +625,18 @@ The full implementation of XCTestCase for the Elm architecture can be found here
 
 적절한 종속성 주입의 부재는 다음과 같은 결과로 이어집니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 장면 내에서 종속성 해결(Service-Locator 반패턴)
 - 주입 없이 종속성을 직접 사용하여 장면 테스트가 불가능해지는 문제
@@ -426,7 +648,18 @@ The full implementation of XCTestCase for the Elm architecture can be found here
 
 모든 이러한 문제는 "구성 루트" 패턴을 통해 성공적으로 해결하고 전체 코드 베이스를 독립적인 모듈(스위프트 패키지 매니저(SPM) 용어에서 패키지 및 타겟)로 분할함으로써 해결할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Composition Root은 모듈이 결합되는 애플리케이션의 고유 위치입니다.
 
@@ -436,7 +669,18 @@ Composition Root은 모듈이 결합되는 애플리케이션의 고유 위치�
 
 ![이미지](/assets/img/2024-06-19-ModernArchitectureforiOSapps_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 구성 요소는 별도의 타겟으로 Swift Package에 있으며, 이상적으로 관련된 몇 가지 구성 요소/타겟(예: "온보딩" 플로우와 같이 함께하는 사용자 흐름)은 별도의 Swift 패키지에 위치해 있습니다.
 
@@ -454,7 +698,18 @@ Composition Root은 모듈이 결합되는 애플리케이션의 고유 위치�
 - 앱의 모든 레이어 및 부분 간의 낮은 결합도
 - 변경되지 않은 모듈을 캐싱하여 컴파일 프로세스가 빨라짐
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 걱정하는 것을 그치고, 삶을 시작하는 방법
 
@@ -464,7 +719,18 @@ Composition Root은 모듈이 결합되는 애플리케이션의 고유 위치�
 
 다시 강조하고 싶은 것은, 앱을 개선하기 위해 특별한 작업이 필요하지 않으며, 일상적인 루틴의 일부로 이를 수행하면 된다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 모든 것은 이론적인 접근이나 환상에 그치는 것이 아닙니다. 몇 차례 시도해 본 경험을 통해 알려주겠습니다. 많은 문제와 안티패턴이 존재하는 레거시 앱을 성공적으로 최고 수준의 견고하고 효율적인 솔루션으로 변환했습니다.
 
@@ -474,6 +740,17 @@ Elm 아키텍처와 Composition Root 패턴 뒤에 있는 아이디어는 새로
 
 실제 제작 개발에서 검증된 작동하는 구현을 제공했지만, 항상 솔루션과 아이디어를 특정 상황과 기술 스택에 맞게 맞추는 것이 더 좋습니다. 이를 강화시키기 위해 발전시킬 수 있는 초안으로도 고려할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 권장하고 장려하는 바에 따라 아키텍처 주제에 조금 더 깊이 파고들어보시고 이 글에서 제안하는 아이디어를 귀하의 프로젝트에서 시도해보세요. 그것이 잘 작동하고 귀하의 앱을 다음 수준으로 끌어 올릴 수 있다는 것을 직접 확인하면서, 없을 때 어떻게 살아온 지 의심스러울 정도일 겁니다.

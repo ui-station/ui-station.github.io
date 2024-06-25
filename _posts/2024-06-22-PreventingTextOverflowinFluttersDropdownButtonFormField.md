@@ -3,13 +3,12 @@ title: "Flutter DropdownButtonFormField에서 텍스트 넘침 방지하는 방�
 description: ""
 coverImage: "/assets/img/2024-06-22-PreventingTextOverflowinFluttersDropdownButtonFormField_0.png"
 date: 2024-06-22 23:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-PreventingTextOverflowinFluttersDropdownButtonFormField_0.png
 tag: Tech
 originalTitle: "Preventing Text Overflow in Flutter’s DropdownButtonFormField"
 link: "https://medium.com/@paramjeet.singh0199/preventing-text-overflow-in-flutters-dropdownbuttonformfield-337d679fdce3"
 ---
-
 
 # 문제: RenderFlex 오버플로우
 
@@ -23,7 +22,18 @@ A RenderFlex overflowed by 14 pixels on the right.
 
 이 문제는 드롭다운 항목의 텍스트가 사용 가능한 너비를 초과하여 오버플로우가 발생하기 때문에 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 해결책: isExpanded 사용하기
 
@@ -33,7 +43,18 @@ A RenderFlex overflowed by 14 pixels on the right.
 
 다음은 이 해결책을 구현하는 방법을 보여주는 간결한 예시 코드입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dart
 Widget _buildDropdownButtonFormField() {
@@ -75,7 +96,17 @@ isExpanded: true로 설정하면 드롭다운 버튼과 항목이 사용 가능�
 
 ## 결론
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DropdownButtonFormField에서 isExpanded 속성을 사용하면 텍스트 오버플로 문제를 쉽고 효과적으로 처리할 수 있어요. 이 작은 변경은 드롭다운 메뉴 레이아웃을 개선하여 깔끔하고 사용자 친화적인 인터페이스를 보장해 줘요.

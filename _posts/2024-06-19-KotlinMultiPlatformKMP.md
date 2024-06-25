@@ -3,13 +3,12 @@ title: "코틀린 멀티플랫폼 KMP"
 description: ""
 coverImage: "/assets/img/2024-06-19-KotlinMultiPlatformKMP_0.png"
 date: 2024-06-19 14:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-KotlinMultiPlatformKMP_0.png
 tag: Tech
 originalTitle: "Kotlin MultiPlatform (KMP)"
 link: "https://medium.com/@ZahraHeydari/kotlin-multiplatform-kmp-4799fdfb69f1"
 ---
-
 
 이것은 안드로이드 및 iOS 플랫폼에서 작동하는 첫 번째 크로스 플랫폼 응용 프로그램을 만드는 단계별 안내서입니다.
 
@@ -19,7 +18,18 @@ Kotlin Multiplatform 기술은 크로스 플랫폼 프로젝트의 개발을 간
 
 https://github.com/ZahraHeydari/Kotlin-MultiPlatform-Mobile
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이 기사에서 배울 내용:
 
@@ -35,7 +45,18 @@ https://github.com/ZahraHeydari/Kotlin-MultiPlatform-Mobile
 
 필요한 도구를 설치하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Android Studio
 - Xcode
@@ -51,7 +72,18 @@ brew install kdoctor
 
 # 2. 기본 KMM 프로젝트 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 안드로이드 스튜디오를 열고 새 프로젝트 템플릿에서 Kotlin Multiplatform App을 선택하세요. 그리고 '다음' 버튼을 클릭하세요.
 
@@ -61,7 +93,18 @@ brew install kdoctor
 
 ![이미지](/assets/img/2024-06-19-KotlinMultiPlatformKMP_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내 iOS 앱에 대한 종속성 관리자를 선택하십시오. 기본적으로 Regular framework이 선택되어 있고, 그런 다음 '완료'를 눌러주세요.
 
@@ -71,7 +114,18 @@ Gradle 동기화가 완료되면 툴바에서 실행 버튼을 사용하여 iOS 
 
 ![이미지](/assets/img/2024-06-19-KotlinMultiPlatformKMP_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 안드로이드 에뮬레이터나 iOS 시뮬레이터에서 앱을 실행할 거예요.
 
@@ -81,7 +135,18 @@ Gradle 동기화가 완료되면 툴바에서 실행 버튼을 사용하여 iOS 
 
 각 Kotlin Multiplatform 프로젝트는 shared, androidApp, iosApp 세 가지 모듈을 포함하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-KotlinMultiPlatformKMP_6.png" />
 
@@ -93,8 +158,18 @@ Gradle 동기화가 완료되면 툴바에서 실행 버튼을 사용하여 iOS 
 
 기대 및 실제 선언을 통해 Kotlin Multiplatform 모듈에서 플랫폼별 API에 액세스할 수 있습니다. 공통 코드에서 플랫폼에 중립적인 API를 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-19-KotlinMultiPlatformKMP_7.png)
 
@@ -104,8 +179,18 @@ Gradle 동기화가 완료되면 툴바에서 실행 버튼을 사용하여 iOS 
 
 2. 이 구조물에 expect 키워드를 표시합니다. 이것이 예상 선언입니다. 이러한 선언은 공통 코드에서 사용할 수 있지만 구현은 포함하면 안 됩니다. 대신, 플랫폼별 코드가이 구현을 제공합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 각 플랫폼별 소스 세트에서 동일한 구조물을 동일한 패키지에 선언하고 actual 키워드로 표시하세요. 이것이 여러분의 실제 선언입니다. 일반적으로 이 선언에는 플랫폼별 라이브러리를 사용하여 구현이 포함됩니다.
 
@@ -115,7 +200,18 @@ Gradle 동기화가 완료되면 툴바에서 실행 버튼을 사용하여 iOS 
 
 공통 코드는 서로 다른 플랫폼 간에 공유되는 Kotlin 코드입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 예제를 살펴보겠습니다:
 
@@ -139,7 +235,18 @@ expect fun getPlatform(): Platform
 
 ## 모든 플랫폼에서 코드 공유하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 모든 플랫폼에 대해 공통인 비즈니스 로직이 있다면, 각 플랫폼에 동일한 코드를 작성할 필요가 없습니다. 그저 공통 소스 집합에서 공유하면 됩니다.
 
@@ -149,7 +256,18 @@ expect fun getPlatform(): Platform
 
 이제 KMM 프로젝트에 viewModel을 추가할 시간입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4. KMP 프로젝트의 ViewModel
 
@@ -159,7 +277,18 @@ ViewModel은 Activity 또는 Fragment를 위한 데이터를 준비하고 관리
 
 SharedViewModel과 EmojiHubViewModel은 commonMain 모듈에 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 // shared/commonMain/.../viewModel/SharedViewModel
@@ -188,7 +317,18 @@ class EmojiHubViewModel(private val repository: EmojiHubRepository) : SharedView
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 안드로이드 플랫폼의 ViewModel
 
@@ -208,7 +348,18 @@ actual open class SharedViewModel: ViewModel() {
 
 아래 코드 스니펫은 EmojiHubScreen에서 emojiHubViewModel을 사용하는 방법을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -237,8 +388,18 @@ fun EmojiHubScreen() {
 
 <img src="/assets/img/2024-06-19-KotlinMultiPlatformKMP_11.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 // shared/iosMain/.../viewModel/SharedViewModel
@@ -275,8 +436,18 @@ struct ContentView: View {
 
 # 5. 네트워킹
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ktor은 마이크로서비스부터 멀티플랫폼 HTTP 클라이언트 앱까지 다양한 용도로 사용됩니다. 이를 사용하려면 build.gradle.kts 파일에 아래와 같이 Ktor 종속성을 추가하면 됩니다.
 
@@ -317,7 +488,18 @@ sourceSets {
 expect fun httpClient(config: HttpClientConfig<*>.() -> Unit): HttpClient
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안드로이드 메인에서 실제 키워드를 사용하여 httpClient를 선언하세요:
 
@@ -335,7 +517,18 @@ actual fun httpClient(config: HttpClientConfig<*>.() -> Unit): HttpClient = Http
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 EmojiHubRepository에서 httpClient를 사용하여 원격 서버에서 이모지를 가져오세요.
 
@@ -373,7 +566,18 @@ class EmojiHubViewModel(private val repository: EmojiHubRepository) : SharedView
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 6. 아이폰에서의 코루틴
 
@@ -410,7 +614,18 @@ sourceSets {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## httpClient 재구성하기
 
@@ -443,7 +658,18 @@ suspend fun getEmojis(): List<EmojiItem> {
     }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 class EmojiHubViewModel(private val repository: EmojiHubRepository) : SharedViewModel() {
@@ -480,7 +706,18 @@ class EmojiHubViewModel(private val repository: EmojiHubRepository) : SharedView
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IOSEmojiHubViewModel은 iosApp 모듈에 있어요.
 
@@ -518,7 +755,18 @@ class IOSEmojiHubViewModel: ObservableObject {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct ContentView: View {
@@ -571,7 +819,18 @@ sourceSets {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 EmojiHubRepository에 HttpClient을 주입해주세요.
 
@@ -587,12 +846,23 @@ class EmojiHubRepository(private val httpClient: HttpClient) {
 ```kotlin
 // commonMain/viewModel/EmojiHubViewModel
 class EmojiHubViewModel(private val repository: EmojiHubRepository) : SharedViewModel() {
-    
+
     ...
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 의존성을 정의하도록 모듈을 선언해보세요:
 
@@ -631,7 +901,18 @@ class MainApplication : Application() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOSMain 에서 Koin을 시작하려면 아래와 같이 시작하세요.
 
@@ -646,26 +927,35 @@ fun startKoin() {
 
 iOSApp에서 startKoin을 호출하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-@ main 
- 구조체 iOSApp: 앱 {
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-   init() {
-       KoinStarterKt.startKoin()
-    }
+@ main
+구조체 iOSApp: 앱 {
+
+init() {
+KoinStarterKt.startKoin()
+}
 
     var body: some Scene {
        WindowGroup {
            ContentView()
        }
     }
+
 }
 
-
- 그리고 GithubViewModelHelper은 iOS에서 GithubViewModel을 주입하는 데 사용됩니다.
-
+그리고 GithubViewModelHelper은 iOS에서 GithubViewModel을 주입하는 데 사용됩니다.
 
 class EmojiHubViewModelHelper: KoinComponent {
 
@@ -673,13 +963,23 @@ class EmojiHubViewModelHelper: KoinComponent {
 
     @NativeCoroutinesState
     val items = emojiHubViewModel.items
-}
 
+}
 
 ![이미지](/assets/img/2024-06-19-KotlinMultiPlatformKMP_15.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Android 앱과 iOS 앱을 실행해보세요.
 
@@ -694,7 +994,18 @@ class EmojiHubViewModelHelper: KoinComponent {
 - KMP-NativeCoroutines
 - Koin
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 KMP(Kotlin Multiplatform)를 사용한 예제 프로젝트입니다.
 
@@ -704,6 +1015,17 @@ class EmojiHubViewModelHelper: KoinComponent {
 
 의견이 있으시면 언제든지 남겨주세요. 감사합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코딩을 즐기세요!

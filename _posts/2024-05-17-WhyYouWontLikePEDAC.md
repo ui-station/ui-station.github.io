@@ -3,13 +3,12 @@ title: "왜 PEDAC를 좋아하지 않을 수도 있을 것입니다"
 description: ""
 coverImage: "/assets/img/2024-05-17-WhyYouWontLikePEDAC_0.png"
 date: 2024-05-17 17:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-WhyYouWontLikePEDAC_0.png
 tag: Tech
 originalTitle: "Why You Won’t Like PEDAC"
 link: "https://medium.com/@jacksebben.unicyclist/why-you-wont-like-pedac-c722ca069f20"
 ---
-
 
 ## PEDAC는 정말 어렵죠. 그렇다고 말했어요.
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@jacksebben.unicyclist/why-you-wont-like-pedac-c722ca0
 
 최소한 처음에는 이런 느낌입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 본문을 마칠 즈음, 저는 PEDAC 및 문제 해결 과정 전체에 대해 학습하는 동안 동기부여를 잃은 사람들, 정체감을 느끼는 사람들, "연기자 증후군"에 대한 새로운 동기 부여를 주고 PEDAC에 대한 진정한 감사함과 개선 팁을 제공하기를 희망합니다.
 
@@ -34,7 +44,18 @@ link: "https://medium.com/@jacksebben.unicyclist/why-you-wont-like-pedac-c722ca0
 
 # 개인 이야기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 현재 Launch School이라는 온라인 커리큘럼에 등록되어 있습니다. 이 학교는 견고한 문제 해결 프로세스를 개발하는 데 큰 중점을 둡니다. 그들은 여러분이 프로세스를 개발하는 데 도움을 주는 PEDAC라는 프레임워크를 소개합니다.
 
@@ -44,8 +65,18 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 
 이 일은 단 몇 주 만에 일어난 일입니다. 만약 자신감을 잃고 이 보기 어렵고 복잡한 문제들을 쉽게 해결할 수 있는 사람으로 스스로 그릴 수 없다면 — 두려워하지 마세요, 왜냐하면 몇 달 전에 저도 그 똑같은 고비를 넘었기 때문이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-17-WhyYouWontLikePEDAC_1.png)
 
@@ -55,8 +86,18 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 
 이 문제를 지적하면서도, 우리는 여전히 의도적이거나 계획적인 다른 방식을 취하는 것을 싫어합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 왜 그럴까요?
 
@@ -66,7 +107,18 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 
 지금까지의 경험은 이랬어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 빨리 작업을 완료하는 데 도움이 되는 방법이죠... 지금까지는요.
 
@@ -76,7 +128,18 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 
 이것이 'PEDAC 학습에 마찰력을 일으키는 데 기여하는 몇 가지를 한다고 생각합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 더 쉬운 문제들은 보통 나에게 보상을 더 빨리 줬어. 나는 해결책에 더 빨리 도달했어.
 - 이는 향후 소프트웨어 엔지니어링 문제에 필요한 해결책과 기술에 대한 기대감을 형성할 수 있어요.
@@ -90,7 +153,18 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 
 ## 지루하고 동기부여가 되지 않는 느낌을 받을지도 모르지만... 이것은 변할 수 있어요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 학습 과정은 매우 간단해 왔어요:
 
@@ -103,7 +177,18 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 
 우리는 초기에는 치즈를 더 자주 먹고 쉽게 먹어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 런치 스쿨 커리큘럼에서 말하는 대로, 문제를 해결하는 유일한 방법은 없으며 PEDAC는 단지 당신만의 문제 해결 과정을 찾기 위한 지침일 뿐입니다.
 
@@ -114,7 +199,18 @@ Launch School을 시작하기 한 해 전에 프로그래밍 기초를 공부했
 
 처음에는 개념 또는 용어를 손에 익힌 것을 알 수 있었던 때입니다. 그때 당신은 그 정의를 정확히 알고 코드에서 예제를 보여주고 이해할 수 있을 때였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PEDAC를 이해했다고 어떻게 알 수 있을까요?
 
@@ -124,9 +220,20 @@ PEDAC를 이해했다고 어떻게 알 수 있을까요?
 
 "내가 이것을 알고 있다는 것을 어떻게 알까요?"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-처음으로 PEDAC를 배우려고 시도했을 때 저는 매우 동기 부여가 떨어지고 사기가 떨어지는 느낌을 받았어요. 보상이 명확하지 않았고, 내가 진행 중인지 알 수 없는 것 같았어요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+처음으로 PEDAC를 배우려고 시도했을 때 저는 매우 동기 부여가 떨어지고 사기가 떨어지는 느낌을 받았어요. 보상이 명확하지 않았고, 내가 진행 중인지 알 수 없는 것 같았어요.
 
 내가 본 것은 다른 사람들이 자신들만의 방법으로 문제를 효율적으로 해결하는 모습 뿐이었는데, 한 번에 "이게 바로 네가 해야 하는 방법이야, 여기가 정의야" 라는 순간을 찾지 못했어요. 이로 인해 PEDAC는 당신과 맞지 않는 것인 것 처럼 느껴질 수 있고, 그것을 이해하기 어려울 수 있어요.
 
@@ -138,7 +245,18 @@ PEDAC를 이해했다고 어떻게 알 수 있을까요?
 - 문제를 이전처럼 빠른 속도로 해결하는 보상은 받지 못할 것입니다. 그러나 문제들이 어려워지면(좋은 치즈처럼) 더 큰 보상을 받을 수 있습니다. 단지 좀 더 빈도가 낮을 뿐이에요.
 - 꾸준하게 하고 프로세스를 신뢰하세요. 당신은 진전하고 있어요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-17-WhyYouWontLikePEDAC_3.png)
 
@@ -149,7 +267,18 @@ PEDAC를 이해했다고 어떻게 알 수 있을까요?
 
 언젠가는 이런 변화가 올 거라는 것에 대해 알고 있는 것이 때로는 동기부여를 유지하는 데 도움이 되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## PEDAC을 코딩할 때의 "안전한 장소"로 생각해보세요
 
@@ -159,7 +288,18 @@ PEDAC를 이해했다고 어떻게 알 수 있을까요?
 
 코딩 도중에 해결 방법을 코딩하다가 터미널에서 오류 메시지를 읽기만으로 해결할 수 없는 오류를 마주했을 때 가장 싫은 상황이라고 할 수 있습니다. 논리 오류를 수정하는 것은 문법 오류나 타입 오류를 고치는 것보다 어려운 작업입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 와닿지 않을 수 있지만, PEDAC를 더 자주 사용함으로써 더 많이 이해할 수 있게 될 거에요.
 
@@ -169,7 +309,18 @@ PEDAC를 이해했다고 어떻게 알 수 있을까요?
 
 쉬운 문제에 코드를 작성하는 것은 지루해질 수 있어요. 최적으로 도전적인 문제에 코드를 작성하는 것이 즐거움을 느끼는 때입니다. 문제 해결에 열중할 때 (심지어 힘들 때도) 코드 편집기 바깥에 무슨 일이 일어나고 있는지 생각하지 않는다는 것을 주목하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이게 당연한 것 같지만, 학습하고 문제 해결하는 걸 즐기는 걸 생각해봐. 그래야 현재에 더 집중할 수 있을 거야. 이걸 알면 당신의 난관을 이해하는 데 도움이 될 거야.
 
@@ -179,7 +330,18 @@ PEDAC를 이해했다고 어떻게 알 수 있을까요?
 
 언제나 글쓰기를 개선하려고 노력하고 있어, 그래서 이 글에 동의하든 반대하든, 도움이 되었든 그렇지 않았든 당신의 피드백을 정말로 감사히 받겠어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저도 다른 사람들이 PEDAC를 배우면서 느낀 경험을 듣고 싶어요. 댓글을 남기거나 제 소셜 미디어로 DM을 보내도 괜찮아요.
 

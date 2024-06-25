@@ -3,13 +3,12 @@ title: "왜 당신의 마이크로서비스 아키텍처가 아마도 지나치�
 description: ""
 coverImage: "/assets/img/2024-06-19-WhyYourMicroservicesArchitectureisProbablyOverkillAndHowILearnedtoLovetheMonolithAgain_0.png"
 date: 2024-06-19 12:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-WhyYourMicroservicesArchitectureisProbablyOverkillAndHowILearnedtoLovetheMonolithAgain_0.png
 tag: Tech
 originalTitle: "Why Your Microservices Architecture is Probably Overkill (And How I Learned to Love the Monolith Again)"
 link: "https://medium.com/@PurpleGreenLemon/why-your-microservices-architecture-is-probably-overkill-and-how-i-learned-to-love-the-monolith-dfdb93b0511c"
 ---
-
 
 작은 독립적인 서비스들이 각각 완벽하게 자신의 일을 하는 것, 개발자의 낙원 같지 않아요? 하지만 알아요? 가끔, 이건 정말 엄청난 고통일 수 있어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@PurpleGreenLemon/why-your-microservices-architecture-
 
 하지만 현실이 닥쳤어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과는, 복잡성이 사라지지 않았습니다; 단지 변했습니다. 이것이 마이크로서비스가 당신의 영혼을 죽일 수 있는 이유입니다:
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@PurpleGreenLemon/why-your-microservices-architecture-
 
 한 번은 간단했던 함수 호출이 교차 서비스 요청의 끝없는 사가로 변모하고 있습니다. 지연과 관련된 머리 아픔, 네트워크 어딘가에서 뭔가가 고장날까 두려워하는 늘스런 공포의 상태로 변해가고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일렇게 REST API와 메시지 큐를 사용하여 처리할 수 있을 것이라 생각할 수도 있지만, 사실은 그 소중한 밀리초가 누적됩니다. 작은 데이터 조각을 가져와야 하나요? 그것은 네트워크 호출입니다. 간단한 작업을 처리해야 하나요? 또 다른 호출이 필요합니다. 여러분의 시스템은 실제 일을 하는 대신 수다에 더 많은 시간을 낭비합니다.
 
@@ -39,17 +60,39 @@ link: "https://medium.com/@PurpleGreenLemon/why-your-microservices-architecture-
 
 코드를 배포했을 때 직업을 바꾸어 야만한 일이 되려고 하거나 라마 농부가 되고 싶어졌던 기억을 여전히 갖고 계시나요? 네, 그런 날들은 이미 멀리 떠났습니다. 마이크로서비스로, 관리 가능한 프로세스였던 것이 불길한 기분을 내뿜는 다두와 여러 머리를 지닌 괴물로 변모했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 갑자기 어플리케이션 하나가 아니라 십여 개의 작은 괴물을 다루게 되었네요. 각각이 자체 빌드 프로세스, 테스트 슈트 및 신중한 조율이 필요해요. CI/CD 파이프라인은 이렇게 엄청난, 꼬인 루브 골드버그 장치가 되어 새롭고 흥미로운 실패로 매번 고장나는 것처럼 보여요. 잘못된 구성 하나, 맞지 않는 종속성 하나로 모든 것이 터져버릴 수 있어요. 배포 오류와 싸우면서 실제 기능 개발은 멈춰있게 되네요. 코드 복잡성을 운영 복잡성과 바꾸었군요.
 
 # 관찰성 부담
 
-과거 몇몇 전략적으로 배치된 로그 라인으로 무엇이 문제인지 알 수 있던 시절을 기억하시나요? 마이크로서비스로, 그런 시기는 이미 멀리 사라진 기억이 됐어요. 이제는 시스템을 이해하는 데 상당한 투자가 필요할 거예요.  
+과거 몇몇 전략적으로 배치된 로그 라인으로 무엇이 문제인지 알 수 있던 시절을 기억하시나요? 마이크로서비스로, 그런 시기는 이미 멀리 사라진 기억이 됐어요. 이제는 시스템을 이해하는 데 상당한 투자가 필요할 거예요.
 
 서비스 사이를 건너는 요청을 추적하려면 분산 추적 솔루션이 필요할 건데요. 서비스가 생성하는 로그의 해일을 해석하려면 로그 집계 도구가 기다리고 있어요. 그리고 멋진 대시보드와 경보 시스템을 잊지 마세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 갑자기 예산과 엔지니어링 시간이 시스템이 제대로 작동하는지 확인하는 데 사용되는 것으로 바뀌었네요. 모순적인 점은, 이 모든 복잡성을 더한 결과물로 인해 문제의 근본 원인을 찾기가 이전보다 더 어려워졌다는 느낌을 자주 받습니다. 당신은 가시성의 환상에 큰 대가를 지불하고 있는 것 같습니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@PurpleGreenLemon/why-your-microservices-architecture-
 
 한 서비스의 API를 조정하면 어떤 결과도 없을 것이라고 생각하시나요? 한 번 더 생각해보세요. 숨겨진 가정, 문서화되지 않은 의존성, 그리고 행동의 미묘한 변화들이 불량한 음식 중독과 같이 시스템 전반을 퍼져나갈 수 있습니다. 당신이 알게 모르게, 여러 팀에 걸쳐 다시 작업에 뛰어들어서 왜 이러한 열광을 사들인 걸까 궁금해할 수도 있어요. 민첩성에 대한 약속에 대해 말할 수 없다 — 이제 당신은 아무것도 바꾸기를 두려워할 정도로 두려워하게 되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단일체만큼 좋은 경우도 있어요
 
@@ -69,7 +123,18 @@ link: "https://medium.com/@PurpleGreenLemon/why-your-microservices-architecture-
 
 나쁜 말 안 하겠습니다. 마이크로서비스가 나쁜 것은 아니에요. 그것들은 대규모 시스템에서 빛을 발하거나, 구성 요소 간에 완전한 독립성이 필요한 경우에 유용해요. 하지만 맹목적으로 트렌드를 따라가서 모든 것을 마이크로서비스로 분리하는 것은 정말로 무분별한 복잡성과 개발자의 탈진으로 이어지는 결과를 초래할 수도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가끔 "옛날 방식"의 단일체가 더 현명한 선택일 수 있습니다. 인프라와 무쟁하기보다는 가치 전달에 집중할 수 있게 해줍니다.
 

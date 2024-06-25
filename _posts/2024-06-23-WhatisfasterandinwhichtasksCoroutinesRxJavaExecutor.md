@@ -3,13 +3,12 @@ title: "Coroutines, RxJava, Executor 뭐가 더 빠를까 각 작업별 성능 �
 description: ""
 coverImage: "/assets/img/2024-06-23-WhatisfasterandinwhichtasksCoroutinesRxJavaExecutor_0.png"
 date: 2024-06-23 01:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-WhatisfasterandinwhichtasksCoroutinesRxJavaExecutor_0.png
 tag: Tech
 originalTitle: "What is faster and in which tasks? Coroutines, RxJava, Executor?"
 link: "https://medium.com/proandroiddev/what-is-faster-and-in-which-tasks-coroutines-rxjava-executor-952b1ff62506"
 ---
-
 
 <img src="/assets/img/2024-06-23-WhatisfasterandinwhichtasksCoroutinesRxJavaExecutor_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/proandroiddev/what-is-faster-and-in-which-tasks-corout
 
 우선, 왜 이를 해보게 되었는지부터 알아봅시다. 제게는 간단한 작업이 있었어요: 수백 개의 콜백을 호출하는 시스템이 있었죠. 모든 콜백은 가능한 빨리 완료되어야 했죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 콜백에 소요되는 복잡성이나 시간을 알지 못했어요. 콜백은 객체를 생성하거나 서버나 데이터베이스에 긴 요청을 할 수도 있어요. 이 경우에는 데이터베이스나 서버에 요청하기 때문에 멀티스레딩을 사용해야 하죠.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/proandroiddev/what-is-faster-and-in-which-tasks-corout
 
 하지만 당장 떠오르는 질문이 있죠: "아직 아무도 테스트해보지 않은 건가요?" 의외로 제 요구사항을 충족시키는 테스트를 찾을 수 없었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 테스트는 Rx 대 Coroutines와 같이 두 기술 간의 간단한 비교였습니다. 다른 일부는 내 의견으로는 너무 구체적한 테스트 케이스를 가졌는데, 예를 들어 산술 연산이나 데이터베이스 요청만을 테스트하는 것 등이 그러했습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/proandroiddev/what-is-faster-and-in-which-tasks-corout
 
 # 도구
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 측정 도구로 시작해 봅시다. 안드로이드 개발자이기 때문에 안드로이드 도구를 사용하겠습니다. 이론적으로는 컴퓨터에서 JVM에서 멀티스레딩 테스트를 실행하는 것이 안드로이드 장치에서 실행하는 것과 다를 수 있지만, 실제로는 큰 차이가 없으며 전체 테스트 결과에 영향을 미치지 않습니다.
 
@@ -59,7 +91,18 @@ fun sampleTest() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과적으로 실행에 대한 정보가 포함된 JSON을 얻게 됩니다: 최소 및 최대 시간, 그리고 가장 중요한 중앙값 시간.
 
@@ -96,7 +139,18 @@ fun sampleTest() {
 
 # 벤치마크 테스트 케이스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프레임워크 간 주요 차이점은:
 
@@ -107,7 +161,18 @@ fun sampleTest() {
 
 이제 우리는 무엇을 테스트하고 싶은지 결정해야 합니다. 테스트 데이터부터 시작해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테스트 데이터
 
@@ -121,7 +186,18 @@ private fun createTestList(): List<Int> {
 
 그런 다음 각 항목에 대해 몇 가지 작업을 수행할 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 테스트 케이스를 살펴보겠습니다.
 
@@ -131,7 +207,18 @@ private fun createTestList(): List<Int> {
 
 ## 직접 호출
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 테스트 케이스는 간단히 메서드를 직접 호출하는 것입니다. 어떤 프레임워크도 사용하지 않습니다.
 
@@ -149,7 +236,18 @@ fun directInvoke() {
 
 두 번째 테스트 케이스는 Rx입니다. Completable 내에서 작업을 수행할 것입니다. 각 작업에 대해 별도의 Completable이 생성될 것입니다. Scheduler는 모든 작업이 단일 스레드에서 실행되도록 보장하는 Scheduler.single이 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 작업 완료를 기다려야 하기 때문에 결과 Completable에서 blockingAwait를 호출합니다.
 
@@ -166,14 +264,25 @@ fun rxOne() {
        }
        Completable.merge(completables).blockingAwait()
    }
-}  
+}
 ```
 
 ## 코틀린 코루틴
 
 어딜 가나 젊고 유망한 코틀린 코루틴 프레임워크가 없었던 우리들이 어디에 있겠어요? 코루틴이 실행될 때까지 기다리려면 async를 통해 작업을 실행하고 완료를 기다리기 위해 await을 사용합니다. 따라서 각 작업을 위한 별도의 코루틴이 있을 것입니다. 모든 것을 단일 스레드에서 실행하도록 하려면 단순히 runBlocking을 사용하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kt
 @Test
@@ -197,8 +306,18 @@ Flow에서 비교해보겠습니다. 코루틴과 Rx를 직접적으로 비교�
 
 각 액션에 대한 Flow를 생성하고 모두 결합한 다음 간단히 수집합니다. 각 액션에 대해 별도의 Flow가 있을 것입니다. 한편, 디스패처를 어디에도 지정하지 않았기 때문에 모든 작업이 동일한 스레드에서 수행됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Test
@@ -224,8 +343,18 @@ fun flowOne() {
 
 스레드 풀에 있는 스레드 수가 CPU 스레드 수와 같은 상황을 고려해 봅시다. 이상적으로는 이러한 테스트 케이스의 결과를 비교하여 두 번째 차이(프레임워크가 작업을 효율적으로 빠르게 스레드 간에 분배하는 능력)를 볼 수 있습니다. 각 작업에 대해 충분한 스레드가 없기 때문에 프레임워크가 그런 작업들을 어쨌든 분배해야 하게 될 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로세서 코어 간 작업의 균등한 분배를 기대해서는 안 됩니다. 운영 체제와 CPU가 결정하는 것은:
 
@@ -237,19 +366,41 @@ fun flowOne() {
 
 그래서, 우리는 이 풀을 적은 수의 스레드를 갖는 풀로 간주할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CPU 쓰레드 수를 결정하는 훌륭한 방법이 있어요:
 
 ```js
-Runtime.getRuntime().availableProcessors()
+Runtime.getRuntime().availableProcessors();
 ```
 
 제 테스트 기기에서는 이 값이 여덟이에요.
 
 ## RxJava
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Rx를 시작해보겠습니다. Rx에는 원하는 동작을 구현하는 Scheduler.Computation이 있어요. 사실 코드는 단일 스레드를 사용할 때와 똑같이 유지됩니다. 유일한 차이점은 각 개별 Completable에 대해 Scheduler.computation()을 사용하여 subscribeOn을 만든다는 것이에요.
 
@@ -273,7 +424,18 @@ fun rxCPU() {
 
 이제 코루틴을 살펴보죠. Dispatchers.Default라는 것을 가지고 있어요. 해당 문서에는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적으로 "병렬성"의 최대 수준은 CPU 코어 수와 동일합니다. 우리가 필요한 것이 바로 그겁니다.
 
@@ -300,7 +462,18 @@ fun coroutineCPU() {
 
 하지만 중요한 세부 사항이 있습니다... Dispatchers.Default를 좀 더 자세히 살펴보면이 생성자를 찾을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 내부 객체 DefaultScheduler는 SchedulerCoroutineDispatcher를 상속합니다(
@@ -319,7 +492,18 @@ private fun createScheduler() = CoroutineScheduler(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 문서에는 다음과 같이 나와 있습니다:
 
@@ -347,7 +531,18 @@ fun coroutineCPULimit() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 코틀린 Flow
 
@@ -374,7 +569,18 @@ fun flowCPU() {
 
 그리고 제한을 두고 Dispatchers.Default를 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Test
@@ -402,8 +608,18 @@ fun flowCPULimit() {
 
 먼저, Executors.newFixedThreadPool을 사용하여 Executor를 생성해 보겠습니다. 이렇게 함으로써, 단순히 쓰레드 수로 제한된 Executor가 생성되며, 우리의 경우에는 CPU 코어의 수입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 measureRepeated 메소드 이전에 Executor를 생성하니 Executor를 만드는 것은 쉬운 작업이 아닙니다. 그런 다음, 작업을 수행하는 Executor에서 submit을 호출합니다. 완료를 기다리기 위해 get 메소드를 사용해 보겠습니다.
 
@@ -424,7 +640,18 @@ Executors.newWorkStealingPool 메소드를 사용하여 관심 있는 두 번째
 
 코드적으로는 이전과 동일합니다. 단, Executor를 만드는 방법이 다를 뿐입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Test
@@ -445,8 +672,18 @@ fun executorStealCPU() {
 
 ## RxJava
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Rx를 시작합니다. Scheduler.io는 이러한 역할을 맡습니다. Scheduler.io에는 스레드 캐시가 있습니다. 사용 가능한 빈 스레드가 있다면 캐시에서 하나를 가져옵니다. 그렇지 않으면 새로운 스레드를 생성합니다. 코드는 Scheduler.computation과 동일하지만 다른 스케줄러를 사용합니다.
 
@@ -470,7 +707,18 @@ fun rxIo() {
 
 코루틴에서 유사한 작업은 Dispatchers.IO의 책임이므로 익숙한 코드에 삽입하기만 하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Test
@@ -514,7 +762,18 @@ fun flowIo() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 자바 Executor
 
@@ -534,7 +793,18 @@ fun executorFixedIo() {
 
 newWorkStealingPool도 같은 방식으로 할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Test
@@ -554,8 +824,18 @@ fun executorStealIo() {
 
 그리고 마지막으로, 테스트를 실행합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테스트
 
@@ -569,7 +849,18 @@ fun executorStealIo() {
 - 네트워크 — 네트워크와의 작업 시뮬레이션;
 - 혼합 — 이전 스크립트 모두의 조합, 원본 작업에서 행동의 복잡성을 알 수 없기 때문에.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 것부터 시작해 봅시다.
 
@@ -583,7 +874,18 @@ private fun arithmetic(seed: Int): Int {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로, 이 범주로 분류할 수 있는 작업에는 생성자를 사용하여 객체를 생성하거나 속성에 액세스하는 것이 포함됩니다. 이러한 작업은 완료하는 데 오랜 시간이 걸리지 않습니다.
 
@@ -593,7 +895,18 @@ private fun arithmetic(seed: Int): Int {
 
 예상대로, directInvoke가 최고의 결과를 보였습니다. 가장 가까운 경쟁 상대보다 70배 빨랐습니다. 이는 이러한 작업이 매우 간단하며 멀티스레딩 프레임워크를 사용하는 데 추가적인 오버헤드가 작업 자체 비용의 10배 더 높을 수 있다는 이치를 따랐기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 뜻밖의 충격은 두 번째와 세 번째 자리에서 일어났습니다. 두 자리 다 Executors로 고정된 스레드 수를 가진 것들이었어요. 처음에는 directInvoke가 제일일 것으로 예상했는데, 그 다음에는 단일 스레드의 테스트 케이스, 그리고 CPU, 그리고 마지막으로 IO가 실행될 것으로 기대했어요. 그런데 고정된 스레드 수를 가진 Executors가 이러한 로직을 완전히 무너뜨리는 모습을 볼 수 있었어요. 한편으로는 Executors.newWorkStealingPool을 이용하여 만든 Executor는 "무한" 스레드 수를 가질 때 성능이 더 좋아 보입니다.
 
@@ -603,7 +916,18 @@ Dispatchers.Default를 한정하고 한정하지 않았을 때의 시간이 다�
 
 요약하면, 이 카테고리의 동작에서 directInvoke가 가장 효과적임을 알 수 있습니다. 따라서 이러한 작업에는 멀티스레딩 프레임워크를 사용하지 않는 것이 더 나은 방법입니다. 대신에 하나의 스레드나 적은 수의 스레드를 가진 풀을 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 리스트 조작
 
@@ -613,7 +937,18 @@ Dispatchers.Default를 한정하고 한정하지 않았을 때의 시간이 다�
 
 이곳에서의 복잡성 기본은 실제 작업 그 자체가 아닙니다. 이것은 정규 불변 리스트이며, 시퀀스가 아닙니다. 이것은 각 작업 후 새로운 리스트가 생성된다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 private fun listsManipulation(seed: Int): Int {
@@ -633,7 +968,18 @@ private fun listsManipulation(seed: Int): Int {
 
 directInvoke는 빠르게 선두에서 물러났어요. 객체 조작 같은 기본 작업조차 어려움이 있군요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Executor를 생성하여 리드가 됩니다. Executors.newWorkStealingPool을 사용하면 더 효율적입니다. 간단한 대안인 Executors.newFixedThreadPool보다 더욱 효율적입니다.
 
@@ -643,7 +989,18 @@ Rx는 조금 앞으로 나아갑니다. 앞에는 Scheduler.computation이 있�
 
 flowCPU와 coroutineCPU는 목록의 맨 아래에 있습니다. 이러한 테스트 케이스들은 CPU 코어의 수와 같은 수의 스레드를 가지고 있으며 제한이 없습니다. 테스트를 다시 실행했지만 결과는 동일했습니다. 버그가 있을 수 있다고 생각하여 코루틴을 업데이트했지만 변한 점은 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 총론적으로, 이 복잡성 수준에서 CPU 테스트 케이스가 실행 시간 측면에서 IO보다 빠릅니다.
 
@@ -659,7 +1016,18 @@ private fun storage(seed: Int): Int {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내 결과가 나왔어요.
 
@@ -669,7 +1037,18 @@ IO 테스트 케이스를 먼저 실행한 후 CPU를 실행하고 마지막으�
 
 rxIO 테스트 케이스가 flowsIO 및 coroutinesIO보다 더 빠르다는군요. 아마 쓰레드를 생성하는 데 필요한 자원이 가장 적게 사용되는 것 같아요만... 그런 작업에서는 그렇게 중요한 점은 아니에요. 차이는 딱 한 밀리초뿐이에요. 프레임워크 간의 구별은 거의 사라진 것 같아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 네트워크
 
@@ -684,11 +1063,33 @@ private fun network(seed: Int): Int {
 
 다음 결과에 주의하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 테이블 태그를 Markdown 형식으로 변경하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 private fun mixed(seed: Int): Int {
@@ -707,8 +1108,18 @@ private fun mixed(seed: Int): Int {
 
 ![Image](/assets/img/2024-06-23-WhatisfasterandinwhichtasksCoroutinesRxJavaExecutor_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로, 세 개의 블록으로 분할하는 패턴이 동일하게 나타납니다: IO, CPU, One.
 
@@ -718,7 +1129,18 @@ private fun mixed(seed: Int): Int {
 
 파일 시스템과 네트워크 작업을 처리할 때는 멀티스레딩의 역할이 거의 사라진 것을 알 수 있습니다. 대부분의 멀티스레딩 사용은 IO 작업을 위한 것입니다. 따라서 성능을 기반으로한 멀티스레딩 프레임워크 선택은 이상합니다. 편의성 및 중요한 요소 등의 기준을 바탕으로 선택하는 것이 더 나을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 0.5밀리초 동안 스레드를 차단하는 것보다 더 간단한 작업을 수행한다면 작은 스레드 풀을 사용하는 것이 좋습니다. 예를 들어 CPU 코어 수를 풀의 크기로 사용할 수 있습니다.
 
@@ -728,7 +1150,18 @@ Executors와 Rx는 이러한 작업에 가장 적합합니다.
 
 문제를 해결하기 위해 제가 따랐던 단계는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모든 간단한 작업을 별도의 작업 풀에 분리하여 directInvoke를 사용하여 실행했습니다.
 - 다른 모든 작업은 Dispatchers.IO를 사용하여 코루틴에서 실행되었는데, 이는 동기 및 비동기 코드를 동시에 작성하기 쉽게 해줬습니다.

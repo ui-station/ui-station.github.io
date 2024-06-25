@@ -3,13 +3,12 @@ title: "윈도우 프로세스 여정  MoUsoCoreWorkerexe MoUSO 코어 워커 �
 description: ""
 coverImage: "/assets/img/2024-05-18-TheWindowsProcessJourneyMoUsoCoreWorkerexeMoUSOCoreWorkerProcess_0.png"
 date: 2024-05-18 17:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TheWindowsProcessJourneyMoUsoCoreWorkerexeMoUSOCoreWorkerProcess_0.png
 tag: Tech
 originalTitle: "The Windows Process Journey — “MoUsoCoreWorker.exe” (MoUSO Core Worker Process)"
 link: "https://medium.com/@boutnaru/the-windows-process-journey-mousocoreworker-exe-mouso-core-worker-process-c39934971fbc"
 ---
-
 
 “MoUsoCoreWorker.exe”는 Windows 업데이트를 수행하는 책임이 있는 실행 파일입니다. 이 파일은 "wuauclt.exe"에 의해 수행되는 일부 작업을 대체하며, Windows 10/11 환경 업데이트를 지원합니다. 이 파일은 “통합 업데이트 플랫폼” 또는 UUP로 이동함에 따라 이러한 업데이트를 수행합니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@boutnaru/the-windows-process-journey-mousocoreworker-
 
 그리고, USO는 “Update Session Orchestrator”의 약자입니다. “MoUsoCoreWorker.exe”는 Windows에서 업데이트를 다운로드하고 설치하는 순서를 제어하는 중요한 구성 요소입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, Windows가 업데이트를 찾을 때마다 "MoUsoCoreWorker.exe"가 시작됩니다. 해당 내용은 아래 스크린샷에서 확인할 수 있습니다. 해당 스크린샷은 Sysinternals의 ProcMon을 사용하여 촬영되었고, "업데이트 확인" 버튼을 누른 후에 촬영되었습니다. 우리는 "usoapi.dll"(업데이트 세션 오케스트레이터 API)가 "SystemSettings.exe"에 의해 로드되고, 그 후에 "MoUsoCoreWorker.exe"가 "svchost.exe"에 의해 시작되는 것을 볼 수 있습니다.
 

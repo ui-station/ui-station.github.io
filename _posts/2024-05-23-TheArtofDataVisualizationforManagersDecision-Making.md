@@ -18,7 +18,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 여기서 데이터 시각화가 필요합니다. 복잡한 데이터를 명확하고 간결한 차트, 그래프 및 기타 시각 형식으로 변환함으로써 기업은:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 실용적인 통찰력 획득: 시각화는 복잡한 데이터를 단순화하여 숨겨진 패턴과 트렌드를 드러내어 엑셀 시트나 숫자로 표현된 데이터에서 빠뜨릴 수 있는 정보를 보여줍니다.
 - 결정력 향상: 명확한 시각화는 관리자가 빠르게 주요 정보를 파악하고 더 확신을 갖고 데이터 기반 결정을 내릴 수 있게 도와줍니다.
@@ -30,7 +41,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 # 부적절한 데이터 시각화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술이 발전하고 시각화 도구가 조직의 의사 결정에 더 많이 사용됨에 따라, 실수가 발생할 수 있다는 것을 인정하는 것이 중요합니다. 이는 매니저의 경험 부족 때문이 아닌 시각화 과정 자체의 오류로 인한 경우가 많습니다.
 
@@ -40,7 +62,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 # 1. 적절하지 않은 차트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제 : 차트는 데이터 표현을 간소화하기 위해 고안되었지만, 잘못된 차트 선택은 정보를 명확히 하는 대신 혼선을 초래할 수 있습니다. 종종, 차트를 만드는 사람들은 최적의 선택을 하는 전문 지식이 부족하여 잘못 해석되는 결과를 초래하곤 합니다.
 
@@ -50,7 +83,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 문제 : 때로는 그래프가 어떻게 색칠되었느냐에 따라 혼란스러울 수 있습니다. 예를 들어, 연한 파란색과 진한 파란색을 사용하여 서로 다른 숫자를 나타내는 경우, 큰 차이가 명확히 나타나지 않을 수 있습니다. 이는 데이터에 기반한 결정을 내릴 때 문제가 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해결책: 데이터의 범위를 명확하게 보여주는 색상 조합을 사용하여 차트의 차이를 눈에 띄게 만들어보세요.
 
@@ -60,7 +104,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 문제: 가끔 도트 차트는 너무 많은 점들이 모여 있어서 읽기 어려울 수 있습니다. 몇 군데는 많은 도트가 모여 있어서 중요한 세부 정보를 모두 볼 수 없게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해결책: 관리자가 데이터를 명확하게 볼 수 있도록 조정할 수 있는 동적 차트를 사용하세요.
 
@@ -70,7 +125,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 문제: 모든 비즈니스에서 진행 상황을 모니터링하기 위해 올바른 주요 성과 지표(KPI)를 가져야 합니다. 일반적으로 IT팀에서는 데이터 분석가가 데이터 정리와 시각화를 다룹니다. 그러나 그들은 가끔 가장 적합한 차트를 선택하는 데 전문성이 부족할 수 있습니다. 때로는 선택된 KPI가 이상적이 아닐 수 있습니다. 디자이너가 비즈니스 인텔리전스 도구만 사용하는 데 빠져 있다고 하더라도 비즈니스 컨텍스트를 깊이 이해하지 못했기 때문입니다. 경우에 따라서 매니저들이 바빠서 차트를 철저히 검토할 시간이 없을 수 있습니다. 결과적으로 가치 있는 통찰력이 누락될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-TheArtofDataVisualizationforManagersDecision-Making_5.png)
 
@@ -80,8 +146,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 해결책: 핵심 매개변수 간의 관계를 파악하고 이해하는 데 매니저들이 도울 수 있도록 그래프에 상관 계수 분석을 통합하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Data Visualization](/assets/img/2024-05-23-TheArtofDataVisualizationforManagersDecision-Making_6.png)
 
@@ -91,9 +167,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 해결책: 시각화에서 스토리텔링을 사용하여 매니저가 차트에 나타낸 진전과 저조를 분명하게 이해할 수 있도록 돕습니다. 이 내러티브 접근 방식은 시청자가 주요 메시지와 통찰을 파악하도록 도와주어 시장 문제나 판매 기회를 최대화하거나 발생시키는 문제를 회피할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Gaussian Distribution](/assets/img/2024-05-23-TheArtofDataVisualizationforManagersDecision-Making_7.png)
 
@@ -103,8 +188,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 해결책: 상자 그림과 같은 가우시안 분포 차트를 활용하여 데이터 밀도와 변동성을 표시합니다. 이러한 차트는 데이터의 더 명확한 그림을 제공하여 관리자들이 보다 정보에 기반한 효과적인 결정을 내릴 수 있도록 도와줍니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-TheArtofDataVisualizationforManagersDecision-Making_8.png" />
 
@@ -114,7 +209,18 @@ link: "https://medium.com/@e.goudarzi92/the-art-of-data-visualization-for-manage
 
 제작 및 디자인: Ehsan Goudarzi
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 저자 소개
 

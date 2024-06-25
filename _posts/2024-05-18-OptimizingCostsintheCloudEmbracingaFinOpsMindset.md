@@ -3,13 +3,12 @@ title: "클라우드 비용 최적화 핀옵스 마인드셋 수용하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-OptimizingCostsintheCloudEmbracingaFinOpsMindset_0.png"
 date: 2024-05-18 16:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-OptimizingCostsintheCloudEmbracingaFinOpsMindset_0.png
 tag: Tech
 originalTitle: "Optimizing Costs in the Cloud: Embracing a FinOps Mindset"
 link: "https://medium.com/towards-aws/optimizing-costs-in-the-cloud-embracing-a-finops-mindset-c48acde94a94"
 ---
-
 
 ![image](/assets/img/2024-05-18-OptimizingCostsintheCloudEmbracingaFinOpsMindset_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-aws/optimizing-costs-in-the-cloud-embracing-a-
 
 서버리스 서비스를 예로 들며, 클라우드 서비스 및 선택한 기술에 도움이 되는 통찰력, 자동화, 문화에 대해 설명할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 통찰은 저의 경험에 근거하여 CyberArk에서 AWS 기반 SaaS 제공 업체의 서버리스 서비스를 설계한 것에 기인합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-aws/optimizing-costs-in-the-cloud-embracing-a-
 
 # 서버리스 비용에 대한 오해
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS 서버리스 히어로로서, 클라우드 비용과 서버리스 서비스에 대해 이야기할 때 놓치지 말아야 할 부분을 다루고 싶어요.
 
@@ -39,7 +60,18 @@ AWS 서버리스 히어로로서, 클라우드 비용과 서버리스 서비스�
 
 음, 그건 가끔 정확한 말이에요. 확실히 Lambda, SNS, SQS, DynamoDB와 같은 "참" 서버리스 서비스에 대해서는 사실이지만, 서버리스에는 더 많은 서비스가 포함되어 있고, 매년 새로운 AWS 서버리스 서비스가 등장하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, DynamoDB가 더 이상 요구 사항과 일치하지 않는 것을 깨달을 수도 있습니다. Amazon Aurora 서버리스를 사용하거나 Elasticache 서버리스를 혼합해 캐시를 추가하거나 OpenSearch 서버리스로 키워드 검색을 최적화할 수도 있습니다. 이러한 서비스들은 서버리스 변형이 있지만 영구로 스케일되지 않습니다. 고객 트래픽이 없더라도 최소 요금을 지불해야 합니다. 따라서 아마도 이러한 서비스들을 AWS가 관리하지만 진정한 서버리스 서비스는 아닌 것으로 부르는 것이 가장 좋을 수 있습니다. 또한, 이러한 서비스들은 VPC가 필요하며, ENI, VPC 엔드포인트 등으로 매월 고정 비용이 추가됩니다.
 
@@ -49,7 +81,18 @@ AWS 서버리스 히어로로서, 클라우드 비용과 서버리스 서비스�
 
 클라우드 서비스를 위해 선택한 기술에 관계없이 언젠가는 프로덕션을 준비해야 합니다. 규정, 보안 및 관측 요구 사항을 해결해야 하며, 이는 추가되는 과소 평가된 비용을 야기합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 사전 제품 서비스에 이러한 기능 몇 가지를 추가해 보는 건 어떨까요?
 
@@ -59,17 +102,39 @@ AWS 서버리스 히어로로서, 클라우드 비용과 서버리스 서비스�
 
 API Gateway나 CloudFront 분산에 웹 어플리케이션 방화벽을 활성화하고 CloudWatch 대시보드를 통해 관찰성을 향상시킬 수 있습니다. 이러한 리소스들은 매달 지속적인 가격이 부여되며, 서비스가 매달 트래픽을 전혀 받지 않더라도 이용료가 부과됩니다. 이와 유사한 사례들이 많이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서비스를 제품으로 제작할 때 수많은 작은 비용이 쌓입니다. 사람들은 이를 인식해야 합니다. 그럼에도, 그저 다른 CMK일 뿐이죠; AWS CDK에서 생성하는 한 줄 뿐이니까; 해로운 점이 뭐가 있을까요?
 
-여러 개의 계정을 사용한다면(당신이 해야 하는 대로) - 개발, 테스트, 제품 용으로 - 모든 비용 추가는 보유한 계정 수에 곱해질 수 있습니다. 한 계정당 5개의 지역에 배포하나요? 그럼 추가적으로 15(5*3 - 계정 수)개의 CMK가 생깁니다. 다시 한 번 곱하세요.
+여러 개의 계정을 사용한다면(당신이 해야 하는 대로) - 개발, 테스트, 제품 용으로 - 모든 비용 추가는 보유한 계정 수에 곱해질 수 있습니다. 한 계정당 5개의 지역에 배포하나요? 그럼 추가적으로 15(5\*3 - 계정 수)개의 CMK가 생깁니다. 다시 한 번 곱하세요.
 
 이러한 비용은 개발 계정에서 특히 크게 누적됩니다. 자원이 배포되고 삭제되며 종종 콘솔을 통해 수동으로 생성해서 잊혀지기 쉽기 때문입니다. 하지만 AWS는 그 기록을 기억하고 당신은 달이 끝날 때 청구서를 받을 것입니다.
 
 ## 고객이 다가온다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 대부분의 분들에게는 분명한 사실일 것이지만, 고객을 많이 모은다면 규모, API 호출 횟수, 그리고 저장 데이터 양이 커질 것입니다. 이 모든 것이 AWS 클라우드 요금 증대로 이어집니다. 이러한 추가 비용을 계획하고 수익 모델에 반영하지 않으면 비즈니스가 유지될 수 없습니다.
 
@@ -77,7 +142,18 @@ API Gateway나 CloudFront 분산에 웹 어플리케이션 방화벽을 활성�
 
 이제 문제를 이해했으니 당신의 조직이 이 문제를 대처하고 비용을 줄이며 효율성을 향상시킬 수 있는 방법에 대해 이야기해 봅시다. 그것은 FinOps 마인드셋을 채택함으로써 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게 중요합니다. 그러나 위에서 논의한 대로, 모든 설계 선택, 모든 CloudFormation 스택 배포, 모든 IT/DevOps 예약 작업 실행은 구매 선택입니다.
 
@@ -87,7 +163,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 다음 섹션에서는 귀사에서 구현할 수 있는 구체적인 조치 항목을 설명하겠습니다. 아키텍트부터 DevOps, IT, 개발자까지 페르소나는 다를 수 있지만, 아이디어는 같습니다: AWS 비용을 줄이기 위해서는 한 마을이 필요하며, 모두가 함께해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 비용 고려한 디자인
 
@@ -97,7 +184,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 그의 세션에서 주요 포인트는 모든 클라우드 아키텍처 디자인 선택이 구매 선택과 관련이 있다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 건축가로서, 우리는 서비스의 고수준 디자인 뿐만 아니라 저수준 디자인에도 영향을 미칩니다. 우리 회사에서는 개발자들이 제 동행과 함께 저수준 디자인과 컨셉 증명을 수행합니다. 따라서, 이른 시기에 비용을 고려하는 것이 중요합니다.
 
@@ -107,7 +205,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 이 프로세스에 대해 자세히 설명한 블로그 포스트는 Cloud Architect's High-Level Design Template에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고객 수 및 규모에 대한 예상을 고려하고 이러한 숫자를 AWS 요금 계산기에 입력하세요. 이후에 AWS 비용이 나중에 급증하고 손쉽게 대체할 수 없는 비용이 들어간 제품이 프로덕션 환경에 배포되었을 때 놀라지 마세요.
 
@@ -117,7 +226,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 조직 전체의 팀이 클라우드 비용을 이해하고 활발히 줄이고 최적화할 수 있도록 하는 문화적 실천 방법을 검토해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 금융 오퍼레이션 챔피언
 
@@ -127,7 +247,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 이 챔피언은 제가 아래에 설명할 '청구서 모니터링' 섹션에 적극적으로 참여할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## FinOps Guild
 
@@ -137,7 +268,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 내부 조직 외부 사람들을 만나 IT, 데브옵스, 제품 등과의 새로운 관계를 형성하는 것도 추가 가치입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고로, 공급된 사전 할당량 및 차가운 시작에 대해 더 알고 싶다면 여기에 있는 내 게시물을 확인해보세요.
 
@@ -147,7 +289,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 ## FinOps 해커톤
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 재미있는 아이디어입니다. FinOps를 게임처럼 만들고 직원들이 개선, 자동화 및 기타 비용 절감 방법에 대한 아이디어를 제시할 수 있는 해커톤을 소개해 보세요. 이를 흥미롭게 만들기 위해 가장 영향력 있는 아이디어에 대한 상품을 제공해 보세요.
 
@@ -157,7 +310,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 # 청구서를 모니터링하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드 재무를 관리할 때는 예산 계획을 따르는 것이 매우 중요합니다. 돈을 현명하게 쓰기 위해서는 AWS 비용 탐색기나 Anodot과 같은 타사 서비스와 같은 도구를 활용하여 지출 패턴을 파악하는 것이 좋습니다.
 
@@ -167,7 +331,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 더 자세한 내용은 이곳에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한 SaaS (Software as a Service) 제공업체이면 각 고객의 비용을 예산 편성, 라이선스 및 수익성을 위해 추정(또는 많은 경우에는 "guesstimate")하는 것이 중요합니다. 이 작업은 간단한 일이 아니며, 풀 또는 사일로 모델 테넌트 격리 전략을 사용하는 경우 도전이 매우 다릅니다. 그러나 이 주제는 이 게시물의 범위 내에서 다루기에는 너무 방대합니다.
 
@@ -177,7 +352,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 # 비용 방어 자동화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드 비용을 절감하는 방법 중 하나로 자원 삭제를 자동화하거나 일부 리소스가 처음부터 생성되지 않도록 하는 조직 정책이나 메커니즘을 추가할 수 있습니다.
 
@@ -194,7 +380,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 여기서 가장 중요한 교훈은 선제적인 접근 방식을 채택하는 것입니다. 놀라지 마세요. 비용을 적극적으로 줄이기 위해 노력하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 지속적인 학습
 
@@ -204,7 +401,18 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 가끔은 HTTP를 REST API 게이트웨이로 대체하거나 Lambda Powertuning과 같은 도구를 활용하여 함수를 최적화하거나 CloudWatch 로그 보존 기간을 줄이고 로그 수준을 변경하는 등의 서비스 변경이 큰 비용 절감을 이끌 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 팁들이 지나치게 상세해 보일 수 있지만, 그것들은 단지 빙산의 일각에 불과해요. 각 AWS 서비스는 독특한 최적화 기회를 제공하며, FinOut의 DynamoDB 가격 도전과 Best Practices에서 제시된 구체적인 전략들이 그것을 보여줍니다.
 
@@ -214,6 +422,17 @@ FinOps를 채택하고 비용을 인식하는 것은 조직의 C급 임원에게
 
 이 글에서는 모든 조직이 FinOps 마인드셋을 채택해야 할 관행을 다루었습니다. 클라우드 비용을 예방적으로 관리하고 항상 최적화하고 줄이기 위해 전체 조직의 노력이 필요하다는 점을 논의했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물이 귀하의 조직이 클라우드 비용 낙원을 실현하기 위해 FinOps 여정에서 도움이 되길 바랍니다. 행운을 빕니다!

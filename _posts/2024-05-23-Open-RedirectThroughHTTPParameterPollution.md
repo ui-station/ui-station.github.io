@@ -3,13 +3,12 @@ title: "HTTP 파라미터 오염을 통한 오픈 리다이렉트"
 description: ""
 coverImage: "/assets/img/2024-05-23-Open-RedirectThroughHTTPParameterPollution_0.png"
 date: 2024-05-23 18:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Open-RedirectThroughHTTPParameterPollution_0.png
 tag: Tech
 originalTitle: "Open-Redirect Through HTTP Parameter Pollution"
 link: "https://medium.com/@davidkarpinski1/open-redirect-through-http-parameter-pollution-ce5a3be7c78e"
 ---
-
 
 안녕하세요 여러분, 어떠세요?
 
@@ -21,7 +20,18 @@ Saigo
 
 # 버그 발견
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저번 글에서 오픈 리다이렉션에 대해 설명한 적이 있죠. 그럼 바로 실습으로 넘어가 보겠습니다. 테스트할 대상은 redacted.com이라고 지칭하겠습니다. 로그인 URL의 next 파라미터에 절대 URL이 전달되고 있다는 점을 발견했습니다:
 
@@ -35,7 +45,18 @@ https://redacted.com/login.php?next=https://redacted.com/account.php
 https://redacted.com/login.php?next=https://redacted.com/account.php?next=http://evil.com
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로그인 후 http://evil.com으로 성공적으로 리디렉션되었습니다.
 

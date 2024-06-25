@@ -3,13 +3,12 @@ title: "인간 수준의 로봇을 위한 훌륭한 AI로의 길"
 description: ""
 coverImage: "/assets/img/2024-05-20-ThePathtoGreatAIforHuman-CapableRobots_0.png"
 date: 2024-05-20 20:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ThePathtoGreatAIforHuman-CapableRobots_0.png
 tag: Tech
 originalTitle: "The Path to Great AI for Human-Capable Robots"
 link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robots-a7e12033289c"
 ---
-
 
 <img src="/assets/img/2024-05-20-ThePathtoGreatAIforHuman-CapableRobots_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robot
 
 # 시뮬레이션 및 유전 알고리즘에 대한 초기 작업
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1994년에 Karl Sims가 "진화하는 가상 생물체"라는 논문을 썼습니다. 그 논문은 물 속에서 움직이고 땅 위에서 움직이는 혁신적인 블록 생물체들을 보여주었습니다. Karl은 유전 알고리즘을 사용하여 생물체와 움직임을 진화시키는 아이디어를 시연했습니다. 그 비디오는 30년이 지난 지금도 여전히 매혹적입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robot
 
 리치 서튼 박사는 1984년에 발표한 박사 논문에서 강화 학습의 개념을 고안했다고 인정받고 있습니다. 그의 말에 따르면, "강화 학습은 보상으로부터 배움으로, 세계와의 평범한 상호작용 중에 시행착오를 통해 배우는 것"입니다. 이후에는 Karl Sims의 작업과 비슷하게 시뮬레이션 세계에서 학습하도록 적응되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 강화 학습은 딥마인드가 아타리 게임을 플레이하는 시스템을 가르칠 수 있다는 것을 증명한 경우를 포함하여 탐험의 핫한 분야로 부상했습니다. 이 시스템은 입력 비디오 프레임을 받아 조이스틱 컨트롤을 모방한 컨트롤 출력을 생성했습니다(비디오).
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robot
 
 오픈AI의 학습 능력 프로젝트는 RL이 달성할 수 있는 영역을 더 넓혀주었습니다. 로봇 손을 훈련시켜 인간 손과 유사한 미세 조작 능력을 갖도록 하는 것을 통해, 이 프로젝트는 RL이 미세한 운동 통제와 적응력을 필요로 하는 물리적 작업에서의 잠재력을 강조했습니다(비디오). 이 프로젝트는 손을 훈련시키기 위해 실제 환경으로 그 기술을 옮기기 전에 시뮬레이션 환경을 사용한 것으로, sim-to-real 전이라고 알려진 기술을 사용한 점에서 특히 주목할 만했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 강화 학습의 한계 극복하기
 
@@ -53,7 +85,18 @@ link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robot
 - 문제 단순화: 특히 로봇 픽킹에서 널리 사용되는 방법은 물건을 집을 때 기존 것을 잡아들이기에 걱정할 필요 없도록 매우 높은 유동성 진공을 단순히 사용하는 것입니다. Agility는 로봇의 다리를 설계하여 다리 제어 모델을 탄성 질량 진자로 모델링할 수 있도록 하여 제어 문제를 단순화했습니다.
 - 행동 클로닝: 이미 작동하는 시스템이 있다면 다른 시스템이 그 행동을 복제하도록 시도할 수 있습니다. 처음에는 지도 학습 기술을 사용해보는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 강화 학습의 두 번째 큰 도전은 매우 견고하지 않으며 지정된 보상에 과적합될 수 있다는 것입니다. 예를 들어, 인간 형상 로봇이 농구 골대에 골을 넣도록 훈련하려면, 목표가 단순히 골을 넣는 것이라면 로봇은 보다 성공적인 방법으로 공을 던질 것입니다. 그러나 인간이 농구를 차는 것과 같이 보이기를 원한다면, 골을 넣는 것과 인간처럼 보이는 것 둘 다 보상하는 더 정교한 보상 함수가 필요합니다.
 
@@ -65,7 +108,18 @@ link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robot
 - 동적 손재능 로봇 행동의 순차적 구성: 이 논문은 한 제어 체제에서 다른 체제로 부드럽게 전환하는 기술을 유도했는데, 두 제어 체제 간에 중첩이 있을 때 전환하는 방법을 제시합니다. 이는 매우 통찰력있는 논문입니다. Boston Dynamics은 아틀라스가 팽이를 하도록 만들기 위해 이 기술을 사용하거나 이 기술의 진화형을 사용한다고 여겨집니다.
 - 환경 제한: 작업을 매우 구체적인 상황으로 제한하면 문제를 크게 단순화할 수 있습니다. 예를 들어, 일반적인 세계에서 물건을 움켜쥐는 것은 매우 어렵습니다. 하지만 그냥 통에 있는 물건을 집는 것으로 제한한다면 문제를 상당히 단순화하고 그 후 하나의 작업만 배울 수 있습니다. 마찬가지로, 로봇이 할 수 있는 것을 충족하기 위해 모든 문 손잡이를 변경할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로봇 공학 분야에서 이 문제는 매우 큰 문제이며, 로봇 공학 커뮤니티 외부에서는 잘 이해되지 않는 문제입니다. 진짜 인상적인 로봇 액션의 데모를 자주 보게 되는데, 우리는 로봇이 백플립을 할 수 있는 로봇이라면 당연히 몽키 바도 할 수 있을 것이라고 바로 생각합니다. 왜냐하면 우리는 7세 어린이가 백플립을 할 수 있는 아이라면 몽키 바에는 문제가 없을 것이기 때문입니다. 하지만 로봇은 그렇지 않습니다. 만약 로봇이 몽키 바를 할 수 있도록 훈련받지 않았다면, 그것은 그 일을 할 능력이 전혀 없을 것입니다.
 
@@ -75,7 +129,18 @@ link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robot
 
 우리가 알려진 정답 테스트 세트와 같은 결과를 생성해내는 모델을 고안하는 지도 학습에서는, 데이터가 많을수록 좋습니다. 음성 인식 분야의 초기 진전의 많은 부분은 지도 학습을 통해 이루어졌습니다. Tellme에서는, Nuance의 음성 인식 엔진을 사용하고 있음에도 불구하고 더 많은 데이터를 가지고 있기 때문에 어느 순간 Nuance보다 더 나은 음성 인식을 할 수 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사람들이 더 많은 데이터가 이긴다고 가정하는 것으로 이어졌습니다. 어느 정도는 여전히 사실이지만, 지도 학습을 시도하는 경우 테스트 세트가 필요합니다. 그리고 결과물은 당신의 테스트 및 훈련 세트의 크기만큼 좋습니다. 그래서 더 많은 데이터를 원하게 됩니다. Scale AI가 한 초기 작업 중 하나는, 자율 주행 자동차 회사들이 자동차, 정지 신호, 보행자, 교통 가로등 등이 어디에 있는지 보여 주는 레이블된 데이터 세트를 구축하는 데 도움을 주었습니다. 이러한 훈련 세트들을 구축하는 데는 매우 비용이 많이 들며 우리가 희망하는 것만큼 결과가 좋지 않습니다.
 
@@ -85,7 +150,18 @@ link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robot
 
 만약 길을 운전하는 사람으로부터 어떠한 데이터도 캡처할 수 없다면 자율 주행 자동차를 만드는 것을 상상해 보세요. 더 나아가, 자율 주행이 되지 않은 자동차는 거의 유용하지 않습니다. 이것이 로봇과 관련된 문제입니다. 넓은 범위의 숙련된 작업을 수행하지 못하는 로봇들은 본질적으로 덜 유용하지만, 우리는 실제 세계에서 사람들이 하는 일들로부터 데이터를 캡처하는 좋은 방법을 가지고 있지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어느 정도의 실험으로 우리는 움직임 캡처 슈트를 입거나 Mobile Aloha와 같은 릭을 사용하여 이 데이터(비디오)를 캡처하는 방식을 시도해 보았습니다.
 
@@ -95,7 +171,18 @@ link: "https://medium.com/@bp_64302/the-path-to-great-ai-for-human-capable-robot
 
 # 트랜스포머와 토큰
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Transformer Architecture는 훨씬 더 나은 모델을 생성하는 데 차별화를 가져온 혁신이었습니다. Transformer 아키텍처는 토큰 시퀀스를 살펴보고 다음 토큰을 예측할 수 있도록 패턴을 찾아 작동합니다. ChatGPT 4의 Transformer 아키텍처는 인터넷에서 수집된 대량의 데이터 코퍼스로부터 13조 개의 토큰(사실상 "단어"들)로 훈련되었습니다. 우리는 많은 텍스트가 있고 그 텍스트는 토큰 시퀀스로 잘 구조화되어 있습니다.
 
@@ -105,7 +192,18 @@ Transformer Architecture는 훨씬 더 나은 모델을 생성하는 데 차별�
 
 그러나 실제로 일반화하려면 많은 양의 토큰이 필요합니다. 우리는 충분한 양의 로봇이 토큰을 생성하지 않아 심각한 토큰 저장소를 구축하기에 충분하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 토큰의 원천
 
@@ -115,7 +213,18 @@ Transformer Architecture는 훨씬 더 나은 모델을 생성하는 데 차별�
 
 또 다른 원천은 이미 존재하는 풍부한 비디오 자료입니다. 90년대 중반, 저는 MIT의 컴퓨터 과학 연구소 내 그래픽스 연구실에서 석사 논문 작업을 했습니다. 세스 텔러 교수님은 제 논문 지도 교수였습니다. 제 논문은 컴퓨터 그래픽을 위한 교육 플랫폼으로 웹을 활용하는 것에 중점을 둔 반면, 제 동료는 도시 맵핑을 위한 로봇 데이터 수집 장치를 구축하고 있었습니다. 도시 맵핑 프로젝트는 이 데이터 수집 장치로 수집된 2D 이미지에서 3D 지오메트리를 재구성하기 위해 계산 기하학을 활용했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 동일한 컴퓨터 기하학 기법은 SLAM (Simultaneous Localization and Mapping)의 기초를 형성합니다. 이것은 현재의 로봇들이 2D 비디오에서 3D 기하를 재구성하여 우리 주변 세계를 탐색할 수 있는 방법입니다. 이러한 기법을 사용하여 스켈레톤을 추적하고 사람의 동작을 재구성할 수도 있습니다.
 
@@ -125,7 +234,18 @@ Transformer Architecture는 훨씬 더 나은 모델을 생성하는 데 차별�
 
 오늘날 우리는 양쪽 다 처리와 조작 분야에서 복잡한 실제 상호작용을 위해 안정적으로 인간형 로봇을 제어할 수 있는 모델이 충분히 좋지 않다는 문제를 가지고 있습니다. Boston Dynamics가 다양한 작업의 좋은 조합을 보여줄 수 있고, Agility가 매우 견고한 걷기 동역학을 보여주고, 연구소들이 박스를 오르내리며 멋진 스크래블을 하는 네 다리 동물을 보여줄 수 있을지라도, 우리는 여전히 새로운 상황이나 새로운 작업에 안정적으로 일반화할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이 복잡한 로봇들이 더 일반화된 강력한 제어 없이 의미 있는 작업을 수행할 수 없다면, 우리는 단순히 많은 수의 로봇을 배치할 수 없을 것이며, 캡쳐할 수 있는 데이터의 양이 제한될 것입니다.
 
@@ -135,7 +255,18 @@ LLM(Large Language Models)의 내재 지식을 비디오에서 추출된 토큰�
 
 저는 그 미래를 기대합니다. 이미 유용한 코로봇들은 이 기본 모델이 사용 가능해지면 더욱 더 유능한 협업자가 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다른 흥미로운 논문 및 강연:
 
@@ -143,7 +274,18 @@ LLM(Large Language Models)의 내재 지식을 비디오에서 추출된 토큰�
 - Russ Tedrake - 프린스턴 로보틱스 - Russ Tedrake - 확산 정책을 이용한 민첩한 조작
 - Pieter Abbeel - 로봇 조각 집기를 위한 기반 모델 구축에 대해
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Chelsea Finn & Pieter Abbeel S3 E2 스탠포드 교수 첼시 핀: 항상 변화하는 세상에 대응할 수 있는 AI를 구축하는 방법
 

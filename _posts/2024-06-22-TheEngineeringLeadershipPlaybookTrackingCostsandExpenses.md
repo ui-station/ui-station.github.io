@@ -3,13 +3,12 @@ title: "엔지니어링 리더십 가이드 비용과 경비 추적하는 방법
 description: ""
 coverImage: "/assets/img/2024-06-22-TheEngineeringLeadershipPlaybookTrackingCostsandExpenses_0.png"
 date: 2024-06-22 23:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-TheEngineeringLeadershipPlaybookTrackingCostsandExpenses_0.png
 tag: Tech
 originalTitle: "The Engineering Leadership Playbook: Tracking Costs and Expenses"
 link: "https://medium.com/@muhammadhani/the-engineering-leadership-playbook-the-importance-of-tracking-costs-and-expenses-89d88bbe9306"
 ---
-
 
 귀하의 응용 프로그램이 사용자에게 제공해야 하는 서비스를 적절한 성능과 신뢰성 수준으로 제공하기 위해 매달 얼마의 금액이 필요한가요? 또한 시스템을 축소하고 어려운 시간과 줄어드는 시간 동안 조명만 켜두는 경우 팀이 필요한 최소 금액은 얼마인가요?
 
@@ -25,7 +24,18 @@ link: "https://medium.com/@muhammadhani/the-engineering-leadership-playbook-the-
 - 라이선스 및 구독.
 - 당직 및 사건 관리 도구 및 플랫폼.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-TheEngineeringLeadershipPlaybookTrackingCostsandExpenses_0.png" />
 
@@ -39,7 +49,18 @@ link: "https://medium.com/@muhammadhani/the-engineering-leadership-playbook-the-
 
 관리자로서, 여러분의 주요 책임 중 하나는 팀의 비용을 위에서 나열된 영역에서 지속적으로 추적하는 것입니다. 여러분의 팀은 분명히 운영 중이고 비용이 드는 여러 서비스, 데이터베이스, 도구 및 기타 자산을 소유하고 있습니다. 기술 스코핑 및 계획 단계에서 항상 비용 요소를 고려하도록 팀을 격려하세요. 또한 그들은 사업 분야의 성공 지표를 알고 이해하고, 그들의 결정이 이러한 지표에 미치는 영향을 보아야 합니다. 많은 엔지니어링 팀과 스타트업이 문제 해결 및 지불을 포함한 모든 것을 소유하는 문화를 만들어 성공을 찾았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 마지막으로
 

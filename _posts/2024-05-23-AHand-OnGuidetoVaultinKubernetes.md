@@ -18,7 +18,18 @@ link: "https://medium.com/@muppedaanvesh/a-hand-on-guide-to-vault-in-kubernetes-
 
 이때 HashiCorp Vault가 등장합니다. Vault는 중요한 정보를 안전하게 저장하고 관리하기 위해 설계된 도구입니다. 동적 보안 정보, 서비스로의 암호화 및 접근 제어를 위한 견고한 메커니즘을 제공하여, 쿠버네티스 환경에서 보안 정보를 관리하기에 이상적인 솔루션입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 튜토리얼에서는 Helm을 사용하여 쿠버네티스 클러스터에 Vault를 설치하고 구성하는 단계를 안내합니다. 그리고 Pod를 배포하여 Vault에서 비밀을 액세스할 수 있도록합니다. 이 안내서를 마치면 쿠버네티스 클러스터에 작동하는 Vault 설정이 완료되어 응용 프로그램 비밀을 안전하게 관리할 수 있습니다.
 
@@ -30,7 +41,18 @@ link: "https://medium.com/@muppedaanvesh/a-hand-on-guide-to-vault-in-kubernetes-
 - 클러스터와 상호 작용하도록 구성된 kubectl이 있어야 합니다.
 - 로컬 머신에 Helm이 설치되어 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*jmt8bsoEGeVHv5ZUP7XY_Q.gif" />
 
@@ -42,7 +64,18 @@ link: "https://medium.com/@muppedaanvesh/a-hand-on-guide-to-vault-in-kubernetes-
 $ kubectl create ns vault
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Vault 설치
 
@@ -52,7 +85,18 @@ $ kubectl create ns vault
 
 HashiCorp Helm 리포지토리를 Helm 구성에 추가해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 helm repo add hashicorp https://helm.releases.hashicorp.com
@@ -64,7 +108,18 @@ helm repo add hashicorp https://helm.releases.hashicorp.com
 
 다음 명령어를 사용하여 HashiCorp 저장소에서 Helm 차트를 사용하여 Vault를 직접 설치할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 helm install vault hashicorp/vault \
@@ -91,7 +146,18 @@ helm install vault \
        ./vault-chart
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 설정을 사용하여 UI가 활성화된 Vault를 개발 모드로 설치하고 외부에서 액세스하기 위해 LoadBalancer 서비스를 통해 노출합니다. 이 설정은 테스트 및 개발 목적으로 이상적입니다.
 
@@ -121,7 +187,18 @@ statefulset.apps/vault   1/1     2m40s
 
 # Vault 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번 단계에서는 Kubernetes 클러스터 내에서 안전하게 비밀을 관리하고 액세스하기 위해 Vault 정책과 인증 방법을 설정할 것입니다. 이 구성은 인증된 애플리케이션만 Vault에서 민감한 데이터를 검색할 수 있도록 보장합니다.
 
@@ -133,7 +210,18 @@ statefulset.apps/vault   1/1     2m40s
 kubectl exec -it vault-0 -- /bin/sh
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 정책 생성 및 적용하기
 
@@ -149,7 +237,18 @@ path "secret*" {
 EOF
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 정책을 적용해주세요:
 
@@ -165,7 +264,18 @@ $ vault policy write read-policy /home/vault/read-policy.hcl
 
 Vault에서 Kubernetes 인증 방법을 활성화하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 vault auth enable kubernetes
@@ -182,7 +292,18 @@ vault write auth/kubernetes/config \
    kubernetes_ca_cert=@/var/run/secrets/kubernetes.io/serviceaccount/ca.crt
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 5. 역할 생성
 
@@ -198,7 +319,18 @@ vault write auth/kubernetes/role/vault-role \
 
 여기서 여러 개의 서비스 계정과 네임스페이스를 전달할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 vault write auth/kubernetes/role/<my-role> \
@@ -214,7 +346,18 @@ vault write auth/kubernetes/role/<my-role> \
 
 우리는 두 가지 방법으로 보안 정보를 만들 수 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Vault CLI를 사용하기
 
@@ -226,7 +369,18 @@ vault write auth/kubernetes/role/<my-role> \
 $ vault kv put secret/login pattoken=ytbuytbytbf765rb65u56rv
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 명령어를 사용하여 시크릿을 나열하여 비밀을 확인할 수 있습니다:
 
@@ -241,7 +395,18 @@ login
 
 Vault 네임스페이스에서 서비스를 나열하여 로드 밸런서의 외부 IP를 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ kubectl get svc -n vault
@@ -258,11 +423,18 @@ vault-ui                   LoadBalancer   10.245.11.13     24.123.49.59   8200:3
 
 제 경우: 24.123.49.59:8200
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-AHand-OnGuidetoVaultinKubernetes_1.png" />
 
@@ -272,8 +444,18 @@ vault-ui                   LoadBalancer   10.245.11.13     24.123.49.59   8200:3
 
 시크릿 엔진으로 이동하세요 '` 시크릿`
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-AHand-OnGuidetoVaultinKubernetes_2.png" />
 
@@ -283,11 +465,33 @@ vault-ui                   LoadBalancer   10.245.11.13     24.123.49.59   8200:3
 
 이제 비밀을 만들기 위해 원하는 필드를 입력하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 명령어를 사용하여 Vault CLI에서 위의 비밀을 액세스할 수도 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ vault kv list secret
@@ -303,7 +507,18 @@ my-first-secret
 
 위 단계를 사용하여 Vault를 설치하고 Vault 역할(vault-role)을 구성하여 서비스 계정(vault-serviceaccount)이 Vault에 저장된 비밀에 액세스할 수 있도록 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, login과 my-first-secret이라는 키-값 쌍을 가진 두 개의 시크릿을 생성했습니다. 이제 간단한 쿠버네티스 배포를 생성하고 이러한 시크릿에 액세스해 보겠습니다.
 
@@ -320,7 +535,18 @@ metadata:
     app: read-vault-secret
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 명령을 사용하여 위에 제공된 매니페스트를 적용하세요.
 
@@ -332,7 +558,18 @@ kubectl apply -f vault-sa.yaml
 
 이 배포 매니페스트는 Vault에서 시크릿을 안전하게 가져오도록 구성된 Nginx 파드의 단일 레플리카를 생성합니다. Vault 에이전트는 지정된 템플릿에 따라 시크릿인 login 및 my-first-secret을 파드에 주입합니다. 시크릿은 파드 파일 시스템에 저장되어 컨테이너에서 실행 중인 응용 프로그램에서 액세스할 수 있습니다. Vault와 인증하기 위해 필요한 권한을 갖고 있는 vault-serviceaccount 서비스 어카운트가 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어노테이션 섹션을 자세히 살펴보면 그 목적과 기능을 이해할 수 있습니다.
 
@@ -364,11 +601,33 @@ annotations:
 - vault.hashicorp.com/agent-inject-template-my-first-secret: 주입된 my-first-secret에 대한 템플릿을 정의하여 시크릿이 기록될 형식을 지정합니다.
 - vault.hashicorp.com/role: “vault-role”: 인증에 사용될 Vault 역할을 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 명령어를 사용하여 pod 볼륨에서 Vault 시크릿을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ kubectl exec -it vault-test-84d9dc9986-gcxfv -- sh -c "cat /vault/secrets/login && cat /vault/secrets/my-first-secret" -n vault
@@ -387,9 +646,18 @@ password=anveshpassword
 
 # 소스 코드
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 텍스트를 한국어로 번역하였습니다.
 
@@ -401,7 +669,18 @@ password=anveshpassword
 
 # Connect With Me
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그를 유익하게 찾으셨고 AWS, 클라우드 전략, Kubernetes 또는 관련된 모든 주제에 대해 더 깊이 알고 싶다면, LinkedIn에서 연결할 기회를 갖게 되어 기쁩니다. 의미 있는 대화를 나누고 통찰을 공유하며 함께 클라우드 컴퓨팅의 광활한 영역을 탐색해 봅시다.
 
@@ -410,4 +689,3 @@ password=anveshpassword
 행복한 배포 되세요! 🚀
 
 행복한 쿠버네팅 되세요! ⎈
-

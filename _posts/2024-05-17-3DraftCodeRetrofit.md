@@ -3,13 +3,12 @@ title: "3DraftCode  Retrofit"
 description: ""
 coverImage: "/assets/img/2024-05-17-3DraftCodeRetrofit_0.png"
 date: 2024-05-17 17:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-3DraftCodeRetrofit_0.png
 tag: Tech
 originalTitle: "#3DraftCode — Retrofit"
 link: "https://medium.com/@rakapermanaputraa/3draftcode-retrofit-d409c4dc060e"
 ---
-
 
 <img src="/assets/img/2024-05-17-3DraftCodeRetrofit_0.png" />
 
@@ -19,7 +18,18 @@ Retrofit은 안드로이드 개발에서 네트워킹을 위해 사용되는 인
 
 # 왜 Retrofit을 사용해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Retrofit은 Android 개발에서 네트워크 작업을 처리하는 우선적인 선택으로 여겨지는 몇 가지 이점을 제공합니다:
 
@@ -29,12 +39,22 @@ Retrofit은 Android 개발에서 네트워크 작업을 처리하는 우선적�
 - 효율성: Retrofit은 성능을 최적화하여 네트워크 리소스를 효율적으로 사용합니다. 요청/응답 캐싱, 연결 풀링, 비동기 요청 실행 등의 기능을 지원하여 빠르고 반응성이 좋은 애플리케이션을 만드는 데 도움을 줍니다.
 - 유연성: Retrofit은 다양한 사용 사례와 요구 사항에 적응하기 위한 다양한 사용자 정의 옵션을 제공합니다. HTTP 헤더, 요청 타임아웃, 오류 처리 메커니즘, 로깅 수준 등을 필요에 맞춰 구성할 수 있습니다.
 
-
 # Retrofit을 사용해야 하는 경우?
 
 Retrofit이 제공하는 다양한 이점을 고려하면, 네트워크 작업 및 RESTful API와 작업할 때마다 Retrofit을 사용해야 한다고 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Retrofit 예제?
 
@@ -49,7 +69,18 @@ dependencies {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 데이터 클래스 정의
 
@@ -66,14 +97,25 @@ data class User(
 
 3. API 인터페이스 정의
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 인터페이스 ApiService {
 
     @GET("users/{id}")
     fun getUserById(@Path("id") userId: Int): Call<User>
-    
+
 }
 ```
 
@@ -92,7 +134,18 @@ object ApiClient {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 네트워크 요청 만들기
 
@@ -134,7 +187,18 @@ class MainActivity : AppCompatActivity() {
 
 6. Manifest에 권한을 추가하는 것을 잊지 마세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <uses-permission android:name="android.permission.INTERNET" />

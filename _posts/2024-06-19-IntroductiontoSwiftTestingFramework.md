@@ -3,13 +3,12 @@ title: "Swift 테스팅 프레임워크 소개"
 description: ""
 coverImage: "/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_0.png"
 date: 2024-06-19 13:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_0.png
 tag: Tech
 originalTitle: "Introduction to Swift Testing Framework"
 link: "https://medium.com/simform-engineering/introduction-to-swift-testing-framework-aab7f6ecfb7d"
 ---
-
 
 ## Swift 개발 혁신: WWDC 2024에서 공개된 테스팅 도구
 
@@ -19,7 +18,18 @@ link: "https://medium.com/simform-engineering/introduction-to-swift-testing-fram
 
 Swift Testing에는 동시성을 지원하는 기능, 병렬 테스트 실행, 그리고 테스트 매크로 도입과 같은 혁신적인 기능이 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 목차
 
@@ -35,7 +45,18 @@ Swift Testing에는 동시성을 지원하는 기능, 병렬 테스트 실행, �
 
 # Swift 테스트 대상 추가 방법?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI 테스트와 함께 Swift Testing을 선택해야 합니다.
 
@@ -45,7 +66,18 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 
 # 구성 요소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트가 가독성 있게 작성되어 있는지 확인하는 것이 중요합니다, 특히 코드베이스가 복잡해지는 경우 더욱 그렇습니다. Swift Testing은 이를 돕기 위해 몇 가지 기능을 추가했으므로 표현력 있는 테스트를 작성하는 것이 더 쉬울 것입니다.
 
@@ -56,8 +88,18 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 - 전역 함수 또는 클래스 메소드일 수 있습니다.
 - async 또는 throws로 표시할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_2.png)
 
@@ -67,8 +109,18 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 
 ![이미지](/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_3.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 실패가 발생하면, 실패에 대한 자세한 정보가 표시되어 어디서 잘못된 것인지 이해할 수 있습니다.
 
@@ -78,7 +130,18 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 
 만약 이 블록에서 어떤 오류도 throw하지 않는다면 실패합니다. 그렇지 않으면 성공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래의 테스트 케이스를 확인해보세요:
 
@@ -88,11 +151,33 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 
 - #require 매크로:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 테이블 태그를 마크다운 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_7.png" />
 
@@ -102,7 +187,18 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 
 각 테스트 함수는 독립적으로 자체 인스턴스에서 실행되므로 실수로 데이터를 공유하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 특정 테스트 이름을 가진 테스트 네비게이터에 두 개의 스위트를 볼 수 있습니다. 부 스위트는 부모 스위트 아래에 계층적으로 표시됩니다.
 
@@ -112,7 +208,18 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 
 매개변수화 테스트는 중복 코드나 과도한 개별 테스트 케이스 생성 없이 철저한 테스트 커버리지를 보장하는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 매개변수화된 테스트를 실습해 봅시다.
 
@@ -122,7 +229,18 @@ Swift 테스팅을 시작하려면 새 프로젝트를 생성할 때 XCTest UI �
 
 위 예시에서 세 가지 인수가 제공되었습니다. 두 가지는 올바르고 하나는 잘못되었지만, 전체 테스트 케이스는 실패로 표시될 것입니다. 그러나 테스트 탐색기에서 실패의 원인이 된 인수를 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_10.png" />
 
@@ -132,8 +250,18 @@ Swift Tests와 XCTest의 구성 요소 비교:
 
 1. 테스트 함수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_11.png)
 
@@ -143,8 +271,18 @@ Swift Tests와 XCTest의 구성 요소 비교:
 
 ![이미지](/assets/img/2024-06-19-IntroductiontoSwiftTestingFramework_12.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트가 실패하면 테스트가 중지되는 방식도 두 프레임워크에서 차이가 있습니다.
 
@@ -154,7 +292,18 @@ Swift Tests와 XCTest의 구성 요소 비교:
 
 ## XCTest에서의 이주를 위한 팁
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - XCTest와 Swift Test는 단일 타겟으로 작성할 수 있습니다. 새로운 타겟을 만드는 것은 필수적이지 않습니다.
 - 여러 메소드가 유사한 구조를 가질 때는 하나의 테스트로 결합하고 해당 함수를 매개변수화할 수 있습니다.

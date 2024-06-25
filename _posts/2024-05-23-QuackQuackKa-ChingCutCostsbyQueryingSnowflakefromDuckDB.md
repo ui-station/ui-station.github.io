@@ -3,13 +3,12 @@ title: "퀵, 퀵, 캐-칭 덕DB를 통해 Snowflake 쿼리하여 비용 절감�
 description: ""
 coverImage: "/assets/img/2024-05-23-QuackQuackKa-ChingCutCostsbyQueryingSnowflakefromDuckDB_0.png"
 date: 2024-05-23 15:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-QuackQuackKa-ChingCutCostsbyQueryingSnowflakefromDuckDB_0.png
 tag: Tech
 originalTitle: "Quack, Quack, Ka-Ching: Cut Costs by Querying Snowflake from DuckDB"
 link: "https://medium.com/datamindedbe/quack-quack-ka-ching-cut-costs-by-querying-snowflake-from-duckdb-f19eff2fdf9d"
 ---
-
 
 ## 덕이 신용카드로 도망갑니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/datamindedbe/quack-quack-ka-ching-cut-costs-by-queryin
 
 아파치 아이스버그는 2017년 넷플릭스에 의해 개발된 테이블 형식 명세서입니다. 2018년 넷플릭스는 아이스버그 프로젝트를 오픈소스화하고 아파치 소프트웨어 재단에 기증했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 넷플릭스는 Iceberg를 개발하여 일반 파티션이 적용된 데이터 파일과 최소한의 메타데이터를 포함하는 데이터 레이크의 한계를 극복했습니다. 이를 하이브 형식 테이블이라고도 합니다. 이러한 제한 사항에는 성능 문제(많은 파일 목록, 많은 파티션, 제한된 가지치기) 및 데이터 웨어하우스에서 흔히 제공되는 시간 여행, 스키마 진화 및 ACID 트랜잭션과 같은 기능이 빠져 있는 것이 포함되었습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/datamindedbe/quack-quack-ka-ching-cut-costs-by-queryin
 
 Apache Iceberg는 저장 형식이 아닙니다. Iceberg 테이블의 데이터를 Parquet, ORC, 또는 Avro와 같은 형식으로 저장할 수 있습니다. Iceberg는 이러한 데이터 파일 옆에 메타데이터를 구성하는 표준 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 도구 상자 열고 상호 운용성
 
@@ -39,7 +60,18 @@ Apache Iceberg는 저장 형식이 아닙니다. Iceberg 테이블의 데이터�
 
 ## 패러다임 전환
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중앙에서 액세스할 수있는 형식에 독립적으로 작업함으로써, 컴퓨팅 엔진이 상호 교체 가능해집니다. 이를 통해 특정 작업에 가장 적합한 컴퓨팅 엔진을 사용할 수 있으며 데이터를 옮길 필요가 없습니다. 한 도구로 작성된 데이터는 즉시 다른 도구에서 읽을 수 있습니다.
 
@@ -49,7 +81,18 @@ Apache Iceberg는 저장 형식이 아닙니다. Iceberg 테이블의 데이터�
 
 ## 다양한 기능을 갖춘 레이크하우스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Apache Iceberg은 상호 운용성을 촉진하는 것 외에도 데이터 호수와 데이터 웨어하우스 간의 기능 차이를 좁히는 데 도움이 되는 무수히 많은 기능을 지원하여 레이크하우스로 알려진 것이 됩니다. 시간 여행, ACID 트랜잭션, 파티션 진화, 숨겨진 파티셔닝, 스키마 진화, 객체 저장 비용 절감 등이 포함됩니다. 이 블로그 글에서는 상호 운용성에만 초점을 맞춥니다.
 
@@ -59,7 +102,18 @@ Apache Iceberg은 상호 운용성을 촉진하는 것 외에도 데이터 호�
 
 Snowflake는 이제 Iceberg 테이블을 사용하는 두 가지 방법을 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 외부 카탈로그. 이러한 테이블들은 Apache Spark, Apache Flink 또는 심지어 Trino과 같은 도구에 의해 외부적으로 작성되며, 객체 저장소에 등록되어 Hive 메타스토어, AWS Glue 데이터 카탈로그 또는 Nessie와 같은 외부 카탈로그에 등록됩니다. 이 모드에서 Snowflake로부터 테이블은 읽기 전용입니다.
 - Snowflake 카탈로그. 이러한 테이블들은 Snowflake로부터 읽기-쓰기가 가능하며 외부로부터는 읽기 전용입니다.
@@ -70,7 +124,18 @@ Snowflake 카탈로그를 사용하여 Iceberg 테이블을 사용할 때, Snowf
 
 본 문은 귀하의 데이터가 Snowflake에 저장되며 대규모 처리가 진행되는 곳이 Snowflake라고 가정합니다. Snowflake 카탈로그를 사용하는 것이 올바른 선택일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Iceberg Catalog](/assets/img/2024-05-23-QuackQuackKa-ChingCutCostsbyQueryingSnowflakefromDuckDB_1.png)
 
@@ -81,7 +146,18 @@ Snowflake 카탈로그를 사용하여 Iceberg 테이블을 사용할 때, Snowf
 - 데이터베이스 추상화. 아이스버그는 테이블 수준의 기술적 메타데이터 사양이며, 아이스버그 메타데이터 파일은 데이터 파일과 함께 저장됩니다. 테이블 사양은 테이블 이름, 스키마, 데이터베이스 또는 컬렉션이라는 개념을 인식하지 않습니다. 메타데이터 카탈로그를 사용하면 테이블의 "테이블 묶음"을 접두어로 테이블 이름을 매핑하여 데이터베이스처럼 고려할 수 있습니다.
 - 현재 테이블 버전을 가리키는 포인터. 아이스버그 테이블을 변경할 때, 새 데이터와 메타데이터 파일이 추가되어 이전 파일 옆에 저장됩니다. 카탈로그는 테이블 접두어를 추적하지만 "현재"인 메타데이터 파일도 알아야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 TL;DR: 현재 테이블 버전을 알기 위해서는 카탈로그에 액세스해야 하며, 테이블 이름으로 테이블에 액세스하고 쿼리를 작성해야 합니다.
 
@@ -91,7 +167,18 @@ TL;DR: 현재 테이블 버전을 알기 위해서는 카탈로그에 액세스�
 
 Spark를 사용하여 Iceberg 테이블을 읽고 싶다면 행운이 따릅니다! Snowflake는 Spark용 Iceberg Catalog SDK를 출시했습니다. 이 SDK는 (그 외 문서화되지 않은) Snowflake Catalog API를 사용하여 Spark의 카탈로그 인터페이스를 구현합니다. 현재 이 Snowflake 기능은 무료이며 실행 중인 데이터웨어하우스가 필요하지 않으며 "서버리스 크레딧" 비용이 필요하거나 "클라우드 서비스" 요금이 발생하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Snowflake의 공지는 쉽게 사용할 수 있는 샘플 코드를 제공하고 Spark가 고객이 관리하는 스토리지 계정에서 Iceberg 메타데이터 및 Parquet 파일을 직접 읽는 것을 확인했습니다.
 
@@ -101,7 +188,18 @@ Snowflake의 공지는 쉽게 사용할 수 있는 샘플 코드를 제공하고
 
 ## Iceberg 파일 시스템 카탈로그
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파일 시스템이나 객체 저장소 위에 카탈로그를 구현하는 것이 간단한 네이밍 규칙을 통해 가능해 보인다면, 그것이 가능한 이유는 그렇다고요! 실제로, Iceberg의 Hadoop 카탈로그가 바로 그것입니다. 해당 클래스 문서에는 다음과 같이 설명되어 있습니다:
 
@@ -111,7 +209,18 @@ Snowflake는 아마도 백엔드에서 독점적이고 높은 성능을 가진 �
 
 ## DuckDB
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DuckDB은 Iceberg Hadoop 카탈로그 및 파일 시스템 테이블에 대한 부분적인 지원을 제공합니다. 유감스럽게도 DuckDB는 아직 전체 데이터 웨어하우스를 읽는 기능을 지원하지는 않지만, 테이블 접두사를 가리키도록 설정할 수 있습니다. DuckDB는 버전 힌트 텍스트 파일을 파악하고 테이블의 최신 버전을 읽을 것입니다.
 
@@ -121,7 +230,18 @@ Snowflake를 사용하여 클라우드에 Iceberg 테이블을 생성하려면 �
 
 일반적으로 이렇게 진행해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 스토리지 프로비저닝: S3 버킷을 생성하고 Snowflake용 IAM 역할을 만들어 IAM 역할이 버킷에 액세스할 수 있는 필요한 권한이 부여되도록 합니다.
 - 스노우플레이크와 스토리지 연결: Snowflake 외부 볼륨을 생성합니다. S3의 경우, 외부 볼륨은 Snowflake 계정에 IAM 사용자를 생성합니다. IAM 사용자가 S3 버킷에 액세스할 수 있는 권한이 있는 역할을 가정할 수 있도록 신뢰 관계를 만들어야 합니다.
@@ -132,7 +252,18 @@ Snowflake를 사용하여 클라우드에 Iceberg 테이블을 생성하려면 �
 
 S3와 Snowflake 간에 안전한 연결을 설정하고 Snowflake에 아이스버그 테이블을 생성한 후, DuckDB가 이를 쿼리하는 방법을 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DuckDB의 얼음산 확장 기능을 사용하여 Snowflake에서 직접 S3로 만든 얼음산 테이블을 읽습니다. 여기서 플레이북을 찾을 수 있어요. 주요 기능은 다음 얼음산 스캔 메서드로 제공됩니다:
 
@@ -144,7 +275,18 @@ select * from iceberg_scan('s3://chapter-platform-iceberg/icebergs/line_item';)
 
 이제 오픈 테이블 형식의 진정한 힘을 발휘했습니다. Snowflake 및 해당 카탈로그의 편리함을 활용하면서 DuckDB에서 단일 노드 쿼리를 수행하여 비용을 절약할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 눈송이가 이렇게 하는 이유는 뭘까요?
 
@@ -154,7 +296,18 @@ select * from iceberg_scan('s3://chapter-platform-iceberg/icebergs/line_item';)
 
 눈송이는 (잠재적인) 고객들에게 눈송이를 선택하더라도 하나의 공급 업체에 얽매이지 않아도 되며 잠금 상태의 위험이 없다는 메시지를 전송합니다. 눈송이를 선택하면 원하는 때에 컴퓨트 엔진을 전환할 수 있는 옵션이 항상 제공된다고 합니다. Databricks도 마찬가지로 Delta Lake 형식을 공개하고 UniForm을 통해 Hudi와 아이스버그를 더 잘 지원하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스노우플레이크는 여전히 가능한 한 많은 컴퓨팅을 자체 시스템에서 유지하고 싶어합니다. 외부 메타데이터를 Iceberg 카탈로그로 이동하는 명확한 방법이 있지만, 그 반대 방향으로 이동하는 것은 훨씬 어렵습니다. 메타데이터 카탈로그를 소유함으로써, 스노우플레이크는 선호되는 컴퓨팅 엔진이자唯一의 작성자로 남게 됩니다. 시스템을 공개하지 않았다면 스노우플레이크는 락인을 두려워하는 많은 고객을 잃었을 것으로 예상됩니다.
 
@@ -164,7 +317,18 @@ Iceberg와 같은 오픈 테이블 형식은 컴퓨팅과 스토리지를 진정
 
 이 게시물은 비용이 많이 드는 스노우플레이크 컴퓨팅 대신 DuckDB에서 쿼리를 실행하는 방법이 얼마나 쉬운지를 보여 주었습니다. 여러분의 객체 저장소에서 Snowflake가 관리하는 데이터를 직접 가리키는 것으로 독립적으로 실행할 수 있습니다. 거기서는 Snowflake 웨어하우스에 없는 데이터와 조합할 수도 있습니다. 비슷한 성능을 가진 DuckDB 인스턴스에서 실행 시 비용이 대략 스노우플레이크 웨어하우스의 10% 정도인 것을 고려하면, 이러한 방식은 상당한 비용 절감을 가져올 수 있습니다. 물론 DuckDB가 스노우플레이크를 대체한다는 것은 의미하지 않습니다. 이것은 상호 운용성의 힘을 잘 보여 주는 좋은 데모라고 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물은 Jelle De Vleminck, Robbert, Moenes Bensoussia, 그리고 Jonathan Merlevede의 공동 노력의 결과입니다.
 

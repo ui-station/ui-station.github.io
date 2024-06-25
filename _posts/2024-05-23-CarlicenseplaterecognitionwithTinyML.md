@@ -3,13 +3,12 @@ title: "작은 인공지능을 활용한 자동차 번호판 인식"
 description: ""
 coverImage: "/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_0.png"
 date: 2024-05-23 16:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_0.png
 tag: Tech
 originalTitle: "Car license plate recognition with TinyML"
 link: "https://medium.com/arduino-engineering/car-license-plate-recognition-with-tinyml-e594f08ecacb"
 ---
-
 
 ## 엣지 임펄스와 아두이노를 이용해 엣지에서 클라우드까지
 
@@ -19,7 +18,18 @@ link: "https://medium.com/arduino-engineering/car-license-plate-recognition-with
 
 ![차량 번호판 인식 시스템](/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 어떻게 하나요?
 
@@ -30,7 +40,18 @@ link: "https://medium.com/arduino-engineering/car-license-plate-recognition-with
 
 ![이미지](/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하드웨어 시스템은 세 가지 주요 노드로 구성되어 있습니다:
 
@@ -42,7 +63,18 @@ link: "https://medium.com/arduino-engineering/car-license-plate-recognition-with
 
 ![이미지](/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 엣지 컴퓨팅에 관해...
 
@@ -53,7 +85,18 @@ link: "https://medium.com/arduino-engineering/car-license-plate-recognition-with
 
 TinyML은 마이크로컨트롤러와 같은 작고 저전력 장치에 머신러닝 모델을 배포하는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트의 ML 모델은 이미지를 입력으로 받아들이고 이를 EU 및 Swiss 두 가지 카테고리로 분류합니다.
 이 작업은 이미지 분류로 알려져 있으며 지도학습(machine learning)의 범주에 속합니다. 지도학습은 각 입력이 해당하는 출력 레이블과 관련된 레이블이 있는 데이터 집합을 기반으로 모델을 교육하는 것을 포함합니다.
@@ -64,7 +107,18 @@ TinyML은 마이크로컨트롤러와 같은 작고 저전력 장치에 머신�
 
 Tiny Machine Learning 모델을 구축하는 과정은 4단계로 이루어집니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 수집
 - 데이터 전처리
@@ -77,7 +131,18 @@ Tiny Machine Learning 모델을 구축하는 과정은 4단계로 이루어집�
 
 이 단계에서는 기계 학습 모델을 훈련시키기 위한 관련 데이터를 수집합니다. 이 프로젝트의 경우 OpenMV를 사용하여 EU 및 스위스의 번호판이 포함된 이미지 세트를 수집하는 것을 포함합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OpenMV는 머신 비전 작업에 디자인된 마이크로컨트롤러 기반 플랫폼으로, 다양한 카메라 센서와 MicroPython을 실행할 수 있습니다. 엣지 디바이스에서 이미지를 캡처하는 간단하고 효율적인 솔루션을 제공합니다.
 
@@ -87,7 +152,18 @@ OpenMV를 사용하면 빠르게 MicroPython 스크립트를 만들어 다양한
 
 ![이미지](/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Edge Impulse
 
@@ -97,7 +173,18 @@ OpenMV를 사용하면 빠르게 MicroPython 스크립트를 만들어 다양한
 
 ## 데이터 수집 및 전처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OpenMV는 Edge Impulse와 통합하여 데이터 수집 프로세스를 더욱 간단하게 만들어줍니다. 이를 통해 외부 도구가 필요하지 않고 이미지 데이터셋을 직접 업로드할 수 있습니다.
 
@@ -107,7 +194,18 @@ OpenMV는 Edge Impulse와 통합하여 데이터 수집 프로세스를 더욱 �
 
 머신 러닝에서 특성은 특정 작업을 해결하는 데 관련이 있는 원시 데이터에서 추출된 특정한 특징을 가리킵니다. 이미지 처리 문제에서는 이미지에 존재하는 가장자리, 질감, 모양 또는 패턴과 같은 특성이 포함될 수 있습니다. Edge Impulse는 이미지에서 자동으로 특성을 추출할 수 있어 이를 통해 데이터 내에서 가장 관련성이 높은 정보를 식별하고 집중함으로써 모델 학습 프로세스를 간소화할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모델 훈련
 
@@ -117,7 +215,18 @@ Edge Impulse는 미리 제작된 모델 아키텍처 또는 사용자 정의 모
 
 ![Image](/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델의 효과성은 정확도 지표(F1 점수)를 사용하여 평가되며, 이는 모델이 예측에서 얼마나 정확한지를 나타냅니다.
 
@@ -127,7 +236,18 @@ Edge Impulse는 미리 제작된 모델 아키텍처 또는 사용자 정의 모
 
 ## 배포
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Edge Impulse는 하드웨어에 독립적이므로 모델을 어떤 엣지 장치에도 배포할 수 있어요.
 
@@ -137,7 +257,18 @@ Edge Impulse는 하드웨어에 독립적이므로 모델을 어떤 엣지 장�
 
 ![image2](/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## The Edge sketch
 
@@ -187,14 +318,25 @@ void loop()
       pred_result = 'E';
       break;
   }
-  
+
   // ...
   // 처리 결과를 시리얼을 통해 대시보드 노드로 전송
   Serial1.print(pred_result);
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # …클라우드로
 
@@ -204,7 +346,18 @@ void loop()
 
 이 플랫폼은 아두이노 보드 및 ESP32과 같은 제3자 장치를 포함한 다양한 장치와 호환됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 클라우드 스케치
 
@@ -212,7 +365,7 @@ void loop()
 
 ```js
 // 클라우드 변수 및 네트워크 인증 정보를 포함한 파일
-#include "thingProperties.h" 
+#include "thingProperties.h"
 
 void setup() {
   // ...
@@ -229,7 +382,7 @@ void loop() {
   // ...
   if (Serial1.available()) {
     char inByte = Serial1.read(); // 에지 노드에서 오는 결과 읽기
-    
+
     if (inByte == 'E') {
       region = REGION_EU; // 'region'은 클라우드 변수입니다
       // ...
@@ -245,7 +398,18 @@ void loop() {
 
 ## 대시보드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아두이노 IoT 클라우드는 사용자가 쉽게 사용할 수 있는 위젯을 활용하여 직관적인 대시보드를 생성할 수 있는 기능을 제공합니다. 사용자들은 이러한 위젯을 장치에서 사용되는 클라우드 변수에 쉽게 연결할 수 있어 데이터 시각화와 관리 과정을 간편화할 수 있습니다.
 
@@ -255,7 +419,18 @@ void loop() {
 
 # GUI 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Giga Display Shield로 관리되는 GUI는 로컬 대시보드인 인식된 자동차 번호판 유형을 보여줍니다. 디스플레이 관리는 Arduino_GigaDisplay_GFX 라이브러리에 의해 제어됩니다.
 
@@ -319,11 +494,21 @@ void drawSwissFlag() {
 
 ![Car License Plate Recognition with TinyML](/assets/img/2024-05-23-CarlicenseplaterecognitionwithTinyML_16.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료
 
 - 코드:
-https://github.com/csarnataro/arduino-tinyml-plate-recognition
+  https://github.com/csarnataro/arduino-tinyml-plate-recognition
 - 이탈리안 임베디드 이벤트: https://www.italianembedded.com/events/arduino-ml/

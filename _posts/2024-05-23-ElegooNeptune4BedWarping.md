@@ -18,23 +18,32 @@ Tuning 패널에서의 시각화를 기반으로 한 웨이브 형상이 침대�
 
 # 보정 매크로
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [gcode_macro PREHEAT_BED_WAIT_CALIBRATE]
 description: 침대를 예열한 다음 기다렸다가 교정합니다.
 gcode:
-  M118  [PREHEAT_BED_WAIT_CALIBRATE] 침대 예열 중.
-  M190 S80 ;침대가 인쇄 온도에 도달할 때까지 기다림
-  M118 [PREHEAT_BED_WAIT_CALIBRATE] 침대 예열 완료.
-  M118 [PREHEAT_BED_WAIT_CALIBRATE] 교정은 10분 후에 시작됩니다.
-  G4 P600000; 10분 대기 후 교정
-  M118 [PREHEAT_BED_WAIT_CALIBRATE] 10분 경과
-  G29
-  M118 [PREHEAT_BED_WAIT_CALIBRATE] 교정 완료
-  M118 [PREHEAT_BED_WAIT_CALIBRATE] 교정 저장 및 클리퍼 재시작
-  SAVE_CONFIG
-
+M118 [PREHEAT_BED_WAIT_CALIBRATE] 침대 예열 중.
+M190 S80 ;침대가 인쇄 온도에 도달할 때까지 기다림
+M118 [PREHEAT_BED_WAIT_CALIBRATE] 침대 예열 완료.
+M118 [PREHEAT_BED_WAIT_CALIBRATE] 교정은 10분 후에 시작됩니다.
+G4 P600000; 10분 대기 후 교정
+M118 [PREHEAT_BED_WAIT_CALIBRATE] 10분 경과
+G29
+M118 [PREHEAT_BED_WAIT_CALIBRATE] 교정 완료
+M118 [PREHEAT_BED_WAIT_CALIBRATE] 교정 저장 및 클리퍼 재시작
+SAVE_CONFIG
 
 ## 80도로 10분간 침대에서 발생한 변화 분석
 
@@ -42,9 +51,18 @@ gcode:
 
 내 의심은 침대를 이동 프레임에 고정하는 나사가 침대가 열을 흡수함에 따라 확장되는 만큼 구부러진 선을 만들어내는 것입니다. 나사로 고정되지 않은 침대의 부분들이 침대가 흡수함에 따라 더 많이 팽창하기 때문입니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 다른 문제는 코너가 전체 온도에 도달하지 못한다는 것입니다. 침대가 가열된 상태에서도 코너가 완전한 온도에 이르지 않는다는 점이 문제입니다. 30분 동안 가열해도 10분 동안 가열했을 때와 똑같은 패턴이 나타났습니다. 이는 특히 PETG를 인쇄할 때 문제를 일으키는데, 이는 보다 높은 침대 온도가 필요하고 따라서 열원 요소(즉, 코너)에서 멀어질수록 온도 차이가 커지기 때문입니다.
 
@@ -54,7 +72,18 @@ gcode:
 
 실험으로, 저는 80도로 예열하는 부분을 제거하고 침대가 10분 동안 실온에 놓인 후 보정을 실행하도록 매크로를 수정했습니다. 이에 다른 문제가 있습니다. 프린터의 온도 프로브가 약간 부정확한 것 같습니다. 제 집의 주변 온도는 화씨 65도(섭씨 18.3도)이지만, 프린터의 프로브는 침대에서 22.3도, 핫엔드에서 23.4도를 표시하고 있습니다. 이 중 어느 하나의 온도라도 정확하다면, 저는 68도에서 땀을 흘리기 시작하고 72도에서는 건강 문제로 인해 실신할 수 있으므로 시원한 환경으로 향할 것입니다. 그러나 정말 궁금한 것은 왜 헤드가 침대에 위치했을 때 온도 차이가 1도 발생하는지 입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 실내 온도에서 침대의 휨이 실제로 더 두드러지게 나타납니다.
 
@@ -64,11 +93,21 @@ gcode:
 
 # 40도에서 열처리 한 결과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 40도에서 불려서 다시 교정하기로 결정했어요.
 
 ![이미지](/assets/img/2024-05-23-ElegooNeptune4BedWarping_2.png)
 
 요약 — 이게 세 가지 중에 제일 최악이에요.
-

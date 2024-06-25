@@ -12,15 +12,24 @@ link: "https://medium.com/google-cloud/design-your-landing-zone-design-considera
 
 마음에 드시는 markdown 형식의 표를 아래에 참조해보세요:
 
-
-| 구분               | 설명                                                                          |
-|--------------------|------------------------------------------------------------------------------|
-| 착륙 지역이란?    | 착륙 지역의 정의 및 필요성에 대해 다룸                                       |
-| 디자인 프로세스 개요 | 착륙 지역 디자인 프로세스 개요 소개                                         |
+| 구분                      | 설명                                                                         |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| 착륙 지역이란?            | 착륙 지역의 정의 및 필요성에 대해 다룸                                       |
+| 디자인 프로세스 개요      | 착륙 지역 디자인 프로세스 개요 소개                                          |
 | 디자인 고려 사항 카테고리 | 착륙 지역 디자인 시 고려해야 할 7가지 카테고리 및 주요 디자인 결정 사항 소개 |
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 8. Google Kubernetes Engine (GKE)
 
@@ -30,7 +39,18 @@ Google Cloud는 컨테이너를 실행하는 몇 가지 다른 방법을 제공�
 
 GKE은 Google의 관리형 Kubernetes 플랫폼이에요. 이를 통해 Google Cloud에서 Kubernetes를 실행할 수 있지만 자체 관리형 Kubernetes보다 여러가지 이점을 제공해요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - GKE는 클러스터를 배포하고 쿠버네티스를 설치하며 노드를 등록하는 것을 처리해줍니다. 새로운 클러스터는 몇 분 안에 배포할 수 있어요!
 - 쿠버네티스 제어 플레인 노드는 완전 관리되며 소비자로부터 완전히 추상화되어 있어요.
@@ -51,7 +71,18 @@ GKE은 Google의 관리형 Kubernetes 플랫폼이에요. 이를 통해 Google C
 
 ## GKE Autopilot 또는 GKE 표준?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![AutoPilot](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_0.png)
 
@@ -66,7 +97,18 @@ GKE은 Google의 관리형 Kubernetes 플랫폼이에요. 이를 통해 Google C
 
 그리고 이전에 언급한 것처럼, 실제로 배포되고 실행 중인 파드에 대해 비용을 지불하므로, GKE 클러스터를 비효율적으로 사용하는 국면에서 지출을 낭비하는 일을 피할 수 있습니다. (GKE Standard를 실행할 때 흔히 발생하는 문제입니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 경우 Autopilot을 권장합니다. 일부 특정한 경우에는 Standard를 사용하고 싶을 수도 있습니다. 예를 들어:
 
@@ -79,7 +121,18 @@ GKE은 Google의 관리형 Kubernetes 플랫폼이에요. 이를 통해 Google C
 
 이것은 이전보다는 덜 검정색과 흰색의 문제입니다. Autopilot 이전에는 답이 명확했습니다: 가능한 한 많은 Multitenant 클러스터를 사용하십시오. 아이디어는 매우 적은 클러스터를 가지고 각 클러스터가 조직 내 다중 테넌트로부터 작업 부하를 호스팅한다는 것입니다. 여기서 테넌트는 일반적으로 조직 내에서 다른 팀들을 의미합니다. 그리고 각 테넌트는 하나 이상의 네임스페이스를 소유하게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 멀티테넌트 GKE 클러스터를 사용하면:
 
@@ -93,7 +146,18 @@ GKE은 Google의 관리형 Kubernetes 플랫폼이에요. 이를 통해 Google C
 - 각 애플리케이션이 자체 클러스터를 관리해야 합니다. 이로 인해 각 팀에 상당한 클러스터 관리 부담이 발생합니다.
 - 더불어 높은 가용성을 보장하기 위해 각 클러스터는 지역 전체에 최소 수의 노드를 배포해야 합니다. 단일 테넌트 애플리케이션의 경우, 이는 자주 응용프로그램의 요구 사항보다 훨씬 큰 최소 클러스터 크기에 이르게 됩니다. 결과적으로, 대규모로 과잉 프로비저닝되고 비효율적으로 사용되는 클러스터가 많이 생기게 됩니다. GKE 표준 제품을 사용하면 운영 중인 팟이 아닌 배포한 클러스터에 대한 비용을 지불하므로 많은 현금을 낭비하게 됩니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="https://miro.medium.com/v2/resize:fit:440/0*sXXDeW5_LtHqMzi4.gif" />
 
@@ -104,7 +168,18 @@ Autopilot을 사용하면 단일 테넌트 클러스터가 많은 영향을 미�
 
 마무리로 말씀드리면, 가능한 경우에는 멀티테넌트 GKE Autopilot 클러스터를 사용하는 것이 좋습니다. 특별한 경우에만 단일 테넌트 클러스터를 사용하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 조직에서 편안한 수준으로 배포된 몇 개의 다중 테넌트 클러스터를 설정할 수 있습니다. 예를 들어, 각 사업 라인에 맞춰 다중 테넌트 클러스터를 설정할 수 있습니다.
 
@@ -115,7 +190,18 @@ Autopilot을 사용하면 단일 테넌트 클러스터가 많은 영향을 미�
 
 어쨌든, 플랫폼 팀이 공유 VPC가 있는 호스트 프로젝트와 다중 테넌트 GKE 클러스터가 있는 호스트 프로젝트를 소유하게 될 것입니다. 테넌트는 서비스 프로젝트를 소유하게 됩니다. 그들은 다중 테넌트 클러스터(네임스페이스 내)에 직접 워크로드를 배포할 수 있으며, 비-GKE 리소스를 서비스 프로젝트로 배포할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Google Cloud 문서는 이 방법을 다음과 같이 설명합니다:
 
@@ -125,7 +211,18 @@ Google Cloud 문서는 이 방법을 다음과 같이 설명합니다:
 
 라우트 기반 클러스터는 pod 간 트래픽에 대한 VPC 사용자 정의 라우트에 의존하는 클러스터입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VPC-native 클러스터는 포드 주소 지정을 위해 별칭 IP 주소 범위를 사용하는 클러스터입니다. 이는 포드가 클러스터의 VPC 네트워크 및 연결된 VPC 네트워크 내에서 네이티브로 라우팅될 수 있음을 의미합니다. 포드 주소를 위해 사용자 정의 정적 경로의 구성이 필요하지 않습니다. 네트워크 관리 부담은 비교적 낮습니다.
 
@@ -135,7 +232,18 @@ Google은 VPC-native 클러스터를 권장합니다. 이것은 GKE Autopilot의
 
 요약하자면: VPC-native 클러스터를 사용하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 개인 클러스터?
 
@@ -149,7 +257,18 @@ Google은 VPC-native 클러스터를 권장합니다. 이것은 GKE Autopilot의
 - 외부 클라이언트로부터의 들어오는 연결은 외부 서비스를 통해서만 허용됩니다. 일반적으로 다음을 사용합니다: 외부 Ingress를 가진 LoadBalancer 서비스 또는 Anthos Service Mesh 공개 인그레스 게이트웨이.
 - 워커 노드와 GKE 제어 평면 사이의 통신은 제어 평면의 비공개 엔드포인트를 통해 이루어지며, 제어 평면에 액세스해야 하는 추가 네트워크는 승인되어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_2.png" />
 
@@ -161,7 +280,18 @@ VPC 네이티브 클러스터를 생성할 때, 노드, 파드 및 서비스에 
 - 파드 IP 주소: 클러스터는 파드에 IP 주소를 할당할 때 보조 IPv4 주소 범위를 사용합니다. GKE에서 가장 큰 IP 주소 요구사항이며, 각 노드는 많은 수의 파드를 호스트할 수 있습니다. 기본적으로 GKE Autopilot은 노드 당 최대 파드 수를 32개로 설정하고, 각 노드 당 64개의 IP 주소를 허용하여 파드 교체를 허용합니다. Kubernetes는 각 노드에 보조 IP 주소 범위를 할당하여 각 파드에 고유한 IP 주소를 할당합니다. 기본적으로 GKE Autopilot은 /17 보조 서브넷 범위를 할당하므로 32766개의 사용 가능한 파드가 허용됩니다. (이는 약 1000개가 넘는 노드를 가진 클러스터와 동등합니다.)
 - 서비스(ClusterIP) IP 주소: 클러스터는 내부 서비스 주소를 위해 별도의 보조 IP 주소 범위를 사용합니다. 서비스 IP는 ClusterIP 서비스에 할당됩니다; 이는 클러스터 내에서만 접근 가능한 가상 IP 주소입니다. GKE Autopilot에서는 버전 1.27부터 디폴트로 Google 관리 네트워크에서 IP 주소를 할당하며 범위는 34.118.224.0/20입니다. 동일한 범위가 각 클러스터에 할당됩니다. 따라서 각 클러스터마다 4천 개 이상의 서비스 주소가 제공되며, 기관은 GKE 내의 서비스를 위해 IP 주소를 할당하거나 예약할 필요가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_3.png" />
 
@@ -174,7 +304,18 @@ VPC 네이티브 클러스터를 생성할 때, 노드, 파드 및 서비스에 
 
 VPC에서 클러스터 간에 범위를 공유하기로 결정한다면, 이 점을 주의해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 미리 명명된 서브넷을 정의하세요.
 - 100.64.0.0/10(약 4.2 백만 개의 파드 사용 가능) 및 240.0.0.0/4(약 2억 6천 8백만 개의 파드 사용 가능)와 같은 RFC 1918 프라이빗 CIDR 범위를 사용하는 것을 고려해보세요.
@@ -185,8 +326,18 @@ VPC에서 클러스터 간에 범위를 공유하기로 결정한다면, 이 점
 
 쿠버네티스 버전은 x.y.z 형식으로 표시되며, 여기서 x는 주요 버전, y는 부 버전, z는 패치 버전을 나타냅니다. 일반적으로 매년 세 번에서 네 번의 중요 (주요 또는 부) 쿠버네티스 릴리스가 있으며, 패치 릴리스는 일주일에 한 번씩 발생합니다. 주요 및 부 릴리스는 새로운 기능과 보안 패치를 모두 포함합니다. 특정 부 릴리스는 대략 1년간 지원됩니다. 따라서 언제든지 일반적으로 지원되는 부 릴리스가 약 세 개 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_4.png)
 
@@ -196,8 +347,18 @@ GKE Standard를 사용하면 릴리스 채널을 사용하지 않을 수 있습�
 
 ![image](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_5.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GKE Autopilot을 사용하면 릴리스 채널을 선택해 사용하지 않을 수 없습니다. (정말 좋은 점이에요!)
 
@@ -209,7 +370,18 @@ GKE Autopilot을 사용하면 릴리스 채널을 선택해 사용하지 않을 
 - 보통(Regular) — Kubernetes가 릴리스 후 2~3개월 후에 Rapid에서 실행되고 있는 릴리스 버전으로 업그레이드됩니다. 새로운 기능과 안정성 사이의 균형을 제공합니다. 기본적으로 GKE Autopilot은 노드를 이 릴리스 채널에 등록합니다.
 - 안정(Stable) — Kubernetes가 Regular에서 실행되고 있는 릴리스 버전으로 업그레이드됩니다. 이 릴리스는 커뮤니티에서 약 5~6개월동안 사용 가능한 후 클러스터 노드에 적용됩니다. 이 채널은 가장 검증되었고 가장 안정적일 것이지만 최근 Kubernetes 기능을 제공하지 않을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 GKE 버전이 릴리스 채널에서 기본 버전이 되면 해당 클러스터는 일반적으로 10일 이내에 업그레이드됩니다.
 
@@ -222,8 +394,18 @@ GKE Autopilot을 사용하면 릴리스 채널을 선택해 사용하지 않을 
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_6.png)
 
@@ -233,8 +415,18 @@ GKE Autopilot을 사용하면 릴리스 채널을 선택해 사용하지 않을 
 
 ![이미지](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_7.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예에서:
 
@@ -247,7 +439,18 @@ GKE Autopilot을 사용하면 릴리스 채널을 선택해 사용하지 않을 
 
 워크로드 ID 페더레이션은 Kubernetes 서비스 계정이 IAM 서비스 계정으로 작동할 수 있게 합니다. 구성된 Kubernetes 서비스 계정을 사용하는 파드는 Google Cloud API에 액세스할 때 자동으로 IAM 서비스 계정으로 인증합니다. 이를 통해 GKE 애플리케이션 워크로드가 인증되고 허가되어 Google Cloud 서비스에 액세스할 수 있도록 보장할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오토파일럿 클러스터는 GKE에서 기본적으로 워크로드 ID 연합을 지원합니다.
 
@@ -257,7 +460,18 @@ GKE Autopilot을 사용하면 릴리스 채널을 선택해 사용하지 않을 
 
 GKE에는 네 가지 스케일링 차원이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 워크로드는 수요에 따라 가로 방향으로 확장됩니다. Pod를 추가하거나 제거함으로써 관리됩니다. 이는 가로 방향 팟 오토스케일러(HPA)에 의해 관리되며, 수요에 따라 빠르게 확장됩니다. HPA는 CPU 사용률과 같은 표준 메트릭 또는 초당 요청과 같은 사용자 정의 메트릭에 응답합니다.
 - 인프라는 클러스터 노드를 추가하거나 제거함으로써 가로 방향으로 확장됩니다. 이는 예약된 팟을 수용하기 위해 클러스터 자동스케일러(CA)에 의해 예측적으로 관리됩니다. 예를 들어, 새로 생성된 팟을 예약할 노드가 없는 경우, 클러스터 자동스케일러가 새 노드를 만듭니다.
@@ -270,7 +484,18 @@ GKE에는 네 가지 스케일링 차원이 있습니다:
 - HPA와 VPA를 동시에 사용하지 마세요. 같은 자원 메트릭으로 HPA와 VPA를 함께 설정하는 것을 피하세요. 예를 들어, CPU 사용률에 대한 HPA와 VPA를 동시에 설정하는 것을 피하세요.
 - 가로와 세로 방향 팟 오토스케일링을 관리하는 다차원 팟 오토스케일러(MPA)를 사용하면 워크로드 확장을 간단히 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론적으로:
 
@@ -281,7 +506,18 @@ GKE에는 네 가지 스케일링 차원이 있습니다:
 
 Google은 클러스터 자체를 배포할 때 클라우드 인프라의 경우와 마찬가지로 인프라를 코드로 관리하는 것을 권장합니다(Terraform과 같은). 따라서 클러스터 및 네임스페이스를 배포할 때 IaC를 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 귀하의 작업 로드를 배포하려면 — 배포, 서비스, 작업, StatefufSets, 인그레스, 정책 등 — 선언적 yaml 파일을 사용하여 네이티브 Kubernetes API 호출을 해야 합니다. Helm은 쿠버네티스에서 애플리케이션 배포를 관리하는 데 도움을 줄 수 있습니다.
 
@@ -301,7 +537,18 @@ Google은 클러스터 자체를 배포할 때 클라우드 인프라의 경우�
 - 오토스케일링 전략? 워크로드 오토스케일링을 지원하기 위해 클러스터 오토스케일러를 사용하세요. GKE Autopilot을 사용할 때 클러스터 오토스케일링은 자동으로 관리됩니다. 워크로드 오토스케일링을 간소화하기 위해 MPA를 사용하세요.
 - 인프라 및 워크로드 배포? 클러스터 배포 및 관리에는 IaC(예: Terraform)를 사용하세요. 애플리케이션 워크로드를 배포하기 위해 선언적 Kubernetes 매니페스트를 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리
 
@@ -314,8 +561,18 @@ GKE를 랜딩 존에서 성공적으로 디자인하는 데 고려해야 할 주
 - 자유롭게 댓글을 남겨주세요 💬.
 - 내 컨텐츠를 놓치지 않으려면 팔로우하고 구독해주세요. 내 프로필 페이지로 이동하여 이 아이콘들을 클릭해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-27-DesignyourLandingZoneDesignConsiderationsPart2KubernetesandGKEGoogleCloudAdoptionSeries_9.png)
 
@@ -343,8 +600,18 @@ GKE를 랜딩 존에서 성공적으로 디자인하는 데 고려해야 할 주
 
 # 시리즈 내비게이션
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 시리즈 개요 및 구조
 - 이전: 랜딩 존 설계하기 — 디자인 고려사항 파트 1

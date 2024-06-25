@@ -3,13 +3,12 @@ title: "2024년 iOS 개발자 상위 1에 선정되는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-18-Howtobetop1ofiOSDevelopersin2024_0.png"
 date: 2024-05-18 15:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-Howtobetop1ofiOSDevelopersin2024_0.png
 tag: Tech
 originalTitle: "How to be top 1% of iOS Developers in 2024"
 link: "https://medium.com/@kodekarim/how-to-be-top-1-of-ios-developers-in-2024-ff97c337a49d"
 ---
-
 
 <img src="/assets/img/2024-05-18-Howtobetop1ofiOSDevelopersin2024_0.png" />
 
@@ -19,7 +18,18 @@ iOS 개발자 중 상위 1%가 되는 것은 Swift, SwiftUI 및 Xcode를 숙달�
 
 # 이야기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최근 경험 중 하나를 공유하려고 해요. iOS 개발자들이 다양한 분야에 대해 폭넓은 지식을 갖추는 것을 선호하는 이유를 강조하는데요.
 
@@ -29,7 +39,18 @@ iOS 개발자 중 상위 1%가 되는 것은 Swift, SwiftUI 및 Xcode를 숙달�
 
 나아가, 이 회사는 프레임워크와 SDK를 제공하는 것을 전문으로 하고 있어요. 중요한 코드를 숨기기 위해 기존 개발자들은 브릿징과 루비 및 쉘 스크립트를 활용할 만한 방법을 창의적으로 사용했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 향후 iOS 개발자가 되려는 취지가 있다면 Google, Facebook, Netflix 등 최고의 기술 기업들과 협업하기 위해 아래 항목들을 숙달하는 것이 중요합니다.
 
@@ -39,9 +60,20 @@ iOS 개발자 중 상위 1%가 되는 것은 Swift, SwiftUI 및 Xcode를 숙달�
 
 ## 1. 실행 가능한 경우, 자동화 수용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-AI의 성장하는 영향을 감안할 때 자동화를 무시하면 2배 된 엔지니어가 되는 데 방해가 될 수 있습니다. 루비와 파이썬 같은 언어를 확실하게 이해하면 Fastlane, CocoaPods 및 Danger와 같은 도구들을 잘 이해할 수 있어 iOS 프로젝트 내에서 작업을 자동화하는 데 큰 도움이 됩니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+AI의 성장하는 영향을 감안할 때 자동화를 무시하면 2배 된 엔지니어가 되는 데 방해가 될 수 있습니다. 루비와 파이썬 같은 언어를 확실하게 이해하면 Fastlane, CocoaPods 및 Danger와 같은 도구들을 잘 이해할 수 있어 iOS 프로젝트 내에서 작업을 자동화하는 데 큰 도움이 됩니다.
 
 ## 2. 프레임워크 및 SDK 만드는 법 배우기
 
@@ -49,7 +81,18 @@ AI의 성장하는 영향을 감안할 때 자동화를 무시하면 2배 된 �
 
 ## 3. Objective-C와 Swift 배우기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 프레임워크 및 SDK 개발에 Objective-C와 Swift를 모두 숙달하면 '과거와 미래를 이어주는 다리' 같은 독특한 경쟁 우위를 제공합니다. Objective-C는 이전 코드와 라이브러리와의 호환성을 보장하며, Swift는 새로운 프레임워크에 현대적인 기능을 제공합니다. 두 언어를 지원함으로써 다양한 전문성을 가진 팀원들 간의 협력을 촉진합니다. 두 언어 중 어느 하나로도 타사 도구와 통합하는 것은 프레임워크의 기능을 확장합니다.
 
@@ -59,7 +102,18 @@ iOS 프레임워크 및 SDK 개발에 Objective-C와 Swift를 모두 숙달하�
 
 ## 5. 좋은 문서 작성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 개발자로서 명확하고 간결한 문서 작성 기술을 마스터하는 것은 여러분의 비밀 무기가 될 수 있어요. 상상해봐요: 여러분의 코드는 정제되고 UI는 반짝반짝하지만, 암호화된 주석과 혼란스러운 지시사항으로 동료들과 미래의 여러분이 머릿속을 긁어야 하는 일이 생길지도 몰라요. 잘 쓰인 문서는 그런 상황을 변화시킵니다. 여러분의 코드가 얼마나 우아하던, 그것은 구두 번역기가 필요한 것이거든요. 정확한 문서는 논리, 결정 및 예외 사례를 설명함으로써 여러분의 코드베이스를 따르는 누구에게나 쉽게 해석 가능한 지도로 만들어줘요.
 

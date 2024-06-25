@@ -3,13 +3,12 @@ title: "눈꽃 폴라리스와 데이타브릭스 유니티 카탈로그 오픈 
 description: ""
 coverImage: "/assets/img/2024-06-19-SnowflakePolarisandDatabricksUnityCatalogTheageofOpenandInteroperableMetastores_0.png"
 date: 2024-06-19 12:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-SnowflakePolarisandDatabricksUnityCatalogTheageofOpenandInteroperableMetastores_0.png
 tag: Tech
 originalTitle: "Snowflake Polaris and Databricks Unity Catalog: The age of Open and Interoperable Metastores"
 link: "https://medium.com/@sachinksdata/snowflake-polaris-and-databricks-unity-the-age-of-open-and-interoperable-catalogs-fe52d355cc4a"
 ---
-
 
 <img src="/assets/img/2024-06-19-SnowflakePolarisandDatabricksUnityCatalogTheageofOpenandInteroperableMetastores_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sachinksdata/snowflake-polaris-and-databricks-unity-t
 
 # 데이터 호수(Datalake)에서의 메타데이터 카탈로그
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![SnowflakePolarisandDatabricksUnityCatalogTheageofOpenandInteroperableMetastores_1.png](/assets/img/2024-06-19-SnowflakePolarisandDatabricksUnityCatalogTheageofOpenandInteroperableMetastores_1.png)
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@sachinksdata/snowflake-polaris-and-databricks-unity-t
 
 처음 접하는 분들을 위해 - 2013년 Apache Spark의 창시자들에 의해 설립된 Databricks는 데이터 레이크와 데이터 웨어하우스를 결합하여 기업이 데이터 및 AI 솔루션을 구축, 관리 및 확장하는 데 도움이 되는 클라우드 기반 데이터 인텔리전스 플랫폼입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 약 2021년 중반쯤, 유니티 카탈로그가 독점 소스로 출시되었습니다. 이는 플랫폼 에코시스템 내에서 데이터 및 AI 자산을 접근하고 관리하기 위한 솔루션이었습니다. 이는 중앙 집중식 접근 제어, 감사, 계보, 공유 및 데이터 발견 기능과 같은 여러 기능을 제공했습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@sachinksdata/snowflake-polaris-and-databricks-unity-t
 
 그러나 오픈 델타 형식을 사용하는 플랫폼과의 밀접한 결합은 Apache Iceberg 또는 Hudi와 호환되는 쿼리 엔진과의 상호 운용성이 제한되었음을 의미했습니다. Databricks가 이 문제를 해결하기 위한 최초의 시도는 Delta UniForm이었습니다. 이는 복사 또는 변환의 필요성을 제거하고 레이크하우스 상호 운용성을 위한 범용 형식을 제공했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최신 발표에 따르면, Unity Catalog를 오픈 API와 아파치 2.0 라이센스로 빌드한 오픈 소스 서버로 제공하는 Databricks가 기업에게 오픈 데이터 형식(UniForm을 통한)을 지원하며 다양한 쿼리 엔진, 도구, 클라우드 플랫폼 간의 상호 운용성을 제공하는 범용 인터페이스를 제공하여 다음 수준으로 나아갔습니다.
 
@@ -49,8 +81,18 @@ link: "https://medium.com/@sachinksdata/snowflake-polaris-and-databricks-unity-t
 
 Snowflake는 자사의 프로프라이어터리 테이블 형식을 시작한 후, 재미있게도 얼마 전부터 Apache Iceberg와의 통합에 헌신하여 왔습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Snowflake Polaris and Databricks Unity Catalog](/assets/img/2024-06-19-SnowflakePolarisandDatabricksUnityCatalogTheageofOpenandInteroperableMetastores_3.png)
 
@@ -60,8 +102,18 @@ Snowflake는 자사의 프로프라이어터리 테이블 형식을 시작한 �
 
 이러한 프로젝트들을 오픈 소스 Apache 이니셔티브로 오픈하는 것은 긍정적인 단계이지만, 데이터 솔루션 아키텍처적인 측면에서 보면, 코드를 오픈할 필요는 없고 오히려 노출되는 인터페이스가 오픈되어야 합니다. 이 글을 쓰는 동안, Polaris는 원래 Iceberg만을 지원하며, Unity는 UniForm을 사용하여 네이티브 Delta 이외의 다른 OTF(Open Table Format)를 간접적으로 지원하고, Tabular 인수 이후 Iceberg와의 새로운 통합을 수행하고 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "이상적인 '오픈' 정의에서 이 메타스토어는 모든 표준 테이블 형식을 지원하고, 구성 가능한 저장 계층과 Hive Metastore가 한동안 있었던 것과 같은 메타스토어에 대한 표준 인터페이스를 가져야 합니다.
 

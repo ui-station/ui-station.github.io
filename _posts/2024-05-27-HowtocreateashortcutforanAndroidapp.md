@@ -10,7 +10,6 @@ originalTitle: "How to create a shortcut for an Android app."
 link: "https://medium.com/@charles.raj412/how-to-create-a-shortcut-for-an-android-app-in-android-studio-kotlin-950c3b9182ce"
 ---
 
-
 ![image](/assets/img/2024-05-27-HowtocreateashortcutforanAndroidapp_0.png)
 
 안녕 친구들,
@@ -19,8 +18,18 @@ link: "https://medium.com/@charles.raj412/how-to-create-a-shortcut-for-an-androi
 
 먼저 의존성을 추가해보겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱/build.gradle.kts 파일에 아래 종속성을 추가해주세요.
 
@@ -36,7 +45,18 @@ implementation ("androidx.core:core-google-shortcuts:1.1.0")
            android:resource="@xml/shortcuts"/>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 res/xml 폴더 안에 @xml/shortcuts 파일을 만들어야 해요. 아래 xml 파일에는 앱을 위한 정적 바로 가기가 정의되어 있습니다. 정적 영구 바로 가기를 만들고 싶다면 이 xml 파일에 바로 가기를 추가하면 돼요.
 
@@ -48,8 +68,18 @@ android: targetPackage = "com.task.master";
 
 그렇게 하면 안드로이드 OS가 앱을 찾을 수 있어요. 그리고 바로 가기에 고유한 Id를 부여했는지 확인해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -101,28 +131,36 @@ android: targetPackage = "com.task.master";
 
 </shortcuts>
 
-
 안드로이드 앱에 파일 및 코드를 추가한 후 xml/shortcuts.xml에 정의한 바로가기가 표시됩니다.
 
 이제 액티비티에서 동적으로 바로 가기를 추가하는 방법을 보여드리겠습니다. ShortcutInfoCompat을 사용하여 동적으로 바로 가기를 추가할 수 있고 ShortcutManagerCompat을 사용하여 해당 바로 가기를 푸시할 수 있습니다. 아래 코드를 확인하여 동적 바로 가기를 추가하는 방법을 알아보세요.
 
+val context = this.baseContext
+val shortcut = ShortcutInfoCompat.Builder(context, "dynamic_Id")
+.setShortLabel("Dynamic Item")
+.setLongLabel("Dynamic Item")
+.setIcon(IconCompat.createWithResource(context, R.drawable.profile_icon))
+.setIntent(
+Intent(context,MainActivity::class.java).apply {
+action = Intent.ACTION_VIEW
+putExtra("Type", "")
+}
+)
+.build()
+ShortcutManagerCompat.pushDynamicShortcut(context, shortcut)
 
-  val context = this.baseContext
-        val shortcut = ShortcutInfoCompat.Builder(context, "dynamic_Id")
-            .setShortLabel("Dynamic Item")
-            .setLongLabel("Dynamic Item")
-            .setIcon(IconCompat.createWithResource(context, R.drawable.profile_icon))
-            .setIntent(
-                Intent(context,MainActivity::class.java).apply {
-                    action = Intent.ACTION_VIEW
-                    putExtra("Type", "")
-                }
-            )
-            .build()
-        ShortcutManagerCompat.pushDynamicShortcut(context, shortcut)
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번 단계 이후에는 모든 활동에서 바로 가기를 추가할 수 있으며 서버 응답에 따라 응용 프로그램에 바로 가기를 추가할 수도 있습니다.
 
@@ -132,6 +170,17 @@ android: targetPackage = "com.task.master";
 
 소스 코드는 여기에서 찾을 수 있습니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 감사합니다

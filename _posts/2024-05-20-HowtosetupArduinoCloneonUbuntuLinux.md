@@ -3,13 +3,12 @@ title: "아두이노 클론을 우분투 리눅스에 설정하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-HowtosetupArduinoCloneonUbuntuLinux_0.png"
 date: 2024-05-20 19:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowtosetupArduinoCloneonUbuntuLinux_0.png
 tag: Tech
 originalTitle: "How to set up Arduino Clone on Ubuntu Linux"
 link: "https://medium.com/@samueladesola/setting-up-arduino-clone-on-ubuntu-linux-bca3feb061b1"
 ---
-
 
 # 배경 이야기
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@samueladesola/setting-up-arduino-clone-on-ubuntu-linu
 
 로봇 자동차를 만들려고 했는데, ROS2를 실행하기 위해 모터 컨트롤러가 필요했어요. Arduino Uno SMD 클론을 선택했는데, 그냥 사용하면 되리라고 생각했지만 그렇지 않았어요. 제 컴퓨터에는 platformIO를 사용했는데, 그게 문제인 줄 알았어요. 윈도우 컴퓨터로 전환하니 Arduino 보드에 스케치를 업로드할 수 있었어요. 그래서 남는 질문은, 왜 리눅스 머신에서는 작동하지 않는 걸까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 온라인에서 다양한 해결책을 시도해보신 후에도 원하는 결과를 얻지 못하고 단 하나의 USB 포트인 /dev/ttyUSB0만 얻게 되었다면 상당히 답답하실 텐데요. 그만 이야기하고, 결국 문제를 해결하신다니 정말 다행입니다. 해결책은 아래와 같습니다.
 
@@ -29,7 +39,18 @@ BRLTTY는 리프레시 가능한 점자 디스플레이를 사용하는 시각�
 sudo apt remove -y brltty
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Ubuntu 기기에서 Arduino Clone을 볼 수 있어요. 일반적으로 Arduino IDE나 PlatformIO를 사용할 때와 같이 포트를 선택하고 코드를 업로드할 수 있어요.
 
@@ -41,6 +62,17 @@ ls /dev/ttyUSB*
 
 이게 저의 스크린샷이에요. 제 디바이스는 USB1이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![How to set up Arduino Clone on Ubuntu Linux](/assets/img/2024-05-20-HowtosetupArduinoCloneonUbuntuLinux_1.png)

@@ -3,13 +3,12 @@ title: "Swift로 강력한 네트워크 레이어 만들기 파트 2"
 description: ""
 coverImage: "/assets/img/2024-06-19-CreatingaRobustNetworkLayerinSwiftPart2_0.png"
 date: 2024-06-19 10:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-CreatingaRobustNetworkLayerinSwiftPart2_0.png
 tag: Tech
 originalTitle: "Creating a Robust Network Layer in Swift: Part 2"
 link: "https://medium.com/@rohitsainier/creating-a-robust-network-layer-in-swift-part-2-9839ad871cf9"
 ---
-
 
 <img src="/assets/img/2024-06-19-CreatingaRobustNetworkLayerinSwiftPart2_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rohitsainier/creating-a-robust-network-layer-in-swift
 
 저희가 업그레이드한 네트워크 레이어에는 다음 구성요소가 포함되어 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - NetworkError: 다양한 네트워크 오류를 처리하기 위한 포괄적인 열거형입니다.
 - NetworkRequest: 네트워크 요청을 위한 필수 속성 및 메서드를 정의하는 프로토콜입니다.
@@ -32,7 +42,18 @@ link: "https://medium.com/@rohitsainier/creating-a-robust-network-layer-in-swift
 
 먼저 NetworkError 열거형을 정의하여 다양한 네트워크 관련 오류를 깔끔하고 조직적으로 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import Foundation
@@ -71,7 +92,18 @@ struct DecodingError: Error {
 
 DecodingError: 해독 중 추가 오류 정보를 제공하기 위한 사용자 정의 오류 구조체입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 2: NetworkRequest 프로토콜 생성하기
 
@@ -115,16 +147,16 @@ extension NetworkRequest {
         guard let url = url else {
             throw NetworkError.badURL
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        
+
         if let headers = headers {
             for (key, value) in headers {
                 request.setValue(value, forHTTPHeaderField: key.rawValue)
             }
         }
-        
+
         if let parameters = parameters {
             if method == .get {
                 var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
@@ -141,7 +173,7 @@ extension NetworkRequest {
                 }
             }
         }
-        
+
         return request
     }
 }
@@ -149,7 +181,18 @@ extension NetworkRequest {
 
 설명:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - HTTPMethod: 우리가 사용할 HTTP 메소드(GET, POST, PUT, DELETE)를 나타내는 enum입니다.
 - HTTPHeader: 일반적인 HTTP 헤더를 위한 enum입니다.
@@ -192,7 +235,7 @@ extension HTTPResponseHandler {
         guard let httpResponse = response as? HTTPURLResponse else {
             throw NetworkError.invalidResponse
         }
-        
+
         switch httpResponse.statusCode {
         case 200...299:
             return
@@ -218,7 +261,18 @@ public struct DefaultHTTPResponseHandler: HTTPResponseHandler {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설명:
 
@@ -234,7 +288,18 @@ public struct DefaultHTTPResponseHandler: HTTPResponseHandler {
 - extractETag(from:)은 응답 헤더에서 ETag을 가져옵니다.
 - DefaultHTTPResponseHandler: HTTPResponseHandler의 구체적인 구현체입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 4: NetworkEngine 구현
 
@@ -283,19 +348,19 @@ extension NetworkEngine: NetworkEngineAdapter {
             urlSession.dataTask(with: urlRequest) { data, response, error in
                 let requestFinishTime = Date()
                 let duration = requestFinishTime.timeIntervalSince(context.requestInvokeTime)
-                
+
                 logger.logMetrics(startTime: context.requestInvokeTime, endTime: requestFinishTime, duration: duration, request: urlRequest)
-                
+
                 if let error = error {
                     context.completion(.failure(.requestFailed(error)))
                     return
                 }
-                
+
                 guard let data = data else {
                     context.completion(.failure(.dataNotFound))
                     return
                 }
-                
+
                 do {
                     try responseHandler.handleStatusCode(response: response)
                     let decodedObject = try responseHandler.decode(data: data, to: context.type)
@@ -315,15 +380,26 @@ extension NetworkEngine: NetworkEngineAdapter {
 
 설명:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - NetworkRequestContext: 네트워크 요청의 컨텍스트를 캡슐화하는 구조체로, 요청 자체, 디코딩할 유형, 완료 핸들러, 그리고 요청이 호출된 시간을 포함합니다.
 - NetworkEngineAdapter: 네트워크 엔진을 요청과 함께 호출하고, 디코딩할 유형을 지정하며 완료 핸들러를 제공하는 메소드를 정의하는 프로토콜입니다.
 - NetworkEngine: 네트워크 작업을 수행하는 주요 구조체입니다:
-    - urlSession: 요청을 만드는 데 사용되는 URLSession 인스턴스입니다.
-    - logger: 메트릭 및 오류를 기록하기 위한 로거입니다.
-    - responseHandler: 응답 처리를 위한 HTTPResponseHandler의 인스턴스입니다.
-    - init: NetworkEngine을 urlSession, logger 및 responseHandler에 대한 옵션 매개변수로 초기화합니다.
+  - urlSession: 요청을 만드는 데 사용되는 URLSession 인스턴스입니다.
+  - logger: 메트릭 및 오류를 기록하기 위한 로거입니다.
+  - responseHandler: 응답 처리를 위한 HTTPResponseHandler의 인스턴스입니다.
+  - init: NetworkEngine을 urlSession, logger 및 responseHandler에 대한 옵션 매개변수로 초기화합니다.
 - invokeEngine 메소드는 NetworkRequestContext를 생성하고 fetch 메소드를 호출합니다.
 
 fetch 메소드:
@@ -337,7 +413,18 @@ fetch 메소드:
 
 # 단계 5: 네트워크 레이어 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시는 iOS에서 NetworkEngine을 사용하는 방법을 보여줍니다.
 
@@ -359,18 +446,18 @@ extension PostService: NetworkRequest {
             return URL(string: "https://2e84f9d6-0dcb-4b93-9238-8b272604b4c1.mock.pstmn.io/v1/posts")
         }
     }
-    
+
     var method: HTTPMethod {
         switch self {
         case .fetchPosts:
             return .get
         }
     }
-    
+
     var headers: [HTTPHeader : String]? {
         return [.contentType: ContentType.json.rawValue]
     }
-    
+
     var parameters: (any Encodable)? {
         switch self {
         case .fetchPosts:
@@ -380,7 +467,18 @@ extension PostService: NetworkRequest {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 PostService는 URL, HTTP 메서드, 헤더 및 요청에 대한 매개변수를 정의하는 단일 case fetchPosts를 갖습니다. 필요에 따라 더 추가할 수 있어요.
 
@@ -390,7 +488,18 @@ extension PostService: NetworkRequest {
 
 [연결](/assets/img/2024-06-19-CreatingaRobustNetworkLayerinSwiftPart2_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 protocol PostsListRepositoryProtocol {
@@ -399,11 +508,11 @@ protocol PostsListRepositoryProtocol {
 
 final class DefaultPostsListRepository: PostsListRepositoryProtocol {
     private let engine: NetworkEngine
-    
+
     init(engine: NetworkEngine = NetworkEngine()) {
         self.engine = engine
     }
-    
+
     func fetchPostsList<T>(with request: NetworkRequest, responseType: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) where T : Decodable {
         engine.invokeEngine(request, decodeTo: responseType, completion: completion)
     }
@@ -416,7 +525,17 @@ final class DefaultPostsListRepository: PostsListRepositoryProtocol {
 
 이 코드베이스의 네트워크 레이어 디자인은 모듈화, 확장 가능성, 견고한 오류 처리, 테스트 용이성 및 성능 모니터링을 강조하여 확장 가능한 애플리케이션에 적합합니다. 이러한 특성들은 유지 보수성과 신뢰성을 저해하지 않고 앱이 기능과 복잡성을 향상시킬 수 있음을 보장합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 통찰과 업데이트를 원하시면 LinkedIn에서 저를 팔로우해주세요.

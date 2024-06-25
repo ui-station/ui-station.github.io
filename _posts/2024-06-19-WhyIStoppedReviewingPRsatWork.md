@@ -3,14 +3,12 @@ title: "왜 나는 직장에서 PR 리뷰를 그만뒀는지"
 description: ""
 coverImage: "/assets/img/2024-06-19-WhyIStoppedReviewingPRsatWork_0.png"
 date: 2024-06-19 11:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-WhyIStoppedReviewingPRsatWork_0.png
 tag: Tech
 originalTitle: "Why I Stopped Reviewing PRs at Work"
 link: "https://medium.com/@tsecretdeveloper/why-i-stopped-reviewing-prs-at-work-8267e576b358"
 ---
-
-
 
 ![Image](/assets/img/2024-06-19-WhyIStoppedReviewingPRsatWork_0.png)
 
@@ -20,8 +18,18 @@ So how have they suddenly had a moment of clarity where they realize their effor
 
 # The Situation
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 회사에서 일하는 것은 주로 기능을 출시하고 작업을 완료하기 위해 함께 일하는 것을 의미합니다.
 
@@ -31,7 +39,18 @@ So how have they suddenly had a moment of clarity where they realize their effor
 
 다른 회사에서 일했을 때는, PR을 검토하면 상대방이 당신의 PR을 검토하는 상호적인 관계가 있었지만, 제 현재 회사에는 이러한 관행이 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좀 더 화가 나게 만든 상황이 또 있어서 조금 초조스러워요. 그것은 특정 PR에 관한 것이에요.
 
@@ -39,7 +58,18 @@ So how have they suddenly had a moment of clarity where they realize their effor
 
 한 번쯤, 이 대답에 있는 끔찍한 PR은 제 작품이 아니라 동료의 솜씨에 의한 것이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에 어떻게 되었는지 개요가 있어요.
 
@@ -49,7 +79,18 @@ So how have they suddenly had a moment of clarity where they realize their effor
 
 하지만, 다음에 벌어진 일은 참견할 수 없다고 생각했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이후 발생한 일
 
@@ -59,7 +100,18 @@ So how have they suddenly had a moment of clarity where they realize their effor
 
 글쎄, 곧 그들은 그 변경 사항이 다른 변경 사항의 집합으로 포함된 또 다른 PR을 제출했어. 변화가 서로 얽혀 있어서 한 PR에서 검토하기 어려웠어. Slack에서 메시지가 왔어. "검토할 PR이 준비되었습니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결과
 
@@ -69,7 +121,18 @@ So how have they suddenly had a moment of clarity where they realize their effor
 
 물론 빠르게 기능을 출시하고 업무를 해결하고 싶다는 것은 이해해요. 하지만 작업을 검토하는 것은 내 몫으로 남아 있고, 문제를 해결하려면 내가 작업을 다시 검토해야 하는 상황이 계속되고 있어요. 모든 맥락을 기억하고 필요한 것을 이해해야 하는 부담이 생기고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 상황에서 내게 최선인 것을 알고 있나요? 저는 정말 필요하거나 누군가 나에게 그렇게 요구할 때 제외하고 PR을 검토하지 않을 거에요.
 
@@ -79,7 +142,18 @@ So how have they suddenly had a moment of clarity where they realize their effor
 
 알아요, 아마 당신은 제가 그렇게 까다롭고 사교적이지 않을 것 같아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 다른 팀들 중에는 (저와 함께 할 수 있을까요, 제발?) 제안을 승인하지 않는 팀도 있답니다.
 
@@ -89,7 +163,18 @@ So how have they suddenly had a moment of clarity where they realize their effor
 
 ## 명확하게 의사소통하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PR에 발견된 문제에 대해 명확한 커뮤니케이션을 유지해주세요. 감정을 감춘 비약적인 발언을 피하고, 직접적이고 건설적인 의견을 표현해주세요.
 
@@ -99,7 +184,18 @@ PR에 발견된 문제에 대해 명확한 커뮤니케이션을 유지해주세
 
 ## 경계 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PR 실천에 허용되는 명확한 기준을 설정하세요. 필요하다면 꾸준히 제안을 무시하는 PR을 검토하지 않기로 거절하세요.
 
@@ -109,17 +205,35 @@ PR 실천에 허용되는 명확한 기준을 설정하세요. 필요하다면 �
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 개발자이기 때문에, 테이블 태그를 마크다운 형식으로 변경하도록 하겠습니다.
 
-
-
 # About The Author
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로 개발자 "The Secret Developer"는 Twitter에서 @TheSDeveloper로 찾을 수 있으며, 정기적으로 Medium.com을 통해 기사를 발표합니다.
 

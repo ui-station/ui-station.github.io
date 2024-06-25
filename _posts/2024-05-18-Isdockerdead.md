@@ -3,13 +3,12 @@ title: "디커Docker가 죽었나요"
 description: ""
 coverImage: "/assets/img/2024-05-18-Isdockerdead_0.png"
 date: 2024-05-18 16:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-Isdockerdead_0.png
 tag: Tech
 originalTitle: "Is docker dead?"
 link: "https://medium.com/@kloudino/is-docker-dead-27cf8d88a1d9"
 ---
-
 
 간단한 답변은 "예"이며, 그 이유는 여기에 있습니다:
 
@@ -19,17 +18,39 @@ link: "https://medium.com/@kloudino/is-docker-dead-27cf8d88a1d9"
 
 그래서 나는 자세히 이야기하려고 해.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 가상화 구성 요소 (가상 머신 및 컨테이너)에 대해 이야기해 보겠습니다.
 
 가상화는 자원을 공유하는 것이 중요하죠. 그래서 구성 요소를 두 가지 주요 카테고리로 나눌 건데요;
 
-1) 메인 구성 요소
+1. 메인 구성 요소
 
-2) 관리 구성 요소
+2. 관리 구성 요소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-Isdockerdead_0.png" />
 
@@ -39,8 +60,18 @@ link: "https://medium.com/@kloudino/is-docker-dead-27cf8d88a1d9"
 
 이제 관리 구성 요소를 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![](/assets/img/2024-05-18-Isdockerdead_1.png)
 
@@ -50,8 +81,18 @@ link: "https://medium.com/@kloudino/is-docker-dead-27cf8d88a1d9"
 
 컨테이너의 세계에서 docker는 모든 이러한 구성 요소를 제공하기 때문에 이미 docker가 모든 솔루션을 갖춘 것처럼 좋다고 생각할 수 있습니다. 그러나 조금만 기다려보세요. 더 설명해 드릴게요:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 실제로 제품 환경에서 모든 구성 요소가 필요한지 정말로 필요할까요? 제 생각에는 아니죠. 제품 환경에서 이미지를 빌드할 필요는 없습니다. 제품 환경에서는 Kubernetes와 같은 다른 Orchestration 도구를 사용해야 할 수 있습니다. 따라서 발생하는 상황은 꼭 필요하지 않은 많은 도구와 레이어가 설치되어 있는 제품 환경입니다.
 
@@ -61,7 +102,18 @@ link: "https://medium.com/@kloudino/is-docker-dead-27cf8d88a1d9"
 
 여기에는 필요에 따라 설치하고 사용할 수 있는 이러한 구성 요소(도구)에 대한 간단한 소개가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Podman: 컨테이너 생성 및 삭제에는 레드햇과 오픈 소스 커뮤니티에서 적극 유지보수 중인 Podman을 사용할 수 있습니다.
 
@@ -71,7 +123,18 @@ Kaniko: 구글이 개발한 이미지 생성 도구로, 구글은 지원하지 �
 
 네트워킹 부분에서는 Podman을 사용하면 Netavark라는 네트워킹 백엔드가 함께 제공되지만, 다른 CNI로 변경할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CNI은 컨테이너 네트워킹 인터페이스의 약자로, 컨테이너(팟)의 네트워킹을 관리하는 데 사용됩니다.
 

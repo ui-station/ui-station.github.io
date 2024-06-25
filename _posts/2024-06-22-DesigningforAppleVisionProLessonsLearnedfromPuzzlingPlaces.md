@@ -3,13 +3,12 @@ title: "Apple Vision Pro 디자인하기 Puzzling Places에서 배운 교훈"
 description: ""
 coverImage: "/assets/img/2024-06-22-DesigningforAppleVisionProLessonsLearnedfromPuzzlingPlaces_0.png"
 date: 2024-06-22 23:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-DesigningforAppleVisionProLessonsLearnedfromPuzzlingPlaces_0.png
 tag: Tech
 originalTitle: "Designing for Apple Vision Pro: Lessons Learned from Puzzling Places"
 link: "https://medium.com/realities-io/designing-for-apple-vision-pro-lessons-learned-from-puzzling-places-c39ea22625a3"
 ---
-
 
 애플 비전 프로는 새로운 디자인 도전 과제를 제시합니다. 여기에는 Apple Vision Pro를 위해 Puzzling Places를 처음부터 다시 디자인하는 과정에서 배운 몇 가지 교훈이 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/realities-io/designing-for-apple-vision-pro-lessons-le
 
 ## 새로운 플랫폼
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플의 AR 시장 진출은 많은 기대를 받고 있었습니다. 그래서 우리는 이 게임을 새로운 헤드셋으로 이식하기로 결정했습니다. 일반적으로 VR 헤드셋 간의 이식 과정은 기술 백엔드를 조정하여 새 플랫폼에서 작동하도록 하는 것이지만, 대부분 디자인은 그대로 유지합니다. 그러나 우리가 헤드셋에 대해 알아갈수록, 이것이 실제로 진정한 의미의 새로운 플랫폼일 수도 있다고 생각했습니다. 공식적으로 애플은 AR이나 VR에 대해 이야기하지 않고, 공간 컴퓨팅에 대해 언급합니다. 그 중 일부는 마케팅이지만, 퀘스트 3과 같은 것과 비교하여 이 헤드셋이 어떻게 설계되었는지에는 몇 가지 실제적인 차이가 있습니다. 그래서 이 플랫폼에 디자인을 시작하기 전에는 이것이 실제로 무엇을 의미하는지 생각하는 가치가 있습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/realities-io/designing-for-apple-vision-pro-lessons-le
 
 VR에서 AVP로 디자인을 이동하려면, 가장 간단한 해결책은 풀 스페이스를 사용하는 것입니다. 당신은 자신만의 헤드셋을 사용하여 Passthrough 환경이나 완전히 가상 환경을 만들 수 있습니다. 해야 할 일은 컨트롤러 기반 상호작용 대신 손/눈 추적을 고려하여 디자인하는 것뿐입니다. 그렇게 하면 원만하게 작동할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Unbounded/Full Space은 많은 이점을 가지고 있지만, 한 가지 주요 단점이 있습니다: 사용자가 사용자와 나란히 애플리케이션을 열 수 없다는 것입니다.
 
@@ -39,7 +60,18 @@ Unbounded/Full Space은 많은 이점을 가지고 있지만, 한 가지 주요 
 
 그러나 앱이 어떤 공간에 있는지를 선택하는 것은 그저 시작에 불과합니다. 이미 장치에 대한 Apple의 비전과 일치하도록 결정했기 때문에, 게임을 위한 제어 패러다임을 디자인하는 것이 더 쉬웠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 직접 및 간접적인 제어
 
@@ -49,7 +81,18 @@ AVP의 운영 체제 및 공유 공간을 위한 제어 패러다임은 거의 �
 
 게임에 따라 직접 제어와 간접 제어를 모두 동등하게 지원할 수 있습니다. 그러나 주요 상호 작용 모드 중 하나를 선택하여 더 많은 예산을 들여 그 부분을 개선해야 할 것입니다. 그렇다면 어느 것을 선택하시겠습니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AVP의 간접 제어는 배워야 할 필요가 있습니다. 하지만 그것이 나쁜 것은 아닙니다. 비디오 게임에서 아날로그 스틱이 처음 소개된 것과 마찬가지로 일부 기자들은 그겼더라도 이들이 익히기에 너무 복잡하다고 주장했습니다. 그러나 현재, 대부분의 게임은 컨트롤러로 플레이됩니다. 심지어 마우스 커서와 운영 체제와의 상호 작용도 익히는 데 시간이 필요합니다.
 
@@ -59,7 +102,18 @@ AVP의 간접 제어는 배워야 할 필요가 있습니다. 하지만 그것�
 
 Puzzling Places의 경우, 게임 플레이 방식이 변경되었다는 것을 의미했습니다. VR 버전에서 퍼즐을 조각으로 걸어가거나 퍼즐을 당겨오는 방식으로 진행합니다. 올바른 방향으로 조각을 물리적으로 회전시키고 올바른 위치에 물리적으로 놓습니다. 말할 필요도 없이 게임 필드가 팔 길이 밖에 있을 경우 그렇게 게임을 할 수 없습니다. 따라서 우리는 게임 루프를 변경했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 앵커 역할을 하는 중심 부분이 있습니다. 이 앵커는 공용 공간의 볼륨에 미터 정도 떨어진 곳에 배치됩니다. 중심 부분과 연결할 수 있는 여러 조각들이 제시됩니다. 연결하고 싶은 조각을 보고, 그 조각을 끌어 마우스로 드래그하는 것처럼 조각을 놓을 위치에 끌어올립니다. 당신의 움직임은 마우스처럼 2D 평면 상에서 이루어지지만, 게임 로직은 깊이와 올바른 방향을 자동으로 계산합니다!
 
@@ -69,20 +123,42 @@ Puzzling Places의 경우, 게임 플레이 방식이 변경되었다는 것을 
 
 이 제어 체계는 주로 눈 추적에 의존하며, 눈 추적을 통해 흥미로운 정보들을 발견하게 되었습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Eyetracking의 문제점
 
 AVP의 eyetracking은 실제로 매우 안정적입니다. 기술적으로는 내 시선이 어디를 보고 있는지를 결코 잘못 파악하지 않지만, 여전히 패러다임에는 몇 가지 재미있는 문제가 있습니다.
 
-**일련의 의도 문제**라고 부르고 싶은 가장 두드러진 문제는 무언가를 선택하려면 그 곳을 봐야 한다는 것입니다. 이는 일부 작업을 순차적으로만 수행할 수 있다는 것을 의미합니다. 이것은 크게 중요해 보이지 않을 수 있지만, 컴퓨터를 사용할 때 얼마나 자주 두 가지 이상의 작업을 동시에 하는지에 놀랐습니다. 예를 들어, 어딘가를 보면서 다른 곳을 클릭하는 것과 같은 여러 가지 작업을 한 번에 수행할 때 가장 많은 막힘을 느꼈습니다. 
-AVP에서 익숙해지는 데 시간이 걸립니다. 이는 AVP로 멀티태스킹을 못 한다는 뜻이 아니라 기기에 의도를 순차적으로 전달할 수 있다는 것을 의미합니다. 
+**일련의 의도 문제**라고 부르고 싶은 가장 두드러진 문제는 무언가를 선택하려면 그 곳을 봐야 한다는 것입니다. 이는 일부 작업을 순차적으로만 수행할 수 있다는 것을 의미합니다. 이것은 크게 중요해 보이지 않을 수 있지만, 컴퓨터를 사용할 때 얼마나 자주 두 가지 이상의 작업을 동시에 하는지에 놀랐습니다. 예를 들어, 어딘가를 보면서 다른 곳을 클릭하는 것과 같은 여러 가지 작업을 한 번에 수행할 때 가장 많은 막힘을 느꼈습니다.
+AVP에서 익숙해지는 데 시간이 걸립니다. 이는 AVP로 멀티태스킹을 못 한다는 뜻이 아니라 기기에 의도를 순차적으로 전달할 수 있다는 것을 의미합니다.
 
 예를 들어, 오른손으로 퍼즐 조각을 선택하고 바로 왼손으로 다른 것을 선택하는 것처럼 두 손에 든 조각을 사용하여 동시에 여러 작업을 수행할 수 있습니다. 그러나 눈을 입력 방법으로 사용하는 모든 것은 인터랙션을 대역폭 제한 인터페이스를 통해 진행해야 한다는 것을 의미합니다.
 
 또한 우리의 눈이 어디를 보는지를 기반으로 우리의 의도를 가정하는 데 추가적인 문제가 있습니다. Saccadic masking과 시각적으로 산만한 것들이 가장 두드러진 문제였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 눈은 일반적으로 삽시적으로 움직입니다. 즉, 빠르고 이산적인 움직임으로 이동합니다. 당연히 이것이 우리가 세계를 지각하는 방식은 아닙니다. 우리의 시각은 부드럽고 지속적인 느낌을 줍니다. 이것은 일종의 후처리인 삽시적 가리기로 인해 발생하는 것인데, 시각 데이터를 왜곡하여 부드러운 전환을 만들 뿐만 아니라 기억을 되짚어 삽시적 움직임의 증거를 가리기 위해 변경합니다. 이것은 눈 추적에 대한 좋지 않은 소식입니다. 우리가 어디를 바라보고 있었는지 생각했던 곳이 실제로 눈이 향하고 있던 곳이 아닐 수도 있습니다! 입력을 활성화하려고 눌렀을 때 과거나 현재에 대해 뇌가 당신에게 거짓말을 하는 것을 명백히 깨닫게 됩니다. 이것은 미묘하게 표현되지만, 저는 이를 전혀 적응하지 못했던 감정이었습니다.
 
@@ -92,7 +168,18 @@ AVP에서 익숙해지는 데 시간이 걸립니다. 이는 AVP로 멀티태스
 
 첫 번째로, 눈 추적 및 집기 조합으로 플레이어에게 요구되는 더 빠른 반응 시간일수록 뭔가 잘못될 가능성이 높아집니다. 눈 추적을 사용한 빠른 속도의 게임을 가질 수 없다는 것이 아닙니다. 단지 게임 플레이와 관련된 반응 시간이 눈/뇌가 하는 다른 일과 심각하게 겹치는 경우에 문제가 발생할 수 있다는 것입니다. 둘째, 눈 공간에서 상호작용할 수 있는 객체들 사이의 거리가 멀수록 이러한 문제가 발생할 확률이 낮아집니다. 흥미로운 점은 우리가 다양한 알려지지 않은 요소들을 고려하기 위해 아날로그 스틱 제어 입력에 "데드 존"을 구축하는 것처럼, 장면에서 상호작용할 수 있는 물체들 간에 물리적인 최소 거리를 제공함으로써 눈의 이상한 행동을 고려할 수 있다는 점입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 잘못된 긍정적인 결과의 비용이 얼마나 큰지 평가하고 그것을 줄일 수 있는지 알 수 있습니다. 실수로 재시작 버튼을 누르는 것은 정말 최악이에요! 그러나 사용자가 누른 후에 추가 확인 창이 표시된다면, 그저 귀찮은 일이 되는 것뿐입니다. 우리 게임의 한 예는 선반 위의 조각들 간을 바꾸는 방법이었습니다. OS 디자인에 맞추기 위해 먼저 스와이프 동작을 사용하기로 결정했지만, 선반 배경과 조각들이 너무 가까워서 스와이프하는 동안 실수로 조각을 선택하는 경우가 있었습니다. 이로 인해 조각이 왼쪽이나 오른쪽으로 던져지면서 불편한 애니메이션이 발생했습니다. 그 대신에 버튼으로 전환했습니다. 이제 사용자가 버튼을 선택하고 실수로 조각을 선택하는 경우, 잘못된 소리가 재생되고 조각이 교체되지 않는 것 이외에는 아무 일도 일어나지 않습니다.
 
@@ -102,7 +189,18 @@ AVP에서 익숙해지는 데 시간이 걸립니다. 이는 AVP로 멀티태스
 
 그러나 인지적 부담과 같은 추가적인 함의도 있습니다. 공유 공간을 위해 디자인하는 경우, 사람들이 당신의 앱을 다른 앱 옆에서 사용할 것으로 의도된다는 것을 의미합니다. 그렇지 않은 경우, 왜 Full Space로 가려하지 않고 추가 작업을 하려고 하는 걸까요? 그렇게 하려면 게임 루프의 인지 부담이 사용자가 FaceTime으로 회의에 참석하거나 작업 문제에 대해 생각할 수 있는 정신적 처리 능력을 남겨두도록 해야 합니다. 이것은 AVP를 위해 Puzzling Places의 루프를 단순화하기로 결정한 이유 중 하나였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 앱들에게 숨 쉬는 공간을 남기는 것은 게임의 모든 영역에서 사용하는 패턴입니다. 사운드스케이프를 디자인하는 동안 다른 앱들도 약간의 소리를 생산할 뿐만 아니라 사용자가 결정할 수 있는 Apple 환경에서도 소리를 내게 될 수 있음을 염두에 두어야 합니다.
 
@@ -112,7 +210,18 @@ AVP에서 익숙해지는 데 시간이 걸립니다. 이는 AVP로 멀티태스
 
 이 블로그 글을 쓸 당시, 당신이 게임을 개발하고 싶은 위치를 결정해야 하는 첫 번째 결정은 어디에서 게임을 개발할지입니다. 네이티브 Swift / RealitityKit 조합 또는 Unity Engine 중 하나를 선택할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리에게는 네이티브 Swift가 사실 유효한 옵션이 아니었어요. 왜냐면 애플용으로 개발한 경험이 없었거든요. 매우 촉박한 개발 시간을 고려하면, 적어도 계산할 수 있는 위험성이 있는 생태계를 유지하는 것이 더 합리적이었어요. 하지만 Swift 경험이 있으면, 원하신다면 게임을 네이티브로 개발하는 데 많은 이점이 있을 거예요.
 
@@ -122,7 +231,18 @@ Unity에서 게임을 만들면, Unity는 게임을 두 부분으로 분할하�
 
 렌더링 관련해서 일부 머티리얼은 MaterialX로 변환됩니다. 이들은 Apple이 제공한 셰이더의 다양한 PBR 기능을 활용할 수 있을 뿐 아니라, Unity에서 사용할 수 없는 정보를 많이 활용할 수 있어요. 반면, 내 테스트 결과로는 이러한 셰이더가 Metal에서 컴파일할 수 있는 사용자 정의 셰이더보다 훨씬 비용이 많이 듭니다. 성능과 렌더링에 대해 말하자면, AVP의 성능은 어느 정도일까요? 제게는 아이디어가 없네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하드웨어 측면에서, AVP는 분명히 현재 시장에서 가장 강력한 상용 헤드셋입니다. 그러나 매우 높은 해상도, 프레임 속도, 그리고 지연 시간을 가지고 있습니다. 따라서 여전히 채움율이 문제가 될 수 있습니다. 렌더링은 Apple 프로세스로 처리되고 게임 로직은 Unity CPP 코드에서 발생하기 때문에 항상 어느 쪽이 지연을 일으키는 원인인지를 파악해야 합니다. 더 나빠진 점은 Unity 코드를 프로파일링할 수 있지만, Apple 측이 무엇을 하는지에 대한 정보는 제공되지 않는다는 것입니다. 현재 Xcode 프로파일러는 상당히 제한된 기능을 가지고 있습니다. Apple 측에서 렌더링이 얼마나 많이 소요되는지에 대한 정보를 더 얻고 싶었을 것입니다.
 

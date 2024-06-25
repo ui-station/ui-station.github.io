@@ -3,13 +3,12 @@ title: "ML 이야기 MobileLlama3 모바일에서 Llama3를 로컬에서 실행�
 description: ""
 coverImage: "/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_0.png"
 date: 2024-05-18 20:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_0.png
 tag: Tech
 originalTitle: "[ML Story] MobileLlama3: Run Llama3 locally on mobile"
 link: "https://medium.com/@tiwarinitin1999/ml-story-mobilellama3-run-llama3-locally-on-mobile-36182fed3889"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tiwarinitin1999/ml-story-mobilellama3-run-llama3-loca
 
 하지만 이제는 다릅니다. MLC 덕분에 모바일 기기에서 이러한 대형 모델을 실행하는 것이 가능해졌습니다. 이 블로그는 MLC LLM을 사용하여 오프라인 추론을 위해 Llama3-8B-Instruction 모델을 모바일 폰에 직접 양자화, 변환 및 배포하는 완전한 튜토리얼을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_0.png" />
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@tiwarinitin1999/ml-story-mobilellama3-run-llama3-loca
 
 자, 더 이상 지체하지 말고, 단계별 구현을 위한 코드로 바로 넘어가 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 섹션 I: 원본 라마-3-8B-인스트럭트 모델을 MLC 호환 가중치로 양자화 및 변환하기
 
@@ -42,7 +63,18 @@ git clone https://github.com/NSTiwari/Llama3-on-Mobile
 
 단계 1: MLC-LLM 설치하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델 가중치를 변환하려면 MLC-LLM 라이브러리가 필요합니다. 노트북을 실행하는 데 특히 NumPy 버전 1.23.5가 필요하며, 다른 버전에서 변환 프로세스에 문제가 발생했습니다.
 
@@ -59,7 +91,18 @@ import torch
 from huggingface_hub import snapshot_download
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step 3: HF 계정에 로그인하고 원본 Llama-3-8B-Instruct 모델 가중치를 다운로드하세요
 
@@ -84,20 +127,42 @@ device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 device
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step 5: 모델 이름과 양자화 유형 구성
 
 ```js
-MODEL_NAME = "Llama-3-8B-Instruct"
-QUANTIZATION= "q4f16_1"
+MODEL_NAME = "Llama-3-8B-Instruct";
+QUANTIZATION = "q4f16_1";
 ```
 
 Step 6: Llama-3-8B-Insruct 모델을 MLC 호환 가중치로 변환
 
 다음 코드는 q4f16_1 양자화를 사용하여 Llama-3-8B-Instruct 모델을 양자화 및 샤딩하여 여러 청크로 변환합니다. 그런 다음 모델 가중치를 Llama-3-8B-Instruct-q4f16_1-android이란 디렉터리에 변환하고 저장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 !python -m mlc_llm convert_weight /content/$MODEL_NAME/ --quantization $QUANTIZATION -o /content/$MODEL_NAME-$QUANTIZATION-android/
@@ -113,7 +178,18 @@ Step 6: Llama-3-8B-Insruct 모델을 MLC 호환 가중치로 변환
     -o /content/$MODEL_NAME-$QUANTIZATION-android/
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 8단계: Android 형식으로 모델 컴파일하기
 
@@ -126,7 +202,18 @@ Step 6: Llama-3-8B-Insruct 모델을 MLC 호환 가중치로 변환
 
 9단계: 모델을 Hugging Face에 올리기 🤗
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 모델 가중치를 HF에 저장하세요. 이러한 가중치는 추론 중에 모바일 폰으로 다운로드될 것입니다.
 
@@ -140,7 +227,7 @@ repo_name = "Llama-3-8B-q4f16_1-android"
 username = whoami(token=Path("/root/.cache/huggingface/"))["name"]
 repo_id = f"{username}/{repo_name}"
 ```
-  
+
 ```js
 from huggingface_hub import upload_folder, create_repo
 
@@ -158,7 +245,18 @@ upload_folder(
 다음 HF 🤗 리포지토리에서 샤드된 모델 가중치 및 토크나이저를 직접 찾을 수 있습니다:
 https://huggingface.co/NSTiwari/Llama-3-8B-q4f16_1-android
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 완전한 Colab 노트북을 찾을 수 있습니다.
 
@@ -168,7 +266,18 @@ https://huggingface.co/NSTiwari/Llama-3-8B-q4f16_1-android
 
 이 단계는 선택 사항이며 이미 Linux 또는 MacOS와 같은 UNIX 기반 시스템을 가지고 있다면 필요하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 윈도우 기기를 사용하고 있기 때문에 호환성 문제로 필요한 라이브러리와 종속성을 설치하는 것이 귀찮았어요. 그래서 귀차니즘을 피하기 위해 GCP에서 Linux VM 인스턴스를 렌트하기로 결정했어요.
 
@@ -178,7 +287,18 @@ https://huggingface.co/NSTiwari/Llama-3-8B-q4f16_1-android
 
 ## 섹션 III: 빌드 종속성 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 단계 1: Rust 설치하기
 
@@ -188,8 +308,18 @@ https://huggingface.co/NSTiwari/Llama-3-8B-q4f16_1-android
 
 표준 설치를 계속하려면 옵션 1을 선택하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_3.png)
 
@@ -201,8 +331,18 @@ Step 2: Install NDK and CMake in Android Studio
 
 Open Android Studio → Tools → SDK Manager → SDK Tools → Install CMake and NDK.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_4.png" />
 
@@ -218,7 +358,18 @@ python3 -m pip install --pre -U -f https://mlc.ai/wheels mlc-llm-nightly mlc-ai-
 python3 -c "import mlc_llm; print(mlc_llm)"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **단계 4: CMake 설치하기**
 
@@ -229,16 +380,27 @@ python3 -c "import mlc_llm; print(mlc_llm)"
 sudo apt-get install cmake
 ```
 
-**단계 5: MLC-LLM 및 Llama3-on-Mobile 저장소 복제하기**  
+**단계 5: MLC-LLM 및 Llama3-on-Mobile 저장소 복제하기**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_7.png" />
 
 <img src="/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_8.png" />
 
 ```js
-cd /home/tiwarinitin1999/  
+cd /home/tiwarinitin1999/
 
 # MLC-LLM 저장소를 복제합니다.
 git clone https://github.com/mlc-ai/mlc-llm.git
@@ -254,7 +416,18 @@ git clone https://github.com/NSTiwari/Llama3-on-Mobile.git
 
 단계 6: 변환된 모델 가중치의 HuggingFace 저장소를 다운로드하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MLCChat 디렉토리 내에 새 폴더 dist를 만들어주세요. dist 폴더 안에 prebuilt라는 하위 폴더를 생성해주세요.
 
@@ -270,7 +443,18 @@ cd prebuilt
 
 그리고 prebuilt 폴더에 HF repository(섹션 1의 단계 9에서 생성된)를 클론해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_10.png" />
 
@@ -283,7 +467,18 @@ git clone https://huggingface.co/NSTiwari/Llama-3-8B-q4f16_1-android.git
 
 dist 폴더 내에 lib라는 새 폴더를 만들어서 Llama3–8B-Instruct-q4f16_1-android.tar 파일 (Section I의 단계 8에서 생성된 파일)을 lib 디렉토리로 복사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_11.png)
 
@@ -297,7 +492,18 @@ cd lib/
 
 Step 8: mlc-package-config.json 파일 구성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MLCChat 폴더 내의 mlc-package-config.json 파일을 다음과 같이 구성하세요:
 
@@ -314,7 +520,7 @@ MLCChat 폴더 내의 mlc-package-config.json 파일을 다음과 같이 구성�
             "overrides": {
                 "context_window_size":768,
                 "prefill_chunk_size":256
-            }         
+            }
         }
     ],
     "model_lib_path_for_prepare_libs": {
@@ -327,7 +533,18 @@ MLCChat 폴더 내의 mlc-package-config.json 파일을 다음과 같이 구성�
 
 9단계: 경로에 환경 변수 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <html>
 <img src="/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_14.png" />
@@ -345,7 +562,18 @@ Step 10: 안드로이드 빌드 파일 생성
 
 마지막으로, 아래 명령을 실행하여 on-device 배포를 위한 Llama3-8B-Instruct 모델의 .JAR 파일을 빌드하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 cd /home/tiwarinitin1999/mlc-llm/android/MLCChat
@@ -358,8 +586,18 @@ python3 -m mlc_llm package
 
 ![Screenshot](/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_16.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 명령은 다음 파일을 생성합니다:
 
@@ -370,7 +608,18 @@ python3 -m mlc_llm package
 소스 디렉토리:
 /home/tiwarinitin1999/mlc-llm/android/MLCChat/dist/lib/mlc4j/output
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 목적지 디렉토리:
 /home/tiwarinitin1999/Llama3-on-Mobile/mobile-llama3/MobileLlama3/dist/lib/mlc4j/output
@@ -392,7 +641,18 @@ python3 -m mlc_llm package
 
 설정 파일의 model_url 키는 모바일폰에서 HF 저장소로부터 모델 가중치를 다운로드합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_18.png" />
 
@@ -402,8 +662,18 @@ python3 -m mlc_llm package
 
 안드로이드 스튜디오에서 MobileLlama3 앱을 열고 어느 정도 시간을 들여 빌드하도록 합시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [![image](/assets/img/2024-05-18-MLStoryMobileLlama3RunLlama3locallyonmobile_19.png)]
 (https://miro.medium.com/v2/resize:fit:700/1*wdN1DDl127dzmjIal0FHig.gif)
@@ -412,8 +682,18 @@ python3 -m mlc_llm package
 
 오프라인 사용을 위해 Llama3–8B-Instruct 모델을 모바일 기기에 구동하는 데 성공한 것을 축하드립니다. 이 기사에서 가치 있는 통찰을 얻었기를 기대합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 GitHub 저장소에서 전체 프로젝트를 확인할 수 있습니다.
 https://github.com/NSTiwari/Llama3-on-Mobile
@@ -424,7 +704,18 @@ https://github.com/NSTiwari/Llama3-on-Mobile
 
 MobileLlama3는 MLC-LLM을 영감을 받아 제작되었으며, 이 프로젝트를 오픈 소스로 만들어주신 MLC-LLM에게 감사드립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 참고 자료 및 자원
 

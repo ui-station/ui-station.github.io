@@ -3,13 +3,12 @@ title: "윈도우에서의 포트 포워딩 및 설정 방법들"
 description: ""
 coverImage: "/assets/img/2024-05-23-PortForwardinginWindowsandWaystoSetitUp_0.png"
 date: 2024-05-23 15:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-PortForwardinginWindowsandWaystoSetitUp_0.png
 tag: Tech
 originalTitle: "Port Forwarding in Windows and Ways to Set it Up"
 link: "https://medium.com/@redfishiaven/port-forwarding-in-windows-and-ways-to-set-it-up-c337e171086f"
 ---
-
 
 Windows에서 원격 액세스 또는 서버 호스팅을 위해 포트 포워딩 설정하는 방법을 배워보세요. 지금 당신의 장치에서 이를 활성화하고 구성하는 방법에 대한 가이드를 따르세요.
 
@@ -25,7 +24,18 @@ Windows에서 원격 액세스 또는 서버 호스팅을 위해 포트 포워�
 6. Windows에서 Netsh 포트 포워딩 규칙 관리
 7. 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포트 포워딩은 네트워크의 보안 및 기능성을 제고하는 데 사용되는 기본적인 기술 중 하나입니다. 이는 네트워크 라우터를 구성하여 특정 포트로부터 오는 들어오는 트래픽을 네트워크 내의 지정된 장치로 전달하는 과정을 말합니다. Windows 환경에서 포트 포워딩을 설정하는 것은 기술적 지식이 제한된 사람들에게는 도전적일 수 있습니다. 하지만 올바른 지식과 도구를 활용하면 누구나 빠르게 포트 포워딩을 설정할 수 있습니다. 이 가이드에서는 Windows에서 포트 포워딩을 설정하는 단계와 그에 필요한 도구 및 기술에 대해 살펴보겠습니다.
 
@@ -35,7 +45,18 @@ Windows에서 원격 액세스 또는 서버 호스팅을 위해 포트 포워�
 
 사용자가 네트워크의 장치에 연결을 시작하면 라우터가 요청을 받아 해당 장치로 전달합니다. 그러나 포트 포워딩이 없으면 라우터는 어떤 장치가 트래픽을 받아야 하는지 알 수 없어 연결이 실패합니다. 따라서 포트 포워딩은 특정 서비스, 장치 및 애플리케이션이 올바르게 작동하고 로컬 네트워크 외부의 인터넷에 접근할 수 있도록 하는 데 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 포트 포워딩은 어떻게 작동하나요?
 
@@ -45,7 +66,18 @@ Windows에서 원격 액세스 또는 서버 호스팅을 위해 포트 포워�
 
 # 명령 프롬프트를 사용한 포트 포워딩
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 윈도우에서 포트 포워딩을 위해 명령 프롬프트를 사용하는 방법에 대한 단계별 안내서입니다:
 
@@ -55,7 +87,18 @@ Windows에서 원격 액세스 또는 서버 호스팅을 위해 포트 포워�
 
 ## 단계 2: 장치의 IP 주소 얻기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 명령 프롬프트 창에 "ipconfig"을 입력하고 Enter 키를 누르세요. 네트워크 어댑터 아래의 "IPv4 주소"를 찾아 IP 주소를 메모해 두세요.
 
@@ -63,23 +106,41 @@ Windows에서 원격 액세스 또는 서버 호스팅을 위해 포트 포워�
 
 다음 명령을 입력하고 Enter 키를 누르세요:
 
-
 netsh interface portproxy add v4tov4 listenport=8080 listenaddress=192.168.1.10 connectport=8080 connectaddress=192.168.1.10
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 4: 포트 포워딩 규칙 확인하기
 
 다음 명령을 입력하고 Enter 키를 눌러주세요:
 
-
 netsh interface portproxy show all
-
 
 이 명령은 현재 네트워크에서 활성화된 모든 포트 포워딩 규칙의 목록을 표시합니다. 만들었던 규칙이 나열되어 있는지 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 5: 명령 프롬프트 닫기
 
@@ -89,7 +150,18 @@ netsh interface portproxy show all
 
 # 포트 포워딩을 위한 Windows 방화벽 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 포트 포워딩을 위한 Windows 방화벽 구성 방법에 대한 단계별 가이드입니다:
 
@@ -99,11 +171,33 @@ netsh interface portproxy show all
 
 ## 단계 2: "고급 설정"을 클릭하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 치트 시트 태그를 마크다운 형식으로 수정해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "Port"을 선택하고 "다음"을 클릭하세요.
 
@@ -113,7 +207,18 @@ netsh interface portproxy show all
 
 ## 단계 6: 작업 선택
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 “연결 허용”을 선택하고 “다음”을 클릭하세요.
 
@@ -123,7 +228,18 @@ netsh interface portproxy show all
 
 ## 단계 8: 규칙의 이름 지정 및 저장
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **단계 9: 규칙 확인**
 
@@ -131,7 +247,18 @@ netsh interface portproxy show all
 
 # Hyper-V 가상 스위치에서 포트 포워딩을 위한 NAT 규칙 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! Hyper-V Virtual Switch에서 NAT 규칙으로 포트 포워딩하는 방법에 대한 단계별 안내서입니다:
 
@@ -141,7 +268,18 @@ netsh interface portproxy show all
 
 ## 단계 2: 가상 스위치 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하이퍼-V 관리자 창의 오른쪽 사이드바에서 "가상 스위치 관리자"를 클릭하세요. "새 가상 네트워크 스위치"를 클릭하고 가상 스위치 유형으로 "내부" 또는 "개인"을 선택하세요.
 
@@ -151,7 +289,18 @@ netsh interface portproxy show all
 
 ## 단계 4: 새 가상 머신을 만들거나 기존 머신을 선택하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하이퍼-V 관리자 창에서 가상 머신을 마우스 오른쪽 단추로 클릭하고 "설정"을 선택하세요.
 
@@ -161,7 +310,18 @@ netsh interface portproxy show all
 
 ## 단계 6: 가상 스위치에 연결
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 단계 7: NAT 서브 스위치 활성화
 
@@ -169,7 +329,18 @@ Hyper-V 관리자 창에서 단계 2에서 생성한 가상 스위치를 마우�
 
 ### 단계 8: NAT 규칙 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가상 머신에서 "Windows 키 + R"을 눌러 명령 프롬프트를 열고, 실행 대화상자에 "cmd"를 입력하여 실행하세요. 다음 명령어를 입력하여 NAT 규칙을 생성하세요:
 
@@ -181,19 +352,39 @@ netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connect
 
 ## 단계 9: NAT 규칙 확인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 명령을 입력하여 NAT 규칙을 확인하세요:
 
-
 netsh interface portproxy show all
-
 
 모든 NAT 규칙을 나열해줄 것입니다.
 
 # 윈도우에서 Netsh 포트 포워딩 규칙 관리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 윈도우에서 Netsh 포트 포워딩 규칙을 관리하는 단계별 가이드입니다:
 
@@ -203,7 +394,18 @@ netsh interface portproxy show all
 
 ## 단계 2: 기존 포트 포워딩 규칙 확인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "netsh interface portproxy show all"을 입력하고 Enter 키를 누르세요. 이렇게 하면 현재 모든 포트 포워딩 규칙 목록이 표시됩니다.
 
@@ -213,7 +415,18 @@ netsh interface portproxy show all
 
 "netsh interface portproxy add v4tov4 listenport= listenaddress= connectport= connectaddress="
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 4: 포트 포워딩 규칙 삭제
 
@@ -223,7 +436,18 @@ netsh interface portproxy show all
 
 ## 단계 5: 기존의 포트 포워딩 규칙 수정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기존 포트 포워딩 규칙을 수정하려면 해당 규칙을 삭제하고 원하는 변경 사항이 적용된 새로운 규칙을 추가하면 됩니다.
 
@@ -233,7 +457,18 @@ netsh interface portproxy show all
 
 “netsh interface portproxy delete v4tov4 listenport= listenaddress=”
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 7: 비활성화된 포트 포워딩 규칙 활성화
 
@@ -243,7 +478,18 @@ netsh interface portproxy show all
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 포트 포워딩은 네트워킹 기술로, 방화벽이나 라우터를 통해 공용 네트워크에서 사설 네트워크로 트래픽을 전달하는 것을 가능하게 합니다. 이 기술을 사용하면 가정 네트워크에 원격으로 접속하여 서버를 호스팅할 수 있습니다.
 - 포트 포워딩은 공용 IP 주소를 각 사설 네트워크 장치에 할당하여, 방화벽에서 차단되는 대신 특정 장치로 들어오는 트래픽을 직접 전달합니다.
@@ -255,7 +501,18 @@ https://t.me/redfishiaven
 
 #업데이트 #튜토리얼 #리아뉴스 #소프트웨어 #하드웨어 #기술 #돈 #수익 #IPMC #사랑 #이벤트 #컴퓨팅 #컴퓨터 #정보기술 #학습 #인공지능 #redfishiaven #서버 #딥웹 #다크웹 #비트코인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구글 맵스에서 REDFISH IA VEN (https://goo.gl/maps/LVKkEYNN2LTe9C34A)을 확인해보세요.
 

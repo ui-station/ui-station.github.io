@@ -3,14 +3,12 @@ title: "Streamlit Plotly 대시보드 데이터 시각화를 위한 확실한 �
 description: ""
 coverImage: "/assets/img/2024-05-20-StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair_0.png"
 date: 2024-05-20 18:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair_0.png
 tag: Tech
 originalTitle: "Streamlit Plotly Dashboards: A Sure Fire Data Visualization Love Affair"
 link: "https://medium.com/gitconnected/streamlit-plotly-dashboards-a-sure-fire-data-visualization-love-affair-e441b5339888"
 ---
-
-
 
 ![StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair](/assets/img/2024-05-20-StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair_0.png)
 
@@ -20,8 +18,18 @@ Python Plotly는 지도 및 차트와 같은 데이터 시각화를 효율적으
 
 Streamlit과 Plotly는 함께하면 천생연분입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 CSV 데이터 세트에서 여러 데이터 시각화를 웹 인터페이스에서 생성할 수 있고 다중 상호 작용 레이어(예: 슬라이더 및 드롭다운 메뉴)를 추가할 수 있습니다.
 
@@ -31,7 +39,18 @@ Streamlit과 Plotly는 함께하면 천생연분입니다.
 
 # 데이터 세트 — UNHCR 난민 데이터
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UNHCR(UN High Commission for Refugees)은 전 세계의 난민 이동에 대한 통계를 추적합니다.
 
@@ -41,17 +60,40 @@ UNHCR(UN High Commission for Refugees)은 전 세계의 난민 이동에 대한 
 
 ![이미지](/assets/img/2024-05-20-StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트에서는 각 난민의 출신 국가와 피난국을 검색해 보겠습니다.
 
 이 데이터를 사용하여 다음을 보여주는 전 세계 맵과 차트를 만들 수 있습니다:
+
 - 출신 국가로부터 — 피난민이 어디로 가고 있는지
 - 피난국으로부터 — 피난민이 어디에서 왔는지
 
 데이터셋을 다운로드한 후, 스프레드시트 형식으로 열어서 다루고 있는 내용을 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair_2.png" />
 
@@ -63,7 +105,18 @@ UNHCR(UN High Commission for Refugees)은 전 세계의 난민 이동에 대한 
 
 출신 국가와 망명 국가 모두 3자리 ISO 코드를 가지고 있어서 등치지도를 만드는 데 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것 정말 유용해요! 지도 만드는 과정을 크게 간소화해줘요. 이제 코딩에 돌입해봅시다!
 
@@ -71,7 +124,18 @@ UNHCR(UN High Commission for Refugees)은 전 세계의 난민 이동에 대한 
 
 우선, 필요한 라이브러리를 가져와 Streamlit 애플리케이션의 페이지 레이아웃을 설정해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import streamlit as st
@@ -90,7 +154,18 @@ st.set_page_config(layout="wide")
 
 ## 단계 2: 데이터셋 로드하기 — UNHCR 데이터베이스에서 글로벌 통계
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리는 피난 심사 결정을 포함한 데이터셋을 로드합니다.
 
@@ -104,7 +179,18 @@ df = pd.read_csv(file_path)
 
 데이터 프레임을 만든 후에는 맵과 차트에 필요한 데이터를 설정하기 위해 가공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 3: 고유 년도 및 국가 추출
 
@@ -118,7 +204,18 @@ countries = sorted(set(df['Country of origin']).union(set(df['Country of asylum'
 
 unique() 함수는 슬라이더에 중복된 연도가 없고 원천/유학국에 중복된 국가가 없도록합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 origin/asylum에 대한 연합을 수행함으로써 데이터셋에서 어떤 국가도 빠뜨리지 않도록 보장합니다.
 
@@ -135,7 +232,18 @@ selected_year = st.slider("연도 선택", min_value=int(years[0]), max_value=in
 selected_country = st.selectbox("국가 선택", countries, key="country_select")
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 줄은 작은 헤더를 만드는 것입니다. 그런 다음 다음을 만들어야 합니다:
 
@@ -146,7 +254,18 @@ selected_country = st.selectbox("국가 선택", countries, key="country_select"
 
 선택한 연도와 피난국을 기반으로 데이터셋을 필터링하여 시각화를 위해 준비합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 선택한 연도와 국가를 기준으로 데이터 세트 필터링하기
@@ -168,8 +287,18 @@ asylum_data = all_countries_asylum.merge(asylum_data, on='안보 국가', how='l
 
 ## 단계 6: 코로플레스 맵 생성하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 원산지 및 피난처 국가별 데이터 프레임을 가지고 나면, 각 데이터 프레임을 시각화하기 위해 두 개의 코로플레스 맵을 생성합니다:
 
@@ -195,7 +324,18 @@ fig_asylum = px.choropleth(asylum_data, locations="Country of asylum", locationm
 - hover_name: 위치를 가리킬 때 표시할 열을 지정합니다.
 - projection: 맵 투영 유형을 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 또한 제목, 색상 궁합(YlOrRd) 및 템플릿을 설정했습니다.
 
@@ -205,7 +345,18 @@ fig_asylum = px.choropleth(asylum_data, locations="Country of asylum", locationm
 
 ## 7단계: 막대 차트 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 인정된 결정에 따른 상위 10개 국가에 대한 수평 막대 차트를 생성합니다:
 
@@ -232,7 +383,18 @@ fig_bar_asylum.update_layout(yaxis=dict(categoryorder='total ascending'))
 - orientation='h': 막대 차트가 수평임을 지정합니다.
 - categoryorder='total ascending': 막대 순서를 반전시킵니다. 각 차트를 미학적으로 강조하기 위한 비필수적인 단계입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-StreamlitPlotlyDashboardsASureFireDataVisualizationLoveAffair_4.png" />
 
@@ -242,7 +404,18 @@ fig_bar_asylum.update_layout(yaxis=dict(categoryorder='total ascending'))
 
 ## 단계 8: 지도 및 막대 차트 표시하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 끝으로, Streamlit 인터페이스에서 지도와 막대 차트를 옆에 나란히 표시합니다.
 
@@ -264,7 +437,18 @@ with col2:
 - st.columns: 시각화 요소를 옆에 배치할 수 있는 열을 생성합니다.
 - st.plotly_chart: Streamlit 앱에서 Plotly 차트를 표시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 와 놀라운 결과가 있습니다:
 
@@ -274,7 +458,18 @@ with col2:
 
 우리는 이 모두를 코드가 100줄 미만으로(내 예제 Python 파일에는 82줄) 구현했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잘 진행되었으면 좋겠네요. 함께 와 주셔서 감사합니다.
 
@@ -284,7 +479,18 @@ with col2:
 
 사용자들은 슬라이더를 사용하여 국가를 선택하고, 해당 국가로 이동하는 난민의 움직임에 대한 다중 시각적 집중을 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Python의 Streamlit과 Plotly를 함께 사용하는 큰 장점 중 하나는 놀라울만큼 효율적인 코드를 만들 수 있다는 것입니다.
 
@@ -294,7 +500,18 @@ Plotly는 지도 및 차트 시각화를 생성하는 데 최적화되어 있고
 
 읽어 주셔서 감사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 유형의 이야기가 당신의 취향이고, 저를 작가로 지원하고 싶다면, 제 Substack를 구독해주세요.
 

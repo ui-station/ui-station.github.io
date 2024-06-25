@@ -3,13 +3,12 @@ title: "살아있는 인공지능의 첫 걸음, 바디 인텔리전스"
 description: ""
 coverImage: "/assets/img/2024-05-17-AIsFirstBabyStepsinEmbodiedIntelligence_0.png"
 date: 2024-05-17 19:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-AIsFirstBabyStepsinEmbodiedIntelligence_0.png
 tag: Tech
 originalTitle: "AI’s First Baby Steps in Embodied Intelligence"
 link: "https://medium.com/@ignacio.de.gregorio.noblejas/ais-first-baby-steps-in-embodied-intelligence-2c4a90e61424"
 ---
-
 
 두 개의 세계가 충돌하고 있어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@ignacio.de.gregorio.noblejas/ais-first-baby-steps-in-
 
 그러나 두 소식이 이미 자체로 흥미롭지만, 그들 간의 시너지는 내 관점에서 AI 구현 지능의 첫 번째 발걸음이라고 생각해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # GPT-4의 구현
 
@@ -29,7 +39,18 @@ Figure AI는 로봇 회사로, CEO의 말에 따르면 "위험하고 원하지 �
 
 이미 유사한 웅장한 사명을 가진 회사들을 들어보셨을 것입니다. 그러나 OpenAI, NVIDIA, Jeff Bezos, 그리고 Intel이 시장에 제품이 없는 회사에 대해 26억 달러 평가액에서 6억 7500만 달러 시리즈 투자를 한다면, 그들이 무엇인가를 찾고 있다는 것을 알 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 왜 모두가 이 회사에 대해 이야기하는 걸까요? 이 비디오 때문입니다.
 
@@ -39,7 +60,18 @@ Figure AI는 로봇 회사로, CEO의 말에 따르면 "위험하고 원하지 �
 
 다시 말해, Figure AI의 로봇은 '화신 ChatGPT'의 처음으로, 즉 LLMs가 실체화된 작업도 할 수 있는 능력이 생긴 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 대부분의 사람들이 놓칠 수도 있는데, 로봇이 이전 동작에 대한 이유를 설명하면서 사람에게 작업을 수행하도록 요청하는 순간에 주목하여 주길 바랍니다.
 
@@ -49,8 +81,18 @@ Figure AI는 로봇 회사로, CEO의 말에 따르면 "위험하고 원하지 �
 
 Figure AI의 로봇의 기본 메커니즘에 대해서는 많이 알지 못하지만, Deepmind의 RT-2 모델과 같은 예시를 통해, 우리는 이미 LLM을 로봇 동작이나 텍스트를 출력하도록 훈련하는 방법을 증명한 연구자들이 있기에 꽤 좋은 아이디어를 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-17-AIsFirstBabyStepsinEmbodiedIntelligence_0.png)
 
@@ -60,8 +102,18 @@ Figure AI의 로봇의 기본 메커니즘에 대해서는 많이 알지 못하�
 
 그것은 여러 차례 연습된 것일 수 있는 매우 제한된 데모였습니다. 사실, 로봇이 일반적인 용도의 능력 측면에서 아직 매우 초기 단계에 있다는 것은 거의 확실합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서, 이 로봇들의 여정에서 다음 단계를 상상하기 위해 구글이 방금 공개한 것에서 영감을 받을 수 있습니다.
 
@@ -71,7 +123,18 @@ SIMA, 3D 총론적 에이전트.
 
 # SIMA, 최초의 진정한 총론적 에이전트?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Google의 확장 가능한 인공 지능 멀티월드 에이전트(SIMA) 프로젝트는 어떤 3D 환경에서 임의의 언어 명령을 이해하고 실행할 수 있는 인공 지능(AI) 시스템을 만들고자 합니다.
 
@@ -81,7 +144,18 @@ Google의 확장 가능한 인공 지능 멀티월드 에이전트(SIMA) 프로�
 
 그러나 고려해야 할 중요한 요소는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 에이전트들의 목표는 "자원을 수집하고 집을 짓는" 등 사용자가 제시하는 자연어 지침대로 작업을 수행하는 것입니다.
 
@@ -91,7 +165,18 @@ Google의 확장 가능한 인공 지능 멀티월드 에이전트(SIMA) 프로�
 
 SIMA 에이전트는 다음 구성 요소로 이루어져 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 마크다운 형식으로 변경한 텍스트입니다.
 
@@ -105,7 +190,18 @@ SIMA 에이전트는 다음 구성 요소로 이루어져 있습니다:
 
 2. Multi-modal Transformer + Transformer XL: 두 개의 트랜스포머 아키텍처로, 전자는 모달 간 교차 어텐션을 수행하고, 후자는 이전 상태를 취해 새로운 상태를 식별합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 정책: 선택된 행동이 600가지 가능한 기술 중 하나로 결정되는 분류 헤드
 
@@ -115,7 +211,18 @@ SIMA 에이전트는 다음 구성 요소로 이루어져 있습니다:
 
 대부분의 최신 모델들에서와 마찬가지로, 첫 번째 단계는 입력을 "인코딩"하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적인 용어로 설명하자면, 입력 데이터(텍스트와 비디오)를 가져와 해당 인코더를 사용하여 이러한 데이터 포인트를 벡터 임베딩으로 변환하는 것이 아이디어입니다.
 
@@ -125,17 +232,39 @@ SIMA 에이전트는 다음 구성 요소로 이루어져 있습니다:
 
 이 변환을 수행함으로써 각 요소가 해당 개념의 의미론을 캡처하는 밀집 벡터로 표현됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-다시 말해, 의미론적으로 유사한 개념은 유사한 벡터를 갖게 되어 벡터 공간에서 표현되었을 때 더 가까이 위치하게 됩니다: 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+다시 말해, 의미론적으로 유사한 개념은 유사한 벡터를 갖게 되어 벡터 공간에서 표현되었을 때 더 가까이 위치하게 됩니다:
 
 ![Concept Vectors](/assets/img/2024-05-17-AIsFirstBabyStepsinEmbodiedIntelligence_3.png)
 
- 또 다른 중요한 이점은 '개념을 벡터로 변환함'으로, 인간이 아주 무의식적으로 수행하는 '우리 세계를 이해하는' 행위를 수학적인 연습(컴퓨터에 이상적)으로 변환하여, 개념이 이제 수치로 표현된다는 것입니다.
+또 다른 중요한 이점은 '개념을 벡터로 변환함'으로, 인간이 아주 무의식적으로 수행하는 '우리 세계를 이해하는' 행위를 수학적인 연습(컴퓨터에 이상적)으로 변환하여, 개념이 이제 수치로 표현된다는 것입니다.
 
 특히, 이 모델은 이러한 벡터들 사이의 유사성(그들 사이의 거리)을 계산하여, 어떤 개념이 다른 것들과 유사한지를 알아냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 모델은 '개'와 '고양이'가 유사한 속성 (포유류, 길들여진 동물, 네 다리 등)을 공유하는 유사한 개념을 나타낸다는 것을 알 수 있습니다.
 
@@ -147,7 +276,18 @@ SIMA 에이전트는 다음 구성 요소로 이루어져 있습니다:
 
 기본 아이디어는 '개'라는 단어와 '개의 이미지'가 유사한 벡터를 공유하도록 원한다는 것으로, 이것은 모델에게 두 가지가 동일한 개념을 나타낸다는 것을 알려줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 텍스트와 이미지는 구조적으로 매우 다른 데이터 유형이기 때문에 서로 다른 인코더가 필요합니다.
 
@@ -157,7 +297,18 @@ SIMA 에이전트는 다음 구성 요소로 이루어져 있습니다:
 
 매우 최근에 개발된 SPARC 인코더는 대부분의 다른 이미지 인코더와 매우 유사한 방식으로 훈련됩니다(대비 학습을 사용), 그러나 미세 구체적인 세부 사항을 더 잘 캡처할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 흔한 이미지 인코더들은 이미지의 지역 세부사항을 제대로 포착하지 못하는 문제가 있습니다.
 
@@ -167,7 +318,18 @@ SPARC는 유사한 방법을 제안하지만 매우 흥미로운 요소를 추�
 
 예를 들어, "바구니 속 고양이와 개"를 나타내는 이미지-텍스트 쌍이 있다고 가정해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-AIsFirstBabyStepsinEmbodiedIntelligence_4.png" />
 
@@ -179,9 +341,21 @@ SPARC는 유사한 방법을 제안하지만 매우 흥미로운 요소를 추�
 
 하지만 모든 이 작업을 하는 이유는 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지역성. 이미지의 특정 부분이 이제 특정 개념에 할당되었으므로 모델은 이제 두 가지를 알게 됩니다:
+
 - 이미지에서 어떤 개념이 더 많이 표현되는지
 - 이러한 개념이 이미지에서 어디에 위치하는지.
 
@@ -189,7 +363,18 @@ SPARC는 유사한 방법을 제안하지만 매우 흥미로운 요소를 추�
 
 이러한 방식으로 이미지의 특정 부분의 그룹화된 임베딩이 '개' 단어 토큰에 크게 편향되어 있다면, 이미지의 해당 영역에는 아마도 개가 포함되어 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SIMA의 중요한 요소입니다. 3D 에이전트는 요청된 작업의 일환으로 상호 작용할 특정 객체를 식별할 수 있어야합니다.
 
@@ -199,7 +384,18 @@ SIMA의 중요한 요소입니다. 3D 에이전트는 요청된 작업의 일환
 
 ## 최적의 정책 선택
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제공된 정보를 바탕으로 SIMA는 다른 인코더들에 의해 생성된 표현을 사용하여 변환 모델 세트를 활용합니다. 이 모델은 LLM이 단어를 예측하는 대신 작업을 출력하여 에이전트가 실행할 키보드 및 마우스 조작을 지시합니다.
 
@@ -209,7 +405,18 @@ SIMA의 중요한 요소입니다. 3D 에이전트는 요청된 작업의 일환
 
 이것은 매우 흥미로운데, 최고의 '두뇌'를 사용하지 않았음에도 놀라운 결과를 얻었다고 하니, 이제 우리가 곧 살펴볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 진정한 일반화자
 
@@ -219,7 +426,18 @@ SIMA의 중요한 요소입니다. 3D 에이전트는 요청된 작업의 일환
 
 ![image](/assets/img/2024-05-17-AIsFirstBabyStepsinEmbodiedIntelligence_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SIMA가이러한작업을수행하고있는모습을여기에서확인할수있습니다. 게다가, SIMA는매우유망한결과를얻어 언급할만한가치가있습니다.
 
@@ -229,7 +447,18 @@ SIMA가이러한작업을수행하고있는모습을여기에서확인할수있�
 
 더욱인상적인점은, 여러가지다른게임에서, 에이전트가영이의업무(non-trivial tasks)를달성했으며, 이중대부분은얼마들이나예시없이(zero-shot tasks)성과를거두었으며, 다시한번전문화된 에이전트들을이겼습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-AIsFirstBabyStepsinEmbodiedIntelligence_7.png" />
 
@@ -239,7 +468,18 @@ SIMA가이러한작업을수행하고있는모습을여기에서확인할수있�
 
 간단히 말하자면, 우리는 게임 간의 지식 전이의 구체적인 증거를 관찰하고 있다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 말해, 모델은 일부 게임에서 유용하게 적용할 수 있는 의미 있는 기술을 학습합니다 (예: 키보드로 이동하는 방법을 배우는 것과 같이).
 
@@ -249,7 +489,18 @@ Figure AI의 발전과 함께 이러한 결과들이 어떠한 맥락에서 중�
 
 # 로보틱스에게 훌륭한 주였습니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 로봇 기술은 요즘 정말 빠르게 발전하고 있어요.
 
@@ -260,6 +511,17 @@ AI 로봇 기술은 요즘 정말 빠르게 발전하고 있어요.
 
 이러한 에이전트들을 실생활 상황으로 가져오는 데는 아직 이르지만, 이 두 분야 사이의 융합은 다음 단계로 자연스러운 발전을 이루고 있습니다; SIMA가 훈련의 장소일 뿐만 아니라, Figure AI 로봇들이 일반적인 에이전트의 구현체 역할을 하기 때문이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 다른 기업들도 구체적 지능에 대한 자신들의 시사를 제시하며 경쟁이 치열해지고 있습니다. 많은 기존 기업들이 인류의 기술이 충분히 준비되어 있다고 느끼고 있어서 다음 큰 도전, 인공지능을 실생활에 적용하는 것에 착수할 준비가 되어있다고 느끼는 것이 분명합니다.

@@ -3,13 +3,12 @@ title: "레카만 수열의 궁극적인 안내"
 description: ""
 coverImage: "/assets/img/2024-06-19-TheUltimateGuidetoRecamnsSequence_0.png"
 date: 2024-06-19 10:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-TheUltimateGuidetoRecamnsSequence_0.png
 tag: Tech
 originalTitle: "The Ultimate Guide to Recamán’s Sequence"
 link: "https://medium.com/cantors-paradise/the-ultimate-guide-to-recam%C3%A1ns-sequence-874cdbb28a4a"
 ---
-
 
 “단순함은 궁극의 세련미이다.” — 레오나르도 다빈치 (1452–1519)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/cantors-paradise/the-ultimate-guide-to-recam%C3%A1ns-s
 
 ## 수열
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Recaman 시퀀스를 생성하는 규칙은 간단해요:
 
@@ -34,7 +44,18 @@ Recaman 시퀀스를 생성하는 규칙은 간단해요:
 - a₄ = 6-4 = 2
 - a₅ = 2 + 5 = 7
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 시퀀스는 다음과 같이 시작합니다:
 
@@ -44,7 +65,18 @@ Recaman 시퀀스를 생성하는 규칙은 간단해요:
 
 ![Plot](/assets/img/2024-06-19-TheUltimateGuidetoRecamnsSequence_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 처음 1000개의 값입니다:
 
@@ -54,7 +86,18 @@ Recaman 시퀀스를 생성하는 규칙은 간단해요:
 
 ![image](/assets/img/2024-06-19-TheUltimateGuidetoRecamnsSequence_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리는 번갈아 가면서 짝수 또는 홀수 인덱스의 집합에 해당하는 기욕한 수평 선들을 볼 수 있습니다. 이웃한 요소들의 집합이 1씩 증가하거나 감소하는 것처럼 보입니다.
 
@@ -64,7 +107,18 @@ Recaman 시퀀스를 생성하는 규칙은 간단해요:
 
 그래서 무슨 소란일까요? 일단, 이에 대해 수론적 측면에서는 매우 적게 알려져 있습니다. Sloane은 모든 숫자가 결국 나타나리라는 추측을 했습니다. 그러나 2018년, Benjamin Chaffin은 처음 10²³⁰개 항을 계산했을 때 숫자 852,655가 아직 나타나지 않았습니다! 실제로 그것만이 결여된 것은 아닙니다. 그 범위 내에서는 많은 다른 상대적으로 작은 결여된 숫자들이 있습니다. 또한, 시퀀스가 비단사임을 알고 있습니다 — 첫 반복 값은 a₂₄ = a₂₀ = 42에서 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 시퀀스 시각화
 
@@ -74,7 +128,18 @@ Recaman 시퀀스를 생성하는 규칙은 간단해요:
 
 자체적으로 시각화를 탐색하고 싶다면, 위 이미지에 대한 간단한 의사 코드가 여기에 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 길이 n의 Recaman 시퀀스에 대해:
@@ -95,7 +160,7 @@ function frame(i):
         # 호의 중심과 반지름 계산
         center = (recamanSequence[j + 1] + recamanSequence[j]) / 2
         radius = recamanSequence[j + 1]과 recamanSequence[j]의 차이의 절댓값 / 2
-        
+
         # j가 짝수인지 홀수인지에 따라 시작 및 끝 각도 결정
         if j가 짝수이면:
             startAngle = 0
@@ -120,7 +185,18 @@ Mathematica를 사용한다면, 이 준비된 노트북을 사용할 수 있습�
 
 이제 시퀀스의 행동에 대해 알았으니, 그것이 어떤 소리를 내는지 알아봅시다. 먼저, 무서운 면을 처리하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 OEIS "Listen" 페이지에서 직접 취한 처음 2048개 용어의 오디오입니다. 악기는 제한된 음역대를 가지고 있기 때문에 용어는 88으로 나눈 나머지로 변환됩니다(MIDI 값은 숫자를 88로 나눈 나머지가 재생됩니다). OEIS 페이지에서 음의 높낮이 모듈러스를 변경할 수 있습니다. 제가 당신에게 제안하는 닐 슬론의 의견처럼 소리에 가장 가까운 것을 사용하여 MIDI 파일을 렌더링했습니다.
 
@@ -130,7 +206,18 @@ Mathematica를 사용한다면, 이 준비된 노트북을 사용할 수 있습�
 
 먼저, 96(8개 옥타브 전체)의 음의 높낮이를 사용하여 순서에 조금 더 여유를 주기로 결정했습니다. 여러 음계 선택을 실험한 후, 사이에 플랫된 다섯번째 음이 포함된 헥사토닉 블루스 음계로 결정했습니다. 또한 값이 0(mod 10)인 모든 음표를 쉼표로 변환하여 일렬을 주도하는 리듬을 추가하기로 결정했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 블루스 스케일이 작동하는 것 같아서, 12마디 블루스의 변형을 위해 화성을 나타내는 무난한 베이스 라인을 추가했어요. 마침내 어떤 종류의 퍼커션을 원했는데, 조각스럽고 독특한 이 작품의 성질 때문에 보완적인 그루브를 찾는 것이 어려웠어요. 2번째 코러스의 시작에서 베이스와 함께 시작하는 아프리카 드럼을 선택했어요.
 
@@ -140,7 +227,18 @@ Mathematica를 사용한다면, 이 준비된 노트북을 사용할 수 있습�
 
 이제 순서를 구성하고 시각화하고 음성으로 변환하는 방법을 알았으니, 마지막으로 하나만 남았습니다 — 애니메이션으로 이를 함께 조합하는 거죠. 길이가 n인 순서에 대한 과정입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 위의 코드를 사용하여 n개의 프레임을 생성합니다.
 - 우리가 선택한 modulus를 사용하여 노트 범위를 설정합니다.
@@ -155,7 +253,18 @@ Mathematica를 사용한다면, 이 준비된 노트북을 사용할 수 있습�
 
 결과는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레캄킨의 수열은 여전히 대부분 미스터리한 상태입니다. 이것은 다양한 변형을 영감을 주었고 스테가노그래피에 응용될 수 있음을 발견했습니다. 아직 발견되지 않은 것들이 있더라도, 로지스틱 맵, 만델브로 집합, 그리고 세포 자동기와 같이 간단한 수학 규칙이 아름답고 예상치 못한 풍부한 패턴으로 이어질 수 있는 훌륭한 예시라고 할 수 있습니다.
 
@@ -167,8 +276,19 @@ Mathematica를 사용한다면, 이 준비된 노트북을 사용할 수 있습�
 - 수열의 성장을 특성화하는 흥미로운 시도인 David Eppstein의 방법
 - 파이썬을 선호하는 경우, 이 코드를 통해 수열을 직접 오디오로 변환하는 Luke Polson의 코드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-4. **켈리 반 에버트(Kelley van Evert)가 만든 재미있고 상호 작용적인 앱으로 수열을 탐험해보세요.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-5. **알렉스 벨로스(Alex Bellos)가 출연한 인기 있는 Numberphile 비디오로 수열을 소개합니다.
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+4. \*\*켈리 반 에버트(Kelley van Evert)가 만든 재미있고 상호 작용적인 앱으로 수열을 탐험해보세요.
+
+5. \*\*알렉스 벨로스(Alex Bellos)가 출연한 인기 있는 Numberphile 비디오로 수열을 소개합니다.

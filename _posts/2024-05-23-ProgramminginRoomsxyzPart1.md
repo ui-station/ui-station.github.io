@@ -18,7 +18,18 @@ Rooms.xyz은 정확히 판타지 콘솔은 아니지만 (과거 몇 가지 기�
 
 이 기사는 객체의 동작을 사용자 정의하기 위해 Rooms에서 Lua 코드를 작성하는 방법의 프로그래밍 모델과 기본 사항 (매우 표면적으로)을 면밀히 살펴봅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Part 1에서는 기초 사항을 다룰 것입니다:
 
@@ -31,7 +42,18 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 
 # 프로그래밍을 해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 음, 디저트를 먹어야 하나요? 이 기사의 전제는 당신이 프로그래밍에 흥미를 느끼며 프로그래밍이 재미있다는 것입니다. 사실 당신과 나는 당신을 프로그래밍을 하지 못하게 하는 데는 약간의 노력이 필요할 것을 알고 있어요. 만약 토스트기에 API가 있다면 당신은 그것을 프로그래밍할 것입니다. 아마 그것에 API가 있는지도 모르겠네요. 토스트기 프로그래밍을 멈추고 돌아오세요.
 
@@ -41,7 +63,18 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 
 방은 작은 상호작용 3D 환경입니다. 그게 바로 당신이 만들고 있는 것. 방이나 상호작용 3D 환경에 흥미가 없다면, 저런, Rooms.xyz를 즐기진 못할 거예요. 방은 미니 게임이 될 수도 있고 사용자가 접근할 수 있는 즐거운(아닐 수도 있지만, 우리는 그렇길 바래요) 경험이 될 수도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_1.png)
 
@@ -51,7 +84,18 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 
 물건이란 객체입니다. 정말, 물건? 더 일반적인 이름을 선택할 수 없었을까요? 음, 네, 객체는 더 일반적이었겠죠. 가끔 커피를 충분히 마시지 않은 경우에는 그것들을 객체라고도 부르기도 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 방 안에 있는 각 물체는 물체(Thing)입니다. 위쪽 방에서 볼링공은 물체입니다. 각 핀도 물체이고, 테이블도 물체이며, 쥬크박스도 물체입니다. 이해하시죠. 모든 것이 물체입니다.
 
@@ -61,7 +105,18 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 
 스포일러 경고: 코드입니다. 다른 것으로 생각했나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수정 모드에서 물건을 클릭하고 "Code" 버튼을 클릭하면 코드 편집기가 표시됩니다.
 
@@ -71,8 +126,18 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 
 어쨌든, Lua를 자바스크립트의 불편한 부분 없는 버전으로 생각해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![ProgramminginRoomsxyzPart1_3](/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_3.png)
 
@@ -82,8 +147,18 @@ Part 1에서는 기초 사항을 다룰 것입니다:
 
 # 코딩에 들어가기 전에...
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Rooms.xyz에서 작업을 저장하려면 회원 계정을 만들어야 합니다. 현재 Rooms.xyz가 알파 상태이기 때문에 공식 홈페이지를 통해 초기 액세스를 요청해야 합니다. 홈페이지에서 "초기 액세스 요청" 버튼을 클릭하면 됩니다.
 
@@ -93,8 +168,18 @@ Rooms.xyz에서 작업을 저장하려면 회원 계정을 만들어야 합니�
 
 안녕하세요 템플릿을 클릭하면 미리 작성된 코드가 표시됩니다. 클릭하면 객체가 "안녕하세요"라고 말하는 매우 흥미진진한 스크립트입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Programming in Roomsxyz Part1_4](/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_4.png)
 
@@ -104,12 +189,33 @@ This thing at the top is how you switch from Edit to Preview (that is, Play) mod
 
 ![Programming in Roomsxyz Part1_5](/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_5.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞으로는 코드 스크린샷을 찍지 않을 거에요 (코드를 보여주는 바보 같은 방식이라서, 커피숍에서 다른 개발자들이 내 모습을 이상하게 쳐다보고 있거든). 대신에 이렇게 작은 블록 안에 코드를 직접 쓸 거에요:
 
@@ -124,7 +230,18 @@ end
 
 <img src="/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_7.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 더 나은 내용을 찾을 수 있다고 확신해요.
 
@@ -134,7 +251,18 @@ end
 
 이것은 중복되어 보일 수 있지만, onClick 함수는 반드시 onClick으로 불러져야 해요. "onclick"이나 "ONCLICK"이나 "clementine"으로 불러도 작동하지 않아요. 엔진은 정확히 onClick이라는 이름을 대소문자 구분하여 찾기 때문이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 다른 핸들러 함수의 예시는 다음과 같습니다:
 
@@ -148,7 +276,18 @@ end
 
 # onStart() 함수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 방이 시작할 때 사용자의 작업과 상관없이 무언가를 하고 싶을 때 유용한 기능이에요.
 
@@ -176,8 +315,18 @@ function onClick()
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 onStart() 안에 있다면 더 깔끔하다고 생각해요. 개인 취향입니다.
 
@@ -185,12 +334,22 @@ end
 
 코드를 따라하며 작업하는 경우, 작업 중인 객체가 물리 유형으로 Kinematic으로 설정되어 있는지 확인하세요. 나중에 더 설명하겠지만, Kinematic 객체는 원하는대로 동작합니다. 동적(비 키네마틱) 객체는 자기 맘대로 동작합니다. 우리는 현재 주인공이니까 그것을 키네마틱으로 설정해서 우리가 움직일 수 있게 해야 해요.
 
-
 # 물리학에 대한 이야기
 
 코드를 따라하며 작업하는 경우, 작업 중인 객체가 물리 유형으로 Kinematic으로 설정되어 있는지 확인하세요. 나중에 더 설명하겠지만, Kinematic 객체는 원하는대로 동작합니다. 동적(비 키네마틱) 객체는 자기 맘대로 동작합니다. 우리는 현재 주인공이니까 그것을 키네마틱으로 설정해서 우리가 움직일 수 있게 해야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 한 번 시도해보세요!
 
@@ -205,8 +364,18 @@ end
 
 이제 미리보기 모드로 이동하여 클릭해보세요. 회전하기 시작해야 합니다! 실제 자동차에서는 시도하지 마세요. 일반적으로 이 튜토리얼로부터 운전 조언을 받지 마세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*z8Qu3AWjVrfDKmP1mCaRfw.gif)
 
@@ -216,8 +385,18 @@ end
 
 만약 물체를 새로운 위치로 이동하고 싶다면, setPosition() 함수를 사용하고 새로운 좌표를 알려주면 됩니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 function onClick()
@@ -232,7 +411,18 @@ end
 
 # 부드럽게 이동하기 (애니메이션 포함)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 멋져요! 이제 객체를 순조롭게 이동시키는 방법을 알아보겠습니다. 객체를 순간이동시키는 것이 아닌 특정 양만큼 부드럽게 이동시키려면 startMoveBy() 함수를 사용하면 됩니다. 이 함수는 delta(x, y, z)와 총 시간을 인수로 받아 요청한 위치로 객체를 이동시킵니다.
 
@@ -249,7 +439,18 @@ end
 
 왜 0, 0, -30일까요? 우리의 좌표 시스템이 그런식으로 작동하기 때문이죠:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-ProgramminginRoomsxyzPart1_9.png" />
 
@@ -264,7 +465,18 @@ end
 
 그리고 방의 중심은 (0, 0, 0) 입니다. 이는 방 중앙에 있는 바닥의 지점을 의미합니다. 방의 표면은 약 95x95의 크기이며, 높이는 75 단위입니다. 따라서 X와 Z 좌표는 약 -47.5에서 +47.5까지이며, Y 좌표는 0에서 75까지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과를 확인하려면 다음 주소를 확인해보세요: [https://rooms.xyz/btco/tutomove](https://rooms.xyz/btco/tutomove)
 
@@ -287,7 +499,18 @@ function onClick()
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시는 startMoveBy()로 시작된 모션을 중지하기 위해 stopMove()를 호출하는 방법을 보여주며, 차량의 상태(이동 중 또는 이동 중이 아님)를 추적할 수 있는 불리언 변수를 가지는 방법을 보여줍니다. 또한 함수 외부에 변수가 존재할 수 있음을 보여주며, 이는 함수 내에서 선언된 경우 함수 호출 간에 값을 유지할 수 있음을 보여줍니다.
 
@@ -297,7 +520,18 @@ end
 
 의도하지 않은 점 중 하나는 say(), startMoveBy() 등과 같은 함수가 비동기적이라는 것입니다. 즉, 이 함수들은 코드의 실행이 계속될 동안 백그라운드에서 실행됩니다. 따라서 이러한 함수를 여러 번 호출하는 경우 이 함수들은 함께 실행되며 순차적으로 실행되지 않습니다. 예를 들어:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 -- 경고: 이것이 하는 것 같은 일은 하지 않습니다.
@@ -341,7 +575,18 @@ function sayDone()
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*CL1gPOlI-i0jEA8VNiiH1w.gif)
 
@@ -351,7 +596,18 @@ end
 
 # 주기적으로 무언가를 수행하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 간격마다 주기적으로 함수를 호출하려면 every()를 사용할 수 있습니다.
 
@@ -373,8 +629,18 @@ function count()
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 onStart()에서 우리는 count() 함수가 매 초 호출되기를 원한다고 말합니다. 엔진은 매 초 count() 함수를 호출하여 우리는 카운터를 증가시키고 양이 현재 카운트를 말하도록합니다.
 
@@ -384,8 +650,18 @@ end
 
 참고: 성능상의 이유로 간격을 0.25초보다 작게 설정할 수 없습니다. 그러나 다른 방법으로 여전히 성능을 저하시킬 수 있으니 포기하지 마세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Part 1 마침
 

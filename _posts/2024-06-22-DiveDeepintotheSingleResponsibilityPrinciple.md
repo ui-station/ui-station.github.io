@@ -3,13 +3,12 @@ title: "단일 책임 원칙SRP에 깊이 파고들기 더 좋은 코드 작성 
 description: ""
 coverImage: "/assets/img/2024-06-22-DiveDeepintotheSingleResponsibilityPrinciple_0.png"
 date: 2024-06-22 23:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-DiveDeepintotheSingleResponsibilityPrinciple_0.png
 tag: Tech
 originalTitle: "Dive Deep into the Single Responsibility Principle"
 link: "https://medium.com/@krishnapalsinhgohil/dive-deep-into-the-single-responsibility-principle-6f6c95182f02"
 ---
-
 
 ## SRP를 수용하는 것이 어떻게 코딩 방법을 변화시키고 확장 가능한 소프트웨어를 이끌어낼 수 있는지 알아보세요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@krishnapalsinhgohil/dive-deep-into-the-single-respons
 
 모든 직업에는 준수해야 할 표준과 엄격한 규칙이 있으며, 이를 어기는 경우 중요한 결과가 발생할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 건축가가 건물 규정을 준수하여 구조물의 안전과 안정성을 보장해야 하는 방법을 생각해보세요.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@krishnapalsinhgohil/dive-deep-into-the-single-respons
 
 마찬가지로, 소프트웨어 개발에서,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SOLID 원칙은 깨끗하고 유지보수가 쉽고 견고한 코드를 작성하기 위한 표준을 제공하기 위해 만들어졌어요.
 
@@ -41,7 +62,18 @@ SOLID 원칙을 준수함으로써, 개발자들은 오류를 최소화하고 �
 
 # 단일 책임 원칙(SRP)란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이제 모든 개발자는 "책임"을 각자 다르게 해석할 수 있습니다
 - 컴포넌트를 디자인할 때, 한 명의 개발자는 전체 컴포넌트의 생성을 단일 책임으로 간주할 수 있습니다
@@ -53,16 +85,27 @@ SOLID 원칙을 준수함으로써, 개발자들은 오류를 최소화하고 �
 
 ## 이젠 ProfileVC가 이 원칙을 어기는지 살펴봅시다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 class ProfileVC: UIViewController {
   override func viewDidLoad() {
     fetchImageFromAPI()
-  } 
+  }
 
   func fetchImageFromAPI() {
-    APIService.callAPI(with: url) { response in 
+    APIService.callAPI(with: url) { response in
       handleResponse(response: response)
     }
   }
@@ -79,7 +122,7 @@ class ProfileVC: UIViewController {
   func processImage(data: Data) {
     // process image
     displayDataOnUI(data: data)
-  } 
+  }
 
   func displayDataOnUI(data: Data) {
     print("Updating UI with data")
@@ -89,6 +132,7 @@ class ProfileVC: UIViewController {
 ```
 
 `ProfileVC`는 다음과 같은 책임을 갖습니다:
+
 - 서비스에서 데이터를 가져오기 [위반]
 - 응답 처리하기 [위반]
 - 이미지 처리하기 [위반]
@@ -98,26 +142,33 @@ class ProfileVC: UIViewController {
 
 - ImageLoader
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 // ImageLoader는 오직 한 가지 책임만을 가지고 있습니다.
 // 네트워크에서 이미지를 로드하고 전달하는 것입니다.
 
 class ImageLoader {
 
-  func fetchImageFromAPI(completion: @escaping ResultCompletion) {
-    APIService.callAPI(with: url) { response in 
-      completion(response)
-    }
-  }
+func fetchImageFromAPI(completion: @escaping ResultCompletion) {
+APIService.callAPI(with: url) { response in
+completion(response)
+}
+}
 
 }
 
-
 - ImageDecoder
-
 
 // ImageDecoder
 // 사실상, base64 이미지를 파싱하거나
@@ -125,42 +176,51 @@ class ImageLoader {
 // 디코딩 로직이 다른 구성 요소에서 수행되어야 함을 보여주기 위한 예시입니다.
 
 class ImageDecoder {
-  let result: ResultCompletion
-  
-  init(...) {
-    self.result = result
-  }
-  
-  func decodeImage(completion: ...) -> Void)  {
-     switch result {
-      case .success(let data):
-        // 디코딩 처리
-        completion(success(data))
-      case .failure(let error):
-        completion (.failure(error))
-     }
-  }
+let result: ResultCompletion
+
+init(...) {
+self.result = result
+}
+
+func decodeImage(completion: ...) -> Void) {
+switch result {
+case .success(let data):
+// 디코딩 처리
+completion(success(data))
+case .failure(let error):
+completion (.failure(error))
+}
+}
 
 }
 
-
 - ImageProcessor
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-// ImageProcessor  
+// ImageProcessor
 
 class ImageProcessor {
   let imageData: Data
-  
+
   init(...) {
     self.imageData = imageData
   }
-  
+
   func processData(completion: ...) -> Void)  {
-    // Process image and pass further to the chain 
+    // Process image and pass further to the chain
   }
 
 }
@@ -169,15 +229,15 @@ class ImageProcessor {
 - ProfileVC
 
 ```js
-// ProfileVC  
+// ProfileVC
 
 class ProfileVC: UIViewController {
 
   var load: (() -> Void)?
 
-  func viewDidLoad() { 
+  func viewDidLoad() {
     load()
-  } 
+  }
 
   func displayImage(_ data: Data) -> Void)  {
     profileImage.image = UIImageFromData(data)
@@ -188,16 +248,27 @@ class ProfileVC: UIViewController {
 
 ProfileVC now only has a display method that will present the changes to the user
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이제 조립이 시작됩니다, 실제 작업
 
 여기에 모든 구성 요소가 결합됩니다
 
 ```js
-// ProfileComposer  
+// ProfileComposer
 // 이것은 이해하기 쉽도록 가장 간단한 조합 형태입니다
-// 권장하는 방법은 디자인 패턴을 사용하는 것입니다. 
+// 권장하는 방법은 디자인 패턴을 사용하는 것입니다.
 
 final class ProfileComposer {
   func makeProfileVC() {
@@ -221,7 +292,18 @@ final class ProfileComposer {
 
 # 이점은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 유지 관리성, 재사용성 및 명확성
 
@@ -231,7 +313,18 @@ ImageLoader, ImageProcessor 및 ImageResponseHandler와 같은 개별 구성 요
 
 ProfileVC는 특정 데이터 원본과 분리되어 있어 UI 표현에만 집중할 수 있도록 해 유지할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 향상된 테스트 용이성
 

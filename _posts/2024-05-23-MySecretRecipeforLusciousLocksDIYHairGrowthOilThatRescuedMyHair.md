@@ -16,7 +16,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 ## 나의 머리 탈모 고민: 전쟁의 시작
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 몇 달 전, 거울 앞에 섰을 때 한때 빛나던 머릿결이 이제는 얇아지고 화사하지 않아 보였어요. 제 머릿결이 사라지는 것을 지켜보는 듯한 기분이었죠. 브러시에 묻은 머릿결과 샤워배에서 발견되는 머릿결이 매일 악몽이었어요. 제가 제 아이덴티티의 일부를 잃어가는 느낌이었죠.
 
@@ -26,8 +37,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 저는 완벽한 헤어 제품을 찾기 위한 여정에 나섰어요. 가게에 있는 모든 상용 제품을 시도해보고, 심지어 달에 비밀스럽게 도움을 청하는 것까지 고려했지만 아무것도 도움이 되지 않았어요. 좌절과 실망이 매일의 반복이 되고 있었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_2.png)
 
@@ -37,8 +58,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 ![Image](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_3.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 재료: 100ml 레시피용
 
@@ -52,8 +83,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 🌱 참기름: 이 오일은 머리를 위한 풍부한 식사와 같아요. 비타민과 필수 지방산이 가득 담겨 있어, 영양이 가득하고 빛나는 머리를 위한 열쇠입니다. 게다가 항균 효능으로 두피 건조함을 제거해줘요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_4.png)
 
@@ -63,9 +104,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 🌿 로즈마리 에센셜 오일: 이것을 당신의 머리의 개인 치어리더로 생각해 보세요. 로즈마리 오일은 머리카락 성장을 촉진하고 가렵은 두피를 없애줍니다. 안녕, 비듬!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Peppermint Essential Oil](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_5.png)
 
@@ -75,8 +125,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 ## The Magic Method:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Mixing Magic: 참기름 50ml, 캐스터 오일 24ml, 아몬드 오일 24ml을 그릇에 부은 후 잘 섞어주세요. 마치 머리 성장 주문을 만드는 것처럼 섞어주세요.
 - Essential Enchantment: 로즈마리 에센셜 오일 1.5ml을 추가해주세요. 이것은 단순한 오일이 아니에요 — 마치 머리 성장 오케스트라의 지휘자 같아요!
@@ -88,7 +148,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 ## 마법같은 사용 방법:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ✨준비 시간: 머리를 나누고 마법 같은 혼합물을 약간 데워주세요. 너무 뜨겁지 않게 — 우리는 당신의 두피가 극진하게 아닌 편안하게 느껴지길 원해요!
 
@@ -98,7 +169,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 ✨머리 안아주기: 사랑을 머리 끝단까지 전달해주세요. 그들도 약간의 사랑이 필요해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ✨끝물: 샤워 모자를 씌워주면, 당신의 머리에게 새로운 친구가 생긴 거라 생각하면 돼. 오일이 마법을 부리는 동안 편안한 느낌을 줘.
 
@@ -108,7 +190,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 ## 변화의 여정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오일을 두피에 처음 발라 본 순간, 마음이 정화되는 기분이었어요. 로즈마리와 페퍼민트 향기가 방 안을 가득 채우면서 잠시 동안은 마치 스파에서 휴식을 취하는 느낌이었죠.
 
@@ -118,7 +211,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 ## 놀라운 결과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 달이 지나가는 동안 주에 몇 번씩 세수할 때 발리던 머릿결이나 빗에서 뽑아냈던 머리카락이 점점 줄어드는 것을 알게 되었어요. 마치 머리카락이 자신의 슈퍼히어로를 찾았다는 듯이요. 머릿결이 부드럽고 빛나고 건강해진 것을 느꼈어요.
 
@@ -128,7 +232,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 거울 속 나를 보는 게 부담스러웠던 거울이 동반자가 되어주는 것 같았어요. 조금씩 활력을 되찾아가는 모습을 보며 자신감이 생겼어요. 머릿결의 얇아지던 부분이 채워지고 탄력이 돌아오는 걸 느낄 수 있었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-MySecretRecipeforLusciousLocksDIYHairGrowthOilThatRescuedMyHair_11.png)
 
@@ -138,7 +253,18 @@ link: "https://medium.com/@simsonsamara95/my-secret-recipe-for-luscious-locks-di
 
 친구들, 때로 가장 효과적인 해법은 자연과 간단함에서 찾을 수 있어요. 이 레시피가 여러분 모발의 구원의 수단이 되기를 바라고 있어요. 모발 탈모와 작별 인사를 하며 멋지고 번성하는 머릿결 시대를 환영해봐요! 🌟💆‍♀️
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요,
 

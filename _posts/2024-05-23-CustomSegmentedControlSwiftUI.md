@@ -18,7 +18,18 @@ link: "https://medium.com/kocsistem/custom-segmented-control-swiftui-3d785d1b530
 
 애플 사전적 정의에 따르면 Segmented Control은 두 개 이상의 세그먼트로 구성된 일련의 요소로, 각각 버튼의 역할을 합니다. Segmented Control 내에서 모든 세그먼트는 일반적으로 동일한 너비를 갖고 있습니다. 버튼과 같이 세그먼트에는 텍스트나 이미지가 포함될 수 있습니다. 세그먼트 아래에 텍스트 레이블을 가질 수도 있습니다(또는 제어 전체 아래에). Segmented Control은 단일 선택 또는 다중 선택을 제공할 수 있습니다. (1).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SwiftUI 라이브러리에서는 Segmented, UIKit 프레임워크에서는 UISegmentedControl라고 해요.
 
@@ -28,7 +39,18 @@ SwiftUI 라이브러리에서는 Segmented, UIKit 프레임워크에서는 UISeg
 
 이번에는 두 개의 요소로 구성된 세그먼트 컨트롤을 디자인하겠습니다. 이를 위해 0과 1로 구성된 enum 타입으로 관리할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // 0 : 카메라
@@ -78,7 +100,18 @@ struct CustomSegmentedControl: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Custom Segmented Control 클래스는 두 개의 매개변수를 사용합니다. 첫 번째 매개변수는 현재 선택된 아이템을 나타내고, 두 번째 매개변수는 아이템 배열 문자열로 사용됩니다. 이 배열은 상수로 정의할 수 있습니다.
 
@@ -88,7 +121,18 @@ Custom Segmented Control 클래스는 두 개의 매개변수를 사용합니다
 
 제스처와 함께 작동하는 작은 애니메이션이 있는 코드가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 VStack{
@@ -103,7 +147,17 @@ VStack{
 
 다음 글에서 이 세그먼트 컨트롤과 피커를 함께 사용할 예정이에요. ❤️‍🔥
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 자료들

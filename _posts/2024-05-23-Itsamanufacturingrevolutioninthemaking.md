@@ -3,13 +3,12 @@ title: "조리중인 제조 혁명입니다"
 description: ""
 coverImage: "/assets/img/2024-05-23-Itsamanufacturingrevolutioninthemaking_0.png"
 date: 2024-05-23 16:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Itsamanufacturingrevolutioninthemaking_0.png
 tag: Tech
 originalTitle: "It’s a manufacturing revolution in the making"
 link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-making-ab7e38f6384a"
 ---
-
 
 3D 프린팅은 예술과 산업을 새롭고 미래 지향적인 차원으로 안내하고 있는데, Simon Brooke가 보도한 대로입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-m
 
 패션과 주얼리 디자이너인 마이클 슈미트는 매돈나와 레이디 가가를 위해 세련되면서 도발적인 의류와 액세서리를 만들어낸 것으로 알려져 있는데, 이번에는 디타 폰 디즈를 위해 이 3D 프린팅된 드레스를 제작했습니다. 슈미트는 이렇게 말합니다: "디자이너의 작품은 그들이 사용할 수 있는 도구와 재료에 제약되어 있습니다. 3D 프린팅은 이러한 한계를 많이 없애 줌으로써 상상력에 강제로 부과된 장벽을 제거해 줍니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3D 프린팅 및 관련 기술인 "팹 랩"의 세계에 오신 것을 환영합니다. 이 빠르게 성장하고 있는 새로운 기술에서, 컴퓨터로 뭔가를 디자인하고 "인쇄" 버튼을 누르는 것이 가능해집니다. 가까운 미래에는 구매한 물건에도 똑같은 일을 할 수 있을 것입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-m
 
 올해 초 미국 대통령 오바마는 "3D 프린팅은 거의 모든 것을 제작하는 방식을 혁신할 잠재력이 있습니다"라고 언급했습니다. 에코노미스트 매거진은 최근 이를 인쇄 프레스, 증기 기관 및 트랜지스터의 등장에 비교했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 유명한 비유는 다소 과장되어 보일 수 있지만, 이 새로운 기술은 확실히 운송 및 물류의 필요성을 없애주어 제조업체, 소매업체 및 유통업체에게 더 싸고 더 친환경적인 솔루션을 제공합니다. 전 세계에서 물체를 이동시키는 것이 어려운 지역들, 운송망의 부족이나 무법 상태로 인해 위험한 지역에도 매우 긍정적인 영향을 미칩니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-m
 
 예를 들어, 네덜란드의 건축가인 Janjaap Ruijssenaars가 세계 최초의 3D 프린팅 주택을 공개했습니다. 그의 Landscape House는 연속적인 루핑 뫼비우스 띠 형태를 띠고 있습니다. 그러나 그 복잡한 디자인은 강화된 콘크리트로 만들어지는 것이 아니라 인쇄된 모래로 만들어졌습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3dprintuk은 영국 남부 해안인 브라이튼에 본사를 둔 소규모 기업으로, 새로운 기술을 활용하고 성장하는 수요를 충족하기 위해 생겨난 기업 중 하나입니다. 창립자 닉 앨런은 고객과 프로젝트가 매우 다양하다고 말합니다. 한 번에 3dprintuk에게 현실에서 사용되는 자동차의 합금 바퀴를 모조품으로 만들어 주는 작업을 의뢰받기도 했습니다. 고객은 바퀴 사진과 치수를 보내 주었고, 앨런은 그것을 간단히 "출력"했습니다.
 
@@ -47,7 +79,18 @@ link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-m
 
 우승자인 Washington Open Object Fabricators(WOOF)는 이 프로젝트를 실현하기 위한 지원금으로 10만 달러를 받았습니다. WOOF의 발명품은 폐플라스틱을 3D 프린팅 기계용 필라멘트로 사용하여 새로운 제품을 만들 수 있게 합니다. 그들의 우승 결과 이제 미국 기반 NGO인 Water for Humans와 협력하여 멕시코 와하카의 물과 위생 문제를 해결하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 “우리의 아이디어는 지속 가능한 과정을 활용하여 다른 사람들이 당연하게 여길 수 있는 중요한 시설에 접근할 수 있도록 함으로써 개발도상국 사람들의 삶을 장기적으로 개선하는 데 관한 것입니다,” 라고 WOOF의 베사니 위크스가 말했다.
 
@@ -57,7 +100,18 @@ link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-m
 
 그러나 디자인과 장인 제조의 전통을 갖춘 이탈리아는 또 다른 번창하는 시장이며, 회사는 영국도 몇 년 안에 미국 이외의 제품 수요가 가장 커질 것으로 믿습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 " 3D 프린팅을 통한 제조에 대한 기점에 다다르고 있다고 Arcam의 지역 영업 매니저인 라스 리베르그가 말했습니다. "지난 세 년 동안 전 세계 제조업체로부터 수요가 증가했습니다." 프로토 타입의 제조 과정을 가속화 할 수 있는 능력이 상당히 주목할 만합니다. "혜택은 새로운 디자인 반복본을 쉽게 만들 수 있다는 것입니다. 예를 들어, 티타늄으로 프로토 타입 모델을 주조하려는 경우 5~7개월이 소요될 수 있습니다. 그런 다음, 마침내 확인했을 때 몇 가지 변경을 해야 한다는 것을 깨닫게 되면 전체 과정이 다시 시작됩니다. 그러나 3D 프린팅을 사용하면 몇 밤 동안에 걸쳐 프로토 타입을 만들 수 있습니다."
 
@@ -67,7 +121,18 @@ link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-m
 
 모바일 인터넷 기술은 불가피하게 3D 프린팅 제품에 대한 수요를 증가시키는 데 기여하고 있습니다. 런던의 스타트업인 MakieLab은 Makies Doll Factory라는 iPad 앱을 출시했습니다. 회사는 3D Studio Max와 같은 게임 기술을 활용하여 물체를 만들고, 내부 작동 관절이 있는 3D 프린터로 출력할 수 있는 완벽한 3D 프린트 장난감으로 개발했습니다. 공동 창업자이자 최고 경영자인 앨리스 테일러에 따르면, 이 소프트웨어 제조 플랫폼은 인형으로 시작했지만 쉽게 다른 제품 범위에 활용할 수 있다고 합니다. 그녀는 수요와 기술 모두가 있다고 믿습니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱이 출시된 지 두 달 만에 4,500개의 인형이 만들어졌으며 작년 여름에는 초기 투자자들로부터 140만 달러를 조달했습니다. 이 기술이 상업적으로 중요한 응용 가능성을 가지고 있음을 입증하는 사례입니다.
 
@@ -77,7 +142,18 @@ link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-m
 
 또한 음악, 영화 및 텍스트와 마찬가지로 기술 중심의 민주화는 수백만 명의 무료 음악 Napster 팬들이 발견한 것처럼 긍정적인 면이 있지만, 지적 재산권에 대한 영향은 심각할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "많은 회사들이 긴급하게 고려해야 할 문제입니다,"라고 지적한 것은 지적 재산 변호사인 윌리엄 데이비스씨입니다. "기술이 발전함에 따라 전 세계 많은 사람들이 잘 알려진, 원하는 제품들의 계획과 도면에 접근하여 지불 없이도 제품을 만들 수 있게 될 것입니다." 대형 음반사들이 파일 공유를 막으려는 무익한 노력을 언급하며 그는 주장합니다.
 
@@ -87,17 +163,39 @@ link: "https://medium.com/@punchinterior/its-a-manufacturing-revolution-in-the-m
 
 현재, 동아시아에서 위조품 적발 및 가짜 제품 압류로 인해 당국들은 이전보다 바쁘게 활동하고 있지만, 누구나 집에서 자신만의 버전을 만들 수 있는 시대가 올 때 어떤 일이 벌어질까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 얼마나 흥미로우며 혁명적이든, 3D 프린팅은 제조 기술의 새 장을 한 부분입니다. 닐 거셴펠드 교수는 매사추세츠 공과대학교 비츠 앤 애톰 센터의 소장입니다. 그의 연구소는 분자 양자 컴퓨터부터 뛰어난 음악 악기까지 디지털과 물리 세계 사이의 경계를 허무는 작업을 수행하고 있습니다. 그의 연구소에서 개발한 기술은 뉴욕 현대미술박물관, 미국 백악관, 세계경제포럼 등 여러 곳에서 사용되었습니다.
 
 앱이 출시된 지 단 두 날 만에 약 4,500개의 인형이 만들어졌습니다.
 
-그는 3D 프린팅에 대한 논의를 1950년대 전자레인지에 대한 논평과 비교합니다. “전자레인지는 어떤 면에서 유용하지만, 주방의 나머지를 대체하지는 않았습니다,” 그는 말합니다. 거셴펠드는 팹 랩이라 불리는 곳들이 성장하면서, 물체가 컴퓨터에서 직접 제작될 수 있는 시대가 오고 있다고 믿습니다. 
+그는 3D 프린팅에 대한 논의를 1950년대 전자레인지에 대한 논평과 비교합니다. “전자레인지는 어떤 면에서 유용하지만, 주방의 나머지를 대체하지는 않았습니다,” 그는 말합니다. 거셴펠드는 팹 랩이라 불리는 곳들이 성장하면서, 물체가 컴퓨터에서 직접 제작될 수 있는 시대가 오고 있다고 믿습니다.
 
 “컴퓨터 프로그램은 그물걸레 뿐만 아니라, 그물걸레 자체가 됩니다,” 그는 말합니다. 이 변화는 데이터를 물건으로 직접 만들어내는 것, 일반적인 연구와 프로토타입 설계, 제조 과정을 거치지 않고, 디지털 제조로 바꾸고 있습니다. “우리는 재료의 성장을 프로그래밍할 수 있어 코드가 재료를 단순히 설명하는 것뿐만 아니라, 재료 자체가 되게 할 수 있습니다.”
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그는 항공우주 분야에서 예를 인용하며 말했다. 연결된 탄소 섬유는 "십억 달러짜리 공장"이 필요하지 않고, 대신 필요한 섬유를 복합 구조물로 돌려주는 컴퓨터에서 나올 수 있다고 합니다. 그리고 그 구조물은 수명 주기가 끝나면 완전히 복구 가능합니다.
 

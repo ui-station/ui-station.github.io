@@ -3,14 +3,12 @@ title: "로라란 무엇인가 기본 이해"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhatisLoRaThefundamentals_0.png"
 date: 2024-05-20 19:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WhatisLoRaThefundamentals_0.png
 tag: Tech
 originalTitle: "What is LoRa: The fundamentals"
 link: "https://medium.com/@prajzler/what-is-lora-the-fundamentals-79a5bb3e6dec"
 ---
-
-
 
 ![LoRa Image](/assets/img/2024-05-20-WhatisLoRaThefundamentals_0.png)
 
@@ -20,8 +18,18 @@ Sorry AWS, but no. LoRa has nothing to do with audio frequencies. There are chir
 
 More importantly, LoRa is not a protocol. At least not if you want to talk about it with a radio engineer.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 나는 왜 혼동이 많은지 이해합니다. LoRa를 처음 살펴볼 때 LoRaWAN과 LoRa 사이의 구분과 네트워크 스택을 통해 어떻게 나누어지는지 혼란스러울 수 있습니다.
 
@@ -31,7 +39,18 @@ More importantly, LoRa is not a protocol. At least not if you want to talk about
 
 하지만 진지한 톤으로 돌아가서 더 깊게 파고들기 전에, 왜 날 듣는 게 중요할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # LoRa와 함께 떠나는 여정
 
@@ -41,7 +60,18 @@ Semtech와 IBM Research가 LoRaWAN에 대해 협업하기 시작한 때, Cycleo�
 
 그 당시에는 The Things Network이 등장하기도 전, Chirpstack이 만들어지기도 전이었습니다. 심지어 SX1301도 존재하지 않았는데요 — 우리는 FPGA를 사용해야 했습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2015년에 네트워크 운영자를 위한 LoRaWAN 소프트웨어를 개발하기 위해 회사를 설립했어요.
 
@@ -51,7 +81,18 @@ Semtech와 IBM Research가 LoRaWAN에 대해 협업하기 시작한 때, Cycleo�
 
 # 지상 진실
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로라는 디지털 스프레드 스펙트럼 변조 중에서도 더 구체적으로 치르프 스프레드 스펙트럼 변조입니다.
 
@@ -61,7 +102,18 @@ Semtech와 IBM Research가 LoRaWAN에 대해 협업하기 시작한 때, Cycleo�
 
 21세기에는 모듈레이션을 특허 내기가 꽤 어려울 정도로 모듈레이션이 예로부터 존재해왔다는 사실에 놀라실 지도 모르겠네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 패턴트에서 설명한 대로 LoRa를 정확하게 정의하고 싶다면, LoRa는 칩 신호에 대한 변조기와 복조기를 포함하는 통신 시스템이라고 할 수 있어요.
 
@@ -71,7 +123,18 @@ Semtech와 IBM Research가 LoRaWAN에 대해 협업하기 시작한 때, Cycleo�
 
 어떤 방식을 선택하든, LoRa는 명확히 프로토콜이 아니에요. LoRa와 함께 사용할 프로토콜을 원한다면, LoRa의 물리 계층으로 LoRaWAN을 살펴보세요. LoRaWAN은 프로토콜이지만 LoRa는 아니에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 TL;DR을 찾으시면 여기까지 읽으시고 그만두셔도 돼요.
 자세한 내용을 찾으신다면 계속 읽어주세요.
@@ -82,7 +145,18 @@ LoRa 이전에도 체프 변조는 있었습니다. 하지만 프랑수아, 니�
 
 그렇다면, 체프 변조란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 변조 기술에 대해 들어본 적이 있을 수 있습니다. 예를 들어 AM 또는 FM이 있습니다. AM은 진폭 변조, FM은 주파수 변조를 의미합니다. 이러한 것들은 오래된 변조 방식인 아날로그 변조에 속합니다.
 
@@ -92,7 +166,18 @@ LoRa 이전에도 체프 변조는 있었습니다. 하지만 프랑수아, 니�
 
 그리고 소음 속에 숨어 있는 것이 LoRa와 같은 칩 변조가 뛰어난 점입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # LoRa 치르핑 — 자연에서 영감을 받은
 
@@ -102,7 +187,18 @@ LoRa 이전에도 체프 변조는 있었습니다. 하지만 프랑수아, 니�
 
 박쥐나 돌고래들은 치르프를 하지 않는다고 생각할 수도 있지만, 실제로 치르프를 합니다. 새들과 달리, 그들의 치르프는 인간에게는 감지할 수 없는 더 높은 주파수로 이루어져 있지만, 동일한 이유로 — 전파 범위와 다른 소음과의 구별을 위해.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 지저귀는 소리파도 특성이 라디오파로 잘 변환됩니다. 지저귀 변조의 장점은 신호를 완전히 소음에 잠겨 있을 때조차 해독할 수 있다는 것입니다. 이것이 LoRa가 가지는 초능력의 원천입니다.
 
@@ -112,8 +208,18 @@ LoRa 이전에도 체프 변조는 있었습니다. 하지만 프랑수아, 니�
 
 AM은 신호의 진폭을 일정한 주파수에서 변화시킴으로써 변조를 수행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-20-WhatisLoRaThefundamentals_1.png](/assets/img/2024-05-20-WhatisLoRaThefundamentals_1.png)
 
@@ -123,8 +229,18 @@ FM은 캐리어 주파수 위에 신호 주파수를 변조합니다. FM 라디�
 
 AM과 FM은 모두 아날로그 변조로, 오디오와 같은 아날로그 신호를 전달하기 위해 설계되었습니다. 우리는 아날로그가 아닌 디지털 변조인 칩 변조로 큰 도약을 해야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Chirp 변조는 전송하려는 데이터의 1과 0을 가져와 이를 여러 개의 chirp로 변환합니다. 이러한 chirp들은 고정 주파수 캐리어 신호 위에 하나씩 차례대로 전송됩니다.
 
@@ -134,7 +250,18 @@ Chirp 변조는 전송하려는 데이터의 1과 0을 가져와 이를 여러 �
 
 # LoRa 프레임 속의 Chirp
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 유효한 LoRa 프레임을 생성하려면 단순히 하나의 치르프를 생성하는 것 이상의 작업이 필요합니다. 여러 치르프가 LoRa 라디오가 복조(modulate)할 수 있는 프레임으로 조립되는 특정 방법이 있습니다. 아래 프레임 그림을 참조해주세요.
 
@@ -144,7 +271,18 @@ Chirp 변조는 전송하려는 데이터의 1과 0을 가져와 이를 여러 �
 
 LoRa 프레임에는 세 그룹의 치르프가 있습니다. Preamble, sync word, 그리고 data가 있습니다. 각 그룹은 LoRa 프레임에서 다른 역할을 합니다. 또한 프레임의 각 부분은 서로 다른 유형의 치르프를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전문 부분과 동기 워드는 수신기의 "주의"를 끌기 위해 간단한 위아래 칠러프(chirping)를 사용합니다. 목표는 전문 부분과 동기 워드를 쉽게 감지할 수 있게 하는 것입니다. 많은 정보를 나르기 위해 필요한 것은 아닙니다. 노이즈 바닥에 대비하기 쉽고 고정밀도로 복조할 수 있게 만들어야 합니다.
 
@@ -154,7 +292,18 @@ LoRa 프레임에는 세 그룹의 치르프가 있습니다. Preamble, sync wor
 
 # 실제 세계에서 LoRa 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LoRa 라디오를 사용하기 시작하면 주파수 대역폭, 확산 요인 및 부호화 속도와 같은 구성 옵션에 주목하게 됩니다. 이러한 것들은 변조의 매개변수입니다. 이들이 신호가 생성되는 방식을 정의합니다.
 
@@ -164,7 +313,18 @@ LoRa 라디오를 사용하기 시작하면 주파수 대역폭, 확산 요인 �
 
 이론적으로는 LoRa와 함께 어떠한 대역폭도 사용할 수 있습니다. 그러나 실제로는 사용 가능한 주파수 스펙트럼, 스펙트럼 규제 및 송수신기의 물리적 한계로 항상 제한을 받게 됩니다. 이로 인해, 서브-GHz LoRa에서 일반적으로 사용되는 대역폭(채널 폭)은 125 kHz이며, 대부분의 칩은 250 kHz 및 500 kHz에서도 변조할 수 있으며 더 낮은 주파수에서도 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2.4 GHz에서 LoRa 칩은 최대 1.625 MHz의 대역폭을 처리할 수 있습니다.
 
@@ -175,7 +335,18 @@ LoRa 라디오를 사용하기 시작하면 주파수 대역폭, 확산 요인 �
 
 최종 데이터 전송률을 계산할 때는 스프레딩 팩터(spreading factor)와 코딩 비율(coding rate)이라는 두 가지 추가 요소를 고려하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # LoRa 확산 요소
 
@@ -185,7 +356,18 @@ LoRa 라디오를 사용하기 시작하면 주파수 대역폭, 확산 요인 �
 
 확산 요소가 높을수록 사용하는 스펙트럼이 많아지지만, 다른 쪽에서 신호를 해독하는 것이 더 쉬워집니다. 이는 LoRa 신호를 성공적으로 복조할 수 있는 범위를 늘리기 위해 확산 요소를 사용할 수 있다는 것을 의미합니다. 더 큰 안테나나 강력한 증폭기가 필요하지 않습니다. 이 모든 것은 구성으로 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 식 스펙트럼은 대역폭이 고정되어 있는 경우(LoRaWAN 네트워크 및 대부분의 LoRa 네트워크의 경우) 사용하는 확산 인자가 높을수록 데이터 전송률(심볼 전송률)이 낮아진다는 것을 의미합니다. 확산 인자가 높을수록 Time on Air(ToA)가 길어지며, 이는 전송 시간이 길어진다는 것을 의미합니다.
 
@@ -195,7 +377,18 @@ LoRa 라디오를 사용하기 시작하면 주파수 대역폭, 확산 요인 �
 
 원래 LoRa 칩은 SF7부터 SF12까지의 확산 인자 범위를 가졌지만, 현대 칩에 탑재된 현대 모듈레이터는 SF5부터 SF12까지 범위를 가지고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 정의된 대역폭과 확산 계수로부터 정확한 심볼 속도를 계산해야 할 때 다음 공식을 사용할 수 있어요:
 
@@ -205,7 +398,18 @@ LoRa 라디오를 사용하기 시작하면 주파수 대역폭, 확산 요인 �
 
 경험적 법칙: 확산 계수를 1 증가시키면 심볼 속도가 절반으로 줄어들어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 125 kHz 대역폭에서 심볼 속도를 확인하는 데 사용할 수 있는 표입니다. 심볼 속도는 데이터 속도와 동일하지 않음을 유의하세요. 심볼 속도를 데이터 속도로 변환하는 방법을 알아보려면 계속 읽어보세요.
 
@@ -229,7 +433,18 @@ SF12를 넘어가지 않는 이유는 무엇일까요? SF13, SF14? 그 이유는
 
 확산 계수 TL;DR:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 스프레딩 팩터가 높을수록 데이터 전송 속도가 낮아집니다.
 - 스프레딩 팩터가 높을수록 전파 범위가 더 멀어집니다.
@@ -244,7 +459,18 @@ SF12를 넘어가지 않는 이유는 무엇일까요? SF13, SF14? 그 이유는
 
 LoRa 커뮤니티나 LoRaWAN 표준에서 코딩률에 대한 논의는 거의 없습니다. 이는 대부분 LoRaWAN 표준에서 코딩률을 4/5로 고정하기 때문일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코딩 속도는 무엇인가요? 두 숫자는 무엇을 나타내나요? 디지털 변조에서 코딩 속도는 오류 수정 코드의 효율성을 정의합니다. 칩 모듈레이션과 LoRa도 마찬가지입니다.
 
@@ -254,7 +480,18 @@ LoRa 커뮤니티나 LoRaWAN 표준에서 코딩률에 대한 논의는 거의 �
 
 만약 두 숫자가 동일하다면 오류 수정이 이루어지지 않습니다. 이것은 옵션이지만 LoRa와 함께 일반적으로 사용되지는 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코딩 속도와 오류 정정 코드는 수학적으로 약간의 마법 같아요. 메시지에 여분의 비트를 추가하는데, 이러한 비트는 수신자가 데모듈레이션 오류를 복구하는 데 사용할 수 있어요. 중요한 오류가 아닌 한요. 오류가 중요하거나 남은 비트가 너무 적다면, 오류가 발생했는지 여부만 알 수도 있어요.
 
@@ -264,8 +501,18 @@ LoRa 커뮤니티나 LoRaWAN 표준에서 코딩률에 대한 논의는 거의 �
 
 125kHz 대역폭으로, 이러한 것들은 4/5 코딩률로 달성할 수 있는 데이터 속도의 내림된 값들이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 | Spreading factor | Bandwidth | Symbol rate | Coding rate | Data rate |
 | ---------------- | --------- | ----------- | ----------- | --------- |
@@ -281,7 +528,6 @@ LoRa 커뮤니티나 LoRaWAN 표준에서 코딩률에 대한 논의는 거의 �
 | 13               | 125000    | 15          | 4/5         | 156       |
 | 14               | 125000    | 7           | 4/5         | 78        |
 
-
 코딩 비율 TL;DR:
 
 - 중복 비트 수가 많을수록 실질 데이터 전송 속도가 낮아짐
@@ -291,8 +537,18 @@ LoRa 커뮤니티나 LoRaWAN 표준에서 코딩률에 대한 논의는 거의 �
 
 중복 비트 수가 얼마나 많은 오류를 탐지하거나 복구할 수 있는지에 대한 구체적인 수학적 세부 사항은 이 글의 범위를 벗어납니다. 아마도 나중에 다룰 수 있을 것 같습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 왜 LoRa가 유용한가요?
 
@@ -302,7 +558,18 @@ LoRa는 고대역폭을 위해 설계된 것이 아니며, 결코 최상의 선�
 
 하지만, LoRa는 범위와 데이터 속도 사이에 타협이 필요한 경우에 서브-기가헤르츠 무료 주파수 대역에서 훌륭한 선택지입니다. Wi-Fi와 비슷하지만 훨씬 더 긴 범위와 훨씬 낮은 데이터 속도를 제공합니다. Wi-Fi와 달리, LoRa 상에서 실행할 MAC 계층을 선택해야 합니다. LoRaWAN일 수도 있고 아닐 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로라는 무선 링크의 물리 계층을 조정할 수 있는 다양한 매개변수를 제공하여 범위, 데이터 속도, 신뢰성 및 배터리 사용에 대한 특정 요구 사항에 맞게 설정할 수 있습니다.
 

@@ -3,13 +3,12 @@ title: "제목 v058 몬아크의 심볼 검색 기능으로 글쓰기 역량 향
 description: ""
 coverImage: "/assets/img/2024-05-17-v058EnhanceyourwritingwithSymbolSearchinMonarch_0.png"
 date: 2024-05-17 18:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-v058EnhanceyourwritingwithSymbolSearchinMonarch_0.png
 tag: Tech
 originalTitle: "v0.5.8: Enhance your writing with Symbol Search in Monarch"
 link: "https://medium.com/monarch-launcher/v0-5-8-enhance-your-writing-with-symbol-search-in-monarch-44cedf453532"
 ---
-
 
 <img src="/assets/img/2024-05-17-v058EnhanceyourwritingwithSymbolSearchinMonarch_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/monarch-launcher/v0-5-8-enhance-your-writing-with-symb
 
 이제 Monarch로 그럴 필요가 없습니다! 앱을 열고 이모지를 찾을 때와 같이 탐색을 시작할 수 있습니다. 가장 좋은 점은 특정 기호를 찾기 어렵거나 그들을 위한 시스템 이름을 기억하는 데 어려움을 겪는다면... 더는 그럴 필요가 없다는 것입니다! 이모지처럼 Monarch는 ⌘+E를 사용하여 기호의 이름을 원하는 대로 바꿀 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 메시지에서는 심볼을 사용하지는 않지만, 종종 심볼이 메시지를 더 잘 전달하거나 간결하게 표현할 때, 또는 설명서를 작성할 때 전문적으로 제시해주기도 합니다.
 

@@ -3,13 +3,12 @@ title: "안드로이드에서 네트워크 호출 Retrofit을 이용한 비동�
 description: ""
 coverImage: "/assets/img/2024-05-20-NetworkCallsinAndroidAsynchronousProgrammingwithRetrofit_0.png"
 date: 2024-05-20 15:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-NetworkCallsinAndroidAsynchronousProgrammingwithRetrofit_0.png
 tag: Tech
 originalTitle: "Network Calls in Android: Asynchronous Programming with Retrofit"
 link: "https://medium.com/@paramjeet.singh0199/network-calls-in-android-asynchronous-programming-with-retrofit-b1312ff664df"
 ---
-
 
 <img src="/assets/img/2024-05-20-NetworkCallsinAndroidAsynchronousProgrammingwithRetrofit_0.png" />
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@paramjeet.singh0199/network-calls-in-android-asynchro
 
 동기 호출의 문제점을 상상해보세요. 만약 앱이 서버에서 사용자 데이터를 다운로드해야 한다면, 개발자는 전통적인 동기 방식을 사용할 수 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 문자열 userData = downloadUserDataSync();
@@ -31,7 +41,18 @@ link: "https://medium.com/@paramjeet.singh0199/network-calls-in-android-asynchro
 
 비동기 프로그래밍을 통해 앱이 네트워크 응답을 기다리는 동안에도 계속 실행할 수 있습니다. 핵심 아이디어는 백그라운드에서 네트워크 호출을 시작하고 응답이 준비되었을 때 알림을 받는 것입니다. 이렇게 하면 주 스레드가 사용 가능해져 사용자의 상호작용에 민첩하게 대응할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레트로핏을 위한 구조체
 
@@ -44,7 +65,18 @@ link: "https://medium.com/@paramjeet.singh0199/network-calls-in-android-asynchro
 - 비동기 요청: 원활한 사용자 경험을 위해 필수적인 비동기 네트워크 호출을 지원합니다.
 - 통합: OkHttp, RxJava, Gson과 같은 다른 라이브러리와 원활하게 작동합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Retrofit 설정하기
 
@@ -59,7 +91,18 @@ link: "https://medium.com/@paramjeet.singh0199/network-calls-in-android-asynchro
 
 # API 인터페이스 정의하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Retrofit을 사용하려면 API의 엔드포인트를 Java 인터페이스로 정의해야 합니다. 사용자 목록을 제공하는 간단한 API와 작업 중이라고 가정해봅시다.
 
@@ -76,7 +119,18 @@ public interface ApiService {
 
 # Retrofit 인스턴스 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로 Retrofit의 인스턴스를 만들어보겠습니다. 보통은 애플리케이션에서 한 번만 이 작업을 수행하며 대부분 싱글톤 패턴으로 처리됩니다.
 
@@ -101,7 +155,18 @@ public class ApiClient {
 
 # 비동기 네트워크 호출하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Retrofit을 설정하면 이제 비동기 네트워크 호출을 할 수 있습니다. 사용자 목록을 가져오고 응답을 처리하는 방법은 다음과 같습니다:
 
@@ -147,7 +212,18 @@ public class MainActivity extends AppCompatActivity {
 
 # 다양한 응답 유형 처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레트로핏은 일반 텍스트, JSON 및 사용자 정의 타입을 포함한 다양한 유형의 응답을 지원합니다. 예를 들어, API가 추가 메타데이터를 포함한 JSON 객체를 반환하는 경우 사용자 정의 응답 유형을 정의할 수 있습니다:
 
@@ -170,7 +246,18 @@ public interface ApiService {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 액티비티나 프래그먼트에서 응답을 처리해보세요:
 
@@ -202,7 +289,18 @@ call.enqueue(new Callback<ApiResponse<List<User>>>() {
 
 네트워크 요청에 대한 더 많은 제어를 위해 OkHttp를 사용하여 인터셉터를 추가할 수 있습니다. 인터셉터는 요청 및 응답을 수정하고 세부 정보를 기록하며 인증을 처리할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 OkHttp 종속성을 추가해주세요:
 
@@ -227,7 +325,18 @@ Retrofit retrofit = new Retrofit.Builder()
         .build();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 설정을 통해 모든 네트워크 요청과 응답이 로깅되어 문제를 디버그하기가 더 쉬워집니다.
 

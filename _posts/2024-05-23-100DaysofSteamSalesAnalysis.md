@@ -18,7 +18,18 @@ link: "https://medium.com/@simon.nordon/100-days-of-steam-sales-analysis-aa28a18
 
 우리는 용감한 건지, 그냥 바보인 건지요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 질문을 해결하고 동료 개발자들에게 희망을 줄 수 있기를 바라며, 2023년 1월 1일부터 스팀에서 출시된 게임 100일을 살펴보고 판매 성적을 분석하여 모두가 꿈을 이루는 확률을 알아보았습니다.
 
@@ -28,19 +39,39 @@ link: "https://medium.com/@simon.nordon/100-days-of-steam-sales-analysis-aa28a18
 
 스팀 수수료를 고려한 평균 매출은 228,723달러(미국 달러)였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 처음에는 좋아 보일 수 있지만, 스팀 세일은 공격적인 파레토 분포를 따릅니다. 이는 일반적으로 '80:20' 규칙으로 알려진데, 입력의 20%가 결과의 80%를 만든다는 의미입니다.
 
 스팀 세일은 조금 더 극단적입니다:
 
-
 ![Steam Sales Analysis](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_0.png)
-
 
 중앙값 수익, 즉 평균 게임이 벌어들인 금액에 더 관심이 있습니다. 이를 시각화하기 쉽게 만들기 위해 10만 달러 이상 벌어든 모든 게임을 제거해 보겣습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_1.png)
 
@@ -50,7 +81,18 @@ link: "https://medium.com/@simon.nordon/100-days-of-steam-sales-analysis-aa28a18
 
 게임 중 1개당 $100,000 이상을 벌어들인 게임은 12개 중 1개이며, 주당 17개의 성공적인 게임을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 당신의 게임이 상위 8%에 들면 생계를 유지할 수 있어요. 상위 2%에 들면 거액의 수익을 올릴 수 있어요.
 
@@ -60,7 +102,18 @@ link: "https://medium.com/@simon.nordon/100-days-of-steam-sales-analysis-aa28a18
 
 **방법**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하기 위해 파이썬을 사용했습니다. 나쁜 항목을 제거하고 JSON 구조를 단순화 한 후 CSV로 변환하여 다음과 같이 구글 스프레드 시트로 가져왔습니다:
 
@@ -70,7 +123,18 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 
 스팀 API에서 얻을 수 없는 유일한 측정 항목은 수익이었습니다. 그러나 스팀 게임이 소유자 대 리뷰 비율이 30 대 1로 매우 잘 알려져 있으며 이는 모든 게임에 90%의 상관 관계를 가지고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소스: https://vginsights.com/insights/article/further-analysis-into-steam-reviews-to-sales-ratio-how-to-estimate-video-game-sales
 
@@ -80,7 +144,18 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 
 장르, 콘텐츠 등급 및 VR 지원과 같은 기능과 같은 요인별 중앙값 매출을 분석해 봅시다. 먼저 장르부터 시작합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_3.png" />
 
@@ -90,7 +165,18 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 
 <img src="/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파레토 분포에 관한 보편적인 사실 중 하나는 그의 공격적인 정도가 데이터 세트의 크기와 비례한다는 것입니다. 다시 말해, 경쟁이 더 많은 시장에서는 불평등이 더 많이 나타납니다.
 
@@ -100,8 +186,18 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 
 마지막으로 콘텐츠 등급을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_5.png)
 
@@ -111,8 +207,18 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 
 ![image](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2023년 1월 1일을 선택한 이유는 데이터를 최근 것으로 유지하면서도 게임이 수익을 얻을 수 있는 충분한 시간을 주기 위해서예요.
 
@@ -122,7 +228,18 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 
 ![그림](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 게임 제목을 'y'로 시작하게 하면 'v'로 시작하는 것보다 수익이 15배 많아진다는 정말인가요?
 
@@ -132,7 +249,18 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 
 # 질적 데이터
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 확실히 첫 번째로 스팀 세일을 분석하려는 사람은 아니에요. 이미 그에 관한 전체 웹사이트들이 있어요. 이 연구를 시작한 후에야 알게 된 사실이에요:
 
@@ -144,7 +272,18 @@ Steams API를 사용하여 100일 간의 게임 출시를 가져 와 파싱하�
 - 대부분의 개발자에게 이룰 수 있는 것처럼 보이는 성공한 게임들.
 - 실패한 게임(또는 숨겨진 보석). 실패했지만, 더 나은 성과를 이루었을지도 모르는 게임들.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 놀랍게 성공한
 
@@ -154,7 +293,18 @@ Pizza Tower ($20,033,360):
 
 Pizzas Tower는 GameMaker로 만든 '잘 못 그린' 예술이 특징인 2D 플랫포머 게임입니다. 이런 상황에도 불구하고 Pizza Tower는 풍자, 주제, 혁신을 적절히 조합하여 성공을 거두었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2D 플랫포머는 가장 경쟁력이 있고 매출 성적이 가장 낮은 장르 중 하나입니다. Pizza Tower는 모든 규칙을 깨고 어떤 꿈의 게임이든 가능함을 보여줍니다.
 
@@ -164,7 +314,18 @@ Pizzas Tower는 GameMaker로 만든 '잘 못 그린' 예술이 특징인 2D 플�
 
 Into the Flames ($406,627)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_9.png" />
 
@@ -174,7 +335,18 @@ Into the Flames는 활발히 개발 중인 소방 시뮬레이션 게임으로, 
 
 제 꿈의 세팅($255,085)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ~~<img src="/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_10.png" />~~
 
@@ -184,7 +356,18 @@ Into the Flames는 활발히 개발 중인 소방 시뮬레이션 게임으로, 
 
 이는 모든 게이머가 익숙한 주제를 다루고 있으며, $5의 가격표로 쉽게 구매할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Beton Brutal ($117,945)
 
@@ -194,7 +377,18 @@ Another game from a solo developer. A single player parkour game with some beaut
 
 Finding success with any of the above games would, at the very least, fund your solo development endeavors for years to come.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 실패한 게임 (숨은 보물들)
 
@@ -204,7 +398,18 @@ Finding success with any of the above games would, at the very least, fund your 
 
 A Rum Tale ($63)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_12.png)
 
@@ -214,7 +419,18 @@ A Rum Tale ($63)
 
 그래픽이 탁 트이고 체적 안개 기능까지 갖추고 있는데, 이 정도면 좀 더 많은 관심을 받았으면 하는데요. 소규모 팬덤도 없는 것이 놀랍네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 정보를 찾기 어려울 수 있습니다. 이는 마케팅 실패를 보여줄 수 있습니다.
 
@@ -224,7 +440,18 @@ A Rum Tale ($63)
 
 [링크](https://store.steampowered.com/app/1374230/Flame_Keeper/)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 귀엽고 테마가 매력적인 액션 로그 라이트 게임입니다. $9,000에 매력적인 요소를 보였지만, 개발자가 투자금을 회수했는지 의문스럽습니다.
 
@@ -234,7 +461,18 @@ A Rum Tale ($63)
 
 ![이미지](/assets/img/2024-05-23-100DaysofSteamSalesAnalysis_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://store.steampowered.com/app/2108410/Attack_on_King_Reloaded/
 
@@ -244,7 +482,18 @@ https://store.steampowered.com/app/2108410/Attack_on_King_Reloaded/
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 연구 결과를 기반으로, 이것은 나에게 그리고 다른 인디 개발자들에게 제안할 팁입니다.
 
@@ -254,7 +503,18 @@ https://store.steampowered.com/app/2108410/Attack_on_King_Reloaded/
 
 왜냐하면 이 세계는 승자가 모두를 가져가는 것이기 때문입니다. '괜찮은' 게임을 만들었다고해서 어떤 칭찬도 받을 수 없는 것이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임이 복잡해야 한다는 뜻은 아니에요. 간단한 게임도 충분하죠. 그저 꼭 필요한 것만 잘 갖추어 주면 돼요. 예를 들어, 예술, 상점 페이지, 음악, 시각 효과, 게임 플레이, 플레이어 경험 등이 선택한 장르에 맞게 최고 수준이어야 해요.
 
@@ -264,7 +524,18 @@ https://store.steampowered.com/app/2108410/Attack_on_King_Reloaded/
 
 만일 여러분의 게임 이미지가 플레이어들에게 좋은 추억을 떠올리게 하면서 동시에 새롭고 흥미로운 것을 제공한다면, 누르는 클릭을 유도하는 데 성공할 가능성이 높아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오늘날에도 '뱀파이어 생존자' 장르 중에서 새로운 게임들이 약간 다르고 조금 더 나은 점으로 성공을 거두고 있어요.
 
@@ -274,7 +545,18 @@ https://store.steampowered.com/app/2108410/Attack_on_King_Reloaded/
 
 매주 스팀에서는 매출이 100만 달러 이상이 될 4개의 게임이 출시되어요. 그것은 연간 200개 이상이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 200 명 중 한 명이 될 수 있다고 믿나요? 제가 그렇게 생각해요. 그게 아니었다면 이 글을 읽고 있지 않으셨을 거예요.
 

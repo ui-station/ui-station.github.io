@@ -3,13 +3,12 @@ title: "AI와 가정 자동화 편의성, 안전 및 에너지 효율 향상"
 description: ""
 coverImage: "/assets/img/2024-05-18-AIANDHOMEAUTOMATIONENHANCINGCONVENIENCESAFETYANDENERGYEFFICIENCY_0.png"
 date: 2024-05-18 18:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-AIANDHOMEAUTOMATIONENHANCINGCONVENIENCESAFETYANDENERGYEFFICIENCY_0.png
 tag: Tech
 originalTitle: "AI AND HOME AUTOMATION: ENHANCING CONVENIENCE, SAFETY, AND ENERGY EFFICIENCY"
 link: "https://medium.com/@koh.siag.lan/ai-and-home-automation-enhancing-convenience-safety-and-energy-efficiency-271242f9a4cf"
 ---
-
 
 ## AI-POWERED SMART HOMES: THE FUTURE OF LIVING IS HERE
 
@@ -19,7 +18,18 @@ In recent years, the integration of Artificial Intelligence (AI) with home autom
 
 Convenience: Simplifying Everyday Life
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 파워가 장착된 가정 자동화 시스템은 루틴 작업을 자동화하고 가정 기기를 원활하게 제어함으로써 우리의 삶을 더 편리하게 만들기 위해 설계되었습니다.
 
@@ -31,7 +41,18 @@ AI 시스템은 사용자의 선호도와 루틴을 학습하여 작업을 자�
 
 안전: 가정과 사랑하는 사람 보호
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI는 고급 모니터링, 실시간 경고 및 지능적인 분석을 통해 주거 보안을 강화합니다.
 
@@ -43,7 +64,18 @@ Ring 및 Nest 등의 AI 기반 보안 카메라는 움직임 감지, 얼굴 인�
 **지능형 도어벨**
 Ring Video Doorbell과 같은 AI가 장착된 스마트 도어벨은 주택 소유주가 스마트폰을 통해 원격으로 방문객을 보고 듣고 말할 수 있도록 합니다. 이 장치는 익숙한 얼굴을 인식하고, 생소한 사람이 문 앞에 있을 때 알려줄 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 응급 감지 시스템
 AI 기술을 활용한 연기 감지기와 누출 센서는 화재와 물 누수에 대한 조기 경보를 제공합니다. Nest Protect 연기 감지기와 같은 이 장치는 폰으로 경고를 보내고 화재나 수해로의 전파를 막기 위해 HVAC 시스템과 같은 연결된 장치를 자동으로 차단할 수 있습니다.
@@ -54,7 +86,18 @@ AI 기술을 활용한 연기 감지기와 누출 센서는 화재와 물 누수
 
 AI 기술을 활용한 스마트 홈 기술은 에너지 절약에 크게 기여하여 유틸리티 요금을 낮추고 탄소 발자국을 줄이는데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스마트 서모스탯
 AI 기술을 활용한 서모스탯은 당신의 일정과 선호도를 학습하여 에너지 소비를 줄이기 위해 난방 및 냉방을 최적화합니다. Ecobee SmartThermostat과 같은 장치는 센서와 AI 알고리즘을 사용하여 집에 없을 때 에너지를 낭비하지 않으면서 편안함을 유지합니다.
@@ -67,7 +110,18 @@ Philips Hue와 같은 스마트 조명 시스템은 낮과 밤, 인원 유무 �
 
 마무리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI를 활용한 가정 자동화 기술은 우리 집을 지능적이고 반응적인 환경으로 변화시키며 편의성을 향상시키고 안전성을 높이며 에너지 효율을 증진시키고 있습니다. 이러한 기술이 계속 발전함에 따라 스마트 홈의 미래는 더 큰 혁신을 약속하며, 우리의 삶을 더 편안하고 안전하며 지속 가능하게 만들어 줄 것입니다. AI를 가정 자동화에 적용함으로써 일상적인 작업을 단순화하는 뿐만 아니라 더 효율적이고 안전한 생활 공간을 조성하는 데 기여합니다.
 

@@ -3,13 +3,12 @@ title: "컨테이너 안에서 RStudio 실행하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-RunningRStudioInsideaContainer_0.png"
 date: 2024-05-18 16:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-RunningRStudioInsideaContainer_0.png
 tag: Tech
 originalTitle: "Running RStudio Inside a Container"
 link: "https://medium.com/towards-data-science/running-rstudio-inside-a-container-e9db5e809ff8"
 ---
-
 
 ## 로컬 RStudio 설정을 사용하여 컨테이너 내에 RStudio 서버를 설정하는 단계별 가이드
 
@@ -24,7 +23,18 @@ link: "https://medium.com/towards-data-science/running-rstudio-inside-a-containe
 
 도움이 되길 바라며, 시작해보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-RunningRStudioInsideaContainer_0.png" />
 
@@ -34,7 +44,18 @@ RStudio는 R 프로그래밍 언어를 위한 기본 IDE입니다. VScode와 같
 
 이 튜토리얼에서는 Docker Hub에서 사용 가능한 Rocker RStudio 이미지를 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 준비 사항
 
@@ -46,7 +67,18 @@ RStudio는 R 프로그래밍 언어를 위한 기본 IDE입니다. VScode와 같
 
 # Rocker로 시작하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The Rocker Project은 내장된 R 이미지의 주요 허브입니다. base-r, tidyverse, ML-verse, shiny, 지리적 공간 등과 같이 서로 다른 R 환경 설정이 제공됩니다. 물론 RStudio 서버 이미지도 포함되어 있습니다. 사용 가능한 모든 R 이미지 목록은 Rocker의 Docker Hub 페이지에서 확인할 수 있습니다.
 
@@ -56,7 +88,18 @@ The Rocker Project은 내장된 R 이미지의 주요 허브입니다. base-r, t
 
 이미지를 docker pull 명령으로 가져와 시작해보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 >docker pull rocker/rstudio                                                                                                                                            확인
@@ -85,7 +128,18 @@ rocker/rstudio  최신        7039fb162243   2일 전       1.94GB
 
 이제 Rocker Project에서 제안한 명령어를 사용하여 docker run 명령어로 컨테이너 내에서 RStudio를 시작해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커를 실행하고 RStudio 서버를 브라우저에서 열기 전에 위에서 사용한 실행 인수를 검토해보겠습니다:
@@ -98,7 +152,18 @@ rocker/rstudio  최신        7039fb162243   2일 전       1.94GB
 위 명령을 실행한 후, 로컬 호스트 8787번에서 RStudio 서버에 액세스할 수 있습니다 (예: http://localhost:8787). 이때 로그인 페이지가 나타나며, 여기서는 다음을 사용해야 합니다:
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 사용자 이름: rstudio
 - 비밀번호: yourpassword (run 명령에서 설정한 대로)
@@ -109,7 +174,18 @@ rocker/rstudio  최신        7039fb162243   2일 전       1.94GB
 
 # 이런! 일시적이네요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적으로 Docker 컨테이너는 일회성 모드에서 실행됩니다. 컨테이너에 생성하고 저장한 코드나 입력값은 컨테이너 실행 시간이 종료되면 손실됩니다. Docker를 개발 환경으로 사용하고 싶다면 이는 실용적이거나 유용하지 않습니다. 이 문제를 해결하기 위해 우리는 볼륨(v) 인수를 사용할 것이며, 이를 통해 로컬 폴더를 컨테이너 파일 시스템에 마운트할 수 있습니다.
 
@@ -124,7 +200,18 @@ docker run --rm -ti \
 
 이제 브라우저로 돌아가서 지역 호스트 주소인 http://localhost:8787을 사용하여 RStudio 서버를 다시 엽니다. RStudio 파일 섹션에는 마운트된 로컬 폴더에 있는 폴더나 파일을 볼 수 있을 것입니다. 제 경우, 튜토리얼 폴더를 마운트하겠습니다. 이 폴더에는 다음과 같은 폴더가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 .
@@ -151,7 +238,18 @@ docker run --rm -ti \
 
 이를 통해 컨테이너에서 실행 시 로컬 폴더로 읽고 쓸 수 있게 되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 로컬 RStudio 설정 복제하기
 
@@ -168,7 +266,18 @@ docker run --rm -ti \
     └── r.snippets
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너 내의 .config/rstudio 폴더도 /home/rstudio/ 아래에 있습니다. 따라서 다음 매핑을 사용할 것입니다:
 
@@ -182,7 +291,18 @@ $HOME/.config/rstudio:/home/rstudio/.config/rstudio
 $HOME/.Renviron:/home/rstudio/.Renviron
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 모두 함께 추가하고 컨테이너를 다시 시작해봅시다:
 
@@ -199,7 +319,18 @@ docker run --rm -ti \
 
 ![Running RStudio Inside a Container](/assets/img/2024-05-18-RunningRStudioInsideaContainer_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요약
 

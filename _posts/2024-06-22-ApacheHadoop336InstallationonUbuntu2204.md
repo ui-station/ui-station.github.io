@@ -3,13 +3,12 @@ title: "우분투 2204에서 Apache Hadoop 336 설치 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_0.png"
 date: 2024-06-22 22:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_0.png
 tag: Tech
 originalTitle: "Apache Hadoop 3.3.6 Installation on Ubuntu 22.04"
 link: "https://medium.com/@abhikdey06/apache-hadoop-3-3-6-installation-on-ubuntu-22-04-14516bceec85"
 ---
-
 
 빅 데이터의 계속 확장되는 세계에서는 대량의 정보를 효율적으로 관리하고 처리하는 것이 비즈니스와 조직에게 중요해지고 있습니다. 이 데이터 혁명의 선두에 서 있는 것이 하둡(Hadoop)입니다. 이 강력한 오픈 소스 프레임워크는 분산 데이터 저장 및 처리의 과제에 대응하기 위해 설계되었습니다. 하둡의 잠재력을 활용하여 데이터 프로젝트를 진행하고 싶지만 설치 과정이 어려워 두려워하지 마십시오! 이 포괄적인 안내서는 여러분이 Ubuntu 시스템에 Hadoop을 설치하는 필수 단계를 안내하여 데이터 분석의 무한한 가능성을 탐험할 수 있도록 도와줄 것입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@abhikdey06/apache-hadoop-3-3-6-installation-on-ubuntu
 
 기본 Ubuntu 저장소에는 Java 8과 Java 11이 모두 포함되어 있습니다. 저는 이 중 Java 8을 사용하고 있습니다. 다음 명령을 사용하여 Java를 설치하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 sudo apt update && sudo apt install openjdk-8-jdk
@@ -33,8 +43,18 @@ sudo apt update && sudo apt install openjdk-8-jdk
 java -version
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_0.png)
 
@@ -44,14 +64,24 @@ Hadoop을 위해 SSH (Secure Shell)를 설치하는 것은 매우 중요합니�
 
 ```js
 sudo apt install ssh
-``` 
+```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-# 단계 4: 하둡 사용자 만들기: 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-모든 하둡 구성 요소는 Apache 하둡을 위해 만든 사용자로 실행되며 해당 사용자는 하둡의 웹 인터페이스에 로그인하는 데도 사용됩니다. 
+# 단계 4: 하둡 사용자 만들기:
+
+모든 하둡 구성 요소는 Apache 하둡을 위해 만든 사용자로 실행되며 해당 사용자는 하둡의 웹 인터페이스에 로그인하는 데도 사용됩니다.
 
 다음 명령을 실행하여 사용자를 만들고 비밀번호를 설정하세요:
 
@@ -59,10 +89,20 @@ sudo apt install ssh
 sudo adduser hadoop
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식을 사용해서 표로 바꿔줄게요.
-
 
 ![이미지](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_1.png)
 
@@ -74,10 +114,21 @@ sudo adduser hadoop
 su - hadoop
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 6 : SSH 구성:
+
 이제 새로 만든 하둡 사용자의 비밀번호 없는 SSH 액세스를 구성해 보겠습니다. 파일을 저장하고 암호구 문을 입력하지 않아도 되게 합니다. 먼저 SSH 키페어를 생성합니다:
 
 ```js
@@ -86,20 +137,42 @@ ssh-keygen -t rsa
 
 ![이미지](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 7: 권한 설정:
 
 생성된 공개 키를 권한이 올바르도록 인가된 키 파일에 복사하고 설정하세요:
 
 ```js
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys   
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 chmod 640 ~/.ssh/authorized_keys
 ```
 
 # 단계 8: 로컬호스트로 SSH 연결하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ssh localhost
@@ -111,7 +184,18 @@ ssh localhost
 
 # 단계 9: 사용자 전환
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 Hadoop으로 전환해주세요.
 
@@ -123,7 +207,18 @@ su - hadoop
 
 - Hadoop 3.3.6 다운로드하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz
@@ -137,11 +232,20 @@ tar -xvzf hadoop-3.3.6.tar.gz
 
 - 추출된 폴더를 버전 정보를 제거하여 이름을 변경해주세요. 이 단계는 선택 사항입니다. 이름을 변경하지 않으려면 구성 경로를 조정해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 mv hadoop-3.3.6 hadoop
-
 
 ![Installation Guide](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_4.png)
 
@@ -151,7 +255,18 @@ mv hadoop-3.3.6 hadoop
 nano ~/.bashrc
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -170,7 +285,18 @@ export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 
 - 현재 환경에서 위의 구성을 로드합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 source ~/.bashrc
@@ -184,7 +310,18 @@ nano $HADOOP_HOME/etc/hadoop/hadoop-env.sh
 
 "export JAVA_HOME"을 검색하고 구성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
@@ -196,7 +333,18 @@ JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 
 - 먼저, 하둡 사용자 홈 디렉터리 내에서 namenode 및 datanode 디렉터리를 생성해야합니다. 다음 명령을 실행하여 두 디렉터리를 생성하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 cd 하둡/
@@ -210,7 +358,18 @@ mkdir -p ~/hadoopdata/hdfs/{namenode,datanode}
 
 - 다음으로 core-site.xml 파일을 편집하고 시스템 호스트 이름으로 업데이트하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 나노 $HADOOP_HOME/etc/hadoop/core-site.xml
@@ -220,16 +379,27 @@ mkdir -p ~/hadoopdata/hdfs/{namenode,datanode}
 
 ```js
 <configuration>
-    <property>
-        <name>fs.defaultFS</name>
-        <value>hdfs://localhost:9000</value>
-    </property>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:9000</value>
+  </property>
 </configuration>
 ```
 
 <img src="/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_8.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파일을 저장하고 닫으세요.
 
@@ -241,23 +411,34 @@ nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 
 - 다음과 같이 NameNode 및 DataNode 디렉토리 경로를 변경하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <구성>
-    <속성>
-        <이름>dfs.replication</이름>
-        <값>1</값>
-    </속성>
-    <속성>
-        <이름>dfs.namenode.name.dir</이름>
-        <값>file:///home/hadoop/hadoopdata/hdfs/namenode</값>
-    </속성>
-    <속성>
-        <이름>dfs.datanode.data.dir</이름>
-        <값>file:///home/hadoop/hadoopdata/hdfs/datanode</값>
-    </속성>
- </구성>
+  <속성>
+    <이름>dfs.replication</이름>
+    <값>1</값>
+  </속성>
+  <속성>
+    <이름>dfs.namenode.name.dir</이름>
+    <값>file:///home/hadoop/hadoopdata/hdfs/namenode</값>
+  </속성>
+  <속성>
+    <이름>dfs.datanode.data.dir</이름>
+    <값>file:///home/hadoop/hadoopdata/hdfs/datanode</값>
+  </속성>
+</구성>
 ```
 
 <img src="/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_9.png" />
@@ -268,24 +449,35 @@ nano $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 nano $HADOOP_HOME/etc/hadoop/mapred-site.xml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다음 변경 사항을 적용해주세요:
 
 ```js
 <configuration>
-   <property>
-      <name>yarn.app.mapreduce.am.env</name>
-      <value>HADOOP_MAPRED_HOME=$HADOOP_HOME/home/hadoop/hadoop/bin/hadoop</value>
-   </property>
-   <property>
-      <name>mapreduce.map.env</name>
-      <value>HADOOP_MAPRED_HOME=$HADOOP_HOME/home/hadoop/hadoop/bin/hadoop</value>
-   </property>
-   <property>
-      <name>mapreduce.reduce.env</name>
-      <value>HADOOP_MAPRED_HOME=$HADOOP_HOME/home/hadoop/hadoop/bin/hadoop</value>
-   </property>
+  <property>
+    <name>yarn.app.mapreduce.am.env</name>
+    <value>HADOOP_MAPRED_HOME=$HADOOP_HOME/home/hadoop/hadoop/bin/hadoop</value>
+  </property>
+  <property>
+    <name>mapreduce.map.env</name>
+    <value>HADOOP_MAPRED_HOME=$HADOOP_HOME/home/hadoop/hadoop/bin/hadoop</value>
+  </property>
+  <property>
+    <name>mapreduce.reduce.env</name>
+    <value>HADOOP_MAPRED_HOME=$HADOOP_HOME/home/hadoop/hadoop/bin/hadoop</value>
+  </property>
 </configuration>
 ```
 
@@ -293,7 +485,18 @@ nano $HADOOP_HOME/etc/hadoop/mapred-site.xml
 
 - 그런 다음, yarn-site.xml 파일을 편집하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 나노 $HADOOP_HOME/etc/hadoop/yarn-site.xml
@@ -303,16 +506,27 @@ nano $HADOOP_HOME/etc/hadoop/mapred-site.xml
 
 ```js
 <configuration>
-   <property>
-        <name>yarn.nodemanager.aux-services</name>
-        <value>mapreduce_shuffle</value>
-    </property>
+  <property>
+    <name>yarn.nodemanager.aux-services</name>
+    <value>mapreduce_shuffle</value>
+  </property>
 </configuration>
 ```
 
 ![이미지](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파일을 저장하고 닫아주세요.
 
@@ -325,7 +539,18 @@ nano $HADOOP_HOME/etc/hadoop/mapred-site.xml
 hdfs namenode -format
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Namenode 디렉토리를 hdfs 파일 시스템으로 성공적으로 포맷한 후에는 "Storage directory /home/hadoop/hadoopdata/hdfs/namenode has been successfully formatted" 메시지가 표시됩니다.
 
@@ -334,24 +559,44 @@ hdfs namenode -format
 - 그런 다음 다음 명령어로 Hadoop 클러스터를 시작합니다.
 
 ```js
-start-all.sh
+start - all.sh;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_13.png)
 
 - 이제 jps 명령어를 사용하여 모든 Hadoop 서비스의 상태를 확인할 수 있습니다:
 
 ```js
-jps
+jps;
 ```
 
 ![이미지](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_14.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 13: 하둡 네임노드 및 리소스 매니저에 액세스하기:
 
@@ -363,10 +608,21 @@ sudo apt install net-tools
 
 - 그런 다음 ifconfig 명령을 실행하여 우리의 IP 주소를 알아낼 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-ifconfig
+ifconfig;
 ```
 
 ![Image](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_15.png)
@@ -375,7 +631,18 @@ ifconfig
 
 - 네임노드에 액세스하려면 웹 브라우저를 열고 다음 URL을 방문하십시오. http://your-server-ip:9870. 다음 화면이 표시됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 http://192.168.1.6:9870
 
@@ -385,7 +652,18 @@ http://192.168.1.6:9870
 
 http://192.168.1.6:8088
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_17.png" />
 
@@ -395,7 +673,18 @@ http://192.168.1.6:8088
 
 - 다음 명령을 사용하여 HDFS 파일 시스템에 몇 가지 디렉토리를 생성해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 hdfs dfs -mkdir /test1
@@ -410,7 +699,18 @@ hdfs dfs -ls /
 
 다음과 같은 출력이 나와야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_18.png" />
 
@@ -422,7 +722,18 @@ hdfs dfs -put /var/log/* /logs/
 
 해당 파일 및 디렉터리를 하둡 웹 인터페이스에서도 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웹 인터페이스로 이동하셔서 'Utilities'를 클릭하신 후 '파일 시스템 찾아보기'를 선택해주세요. 여러분이 이전에 만든 디렉토리들이 다음 화면에서 보일 것입니다:
 
@@ -432,10 +743,21 @@ hdfs dfs -put /var/log/* /logs/
 
 Hadoop 서비스를 중지하려면, hadoop 사용자로 다음 명령어를 실행해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-stop-all.sh
+stop - all.sh;
 ```
 
 ![Image](/assets/img/2024-06-22-ApacheHadoop336InstallationonUbuntu2204_20.png)
@@ -444,7 +766,18 @@ stop-all.sh
 
 # 결론:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약하자면, 여러분은 이제 우분투 시스템에 Hadoop을 설치하는 지식과 기술을 갖추었으며, 빅 데이터 분석의 엄청난 잠재력을 발휘하기 위한 첫걸음을 내딛었습니다. 설치 과정을 정복함으로써, 분산 데이터 처리와 분석의 방대한 세계를 탐험할 수 있는 길을 열었습니다.
 

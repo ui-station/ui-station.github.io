@@ -3,13 +3,12 @@ title: "루비 온 레일을 위한 VS Code 익스텐션"
 description: ""
 coverImage: "/assets/img/2024-06-19-VSCodeExtensionsforRubyonRails_0.png"
 date: 2024-06-19 22:22
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-VSCodeExtensionsforRubyonRails_0.png
 tag: Tech
 originalTitle: "VS Code Extensions for Ruby on Rails"
 link: "https://medium.com/@rutikkpatel/vs-code-extensions-for-ruby-on-rails-6e5f2a8c7560"
 ---
-
 
 VS 코드 확장 프로그램은 모두가 코드를 빠르게 작성하고 생산성을 높일 수 있도록 도와줍니다. 그래서 오늘은 내가 개인적으로 사용하고 있는 몇 가지 확장 프로그램을 소개하려고 합니다. 이 확장 프로그램들은 루비 온 레일스 프로그래밍 언어 작업에 도움이 될 것입니다.
 
@@ -19,7 +18,18 @@ VS 코드 확장 프로그램은 모두가 코드를 빠르게 작성하고 생�
 
 자, 이제 루비 온 레일스를 위한 확장 프로그램을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 확장 프로그램 목록:
 
@@ -38,7 +48,18 @@ VS 코드 확장 프로그램은 모두가 코드를 빠르게 작성하고 생�
 
 VS Code에서 Ruby 언어 지원을 제공하는 기본 확장 프로그램입니다. Peng Lv가 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다운로드 링크: Ruby
 
@@ -48,7 +69,18 @@ VS Code에서 Ruby 언어 지원을 제공하는 기본 확장 프로그램입�
 
 루비 블록 끝에 end를 자동으로 추가해주는 endwise입니다. 아래 데모에서 확인할 수 있습니다. Kai Wood가 제공했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다운로드 링크: endwise
 
@@ -58,7 +90,18 @@ VS Code에서 Ruby 언어 지원을 제공하는 기본 확장 프로그램입�
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*J8qPrYV_2gESLCkIND2Q_w.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. rufo (Ruby formatter)
 
@@ -68,10 +111,20 @@ VS Code에서 Ruby 언어 지원을 제공하는 기본 확장 프로그램입�
 
 ![이미지](/assets/img/2024-06-19-VSCodeExtensionsforRubyonRails_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 작성해주세요.
-
 
 Demo :
 
@@ -81,8 +134,18 @@ Demo :
 
 이것은 erb 파일을 서식 지정하는 데 가장 좋은 확장 프로그램 중 하나입니다. Kai Wood가 제공했습니다. 이 확장 프로그램은 기본 설정이 필요합니다. 설정에 대해 설명 된 설명을 따라 할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 번역된 내용입니다.
 
@@ -94,7 +157,18 @@ Demo :
 
 사용자가 데이터베이스 스키마에 정의된 데이터를 쉽게 볼 수 있도록 도와줍니다. aki77가 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다운로드 링크: Rails DB Schema
 
@@ -104,7 +178,18 @@ Demo :
 
 ![Demo GIF](https://miro.medium.com/v2/resize:fit:1400/1*zathg9lrHBfddkW8tHhIBg.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 6. 레일즈 라우트 네비게이터
 
@@ -114,11 +199,33 @@ Demo :
 
 ![이미지](/assets/img/2024-06-19-VSCodeExtensionsforRubyonRails_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루비와 레일스 코드 조각 모음입니다. Chris가 제공했습니다.
 
@@ -128,8 +235,18 @@ Demo :
 
 데모:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:520/1*AABMRsz0rJzqgV5YGfzaVw.gif)
 
@@ -139,8 +256,18 @@ Demo :
 
 다운로드 링크: Ruby on Rails
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-VSCodeExtensionsforRubyonRails_8.png" />
 
@@ -150,7 +277,18 @@ vs code의 사이드바에서 손쉽게 테스트 케이스를 실행할 수 있
 
 다운로드 링크: Ruby Test Explorer
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수정된 내용은 아래와 같습니다.
 
@@ -162,7 +300,18 @@ vs code의 사이드바에서 손쉽게 테스트 케이스를 실행할 수 있
 
 # 10. ruby-rubocop
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Rubocop은 기본적으로 코드 분석 및 형식 지정 도구입니다. Ruby 코드를 올바른 방식으로 작성하는 방법에 대한 제안을 제공합니다. Rubocop은 몇 가지 코드 구문을 수정할 수 있는 능력도 갖추고 있습니다. 이는 misogi에 의해 제공됩니다.
 

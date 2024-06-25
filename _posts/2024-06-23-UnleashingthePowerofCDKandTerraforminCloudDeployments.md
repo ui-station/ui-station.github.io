@@ -3,13 +3,12 @@ title: "클라우드 배포에서 CDK와 Terraform의 강력한 기능 활용하
 description: ""
 coverImage: "/assets/img/2024-06-23-UnleashingthePowerofCDKandTerraforminCloudDeployments_0.png"
 date: 2024-06-23 00:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UnleashingthePowerofCDKandTerraforminCloudDeployments_0.png
 tag: Tech
 originalTitle: "Unleashing the Power of CDK and Terraform in Cloud Deployments"
 link: "https://medium.com/@sidathasiri/unleashing-the-power-of-cdk-and-terraform-in-cloud-deployments-b7871c7e340d"
 ---
-
 
 ![2024-06-23-UnleashingthePowerofCDKandTerraforminCloudDeployments](/assets/img/2024-06-23-UnleashingthePowerofCDKandTerraforminCloudDeployments_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sidathasiri/unleashing-the-power-of-cdk-and-terraform
 
 # Terraform과 CDK란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테라폼과 CDK는 인프라를 코드로 정의하는 데 도움을 주는 주요 도구들입니다. 각 솔루션에는 각각의 장단점이 있습니다. 좀 더 자세히 알아보도록 하죠.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@sidathasiri/unleashing-the-power-of-cdk-and-terraform
 
 ## AWS CDK
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS Cloud Development Kit (CDK)은 클라우드 인프라를 코드로 정의하고 AWS CloudFormation을 통해 프로비저닝하는 오픈 소스 소프트웨어 개발 프레임워크입니다. CDK는 TypeScript를 포함한 익숙한 프로그래밍 언어를 사용하여 애플리케이션을 모델링합니다. CDK는 코드를 사용하여 인프라를 생성하기 위해 일반적인 CloudFormation 템플릿을 생성합니다. 이 추상화로 인해 CDK를 사용하여 몇 줄의 코드로 매우 긴 CloudFormation 템플릿을 생성할 수 있습니다. 이는 개발자가 즐겨 사용하는 프로그래밍 언어로 편리하게 인프라 코드를 구현하고 유지할 수 있도록 도와줍니다.
 
@@ -39,7 +60,18 @@ AWS Cloud Development Kit (CDK)은 클라우드 인프라를 코드로 정의하
 
 반면, CDK는 CloudFormation을 내부적으로 사용하며 이는 일반적으로 Terraform보다 느릴 수 있습니다. 그러나 CDK와 Terraform을 함께 사용할 때 Terraform을 사용하여 클라우드 배포를 수행하기 때문에 훨씬 빠른 클라우드 배포를 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프로젝트 설정
 
@@ -52,17 +84,39 @@ CDK를 사용하여 Typescript를 언어로 사용하여 Terraform 프로젝트�
 
 설정이 완료되면 프로젝트를 시작할 수 있습니다. 먼저, 초기 코드를 설정할 폴더를 만들어 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 CLI 명령어를 사용하여 프로젝트를 초기화할 수 있어요. 이 프로젝트에서는 TypeScript를 사용할 거에요.
 
 프로젝트를 초기화하고 나면, main.ts 파일을 업데이트하여 필요한 인프라를 정의할 수 있어요. main.ts 파일 안에 CDK 앱과 스택이 생성되어 있어요. 스택 내의 리소스를 필요에 맞게 업데이트하여 배포할 수 있어요. API Gateway 및 Lambda 함수를 사용하여 간단한 hello world REST API를 구축해보죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # REST API 구축
 
-어떤 AWS 리소스도 추가하기 전에, AWS를 클라우드 제공업체로 사용할 것이므로 Terraform에서 AWS 프로바이더를 구성해야 합니다. 또한, 
+어떤 AWS 리소스도 추가하기 전에, AWS를 클라우드 제공업체로 사용할 것이므로 Terraform에서 AWS 프로바이더를 구성해야 합니다. 또한,
 
 Terraform 백엔드를 저장하고 배포 상태를 추적하기 위해 S3 버킷을 사용할 수 있습니다.
 
@@ -70,7 +124,18 @@ Terraform 백엔드를 저장하고 배포 상태를 추적하기 위해 S3 버�
 
 여기서 우리는 배포에 필요한 AWS 계정 ID와 지역을 제공함으로써 AWS 프로바이더를 구성했습니다. 마찬가지로, S3 백엔드를 구성하려면 버킷 이름과 다른 구성을 제공했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 람다 함수를 실행할 IAM 역할을 생성하고, 기본 람다 실행 역할의 권한을 포함시킵니다.
 
@@ -80,7 +145,18 @@ Terraform 백엔드를 저장하고 배포 상태를 추적하기 위해 S3 버�
 
 위 정의에 따라 함수 코드를 보관할 S3 버킷을 생성하고, 람다 함수를 만듭니다. 앞서 정의한 역할은 함수의 실행 역할로 제공됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 람다 함수가 준비되면 이제 API Gateway REST API를 생성하고 람다 함수와 통합할 수 있습니다.
 
@@ -90,7 +166,18 @@ Terraform 백엔드를 저장하고 배포 상태를 추적하기 위해 S3 버�
 
 우리는 설정에서 만들고자 하는 스테이지 이름과 API를 제공했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 필요한 모든 리소스를 생성했습니다. 하지만 해야 할 일이 아직 하나 더 있어요. API Gateway 서비스가 제공된 람다 함수를 호출할 수 있도록 보장해야 합니다. 이를 위해 람다 함수 내에서 해당 작업을 허용하는 리소스 기반 정책을 생성하고 첨부해야 해요. LambdaPermission 구성을 사용하여 아래와 같이 쉽게 할 수 있어요.
 
@@ -100,7 +187,18 @@ Terraform 백엔드를 저장하고 배포 상태를 추적하기 위해 S3 버�
 
 ![image](/assets/img/2024-06-23-UnleashingthePowerofCDKandTerraforminCloudDeployments_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 명령을 실행하면 CDK for Terraform이 누락된 패키지가 있는 경우 설치되고 배포가 시작됩니다. 배포가 완료되면 생성된 리소스를 확인하고 API를 사용해 볼 수 있습니다.
 
@@ -110,7 +208,18 @@ Terraform 백엔드를 저장하고 배포 상태를 추적하기 위해 S3 버�
 
 만들어 둔 리소스를 삭제하려면 cdktf destroy 명령을 실행할 수 있습니다. 이렇게 하면 프로젝트에서 생성된 모든 리소스가 적절히 정리됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

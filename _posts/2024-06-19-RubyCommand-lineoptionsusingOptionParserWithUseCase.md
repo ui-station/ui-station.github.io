@@ -3,13 +3,12 @@ title: "루비 커맨드 라인 옵션을 다루는 OptionParser 사용 사례�
 description: ""
 coverImage: "/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_0.png"
 date: 2024-06-19 10:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_0.png
 tag: Tech
 originalTitle: "Ruby Command-line options using OptionParser [With Use Case]"
 link: "https://medium.com/pengenpaham/ruby-command-line-options-using-optionparser-with-use-case-c96487670efe"
 ---
-
 
 터미널에서 실행하는 간단한 응용 프로그램이나 스크립트를 명령줄 응용 프로그램이라고 합니다. 대부분의 경우, 명령줄 응용 프로그램을 사용할 때는 옵션과 인수를 사용하여 상호 작용해야 합니다.
 
@@ -23,7 +22,18 @@ link: "https://medium.com/pengenpaham/ruby-command-line-options-using-optionpars
 - 결론
 - 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사용 사례
 
@@ -40,7 +50,18 @@ link: "https://medium.com/pengenpaham/ruby-command-line-options-using-optionpars
 
 # 디자인 구매하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 요구사항에 따라 아래와 같은 디자인이 완성되었습니다:
 
@@ -50,7 +71,18 @@ link: "https://medium.com/pengenpaham/ruby-command-line-options-using-optionpars
 
 옵션 파서를 사용하여 처리하는 방법을 살펴보겠습니다. 정말로 생각보다 간단합니다 :))
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # OptionParser 활용하기
 
@@ -60,8 +92,18 @@ link: "https://medium.com/pengenpaham/ruby-command-line-options-using-optionpars
 
 시작하기 전에, 루비에는 명령행 옵션과 인수를 가져오기 위한 ARGV가 있습니다. 이는 우리 프로그램에서 배열로 출력됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_1.png)
 
@@ -74,8 +116,18 @@ link: "https://medium.com/pengenpaham/ruby-command-line-options-using-optionpars
 
 ARGV에 대해 더 많이 알고 싶다면 [이 링크](https://link-to-more-info-about-ARGV)를 확인하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 기본 설정 및 도움말 옵션
 
@@ -85,7 +137,18 @@ optparse를 설정하고 --hello와 같은 샘플 옵션을 추가하여 스크�
 
 긴 줄을 추가한 것 처럼 보여서 놀랐죠! 그러나 optparse를 사용할 때 기본 구조를 보여주는 것입니다. 자세한 내용은 아래와 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - line 1: optparse를 사용하려면 반드시 요구해야 합니다.
 - line 10: parser로 OptionParser 객체를 초기화합니다.
@@ -106,7 +169,18 @@ Usage: scrapper [options]
 
 보시는 대로, --help를 사용하면 13번째 줄의 설명을 기반으로 명령 설명이 출력됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네, 맞아요. optparse은 자동으로 우리를 위해 --help 옵션을 만들어 줄 거에요.
 
@@ -116,7 +190,18 @@ Usage: scrapper [options]
 
 ![이미지](/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트해보세요:
 
@@ -140,7 +225,18 @@ scrapper.rb:17:in `<main>': missing argument: -t (OptionParser::MissingArgument)
 
 내보내기를 위해 `[no]export`라는 새로운 옵션을 추가했습니다. 이 옵션의 값은 부울(boolean)입니다. 이것은 스크립트에서 `--export` 및 `--no-export` 옵션이 사용 가능하게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_4.png" />
 
@@ -158,7 +254,18 @@ scrapper.rb:17:in `<main>': missing argument: -t (OptionParser::MissingArgument)
 
 ## 형식
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 스크립트는 출력 형식 지원을 하며, JSON 및 CSV 형식만 지원합니다.
 
@@ -170,8 +277,18 @@ scrapper.rb:17:in `<main>': missing argument: -t (OptionParser::MissingArgument)
 
 테스트해 보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ➜ ruby scrapper.rb --format HTML
 scrapper.rb:19:in `<main>': 올바르지 않은 인수입니다: --format HTML (OptionParser::InvalidArgument)
@@ -187,15 +304,24 @@ scrapper.rb:19:in `<main>': 인수가 누락되었습니다: --format (OptionPar
 []
 {:format=>"JSON"}
 
-
 ## 상세모드
 
 마지막으로 --verbose라는 옵션이 있으면 15번 라인에 이것을 추가하세요.
 
 ![Ruby Command Line Options Using OptionParser with Use Case](/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 내용을 테스트해보세요:
 
@@ -213,7 +339,18 @@ scrapper.rb:19:in `<main>': 인수가 누락되었습니다: --format (OptionPar
 
 위에서 언급한대로, OptionParser는 자동으로 --help 옵션을 위한 명령어를 만들어줍니다. 스크립트를 업데이트하여 --help 옵션을 처리할 필요가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최종 도움말 출력을 확인해 봅시다.
 
@@ -230,8 +367,18 @@ Usage: scrapper [options]
 
 터미널에서 더 나은 출력 메시지를 위해 parser.banner를 사용할 때, 프리 텍스트로 배너 값을 설정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-RubyCommand-lineoptionsusingOptionParserWithUseCase_7.png)
 
@@ -248,8 +395,18 @@ Try it out:
 
 # 결론
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루비에는 많은 강력한 기능들이 있어요. 이 경우에는 옵션 파서를 사용하여 명령행 옵션과 인수를 다루고 있어요.
 

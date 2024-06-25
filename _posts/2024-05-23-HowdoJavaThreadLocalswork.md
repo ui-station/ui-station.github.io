@@ -3,13 +3,12 @@ title: "자바 스레드 로컬Thread Locals은 어떻게 동작하나요"
 description: ""
 coverImage: "/assets/img/2024-05-23-HowdoJavaThreadLocalswork_0.png"
 date: 2024-05-23 12:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowdoJavaThreadLocalswork_0.png
 tag: Tech
 originalTitle: "How do Java Thread Locals work?"
 link: "https://medium.com/@viraj_63415/how-does-java-thread-locals-work-3278453ac34a"
 ---
-
 
 <img src="/assets/img/2024-05-23-HowdoJavaThreadLocalswork_0.png" />
 
@@ -19,13 +18,24 @@ link: "https://medium.com/@viraj_63415/how-does-java-thread-locals-work-3278453a
 
 # ThreadLocal 클래스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 쓰레드 로컬 변수가 선언된 예시입니다. user 변수는 User 타입(Class 또는 Interface)의 변수를 보유하는 ThreadLocal 변수입니다. 여기서 user 변수가 public 및 static으로 선언되어 어디서든 코드 내에서 접근할 수 있도록 설정되었습니다.
 
 ```js
 // Declare a Thread Local Variable user
-public static final ThreadLocal<User> user 
+public static final ThreadLocal<User> user
                      = new ThreadLocal<>();
 ```
 
@@ -39,7 +49,18 @@ user.set(new User("bob"));
 User requestUser = user.get();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자 변수가 코드베이스 전체에서 접근 가능하더라도 set(..) 메서드는 전달된 User 객체가 "호출" 스레드와 연관되도록 합니다. get() 메서드는 또한 "호출" 스레드와 연관된 User 객체를 검색하며, 다른 스레드에서 get() 메서드를 호출하더라도 bob이 아니라 다른 사용자(또는 null)를 검색하지 않습니다. 각 Java 스레드는 해당 스레드에 설정된 모든 스레드 로컬을 포함하는 ThreadLocal Map과 연결됩니다.
 
@@ -49,7 +70,7 @@ User requestUser = user.get();
 
 ```js
 // 공급자와 함께 Thread Local 변수 user를 선언
-public static ThreadLocal<User> user 
+public static ThreadLocal<User> user
           = ThreadLocal.withInitial(
                 () -> new User("anonymous"))
 
@@ -57,7 +78,18 @@ public static ThreadLocal<User> user
 User requestUser = user.get();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 remove() 메서드를 호출하여 이전에 설정된 값을 제거할 수도 있습니다.
 
@@ -70,7 +102,18 @@ user.remove();
 
 스레드 로컬을 다이어그램 형식으로 시각화한다면(저는 이것을 좋아합니다), 다음과 같이 보일 것입니다. 두 스레드의 사용자 변수가 서로 다른 User 객체를 가리키는 것을 알 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-HowdoJavaThreadLocalswork_1.png" />
 
@@ -80,7 +123,18 @@ user.remove();
 
 답은 "아니요"입니다! 자식 스레드는 부모의 Thread Local에 액세스할 수 없으며 이에 대한 매우 좋은 이유가 있습니다. 만약 액세스 가능하다면, Thread Local 변수에 저장된 객체는 스레드 안전하게 작성되어야 할 것이며 이렇게 되면 여러 스레드가 동일한 사용자 객체에 액세스할 수 있을 것입니다. 이는 Java 엔지니어들에 의한 좋은 기본 디자인 결정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 때로는 그런 액세스가 유용할 때가 있습니다. 많은 사용자가 애플리케이션에 액세스하는 웹 애플리케이션과 같은 시나리오를 상상해보십시오. 요청 처리 중 사용자와 연결된 단일 Java 스레드가 있으며, 이 스레드의 Thread Local 객체에 사용자 객체가 저장되어 있다고 상상할 수 있습니다(이는 많은 응용 프로그램 서버 및 Spring Boot와 같은 프레임워크에서 수행됩니다). 그러나 생성된 자식 스레드도이 사용자 정보에 액세스하길 원할 수 있습니다.
 
@@ -90,7 +144,18 @@ user.remove();
 
 이 클래스를 사용하는 구문은 사실상 ThreadLocal 클래스와 거의 동일합니다. 아래 예제에서는 InheritableThreadLocal 클래스에 대한 해당 메서드를 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 // 상속 가능한 쓰레드 로컬 변수 user를 선언합니다
@@ -112,8 +177,18 @@ user.remove();
 
 <img src="/assets/img/2024-05-23-HowdoJavaThreadLocalswork_2.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 함정에 유의하세요!
 
@@ -123,20 +198,31 @@ user.remove();
 
 그러나 더 안전한 접근 방식이 있을 수 있습니다. InheritableThreadLocal을 생성할 때 다음과 같이 childValue(..) 메서드를 지정할 수 있습니다. 사실, 아래 예시에서는 초기값과 child 값도 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
-public static final InheritableThreadLocal<User> user 
+public static final InheritableThreadLocal<User> user
                    = new InheritableThreadLocal<>() {
 
    @Override
-   protected User initialValue() { 
-      return new User("anonymous"); 
+   protected User initialValue() {
+      return new User("anonymous");
    }
 
    @Override
-   protected User childValue(User parentValue) { 
-      return new User(parentValue.getId()); 
+   protected User childValue(User parentValue) {
+      return new User(parentValue.getId());
    }
 };
 ```
@@ -147,9 +233,19 @@ public static final InheritableThreadLocal<User> user
 
 ![Java Thread Locals 동작 방식](/assets/img/2024-05-23-HowdoJavaThreadLocalswork_3.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-자바 스레드 지역 변수에 대한 좋은 이해를 얻을 수 있기를 바랍니다. 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+자바 스레드 지역 변수에 대한 좋은 이해를 얻을 수 있기를 바랍니다.
 
 이 게시물이 도움이 되었다면 지원을 표시하기 위해 클로버 아이콘 👏을 몇 번 클릭해 주세요. 읽어 주셔서 감사합니다!

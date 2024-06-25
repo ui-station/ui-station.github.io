@@ -3,14 +3,12 @@ title: "테스트 더블이란 무엇이며 RSpec 3에서 어떻게 사용하는
 description: ""
 coverImage: "/assets/img/2024-06-19-WhatAreTestDoublesandHowToUseTheminRSpec3_0.png"
 date: 2024-06-19 22:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-WhatAreTestDoublesandHowToUseTheminRSpec3_0.png
 tag: Tech
 originalTitle: "What Are Test Doubles and How To Use Them in RSpec 3"
 link: "https://medium.com/@patrykrogedu/what-are-test-doubles-and-how-to-use-them-in-rspec-3-d990f1b91a36"
 ---
-
-
 
 ![Test Doubles](/assets/img/2024-06-19-WhatAreTestDoublesandHowToUseTheminRSpec3_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@patrykrogedu/what-are-test-doubles-and-how-to-use-the
 
 # 테스트 더블의 종류
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 더블은 사용 모드와 원본에 따라 분류할 수 있어요.
 
@@ -34,7 +42,18 @@ Stub: Stub은 사이드 이펙트를 발생시키지 않고 값을 반환하는 
 stub_course = double('Course', name: 'Ruby 입문', description: '루비 기초 학습')
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모의 객체: 모의 객체는 값을 반환하는 것보다 부작용을 수행하는 명령 메서드를 테스트할 때 유용합니다. 특정 메시지가 수신되었는지 확인하고, 예상한 메시지가 수신되지 않으면 오류를 발생시킵니다.
 
@@ -52,7 +71,18 @@ null_user = double('User').as_null_object
 null_user.enroll_in_course(course)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스파이: 스파이들은 받은 메시지를 기록하여 특정 메시지가 올바른 매개변수로 호출되었음을 확인할 수 있게 해줍니다.
 
@@ -67,7 +97,18 @@ expect(spy_notification_service).to have_received(:send_notification).with(user,
 
 테스트 더블의 사용 모드를 이해하는 것 외에도, 그 원점과 유형을 알아야 합니다. 테스트 더블은 순수한(pure), 부분적인(partial), 또는 확인(verify)할 수 있는 것으로, 각각 다른 목적을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 순수 더블: 순수 더블은 RSpec과 같은 테스트 프레임워크에 의해 목적에 맞게 생성되며 해당 행동이 완전히 추가된 것으로 구성됩니다. 의존성을 전달할 수 있는 코드를 테스트하기 위해 유연하고 사용하기 쉽습니다.
 
@@ -84,7 +125,18 @@ allow(pure_course).to receive(:name).and_return('루비 입문')
 allow(Time).to receive(:now).and_return(Time.new(2023, 6, 1))
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더블 검증: 더블 검증은 테스트 더블과 실제 의존성이 동기화되지 않을 때 문제를 찾는 데 도움이 됩니다. 더블의 인터페이스를 실제 클래스나 객체에 기반하여 제한하여 메서드 변경을 감지합니다.
 
@@ -101,6 +153,17 @@ allow(user).to receive(:enroll_in_course)
 stub_const('LMS::DEFAULT_ENROLLMENT_PERIOD', 7)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 더블은 사용 모드와 원본을 모두 결합할 수 있어요. 예를 들어, 순수한 더블이 스텁으로 작동하거나 검증 더블이 스파이로 작동하는 경우가 있을 수 있어요.

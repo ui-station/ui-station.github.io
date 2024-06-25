@@ -3,13 +3,12 @@ title: "상체 보조장비를 머리 기울임으로 제어하기 제2부 손 �
 description: ""
 coverImage: "/assets/img/2024-05-18-UpperlimbprosthesiscontrolledbyheadtiltingPart2ControllingtheHand_0.png"
 date: 2024-05-18 18:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-UpperlimbprosthesiscontrolledbyheadtiltingPart2ControllingtheHand_0.png
 tag: Tech
 originalTitle: "Upper limb prosthesis controlled by head tilting. Part 2: Controlling the Hand"
 link: "https://medium.com/@Wosk1947/upper-limb-prosthesis-controlled-by-head-tilting-part-2-controlling-the-hand-b0c7d9c68b96"
 ---
-
 
 <img src="/assets/img/2024-05-18-UpperlimbprosthesiscontrolledbyheadtiltingPart2ControllingtheHand_0.png" />
 
@@ -19,9 +18,20 @@ link: "https://medium.com/@Wosk1947/upper-limb-prosthesis-controlled-by-head-til
 
 <img src="/assets/img/2024-05-18-UpperlimbprosthesiscontrolledbyheadtiltingPart2ControllingtheHand_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-또한, 모드 전환 및 손가락 이동을 제어하기 위해 여러 버튼이 추가되었습니다. 이러한 버튼은 다른 근육(예: 상완 이두근 및 대흉근, 팔 부근에 가까운 근육)에 부착된 근전도 센서로 대체할 수 있습니다. 이는 전향감각에 긍정적인 영향을 미치며 신뢰할 수 있게 분리하여 수축시킬 수 있습니다. 그러나 이것은 필수적인 것은 아닙니다. 상용 바이오닉 프로시시가 있으며 현재 작동 중인 다른 신체 부위에서 눌리는 일반적인 버튼으로 제어 요소가 구성된 것을 확인할 수 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+또한, 모드 전환 및 손가락 이동을 제어하기 위해 여러 버튼이 추가되었습니다. 이러한 버튼은 다른 근육(예: 상완 이두근 및 대흉근, 팔 부근에 가까운 근육)에 부착된 근전도 센서로 대체할 수 있습니다. 이는 전향감각에 긍정적인 영향을 미치며 신뢰할 수 있게 분리하여 수축시킬 수 있습니다. 그러나 이것은 필수적인 것은 아닙니다. 상용 바이오닉 프로시시가 있으며 현재 작동 중인 다른 신체 부위에서 눌리는 일반적인 버튼으로 제어 요소가 구성된 것을 확인할 수 있습니다.
 
 연구 중에는 세 가지 제어 방식이 테스트되었습니다. 각각에 대해 상세히 논의하고 각 방식의 장단점 및 개선 가능성을 살펴보겠습니다.
 
@@ -29,7 +39,18 @@ Raw Input
 
 이 방식은 컴퓨터 마우스의 해당 모드와 유사하게 이름이 지어졌는데, 커서 이동이 중간 신호 처리 없이 최소한 또는 전혀 전달되지 않고 조작자의 움직임을 직접 모방합니다. 이 방식에서는 팔목의 기울기가 이전 글에서 설명된 대로 머리의 기울기를 모방하며, 추가로 팔목의 종축 주변 회전은 머리의 종축 주변 회전을 복제합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이를 확인하기 위해 간단한 테스트가 고안되었습니다. 여기서는 세 개의 물체를 가져와 탁자 위를 이동시켜야 했는데, 각각의 물체는 XYZ 축 중 하나와 정렬되고 연장된 모습을 가지고 있었습니다. 이 실험은 이러한 작업들이 상당한 시간이 소요된다는 것을 보여주었습니다.
 
@@ -39,7 +60,18 @@ Raw Input
 
 Pitch-Yaw / Roll 분할
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 계획은 이전과 다른 점이 있습니다. 손목의 각도를 동시에 수직 및 수평으로 설정하거나 손목의 종축 주위의 회전을 설정할 수 있습니다. 두 모드 간 전환은 버튼을 눌러 발생합니다. 여기에는 약간의 어려움이 있습니다. 로봇 팔이 한 유형의 동작을 수행할 때 머리는 다른 유형의 동작을 계속하지만 이것은 로봇에 통신되지 않습니다. 이로 인해 다른 유형의 동작으로 전환할 때 로봇 팔이 위치를 갑자기 바꾸어 머리에서 통신되지 않은 움직임을 따라잡습니다. 이를 피하기 위해 다른 동작으로 전환할 때 부드럽게 적용되는 부드럽게 로봇 팔을 실제 위치로 이동시켜 사용자가 원하는 대로 알아차리고 조정할 수 있도록 합니다.
 
@@ -49,7 +81,18 @@ Pitch-Yaw / Roll 분할
 
 위에 설명된 두 계획에는 또 다른 심각한 결점이 있습니다. 손목을 특정 위치에 고정하기가 어렵습니다. 이는 머리를 완전히 고정시키는 것이 필요하기 때문입니다. 이 문제 해결을 위해 그리고 다른 몇 가지 문제를 해결하기 위해 다른 계획이 구현되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포즈 모드
 
@@ -59,7 +102,18 @@ Pitch-Yaw / Roll 분할
 
 게다가, 이 방법은 상용 바이오닉 보조기에서 사용되는 기존 제어 시스템과 일치하여 사용자가 다양한 물건과 상호 작용하기 위한 손목 위치(방향 및 손가락 구성)을 선택할 수 있도록 허용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론
 
@@ -69,7 +123,18 @@ Pitch-Yaw / Roll 분할
 
 파벨 코체토프
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ---
 

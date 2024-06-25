@@ -3,24 +3,35 @@ title: "실무에서 활용하는 MAX_BY의 DBSQL 사용 사례 - Gold Layer Vie
 description: ""
 coverImage: "/assets/img/2024-05-18-RealWorldUseCaseforMAX_BYinDBSQLGoldLayerViews_0.png"
 date: 2024-05-18 16:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-RealWorldUseCaseforMAX_BYinDBSQLGoldLayerViews_0.png
 tag: Tech
 originalTitle: "Real World Use Case for MAX_BY in DBSQL — Gold Layer Views"
 link: "https://medium.com/dbsql-sme-engineering/real-world-use-case-for-max-by-in-dbsql-gold-layer-views-43cd8ad1e170"
 ---
 
-
 제가 SQL에서 MAX_BY의 가장 좋아하는 사용 사례는 데이터의 골드 레벨 뷰를 열별로 제어하는 것입니다.
 
 ![image](/assets/img/2024-05-18-RealWorldUseCaseforMAX_BYinDBSQLGoldLayerViews_0.png)
 
 ## 작성자:
+
 Cody Austin Davis
 
 ## 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글은 MAX_BY/MIN_BY 집계 함수를 사용하는 가장 일반적인 실제 사용 사례 중 하나를 설명하는 짧고 간결한 글입니다. 이 함수는 종종 발견되지 않는다고 생각되며, 주로 사람들이 존재를 모르기 때문에 덜 주목 받습니다. 이 함수는 알려지지 않은 훌륭한 함수일 뿐만 아니라, 한 번 알게 되면 데이터를 효과적으로 사용하는 여러 방법을 보게 될 것입니다. 오늘은 가장 많이 본다고 생각하는 하나를 다룰 것입니다 — 데이터 소스 간에 데이터에 대한 통합된 뷰를 만드는 것입니다.
 
@@ -30,8 +41,18 @@ Cody Austin Davis
 
 예제를 살펴보겠습니다. 여러 데이터 소스에서 고객 정보를 받아 "고객" 테이블에 입력하는 시스템을 가정해보겠습니다. 그런 다음 모든 이러한 데이터 소스에서 가져온 모든 고객 레코드를 "통합된 뷰"로 통합하여 각 "마스터 고객"에 대한 가장 최근의 정의를 나타내는 방식입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Customer Table Example 1](/assets/img/2024-05-18-RealWorldUseCaseforMAX_BYinDBSQLGoldLayerViews_1.png)
 
@@ -41,8 +62,18 @@ Here is an example output of the customer table, assuming each record is from a 
 
 Usually, this requires a sort of fuzzy matching Entity Resolution (blog coming soon on this topic) system for this type of use case, but for the sake of brevity, we will assume that we are already able to “stitch” these disparate records together to identify entities that are the same and link them with a master_customer_id. This can also apply to other scenarios where we just want to create a unified view for an event across entities as well (customers, orders, returns, etc). We will review 3 ways to create the “Unified View”.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1 — 가장 최근 고객 레코드 선택하기
 
@@ -53,13 +84,24 @@ Usually, this requires a sort of fuzzy matching Entity Resolution (blog coming s
 SELECT
 *
 FROM customers
-QUALIFY ROW_NUMBER() 
+QUALIFY ROW_NUMBER()
   OVER (PARTITION BY master_customer_id ORDER BY update_timestamp DESC) = 1;
 ```
 
 <img src="/assets/img/2024-05-18-RealWorldUseCaseforMAX_BYinDBSQLGoldLayerViews_3.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법에는 중요한 제한이 있습니다. 작은 예제에서는 일부 데이터가 누락되었습니다. SSN을 살펴보세요. 다른 데이터 소스에 이 속성이 있지만 가장 최근 레코드가 아닌 경우, 해당 데이터는 사용되지 않을 것입니다. 이 문제를 해결해 보겠습니다.
 
@@ -83,7 +125,18 @@ FROM raw_customers
 GROUP BY master_customer_id;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 하시면 좋습니다! 보다 복잡한 데이터 세트를 갖게 되었지만, 여전히 한 가지 문제가 남아 있습니다: 알파벳 순서 외에는 이 쿼리가 어떤 레코드를 선택하는지에 대한 제어권이 없습니다. 고객에 대한 통합된 뷰는 낡았거나 관련성이 낮은 데이터를 포함할 수 있습니다.
 
@@ -91,7 +144,18 @@ GROUP BY master_customer_id;
 
 이것은 의도적으로 고객(또는 다른 레코드)에 대한 뷰를 만드는 가장 좋은 방법입니다. 우리는 각 열에 대해 가장 최근의 NOT NULL 레코드를 선택하기 위해 MAX_BY 함수와 선택적인 FILTER 절을 사용할 것입니다. 이 방법으로, 뷰는 데이터 소스와 상관없이 각 열별로 가장 최근의 NOT NULL 레코드를 선택하여 사용할 수 있게 됩니다. 그 방법은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 -- "final" 정리된 마스터 뷰에 나쁜 데이터가 들어가지 않도록 필터링 규칙 추가
@@ -104,13 +168,13 @@ SELECT
   MAX_BY(street, update_timestamp) FILTER (WHERE street IS NOT NULL) AS street,
   MAX_BY(`number`, update_timestamp) FILTER (WHERE `number` IS NOT NULL) AS number,
   MAX_BY(ship_to_address, update_timestamp) FILTER (WHERE ship_to_address IS NOT NULL) AS ship_to_address,
-  
+
 -- 예시의 형식을 확인함
-  MAX_BY(ssn, update_timestamp) 
-      FILTER (WHERE ssn IS NOT NULL 
+  MAX_BY(ssn, update_timestamp)
+      FILTER (WHERE ssn IS NOT NULL
               AND length(regexp_replace(ssn, '\\D','')) = 9 ) AS ssn,
-  MAX_BY(phone_number, update_timestamp) 
-      FILTER (WHERE phone_number IS NOT NULL 
+  MAX_BY(phone_number, update_timestamp)
+      FILTER (WHERE phone_number IS NOT NULL
                 AND length(regexp_replace(phone_number, '\\D','')) = 10) AS phone_number
 FROM raw_customers
 GROUP BY master_customer_id;

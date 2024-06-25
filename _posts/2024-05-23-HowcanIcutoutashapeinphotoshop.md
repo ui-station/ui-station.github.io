@@ -18,7 +18,18 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 
 # 주요 포인트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이제 이를 달성하기 위한 단계를 고려해 봅시다:
 
@@ -29,8 +40,18 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 
 2. 원하는 캔버스 크기를 선택해 주세요. 작업 공간을 어떻게 사용자 정의하는 지 잘 모르겠다면 이 비디오를 확인해 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![How to draw a shape in Photoshop 1](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_1.png)
 
@@ -40,8 +61,18 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 
 4. Drag your cursor to create the shape on your canvas. Holding Shift while dragging can help you create a perfect shape when drawing an ellipse or rectangle. Let's start with a rectangle.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 폼을 정렬하려면, 컴퓨터의 V 키를 사용하여 커서를 이동 도구로 전환한 후 캔버스의 중앙에 폼을 드래그하십시오.
 
@@ -51,7 +82,18 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 
 모양 도구를 마우스 오른쪽 버튼으로 클릭하고 드롭다운 메뉴 맨 아래에서 사용자 정의 모양을 선택하여 사용자 정의 모양을 선택할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7. 지금 옵션 패널에 새 상자가 생겼어요. 이렇게 보이시죠? 이 안내서를 위해 상자를 선택하고 플뢰르 드 리 모양을 활용해주세요.
 
@@ -61,8 +103,18 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 
 ![image](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_6.png)
 
@@ -72,9 +124,18 @@ link: "https://medium.com/design-bootcamp/how-can-i-cut-out-a-shape-in-photoshop
 
 위의 9단계에서, 레이어 패널에서 복제된 직사각형을 마우스 오른쪽 버튼을 클릭하여 메뉴에서 "레이어 래스터화"을 선택하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_7.png)
 
@@ -84,8 +145,18 @@ When selecting the duplicate Fluer-de-lis form in the Layers Panel, hold down th
 
 Select the rectangle in the Layers Panel and then move the cursor across the canvas.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마르키 도구를 사용하려면 키보드에서 M을 누르세요. 캔버스에서 마우스 오른쪽 버튼을 클릭하여 '레이어 자르기'를 선택하세요. 레이어 패널에 새 레이어가 추가되었습니다.
 
@@ -95,7 +166,18 @@ Select the rectangle in the Layers Panel and then move the cursor across the can
 
 # 방법 2: 앞면 모양을 빼서 포토샵에서 모양 자르는 방법.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 단계 9에서 계속하기 위해 직사각형 모양의 나머지 두 개의 원본 레이어와 플뤼르 드 리스 형태를 선택하십시오.
 
@@ -105,7 +187,18 @@ Select the rectangle in the Layers Panel and then move the cursor across the can
 
 ![이미지](/assets/img/2024-05-23-HowcanIcutoutashapeinphotoshop_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사각형에서 플뤼르 드 리 모양을 드롭다운 메뉴에서 "결합 모양" 옵션 아래 "기존 모양 빼기"를 선택하여 제거하면 자르기가 완료됩니다.
 
@@ -115,7 +208,18 @@ Select the rectangle in the Layers Panel and then move the cursor across the can
 
 # 자주 묻는 질문
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것들은 포토샵에서 양식을 잘라내는 데에 대해 디자이너들이 가장 일반적으로 가지는 질문들에 대한 답변입니다.
 
@@ -125,7 +229,18 @@ Select the rectangle in the Layers Panel and then move the cursor across the can
 
 ## 포토샵을 사용하여 반투명 배경을 가진 양식을 만들 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예! 폼이 준비되면 레이어 패널의 투명도 레벨 드롭다운 메뉴를 확인하고 100% 미만의 범위를 선택하세요. 숫자가 낮을수록 이미지가 더 투명해집니다.
 
@@ -135,7 +250,18 @@ Select the rectangle in the Layers Panel and then move the cursor across the can
 
 포토샵을 디자인 도구로 사용하려면 일정 수준의 창의력이 필요하며, 이러한 창의성 수준을 향상시키기 위해 품질 좋은 연습 시간을 투자해야 합니다. 도구를 사용하고 연습하여 얻은 지식과 통찰은 다른 디자인 도구를 사용할 때 활용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 글이 유용하다고 느끼셨다면, 우리를 격려해주기 위해 열 손뼉을 부탁드립니다. 더 많은 유사한 글을 제공하여 여러분이 전문가로 성장하는 여정에서 도와 드리겠습니다.
 

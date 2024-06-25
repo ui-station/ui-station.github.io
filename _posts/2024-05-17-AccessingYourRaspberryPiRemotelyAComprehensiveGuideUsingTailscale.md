@@ -3,13 +3,12 @@ title: "라즈베리 파이를 원격으로 접속하는 방법 Tailscale을 활
 description: ""
 coverImage: "/assets/img/2024-05-17-AccessingYourRaspberryPiRemotelyAComprehensiveGuideUsingTailscale_0.png"
 date: 2024-05-17 19:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-AccessingYourRaspberryPiRemotelyAComprehensiveGuideUsingTailscale_0.png
 tag: Tech
 originalTitle: "Accessing Your Raspberry Pi Remotely: A Comprehensive Guide Using Tailscale"
 link: "https://medium.com/@lennart.dde/accessing-your-raspberry-pi-remotely-a-comprehensive-guide-using-tailscale-b1b30cb02e93"
 ---
-
 
 <img src="/assets/img/2024-05-17-원격으로RaspberryPi에액세스하는포괄적인가이드Tailscale을사용하여" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@lennart.dde/accessing-your-raspberry-pi-remotely-a-co
 
 원격 액세스를 통해 인터넷을 통해 다른 위치에서 Raspberry Pi에 연결할 수 있습니다. 이겢은 서버를 관리하거나 업데이트를 실행하거나 집을 벗어난 상태에서 미디어 파일에 액세스하는 데 특히 유용할 수 있습니다. 그러나 포트 전달과 같은 전통적인 방법은 네트워크를 보안 위험에 노출시킬 수 있습니다. Tailscale은 안전한 VPN을 만들어 더 안전하고 간단한 대안을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 필요한 준비물
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@lennart.dde/accessing-your-raspberry-pi-remotely-a-co
 
 라즈베리 파이에 연결하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 아래 명령어를 사용하여 Raspberry Pi에 SSH로 연결하세요:
 
@@ -43,7 +64,18 @@ ssh pi@<IP-ADDRESS>
 
 Tailscale 설치:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 라즈베리 파이에 Tailscale 패키지 소스를 추가하세요:
 
@@ -59,7 +91,18 @@ sudo apt update
 sudo apt install tailscale
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작 및 Tailscale 인증:
 
@@ -71,7 +114,18 @@ sudo tailscale up
 
 터미널에서 제공된 인증 지침을 따르세요. 이는 URL을 방문하고 Tailscale 계정에 로그인하여 장치를 인증하는 과정을 포함합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 2: 안전한 액세스를 위한 Tailscale 설정
 
@@ -83,11 +137,33 @@ Raspberry Pi의 Tailscale IP 확인:
 tailscale ip -4
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 접근을 위한 Raspberry Pi 원격 액세스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라이언트 장치에 Tailscale 설치하기:
 
@@ -97,7 +173,18 @@ tailscale ip -4
 
 - 라즈베리 파이 설정과 유사하게 클라이언트 장치에서 Tailscale을 시작하고 Tailscale 계정을 통해 인증하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Raspberry Pi에 SSH로 연결하기:
 
@@ -109,7 +196,18 @@ ssh pi@<TAILSCALE-IP>
 
 위 명령에서 `TAILSCALE-IP`를 이전에 메모한 Tailscale IP 주소로 대체해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 4: Tailscale를 사용하여 기기 관리하기
 
@@ -119,7 +217,18 @@ ssh pi@<TAILSCALE-IP>
 
 - 서브넷 설정하기 (옵션):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 만약 라즈베리 파이의 모든 트래픽을 Tailscale 네트워크를 통해 라우팅하고 싶다면 서브넷 라우트를 설정할 수 있습니다. 이것은 Tailscale 네트워크의 다른 기기들이 액세스해야 하는 Pi 상의 서비스가 있는 경우 유용합니다.
 
@@ -129,7 +238,18 @@ ssh pi@<TAILSCALE-IP>
 
 - 라즈베리 파이와 모든 기기를 최신 Tailscale 및 OS 업데이트로 업데이트하여 보안 패치가 적용되도록 유지하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 강력한 인증 사용하기:
 
@@ -139,7 +259,18 @@ ssh pi@<TAILSCALE-IP>
 
 이제 라즈베리 파이에 Tailscale을 성공적으로 설정하여 전 세계 어디에서나 안전하게 액세스할 수 있습니다. Tailscale의 사용 편의성과 견고한 보안 기능은 가정 기기에 원격 액세스하기 위한 탁월한 선택지로 제공됩니다. 개인 프로젝트 또는 복잡한 IoT 시스템을 관리하든, Tailscale은 연결성과 제어를 유지하기 위한 확장 가능하고 안전한 방법을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 안내서는 원격 액세스를 위해 Tailscale을 설정하고 사용하는 방법에 대한 종합적인 소개를 제공합니다. 그러나 가능성은 여기서 끝나지 않습니다. Tailscale을 사용하면 네트워크를 확장하고 더 많은 기기를 추가하며 설정을 향상시키기 위해 자동화 스크립트를 통합할 수 있습니다. 원격 기기 관리의 세계가 여러분의 손끝에 있고, Tailscale은 이를 접근 가능하고 안전하게 만들어줍니다.
 

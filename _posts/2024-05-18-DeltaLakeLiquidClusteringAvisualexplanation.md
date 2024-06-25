@@ -3,13 +3,12 @@ title: "델타 레이크 리퀴드 클러스터링 - 시각적 설명"
 description: ""
 coverImage: "/assets/img/2024-05-18-DeltaLakeLiquidClusteringAvisualexplanation_0.png"
 date: 2024-05-18 16:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-DeltaLakeLiquidClusteringAvisualexplanation_0.png
 tag: Tech
 originalTitle: "Delta Lake Liquid Clustering — A visual explanation"
 link: "https://medium.com/gitconnected/delta-lake-liquid-clustering-a-visual-explanation-b9d8782a9f33"
 ---
-
 
 최소한의 노력으로 레이크하우스 데이터 저장 레이아웃을 최적화하는 방법
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/delta-lake-liquid-clustering-a-visual-exp
 
 데이터 레이크하우스는 오픈 테이블 형식을 사용하고 특정 공급 업체에 얽매이지 않아 장점을 누립니다. 그러나 이는 특정 읽기 및 쓰기 작업을 위해 데이터 처리를 최적화하기 위해 파일 저장 레이아웃을 최적화해야 한다는 추가적인 부담과 함께 옵니다. 읽기 또는 쓰기 작업에 의해 처리되는 데이터 양을 최소화하기 위해 가능한 한 많은 파일을 제거함으로써 작업을 효율적으로 만드는 것이 핵심 아이디어입니다. 제거는 특정 파일이 해당 쿼리에 관련이 없다는 암묵적 또는 명시적 메타데이터를 사용하여 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 옛날에, Hive은 각 데이터 파티션을 HDFS 또는 클라우드 저장소의 단일 폴더로 범위를 지정하여 유명한 Hive 스타일의 파티셔닝을 소개했습니다. 그것은 작동이 잘 됩니다. 그러나 작은 파일 문제가 발생하거나 워크로드 특성 변경으로 인해 파티션 체계를 변경해야 할 때 문제가 발생합니다. 또한 Hive 스타일의 파티셔닝은 고 카디널리티 질의에 대해 도움이 되지 않습니다.
 
@@ -31,7 +41,18 @@ Hive 스타일의 파티셔닝과 Z-Ordering의 이러한 제한 사항을 완�
 - "이미 최적화된" 파일을 최적화할 필요가 없습니다.
 - 클러스터링 열을 변경하면 전체 테이블을 다시 빌드할 필요가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물에서는 액체 클러스터링이 레코드를 파일에 할당하는 방식을 시각적으로 보여줄 것입니다. 목표는 기술적인 세부 내용을 파헤치는 대신에 해당 기술의 매우 높은 수준의 이해를 갖는 데 초점을 맞추는 것입니다. 여전히 상황이 조리실에 있기 때문에 세부 사항에 대해 심층적으로 파고들지 않습니다.
 
@@ -41,7 +62,18 @@ Hive 스타일의 파티셔닝과 Z-Ordering의 이러한 제한 사항을 완�
 
 아래 streamlit 앱은 이 문제를 처리하는 데 3가지 방법을 보여줍니다. N 및 M에 대한 다양한 값을 사용하고 배치 방식을 조정하여 레코드가 파일에 할당되는 방식을 시각적으로 확인할 수 있습니다. 이 간단한 앱에서는 모든 레코드가 필드 그룹을 갖고 있지만 우리는 2차원 평면 상 좌표인 x 및 y라는 두 개의 정수 필드에 대한 쿼리를 최적화해야 합니다. 레코드는 N개의 레코드를 생성하도록 x와 y의 쌍별 조합을 균등하게 다루기 위해 생성됩니다. 배치 방법 선택에 따라 각 지점(레코드)이 특정 파일에 할당되며 이 할당은 파일 색상을 사용하여 지정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 랜덤 할당
 
@@ -51,7 +83,18 @@ Hive 스타일의 파티셔닝과 Z-Ordering의 이러한 제한 사항을 완�
 
 2. Z-Ordering 할당
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 방법은 Z-Ordering을 사용하여 각 레코드 (x와 y의 조합)마다 Z-Order 값을 계산하는 것입니다. 이는 평면 상의 이차원 점을 선 상의 점으로 효과적으로 변환합니다. 그런 다음 선을 M개의 세그먼트로 나눌 수 있으며, 각 세그먼트는 하나의 파일을 나타냅니다. 레코드가 Z-Order 값 z를 갖고 있다면, 파일 z % M에 할당됩니다. 이제 점들은 일차원 관련 값을 갖고 있기 때문에, 그러한 값들을 선으로 연결하여 매핑이 어떻게 이루어지는지 시각적으로 확인할 수 있습니다. 각 점 위에 마우스를 올려놓으면 선형 순서 값을 볼 수 있습니다.
 
@@ -61,7 +104,18 @@ Hive 스타일의 파티셔닝과 Z-Ordering의 이러한 제한 사항을 완�
 
 3. 힐버트 곡선 할당
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세 번째 방법은 레코드마다 두 차원 x와 y 값에 기초한 일차원 값을 할당하기 위해 힐버트 곡선을 사용하는 것입니다.
 
@@ -71,7 +125,18 @@ Hive 스타일의 파티셔닝과 Z-Ordering의 이러한 제한 사항을 완�
 
 이제 우리는 Z-Order와 힐버트 곡선과 같은 공간 채우기 곡선을 사용하여 파일에 포인트를 할당하는 방법에 대한 아이디어가 생겼으니, Databricks에서 Liquid Clustering을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Liquid clustering in action
 
@@ -83,7 +148,18 @@ Hive 스타일의 파티셔닝과 Z-Ordering의 이러한 제한 사항을 완�
 
 우리는 유명한 뉴욕시 택시 데이터 세트를 사용하고 아래 워크로드를 위해 최적화할 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 대부분의 쿼리는 데이터의 한 해 또는 몇 해에 대해서 작동할 것입니다.
 - 많은 쿼리는 픽업 위치(위도 및 경도)를 기반으로 필터링하는 것이 포함될 것입니다.
@@ -97,13 +173,24 @@ CREATE DATABASE liquid_db;
 
 다음으로, 맨해튼 섬 주변의 경계 상자를 기준으로 뉴욕시 택시 데이터셋을 기반으로 하는 테이블을 생성해보세요. 이 글의 몇 가지 미학적 이유로 테이블은 초기에 액체 클러스터링을 사용할 수 있지만, 모든 작업이 기본적으로 데이터를 클러스터링하는 것은 아님을 인식하셔야 합니다. 예를 들어, 데이터가 MERGE 작업으로 변경되면, 데이터를 클러스터링하기 위해 OPTIMIZE 작업을 실행해야 할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sql
-CREATE TABLE liquid_db.trips 
+CREATE TABLE liquid_db.trips
     CLUSTER BY (pickup_datetime, pickup_latitude, pickup_longitude)
 AS
-SELECT * 
+SELECT *
 FROM delta.`dbfs:/databricks-datasets/nyctaxi/tables/nyctaxi_yellow`
 WHERE
     pickup_longitude between -74.05186503267184 and -73.83200446816883 AND
@@ -118,7 +205,18 @@ WHERE
 OPTIMIZE liquid_db.trips
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 델타 레이크 Z-오더링과 달리, 리퀴드 클러스터링을 사용하여 테이블을 최적화할 때, 파일이 최적화되었는지 여부를 알려주는 트랜잭션 로그 메타데이터가 있습니다. 따라서 나중에 OPTIMIZE 명령을 실행하여 새로운 데이터를 클러스터링할 때 파일을 건너뛸 수 있습니다. 이러한 경우에 대해 더 많은 아이디어가 있지만, 핵심적인 차이점은 ADD 프로토콜 액션의 태그 부분에 LIQUID_METADATA_ID라는 새 메타데이터 항목이 있는 것입니다.
 
@@ -140,7 +238,18 @@ second_log_file = "dbfs:/user/hive/warehouse/liquid_db.db/trips/_delta_log/00000
 
 <img src="/assets/img/2024-05-18-DeltaLakeLiquidClusteringAvisualexplanation_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 OPTIMIZE 작업을 위해 트랜잭션 로그 엔트리 안에 수집된 최대 및 최소 메타데이터 값을 검토해 봅시다.
 
@@ -159,15 +268,15 @@ def load_stats_from_commit(commit_file):
 
   stats = (
     df
-      .select("add.path", "add.size", 
+      .select("add.path", "add.size",
           F.from_json("add.stats", add_schema).alias("stats")
       )
       .selectExpr(
         "substring(path, 1, 10) as file",
-        "size", 
+        "size",
         "stats.minValues.pickup_datetime as min_pickup_datetime",
         "stats.maxValues.pickup_datetime as max_pickup_datetime",
-        "stats.minValues.pickup_latitude as min_pickup_latitude", 
+        "stats.minValues.pickup_latitude as min_pickup_latitude",
         "stats.maxValues.pickup_latitude as max_pickup_latitude",
         "stats.minValues.pickup_longitude as min_pickup_longitude",
         "stats.maxValues.pickup_longitude as max_pickup_longitude"
@@ -178,12 +287,12 @@ def load_stats_from_commit(commit_file):
     stats
       .withColumn("rect", F.expr(
         """
-          concat('POLYGON ((' , 
+          concat('POLYGON ((' ,
             min_pickup_longitude, ' ', min_pickup_latitude, ',' ,
             max_pickup_longitude, ' ', min_pickup_latitude, ',' ,
             max_pickup_longitude, ' ', max_pickup_latitude, ',' ,
             min_pickup_longitude, ' ', max_pickup_latitude, ',' ,
-            min_pickup_longitude, ' ', min_pickup_latitude, 
+            min_pickup_longitude, ' ', min_pickup_latitude,
           '))'
           )
       """))
@@ -201,14 +310,25 @@ stats.display()
 - 가독성 목적을 위해 파일 이름의 처음 10자를 고유 식별기로 사용
 - 파일 내의 모든 여행을 포함하는 경계 상자의 GeoJSON 표현 생성 (픽업 위치에 따라)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상단의 표 출력물은 특별히 흥미로운 것은 아니며, 파일이 클러스터링 열에 따라 어떻게 배치되었는지 쉽게 전달하지 않습니다. 그러나 이를 어떤 종류의 간트 차트로 시각화한다면, 파일이 시간별 범위를 포함하는 그룹으로 클러스터링되었음이 명백해질 것입니다. 파일 중첩이 발생할 수 있지만, 일반적인 주제는 시간 범위를 기반으로 한 클러스터링을 보여줍니다.
 
 ```js
 import plotly.express as px
-fig = px.timeline(stats.toPandas(), 
-    x_start="min_pickup_datetime", 
+fig = px.timeline(stats.toPandas(),
+    x_start="min_pickup_datetime",
     x_end="max_pickup_datetime",
     y="file")
 fig.update_yaxes(categoryorder="min ascending")
@@ -219,13 +339,24 @@ fig.show()
 
 Jan 2009부터 April 2010까지의 파일을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 file_group = (
   stats
     .where("""
-    min_pickup_datetime >= '2009-01-01' AND 
+    min_pickup_datetime >= '2009-01-01' AND
     max_pickup_datetime <= '2010-04-30'
     """
     )
@@ -246,12 +377,21 @@ spark.conf.set("spark.databricks.labs.mosaic.index.system", "H3")
 mos.enable_mosaic(spark, dbutils)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 %%mosaic_kepler
 file_group "rect" "geometry"
-
 
 ![Image](/assets/img/2024-05-18-DeltaLakeLiquidClusteringAvisualexplanation_6.png)
 
@@ -259,8 +399,18 @@ file_group "rect" "geometry"
 
 # 가지치기 혜택
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같은 쿼리를 실행하면 194개 파일 중 126개 파일을 제거합니다 (첫 번째 커밋에서 최적화되지 않은 파일이 3개 발생했습니다).
 
@@ -275,7 +425,18 @@ GROUP BY payment_type
 
 위의 쿼리는 8년 데이터 중 1년치의 집계 결과입니다. 순수 Hive 파티셔닝이면 더 좋은 프루닝이 가능할 수도 있지만, 여전히 집계 쿼리에 대한 일정한 값은 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 같은 해를 사용하지만 타임스 스퀘어 근처의 몇 가지 특정 레코드를 찾아보려 한다면, 더 나은 가지치기를 할 수 있어요.
 
@@ -291,17 +452,39 @@ AND pickup_longitude BETWEEN -73.985143 AND -73.985105
 
 특정 워크로드에 유용한지 확인하기 위해 철저한 테스트와 벤치마킹이 필요하지만, 전반적으로 Delta Lake 테이블의 관리를 간편하게 해주는 Liquid 클러스터링은 매우 유망해 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리
 
-리퀴드 클러스터링을 사용할 때 고려해야 할 측면이 많으며 특정 사용 사례에 맞는 동작을 조정하기 위해 많은 구성 값을 조정해야 할 것입니다. 본 게시물은 리퀴드 클러스터링이 어떻게 작동하는지를 높은 수준에서 시각적으로 보여주는 작은 시도입니다. 단순화된 사용 사례는 Hive 스타일의 파티셔닝과 Z-Order의 혜택을 결합하여 단일 최적화 방법을 사용하는 것입니다. 
+리퀴드 클러스터링을 사용할 때 고려해야 할 측면이 많으며 특정 사용 사례에 맞는 동작을 조정하기 위해 많은 구성 값을 조정해야 할 것입니다. 본 게시물은 리퀴드 클러스터링이 어떻게 작동하는지를 높은 수준에서 시각적으로 보여주는 작은 시도입니다. 단순화된 사용 사례는 Hive 스타일의 파티셔닝과 Z-Order의 혜택을 결합하여 단일 최적화 방법을 사용하는 것입니다.
 
 liquid_db를 삭제하고 정리하려면 DROP DATABASE liquid_db CASCADE를 실행하는 것을 잊지 마십시오.
 
 # 추가 읽을거리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 델타 테이블에 리퀴드 클러스터링 사용하기
 - [디자인 문서] [공개] 리퀴드 클러스터링 — Google Docs

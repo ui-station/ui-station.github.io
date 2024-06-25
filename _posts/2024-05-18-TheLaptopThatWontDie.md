@@ -3,13 +3,12 @@ title: "라이오닉실적으로는 죽지 않는 노트북"
 description: ""
 coverImage: "/assets/img/2024-05-18-TheLaptopThatWontDie_0.png"
 date: 2024-05-18 17:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TheLaptopThatWontDie_0.png
 tag: Tech
 originalTitle: "The Laptop That Won’t Die"
 link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 ---
-
 
 <img src="/assets/img/2024-05-18-TheLaptopThatWontDie_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 
 정말 멈추지 않아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그거에 대해서 전체 포스트를 쓸 건데, 간단하게 말하자면...
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 
 오래된 중고 Thinkpad을 사세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 이 문장을 번역해 보겠습니다.
 
@@ -41,7 +62,18 @@ link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 
 엄청 비싼 물건이긴 했지만, 노트북을 살 때 목표는 수년 동안 사용할 수 있을 만큼 훌륭한 품질의 것을 사는 것이에요. 전자 폐기물도 싫어해서 노트북을 수리해서 가능한 한 오래 사용하려고 노력해요. 2010년에 첫 맥북 프로를 샀었는데, 총 7년 이용했어요 — 중간에 고장 난 메인보드도 교체했는데, 전세계 3년 보증기간이 끝나기 전에 다행히 수리해줬어요. 그래서 비용 지불할 필요 없이 해결했답니다! 호호.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 더 새로운 2017 맥북 프로? 예전에 수리를 몇 번 받기도 했어요. 사고로 물에 물려서 내부 작업이 필요했었죠. 버터플라이 키보드가 고장 나자 바꿔야 했고, 배터리도 두 번이나 교체했어요.
 
@@ -51,7 +83,18 @@ link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 
 맥북에서 작업하고 있었고, 점심 때 리드를 닫았어요. 15분 후 다시 열어보니 기계가 꺼져 있었어요. 내가 뭘 해도 살려낼 수가 없었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자전거를 타고 현지 노트북 수리소에 가져다 놓았어요. 수 시간 후, 기술자가 무슨 일이 벌어졌는지 알려주기 위해 문자 메시지를 보냈어요. 아무래도 로직 보드에 전기 단락이 있었나 보다: “배터리와 통신하는 칩이 결함이 있는 것 같습니다,” 라고 썼어요. 그 칩이 로직 보드의 납땜된 일부라는 점에서, 해결책은 완전 새 메인보드를 설치하는 것이었어요. 부품과 인건비를 합친 비용이 충분히 높아서 — 이 기기가 이전에 고장났던 일들을 고려하면 — 그를 수리하는 것은 추천하지 않는다고 했어요.
 
@@ -61,7 +104,18 @@ link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 
 한편, 내 새 노트북을 주문할 준비를 하면서요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 휴대용 기계가 필요해요.
 
@@ -71,21 +125,54 @@ link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 
 2018년에 리눅스 머신이자 백업 노트북으로 사용할 고 대아이를 원했을 때 샀어요. 그런데 돈을 많이 쓰고 싶지 않았어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "‘테이블’ 태그를 Markdown 형식으로 변경해드릴게요."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 12살이라니 생각하면 이 기계는 정말 빠르게 작동합니다. SSD 하드 드라이브와 오래된 시스템에 부드럽게 작용하는 리눅스 덕분이죠. 어플리케이션이 내 맥북에서 하는 것과 같이 빠르게 열리고 닫히죠.
 
 아마도 이 Thinkpad에서 느린 오래된 CPU에 부담을 주는 일을 하고 있지는 않습니다. 게임을 하지 않고 있고, 비디오 편집도 음악 편집도 플러그인이 가득한 것도 하고 있지 않습니다. (그럼에도 Audacity를 사용하여 가벼운 오디오 편집은 꽤 잘되었답니다.)
 
-이 노트북에 대해 할 수 있는 최악의 말은 무거워요. 게다가 화면 해상도가 낮고 흐릿한데요, 저같은 안구가 안 좋은 사람에게는 좋지 않습니다. 
+이 노트북에 대해 할 수 있는 최악의 말은 무거워요. 게다가 화면 해상도가 낮고 흐릿한데요, 저같은 안구가 안 좋은 사람에게는 좋지 않습니다.
 
 하지만, 웹에서 작업을 하는 데 기본적인 기계가 필요하다면, 비디오 통화하기 (Zoom, Microsoft Teams, 많은 리눅스 전용 비디오 채팅이 아주 잘 됩니다), 음악 듣기, Discord 사용하기? 그럼 완벽합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 중요한 것은, 이 기계는 부숴지지 않는 것 같아요.
 
@@ -95,7 +182,18 @@ link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 
 하지만… 많은 사람들이 이 노트북이 만들어진 지 오래되었음에도 불구하고, 옛날부터 오랫동안 자신의 주력 노트북으로 사용해 왔어요. 그리고 그 중 많은 기계들은 여전히 잘 작동하죠. 저가 최근 Mastodon에서 내 T420를 언급했을 때, 몇몇 사람들이 동일 연식의 ThinkPad를 사용 중이며, 모두 완벽하게 작동한다고 언급했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 옛날 노트북 Thinkpad들? 진짜로 탱크처럼 튼튼하게 만들어졌어요.
 
@@ -105,7 +203,18 @@ link: "https://medium.com/@clivethompson/the-laptop-that-wont-die-0c478c3fe46c"
 
 (이 내용이 마음에 들었다면? 그럼 트랙패드나 마우스를 꺼내서 "박수" 버튼을 찾아 클릭하세요! 독자 당 최대 50번 클랩이 가능하답니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 매주 두 번 미디엄에 글을 올리고 있어요. 제 이메일로 각 포스트를 받아보시려면 여기를 팔로우해주세요!
 

@@ -3,13 +3,12 @@ title: "쿠버네티스를 시작할 때 알았더라면 좋았을 것 같은 �
 description: ""
 coverImage: "/assets/img/2024-05-27-WhatIWishIKnewWhenIGotStartedwithKubernetes_0.png"
 date: 2024-05-27 17:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-WhatIWishIKnewWhenIGotStartedwithKubernetes_0.png
 tag: Tech
 originalTitle: "What I Wish I Knew When I Got Started with Kubernetes"
 link: "https://medium.com/aws-in-plain-english/what-i-wish-i-knew-when-i-got-started-with-kubernetes-177cf717f5ef"
 ---
-
 
 Kubernetes를 처음 봤을 때는 복잡해 보일 수 있지만, 이해해야 할 수많은 핵심 개념과 용어가 있습니다. 더욱 사실적인 것은 Kubernetes에 대해 깊이 파고들기 위해서는 많은 실전 실습이 필요하다는 점입니다.
 
@@ -19,7 +18,18 @@ Kubernetes를 처음 봤을 때는 복잡해 보일 수 있지만, 이해해야 
 
 # Kubernetes를 배워야 하는 이유?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OpenAI가 쿠버네티스에 배포되어 7,500개의 워커 노드로 확장되고 있다는 걸 알고 계셨나요? 그리고 Apple과 같은 기술 거물들은 2022년에 아파치 메소스에서 쿠버네티스로 전환하여 쿠버네티스를 주요 컨테이너화 플랫폼으로 채택했어요.
 
@@ -29,7 +39,18 @@ OpenAI가 쿠버네티스에 배포되어 7,500개의 워커 노드로 확장되
 
 2024년에 올바른 방법으로 쿠버네티스를 배우는 데 도움이 되는 미디움 포스트를 작성했어요. 그리고 이 분야에서 경력을 시작하기 위해 학습을 확장하고 싶다면, 쿠버네티스 인증을 취득하는 것이 좋은 길일 거예요. 아래 책이 도움이 될 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 관리 Kubernetes 플레이그라운드 활용하기
 
@@ -40,7 +61,18 @@ OpenAI가 쿠버네티스에 배포되어 7,500개의 워커 노드로 확장되
 
 ## Killercoda 플레이그라운드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Killercoda는 로컬 설정이나 자원 소모가 많은 브라우저의 귀찮음 없이 완전히 기능적인 Linux 또는 Kubernetes 환경에 즉시 브라우저 액세스를 제공하는 가상 놀이터입니다. 원격 유지 보수는 로컬에서 액세스했을 때 원활한 사용성을 보장합니다. 최신 상태를 유지하기 위한 계속된 헌신으로, Killercoda는 지난릴리즈 후 몇 주만에 최신 Kubeadm Kubernetes 버전을 지속적으로 업데이트합니다.
 
@@ -50,7 +82,18 @@ Killercoda는 로컬 설정이나 자원 소모가 많은 브라우저의 귀찮
 
 ## 킬러 셸 플레이그라운드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 시나리오나 시험 시뮬레이션을 찾고 있는 분들은 CKS, CKA, CKAD, LFCS, 그리고 LFCT 시험을 위해 디자인된 Killer Shell을 살펴보세요. Killer Shell은 실제 시뮬레이터와 인터랙티브 학습 환경을 제공하여 사용자가 시나리오를 철저히 탐구하고 편리하게 학습할 수 있도록 돕습니다. 위 시험 중 하나를 패스하고 싶다면, 공식 CKA 시험 시뮬레이터인 Killer Shell에서 제공되는 샘플 시나리오를 살펴보는 것을 강력히 추천합니다.
 
@@ -60,7 +103,18 @@ Killercoda는 로컬 설정이나 자원 소모가 많은 브라우저의 귀찮
 
 ## Kubernetes Playground에서 Kubernetes와 놀아보세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Play with Kubernetes는 도커가 제공하는 랩 사이트로, K8s 플레이그라운드를 제공합니다. 사용자는 빠르게 K8s 클러스터를 시작하고 브라우저에서 직접 무료 Alpine Linux VM을 경험할 수 있습니다. Docker-in-Docker (DinD)를 사용하여 여러 VM/PC를 시뮬레이션하여 원활한 경험을 제공합니다. 그들의 안내에 따라 GitHub 저장소에서 최신 정보를 확인하세요.
 
@@ -70,7 +124,18 @@ Play with Kubernetes는 도커가 제공하는 랩 사이트로, K8s 플레이�
 
 Kubernetes는 단일 노드 및 다중 노드 아키텍처를 모두 지원하며, 각각의 장점과 사용 사례가 있습니다. Kubernetes 클러스터 아키텍처에 대해 더 자세히 알고 싶다면 이 포스트를 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 각각의 것을 살펴보겠습니다 :
 
@@ -80,7 +145,18 @@ Kubernetes는 단일 노드 및 다중 노드 아키텍처를 모두 지원하�
 
 단일 노드 배포를 지원하는 Kubernetes 배포 중 하나는 Minikube입니다. Minikube는 사용자의 워크스테이션에서 로컬로 실행되는 가벼운 Kubernetes 클러스터를 제공하여 개발자가 Kubernetes 기능과 응용 프로그램을 쉽게 실험할 수 있도록 하며 완전한 규모의 클러스터가 필요하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 예로는 MicroK8s가 있습니다. MicroK8s는 엣지 컴퓨팅 및 사물인터넷(IoT) 디바이스를 위한 최소한의 단일 노드 Kubernetes 배포를 제공합니다. 이러한 Kubernetes 배포는 단일 노드 클러스터의 설정과 관리를 간소화하여 개발자들이 Kubernetes 개발 및 테스트를 시작하기 편리하게 만듭니다.
 
@@ -90,7 +166,18 @@ Kubernetes는 단일 노드 및 다중 노드 아키텍처를 모두 지원하�
 
 그러나 대부분의 엔터프라이즈 환경은 주로 고유노드 클러스터를 만족시키기 위해 단일 노드 클러스터보다 많은 노드를 필요로 합니다. 이러한 환경은 주로 다중 노드 설정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kubernetes에서 다중 노드 아키텍처는 Kubernetes 구성 요소를 여러 대의 머신에 분산하여 중복성과 확장성을 제공합니다. 이는 고가용성 및 오류 허용성을 가능하게 하며, 프로덕션 환경 및 대규모 배포에 이상적입니다.
 
@@ -98,7 +185,18 @@ Kubernetes에서 다중 노드 아키텍처는 Kubernetes 구성 요소를 여�
 
 최종적으로, 단일 노드 및 다중 노드 아키텍처 사이의 선택은 Kubernetes 배포의 구체적인 요구 사항과 목표에 따라 다릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 첫 번째 로컬 쿠버네티스 클러스터 설정하기
 
@@ -108,7 +206,18 @@ minikube를 사용하여 Kubernetes 클러스터를 만드는 것은 로컬 Kube
 
 로컬이나 클라우드 기반 Linux VM에서 minikube 이진 파일을 검색하기 위해 curl 명령을 사용하고, 다음과 같이 /usr/local/bin/minikube에 설치하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
@@ -123,7 +232,18 @@ minikube –-help
 
 ## 단일 노드 Kubernetes 클러스터 프로비저닝
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Minikube를 사용하여 단일 노드 Kubernetes 클러스터를 프로비저닝하려면 단순히 다음 명령을 사용할 수 있어요 :
 
@@ -137,7 +257,18 @@ minikube start
 minikube start --memory 8192 --cpus 4
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 명령이 실행된 후, 당신의 minikube 클러스터는 프로비저닝 프로세스에 있습니다. 마지막에는 minikube Kubernetes 클러스터를 사용할 준비가 되었다는 메시지가 표시될 것입니다.
 
@@ -149,12 +280,23 @@ Minikube 클러스터는 단일 노드로 구성되어 있으며, 통제 평면 
 Kubectl get node
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령어의 단축키를 사용해보세요:
 
 ```js
-alias k=kubectl 
+alias k=kubectl
 k get no
 ```
 
@@ -165,7 +307,18 @@ k get no
 - Kubernetes 버전
 - 초기 배포 이후의 노드 연령
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Minikube 클러스터 구성
 
@@ -177,7 +330,18 @@ Bash
 minikube stop
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 minikube config set 명령어를 사용하면 원하는 설정을 minikube 클러스터에 적용할 수 있어요.
 
@@ -193,7 +357,18 @@ minikube config set cpus 4
 minikube start
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 미니큐브 클러스터를 사용할 준비가 되었어요.
 
@@ -205,7 +380,18 @@ minikube start
 minikube delete --all
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 실습이 최고입니다!
 
@@ -215,7 +401,18 @@ minikube delete --all
 
 # 기대가 됩니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 Kubernetes를 쉽게 설정할 수 있는 다양한 옵션이 많이 있다는 것을 기쁘게 생각해요. 대부분의 플레이그라운드는 무료로 제공되니 현명한 선택을 해서 다양한 방법을 시도해보세요. 이 블로그가 2024년 Kubernetes를 시작하려는 분들에 도움이 되길 진심으로 바랍니다! 더 알고 싶다면 제 미디엄 팔로우나 YouTube 채널을 구독해주시고, 댓글로 의견을 공유해주세요.
 

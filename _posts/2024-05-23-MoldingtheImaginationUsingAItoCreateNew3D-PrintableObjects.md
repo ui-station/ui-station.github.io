@@ -18,7 +18,18 @@ link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-
 
 모든 경우에, 텍스트 프롬프트로 시작하여 3D 메시를 생성하고, Blender(오픈 소스 데스크톱 애플리케이션)를 사용하여 3D 메시를 수정하고 정리했습니다. 그 후, 데스크톱 '슬라이서' 앱인 Ultimaker Cura와 PrusaSlicer를 사용하여 3D 메시를 준비하고 미리보기한 뒤, 지역 도서관에서 이들을 출력했습니다. 이 물체들을 출력해 보고 싶으시다면, 제 Thingiverse 프로필 페이지에서 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4가지 예시를 살펴본 후에, AI를 사용하여 3D 객체를 생성하는 것이 사회적 영향과 윤리에 미치는 영향에 대해 다뤄볼 거에요. 다양한 서비스와 시스템으로부터 소유권 권리에 대한 정책을 논의할 거에요. 마지막으로 제 실험에서 배운 내용을 요약하겠습니다.
 
@@ -28,7 +39,18 @@ link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-
 
 2D 이미지를 만들기 위해, Midjourney 계정에 로그인하고 이 프롬프트를 입력했어요. "간단한 기하학적인 3D 프린팅된 조각상, 단색의 흰색 플라스틱, 작은 흰색 플라스틱 피달 위에 서 있는 상태, 회색 배경" 이렇게 작성해보았어요. 그 결과로 아래에 보이는 4개의 썸네일 이미지가 생성되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_0.png)
 
@@ -38,7 +60,18 @@ link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-
 
 2D 이미지에서 3D 메쉬를 만드는 다음 단계는 장면에서 배경을 제거하는 것이에요. 많은 AI 모델이 이를 할 수 있지만, stability.ai의 무료 서비스인 Clipdrop를 이용하면 잘 할 수 있어요. 웹 브라우저를 통해 접근할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 이미지 시퀀스에서 확인할 수 있듯이 Clipdrop는 사용하기 매우 쉽습니다. 사이트에 접속하여 원본 이미지를 업로드하고 "배경 제거" 버튼을 클릭했습니다. 시스템이 그림자를 포함한 배경을 훌륭하게 제거하고 조각상의 모든 세부 사항을 유지했습니다. 그런 다음 생성된 이미지를 다운로드했습니다.
 
@@ -48,7 +81,18 @@ link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-
 
 3D 메쉬를 생성하려면 3dMaker.ai에 들어가 계정을 생성하고 배경이 제거된 2D 이미지를 업로드했습니다. 3D 메쉬를 생성하는 두 가지 선택지가 있습니다: US$25의 표준 품질과 US$40의 고품질. 사이트에는 표준 품질이 경직면, 유기물질, 매우 세밀한 입력에 적합하고 고품질은 유기물, 정말 세밀한 입력에 적합하다고 합니다. 저는 표준 품질을 선택하고 "생성" 버튼을 클릭했습니다. 결과물은 약 30분이 걸렸고, OBJ 형식으로 모델을 다운로드했습니다. 결과는 훌륭했습니다! 원본 이미지의 세부 사항을 포착하고 이미지의 뒷부분을 정확하게 재구성했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대단하게도, 3D Maker AI는 조각물 앞면의 이미지 하나만을 기반으로 조각물 뒷면의 세부사항을 생성했습니다. 본문에서는 나중에 이 서비스의 또 다른 출력물 예시를 볼 수 있습니다.
 
@@ -58,7 +102,18 @@ link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-
 
 도서관은 다양한 종류의 이용 방법을 제공합니다. 일부는 "메이커스페이스" 안에 3D 프린터를 갖추고 있으며, 시민들이 창조하고 발명하며 배우는 협업 작업 공간입니다. 다른 도서관은 온라인 프린팅 서비스를 제공하여 시민들이 3D 메시를 업로드해 출력을 요청할 수 있습니다. 또한 도서관은 인쇄 가능한 최대 크기나 프린팅 재료의 색상 선택과 같은 서비스에서도 차이가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3D 객체 출력
 
@@ -68,7 +123,18 @@ link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-
 
 또한 출력물을 화이트 필라멘트를 사용하여 우번 공립 도서관의 온라인 양식을 통해 출력했습니다. 그들은 11인치까지 가능한 프린트를 허용하지만, 제 프린트 시간 때문에 6.5인치로 출력했습니다. 10시간 이상 소요되는 작업은 허용하지 않습니다. 다른 도서관과 달리 우번은 작업에 사용된 소재에 대해 요금을 부과합니다. 그러나 월별 5달러의 신용을 발행합니다. 신용을 적용한 후 총 비용은 3.63달러입니다. 여기에 두 개의 출력물이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 양쪽으로 출력된 물체는 모두 훌륭히 나왔어요! 월섬에서 출력된 것은 높이가 단 4.75인치이지만, 원본 미죄니 이미지에서 많은 세부사항을 보여줍니다. 상대적으로 작은 규모로 출력되어 몇 가지 계층화 물표가 보입니다. 월섬의 무료 출력 서비스는 최대 8시간 동안 물체를 생성하도록 제한되어 있어요. 우번에서 출력된 것은 높이가 6.5인치로 더 나아 보이며, 계층화 물표가 더 적어요. 하지만 조각의 표면에 몇 개의 어두운 자국이 있습니다.
 
@@ -78,7 +144,18 @@ link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-
 
 ## Shap-E 모델
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2023년 5월에 OpenAI는 Shap-E라는 텍스트-3D 모델을 출시했습니다. 이 시스템은 암시 함수의 매개변수를 생성하여 상세한 3D 비주얼을 렌더링할 수 있도록 3D 메쉬를 생성하는 데 사용되었습니다. 그들은 두 단계의 훈련 과정을 사용했는데, 먼저 3D 에셋을 매개변수에 매핑하고 그 결과를 조건부 확산 모델로 정제했습니다. 이 방식을 통해 텍스트 프롬프트로부터 다양한 3D 모델을 효율적으로 생성할 수 있습니다. 각 샘플은 GPU에서 대략 13초가 걸립니다. OpenAI는 훈련된 모델의 소스 코드와 가중치를 MIT 오픈소스 라이선스 하에 GitHub에 공개했습니다.
 
@@ -90,7 +167,18 @@ link: "https://medium.com/towards-data-science/molding-the-imagination-using-ai-
 
 또한 이미지 조건부 잠재 확산 모델도 있지만, 이 프로젝트에서는 사용하지 않았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 파이썬에서 Shap-E 실행하기
 
@@ -108,7 +196,18 @@ diffusion = diffusion_from_config(load_config('diffusion'))
 
 이 코드는 전송기, 디코더 및 텍스트 확산 모델 세 개를 다운로드해요. GPU가 있다면 모든 모델이 GPU로 로드돼요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Shap-E를 사용하여 3D 개체 생성하기
 
@@ -144,7 +243,18 @@ for i, latent in enumerate(latents):
 
 여기서 "돌고래"라는 텍스트 프롬프트를 사용하여 Shap-E를 통해 잠재 매개변수를 샘플링하는 방법을 확인할 수 있어요. 저는 랜덤 시드를 0으로 초기화했기 때문에 항상 같은 메쉬가 렌더링됩니다. 랜덤 시드를 1, 2 또는 다른 정수로 변경하면 메쉬의 다양한 변형이 생성됩니다. 이것이 최종 이미지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_1.png)
 
@@ -161,9 +271,18 @@ for i, latent in enumerate(latents):
 
 이 코드는 잠재변수를 사용하여 PLY라는 3D 객체를 위한 또 다른 파일 형식의 메쉬를 생성합니다. 이게 Blender에서 메쉬가 어떻게 보이는지에요.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Molding the Imagination Using AI to Create New 3D-Printable Objects](/assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_2.png)
 
@@ -173,7 +292,18 @@ for i, latent in enumerate(latents):
 
 돌고래의 측면을 매끄럽게 만들고 지느러미를 수정한 것을 볼 수 있어요. Shap-E가 받침대를 잘 렌더링해 주었는데, Blender에서 거의 수정이 필요했어요. 받침대의 기둥 바닥에 가는 얇은 원기둥만 추가했어요. 다음으로, 모델을 STL 파일로 저장했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3D 객체 출력
 
@@ -183,7 +313,18 @@ for i, latent in enumerate(latents):
 
 ![3D Object](/assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 것도 잘 나왔네요. 작게 인쇄되어 5인치만큼 넓어서 인쇄 과정의 계층적인 선을 볼 수 있어요. 또한 상단의 등지느러미는 매우 얇고 더 잘 정의되어야 합니다.
 
@@ -193,7 +334,18 @@ for i, latent in enumerate(latents):
 
 기계 학습에서 "사전"이란 특정 입력을 받기 전에 모델이 가지고 있는 지식을 말해요. MVDream의 다중 뷰 확산 모델은 특정 3D 표현에 관계없이 3D 사전 역할을 하는데요. 이는 텍스트 프롬프트를 기반으로 다양한 각도에서 3D 표현을 생성할 수 있어 다른 3D 데이터 형식에 구속되지 않아 다양한 3D 표현을 유연하게 생성할 수 있습니다. 아래는 MVDream이 특정 프롬프트로 생성한 몇 가지 예시 객체입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지는 MVDream이 텍스트 프롬프트로부터 다양한 각도의 일관된 상세 렌더링을 보여주는 멀티뷰 3D 객체를 생성할 수 있는 능력을 보여줍니다. 우주 비행사를 탄 호스와 조각된 독수리를 비롯한 예시는 모델의 실용적인 응용을 보여주며, 정확성을 유지하면서 다양한 3D 이미지를 생성하는 데 모델을 사용하는 사례를 보여줍니다.
 
@@ -222,7 +374,18 @@ display(pil_image)
 
 위 코드는 텍스트 프롬프트로부터 3D 객체의 다수의 2D 뷰를 생성하기 위해 MVDream을 사용한 방법을 보여줍니다. 생성되는 객체의 원하는 속성을 지정하고 (남성 버스트의 큐비즘 스타일 조형물) 모델을 구성하여 네 가지 다른 뷰를 생성하도록 설정했습니다. 그런 다음 이러한 뷰를 처리하여 그림을 조합하여 IPython의 display 함수를 사용하여 측면에 나란히 표시한 이미지를 만들었습니다. 결과는 여기에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3D 프린팅된 큐비즘 스타일의 남성 상반신을 보여주는 네 각도의 이미지가 있습니다. 각각의 뷰는 서로 일관성이 있으며, 텍스트 프롬프트를 정확하게 해석하고 시각화하는 모델의 능력을 강조합니다. 조각의 질감은 3D 프린트와 유사한 입자를 시사하며, 기단 위에 배치된 것은 전시 준비가 된 외관을 제공합니다.
 
@@ -232,7 +395,18 @@ display(pil_image)
 
 3D Maker AI의 출력물은 원본 형태에 근접하지만 몇 가지 눈에 띄는 차이가 있습니다. MVDream의 출력물은 더 명확하고 각진 평면을 보여줍니다, 특히 얼굴의 경계 부분에 있어서 이는 프롬프트에 언급된 큐비즘 스타일의 특성입니다. 3D Maker AI 서비스에서 렌더링된 메시에서는 머리 형태가 더 부드럽게 나타나며, 얼굴의 특징과 머리의 평면 사이에 더 점진적인 전환을 보여줍니다. 예술적 효과를 내기 위해 Prusa 슬라이서의 다각형 축소 설정을 사용하여 머리를 보다 각진 형태로 만들었습니다. 결과물을 다음과 같습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잘 보이지는 않지만, 머리에는 위에 표시된 버전보다 더 명확한 각진 삼각형이 많이 있습니다. 나는 이러한 예술적 선택을 한 것은 조각이 더 입체적 스타일로 보이게 하기 위함이었다.
 
@@ -242,7 +416,18 @@ display(pil_image)
 
 나무 서포트는 이 3D 조각에서 특히 기묘하게 보인다. 그러나 소프트웨어는 이 조각을 만들 때 이마의 벌어짐을 지지하는 방법이 필요했다. 완성된 조각의 부착 지점이 최소화되었기 때문에 서포트를 쉽게 제거할 수 있었다. 여기 최종 조각이다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_5.png)
 
@@ -252,7 +437,18 @@ display(pil_image)
 
 MVDream 모델은 텍스트 프롬프트에서 3D 객체의 여러 뷰를 렌더링하는 데 효과적이지만, 3D 메쉬를 생성하지는 않습니다. 여기서 threestudio가 필요합니다. threestudio는 사용자가 MVDream을 포함한 다양한 텍스트-3D 및 이미지-3D 구성 요소를 실험할 수 있는 모듈식 프레임워크를 제공하는 오픈 소스 프로젝트입니다. 저자들이 논문에서 말한 내용을 살펴보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 논문에서 가져온 플로우 다이어그램이에요. 여기 주요 구성 요소들이 보여져요.
 
@@ -262,7 +458,18 @@ AI를 활용해 텍스트나 이미지에서 3D 콘텐츠를 생성하는 threes
 
 저는 threestudio를 MVDream과 함께 구글 Colab에서 실행했어요, 하지만 모델은 16기가 이상의 VRAM을 가진 GPU가 필요했어요. 그래서 A100 GPU에 액세스하기 위해 Colab Pro 구독이 필요했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 threestudio와 MVDream 확장 프로그램을 설치한 후, 다음 코드를 사용하여 텍스트 프롬프트에서 3D 객체를 생성했습니다.
 
@@ -278,7 +485,18 @@ prompt = """기하학적 모양을 가진 3D 프린트 추상 조각품,
 
 ## 훈련된 체크포인트에서 3D 매쉬 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 학습 최적화를 실행하는 동안 시스템은 형성 중인 모양의 상태를 보여주는 이미지를 렌더링합니다. 여기는 프롬프트에서 나온 결과물 "간단한 기단에 놓인 연한 회색 플라스틱의 지오메트릭 모양이 있는 3D 프린트 추상 조각"입니다.
 
@@ -288,7 +506,18 @@ prompt = """기하학적 모양을 가진 3D 프린트 추상 조각품,
 
 ## 3D 객체 출력
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 단계는 형태를 정의하는 3D 메쉬를 내보내는 것입니다. 이 과정에서 사용한 명령어는 다음과 같습니다.
 
@@ -305,7 +534,18 @@ system.exporter.save_texture=False system.exporter.fmt=obj
 
 위의 렌더링과 유사하지만 좀 더 울퉁불퉁하고 아래쪽에 추가 재질이 조금 더 있습니다. Blender에서 메쉬를 정리하여 대부분의 기둥을 제거하고 대신으로 테이퍼된 큐브를 추가했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3D 모델 인쇄하기
 
@@ -315,7 +555,18 @@ system.exporter.save_texture=False system.exporter.fmt=obj
 
 <img src="/assets/img/2024-05-23-MoldingtheImaginationUsingAItoCreateNew3D-PrintableObjects_7.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것도 잘 나왔어요. 질감이 꽤 울퉁불퉁하고 서포트의 잔해들이 보이지만, 전반적으로 좋아 보여요. 다시 인쇄한다면 빌드플레이트에만 연결되는 나무 서포트를 사용할 것 같아요.
 
@@ -325,7 +576,18 @@ system.exporter.save_texture=False system.exporter.fmt=obj
 
 3D 오브젝트 생성 기술의 발전은 기술 분야에서 중요한 한 걸음을 나아가는 것으로, 개인들이 아이디어를 물리적 모델로 변환할 수 있도록 합니다. 상용 및 오픈소스 도구에 의해 용이해진 이 과정은 창의적 표현과 제조에 새로운 차원을 제공합니다. 그러나 그 기회와 함께 사회적 영향을 고려하는 것이 중요합니다. 이러한 기술은 혁신이 긍정적이고 부정적인 결과를 가져올 수 있는 명확한 예시를 제공하며, 사용과 영향을 신중히 고려해야 한다는 필요성을 강조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Shap-E의 사회적 영향
 
@@ -335,7 +597,18 @@ OpenAI의 논문에서는 개발한 모델의 행동에 영향을 줄 것으로 
 
 MVDream 창조자들은 자신들의 모델의 사회적 영향에 대해 논문에서 논의했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 텍스트에서 3D 모델로의 사회적 영향을 탐색하는 과정에서, AI의 혁신 잠재력을 활용하고 도입과 함께 따르는 윤리적, 문화적, 경제적 결과에 대해 신중하게 균형을 맞추는 것이 중요함을 상기시킵니다.
 
@@ -345,7 +618,18 @@ MVDream 창조자들은 자신들의 모델의 사회적 영향에 대해 논문
 
 ## 중간 사용자의 소유권
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Midjourney 최근에 서비스를 통해 생성된 이미지의 소유 정책을 변경했습니다. 회사는 사용자가 생성한 이미지를 소유하기 위해 유료 구독을 요구했었지만, 개인 사용자에 대해서는 이 정책이 완화되었습니다. 아래는 업데이트된 정책 내용입니다.
 
@@ -355,7 +639,18 @@ Midjourney 최근에 서비스를 통해 생성된 이미지의 소유 정책을
 
 3dMaker.AI를 사용할 때의 소유권은 간단합니다. 사이트 FAQ에는 “3dMaker.AI에서 생성된 모델은 100% 당신의 것입니다.” 라고 명시되어 있습니다. 이를 해석하기 위해 로펌을 고용할 필요가 없죠! 😊
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요약
 
@@ -365,7 +660,18 @@ Midjourney 최근에 서비스를 통해 생성된 이미지의 소유 정책을
 
 3D 객체를 만들고 출력하는 과정을 통해, 프로젝트는 분야에서의 혁신과 접근성의 조화를 강조하며, 창의적 과정에서 AI를 사용함으로써 윤리적 및 실용적 영향을 고민하게 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 소스 코드
 
@@ -375,7 +681,18 @@ Midjourney 최근에 서비스를 통해 생성된 이미지의 소유 정책을
 
 # 감사의 말
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사를 검토하고 피드백을 제공해 준 Jennifer Lim에게 감사드립니다. 또한 이 기사에 사용된 오브젝트를 인쇄하는 데 도움을 준 Waltham Public Library Makerspace 스태프, Watertown Free Public Library의 Hatch Makerspace, 그리고 Woburn Public Library 스태프에게도 감사드립니다.
 
@@ -385,7 +702,18 @@ Midjourney 최근에 서비스를 통해 생성된 이미지의 소유 정책을
 
 [2] Yichun Shi 외, MVDream: 3D 생성을 위한 다중 뷰 확산 (2023)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [3] Ying-Tian Liu et al., threestudio: a modular framework for diffusion-guided 3D generation (2023)
 
@@ -395,7 +723,18 @@ Midjourney 최근에 서비스를 통해 생성된 이미지의 소유 정책을
 
 본문에 나온 3D 객체입니다. 여기서 상호작용하거나 STL 파일을 다운로드해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Figure 8 조각
 

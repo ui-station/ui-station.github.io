@@ -3,13 +3,12 @@ title: "SwfitUI 네비게이션 - 코디네이터 패턴 2부 -  경고 "
 description: ""
 coverImage: "/assets/img/2024-05-20-SwiftUINavigationThecoordinatorpatternpart2Alert_0.png"
 date: 2024-05-20 16:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SwiftUINavigationThecoordinatorpatternpart2Alert_0.png
 tag: Tech
 originalTitle: "SwiftUI Navigation — The coordinator pattern part 2 — ⚠️ Alert ⚠️"
 link: "https://medium.com/@ales.dieo/swiftui-navigation-the-coordinator-pattern-part-2-%EF%B8%8F-alert-%EF%B8%8F-534f75c68916"
 ---
-
 
 <img src="/assets/img/2024-05-20-SwiftUINavigationThecoordinatorpatternpart2Alert_0.png" />
 
@@ -19,7 +18,18 @@ Part 1에서는 네비게이션 라우팅 로직을 coordinators로 격리시켰
 
 오늘은 이 주제에 대해 이야기할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SwiftUI에서는 다양한 수정자(modifier)를 제공하여 Alert를 표시할 수 있습니다. 일반적으로 이러한 Alert 수정자는 뷰(View)에 설정되며, ViewModel/View에는 Alert를 표시할지 여부를 결정하는 데 사용되는 Binding`Bool`이 있습니다. 이 논리는 저에게는 좀 더 화면에 적합하게 표현되도록 조정되어야 한다고 생각합니다. 그렇다면 그에 대비할 방법을 찾아봅시다.
 
@@ -28,7 +38,7 @@ Alert에는 다양한 기능이 있을 수 있습니다. 타이틀, 메시지, �
 ```js
 import SwiftUI
 
-protocol AlertDisplayable { 
+protocol AlertDisplayable {
     var title: String { get }
     var message: String? { get }
     var buttons: [AlertButton] { get }
@@ -44,7 +54,7 @@ struct AlertButton {
         self.role = role
         self.action = action
     }
-    
+
     static func actionButton(title: String, action: @escaping () -> Void) -> Self {
         AlertButton(title: title, role: nil, action: action)
     }
@@ -61,7 +71,18 @@ struct AlertButton {
 
 이제 part 1에서 생성한 NavigationController에 다음을 추가할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 @Observable final class NavigationController {
@@ -74,7 +95,7 @@ struct AlertButton {
 }
 ```
 
-일관성을 유지하기 위해 ****Path 규칙을 따르고 있지만 원하는 대로 이름을 지정할 수 있습니다.
+일관성을 유지하기 위해 \*\*\*\*Path 규칙을 따르고 있지만 원하는 대로 이름을 지정할 수 있습니다.
 
 ```swift
 import SwiftUI
@@ -91,7 +112,18 @@ struct AlertPath {
 
 또한 설정한 후 경고를 처리하는 CoordinatedView를 업데이트해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct CoordinatedView<C: Coordinator>: View {
@@ -154,7 +186,18 @@ struct AlertModifier: ViewModifier {
 - 사용 가능한 각 버튼에 대해 제공된 title, role 및 action으로 SwiftUI Button을 만듭니다. 버튼을 하나도 보내지 않으면 시스템이 단일 'OK' 버튼 알림으로 기본 설정됩니다.
 - 필요에 따라 알림 아래에 제목 아래에 알림에 대한 일부 설명 정보가 포함될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번 시도해 보고 실제로 잘 작동하는지 확인해 봅시다. 알림 유형을 생성해 보겠습니다.
 
@@ -229,10 +272,10 @@ struct FirstView: View {
         coordinator.presentAlert(
                 SomeAlert.alert(buttons: [
                     .actionButton(title: "주요 작업") {
-                        print("작업 버튼 누름") // <- 버튼 클릭 시 호출되는 클로저 
+                        print("작업 버튼 누름") // <- 버튼 클릭 시 호출되는 클로저
                     },
                     .cancelButton(title: "취소") {
-                        print("취소 버튼 누름") // <- 버튼 클릭 시 호출되는 클로저 
+                        print("취소 버튼 누름") // <- 버튼 클릭 시 호출되는 클로저
                     }
                 ]))
     }
@@ -253,7 +296,18 @@ struct FirstView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 viewModel에서 프로그래밍 방식으로 알림을 표시할 수 있게 해주며, 사용자가 버튼을 클릭할 때 viewModel이 선택적으로 콜백을 처리할 수 있게 합니다. 이 경우 뷰 자체 "FirstView"는 무엇이 일어나는지 전혀 모릅니다. 알고 있는 것은 didTapButton뿐입니다.
 
@@ -263,6 +317,17 @@ struct FirstView: View {
 
 이 내용이 유용하다고 생각되면 좋겠습니다. 피드백이나 개선 제안이 있으면 알려주세요. 이 글이 유익했다면 공유해 주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋은 하루 보내세요!

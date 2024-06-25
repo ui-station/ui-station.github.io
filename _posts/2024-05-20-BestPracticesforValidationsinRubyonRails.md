@@ -3,14 +3,12 @@ title: "루비 온 레일즈에서의 유효성 검사를 위한 모범 사례�
 description: ""
 coverImage: "/assets/img/2024-05-20-BestPracticesforValidationsinRubyonRails_0.png"
 date: 2024-05-20 15:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BestPracticesforValidationsinRubyonRails_0.png
 tag: Tech
 originalTitle: "Best Practices for Validations in Ruby on Rails"
 link: "https://medium.com/@patrickkarsh/best-practices-for-validations-in-ruby-on-rails-b7bf3f1e15cc"
 ---
-
-
 
 ![Validation](/assets/img/2024-05-20-BestPracticesforValidationsinRubyonRails_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@patrickkarsh/best-practices-for-validations-in-ruby-o
 
 유효성 검사는 응용 프로그램의 데이터 무결성과 일관성을 보장합니다. 데이터베이스에 잘못된 데이터가 저장되는 것을 방지하여 응용 프로그램 오류, 보안 취약점 및 기타 문제가 발생하는 것을 방지합니다. 모델 수준에서 데이터를 유효성 검사함으로써 데이터 무결성 논리를 집중시킴으로써, 응용 프로그램을 유지 보수 가능하고 안전하게 만듭니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 일반적인 유효성 검증
 
@@ -33,7 +41,18 @@ link: "https://medium.com/@patrickkarsh/best-practices-for-validations-in-ruby-o
 validates :name, presence: true
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 독특성: 값이 테이블 전체에서 고유한지 확인합니다.
 
@@ -47,7 +66,18 @@ validates :email, uniqueness: true
 validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 숫자 정합성: 필드가 숫자임을 보장하고 숫자 제약 조건을 유효성 검사할 수도 있습니다.
 
@@ -59,7 +89,18 @@ validates :age, numericality: { only_integer: true, greater_than: 0 }
 
 ## 내장된 유효성 검사기 사용
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가능한 한 Rails의 내장 유효성 검사기를 활용하세요. 이들은 테스트를 거친 상태이며 다양한 일반적인 유효성 검사 요구사항을 다룹니다. 내장 유효성 검사기를 사용하면 코드가 더 읽기 쉽고 유지보수하기 쉬워집니다.
 
@@ -73,7 +114,18 @@ end
 
 내장 도우미로 다루기 어려운 복잡한 유효성 검사 로직이 필요한 경우, 사용자 정의 유효성 검사 메서드를 작성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```ruby
 class User < ApplicationRecord
@@ -101,7 +153,18 @@ class User < ApplicationRecord
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 유효성 검사 및 데이터베이스 제약조건
 
@@ -114,7 +177,18 @@ add_index :users, :email, unique: true
 
 ## 지나치게 유효성 검사 피하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 너무 많은 유효성 검사를 하지 않도록 주의해주세요. 지나치게 엄격한 유효성 검사는 사용자에게 답답한 경험을 줄 수 있습니다. 필요한 유효성 검사를 실행하고 사용자에게 의미 있는 피드백을 제공해 주세요.
 
@@ -128,7 +202,18 @@ class User < ApplicationRecord
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 유효성 검사 테스트
 
@@ -161,6 +246,17 @@ end
 
 ## 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경하세요.

@@ -3,13 +3,12 @@ title: "안드로이드 브로드캐스트 리시버 완벽 마스터하기"
 description: ""
 coverImage: "/assets/img/2024-06-22-MasteringBroadcastReceiversinAndroid_0.png"
 date: 2024-06-22 22:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-MasteringBroadcastReceiversinAndroid_0.png
 tag: Tech
 originalTitle: "Mastering Broadcast Receivers in Android"
 link: "https://medium.com/@riztech.dev/mastering-broadcast-receivers-in-android-362a75e7b2b1"
 ---
-
 
 <img src="/assets/img/2024-06-22-MasteringBroadcastReceiversinAndroid_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@riztech.dev/mastering-broadcast-receivers-in-android-
 
 브로드캐스트 수신기는 활동(Activities), 서비스(Services), 콘텐트 제공자(Content Providers)와 함께 안드로이드 앱의 네 가지 주요 구성 요소 중 하나입니다. 브로드캐스트 수신기를 통해 앱은 다른 애플리케이션이나 시스템으로부터의 브로드캐스트 메시지를 수신하고 응답할 수 있습니다. 이러한 브로드캐스트는 시스템이나 다른 앱이 서로 통신할 수 있는 방법을 제공하는 것으로 생각할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 본문을 한국어로 번역해보겠습니다.
 
@@ -34,7 +44,18 @@ link: "https://medium.com/@riztech.dev/mastering-broadcast-receivers-in-android-
 
 방송 수신기는 관심 있는 방송을 지정하는 IntentFilter를 정의함으로써 동작합니다. 이 필터와 일치하는 방송이 전송되면 수신기의 onReceive 메서드가 호출되어 앱이 해당 이벤트에 대응할 수 있게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 브로드캐스트 수신기 정의하기
 
@@ -44,14 +65,25 @@ link: "https://medium.com/@riztech.dev/mastering-broadcast-receivers-in-android-
 
 정적 등록은 앱의 AndroidManifest.xml 파일에 수신기를 선언하는 것을 의미합니다. 이 방법은 앱이 실행 중이 아닌 경우에도 브로드캐스트를 수신하는 데 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <receiver android:name=".MyBroadcastReceiver">
-    <intent-filter>
-        <action android:name="android.intent.action.BOOT_COMPLETED"/>
-        <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
-    </intent-filter>
+  <intent-filter>
+    <action android:name="android.intent.action.BOOT_COMPLETED" />
+    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+  </intent-filter>
 </receiver>
 ```
 
@@ -68,7 +100,18 @@ val filter = IntentFilter().apply {
 registerReceiver(receiver, filter)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 브로드캐스트 수신기 구현
 
@@ -93,7 +136,18 @@ class MyBroadcastReceiver : BroadcastReceiver() {
 
 # 실용적인 사용 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 방송 수신기는 다양하고 다양한 시나리오에서 사용할 수 있습니다. 이제 몇 가지 실용적인 사용 사례를 살펴보겠습니다:
 
@@ -117,7 +171,18 @@ class ConnectivityReceiver : BroadcastReceiver() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 시스템 이벤트에 대응하기
 
@@ -136,7 +201,18 @@ class BootCompletedReceiver : BroadcastReceiver() {
 
 # 사용자 정의 방송 수신하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 앱은 자체 사용자 정의 브로드캐스트를 정의하고 수신할 수도 있습니다. 이를 통해 다른 구성 요소 또는 앱 간에 통신할 수 있습니다.
 
@@ -160,7 +236,18 @@ class CustomBroadcastReceiver : BroadcastReceiver() {
 
 브로드캐스트 수신기는 강력하지만 흔한 실수를 피하기 위해 신중하게 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 전력 소비 관리
 
@@ -170,14 +257,25 @@ class CustomBroadcastReceiver : BroadcastReceiver() {
 
 민감한 방송을 위한 수신기를 정의할 때 주의해야 합니다. 특정 방송을 보낼 수 있거나 수신할 수 있는 애플리케이션은 신뢰할 수 있는 앱들만 보낼 수 있도록 권한 검사를 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <receiver android:name=".SecureBroadcastReceiver">
-    <intent-filter>
-        <action android:name="com.example.SECURE_ACTION"/>
-    </intent-filter>
-    <permission android:name="com.example.permission.SECURE_BROADCAST"/>
+  <intent-filter>
+    <action android:name="com.example.SECURE_ACTION" />
+  </intent-filter>
+  <permission android:name="com.example.permission.SECURE_BROADCAST" />
 </receiver>
 ```
 
@@ -192,7 +290,18 @@ override fun onPause() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

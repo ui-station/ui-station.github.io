@@ -3,13 +3,12 @@ title: "에어비앤비 브랜도미터 인공지능을 활용한 소셜 미디�
 description: ""
 coverImage: "/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_0.png"
 date: 2024-05-20 20:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_0.png
 tag: Tech
 originalTitle: "Airbnb Brandometer: Powering Brand Perception Measurement on Social Media Data with AI"
 link: "https://medium.com/airbnb-engineering/airbnb-brandometer-powering-brand-perception-measurement-on-social-media-data-with-ai-c83019408051"
 ---
-
 
 <img src="/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/airbnb-engineering/airbnb-brandometer-powering-brand-p
 
 # 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 에어비앤비에서는 소셜 미디어 데이터를 기반으로 브랜드 인식을 이해하는 최첨단 자연어 이해(NLU) 기술인 Brandometer를 개발했습니다.
 
@@ -29,8 +39,18 @@ Brandometer는 동시성 추출 및 카운트 기반 상위 관련 주제를 포
 
 단어로 표현된 개념에 대해, 해당 임베딩과 "에어비앤비"의 임베딩 간의 유사성을 사용하여 개념이 에어비앤비 브랜드에 대해 얼마나 중요한지를 측정합니다. 이는 인식 점수라고 불리는 것으로, 브랜드 인식은 에어비앤비와 특정 키워드 간의 코사인 유사성으로 정의됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:602/1*fGrdGlIidRgdt6jT0XavYg.gif)
 
@@ -40,8 +60,18 @@ where
 
 이 블로그 글에서는 소셜 미디어 데이터를 어떻게 처리하고 이해하는지, 딥러닝을 통해 브랜드 인식을 파악하고 코사인 유사성을 보정된 브랜도미터 지표로 '변환'하는 방법을 소개하겠습니다. 또한 브랜도미터 지표로부터 얻은 통찰을 공유할 예정입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 브랜도미터 방법론
 
@@ -51,7 +81,18 @@ where
 
 브랜드 인식을 측정하기 위해 의미 있는 단어 임베딩을 생성하기 위해 소셜 미디어 데이터를 활용할 때, 두 가지 문제를 극복했어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 품질: 소셜 미디어 게시물은 대부분 사용자가 생성하며 상태 공유 및 리뷰와 같은 다양한 콘텐츠가 포함되어 있어 매우 시끄러울 수 있습니다.
 - 양: 소셜 미디어 게시물의 희소성은 또 다른 도전입니다. 특정 활동 및 이벤트에 대한 소셜 미디어 사용자의 데이터 생성에 일정 시간이 소요되므로 월 별 롤링 창은 신속성과 감지 가능성 사이의 균형을 유지합니다. 월별 데이터셋은 일반적인 좋은 품질의 단어 임베딩을 훈련하는 데 사용되는 일반적인 데이터셋과 비교할 때 상대적으로 작습니다 (약 2천만 단어). 사전 훈련된 모델에서의 웜 스타트는 도메인 내 데이터가 학습된 임베딩을 거의 변경하지 않아서 도움이 되지 않았습니다.
@@ -62,7 +103,18 @@ where
 
 ## Word2Vec
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Word2Vec은 2013년 이후로 가장 간단하면서도 널리 사용되는 단어 임베딩 모델 중 하나입니다. 우리는 Gensim을 사용하여 CBOW 기반 Word2Vec 모델을 구축했습니다. Word2Vec은 도메인 내 단어 임베딩을 어느 정도 만들어내고, 무엇보다도 유추 개념을 생성했습니다. 우리의 도메인별 단어 임베딩에서는 Airbnb 도메인의 유추를 포착할 수 있었습니다. "호스트" - "제공" + "손님" ~= "필요", "도시" - "쇼핑몰" + "자연" ~= "공원"과 같은 예시가 있습니다.
 
@@ -72,7 +124,18 @@ FastText는 단어의 내부 구조를 고려하며, 어휘에 없는 단어나 
 
 ## DeBERTa
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최근의 transformer 기반 언어 모델(예: BERT)의 발전은 문맥화된 단어 임베딩을 생성하는 장점으로 NLU 작업의 성능을 현저히 향상시켰습니다. 우리는 DeBERTa 기반 단어 임베딩을 개발했는데, 이는 작은 데이터셋에서 더 잘 작동하며, 분리된 어텐션 메커니즘을 통해 주변 컨텍스트에 더 많은 주의를 기울입니다. 우리는 Transformer를 사용하여 모든 것을 처음부터 훈련시켰고, 연결된 마지막 어텐션 레이어 임베딩이 우리 경우에 가장 좋은 단어 임베딩으로 나타났습니다.
 
@@ -82,7 +145,18 @@ FastText는 단어의 내부 구조를 고려하며, 어휘에 없는 단어나 
 
 Brandometer를 사용할 때 임베딩 간의 변동성을 줄여 안정적인 시계열 추적을 생성해야 합니다. 안정적인 임베딩 거리는 시계열 데이터에 존재하는 고유한 패턴과 구조를 보존하는 데 도움이 되며, 따라서 추적 프로세스의 예측 가능성을 향상시킵니다. 게다가, 이는 노이즈 국면에 강건한 추적 프로세스를 만들어냅니다. 우리는 영향을 미치는 요소를 연구하고 변동성을 줄이기 위해 다음 단계를 취했습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 부트스트랩 샘플링을 사용하여 반복적인 훈련을 통한 점수 평균화
 - 순위 기반 인식 점수
@@ -93,18 +167,39 @@ Brandometer를 사용할 때 임베딩 간의 변동성을 줄여 안정적인 �
 
 ![이미지](https://miro.medium.com/v2/resize:fit:922/1*pJeFFkML9OLgYyYVAChJIA.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <table>
     <img src="https://miro.medium.com/v2/resize:fit:668/1*O9bfbXD2k2yCGHAl0LmaXg.gif" />
 </table>
 
-CosSim(w)은 방정식 1에 정의된 코사인 유사도 기반 인식 점수를 나타내며, A는 알고리즘을 나타내고, M은 시간 창(즉, 월)을 나타내며, V는 어휘를 나타내며, |V|는 어휘 크기를 나타내며, n은 반복적으로 훈련된 모델의 수를 나타냅니다. 
+CosSim(w)은 방정식 1에 정의된 코사인 유사도 기반 인식 점수를 나타내며, A는 알고리즘을 나타내고, M은 시간 창(즉, 월)을 나타내며, V는 어휘를 나타내며, |V|는 어휘 크기를 나타내며, n은 반복적으로 훈련된 모델의 수를 나타냅니다.
 
 N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 내에 안정화됩니다. 따라서 우리는 모든 것에 대해 N = 30을 선택했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_1.png)
 
@@ -113,9 +208,19 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 마리아 안토니악의 작업을 바탕으로, 우리는 단어 임베딩의 안정성을 측정하기 위해 가장 가까운 이웃들 간의 중첩을 사용했습니다. 상대적 거리가 하류 작업에서 절대 거리 값보다 중요하기 때문입니다. 따라서 유사성 기반 점수보다 안정성이 큰 순위 기반 점수를 개발했습니다.
 
 각 단어에 대해, 우리는 먼저 코사인 유사도를 내림차순으로 순위를 매겼습니다(Eq. 1). 순위 기반 유사성 점수는 그 후 1/rank(w)로 계산되며 여기서 w∈V입니다. 더 관련 있는 개념일수록 순위 기반 인식 점수가 높아집니다.
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 점수 변동성은 등식 2의 Variability(A, M, V)와 동일하게 정의되지만 RankSim(w)는 순위 기반 지각 점수를 나타냅니다. 순위 기반 점수로, N이 30에 접근할 때, DeBERTa의 경우 특히 점수 변동성 값이 훨씬 좁은 간격으로 수렴합니다.
 
@@ -123,7 +228,18 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 
 ![이미지](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_4.png)
 
@@ -133,7 +249,18 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 
 다양한 기간을 통한 평균 분산 (AVADP)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 먼저 에어비앤비의 대한 상위 관련 브랜드 인식 그룹으로 '호스트', '휴가', '임대', '사랑', '머무름', '집', '예약', '여행', '손님'을 선정했습니다.
 - 높은 값은 서로 다른 기간에 걸쳐 변동성이 더 큼을 나타내며, 이는 선택된 브랜드 인식이 상대적으로 안정적이라고 가정되므로 월별로 크게 변동하지 않아야 한다는 것을 의미합니다.
@@ -142,7 +269,18 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 
 ![AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_6](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 교정된 결과를 바탕으로 이 통계를 확인했습니다. 랭크 기반 점수가 유사성 기반 점수에 비해 우승자인 것을 확인할 수 있습니다:
 
@@ -152,7 +290,18 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 
 브랜드 측정 문제를 해결하려고 시작했지만, 사용 사례는 그 이상으로 확장될 수 있다고 믿습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_7.png" />
 
@@ -162,8 +311,18 @@ N이 30에 가까워질수록 점수 변동 값은 수렴하여 좁은 간격 �
 
 에어비앤비는 "Stay"와 "Home"과 같은 최고 인식을 통해 "소속감"이라는 브랜드 이미지를 제공하며, 우리의 미션 성명과 독특한 공급 재고를 반영합니다. 다른 회사들은 "Rental", "Room", "Booking"과 같이 기능성을 설명하는 것이 아닌 인간적 감각이 아닌 기능을 설명하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_8.png)
 
@@ -171,8 +330,18 @@ Top Emerging Perception은 월간 상위 인식에서 온라인에서 논의되�
 
 상위 10가지 인식은 일반적으로 매월 안정적입니다. 최상위 인식에는 Home, Host, Stay, Travel, Guest, Rental 등이 포함됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한편, 우리는 Brandometer를 사용하여 최상위 목록으로 올라가는 신흥 인식을 모니터링합니다. 이는 브랜드나 사용자 선호도 변화와 관련된 주요 이벤트를 반영할 수 있습니다.
 
@@ -182,7 +351,18 @@ Top Emerging Perception은 월간 상위 인식에서 온라인에서 논의되�
 
 ![이미지](/assets/img/2024-05-20-AirbnbBrandometerPoweringBrandPerceptionMeasurementonSocialMediaDatawithAI_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 사용 사례는 시작에 불과합니다. 기본적으로 이것은 커뮤니티의 요구 사항과 인식을 배우는 과정에서 대규모 온라인 의견을 수집하는 혁신적인 방법입니다. 저희는 이러한 통찰을 어떻게 활용하여 계속해서 에어비앤비 경험을 향상시키는지에 대해 지속적으로 고민하고 반성할 것입니다.
 
@@ -194,7 +374,18 @@ Top Emerging Perception은 월간 상위 인식에서 온라인에서 논의되�
 - 소셜 미디어 브랜드 인식을 반영하는 더 많은 지표 개발.
 - Airbnb뿐만 아니라 동일 시장 세그먼트의 다른 기업들에 대한 데이터 기반 강화하여 포괄적인 통찰을 얻기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이런 종류의 작업이 매력적으로 들린다면, 오픈된 역할들을 확인해보세요 - 우리는 채용 중이에요!
 

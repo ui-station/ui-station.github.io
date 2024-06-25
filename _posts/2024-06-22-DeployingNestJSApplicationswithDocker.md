@@ -3,13 +3,12 @@ title: "Docker로 NestJS 애플리케이션 배포하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-DeployingNestJSApplicationswithDocker_0.png"
 date: 2024-06-22 22:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-DeployingNestJSApplicationswithDocker_0.png
 tag: Tech
 originalTitle: "Deploying NestJS Applications with Docker."
 link: "https://medium.com/@preetam19cs051/deploying-nestjs-applications-with-docker-1040cf534ff9"
 ---
-
 
 ![이미지](/assets/img/2024-06-22-DeployingNestJSApplicationswithDocker_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@preetam19cs051/deploying-nestjs-applications-with-doc
 
 먼저 간단한 NestJS 애플리케이션을 만들어봅시다. NestJS CLI가 설치되어 있지 않다면 다음 명령어로 설치할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 npm install -g @nestjs/cli
@@ -31,10 +41,20 @@ nest new my-nest-app
 
 Dockerfile을 만들기 전에 Docker 이미지와 컨테이너에 대한 단단한 기초적인 이해가 필요합니다. 다음과 같이 설명해보겠습니다:
 
-Docker 이미지: Docker 이미지는 코드, 런타임, 라이브러리 및 환경 변수를 포함하여 소프트웨어 조각을 실행하는 데 필요한 모든 것이 포함된 가벼운 실행 가능한 것입니다. 
+Docker 이미지: Docker 이미지는 코드, 런타임, 라이브러리 및 환경 변수를 포함하여 소프트웨어 조각을 실행하는 데 필요한 모든 것이 포함된 가벼운 실행 가능한 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 컨테이너: 도커 컨테이너는 코드와 모든 종속성을 포장하여 응용 프로그램이 다양한 컴퓨팅 환경에서 빠르고 신뢰성 있게 실행될 수 있도록 하는 경량, 휴대용, 자체 완비형 환경입니다.
 
@@ -68,23 +88,43 @@ EXPOSE 3000
 CMD ["node", "dist/main"]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## .dockerignore 파일 만들기:
 
 .dockerignore 파일은 .gitignore 파일과 비슷하게 작동합니다. 이미지를 빌드할 때 Docker에게 무시해야 할 파일과 디렉토리를 알려줍니다. 프로젝트의 루트에 .dockerignore 파일을 만들고 다음 내용을 추가해주세요.
 
 ```js
-node_modules
-dist
-.git
-.gitignore
-Dockerfile
+node_modules;
+dist.git.gitignore;
+Dockerfile;
 ```
 
 ## Docker 이미지 빌드 및 실행하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 도커파일과 .dockerignore 파일이 있으니 도커 이미지를 빌드하고 실행해 봅시다.
 
@@ -100,10 +140,21 @@ docker build -t my-nest-app:latest .
 
 ## 도커에서 이미지가 제대로 빌드되었는지 확인하는 방법:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-//도커 이미지 목록을 제공합니다. 
+//도커 이미지 목록을 제공합니다.
 도커 이미지 목록 확인
 
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
@@ -119,7 +170,18 @@ another-app         v1.0                3e23f1c3e6a4        3 days ago          
 docker run -p [host_port]:[container_port] [image_name]:[tag]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 도커에 있는 컨테이너 목록 :
 
@@ -136,7 +198,18 @@ a4d5f2b5c7a3        another-app:v1.0    "python app.py"          3 days ago     
 
 # 도커 컴포즈 :
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 컴포즈는 여러 개의 컨테이너로 구성되는 도커 응용 프로그램을 정의하고 실행하는 도구입니다. NestJS 애플리케이션을 여러 개 실행하는 데 사용할 수 있습니다. 예를 들어, 마이크로서비스 또는 다른 서비스를 함께 실행하는 것이 가능합니다.
 
@@ -152,7 +225,18 @@ nest new app1
 nest new app2
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 각 응용 프로그램을 위한 도커 파일 작성:
 
@@ -183,7 +267,18 @@ CMD [ "node", "dist/main.js" ]
 
 ## 도커 컴포즈 파일 작성:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루트 디렉토리에 docker-compose.yml 파일을 만들어서 두 애플리케이션을 위한 서비스를 정의해야 해요.
 
@@ -229,7 +324,18 @@ root/
 └── docker-compose.yml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Docker Compose를 사용하여 응용 프로그램 빌드 및 실행하기:
 
@@ -239,12 +345,23 @@ docker-compose up 명령어는 서비스를 실행하는 데 사용됩니다.
 
 ## 컨테이너 중지 또는 제거하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령어는 docker-compose up 에 의해 생성된 네트워크를 포함하여 컨테이너 실행을 중지하고 그것들을 제거할 것입니다.
 
 ```js
-docker-compose down 
+docker-compose down
 
 // 컨테이너를 중지하지만 제거하지 않고 싶은 경우
 docker-compose stop

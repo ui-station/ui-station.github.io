@@ -3,13 +3,12 @@ title: "데이터 제품을 위한 데이터 조작"
 description: ""
 coverImage: "/assets/img/2024-05-20-DataOrchestrationforDataProducts_0.png"
 date: 2024-05-20 16:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-DataOrchestrationforDataProducts_0.png
 tag: Tech
 originalTitle: "Data Orchestration for Data Products"
 link: "https://medium.com/@hugolu87/data-orchestration-for-data-products-7a5d6e4bda9f"
 ---
-
 
 이 문서는 Modern Data Stack 101에 처음 등장했습니다. 만일 Medium 회원이 아니라면, 무료로 여기에서 읽을 수 있어요 💸
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@hugolu87/data-orchestration-for-data-products-7a5d6e4
 
 ⭐️ 또한 우리의 Substack와 내부 블로그도 확인해 보세요 ⭐️
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 소개
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@hugolu87/data-orchestration-for-data-products-7a5d6e4
 
 성장과 성공을 위한 가장 큰 촉매제 중 하나는 수동 데이터 사용의 고통을 없애고 데이터 조종, 데이터 관측, 계보, 메타데이터 수집 및 경보를 통합하는 통합 제어 평면을 가지고 있는 것입니다. 이 글에서는 데이터 조종 프로세스가 데이터 및 AI 제품 속도를 가속화하는 데 어떤 역할을 하는지와 채택할 수 있는 방법을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 오픈 소스 워크플로 오케스트레이션 도구 대 전체 제어 플랜
 
@@ -39,7 +60,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 반면 Prefect는 사용 편의성, 신뢰성 및 데이터 버전 관리를 강조하는 또 다른 오픈 소스 워크플로 오케스트레이션 도구입니다. Prefect는 워크플로를 정의하는 데 더 직관적인 인터페이스를 제공하며 자동 재시도 논리, 작업 의존성 및 워크플로를 모니터링하고 관리하는 중앙 대시보드와 같은 기능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오픈 소스 워크플로 오케스트레이션 도구인 Airflow와 Prefect를 All-in-One 제어 플레인인 Orchestra, Apache NiFi, DataOS 또는 AWS Step Functions과 같은 플랫폼 또는 프로프리터리 솔루션과 비교할 때, All-in-One 제어 플레인은 종종 더 간편한 사용자 경험을 제공하고 학습 커브가 낮다는 큰 차이점이 있습니다. 그들은 사용자들이 기술적 지식이 적은 사용자도 접근할 수 있게끔 그래픽 표현, 드래그 앤 드롭 기능, 일반적인 워크플로를 위한 미리 구축된 템플릿과 같은 선호하는 형태의 표준 인터페이스를 제공할 수 있습니다.
 
@@ -49,7 +81,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 기존 OSS 워크플로는 데이터 아키텍처에 대한 통합적인 접근을 장려합니다. 이는 "모던 데이터 스택"의 모든 구성 요소를 처리할 수 있는 단일 저장소와 단일 애플리케이션이 있다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 사람들이 이 아키텍처를 간단히 갖고 있지 않습니다. 데이터 서비스를 구축하는 것은 어렵습니다. 데이터 파이프라인을 구축하는 것은 종종 파이프라인의 다른 부분에서 특화된 서비스가 필요합니다. 사실, 서로 다른 팀이 있는 것이 필요하게 만드는 경우가 많습니다.
 
@@ -59,7 +102,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 ![이미지](/assets/img/2024-05-20-DataOrchestrationforDataProducts_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지 제공: 작성자
 
@@ -71,7 +125,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 ## 보일러플레이트 작업 제거
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기존 인프라를 사용하여 모든 중요한 계산을 처리하고 데이터 Orchestration 도구가 기존 프로세스를 조정하는 데 기여함으로써 엔지니어는 새로운 기술(Airflow 등)을 배우거나 인프라를 배포(Kubernetes 등)하거나 복잡한 UI에 대처할 필요가 없습니다.
 
@@ -81,7 +146,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 통합되지 않은 데이터 또는 Workflow Orchestration 도구를 사용하면 소중한 메타데이터가 원본 시스템 내에서 통합되지 않은 상태로 남아 있고 데이터 수명 주기 정책으로 인해 심지어 사라질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 통합 조작 및 감시는이 데이터가 실시간으로 효율적으로 수집되어 데이터 팀에서 사용할 수 있도록합니다. 이를 통해 이집트된 데이터 소스 간의 메타데이터 관리가 쉬워집니다.
 
@@ -91,7 +167,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 이 비즈니스 중요한 운영 데이터를 데이터 제품 수준에서 가지면 데이터 팀은 좀 더 효율적으로 우선순위를 정할뿐만 아니라 기업에 그들의 가치와 가치를 보여줄 수있는 창문을 마침내 가질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 통합 데이터 조율 및 데이터 가시성 플랫폼은 모든 작업을 청소하는 것, 유용한 메타데이터를 수집하고 데이터 제품 수준에서 제공함으로써 제품 속도를 빠르게 가속화할 수 있습니다. 엔지니어들이 기술적인 도전을 극복하는 데 시간을 절약하고, 다수의 감각적 이점을 얻습니다.
 
@@ -101,7 +188,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 기존 조율 솔루션은 여러 가지 중요한 영역에서 종종 한계점을 지니고 있습니다. 첫째, 그들은 종종 사용자들에게 파이썬 코드를 큰 monorepo에서 작성하도록 강요하여 코드베이스가 커질수록 규모화하고 관리하기 어렵게 만듭니다. 이는 복잡성과 유지보수 도전을 증가시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 많은 기존 도구들에서는 가시성과 종단간 메타데이터 추적이 부족합니다. 이로 인해 사용자들이 데이터 및 프로세스의 흐름을 이해하기 어려워지며, 디버깅과 모니터링에 문제가 발생할 수 있습니다.
 
@@ -111,7 +209,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 다양한 팀이 다양한 소프트웨어를 사용하는 환경에서는 전체 데이터 운영에 대한 다중 테넌트 뷰를 얻는 것이 불가능합니다. 이는 팀 간 디버깅 라인지 그래프를 어렵게 만들며, 협업에 있어서 도전을 초래하며, 데이터 파이프라인을 관리하기 어렵게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 보안 준수
 
@@ -121,7 +230,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 다양한 팀이 사용하는 여러 저장소가 있는 경우, 경보 및 데이터 자산 소유는 도전적일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 원활한 지속적 통합
 
@@ -131,7 +251,18 @@ Airflow는 에어비앤비에서 개발한 오픈 소스 도구로, 워크플로
 
 # 요약
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 본질적으로, 기본 사항인 제품 접근 방식으로 내려가는 것이 중요합니다. 제품 중심이 되는 것은 무엇을 의미할까요? 사용자 경험과 개선에 대한 완전한 초점. XYZ 작업 수행을 위한 노력을 줄이는 것입니다.
 

@@ -3,13 +3,12 @@ title: "현실 대면이 가상보다 더 나은 이유를 깨달은 방법"
 description: ""
 coverImage: "/assets/img/2024-06-19-HowIRealisedIn-PersonisBetterthanVirtual_0.png"
 date: 2024-06-19 10:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowIRealisedIn-PersonisBetterthanVirtual_0.png
 tag: Tech
 originalTitle: "How I Realised In-Person is Better than Virtual"
 link: "https://medium.com/code-like-a-girl/how-i-realised-in-person-is-better-than-virtual-a458fbb362b9"
 ---
-
 
 ## 나의 시선을 바꾼 사무실 하루
 
@@ -19,7 +18,18 @@ link: "https://medium.com/code-like-a-girl/how-i-realised-in-person-is-better-th
 
 제 프로젝트가 변경되어 5월 첫 주에 이 팀에 합류했습니다. 지난 한 달 동안 사무실에는 몇 차례만 갔습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오늘은 그런 날 중 하나였어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/code-like-a-girl/how-i-realised-in-person-is-better-th
 
 개인적인 이유로 사무실을 자주 방문하지 않게 되었어요. 다른 블로그 포스트 주제가 되겠네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 오늘 사무실에 있어서 더 많은 질문을 할 기회가 있었어요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/code-like-a-girl/how-i-realised-in-person-is-better-th
 
 또한 몇 가지 기능 제안도 했어요. 제 친구는 몇 가지 구현할 수 없는 이유를 설명해주었지만, 제 아이디어 중 하나를 좋아했고 그것을 우리 매니저에게 논의할 것이라고 말했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나가려던 순간, 이 프로젝트에서 처음으로 중요한 업무를 맡게 되었는데, 다음에 할 일을 기대하고 있어요.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/code-like-a-girl/how-i-realised-in-person-is-better-th
 
 그리고 사무실 삼시세끼 중 커피도 즐겁게 마시고, 점심으로 맛있는 채식 샐러드도 먹었어요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술적인 토론 이외에도, 나는 주변을 돌아다니며 점심 시간에 팀원들과 수다 떨었고, 화장실에서 거울 셀카 몇 장을 찍기도 했어.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/code-like-a-girl/how-i-realised-in-person-is-better-th
 
 완벽한 하루였어!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신은 WFO와 WFH 중 어떤 것을 선호하시나요?
 근무 시간 사이의 짧은 휴식 시간에는 무엇을 하시나요?

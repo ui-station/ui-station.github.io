@@ -3,13 +3,12 @@ title: "준비해야 할 필수 안드로이드 인터뷰 질문들"
 description: ""
 coverImage: "/assets/img/2024-06-19-EssentialAndroidInterviewQuestionstoPrepareFor_0.png"
 date: 2024-06-19 22:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-EssentialAndroidInterviewQuestionstoPrepareFor_0.png
 tag: Tech
 originalTitle: "Essential Android Interview Questions to Prepare For"
 link: "https://medium.com/@reynoldsfred675/essential-android-interview-questions-to-prepare-for-800d250cf969"
 ---
-
 
 <img src="/assets/img/2024-06-19-EssentialAndroidInterviewQuestionstoPrepareFor_0.png" />
 
@@ -19,7 +18,18 @@ Android 개발 인터뷰를 준비하고 있나요? 다양한 개념에 대한 �
 
 # 기본 Android 인터뷰 질문
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드란 무엇인가요?
 
@@ -29,7 +39,18 @@ Android 개발 인터뷰를 준비하고 있나요? 다양한 개념에 대한 �
 
 안드로이드 아키텍처에는 네 가지 주요 구성 요소가 포함되어 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 리눅스 커널: 보안, 메모리 관리 및 드라이버와 같은 핵심 서비스가 포함되어 있습니다.
 - 라이브러리: WebKit, SQLite 및 OpenGL과 같은 미리 설치된 라이브러리가 포함되어 있습니다.
@@ -45,7 +66,18 @@ Android 개발 인터뷰를 준비하고 있나요? 다양한 개념에 대한 �
 - 브로드캐스트 리시버: 시스템 전체 브로드캐스트 알림에 응답합니다.
 - 컨텐츠 프로바이더: 공유 응용 프로그램 데이터를 관리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 고급 안드로이드 인터뷰 질문
 
@@ -55,7 +87,18 @@ Android 개발 인터뷰를 준비하고 있나요? 다양한 개념에 대한 �
 
 ## 액티비티 생명주기는 어떻게 동작하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 활동 라이프사이클은 여러 단계로 구성되어 있습니다:
 
@@ -70,7 +113,18 @@ Android 개발 인터뷰를 준비하고 있나요? 다양한 개념에 대한 �
 
 Fragment는 활동 내에서 UI의 재사용 가능한 부분을 나타냅니다. Fragment를 통해 모듈식 앱 디자인이 가능해지며, 여러 개의 Fragment를 단일 활동에 결합할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프래그먼트 간에 어떻게 통신하나요?
 
@@ -80,7 +134,18 @@ Fragment는 활동 내에서 UI의 재사용 가능한 부분을 나타냅니다
 
 Intent는 다른 앱 구성요소로부터 작업을 요청하는 데 사용되는 메시징 객체입니다. Intent는 활동을 시작하거나 서비스를 시작하고 방송을 전송하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드 인터뷰에서 전문가 수준의 질문
 
@@ -90,7 +155,18 @@ Intent는 다른 앱 구성요소로부터 작업을 요청하는 데 사용되�
 
 ### 안드로이드에서 데이터 저장을 어떻게 처리하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 안드로이드는 다양한 데이터 저장 옵션을 지원합니다:
 
@@ -104,7 +180,18 @@ Intent는 다른 앱 구성요소로부터 작업을 요청하는 데 사용되�
 
 서비스는 백그라운드에서 장기 실행 작업을 수행하는 구성 요소입니다. 사용자 인터페이스를 제공하지는 않습니다. 서비스는 startService()로 시작하거나 bindService()를 사용하여 활동에 바인딩할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드의 서비스 유형을 설명해드릴게요.
 
@@ -115,7 +202,18 @@ Intent는 다른 앱 구성요소로부터 작업을 요청하는 데 사용되�
 
 # 브로드캐스트 수신기(Broadcast Receiver)가 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 방송 수신기는 시스템 전체적인 방송 공지에 응답합니다. 특정 방송을 듣고 그에 반응하는 수동 구성 요소 역할을 합니다. 예를 들어, 연결 상태 변경을 듣기 위해 방송 수신기를 등록할 수 있습니다.
 

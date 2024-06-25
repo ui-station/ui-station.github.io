@@ -3,14 +3,12 @@ title: "루비 온 레일즈Ruby on Rails에서 Active Record Associations를 �
 description: ""
 coverImage: "/assets/img/2024-06-22-10BestPracticesActiveRecordAssociationsinRubyonRails_0.png"
 date: 2024-06-22 22:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-10BestPracticesActiveRecordAssociationsinRubyonRails_0.png
 tag: Tech
 originalTitle: "10 Best Practices Active Record Associations in Ruby on Rails"
 link: "https://medium.com/@patrickkarsh/10-best-practices-active-record-associations-in-ruby-on-rails-e914e8df45db"
 ---
-
-
 
 ![Active Record associations](/assets/img/2024-06-22-10BestPracticesActiveRecordAssociationsinRubyonRails_0.png)
 
@@ -20,9 +18,18 @@ link: "https://medium.com/@patrickkarsh/10-best-practices-active-record-associat
 
 Rails는 여러 가지 Association 유형을 지원합니다: belongs_to, has_many, has_one, has_many :through, has_one :through, 그리고 has_and_belongs_to_many. 모델 간 관계를 정확하게 반영하는 것을 선택하십시오. 예를 들어, 일대다 관계의 경우 has_many를 사용하고 해당 관계의 반대쪽에는 belongs_to를 사용합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-10BestPracticesActiveRecordAssociationsinRubyonRails_1.png" />
 
@@ -32,12 +39,22 @@ Rails는 여러 가지 Association 유형을 지원합니다: belongs_to, has_ma
 
 <img src="/assets/img/2024-06-22-10BestPracticesActiveRecordAssociationsinRubyonRails_2.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 연관성을 활용하여 스코프 활용하기
 
-공통 질의 패턴을 재사용하기 위해 연관성에 대한 스코프를 정의할 수 있습니다. 
+공통 질의 패턴을 재사용하기 위해 연관성에 대한 스코프를 정의할 수 있습니다.
 
 아래와 같이 작성할 수 있습니다:
 
@@ -45,7 +62,18 @@ Rails는 여러 가지 Association 유형을 지원합니다: belongs_to, has_ma
 
 이렇게 하면 사용자의 게시물 중 게시된 것만 반환하는 것으로 자동으로 필터링됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## has_many :through를 has_and_belongs_to_many보다 선호하세요
 
@@ -55,7 +83,18 @@ has_many :through는 조인 모델을 일반적인 ActiveRecord 모델로 사용
 
 다형 관계는 강력하지만 스키마를 더 복잡하고 이해하기 어렵게 만들 수 있습니다. 실제로 필요할 때에만 사용하세요. 예를 들어, 모델이 단일 관계에서 두 개 이상의 다른 모델에 속할 수 있는 경우에 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 데이터베이스에서 외래 키 인덱싱
 
@@ -65,7 +104,18 @@ has_many :through는 조인 모델을 일반적인 ActiveRecord 모델로 사용
 
 N+1 쿼리 문제를 주의하세요. 이 문제는 하나의 쿼리로 기본 객체를 검색한 다음 각 객체의 관계를 가져오기 위해 추가 쿼리가 실행되는 상황을 의미합니다. 관련 관계를 미리로드하고 데이터베이스 쿼리 수를 줄이기 위해 .includes 메서드를 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 콜백에 주의하세요
 
@@ -75,7 +125,18 @@ N+1 쿼리 문제를 주의하세요. 이 문제는 하나의 쿼리로 기본 �
 
 :inverse_of 옵션을 사용하여 역 관련성을 수동으로 지정할 수 있습니다. 이를 통해 객체 로딩을 최적화하고 단일 요청 범위 내에서 관련성 일관성을 보장할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 적절하게 연관된 객체 유효성 검사
 

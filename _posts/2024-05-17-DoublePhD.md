@@ -3,13 +3,12 @@ title: "더블 박사"
 description: ""
 coverImage: "/assets/img/2024-05-17-DoublePhD_0.png"
 date: 2024-05-17 19:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-DoublePhD_0.png
 tag: Tech
 originalTitle: "Double PhD"
 link: "https://medium.com/@phdsofindia/double-phd-68511d12307f"
 ---
-
 
 ![이미지](/assets/img/2024-05-17-DoublePhD_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@phdsofindia/double-phd-68511d12307f"
 
 제 BTech 마지막 학년이 지나면서 상황은 조금 나아졌습니다. 대학 학부 과정을 진행하면서 Coursera와 같은 온라인 플랫폼을 통한 독학은 학교의 제약으로부터 남은 부분을 보충하는 데 있어서 귀중한 도구가 되었습니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 원래 가르치는 직업에 매료되었습니다. 그러나 정부의 교육 역할에 대한 MTech 학위 필요 규정으로 인해 내 포부를 조정하게 되었습니다. GATE 점수가 기대에 못 미치는 수준이었지만, NIT Hamirpur에 석사과정 입학을 성공했습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@phdsofindia/double-phd-68511d12307f"
 
 나의 학술적 여정에서의 전환점은 SPARK라 불리는 협력 프로그램으로 찾아왔습니다. 그것은 네덜란드 그로닌겐 대학과의 이중 박사 과정을 쫓을 수 있는 기회를 내게 제공했습니다. 이 국제적 협업은 팬데믹의 제약들로 인해 방해를 받았지만, 독특한 경험과 학습 기회를 제공하였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지의 여정을 되돌아보면, 학업에서 가장 중요한 것은 열정과 목적의 중요성입니다. 머신 러닝과 같이 동적이고 도전적인 분야에서는 진로 전망이 풍부한데, 이러한 본래적 동기가 우리를 지탱하고 전진시킵니다. 비슷한 길을 고민하는 이들에게 알립니다. 지식을 쫓는 것은 목적을 달성하는 수단뿐만이 아니라 자아 발견과 성취의 여정입니다."
 

@@ -3,13 +3,12 @@ title: "싸워라 웹 스크레이퍼를 상대로 맞선다 - Rust를 이용하
 description: ""
 coverImage: "/assets/img/2024-05-23-FightingbackTurningtheTablesonWebScrapersUsingRust_0.png"
 date: 2024-05-23 18:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-FightingbackTurningtheTablesonWebScrapersUsingRust_0.png
 tag: Tech
 originalTitle: "Fighting back: Turning the Tables on Web Scrapers Using Rust"
 link: "https://medium.com/@ejeriksson/declaring-holy-cyber-war-on-web-scrapers-using-rust-564df967511a"
 ---
-
 
 웹 취약점을 스캔하는 사람들을 괴롭히고 싶은 적이 있나요? 저는 분명히 그랬어요. 이것은 저가 그들을 처벌하는 방법을 찾은 이야기입니다. 그리고 Rust를 사용하여 개선하고, 그리고 밴을 이용해 내 웹 서버를 멈춘 이야기입니다.
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@ejeriksson/declaring-holy-cyber-war-on-web-scrapers-u
 
 좋아요, 만약 어떤 규모의 웹사이트를 운영해 보셨다면, 액세스 로그를 확인해 보면 곧 여러분의 웹사이트와는 상관없는 요청이 많이 들어온다는 사실을 발견하실 겁니다. 많은 요청 중에는 /wp-login.php, /.env 및 /.git/config 등과 같은 경로를 보는 것들도 많이 있습니다. 큰 회사들도 마찬가지입니다. 이겈 기회로 활용할 수는 없을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 1: 지옥의 문을 찾아서
 
@@ -27,7 +37,18 @@ link: "https://medium.com/@ejeriksson/declaring-holy-cyber-war-on-web-scrapers-u
 
 그래서 뭐? 일단 아래 몇 가지를 고려해 봐요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 대부분의 웹 스크래퍼는 제대로 작성되지 않은 스크립트입니다.
 - 대부분의 웹 스크래퍼는 클라우드 인스턴스에서 실행됩니다.
@@ -41,7 +62,18 @@ link: "https://medium.com/@ejeriksson/declaring-holy-cyber-war-on-web-scrapers-u
 - 디스크에 저장하기(디스크가 가득 찰 때 결국 충돌할 것입니다!)
 - 대역폭 요금 부과(이에 대해 과금되는 경우)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고: 여러분이 사용 중인 연결이 미터링되는 경우나 대역폭이 제한되어 있는 경우에는 이를 권장하지 않습니다. 웹 스크레이핑 해커들보다 더 많은 것을 잃을 수 있으니까요!
 
@@ -51,7 +83,18 @@ link: "https://medium.com/@ejeriksson/declaring-holy-cyber-war-on-web-scrapers-u
 
 약간의 Rust 해킹 뒤에, 저는 crates.io에 pandoras_pot을 게시했어요. 기본 원칙은 같아요: 요청, 연결, 쿨레이드를 마시고, 무너뜨리기. 하지만 원하는 멋진 기능 몇 가지를 추가하는 자유도를 가져서 제가 원했던 기능을 더했어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 성능이 더 좋아졌어요. 결국, Rust는 엄청나게 빠르고 안전해요!
 - 데이터를 생성하는 더 많은 방법이 있어요. 정적 파일을 계속해서 보내거나, 마르코프 체인 출력 대신 랜덤 문자열을 보내는 것도 좋아요 (마르코프 체인을 지원하는 내 마르코프 체인 라이브러리 markovish도 있어요).
@@ -65,7 +108,18 @@ link: "https://medium.com/@ejeriksson/declaring-holy-cyber-war-on-web-scrapers-u
 
 # 단계 3: 밴으로 웹 서버 살인하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 잘 되는 것 같았어요? 정말 좋았어요! 정말 많은 봇들이 데이터를 다운로드하는 것을 좋아하는 것으로 밝혀졌어요. 여기에 들어오는 연결의 멋진 그래프를 넣을 수 있던 곳이죠. 우리에게는 유용했던 점이지만, 결국 3년 전 식료품점 주차장에서 산 쓰레기 e-머신이 웹 서버로 사용되고 있던 것이 움직이는 밴 안에서의 여정을 즐기지 못했다는 사실을 깨달았어요. 누가 그런걸 예상했을까요? 제 정신을 회복할 수 있을 것 같지만, 하드 드라이브는 물리적으로 회복할 수 없을 것 같아요. 그리고 아니요, 저는 접속 로그를 백업하지 않았어요. 저장 공간을 절약하기 위해서 소실될 리 없는 것에 대해서만 백업을 예약했거든요.
 
@@ -75,7 +129,18 @@ link: "https://medium.com/@ejeriksson/declaring-holy-cyber-war-on-web-scrapers-u
 
 우선, 대부분의 연결은 공용 클라우드 제공업체에서 온 것이에요. 트래픽의 많은 부분이 Tor 네트워크를 통해 전송되었다고 의심했지만, 가장 많은 트래픽을 소비하는 IP 주소들 확인 결과 그 중 아무것도 Tor 네트워크로 연결되지 않았어요. 일부는 스스로 “비공개”이고 “익명”이라고 자처하는 클라우드 제공업체에서 왔어요. 아마도 NSA의 허니팟일 수도 있고, 진짜일 수도 있어요. 여기에서 링크하지는 않을 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 다른 흥미로운 관찰은 많은 연결 다운로드 용량이 2GB, 3GB 또는 0.5GB와 같은 좋은 숫자 부근에 끝나는 것입니다. 봇들이 이를 다운로드 제한으로 설정한 것일 수 있지만, 이를 높게 설정한 이유는 없습니다. 아마도 이것은 클라우드 제공 업체의 메모리 한도일 수도 있습니다. 대형 클라우드 제공 업체 중 하나를 확인하면 RAM이 가격 결정 요소 중 하나인 것을 볼 수 있으며, 이들은 주로 이와 같은 깔끔한 짝수로 제공됩니다. 나는 단순히 봇들이 '청춘의 슬픔'에서 텍스트로 메모리를 모두 채워서 충돌하고, 그 후에 희망적으로 보다 깨달은 개인이 되는 프로세스라고 생각합니다.
 
@@ -85,7 +150,18 @@ link: "https://medium.com/@ejeriksson/declaring-holy-cyber-war-on-web-scrapers-u
 
 자, 재미있었죠. 이제 대부분 잘못 구성된 웹사이트에 접속하는 봇들을 충돌시킬 수 있습니다. 그러나 더 나아갈 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Contact Us란 상자를 웹사이트에 넣어 본 적이 있는 사람은 늘 reCAPTCHA를 통과하는 일부 봇이 있다는 것을 알 것입니다 (특히 구현 시에 절약을 한다면). 그런데, "제출" 버튼은 단지 서버로 요청을 보내는 것뿐이죠. 다른 곳으로 향한다면 안타까울 테니까요...
 
@@ -95,7 +171,18 @@ Contact Us란 상자를 웹사이트에 넣어 본 적이 있는 사람은 늘 r
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웹사이트를 설정할 때 많은 사람이 방문할 것입니다. 그 중 대부분은 사람이 아닙니다. 대부분은 무해하지만 실제로 .env 파일을 공개 웹사이트에 포함시켰다면 곤란한 상황에 처할 수도 있습니다.
 

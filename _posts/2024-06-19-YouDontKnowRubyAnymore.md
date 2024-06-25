@@ -3,13 +3,12 @@ title: "루비를 잘 몰라요 더 이상"
 description: ""
 coverImage: "/assets/img/2024-06-19-YouDontKnowRubyAnymore_0.png"
 date: 2024-06-19 10:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-YouDontKnowRubyAnymore_0.png
 tag: Tech
 originalTitle: "You Don’t Know Ruby (Anymore!)"
 link: "https://medium.com/@ihcnemed/you-dont-know-ruby-anymore-30da3b47d0e0"
 ---
-
 
 조심하세요! 시니어 루비 개발자분들께는 마음을 다치게 할 수도 있는 기사입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@ihcnemed/you-dont-know-ruby-anymore-30da3b47d0e0"
 
 최근 루비 버전에서 중요한 새로운 기능과 개선 사항들을 소개하겠습니다. 더불어 커뮤니티에서는 아직 충분히 주목받지 못한 오래된 기능들도 소개할 예정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # RBS (루비 서명)
 
@@ -29,7 +39,18 @@ RBS (루비 서명)는 루비 3.1과 함께 소개된 새로운 언어로, 루�
 
 Sorbet 및 유사한 커뮤니티 주도의 대안이 존재하지만, RBS는 Matz에 의해 지지된 점에서 돋보입니다. 별도의 젬으로 패키징되었지만, 프로그래밍 언어 환경에서 유형 확인 트렌드를 받아들이는 공식 방법으로 간주됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # Point.rbs
@@ -81,7 +102,18 @@ jobs:
         run: bundle exec steep check
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CI/CD 파이프라인에 Steep를 통합하면 코드 품질을 유지하고 유형 안정성을 강화하여 런타임 오류를 방지할 수 있습니다. 이는 최상의 관행을 촉진하며 Ruby 애플리케이션의 신뢰성을 향상시킵니다.
 
@@ -91,7 +123,18 @@ RBS 도입은 학습과 도구 설정에 상당한 투자가 필요할 수 있�
 
 패턴 매칭은 Ruby 2.7에서 가장 기대되는 기능 중 하나였습니다. Ruby 창시자인 매츠는 Ruby를 더 표현력 있게 만들고 현대 프로그래밍 언어 트렌드에 맞추기 위해 패턴 매칭을 포함하고 싶다고 언급했습니다. 커뮤니티는 Ruby 메일링 리스트와 이슈 트래커에서 이에 대해 광범위히 논의했습니다. 해당 기능은 최종 포함되기 전에 여러 번의 반복과 수정을 거쳤습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 패턴 매칭 이전에는 복잡한 데이터 구조를 비구조화하고 일치시키기 위해 다양한 if나 case 문을 사용하여 반복적이고 장황한 코드가 필요했습니다. 이로 인해 코드의 가독성과 유지보수성이 낮아지는 경우가 많았습니다.
 
@@ -126,7 +169,18 @@ def company_location_contact_id(company_location_id)
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 패턴 매칭을 사용하지 않으면, 코드는 일반적으로 중첩 조건문이나 응답 데이터의 수동 구문 분석으로 인한 오류를 유발할 수 있습니다. 같은 기능을 패턴 매칭 없이 어떻게 구현할 수 있는지 살펴봅시다:
 
@@ -169,7 +223,18 @@ end
 
 그러나 패턴 매칭이 과도하게 사용되거나 부적절하게 사용된 경우 복잡성을 증가시킬 수도 있습니다. 또한 개발자가 새로운 구문과 패턴을 익히고 채택 속도가 처음에는 느려질 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 원 라인 패턴 매칭:
 
@@ -183,7 +248,18 @@ data => { user: { name:, details: { age:, city: } } }
 puts "Name: #{name}, Age: #{age}, City: #{city}"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 줄 구문은 복잡한 패턴에 대해 가독성이 떨어질 수 있고, 개발자들은 새로운 구문을 완전히 활용하기 위해 익숙해져야 합니다.
 
@@ -193,7 +269,18 @@ puts "Name: #{name}, Age: #{age}, City: #{city}"
 
 루비 3.0에서 소개된 오른쪽 할당은 더 읽기 쉽고 간결한 방식으로 바로 할당을 수행할 수 있도록 구문을 간단화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 read_data() => user_data => { user: { name:, details: { age:, city: } }
@@ -207,7 +294,18 @@ puts "Name: #{name}, City: #{city}"
 
 핵심 클래스를 전역적으로 수정하는 것은 예상치 못한 부작용과 충돌을 야기할 수 있으며, 특히 대규모 코드베이스나 공유 라이브러리에서는 특히 그렇습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루비 2.0에서 소개된 Refinements는 코어 클래스에 범위 지정 수정을 할 수 있는 방법을 제공합니다. 이를 통해 변경 사항을 특정 컨텍스트로 제한하여 부작용의 위험을 줄일 수 있습니다.
 
@@ -235,7 +333,18 @@ puts Converter.convert([[:key1, "value1"], [:key2, "value2"]])
 
 Refinement를 사용할 때 중요한 함정 중 하나는, 코드가 실행되는 컨텍스트에서 Refinement가 활성화되어 있지 않을 때 예기치 못한 동작이 발생할 수 있다는 것입니다. Refinement는 특정 렉시컬 스코프 내의 코드에만 영향을 미치기 때문에, Refinement에 의존하는 코드는 실행되는 위치에 따라 다르게 동작할 수 있습니다. 이는 일관성이 떨어지고, 코드가 재사용되거나 다양한 컨텍스트에서 실행될 경우 진단하기 어려운 버그를 유발할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그냥 알아두세요.
 
@@ -245,17 +354,26 @@ Refinement를 사용할 때 중요한 함정 중 하나는, 코드가 실행되�
 
 루비 2.0에서 소개된 지연(Leazy) 열거자는 중간 배열을 만들지 않고 효율적인 연산 체인을 가능케 합니다. 이는 대량 컬렉션에 대해 더 나은 성능과 낮은 메모리 사용량을 가져옵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 lazy_numbers = (1..Float::INFINITY).lazy
 result = lazy_numbers.select { |n| n % 2 == 0 }
-                     .map { |n| n * n }
-                     .take(10)
-                     .to_a
+.map { |n| n \* n }
+.take(10)
+.to_a
 
 puts result.inspect
-
 
 단점: 지연 열거자는 연산이 체인의 끝까지 연기되기 때문에 디버깅이 더 어려울 수 있습니다. 또한, 모든 열거자 메서드가 지연 열거자에서 사용 가능한 것은 아닙니다.
 
@@ -263,8 +381,18 @@ puts result.inspect
 
 여러 열거 가능한 항목을 연결하는 경우 연결이 필요했으며 표현력이 낮아 종종 가독성이 떨어지는 코드로 이어졌습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루비 2.6에 소개된 Enumerator::Chain은 열거자를 체인으로 묶는 깔끔하고 표현력 있는 방법을 제공하여 가독성과 유지보수성을 향상시킵니다.
 
@@ -280,11 +408,33 @@ puts combined.to_a.inspect
 
 # Module#prepend
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 바꾸는 것이 조금 더 간단하게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 끝이 없는 메서드 정의
 
@@ -296,7 +446,18 @@ def power(base, exponent); base**exponent ; end
 
 Ruby 3.0에서 소개된 끝이 없는 메서드 정의는 단일 표현식을 반환하는 메서드에 대해 간결한 구문을 제공하여, 보일러플레이트를 줄이고 가독성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class Calculator
@@ -317,8 +478,18 @@ puts calc.power(2, 3)     # 결과: 8
 
 블록 변수를 명시적으로 사용하는 것은, 특히 map과 같이 단일 매개변수가 필요한 Enumerable 메소드들에 대한 간단한 작업에 대해 최대한 설명하기 위한 경우, 반복적이고 간결하지 않은 코드를 작성할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ruby 3.0에서 소개된 it 매개변수는 기본 블록 매개변수를 제공하여 블록 구문을 간략화하며 단순한 작업에 대해 코드를 더 간결하고 가독성 있게 만들어줍니다.
 
@@ -326,11 +497,22 @@ Ruby 3.0에서 소개된 it 매개변수는 기본 블록 매개변수를 제공
 ["apple", "banana", "cherry"].map { it.upcase.reverse }
 ```
 
-Ruby 2.7에서는 번호 매개변수(_1, _2 등)가 실험적 기능으로 도입되어 블록 구문을 간소화하고 인수를 자동으로 참조함으로써 목표를 달성했습니다. 그러나 커뮤니티 내에서 읽기 어려움과 혼란 가능성에 대한 우려가 제기되었고, 이는 기본 it 매개변수 주변의 토론과 유사합니다. Rubocop은 매개변수 _1 이외의 번호 매개변수 사용을 방지하도록 설정을 기본값으로 하며, 이는 it를 사용하는 것과 정확히 동일하지만 더 좋은 이름을 가지고 있습니다.
+Ruby 2.7에서는 번호 매개변수(\_1, \_2 등)가 실험적 기능으로 도입되어 블록 구문을 간소화하고 인수를 자동으로 참조함으로써 목표를 달성했습니다. 그러나 커뮤니티 내에서 읽기 어려움과 혼란 가능성에 대한 우려가 제기되었고, 이는 기본 it 매개변수 주변의 토론과 유사합니다. Rubocop은 매개변수 \_1 이외의 번호 매개변수 사용을 방지하도록 설정을 기본값으로 하며, 이는 it를 사용하는 것과 정확히 동일하지만 더 좋은 이름을 가지고 있습니다.
 
 단점: it의 암시적 성격은 코드를 더 복잡한 작업에 대해 읽기 어렵게 만들 수 있습니다. 또한 개발자가 배워야 할 새로운 규칙을 도입합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # String#casecmp?
 
@@ -344,7 +526,18 @@ matches = strings.select { |s| s.casecmp?("hello") }
 puts matches.inspect # => ["Hello", "HELLO"]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Object#yield_self 그리고 then
 
@@ -360,7 +553,18 @@ result = "hello"
 puts result  # Output: "HELLO WORLD"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **단점:** 이러한 방법은 쉽게 오용되거나 과도하게 사용될 수 있어서, 체인이 너무 길거나 복잡해지면 코드가 덜 가독성이 될 수 있습니다.
 
@@ -370,7 +574,18 @@ puts result  # Output: "HELLO WORLD"
 
 Ruby 2.6에서 소개된 끝없는 범위는 한쪽에 제한이 없이 범위를 정의할 수 있게 해주어 코드를 보다 간결하고 표현력있게 만들어줍니다. 특히 무한한 시퀀스나 무한 범위에 대해서 특히 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 alphabet = ('a'..'z')
@@ -381,14 +596,25 @@ positive_even_numbers = (2..).step(2)
 ActiveRecord을 사용하면 강력한 단축키가 될 수 있습니다:
 
 ```js
-@posts = 
+@posts =
   Post.where(some_value: ..min_value).order(:id).paginate(page: params[:page])
   # where('some_value < ?', min_value)와 동일합니다
 ```
 
 무한 범위는 조심히 사용하지 않으면 예상치 못한 동작으로 이어질 수 있습니다. 특히 범위가 무한대로 반복되는 경우에는 특별히 주의해야 합니다. 지나치게 또는 부적절하게 사용할 경우 가독성이 떨어질 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 클래스:
 
@@ -407,7 +633,18 @@ puts point.x # 출력: 10
 puts point.y # 출력: 20
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 클래스는 주로 간단한 데이터 구조를 위해 사용되며 복잡한 클래스 계층구조나 행위 중심 클래스에는 적합하지 않을 수 있습니다. 과도하게 사용할 경우 더 이상 캡슐화되지 않은 코드로 이어질 수도 있습니다.
 
@@ -417,7 +654,18 @@ Struct는 루비의 내장 클래스로, 이름이 지정된 속성을 가진 �
 
 한편 Data는 루비 3.0에서 Ractor 실험적 API의 일부로 도입된 새로운 기능입니다. 이는 엄격한 속성 타입을 갖는 변경할 수 없는 데이터 클래스를 정의하는 데 특별히 설계되었습니다. Struct가 변경 가능한 속성을 가진 변경 가능한 클래스를 생성하는 데 반해, Data 클래스는 기본적으로 변경할 수 없으며, 인스턴스화 이후에는 속성을 수정할 수 없습니다. 또한 Data 클래스는 속성에 대한 엄격한 타입 지정을 강제하므로 지정된 유형의 값만이 속성에 할당될 수 있습니다. 이러한 변경 불가능성과 엄격한 타입 지정으로 인해 Data 클래스는 데이터 전송 객체(DTO), 데이터 페이로드 표현 및 변경 불가능성 및 유형 안전성이 중요한 시나리오를 모델링하는 데 적합합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

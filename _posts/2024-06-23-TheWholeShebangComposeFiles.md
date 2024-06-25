@@ -3,13 +3,12 @@ title: "전체 구성 Compose 파일 쉽게 설정하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-TheWholeShebangComposeFiles_0.png"
 date: 2024-06-23 00:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TheWholeShebangComposeFiles_0.png
 tag: Tech
 originalTitle: "The Whole Shebang: Compose Files"
 link: "https://medium.com/better-programming/the-whole-shebang-compose-files-5b6f50dd196c"
 ---
-
 
 <img src="/assets/img/2024-06-23-TheWholeShebangComposeFiles_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/better-programming/the-whole-shebang-compose-files-5b6
 
 공식 문서에서 더 많은 정보를 확인할 수 있지만, 간단히 말하면 다음과 같습니다: Docker를 사용하여 컨테이너, 이미지, 볼륨 등을 관리합니다. docker run을 실행하면 기본적으로 단일 컨테이너를 실행하는 것입니다. 만약 첫 번째 컨테이너와 상호 작용하는 두 번째 컨테이너를 시작하려면 docker run을 다시 실행해야 하며, 볼륨 및 네트워크를 별도로 처리하여 서로를 보고 통신할 수 있도록 해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 컴포즈는 도커 위에 래퍼를 제공하여 이 모든 것을 추상화합니다 (맞아요! 도커 컴포즈는 단순히 도커를 위한 고수준 CLI입니다). 실제로 대부분의 옵션이 docker run 하위 명령어에서 사용 가능한 옵션들과 매우 유사한 방식으로 명명됩니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/better-programming/the-whole-shebang-compose-files-5b6
 
 우선, 멀티 컨테이너 애플리케이션을 올바르게 운영하려면 컴포즈 파일을 작성하는 방법을 익혀야 하므로 도커 컴포즈 CLI에 대해서는 다른 글에서 다룰 예정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커의 구성 파일 관련 문서는 매우 완벽하지만, 저는 실용주의와 경험으로부터 배우는 것을 중요하게 생각하는 사람이라서 모든 Compose 파일 옵션을 손질하고 명료한 설명과 실제 예시를 담아내려고 합니다. 여기서 시작해봅시다!
 
@@ -39,7 +60,18 @@ link: "https://medium.com/better-programming/the-whole-shebang-compose-files-5b6
 
 예시에 들어가기 전에, 모든 구성 파일은 작성하는 현재의 파일 스키마를 나타내는 키워드 version으로 시작됩니다. 앞서 말한대로, 저희는 최신 (버전: "3")을 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 빌드
 
@@ -62,7 +94,7 @@ services:
     build: .
 EOF
 $
-$ docker-compose up 
+$ docker-compose up
 디폴트 드라이버를 사용하여 "mediumcom_default" 네트워크 생성 중
 my-test-container 빌드 중
 Docker 데몬으로 빌드 컨텍스트 보내는 중  1.337MB
@@ -77,10 +109,21 @@ mediumcom_my-test-container_1 생성 중 ... 완료
 mediumcom_my-test-container_1에 연결 중
 my-test-container_1  | Hello Medium readers
 mediumcom_my-test-container_1는 코드 0으로 종료됨
-$ 
+$
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보시다시피, Docker Compose는 Docker에게 도커파일(컴포즈 파일과 동일한 경로에 위치)로부터 이미지를 빌드하도록 지시하고, 그 후에 자동으로 컨테이너를 시작했습니다.
 
@@ -90,14 +133,25 @@ $
 
 어플리케이션을 실행할 때마다 Docker 이미지를 빌드할 필요는 없겠죠... 그렇게 하면 불편하겠죠. 따라서 이미지를 미리 빌드하거나 간단히 컨테이너 이미지를 지정하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 이전 예제의 Dockerfile과 다음의 compose 파일을 살펴보세요:
 
 ```js
 $ # 이전 예제 정리하기 위함
 $ # 이제부터 각 예제에서 다음 명령 실행해주세요
-$ docker-compose down -v --remove-orphans   
+$ docker-compose down -v --remove-orphans
 $
 $ cat >docker-compose.yml <<EOF
 version: "3"
@@ -108,16 +162,16 @@ services:
     image: hello-world
 EOF
 $ # Dockerfile이 변경되지 않았기 때문에 첫 번째 이미지가 다시 빌드되지 않습니다
-$ docker-compose up    
+$ docker-compose up
 네트워크 "mediumcom_default" 생성 중
 mediumcom_first_1  ... 생성됨
 mediumcom_second_1 ... 생성됨
 mediumcom_second_1, mediumcom_first_1에 연결 중
 first_1   | Hello Medium readers
-second_1  | 
+second_1  |
 second_1  | Hello from Docker!
 second_1  | This message shows that your installation appears to be working correctly.
-second_1  | 
+second_1  |
 second_1  | To generate this message, Docker took the following steps:
 second_1  |  1. The Docker client contacted the Docker daemon.
 second_1  |  2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
@@ -126,16 +180,16 @@ second_1  |  3. The Docker daemon created a new container from that image which 
 second_1  |     executable that produces the output you are currently reading.
 second_1  |  4. The Docker daemon streamed that output to the Docker client, which sent it
 second_1  |     to your terminal.
-second_1  | 
+second_1  |
 second_1  | To try something more ambitious, you can run an Ubuntu container with:
 second_1  |  $ docker run -it ubuntu bash
-second_1  | 
+second_1  |
 second_1  | Share images, automate workflows, and more with a free Docker ID:
 second_1  |  https://hub.docker.com/
-second_1  | 
+second_1  |
 second_1  | For more examples and ideas, visit:
 second_1  |  https://docs.docker.com/get-started/
-second_1  | 
+second_1  |
 mediumcom_second_1이 코드 0으로 종료됨
 mediumcom_first_1이 코드 0으로 종료됨
 ```
@@ -144,7 +198,18 @@ mediumcom_first_1이 코드 0으로 종료됨
 
 ## 명령
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이를 통해 컨테이너의 명령을 정의할 수 있습니다. 따라서 Docker 이미지에 entrypoint가 정의되어 있으면 이 명령이 해당 entrypoint의 인수가 됩니다. 예시:
 
@@ -168,7 +233,18 @@ mediumcom_first_1 exited with code 0
 
 ## entrypoint
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이름에서 알 수 있듯이 해당 기능은 컨테이너의 엔트리포인트를 재정의하게 해줍니다. 예를 들어, 컨테이너가 echo 실행 파일로 실행되도록 하려면 다음과 같이 작성할 수 있어요:
 
@@ -193,7 +269,18 @@ mediumcom_first_1 exited with code 0
 
 ## cap_add
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 컨테이너에 추가 기능이 필요한 경우, 다음과 같이 추가할 수 있어요:
 
@@ -230,7 +317,18 @@ first_1  | RTNETLINK answers: Operation not permitted
 mediumcom_first_1 exited with code 2
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## cap_drop
 
@@ -254,7 +352,18 @@ mediumcom_first_1 exited with code 0
 
 그러나 호스트 네트워크 스택을 관리하려고 하지 않는다면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 $ cat >docker-compose.yml <<EOF
@@ -287,14 +396,25 @@ services:
     image: ubuntu
     command: sleep 30
 EOF
-$ docker-compose up -d 
+$ docker-compose up -d
 기본 드라이버로 네트워크 "root_default"를 생성 중
 root_first_1 컨테이너 생성 중... 완료
 $ docker inspect root_first_1 --format '{.HostConfig.CgroupParent}'
 $
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보시는 대로, 기본적으로 컨테이너에 할당된 제어 그룹이 없습니다. 하지만 우리가 할당할 수 있습니다. 심지어 우리 자신의 것을 할당할 수도 있습니다:
 
@@ -317,14 +437,25 @@ services:
     command: sleep 30
     cgroup_parent: "cpu:test-cgroup-medium"
 EOF
-$ docker-compose up -d 
+$ docker-compose up -d
 Recreating root_first_1 ... done
 $ docker inspect root_first_1 --format '{.HostConfig.CgroupParent}'
 cpu:test-cgroup-medium
 $
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## container_name
 
@@ -334,7 +465,18 @@ $
 
 따라서 Docker Compose의 이 동작을 재정의하고 생성된 컨테이너에 자체적으로 정의한 사용자 정의 이름을 지정하려면 container_name을 사용할 수 있습니다. 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ cat >docker-compose.yml <<EOF
@@ -371,7 +513,7 @@ mediumcom_second_1 생성 중... 완료
 mediumcom_second_1, my-own-container-name에 연결 중
 second_1  | my-own-container-name(172.18.0.3) 핑 중: 56 data bytes
 second_1  | 64 bytes from 172.18.0.3: seq=0 ttl=64 time=0.743 ms
-second_1  | 
+second_1  |
 second_1  | --- my-own-container-name 핑 통계 ---
 second_1  | 전송된 패킷: 1, 수신된 패킷: 1, 패킷 손실: 0%
 second_1  | 왕복 최소/평균/최대 시간 = 0.743/0.743/0.743 ms
@@ -381,7 +523,18 @@ my-own-container-name이 코드 0으로 종료됨
 
 ## depends_on
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 말하자면, 아니요, 이 옵션은 컨테이너 애플리케이션의 시작 순서를 제어할 수 있게 해주지 않아요! 많은 사람들이 하는 실수죠. 하지만 생각해보세요… 당신의 컨테이너는 내부에서 하나 이상의 프로세스를 실행하고 있기 때문에, Docker(컨테이너를 관리하는 주체)가 해당 컨테이너 내부에서 실행 중인 애플리케이션/프로세스의 비즈니스 로직을 완벽히 이해하고 있다고 가정하는 것은 순진한 판단일 거예요.
 
@@ -411,7 +564,18 @@ mediumcom_second_1 exited with code 0
 mediumcom_first_1 exited with code 0
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 봐요! 두 번째에 의존하는 첫 번째 컨테이너가 먼저 시작되므로, 두 번째 컨테이너가 먼저 시작됩니다. 그리고 멈출 때도 마찬가지 — 먼저 의존하는 첫 번째가 있기 때문에 두 번째가 마지막으로 내려갑니다!
 
@@ -426,7 +590,18 @@ mediumcom_default 네트워크 제거됨
 
 ## 볼륨
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 볼륨에 대해 자세히 설명하지 않을 거예요. 이 주제는 꽤 크거든요. 단지 컨테이너 애플리케이션에서 데이터를 관리할 수 있는 4가지 방법이 있다는 것만 말씀드릴게요:
 
@@ -480,7 +655,18 @@ first_1  | var
 test_first_1 exited with code 0
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에 세 가지 다른 유형의 마운트가 한꺼번에 나왔어요. 그런데 알아두셨나요? 제가 3가지 다른 구문을 사용했어요... 선호하는 것이나 마운트에 가장 적합한 것을 선택할 수 있어요 (여기에서 더 자세히 읽을 수 있어요).
 
@@ -490,7 +676,18 @@ test_first_1 exited with code 0
 
 이미 이전 섹션에서 설명했지만, 알아두시면 좋아요. 이는 컨테이너를 위한 비영구적 마운트 포인트를 설정하는 또 다른 간단한 방법일 뿐이에요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 $ cat >docker-compose.yml <<EOF
@@ -531,8 +728,18 @@ mediumcom_first_1가 코드 0으로 종료됨
 
 요약하면, 컨테이너가 특권 모드에서 실행되지 않는 경우에도 이 옵션을 통해 특정 디바이스 파일에 대한 컨테이너 액세스를 부여할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 컴퓨터에 웹캠이 연결되어 있다고 가정해 봅시다.
 
@@ -545,8 +752,18 @@ Bus 001 Device 003: ID 046d:0826 Logitech, Inc. HD Webcam C525
 
 - 먼저, 옵션을 적용하지 않고 컨테이너 내부에서 웹캠에 액세스해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ cat >docker-compose.yml <<EOF
@@ -593,7 +810,18 @@ first_1  | /dev/video0을 읽을 수 있는 소스 모듈을 찾을 수 없습�
 first_1  | tmp_first_1이 코드 0으로 종료되었습니다
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 …음, 컨테이너는 보이지만 접근할 수 있는 권한이 없네요.
 
@@ -627,7 +855,18 @@ first_1  | tmp_first_1 exited with code 0
 
 그리고 성공입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## network_mode
 
@@ -664,15 +903,15 @@ Creating mediumcom_fourth_1 ... done
 Creating mediumcom_second_1 ... done
 Creating mediumcom_third_1  ... done
 Attaching to mediumcom_second_1, mediumcom_fourth_1, mediumcom_first_1, mediumcom_third_1
-first_1   | eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:02  
+first_1   | eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:02
 first_1   |           inet addr:172.17.0.2  Bcast:172.17.255.255  Mask:255.255.0.0
 ...
 fourth_1  | ifconfig: eth0: error fetching interface information: Device not found
 ...
-second_1  | eth0      Link encap:Ethernet  HWaddr 02:50:00:00:00:01  
+second_1  | eth0      Link encap:Ethernet  HWaddr 02:50:00:00:00:01
 second_1  |           inet addr:192.168.65.3  Bcast:192.168.65.255  Mask:255.255.255.0
 ...
-third_1   | eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:02  
+third_1   | eth0      Link encap:Ethernet  HWaddr 02:42:AC:11:00:02
 third_1   |           inet addr:172.17.0.2  Bcast:172.17.255.255  Mask:255.255.0.0
 ...
 mediumcom_fourth_1 exited with code 1
@@ -681,7 +920,18 @@ mediumcom_third_1 exited with code 0
 mediumcom_first_1 exited with code 0
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, 무슨 일이 있었나요? 이를 간단히 살펴보겠습니다:
 
@@ -694,7 +944,18 @@ mediumcom_first_1 exited with code 0
 
 이제 위에서 언급한 옵션을 활용하여, 컨테이너를 사용자 정의 네트워크에 연결하려면 어떻게 해야 하나요(기존 네트워크 또는 새로 생성한 것 중)? 그럴 때는 networks를 사용하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ docker network create cjdc-test
@@ -749,7 +1010,18 @@ first_1  | nameserver 1.2.3.4
 mediumcom_first_1 exited with code 0
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주의: 사용자 정의 네트워크에서는 DNS 옵션이 기본적으로 동작하지 않으므로 브릿지 네트워크가 필요합니다.
 
@@ -767,15 +1039,26 @@ services:
     dns_search: my.custom.dns
     network_mode: bridge
 EOF
-$ docker-compose up 
+$ docker-compose up
 Recreating mediumcom_first_1 ... done
 Attaching to mediumcom_first_1
 first_1  | search my.custom.dns
 first_1  | nameserver 192.168.65.5
 mediumcom_first_1 exited with code 0
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## env_file
 
@@ -796,7 +1079,7 @@ services:
     env_file:
      - my-env
 EOF
-$ docker-compose up 
+$ docker-compose up
 mediumcom_first_1 다시 만들기 ... 완료
 mediumcom_first_1에 연결
 first_1  | PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -810,7 +1093,18 @@ mediumcom_first_1 코드 0으로 종료
 
 ## environment
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이를 통해 컴포즈 파일에서 컨테이너의 환경 변수를 하나씩 직접 설정할 수 있습니다.
 
@@ -824,7 +1118,7 @@ services:
     image: alpine
     command: env
 EOF
-$ docker-compose up 
+$ docker-compose up
 Recreating mediumcom_first_1 ... done
 Attaching to mediumcom_first_1
 first_1  | PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -832,11 +1126,22 @@ first_1  | HOSTNAME=68e909013198
 first_1  | NEW_VAR=yes
 first_1  | HOME=/root
 mediumcom_first_1 exited with code 0
-``` 
+```
 
 ## 노출
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커파일과 유사하게, 이 옵션은 컨테이너의 포트를 표시하고 다른 연결된 컨테이너에서 사용할 수 있도록 합니다.
 
@@ -861,7 +1166,18 @@ CONTAINER ID   IMAGE     COMMAND      CREATED          STATUS          PORTS    
 
 옵션을 건너뛰어야 합니다. 왜냐하면 1) 이것은 레거시 옵션이기 때문에, 그리고 2) 동일한 결과를 얻기 위해 네트워크를 사용할 수 있습니다(즉, 컨테이너를 외부 네트워크에 포함되어 있지 않은 다른 컨테이너에 연결할 수 있습니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## extra_hosts
 
@@ -878,7 +1194,7 @@ services:
      - "myself:127.0.0.1"
      - "me:127.0.0.1"
 EOF
-$ docker-compose up 
+$ docker-compose up
 Recreating mediumcom_first_1 ... done
 Attaching to mediumcom_first_1
 first_1  | 127.0.0.1 localhost
@@ -892,7 +1208,7 @@ first_1  | 127.0.0.1 me
 first_1  | 172.22.0.2 01d566c4380a
 first_1  | PING me (127.0.0.1): 56 data bytes
 first_1  | 64 bytes from 127.0.0.1: seq=0 ttl=64 time=1.192 ms
-first_1  | 
+first_1  |
 first_1  | --- me ping statistics ---
 first_1  | 1 packets transmitted, 1 packets received, 0% packet loss
 first_1  | round-trip min/avg/max = 1.192/1.192/1.192 ms
@@ -901,7 +1217,18 @@ mediumcom_first_1 exited with code 0
 
 ## healthcheck
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당연히, 이것은 도커 파일 옵션과 매우 유사하게 작동합니다. 도커가 컨테이너가 "healthy(건강한)"인지 아닌지 평가하는 데 사용할 수 있는 사용자 정의 확인을 만들 수 있습니다.
 
@@ -943,7 +1270,18 @@ b8804cbb440d   alpine    "sh -c 'touch /tmp/N…"   4 seconds ago   Up 2 seconds
 
 그런데 여기서 볼 수 있듯이, 처음 것은 건강하지 않지만 두 번째는 건강하다고 나옵니다. 필요한 파일이 올바른 위치에 존재하기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 초기화
 
@@ -958,7 +1296,7 @@ services:
     command: ps -a
     init: false
 EOF
-$ docker-compose up 
+$ docker-compose up
 mediumcom_first_1 다시 생성 중... 완료
 mediumcom_first_1에 참여 중
 first_1  | PID   USER     TIME  COMMAND
@@ -968,25 +1306,34 @@ mediumcom_first_1은 코드 0으로 종료됨
 
 그러나 초기화를 활성화하면 이와 같은 프로세스 래퍼를 얻게 되며, 이는 PID 1로 추가 기능이 있는 경우 (이 경우에는 docker-init)입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 $ cat >docker-compose.yml <<EOF
 version: "3"
 services:
-  first:
-    image: alpine
-    command: ps -a
-    init: true
+first:
+image: alpine
+command: ps -a
+init: true
 EOF
 $ docker-compose up
 Starting mediumcom_first_1 ... done
 Attaching to mediumcom_first_1
-first_1  | PID   USER     TIME  COMMAND
-first_1  |     1 root      0:00 /sbin/docker-init -- ps -a
-first_1  |     8 root      0:00 ps -a
+first_1 | PID USER TIME COMMAND
+first_1 | 1 root 0:00 /sbin/docker-init -- ps -a
+first_1 | 8 root 0:00 ps -a
 mediumcom_first_1 exited with code 0
-
 
 ## 격리
 
@@ -994,8 +1341,18 @@ mediumcom_first_1 exited with code 0
 
 ## 레이블
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 콘테이너에 레이블을 설정할 수 있는 이 옵션의 이름처럼:
 
@@ -1020,7 +1377,18 @@ CONTAINER ID   IMAGE     COMMAND      CREATED          STATUS         PORTS     
 
 외부 링크에 대한 내용은 과거의 옵션을 건너뛰겠습니다. 컨테이너 간 통신은 사용자 정의 네트워크로 쉽게 설정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 로깅
 
@@ -1043,7 +1411,7 @@ tmp_first_1을 다시 생성 중... 완료됨
 $ docker ps -f 'name=tmp_first_1'
 CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
 2ea63dd32607   alpine    "sh -c 'while true; …"   2 minutes ago   Up 2 minutes             tmp_first_1
-$ 
+$
 $ du -h /var/lib/docker/containers/2ea63dd32607*/*log*
 20K /var/lib/docker/containers/2ea63dd32607ea5c5b3238ed4da2233a049c41422cfff96b6a2e45c818f96f60/2ea63dd32607ea5c5b3238ed4da2233a049c41422cfff96b6a2e45c818f96f60-json.log
 52K /var/lib/docker/containers/2ea63dd32607ea5c5b3238ed4da2233a049c41422cfff96b6a2e45c818f96f60/2ea63dd32607ea5c5b3238ed4da2233a049c41422cfff96b6a2e45c818f96f60-json.log.1
@@ -1059,7 +1427,18 @@ $ du -h /var/lib/docker/containers/2ea63dd32607*/*log*
 
 그러니까 이 예제에서 볼 수 있듯이, Docker는 최대 10개의 로그 파일만 유지하고, 그 크기가 우리가 원하는 50 Kibibytes(= 52K)를 초과하지 않는 것을 확인할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## PID
 
@@ -1077,7 +1456,7 @@ services:
     image: alpine
     command: ps -a
 EOF
-$ docker-compose up 
+$ docker-compose up
 Creating network "mediumcom_default" with the default driver
 Creating mediumcom_second_1 ... done
 Creating mediumcom_first_1  ... done
@@ -1103,13 +1482,25 @@ first_1   |    16 root      0:00 [cpuhp/1]
 
 이것은 컨테이너 내에서 호스트 프로세스를 관리하고(포함하여 종료)할 수 있다는 의미이므로 이 옵션을 사용할 때 주의해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 포트
 
 가장 인기 있는 옵션 중 하나인 이 기능을 사용하면 컨테이너 내부의 포트를 호스트로 게시할 수 있습니다 (컨테이너가 이미 "호스트" 모드에서 실행 중이지 않은 경우).
 
 예를 들어, 다음과 같이 게시하려는 경우를 생각해 봅시다:
+
 - 포트 3000을 임의의 포트로
 - 포트 범위 3005부터 3010까지
 - 로컬호스트의 포트 80을 포트 80으로만
@@ -1137,7 +1528,18 @@ $ docker ps --format '{.Ports}'
 127.0.0.1:80->80/tcp, 0.0.0.0:443->443/tcp, 0.0.0.0:61290->3000/tcp, 0.0.0.0:61292->3005/tcp, 0.0.0.0:61293->3006/tcp, 0.0.0.0:61294->3007/tcp, 0.0.0.0:61295->3008/tcp, 0.0.0.0:61296->3009/tcp, 0.0.0.0:61291->3010/tcp, 0.0.0.0:9876->3011/udp
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 프로필
 
@@ -1158,7 +1560,7 @@ $ docker-compose up -d
 네트워크 "mediumcom_default"를 기본 드라이버로 생성 중
 mediumcom_first_1 생성 완료
 $ # 보세요? nginx 컨테이너만 시작되었습니다. 이제 "debug"를 활성화해 봅시다
-$ docker-compose --profile debug up 
+$ docker-compose --profile debug up
 mediumcom_first_1 is up-to-date
 mediumcom_second_1 생성 완료
 mediumcom_first_1, mediumcom_second_1에 첨부
@@ -1173,7 +1575,18 @@ mediumcom_second_1이 코드 0으로 종료됨
 
 ## 재시작
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너의 재시작 정책을 정의하는 방법입니다 (no, always, unless-stopped, on-failure 중 하나를 선택).
 
@@ -1190,7 +1603,7 @@ services:
     command: echo Hi `date`
     restart: always
 EOF
-$ docker-compose up 
+$ docker-compose up
 Creating network "mediumcom_default" with the default driver
 Creating mediumcom_first_1  ... done
 Creating mediumcom_second_1 ... done
@@ -1215,7 +1628,18 @@ mediumcom_first_1 exited with code 0
 
 이 옵션을 사용하면 컨테이너의 SELinux 레이블을 제어할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 $ cat >docker-compose.yml <<EOF
@@ -1232,7 +1656,7 @@ services:
 EOF
 $ docker inspect mediumcom_first_1 --format '{ .Id }: SecurityOpt={ .HostConfig.SecurityOpt }'
 2808e4b2ac6a6870b372ecf06da5ce0217efdd6d14df16cef4b332e1d4fb9b6a: SecurityOpt=[label:user:USER]
-$ 
+$
 $ docker inspect mediumcom_second_1 --format '{ .Id }: SecurityOpt={ .HostConfig.SecurityOpt }'
 ed4c417b27257cc9f793d5d3dad94672074859dba90effddd0cde49f12dd4115: SecurityOpt=<no value>
 ```
@@ -1268,7 +1692,18 @@ user 0m0.192s
 sys 0m0.105s
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## stop_signal
 
@@ -1292,7 +1727,18 @@ SIGUSR1
 
 ## sysctls
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 옵션은 컨테이너의 네임스페이스된 커널 매개변수를 런타임에서 구성할 수 있게 합니다.
 
@@ -1318,7 +1764,18 @@ $ docker inspect mediumcom_first_1 --format '{json .HostConfig.Sysctls}'
 
 컨테이너의 기본 ulimits를 재정의할 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ cat >docker-compose.yml <<EOF
@@ -1345,8 +1802,18 @@ $ docker inspect mediumcom_first_1 --format '{json .HostConfig.Ulimits}'
 
 ## user
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너 응용프로그램이 특정 사용자로 실행되도록 하려면 어떻게 하시겠습니까?
 
@@ -1359,7 +1826,7 @@ services:
     command: whoami
     user: nobody
 EOF
-$ docker-compose up 
+$ docker-compose up
 Recreating mediumcom_first_1 ... done
 Attaching to mediumcom_first_1
 first_1  | nobody
@@ -1370,7 +1837,18 @@ mediumcom_first_1 exited with code 0
 
 도커 파일에서 본 적이 있을 것입니다. 이를 사용하면 컨테이너의 랜딩 경로(PWD)를 재정의할 수 있습니다. 이를 통해 엔트리포인트와 명령이 절대 경로를 사용하지 않는 경우에도 동작을 변경할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ cat >docker-compose.yml <<EOF
@@ -1381,7 +1859,7 @@ services:
     command: pwd
     working_dir: /my/custom/medium/dir
 EOF
-$ docker-compose up 
+$ docker-compose up
 mediumcom_first_1 컨테이너 다시 생성 중... 완료
 mediumcom_first_1에 연결 중
 first_1  | /my/custom/medium/dir
@@ -1408,7 +1886,18 @@ first_1  | 6e900c697939.cristovaocordeiro.medium.com
 mediumcom_first_1 코드 0으로 종료됨
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 호스트이름
 
@@ -1423,7 +1912,7 @@ services:
     command: hostname -f
     hostname: test-container
 EOF
-$ docker-compose up 
+$ docker-compose up
 Recreating mediumcom_first_1 ... done
 Attaching to mediumcom_first_1
 first_1  | test-container
@@ -1432,7 +1921,18 @@ mediumcom_first_1 exited with code 0
 
 ## ipc
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너의 프로세스 간 통신을 관리할 수 있습니다(성능 조정 목적). 이 옵션을 통해 컨테이너의 IPC 네임스페이스를 설정할 수 있습니다.
 
@@ -1453,7 +1953,18 @@ $ docker inspect mediumcom_first_1 --format '{json .HostConfig.IpcMode}'
 
 원하는 컨테이너에 사용자 정의 MAC 주소를 설정할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ cat >docker-compose.yml <<EOF
@@ -1464,7 +1975,7 @@ $ cat >docker-compose.yml <<EOF
     명령: ifconfig eth0
     mac_address: 00:ab:cd:12:34:56
 EOF
-$ docker-compose up 
+$ docker-compose up
 mediumcom_first_1 컨테이너 다시 생성 중... 완료
 mediumcom_first_1에 연결 중
 first_1  | eth0 Link encap:Ethernet  HWaddr 00:AB:CD:12:34:56  
@@ -1474,7 +1985,7 @@ first_1  | RX packets:2 errors:0 dropped:0 overruns:0 frame:0
 first_1  | TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
 first_1  | collisions:0 txqueuelen:0 
 first_1  | RX bytes:200 (200.0 B)  TX bytes:0 (0.0 B)
-first_1  | 
+first_1  |
 mediumcom_first_1가 코드 0으로 종료됨
 ```
 
@@ -1494,7 +2005,7 @@ $ cat >docker-compose.yml <<EOF
     명령: sh -c 'ls /dev/ | wc -l'
     특권적: true
 EOF
-$ docker-compose up 
+$ docker-compose up
 mediumcom_first_1 컨테이너 다시 생성 중... 완료
 mediumcom_second_1 컨테이너 다시 생성 중... 완료
 mediumcom_first_1에 연결 중, mediumcom_second_1에 연결 중
@@ -1504,7 +2015,18 @@ mediumcom_first_1가 코드 0으로 종료됨
 mediumcom_second_1가 코드 0으로 종료됨
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 읽기 전용
 
@@ -1522,7 +2044,7 @@ services:
     command: touch /tmp/test
     read_only: true
 EOF
-$ docker-compose up 
+$ docker-compose up
 mediumcom_first_1  ... done
 mediumcom_second_1 ... done
 mediumcom_first_1, mediumcom_second_1에 연결 중
@@ -1533,7 +2055,18 @@ mediumcom_second_1 코드 1로 종료
 
 ## shm_size
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너가 사용할 수 있는 공유 메모리 양을 지정할 수 있습니다.
 
@@ -1546,7 +2079,7 @@ services:
     command: df -h /dev/shm
     shm_size: 123M
 EOF
-$ docker-compose up 
+$ docker-compose up
 mediumcom_first_1 컨테이너를 다시 생성 중... 완료
 mediumcom_first_1에 연결 중
 first_1  | 파일 시스템                크기      사용함 사용 가능함 사용률 마운트된 위치
@@ -1558,7 +2091,18 @@ mediumcom_first_1은 코드 0으로 종료됨
 
 이는 docker run의 -i에 해당합니다. 이를 사용하여 호스트와 컨테이너 간 상호작용이 가능한 인터랙티브 세션을 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 $ cat >docker-compose.yml <<EOF
@@ -1570,7 +2114,7 @@ services:
 EOF
 $ docker-compose up -d
 Recreating mediumcom_first_1 ... done
-$ docker attach mediumcom_first_1 
+$ docker attach mediumcom_first_1
 echo Hello, I am sending commands to the container
 Hello, I am sending commands to the container
 exit
@@ -1582,8 +2126,18 @@ exit
 
 이것은 도커 실행에서의 -t와 동등합니다. 컨테이너에 가상 tty를 할당하고 stdin_open과 결합할 때 유용합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ cat >docker-compose.yml <<EOF
@@ -1596,7 +2150,7 @@ services:
 EOF
 $ docker-compose up -d
 mediumcom_first_1 컨테이너를 다시 생성합니다... 완료
-$ docker attach mediumcom_first_1 
+$ docker attach mediumcom_first_1
 / # echo now this is a real terminal
 now this is a real terminal
 / # sleep 5
@@ -1610,9 +2164,19 @@ now this is a real terminal
 
 우와... 정말 긴 기사였죠. 죄송합니다. 밝은 면에서 말하면, 여러 기사를 넘나들며 다양한 컴포즈 파일 옵션이 무엇을 하는지 찾아보지 않아도 되겠죠?
 
-스웜 모드에서 서비스에 특정한 옵션(변수 치환 및 확장 필드 같은 고유한 구조적 노하우)을 일부 뺐습니다. 이것들은 선택 사항이며, 다른 기사에서 다룰 수 있어요. 
+스웜 모드에서 서비스에 특정한 옵션(변수 치환 및 확장 필드 같은 고유한 구조적 노하우)을 일부 뺐습니다. 이것들은 선택 사항이며, 다른 기사에서 다룰 수 있어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 테이블 태그를 마크다운 형식으로 변경해드렸습니다.

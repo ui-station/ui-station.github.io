@@ -3,13 +3,12 @@ title: "필수 인공지능"
 description: ""
 coverImage: "/assets/img/2024-05-18-EssentialAI_0.png"
 date: 2024-05-18 19:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-EssentialAI_0.png
 tag: Tech
 originalTitle: "Essential AI"
 link: "https://medium.com/@tortugaagtech/essential-ai-3592ad5e565c"
 ---
-
 
 르네상스 시대에는 1480년경 레오나르도 다 빈치가 헬리콥터에 대한 창의적인 개념을 그린 것으로 알려져 있지만, 그 꿈을 상용화되고 신뢰할 수 있는 제품으로 만드는 데에는 별도의 혁명인 산업혁명이 필요했습니다. 마찬가지로, 생성 적 인공지능이 우리 사무실에 딸린 로봇이 딸기를 수확하고 있는 매력적인 오일 페인팅을 선사했지만, 농업 산업에 수익성 있고 신뢰할 수 있는 수확 로봇을 제공하기 위해서는 인공지능에 대해 근본적으로 다른 접근 방식이 필요하다고 믿고 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tortugaagtech/essential-ai-3592ad5e565c"
 
 우리 모두가 경험하는 것처럼, 인공지능 르네상스가 왔습니다. “Attention Is All You Need”이라는 위대한 논문이 트랜스포머 모델의 붐을 일으키기 시작했지만, 최초의 대중적인 붐은 ChatGPT 3와 4로 시작되었으며, 그 뒤에는 생성 적 인공지능의 대규모 확장이 이어졌습니다. 이번 주에는 OpenAI의 GPT-4o와 Google Gemini이 실시간 언어 번역, 코드 분석 및 다양한 흥미로운 "AI 어시스턴트" 응용 프로그램을 포함한 경이로운 실시간 시연을 선보였습니다. 인간형 로봇도 뜨거운 관심을 받고 있습니다 - 투자자들이 지난 12개월 동안 인공지능 주도의 인간형 로봇에 수십억 달러를 투자했습니다. RT-2 및 RT-X와 같은 프로젝트는 인간형 로봇을 위한 폭넓은 텍스트 - 행동 및 제로샷 학습 응용 프로그램을 꿈꾸고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 토르투가에서는 AI 르네상스를 신뢰합니다: 우리는 AI 로봇을 사용하여 과일을 따거나 다른 중요한 농업 서비스를 제공합니다. 또한, 현재의 AI 붐은 실제 현실 자동화의 거대한 경제적 결과로 이끄는 것은 아니라고 믿습니다. 우리가 AI 산업 혁명으로 전환할 때에 이뤄질 것이라고 생각합니다. 다 빈치의 르네상스는 "공중 나사"와 같은 혁신과 학습의 폭발을 가져왔지만, 이러한 인상적인 논문상 아이디어들이 실제로 수익 창출 규모에서 이륙할 수 있었던 것은 산업 혁명이 일어날 때였습니다.
 
@@ -29,7 +39,18 @@ AI 르네상스의 문제
 
 최근 OpenAI의 Sam Altman이 말한 것처럼,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "매년 5억 달러, 50억 달러 또는 500억 달러를 태울지라도 상관없어요. 정말로 상관하지 않아요. 사람들에게 정말 능력있는 도구를 제공하고 이를 활용해 미래를 만들어가도록 하는 것이 정말 좋은 일이라고 생각해요. 여러분과 세계의 모든 다른 사람들의 창의력에 베팅하고 싶어요. 이 문제에 대해 어떻게 대처할지 찾아내기 위해.
 
@@ -39,7 +60,18 @@ AI 르네상스의 문제
 
 전문화: 르네상스는 산업 혁명이 필요합니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ChatGPT4의 다양한 테스트 결과는 정말 인상적입니다. 마찬가지로 Waymo는 피닉스와 샌프란시스코에서 운영 중입니다. AI 로봇들은 오늘날 현실 세계에서 운전할 수 있습니다. 하지만 3D 물리 세계의 작업은 순수 텍스트나 2차원 도로 시스템의 작업에 비해 자동화하기가 훨씬 더 복잡한 것으로 입증되었습니다. 메타의 주요 AI 과학자인 Yann LeCun은 이 복잡성 차이를 언급했습니다. 현실 세계가 쓰인 세계보다 훨씬 더 복잡하고 "심층적"이라고 말했습니다.
 
@@ -49,7 +81,18 @@ ChatGPT4의 다양한 테스트 결과는 정말 인상적입니다. 마찬가�
 
 이제 두 번째 믿음으로 넘어가봅시다. 인공지능 르네상스는 모든 가능성과 창의성에 대한 것입니다. 그러나 인공지능 산업 혁명은 자원과 전문화에 대해 새롭게 고찰해야 합니다. 저렴하고 확장 가능한 인공지능을 만들기 위한 더 나은 방법은 해결하려는 문제에 대해 더 깊이 파고들어 근본적인 구성 요소들로 줄이고, 그 핵심 문제만 심층적이고 전문화된 방식으로 해결하는 것입니다. 우리는 그것을 꼭 필요한 인공 지능(Essential AI)이라고 부르는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 필수 인공지능: 인공지능 산업혁명을 위한 원칙 세트
 
@@ -61,7 +104,18 @@ ChatGPT4의 다양한 테스트 결과는 정말 인상적입니다. 마찬가�
 
 우리는 필수 인공지능 로봇들이 현실 세계의 산업 규모 문제를 해결할 것이라 믿으며, 장기간 이 문제에 대한 유일한 올바른 접근 방식일 것이라고 확신합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인공지능 레오나르도 다빈치 휴머노이드 르네상스 로봇은 가정에서 놀라운 자원이 될 수 있습니다. 비서로서, 대화 상대로서. 심지어 창고 환경에서 더 많은 저거량 작업을 해낼 수도 있을지도 모릅니다. 하지만 하루에 수백만 개의 베리를 수확해야 한다면, 산업혁명처럼 생각하고 그 일을 탁월하게 수행하는 비용 효율적인 로봇을 만들어야 합니다. 제대로 된 산업 작업은 우리 사회의 기반을 이루며, 제조업, 농업, 거래 분야에서의 "지루하고 더러운, 위험한" 직업들에 대해 Essential AI가 비용과 효율성 면에서 Big AI나 심지어 AGI보다 우월하게 성과를 내게 될 것입니다.
 

@@ -3,13 +3,12 @@ title: "데브옵스 제로 투 히어로 3  도커에 대해 알아야 할 모�
 description: ""
 coverImage: "/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_0.png"
 date: 2024-05-18 16:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_0.png
 tag: Tech
 originalTitle: "Devops zero to hero #3 — Everything you need to know about Dockers"
 link: "https://medium.com/illumination/devops-zero-to-hero-3-everything-you-need-to-know-about-dockers-7ff321b38e6b"
 ---
-
 
 ## 데브옵스 업무 흐름에서 도커 사용을 시작하는 완벽한 가이드
 
@@ -19,7 +18,18 @@ link: "https://medium.com/illumination/devops-zero-to-hero-3-everything-you-need
 
 20~30년 전으로 돌아가면, 하드웨어와 설치된 운영 체제(커널 및 UI)가 있었습니다. 어플리케이션을 실행하기 위해서 코드를 컴파일하고 모든 앱 의존성을 정렬해야 했습니다. 다른 어플리케이션이나 어플리케이션 작업량의 증가를 수용하기 위해 새 하드웨어를 구매하고 설치 및 구성해야 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가상화는 하드웨어와 운영 체제 사이에 추가 계층인 하이퍼바이저라는 것을 추가했습니다. 이를 통해 사용자들은 독립된 여러 애플리케이션을 실행하여 가상 머신을 자체 운영 체제와 함께 실행할 수 있었습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/illumination/devops-zero-to-hero-3-everything-you-need
 
 # 도커란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커는 마이크로서비스 기반 응용 프로그램 개발이 가능하도록 함으로써 소프트웨어 빌드 방법을 혁신했습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/illumination/devops-zero-to-hero-3-everything-you-need
 
 ![이미지](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커를 사용하려면 Dockerfile, Docker 이미지, Docker 컨테이너라는 세 가지 개념을 이해해야 합니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/illumination/devops-zero-to-hero-3-everything-you-need
 
 Docker 이미지에는 컨테이너 내에서 코드를 실행하는 데 필요한 모든 종속성이 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Docker 컨테이너란 무엇인가요?
 
@@ -59,7 +102,18 @@ Docker 이미지에는 컨테이너 내에서 코드를 실행하는 데 필요�
 
 Docker는 로컬 머신 또는 클라우드 VM에 설치되어 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Linux:
 
@@ -69,7 +123,18 @@ Mac 및 Windows:
 
 로컬 머신에서 Docker를 실행할 수 있게 해주는 Docker Desktop을 설치할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커를 시작하는 것은 쉬운 일이에요. 아래 명령을 실행하기만 하면 돼요
 
@@ -84,7 +149,18 @@ Mac 및 Windows:
 - -t 옵션은 tty 터미널을 연결해 줘요.
 - --name 옵션은 컨테이너에 이름을 부여할 수 있어요. 제공하지 않으면 컨테이너는 랜덤 이름을 받게 돼요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_2.png" />
 
@@ -97,7 +173,18 @@ docker ps # 실행 중인 컨테이너 확인
 docker ps -a # 모든 컨테이너 목록
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_3.png" />
 
@@ -109,7 +196,18 @@ docker image ls
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Linux 기반 도커 컨테이너에 사용된 이미지 크기를 확인할 수 있어요. 우분투, 아마존 리눅스, CentOS 등과 같은 일반적인 Linux 기반 머신과 비교하면 작아요.
 
@@ -123,7 +221,18 @@ Linux 기반 도커 컨테이너에 사용된 이미지 크기를 확인할 수 
 - --it는 도커와 대화형 세션을 열어줘요.
 - 셸은 sh, bash, zsh 등을 사용할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너 정보를 얻기 위해 몇 가지 명령을 실행해 봅시다.
 
@@ -133,7 +242,7 @@ docker exec -t Thor ls ; ps
 # Thor는 컨테이너 이름입니다.
 # ls ; ps는 ls와 ps 두 개의 명령을 실행합니다.
 
-docker exec -t 8ad10d1d0660 free -m 
+docker exec -t 8ad10d1d0660 free -m
 # 8ad10d1d0660은 컨테이너 ID이며, free -m은 메모리 사용량을 확인하는 명령입니다.
 ```
 
@@ -141,10 +250,21 @@ docker exec -t 8ad10d1d0660 free -m
 
 이제 -it 옵션을 사용하여 컨테이너와 대화형 쉘 세션을 열어보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-도커 exec -it 16fb1c59fbea sh 
+도커 exec -it 16fb1c59fbea sh
 # 세션을 종료하려면 "exit"을 입력하세요
 ```
 
@@ -160,8 +280,18 @@ docker stop <컨테이너 이름 또는 ID>
 docker start <컨테이너 이름 또는 ID>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_7.png)
 
@@ -180,8 +310,18 @@ docker rm -f Thor
 
 # 도커 이미지 빌드하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Docker 네트워킹
 
@@ -191,7 +331,18 @@ docker rm -f Thor
 
 만약 도커허브에서 nginx 이미지를 사용하여 nginx 컨테이너를 실행 중이고 웹 서버에 액세스하려고 한다면요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![screenshot](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_9.png)
 
@@ -201,7 +352,18 @@ docker rm -f Thor
 
 ![screenshot](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에서 본 것처럼, 컨테이너 내부의 웹 서버가 우리가 기대한 대로 작동했습니다.
 
@@ -211,7 +373,18 @@ docker rm -f Thor
 
 컨테이너에서 실행 중인 nginx 웹 서버에 연결할 수 없었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네트워크 깊이 파고들기
 
@@ -223,7 +396,18 @@ docker inspect nginx-container
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_12.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 네트워크 목록
@@ -237,7 +421,18 @@ docker inspect nginx-container
 도커 네트워크 검사 브릿지
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_14.png" />
 
@@ -252,7 +447,18 @@ docker inspect nginx-container
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_15.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_16.png)
 
@@ -262,7 +468,18 @@ busybox 이미지를 사용하여 2개의 컨테이너를 생성해 봅시다. �
 
 2개의 컨테이너를 생성하고, 각 컨테이너의 IP 주소를 얻기 위해 docker inspect를 사용해 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 두 컨테이너의 IP 주소가 동일한 네트워크에 있음을 확인할 수 있습니다(기본 브리지 네트워크).
 
@@ -272,7 +489,18 @@ busybox 이미지를 사용하여 2개의 컨테이너를 생성해 봅시다. �
 
 ![image2](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_18.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 스크린샷을 보면 두 컨테이너 모두 서로 통신할 수 있지만 이름으로는 연결할 수 없습니다.
 
@@ -284,7 +512,18 @@ busybox 이미지를 사용하여 2개의 컨테이너를 생성해 봅시다. �
 docker network create blog-network
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 네트워크를 사용하여 이름이 nginx-con인 nginx 컨테이너를 만들어보세요.
 
@@ -297,20 +536,40 @@ docker ps
 
 도커 컨테이너와 네트워크를 검사해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-도커 네트워크를 검사하는 방법: 
+도커 네트워크를 검사하는 방법:
 
 
 ![사진](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_20.png)
 
-Nginx 컨테이너를 검사하는 방법: 
+Nginx 컨테이너를 검사하는 방법:
 
 
 ![사진](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_21.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 호스트 포트를 통해 컨테이너에서 실행 중인 nginx 웹 서버에 액세스하려고 하면 작동하지 않을 것입니다. 여전히 컨테이너에서 실행 중인 웹 서버에 액세스하려면 호스트 포트로의 포트 포워딩을 수행해야 합니다.
 
@@ -320,7 +579,16 @@ Nginx 컨테이너를 검사하는 방법:
 
 ![이미지](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_22.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. 호스트 네트워크
 
@@ -331,7 +599,16 @@ docker ps
 
 이렇게 하면 nginx 컨테이너가 호스트 네트워크에서 실행됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 로컬 호스트에서 nginx 서버에 접근하려고 하면, 작동해야 합니다.
 
@@ -343,7 +620,16 @@ docker inspect nginx-server | grep IPAddress
 
 ![이미지](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_24.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 뭐라구요? 해당 IP 주소가 없나봐요. 호스트 머신의 IP 주소를 사용한 모양이에요.
 
@@ -353,7 +639,16 @@ docker inspect nginx-server | grep IPAddress
 
 도커는 로컬 파일 시스템에서 컨테이너의 모든 콘텐츠, 코드 및 데이터를 분리합니다. 이는 도커 데스크탑에서 컨테이너를 삭제하면 그 안의 모든 콘텐츠가 삭제된다는 뜻이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가끔은 컨테이너가 생성한 데이터를 유지하기를 원할 수 있습니다. 이때 볼륨을 사용할 수 있습니다.
 
@@ -363,7 +658,16 @@ docker inspect nginx-server | grep IPAddress
 
 ## 도커 볼륨
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 체적은 도커에서 관리하는 로컬 파일 시스템의 위치입니다.
 
@@ -373,7 +677,16 @@ docker inspect nginx-server | grep IPAddress
 
 도커에서 체적을 사용하는 방법에는 --mount 및 -v (또는 --volume ) 두 가지가 있습니다. -v 구문은 모든 옵션을 하나의 필드에 결합하며, --mount 구문은 옵션을 분리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - -v 또는 --volume: 콜론 문자(:)로 구분된 세 개의 필드로 구성됩니다.
 
@@ -387,7 +700,16 @@ docker inspect nginx-server | grep IPAddress
    - 마운트의 소스.
    - 목적지는 파일 또는 디렉터리가 컨테이너 내에서 마운트된 경로로 값을 취합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 예시: Docker 컨테이너와 바인드 마운트
 
@@ -405,7 +727,16 @@ docker run -t -d --mount type=bind,source=docker-bind-mount,target=/app/log \
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_25.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 
 ![image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_26.png)
@@ -417,7 +748,16 @@ docker run -t -d --mount type=bind,source=docker-bind-mount,target=/app/log \
 자세히 살펴보면, 1번째와 2번째 컨테이너에서 생성한 파일들이 3번째 컨테이너에서 보이며, 1번째에서 3번째 컨테이너에서 생성한 파일이 4번째(Captain-America) 컨테이너에서도 보인다는 점을 알 수 있습니다.
 
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 도커 데이터 파일에는 다른 컨테이너의 내용이 포함되어 있습니다.
 
@@ -427,7 +767,16 @@ docker run -t -d --mount type=bind,source=docker-bind-mount,target=/app/log \
 
 이것은 즉, 도커가 바인드 마운트한 데이터를 다른 컨테이너와 공유할 수 있었지만 데이터가 로컬 호스트에서는 보이지 않는다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 파일들은 바인드 마운트 시 도커 컨테이너 간에 저장되고 공유됩니다.
 
@@ -437,7 +786,16 @@ docker run -t -d --mount type=bind,source=docker-bind-mount,target=/app/log \
 
 참고: 도커 inspect 명령은 도커 컨테이너에 대해 더 많은 정보를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 도커 컨테이너 조회 명령어: docker inspect <컨테이너 이름 또는 컨테이너 ID>
 docker inspect hulk
@@ -449,35 +807,60 @@ docker inspect hulk
 볼륨 생성하기
 
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```
+
 # 도커 볼륨 생성하기
+
 도커 볼륨 생성 thor-vol
 도커 볼륨 생성 hulk-vol
 
 # 도커 볼륨 목록 확인
+
 도커 볼륨 목록 보기
 
-# 도커 볼륨   
-# 명령어:
-#  create      볼륨 생성
-#  inspect     한 개 이상의 볼륨에 대한 자세한 정보 표시
-#  ls          볼륨 목록 보기
-#  prune       사용하지 않는 로컬 볼륨 제거
-#  rm          한 개 이상의 볼륨 제거
+# 도커 볼륨
 
+# 명령어:
+
+# create 볼륨 생성
+
+# inspect 한 개 이상의 볼륨에 대한 자세한 정보 표시
+
+# ls 볼륨 목록 보기
+
+# prune 사용하지 않는 로컬 볼륨 제거
+
+# rm 한 개 이상의 볼륨 제거
 
 <img src="/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_30.png" />
 
 볼륨 검사하기
 
-
 도커 볼륨 inspect thor-vol
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_31.png)
 
@@ -490,7 +873,7 @@ docker run -d \
   nginx:latest
 
 # 볼륨을 source로 명시할 때 type의 기본 값은 volume입니다.
-docker run -d \ 
+docker run -d \
   --name hulk-container \
   --mount source=thor-vol,target=/app \
   nginx:latest
@@ -498,11 +881,20 @@ docker run -d \
 
 ```js
 docker inspect hulk-container
-```   
-  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_32.png)
 
@@ -512,22 +904,43 @@ Let’s create some logs in both containers and see if the files/logs are visibl
 
 As you can see from the above screenshot, we can share data/logs across containers.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 도커 볼륨 삭제
 
 ```js
 # 도커 볼륨을 제거하기
 # 한 번에 하나 이상의 볼륨을 삭제할 수 있습니다
-docker volume rm <volume-names> 
+docker volume rm <volume-names>
 ```
 
 ![이미지](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_34.png)
 
 # 도커 이미지 빌드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 기본적인 도커 개념을 살펴 보았으니, 실습 예제를 해 봅시다.
 
@@ -537,7 +950,18 @@ docker volume rm <volume-names>
 
 한 폴더를 만들고 app.py, requirements.txt, 그리고 Dockerfile 이라는 3개의 파일을 생성해 볼까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 Dockerfile, app.py, requirements.txt 파일들을 만들었습니다.
@@ -549,7 +973,18 @@ Dockerfile, app.py, requirements.txt 파일들을 만들었습니다.
 app.py
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from flask import Flask
@@ -572,7 +1007,18 @@ Flask
 
 이제 Docker 이미지를 빌드하기 위한 Dockerfile을 생성할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Dockerfile
 
@@ -606,10 +1052,20 @@ CMD ["python", "app.py"]
 docker build -t flask-image .
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변경되었습니다:
-
 
 ![Docker Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_36.png)
 
@@ -617,13 +1073,22 @@ Docker Hub repository를 만들어보겠습니다. 아직 계정이 없다면 �
 
 ![Image 태깅](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_37.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # docker tag <local image> <docker hub username>/<repository name>:<tag>
-docker tag flask-image livingdevopswithakhilesh/docker-demo-docker:1.0
 
+docker tag flask-image livingdevopswithakhilesh/docker-demo-docker:1.0
 
 ![Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_38.png)
 
@@ -635,7 +1100,18 @@ docker login
 docker push livingdevopswithakhilesh/docker-demo-docker:1.0
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_39.png)
 
@@ -647,7 +1123,18 @@ docker pull livingdevopswithakhilesh/docker-demo-docker:1.0
 
 ![Image](/assets/img/2024-05-18-Devopszerotohero3EverythingyouneedtoknowaboutDockers_40.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 docker run -td -p 8080:5000 --name flask livingdevopswithakhilesh/docker-demo-docker:1.0
@@ -659,6 +1146,17 @@ docker run -td -p 8080:5000 --name flask livingdevopswithakhilesh/docker-demo-do
 
 Linkedin에서 연락하기: [https://www.linkedin.com/in/akhilesh-mishra-0ab886124/](https://www.linkedin.com/in/akhilesh-mishra-0ab886124/)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시리즈 Devops Zero to Hero의 세 번째 블로그였습니다. 첫 두 개 블로그를 확인해보세요 —

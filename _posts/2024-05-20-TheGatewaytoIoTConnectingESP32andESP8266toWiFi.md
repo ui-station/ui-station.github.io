@@ -3,13 +3,12 @@ title: "인터넷을 통한 사물인터넷의 시작 ESP32와 ESP8266을 WiFi�
 description: ""
 coverImage: "/assets/img/2024-05-20-TheGatewaytoIoTConnectingESP32andESP8266toWiFi_0.png"
 date: 2024-05-20 19:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TheGatewaytoIoTConnectingESP32andESP8266toWiFi_0.png
 tag: Tech
 originalTitle: "The Gateway to IoT: Connecting ESP32 and ESP8266 to WiFi"
 link: "https://medium.com/@vaibhav01gour/the-gateway-to-iot-connecting-esp32-and-esp8266-to-wi-fi-6cef590cf20a"
 ---
-
 
 ## Bits, Bots
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@vaibhav01gour/the-gateway-to-iot-connecting-esp32-and
 
 안녕하세요! "Bits & Bots" 시리즈에서 또 다른 흥미진진한 챕터로 오신 것을 환영합니다! 오늘은 IoT 프로젝트의 필수 첫 단계인 ESP32 및 ESP8266 마이크로컨트롤러를 Wi-Fi에 연결하는 방법에 대해 살펴보겠습니다. 이 중요한 연결이 확립되면 여러분의 장치가 인터넷의 거대한 세계에 접속하여 데이터를 보내고 받고, 다른 장치들과 상호작용하며 IoT 기적의 가능성을 최대로 발휘할 수 있게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 기본 사항
 
@@ -29,7 +39,18 @@ Wi-Fi는 2.4 GHz 및 5 GHz 주파수 대역에서 작동하며, 간섭을 피하
 
 Wi-Fi 네트워크에 연결할 때 여러 주요 개념들이 관련됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SSID (Service Set Identifier): 이것은 연결하려는 Wi-Fi 네트워크의 이름입니다. 다른 Wi-Fi 네트워크를 구별하는 식별자입니다. 기기를 열어 사용 가능한 네트워크를 찾을 때 보이는 목록은 SSID들로 구성되어 있습니다.
 
@@ -39,7 +60,18 @@ IP 주소: 네트워크에 연결된 후 각 기기에는 고유한 IP 주소가
 
 MAC 주소: 이는 각 네트워크 인터페이스에 할당된 고유한 식별자입니다. 네트워크는 이 MAC 주소를 사용하여 기기를 식별하고 관리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 환경 설정 준비
 
@@ -49,7 +81,18 @@ MAC 주소: 이는 각 네트워크 인터페이스에 할당된 고유한 식�
 
 ## Wi-Fi에 연결
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자, 이제 본격적으로 시작해 봅시다. Arduino 스케치에서 WiFi.h 라이브러리를 포함하여 ESP32 및 ESP8266 플랫폼에서 제공하는 Wi-Fi 기능에 액세스하세요.
 
@@ -90,7 +133,18 @@ void loop() {
 
 ## 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에서 ESP32와 ESP8266을 Wi-Fi에 연결하는 포괄적인 안내서가 완성되었습니다. 이 중요한 단계를 완료하면 여러분의 장치들은 IoT 여행을 떠날 준비가 되었고, 세계와 통신하며 마법을 일으킬 수 있게 됩니다. "Bits & Bots" 시리즈에서 더 많은 모험을 기대해주세요. 거기서는 IoT 개발의 고급 주제를 탐구하고 이 놀라운 마이크로컨트롤러들의 모든 잠재력을 발휘할 것입니다.
 

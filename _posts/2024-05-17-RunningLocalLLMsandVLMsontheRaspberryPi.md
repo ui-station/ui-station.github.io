@@ -3,13 +3,12 @@ title: "라즈베리 파이에서 로컬 LLMs 및 VLMs 실행하기"
 description: ""
 coverImage: "/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_0.png"
 date: 2024-05-17 19:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_0.png
 tag: Tech
 originalTitle: "Running Local LLMs and VLMs on the Raspberry Pi"
 link: "https://medium.com/towards-data-science/running-local-llms-and-vlms-on-the-raspberry-pi-57bd0059c41a"
 ---
-
 
 ## Phi-2, Mistral, 그리고 LLaVA와 같은 모델을 Raspberry Pi에서 Ollama를 사용하여 로컬에서 실행하기
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/running-local-llms-and-vlms-on-th
 
 그보다 한 발 더 나아가보죠. 크기가 신용카드보다 작은 기기인 Raspberry Pi에서 자체 LLM 또는 VLM을 운영하고 있다고 상상해보세요. 불가능한 것일까요? 전혀 그렇지 않아요. 내가 이 게시물을 작성하고 있으니까 가능한 일이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 가능하다면, 그렇게 해도 괜찮아요. 하지만 왜 그걸 하고 싶으세요?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-data-science/running-local-llms-and-vlms-on-th
 
 전통적으로, 가장자리 AI는 컴퓨터 비전과 밀접하게 관련되어 왔습니다. LLMs와 VLMs의 배포를 탐색함으로써 가장자리에 이러한 새로운 면을 추가하면 이 분야에서 떠오르고 있는 흥미로운 측면을 발견할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 중요한 것은, 최근에 얻은 Raspberry Pi 5에서 뭔가 재미있는 것을 하고 싶었습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/towards-data-science/running-local-llms-and-vlms-on-th
 
 Ollama는 처음부터 설정하기 귀찮은 일 없이 개인 컴퓨터에서 로컬 LLM을 실행하는 데 최적의 솔루션이 되어 나타났습니다. 몇 가지 명령어로 모든 것을 문제없이 설정할 수 있습니다. 모든 것이 독립적으로 구성되어 있으며, 몇 가지 기기 및 모델에서의 제 경험에 따르면 훌륭하게 작동합니다. Raspberry Pi에서 실행시켜 놓고 원한다면 다른 응용프로그램 및 기기에서 호출할 수 있는 모델 추론을 위한 REST API까지 노출합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_1.png" />
 
@@ -49,7 +81,18 @@ Ollama는 처음부터 설정하기 귀찮은 일 없이 개인 컴퓨터에서 
 
 Ollama 및 Ollama 웹 UI는 LLaVA와 같은 VLM도 지원하며, 이는 엣지 생성적 AI 사용 사례에 대한 더 많은 가능성을 엽니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 기술 요구 사항
 
@@ -61,7 +104,18 @@ Ollama 및 Ollama 웹 UI는 LLaVA와 같은 VLM도 지원하며, 이는 엣지 �
 
 이전에 언급했듯이, Raspberry Pi에서 Ollama를 실행하는 것은 이미 하드웨어 스펙트럼의 극단에 가깝습니다. 기본적으로 Raspberry Pi보다 강력한 장치는 Linux 배포판을 실행하고 유사한 메모리 용량을 가지고 있다면, 이론적으로는 Ollama와 이 포스트에서 논의된 모델을 실행할 수 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. Ollama 설치하기
 
@@ -73,7 +127,18 @@ Raspberry Pi에 Ollama를 설치하기 위해서는 리소스를 절약하기 �
 curl https://ollama.ai/install.sh | sh
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 명령을 실행한 후 아래 이미지와 유사한 내용을 보게 될 것입니다.
 
@@ -83,7 +148,18 @@ curl https://ollama.ai/install.sh | sh
 
 문제 또는 업데이트가 있는 경우 Ollama GitHub 리포지토리를 참조하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 명령 줄을 통한 LLM 실행
 
@@ -93,7 +169,18 @@ Ollama 공식 모델 라이브러리에서 Ollama를 사용하여 실행할 수 
 
 터미널에서 다음을 실행하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 올라마 편리해요
@@ -105,7 +192,18 @@ Ollama 공식 모델 라이브러리에서 Ollama를 사용하여 실행할 수 
 
 ![이미지](/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기타 모델인 Mistral, Llama-2 등도 시도해 볼 수 있어요. 다만 모델 가중치를 저장할만큼 SD 카드에 충분한 공간이 있어야 해요.
 
@@ -115,7 +213,18 @@ Ollama 공식 모델 라이브러리에서 Ollama를 사용하여 실행할 수 
 
 이제 Raspberry Pi에서 LLMs가 실행되고 있지만 아직 끝나지 않았어요. 터미널이 모두에게 익숙한 것은 아니에요. Ollama 웹 UI도 실행해 보겠어요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. Ollama 웹 UI 설치 및 실행
 
@@ -128,7 +237,18 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 향후 독자들을 위해 20.x를 더 적합한 버전으로 변경하려면 변경하십시오.
 
@@ -153,21 +273,39 @@ sh start.sh
 
 이는 GitHub에서 제공된 것을 약간 수정한 것입니다. 가상 환경을 사용하거나 --break-system-packages 플래그를 사용하는 등의 최선의 방법을 따르지 않고 간단하게하고자 하였으니 유의하시기 바랍니다. uvicorn을 찾을 수 없다는 오류가 발생하면 터미널 세션을 재시작하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 것이 제대로 진행되면 라즈베리 파이의 8080 포트를 통해 http://0.0.0.0:8080로 Ollama 웹 UI에 액세스할 수 있거나, 동일한 네트워크에서 다른 장치를 통해 접속하고 있다면 http://라즈베리 파이의 로컬 주소:8080/을 통해 접속할 수 있습니다.
 
-
 ![이미지 설명](/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_6.png)
-
 
 계정을 생성하고 로그인한 후, 아래 이미지와 유사한 화면이 보여야 합니다.
 
-
 ![이미지 설명](/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_7.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델 가중치를 이전에 다운로드했다면, 아래와 같이 드롭다운 메뉴에 표시될 것입니다. 그렇지 않은 경우 설정으로 이동하여 모델을 다운로드할 수 있습니다.
 
@@ -177,8 +315,18 @@ sh start.sh
 
 전체적으로 사용자 인터페이스는 매우 깔끔하고 직관적이므로 설명할 것이 별로 없어요. 정말로 아주 훌륭하게 구현된 오픈 소스 프로젝트입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_10.png)
 
@@ -188,8 +336,18 @@ sh start.sh
 
 안타깝게도, LLM과는 달리 Raspberry Pi에서 이미지를 해석하는 설정에 꽤 많은 시간이 걸립니다. 아래 예시는 처리하는 데 약 6분 정도 걸렸습니다. 대부분의 시간은 아마 이미지 측면이 아직 제대로 최적화되지 않았기 때문인데, 이는 앞으로 확실히 변경될 것입니다. 토큰 생성 속도는 초당 약 2토큰입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-17-RunningLocalLLMsandVLMsontheRaspberryPi_11.png)
 
@@ -199,7 +357,18 @@ sh start.sh
 
 Raspberry Pi나 다른 작고 가장한 장치에서 실행되는 로컬 호스팅 LLMs에 대한 다양한 사용 사례들을 상상할 수 있습니다. 특히, 4토큰/초가 Phi-2 크기의 모델을 위해 일부 사용 사례에 대해 스트리밍 속도로는 합당해 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 '작은' LLM 및 VLM의 분야는 얼마 전에 다소 모순적으로 이름이 지어졌지만 '큰' 지칭을 받는 활발한 연구 분야입니다. 최근에는 꽤 많은 모델이 출시되었습니다. 이 새로운 트렌드가 계속되어 더 효율적이고 간결한 모델들이 계속 출시되기를 바랍니다! 다가오는 몇 달 동안 살펴봐야 할 분야입니다.
 

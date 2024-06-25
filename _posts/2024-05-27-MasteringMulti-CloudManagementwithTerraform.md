@@ -18,7 +18,18 @@ link: "https://medium.com/@bijit211987/mastering-multi-cloud-management-with-ter
 
 # 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 주제를 다룰 것입니다:
 
@@ -35,7 +46,18 @@ link: "https://medium.com/@bijit211987/mastering-multi-cloud-management-with-ter
 
 # 멀티 클라우드 아키텍처
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적인 멀티 클라우드 아키텍처는 Terraform을 사용하면 다음과 같이 보입니다:
 
@@ -51,7 +73,18 @@ Terraform은 여러 클라우드 계정에 인프라를 프로비저닝하고 �
 - 공유 서비스 추출 — ID, DNS, CDN과 같은 공유 서비스를 한 번 빌드하고 재사용합니다
 - 파이프라인 통합 — 모든 클라우드 대상으로 배포하는 표준 CI/CD 파이프라인 사용
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 원칙을 따라서, 여러 대상 클라우드 간에 일관성있는 이동 가능한 구성을 구축할 수 있습니다.
 
@@ -61,7 +94,18 @@ Terraform은 여러 클라우드 계정에 인프라를 프로비저닝하고 �
 
 Terraform의 강점 중 하나는 클라우드 플랫폼 간의 차이를 추상화하는 균일한 추상화 계층을 제공할 수 있는 능력입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, Azure 대 GCP에서 MySQL 데이터베이스 프로비저닝:
 
@@ -89,7 +133,18 @@ resource "azurerm_mysql_database" "db" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GCP
 
@@ -113,7 +168,18 @@ resource "google_sql_database" "database" {
 
 Terraform의 리소스 유형은 일관된 인터페이스를 제공하기 위해 기본 API 차이를 추상화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 추상화는 대규모 변경없이 클라우드 간에 쉽게 전환할 수 있도록 도와줍니다. 필요한 경우 각 클라우드 공급업체에 맞게 엣지에서 맞춤 설정할 수 있습니다.
 
@@ -127,7 +193,18 @@ Terraform의 리소스 유형은 일관된 인터페이스를 제공하기 위�
 
 최대한 다중 클라우드 추상화를 활용하여 구성을 작성하면 이동성이 높아집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프로비저닝 및 의존성
 
@@ -137,14 +214,22 @@ Terraform의 리소스 유형은 일관된 인터페이스를 제공하기 위�
 
 테라폼을 사용할 때, depends_on 속성을 사용하여 리소스 의존성을 명시적으로 정의하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리소스 "azurerm_subnet" "public" {
 #...
 }
-
-
 
 리소스 "azurerm_network_interface" "nic" {
 #...
@@ -161,14 +246,22 @@ azurerm_network_interface.nic
 ]
 }
 
-
 테라폼은 리소스 간 종속성을 분석하고 변경 사항을 올바른 순서로 적용합니다.
 
 멀티 클라우드 환경에서의 종속성에 대한 팁:
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 공통 빌딩 블록을 기본 모듈에 네트워크와 같은 것으로 포함시킵니다.
 - 독립적인 구성 요소를 계층별로 분리합니다.
@@ -182,7 +275,18 @@ azurerm_network_interface.nic
 
 기관 정책과 규정 준수 요구사항을 강제하는 것은 여러 클라우드 관리에 있어 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 운용 규칙의 몇 가지 예시입니다:
 
@@ -197,7 +301,18 @@ azurerm_network_interface.nic
 
 변수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 허용된 값 제한:
 
@@ -216,7 +331,18 @@ resource "aws_db_instance" "db" {
 
 모듈
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 친구야, 모듈 내에서 지배 논리를 캡슐화하고 재사용하세요:
 
@@ -231,7 +357,18 @@ Sentinel 정책
 
 리소스를 제한하는 대상 정책을 적용하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 aws_instance_disallowed_type = rule {
@@ -247,21 +384,41 @@ aws_instance_disallowed_type = rule {
 
 다양한 클라우드 간 네트워크 연결성을 관리하는 것은 복잡성을 증가시킵니다. 일부 하이브리드 클라우드 네트워크 토폴로지는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 형식을 Markdown 형식으로 변경하실래요.
 
-
-| Pairing |
-|--------|
+| Pairing                                                                                   |
+| ----------------------------------------------------------------------------------------- |
 | Connect cloud regions to on-prem data centers. Useful for migration and hybrid workloads. |
 
-| Hub-and-Spoke |
-|---------------|
+| Hub-and-Spoke                                                                                    |
+| ------------------------------------------------------------------------------------------------ |
 | Central hub VPC with connectivity to multiple cloud spokes. Enables transitivity between spokes. |
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메시
 
@@ -271,7 +428,18 @@ aws_instance_disallowed_type = rule {
 
 예를 들어, AWS에서 Azure로 사이트 간 VPN을 생성하는 방법:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # AWS 측
@@ -326,9 +494,18 @@ aws_instance_disallowed_type = rule {
 
 # 배포 패턴
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여러 클라우드로 배포할 때 블루-그린, 카나리아, 다중 지역과 같은 패턴을 사용하면 관리가 간단해질 수 있어요.
 
@@ -338,7 +515,18 @@ aws_instance_disallowed_type = rule {
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 파란 환경
@@ -366,9 +554,18 @@ resource "aws_lb" "main" {
 
 카나리아
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파란색-초록색처럼 변경되지만 처음에는 일부 사용자에게만 공개됩니다.
 
@@ -389,7 +586,18 @@ module "canary_env" {
 
 Multi-Region
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고가용성 및 낮은 대기 시간을 위해 여러 지역에 리소스를 프로비저닝합니다.
 
@@ -415,7 +623,18 @@ module "east" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 DNS와 로드 밸런싱을 사용하여 전 세계적으로 분산하세요.
 
@@ -425,7 +644,18 @@ module "east" {
 
 여러 클라우드에 걸친 배포를 유효성 검사하려면 자동화된 통합 테스트가 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테라폼을 사용한 멀티 클라우드 테스팅을 위한 몇 가지 최상의 방법:
 
@@ -445,11 +675,33 @@ module "test_env" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 환경에서 배포를 유효성 검사하려면 자동화된 테스트가 필요합니다.
 
@@ -462,7 +714,18 @@ Terraform을 사용하는 몇 가지 권장사항:
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 module "test_env" {
@@ -483,9 +746,18 @@ resource "null_resource" "check_connectivity" {
 
 다른 예시:
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 성능 테스트를 위해 과거 트래픽을 다시 재생합니다.
 - 종료된 인스턴스와 같은 결함을 주입합니다.
@@ -497,7 +769,18 @@ resource "null_resource" "check_connectivity" {
 
 이질적인 클라우드 간 로그, 지표 및 추적에 대한 가시성을 확보하는 것은 어렵습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테라폼을 사용하면 관측 가능성 데이터를 공유 플랫폼에 집계할 수 있습니다:
 
@@ -524,7 +807,18 @@ resource "google_logging_project_sink" "app" {
 
 Splunk와 같은 도구에서 로그를 중앙 집계하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메트릭
 
@@ -543,7 +837,18 @@ Datadog와 같은 플랫폼에서 메트릭을 통합해보세요.
 
 트레이싱
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 module "opentelemetry" {
@@ -562,7 +867,18 @@ module "opentelemetry" {
 
 # 예시: 멀티-클라우드 웹 애플리케이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실제로 멀티 클라우드 웹 애플리케이션을 Terraform으로 배포하는 실제 사례를 살펴봅시다.
 
@@ -572,7 +888,18 @@ AWS ECS 및 Azure Container Instances (ACI)의 클러스터 전체에 애플리�
 
 먼저, AWS VPC와 Azure VNet을 연결해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # AWS VPC 및 서브넷
@@ -610,7 +937,18 @@ resource "aws_vpc_peering_connection" "peer" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # Azure 측 피어링
@@ -634,7 +972,18 @@ resource "azurerm_container_group" "app" {
   os_type             = "Linux"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
   container {
@@ -667,7 +1016,18 @@ resource "aws_ecs_service" "web" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로드 밸런싱
 
@@ -697,7 +1057,18 @@ resource "azurerm_lb" "web" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Markdown 포맷으로 DNS
 
@@ -726,7 +1097,18 @@ resource "azurerm_dns_cname_record" "webapp" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 웹 애플리케이션을 다중 클라우드에서 실행하기 위한 핵심 인프라를 제공하며, 로드 밸런싱과 DNS를 통해 연결됩니다.
 
@@ -736,7 +1118,18 @@ resource "azurerm_dns_cname_record" "webapp" {
 
 이 블로그에서는 테라폼을 사용하여 다중 클라우드 인프라, 네트워킹, 배포, 테스트 및 모니터링을 관리하는 패턴과 모범 사례를 다루었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 추상화 — 추상화된 공급자 및 리소스를 사용하여 이식 가능한 구성물 생성
 - 모듈 — 복잡한 구성 요소를 재사용 가능한 모듈로 캡슐화

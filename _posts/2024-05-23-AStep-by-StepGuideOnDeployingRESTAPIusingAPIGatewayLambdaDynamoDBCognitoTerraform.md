@@ -10,7 +10,6 @@ originalTitle: "A Step-by-Step Guide On Deploying REST API using API Gateway, La
 link: "https://medium.com/aws-tip/a-step-by-step-guide-on-deploying-rest-api-using-api-gateway-lambda-cognito-terraform-f277814d048e"
 ---
 
-
 ![image](/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_0.png)
 
 # 소개
@@ -19,8 +18,18 @@ link: "https://medium.com/aws-tip/a-step-by-step-guide-on-deploying-rest-api-usi
 
 특히, 목표는 API 게이트웨이에 호스팅된 API를 만들고, 백엔드는 람다에, 데이터베이스는 DynamoDB에 있는 것입니다. 람다 함수에는 DynamoDB 테이블에서 CRUD 작업 (CREATE, READ, UPDATE, DELETE)을 수행하는 로직이 포함될 것입니다. 그리고 추가로 몇 가지 경로에 대한 공개 액세스를 제한하기 위해 Amazon Cognito를 사용한 인증을 추가할 것입니다. 왜냐하면 데이터베이스에 대한 쓰기 작업은 위험하기 때문입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시칠리아 섬에서 태어났기 때문에 신기한 섬리아 요리 목록을 관리할 수 있는 간단한 API를 생성할 것입니다.
 
@@ -30,7 +39,18 @@ link: "https://medium.com/aws-tip/a-step-by-step-guide-on-deploying-rest-api-usi
 
 첫 번째 단계는 AWS를 제공자로 사용하도록 지정하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # provider.tf
@@ -53,7 +73,18 @@ variable "aws_region" {
 
 그런 다음 AWS 관리 콘솔로 이동해서 “S3” AWS 서비스로 이동하여 나중에 사용할 Terraform 상태 파일을 저장할 S3 버킷을 생성하세요. "key" 속성으로 지정된 경로에 생성할 거에요. 저는 "my-api-gateway-lambda-terraform-state"라고 이름지었어요. 모든 옵션을 기본값으로 남겨두세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만들었다면, Terraform 구성에서 명시할 것입니다:
 
@@ -80,7 +111,18 @@ terraform {
 
 Lambda 함수가 DynamoDB 테이블에서 작업을 수행하려면 해당 권한이 있어야 합니다. 따라서 IAM 역할을 생성해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 IAM 역할의 Assume Role 정책(Trust Relationship이라고도 함)을 명시적으로 지정해야 합니다. 이는 어떤 리소스 또는 서비스가 원하는 역할을 가져갈 수 있는 지를 나타내는데, 이 경우에는 Lambda 함수입니다. AWS 서비스에 권한을 제공할 때 이 단계는 항상 필수적입니다. 이 정책의 형식은 다음과 같습니다:
 
@@ -101,7 +143,18 @@ Lambda 함수가 DynamoDB 테이블에서 작업을 수행하려면 해당 권�
 
 또한 Lambda에게 함수 실행과 관련된 로그 작성을 위해 필요한 최소한의 권한을 부여해야 합니다. 이 권한들은 이미 AWS에서 제공하는 AWSLambdaBasicExecutionRole이라는 IAM 서비스 역할에 정의되어 있습니다. 따라서 이 서비스 역할을 새 IAM 역할에 연결하여 Lambda에 할당할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파일 "iam.tf"를 생성하고 다음 코드를 붝어 주세요:
 
@@ -176,7 +229,18 @@ resource "aws_iam_role_policy_attachment" "terraform_lambda_policy" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Lambda 함수가 DynamoDB 테이블에서 CRUD 작업(Get, Put, Update, Delete, Scan, Query 및 기타 작업)을 수행할 수 있는 정책을 정의하고, "dishes"라는 이름의 테이블을 사용할 것입니다.
 
@@ -195,7 +259,18 @@ resource "aws_iam_role_policy" "lambda_dynamodb_policy" {
 
 # 단계 3: Lambda 코드 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Lambda 함수를 설정하는 것이 다음 단계입니다. 이 함수는 DynamoDB 테이블과 상호 작용할 것입니다. 이 함수는 Python으로 작성될 것입니다.
 
@@ -205,8 +280,18 @@ Lambda 함수 안에서는 각각의 작업에 대한 메서드를 정의하고 
 
 REST API는 트리 구조로 구성되어 있으며, 우리는 이를 다음과 같이 구조화하고 싶습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_1.png)
 
@@ -220,8 +305,18 @@ REST API는 트리 구조로 구성되어 있으며, 우리는 이를 다음과 
 
 테이블의 모든 항목을 가져 오기 위해 재귀 함수 recursive_scan을 활용하며, 이 함수는 DynamoDB 테이블에서 레코드를 효율적으로 스캔하는 데 사용됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표준 DynamoDB의 scan 작업은 테이블의 모든 항목을 읽는 표준 접근 방식입니다. 그러나 DynamoDB의 분산 특성과 확장성 때문에, 단일 scan 작업으로는 특히 테이블이 큰 경우 모든 항목을 한 번에 검색하지 못할 수 있습니다. DynamoDB는 결과를 페이지별로 반환하며, 다음 결과 페이지가 시작되는 위치를 나타내는 토큰(LastEvaluatedKey)과 함께 항목의 하위 집합을 반환합니다.
 
@@ -239,7 +334,18 @@ def recursive_scan(scan_params, items):
 
 여기에 Lambda 함수의 전체 코드가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # lambda_code.py
@@ -420,8 +526,18 @@ resource "aws_lambda_function" "my-lambda-function" {
 
 # 단계 3: DynamoDB 설정
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시칠리아 요리 테이블을 만드는 시간이 왔습니다!
 
@@ -460,7 +576,18 @@ resource "aws_dynamodb_table_item" "dishes" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 JSON 문서에서 데이터를 가져 오므로 "dishes.json" 파일을 만드십시오. 각 속성에 대해 유형을 지정합니다 (S = 문자열, N = 숫자, L = 목록).
 
@@ -568,7 +695,18 @@ JSON 문서에서 데이터를 가져 오므로 "dishes.json" 파일을 만드�
 
 이제 API 게이트웨이를 설정 할 시간입니다. API 게이트웨이는 프록시 역할을합니다. 클라이언트에서 Lambda 함수로 오는 HTTP 요청을 전달하며이 "트릭"을 사용하여 원래의 HTTP 요청이 전송됩니다 (GET, POST 등)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 API 게이트웨이 REST API를 설정하고 두 가지 API 리소스를 만듭니다. 각각의 경로(/dishes 및 /dish)를 위한 한 가지씩:
 
@@ -607,7 +745,18 @@ resource "aws_api_gateway_resource" "API-resource-dish" {
 - PATCH /dishes/'dishId': 특정 요리의 세부 정보를 업데이트합니다.
 - DELETE /dishes/'dishId': 데이터베이스에서 시칠리아 요리를 삭제합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 HTTP 메서드에 대해 아래와 같이 몇 가지 블록을 정의합니다:
 
@@ -620,7 +769,18 @@ resource "aws_api_gateway_resource" "API-resource-dish" {
 
 “REST API”는 만들 API Gateway 객체 모두를 담고 있는 컨테이너입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API Gateway에 들어오는 모든 요청은 다음과 일치해야 합니다:
 
@@ -667,7 +827,18 @@ resource "aws_api_gateway_method" "GET_all_method" {
 . . .
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로 API 게이트웨이가 람다 함수를 호출할 수 있도록 설정해야 합니다:
 
@@ -731,7 +902,18 @@ resource "aws_api_gateway_stage" "my-prod-stage" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 백그라운드에서 요청을 보낼 때 무엇이 일어나는지 기록하기 위해 CloudWatch 로그 그룹을 설정하고 있습니다. CloudWatch LogGroup의 이름은 API-Gateway-Execution-Logs\_'YOUR_API_ID'/'YOUR_STAGE_NAME' 형식이어야 합니다.
 
@@ -761,7 +943,18 @@ resource "aws_api_gateway_method_settings" "my_settings" {
 
 다음으로 CORS 모듈을 정의합니다. AWS 문서는 CORS 및 통합 및 통합 응답과 관련된 모든 뉘앙스를 잘 설명하고 있으므로 여기에 링크만 첨부하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # . . .
@@ -781,9 +974,18 @@ module "cors" {
 
 cors.tf:
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # cors.tf
@@ -890,7 +1092,18 @@ locals {
 
 variables.tf:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 변수 "api_id" {
@@ -970,7 +1183,18 @@ output "api_gateway_url" {
 
 `
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다이나모DB 테이블의 작업(POST, PATCH, DELETE)은 위험할 수 있습니다. REST API를 공개적으로 노출하고 싶지 않으므로 일부 HTTP 엔드포인트에 대한 액세스를 제한하고 싶습니다. 따라서 인증을 구현하고자 하는데, 첫 번째 단계는 Cognito 사용자 풀을 생성하는 것입니다.
 
@@ -1002,7 +1226,18 @@ resource "aws_cognito_user_pool_client" "client" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 유저 풀 내에서 API 액세스를 테스트하기 위해 유저도 생성합니다.
 
@@ -1020,7 +1255,18 @@ resource "aws_cognito_user" "example" {
 
 <img src="/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 사용자도 확인할 수 있습니다:
 
@@ -1030,7 +1276,18 @@ resource "aws_cognito_user" "example" {
 
 ![이미지](/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인증을 실제로 구현하고 애플리케이션의 일부 API 엔드포인트에 대한 공개 액세스를 제한하려면 먼저 Cognito 사용자 풀 내에서 Authorizer를 정의해야 합니다. Authorizer가 활성화되면 Lambda가 트리거되기 전에 수신된 요청 토큰이 먼저 이 Cognito 사용자 풀과 대조되어야 합니다. 따라서 "api_gateway.tf"에서 Authorizer를 정의합니다:
 
@@ -1064,7 +1321,18 @@ resource "aws_api_gateway_method" "POST_method" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 모든 중요한 엔드포인트(POST, PATCH, DELETE)에 대해 이 작업을 수행하십시오.
 
@@ -1074,16 +1342,24 @@ resource "aws_api_gateway_method" "POST_method" {
 
 이제 HTTP 요청을 제출할 때 인가를 받기 위해 액세스 토큰을 제공해야 합니다. 액세스 토큰을 생성하려면 이전에 기록한 정보를 사용하여 "aws cognito-idp" 명령을 사용할 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 aws cognito-idp admin-initiate-auth --user-pool-id <USER_POOL_ID> --client-id <CLIENT_ID> --auth-flow ADMIN_NO_SRP_AUTH --auth-parameters USERNAME=mattia,PASSWORD=Test@123
-
 
 위 명령어에서 User Pool ID, User Pool client ID, 그리고 이전에 정의한 테스트 사용자의 사용자 이름과 암호를 교체해야 합니다.
 
 우리는 Cognito 사용자 풀에 대한 테스트 사용자를 인증하고, 그 결과로 액세스 토큰을 받습니다. 위 명령어의 출력은 아래와 유사합니다:
-
 
 {
 "ChallengeParameters": {},
@@ -1096,8 +1372,18 @@ aws cognito-idp admin-initiate-auth --user-pool-id <USER_POOL_ID> --client-id <C
 }
 }
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 토큰들을 테스트하려면 ID 토큰의 값을 복사하고 AWS 관리 콘솔에서 "API Gateway"로 이동한 다음, API를 선택하고 왼쪽에 있는 "Authorizers"를 클릭하세요:
 
@@ -1107,7 +1393,18 @@ aws cognito-idp admin-initiate-auth --user-pool-id <USER_POOL_ID> --client-id <C
 
 ![Authorizer Test Output](/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "토큰 만료 날짜인 'exp' 필드가 있는 것을 확인할 수 있습니다. 제 경우에는 유효합니다.
 
@@ -1119,7 +1416,18 @@ Bearer <ID_TOKEN>
 
 <img src="/assets/img/2024-05-23-AStep-by-StepGuideOnDeployingRESTAPIusingAPIGatewayLambdaDynamoDBCognitoTerraform_10.png" />"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요청을 보내시면 지금은 200 상태 코드를 받게 될 거에요. 모든 것이 잘 되고 있어요.
 

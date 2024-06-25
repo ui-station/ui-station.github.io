@@ -3,13 +3,12 @@ title: "Rails 성능 향상을 위한 7가지 옵션"
 description: ""
 coverImage: "/assets/img/2024-06-22-OptionsforbetterperformanceinRails_0.png"
 date: 2024-06-22 22:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-OptionsforbetterperformanceinRails_0.png
 tag: Tech
 originalTitle: "Options for better performance in Rails."
 link: "https://medium.com/@danielmutubait/options-for-better-performance-in-rails-3cbc9d2e8aa4"
 ---
-
 
 # 소개: 동기부여
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@danielmutubait/options-for-better-performance-in-rail
 
 # exists? vs present? vs any?:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ActiveRecord에서 present? 또는 any?과 같은 메서드를 사용하면 레코드를 메모리로 로드하여 일치하는 레코드가 있는지 확인할 수 있습니다. 이는 특히 대규모 데이터셋의 경우 비효율적일 수 있습니다.
 
@@ -34,7 +44,18 @@ exists?의 효율성: exists? 메서드는 데이터를로드하지 않고 레�
 User.where(email: 'example@gmail.com').exists?
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # update_all 대 update
 
@@ -46,7 +67,18 @@ users.each { |user| user.update(active: true) }
 
 update_all의 효율성: update_all 메서드는 조건과 일치하는 모든 레코드를 업데이트하는 데 단일 쿼리를 수행하여 성능을 크게 향상시킵니다. 단, 여기에 주의해야 할 점은 해당 열이 인덱싱되어 있는지 확인하기 위해 신중히 WHERE 절을 사용하여 넓은 범위를 설정해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 User.where(active: false).update_all(active: true)
@@ -59,7 +91,18 @@ User.where(active: false).update_all(active: true)
 - N+1 쿼리 문제: 조인을 사용하면 각 관련 레코드가 개별적으로 쿼리될 수 있는 N+1 쿼리 문제가 발생할 수 있습니다.
 - User.joins(:posts)는 여기서 posts 테이블을 로드하지 않습니다. 포스트를 가진 사용자만을로드합니다. 포스트는 .each를 수행하고 사용자의 포스트를 가져올 때 로드됩니다. 데이터베이스에 다시 쿼리를 실행하게 됩니다. 이것이 고전적인 n +1 쿼리 문제입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 비효율적
@@ -75,8 +118,18 @@ User.includes(:posts).each { |user| user.posts.each { |post| puts post.title } }
 
 # count vs size vs length
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 레코드 개수 세기
 
@@ -87,12 +140,23 @@ User.includes(:posts).each { |user| user.posts.each { |post| puts post.title } }
 User.all.length
 ```
 
-카운트의 효율성: count 메서드는 SELECT COUNT(*) 쿼리를 수행하여 대규모 데이터셋에 효율적입니다.
+카운트의 효율성: count 메서드는 SELECT COUNT(\*) 쿼리를 수행하여 대규모 데이터셋에 효율적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-User.count
+User.count;
 ```
 
 # find vs find_each:
@@ -105,7 +169,18 @@ User.find(1..10000).each do |user|
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # find_each
 
@@ -119,7 +194,18 @@ end
 
 - 메모리 사용량: 감소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # select vs pluck
 
@@ -131,7 +217,18 @@ end
 User.select(:id, :name, :email).each { |user| ... }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # pluck 사용하기
 
@@ -143,7 +240,18 @@ User.pluck(:id, :name, :email)
 
 # where vs find_by:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## where를 사용하기
 
@@ -155,7 +263,18 @@ User.where(name: 'John').first
 
 find_by 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 기준과 일치하는 첫 번째 레코드만 필요할 때는 find_by를 사용하는 것이 더 빠릅니다. 일치하는 항목을 찾자마자 쿼리가 중단되어 시간과 자원을 절약합니다. 필터 열이 인덱싱되어 있는 경우 런타임이 더 향상됩니다.
 
@@ -167,7 +286,18 @@ User.find_by(name: 'John')
 
 # delete_all
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 delete_all은 데이터베이스에 직접 레코드를 로드하지 않고 빠른 삭제를 위한 메서드입니다. 빠르지만 콜백을 건너뜁니다. 빠르지만 결정적이며 콜백이 없습니다. 콜백을 실행하지 않으면 외래 키 참조가 있는 레코드에서 오류가 발생할 수 있습니다.
 
@@ -179,7 +309,18 @@ destroy_all
 
 콜백을 실행하면서 레코드를 삭제하려면 destroy_all이 필요합니다. 데이터 무결성을 유지하지만 성능에 비용이 발생합니다. 더 많은 시간이 소요되지만 체계적이며 필요한 콜백을 실행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 User.where(active: false).destroy_all

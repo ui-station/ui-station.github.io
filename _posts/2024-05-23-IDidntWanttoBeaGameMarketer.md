@@ -10,7 +10,6 @@ originalTitle: "I Didn’t Want to Be a (Game) Marketer"
 link: "https://medium.com/@sarahjohana/i-didnt-want-to-be-a-game-marketer-bf68d4f8d1ad"
 ---
 
-
 ![image](/assets/img/2024-05-23-IDidntWanttoBeaGameMarketer_0.png)
 
 아마도 제가 거절한 사람은 오늘 인도네시아의 가장 큰 인디 게임 회사 중 하나의 마케팅 책임자로 일하고 있는 저를 보고 궁금해 할 것입니다. 저 자신도 제 결정에 대해 여전히 의문을 품고 있습니다.
@@ -19,8 +18,18 @@ link: "https://medium.com/@sarahjohana/i-didnt-want-to-be-a-game-marketer-bf68d4
 
 2014년 초, 대학을 졸업한 뒤 첫 직장을 얻었습니다. 저는 그래픽 디자인을 공부했기 때문에, 한 모바일 게임 회사에 2D 아티스트로 지원했고 합격했어요! 하지만, 속은 느낌이 들었어요. 그들은 당시 회사를 떠나는 커뮤니티 매니저를 대신할 수 있느냐고 물었어요. 그냥 잠깐이라고 했어요. 그런데, 2.5년이 지나가고 나는 커뮤니티 관리 이상을 했습니다. 유저 유치, 비즈니스 개발, 약간의 모바일 게임 마케팅, 투자자들에게 프레젠테이션을 하는 법 등 Adobe Photoshop이나 Illustrator를 사용하는 일과는 관련이 없는 일들을 배웠어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그때, 내가 모바일 게임 마케터로 근무한 직업을 좋아했었나요? 음.
 
@@ -30,7 +39,18 @@ link: "https://medium.com/@sarahjohana/i-didnt-want-to-be-a-game-marketer-bf68d4
 
 Seth Godin의 All Marketers Are Liars (Tell Stories)를 읽은 후에 다시 깨닫게 되었습니다. 책을 아직 다 읽지 못했는데, 지금은 친구가 책을 빌려가고 있어요. 그러나 지금까지는 좋은 읽을거리입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-IDidntWanttoBeaGameMarketer_1.png)
 
@@ -40,7 +60,18 @@ Seth Godin의 All Marketers Are Liars (Tell Stories)를 읽은 후에 다시 깨
 
 모바일 및 프리미엄 게임의 마케팅을 해본 경험을 통해, 프리미엄 게임 플레이어에게는 솔직하지 않을 수 없다는 것을 배웠어요. 모바일에서는 가짜 광고를 사용하여 다운로드를 받고 설치 횟수가 중요한 반면, 프리미엄 게임 플레이어들은 언제든지 환불을 요청하거나 안 좋은 리뷰를 남겨서 당신의 게임이 사람들에게 구매되지 않도록 할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게이머들은 똑똑해요. Steam에서 보던 리뷰들을 구글 플레이나 앱 스토어에서 본 것과 비교했을 때 정말 놀랐어요. 거기서 1점을 주고 "좋은 게임"이라고 리뷰하는 것들과는 달리 PC와 콘솔 게이머들은 건설적인 피드백을 주고 게임에서 좋은 점이 무엇인지, 어떤 것이 좋았는지 등을 지적해 줘요.
 
@@ -50,7 +81,18 @@ Seth Godin의 All Marketers Are Liars (Tell Stories)를 읽은 후에 다시 깨
 
 하지만 기억하세요, 마지막으로 게임을 좋아하는지 결정할 사람들은 잠재적 플레이어들이겠죠... 이것은 시장 유효성을 확인할 때 사용할 수 있어요. (이 말을 설명할 필요가 없는데요, 이것은 별도의 글이 될 수 있기 때문에)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 진정성에 관한 이야기예요.
 
@@ -60,7 +102,18 @@ Seth Godin의 All Marketers Are Liars (Tell Stories)를 읽은 후에 다시 깨
 
 이게 회사가 개발하는 모든 게임을 즐기는 것을 의미할까요? 저는 캐주얼 게이머예요. 전략이나 턴 기반 전술 게임을 할 수 없어 해전 게임, 혹은 전략을 구상해야 하는 게임을 할 수 없어요. 하지만, 우리 회사의 주력 타이틀 중 하나는 턴 기반 메카 전략 게임이에요. 그럼에도 불구하고, 팀이 이 게임을 얼마나 사랑하는지 알기 때문에, 제가 할 일은 그들이 왜 그것을 좋아하는지 물어보고, 어떤 것을 사람들에게 보여주길 원하는지 알아내는 것 뿐이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 게임 마케터로 일하는 것을 좋아하나요?
 

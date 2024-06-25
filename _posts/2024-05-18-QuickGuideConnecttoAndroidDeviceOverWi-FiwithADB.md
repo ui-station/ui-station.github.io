@@ -3,13 +3,12 @@ title: "빠른 안내 ADB를 사용하여 Wi-Fi를 통해 Android 기기에 연�
 description: ""
 coverImage: "/assets/img/2024-05-18-QuickGuideConnecttoAndroidDeviceOverWi-FiwithADB_0.png"
 date: 2024-05-18 15:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-QuickGuideConnecttoAndroidDeviceOverWi-FiwithADB_0.png
 tag: Tech
 originalTitle: "Quick Guide: Connect to Android Device Over Wi-Fi with ADB"
 link: "https://medium.com/@dds861/quick-guide-connect-to-android-device-over-wi-fi-with-adb-8355f483cb6a"
 ---
-
 
 ![이미지](/assets/img/2024-05-18-QuickGuideConnecttoAndroidDeviceOverWi-FiwithADB_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@dds861/quick-guide-connect-to-android-device-over-wi-
 
 # 전제 조건
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - USB 디버깅이 활성화된 Android 기기.
 - ADB가 설치된 컴퓨터.
@@ -34,7 +44,18 @@ link: "https://medium.com/@dds861/quick-guide-connect-to-android-device-over-wi-
 adb devices
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요청하신 내용은 아래와 같습니다. 기기의 시리얼 번호가 출력되므로 확인하실 수 있습니다:
 
@@ -49,7 +70,18 @@ fakeSerialNumber5g67kyd device
 adb -s fakeSerialNumber5g67kyd tcpip 5555
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. USB 케이블 연결 해제: 기기에서 USB 케이블을 안전하게 제거하세요.
 
@@ -61,6 +93,17 @@ adb connect 192.168.0.20:5555
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 이제 안드로이드 기기가 Wi-Fi로 연결되어 있으니 물리적 연결 없이도 손쉽게 ADB 명령을 실행할 수 있습니다. 이는 더 유연한 개발 환경을 제공하여 안드로이드 스튜디오에서 Pixel과 같은 기기를 사용할 때 연결 문제에 대한 추가적인 문제 해결이 필요한 경우에 이상적입니다.

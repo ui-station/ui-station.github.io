@@ -3,13 +3,12 @@ title: "AI가 모든 개발자를 대체할까"
 description: ""
 coverImage: "/assets/img/2024-06-22-WillAIReplaceAllCoders_0.png"
 date: 2024-06-22 22:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-WillAIReplaceAllCoders_0.png
 tag: Tech
 originalTitle: "Will AI Replace All Coders?"
 link: "https://medium.com/@peterhdiamandis/will-ai-replace-all-coders-1979a8ac4279"
 ---
-
 
 <img src="/assets/img/2024-06-22-WillAIReplaceAllCoders_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@peterhdiamandis/will-ai-replace-all-coders-1979a8ac42
 
 이것을 불가피한 것으로 받아들여야 하며 우리 아이들에게 코딩을 배울 필요가 없다고 말해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 강력한 증거가 있습니다. 인공 지능이 이미 인간 코더의 능력을 넘어섰다는 것을 살펴봅시다:
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@peterhdiamandis/will-ai-replace-all-coders-1979a8ac42
 
 3. 마지막으로, DeepMind의 AlphaCode는 데뷔때 인간 프로그래머보다 우월한 성과를 거뒀습니다. 5,000명 이상의 인간 참가자와 맞대결했을 때, 이 인공 지능은 전문 프로그래머의 45%를 이겼습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ChatGPT가 출시된 지 첫 해 안에 이러한 발전이 모두 일어났는데, 기술이 더욱 발전함에 따라 다음 2~3년 동안 어떤 일이 일어날지 궁금할 것입니다.
 
@@ -39,7 +60,18 @@ AI가 이 노트때는 이런 식으로 인간 프로그래머의 필요성을 �
 
 오늘의 블로그에서는 미래에 대해 더 희망적이고 매력적인 그림을 그리고 싶습니다. 더 많은 사람들이 코딩의 힘을 활용하여 중요한 문제를 해결하고 인류를 격려할 수 있는 미래를 상상해 보려고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자, 함께 알아보겠습니다...
 
@@ -49,7 +81,18 @@ AI가 이 노트때는 이런 식으로 인간 프로그래머의 필요성을 �
 
 생성적 AI가 코딩을 수행하는 미래에서, 간단히 원하는 것을 자연 언어로 표현할 수 있는 누구든(예: 영어로), 자신의 욕망을 코드로 변환하는 데 AI를 사용할 수 있을 것입니다. 2023년 이익 발표 중에 NVIDIA CEO Jensen Huang이 언급한 것처럼:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의사, 변호사 또는 어린이가 코딩할 수 있게 되었습니다.
 
@@ -59,7 +102,18 @@ AI가 이 노트때는 이런 식으로 인간 프로그래머의 필요성을 �
 
 사용자 친화적인 인터페이스를 가진 노코드 플랫폼은 도메인 특화 영역에 대한 이해는 있지만 코딩 스킬은 제한된 비즈니스 직원들을 위해 신속한 애플리케이션 개발을 용이하게 하여 비즈니스 요구 사항과 소프트웨어 솔루션 사이의 간극을 효과적으로 메꿉니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한편, 로우코드 플랫폼은 여전히 코딩에 대한 기초적 이해를 요구하지만 높은 수준의 맞춤 및 통합 기능을 제공하여 더 복잡한 작업에 선호되는 IT 전문가들 사이에서 인기를 끌고 있습니다. 이 접근 방식은 "시민 개발자"들에게 강력한 도구를 제공하여 백오피스 앱, 웹 애플리케이션 및 비즈니스 자동화 기능에 대한 기능적인 애플리케이션을 만들 수 있게 합니다.
 
@@ -69,7 +123,18 @@ AI가 이 노트때는 이런 식으로 인간 프로그래머의 필요성을 �
 
 이러한 기술은 점점 더 중요해질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI가 기계가 영어를 구사할 수 있게 한 것은 사실입니다. 그러나 AI와 협업하고 그 힘을 제대로 이용하고 싶다면, AI의 모국어를 배우는 것이 큰 장점을 제공할 것입니다.
 
@@ -79,7 +144,18 @@ AI가 기계가 영어를 구사할 수 있게 한 것은 사실입니다. 그�
 
 기술은 언제나 개개인이 더 많은 일을 더 빨리 할 수 있게 해 주었습니다. 로봇 농장 장비는 한 노동자의 생산성을 1,000배 증가시켰으며, 컴퓨터는 투자가, 과학자 및 디지털 아티스트가 지수 단위로 능력을 갖추게 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 인공지능은 어느 정도 재귀적으로 우리 최고의 프로그래머들이 그들의 스킬과 프로그래밍 능력을 100배로 증폭할 수 있도록 도와주고 있어요.
 
@@ -89,7 +165,18 @@ Replit과 Github의 Copilot과 같은 AI 도구는 개발자들이 번거로운 
 
 예를 들어, 마이크로소프트의 연구원들은 AI 어시스턴트를 사용하는 소프트웨어 개발자가 AI를 사용하지 않는 사람들보다 작업을 55% 빠르게 완료했음을 발견했어요. 또한 MIT의 연구에서 상위 5%의 프로그래머들은 AI와 협업하면 순서가 배 이상 나은 성과를 보였다고 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재와 가까운 미래에 최고의 코더들은 하이브리드가 될 것입니다: 인간들이 AI와 협력하면서 더 뛰어난 성과를 거두게 될 것입니다.
 
@@ -99,7 +186,18 @@ Replit과 Github의 Copilot과 같은 AI 도구는 개발자들이 번거로운 
 
 동시에, AI는 스스로 코딩하는 방법을 배우고 자체 성능과 능력을 향상시키고 있습니다. 의문의 여지없이 기술 발전 속도를 가속화하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것이 많은 사람들을 두렵게 만들 수 있지만, 중요한 점은 이러한 개선된 도구들이 기업가들이 인류의 거대한 과제 중 많은 것들을 다루고 극복할 수 있는 슈퍼파워라는 것을 인식하는 것입니다.
 

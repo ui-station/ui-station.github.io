@@ -3,13 +3,12 @@ title: "도커 컨테이너에서 상호 TLS를 구현하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-HowtoImplementMutualTLSwithDockerContainers_0.png"
 date: 2024-05-20 17:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowtoImplementMutualTLSwithDockerContainers_0.png
 tag: Tech
 originalTitle: "How to Implement Mutual TLS with Docker Containers"
 link: "https://medium.com/itnext/how-to-implement-mutual-tls-with-docker-containers-1546a2eab38b"
 ---
-
 
 컨테이너와 마이크로서비스의 등장으로 인해 서비스 간의 통신이 HTTP와 같은 프로토콜을 통해 더 자주 발생할 가능성이 높아졌습니다. 그러나 서비스가 신뢰할 수 없는 네트워크를 통과하는 경우(예: 클라우드 내), 그들의 통신이 안전한지 어떻게 확인할 수 있을까요? 한 가지 방법은 상호 전송 계층 보안(mTLS)을 통해 가능합니다. 이를 통해 서비스들은 상호 인증(서비스가 자신이라고 주장하는 대로인지 어떻게 알 수 있을까요?) 및 통신 암호화를 할 수 있습니다. 그렇다면 mTLS는 어떻게 작동할까요? 한 번 자세히 알아봅시다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/itnext/how-to-implement-mutual-tls-with-docker-contain
 
 자세한 내용은 다음 GitHub 저장소를 참조해주세요: https://github.com/blhagadorn/mutual-tls-docker
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 기본 클라이언트 및 서버 설정
 
@@ -37,7 +47,18 @@ func main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적으로 우리는 8080포트에서 /hello 경로를 청취하고 호출되면 문자열을 반환합니다.
 
@@ -54,7 +75,18 @@ func main() {
 
 기본적으로, http://localhost:8080/hello로 HTTP GET 요청을 만들고 응답을 쓰기로 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 지금까지 한 것을 빌드하고 실행해 보세요. 01-client-server-basic/ 디렉토리 안에서 모두 수행합니다.
 
@@ -69,7 +101,18 @@ $ docker build -t basic-client -f Dockerfile.client . && docker run -it --rm --n
 > Hello, world without mutual TLS!
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 성공했습니다! 이제 각각의 도커 컨테이너에서 클라이언트와 서버가 대화하고 있습니다. 도커 컨테이너 간에 공유 네트워크를 만드는 --network host 옵션의 사용에 주목해 주세요. 따라서 두 컨테이너에서 localhost가 동일합니다.
 
@@ -85,7 +128,18 @@ $ docker run -it --network host --rm dockersec/tcpdump tcpdump -i any port 8080 
 
 우리는 TLS가 사용되지 않았음을 알 수 있습니다. 간단히 말해서, 텍스트를 읽을 수 있기 때문에 (암호화되었다면 가독성이 떨어졌을 것입니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 상호 TLS 추가하기
 
@@ -103,7 +157,18 @@ openssl req -newkey rsa:2048 \
 
 여기서는 로컬호스트의 CN(공통 이름)과 SAN(대체 주체 이름)을 포함하는 대응하는 공개 키가 포함된 개인 키(key.pem)와 인증서(cert.pem)를 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고: CN은 폐기되었으며 대부분의 최신 TLS 라이브러리에서 SAN을 포함하여 설정해야 합니다. 예를 들어 Golang의 net/http도 그렇습니다. 이 예제에서는 일부 라이브러리가 아직 CN을 설정하거나 이를 예비 수단으로 사용하는 경우를 고려하여 둘 다 설정했습니다.
 
@@ -122,7 +187,7 @@ func getHTTPSClientFromFile() *http.Client {
   cert, err := tls.LoadX509KeyPair("cert.pem", "key.pem")
   if err != nil {
     log.Fatal(err)
-  } 
+  }
   client := &http.Client{
     Transport: &http.Transport{
       TLSClientConfig: &tls.Config{
@@ -135,7 +200,18 @@ func getHTTPSClientFromFile() *http.Client {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에서 몇 가지가 발생하고 있습니다. 먼저, RootCAs가 생성한 인증서 풀(하나의 인증서만 포함)로 설정되고 있습니다. 이는 클라이언트가 다른 인증 기관을 확인하는 데 사용할 루트 인증서 집합입니다. 예제에서 중간 인증서를 생성하지 않았기 때문에 이것은 별 의미가 없지만, 여러 거래에서 이것은 신뢰의 루트를 정의합니다(루트가 서명한 모든 인증서가 유효할 것입니다). 둘째로, 우리 클라이언트가 안전한 연결을 설정할 때 서버에 전달할 인증서인 cert.pem을 전달하고 있습니다. 또한, 인증서 키 쌍은 통신을 암호화하는 데 사용할 비공개 키인 key.pem을 포함하고 있습니다.
 
@@ -148,7 +224,7 @@ func main() {
   if err != nil {
     log.Fatal(err)
   }
- 
+
   caCertPool := x509.NewCertPool()
   caCertPool.AppendCertsFromPEM(caCert)
   tlsConfig := &tls.Config{
@@ -166,7 +242,18 @@ func main() {
 
 서버 구성은 클라이언트 구성과 매우 유사합니다(이는 상호 인증이기 때문에 이해되는 바입니다). 루트 인증기관이 비슷하게 정의되어 있고, TLS 구성이 설정되며, 최종적으로 서버가 인증서와 인증서 키 쌍을 사용하여 수신 대기를 시작합니다. 클라이언트와 마찬가지로 서버도 연결하려는 모든 이해 관계자에게 자신의 인증서를 전달합니다(클라이언트가 인증서의 공개 키에 따라 통신을 암호화할 수 있도록 하는 TLS 핸드셰이크의 일부로), 그리고 또한 이 키는 메시지를 암호화하고 인증서의 공개 키의 소유권을 확인하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 02-client-server-mtls 디렉토리 안에서 예제를 실행해 보겠습니다.
 
@@ -178,7 +265,18 @@ $ docker build -t mtls-server -f Dockerfile.server . && docker run -it --rm --ne
 
 이후 클라이언트를 실행해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ docker build -t mtls-client -f Dockerfile.client . && docker run -it --rm --network host mtls-client
@@ -195,7 +293,18 @@ $ docker run -it --network host --rm dockersec/tcpdump tcpdump -i any port 8443 
 O.f........
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과가 완전히 알아볼 수 없고 암호화를 사용하고 있어서 읽을 수 없는 것을 주목해주세요.
 
@@ -205,7 +314,18 @@ O.f........
 
 ![mTLS 상호 작용 다이어그램](/assets/img/2024-05-20-HowtoImplementMutualTLSwithDockerContainers_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리
 

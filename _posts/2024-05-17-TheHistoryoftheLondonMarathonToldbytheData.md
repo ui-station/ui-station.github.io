@@ -3,13 +3,12 @@ title: "런던 마라톤의 역사를 데이터로 만나보세요"
 description: ""
 coverImage: "/assets/img/2024-05-17-TheHistoryoftheLondonMarathonToldbytheData_0.png"
 date: 2024-05-17 19:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-TheHistoryoftheLondonMarathonToldbytheData_0.png
 tag: Tech
 originalTitle: "The History of the London Marathon Told by the Data"
 link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-by-the-data-bca252794a44"
 ---
-
 
 ![이미지](/assets/img/2024-05-17-TheHistoryoftheLondonMarathonToldbytheData_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 당시 일부 독자들은 런던 마라톤의 역사에 대해 물었지만, 제 초점은 미국 마라톤에 있었습니다. 이는 편의상 그랬다고 할 수 있습니다. 미국 마라톤에 대한 데이터에 쉽게 접근할 수 있었지만 전 세계의 레이스에 대한 데이터를 수집하는 것은 더 어려워지고 있었기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 제 할 일 목록에 있었어요. 그리고 지난 주말에 런던 마라톤이 열려서, 마침내 이를 처리하기에 좋은 시기인 것 같아요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 이 분석에서는 Athlinks의 데이터를 사용했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그들의 데이터베이스에는 2001년부터 시작된 런던 마라톤 개인 결과가 포함되어 있습니다. 런던 마라톤 웹사이트에는 일부 오래된 경주 결과가 있지만, 해당 결과는 2014년부터의 것만 있습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 2006년의 데이터에는 뭔가 이상한 것이 있는 것으로 보입니다. 40대의 참가자들이 40세로 보고되어, 그들은 40세 이하 연령 그룹에 포함된 것으로 보입니다. 그래서 해당 연도의 연령 데이터 옆에 정신적인 별표를 해 주세요. 그러나 나머지 연도는 신뢰할 만한 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 데이터를 통해 몇 가지 질문을 탐색해 볼 수 있어요:
 
@@ -51,7 +83,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 # 시간이 흘러 필드가 어떻게 변화했는가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현대 런던 마라톤의 첫 대회는 1981년에 열렸어요.
 
@@ -61,7 +104,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 런던 마라톤은 이를 바꿨어요. 첫 런던 마라톤에는 6,000명 이상의 러너가 완주했고, 1980년대를 통해 대규모로 성장했어요. 단 두 번째 해에만 뉴욕보다 많은 완주자가 있었답니다. 비록 뉴욕이 가장 큰 마라톤의 왕관을 되찾았지만, 그 이후 런던은 전 세계에서 가장 큰 레이스 중 하나가 되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 마라톤의 성장
 
@@ -71,16 +125,39 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 지난 스무 해 동안에는 완주자 수가 조금씩 늘고 있는 것을 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2001년에는 거의 30,000명의 참가자가 있었습니다. 몇 년 동안 변동이 있지만, 2019년까지 꾸준히 증가하다가 레이스가 40,000명을 초과하는 성장이 이루어졌습니다.
 
 그 성장세는 2020년에 코로나19로 중단되었습니다. 세계적으로 일시 중단된 이 시기에도 런던에서는 60명의 엘리트 선수들을 위한 소규모 이벤트가 열렸지만, 대규모 마라톤은 개최되지 않아서 차트에서는 빠져 있습니다.
 
 하지만 2021년에는 빠르게 회복되었고, 2023년까지는 2019년에 세운 이전 최고 기록을 훌쩍 넘는 종료자 수를 기록했습니다. 레이스는 거의 50,000명에 이르는 종료자를 기록했는데, 이는 세계에서 가장 큰 마라톤 대회 목록 상위에 위치하게 됐습니다.
+
 ## 여성 참가자 증가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 런던 마라톤에 여성이 처음으로 참가한 것은 있었지만, 여성들의 러닝은 아직 어린 나이였습니다. 여성 이벤트가 올림픽에 포함된 것은 1984년에 이루어졌죠.
 
@@ -90,7 +167,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 위 시각화 자료는 완주자 수를 보여줍니다 — 빨간 막대는 남성을, 초록 막대는 여성을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 청색 선은 여성 참가자들이 차지하는 비율을 나타냅니다.
 
@@ -100,7 +188,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 이 기간 동안 백분율도 지속적으로 증가했습니다. 2019년 이후 상대적으로 안정되어 왔으며, 최근 몇 년 동안은 완주자의 약 40%가 여성이었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레전드에서 '여성'을 클릭하면 해당 막대를 숨기고 분야의 남성 부분을 격리할 수 있습니다. 흥미로운 점은 지난 20년간의 남성 완주자 수가 꾸준히 유지되어 왔다는 것입니다.
 
@@ -110,7 +209,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 보스턴 마라톤의 데이터를 분석할 때, 러너들이 나이를 먹고 있다는 것을 알게 되었습니다. 이 패턴은 다른 경주에서도 나타나고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 런던에서도 비슷한 일이 일어나고 있나요?
 
@@ -120,7 +230,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 드롭다운 메뉴를 사용하여 남성과 여성을 번갈아 선택할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 남성들 중에서, 조깅을 하는 총 인원은 (2023년을 제외하고) 크게 변하지 않았어요.
 
@@ -130,7 +251,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 그래프의 대체 버전은 각 연령 그룹을 전체 성별 인원의 백분율로 표시하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 젊은 남성의 비율이 천천히 감소하는 것과 비교하여 45세 이상의 남성 비율이 천천히 증가하는 것이 더 쉽게 볼 수 있어요.
 
@@ -140,7 +272,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 이러한 변화를 볼 수 있는 한 가지 방법은 각 연령 그룹 중 여성 비율을 그래프로 나타내어 시간이 지남에 따라 어떻게 변하는지 보는 것이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 조건부 분석에 대한 그래프와 같이 여기서 빨간색은 남성을 나타내고 초록색은 여성을 나타냅니다. 파란색은 여성 참가자의 백분율을 보여줍니다. 다른 점은 연령 그룹별로 분리되어 있다는 것입니다. 슬라이더를 드래그하거나 재생 버튼을 눌러 시간이 지남에 따라 어떻게 변하는지 살펴볼 수 있습니다.
 
@@ -150,7 +293,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 시간이 지남에 따라 남성과 여성 사이의 참가자들 간의 균형이 더 맞추어졌지만, 변화가 되기 까지는 최고 연령 그룹에 따라 따라잡는 시간이 필요했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 런던 마라톤의 완주 시간
 
@@ -160,7 +314,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 ## 역대 우승자들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 시각화는 매년 남성 (빨강)과 여성 (녹색)의 우승 시간을 그래프로 표시합니다.
 
@@ -170,7 +335,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 한편, 여성은 2003년에 최고의 시간을 보였습니다. 그 해, 폴라 래드클리프가 2:15:25로 우승했습니다. 그녀는 2019년까지 계속되는 세계 신기록을 세웠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 경주에서 여자 엘리트 선수들은 레드클리프를 자극하여 그러한 뛰어난 시간을 선보이도록 돕는 남성 페이서들과 함께 출발했습니다. 이 종류의 경주가 올해 읽었을 수도 있는 “혼성”과 “여성 전용” 세계 기록 사이의 차이의 이유입니다. 2003년 경주 중계를 여기서 시청할 수 있습니다.
 
@@ -180,7 +356,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 하지만 우리는 일반인이고, 로마 마라톤에서 우승하는 것은 아닙니다. 더 흥미로운 질문은 그들 뒤의 일반 대중들 사이에서 무슨 일이 벌어지고 있는지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 그래프는 경기장의 세 지점에서의 완주 시간을 보여줍니다 — 90번째 백분위수 (다른 선수들보다 90% 이상 빠른 선수), 75번째 백분위수 (다른 선수들보다 75% 이상 빠른 선수), 그리고 중앙값(팩의 중간에 있는 선수).
 
@@ -190,7 +377,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 ## 성별을 고려한 경우
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과를 성별로 세분화하면 가능한 추세를 식별할 수 있어요. 나이는 여전히 잠재적으로 혼동을 줄 수 있는 변수이지만, 인구통계학적 변화 중 가장 큰 변화가 성별 사이에서 일어났어요.
 
@@ -200,7 +398,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 ## 나이의 느려짐을 고려하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 만약 연령과 성별로 모두 자세히 살펴본다면 어떨까요?
 
@@ -210,7 +419,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 연령 그룹이 높아짐에 따라 40대와 50대에서 약간의 하향 추세가 보입니다. 그 이상으로 올라가면 약간 무작위로 보이기 시작합니다. 그때 연령 그룹이 충분히 작아서 매년 안정적인 관계가 되기 힘들 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 시간들을 미국 메이저 대회인 보스턴, 뉴욕, 그리고 시카고의 시간과 비교한다면, 런던의 시간들은 보스턴과 시카고 사이에 위치하게 될 거에요. 보스턴의 시간들은 런던의 것보다 빠르며(아마도 더 많은 예선 참가자 수에 의해), 그러나 런던의 시간들은 시카고의 것보다 빠르죠.
 
@@ -220,7 +440,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 # 런던 2024는 어디에 속할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 그것이 역사이자 기반이 되었습니다.
 
@@ -230,7 +461,18 @@ link: "https://medium.com/runners-life/the-history-of-the-london-marathon-told-b
 
 해당 분석 결과는 일주일 후쯤 다시 확인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 위에 대한 관심이 있다면 — 또는 다른 말로 말해, 마라톤에 관한 데이터 중심 이야기에 관심이 있다면 — 이메일 업데이트를 받기 위해 구독하는 것을 잊지 마세요.
 

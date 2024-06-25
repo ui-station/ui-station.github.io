@@ -3,20 +3,30 @@ title: "구조화된 복제 JavaScript에서 객체를 깊은 복사하는 가�
 description: ""
 coverImage: "/assets/img/2024-06-19-structuredCloneTheeasiestwaytodeepcopyobjectsinJavaScript_0.png"
 date: 2024-06-19 11:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-structuredCloneTheeasiestwaytodeepcopyobjectsinJavaScript_0.png
 tag: Tech
 originalTitle: "structuredClone(): The easiest way to deep copy objects in JavaScript"
 link: "https://medium.com/coding-beauty/structuredclone-js-c2180bf7900a"
 ---
 
-
 깊은 복사는 데이터를 전달하거나 저장하기 위한 정기적인 프로그래밍 작업입니다.
 
 - Shallow copy: 객체의 첫 번째 수준만 복사합니다.
 - Deep copy: 객체의 모든 수준을 복사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이 시간 동안 완벽한 객체 깊은 복사를 위한 내장 방법이 없었고, 신경 써야 했어요.
 
@@ -26,7 +36,18 @@ link: "https://medium.com/coding-beauty/structuredclone-js-c2180bf7900a"
 
 ![image](/assets/img/2024-06-19-structuredCloneTheeasiestwaytodeepcopyobjectsinJavaScript_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쉽게 순환 참조를 복제하고 있어요:
 
@@ -36,7 +57,18 @@ JSON stringify/parse 트릭으로는 할 수 없었던 작업이예요:
 
 ![이미지](/assets/img/2024-06-19-structuredCloneTheeasiestwaytodeepcopyobjectsinJavaScript_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 깊게 들어가 보세요:
 
@@ -46,7 +78,18 @@ JSON stringify/parse 트릭으로는 할 수 없었던 작업이예요:
 
 structuredClone()은 매우 강력하지만 알아야 할 중요한 약점이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 함수나 메소드를 복제할 수 없어요
 
@@ -56,7 +99,18 @@ structuredClone()은 매우 강력하지만 알아야 할 중요한 약점이 �
 
 ![이미지](/assets/img/2024-06-19-structuredCloneTheeasiestwaytodeepcopyobjectsinJavaScript_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # DOM 요소를 클론할 수 없어요
 
@@ -66,7 +120,18 @@ structuredClone()은 매우 강력하지만 알아야 할 중요한 약점이 �
 
 ![이미지3](/assets/img/2024-06-19-structuredCloneTheeasiestwaytodeepcopyobjectsinJavaScript_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # RegExp의 lastIndex 속성을 보존하지 않음
 
@@ -76,7 +141,18 @@ structuredClone()은 매우 강력하지만 알아야 할 중요한 약점이 �
 
 # 다른 제한 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 함수를 사용할 때 예기치 않은 동작을 피하기 위해 그것들을 인지하는 것이 중요합니다.
 
@@ -86,10 +162,20 @@ structuredClone()은 매우 강력하지만 알아야 할 중요한 약점이 �
 
 원본에서 클론으로 내부 객체를 복사하는 대신 이동시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해석 결과에 더 이상 수정할 내용이 없습니다. 해당 내용은 다음과 같습니다:
-
 
 ![image](/assets/img/2024-06-19-structuredCloneTheeasiestwaytodeepcopyobjectsinJavaScript_12.png)
 

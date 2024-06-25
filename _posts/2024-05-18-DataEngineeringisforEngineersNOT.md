@@ -3,13 +3,12 @@ title: "데이터 엔지니어링은 엔지니어를 위한 것입니다  아니
 description: ""
 coverImage: "/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_0.png"
 date: 2024-05-18 18:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-DataEngineeringisforEngineersNOT_0.png
 tag: Tech
 originalTitle: "Data Engineering is for Engineers — NOT!"
 link: "https://medium.com/stackademic/data-engineering-is-for-engineers-not-49fe0dc22497"
 ---
-
 
 ## 글을 쓰는 사람이 데이터 엔지니어링도 배울 수 있을 거라고 생각해요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/stackademic/data-engineering-is-for-engineers-not-49fe
 
 파이썬에서 작업을 해주셔야겠다고 말씀하셔야 했던 첫 번째 어려움이 있었어요! 즉, 데이터를 수동으로 가져오는 날이 끝났다는 거죠. 인내심을 가지고 자신에게 이런 말을 해보세요. 괜찮아, 이 일 잘 할 수 있어요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제: 사회과학 졸업생이 데이터 엔지니어링을 능숙하게 수행할 수 있을까요? 자동화된 데이터 파이프라인을 구축하고 안전하게 클라우드에 보관할 수 있을까요?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/stackademic/data-engineering-is-for-engineers-not-49fe
 
 대안 가설은 아마도 이렇게 할 수 있을 것 같아요: 생업으로 글쓰는 사람도 엔지니어처럼 데이터 엔지니어링을 배울 수 있다면요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 시작해요...
 
@@ -39,7 +60,18 @@ link: "https://medium.com/stackademic/data-engineering-is-for-engineers-not-49fe
 
 회사의 주요 사업은 독일에서 스쿠터를 대여하는 것이기 때문에 비가 오거나 눈이 오는 경우에는 일반적으로 수요가 줄어들게 됩니다. 비나 눈이 예보된 경우, 임시 수요도 증가할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서, 현재 과제는 도시와 날씨 정보로 채워진 간단한 SQL 데이터베이스를 구축하는 것입니다. 회사의 운영 부서는 매일이 이 데이터베이스에 액세스하여 이동 가능 차량의 지리적 가용성에 관한 판단을 내릴 수 있을 것입니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/stackademic/data-engineering-is-for-engineers-not-49fe
 
 <img src="/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_0.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 날씨 데이터 통합만 다루고 나중에 전송 부분은 나중에 개선할 것입니다.
 
@@ -65,7 +108,18 @@ from pytz import timezone
 
 ## 웹 스크래핑 101: HTML 코드를 가져오는 방법?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 다른 테이블과 관련하는 주요 테이블로 작용하는 도시 정보가 포함된 테이블을 만들어야 합니다. 이 테이블은 주기적으로 업데이트할 필요가 없는 정적 테이블이 될 것입니다. 이 테이블을 "cities_info"라고 부를 것입니다.
 
@@ -81,7 +135,18 @@ berlin_soup = BeautifulSoup(berlin_response.content, 'html.parser')
 print(berlin_soup.prettify)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이썬: 1 - 나: 0
 
@@ -91,7 +156,18 @@ print(berlin_soup.prettify)
 
 여기에는 각 위키피디아 사이트의 HTML 코드를 검색하기 위해 사용한 루프의 예시가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 cities_list = ["Berlin", "Hamburg", "Munich", "Cologne", "Frankfurt"]
@@ -108,7 +184,18 @@ for city in cities_list:
 
 ## HTML에서 무엇을 접근하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HTML에서 "p 태그"라는 것이 있어요. 이를 액세스하는 데 유용합니다. 다음 코드를 사용하여 그렇게 할 수 있어요:
 
@@ -124,7 +211,18 @@ for child in soup.div:  # 1번째 div에서 각 자식을 찾아서 인쇄하는
 
 ## Python에서 데이터프레임 및 SQL에서 해당 테이블 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HTML 및 웹 스크래핑 기술을 연마한 후, 첫 두 테이블에 필요한 모든 정보를 얻기 위해 이 루프를 만들었어요.
 
@@ -137,7 +235,7 @@ latitudes = []
 longitudes = []
 
 for city in cities_list:
-  url = f"https://www.wikipedia.org/wiki/{city}"   
+  url = f"https://www.wikipedia.org/wiki/{city}"
   city_soup = BeautifulSoup(response.content, 'html.parser')    # (위키백과 사이트의 내용을 city_soup 변수에 저장하는) 내용을 구문 분석합니다.
 
   # 도시가 속한 주를 검색합니다
@@ -149,25 +247,36 @@ for city in cities_list:
 
   # 각 도시의 위도를 검색하여 위도 열에 추가합니다
   city_latitude = city_soup.find(class_="latitude").get_text()
-  latitudes.append(city_latitude)  
+  latitudes.append(city_latitude)
 
    # 각 도시의 경도를 검색하여 경도 열에 추가합니다
   city_longitude = city_soup.find(class_="longitude").get_text()
-  longitudes.append(city_longitude)  
+  longitudes.append(city_longitude)
 
 cities_info_non_rel = pd.DataFrame({         # 이것이 cities_info 데이터프레임이에요
     "도시 이름": cities_list,
     "독일 주": states,
     "위도": latitudes,
     "경도": longitudes
-})  
+})
 
 display(cities_info_non_rel)    # 표시하면 테이블이 더 예쁘게 보여요
 ```
 
 또한, 연간 한 번씩 업데이트될 것으로 예상되는 인구 데이터를 포함하는 두 번째 데이터프레임도 생성했어요: cities_population
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sql
 /***************************
@@ -201,7 +310,7 @@ CREATE TABLE cities_info (
 
 /***************************
 두 번째 테이블 생성
-***************************/ 
+***************************/
 
 CREATE TABLE cities_population (
     cities_id INT,
@@ -213,7 +322,18 @@ CREATE TABLE cities_population (
 
 이제 Python에서 데이터를 첫 번째 SQL 테이블로 전송합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 schema = "gans"     # 데이터베이스 이름
@@ -222,7 +342,7 @@ user = "root"               # 사용자 이름
 password = "xxxx"           # SQL 암호 직접 지정 또는 다른 노트북에서 가져오기 ("from xxxfile import my_password")
 port = 3306
 
-connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'    
+connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 # 이건 파이썬 노트북을 SQL Workbench에 연결하는 방법이에요
 ```
 
@@ -230,14 +350,25 @@ connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}'
 cities_info_non_rel.to_sql('cities_info',   # 파이썬에서 SQL로 데이터를 보내는 방법
                   if_exists='append',       # 덮어쓰지 않고 기존 데이터에 추가하기 위함
                   con=connection_string,    # SQL Workbench에 연결할 때 필요한 인자
-                  index=False)    
+                  index=False)
 ```
 
 첫 번째 시도는 로컬에서 이루어졌습니다. 나중에 Google Cloud Platform 인스턴스를 추가하면 "host" 필드를 편집하여 이 데이터를 클라우드에 직접 전송할 수 있습니다.
 
 SQL에 첫 번째 테이블이 생성되면 cities_info에 포함된 데이터를 검색하여 두 번째 cities_population 데이터 프레임에서 해당 cities_id 열을 인덱스로 사용할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 cities_info = pd.read_sql("cities_info", con=connection_string)   # 이 코드는 SQL에 저장된 정보를 "읽어옵니다"
@@ -250,7 +381,18 @@ cities_info
 
 두 번째 데이터프레임의 내용을 SQL로 넣기 전에, 새로 생성된 cities_id 열을 사용하여 cities_populations 데이터프레임에 추가해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 칼럼 순서를 재조정하고, 이제 cities_populations 데이터프레임에 cities_id 칼럼이 있기 때문에 더 이상 city_name 칼럼이 필요하지 않으므로 삭제했습니다:
 
@@ -268,8 +410,18 @@ cities_population
 
 ![데이터 엔지니어링은 엔지니어를 위한 것](/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_2.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당분간은, 다음 해까지 업데이트되지 않을 동적이 아닌 cities_population 테이블로 간주하겠습니다.
 
@@ -280,12 +432,23 @@ cities_population
 cities_population.to_sql('cities_population',   # 이렇게 하면 Python에서 SQL로 푸시합니다
                   if_exists='append',       # 덮어쓰기를 원하지 않으므로, 기존 데이터에만 데이터를 추가합니다
                   con=connection_string,    # con은 sql workbench에 연결하기 위해 필요한 인자입니다
-                  index=False)    
+                  index=False)
 ```
 
 SQL에서 모든 것을 실행하고 "역공학" 기능을 사용하면, 우리의 스키마의 가장 초기 버전을 얻을 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_3.png" />
 
@@ -295,7 +458,18 @@ SQL에서 모든 것을 실행하고 "역공학" 기능을 사용하면, 우리�
 
 AI가 따라잡기 전에 어떻게 해야 할지 배워야겠네요! (또는 외계인이 그들의 데이터 요구를 어떻게 처리하는지를 보일 때까지) 👽
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 날씨 API 사용하기
 
@@ -305,7 +479,18 @@ AI가 따라잡기 전에 어떻게 해야 할지 배워야겠네요! (또는 �
 
 이제 우리 프로젝트의 핵심 작업에 직면했습니다: 우리가 원하는 날씨 데이터를 검색하고 SQL 데이터베이스로 전송하기 위한 필요한 코드를 작성하는 것입니다. 수십 시간 동안 고군분투한 결과, 가장 관련성 있는 날씨 데이터를 추출하기 위한 이 코드를 개발해냈습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def get_weather_data(cities):
@@ -336,13 +521,13 @@ def get_weather_data(cities):
             "humidity": item["main"].get("humidity", None),
             "rain_in_last_3h": item.get("rain", {}).get("3h", 0),
             "risk_of_rain": item["pop"],
-            "snow_in_last_3h": item.get("snow", {}).get("3h", 0),      
+            "snow_in_last_3h": item.get("snow", {}).get("3h", 0),
             "wind_speed": item["wind"].get("speed", None),
             "data_retrieved_at": retrieval_time
         }
 
         weather_items.append(weather_item)
-  
+
   weather_df = pd.DataFrame(weather_items)
   weather_df["forecast_time"] = pd.to_datetime(weather_df["forecast_time"])
   weather_df["data_retrieved_at"] = pd.to_datetime(weather_df["data_retrieved_at"])
@@ -360,15 +545,25 @@ weather_df     # 함수를 사용하여 새로운 데이터프레임 생성
 
 <img src="/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_4.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일단 날씨 데이터프레임 구조를 가지고 있었을 때, SQL에서 날씨 테이블을 생성하는 작업을 시작했습니다:
 
 ```js
 /***************************
 날씨 테이블을 생성합니다
-***************************/ 
+***************************/
 
 CREATE TABLE weather (
     city_id INT,
@@ -392,22 +587,44 @@ CREATE TABLE weather (
 
 <img src="/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_5.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 지역에서 전역으로
 
 우리의 코드를 클라우드에 올리기 전에, 날씨 데이터 검색 코드가 로컬에서 작동하는지 확인해야 합니다. Python으로 코드를 작성한 후, 로컬 SQL 인스턴스로 전송해보겠습니다:
 
 ```python
-weather_df.to_sql("weather",          
-                  if_exists='append',      
+weather_df.to_sql("weather",
+                  if_exists='append',
                   con=connection_string,
-                  index=False)    
+                  index=False)
 ```
 
 만약 새 데이터가 우리의 SQL 테이블에 추가된다면, 작동하는 것입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이썬을 통해 로컬 데이터를 입력한 후 SQL 날씨 테이블이 어떻게 보이는지는 다음과 같습니다:
 
@@ -417,7 +634,18 @@ weather_df.to_sql("weather",
 
 로컬에서 코드가 작동하는 것을 확인하면, 이제 클라우드에 올려보는 시간입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구글 클라우드 플랫폼(GCP) 계정을 열고 클라우드 인스턴스를 설정해야 합니다. 여기서는 자세히 다루지는 않겠지만 MySQL을 사용한 좋은 단계별 설명을 찾을 수 있습니다: https://support.google.com/appsheet/answer/10107301?hl=en
 
@@ -435,7 +663,18 @@ connection_string = f'mysql+pymysql://{user}:{password}@{host}:{port}/{schema}' 
 
 이렇게 함으로써, 이전에 생성한 정적 테이블을 클라우드에 자동으로 업로드하고 파이썬에서 코드를 다시 실행하지 않고 이미 존재하는 SQL 테이블에 데이터를 채울 수 있었습니다. 아니면 적어도 파이썬에서 코드를 다시 실행할 필요가 없습니다. 혹은 새로운 비동적 테이블(도시 정보 및 도시 인구)을 업데이트하기로 결정할 때까지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트의 목적으로, Python에서 이 두 표를 GCP로 업로드하려면 호스트 IP를 변경하는 것으로 충분합니다. 또 다른 방법은 두 표를 만드는 코드를 클라우드에 업로드하는 것입니다. 이 경우, 우리는 클라우드에 동적 표 날씨를 만들고 채우는 코드만 올릴 것입니다.
 
@@ -445,7 +684,18 @@ GCP의 "Cloud Functions" 필드에 함수를 만든 후 여러 번의 시행착�
 
 하지만 코드가 작동하기 전에 클라우드 인스턴스에 함수를 연결해야합니다. 아래 단계를 따라야합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_8.png" />
 
@@ -455,15 +705,26 @@ GCP의 "Cloud Functions" 필드에 함수를 만든 후 여러 번의 시행착�
 
 로컬에서 테스트한 코드와 비교해 상당한 수정이 필요했습니다. 최종 코드는 이렇게 보입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import functions_framework
 import pandas as pd
 import sqlalchemy
-import requests  
+import requests
 from pytz import timezone
-from datetime import datetime 
+from datetime import datetime
 
 @functions_framework.http
 def insert(request):
@@ -501,7 +762,7 @@ def get_weather_data(cities_df):
   berlin_timezone = timezone("Europe/Berlin")
   API_key = "7e5623c79f102b6c08b15c8hjib4cc9l"    # this is not a real one
   weather_items = []
-    
+
   for city in cities_df["city_name"]:
     url = (f"http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={API_key}&units=metric")
     response = requests.get(url)
@@ -524,13 +785,13 @@ def get_weather_data(cities_df):
             "humidity": item["main"].get("humidity", None),
             "rain_in_last_3h": item.get("rain", {}).get("3h", 0),
             "risk_of_rain": item["pop"],
-            "snow_in_last_3h": item.get("snow", {}).get("3h", 0),      
+            "snow_in_last_3h": item.get("snow", {}).get("3h", 0),
             "wind_speed": item["wind"].get("speed", None),
             "data_retrieved_at": retrieval_time
         }
 
         weather_items.append(weather_item)
-  
+
   weather_df = pd.DataFrame(weather_items)
   weather_df["forecast_time"] = pd.to_datetime(weather_df["forecast_time"])
   weather_df["data_retrieved_at"] = pd.to_datetime(weather_df["data_retrieved_at"])
@@ -541,7 +802,7 @@ def get_weather_data(cities_df):
 def insert_into_weather(connection_string):
   cities_df = extract_city(connection_string)
   weather_df = get_weather_data(cities_df)    # we create the new dataframe using the function
-  weather_df.to_sql("weather", 
+  weather_df.to_sql("weather",
             if_exists="append",
             con=connection_string,
             index=False)
@@ -553,8 +814,18 @@ def insert_into_weather(connection_string):
 
 We need to add the right dependencies to the `requirements.txt` file. This was one of the main initial reasons preventing our code from working properly. It is important to note that some libraries are already uploaded on GCP by default and should not be included in the `.txt` file, but still need to be added as a library in our source code, e.g.:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 from pytz import timezone
@@ -567,7 +838,18 @@ from datetime import datetime
 
 requirements 섹션에서는 Python 모듈이 아닌 패키지만 추가해야 합니다. 미리 알려드리자면, 여기 Python 모듈들의 종합 목록이 있습니다: [Python 모듈 목록](https://docs.python.org/3/py-modindex.html)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 유용한 팁은 코드에서 사용 중인 모든 외부 라이브러리를 출력하는 것입니다. 노트북에서 함수를 호출한 후에는 다음을 실행해야 합니다:
 
@@ -579,7 +861,18 @@ print('\n'.join(f'{m.__name__}=={m.__version__}' for m in globals().values() if 
 
 ![이미지](/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트를 위해 필요한 의존성은 다음과 같습니다 .txt 파일:
 
@@ -595,7 +888,18 @@ requests==2.31.0
 
 데이터 검색 함수를 추가하기 전에 연결 코드가 작동하는지 먼저 테스트하는 것이 좋습니다. 이렇게 하면 문제가 연결 설정에 있는지 아닌지 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 스크립트를 GCP로 이동할 때 좋은 시작 방법은 "더미" 함수를 만들고 테스트하는 것입니다. 예를 들어:
 
@@ -641,7 +945,18 @@ def insert_into_test_table(con_str):
 
 다음 오류가 발생하면 우리의 코드에 문제가 있음을 가정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. 우리 실제 코드의 문제점
 
@@ -651,7 +966,18 @@ def insert_into_test_table(con_str):
 
 도시 이름을 얻기 위해 cities_info 테이블을 사용한 후에, 도시 이름을 추출하지 않은 전 반복문을 업데이트하지 않은 다른 실수를 했습니다. 이제 도시 이름을 이전에 목록에서 가져오지 않고 데이터프레임에서 가져와야 했고, 이전 인수로는 도시 이름을 찾지 못했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마지막 단계
 
@@ -661,7 +987,18 @@ def insert_into_test_table(con_str):
 
 ![이미지](/assets/img/2024-05-18-DataEngineeringisforEngineersNOT_12.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQL에서 작동하는지 확인할 수 있어요:
 
@@ -671,7 +1008,18 @@ SQL에서 작동하는지 확인할 수 있어요:
 
 # 끝
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글을 쓰면서 SQL, Python 및 클라우드 컴퓨팅을 결합한 매우 기본적인 데이터베이스를 구축하는 방법을 배웠어요.
 
@@ -681,7 +1029,18 @@ SQL에서 작동하는지 확인할 수 있어요:
 
 앞으로의 계획은 다른 API에서 데이터를 가져와 GCP 기능에 결합하여 더 완전하고 유용한 최종 제품을 만들고 싶어해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 글을 쓰는 사람이라고 하더라도 데이터 엔지니어링을 소프트웨어 엔지니어만큼 잘 할 수는 없을 지도 모르겠어요. 하지만 우리는 기초를 배우고 거기서부터 성장할 수 있죠.
 

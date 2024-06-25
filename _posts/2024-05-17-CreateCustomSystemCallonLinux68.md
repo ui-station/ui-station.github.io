@@ -3,14 +3,12 @@ title: "리눅스 68에서 사용자 정의 시스템 호출 만들기"
 description: ""
 coverImage: "/assets/img/2024-05-17-CreateCustomSystemCallonLinux68_0.png"
 date: 2024-05-17 18:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-CreateCustomSystemCallonLinux68_0.png
 tag: Tech
 originalTitle: "Create Custom System Call on Linux 6.8"
 link: "https://medium.com/@aryan20/create-custom-system-call-on-linux-6-8-126edef6caaf"
 ---
-
-
 
 여태껏 사용자 정의 시스템 호출을 만들어보고 싶으셨나요? 과제를 위해서든, 즐거움을 위해서든, 또는 커널에 대해 더 많이 배우기 위해서든, 시스템 호출은 우리 시스템에 대해 더 많이 알아갈 수 있는 멋진 방법입니다.
 
@@ -20,7 +18,18 @@ link: "https://medium.com/@aryan20/create-custom-system-call-on-linux-6-8-126ede
 
 ## 커널 컴파일을 위한 시스템 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Red Hat / Fedora / Open Suse 기반 시스템에서는 아래와 같이 간편하게 실행할 수 있어요.
 
@@ -35,7 +44,18 @@ Debian / Ubuntu 기반 시스템에서는
 sudo apt-get install build-essential vim git cscope libncurses-dev libssl-dev bison flex
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 커널 가져오기
 
@@ -47,7 +67,18 @@ git clone --depth=1 --branch v6.8 https://git.kernel.org/pub/scm/linux/kernel/gi
 
 이상적으로, 복제된 버전은 현재 사용 중인 커널 버전과 같거나 더 높아야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 커널 버전은 다음 명령어를 통해 확인할 수 있어요
 
@@ -59,8 +90,18 @@ uname -r
 
 다음을 수행해주세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 cd linux
@@ -85,7 +126,18 @@ SYSCALL_DEFINE0(hello) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 커널 로그에 "Hello World"가 출력됩니다.
 
@@ -93,11 +145,20 @@ SYSCALL_DEFINE0(hello) {
 
 이제 다음을 Makefile에 추가해주세요
 
-
 obj-y := hello.o
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제
 
@@ -112,7 +173,18 @@ cd include/linux/
 asmlinkage long sys_hello(void)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-CreateCustomSystemCallonLinux68_0.png" />
 
@@ -124,7 +196,18 @@ asmlinkage long sys_hello(void)
 obj-y += hello/
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 우리가 포함한 새 폴더도 컴파일하도록 커널 빌드 시스템에 지시합니다.
 
@@ -132,19 +215,41 @@ obj-y += hello/
 
 각 CPU 아키텍처는 특정 시스콜을 가질 수 있으며, 우리의 시스콜이 어떤 아키텍처를 위해 만들어졌는지 알려주어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 x86_64 아키텍처에서 파일은
 
 ```js
-arch/x86/entry/syscalls/syscall_64.tbl
+arch / x86 / entry / syscalls / syscall_64.tbl;
 ```
 
 빈번호를 사용하고 테이블 주석에서 금지된 번호를 사용하지 않도록 유의하여 시스콜 항목을 추가하세요.
 
 제가 사용 가능한 번호 중 462번이 비어 있어서 새 항목을 다음과 같이 추가했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 462 공통 안녕 sys_hello
@@ -156,7 +261,18 @@ arch/x86/entry/syscalls/syscall_64.tbl
 
 ## 새 커널을 컴파일하고 설치하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 명령을 실행하십시오.
 
@@ -172,7 +288,18 @@ sudo make -j $(nproc) modules_install
 sudo make install
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 부팅된 커널의 구성 파일을 복사하고, 빌드 시스템에 동일한 값을 사용하도록 요청하여 기본값을 설정합니다. 그런 다음 nproc에 의해 주어진 코어 수에 따라 병렬 처리를 사용하여 커널을 빌드합니다. 이후 사용자 정의 커널을 설치합니다 (자체 책임으로).
 
@@ -182,7 +309,18 @@ sudo make install
 
 ## 재미있는 부분, 새로운 시스템 호출 사용
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 시스템 호출이 우리의 커널에 통합되었으니 시스템을 재부팅하고 부팅 중에 grub에서 새로운 커스텀 커널을 선택해주세요
 
@@ -192,7 +330,18 @@ sudo make install
 
 다음 내용을 가진 파일 "test.c"를 생성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 #include <stdio.h>
@@ -214,7 +363,18 @@ chmod +x test
 ./test
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모두 정상적으로 진행되면, 터미널에서 "0"을 출력하고 시스콜 출력이 커널 로그에 표시됩니다.
 
@@ -226,7 +386,18 @@ sudo dmesg | tail
 
 그러면 원하는 시스템 콜 메시지가 출력된 것을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 성공적으로 수행했다면 축하드려요 🎉 좋아요와 댓글이 있다면 감사하겠습니다 :) 꼭 여러분의 이야기를 공유해 주세요 :D
 

@@ -3,13 +3,12 @@ title: "탐색적 데이터 분석 런던 교통 수속에 잃어버린 물품"
 description: ""
 coverImage: "/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_0.png"
 date: 2024-05-20 18:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_0.png
 tag: Tech
 originalTitle: "Exploratory Data Analysis: Lost Property Items on the Transport of London"
 link: "https://medium.com/towards-data-science/exploratory-data-analysis-lost-property-items-on-the-transport-of-london-5ffa519b24a6"
 ---
-
 
 <img src="/assets/img/2024-05-20-런던 교통수단에서 분실물 품목의 탐색 데이터 분석_0.png" />
 
@@ -20,7 +19,18 @@ link: "https://medium.com/towards-data-science/exploratory-data-analysis-lost-pr
 
 이것은 좋은 서비스인 것 같아요 (그런데 미국은 1967년 이후로 비슷한 법을 가지고 있어요) 그리고 과학자와 데이터 애호가들에게 연구에 공개 데이터를 활용할 수 있는 좋은 기회인 것 같아요. 그러니 말이 많지 않게, 우리가 어떤 정보를 얻을 수 있는지 한번 살펴봅시다. 원본 파일을 얻어 결과를 재현하고 싶은 분들은 아래에 댓글을 남겨주시면 링크를 공유해드릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 데이터 로딩
 
@@ -36,10 +46,20 @@ display(df.info(verbose=True)
 
 출력 결과는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크다운 형식으로 변경하면 다음과 같습니다:
-
 
 ![Exploratory Data Analysis Lost Property Items on the Transport of London](/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_1.png)
 
@@ -51,27 +71,64 @@ df["Date Found"] = pd.to_datetime(df["Date Found"], format="%d/%m/%Y")
 
 다음 단계로 어떤 종류의 카테고리가 있는지 알아보겠습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-display(df["Category"].unique())
+display(df["Category"].unique());
 ```
 
 위 결과에서 숫자가 그리 크지 않다는 것을 보여줍니다:
 
 ```js
-array(['Bags', 'Electronics & Technology', 'Wallets & Purses',
-       'Baby & Nursery', 'ID & Personal Documents', 'Health & Beauty',
-       'Tools / Garden / DIY', 'Jewellery', 'Travel Cards & Ticket',
-       'Household & General Items', 'Keys', 'Sports & Leisure', 'Eyewear',
-       'Currency (cash)', 'Stationery & Books', 'Clothing',
-       'Financial Documents'], dtype=object)
+array(
+  [
+    "Bags",
+    "Electronics & Technology",
+    "Wallets & Purses",
+    "Baby & Nursery",
+    "ID & Personal Documents",
+    "Health & Beauty",
+    "Tools / Garden / DIY",
+    "Jewellery",
+    "Travel Cards & Ticket",
+    "Household & General Items",
+    "Keys",
+    "Sports & Leisure",
+    "Eyewear",
+    "Currency (cash)",
+    "Stationery & Books",
+    "Clothing",
+    "Financial Documents",
+  ],
+  (dtype = object)
+);
 ```
 
 시각화를 더 잘 보이게 하기 위해 "Electronics & Technology" 카테고리를 "Electronics"로 변경하고 모든 "Document" 카테고리를 한 가지로 결합하기로 결정했습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def update_category(name: str) -> str:
@@ -91,8 +148,18 @@ df["Category"] = df["Category"].map(update_category)
 
 ## 하루 평균 아이템
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 재미를 봐봅시다. 모든 항목을 날짜별로 그룹화하고 막대 차트를 그려봅시다:
 
@@ -114,7 +181,18 @@ fig.show()
 
 출력물은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_3.png)
 
@@ -124,30 +202,60 @@ fig.show()
 
 ## 카테고리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 단계로 카테고리와 하위 카테고리별로 모든 상품을 그룹화해 보겠습니다:
 
 ```js
-gr_cat = df[["Category",
-             "Sub-Category"]].groupby(["Category",
-                                       "Sub-Category"], as_index=False).size()
+gr_cat = df[["Category", "Sub-Category"]]
+  .groupby(["Category", "Sub-Category"], (as_index = False))
+  .size();
 ```
 
 다양한 종류의 시각화를 시도해 보았고, 그 중에서도 가장 유익하다고 생각되는 두 가지를 소개하겠습니다. 먼저, 2차원 원형 차트와 같은 선버스트 차트를 그려보겠습니다:
 
 ```js
-fig = px.sunburst(gr_cat, width=1280, height=800,
-                  path=["Category", "Sub-Category"], values="size",
-                  color="Category",
-                  title="<span style='font-size:18px;'><b>TfL, Lost Items Chart</b></span><b></b>"
-                  )
-fig.update_layout(font_size=10, margin=dict(l=10, r=10, t=30, b=50))
-fig.update_traces(textinfo="label+percent parent")
-fig.show()
+fig = px.sunburst(
+  gr_cat,
+  (width = 1280),
+  (height = 800),
+  (path = ["Category", "Sub-Category"]),
+  (values = "size"),
+  (color = "Category"),
+  (title =
+    "<span style='font-size:18px;'><b>TfL, Lost Items Chart</b></span><b></b>")
+);
+fig.update_layout(
+  (font_size = 10),
+  (margin = dict((l = 10), (r = 10), (t = 30), (b = 50)))
+);
+fig.update_traces((textinfo = "label+percent parent"));
+fig.show();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음처럼 출력됩니다:
 
@@ -157,7 +265,18 @@ fig.show()
 
 선셋 차트가 흥미로워 보이지만, 좁은 세그먼트를 읽기 어려울 수 있습니다. 다른 대안은 트리맵 차트입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 fig = px.treemap(gr_cat, width=1280, height=800,
@@ -173,29 +292,63 @@ fig.show()
 
 이 경우, 마우스를 호버하여 작은 하위 카테고리의 데이터를 쉽게 읽을 수 있습니다. 반면, 파이 차트를 사용하면 다른 카테고리 간의 상대적인 크기를 더 쉽게 이해할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 하위 카테고리
 
 "전자제품" 카테고리를 자세히 살펴보겠습니다. 이를 위해 데이터프레임을 필터링하고, 모든 항목을 하위 카테고리별로 그룹화하여 막대 그래프를 그릴 수 있습니다:
 
 ```js
-df_ = df[df["Category"] == "전자제품"]
-gr_electronics = df_[["하위 카테고리"]].groupby(["하위 카테고리"], as_index=False).size().sort_values(by="size", ascending=True)
+df_ = df[df["Category"] == "전자제품"];
+gr_electronics = df_[["하위 카테고리"]]
+  .groupby(["하위 카테고리"], (as_index = False))
+  .size()
+  .sort_values((by = "size"), (ascending = True));
 
-fig = px.bar(gr_electronics, width=1280, height=600, 
-             title="<span style='font-size:18px;'><b>TfL, 분실물 주간별 전자제품</b></span><b></b>",
-             x="size", y="하위 카테고리", orientation="h")
-fig.update_layout(xaxis_title="수량", yaxis_title=None,
-                  plot_bgcolor="#F5F5F5",
-                  margin=dict(l=50, r=50, t=30, b=50))
-fig.show()
+fig = px.bar(
+  gr_electronics,
+  (width = 1280),
+  (height = 600),
+  (title =
+    "<span style='font-size:18px;'><b>TfL, 분실물 주간별 전자제품</b></span><b></b>"),
+  (x = "size"),
+  (y = "하위 카테고리"),
+  (orientation = "h")
+);
+fig.update_layout(
+  (xaxis_title = "수량"),
+  (yaxis_title = None),
+  (plot_bgcolor = "#F5F5F5"),
+  (margin = dict((l = 50), (r = 50), (t = 30), (b = 50)))
+);
+fig.show();
 ```
 
 여기에서는 라벨을 읽기 쉽게하기 위해 가로 막대 차트를 사용했습니다. 결과는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_6.png)
 
@@ -205,8 +358,18 @@ fig.show()
 
 간단한 연습으로 데이터를 위치별로 그룹화하고 어떤 물품이 발견된 상위 10곳을 확인해 봅시다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 gr_location = df[["Location"]].groupby(['Location'], as_index=False).size().sort_values(by="size", ascending=False)
@@ -219,7 +382,18 @@ The output looks like this:
 
 I have been to London several times, but my knowledge of London stations is not that good. Let’s draw all locations on the map, so it will be easier to see the places. I will use a Python geopy library to get the coordinates:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from geopy.geocoders import Nominatim
@@ -237,9 +411,18 @@ def get_coord_lat_lon(full_addr: str) -> Tuple[float, float]:
 
 처리가 완료된 후에 데이터프레임은 다음과 같이 보입니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![map](/assets/img/2024-05-20-ExploratoryDataAnalysisLostPropertyItemsontheTransportofLondon_9.png)
 
@@ -264,8 +447,18 @@ display(fig)
 
 I also created `add_to_map` and `value_to_color` methods, which help to add a station to the map:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def value_to_color(value: int) -> str:
@@ -297,8 +490,18 @@ def add_to_map(fmap: folium.Map, name: str,
 
 이 지도는 물건이 발견된 장소를 보여줍니다. 물건을 분실한 장소에 대해서는 알 수 없습니다 (특히 빠르게 이동하는 기차에서), 하지만 결과를 보는 것은 여전히 흥미로울 것입니다. 지도의 가장 큰 원들은 마지막 기차나 버스 정류장인 것으로 보입니다. 그러나 다른 역에서도 많은 물건들이 발견되었습니다. 독자들은 색상 맵 (제가 "Inferno" 팔레트를 사용했습니다) 및 원 크기와 같은 매개변수를 변경하여 더 나은 시각화를 얻을 수도 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결론
 
@@ -312,7 +515,18 @@ def add_to_map(fmap: folium.Map, name: str,
 - 트위터 글에서 시간적인 패턴 찾기: Python을 사용한 데이터 탐색적 분석
 - Python 데이터 분석: 팝송에 대해 우리가 아는 것은 무엇인가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 이야기를 즐겼다면 Medium을 구독해보세요. 그러면 새 글이 올라올 때 알림을 받을 수 있을 뿐만 아니라 다른 작가들의 수천 개 이야기에도 완전한 액세스 권한을 얻을 수 있어요. LinkedIn을 통해 연락하셔도 좋고요. 이와 다른 포스트들의 전체 소스 코드를 얻고 싶으시다면 제 Patreon 페이지를 방문해주세요.
 

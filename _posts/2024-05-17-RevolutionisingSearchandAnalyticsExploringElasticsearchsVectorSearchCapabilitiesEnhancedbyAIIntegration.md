@@ -3,13 +3,12 @@ title: "검색 및 분석 혁신 AI 통합으로 강화된 Elasticsearch의 벡�
 description: ""
 coverImage: "/assets/img/2024-05-17-RevolutionisingSearchandAnalyticsExploringElasticsearchsVectorSearchCapabilitiesEnhancedbyAIIntegration_0.png"
 date: 2024-05-17 20:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-RevolutionisingSearchandAnalyticsExploringElasticsearchsVectorSearchCapabilitiesEnhancedbyAIIntegration_0.png
 tag: Tech
 originalTitle: "Revolutionising Search and Analytics: Exploring Elasticsearch’s Vector Search Capabilities Enhanced by AI Integration"
 link: "https://medium.com/@nischalgoyal.23/revolutionising-search-and-analytics-exploring-elasticsearchs-vector-search-capabilities-enhanced-d41a36dab6d3"
 ---
-
 
 ![링크 미리보기](/assets/img/2024-05-17-RevolutionisingSearchandAnalyticsExploringElasticsearchsVectorSearchCapabilitiesEnhancedbyAIIntegration_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@nischalgoyal.23/revolutionising-search-and-analytics-
 
 벡터 데이터베이스는 데이터 저장 및 검색에서 패러다임 전환을 의미하며, 특히 전통적인 관계형 데이터베이스가 부족한 시나리오에서 빛을 발합니다. 일반적인 데이터베이스가 데이터를 표 형식으로 저장하는 데 반해, 벡터 데이터베이스는 고차원 공간에 벡터로 데이터를 저장합니다. 이를 통해 데이터의 세부적인 표현이 가능해지며, 특히 엔티티 간의 관계가 복잡하고 다면히된 도메인에서 더욱 정교한 표현이 가능해집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 벡터 데이터베이스의 주요 장점:
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@nischalgoyal.23/revolutionising-search-and-analytics-
 
 벡터 데이터베이스 분야에서 Elasticsearch는 중요한 역할을 하지만, ChromaDB, Faiss, Milvus와 같은 대안 솔루션을 고려하는 것이 중요합니다. 각각에는 독특한 기능과 특정한 사용 사례가 있습니다. Elasticsearch가 빛을 발하는 시점과 대안적 벡터 데이터베이스가 선호되는 시점을 이해하기 위해 비교 분석에 대해 알아보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ChromaDB:
 
@@ -41,7 +62,18 @@ ChromaDB는 미디어 응용 프로그램(예: 이미지 및 오디오 검색)�
 
 Facebook의 Faiss는 대규모 데이터셋에서의 유사성 검색에서 확장성과 속도로 유명합니다. 역 인덱스 및 제품 양자화와 같은 최첨단 인덱싱 기술을 활용하여, Faiss는 추천 시스템 및 멀티미디어 아카이브에서의 실시간 검색 및 분석 등을 요구하는 시나리오에서 뛰어난 성능을 발휘합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Milvus:
 
@@ -51,7 +83,18 @@ Facebook의 Faiss는 대규모 데이터셋에서의 유사성 검색에서 확�
 
 전문화된 벡터 검색 라이브러리 여러 개가 존재하지만, Elasticsearch는 벡터 데이터베이스 분야에서 독특한 장점을 제공하여 돋보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Elasticsearch의 다재다능성:
 
@@ -61,7 +104,18 @@ Elasticsearch는 다른 백터 데이터베이스뿐만 아니라 강력한 검�
 
 Elasticsearch는 다양한 사용 사례에 맞추어 제공되지만, ChromaDB, Faiss 및 Milvus와 같은 특수화된 벡터 데이터베이스는 특정 분야에서 뛰어난 성능을 발휘합니다. 실시간 검색을 필요로 하는 작업에서는 Faiss의 속도와 확장성이 탁월하며, ChromaDB는 색상 일치에 중점을 둔 다양한 멀티미디어 응용프로그램에서 필수적입니다. 반면 Milvus는 대규모 벡터 데이터셋을 효율적으로 관리해야 하는 시나리오에서 빛을 발하며, GPU 가속 및 분산 컴퓨팅을 활용하여 최적의 성능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 확장성과 성능:
 
@@ -71,7 +125,18 @@ Elasticsearch의 분산 아키텍처는 대규모 데이터셋을 처리하기�
 
 OpenAI의 GPT-3와 같은 AI 기술과 통합함으로써 Elasticsearch는 검색 및 분석 기능을 향상시킬 수 있는 탁월한 기회를 제공합니다. AI 기반 쿼리 이해, 콘텐츠 생성 및 문맥에 따른 추천 기능을 통해 Elasticsearch 사용자는 통찰력과 효율성의 새로운 차원을 열 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 벡터 검색의 역량을 발휘하는 Elasticsearch의 벡터 데이터베이스 기능
 
@@ -81,7 +146,18 @@ Elasticsearch가 전문 텍스트 검색 엔진에서 다양한 벡터 데이터
 
 Elasticsearch의 dense_vector 데이터 유형은 고차원 벡터를 효율적으로 저장하는 데 특별히 설계되었습니다. dense_vector 데이터 유형을 활용하는 매핑을 정의함으로써 사용자들은 Elasticsearch 색인에 벡터 데이터를 신속하게 통합하여 다양한 고급 검색 및 분석 기능을 활용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 {
@@ -115,7 +191,18 @@ es.indices.create(index='my_index', body={'mappings': mapping})
 
 ## script_score 함수 활용:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Elasticsearch의 script_score 함수를 사용하면 사용자가 특정 요구 사항에 따라 점수 매기는 알고리즘을 사용자 정의할 수 있어요. 이 기능을 활용하면 쿼리 벡터와 문서 벡터 간의 사용자 정의 유사성 점수를 계산하여 보다 세밀하고 문맥을 고려한 검색 경험을 제공할 수 있어요.
 
@@ -164,7 +251,18 @@ res = es.search(index="my_index", body=query_body)
 print(res)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Elasticsearch과 AI 통합: 새로운 가능성의 발현
 
@@ -174,7 +272,18 @@ AI 기술을 Elasticsearch와 통합하면 사용자들이 데이터에서 더 �
 
 Elasticsearch와 자연어 처리(NLP) 모델을 결합하면 고급 쿼리 이해 기능을 활용할 수 있습니다. 사용자 쿼리의 의미론을 분석함으로써 Elasticsearch는 더 관련성 높은 검색 결과를 제공하고 사용자 경험을 향상시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 # elasticsearch과 transformers 패키지를 import합니다
@@ -230,7 +339,18 @@ summary = summarizer(doc_content, max_length=100, min_length=30, do_sample=False
 es.index(index="my_index", body={"summary": summary[0]["summary_text"]})
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Context-Aware Recommendations with ML:
 
@@ -274,6 +394,17 @@ print(recommended_documents)
 
 # 결론: 검색과 분석의 미래를 선도하다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 엘라스틱서치의 다양한 벡터 데이터베이스로의 진화는 AI 통합과 결합되어 검색 및 분석 분야에서 패러다임 전환을 이루었습니다. 강력한 기능, 포괄적인 쿼리 기능, 그리고 AI 기술과의 원활한 통합을 통해 엘라스틱서치는 사용자들에게 전례 없는 정밀성과 효율성으로 복잡한 데이터 환경을 탐색할 수 있는 능력을 부여합니다. 조직이 벡터 데이터베이스와 AI 기반 통찰력의 잠재력을 받아들이는 가운데, 엘라스틱서치는 검색 및 분석 분야의 미래를 개척하며 선두에 서 있습니다.

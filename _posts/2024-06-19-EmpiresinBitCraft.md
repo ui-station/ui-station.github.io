@@ -3,13 +3,12 @@ title: "비트크래프트 속 제국"
 description: ""
 coverImage: "/assets/img/2024-06-19-EmpiresinBitCraft_0.png"
 date: 2024-06-19 11:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-EmpiresinBitCraft_0.png
 tag: Tech
 originalTitle: "Empires in BitCraft"
 link: "https://medium.com/@clockwork-labs/empires-in-bitcraft-f334d8bbc2b4"
 ---
-
 
 # 게임 디자인 블로그 — 2024년 6월 10일
 
@@ -19,7 +18,18 @@ BitCraft에서 제국에 대해 이야기할 시간입니다. 제국은 비즈�
 
 모든 플레이어가 같은 물리적 세계에서 공유하고 협업하는 BitCraft는 본질적으로 사회적인 게임입니다. 따라서 플레이어들이 세계와 경쟁하거나 협력할 수 있는 다양한 방법이 필요합니다. BitCraft에서는 무역 길드, 정착지, 그리고 제국을 포함한 여러 가지 방법을 계획 중에 있습니다. 현재 게임에 구현된 그룹 시스템은 정착지뿐이며, 이는 기본적으로 신뢰할 수 있는 그룹의 플레이어들 사이에 자원과 건물을 공유하는 방식으로 작동합니다. 정착지의 목적은 서로 다른 기술을 가진 그룹이 함께 세계의 특정 장소에서 진전할 수 있도록 하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알파 2 플레이테스트에서 소개할 엠파이어 시스템은 다소 기능적이지 않고 좀 더 허영심을 충족시키는 목적을 가지고 있습니다. BitCraft에서 엠파이어의 목적은 플레이어가 큰 이념, 인물, 또는 군주에 힘을 모아 세계에 그 엠파이어의 충성을 퍼뜨리며 세계에 자신의 흔적을 남기도록 동기부여하는 것입니다.
 
@@ -30,7 +40,18 @@ BitCraft에서 제국에 대해 이야기할 시간입니다. 제국은 비즈�
 엠파이어의 작동 방식은 어떤가요?
 본질적으로, 엠파이어 시스템은 BitCraft의 세계지도 상에서 영토를 점령하기 위한 경쟁입니다. 엠파이어와 그 영토들은 게임 내에서 기능적인 목적보다는 BitCraft 세계의 맛과 역동성에 엄청난 영향을 미치지만, 플레이어와 그들의 엠파이어가 소유 및 통제하기 위해 경합하는 글로벌한 스킨으로 세계지도를 생각할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지난번에 게임 디자인 비전에 대해 이야기했던 것을 기억하시나요? 제국은 캐릭터나 정착지와는 근본적으로 다른 규모에서 운영됩니다. 제국은 모든 캐릭터나 정착지의 진행에 영향을 미치지 않지만, 모든 캐릭터가 제국 시스템에 각자의 방식으로 참여할 수 있습니다.
 
@@ -40,7 +61,18 @@ BitCraft에서 제국에 대해 이야기할 시간입니다. 제국은 비즈�
 
 ![EmpiresinBitCraft_2](/assets/img/2024-06-19-EmpiresinBitCraft_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제국과 수익화
 이전 수익화 블로그의 철학과 관련하여 BitCraft에서 게임의 어떤 부분이 "명예 메달"로 의도되었는지와 어떤 부분이 "람보"로 의도되었는지 명확히 해주려고 합니다. BitCraft의 제국 시스템을 거대한 영전용 화장수, 일명 람보르기니로 디자인하고 상상한 적이 있습니다. 대규모로 성공한 제국을 갖고있는 유일한 이득은 상태입니다: 게임 세계에서의 명성, 제국 이름이 세계지도에 표시되고 황제의 왕관 등이 됩니다. 따라서 제국 운영을 위해서 누군가 돈을 지출해야 한다는 사실을 감안하여 만들어졌습니다.
@@ -51,7 +83,18 @@ BitCraft에서 제국에 대해 이야기할 시간입니다. 제국은 비즈�
 
 제국 시스템은 누군가 실제 돈을 지출해야 하는데, 그 돈은 캐릭터나 정착단위에서 빠르게 진행할 수 있도록 도와주지 않습니다. 게다가, 제국의 실제 비용은 꽤 적습니다. 다른 제국이 자신의 땅과 칭호를 놓고 경쟁하는 전쟁을 벌이거나 자신의 열정을 보여주기 위해 제국 전역에 기를 달거나 동상을 세우는 것이 시간, 돈, 자원을 많이 소모하게 될 것입니다. 이러한 방식으로 거의 누구나 경쟁이 적은 원격 지역에서 제국을 시작할 수 있지만, 세계적인 히게모니를 유지하기는 훨씬 어렵고 비싸게 들어갈 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임을 개발하는 데 많은 노력과 에너지를 투입했어요. 모든 플레이어에게 공평하고 장기적인 게임 개발팀을 유지할 수 있는 게임을 만들기 위해 노력했답니다. 우리는 BitCraft 세계를 수십 년간 구축할 수 있도록 혁신하고자 하는 목표 중에 이 시스템이 한 부분이에요. 게임에서 무료로 즐겁고 공평한 경험을 많은 사람들에게 제공하고, 게임에 돈을 지불함으로써 새로운 종류의 다이내믹하고 재미있는 코스메틱을 만드는 방식으로 수익을 창출하고자 합니다.
 
@@ -61,6 +104,17 @@ BitCraft에서 제국에 대해 이야기할 시간입니다. 제국은 비즈�
 
 - 3Blave (Tyler)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시계 장인 랩스의 창립자입니다.

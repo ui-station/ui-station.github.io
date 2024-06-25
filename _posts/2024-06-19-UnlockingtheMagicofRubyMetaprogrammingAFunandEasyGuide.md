@@ -3,13 +3,12 @@ title: "루비 메타프로그래밍의 매력을 발견하다 재미있고 쉬�
 description: ""
 coverImage: "/assets/img/2024-06-19-UnlockingtheMagicofRubyMetaprogrammingAFunandEasyGuide_0.png"
 date: 2024-06-19 10:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-UnlockingtheMagicofRubyMetaprogrammingAFunandEasyGuide_0.png
 tag: Tech
 originalTitle: "Unlocking the Magic of Ruby Metaprogramming: A Fun and Easy Guide"
 link: "https://medium.com/@david88raja/unlocking-the-magic-of-ruby-metaprogramming-a-fun-and-easy-guide-7495b152c176"
 ---
-
 
 당신이 코드가 스스로 작성되길 바라거나, 실행 중에 자신을 수정, 확장 또는 자가검사할 수 있는 슈퍼파워를 가지기를 꿈꾼 적이 있나요? 새로운 지식을 터득하고 자유롭게 프로그램을 다루는 마술사처럼 프로그램을 제어하는 Ruby 메타프로그래밍이 여기 있다는 걸 알았군요!
 
@@ -19,7 +18,18 @@ Ruby에서의 메타프로그래밍은 실행 중에 코드 자체를 수정, �
 
 가볍고 재미있게 진행하기 위해 Ruby 메타프로그래밍의 가장 매혹적인 주문… 즉, 기술들을 알아보도록 하죠. 걱정하지 마세요, 모든 것을 이해할 수 있도록 마법적인 상상력을 이용할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주문 #1: Method_missing
 
@@ -39,7 +49,18 @@ wizard.invisibility("10분 동안") # invisibility 주문이 ["10분 동안"]와
 
 method_missing을 오버라이딩함으로써 정의되지 않은 메소드 호출을 잡아내어 처리하는 방법을 결정할 수 있습니다. 무한한 주문서를 가지고 있는 것과 같은 느낌이죠!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주문 #2: Define_method
 
@@ -58,7 +79,18 @@ end
 
 define_method을 사용하면 실행 시간에 클래스에 메서드를 추가할 수 있어서, 당신의 주문(그리고 코드)를 무한히 유연하게 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주문 #3: Class_eval과 Instance_eval
 
@@ -80,7 +112,18 @@ smaug.breathe_fire # 용이 불을 뿜습니다!
 
 class_eval을 사용하면 실행 중에 클래스의 메소드를 추가하거나 구조를 변경할 수 있습니다. 마치 결투 중에 주문서를 다시 쓰는 것과 같은 느낌이죠!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실용적인 예제: DSL(Domain Specific Language) 만들기
 
@@ -110,7 +153,18 @@ twilight.fly # The unicorn takes flight!
 
 클래스 메소드 내에서 define_method를 사용하여 마법 생물의 능력을 정의하는 간편하고 유연한 방법을 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론
 

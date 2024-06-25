@@ -3,13 +3,12 @@ title: "새 Wi-Fi에 Shark Robot을 연결하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-HowToConnectSharkRobottoNewWi-Fi_0.png"
 date: 2024-05-20 19:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowToConnectSharkRobottoNewWi-Fi_0.png
 tag: Tech
 originalTitle: "How To Connect Shark Robot to New Wi-Fi"
 link: "https://medium.com/@noxgenix/how-to-connect-shark-robot-to-new-wi-fi-9da2a7bd6e31"
 ---
-
 
 <img src="/assets/img/2024-05-20-HowToConnectSharkRobottoNewWi-Fi_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@noxgenix/how-to-connect-shark-robot-to-new-wi-fi-9da2
 
 # 원활한 연결을 위한 준비사항 (샤크 로봇을 새 Wi-Fi에 연결하는 방법)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 견고한 기반을 확보하기
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@noxgenix/how-to-connect-shark-robot-to-new-wi-fi-9da2
 
 # iOS 사용자를 위한 단계별 안내
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # iOS 연결 마스터하기
 
@@ -45,7 +66,18 @@ iOS 사용자를 위해 Shark Robot을 새 Wi-Fi 네트워크에 연결하는 �
 
 iOS 사용자들은 이제 Shark Robot의 모든 잠재력을 발휘하고 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드 사용자를 위한 단계별 안내서
 
@@ -57,6 +89,17 @@ iOS 사용자들은 이제 Shark Robot의 모든 잠재력을 발휘하고 사�
 - 계정 생성: 앱을 실행하고 이메일을 제공하고 안전한 암호를 선택하여 계정을 생성합니다.
 - 로봇의 Wi-Fi 활성화: 로봇의 전원이 켜져 있고 'Dock and Clean' 버튼을 계속해서 5~10초 동안 누르거나 'Dock and' ...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 단계를 원하시면 여기를 클릭해주세요.

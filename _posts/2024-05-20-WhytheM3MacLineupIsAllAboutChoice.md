@@ -3,13 +3,12 @@ title: "M3 맥 라인업이 선택의 문제에 대해 모두를 고려하는 �
 description: ""
 coverImage: "/assets/img/2024-05-20-WhytheM3MacLineupIsAllAboutChoice_0.png"
 date: 2024-05-20 18:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WhytheM3MacLineupIsAllAboutChoice_0.png
 tag: Tech
 originalTitle: "Why the M3 Mac Lineup Is All About Choice!"
 link: "https://medium.com/macoclock/why-the-m3-mac-lineup-is-all-about-choice-4b1bad4748d7"
 ---
-
 
 ![2024-05-20-WhytheM3MacLineupIsAllAboutChoice_0](/assets/img/2024-05-20-WhytheM3MacLineupIsAllAboutChoice_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/macoclock/why-the-m3-mac-lineup-is-all-about-choice-4b
 
 ![2024-05-20-WhytheM3MacLineupIsAllAboutChoice_1](/assets/img/2024-05-20-WhytheM3MacLineupIsAllAboutChoice_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래도 그 주변은 정말 좋은 곳이에요. 저 땅엔 사과의 영국 본사가 위치하고 있는데, 창의적인 구성물로 유명한 배터시 파워 스테이션의 상당 부분을 차지하고 있는 멋진 곳이에요. 맥 팀의 초대를 받아 그 곳을 방문했죠.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/macoclock/why-the-m3-mac-lineup-is-all-about-choice-4b
 
 ## M3 iMac: 완전한 사양을 가진 제품에 대한 첫 인상
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지난 주말에 M3 iMac을 M1 iMac과 2017년 인텔 기반 5K iMac과 비교한 YouTube 비디오를 게시했어요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/macoclock/why-the-m3-mac-lineup-is-all-about-choice-4b
 
 그래서 Mac 팀이 M3 iMac이 여러 개의 고사양 앱을 실행하는 사용자 계정 간에 얼마나 빨리 전환할 수 있는지 열정적으로 보여준 대로, 제 첫 질문은 명백했죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "이 제품 스펙은 무엇인가요?" 라고 물었더니, 완전히 강력한 24GB 버전이었습니다. 전에 본 적이 없는 iMac의 구성으로, 매우 빠르다는 것을 느낄 수 있었습니다. 어떤 사람들은 '무서운 속도'라고 말할지도 모르겠어요. 8GB 기본 모델 구성은 어디로 가는지 팀에게 물었더니, 그들의 답변은 상쾌하면서도 명확했어요.
 
@@ -47,7 +79,18 @@ link: "https://medium.com/macoclock/why-the-m3-mac-lineup-is-all-about-choice-4b
 
 그들은 이제 선택의 폭이 더 많아졌다고 강조했어요. M1 iMac은 8GB 또는 16GB의 통합 메모리로만 구성할 수 있었는데, M3에는 새로운 24GB 티어가 있어요."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구매자들이 약간의 불안과 혼란을 겪을 수 있습니다. 하지만 항상 말했듯이, 24GB의 메모리가 필요하다면 정말 그만큼의 메모리가 필요한 것입니다. 또한, 8GB의 통합 메모리가 많은 사용자들에게 완벽하게 작동한다고 단언합니다. 저를 포함해, 2020년부터 8GB 맥북으로 이 비즈니스를 운영해왔습니다.
 
@@ -57,7 +100,18 @@ link: "https://medium.com/macoclock/why-the-m3-mac-lineup-is-all-about-choice-4b
 
 최근에 나는 14인치 M1 맥북 프로 주문을 제대로 엉망으로 했다고 공개했다. 칩은 맞았고(최고 사양 M1 버전), 그리고 저장 공간도 충분했지만(2TB를 넘어가지는 않았다), 64GB로 올리려고 200파운드를 더 내야 했음에도 불구하고 48GB 통합 메모리로 고집했다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-WhytheM3MacLineupIsAllAboutChoice_3.png" />
 
@@ -67,7 +121,18 @@ link: "https://medium.com/macoclock/why-the-m3-mac-lineup-is-all-about-choice-4b
 
 기본 모델 M3 MacBook Pro는 iMac과 동일한 8GB의 통합 메모리를 갖고 있지만 Apple이 분명 자랑스럽게 여기는 제품입니다. 이전 제품보다 저렴하며, 더 나은 디스플레이를 특징으로 하며, 업데이트된, 기능적으로 더 나은 디자인을 갖추고 있습니다. 판매량이 엄청나게 늘 것으로 예상됩니다. MacBook Pro를 원하고 상업적 중요성을 별로 두지 않는다면, 기본 모델 M3은 절대 선택 장애가 없는 제품입니다. 많은 비즈니스 대량 구매자에게도 동일할 것으로 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 M3 Pro MacBook Pro은 상당히 한 수 올립니다. 베이스 모델과 비교했을 때 더 많은 코어와 증가된 메모리 업그레이드 옵션을 갖추고 있어, 전문가 사용자들이 주목할 만한 제품입니다. 이 제품은 달콤한 중간 지점에 위치하고 있지만 하드웨어 가속 레이 트레이싱 덕분에 엄청난 그래픽 성능을 자랑합니다 (제가 보여준 데모로는 이 노트북이 심각한 게임을 실행하는 데 얼마나 능숙한지 잘 보여줍니다 — 만약 맥북이 그 방향으로 진지하게 나아간다면).
 
@@ -77,7 +142,18 @@ M3 Pro MacBook Pro은 상당히 한 수 올립니다. 베이스 모델과 비교
 
 그들은 건축물에 이어서 이동하여, 건물의 복잡한 멀티기가 바이트 모델이 즉시 실시간으로 분석되고 벽돌 단위로 체계적으로 조사될 수 있는 것을 보여주었습니다. 이는 맥북 프로가 거대한 데이터 양을 통합 메모리 은행에 저장할 수 있는 능력 덕분에 가능한 일이었습니다. 또 다른 데모로는 M3 Max의 3D 렌더링 능력과 어떻게 복잡한 장면 안에서 조명을 즉시 조작할 수 있는지를 보여주었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 기대한 대로, 파티 트릭은 트랙패드에서 스와이프하여 이 모든 성서적으로 복잡한 것들이 다른 성서적으로 복잡한 애플리케이션이 백그라운드에서 실행되는 동안 일어나고 있다는 것을 드러내는 것이었습니다.
 
@@ -87,7 +163,18 @@ M3 Pro MacBook Pro은 상당히 한 수 올립니다. 베이스 모델과 비교
 
 새로운 MacBook Pro가 얼마나 인상적인지에 상관없이, 그것들은 여전히 매우 비싼 컴퓨터입니다. 상업적 용도로 사용할 경우, 투자로 돌아올 것이며, 연구, 생산성 및 제품을 빠르게 처리할 수 있다면, 일곱천 달러의 컴퓨터는 어떤 예불 없이도 빨리 필수품이 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 다른 사람들은 어떻게 될까요? 상업적 행위와 관련이 없는 이런 M3 Mac의 성능을 평가하는 사람들은 어떻게 될까요?
 
@@ -97,7 +184,18 @@ M3 Mac mini나 M3 Mac Studio의 가능성에 대한 질문은 아직 답이 없�
 
 제 경우에는, 저는 거의 모든 사양을 갖춘 M3 Mac MacBook Pro의 도착을 기대할 수가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 가기 전에
 

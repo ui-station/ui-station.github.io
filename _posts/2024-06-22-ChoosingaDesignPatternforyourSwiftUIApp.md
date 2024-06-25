@@ -3,13 +3,12 @@ title: "SwiftUI 앱을 위한 디자인 패턴 선택하기"
 description: ""
 coverImage: "/assets/img/2024-06-22-ChoosingaDesignPatternforyourSwiftUIApp_0.png"
 date: 2024-06-22 23:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-ChoosingaDesignPatternforyourSwiftUIApp_0.png
 tag: Tech
 originalTitle: "Choosing a Design Pattern for your SwiftUI App"
 link: "https://medium.com/@alexanderson_16451/choosing-a-design-pattern-for-your-swiftui-app-163c06ffcd9b"
 ---
-
 
 디자인 패턴은 문제를 해결해야 합니다
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@alexanderson_16451/choosing-a-design-pattern-for-your
 
 우드리지의 iOS 팀 아키텍트로서, 저는 앱의 아키텍처를 기획하는 업무를 맡았습니다. 이런 방대한 프로젝트에 SwiftUI를 도입하는 것은 잘 정립된 아키텍처적인 모베스트 프랙티스의 부재로 독특한 도전이었습니다. 제가 디자인 패턴을 선택하고 나중에 발명하게 된 여정은 세 단계로 나뉘었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 첫 번째 단계: UIKit 친화적인 디자인 패턴 선택하기
 
@@ -29,7 +39,18 @@ UIKit 개발자로서, 저는 처음에는 UIKit 세계에서 잘 작동하는 �
 
 애플이 2008년에 iPhone SDK를 출시했을 때, UIKit 애플리케이션을 구축하기 위한 권장 디자인 패턴은 MVC(Model-View-Controller)였습니다. 이 패턴은 데이터 모델, 뷰 및 이들을 연결하는 컨트롤러(UIKit에서는 뷰와 컨트롤러가 단일 "뷰 컨트롤러"로 결합됩니다)를 포함합니다. 기본적인 것을 넘어서 애플리케이션의 복잡도가 증가할수록, 이 패턴은 종종 익숙한 문제인 거대한 뷰 컨트롤러로 이어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대형 뷰 컨트롤러가 생긴 이유는 여러 가지가 있습니다. 예를 들어 UIKit 내에서 뷰 구성(큰 뷰를 작은 하위 뷰로 분해하는 것)을 사용하기가 매우 어렵기 때문에 대부분의 개발자들이 포기하고 앱의 전체 화면 당 하나의 뷰 컨트롤러를 만들어 각 뷰 컨트롤러를 불합리하게 늘리고 있습니다. 게다가 대부분의 뷰 컨트롤러가 네트워킹과 같은 공통 기능을 추가하여 부풀게되어 있습니다. 또한 모바일 애플리케이션에서 가장 중요한 측면 중 하나인 상태 관리도 쉽지 않았습니다. 애플리케이션 상태의 저장 및 관리는 대부분 개발자에게 맡겨져 있어 결과적으로 모든 것이 기본적으로 뷰 컨트롤러에 저장되었습니다.
 
@@ -42,7 +63,18 @@ UIKit 개발자로서, 저는 처음에는 UIKit 세계에서 잘 작동하는 �
 
 ## SwiftUI 도입
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2019년에 Apple은 새로운 UI 프레임워크인 SwiftUI를 소개했습니다. SwiftUI는 UIKit과 매우 다릅니다. UIKit은 명령형인 반면, SwiftUI는 선언적입니다. 개발자가 뷰를 직접 처리하는 대신, UI가 어떻게 보여야 하는지를 지정하고 프레임워크가 나머지를 처리합니다. 개발자가 상태 관리를 직접 처리하는 대신 SwiftUI에는 내장된 상태 관리가 있으며 상태 변경 시 뷰 업데이트를 자동으로 처리합니다. UIKit에서 뷰 구성이 어려운 반면, SwiftUI에서는 기본적인 것입니다.
 
@@ -52,7 +84,18 @@ UIKit 개발자로서, 저는 처음에는 UIKit 세계에서 잘 작동하는 �
 
 결국, 디자인 패턴은 문제를 해결하기 위해 존재해야 하며, 가능한 문제를 만들어서는 안 됩니다. UIKit 친화적 아키텍처는 대규모 뷰 컨트롤러 문제를 해결하기 위해 고안된 것인 반면, 이 문제가 SwiftUI에서는 더 이상 존재하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 두 번째 단계: 가장 추천되는 SwiftUI 디자인 패턴 선택: MVVM
 
@@ -62,7 +105,18 @@ UIKit 개발자로서, 저는 처음에는 UIKit 세계에서 잘 작동하는 �
 
 이 접근 방식에는 장단점이 있어요. 장점은 MVVM이 비즈니스 로직을 뷰에서 분리하여 이식 가능하고 테스트하기 쉽게 만든다는 것입니다. 그러나 SwiftUI에서 MVVM을 사용하는 단점은 많으며, 내 의견으로는 장점을 상회한다고 생각해요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 개발자들은 ViewModels 내에서 withAnimation, @FocusState, @FetchRequest 등과 같은 SwiftUI 기능을 사용할 수 없습니다. 이겈 view models는 그냥 보통의 클래스이기 때문에 그들은 뷰가 아니며, 따라서 뷰의 기능 세트를 활용할 수 없습니다. 이러한 제한을 피하기 위해 우회 방법을 사용하는 것은 번거로울 수 있습니다.
 - SwiftUI 뷰 간의 데이터 전달은 도전적인 과제가 됩니다. 왜냐하면 이제는 바인딩을 쉽게 사용하거나 뷰 모델 내에서 환경에서 정보에 액세스할 수 없기 때문입니다(@Environment 또는 @EnvironmentObject를 통해).
@@ -75,7 +129,18 @@ UIKit 개발자로서, 저는 처음에는 UIKit 세계에서 잘 작동하는 �
 
 그렇다면 이제 어떻게 해야 할까요? SwiftUI와 같이 상대적으로 새로운 프레임워크를 사용하는 것은 최상의 방법이 아직 확립되지 않았다는 것이 멋진 점이자 무서운 점입니다. 다른 사람들이 당신을 위해 길을 밟은 사례를 더 찾아보면, 당신이 하나의 길을 밟는이라는 것을 더 많이 깨닫게 됩니다. 이를 염두에 두고, 우리가 나름대로의 방법을 제시해야 하고, 우리만의 아키텍처 패턴을 처음부터 개발해야 할 것이라는 것을 깨달았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 발 물러서서 생각을 해보면, 결국 소프트웨어 아키텍처의 목적은 무엇인가요? 아무튼 그냥 해야 하는 건가요? 아키텍처 신에게 기쁘기 위해서요?
 
@@ -87,7 +152,18 @@ UIKit 개발자로서, 저는 처음에는 UIKit 세계에서 잘 작동하는 �
 - DRY 원칙 준수 — 일반적인 작업들은 자체 유틸리티로 정리되어야 합니다
 - 이 패턴은 SwiftUI를 보완하고 프레임워크와 대립하지 않아야 합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## MVSU (Model-View-Service-Utility)
 
@@ -100,7 +176,18 @@ UIKit 개발자로서, 저는 처음에는 UIKit 세계에서 잘 작동하는 �
 
 ![이미지](/assets/img/2024-06-22-ChoosingaDesignPatternforyourSwiftUIApp_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 구성 요소 유형에 대해 자세히 설명하겠습니다:
 
@@ -110,7 +197,18 @@ UIKit 개발자로서, 저는 처음에는 UIKit 세계에서 잘 작동하는 �
 
 단일 책임 원칙을 준수하는 한, 이러한 유틸리티는 매우 집중되어 있어야 합니다. 한 가지 유형의 작업이나 몇 가지 밀접한 관련 작업만 수행해야 합니다. 서비스는 그들의 상위 수준 기능을 수행하기 위해 유틸리티를 활용합니다. 이러한 작업을 유틸리티로 이동함으로써 코드베이스를 DRY(반복하지 마세요) 상태로 유지하고 서비스가 독자적 도메인에만 집중하도록 합니다. 여기서의 규칙은 여러 서비스가 동일한 논리를 수행한다면, 아마도 유틸리티로 이동해야 한다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 class NetworkUtility {
@@ -140,8 +238,18 @@ MVC, MVP, MVVM, VIPER과 같은 많은 패턴은 뷰별로 비즈니스 로직�
 
 도메인별로 비즈니스 로직을 분리하는 것에는 몇 가지 장점이 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 관심사 분리가 더 잘 이루어집니다: 뷰 모델과 같은 중재자는 특정 뷰에 연결되도록 설계되어 있기 때문에 해당 뷰에 대해 많은 정보를 알게 됩니다. 도메인별로 분리하면 서비스가 자신의 도메인에 대해 많은 지식을 갖지만, 뷰에 대해서는 거의 또는 전혀 알지 못합니다. 이것은 다른 뷰 모델과 달리 특정 뷰를 고려하여 설계되지 않았기 때문에 더 이동성이 있습니다.
 - 논리적으로 관련된 코드는 논리적으로 그룹화됩니다. Donut을 생성하고 삭제하는 뷰 각각을 가지는 MVVM 앱의 경우, 관련성이 높은 이 코드도 2개의 다른 뷰모델에 들어가게 되지만, MVSU에서는 해당 코드가 단일 DonutService에 모두 들어가 관련된 코드를 유지하기 쉽게 만듭니다.
@@ -173,7 +281,18 @@ class OrderService {
 
 ## Views
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언급한 대로, MVSU는 뷰 구성을 권장하여 큰 뷰를 작은 뷰로 나누고, 각 뷰를 가늠있고 좁게 중점을 두어 과거의 방대한 뷰 컨트롤러 문제를 피합니다.
 
@@ -192,7 +311,7 @@ struct OrderView: View {
     @State private var itemsInCart: [ItemModel]
     @State private var orderAwaitingPayment: OrderModel?
     @State private var error: Error?
-    
+
     var body: some View {
         VStack {
             ForEach(availableItems) { availableItem in
@@ -224,17 +343,39 @@ struct OrderView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모델
 
 이 부분은 패턴 중 가장 독특하지 않은 부분입니다. 모델은 데이터 유형과 필요한 모든 지속성 레이어(예: Core Data, SwiftData, Realm 등)를 포함합니다. MVSU에서 SwiftUI의 기능 세트를 유지하는 것이 중요하므로 뷰는 SwiftUI의 프로퍼티 래퍼(예: @FetchRequest 또는 @Query)를 통해 모델과 직접 통신할 수 있어야 합니다.
-  
+
 # 결론
 
 내 의견으로는 SwiftUI의 도입은 iOS 개발 영역에서 가장 중요한 변화 중 하나입니다. SwiftUI는 그냥 새로운 UI 프레임워크가 아닙니다. UIKit과는 매우 다르기 때문에 앱을 구축하는 전체 방식에 대해 다시 생각하도록 요구한다고 생각합니다. 아마도 iOS 커뮤니티가 처음부터 아키텍처적 결정을 왜 내리는지에 대해 다시 한번 고민할 때가 되었을지도 모릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디자인 패턴을 선택하고 결국 만드는 과정을 거치며 왜 처음부터 일반적인 UIKit 디자인 패턴을 사용했는지 깨달았어요. 제 의견으로는 대부분의 앱에서 달성한 복잡성 수준에 UIKit이 잘 맞지 않아서, 이로 인해 우리는 특별히 설계된 아키텍처 패턴으로 문제를 해결해야 했어요. SwiftUI는 같은 문제가 없어서 그런 해결책이 필요하지 않아요.
 

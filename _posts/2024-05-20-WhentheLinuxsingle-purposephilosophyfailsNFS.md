@@ -3,13 +3,12 @@ title: "리눅스의 단일 용도 철학이 실패할 때 NFS"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhentheLinuxsingle-purposephilosophyfailsNFS_0.png"
 date: 2024-05-20 17:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WhentheLinuxsingle-purposephilosophyfailsNFS_0.png
 tag: Tech
 originalTitle: "When the Linux single-purpose philosophy fails: NFS"
 link: "https://medium.com/@raduzaharia/when-the-linux-single-purpose-philosophy-fails-nfs-512ccd21d98c"
 ---
-
 
 ![2024-05-20-WhentheLinuxsingle-purposephilosophyfailsNFS_0](/assets/img/2024-05-20-WhentheLinuxsingle-purposephilosophyfailsNFS_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@raduzaharia/when-the-linux-single-purpose-philosophy-
 
 또 다른 유명한 Linux 철학은 모든 것은 파일이라는 것입니다. 이들은 함께 가기 때문에 만약 모든 것이 파일이라면, 파일에 일반적으로 적용되는 모든 도구를 모든 것에 적용할 수 있습니다. 네트워크 리소스는 파일 명령을 사용하여 읽고, 프로세스 간 통신은 파일로 처리되며, Linux 프로세스에는 고유한 가상 파일 시스템이 있으며, 네트워크 공유도 물리적 파일 시스템처럼 마운트됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 맞게 했나요?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@raduzaharia/when-the-linux-single-purpose-philosophy-
 
 이겪어보기에는 멋져 보이지만, 개발자는 작고 간단한 범용 파일 읽기 프로그램을 작성했으니 일이 끝났다고 생각하며 스스로를 칭찬할 수 있겠지만, 지나치게 나아가면 또 다른 철학, 이번에는 원치 않는 철학으로 전환될 수 있습니다: 모든 것이 모두로 가듯이. 나는 공구상자를 열고 렌치, 망치, 작은 삽, 가위를 찾아내어 생각합니다. “많은 못이 있으니 망치가 최선일 것입니다”. 정원에 꽃들에 물을 주어야 한다는 사실을 무시하더라도, 망치 위에 물을 들어올리며 균형을 맞춰주어 모은 물방울이 떨어지지 않도록 조심스럽게 운반할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리눅스 세계에서는 이런 일반화로 많은 헷갈림을 일으키기도 했죠. 모든 사람들을 위해 모든 것을 되게 하려다 보니 복잡한 파일 구조가 나타나고, 최신 기능을 계속 지원하다 보니 90년대에 처음 설계된 파일에 잘 매치되지 않는 기능이 포함되었죠.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@raduzaharia/when-the-linux-single-purpose-philosophy-
 
 리눅스 시스템에서 네이티브 파일 공유는 NFS(Network File System)로 이루어집니다. 목적은 무엇일까요? 간단하고 독특합니다: 네트워크에서 파일을 공유하는 것. 구현 방식은 어떨까요? 개별적인 목적을 가졌습니다: 오로지 공유만. 이는 네트워크를 통해 공유 폴더를 다른 컴퓨터의 로컬 파일 시스템으로 마운트할 수 있도록 합니다. 이후에는 로컬 리눅스가 다른 파일과 마찬가지로 공유를 관리합니다. 그때에는 이 정도면 충분했죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구현? 믿기 힘들지만, 여기에 있습니다. NFS는 마운트 가능한 형식으로 공유물을 게시하는 것만 다루게 됩니다. 내 서버에 당신이 필요로 하는 파일이 있으므로, 나는 NFS를 구성하여 그것을 게시하고 당신은 마운트 명령을 사용하여 그것을 당신의 끝에 로드할 수 있게 될 것입니다. 모든 것이 쉬워 보이고 사소해 보입니다.
 
@@ -49,17 +81,39 @@ link: "https://medium.com/@raduzaharia/when-the-linux-single-purpose-philosophy-
 
 ![이미지](/assets/img/2024-05-20-WhentheLinuxsingle-purposephilosophyfailsNFS_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-파일이 정확히 동일한 권한으로 내 컴퓨터로 이동했습니다. 파일 소유자는 사용자 1000입니다? 당신의 컴퓨터에서도 동일할 것입니다. 내 컴퓨터에서 소유자가 1000인가 radu? 그럼 당신 컴퓨터에서는 소유자 1000이 누구인가요? 잘 모르겠어요. 그리고 NFS는 신경 쓰지 않았죠. 이것은 내가 자신의 사용자 1000을 만들고 다른 컴퓨터에서 공유를 마운트하고 그 파일에 대해 마치 내 파일인 것처럼 조작할 수 있다는 것을 의미합니다. 이것은 주요 보안 취약성이며 쉽게 악용할 수 있는 문제이며 중요한 결과를 초래할 수 있는 것입니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+파일이 정확히 동일한 권한으로 내 컴퓨터로 이동했습니다. 파일 소유자는 사용자 1000입니다? 당신의 컴퓨터에서도 동일할 것입니다. 내 컴퓨터에서 소유자가 1000인가 radu? 그럼 당신 컴퓨터에서는 소유자 1000이 누구인가요? 잘 모르겠어요. 그리고 NFS는 신경 쓰지 않았죠. 이것은 내가 자신의 사용자 1000을 만들고 다른 컴퓨터에서 공유를 마운트하고 그 파일에 대해 마치 내 파일인 것처럼 조작할 수 있다는 것을 의미합니다. 이것은 주요 보안 취약성이며 쉽게 악용할 수 있는 문제이며 중요한 결과를 초래할 수 있는 것입니다.
 
 단순성은 문제를 만들었습니다. 두 가지 해결책이 있는 문제: 전체 네트워크의 모든 사용자를 제어하거나(인터넷이 종종 전체 네트워크인 때가 있으므로 항상 할 수 없을 수도 있음) 사용자를 "매핑"함으로써 복잡성을 회피할 수 있습니다. 사용자 매핑이란 원격 액세스를 로컬 시스템의 기존 및 잘 구성된 사용자로 간주하는 것을 의미합니다. 예를 들어, 사용자 1000이 특정 공유를 마운트하면 그들의 모든 요청을 파일에 대한 잘 알려진 권한을 갖는 로컬 사용자 2000에서 오는 것으로 해석합니다.
 
-파일 공유 도구를 번거롭게 하고 싶지 않습니다. 그냥 파일을 공유하려고 하는 것뿐입니다. 사용자는 상관없어야 합니다. 사용자는 운영 체제에 의해 처리되어야하며 나에 의해 처리되어서는 안 됩니다. 그래서 나는 사용자에 대해 거짓말을 하고 다른 것으로 만들어버립니다. 나는 무능함을 다른 문제로 대체하고 있는지 궁금해하지 않습니다. 모든 것이 망치인데, 망치가 필요합니다. 아직 망치를 다루고 있는지 궁금해할까요? 아니요, 그냥 망치를 사용하고 싶어합니다. 그래서 새로운 종류의 망치로 작업하기 위해 망치를 보강합니다. 
+파일 공유 도구를 번거롭게 하고 싶지 않습니다. 그냥 파일을 공유하려고 하는 것뿐입니다. 사용자는 상관없어야 합니다. 사용자는 운영 체제에 의해 처리되어야하며 나에 의해 처리되어서는 안 됩니다. 그래서 나는 사용자에 대해 거짓말을 하고 다른 것으로 만들어버립니다. 나는 무능함을 다른 문제로 대체하고 있는지 궁금해하지 않습니다. 모든 것이 망치인데, 망치가 필요합니다. 아직 망치를 다루고 있는지 궁금해할까요? 아니요, 그냥 망치를 사용하고 싶어합니다. 그래서 새로운 종류의 망치로 작업하기 위해 망치를 보강합니다.
 
 로컬 파일은 로컬 사용자와 같지 않기 때문에 네트워크 파일도 같지 않습니다. 네트워크 파일은 많은 질문에 대답하는 객체입니다. 이 파일은 무엇이며, 내용은 무엇이며, 작업 권한은 무엇이며, 로컬 컴퓨터에서 파일이 얼마나 떨어져 있는지, 현재 파일에 작업 중인 협업자가 있는지, 서버에서 파일 편집을 위해 파일이 잠기는 사람은 누군지, 이 파일을 누구에게 제공할 수 있는지, 공유 만료일이 언제인지 등의 질문에 답하게 됩니다. 모든 이러한 정보는 일반 파일 메타데이터에 기록되지 않습니다. 이 모든 것이 파일 공유 시스템인 이 경우 NFS의 역할입니다. 그러나 NFS는 이 모든 것을 할 수 없었습니다. 이는 파일이 불충분하다는 의미는 아니지만 확실히 NFS를 만들어 냈습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## NFS와 SMB 비교
 
@@ -69,7 +123,18 @@ link: "https://medium.com/@raduzaharia/when-the-linux-single-purpose-philosophy-
 
 SMB에는 각자의 사용자 집합이 있었습니다. 파일을 얻고 싶다면, 적절한 자격 증명으로 SMB 서버에 로그인해야 했습니다. 이 자격 증명은 정확히 본인이 어떤 액세스 권한을 갖고 어디까지 갈 수 있는지를 정의했습니다. 그리고 네트워크 전체에서 통일된 사용자 시스템이 필요하지 않았습니다. 물론 가능하다면 Active Directory 서버로 사용할 수도 있었지만, 필수는 아니었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 통합 사용자 시스템에 대해 조금 이야기해 봅시다. NFS가 사용자를 공유하기 위한 의미 있게 사용하려면 왜 네트워크에 구현하지 않을까요? 네트워크에서 동일한 사용자 집합을 가지려면 식별 서버가 필요합니다. 네트워크에서 Linux 로그인을 대신하는 간단한 LDAP 구현을 사용하거나 각 Linux 시스템에 수동으로 구성해야 하지만 Windows 또는 Mac과 호환되지 않는 LDAP 구현을 사용할 수 있습니다. 또는 모든 것을 포함하지만 로그인 프로세스 전체를 대신하는 무거운 시스템을 사용하여 모든 디바이스 및 사용자를 등록할 수 있습니다.
 

@@ -3,13 +3,12 @@ title: "고급 RAG 08 Self-RAG"
 description: ""
 coverImage: "/assets/img/2024-05-20-AdvancedRAG08Self-RAG_0.png"
 date: 2024-05-20 21:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AdvancedRAG08Self-RAG_0.png
 tag: Tech
 originalTitle: "Advanced RAG 08: Self-RAG"
 link: "https://medium.com/ai-advances/advanced-rag-08-self-rag-c0c5b5952e0e"
 ---
-
 
 이 기사는 흔한 시나리오로 시작됩니다: 공개 시험을 보는 경우입니다. 일반적으로 두 가지 전략을 사용합니다:
 
@@ -20,7 +19,18 @@ link: "https://medium.com/ai-advances/advanced-rag-08-self-rag-c0c5b5952e0e"
 
 하지만, 방법 2는 고전적인 RAG 프로세스를 보여주며, 방법 1은 자체 RAG 프로세스를 대표합니다. 이에 대해 이 기사에서 더 자세히 다룰 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 개요
 
@@ -30,7 +40,18 @@ link: "https://medium.com/ai-advances/advanced-rag-08-self-rag-c0c5b5952e0e"
 
 Self-RAG는 세 단계로 구성되어 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 필요한 경우 검색: 모델이 검색을 요구하는 경우, 예를 들어 "미국 주가 이름을 어떻게 얻었습니까?" (그림 1의 오른쪽 상단)와 같은 쿼리가 있을 때, 모델의 출력에는 [검색] 토큰이 포함됩니다. 이는 쿼리와 관련된 내용을 검색해야 함을 나타냅니다. 반면에 "최고의 여름 휴가에 대해 에세이를 쓰세요" (그림 1의 오른쪽 아래)와 같이 물어볼 때, 모델은 검색 없이 직접 답변을 생성하도록 선택합니다.
 - 병렬 생성: 모델은 프롬프트와 검색된 콘텐츠를 모두 사용하여 출력을 생성합니다. 이 과정에서 세 가지 유형의 반영 토큰이 검색된 콘텐츠의 관련성을 나타냅니다.
@@ -42,7 +63,18 @@ Self-RAG는 세 단계로 구성되어 있습니다:
 
 Self-RAG 프레임워크의 RAG와 비교했을 때, Self-RAG 프레임워크의 차이는 생성 중 더 정확한 제어를 위해 반영 토큰을 사용한다는 것입니다. 그림 2에서 보여집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-AdvancedRAG08Self-RAG_1.png" />
 
@@ -55,7 +87,18 @@ Self-RAG 프레임워크의 RAG와 비교했을 때, Self-RAG 프레임워크의
 
 RAG에서 검색은 상태에 관계없이 항상 처음에 수행되는 고정된 과정입니다. 반면 self-RAG는 반사 토큰을 도입하여 LLM을 더 적응적이고 지능적으로 만듭니다. LLM이 텍스트를 생성하다가 불확실성이 발생하는 부분에 도달하면 반사 토큰에서 일시 정지하여 신속하고 정확한 검색을 수행한 후 새로 습득한 정보를 사용하여 생성을 재개합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 코드 설명
 
@@ -65,7 +108,18 @@ self-RAG는 오픈 소스이며, Langchain과 LlamaIndex에는 각각의 구현�
 
 ## 환경 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 환경을 설정하세요.
 
@@ -90,8 +144,18 @@ llama-index                             0.10.20
 llama-index-core                        0.10.20.post2
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import os
@@ -104,7 +168,7 @@ from pathlib import Path
 
 
 # 옵션: SelfRAGPack 다운로드
-# 첫 실행 시 SelfRAGPack을 다운로드해야 합니다. 
+# 첫 실행 시 SelfRAGPack을 다운로드해야 합니다.
 # 다음 실행부터는 이 부분을 주석 처리할 수 있습니다.
 from llama_index.core.llama_pack import download_llama_pack
 download_llama_pack(
@@ -199,7 +263,18 @@ llama_print_timings:       total time =   13076.88 ms /    56 tokens
 최상의 답변 선정: [관련]가
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 코드를 이해하는 핵심은 SelfRAGQueryEngine 클래스의 구현에 있습니다. 이제 이 클래스를 자세히 살펴보겠습니다.
 
@@ -237,7 +312,18 @@ class SelfRAGQueryEngine(CustomQueryEngine):
         self.retriever = retriever
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 다음으로 쿼리 기능에 대해 설명하겠습니다. 주요 프로세스는 아래 그림 3에 표시되어 있습니다:
 
@@ -268,7 +354,7 @@ class SelfRAGQueryEngine(CustomQueryEngine):
             if self.verbose:
                 print_text("평가 시작\n", color="blue")
 
-            # 그림 1의 단계 2 및 3, 병렬로 생성하고 평가합니다 
+            # 그림 1의 단계 2 및 3, 병렬로 생성하고 평가합니다
             # (코드에서 병렬화를 구현하지는 않음)
             critic_output = self._run_critic(paragraphs)
 
@@ -293,9 +379,20 @@ class SelfRAGQueryEngine(CustomQueryEngine):
         return Response(response=str(answer), source_nodes=source_nodes)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-위의 코드에서 우리는 그림 1의 모든 세 단계가 표현된 것을 확인할 수 있습니다. 그러나 LlamaIndex의 코드는 병렬 처리를 구현하지 않았습니다. 더 자세한 정보는 관심 있는 독자들이 self._run_critic 함수를 살펴볼 수 있습니다. 해당 함수는 다양한 반사 토큰에 해당하는 점수를 처리합니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+위의 코드에서 우리는 그림 1의 모든 세 단계가 표현된 것을 확인할 수 있습니다. 그러나 LlamaIndex의 코드는 병렬 처리를 구현하지 않았습니다. 더 자세한 정보는 관심 있는 독자들이 self.\_run_critic 함수를 살펴볼 수 있습니다. 해당 함수는 다양한 반사 토큰에 해당하는 점수를 처리합니다.
 
 # Llama2-7B 모델 훈련 방법
 
@@ -303,13 +400,35 @@ class SelfRAGQueryEngine(CustomQueryEngine):
 
 ## 훈련 목표
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 훈련 과정에서는 평가 모델 C와 생성 모델 M 두 가지 모델이 필요합니다. 평가 모델 C는 모델 M이 필요로 하는 감독 데이터를 생성합니다.
 
 그러나 추론 과정에서는 모델 M만 사용되며 모델 C는 필요하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 비평가 모델 C
 
@@ -319,10 +438,20 @@ class SelfRAGQueryEngine(CustomQueryEngine):
 
 훈련 데이터 D_critic를 얻으면 표준 조건부 언어 모델을 기반으로 훈련 목표를 구성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-![image](/assets/img/2024-05-20-AdvancedRAG08Self-RAG_3.png) 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+![image](/assets/img/2024-05-20-AdvancedRAG08Self-RAG_3.png)
 
 비평가 모델 C는 어떤 언어 모델로도 초기화할 수 있습니다. 예를 들어 생성자와 동일한 모델로 초기화할 수 있습니다. 예를 들면 Llama2-7B와 같은 모델을 사용할 수 있습니다.
 
@@ -330,8 +459,18 @@ class SelfRAGQueryEngine(CustomQueryEngine):
 
 Figure 4는 훈련 데이터를 수집하는 구체적인 과정을 보여줍니다. 입력-출력 쌍 (x, y)가 주어지면 self-RAG는 검색 및 비평가 모델을 사용하여 원래의 출력 y를 확장하고 지도 데이터를 생성합니다. y의 각 세그먼트 yt에 대해:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-AdvancedRAG08Self-RAG_4.png" />
 
@@ -341,7 +480,18 @@ Figure 4의 모든 조건 판단은 비평가 모델 C를 통해 실행됩니다
 
 훈련 데이터 D_gen을 획득한 후, 다음 토큰 예측 표준 목적 함수를 다음과 같이 구성할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-AdvancedRAG08Self-RAG_6.png)
 
@@ -351,7 +501,18 @@ M 생성기는 결과뿐만 아니라 반영 토큰도 예측해야 합니다.
 
 일반적으로 self-RAG는 RAG 프로세스를 강화하는 새로운 관점을 제공합니다. 그러나 더 복잡한 훈련 과정이 필요하며 생성 단계 중에 여러 레이블 생성과 판단이 필요하기 때문에 추론 비용이 증가하기 때문에 실시간 성능이 필요한 프로젝트에는 중요한 영향을 줄 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 이 프레임워크 내에서 최적화할 여지가 많이 있습니다. 더 많은 토론과 혁신을 일으키기 위해 몇 가지 포인트를 공유하겠습니다:
 
@@ -364,7 +525,18 @@ M 생성기는 결과뿐만 아니라 반영 토큰도 예측해야 합니다.
 
 본문은 직관적인 예시로 시작하여 Self-RAG의 기본적인 과정을 소개하고 코드 설명을 보완하는 내용을 담고 있습니다. 또한 제 생각과 통찰을 공유하였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RAG 기술에 관심이 있다면, 내 다른 기사들도 살펴보세요.
 

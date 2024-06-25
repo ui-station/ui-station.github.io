@@ -3,14 +3,12 @@ title: "마법같은 멀티플랫폼 하나의 코드베이스로 세 플랫폼 
 description: ""
 coverImage: "/assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_0.png"
 date: 2024-06-19 14:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_0.png
 tag: Tech
 originalTitle: "Multiplatform Magic: One Codebase, Three Platforms"
 link: "https://medium.com/proandroiddev/exploring-firebase-authentication-in-compose-multiplatform-8a662a30ec8e"
 ---
-
-
 
 ![이미지](/assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_0.png)
 
@@ -20,8 +18,18 @@ Compose Multiplatform은 개발자에게 뛰어난 가능성의 세계를 열어
 
 우리는 Android, iOS 및 Web 플랫폼용 다양한 Firebase SDK가 있음을 알고 있지만 Compose Multiplatform용 안정적인 SDK는 없습니다. 또한, 다양한 Compose Multiplatform 예제에서 사용 사례를 보여주기 위해 REST API를 사용하는 것을 보았습니다. 따라서 하나의 코드베이스를 사용하고 여러 플랫폼을 대상으로 하기 위해 Firebase REST API를 인증에 사용하는 것을 선호했습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 준비물:
 
@@ -34,7 +42,18 @@ Compose Multiplatform은 개발자에게 뛰어난 가능성의 세계를 열어
 
 Compose Multiplatform 프로젝트를 생성하려면 Kotlin Multiplatform Wizard를 사용할 수 있습니다. 이는 우리가 타깃팅하는 플랫폼을 선택할 수 있게 해줍니다. 이 프로젝트에서는 Android, iOS 및 데스크톱 플랫폼을 선택할 것입니다. 플랫폼을 선택하고 나면 프로젝트를 다운로드하여 선호하는 IDE에서 열 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_1.png)
 
@@ -44,7 +63,18 @@ Compose Multiplatform 프로젝트를 생성하려면 Kotlin Multiplatform Wizar
 
 ![image](/assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 3: Firebase 프로젝트 구성하기.
 
@@ -54,10 +84,20 @@ Firebase 프로젝트를 구성하면 프로젝트 설정을 방문하여 Fireba
 
 # 단계 4: 프로젝트에서 Ktor 구성하기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kotlin의 Ktor 프레임워크는 강력하고 유연한 HTTP 클라이언트를 제공하여 외부 API와의 상호 작용을 원활하게 만들어줍니다. 구현에 앞서 필요한 종속성이 포함된 Kotlin 프로젝트를 설정했는지 확인해보세요. Ktor의 클라이언트 라이브러리를 포함하여 프로젝트에 Ktor 클라이언트를 추가할 수 있습니다. 이를 위해 libs.versions.toml 파일 내 gradle 폴더에 다음 종속성을 포함하면 됩니다.
-
 
 [versions]
 ...
@@ -80,27 +120,35 @@ jetbrainsCompose = { id = "org.jetbrains.compose", version.ref = "compose-plugin
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 
-
 libs.versions.toml 파일 내의 라이브러리를 추가했으면, build.gradle.kts 파일의 composeApp 내부에 종속성을 추가하고 프로젝트를 동기화해주면 됩니다:
 
-
 androidMain.dependencies {
-    ...
-    implementation(libs.ktor.client.okhttp)
+...
+implementation(libs.ktor.client.okhttp)
 }
 commonMain.dependencies {
-    ...
-    implementation(libs.ktor.client.core)
-    implementation(libs.ktor.client.content.negotiation)
-    implementation(libs.ktor.serialization.kotlinx.json)
+...
+implementation(libs.ktor.client.core)
+implementation(libs.ktor.client.content.negotiation)
+implementation(libs.ktor.serialization.kotlinx.json)
 }
 desktopMain.dependencies {
-    ..
-    implementation(libs.ktor.client.okhttp)
+..
+implementation(libs.ktor.client.okhttp)
 }
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 5: Firebase REST API 호출하기
 
@@ -116,7 +164,18 @@ private val httpClient = HttpClient() {
 
 ## 사용자 생성 정복하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 새로운 사용자를 생성해 봅시다! https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=$'API_KEY' 엔드포인트로 Ktor 클라이언트 호출을 만들어 보겠습니다. 사용자 데이터(이메일 및 비밀번호)를 코틀린 직렬화를 사용하여 JSON 형식으로 직렬화해야 합니다. 데이터와 함께 POST 요청을 보내고 Firebase 응답을 기다리세요. 사용자가 성공적으로 생성되면 응답을 구문 분석하여 사용자 ID 및 기타 관련 정보를 추출하세요.
 AuthenticationViewModel.kt에 추가된 signUp() 메서드의 아래 코드 스니펫을 확인해보세요.
@@ -156,7 +215,18 @@ fun signUp(
 이제 로그인에 도전해 봅시다! 사용자 생성과 유사하게, https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=$'API_KEY' 엔드포인트로의 Ktor 클라이언트 호출을 구성해보세요. 다시 한번 사용자 자격 증명(이메일 및 비밀번호)을 직렬화하고 POST 요청을 보내세요. 응답을 구문 분석하여 ID 토큰을 얻어 사용자 신원을 확인하고 보호된 리소스에 액세스하는 데 필수적인 요소를 확보하세요.
 AuthenticationViewModel.kt에 추가된 login() 메서드의 아래 코드 스니펫을 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 fun login(
@@ -190,8 +260,18 @@ SQLDelight는 플랫폼에 중립적인 SQL 쿼리를 작성하기 위한 강력
 
 ## SQLDelight 종속성 설정
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 gradle 폴더 내 libs.versions.toml 파일에 필요한 SQLDelight 종속성 및 플러그인을 추가해야 합니다.
 
@@ -234,7 +314,18 @@ plugins {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막 단계로는 composeApp build.gradle.kts 파일에서 SQLDelight를 구성해야 합니다. 여기서는 필요한 플랫폼에 따라 종속성을 추가하고 SQLDelight 데이터베이스의 이름을 추가할 것입니다. 매개변수가 포함된 데이터베이스 목록을 포함하는 sqlDelight 블록을 맨 끝에 볼 수 있을 것입니다.
 
@@ -260,9 +351,9 @@ kotlin {
         }
     }
 
-    
+
     jvm("desktop")
-    
+
     listOf(
         iosX64(),
         iosArm64(),
@@ -276,7 +367,7 @@ kotlin {
             linkerOpts.add("-lsqlite3")
         }
     }
-    
+
     sourceSets {
         val desktopMain by getting
 
@@ -348,8 +439,18 @@ compose.desktop {
 다음 단계는 모든 필요한 SQL 쿼리를 포함하는 .sq 파일을 작성하는 것입니다. 기본적으로 SQLDelight 플러그인은 sqldelight 폴더 내의 패키지 폴더에서 .sq를 읽습니다. 해당 폴더는 직접 commainMain 폴더 내에 있을 것입니다.
 Database.sq 파일이 위치하는 폴더 구조 스크린샷은 아래에서 확인하실 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_4.png" />
 
@@ -359,8 +460,18 @@ Database.sq 파일이 위치하는 폴더 구조 스크린샷은 아래에서 �
 
 ## 데이터베이스 드라이버 생성
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SQLDelight은 SQLite 드라이버의 여러 플랫폼별 구현을 제공하므로 각 플랫폼에 대해 별도로 생성해야 합니다. 이를 기대 선언과 실제 선언을 사용하여 수행할 수 있습니다.
 
@@ -378,7 +489,18 @@ expect class DriverFactory {
 
 이제 각 대상 플랫폼에 대해 이를 구현해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안드로이드에서는 AndroidSqliteDriver 클래스가 SQLite 드라이버를 구현합니다.
 그래서 composeApp/src/androidMain/kotlin에서 패키지를 만들어 그 안에 DriverFactory.kt 클래스를 생성해주세요.
@@ -413,7 +535,18 @@ class MainActivity : ComponentActivity() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS에서 SQLite 드라이버 구현은 NativeSqliteDriver 클래스입니다.
 그래서 composeApp/src/iosMain/kotlin에 패키지를 만들고 내부에 DriverFactory.kt 클래스를 만들어 주세요.
@@ -443,7 +576,18 @@ fun MainViewController() = ComposeUIViewController {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데스크톱 환경에서는 SQLite 드라이버 구현이 JdbcSqliteDriver 클래스입니다.
 그래서 composeApp/src/desktopMain/kotlin에 패키지를 만들고 그 안에 DriverFactory.kt 클래스를 생성해주세요.
@@ -480,7 +624,18 @@ fun main() = application {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-MultiplatformMagicOneCodebaseThreePlatforms_5.png" />
 
@@ -490,16 +645,27 @@ fun main() = application {
 @Composable
 fun App(sqlDriver: SqlDriver) {
     val authenticationViewModel = AuthenticationViewModel(sqlDriver)
-    
+
     MaterialTheme {
-      ...   
+      ...
     }
 }
 ```
 
 # 단계 7: SQLDelight 쿼리 구성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 단계에서는 Firebase Authentication API에서 받은 토큰을 저장하여 사용자 세션을 유지하기 위해 insertUser 쿼리를 사용할 예정입니다. 또한 로컬 데이터베이스에 저장된 토큰을 얻기 위해 selectAllUser 쿼리를 사용할 것입니다. AuthenticationViewModel.kt 내에서 먼저 데이터베이스를 초기화할 것입니다.
 
@@ -521,7 +687,18 @@ internal fun storeUserDetails(response: AuthResponse) {
     }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세션 유지를 위해 시스템에 이미 토큰이 로컬 데이터베이스에 있는지 확인해야 합니다. 그래서 우리는 selectAllUsers 쿼리를 사용하여 로컬 데이터베이스에 저장된 토큰을 확인하는 checkSession()을 생성할 것입니다.
 
@@ -541,7 +718,18 @@ internal fun checkSession(onCompletion: onCompletion) {
 
 # 데모
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래의 Github 링크에서 전체 코드를 확인해보세요.
 

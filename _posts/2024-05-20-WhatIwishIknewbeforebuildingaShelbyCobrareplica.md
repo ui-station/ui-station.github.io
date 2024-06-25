@@ -3,13 +3,12 @@ title: "셸비 코브라 레플리카를 제작하기 전에 알고 있었으면
 description: ""
 coverImage: "/assets/img/2024-05-20-WhatIwishIknewbeforebuildingaShelbyCobrareplica_0.png"
 date: 2024-05-20 19:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WhatIwishIknewbeforebuildingaShelbyCobrareplica_0.png
 tag: Tech
 originalTitle: "What I wish I knew before building a Shelby Cobra replica"
 link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-shelby-cobra-replica-part-1-3-684bc822104c"
 ---
-
 
 대부분의 소년들처럼, 화려한 화염 데칼과 인상적인 배기 파이프가 달린 첫 번째 핫 휠을 받은 후에 나는 자동차의 운전대 뒤에 앉아보고 싶었습니다. 90년대 베네수엘라에서 자랐는데, 대부분의 차량은 실용적이며 명목상의 부자나 지위의 상징이 아니었기 때문에 대부분의 사람들의 차량은 자주 고장이 났습니다. 해변으로 가는 길에서 오버히팅하는 경험이 있었고, "물을 더 넣어!" 또는 "라디에이터를 열어!"라는 소리가 들렸습니다. 저는 특히 아버지의 "이스즈 트루퍼" (베네수엘라에서 "카리베"로 알려짐)를 기억합니다. 이 차는 2.3리터 4기통 96마력 엔진과 풀 타임 4륜 구동(4WD)을 갖춘 풀 사이즈 SUV였습니다. 이 차량에서 2WD와 4WD 사이의 전환은 같이 타는 사람 좌석에 더 가까운 두 번째 작은 쉬프트에서 이루어졌습니다.
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 나는 커지면서 엔지니어링에 더 관심을 가졌는데, 나는 모든 기회를 이용하여 스크류 드라이버를 돌려보았습니다. 나는 엄마의 집에서 나사가 있는 모든 것을 분해하는 괴로운 단계를 거친 후에 그것을 다시 조립하는 법을 항상 알지 못한 채였습니다. 엔지니어들로 가득한 가족과 내 명백한 성향 때문에, 난 기계 공학 전공에 완전히 적합한 사람으로 여겨졌기에 전기 공학으로 컴퓨터를 만드는 중간 과거를 찾으려고 노력했습니다. 초기에 순진한 기계적 물건에 대한 열정과 무엇보다도 어떤 종류의 차량에 대한 열정을 비디오 게임, 모터스포츠, 그리고 내가 손을 쥐는 모든 것을 운전하려고 절망적으로 노력하여 충족시켜야 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 몇 십 년 후에 나의 삶은 많은 변화와 전환을 겪었습니다. 소프트웨어 엔지니어링, 기업가 정신, "식당 경영"까지 많은 것을 경험했죠. 그럼에도 여전히, 나는 마음 속으로 아이였습니다. 나는 수리하거나 만들 수 있는 것에 전부 스크류 드라이버를 꽂아보고 싶었던 아이였습니다. 흥미롭게도 소프트웨어와 접목되면서 머신 러닝, AI를 공부할수록, 더 이상한 것은 아날로그나 기계적인 시스템을 더욱 더 감상할 수 있게 되었죠. 세상은 컴퓨터 없이도 돌아갔었습니다! 칩 하나나 트랜지스터 하나 없이 놀라운 업적을 이루도록 설계된 기계적이고 아날로그인 기계들이 인간들이 경이로운 업적을 이루는 데 도와 주었습니다.
 
@@ -27,8 +37,18 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 그러나 내부 연소 엔진만큼 주목받거나 매혹적인 것은 없습니다. 아마도 패스트 앤 퓨리어스 프랜차이즈와 그들의 최신 CGI 기술에 NOS가 주입된 V8 엔진을 타고 통과하는 것으로 나타냈는지, 아님 Otto 사이클에 대한 열역학 강의로 나타낸 것일지 모르겠네요. 공기와 연료가 들어가고 압축되어 연료가 불타며 남아 있는 탄화수소가 방출됩니다. 결과는 상하운동을 하는 피스톤과 회전 운동으로 변환되는 크랭크샤프트입니다. 이 모든 과정은 가장 기본적인 인간 기계, 바퀴를 구동하기 위한 것이에요. "간단한"이라고 말할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![](/assets/img/2024-05-20-WhatIwishIknewbeforebuildingaShelbyCobrareplica_2.png)
 
@@ -38,8 +58,18 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 아마도 The Grand Tour의 몽골 스페셜에서 젤레미 클락슨, 리처드 해몬드, 제임스 메이가 몽골 스텝 중간에 낙하산 투하부품으로 차를 만든 것을 보지 않았다면 거기서 끝났을지도 모르지만. 그래서, 다음 날 아침 나는 아마도 코로나바이러스에 걸려 열이 났을지도 모르겠어요. 운명을 틀었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 “차를 만들 것이다.”
 
@@ -49,7 +79,18 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 그들의 웹사이트에 있는 knolling은 나의 무지와 자신감을 증진시켰어요. “저걸 봐! 레고보다 더 많은 부품이 있어요. 이것을 주말에 모아볼 수 있어.” 회상해보면 실제로 그랬을 수도 있지만 길가에 나갈 수 없는 사실 때문에 그래서 이 갈림길을 선택하지 않았어요. 다행히 인터넷은 정말 대단한 것이에요. 시간이 걸리지 않아서 시간을 들여 사실시장에 있는 모든 “킷카”를 발견했어요. 여기에 “Factory Five Racing”이라는 “빌드하지만 살지 않는” 회사가 등장했어요. 모든 차 DIYer, 핫로더, 페트롤헤드 블로그, 리뷰 사이트에서 찾을 수 있었던 것은 모두 동일했어요. 만약 최고의 킷카를 원한다면 더 이상 볼 것이 없다는 겁니다. 마침내, 그들의 웹사이트에 들어가서 이런 문구를 만나게 될 거예요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 당신이 자동차 팬이 아니더라도, 셸비 코브라에 대해 들어본 적이 있을 거에요. 아마도 1965년식 셸비 코브라 427을 말이죠. 포드 셀비 머스탱과 혼동하시면 안 돼요. 셀비 머스탱은 여러 변형으로 제작되었는데, GT500, GT350, 그리고 코브라가 있어요. 조금 헷갈릴 수 있지만, 1967년식 이 버전을 보면 차이를 알 수 있어요. 이 차는 영화 "60초만에 사라지다"의 유명한 "엘리노어"에 영감을 준 모델이죠.
 
@@ -59,9 +100,20 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 ![Image 2](/assets/img/2024-05-20-WhatIwishIknewbeforebuildingaShelbyCobrareplica_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이 차량에 대한 역사에 대한 전체 블로그를 쓸 수 있지만, 간단히 말해서 이 중 하나를 쉽게 구입할 수 없다는 것입니다. 2022년에 원본이 100만 달러에 판매되었고, 레플리카조차 싸지 않습니다. 그렇지만 Factory Five Racing 웹사이트를 통해 이런 차를 직접 조립할 수 있는 방법을 보여주는 많은 비디오와 사진이 있는데요! 아니, 정말, 회사 직원 몇 명이 4일 동안 하나를 조립하여 St. Jude 어린이 연구 병원을 위해 경매에 올린 비디오가 있습니다. “공장 파이브 레이싱에서 일하는 사람들이니까 당연히 몇 일만에 셸비 코브라를 만들어낼 수 있겠지. 그렇게 간단할 리 없잖아요.”라고 생각할 수 있습니다. 그리고 맞을 수도 있죠. 몇 년 전에 이런 게 있다고 말해준 사람 어디에 있었을까요? 확인 편향으로 가득 차서 다른 비디오를 찾게 되었는데, 이번에는 Detroit Muscle 시즌 1 에피소드 13에서, 회사의 사람들이 5일 만에 또 다른 Factory Five 로드스터를 만들어냅니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이 차량에 대한 역사에 대한 전체 블로그를 쓸 수 있지만, 간단히 말해서 이 중 하나를 쉽게 구입할 수 없다는 것입니다. 2022년에 원본이 100만 달러에 판매되었고, 레플리카조차 싸지 않습니다. 그렇지만 Factory Five Racing 웹사이트를 통해 이런 차를 직접 조립할 수 있는 방법을 보여주는 많은 비디오와 사진이 있는데요! 아니, 정말, 회사 직원 몇 명이 4일 동안 하나를 조립하여 St. Jude 어린이 연구 병원을 위해 경매에 올린 비디오가 있습니다. “공장 파이브 레이싱에서 일하는 사람들이니까 당연히 몇 일만에 셸비 코브라를 만들어낼 수 있겠지. 그렇게 간단할 리 없잖아요.”라고 생각할 수 있습니다. 그리고 맞을 수도 있죠. 몇 년 전에 이런 게 있다고 말해준 사람 어디에 있었을까요? 확인 편향으로 가득 차서 다른 비디오를 찾게 되었는데, 이번에는 Detroit Muscle 시즌 1 에피소드 13에서, 회사의 사람들이 5일 만에 또 다른 Factory Five 로드스터를 만들어냅니다.
 
 웹사이트로 돌아가 보면, 당신도 가지고 싶다고 생각할 수 있는 가장 상징적인 미국 차 중 하나를 가질 수 있다는 생각에 심취할 때, 자신과 자신의 기술을 충분히 믿는다면 이를 실현할 수 있다는 아주 순진한 쇼핑 카트 프로세스를 거치게 됩니다. "엔진 마운트를 선택하십시오. 302, 427, 코요테 또는 LS를 조립하시나요? 클러치 패키지를 선택하세요. 메카닉 링크 또는 유압 시스템을 사용하시나요? 후자라면 슬레이브 실린더 또는 스로우아웃 베어링을 선택하십니까? 어떤 리어 서스펜션 타입을 선택하십니까? 솔리드 액슬 3링크 또는 4링크 또는 IRS 일지도 모릅니다. 어떤 브레이크 사이즈를 선택하고, 11.65인치, 12.88인치, 13인치? 휠에 맞나요? 그리고 어떤 휠 사이즈를 선택하십니까? 15인치, 17인치, 18인치?" 친애하는 독자 여러분, 여기서 말씀드리고 싶은 점은, 제가 차량을 만드는 데에 운전 이외에 한 가지일도 해 본 적이 없다는 것입니다. 쇼핑 카트 질문들이 다른 언어 같아 보인다면, 저의 처지를 정확히 알 수 있습니다. YouTube에서 잠 못 이룬 밤이 실패로 끝나 버렸습니다. "나는 차를 만드는 법을 알고 있을 줄 알았는데? 이게 뭐지?"
 
@@ -69,7 +121,18 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 나는 쇼핑 카트를 완성하기 위해 이 포럼을 소비했습니다. 문제는 무엇을 검색해야 하는지 알아야 한다는 것입니다. 키워드를 알면 거의 확실하게 도움이 되는 게시물을 찾을 수 있지만, 당신이 모르는 것이 무엇인지 모분을 수도 있습니다. 답변을 찾을 때마다, 이해했다고 생각하고 거짓된 지식감으로 계속 진행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 팩토리 파이브 레이싱 웹사이트에서는 드라이브트레인(엔진 + 변속기)을 제공하지 않는다는 점을 언급하고 있어요. 그 부분은 따로 구해야 한다고 하네요. 걱정 마세요. 그들은 BluePrint Engines와 파트너십을 맺어 엔진 및 드라이브트레인을 제작, 테스트 및 판매하는 회사로 연결해줍니다. 남은 조각을 가져갈 수 있도록 그들의 웹사이트로 안내해 줍니다.
 
@@ -79,7 +142,18 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 "이걸 직접 만들 거야!"... 참 바보 같은 일을 했네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2021년 7월, 매사추세츠에서 캘리포니아로 가는 길에 이웃들의 주차공간을 막는 광속도로 배달 중인 18휠러에 내가 주문한 로드스터 부품도 들어있는데, 그 중에는 거친 파이버글래스 바디와 약 16박스 분량의 부품들이 포함되어 있었죠. 하지만 모든 부품이 포함되어 있는 것은 아니고 “메뉴얼”(이에 대해서는 나중에 설명하겠습니다)도 있었어요. 이 부품들은 생산업체들로부터 소싱하고 배송 받기 때문에 생산업체들의 공급망에 의존하게 되는 거죠. 몇 달이 지나면서 빠진 부품들도 배송 받게 되는데, 처음에 빠진 부품들 목록을 알려주기는 했어요. 바로 이 첫 대량 배송물에서 빠진 부품들을 알려줘요. 그 중요한 첫 대량 배송물이죠. 그것을 기록하고 소셜미디어에 게시한 것을요.
 
@@ -89,7 +163,18 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 곧바로 시작해봤어요. 첫 번째 섹션은 프런트 서스펜션인데요. “제공된 하드웨어를 사용하여 새로운 안정기구를 샤시의 바깥쪽 구멍에 장착하세요.” 필요한 볼트와 너트의 사진이 있었는데, 그것들을 “하부 제어 암”으로 라벨이 붙은 가방이나 상자에 대해 상세한 인벤토리 목록과 대조해 찾아야 했죠. 그 당시 잘 모르고 있던 것은 메뉴얼의 명료함이 예외였다는 것이었어요. 나중에 포럼에서 이른 시점에서 어떤 댓글을 읽었는데, 메뉴얼이 대충한 안내일 뿐이니, 이것은 개인적인 건축작업이라고 했어요. 그것을 믿지 않았거나 믿고 싶어하지 않았죠. 거부증은 정말 열 받아요. 때로는 사진이 일치하지 않을 때도 있었고, 사진이나 모든 필요한 부품에 대한 설명조차 없는 경우도 있었어요. 당신은 인벤토리 목록을 의존해야만 하고 “연료탱크 하드웨어” 등과 라벨이 붙은 가방을 찾아 스스로 해결해야 했어요. 혹시 지금 이 글을 읽는 독자 중에서 눈을 돌리는 사람들이 있을 수도 있겠지만, “애써보지 않아도 그렇게 복잡하지 않아.” 되짚어보면, 이런 순간들 대부분은 꽤 간단했어요. 알고 있으면 말이죠. 그리고 모든 것에 까다롭지 않다면요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 한 큰 실수 중 두 가지가 있었어요. 제가 "구매"를 클릭하기 전에 미래의 나에게서 지적을 받았더라면 사실 이렇게까지 안 했을 거에요. 첫 번째 실수가 현재 나타나고 있어요. 기억하시나요? 저는 전기 및 소프트웨어 공학 배경을 갖고 있어요. 그곳은 조금 더 정확한 편이에요. 예를 들어, 명시적으로 타입 지정된(또는 정적인) 프로그래밍 언어의 컴파일러는 변수의 값이 기대하는 것과 일치하지 않으면 처리에 실패할 거에요. Integer(예: 1, 2, 또는 3) 타입의 변수 안에는 값들, Float(예: 1.0, 2.0, 또는 3.0) 타입 안에는 다른 값들, 그리고 String(예: "1", "2", 또는 "3") 타입 안에는 또 다른 값들이 들어가는데, 이들은 같은 것으로 간주되지 않아요. 해당 카테고리에서 명확해야 하기 때문이죠. 똑바로 말하자면요. 꼼꼼하지 않다면, 나중에 괴롭힐 거에요. 그런데요, 유튜브 동영상의 정밀한 기계들은 어떻게 되는 거죠? 알고 보니, 핫로딩이나 자작 자동차 제작 세계에서는 덜 정확한 일이 더 많아요. 훨씬 덜 정확해요. FactoryFive 포럼 없이는 이걸 할 수 없었겠지만, 때로는 제 검색이 답변보다 더 많은 질문으로 남겼을 때가 있었어요.
 
@@ -99,7 +184,18 @@ link: "https://medium.com/@elspanishgeek/what-i-wish-i-knew-before-building-a-sh
 
 차는 2023년 8월에 시동을 걸고 달리기 시작했어요. 보시다시피 완전하지 않아요. 아직 몇 개의 알루미늄 패널을 끼우고, 조명과 풍차를 설치하고, 물론 차체도 마무리해야 해요. 하지만, 기계적 부분은 완료되었어요. 벌써, 많은 어려움을 겪으며 시동을 걸고 주행하고, 조향하고, 제동까지 모두 성공했죠. 부착된 부분이 불붙거나 떨어지지 않는 것이 고난한 부분이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여정이 끝나지 않았습니다. "제작만으로 만든" 자동차는 결코 끝나지 않습니다. 코브라 딜러십에 갈 수 없으니 (어쨌든 가고 싶을까요?). 조정, 오일 교환, 유체 교체, 그리고 브레이크 바이어스와 기화기 제트 크기, 연료 혼합물 등 다양한 미세 조정 설정은 기본 퀘스트 스토리라인을 거의 완료한 이후에 해야 할 "엔드게임"이 되었습니다.
 

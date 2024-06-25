@@ -3,13 +3,12 @@ title: "다중 모달 광고 분석 및 창의적 콘텐츠 생성을 Amazon Bed
 description: ""
 coverImage: "/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_0.png"
 date: 2024-05-17 18:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_0.png
 tag: Tech
 originalTitle: "Multimodal Advertising Analysis and Creative Content Generation using Anthropic Claude 3 on Amazon Bedrock"
 link: "https://medium.com/@garystafford/marketing-and-advertising-analysis-and-creative-content-generation-using-anthropic-claude-3-on-f522bd9943e6"
 ---
-
 
 요즘은 산업 비즈니스 및 엔지니어링 리더들의 대규모 그룹 앞에서 "진화하는 생성형 AI 아키텍처 패턴: 광고기술, 마케팅기술 및 광고대행사"이라는 강연을 하는 영권을 가졌습니다. 이 강연 중에는 9가지 변화하는 산업별 생성형 AI 아키텍처 패턴을 소개했습니다. 이 게시물에서는 생성형 AI를 사용하여 기존 마케팅 및 광고 콘텐츠에서 통찰을 얻는 하나와 해당 분석 및 관련 데이터를 사용하여 새로운 창의적 컨셉을 개발하는 또 다른 보조적 아키텍처 패턴 두 가지를 탐구해 보겠습니다.
 
@@ -19,8 +18,18 @@ link: "https://medium.com/@garystafford/marketing-and-advertising-analysis-and-c
 
 첫 번째 아키텍처는 안토픽 클로드 3 패밀리와 같은 비전 가능한 모델이 문서 및 이미지를 이해하고 분석할 수 있는 능력을 강조합니다. 텍스트 기반 프롬프트 외에도 업로드된 문서 및 이미지를 분석할 수 있습니다. 프롬프트는 인간 피드백과 함께 프롬프트 라이브러리에 저장될 수 있습니다. 아마존 베드락의 가드레일은 여전히 미리보기 단계에 있지만 프롬프트 및 응답 모두에 대한 규정 준수를 보장합니다. 마지막으로, 동일한 기반 모델 또는 다른 모델을 사용하여 사용자의 초기 프롬프트를 최적화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_0.png)
 
@@ -30,8 +39,18 @@ link: "https://medium.com/@garystafford/marketing-and-advertising-analysis-and-c
 
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 두 가지 패턴은 서로 보완하며 마케팅 및 광고 콘텐츠 분석 및 작성 능력을 향상시키는데 큰 역할을 합니다.
 
@@ -41,7 +60,18 @@ link: "https://medium.com/@garystafford/marketing-and-advertising-analysis-and-c
 
 # Amazon Bedrock
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Anthropic가 발표한 지 하루도 채 되지 않은 시점에 AWS는 Claude 3 모델 패밀리가 Amazon Bedrock을 통해 이용 가능하다고 발표했습니다. AWS에 따르면 "Amazon Bedrock은 AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI 및 Amazon과 같은 주요 AI 기업들의 고효율 기본 모델(FMs)을 단일 API를 통해 제공하며, 보안, 개인 정보 보호 및 책임 있는 AI를 구축하는 데 필요한 다양한 기능을 함께 제공하는 완전 관리형 서비스입니다."
 
@@ -51,7 +81,18 @@ Anthropic가 발표한 지 하루도 채 되지 않은 시점에 AWS는 Claude 3
 
 # 멀티모달 프롬프팅
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Anthropic Claude 3 패밀리의 다중 모달 프롬프트 기능을 활용하기 위해 Amazon Bedrock에서 Streamlit 애플리케이션을 개발했어요. 현재 이 애플리케이션을 통해 하나 이상의 JPG, PNG, GIF, WEBP, PDF, CSV 또는 TXT 형식 파일을 업로드할 수 있어요. 또한 모델 (Sonnet 또는 Haiku)을 변경하고 max_tokens, temperature, top_p, top_k와 같은 추론 매개변수를 조절할 수 있는 기능도 제공돼요. 게다가 이 애플리케이션은 총 분석 시간(초)과 소비된 입력 및 출력 토큰 수를 반환할 거예요.
 
@@ -67,7 +108,18 @@ source claude-streamlit-venv/bin/activate
 python3 -m pip install -r requirements.txt -Uq
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가상 환경이 생성되고 종속성이 설치된 후, 다음 명령어를 사용하여 터미널에서 Streamlit 앱을 시작하세요:
 
@@ -86,7 +138,18 @@ streamlit run app.py \
 
 GitHub 저장소의 README 파일에는 제가 강연에서 보여준 다양한 다중 모달 프롬프트 예제가 포함되어 있습니다. 이 예제들에 사용된 브랜드와는 어떠한 제휴도 없음을 유의해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시 1: 기존 광고 분석
 
@@ -96,19 +159,39 @@ GitHub 저장소의 README 파일에는 제가 강연에서 보여준 다양한 
 
 각 요소에 대해 광고를 통해 효과적으로 활용된 방법을 설명하고 왜 이것이 강력한 창의적 선택임을 설명하십시오. 분석을 지원하기 위한 구체적인 예시와 통찰을 제공하십시오. 목표는 이러한 메르세데스-벤츠 광고를 매력적이고 효과적으로 만드는 주요 창의 전략을 발견하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중요: 광고가 제공되지 않았다면 분석 결과를 생성하지 마십시오.
 
 업로드하고 분석할 네 가지 광고 예시가 있습니다.
 
-
 ![advertising example](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_3.png)
-
 
 분석은 Anthropic Claude 3 Sonnet on Amazon Bedrock을 사용하여 약 13초가 소요되었습니다. 프롬프트는 5,463개의 입력 토큰을 사용하였고, 응답은 432개의 출력 토큰을 사용하였습니다. 모델의 창조적 분석은 중요한 디자인 요소를 세심하게 식별했습니다. 이 요소에는 1/ 강렬한 시각적 이미지, 2/ 미니멀하고 우아한 타이포그래피, 3/ 효과적인 색상 활용, 4/ 일관된 브랜딩과 태그 라인, 그리고 5/ 성능과 혁신에 대한 강조가 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_4.png)
 
@@ -118,17 +201,50 @@ GitHub 저장소의 README 파일에는 제가 강연에서 보여준 다양한 
 
 당신은 마케팅 분석가를 위한 대규모 언어 모델 프롬프트 최적화 전문가입니다. 다음 마케팅 분석가의 작업 설명과 수반하는 광고 샘플을 고려하면, 제공된 콘텐츠를 기반으로 대규모 언어 모델로부터 효과적인 응답을 제공할 수 있는 간결하고 효과적인 긍정적인 프롬프트를 작성해야 합니다. 분석에 초점을 맞출 요소들의 간결한 목록을 포함하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 과제: 이러한 성공적인 영어와 독일어 인쇄 광고를 분석하고 효과적인 요소들을 발견해보세요.
 
 Anthropic Claude 3 Sonnet을 사용하여 프롬프트 최적화 요청 작업에는 약 8.7초가 걸렸습니다. 프롬프트는 5,381개의 입력 토큰을 사용했으며, 응답은 141개의 출력 토큰을 사용했습니다. 새로운 프롬프트에는 광고 콘텐츠에 대한 사실들과 보다 완전한 분석을 보장하기 위한 추가 지시사항이 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시 3: 분석을 통한 새로운 창의적 개념 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 예시에서 생성된 창의적인 분석을 사용하여, 우리는 기반 모델을 활용하여 새로운 광고 컨셉을 개발할 수 있습니다. 이 예시에서는 제품, 대상 고객 세그먼트, 광고 채널 및 광고 형식을 제공하고 모델에게 창의적 컨셉을 개발하도록 요청합니다. 다음은 예시 프롬프트입니다:
 
@@ -138,8 +254,18 @@ Anthropic Claude 3 Sonnet을 사용하여 프롬프트 최적화 요청 작업�
 
 프롬프트와 함께, 발행사 정보를 담은 PDF 파일과 발행사의 디지털 광고 사양을 담은 다른 PDF 파일을 업로드해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_6.png)
 
@@ -149,8 +275,18 @@ Anthropic Claude 3 소네트를 사용하여 작업은 약 14초가 걸렸습니
 
 우리는 이제, 같은 브랜드와 제품을 위한 기존 광고의 생성 AI 분석을 기반으로 한 새 광고 컨셉을 갖게 되었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 4: 창의적 브리프 분석 및 새로운 창의적 컨셉 생성
 
@@ -162,7 +298,18 @@ Anthropic Claude 3 소네트를 사용하여 작업은 약 14초가 걸렸습니
 
 템플릿 여기에...''...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 프롬프트와 함께 창조적 브리프를 이미지 파일로 업로드해주세요. Foundation 모델은 이미지에서 텍스트를 추출하여 분석할 수 있습니다.
 
@@ -172,7 +319,18 @@ Anthropic Claude 3 소네트를 사용하여 작업은 약 14초가 걸렸습니
 
 ![Streamlit](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The model’s response is correctly formatted as a series of JSON objects.
 
@@ -208,7 +366,18 @@ The JSON-formatted output can be easily serialized and written to a downstream s
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Amazon DynamoDB에 저장된 광고를 위한 새로운 창의적인 개념을 볼 수 있습니다. 그럼 광고 구성 시스템이 실제 디지털 광고를 만들 때 쉽게 읽을 수 있습니다.
 
@@ -218,7 +387,18 @@ The JSON-formatted output can be easily serialized and written to a downstream s
 
 그래픽 디자이너의 역할을 가정하면, 이제 이 모델에게 이전에 생성된 헤드라인, 광고 복사본, 콜 투 액션 및 이미지 설명 중 하나를 기반으로 새로운 디지털 광고의 레이아웃을 디자인하도록 요청할 수 있습니다. 여기 예제 프롬프트가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신은 선도적 광고 대행사의 능력 있는 그래픽 디자이너입니다. 다음 제목, 광고 복사본, 콜 투 액션 및 이미지 설명을 기반으로 매력적인 온라인 디지털 광고를 위한 디자인을 설명해주세요. 광고물은 세로 방향의 형식으로 디자인되어야 하며, 너비는 300픽셀, 높이는 600픽셀이어야 합니다. PayPal을 위한 창의적 브리프도 참고로 포함되어 있습니다.
 
@@ -228,7 +408,18 @@ The JSON-formatted output can be easily serialized and written to a downstream s
 
 ![이미지](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_12.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알림에 따라 Foundation 모델은 제공된 헤드라인, 광고 복사, 호출-투-액션, 로고, 그리고 이미지 설명을 사용하여 레이아웃 세부 정보를 제공합니다. 이 접근 방식의 도전점은 여전히 이러한 쓰기된 레이아웃 설명을 실제 디지털 광고로 어떻게 전환할지입니다.
 
@@ -238,11 +429,33 @@ The JSON-formatted output can be easily serialized and written to a downstream s
 
 저희의 새로운 광고 컨셉에는 이미지가 포함되어 있습니다. Amazon Bedrock와 최근 발표된 Amazon Titan Image Generator G1 foundation 모델을 사용하여, 이전 예시에서 생성된 이미지 설명에서 여러 이미지 변형을 만들 수 있습니다. 우리의 긍정적인 동기부여가 되겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 우리의 디지털 광고의 여러 변형을 생성하는 데 사용할 이미지 변형입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 7: 모두 함께하는 시간 — 프로그래밍적으로 광고 생성
 
@@ -252,7 +465,18 @@ The JSON-formatted output can be easily serialized and written to a downstream s
 
 여기서 Kreative 컨셉이 나오네요...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 응용 프로그램에서 프롬프트와 업로드된 파일이 보일 것입니다.
 
@@ -262,7 +486,18 @@ The JSON-formatted output can be easily serialized and written to a downstream s
 
 ![Image](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_18.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이썬 스크립트는 모델의 응답에서 영감을 받아 Microsoft Visual Studio Code에서 수정되었습니다. 스크립트 내에서 생성된 이미지와 TrueType 글꼴의 기본 위치가 업데이트되었고, 레이아웃의 요소들이 약간 조정되어 전체 가독성과 영향력이 향상되었습니다. 마지막으로, 여러 이미지 변형으로부터 여러 광고 버전을 생성하도록 스크립트가 수정되었습니다. 개발 가속화를 위해 VS Code에서 Amazon CodeWhisperer를 사용했습니다. 최종 코드의 80% 이상은 기존 모델의 기반 응답에서 변경되지 않았습니다.
 
@@ -343,8 +578,18 @@ for idx, generated_image in enumerate(
 
 ![2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_19.png](/assets/img/2024-05-17-MultimodalAdvertisingAnalysisandCreativeContentGenerationusingAnthropicClaude3onAmazonBedrock_19.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 광고 결과물은 다양한 이미지, 헤드라인, 광고 복사본, 콜 투 액션 및 색상 팔레트를 사용합니다.
 
@@ -354,7 +599,18 @@ for idx, generated_image in enumerate(
 
 마지막으로, 우리는 다시 한 번 Claude 3 패밀리의 기본 모델을 사용하여 표 데이터를 분석할 수 있습니다. 예를 들어, 광고 예산과 에이전시 고객의 판매 내역이 포함된 스프레드시트가 있다면, 모델에 다양한 계산을 수행하도록 요청할 수 있습니다. 모델은 확실히 답변을 제공할 것이지만, 해당 답변이 정확한 가능성은 매우 낮습니다. 모델은 표 데이터에서 수학적 계산을 신뢰할 수 없지만, 선택한 언어로 컴퓨터 프로그램을 작성해 정확하게 계산하도록 요청할 수 있습니다. 여기 몇 가지 예시 문구입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 광고 예산 및 판매 CSV 파일을 기반으로 한 Python 프로그램을 작성하여 총 매출을 계산해보세요. Pandas 패키지를 사용해보세요.
 - 광고 예산 및 판매 CSV 파일을 기반으로 한 Java 프로그램을 작성하여 총 매출을 계산해보세요.
@@ -367,7 +623,18 @@ for idx, generated_image in enumerate(
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물에서는 진화하는 두 가지 생성적 AI 아키텍처 패턴을 살펴보았습니다: 하나는 기존의 창의적 콘텐츠에서 통찰을 얻는 데 사용되는 생성적 AI를 활용한 것이고, 다른 하나는 해당 통찰과 관련 데이터를 사용하여 새로운 창의적 개념을 개발하는 데 사용되는 생성적 AI를 사용한 것입니다. 우리는 생성적 AI를 활용하여 기존 광고를 분해하고 분석하고, 몇 가지 Python 코드와 함께 새로운 창의적 광고 개념을 작성했습니다.
 

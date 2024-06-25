@@ -3,13 +3,12 @@ title: "인터뷰 경험 Zomato  SDE 1  Android"
 description: ""
 coverImage: "/assets/img/2024-06-19-InterviewExperienceZomatoSDE1Android_0.png"
 date: 2024-06-19 10:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-InterviewExperienceZomatoSDE1Android_0.png
 tag: Tech
 originalTitle: "Interview Experience Zomato | SDE 1 | Android"
 link: "https://medium.com/@priyabrata-naskar/interview-experience-zomato-sde-1-android-4bbdca38dc2a"
 ---
-
 
 <img src="/assets/img/2024-06-19-InterviewExperienceZomatoSDE1Android_0.png" />
 
@@ -23,6 +22,17 @@ link: "https://medium.com/@priyabrata-naskar/interview-experience-zomato-sde-1-a
 
 추신: Medium에서는 50번 박수를 두드릴 수 있습니다! 아이콘을 길게 눌러보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 어떤 것을 더 작성해주세요? ✍️

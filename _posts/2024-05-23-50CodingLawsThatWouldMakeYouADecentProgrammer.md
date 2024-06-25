@@ -18,7 +18,18 @@ link: "https://medium.com/@alexobidiegwu/50-laws-of-best-practices-in-python-694
 
 인터넷은 모든 사람에게 의견 표명의 권리를 부여했습니다. 심지어 저도 말이죠. 하지만 이 기사에서는 암호화된 50가지 파이썬 최고의 관행을 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 신이라도 조작할 수 없는 기술들이 있어요. 이러한 기술들은 전문가와 아마추어를 구분하며 다양한 프로그래밍 언어에도 적용할 수 있어요.
 
@@ -28,7 +39,18 @@ link: "https://medium.com/@alexobidiegwu/50-laws-of-best-practices-in-python-694
 
 ## 법칙 1: 가능한 한 주석을 피하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코멘트는 종종 사실과는 다른 내용을 전달할 수 있는 방식을 갖고 있어요. 코드가 실제로 무엇을 하는지가 아닌 다른 사람이 말하는대로 어떤 일을 하고 있는지를 읽는 사람의 마음을 벗어낼 수 있어요.
 
@@ -38,7 +60,18 @@ link: "https://medium.com/@alexobidiegwu/50-laws-of-best-practices-in-python-694
 
 코멘트는 작성자가 명확한 클래스, 함수 또는 변수 이름을 제시하지 못했다는 것을 나타냅니다. 이는 프로그래머의 태도의 부족을 드러내고 팀에 그러한 태도를 상속받도록 강요해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주석을 가능한 한 피해야 합니다.
 
@@ -48,7 +81,18 @@ link: "https://medium.com/@alexobidiegwu/50-laws-of-best-practices-in-python-694
 
 가끔 특정 변수가 문자열인지 정수형인지를 명시하고 싶을 때가 있습니다. 따라서 일부 개발자는 변수를 다음과 같이 지정할 수 있습니다: name_of_variable_str 또는 name_of_variable_int.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 변수가 문자열인 것이 직관적으로 이해되는 경우와 같이, 변수가 결코 int(정수) 타입이 될 수 없는 경우에는 이것이 상당히 중복될 수 있습니다.
 
@@ -56,7 +100,18 @@ link: "https://medium.com/@alexobidiegwu/50-laws-of-best-practices-in-python-694
 
 name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는 대신 이 방법을 사용하면 모두가 변수가 문자열인 것을 알 수 있으며 코드를 깔끔하고 간결하게 유지할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법률 3: 클래스 이름은 명사여야 합니다.
 
@@ -66,7 +121,18 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 이는 코드를 매우 가독성 있고 중복되지 않게 만듭니다. 예를 들어, Goat.get_horn_length() 대신 GetGoat.get_horn_length()을 사용하는 대신 Goat.get_horn_length()을 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 4: 함수 이름은 동사여야 합니다
 
@@ -76,7 +142,18 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 ## 법칙 5: 함수는 매개변수와 반환 형식을 명시해야 합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 함수를 정의할 때는 항상 인수의 유형 및 함수의 결과가 반환하는 데이터 유형을 명시해야 합니다.
 
@@ -86,7 +163,18 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 ![이미지2](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 6: 함수는 한 가지 기능만 수행해야 합니다
 
@@ -96,7 +184,18 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 ![Img](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주소가 유효한지 확인하고 확인 후 위도와 경도를 반환합니다. 이 함수는 두 가지 작업을 수행합니다. 주소가 유효한지 확인하고 해당 주소의 지리적 위치를 반환합니다.
 
@@ -106,7 +205,18 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 위의 함수들은 하나의 일만을 하고 그 이상의 일을 하지 않습니다. 덜 간결해 보일 수 있지만 훨씬 간결하고 가독성이 높습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 함수의 "하나" 기능을 정확히 알아내는 것은 새로운 개발자들에게는 약간 어려울 수 있어요. 함수가 무엇을 수행해야 하는지를 매우 구체적으로 명시해야 해요.
 
@@ -116,7 +226,18 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 ## LAW 7: 함수는 동일한 추상화 수준에 있어야 해요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 함수가 동일한 추상화 수준에 있을 때 언급하는 것은 함수가 단일하고 명확한 작업을 수행해야 한다는 아이디어를 가리킵니다. 해당 작업은 함수 전체에서 일관된 추상화 수준에 있어야 합니다.
 
@@ -126,8 +247,18 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 이 함수는 낮은 추상화 수준의 명령문을 가지고 있습니다. sum, len 등과 같은 것들이 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_6.png" />
 
@@ -137,11 +268,20 @@ name_of_variable:str = value 대신 name_of_variable_str = value를 사용하는
 
 함수 이름은 매우 밀접하게 그 인수와 관련되어야 합니다. 함수 이름과 관련성이 없는 인수를 전달하는 것은 좋은 방법이 아닙니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 코드를 Markdown 형식으로 변경해보세요.
-
 
 write(True)
 
@@ -151,8 +291,18 @@ write(name)
 
 첫 번째 예시는 두 번째 예시만큼 명시적이지 않아요. 추측을 하거나 함수 전체를 살펴봐야 할 수도 있어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 9: 함수는 작아야 합니다
 
@@ -162,7 +312,18 @@ write(name)
 
 개발자가 변수나 함수의 의미를 더 명확하게 해주는 단어가 아닌 단어를 사용하는 시간도 있습니다. 이런 목록화:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_7.png)
 
@@ -172,7 +333,18 @@ write(name)
 
 시니어 개발자라면 그가 코드가 깨끗할 때에만 정신적으로 맑다고 말할 것입니다. 이것은 더러운 코드를 작성하는 것이 더러운 프로그래머를 만들기 때문입니다. 깨끗한 코드는 팀의 모든 이들에게 깨끗한 코드를 계속 작성하도록 장려합니다. 항상 깨끗한 코드를 작성하도록 노력해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 깨끗한 코드란 무엇일까요? 깨끗한 코드는 잘 구조화되어 정리되어 있습니다.
 
@@ -182,20 +354,39 @@ write(name)
 
 개방폐쇄 원칙(Open Closed Principles, OCP)은 클래스, 메서드 또는 함수가 확장을 위해 열려 있지만 수정에는 닫혀 있어야 한다고 말합니다. 이는 정의된 모든 클래스, 메서드 또는 함수가 코드를 변경하지 않고 여러 인스턴스에 재사용하거나 확장할 수 있도록 만든다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 예제를 들어보겠습니다. address라는 클래스가 있다고 가정해 봅시다.
 
-
 ![address class](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_8.png)
-
 
 이것은 OCP를 준수하지 못한 것입니다. 새로운 국가가 추가될 때마다, 해당 국가를 보충하기 위해 새로운 if 문을 작성해야 합니다. 지금은 간단해 보일 수 있지만, 상상해 보세요. 100개 이상의 국가를 고려해야 한다면 어떻게 될까요?
 
 여기서 OCP가 중요한 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_9.png)
 
@@ -205,18 +396,37 @@ write(name)
 
 예를들어:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 다른 지불 방법을 추가할 때마다 항상 PaymentProcessor 클래스를 수정해야한다는 것이 잘못된 방법입니다.
 
 더 나은 방법은 다음과 같습니다:
 
-
 ![이미지](/assets/img/2024-05-23-50CodingLawsThatWouldMakeYouADecentProgrammer_11.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 하면 새로운 결제 옵션을 추가해야 할 때마다, 예를 들어 암호화폐나 페이팔 같은 것, 이를 달성하기 위해 어떤 클래스도 수정할 필요가 없습니다. 단순히 다음과 같이 하면 됩니다:
 
@@ -226,7 +436,18 @@ write(name)
 
 이 전 원칙을 살펴보면, 암호화폐를 사용하여 결제할 때 우리는 정확히 어떤 암호화폐를 보내는지 명시적으로 지정하지 않습니다. 금액만 명시합니다. 그래서 만약 우리가 암호화폐를 명시하고 싶어한다면, 일반적으로 다음과 같이 할 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from abc import abstractmethod
@@ -244,7 +465,18 @@ class PaymentProcessor:
 
 리스코프 치환 원칙(LSP)은 "슈퍼클래스의 객체는 하위 클래스의 객체로 교체해도 프로그램의 정확성에 영향을 미치지 않아야 한다"는 것을 명시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LSP를 준수하기 위해 CryptoPaymentProcessor 클래스 내에서 암호화폐를 정의해야합니다. 이렇게 하면 다른 하위 클래스와의 불필요한 충돌을 방지할 수 있습니다.
 
@@ -262,7 +494,18 @@ class CryptoPaymentProcessor(PaymentProcessor):
 
 코멘트를 사용해야 할 때마다 코드로 표현하지 못한 것에 대해 부끄러워해야 합니다. 그러나 댓글을 사용하면 실제로 코드 자체보다 코드의 기본 작업을 잘 설명하는 데 도움이 되는 경우도 있습니다. 여기 "좋음" 코멘트의 5가지 좋은 예제가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 친절한 메모
 코드를 읽는 사람에게 코드를 더 잘 전달하는 데 도움이 되는 정보가 있는 메모를 작성하는 것은 언제나 좋습니다. 예를 들어 함수의 반환 값을 강조하는 메모는 더 많은 명확성을 제공할 수 있습니다. 그러나 이러한 메모는 명확한 함수 또는 변수 이름을 사용하여 불필요하게 만들 수 있습니다.
@@ -275,7 +518,18 @@ class CryptoPaymentProcessor(PaymentProcessor):
 후행 작용 경고
 가끔은 다른 개발자들에게 잠재적인 위험을 알리고 싶을 때가 있습니다. 이 위험에 발을 딛게 되면 예기치 못한 결과가 생길 수 있습니다. 우리는 모두 하루를 생존하고 싶어합니다. 이 상황에서 메모가 문제를 해결하는 데 도움이 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 코드가 시간이 걸리거나 특정 시스템을 과부하시킬 가능성이 있는 경우, 독자나 다른 프로그래머에게 "#COMPUTING RESOURCES를 많이 소비함"과 같은 경고가 도움이 될 수 있습니다.
 
@@ -289,7 +543,18 @@ class CryptoPaymentProcessor(PaymentProcessor):
 animal.append(dog)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비 로컬 정보
 프로그래머들이 주석을 사용할 때 범하는 실수 중 하나는 전역 정보를 로컬에서 제공하는 것입니다. 주석을 작성할 때는 해당 함수나 문을 참조하는 것에만 관련되도록 유지하십시오. 그 외의 부분은 제거해야 합니다.
@@ -302,7 +567,18 @@ animal.append(dog)
 
 ## 법칙 16: 소스 파일을 짧게 유지하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소스 파일은 최대 500줄이지만 100–200줄 사이로 유지하는 것이 좋습니다. 매우 좋은 이유가 없는 한 다른 방법을 선택하는 것을 권장하지 않습니다. 소스 파일을 짧게 유지하면 재사용성과 가독성과 같은 다양한 명백한 이점이 있습니다. 또한 연결할 내용을 찾느라 스크롤하고 시간을 낭비하는 일이 줄어들기 때문에 유지 및 업데이트하기가 더 쉽습니다.
 
@@ -312,11 +588,33 @@ animal.append(dog)
 
 ## 법칙 18: 관련된 코드/함수/클래스를 가까이 유지하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 가지가 강하게 관련이 없음을 나타내기 위해 공백을 사용하고, 강하게 연관된 것들은 공백을 사용하지 않습니다. 예를 들어 함수를 정의할 때...
 
@@ -332,7 +630,18 @@ def create (name):
     print (name)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 함수에 전달되는 인수는 구별되어야 합니다.
 
@@ -342,7 +651,18 @@ def create (name):
 
 하지만 다른 개발자들과 협업할 때는 개인적인 취향을 내려놓고 팀의 선호도를 받아들이는 것이 좋습니다. 다른 사람들이 당신의 코드에서 아름다움을 느끼지 못할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## LAW 21: 마법 숫자 피하기
 
@@ -352,33 +672,55 @@ def create (name):
 
 이제 50을 서로 다른 곳에 넣으시는 것입니다 — SQL 스크립트 (SELECT TOP 50 \* FROM orders), 웹사이트 (마지막 50개 주문), 주문 로그인 (for (i = 0; i ` 50; i++)) 그리고 가능한 다른 많은 장소에.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 나쁨
-SELECT TOP 50 * FROM orders
+
+SELECT TOP 50 \* FROM orders
 
 # 좋음
-NUM_OF_ORDERS = 50
-SELECT TOP NUM_OF_ORDERS * FROM orders
 
+NUM_OF_ORDERS = 50
+SELECT TOP NUM_OF_ORDERS \* FROM orders
 
 ## LAW 22: 깊은 중첩 피하기
 
 루프, 조건문 또는 함수 내의 중첩 수준을 제한하여 가독성을 향상시킵니다.
 
-
 # 나쁨
+
 if x:
-    if y:
-        do_something()
+if y:
+do_something()
 
 # 좋음
+
 if x and y:
-    do_something()
+do_something()
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## LAW 23: 임시 변수 피하기
 
@@ -395,8 +737,18 @@ final_result = calculate(x, y) * 2
 
 가독성을 높이기 위해 암호적 줄임말 대신 설명적인 이름을 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 나쁜 예시
 
@@ -408,11 +760,9 @@ pass
 def calculate_total_price(quantity, unit_price):
 pass
 
-
 ## 법칙 25: 경로 하드코딩 피하기
 
 파일 경로나 URL을 하드코딩하지 말고, 대신 구성 파일 또는 환경 변수를 사용해주세요.
-
 
 # 나쁜 예시
 
@@ -423,8 +773,18 @@ file_path = "/path/to/file.txt"
 import os
 file_path = os.getenv("FILE_PATH")
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## LAW 26: 항상 Try-Catch-Finally 문 사용하기
 
@@ -434,7 +794,18 @@ file_path = os.getenv("FILE_PATH")
 
 API 요청, 파일 처리 등의 작업은 어떤 이유로든 실패하거나 오류를 일으킬 가능성이 높습니다. 반면에 곱셈이나 나눗셈과 같은 작업에 대해 try-catch 문을 사용하는 것은 오히려 문제를 더 만들어내기 때문에 지양해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 27: 예외와 함께 컨텍스트 제공하기
 
@@ -444,7 +815,18 @@ API 요청, 파일 처리 등의 작업은 어떤 이유로든 실패하거나 �
 
 ## 법칙 28: 여러 예외 클래스 사용 피하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같은 코드를 본 적이 있나요?
 
@@ -467,7 +849,18 @@ except FileNotFoundError:
 
 우리가 마주칠 수 있는 모든 종류의 오류를 처리하기 위해 보다 일반적인 예외를 사용하는 것이 종종 더 나은 방법입니다. 기본적으로 이 유형의 예외는 우리가 받은 오류의 유형을 포함합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 try:
@@ -482,7 +875,18 @@ except Exception:
 
 함수를 작성할 때 해당 함수가 정확히 무엇을 해야 하는지 유의해야 합니다. 인수를 변이시킬까요? 아니면 반환해야 하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 함수가 전달된 인수를 변형시키면, 그 함수 안에서만 그 작업을 하면 됩니다. 그 이외의 곳에서는 건드릴 필요가 없어요.
 
@@ -495,7 +899,18 @@ def changed(array):
 
 만약 인수가 다른 변수를 만들기 위해 사용된다면 그것은 변형이 아닙니다. 예를 들어, 시간이라는 인수가 거리를 계산하는 데 사용된다면, 그것은 변형이 아니기 때문에 거리는 그 함수에서 반환될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def calculate_distance(time, speed):
@@ -514,7 +929,18 @@ def changed(array):
 
 ## 법칙 30: 모든 함수 이름이 동사일 필요는 없어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네, 알겠어요. 이전에 제가 언급했던 것처럼 모든 함수명은 일반적으로 동사여야 한다고 했었는데, 때로는 함수명이 명사 형태여야 하는 경우가 있습니다. 이것이 언제 그런지 아는 것은 이전 법칙/법칙 29에 근거합니다.
 
@@ -524,7 +950,18 @@ def changed(array):
 
 물론 이에는 예외가 있고, 한 번 예외 상황을 마주했을 때는 언제든지 동사를 사용하도록 되돌아가도 괜찮습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 31: 클래스는 작아야 합니다
 
@@ -534,7 +971,18 @@ def changed(array):
 
 일반적으로 클래스 이름은 해당 클래스가 가질 수 있는 책임의 종류를 나타냅니다. 그러나 이름이 모호하거나 너무 일반적인 경우, 대부분 너무 많은 책임을 부여하고 있는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 클래스가 하나의 이유, 즉 변경할 책임이 하나만 있어야 한다는 SRP(단일 책임 원칙)로 되돌아가게 됩니다.
 
@@ -548,7 +996,18 @@ class Animal:
         self.name = name #인스턴스 변수
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 모든 우리의 함수가 클래스 책임과 관련이 있다면, 많은 인스턴스 변수를 가질 이유가 없어요.
 
@@ -558,7 +1017,18 @@ class Animal:
 
 ## 법칙 33: 당신의 클래스는 응집력이 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클래스 내의 모든 함수는 하나 이상의 인스턴스 변수를 포함해야 합니다. 함수가 클래스 내의 인스턴스 변수와 관련이 많거나 해당 변수를 포함하면 클래스의 응집력이 더 높아집니다.
 
@@ -577,7 +1047,18 @@ with open("example.txt", "r") as file:
     data = file.read()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 35: 복잡한 삼항 표현식 피하기
 
@@ -598,7 +1079,18 @@ else:
 
 ## 법칙 36: 정체성 비교에 ‘is’와 ‘is not’ 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 경우, 우리는 두 변수 사이의 비교를 확인하기 위해 ==를 사용합니다. 불변 데이터 유형인 문자열이나 정수와 같은 경우에는 보통 두 변수가 동일한 메모리 위치에 저장되기 때문에 메모리 위치 확인은 필요하지 않습니다.
 
@@ -608,7 +1100,18 @@ else:
 
 문자열, 튜플 및 정수는 생성된 후에 변경할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 아래 링크를 사용하여 이 코드를 실행해보세요:
@@ -636,8 +1139,18 @@ if list1 is list2:
 
 고수준 모듈은 저수준 모듈에 의존해서는 안 되며, 둘 다 추상화에 의존해야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 말해서, 클래스는 구체적인 구현이 아닌 인터페이스 또는 추상 클래스에 의존해야 합니다.
 
@@ -662,7 +1175,18 @@ class Calculator:
 
 또한 이는 개방-폐쇄 원칙(확장에는 열려 있고 수정에는 닫혀 있음)을 지키지 못하는 것을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 좋은 코드
@@ -694,7 +1218,18 @@ class Calculator:
 
 이 모듈성은 코드베이스를 더 쉽게 이해, 수정 및 확장할 수 있도록 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 38: 데이터 유효성 검사에 'assert' 사용을 피하십시오
 
@@ -711,7 +1246,18 @@ if x <= 0:
 
 ## 법칙 39: 하드 코딩된 숫자를 피하십시오
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 명확성을 높이고 코드 수정을 쉽게 만들기 위해 의미 있는 이름으로 상수를 작성하십시오.
 
@@ -727,7 +1273,18 @@ def calculate_discount(price):
 
 이로 인해 숫자의 의미를 이해하기 어렵고 다른 부분에서 필요시 할인율을 조정하는 것이 어려워집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def calculate_discount(price):
@@ -742,9 +1299,18 @@ def calculate_discount(price):
 
 같은 코드를 한 번 이상 작성하지 않도록 합니다. 대신 함수, 클래스, 모듈, 라이브러리 또는 기타 추상화를 사용하여 코드를 재사용하세요. 이렇게 하면 코드가 더 효율적이고 일관되며 유지 보수가 용이해집니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 표를 변경하여 마크다운 형식으로 변환해보세요.
 
@@ -766,7 +1332,18 @@ def calculate_product_price(product_quantity, product_price):
 
 공백, 주석, 그리고 명명에 대한 일반적으로 인정받은 컨벤션을 따르는 것이 중요합니다. 대부분의 프로그래밍 언어에는 커뮤니티에서 인정하는 코딩 표준과 스타일 가이드가 있습니다. 예를 들어, Python의 경우 PEP 8가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 사용되는 관례들은 다음과 같습니다:
 
@@ -780,7 +1357,18 @@ def calculate_product_price(product_quantity, product_price):
 
 데메테르의 법칙은 간단히 말하면 모듈/함수/클래스는 주변 모듈/함수/클래스에 대한 지식이나 참조를 가질 수 있지만 그 이상의 지식은 가져서는 안 된다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인접한 이웃이라 함은 직접 액세스할 수 있는 메소드, 함수 또는 변수를 의미합니다.
 
@@ -798,7 +1386,18 @@ class Order:
 
 이 예제에서 Order 클래스는 고객의 프로필에 직접 접근하여 고객의 이름을 검색합니다. Order는 고객 객체의 내부 구조에 액세스하여 프로필 및 이름에 접근하고 있으므로 이는 데메테르 법칙을 위반합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주변 이웃을 넘어서고 이제 고객 개체에 대해 너무 많이 알게 되었습니다.
 
@@ -816,7 +1415,18 @@ class Order:
 
 고객 개체의 내부 구조에 접근하지 않으므로 Demeter의 법칙을 따릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 43: 간결함보다 가독성이 중요합니다
 
@@ -826,7 +1436,18 @@ class Order:
 
 만약 다른 개발자들이 이해할 수 없는 간결한 코드를 작성한다면, 그것은 별 의미가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법칙 44: Import를 깨끗하게 유지하세요
 
@@ -836,15 +1457,26 @@ class Order:
 
 이것이 더 큰 문제로 변하는 경우가 있습니다. 함수를 호출하려고 할 때 더욱 문제가 될 수 있습니다. 함수 이름이 추천 목록 사이에 잃어버릴 수 있고, 이제 IDE가 효율적인 해결책보다는 문제로 변할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 나쁜 예
-from module import *
+
+from module import \*
 
 # 좋은 예
-from module import symbol1, symbol2
 
+from module import symbol1, symbol2
 
 ## LAW 45: Null/None을 반환하지 마세요
 
@@ -852,7 +1484,18 @@ from module import symbol1, symbol2
 
 만약 이게 사실이 아니라면, 많은 오해를 불러올 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 법률 46: 건설과 사용 분리하기
 
@@ -862,7 +1505,18 @@ from module import symbol1, symbol2
 
 건설과 사용을 분리하는 일반적인 방법은 main이라는 파일/함수/모듈에서 응용 프로그램 로직을 구성하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주요 기능은 응용 프로그램이 원활하게 실행되도록 필요한 객체를 구축합니다. 이렇게 함으로써 다른 모듈이 응용 프로그램에 강하게 결합되지 않도록하고 재사용성과 모듈성을 증진시킵니다.
 
@@ -872,7 +1526,18 @@ from module import symbol1, symbol2
 
 중복이 포함되지 않음: 중복은 잘 설계된 시스템의 주요 적인 적수입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로그래머의 의도를 표현합니다
 
@@ -882,7 +1547,18 @@ from module import symbol1, symbol2
 
 너무 복잡한 오류 처리 논리를 방지하기 위해 try-except 블록을 과도하게 중첩하는 것을 삼가세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 나쁜 예시
@@ -915,7 +1591,18 @@ except Exception as e:
 
 또한, 매우 결함이 많은 동시성 기능을 구현할 때 깔끔한 코드를 작성하는 것도 매우 쉽습니다. 보통 시스템에 많은 스트레스가 가해질 때까지 잘못되었다는 것을 인식하지 못할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 너는 매우 현명하게 전투를 선택하길 원해.
 
@@ -925,7 +1612,18 @@ except Exception as e:
 
 교착상태(Deadlocks): 교착상태는 두 개 이상의 스레드나 프로세스가 상호적으로 서로 자원을 해제하기를 무한정 대기하고 있는 경우 발생한다. 이는 각 프로세스가 한 자원을 보유하고 다른 프로세스가 보유한 다른 자원을 기다리며 순환 의존성을 만들어 서로 대기하는 경우에 발생할 수 있다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## LAW 50: 49가지 법칙을 따르세요
 
@@ -935,6 +1633,17 @@ except Exception as e:
 
 이 직관은 자신의 기술을 숙달한 사람들에게만 주어지며, 만약 초보자이거나 2년 전에 경력을 시작한 경우라면, 이 법칙을 하늘로 가는 유일한 티켓으로 여기는 것이 가장 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 파이썬 개발자들은 코드를 빠르게 테스트하거나 오류를 디버깅하는 곳이 필요합니다. 저는 python-fiddle.com이라는 웹사이트를 개발했습니다. 여기에서 빠르게 코드를 테스트하고 AI/LLMs를 활용하여 가능한 오류의 해결책을 찾을 수 있습니다.

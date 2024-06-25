@@ -3,13 +3,12 @@ title: "iOS에서 Chain of Responsibility 디자인 패턴"
 description: ""
 coverImage: "/assets/img/2024-06-19-ChainofResponsibilityDesignPatterniniOS_0.png"
 date: 2024-06-19 11:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-ChainofResponsibilityDesignPatterniniOS_0.png
 tag: Tech
 originalTitle: "Chain of Responsibility Design Pattern in iOS"
 link: "https://medium.com/@thekrazyjames/chain-of-responsibility-design-pattern-in-ios-2a2d5ae72ccb"
 ---
-
 
 ![Chain of Responsibility](/assets/img/2024-06-19-ChainofResponsibilityDesignPatterniniOS_0.png)
 
@@ -19,7 +18,18 @@ Chain of Responsibility(줄여서 CoR)는 행위 디자인 패턴으로, 클래�
 
 # 구현
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 패턴을 구현하려면 체인 링크 사이에서 공유될 인터페이스를 만들어야 합니다.
 
@@ -35,7 +45,7 @@ protocol RequestHandler {
 ```js
 class Authenticator: RequestHandler {
     var nextHandler: RequestHandler?
-    
+
     func handleRequest(request: HTTPRequest) {
         print("요청 인증 중...")
         // 인증 로직 ...
@@ -45,7 +55,7 @@ class Authenticator: RequestHandler {
 
 class Logger: RequestHandler {
     var nextHandler: RequestHandler?
-    
+
     func handleRequest(request: HTTPRequest) {
         print("요청 로깅 중...")
         // 로깅 로직 ...
@@ -63,7 +73,18 @@ authenticator.handleRequest(request: request)
 // "요청 인증 중..."과 "요청 로깅 중..."을 출력합니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 예시에서, 요청이 실패하면 해당 문제를 처리하여 처리할 수 있다면 다음 대리자에게 처리를 맡깁니다. 반대로, 요청이 완료되면 실행은 성공적으로 종료되고 반환됩니다.
 
@@ -83,7 +104,7 @@ class LocalProvider: DataProvider {
   init(nextProvider: DataProvider? = nil) {
     nextProvider = nextProvider
   }
-  
+
   func fetch(request: DataRequest) async {
     print("로컬에서 가져오는 중")
     // 로컬로 가져오면 반환, 아니면...
@@ -97,7 +118,7 @@ class RemoteProvider: DataProvider {
   init(nextProvider: DataProvider? = nil) {
     nextProvider = nextProvider
   }
-  
+
   func fetch(request: DataRequest) async {
     print("원격에서 가져오는 중")
     // 원격에서 가져오면 반환, 아니면...
@@ -115,7 +136,18 @@ Task {
 
 만약 로컬 저장소에서 데이터를 찾을 수 없는 경우, 클라우드에서 가져와야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 장점과 고려사항
 
@@ -126,7 +158,18 @@ Task {
 
 고려해야 할 사항이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - "최적맞춤" 시스템이 입력을 사용하지 않는다면 일부 요청이 처리되지 않을 수 있습니다.
 

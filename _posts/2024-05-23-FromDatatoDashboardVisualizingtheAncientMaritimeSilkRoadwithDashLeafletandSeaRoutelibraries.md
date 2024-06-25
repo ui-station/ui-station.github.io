@@ -3,13 +3,12 @@ title: "데이터부터 대시보드까지 Dash Leaflet 및 SeaRoute 라이브�
 description: ""
 coverImage: "/assets/img/2024-05-23-FromDatatoDashboardVisualizingtheAncientMaritimeSilkRoadwithDashLeafletandSeaRoutelibraries_0.png"
 date: 2024-05-23 15:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-FromDatatoDashboardVisualizingtheAncientMaritimeSilkRoadwithDashLeafletandSeaRoutelibraries_0.png
 tag: Tech
 originalTitle: "From Data to Dashboard: Visualizing the Ancient Maritime Silk Road with Dash Leaflet and SeaRoute libraries"
 link: "https://medium.com/towards-data-science/from-data-to-dashboard-visualizing-the-ancient-maritime-silk-road-with-dash-leaflet-and-searoute-ac8a521ac4e9"
 ---
-
 
 ![img](/assets/img/2024-05-23-FromDatatoDashboardVisualizingtheAncientMaritimeSilkRoadwithDashLeafletandSeaRoutelibraries_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/from-data-to-dashboard-visualizin
 
 Dash는 React.js를 기반으로 만들어진 강력한 Python 프레임워크로, Python의 모든 계산 능력을 통합하고 있습니다. Dash가 무엇이며 무엇을 할 수 있는지, 어떻게 첫 번째 Dash 앱을 만들고 실행할 수 있는지에 대한 간단한 소개는 이전에 작성한 포스트를 참조해 보세요. Dash에 새로 오신 분이라면, 먼저 이것을 읽어보는 것을 추천합니다...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물에서는 고대 해상 실크로드 경로를 예시로 사용하여 Dash Leaflet 라이브러리와 SeaRoute 라이브러리의 사용을 소개하겠습니다.
 
@@ -29,7 +39,18 @@ SeaRoute는 해상에서 점 간 경로를 계산하는 Python 라이브러리�
 
 따라서 이 게시물의 나머지 부분에서는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - SeaRoute를 사용하여 바다 상의 두 지점 사이의 경로 좌표를 계산하세요.
 - Dash Leaflet을 사용하여 지도상에 경로를 시각화하세요.
@@ -39,7 +60,18 @@ SeaRoute는 해상에서 점 간 경로를 계산하는 Python 라이브러리�
 
 # 해상 실크로드에 대해서 어떻게 생각하세요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해양 실크로드는 고대 시대에 아시아, 아프리카 및 유럽 대륙 간 다양한 문명을 연결한 중요한 해상 무역로였습니다. 이것은 더 넓고 잘 알려진 실크로드 네트워크의 연장선으로, 육지 및 해상 노선을 포함하며 동서양 간 무역, 문화 교류 및 아이디어 및 기술의 전파를 용이하게 했습니다.
 
@@ -47,13 +79,24 @@ SeaRoute는 해상에서 점 간 경로를 계산하는 Python 라이브러리�
 
 해양 실크로드를 따라가는 몇 가지 대표적인 경로 (이후 이 게시물의 나머지 부분에서 지도로 시각화할 예정)는 다음과 같습니다:
 
-- Quanzhou ` Malacca ` Calicut ` Aden ` Alexandria
-- Guangzhou ` Manila ` Brunei ` Surabaya ` Jakarta ` Singapore
-- Hangzhou ` Ningbo ` Nagasaki ` Busan ` Hakata ` Osaka
-- Guangzhou ` Hanoi ` Da Nang ` Singapore ` Colombo ` Muscat
-- Xiamen ` Taiwan ` Okinawa ` Yokohama ` Kobe ` Nagasaki ` Busan
+- Quanzhou `Malacca` Calicut `Aden` Alexandria
+- Guangzhou `Manila` Brunei `Surabaya` Jakarta ` Singapore
+- Hangzhou `Ningbo` Nagasaki `Busan` Hakata ` Osaka
+- Guangzhou `Hanoi` Da Nang `Singapore` Colombo ` Muscat
+- Xiamen `Taiwan` Okinawa `Yokohama` Kobe `Nagasaki` Busan
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해양로 라이브러리는 여러 가지 흥미로운 계산을 제공합니다. 예를 들어, 루트의 길이나 주어진 속도로 여행하는 데 걸리는 시간을 계산할 수 있습니다. 이번 포스트에서는 중국 존크(해양 실크로드 시대에 널리 사용된 선박 종류)가 평균 5 노트의 속도로 항해했다고 가정해 봅시다.
 
@@ -63,7 +106,18 @@ SeaRoute는 해상에서 점 간 경로를 계산하는 Python 라이브러리�
 
 ## 환경 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 모든 것에 앞서, 필요한 라이브러리가 설치되어 있는지 확인해야 합니다. 이러한 라이브러리는 Dash, Dash-Leaflet 및 SeaRoute이며, pip를 사용하여 쉽게 설치할 수 있습니다:
 
@@ -81,19 +135,41 @@ from dash.dependencies import Input, Output
 from searoute import SeaRoute
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 간단히 Dash 앱의 빈 인스턴스를 초기화할 수 있습니다:
 
 ```js
-app = dash.Dash(__name__)
+app = dash.Dash(__name__);
 ```
 
 일반적으로, Dash 앱은 두 가지 주요 구성 요소로 구성됩니다: 레이아웃(layout)과 콜백(callbacks). 레이아웃 구성 요소는 앱의 시각적 및 구조적 부분을 정의하며, 콜백 구성 요소는 앱의 상호 작용을 설명합니다. 그러나 앱의 레이아웃에 더 들어가기 전에 요구되는 데이터가 사용 가능한지 확인해야 합니다.
 
 ## 데이터 가져오기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 해상 실크로드의 일부 지표적인 항구 및 해당 좌표, 간단한 설명을 담은 표를 작성했어요. 항구 좌표는 추정치이며 OpenStreetMap에서 가져온 것이며, 오픈 데이터베이스 라이선스(ODbL)를 따라 사용되었습니다.
 
@@ -136,19 +212,38 @@ ports = pd.DataFrame(ports_data)
 
 그 위에, 지도에서 시각화하고 싶은 일부 지표적인 경로(항구 순서)를 정의하고 그것을 DataFrame에 저장합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-route_1 = ['Quanzhou','Malacca','Calicut','Aden','Alexandria']
-route_2 = ['Guangzhou','Manila','Brunei','Surabaya','Jakarta','Singapore']
-route_3 = ['Hangzhou','Ningbo','Nagasaki','Busan','Hakata','Osaka']
-route_4 = ['Guangzhou','Hanoi','Da Nang','Singapore','Colombo','Muscat']
-route_5 = ['Xiamen','Taiwan','Okinawa','Yokohama','Kobe','Nagasaki','Busan']
+route_1 = ["Quanzhou", "Malacca", "Calicut", "Aden", "Alexandria"];
+route_2 = ["Guangzhou", "Manila", "Brunei", "Surabaya", "Jakarta", "Singapore"];
+route_3 = ["Hangzhou", "Ningbo", "Nagasaki", "Busan", "Hakata", "Osaka"];
+route_4 = ["Guangzhou", "Hanoi", "Da Nang", "Singapore", "Colombo", "Muscat"];
+route_5 = [
+  "Xiamen",
+  "Taiwan",
+  "Okinawa",
+  "Yokohama",
+  "Kobe",
+  "Nagasaki",
+  "Busan",
+];
 
 routes = pd.DataFrame({
-    'Route': ['route_1', 'route_2', 'route_3', 'route_4', 'route_5'],
-    'Port_Sequence': [route_1, route_2, route_3, route_4, route_5]
-})
+  Route: ["route_1", "route_2", "route_3", "route_4", "route_5"],
+  Port_Sequence: [route_1, route_2, route_3, route_4, route_5],
+});
 ```
 
 ## 경로 계산
@@ -156,7 +251,7 @@ routes = pd.DataFrame({
 필요한 계산을 수행하기 위해 일반적인 route_var 변수를 가정하고, 이 경로에 포함된 각 항구의 이름과 좌표를 DataFrame으로 구조화합니다. 보다 구체적으로, 이 코드는 주어진 경로의 각 항구를 반복하고 그들의 좌표 및 설명을 검색합니다.
 
 ```js
-route_rows = [] 
+route_rows = []
 
 for port in route_var: # 경로에 있는 항구를 반복하면서
   port_name = port
@@ -168,7 +263,18 @@ for port in route_var: # 경로에 있는 항구를 반복하면서
 route_df = pd.concat([pd.DataFrame(row, index=[0]) for row in route_rows], ignore_index=True)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지도 시각화를 시작하려면 Dash-Leaflet 라이브러리의 dl.Marker(), dl.Tooltip 및 dl.LayerGroup() 구성 요소를 사용하여 포트를 마커로 시각화하기 위한 지도 객체를 쉽게 생성할 수 있습니다.
 
@@ -191,7 +297,18 @@ route_df = pd.concat([pd.DataFrame(row, index=[0]) for row in route_rows], ignor
 
 바다에서의 경로 계산으로 넘어가면, 아래와 같이 SeaRoute 라이브러리를 사용하여 이를 달성할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 바다에서 경로 계산하기
@@ -204,7 +321,7 @@ for i in range(0, len(route_df) - 1):
     searoutes_coords = sr.searoute(origin, destination, append_orig_dest=True, speed_knot=2)
     searoutes_coords_transposed = [[coord[1], coord[0]] for coord in searoutes_coords['geometry']['coordinates']]
     markers_line += searoutes_coords_transposed
-   
+
     length += searoutes_coords['properties']['length']
     duration_hours += searoutes_coords['properties']['duration_hours']
 duration_days = duration_hours / 24
@@ -228,7 +345,18 @@ patterns = [dict(offset='5%', repeat='30px', endOffset='10%', arrowHead=dict(pix
 dline = dl.PolylineDecorator(children=line, patterns=patterns)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 각 선택된 노선마다 지도의 중심과 영역을 다시 계산하는 것이 적절하다고 생각했습니다. 이렇게 하면 사용자가 선택한 각 노선마다 지도가 다시 초점을 맞춰서, 마커와 선이 적절하게 표시됩니다.
 
@@ -250,17 +378,17 @@ centroid = [sum(x) / len(x), sum(y) / len(y)]
 ```js
 # 노선 포트의 해상 경로 지도 마커 및 경로 계산 함수 정의
 def get_route_line(route_var):
-    
-    route_rows = [] 
+
+    route_rows = []
     for port in route_var: # 노선 내 포트를 반복
         port_name = port
         lat = ports.loc[ports['Port'] == port, 'Latitude'].iloc[0]
         lon = ports.loc[ports['Port'] == port, 'Longitude'].iloc[0]
         row = {'Port': port_name, 'lat': lat, 'lon': lon}
         route_rows.append(row)
-   
+
     route_df = pd.concat([pd.DataFrame(row, index=[0]) for row in route_rows], ignore_index=True)
-   
+
     # 계산된 포트 마커에서 맵 개체 생성
     markers = []
     for i in range(len(route_df)):
@@ -273,7 +401,7 @@ def get_route_line(route_var):
             )
         )
     cluster = dl.LayerGroup(children=markers)
-   
+
     # 해상 경로 계산
     markers_line = []
     length = 0
@@ -284,7 +412,7 @@ def get_route_line(route_var):
         searoutes_coords = sr.searoute(origin, destination, append_orig_dest=True, speed_knot=2)
         searoutes_coords_transposed = [[coord[1], coord[0]] for coord in searoutes_coords['geometry']['coordinates']]
         markers_line += searoutes_coords_transposed
-       
+
         length += searoutes_coords['properties']['length']
         duration_hours += searoutes_coords['properties']['duration_hours']
     duration_days = duration_hours / 24
@@ -300,14 +428,14 @@ def get_route_line(route_var):
     )
     patterns = [dict(offset='5%', repeat='30px', endOffset='10%', arrowHead=dict(pixelSize=8, polygon=False, pathOptions=dict(stroke=True, color='ForestGreen', weight=1, opacity=10, smoothFactor=1)))]
     dline = dl.PolylineDecorator(children=line, patterns=patterns)
-    
+
     # 경계 계산
     min_lat = min(lat for lat, lon in markers_line) - 2
     max_lat = max(lat for lat, lon in markers_line) + 2
     min_lon = min(lon for lat, lon in markers_line) - 2
     max_lon = max(lon for lat, lon in markers_line) + 2
     bounds = [[min_lat, min_lon], [max_lat, max_lon]]
-    
+
     # 중심 계산
     x, y = zip(*markers_line)
     centroid = [sum(x) / len(x), sum(y) / len(y)]
@@ -315,10 +443,20 @@ def get_route_line(route_var):
     return cluster, dline, centroid, bounds, duration_days
 ```
 
-따라서, 모든 계산은 두 개의 함수로 처리됩니다: 
+따라서, 모든 계산은 두 개의 함수로 처리됩니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 레이아웃 생성
 
@@ -328,7 +466,18 @@ get_route_line() 함수를 정의한 후, 이제 앱의 레이아웃 컴포넌�
 
 구체적으로는 다음 사항을 통합하고 싶습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 루트 선택 컨테이너는 루트를 선택할 수있는 드롭다운 메뉴와 선택한 루트, 가정된 선박 속도, 그리고 예상 항해 기간과 같은 각 루트에 대한 정보를 표시합니다.
 - 선택한 루트의 항구 및 해당 해상 경로를 표시하는 지도 시각화가 있습니다.
@@ -352,7 +501,18 @@ get_route_line() 함수를 정의한 후, 이제 앱의 레이아웃 컴포넌�
 
 더 구체적으로, 드롭다운 메뉴는 이전에 정의한 routes DataFrame에 의해 채워집니다. 또한, 루트 정보 패널은 초기에 비어 있고 드롭다운 메뉴에서 루트를 선택하면 콜백을 통해 채워질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지도 시각화에 관한 내용은 다음과 같이 정의할 수 있습니다:
 
@@ -376,7 +536,18 @@ dl.Map() 구성 요소가 dl.BaseLayer() 구성 요소를 통해 선택한 기�
 
 마지막으로 드롭다운 메뉴와 지도 컨테이너를 모두 부모 컨테이너에 포함시켜 앱의 레이아웃 구성 요소로 할당할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # Dash 앱 초기화
@@ -396,7 +567,7 @@ app.layout = html.Div([
         ], style={'display': 'block', 'height': '30%', 'justify-content': 'center', 'color': 'gray'}),
         html.Div(id='route_info', style={'height': '100%'})
     ], style={'display': 'inline-block', 'height': '100%', 'width': '15%', 'background-color': '#17408B', 'color': 'white', 'padding': '2%', 'position': 'relative'}),
-    
+
     # 지도용 오른쪽 패널
     html.Div([
         dl.Map(children=dl.LayersControl(
@@ -419,8 +590,8 @@ Dash 앱의 레이아웃을 설정했으니, 다음 단계는 앱의 상호작�
 ```js
 @app.callback(
     Output('route_markers', 'children'),
-    Output('route_lines', 'children'), 
-    Output('routes_map', 'center'), 
+    Output('route_lines', 'children'),
+    Output('routes_map', 'center'),
     Output('routes_map', 'bounds'),
     Output('route_info', 'children'),
     Input('route_dropdown', 'value')
@@ -433,19 +604,30 @@ def update_map_lines(selected_route):
     else:
         route_var = routes.loc[routes['Route'] == selected_route, 'Port_Sequence'].iloc[0]
         cluster, dline, centroid, bounds, duration_days, length = get_route_line(route_var)
-        
+
         route_name = selected_route.replace('_', ' ').title()
         route_info = [
             html.P([html.B("경로: "), route_name]),
             html.P([html.B("거리: "), f"{length:.0f} km"]),
             html.P([html.B("속도: "), "2 knots"]),
-            html.P([html.B("소요 시간: "), f"{duration_days:.0f} days"]),           
+            html.P([html.B("소요 시간: "), f"{duration_days:.0f} days"]),
         ]
-        
+
         return cluster, [dline], centroid, bounds, route_info
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 콜백은 이전에 만들었던 get_route_line() 함수를 사용하여 마커와 라인 지도 객체를 생성하고, 맵의 중심과 경계를 다시 계산하며 표시할 경로 정보를 계산합니다.
 
@@ -458,7 +640,18 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 전체 앱 파일을 실행할 수 있습니다. 모든 것이 올바르게 완료되었다면 이와 유사한 결과가 나올 것입니다:
 
@@ -468,7 +661,18 @@ if __name__ == '__main__':
 
 Dash 앱은 로컬호스트 서버에서 실행되며 표시된 URL을 통해 웹 브라우저에서 액세스할 수 있습니다. 이렇게 하면 앱의 완전히 작동하는 인스턴스를 볼 수 있고 디버깅할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 내 생각 속으로
 
@@ -478,7 +682,18 @@ Dash 앱은 로컬호스트 서버에서 실행되며 표시된 URL을 통해 �
 
 ✨읽어 주셔서 감사합니다!✨
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물을 즐겼나요? 함께 친구가 되어요!
 

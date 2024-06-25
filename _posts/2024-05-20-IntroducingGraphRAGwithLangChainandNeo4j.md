@@ -3,13 +3,12 @@ title: "LangChain과 Neo4j를 활용한 GraphRAG 소개"
 description: ""
 coverImage: "/assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_0.png"
 date: 2024-05-20 20:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_0.png
 tag: Tech
 originalTitle: "Introducing GraphRAG with LangChain and Neo4j"
 link: "https://medium.com/microsoftazure/introducing-graphrag-with-langchain-and-neo4j-90446df17c1e"
 ---
-
 
 ![그림](/assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_0.png)
 
@@ -19,7 +18,18 @@ LangGraph의 주요 목표는 기존 LangChain의 주요 제한사항인 실행 
 
 하지만 그래프는 Retrieval Augmented Generation (RAG) 시나리오에서도 지식베이스를 조직하는 강력한 도구입니다. 구체적으로, 그래프는 "검색" 단계를 강화하여 더 의미 있는 컨텍스트 검색을 이끌어내어 보다 정확한 생성된 응답을 얻는 데 도움이 됩니다. 이를 위해, 아이디어는 지식베이스를 그래프 기반 데이터베이스(예: Neo4j)에 저장하고, LLM의 의미론적 파워를 활용하여 엔티티와 관계를 올바르게 추출하고 매핑하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 질문은: 어떻게 하는 걸까요? 다행히도 LangChain은 LLMGraphTransformer라는 강력한 라이브러리를 개발했습니다. 이 라이브러리의 목적은 구조화되지 않은 텍스트 데이터를 그래프 기반 표현으로 변환하는 것입니다.
 
@@ -29,7 +39,18 @@ LangGraph의 주요 목표는 기존 LangChain의 주요 제한사항인 실행 
 
 그래프는 객체간의 쌍별 관계를 모델링하는 데 사용되는 수학적 구조입니다. 노드와 관계 두 가지 주요 요소로 구성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 노드: 노드는 전통적인 데이터베이스에서 레코드로 볼 수 있습니다. 각 노드는 사람이나 장소와 같은 객체 또는 개체를 나타냅니다. 노드는 "고객" 또는 "제품"과 같은 역할에 따라 분류되는 레이블에 의해 분류되어 쿼리됩니다.
 - 관계: 이것들은 노드 간의 연결을 나타내며 서로 다른 개체 간의 상호 작용 또는 관계를 정의합니다. 예를 들어, 사람은 "EMPLOYED_BY" 관계를 통해 회사에 연결될 수 있습니다. 또는 "LIVES_IN" 관계를 통해 장소에 연결될 수 있습니다.
@@ -40,7 +61,18 @@ LangGraph의 주요 목표는 기존 LangChain의 주요 제한사항인 실행 
 
 가장 잘 알려진 것 중 하나는 Neo4j이며, 이 데이터베이스는 노드와 관계뿐만 아니라 속성, 레이블 및 경로 기능을 활용하여 데이터를 표현하고 저장하는 유연한 그래프 구조를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 속성: 노드와 관계 모두 속성을 포함할 수 있습니다. 이는 key-value 쌍으로 저장된 속성으로, 엔티티에 관한 구체적인 세부 정보를 제공합니다. 예를 들어, 사람의 이름이나 나이 또는 관계의 길이와 같은 정보를 포함할 수 있습니다.
 - 레이블: 레이블은 노드에 할당된 태그로, 노드를 다양한 유형으로 분류하는 데 사용됩니다. 단일 노드는 여러 레이블을 가질 수 있으며, 이는 그래프를 보다 동적이고 유연하게 조회하는 데 도움이 됩니다.
@@ -52,7 +84,18 @@ LangGraph의 주요 목표는 기존 LangChain의 주요 제한사항인 실행 
 
 검색 증강 생성(RAG)은 LLM(언어 모델)을 기반으로 하는 응용 프로그램 시나리오에서 강력한 기술로, 다음 문제에 대응합니다: "LLM이 훈련된 데이터 세트에 포함되지 않는 내용을 LLM에게 물어보고 싶다면 어떻게 해야 하나요?". RAG의 아이디어는 LLM과 우리가 탐색하고자 하는 지식 베이스를 분리하는 것이며, 이는 적절히 벡터화되거나 임베드되어 VectorDB에 저장된 지식 베이스에서 이루어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RAG는 세 단계로 구성되어 있습니다:
 
@@ -62,8 +105,18 @@ RAG는 세 단계로 구성되어 있습니다:
 
 - 증강 → 검색된 맥락은 추가적인 지시사항, 규칙, 안전 가드레일 및 프롬프트 엔지니어링 기술에 특히 특징적인 유사한 방법을 통해 풍부화됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_3.png" />
 
@@ -73,8 +126,18 @@ RAG는 세 단계로 구성되어 있습니다:
 
 언급했듯이 일반적인 RAG 애플리케이션은 모든 내장된 지식 베이스가 저장된 기저 VectorDB를 가정합니다. 그러나 GraphRAG의 경우 이 접근 방식이 약간 변합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사실 그래프 RAG는 "검색" 단계에서 작동합니다. 그래프 구조의 유연성을 활용하여 지식 베이스를 저장하고, 더 많은 관련 문서 조각을 검색하고 이를 컨텍스트로 확장하는 것을 목표로 합니다 (마이크로소프트의 그래프 RAG에 대한 첫 실험에 대해 여기에서 읽을 수 있습니다).
 
@@ -85,7 +148,18 @@ RAG는 세 단계로 구성되어 있습니다:
 
 참고: Neo4j도 벡터 검색을 지원하며, 이는 하이브리드 그래프 RAG 시나리오에 매우 적합하게 만듭니다. 다음 섹션에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 무슨 방식을 선택하든, 프로세스의 핵심 단계는 지식 베이스를 그래프로 구성하는 것입니다. 우리에게 다행히도, LangChain은 이 목표에 정확히 부합하는 새 라이브러리를 소개했습니다: 비구조화된 지식을 그래프 데이터베이스에 매핑하기 쉽게 만들어주는 것을 목표로 한 새 라이브러리를 도입했습니다. 이 글 전체를 통해 우리는 Neo4j를 활용한 구현을 살펴볼 것입니다.
 
@@ -95,7 +169,18 @@ LangChain은 LLM을 애플리케이션에 통합하기 쉽게 만드는 다양�
 
 LLMGraphTransformer의 좋고 강력한 점은 현재 OpenAI 모델(포함된 Azure OpenAI 및 Mistral)을 활용하여 텍스트 내의 개체와 관계를 파싱하고 분류한다는 것입니다. 실제로 LLM의 자연어 기능 덕분에 결과 그래프는 문서 내의 가장 정교한 상호 연결성조차도 정확하게 포착하여 이전 방법에 비해 극도로 정확합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제부터는 몇 줄의 코드로 구조화되지 않은 문서에서 시작하여 완전히 채워진 그래프를 얻을 수 있습니다 (그 뒤에 있는 로직을 확인하고 싶다면, 여기서 소스 코드를 볼 수 있습니다).
 
@@ -105,32 +190,54 @@ AuraDB 인스턴스를 생성하고 나면, 다음에서 실행 중인 것을 �
 
 ![이미지](/assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-아래는 인스턴스에 연결해야 하는 변수들입니다: 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+아래는 인스턴스에 연결해야 하는 변수들입니다:
 
 ```js
-os.environ["NEO4J_URI"] = os.getenv("NEO4J_URI")
-os.environ["NEO4J_USERNAME"] = "neo4j"
-os.environ["NEO4J_PASSWORD"] = os.getenv("NEO4J_PASSWORD")
-api_key = os.getenv("AZURE_OPENAI_API_KEY")
-azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
-api_version = "2023-07-01-preview"
+os.environ["NEO4J_URI"] = os.getenv("NEO4J_URI");
+os.environ["NEO4J_USERNAME"] = "neo4j";
+os.environ["NEO4J_PASSWORD"] = os.getenv("NEO4J_PASSWORD");
+api_key = os.getenv("AZURE_OPENAI_API_KEY");
+azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT");
+api_version = "2023-07-01-preview";
 ```
 
 이제 LLM을 초기화해보겠습니다:
 
 ```js
 llm = AzureChatOpenAI(
-    model="gpt-4",
-    azure_deployment="gpt-4",
-    api_key=api_key,
-    azure_endpoint=azure_endpoint,
-    openai_api_version=api_version,
-)
+  (model = "gpt-4"),
+  (azure_deployment = "gpt-4"),
+  (api_key = api_key),
+  (azure_endpoint = azure_endpoint),
+  (openai_api_version = api_version)
+);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 시작할 수 있는 샘플 문서가 있습니다! (해리 포터와 마법사의 돌의 처음 몇 줄을 선택했습니다):
 
@@ -153,29 +260,100 @@ print(f"관계:{graph_documents[0].relationships}")
 ```
 
 ```js
-노드:[Node(id='Mr. Dursley', type='Person'), Node(id='Mrs. Dursley', type='Person'), Node(id='Dudley', type='Person'), Node(id='Privet Drive', type='Location'), Node(id='Grunnings', type='Organization'), Node(id='Mrs. Potter', type='Person'), Node(id='The Potters', type='Family')]
-관계:[Relationship(source=Node(id='Mr. Dursley', type='Person'), target=Node(id='Mrs. Dursley', type='Person'), type='MARRIED_TO'), Relationship(source=Node(id='Mr. Dursley', type='Person'), target=Node(id='Dudley', type='Person'), type='PARENT_OF'), Relationship(source=Node(id='Mrs. Dursley', type='Person'), target=Node(id='Dudley', type='Person'), type='PARENT_OF'), Relationship(source=Node(id='Mr. Dursley', type='Person'), target=Node(id='Grunnings', type='Organization'), type='WORKS_AT'), Relationship(source=Node(id='Mr. Dursley', type='Person'), target=Node(id='Privet Drive', type='Location'), type='LIVES_AT'), Relationship(source=Node(id='Mrs. Dursley', type='Person'), target=Node(id='Privet Drive', type='Location'), type='LIVES_AT'), Relationship(source=Node(id='Mrs. Dursley', type='Person'), target=Node(id='Mrs. Potter', type='Person'), type='SISTER_OF'), Relationship(source=Node(id='The Dursleys', type='Family'), target=Node(id='The Potters', type='Family'), type='WANTS_TO_AVOID')]
+노드: [
+  Node((id = "Mr. Dursley"), (type = "Person")),
+  Node((id = "Mrs. Dursley"), (type = "Person")),
+  Node((id = "Dudley"), (type = "Person")),
+  Node((id = "Privet Drive"), (type = "Location")),
+  Node((id = "Grunnings"), (type = "Organization")),
+  Node((id = "Mrs. Potter"), (type = "Person")),
+  Node((id = "The Potters"), (type = "Family")),
+];
+관계: [
+  Relationship(
+    (source = Node((id = "Mr. Dursley"), (type = "Person"))),
+    (target = Node((id = "Mrs. Dursley"), (type = "Person"))),
+    (type = "MARRIED_TO")
+  ),
+  Relationship(
+    (source = Node((id = "Mr. Dursley"), (type = "Person"))),
+    (target = Node((id = "Dudley"), (type = "Person"))),
+    (type = "PARENT_OF")
+  ),
+  Relationship(
+    (source = Node((id = "Mrs. Dursley"), (type = "Person"))),
+    (target = Node((id = "Dudley"), (type = "Person"))),
+    (type = "PARENT_OF")
+  ),
+  Relationship(
+    (source = Node((id = "Mr. Dursley"), (type = "Person"))),
+    (target = Node((id = "Grunnings"), (type = "Organization"))),
+    (type = "WORKS_AT")
+  ),
+  Relationship(
+    (source = Node((id = "Mr. Dursley"), (type = "Person"))),
+    (target = Node((id = "Privet Drive"), (type = "Location"))),
+    (type = "LIVES_AT")
+  ),
+  Relationship(
+    (source = Node((id = "Mrs. Dursley"), (type = "Person"))),
+    (target = Node((id = "Privet Drive"), (type = "Location"))),
+    (type = "LIVES_AT")
+  ),
+  Relationship(
+    (source = Node((id = "Mrs. Dursley"), (type = "Person"))),
+    (target = Node((id = "Mrs. Potter"), (type = "Person"))),
+    (type = "SISTER_OF")
+  ),
+  Relationship(
+    (source = Node((id = "The Dursleys"), (type = "Family"))),
+    (target = Node((id = "The Potters"), (type = "Family"))),
+    (type = "WANTS_TO_AVOID")
+  ),
+];
 ```
 
 보시다시피, llm_transformer는 우리가 지정할 필요 없이 데이터에서 관련 엔티티와 관계를 캡처했습니다. 이제 이러한 노드와 관계를 AuraDB에 저장해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 graph.add_graph_documents(
-  graph_documents, 
-  baseEntityLabel=True, 
-  include_source=True
-)
+  graph_documents,
+  (baseEntityLabel = True),
+  (include_source = True)
+);
 ```
 
 그리고 다 끝났어요! 이제 우리는 채워진 그래프 데이터베이스를 가지게 되었습니다. 이제 우리 온라인 AuraDB 인스턴스에서 올바르게 업로드된 문서를 확인할 수 있습니다.
 
 <img src="/assets/img/2024-05-20-IntroducingGraphRAGwithLangChainandNeo4j_6.png" />
 
-또한 우리 DB의 그래픽 표현을 다음의 Python 함수로 그릴 수도 있습니다:  
+또한 우리 DB의 그래픽 표현을 다음의 Python 함수로 그릴 수도 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 지정된 Cypher 쿼리에서 그래프를 보여주는 함수
@@ -211,25 +389,36 @@ embeddings = AzureOpenAIEmbeddings(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 vector_index = Neo4jVector.from_existing_graph(
-    embeddings,
-    search_type="hybrid",
-    node_label="Document",
-    text_node_properties=["text"],
-    embedding_node_property="embedding"
-)
+  embeddings,
+  (search_type = "hybrid"),
+  (node_label = "Document"),
+  (text_node_properties = ["text"]),
+  (embedding_node_property = "embedding")
+);
 ```
 
 이제 vector_index를 벡터 유사도 방법을 사용하여 쿼리할 수 있습니다:
 
 ```js
-query = "떄리 누구야?"
+query = "떄리 누구야?";
 
-results = vector_index.similarity_search(query, k=1)
-print(results[0].page_content)
+results = vector_index.similarity_search(query, (k = 1));
+print(results[0].page_content);
 ```
 
 ```js
@@ -253,13 +442,24 @@ print(results[0].page_content)
 이유는 없었다. 더즐리 부부는 더즐리 씨 부부 내의 아이와 섞이는 것을 원치 않았다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론, 텍스트를 조각내지 않았기 때문에 쿼리는 전체 문서를 반환할 것입니다. 다음 파트에서는 더 큰 문서를 다룰 때 이것이 관련성을 가지게 되는 방법을 알아볼 것입니다.
 
 마지막 단계는 모델에서 생성된 실제 답변을 가져오는 것입니다. 이를 위해 두 가지 다른 접근 방법을 활용할 수 있습니다:
 
-- Neo4j의 Cypher 쿼리 언어를 활용하여 그래프 데이터베이스와 상호 작용하는 사전 구축된 구성 요소인 CypherChain을 활용합니다. Neo4j와 네이티브로 통합되어 있으므로 AuraDB 그래프 기능과 상호 작용하여 쿼리 결과를 이해함으로써 문맥을 고려한 응답을 활성화합니다. 높은 정밀도, 문맥 인식, 그리고 Neo4j의 그래프 기능과의 직접적 상호 작용이 필요할 때 권장됩니다. 
+- Neo4j의 Cypher 쿼리 언어를 활용하여 그래프 데이터베이스와 상호 작용하는 사전 구축된 구성 요소인 CypherChain을 활용합니다. Neo4j와 네이티브로 통합되어 있으므로 AuraDB 그래프 기능과 상호 작용하여 쿼리 결과를 이해함으로써 문맥을 고려한 응답을 활성화합니다. 높은 정밀도, 문맥 인식, 그리고 Neo4j의 그래프 기능과의 직접적 상호 작용이 필요할 때 권장됩니다.
 
 ```js
 from langchain.chains import GraphCypherQAChain
@@ -269,7 +469,18 @@ response = chain.invoke({"query": "Mr. Dursley의 직업은 무엇인가요?"})
 response
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 > 새로운 GraphCypherQAChain 체인에 입장 중...
@@ -297,10 +508,21 @@ result["result"]
 ```
 
 ```js
-'Mr. Dursley는 드릴을 만드는 회사인 Grunnings의 이사입니다.'
+"Mr. Dursley는 드릴을 만드는 회사인 Grunnings의 이사입니다.";
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 응답의 정확성을 잠시 보류하는 것이 좋습니다. 문서는 아직 청크로 나누어지지 않았으므로 현재 벤치마킹하는 것은 의미가 없습니다. 다음 파트에서는 이러한 구성 요소 간의 차이를 인식하고 이를 통해 훌륭한 RAG 성능을 낼 수 있는 방법에 대해 알아볼 것입니다.
 
@@ -310,7 +532,18 @@ result["result"]
 
 제2부를 기대해주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 참고 자료
 

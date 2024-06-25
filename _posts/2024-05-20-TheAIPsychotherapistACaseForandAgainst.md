@@ -3,13 +3,12 @@ title: "AI 정신과 의사 찬반양론"
 description: ""
 coverImage: "/assets/img/2024-05-20-TheAIPsychotherapistACaseForandAgainst_0.png"
 date: 2024-05-20 20:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TheAIPsychotherapistACaseForandAgainst_0.png
 tag: Tech
 originalTitle: "The AI Psychotherapist: A Case For and Against"
 link: "https://medium.com/@awjuliani/the-ai-psychotherapist-a-case-for-and-against-90085a152ca2"
 ---
-
 
 ![image](/assets/img/2024-05-20-TheAIPsychotherapistACaseForandAgainst_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@awjuliani/the-ai-psychotherapist-a-case-for-and-again
 
 # AI 심리치료사에 대한 주장
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 생각하는 것을 먼저 명확히 하고 싶어요. 오늘날 ChatGPT나 Google Gemini과 같은 제품에서 익숙한 상대적으로 깔끔한 채팅 인터페이스보다는 가상 AI 상담사는 매우 유창하고 반응성이 뛰어난 언어로 의사소통할 것입니다. 또한 가상 아바타를 통해 시각적으로 나타낼 것이며 클라이언트의 오디오 및 비디오 실시간 스트림에 접근할 것입니다. 이렇게 하면 Zoom 및 다른 텔레헬스 플랫폼에서 다른 사람과 대화할 때 가능한 것과 비슷한 매끄러운 소통이 가능할 것입니다. 현재 OpenAI의 Sora 모델을 비롯한 이 분야의 현재 진전과 급속한 발전 추이로 보아, 이렇게 AI 상담사와 마치 비디오 통화 중 다른 사람과 대화하는 것처럼 가능해질 것으로 보입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@awjuliani/the-ai-psychotherapist-a-case-for-and-again
 
 얼마나 넓고 맞춤화된 지식을 가지더라도 심리치료에서 치유가 나타날 수 있는 요소는 아닙니다. 다른 필수적인 요소 중 하나는 상담사와 클라이언트 간 상호작용 양재 관계의 실제 특성과 관련이 있습니다. 칼 로저스와 같은 이론가들은 상담사가 클라이언트에 대해 무조건적인 긍정적 태도를 만들고 유지해야 한다고 설명했습니다. 이는 두 가지 목적으로 이루어집니다. 첫째는 클라이언트가 상답사와 함께 어려운 생각, 감정 및 기억을 공유할 만큼 충분히 편안한 환경을 조성하는 것입니다. 둘째는 클라이언트가 상담실을 떠나세째 세상으로 나갈 때 함께 가져갈 수 있는 신뢰할 수 있고 안전한 세상에 대한 믿음을 육성할 수 있는 모델 역할을 하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 치료사들이 조건 없는 지지 분위기를 만드는 데 뛰어납니다. 그러나 특히 현대 사회에서는 이것이 자연스럽게 일어나는 것이 아닙니다. 누군가와 관여하는 과정에서 심사숙고, 지루함, 혐오, 불편함의 상태로 빠질 수 있습니다. 그에 비해 AI 치료사는 개인적인 감정과 판단에 방해받지 않는 불변의 긍정적 태도로 고객들을 대할 수 있는 잠재력이 있습니다. 이는 AI 치료사가 전형적인 치료사 고객을 더 나은 방식으로 지원할 수 있을 뿐만 아니라 성격 장애나 다른 대인관계 문제로 현재 소홀히 다루기 어려운 잠재적 고객도 지원하는 데 도움이 될 것입니다.
 
@@ -37,7 +58,18 @@ AI 치료사가 인간 치료사보다 가지는 마지막 잠재력은 항상 �
 
 고객의 필요에 항상 이용 가능한 치료사의 물리적인 인간 한계 외에도 가격 문제가 존재합니다. 서구 사회에서 많은 사람들에게 심리치료는 흔들 수 없을 정도로 비싼 여유로운 것입니다. 적어도 미국에서는 건강 보험 제도가 대부분의 사람들에게 충분한 정신 건강 혜택을 제공하지 않습니다. 현재의 기술 발전속도를 고려하면, 여기서 설명하는 AI 치료사 종류는 전통적인 인간 치료사와 상호작용하는 데 필요한 비용이 몇 배나 저렴할 것으로 예상됩니다. 또한 이와 같은 시스템을 구동하는 데 필요한 모든 것이 다가오는 몇 년 안에 개인의 휴대전화나 노트북에 로컬에 살 수 있게 될 가능성도 존재합니다. 이것은 비용을 거의 제로로 줄이고, 신뢰 환경을 보장하는 데 중요한 개인 정보 보호 보장을 제공할 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 치료사의 가능성에 대해 회의적이자 낙관적할 여러 가지 이유가 있습니다. 첫 번째 주요 우려 사항은 본문에서 설명한 능력이 실현되지 않을 수 있다는 것입니다. 현재 AI 연구 및 개발은 빠르게 진행되고 있지만, Gary Marcus와 같은 회의론자들은 우리가 경합점에 다가왔다고 예측하고 있습니다. 그는 이전에 틀렸더라도, 현재 모델보다 훨씬 큰 규모의 모델을 훈련하는 데 필요한 데이터, 계산 및 에너지가 실현 가능하지 않아질 수 있다는 이유가 있습니다. 모델 능력의 경합점에 다가간다면, AI 치료사는 현재 최고 수준의 LLM만큼 뛰어날 수 없을 것이며, 상대적으로 인상적이지만 현재는 심리치료에 참여할 수 있는 민감한 작업에는 아직까지 미치지 못할 수 있습니다. 그치만 기술이 계속 발전한다고 가정하고 2030년까지 위에서 설명한 능력을 갖춘 AI 치료사가 나타나게 된다면, 이 시스템이 훈련받은 인간만큼 품질 높은 심리치료를 제공할 수 있을지에 대한 의문은 여전히 존재합니다.
 
@@ -47,7 +79,18 @@ AI 치료사의 가능성에 대해 회의적이자 낙관적할 여러 가지 �
 
 또한, 고려해야 할 이해의 특수한 경우가 있습니다. 그것은 고객의 “고백”의 역할입니다. 치료 과정의 중심에는 고객이 자신과 자신의 세계의 현실과 더 가까운 관계에 들어가는 것이 있습니다. 이는 종종 우리가 부끄러워하거나 혐오스러워하는 자아의 부분을 진실하게 대면하고자 함을 의미할 수 있습니다. 자신의 이러한 부분을 다른 사람과 공유하면서 그들도 마음, 신념, 그리고 기억이 있는 다른 사람과 함께하는 것이 중요합니다. 그러나 중요한 점은 이것이 다른 사람에게 설명된다는 것 때문에 AI 치료사와 이러한 것들을 공유하는 것은 아무 말 없이 비밀 노트에 쓰는 것과 다르지 않습니다. AI에게 말하면, 그것은 그저 0과 1의 바다 속으로 사라집니다. 그러나 다른 사람에게 말하면, 그것은 영원히 살아갈 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 아마도 가장 걱정되는 점은 AI 상담사가 다른 사람보다 효과적으로 클라이언트에게 도전할 수 없을 수도 있습니다. 정신 치료의 목표가 클라이언트를 현실과 더 크게 일치시키는 것이라면, 그러한 행동이 유익할 때 클라이언트의 신념에 도전하는 것은 상담사가 참여해야 하는 중요한 활동입니다. 이는 종종 "꼰대 사랑"의 형태를 취할 수 있지만, 그냥 클라이언트가 자기 자신에게 책임감을 갖도록 유지하는 단순한 행동이 될 수도 있습니다. 위에서 상담사와 어둡고 부정적인 면을 공유하는 중요성에 대해 언급했습니다. 상담사가 클라이언트에게 그 어두운 면에 대해 상기시키는 것을 두려워하지 않는 것이 또한 중요합니다. 중요한 점은 이러한 행동이 절대적인 긍정적인 인도에 대한 필요와 상반되는 것이 될 필요는 없다는 것입니다. 사실, 이 둘은 실제로 효과적일 수 있도록 함께 가야 합니다.
 
@@ -57,7 +100,18 @@ AI 치료사의 가능성에 대해 회의적이자 낙관적할 여러 가지 �
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 AI 치료사에 대해 기대되고 매우 조심스러워해야 할 좋은 이유들이 있습니다. 긍정적인 면에서 이러한 시스템은 인간 치료사보다 더 많은 지식을 가지고 있을 수 있으며 사람다운, 이용 가능하며 주의 깊을 수 있습니다. 반면에, 필요한 경우에는 고객을 이해하고 도전할 수 있는 다른 인간을 만나는 실질적인 이점이 상실됩니다. 이러한 한계가 있기 때문에, 아마도 가장 희망적인 단기적 결과는 심리치료 과정에서 인간-인공지능 공동작업의 형태일 수 있습니다. 인간 치료사를 보조하는 AI 어시스턴트는 치료사를 지원함으로써 필기를 하거나, 잊어버렸거나 오류가 있을 수 있는 사항들을 지적하거나, 향후 세션에서 토론할 주제를 제안할 수 있습니다. 그리고 실제 치료적인 관계는 여전히 고객과 치료사 사이에 남아 있으며, 그곳에서 치유의 최대 잠재력이 존재합니다.
 

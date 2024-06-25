@@ -3,14 +3,12 @@ title: "iOS SwiftUI 프로젝트에서 MVVM으로 적용하는 Clean Architectur
 description: ""
 coverImage: "/assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_0.png"
 date: 2024-06-19 14:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_0.png
 tag: Tech
 originalTitle: "The Clean Architecture with MVVM in the iOS SwiftUI Project"
 link: "https://medium.com/stackademic/the-clean-architecture-with-mvvm-in-the-ios-swiftui-project-05dd8fe9ec7a"
 ---
-
-
 
 ![Clean Architecture](/assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_0.png)
 
@@ -20,9 +18,18 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 
 # 클린 아키텍처
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![그림](/assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_1.png)
 
@@ -32,8 +39,18 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 
 클린 아키텍처에는 다양한 층이 있으며, 그룹화한 후에 프레젠테이션, 도메인 및 데이터 층 세 개로 구분할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_2.png" />
 
@@ -43,7 +60,18 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 
 ## 도메인 계층
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 가장 안쪽 레이어입니다. 이 레이어에는 Entities, Use cases 및 Repository interfaces가 포함되어 있습니다. 이 레이어는 다른 레이어에 종속적이지 않습니다. 따라서 이 레이어는 재사용이 가능하고 테스트하기 쉽습니다. 또한 비즈니스 로직이 여기에 작성됩니다.
 
@@ -53,7 +81,18 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 
 ## 의존성 방향과 데이터 흐름
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인터페이스(UI)는 ViewModel(프리젠터)에서 메서드를 호출합니다. ViewModel은 Use Case를 실행하고, Use Case는 데이터를 가져오기 위해 Repository를 호출합니다. Repository는 네트워크나 영구 저장 DB에서 데이터를 가져옵니다. 데이터는 다시 UI로 흐르고, 여기서 데이터를 보여줍니다.
 
@@ -63,7 +102,18 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 
 이 흐름은 Clean Architecture의 종속성 규칙을 위배합니다. 종속성 규칙에 따르면, 가장 내부에 있는 도메인 레이어는 가장 바깥에 있는 데이터 레이어에 종속되어서는 안 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도메인 계층(Use Case)이 사용 사례(도메인 계층)부터 직접적으로 의존하는 대신, 사용 사례는 저장소 인터페이스/프로토콜에 의존하게 됩니다. 이 저장소 프로토콜은 도메인 계층 안에 존재할 것입니다. 이렇게 함으로써 우리는 흐름의 방향을 뒤집을 수 있습니다. 이 뒤집힌 방향이 어떻게 이뤄지는지 자세히 이해해 봅시다:
 
@@ -73,7 +123,18 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 
 인터페이스는 더 높은 수준(도메인에서)에서 결정되고 해당 수준의 클래스(사용 사례)가 이에 의존하므로 추상화에 의존하게 됩니다. 게다가 하위 수준 클래스(저장소) 구현은 더 높은 수준에서 정의된 인터페이스에 의존하므로 세부 사항은 이제 추상화에 의존하게 됩니다. 이것이 바로 의존성 역전의 원칙입니다. 기억하세요, 소프트웨어의 내부 원이 더 높은 수준의 소프트웨어 수준이므로 도메인 계층은 데이터 계층보다 높은 수준에 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, 흐름이 다음과 같이 됩니다:
 
@@ -83,7 +144,18 @@ Clean architecture는 Robert C. Martin(명칭: Uncle Bob)이 소개한 소프트
 
 # 예제 프로젝트 — ProductClean
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 공개 API에서 제품 목록을 가져와 목록으로 표시하는 간단한 iOS 애플리케이션입니다. 목록에서 각 항목을 클릭하면 제품 세부 정보 페이지로 이동합니다. 이 프로젝트는 MVVM과 Clean 아키텍처를 사용하여 구축되었습니다. SwiftUI를 사용하여 UI를 구현했습니다.
 
@@ -93,7 +165,18 @@ Clean 아키텍처는 구성 요소 간의 역할 분리를 위해 사용되었�
 
 HLD를 통해 이 앱에는 제품이라는 단일 모듈이 있음을 알 수 있습니다. 필요한 경우 여러 모듈을 가질 수 있습니다. 예를 들어, 이 앱에 로그인 및 결제 기능을 추가하려면 로그인 및 결제 모듈을 추가할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 세 개의 레이어를 가지고 있다는 것을 알고 있어요. 각 레이어를 자세히 살펴볼게요:
 
@@ -103,7 +186,18 @@ HLD를 통해 이 앱에는 제품이라는 단일 모듈이 있음을 알 수 �
 
 프레젠테이션 레이어에는 ProductListView와 ProductListViewModel이 포함되어 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ProductListView
 
@@ -151,7 +245,18 @@ struct ProductListView<ViewModel>: View where ViewModel: ProductListViewModelPro
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고: @ObservedObject 프로퍼티 래퍼는 뷰 내에 observable 유형인 ViewModel을 저장하는 데 사용됩니다.
 
@@ -173,18 +278,18 @@ protocol ProductListViewModelProtocol: ObservableObject {
 }
 
 final class ProductListViewModel: ProductListViewModelProtocol {
-    
+
     @Published var products: [ProductListItemViewModel] = []
     @Published var isError: Bool = false
     @Published var error: String = ""
     var isEmpty: Bool { return products.isEmpty }
     var title: String = AppConstant.productListTitle
     private let productListUseCase: ProductListUseCase!
-    
+
     init(useCase: ProductListUseCase) {
         self.productListUseCase = useCase
     }
-    
+
     /// This method fetches products and catches error if any
     @MainActor func fetchProducts() async {
         do {
@@ -200,7 +305,7 @@ final class ProductListViewModel: ProductListViewModelProtocol {
             }
         }
     }
-    
+
     /// This method maps Product to ProductListItemViewModel
     /// - Parameter products: array of Product
     /// - Returns: array of ProductListItemViewModel
@@ -212,7 +317,7 @@ final class ProductListViewModel: ProductListViewModelProtocol {
                                                 category: $0.category.capitalized,
                                            image: $0.thumbnail) }
     }
-    
+
     /// This method checks if the loader should be shown or not
     /// - Returns: True if there the product array is empty and error is not there
     func shouldShowLoader() -> Bool {
@@ -221,7 +326,18 @@ final class ProductListViewModel: ProductListViewModelProtocol {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ProductListViewModel은 제품 배열, 오류 및 기타 정보를 저장하기 위해 ObservableObject 프로토콜을 준수합니다. ProductListViewModel 내부의 속성에는 뷰에서 액세스되기 때문에 뷰가 업데이트되는 @Published 속성 래퍼가 추가되었습니다. 따라서 @Published 속성 (제품, isError 등) 중 하나가 변경되면 뷰가 업데이트됩니다.
 
@@ -231,9 +347,20 @@ fetchProducts 함수에 @MainActor 속성이 사용되면 해당 작업이 주 �
 
 MVVM(Mode-View-ViewModel)은 ViewModel이 뷰와 모델 사이에서 중재자 역할을 하는 디자인 패턴입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-![image](/assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_4.png) 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+![image](/assets/img/2024-06-19-TheCleanArchitecturewithMVVMintheiOSSwiftUIProject_4.png)
 
 뷰모델은 UI 프레임워크를 가져오지 않기 때문에 재사용 가능하고 테스트할 수 있습니다. 하나의 뷰모델에 대해 서로 다른 뷰 구현을 사용할 수 있습니다. 예를 들어, 같은 뷰모델에 대해 UIKit 또는 SwiftUI 뷰를 사용할 수 있습니다.
 
@@ -241,7 +368,18 @@ MVVM(Mode-View-ViewModel)은 ViewModel이 뷰와 모델 사이에서 중재자 �
 
 저희 프로젝트에서 MVVM은 UI와 프리젠터 간의 관심을 분리하는 데 사용되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 도메인 레이어
 
@@ -251,7 +389,18 @@ MVVM(Mode-View-ViewModel)은 ViewModel이 뷰와 모델 사이에서 중재자 �
 
 특정 모듈의 요구 사항에 따라 여러 개의 유스 케이스가 있을 수 있고, 하나의 유스 케이스가 다른 유스 케이스에 의존할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 계층은 Use Case에 쓰인 응용 프로그램 비즈니스 규칙 때문에 가장 중요한 계층입니다. 우리는 Use Case를 보기만 해도 응용 프로그램이 무엇을 하는지 이해할 수 있습니다. 이것을 Screaming Architecture라고 합니다.
 
@@ -267,20 +416,31 @@ protocol ProductListUseCase {
 }
 
 final class DefaultProductListUseCase: ProductListUseCase {
-    
+
     private let repository: ProductListRepository
-    
+
     init(repository: ProductListRepository) {
         self.repository = repository
     }
-    
+
     func fetchProductList() async throws -> [ProductDomainListDTO] {
         try await repository.fetchProductList()
     }
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ProductListRepositoryProtocol
 
@@ -294,7 +454,18 @@ protocol ProductListRepository {
 
 참고: ProductListRepositoryProtocol은 의존성 역전에 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ProductDomainListDTO
 
@@ -315,7 +486,18 @@ struct ProductDomainListDTO {
 
 ## 데이터 레이어
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 레이어 = 리포지토리 구현 + 서비스 / 데이터 저장소
 
@@ -325,19 +507,30 @@ DefaultProductListRepository
 
 DefaultProductListRepository는 ProductListService에 액세스하고 서비스로부터 제품 데이터를 가져와 도메인으로 데이터를 반환하는 fetchProductList 함수를 갖고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import Foundation
 
 final class DefaultProductListRepository: ProductListRepository {
-    
+
     private let service: ProductListService
-    
+
     init(service: ProductListService) {
         self.service = service
     }
-    
+
     func fetchProductList() async throws -> [ProductDomainListDTO] {
         try await service.fetchProductListFromNetwork().products.map { $0.toDomain() }
     }
@@ -350,8 +543,18 @@ ProductListService
 
 ProductListService는 네트워크에서 제품 데이터를 가져 오는 fetchProductListFromNetwork 함수 내에서 사용되는 apiDataService에 액세스 권한이 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import Foundation
@@ -361,13 +564,13 @@ protocol ProductListService {
 }
 
 final class DefaultProductListService: ProductListService {
-    
+
     private let apiDataService: DataTransferService
-    
+
     init(apiDataService: DataTransferService) {
         self.apiDataService = apiDataService
     }
-    
+
     func fetchProductListFromNetwork() async throws -> ProductPageDataListDTO {
         let productListNetworkRequest = DefaultNetworkRequest(path: APIEndpoint.products,method: .get)
         return try await apiDataService.request(request: productListNetworkRequest)
@@ -387,12 +590,12 @@ protocol DataTransferService {
 }
 
 final class DefaultDataTransferService: DataTransferService {
-    
+
     private let networkManager: NetworkManager
     init(networkManager: NetworkManager) {
         self.networkManager = networkManager
     }
-    
+
     /// 네트워크 매니저에서 데이터를 가져와 decode 메서드를 사용하여 데이터를 디코딩하는 메서드입니다.
     /// - Parameter request: 네트워크 요청
     /// - Returns: Decodable 유형의 객체
@@ -400,7 +603,7 @@ final class DefaultDataTransferService: DataTransferService {
         let data = try await networkManager.fetch(request: request)
         return try decode(data: data)
     }
-    
+
     /// JSONDecoder를 사용하여 데이터를 디코딩하는 메서드입니다.
     /// - Parameter data: 데이터
     /// - Returns: Decodable 유형의 객체
@@ -424,16 +627,16 @@ protocol NetworkManager {
 }
 
 final class DefaultNetworkManager: NetworkManager {
-    
+
     private let config: NetworkConfigurable
     private let sessionManager: NetworkSessionManager
-    
+
     init(config: NetworkConfigurable,
         sessionManager: NetworkSessionManager = DefaultNetworkSessionManager()) {
         self.config = config
         self.sessionManager = sessionManager
     }
-    
+
     /// 세션 매니저에서 데이터를 가져오고 데이터 및 응답을 유효성 검사하는 메서드입니다.
     /// - Parameter request: 네트워크 요청
     /// - Returns: 데이터
@@ -447,7 +650,18 @@ final class DefaultNetworkManager: NetworkManager {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노트: 네트워크 관련된 더 많은 코드는 예시 프로젝트의 네트워킹 폴더에 있습니다.
 
@@ -457,13 +671,24 @@ final class DefaultNetworkManager: NetworkManager {
 
 우리의 예시 프로젝트에서는 AppDIContainer라는 클래스를 만들었는데, 이 클래스에는 apiDataTransferService가 포함되어 있습니다. 이 apiDataTransferService 객체는 Product 모듈을 생성하는 데 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import Foundation
 
 final class AppDIContainer {
-    
+
     lazy private var apiDataTransferService: DataTransferService = {
         let config = ApiDataNetworkConfig(baseURL: AppConfiguration.baseURL)
         let sessionManager = DefaultNetworkSessionManager(session: SharedURLSession.shared)
@@ -484,7 +709,18 @@ final class AppDIContainer {
 
 클린 아키텍처는 매우 확장 가능하고 테스트 가능하며 유지보수 가능한 소프트웨어를 구축하는 데 도움을 줍니다. 각 계층이 특정 역할을 가지고 다른 부분과 격리되도록 응용 프로그램을 여러 계층으로 분리하여 관련성을 제공합니다. 이는 재사용성의 가능성을 높이고 비즈니스 요구 사항 및 경쟁 시장의 변화에 대응할 수 있도록 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셔서 감사합니다. 연락 기다리겠습니다!
 

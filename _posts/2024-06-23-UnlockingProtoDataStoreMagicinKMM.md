@@ -3,13 +3,12 @@ title: "KMM에서 Proto DataStore 마법을 해제하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-UnlockingProtoDataStoreMagicinKMM_0.png"
 date: 2024-06-23 01:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UnlockingProtoDataStoreMagicinKMM_0.png
 tag: Tech
 originalTitle: "Unlocking Proto DataStore Magic in KMM"
 link: "https://medium.com/@aribmomin111/unlocking-proto-datastore-magic-in-kmm-d397f40a0805"
 ---
-
 
 <img src="/assets/img/2024-06-23-UnlockingProtoDataStoreMagicinKMM_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@aribmomin111/unlocking-proto-datastore-magic-in-kmm-d
 
 Jetpack DataStore는 프로토콜 버퍼를 사용하여 키-값 쌍 또는 형식화된 객체를 저장할 수 있는 데이터 저장 솔루션입니다. DataStore는 Kotlin 코루틴과 Flow를 사용하여 데이터를 비동기적으로, 일관되게 및 트랜잭션 처리할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DataStore은 두 가지 다른 구현을 제공합니다:
 
@@ -30,7 +40,18 @@ Google이 이제 DataStore Multiplatform을 출시했습니다!
 
 이 문서에서는 KMM에 Proto DataStore를 구현하여 Protocol Buffer를 활용할 것입니다. KMM에서 Protocol Buffer를 사용하기 위해 Wire를 사용했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 전체 코드
 
@@ -45,7 +66,18 @@ commonMain.dependencies {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - app/build.gradle.kts 파일에 Wire Gradle 플러그인을 추가해주세요.
 
@@ -67,7 +99,18 @@ wire {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - src/commonMain/proto 디렉토리 아래 preference_data.proto 파일을 생성해주세요
 
@@ -87,7 +130,18 @@ message PreferenceData {
 
 - PreferenceData에 대한 Protocol Buffer 직렬화기를 생성해주세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kt
 // commonMain 안에 있습니다
@@ -146,7 +200,18 @@ actual fun getDataStore(): DataStore<PreferenceData> {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 // iosMain 내부
@@ -205,8 +270,18 @@ PreferenceImpl(private val dataStore: DataStore<PreferenceData> = getDataStore()
 
 - Compose Multiplatform에서 DataStore 사용법
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -242,8 +317,18 @@ fun App() {
 
 <img src="https://miro.medium.com/v2/resize:fit:600/1*myxIzIctkEZvgk81vKV0-w.gif" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 코멘트에 여러분의 제안과 개선 사항을 남겨주세요. 편안한 마음으로 연락해주세요!
 

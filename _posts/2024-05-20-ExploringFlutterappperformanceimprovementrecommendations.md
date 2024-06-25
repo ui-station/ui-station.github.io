@@ -3,13 +3,12 @@ title: "플러터 앱 성능 향상을 위한 권장 사항 탐색"
 description: ""
 coverImage: "/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_0.png"
 date: 2024-05-20 16:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_0.png
 tag: Tech
 originalTitle: "Exploring Flutter app performance improvement recommendations"
 link: "https://medium.com/@alex_gl/exploring-flutter-app-performance-improvement-recommendations-5bae61586c71"
 ---
-
 
 앱 성능은 소프트웨어 제품을 개발할 때 항상 염두에 두어야 할 중요한 요소입니다. 앱 성능에 신경을 쓰면 앱을 믿을 수 있게 만들어주고 유용한 기능을 제공하고 멋진 사용자 인터페이스를 생성함으로써 기존 사용자를 유지하고 새 사용자를 유치하는 데 도움이 됩니다.
 
@@ -21,7 +20,18 @@ Flutter 앱은 기본적으로 성능이 우수합니다. 단순히 권장 사�
 - 배터리 소모가 빠른 경우
 - 기기가 과도하게 발열하는 경우
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부가 관찰되면 문제가 발생한 곳을 찾아야 합니다. 앱 성능은 릴리스 모드와 비슷하지만 DevTools를 사용할 수 있는 프로파일 모드에서 실제 기기에서 조사되어야 합니다:
 
@@ -33,7 +43,18 @@ flutter run --profile
 
 앱 성능에 대해 이야기할 때 리소스 소비를 의미한다는 것을 언급해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 시간 — 프로그램이나 코드의 실행에 필요한 시간량입니다. 초당 프레임 수(FPS), 앱 시작 시간, CPU 사용량 등으로 측정할 수 있습니다.
 - 공간 — 프로그램 실행에 필요한 데이터 저장 공간의 양입니다. 메모리(RAM) 사용량, 앱 크기 등으로 측정할 수 있습니다.
@@ -44,7 +65,18 @@ flutter run --profile
 
 # 성능 향상 권고사항 탐색
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 성능 향상을 위한 모든 권장 사항은 다음과 같이 요약할 수 있습니다:
 
@@ -59,7 +91,18 @@ flutter run --profile
 
 반복 작업을 수행하지 말아야 한다는 권장 사항은 당연한 것처럼 들릴 수 있지만, 서두르지 마세요. 물론 필요 없이 동일한 작업을 다시 수행할 의향은 아무도 없을 것입니다. 그러나 프로젝트가 커질수록 논리도 복잡해지므로 누락될 수 있는 부분이 있을 수 있습니다. Flutter 프레임워크가 그러한 프로젝트로 간주될 수 있기 때문에 처음부터 주의 깊게 작업해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 가장 인기있는 권장 사항은 위젯의 빌드 메서드에서 실행 비용이 많이 드는 메서드를 호출하지 않는 것입니다. 빌드 메서드는 위젯을 초기화 한 후에 한 번만 호출되는 것이 아닙니다. 예를 들어 위젯이 다시 빌드될 때마다 서버 요청을 하는 것은 효율적이지 않습니다.
 
@@ -73,11 +116,33 @@ flutter run --profile
 
 위젯이 다시 빌드되었을 때 확인하려면 안드로이드 스튜디오의 Flutter Inspector 탭에서 Widget rebuild stats를 사용하십시오. debugRepaintRainbowEnabled = true로 전역 변수를 설정하면 위젯 주변에 색상 경계가 표시되며 다시 빌드될 때 색상이 바뀝니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네! 테이블 태그를 마크다운 형식으로 변경해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dart
 class WidgetOptimizationPage extends StatefulWidget {
@@ -141,9 +206,18 @@ class _WidgetOptimizationPageState extends State<WidgetOptimizationPage> {
 
 콘솔에서 didChangeDependencies 메소드가 여러 번 실행된 것을 볼 수 있을 것입니다. 여기서 요청이 호출된 곳이었습니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image 0](/assets/img/2024-05-20-Flutter성능개선권장사항탐색_0.png)
 
@@ -153,8 +227,18 @@ class _WidgetOptimizationPageState extends State<WidgetOptimizationPage> {
 
 didChangeDependencies 메서드가 InheritedWidget에서 알림에 대한 응답으로 작업을 수행하기에 적절한 위치임을 알려져 있습니다. 위젯이 어떤 변화들을 구독하는지 찾기로 결정했습니다. 위젯이 다소 복잡했기 때문에 몇 가지 가정을 하였지만, 위의 코드 예제에서는 명확하게 인식할 수 있습니다. 이유는 MediaQuery.of(context).size.width를 사용했기 때문입니다. MediaQuery는 기본적으로 다양한 매개변수를 가진 InheritedWidget으로, viewInsets와 padding을 포함하여 여러 매개변수가 있습니다. 이들은 키보드 애니메이션 중에 변경됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제의 해결 방법은 MediaQuery.sizeOf(context).width를 사용하는 것이었습니다. sizeOf는 해당 속성이 변경될 때마다 컨텍스트를 다시 빌드하며, MediaQueryData의 of 메서드에서 직접 속성을 가져 오는 것보다 우선해야 합니다.
 
@@ -164,7 +248,18 @@ didChangeDependencies 메서드가 InheritedWidget에서 알림에 대한 응답
 
 # 비용이 많이 드는 작업을 필요할 때까지 지연시키세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 성능 향상의 다음 원칙은 불필요한 작업을 하지 말아야 한다고 말합니다. 프로젝트의 구조, 상태 관리 방식, 사용하는 타사 라이브러리의 특성, 특정 화면의 내부 논리 등에 많이 따라 달라집니다. 이곳에서는 Dart에서 제공하는 몇 가지 사항을 언급하고 싶습니다.
 
@@ -193,17 +288,39 @@ bool performComplexCalculations() {
 
 그리고 우리에게 중요한 한 가지 — late 키워드입니다. 이는 변수가 액세스하려고 시도할 때만 값을 가져온다는 것을 의미합니다. 이를 통해 조건을 의미있는 부분으로 분할하고 가독성을 향상시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DevTools의 Debugger 섹션에서는 아래 사진에 나와 있는 목록 아이콘 버튼을 선택하여 확인할 수 있습니다:
-   
+
 ![List Icon](/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_3.png)
-   
+
 함수 이름 앞에 초록색 선은 디버그 세션 중 호출된 것을 나타내고 빨간 선은 호출되지 않은 것을 나타냅니다.
 
 그리고 'late' 키워드에 대한 추가 정보 - 우리의 경우 비동기 함수에 사용할 수 없지만, 비동기 함수는 조건식에서 직접 호출할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dart
 void testLateInitialization() async {
@@ -257,7 +374,18 @@ void testListVsIterable() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 개의 클래스인 ListObject와 IterableObject을 만들었어요. 두 클래스는 값만을 가지고 있어서 거의 동일하며, 나중에 DevTools에서 구분하기 위해 만들었어요. testListVsIterable 함수에서 sourceList는 초기 데이터의 리스트이며, ListObject와 IterableObject의 컬렉션이 생성됩니다. map 함수는 Iterable을 반환하기 때문에 List`ListObject`를 얻기 위해 toList를 호출해야 합니다. 첫 5개 요소를 반복하고 DevTools에서 어떻게 작동하는지 살펴보세요. 어떤 클래스의 인스턴스가 할당되었는지 확인할 수 있어요. 메모리 - Trace Instances를 선택하고 검사하려는 클래스를 선택해주세요.
 
@@ -267,7 +395,18 @@ void testListVsIterable() {
 
 특히 Iterable의 장점에도 불구하고, 이 경우에는 단점이 있어요 - 접근할 때마다 새 인스턴스가 생성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 두 번 반복해야 하는 경우 ListObject와 IterableObject 사이에 차이가 없어질 것입니다.
 
@@ -297,7 +436,18 @@ void testListVsIterable() {
 
 그리고 더 많은 횟수로 반복해야 하는 경우 List가 Iterable보다 효율적일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 Iterable은 제가 만든 그런 인위적인 시나리오 뿐만 아니라 다른 상황에서도 유용할 수 있습니다. 앱 내에서 클래스 또는 레이어 간에 데이터를 전송해야 하는 경우, 매번 List로 변환하는 대신 Iterable을 사용하는 것을 고려해보세요. toList 메서드는 실제로 컬렉션을 반복합니다.
 
@@ -307,7 +457,18 @@ void testListVsIterable() {
 
 다음 권장 사항을 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문장을 확인하기 위해 몇 개의 화면을 만들었습니다. 첫 번째 화면인 AddingCounterPage는 기본적으로 설정된 것과 매우 유사한 카운터를 구현합니다. 새로운 Flutter 프로젝트를 설정할 때 기본적으로 제공되는 것과 매우 유사합니다. 이 페이지는 값에 2를 곱하는 MultiplyingCounterPage로 전파될 BehaviorSubject를 인스턴스화합니다.
 
@@ -315,7 +476,18 @@ void testListVsIterable() {
 
 다음은 구독 취소 없이 진행되는 첫 번째 시나리오의 코드 일부입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dart
 class _AddingCounterPageState extends State<AddingCounterPage> {
@@ -342,16 +514,24 @@ class _MultiplyingCounterPageState extends State<MultiplyingCounterPage> {
 }
 ```
 
-main-3 스냅샷에는 그들의 상태를 가진 AddingCounterPage와 MultiplyingCounterPage가 있었습니다 - 해당 시점에 메모리에 있었습니다. 구독과 관련된 여러 쌍의 객체도 있습니다. StartWithStreamTransformer, _StartWithStreamSink, _MultiControllerSink가 있습니다. 하나는 AddingCounterPage를 위한 것이고 다른 하나는 MultiplyingCounterPage를 위한 것입니다:
+main-3 스냅샷에는 그들의 상태를 가진 AddingCounterPage와 MultiplyingCounterPage가 있었습니다 - 해당 시점에 메모리에 있었습니다. 구독과 관련된 여러 쌍의 객체도 있습니다. StartWithStreamTransformer, \_StartWithStreamSink, \_MultiControllerSink가 있습니다. 하나는 AddingCounterPage를 위한 것이고 다른 하나는 MultiplyingCounterPage를 위한 것입니다:
 
 ![image](/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_7.png)
 
- main-3와 main-4 스냅샷 사이에는 차이가 없습니다. MultiplyingCounterPage가 사라졌지만 모든 인스턴스가 메모리에 남아 있습니다:
+main-3와 main-4 스냅샷 사이에는 차이가 없습니다. MultiplyingCounterPage가 사라졌지만 모든 인스턴스가 메모리에 남아 있습니다:
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Exploring Flutter App Performance Improvement Recommendations](/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_8.png)
 
@@ -361,8 +541,18 @@ And only after closing `AddingCounterPage`, the subscription objects were releas
 
 Subscription canceling should help get rid of this memory leak. We just save a `StreamSubscription` when adding the listener and cancel it when the widget is disposed:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dart
 class _AddingCounterPageState extends State<AddingCounterPage> {
@@ -411,8 +601,18 @@ class _MultiplyingCounterPageState extends State<MultiplyingCounterPage> {
 
 마찬가지로, AddingCounterPage 및 해당 구독 객체는 main-5 스냅샷에서 해제되었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 실험을 통해 이 권장이 작동한다는 것을 입증했어요. 반드시 해지해야 하는 구독과 기타 해체가 필요한 객체(TextEditingController, AnimationController 등)들을 잊지 마세요. 그렇지 않으면 앱 성능에만 영향을 미칠 뿐만 아니라 프로그램 동작을 망가뜨릴 수도 있어요.
 
@@ -422,8 +622,18 @@ class _MultiplyingCounterPageState extends State<MultiplyingCounterPage> {
 
 이미지를 처리하는 방법을 최적화하는 방법은:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 대부분에 맞는 이미지 형식을 선택해보세요:
 - 사진과 같은 연속음 영상에는 JPEG를 사용합니다. 손실 압축 기능을 제공합니다.
@@ -446,7 +656,18 @@ Image.asset(
 
 하지만 이미지를 최적화해야 하는지 어떻게 알 수 있을까요? DevTools에는 과도한 크기의 이미지를 강조하는 옵션이 있어 항상 식별할 수 있습니다. Flutter Inspector 탭에서 해당 버튼을 클릭하여 이를 활성화할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 글로벌 매개변수를 프로그래밍 방식으로 설정하는 방법입니다:
 
@@ -456,7 +677,18 @@ debugInvertOversizedImages = true;
 
 거대한 이미지는 색상이 반전되고 뒤집힙니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-ExploringFlutterappperformanceimprovementrecommendations_12.png" />
 
@@ -470,7 +702,18 @@ debugInvertOversizedImages = true;
 
 따라서 이미지가 비용이 많이 소비되는 자원으로 간주되는 이유는 큰 차원으로, 이는 렌더링 중에 추가 계산이 필요하다는 것을 의미합니다. 이 오류를 피하려면 cacheHeight 및 cacheWidth 매개변수를 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dart
 Image.asset(
@@ -485,8 +728,18 @@ Image.asset(
 
 원활한 사용자 경험을 보장하기 위해 preacheImage 메서드를 사용할 수 있습니다. 이 메서드를 사용하면 위젯 초기화 또는 메인 메서드에서 이미지를 캐시에 미리 로드하여 활용할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지 캐싱을 자동으로 처리해주는 Image.network 생성자를 사용하거나, cached_network_image와 같은 서드파티 라이브러리를 사용할 수도 있어요. cached_network_image는 이미지 다운로드 중에 플레이스홀더를 표시하고 요청이 실패한 경우 오류를 표시하는 기능을 제공해요.
 
@@ -496,7 +749,18 @@ Image.asset(
 
 추가 권장 사항으로, 필요 없는 작업을 실행하지 않는 것이 중요해요. 예를 들어, Opacity와 ClipRRect을 필요할 때만 사용하고, 애니메이션에서 클리핑을 피해야 해요. 또한, 비싼 작업을 직접 메인 스레드에서 실행하지 않아야 해요. Isolate를 사용하여 UI에 영향을 주지 않도록 해야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

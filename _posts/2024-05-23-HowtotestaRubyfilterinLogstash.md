@@ -3,13 +3,12 @@ title: "루비 필터를 Logstash에서 테스트하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-23-HowtotestaRubyfilterinLogstash_0.png"
 date: 2024-05-23 12:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowtotestaRubyfilterinLogstash_0.png
 tag: Tech
 originalTitle: "How to test a Ruby filter in Logstash"
 link: "https://medium.com/@ingrid.jardillier/how-to-test-a-ruby-filter-in-logstash-804551b4b5e9"
 ---
-
 
 이전 기사에서는 Logstash에서 코드를 공유하고 루비 필터에서 모듈을 만드는 방법을 보았습니다. 이 기사에서는 결과 이벤트가 예상대로인지 확인하기 위해 필터를 테스트하는 방법을 보여드릴 것입니다.
 
@@ -29,7 +28,7 @@ end
 # 이벤트를 삭제하면 반환 배열에 포함되지 않음을 의미합니다.
 # 새 이벤트를 만드는 것은 반환된 배열에 LogStash::Event의 새 인스턴스만 추가하면 됩니다.
 def filter(event)
-    
+
     items = Array.new
 
     # 원래 이벤트를 유지하려면
@@ -43,12 +42,12 @@ def filter(event)
     if prizes.nil?
         return items
     end
-   
+
     # 복제 기본 이벤트 생성
     eventBase = LogStash::Util::DenormalizationByPrizesHelper::getEventBase(event);
 
     # 필요한 수정으로 상품 항목별 이벤트 생성
-    prizes.each { |prize| 
+    prizes.each { |prize|
         items.push LogStash::Util::DenormalizationByPrizesHelper::createEventForPrize(eventBase, prize);
     }
 
@@ -56,7 +55,18 @@ def filter(event)
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 코드는 denormalized_by_prizes_utils.rb 파일 전체 내용입니다.
 
@@ -107,7 +117,18 @@ end
 
 이 섹션에서는 예상된 이벤트가 실제로 예상한 대로 생성되는지 확인하는 기능 테스트를 작성하는 방법을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하나 이상의 테스트 케이스를 작성할 수 있으며 각 테스트 케이스마다 필요한 만큼의 테스트를 수행할 수 있습니다. 이러한 테스트는 루비 필터 파일 끝에 작성되어야 합니다. 즉, register/filter 함수를 포함하는 주 파일에 작성되어야 합니다.
 
@@ -117,12 +138,12 @@ end
 test "테스트 케이스 이름" do
 
     parameters do
-    { 
+    {
         # 필터에 전달할 매개변수
     }
     end
-    
-    in_event { 
+
+    in_event {
         # 필터 프로세스에 도착하는 이벤트
     }
 
@@ -133,7 +154,18 @@ end
 
 # 저희 루비 필터에 테스트를 구현합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예제에서는 역정규화를 구현했기 때문에 테스트에서 원본 이벤트를 잘 역정규화했는지 여러 경우(원본 이벤트 유지 여부, 상금 목록에 상금 하나 또는 둘의 예)를 확인할 것입니다.
 
@@ -145,15 +177,15 @@ end
 test "Case 1: 이벤트에 상금 하나 / 원본 이벤트 유지하지 않음" do
 
     parameters do
-    { 
+    {
         "keep_original_event" => false
     }
     end
 
-    in_event { 
-        { 
-            "id"        => 1, 
-            "firstname" => "Pierre", 
+    in_event {
+        {
+            "id"        => 1,
+            "firstname" => "Pierre",
             "surname"   => "Curie",
             "gender"    => "male",
             "prize"     => [
@@ -162,7 +194,7 @@ test "Case 1: 이벤트에 상금 하나 / 원본 이벤트 유지하지 않음"
                     "category" => "physics"
                 }
             ]
-        } 
+        }
     }
 
     # expect 메소드를 사용한 테스트
@@ -172,15 +204,15 @@ end
 test "Case 2: 이벤트에 상금 하나 / 원본 이벤트 유지" do
 
     parameters do
-    { 
+    {
         "keep_original_event" => true
     }
     end
 
-    in_event { 
-        { 
-            "id"        => 1, 
-            "firstname" => "Pierre", 
+    in_event {
+        {
+            "id"        => 1,
+            "firstname" => "Pierre",
             "surname"   => "Curie",
             "gender"    => "male",
             "prize"     => [
@@ -189,7 +221,7 @@ test "Case 2: 이벤트에 상금 하나 / 원본 이벤트 유지" do
                     "category" => "physics"
                 }
             ]
-        } 
+        }
     }
 
     # expect 메소드를 사용한 테스트
@@ -199,15 +231,15 @@ end
 test "Case 3: 이벤트에 상금 둘 / 원본 이벤트 유지하지 않음" do
 
     parameters do
-    { 
+    {
         "keep_original_event" => false
     }
     end
 
-    in_event { 
-        { 
-            "id"        => 2, 
-            "firstname" => "Marie", 
+    in_event {
+        {
+            "id"        => 2,
+            "firstname" => "Marie",
             "surname"   => "Curie",
             "gender"    => "female",
             "prize"     => [
@@ -220,7 +252,7 @@ test "Case 3: 이벤트에 상금 둘 / 원본 이벤트 유지하지 않음" do
                     "category" => "chemistry"
                 }
             ]
-        } 
+        }
     }
 
     # expect 메소드를 사용한 테스트
@@ -230,15 +262,15 @@ end
 test "Case 4: 이벤트에 상금 둘 / 원본 이벤트 유지" do
 
     parameters do
-    { 
+    {
         "keep_original_event" => true
     }
     end
 
-    in_event { 
-        { 
-            "id"        => 2, 
-            "firstname" => "Marie", 
+    in_event {
+        {
+            "id"        => 2,
+            "firstname" => "Marie",
             "surname"   => "Curie",
             "gender"    => "female",
             "prize"     => [
@@ -251,7 +283,7 @@ test "Case 4: 이벤트에 상금 둘 / 원본 이벤트 유지" do
                     "category" => "chemistry"
                 }
             ]
-        } 
+        }
     }
 
     # expect 메소드를 사용한 테스트
@@ -259,7 +291,18 @@ test "Case 4: 이벤트에 상금 둘 / 원본 이벤트 유지" do
 end
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 기능 테스트 구현
 
@@ -272,7 +315,18 @@ end
 - 생성된 각 항목이 올바른 공통 필드와 올바른 상금 필드를 포함하고 있는지 확인하기
 - 결과적으로 출력에는 3개의 이벤트가 있어야 하며, 각 이벤트는 별도의 인덱스에 있어야 합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희의 테스트는 다음과 같이 작성될 수 있어요:
 
@@ -280,15 +334,15 @@ end
 test "Case 4: two prizes in event / keep original event" do
 
     parameters do
-    { 
+    {
         "keep_original_event" => true
     }
     end
 
-    in_event { 
-        { 
-            "id"        => 2, 
-            "firstname" => "Marie", 
+    in_event {
+        {
+            "id"        => 2,
+            "firstname" => "Marie",
             "surname"   => "Curie",
             "gender"    => "female",
             "prize"     => [
@@ -301,7 +355,7 @@ test "Case 4: two prizes in event / keep original event" do
                     "category" => "chemistry"
                 }
             ]
-        } 
+        }
     }
 
     expect("Count of events") do |events|
@@ -319,7 +373,7 @@ test "Case 4: two prizes in event / keep original event" do
         result
     end
 
-    expect("Each event has good _index") do |events|  
+    expect("Each event has good _index") do |events|
         result = true
         result &= events[0].get("[@metadata][_index]") == "prizes-original"
         result &= events[1].get("[@metadata][_index]") == "prizes-denormalized"
@@ -327,8 +381,8 @@ test "Case 4: two prizes in event / keep original event" do
         result
     end
 
-    expect("Each event has good prize fields") do |events| 
-        result = true 
+    expect("Each event has good prize fields") do |events|
+        result = true
         result &= events[0].get("[prize][0][year]") == 1903
         result &= events[0].get("[prize][0][category]") == "physics"
         result &= events[0].get("[prize][1][year]") == 1911
@@ -347,10 +401,20 @@ end
 
 우리의 테스트 케이스 구현이 준비되었어요. 모든 테스트 케이스는 Logstash 시작 시 실행되며 해당 파이프라인이 생성될 때 실행돼요. 실제로, Logstash는 Ruby 필터에 작성된 모든 테스트를 찾을 수 있어요. 그리고 Logstash 로그에서 모든 테스트 결과를 볼 수 있을 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변경한 내용입니다.
-
 
 ![이미지1](/assets/img/2024-05-23-HowtotestaRubyfilterinLogstash_0.png)
 

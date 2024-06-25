@@ -3,13 +3,12 @@ title: "자바에서의 가비지 컬렉션"
 description: ""
 coverImage: "/assets/img/2024-05-27-GarbageCollectionInJava_0.png"
 date: 2024-05-27 15:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-GarbageCollectionInJava_0.png
 tag: Tech
 originalTitle: "Garbage Collection In Java"
 link: "https://medium.com/@ArvindVignesh/garbage-collection-in-java-b90a7f4b3ac7"
 ---
-
 
 ## 자바에서 쓰레기 수거가 이뤄지는 방식에 대한 기본적인 설명
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@ArvindVignesh/garbage-collection-in-java-b90a7f4b3ac7
 
 변수를 선언하는 것은 프로그래머로서 생활의 일부입니다. 변수를 사용하는 것은 코드의 재사용성을 향상시키는 것뿐만 아니라 코드의 가독성을 크게 향상시키고, 이는 결국 코드의 유지보수성을 높이는 데 큰 도움이 됩니다. 또한 선언된 변수가 일정 공간을 차지하고 특정 범위와 연결되어 있다는 것은 비밀이 아닙니다. 최적화된 메모리 관리를 위해 JVM이 이러한 객체들이 더 이상 필요하지 않을 때 제거하거나 파괴하는 것이 합리적입니다. 이렇게 "원치 않는" 변수들을 제거하는 프로세스를 가비지 컬렉션이라고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 자바에서의 가비지 컬렉션
 
@@ -29,7 +39,18 @@ C, C++와 같은 언어에서는 가비지 컬렉션을 애플리케이션 개�
 
 자바 가비지 컬렉션은 일반적으로 2단계로 수행됩니다. 마크 단계와 스윕 단계입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크 단계: 마크 단계에서는 객체를 참조될 수 있는지 여부에 따라 두 가지 방식으로 분류합니다. 참조된 객체는 여전히 사용 중이며 범위에서 벗어나지 않은 객체입니다. 참조되지 않은 객체는 응용 프로그램에서 더 이상 필요하지 않은 객체입니다. 참조되지 않는 객체는 가비지 수집을 위해 "표시"됩니다.
 
@@ -39,7 +60,18 @@ C, C++와 같은 언어에서는 가비지 컬렉션을 애플리케이션 개�
 
 ## 세대별 가비지 수집 전략
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서는 일반적으로 사용되는 가장 흔한 가비지 컬렉션 형태인 세대별 가비지 컬렉션 전략을 탐구해 볼 거에요. 세대별 가비지 컬렉션은 주로 2가지 주된 이유로 선호됩니다.
 
@@ -50,7 +82,18 @@ C, C++와 같은 언어에서는 가비지 컬렉션을 애플리케이션 개�
 
 ![가비지컬렉션](/assets/img/2024-05-27-GarbageCollectionInJava_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젊은 세대:
 
@@ -60,7 +103,18 @@ C, C++와 같은 언어에서는 가비지 컬렉션을 애플리케이션 개�
 
 ![image](/assets/img/2024-05-27-GarbageCollectionInJava_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 이미지에서 볼 수 있듯이 모든 GC 주기마다 객체의 나이가 1씩 증가합니다. 나이가 특정 임계값에 도달하면 객체들은 힙 메모리의 다음 섹션으로 이동됩니다. 또한 모든 마이너 GC는 Stop the world 이벤트입니다. 이는 응용 프로그램 스레드가 GC가 완료될 때까지 중지된다는 것을 의미합니다. 일반적으로 마이너 GC는 메이저 GC와 비교했을 때 소요 시간이 더 적습니다.
 
@@ -70,7 +124,18 @@ C, C++와 같은 언어에서는 가비지 컬렉션을 애플리케이션 개�
 
 메이저 GC와 마이너 GC의 차이점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Minor GC와 Major GC의 주요 차이 중 하나는 Minor GC와 Major GC가 완료되는 데 걸리는 시간입니다. Major GC는 Minor GC와 마찬가지로 멈춤 현상(stop the world) 이벤트이지만 Major GC를 완료하는 데 걸리는 시간은 모든 활성 객체를 포함하기 때문에 Minor GC보다 훨씬 많이 소요됩니다. Major GC를 완료하는 데 필요한 시간은 주요 GC 공간이 증가할수록 선형적으로 증가하며 공간이 많을수록 메모리 압축에 더 많은 시간이 소요됩니다. 이는 응답 시간을 우선시하는 응용 프로그램에서 주요 GC의 빈도를 낮게 유지해야 한다는 것을 의미합니다. 또한 주요 GC의 멈춤 현상 이벤트의 길이는 사용 중인 GC 유형에 따라 달라집니다.
 
@@ -81,7 +146,18 @@ Minor GC와 Major GC의 주요 차이 중 하나는 Minor GC와 Major GC가 완�
 - Heap 공간이 가득 차는 경우: 모든 Java 힙 메모리가 고갈되기 전에 Full GC가 발생할 수 있습니다. 이는 일련의 영역을 연속으로 찾아야 하는 필요로 인해 발생할 수 있습니다.
 - 영역 크기 변경: 메모리 수요에 따라 영역 크기(영구 또는 올드)가 변경되면 일반적으로 Full GC에 의해 영역 변경 크기가 시작됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Metaspace
 

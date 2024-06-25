@@ -3,13 +3,12 @@ title: "주체적인 RAG 개인 맞춤 및 최적화된 지식 보조 언어 모
 description: ""
 coverImage: "/assets/img/2024-05-20-AgenticRAGPersonalizingandOptimizingKnowledge-AugmentedLanguageModels_0.png"
 date: 2024-05-20 20:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AgenticRAGPersonalizingandOptimizingKnowledge-AugmentedLanguageModels_0.png
 tag: Tech
 originalTitle: "Agentic RAG: Personalizing and Optimizing Knowledge-Augmented Language Models"
 link: "https://medium.com/@alcarazanthony1/agentic-rag-personalizing-and-optimizing-knowledge-augmented-language-models-81aded3dd454"
 ---
-
 
 대형 언어 모델(LLM)은 인공 지능 분야에서 혁명적인 힘으로 부상하여 자연어 처리 작업에서 놀라운 성능을 보여주고 있습니다. 그러나 그들의 인상적인 성능에도 불구하고, LLM은 종종 환각, 시간적 불일치 및 맥락 처리 문제와 같은 제한에 직면할 수 있습니다. 이러한 도전 과제를 해결하기 위해 연구는 외부 지식 원본과 통합하여 LLM을 향상시키는 데 초점을 맞추고 있습니다. 이 방법을 통해 RAG(검색 증강 생성)이라 불리는 것이죠.
 
@@ -19,7 +18,18 @@ RAG는 언어 모델의 능력을 향상시키기 위해 외부 지식 원본에
 
 ![이미지](/assets/img/2024-05-20-AgenticRAGPersonalizingandOptimizingKnowledge-AugmentedLanguageModels_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 향상된 질문 재작성
 
@@ -29,7 +39,18 @@ ERAGent의 핵심 구성 요소 중 하나는 향상된 질문 재작성 모듈�
 
 예를 들어 임상 의학 시나리오에서 향상된 질문 재작성 모듈은 의사의 구어와 전문 용어로 가득 찬 질문을 인식하고 표준화된 도메인 특정 쿼리의 세트로 변환할 수 있습니다 [1]. 이 과정은 질문의 의도를 명확히하는데 그치지 않고 관련 의학적 지식을 보다 정확하고 포괄적으로 검색하며, 최종적으로 더 정확하고 정보화된 응답을 이끌어냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 효율적인 지식 검색
 
@@ -39,7 +60,18 @@ ERAGent의 또 다른 중요한 측면은 지식 검색의 효율을 최적화�
 
 이러한 지식 검색의 선택적 접근은 경험 학습자 모듈에 의해 지원됩니다. 이 모듈은 AI 어시스턴트가 과거 상호 작용에서 지식 베이스를 지속적으로 확장하고 사용자 프로필을 점진적으로 모델링할 수 있게 합니다 [1]. 이전 대화를 보존하고 학습함으로써, 시스템은 매우 관련성 높은 과거 지식을 활용하여 정확한 응답을 생성함으로써 중복된 외부 검색이 필요성을 줄이고 전반적인 효율성을 향상시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 평가 결과에 따르면 ERAGent는 응답 시간을 약 40% 정도 단축할 수 있으며 응답 품질을 희생하지 않습니다 [1]. 이 효율성과 정확성 사이의 최적 균형은 경험 기반 학습 모듈을 활용하고 검색 트리거의 인기 임계값을 적절한 수준으로 조정하여 달성됩니다.
 
@@ -49,7 +81,18 @@ ERAGent의 또 다른 중요한 측면은 지식 검색의 효율을 최적화�
 
 지식 필터 모듈은 자연 언어 추론 (NLI) 기술을 활용하여 각 검색된 지식 단편이 원래 질문과 얼마나 관련이 있는지를 평가합니다 [1]. 검색 정보와 질문-답변 쌍 간의 관계를 분류함으로써, 모듈은 관련 없는 맥락을 효과적으로 걸러내고 가장 중요한 지식만 유지할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 필터링 과정은 검색 단계에서 방대한 정보가 얻어지고 있지만 그 중 일부는 의미적으로 관련이 있지만 질문에 정확하게 대답하는 데 직접적으로 사용할 수 없는 경우에 특히 가치가 있습니다. Knowledge Filter 모듈은 부가적인 콘텐츠를 버리는 것으로 정보가 언어 모델에 입력되는 것이 최고의 관련성과 품질을 갖도록 보장하여 생성된 응답의 정확성과 일관성을 향상시킵니다.
 
@@ -59,7 +102,18 @@ ERAGent의 또 다른 중요한 측면은 지식 검색의 효율을 최적화�
 
 언어 모델의 프롬프트에 학습된 사용자 프로필을 통합함으로써, 개인화된 LLM 리더는 단순히 사실적인 것뿐만 아니라 사용자의 고유한 배경, 관심사 및 필요에 부합하는 응답을 생성할 수 있습니다 [1]. 이 개인화는 표면적인 맞춤 이상으로 나아가, 각 사용자의 선호도, 태도 및 문맥 요소의 미묘한 차이를 탐구하여 정말로 맞춤화되고 매력적인 응답을 만들어냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 근육을 키우는 데 도움이 되는 식단 권장사항을 제공할 때, 개인 맞춤형 LLM 리더는 사용자의 환경 의식, 식이 제한 사항, 그리고 환경 운동가 또는 늦게 일어나는 사람과 같은 개인 선호도를 고려할 수 있습니다. 이러한 요소를 고려함으로써, 해당 모듈은 사용자의 특정한 라이프스타일과 가치관을 고려하는 적절한 식물성 단백질 공급원, 식사 준비 전략, 그리고 수면 권장을 제안할 수 있습니다.
 
@@ -69,7 +123,18 @@ ERAGent의 또 다른 중요한 측면은 지식 검색의 효율을 최적화�
 
 ERAGent의 효과는 다양한 질문-답변 작업 및 데이터 세트에서 엄격한 평가를 거쳐, 정확성, 효율성 및 개인화 측면에서 우수한 성능을 보여주며, 그 우수성을 빛내고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원 라운드 공개 도메인 QA 작업에서 Natural Questions, PopQA, AmbigNQ와 같은 데이터셋을 사용한 경우, ERAGent는 기본 모델에 비해 응답 정확도에서 상당한 개선을 보였습니다 [1]. 향상된 질문 재작성기와 지식 필터 모듈의 시너지 효과로 인해 정확 일치, 정밀도, 재현율 및 히트율과 같은 메트릭스에서 상당한 향상이 이루어졌습니다.
 
@@ -79,7 +144,18 @@ ERAGent의 효과는 다양한 질문-답변 작업 및 데이터 세트에서 �
 
 게다가 체험학습자 모듈을 활용하고 검색 트리거의 인기 임계값을 조정함으로써 ERAGent는 응답 시간을 현저히 줄이면서도 답변 품질을 저해하지 않았습니다. 효율성과 정확성 간의 최적 균형은 프레임워크가 실제 시나리오에서 실용적으로 적용 가능함을 강조합니다 [1].
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -89,7 +165,18 @@ ERAGent은 새로운 구성 요소와 기술을 통합한 포괄적인 프레임
 
 지식 필터 모듈은 자연어 추론 기술을 사용하여 검색된 지식을 정제하고 관련 없는 정보를 걸러내어 응답 정확도를 더욱 향상시킵니다. 특히, 개인화 된 LLM 리더 모듈은 개별 사용자 프로필, 선호도 및 컨텍스트에 맞춰 응답을 제공하여 더욱 흥미롭고 개인화된 사용자 경험을 유도하는데 있어 ERAGent을 독특하게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 데이터셋 및 질의응답 작업을 통해 엄격한 평가를 거쳐, ERAGent는 정확성, 효율성 및 맞춤화 측면에서 일정한 우수한 성능을 보여왔습니다. [1].
 

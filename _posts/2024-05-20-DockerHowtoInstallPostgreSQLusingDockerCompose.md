@@ -3,13 +3,12 @@ title: "도커 도컴포즈를 사용하여 PostgreSQL을 설치하는 방법"
 description: ""
 coverImage: "/assets/img/2024-05-20-DockerHowtoInstallPostgreSQLusingDockerCompose_0.png"
 date: 2024-05-20 17:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-DockerHowtoInstallPostgreSQLusingDockerCompose_0.png
 tag: Tech
 originalTitle: "Docker : How to Install PostgreSQL using Docker Compose"
 link: "https://medium.com/@agusmahari/docker-how-to-install-postgresql-using-docker-compose-d646c793f216"
 ---
-
 
 PostgreSQL은 개발 커뮤니티에서 널리 사용되는 인기 있는 관계형 데이터베이스 관리 시스템입니다.
 
@@ -19,7 +18,18 @@ Docker Compose는 여러 컨테이너로 구성된 Docker 응용 프로그램을
 
 PostgreSQL은 개발 커뮤니티에서 널리 사용되는 인기 있는 관계형 데이터베이스 관리 시스템입니다. Docker Compose를 사용하면 PostgreSQL 인스턴스를 컨테이너에서 쉽게 설정하고 실행할 수 있어요. 이는 개발, 테스트 및 배포 목적으로 훌륭한 솔루션일 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 포스트에서는 Docker Compose를 사용하여 PostgreSQL을 설치하는 단계를 안내해 드리겠습니다.
 
@@ -29,7 +39,18 @@ Docker Compose를 설치하고 사용하기 전에 시스템에 Docker가 설치
 
 단계 2: Docker Compose 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커를 시스템에 설치한 후에는 공식 도커 컴포즈 설치 안내에 따라 도커 컴포즈를 설치할 수 있어요. 운영 체제에 따라 설치 단계가 조금씩 다를 수 있지만, 일반적으로 직관적입니다.
 
@@ -53,7 +74,18 @@ services:
       - POSTGRES_DB=citizix_db
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위와 같은 명령어입니다:
 
@@ -64,7 +96,18 @@ services:
 
 단계 4: PostgreSQL 컨테이너 시작
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PostgreSQL 컨테이너를 시작하려면 터미널에서 docker-compose.yml 파일이 있는 디렉토리로 이동하고 다음 명령을 실행하세요:
 
@@ -80,7 +123,18 @@ Creating pg_postgres_1 ... done
 
 위 명령을 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 'up' 명령어를 사용하면 컨테이너를 올릴 수 있습니다.
 - '-d' 옵션은 detached 모드로 실행합니다.
@@ -98,7 +152,18 @@ docker ps
 pg_postgres_1   docker-entrypoint.sh postgres   Up      0.0.0.0:5432-
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스텝 5: PostgreSQL 컨테이너 중지 및 제거
 
@@ -110,7 +175,18 @@ docker-compose down
 
 이렇게 하면 컨테이너가 중지되고 제거됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 컴포즈를 사용하여 PostgreSQL을 설치하는 것은 컨테이너 내에서 빠르게 PostgreSQL 인스턴스를 설정할 수 있는 간단한 과정입니다. 도커 컴포즈 파일에서 컨테이너의 구성을 정의하여 여러 컨테이너를 쉽게 관리하고 확장할 수 있습니다.
 

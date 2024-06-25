@@ -26,7 +26,18 @@ iOS 14 및 이전 버전의 알림을 사용하는 방법에 대한 자세한 �
 
 # 환경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 다음 버전을 사용합니다:
 
@@ -39,7 +50,18 @@ iOS 14 및 이전 버전의 알림을 사용하는 방법에 대한 자세한 �
 
 SwiftUI에서 코딩은 선언적이며 절차적이 아닙니다. 경고(alerts)도 이 규칙을 따릅니다. "알림을 표시"하는 단계별 프로세스를 코딩하는 대신, 경고를 정의하고 언제 나타날지를 정의합니다. 경고를 정의하려면 .alert() 수정자(modifier)를 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 .alert("제목", isPresented: Binding<bool>, actions: { 액션 버튼 목록 }, message: { 메시지 })
@@ -58,7 +80,18 @@ SwiftUI에서 코딩은 선언적이며 절차적이 아닙니다. 경고(alerts
 “제목”
 제목에 표시할 텍스트를 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 isPresented
 알림이 표시될지를 결정하는 표시 플래그 변수입니다. 사용자가 알림 액션을 탭하면 표시 플래그가 자동으로 거짓으로 변경됩니다.
@@ -71,7 +104,18 @@ Text를 사용하여 제목 아래에 자세한 메시지를 설정할 수 있�
 
 # 사용 예제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서는 Button에 대해 alert 수정자가 설정되어 있지만, 직접적으로 해당 Button에 연결되어 있지는 않습니다. 경고는 Button 자체가 아닌 표시 플래그에 의해 제어됩니다.
 
@@ -113,7 +157,18 @@ struct AlertsBootCamp: View {
 
 # 여러 버튼 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import SwiftUI
@@ -158,19 +213,39 @@ struct AlertsBootCamp: View {
 
 세 개 이상 설치하시면 아래와 같이 수직으로 배열됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3개의 버튼이 있는 테이블을 만들려면
 다음 Markdown 형식을 사용하실 수 있습니다.
 
-
 | Header1 | Header2 | Header3 |
-|---------|---------|---------|
+| ------- | ------- | ------- |
 | Data1   | Data2   | Data3   |
 | Data4   | Data5   | Data6   |
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 Button("Title", role: ButtonRole?, action: { action button })
@@ -182,7 +257,18 @@ Button("Title", role: ButtonRole?, action: { action button })
 
 2. 파괴성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 아무 값도 지정하지 않으면 버튼은 기본 스타일인 파란색으로 나타납니다.
 
@@ -192,7 +278,18 @@ Button("Title", role: ButtonRole?, action: { action button })
 .destructive
 이 스타일은 삭제와 같은 파괴적인 작업을 나타내며 빨간색으로 표시됩니다. 적어도 하나의 이 유형 버튼이 있는 경우 취소 버튼이 자동으로 추가됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사용 예시
 
@@ -235,7 +332,18 @@ struct AlertsBootCamp: View {
 
 <img src="/assets/img/2024-05-27-SwiftUIHowtousealerts_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 여러 경고 사용하기
 
@@ -263,6 +371,17 @@ struct ContentView: View {
 
 <img src="https://miro.medium.com/v2/resize:fit:590/1*y3FoT4bWzWZcph2TnxqMzg.gif" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 감사합니다!

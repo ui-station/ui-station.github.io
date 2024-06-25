@@ -3,13 +3,12 @@ title: "생산성을 높이는 새로운 보이지 않는 강력한 AI 동료와
 description: ""
 coverImage: "/assets/img/2024-05-18-PowerupproductivitywhitthisnewinvisiblypowerfulAIcopilot_0.png"
 date: 2024-05-18 17:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-PowerupproductivitywhitthisnewinvisiblypowerfulAIcopilot_0.png
 tag: Tech
 originalTitle: "Power up productivity whit this new “invisibly” powerful AI copilot."
 link: "https://medium.com/@nicolosodano/power-up-productivity-whit-this-new-invisibly-powerful-ai-copilot-cd0a40adb112"
 ---
-
 
 안녕하세요! 만약에 중간(Medium)에 계신 분이라면, 이 글을 우연히 발견하셨을 거예요. 제가 알겠네요, 생산성을 향상시키는 도구를 항상 찾고 계시는 분이시군요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@nicolosodano/power-up-productivity-whit-this-new-invi
 
 이는 화면 스크린샷과 실제 화면에서 실시간으로 요청을 처리해 줘요. 마치 항상 준비된 데스크톱용 끊임없는 AI 비서가 있는 것과 같아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 투명성의 주요 기능:
 
@@ -31,7 +41,18 @@ ChatGPT로 콘텐츠를 작성하고 투명성이 작업을 분석하고 최적�
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*3sH2-U3tS5dYyYhT7Evi8g.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일상적인 작업 관리에서의 일반적인 문제들을 해결해주는 Invisibility는 혁신적인 도구와 실시간 처리 능력 덕분에 제 효율성과 생산성이 크게 향상되었어요... 지금 이것은 저의 마음에 드는 도구가 되었답니다!
 

@@ -3,13 +3,12 @@ title: "블랙 태비 게임즈 - 2024년 현황 보고서"
 description: ""
 coverImage: "/assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_0.png"
 date: 2024-06-19 11:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_0.png
 tag: Tech
 originalTitle: "Black Tabby Games — 2024 State of the Union"
 link: "https://medium.com/@blacktabbygames/black-tabby-games-2024-state-of-the-union-51a84536d604"
 ---
-
 
 안녕하세요!
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@blacktabbygames/black-tabby-games-2024-state-of-the-u
 
 이 경우에 우리는 Slay the Princess - The Pristine Cut에 대한 많은 흥미로운 발전 사항이 있었지만, 이제 여름 게임 페스트에 슬롯을 확보하기 위해 지금까지 기다려야 했습니다. 그럼에도 불구하고, 새로운 예고편을 놓친 경우에는 여기에서 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간략히 말하자면:
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@blacktabbygames/black-tabby-games-2024-state-of-the-u
 
 # 왜 Scarlet Hollow의 에피소드 5가 이렇게 오래 걸릴까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 5화 제작주기에 대한 여러분의 참을성에 대해 정말 감사드립니다. 그 인내심에 깊이 감사하며, 남은 세 에피소드를 마무리하기 위한 작업을 계속 진행하면서 조금 더 여러분의 이해와 협조를 부탁드립니다. 우리가 'Slay the Princess'의 성공으로 'Scarlet Hollow'에 전념할 수 있고, 우리만의 일정으로 진행할 수 있다는 것은 정말 기쁜 일입니다. 예술가로서 자신의 창작활동을 예산이나 외부 감독의 걱정 없이 자유롭게 할 수 있는 그런 자유를 얻을 수 있다는 것은 꿈도 못 꾸던 일이었는데, 이제 그것을 할 수 있다는 것에 정말 기쁘고, 여러분께서 그 결과물을 사랑해주길 바랍니다.
 
@@ -42,7 +63,18 @@ link: "https://medium.com/@blacktabbygames/black-tabby-games-2024-state-of-the-u
 - 게임에는 엄청난 양의 예술 작업이 있으며, 이 모든 것은 한 사람이 그림을 그립니다.
 - 게임의 대본은 엄청나게 반응적이며, 이 모든 것은 두 명의 작가가 쓰고 코딩합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현하는 동시에, 창의적인 비전을 완전히 공유하는 두 명의 핵심 팀이 만든다는 것이라고 생각해요.
 
@@ -55,7 +87,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 - 에피소드 3은 약 170,000 단어, 50장의 배경 이미지, 약 2,000개의 스프라이트가 있어요. 에피소드 2 릴리스부터 9개월이 걸렸습니다.
 - 에피소드 4는 약 200,000 단어, 130장의 배경 이미지, 약 1,500개의 스프라이트가 있어요. 에피소드 3 릴리스부터 9개월이 걸렸습니다. 마지막 몇 달은 우리 둘 다에게 굉장히 힘든 시기였어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희가 개발을 시작할 때, 새로운 에피소드마다 얻게 될 경험이 개발 시간 증가를 상쇄할 것이라고 생각했습니다. 이것은 Episode 3을 완료할 때까지는 사실이었지만, 그 이후에는 더 빠르게 움직일 수 있는 능력이 균형을 잡았습니다. 부끄러워할 것은 없어요! 9개월 동안 1,500개가 넘는 아트 자산이 포함된 20만 단어의 비주얼 노벨을 만든 것은 꽤 좋은 성과에요.
 
@@ -63,7 +106,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 
 하지만, 불가능한 현실로 만든 몇 가지 이유가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 소진. 애비와 나는 블랙 태비 게임을 설립한 이후 매주 60~80시간 일한 바 있습니다. 애비는 그 이전에도 그런 일주일을 꾸준히 하고 있었습니다. 예술 분야, 특히 만화 분야에서 살아남기 위해 이러한 방식의 노력이 아쉽게도 필요했지만, 몇 년 동안 소진증을 쌓을 수밖에 없었습니다. 우리가 이를 시작했을 때는 28세였고, 지금은 32세이며, 그 4년을 분명히 느낄 수 있습니다. 4화 개발은 특히 힘들었고, 릴리스 후 몇 달 동안 회복하기 전까지는 충분히 휴식이 필요했습니다. 이 속도는 지속할 수 없었고, 특히 지난 몇 년 동안 우리의 건강에 피해가 갔습니다. 31세 때부터 회색빛이 들기 시작했는데, 애비는 그것을 매우 좋아하지만, 그래도 걱정스럽기도 합니다!
 
@@ -73,27 +127,60 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 
 자금과 수익 측면에 대해 자세히 설명하자면 예외를 제외하고 게임 판매는 다음과 같은 차트를 따릅니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![표](/assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_2.png)
 
 말그대로 대부분의 사본이 발매 첫 주에 판매되고 그 후 급격히 줄어듭니다. 사람들이 사용하는 대략적인 규칙은 다음과 같습니다:
 
-발매 위시리스트 * 0.2 = 첫 주 매출
+발매 위시리스트 \* 0.2 = 첫 주 매출
 
-첫 달 매출 = 2 * 첫 주 매출 (첫 주 매출을 포함하므로 다음 세 주는 사실상 그 첫 주와 같습니다.)
+첫 달 매출 = 2 \* 첫 주 매출 (첫 주 매출을 포함하므로 다음 세 주는 사실상 그 첫 주와 같습니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-첫 해 매출 = 3 * 1주차 매출 (첫 달 매출 포함, 따라서 첫 달을 넘긴 첫 해의 나머지는 대략적으로 첫 달의 매출을 늘릴 것입니다.)
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-** 이 0.2는 20% 변환율이 아니며, 이전 위시리스트 없이 발생하는 1주차 매출을 포함합니다.
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+첫 해 매출 = 3 \* 1주차 매출 (첫 달 매출 포함, 따라서 첫 달을 넘긴 첫 해의 나머지는 대략적으로 첫 달의 매출을 늘릴 것입니다.)
+
+\*\* 이 0.2는 20% 변환율이 아니며, 이전 위시리스트 없이 발생하는 1주차 매출을 포함합니다.
 
 이 규칙에는 예외사항이 있으며, 그 안에는 다양한 변형이 있습니다. 어떤 게임들은 20%보다 훨씬 더 높은 변환율을 보이며, 일반적으로 매출이 훨씬 더 느리게 감소하는 긴 꼬리를 가지게 됩니다. 다른 게임들은 여전히 20% 비율을 유지할 수 있지만 긴 꼬리를 가지게 됩니다. 다른 게임들은 여전히 매우 낮은 비율로 변환할 수도 있습니다. 몇몇 게임들은 출시 위시리스트 중 5% 정도만 첫 주에 변환하는 것을 본 적이 있습니다.
 
 다음은 Steam에서 Scarlet Hollow의 첫 해 매출 변화 예시입니다. 환불은 제외하고 계산했습니다(우리 게임 두 개의 평균 환불율이 산업평균보다 훨씬 낮다는 것에 우리는 행운을 봅니다):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_3.png" />
 
@@ -103,7 +190,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 
 크라우드펀딩 캠페인에서 교환된 키들은 스팀의 알고리즘에서 판매로 인정되지 않습니다. 게다가 해당 키들로 작성된 리뷰도 스팀의 리뷰 평균에 반영되지 않습니다. 따라서 게임이 출시된 위시리스트에 비해 상당히 성과를 얻었음에도 불구하고, 알고리즘은 이를 평균 이하의 성과로 판단하여 우리의 가시성을 제한했습니다. 이것이 Slay the Princess를 크라우드펀딩하지 않았던 주요 이유 중 하나이며, 앞으로도 게임에 대한 크라우드펀딩 캠페인을 진행하지 않을 가능성이 높은 주요 이유 중 하나입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스칼렛 홀로우(Scarlet Hollow)의 경우 우리는 운이 좋게도 입소문이 게임을 유지해 주었습니다. 첫 달에는 1,744개의 판매로, 기대를 약간 능가했고, 첫 해에는 6,503개의 판매로, 기대를 크게 넘었습니다. 그러나 기대를 크게 넘은 것은 우리의 판매량이 줄어들지 않았다는 것을 의미하지 않았고, 또한 우리가 출시할 때 위시리스트 숫자가 낮았기 때문에 종합적으로 수익을 충분히 벌지 못했다는 것을 의미하지 않았습니다. (표준적인 모델링에서는 스팀 수수료와 환불금을 제외한 1년 수익이 약 21,000달러로 예상되었지만, 계약자에게 지급하기 전, 두 명 사이에서 분배된 금액이며, 세금은 미포함입니다.)
 
@@ -116,7 +214,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 - 다른 크라우드펀딩 캠페인을 하자. 가장 최악의 경우 다른 크라우드펀딩 캠페인을 진행할 수 있었겠지만, 처음 스칼렛 홀로우 캠페인이 게임이 완료되고 아트북이 배포될 때까지 모두 충족되지 않을 것이므로 이는 매우 비현명한 선택이었을 것입니다. 이러한 고려 없이도 캠페인은 엄청난 노력이 필요하며(보통 우리 둘 다가 캠페인을 관리하기 위해 전문일을 1~1.5개월 소요됨), 새로운 보상은 자체 비용이 있었어요 — 커미션 아트와 같은 맞춤형 보상은 게임에 시간을 투자해야 하는 애비가 그 시간을 사용해야 하며, 상품은 별도의 제조 비용이 필요합니다. 이것은 모든 면에서 좋지 않은 생각이었을 것입니다.
 - 다른 프로젝트에서 유료 상담을 하자. 많은 젊은 기업이 이 상황에 빠지는 함정입니다. 주력 프로젝트에 동시에 작업하면서 불을 밝히려고 유료 상담 작업을 합니다. 여기서 문제는 두 가지입니다: 이 작업을 찾아야 되는데, 그것은 시간이 소요되는데요; 이 작업을 수행해야 하는데요, 그것도 시간이 필요합니다. 너무 많은 기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 처음 두 옵션에 상당한 노력을 기울였고, 나머지 두 옵션에도 어느 정도 고려를 했지만, 모두가 우리의 자율성을 많이 소비하거나 실제로 우리의 과제를 해결하지 않거나 너무 많은 시간을 낭비하게끔 만드는 조합으로 이어졌습니다. 그래서 대신, 우리는 측정된 위험을 감수하기로 결정했습니다:
 
@@ -127,7 +236,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 
 동시에, 우리는 주요 강점을 확인했습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 사람들은 게임을 한 번 플레이하면 정말 좋아합니다.
 
@@ -137,7 +257,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 
 마지막으로, Scarlet Hollow에 대한 우리의 작업 일정과 관련된 중요한 세부 사항이 하나 있었습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 애비는 다음 에피소드의 초고를 쓰는 동안 토니는 후속 에피소드 릴리스 패치 및 마케팅을 담당합니다.
 - 토니는 다음 에피소드의 두 번째 초고를 쓰고 엔진에서 코드를 작성하는 동안 애비는 예술 작업에 집중합니다.
@@ -149,7 +280,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 - 나는 초고를 쓰는 동안 애비는 다음 Scarlet Hollow 에피소드의 초고를 쓰는 게임을 만들었습니다. 여기에는 자세히 설명할 필요가 없습니다. 작업이 순조롭게 진행되었고, Slay the Princess의 대본이 완성되었을 때 5화의 대본도 20,000단어가 완료되었습니다. 4화의 두 배 크기인 5화가 아니었다면 Slay the Princess의 대본이 완성될 때 모든 대본이 완료되었을 것입니다. 그러나 우리는 선택이 중요하다는 느낌을 제대로 전달하고 싶어하기 때문에 5화에서는 그 부분에서 굉장한 성과를 거둘 것입니다.
 - Scarlet Hollow의 스타일보다 애비가 그림 그리는 데 소요되는 시간이 덜 걸리는 예술 스타일을 채택했습니다. Slay the Princess에서는 Scarlet Hollow의 18"x24" 인치 종이에서 11"x17" 인치 종이로 바꾸어 각 배경에 필요한 면적을 56% 줄였습니다. 또한 연필 -잉크 - 색상에서 연필만 사용하여 (그리고 연필 색상을 조금 더 사용함으로) 프로세스의 한 단계를 삭제했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_4.png" />
 
@@ -159,7 +301,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 
 - 한 문장으로 빠르게 전달될 수 있는 강력한 호흡.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_6.png" />
 
@@ -169,7 +322,18 @@ Scarlet Hollow이 특별한 이유 중 하나는 본격적인 야망을 실현�
 
 <img src="/assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_7.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 정보도 발표하기 전에, 우리는 Slay the Princess의 개발 주기에 대한 이론을 테스트하고자 했습니다. 비밀리에 데모 작업을 진행하여 얼마나 오랜 시간이 걸리는지 확인했어요. 데모 작업은 글쓰기, 코딩, 음성 녹음에 2주가 걸렸고, 미술은 Abby가 1주 동안 작업하여 헌신적인 결과를 얻었답니다. 우리는 게임을 발표하고 데모를 발표한 날부터 1주일안에 Tiny Teams로 이어지며 이 출시는 큰 성공을 거두었어요. Slay the Princess는 2주 동안 약 25,000개의 위시리스트를 생성했어요.
 
@@ -179,7 +343,18 @@ Slay the Princess의 목표 중 하나는 완성된 게임을 사용하여 직�
 
 <table><img src="/assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_8.png" /></table>
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞서 말씀드린대로, Scarlet Hollow의 판매의 80%가 이 공지 이후에 발생했으며, Scarlet Hollow의 판매 중 33%가 이후에 발생했습니다. 실제로 이는 Slay the Princess 출시 이후 약 8개월 만에 일어난 일입니다.
 
@@ -189,13 +364,35 @@ Slay the Princess는 우리 스튜디오의 운영 자금을 앞으로 예상할
 
 ## 그렇다면 이 모든 것이 우리에게 미친 영향은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Scarlet Hollow의 개발 시작부터 함께해 온 분들께, 새로운 에피소드가 출시될 때마다 대규모 패치(또는 일련의 패치)가 그 뒤를 이은다는 것을 알고 계셨을 것입니다. 우리는 이제 숨 좀 돌릴 기회를 가지고 우리의 작품을 되돌아보고, 사람들과 연결되지 않는 부분은 무엇인지 살펴볼 수 있었습니다. 예를 들어, 첫 번째 에피소드에서는 Talk to Animals를 소개하는 큰 패치가 있었는데, 이것은 게임의 다시 플레이가 가능성을 크게 확장시키고 커뮤니티에서 인기 있는 몇몇 캐릭터에 생기를 불어넣었습니다.
 
 The Pristine Cut은 Slay the Princess에 대한 그 패치입니다. 우리가 확장하고자 했던 모든 것을 확장하고, 이야기의 페이스를 조절하고, 새로운 기능을 추가하여 전체 경험을 개선했습니다. 이에는 플레이어들이 새로운 경로와 엔딩을 찾는 데 도움이 되는 거대한 CG 갤러리도 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프리스틴 컷(The Pristine Cut)과 함께 The End of Everything 업데이트로 The Pristine Cut를 맛봤어요. 이 업데이트에서는 게임의 엔딩을 개편하고 애니메이션을 추가하며 몇 가지 중요한 트랙을 완전한 오케스트라로 개선했어요. 우리는 슬레이 더 프린세스(Slay the Princess)의 성공이 우리에게 제공하는 유연성을 기쁘게 생각하고 있어요. 이 성공을 통해 Scarlet Hollow에 더 많은 자유가 생겼는데, 이제 세션 뮤지션들을 삽입하여 라이브 공연으로 더 높은 수준의 트랙을 구현할 수 있게 되었어요. 이것은 우리가 이전에 고려할 수 없었던 방식으로 Scarlet Hollow를 높이는 데 도움이 되고 있어요!
 
@@ -205,7 +402,18 @@ The Pristine Cut은 Slay the Princess에 대한 그 패치입니다. 우리가 �
 
 전체적으로, 앞으로의 대략적인 로드맵은 이렇습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - The Pristine Cut이 올가을에 출시됩니다 (날짜 미정)
 - Scarlet Hollow: Episode 5의 첫 알파 빌드가 올해 달력 연말 전에 패트리언 테스터들에게 공개될 예정입니다.
@@ -220,7 +428,18 @@ The Pristine Cut은 Slay the Princess에 대한 그 패치입니다. 우리가 �
 
 그 사이에, 동료들이 안부를 전합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-BlackTabbyGames2024StateoftheUnion_11.png)
 

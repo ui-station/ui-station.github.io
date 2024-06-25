@@ -3,14 +3,12 @@ title: "RPC 초보자를 위한 완벽 가이드 원격 프로시져 호출 쉽�
 description: ""
 coverImage: "/assets/img/2024-06-22-DemystifyingRemoteProcedureCallsRPCforBeginnersAComprehensiveGuide_0.png"
 date: 2024-06-22 23:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-DemystifyingRemoteProcedureCallsRPCforBeginnersAComprehensiveGuide_0.png
 tag: Tech
 originalTitle: "Demystifying Remote Procedure Calls (RPC) for Beginners: A Comprehensive Guide"
 link: "https://medium.com/@mobterest/demystifying-remote-procedure-calls-rpc-for-beginners-a-comprehensive-guide-7e639c92ea17"
 ---
-
-
 
 ![RPC Image 1](/assets/img/2024-06-22-DemystifyingRemoteProcedureCallsRPCforBeginnersAComprehensiveGuide_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@mobterest/demystifying-remote-procedure-calls-rpc-for
 
 RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서버(다른 주소 공간에 있는 서버)에서 프로시저(코드 블록)를 실행할 수 있는 기술입니다. 이는 네트워크 통신의 복잡성을 추상화하여 개발자가 기본 네트워킹 세부사항에 대해 과도하게 걱정하지 않고 분산 애플리케이션을 작성할 수 있도록 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 원격 프로시저란 무엇인가요?
 
@@ -34,7 +42,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 - 추상화된 통신: 클라이언트와 원격 프로시저 간의 통신은 추상화되어 있어, 클라이언트가 저수준 네트워킹 세부사항을 처리해야 할 필요 없이 원격 프로시저와 상호작용할 수 있습니다.
 - 투명한 호출: 원격 프로시저를 호출하는 클라이언트는 일반적으로 로컬 프로시저 호출과 유사하게 보이도록 프로그래밍 언어 구조를 사용하며, 실제로는 원격으로 실행됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # RPC의 주요 구성 요소
 
@@ -48,7 +67,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 클라이언트가 원격 절차를 호출하면 일반적으로 다음 단계가 발생합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 클라이언트 Stub 호출: 클라이언트는 로컬로 보이지만 실제로 원격 프로시저를 대표하는 스텁을 호출합니다. 스텁은 실행할 프로시저 및 해당 매개변수에 대한 정보를 포함한 RPC 요청을 준비합니다.
 - 마샬링: 매개변수 및 메소드 정보는 직렬화되어 (전송을 위한 형식으로 변환되어) 네트워크를 통해 전송될 수 있도록 준비됩니다.
@@ -64,21 +94,44 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 클라이언트 프로그램이 서버에서 호스팅되는 원격 프로시저를 사용하여 숫자의 제곱을 계산해야 하는 상황을 상상해보세요:
 
 - 클라이언트 요청: 클라이언트는 서버에게 특정 숫자, 예를 들어 5의 제곱을 계산해 달라는 요청을 보냅니다.
-- 원격 프로시저 실행: 서버는 요청을 받아 "제곱_계산" 프로시저를 찾아 계산을 수행하고 (이 경우 25), 응답을 준비합니다.
+- 원격 프로시저 실행: 서버는 요청을 받아 "제곱\_계산" 프로시저를 찾아 계산을 수행하고 (이 경우 25), 응답을 준비합니다.
 - 응답 전송: 서버는 계산된 결과 25를 요청한 클라이언트에게 다시 보냅니다.
 - 클라이언트 수신: 클라이언트는 응답을 받아서 원격 프로시저 실행으로부터 얻은 결과를 사용하여 작업을 계속할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 소프트웨어 개발 및 분산 시스템에서의 RPC 역할
 
 ## 1. 네트워크 통신의 추상화:
+
 - 간소화된 통신: RPC는 네트워크 통신의 복잡성을 추상화합니다. 이를 통해 개발자들은 분산 애플리케이션의 개발을 단순화하기 위해 로컬처럼 원격 시스템에서 절차를 호출할 수 있습니다.
 - 사용 편의성: RPC를 사용함으로써 개발자들은 로우 레벨 네트워킹 세부 사항 대신에 애플리케이션 논리에 집중할 수 있습니다.
 
 ## 2. 상호 운용성:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Cross-platform 통신: RPC는 다른 시스템 및 프로그래밍 언어간의 통신을 가능하게 합니다. 이 유연성은 서로 다른 환경 간 상호 작용이 필요한 애플리케이션을 개발할 때 중요합니다.
 
@@ -89,7 +142,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 ## 4. 원격 서비스 접근:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 원격 리소스 액세스: RPC를 통해 서로 다른 기계나 서버에 위치한 서비스 및 리소스에 액세스할 수 있습니다. 특히 특정 기능이나 데이터가 별도의 서버나 위치에 있을 때 유용합니다.
 
@@ -99,7 +163,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 ## 6. 재사용성과 캡슐화:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코드 재사용성: RPC는 개발자가 여러 클라이언트에서 호출할 수있는 서비스를 생성할 수 있도록 함으로써 코드 재사용성을 촉진합니다.
 - 캡슐화: 원격 프로시저 실행의 구현 세부 정보를 캡슐화하여 클라이언트와 서버 사이의 더 깨끗한 분리를 제공합니다.
@@ -110,7 +185,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 ## 8. 서비스 지향 아키텍처(SOA) 및 마이크로서비스:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - SOA와 Microservices: 서비스 지향 아키텍처 및 마이크로서비스에서 RPC는 서비스 또는 마이크로서비스 간의 통신을 정의하고 구현하는 데 도움이 됩니다.
 
@@ -120,7 +206,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 ## 10. 실시간 통신:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 실시간 상호 작용: RPC는 클라이언트와 서버 간에 실시간 통신을 지원하여 즉각적인 응답과 상호 작용이 가능합니다.
 
@@ -131,7 +228,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 - 동기식 대비 비동기식: 동기식 RPC는 응답을 받을 때까지 대기하며 비동기식 RPC는 클라이언트가 즉시 응답을 기다리지 않고 작업을 계속할 수 있게 합니다.
 - 블로킹 대비 논블로킹: 블로킹 RPC는 클라이언트가 응답을 받기 전까지 대기하도록 하지만, 논블로킹 RPC는 클라이언트가 응답을 기다리지 않고 계속할 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 일반적인 RPC 프레임워크
 
@@ -143,7 +251,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 원격 프로시저는 네트워크 환경에서 서로 다른 시스템이나 프로세스 간의 통신과 코드 실행을 원활하게하기 위해 도입되었습니다. 원격 프로시저가 도입된 이유는 여러 가지가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1. 분산 컴퓨팅:
 
@@ -153,7 +272,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 - 상호 운용성: 서로 다른 하드웨어 및 소프트웨어 플랫폼이 혼재된 환경에서 원격 프로시저가 상호 운용성과 통신을 가능케 합니다. 이를 통해 기술적인 차이에 상관없이 정보와 기능을 교환할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. 모듈화와 재사용성:
 
@@ -163,7 +293,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 - 기능의 중앙화: 원격 프로시저는 특정 기능이나 서비스의 중앙화를 가능하게 합니다. 예를 들어 데이터베이스 서버는 데이터 검색이나 조작을 위한 원격 프로시저를 제공하여 여러 클라이언트에 서비스를 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5. 구성 요소 분리:
 
@@ -173,7 +314,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 - 클라이언트-서버 통신: 원격 프로시저는 클라이언트-서버 통신 모델의 필수 요소입니다. 이를 통해 클라이언트는 서버로부터 서비스 또는 기능을 요청하고 수신하여 많은 네트워크 응용 프로그램의 기초를 형성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 7. 확장성 및 부하 분산:
 
@@ -183,7 +335,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 - 캡슐화: 원격 절차는 특정 기능의 구현 세부 사항을 캡슐화하여 클라이언트와 서버 사이의 깔끔한 분리를 제공합니다. 이 분리는 개발과 유지보수를 간단하게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 9. 실시간 상호작용:
 
@@ -195,7 +358,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 - 신뢰성: 네트워크 장애, 시간 초과 처리, 원격 호출의 일관성을 보장합니다.
 - 성능: 네트워크 지연 시간과 데이터 전송을 고려하여 RPC 호출을 속도와 효율성을 위해 최적화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 모바일 앱 개발에서 원격 프로시저 호출이 필요한 이유는 무엇일까요?
 
@@ -205,7 +379,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 - 서버 측 기능 액세스: 모바일 앱은 종종 사용자 인증, 데이터 검색, 거래 처리 또는 리소스 액세스와 같은 다양한 기능을 위해 백엔드 서버와 상호 작용해야 합니다. RPC를 통해 모바일 앱과 백엔드 서비스 간에 통신을 원활하게 할 수 있어 서버 측 기능을 신속하게 통합할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 2. Cross-Platform Communication
 
@@ -215,7 +400,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 - 마이크로서비스 통합: 마이크로서비스 아키텍처에서 모바일 앱은 RPC를 사용하여 이러한 서비스와 상호 작용할 수 있으며 모듈식 개발을 가능하게 하고 이러한 서비스가 제공하는 특정 기능을 활용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4. 원격 처리 및 오프로딩:
 
@@ -225,7 +421,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 원격 프로시저 호출(RPC)의 대안으로 Representational State Transfer(REST) API 및 해당하는 메커니즘인 HTTP 기반 통신이나 웹 서비스를 활용할 수 있습니다. 이러한 대안은 시스템 또는 구성 요소 간의 통신을 원활하게 하기 위한 다른 접근 방식을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1. RESTful APIs:
 
@@ -239,7 +446,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 - WSDL (Web Services Description Language): 웹 서비스, 메소드, 매개변수 및 통신 프로토콜을 설명하는 데 사용되는 XML 기반 언어입니다.
 - XML-RPC: RPC와 유사하게, XML-RPC는 XML을 데이터 교환 형식으로 사용하여 네트워크를 통해 프로시저를 실행할 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # RPC와의 주요 차이점
 
@@ -253,7 +471,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 - 웹 통합: 웹 중심 애플리케이션이나 간단하고 확장 가능한 통신이 필요한 경우, RESTful API가 널리 사용되고 있어 사용이 편리합니다.
 - 의미론적 인터페이스: 인터페이스가 인간이 읽기 쉽고 이해하기 쉬워야 할 때, RESTful API의 리소스 중심 설계와 자기 설명적 URL이 인기 있는 선택지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # RPC 또는 REST를 선택하는 시점
 
@@ -265,7 +494,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 - RPC: 시스템 간 직접적인 메소드 호출이 필요한 경우 적합하며 특히 동기화되고 메소드 중심의 통신 패턴이 필요한 시나리오에서 적합합니다.
 - 웹소켓: 실시간 애플리케이션이 필요한 경우, 낮은 지연 시간과 양방향, 이벤트 중심의 통신이 필요한 경우에 선호됩니다. 라이브 업데이트, 게임, 채팅 애플리케이션 또는 영구적인 완전 이중 방향 연결이 필요한 시나리오 등이 해당됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -275,7 +515,18 @@ RPC는 프로그램이 로컬 프로시저 호출과 마찬가지로 원격 서�
 
 👏🏽 👏🏽 이 이야기에 CLAPS를 보내주세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 👉🏽 다가오는 기사를 구독해보세요
 

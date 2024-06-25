@@ -3,13 +3,12 @@ title: "이 9가지 질문에 답할 수 있다면 당신은 파이썬 전문가
 description: ""
 coverImage: "/assets/img/2024-06-22-YoureAwesomeAtPythonIfYouCanAnswerThese9Questions_0.png"
 date: 2024-06-22 23:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-YoureAwesomeAtPythonIfYouCanAnswerThese9Questions_0.png
 tag: Tech
 originalTitle: "You’re Awesome At Python If You Can Answer These 9 Questions"
 link: "https://medium.com/gitconnected/can-you-answer-all-9-difficult-python-questions-correctly-most-cant-8bf404721692"
 ---
-
 
 아래는 링크한 이미지입니다.
 
@@ -19,21 +18,30 @@ link: "https://medium.com/gitconnected/can-you-answer-all-9-difficult-python-que
 
 # 1) 데코레이터 관련 부분
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 def add(symbol):
-    def wrapper1(func):
-        def wrapper2(*args, **kwargs):
-            return func(*args, **kwargs) + symbol
-    return wrapper1
+def wrapper1(func):
+def wrapper2(*args, \*\*kwargs):
+return func(*args, \*\*kwargs) + symbol
+return wrapper1
 
 @add('!!')
 def hello(name):
-    return 'hello' + name
+return 'hello' + name
 
 print(hello('tom'))
-
 
 위 코드를 실행하면 무엇이 출력됩니까?
 
@@ -44,9 +52,20 @@ print(hello('tom'))
 - E) TypeError: ‘NoneType’ object is not callable
 - F) SyntaxError: iterable argument unpacking follows keyword argument unpacking
 
-# 2) 어떤 마법과 같은 메소드들 
+# 2) 어떤 마법과 같은 메소드들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 class Dog:
@@ -55,10 +74,10 @@ class Dog:
 
     def __getattr__(self, key):
         return '사과'
-    
+
     def __getattribute__(self, key):
         return '오렌지'
-    
+
     def __getitem__(self, key):
         return '배'
 
@@ -77,7 +96,18 @@ print(dog.name)      #??
 
 # 3) 별의 다발
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 x = [*[1,2]*2*3]
@@ -96,8 +126,18 @@ x를 출력하면 무엇이 됩니까?
 
 # 4) List Comprehension Shenanigans
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 out = []
@@ -115,12 +155,22 @@ for i in [1,2,3]:
 - C) out = [i+j for i in [4,5,6] for j in [1,2,3]]
 - D) out = [i+j for j in [1,2,3] for i in [4,5,6]]
 - E) out = [i+j for i,j in zip([1,2,3], [4,5,6])]
-- F) out = [[i,j] for i,j in enumerate(zip(*[1,2,3], *[4,5,6]))]
+- F) out = [[i,j] for i,j in enumerate(zip(_[1,2,3], _[4,5,6]))]
 
 # 5) Switching Shenanigans
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 a, b, c, d = 1, 2, 3, 4
@@ -143,14 +193,24 @@ F) 1 4 3 2
 
 # 6) 람다 함수
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 람다 함수가 잘못되었나요?
 
 - A) lambda a, b, c: [*(a, b, c)]
-- B) lambda *a, **b: print(a, b)
-- C) lambda **b, *a: print(a, b)
+- B) lambda \*a, \*\*b: print(a, b)
+- C) lambda \**b, *a: print(a, b)
 - D) lambda a, b: map(int, [a, b])
 - E) 위의 모든 람다 함수
 - F) 위의 람다 함수 중에 없음
@@ -164,27 +224,49 @@ class Dog:
 
     def __getitem__(self, key):
         return 0
-    
-dog = Dog()
-``` 
 
-<div class="content-ad"></div>
+dog = Dog()
+```
+
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 중 어떤 옵션이 오류를 발생시키나요?
 
-- A) dog._.__._.___._.__._______._.___._____.__
+- A) dog._.\_\_._.**_._.**.**\_\_\_**.\_.**\_.\_\_\_**.\_\_
 - B) dog.狗.狗.狗.狗.狗.狗.狗.狗.狗.狗.狗
 - C) dog.狗.狗[`apple 3.14159`]
-- D) dog.__123._1234.___654
+- D) dog.**123._1234._**654
 - E) dog[dog]
-- F) dog.14_._14.14_._14
+- F) dog.14*.\_14.14*.\_14
 
 ```js
 x = -1--2---3----4-----5
 print(x)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 x를 출력하면 무엇이 발생하나요?
 
@@ -198,16 +280,28 @@ x를 출력하면 무엇이 발생하나요?
 ## 9) 비트 조작
 
 ```js
-x = 9
-x = ~~~~x << 5 >> 2 << 5 >> 8 | 9 & 9 ^ 16 ^ 16
-print(x)
-```  
+x = 9;
+x = ((((~~~~x << 5) >> 2) << 5) >> 8) | ((9 & 9) ^ 16 ^ 16);
+print(x);
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 표를 Markdown 형식으로 변경하면 다음과 같습니다.
 
 ---
+
 **What happens when we print x?**
 
 - A) 0
@@ -218,11 +312,23 @@ print(x)
 - F) SyntaxError
 
 ---
+
 # 경고 — 아래에 정답이 있습니다
 
 이를 확인하시기 전에 조금 시간을 내어 스스로 시도해보시고, 가능하면 참고하지 않고 풀어보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1) 장식자 관련
 
@@ -249,11 +355,33 @@ print(hello('tom'))
 - E) TypeError: 'NoneType' object is not callable
 - F) SyntaxError: iterable argument unpacking follows keyword argument unpacking
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음을 출력합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - A) `rocky`
 - B) `apple`
@@ -274,7 +402,18 @@ x = [*[1,2]*2*3]
 print(x)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `x`를 출력하면 무엇이 될까요?
 
@@ -295,7 +434,18 @@ x = [*[1,2]*2*3]
 
 ^ 처음 *은 언팩하고, 이후 *는 곱셈합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4) 리스트 내포 흥분
 
@@ -315,27 +465,49 @@ for i in [1,2,3]:
 - C) out = [i+j for i in [4,5,6] for j in [1,2,3]]
 - D) out = [i+j for j in [1,2,3] for i in [4,5,6]]
 - E) out = [i+j for i,j in zip([1,2,3], [4,5,6])]
-- F) out = [[i,j] for i,j in enumerate(zip(*[1,2,3], *[4,5,6])]
+- F) out = [[i,j] for i,j in enumerate(zip(_[1,2,3], _[4,5,6])]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 B, E 그리고 F는 무의미해요. C와 D는 중첩된 목록을 생성하지 않아요.
 
 # 5) 변환 광기
 
 ```js
-a, b, c, d = 1, 2, 3, 4
-a, b, c, d = b, c, d, a
-a, b, c, d = b, c, d, a
-a, b, c, d = b, c, d, a
-a, b, c, d = b, c, d, a
+a, b, c, (d = 1), 2, 3, 4;
+a, b, c, (d = b), c, d, a;
+a, b, c, (d = b), c, d, a;
+a, b, c, (d = b), c, d, a;
+a, b, c, (d = b), c, d, a;
 
-print(a, b, c, d)
+print(a, b, c, d);
 ```
 
 여기서 무엇이 출력될까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - A) 1 2 3 4
 - B) 2 3 4 1
@@ -356,13 +528,24 @@ a, b, c, d = b, c, d, a    # a=1 b=2 c=3 d=4
 
 # 6) 람다 함수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 lambda 함수가 잘못되었나요?
 
 - A) lambda a, b, c: [*(a, b, c)]
-- B) lambda *a, **b: print(a, b)
-- C) lambda **b, *a: print(a, b)
+- B) lambda \*a, \*\*b: print(a, b)
+- C) lambda \**b, *a: print(a, b)
 - D) lambda a, b: map(int, [a, b])
 - E) 위의 모든 람다 함수
 - F) 위의 람다 함수 중에 없음
@@ -371,7 +554,18 @@ a, b, c, d = b, c, d, a    # a=1 b=2 c=3 d=4
 
 # 7) Class Shenanigans
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 class Dog {
@@ -389,22 +583,32 @@ val dog = Dog()
 
 다음 중 어떤 옵션이 오류를 발생시킵니까?
 
-- A) dog._.__._.___._.__._______._.___._____.__
+- A) dog._.\_\_._.**_._.**.**\_\_\_**.\_.**\_.\_\_\_**.\_\_
 - B) dog.狗.狗.狗.狗.狗.狗.狗.狗.狗.狗.狗
 - C) dog.狗.狗[`apple 3.14159`]
-- D) dog.__123._1234.___654
+- D) dog.**123._1234._**654
 - E) dog[dog]
-- F) dog.14_._14.14_._14
+- F) dog.14*.\_14.14*.\_14
 
-- A) __getattr__이 또 다른 Dog 개체를 반환하므로, .__ 등을 사용해도 계속 Dog 개체를 얻게됩니다
+- A) **getattr**이 또 다른 Dog 개체를 반환하므로, .\_\_ 등을 사용해도 계속 Dog 개체를 얻게됩니다
 - B) A와 같지만, 중국어 유니코드 문자를 사용하여 유효한 변수 이름을 사용합니다
 - C) A와 동일합니다. 하지만 키 값을 사용하여 dog[key]를 마지막에 사용하므로 0을 얻습니다
-- D) A와 동일합니다. 변수 이름은 __로 시작하고 숫자를 포함할 수 있습니다
+- D) A와 동일합니다. 변수 이름은 \_\_로 시작하고 숫자를 포함할 수 있습니다
 - E) 이것은 단순히 0을 반환합니다
 - F) 변수 이름은 숫자로 시작할 수 없습니다. 따라서 이는 잘못된 것입니다
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 8) -
 
@@ -417,14 +621,25 @@ When we print x, the output will be:
 
 - F) -3
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 x = -5       # x는 -5
 x = --5      # x는 5
 x = ---5     # x는 -5
 x = ----5    # x는 5
-x = -----5   # x는 -5 
+x = -----5   # x는 -5
 ```
 
 ^ 숫자 5 앞에 더 많은 -를 추가하면 계속해서 부호가 뒤바뀔 것인데, 음수 음수 5는 5와 같습니다.
@@ -439,12 +654,23 @@ x = -1--2---3----4-----5
 
 # 9) 비트 연산 광기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-x = 9
-x = ~~x << 5 >> 2 << 5 >> 8 | 9 & 9 ^ 16 ^ 16
-print(x)
+x = 9;
+x = ((((~~x << 5) >> 2) << 5) >> 8) | ((9 & 9) ^ 16 ^ 16);
+print(x);
 ```
 
 x를 인쇄할 때 무슨 일이 벌어질까요?
@@ -456,14 +682,25 @@ x를 인쇄할 때 무슨 일이 벌어질까요?
 - E) ZeroDivisionError
 - F) SyntaxError
 
-- x `` 5 `` 2 `` 5 `` 8는 x를 왼쪽으로 5번 이동시키고, 오른쪽으로 2번 이동시키고, 다시 왼쪽으로 5번 이동시키고, 오른쪽으로 8번 이동시킵니다. 이 작업은 x에 아무런 영향을 미치지 않아서 결과적으로 x는 9로 유지됩니다.
+- x `5` 2 `5` 8는 x를 왼쪽으로 5번 이동시키고, 오른쪽으로 2번 이동시키고, 다시 왼쪽으로 5번 이동시키고, 오른쪽으로 8번 이동시킵니다. 이 작업은 x에 아무런 영향을 미치지 않아서 결과적으로 x는 9로 유지됩니다.
 - 9 | 9는 단순히 9를 반환합니다.
 - 9 & 9는 단순히 9를 반환합니다.
 - 9 ^ 16 (XOR 연산자)는 25를 반환합니다.
 - 그러나 우리가 두 번 XOR을 한다면, 9를 다시 돌려받을 것입니다.
 - (9 ^ 16) ^ 16은 다시 한 번 9를 돌려줄 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -475,7 +712,18 @@ x를 인쇄할 때 무슨 일이 벌어질까요?
 
 이 문제들을 시도하면서 즐거운 시간 보냈기를 바랍니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 만약 나를 창작자로 지원하고 싶다면
 
@@ -487,6 +735,17 @@ x를 인쇄할 때 무슨 일이 벌어질까요?
 
 YouTube: https://www.youtube.com/@zlliu246
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LinkedIn: [https://www.linkedin.com/in/zlliu/](https://www.linkedin.com/in/zlliu/)

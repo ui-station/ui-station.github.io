@@ -3,13 +3,12 @@ title: "Excel, Power BI 및 모든 분석 코스를 대체할 것입니다"
 description: ""
 coverImage: "/assets/img/2024-05-18-ThisWillReplaceExcelPowerBIandAllAnalyticsCourses_0.png"
 date: 2024-05-18 17:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-ThisWillReplaceExcelPowerBIandAllAnalyticsCourses_0.png
 tag: Tech
 originalTitle: "“This Will Replace Excel, Power BI, and All Analytics Courses!”"
 link: "https://medium.com/make-your-data-speak/this-will-replace-excel-power-bi-and-all-analytics-courses-2004b92dcb6b"
 ---
-
 
 ## 혹은 우리가 속는 법
 
@@ -19,7 +18,18 @@ link: "https://medium.com/make-your-data-speak/this-will-replace-excel-power-bi-
 
 우리가 익숙한 모든 것들보다 무한한 단순함과 우월성을 약속하는 서비스들이 여기에 있습니다. 그러나 우리가 기대하는 훌륭한 슬로건과 가혹한 (아니면 아닐까?) 현실을 비교해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 베이스대시
 
@@ -30,7 +40,18 @@ link: "https://medium.com/make-your-data-speak/this-will-replace-excel-power-bi-
 
 ## 플러그인 GPT — VizCritique Pro
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Promise: 다양한 기준에 따라 차트를 평가하고 점수를 매겨 피드백을 제공합니다. 구체적인 권고사항을 제공합니다.
 - Result: 우리는 많은 오류가 있는 가장 복잡한 3D 히스토그램에서 테스트를 진행했고, 7/10의 점수를 줬는데, 중요한 오류를 찾지 못했습니다. 너무 관대한 것 같아, 친구야!
@@ -42,8 +63,18 @@ link: "https://medium.com/make-your-data-speak/this-will-replace-excel-power-bi-
 - Promise: 전통적인 스프레드시트를 대체하고, 데이터 분석을 간소화하며 대시보드와 보고서 작성을 자동화하며 프로젝트에서 협업을 간편화합니다. + AI 어시스턴트.
 - Result: 장단점은 쉬운 데이터 통합과 다양한 템플릿이 있습니다. 하지만 솔직히 말해서, 여전히 옛날의 엑셀이 더 쉽고 편리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Table Image](/assets/img/2024-05-18-ThisWillReplaceExcelPowerBIandAllAnalyticsCourses_3.png)
 
@@ -55,8 +86,18 @@ link: "https://medium.com/make-your-data-speak/this-will-replace-excel-power-bi-
 
 ### Polymer Search
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 약속: 대시보드 생성 및 데이터 시각화 과정을 간단하게 만들어주기 위해 자동화된 생성 및 직관적인 템플릿 및 AI 기능을 제공합니다.
 - 결과: 와우! 지금까지 본 목록 중에서 가장 흥미로운 것 같아요. 데이터를 제공하면 대시보드를 직접 만들어줘요. 너무 멋진 것은 아니지만 이미 큰 발전이에요. 불필요한 것은 제거하고 필요한 것을 추가할 수 있어요. 차트가 많지 않고 설정이 유연하지 않아요. 하지만 전체적으로 좋은 시작이에요.
@@ -68,7 +109,18 @@ link: "https://medium.com/make-your-data-speak/this-will-replace-excel-power-bi-
 
 진보와 혁신이 있더라도, 데이터 분석에서 인간의 경험과 지식의 가치는 변하지 않습니다. 현대 기술의 능력은 정말 인상적이지만, 그것들은 마스터의 손에 있는 도구에 불과해요. 얼마나 발전되었더라도, 분석가의 깊은 지식과 기술 없이는 그들의 전체 잠재력을 발휘할 수 없어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사랑하는 여러분, 함께 편안히 쉬지 말고 깃발을 잡고 앞으로 전진하여 새로운 도전과 높은 곳을 향해 빨리 나아가요! 😘
 

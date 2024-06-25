@@ -3,13 +3,12 @@ title: "매월 1,338달러 수익을 올리는 iOS 앱 만드는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_0.png"
 date: 2024-06-23 01:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_0.png
 tag: Tech
 originalTitle: "Build an iOS App with a revenue 1,338$   mo"
 link: "https://medium.com/@fakiho/build-an-ios-app-with-a-revenue-1-338-mo-196dbab78a31"
 ---
-
 
 완전한 튜토리얼이 함께 하면서 한 단계씩 안내해 드릴게요
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@fakiho/build-an-ios-app-with-a-revenue-1-338-mo-196db
 
 오랜 시간 동안 이 앱에 작업해온 결과, 매달 수익이 약 1300달러 정도 나오고 있습니다. 개발자들과 경험을 공유하고, 저와 같은 수익을 얻을 수 있도록 도와주고 싶어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마스 1부터 7까지의 수익, 광고 수익은 제외합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@fakiho/build-an-ios-app-with-a-revenue-1-338-mo-196db
 
 ![Image](/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 시작하기 전에
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@fakiho/build-an-ios-app-with-a-revenue-1-338-mo-196db
 
 따라서, 초보자이고 Swift에 대해 많이 알지 못하는 경우에도 따라올 수 있지만, 더 많이 Swift에 대해 알고 시작하는 것이 가장 좋습니다. 왜냐하면 우리는 기본적인 Swift 세부 정보에 대해 다루지 않을 것이기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_3.png)
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@fakiho/build-an-ios-app-with-a-revenue-1-338-mo-196db
 
 ![image2](/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 여기에서 사용된 아키텍처 개념들
 
@@ -64,7 +107,18 @@ link: "https://medium.com/@fakiho/build-an-ios-app-with-a-revenue-1-338-mo-196db
 
 - Xcode 버전 11.2.1 이상, Swift 5.0 이상
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # VPN
 
@@ -74,7 +128,18 @@ VPN은 가상 사설 네트워크를 의미합니다. 다가오는 기사에서 
 
 IKEv2가 무엇인지 이곳에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 코딩을 시작해봐요 🎉 💻
 
@@ -86,7 +151,18 @@ IKEv2가 무엇인지 이곳에서 확인할 수 있습니다.
 - DashboardViewController
 - InAppPurchaseProViewController
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_6.png" />
 
@@ -96,8 +172,18 @@ IKEv2가 무엇인지 이곳에서 확인할 수 있습니다.
 
 프로젝트를 명확하게 유지하는 가장 좋은 방법은 폴더를 구성하는 것이니, 우선 그 폴더들을 생성해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot 1](/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_7.png)
 
@@ -107,8 +193,18 @@ After grouping all the layers we have: Domain, Presentation, and Data Layers.
 
 The domain layer is totally isolated, the innermost part of the onion. This layer can be reused in other projects.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프레젠테이션 레이어에는 뷰 컨트롤러와 뷰 모델, XIB, SwiftUI 뷰 등 UI가 포함되어 있습니다. 뷰는 한 개 또는 여러 개의 유즈 케이스를 실행하는 뷰모델에 의해 조정됩니다. 프레젠테이션 레이어는 도메인 레이어에만 의존합니다.
 
@@ -118,7 +214,18 @@ The domain layer is totally isolated, the innermost part of the onion. This laye
 
 iOS에서 아키텍처 패턴에 대해 더 알고 싶으시면 여기에 댓글을 남겨주시면 더 자세한 내용의 아키텍처 패턴에 대한 다른 이야기를 올릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 대시보드 뷰 컨트롤러
 
@@ -128,19 +235,39 @@ UILabel은 연결 상태를 표시할 것입니다.
 
 상단의 UIImage/UILabel은 사용자가 무료 또는 프로인지 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가운데에 VPN 서버의 국가 이름과 함께 국기 아이콘을 표시할 수 있습니다. 이 위에는 파이어베이스에서 가져온 VPN 서버 목록을 트리거하는 UIButton이 있을 것입니다.
 
 현재 공개 IP 주소를 표시하는 UILabel입니다.
 
-
 ![이미지](/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_10.png)
-
 
 AppDIContainer와 연결된 스토리보드와 인스턴스화할 viewController를 연결하기 위해 StoryboardInstantiable 프로토콜을 만들 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `instantiateViewController` 메서드는 fileName을 확인하며 이는 스토리보드 `DashboardViewController.swift`, `DashboardViewController.storyboard`의 동일한 이름이어야 하고 해당 스토리보드에서 ViewController를 생성하고 반환합니다.
 
@@ -156,20 +283,41 @@ let view = DashboardViewController.instantiateViewController()
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 ViewModel을 할당하기 위해 이 함수를 사용할 것입니다.
 
 연결 버튼을 viewController와 연결하고 클로저 내에서 액션 아웃렛으로 설정한 후에, 다음의 코드 라인을 추가합니다:
 
 ```js
-viewModel.connectDisconnect()
+viewModel.connectDisconnect();
 ```
 
 이렇게 하면 물론 ViewModel이 없다는 오류가 발생할 것입니다. 걱정 마세요. 우리의 목표는 DashboardViewController용 ViewModel을 생성하는 것이기 때문에, viewController 내부에서 정의를 해볼 겁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 private(set) var viewModel: DashboardViewModel!
@@ -181,8 +329,18 @@ DashboardViewModel을 위해서 우리는 입력/출력을 정의합니다.
 
 이렇게 함으로써, 이 viewModel이 무엇을 할지 전체 아이디어를 가지게 될 것이며 나중에 필요하다면 새로운 기능을 추가할 수 있는 기회를 얻게 됩니다. 현재 VM의 로직이 복잡하기 때문에 새로운 것을 만들어도 기능은 변경되지 않을 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DashboardViewModelRoute는 이름에서 알 수있듯이 라우트를 포함하는 enum입니다.
 
@@ -192,7 +350,18 @@ DashboardViewModelLoading은 서버에 연결하거나 API에서 데이터를 �
 
 ## 사용 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 대시보드 뷰컨트롤러와 그 뷰모델이 준비되었으니, 사용 사례를 시작할 때입니다. 사용 사례는 도메인 레이어에 추가됩니다. 따라서 NetworkVPNUseCase를 만듭니다.
 
@@ -202,7 +371,18 @@ VPN의 주요 사용 사례는 연결, 연결 해제, 구성 로드, 상태 가�
 
 NetworkVPNUseCase에 준수하는 DefaultNetworkVPNUseCase라는 final 클래스를 만듭니다. 아직 Data 레이어에 주입될 Repository가 누락되어 있습니다. 이 Repository에는 NetworkVPNUseCase의 동일한 경우가 있을 것입니다. 따라서 도메인에 이를 추가하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 경로: Domain/interfaces/Repositories/
 
@@ -214,7 +394,18 @@ private(set) var vpnManager: DVPNRepository
 
 여기서 사용 사례 클래스의 최종 모습을 찾을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알다시피, 도메인 레이어는 격리되어 있고 내부에서는 제3자를 사용하지 않습니다. 따라서 NEVPNStatus에서 매핑할 VPN 상태 NetworkVPNStatus를 처리하기 위해 특별한 enum을 만들었습니다.
 
@@ -224,7 +415,18 @@ private(set) var vpnManager: DVPNRepository
 
 데이터 레이어 내에서 VPNRepository 및 VPNManager를 생성하여 연결 설정, 구성 로드 및 연결 해제 과정을 모두 처리할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1- IPSec/IKEv2 연결
 
@@ -234,18 +436,40 @@ private(set) var vpnManager: DVPNRepository
 
 왼쪽 상단의 기능을 클릭하고 개인 VPN을 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 테이블 형식을 Markdown 형식으로 바꿔주세요.
 
-| 이미지 |
-|:---:|
+|                                   이미지                                    |
+| :-------------------------------------------------------------------------: |
 | <img src="/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_12.png" /> |
-| Keychain 공유 추가 |
+|                             Keychain 공유 추가                              |
 | <img src="/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_13.png" /> |
-| Keychain에는 keychain 그룹 도메인을 추가하여 필요한 내용을 추가해주세요. |
+|  Keychain에는 keychain 그룹 도메인을 추가하여 필요한 내용을 추가해주세요.   |
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-BuildaniOSAppwitharevenue1338mo_14.png" />
 
@@ -255,7 +479,18 @@ private(set) var vpnManager: DVPNRepository
 
 코딩을 시작하기 전에 어떻게 작동하는지 설명해 드릴게요. DefaultVPNManager는 다음을 수행할 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 환경 설정 불러오기
 
@@ -265,7 +500,18 @@ private(set) var vpnManager: DVPNRepository
 
 4. 연결 시작하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설정이 없는 경우에도 먼저 선호도를 로드한다는 것이 이상하게 들릴 수 있습니다. 그러나 이것이 애플이 일을 하는 방법입니다. 만약 로드하기 전에 설정을 저장했다면, 프로세스가 실패할 것입니다.
 
@@ -275,7 +521,18 @@ private(set) var vpnManager: DVPNRepository
 
 DefaultVPNManager는 Data/VPNManager/Repository에 위치한 VPNRepository를 준수할 것입니다. 이 프로토콜은 속성과 함수를 보유할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NEVPNManager은 여기에서 필요한 것입니다. VPN 구성을 생성하고 관리할 수 있는 능력을 제공합니다. Apple 문서를 여기에서 확인하세요. 🍏
 
@@ -285,7 +542,18 @@ NEVPNManager의 인스턴스를 가지려면 NEVPNManager 프로토콜의 확장
 
 상태는 VPN의 현재 상태를 반환하며, 이것이 왜 새로운 enum을 생성하여 도메인 레이어 내에서 NetworkExtension을 사용하지 않을 이유입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `registerNotification()` 함수는 VPN 상태가 변경될 때 알림을 받습니다. NotificationCenter를 사용하는 이유는 `vpnManager.connection.startVPNTunnel()` 메서드가 성공해도 실제로 연결이 성립된 것은 아니고 VPN 터널 설정이 성공적으로 시작된 것을 의미하기 때문입니다. 따라서 실제 상태를 얻기 위해 우회 처리를 해야 했습니다. 곧 몇 분 안에 작동 방식을 확인하실 수 있을 거에요.
 
@@ -295,30 +563,52 @@ DefaultVPNManager로 돌아가서 여기서 확인할 수 있습니다. `#if tar
 
 구성을 저장할 때, 먼저 사용 중인 프로토콜을 정의해야 합니다. 제 경우, 어플리케이션은 IPSec 및 IKEv2 둘 다 허용할 수 있습니다. 따라서 여기서 서버의 프로토콜 유형을 확인하여 해당 유형에 맞게 연결 및 구성을 시도하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IPSec에 대해:
 
-```js 
+```js
 경우 .IPSec:
 ```
 
 ```js
-let p = NEVPNProtocolIPSec()
+let p = NEVPNProtocolIPSec();
 ```
 
 ```js
-p.useExtendedAuthentication = true
+p.useExtendedAuthentication = true;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```javascript
-p.localIdentifier = account.localID ?? "VPN"
+p.localIdentifier = account.localID ?? "VPN";
 ```
 
 ```javascript
-p.remoteIdentifier = account.remoteID
+p.remoteIdentifier = account.remoteID;
 ```
 
 ```javascript
@@ -329,10 +619,21 @@ if account.pskEnabled {
 p.authenticationMethod = .sharedSecret
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-p.sharedSecretReference = account.getPSKRef()
+p.sharedSecretReference = account.getPSKRef();
 ```
 
 ```js
@@ -347,10 +648,21 @@ p.authenticationMethod = .none
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-pt = p
+pt = p;
 ```
 
 IKEv2의 경우:
@@ -360,10 +672,21 @@ case .IKEv2:
 ```
 
 ```js
-let p = NEVPNProtocolIKEv2()
+let p = NEVPNProtocolIKEv2();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 p.useExtendedAuthentication = true
@@ -381,25 +704,47 @@ p.remoteIdentifier = account.remoteID
 if (account.pskEnabled) {
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 p.authenticationMethod = .sharedSecret
 ```
 
 ```js
-p.sharedSecretReference = account.getPSKRef()
+p.sharedSecretReference = account.getPSKRef();
 ```
 
 ```js
-p.passwordReference = account.getPasswordRef()
+p.passwordReference = account.getPasswordRef();
 ```
 
 ```js
 } else {
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 p.authenticationMethod = .none
@@ -414,10 +759,21 @@ p.deadPeerDetectionRate = .medium
 ```
 
 ```js
-pt = p
+pt = p;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 configOnDemand에 대해 지금은 해당 사항이 아니기 때문에 구성하지 않을 거에요.
 
@@ -427,7 +783,18 @@ configOnDemand에 대해 지금은 해당 사항이 아니기 때문에 구성�
 
 이제 DashboardViewModel 설정을 완료할 준비가 되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 대시보드 뷰모델 파트 2:
 
@@ -443,7 +810,18 @@ init(networkVPNUseCase: NetworkVPNUseCase) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 VPNManager에서 설정한 VPN 상태를 가져오기 위해 observer를 등록했어요.
 
@@ -455,7 +833,18 @@ statusDidChange는 상태가 변경될 때 레이블을 업데이트할 거예�
 
 viewDidLoad에서는 ViewModel에게 구성을 로드하도록 알릴 거예요. DefaultDashboardViewModel 쪽에서는 이렇게 될 거예요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 func viewDidLoad() {
@@ -478,7 +867,18 @@ func didDisconnect() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 논리는 어디에서 처리될까요? MVVM에서는 뷰가 어떤 종류의 논리도 처리해서는 안 되며, 현재 상태/동작을 ViewModel에만 알리고 VM이 적절한 동작을 수행해야 합니다. 이 논리를 수행하는 방법은 다음과 같습니다:
 
@@ -494,7 +894,18 @@ func connectDisconnect() {
 
 기본적으로 우리는 NSNotification.Name.NEVPNStatusDidChange를 통해 받은 상태를 확인하여 연결 또는 연결 해제합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 부분에서 놓친 부분은 ViewModel을 바인딩하는 것 뿐입니다.
 
@@ -506,25 +917,39 @@ func connectDisconnect() {
 private func bind(_ viewModel: DashboardViewModel) {
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 viewModel.loadingType.observe(on: self, observerBlock: { [weak self] in self?.handleLoading($0)})
 
-
-
 viewModel.status.observe(on: self, observerBlock: { [weak self] in self?.handleConnectionStatus($0)})
-
-
 
 viewModel.route.observe(on: self, observerBlock: { [weak self] in self?.handleRouting($0)})
 
-
-
 viewModel.premiumStatus.observe(on: self, observerBlock: { [weak self] in self?.handlePurchaseStatus($0)})
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 viewModel.vpnAccount.observe(on: self, observerBlock: {[weak self] in self?.handleVPNSelection($0)})
@@ -542,16 +967,38 @@ viewModel.loadRequestAd.observe(on: self, observerBlock: {[weak self] in if $0 {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Rx 대신 Observable 대신 RxSwift 라이브러리를 사용할 수 있어요.
 
-![image](https://miro.medium.com/v2/resize:fit:1200/1*BwR548YaWSxEhs7RjlHzPw.gif)    
+![image](https://miro.medium.com/v2/resize:fit:1200/1*BwR548YaWSxEhs7RjlHzPw.gif)
 
 # 다음 파트가 곧 업데이트될 예정입니다
 
 ## ✌️이 튜토리얼을 계속 진행하고 싶다면 여기나 Twitter에서 팔로우해주세요. 궁금한 점이 있으면 언제든지 물어보세요, 최선을 다해 답변해드릴게요 ❤️
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 👉 [파트 2]

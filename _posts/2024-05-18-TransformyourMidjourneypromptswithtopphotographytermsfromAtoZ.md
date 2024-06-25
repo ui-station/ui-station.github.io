@@ -3,13 +3,12 @@ title: "중간 과정 프롬프트를 A부터 Z까지 최상위 사진 용어로
 description: ""
 coverImage: "/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_0.png"
 date: 2024-05-18 20:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_0.png
 tag: Tech
 originalTitle: "Transform your Midjourney prompts with top photography terms from A to Z"
 link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with-top-photography-terms-from-a-to-z-54a3b70f022e"
 ---
-
 
 사진 효과와 기술에 대한 A-Z 안내서에 오신 것을 환영합니다. 이것은 미드저니 작품을 향상시키기 위해 디자인된 가이드입니다. "추상"부터 "줌 버스트"까지, 이 기사는 다양한 시각적 표현의 팔레트에 대해 심층적으로 다룹니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with
 
 추상 사진은 전통적인 현실주의와는 다르게 색상, 모양 및 패턴에 집중하여 종종 현실 세계의 대상과 거의 비슷하지 않은 이미지를 만드는 흥미로운 작품을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 형태, 선, 질감과 같은 주요 구성 요소를 강조하여 주제를 전형적인 맥락에서 추상적으로 처리하고 관행적인 지각에 도전하는 방식으로 제시합니다.
 
@@ -29,8 +39,18 @@ link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with
 
 [이미지 첨부](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_1.png)
 ![image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_2.png)
@@ -38,8 +58,18 @@ link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with
 
 # Bokeh
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 볼케는 이미지의 초점을 맞추지 않은 부분에서 생산된 흐릿한 미학적인 효과로 유명한 사진 효과입니다. "흐릿함"이나 "안개"를 의미하는 일본어 단어에서 비롯되었으며, 보케는 일반적으로 사진 속에서 꿈틀거리는 분위기를 만듭니다.
 
@@ -49,8 +79,18 @@ link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with
 
 <img src="/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![This is an image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_5.png)
 
@@ -60,8 +100,18 @@ link: "https://medium.com/design-bootcamp/transform-your-midjourney-prompts-with
 
 # Contre jour
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Contre jour, 또는 역광은 카메라를 빛 원본 쪽으로 향하게 함으로써 대상을 그림자에 둔 채 실루엣 효과를 만들어내는 사진 촬영 기술입니다. 이 기법은 형태와 선을 강조하며 장면에 드라마나 신비로움을 불어넣어 빛과 어둠 사이의 높은 대비를 만들어냅니다.
 
@@ -71,21 +121,41 @@ Contre jour, 또는 역광은 카메라를 빛 원본 쪽으로 향하게 함으
 
 ![image2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_10.png) 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_11.png) 
+![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_10.png)
+
+![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_11.png)
 
 # Dutch Angle
 
 더치 앵글(Dutch Angle)은 카메라를 일부러 한 쪽으로 기울여 수평 선이 경사진 상태가 되도록 하는 기술입니다. 이 접근 방식은 혼란, 불안, 또는 역동성을 일으키며, 이는 스릴러와 호러와 같은 장르에서 심리적 긴장을 전달하는 데 좋아지게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보는 사람의 균형과 정상적인 시각을 단연 방해하여, 네덜란드 기욤은 객관적이거나 변형된 현실을 제공하여 종종 심리적 불안을 표현하거나 이미지에 독특한 스타일적 매력을 더합니다.
-
 
 ![image1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_12.png)
 
@@ -93,9 +163,18 @@ Contre jour, 또는 역광은 카메라를 빛 원본 쪽으로 향하게 함으
 
 ![image3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_14.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_15.png)
 
@@ -105,17 +184,36 @@ Edge darkening, 또는 바이네팅(vignetting),는 이미지의 모서리가 �
 
 이 효과는 사진의 중요한 요소에 관전자의 주의를 끌기 위해 활용되며 자연스러운 프레임을 제공하고 이미지에 깊이나 드라마를 추가합니다. 때때로 결함으로 간주되기도 하지만, 의도적으로 적용할 때 바이네팅은 사진의 예술적 영향을 크게 향상시킬 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_16.png)
 ![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_17.png)
 ![Image 3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_18.png)
 ![Image 4](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_19.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Fisheye
 
@@ -125,7 +223,18 @@ Edge darkening, 또는 바이네팅(vignetting),는 이미지의 모서리가 �
 
 ![이미지 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_21.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_22.png)
 
@@ -135,7 +244,18 @@ Edge darkening, 또는 바이네팅(vignetting),는 이미지의 모서리가 �
 
 사진에서의 "grain"은 이미지에 시각적 질감이나 얼룩을 부여하는 효과로, 고속 필름에서 볼 수 있는 곡물 모양의 질감을 상기시킵니다. 이 질감은 필름 유화액에서 금속 은 입자의 분포로부터 발생하며, 높은 ISO 필름의 큰 입자가 더욱 뚜렷한 곡물을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디지털 사진에서는 센서가 일반적으로 노이즈를 생성하지 않지만, 어두운 조건이나 높은 ISO 설정에서 비슷한 효과가 발생할 수 있습니다. 이는 이미지에 촉감 품질을 더해 줍니다.
 
@@ -145,8 +265,18 @@ Edge darkening, 또는 바이네팅(vignetting),는 이미지의 모서리가 �
 
 ![Image 3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_26.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_27.png)
 
@@ -156,9 +286,18 @@ High key photography is distinguished by its light, airy feel, with an emphasis 
 
 High key photography is often associated with conveying a positive, cheerful mood and is widely used in fashion, beauty, and portrait photography for its clean, minimalist aesthetic.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_28.png)
 
@@ -168,8 +307,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_31.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 적외선
 
@@ -179,8 +328,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 이는 풍경에 초월적이고 거의 초자연적인 퀄리티를 부여하여 익숙한 장면을 신비롭고 신탁스럽게 만들어냅니다. 처음에는 과학 및 군사 응용 분야로 개발되었지만, 적외선 사진술은 독특한 시각적 매력 때문에 예술적인 분야에서도 자리를 잡았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Transform your Mid-journey prompts with top photography terms from A to Z](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_32.png)
 
@@ -190,8 +349,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![Transform your Mid-journey prompts with top photography terms from A to Z](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_35.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 자누스 효과
 
@@ -201,7 +370,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![이미지](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_36.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_37.png)
 ![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_38.png)
@@ -209,7 +389,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 # 키를리안 효과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 키를리안 효과는 1939년에 그를 발견한 세물론 키를리안의 이름에서 따왔어요. 이것은 사진 과정을 포함하는데, 이는 물체의 에너지 필드 또는 "오라"를 포착한다고 알려져 있어요. 특히 잎이나 손과 같은 유기물 아이템에 관한 거든요.
 
@@ -219,7 +410,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![사진](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_41.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_42](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_42.png)
 
@@ -229,7 +431,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 롱 익스포저 사진술은 카메라의 셔터가 일반적으로 열린 시간보다 길게 열려 빛이 더 많이 들어오도록 한 기술로, 단일 이미지 내에서 시간의 흐름을 캡처하는 것을 가능하게 합니다. 이 방법은 밤 풍경, 광선 뒤끝, 물의 흐름, 천체 사건과 같이 독특하고 종종 초현실적인 시각 효과를 만들어냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정적 및 동적 요소가 혼재된 시나리오에서는 롱 노출이 부드러운 빛 흔적이나 물 흐름을 포착하는 동시에 정지된 물체의 선명함을 유지할 수 있습니다. 보통 삼각대와 원격 셔터 릴리스를 사용하여 안정성을 보장하는 롱 노출 사진술은 사진에서 시간을 시각적 요소로 탐구할 수 있도록 해줍니다.
 
@@ -239,7 +452,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![이미지3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_46.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 \[![이미지](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_47.png)\]
 
@@ -249,8 +473,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 \[![이미지](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_48.png)\]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_49.png" />
 
@@ -260,8 +494,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 # Night Vision
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 밤 시야 사진술은 특징적인 녹색 단색으로 특징 지어지는 야간 시야 장비로 보는 효과를 모방하여 저조명 조건에서 시계바늘을 뚜렷하게 함으로써 시야를 높이는 기술입니다. 이 기술은 종종 대기 효과에 사용되거나 야간 활동 또는 감시와 관련된 주제적 문맥에서 사용됩니다.
 
@@ -271,8 +515,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![Night vision photography](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_54.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_55.png)
 
@@ -282,9 +536,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_56.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_57.png)
 
@@ -294,8 +557,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 # Pinhole Effect
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 핀홀 효과는 핀홀 카메라와 관련이 있으며 망원현 대신 작은 구멍을 통해 이미지를 캡처하여 모든 장면 요소가 동등하게 초점을 맞추는 무한한 깊이의 영역으로 이어집니다.
 
@@ -305,7 +578,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![이미지2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_61.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_62.png)
 
@@ -315,8 +599,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 퀘이사르 버스트는 사후 처리에서 방사형, 오염된, 별 모양의 필터 효과를 추가하여 은구멍 중심에 있는 거대한 블랙홀인 퀘이사르의 광도가 높고 동적인 모습을 시뮬레이션합니다. 이 효과는 사진에 화려하고 우주적인 퀄리티를 부여하여 우주와 공상과학 주제를 향상하는 데 이상적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_64.png)
 
@@ -326,8 +620,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![Image 4](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_67.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 롤링 셔터 효과
 
@@ -337,7 +641,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![이미지2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_69.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_70.png)
 
@@ -347,8 +662,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 셀렉티브 컬러링은 주로 흑백 이미지 내에서 특정 주제물을 컬러로 분리하여 시선을 집중시키고 사진의 특정 부분을 강조하는 기술입니다. 이 기술은 주요 요소에 빛을 발해 이야기의 영향력을 향상시키며, 이미지의 컬러부분과 흑백 부분 간의 획기적인 대조를 만들어냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_72.png)
 
@@ -358,8 +683,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![Image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_75.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 텍스처 오버레이
 
@@ -369,8 +704,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![이미지2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_77.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_78.png)
 
@@ -380,9 +725,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![Image 2](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_79.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_80.png)
 
@@ -392,9 +746,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![image 4](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_83.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_84.png)
 
@@ -404,8 +767,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 # Voronoi Map
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보로노이 맵은 이미지를 일부 지점과의 근접성에 기초하여 셀들의 모자이크로 분해합니다. 각 셀은 원본 사진의 일부를 포함하며, 이 효과는 조각난 느낌과 패턴이 있는 외관을 만들어내어 유리창 같은 예술 작품을 연상시키며 촬영된 장면에 대한 색다른 관점을 제공합니다.
 
@@ -415,8 +788,18 @@ High key photography is often associated with conveying a positive, cheerful moo
 
 ![이미지3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_89.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Wet Plate Look](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_90.png)
 
@@ -424,8 +807,18 @@ The wet plate look replicates the style of early 19th-century wet plate photogra
 
 ![Wet Plate Look](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_91.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_92.png)
 
@@ -435,7 +828,18 @@ The wet plate look replicates the style of early 19th-century wet plate photogra
 
 # Xylography Effect
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Xylography, 또는 목판 인쇄는 목재 표면에 디자인을 새기고 잉크를 바르며 종이나 천에 옮기기 위해 누르는 것을 포함합니다. 이 기술은 굵은 선과 질감 있는 외관으로 특징지어지며 전통 인쇄 기술의 본질을 담아 독특한 예술적 효과를 낳습니다.
 
@@ -445,15 +849,35 @@ Xylography, 또는 목판 인쇄는 목재 표면에 디자인을 새기고 잉�
 
 ![이미지3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_97.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요코쵸 효과
 
 요코쵸 효과는 간단한 구조와 비네팅, 흐린 가장자리, 빛 누출과 같은 독특한 이미지 특성으로 알려진 빈티지 일본 장난감 카메라의 미학을 흉내냅니다. 이 효과는 꿈풍경적인 시각적 스타일을 만들어내며 종종 향수와 예술적 불완전함의 느낌을 담고 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지 1](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_100.png)
 
@@ -463,7 +887,18 @@ Xylography, 또는 목판 인쇄는 목재 표면에 디자인을 새기고 잉�
 
 # 줌 터보 효과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 줌 버스트 효과는 조리개 렌즈의 초점 길이를 조정하여 얻어지며, 사진 속에서 움직임을 느끼게 합니다. 이 기술은 정지된 요소들이 프레임의 중심쪽으로 빠르게 다가오거나 멀어지는 것처럼 보이게 하며, 촬영된 장면에 에너지와 확장된 느낌을 더합니다.
 
@@ -473,7 +908,18 @@ Xylography, 또는 목판 인쇄는 목재 표면에 디자인을 새기고 잉�
 
 ![이미지3](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_105.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-TransformyourMidjourneypromptswithtopphotographytermsfromAtoZ_106.png)
 
@@ -483,7 +929,18 @@ Xylography, 또는 목판 인쇄는 목재 표면에 디자인을 새기고 잉�
 
 기억하세요, 사진은 시각만큼이나 시각적인 것입니다. 이 도구들을 사용하여 보통 것을 환상적인 것으로 바꾸고, 창의적인 풍경의 끝없는 가능성을 탐험하시기 바랍니다. 계속해서 창작하고, 꿈꾸고, 당신의 예술을 빛나게 해보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 --- by 公众号: 小祸碎碎念
 
@@ -493,7 +950,18 @@ Xylography, 또는 목판 인쇄는 목재 표면에 디자인을 새기고 잉�
 
 If yes, then:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 댓글 남기기
 - 업데이트 팔로우하기

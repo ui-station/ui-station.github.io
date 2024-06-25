@@ -3,13 +3,12 @@ title: "중간 과정 스타일 참조 코드를 위한 상위 10개 컬렉션"
 description: ""
 coverImage: "/assets/img/2024-05-17-Top10collectionsforMidjourneystylereferencecodes_0.png"
 date: 2024-05-17 20:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-Top10collectionsforMidjourneystylereferencecodes_0.png
 tag: Tech
 originalTitle: "Top 10 collections for Midjourney style reference codes"
 link: "https://medium.com/design-bootcamp/top-10-collections-for-midjourney-style-reference-codes-9baf3203abfc"
 ---
-
 
 Midjourney 스타일 참조 코드가 소개된 이후로 취미로 삼는 이들은 열정적으로 sref 랜덤 접미사 매개변수를 활용하여 다양한 스타일을 발견하고 활용하고 있어요.
 
@@ -19,7 +18,18 @@ Midjourney 스타일 참조 코드가 소개된 이후로 취미로 삼는 이�
 
 Midjourney 애호가들의 헌신 덕분에 방대한 양의 스타일 코드가 편집되어, 이 과정은 급속히 가속화되고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 얼마 전에는 처음 300개 스타일 코드만 보았는데, 이제는 3,000개가 넘었습니다. Midjourney가 공식적으로 오픈 소스 sref 사전 생성 계획을 발표했기 때문에 우리가 직접 sref를 찾을 필요가 없게 될 때가 머지 않았습니다.
 
@@ -29,7 +39,18 @@ Midjourney 애호가들의 헌신 덕분에 방대한 양의 스타일 코드가
 
 Midjourney 영향력 있는 인플루언서 Alie Jules가 만든 AI IQ 포털은 매일 새로운 스타일 참조 (sref)를 업데이트하는 웹사이트입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미래의 업데이트를 통해 sref 코드를 스타일, 색상 등으로 분류하게 될 예정이며, 선호하는 스타일을 쉽게 찾을 수 있게 될 것입니다. 이 사이트를 즐겨찾기에 추가하여 계속해서 업데이트를 확인해주세요.
 
@@ -39,7 +60,18 @@ Midjourney 영향력 있는 인플루언서 Alie Jules가 만든 AI IQ 포털은
 
 # 2. Tatiana Tsiguleva의 콜렉션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디자이너 Tatiana Tsiguleva는 Gumroad에서 무료로 다운로드할 수 있는 그녀의 검증된 srefs의 PDF를 제공합니다. 가격으로 "0"을 입력하고 "이것을 원합니다"를 클릭하여 비용없이 다운로드하실 수 있습니다.
 
@@ -49,7 +81,18 @@ Midjourney 영향력 있는 인플루언서 Alie Jules가 만든 AI IQ 포털은
 
 # 3. Dogan Ural의 컬렉션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디자이너 Dogan Ural은 현재 트위터 기여를 기반으로 30번의 업데이트를 통해 Notion에 Midjourney 스타일 코드의 선별된 목록을 편집하여 표시했습니다.
 
@@ -59,7 +102,18 @@ Midjourney 영향력 있는 인플루언서 Alie Jules가 만든 AI IQ 포털은
 
 # 4. Charlie Q의 Magical Sref 라이브러리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Charlie Q의 스타일 라이브러리에서 300가지 Midjourney 스타일 코드를 요약했어요. 더 많은 내용이 곧 출시될 예정이에요. 사용하기 편리한 디자인은 이미지를 클릭하면 sref 코드를 표시해줘요.
 
@@ -69,7 +123,18 @@ Charlie Q의 스타일 라이브러리에서 300가지 Midjourney 스타일 코�
 
 # 5. GeniArt의 PDF 컬렉션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 니코는 Midjourney 열정가인, 프랑스어 웹사이트 geniart.fr를 만들어 Midjourney 주변의 커뮤니티를 구축했습니다.
 
@@ -77,7 +142,18 @@ Charlie Q의 스타일 라이브러리에서 300가지 Midjourney 스타일 코�
 
 링크: [코드 다운로드](https://geniart.fr/upload/OrderedEntropy/OrderedEntropy_canvas_sref-style-codes.pdf)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 6. 에스레프 랜덤 채굴 링크
 
@@ -87,7 +163,18 @@ Discord 사용자 "P-Logic"은 매개변수 --v 6.0 --ar 16:9 --sw 1000 --sref r
 
 링크: [https://discord.com/channels/662267976984297473/1238405277670178816](https://discord.com/channels/662267976984297473/1238405277670178816)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 7. 브리에르 씨의 컬렉션
 
@@ -97,17 +184,39 @@ Discord 사용자 "P-Logic"은 매개변수 --v 6.0 --ar 16:9 --sw 1000 --sref r
 
 링크: [https://mrdelabruyere.notion.site/Midjourney-Style-Reference-43bf1f17ed9c4042a6f3b115c9dd1b39](https://mrdelabruyere.notion.site/Midjourney-Style-Reference-43bf1f17ed9c4042a6f3b115c9dd1b39)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 8. Sevenstyles
 
-트위터 Midjourney 영향력 있는 사용자 브래드_7S는 처음 4,000개의 sref를 테스트하고 집계하여 Sevenstyles 사이트에 공유했습니다. 이 코드들은 각각 1,000개씩 4개의 분할로 나누어져 있습니다.
+트위터 Midjourney 영향력 있는 사용자 브래드\_7S는 처음 4,000개의 sref를 테스트하고 집계하여 Sevenstyles 사이트에 공유했습니다. 이 코드들은 각각 1,000개씩 4개의 분할로 나누어져 있습니다.
 
 ![Sevenstyles](/assets/img/2024-05-17-Top10collectionsforMidjourneystylereferencecodes_7.png)
 
 코드에 액세스하려면 사이트에서 zip 파일을 다운로드하세요. 압축을 풀면 실제 다운로드 링크를 찾을 수 있습니다. 이 링크를 브라우저에 복사하여 써드파티 다운로드 사이트로 이동할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-17-Top10collectionsforMidjourneystylereferencecodes_8.png" />
 
@@ -117,7 +226,18 @@ Discord 사용자 "P-Logic"은 매개변수 --v 6.0 --ar 16:9 --sw 1000 --sref r
 
 # 9. Collection by CreatorImpact
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웨이드 맥매스터 디자이너가 그의 웹사이트에 'Midjourney' 스타일 코드 컬렉션을 만들었습니다. 이 컬렉션에는 처음 300개 스타일 코드와 몇 가지 무작위 코드가 포함되어 있습니다.
 
@@ -127,7 +247,18 @@ Discord 사용자 "P-Logic"은 매개변수 --v 6.0 --ar 16:9 --sw 1000 --sref r
 
 # 10. 요시히코 나리타의 컬렉션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일본을 좋아하는 YoshihikoNarita가 Notion에 첫 350개의 sref 코드를 요약하여 컬렉션을 만들었습니다.
 
@@ -137,7 +268,18 @@ Discord 사용자 "P-Logic"은 매개변수 --v 6.0 --ar 16:9 --sw 1000 --sref r
 
 # 요약하자면
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드가 40억 개가 넘는 sref가 있습니다. 이를 정리하거나 모으는 것은 끝이없는 것처럼 느껴질 수 있습니다. 모든 코드가 모두의 취향에 맞을 수는 없고, 모든 스타일이 일상적으로 사용하기에 적합한 것은 아닙니다.
 
@@ -147,7 +289,18 @@ sref 코드는 스타일 경향을 나타내지만 이미지 품질을 결정하
 
 - by 公众号：二阶导
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 💡관심이 있으신가요? 저의 Midjourney 컬렉션으로 깊은 내용을 살펴보세요.
 

@@ -3,13 +3,12 @@ title: "안드로이드에서 커스텀 애노테이션을 사용해야 할 때 
 description: ""
 coverImage: "/assets/img/2024-06-22-WhentoUseCustomAnnotationsinAndroidPart3_0.png"
 date: 2024-06-22 22:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-WhentoUseCustomAnnotationsinAndroidPart3_0.png
 tag: Tech
 originalTitle: "When to Use Custom Annotations in Android: Part 3"
 link: "https://medium.com/@sandeepkella23/when-to-use-custom-annotations-in-android-part-3-198b533f00df"
 ---
-
 
 ![이미지](/assets/img/2024-06-22-WhentoUseCustomAnnotationsinAndroidPart3_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sandeepkella23/when-to-use-custom-annotations-in-andr
 
 만약 코드가 스스로 문서를 작성할 수 있다면 어떨까요! 주석이 그렇게 도와줄 수 있어요. 메서드가 무엇을 하는지 설명하는 주석을 만들고 해당 주석을 사용하여 문서를 생성해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 우리는 주석을 정의합니다:
 
@@ -48,7 +58,18 @@ class DocumentedClass {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제, 이러한 주석을 기반으로 문서를 생성하는 프로세서를 만들어 봅시다:
 
@@ -75,7 +96,18 @@ fun main() {
 
 # 5. 런타임 처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱에서 기능을 동적으로 전환하고 싶다면 사용자 지정 주석을 활용하여 쉽게 관리할 수 있습니다.
 
@@ -89,7 +121,18 @@ annotation class FeatureToggle(val featureName: String)
 
 이를 클래스 내에서 사용하여 메서드를 표시하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 class FeatureClass {
@@ -135,8 +178,18 @@ fun main() {
 
 이 설정으로 핵심 로직을 수정하지 않고 기능을 동적으로 활성화 또는 비활성화할 수 있습니다. 멋지지 않나요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 6. 다양한 사용 사례 다루기
 
@@ -148,9 +201,20 @@ fun main() {
 @Target(AnnotationTarget.FUNCTION)
 @Retention(AnnotationRetention.RUNTIME)
 annotation class RequiresRole(val role: String)
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 필요한 역할에 주석을 달아주세요:
 
@@ -196,7 +260,18 @@ fun main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 사용자가 올바른 역할을 가지고 있을 때만 귀하의 메서드가 실행됩니다. 더 이상 코드 전체에 흩어진 역할 확인 코드가 없습니다!
 
@@ -206,6 +281,17 @@ fun main() {
 
 더 궁금한 사항이 있거나 다른 멋진 주제에 대해 알아보고 싶다면 언제든지 말씀해주세요. 즐거운 코딩 하시고, 계속해서 어노테이션을 즐기세요! 😊
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4를 어떻게 도와드릴까요?

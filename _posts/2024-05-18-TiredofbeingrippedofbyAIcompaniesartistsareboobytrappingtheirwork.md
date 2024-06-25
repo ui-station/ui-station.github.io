@@ -3,13 +3,12 @@ title: "인공지능 회사들에 속지 않기 위해 예술가들이 작품에
 description: ""
 coverImage: "/assets/img/2024-05-18-TiredofbeingrippedofbyAIcompaniesartistsareboobytrappingtheirwork_0.png"
 date: 2024-05-18 20:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TiredofbeingrippedofbyAIcompaniesartistsareboobytrappingtheirwork_0.png
 tag: Tech
 originalTitle: "Tired of being ripped of by AI companies, artists are booby trapping their work"
 link: "https://medium.com/enrique-dans/tired-of-being-ripped-of-by-ai-companies-artists-are-booby-trapping-their-work-5b169536d43a"
 ---
-
 
 ![이미지](/assets/img/2024-05-18-TiredofbeingrippedofbyAIcompaniesartistsareboobytrappingtheirwork_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/enrique-dans/tired-of-being-ripped-of-by-ai-companies-
 
 법적 문제는 분명합니다: 웹 상에 공개된 정보는 스크랩핑 대상이 될 수 있다는 것을 수년간 말해 왔습니다. 어떤 목적으로든 웹 페이지에 가서 그 내용을 모두 복사하는 권리를 달성하는 다양한 법적 선례들이 있습니다. 복잡성 때문에 해당 사례가 몇 년간 계속되어 대법원에 이르기도 하겠지만, 이 중요한 사안에 대해 저작물이 알고리즘 훈련에 사용된 작가들은 자신들의 작품이 쉽게 모방될 수 있다는 것을 보거나 누군가가 그들의 스타일을 시뮬레이션하여 새로운 이미지를 만들어낼 수 있다는 것을 보게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 법원이 도움을 많이 제공하지 않을 것이라는 점을 인정하면, 일부 예술가들은 자신들의 작품을 보호하기 위해 보비 트랩을 설치하고 있습니다. 이들은 소프트웨어로 처리된 이미지를 생성하여 알고리즘이 혼란스럽게 만드는 무시무시한 변경을 가하고 있습니다. 이 과정은 사람들의 얼굴을 사진이나 동영상에서 무시무시하게 수정해서 얼굴 인식 알고리즘을 방지하는 방식과 동일합니다. Atropa belladonna 식물(환각을 일으키는 식물)을 기리며 명명된 Nightshade라는 알고리즘은 수정된 사진을 게시할 수 있게 허용하며, 이러한 수정된 사진은 알고리즘이 실제 내용과 다른 설명을 생성하도록 합니다. 이 때문에 알고리즘이 혼란스러워져 결과물로 요청된 것과 다른 이미지를 제공합니다.
 
@@ -29,8 +39,19 @@ link: "https://medium.com/enrique-dans/tired-of-being-ripped-of-by-ai-companies-
 
 실무적으로, 예술가들은 자신들의 작품에 대해 마음대로 조작할 수 있습니다. 이전까지 회사가 아카이브 전체를 긁어 모든 내용으로 알고리즘을 교육시킬 수 있는 방법을 방해할 수 없다고 믿어져 왔던 것과 마찬가지로 말입니다. 아무것도 절대적으로 확정되어 있는 게 없으며, 일부 예술가들이 보여준 것처럼 특히 저작권을 관리하는 사람들이라면, 이미지가 알고리즘 교육용으로 사용될 때 적절한 보상을 받을 수 있도록 어떠한 협상이 이뤄져야 할 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이 공간을 주시해주세요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이 공간을 주시해주세요.
 
 (스페인어로는 여기에)

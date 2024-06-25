@@ -18,8 +18,18 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 튜토리얼을 통해, 블로그 추천을 통해, 그리고 LangChain과 Sentence Transformers 라이브러리와 같은 도구를 활용하여, 독자들은 AI 프로젝트에서 벡터 데이터베이스를 효과적으로 활용하는 방법에 대한 통찰과 실습 경험을 얻게 됩니다. 게다가, 이 기사는 신기술을 최신 상태로 유지하는 중요성을 강조하며 추가 학습 및 커뮤니티 참여를 위한 방법을 소개합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_0.png)
 
@@ -34,8 +44,18 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 # 1. Vector Databases: from Embeddings to Applications
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_1.png)
 
@@ -45,7 +65,18 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 핵심적으로, 벡터 데이터베이스는 임베딩의 사용에 의존하여 데이터의 의미를 포착하고 다른 벡터 쌍 사이의 유사성을 측정하며 방대한 데이터 세트를 살피면서 가장 유사한 벡터를 식별합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 과정은 벡터 데이터베이스를 애플리케이션에 적용할 때 언제 결정을 내릴지에 대한 지식을 습득하는 데 도움이 될 것입니다. 다음을 살펴볼 것입니다:
 
@@ -57,7 +88,18 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 ![이미지](/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 벡터 데이터베이스는 데이터의 의미를 포착하기 위해 임베딩을 사용하며, 서로 다른 벡터 쌍 간의 유사성을 측정하고 가장 유사한 벡터를 식별하기 위해 대규모 데이터 세트를 탐색합니다.
 
@@ -67,7 +109,18 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 이 강좌에서는 벡터 데이터베이스를 사용하여 육 가지 응용 프로그램을 구현하는 방법을 탐험하게 됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 시멘틱 검색: 사용자 Q/A 데이터 세트에서 이해 측면에 중점을 둔 콘텐츠의 의미를 가리키며, 단어 일치 이상의 검색 도구를 만듭니다.
 - RAG: 모델이 훈련되지 않은 소스에서 내용을 통합하여 LLM 응용 프로그램을 향상시킵니다. Wikipedia 데이터 세트를 사용하여 질문에 대답합니다.
@@ -82,7 +135,18 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 ![image](/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그는 Moez Ali에 의해 작성된 것으로, 최고의 벡터 데이터베이스에 대한 포괄적인 가이드입니다. 고차원 데이터 저장, 비구조적 정보 해독, 그리고 AI 응용 프로그램을 위한 벡터 임베딩을 활용하는 방법을 마스터하는 데 도움이 될 것입니다.
 
@@ -97,8 +161,18 @@ link: "https://medium.com/gitconnected/6-resources-to-master-vector-databases-bu
 
 # 4. LangChain — 텍스트 분할기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![LangChain](/assets/img/2024-05-23-6ResourcestoMasterVectorDatabasesBuildingaVectorStorage_4.png)
 
@@ -108,8 +182,18 @@ LangChain — 텍스트 분리기는 LangChain에서 구현된 다양한 텍스�
 
 텍스트의 긴 부분을 처리하려면 해당 텍스트를 조각으로 나누는 것이 필요합니다. 이것이 얼마나 단순한 것처럼 들리더라도 여기에는 많은 잠재적인 복잡성이 있습니다. 이상적으로는 의미론적으로 관련된 텍스트 조각을 함께 유지하고 싶을 것입니다. "의미론적으로 관련된"이란 무슨 의미인지는 텍스트 유형에 따라 달라질 수 있습니다. 이 노트북에서는 이를 수행하는 여러 방법을 소개합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5. Sentence Transformers 라이브러리
 
@@ -119,7 +203,18 @@ Sentence Transformers 라이브러리는 최신의 문장, 텍스트 및 이미�
 
 이 프레임워크를 사용하여 100개 이상의 언어에 대한 문장/텍스트 임베딩을 계산할 수 있습니다. 이러한 임베딩은 코사인 유사도와 같이 사용하여 의미가 유사한 문장을 찾는 데 사용할 수 있습니다. 의미론적 텍스트 유사성, 의미론적 검색 또는 패러프레이즈 마이닝에 유용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 프레임워크는 PyTorch와 Transformers를 기반으로 하며, 다양한 작업에 튜닝된 미리 학습된 모델의 큰 컬렉션을 제공합니다. 또한, 모델을 쉽게 세밀 조정할 수 있습니다.
 
@@ -129,7 +224,18 @@ Sentence Transformers 라이브러리는 최신의 문장, 텍스트 및 이미�
 
 MTEB 리더보드는 임베딩 모델을위한 리더보드이며, 다양한 임베딩 모델을 비교하여 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 만약 이 글을 좋아하시고 저를 지원하고 싶으시면 다음을 확인해주세요:
 
@@ -143,7 +249,18 @@ MTEB 리더보드는 임베딩 모델을위한 리더보드이며, 다양한 임
 
 ## 데이터 과학과 AI 분야에서 새로운 경력을 시작하고 방법을 모르는가요? 데이터 과학 멘토링 세션과 장기적인 경력 멘토링을 제공하고 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 멘토링 세션: [링크](https://lnkd.in/dXeg3KPW)
 - 장기 멘토링: [링크](https://lnkd.in/dtdUYBrM)

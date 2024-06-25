@@ -3,13 +3,12 @@ title: "월마트 소프트웨어 엔지니어 III - IOS IN3 면접 경험"
 description: ""
 coverImage: "/assets/img/2024-05-20-WalmartSoftwareEngineerIIIIOSIN3InterviewExperience_0.png"
 date: 2024-05-20 17:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WalmartSoftwareEngineerIIIIOSIN3InterviewExperience_0.png
 tag: Tech
 originalTitle: "Walmart Software Engineer III — IOS (IN3) Interview Experience"
 link: "https://medium.com/@programerkapilshanbhag/walmart-software-engineer-iii-ios-in3-interview-experience-b4bf81cdbde5"
 ---
-
 
 ![image](/assets/img/2024-05-20-WalmartSoftwareEngineerIIIIOSIN3InterviewExperience_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@programerkapilshanbhag/walmart-software-engineer-iii-
 
 링크드인에서 채용 담당자가 회사 내에서 열린 직책에 관해 나에게 연락했어요. 그 기회에 관심이 있었고, 채용 담당자에게 해당 직책에 관심이 있다고 답변했어요. 그런 다음 면접이 5일 후에 예정되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 면접 라운드.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@programerkapilshanbhag/walmart-software-engineer-iii-
 
 면접은 60분 동안 진행되었고 피드백은 전반적으로 긍정적이었으며 두 번째 라운드를 위해 인사 담당자로부터 전화를 받았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 라운드 2: Swift/iOS 라운드
 
@@ -48,7 +69,18 @@ link: "https://medium.com/@programerkapilshanbhag/walmart-software-engineer-iii-
 
 나는 질문의 약 95%에 대답할 수 있었습니다. 인터뷰는 60분 동안 진행되었습니다. 전체적으로 피드백은 긍정적이었고, 다음 라운드를 위해 인사담당자로부터 전화를 받았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Round 3: 채용 담당자 라운드
 
@@ -62,7 +94,18 @@ link: "https://medium.com/@programerkapilshanbhag/walmart-software-engineer-iii-
 
 그런 다음에 제가 질문이 있는지 물었고, 저는 회사 문화, 앱 아키텍처 등에 관한 일부 질문을 했습니다. 인터뷰는 약 45분 동안 이어졌어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전체적으로 이번 라운드는 꽤 잘 진행된 것 같아요. 그러나 면접 중에 몇 가지를 실수한 것 같고, 대답하는 내용에 대해 확신이 없는 부분이 있었어요. 이번 라운드 이후에 리쿠루터로부터 소식을 전혀 듣지 못했어요.
 
@@ -74,7 +117,18 @@ link: "https://medium.com/@programerkapilshanbhag/walmart-software-engineer-iii-
 - DSA 라운드를 위해 leet code 쉬운, 중급 문제에 대비해야 해요.
 - Hiring Manager 라운드에 대비해 항상 아주 잘 준비됐어야 해요. 설득력 있는 대답을 준비하고 항상 자신감 있어야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 아무 것이나 있으면, 저와 연락하세요: [링크드인 프로필](https://www.linkedin.com/in/kapil-shanbhag)
 

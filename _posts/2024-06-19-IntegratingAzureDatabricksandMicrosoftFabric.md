@@ -3,13 +3,12 @@ title: "Azure Databricks와 Microsoft Fabric 통합하기"
 description: ""
 coverImage: "/assets/img/2024-06-19-IntegratingAzureDatabricksandMicrosoftFabric_0.png"
 date: 2024-06-19 12:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-IntegratingAzureDatabricksandMicrosoftFabric_0.png
 tag: Tech
 originalTitle: "Integrating Azure Databricks and Microsoft Fabric"
 link: "https://medium.com/@piethein/integrating-azure-databricks-and-microsoft-fabric-0030d3cf5156"
 ---
-
 
 고지: 본 글은 Microsoft나 Databricks의 공식 입장이 아닌 저의 개인적인 경험과 견해를 반영하고 있습니다.
 
@@ -23,7 +22,18 @@ link: "https://medium.com/@piethein/integrating-azure-databricks-and-microsoft-f
 - V-ORDERED 활성화된 소비 레이어를 통해 Databricks를 확장합니다.
 - 추가 구성 요소를 추가하여 Databricks 및 Microsoft Fabric의 데이터 처리 효율성을 향상시킵니다. 이는 좀 더 개인적인 접근입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 금일 제공되는 옵션은 다음 섹션에서 철저히 검토될 것입니다. 미묘한 차이점을 제공하고 장단점을 고려하며 관련 문서를 참조할 것입니다. 그러나 그보다 앞서, 두 강력한 도구를 활용하기로 선택하는 조직이 그 이유를 이해하는 데 도움이 됩니다.
 
@@ -33,7 +43,18 @@ link: "https://medium.com/@piethein/integrating-azure-databricks-and-microsoft-f
 
 다양한 규모의 조직에서 선호하는 종합 데이터 처리, 분석 및 데이터 과학 플랫폼인 Azure Databricks는 긴 역사와 다양한 조직에서의 성공적인 채택으로 신뢰할 수 있는 플랫폼으로 자리매김했습니다. Spark의 창시자들에 의해 설립된 Databricks는 주로 엔지니어들을 위해 제공되며, 대규모로 Spark 워크로드를 관리하고 노트북 작성 및 복잡한 작업을 처리할 수 있는 플랫폼을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이크로소프트 패브릭의 매력은 그 간단함에 있습니다. 2023년에 출시되어 파워 BI에서 진화한 이 제품은 기존 파워 BI 사용자에게 쉬운 전환을 제안합니다. 사용자 친화적인 인터페이스, 통합 셀프 서비스 기능, 그리고 마이크로소프트 365와의 심플한 통합으로 비즈니스 사용자들의 특히 매력을 끌고 있습니다. 마이크로소프트 패브릭은 데이터 사용을 민주화하고 진입 장벽을 낮추기 위해 설계되어 있어, 모든 사용자에게 접근성 있는 플랫폼으로 인기를 끌고 있습니다.
 
@@ -43,7 +64,18 @@ link: "https://medium.com/@piethein/integrating-azure-databricks-and-microsoft-f
 
 ## 리포팅 및 분석 레이어를 추가하여 데이터브릭스 지원 아키텍처를 강화하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 디자인 고려 사항은 일반적인 Azure Databricks Medallion Lakehouse 아키텍처를 개선하는 데 관여합니다. 이 아키텍처는 Azure Data Lake Storage (ADLS) gen2, Azure Data Factory 및 Azure Databricks와 같은 서비스를 활용합니다. 이 설정에서 Databricks는 데이터 투입, 처리, 검증 및 보강의 모든 측면을 관리합니다. PowerBI는 일반적으로 보고와 분석적인 통찰을 전달하는 것을 포함한 나머지 작업을 처리합니다.
 
@@ -53,9 +85,20 @@ Microsoft는 최근 Microsoft Fabric을 위한 '바로 가기'라는 새로운 �
 
 우리가 이전에 이야기한 Databricks 중심 디자인과 관련해서, Databricks가 모든 데이터를 ADLS에 쓰기 때문에 ADLS Gen2 바로 가기 기능을 활용할 수 있습니다. 그러나 주의해야 할 중요한 고려 사항이 몇 가지 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-- 단축키를 사용하려면 패브릭 레이크하우스가 필요합니다. 이미 보유하고 있지 않다면, 하나를 만드는 것을 잊지 마세요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+- 단축키를 사용하려면 패브릭 레이크하우스가 필요합니다. 이미 보유하고 있지 않다면, 하나를 만드는 것을 잊지 마세요.
 - 테이블에 대한 바로 가기는 Delta Lake 형식의 데이터에만 액세스할 수 있습니다.
 - 다브릭 관리 테이블 대신 외부 테이블에 대한 바로 가기를 가능한 한 사용하세요. 다음 설계 고려 사항을 논의할 때 이 부분에 다시 언급하겠습니다.
 - 각 바로 가기는 단일 Delta 폴더를 참조할 수 있습니다. 그러므로 여러 Delta 폴더에서 데이터에 액세스해야 한다면, 각 폴더에 대해 개별적인 바로 가기를 만들어야 할 것입니다.
@@ -69,7 +112,18 @@ Databricks와 Microsoft Fabric을 통합하는 과정에서 흥미로운 발전�
 
 ## OneLake 골드 레이어를 통합하여 Databricks가 가능한 아키텍처를 칭찬하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 번째 디자인은 초기 디자인 패턴을 수정하여 OneLake 골드 레이어를 구조에 통합합니다. 이것은 Azure Databricks의 Azure Blob 파일 시스템 (ABFS) 드라이버 덕분에 가능합니다. 이 드라이버는 ADLS와 OneLake를 모두 지원합니다. 아래에 이 접근 방식의 그림을 보실 수 있고 MS Learn 페이지에서 Notebook 예제를 찾을 수 있습니다.
 
@@ -79,7 +133,18 @@ Databricks와 Microsoft Fabric을 통합하는 과정에서 흥미로운 발전�
 
 Databricks는 관리형 테이블과 외부 테이블 두 가지 유형의 테이블을 구분합니다. 관리형 테이블은 기본적으로 생성되며 Unity Catalog에 의해 관리되며 수명주기 및 파일 레이아웃을 제어합니다. 외부 도구를 사용하여 이러한 테이블에서 파일을 직접 조작하는 것은 권장되지 않습니다. 이에 반해, 외부 테이블은 메타스토어, 카탈로그 또는 스키마에 지정된 관리형 저장 위치 외부에 데이터를 저장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, 문서에서 제공한 지침을 기반으로, 이 접근 방식을 사용하여 OneLake에 직접 쓰여진 모든 테이블은 외부 테이블로 분류하는 것이 권장됩니다. 이는 데이터가 메타스토어의 범위 바깥에서 관리되기 때문입니다. 그 결과, 이러한 테이블의 관리는 Fabric 내부와 같은 다른 곳에서 수행해야 합니다. 이 방식의 동기는 다음과 같을 수 있습니다:
 
@@ -89,7 +154,18 @@ Databricks는 관리형 테이블과 외부 테이블 두 가지 유형의 테�
 
 셋째, OneLake 테이블은 정책에 따라 관리될 수 있어 데이터가 규정에 따라 사용되도록 보장하기가 더 쉽습니다. 예를 들어, 다른 곳에 있는 도메인과 테이블을 (외부적으로) 공유할 때입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터를 읽는 것 이외에도 Microsoft Fabric 내에서 새로운 데이터를 생성하는 것을 고려해 볼 수 있습니다. 만약 이것이 여러분의 계획 중 일부라면, 다가오는 기능이 매우 흥미로울 수 있습니다. 곧 Fabric 사용자들은 Unity 카탈로그를 통해 Azure Databricks에서 lakehouses와 같은 데이터 항목에 액세스할 수 있게 될 것입니다. 데이터는 여전히 OneLake에 남아 있겠지만, Azure Databricks에서 해당 데이터의 계보 및 다른 메타데이터에 직접 액세스하고 보는 능력을 갖게 될 것입니다. 이 향상된 기능은 Fabric에서 Databricks로 다시 데이터를 읽는 것을 용이하게 할 것입니다. 예를 들어, Azure Databricks의 Mosaic AI를 활용해 AI를 활용하려는 경우 Microsoft Fabric에서 다시 읽음으로써 가능할 것입니다. 이 기술은 아마도 Lakehouse Federation일 것입니다. 이 내용에 대한 자세한 정보는 이 비디오의 해당 부분에서 확인할 수 있습니다: https://youtu.be/BYob0cGW0Nk?t=4125
 
@@ -99,7 +175,18 @@ Databricks는 관리형 테이블과 외부 테이블 두 가지 유형의 테�
 
 Databricks를 OneLake와 통합하는 경험을 바탕으로, OneLake가 ADLS Gen2와 동일한 API를 지원한다는 것을 알고 있습니다. 이를 감안해 보면, 가상의 설계 가능성을 고려해 보겠습니다: 모든 Medallion 레이어를 OneLake에 저장하는 것입니다. 이 가능할까요? 알아보도록 하죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 접근 방식에 대한 인센티브는 신규 배포로부터 비롯될 수 있습니다. 여기서의 목표는 데이터 엔지니어링 작업을 효율적으로 확장하면서 Microsoft Fabric을 사용하여 모든 계층에서 데이터 사용 및 소비에 대한 설계 간결성과 셀프 서비스를 장려하는 데 Databricks의 기본 기능을 활용하는 것입니다.
 
@@ -109,7 +196,18 @@ Databricks를 OneLake와 통합하는 경험을 바탕으로, OneLake가 ADLS Ge
 
 다음 설계 고려사항은 Microsoft Fabric의 사용과 V-Order 기능을 활용하는 데 더 중점을 둘 것입니다. 이 기능은 파케이 파일 형식에 대한 라이트 타임 최적화로, Microsoft Fabric 컴퓨팅 엔진(예: Power BI)에서 빠른 데이터 읽기를 가능케 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Databricks와 Microsoft은 오픈 소스 열 기반 파일 형식인 Delta Lake를 채택하기로 선택했습니다. 그러나 Microsoft은 V-Order 압축의 추가 레이어를 통합했는데, 이것은 최대 50%의 더 많은 압축을 제공합니다. V-Order는 오픈 소스 parquet 형식과 완전히 호환되며, 모든 parquet 엔진이 일반 parquet 파일처럼 읽을 수 있습니다.
 
@@ -119,7 +217,18 @@ V-Order는 Microsoft Fabric에 중요한 이점을 제공하는데, 특히 Power
 
 V-Order로 최적화된 테이블을 사용하는 것은 현재 Microsoft Fabric에게만 제한되어 있습니다. Databricks는 아직이 기능을 통합하지 않았습니다. 따라서 그런 경우에는 V-Order로 최적화된 테이블을 활용하기 위해 Microsoft Fabric 내의 서비스를 활용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 실버(Silver)와 골드(Gold) 단계 사이의 Databricks를 통한 처리 단계가 V-Order 최적화가 필요하지 않을 경우에도 여전히 중요하다는 주장이 가능하다는 점을 감안해 볼 수 있습니다. 이 부분은 반복적으로 보일 수 있지만, Databricks를 이용한 지속적인 데이터 처리를 가능하게 하는 타당한 선택지입니다.
 
@@ -129,7 +238,18 @@ V-Order로 최적화된 테이블을 사용하는 것은 현재 Microsoft Fabric
 
 ## 추가 구성 요소를 추가하여 Databricks 및 Microsoft Fabric의 데이터 처리 효율성 향상하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 이전 토론에서는 엔지니어들이 다른 데이터 처리 서비스를 탐험해야 하는 과제에 대해 논의했습니다. 이 문제는 메타데이터 주도 접근법과 DBT와 같은 템플릿 프레임워크를 채택하여 해결할 수 있습니다. 새로운 아키텍처에서는 Databricks와 Microsoft Fabric에 추가 구성 요소를 결합했습니다. 이 변경 사항에 대해 자세히 알아보도록 하겠습니다.
 
@@ -139,7 +259,18 @@ Databricks 측면에서는 메타데이터 주도 프레임워크(메타데이�
 
 Microsoft Fabric 측면에서도 DBT가 중요한 역할을 할 수 있습니다. Microsoft Fabric 내에서 Synapse Warehousing을 위해 dbt-fabric 또는 Synapse Spark을 위해 dbt-fabricspark 중에서 선택할 수 있습니다. 이 템플릿 접근 방식의 장점은 개발자가 모든 데이터 변환 사용 사례를 위한 단일 프론트엔드에 익숙해지기만 하면 두 서비스를 모두 활용할 수 있다는 점입니다. 이 방법론은 프로세스를 간소화하고 효율성을 높일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결론
 

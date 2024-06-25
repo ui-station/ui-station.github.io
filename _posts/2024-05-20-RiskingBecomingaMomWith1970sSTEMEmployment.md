@@ -3,13 +3,12 @@ title: "1970년대 STEM 취업을 통해 엄마가 되기 위한 리스크를 �
 description: ""
 coverImage: "/assets/img/2024-05-20-RiskingBecomingaMomWith1970sSTEMEmployment_0.png"
 date: 2024-05-20 16:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-RiskingBecomingaMomWith1970sSTEMEmployment_0.png
 tag: Tech
 originalTitle: "Risking Becoming a Mom With 1970s STEM Employment"
 link: "https://medium.com/code-like-a-girl/risking-becoming-a-mom-with-1970s-stem-employment-09e327802451"
 ---
-
 
 ![이미지](/assets/img/2024-05-20-RiskingBecomingaMomWith1970sSTEMEmployment_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/code-like-a-girl/risking-becoming-a-mom-with-1970s-ste
 
 어린이가 내 몸 안에서 자라는 것에 대해 고려하기 시작하면서, 실험실에서 수은 온도계를 사용하지 않았어요. (부서진 온도계에서 노출된 수은은 태아에게 유해합니다.) 다른 유독 화학물질을 다룰 때 장갑을 착용했죠. 당시에는 광전자 스펙트로포토미터가 난자에 영향을 줄 수도 있다는 생각이 들지 않았어요. 나는 "충분히 안전하다"고 느꼈었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 것은 잇따른 조심이 오늘처럼 소문되기 힘들었던, 실험실에서 임신이 매우 드물었기 때문이었습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/code-like-a-girl/risking-becoming-a-mom-with-1970s-ste
 
 남편과 함께 안전을 위해 피임을 그만두기로 결정했을 때, 실험실을 떠나기로 했습니다. 옛 친구들이 운영하는 "광고 대행사"에서 코딩을 하는 프리랜서 일을 찾았습니다. 이것은 정확히 창의적인 코딩은 아니었지만, 파일 내의 지정사항을 페이지에 원하는 출력물과 일치시키는 것이 목적이었습니다. 또한, 일부 작업은 종이신문을 준비하는 날에 밤에 이루어졌습니다. 문제 없어요 – 키보드를 주시고 시작하게 해주세요. 임신 초기 3개월 동안 가끔 키보드 위에서 잠들기도 했지만, 누군가는 항상 제게 다시 깨워주셨습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거의 실수로 샘플을 뽑아봤는데, 내가 잘 다듬고 있는 글쓰기 기술이 뜻밖으로 도움이 되었어(3년 동안 연구실을 벗어나 키보드에서 멀어져 있을 때 하던 일 중의 하나야). 그래서 누군가의 책을 쓰기 시작했지. 사실 처음에는 그런 식으로 생각한 적이 없었어. 그냥 "광고 대행사"가 디자이너에게 제공하는 또 하나의 서비스 같은 거라 생각했지만, 나는 연구자의 열정으로 새로운 역할에 뛰어들었어. 게다가 디자이너가 텍스트와 이미지를 페이지의 새로운 코딩 형태로 바꾸는 모습에 매료되기도 했어. 그는 평면의 형태가 두 차원적인 과학으로 나타나는 걸 보여줬거든.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/code-like-a-girl/risking-becoming-a-mom-with-1970s-ste
 
 어? 내가 할 수 있겠네. (당신도 할 수 있을 거야.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생각도 없이 광고에 있는 전화번호를 눌렀어요. 한 남자가 전화를 받았고, 그는 출판 회사에서 사무실에서 일할 필요가 없다고 내게 약속했어요 (원격 근무! 초기 버전, 그렇지?), 그리고 내 자격 요건을 물었어요.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/code-like-a-girl/risking-becoming-a-mom-with-1970s-ste
 
 # 종이 위에 있을 수 있지만, 그것은 진짜 화학이었어요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그는 그것보다 몇 일 더 걸렸지만, 나에게는 맞는 일이었습니다. 나는 코딩이 많은 광고 회사에 어느 정도 사전 통보를 하고 싶었기 때문에 그것이 좋았고, 그래서 몇 일 동안 그들과 일하고자 했습니다. 여성 소유의 그 팀은 내가 임실이 어떻든 상관하지 않았습니다. 그들은 출산, 수유 등에 관한 책을 주었습니다. 멋지네요!
 
@@ -59,7 +102,18 @@ link: "https://medium.com/code-like-a-girl/risking-becoming-a-mom-with-1970s-ste
 
 50년이 지난 후에 생각할 때, 나는 가장 경쟁력 있는 분야에서 스스로를 증명했고 휴식을 취할 수 있다고 느꼈습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아주 추운 시멘트 블록 "사냥캠프"에서 임신하고, 북부 뉴저지의 두 피트 눈 폭풍을 파내며, 켈리시 병원까지 빠른 스노모바일 타고 이동해야 할지도 모를 상황에서 주의보를 보냈고, 다음 날 아기를 낳았던 세부사항은 알 필요 없긔. (모든 것이 잘 해결되었지만.) 그러나 그런 어려운 상황에 있을 때 "베이비 대디"가 며칠 후에 이야기한 것을 생각해보면,
 
@@ -69,7 +123,18 @@ link: "https://medium.com/code-like-a-girl/risking-becoming-a-mom-with-1970s-ste
 
 # 그 코드에는 문제가 있어요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스릴러 소설 속의 반전을 좋아해요. 하지만 실제 삶에서는 조금... 노노. 내가 강의하던 화학교재를 재작성 중이었을 때, 노동력과 직접적인 면담이 전혀 없는 채 출판사가 예정된 대로 내 임금을 몇 달 동안 보내주지 않은 채 자금을 털어 파산 신청한 걸 알게 되었을 때의 반전은 좀 그랬어. 그때쯤에는 또 눈이 내리기 시작했는데, 이번에는 버몬트에서였어. 거기서는 눈이 일찍 시작되고 늦게 끝나며 쌓일 정도로 많아.
 
@@ -79,7 +144,18 @@ link: "https://medium.com/code-like-a-girl/risking-becoming-a-mom-with-1970s-ste
 
 UPS 소포를 통해 받은 대학원 수준과 석사 과정 자료를 따라가는 게 항상 쉽지만은 않았어. 나는 어린아이를 데리고 대학 도서관에 여행을 다녀 미적분을 넘어 높은 수학을 공부하거나 내 참고 도서관을 찾았어. 하지만 내가 이 일을 좋아하게 되었어. STEM 분야는 만일 당신이 내 빨간 연필이나 시험관이나 분광광도를 싫어하지 않았다면. (아마도 나는 "산"과 "염기"와 같은 용어를 아는 아이가 "산"과 "염기"를 섞을 수 있게 허용해야 한다고 주장하는 동네의 유일한 유아를 가지고 있었을 거야.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-RiskingBecomingaMomWith1970sSTEMEmployment_3.png" />
 
@@ -89,7 +165,18 @@ UPS 소포를 통해 받은 대학원 수준과 석사 과정 자료를 따라�
 
 그러다가 문에 쾅 쾅 하는 소리가 들리더니 UPS 운송인이 독성학 저널을 위한 원고를 가져왔어. 좋아, 더 배울 것이 또 생겼군!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내가 내 흔들 의자에서 외쳤어:
 
@@ -99,8 +186,18 @@ UPS 소포를 통해 받은 대학원 수준과 석사 과정 자료를 따라�
 
 이 모든 일에 나의 파트너는 어디에 있었을까? 좋은 질문이네. 그는 철학 서적을 쓰고 스릴러를 쓰기 시작했어. 그러나 어찌됐건 둘 다에서 소득은 없었어. 결혼이 끝나는 이유가 아니었지만, 분명 도움이 되지는 않았어. 나는 돈이 부족한 삶의 어려운 경계에서, 멋진 두 아이를 키우며 부엌 기술을 꾸준히 했고, 내 STEM 편집과 글쓰기에서 벌어들일 수 있는 돈을 늘려가며 살았어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Risking Becoming a Mom With 1970s STEM Employment](/assets/img/2024-05-20-RiskingBecomingaMomWith1970sSTEMEmployment_4.png)
 
@@ -110,8 +207,18 @@ UPS 소포를 통해 받은 대학원 수준과 석사 과정 자료를 따라�
 
 그때쯤에는 제 아이들이 일하면서 단순히 식초와 베이킹 소다를 섞어보는 것에 만족하지 않았답니다 (클래식 산·염기 반응). 부엌 카운터에서 중합체를 만들고 가르쳐주기에 준비가 안 된 것 같아요 — 그러나 커모도 64로 코딩을 시작했어요. (그리고 곧이어 게임도.)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 삶의 황홀한 모험은 과학, 코딩, 수학, 그리고 해결책을 찾는 즐거움의 완전한 순환에서 그래프로 표현될 시작을 했다.
 
@@ -121,7 +228,18 @@ UPS 소포를 통해 받은 대학원 수준과 석사 과정 자료를 따라�
 
 임신과 STEM 주변의 문제들이 해결된 것 같진 않다. 여전히 주변에 약초살포나 살충제를 뿌리는 기업들과 논쟁 중이다. 그들이 세대를 걸쳐 영향을 끼칠 수 있다는 것을 알기에. (STEM, 그 안에 모두가 있어요!) 반면에, 오늘의 연합은 우리를 더 강력하게 앞으로 나아가게 만든다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 변경 사항이 무엇인가요? 어디에서 괴로움을 느끼시나요? 태아가 있는 경우와 없는 경우 모두에게 안전하고 환영받는 STEM 직장을 만들기 위해 어떤 그룹이 도움이 될 것 같나요? (의견란을 사용하여 다른 사람들에게 당신이 생각하는 것에 대해 생각하게 하세요.)
 

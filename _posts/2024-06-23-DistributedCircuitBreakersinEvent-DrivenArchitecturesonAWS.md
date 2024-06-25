@@ -3,14 +3,12 @@ title: "AWS에서 이벤트 기반 아키텍처에 분산 회로 차단기 적�
 description: ""
 coverImage: "/assets/img/2024-06-23-DistributedCircuitBreakersinEvent-DrivenArchitecturesonAWS_0.png"
 date: 2024-06-23 00:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-DistributedCircuitBreakersinEvent-DrivenArchitecturesonAWS_0.png
 tag: Tech
 originalTitle: "Distributed Circuit Breakers in Event-Driven Architectures on AWS"
 link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-driven-architectures-on-aws-95774da2ce7e"
 ---
-
-
 
 ![image]("https://miro.medium.com/v2/resize:fit:1280/1*gGh7HhACzjtw6wplLPUyQQ.gif")
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 ## 왜 서버리스가 특별한가요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서킷 브레이커는 상태를 가지고 있습니다. 호출하기 전에 해당 상태를 확인하고 모든 요청을 추적해야 합니다. 왜냐하면 서킷 브레이커를 단일 호출 기반이 아니라 실패율(RATE) 기준으로 열기 때문입니다.
 
@@ -31,7 +39,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 ## 시나리오
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이벤트 처리를 상상해보세요. 여기서는 대기열에서 작업을 가져와서 제3자로부터 데이터를 로드한 다음 데이터에 대해 "무언가"를 수행합니다. 이제 이 데이터를 DynamoDB 테이블에 지속시키기로 했다고 가정해 봅시다.
 
@@ -41,7 +60,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 어느 날, 우리의 3rd 파티가 좋지 않은 날을 보내서 실패하기 시작할 수도 있습니다. 그 순간, 그것은 완벽할 것이고 모두가 우리가 예의 바르게 3rd 파티 시스템을 사용하는 데 존경을 기울이면 좋을 것입니다. 우리는 그들이 많은 압박을 받고 있다는 것을 알았으므로 그들에게 계속해서 요청을 보내지 않는 것이 좋을 것입니다. 돈과 자원, 그리고 SRE 팀 멤버들의 신경을 아끼게 되겠죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:1280/1*d6R2_OewGnnrbMdLNLht8A.gif)
 
@@ -52,7 +82,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 - 최대 지연 시간 값을 설정하는 것,
 - 그리고 지터를 적용하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같은 메시지를 받았다고 가정하고 있다면, ChangeMessageVisibility API를 사용하여 간단히 처리할 수 있습니다.
 
@@ -62,7 +103,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 다음으로, 각 레코드의 receiptHandle을 사용하여 AWS SQS SDK를 이용해 시각성 제한 시간을 변경해야 합니다. 아래 코드 스니펫처럼요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결과
 
@@ -72,7 +124,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 더 심각한 문제는 이 모든 람다 호출에 돈을 쓰고 있으며, 우리의 제3자 시스템이 다운된 경우 호출은 우리의 타임아웃만큼 느려져 많은 비용이 발생할 수 있습니다. 이를 어떻게 방지할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 회로 차단기 이용하기
 
@@ -82,7 +145,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 아래 애니메이션을 살펴보시면 더 이해하기 쉬울 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래의 다이어그램을 확인하면 프로세스에 대해 여전히 헷갈리는 부분이 있을 수 있습니다.
 
@@ -90,7 +164,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 # 게임의 서버리스 상태
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서버에서는 크게 문제가 되지 않습니다. 회로 차단 장치 구현 중 하나를 사용할 수 있으니 걱정 마세요. 서버에 상태를 로컬로 저장합니다. 물론 모든 인스턴스가 동기화되지는 않겠지만, 보통 큰 문제가 되지는 않습니다. 서버리스의 경우 상황은 매우 다릅니다. 많은 인스턴스가 있고, 각 작은 인스턴스 간에 상태를 전달할 수 없습니다.
 
@@ -102,7 +187,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 서버리스 공간에서 대다수 사용자에게 쉽게 작동할 수 있는 솔루션을 고민 중입니다. 일반적으로 저는 Circuit Breaker 상태를 Elasticache에 저장합니다. 왜냐하면 존재하고, 속도가 매우 빠르며 – 사용자 정의 구현 외에 – 사용하기 쉽기 때문입니다. 반면에 모든 서버리스 시스템이 VPC에서 실행되고 심한 부하를 겪지는 않는다는 것을 이해하고 있습니다. 그렇지만 여기서 가장 흥미로운 부분이 "고부하"입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인터넷에서 발견된 구현 방법들과 제가 생각해낸 것에 대해 살펴보겠습니다.
 
@@ -112,7 +208,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 ![이미지](/assets/img/2024-06-23-DistributedCircuitBreakersinEvent-DrivenArchitecturesonAWS_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 사용 중이고 방금 말한 패턴입니다. 중앙 집중식 저장소에 상태를 가진 클래식 회로 차단기일 뿐입니다. 훌륭하게 작동하며 실전 검증을 받았습니다. 분산 시스템에서 회로 차단기를 설정하는 가장 좋은 방법이라고 믿습니다. 다음을 제공합니다:
 
@@ -124,7 +231,18 @@ link: "https://medium.com/@sodkiewiczm/distributed-circuit-breakers-in-event-dri
 
 ## 비-VPC 변형
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DynamoDB 고려 사항
 저자는 비-VPC 람다와 함께 DynamoDB를 사용할 수도 있다고 언급합니다. 고수준 시스템에서 이 옵션을 고려할 가치가 있을까요? 물론, 이것은 귀하의 규모에 달려 있습니다. 왜냐하면:
@@ -136,7 +254,18 @@ DynamoDB 고려 사항
 
 대안적 접근 방식? Momento!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Momento를 사용하면 람다 함수를 VPC에 넣을 필요가 없고 동시에 비용을 절약할 수 있습니다. 또한 매우 확장 가능하고 저지연 솔루션이기도 합니다.
 
@@ -147,7 +276,18 @@ Momento를 사용하면 람다 함수를 VPC에 넣을 필요가 없고 동시�
 잘못된 구현
 인터넷을 뒤져본 결과 잘못된 구현이 많은 것 같습니다. 제가 잘못된 부분이 있다면 지적해주세요. 가장 인기 있는 구현조차도 분산 시스템에서 단일 인스턴스의 상태를 덮어씌우기 때문에 많은 문제를 야기할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구현: https://github.com/gunnargrosch/circuitbreaker-lambda
 
@@ -158,7 +298,18 @@ SSM 및 헬스 체크 상태를 사용하라는 제안을 봤는데, 해당 구�
 
 일부 회로 차단 방식은 이전 패턴만큼 범용적이지 않으며 ESM (이벤트 소스 매핑)으로 실행되는 이벤트 컨슈머에 특화되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Christoph Gerkens의 전문화된 ESM 회로 차단기
 
@@ -168,7 +319,18 @@ SSM 및 헬스 체크 상태를 사용하라는 제안을 봤는데, 해당 구�
 
 "Half Open" 상태와 "스카웃 요청"을 보낼 때, 작성자는 "Trial Message Poller"라는 추가 람다를 사용하는 것을 제안합니다. 이 람다는 큐에서 메시지 중 하나를 읽어 SQS Consumer 람다로 보냅니다. 결과에 따라 회로를 닫을지 열어둘지 결정하게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법은 우리의 람다에서 아무것도 할 필요가 없으며, 그것은 완전히 그 로직에서 분리되어 있다는 점에서 훌륭합니다.
 
@@ -180,7 +342,18 @@ SSM 및 헬스 체크 상태를 사용하라는 제안을 봤는데, 해당 구�
 복잡성
 "시험 메시지 폴러"은 추가 복잡성을 도입하며 저는 유지하고 싶어하는 것이 아닙니다. 이것은 전체 솔루션과 결합돼 있어야 하며 다른 유형의 트리거와 재사용할 수 없습니다. SQS에서도 시각 제한 또는 부분 실패로 인한 잠재적인 문제가 있다고 상상할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잠재적인 메시지 손실
 메시지가 대기열에서로드되지 않고 장기적이고 심각한 서드파티 오류의 경우, 우리는 메시지를 잃을 수 있습니다. 네, 메시지가 maxReceiveCount에 도달하지 않고 rententionPeriod가 경과하면 메시지가 데드 레터 대기열로 이동되지 않습니다.
@@ -191,8 +364,18 @@ Christoph Gerken의 논문에서 영감을 받아, 저는 그 구조적 패턴�
 
 이 원리는 전체 회로 차단기 상태를 CloudWatch 경보 상태에 반영하고 이를 회로의 상태로 사용하는 것에 기반합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot](/assets/img/2024-06-23-DistributedCircuitBreakersinEvent-DrivenArchitecturesonAWS_7.png)
 
@@ -238,8 +421,18 @@ FailureRateAlarm:
     ComparisonOperator: GreaterThanOrEqualToThreshold
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상태 관리
 알람이 트리거되면 회로가 열리며 람다 호출이 발생하지 않습니다. 그럼 알람은 INSUFFICIENT_DATA 상태로 전환됩니다. 그 후에는 큐의 제한된 동시성 처리를 통해 "스카웃 요청"을 보낼 수 있으며, 실패한 후에는 처리가 성공적으로 이루어진 후에 서킷을 열거나 닫을 수 있습니다.
@@ -251,7 +444,18 @@ FailureRateAlarm:
 구현
 ESM을 활성화하고 비활성화하는 것은 쉽습니다. 유일하게 누락된 것은 ESM에 메타데이터를 추가할 수 있는 옵션이었습니다. 해당 기능이 누락되었으므로 스택에 매개변수로 추가해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 구현은 go로 작성되었고 일부 사용자 지정 instrumentation 및 OTEL 통합이 되어 있어요. 하지만 여기 스니펫에서처럼 간단한 것을 사용할 수도 있어요.
 
@@ -262,7 +466,18 @@ ESM을 활성화하고 비활성화하는 것은 쉽습니다. 유일하게 누�
 
 이 접근 방식은 반-열린 상태로 이동하는 빈도를 제어하는 유연성이 부족하지만, 코드에 액세스할 수 없거나 람다 핸들러에 복잡성을 추가하고 싶지 않은 경우에는 좋아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요약
 
@@ -272,7 +487,18 @@ ESM을 활성화하고 비활성화하는 것은 쉽습니다. 유일하게 누�
 
 해당 주제에 대해 토의하고 싶다면, #believeinserverless 커뮤니티에 가입하여 이곳에서 커뮤니티와 논의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시간 내어 주셔서 감사합니다! 이 주제에 대한 여러분의 생각을 듣고 싶습니다! 연락을 주세요:
 

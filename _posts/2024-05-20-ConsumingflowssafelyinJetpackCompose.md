@@ -3,14 +3,12 @@ title: "제트팩 컴포즈에서 안전하게 플로우 소비하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-ConsumingflowssafelyinJetpackCompose_0.png"
 date: 2024-05-20 15:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ConsumingflowssafelyinJetpackCompose_0.png
 tag: Tech
 originalTitle: "Consuming flows safely in Jetpack Compose"
 link: "https://medium.com/androiddevelopers/consuming-flows-safely-in-jetpack-compose-cde014d0d5a3"
 ---
-
-
 
 ![](/assets/img/2024-05-20-ConsumingflowssafelyinJetpackCompose_0.png)
 
@@ -20,8 +18,18 @@ collectAsStateWithLifecycle을 사용하면 앱이 백그라운드에 있을 때
 
 이 API에 대해 더 알아보고, Lifecycle-aware 방식으로 수집해야 하는 이유 및 collectAsState API와 비교하는 방법을 계속 읽어보세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # collectAsStateWithLifecycle
 
@@ -31,7 +39,18 @@ collectAsStateWithLifecycle은 flow에서 값들을 수집하고 최신 값을 C
 
 ![이미지](/assets/img/2024-05-20-ConsumingflowssafelyinJetpackCompose_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 코드 스니펫은 ViewModel에서 노출한 StateFlow의 uiState 필드를 수집하는 collectAsStateWithLifecycle의 사용 방법을 보여줍니다:
 
@@ -41,7 +60,18 @@ AuthorViewModel의 uiState가 새로운 AuthorScreenUiState 값을 방출할 때
 
 # Under the hood
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 collectAsStateWithLifecycle의 구현은 View 시스템을 사용하여 안드로이드에서 플로우를 수집하는 권장 방법인 repeatOnLifecycle API를 사용합니다.
 
@@ -51,7 +81,18 @@ collectAsStateWithLifecycle을 사용하면 아래 표시된 보일러플레이�
 
 앱 아키텍처의 유형은 다른 유형의 구현 세부 정보를 알아서는 안 됩니다. UI는 ViewModel이 UI 상태를 어떻게 생성하는지 알아서는 안 됩니다. UI가 화면에 표시되지 않으면 플로우 수집을 중지하여 적절한 경우 앱 리소스를 해제해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UI는 collectAsStateWithLifecycle를 사용하여 UI 상태를 수집함으로써 리소스를 해제하는 데 도움이 될 수 있습니다. ViewModel은 UI 상태를 수집자 인식적으로 생성함으로써 동일한 작업을 수행할 수 있습니다. UI가 화면에 표시되지 않은 경우와 같이 수집자가 없는 경우 데이터 계층에서 오는 상류 플로우를 중지할 수 있습니다. UI 상태를 생성할 때 .stateIn(WhileSubscribed) 플로우 API를 사용하여 이 작업을 수행할 수 있습니다. 이에 대한 자세한 정보는 Kotlin flows in practice에서 이야기하는 부분을 참조하십시오. 이 방법으로 UI 상태를 생성하는 ViewModel을 테스트하려면 테스트 가이드를 확인하십시오.
 
@@ -61,7 +102,18 @@ UI는 collectAsStateWithLifecycle를 사용하여 UI 상태를 수집함으로�
 
 # 백그라운드에서 리소스 활성 유지하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 안드로이드 앱은 수많은 안드로이드 기기에서 실행될 수 있어요. 하지만 모든 기기와 사용자가 무한한 리소스를 가지고 있는 것은 아닙니다. 앱은 일반적으로 제한된 환경에서 실행돼요. 안드로이드 앱이 실행 중일 때는 사용자 경험과 기기 시스템 상태에 영향을 미치는 중요한 요인들이 있어요:
 
@@ -73,7 +125,18 @@ UI는 collectAsStateWithLifecycle를 사용하여 UI 상태를 수집함으로�
 
 # collectAsState 비교
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발자들이 종종 묻곤 합니다: 안드로이드의 컴포저블 기능에서 플로우를 수집하는 가장 안전한 방법은 collectAsStateWithLifecycle인데, collectAsState API가 왜 필요한가요? collectAsState에 라이프사이클 관리 기능을 추가하지 않고 새 API를 만드는 이유가 뭔가요?
 
@@ -83,7 +146,18 @@ UI는 collectAsStateWithLifecycle를 사용하여 UI 상태를 수집함으로�
 
 collectAsState API는 Composition의 라이프사이클을 따릅니다. 컴포저블이 Composition에 진입할 때 플로우 수집을 시작하고, Composition을 떠날 때 수집을 멈춥니다. collectAsState는 플로우를 수집하는 데 사용할 수 있는 플랫폼에 중립적인 API입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 안드로이드 앱에서 Compose를 사용할 때는 안드로이드 라이프사이클도 리소스 관리에 중요한 역할을 합니다. Compose가 안드로이드 앱이 백그라운드에 있을 때 recompositions을 일시 중지하더라도, collectAsState는 컬렉션을 활성 상태로 유지합니다. 이는 계층 구조의 나머지 부분이 리소스를 해제할 수 없게 만듭니다.
 
@@ -93,7 +167,18 @@ collectAsState에서 collectAsStateWithLifecycle로 마이그레이션하는 것
 
 Lifecycle-aware 방식으로 플로우를 수집하는 것은 안드로이드에서 플로우를 수집하는 권장 방법으로, 필요한 경우 앱의 다른 부분이 리소스를 해제할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Jetpack Compose을 사용하여 Android 앱을 개발 중이라면, collectAsStateWithLifecycle 조합 기능을 사용하여 이 작업을 수행할 수 있습니다.
 

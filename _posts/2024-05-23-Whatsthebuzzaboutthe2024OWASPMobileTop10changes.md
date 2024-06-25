@@ -3,13 +3,12 @@ title: "2024 OWASP 모바일 탑 10 변경 사항에 대한 소식이 뭐길래"
 description: ""
 coverImage: "/assets/img/2024-05-23-Whatsthebuzzaboutthe2024OWASPMobileTop10changes_0.png"
 date: 2024-05-23 14:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Whatsthebuzzaboutthe2024OWASPMobileTop10changes_0.png
 tag: Tech
 originalTitle: "What’s the buzz about the 2024 OWASP Mobile Top 10 changes?"
 link: "https://medium.com/proandroiddev/whats-the-buzz-about-the-2024-owasp-mobile-top-10-changes-83c93f765bd3"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/proandroiddev/whats-the-buzz-about-the-2024-owasp-mobi
 
 저의 OWASP Mobile Top 10 강의나 포스트에 이미 익숙한 분들은 당연히 "OWASP의 정상" 섹션으로 건너뛰어서 흥미로운 내용을 확인할 수 있습니다. 그러나 OWASP가 무엇이며 최근 변경 사항이 모바일 보안 분야에서 큰 영향을 미친다는 사실에 대해 잘 알지 못하거나 간단히 상기시키고 싶다면, 함께 머물러 주시면 OWASP란 무엇이며 최근 변경 사항이 모바일 보안 분야에서 왜 중요한지에 대해 다시 한 번 요약해 드리겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # OWASP이 뭐죠? 🐝
 
@@ -29,7 +39,18 @@ link: "https://medium.com/proandroiddev/whats-the-buzz-about-the-2024-owasp-mobi
 
 OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 목록은 OWASP가 특정 영역의 보안에 대한 자신의 상위 10위 위협 목록으로, 모든 개발자에게 매우 유용한 자원입니다¹.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 이전에 그들의 지난 안내에 대해 다양한 콘텐츠를 제공했습니다. 더 자세히 알고 싶다면, 제 발표 페이지와 이전 OWASP 관련 블로그를 확인해보세요. 그 곳에는 더 많은 자세한 내용과 관련 링크가 있습니다.
 
@@ -39,7 +60,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 # “OWASP의 꼭대기" ✨
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 긴 협의 기간과 여러 차례의 수정을 거친 끝에, 최근 발표된 OWASP Mobile Top Ten 2024는 2014년 최초 발표 이후 세 번째이자 최신 주요 개정판입니다.
 
@@ -49,7 +81,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 ![이미지](https://miro.medium.com/v2/resize:fit:768/1*9ESds38QHiOyqz_CkOXM7A.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #10: 부적절한 암호화 ⬇️
 
@@ -59,7 +102,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 앞으로 제 블로그에서 관련 포스트가 올라올 예정입니다 (희망적으로) 📝.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## #9: 안전하지 않은 데이터 저장 ⬇️
 
@@ -69,7 +123,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 저는 이전에도 안전하지 않은 데이터 저장에 대해 자세히 다뤘었어요. 그래서 제 글을 꼭 확인하고, 앱의 데이터가 안전하고 안전하게 저장되어 있는지 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언제나 강조해야 할 점은 가능한 경우 기기에 민감한 데이터를 저장하는 것을 피하는 것이 최선의 실천 방법입니다!
 
@@ -79,7 +144,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 ‘RTFM’ 개념을 알고 있다면, 이 위협이 무엇인지 알 수 있을 것입니다. 이는 종종 개발자가 제품 빌드에서 잘못된 설정을 사용하거나 필요하지 않은 상승된 액세스나 권한을 요청하거나 원래는 애플리케이션 내부로 의도된 기능을 노출하는 데 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문서화는 종종 친구가 될 수 있어요. 읽는 걸 소홀히 하지 마세요. 🥲 커피를 가져다가 실수에 갇히세요!
 
@@ -89,7 +165,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 바이너리 보호는 앱의 바이너리(즉, 안드로이드의 .apk/.aar 또는 iOS의 .ipa 파일)가 정보를 유출하지 않거나 다시 패키징되지 않도록 하는 데 초점을 맞춥니다. 앱을 제대로 난독화하지 않거나 무결성 검사를 제대로 하지 않으면 공격자가 악성 코드를 주입하여 앱을 역공학하거나 재분배할 수 있는 가능성이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 좋은 친구 Guardsquare과 그들의 훌륭한 도구(예: DexGuard 및 Proguard Playground)를 적극 추천합니다. 이 도구들은 특정 위협으로부터 앱을 안전하게 유지하는 데 도움이 됩니다. 또는 R8 및 Google Play 무결성 API에 대해 더 알아보는 데 투자하는 것도 도움이 될 수 있어요!
 
@@ -99,7 +186,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 당신의 앱이 사용자의 개인 식별 정보(예: 전체 이름, 정확한 위치, 금융 상세 정보, 성향 등)를 다룬다면, 이 정보들이 잘못된 손에 들어가면 해당 사용자를 사칭하거나 괴롭히거나 사기를 저질 수 있는 경우가 발생할 수 있습니다. 이 경우 이것이 해당될 수도 있어요! 🥸
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플리케이션이 저장하거나 기록하는 개인 식별 정보(PII)를 로컬에 저장하지 않도록하고 사용자로부터의 정보 최소한만 요청/전송하십시오. 이렇게 하면 저장소나 데이터 전송의 취약점을 통해 PII가 노출될 가능성이 크게 줄어듭니다.
 
@@ -109,7 +207,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 또 다른 이동! 2016년 3위인 '통신 불안전'이 5위로 두 단계 하락했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 전송이나 수신과 관련된 위협을 다루고 있어요. 대부분의 응용프로그램은 인터넷을 통해 이를 수행하지만, 여러분의 앱은 NFC나 블루투스와 같은 다른 통신 방법을 사용할 수도 있어요. 데이터 통신이 있으면, 거기에는 위험이 연결되어 있을 거라고 확신할 수 있어요!
 
@@ -119,7 +228,18 @@ OWASP가 제공하는 안내 중 하나는 'Top 10' 위협 목록입니다. 이 
 
 4번 항목의 새로운 주제는 사용자 입력 및 출력을 다뤄봅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모바일 앱 및 API가 사용자 입력을 통신하거나 출력할 때 올바로 처리되도록 하는 것이 매우 중요합니다 🛁 그렇지 않으면 SQL 인젝션 또는 교차 사이트 스크립팅 (XSS)과 같은 위협이 발생할 수 있으며 이는 민감한 사용자 데이터를 노출하거나 더 심각한 경우 기기가 위협받을 수 있습니다. 원하는 값 및 형식을 얻고 해당 기준에 충족하지 않는 경우는 버려야 합니다.
 
@@ -129,7 +249,18 @@ WhatsApp에서 유포된 ‘Effective Power’ 또는 ‘Black Spot’ 메시지
 
 ## #3: 안전하지 않은 인증/인가 ⬆️
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 In the new ranking, insecurities related to authentication and authorization have moved up to the 3rd place, combining aspects from the previous 4th and 6th spots.
 
@@ -139,7 +270,18 @@ It's crucial to perform authentication and authorization checks on the server si
 
 When interacting with APIs that need authorization, make sure to use revocable tokens linked to the device. This way, users can revoke tokens if their device is lost or stolen. Remember to refresh tokens regularly and ensure your backend team authenticates properly when authorizing access to restricted resources!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시, Insecure Authentication에 대한 자세한 내용은 해당 주제에 대한 이전 블로그를 확인해 보세요 🤠 이어서 Insecure Authorization에 대한 더 많은 정보를 확인할 수 있을 거에요.
 
@@ -149,7 +291,18 @@ When interacting with APIs that need authorization, make sure to use revocable t
 
 '공급망 공격'은 사용하는 도구에 대한 공격을 말하며, 감지되지 않고 도구에 취약점, 보안 위협 또는 악의적인 코드를 도입하는 것을 의미해요. 조직 내부에서는 부정직한 직원에 의해, 또는 시스템이나 도구에 특권 액세스를 얻은 악의적인 행위자에 의해 외부에서 이루어질 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 보안을 강화하기 위해 코드 검토 프로세스를 철저히 실시하는 것이 중요합니다. 뿐만 아니라 공급망의 액세스 제어에 대한 정기적인 감사도 수행해야 합니다. 앱의 종속성을 모니터링하고 이들이 정기적으로 검토되도록 하여 보안 취약성을 방지해야 합니다.
 
@@ -159,7 +312,18 @@ When interacting with APIs that need authorization, make sure to use revocable t
 
 대망의 순간입니다 🥁 OWASP에 따르면 모바일 보안의 가장 큰 위협은... 부적절한 자격 증명 사용입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 사용자 자격 증명, API 키부터 그 사이의 모든 것에 적용되는 보안 부적절로 인한 케이스를 포괄하는 범주입니다!
 
@@ -167,7 +331,18 @@ When interacting with APIs that need authorization, make sure to use revocable t
 
 이 모든 소리들이 겁나게 들리지만, 자신이 부적절한 자격 증명 처리에 걸리지 않는 방법은 꽤 간단합니다. 사용자 자격 증명(비밀번호 등)을 장치에 저장하지 않으며, 제3자 API 키를 정기적으로 교체하고, 언제나 HTTPS를 통해 자격 증명을 안전하게 전송해야 합니다. 간단하죠! 🙌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리로... 🐝
 
@@ -177,7 +352,18 @@ When interacting with APIs that need authorization, make sure to use revocable t
 
 마지막까지 완주하셨네요! 2024년이 멋지고 안전한 한 해 되길 바랍니다 🥰 🔐
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 감사합니다 🌟
 
@@ -190,7 +376,18 @@ When interacting with APIs that need authorization, make sure to use revocable t
 - Mobile Application Security Verification Standard: MASVS
 - Mobile Application Security Testing Guide: MASTG
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 각주
 
@@ -200,7 +397,18 @@ When interacting with APIs that need authorization, make sure to use revocable t
 
 [3]: 불편하기는 해도, 2024년 Top 10이 5위에 있을 때 대부분 완성된 "Insufficient Cryptography" 글은 최종적으로 10위가 아니라는 것을 알았습니다. (그런데 누가 10부작 블로그 시리즈를 생각해냈을까요!?)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [4]: 제발 제품에서 네트워크 호출을 로깅하는 것을 그만둬주세요. 이미 2024년이에요. 🥲
 

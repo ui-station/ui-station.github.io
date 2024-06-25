@@ -3,13 +3,12 @@ title: "온프레미스 쿠버네티스 대 관리형 쿠버네티스"
 description: ""
 coverImage: "/assets/img/2024-06-19-On-PremisesKubernetesVsManagedKubernetes_0.png"
 date: 2024-06-19 13:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-On-PremisesKubernetesVsManagedKubernetes_0.png
 tag: Tech
 originalTitle: "On-Premises Kubernetes Vs Managed Kubernetes"
 link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes-and-managed-kubernetes-78372d4e703c"
 ---
-
 
 쿠버네티스는 컨테이너화된 응용 프로그램을 관리하는 강력한 오케스트레이션 도구로, 다양한 방식으로 배포할 수 있습니다. 가장 흔한 두 가지 방법은 온프레미스 쿠버네티스와 관리형 쿠버네티스입니다. 이 옵션들을 일상 생활에서의 간단한 비유를 사용하여 설명하고, 서로 다른 점을 이해하고 어떤 것이 당신의 상황에 가장 적합한지 결정하는 데 도움이 되도록 해보겠습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes
 
 온프레미스 쿠버네티스는 자동차를 소유하는 것과 같습니다. 자동차를 소유하면서 할 수 있는 것들:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 구매 및 설정: 차량을 구매하며, 이는 비용이 많이 들 수 있으며 모델, 색상 및 기능 선택과 같은 모든 설정에 책임이 있습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes
 
 4. 비용: 초기 비용과 계속되는 유지 보수 비용이 있지만 매달 대여료는 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 동일한 방식으로, 온프레미스 Kubernetes는 다음을 의미합니다:
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes
 
 - 유지보수 책임: 모든 업데이트, 패치 및 시스템 모니터링에 대한 책임이 있습니다. 이를 위해 적절한 전문 지식을 가진 팀이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 • 비용 고려 사항: 하드웨어 및 소프트웨어에 상당한 초기 비용이 들지만, 클라우드 서비스와 관련된 반복 비용을 피할 수 있습니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes
 
 1. 쉬운 접근: 렌터카 회사에서 차를 선택하고 준비된 차량을 제공받습니다. 구매 프로세스를 걱정할 필요가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 유지보수가 필요 없음: 렌탈 회사가 모든 유지보수와 수리를 처리합니다. 차량이 고장나면 다른 차량을 제공해줍니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes
 
 ## 관리형 쿠버네티스는 비슷한 방식으로 작동합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 서비스 제공업체: Google Kubernetes Engine (GKE), Amazon Elastic Kubernetes Service (EKS), 또는 Azure Kubernetes Service (AKS)와 같은 클라우드 제공업체가 인프라를 관리합니다.
 
@@ -69,16 +123,39 @@ link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes
 
 - 재발생 비용: 사용량에 따라 서비스를 지불하므로 인프라를 소유하는 것보다 예측 가능하고 확장 가능한 경우가 많습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 어떤 것이 당신에게 가장 적합할까요?
 
 온프레미스와 관리형 쿠버네티스 중 어떤 것을 선택할지는 당신의 특정 필요와 상황에 따라 다릅니다. 몇 가지 시나리오를 살펴보겠습니다:
 
 온프레미스 쿠버네티스가 가장 적합한 경우:
+
 1. 완벽한 통제가 필요한 경우: 규제 요건, 데이터 소유권 문제 또는 특정 맞춤화 요구사항으로 인해 인프라에 대한 완벽한 통제가 필요한 경우.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 기존 인프라: 온프레미스 하드웨어에 상당한 투자를 이미 했으며 효율적으로 활용하고 싶습니다.
 
@@ -90,7 +167,18 @@ link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes
 - 전문 지식: Kubernetes 환경을 효과적으로 관리하는 데 필요한 내부 전문 지식이 부족합니다. 관리형 서비스는 Kubernetes 운영의 복잡성을 다루는 전문가 팀에 접근할 수 있도록 합니다.
 - 속도: 온프레미스 인프라를 설정하고 유지하는 데 연관된 지연 없이 가능한 빨리 응용 프로그램을 가동하고 싶습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결정 요소들
 
@@ -103,7 +191,18 @@ link: "https://medium.com/@thekubeguy/differences-between-on-premises-kubernetes
 여기까지입니다...
 차를 구매할지 렌트할지 선택하는 것은 귀하의 재정적 및 기술적 요구사항 및 상황에 달려 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-위 문서를 읽어 주셔서 감사합니다 🙏 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+위 문서를 읽어 주셔서 감사합니다 🙏
 더 많은 유용한 콘텐츠를 보시려면 제 블로그를 팔로우해 주세요. 놓치지 않으려면 구독도 잊지 말아 주세요.

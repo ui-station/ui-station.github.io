@@ -3,13 +3,12 @@ title: "Kubernetes 시작하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-StartingyourjourneyonKubernetes_0.png"
 date: 2024-05-20 17:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-StartingyourjourneyonKubernetes_0.png
 tag: Tech
 originalTitle: "Starting your journey on Kubernetes"
 link: "https://medium.com/@martin.hodges/starting-your-journey-on-kubernetes-e9c3a57b59cd"
 ---
-
 
 ## 최근에 저는 Kubernetes와 관련된 다양한 기술의 사용에 대한 여러 기사를 쓰고 있습니다. Kubernetes 클러스터를 자동으로 구축하는 공개 프로젝트에 대한 기사를 소개하기 전에 Kubernetes 클러스터가 무엇이고 왜 필요한지 설명해야겠다고 생각했습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@martin.hodges/starting-your-journey-on-kubernetes-e9c
 
 Kubernetes에 대해 알아보기 전에 이가 해결하는 문제를 이해하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현대 소프트웨어 개발은 마이크로서비스로 이동했습니다. 이 아키텍처는 솔루션을 작은 독립적인 애플리케이션으로 분해하여 API를 통해 연결합니다. 이러한 각 애플리케이션을 마이크로서비스라고합니다.
 
@@ -29,7 +39,18 @@ Kubernetes에 대해 알아보기 전에 이가 해결하는 문제를 이해하
 
 그러나 이 아키텍처의 단점은 이제 여러 마이크로서비스를 모든 서버에 배포하고 그들 사이의 네트워크 연결을 설정해야 한다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 이를 10, 20, 50, 100개의 마이크로 서비스로 확장해 보세요.
 
@@ -39,7 +60,18 @@ Kubernetes에 대해 알아보기 전에 이가 해결하는 문제를 이해하
 
 ## 컨테이너화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희가 해결한 첫 번째 문제는 각각의 마이크로서비스가 서로 다른 종속성 집합을 가질 수 있다는 문제였습니다. 이 종속성에는 패키지, 도구 및 구성 요소가 포함될 수 있는데, 이들이 서로 호환되지 않을 수 있습니다.
 
@@ -49,7 +81,18 @@ Kubernetes에 대해 알아보기 전에 이가 해결하는 문제를 이해하
 
 # 그렇다면 쿠버네티스란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드에 마이크로서비스 애플리케이션을 배포하기로 결정했다고 가정해봅시다. 빠른 검색 결과로 구글에서 개발한 플랫폼인 Kubernetes가 필요하다는 것을 알게 됐습니다. 이 플랫폼은 구글의 비즈니스를 지원하기 위해 개발되었으며 이후에는 클라우드 네이티브 컴퓨팅 재단（CNCF）에 오픈 소스 솔루션으로 기부되었습니다.
 
@@ -57,7 +100,18 @@ Kubernetes에 대해 알아보기 전에 이가 해결하는 문제를 이해하
 
 당신은 무슨 생각인지 모르겠지만, 제게는 실제로 무엇인지 이해하는 데 도움이 되지 않았어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 클라우드용 운영 체제
 
@@ -67,7 +121,18 @@ Kubernetes에 대해 알아보기 전에 이가 해결하는 문제를 이해하
 
 그러나 이 클러스터의 운영 체제로 쿠버네티스를 생각해 봅시다. 먼저 컴퓨터의 운영 체제에 대해 생각해보십시오. 이 운영 체제는 컴퓨터의 리소스를 관리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 메모리 및 디스크 공간
 - 응용 프로그램 및 패키지 설치
@@ -84,7 +149,18 @@ Kubernetes는 클러스터에서 비슷한 작업을 수행하며 클라우드�
 - 네트워킹 연결성 및 보안을 구성할 수 있습니다.
 - 사용자 및 액세스 보안을 관리할 수 있습니다(예: Role Based Access Control — RBAC).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간략히 말해, 클라우드나 실제 또는 가상 클러스터에 마이크로서비스를 배포하고 관리할 수 있는 도구를 제공합니다.
 
@@ -94,7 +170,18 @@ Kubernetes는 클러스터에서 비슷한 작업을 수행하며 클라우드�
 
 대안으로는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Amazon Elastic Compute Cloud
 - OpenShift
@@ -108,7 +195,18 @@ Kubernetes는 클러스터에서 비슷한 작업을 수행하며 클라우드�
 
 Kubernetes를 사용해야 할 필요성에 대해 스스로 질문해볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쿠버네티스 클러스터가 제공하는 가장 중요한 기회 중 하나는 휴대 가능한 환경을 만들어준다는 것입니다. 이는 쿠버네티스를 지원하는 어디에서나 배포 아키텍처를 거의 어디론가 가져갈 수 있게 해줍니다. 또한 다른 공급업체에 있는 클러스터를 활용할 수 있어서 더 높은 신뢰성과 가용성을 제공합니다.
 
@@ -123,7 +221,18 @@ Kubernetes를 사용해야 할 필요성에 대해 스스로 질문해볼 수 �
 
 따라서 만약 고가용성, 높은 신뢰성, 확장성, CI/CD 및/또는 클라우드 서비스 제공업체의 이동성이 필요하다면 쿠버네티스 클러스터를 고려해보시는 것이 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 한 대의 서버에 단일 대형 애플리케이션을 배포하고 있고 (네, 이 경우가 존재합니다) 확장, 복원력, 신뢰성 또는 이식성에 대한 중요한 요구사항이 없다면, 마이크로서비스, 쿠버네티스와 같은 컨테이너 기반의 관리 시스템을 유지하는 비용을 피하고 애플리케이션을 해당 서버에 배포하는 것이 훨씬 나을 수 있습니다.
 
@@ -133,7 +242,18 @@ Kubernetes를 사용해야 할 필요성에 대해 스스로 질문해볼 수 �
 
 쿠버네티스 학습 곡선을 시작할 때, 리소스를 이해해야 합니다. 간단히 말해서, 쿠버네티스는 리소스를 관리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리소스는 서버(Node), 애플리케이션(Pod), 서비스(Service) 또는 아래 다이어그램에 표시된 것(그리고 그 외에 더 많은 것들)일 수 있습니다.
 
@@ -143,7 +263,18 @@ Kubernetes를 사용해야 할 필요성에 대해 스스로 질문해볼 수 �
 
 본질적으로 Kubernetes는 리소스 목록(매니페스트라고 함)을 가져와 이를 클러스터 내 서버(또는 노드)에 구축하고 유지하는 명령어 세트로 변환합니다. 목록을 가져와 Kubernetes가 실제 리소스를 설정하도록 하는 이 개념을 선언적 구성이라고 합니다. 목록을 변경하면 Kubernetes가 클러스터 내에서 필요한 변경 사항을 결정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-StartingyourjourneyonKubernetes_3.png" />
 
@@ -153,7 +284,18 @@ Kubernetes는 이 개념을 더 발전시킵니다. 이는 클러스터 내의 �
 
 # 리소스의 종류
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알겠어요, 자원에 대한 토론은 조금 추상적이죠. 자원의 몇 가지 구체적인 예시를 살펴볼게요.
 
@@ -163,8 +305,18 @@ Kubernetes 클러스터를 생성할 때, 먼저 생성하는 자원은 클러�
 
 마스터 노드와 워커 노드가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Starting Your Journey on Kubernetes](/assets/img/2024-05-20-StartingyourjourneyonKubernetes_4.png)
 
@@ -174,8 +326,18 @@ Kubernetes 클러스터를 생성할 때, 먼저 생성하는 자원은 클러�
 
 일반적으로 클러스터에는 마스터 노드의 홀수 개수와 워커 노드의 홀수 개수가 있습니다. 이것은 일부 응용 프로그램 및 도구에서 지도자를 선정하는 데 도움이 됩니다. 대부분의 예는 1개의 마스터와 3개의 워커를 보여줍니다만 클러스터에는 여러 마스터와 수백 개의 노드가 있을 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 파드
 
@@ -185,7 +347,18 @@ Kubernetes 클러스터를 생성할 때, 먼저 생성하는 자원은 클러�
 
 일반적으로 파드에는 하나의 컨테이너 이미지(애플리케이션 또는 마이크로서비스)만 포함됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Pods는 일시적입니다. 이는 Kubernetes가 언제든지 pod의 인스턴스를 삭제하고 옵션으로 클러스터의 다른 곳에 다시 생성할 수 있다는 것을 의미합니다. 특정 인스턴스가 항상 존재한다고 확신할 수 없지만, 원하는 경우 Kubernetes가 사용할 수 있는 인스턴스가 있도록 보장할 것입니다.
 
@@ -193,7 +366,18 @@ Pods는 일시적입니다. 이는 Kubernetes가 언제든지 pod의 인스턴�
 
 한 pod 내에는 여러 개의 sidecar가 존재할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 연결성
 
@@ -203,7 +387,18 @@ Pods는 일시적입니다. 이는 Kubernetes가 언제든지 pod의 인스턴�
 
 ![이미지](/assets/img/2024-05-20-StartingyourjourneyonKubernetes_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 자원 관리
 
@@ -213,7 +408,18 @@ Pods는 일시적입니다. 이는 Kubernetes가 언제든지 pod의 인스턴�
 
 매니페스트에는 배포가 가져야 하는 특성들을 제공할 수 있습니다. 이러한 특성들은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 인간들이 사용할 이름을 정하고
 다른 리소스가 식별하고 선택할 수 있게 해주는 라벨 세트
@@ -226,7 +432,18 @@ Pods는 일시적입니다. 이는 Kubernetes가 언제든지 pod의 인스턴�
 
 쿠버네티스 이야기에는 더 많은 것이 있지만, 다른 기사에서 다룰 예정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 네임스페이스
 
@@ -236,7 +453,18 @@ Pods는 일시적입니다. 이는 Kubernetes가 언제든지 pod의 인스턴�
 
 네임스페이스는 이름 충돌을 방지할 뿐만 아니라 접근 제어를 통해 보안을 제공할 수도 있습니다. 이는 하나의 개발자가 한 네임스페이스에 액세스하고 다른 개발자가 다른 네임스페이스에 액세스할 수 있지만 둘 다 서로의 네임스페이스에 액세스할 수 없다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네임스페이스는 Kubernetes에서 생성 및 관리할 때 리소스로 취급됩니다.
 
@@ -248,7 +476,18 @@ kubectl config set-context --current --namespace=new-default
 
 일부 유형의 리소스는 클러스터 수준에서 생성되며 네임스페이스에서 생성할 수 없습니다. 예를 들어 Persistent Volume (PV)는 클러스터 수준에서 생성됩니다. PV를 생성하거나 관리할 때는 네임스페이스를 지정하지 않으며 (기본값 사용되지 않음)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실제로 네임스페이스는 클러스터 수준의 리소스입니다. 즉, 네임스페이스는 네임스페이스를 가질 수 없기 때문에 서로 중첩시킬 수 없습니다.
 
@@ -258,7 +497,18 @@ kubectl config set-context --current --namespace=new-default
 
 관심이 있다면, 한번 속을 esditeyus.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 쿠버네티스 구성 요소
 
@@ -268,7 +518,18 @@ kubectl config set-context --current --namespace=new-default
 
 ## 워커 노드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우선 워커 노드를 살펴보면, 각 워커 노드에는 세 가지 구성 요소가 있습니다:
 
@@ -280,7 +541,18 @@ kubectl config set-context --current --namespace=new-default
 
 ## 구성 요소 교체
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 궁금하시다면, 이러한 구성 요소는 Kubernetes를 설치할 때 기본적으로 제공됩니다. 그러나 귀하의 특정 요구 사항을 충족하는 구성 요소로 교체할 수도 있습니다.
 
@@ -290,7 +562,18 @@ kubectl config set-context --current --namespace=new-default
 
 이를 위해 Kube Proxy는 노드의 운영 체제에 있는 기본 IP Tables을 구성하여 서비스로의 경로 지정 및 배경 마이크로서비스로의 경로 지정이 항상 작동하도록 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 사용 사례에는 잘 작동하지만, 서비스 수가 수백 개로 증가함에 따라 IP Tables의 규칙 길이가 너무 길어져 효율성이 떨어지게 됩니다.
 
@@ -300,7 +583,18 @@ kubectl config set-context --current --namespace=new-default
 
 ## 마스터 노드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마스터 노드에서는 Kublet, Kube Proxy 및 컨테이너 관리 기능도 확인할 수 있습니다. 이를 통해 마스터 노드가 워커 노드로도 작동할 수 있습니다 (나중에 이에 대한 장단점에 대해 이야기하겠습니다).
 
@@ -314,7 +608,18 @@ kubectl config set-context --current --namespace=new-default
 
 이들 구성 요소가 함께 워커 노드를 관리하는 제어 플레인을 형성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 마스터 노드를 워커 노드로 사용
 
@@ -324,7 +629,18 @@ kubectl config set-context --current --namespace=new-default
 
 이는 매우 타당한 주장이지만, 오퍼레이터라고 불리는 응용 프로그램이 있습니다. 오퍼레이터는 자동 보조 도구 역할을 합니다. 그들은 마이크로서비스를 설치, 관리, 장애 조치, 백업하고 일반적으로 마이크로서비스를 관리합니다. 이러한 오퍼레이터들은 마이크로서비스보다는 제어 평면 구성 요소와 비슷하게 작용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마스터 노드에서 연산자가 실행되는 것이 이해됩니다.
 
@@ -336,7 +652,18 @@ kubectl config set-context --current --namespace=new-default
 
 이들 간의 전반적인 상호작용은 복잡합니다. 이러한 규칙을 사용하면 워커 노드나 마스터 노드에 파드를 예약할 수 있습니다. 또한 한 노드에 두 개의 파드 인스턴스가 예약되지 않거나, 한 마이크로서비스가 다른 노드에 예약되지 않도록 할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 컨테이너 네트워크 인터페이스
 
@@ -346,8 +673,18 @@ Kubernetes는 모든 팟이 Network Address Translation (NAT)이 필요 없이 �
 
 이는 Container Network Interface (CNI) 플러그인을 사용하여 달성됩니다. CNI는 Flannel, Calico, Weave, Cilium 등 여러 플러그인이 구현하는 표준이며 실제로 CNI 표준은 기타 컨테이너 관리 시스템에서도 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Starting your journey on Kubernetes](/assets/img/2024-05-20-StartingyourjourneyonKubernetes_8.png)
 
@@ -357,8 +694,18 @@ CNI 플러그인은 다양한 솔루션을 사용하여 보편적 네트워크�
 
 # DNS
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네트워크 솔루션의 두 번째 부분은 클러스터용 DNS 서비스입니다. Pod가 서비스에 액세스해야 할 때, 해당 서비스를 도메인 이름을 통해 찾습니다.
 
@@ -371,7 +718,18 @@ kubectl cluster-info dump | grep -m 1 cluster-cidr
 
 IP 주소를 할당받을 뿐만 아니라, 서비스의 이름이 DNS 항목으로 사용됩니다. 예를 들어, hello라는 이름의 서비스를 world 네임스페이스에 생성한다고 가정해봅시다. 서비스가 생성되고 IP 주소를 부여받는데, 예를 들어 10.96.0.5라고 하겠습니다. 그럼 클러스터 DNS는 엔트리를 업데이트하면서 다음과 같은 항목을 추가합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 10.96.0.5 hello
@@ -387,13 +745,24 @@ options ndots:5
 
 이는 서비스에 다음을 사용하여 액세스할 수 있음을 의미합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-hello
-hello.world
-hello.world.svc
-hello.world.svc.cluster.local
+hello;
+hello.world;
+hello.world.svc;
+hello.world.svc.cluster.local;
 ```
 
 필요한 경우 다른 네임스페이스에 있는 서비스를 참조할 수 있음을 알 수 있습니다.
@@ -401,9 +770,19 @@ hello.world.svc.cluster.local
 DNS는 클러스터의 팟으로 설치된 coreDNS라는 애플리케이션에서 제공됩니다. 다른 솔루션도 사용할 수 있습니다. 다른 리소스와 마찬가지로 coreDNS는 추가적인 사용자 지정 매핑 규칙을 제공하기 위해 매니페스트 파일을 통해 구성할 수 있습니다.
 
 # 실제 리소스 제한하기
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전에 언급했던 대로 Kubernetes는 클라우드용 운영 체제와 같습니다. 이런 표현은 너무 넓은 범위일 수도 있어요. 사실은 클러스터용 운영 체제와 비슷합니다.
 
@@ -413,7 +792,18 @@ DNS는 클러스터의 팟으로 설치된 coreDNS라는 애플리케이션에�
 
 Kubernetes는 이러한 제한을 Unix 개념인 cgroups를 사용하여 적용합니다. 이 기사에서 cgroups에 대해 다루는 것은 범위를 벗어나지만, 프로세스가 사용하는 리소스를 제한할 수 있다는 것만 언급해도 충분해요. 제한은 다양한 방식으로 적용될 수 있어요. 예를 들어, CPU 제한에 도달하면 응용 프로그램이 간단히 느려지지만, 메모리 제한에 도달하면 오류가 발생하여 파드가 종료되고 재스케줄링될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리소스를 생성할 때 Kubernetes에게 지정된 계산 리소스 양이 있는 노드에 리소스를 예약하도록 요청할 수도 있습니다. 이것은 요청입니다. 요청은 제한이 설정되어 있는 것을 의미하지 않으며 요청 및 제한 구성은 독립적인 설정입니다.
 
@@ -423,7 +813,18 @@ Kubernetes는 이러한 제한을 Unix 개념인 cgroups를 사용하여 적용�
 
 Kubernetes는 또한 매니페스트 파일을 감시하며 필요한 리소스에 변경이 있으면 클러스터를 수정하여 요구 사항과 다시 일치하도록 유지합니다. 이는 리소스를 삭제해야 하는 경우에도 해당됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알겠어요, 지금 어떻게 매니페스트 파일을 구성하는지 궁금할 수도 있겠죠. 매니페스트 파일은 YAML 파일입니다. 각 리소스는 YAML 파일 내의 문서로 정의됩니다.
 
@@ -441,7 +842,18 @@ Kubernetes는 또한 매니페스트 파일을 감시하며 필요한 리소스�
 
 이것은 여러 리소스를 (각 문서당 하나씩) 단일 매니페스트 파일에 정의할 수 있다는 것을 의미합니다. 여러 파일로 배포를 분리할지 또는 모두 단일 파일에 포함시킬지는 여러분의 선택입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사에서는 YAML 파일당 하나의 리소스를 가정합니다.
 
@@ -465,22 +877,33 @@ spec:
         testService: service-1
     spec:
       containers:
-      - name: nginx
-        image: nginx
-        ports:
-        - containerPort: 80
-        volumeMounts:
-        - name: nginx-index-config
-          mountPath: /usr/share/nginx/html
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: nginx-index-config
+              mountPath: /usr/share/nginx/html
       volumes:
-      - name: nginx-index-config
-        configMap:
-          name: nginx-config-1
+        - name: nginx-index-config
+          configMap:
+            name: nginx-config-1
 ```
 
 이 경우 NGINX 프록시를 배포하여 테스트 서비스를 정의하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 조각 씩 분석해 봅시다.
 
@@ -493,7 +916,18 @@ apiVersion: apps/v1
 
 사용자 정의 리소스 정의(CRD)를 포함하는 Kubernetes 확장을 로드하여 해당 사용자 정의 API 정의를 가져올 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 경우 apps/v1은 표준 Kubernetes API입니다.
 
@@ -513,7 +947,18 @@ metadata:
 ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메타데이터 섹션 또는 스탄자는 Kubernetes에 리소스에 대한 정보를 제공합니다. 이 경우에는 Deployment 리소스의 이름을 알려주어 나중에 참조할 수 있도록 합니다. 또한 해당 리소스가 주어진 test-env 네임스페이스에 생성되도록 지정합니다.
 
@@ -531,7 +976,18 @@ spec:
 
 이제 우리는 Kubernetes에 spec 스탄자에서 생성해야 할 리소스의 사양 또는 구성에 대해 알려줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 경우에는 명세서가 다음과 같이 말합니다:
 
@@ -552,7 +1008,18 @@ spec
 ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 배포를 위해 Kubernetes에게 무엇을 배포해야 하는지 알려주어야 합니다. 이 스펙(spec) 안에는 어플리케이션을 배포하는 방법과 내용을 정의하는 템플릿을 지정합니다.
 
@@ -581,7 +1048,18 @@ spec:
 
 이제 템플릿 내 spec 섹션은 Kubernetes에게 어플리케이션을 생성하고 설정하는 방법을 알려줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너 ... 이는 파드 배포에 포함해야 할 컨테이너를 정의합니다. 이름은 nginx로 하고 이미지는 nginx를 사용해야 합니다. 이 이미지는 여러분이 만든 이미지일 수도 있고 버전을 포함할 수도 있습니다. 노드에 처음으로 파드를 배포할 때 이미지를 다운로드하지만, 이후에 동일한 파드의 새 인스턴스를 만들어야 할 경우 이미지를 다시 다운로드할 필요가 없도록 캐시합니다.
 
@@ -591,7 +1069,18 @@ volumeMounts ... 이는 외부 볼륨을 컨테이너 내 파일 시스템에 �
 
 컨테이너를 정의할 뿐만 아니라, 마운트해야 하는 볼륨도 정의해야 할 수 있습니다. 이는 아무 종류의 스토리지일 수 있지만, 이 경우 ConfigMap이라는 다른 리소스 유형을 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 ...
@@ -615,7 +1104,18 @@ spec:
 kubectl apply -f <filename> -n <namespace>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네임스페이스(-n 또는 --namespace)는 선택 사항이며, 이 경우에는 manifest에서 네임스페이스를 정의했기 때문에 필요하지 않습니다. 사용자에게 선택권을 주려면(또는 기본값을 사용하려면), 메타데이터에서 네임스페이스를 생략하면 됩니다.
 
@@ -636,7 +1136,18 @@ data:
 
 configMap 리소스를 사용하면 어플리케이션이나 리소스에 자유로운 형태의 구성을 제공할 수 있습니다. 여전히 API 버전, 리소스 유형 및 메타데이터(이 경우에는 네임스페이스 포함)를 제공하는 것을 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 데이터 스탠자를 정의합니다. 여기서는 표시된 HTML 콘텐츠를 포함하는 index.html 파일이라는 데이터가 정의됩니다.
 
@@ -648,7 +1159,18 @@ kubectl -f <파일이름>
 
 매니페스트 파일에서 이름 공간 옵션을 정의했기 때문에 이름 공간 옵션은 필요하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kubernetes는 선언적이기 때문에 파일을 적용하는 순서가 중요하지 않아야 합니다. 그러나 NGINX pod가 configMap을 찾는 등의 지속적인 다시 시작을 피하기 위해 의존성을 먼저 배포하는 것이 좋습니다. 이것은 두 매니페스트를 단일 파일에 포함할 수 있는 이유 중 하나입니다.
 
@@ -658,7 +1180,18 @@ Kubernetes는 선언적이기 때문에 파일을 적용하는 순서가 중요�
 
 이 글에서는 많은 내용을 다루었습니다. 여기에는 다음이 포함되어 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Microservices
 - 쿠버네티스란 무엇인가요?

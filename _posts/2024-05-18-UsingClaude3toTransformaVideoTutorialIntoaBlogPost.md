@@ -3,13 +3,12 @@ title: "클로드 3를 사용하여 비디오 튜토리얼을 블로그 포스�
 description: ""
 coverImage: "/assets/img/2024-05-18-UsingClaude3toTransformaVideoTutorialIntoaBlogPost_0.png"
 date: 2024-05-18 20:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-UsingClaude3toTransformaVideoTutorialIntoaBlogPost_0.png
 tag: Tech
 originalTitle: "Using Claude 3 to Transform a Video Tutorial Into a Blog Post"
 link: "https://medium.com/towards-artificial-intelligence/using-claude-3-to-transform-a-video-tutorial-in-a-blog-post-d2c1e04e7a7b"
 ---
-
 
 ## Anthropic이 Karpathy의 비디오 요약 도전에 대한 해결책 재현
 
@@ -19,8 +18,18 @@ link: "https://medium.com/towards-artificial-intelligence/using-claude-3-to-tran
 
 그 후에 Anthropic의 Emmanuel Ameisen과 동료들이 특히 Anthropic의 최신 모델인 Claude 3을 통해 이 작업을 수행할 것을 제안하는 것으로 보이는 해결책이 게시되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-UsingClaude3toTransformaVideoTutorialIntoaBlogPost_1.png)
 
@@ -30,8 +39,18 @@ link: "https://medium.com/towards-artificial-intelligence/using-claude-3-to-tran
 
 본 문서는 내 구현 방식을 공유하고, 각 단계를 자세히 설명하며, 주요 어려움에 대해 논의합니다. 코드 및 데이터는 이 Github 저장소에서 확인할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약:
 
@@ -43,18 +62,40 @@ link: "https://medium.com/towards-artificial-intelligence/using-claude-3-to-tran
 
 Claude 3 Opus는 Anthropic에서 제공하는 최신이자 가장 성능이 뛰어난 대형 멀티모달 모델(LMM)입니다. 이 모델은 3월 4일에 발표되었으며, claude.ai 웹 인터페이스 또는 API를 통해 액세스할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델은 최대 200K 토큰의 텍스트 또는 이미지를 입력으로 받아들일 수 있고, 최대 4K 토큰의 텍스트를 출력할 수 있습니다. 이것이 정확히 무엇을 의미하는지 조금 더 구체적으로 분석해 보겠습니다:
 
 - 출력의 4K 토큰: 한 토큰이 대략 3/4 단어라는 경험 법칙을 고려하면, 4K 토큰은 대략 3K 단어에 해당합니다. 페이지 당 대략 500단어를 가정한다면, 클로드는 최대 6페이지의 텍스트를 출력할 수 있습니다.
-- 입력의 200K 토큰: 동일한 통계를 따르면, 이는 15만 단어(약 300 페이지)에 해당합니다. 초당 대략 2~3단어의 발화 속도를 전제하면, 약 20시간의 오디오 트랜스크립트를 소화할 수 있으며, 이는 상당히 많은 양입니다. 반면, 1280*720 픽셀(비디오 HD) 해상도의 이미지를 인코딩하는 데에는 약 1.25K 토큰이 필요합니다. 따라서 한 번에 이론상으로는 150여 장의 이미지를 입력으로 제공할 수 있습니다. 실제로는, 토큰 사용량과는 무관하게, 현재 Anthropi API는 입력 이미지 수를 20장으로 제한하고 있음을 참고해야 합니다.
+- 입력의 200K 토큰: 동일한 통계를 따르면, 이는 15만 단어(약 300 페이지)에 해당합니다. 초당 대략 2~3단어의 발화 속도를 전제하면, 약 20시간의 오디오 트랜스크립트를 소화할 수 있으며, 이는 상당히 많은 양입니다. 반면, 1280\*720 픽셀(비디오 HD) 해상도의 이미지를 인코딩하는 데에는 약 1.25K 토큰이 필요합니다. 따라서 한 번에 이론상으로는 150여 장의 이미지를 입력으로 제공할 수 있습니다. 실제로는, 토큰 사용량과는 무관하게, 현재 Anthropi API는 입력 이미지 수를 20장으로 제한하고 있음을 참고해야 합니다.
 
 따라서, 주요 제약 사항은 입력으로 제공할 수 있는 이미지의 제한된 수와 모델이 생성할 수 있는 페이지 수의 제한에 있습니다. 해결책은 비디오를 챕터로 분할하여, 각각이 LMM에 의해 별도로 처리되게 하는 것입니다. 결과물은 그 후에 결합되어 최종 문서를 생성합니다.
 
 아래 다이어그램은 워크플로우의 주요 단계를 요약하고 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ameisen & Co는 YouTube 비디오 설명에 제시된 장을 기준으로 비디오를 분할했습니다(총 24장). 다른 전략으로는 LLM과 같은 주제 분할 도구를 활용하여 대본을 주요 부분으로 분할하는 방법이 있습니다. 몇 분 간격의 장을 목표로 설정하는 것이 좋으며, 이를 통해 명령과 대본에 함께 들어갈 10~20개의 스크린샷을 포함할 수 있습니다.
 
@@ -65,7 +106,18 @@ Ameisen & Co는 YouTube 비디오 설명에 제시된 장을 기준으로 비디
 - 13,000개의 입력 토큰(텍스트 토큰 1,000개 및 1.2K 토큰/이미지의 10개)
 - 1,000개의 출력 토큰(2페이지)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 총 입력 토큰은 약 13*2≈300천 개이며, 출력 토큰은 1천 * 24 = 24천 개입니다. 백만 토큰당 비용을 곱하면 입력 비용이 15*0.3=4.5달러, 출력 비용이 75*0.024=1.8달러가 됩니다.
 
@@ -75,7 +127,18 @@ Ameisen & Co는 YouTube 비디오 설명에 제시된 장을 기준으로 비디
 
 이제 우리의 구현으로 넘어가 봅시다. 이는 우리의 워크플로우에서 제시한 네 가지 주요 단계를 따릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 비디오를 다운로드하고 텍스트를 획득합니다.
 - 텍스트와 스크린샷을 정렬한 챕터로 분할합니다.
@@ -88,7 +151,18 @@ Ameisen & Co는 YouTube 비디오 설명에 제시된 장을 기준으로 비디
 
 YouTube에 동영상이 있는 경우, 먼저 pytube 라이브러리를 사용하여 비디오를 다운로드합니다. 나중에 블로그 글을 생성하기 위해 비디오 프레임이 필요하므로 오디오 스트림만이 아닌 전체 비디오를 다운로드합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import pytube
@@ -120,8 +194,18 @@ transcript = YouTubeTranscriptApi.get_transcript(youtube_video_id)
 
 2시간 13분의 오디오 스트림 전체가 3422개의 세그먼트로 대본화되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 len(transcript)
@@ -137,7 +221,18 @@ transcript[0:4]
 
 장은 수동으로 식별하거나 YouTube가 제공하는 자동 비디오 장 도구와 같은 도구를 사용하여 식별할 수 있습니다. 예제 비디오의 경우, 비디오 설명에 개요된 24개의 장을 복사하여 Python chapters_list 객체에 저장했습니다. 아래에 설명된 것과 같이요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 chapters_list = [
@@ -154,7 +249,18 @@ chapters_list = [
 
 추출된 텍스트 및 스크린샷은 별도의 폴더에 저장됩니다(챕터 번호를 이름으로 사용).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def chop_up_in_chapters(chapters_list, video_path, transcript, timestamps_screenshots_list_seconds=None):
@@ -175,7 +281,7 @@ def chop_up_in_chapters(chapters_list, video_path, transcript, timestamps_screen
         print(f"장 {current_chapter}; 시작: {current_chunk_start_time}, 끝: {current_chunk_end_time}")
         # 현재 장에 대한 텍스트 및 프레임을 추출합니다.
         get_text_chapter(transcript, current_chunk_start_time, current_chunk_end_time, output_dir)
-        
+
         if timestamps_screenshots_list_seconds is not None:
             get_frames_chapter(video_path, current_chunk_start_time, current_chunk_end_time, output_dir,timestamps_screenshots_list_seconds[current_chapter])
         else:
@@ -188,8 +294,18 @@ def chop_up_in_chapters(chapters_list, video_path, transcript, timestamps_screen
 
 이 단계의 핵심 요소는 우리가 다음과 같이 설계한 LLM 프롬프트입니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 prompt_instructions = """
@@ -224,8 +340,18 @@ prompt_instructions = """
 
 프롬프트는 장의 스크린샷 및 대본 앞에 오고 있습니다. 우리는 JPG 스크린샷을 Anthropic의 비전 API에 적합한 형식으로 변환하기 위해 `get_screenshots_as_messages` 도우미 함수를 정의했습니다. 이 함수는 모든 스크린샷을 반복하여 각각에 대한 두 가지 메시지를 설명합니다: 스크린샷의 타임스탬프를 지정하는 텍스트 메시지와 그것의 base64로 인코딩된 표현을 포함하는 이미지 메시지입니다. 나중에 하이퍼링크가 추가된 최종 문서에서 원본 비디오로 이동할 수 있게 해주는 타임스탬프가 포함된 텍스트 메시지입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def get_screenshots_as_messages(screenshots):
@@ -255,7 +381,7 @@ def get_prompt_as_messages(chapter_id):
     with open(folder_path+'/transcript.txt', "r") as f:
         transcript = f.read()
     screenshots=sorted(glob.glob(folder_path+'/*.jpg'))
-    
+
     screenshots_as_messages=get_screenshots_as_messages(screenshots)
     prompt_as_messages = [
         {
@@ -287,14 +413,24 @@ def get_prompt_as_messages(chapter_id):
 
 그게 다야!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 챕터는 클로드를 반복적으로 호출하여 처리한 후 결과를 해당 챕터 폴더에 있는 마크다운 파일로 작성할 수 있습니다.
 
 ```js
 # 챕터 목록을 반복하여 처리
-for chapter in range(len(chapters_list)-1): 
+for chapter in range(len(chapters_list)-1):
   # 현재 챕터에 대한 프롬프트 생성 (스크린샷, 대본 및 지침이 포함된 메시지 목록).
     prompt_generate_markdown = get_prompt_as_messages(chapter)
     # 프롬프트를 사용하여 메시지 생성하기
@@ -308,7 +444,7 @@ for chapter in range(len(chapters_list)-1):
     # 응답에서 생성된 마크다운 콘텐츠 추출
     answer = message.content[0].text
     markdown = "#"+answer  # 마크다운 콘텐츠 앞에 헤더 태그 추가
-    
+
     # 현재 챕터에 해당하는 마크다운 파일 경로 정의
     markdown_file = CHAPTERS_DIR + '/' + str(chapter) + '/markdown.md'
     # 생성된 마크다운 콘텐츠를 파일에 작성
@@ -320,7 +456,18 @@ for chapter in range(len(chapters_list)-1):
 
 <img src="/assets/img/2024-05-18-UsingClaude3toTransformaVideoTutorialIntoaBlogPost_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 긴 장은 마지막에서 두 번째 장이었습니다 (여기에서 장을 확인하세요), 1시 51분부터 2시 10분까지 총 17689 토큰을 처리하는 데 거의 1분이 걸렸습니다. 전체적으로 비디오 및 24 장을 처리하는 데 약 10분이 소요되었고, 18만 토큰의 입력 및 1만 5천 토큰의 출력이 사용되었습니다. 이 과정은 약 4달러의 비용이 소요되었습니다.
 
@@ -356,7 +503,18 @@ with open(markdown_file, "w") as f:
         f.write(merged_markdown)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결합된 마크다운 파일은 MERGE_DIR 폴더에 모든 선택한 JPG 스크린샷과 함께 'markdown.md'로 저장됩니다 (최종 출력).
 
@@ -366,7 +524,18 @@ with open(markdown_file, "w") as f:
 
 정확하지 않거나 모순된 부분을 해결하기 위해 철저한 편집과 교정이 여전히 필요합니다. (Ameisen의 작업에 발견된 것과 유사한) 문제의 예로는 예를 들어, "hello world" 토큰을 2가 아닌 300으로 잘못 세는 오류, "tokenization"의 첫 번째 토큰을 잘못 번호 매기는 오류, 공백을 토큰으로 오도록 잘못 인식하는 등이 있습니다 (블로그 포스트의 2장 참조). 이러한 부정확성 외에도, 이 방법론은 효과적인 프롬프트를 만드는 복잡성, 결과의 재현 불가능성 및 LMM 운영에 따른 비용과 같은 다른 어려움을 야기합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이러한 단점에도 불구하고 비디오를 접근 가능하고 쉽게 탐색할 수 있는 텍스트 블로그 포스트로 변환하는 것은 대형 다중 모달 모델의 가치 있는 응용 프로그램입니다. 특히 경쟁하는 LMM(대형 다중 모달 모델)인 GPT4-V, Gemini Pro Vision 및 오픈 소스 대규모 월드 모델의 비디오/이미지 이해 능력과 비교는 내일의 블로그 포스트 주제가 될 것입니다.
 
@@ -380,6 +549,17 @@ with open(markdown_file, "w") as f:
 
 참고: 별도로 표시되지 않는 한, 모든 이미지는 작성자가 제공한 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 게시물을 즐겼나요? 생각을 공유하거나 박수를 보내거나 LinkedIn에서 저와 연락하세요.

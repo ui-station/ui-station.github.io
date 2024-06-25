@@ -3,13 +3,12 @@ title: "뒷면에는 Terraform - 운영에 강력한 조합, 개발자에게 훌
 description: ""
 coverImage: "/assets/img/2024-05-20-BackstageandTerraformAPowerfulCombinationforOpsWonderfulforDevs_0.png"
 date: 2024-05-20 17:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BackstageandTerraformAPowerfulCombinationforOpsWonderfulforDevs_0.png
 tag: Tech
 originalTitle: "Backstage and Terraform — A Powerful Combination for Ops, Wonderful for Devs"
 link: "https://medium.com/@_gdantas/backstage-and-terraform-a-powerful-combination-for-ops-wonderful-for-devs-c04ebce849f0"
 ---
-
 
 DevOps/Platform 세계가 끊임없이 진화하는 가운데 많은 기업들이 전통적인 도전에 직면하고 있습니다, 특히 클라우드 네이티브 기술을 널리 채용한 기업들은 더 그렇습니다.
 
@@ -19,7 +18,18 @@ DevOps/Platform 세계가 끊임없이 진화하는 가운데 많은 기업들�
 
 시간이 지남에 따라 이 방식이 스스로 입증되어 오고 있지만, 채택이 증가함에 따라 어느 정도 도전이 팀들의 일상에 영향을 끼치기 시작하는 것은 당연한 일입니다. 아마도 개발팀의 일원으로 그 시나리오를 이해할 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드에서 새로운 리소스를 생성해야 할 때 데브옵스/시스템 신뢰성 엔지니어(SRE) 팀에게 리소스를 생성해 달라는 티켓을 열어야 할 필요가 있다는 사실을 깨닫게 될 겁니다. 이는 모든 리소스가 인프라스트럭처를 코드로만(IaC) 생성하기 때문입니다.
 
@@ -29,7 +39,18 @@ DevOps/Platform 세계가 끊임없이 진화하는 가운데 많은 기업들�
 
 또한 Backstage.io에 대해 들어본 적이 있을 겁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (이미 확인하지 않은 경우 다른 게시물을 소개해드릴게요 - 링크).
 
@@ -39,7 +60,18 @@ DevOps/Platform 세계가 끊임없이 진화하는 가운데 많은 기업들�
 
 여러분이 다양한 필드를 갖는 폼을 만들고 자동으로 Terraform 코드를 생성하는 파이프라인을 실행할 수 있다고 상상해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발자들에게는 몇 가지 필드가 있는 페이지일 뿐입니다.
 
@@ -49,7 +81,18 @@ DevOps/Platform 세계가 끊임없이 진화하는 가운데 많은 기업들�
 
 전체 비밀은 한 파일에 있습니다. 여기서 포맷에 대해서 말씀드리겠습니다. 이 파일에서 양식과 실행 파이프라인을 모두 구성할 것이며, 이 포맷은 Kubernetes Custom Resource Definition (CRD)과 매우 유사한 형식을 따릅니다. 종류, 메타데이터 및 스펙이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 파일은 4개의 부분으로 나눠져 있어요.
 
@@ -59,9 +102,20 @@ DevOps/Platform 세계가 끊임없이 진화하는 가운데 많은 기업들�
 
 ## 매개변수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-매개변수는 데이터 입력 양식이 어떻게 선언될지를 정하는 곳입니다. 이 양식은 내부적으로 react-jsonschema-form을 사용하므로 간단한 텍스트에서 여러 옵션을 가진 드롭다운까지 필드를 생성할 수 있습니다. 또한 텍스트가 민감한 정보인지 여부와 같은 다른 측면을 사용자가 선택한 값의 가능성과 패턴을 아주 잘 제어할 수 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+매개변수는 데이터 입력 양식이 어떻게 선언될지를 정하는 곳입니다. 이 양식은 내부적으로 react-jsonschema-form을 사용하므로 간단한 텍스트에서 여러 옵션을 가진 드롭다운까지 필드를 생성할 수 있습니다. 또한 텍스트가 민감한 정보인지 여부와 같은 다른 측면을 사용자가 선택한 값의 가능성과 패턴을 아주 잘 제어할 수 있습니다.
 
 이것은 사용자가 선택할 값의 가능성과 패턴을 매우 잘 제어할 수 있기 때문에 매우 유용합니다.
 
@@ -69,7 +123,18 @@ Backstage 문서 자체에는 사용 예제가 몇 가지 있습니다.
 
 좋은 팁은 템플릿 편집기를 사용하는 것입니다. 이렇게 하면 양식이 어떻게 표시될지에 대한 빠른 피드백을 받을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 또 Backstage를 위해 외부 정보를 얻기 위해 사용자 정의 입력을 생성할 수도 있습니다. 이는 다른 API에 요청을 보내어 드롭다운에서 이를 표시하는 것을 포함합니다.
 
@@ -79,7 +144,18 @@ Backstage 문서에서 자세한 정보를 볼 수 있습니다:
 
 액션은 플랫폼 팀이 최고의 작업을 보여줄 수 있는 곳입니다. 👩🏽‍💻✨👨🏽‍💻.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <table>
   <tr>
@@ -98,7 +174,18 @@ Backstage 문서에서 자세한 정보를 볼 수 있습니다:
 
 각 단계에는 다음과 같은 필드가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - id: 파일의 다른 부분에서 참조하는 데 사용하는 고유 식별자입니다.
 - name: 단계 실행 중 UI에 표시될 텍스트입니다.
@@ -111,19 +198,39 @@ Backstage에 있는 모든 작업을 확인하려면 /create/actions 페이지�
 
 또한 이러한 작업에서는 양식에 입력된 값들을 $' parameters.field-id ' 구문을 사용하여 입력으로 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시:
 
-
 ![Backstage and Terraform: A Powerful Combination for Ops, Wonderful for Devs](/assets/img/2024-05-20-BackstageandTerraformAPowerfulCombinationforOpsWonderfulforDevs_0.png)
-
 
 아웃풋은 단계 실행이 끝나고 사용자에게 표시할 수 있는 링크입니다.
 
 이렇게 하면 사용자가 다음 단계를 따르거나 생성된 결과를 확인할 수 있는 링크를 이미 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋은 예시는 생성된 Pull Request에 링크를 추가하는 것입니다.
 
@@ -133,7 +240,18 @@ Backstage에 있는 모든 작업을 확인하려면 /create/actions 페이지�
 
 이를 통해 어떤 팀이든 DevOps/SRE 팀이 만든 패턴을 따라 독립적으로 Pull Request를 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 파일을 Markdown 형식으로 변환하면 다음과 같습니다:
 
@@ -142,7 +260,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: sqs-with-dlq
-  title: Standard AWS SQS 
+  title: Standard AWS SQS
   description: PR to create AWS SQS Queue
   tags:
     - infrastructure
@@ -179,7 +297,7 @@ spec:
           enum: [prod, staging, dev]
 
         create_dlq:
-          title: Create a DLQ with redrive policy? 
+          title: Create a DLQ with redrive policy?
           type: boolean
           description: If you desire to create a DLQ with redrive policy
           default: true
@@ -226,31 +344,31 @@ spec:
       action: debug:log
       input:
         listWorkspace: true
-  
+
     - id: terraform_pr
       name: Create terraform PR
       action: publish:github:pull-request
       input:
         repoUrl: github.com?owner=gabriel-dantas98&repo=piltover-infrastructure
-        branchName: 'sw-template/sqs/${ parameters.queue_name }'
-        title: '🔩 Create ${ parameters.queue_name } AWS SQS'
+        branchName: "sw-template/sqs/${ parameters.queue_name }"
+        title: "🔩 Create ${ parameters.queue_name } AWS SQS"
         description: |
           ## Creating SQS ${ parameters.queue_name }
-          
+
           This is an initial pull request to create an SQS queue and was created based on the Backstage template.
 
           If you need to add more parameters, check the official documentation - https://registry.terraform.io/modules/terraform-aws-modules/sqs/aws/latest
 
           *created by: [Backstage Software Template](https://hextech-portal.gdantas.com.br/create)* 👷‍♂️⚙️👷‍♀️
         sourcePath: ./templates/outputs
-        targetPath: 'aws/production/sqs/${ parameters.queue_name }'
+        targetPath: "aws/production/sqs/${ parameters.queue_name }"
 
     - id: label_pr
       name: Add labels to PR
       action: github:issues:label
       input:
         repoUrl: github.com?owner=gabriel-dantas98&repo=piltover-infrastructure
-        number: '${ steps.terraform_pr.output.pullRequestNumber }'
+        number: "${ steps.terraform_pr.output.pullRequestNumber }"
         labels:
           - terraform
           - created-by-backstage
@@ -259,10 +377,10 @@ spec:
 
   output:
     links:
-      - title: 'Go to pull request :D'
+      - title: "Go to pull request :D"
         url: ${ steps.terraform_pr .output.remoteUrl }
         icon: github
-      - title: 'To view more check documentation'
+      - title: "To view more check documentation"
         icon: docs
         url: "https://registry.terraform.io/modules/terraform-aws-modules/sqs/aws/latest"
 ```
@@ -271,7 +389,18 @@ spec:
 
 이로써 Atlantis가 팀의 저장소에 적용되어 있으면 별도의 검토를 거쳐 큐 생성을 적용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 글이 더 막대해지지 않도록 몇 가지 Atlantis 구성에 도움이 될만한 링크들을 분리했어요:
 
@@ -283,7 +412,18 @@ spec:
 
 <img src="https://miro.medium.com/v2/resize:fit:1000/1*JMykIYYqaU__zxhOqxGPUg.gif" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞으로의 게시물에 대한 제안이 있으면 언제든지 환영합니다! 🚀
 

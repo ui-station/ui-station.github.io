@@ -3,13 +3,12 @@ title: "산업 폐수 품질 모니터링을 위한 IoT"
 description: ""
 coverImage: "/assets/img/2024-05-23-IoTforIndustrialWastewaterQualityMonitoring_0.png"
 date: 2024-05-23 16:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-IoTforIndustrialWastewaterQualityMonitoring_0.png
 tag: Tech
 originalTitle: "IoT for Industrial Wastewater Quality Monitoring"
 link: "https://medium.com/@wanrazaq/iot-for-industrial-wastewater-quality-monitoring-52c45cbac19b"
 ---
-
 
 # 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@wanrazaq/iot-for-industrial-wastewater-quality-monito
 
 # 사물인터넷(IoT) 및 그 발전
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인터넷 오브 씽즈(IoT)는 기술이 일상 영역과 상호작용하는 방식에서 상당한 발전을 의미합니다. 이것은 일상적인 물건을 포함한 장치 네트워크가 인간 개입 없이 인터넷을 통해 통신할 수 있도록 합니다. 이 혁신은 SPARING의 핵심이며 더욱 효율적이고 효과적인 원격 관리와 운영을 지원합니다.
 
@@ -29,7 +39,18 @@ SPARING은 IoT의 세 가지 핵심 구성 요소인 센서, 통신 기술 및 �
 
 ![이미지](/assets/img/2024-05-23-IoTforIndustrialWastewaterQualityMonitoring_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 센서 및 모니터링 기술
 
@@ -39,7 +60,18 @@ SPARING은 pH, 화학적 산소 요구량 (COD), 총 분산 고체물 (TSS), 암
 
 2. 네트워크 및 통신 기술
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정부 규정을 효율적으로 준수하기 위해 SPARING은 GSM(글로벌 시스템 모바일 통신)을 사용하여 광범위하고 신뢰할 수 있는 데이터 전송을 보장합니다. 이 기술은 원활한 통신을 가능케 하며 라디오 트럭킹 및 VSAT와 같은 대안은 GSM 수신이 약한 지역에서도 이용할 수 있습니다.
 
@@ -49,7 +81,18 @@ SPARING 대시보드는 사용자 친화적 인터페이스를 통해 폐수 품
 
 ![IoTforIndustrialWastewaterQualityMonitoring_3](/assets/img/2024-05-23-IoTforIndustrialWastewaterQualityMonitoring_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-IoTforIndustrialWastewaterQualityMonitoring_4.png" />
 
@@ -59,7 +102,18 @@ SPARING 시스템은 이미 인도네시아의 다양한 산업 분야에서 활
 
 <img src="/assets/img/2024-05-23-IoTforIndustrialWastewaterQualityMonitoring_5.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 고객 혜택
 

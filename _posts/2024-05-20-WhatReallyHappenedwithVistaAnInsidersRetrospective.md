@@ -3,13 +3,12 @@ title: "참작자 시선으로 바라본 Vista의 진실"
 description: ""
 coverImage: "/assets/img/2024-05-20-WhatReallyHappenedwithVistaAnInsidersRetrospective_0.png"
 date: 2024-05-20 18:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-WhatReallyHappenedwithVistaAnInsidersRetrospective_0.png
 tag: Tech
 originalTitle: "What Really Happened with Vista: An Insider’s Retrospective"
 link: "https://medium.com/@benbob/what-really-happened-with-vista-an-insiders-retrospective-f713ee77c239"
 ---
-
 
 ![이미지](/assets/img/2024-05-20-WhatReallyHappenedwithVistaAnInsidersRetrospective_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@benbob/what-really-happened-with-vista-an-insiders-re
 
 윈도우는 거대한 시스템이에요. 수천 명의 개발자, 테스터, 프로그램 매니저, 보안 전문가, UI 디자이너, 아키텍트, 등등이 있어요. 그리고 그것은 지원 캐스트인 인사담당자, 채용담당자, 마케팅 담당자, 영업인, 변호사, 물론 많은 관리자들, 이사들, 각 분야의 부사장들까지 말이에요. 전체 앙상블 캐스트는 Microsoft 내외부의 파트너 팀에서 지원받는 많은 수많은 사람들에 의해 지원되어요. 그들은 플랫폼 아래쪽의 하드웨어부터 제공하고 있는 장치 드라이버와 응용 프로그램까지 모든 것을 제공해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-WhatReallyHappenedwithVistaAnInsidersRetrospective_1.png" />
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@benbob/what-really-happened-with-vista-an-insiders-re
 
 문화적으로나 조직적으로 말하자면, 코어 팀은 클라이언트 팀보다 서버 팀에 더 가까웠다고 말할 수 있습니다. 적어도 Vista 출시 이후까지는 그랬습니다. 이는 서버 플랫폼 요구 사항을 고려한 "코어" 팀 프로젝트에 더 많은 중점이 두어졌음을 의미했습니다: 더 많은 확장성 노력, 더 많은 중복 기능, OS 출시에서 기업 요구 사항을 더 많이 다루는 등, Windows가 이미 주도하는 소비자 데스크톱 시장뿐만 아니라 수익성이 높은 서버 시장에 대응하기 위해 성장하는 동안 기울이는 노력입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 1998년 초에 마이크로소프트에 도착했을 때, Windows라고 하면 Windows NT를 가리켰습니다. 아키텍처적으로, 조직적으로, 그리고 제품 적으로 모두 Windows 95 코드 베이스는 대부분 버려졌고 Windows NT가 노트북부터 클러스터 데이터베이스 서버까지 모든 유형의 Windows에 채택되었습니다. 그후 2년 뒤, Windows 95/98 코드 베이스가 한 번 더 부활하여 매우 비판을 받은 Windows ME를 출시했지만 그 프로젝트는 소규모 팀이 실행한 반면, 대부분은 NT 코드 베이스에 매진했습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@benbob/what-really-happened-with-vista-an-insiders-re
 
 이후로는 Microsoft의 보안을 관리하는 데 1~2년을 보냈습니다. 이는 "Longhorn 재설정" 시점부터 Vista 출시까지 대략입니다. 제 책임은 Windows의 보안 기술부터 보안 소프트웨어 애드온 솔루션, 보안 마케팅, 그리고 보안 패치의 생성, 테스트, 전달 등 비상 대응에 이르기까지 모든 것을 다뤄야 했습니다. 이는 Windows의 바이러스와 웜이 시스템을 망가뜨리는 시기로, 마이크로소프트의 안전한 소프트웨어 개발 명성이 시장에서 심각한 타격을 입고 있던 시기였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비스타 출시 후 윈도우 7 기간 동안, 윈도우즈 코어 개발팀을 관리했어요. 이 말은 실제로 “하드웨어 아래에서” 실행되는 모든 기술과 클라이언트 및 서버 팀에서 사용되는 기술을 개발팀이 소유한다는 것을 의미했어요. 비스타가 출시된 후, 윈도우 팀은 직군별로 구성되었고 각 조직의 모든 수준에서 “세 요소”(개발, 테스트, 프로젝트 관리)가 책임을 맡았기 때문에 함께 범죄 동료 두 명이 있었어요. 저는 개발팀을 총괄했고, 그들은 각각 테스트팀과 프로그램 관리팀을 총괄했어요.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@benbob/what-really-happened-with-vista-an-insiders-re
 
 일부 프로젝트는 6개월 이상의 코어 개발이 필요하여 병행으로 계속되어 완료되었을 때 주요 코드 베이스에 통합되었어요. 이는 주요 트리가 거의 항상 대규모의 기능이 통합되거나 교체되는 동안 거의 항상 반쪽 상태에 있음을 의미했어요. 윈도우 7 릴리스 중에는 항상 건강하고 기능하는 코드 베이스를 유지하기 위해 훨씬 더 엄격한 제어가 도입되었지만, 초기 릴리스는 수개월 동안 일상적인 불안전으로 시달렸어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발의 혼돈한 성격으로 인해 팀들은 종종 일정을 맞추는 데 서로 경쟁을 벌이며, 다른 프로젝트들보다 자신들의 코드가 더 잘되어 있다고 자신들과 다른 사람들을 설득했습니다. 마지막 순간에 몇 가지 남은 작업을 "정리"할 수 있다면, 나중에 조금 수정하고 자체 구현한 컴포넌트를 확인할 수 있게 되겠다는 것이죠.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@benbob/what-really-happened-with-vista-an-insiders-re
 
 각 팀이 릴리스에 자신들의 계획과 기능들을 밀어넣느라, 다른 컴포넌트와의 통합, 사용자 인터페이스, 끝까지 테스팅과 업그레이드와 같은 지루하고 골치 아픈 문제를 미흡하게 처리하는 경우가 많았습니다. 이로 인해 일부 팀들이 마지막 순간에 자신들의 UI나 업그레이드 테스트를 마무리하는 데 도움을 요청하여 병목 현상이 발생했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 시점에서, 진행 중인 주요 릴리스가 여러 개 있었고 여러 사이드 프로젝트도 진행 중이었습니다. 다양한 상태의 코드베이스를 관리하던 다른 팀들은 시간이 흘러 “부자는 더 부자가 되고 가난한 사람은 더 가난해지는” 모델로 이어졌습니다. 따라서 어떤 이유로든 뒤쳐진 팀들은 대부분 뒤처졌습니다.
 
@@ -69,7 +123,18 @@ Vista/Longhorn의 대부분 기간 동안, 저는 Windows 파일 시스템 기�
 
 빌 게이츠는 매우 상세한 수준에서 개인적으로 참여하여 “WinFS PM”로 농담처럼 불렸습니다: 프로젝트를 담당하는 프로그램 매니저입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수백, 아니면 수천 명의 엔지니어들이 참여한 엔지니어링 작업이 시간이 흐름에 따라 단순히 지나쳐가면서 발생했습니다: 데이터베이스의 쿼리 기능과 파일 시스템의 스트리밍 기능 및 비정형 데이터 기능을 결합하여 새로운 "풍요로운" 응용 프로그램을 만들기 위한 프로그래밍 패러다임으로 노출시키는 아이디어에 대한 일입니다.
 
@@ -79,7 +144,18 @@ Longhorn이 취소되고 비스타가 그 재난적인 잔해에서 급히 조�
 
 우리는 선택의 여지가 없었습니다. Windows XP가 우리의 성공의 희생자였음을 밝혀냈습니다. 사용성을 위해 설계된 시스템이 인터넷 시대의 현실과 마주할 때 보안 면에서 큰 결함이 있었습니다. 이러한 보안 문제에 대처하기 위해 병렬 프로젝트인 Windows XP 서비스 팩 2가 생성되었는데, (이름과는 상관 없이) Longhorn으로부터 수천 개의 리소스를 빼앗아가는 거대한 작업이었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 윈도우 NT 커널은 항상 다중 사용자 ID를 지원하고 관리 권한 경계를 올바르게 구현했지만, 사용자 모드에서는 Windows 95 호환성을 향상시키기 위해 이를 무시했습니다. 이는 시스템의 기본 사용자가 관리 권한을 가진 채로 "새로 판매 상태"로 설정되어 있음을 의미했습니다.
 
@@ -89,7 +165,18 @@ Vista에서 엄격한 관리적 경계를 강제로 적용하면 윈도우 전�
 
 만약 로그인한 사용자로부터 관리적 액세스가 제거된다면 모든 Windows 앱 중 99%가 제대로 설치조차 되지 않았다고 해도 과언이 아닐 것입니다. Windows 95와의 수십 년간의 하위 호환성은 우리의 손이 묶였다는 것을 의미했고, 안전성을 향상하려면 앱 호환성을 파괴하는 선택을 내려야만 했던 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 측면에서 볼 때, Vista는 마이크로소프트에서 출시한 이전 OS들보다 훨씬 더 안전했지만, 이 과정에서 우리는 "알려진 나쁜" API를 더 이상 지원하지 않거나 UAC와 같은 메커니즘을 통해 이를 해결하려는 방식으로 애플리케이션 및 장치 드라이버 호환성을 이전과는 다른 방식으로 파괴해 버렸어요.
 
@@ -99,7 +186,18 @@ Vista에서 엄격한 관리적 경계를 강제로 적용하면 윈도우 전�
 
 마이크로소프트 보안 책임자로서, 저는 개인적으로 백신 소프트웨어 업체들에게 왜 메모리에 있는 커널 명령과 데이터 구조를 "패치"할 수 없게 되었는지, 이것이 보안 위험이 되는 이유, 그리고 앞으로 승인된 API를 사용해야 하는 이유에 대해 몇 년 동안 설명했어요. 더 이상 우리는 윈도우 커널에서 레거시 앱을 지원하지 않고 이러한 접근법을 사용하여 소비자 시스템을 공격하는 해커들이 사용하던 것과 마찬가지로 시스템을 공격하는 제삼자의 필요성이 없다는 걸 알려주었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "우리 "친구"인 백신 업체들이 우리에게 소송을 제기할 것이라고 협박했어요. 그들은 우리가 그들의 생계를 막고 독점 권력을 남용하고 있다고 주장했습니다! 이런 친구가 있으면 적이 뭐 필요해요? 그들은 단지 이전 솔루션들이 계속 작동되기를 원했던 것뿐이지만, 그것이 우리 고객들의 보안을 감소시킨다 해도요—우리가 개선해야 할 것이었던 것을요.
 
@@ -109,7 +207,18 @@ Vista에서 엄격한 관리적 경계를 강제로 적용하면 윈도우 전�
 
 경쟁적인 힘만으로도 부족하지 않은 것처럼, 엔지니어들과 프로그램 매니저들의 군단이 소비자의 편의를 위해 이전 릴리스의 API를 문서화하기 위해 DOJ 및 기업 변호사들과 무수히 많은 시간, 하루, 주, 달을 보냈던 시기기도 했어요."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현실적으로 말하자면, 현재의 수명주기에서 윈도우의 주요 릴리스를 완성하는 데는 대략 3년이 걸렸고, 그 속도는 빠르게 움직이는 시장에는 너무 느린 것으로 판명되었습니다. 롱혼(Longhorn)에서는 WinFS, 보안, 그리고 관리 코드 등 여러 거대한 프로젝트들이 계획되었습니다. 수백 개의 더 작은 베팅 프로젝트들도 있었습니다.
 
@@ -117,7 +226,18 @@ Vista에서 엄격한 관리적 경계를 강제로 적용하면 윈도우 전�
 
 롱혼과 비스타(Vista)를 고립시켜 보는 것은 불가능합니다. 이들은 그들 앞뒤로 즉시 출시된 윈도우 2000과 XP, 윈도우 서버 2008과 윈도우 7과 함께 포괄 산업 지식 속에서 봤을 때에만 의미를 가집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 윈도우는 자신의 성공에 휩쓸렸습니다. 다양한 시장에 성공적으로 파고들었고 각 사업이 이제 운영 체제의 디자인에 어떤 영향을 끼치며 서로 다른 방향으로 끌어당겼습니다. 이러한 이질적인 요구 사항을 충족시키려고 한다는 것은 그 중 어느 하나를 완전히 만족시키지 못하는 것을 의미했습니다.
 
@@ -127,7 +247,18 @@ Vista에서 엄격한 관리적 경계를 강제로 적용하면 윈도우 전�
 
 간단히 말하자면, 3-4년 전에 특정 운영 체제 출시를 계획했을 때 우리가 알았다고 생각했던 것들은 그 제품이 마침내 배송되었을 때 웃기게 구식이었고 때로는 완전히 잘못된 것들도 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 좋았던 일은 우리가 점차적이고 마찬가지로 안정적인 방식으로 새로운 클라우드 기반 서비스를 간소화된 기기에 제공할 수 있도록 한 것이었습니다. 대신, 우리는 필요할 때 속도를 내야 할 때마다 우리를 늦춘 각 릴리스 전에 몇 달 동안 테스트가 필요한 기존의 클라이언트 기반의 단일 시스템에 기능을 계속 추가했습니다. 물론, 이전 Windows 릴리스에서 이미 실행 중인 애플리케이션들에 의해 호환성을 위해 필요했던 이전 기능들을 제거할 용기가 없었죠.
 
@@ -137,7 +268,18 @@ Vista에서 엄격한 관리적 경계를 강제로 적용하면 윈도우 전�
 
 전혀 다른 접근 방식을 취한 Apple은 문제 공간을 축소하여 전체 품질과 최종 사용자 경험을 향상시킬 수 있는 방법을 보여 주었습니다. 기존 서버 및 저장 노력을 중단하고 이전 호환되지 않는 PowerPC 아키텍처를 지원 중단하며 새로운 형태 요소에 직면했을 때 macOS와 구분된 iOS라는 새로운 운영 체제를 탄생시켰습니다. 비교적으로 Windows는 모든 사람에게 모든 것이 되려고 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 조직은 결국 자신의 제품으로 조직도를 출시합니다(콘웨이의 법칙); Windows 조직도 예외는 아니었습니다.
 
@@ -147,11 +289,33 @@ Vista에서 엄격한 관리적 경계를 강제로 적용하면 윈도우 전�
 
 우리는 이를 위해 기획 회의와 매일의 전쟁 회의에서 싸우기도 충분히 믿었습니다. 다른 모든 조직과 마찬가지로, 승진을 원하고 영향력을 더하거나, 대리팀 크기를 증가시키고 싶어 하는 매니저도 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 흑자인가요, 어떤가요? 지난 해 산업 수준의 문제가 종종 발생하곤 했습니다. 발생이 불가피할 때입니다. 그러나 이는 죄송하다는 말이 아닌 이해해 주셨으면 하는 바람입니다.그나저나, 실수를 했을까요? 네, 많았습니다.의도적으로 잘못된 결정을 내렸을까요? 아니요, 그렇게 기억나지 않아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상당히 복잡한 제품이었나요? 놀랍도록 거대한 생태계를 가지고 있나요 (당시 세계 최고의 생태계)? 네, 그랬습니다.
 
@@ -161,7 +325,18 @@ Vista에서 엄격한 관리적 경계를 강제로 적용하면 윈도우 전�
 
 그 실수로 배우고 다음 번엔 더 잘할 수 있었나요? 네. 윈도우 사용자라면 누구나 동의할 것 같아요. 비스타의 후속인 윈도우 7은 상품으로서 훨씬 성공적이었습니다. 사실, 대부분의 분석가와 사용자가 윈도우 XP와 함께 역사상 가장 우수한 릴리즈 중 하나로 여기고 있습니다. 사용자들이 "마이크로소프트가 '차가운 주검 손에서 떼어낼' 필요가 있다"라고 말한 것을 들었어요. 윈도우 7의 핵심 개발팀 책임자로서 그 노력에 참여한 것을 자랑스럽게 생각해요. 윈도우 팀은 비스타의 많은 실수로부터 배워서 훨씬 더 나은 제품을 제공했습니다. 비스타만큼 구조적으로 야심찼나요? 아니요. 그럼에도 세 배나 걸렸나요? 네.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 윈도우 8에 일어난 일은 전혀 다른 이야기입니다. 그 당시에는 회사를 떠난 상태였기 때문에 그에 대해 논평할 자격이 없습니다.
 

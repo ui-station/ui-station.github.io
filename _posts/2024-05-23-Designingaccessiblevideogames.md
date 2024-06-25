@@ -3,13 +3,12 @@ title: "접근성 있는 비디오 게임 디자인하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-Designingaccessiblevideogames_0.png"
 date: 2024-05-23 13:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Designingaccessiblevideogames_0.png
 tag: Tech
 originalTitle: "Designing accessible video games"
 link: "https://medium.com/user-experience-design-1/designing-accessible-video-games-f4c9824a9182"
 ---
-
 
 비디오 게임은 오직 즐거움의 형태에 머무르는 것이 아닙니다; 그것들은 이야기 전달, 소셜 상호 작용, 그리고 몰입형 경험을 위한 강력한 매체입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/user-experience-design-1/designing-accessible-video-ga
 
 많은 게임이 일부 접근성 설정과 기능을 구현하고 있지만, 몇몇 회사만이 시간, 예산, 그리고 능력이 The Last of Us Part II만큼 멋지게 접근 가능하도록하는 게임을 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위와 같이, 접근성에 대한 대화를 중요시하고 시작부터 구현하는 것이 중요합니다. 복잡한 설정 메뉴가 모든 게임에 가능하지는 않을 수 있음을 이해합니다, 특히 소규모 스튜디오의 경우에는 더 그렇습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/user-experience-design-1/designing-accessible-video-ga
 
 자막을 예로 들어 보겠습니다. 명백히 자막은 청각 장애가 있는 플레이어들에게 매우 유용한 도구이지만, 청각 장애가 없는 플레이어들도 자주 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노트: 이 기사는 접근성 있는 게임을 디자인하는 방법 중 일부만 다룹니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/user-experience-design-1/designing-accessible-video-ga
 
 # 어시스트 모드 vs 의도한 경험
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 플레이어는 게임 자체의 도움을 필요로하여 제시된 도전들을 극복할 수 있습니다. 특정 게임들은 조준장치를 추가하여 플레이어가 조준, 조향, 내비게이션, 퍼즐 해결 또는 장애물 극복 등 다양한 방식으로 도움을 받을 수 있도록 합니다. 이렇게 함으로써, 플레이어는 게임의 난이도를 맞춤 설정하고 자신의 속도에 맞춰 게임 콘텐츠를 즐길 수 있습니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/user-experience-design-1/designing-accessible-video-ga
 
 만약 다크 소울즈(Dark Souls)이 쉬웠다면, 다크 솔울즈가 아니었을 것입니다. 이는 사실일 수 있지만, 접근성 옵션은 게임을 쉽게 만드는 것이 아니라 광범위한 대중에 渙근하게 하는 것을 목적으로 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임이 제공하는 체험을 제한하거나 묽게 만드는 것이 아닙니다. 만약 당신의 게임이 숲을 통해 야생 동물을 쫓는 긴장감을 제공하길 원한다면, 그것이 플레이어 경험으로 추구해야 할 것입니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/user-experience-design-1/designing-accessible-video-ga
 
 인기 있는 인디 플랫포머인 'Celeste'는 플레이어가 게임을 자신의 요구에 맞게 조정할 수 있도록 허용하면서도, 이것이 게임을 플레이하는 방식이 아니라는 경고를 제공하는 뛰어난 작업을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임 제작자 도구킷이 말하듯이, 접근성과 게임이 의도대로 플레이되는 것 사이의 균형을 맞추는 것은 하나의 중요한 요소, 소통에 달려 있어요.
 
@@ -69,7 +123,18 @@ link: "https://medium.com/user-experience-design-1/designing-accessible-video-ga
 
 # 멀티플레이어 게임에서의 접근성 균형 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금, 지금. 방 안의 코끼리에 대해 얘기해 보죠: 멀티플레이어 게임. 멀티플레이 경험을 공정하게 유지하면서 접근성 높은 것으로 만드는 방법은 뭘까요?
 
@@ -79,7 +144,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 ![Designingaccessiblevideogames_0](/assets/img/2024-05-23-Designingaccessiblevideogames_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 플레이어들이 특정 설정으로 다른 사람들에게 이점을 준다고 느낀다면, 그들은 해당 설정을 사용하지 않는 플레이어들과 함께 대기열에 들 수 있습니다.
 
@@ -89,7 +165,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 몇몇 사람들은 어려운 도전에 맞서고 같은 레벨을 통과하기 위해 끊임없이 시간을 보내는 것을 좋아합니다 (FromSoftware 팬들에게 주목!).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 사람들은 그렇지 않을 수도 있습니다. 원하는 때에 게임을 저장하고 싶다는 것은 단순히 개인적인 취향일 수도 있고, 신체적, 정신적 스트레스를 덜기 위한 문제일 수도 있습니다.
 
@@ -99,7 +186,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 사용자가 방금 큰 무서운 괴물을 피하기 위해 "X"를 연타해야 했던 작업을 끝냈다고 상상해봅시다. 안도의 한숨을 내쉬며 그 다음 장면으로 나아갑니다. 은어, 저거는 못 봤네요; 건너 돌다가 절벽으로 떨어지고 큰 “게임 오버”가 화면에 나타납니다. 다시 시도하고, 이미 따가운 버튼 누르기 손이 아팠던 사용자는 그 섹션을 다시 해야 한다는 걸 깨달을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 플레이어들은 그 섹션을 다시 시작하면서 한숨을 쉴 수도 있지만, 다른 사람들은 그 섹션을 다시 완료할 물리적 또는 정신적 능력이 되지 않을 수도 있어요.
 
@@ -109,7 +207,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 게임의 특정 섹션에서 플레이어가 계속해서 듣거나 보고 싶어하지 않는 매우 감정적으로 자극하는 대화나 이미지가 있는 가능성도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 섹션이 너무 자극적이어서 진행이 어려울 수 있습니다.
 
@@ -119,7 +228,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 왜냐하면 몇 가지 이유가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자동 저장은, 그냥 자동으로 됩니다. 사용자들은 자신이 죽거나 집의 전원이 어떤 이유로든 꺼진다고 해도 많은 진행 상황을 잃을 걱정을 할 필요가 없습니다.
 
@@ -129,7 +249,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 그는 나를 불러 자신이 특정 부분을 진행하면서 적에게 죽고, 다시 부활해서 방금 전에 있었던 곳에서 10 피트 떨어진 곳에서 되살아났다는 것을 보라고 말했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "그는 말했다, '게임 전체가 이런 식이야. 내가 죽어도 걱정 안 해. 원래 있던 곳으로 돌아가는 데 10초가 걸리니까. 긴장감이 없어.'
 
@@ -139,7 +270,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 더 큰 장애물을 가진 플레이어들에게는 이 제한이 게임을 할 수 있게 여부를 결정할 수도 있다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 누군가가 다시 하기 싫은 섹션을 완료한다면, 저장할 수 있어요. 도전을 좋아하는 플레이어들은 계속해서 진행할 수 있어요.
 
@@ -149,7 +291,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 엄청나게 많은 게임들이 플레이어들이 난이도를 선택할 수 있는 옵션을 제공하지만, 그중에서 제대로 하는 게임은 매우 드데요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어려움은 적의 체력, 플레이어 체력, 적의 수, 전리품 드랍 빈도, 플레이어 및 적의 공격력 등을 조절합니다.
 
@@ -159,7 +312,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 난이도 설정을 조절할 수 없다면, 상황은 어려움의 암흑일 수 있어요. 예를 들어, 쉬운 난이도에서 게임을 플레이하면 전투가 재미없어 보일 수 있지만, 어려운 난이도에서 플레이하면 플랫폼이 불편할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 장애를 가진 플레이어를 고려할 때 이 문제는 더욱 복잡해질 수 있습니다.
 
@@ -169,7 +333,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 일반적으로 어려움 설정을 선택하는 것은 혼란과 스트레스를 초래할 수도 있습니다. 게임의 여러 요소를 몇 가지 옵션으로 일반화하여 선택할 수 있도록 하는 어려움 모드는 게임에서 각 난이도가 실제 게임 플레이에 어떤 의미를 갖는지 명확히 설명해 주지 않는 경향이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 균형 잡힌 경험. 멋지네요… 하지만… 균형이 정확히 무슨 뜻이죠?
 
@@ -179,7 +354,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 그럼, 해결책은 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래요, 각 플레이어마다 독특하고 능력 수준 및 개인 성향에 맞는 맞춤형 경험을 얻을 수 있다는 것 같아요. 그렇다면… 그걸 한정된 난이도 옵션에 어떻게 넣을까요?
 
@@ -189,7 +375,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 어찌되었든, 난이도 모드는 그냥 서로 다른 설정들의 번들일 뿐이에요; 우리는 그것을 바꿀 수 있는 옵션을 플레이어에게 일반적으로 제공하지 않을 뿐이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 플레이어들이 적의 수, 시간 제한, 보상 획득량 등을 조절할 수 있는 기능을 제공한다면, 그들이 직접 원하는 난이도 모드를 만들 수 있어요.
 
@@ -199,7 +396,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 난이도 설정이 정말 잘 된 게임 중 하나인 Pathologic 2 생존 게임이 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 누군가는 가장 강렬하고 복잡한 퍼즐을 원할 수 있고, 또한 가장 쉬운 전투를 선호할 수도 있습니다. 또 다른 누군가는 퍼즐을 완전히 건너뛰고 가장 도전적인 전투 경험을 원할 수도 있죠.
 
@@ -209,7 +417,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 중요한 정보를 플레이어에게 전달할 때 적어도 두 가지 다른 감각을 사용하는 것이 좋은 지침입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 전리품이 나온 경우 시각적인 표시뿐만 아니라 청각적인 표시도 하세요. 플레이어가 피해를 입은 경우 시각적 피드백과 함께 햅틱 피드백을 제공하세요.
 
@@ -219,7 +438,18 @@ APX 프레임워크는 이를 "하우스 룰"이라고 부릅니다.
 
 TheGamer와의 인터뷰 중에 Rattlehead는 게임이 설계되는 동안 때로는 "우연한 접근 가능성"을 만들어낼 수 있다고 언급합니다. 이 우연한 접근 가능성은 게임을 플레이할 수 있게 만들어 줄 수도 있지만, 개발자들이 실제로 시각 장애인 게이머를 듣게 되면 게임이 완전히 새로운 수준으로 진화될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 사람들은 2D 대전 게임과 같은 일부 종류의 게임만 시각 장애인 커뮤니티에 접근 가능하다고 주장합니다. 이는 사실이 될 수 있지만, 접근성을 처음부터 고려하지 않는다면 해당할 수 있습니다.
 
@@ -229,7 +459,18 @@ TheGamer와의 인터뷰 중에 Rattlehead는 게임이 설계되는 동안 때�
 
 Ross Minor의 게임 플레이를 시청해보면, 2022 게임 어워즈에서 접근성 혁신상을 수상하더라도 해당 게임이 완벽에 가깝지 않음을 알게 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비디오 게임은 접근성 측면에서 많은 발전을 이뤄왔지만, 아직 가야 할 길이 많습니다.
 
@@ -239,7 +480,18 @@ God of War: Ragnarök과 같이 철저한 접근성 시스템을 갖춘 게임�
 
 시작하려면, 생존 게임인 Raft에서 나쁜 예시를 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (참고: 저는 Raft를 사랑하는 팬으로, 그것과 함께 많은 즐거움을 느꼈지만, 접근성 부분에는 많은 부족함이 있습니다.)
 
@@ -249,7 +501,18 @@ Raft의 주요 기능 중 하나는 상황에 따라 플레이어에게 다가�
 
 플레이어가 청각 장애가 있거나 청력이 떨어지거나 시끄러운 환경에서 플레이하거나 소리 없이 게임을 플레이할 때는 직접 상어를 바라봐야만 상어가 있는지 알 수 있는 방법이 없습니다. 이 문제는 플레이어가 특히 큰 기지를 건설하고 뗏목의 모든 구석을 보는 방법이 없을 때 더 큰 문제가 됩니다. 이 문제는 소리가 어디에서 시계가 오는지 표시하는 시각적 지시기를 사용하여 해결할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포트나이트는 시각적 오디오를 활용한 게임의 좋은 예시입니다. 플레이어 주위에 나타나는 링은 다양한 소리가 어디에서 나오는지를 표시합니다. 발소리, 총 소리, 전리품 등이 링에 표시되어 플레이어가 특정 방향에서 무슨 일이 일어나고 있는지 알 수 있습니다.
 
@@ -257,7 +520,18 @@ Raft의 주요 기능 중 하나는 상황에 따라 플레이어에게 다가�
 
 각각의 감각을 통해 정보를 전달하는 것 뿐만 아니라 정보가 명확히 표시되도록 하는 것도 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시각 장애를 가진 게이머들을 위해 경험을 맞춤 설정하는 것은 배경 세부사항을 없애는 것을 포함할 수도 있습니다. 이 조정은 그들이 전경의 중요한 물체들을 쉽게 구별하고 집중할 수 있도록 돕습니다. 이에 대한 훌륭한 예시는 The Last of Us: Part II에서 볼 수 있습니다.
 
@@ -267,7 +541,18 @@ Raft의 주요 기능 중 하나는 상황에 따라 플레이어에게 다가�
 
 신경 다양성을 가진 일부 플레이어들에게는 특정 요소를 제거하여 시각적 장면을 조정하는 것이 필수적일 수 있습니다. 이 수정은 그들이 받는 시각적 자극을 줄이고, 그들의 독특한 요구에 맞는 편안한 환경을 만들어냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게이머들은 오디오 설정을 조절하여 볼륨 레벨을 조절하거나 다른 오디오 채널을 관리하기를 원할 수 있습니다. 예를 들어, 플레이어는 음악을 줄이고 특정 효과음을 올려서 게임 진행을 완전히 이해할 수 있을 수도 있습니다. 이 유연성은 게임의 소리 신호를 통해 중요한 정보를 신뢰할 수 있게 흡수할 수 있도록 보장합니다.
 
@@ -277,7 +562,18 @@ Raft의 주요 기능 중 하나는 상황에 따라 플레이어에게 다가�
 
 어떤 플레이어들은 게임의 일부를 다른 사람에게 맡길 필요가 있을 수도 있습니다. 예를 들어, 플레이어는 버튼을 누를 수 있지만 조이스틱을 사용할 수 없을 수도 있습니다. 다른 사람이 다른 컨트롤러를 이용하여 함께 들어와 조이스틱을 통해 모든 움직임을 제어할 수 있다면, 다른 플레이어는 버튼을 전부 누를 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어 Xbox는 Xbox Copilot을 통해 이 문제를 깔끔하게 해결했습니다. Copilot을 켜면 두 명의 플레이어가 각각 다른 컨트롤러를 사용하여 게임을 조종할 수 있습니다. 이는 "플레이어들이 게임을 플레이하는 데 필요한 조작을 서로 나눠서 맡도록 할 수 있게 해주는데, 이는 한 명의 플레이어가 게임을 플레이하는 데 필요한 모든 행동을 처리할 수 없는 상황이거나 플레이어들이 공동 경험을 원할 때 유용합니다."
 
@@ -287,7 +583,18 @@ Raft의 주요 기능 중 하나는 상황에 따라 플레이어에게 다가�
 
 이것은 플레이어 사이에 공동 경험을 만들어내는 협동 요소를 추가하는 재미있는 방법입니다. 게임이 협동 모드가 아니라면, 일반적으로 한 명이 플레이하는 경험이었던 것을 커플, 친구, 가족끼리 협력하여 공유할 수 있는 방법이 될 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 매크로
 
@@ -297,7 +604,18 @@ Raft의 주요 기능 중 하나는 상황에 따라 플레이어에게 다가�
 
 매크로가 흔한 게임인 월드 오브 워크래프트(WoW)를 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 WoW은 전투 중 사용할 능력과 액션을 다량 제공하는 것으로 유명합니다. 게임 속에서 여러 막대에 시전할 주문들이 넘치게 되면서 플레이어들 중 일부는 여러 가지 주문들로 가득 찬 액션 바를 가지게 되었습니다.
 
@@ -307,7 +625,18 @@ WoW은 전투 중 사용할 능력과 액션을 다량 제공하는 것으로 �
 
 매크로를 사용하면 단일 키가 한 번의 버튼 누름으로 여러 주문을 실행할 수 있도록 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 버튼을 10번 누르는 작업이 1번으로 줄어들 수 있어요.
 
@@ -317,7 +646,18 @@ WoW은 전투 중 사용할 능력과 액션을 다량 제공하는 것으로 �
 
 게다가, 매크로 기능은 kognitive 어려움이나 처리 속도에 영향을 주는 상황에 있는 플레이어들의 반응 시간을 크게 향상시킬 수 있어요. 특정 작업들을 자동화함으로써 플레이어는 더 효율적으로 명령을 실행할 수 있어 게임의 속도에 맞춰 가는 데 도움을 줄 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 향상된 반응 시간은 접근성을 높이는 데 훌륭하지만, 멀티플레이 경험에서 부당한 이점에 대한 명백한 우려를 제기합니다. 모든 게임에서 플레이어가 매크로를 사용하는 것이 현실적으로 가능하지는 않을 수 있지만, 고려해 볼 것을 권장합니다.
 
@@ -327,7 +667,18 @@ WoW은 전투 중 사용할 능력과 액션을 다량 제공하는 것으로 �
 
 일반적인 컨트롤러를 대체 입력 장치로 교체하거나 키 할당을 재설정하는 것이 게임을 접근성 있게 만드는 중요한 부분입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 활동 제약이 있는 플레이어들에게는 적응형 컨트롤러, 스위치, 또는 동작 센서와 같은 대체 입력 장치를 연결할 수 있는 능력이 플레이 여부를 결정할 수도 있어요.
 
@@ -337,7 +688,18 @@ WoW은 전투 중 사용할 능력과 액션을 다량 제공하는 것으로 �
 
 모든 종류의 대체 컨트롤러와 설정을 사용하는 플레이어들로 테스트하는 것이 중요해요. 모든 것이 올바르게 작동하는지 확인하기 위해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 플레이어들이 자신의 기기를 사용할 수 있는 것 외에도, 제어를 적절하게 다시 매핑할 수 있어야 합니다.
 
@@ -347,7 +709,18 @@ WoW은 전투 중 사용할 능력과 액션을 다량 제공하는 것으로 �
 
 이제 모든 이 키 다시 매핑과 사용자 정의 설정을 고려해주시고, 플레이어의 설정이 세션 간에 유지되도록 해주세요. 누군가가 게임에 들어가서 자신의 플레이 스타일과 고유한 요구를 맞추기 위해 설정을 완벽하게 조정하는 데 한 두 시간을 소비한다면, 돌아왔을 때 모든 게 완벽하게 유지되어야 합니다. 아무도 그 모든 작업을 다시 해야할 필요가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 아직 나가지 마세요
 
@@ -357,22 +730,33 @@ WoW은 전투 중 사용할 능력과 액션을 다량 제공하는 것으로 �
 
 아래 링크된 멋진 자료들을 확인해보는 것을 강력히 권유합니다. 게다가 AbleGamer의 APX (Accessible Player Experiences) 인증 실무자가 되기 위한 2일 과정도 적극 추천해요. (저는 어떠한 방식으로도 후원받고 있지 않아요. 진심으로 이 과정을 좋아했습니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 더 읽을거리
 
 - 접근성은 쉽지 않아요: 게임을 모두에게 알맞게 만드는 것에 대해 '쉬운 모드' 논의에서 빠뜨리는 것 →
-"난이도가 높은 게임을 더 접근성 있게 만드는 것은 난이도 수준을 넘어서 하는 일입니다." 
+  "난이도가 높은 게임을 더 접근성 있게 만드는 것은 난이도 수준을 넘어서 하는 일입니다."
 - 접근 가능한 플레이어 경험 (APX) 패턴 →
-독특하고 플레이어가 자신의 Bedz어에 맞게 조절할 수 있는 플레이 경험이 확보되도록 하는 도전과 접근 패턴 목록. 정말 확인해보세요.
+  독특하고 플레이어가 자신의 Bedz어에 맞게 조절할 수 있는 플레이 경험이 확보되도록 하는 도전과 접근 패턴 목록. 정말 확인해보세요.
 - 접근 가능한 비디오 게임 디자인 →
-이 기사를 좋아하신다면, 다른 기사도 마음에 드실 거에요.
+  이 기사를 좋아하신다면, 다른 기사도 마음에 드실 거에요.
 - BBC 자막 가이드 라인 →
-여러분 모두에게 자막을 읽을 수 있고 접근할 수 있게 만드는 방법을 배워보세요.
+  여러분 모두에게 자막을 읽을 수 있고 접근할 수 있게 만드는 방법을 배워보세요.
 - 게임 접근성 지침 →
-게임을 접근성 있게 디자인하는 데 가장 필요한 도구/자료 중 하나에요.
+  게임을 접근성 있게 디자인하는 데 가장 필요한 도구/자료 중 하나에요.
 - 게임 제작자의 도구킷(TK) - 비디오 게임 접근성 재생 목록 →
-게임 개발자라면 꼭 봐야 할 GA 재생 목록으로, 접근성이 있는 비디오 게임을 디자인하는 방법이 가득 담겨 있어요. 이 동영상은 꼭 시청해야 할 필수영상입니다.
+  게임 개발자라면 꼭 봐야 할 GA 재생 목록으로, 접근성이 있는 비디오 게임을 디자인하는 방법이 가득 담겨 있어요. 이 동영상은 꼭 시청해야 할 필수영상입니다.
 
 여러분들의 생각이나 경험이 있으면, 알려주세요! 이 게시물에 응답하거나 LinkedIn에서 알려주세요. UX나 비디오 게임 관련해서 어떤 주제라도 얘기 나누는 것을 즐깁니다.
 

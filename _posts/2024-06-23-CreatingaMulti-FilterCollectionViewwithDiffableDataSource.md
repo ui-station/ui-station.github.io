@@ -3,13 +3,12 @@ title: "Diffable Data Source를 사용한 다중 필터 컬렉션 뷰 생성 방
 description: ""
 coverImage: "/assets/img/2024-06-23-CreatingaMulti-FilterCollectionViewwithDiffableDataSource_0.png"
 date: 2024-06-23 01:30
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-CreatingaMulti-FilterCollectionViewwithDiffableDataSource_0.png
 tag: Tech
 originalTitle: "Creating a Multi-Filter Collection View with Diffable Data Source"
 link: "https://medium.com/justeattakeaway-tech/creating-a-multi-filter-collection-view-with-diffable-data-source-792b168907c4"
 ---
-
 
 ## iOS 프로덕션 코드에서 복잡한 UI 변경 사항을 확인하는 개념 증명
 
@@ -19,7 +18,18 @@ link: "https://medium.com/justeattakeaway-tech/creating-a-multi-filter-collectio
 
 요구 사항:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 사용자는 첫 번째 캐로셀에서 하나의 카테고리만 선택할 수 있습니다. 항상 기본 카테고리가 선택됩니다.
 - 카테고리를 선택하면 두 번째 캐로셀에 모든 가능한 옵션이 표시되며 사용자는 여러 옵션을 선택할 수 있습니다.
@@ -31,7 +41,18 @@ link: "https://medium.com/justeattakeaway-tech/creating-a-multi-filter-collectio
 
 # 증명 프로젝트의 중요성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개념 증명 (Proof of Concept, PoC)은 개발 과정에서 중요한 단계입니다. 이를 통해 개발자들은 아이디어와 구현의 실행 가능성을 전체 개발에 앞서 더 작은 규모로 테스트할 수 있습니다.
 
@@ -41,7 +62,18 @@ PoC를 만들면 잠재적인 문제를 빠르게 식별하고 가정을 검증�
 
 이 자습서에서 PoC는 최신 컬렉션 뷰 기술을 사용하여 복잡한 UI 요구사항을 관리하는 방법을 보여주며, 추가 개발을 위한 견고한 기반을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현실 세계 시나리오에서는 식당 API를 사용하여 데이터를 가져와 컬렉션 뷰에 표시하지만, 이 튜토리얼에서는 개 API를 사용하여 개념을 설명하고 즐거운 시간을 가질 겁니다!
 
@@ -51,7 +83,18 @@ PoC를 만들면 잠재적인 문제를 빠르게 식별하고 가정을 검증�
 
 # 단계 1: 데이터 모델 정의하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 모델을 정의하여 컬렉션 뷰에서 섹션과 항목을 나타낼 수 있도록 해보세요. 이 모델들은 Hashable 프로토콜을 준수해야 합니다. 이 예시에서는 세 가지 데이터 모델을 정의합니다: Category, Breed, Image. Content 구조체는 컬렉션 뷰에 표시될 섹션 유형과 항목을 정의합니다.
 
@@ -78,17 +121,17 @@ struct Content {
         case breed
         case images
     }
-    
+
     struct Section: Hashable {
         var id: String
         var type: SectionType
     }
-    
+
     enum Item: Hashable {
         case category(Category)
         case breed(Breed)
         case image(Image)
-        
+
         func hash(into hasher: inout Hasher) {
             switch self {
             case .category(let item):
@@ -107,38 +150,49 @@ struct Content {
 
 # Step 2: 뷰 컨트롤러 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 뷰 컨트롤러 MultiFilterViewController을 생성하고 해당 속성을 정의하세요.
 
 ```js
 class MultiFilterViewController: UIViewController {
-    
+
     static let sectionHeaderElementKind = "section-header-element-kind"
-    
+
     var collectionView: UICollectionView!
     var collectionViewLayout: UICollectionViewCompositionalLayout!
-    
+
     // 데이터를 가져오는 서비스
     let service: APIServing = Service()
-    
+
     // 데이터를 관리하는 ViewModel
     let viewModel = SectionViewModel()
 
     var dataSource: UICollectionViewDiffableDataSource<Content.Section, Content.Item>?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         updateInBackground()
     }
-    
+
     init() {
         super.init(nibName: nil, bundle: nil)
         self.setupView()
         self.setupConstraints()
         self.dataSource = self.makeDataSource()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("구현되지 않았습니다")
     }
@@ -149,7 +203,18 @@ class MultiFilterViewController: UIViewController {
 
 # 단계 3: 뷰 및 제약 조건 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컬렉션 뷰를 초기화하고 구성하여 레이아웃을 설정하고 필요한 셀 및 보조 뷰를 등록합니다.
 
@@ -165,7 +230,7 @@ extension MultiFilterViewController {
         title = "Dog Breeds"
         view.addSubview(collectionView)
     }
-    
+
     func setupConstraints() {
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -181,13 +246,24 @@ extension MultiFilterViewController {
 
 # 단계 4: 셀 및 보조 뷰 등록하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여러 항목 유형에 대한 셀 등록 및 섹션 헤더에 대한 보충 뷰 등록을 정의합니다.
 
 ```js
 extension MultiFilterViewController {
-    
+
     private func createLevelOneCellRegistration() -> UICollectionView.CellRegistration<LevelOneCollectionViewCell, Category> {
         UICollectionView.CellRegistration<LevelOneCollectionViewCell, Category> { [weak self] (cell, indexPath, item) in
             cell.item = item
@@ -197,7 +273,7 @@ extension MultiFilterViewController {
             }
         }
     }
-    
+
     private func createLevelTwoCellRegistration() -> UICollectionView.CellRegistration<LevelTwoCollectionViewCell, Breed> {
         UICollectionView.CellRegistration<LevelTwoCollectionViewCell, Breed> { [weak self] (cell, indexPath, item) in
             cell.item = item.breed
@@ -215,7 +291,7 @@ extension MultiFilterViewController {
             }
         }
     }
-    
+
     private func createCardCellRegistration() -> UICollectionView.CellRegistration<CardCollectionViewCell, Image> {
         UICollectionView.CellRegistration<CardCollectionViewCell, Image> { (cell, indexPath, item) in
             Task { @MainActor in
@@ -223,7 +299,7 @@ extension MultiFilterViewController {
             }
         }
     }
-    
+
     private func headerRegistration() -> UICollectionView.SupplementaryRegistration<SectionTitleView> {
         UICollectionView.SupplementaryRegistration
         <SectionTitleView>(elementKind: MultiFilterViewController.sectionHeaderElementKind) { [weak self] (supplementaryView, string, indexPath) in
@@ -239,19 +315,52 @@ extension MultiFilterViewController {
 
 # 단계 5: 데이터 소스 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 단계에서는 `UICollectionViewDiffableDataSource`를 사용하여 diffable 데이터 소스를 생성합니다. 서로 다른 항목 유형에 대한 셀 프로바이더와 섹션 헤더를 위한 보충 뷰 프로바이더를 제공합니다. 셀 프로바이더는 항목 유형에 따라 적절한 셀을 대기열에서 꺼내옵니다. 그리고 보충 뷰 프로바이더는 섹션 헤더 뷰를 대기열에서 꺼내옵니다.
 
 # 단계 6: Compositional Layout 구축
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번 단계에서는 컬렉션 뷰의 구성 레이아웃을 정의합니다. 섹션 제공자는 각 섹션의 레이아웃을 섹션 타입에 따라 반환합니다. 참고: dataSource를 사용하여 섹션 식별자를 검색하고 섹션 타입에 따라 레이아웃을 작성합니다.
 
 # 단계 7: 데이터 가져오기 및 업데이트하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 뷰 모델에서 데이터를 가져와 diffable 데이터 소스의 snapshot을 업데이트하는 update() 메서드를 정의합니다.
 
@@ -274,7 +383,7 @@ extension MultiFilterViewController {
             print("Apply snapshot completed!")
         })
     }
-    
+
     func updateInBackground() {
         Task {
             do {
@@ -291,7 +400,18 @@ extension MultiFilterViewController {
 
 # 단계 8: 델리게이트 메서드를 사용한 선택 처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UICollectionViewDelegate 메서드를 구현하여 항목 선택 및 선택 해제를 처리합니다.
 
@@ -308,7 +428,7 @@ extension MultiFilterViewController: UICollectionViewDelegate {
             return true
         }
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let item = dataSource?.itemIdentifier(for: indexPath) else { return }
         switch item {
@@ -323,7 +443,7 @@ extension MultiFilterViewController: UICollectionViewDelegate {
             print(image)
         }
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         guard let item = dataSource?.itemIdentifier(for: indexPath) else { return }
         switch item {
@@ -343,7 +463,18 @@ extension MultiFilterViewController: UICollectionViewDelegate {
 
 컬렉션 뷰에서 여러 항목을 선택할 수 있도록 여러 선택이 가능하도록 설정했습니다. 이는 섹션 내에서 여러 항목을 선택할 수 있도록 하기 위해 각 항목 유형에 대한 선택 및 선택 해제 로직을 처리해야 한다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 경고: UICollectionView를 구성 레이아웃을 사용하도록 마이그레이션할 때 UICollectionViewDelegate가 업데이트되지 않은 모델을 참조하는 경우가 있습니다. UICollectionView의 진실의 원천은 diffable 데이터 소스이며 섹션 및 항목을 참조하는 데 사용해야 합니다. 이를 하지 않으면 앱 충돌이 발생할 수 있습니다.
 
@@ -353,7 +484,18 @@ extension MultiFilterViewController: UICollectionViewDelegate {
 
 섹션 내에서 선택 및 선택 해제를 처리하는 도우미 메서드를 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 extension UICollectionView {
@@ -364,12 +506,12 @@ extension UICollectionView {
             deselectItem(at: index, animated: animated)
         }
     }
-    
+
     func selectOneIndexInSection(at indexPath: IndexPath, animated: Bool) {
         deselectAllInSectionExcept(at: indexPath, animated: animated)
         selectItem(at: indexPath, animated: animated, scrollPosition: [])
     }
-    
+
     private func deselectAllInSectionExcept(at indexPath: IndexPath, animated: Bool) {
         guard let selectedIndexesInSection = indexPathsForSelectedItems?
             .filter({  $0.section == indexPath.section && $0.row != indexPath.row }) else { return }
@@ -386,7 +528,18 @@ extension UICollectionView {
 
 # 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Collection View 레이아웃의 진보
 - UI 데이터 소스의 진보

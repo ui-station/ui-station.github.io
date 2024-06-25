@@ -3,21 +3,29 @@ title: "카프카 클러스터를 쿠버네티스로 이관하는 방법 매끄�
 description: ""
 coverImage: "/assets/img/2024-06-23-SeamlessTransitionMigratingKafkaClustertoKubernetes_0.png"
 date: 2024-06-23 01:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SeamlessTransitionMigratingKafkaClustertoKubernetes_0.png
 tag: Tech
 originalTitle: "Seamless Transition: Migrating Kafka Cluster to Kubernetes"
 link: "https://medium.com/zendesk-engineering/seamless-transition-migrating-kafka-cluster-to-kubernetes-c8dc66594d1b"
 ---
 
-
-
 # 배경
 
 저희는 Zendesk에서 자체 Kafka 인프라를 관리합니다. 처음에는 시장에 세련된 관리형 Kafka 서비스가 없었습니다. 그래서 우리는 Chef를 통해 Kafka 인프라를 구축하고 AWS EC2 인스턴스에 배포했습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 카프카 클러스터는 두 부분으로 구성됩니다: 카프카 브로커 집합과 주키퍼 노드입니다. 브로커는 카프카 클러스터의 서버로 데이터를 저장하고 관리하며 메시지의 발행과 구독을 처리합니다. 주키퍼 클러스터는 카프카 브로커를 조정하고 관리하는 쿼럼으로, 리더 선출, 클러스터 구성원 관리 및 메타데이터 유지와 같은 작업을 처리합니다.
 
@@ -27,7 +35,18 @@ link: "https://medium.com/zendesk-engineering/seamless-transition-migrating-kafk
 
 카프카 클러스터의 원활한 마이그레이션은 데이터 무결성과 일관성을 유지하면서 투명하고 다운 타임이 없는 프로세스를 포함하며, 클라이언트의 최소한의 변경과 수동 개입이 필요한 최소한의 변화를 필요로 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 클러스터에서 구성 및 데이터를 복제하고, 클라이언트를 새 클러스터로 전환하며, 운영 연속성과 성능 동등성을 보장하는 것을 포함합니다.
 
@@ -37,7 +56,18 @@ Zendesk에서는 우리의 Kafka 클러스터가 두 번째 범주에 속합니�
 
 Kafka 클러스터 상태 자세히:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 12개의 Kafka 클러스터
 - 모든 환경을 통틀어 약 100개의 브로커
@@ -50,10 +80,21 @@ Kafka 클러스터 상태 자세히:
 
 이러한 대규모이자 중요한 클러스터를 이주하는 것은 신중히 설계된 디자인이 필요합니다. 주의를 요하는 다수의 세부 사항 중에서, 주요 대응해야 할 도전 과제는 다음과 같습니다:
 
-- 복제 단계 중 데이터 무결성과 클러스터 가용성 보장, 
-클라이언트들에게 원활한 전환 기회를 제공하기 위한 전환 단계 스핑크 요소입니다.
+- 복제 단계 중 데이터 무결성과 클러스터 가용성 보장,
+  클라이언트들에게 원활한 전환 기회를 제공하기 위한 전환 단계 스핑크 요소입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터가 완전히 복제된 후 새 클러스터로 고객이 대규모로 전환될 수 있는 구체적인 전환 시점이 없다는 것을 이해하는 것이 중요합니다. 원활한 이주 요구 사항으로 인해 전환 단계는 지속적인 데이터 복제와 클라이언트 전환을 동시에 수용해야 합니다.
 
@@ -63,7 +104,18 @@ Kafka 클러스터 상태 자세히:
 
 첫 번째 버전 디자인은 단방향 클러스터 간 이주입니다. 이 방법은 MirrorMaker2를 사용하여 이전 클러스터의 데이터 및 구성을 새 클러스터로 복제합니다. MirrorMaker가 클러스터 간의 초기 데이터 로드를 전송한 후에도 데이터를 동기화 상태로 유지하며, 각 클라이언트가 이전 클러스터와 연결을 끊고 새 클러스터에 연결하는 전환 프로세스를 실행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-SeamlessTransitionMigratingKafkaClustertoKubernetes_2.png)
 
@@ -73,7 +125,18 @@ Kafka 클러스터 상태 자세히:
 
 예를 들어, 단일팀이 한 주제의 프로듀서와 컨슈머를 모두 제어하는 가장 간단한 시나리오에서, 클라이언트는 코드 변경과 다수의 배포를 통해 다음 단계를 거쳐 마이그레이션될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모든 소비자를 새 클러스터로 이동합니다.
 - 이전 클러스터로의 생성을 중지합니다.
@@ -86,7 +149,18 @@ Kafka 클러스터 상태 자세히:
 
 특정 마이그레이션 디자인에는 몇 가지 부수적인 오버헤드가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 단일 장애 지점: MirrorMaker2 연결 클러스터가 단일 장애 지점입니다. 모든 주제의 소비자가 새 클러스터로 성공적으로 마이그레이션되어 있지만 MirrorMaker2의 실패로 인해 이전 클러스터에서 남은 실시간 데이터 동기화에 실패하는 시나리오를 상상해보세요.
 - 장애 감지 및 장애 조치 작업의 간접성: MirrorMaker2의 실패는 각 팀의 통제 범위를 벗어나지만 클라이언트 장애 조치 프로세스는 완전히 그들에게 의존적이며 이전 버전의 코드 변경이나 재배포를 필요로 합니다.
@@ -99,7 +173,18 @@ Kafka 클러스터 상태 자세히:
 
 ## 통합된 Kafka 클러스터 내 브로커 수준의 마이그레이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클러스터 간 이동의 주요 도전 과제는 어느 시점에서든 클라이언트가 다른 클러스터를 가리켜야 한다는 것입니다. 데이터 무결성을 보장하기 위해 커트오버의 타이밍은 각각의 소비자와 생산자에 따라 다릅니다.
 
@@ -109,7 +194,18 @@ Kafka 클러스터 상태 자세히:
 
 하지만, 만약 우리가 방정식에서 클라이언트 전환이 필요 없게 한다면 어떻게 될까요? 새로운 클러스터를 구축하는 대신, K8s에서 새로운 브로커 그룹을 구성하고 기존 클러스터에 등록할 수 있습니다. 이렇게 하면 클라이언트가 클러스터를 변경할 필요가 없어집니다. 유일하게 남은 작업은 구체화된 Kafka 클러스터 내에서 이전 브로커에서 새 브로커로 데이터를 전송하는 것뿐입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그렇습니다! 새로운 중개업체가 기존 클러스터에 참여할 예정이기 때문에 구성 이관이 필요하지 않습니다. 필요한 구성은 이미 클러스터 내에 준비되어 있어 프로세스가 간소화됩니다.
 
@@ -119,7 +215,18 @@ Kafka 클러스터 상태 자세히:
 
 이 프로세스는 카프카 클라이언트 상호작용 메커니즘에 의해 이뤄집니다. 카프카 주제는 일련의 파티션으로 구성되며, 각 파티션에는 여러 개의 레플리카가 있을 수 있습니다. 대부분의 경우, 클라이언트는 리더 레플리카와 상호작용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 브로커에서 다른 브로커로 토픽 데이터를 이동할 때는 기본적으로 한 브로커에서 다른 브로커로 복제본을 전송하는 과정을 포함합니다. 한번 복제본이 완전히 이전되고 리더 복제본으로 선출되면, 클라이언트는 이 변경 사항을 감지하고 새 리더 복제본과 상호 작용하기 시작합니다. 결과적으로, 새로운 브로커와 상호 작용을 시작합니다.
 
@@ -127,7 +234,18 @@ Kafka 클러스터 상태 자세히:
 
 이 접근 방식이 어떻게 작동하는지 구체적으로 설명해 봅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 단계 1: 동일한 수의 브로커를 K8s에 배포하고 ZooKeeper 하에 동일한 Kafka 클러스터에 등록합니다. 이 단계에서 EC2와 K8s의 브로커는 동일한 클러스터의 멤버입니다. 그러나 EC2 브로커는 여전히 모든 데이터를 보유하고 모든 클라이언트 트래픽을 처리합니다. K8s 브로커는 ZooKeeper와의 하트비트를 유지하는 것 외에는 비활성화 상태입니다.
 - 단계 2: 토픽 파티션 레플리카가 EC2의 브로커에서 K8s로 마이그레이션을 시작합니다. 한 레플리카가 완전히 이동되면 K8s 브로커는 리더 레플리카를 보유하고 있는지에 따라 실제 클라이언트 토픽을 제공하기 시작할 수 있습니다.
@@ -140,7 +258,18 @@ Kafka 클러스터 상태 자세히:
 
 # 심층 분석
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 전반적인 개념을 알게 되었으니 구체적인 설정에 대해 다루어 봅시다:
 
@@ -153,7 +282,18 @@ Kafka 클러스터 상태 자세히:
 
 브로커 수준의 이주에 대한 중요한 전제 조건은 두 세트의 브로커와 주키퍼 클러스터가 서로에게 비교적 낮은 지연 시간으로 통신할 수 있어야 한다는 것입니다. 게다가 클라이언트는 두 세트의 브로커를 발견하고 낮은 지연 시간으로 통신할 수 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 네트워크 아키텍처로 첫 번째 문제가 해결되었습니다. EC2 상의 브로커, Zookeeper 클러스터 및 K8s 클러스터는 서로 다른 서브넷에 배치되었지만, 동일한 AWS 계정 내에 있으며 서브넷은 서로 연결되어 있습니다.
 
@@ -163,7 +303,18 @@ Kafka 클러스터 상태 자세히:
 
 Kafka 클라이언트는 대상 토픽 아래에 있는 파티션의 수와 해당 파티션 복제본이 어떻게 분산되었는지에 따라 올바르게 작동하기 위해 거의 모든 브로커를 알아야 합니다. 전형적인 접근 방식:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 고객은 부트스트랩 브로커 중 하나를 선택하여 어떤 브로커가 어떤 파티션을 담당하는지의 메타데이터를 가져옵니다.
 - 고객은 이러한 브로커들과 연결을 설정하도록 요청합니다.
@@ -174,7 +325,18 @@ Kafka 클라이언트는 대상 토픽 아래에 있는 파티션의 수와 해�
 
 ![이미지](/assets/img/2024-06-23-SeamlessTransitionMigratingKafkaClustertoKubernetes_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HashiCorp의 Consul 서비스는 서비스 검색에 사용됩니다. 새로운 리버스 프록시 서비스의 IP 주소를 기존의 Kafka Consul 서비스에 등록함으로써, 클라이언트는 두 세트의 브로커를 모두 발견할 수 있습니다. K8s에서 각 브로커의 홍보 리스너와 해당 홍보 리스너의 리버스 프록시는 모두 K8s 서비스가 될 수 있습니다.
 
@@ -184,7 +346,18 @@ HashiCorp의 Consul 서비스는 서비스 검색에 사용됩니다. 새로운 
 
 복제본 이동의 실행은 Cruise Control에 의해 가능합니다. 이는 대규모로 Kafka 클러스터를 관리하기 위한 풍부한 API를 제공합니다. 복제본을 이동하기 위해 사용할 수 있는 엔드포인트 중 하나는 remove_broker 입니다. 이 엔드포인트는 모든 해당 브로커의 복제본을 대상 브로커로 이동시켜 브로커를 비활성화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 curl -X POST "$CRUISE_CONTROL_SERVICE/remove_broker?brokerid=11&concurrent_partition_movements_per_broker=25&destination_broker_ids=31&replication_throttle=100000000"
@@ -196,7 +369,18 @@ curl -X POST "$CRUISE_CONTROL_SERVICE/remove_broker?brokerid=11&concurrent_parti
 
 크루즈 컨트롤 엔드포인트를 수동으로 호출하는 것은 이상적이지 않습니다. 안전하거나 효율적이지 않기 때문이죠. 그래서 우리는 이 상황을 위해 Kafka-Migration이라는 오케스트레이션 시스템을 구축했습니다. 이 시스템은 다음과 같은 역할을 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 마이그레이션 조건 확인: 예를 들어, 복제 이동 호출을 실행하기 전에 클러스터가 건강한 상태인지, 대상 및 목적지 브로커가 동일한 가용 영역(AZ)에 있는지 확인합니다.
 - 다양한 마이그레이션 모드: 시스템에는 다양한 마이그레이션 모드가 있습니다. '특정 브로커' 모드는 특정 브로커 세트에서 데이터를 다른 브로커로 이동할 수 있습니다. 'AZ' 모드는 기존 브로커에서 목적지 브로커로 데이터를 이동하는 것을 용이하게 합니다. '완전한 마이그레이션' 모드는 새로운 브로커 세트로의 완전한 데이터 이동을 관리하며 올바른 복제 할당을 보장하고 AZ별로 이동을 조정합니다. 이러한 모드와 규칙을 설정하여 복제 진행이 안전하고 관리 가능한 범위 내에 있음을 보장합니다. 결과적으로 영향을 최소화하고 이동 중 발생하는 사건에 신속히 대응할 수 있습니다.
@@ -208,7 +392,18 @@ curl -X POST "$CRUISE_CONTROL_SERVICE/remove_broker?brokerid=11&concurrent_parti
 
 메트릭을 수집하고 상단에 모니터를 구축하는 것은 문제 감지와 클러스터가 마이그레이션 중에 어떻게 수행되는지에 대한 통찰을 얻는 데 중요합니다. Kafka에 대해 수집해야 할 세 가지 다른 메트릭 소스가 있습니다: Kafka 브로커 JMX 메트릭, 브로커 시스템 수준 메트릭 및 AWS EBS 메트릭입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 JMX 및 EBS 메트릭은 대체로 EC2 및 K8s 전반에 걸쳐 크게 일관성이 있어서, 마이그레이션 중에 본질적으로 변경되지 않습니다. EC2와 K8s 브로커의 메트릭에서 유일한 차이점은 태그에 있습니다. 이 태그를 기존 모니터 시스템으로 다시 매핑하는 것은 간단합니다.
 
@@ -218,7 +413,18 @@ JMX 및 EBS 메트릭은 대체로 EC2 및 K8s 전반에 걸쳐 크게 일관성
 
 ## 브로커 중단 관리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이그레이션 중에는 브로커 장애를 주의 깊게 관리해야 합니다. 브로커 장애란 브로커가 정상적으로 작동하지 않거나 사용 불가능해지는 문제나 사건을 의미합니다. 이는 강제적인(예: 하드웨어 고장으로 인한) 또는 자발적인(예: 브로커 롤링 재시작으로 인한) 장애일 수 있습니다.
 
@@ -228,7 +434,18 @@ JMX 및 EBS 메트릭은 대체로 EC2 및 K8s 전반에 걸쳐 크게 일관성
 
 이러한 시나리오가 발생하지 않도록 예방하는 시스템을 만들어야 합니다. 강제적인 장애는 피할 수 없는 것이지만 강제적인 장애 발생 시 자발적인 장애를 최소화할 수 있도록 개선할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 커파 모니터링 서비스를 이용한 Pod 중단 예산
 
@@ -238,8 +455,18 @@ K8s에서 Pod 중단 예산(PDB)은 K8s에 배포된 브로커 Pod를 모니터�
 
 PDB는 Kafka 모니터링 서비스와 K8s에 배포된 브로커 모두를 모니터링하도록 구성되어 있습니다. 이로써 브로커 Pod를 직접 감시하여 K8s의 오프라인 브로커뿐만 아니라 Kafka 모니터링 서비스를 통해 EC2의 오프라인 브로커도 감지할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-06-23-SeamlessTransitionMigratingKafkaClustertoKubernetes_9.png)
 
@@ -249,8 +476,18 @@ PDB는 Kafka 모니터링 서비스와 K8s에 배포된 브로커 모두를 모�
 
 ![Image 2](/assets/img/2024-06-23-SeamlessTransitionMigratingKafkaClustertoKubernetes_10.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론, Zookeeper 클러스터를 Kafka 브로커를 마이그레이션하는 방식과 유사하게 마이그레이션할 수 있습니다. 그러나 더 좋은 아이디어가 있습니다! Kafka 버전 3.6에서 Kraft가 드디어 General Availability에 도달했는데, 이는 Kraft로 구동된 컨트롤러 역할을 하는 브로커를 사용하여 Zookeeper를 대체할 수 있음을 의미합니다. 이미 브로커가 K8s에서 실행 중이기 때문에, 컨트롤러 역할을 하는 새로운 브로커 집합을 쉽게 설정할 수 있습니다.
 
@@ -260,7 +497,18 @@ PDB는 Kafka 모니터링 서비스와 K8s에 배포된 브로커 모두를 모�
 
 통합된 Kafka 클러스터 내에서 브로커 수준의 마이그레이션 전략을 적용하여, 우리는 모든 Kafka 클러스터를 K8s로 성공적으로 마이그레이션했습니다. 마이그레이션 프로세스는 클라이언트 관점에서 완전히 원활하며, 마이그레이션으로 인한 사건은 전혀 발생하지 않았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 K8s에서 Kafka를 관리하는 것은 EC2보다 훨씬 쉽습니다. K8s가 제공하는 강력하고 확장 가능하며 유연한 플랫폼 덕분에 배포부터 모니터링, 확장, 그리고 자가 치유까지 많은 운영 작업이 자동화됩니다. 잘 정의된 K8s 객체와 Custom Resource Definition(CRD)을 통해 우리는 Kafka 주변에 오퍼레이터를 구축하여 운영 작업을 더욱 자동화할 수 있습니다.
 

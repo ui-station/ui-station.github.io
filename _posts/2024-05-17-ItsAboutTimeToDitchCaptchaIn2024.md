@@ -3,13 +3,12 @@ title: " 2024년에는 Captcha를 버리는 게 좋을 것 같아요 "
 description: ""
 coverImage: "/assets/img/2024-05-17-ItsAboutTimeToDitchCaptchaIn2024_0.png"
 date: 2024-05-17 17:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-ItsAboutTimeToDitchCaptchaIn2024_0.png
 tag: Tech
 originalTitle: "🏡 It’s About Time To Ditch Captcha In 2024"
 link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a5d0469b9"
 ---
-
 
 <img src="/assets/img/2024-05-17-ItsAboutTimeToDitchCaptchaIn2024_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 요 며칠 동안 약간 연기한 온라인 작업을 처리해야 했습니다. 그 중 하나는 더 이상 필요하지 않은 뉴스레터 구독 취소였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 날 나의 마지막 일이었고 5분 안에 끝내야 했다. 이메일에서 제공된 링크를 통해 회사 웹사이트로 이동했다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 불행하게도 하나를 놓쳤다. 그래서 내가 치과 방문을 하기 전에 그 마지막 작업을 끝내야 했기 때문에 사진을 빠르게 클릭하기 시작했다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 놀랍게도 더 많은 사진이 제시되었고, 한번 클릭한 후에도 끊임없이 더 나오더라구요. 나는 몇 분 동안 계속 보다가 결국 그날은 그만두기로 했습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 컴퓨터 과학에서 나의 주요 연구 분야는 인간 중심의 계산과 소셜 미디어였어요. 오늘날 두 분야가 구현된 방식은 저를 실망스럽게 만들죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 캡차의 시작은 흥미로웠어요. 위키피디아에 따르면:
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 캡차가 탄생한 후 HBC의 실용적 구현으로 바로 나왔어요. 한편으로, 사람들은 사진에 있는 항목을 분류하여 동일한 작업을 수행하는 AI를 교육하는 데 도움이 되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 반면, 캡차는 일정 수준의 안전성을 제공했습니다. 당시에는 봇이 캡차를 해결할 수 없을 것으로 예상되었기 때문입니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 # 매년 77,600가구가 캡차 때문에 주택을 지을 수 없게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2021년에는 인류가 매일 총 500년을 CAPTCHA 해결에 낭비했습니다. 이를 이해하려면 매년 182,000년, 320억 달러 (해당 시간에 대한 미국 평균 수입 기준)을 낭비한 것입니다.
 
@@ -69,7 +123,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 이 충격적인 숫자는 우리가 CAPTCHA로 인해 얼마나 많은 시간과 돈을 잃는지를 보여줍니다. 이러한 숫자들은 가정과 평균에 따라 작아지거나 커질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 인간으로서 캡차에 상당한 시간을 낭비하는 사실이 있습니다. 한 사람당 몇 초에서 5분 정도밖에 안 걸리지만, 시간이 누적됩니다.
 
@@ -79,7 +144,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 캡차는 고의적으로 온라인 자원을 봇과 나쁜 행위자로부터 보호해야 합니다. 그 목표는 자원 사용을 제한하는 것입니다. 만약 봇이 페이지를 방문하면, 회사가 지불해야 하는 소중한 전송을 사용하게 됩니다. 우리는 봇이 웹사이트를 방문하는 것을 원하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공동으로 스타벅스에서 커피를 사지 않은 돈을 모아온 모든 저축을 산다는 DDOS 공격도 말할 것도 없죠.
 
@@ -89,7 +165,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 어떤 봇은 서비스에 링크가 포함된 댓글을 게시하려고 했지만, 웹사이트가 그것을 CAPTCHA로 해결하라고 요청했습니다. 그래서 봇은 해커가 운영하는 약간 유용한 앱 또는 웹사이트의 방문자에게 동일한 퍼즐을 제시했습니다. 그렇게 해커들은 HBC를 해결하는 솔루션을 빠르게 구현하기로 결정했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소캡차는 아무런 보호를 제공하지 않아요. 방문자가 사람인지 봇인지 구별할 수 없는 경우가 매우 오래 지속됩니다.
 
@@ -99,10 +186,20 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 또한 국적, 인종, 위치 등에 따라 소캡차가 사람들을 차별할 수 있는 여러 방법이 있습니다. 이는 잘 알려지지 않은 사실입니다. 예를 들어 택시를 지목해야 하는 경우, 다른 나라의 사진이 제시된다면 어려움을 겪을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지 태그를 Markdown 형식으로 변경합니다.
-
 
 ![이미지](/assets/img/2024-05-17-ItsAboutTimeToDitchCaptchaIn2024_4.png)
 
@@ -112,8 +209,18 @@ link: "https://medium.com/@tomaszs2/its-about-time-to-ditch-captcha-in-2024-393a
 
 # 기업들이 캡차를 단지 자신들의 이익을 위해 사용합니다
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 것은 돈으로 연결돼 있어요. Captcha는 사람 중심의 계산을 하고 실제 문제(인간과 로봇을 구분하는 것)를 해결하기 위해 고안되었어요.
 
@@ -123,7 +230,18 @@ AI 모델은 어떤 보도가 어떻게 생겼는지 모르죠. 기업은 AI에 
 
 수백만 번의 반복을 통해 AI는 최종적으로 보도와 고양이를 구분할 수 있게 되는 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이를 달성하기 위해 AI 모델을 구축하는 기업들은 이러한 AI 모델을 훈련시키기 위해 사람들로부터 대규모의 분류 데이터베이스를 수집해야 합니다.
 
@@ -135,7 +253,18 @@ AI 모델은 어떤 보도가 어떻게 생겼는지 모르죠. 기업은 AI에 
 
 그래서 2024년에는 captcha를 전혀 사용해야 할지에 대한 의문이 많이 제기됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오직 1%의 사람들만 이렇게 긴 글을 끝까지 읽습니다. 축하해요! 여러분과 기술에 대해 이야기를 나눌 수 있어서 기쁩니다. 여러분은 제가 가장 좋아하는 사람들이에요. 구독해 주시면 연락할 수 있기를 바래요!
 

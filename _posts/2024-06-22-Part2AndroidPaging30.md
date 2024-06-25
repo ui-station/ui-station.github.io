@@ -3,13 +3,12 @@ title: "2024 최신 Android Paging 30 Part 2 적용 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-Part2AndroidPaging30_0.png"
 date: 2024-06-22 22:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-Part2AndroidPaging30_0.png
 tag: Tech
 originalTitle: "Part — 2 Android Paging 3.0"
 link: "https://medium.com/@sandeepkella23/part-2-android-paging-3-0-27b0d05994ba"
 ---
-
 
 ![그림](/assets/img/2024-06-22-Part2AndroidPaging30_0.png)
 
@@ -22,7 +21,18 @@ link: "https://medium.com/@sandeepkella23/part-2-android-paging-3-0-27b0d05994ba
 - PagingData: 페이징된 데이터의 스트림을 나타냅니다.
 - PagingDataAdapter: PagedListAdapter를 대체하며 RecyclerView에서 페이징된 데이터를 표시하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구현 단계
 
@@ -51,7 +61,18 @@ class MyPagingSource(private val apiService: ApiService) : PagingSource<Int, MyI
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 페이저 생성하기:
 
@@ -75,7 +96,18 @@ class MyRepository(private val apiService: ApiService) {
 
 3. ViewModel에서 PagingData 관찰하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 뷰모델에서 PagingData를 관찰하기 위해 Flow를 사용하세요.
 - LiveData를 선호한다면 LiveData와 함께 작업하십시오.
@@ -100,7 +132,18 @@ class MyRepository(private val apiService: ApiService) {
 - PagingDataAdapter를 사용하여 데이터를 RecyclerView에 바인딩합니다.
 - PagingData가 변경될 때 새 데이터를 어댑터에 제출하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class MyViewModel(private val repository: MyRepository) : ViewModel() {
@@ -146,7 +189,18 @@ class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 대용량 데이터 처리
 

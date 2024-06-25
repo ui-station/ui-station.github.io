@@ -3,13 +3,12 @@ title: "KotlinConf 2024에서 공개된 Kotlin 20 언어 기능 새로운 점과
 description: ""
 coverImage: "/assets/img/2024-06-22-Kotlin20LanguageFeaturesfromKotlinConf2024WhatsNewandWhatsNext_0.png"
 date: 2024-06-22 22:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-Kotlin20LanguageFeaturesfromKotlinConf2024WhatsNewandWhatsNext_0.png
 tag: Tech
 originalTitle: "Kotlin 2.0 Language Features from KotlinConf 2024: What’s New and What’s Next"
 link: "https://medium.com/@omarsahl/kotlin-language-features-from-kotlinconf-2024-whats-new-and-what-s-next-a4668eae5e9d"
 ---
-
 
 <img src="/assets/img/2024-06-22-Kotlin20LanguageFeaturesfromKotlinConf2024WhatsNewandWhatsNext_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@omarsahl/kotlin-language-features-from-kotlinconf-202
 
 # Kotlin 2.0 기능 요약
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. 명시적 백킹 필드
 
@@ -34,7 +44,18 @@ class MyViewModel {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서는 title 상태가 캡슐화되어 있어서 ViewModel만 상태를 수정할 수 있고 나머지 애플리케이션에는 읽기 전용 버전이 노출됩니다.
 
@@ -49,7 +70,18 @@ class MyViewModel {
 
 이 새로운 구문은 title 속성에 대한 명시적 백킹 필드를 선언하여 보일러플레이트 코드를 줄이고 가독성을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미래의 Kotlin 버전에서는 명명된 명시적 백킹 필드와 같은 이 기능에 대한 업데이트가 포함될 예정이라는 사실을 언급하는 것도 좋습니다. 아래는 이 기능이 어떻게 보일지 예시입니다:
 
@@ -64,7 +96,18 @@ class MyViewModel {
 
 K2 컴파일러는 Frontend Intermediate Representation (FIR)이라고 불리는 것을 도입합니다. 이를 통해 컴파일러 및 IDE 성능이 향상되어 더 빠른 컴파일과 정확한 오류 메시지를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 FIR로 인한 사용자에게 보이는 변경 중 하나는 "연산자 및 숫자 변환의 결합"입니다. 이 기능은 숫자 유형을 포함한 작업을 간소화하여 명시적인 유형 변환의 필요성을 줄입니다.
 
@@ -78,8 +121,18 @@ fun foo(longs: MutableList<Long>) {
 
 Kotlin 1.x에서 위 코드는 1이 명시적으로 Long이 아니기 때문에 오류가 발생합니다. 1L을 대신 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코틀린 2.0에서는 longs[0] += 1이 longs.set(0, longs.get(0).plus(1))로 분해되기 때문에 정상적으로 작동합니다.
 
@@ -89,7 +142,18 @@ Kotlin 1.x에서 위 코드는 1이 명시적으로 Long이 아니기 때문에 
 
 이를 설명하기 위해 다음 예시를 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 class Box(val longs: MutableList<Long>)
@@ -106,8 +170,18 @@ Kotlin 1.x에서는 longs의 첫 번째 요소를 증가시키는 두 줄 모두
 
 ## 4. 더 똑똑해진 스마트 캐스트 (좋아요!)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 K2에서는 새로운 제어 플로 엔진이 소개되어 타입 추론 및 해결에서 상당한 개선이 이루어졌어요. 이 새로운 제어 플로 엔진 덕분에 여러 가지 새로운 기능을 사용할 수 있게 됐어요.
 
@@ -129,7 +203,18 @@ fun makeNoise(device: Any) {
 
 이 코드는 간단합니다. device가 Phone인지 확인한 후에 device 객체가 Phone으로 스마트 캐스트되어 ring 메서드를 안전하게 호출할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 makeNoise 함수를 약간 수정하고 다음과 같이 새로운 isPhone 변수를 도입하면:
 
@@ -146,7 +231,18 @@ Kotlin 1.x에서는 지역 변수가 데이터 흐름 정보를 전달하지 않
 
 그러나 Kotlin 2.0에서는 이 코드가 예상대로 작동합니다. 이제 로컬 변수가 스마트 캐스트에 대한 정보를 전파하기 때문에 ring 메서드를 호출할 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 일반적인 스마트 캐스트 규칙에 해당하는 것을 유의해야 합니다. 계약을 포함하여 예를 들어:
 
@@ -166,7 +262,18 @@ fun foo(card: Any): String {
 
 또한, Kotlin 2.0에서 해결된 스마트 캐스트와 관련된 여러 버그가 있었습니다. 이 글에서는 이러한 개선 사항에 대해 자세히 다루지는 않겠지만, 이곳에서 더 많은 정보를 읽을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 5. Smart Casts After ||
 
@@ -190,7 +297,18 @@ fun demo(action: Any) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 친구야,
 
@@ -202,7 +320,18 @@ Kotlin 1.x에서는 이 코드가 컴파일되지 않습니다. || 연산자 이
 
 Kotlin 2.0의 새 데이터 플로 엔진과 관련된 스마트 캐스트와 인라인 람다의 클로저에서 캡처된 지역 변수에 대한 스마트 캐스트를 수행할 수 있는 기능이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 정수 배열에서 최댓값의 인덱스를 찾는 코드입니다:
 
@@ -224,7 +353,18 @@ Kotlin 1.x에서는 Int?에서 Int로의 스마트 캐스트가 불가능합니�
 
 Kotlin 2.0은 인라인 함수를 암묵적으로 callsInPlace 계약이 있는 것으로 취급하여 이 문제에 대응합니다. 본질적으로 컴파일러는 람다를 보다 일반적인 for 루프처럼 다룰 수 있어 람다 내에서 스마트 캐스트를 활성화합니다. 이로써 느낌표(!!)를 제거할 수 있으며 이제 maxIndex가 Int로 스마트 캐스트되었기 때문에입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 fun indexOfMax(numbers: IntArray): Int? {
@@ -245,8 +385,18 @@ Kotlin 2.0의 새로운 기능을 탐색했는데, 앞으로 나올 Kotlin의 �
 
 ## 1. When 문에서의 가드 조건
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미래의 Kotlin 릴리스에서 나올 흥미로운 기능 중 하나는 guards 기능입니다. 이 기능을 사용하면 when 문의 분기에 직접 조건을 추가할 수 있어서 코드를 더 간결하게 만들 수 있습니다.
 
@@ -273,7 +423,18 @@ fun SearchResultListItem(searchResult: SearchResult) {
 
 이 코드는 꽤 간단하지만 searchResult가 여러 번 반복됩니다. 따라서 더 간결하게 만들기 위해 반복되는 searchResult를 제거하고 subject로 searchResult를 사용하는 when 문을 사용할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -300,7 +461,18 @@ fun SearchResultItem(searchResult: SearchResult) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 카틴 2.1에서 가드가 베타로 나올 때입니다.
 
@@ -310,7 +482,18 @@ fun SearchResultItem(searchResult: SearchResult) {
 
 컨텍스트 민감한 해결을 통해 반복되는 SearchResult를 제거하여 코드를 더 간결하게 만들 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -329,7 +512,18 @@ fun SearchResultItem(searchResult: SearchResult) {
 
 ## 3. 이름 기반 구조 분해
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 Kotlin의 해체 선언 기능은 임의의 변수 이름 사용을 허용합니다.
 
@@ -346,7 +540,18 @@ fun handleUser(user: User) {
 
 여기서는 User 데이터 클래스의 속성을 surname과 someName과 같은 임의의 이름으로 해체하고 있습니다. 이러한 방식은 컴파일러가 수용하지만 안전하지 않을 수 있으며, 실제 속성을 정확하게 반영하지 않아 버그를 유발할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞으로의 Kotlin 버전에서는 해체 선언에 임의의 이름을 사용하는 것을 경고하고, 마침내 오류로 만들어가며 이에 대응하게 될 것입니다.
 또한, 해체된 속성에 새 이름을 할당하는 특별한 구문이 도입될 예정이며, 더 안전하고 예측 가능한 코드를 보장할 것입니다.
@@ -357,7 +562,18 @@ fun handleUser(user: User) {
 
 이 기능을 이해하기 위해 Compose의 LazyColumn 함수를 살펴봅시다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Composable
@@ -380,8 +596,18 @@ fun LazyColumn(
 
 ![image](/assets/img/2024-06-22-Kotlin20LanguageFeaturesfromKotlinConf2024WhatsNewandWhatsNext_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 확장 가능한 데이터 인수가 등장하는 곳입니다. 이를 통해 기본값을 갖는 인수를 데이터 인수 클래스로 이동하여 함수 서명을 간단하게 만들고 소스와 이진 호환성을 유지할 수 있습니다:
 
@@ -408,7 +634,18 @@ fun LazyColumn(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `LazyColumn`의 호출 위치에서 이제 `LazyColumn(reverseLayout = true)`를 사용할 수 있습니다. 해당 매개변수는 `LazyColumnSettings`의 인스턴스로 변환될 것입니다.
 
@@ -419,7 +656,18 @@ fun LazyColumn(
 이는 향후 Kotlin 버전에서 추가될 또 다른 유망한 기능입니다.
 이 기능을 설명하기 위해, Sequence의 `last()` 확장 함수를 살펴봅시다. 이 함수는 주어진 조건과 일치하는 Sequence의 마지막 요소를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 inline fun <T> Sequence<T>.last(predicate: (T) -> Boolean): T {
@@ -456,8 +704,18 @@ inline fun <T> Sequence<T>.last(predicate: (T) -> Boolean): T {
 
 이 방법은 더 나아 보이지만 제네릭 유형 Any?을 사용하고 마지막 부분의 unchecked 캐스트를 제거하지 않습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이곳은 오류에 대한 연합 유형이 필요한 곳입니다. 이것은 향후 코틀린 기능으로 우리가 이렇게 작성할 수 있게 해줄 것입니다:
 
@@ -478,7 +736,18 @@ inline fun <T> Sequence<T>.last(predicate: (T) -> Boolean): T {
 
 # 마무리맺음
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 새로운 기능들로 Kotlin은 계속 발전하며 현대 프로그래밍 언어가 제공할 수 있는 영역을 넓히고 있습니다. Kotlin을 사용하면 개발이 더욱 효율적이고 즐거워집니다.
 이외에도 상세 내용이 제공되지 않은 다른 기능들이 언급되었습니다. Kotlin 팀이 이후에 관련 정보를 더 제공할 때까지 기다려야 할 것입니다.

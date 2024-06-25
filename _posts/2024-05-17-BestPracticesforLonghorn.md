@@ -3,14 +3,12 @@ title: "롱혼Longhorn을 위한 최상의 관례"
 description: ""
 coverImage: "/assets/img/2024-05-17-BestPracticesforLonghorn_0.png"
 date: 2024-05-17 18:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-BestPracticesforLonghorn_0.png
 tag: Tech
 originalTitle: "Best Practices for Longhorn"
 link: "https://medium.com/@petolofsson/best-practices-for-longhorn-067d4ccb5fdd"
 ---
-
-
 
 ![image](/assets/img/2024-05-17-BestPracticesforLonghorn_0.png)
 
@@ -20,8 +18,18 @@ Longhorn은 Rancher에서 설계하고 Kubernetes 클러스터의 Storage Classe
 
 Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만, 클러스터 관리와 쿠버네티스 작업을 하는 모든 사람들은 대화에서 '쉽다'는 말을 듣기 쉽지 않다는 것을 알고 있습니다.
 
@@ -31,7 +39,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 
 우선, 문서를 읽어보세요. 왜냐하면...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나의 어리석음 속에서, 나는 롱혼(Longhorn)을 다룰 수 있을 것이라고 생각했고, 말 그대로 황소의 뿔을 잡을 수 있을 것으로 생각했다. 내가 한 것처럼 하지 마세요. 스스로를 많은 시간과 고통으로부터 구해주세요. 문서를 읽고 나서, 롱혼의 작동 방식을 근본적으로 이해했기 때문에 문제 해결이 가속화되었어요.
 
@@ -43,7 +62,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 
 그것은 빠른 I/O, 혁신적인 백업 시스템, AI 디버깅 또는 어떤 반짝이는 새로운 기능이 될 수 있지만, 제 경우에는 간단합니다: 안정성과 신뢰성이 모든 분산 저장의 안내등표(Guiding Beacons)가 되어야 한다고 생각해요. 왜냐하면 핵심 데이터 손실은 어떤 클러스터에게든 가장 최악의 일이 일어날 수 있는 것이기 때문이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문맥에서의 안정성은 저장 시스템이 작업 부하나 환경 조건에 관계없이 항상 예상대로 작동하는 것을 의미합니다. 이는 대량의 데이터를 처리하고 고가용성을 지원하며, 무거운 부하나 네트워크 분할 중에도 성능 수준을 유지하는 것을 포함합니다. 안정적인 시스템은 읽기, 쓰기 및 업데이트와 같은 데이터 작업이 예상치 못한 중단이나 실패 없이 발생하도록 보장합니다.
 
@@ -53,7 +83,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 
 # Best Practices
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요! 이제 문서를 읽어보았고 분산 저장 시스템에서 원하는 것을 알게 되었어요.
 
@@ -63,7 +104,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 
 # 시작 지점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 안정적인 빌드만 사용하세요. 더 나아가 최신 빌드를 사용하지 않는 것이 좋습니다. 아직 발견되지 않은 버그가 있을 수 있으니까요.
 - Longhorn을 실행할 때, 네트워크가 바쁜 클러스터 트래픽으로 인해 발생하는 네트워크 중단으로 인해 마운트가 실패하는 시나리오가 발생할 수 있으므로, 전용 스토리지 네트워크에서 실행하는 것을 고려해보세요.
@@ -76,7 +128,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 - Longhorn 컴포넌트에 해당하는 허용을 추가하여 전용 스토리지 노드에 스케줄되도록 할 수 있습니다.
 - StorageClass가 필요에 따라 풀을 분할해야 하는 경우 노드 태그를 Longhorn에 추가하여 nodeSelector를 통해 해당 노드를 대상으로 할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 저장 구성
 
@@ -90,7 +153,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 - 더 많은 레플리카는 읽기 집계를 늘리지만, 더 많은 공간과 네트워크 대역폭을 사용합니다.
 - 기본값은 "3"이지만 Longhorn 공식 문서에서는 "2"라고 명시합니다. 특히 데이터 집약적인 애플리케이션에 매우 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 볼륨 구성
 
@@ -102,7 +176,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 
 - 이것이 도움이 되지 않으면 워크로드를 균형 있게 분산하기 위해 Descheduler를 사용할 수 있습니다. 그러나 Descheduler는 공식 제품이 아니므로 연구를 진행해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 지역성
 
@@ -117,7 +202,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 - 안정적이고 지원되는 버전으로만 업그레이드하십시오.
 - 일정한 간격으로 Longhorn UI에서 손상된 마운트를 확인하십시오. 건강한 복제본 수만큼 복제본 수를 업데이트하고 다시 정상 복제본 수로 업데이트하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스냅숏 및 백업
 
@@ -130,7 +226,18 @@ Longhorn은 웹 UI 및 기타 도구로 설치 및 관리가 쉽게 설계되었
 
 DevOps 이야기 LONGHORN: Best Practices — r/kubernetes Longhorn — Best Practices Rancher 포럼: Longhorn 재부팅시 Best Practice Harvester: Longhorn 디스크 성능 최적화를 위한 Best Practices Descheduling: 고가용성의 비밀
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 끝맺음
 

@@ -3,13 +3,12 @@ title: "리더십 단위 테스트 작성하는 방법 2024년 최신 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-22-LeadershipUnitTests_0.png"
 date: 2024-06-22 23:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-LeadershipUnitTests_0.png
 tag: Tech
 originalTitle: "Leadership Unit Tests"
 link: "https://medium.com/@matt-schellhas/leadership-unit-tests-8cd89f271181"
 ---
-
 
 ![LeadershipUnitTests_0](/assets/img/2024-06-22-LeadershipUnitTests_0.png)
 
@@ -19,17 +18,39 @@ link: "https://medium.com/@matt-schellhas/leadership-unit-tests-8cd89f271181"
 
 좋은 소식은 매니저들 및 비매니저 리더들을 위한 피드백 루프가 느리고 모호한 것이 그리 나쁘지 않을 수 있다는 것입니다. 소프트웨어 엔지니어들이 코드의 피드백 루프를 개선하기 위해 새로운 도구 및 기술을 개발하던 동안, 리더들은 사람들과의 업무에 대해 같은 일을 하고 있었습니다. 이것이 리더십 버전의 유닛 테스팅, 즉 1:1 미팅을 구현한 이유입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 믿지 않으신다구요? 단위 테스트가 제공하는 혜택 목록을 살펴보도록 하죠:
 
 ## 문제를 더 빨리 발견하기
 
-작고 빠른 테스트를 통해 엔지니어들은 문제를 빨리 발견할 수 있습니다. 코드베이스에 통합되기 전이나 고객에게 제공되기 전에 문제를 발견하면, 그 문제들이 더 작고 해결하기 쉬워집니다. 
+작고 빠른 테스트를 통해 엔지니어들은 문제를 빨리 발견할 수 있습니다. 코드베이스에 통합되기 전이나 고객에게 제공되기 전에 문제를 발견하면, 그 문제들이 더 작고 해결하기 쉬워집니다.
 
 문제를 조기에 발견할수록 해결하기 쉽고 저렴해지는 것은 코드 문제 뿐만 아니라, 발견 시 더 쉽고 저렴하게 해결할 수 있는 사람 간의 문제들도 포함됩니다. 방치된 채로 두면 확산되거나 적개심이 생겨날 수 있습니다. “밥이 자기가 할 수 있는 일을 계속 부탁하는 건 짜증스러워” 라는 말을 들은 것과 대놓고 싸움하는 상황과 해결하는 게 완전히 다릅니다. 승진에 대해 담당자가 당신이 준비되지 않았다고 생각한다는 것을 알고 있는 것은 성과 검토 회의 전에 알 수록 더 가치 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잘 운영되는 일대일 미팅은 양쪽이 문제를 제기할 수 있는 안전한 공간을 제공하며, 문제를 유발할 충분한 자극과 충분한 빈도를 제공하여 그 문제가 큰 문제로 발전하기 전에 조치를 취할 수 있습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@matt-schellhas/leadership-unit-tests-8cd89f271181"
 
 일대일 미팅에도 똑같이 적용됩니다. 문제를 식별했을 때 (예: 밥이 짜증나, 승진에 대해 의견이 일치하지 않음), 두 사람은 더 쉽게 이에 대해 이야기할 수 있습니다. "왜 밥이 짜증나요?" "왜 승진에 대해 준비가 되지 않다고 생각하시나요?" "이를 해결하기 위해 우리가 무엇을 할 수 있을까요?"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 명의 대상을 대상으로 메시지를 맞춤 설정하는 것이 더 쉬워집니다. 문제에 대한 이 사람의 관점과 그에 대한 감정에 초점을 맞추어 전체 그룹의 다양한 해석을 관리하려고 하는 대신 빠른 솔루션을 찾을 수 있는 상호 대화형 일대일 미팅이 중요합니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@matt-schellhas/leadership-unit-tests-8cd89f271181"
 
 리더의 일은 변경을 촉진하는 것의 무시할 수 없는 부분입니다. 문화 전환, 프로세스 재작성, 인사, 직원 조직 변경 등. 일대일 미팅을 통해 주변 사람들과의 관계를 구축하여 보다 자신 있게 변경사항을 수용할 수 있게 됩니다. 주변 사람들이 어떤 종류의 변경을 수용할 수 있을지, 무서워할지를 배웠습니다. (희망적으로) 그들은 변경 사유가 충분하지 않으면 변경 사항을 도입하지 않는다는 것을 배웠습니다. 미팅을 통해 변경 사항을 내보낼 전에도 후에도 모든 사람들이 변경 사항을 의문시 하고 설명하고 조정할 수 있는 장소가 제공됩니다. 간단한 "무엇을 생각하십니까..."라는 질문으로 변경 사항을 배포하기 전에 직접 테스트할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 인터페이스 향상하기
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@matt-schellhas/leadership-unit-tests-8cd89f271181"
 
 물론, 유닛 테스트가 이러한 혜택을 제공하지 않는 많은 코드베이스가 있습니다. 테스트가 불안정하고 신뢰할 수 없거나 크고 느린 경우가 있습니다. 또는 코드 커버리지 봇을 달래기 위한 것이거나, 행동을 확인하기 위해 작성된 것이 아닌 구현을 검증하기 위한 것인 경우도 있습니다. 이것만으로도 어떤 사람에게는 유닛 테스트가 시간 낭비임을 증명하는 충분한 증거가 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비슷하게, 많은 1:1 미팅이 큰 이득을 주지 않는 경우가 많습니다. 상태 업데이트 미팅. 한 쪽이 참여하지 않거나 듣지 않는 1:0 미팅. 탄탄한 안건 미팅으로 탐색할 여지가 없는 경우. 너무 짧거나 너무 자주 열리는 미팅. “그냥 해야 되니까”라는 이유로 열리는 무의미한 미팅. 이것들은 1:1 미팅이 시간 낭비라고 생각하는 이에게 충분한 증거가 됩니다.
 

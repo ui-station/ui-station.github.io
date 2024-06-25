@@ -3,13 +3,12 @@ title: "프리즈마 101 프리즈마 이해를 위한 초보자 안내서"
 description: ""
 coverImage: "/assets/img/2024-05-20-PRISMA101Abeginnersguidetounderstandprisma_0.png"
 date: 2024-05-20 18:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-PRISMA101Abeginnersguidetounderstandprisma_0.png
 tag: Tech
 originalTitle: "PRISMA 101 : A beginner’s guide to understand prisma."
 link: "https://medium.com/@fidelotieno11/prisma-101-a-beginners-guide-to-understand-prisma-7158bc45af2d"
 ---
-
 
 <img src="/assets/img/2024-05-20-PRISMA101Abeginnersguidetounderstandprisma_0.png" />
 
@@ -19,7 +18,18 @@ Node.js나 TypeScript 환경에서 데이터베이스를 다룬 적이 있다면
 
 # Prisma란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프리즈마는 데이터베이스 작업을 할 때 개발자 경험을 향상시키는 Node.js 및 TypeScript ORM입니다. 직관적인 데이터 모델, 자동 마이그레이션, 타입 안전성 및 자동 완성을 통해 데이터베이스를 쉽게 관리하고 상호 작용할 수 있게 해줍니다.
 
@@ -31,7 +41,18 @@ Node.js나 TypeScript 환경에서 데이터베이스를 다룬 적이 있다면
 
 # 프리즈마가 하는 일이 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 프리즈마가 애플리케이션과 데이터베이스 사이에서 중재자로 작용한다는 것을 알게 되었습니다. 이것은 주요 기능을 강조합니다:
 
@@ -45,7 +66,18 @@ Node.js나 TypeScript 환경에서 데이터베이스를 다룬 적이 있다면
 
 ORM(Object-Relational Mapping)은 데이터베이스와 객체지향 방식으로 상호 작용할 수 있도록 해주는 프로그래밍 기술입니다. 더 간단하게 말하면 ORM은 데이터를 애플리케이션 코드와 데이터베이스와 같은 호환되지 않는 유형 시스템 사이에서 번역합니다. 이는 원시 SQL 쿼리를 작성하지 않고 익숙한 프로그래밍 개념을 사용하여 데이터베이스 작업을 할 수 있음을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프리즈마를 사용해야 하는 이유
 
@@ -59,7 +91,18 @@ ORM(Object-Relational Mapping)은 데이터베이스와 객체지향 방식으�
 
 # 프리즈마 ORM이 어떻게 작동하는지 궁금하신가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프리즈마 스키마 파일에서 시작됩니다. 여기서 데이터 모델을 정의하고 데이터베이스 연결을 구성합니다.
 간단한 예시를 보여드리겠습니다:
@@ -72,7 +115,18 @@ ORM(Object-Relational Mapping)은 데이터베이스와 객체지향 방식으�
 - Data source: 데이터베이스 연결 (환경 변수와 함께).
 - Data model: 애플리케이션 모델을 정의합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프리즈마 스키마의 모델은 데이터베이스의 테이블을 나타냅니다. 이 모델은 프리즈마 클라이언트 API에서 쿼리를 위한 기초를 제공합니다. 예를 들어, 위에서 정의한 User 모델을 사용하면 사용자에 대한 CRUD(Create, Read, Update, Delete) 작업을 쉽게 수행할 수 있습니다.
 
@@ -82,7 +136,18 @@ ORM(Object-Relational Mapping)은 데이터베이스와 객체지향 방식으�
 
 ![프리즈마 클라이언트 예시](/assets/img/2024-05-20-PRISMA101Abeginnersguidetounderstandprisma_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Prisma Migrate
 
@@ -92,7 +157,18 @@ ORM(Object-Relational Mapping)은 데이터베이스와 객체지향 방식으�
 
 프리즈마 스튜디오는 사용하기 편리한 인터페이스를 제공하여 데이터와 상호 작용할 수 있습니다. 코드를 작성하지 않고도 데이터를 볼 수 있고 편집하고 관리할 수 있습니다. 데이터를 검사하거나 업데이트할 때 유용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

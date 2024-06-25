@@ -3,13 +3,12 @@ title: "로컬 영속성Android Room 데이터베이스"
 description: ""
 coverImage: "/assets/img/2024-05-18-LocalPersistenceinAndroidRoomDatabase_0.png"
 date: 2024-05-18 15:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-LocalPersistenceinAndroidRoomDatabase_0.png
 tag: Tech
 originalTitle: "Local Persistence in Android: Room Database"
 link: "https://medium.com/@pedroalvarez-29395/local-persistence-in-android-room-database-349e74f84ef5"
 ---
-
 
 ![Local Persistence in Android Room Database](/assets/img/2024-05-18-LocalPersistenceinAndroidRoomDatabase_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@pedroalvarez-29395/local-persistence-in-android-room-
 
 SQL 언어의 개념에 대해 대부분의 분들이 친숙할 것으로 기대합니다. 그러나 이 기사는 Android와 Kotlin에 더 초점을 맞추고 있기 때문에 간단히 소개하겠습니다. SQL은 관계 데이터베이스 테이블 작업에 사용되는 일반적인 언어로, 특정 데이터를 쿼리하거나 객체를 추가, 업데이트, 삭제하는 데 사용됩니다. 예를 들어, 만약 Person 테이블이 있고 18세 이상인 모든 행을 가져와 이름만 표시하려면 다음과 같이 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 SELECT name
@@ -33,7 +43,18 @@ WHERE age >= 18
 
 3. 18세 이상인 행만 필터링하고 있습니다(age).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에서 언급한 대로, Android 개발에서 Room이 어떻게 작동하는지 살펴보겠습니다.
 
@@ -43,13 +64,24 @@ Room은 Android에서 로컬 데이터를 저장하는 가장 일반적인 솔�
 
 장치에 데이터 모델을 영구적으로 저장하기 위해서는 프로젝트에 구현해야할 중요한 구성 요소가 있어요. 먼저, Gradle 파일에 필요한 종속성을 동기화해보죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-annotationProcessor("androidx.room:room-compiler:2.6.1")
-implementation("androidx.room:room-runtime:2.6.1")
-kapt("androidx.room:room-compiler:2.6.1")
-implementation("androidx.room:room-ktx:2.6.1")
+annotationProcessor("androidx.room:room-compiler:2.6.1");
+implementation("androidx.room:room-runtime:2.6.1");
+kapt("androidx.room:room-compiler:2.6.1");
+implementation("androidx.room:room-ktx:2.6.1");
 ```
 
 이제 Room 데이터베이스를 관리하는 가장 중요한 구성 요소를 구현할 수 있습니다. 아래는 우리 구조가 어떻게 보여야 하는지 입니다:
@@ -57,9 +89,19 @@ implementation("androidx.room:room-ktx:2.6.1")
 ![Room Database 구조](/assets/img/2024-05-18-LocalPersistenceinAndroidRoomDatabase_1.png)
 
 새로운 DAO와 같은 익숙하지 않은 층이 있는 것을 알 수 있습니다. 이에 대해 더 자세히 설명하겠습니다.
- 
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 포켓몬 DAO
 
@@ -96,7 +138,18 @@ interface PokemonDao {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Dao 어노테이션은 이 인터페이스가 새로운 클래스를 생성하여 Room DB에 직접 액세스할 것임을 나타냅니다.
 - Query 어노테이션은 DB에서 트리거될 SQL 쿼리를 정의하며, 이는 테이블의 행과 열을 나타내는 객체를 반환하게 됩니다. 이 경우에는 Favorite 객체(또는 DB에서 비동기적으로 가져오는 객체의 Flow)입니다.
@@ -107,7 +160,18 @@ interface PokemonDao {
 
 5. Delete 어노테이션은 입력값으로 주어진 Favorite 행을 삭제함을 명시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 모든 작업은 데이터베이스를 조작하는 SQL 작업을 나타냅니다. 주석은 Kapt가 새 코드를 생성하여 데이터베이스에 액세스하는 구체적인 구현을 수행할 것입니다.
 
@@ -126,7 +190,18 @@ data class Favorite(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 데이터 클래스는 Entity로 주석이 달려 있으며 "favorites"라는 이름의 SQL 테이블을 나타냅니다. 각 열(속성)은 해당 테이블에서 나타내는 내용에 대한 메타데이터가 달린 변수에 해당합니다.
 
@@ -138,7 +213,18 @@ data class Favorite(
 
 이제 DB 자체를 나타내는 개체도 필요합니다. 이 객체는 우리에게 DAO라는 자체 인터페이스를 제공하는 책임이 있습니다. Kotlin 주석 처리 도구가 자동 생성하므로 다음과 같이 주석이 달린 추상 클래스를 만듭니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @Database(entities = [Favorite::class], version = 1, exportSchema = false)
@@ -154,8 +240,18 @@ abstract class PokemonDatabase: RoomDatabase() {
 
 모든 것이 SQLite 로컬 데이터베이스에서 작동하는 코드를 생성할 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 저장소
 
@@ -185,7 +281,18 @@ class FavoritesRepository(
 
 PokemonDao를 저장소에 주입하고 각 함수가 Dao에서 다른 함수를 호출하는 것을 주목하세요. 또한 저장소는 ViewModel에 인터페이스로서 액세스되어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Flow 출력 x Suspend 함수
 
@@ -195,7 +302,18 @@ PokemonDao를 저장소에 주입하고 각 함수가 Dao에서 다른 함수를
 
 두 가지의 차이는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다른 곳에서 반환된 Flow는 비동기가 아니지만 수집하는 것은 비동기이므로 메인 스레드 바깥에서 수행해야 합니다.
 - 일시 중단 함수를 호출할 때는 항상 코루틴에서 수행해야 합니다. 출력에 관계없이 항상 비동기 작업입니다.
@@ -240,7 +358,18 @@ fun AppTopBar(
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디자인 설명에 대해서는 신경 쓰지 말고, 우리의 상세 화면에 즐겨찾기 버튼을 좋아하는 아이콘으로 적용해보자. 아이콘 틴트 색상은 포켓몬이 즐겨찾기 상태인지 아닌지에 따라 달라질 것이다. 아래 내용을 PokemonDetailsViewModel에 추가해 주세요:
 
@@ -264,7 +393,7 @@ class PokemonDetailsViewModel(
 
     fun fetchDetails(name: String) {
         viewModelScope.launch {
-            _isLoading.value = true  
+            _isLoading.value = true
             // Checks favorite status before fetching data
             getIsFavorite(name)
             val result = repository.getPokemonDetails(name)
@@ -287,7 +416,7 @@ class PokemonDetailsViewModel(
         }
     }
 
-    // Checks if the pokemon is favorite or not and delegates the 
+    // Checks if the pokemon is favorite or not and delegates the
     // corresponding operation to the Repository
     fun didClickFavorite() {
         viewModelScope.launch {
@@ -319,7 +448,18 @@ class PokemonDetailsViewModel(
 
 # UI 업데이트하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리의 PokemonDetailsScreen을 업데이트하여 사용자 상호 작용에 따라 새 이벤트를 ViewModel로 위임하겠습니다. 맨 위에 있는 새로운 앱 바를 추가하기 위해 Scaffold에 넣어주세요:
 
@@ -376,7 +516,18 @@ AppTopBar composable에 주목하고 trailing icon이 즐겨찾기 상태를 나
 
 이것이 우리의 상세 화면이 보이는 방식입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*V6RtRHdYOsE2nyptLC7PFQ.gif" />
 
@@ -386,9 +537,20 @@ AppTopBar composable에 주목하고 trailing icon이 즐겨찾기 상태를 나
 
 이제 우리는 즐겨찾기 포켓몬을 표시할 새로운 화면을 만들 것입니다. 즐겨찾기 목록을 모두 가져오고 데이터를 적절히 조작할 ViewModel을 만들어주세요. 이 ViewModel은 Repository에 접근할 수 있을 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-``` kotlin
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+```kotlin
 class FavoriteListViewModel(
     private val repository: FavoritesRepositoryInterface
 ): ViewModel() {
@@ -422,7 +584,7 @@ class FavoriteListViewModel(
 
 이제 새로운 화면을 만들고 내비게이션 그래프에 통합해 보겠습니다. 좀 더 정교한 디자인으로 즐겨찾는 셀을 만들겠지만, UI 부분은 이 글의 초점이 아닙니다:
 
-``` kotlin
+```kotlin
 @Composable
 fun FavoriteListScreen(
     navController: NavController,
@@ -509,7 +671,18 @@ private fun FavoriteRow(
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 화면은 이렇게 나와야 합니다:
 
@@ -552,7 +725,18 @@ fun PokeAPIApp(navController: NavHostController = rememberNavController()) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 메인 화면에 링크 걸기
 
@@ -659,7 +843,18 @@ fun PokemonListScreen(
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 인터페이스가 이렇게 보입니다:
 
@@ -669,7 +864,18 @@ fun PokemonListScreen(
 
 # 앱 모듈 업데이트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 아직 데이터베이스와 DAO를 어떻게 생성할지 정의하지 않았어요. 각각을 위한 함수가 필요해요:
 
@@ -693,10 +899,18 @@ DB의 생성은 Retrofit API 인터페이스를 인스턴스화하는 패턴과 
 
 이제 모듈에 다음 DSL 표현식을 포함해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 fun <PokemonDatabase> {

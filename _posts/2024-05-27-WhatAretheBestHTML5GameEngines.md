@@ -10,7 +10,6 @@ originalTitle: "🕹️ What Are the Best HTML5 Game Engines?"
 link: "https://medium.com/gamezop/%EF%B8%8F-what-are-the-best-html5-game-engines-80646633913e"
 ---
 
-
 ![HTML5 Game Engine](/assets/img/2024-05-27-WhatAretheBestHTML5GameEngines_0.png)
 
 HTML5 게임 개발에 뛰어들 때, 프로젝트의 성공을 위해 올바른 게임 엔진을 선택하는 것이 중요합니다. 여기에는 몇 가지 최고의 HTML5 게임 엔진, 그들의 기능, 그리고 다양한 사용자 요구를 충족하는 방법에 대한 자세한 정보가 있습니다.
@@ -19,8 +18,18 @@ HTML5 게임 개발에 뛰어들 때, 프로젝트의 성공을 위해 올바른
 
 나는 Phaser 게임 엔진으로 게임 개발 경력을 시작했습니다. 그 시절에는 카지노 게임을 만들고 있었고, Phaser는 가장 많이 분기되고 이야기된 프레임워크 중 하나였습니다. 잘 문서화된 API와 매우 다양한 기능을 이해할 수 있는 많은 예제를 제공하는 완벽한 게임 엔진으로, Phaser는 최고의 선택 중 하나였습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Phaser에는 편집기가 없기 때문에 게임 객체의 디자인 및 배치를 볼 수 없습니다. 특히 UI 관련 변경 사항에 대해 알기 어렵습니다. 게임 객체의 배치와 동작을 상상해야 했었습니다. 제게 가장 어려웠던 부분은 게임에 물리학을 추가하는 것이었습니다. 처음 시작했을 때 게임에 물리학을 통합하는 데 능숙해지고, 교육 과정 중에 물리학에 큰 관심이 없었습니다.
 
@@ -34,7 +43,18 @@ Phaser에는 편집기가 없기 때문에 게임 객체의 디자인 및 배치
 - 풍부한 플러그인 생태계를 보유하고 있습니다.
 - 2D 게임 개발에 탁월합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Phaser는 강력한 2D 게임 엔진을 찾는 개발자들에게 이상적이며 뛰어난 커뮤니티와 다양한 학습 자료가 제공됩니다. 이 엔진은 아케이드 스타일 게임, 플랫포머, 그리고 캐주얼 게임을 만드는 데 적합합니다. 그러나 시각적 편집기가 부족하므로 개발자들은 게임 객체의 배치와 행동을 코딩해야 합니다. 이는 상상력과 계획력이 필요할 수 있습니다.
 
@@ -44,7 +64,18 @@ Cocos Creator를 배우기 시작했을 때, 처음에는 문서가 중국어로
 
 특징:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 2D 및 3D 게임 개발 지원
 - 쉬운 디자인 및 객체 배치를 위한 시감 편집기
@@ -58,7 +89,18 @@ Cocos Creator는 게임 장면과 객체를 디자인하는 시감 인터페이�
 
 저는 현재 속해 있는 Gamezop에서 Construct 게임 엔진을 처음으로 접했습니다. 처음에는 이런 것을 본 적이 없어서 이상한 경험이었습니다. 우리는 전혀 코드를 작성하지 않으므로요. 하나의 게임 객체에 대해 Construct 게임 엔진에게 이것을 요청하고 다른 것을 다른 것에 요청하는 것처럼 보였습니다. 그런 다음 게임 크리에이터가 무엇인지 알게 되었습니다. Construct는 게임 엔진뿐만 아니라 게임 크리에이터입니다. 코딩 지식이 없어도 Construct를 사용하여 게임을 만들 수 있습니다. 이전에는 소프트웨어를 다운로드하여 우리 기계에서 실행했지만, 이제는 완전히 온라인으로 사용할 수 있고 많은 추가 기능이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기능:
 
@@ -72,7 +114,18 @@ Construct 3은 코드 작성 없이 빠르게 게임을 만들고 싶은 개발�
 
 ## 🔹 4. Babylon.js
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 바빌론.js를 Phaser처럼 3D 게임 개발을 위한 도구로 보고 있어요. 바빌론.js 문서에 있는 시작 프로젝트 이외에는 처음부터 게임을 만들어보지 못했어요. 처음에는 코드 중심이었지만, 이제는 시각적 편집기도 도입되어 디자이너와 시각적 인터페이스를 선호하는 개발자들에게 접근하기 쉬워졌어요.
 
@@ -86,7 +139,18 @@ Construct 3은 코드 작성 없이 빠르게 게임을 만들고 싶은 개발�
 
 바빌론.js는 고품질 3D 게임이나 상호작용 경험을 만들고 싶은 개발자에게 이상적이에요. 3D 그래픽과 WebGL에 대한 충분한 이해가 필요하며, 현실적인 그래픽, VR 경험 또는 복잡한 3D 상호작용이 필요한 프로젝트에 적합해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 🔹 5. Three.js
 
@@ -100,7 +164,18 @@ Three.js은 웹 게임 개발을 위해 가장 뛰어난 3D 게임 엔진 중 �
 - 어떤 유형의 3D 콘텐츠도 생성할 수 있는 유연성.
 - 다른 라이브러리와 프레임 워크와 잘 통합됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Three.js는 웹에서 사용자 정의 3D 경험을 만드는 것을 원하는 개발자에게 좋은 도구입니다. 많은 유연성을 제공하지만 3D 수학과 그래픽 프로그래밍에 대한 튼튼한 이해가 필요합니다. 시각화, 시뮬레이션, 사용자 정의 3D 렌더링이 필요한 게임 등을 만드는 데 적합합니다.
 
@@ -110,7 +185,18 @@ PlayCanvas는 웹 기반 게임 엔진으로, 소개될 당시 독특한 존재�
 
 주요 기능:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 웹 기반 개발 환경.
 - 실시간 협업 및 편집.
@@ -124,7 +210,18 @@ PlayCanvas는 웹 기반 게임 엔진으로, 소개될 당시 독특한 존재�
 
 ![다운로드 이미지](/assets/img/2024-05-27-WhatAretheBestHTML5GameEngines_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Phaser 대 Cocos Creator: Phaser는 시각적 편집기가 없는 코드 중심으로, 모든 것을 수동으로 코딩하는 것을 즐기는 개발자에게 적합합니다. Cocos Creator는 시각적 편집기를 제공하여 디자인 및 레이아웃에 GUI를 선호하는 사람들에게 더 접근하기 쉽습니다.
 
@@ -134,7 +231,18 @@ PlayCanvas는 웹 기반 게임 엔진으로, 소개될 당시 독특한 존재�
 
 - PlayCanvas 대 Babylon.js: PlayCanvas는 협업 웹 기반 환경을 제공하여 팀에 적합하며, Babylon.js는 강력한 독립형 3D 엔진을 제공하고 오프라인에서 작업하거나 자체 도구 체인과 통합하는 것을 선호하는 개발자들에게 더 중점을 둡니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 🏢 게임존의 접근 방식
 

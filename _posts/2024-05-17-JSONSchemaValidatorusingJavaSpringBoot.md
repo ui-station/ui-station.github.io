@@ -3,13 +3,12 @@ title: "자바 SpringBoot를 사용한 JSON 스키마 유효성 검사기"
 description: ""
 coverImage: "/assets/img/2024-05-17-JSONSchemaValidatorusingJavaSpringBoot_0.png"
 date: 2024-05-17 17:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-JSONSchemaValidatorusingJavaSpringBoot_0.png
 tag: Tech
 originalTitle: "JSON Schema Validator using Java SpringBoot."
 link: "https://medium.com/@mohommad.belal/json-schema-validator-using-java-springboot-667ed42480d5"
 ---
-
 
 ## Json 스키마란 무엇인가요?
 
@@ -19,7 +18,18 @@ JSON Schema은 선언적 언어입니다. 이는 우리 서비스에 특정한 j
 
 대부분의 경우, 서비스에서 들어오는 json을 유효성 검사하는 것이 필요합니다. 간단한 json은 속성에 제약 조건을 적용하여 POJO 또는 모델에 매핑할 때 유효성을 검사할 수 있습니다. 그러나 때로는 json이 복잡하여 이러한 제약 조건을 사용하여 모든 필드를 유효성을 검사할 수 없는 경우가 있습니다. JsonSchema를 사용하면 표준화된 구조를 사용하여 복잡한 json을 유효성을 검사할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 내용:
 
@@ -29,8 +39,18 @@ SpringBoot와 Json Schema를 사용하는 단계별 가이드입니다. 이를 �
 
 ## 1. SpringBoot 웹 애플리케이션을 생성하세요: https://start.spring.io/
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-17-JSONSchemaValidatorusingJavaSpringBoot_0.png)
 
@@ -50,7 +70,18 @@ https://mvnrepository.com/artifact/com.networknt/json-schema-validator
 </dependency>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // build.gradle
@@ -74,7 +105,7 @@ implementation 'com.networknt:json-schema-validator:1.4.0'
           "enum": ["PLACED", "DELIVERED", "RETURNED"],
           "type": "string"
         },
-        "total_price": { 
+        "total_price": {
          "type": "number",
              "minimum": 0
      },
@@ -104,8 +135,18 @@ implementation 'com.networknt:json-schema-validator:1.4.0'
 
 ## 4. JsonSchema 빈을 생성합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 호출자 메서드에서는 JsonSchema 객체를 직접 생성할 수 있지만, 빈을 생성하고 사용하는 것을 권장합니다.
 
@@ -113,7 +154,7 @@ implementation 'com.networknt:json-schema-validator:1.4.0'
 @Configuration
 public class AppConfiguration {
     private static final String SCHEMA_VALIDATION_FILE = "validation.json";
-   
+
     @Bean
     public JsonSchema jsonSchema() {
         return JsonSchemaFactory
@@ -127,18 +168,29 @@ public class AppConfiguration {
 
 이제 JsonSchema 객체를 사용해보겠습니다. JsonNode를 매개변수로 사용하는 메서드가 있는 Service 클래스를 만들겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Slf4j
 @Service
 public class JsonSchemaValidationService{
-  
+
   @Autowired
   private JsonSchema jsonSchema;
-  
+
   public String validateJson(JsonNode jsonNode){
-    
+
     Set<ValidationMessage> errors = jsonSchema.validate(jsonNode);
     //if errors have a single miss match, there would be a value in the errors set.
     if(errors.isEmpty()){
@@ -171,7 +223,18 @@ public class JsonSchemaController {
 
 ## 7. Start the SpringBoot Application and start sending requests.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 모든 것이 준비되었으니, 즐겨 사용하는 클라이언트를 사용하여 코드를 테스트할 수 있습니다. 저는 PostMan을 사용하고 있어요. 아래에서 유효한 이벤트로 시작해보겠습니다.
 
@@ -196,10 +259,21 @@ curl --location 'localhost:8080/validate' \
 응답:
 
 ```js
-[]
+[];
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # order id 없는 페이로드
@@ -235,7 +309,18 @@ curl --location 'localhost:8080/validate' \
 }'
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 [$.products: is missing but it is required]
@@ -257,7 +342,18 @@ curl --location 'localhost:8080/validate' \
 
 응답 :
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 [$.products: 배열에는 최소 1개의 항목이 있어야 합니다.]

@@ -3,14 +3,12 @@ title: "코틀린 코루틴에서 에러 다루기 예외 처리와 에러 전�
 description: ""
 coverImage: "/assets/img/2024-05-20-DealingwithErrorsinKotlinCoroutinesExceptionHandlingandErrorPropagation_0.png"
 date: 2024-05-20 15:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-DealingwithErrorsinKotlinCoroutinesExceptionHandlingandErrorPropagation_0.png
 tag: Tech
 originalTitle: "Dealing with Errors in Kotlin Coroutines: Exception Handling and Error Propagation"
 link: "https://medium.com/@firatgurgur/dealing-with-errors-in-kotlin-coroutines-exception-handling-and-error-propagation-04a5a0dcfe80"
 ---
-
-
 
 ![image](/assets/img/2024-05-20-DealingwithErrorsinKotlinCoroutinesExceptionHandlingandErrorPropagation_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@firatgurgur/dealing-with-errors-in-kotlin-coroutines-
 
 # 코루틴 스코프 내에서 오류 처리
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kotlin 코루틴을 사용할 때, 코루틴 스코프 내에서 오류 처리를 확실히 하는 것은 비동기 작업을 효과적으로 관리하는 데 중요합니다. 코루틴 스코프는 특정 작업의 라이프사이클을 제어하며, 내부에서 발생할 수 있는 모든 오류를 적절히 처리해야 합니다.
 
@@ -31,7 +39,18 @@ Kotlin 코루틴을 사용할 때, 코루틴 스코프 내에서 오류 처리�
 
 # Supervisor Jobs
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Supervisor 작업은 특히 병렬 coroutine이 관련된 시나리오에서 오류 관리에 필수적인 도구입니다. Supervisor 작업은 한 coroutine에서 발생한 오류가 다른 coroutine에 영향을 미치지 않도록 보장하여 응용 프로그램의 전체 강건성을 향상시킵니다.
 
@@ -41,7 +60,18 @@ Supervisor 작업을 사용하면 coroutine의 오류가 다른 coroutines에 �
 
 # 오류 전파
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 오류가 전파되는 방법에 대해 이야기해 보겠습니다. 코루틴에서 결과를 기다리다가 문제가 발생하면 어떻게 처리할 수 있는지 알아봅시다:
 

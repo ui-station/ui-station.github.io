@@ -3,13 +3,12 @@ title: "무엇보다도 새로운 글로벌 디자인 트렌드 "
 description: ""
 coverImage: "/assets/img/2024-05-20-MeetPunyoTRIsSoftRobotforWhole-BodyManipulationResearch_0.png"
 date: 2024-05-20 19:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-MeetPunyoTRIsSoftRobotforWhole-BodyManipulationResearch_0.png
 tag: Tech
 originalTitle: "Meet Punyo, TRI’s Soft Robot for Whole-Body Manipulation Research"
 link: "https://medium.com/toyotaresearch/meet-punyo-tris-soft-robot-for-whole-body-manipulation-research-949c934ac3d8"
 ---
-
 
 ## Alex Alspach과 Punyo 팀
 
@@ -19,7 +18,18 @@ Punyo 팀: Alex Alspach (기술 리드), Andrew Beaulieu (기술 리드), Kate T
 
 TRI에서는 사람을 대체하는 것이 아닌 보완하는 로봇 능력을 개발하고 있습니다. 우리는 손끝만으로는 부족한 일상적인 작업을 돕는 데 도움을 주기 위해 노력하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 연구 플랫폼인 Punyo는 이 미션을 대변합니다. Punyo 팀은 TRI의 세밀한 로봇 손과 그리퍼 기반의 민첩성을 보완하기 위해 팔과 가슴을 사용한 거대 물체 조작에 초점을 맞추고 있습니다. 우리는 진정으로 능숙한 로봇이 대형, 무거운, 그리고 다루기 힘든 물건들을 다룰 수 있도록 하는 하드웨어와 알고리즘을 개발하고 있습니다.
 
@@ -29,7 +39,18 @@ TRI에서는 사람을 대체하는 것이 아닌 보완하는 로봇 능력을 
 
 # Punyo가 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 푸뇨는 저희 로봇의 이름입니다. 일본어로는 "푸뇨" (ぷにょ)란 부드럽고 귀여우며 탄력 있는 것을 설명합니다. 이는 토요타의 미래 가정 로봇이 안전하고 능력이 있으며 일하는 것이 즐거워야 한다는 우리의 철학을 나타냅니다. 이러한 로봇공학 접근은 다양한 형태로 나타날 수 있지만, 저희를 움직이게 하는 비전은 친근하고 안전하게 가정에서 일상적인 도전 과제를 수행할 수 있는 인간형 로봇입니다.
 
@@ -39,7 +60,18 @@ TRI에서는 사람을 대체하는 것이 아닌 보완하는 로봇 능력을 
 
 푸뇨의 손, 팔, 그리고 가슴은 유연한 소재와 촉각 센서로 덮여 있어서 접촉을 느낄 수 있습니다. 이러한 부드러움은 푸뇨가 다루는 물건에 적응하여 안정성, 마찰력 증가, 그리고 균일하게 분산된 접촉력을 가능하게 합니다. 촉각 감지를 통해 푸뇨는 물체에 조절된 힘을 가할 수 있고, 접촉을 감지하며 (예기치 못한 접촉도), 물체의 미끄러짐이나 충돌에 반응할 수 있습니다. 촉각 감지는 또한 사람들과 상호 작용하는 데 중요합니다. 무거운 물건을 들거나 사람들을 신체적으로 지원하는 상황에서, 로봇은 자신의 몸을 인식하고 적절히 상호 작용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Punyo는 소프트 로봇으로 간주되지만 그 소프트함의 기초에는 두 개의 "단단한" 로봇 팔, 강성의 상체 프레임 및 허리 액추에이터가 있습니다. 저희 방식은 기존 로봇의 정밀성, 강도 및 신뢰성을 기계식 소프트 로봇 시스템의 적응성, 충격 저항성 및 감각 단숨함과 결합한 것입니다.
 
@@ -49,7 +81,18 @@ Punyo는 소프트 로봇으로 간주되지만 그 소프트함의 기초에는
 
 ![Punyo Soft Robot](/assets/img/2024-05-20-MeetPunyoTRIsSoftRobotforWhole-BodyManipulationResearch_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 팔을 덮고 있는 거품은 성형 열 밀봉 PVC 패널을 사용하여 만들어졌어요. 큰 하나의 거품이 푸뇨(Punyo)의 손목을 덮고 있지만 팔 아래의 관절이 움직이는 데 제약이 없어요. 나머지 팔 거품은 각각 두 개의 챔버로 이루어진 여섯 개의 작은 링으로 구성되어 있어요. 팔을 덮고 있는 것은 거품을 보호하고 케이블 걸림을 방지하며 외부 접촉 표면 소재를 수정할 수 있도록 하는 맞춤형 패브릭 슬리브입니다. 슬리브는 유지보수 용이하게 제거 가능하며 미적인 사용자 정의 기회를 제공해요.
 
@@ -59,7 +102,18 @@ Punyo는 소프트 로봇으로 간주되지만 그 소프트함의 기초에는
 
 우리는 다양한 전신 작업에서 하드웨어를 테스트했어요. 푸뇨는 고감각 정책을 학습하기 위해 두 가지 강력한 방법인 확산 정책과 예시 지도 강화 학습을 사용해요. 하드웨어에서 직접 새로운 작업을 시도하고 이러한 학습 파이프라인에 예시 시연을 제공하기 위해 전신 기술에 직관적인 원격 운영 인터페이스를 개발 중이에요. 작년 TRI에서 발표된 확산 정책은 사람의 시범을 사용하여 어려운 모델링 작업을 위한 견고한 감각 운동 정책(카메라 및 촉각 피드백 사용)을 학습해요. 예시 지도 강화 학습(EGRL)은 작업이 시뮬레이션에서 모델링되어야 하며 작은 시범 집합이 로봇의 탐색을 안내해야 해요. 두 가지 방법 모두 유연성을 활용하고 촉각 피드백을 통합하는 견고한 정책을 생성해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### Synergy Teleop을 이해하세요: 핵심 전신 조작 작업, 예를 들어 붙잡기와 들기와 같은 작업은 손을 사용한 붙잡기와 유사한 시너지로 분할되어 있습니다. 이러한 동작은 우리가 게임패드 인터페이스를 통해 개별적으로 제어하는 동작입니다. 팔을 독립적으로 들린 후 내리고, 각 팔의 붙잡기를 열고 닫음으로써 단일 및 양손으로 붙잡고 다시 붙잡고 들기 및 붙잡은 상태에서 조작하는 팔을 위해 조합합니다. 표준적이고 저렴한 게임패드만 필요로 하며, 실험은 연구실이나 야생에서 아무 곳에서나 수행될 수 있습니다.
 
@@ -69,10 +123,20 @@ Punyo는 소프트 로봇으로 간주되지만 그 소프트함의 기초에는
 
 우리는 전신 움직임 제어 접근 방식을 통해 원격 조작 및 자율 확산 정책을 전개합니다. 예를 들어, 원격 조작 중에는 최우선 순위 작업인 종단부 자세 추적이 필요해 Punyo의 발이 원격 조종자의 발을 신뢰할 수 있게 추적해야 합니다. 팔꿈치 자세 추적은 중요도가 낮을 수 있으며, Punyo가 최우선 순위인 종단부 추적과 간섭하지 않는 한 원격 조작 팔꿈치 자세를 달성할 수 있습니다. 계층적 움직임 제어 프레임워크를 사용하면 제약 조건과 운영 지점 추적을 추가, 제거, 조정 및 재우선화하여 원격 조작 인터페이스를 신속히 반복할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The hierarchical framework also provides an interface for exploring physically reactive motions and human-robot interaction. An example is Punyo moving its elbow out of the way when an accidental bump is sensed. Because of the redundant joints in our arms, we can move the elbow without sacrificing end-effector motion. This control scheme can be used to allow a person to push Punyo’s arm out of the way mid-task to quickly grab something.
-
 
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*wGszjFTuqa5Ludd8foyQXA.gif)
 
@@ -80,7 +144,18 @@ The hierarchical framework also provides an interface for exploring physically r
 
 We employ Example-Guided Reinforcement Learning (EGRL) to develop sturdy manipulation policies for tasks we can simulate. Demonstrating the task enhances the learning process efficiency and lets us influence the style of motion the robot uses to complete the task. We utilize Adversarial Motion Priors (AMP), typically used for stylizing computer-animated characters, to introduce human motion imitation into our reinforcement learning pipeline. All policies displayed below were trained with just one demonstration.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 파이프라인은 시범 본따기 보상과 작업 목표 보상의 비율인 λ변수를 노출합니다. 이 변수를 사용하면 Punnyo가 동작을 모방하는 것과 순전히 탐구를 통해 작업을 성공적으로 수행하는 것 사이에서 어떻게 균형을 맞출지 조절할 수 있습니다. 예를 들어, 로봇의 어깨 위로 큰 항아리를 올리는 작업을 배우는 경우를 생각해보세요. 다이얼을 한 방향으로 돌리면(λ = 0), 로봇은 단순히 "자세를 따라 하는" 것으로, 항아리가 탁자를 떠나는지 여부에 관계없이 동일한 작업에 대한 인간 시범 동작을 모방합니다. 다이얼을 다른 방향으로 돌리면(λ = 1), 로봇은 전혀 시범을 무시하고, 항아리를 탁자에서 내리는 데만 집중하며 임무를 수행하는 데 필요한 어떤 비자연스러운 동작이라도 (희망적으로) 수렴합니다. 그 사이의 λ는 시범의 스타일로 작업을 완료하는 정책을 생성합니다.
 
@@ -90,7 +165,18 @@ We employ Example-Guided Reinforcement Learning (EGRL) to develop sturdy manipul
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*Ne8RXDgCjVWAZenDHi5zxA.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Plan-Guided Reinforcement Learning
 
@@ -100,8 +186,18 @@ We employ Example-Guided Reinforcement Learning (EGRL) to develop sturdy manipul
 
 짧은 접촉을 통해 장기적인 행동을 합성하는 데 접촉 묵시 플래너를 사용합니다. 플래너는 글로벌 접촉 추론을 가능하게 하는 몇 가지 가정을 합니다. 그런데 이로 인해 해당 결과를 하드웨어에서 직접 사용할 수 없습니다. 그러나 이 궤적은 EGRL 파이프라인에 시드로 작업에 필요한 동작 및 접촉 시퀀스를 제공하는 훌륭한 데모로 작용합니다. 작업 목표, 도메인 랜덤화 및 이러한 초기 데모로 동작 탐색을 가리키는 경우, Punyo는 모션 계획을 따르는 폐쇄 루프 정책을 효율적으로 학습하여 하드웨어에서 견고하게 어려운 작업을 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*XuViGzzbwQISa9HyDmIzMw.gif)
 
@@ -111,9 +207,18 @@ We employ Example-Guided Reinforcement Learning (EGRL) to develop sturdy manipul
 
 TRI와 다른 곳에서 능숙한 능력이 급증하는 가운데, 현재의 로봇 및 조작 전략은 여러 작업과 기술을 이루리 하는 데 많은 어려움을 겪고 있습니다. 손으로 다루기에 너무 큰 물체, 팔이 안정화해야 하는 물건 더미, 한 팔에 들고 있는 물체와 다른 물체를 다루는 작업, 그리고 좁은 공간과 사람 주변에서 안전하게 운영하는 능력이 필요합니다. 그리퍼 기반 민첩성과 병행하여 전체 몸을 이용한 조작을 위한 하드웨어, 지식 및 데이터셋 개발은 다양한 능력을 갖춘 조작 플랫폼을 만들기 위해 중요합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Punyo Soft Robot](/assets/img/2024-05-20-MeetPunyoTRIsSoftRobotforWhole-BodyManipulationResearch_4.png)
 
@@ -123,7 +228,17 @@ TRI의 Punyo 팀은 이 문제를 해결하기 위해 구축되었습니다. 부
 
 # 감사의 글
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 러스트 테드레이크, 토피 알비나, 막스 바지라차리야, 길 프랫, 꽁대짱 하시모토(푸뇨라는 이름으로!), 벤 버치필, 알레한드로 카스트로, 에릭 쿠시너, 홍카이 다이, 리처드 데니토, 에블린 딕슨, 지미 도르니에, 세라 에브치민, 시유안 펑, 크리스 기드웰, 스테이시 기드웰, 담롱 구오이, 브렌든 해쓰어웨이, 앨리슨 헨리, 피비 호르간, 제나 홀만, 스티브 이아코비노, 루카스 카울, 나빈 쿠퍼스와미, 앨리사 라우, 존 라이히티, 수잔 마이클, 고든 리차드슨, 파스 샤, 리사 토바스코, 아비나시 우딤찬다니, 트리스탄 위팅, 자로드 윌슨, 존 요우, 맹채오 장, 알렉스 알렉자니안, 리드 알스팩, 윌 나이트, 리즈 펄먼, 그리고 우리 아기들과 소중한 이들에게 특별한 감사를 ❤️

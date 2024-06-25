@@ -10,7 +10,6 @@ originalTitle: "How Analyzing JavaScript Files Can Uncover Multiple Bugs"
 link: "https://medium.com/@l0da/how-i-hacked-one-of-these-big-companies-js-files-analysis-7cf47372b642"
 ---
 
-
 ![image](/assets/img/2024-05-23-HowAnalyzingJavaScriptFilesCanUncoverMultipleBugs_0.png)
 
 السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُه
@@ -19,8 +18,18 @@ Peace be upon you, and the mercy of Allah, and His blessings
 
 Hello World !
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4월 2일, 특정 타겟 BBP에 대한 정찰을 시작했어요. 유감스럽게도 이 글을 쓰는 시점까지 그들은 공개 공개 요청에 대답하지 않았습니다. 그래서 나는 그것을 '삭제됨'이라고 부를 것이에요.
 
@@ -30,8 +39,18 @@ Hello World !
 
 JS 코드가 약 220k 라인이었는데, 그냥 "아니, 내가 이겨."라고 생각했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-HowAnalyzingJavaScriptFilesCanUncoverMultipleBugs_1.png)
 
@@ -41,8 +60,18 @@ JS 코드가 약 220k 라인이었는데, 그냥 "아니, 내가 이겨."라고 
 
 그 결과 그 대상에 대한 몇 개의 서브도메인 코드를 발견할 수 있었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 var i = t(97871),
@@ -75,7 +104,18 @@ function f(s, r) {
 
 <img src="/assets/img/2024-05-23-HowAnalyzingJavaScriptFilesCanUncoverMultipleBugs_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러한 환경에서는 개발자들이 중요한 버그를 테스트할 가능성이 높아지며, 공격자에게 기회의 창을 제공할 수 있습니다. 공격자는 웹 사이트를 모니터링하여 심각한 버그가 스테이징 환경에 도입될 때까지 기다린 다음 해당 버그를 프로덕션 웹 사이트에서 잠재적으로 악용할 수 있습니다.
 
@@ -85,14 +125,47 @@ function f(s, r) {
 
 저는 CVSS 3.1로 높은 중요도로 보고했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 X/Twitter에서 저를 팔로우하세요: [https://twitter.com/L0daW](https://twitter.com/L0daW)

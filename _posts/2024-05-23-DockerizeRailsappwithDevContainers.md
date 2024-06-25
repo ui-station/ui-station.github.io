@@ -3,13 +3,12 @@ title: "데브 컨테이너로 Rails 앱을 도커라이즈하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-DockerizeRailsappwithDevContainers_0.png"
 date: 2024-05-23 14:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DockerizeRailsappwithDevContainers_0.png
 tag: Tech
 originalTitle: "Dockerize Rails app with Dev Containers"
 link: "https://medium.com/@shettigarc/dockerize-rails-app-with-dev-containers-60260bc2b100"
 ---
-
 
 ![이미지](/assets/img/2024-05-23-DockerizeRailsappwithDevContainers_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@shettigarc/dockerize-rails-app-with-dev-containers-60
 
 이때 DevContainers가 등장합니다. 이를 통해 로컬 Rails 개발 환경 (및 다른 프레임워크)을 위한 전체 Docker 설정이 간단해집니다. 더 이상 명령줄이 혼잡해지지 않고, 매끄럽고 일관된 개발 경험만을 가져다줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VSCode에서 개발 컨테이너를 사용하여 Rails를 도커화하는 간단한 튜토리얼을 제공합니다. 또한 도커나 도컴포즈 명령어를 실행할 필요 없이 컨테이너 환경 내에서 작업하는 방법을 안내합니다.
 
@@ -34,7 +44,18 @@ VSCode에서 개발 컨테이너를 사용하여 Rails를 도커화하는 간단
 
 이 글과 관련된 튜토리얼을 통해 Rails 프로젝트에서 Dev Containers를 사용해보기를 고려하게끔 도와드리기를 바랍니다. 개발 프로세스를 최적화하고, 협업을 개선하며, 일관된 환경을 유지하는 환상적인 방법입니다. 즐거운 코딩 되세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 도움이 되었다면, 추가적인 팁과 튜토리얼을 보기 위해 LinkedIn을 팔로우하고 YouTube 채널을 구독해주세요.
 

@@ -3,13 +3,12 @@ title: "라즈베리 파이로 쿠버네티스 클러스터 구축 가이드"
 description: ""
 coverImage: "/assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_0.png"
 date: 2024-05-18 19:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_0.png
 tag: Tech
 originalTitle: "A Guide to Building a Kubernetes Cluster with Raspberry Pi’s"
 link: "https://medium.com/@alexsniffin/a-guide-to-building-a-kubernetes-cluster-with-raspberry-pis-23fa4938d420"
 ---
-
 
 몇 년 전에 라즈베리 파이에서 Kubernetes 클러스터를 세팅했었어요. 당시 라즈베리 파이의 ARM 아키텍처는 몇 가지 어려움을 야기했죠. ARM을 지원하는 애플리케이션을 찾는 건 어려운 과제였는데, 그래서 필요한 애플리케이션과 컨테이너를 직접 빌드해야 했던 적이 많았어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@alexsniffin/a-guide-to-building-a-kubernetes-cluster-
 
 # 요구 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클러스터를 설정하기 위해서는 하드웨어가 필요합니다. 필요한 것들은 다음과 같아요:
 
@@ -34,17 +44,39 @@ link: "https://medium.com/@alexsniffin/a-guide-to-building-a-kubernetes-cluster-
 
 # OS 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 단계는 모든 Raspberry Pi에 OS를 설정해야 합니다. 그렇지 않으면 Raspberry Pi는 기본적으로 부팅할 시스템이 없습니다.
 
 Raspberry Pi Imager를 다운로드하십시오. 이 편리한 애플리케이션은 Raspberry Pi의 다운로드와 플래싱에 사용됩니다. 이 가이드에서는 Raspberry Pi OS (Debian의 파생 버전)의 64비트 헤드리스 버전을 사용할 것입니다.
 
-최신 Raspberry Pi와 호환되는지 확인한 후에 SD 카드를 플래싱해야 합니다. 
+최신 Raspberry Pi와 호환되는지 확인한 후에 SD 카드를 플래싱해야 합니다.
 
 ![Raspberry Pi Imager](/assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SD 카드를 선택하고 OS를 플래싱하기 시작하세요. 모든 SD 카드에 대해 이 작업을 완료할 때까지 반복해주세요.
 
@@ -54,7 +86,18 @@ SD 카드를 선택하고 OS를 플래싱하기 시작하세요. 모든 SD 카�
 
 SSH를 활성화하려면 SD 카드의 부트 파티션에 확장자 없이 ssh라는 빈 파일을 생성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로그인 사용자를 설정하기 위해, SD 카드의 부팅 파티션에 userconf라는 파일을 생성하세요. 이 파일은 'name':'encrypted-password'로 구성된 텍스트 한 줄을 포함해야 합니다. 로그인 사용자로 노드를 사용했지만 원하는 대로 사용하셔도 됩니다.
 
@@ -66,7 +109,18 @@ echo '{password}' | openssl passwd -6 -stdin
 
 파일을 저장하고 SD 카드를 제거하세요. 그리고 라즈베리 파이에 SD 카드를 삽입하고 전원을 켜세요. 개인 네트워크의 라우터나 네트워크 스위치에 연결되어 있는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 첫 번째 부팅 및 초기 구성
 
@@ -76,7 +130,18 @@ echo '{password}' | openssl passwd -6 -stdin
 
 첫 번째 노드에 SSH로 연결합니다. 이 노드는 클러스터의 제어 평면을 실행하는 마스터 노드가 됩니다. 라즈베리 파이로 터널링한 후에 설정을 시작할 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 명령어를 사용하여 사용자를 sudo 그룹에 추가해주세요.
 
@@ -90,8 +155,18 @@ sudo usermod -aG sudo node
 sudo raspi-config
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*XG-oT3YeryzngA-Xv3JY9w.gif)
 
@@ -101,8 +176,18 @@ sudo raspi-config
 
 기본적으로 cgroup 메모리 옵션이 비활성화되어 있으므로 Docker가 메모리 사용량을 제한할 수 있도록 업데이트해야 합니다. /boot/cmdline.txt를 열고 cgroup_enable=memory cgroup_memory=1을 추가해주세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리의 apt 저장소를 업데이트하고 Kubernetes 저장소를 포함시킬 차례입니다.
 
@@ -119,7 +204,18 @@ curl -sSL https://get.docker.com | sh
 sudo usermod -aG docker node
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kubernetes 1.20부터는 dockershim이 폐기되고 있습니다. Mirantis에서 제공하는 cri-dockerd라는 클러스터용 오픈 소스 CRI를 사용할 수 있습니다. cri-dockerd를 설치하고 서비스를 설정하려면 다음 명령을 실행하세요:
 
@@ -144,7 +240,18 @@ Kubernetes 스케줄러를 위해 노드에서 swap을 비활성화하는 것이
 sudo apt-get update && sudo apt-get install dphys-swapfile && sudo dphys-swapfile swapoff && sudo dphys-swapfile uninstall && sudo systemctl disable dphys-swapfile
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 cri-dockerd 설정에 문제가 발생하면, 이 안내서를 확인해보세요. 처음에 작성했을 때와 달라진 사항이 있을 수 있어요.
 
@@ -157,7 +264,18 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 이 가이드에서는 모든 것이 1.26.6에서 작동하는지 테스트했어요. 1.24 이전 버전은 정상적으로 작동하지 않을 거예요. 이러한 패키지를 업데이트되지 않도록 표시할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 차선으로, 랜처 랩스에서 만든 k3s는 가벼운 옵션으로 좋은 선택일 것입니다. 그 중 일부 장점은 작은 실행 파일 크기, 매우 낮은 자원 요구 사항 및 ARM용으로 최적화되어 있다는 것입니다. 이 가이드에서는 이를 테스트해보지 않았지만, 이후에 비슷한 설정이 될 것으로 생각합니다.
 
@@ -189,7 +307,18 @@ networking:
 
 이 파일에는 마스터 노드의 설정이 포함되어 있습니다. criSocket이 cri-dockerd를 사용하고, 나중에 네트워크 CIDR을 설정해두었음을 주목하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 노드에서 제어 평면을 초기화하려면 다음을 실행하세요.
 
@@ -201,7 +330,18 @@ sudo kubeadm init --config kubeadm-config.yaml
 
 명령에서 지시하는 방법에 따라 kube-config를 설정하고, 워크스테이션에 kube-config와 가입 명령을 복사하고 저장하세요. 나중에 필요할 것이니까요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 클러스터 네트워킹
 
@@ -211,7 +351,18 @@ sudo kubeadm init --config kubeadm-config.yaml
 
 우리는 이를 위해 Flannel을 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마스터 노드에서 다음을 실행해 주세요.
 
@@ -223,11 +374,22 @@ kubectl apply -f https://github.com/flannel-io/flannel/releases/latest/download/
 
 # 클러스터에 새로운 노드 추가하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클러스터에 새 노드를 추가하는 것은 꽤 간단합니다. 많은 노드를 추가하는 경우에는 tmux와 같은 도구를 사용하여 세션 명령을 다중화하는 것이 좋습니다.
 
-"첫 번째 부팅 및 초기 설정"을 완료하고 "도커 및 쿠버네티스 초기 설정"을 진행하세요. 서로 다른 Kubernetes 구성 요소를 설치하는 단계 이후에 작업을 중지하세요. 이 시점에서 이전에 실행한 kubeadm join 명령을 실행해야 합니다. cri-socket 및 node-name 옵션을 포함하여 실행해 주세요. 
+"첫 번째 부팅 및 초기 설정"을 완료하고 "도커 및 쿠버네티스 초기 설정"을 진행하세요. 서로 다른 Kubernetes 구성 요소를 설치하는 단계 이후에 작업을 중지하세요. 이 시점에서 이전에 실행한 kubeadm join 명령을 실행해야 합니다. cri-socket 및 node-name 옵션을 포함하여 실행해 주세요.
 
 ```js
 sudo kubeadm join 10.0.0.100:6443 --token {token} --discovery-token-ca-cert-hash {hash} --cri-socket unix:///var/run/cri-dockerd.sock --node-name {name}
@@ -235,7 +397,18 @@ sudo kubeadm join 10.0.0.100:6443 --token {token} --discovery-token-ca-cert-hash
 
 이제 마스터 노드에서 클러스터를 모니터링하고 모든 노드가 클러스터에 가입하는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 > kubectl get nodes를 watch합니다.
@@ -246,7 +419,18 @@ sudo kubeadm join 10.0.0.100:6443 --token {token} --discovery-token-ca-cert-hash
 먼저 프로필에 구성을 내보냅니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 export KUBECONFIG=~/.kube/config
@@ -260,7 +444,18 @@ kubectl config use-context kubernetes-admin@kubernetes
 
 이제 원격으로 클러스터에 액세스할 수 있어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 > kubectl cluster-info
@@ -276,7 +471,18 @@ CoreDNS이 https://10.0.0.100:6443/api/v1/namespaces/kube-system/services/kube-d
 
 계속하기 전에, 이러한 도구들에 대한 모든 설정 변경 사항을 추적하기 위한 원격 git 저장소를 만들어 보시기를 권장합니다. 특히 ArgoCD를 사용할 때, 각 도구나 추가 응용 프로그램을 배포할 때마다 거기를 통해 추가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # ArgoCD
 
@@ -288,7 +494,18 @@ helm repo add argo https://argoproj.github.io/argo-helm
 
 Values 파일을 생성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 server:
@@ -305,7 +522,18 @@ server:
 helm install argocd -n argocd -f values.yaml argo/argocd
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 관리자 사용자의 기본 암호를 가져와야 합니다.
 
@@ -317,7 +545,18 @@ OpenWrt를 사용하고 있기 때문에 클러스터에 호스트 이름 항목
 
 ![그림](/assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ArgoCD에 로그인하고, 곧 돌아올게요.
 
@@ -327,7 +566,18 @@ ArgoCD에 로그인하고, 곧 돌아올게요.
 
 우리는 클러스터에 대한 정보 수집을 위해 타임 시리즈 메트릭 서버로 Prometheus를 사용할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설치하기 전에 Prometheus가 쿼리 데이터를 저장할 지속적인 볼륨을 설정해야 합니다. 집 클러스터에서는 예비 USB 드라이브를 사용하기로 결정했지만 원하는 것을 연결하여 사용할 수 있습니다.
 
@@ -340,22 +590,39 @@ sudo cp /etc/fstab /etc/fstab.bak
 
 장치를 연결한 다음 fstab을 변경 내용과 함께 수정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 /dev/sda1 /mnt/usb vfat defaults,uid=youruid,gid=yourgid,dmask=002,fmask=113 0 0
 
-
 이제 우리 노드 사용자의 사용자 및 그룹 설정으로 장치를 마운트합니다.
-
 
 sudo mount -o uid=youruid,gid=yourgid,dmask=002,fmask=113 /dev/sdX1 /mnt/usb
 
-
 이제 우리는 PersistentVolume과 PersistentVolumeChain을 가진 Kubernetes 자원을 생성하려고 합니다.
- 
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 apiVersion: v1
@@ -395,7 +662,18 @@ spec:
 helm create prometheus
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Chart.yaml에 Prometheus subchart를 종속성으로 추가해주세요.
 
@@ -419,32 +697,51 @@ prometheus:
       enabled: false
   server:
     nodeSelector:
-      kubernetes.io/hostname: {master node}
+      kubernetes.io/hostname: { master node }
     securityContext:
-      runAsUser: {userid}
+      runAsUser: { userid }
       runAsNonRoot: true
-      runAsGroup: {groupid}
-      fsGroup: {fsid}
+      runAsGroup: { groupid }
+      fsGroup: { fsid }
     persistentVolume:
       enabled: true
       existingClaim: "prometheus-usb-pvc"
       volumeName: "prometheus-usb-pv"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 추가 서비스를 비활성화합니다. 예를 들어 alertmanager, pushgateway, 그리고 configmapreload가 이에 해당합니다. 필요한 경우 다른 시간에 이를 활성화할 수 있습니다. 비정상적으로 행동하는 경우 알림을 받을 수 있는 유용한 도구인 Alert Manager입니다.
 
 이제 ArgoCD로 돌아가 "새 앱"을 만들어보겠습니다. Prometheus라는 이름의 앱을 만들고 깃 레포지토리를 소스로 추가하고 경로를 선택하세요. Grafana도 나중에 이 작업을 해야하므로 서로 다른 경로에 유지하세요.
 
-
 ![Image](/assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_4.png)
-
 
 생성한 사용자 정의 설정을 설정할 값 파일을 선택한 다음 앱을 생성하세요. 수동으로 동기화하도록 지정한 경우 동기화가 필요할 때 이를 수행해야 합니다. 이것은 업그레이드할 때 사용하거나 수동으로 릴리스하고자 할 때 유용합니다. 그 외에는 홈 프로젝트에 가장 적합한 CD용 자동 동기화 방법이 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Grafana](https://miro.medium.com/v2/resize:fit:1400/1*Ice0ZJGARkN6BdzAl1nGDQ.gif)
 
@@ -454,7 +751,18 @@ prometheus:
 helm create grafana
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 헬름 리포지토리를 추가해주세요.
 
@@ -472,24 +780,43 @@ dependencies:
     repository: https://grafana.github.io/helm-charts
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 values.yaml 파일을 추가해주세요.
 
 ```js
-grafana:
-  service:
-    enabled: true
-    type: NodePort
-    nodePort: 30180
+grafana: service: enabled: true;
+type: NodePort;
+nodePort: 30180;
 ```
 
 그런 다음 이전과 같이 ArgoCD를 통해 Grafana를 추가해주세요. 동기화를 진행하고 이제 두 개가 모두 실행 중이어야 합니다.
 
 <img src="/assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_5.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Grafana를 사용하려면 관리자 비밀번호를 먼저 얻어야 합니다.
 
@@ -501,7 +828,18 @@ kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-pass
 
 ![이미지](/assets/img/2024-05-18-AGuidetoBuildingaKubernetesClusterwithRaspberryPis_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Prometheus 데이터 원본을 추가해 보겠습니다. Prometheus 서비스 URL은 모니터링을 설정한 네임스페이스인 클러스터에서 http://prometheus-server.monitoring.svc.cluster.local로 접근할 수 있습니다. "Administration" → "Data sources" → "Add new data source" 아래로 이동한 다음 URL을 추가하고 "Save & Test"를 클릭하여 확인할 수 있습니다.
 
@@ -511,7 +849,18 @@ kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-pass
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*AIw7esBCtaz5koK_uJTU-w.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다음 단계
 
@@ -521,7 +870,18 @@ kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-pass
 
 ## 클러스터 자동화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 안내서는 교육 목적이나 소규모 개인 클러스터를 관리할 때 이상적인 Kubernetes 클러스터 설정에 대한 수동 방법을 제공합니다. 그러나 프로덕션 클러스터를 배포하거나 이 안내서의 범위를 벗어나는 작업을 수행할 경우, Ansible과 같은 자동화 도구를 활용하는 것을 권장합니다. 이렇게하면 더 효율적이고 확장 가능하며 관리하기 쉬운 배포가 가능합니다.
 
@@ -531,6 +891,17 @@ Kubernetes 클러스터를 설정하는 것은 쉽지 않을 수 있지만 한 �
 
 Raspberry Pi는 비용이 저렴하고 전력 소비가 낮은 옵션이지만, 더 큰 응용 프로그램에 대한 확장성이 여전히 제한되어 있습니다. Kubernetes 클러스터의 장점은 동일한 하드웨어만 실행하는 것에 제한받지 않는다는 것입니다. 새로운 노드를 추가함으로써 다양한 하드웨어를 혼합하여 필요에 맞게 Raspberry Pi나 서버와 같은 다양한 하드웨어를 조합할 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것이 좋은 시작점이 되었기를 바랍니다. 읽어 주셔서 감사합니다!

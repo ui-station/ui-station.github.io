@@ -10,7 +10,6 @@ originalTitle: "Android Auto Tutorial Step by Step Guide"
 link: "https://medium.com/proandroiddev/android-auto-tutorial-step-by-step-guide-50bb6b73e2b8"
 ---
 
-
 ![Android Auto](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_0.png)
 
 # 안드로이드 오토란?
@@ -19,8 +18,18 @@ link: "https://medium.com/proandroiddev/android-auto-tutorial-step-by-step-guide
 
 ![Android Auto Tutorial Step by Step Guide](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 차량에 핸드폰을 연결하면 모든 Android Auto 호환 앱을 사용할 수 있습니다.
 
@@ -30,7 +39,18 @@ Android Automotive OS는 차량에 내장된 안드로이드 기반 인포테인
 
 ![Android Auto Tutorial Step by Step Guide](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드 오토 및/또는 안드로이드 오토모티브 OS는 다음 유형의 앱을 지원합니다:
 
@@ -46,7 +66,18 @@ Android Automotive OS는 차량에 내장된 안드로이드 기반 인포테인
 
 데스크톱 헤드 유닛(DHU)을 사용하면 개발 컴퓨터를 안드로이드 오토 헤드 유닛으로 에뮬레이션하여 안드로이드 오토 앱을 실행하고 테스트할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DHU는 Windows, Mac OS 및 Linux 시스템에서 작동합니다.
 
@@ -59,7 +90,18 @@ DHU는 Windows, Mac OS 및 Linux 시스템에서 작동합니다.
 
 ![AndroidAutoTutorialStepbyStepGuide_3](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. DHU는 SDK_LOCATION/extras/google/auto/ 디렉토리에 설치됩니다.
 
@@ -73,7 +115,18 @@ chmod +x ./desktop-head-unit
 ./desktop-head-unit --usb
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7. 에뮬레이터가 작동을 시작하고 Android 장치에서 업데이트 관련 팝업이 표시되면 업데이트 옵션을 클릭하고 에뮬레이터를 다시 시작하세요.
 
@@ -83,7 +136,18 @@ chmod +x ./desktop-head-unit
 
 Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱에 허용된 템플릿 세트를 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나에 따르면, 구글에서 제공하는 미리 정의된 UI 템플릿을 사용하면 운전 중에 안드로이드 오토 장치와 조화롭게 작동할 수 있어요.
 
@@ -93,10 +157,20 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 
 ![Tab Container Template](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 마크다운 형식으로 변환한 표입니다.
-
 
 - Tab bar with app icon and up to 4 tabs (no back button)
 - Embedded template, which can be any of the following types: List, Grid, Search, Pane, or Message
@@ -104,9 +178,18 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 
 ![Image](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_7.png)
 
@@ -116,9 +199,18 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 
 - Search Template
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_9.png)
 
@@ -129,9 +221,18 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 
 - Manifest 파일에서 Android Auto 지원 선언하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Step 10](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_10.png)
 
@@ -141,8 +242,18 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 
 ![Step 12](/assets/img/2024-05-27-AndroidAutoTutorialStepbyStepGuide_12.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드 오토가 미디어 브라우저 서비스와 상호 작용하는 방법:
 
@@ -156,7 +267,18 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 
 예시: 음악 항목을 재생하게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드 오토에서 미디어 앱을 지원하는 필수 단계:
 
@@ -166,7 +288,18 @@ Android Auto에서는 사용자 정의 UI를 만들 수 없고 Android Auto 앱�
 
 기본적으로 앱은 다음 작업을 지원해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - ACTION_PLAY
 - ACTION_PAUSE
@@ -181,7 +314,18 @@ If applicable to your app's content, you can also consider supporting the follow
 
 The MCT includes tests for the following media actions:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Play
 - Play From Search
@@ -200,11 +344,33 @@ The MCT includes tests for the following media actions:
 
 ## 사용자 정의 재생 조작
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미디어 앱이나 메시징 앱, 내비게이션 주차 앱 등이라면 Android Auto 플랫폼을 지원하는 것이 좋은 것 같아요. 사용자가 운전 중에 스크린을 보지 않고도 음성 명령으로 어플을 사용할 수 있도록 하는 것이 유용할 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 그럼 이만 마치겠습니다. 향후 글에서는 안드로이드 오토(Android Auto) 및 안드로이드 오토모티브(Android Automotive) 구현 예제 앱을 공유할 예정입니다.
 
@@ -214,7 +380,18 @@ UAMP 미디어 앱은 안드로이드 오토(Android Auto) 및 안드로이드 �
 
 제 소셜 미디어 및 기타 플랫폼에서 저에게 연락하거나 최신 소식을 확인하세요: [https://linktr.ee/droiddikshit](https://linktr.ee/droiddikshit) 🤝
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고 자료:
 

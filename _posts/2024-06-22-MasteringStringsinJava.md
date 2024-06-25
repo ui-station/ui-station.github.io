@@ -3,13 +3,12 @@ title: "Java에서 문자열 마스터하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-MasteringStringsinJava_0.png"
 date: 2024-06-22 22:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-MasteringStringsinJava_0.png
 tag: Tech
 originalTitle: "Mastering Strings in Java"
 link: "https://medium.com/@keerthanaj0603/mastering-strings-in-java-c62627e86bfe"
 ---
-
 
 문자열 클래스
 
@@ -19,15 +18,37 @@ link: "https://medium.com/@keerthanaj0603/mastering-strings-in-java-c62627e86bfe
 
 이 경우에는 "Java"가 문자열 상수 풀(String Constant Pool, SCP)에 배치되고 s가 그것을 가리킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **String Constant Pool in Java**
 
 Java의 문자열 상수 풀(String Constant Pool)은 JVM이 사용하는 힙 메모리의 일부로, 문자열 상수를 저장하는 데 사용됩니다. 문자열 풀의 주요 목적은 기존의 문자열 인스턴스를 재사용하여 메모리를 절약하는 것입니다.
 
-2) `String s = new String("Vamika");` // 이 코드는 두 개의 문자열 객체와 하나의 참조 변수를 생성합니다.
+2. `String s = new String("Vamika");` // 이 코드는 두 개의 문자열 객체와 하나의 참조 변수를 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 경우에는 새 키워드를 사용하므로 heap 영역에 새로운 String 객체가 생성되고 s가 해당 객체를 가리키게 됩니다. 게다가 리터럴 "Vamika"는 SCP에 배치됩니다. 단, 해당 객체가 pool 영역에 존재하지 않는 경우에 한합니다. 이미 동일한 객체가 존재하는 경우, 기존 객체가 재사용됩니다 (기존 String은 추가 참조를 갖게 됩니다).
 
@@ -37,7 +58,18 @@ Java의 문자열 상수 풀(String Constant Pool)은 JVM이 사용하는 힙 �
 
 문자열은 변경할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 모두 한 번 String 객체가 생성되면 그것을 변경할 수 없다고 들어봤어요 — 그렇다면 우리가 그것을 변경하려고 시도하면 어떻게 될까요? 알아보겠습니다.
 
@@ -47,7 +79,18 @@ Java의 문자열 상수 풀(String Constant Pool)은 JVM이 사용하는 힙 �
 
 String s="Java"; //이 코드는 값이 "Java"인 String 객체를 생성하고, s가 그것을 참조합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 s.concat(" Programming"); // JVM은 "Java Programming"이라는 두 번째 문자열 객체를 생성하지만 어떤 변수도 이를 참조하지 않습니다. 따라서 이 객체는 즉시 손실됩니다.
 
@@ -57,7 +100,18 @@ s.concat(" Programming"); // JVM은 "Java Programming"이라는 두 번째 문�
 
 s = s.concat(" Learning"); // JVM은 "Java Learning"이라는 또 다른 문자열 객체를 생성하고 변수 s가 이를 참조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-MasteringStringsinJava_3.png" />
 
@@ -67,7 +121,18 @@ s = s.concat(" Learning"); // JVM은 "Java Learning"이라는 또 다른 문자�
 
 ## String 객체들 간의 비교
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Case 1:
 
@@ -77,7 +142,18 @@ Case 1:
 
 Here, two different String objects are created in the heap memory. Each new String(“Vamika”) creates a new instance of a String object, even though they contain the same sequence of characters.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 '==' 연산자를 사용한 비교:
 '==' 연산자는 's1'과 's2'가 메모리에서 동일한 객체를 참조하는지를 확인합니다. 's1'과 's2'는 new 키워드를 사용하여 생성된 두 개의 별개 객체이기 때문에 이 비교는 false를 반환합니다.
@@ -90,7 +166,18 @@ Case 2:
 
 Case 3:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 String 상수마다 하나의 객체가 SCP 영역에 배치됩니다. 또는 실행 시 연산으로 인해 생성되는 객체는 힙 영역에만 배치됩니다.
 
@@ -100,7 +187,18 @@ Case 3:
 
 ## String 클래스의 중요한 메소드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - charAt(int index) — 지정된 인덱스에 위치한 문자 값을 반환합니다
 - concat(String s) — 다른 문자열을 하나의 끝에 추가합니다 (“+”도 작동합니다)

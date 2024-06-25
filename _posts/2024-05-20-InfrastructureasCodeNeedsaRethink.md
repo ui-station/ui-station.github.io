@@ -3,13 +3,12 @@ title: "인프라스트럭처를 코드로 씁니다 새로운 사고방식이 �
 description: ""
 coverImage: "/assets/img/2024-05-20-InfrastructureasCodeNeedsaRethink_0.png"
 date: 2024-05-20 17:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-InfrastructureasCodeNeedsaRethink_0.png
 tag: Tech
 originalTitle: "Infrastructure as Code Needs a Rethink"
 link: "https://medium.com/@hello_9187/infrastructure-as-code-needs-a-rethink-201c6875522c"
 ---
-
 
 ## 개발자에게 구름의 복잡성을 되돌리면, 제공 속도가 느리고 비용이 많이 들며 보안이 취약해집니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@hello_9187/infrastructure-as-code-needs-a-rethink-201
 
 IaC가 나오기 전에는 조직이 클라우드 제공업체의 웹 응용 프로그램에서 수동으로 클라우드 자원을 생성했습니다. 이제 클라우드 인프라를 선언적으로 정의하고 버전 관리 시스템에 저장함으로써, 개발자는 애플리케이션 코드가 관리되는 방식과 같이 버전이 지정되고 반복 가능한 인프라 릴리스를 만들 수 있습니다. 클라우드 인프라의 제공 속도, 안정성 및 감사 가능성 측면에서 얻는 가치는 과소평가해서는 안 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 지금까지 있어 온 곳이죠. 이제 클라우드 인프라 관리가 어디로 나아가야 할지 이야기해 보겠습니다.
 
@@ -29,7 +39,18 @@ IaC가 나오기 전에는 조직이 클라우드 제공업체의 웹 응용 프
 
 이 도구들 간의 구문과 구현 세부 사항은 각각 다르지만, 철학적으로 핵심 측면에서는 비슷합니다. 지원되는 클라우드의 인프라 관리를 가능한 한 유연하고 맞춤화하여 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표면적으로는 정말 멋져보이죠. 문제는 클라우드가 굉장히 복잡하다는 것이고, 이러한 도구들은 이 복잡성을 개발자에게 직접 전달합니다. 예를 들어, Terraform을 사용하여 AWS에서 상태를 가지는 표준 컨테이너화된 애플리케이션을 실행하고 싶다고 가정해봅시다. 이를 위해서는 다음과 같은 작업을 해야 합니다:
 
@@ -47,7 +68,18 @@ IaC가 나오기 전에는 조직이 클라우드 제공업체의 웹 응용 프
 - 인프라를 구성하기 전 애플리케이션 비용을 확신하고 추정했나요?
 - 각 클라우드 리소스에 적절한 태그가 지정되었나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 고려해야 할 복잡성의 다른 요소 두 가지가 있습니다:
 
@@ -58,7 +90,18 @@ IaC가 나오기 전에는 조직이 클라우드 제공업체의 웹 응용 프
 
 대부분의 조직이라면 우선 빠르게 애플리케이션을 클라우드로 옮기고, 그런 다음 제3자 도구(오픈 소스 및 상용)를 사용하여 클라우드 인프라를 반응적으로 정리하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 보안 스캐닝: tfsec, checkov, Wiz, Snyk, Prisma Cloud 등
 - 클라우드 비용 최적화: infracost, 다양한 유료 오퍼링 등
@@ -69,7 +112,18 @@ IaC가 나오기 전에는 조직이 클라우드 제공업체의 웹 응용 프
 
 매우 성숙한 Terraform 관리를 제공하는 조직은 개별 개발자가 자체 인프라 요구 사항에 활용할 수 있는 미리 구성된 Terraform 모듈을 제공합니다. 이 접근 방식은 주로 보안 및 비용 문제를 해결하지만 다음 측면에서는 약점이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 개발자들이 올바른 모듈을 선택하는 동안 계속해서 인지 부하가 발생합니다.
 - 중요한 추가 투자 없이 여러 클라우드 제공 업체에 확장되지 않습니다.
@@ -82,7 +136,18 @@ IaC가 나오기 전에는 조직이 클라우드 제공업체의 웹 응용 프
 
 Terraform의 배포 전에 문제를 예방하기 위해 위의 도구와 전략을 적극적으로 도입했다고 하더라도, 운영 모델은 여전히 근본적으로 반응적입니다. Terraform이 거의 모든 리소스를 거의 모든 방법으로 배포할 수 있게 되는 반응으로, 개발 운영/플랫폼/SRE 엔지니어 팀이 복잡한 내부 서비스를 유지보수해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 미래가 어떻게 보일지
 
@@ -95,7 +160,18 @@ Terraform의 배포 전에 문제를 예방하기 위해 위의 도구와 전략
 
 # 다음에는
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 솔루션이 등장하여 현재 IaC 도구로는 해결하기 어려웠던 이러한 큰 문제들을 해결할 수 있을지는 알 수 없습니다. Terraform는 IaC 영역에서 너무도 우세해져서 새롭고 흥미로운 접근 방식이라도 Terraform을 기반으로 사용하고 있습니다 (예: Wing).
 

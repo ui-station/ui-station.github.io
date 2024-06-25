@@ -3,14 +3,12 @@ title: "Java 경험 개발자 선도 개발자 인터뷰 질문 목록 이 기�
 description: ""
 coverImage: "/assets/img/2024-05-18-JavaExperienceDeveloperLeadDeveloperInterviewQuestionsListInthisarticlemorethan10companiesquestioniscovered_0.png"
 date: 2024-05-18 15:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-JavaExperienceDeveloperLeadDeveloperInterviewQuestionsListInthisarticlemorethan10companiesquestioniscovered_0.png
 tag: Tech
 originalTitle: "Java Experience Developer Lead Developer Interview Questions List : In this article more than 10 companies question is covered"
 link: "https://medium.com/@vivekkadiyanits/java-lead-7-to-10-years-interview-mastery-covered-question-has-asked-in-more-than-9-service-base-d55ffbb0009c"
 ---
-
-
 
 ![이미지](/assets/img/2024-05-18-JavaExperienceDeveloperLeadDeveloperInterviewQuestionsListInthisarticlemorethan10companiesquestioniscovered_0.png)
 
@@ -20,8 +18,18 @@ Questions
 
 ![이미지](/assets/img/2024-05-18-JavaExperienceDeveloperLeadDeveloperInterviewQuestionsListInthisarticlemorethan10companiesquestioniscovered_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 1: 스트림 API를 통해 동시 수정을 시뮬레이션하는 방법은 무엇인가요?
 
@@ -31,7 +39,18 @@ Questions
 
 질문 4: JAVA 메모리 모델에 대해 간략히 설명해 주실 수 있나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Question 5: JDK 8에서 pegmen의 변경 사항은 무엇인가요? (PermGen과 Meta)
 
@@ -41,7 +60,18 @@ Question 7: 다양한 종류의 Http 메소드는 무엇이 있고 그 차이는
 
 Question 8: DDOS(서비스 거부) 공격이란 무엇이며, 이를 어떻게 애플리케이션에서 방지할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 9: 메소드 참조(Method Reference)와 함수형 인터페이스에 대해 설명해주세요.
 
@@ -50,7 +80,7 @@ Question 8: DDOS(서비스 거부) 공격이란 무엇이며, 이를 어떻게 �
 질문 11: 주로 JAVA 디자인 패턴과 관련된 질문입니다.
 생성 디자인 패턴
 i) 싱글턴(Singleton)
-ii) 빌더(Builder) 
+ii) 빌더(Builder)
 iii) 팩토리(Factory)
 iv) 프로토타입(Prototype)
 
@@ -67,7 +97,18 @@ iii) 전략(Strategy)
 
 질문 12: API를 어떻게 보안할 것인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 13: hashcode()와 equals()에 대해 간단히 설명해 주세요. 이어지는 질문은 사용자 지정 객체를 사용할 때 둘 중 하나만 재정의하고 다른 하나는 재정의하지 않았을 때의 상황을 어떻게 이해하시겠습니까?
 
@@ -77,7 +118,18 @@ iii) 전략(Strategy)
 
 질문 16: Kafka의 작동 방식과 Kafka 사용 시 컨슈머 그룹이 무엇인지 설명해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 17: 귀하의 마이크로서비스 애플리케이션을 설계하는 데 어떤 디자인 패턴을 사용했는지 알려주세요. 주로
 i) 서킷 브레이커
@@ -91,7 +143,18 @@ iv) 이중 커밋
 
 질문 20: Apache Spark는 무엇이며, Spring Boot 애플리케이션에서 Apache Spark의 사용 용도는 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 21: 스프링 부트 마이크로서비스 애플리케이션에서 traceId와 span Id는 무엇이며, 이러한 식별자의 사용 목적은 무엇인가요?
 
@@ -101,7 +164,18 @@ iv) 이중 커밋
 
 질문 24: 컬렉션 클래스의 시간/공간 복잡성과 내부 데이터 구조의 이름을 나열해 주실 수 있나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 25 : 귀하의 애플리케이션에서 사용한 모든 동시 컬렉션 클래스 및 Java 8 이후 컬렉션 클래스의 개선 사항은 무엇인가요?
 
@@ -111,7 +185,18 @@ iv) 이중 커밋
 
 질문 28 : 액추에이터의 사용 목적은 무엇이며, 같은 것을 어떻게 사용자 정의할 수 있나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 29 : 사용자 정의 어노테이션을 어떻게 만드나요?
 
@@ -121,7 +206,18 @@ iv) 이중 커밋
 
 질문 32 : 테이블에 이름, id 열이 있는 데이터베이스 테이블이 있다면 짝수 행을 찾는 쿼리를 작성해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 33 : Arrays.sort(..)와 Collections.sort(..)에서 사용되는 알고리즘의 이름은 무엇인가요?
 
@@ -131,7 +227,18 @@ iv) 이중 커밋
 
 질문 36 : 도커 이미지의 크기를 줄일 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 37: 싱글톤 클래스를 어떻게 파괴할 수 있나요? 싱글 객체 생성 전략은 무엇인가요?
 
@@ -141,7 +248,18 @@ iv) 이중 커밋
 
 질문 40: Spring Boot에서 HTTP 메소드 유형 변경 없이 두 가지 모호한 URL을 작동하게 하는 방법은 무엇인가요? URL을 변경하지 않고도 변경을 수락하지 않을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제 41 : 애플리케이션 배포 구조는 어떻습니까?
 
@@ -151,7 +269,18 @@ iv) 이중 커밋
 
 코딩 문제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-JavaExperienceDeveloperLeadDeveloperInterviewQuestionsListInthisarticlemorethan10companiesquestioniscovered_2.png" />
 
@@ -162,7 +291,18 @@ iv) 이중 커밋
 질문 3 : 0과 1의 배열이 있습니다. 모든 0은 왼쪽에 모든 1은 오른쪽에 위치하도록 유지하십시오.
 예 : Integer array[] =[1,1,0,1,0] - 출력 : [0,0,1,1,1]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Question 4: 주어진 입력에서 연속된 숫자 시퀀스를 찾으세요. 모든 가능한 테스트를 제공해 주세요.
 예시: 입력 1 2 3 5 9 a 6 7 8 4 @ -5 -7 -3 -2 -1
@@ -196,7 +336,18 @@ input3:
 
 Question 7: JAVA 스트림을 사용하여 주어진 문자열에서 고유한 요소를 찾는 프로그램을 작성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Question 8: 주어진 문자열에서 첫 번째로 반복되지 않는 요소를 Java Streams로 찾는 프로그램을 작성해주세요.
 
@@ -206,7 +357,18 @@ Question 10: 주어진 문자열에서 처음으로 반복되는 요소/문자�
 
 Question 11: 주어진 배열에서 가장 긴 문자열을 찾는 프로그램을 작성해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Question 12: 배열에서 2로 시작하는 모든 요소를 Stream API를 사용하여 찾는 Java 프로그램을 작성하십시오.
 
@@ -220,20 +382,20 @@ public class CodingProblem13 {
   String inputString = "[(]{}{[()()]()}"; // 이 문자열이 균형 잡힌 괄호 문자열인지 확인해야 함
   System.out.println("Result:::" + isBalancedInput(inputString));
  }
- 
+
  private static String isBalancedInput(String input) {
   Deque<Character> stack = new ArrayDeque<>();
   for (int i = 0; i < input.length(); i++) {
     if (!(input.charAt(i) == '}' || input.charAt(i) == ']' || input.charAt(i) == ')')) {
       stack.push(input.charAt(i));
     }
-    
+
     if ((input.charAt(i) == '}' || input.charAt(i) == ']' || input.charAt(i) == ')')) {
       if (stack.isEmpty()) {
         return "Not Balanced ";
       }
       char top = stack.pop();
-      
+
       if ((input.charAt(i) == ')' && top != '(') || (input.charAt(i) == ']' && top != '[') || (input.charAt(i) == '}' && top != '{')) {
         return "Not Balanced ";
       }
@@ -244,7 +406,18 @@ public class CodingProblem13 {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문서를 읽어 주셔서 감사합니다. 동일한 내용에 대한 소준하고 유익한 피드백/제안을 제공해 주시면 감사하겠습니다.
 

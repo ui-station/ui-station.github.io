@@ -3,13 +3,12 @@ title: "SwiftUI에서 여러 개의 경고를 표시하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtoshowMultipleAlertsinSwiftUI_0.png"
 date: 2024-06-19 14:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtoshowMultipleAlertsinSwiftUI_0.png
 tag: Tech
 originalTitle: "How to show Multiple Alerts in SwiftUI"
 link: "https://medium.com/gitconnected/how-to-show-multiple-alerts-in-swiftui-252f4528ad90"
 ---
-
 
 ## SwiftUI에서 여러 경고를 표시하는 것은 조금 까다로울 수 있어요. 이 두 가지 방법을 소개해 드릴게요.
 
@@ -19,7 +18,18 @@ SwiftUI에서 여러 경고를 표시하는 것은 귀찮을 수 있어요. 그�
 
 # 단일 경고
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어플리케이션이 있어요. 사용자가 10진수를 입력하면, 해당 입력이 짝수일 경우 경고 메시지가 표시됩니다.
 
@@ -27,7 +37,7 @@ SwiftUI에서 여러 경고를 표시하는 것은 귀찮을 수 있어요. 그�
 struct ContentView: View {
     @State private var showEvenAlert: Bool = false
     @State private var num = 2
-    
+
     var body: some View {
         VStack {
              TextField("숫자를 입력하세요: ", value: $num, format: .number)
@@ -44,11 +54,22 @@ struct ContentView: View {
 }
 ```
 
-정상적으로 작동합니다. 사용자가 짝수를 입력하면 경고 메시지가 표시됩니다. 
+정상적으로 작동합니다. 사용자가 짝수를 입력하면 경고 메시지가 표시됩니다.
 
 <img src="https://miro.medium.com/v2/resize:fit:1200/1*uA2Shsj_0WoDUVHLylsHvw.gif" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다중 알림
 
@@ -59,7 +80,7 @@ struct ContentView: View {
     @State private var showEvenAlert:Bool = false
     @State private var showOddAlert:Bool = false
     @State private var num = 2
-    
+
     var body: some View {
         VStack {
             TextField("숫자를 입력하세요: ", value: $num, format:.number)
@@ -75,7 +96,7 @@ struct ContentView: View {
             .alert(isPresented: $showOddAlert, content: {
                 Alert(title: Text("홀수"), message: Text("\(num)은(는) 홀수입니다"), dismissButton: .cancel() )
             })
-            
+
         }
     }
 }
@@ -83,8 +104,18 @@ struct ContentView: View {
 
 안타깝게도 그 답은 아니에요. 위의 코드는 작동하지 않을 거예요. 홀수에 대한 알림은 표시되지만 짝수에 대한 알림은 나타나지 않을 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:1200/1*JtKMxr1kTj-vWjPfBfa0bw.gif)
 
@@ -94,16 +125,25 @@ struct ContentView: View {
 
 한 알람을 여러 뷰에 할당할 수 있습니다. 그래서 단일 뷰에 한 개 이상의 알람이 없습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct ContentView: View {
     @State private var showEvenAlert: Bool = false
     @State private var showOddAlert: Bool = false
     @State private var num = 2
-    
+
     var body: some View {
         VStack {
             TextField("Enter number: ", value: $num, format: .number)
@@ -112,7 +152,7 @@ struct ContentView: View {
                 .alert(isPresented: $showOddAlert) {
                     Alert(title: Text("Odd"), message: Text("\(num) is odd"), dismissButton: .cancel())
                 }
-            
+
             Button("Show Alert if number is odd or even") {
                 showEvenAlert = num % 2 == 0
                 showOddAlert = num % 2 == 1
@@ -131,15 +171,25 @@ struct ContentView: View {
 
 # 해결책 2:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제를 해결하는 한 가지 방법은 열거형(enum)을 사용하는 것이에요. 모든 종류의 알림에 대해 하나의 case를 만들고 열거형(enum)의 연관 값(associated value)을 사용하여 알림의 제목과 메시지를 나타낼 수 있어요.
 
 ```js
 enum AlertContent {
     case even(num:Int), odd(num:Int)
-    
+
     var title:String {
         switch self {
         case .even:
@@ -148,7 +198,7 @@ enum AlertContent {
             "홀수"
         }
     }
-    
+
     var message:String {
         switch self {
         case .even(let num):
@@ -167,7 +217,7 @@ struct ContentView: View {
     @State private var showAlert:Bool = false
     @State private var num = 2
     @State private var alertContent:AlertContent = .even(num: 2)
-    
+
     var body: some View {
         VStack {
             TextField("숫자를 입력하세요: ", value: $num, format:.number)
@@ -185,7 +235,18 @@ struct ContentView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 화면에 필요한 경고를 여러 개 보여야 할 때도 하나의 경고창으로 처리할 수 있습니다. 더 많은 경고를 위해 enum 케이스를 더 추가해야 할 뿐입니다. 이상적으로는 버튼 누름 로직은 다른 곳으로 이동하여, 필요한 경고의 수에 관계없이 뷰가 변하지 않습니다. GitHub에서 해당 프로젝트를 확인할 수 있습니다.
 

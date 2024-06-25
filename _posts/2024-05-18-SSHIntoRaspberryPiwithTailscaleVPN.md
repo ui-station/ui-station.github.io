@@ -3,13 +3,12 @@ title: "라즈베리 파이에 Tailscale VPN을 통해 SSH하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-SSHIntoRaspberryPiwithTailscaleVPN_0.png"
 date: 2024-05-18 19:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-SSHIntoRaspberryPiwithTailscaleVPN_0.png
 tag: Tech
 originalTitle: "SSH Into Raspberry Pi with Tailscale VPN"
 link: "https://medium.com/@shilleh/ssh-into-raspberry-pi-with-tailscale-vpn-eb2d645ae395"
 ---
-
 
 <img src="/assets/img/2024-05-18-SSHIntoRaspberryPiwithTailscaleVPN_0.png" />
 
@@ -19,7 +18,18 @@ Tailscale은 기기 간의 안전한 네트워크를 생성하는 과정을 간�
 
 나머지 부분을 읽기 전에 아직 채널을 구독하지 않았다면 반드시 구독하고 지원해주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구독하기:
 
@@ -29,7 +39,18 @@ YouTube
 
 [Buy Me a Coffee](https://www.buymeacoffee.com/mmshilleh)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UpWork에서 저를 고용하여 IoT 프로젝트를 구축하세요:
 
@@ -39,7 +60,18 @@ UpWork에서 저를 고용하여 IoT 프로젝트를 구축하세요:
 
 라즈베리 파이 업데이트: 모든 패키지가 최신 상태인지 확인하려면 Raspberry Pi를 업데이트하세요. 터미널을 열고 다음을 실행하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 sudo apt update
@@ -55,7 +87,18 @@ curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /et
 
 패키지 목록을 업데이트하고 Tailscale을 설치하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 sudo apt update
@@ -70,7 +113,18 @@ sudo tailscale up
 
 Raspberry Pi를 Tailscale 계정으로 인증하기 위해 안내에 따라 따라하세요. 이를 위해 웹 브라우저에서 Tailscale 계정으로 로그인하고 장비를 인가해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 2: 맥에서 Tailscale 설정하기
 
@@ -82,7 +136,18 @@ Raspberry Pi를 Tailscale 계정으로 인증하기 위해 안내에 따라 따�
 
 라즈베리 파이의 Tailscale IP 찾기: 라즈베리 파이에서 다음을 실행하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 tailscale ip -4
@@ -96,7 +161,18 @@ tailscale ip -4
 ssh pi@<tailscale-ip>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 단계에서 얻은 IP 주소로 `tailscale-ip`를 대체하세요. 예를 들어:
 
@@ -108,7 +184,18 @@ ssh pi@100.64.0.1
 
 Windows 사용자를 위한 참고: Windows 기기에 Tailscale을 설정하는 단계는 Mac과 유사합니다. Tailscale 웹사이트에서 Tailscale 설치 파일을 다운로드하고 설치한 다음 Tailscale 계정으로 로그인하세요. 그런 다음 PuTTY나 Windows 터미널과 같은 SSH 클라이언트를 사용하여 Raspberry Pi에 Tailscale IP를 사용하여 SSH로 연결하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

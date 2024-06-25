@@ -3,13 +3,12 @@ title: "MLOps 작업을 위한 GPU와 함께 Kubernetes 사용 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-KuberneteswithGPUforMLOpsWorkloads_0.png"
 date: 2024-06-23 00:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-KuberneteswithGPUforMLOpsWorkloads_0.png
 tag: Tech
 originalTitle: "Kubernetes with GPU for MLOps Workloads"
 link: "https://medium.com/@sivanaikk0903/kubernetes-with-gpu-for-mlops-workloads-c684f8c8d41c"
 ---
-
 
 이 기사에서는 GPU가 쿠버네티스와 통합되어 기계 학습 워크로드를 실행하는 방법에 대해 논의하고자 합니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@sivanaikk0903/kubernetes-with-gpu-for-mlops-workloads
 
 0. Docker가 설치되어 있는지 확인하세요. 아직 설치되지 않았다면 여기에서 Docker를 다운로드하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # NVIDIA Container Toolkit for Docker
 
@@ -35,7 +45,18 @@ sudo apt-get -y install cuda-toolkit-12-5
 - 공식 웹사이트에서 해당 OS에 맞는 NVIDIA 컨테이너 툴킷을 설치해주세요.
 - 제가 WSL을 사용하고 있기 때문에 apt 명령어를 통해 설치하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
@@ -52,8 +73,18 @@ sudo apt-get update
 
 - NVIDIA Container Toolkit 패키지를 설치합니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 sudo apt-get install -y nvidia-container-toolkit
@@ -67,10 +98,20 @@ sudo apt-get install -y nvidia-container-toolkit
 sudo nvidia-ctk runtime configure --runtime=docker
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 테이블 태그를 Markdown 형식으로 변경한 코드입니다.
-
 
 <img src="/assets/img/2024-06-23-KuberneteswithGPUforMLOpsWorkloads_1.png" />
 
@@ -82,8 +123,18 @@ sudo systemctl restart docker
 
 - Docker Desktop
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만일 Docker Desktop을 사용 중이라면, 설정을 다르게 구성하고 daemon.json을 수정해야 합니다.
 
@@ -100,7 +151,18 @@ sudo systemctl restart docker
 
 ![이미지](/assets/img/2024-06-23-KuberneteswithGPUforMLOpsWorkloads_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. Apply 및 다시 시작을 클릭하고 GPU 확인
 
@@ -112,7 +174,18 @@ sudo docker run --rm --runtime=nvidia --gpus all ubuntu nvidia-smi
 
 ![이미지](/assets/img/2024-06-23-KuberneteswithGPUforMLOpsWorkloads_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Minikube
 
@@ -125,7 +198,18 @@ sudo docker run --rm --runtime=nvidia --gpus all ubuntu nvidia-smi
 minikube start --gpus all --driver=docker --addons=ingress
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Minikube의 nvidia-gpu-device-plugin 애드온은 Kubernetes 클러스터에서 GPU 지원을 활성화하는 데 설계되었습니다. 이 애드온을 사용하면 Kubernetes가 GPU가 필요한 작업로드를 인식하고 예약하여 클러스터에서 GPU 리소스를 사용할 수 있게 됩니다.
 
@@ -135,17 +219,39 @@ NVIDIA GPU 장치 플러그인은 Kubernetes 클러스터에서 NVIDIA GPU를 �
 
 주요 기능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - GPU 발견:
 
-    - 노드에서 NVIDIA GPU를 자동으로 발견하여 Kubernetes에서 스케줄 가능한 리소스로 이용할 수 있습니다.
+  - 노드에서 NVIDIA GPU를 자동으로 발견하여 Kubernetes에서 스케줄 가능한 리소스로 이용할 수 있습니다.
 
 - GPU 리소스 관리:
 
-    - GPU 리소스를 컨테이너에 할당하는 작업을 관리합니다. Pod에 요청된 GPU 수를 확인하고 GPU 리소스를 스케줄링하는 복잡성을 처리합니다.
+  - GPU 리소스를 컨테이너에 할당하는 작업을 관리합니다. Pod에 요청된 GPU 수를 확인하고 GPU 리소스를 스케줄링하는 복잡성을 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 격리:
 
@@ -155,7 +261,18 @@ NVIDIA GPU 장치 플러그인은 Kubernetes 클러스터에서 NVIDIA GPU를 �
 
 - GPU 활용에 관한 메트릭을 노출하여 GPU 워크로드의 모니터링과 스케일링에 활용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 쿠버네티스에서 GPU 가용성 확인하기
 
@@ -167,7 +284,18 @@ kubectl get nodes -o "custom-columns=NAME:.metadata.name,STATUS:.status.conditio
 
 - 작업으로 확인하고 매니페스트 파일을 적용하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 apiVersion: batch/v1
@@ -178,12 +306,12 @@ spec:
   template:
     spec:
       containers:
-      - name: gpu-container
-        image: nvidia/cuda:12.5.0-base-ubuntu22.04
-        resources:
-          limits:
-            nvidia.com/gpu: 1 # Request 1 GPU
-        command: ["nvidia-smi"]
+        - name: gpu-container
+          image: nvidia/cuda:12.5.0-base-ubuntu22.04
+          resources:
+            limits:
+              nvidia.com/gpu: 1 # Request 1 GPU
+          command: ["nvidia-smi"]
       restartPolicy: Never
 ```
 
@@ -195,11 +323,21 @@ kubectl apply -f gpu-verify.yaml
 
 - 파드 가져오기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-kubectl get po 
+kubectl get po
 ```
 
 ![이미지](/assets/img/2024-06-23-KuberneteswithGPUforMLOpsWorkloads_5.png)
@@ -210,8 +348,18 @@ kubectl get po
 kubectl logs <pod>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-KuberneteswithGPUforMLOpsWorkloads_6.png)
 
@@ -221,8 +369,18 @@ GPU를 보실 수 있습니다. 업데이트를 기다려주세요. 몇 가지 �
 
 이제 쿠버네티스에서 머신러닝 모델을 훈련할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셔서 감사합니다!
 

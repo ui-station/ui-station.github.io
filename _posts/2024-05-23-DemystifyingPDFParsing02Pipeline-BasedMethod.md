@@ -3,13 +3,12 @@ title: "PDF 파싱 해부 02 파이프라인 기반 방법"
 description: ""
 coverImage: "/assets/img/2024-05-23-DemystifyingPDFParsing02Pipeline-BasedMethod_0.png"
 date: 2024-05-23 17:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DemystifyingPDFParsing02Pipeline-BasedMethod_0.png
 tag: Tech
 originalTitle: "Demystifying PDF Parsing 02: Pipeline-Based Method"
 link: "https://medium.com/ai-advances/demystifying-pdf-parsing-02-pipeline-based-method-82619dbcbddf"
 ---
-
 
 PDF 파일 및 스캔된 이미지와 같은 비구조화된 문서를 구조화 또는 반구조화된 형식으로 변환하는 것은 인공 지능의 핵심 요소입니다. 그러나 PDF의 복잡성 및 PDF 파싱 작업의 복잡성으로 인해이 프로세스는 신비로움을 지니게 됩니다.
 
@@ -19,7 +18,18 @@ PDF 파일 및 스캔된 이미지와 같은 비구조화된 문서를 구조화
 
 # 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Pipeline 기반 방법은 PDF를 구문 분석하는 작업을 모델 또는 알고리즘의 파이프라인으로 보는 방식으로, 그림 1에 나타난 것과 같습니다.
 
@@ -33,7 +43,18 @@ Pipeline 기반 방법은 다음 다섯 단계로 나뉠 수 있습니다:
 
 이어서, 이 글에서는 대표적인 Pipeline 기반 PDF 구문 분석 프레임워크 몇 가지를 살펴보고 그로부터 얻은 통찰을 공유할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마커
 
@@ -43,8 +64,18 @@ Pipeline 기반 방법은 다음 다섯 단계로 나뉠 수 있습니다:
 
 그림 2에 설명된 대로, 마커의 전체 프로세스는 다음 네 단계로 나뉘어집니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step 1: PyMuPDF와 OCR을 사용하여 페이지를 블록으로 나누고 텍스트를 추출합니다. 해당 코드는 다음과 같습니다:
 
@@ -113,7 +144,18 @@ def convert_single_pdf(
     ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3단계: 헤더 및 푸터 필터링, 코드 및 표 블록 수정, 수식을 위한 Texify 모델 적용하는 절차입니다. 해당 코드는 다음과 같습니다:
 
@@ -190,7 +232,18 @@ def convert_single_pdf(
     return full_text, out_meta
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Marker로부터 얻은 통찰
 
@@ -226,7 +279,18 @@ def ocr_entire_page_tess(page, lang: str, spellchecker: Optional[SpellChecker] =
     return blocks
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인사이트 2: 레이아웃LMv3와 같은 작은 다중 모달 사전 훈련 모델을 특정 작업에 맞게 세밀하게 조정하는 것이 매우 유익합니다. 예를 들어, Marker는 레이아웃LMv3을 세밀하게 조정하여 블록 유형을 감지하는 레이아웃 세그먼터 모델을 얻었습니다.
 
@@ -259,7 +323,18 @@ def load_layout_model():
 
 인사이트 3: PDF 파일이 단일 열인지 또는 이중 열인지 확인하여 읽기 순서를 설정하는 것은 PDF 구문 분석에서 중요합니다. Marker의 방법은 레이아웃LMv3을 세밀하게 조정하여 열 감지기 모델을 만드는 것입니다. 이 모델은 페이지의 열 수를 결정하고, 그런 다음 중간 점 방법을 적용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def add_column_counts(doc, doc_blocks, model, batch_size):
@@ -304,8 +379,18 @@ def order_blocks(doc, doc_blocks: List[Page], model, batch_size=settings.ORDERER
 
 인사이트 5: 모델은 후처리에도 사용할 수 있습니다. 주요 아이디어는 거의 마지막에 다가간 텍스트를 받아 예비 텍스트를 개선하여 불필요한 부분을 제거하고 공백을 추가하며 새로운 줄을 삽입하는 T5 모델을 훈련시키는 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def load_editing_model():
@@ -334,8 +419,18 @@ def load_editing_model():
 
 당연히, Marker의 몇 가지 단점도 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 전문 레이아웃 분석 모델은 훈련되거나 세밀하게 조정되지 않았으며, 대신 PyMuPDF의 기본 기능을 사용했습니다. 이 접근 방식의 효과는 의문스럽습니다.
 - 테이블 인식 효과가 그리 좋지 않으며, 테이블 제목을 인식하지 못하는 문제가 있습니다. 이는 Nougat(OCR를 사용하지 않은 소형 모델 기반 솔루션으로 다음 글에서 자세히 소개될 것입니다)만큼 효과적이지 않습니다. 예를 들어, Figure 3는 "Attention Is All You Need"의 Table 3의 테이블 인식 결과를 보여줍니다. 왼쪽에는 원본 테이블이, 가운데에는 Marker를 사용한 결과가, 오른쪽에는 Nougat의 결과가 표시됩니다.
@@ -346,7 +441,18 @@ def load_editing_model():
 
 Papermage는 시각적으로 풍부하고 구조화된 과학 문서의 분석 및 처리를 위한 오픈 소스 프레임워크입니다. 문서 내의 텍스트 및 시각적 요소를 명확하고 직관적으로 표현하고 조작하기 위한 완벽한 추상화를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Papermage는 각기 다른 자연어 처리 (NLP) 및 컴퓨터 비전 (CV) 모델을 단일 프레임워크로 통합합니다. Papermage는 일반적인 과학 문서 처리 시나리오에 대한 사용 준비 완료 솔루션을 제공합니다.
 
@@ -356,7 +462,18 @@ Papermage는 각기 다른 자연어 처리 (NLP) 및 컴퓨터 비전 (CV) 모�
 
 Papermage는 주로 세 가지 부분으로 구성됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Magelib: 시각적으로 풍부한 문서를 다중 모달 구조로 나타내고 조작하기 위한 기본 요소와 방법을 포함하는 라이브러리입니다.
 - Predictors: 다양한 첨단 과학 문서 분석 모델들을 통합하여 통일된 인터페이스로 구현한 것입니다. 이는 개별 모델이 서로 다른 프레임워크에 작성되었거나 다른 모드에서 작동하는 경우에도 가능합니다.
@@ -368,7 +485,18 @@ Magelib은 시각적으로 풍부하고 구조화된 문서의 기본 요소를 
 
 문서 및 레이어
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Figure 4는 PaperMage가 문서를 생성하고 표현하는 방법을 보여줍니다.
 
@@ -378,7 +506,18 @@ Figure 4는 PaperMage가 문서를 생성하고 표현하는 방법을 보여줍
 
 나중에 우리는 레시피의 `run()` 함수의 구체적인 실행 과정을 소스 코드와 함께 분석할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개체
 
@@ -388,7 +527,18 @@ Figure 4는 PaperMage가 문서를 생성하고 표현하는 방법을 보여줍
 
 열/페이지에 걸친 문장이나 부유 그래픽/각주로 인해 중단된 문장과 같은 불연속 형태의 단위를 어떻게 관리합니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PaperMage는 두 개의 멤버 변수인 spans와 boxes를 사용합니다. 그림 5에서 볼 수 있듯이 spans는 모든 기호 중 문장의 텍스트를 식별하고, boxes는 페이지에서의 시각적 좌표를 매핑합니다. 이 접근 방식은 섬세한 레이아웃 차이를 수용하는 유연성을 제공합니다.
 
@@ -398,7 +548,18 @@ PaperMage는 두 개의 멤버 변수인 spans와 boxes를 사용합니다. 그�
 
 보다 깊이 PaperMage를 이해하기 위해, PDF 파싱의 구체적인 예시에서 시작하여 그로부터 자세히 설명하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 전체 프로세스 및 코드 분석
 
@@ -414,7 +575,18 @@ doc = core_recipe.run("YOUR_PDF_PATH")
 
 먼저 core_recipe = CoreRecipe()은 CoreRecipe 클래스의 생성자에 들어가게 되는데, 관련 라이브러리 및 모델의 초기화가 이루어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 class CoreRecipe(Recipe):
@@ -471,7 +643,18 @@ class Recipe:
 
 그런 다음 CoreRecipe 클래스의 from_pdf()와 from_doc() 함수로 이어질 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 class CoreRecipe(Recipe):
@@ -537,8 +720,18 @@ Figure 7는 PaperMage의 처리 흐름이 파이프라인 방식을 따른다는
 
 처음에는 PDFPlumber 라이브러리를 사용하여 레이아웃 분석을 수행합니다. 그 후 레이아웃 분석 결과를 바탕으로 페이지의 다른 엔티티를 파싱하는 데 전문 알고리즘 또는 모델을 사용합니다. 이에는 문장, 도형, 표, 제목 등이 포함됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 우리는 세 가지 알고리즘 또는 모델을 논의할 것입니다:
 
@@ -550,14 +743,25 @@ Figure 7는 PaperMage의 처리 흐름이 파이프라인 방식을 따른다는
 
 문장 분리에 사용되는 알고리즘은 PySBD로, rule-based 문장 경계 해석 Python 패키지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표를 마크다운 형식으로 변경해주세요.
 
 ```js
 [
-Unannotated Entity: {'spans': [[0, 212]]}, 
-Unannotated Entity: {'spans': [[212, 367]]},  
+Unannotated Entity: {'spans': [[0, 212]]},
+Unannotated Entity: {'spans': [[212, 367]]},
 …
 ]
 ```
@@ -566,14 +770,25 @@ Unannotated Entity: {'spans': [[212, 367]]},
 
 페이지의 레이아웃 구조를 분석하는 데 사용된 모델은 LPEffDetPubLayNetBlockPredictor입니다. 이는 LayoutParser에서 제공하는 깊은 학습 기반의 효율적인 객체 감지 모델입니다. 주요 기능은 문서를 시각적 블록 영역으로 분할하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 페이지의 이미지는 doc.images로 참조됩니다. 결과는 각 블록에 대한 상자 클래스 개체와 해당 유형입니다. 상자에는 왼쪽 상단 꼭지점의 x 좌표, 왼쪽 상단 꼭지점의 y 좌표, 페이지 너비, 페이지 높이 및 페이지 번호가 포함됩니다.
 
 ```js
 [
-Unannotated Entity: {'boxes': [[0.5179840190298606, 0.752760137345049, 0.3682081491355128, 0.15176369855069774, 0]], 'metadata': {'type': 'Text'}, 
-Unannotated Entity: {'boxes': [[0.5145780320135539, 0.5080924136055337, 0.3675624668198144, 0.23725746136663078, 0]], 'metadata': {'type': 'Text'}, 
+Unannotated Entity: {'boxes': [[0.5179840190298606, 0.752760137345049, 0.3682081491355128, 0.15176369855069774, 0]], 'metadata': {'type': 'Text'},
+Unannotated Entity: {'boxes': [[0.5145780320135539, 0.5080924136055337, 0.3675624668198144, 0.23725746136663078, 0]], 'metadata': {'type': 'Text'},
 …
 ]
 ```
@@ -582,7 +797,18 @@ Unannotated Entity: {'boxes': [[0.5145780320135539, 0.5080924136055337, 0.367562
 
 문서의 논리적 구조를 분석하는 데 사용된 모델은 IVILATokenClassificationPredictor입니다. 이는 제목, 초록, 본문, 각주, 캡션 등과 같은 조직 단위로 문서를 분리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제공된 입력은 딕셔너리 형식의 페이지 수준 데이터입니다.
 
@@ -600,14 +826,25 @@ Unannotated Entity: {'boxes': [[0.5145780320135539, 0.5080924136055337, 0.367562
 
 ```js
 [
-Unannotated Entity: {'spans': [[0, 80]], 'metadata': {'label': 'Title'}, 
-Unannotated Entity: {'spans': [[81, 157]], 'metadata': {'label': 'Author'}, 
-Unannotated Entity: {'spans': [[158, 215]], 'metadata': {'label': 'Paragraph'}, 
+Unannotated Entity: {'spans': [[0, 80]], 'metadata': {'label': 'Title'},
+Unannotated Entity: {'spans': [[81, 157]], 'metadata': {'label': 'Author'},
+Unannotated Entity: {'spans': [[158, 215]], 'metadata': {'label': 'Paragraph'},
 ...
 ]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## PaperMage에 대한 통찰과 토론
 
@@ -617,11 +854,22 @@ PDF 구문 분석 작업에 있어서 PaperMage에서 제안한 추상화는 효
 
 확장성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PaperMage는 쉽게 확장할 수 있는 프레임워크를 설계했습니다. 이는 개발자들이 후속 개발을 수행하기에 편리하게 만들어 줍니다.
 
-예를 들어, 사용자 정의 예측기를 추가하려면 BasePredictor 기본 클래스로부터 상속받고 _predict() 함수를 재정의해주기만 하면 됩니다.
+예를 들어, 사용자 정의 예측기를 추가하려면 BasePredictor 기본 클래스로부터 상속받고 \_predict() 함수를 재정의해주기만 하면 됩니다.
 
 ```js
 from .base_predictor import BasePredictor
@@ -636,11 +884,33 @@ class YOUR_NEW_Predictor(BasePredictor):
 
 병렬화에 대해
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 바꿔보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 비구조화된 프레임워크로부터 얻은 통찰과 경험에 대해 주로 논의하겠습니다. 특히, 이 프레임워크가 자체 PDF 구문 분석 도구를 개발하는 데 어떻게 도움이 되는지에 대해 설명하겠습니다.
 
@@ -650,7 +920,18 @@ class YOUR_NEW_Predictor(BasePredictor):
 
 `strategy=hi_res`를 설정하면 YOLOX 또는 detectron2와 같은 모델을 레이아웃 분석에 활용합니다. 이는 PDFMiner와 결합되어 추가적인 감지가 이루어집니다. 두 결과물을 병합하여 최종 레이아웃을 생성하게 됩니다. 이것은 그림 8에 나타나 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Figure 9과 Figure 10은 BERT 논문의 16페이지 레이아웃 분석 결과의 시각화를 보여줍니다. 사진 속 상자들은 각 영역의 범위를 나타냅니다. Figure 9에 나타난 물체 탐지 모델의 결과는 더 정확하며, 더 많은 통합된 표와 이미지를 보여줍니다. 반면에 Figure 10에 표시된 PDFMiner의 탐지 결과는 표와 이미지 내용을 분리합니다.
 
@@ -660,7 +941,18 @@ Figure 9과 Figure 10은 BERT 논문의 16페이지 레이아웃 분석 결과�
 
 레이아웃을 병합하는 구체적인 코드는 다음과 같습니다. PDFMiner 탐지 결과(extracted_layout)와 물체 탐지 모델의 결과(inferred_layout) 간의 각 영역 사이의 관계를 평가하는 이중 루프로 이루어져 있습니다. 그 후 병합 여부를 결정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def merge_inferred_layout_with_extracted_layout(
@@ -703,7 +995,18 @@ def merge_inferred_layout_with_extracted_layout(
 
 이전 글에서는 비정형 데이터의 세 가지 도전 과제를 다루었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 테이블 파싱
 - 감지된 블록 재배열, 특히 이중 열 PDF의 경우
@@ -715,7 +1018,18 @@ def merge_inferred_layout_with_extracted_layout(
 
 동시에 레이아웃 분석 결과를 쉽게 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 [
@@ -741,7 +1055,16 @@ LayoutElement(bbox=Rectangle(x1=851.0028686523438, y1=1468.341394166663, x2=1420
 
 LayoutElement(bbox=Rectangle(x1=853.5444444444446, y1=1526.3701822222185, x2=1470.989990234375, y2=1669.5843488888852), text='컨텍스트 기반 기법과 마찬가지로, 이 방향으로 첫 번째 작업은 라벨이 지정되지 않은 텍스트로부터 단어 em-(Col- bed 파라미터를 사전 훈련하는 것에 있습니다.(lobert and Weston, 2008).', source=<Source.YOLOX: 'yolox'>, type='Text',
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 탐지 및 인식에는 비구조화 된 프레임 워크에서 Table Transformer가 사용됩니다.
 
@@ -749,7 +1072,16 @@ Table Transformer 모델은 미구조 문서에서의 포괄적인 테이블 추
 
 Table Transformer은 PubTables-1M 데이터셋에서 DETR 모델을 기반으로 훈련되었으며, 테이블 탐지 및 테이블 구조 인식과 같은 작업을 위해 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 표 처리 방법은 이전 글을 참고해 주세요.
 
@@ -759,7 +1091,16 @@ Table Transformer은 PubTables-1M 데이터셋에서 DETR 모델을 기반으로
 
 ![수식 검출 및 인식](/assets/img/2024-05-23-DemystifyingPDFParsing02Pipeline-BasedMethod_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -771,7 +1112,16 @@ Table Transformer은 PubTables-1M 데이터셋에서 DETR 모델을 기반으로
 - PaperMage는 주로 과학 문서용으로 설계되었지만 미래 개발을 지원하는 탁월한 확장성을 갖고 있습니다.
 - Unstructured는 포괄적인 파이프라인 기반 PDF 파싱 프레임워크입니다. 그 이점은 자세한 레이아웃 분석과 강력한 사용자 정의 기능에 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로, 파이프라인 기반 PDF 구문 분석 방법은 해석 가능하며 사용하기 쉬워 많이 사용되는 PDF 구문 분석 방법입니다. 그러나 효과적인지는 각 모델 또는 알고리즘의 성능에 크게 의존합니다. 따라서 훈련 데이터와 각 모델의 구조는 신중하게 설계되어야 합니다.
 
@@ -780,3 +1130,4 @@ PDF 구문 분석이나 문서 인텔리전스에 관심이 있다면 다른 글
 또한, 최신 AI 관련 콘텐츠는 뉴스레터에서 확인할 수 있습니다.
 
 마지막으로, 이 글에 오류나 누락 사항이 있다면 댓글 섹션에서 지적해주시거나 공유할 생각이 있다면 언제든지 알려주세요.
+```

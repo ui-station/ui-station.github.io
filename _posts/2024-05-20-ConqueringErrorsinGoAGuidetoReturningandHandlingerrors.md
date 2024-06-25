@@ -3,13 +3,12 @@ title: "고 오류 정복하기 오류 반환과 처리에 관한 안내"
 description: ""
 coverImage: "/assets/img/2024-05-20-ConqueringErrorsinGoAGuidetoReturningandHandlingerrors_0.png"
 date: 2024-05-20 16:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ConqueringErrorsinGoAGuidetoReturningandHandlingerrors_0.png
 tag: Tech
 originalTitle: "Conquering Errors in Go: A Guide to Returning and Handling errors"
 link: "https://medium.com/ride-blog/conquering-errors-in-go-a-guide-to-returns-and-handling-a13885905433"
 ---
-
 
 ## Go 오류 처리 마스터하기 위한 초보자 가이드
 
@@ -19,7 +18,18 @@ link: "https://medium.com/ride-blog/conquering-errors-in-go-a-guide-to-returns-a
 
 이것은 오류를 반환하는 가장 간단한 방법입니다. 대부분의 사람들은 이 패턴에 익숙합니다. 오류를 반환할 수 있는 함수를 호출하고, 오류가 nil인지 확인하고, nil이 아니면 오류를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```Go
 import (
@@ -42,7 +52,18 @@ func doSomething() (float64, error) {
 
 A() 함수가 B()를 호출하고, B()가 C()를 호출하고, C()가 다음과 같은 오류를 반환하는 호출 스택을 상상해보십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 package main
@@ -94,7 +115,18 @@ func main() {
 
 우리는 호출 스택에서 이 오류가 어디에서 발생했는지에 대한 컨텍스트가 없습니다. 특정 오류 문자열을 찾아 해당 오류가 어디에서 발생했는지를 알아내기 위해 프로그램을 코드 편집기에서 열어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 레벨 2: 에러 감싸기
 
@@ -144,7 +176,18 @@ func main() {
 
 이 프로그램을 실행하면 아래와 같은 출력을 얻게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 오류: A: B: C: 음수 값은 허용되지 않습니다
@@ -156,7 +199,18 @@ func main() {
 
 ## 이 방법의 문제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 에러가 발생한 위치를 알게 되었지만 여전히 어떤 부분이 잘못되었는지는 알 수 없습니다.
 
@@ -193,7 +247,18 @@ func DoSomethingElseWithTwoSteps() (int, error) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서 오류가 반환되면 어떤 작업이 실패했는지 명확하지 않습니다. StepOne인지 StepTwo인지 알 수 없습니다. 동일한 오류인 Error: DoSomething: DoSomethingElseWithTwoSteps: UnderlyingError가 발생합니다.
 
@@ -230,7 +295,18 @@ func DoSomethingElseWithTwoSteps() (int, error) {
 
 이제 StepOne이 실패하면 Error: DoSomething: DoSomethingElseWithTwoSteps: StepOne failed: UnderlyingError를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이 방법의 문제점
 
@@ -240,17 +316,39 @@ func DoSomethingElseWithTwoSteps() (int, error) {
 
 # 레벨 4: 오류 표식
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 에러 센티널은 재사용할 수 있는 미리 정의된 오류 상수입니다.
 
-함수가 실패할 수 있는 원인은 다양할 수 있지만, 일반적으로 4가지 카테고리로 나눌 수 있습니다. "찾을 수 없음" 오류, "이미 존재함" 오류, "실패한 전제조건" 오류, 그리고 "내부 오류"입니다. 이는 gRPC 상태 코드에서 영감을 받았습니다. 각 카테고리를 한 문장으로 설명해 드릴게요. 
+함수가 실패할 수 있는 원인은 다양할 수 있지만, 일반적으로 4가지 카테고리로 나눌 수 있습니다. "찾을 수 없음" 오류, "이미 존재함" 오류, "실패한 전제조건" 오류, 그리고 "내부 오류"입니다. 이는 gRPC 상태 코드에서 영감을 받았습니다. 각 카테고리를 한 문장으로 설명해 드릴게요.
 
 "찾을 수 없음" 오류: 호출자가 원하는 리소스가 존재하지 않습니다. 예시: 삭제된 게시물.
 
 "이미 존재함" 오류: 호출자가 생성하려는 리소스가 이미 존재합니다. 예시: 같은 이름을 가진 조직.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실패한 전제조건 오류: 작업 요청자가 실행하려는 작업이 실행 조건을 충족하지 않거나 나쁜 상태에 있습니다. 예시: 잔액이 0원인 계좌에서 출금을 시도하는 경우.
 
@@ -260,7 +358,18 @@ func DoSomethingElseWithTwoSteps() (int, error) {
 
 사용자가 지갑 잔액을 조회하고 업데이트할 수 있는 REST API가 있다고 상상해보세요. 데이터베이스에서 지갑을 조회할 때 오류 센티널을 활용하는 방법을 살펴봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import (
@@ -307,8 +416,18 @@ func getWalletBalance() {
 
 다른 예제를 살펴보겠습니다. 사용자가 잔액을 업데이트하고자 하는 경우를 보겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import (
@@ -340,7 +459,7 @@ func debitWalletInDB(id int, amount int) error {
  }
 
  updatedBalance := *balance - amount
- 
+
  // Dummy implementation: simulate updating a wallet in a database
  err := db.update(id, updatedBalance)
 
@@ -359,7 +478,18 @@ You might have noticed that I have a particular way of formatting errors. I pref
 - `fmt.Errorf("%w: description: %w", Sentinel, err)` or
 - `fmt.Errorf("%w: description", Sentinel)`
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 오류가 발생한 이유와 근본적인 원인을 알려주는 이야기를 만듭니다.
 
@@ -369,7 +499,18 @@ You might have noticed that I have a particular way of formatting errors. I pref
 
 당신이 발견한 모든 오류를 기록해서는 안 된다는 것에 놀랄지도 모릅니다. 왜냐하면 로그가 아래와 같이 보이기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 에러: C: 음수 값은 허용되지 않습니다

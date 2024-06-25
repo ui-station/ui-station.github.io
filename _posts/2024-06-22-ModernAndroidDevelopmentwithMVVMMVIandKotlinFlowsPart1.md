@@ -3,13 +3,12 @@ title: "MVVM, MVI 및 Kotlin Flows를 활용한 최신 안드로이드 개발  P
 description: ""
 coverImage: "/assets/img/2024-06-22-ModernAndroidDevelopmentwithMVVMMVIandKotlinFlowsPart1_0.png"
 date: 2024-06-22 22:37
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-ModernAndroidDevelopmentwithMVVMMVIandKotlinFlowsPart1_0.png
 tag: Tech
 originalTitle: "Modern Android Development with MVVM, MVI, and Kotlin Flows — Part 1"
 link: "https://medium.com/@mortitech/combining-mvvm-and-mvi-with-kotlin-flows-part1-48f7dd426341"
 ---
-
 
 ## 안드로이드 MVI 아키텍처의 심층 탐구
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@mortitech/combining-mvvm-and-mvi-with-kotlin-flows-pa
 
 안드로이드 개발에 있어서 올바른 아키텍처 패턴을 선택하는 것이 얼마나 중요한지 우리 모두 알고 있습니다. 이는 관리 가능한 프로젝트와 완전한 엉망인 프로젝트 사이의 차이를 의미할 수 있습니다. 이미 MVVM (Model-View-ViewModel) 및 MVI (Model-View-Intent) 패턴에 대해 알고 계실 것으로 생각됩니다. 각각에는 강점과 약점이 있습니다. MVVM은 데이터 바인딩과 표시 상태 관리에서 빛을 발하며, MVI는 단방향 데이터 흐름과 강력한 상태 관리로 빛을 발합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이 두 강력한 패턴을 결합하여 안드로이드 개발에 더 강력한 접근 방식을 만들 수 있다고 말했다면 어떨까요? 바로 Kotlin flows를 사용하여 MVVM과 MVI 간의 원활한 통합을 제공하는 방법을 이 글에서 살펴보겠습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@mortitech/combining-mvvm-and-mvi-with-kotlin-flows-pa
 
 ## MVC란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MVC 패턴에서 Model은 데이터와 비즈니스 로직을 나타내고, View는 UI를 렌더링하는 역할을 하며, Controller는 Model과 View 사이에서 중개자 역할을 하며, 사용자 입력을 처리하고 Model과 View를 업데이트합니다.
 
@@ -39,7 +60,18 @@ MVC 패턴에서 Model은 데이터와 비즈니스 로직을 나타내고, View
 
 Model 파일 이름은 UserModel.kt:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 data class User(val id: String, val name: String, val email: String)
@@ -82,7 +114,18 @@ class UserController(private val userView: UserView) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The UserController 클래스는 Controller 역할을 하며 사용자 상호작용을 처리하고 Model을 업데이트합니다. 또한 Model의 변경 사항에 따라 UI를 업데이트하기 위해 View와 통신합니다.
 
@@ -128,7 +171,18 @@ class MvcActivity : AppCompatActivity(), UserView {
 
 MvcActivity 클래스는 View를 나타내며 UI를 표시하는 역할을 담당합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## MVI란 무엇인가요?
 
@@ -138,7 +192,18 @@ MVI 패턴은 Model-View-Controller (MVC) 패턴의 변형으로 생각될 수 �
 
 ## MVI는 어떻게 작동하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MVI에서 기본 개념은 동일하지만 보다 반응적이고 기능적인 프로그래밍 스타일을 강조합니다. Model을 직접 변경하거나 View를 업데이트하는 대신, MVI는 사용자 의도를 불변의 데이터 구조 (Intents)로 캡처하고 단방향 데이터 흐름을 통해 이를 처리하는 데 초점을 맞춥니다. 이러한 흐름은 일반적으로 세 가지 주요 구성 요소로 구성됩니다:
 
@@ -150,7 +215,18 @@ MVI에서 기본 개념은 동일하지만 보다 반응적이고 기능적인 �
 
 MVI 패턴은 엄격한 단방향 데이터 흐름을 강제합니다. 데이터는 의도에서 모델로, 그리고 모델에서 뷰로 흐릅니다. 이렇게 하면 앱의 동작 및 상태에 대한 추론이 더 쉬워지며 구성 요소 간 부작용이나 종속성이 없기 때문에 유지보수가 쉽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## MVC에서 MVI로 변환하기:
 
@@ -167,7 +243,18 @@ sealed class UserIntent {
 
 UserController와 UserView 인터페이스를 제거할 수 있습니다. 또한 UserModel 클래스를 변경하여 현재 뷰 상태를 유지하고 사용자 의도를 처리하며 사용자 상태를 업데이트할 수 있습니다. UserModel은 Kotlin Coroutines Flow를 사용하여 반응적일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class UserModel {
@@ -236,7 +323,18 @@ class MviActivity : AppCompatActivity() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MviActivity에서는 onEach를 사용하여 상태 플로우를 관찰하고 renderUserViewState()를 호출하여 UI를 업데이트합니다.
 
@@ -246,7 +344,18 @@ MviActivity에서는 onEach를 사용하여 상태 플로우를 관찰하고 ren
 
 위 다이어그램에서 사용자는 OnClick 등의 액션을 트리거할 수 있습니다. 이러한 액션들은 인텐트로 파싱되어 모델에 전달될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델에서 processUserIntentsexecutes는 전달된 Intent에 기반한 로직을 실행하며, 이 경우 UserIntent.AddUser를 받아 새로운 상태를 생성합니다:
 
@@ -259,7 +368,18 @@ copy()는 기존 객체와 동일한 속성을 가진 새 객체를 생성하는
 
 users = currentViewState().users + user 부분은 새로운 뷰 상태의 users 속성을 업데이트해야 함을 명시합니다. 요약하자면, 이 두 줄의 코드는 현재 뷰 상태의 복사본을 만들어 사용자 목록에 새로운 사용자가 추가된 새로운 뷰 상태 객체를 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 뷰 부분에서 새 상태가 생성될 때마다 MviActivity가 변경 사항을 observe합니다.
 
@@ -275,6 +395,17 @@ model.userViewState
 
 # 다음은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 시리즈에서는 MVVM 아키텍처를 MVI와 비교하고 이러한 아키텍처를 더 깊이 파헤쳐 양쪽에서 최상의 결과를 얻을 수 있는 방법에 대해 살펴볼 것입니다. 기대해주세요!

@@ -18,7 +18,18 @@ link: "https://medium.com/astral-architecture/digital-dimensions-theory-a-creati
 
 비트맵과 서수는 건축가를 필요로 합니다. 우리가 건설하는 것 - 대중들이 언젠가 소비할 것입니다. 우리가 만드는 것은 진입 장벽과 이해를 낮추며 기억에 남고 혁신적이며 몰입적이고 상호작용적인 경험을 창출합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 칼 사간이 위에서 시적으로 말했듯이, 우리는 종종 존재의 거대한 태피스트리의 작은 부분만을 볼 뿐입니다. 마찬가지로, 비트코인 서수 안의 디지턼 구조물의 거대한 잠재력을 조금씩 엿볼 수 있게 되었습니다.
 
@@ -28,7 +39,18 @@ link: "https://medium.com/astral-architecture/digital-dimensions-theory-a-creati
 
 이것은 생각 실험에서 비롯되었습니다 — 디지털 물질 이론(DMT)을 M-이론과 결합했을 때 어떻게 되는가 — 모든 것, 중력, 자연을 이해하는 이론적 물리학 프레임워크입니다. 이것은 11개 차원 — 10개 + 시간을 가정합니다. 잘 작동할까요? 영감을 줄까요? 행동을 취할 수 있게 도와줄까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네! 맞아요~! 저는 매일매일 The Void Mosaics, The VOID Veil Trials on-chain Cosmic Card Battler, 그리고 다가오는 UNAT 프로젝트 — NATGalaxies (WIP)를 만들며 그것을 증명하고 있어요.
 
@@ -38,7 +60,18 @@ link: "https://medium.com/astral-architecture/digital-dimensions-theory-a-creati
 
 그럼 이 이상한 파란색 로브를 입은 외계 로봇인 Astral (농담 농담)에 대해 왜 신경 써야 하며, 왜 나를 믿고 이걸 꼭 가르쳐야 하는지에 대해서 관심 가져야 하는지요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-DigitalDimensionsTheoryacreativityframeworkforBitcoinOrdinalsusingDigitalMatterTheory_2.png)
 
@@ -48,8 +81,18 @@ link: "https://medium.com/astral-architecture/digital-dimensions-theory-a-creati
 
 2016년, 저는 어릴 적 그림 그리기에 대한 열정을 재발견하고 음악 제작을 시작했습니다. 그해 동안 음악 제작, 기타, 그리고 다양한 그림 기법을 배우는 데 시간을 보냈습니다. 지난 8년 동안 300개 이상의 그림을 그리고, 488곡을 작곡, 연주, 녹음하고, 스튜디오 앨범 2장을 발매했으며 세 번째 앨범을 준비 중에 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-23-DigitalDimensionsTheoryacreativityframeworkforBitcoinOrdinalsusingDigitalMatterTheory_3.png)
 
@@ -59,8 +102,18 @@ I’ve put in the grind for 8 years. I’ve earned my 12k+ hours by always creat
 
 Throughout my journey, one constant has kept me productive and it is the cornerstone of Digital Dimensions Theory: Creative Constraint.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 창의적 제약이란 무엇이며 왜 프로젝트에서 사용해야 하는가?
 
@@ -70,7 +123,18 @@ DMT 데이터셋에서 특성을 선택하는 것과 비슷하게 들리지 않�
 
 만약 그게 완전히 이해가 안 된다면, mScribe의 디지털 머터 이론 Gitbook을 찾아보세요. 비트코인의 블록 데이터에서 재귀를 사용하는 것을 조금이나마 이해하고 있어야만, 임의의 데이터에 대한 견고한 이해가 필수입니다. (이 기사의 범위를 벗어나지만, 해당 문서에 대한 링크를 걸었어요!)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 차원 탐구: M 이론을 디지털 창의성에 적용하기
 
@@ -80,7 +144,18 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 
 디지털 차원 이론 창의성 프레임워크의 각 차원은 사고 실험을 제시하고, 취해야 할 조치, 고려해야 할 도구, 이 이론을 프로젝트에 적용하여 두뇌를 활발히 돌아가게 하는 방법에 대한 예시를 제시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 준비됐나요? 출발해봅시다! 👨‍🚀🚀🌌
 
@@ -91,7 +166,18 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 개념: 가장 기본적인 수준으로, 단일하고 이산적인 데이터 포인트나 요소를 대표합니다.
 응용: 당신의 아이디어를 발견하세요. 프로젝트를 위한 당신의 꿈과 비전을 발견하세요. 다른 프로젝트를 살펴보고 그것에 대해 좋아하는 점을 발견하세요. 이러한 아이디어를 탐구하세요. 목록에 번호를 매겨보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 비트코인의 운명에 항복하십시오.
 
@@ -101,7 +187,18 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 
 이제 타임스탬프 (첫 번째 수)에 작성한 아이디어 수를 팩터(두 번째 수)로 사용하여 나머지 연산을 수행하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과물 - 이걸 탐구할 아이디어가 있어요. 다음 수업에서 이에 대해 더 자세히 다룰 것이고, 학습한 내용을 강화하기 위해 몇 가지 자원과 예시 시나리오를 제공할 거에요.
 
@@ -111,7 +208,18 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 
 ## DMT-2: 평면
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### Concept: 선형 시퀀스를 2차원 그리드로 확장하는 개념입니다. UNAT 예시의 대부분이 이곳에 있습니다. DMT-2 — The Plane. 2D 아트가 이곳에서 이루어집니다.
 
@@ -127,7 +235,18 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 
 ## DMT-4: The Event (Time)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **Concept:** 시간 요소를 통합하여 개발물이 진화하도록 하는 것.
 
@@ -140,7 +259,18 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 
 ## DMT-6: 타임라인 (메타 가능성)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 개념: 우주의 모든 가능한 타임라인 시각화
 
@@ -154,7 +284,18 @@ M 이론의 각 차원은 디지털 예술, 게임, 음악 및 다른 경험을 
 
 # DMT-8: 규칙 세트 (모든 물리학 법칙 가능)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개념: 구조 내에서 모든 물리 법칙을 고려합니다. 응용: 다른 규칙 세트나 제약 조건으로 실험하여 디지턀 환경 내에서의 행동과 상호 작용이 어떻게 변하는지 살펴봅니다. 이 섹션에서는 물리학이 어떻게 영향을 미치며 우리의 세상과 삶이 불변의 법칙으로 알려진 작은 변화로 어떻게 변하는지에 대해 논의할 것입니다. 다중 우주에서 한 우주에서 다음 우주로 뛰어갈 때, 누가 시간이 동일한 방향으로 흘러간다고 말할 수 있을까요? 누가 탄소가 생명의 기초인지 말할 수 있을까요? 친구들아, 디지턀 물질 이론의 8차원을 심사숙고하며 현실이라고 아는 이 작은 것을 알게 될 때, 가능성은 당신의 마음을 불태울 것입니다. 여기서 재미있는 시간을 보낼 거예요.
 
@@ -164,7 +305,18 @@ DMT-9: 비교 (다양한 물리 법칙 비교)
 
 DMT-10: 끝나지 않는 이야기 (무한한 가능성)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개념: 끝없는 가능성을 대표하고 모든 현실을 통합하는 것. 응용: 우리는 DMT-0부터 여기까지 배운 것을 논의한 뒤, 여러분 눈앞에서 11차원(DMT-10)을 열어보는 사고 실험에 참여할 것입니다. 게임에 적용된 정말 멋진 범위를 드러냅니다. 저는 연구에서 DMT의 이 수준에 도달했을 때 쉬어야 했습니다. 이렇게 동작하는 구현을 만들 수 있는 방법은 없을 거라고 생각했거든요. 하지만 여기서 우리가 다루는 것은 누적 차원입니다. 여기로 이끈 길이 이 - 정점 - 만큼 중요합니다. 비트코인의 끝없는 이야기
 
@@ -174,7 +326,18 @@ DMT-10: 끝나지 않는 이야기 (무한한 가능성)
 
 ## 연락을 유지하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - X에서 나를 팔로우해 주세요: @astralarkitekt
 - Discord에서 토론에 참여하세요: Digital Dimensions Theory Discord
@@ -186,7 +349,18 @@ DMT-10: 끝나지 않는 이야기 (무한한 가능성)
 - Bitmap 커뮤니티에게: 여러분의 환영하는 마음가짐과 개방적인 정신은 영감의 횃불이 되었습니다.
 - 여정을 함께 이어가며, 비트코인 서수와 디지털 창조력으로 가능한 무엇이든 푸는 것을 계속해봅시다. 이 놀라운 모험의 일부가 되어 주셔서 감사합니다! 🚀✨
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여정을 준비하는 데 도움이 될 수 있는 한 곡, 괜히 들려 드리려고 합니다.
 

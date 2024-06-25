@@ -3,14 +3,12 @@ title: "롱혼 - K8s를 위한 분산형 블록 스토리지"
 description: ""
 coverImage: "/assets/img/2024-05-18-LonghornDistributedBlockStorageforK8s_0.png"
 date: 2024-05-18 16:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-LonghornDistributedBlockStorageforK8s_0.png
 tag: Tech
 originalTitle: "Longhorn — Distributed Block Storage for K8s"
 link: "https://medium.com/@abdelrhmanahmed131/longhorn-distributed-block-storage-for-k8s-2ea11df400d1"
 ---
-
-
 
 ![Longhorn](/assets/img/2024-05-18-LonghornDistributedBlockStorageforK8s_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@abdelrhmanahmed131/longhorn-distributed-block-storage
 
 컨테이너화된 응용 프로그램에서 데이터는 일반적으로 컨테이너 자체와는 별도로 저장되는 저장 시스템에 저장됩니다. 이는 컨테이너를 쉽게 파기하거나 대체할 수 있게 하면서도 중요한 데이터를 손실하지 않도록 합니다. 영구 데이터를 저장한다는 것은 데이터가 컨테이너가 중지, 다시 시작되거나 삭제되어도 손실되지 않도록 데이터를 저장하는 방식을 의미합니다. 이를 위해 클라우드 네이티브 분산 블록 저장 시스템과 같은 영구 저장소 솔루션을 사용하여 데이터를 저장함으로써 컨테이너가 필요할 때 데이터에 액세스할 수 있도록 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터는 애플리케이션 데이터, 구성 파일, 사용자 데이터, 데이터베이스 및 시간이 지날수록 유지하고 액세스해야하는 다른 유형의 데이터일 수 있습니다.
 
@@ -33,7 +41,18 @@ Longhorn에는 세 가지 주요 구성 요소가 있습니다:
 - Longhorn Engine
 - Longhorn UI
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 롱혼 매니저
 
@@ -43,7 +62,18 @@ Longhorn에는 세 가지 주요 구성 요소가 있습니다:
 
 ## 롱혼 엔진
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 롱혼 매니저가 볼륨을 생성하도록 요청받으면, 그 볼륨이 연결된 노드에 롱혼 엔진 인스턴스를 생성하고, 각 복제가 배치될 노드에 각각 복제를 생성합니다. 복제는 최대 가용성을 보장하기 위해 별도의 호스트에 배치되어야 합니다.
 
@@ -53,7 +83,18 @@ Longhorn에는 세 가지 주요 구성 요소가 있습니다:
 
 만약 볼륨을 위한 롱혼 엔진을 호스팅하는 노드가 충돌하거나 다른 이유로 이용 불가능 상태가 되면, 롱혼은 해당 장애를 감지하고 자동으로 다른 이용 가능한 노드에 엔진을 재배치합니다. 이 프로세스를 자동 노드 복구라고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 엔진은 Pod나 배포(Deployment)와 같은 Kubernetes 객체가 아닙니다. 대신에, 그것은 호스트 운영 체제에서 이진 실행 파일로 실행되는 Longhorn에 특화된 프로세스입니다.
 
@@ -67,7 +108,18 @@ Longhorn에는 세 가지 주요 구성 요소가 있습니다:
 - 그림에서 화살표는 볼륨, 컨트롤러 인스턴스, 복제본 인스턴스 및 디스크 간의 읽기/쓰기 데이터 흐름을 나타냅니다.
 - 볼륨마다 별도의 Longhorn 엔진을 생성하여, 하나의 컨트롤러가 실패하더라도 다른 볼륨의 기능에는 영향을 미치지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 롱혼 UI
 
@@ -77,7 +129,18 @@ Longhorn에는 세 가지 주요 구성 요소가 있습니다:
 
 또한, 롱혼 UI에 의해 클러스터 워커 노드의 공간 사용량이 수집되고 시각화됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 그림은 Longhorn UI에서 보는 그림을 보여줍니다:
 
@@ -90,7 +153,18 @@ Longhorn에는 세 가지 주요 구성 요소가 있습니다:
 - Used: Longhorn, 시스템 및 다른 애플리케이션에서 사용된 실제 공간입니다.
 - Disabled: Longhorn 볼륨을 스케줄링할 수 없는 디스크/노드의 총 공간입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Longhorn 설치 (전제 조건 및 요구 사항)
 
@@ -100,7 +174,18 @@ Longhorn은 Kubernetes 클러스터에 최소한 하나의 노드로 설치할 �
 
 ## K8s 클러스터의 각 노드는 다음 요구 사항을 충족해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Kubernetes와 호환되는 컨테이너 런타임(Docker v1.13+, containerd v1.3.7)이 필요합니다.
 - Kubernetes 버전은 `v1.21` 이상이어야 합니다.
@@ -112,7 +197,18 @@ Longhorn은 Kubernetes 클러스터에 최소한 하나의 노드로 설치할 �
 
 - 다음 Linux 명령 줄 유틸리티가 설치되어 있어야 합니다: bash, curl, findmnt, grep, awk, blkid, lsblk
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 마운트 전파를 활성화해야 합니다.
 
@@ -128,7 +224,18 @@ Longhorn은 Kubernetes 클러스터에 최소한 하나의 노드로 설치할 �
 - 볼륨 당 최대 500/250 IOPS(1 MiB I/O)
 - 볼륨 당 최대 500/250 처리량(MiB/s)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 운영 체제
 
@@ -144,7 +251,18 @@ Longhorn은 Kubernetes 클러스터에 최소한 하나의 노드로 설치할 �
 
 ## 기능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 고가용성: Longhorn은 클러스터 내 여러 노드에 볼륨을 복제하여 데이터의 고가용성을 제공하기 위해 설계되었습니다.
 - 스냅샷 및 백업: Longhorn은 복제본이 다운됐을 때마다 (시스템) 스냅샷을 자동으로 찍고 다른 노드에서 다시 복구 시작합니다.
@@ -163,7 +281,18 @@ Longhorn은 Kubernetes 클러스터에 최소한 하나의 노드로 설치할 �
 
 # Longhorn 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 롱혼은 Helm, kubectl 및 Rancher Apps & Marketplace로 설치할 수 있어요.
 
@@ -178,7 +307,18 @@ Longhorn은 Kubernetes 클러스터에 최소한 하나의 노드로 설치할 �
 
 ## Helm으로 설치하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요구 사항
 
@@ -188,7 +328,18 @@ Longhorn 헬름 차트를 여기에서 확인할 수 있습니다.
 
 헬름 차트의 내용:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 템플릿: 쿠버네티스 매니페스트를 포함하고 있는 폴더로, 차트에 의해 생성되는 리소스를 정의합니다.
 
@@ -198,7 +349,18 @@ Chart.yaml: 차트에 관한 메타데이터를 포함하고 있는 파일로, �
 
 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Longhorn 차트 저장소를 추가해보세요:
 
@@ -212,7 +374,18 @@ $ helm repo add longhorn https://charts.longhorn.io
 $ helm repo update
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Longhorn 차트 설치:
 
@@ -224,7 +397,18 @@ $ helm install longhorn longhorn/longhorn --namespace longhorn-system
 
 Helm 3를 이용해 다음 명령어를 실행하면 먼저 longhorn-system 네임스페이스를 생성하고 Longhorn 차트를 설치합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 $ kubectl create namespace longhorn-system
@@ -239,7 +423,18 @@ $ kubectl get pods --namespace longhorn-system
 
 # Longhorn 볼륨 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step_1: 롱혼 StorageClass 생성하기
 
@@ -258,7 +453,18 @@ allowVolumeExpansion: true
 $ kubectl apply -f storageclass.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step_2: Longhorn StorageClass를 참조하는 PersistentVolumeClaim (PVC)를 만듭니다.
 
@@ -282,7 +488,18 @@ spec:
 $ kubectl apply -f longhorn-pvc.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step 3: Longhorn 볼륨을 사용하는 Pod 생성하기
 
@@ -295,22 +512,37 @@ metadata:
   name: longhorn-test
 spec:
   containers:
-  - name: longhorn-test-container
-    image: busybox
-    command: ["/bin/sh"]
-    args: ["-c", "while true; do echo $(date) >> /mnt/data/date.txt; sleep 1; done"]
-    volumeMounts:
-    - mountPath: /mnt/data
-      name: longhorn-vol
+    - name: longhorn-test-container
+      image: busybox
+      command: ["/bin/sh"]
+      args:
+        [
+          "-c",
+          "while true; do echo $(date) >> /mnt/data/date.txt; sleep 1; done",
+        ]
+      volumeMounts:
+        - mountPath: /mnt/data
+          name: longhorn-vol
   volumes:
-  - name: longhorn-vol
-    persistentVolumeClaim:
-      claimName: longhorn-vol-pvc
+    - name: longhorn-vol
+      persistentVolumeClaim:
+        claimName: longhorn-vol-pvc
 ```
 
 이후, longhorn-test 라는 이름의 Pod가 시작되며, Longhorn StorageClass를 참조하는 longhorn-vol-pvc라는 PersistentVolumeClaim도 생성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 영구 볼륨 클레임이 Pod에 볼륨으로 마운트됩니다.
 
@@ -326,7 +558,18 @@ $ kubectl -n longhorn-system patch -p '{"value": "true"}' --type=merge lhs delet
 $ helm delete longhorn --purge
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Helm 3으로 Longhorn을 제거하는 방법은 다음과 같습니다:
 

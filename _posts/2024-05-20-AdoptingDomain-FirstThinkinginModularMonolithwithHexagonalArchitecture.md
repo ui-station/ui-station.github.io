@@ -3,14 +3,12 @@ title: "도메인을 최우선으로 하는 생각을 Hexagonal Architecture를 
 description: ""
 coverImage: "/assets/img/2024-05-20-AdoptingDomain-FirstThinkinginModularMonolithwithHexagonalArchitecture_0.png"
 date: 2024-05-20 15:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AdoptingDomain-FirstThinkinginModularMonolithwithHexagonalArchitecture_0.png
 tag: Tech
 originalTitle: "Adopting Domain-First Thinking in Modular Monolith with Hexagonal Architecture"
 link: "https://medium.com/itnext/adopting-domain-first-thinking-in-modular-monolith-with-hexagonal-architecture-f9e4921ac18d"
 ---
-
-
 
 ![Image](/assets/img/2024-05-20-AdoptingDomain-FirstThinkinginModularMonolithwithHexagonalArchitecture_0.png)
 
@@ -20,8 +18,18 @@ Part 2:
 
 In the first blog, we explored the concept of Modular Monolith, what is a module and how DDD strategy patterns can be used to create modular applications.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 번째 블로그에서는 Spring Modulith가 모듈 모노리스 응용 프로그램에서 아키텍처 유효성 검사, 독립 모듈의 테스팅 및 이벤트 기반 통합을 어떻게 용이하게 하는지 살펴보았어요.
 
@@ -31,7 +39,18 @@ In the first blog, we explored the concept of Modular Monolith, what is a module
 
 나는 헥사고날 아키텍처를 이해하고 Java와 Spring Boot 응용 프로그램에서 적용하는 방법에 대해 시도했을 때, 헥사고날을 사용하지 않고 응용 프로그램을 작성한 후 문제를 겪고 하나씩 해결하여 어떤 것이 헥사고날인지 알아냈어요. 하지만 그것은 몇 년이 걸릴 수 있어요! 이 블로그(시리즈)에서는 이 과정을 더 짧은 시간 안에 기록하고 싶어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기업 문제를 해결하기 위한 애플리케이션을 개발하는 업무를 맡았습니다. 해당 애플리케이션은 웹을 통해 접속되며, 일부 비즈니스 로직을 구현하고 데이터를 데이터베이스에 저장할 것입니다 (당연히). 애플리케이션을 설계하는 과정에서 어떤 생각을 가지게 되시나요?
 
@@ -43,7 +62,18 @@ In the first blog, we explored the concept of Modular Monolith, what is a module
 
 3번 항목에 집중해 봅시다. ERD 여부와 상관없이, 데이터 모델을 도출하기 위해 여러 엔티티를 식별하고 그것을 시간이 흘러도 발전시킬 수 있는 것은 모든 웹 백엔드 엔지니어가 해야 하는 일이며 시작점이 될 수도 있습니다! 저는 이를 여러 차례 경험해 보았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법은 (의식적인 아키텍처가 적용되지 않을 때 기본으로 사용되는) 계층화된/N계층 아키텍처로 구성된 애플리케이션을 만들게 됩니다. 데이터 모델은 JPA 엔티티로 구성되며, Repositories를 통해 영속화되고, 비즈니스 로직은 Services에 구현됩니다.
 
@@ -53,7 +83,18 @@ In the first blog, we explored the concept of Modular Monolith, what is a module
 
 ## 의존성 역전
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자, 이제 우리는 다르게 생각하고 문제에 접근해 보겠습니다. 데이터 모델에 초점을 맞추는 대신, 비즈니스 로직과 제약 조건을 포착하는 여러 클래스를 만들어 보겠습니다. 이를 도메인 모델이라고 부르겠습니다.
 
@@ -61,7 +102,18 @@ In the first blog, we explored the concept of Modular Monolith, what is a module
 
 의존성을 반전시키기 위해 사용된 인터페이스를 포트(port)로, 인터페이스의 구현은 어댑터(adapter)로 부릅니다. 이들은 도메인 모델에 의해 주도(들어온)되므로 주도 또는 보조(secondary)로 알려져 있습니다. 이는 헥사고날 아키텍처에서 사용되는 용어입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한편, 유스 케이스를 구현하는 데 사용되는 Application 서비스도 포트입니다. 차이점은 Java 인터페이스가 아니라 일반 클래스임을 의미합니다. 또한 해당 어댑터와 함께 사용됩니다. 이 어댑터는 기술을 접근하여 우리의 사용 사례에 연결합니다(REST API, GraphQL, 람다 등). 이러한 포트와 어댑터는 도메인 모델을 사용하므로 드라이버 또는 주요 요소로 알려져 있습니다. 이들은 우리 모델의 사용을 이끌어냅니다.
 
@@ -71,7 +123,18 @@ In the first blog, we explored the concept of Modular Monolith, what is a module
 
 새로운 접근 방법을 적용하는 데 도움이 되도록 몇 가지 제약 조건을 소개해 보겠습니다. 우리는 프레임워크/구현이 우리의 생각을 이끌도록 허용하지 않겠습니다. 이는 데이터베이스 라이브러리 (JPA/JDBC), 이벤트 프레임워크 (Apache Kafka) 및 애플리케이션 프레임워크 (Spring)를 배제한다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 남은 것은 순수한 자바 (또는 응용 프로그램을 개발하는 언어)와 해당 비즈니스 로직 구현의 단위 테스트입니다.
 
@@ -81,7 +144,18 @@ In the first blog, we explored the concept of Modular Monolith, what is a module
 
 비즈니스 로직을 반영하는 도메인 모델(도메인 또는 내부라고 부르겠습니다)은 구현 세부 정보(인프라스트럭처 또는 외부라고 부르겠습니다)에 영향을 받지 않습니다. 새로운 기능 요청을 구축해야 하나요? 도메인 모델에서 구현하고 단위 테스트로 유효성을 검사하세요. Spring Boot나 Hibernate를 업데이트해야 하나요? 걱정 마세요, 도메인 모델은 영향을 받지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 도메인 모델이 구현을 주도합니다
 
@@ -91,7 +165,18 @@ In the first blog, we explored the concept of Modular Monolith, what is a module
 
 어떤 사용 사례에 관계형 데이터베이스를 사용해야 할지 아직 확실하지 않나요? 아키텍트가 REST 대 GraphQL 사용에 대한 궁금증에 대답하지 않았나요? 그런 결정들이 비즈니스 로직의 구현을 막아선 안됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요, 이제 새로운 사고 방식으로 비즈니스 로직을 작성하여 도서관 사용 사례를 구현하는 방법을 살펴볼까요?
 
@@ -112,7 +197,18 @@ src/main/java
     └── LibraryApplication
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 규칙을 패키지에 대해 따를 것입니다 (모두에게 해당되는 보편적인 규칙이 아니고, 우리가 직접 정한 것입니다). 이 구현의 복잡성과 아키텍처 원칙을 엄격하게 준수하는 현실적인 접근 사이의 적절한 균형을 유지하고 있다고 생각합니다.
 
@@ -125,7 +221,7 @@ src/main/java
 ```java
 @PrimaryPort
 public class CirculationDesk {
-  
+
     private final BookRepository books;
     private final HoldRepository holds;
     private final HoldEventPublisher eventPublisher;
@@ -140,15 +236,26 @@ public class CirculationDesk {
                 .then(eventPublisher::holdPlaced)
                 .to(HoldDto::from);
     }
-  
-    record PlaceHold(Barcode inventoryNumber, 
-                     String patronId, 
+
+    record PlaceHold(Barcode inventoryNumber,
+                     String patronId,
                      LocalDate dateOfHold) {
     }
-} 
+}
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의존성을 역전시키기 위해, 모든 집합체를 위한 Repository 인터페이스를 도입했습니다 (Spring Data와는 혼동하지 마세요).
 
@@ -180,8 +287,18 @@ CirculationDesk 응용 프로그램 서비스는 위의 리포지터리 인터�
 
 ## 집합체로부터 도메인 이벤트 트리거하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하나의 사용 사례 결과는 Aggregate의 업데이트된 상태를 지속시키는 것입니다. 또 다른 결과는 도메인 이벤트를 발생시켜 모노리스의 다른 모듈 (또는 동일 모듈 내의 다른 Aggregate)에서 대응할 수 있도록 하는 것일 수 있습니다.
 
@@ -222,7 +339,18 @@ class CirculationDeskEventHandler {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 육각형 구조의 "내부" (비즈니스 로직) 단위 테스트
 
@@ -288,7 +416,18 @@ class InMemoryHolds implements HoldRepository {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도메인 모델이 집계를 지속하거나 이벤트를 트리거하기 위해 인터페이스에 의존하고 있는 점을 감안할 때, 유닛 테스트는 이 인터페이스 메서드를 실행할 수 있도록 테스트 픽스처가 필요합니다. 유당 테스트가 작동하려면 모든 보조/드라이븐 포트에 대한 구현이 필요합니다.
 
@@ -298,7 +437,18 @@ class InMemoryHolds implements HoldRepository {
 
 Spring Modulith 및 jMolecules 라이브러리는 ArchUnit과 함께 사용되어 우리의 솔루션에서 적용된 아키텍처와 Modular Monolith 애플리케이션의 모듈 간 상호 작용을 테스트할 수 있게 합니다. 이는 새로운 개발자들이 작업을 시작함에 따라 우리의 애플리케이션이 선택한 아키텍처에서 벗어나지 않도록 하는 데 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 모듈형 모놀리스 응용 프로그램에는 이제 Catalog 및 Borrow 두 개의 모듈이 있습니다. Catalog 모듈은 Layered/N-tier 아키텍처를 사용하고 Borrow 모듈은 Hexagonal 아키텍처를 사용하고 있어요. 다음과 같이 테스트할 수 있어요 (BorrowJMoleculesTests 및 CatalogJMoleculesTests 참고).
 
@@ -328,7 +478,18 @@ public class BorrowJMoleculesTests {
 
 ## Hexagonal 아키텍처의 "외부"를 통합 테스트하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술이 도메인 모델과 상호 작용하는 외부 부분은 동작을 확인하기 위해 통합 테스트로 테스트해야 합니다. 여기에 예제가 있습니다 (영속성인 CirculationDeskIT.java 및 REST인 CirculationDeskControllerIT.java):
 
@@ -363,8 +524,18 @@ void placeHoldRestCall() throws Exception {
 
 이전 블로그 시리즈에서 언급했듯이 jMolecules Intellij 플러그인을 사용하여 다양한 스테레오타입을 시각화할 수 있습니다. 그러나 jMolecules 라이브러리가 헥사고날 아키텍처에 대한 주석을 지원하더라도 플러그인은 해당 주석을 지원하지 않습니다. 저는 관련 주석을 추가하여 플러그인을 수정했습니다. 플러그인을 활성화하고 관련 주석을 추가한 후 대여 모듈 내부 클래스가 어떻게 보이는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![](/assets/img/2024-05-20-AdoptingDomain-FirstThinkinginModularMonolithwithHexagonalArchitecture_5.png)
 
@@ -374,8 +545,18 @@ void placeHoldRestCall() throws Exception {
 
 모듈형 단일체 애플리케이션을 구축할 때, 모든 모듈에 대해 헥사고날 아키텍처를 사용해야 할지에 대해 고려해야 합니다. 만약 모듈이 자체 비즈니스 규칙을 갖고 있거나 (또는 나중에 갖게 될 것으로 예상된다면), 헥사고날 아키텍처가 좋은 아이디어일 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 해결책에 더 많은 클래스와 장황성을 추가합니다. Layered 아키텍처에는 보조 포트와 어댑터가 없습니다. Spring Data 리포지토리 인터페이스는 Service 클래스에 직접 의존성을 추가하는 대가로 보조 포트와 어댑터의 역할을 취합니다.
 
@@ -385,7 +566,18 @@ void placeHoldRestCall() throws Exception {
 
 아니요. 도메인 주도 설계(DDD)는 도메인이 모델링되는 방식에만 관련이 있습니다. 아키텍처와는 관련이 없습니다(헥사고날이든 그 외). DDD를 사용해야 하는가요? 클래스와 필드를 명명할 때 항상 모든 지식의 언어를 사용하는 것을 추천합니다. 도메인 전문가가 사용하는 용어와 동일한 용어를 사용하는 코드는 항상 이해하기 쉽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DDD의 Aggregate 및 기타 전략적 패턴을 사용하는 것은 애플리케이션의 필요성과 복잡성에 따라 다릅니다. 정당화되지 않은 경우에는 트랜잭션 스크립트나 액티브 레코드를 대신 사용할 수 있습니다.
 
@@ -395,7 +587,18 @@ DDD의 Aggregate 및 기타 전략적 패턴을 사용하는 것은 애플리케
 
 예를 들어, 애플리케이션 서비스 코드는 트랜잭션 내에서 실행되어야 합니다. Spring의 @Transactional을 사용하면 쉽게 달성할 수 있습니다. 그러나 이를 피하려면 애플리케이션 서비스를 Spring으로부터 자유롭게 유지하기 위해 사용자 정의 어노테이션과 AOP를 도입해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 헥사곤 안의 내부는 Application과 Domain으로 구성되어 있습니다. 도메인은 이상적으로는 프레임워크 없이 유지되어야 하지만, Application은 Spring을 사용할 수 있습니다. 이 질문을 Vaughn Vernon에게 던졌고, 그는 좋은 설명을 제공했습니다.
 
@@ -405,7 +608,18 @@ DDD의 Aggregate 및 기타 전략적 패턴을 사용하는 것은 애플리케
 
 아래 코드 스니펫을 확인하여 Hold를 배치하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 public HoldDto placeHold(Hold.PlaceHold command) {
@@ -442,7 +656,18 @@ public static HoldEntity fromDomain(Hold hold) {
 
 Hold 도메인 모델은 영속화되기 전에 분리된 HoldEntity JPA 엔티티로 변환되어야 합니다. 엔티티 생성에는 기본 키 ID를 알아야 합니다. 도메인 모델이 PK를 따로 저장하거나 모델 식별자로 사용해야 합니다. 저의 예시에서는 후자를 선택했지만, 이 문제를 어떻게 해결할지 궁금합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결론
 

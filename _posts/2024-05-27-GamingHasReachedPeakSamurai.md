@@ -3,13 +3,12 @@ title: "게임이 최고조의 사무라이에 도달했습니다"
 description: ""
 coverImage: "/assets/img/2024-05-27-GamingHasReachedPeakSamurai_0.png"
 date: 2024-05-27 16:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-GamingHasReachedPeakSamurai_0.png
 tag: Tech
 originalTitle: "Gaming Has Reached Peak Samurai"
 link: "https://medium.com/@xander51/gaming-has-reached-peak-samurai-024c2dc167a8"
 ---
-
 
 내일 아침에 Sony가 2020년의 널리 알려진 오픈 월드 액션 히트인 Ghost of Tsushima를 PC 런칭할 예정이에요. 이 타이틀은 이전에는 거의 볼 수 없었던 혹은 시도해보지 않은 수준의 정교함과 명성을 사무라이 비디오 게임으로 가져왔어요. PC 플레이어들이 접근할 수 있는 기회를 얻게 되어 기쁘네요... 비록 Helldivers 2로 시작된 계속되는 PlayStation Network 계정 논란에 휩싸여 있다는 점도 있지만요.
 
@@ -19,7 +18,18 @@ PS5에 접근할 수 없거나 Sony를 지원하려는 욕구가 없지만, 코�
 
 과거에 코에이가 특정 플랫폼에서 발매를 건너뛰고 불만을 표명해왔고, 또 PC에 게임을 아무 알림도 없이 덤핑하는 이상한 일을 했을 때도 불만을 표했었죠. 이번엔 적어도 새로운 타이틀을 사용하려는 모두가 실제로 사용하는 스토어 플랫폼에 등록해놓았어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 충분한 큰 예산의 사무라이 모험이 아직 부족하다면, 조금 전의 Like a Dragon: Ishin!을 확인해보세요. 이것은 세가의 장기 RPG 시리즈에서 공개된 사이드 게임을 화려한 Unreal Engine 리메이크한 작품입니다. 저는 이 게임을 게임 패스로 플레이했고(마이크로소프트 서비스 지원 중단하기 전), 보았던 것을 정말로 좋아했습니다. Ronin의 부상처럼 이 게임은 현대적인 게임 플레이와 진지한 스토리텔링을 많은 신비한 비디오 게임 재미와 조화롭게 섞어냅니다.
 
@@ -29,7 +39,18 @@ PS5에 접근할 수 없거나 Sony를 지원하려는 욕구가 없지만, 코�
 
 “사무라이”에 모든 칩을 갑자기 거는 이 대기업들이 왜 그렇게 한 것인지 명확히 알지는 못하지만, 소니가 Tsushima로 어떻게 한 것을 보고 “즉시 복사하자!”라고 한 것이라고 추측할 수 있습니다. 이는 2012-2013년의 “활 시대”와 같은 게임 디자인의 수렴 트렌드를 떠올리게 합니다. Tomb Raider 2013, Crysis 3, Far Cry 3와 같은 게임들은 모두 멋진 활과 화살 기술을 이용하여 숨어다니기에 몰두했고, 이러한 선택들의 게임 플레이 결과를 오늘날에 이어가는 스텔스 메커니즘에서 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재의 사무라이 열풍은 게임 디자인에 큰 기여를 하지 않았습니다. 대신, 기존의 트로프를 재배열하고 역사적인 부분과 영화적인 부분을 겹쳐 놓았네요. 사무라이 캐릭터는 게임에서 항상 등장해 왔지만, 보통은 예산이 작은 타이틀이나 케릭터 클래스로 등장합니다. '엘덴 링'과 같이 말이죠. '론인의 부상'을 좋아하는 사람으로서 이런 유행이 계속되게 하는 쪽에 동참하고 있지만, 다른 유행이 지나왔던 것처럼 곧 사라질 것으로 보입니다.
 
@@ -39,7 +60,18 @@ PS5에 접근할 수 없거나 Sony를 지원하려는 욕구가 없지만, 코�
 
 시애틀에서 일본인이 아닌 사람들에 의해 만들어진 '쓰시마'에 대해 처음에는 꽤 의심이 많았습니다. 그러나 잘 나온 것 같아요. '어쌔신크리드: 그림자' 역시 백인 크리에이터들이 많이 참여하고 있어 조심스럽게 여겨봅니다. 헌사와 익명의 도용 사이에는 섬세한 선이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우비소프트는 자사의 일본 스튜디오가 참여하고 있다고 반복해서 말했다. 하지만 우비소프트는 전 세계 어디에서든 일하는 수천 명의 인원을 보유하고 있는 것을 알고 있어요. 이들은 이전 몇 작품에서 흰 여성을 검 여성 역할에 캐스팅한 적이 있었는데, 저는 개인적으로 그것이 실수였다고 생각하며, 그들이 목표로 했던 대표성을 싸게 만들었다고 생각해요. 서양인들이 이를 정확하게 하기도 하지만 완전히 잘못하기도 한 것을 알기에, 우비소프트가 이를 망칠까봐 걱정돼요.
 

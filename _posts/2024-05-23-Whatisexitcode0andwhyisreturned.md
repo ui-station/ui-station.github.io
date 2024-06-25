@@ -3,13 +3,12 @@ title: "이번 글에서는 종료 코드 0이란 무엇이며 왜 반환되는�
 description: ""
 coverImage: "/assets/img/2024-05-23-Whatisexitcode0andwhyisreturned_0.png"
 date: 2024-05-23 15:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Whatisexitcode0andwhyisreturned_0.png
 tag: Tech
 originalTitle: "What is exit code 0 and why is returned?"
 link: "https://medium.com/gitconnected/what-is-exit-code-0-and-why-is-returned-13735b758f9e"
 ---
-
 
 프로그래밍의 복잡한 세계에서는 종료 코드를 이해하는 것이 코드 실행의 동작과 결과를 이해하는 데 중요합니다. 이 연구에서는 종료 코드 0의 중요성을 해석하여 다양한 프로그래밍 언어에서의 영향을 알아보고, 프로그램 종료의 기본 메커니즘을 밝힐 것입니다.
 
@@ -21,7 +20,18 @@ int main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 gcc main.c -o main
@@ -32,10 +42,21 @@ gcc main.c -o main
 비슷한 맥락에서, Node.js에서 종료 코드가 처리되는 방법을 살펴보죠:
 
 ```js
-process.exit()
+process.exit();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번 탐구에서 우리는 bash의 유용한 기능에 초점을 맞춰볼 거에요. 이 기능을 통해 우리는 명령어나 프로그램의 이전 반환 상태를 확인할 수 있어요.
 
@@ -47,7 +68,18 @@ echo $?
 
 # 종료 코드 0: 성공의 보편적 상징
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 프로그래밍 언어, C 및 파생 버전을 포함하여, 0의 종료 코드는 오류 없이 성공적으로 실행되었음을 나타냅니다. 프로그램이 기대대로 작업을 완료하면 종료 코드 0을 반환하여 최종 사용자에게 모든 것이 순조롭게 진행되었다는 것을 알립니다. 이 관례는 스크립트 및 자동화된 프로세스가 프로그램이 성공적으로 실행되었는지 또는 문제가 발생했는지를 확인할 수 있도록 합니다.
 
@@ -57,9 +89,20 @@ echo $?
 objdump -d -M intel main
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-우리의 여정은 _start에서 시작되어 __libc_start_main을 거쳐 Linux에서 시스템 호출인 _exit으로 끝납니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+우리의 여정은 \_start에서 시작되어 \_\_libc_start_main을 거쳐 Linux에서 시스템 호출인 \_exit으로 끝납니다.
 
 https://man7.org/linux/man-pages/man2/_exit.2.html
 
@@ -67,7 +110,18 @@ https://man7.org/linux/man-pages/man2/_exit.2.html
 
 ![프로세스 시각화](/assets/img/2024-05-23-Whatisexitcode0andwhyisreturned_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Linux에서 사용되는 다른 내부 코드들을 언급할 수 있어요.
 
@@ -110,4 +164,4 @@ Linux에서 사용되는 다른 내부 코드들을 언급할 수 있어요.
 
 # 결론
 
-C의 main 함수나 Node.js나 다른 프로그래밍 언어에서 process.exit를 사용할 때, 프로그래머가 정의한 종료 코드로 프로세스를 닫기 위해 _exit 시스템 호출이 내부적으로 사용됩니다. 그러나 프로그래머로서 여러분은 프로세스의 적절한 종료와 종료된 프로세스에 대한 사용자에게 가장 좋은 결과를 제공하기 위한 책임이 있습니다.
+C의 main 함수나 Node.js나 다른 프로그래밍 언어에서 process.exit를 사용할 때, 프로그래머가 정의한 종료 코드로 프로세스를 닫기 위해 \_exit 시스템 호출이 내부적으로 사용됩니다. 그러나 프로그래머로서 여러분은 프로세스의 적절한 종료와 종료된 프로세스에 대한 사용자에게 가장 좋은 결과를 제공하기 위한 책임이 있습니다.

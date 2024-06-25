@@ -3,13 +3,12 @@ title: "Argo CD v212 릴리스 후보판"
 description: ""
 coverImage: "/assets/img/2024-06-19-ArgoCDv212ReleaseCandidate_0.png"
 date: 2024-06-19 12:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-ArgoCDv212ReleaseCandidate_0.png
 tag: Tech
 originalTitle: "Argo CD v2.12 Release Candidate"
 link: "https://medium.com/argo-project/argo-cd-v2-12-release-candidate-90793368bfb5"
 ---
-
 
 저희가 기쁜 마음으로 Argo CD v2.12 릴리스 후보판이 공개되었다는 소식을 전해드립니다! 이번 릴리스에는 30개 이상의 새로운 기능, 70여 개의 버그 수정, 그리고 60개의 문서 업데이트가 포함되어 있어요.
 
@@ -17,7 +16,18 @@ link: "https://medium.com/argo-project/argo-cd-v2-12-release-candidate-90793368b
 
 # Multi-source application advancements
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여러 소스에서 Argo CD 애플리케이션을 생성하는 것은 오랜 시간 동안 가장 요청이 많았던 Argo CD 기능 중 하나였습니다. 이 기능을 통해 여러 위치(예: 공개 Helm 차트 및 로컬 값 파일)에서 정보를 그룹화하여 단일 Argo CD 애플리케이션을 형성할 수 있습니다. 여러 소스를 정의하는 초기 지원은 이미 Argo CD 버전 2.6에 추가되었고, CLI를 위한 지원은 2.11에 추가되었습니다. UI는 여전히 애플리케이션이 단일 소스를 가지고 있다고 가정하고 롤백과 같은 특정 CLI 기능은 여러 소스를 가진 애플리케이션에 대해 아직 지원되지 않았습니다.
 
@@ -27,19 +37,41 @@ Argo CD 버전 2.12에서는 여러 소스 애플리케이션의 롤백이 이�
 
 <img src="/assets/img/2024-06-19-ArgoCDv212ReleaseCandidate_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Keith Chong (Red Hat)과 Jorge Turrado에게 이러한 기능들을 구현해 줘서 감사합니다.
 
 # 프로젝트별 저장소 자격증명 개선사항
 
-현재 Argo CD API에서는 동일한 URL을 공유하는 여러 저장소 자격증명을 허용하지 않습니다. 저장소 자격증명이 argocd 네임스페이스에 직접 추가된 경우, argocd-server는 오류를 반환하지 않지만 이 작업은 작동하지 않습니다. URL과 일치하는 첫 번째 시크릿이 반환되며 순서도 정의되어 있지 않기 때문입니다. 
+현재 Argo CD API에서는 동일한 URL을 공유하는 여러 저장소 자격증명을 허용하지 않습니다. 저장소 자격증명이 argocd 네임스페이스에 직접 추가된 경우, argocd-server는 오류를 반환하지 않지만 이 작업은 작동하지 않습니다. URL과 일치하는 첫 번째 시크릿이 반환되며 순서도 정의되어 있지 않기 때문입니다.
 
 Argo CD 버전 2.12부터는 여러 앱 프로젝트가 동일한 URL을 가진 별도의 저장소 자격증명을 가질 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-안녕하세요 Blake Pettersson님(Akuity)! 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+안녕하세요 Blake Pettersson님(Akuity)!
 
 # Kubernetes 이벤트에 레이블 추가하기
 
@@ -47,7 +79,18 @@ Argo CD 버전 2.12에서 사용자들은 Argo CD에서 생성된 k8s 이벤트�
 
 이 기능을 구현해준 Siddhesh Ghadi(Red Hat)님에게 감사드립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 일관성있는 샤딩 알고리즘
 
@@ -57,7 +100,18 @@ Argo CD는 다른 Argo CD 애플리케이션 컨트롤러에 대한 샤딩 적�
 
 Argo CD 버전 2.12부터 새로운 샤딩 알고리즘인 "일관적 해싱(consistent-hashing)"이 소개되었으며, 이는 클러스터-샤드 할당 변경을 줄이고 리소스 이용률을 최적화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번 특징을 구현한 Akram Ben Aissi (Red Hat)에게 감사드립니다.
 
@@ -75,7 +129,18 @@ Argo CD 버전 2.12부터 새로운 샤딩 알고리즘인 "일관적 해싱(con
 - Argo CD CLI에 대한 fish 쉘 완성 지원 추가 (Sn0rt가 수행)
 - 로컬로 존재하는 체크아웃할 커밋이 있는 경우 git fetch 호출 건너뛰기 (Shady Rafehi가 수행)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 새 릴리스는 어디에서 받을 수 있나요?
 

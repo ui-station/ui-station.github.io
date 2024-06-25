@@ -18,7 +18,18 @@ Fully Homomorphic Encryption (FHE)이라는 혁신적인 방식을 소개합니�
 
 FHE가 어떻게 기본 수준에서 작동하는지와 데이터 보안 및 알고리즘 설계에 미치는 영향에 대해 깊이 파고들 것입니다. 이 시리즈에서는 실제 응용 프로그램 및 사기 탐지, 지불 등을 포함한 이런 암호화된 알고리즘을 구현할 때 개발자가 직면하는 잠재적인 도전에 대해 탐구할 것입니다. 이것은 보안을 향상시키는 데 그치는 것이 아니라, 데이터와 상호 작용하는 방식을 재고하고 소프트웨어 개발에서 가능한 범위를 넓히는 데 관한 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 경험 많은 개발자이거나 암호화된 컴퓨팅 개념에 익숙하지 않은 분이라도, 이 기사는 고급 암호 기술을 프로그래밍 프로젝트에 통합하는 방법에 대한 통찰력을 제공할 것입니다. 함께 이 여행을 떠나서 암호로 코딩하는 잠재력을 발견해 보세요. 일상 데이터 연산을 안전하고 개인정보 보호를 위한 계산으로 변환하여 안전한 디지털 혁신의 새 시대를 열어보겠습니다.
 
@@ -28,7 +39,18 @@ FHE(Fully Homomorphic Encryption)에서 암호문에서 수행할 수 있는 주
 
 ![Image](/assets/img/2024-05-23-CodinginCipherEncryptedDataStructuresandAlgorithms_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 소음
 
@@ -38,7 +60,18 @@ FHE를 사용하면 암호화된 데이터에서 연산을 수행할 수 있지�
 
 FHE 스키마의 소음을 관리하는 몇 가지 방법이 있지만, 글의 분량을 고려하여 주된 초점은 부스트래핑이라는 소음 감소 기술에 있습니다. 부스트래핑은 암호문의 소음 수준을 줄이고, 따라서 소음 예산을 회복시키고 더 많은 연산을 가능하게 합니다. 본질적으로, 부스트랩은 복호화 및 다시 암호화 알고리즘을 순환 암호화적으로 적용합니다. 이는 FHE 스키마의 전체 복호화 회로를 암호화된 함수로 평가해야 한다는 것을 필요로 합니다. 결과는 이전과 동일한 평문을 나타내지만 소음이 줄어든 새로운 암호문입니다. 부스트랩은 FHE에서 무제한으로 암호화된 데이터에 대한 연산을 허용하는 중요한 기술입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이론에서 실제로
 
@@ -73,7 +106,18 @@ print(x, "+", y, "=", clear_evaluation, "=", homomorphic_evaluation)
 
 그런 다음 컴파일러는 이 회로를 MLIR 형식으로 컴파일하며, 컴파일이 완료되면 사용자에게 표시됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 module {
@@ -90,8 +134,18 @@ module {
 
 # FHE Operations
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IDE에서 사용되는 FHE 스키마는 기본적으로 다음 작업을 지원합니다:
 
@@ -110,7 +164,18 @@ def f(x):
     return table[x]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적인 테이블처럼 작동합니다. x=0 이라면 f = 2이며, 나머지도 동일합니다: f(1) = -1; f(2) = 3; f(3) = 0.
 
@@ -120,7 +185,18 @@ def f(x):
 
 IF 연산자는 FHE에 기본적으로 포함되어 있지 않으며, 산술적 방법으로 사용해야 합니다. 다음 예제를 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 if a > 0:
@@ -138,7 +214,18 @@ c = 4 * flag + 5 * (1 - flag)
 
 FHE에서 0은 네이티브가 아님을 기억하세요. 가장 간단한 구현 방법은 look-up table을 사용하는 것입니다. 양수 변수 a가 2비트라고 가정하면, a가 0인 경우를 제외한 모든 (4) 결과에 대해 a` 0이 됩니다. a의 두 비트의 모든 결과에 대한 테이블을 구성할 수 있습니다: '0,1,1,1'. 그럼 회로는 다음과 같을 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 table = fhe.LookupTable([0, 1, 1, 1])
@@ -170,7 +257,18 @@ print(f"homomorphic_evaluation = {homomorphic_evaluation}")
 
 컴파일하고 MLIR(컴파일된 회로)를 검사하면 생성된 룩업 테이블을 관찰할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 module {
@@ -189,7 +287,18 @@ FHE를 사용하여 두 이진 숫자를 비교하는 방법은 간단한 산술
 
 이진 뺄셈에서 A가 B보다 크거나 같으면 결과가 양수입니다. B가 더 크면 결과가 음수이며 carry 플래그가 1이됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-CodinginCipherEncryptedDataStructuresandAlgorithms_4.png" />
 
@@ -236,7 +345,18 @@ print("homomorphic_evaluation =", homomorphic_evaluation)
 
 이 방법은 이전 예제와 같이 룩업 테이블을 사용하는 것보다 계산적으로 훨씬 더 비쌉니다. 그러나 여기서는 메모리복잡성이 낮습니다. 왜냐하면 룩업 테이블은 단지 8개의 값을 가지고 있기 때문에 평가 키가 작아집니다. 그리고 예상대로, 아무것도 완벽하지 않습니다. 메모리 사용량 대 CPU 사용량 및 선택한 방법에 따라 키 크기 사이의 교환이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 정렬
 
@@ -276,8 +396,18 @@ print(test, "=> ", clear_evaluation, "=>", homomorphic_evaluation)
 
 버블 정렬은 속도가 꽤 느리지만 [O(n²)] 매우 메모리 효율적입니다 [O(1)]. 더 CPU 효율적인 알고리즘을 원한다면 병합 정렬을 사용할 수 있습니다. 이는 목록을 더 작고 더 관리하기 쉬운 부분(이상적으로는 개별 요소까지)으로 분할하고, 이러한 부분들을 정렬한 다음 올바른 순서대로 다시 병합하는 원리에 기반합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Coding in Cipher: Encrypted Data Structures and Algorithms](/assets/img/2024-05-23-CodinginCipherEncryptedDataStructureandAlgorithms_5.png)
 
@@ -287,8 +417,18 @@ print(test, "=> ", clear_evaluation, "=>", homomorphic_evaluation)
 
 동적 프로그래밍은 복잡한 문제를 더 간단한 하위 문제로 분해하여 각 하위 문제를 한 번만 해결하여 해결하는 방법입니다. 아이디어는 더 작은 하위 문제를 효율적으로 해결할 수 있다면 이러한 해결책을 사용하여 더 큰 문제에 대처할 수 있다는 것입니다. 피보나치 수열을 예로 들어보겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 피보나치 수열은 각 수가 이전 두 수의 합인 수열로, 일반적으로 0과 1로 시작합니다. 수열은 보통 0, 1, 1, 2, 3, 5, 8, 13과 같이 이어집니다. 동적 프로그래밍을 사용하여 n번째 피보나치 수를 구할 때, 무분별한 재귀 접근보다 중복 계산을 피하므로 효율적일 수 있습니다.
 
@@ -298,7 +438,18 @@ print(test, "=> ", clear_evaluation, "=>", homomorphic_evaluation)
 
 ![이미지](/assets/img/2024-05-23-CodinginCipherEncryptedDataStructuresandAlgorithms_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Fully Homomorphic Encryption (FHE)의 맥락에서는 기본 특성과 보안 제약으로 인해 일반적으로 메모이제이션을 사용할 수 없습니다. FHE는 암호화된 데이터에서 작업을 수행할 수 있도록 허용하기 때문에 실제 데이터 값은 계산 중에 숨겨진 상태로 유지됩니다.
 
@@ -308,7 +459,18 @@ Fully Homomorphic Encryption (FHE)의 맥락에서는 기본 특성과 보안 �
 
 이 글은 암호화 데이터 구조 및 알고리즘에 관한 시리즈의 시작을 알립니다. 다음에는 Fully Homomorphic Encryption (FHE) 영역에서 그래프 및 트리, 머신 러닝 및 인공 지능 사용에 대해 탐구할 것입니다. 그 후에는 금융 산업 내에서의 실제 응용 프로그램을 살펴볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 코딩을 암호화로 변환하시겠어요?
 
@@ -316,7 +478,18 @@ FHE-Studio.com에서 오픈 소스 IDE를 활용하여 암호화된 데이터 �
 
 전문적인 전문 지식을 찾고 계신가요? FHE Studio의 팀은 완전 홈모픽 암호화를 기존 프로젝트에 통합하거나 귀하의 요구에 맞게 맞춤형 새로운 암호화된 솔루션을 개발하는 데 도와드릴 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 우리를 지원해주세요
 
@@ -332,6 +505,17 @@ FHE-Studio.com에서 오픈 소스 IDE를 활용하여 암호화된 데이터 �
 5. Microsoft SEAL, 오픈 소스 FHE 라이브러리 https://www.microsoft.com/en-us/research/project/microsoft-seal/
 6. HELib, FHE 라이브러리 https://github.com/homenc/HElib
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저자의 이미지가 아닌 경우를 제외하고, 모든 이미지는 저자에 의해 제공되었습니다.

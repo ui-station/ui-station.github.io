@@ -3,13 +3,12 @@ title: "Spring Boot로 API 게이트웨이 구현하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-APIgatewayinSpringboot_0.png"
 date: 2024-06-22 22:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-APIgatewayinSpringboot_0.png
 tag: Tech
 originalTitle: "API gateway in Spring boot"
 link: "https://medium.com/@ankithahjpgowda/api-gateway-in-spring-boot-3ea804003021"
 ---
-
 
 ![API Gateway](/assets/img/2024-06-22-APIgatewayinSpringboot_0.png)
 
@@ -21,7 +20,18 @@ API는 응용 프로그램 간에 일반적인 통신 방식입니다. 마이크
 - 라우팅 — 라우팅, 요청/응답 조작, 회로 차단기
 - 관찰성 — 지표 집계, 로깅, 추적화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API 게이트웨이의 아키텍처적 이점:
 
@@ -33,7 +43,18 @@ API 게이트웨이에는 Spring Cloud Gateway, Zuul API Gateway, APIGee, EAG (E
 
 본 문서에서는 Spring Cloud API 게이트웨이를 구현하는 방법, 들어오는 요청 필터링, 요청/응답 조작, 인증 처리에 대해 살펴볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래에서 전체 에코시스템을 시각화할 수 있습니다:
 
@@ -46,7 +67,18 @@ API 게이트웨이에는 Spring Cloud Gateway, Zuul API Gateway, APIGee, EAG (E
 - 인증 서버 — 인증을 처리하는 응용 프로그램입니다.
 - 첫 번째와 두 번째 마이크로서비스 — 서로 다른 기능을 갖는 두 개의 일반 내부 응용 프로그램입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 애플리케이션은 시작 시 서비스 레지스트리에 등록됩니다. API 요청을 받으면 다음과 같은 단계가 발생합니다:
 
@@ -60,7 +92,18 @@ API 게이트웨이에는 Spring Cloud Gateway, Zuul API Gateway, APIGee, EAG (E
 
 Service registry
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 유레카 서버로 작동하는 애플리케이션이에요. pom.xml에 다음 종속성이 있어야 해요.
 
@@ -75,26 +118,47 @@ Service registry
 
 기본적으로 유레카 서버는 자신을 디스커버리에 등록하는데, 이를 비활성화하기 위해 application.properties에 아래 속성을 포함해야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-eureka.client.registerWithEureka = false
-eureka.client.fetchRegistry = false
+eureka.client.registerWithEureka = false;
+eureka.client.fetchRegistry = false;
 ```
 
 다른 애플리케이션을 Eureka 클라이언트로 만들려면 pom.xml에 아래 종속성을 포함하세요:
 
 ```js
-  <dependency>
-   <groupId>org.springframework.cloud</groupId>
-   <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-  </dependency>
+<dependency>
+  <groupId>org.springframework.cloud</groupId>
+  <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency>
 ```
 
 그리고, application.properties 파일에 Eureka 서버 URL을 제공해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 eureka.client.serviceUrl.defaultZone= <eureka-서버-가동-호스트-및-포트>
 
@@ -122,7 +186,18 @@ Spring Cloud API 게이트웨이에는 pom.xml에 아래 종속성이 필요합�
  </dependencyManagement>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 application.yml 파일에서 모든 내부 마이크로서비스 이름, 경로 및 uri 세부 정보를 다음과 같이 제공해주세요:
 
@@ -173,7 +248,18 @@ public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 필터:
 
@@ -209,7 +295,18 @@ public class RequestFilter implements GatewayFilter {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 B. 응답 본문을 로깅하려면:
 
@@ -298,7 +395,18 @@ C. API 호출 전에 인증하기:
 
 다음과 같이 인증 필터를 생성하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 package com.example.springcloudgatewayoverview.filter;
@@ -415,10 +523,23 @@ public class RouteValidator {
 ```
 
 JWTUtil:
+
 ```java
+
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 package com.example.springcloudgatewayoverview.util;
@@ -457,8 +578,18 @@ Authentication server:
 
 실행:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Once all applications are running, you can access the service registry by entering http://localhost:8761 in your browser. Here, you can find information about all the currently running services:
 
@@ -468,7 +599,18 @@ The API Gateway is running on localhost at port 8080. You can access the endpoin
 
 ![API Gateway Endpoints](/assets/img/2024-06-22-APIgatewayinSpringboot_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 APIGateway 콘솔의 요청/응답 로그:
 
@@ -478,7 +620,18 @@ APIGateway 콘솔의 요청/응답 로그:
 
 ![2024-06-22-APIgatewayinSpringboot_5](/assets/img/2024-06-22-APIgatewayinSpringboot_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서비스의 모든 코드 기반은 여기에서 사용 가능합니다.
 

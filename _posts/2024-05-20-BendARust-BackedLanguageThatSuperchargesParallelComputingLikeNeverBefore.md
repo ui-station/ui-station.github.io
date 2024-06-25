@@ -3,13 +3,12 @@ title: "번드 - 전례 없이 병렬 컴퓨팅을 강력하게 돕는 러스트
 description: ""
 coverImage: "/assets/img/2024-05-20-BendARust-BackedLanguageThatSuperchargesParallelComputingLikeNeverBefore_0.png"
 date: 2024-05-20 20:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BendARust-BackedLanguageThatSuperchargesParallelComputingLikeNeverBefore_0.png
 tag: Tech
 originalTitle: "Bend — A Rust-Backed Language That Supercharges Parallel Computing Like Never Before"
 link: "https://medium.com/gitconnected/bend-a-rust-backed-language-that-supercharges-parallel-computing-like-never-before-3e603f5eed9c"
 ---
-
 
 안녕하세요! Bend에 대해 들어보셨나요?
 
@@ -17,7 +16,18 @@ link: "https://medium.com/gitconnected/bend-a-rust-backed-language-that-supercha
 
 몇 시간 전에 Bend라는 GitHub 저장소를 발견했어요. 'Bend — 대규모 병렬 처리를 지원하는 고수준 프로그래밍 언어'라는 제목이 붙어 있었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Bend는 병렬 계산을 수행하는 방식을 영원히 변경하려는 고수준 프로그래밍 언어입니다.
 
@@ -27,7 +37,18 @@ Bend가 약속하는 좋은 부분을 알아보기 전에 병렬 계산에 대�
 
 # 병렬 계산 - 최소의 시간으로 최대의 일을 하는 기술
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컴퓨터 프로그램은 기본적으로 작업을 하나씩 차례대로 실행합니다.
 
@@ -37,7 +58,18 @@ Bend가 약속하는 좋은 부분을 알아보기 전에 병렬 계산에 대�
 
 이로 인해 프로그램 내부의 명령 흐름이 예측 가능하고 디버깅하기 쉬워집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나, 이것은 또한 모든 명령어가 실행을 시작하기 전에 이전 명령어가 끝날 때까지 기다려야 한다는 것을 의미합니다.
 
@@ -47,7 +79,18 @@ Bend가 약속하는 좋은 부분을 알아보기 전에 병렬 계산에 대�
 
 # 하지만, 병렬 연산을 올바르게 수행하는 것은 어려울 수 있습니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 병렬 계산을 다룬 적이 있는 분이라면, 그것을 올바르게 처리하는 것이 정말 악몽이라고 동의할 것입니다.
 
@@ -57,7 +100,18 @@ Bend가 약속하는 좋은 부분을 알아보기 전에 병렬 계산에 대�
 
 이러한 문제는 Python 라이브러리인 threading과 multiprocessing이나 Go의 WaitGroup, Mutex, RWMutex와 같은 동기화 기본 요소를 이용한 Goroutines 등으로 해결되었지만, 이들의 구현은 숙련하기 어렵습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CUDA 및 Metal은 각각 NVIDIA 및 Apple GPU에서 병렬 계산을 활성화하는 몇 가지 다른 프로그래밍 모델입니다. 그러나 이를 다루는 대부분의 사람들은 (정직하다면) 그것을 완벽히 이해하는 데 얼마나 어려운 작업인지 말해 줄 것입니다.
 
@@ -67,7 +121,18 @@ CUDA 및 Metal은 각각 NVIDIA 및 Apple GPU에서 병렬 계산을 활성화�
 
 # Bend가 구해줄게요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단순히 Python처럼 쉽게 느껴지도록 작성된 언어인 Bend는 아마도 우리를 이 비통으로부터 구출해 줄 수 있는 사랑스러운 언어일지도 모르겠어요.
 
@@ -77,7 +142,18 @@ Bend는 기본적으로 코드를 병렬로 실행하기 때문에, 다중 코�
 
 ## 하지만, Bend는 어떻게 이것이 가능하게 만드는 걸까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Bend은 매우 병렬 실행을 위해 설계된 강력한 계산 프레임워크인 HVM2 또는 Higher-order Virtual Machine 2에 의해 구동됩니다.
 
@@ -87,7 +163,18 @@ HVM2는 1997년 Yves Lafont가 고안한 병렬 컴퓨테이션 모델인 Intera
 
 이 모델에서 각 계산은 그래프로 시각화됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 그래프들에서 각 노드는 조합자(Combinator)입니다.
 
@@ -98,7 +185,18 @@ HVM2는 1997년 Yves Lafont가 고안한 병렬 컴퓨테이션 모델인 Intera
 - Identity Combinator는 인수를 변경하지 않고 반환합니다.
 - Constant Combinator는 두 개의 인수를 사용하고 첫 번째 것을 반환합니다(두 번째 것을 무시), 등등.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래프에서 각 엣지는 이 결합자들 간의 연결을 나타냅니다.
 
@@ -108,7 +206,18 @@ HVM2는 1997년 Yves Lafont가 고안한 병렬 컴퓨테이션 모델인 Intera
 
 그리고 이것이 이 모델을 강력하게 만드는 요소입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HVM2은 고수준 언어로 작성된 프로그램을 대상으로 하는 저수준 컴파일러이며 직접 사용하기 위한 것은 아닙니다.
 
@@ -127,7 +236,18 @@ HVM2은 고수준 언어로 작성된 프로그램을 대상으로 하는 저수
 
 하지만 걱정하지 마세요. Bend는 우리의 삶을 쉽게 만들기 위해 이 암호화된 HVM2와 인터페이스를 맺기 위해 작성된 사람이 읽을 수 있는 언어입니다. 함께 작업을 병렬로 처리할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Bend 사용 방법
 
@@ -140,7 +260,18 @@ cargo +nightly install bend-lang
 
 안타깝게도, 현재 Windows에서는 작동하지 않기 때문에 (나처럼) WSL2를 해결책으로 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 Bend 코드를 작성합니다.
 
@@ -225,7 +356,18 @@ def main:
 
 이 알고리즘은 병렬로 실행할 수 있는 분할 정복 방식을 사용하므로 Bend는 병렬로 실행할 것입니다 (Bend의 철학을 기억하시나요?)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 이 명령어를 사용하여 sorter.bend 프로그램을 실행합니다 —
 
@@ -239,8 +381,18 @@ bend run-cu sorter.bend # CUDA 해석기(대규모 병렬 실행) 사용
 
 또한 최대 성능을 위해 Bend 파일을 독립적인 C/CUDA 파일로 컴파일할 수 있지만, 이러한 명령어는 아직 성숙하지 않을 수 있으며 오류를 발생시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Bend는 아직 초기 단계에 있지만 매우 유망해보입니다.
 
@@ -250,8 +402,18 @@ Bend는 아직 초기 단계에 있지만 매우 유망해보입니다.
 
 # 더 많이 알아보기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Bend의 GitHub 저장소
 - Bend를 처음부터 배우기

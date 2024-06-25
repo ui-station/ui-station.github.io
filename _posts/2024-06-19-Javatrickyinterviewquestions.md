@@ -3,14 +3,12 @@ title: "자바 어려운 면접 질문"
 description: ""
 coverImage: "/assets/img/2024-06-19-Javatrickyinterviewquestions_0.png"
 date: 2024-06-19 22:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-Javatrickyinterviewquestions_0.png
 tag: Tech
 originalTitle: "Java tricky interview questions"
 link: "https://medium.com/@abhishek.talakeriv/java-tricky-interview-questions-fe3aa2b71c0b"
 ---
-
-
 
 ![이미지](/assets/img/2024-06-19-Javatrickyinterviewquestions_0.png)
 
@@ -28,8 +26,18 @@ public static void main(String[] args) {
 }
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문: 16
 
@@ -50,7 +58,18 @@ public static void main(String[] args) {
 
 답변: False
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 다음 코드의 출력은 무엇입니까?
 
@@ -68,7 +87,18 @@ public static void main(String[] args) {
 
 4. 다음 코드의 출력은 무엇입니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 int a = 10;
@@ -89,7 +119,18 @@ public static void main(String[] args) {
  }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 답변: True
 
@@ -102,11 +143,20 @@ public static void main(String[] args) {
   System.out.println(arr[0]);
 
  }
- 
+
 
 답변: 0
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7. 아래 코드의 출력은 무엇입니까?
 
@@ -122,7 +172,16 @@ public static void main(String[] args) {
 
 8. 다음 코드는 무엇을 출력합니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 public static void main(String[] args) {
 
@@ -139,7 +198,16 @@ int b = 10;
 a ^= b ^= a ^= b;
 System.out.println(a + "-" + b);
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 0-5 사이의 답변입니다.
 
@@ -153,7 +221,16 @@ public static void main(String[] args) {
 
 답변 : 30304050
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 11. 아웃풋은 무엇인가요?
 
@@ -169,19 +246,27 @@ public static void main(String[] args) {
 
 12. 이 코드는 무엇을 출력하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```
- java
+
+java
 public static void main(String[] args) {
 
- Integer a = 127;
- Integer b = 127;
- System.out.println(a == b);
+Integer a = 127;
+Integer b = 127;
+System.out.println(a == b);
 
 }
-
-
 
 답변: True
 
@@ -203,9 +288,20 @@ public static void main(String[] args) {
  }
 
 }
-``` 
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 답변이 있습니다:
 
@@ -224,7 +320,18 @@ public static void main(String[] args) {
 
 답변: abbleapple
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 15. 출력은 무엇입니까?
 
@@ -243,7 +350,18 @@ public static void main(String[] args) {
 
 16. 결과는 무엇입니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public static void main(String[] args) {
@@ -281,7 +399,18 @@ public static void main(String[] args) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 답변:
 
@@ -291,7 +420,18 @@ public static void main(String[] args) {
 
 18. 결과는 무엇입니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public static void main(String[] args) {
@@ -319,8 +459,18 @@ public static void main(String[] args) {
  }
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 답변: 0.0
 
@@ -337,7 +487,18 @@ public static void main(String[] args) {
 
 답변: false
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 21. 이 코드는 무엇을 출력합니까?
 
@@ -355,14 +516,33 @@ public static void main(String[] args) {
 
 22. 다음의 출력물은 무엇입니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경하실래요.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문 : 6
 
@@ -381,7 +561,18 @@ public static void main(String[] args) {
 
 답변 : 0
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 25. 이 코드의 출력은 무엇입니까?
 
@@ -402,7 +593,18 @@ public static void main(String[] args) {
 
 제 글을 끝까지 읽어주셔서 감사합니다. 글에서 유익한 통찰과 지식을 얻으셨기를 진심으로 바랍니다. 글이 즐겁고 유익했다면, 친구들과 동료들과 공유해 주시기를 부탁드립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 글을 즐겨 보셨다면 팔로우, 구독 또는 박수를 부탁드립니다.
 

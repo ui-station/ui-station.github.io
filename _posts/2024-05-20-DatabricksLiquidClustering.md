@@ -3,13 +3,12 @@ title: "데이터브릭스 리퀴드 클러스터링"
 description: ""
 coverImage: "/assets/img/2024-05-20-DatabricksLiquidClustering_0.png"
 date: 2024-05-20 16:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-DatabricksLiquidClustering_0.png
 tag: Tech
 originalTitle: "Databricks Liquid Clustering"
 link: "https://medium.com/@rahulsoni4/have-you-ever-wondered-if-theres-a-dynamic-solution-to-the-relentless-challenge-of-data-9e9956bd6bf9"
 ---
-
 
 이전에 데이터 레이크하우스 세계에서 데이터 분할의 끊임없는 도전에 대한 동적 해결책이 있는지 궁금했나요?
 
@@ -19,8 +18,18 @@ link: "https://medium.com/@rahulsoni4/have-you-ever-wondered-if-theres-a-dynamic
 
 다음 그래프를 살펴보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![DatabricksLiquidClustering](/assets/img/2024-05-20-DatabricksLiquidClustering_0.png)
 
@@ -43,7 +52,18 @@ CREATE TABLE kaggle_partitioned (
 ) USING delta PARTITIONED BY (year, month);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 문제가 있어요. 테이블의 전체 데이터 중 약 83%가 2개의 파티션에 있습니다.
 
@@ -53,8 +73,18 @@ CREATE TABLE kaggle_partitioned (
 
 이 테이블의 데이터 분포를 더 깊게 살펴보겠습니다. 다음 차트는 연간 행 수의 월별 분할을 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![데이터 분포의 그림적 표현](/assets/img/2024-05-20-DatabricksLiquidClustering_2.png)
 
@@ -64,20 +94,41 @@ CREATE TABLE kaggle_partitioned (
 
 다음 그림이 어떤 연관성이 있나요? 무슨 의미를 전달하나요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-DatabricksLiquidClustering_3.png" />
 
 현재 파티셔닝 전략대로,
 
-- 2020–03과 같은 파티션의 경우, 한 시간치 데이터를 쿼리하기 위해 많은 양의 데이터를 읽어야 할 지도 모릅니다. 
-- 반면에 다른 극단적인 상황에서는, 적은 양의 데이터를 가진 고객을 위한 쿼리를 수행하기 위해 여러 파티션을 가로질러 많은 작은 파일을 스캔해야 할 수도 있습니다. 
+- 2020–03과 같은 파티션의 경우, 한 시간치 데이터를 쿼리하기 위해 많은 양의 데이터를 읽어야 할 지도 모릅니다.
+- 반면에 다른 극단적인 상황에서는, 적은 양의 데이터를 가진 고객을 위한 쿼리를 수행하기 위해 여러 파티션을 가로질러 많은 작은 파일을 스캔해야 할 수도 있습니다.
 - 마지막으로, 테이블을 주/일/월 단위로 다시 파티셔닝해야 할 경우, 전체 테이블을 다시 작성해야 합니다. 또 다시요!
 
 이제 우리 테이블에서 데이터 쓰기 시나리오를 논의해 봅시다. 제 생각에는 이미지가 제 의견을 요약해 주고 있으므로 글로 다시 작성할 필요는 없을 것 같아요 ;)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-DatabricksLiquidClustering_4.png" />
 
@@ -87,7 +138,18 @@ CREATE TABLE kaggle_partitioned (
 
 리퀴드 클러스터링이 등장했습니다! 데이터 레이아웃 결정을 간소화하고 쿼리 성능을 향상시키며, 지속적인 모니터링 및 조정을 요구하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 어떻게 하는 건가요?
 
@@ -102,7 +164,18 @@ CREATE TABLE kaggle_partitioned (
 
 ![다이어그램](/assets/img/2024-05-20-DatabricksLiquidClustering_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요렇게 Liquid Clustering이 어떻게 도와주는지 확인해보세요! Liquid Clustering은 군집화와 파일 크기의 효율적인 균형을 이룹니다.
 
@@ -112,7 +185,18 @@ CREATE TABLE kaggle_partitioned (
 
 ![Liquid Clustering](/assets/img/2024-05-20-DatabricksLiquidClustering_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실제로 보여드릴게요! 여기 파티션된 테이블의 파일 크기 분포입니다.
 
@@ -128,7 +212,18 @@ FROM
   kaggle_partitioned;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 군집 테이블의 파일 크기 분포도가 여기 있어요.
 
@@ -138,7 +233,18 @@ FROM
 
 액체 클러스터링은 일부/게으른 클러스터링을 활용하여 효율적으로 적재를 돕습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그걸 어떻게 이해하는지 알아봅시다.
 
@@ -151,7 +257,18 @@ FROM
 
 첫 번째로! 클러스터링은 파티셔닝이나 ZORDER와 호환되지 않으며, Databricks 클라이언트가 테이블의 데이터에 대한 모든 레이아웃 및 최적화 작업을 관리해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 리퀴드 클러스터링을 사용하여 델타 테이블을 생성하는 방법을 살펴보겠습니다.
 
@@ -177,7 +294,18 @@ CREATE TABLE table3 LIKE table1;
 
 간단히 테이블에 OPTIMIZE 명령을 사용하면 됩니다. 아래 예시를 참고하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 테이블 이름을 최적화하세요;
@@ -189,7 +317,18 @@ CREATE TABLE table3 LIKE table1;
 
 # 리퀴드 클러스터링은 무엇에 사용되나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Databricks 문서에 따르면, 모든 새로운 Delta 테이블에는 리퀴드 클러스터링을 사용하는 것이 권장됩니다. 클러스터링이 유용한 시나리오의 예시는 다음과 같습니다:
 

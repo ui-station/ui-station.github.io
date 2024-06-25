@@ -3,13 +3,12 @@ title: "앱 아키텍처 프레젠테이션 레이어"
 description: ""
 coverImage: "/assets/img/2024-05-17-AppArchitecturePresentationlayer_0.png"
 date: 2024-05-17 18:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-AppArchitecturePresentationlayer_0.png
 tag: Tech
 originalTitle: "App Architecture: Presentation layer"
 link: "https://medium.com/proandroiddev/app-architecture-presentation-layer-0d704ede2564"
 ---
-
 
 ![Presentation Layer](/assets/img/2024-05-17-AppArchitecturePresentationlayer_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/proandroiddev/app-architecture-presentation-layer-0d70
 
 이 안내서에서는 UI 레이어를 구현하고 구성하는 방법을 보여줄 것입니다. UI 레이어를 구축하기 위해 사용할 수 있는 많은 라이브러리, 프레임워크 및 패턴이 있습니다. 오늘은 Android Fragment + Jatpack Compose + Orbit-MVI + Kotlin + Flow + Coroutines + Koin (DI) 기술 스택을 기반으로 모든 것을 구축할 것입니다. 이것은 최적의 조합 중 하나입니다. 저는 Router, Router Container, ViewModel, Screen, Navigator와 같은 UI 구성 요소에 초점을 맞출 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 라우터
 
@@ -32,7 +42,18 @@ link: "https://medium.com/proandroiddev/app-architecture-presentation-layer-0d70
 
 라우터 뒤에 있는 주요 아이디어는 UI 상태를 생성하고 관리하는 방법을 알고 있으며 탐색할 수 있는, 자체 지속 가능한 UI 유닛을 캡슐화하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 네이밍 규칙
 
@@ -42,7 +63,18 @@ Route 클래스는 해당하는 화면 이름에 따라 이름이 지정됩니�
 
 예를 들어: FareListRoute, ConformationRoute.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드에서는 Router가 어떻게 보이는지 확인할 수 있습니다. 매개변수로 전달되는 ViewModel은 Koin(DI)에 의해 주입됩니다. 이와 함께, 이전 화면에서 전달된 Navigator와 ryderId를 데이터로 전달합니다. Koin의 멋진 기능 중 하나는 ryderId를 ViewModel 생성자에 주입할 수 있다는 것입니다.
 
@@ -52,17 +84,37 @@ collectAsState는 ViewModel이 Orbit 라이브러리에서 구현하는 Containe
 
 lifecycleState — 이 Flow 작업을 다시 시작하는 Lifecycle이 유지됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Markdown으로 표 태그를 변경하세요.
-
 
 | Header 1 | Header 2 |
 | -------- | -------- |
 | Data 1   | Data 2   |
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 명명 규칙
 
@@ -72,7 +124,18 @@ UI 구성 요소 이름 + Fragment.
 
 예를 들어 FareListFragment.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UI 구성 요소 이름 + 컨트롤러.
 
@@ -82,7 +145,18 @@ UI 구성 요소 이름 + 컨트롤러.
 
 이것이 왜 네비게이터의 주입 로직이 Router가 아닌 Fragment 안에 있는 이유입니다. 네비게이터는 네비게이션 로직을 구현하기 위해 Fragment NavController를 필요로하기 때문입니다. 이렇게 함으로써 Router와 컨테이너 구현이 분리되고, 우리가 컨테이너 구현을 쉽게 변경할 수 있게 해줍니다. 예를 들면 — Compose 네비게이션이나 Conductor 라이브러리의 Controller를 사용하는 것과 같이요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 네비게이터
 
@@ -94,7 +168,18 @@ UI 구성 요소 이름 + 컨트롤러.
 
 화면이 다른 화면으로 탐색해야 하는 경우, 해당 화면에 자체 네비게이터 클래스가 있어야 합니다. 이는 기본 ScreenNavigator에서 기본적인 뒤로 가기 동작을 가진 확장되어 있을 수 있으며, 다른 네비게이터와 Fragment NavController와 같은 플랫폼 의존적인 구성 요소를 포함할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 네이밍 규칙
 
@@ -104,7 +189,18 @@ UI 구성 요소 이름 + 컨트롤러.
 
 예를 들어 FareListNavigator.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱 아키텍처 프레젠테이션 계층 다이어그램을 살펴보는 걸로 하죠.
 
@@ -114,7 +210,18 @@ UI 구성 요소 이름 + 컨트롤러.
 
 예를 들어, Fare 모듈이 있는데 그중 하나는 사용자의 프로필 화면으로 이동하는 버튼이 있는 기능이 있어요. 사용자 프로필 페이지는 Profile 모듈에 있죠. 이 네비게이션을 어떻게 구현하면 좋을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그걸 위해, 사용자 프로필 페이지로 이동하는 방법을 아는 ProfileSharedNavigator 인터페이스를 만들어야 하고, Shared 모듈에 유지해야 합니다.
 
@@ -124,7 +231,18 @@ UI 구성 요소 이름 + 컨트롤러.
 
 ScreenNavigator는 이동하는 방법만을 알고 있는 베이스 클래스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱 모듈은 앱 내 모두에 대해 모든 정보를 알고 있습니다. 이 모듈의 주요 목적은 프로젝트의 모든 피처 모듈 사이에 있는 모든 의존성 주입 로직을 조직화하는 것입니다.
 
@@ -134,7 +252,18 @@ AppNavigator가 ProfileSharedNavigator 인터페이스의 실제 구현을 보�
 
 상태 파일에는 UI 상태 데이터 클래스가 포함되어 있으며, 사이드 이펙트 시그니처가 가장 적합합니다. 상태 클래스는 구성 변경을 통해 상태가 보존되길 원할 경우 Parcelable(선택 사항)할 수 있습니다. 모든 속성은 가능하다면 기본값을 가져야 합니다. Effect 클래스에는 UI에서의 일회성 작업이 포함되어 있습니다. 이는 네비게이션, 토스트, 스낵 바, 바텀 시트 또는 대화 상자와 같은 것입니다. Effect에 대해 자세히 알아보려면 Orbit Side Effect 문서를 읽어볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 네이밍 규칙
 
@@ -144,7 +273,18 @@ UI 구성 요소 이름 + State.
 
 UI 구성 요소 이름 + Effect.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, FareListState 및 FareListEffect.
 
@@ -154,7 +294,18 @@ UI 구성 요소 이름 + Effect.
 
 프레젠테이션 레이어에는 도메인 레이어의 모델을 반영하지만 더 UI에 특화된 데이터 모델이 있습니다. 프레젠테이션 모델과 도메인 간의 매핑 로직은 ViewModel 클래스에 배치해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 프레젠테이션 레이어는 다른 레이어에게 UI 모델을 노출해서는 안 돼요.
 - 프레젠테이션 모델은 Parcelable 및 Serializable과 같은 플랫폼별 직렬화 방식을 구현할 수 있어요.
@@ -166,7 +317,18 @@ UI 구성 요소 이름 + Effect.
 
 데이터 유형 + Model.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어: Ryder, Fare.
 
@@ -176,7 +338,18 @@ ViewModel은 비즈니스 로직 상태 보유자입니다. Android 개발에서
 
 현재 구현에서 androidx.lifecycle.ViewModel과 Orbit-MVI lib을 사용하고 있습니다. ViewModel은 Orbit 컨테이너를 보유하고 ContainerHost를 구현합니다. 무엇이 진행 중인지 더 잘 이해하기 위해 Orbit API 문서를 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 네이밍 규칙
 
@@ -186,7 +359,18 @@ UI 구성 요소 이름 + ViewModel.
 
 예를 들어, FareListViewModel.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드에서 ViewModel의 예제를 확인할 수 있습니다. 거기에서 무슨 일이 일어나고 있는지 알아보겠습니다.
 
@@ -196,7 +380,18 @@ UI 구성 요소 이름 + ViewModel.
 
 그리고 ViewModel에 넣으려고 하지 마세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 fetchFares 메소드에서 흥미로운 일이 더 많이 진행됩니다.
 
@@ -206,7 +401,18 @@ executeUseCase는 ViewModel의 확장 메소드로, 유증 실행하고 해당 �
 
 하나의 작업을 위해 2개 이상의 유증을 실행해야 하는 상황에 직면하면 다음 옵션을 고려해보시기 바랍니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 새 사용 사례를 만들고 모든 로직을 그곳에 넣으세요. 필요한 사용 사례를 결합하세요.
 - 여러 사용 사례에서 결과를 기다려야하고 그 결과를 결합해야한다면:
@@ -217,7 +423,18 @@ asPresentation() 메소드는 도메인 계층의 데이터 모델을 프레젠�
 
 화면 파일에는 UI 구성 구현이 모두 포함되어 있으며, 각 화면 상태에 대한 Compose 미리 보기가 포함되어 있습니다. 상태에는 비어 있는 상태, 오류 상태, 로딩 상태, 콘텐츠 상태 등이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 네이밍 규칙
 
@@ -227,7 +444,18 @@ UI 구성 요소 이름 + Screen.
 
 예를 들어 FareListScreen.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UI를 Compose를 사용하여 빌드할 때 따르는 것이 좋은 몇 가지 규칙이 있습니다.
 
@@ -239,7 +467,18 @@ TopAppBar Composable 함수를 작성해야 한다고 상상해보세요. 타이
 
 옵션 1.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 옵션 2를 항상 선택하세요. 그렇게 하면 Composable 함수가 더 맞춤 설정 가능하고 강력해집니다.
 
@@ -247,7 +486,18 @@ TopAppBar Composable 함수를 작성해야 한다고 상상해보세요. 타이
 
 화면 미리보기를 실제 시나리오와 최대한 비슷하게 보이도록 하려면 상태를 만들기 위해 무작위 데이터가 필요합니다. 이를 위해 FareModelFake 클래스를 만들어서 FareModel과 동일한 패키지에 넣을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
  model/
@@ -288,7 +538,18 @@ presentation/
 │ ├─ ConfirmationViewModel
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리
 

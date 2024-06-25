@@ -3,13 +3,12 @@ title: "지금 기술 세계에서 일어나고 있는 가장 어리석은 프�
 description: ""
 coverImage: "/assets/img/2024-05-18-TheDumbestProjecthappeningintheTechWorldrightnow_0.png"
 date: 2024-05-18 18:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TheDumbestProjecthappeningintheTechWorldrightnow_0.png
 tag: Tech
 originalTitle: "The Dumbest Project happening in the Tech World right now"
 link: "https://medium.com/predict/the-dumbest-project-happening-in-the-tech-world-right-now-76e10f5bacfe"
 ---
-
 
 ![2024-05-18-TheDumbestProjecthappeningintheTechWorldrightnow_0](/assets/img/2024-05-18-TheDumbestProjecthappeningintheTechWorldrightnow_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/predict/the-dumbest-project-happening-in-the-tech-worl
 
 # Rewind Pendant: 현재 기술 세계에서 일어나는 가장 어리석은 프로젝트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Rewind은 현재 소프트웨어를 판매하고 있는 회사입니다. 이 소프트웨어는 노트북에서 보거나 듣거나 말하는 모든 것을 기록합니다. 2023년 10월, 그들의 CEO는 The Pendant를 출시한다고 발표했습니다. 이는 검은 실린더가 달린 작은 목걸이로, 내부에는 마이크가 달려 있습니다. 핵심 원칙은 간단합니다. The Pendant는 모든 대화를 기록하고, 전사하고, 암호화한 후, 사용자의 핸드폰에 저장하여 사용자가 지금까지 한 모든 대화를 검토할 수 있게 합니다.
 
@@ -29,7 +39,18 @@ Rewind은 현재 소프트웨어를 판매하고 있는 회사입니다. 이 소
 
 많은 분들이 눈치채셨을 것이지만, 이는 말 그대로 로우테크 블랙 미러 에피소드입니다. "The Entire History of You"에서는 "Grains"가 생물학적으로 사람들이 보고 듣는 모든 것을 기록하고, "The Pendant"는 마이크를 통해 대화를 기록합니다. 그리고 "Grains"가 개인이 기억을 완벽하게 다시 보는 것을 허용하는 반면, "The Pendant"는 그저 대화를 전사하고 저장하여 나중에 검토할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-TheDumbestProjecthappeningintheTechWorldrightnow_1.png" />
 
@@ -39,7 +60,18 @@ Rewind은 현재 소프트웨어를 판매하고 있는 회사입니다. 이 소
 
 이를 생각해보세요. 우리가 하는 말 중 상당수는 녹음되고 어떻게든 누출되면 좋지 않을 것입니다. 풍문의 세계는 사실상 사라질 것입니다. 누구도 신뢰받지 못할 것이며 왜냐하면 모두가 선을 착용하고 있을 것이기 때문입니다. 또는 chatGPT가 말했듯이, "The Pendant는 모든 대화가 저장되어 세밀하게 조사될 수 있기 때문에 신뢰와 의사소통의 역학을 바꿀 수 있습니다." 이 모든 상황에서 유일하게 즐거운 결과는 사우나 회의가 크게 부활할 것이다는 것입니다; 개인 정보를 보장하기 위한 유일한 방법은 모두가 벗은 상태로 있음을 확인하는 것이 될 것입니다. 그것이 평등에 큰 도움이 될 것이라고 확신합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당연히, The Pendant 웹 사이트는 “우리는 개인 정보 보호를 최우선으로 하며, 다른 사람이 동의 없이 녹음되지 않도록하는 기능을 제공합니다.”라고 말합니다. 그러나 다른 내용은 작성되지 않았습니다. 더 자세한 설명이 없으면 이 명세는 가치가 없어집니다. 개인 정보 보호 문제를 해결하는 유일한 방법은 녹음을 위해 구두 동의가 필요하고, 고유한 음성 서명과 연결되어야 한다는 것입니다. 일부 알고리즘은 이를 수행할 수 있지만, 여러 질문들이 발생할 것입니다. 예를 들어, 동의가 없는 경우 얼마나 자주 그리고 빨리 녹음이 삭제되는지? 나중에 동의하고 대화를 검색할 수 있는가? 음성 서명은 어디에 저장되는가? 사람들의 목소리에 대한 딥페이크는 얼마나 정확한가? 작은 소프트웨어 회사에 대한 알아야 할 질문이 많이 있군요.
 
@@ -49,7 +81,18 @@ The Pendant는 생산성 도구로서 마케팅되고 있습니다. 일부 감�
 
 생산적이기 위한 큰 부분은 대화 뒤에 일어나는 사고입니다. 사실, 1시간 진행된 회의 후에 3가지 이상의 결론을 내기가 어려울 정도로 어려울 때도 있습니다. 전체 대화를 검토하는 대신 주요 인용구와 생각이 담긴 작은 노트북을 가지고 있는 것이 문제를 해결하고 생산성을 줄이는 것이 아닙니다. 전문적인 회의록 작성자를 믿어요, The Pendant는 사람들의 불안과 놓치고 있는 것을 두려워하고 있는 것을 이용하려는 것뿐이지만 실제로는 문제를 찾는 솔루션일 뿐입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 이 아이디어를 완전히 묻어버릴 또 다른 두 가지 이유가 있습니다:
 
@@ -60,7 +103,18 @@ The Pendant는 생산성 도구로서 마케팅되고 있습니다. 일부 감�
 
 오브, 스피어, 그리고 이제 펜던트까지. 우리가 어떻게해서 YA 소설 속으로 빨려 들어간 걸까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기술은 모든 것이 마찰을 줄이는 데 관한 것입니다. Spotify, Uber, Netflix... 대부분의 기업들보다 그것을 더 잘 해냈습니다. 하지만 때로는 삶 속에서 약간의 마찰이 건강하다고 느낄 때도 있습니다. 예를 들어, 주변 사람을 녹음하기 위해 주머니에서 iPhone을 꺼내는 행위는 우리에게 제일 큰 프라이버시 보호자가 될 수 있습니다.
 
@@ -68,7 +122,18 @@ The Pendant는 생산성 도구로서 마케팅되고 있습니다. 일부 감�
 
 이 펜던트는 그것을 이루지 않을 것입니다. 그리고 그 장비를 착용하는 사람은 사회적으로 냉대를 받을 것으로 예상합니다. 잘 가요. 번창하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 원본으로 wearedevelopers.com에 작성되었습니다. 유럽의 개발자 중심 취업 플랫폼입니다.
 

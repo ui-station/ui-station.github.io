@@ -3,13 +3,12 @@ title: "글 제목 스타일로 번역하면 충격 AI가 코드 품질을 파�
 description: ""
 coverImage: "/assets/img/2024-05-20-SHOCKINGAIDestroysCodeQuality_0.png"
 date: 2024-05-20 16:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SHOCKINGAIDestroysCodeQuality_0.png
 tag: Tech
 originalTitle: "SHOCKING🤯. AI Destroys Code Quality"
 link: "https://medium.com/@tsecretdeveloper/shocking-ai-destroys-code-quality-bd0ae50624e2"
 ---
-
 
 ![이미지](/assets/img/2024-05-20-SHOCKINGAIDestroysCodeQuality_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tsecretdeveloper/shocking-ai-destroys-code-quality-bd
 
 ![이미지](/assets/img/2024-05-20-SHOCKINGAIDestroysCodeQuality_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 증거를 살펴봅시다
 
@@ -29,7 +39,18 @@ GitClear는 AI 코드 생성 도구가 코드 품질에 어떤 영향을 미쳤�
 
 # 속도 != 품질
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GitHub은 코파일로 코드를 "55% 더 빠르게" 작성할 수 있다고 주장합니다. 개발자들은 그것을 좋아하고 새로운 코드를 만들고 기능을 제공하는 것을 즐긴다.
 
@@ -39,7 +60,18 @@ GitHub은 코파일로 코드를 "55% 더 빠르게" 작성할 수 있다고 주
 
 ![image](/assets/img/2024-05-20-SHOCKINGAIDestroysCodeQuality_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 이상 신중하고 깊은 사고 없이 코딩하는 방식으로의 전환은 우리 저장소의 품질을 희석시킬 뿐만 아니라, 위대한 소프트웨어 개발을 정의하는 장인 정신을 약화시키는 것입니다. AI에게 직장을 잃어버릴 걱정은 없어요. 이런 상황이 계속된다면 분야에서 훌륭한 소프트웨어 개발자가 남지 않을 것을 걱정합니다.
 
@@ -49,7 +81,18 @@ GitHub은 코파일로 코드를 "55% 더 빠르게" 작성할 수 있다고 주
 
 개발자들은 새로운 기능을 만드는 것을 좋아하지만, 복사 붙여넣은 코드는 종종 유효기간을 초과하여 지속됩니다. 중복 코드를 제거할 권한이 있는 팀원이 있나요? 불행하게도, 우리 팀에는 중복 코드를 제거하기 위한 문화가 없어서 코드베이스가 고통받고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 이것이 기술 부채 문제뿐만 아니라 문화적 문제라고 생각해요.
 
@@ -59,7 +102,18 @@ GitHub은 코파일로 코드를 "55% 더 빠르게" 작성할 수 있다고 주
 
 나는 개발자를 위한 훈련 프로그램을 서두르라는 의미가 아니라 BOK를 개발하고 소프트웨어 개발자에게 그들의 지식과 성과에 대한 책임을 물어야 한다는 의미에요. 유지보수 가능한 코드를 생산할 전략을 이해하고 문제를 품질 높은 방식으로 해결할 지혜 있는 팀이 필요해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 우리 고문들은 낙차 코드를 이해하는 데 많은 시간과 노력을 들이지 않아도 되고, 그 코드를 유지하는 데 어려움을 겪지 않을 거에요. 어때요?
 
@@ -69,7 +123,18 @@ GitHub은 코파일로 코드를 "55% 더 빠르게" 작성할 수 있다고 주
 
 # 저자 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로 소프트웨어 개발자 "비밀 개발자"는 Twitter에서 @TheSDeveloper로 찾을 수 있으며 주로 Medium.com을 통해 기사를 게시합니다.
 

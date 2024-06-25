@@ -3,13 +3,12 @@ title: "오픈에이아이의 GPT-4o 대 젤미니 15  컨텍스트 메모리 �
 description: ""
 coverImage: "/assets/img/2024-05-20-OpenAIsGPT-4ovsGemini15ContextMemoryEvaluation_0.png"
 date: 2024-05-20 20:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-OpenAIsGPT-4ovsGemini15ContextMemoryEvaluation_0.png
 tag: Tech
 originalTitle: "OpenAI’s GPT-4o vs. Gemini 1.5 ⭐ Context Memory Evaluation"
 link: "https://medium.com/@lars.chr.wiik/openais-gpt-4o-vs-gemini-1-5-context-memory-evaluation-1f2da3e15526"
 ---
-
 
 ## 바늘을 찾는 이박사 - OpenAI 대 Google
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@lars.chr.wiik/openais-gpt-4o-vs-gemini-1-5-context-me
 
 바늘을 찾는 이박사 테스트는 이러한 작업을 위한 대규모 언어 모델을 평가하는 중요한 기준으로 나타납니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글에서는 OpenAI와 Google의 최상위 LLM들의 맥락 기반 이해력을 측정한 독립적인 분석을 제시하겠습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@lars.chr.wiik/openais-gpt-4o-vs-gemini-1-5-context-me
 
 대규모 언어 모델(LLMs)의 "바늘 찾기" 테스트는 특정 정보(바늘)를 관련 없는 방대한 텍스트(쌀질) 안에 배치하는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM은 그 후 바늘 추출이 필요한 쿼리에 응답하는 작업을 맡게 됩니다.
 
@@ -39,7 +60,18 @@ LLM은 그 후 바늘 추출이 필요한 쿼리에 응답하는 작업을 맡�
 
 사용자 지정 지식을 LLM에 통합하는 것이 점점 인기를 얻고 있는데, 이를 검색으로 보강된 생성(RAG) 시스템이라고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RAG 시스템에 대해 더 많이 알아보고 싶으시면 제 이전 게시물 중 하나를 확인해보세요.
 
@@ -49,7 +81,18 @@ RAG 시스템에 대해 더 많이 알아보고 싶으시면 제 이전 게시�
 
 # 데이터셋 🔢
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 "바늘을 찾기 위한" 데이터셋을 만드는 데 사용되는 스크립트를 개발했습니다. 이 스크립트를 사용하면 두 가지 주요 요소를 입력할 수 있습니다:
 
@@ -61,7 +104,18 @@ RAG 시스템에 대해 더 많이 알아보고 싶으시면 제 이전 게시�
 - 시작점 선택: 스크립트는 대규모 텍스트 내에서 시작점을 무작위로 선택하여 시작합니다. 시작점은 전체 텍스트의 10~40번째 백분위에 위치합니다.
 - 바늘 삽입: 고유 정보(바늘)는 그 후 헤이스택 내에 삽입됩니다. 바늘의 위치는 무작위로 선택되지만 헤이스택 길이의 20~80번째 백분위 내에 위치하도록 제약이 걸립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLMs는 일반적으로 프롬프트의 시작과 끝에서 정보를 가장 정확하게 기억한다고 알려져 있어요.
 
@@ -96,7 +150,18 @@ def create_one_needle(num_chars: int, needle_line: str, lines: list[str]):
     return lines_selected
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 평가 방법 🧠
 
@@ -106,7 +171,18 @@ def create_one_needle(num_chars: int, needle_line: str, lines: list[str]):
 
 1000, 2000, 4000, 8000, 12000 및 16000 글자 길이를 포함한 각 문맥 길이에 대해 100개의 헤이스택을 만들었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 1000자의 헤이스택 중 하나의 예시가 있어요.
 
@@ -116,13 +192,24 @@ def create_one_needle(num_chars: int, needle_line: str, lines: list[str]):
 
 제가 사용한 프롬프트는 다음과 같아요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def create_needle_prompt(needle_text: str) -> str:
     prompt = f'''
     ##### INSTRUCTION #####
-    라스 Wiik에 대한 가상 전화번호는 무엇입니까? 
+    라스 Wiik에 대한 가상 전화번호는 무엇입니까?
     말 그대로 원하는 것만 제공하세요.
     한 번에 최대 20단어까지만 응답할 수 있습니다.
 
@@ -145,8 +232,18 @@ def create_needle_prompt(needle_text: str) -> str:
 - gemini-1.5-flash-preview-0514
 - gemini-1.0-pro-002
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 평가는 각 모델을 1k, 2k, 4k, 8k, 12k 및 16k의 특정 맥락 길이에 대해 100개의 다른 헤이스택을 통해 실행하는 것을 포함합니다.
 
@@ -156,7 +253,18 @@ def create_needle_prompt(needle_text: str) -> str:
 
 컨텍스트 창이 길수록 노이즈가 많아 특정 정보를 추출하기 어려워집니다. 따라서 성능은 더 큰 컨텍스트 창을 사용할수록 감소할 것으로 예상됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래프에서 파생해 볼 때, OpenAI의 모델과 Google의 모델 간에 성능 측면에서 차이가 있는 것으로 보입니다.
 
@@ -166,7 +274,18 @@ Google의 모델은 최근 이벤트인 구글 I/O 2024에서 그들의 Gemini�
 
 또한 gpt-3.5-turbo-0125가 모든 Gemini 모델보다 우수한 성능을 보인다는 점도 언급해야 할 것입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 평가 과정 중에 중요한 오류가 없었는지 확인하기 위해 Gemini 1.5에서 받은 모든 응답을 저장해서 나중에 참조할 수 있도록 했어요.
 
@@ -192,7 +311,18 @@ Lars Wiik이나 그의 전화번호에 대한 언급이 없습니다.
 
 Gemini 모델은 해리 포터 이야기 속에서 가짜 전화번호를 찾는 데 어려움을 겪는 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오픈AI의 gpt-3.5-turbo-0125에서 몇 가지 응답을 확인해보세요:
 
@@ -214,7 +344,18 @@ N/A
 
 # 결론 💡
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론적으로, "Needle in the Haystack" 평가는 긴 맥락을 사용할 때 대형 언어 모델의 이해력과 정보 검색 능력을 측정하는 데 사용될 수 있습니다.
 
@@ -224,7 +365,18 @@ Google의 최근 Gemini의 100만 토큰을 처리할 수 있는 능력을 향�
 
 사용자와 개발자들에게는 응용 프로그램의 특정 요구 사항에 따라 모델 선택이 달라질 것으로 예상됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셔서 감사합니다!
 

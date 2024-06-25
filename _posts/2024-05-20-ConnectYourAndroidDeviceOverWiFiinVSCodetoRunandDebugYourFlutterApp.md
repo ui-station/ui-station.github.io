@@ -3,13 +3,12 @@ title: "안녕하세요 VSCode에서 플러터 앱을 실행하고 디버그하�
 description: ""
 coverImage: "/assets/img/2024-05-20-ConnectYourAndroidDeviceOverWiFiinVSCodetoRunandDebugYourFlutterApp_0.png"
 date: 2024-05-20 16:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ConnectYourAndroidDeviceOverWiFiinVSCodetoRunandDebugYourFlutterApp_0.png
 tag: Tech
 originalTitle: "Connect Your Android Device Over WiFi in VSCode to Run and Debug Your Flutter App"
 link: "https://medium.com/@quedicesebas/connect-your-android-device-over-wifi-in-vscode-to-run-and-debug-your-flutter-app-480adbeb85fa"
 ---
-
 
 <img src="/assets/img/2024-05-20-ConnectYourAndroidDeviceOverWiFiinVSCodetoRunandDebugYourFlutterApp_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@quedicesebas/connect-your-android-device-over-wifi-in
 
 ## 일회성 IDE 및 장치 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - [Optional] VSCode 확장 프로그램인 ADB Commands를 설치하세요. 안 깔았다면 adb 명령어를 사용할 수 있어요. 확장 프로그램을 사용하는 편이 더 직관적이고 설정할 게 거의 없어요.
 - 기기에서 무선 디버깅을 활성화하세요:
@@ -36,6 +46,5 @@ link: "https://medium.com/@quedicesebas/connect-your-android-device-over-wifi-in
 - VSCode에서 Ctrl+Shift+P를 누르고 “ADB:📱 Connect to device IP”를 검색하고 선택하세요:
 - IP 주소를 입력하고 엔터를 누르세요.
 - 포트 번호를 입력하세요.
-- “Connected to `IP`:`port`” 메시지가 나타나면 USB 케이블을 분리할 수 있어요.
-*참고: IP 주소는 사용하는 네트워크와 라우터 설정에 따라 달라질 수 있어요. 포트 번호는 매번 바뀔 수 있어요. 이렇게 되면 “ADB returned null value”나 다른 오류가 발생할 수 있어요.
+- “Connected to `IP`:`port`” 메시지가 나타나면 USB 케이블을 분리할 수 있어요. \*참고: IP 주소는 사용하는 네트워크와 라우터 설정에 따라 달라질 수 있어요. 포트 번호는 매번 바뀔 수 있어요. 이렇게 되면 “ADB returned null value”나 다른 오류가 발생할 수 있어요.
 - VSCode에서 F5를 누르거나 "Run > Start Debugging"으로 이동하세요. 즐겁게 개발하세요!

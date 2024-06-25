@@ -3,13 +3,12 @@ title: "다중 환경에서 Terraform을 사용하여 AWS Lambda 함수를 배�
 description: ""
 coverImage: "/assets/img/2024-06-19-DeploymentofAWSLambdaFunctionsAcrossMultipleEnvironmentsUsingTerraform_0.png"
 date: 2024-06-19 13:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-DeploymentofAWSLambdaFunctionsAcrossMultipleEnvironmentsUsingTerraform_0.png
 tag: Tech
 originalTitle: "Deployment of AWS Lambda Functions Across Multiple Environments Using Terraform"
 link: "https://medium.com/infostrux-solutions/deployment-of-aws-lambda-functions-across-multiple-environments-using-terraform-66374fb6ad36"
 ---
-
 
 ## 여러 환경에 걸쳐 AWS Lambda 함수를 배포하는 방법 배우기 — Hashicorp Terraform을 통해 가능하게 하기
 
@@ -19,8 +18,18 @@ AWS Lambda는 서버를 프로비저닝하거나 관리하지 않고 코드를 �
 
 # Lambda 배포 도전
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS 람다 함수를 배포하는 가장 기본적인 방법은 주로 AWS 관리 콘솔을 통해 zip 파일을 수동으로 업로드하거나 AWS CLI 명령을 사용하는 것입니다. 그러나 이 방법은 몇 가지 어려움을 야기할 수 있습니다:
 
@@ -33,7 +42,18 @@ AWS 람다 함수를 배포하는 가장 기본적인 방법은 주로 AWS 관�
 
 개발, 스테이징, 프로덕션과 같은 여러 환경에 걸쳐 람다 함수를 배포하려면 구성 및 인프라를 일관되게 처리하는 전략이 필요합니다. 이것이 Terraform이 이러한 문제들에 대처하는 방법입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 인프라스트럭처를 코드로 정의함으로써 Terraform은 배포가 다양한 환경에서 반복 가능하고 일관성 있게 이루어지도록 합니다. 이는 "내 컴퓨터에서는 작동한다" 문제를 제거합니다.
 - 환경 분리: Terraform은 워크스페이스나 변수 파일을 활용하여 동일한 코드로 여러 환경을 관리할 수 있습니다. 각 환경은 Terraform의 상태 파일을 통해 구성을 관리함으로써 격리를 보장하고 교차 환경 오염의 위험을 최소화합니다.
@@ -47,7 +67,18 @@ AWS Terraform 프로바이더에 익숙하지 않은 경우, Terraform을 AWS에
 
 1. IAM 역할 및 정책 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 람다 함수는 다른 AWS 리소스와 상호작용할 것입니다. 이를 위해 IAM 역할을 가정해야 합니다. 먼저 해당 역할을 만들어 봅시다.
 
@@ -77,7 +108,18 @@ EOF
 
 이 IAM 역할을 생성하고 해당 가정 역할 정책을 첨부함으로써, 람다 함수가 이 역할을 가정할 수 있게 합니다. 즉, 람다 함수는 이 역할과 관련된 권한을 사용하여 다른 AWS 리소스와 상호작용할 수 있습니다. 예를 들어, 이 역할에 S3 버킷에 액세스를 허용하는 정책을 첨부하면, 람다 함수는 이 역할을 사용하여 해당 버킷에서 읽거나 쓰는 작업을 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-DeploymentofAWSLambdaFunctionsAcrossMultipleEnvironmentsUsingTerraform_1.png" />
 
@@ -87,7 +129,18 @@ EOF
 
 환경에 따라 다른 변수를 출력하는 기본 "Hello World!" 파이썬 함수를 배포할 것입니다. 람다 패키지는 두 개의 파일로 구성됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # index.py, 핸들러가 있는 곳입니다
@@ -119,7 +172,18 @@ data "archive_file" "zip_the_code" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 화면 구조를 명확하게하기 위해 스크린샷을 여기에 넣었습니다.
 
@@ -144,7 +208,18 @@ resource "aws_lambda_function" "terraform_lambda_func" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 주요 요소는 환경 블록입니다. 이 블록을 정의함으로써 AWS Lambda가 실행 중에 읽을 수 있는 환경 변수인 BUCKET_NAME의 값을 지정할 수 있습니다.
 
@@ -162,7 +237,18 @@ terraform workspace new production
 terraform apply -var="BUCKET_NAME=prod-bucket"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가끔은 많은 환경 변수를 정의해야 할 때가 있습니다. 그럴 땐 환경에 따라 다른 테라폼 변수 파일을 가리킬 수 있습니다.
 
@@ -175,7 +261,18 @@ terraform apply -var-file="prod-variables.tfvars"
 
 ## 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS Lambda 함수를 여러 환경에 배포하기 위해 Terraform을 사용하면 배포를 표준화하고 서버리스 애플리케이션을 간단하게 관리할 수 있어요.
 

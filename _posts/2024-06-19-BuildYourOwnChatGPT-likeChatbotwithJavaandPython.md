@@ -3,13 +3,12 @@ title: "자바와 파이썬을 사용하여 나만의 ChatGPT와 유사한 챗�
 description: ""
 coverImage: "/assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_0.png"
 date: 2024-06-19 10:02
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_0.png
 tag: Tech
 originalTitle: "Build Your Own ChatGPT-like Chatbot with Java and Python"
 link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatbot-with-java-and-python-5def2c4852c3"
 ---
-
 
 ## 처음부터 사용자 정의 LLM 추론 인프라 만들기
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 최근 몇 년간, 대형 언어 모델 (LLMs)이 기계와 상호 작용하는 방식을 혁신적으로 변화시키는 핵심 기술로 등장했습니다. OpenAI의 GPT 시리즈 (예: GPT-3.5 또는 GPT-4)로 표현되는 이러한 모델은 입력 텍스트 시퀀스를 가져와 일관된, 맥락에 부합하고 인간처럼 들리는 텍스트를 생성할 수 있습니다. 따라서 이러한 응용 프로그램은 고객 서비스, 콘텐츠 작성, 언어 번역 또는 코드 생성과 같은 다양한 분야에 걸쳐 다양합니다. 그러나 이러한 능력의 핵심에는 자연어 이해 과정을 개선하기 위한 어텐션 메커니즘, 규모에 걸쳐 기본 모델을 제공하기 위한 전이 학습, 데이터 증강, 또는 심지어 인간 피드백에서 강화 학습으로 이어지는 고급 기계 학습/통계 기술이 포함되어 있습니다. 이러한 시스템이 교육 과정을 확장하고 추론을 통해 지속적으로 성능을 개선할 수 있도록합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인공지능의 하위 집합으로, 머신러닝은 데이터셋을 처리하여 패턴을 식별하고 데이터의 본질을 정확하게 나타내는 모델을 개발하는데 책임이 있습니다. 이 접근 방식은 가치 있는 지식을 생성하고 콘텐츠 생성, 대량 언어 모델을 주도하는 생성적 AI 분야를 포함한 다양한 작업을 가능하게 합니다. 이 분야가 자연어뿐만 아니라 생성 가능성이 있는 모든 종류의 콘텐츠에 집중하는 것을 강조할 필요가 있습니다. 오디오에서 소리, 목소리 또는 음악을 생성할 수 있는 모델부터, OpenAI의 SORA와 같은 최신 모델을 통해 비디오, 이미지에서도 텍스트 시퀀스로부터의 편집과 스타일 전환이 가능합니다. 이후의 데이터 형식은 특히 가치가 있습니다. 다중모달 통합과 이미지/텍스트 임베딩 기술을 이용하여 자연어를 통해 지식 표현의 잠재력을 효과적으로 보여줄 수 있습니다.
 
@@ -27,7 +37,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 다른 이유는 하드웨어에 있습니다. 현재 많은 사용자로부터 대량의 데이터를 동시에 처리해야 하는 최신 배포 모델은 크기가 크며 추론 작업을 수행하고 고객에게 품질 높은 서비스를 제공하는 데 상당한 컴퓨팅 리소스가 필요합니다. 이는 경제적인 면에서도 막대한 비용으로 반영됩니다. 한편, 신뢰할 수 있는 서비스를 제공하기 위해 적절한 하드웨어로 서버와 데이터 센터를 구축해야하며, GPU, TPU, DPU 및 성능을 최대화하기 위해 신중히 선택된 구성 요소를 고려할 때 매우 비싸다는 점을 고려해야 합니다. 또한, 유지보수에는 잠재적 문제를 해결하고 필요할 때 시스템을 업그레이드할 수 있는 자격있는 인력이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 종류의 모델 및 대규모 배포에 대한 여러 다른 문제가 있습니다. 모두 모아보면, ChatGPT와 같은 시장의 선도적인 서비스에 맞물릴만큼 견고한 지원 인프라를 갖추어 시스템을 구축하는 것은 어렵습니다. 그럼에도 불구하고 공개 도메인의 다양한 오픈 소스 콘텐츠 및 기술 덕분에 참조 서비스에 상당히 수용 가능하고 합리적인 근사치를 달성할 수 있습니다. 또한, 그 중 일부에서 제시한 고도의 진전을 고려하면 사용하는 데 매우 간편하며, 추상화, 모듈성, 통합 용이성 및 개발 프로세스를 강화하는 기타 가치 있는 특성으로 인해 혜택을 얻을 수 있습니다.
 
@@ -37,8 +58,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 최초의 시스템 기능은 클라이언트가 텍스트 쿼리를 제출하고, 이를 LLM 모델에서 처리한 다음 소스 클라이언트로 반환하는 것입니다. 모든 구현 세부사항(컴포넌트 간 통신 프로토콜, 관련된 데이터 구조 등)은 일부러 생략되었다는 점을 유념하시기 바랍니다. 그러나 이제 목표 달성을 명확히 하였으므로 문제 해결에 있어 점차적으로 세부사항을 증가시키는 분해를 시작할 수 있습니다. 이를 기능 분해라고도 하는데, 검색 및 반환 쿼리를 받는 블랙박스 시스템(추상화)부터 시작하여 클라이언트가 시스템과 상호작용하는 방법 및 이러한 상호작용을 가능케 하는 기술들을 체계적으로 정의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_1.png)
 
@@ -48,8 +79,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 ![이미지](/assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_2.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 커뮤니케이션을 확립하는 한 가지 방법은 소켓 및 유사한 도구를 사용하여 하위 수준에서 광범위한 프로토콜 제어를 허용하는 것입니다. 그러나 이 옵션은 모든 클라이언트 기술과의 호환성 제약조건을 충족해야 한다는 상기된 접속 제약사항을 고려해야 하며, 시스템은 모든 가능한 클라이언트 유형에서 쿼리를 수집할 수 있어야 합니다. 또한 광범위한 제어를 가지는 것은 코드 줄 수가 상당히 증가하고 유지 관리 및 확장성이 복잡해지므로 더 길고 잠재적으로 훨씬 더 복잡한 개발이 필요합니다.
 
@@ -59,7 +100,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 클라이언트가 시스템과 우아하게 통신하는 메커니즘을 설정한 후, 들어오는 쿼리를 처리하고 해당 클라이언트에 합리적인 시간 안에 반환하는 방법을 다루어야 합니다. 그러나 먼저, 시스템에 쿼리가 도착하면 관련 추론 파이프라인이 메모리에 로드된 LLM이 장착된 기계로 재지정되어 그 파이프라인을 통해 쿼리를 횡단하여 나중에 반환될 결과 텍스트(LMM 답변)를 얻어야 합니다. 그 결과, 추론 프로세스는 여러 기계 사이에 분산되어 쿼리 해결에 사용될 수 없습니다. 이를 고려하여 추론 프로세스를 지원할 인프라를 디자인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 이미지에서 컴퓨팅 서비스는 단일 단위로 표현되었습니다. 이번에는 기계를 연결한 것으로 생각하면서 소켓을 사용하여 API 서버와 연결된 단일 채널을 통해 모든 API 쿼리를 해당 기계로 리디렉션할 수 있습니다. 시스템 부하를 한 곳에 집중시켜 모든 API 쿼리를 해당 기계로 집중할 수 있습니다. 상상해 보면, 이는 몇 명의 사람만 사용하는 홈 시스템에는 좋은 선택일 것입니다. 그러나 이 경우에는 접근하기 위한 방법을 확장 가능하게 만들어야 합니다. 따라서 컴퓨팅 자원이 증가함에 따라 최대한 많은 사용자에게 서비스를 제공할 수 있도록 해야 합니다. 그러나 먼저 이전에 언급한 계산 자원을 단위로 분할해야 합니다. 이렇게 하면 상호 연결 상태를 전반적으로 파악할 수 있으며 구조나 구성 방식을 변경하여 프로젝트 처리량을 최적화할 수 있습니다.
 
@@ -67,7 +119,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 이제, API 서버에 연결되어 여러 노드를 연결하는 네트워크를 설정할 수 있습니다. 이를 통해 네트워크 전체적으로 시스템의 모든 자원을 최적으로 활용할 수 있도록 쿼리를 분산시킬 수 있습니다. 위에서 모든 노드가 트리 모양으로 구조적으로 연결되어 있는 것을 알 수 있습니다. 루트는 API 쿼리를 수집하고 이에 따라 전달하는 역할을 담당합니다. 어떻게 서로 연결할지에 대한 결정은 정확한 시스템 목적에 상당히 의존합니다. 이 경우에는 분배 기본원의 간단함을 위해 트리가 선택되었습니다. 예를 들어, API와 노드 간의 쿼리 전달을 최대화하려면 API에서 여러 트리의 루트로 연결이 되어야 하거나 원한다면 다른 다른 데이터 구조를 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 루트 노드에 도착한 쿼리가 어떻게 전달되고 처리되는지 정의해야 합니다. 이전과 마찬가지로 사용 가능한 동등하게 유효한 대안이 많이 있습니다. 그러나 우리가 따를 알고리즘은 시스템 노드를 연결하기 위해 트리 구조가 선택되었는지 이해하는 데도 도움이 될 것입니다.
 
@@ -77,7 +140,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 요약하면, 루트 노드는 해결 처리를 수행하지 않도록 하고, 모든 용량을 API로 요청을 전달하는 데 사용할 것입니다. 다른 모든 노드에 대해서는 상위 계층 노드로부터 쿼리를 받은 경우, 첫 번째 단계는 이전 쿼리에 대해 계산을 수행하고 있는지 확인하는 것입니다. 비어 있는 경우 쿼리를 해결하고, 그렇지 않은 경우에는 라운드 로빈으로 하위 노드 중 하나에게 전달합니다. 라운드 로빈 방식으로, 각 쿼리는 다른 하위 노드로 리디렉션되어 전체 하위 목록을 순환 버퍼처럼 통과합니다. 이것은 노드의 지역 부하를 균등하게 아래쪽으로 분산시킬 수 있음을 의미하며, 각 노드의 리소스를 효과적으로 활용하고 더 많은 하위 노드를 추가하여 시스템을 확장할 수 있는 능력을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내, 시스템이 현재 많은 사용자에게 서비스를 제공하고 있고, 리프 노드에 쿼리가 도착할 때 해당 노드가 바쁠 경우 해당 쿼리를 다시 보낼 후손이 없습니다. 따라서 모든 노드는 쿼리 대기 메커니즘이 있어야 하며, 이러한 상황에서 기다릴 수 있도록 대기하고, 대기 중인 쿼리 간의 일괄 작업을 적용하여 LLM 추론을 가속화할 수 있습니다. 또한 쿼리가 완료되면 시스템을 과부하시키지 않기 위해 쿼리를 트리 상단에 도달할 때까지 상위로 전달하는 대신, 직접 루트로 보내고 나서 API와 클라이언트에 도달하게 됩니다. 모든 노드를 API에 연결하거나 다른 대안을 구현할 수 있지만, 코드를 가능한 간단하게 유지하고 시스템을 최대한 성능 좋게 유지하기 위해 모든 것을 루트로 보냅니다.
 
@@ -87,7 +161,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 예상했듯이, 웹 클라이언트는 기본 HTML, CSS 및 JavaScript로 구현되며, 모든 것이 편리하게 .html 파일 하나에 내장됩니다. 이 파일은 클라이언트가 응용 프로그램 시작 중에 대응하는 요청을 만들 때마다 API에 의해 제공되며, 즉 클라이언트가 브라우저로 들어가고 API가 진입점을 호스팅한 주소를 입력하는 경우 브라우저에 렌더될 .html 파일을 반환할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 다음 사용자가 시스템에 텍스트 쿼리를 보내고 싶어할 때, JavaScript가 내부적으로 해당 세부사항(데이터 유형, 엔드포인트 또는 CSRF 보안 토큰 등)을 포함한 HTTP 요청을 API로 제출합니다. 이 프로세스 내에서 AJAX를 사용함으로써, API가 요청한 값에 대한 반환 시 구동되는 원시 기능을 정의하는 것이 매우 간단해집니다. 결과를 화면에 표시하는 역할을 맡고 있습니다. 게다가, 보내진 메시지가 직접적으로 쓰인 텍스트나 반환된 텍스트가 아니라, 타임스탬프와 같은 다른 중요 파라미터를 포함하는 JSON으로 랩핑되어 있음을 언급할 가치가 있습니다. 이는 일부 시스템 구성 요소의 동기화를 관리하기 위해 필요에 따라 즉석으로 추가 필드를 추가할 수 있는 가능성을 제공합니다.
 
@@ -97,8 +182,18 @@ link: "https://medium.com/towards-data-science/build-your-own-chatgpt-like-chatb
 
 API를 구축하기 위한 여러 기술이 있지만, 이 프로젝트에서는 특히 Django를 이용하여 파이썬을 통해 전용 서버에서 사용하겠습니다. 이 결정은 이 프레임워크가 제공하는 다른 파이썬 종속성과의 높은 확장성 및 통합 용이성에 동기를 받았습니다. 또한, 보안 또는 기본 관리 패널과 같은 유용한 속성을 추가로 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-BuildYourOwnChatGPT-likeChatbotwithJavaandPython_5.png)
 
@@ -108,18 +203,39 @@ API를 구축하기 위한 여러 기술이 있지만, 이 프로젝트에서는
 
 동시에 사용자가 인터페이스에 액세스한 후 클라이언트의 요청을 지원해야 할 것입니다. 이러한 요청은 특별한 방법으로 관리되어야 하므로 쿼리 데이터가 해당 JSON 형식으로 전송될 'arranca'라는 자체 엔드포인트가 있을 것이며, API는 노드 트리를 사용하여 처리한 후 해결된 쿼리를 반환할 것입니다. 이 엔드포인트에서 서버는 계층 구조의 루트 노드와 사전에 설정된 소켓 채널을 사용하여 쿼리를 전달하고, 동기화 메커니즘을 통해 해당 응답을 기다릴 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드와 관련하여 urls.py 파일에서는 URL과 엔드포인트 간의 관계를 저장하여, 기본 빈 URL이 템플릿 폴더에서 .html을 읽어서 다시 보내거나, /arranca URL이 쿼리를 해결하는 기능을 실행하도록 해당 기능에 할당됩니다. 또한, views 함수가 실행되어 주 서버 스레드를 시작합니다. 한편 settings.py에서 변경해야 할 것은 DEBUG 매개변수를 False로 변경하고 서버에 연결할 수 있는 호스트의 필요한 권한을 입력하는 것뿐입니다.
 
-마지막으로, views.py 스크립트가 있는데, 거기에는 모든 API 기능이 구현되어 있습니다. 먼저, 수신 및 처리 기능을 담당하는 주 스레드가 있습니다(루트 노드로부터 수신된 연결 처리). 이 연결은 초기에 시스템 전체 수명 동안 계속 유지됩니다. 그러나 중단되어 다시 설정해야 하는 경우를 대비하여 무한 루프 내에 배치되어 있습니다. 둘째로, index() 함수로 기본 엔드포인트가 구현되어 있으며, 이 함수는 GET 요청을 수행하는 경우 .html 콘텐츠를 클라이언트로 반환합니다. 추가적으로, 응용 프로그램에서 사용자가 제출하는 쿼리는 /arranca 엔드포인트를 통해 API로 전송되며, 동일한 이름의 함수로 구현됩니다. 거기서 입력 쿼리가 루트 노드로 전달되어 응답을 받을 때까지 차단되고 클라이언트로 반환됩니다. 
+마지막으로, views.py 스크립트가 있는데, 거기에는 모든 API 기능이 구현되어 있습니다. 먼저, 수신 및 처리 기능을 담당하는 주 스레드가 있습니다(루트 노드로부터 수신된 연결 처리). 이 연결은 초기에 시스템 전체 수명 동안 계속 유지됩니다. 그러나 중단되어 다시 설정해야 하는 경우를 대비하여 무한 루프 내에 배치되어 있습니다. 둘째로, index() 함수로 기본 엔드포인트가 구현되어 있으며, 이 함수는 GET 요청을 수행하는 경우 .html 콘텐츠를 클라이언트로 반환합니다. 추가적으로, 응용 프로그램에서 사용자가 제출하는 쿼리는 /arranca 엔드포인트를 통해 API로 전송되며, 동일한 이름의 함수로 구현됩니다. 거기서 입력 쿼리가 루트 노드로 전달되어 응답을 받을 때까지 차단되고 클라이언트로 반환됩니다.
 
 이러한 차단은 각 쿼리가 고유 식별자를 갖도록하고, arranca() 함수에 의해 JSON 메시지의 필드로 삽입되는 request_id라는 이름의 필드에서 수행되는 동기화 메커니즘을 통해 달성됩니다. 본질적으로 쿼리 도착 순서와 일치하는 자연수인 request_id가 됩니다. 따라서 루트 노드가 API로 해결된 쿼리를 보낼 때, 어떤 차단된 실행이 쿼리를 생성했는지 알 수 있어, 나머지를 차단 해제하고 반환하며 다시 차단할 수 있습니다.
 
 # Java Compute Nodes
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API가 작동 중이므로 Java에서 노드 시스템을 구현하기로 결정했습니다. 이 언어를 선택한 주요 이유는 노드 간 통신을 가능하게 하는 기술에 의해 동기부여 받았기 때문입니다. 이 수준에서 가장 간단한 통신 의미론을 얻기 위해 소켓과 수동 직렬화된 메시지를 사용하지 않고, 다른 플랫폼에서는 Python의 Pyro4와 같은 해결책들이 제공되지만 그것들보다 다소 복잡할 수도 있는 RMI로 대체할 것입니다.
 
@@ -129,9 +245,20 @@ API가 작동 중이므로 Java에서 노드 시스템을 구현하기로 결정
 
 인터페이스로부터 노드 클래스 내에 해당 작업을 구현할 수 있으며, 시스템을 시작시킬 때마다 이 클래스를 인스턴스화하고 노드 트리에 새 기계를 추가하기로 결정할 수 있습니다. 노드 클래스에 포함된 주요 기능 중 하나는 다른 노드의 원격 참조를 얻는 getRemoteNode() 메서드이며, 이를 위해 이름 레지스트리에 액세스하고 lookup() 원시를 실행하여 등록된 경우 인터페이스 형식으로 원격 참조를 반환하거나 그렇지 않은 경우 null을 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-원격 참조를 가져오는 것은 트리를 구성하는 데 필수적입니다. 특히 부모 노드를 자손에 연결하거나 해결된 쿼리를 보내기 위해 루트에 대한 참조를 얻는 다른 메서드들에게 필요합니다. 그 중 하나는 connectParent()입니다. 자손 노드가 부모 노드와 연결해야 할 때 호출됩니다. 먼저 getRemoteNode()를 사용하여 부모 노드를 검색하고, 참조를 얻은 후에는 각 노드 인스턴스에 대한 로컬 변수에 할당합니다. 그런 다음 connectChild()를 호출하여 호출된 원격 노드를 자손 목록에 추가합니다. 부모 노드가 존재하지 않는 경우에는 null 객체에 대한 함수를 호출하려고 시도하면 예외가 발생합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+원격 참조를 가져오는 것은 트리를 구성하는 데 필수적입니다. 특히 부모 노드를 자손에 연결하거나 해결된 쿼리를 보내기 위해 루트에 대한 참조를 얻는 다른 메서드들에게 필요합니다. 그 중 하나는 connectParent()입니다. 자손 노드가 부모 노드와 연결해야 할 때 호출됩니다. 먼저 getRemoteNode()를 사용하여 부모 노드를 검색하고, 참조를 얻은 후에는 각 노드 인스턴스에 대한 로컬 변수에 할당합니다. 그런 다음 connectChild()를 호출하여 호출된 원격 노드를 자손 목록에 추가합니다. 부모 노드가 존재하지 않는 경우에는 null 객체에 대한 함수를 호출하려고 시도하면 예외가 발생합니다.
 
 다음으로, API로부터 쿼리를 수신하는 방법인 receiveMessagePython() 및 다른 노드로부터 receiveMessage() 메서드는 시스템의 올바른 작동에 방해가 될 수 있는 경쟁 조건을 피하기 위해 synchronized 절로 보호됩니다. 이러한 메서드들은 또한 쿼리 분배 휴리스틱을 구현하는데 책임이 있습니다. 이것은 수신된 쿼리를 보낼 대응 노드를 결정하기 위해 로컬 변수를 사용합니다.
 
@@ -141,7 +268,18 @@ Utilities 클래스에서는 노드 이름을 기반으로 원격 노드에 대�
 
 노드 인스턴스의 생성 및 관리는 각각 수동으로 수행되며, 이는 Launcher 클래스에서 구현됩니다. 지정된 LDAP 서버에 등록된 특정 이름이 있는 노드가 시작될 때 명령 줄 인터페이스를 사용하여 해당 노드를 지시합니다. 일부 명령에는 다음이 포함됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 로그: 노드 상태를 알기 위해서 유용한 정보를 출력합니다.
 - 부모: 노드를 이름으로 지정된 부모에 연결합니다.
@@ -154,7 +292,18 @@ Utilities 클래스에서는 노드 이름을 기반으로 원격 노드에 대�
 
 LDAP를 사용하는 장점은 먼저 운영 복잡성에서부터 시작됩니다. 처음 보았을 때는 정반대로 보일 수 있겠지만, 실제로는 시스템을 다양한 보안 및 구성 요구 사항에 맞게 더 높은 수준의 세부 정보로 조정할 수 있는 것이 가능하게 만들어줍니다. 한편으로, 제공하는 인증 및 보안 기능은 호스트가 LDAP 서버에 의해 식별될 때 새로운 노드를 등록하는 등 보호된 작업을 수행할 수 있도록 합니다. 예를 들어 서버에 액세스하고 작업을 수행할 수 있는 컨텍스트 객체를 만들 때, 생성자의 HashMap에 인증 데이터를 추가할 수 있는 옵션이 있습니다. 컨텍스트를 만들었다면, 데이터가 서버가 기대하는 것과 일치함을 의미하며, 그렇지 않다면 연결이 인증되지 않은(“악의적인”) 호스트에 의해 이루어지고 있다고 가정할 수 있습니다. 이를 통해 시스템 노드만 서버 정보를 조작할 수 있도록 보장합니다. 다른 한편으로 LDAP는 노드 등록을 훨씬 더 효율적으로 중앙 집중식으로 처리하고 더 고급 상호 운용성을 제공하며 케르베로스와 같은 추가 서비스를 쉽게 통합할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서버가 노드 레지스트리로 작동할 수 있도록하려면 특정 구성을 적용해야 합니다. 먼저, 프로젝트가 실제 (그리고 잠재적으로 악의적인) 사용자가 있는 환경에 배포되지 않을 것이기 때문에 모든 인증 옵션은 생략되어 간단하고 깔끔하게 유지됩니다. 다음으로, Distinguished Name을 정의하여 노드 이름을 해당 원격 객체와 연결할 수 있도록해야 합니다. 이 경우, 동일한 이름을 가진 여러 노드의 등록을 방지한다고 가정할 때, 우리는 노드 이름을 cn=(Common Name)과 같은 속성에 저장하기만 하면 됩니다. 이때 지정된 조직 단위 내에서 ou=Nodes와 같은 형식의 식별 이름이 됩니다: cn=Node_Name,ou=Nodes
 
@@ -164,7 +313,18 @@ LDAP를 사용하는 장점은 먼저 운영 복잡성에서부터 시작됩니�
 
 ## 조회, 바인드 및 언바인드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단하게 말씀드리자면 런처는 개별 컨텍스트 개체를 갖고, 각 노드도 개별 컨텍스트를 갖게 됩니다. 이렇게 하면 런처가 항목을 생성하고 삭제할 수 있고, 각 노드는 노드 이름으로부터 원격 참조를 얻기 위한 조회 작업을 수행할 수 있습니다. 삭제 작업은 가장 간단합니다. 해당 노드에 해당하는 서버 항목의 식별 이름만 필요합니다. 항목이 존재한다면 삭제되고 unbind() 호출이 성공적으로 종료됩니다. 그렇지 않으면 예외가 발생합니다. 한편, 조회 및 등록 작업은 RFC-2713을 준수해야 합니다. 서버에 노드를 추가하는 경우, bind() 원시 함수를 사용합니다. 이 함수는 노드가 호스팅될 항목의 식별 이름과 해당 원격 개체를 전달받습니다. 그러나 bind 함수는 노드 개체 자체나 인터페이스를 바로 받지 않습니다. 왜냐하면 해당 객체가 직렬화될 수 없으며 bind()가 인터페이스 "인스턴스"를 직접 얻을 수 없기 때문입니다. 이 문제를 우회하기 위해 상기 RFC는 해당 노드 인스턴스가 MarshalledObject에 의해 마스킹되어야 한다고 합니다. 결과적으로 bind는 서버 내에서 등록할 노드로 구성된 MarshalledObject를 받아서 원래 노드 인스턴스가 아닌 노드가 수행됩니다.
 
@@ -174,7 +334,18 @@ LDAP를 사용하는 장점은 먼저 운영 복잡성에서부터 시작됩니�
 
 각 노드의 추론 프로세스에 관한 추론 프로세스에 대한 내용에 대해, 노드 트리에는 LLMProcess 클래스가 있으며 이는 Python에서 구현된 프로세스를 인스턴스화하는 역할을 맡습니다. 쿼리가 해결되기 전에 Python에서 LLM 및 그 추론 파이프라인을 쉽게 관리할 수 있기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 LLMProcess가 생성될 때, Java와 Python 프로세스 간 통신을 위해 머신에서 사용 가능한 포트를 찾아야 합니다. 간편하게 데이터 교환은 소켓을 사용하여 수행되며, ServerSocket을 열고 닫아 사용 가능한 포트를 찾은 후에는 llm.py 프로세스가 포트 번호를 매개변수로 전달받아 실행됩니다. 이 프로세스의 주요 기능은 destroyProcess()로 시스템이 중지될 때 프로세스를 종료하고 sendQuery()로 llm.py에 쿼리를 전송하고 각 쿼리마다 새 연결을 사용하여 응답을 대기하는 것입니다.
 
@@ -184,17 +355,39 @@ llm.py 내부에는 Java 프로세스로부터 수신 대기하는 무한 루프
 
 스크립트에서 확인할 수 있듯이, 파이프라인 인스턴스를 통해 호스팅된 노드에서 실행될 LLM 모델을 선택할 수 있습니다. 이를 통해 Huggingface 웹사이트에 업로드된 모든 모델에 액세스할 수 있으며, 코드 생성 모델, 채팅, 일반 응답 생성 등과 같이 매우 다양한 옵션을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적으로 우리는 약 117백만 개의 매개변수와 약 500MB의 무게를 가진 gpt2 모델을 사용합니다. 이 모델은 가장 가벼우면서 통합하기 가장 쉬운 옵션이죠. 이 모델은 매우 작기 때문에 답변이 상당히 기본적입니다. 입력된 텍스트에 가장 가까운 예측과 매칭되는 쿼리 해결이라고 할 때 아래 텍스트의 예측이 곧 입력된 것과 일치하는 것을 주목해주세요. 예를 들어:
 
-gpt2-large 또는 gpt2-xl과 같은 다른 버전의 gpt2도 있습니다. 모든 것이 Huggingface에서 제공되며 가장 강력한 XL 형식은 15억 개의 매개변수와 6GB의 무게를 가지고 있습니다. 이를 실행하려면 상당히 더 많은 강력한 하드웨어가 필요하며, 일관된 응답을 생성합니다. 
+gpt2-large 또는 gpt2-xl과 같은 다른 버전의 gpt2도 있습니다. 모든 것이 Huggingface에서 제공되며 가장 강력한 XL 형식은 15억 개의 매개변수와 6GB의 무게를 가지고 있습니다. 이를 실행하려면 상당히 더 많은 강력한 하드웨어가 필요하며, 일관된 응답을 생성합니다.
 
 OpenAI GPT 시리즈 외에도 다양한 다른 사용 가능한 모델을 선택할 수 있습니다. 그러나 대부분의 경우 스크립트에 삽입할 인증 토큰이 필요합니다. 최근에는 공간 점유 및 쿼리를 전체 추론 파이프라인을 통해 실행하는 데 필요한 시간을 최적화한 현대화된 모델들이 출시되었습니다. Llama3도 이 중 하나로, 8B 매개변수의 작은 버전과 70B의 대형 버전을 제공합니다.
 
 그러나 시스템에 모델을 선택할 때는 매개변수의 개수만을 기준으로 삼으면 안 됩니다. 모델의 아키텍처가 모델이 적용할 수 있는 지식의 양을 결정하기 때문이죠. 따라서 작은 모델은 대형 모델과 매우 유사한 성능을 발휘할 수 있습니다. 즉, 매우 유사한 언어 이해 능력을 갖춘 답변을 생성하는 동시에 이를 생성하는 데 필요한 컴퓨팅 자원을 최적화할 수 있죠. Huggingface 자체에서 제공되는 벤치마크 또는 LLM의 위에서 언급한 매개변수를 측정하는 전문 테스트를 사용할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 테스트 결과와 특정 하드웨어에서 응답하는 데 걸리는 평균 시간은 모델을 선택하는 데 꽤 완벽한 지표입니다. 그러나 항상 기억해야 할 점은 LLM은 실행 중인 칩 메모리에 맞아야 합니다. 따라서 우리가 llm.py 스크립트에서 CUDA를 사용한 GPU 추론을 사용하는 경우, 그래픽 메모리는 모델 크기보다 커야 합니다. 그렇지 않으면 계산을 여러 대의 GPU 또는 하나 이상의 기기에서 복잡성을 달성하고자 하는 데 따라 동등하게 분산해야 합니다.
 
@@ -204,7 +397,18 @@ OpenAI GPT 시리즈 외에도 다양한 다른 사용 가능한 모델을 선�
 
 초기 아이디어는 모바일 클라이언트를 API에 연결하고 웹과 같은 요청을 하며 HttpURLConnection과 같은 종속성을 사용하는 것입니다. 코드 구현은 어렵지 않으며 공식 페이지에서 제공하는 안드로이드 문서도 이러한 목적에 유용합니다. 그러나 일반 TCP 안드로이드 소켓을 사용하여 사용자 정의 코틀린 중간 구성 요소로 API의 기능을 에뮬레이트할 수도 있습니다. 소켓은 상대적으로 사용하기 쉽고, 모든 것이 올바르게 작동하도록 노력을 기울이며 코드에 대한 꽤 많은 제어 수준을 제공합니다. 규제 API의 부재를 해결하기 위해 이동 클라이언트와 자바 노드 트리 사이에 코틀린 노드를 배치하여 근원 노드와 웹 클라이언트 및 API가 분리되는 한 이동 클라이언트와만 연결을 관리할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인터페이스 측면에서, 저희가 모방하는 애플리케이션인 ChatGPT는 매우 깔끔하고 현대적인 느낌을 가지고 있습니다. HTTP 버전은 이미 완성되었으므로 안드로이드 스튜디오 편집기에서 가능한 한 가깝게 복사해 보겠습니다.
 
@@ -214,7 +418,18 @@ OpenAI GPT 시리즈 외에도 다양한 다른 사용 가능한 모델을 선�
 
 그런 다음, 새로운 메시지가 하단에 나타나고 이전 메시지가 위로 이동하는 실제 채팅과 비슷한 인터페이스를 가져야 합니다. 이를 위해 화면의 약 80%를 차지할 RecyclerView를 삽입할 수 있습니다. 사전 정의된 메시지 뷰를 동적으로 추가해 실제로 메시지가 사용자인지 시스템인지에 따라 변경될 수 있도록 계획하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내, Android 연결의 문제는 주 스레드에서 네트워크 관련 작업을 수행할 수 없다는 것이며, 그렇게 하면 NetworkOnMainThreadException이 발생할 수 있다는 것입니다. 동시에, 주 스레드가 아닌 곳에서 구성 요소를 관리할 수 없다면, CalledFromWrongThreadException이 발생할 것입니다. 이 문제를 해결하는 방법은 연결 뷰를 주 스레드로 이동시키고, 주 목적은 코루틴을 잘 활용하여 네트워크 관련 작업을 수행할 수 있도록 하는 것입니다.
 
@@ -224,7 +439,18 @@ OpenAI GPT 시리즈 외에도 다양한 다른 사용 가능한 모델을 선�
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기능적인 시스템을 갖고 있더라도, 구현된 기술에 따라 중요한 개선이 가능합니다. 소프트웨어와 하드웨어 모두 그렇죠. 그러나 가용 자원에 따라 크게 변동될 수 있는 소수의 사용자에게 꽤 괜찮은 서비스를 제공할 수 있습니다. 마지막으로, ChatGPT와 같은 실제 시스템의 성능을 달성하는 것은 복잡합니다. 모델 크기와 그를 지원하는 하드웨어가 비실렉한 특히 비용이 많이 듭니다. 이 글에서 보여준 시스템은 소규모 또는 중간 해결책에 매우 적합하게 확장 가능하지만 대규모 해결책을 달성하기 위해서는 훨씬 더 복잡한 기술이 필요할 뿐만 아니라 이 시스템의 구조 중 일부를 활용하는 것이 필요할 수도 있습니다.
 

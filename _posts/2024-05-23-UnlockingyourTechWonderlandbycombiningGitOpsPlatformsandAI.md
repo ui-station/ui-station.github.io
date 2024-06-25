@@ -24,7 +24,18 @@ link: "https://medium.com/itnext/unlocking-your-tech-wonderland-by-combining-git
 
 쿠버네티스는 응용 프로그램 인프라를 구축하기 위한 플랫폼 오케스트레이터로, 기반이 되는 인프라에 신경 쓰지 않고 기반을 만들도록 돕습니다. 우리가 조명을 비추면 (저는 예전 시스템 엔지니어로서) 익숙한 것들이 많이 보일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 시스템에서 잘 알려진 운영 절차들을 위한 추상화: Kubernetes에서 객체를 생성할 때, 우리는 과거에 우리가 한 것을 설명만 할 뿐입니다. 예를 들어, 인그레스 객체를 만들 때, 시스템에게 "이 패턴과 일치하는 트래픽을 이 서비스로 전달하는 역방향 프록시를 구성해주세요" 라고 말합니다. 파드 객체를 만들 때, 우리는 시스템에게 유닉스 네임스페이스를 생성하고 그 안에 프로세스를 캡슐화하며 환경 변수, 요청, 제한 등을 설정하도록 지시합니다.
 - 컨테이너: 컨테이너 개념은 완전히 새로운 것은 아니며 그 주변에 마법도 없습니다. 우리는 BSD jails로부터 이를 배웠고, OpenVZ나 LXC로 컨테이너를 만들었으며 마침내 Docker로 그 가능성을 확장했습니다.
@@ -34,7 +45,18 @@ link: "https://medium.com/itnext/unlocking-your-tech-wonderland-by-combining-git
 
 아래 그림은 쿠버네티스로 가능한 자동화의 일부를 보여줍니다. 이 예시는 여러 컴포넌트에 작업 수행을 지시하는 매니페스트를 한 번에 만들 수 있다는 것을 보여줍니다. 이 경우에는 클러스터로의 인그레스 경로 생성, TLS 인증서 발급, 특정 호스트 이름을 위한 DNS 이름 생성 등이 될 것입니다. 물론, 이러한 지점에 도달하기 위해 약간의 구성 작업이 필요하지만 (전에 언급한 예시들보다는 훨씬 적습니다), 결국에는 복잡한 것들을 아주 간단한 방법으로 사용할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 몇 년 전, Kelsey Hightower가 한 게시물에서 다음과 같이 썼어요:
 
@@ -44,8 +66,18 @@ link: "https://medium.com/itnext/unlocking-your-tech-wonderland-by-combining-git
 
 쿠버네티스와 클라우드 네이티브 주변에 엄청난 생태계가 형성되었고, 많은 도구들이 사람들이 문제를 해결하는 데 도움을 줬어요. 우리가 그림 1에서 본 것처럼, 인그레스 오브젝트를 통해 들어오는 네트워크 트래픽을 구성하고, 인증서를 요청하거나 쿠버네티스 컨트롤러를 통해 DNS 항목을 구성하는 것은 오늘날 매우 간단해졌어요. 시간이 지남에 따라 많은 도구들이 이 생태계에 합류했고, 종종 사람들은 왜 같은 문제를 해결하는 것처럼 보이는 다양한 도구들이 존재하는지 묻곤 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Tech Wonderland](/assets/img/2024-05-23-UnlockingyourTechWonderlandbycombiningGitOpsPlatformsandAI_2.png)
 
@@ -55,8 +87,18 @@ G. Hohpe’s book “Cloud Strategy”에서 회사에 가장 적합한 클라�
 
 우리는 이러한 것들을 끊임없이 진행할 수 있다고 상상할 수 있다고 생각하지만, 랜드스케이프의 각 도구는 더 많은 아이디어를 제공하며 더 많은 옵션을 제공하고(항상 그것들이 필요하지 않을 수 있지만) 귀하의 응용 프로그램에 대한 견고한 플랫폼을 구축하는 데 도움을 줍니다. 이를 통해 내가 좋아하는 이야기의 핵심인 플랫폼 엔지니어링으로 진행하고 싶습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 플랫폼 엔지니어링의 등장
 
@@ -69,7 +111,18 @@ G. Hohpe’s book “Cloud Strategy”에서 회사에 가장 적합한 클라�
 - 응용 프로그램 팀이 현재 사용 중인 5가지 메커니즘 중에서 선택해야 할 때 어떻게 응용 프로그램을 배포해야 할까요?
 - 개발자로서 클라우드 환경에서 데이터베이스를 사용하고 싶습니다. 어떤 것을 선택해야 할까요? 또 누가 그것을 관리해야 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 독립적인 응용 프로그램 팀마다 도구 스택에 약간의 노력을 기울였다고 상상해보세요. 대부분의 팀은 그것에 만족하고 있습니다. 그러나 이 방식으로 진행하면 확장이 잘 되지 않을 수 있으므로, 개발팀을 더 쉽게 만들고 제품 관리자를 더 만족시키기 위해 일부 사전 정의된 빌딩 블록을 사용하는 것이 합리적일 수 있습니다. 여러분의 플랫폼 엔지니어링 여정이 시작되었습니다.
 
@@ -83,7 +136,18 @@ Martin Fowler와 Evan Bottcher는 이렇게 플랫폼을 정의합니다:
 - 서비스: 개발자들이 제품을 제공하는 데 도움이 되는 플랫폼의 일부인 것들, 예를 들어 시크릿 관리, 데이터베이스, 배달 도구, 메시지 큐잉 등
 - 지식과 지원: 플랫폼을 사용하는 사람들을 돕는 사항 및 서비스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IT에서 배운 한가지는 우리가 종종 무언가를 한 번 이상, 때로는 여러 차례 만들어낸다는 것입니다. 많은 경우, 우리는 이전에 만들어둔 인프라를 청사진으로 사용하고 많은 것을 반복합니다. 유감스럽게도, 이는 종종 해결책과 가끔은 유지보수가 잘 되지 않는 것들을 포함합니다. 플랫폼 접근 방식으로 수렴하는 것은 시간이 지남에 따라 개선될 수 있는 패턴 및 템플릿 카탈로그를 구축하는 데 도움이 될 수 있습니다 (각 IaC 템플릿을 버전화된 서비스로 생각해 보세요). 넓은 범위에서 적용될 때 해결책을 줄이는 데 관심 있는 많은 사람들이 있습니다. 플랫폼을 강아지집을 짓는 데 필요한 모든 도구 및 자재를 제공하는 도구 시장으로 생각해 보세요. 더 나아가, 프로젝트를 돕는 영업사원들과 문서가 있을 수 있습니다.
 
@@ -95,7 +159,18 @@ IT에서 배운 한가지는 우리가 종종 무언가를 한 번 이상, 때�
 - 애플리케이션 및 인프라 구성요소를 제공하는 방법
 - 솔루션 카탈로그의 첫 부분
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IaC 솔루션과 소프트웨어를 전달하는 GitOps Controller에 자주 의존하는 편입니다. 이러한 솔루션을 기반으로 몇 가지 더 궁금증이 생길 것입니다. 예를 들어, 비밀 정보는 어떻게 전달할까요? DNS 항목은 어떻게 다룰까요? 버전 관리는 어떻게 진행할까요? 이러한 질문 목록은 끝없이 계속될 수 있으며 어떤 질문은 먼저 나오고 다른 것은 나준히 알려질 것입니다. 배포 전략은 현재 사용 가능한 애플리케이션과 해당 현재 메커니즘에 따라 당연히 달라질 것입니다. 그러나 애플리케이션과 배포 전략을 통해 지금까지 생각하지 못했을지도 모를 여백과 문제점을 찾게 될 것입니다. 하나의 중요한 포인트는 전달할 아티팩트의 유형과 표준화할 수 있는 방법입니다. 예를 들어, 컨테이너를 전달하고 배포 설명에 대한 내부 표준(예: manifests 및 helm charts)이 있는 경우 모든 것이 더 쉬워집니다.
 
@@ -103,7 +178,18 @@ IaC 솔루션과 소프트웨어를 전달하는 GitOps Controller에 자주 의
 
 이러한 플랫폼은 개발자에게 엄청난 가치를 제공할 수 있지만, 이들을 강요하여 그들이 만족하지 않는 프로세스에 밀어 넣어서는 안된다는 점을 명심해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 개발자를 배려하며 과거를 생각해보기
 
@@ -115,7 +201,18 @@ IaC 솔루션과 소프트웨어를 전달하는 GitOps Controller에 자주 의
 
 또한, 모든 회사는 각자의 역사, 내부 가치 및 프로세스를 가지고 있습니다. 플랫폼 구축을 시작할 때, 이를 염두에 두고 사람들을 어떻게 차지할지 알아보려고 노력해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # AI에 대해 다루는 제목을 보면서 함께 멋진 것들에 대해 이야기해주셨네요!
 
@@ -125,7 +222,18 @@ Kubernetes와 AI 영역에서의 최초 프로젝트 중 하나인 K8sGPT는 Kub
 
 <img src="/assets/img/2024-05-23-UnlockingyourTechWonderlandbycombiningGitOpsPlatformsandAI_5.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 것들은 다양한 다른 도구들과 결합할 수 있습니다. 예를 들어, GitOps 도구를 사용하여 애플리케이션을 전달하고 분석을 실행한 후, 애플리케이션이 제대로 작동하는지 확인할 수 있습니다. 이와 같은 문제를 감지하고 자동으로 해결하기 위한 노력이 이미 있습니다. 내 최근 데모 중 하나에서는 GitOps 컨트롤러를 사용하여 애플리케이션을 배포하고, Keptn을 사용하여 기능을 유효성 검사하고, K8sGPT를 내장하여 배포에서 문제를 찾아내었습니다.
 
@@ -135,7 +243,18 @@ Kubernetes와 AI 영역에서의 최초 프로젝트 중 하나인 K8sGPT는 Kub
 
 # 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Hohpe, G. (2020). Cloud Strategy: A Decision-Based Approach to Successful Cloud Migration.
 - CNCF Platforms Working Group. (2023). CNCF Platforms Whitepaper. [https://tag-app-delivery.cncf.io/whitepapers/platforms/](https://tag-app-delivery.cncf.io/whitepapers/platforms/)

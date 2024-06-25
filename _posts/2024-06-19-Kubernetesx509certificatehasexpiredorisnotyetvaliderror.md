@@ -3,14 +3,12 @@ title: "쿠버네티스 x509 인증서가 만료되었거나 아직 유효하지
 description: ""
 coverImage: "/assets/img/2024-06-19-Kubernetesx509certificatehasexpiredorisnotyetvaliderror_0.png"
 date: 2024-06-19 13:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-Kubernetesx509certificatehasexpiredorisnotyetvaliderror_0.png
 tag: Tech
 originalTitle: "Kubernetes: “x509: certificate has expired or is not yet valid” error"
 link: "https://medium.com/@houcem.laouiti/kubernetes-x509-certificate-has-expired-or-is-not-yet-valid-error-2bc8c1a61a81"
 ---
-
-
 
 <img src="/assets/img/2024-06-19-Kubernetesx509certificatehasexpiredorisnotyetvaliderror_0.png" />
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@houcem.laouiti/kubernetes-x509-certificate-has-expire
 
 저는 인증서 만료 문제라고 알고 있었지만, 문제를 어떻게 해결할지 알려고 많은 시간을 보냈어요. 그래서 이 주제에 대해 짧은 기사를 써서 이런 문제를 겪는 다른 분들에게 도움이 되길 바라는 마음으로 준비했어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kubernetes 문서에 따르면 kubeadm으로 생성된 클라이언트 인증서는 1년 후에 만료됩니다.
 
@@ -33,7 +41,18 @@ Kubernetes 문서에 따르면 kubeadm으로 생성된 클라이언트 인증서
 kubeadm certs check-expiration
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 그런 다음 모든 인증서를 갱신했어요
 
@@ -47,7 +66,18 @@ kubeadm certs renew all
 sudo systemctl restart kubelet
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만, 아무것도 바뀌지 않았네요! 계속해서 같은 오류가 발생하고 있습니다.
 
@@ -57,7 +87,18 @@ sudo systemctl restart kubelet
 
 그리고 kubeadm으로 클러스터를 구축할 때 /etc/kubernetes/admin.conf을 /.kube/config 파일로 복사해야 했다는 것을 기억했네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인증서를 갱신하면 /etc/kubernetes/admin.conf 파일이 업데이트되므로, 당연히 내 /.kube/config 파일도 그에 맞게 업데이트해야 했어요.
 

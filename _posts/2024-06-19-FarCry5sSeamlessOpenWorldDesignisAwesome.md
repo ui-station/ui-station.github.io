@@ -3,13 +3,12 @@ title: "파 크라이 5의 매끄러운 오픈 월드 디자인이 대박이야"
 description: ""
 coverImage: "/assets/img/2024-06-19-FarCry5sSeamlessOpenWorldDesignisAwesome_0.png"
 date: 2024-06-19 11:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-FarCry5sSeamlessOpenWorldDesignisAwesome_0.png
 tag: Tech
 originalTitle: "Far Cry 5’s Seamless Open World Design is Awesome"
 link: "https://medium.com/@xander51/far-cry-5s-seamless-open-world-design-is-awesome-5886e4834442"
 ---
-
 
 유비소프트에 대한 온라인에서 비난하는 것이 인기가 있다는 것을 알고 있어요 — 그리고 그들에 대해 답답해하는 사람들이 잘못했다고 생각하지 않아요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@xander51/far-cry-5s-seamless-open-world-design-is-awe
 
 그 어느 것도 좋은 상황은 아니죠. 그렇지만 유비소프트는 여전히 다양한 장르를 대상으로 저희 수준의 게임을 출시하는 거대한 게임 회사입니다. 그리고 모든 행정적인 문제에도 불구하고 산업 내에서 최고의 디자인 재능을 소속으로 두고 있으니까요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2018년의 훌륭한 Far Cry 5를 살펴보면 게임 제작 경험의 많은 멋진 예가 어떻게 작용하는지에 대해 알 수 있어요. 몬태나의 허구 버전에서 설정된 이 게임은 이전 몇 개 설치의 거대한 캠프 청소 모험을 좁히고 동적 서술과 세계를 중심으로 한 새로운 디자인 패러다임을 세우는 상태에 있어요. 이전 제목보다 훨씬 자연스러운 방식으로 플레이어에게 퀘스트를 제공하며, 다른 오픈 월드 게임에 좋은 템플릿이라고 생각해요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@xander51/far-cry-5s-seamless-open-world-design-is-awe
 
 그 첫 지역 이후, 이 게임은 일반적인 예전 유비소프트 맵 아이콘 축제보다 훨씬 동적이고 생각 깊으며 플레이어의 시간을 존중해요. Far Cry 5는 세계가 더 활기차 보이도록 만드는 무작위 동적 이벤트들로 가득 차 있어요. NPC를 구하면 숨겨진 무기 보관장소나 적 성채에 대해 여러분에게 알려줄 수도 있어요. 그들은 심지어 여러분과 함께 가기를 제안할 수도 있어요. 이벤트는 플레이어가 그들에게 발견되기를 기다리기보다는 세계 전역에서 항상 일어나죠. 측면 콘텐츠에는 충분히 활기차고 에너지가 있어요. 그것들이 연결되어 큰 통일된 게임의 다음 부분처럼 느껴지며, 단순히 메뉴 상자에서 확인하려고 하는 것이 아니라고요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 플레이어는 Far Cry 5 컨텐츠의 세계를 통해 약간 다른 경로를 따릅니다. 어디서 기반을 둔 "Radiant Quest" 시스템과 비슷한데, 유비소프트의 세계는 더 혼돈스럽고 우스꽝스럽습니다. 한 번 공격당한 좋은 친구들을 구해줬는데, 그리고 그런 후에 어떤 여성이 와서 "고마워!"라고 외치고 근처 버려진 헬기에 올라타고 어딘가로 날아가는 재미있는 순간이 있었어요. 이런 순간들이 웃기기는 한데, 세상 속의 지속적인 활동과 생명력은 이곳이 실제 장소처럼 느껴지게 만들어줘서 게임 콘텐츠의 대형 메뉴 같지 않게 만들어줍니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@xander51/far-cry-5s-seamless-open-world-design-is-awe
 
 의사동적 구조를 사용하는 다른 유비소프트 게임을 찾고 계신다면 Far Cry 6나 Frontiers of Pandora로 가야 할 것입니다. 그렇지만, 저는 Far Cry 5가 더 잘 했다고 생각해요. Far Cry 6나 아바타 게임은 약간 더 "게임적"이고, 무슨 일이 일어나고 있는지를 상기시키는 것과 진행 상황을 확인하기 위해 메뉴로 자주 들어가는 것들이 있어요. Far Cry 5는 실행에서 좀 더 확실합니다. 단지 당신이 혼돈의 세계 속에서 존재하고, 조금 더 유도 없이 여기저기 순찰하고 임무를 수행하는 것을 두렵지 않아해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파 크라이 5의 아름다운 세계는 이 디자인을 아름답게 묶어줍니다. 자연을 감상하는 것을 좋아한다면 초대하는 곳이며, 모든 지평선에는 흥미로운 랜드마크가 충분히 있어 지도를 계속 열기보다는 자연스럽게 주변을 둘러보게 됩니다. 게임에서 플레이어의 손을 프레임 아래로 낮게 배치함으로써 화면의 상당 부분이 아름다운 세계를 보는 데 전념할 수 있도록 해줍니다. 저는 완전한 3D 지도 화면을 좋아합니다. 이것은 다른 Ubisoft 게임에서도 등장합니다. 그리고 단순히 마법적인 지도 지점을 활성화하는 대신에 실제 탐험을 통해 지도를 채우는 것은 저를 아름다운 풍경에 더 빠지게 만듭니다.
 
@@ -49,6 +81,17 @@ link: "https://medium.com/@xander51/far-cry-5s-seamless-open-world-design-is-awe
 
 유비소프트가 다른 파 크라이에 대한 작업을 진행하고 있다면 좋겠으며, 이 동적 디자인에 계속적으로 손질해 나갔으면 하는 바람도 있습니다. NPC가 근처 가게에 대해 나에게 이야기하고 난 후 트럭에 올라 앞으로 날아가는 것이 조금 어색할 수 있습니다. 그렇지만 이것은 대부분의 다른 비디오 게임의 NPC의 제공할 수 있는 것보다 훨씬 많은 생명과 즐거움을 제공하며, 특정한 장소나 미리 정의된 경로를 벗어나 움직일 기회가 거의 없는 NPC에 비해 훨씬 더 매력적인 부분입니다. 파 크라이 5의 디자인은 플레이어를 압도하지 않으면서도 거대하고 동적인 오픈 월드 게임이 어떻게 느껴질 수 있는지를 훌륭하게 보여주는 좋은 예입니다. 지금 다시 방문해볼 가치가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 이 게임을 만드는 데 관여된 어떤 사람으로부터 글을 쓰라고 요청받지도, 보상을 받지도 않았어요. 스크린샷을 위해 사용된 복사본은 제가 직접 현금을 사용해 구입했습니다.

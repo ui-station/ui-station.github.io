@@ -3,13 +3,12 @@ title: "루비 온 레일즈 인터뷰에서 자주 묻는 상위 5개 질문"
 description: ""
 coverImage: "/assets/img/2024-05-18-RubyonRailsTop5InterviewQuestions_0.png"
 date: 2024-05-18 15:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-RubyonRailsTop5InterviewQuestions_0.png
 tag: Tech
 originalTitle: "Ruby on Rails: Top 5 Interview Questions"
 link: "https://medium.com/@patrickkarsh/ruby-on-rails-top-5-interview-questions-f0f3d94a33c5"
 ---
-
 
 ## 자신감을 가지고 다가오는 루비 온 레일즈 인터뷰를 헤쳐나가요: 필수 질문들
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@patrickkarsh/ruby-on-rails-top-5-interview-questions-
 
 # 1. 루비 온 레일즈에서의 MVC 아키텍처를 설명해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 답변: MVC는 Model-View-Controller의 약자로, 컴퓨터 사용자 인터페이스를 구현하는 소프트웨어 디자인 패턴입니다. Rails에서 MVC는 애플리케이션을 세 가지 상호 연결된 부분으로 분할합니다. 이는 정보의 내부 표현과 사용자가 정보를 표시하거나 수락하는 방법을 분리하기 위해 수행됩니다.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@patrickkarsh/ruby-on-rails-top-5-interview-questions-
 
 # 2. Rails의 "Convention over Configuration" 원칙이란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 답변: “설정보다는 규약”(CoC, Convention over Configuration)은 Rails에서 촉진되는 소프트웨어 디자인 패러다임으로, 개발자가 내려야 하는 결정의 수를 줄이고 단순함을 얻되 유연성을 반드시 잃지 않도록 하는 것을 목표로 합니다. 이 아이디어는 소프트웨어 개발 환경이 사용자가 하려는 일과 의도를 합리적인 기본값으로 가정해야 한다는 것입니다. Rails에서는 이 규약을 따른다면 모델이나 컨트롤러를 특정한 방식으로 명명하는 등의 규약을 따른다면 덜 코드를 작성하고 프레임워크가 더 많은 작업을 대신 해줍니다. 예를 들어, User라는 모델이 있다면 Rails는 자동으로 users라는 테이블을 찾습니다.
 
@@ -41,7 +62,18 @@ link: "https://medium.com/@patrickkarsh/ruby-on-rails-top-5-interview-questions-
 
 # 4. Rails에서의 마이그레이션을 설명하고, 왜 중요한지 설명하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이그레이션은 ActiveRecord의 기능 중 하나로, 데이터베이스 스키마를 시간이 지남에 따라 버전 관리되는 방식으로 발전시킬 수 있습니다. 이를 통해 Ruby를 사용하여 데이터베이스 스키마에 변경을 정의할 수 있어, SQL을 직접 작성할 필요없이 새로운 요구 사항에 맞게 데이터베이스를 조정할 수 있습니다. 각 마이그레이션은 롤백할 수 있어 필요한 경우 변경을 되돌릴 수도 있습니다. 마이그레이션은 스키마 변경 내역을 유지해주기 때문에 언제든지 데이터베이스 인스턴스에 적용하여 스키마를 재생성할 수 있어 데이터베이스 관리와 배포를 보다 쉽게 할 수 있습니다.
 
@@ -55,6 +87,17 @@ link: "https://medium.com/@patrickkarsh/ruby-on-rails-top-5-interview-questions-
 - 백그라운드 작업: Sidekiq 또는 DelayedJob과 같은 도구를 사용하여 백그라운드에서 무거운 작업을 처리하여 사용자 경험과 애플리케이션 응답성을 향상시킬 수 있습니다.
 - 자산 최소화 및 압축: JavaScript, CSS 및 HTML 파일의 크기를 줄여 사용자의 로드 시간을 당겨 줄일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 질문들은 루비온레일즈(Ruby on Rails) 개발의 기본적인 측면을 다루며, 효과적인 레일즈 개발에 중요한 개념을 보여줍니다. 이러한 영역에 대한 튼튼한 이해는 면접뿐만 아니라 레일즈를 사용하여 견고하고 확장 가능한 웹 응용 프로그램을 구축하는 데도 도움이 될 것입니다.

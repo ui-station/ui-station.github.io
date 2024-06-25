@@ -3,13 +3,12 @@ title: "도커 대 Podman 안전한 오케스트레이션의 새 시대"
 description: ""
 coverImage: "/assets/img/2024-05-23-DockervsPodmanANewErainSecureOrchestration_0.png"
 date: 2024-05-23 14:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-DockervsPodmanANewErainSecureOrchestration_0.png
 tag: Tech
 originalTitle: "Docker vs Podman: A New Era in Secure Orchestration"
 link: "https://medium.com/gitconnected/docker-vs-podman-a-new-era-in-secure-orchestration-957ea2123098"
 ---
-
 
 탐구하는 Root vs Rootless Orchestration: 보안 관점에서
 
@@ -19,9 +18,20 @@ link: "https://medium.com/gitconnected/docker-vs-podman-a-new-era-in-secure-orch
 
 # 🚀 컨테이너 이해: 왜 필요한가부터 어떻게 하는가까지
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-컨테이너는 코드, 런타임, 라이브러리 및 시스템 설정을 포함한 응용 프로그램 실행에 필요한 모든 것이 포함된 독립 실행 가능한 패키지입니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+컨테이너는 코드, 런타임, 라이브러리 및 시스템 설정을 포함한 응용 프로그램 실행에 필요한 모든 것이 포함된 독립 실행 가능한 패키지입니다.
 
 이는 응용 프로그램이 어디에서 시작하더라도 동일하게 실행된다는 것을 의미합니다. 즉, 당신의 랩탑, 클라우드 서버 또는 동료의 컴퓨터 등 어디에서든 실행할 수 있습니다. 이 일관성은 '내 컴퓨터에서는 작동하는데'라는 오랜 문제를 해결합니다.
 
@@ -33,7 +43,18 @@ link: "https://medium.com/gitconnected/docker-vs-podman-a-new-era-in-secure-orch
 - 한 번에 한 컨테이너가 격리되면 실행 환경은 해당 환경 내에서 프로그램을 실행하여 호스트 시스템과 쉽게 통신합니다.
 - 데몬 프로세스로 작동하는 컨테이너 실행 환경 도구는 리눅스 커널과 상호작용하여 컨테이너를 관리하며, 관리를 위해 루트 액세스가 필요합니다. 이 상호작용은 효율적인 컨테이너 관리에 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잘 알려진 컨테이너 런타임 중에는 Docker, k8s, nerdctl 등에서 사용되는 containerd와 cri-o가 있습니다.
 
@@ -43,7 +64,18 @@ link: "https://medium.com/gitconnected/docker-vs-podman-a-new-era-in-secure-orch
 
 컨테이너 관리 세계에서 인기가 Podman으로 변화되고 있으며, 그 이유에는 몇 가지가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Rootless Architecture: 도커와는 달리 루트 액세스가 있는 데몬 프로세스로 작동하는 Podman과 달리, Podman은 루트리스 접근 방식을 채택합니다. 이 기본적인 차이가 Podman의 인기 증진에 상당한 기여를 합니다.
 - 보안 취약점: Docker의 루트 액세스는 파일을 읽고 프로그램을 설치하며 애플리케이션을 편집하는 등 컨테이너를 관리할 수 있게 합니다. 그러나 이는 시스템에 보안 취약점을 도입하여 헤커들로 하여금 유혹적인 대상이 되게 합니다.
@@ -61,7 +93,18 @@ link: "https://medium.com/gitconnected/docker-vs-podman-a-new-era-in-secure-orch
 - 주어진 시나리오에서 세 명의 리눅스 사용자인 Bob, Dawg, BadBoy가 생성되었습니다. Bob과 Dawg는 Podman을 사용하여 컨테이너를 생성하며, 이러한 컨테이너들은 각 사용자 네임스페이스 내의 리소스에만 액세스할 수 있습니다. 이러한 설정은 각 컨테이너의 액세스를 해당하는 네임스페이스로 제한하여 보안을 강화합니다.
 - BadBoy는 Docker를 사용하며 루트 액세스를 가지고 있어 호스트 시스템의 모든 리소스에 대한 가시성을 허용합니다. 네임스페이스 밖에 있는 리소스까지도 볼 수 있어 시스템에 잠재적인 공격 가능성을 노출시킵니다. 이에 반해 루트리스 아키텍처인 Podman은 사용자 개별 네임스페이스에만 액세스 권한을 제한하여 보안을 강화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Podman 설정
 
@@ -117,7 +160,18 @@ version:
   Version: 4.7.2
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Podman의 세부 정보를 확인하고 이미지를 검사하며 실행 중인 컨테이너를 관리하는 데 Podman CLI도 사용할 수 있습니다.
 
@@ -135,17 +189,28 @@ services:
       POSTGRES_USER: podman-psql-user
       POSTGRES_PASSWORD: podman-pass
     ports:
-      - '5432:5432'
+      - "5432:5432"
 
   redis:
-    image: 'redis:6.0.14'
+    image: "redis:6.0.14"
     restart: always
     command: redis-server
     ports:
-      - '6379:6379'
+      - "6379:6379"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다음은 Podman 데스크톱 내에서 실행 중인 컨테이너와 이미지를 검사할 수 있습니다.
 
@@ -155,7 +220,18 @@ services:
 
 # 마지막으로
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디지턈 시대에는 보안이 매우 중요합니다. 침입이 발생하면 심각한 결과를 가져올 수 있습니다. Docker와 Podman은 각각 강점과 약점을 가지고 있습니다. Podman은 안전한 오케스트레이션의 기초를 바탕으로 만들어졌지만 Docker와 같은 기능(예: Docker Swarm)이 부족할 수 있습니다. 반면 Docker는 사용 편의성을 강조하지만 보안 측면에서는 미흡하다고 여겨집니다.
 

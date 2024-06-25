@@ -3,13 +3,12 @@ title: "2024 최신 Flutter에서 Bloc 사용법 효율적인 상태 관리 가�
 description: ""
 coverImage: "/assets/img/2024-06-22-Flutter-Bloc_0.png"
 date: 2024-06-22 23:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-Flutter-Bloc_0.png
 tag: Tech
 originalTitle: "Flutter - Bloc"
 link: "https://medium.com/@semihaltin99/flutter-bloc-c47dd9014ab0"
 ---
-
 
 ![Bloc](/assets/img/2024-06-22-Flutter-Bloc_0.png)
 
@@ -19,22 +18,44 @@ Bloc은 '비즈니스 로직 구성 요소'의 약자로, Google에서 권장하
 
 Bloc은 세 가지 구조로 구성됩니다. 이들은 이벤트 클래스, 상태 클래스 및 Bloc 클래스입니다. 이제 이들을 좀 더 자세히 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![img](/assets/img/2024-06-22-Flutter-Bloc_1.png)
 
 1. 이벤트:
-이벤트는 응용 프로그램에서 수행하려는 작업을 나타냅니다. 연락처 응용 프로그램을 고려해보세요. 이 경우, 이벤트는 GetUsers, UpdateUser, DeleteUser 등이 될 것입니다. 이 이벤트에 대한 추상 클래스가 있으며, 다른 이벤트들은 이 추상 클래스를 상속받아 사용합니다.
+   이벤트는 응용 프로그램에서 수행하려는 작업을 나타냅니다. 연락처 응용 프로그램을 고려해보세요. 이 경우, 이벤트는 GetUsers, UpdateUser, DeleteUser 등이 될 것입니다. 이 이벤트에 대한 추상 클래스가 있으며, 다른 이벤트들은 이 추상 클래스를 상속받아 사용합니다.
 
 응용 프로그램에서 수행하려는 작업에 따라 직접 이벤트를 만들어야 합니다.
 
 2. 상태:
-상태는 응용 프로그램에서 발생할 수 있는 상황을 나타냅니다. 어떤 상황에서 무엇을 해야 할지를 결정하는 데 사용됩니다. 연락처 앱의 경우 UsersInitial, UsersLoading, UsersLoaded 및 UsersError 등이 있을 수 있습니다.
+   상태는 응용 프로그램에서 발생할 수 있는 상황을 나타냅니다. 어떤 상황에서 무엇을 해야 할지를 결정하는 데 사용됩니다. 연락처 앱의 경우 UsersInitial, UsersLoading, UsersLoaded 및 UsersError 등이 있을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 블록:
-Bloc 클래스를 중간 클래스로 생각할 수 있습니다. 이 클래스는 이벤트와 상태를 연결합니다. 이벤트가 트리거되면, 어떤 함수가 호출될지와 어떤 상태로 애플리케이션이 전환될지는 블록 클래스에서 결정됩니다.
+   Bloc 클래스를 중간 클래스로 생각할 수 있습니다. 이 클래스는 이벤트와 상태를 연결합니다. 이벤트가 트리거되면, 어떤 함수가 호출될지와 어떤 상태로 애플리케이션이 전환될지는 블록 클래스에서 결정됩니다.
 
 ## 블록 사용
 
@@ -42,7 +63,18 @@ Bloc 클래스를 중간 클래스로 생각할 수 있습니다. 이 클래스�
 
 ## 예제 채우기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 코어, 구성 및 기능 폴더를 생성했습니다. 그런 다음 fetch characters의 기능을 위해 features 폴더 내에 characters 폴더를 만들었습니다. 마지막으로 characters 폴더 내에 데이터, 도메인 및 프리젠테이션 폴더를 생성했습니다.
 기능 폴더에 bloc 폴더를 만들었습니다. 이는 Bloc이 애플리케이션의 비즈니스 로직에 사용되기 때문입니다.
@@ -53,7 +85,18 @@ Bloc의 세 부분인 이벤트, 상태 및 bloc 파일을 추가했습니다.
 
 ## 코드 예시
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 제가 CharactersInitial, CharactersLoading, CharactersError 및 CharactersLoaded 상태를 결정했고 CharactersState를 추상 클래스로 만들었습니다. 그런 다음 다른 상태에 CharactersState에서 상속을 제공했습니다.
 
@@ -87,7 +130,18 @@ abstract class CharactersEvent {}
 class GetCharacters extends CharactersEvent {}
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Bloc으로부터 CharactersBloc으로 상속을 받았고, 클래스의 생성자 메서드에 이벤트를 추가했습니다. 그런 다음 데이터를 가져오기 위해 getCharacters 함수를 만들었습니다. 이 함수에서 API 결과에 따라 상황을 트리거했습니다.
 
@@ -135,7 +189,18 @@ _buildBloc() {
   }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 화면이 로드되면 GetCharacters 이벤트를 트리거합니다.
 

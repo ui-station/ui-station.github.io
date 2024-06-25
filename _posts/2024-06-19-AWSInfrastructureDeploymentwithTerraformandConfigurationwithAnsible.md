@@ -3,13 +3,12 @@ title: "테라폼을 이용한 AWS 인프라 배포와 앤서블을 이용한 �
 description: ""
 coverImage: "/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_0.png"
 date: 2024-06-19 13:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_0.png
 tag: Tech
 originalTitle: "AWS Infrastructure Deployment with Terraform and Configuration with Ansible"
 link: "https://medium.com/@harsh05/aws-infrastructure-deployment-with-terraform-and-configuration-with-ansible-14e72b134959"
 ---
-
 
 # 소개:
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@harsh05/aws-infrastructure-deployment-with-terraform-
 
 우리 Terraform 프로젝트는 가상 사설 클라우드(VPC), 보안 그룹, Amazon Machine Image(AMI), Elastic Block Store(EBS) 볼륨, 및 EC2 인스턴스로 구성된 AWS 인프라 스택의 배포를 자동화하는 데 초점을 맞춥니다. Terraform의 모듈식이자 반복 가능한 구성을 활용하여 환경 간 일관성과 신뢰성을 보장하고, 수동 개입과 인적 오류를 최소화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 상세 단계:
 
@@ -30,7 +40,18 @@ link: "https://medium.com/@harsh05/aws-infrastructure-deployment-with-terraform-
 
 ![AWS CLI 설치 링크](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AWS CLI를 이곳에서 다운로드하여 계정에 구성하세요.
 - 또는 Linux 버전을 선택하여 설치할 수도 있습니다.
@@ -42,7 +63,18 @@ link: "https://medium.com/@harsh05/aws-infrastructure-deployment-with-terraform-
 
 - 현재는 관리자 액세스를 제공하지만 좋은 실천 방법은 아닙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_3.png](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_3.png)
 
@@ -52,7 +84,18 @@ link: "https://medium.com/@harsh05/aws-infrastructure-deployment-with-terraform-
 
 ![2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_5.png](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Access Key ID에 액세스 키를 붙여 넣고, Secret Access Key ID에 비밀 키를 입력해주세요. 그리고 설정하고 싶은 기본 지역도 지정해주세요.
 
@@ -69,7 +112,18 @@ provider "aws" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 그럼 아래 명령어를 입력해주세요.
 
@@ -81,7 +135,18 @@ terraform.exe init
 
 우리는 VPC 구성을 정의합니다. CIDR 블록을 포함하여 네트워크 구조의 기반을 마련합니다. 이는 AWS 환경 내에서 격리되고 안전한 통신을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이 프로젝트 전체에 대해 동일한 main.tf 파일을 사용할 것입니다.
 
@@ -101,7 +166,18 @@ resource "aws_vpc" "vpc"{
 
 - 이제 서브넷 구성을 정의합니다. 이 구성에는 공용 서브넷과 사설 서브넷이 모두 포함됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # main.tf
@@ -119,7 +195,18 @@ resource "aws_vpc" "vpc"{
 이제 public 서브넷에 인터넷에 연결할 Internet-Gateway를 만들 것입니다. 이를 위해 라우팅 테이블도 생성하여 경로를 만들어야 합니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # main.tf
@@ -158,9 +245,20 @@ resource "aws_route_table_association" "public-subnets-asso" {
 
 EC2 인스턴스로의 들어오고 나가는 트래픽을 제어하기 위해 보안 그룹 규칙을 지정합니다. 이렇게 하면 사전 정의된 규칙 세트에 따라 액세스를 제한하여 네트워크 보안이 강화되며 잠재적인 보안 취약점을 완화할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-```hcl
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+```js
 resource "aws_security_group" "sg" {
     name        = "terraform_sg"
     description = "This security group is for terraform practice"
@@ -202,7 +300,18 @@ resource "aws_vpc_security_group_egress_rule" "sg_eg_rule" {
 
 Terraform의 데이터 소스를 활용하여 지정된 필터에 따라 기존 AWS AMI에 대한 정보를 가져올 수 있습니다. 이러한 필터는 지역, 운영 체제 및 아키텍처와 같은 미리 정의된 것으로 구성됩니다. 이는 EC2 인스턴스에 가장 적합한 AMI를 동적으로 선택함으로써 배포 간의 호환성 및 일관성을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 data "aws_ami" "rhel9" {
@@ -238,7 +347,18 @@ data "aws_ami" "rhel9" {
 
 인스턴스 유형, 키페어, 보안 그룹을 포함한 EC2 인스턴스 구성을 정의합니다. Terraform은 VPC 내에서 EC2 인스턴스를 프로비저닝하여 지정된 구성을 준수하면서 연결성과 리소스 격리를 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 파일 이름 : main.tf
@@ -248,22 +368,31 @@ data "aws_ami" "rhel9" {
 
 이 코드는 Terraform을 사용하여 AWS EC2 인스턴스를 생성하는 예시입니다. 우리는 AMI ID, 인스턴스 유형, 키 이름, 서브넷 ID, 보안 그룹 ID 등을 정의하고 있습니다. 이를 통해 인프라스트럭처 스택에 EC2 인스턴스를 통합할 수 있습니다. 태그를 지정하여 리소스를 식별할 수도 있습니다.
 
+## 테이블
 
-테이블
-------
-제목  | 설명
-------|---------
-AMI   | data.aws_ami.rhel9.id
-유형  | "t2.micro"
-키 이름 | "IAM_California"
-서브넷 ID | aws_subnet.public_subnets[0].id
-VPC 보안 그룹 ID | aws_security_group.sg.id
-퍼블릭 IP 주소 연결 | true
+| 제목                | 설명                            |
+| ------------------- | ------------------------------- |
+| AMI                 | data.aws_ami.rhel9.id           |
+| 유형                | "t2.micro"                      |
+| 키 이름             | "IAM_California"                |
+| 서브넷 ID           | aws_subnet.public_subnets[0].id |
+| VPC 보안 그룹 ID    | aws_security_group.sg.id        |
+| 퍼블릭 IP 주소 연결 | true                            |
 
 태그 :
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이제 새로운 EBS 볼륨을 생성했습니다. 중요한 점은 ec2 인스턴스와 ebs 볼륨이 동일한 가용 영역에 있어야 한다는 것입니다. 그렇지 않으면 서로 연결할 수 없습니다.
 
@@ -279,7 +408,18 @@ resource "aws_volume_attachment" "ebs_attach" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 11. 공용 IP 주소 출력:
 
@@ -293,7 +433,18 @@ output "ec2_instance_ip" {
 
 ## 12. 테라폼 파일 적용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 여태까지 AWS 인프라를 만든 main.tf 파일을 적용할 것입니다.
 
@@ -306,8 +457,18 @@ terraform.exe apply
 - 먼저 전체 계획을 알려줍니다. 그렇지 않으면 계획을 보는 별도의 명령어가 있습니다. 즉, terraform.exe plan
 - 계획을 알려준 후에는 앞으로 진행하고 AWS 클라우드에 적용할 것인지 물어봅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![AWS Infrastructure Deployment with Terraform and Configuration with Ansible 7](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_7.png)
 
@@ -317,9 +478,18 @@ terraform.exe apply
 
 ## VPC ARCHITECTURE:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_9](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_9.png)
 
@@ -329,8 +499,18 @@ terraform.exe apply
 
 ![AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_11](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_11.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## EC2-INSTANCE :
 
@@ -340,7 +520,18 @@ terraform.exe apply
 
 인프라가 프로비저닝된 후에는 프로비저닝된 인스턴스 내에서 Ansible을 사용하여 구성 관리 작업으로 신속하게 전환합니다. Ansible은 우리에게 idempotent playbooks 및 모듈을 사용하여 복잡한 구성 작업을 자동화할 수 있는 기능을 제공하여 효율적이고 확장 가능한 인프라 관리를 가능하게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 프로젝트는 Terraform과 Ansible을 완벽하게 통합하여 일관된 배포 파이프라인을 구축합니다. Terraform은 인프라 스택의 기반을 마련하는 데 도움을 주고, Ansible은 프로비전된 인스턴스를 구성하여 그들이 그 의도한 목적을 위해 완전히 기능하고 최적화되도록 보장합니다.
 
@@ -349,23 +540,45 @@ terraform.exe apply
 - ANSIBLE 인벤토리:
 
 ```js
-vim /etc/ansible/hosts
+vim / etc / ansible / hosts;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 \<img src="/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_13.png" />
 
 2. REQUIRED MODULES 설치하기.
 
 ```js
-ansible-galaxy collections install community.general 
+ansible-galaxy collections install community.general
 ansible-galaxy collections install posix
 ```
 
 3. ANSIBLE-PLAYBOOK:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 vim <file-name>.yml
@@ -377,11 +590,21 @@ vim <file-name>.yml
 
 ![AWS Infrastructure Deployment with Terraform and Configuration with Ansible](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_16.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
-- hosts: all    
+- hosts: all
   become: yes
   tasks:
     - name: "파티션 생성"
@@ -396,19 +619,19 @@ vim <file-name>.yml
         unit: GiB
 
     - name: "중요 명령어 실행"
-      command: 
+      command:
         cmd: "udevadm settle"
       register: cmd
 
     - debug:
         var: cmd
 
-    - command: 
+    - command:
         cmd: "lsblk"
       register: cmd2
 
-    - debug: 
-        var: cmd2 
+    - debug:
+        var: cmd2
 
     - name: "파티션 포맷"
       community.general.filesystem:
@@ -430,8 +653,8 @@ vim <file-name>.yml
     - name: "데몬 다시로드"
       command:
         cmd: "systemctl daemon-reload"
-        
-    - command: 
+
+    - command:
         cmd: "lsblk"
       register: cmd3
 
@@ -460,8 +683,18 @@ vim <file-name>.yml
 
 ## ANSIBLE PLAYBOOK 실행하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ansible-playbook <file-name>.yml
@@ -473,8 +706,18 @@ ansible-playbook <file-name>.yml
 
 ## 웹 서버가 성공적으로 시작되었는지 확인해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![AWS Infrastructure Deployment with Terraform and Configuration with Ansible](/assets/img/2024-06-19-AWSInfrastructureDeploymentwithTerraformandConfigurationwithAnsible_19.png)
 

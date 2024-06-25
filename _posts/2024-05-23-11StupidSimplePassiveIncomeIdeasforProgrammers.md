@@ -18,7 +18,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 그리고 지금 이 시점에서 이 기사를 읽고 계시다면, 여러분이 자신의 재정을 늘리기 위한 능력을 갖췄다고 믿어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글에서는 프로그래머를 위한 11가지 수동 소득 아이디어를 공유하겠습니다.
 
@@ -31,7 +42,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 바로 알아봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 수동 소득 뒤의 진실
 
@@ -41,7 +63,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 사실은;
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 본질적으로 수동 소득은 당신이 직접 시간을 돈으로 교환할 필요가 없는 소득원입니다.
 
@@ -53,7 +86,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 보통 알려진 수동 소득 아이디어와 아직 탐험되지 않은 수동 소득 아이디어에 대해 이야기해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로그래머들을 위한 수익 창출 아이디어
 
@@ -63,7 +107,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 숙련된 프로그래머로서, 당신이 알려줄 수 있는 것들이 많습니다. 특히 새로운 개발자들에게 더 많은 것을 가르쳐줄 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 사고 패턴이나 프로세스/워크플로, 혹은 언어 전문 지식일 수 있습니다.
 
@@ -73,7 +128,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 저는 기술 블로그를 운영하고 있으며 Medium에도 글을 쓰고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 완전히 새로운 글쓰기에 입문하신 분이라면 Medium을 선택해보세요. 초보자에게 가장 적합한 글쓰기 플랫폼이에요.
 
@@ -85,7 +151,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 - 자체 호스팅된 블로그: 개인 블로그가 있다면 Ezoic, Mediavine 또는 Adthrive와 같은 품질 있는 광고 네트워크에 가입하여 수익을 창출할 수 있어요.
 - 제휴 마케팅과 후원: Medium/자체 호스팅 중 어느 플랫폼을 선택하든, 제휴 마케팅이나 후원을 통해 수익을 창출할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 달 전에, 블로그에서 한 제품으로 제휴 마케팅으로 120달러 이상을 벌었어요.
 
@@ -95,7 +172,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 자신이 잘하는 분야에 대한 강좌를 만들어보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 사람들이 서면 자료 대신 비디오 강의를 선호합니다.
 
@@ -107,7 +195,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 - Skillshare
 - Teachable
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. 유튜브 채널을 시작해보세요
 
@@ -117,10 +216,20 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 하지만 이는 사실이 아닙니다. 저렴한 비디오 녹화 장비도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 텍스트를 참고해주세요.
-
 
 ![이미지](/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_2.png)
 
@@ -130,8 +239,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 이 모두는 당신의 전문 분야에 따라 다릅니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발 스택이나 기술 면접에서 성공하기 위한 도움이 되는 비디오 가이드, 소프트웨어 엔지니어링, 웹/앱 개발 등과 관련된 것들이 있을 수 있어요.
 
@@ -141,7 +260,18 @@ link: "https://medium.com/writing-solopreneur/11-stupid-simple-passive-income-id
 
 대부분 이북, 치트 시트 및 일반 정보 제품을 가리킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작년에는 29달러에 데브옵스 전자책을 판매하는 개발자와 인터뷰를 했어요. 그 책은 초보자를 위한 가이드처럼 보이는데, 그의 판매 대부분은 트위터 청중에서 나옵니다. 한 달에 약 1300달러를 벌어요.
 
@@ -151,7 +281,18 @@ Gumroad와 같은 플랫폼은 디지털 제품을 판매하고 수동 소득을
 
 프로그래머들에게 이는 매우 수익성 높은 수동 소득 사업임이 입증되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 웹 사이트 테마, 템플릿 및 플러그인을 판매할 수 있어요:
 
@@ -167,7 +308,18 @@ Gumroad와 같은 플랫폼은 디지털 제품을 판매하고 수동 소득을
 
 일반 판매 플랫폼 외에도 특정 CMS 마켓플레이스로도 직접 판매할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 다음과 같은 것들을 판매할 수 있어요:
 
@@ -179,7 +331,18 @@ Gumroad와 같은 플랫폼은 디지털 제품을 판매하고 수동 소득을
 
 CMS 테마 이외에도, Code Canyon과 같은 웹사이트에서 직접 프로그래밍 코드, 스크립트 및 플러그인을 판매할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 부트스트랩, 자바스크립트, PHP, HTML5, 모바일/안드로이드 앱 템플릿 및 기타 코드 및 스크립트를 판매할 수 있습니다.
 
@@ -189,8 +352,18 @@ Code Canyon에서 $89에 판매 중이에요.
 
 이 기사를 작성하는 시점에서 52,525번의 판매로 총 $4,000,000 이상의 매출을 기록했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_4.png)
 
@@ -200,8 +373,18 @@ Code Canyon에서 $89에 판매 중이에요.
 
 실제 문제를 해결하거나 개발자에게 가치 있는 서비스를 제공하는 API (Application Programming Interfaces)를 개발하고 활용하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 접근을 유료로 제공하거나 계층별 요금제를 제공함으로써, 개발자가 API 서비스를 구독하는 동안 수동 소득을 얻을 수 있습니다.
 
@@ -211,7 +394,18 @@ Code Canyon에서 $89에 판매 중이에요.
 
 기술 기업가인 김 댕은 그녀의 크롬 확장 프로그램인 Group Convert로 100만 달러 이상을 벌었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4,000 회 이상의 설치를 보유하고 있으며 매월 $10에서 $17까지의 가격대를 가지고 있어요.
 
@@ -221,7 +415,18 @@ Code Canyon에서 $89에 판매 중이에요.
 
 # 9. 봇 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_5.png" />
 
@@ -231,7 +436,18 @@ Code Canyon에서 $89에 판매 중이에요.
 
 한 번 배포되고 운영 중이면 구독 요금제나 사용량 기반 가격 책정을 통해 패시브 수입을 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 10. iOS 및 Android 애플리케이션 출시
 
@@ -241,8 +457,18 @@ Code Canyon에서 $89에 판매 중이에요.
 
 Steven Benson은 혁신적인 경로 계획 앱인 Badger Maps를 설립했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-11StupidSimplePassiveIncomeIdeasforProgrammers_6.png)
 
@@ -252,8 +478,18 @@ Working with a small team, he was able to quickly scale revenue to $6M ARR withi
 
 The last on the list and also what I'll consider the holy grail of passive income generation for programmers as it can lead to very high returns when done right.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인기 있는 SaaS 제품의 예시는 다음과 같습니다:
 
@@ -270,7 +506,18 @@ The last on the list and also what I'll consider the holy grail of passive incom
 
 SaaS 비즈니스를 구독 기반 가격으로 제공함으로써, 지속적인 반복 수익을 창출하고 지속 가능한 수 pass받는 소득원을 구축할 수 있어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 주의:
 

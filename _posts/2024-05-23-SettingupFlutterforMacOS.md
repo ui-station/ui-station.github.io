@@ -3,13 +3,12 @@ title: "맥용 플러터 설정하기"
 description: ""
 coverImage: "/assets/img/2024-05-23-SettingupFlutterforMacOS_0.png"
 date: 2024-05-23 15:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-SettingupFlutterforMacOS_0.png
 tag: Tech
 originalTitle: "Setting up Flutter for MacOS"
 link: "https://medium.com/@redmundnacario/setting-up-flutter-for-macos-9249a24ee5d8"
 ---
-
 
 이 튜토리얼은 MacOS 기기에 플러터를 설치하는 방법을 안내해드립니다. 맥에서 플러터를 사용하는 장점은 안드로이드 및 iOS 앱을 모두 개발할 수 있는 능력입니다.
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@redmundnacario/setting-up-flutter-for-macos-9249a24ee
 brew install --cask flutter
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다트와 플러터를 "/usr/local/bin"에 설치할 것입니다.
 
@@ -33,7 +43,18 @@ flutter doctor
 
 만약 플러터, 다트 및 필요한 도구를 설치했다면 아래 표시된 이미지처럼 보일 것입니다. 초기에는 일부 도구가 누락될 수 있습니다. Step #3를 완료하면 확인 표시가 되어 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-SettingupFlutterforMacOS_0.png)
 
@@ -45,7 +66,18 @@ flutter doctor
 - IntelliJ용 Flutter 플러그인이 포함된 Android Studio 2023.1(하지호그) 이상.
 - IntelliJ 및 Android 플러그인이 모두 포함된 IntelliJ IDEA 2023.1 이상.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안드로이드 개발을 위해
 
@@ -55,7 +87,18 @@ flutter doctor
 
 2. 설치한 후에 Android Studio의 SDK 매니저로 이동하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. SDK Tools 탭 아래로 이동하여 SDK 명령줄 도구를 활성화하세요. 적용 버튼을 눌러주세요.
 
@@ -67,7 +110,18 @@ flutter doctor
 flutter doctor --android-licenses
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. Flutter doctor를 다시 실행하여 설정이 제대로 되었는지 확인해보세요.
 
@@ -77,7 +131,18 @@ flutter doctor --android-licenses
 
    - 참고: 링크의 1단계에서 VM 가속기는 더 이상 MacOS에서 지원되지 않음을 유념해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 안드로이드 에뮬레이터를 설정하면 구성에 따라 가상 안드로이드 장치가 표시됩니다. 이 에뮬레이터에서는 플러터 앱을 실행할 수 있어요.
 
@@ -87,7 +152,18 @@ flutter doctor --android-licenses
 
 개발 도구를 설치하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Xcode (버전 15 이상) — 네이티브 Swift 또는 ObjectiveC 코드를 디버그하고 컴파일합니다.
 
@@ -97,7 +173,18 @@ b. 그런 다음 "get"과 "install" 버튼을 클릭하세요. 이 작업을 계
 
 c. 터미널에서 이 라인을 실행하세요. 이렇게 하면 명령줄 도구가 설치된 Xcode 버전을 사용하도록 구성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 sudo sh -c 'xcode-select -s /Applications/Xcode.app/Contents/Developer && xcodebuild -runFirstLaunch'
@@ -111,19 +198,41 @@ c. 터미널에서 다음 줄을 실행하세요. xcode 라이선스 동의서�
 sudo xcodebuild -license
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 터미널에서 "동의"를 입력하라는 프롬프트가 표시될 것입니다.
 
 2. 코코아팟 (1.13 또는 그 이상) - 네이티브 앱에서 플러터 플러그인을 컴파일하는 데 사용됩니다.
 
-  - 설치하려면 터미널에서 다음 줄을 실행하세요.
+- 설치하려면 터미널에서 다음 줄을 실행하세요.
 
 ```js
 sudo gem install cocoapods
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. IOS 시뮬레이터 — 플러터 앱을 가상 IOS에서 표시합니다.
 
@@ -135,7 +244,18 @@ xcodebuild -downloadPlatform iOS
 
 b. 시뮬레이터 실행하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 open -a Simulator
@@ -147,7 +267,18 @@ open -a Simulator
 
 # 보너스:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디버그하는 방법을 알려드릴게요!
 
@@ -157,6 +288,17 @@ open -a Simulator
 
 출처:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - [https://docs.flutter.dev/get-started/install/macos](https://docs.flutter.dev/get-started/install/macos)

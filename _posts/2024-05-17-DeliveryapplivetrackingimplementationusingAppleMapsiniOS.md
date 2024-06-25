@@ -3,13 +3,12 @@ title: "iOS에서 Apple Maps를 사용하여 배송 앱 실시간 추적 구현"
 description: ""
 coverImage: "/assets/img/2024-05-17-DeliveryapplivetrackingimplementationusingAppleMapsiniOS_0.png"
 date: 2024-05-17 17:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-DeliveryapplivetrackingimplementationusingAppleMapsiniOS_0.png
 tag: Tech
 originalTitle: "Delivery app live tracking implementation using Apple Maps in iOS"
 link: "https://medium.com/@vsofficialmail/delivery-app-live-tracking-implementation-using-apple-maps-in-ios-601b4c508922"
 ---
-
 
 UIKit 및 MapKit을 사용하여 Apple 지도에서 라이브 추적 구현을 성취했습니다.
 
@@ -17,7 +16,18 @@ UIKit 및 MapKit을 사용하여 Apple 지도에서 라이브 추적 구현을 �
 
 [YouTube](https://www.youtube.com/shorts/Qzi_vZw4p4Q)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지도에서 MKAnnoatation을 사용하여 사용자 정의 주석(맵 마커)을 정의하는 것으로 시작해 봅시다.
 
@@ -26,7 +36,7 @@ class CustomAnnotation: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String?
     private let pathCoordinates: [CLLocationCoordinate2D]
-    
+
     init(coordinates: [CLLocationCoordinate2D], title: String?) {
         self.coordinate = coordinates.first ?? CLLocationCoordinate2D(latitude: 0, longitude: 0)
         self.title = title
@@ -45,27 +55,38 @@ public class CustomAnnotationView: MKAnnotationView {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
         self.image = UIImage(named: "delivery")
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리가 MKMapViewDelegate를 사용하여 맵에 사용자 정의 주석을 구현하는 부분으로 넘어가 봅시다.
 
 ```swift
 extension ViewController: MKMapViewDelegate {
-    
+
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard let annotation = annotation as? CustomAnnotation else {
             return nil
         }
         let identifier = "CustomAnnotationView"
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKPinAnnotationView
-        
+
         if annotationView == nil {
             annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             annotationView?.canShowCallout = true
@@ -93,7 +114,18 @@ extension ViewController {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드는 지도에 이동 (배송) 경로를 포함하는 스트로크 라인을 보여주는 데 도움이 됩니다.
 
@@ -103,23 +135,23 @@ extension ViewController {
 // MapKit에서 지도의 주요 구성
     private func configureMap() {
         mapView.delegate = self
-        
+
         let pathCoordinates = [
             CLLocationCoordinate2D(latitude: Double(startLatitude)!, longitude: Double(startLongitude)!),
             CLLocationCoordinate2D(latitude: Double(endLatitude)!, longitude: Double(endLongitude)!),
         ]
-        
+
         let annotation = CustomAnnotation(coordinates: pathCoordinates, title: "Moving Pins")
         mapView.addAnnotation(annotation)
-        
+
         let regionRadius: CLLocationDistance = 350
         let region = MKCoordinateRegion(center: pathCoordinates.first!, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        
+
         let request = MKDirections.Request()
         request.source = MKMapItem(placemark: MKPlacemark(coordinate: pathCoordinates[0]))
         request.destination = MKMapItem(placemark: MKPlacemark(coordinate: pathCoordinates[1]))
         request.transportType = .automobile
-        
+
         let directions = MKDirections(request: request)
         directions.calculate { (response, error) in
             guard let route = response?.routes.first else {
@@ -133,35 +165,35 @@ extension ViewController {
         }
         mapView.setRegion(region, animated: true)
     }
-    
+
     // 배달원용 경로 따르는 알고리즘
     func addPinAndFollowRoute(route: MKRoute, duration: TimeInterval) {
         let pin = MKPointAnnotation()
         pin.coordinate = route.polyline.coordinate
         mapView.addAnnotation(pin)
-        
+
         var elapsedTime: TimeInterval = 0.0
         let totalDuration = duration
         let pointCount = route.polyline.pointCount
-        
+
         Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { timer in
             elapsedTime += 0.01
-            
+
             if elapsedTime >= totalDuration {
                 self.showAlert()
                 self.ordertitle.text = "주문 배달 완료!! 🎉🎉 "
                 timer.invalidate()
                 return
             }
-            
+
             let fraction = elapsedTime / totalDuration
             let index = Int(fraction * Double(pointCount - 1))
-            
+
             if index < pointCount - 1 {
                 let startCoordinate = route.polyline.points()[index].coordinate
                 let endCoordinate = route.polyline.points()[index + 1].coordinate
                 let interpolatedCoordinate = self.interpolateCoordinate(startCoordinate, endCoordinate, fraction)
-                
+
                 UIView.animate(withDuration: 0.01) { // 부드러운 이동을 위한 애니메이션 시간 감소
                     pin.coordinate = interpolatedCoordinate
                 }
@@ -174,7 +206,7 @@ extension ViewController {
         let lon = start.longitude + (end.longitude - start.longitude) * fraction
         return CLLocationCoordinate2D(latitude: lat, longitude: lon)
     }
-    
+
     // 주문 배달 메시지
     func showAlert() {
           let alert = UIAlertController(title: "주문 배달 완료", message: "식사를 즐기세요", preferredStyle: .alert)
@@ -190,7 +222,18 @@ extension ViewController {
 
 pathCoordinates는 시작 및 끝 위치의 좌표를 정의합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 region 변수는 우리의 배송 위치가 위치한 지역만 표시하는 데 사용됩니다.
@@ -207,7 +250,18 @@ var endLongitude: String = "0.0"
 var timedVariable: Int = 1
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 변수들은 ViewController에 정의되어 있으며 하드 코딩된 값이나 API 응답에서 가져온 값으로 수정할 수 있습니다.
 
@@ -224,6 +278,17 @@ guard let route = response?.routes.first else {
 
 그리고 여기서 우리 애플리케이션이 완료됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GitHub 저장소 및 YouTube 비디오를 첨부했어요. 코드베이스와 애플리케이션 데모를 확인해보세요!

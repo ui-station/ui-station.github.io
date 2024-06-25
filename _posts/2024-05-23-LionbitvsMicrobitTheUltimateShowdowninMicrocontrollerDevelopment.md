@@ -10,7 +10,6 @@ originalTitle: "Lionbit vs. Micro:bit: The Ultimate Showdown in Microcontroller 
 link: "https://medium.com/@pasanlaksitha/lionbit-vs-micro-bit-the-ultimate-showdown-in-microcontroller-development-8f5f43e580a7"
 ---
 
-
 ![Micro:bit vs Lionbit - The Ultimate Showdown in Microcontroller Development](/assets/img/2024-05-23-LionbitvsMicrobitTheUltimateShowdowninMicrocontrollerDevelopment_0.png)
 
 마이크로컨트롤러 개발 플랫폼의 끊임없는 발전 세계에서, 올바른 보드를 선택하는 것이 모든 차이를 만들 수 있습니다. 오늘은 두 가지 인기 있는 대립후보, Micro:bit과 Lionbit을 자세히 비교해 보겠습니다. 초보자든 경험이 풍부한 개발자든, 이러한 차이를 이해하면 정보를 기반으로 한 결정을 내릴 수 있습니다. 스포일러 주의: 두 보드 중 한 가지는 돈을 더 가치 있게 쓸 수 있습니다.
@@ -19,8 +18,18 @@ link: "https://medium.com/@pasanlaksitha/lionbit-vs-micro-bit-the-ultimate-showd
 
 BBC에서 개발한 Micro:bit은 교육 부문에서 큰 반향을 일으키고 있습니다. 프로그래밍과 전자공학의 세계로의 접근 가능한 입구로 디자인되었으며 특히 아이들과 초보자를 위해 고안되었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이크로비트의 주요 기능:
 
@@ -42,7 +51,18 @@ BBC에서 개발한 Micro:bit은 교육 부문에서 큰 반향을 일으키고 
 
 # 라이언비트: 다재다능한 파워헤우스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스리랑카에서 만들어진 Lionbit은 더 발전된 마이크로컨트롤러 개발 보드입니다. 종종 ESP8266 또는 ESP32 플랫폼과 비교되며, 더 뛰어난 처리 능력과 연결 옵션을 필요로 하는 더 정교한 프로젝트에 적합합니다.
 
@@ -52,7 +72,18 @@ Lionbit 웹사이트
 
 - CPU 및 메모리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Xtensa(r) 32비트 LX7 듀얼 코어 프로세서는 최대 240 MHz로 동작하며, 384 KB ROM, 512 KB SRAM, 외부 Quad SPI/Octal SPI/QPI/OPI 1GB 플래시 및 4 GB RAM을 지원합니다.
 
@@ -62,7 +93,18 @@ AI 가속
 
 주변장치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 45개의 프로그램 가능한 GPIO, SPI, I2S, I2C, PWM, RMT, ADC, DAC 및 UART, SD/MMC 호스트 및 TWAI, 14개의 전용터치 GPIO, USB OTG v1.1 기능을 지원합니다.
 
@@ -72,7 +114,18 @@ AI 가속
 
 연결성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2.4 GHz Wi-Fi와 HT40, 롱 레인지 지원을 하는 BLE 5.0, Wi-Fi 및 BLE Mesh
 
@@ -88,7 +141,18 @@ AI 가속
 - Micro:bit: 초보자 및 교육을 위해 특별히 제작되었습니다.
 - Lionbit: 초보자 및 전문가 모두에게 적합합니다. 더 발전된 사용자 및 강력한 IoT 기능을 찾는 개발자들을 위해 디자인되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로세싱 파워:
 
@@ -111,7 +175,18 @@ AI 가속
 - Micro:bit: MakeCode, Python, Scratch와 같은 사용자 친화적인 플랫폼을 지원합니다.
 - Lionbit: 일반적으로 Arduino IDE, Circuit Python, Lua, Javascript, MicroPython, PlatformIO, 또는 ESP-IDF 및 Lioncode와 같은 환경에서 프로그래밍됩니다. Lioncode는 드래그 앤 드롭 블록 편집기 프로그래밍으로, 이 보드가 초보자부터 전문가까지 사용할 수 있음을 입증합니다. LionCode 방문하기.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론: 어느 보드가 최고일까요?
 

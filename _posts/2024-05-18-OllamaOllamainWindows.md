@@ -3,13 +3,12 @@ title: "윈도우에서의 오마이 , 오마이"
 description: ""
 coverImage: "/assets/img/2024-05-18-OllamaOllamainWindows_0.png"
 date: 2024-05-18 17:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-OllamaOllamainWindows_0.png
 tag: Tech
 originalTitle: "Ollama , Ollama in Windows"
 link: "https://medium.com/@danushidk507/ollama-ollama-in-windows-384899e054e4"
 ---
-
 
 Ollama는 주로 대형 언어 모델 (LLM)과 작업하는 데 사용되는 프레임워크 및 라이브러리를 가리킵니다.
 
@@ -21,7 +20,18 @@ Ollama는 로컬 사용을 위한 오픈 소스 모델을 획득하도록 도와
 
 ![이미지](/assets/img/2024-05-18-OllamaOllamainWindows_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Framework
 
@@ -33,7 +43,18 @@ Ollama은 여러 오픈 소스 LLM을 사용자의 컴퓨터에서 간편하게 
 
 Ollama 프레임워크:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 간단한 설정: Ollama는 복잡한 구성 파일이나 배포의 필요성을 제거합니다. 모델 파일은 모델 가중치, 구성 및 데이터와 같은 필요한 구성 요소를 정의하여 설정 프로세스를 간소화합니다.
 - 사용자 정의: Ollama를 사용하면 LLM 경험을 사용자 정의할 수 있습니다. 배치 크기, 시퀀스 길이 및 빔 검색 설정과 같은 매개변수를 조정하여 모델을 사용자의 특정 요구에 맞게 세밀하게 조정할 수 있습니다.
@@ -49,7 +70,18 @@ Ollama에는 다음과 같은 사전 빌드된 훈련된 언어 모델 라이브
 - Gemma: 매력적인 대화를 위해 설계된 대화형 언어 모델입니다.
 - LLaVA: 채팅 및 설명 사용 사례에 대해 훈련된 견고한 모델입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 라이브러리를 사용하면 미리 훈련된 모델을 쉽게 응용 프로그램에 통합할 수 있어서 처음부터 훈련시킬 필요가 없어 시간과 리소스를 절약할 수 있어요.
 
@@ -60,7 +92,18 @@ Ollama에는 다음과 같은 사전 빌드된 훈련된 언어 모델 라이브
 - 간편한 설치: Ollama은 복잡한 구성을 없애는 미리 정의된 "모델 파일"을 활용하여 설치와 설정을 제공됩니다. 기술적 지식이 제한된 사용자도 쉽게 사용할 수 있어요.
 - 사용자 친화적 API: Ollama은 직관적인 API를 통해 미리 훈련된 모델과 상호 작용하여 개발자가 Python 응용 프로그램에 쉽게 LLMs를 통합할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 확장성:
 
@@ -73,7 +116,18 @@ Ollama에는 다음과 같은 사전 빌드된 훈련된 언어 모델 라이브
 - 로컬 실행: LLM은 완전히 사용자의 장치에서 실행되어 클라우드 배포가 필요 없으며 데이터 개인 정보 보호를 보장합니다.
 - 멀티-GPU 지원: Ollama는 여러 GPU를 활용하여 추론 속도를 높이고 자원 집약적인 작업에서 성능을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오픈소스 및 협업:
 
@@ -85,7 +139,18 @@ Ollama에는 다음과 같은 사전 빌드된 훈련된 언어 모델 라이브
 - 가벼움: Ollama는 효율적으로 작동하여 하드웨어 자원이 제한된 컴퓨터에 적합합니다.
 - 오프라인 기능: 사전 훈련된 모델은 인터넷 연결 없이도 사용할 수 있어 유연성과 접근성을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 윈도우에서의 Ollama:
 
@@ -95,7 +160,18 @@ Ollama가 미리보기로 Windows에 제공되어 이제 새로운 네이티브 
 
 # 하드웨어 가속
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ollama은 NVIDIA GPU 및 AVX 및 AVX2와 같은 현대 CPU 명령어 세트를 사용하여 모델을 가속화합니다. 구성이나 가상화 설정이 필요하지 않습니다!
 
@@ -105,7 +181,18 @@ Ollama은 NVIDIA GPU 및 AVX 및 AVX2와 같은 현대 CPU 명령어 세트를 �
 
 ![image](/assets/img/2024-05-18-OllamaOllamainWindows_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 모델 라이브러리의 전체 액세스
 
@@ -115,8 +202,18 @@ Windows에서 실행할 수 있는 전체 Ollama 모델 라이브러리를 사�
 
 ![이미지2](/assets/img/2024-05-18-OllamaOllamainWindows_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-OllamaOllamainWindows_7.png)
 
@@ -126,8 +223,18 @@ Ollama의 API는 자동으로 백그라운드에서 실행되며 http://localhos
 
 ![이미지](/assets/img/2024-05-18-OllamaOllamainWindows_8.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, PowerShell을 사용하여 Ollama의 API를 호출하는 방법은 다음과 같습니다:
 
@@ -139,7 +246,18 @@ Windows에서 Ollama는 다른 플랫폼과 동일한 OpenAI 호환성을 지원
 
 Windows 미리보기에서 Ollama를 시작하려면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Windows 용 Ollama 다운로드
 - OllamaSetup.exe를 더블 클릭하여 설치 프로그램을 실행하십시오.
@@ -151,7 +269,18 @@ ollama serve:
 
 이 명령은 Ollama 서버를 시작하여 다운로드한 모델을 API를 통해 접근할 수 있게 합니다. 이를 통해 웹 브라우저, 모바일 앱 또는 사용자 지정 스크립트와 같은 다양한 응용 프로그램에서 모델과 상호 작용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한가지 비유를 들어 볼게요. Ollama는 당신의 책(LMMs)을 보관하는 도서관 역할을 합니다. ollama serve를 실행하면 도서관을 열어 다른 사람들이 해당 도서관 시스템(API)을 통해 책에 접근하여 읽을(상호 작용할) 수 있게 됩니다.
 
@@ -161,9 +290,20 @@ ollama run phi:
 
 이 명령어는 특히 "phi" 모델을 다운로드하고 로컬 머신에서 실행하는 데 사용됩니다. "phi"란 Ollama 도서관에 존재하는 사전 학습된 LMM으로, GPT-3와 유사한 기능을 갖추고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-아래에 있는 것이 유사성 확장입니다: 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+아래에 있는 것이 유사성 확장입니다:
 만약 ollama serve가 도서관을 열면, ollama run phi는(이하 phi)이라는 특정 책을 (Ollama)사서로부터 요청하고(다운로드된 모델 필요) 그것을 읽는(모델 실행) 것이 로컬 머신(당신의 컴퓨터) 내에서 일어나는 일 같습니다.
 
 - ollama serve는 미리 다운로드된 모델이 요구됩니다. 특정 모델을 다운로드하려면 ollama pull `model_name`을 사용하세요.
@@ -178,7 +318,18 @@ ollama run phi:
 - ollama info `model_name`: 다운로드된 모델에 대한 정보를 표시합니다.
 - ollama help: 사용 가능한 모든 명령어에 대한 도움말 문서를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델 관리:
 
@@ -189,20 +340,40 @@ ollama run phi:
 - `ollama run model_name`: 로컬에서 다운로드한 모델을 실행합니다.
 - `ollama serve`: Ollama 서버를 시작하여 API를 통해 다운로드한 모델에 액세스할 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추가 명령:
 
 - ollama update: Ollama를 최신 버전으로 업데이트합니다.
 - ollama config: Ollama 구성 설정을 관리합니다.
 
-
 <img src="/assets/img/2024-05-18-OllamaOllamainWindows_10.png" />
-
 
 # Langchain을 통한 Ollama:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from langchain_community.llms import Ollama
@@ -225,7 +396,18 @@ for chunks in llm.stream(query):
     print(chunks)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 확실해요, 여기 하나 있어요:
@@ -242,7 +424,18 @@ Ollama는 bakllava와 llava와 같은 멀티 모달 LLM을 지원합니다.
 
 ollama pull bakllava
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ollama를 업데이트하여 멀티 모달을 지원하는 최신 버전을 사용해보세요.
 
@@ -294,13 +487,24 @@ plt_img_base64(image_b64)
 
 <img src="/assets/img/2024-05-18-OllamaOllamainWindows_11.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-llm_with_image_context = bakllava.bind(images=[image_b64])
-llm_with_image_context.invoke("달러 기반 총 유지율은 얼마입니까:")
+llm_with_image_context = bakllava.bind((images = [image_b64]));
+llm_with_image_context.invoke("달러 기반 총 유지율은 얼마입니까:");
 ```
 
 ```js
-'90%'
+"90%";
 ```

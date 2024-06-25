@@ -3,13 +3,12 @@ title: "아마존, 마이크로소프트, 그리고 구글에서 일한 경험 �
 description: ""
 coverImage: "/assets/img/2024-06-22-ImproudofjobhoppingbetweenAmazonMicrosoftandGoogle_0.png"
 date: 2024-06-22 22:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-ImproudofjobhoppingbetweenAmazonMicrosoftandGoogle_0.png
 tag: Tech
 originalTitle: "I’m proud of job hopping between Amazon, Microsoft, and Google"
 link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-microsoft-and-google-d7b2ce8b8f8a"
 ---
-
 
 회사 충성심은 사라졌어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 저는 처음으로 소프트웨어 엔지니어가 되었던 것은 2020년, 바로 팬데믹이 시작된 때였어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2019년에 NYU를 졸업한 후 소프트웨어 엔지니어링 역할을 찾느라 절망했습니다. 컴퓨터 과학을 전공했음에도 불구하고 아무도 제게 기회를 주기를 원치 않았죠.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 # 직장을 옮기면 급여가 높아진다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저의 이직별 연봉을 살펴보겠습니다.
 
@@ -37,7 +58,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 - 2020년: Amazon에서 $150,000/년
 - 2021년: Microsoft에서 $185,000/년
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [2022] Google: 300,000 / year
 
@@ -47,7 +79,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 # EY 에서 Amazon으로.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-ImproudofjobhoppingbetweenAmazonMicrosoftandGoogle_1.png" />
 
@@ -57,7 +100,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 그 무료 시간을 활용해 'Cracking the Coding Interview'와 'Elements of Programming Interviews'를 공부하면서 돈을 받았죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번 준비가 되면, 아마존에 지원했고 그들은 온라인 평가를 제공했어요. 1달 후에 30분 직접 면접에 초대받았어요.
 
@@ -67,7 +121,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 # 아마존에서 마이크로소프트로.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-22-ImproudofjobhoppingbetweenAmazonMicrosoftandGoogle_2.png)
 
@@ -77,7 +142,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 고객에 대한 집착을 가지기 어려울 때도 있습니다. 저는 아마존에서 고객과 만난 적이 없었고, 인도에서의 결제를 위한 보안 프로젝트에 참여했으나 개인적으로 연결을 느낀 적이 없었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 주에 한 번 정도 코드를 변경한 것만큼 기술 회사에만 있다고 해서 실제로 소프트웨어 엔지니어로서의 경력에 도움이 되는 것은 아니라는 것을 깨달았어요.
 
@@ -87,7 +163,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 # Microsoft to Google
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-22-ImproudofjobhoppingbetweenAmazonMicrosoftandGoogle_3.png)
 
@@ -97,7 +184,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 관련된 중요한 것들만 나열하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 외에도, 마이크로소프트로 이직한 것은 회사들이 직장을 자주 옮기는 사람들을 신경 쓰지 않는다는 것을 깨달았어요. 여기에는 이러한 이유가 있습니다.
 
@@ -109,7 +207,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 나는 마이크로소프트에서 만족했고, 그곳은 정말 좋은 휴식과 조직에 속하게 해 주는 장소였어요. 하지만 언제든지 더 나은 것이 눈앞에 있을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 구글에서 실업자로
 
@@ -119,7 +228,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 연간 $185,000을 받더라도 무료 음식, 마사지, 커피 바가 없는 것을 눈치챌 것입니다. 이는 거의 내포된 기술 사회적 계층 구조와 다름없고, 이를 눈치채면 다시 뛰어넘을 정도로 당신을 괴롭힐 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그때 구글이 나에게 링크드인으로 메시지를 보내서 지원을 요청했어.
 
@@ -129,7 +249,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 그때 나는 자신과 회사 인사담당자를 위해 이직하는 것이 좋다는 것을 깨달았어. 그냥 매니저만 조금 짜증낼 뿐이야.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 구글이 2년의 경험으로 최대 수준의 SDE II 직책을 연봉 300,000달러로 제공하고 무료 식사와 혜택까지 준다면, 조금 짜증을 내어도 그 매니저에게 헌신하는 게 어렵네요.
 
@@ -139,7 +270,18 @@ link: "https://medium.com/gitconnected/im-proud-of-job-hopping-between-amazon-mi
 
 # 실직
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Google에서 일하다가 $150,000의 큰 저축금액을 모았어. 한 해 동안 거의 모든 비용을 감당하는 데 충분하겠지.
 
@@ -149,7 +291,18 @@ Google에서 일하다가 $150,000의 큰 저축금액을 모았어. 한 해 동
 
 # 떠나기 전에
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 클랩 버튼을 50개 이상으로 깰 수 있나요?
 - 제 소식을 받으시려면 SquareNote에서 제 프로필을 구독해주세요. 함께 엔지니어링 조언을 받아보세요!

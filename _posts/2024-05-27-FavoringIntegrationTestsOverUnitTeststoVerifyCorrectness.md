@@ -10,7 +10,6 @@ originalTitle: "Favoring Integration Tests Over Unit Tests to Verify Correctness
 link: "https://medium.com/mjukvare/favoring-integration-tests-over-unit-tests-to-verify-correctness-187a3af55074"
 ---
 
-
 ![unit test image](/assets/img/2024-05-27-FavoringIntegrationTestsOverUnitTeststoVerifyCorrectness_0.png)
 
 저는 전문적인 코딩을 시작한 이후로 단위 테스트를 작성해 왔어요. 그 속에는 특별한 "영감"이 있죠. 다른 개발자가 여러분의 코드를 사용해야 한다는 점을 생각하게 만들어요.
@@ -19,8 +18,18 @@ link: "https://medium.com/mjukvare/favoring-integration-tests-over-unit-tests-to
 
 단위 테스트를 작성할 때마다, 정확성을 검증할 뿐만 아니라 클래스의 작업 편의성도 평가하려고 해요. 좋은 코드를 작성하는 중요한 측면 중 하나는 함께 작업하기 즐거운 코드를 작성하는 것이라고 생각해요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 전반적인 시스템의 정확성을 검증하는 것은 단위 테스트가 갖고 있지 않은 특징입니다.
 
@@ -30,7 +39,18 @@ link: "https://medium.com/mjukvare/favoring-integration-tests-over-unit-tests-to
 
 매우 제어된 상황에서 고립된 상태로 작동하는 것을 본다는 것은 여러 협업 객체, 다양한 사용 사례 등이 포함된 더 큰 환경에서 작동하는 것을 보는 것과는 전혀 다릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의존성을 경멸하는 것은 재앙의 길이 될 수 있습니다. 그리고 내 경험상, 데이터베이스와의 상호 작용을 모의하는 경우에는 특히 그렇습니다.
 
@@ -57,7 +77,18 @@ public void SaveNewUser()
 
 이것은 투명하고 화이트박스 테스트입니다. UserManager는 실제 저장을 협력자 "IUserRepository"에 위임하고 있으며, "UserManager"가 "SaveUser" 메서드를 호출하는지 확인합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 아무 것도 테스트하지 않는 종류의 단위 테스트입니다. 아무 것도 확인하지 않으며 확신을 줄 수도 없습니다.
 
@@ -67,7 +98,18 @@ public void SaveNewUser()
 
 만약 당신의 코드베이스에 제가 방금 보여준 것과 유사한 테스트가 있다면, 그것은 당신에게 큰 문제가 있을 수 있다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 "사용자" 테이블이 이렇게 생겼다고 가정해 봅시다.
 
@@ -89,7 +131,18 @@ CREATE TABLE "Users" (
 var user = new User(); // 저장되지 않아야 함
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 분명히 클래스와 협력자 간의 상호 작용이 매우 적은 간단한 예제입니다. 그러나 단위 테스트에 무작정 의존하는 함정을 보여줍니다.
 
@@ -99,7 +152,18 @@ var user = new User(); // 저장되지 않아야 함
 
 이제 이 전환된 테스트와 이 통합 테스트를 대조해 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```csharp
 public class UserManagerShould(DatabaseFixture fixture) : IClassFixture<DatabaseFixture>
@@ -140,9 +204,18 @@ public class UserManagerShould(DatabaseFixture fixture) : IClassFixture<Database
 
 실제로 잘못된 상황에서 오류가 발생하는 이러한 테스트는 사용자를 저장하기 전에 추가적인 확인 절차를 수행해야 함을 알려줍니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 실패는 우리에게 대응을 촉발시킵니다. 이 경우 UserManager의 SaveUser(user) 메서드에 가드 절을 추가하여 사용자가 유효한 상태에 있는지 확인하십시오.
 
@@ -152,7 +225,18 @@ public class UserManagerShould(DatabaseFixture fixture) : IClassFixture<Database
 
 🔔 이와 같은 기사를 더 읽고 싶으신가요? 여기에서 등록하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시스템 내 중요한 클래스 상호작용을 모의하는 것은 클래스 간 통신 및 데이터 교환에서 발생하는 통합 문제를 알리지 못하게 할 수 있습니다. 실제 데이터베이스를 사용하는 데 조금 노력을 기울이면 장기적으로 이득을 볼 수 있습니다.
 
@@ -162,7 +246,17 @@ public class UserManagerShould(DatabaseFixture fixture) : IClassFixture<Database
 
 뉴스레터에 등록하여 유사한 기사에 대한 알림을 받고 YouTube 채널인 @Nicklas Millard를 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 린크드인에 연결하지 않는 것을 잊지 마세요.
-

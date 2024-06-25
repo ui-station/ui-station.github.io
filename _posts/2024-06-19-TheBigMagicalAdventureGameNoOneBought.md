@@ -3,13 +3,12 @@ title: "아무도 사지 않은 큰 마법 모험 게임"
 description: ""
 coverImage: "/assets/img/2024-06-19-TheBigMagicalAdventureGameNoOneBought_0.png"
 date: 2024-06-19 11:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-TheBigMagicalAdventureGameNoOneBought_0.png
 tag: Tech
 originalTitle: "The Big Magical Adventure Game No One Bought"
 link: "https://medium.com/@xander51/the-big-magical-adventure-game-no-one-bought-8a28a3433fe3"
 ---
-
 
 ![이미지](/assets/img/2024-06-19-TheBigMagicalAdventureGameNoOneBought_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@xander51/the-big-magical-adventure-game-no-one-bought
 
 작년에 이전의 고전적인 마법이 가미된 액션 어드벤처 게임들에 대한 환상적인 현대식 재해석과 똑같이 플레이되는 게임이 출시되었는데, 아무도 구입하지 않았어요. 이는 일반적인 온라인 게임 기사의 과장이 아니에요. 'Immortals of Aveum'이라는 제목인데, 이 게임은 게시자 EA의 기대치를 크게 못 가르쳤기 때문에 이를 개발한 스튜디오는 완전히 사라졌어요. 게이머들 중 오랫동안 게임을 따라오고 있다면 EA라는 이름을 보고 고양이처럼 쥐를 쳐다볼 수도 있겠지만, 이는 그들의 스튜디오에서 내부 제작한 것이 아니었어요. 오히려 그들이 출판 및 마케팅에 참여한 중소 규모의 팀이 만든 게임이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 EA는 이 게임이 잘 될 것이라고 믿었어야 했다고 볼 수 있어요. 일단 빠르게 한 눈에 살펴보면 같은 생각이 들 수 있어요. 이 게임은 소니가 PlayStation에서 다양한 인기 프랜차이즈를 만들기 위해 끈질긴 노력을 기울인 “이야기 중심의 싱글 플레이 액션” 공식을 따라갑니다. 멋진 비쥬얼을 가지고 있고, Unreal Engine 5에서 운영되는 최초의 출시 게임 중 하나에요. 이 게임의 판타지 설정은 전통적인 군사 설정보다 넓은 관객층에게 더 쉽고 매력적일 수 있도록 만들어졌어요.
 
@@ -27,7 +37,18 @@ EA는 이 게임이 잘 될 것이라고 믿었어야 했다고 볼 수 있어�
 
 이제까지 쌓인 용어와 세계 설정의 악몽 속에 있는 이야기는 특별히 흥미로운 것도 새로운 것도 아니에요. Aveum은 악한 제국에 의해 파괴된 청년을 따르는데, 그러나 그는 사실 특별한 존재이며, 다른 특수 마법사들에 의해 영입되어 일행 중 한 명이 되어 세상을 구하기 위해 노력하는 이야기를 따라갑니다. 그러나 어떤 상황들은 반드시 그러한 것이 아닌 것이 팩트인 것이 연계됩니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네, 지금까지 지난 40년 동안 나온 모든 저급한 과학 소설이나 판타지 이야기를 거의 다 설명한 것 같네요. Immortals는 캐릭터 집합으로 일부 포인트를 되찾으려고 노력하고 있습니다. 칭찬할 만한 점은 많은 캐릭터들이 잘 연기되었다는 것입니다. 그러나 현대 판타지 제목에서 고정 캐릭터를 선택하고, 성별 맞춤화나 의미 있는 코스튬 옵션 없이 가는 것은 좀 이상한 선택이었다고 생각해요. 판타지 게이머들은 이야기의 세계에 몰입하고 싶어하는 경향이 있거나 최소한 그 역할을 개인적으로 수행하는 듯한 느낌을 받고 싶어합니다.
 
@@ -37,7 +58,18 @@ Aveum의 주인공 "Jak" (진짜로)은 다른 게임의 영웅들만큼 매력�
 
 시작이 절망적인 악몽이라도 지나면, 게임이 정말 멋진 것이 됩니다. 현재 플레이할 수 있는 가장 날카로우면서 재미있는 1인칭 게임 중 하나에요. Doom Eternal을 좋아하고 마법사로서 그것이 어떻게 될지 보고 싶다면, 이 게임은 그 아이디어를 훌륭히 구현한 것 같습니다. 여러 공격 주문을 결합할 수 있을 때 놀랄 만한 공격 주문 다양성에 금세 압도되고, 세계를 탐험할 충분한 공간이 있어서 그것이 사실 상적인 적의 복도 순서로 느껴지지 않는 것 같아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현대 게임 산업의 가장 나쁜 관행 중 하나를 촉진하는 것을 싫어하지만, 이것을 이야기해 보겠습니다: 이미 있는 IP와 연결되어야 했다고 생각합니다. 필 스펜서는 한 번 무대에서 Hexen 티셔츠를 입고 간 회의에서 유명해지기도 했습니다. 약간만 조정하면 새로운 Hexen 게임이었을 수도 있었습니다. 그런 게임 세계는 더 쉽게 이해할 수 있지만, 동시에 레트로한 신뢰성이 있어서 게임을 선호하는 플레이어들을 끌어들일 수 있었을 것입니다.
 
@@ -47,8 +79,18 @@ AAA 게임 공간의 계속되는 쇠퇴에 기여하려는 것이 아닙니다;
 
 Aveum에 대한 최종적인 큰 문제는 60FPS 게임이 되기 위한 이상한 결정이라고 생각합니다. 행동 게임에 있어서는 고귀한 목표지만, Unreal Engine 5는 여전히 상대적으로 새로운 기술입니다. 게임은 엔진의 최첨단 시각적 기능과 그 수준의 성능을 조합하기에는 충분한 역동력을 갖춘 콘솔을 대상으로 했습니다. Aveum의 모든 콘솔 버전은 매우 부드럽게 보이며, 특히 Xbox Series S는 완전히 고대 "표준 해상도" 해상도로 감소했습니다. 튼튼한 PC를 가지고 있는 경우 더 나은 성과를 거둘 수 있지만, 튼튼한 PC가 있다면 이미 더 인지도 높은 게임을 플레이하고 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![게임 이미지](/assets/img/2024-06-19-TheBigMagicalAdventureGameNoOneBought_3.png)
 
@@ -58,7 +100,17 @@ Aveum의 불멸자들은 왜 대규모 게임 회사들이 결코 기회를 잡�
 
 Aveum과 같은 새로운 세계를 바탕으로 한 게임들이 더 많이 존재할 수 있는 세상에 살고 싶지만, 그들은 흥미로워야 하고, 소니 게임을 좋아한 사람들 이외의 대상을 실제로 겨냥해야 합니다. 불멸자들은 그들의 게임 메카닉을 매우 잘 구현했지만, 수백만 가지를 추구하고 다음 대형 미디어 프랜차이즈가 되려고 하다가 갇혔습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임을 할 가치가 있는 편이에요. 비용을 과도하게 지불할 필요가 없고, 첫 시간을 견디는 데 문제가 없다면요. 제가 권하고 싶다는 건 아니지만 말이죠. 내부 창의 회의에서 심지어 "Jak"이라는 이름이 통과될 수 있다는 게 믿기지가 않아요. 게다가 어째서 Jak and Daxter를 발견하지 못한 법률 부서를 통과할 수 있었는지요.

@@ -3,13 +3,12 @@ title: "Basic 우선 UIKit Constraint와 Auto Layout"
 description: ""
 coverImage: "/assets/img/2024-05-18-BacktoBasicsUIKitConstraintandAutoLayout_0.png"
 date: 2024-05-18 15:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-BacktoBasicsUIKitConstraintandAutoLayout_0.png
 tag: Tech
 originalTitle: "Back to Basics: UIKit Constraint and Auto Layout"
 link: "https://medium.com/@alvinmatthew/back-to-basics-uikit-constraint-and-auto-layout-2141efb89f43"
 ---
-
 
 <img src="/assets/img/2024-05-18-BacktoBasicsUIKitConstraintandAutoLayout_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@alvinmatthew/back-to-basics-uikit-constraint-and-auto
 
 <img src="/assets/img/2024-05-18-BacktoBasicsUIKitConstraintandAutoLayout_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 내재 콘텐츠 크기 이해
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@alvinmatthew/back-to-basics-uikit-constraint-and-auto
 
 내재 콘텐츠 크기를 가진 뷰들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - UILabel은 텍스트에 따라 결정되는 고유 크기를 제공하여 동적 높이 조정에 적합합니다.
 - UITextView도 텍스트에 따라 결정되는 고유 크기를 가지며, 콘텐츠에 기반한 동적 높이 조정이 가능합니다. 스크롤링을 비활성화해야 합니다. 이렇게 하면 구성 요소가 불필요한 스크롤링 없이 콘텐츠에 맞게 적응할 수 있습니다.
@@ -43,7 +64,18 @@ link: "https://medium.com/@alvinmatthew/back-to-basics-uikit-constraint-and-auto
 
 # 제약 조건과 자동 레이아웃
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세부 내용에 들어가기 전에 콘텐츠 허깅, 압축, 그리고 제약의 기본 개념을 이해하는 것이 중요합니다.
 
@@ -54,7 +86,18 @@ link: "https://medium.com/@alvinmatthew/back-to-basics-uikit-constraint-and-auto
 - 높은 우선순위: 높은 콘텐츠 허깅 우선순위는 요소가 내재된 콘텐츠 크기에 머무르거나 가까이 유지하길 선호하며 확장에 저항합니다.
 - 사용 사례: 뷰가 컴팩트한 크기를 유지하려고 하는데 크기를 확장해야 하는 강력한 이유가 없을 때 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내용 압축 저항
 
@@ -65,7 +108,18 @@ link: "https://medium.com/@alvinmatthew/back-to-basics-uikit-constraint-and-auto
 
 ![이미지](/assets/img/2024-05-18-BacktoBasicsUIKitConstraintandAutoLayout_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본 제약 사항
 
@@ -77,7 +131,18 @@ link: "https://medium.com/@alvinmatthew/back-to-basics-uikit-constraint-and-auto
 
 요약하자면, 내용 흡수 및 내용 압축 저항 우선 순위는 UI 요소의 본질적인 내용 크기에 기반하여 자동 레이아웃이 어떻게 크기를 처리해야 하는지를 안내하는 중요한 요소입니다. 반면에 제약 사항은 뷰 내의 이러한 요소의 레이아웃을 정의하는 규칙과 관계입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전에 제공된 분해에 따라 내재적 크기를 갖는 구성 요소를 우선으로 하는 것이 중요합니다. 이를 달성하기 위해 몇 가지 효과적인 제약 조건과 자동 레이아웃 트릭에 대해 알아봅시다.
 
@@ -93,19 +158,41 @@ titleLabel.setContentHuggingPriority(.required, for: .vertical)
 titleLabel.setContentCompressionResistancePriority(.required, for: .vertical)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. UITextView 설정
 
 - isScrollEnabled를 false로 설정하여 UITextView가 콘텐츠에 따라 크기를 조정하지 못하도록 하고, 본질적인 크기를 효율적으로 활용합니다.
 
 ```js
-contentTextView.isScrollEnabled = false
+contentTextView.isScrollEnabled = false;
 ```
 
 3. UIImageView 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - UIImageView에는 콘텐츠에 기반한 본질적인 내용 크기가 없기 때문에, 이미지 뷰의 크기를 정의하기 위해 폭과 높이 제약 조건을 명시적으로 설정해야 합니다.
 
@@ -121,7 +208,18 @@ NSLayoutConstraint.activate([
 - 티커의 해부학을 다시 살펴보면, 두 개의 스택 뷰가 티커 구성 요소를 캡슐화하고 있음을 알 수 있습니다. 내부 수직 스택은 titleLabel과 contentTextView을 감싸고, 이를 다시 iconImageView와 함께 수평 스택 내에 포함시킵니다.
 - UIStackView는 배치된 하위 뷰인 titleLabel 및 contentTextView의 본질적인 콘텐츠 크기에 기반하여 크기를 조정합니다. 이 동적 조정은 구성 요소의 본질적인 크기와 스택 뷰 내에서 설정된 정렬 및 분배 옵션에 의해 영향을 받습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 let labelStackView = UIStackView()
@@ -145,7 +243,18 @@ mainStackView.spacing = 8
 
 5. mainStackView 제약 조건 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이어서 mainStackView의 제약 조건을 설정해주십시오. 이를 위해 mainStackView의 상단, 좌측 및 우측 가장자리를 해당 UIView 컨테이너에 맞춥니다.
 - 이러한 제약 조건은 스택 뷰가 전체 너비에 걸쳐 있음을 보장하지만, 하단 제약 조건을 포함하는 것이 중요합니다. 이 추가적인 제약 조건은 내용으로부터 나오는 내재 높이와 함께, mainStackView의 수직 위치를 정확히 정의합니다.
@@ -167,7 +276,18 @@ NSLayoutConstraint.activate([
 
 이 다섯 단계를 완료하면, 구성 요소의 내재 크기에 따라 적응성 있게 조정 가능한 동적 높이를 가진 티커 콘텐츠 레이아웃을 성공적으로 생성하였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # UIScrollView vs UICollectionView
 
@@ -177,7 +297,18 @@ NSLayoutConstraint.activate([
 
 UICollectionView의 경우, 게으른 로딩 동작 때문에 콘텐츠 크기를 동적으로 계산하는 것이 최적의 접근 방식입니다. 이는 모든 콘텐츠를 동시에 로드할 수 없으므로 최대 높이를 식별하기가 어려워집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UIScrollView와 달리, UIScrollView는 콘텐츠 뷰 내의 모든 내용을 미리로드하여 콘텐츠의 총 높이를 기준으로 contentSize를 쉽게 결정할 수 있습니다. 이 기능을 통해 UIScrollView의 전체 높이로 가장 큰 높이의 콘텐츠를 식별하고 적용할 수 있습니다.
 
@@ -185,7 +316,18 @@ UICollectionView와 UIScrollView 사이의 고려 사항을 요약한 비교 테
 
 ![표](/assets/img/2024-05-18-BacktoBasicsUIKitConstraintandAutoLayout_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주어진 고려사항을 고려할 때, UIScrollView가 모든 요구사항을 충족시키는 적합한 선택인 것으로 판명되었습니다. 따라서 UIScrollView를 선택하였습니다. 이제 구현 세부사항을 살펴보겠습니다.
 
@@ -208,7 +350,18 @@ public final class TickerView: UIView {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 수평 UIStackView 만들기
 
@@ -228,7 +381,18 @@ for contentView in contentViews {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. UIScrollView에 제약 조건 설정
 
@@ -247,7 +411,18 @@ NSLayoutConstraint.activate([
 
 scrollView.heightAnchor.constraint(equalTo: contentStackView.heightAnchor)의 자세한 설명
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 코드 라인에서 scrollView의 높이가 contentStackView의 높이와 동일하도록 제약 조건이 설정됐네요. 이 제약 조건은 scrollView가 contentStackView 내의 콘텐츠에 대해 어떻게 동작하고 적응하는지에 상당한 영향을 미칩니다.
 
@@ -260,6 +435,17 @@ scrollView.heightAnchor.constraint(equalTo: contentStackView.heightAnchor)의 �
 
 요약하면 이러한 높이 제약을 설정함으로써 scrollView는 contentStackView 내의 콘텐츠 뷰의 다양한 높이에 따라 자신의 높이를 동적으로 조절하는 유연한 컨테이너로 변합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상기 설정을 통해 UIScrollView 내에서 다수의 콘텐츠를 수용 가능한 구조를 성공적으로 구현했습니다. 수평 스택 뷰를 활용하여 각 콘텐츠 뷰는 부모 뷰의 너비에 맞게 동적으로 조정되어 다양한 콘텐츠 시나리오를 처리하는 데 효과적이고 적응 가능한 솔루션을 제공합니다.

@@ -3,13 +3,12 @@ title: "성능 비교 Ruby 대 Python 대 Go  문자 발생 횟수 세기"
 description: ""
 coverImage: "/assets/img/2024-05-20-PerformanceComparisonRubyvsPythonvsGoCountingCharacterOccurrences_0.png"
 date: 2024-05-20 15:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-PerformanceComparisonRubyvsPythonvsGoCountingCharacterOccurrences_0.png
 tag: Tech
 originalTitle: "Performance Comparison: Ruby vs. Python vs. Go — Counting Character Occurrences"
 link: "https://medium.com/@vishalsadriya1224/performance-comparison-ruby-vs-python-vs-go-counting-character-occurrences-e824b5918106"
 ---
-
 
 <img src="/assets/img/2024-05-20-PerformanceComparisonRubyvsPythonvsGoCountingCharacterOccurrences_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@vishalsadriya1224/performance-comparison-ruby-vs-pyth
 
 이 성능 탐구에서는 간단한 알고리즘을 세 가지 인기 프로그래밍 언어인 Ruby, Python 및 Go에서 실행 시간과 메모리 사용량에 대해 탐구합니다. 작업은 문자열에서 문자 발생 횟수를 계산하고 한 문자열을 다른 문자열로 변환하는 데 필요한 최소 단계를 계산하는 것을 포함합니다. 각 언어로 프로그램을 작성하는 것을 넘어, 이 분석은 Ruby, Python 및 Go가 도전 과제를 어떻게 처리하는지에 대해 밝혀내어, 실행 시 동작 및 메모리 효율성에 대한 통찰을 제공합니다. 이 언어들의 동작을 보다 깊게 이해하기 위해 계속 주목해 주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루비 구현:
 
@@ -47,17 +57,28 @@ class Solution:
         count = 0
         for c in s:
             d[c] = 1 if not d.get(c) else d[c] + 1
-        
+
         for c in t:
             if d.get(c):
                 d[c] -= 1
             else:
                 count += 1
-        
+
         return count
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Go 구현:
 
@@ -84,15 +105,24 @@ func minSteps(s string, t string) int {
 
 결과:
 
+| 언어   | 실행 시간 (밀리초) | 메모리 사용량 (메가바이트) |
+| ------ | ------------------ | -------------------------- |
+| Ruby   | 504                | 218.2                      |
+| Python | 164                | 17.9                       |
+| Go     | 58                 | 6.6                        |
 
-| 언어     | 실행 시간 (밀리초) | 메모리 사용량 (메가바이트) |
-|----------|------------------|--------------------------|
-| Ruby     | 504              | 218.2                    |
-| Python   | 164              | 17.9                     |
-| Go       | 58               | 6.6                      |
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 관찰 및 설명:
 
@@ -104,7 +134,18 @@ func minSteps(s string, t string) int {
 - 파이썬: 파이썬은 루비보다 더 좋은 런타임 성능을 갖지만 Go에는 미치지 못합니다.
 - Go: Go는 정적 형식의 컴파일 언어로, 강력한 성능 특성을 갖추어 가장 빠른 런타임을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 메모리 사용량:
 
@@ -116,7 +157,18 @@ func minSteps(s string, t string) int {
 - Ruby와 Python: 동적 타입 및 고수준 추상화는 유연성에 기여하지만 성능에 영향을 줄 수 있습니다.
 - Go: 정적 타입 및 컴파일된 Go는 간결함과 성능을 강조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. Garbage Collection:
 
@@ -128,7 +180,18 @@ func minSteps(s string, t string) int {
 - 루비와 파이썬: 인터프리터 언어는 런타임 환경에 의존하여 오버헤드가 발생할 수 있습니다.
 - Go: 네이티브 이진 파일이 컴파일되어 인터프리터를 필요로 하지 않고 빠른 실행이 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론:
 

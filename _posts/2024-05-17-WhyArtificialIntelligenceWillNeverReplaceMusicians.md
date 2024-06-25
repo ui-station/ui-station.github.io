@@ -3,13 +3,12 @@ title: "왜 인공지능이 음악가를 대체할 수 없을까"
 description: ""
 coverImage: "/assets/img/2024-05-17-WhyArtificialIntelligenceWillNeverReplaceMusicians_0.png"
 date: 2024-05-17 19:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-WhyArtificialIntelligenceWillNeverReplaceMusicians_0.png
 tag: Tech
 originalTitle: "Why Artificial Intelligence Will Never Replace Musicians"
 link: "https://medium.com/@musettedc/why-artificial-intelligence-will-never-replace-musicians-a03600b0310f"
 ---
-
 
 <img src="/assets/img/2024-05-17-WhyArtificialIntelligenceWillNeverReplaceMusicians_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@musettedc/why-artificial-intelligence-will-never-repl
 
 <img src="/assets/img/2024-05-17-WhyArtificialIntelligenceWillNeverReplaceMusicians_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI를 창의적 예술에 활용하는 데의 문제는 이러한 시스템이 출력물이 아닌 과정에 기반을 둔 훈련을 받기 때문입니다. AI 음악 생성기 Soundful에 따르면 "딥 러닝은 기존 음악의 대규모 데이터 세트에서 인공 음악 생성기를 훈련시키는 것을 포함합니다... 신경망은 음악을 만들 때 우리 뇌가 작동하는 방식을 모방합니다."
 
@@ -29,7 +39,18 @@ AI를 창의적 예술에 활용하는 데의 문제는 이러한 시스템이 �
 
 하지만 음악에서 AI를 완전히 배제하는 것은 아닙니다. 버클리 음악 대학과 건강 신경학자 사마타 샤르마 박사와 데이비드 실버스와이그 박사가 2018년 발표한 논문에 따르면 음악이 뇌에 미치는 치료효과로 인해 머신 러닝이 언젠가 만성 통증, 우울증 및 파킨슨병과 같은 기능 장애를 치료하기 위해 맞춤형으로 사용될 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것은 예술인가요?
 
@@ -39,7 +60,18 @@ AI를 창의적 예술에 활용하는 데의 문제는 이러한 시스템이 �
 
 또한, 돈을 탐하는 MBA 기술 분야의 사람들이 인정하기 꺼려하는 사활적 사실이 있습니다: 위대한 예술은 규칙을 깨는 것입니다. 그 규칙을 깨려면 그 규칙을 알아야 하며, 그 규칙을 깰 때와 어디에서 깰지를 알아야 합니다. 그들이 체육관에서 $250 에어팟으로 터는 Wu-Tang과 Avicii의 노래들? 그들은 규칙을 깼습니다. RZA의 프로덕션 기법은 이후 10년간 랩에 영향을 미쳤고, Avicii는 일렉트로니카와 멜로디, 소울, 펑크, 블루스, 국가를 전통적인 노래 형식으로 결합한 것을 선도했습니다. 심지어 그라임스도- 그녀는 항상 음악을 만들기 위해 소프트웨어를 사용해 왔지만- 표준 일렉트로팝 루트에서 벗어난 점으로 악명을 얻었습니다; 2019년의 “Delete Forever”에서 그녀는 힙합 비트 위에 여유로운 어쿠스틱 기타와 신스를 겹쳐 넣고, 벤조와 바이올린의 슬픈 소용돌이가 서서히 사라지게 합니다. AI가 지금 이것을 할 수 있을까요? 전혀 아닙니다. 앞으로 AI가 할 수 있을까요? 그것도 의심스럽군요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘 LinkedIn에서 AI 애호가와 음악 생성기인 Loudly와 Soundful과 같은 음악 생성기의 긍정적인 점에 대해 토론했어요. 그리고 그분 말대로 좋은 점이 많다는 걸 인정해야겠죠. 이런 도구들은 창의적인 과정을 민주화시켜줘요. 스튜디오나 악기, 심지어 음악에 대한 배경지식 조차 없어도, 인터넷만 연결되어 있다면 음악을 만들 수 있어요. 이런 도구들은 작곡가의 창작 고배를 극복하거나 출발점을 제공해 줄 수 있답니다. 학생들이 노래의 다른 부분들을 학습하도록 도울 수도 있어요 - 리듬, 멜로디, 조화, 가사 등. 즉, 이 도구들은 취미로 즐기는 사람들, 아마추어, 초보자들에게 딱이에요.
 
@@ -47,6 +79,17 @@ AI를 창의적 예술에 활용하는 데의 문제는 이러한 시스템이 �
 
 하지만 Grimes의 제안을 받아들이고 싶다면, AI를 활용해볼 수 있어요. 장르, 템포, 지속 시간, 키, 악기를 선택하여 생성기에 입력해보세요. ChatGPT에게 일론 머스크나 기술파시즘에 대한 몇 줄의 울림 있는 가사를 요청하고 이를 그라임스의 고음 소리를 모방할 수 있는 소프트웨어를 통해 실행시켜보세요. 몇 개의 제품을 시험해본 결과 그들의 한계가 그 정도인 것 같아요 (비록 일부 제품이 다른 것보다 나을 수 있어요; Loudly는 “92년식 Ford Crown Victoria의 마모된 브레이크 패드와 같은 소음”이라고만 설명할 수 있는 30초 짜리 혼돈을 소환해냈어요.) 그 다음에는 가사와 멜로디를 결합하거나 전통적인 악절-브릿지-코러스 형식으로 작곡을 구성하는 코드를 작성해볼 수 있어요. 원한다면 이를 천 번 이상 반복해도 괜찮아요, 그때마다 다른, 하지만 똑같이 단조로운 4코드 팝송을 3분 35초에 만들어낼 수 있어요. 이건 그라임스가 최근 Coachella에서 치명적이었던 공연처럼 들릴 거에요, 하지만 그녀를 유명하게 한 음악처럼 들리지는 않을 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 거의 열 년 동안 주요한 포춘 500 기술 기업에서 일한 매우 현명한 친구로부터 받은 조언을 전해드리고 싶어요. 얼마 전에 "AI는 자신의 영역에 머물러야 한다"고 현명한 충고를 받았거든요. 의료, 교통, 날씨 등 대량의 데이터 세트에 대한 수요, 패턴 인식, 예측이 필요한 분야에서 큰 약속을 지니고 있다고 의심할 여지가 없어요. 그러나 우리는 지금까지 주로 저작권 소유자의 동의없이 저작물을 도용하거나 Jennifer Lawrence의 가짜 누드를 생성하며, 고장 나는 웹사이트 판매 챗봇을 만드는 데 이용해 왔습니다 - 그러면서 낭비적이고 탐욕스러운 전력 요구로 인해 우리의 기후 위기를 악화시키고 있어요. AI가 절대 필요하지 않은 곳은 방송파에요. 예술이든 문학이든 마찬가지에요. 겨우 하는 말처럼 "영롱해질 때까지 어둠 속에 그 레이오."

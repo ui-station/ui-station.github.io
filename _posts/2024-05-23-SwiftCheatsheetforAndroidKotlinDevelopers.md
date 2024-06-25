@@ -18,7 +18,18 @@ iOS 개발자도 Android 코드를 살펴볼 때 이와 같은 원리가 적용�
 
 <img src="/assets/img/2024-05-23-SwiftCheatsheetforAndroidKotlinDevelopers_0.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1. 기본 사항
 
@@ -36,7 +47,18 @@ val animDurationMillis: Int = 500
 var clickCount = 0
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 시점에서 두 언어의 유일한 차이점은 읽기 전용 변수를 정의하는 let 대 val 키워드입니다.
 
@@ -52,7 +74,18 @@ var foundItem: String? = nil
 var foundItem: String? = null
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 nil 상태를 처리하는 여러 가지 방법이 있습니다:
 
@@ -77,7 +110,18 @@ val actualFoundItem = foundItem ?: "empty"
 val actualFoundItem2 = foundItem!!
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 제어 흐름
 
@@ -97,7 +141,18 @@ if (foundItem != null) {
 
 두 언어 모두 else if/else 분기에 대해 동일한 구문을 사용하며, 두 언어 모두 표현식으로 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // 스위프트
@@ -129,7 +184,18 @@ func addTwoNumbers(a: Int, b: Int) -> Int {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코틀린에서는 fun 키워드와 :을 사용하여 반환 유형을 정의합니다. -` 대신에 Markdown 형식으로 표를 변경해주세요.
 
@@ -143,7 +209,18 @@ fun addTwoNumbers(a: Int, b: Int): Int {
 
 Swift는 데이터 모델링 관점에서 비슷한 구조체와 클래스를 지원합니다. 둘 다 속성과 함수를 정의할 수 있지만, 클래스는 참조에 의해 전달되고 구조체는 값에 의해 전달됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본적으로 구조체를 사용하는 것이 권장됩니다. 상속, Objective-C 호환성 등 추가 기능이 필요할 때는 클래스를 사용하세요.
 
@@ -169,7 +246,18 @@ class VehicleClass {
 
 구조체는 기본적으로 변경 불가능하므로 속성의 값 변경이 필요한 경우 let 대신 var로 선언해야 합니다. 멤버 속성의 값을 설정하기 위해 자동으로 생성된 이니셜라이저를 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // 변경 가능한 구조체 인스턴스 생성
@@ -206,7 +294,18 @@ vehicle.maxSpeed = 250
 vehicle.printInfo()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kotlin은 클래스 생성 시 모든 클래스 속성에 값을 제공해야하는 클래스 생성자도 지원합니다.
 
@@ -225,8 +324,18 @@ Kotlin은 추상 클래스, 데이터 클래스, 인터페이스 및 실드 클�
 
 # 3. Optional Binding
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## if let 사용법
 
@@ -248,7 +357,18 @@ if let userId = fetchedUserId {
 
 이를 선택적 바인딩(optional binding)이라고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 선택적으로 검색된 fetchedUserId 변수가 nil이 아닌 값으로 존재하는지 확인합니다.
 - true이면 새로운 선택 불가능한 상수인 userId에 값을 할당합니다.
@@ -267,7 +387,18 @@ if let fetchedUserId {
 
 두 경우 모두 fetchedUserId와 userId 상수를 if 문 바깥에서 사용할 수 있지만, 두 상수 모두 여전히 선택적으로 간주되기 때문에 추가로 언래핑이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코틀린
 코틀린에는 이에 해당하는 특수한 패턴이 없습니다. 하나의 옵션은 if/else 문을 사용하는 것입니다. 그러나 이는 로컬 변수에 대해서만 작동하며 전역 변수에는 작동하지 않습니다. 전역 변수를 지원하려면 먼저 값을 새로운 로컬 변수/상수에 할당해야 합니다.
@@ -290,7 +421,18 @@ if (userId != null) {
 
 대안적인 해결책은 `.let`과 같은 스코프 함수를 사용하는 것입니다. 함수 내부의 코드는 fetchedUserId가 null이 아닌 경우에만 실행됩니다. 이 코드 블록 이후에 fetchedUserId에 대한 참조는 여전히 변수가 선택 사항으로 간주되므로 널 안전성이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 fetchedUserId?.let { userId ->
@@ -313,7 +455,18 @@ func checkUsernameValid(username: String?) -> Bool {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드에서 함수는 선택적으로 변수 username을 받습니다. 그런 다음 guard문을 사용하여 username이 값이 있는지 확인합니다. 값이 없는 경우 함수를 종료합니다. 값이 있는 경우 나머지 함수에서는 username을 선택사항이 아닌 것처럼 사용할 수 있습니다.
 
@@ -338,7 +491,18 @@ fun checkUsernameValid(username: String?): Boolean {
 
 # 4. Enums
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Swift에서는 enum 키워드를 사용하여 열거형을 정의합니다. 값은 case 키워드를 사용하고 그 뒤에 열거형 케이스의 이름을 작성합니다. 열거형 케이스의 이름은 소문자로 작성하는 것이 권장되며 단수형으로 작성하는 것이 좋습니다. 각 케이스를 새로운 줄에 작성해야 합니다. 여러 케이스를 한 줄에 작성할 때는 쉼표로 구분합니다.
 
@@ -364,7 +528,18 @@ var selectedDirection = Direction.up
 selectedDirection = .right
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 열거형 값 확인을 위해 switch 문을 사용할 수 있습니다. Xcode는 switch 문의 모든 분기를 자동으로 작성합니다. 열거형에 대한 switch 문이 전체적이어야 하기 때문입니다.
 
@@ -385,7 +560,18 @@ Swift 열거형은 연관 값도 지원합니다. 즉, 각 열거형 케이스�
 
 더 알아보기: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/enumerations
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 코틀린
 
@@ -399,7 +585,18 @@ enum class Direction {
 
 Enum을 사용할 때는 클래스 이름과 사용하려는 값으로 참조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 var selectedDirection = Direction.UP;
@@ -418,7 +615,18 @@ when(selectedDirection){
 
 Kotlin 열거형 클래스는 각 열거형 값이 값을 제공해야하는 추가 속성을 정의하는 것을 지원합니다. 그러나 Swift의 관련 값과 달리 속성은 클래스 수준에 있으며 값 레벨이 아니므로 각 값에 대해 동일한 형식이어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Kotlin 공식 문서 링크입니다: https://kotlinlang.org/docs/enum-classes.html
 
@@ -428,7 +636,18 @@ Swift의 딕셔너리와 Kotlin의 맵 사이의 구문은 매우 다르지만 �
 
 ## Kotlin
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 딕셔너리는 키와 값을 동일한 유형으로 연결해주는 Swift의 데이터 구조입니다. 키-값 쌍은 순서가 없이 저장됩니다. 각 키는 연결된 값을 액세스하기 위한 기준값을 나타냅니다.
 
@@ -440,7 +659,18 @@ var httpErrorCodes: [Int: String] = [404: "Not found", 401: "Unauthorized"]
 
 키를 사용하여 딕셔너리에서 값을 읽기 위해 서브스크립트 구문(dictionary[key])을 사용할 수 있습니다. 딕셔너리에 키가 없으면 nil을 반환합니다. ?? 연산자를 사용하여 기본값을 제공할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 func getHttpErrorCodeMessage(code: Int) -> String {
@@ -461,7 +691,18 @@ httpErrorCodes[401] = "Requires authentication";
 
 가변 또는 불변(읽기 전용) 딕셔너리를 사용하는지는 할당에 달려있습니다. let을 사용하면 선언한 후에만 읽을 수 있는 딕셔너리를 정의합니다. 쓰기를 지원하려면 var로 선언해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자세히 읽기: https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes#Dictionaries
 
@@ -471,7 +712,18 @@ httpErrorCodes[401] = "Requires authentication";
 
 Kotlin에서 불변(읽기 전용) 맵을 선언하려면 Map`KeyType, ValueType` 유형을 사용하고 mapOf(varargs pairs: Pair`KeyType, ValueType`) 표준 라이브러리 함수를 사용하여 초기화합니다. 적어도 하나의 키-값 쌍을 제공하면 명시적인 변수 유형 선언을 생략할 수 있습니다. 컴파일러가 유형을 결정할 수 있기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 값을 선언할 때 Pair(key, value) 클래스를 직접 사용하거나 객체를 만들어주는 to 인픽스 함수를 사용할 수 있습니다.
 
@@ -491,7 +743,18 @@ fun getHttpErrorCodeMessage(code: Int): String {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 맵에 새로운 값을 작성하려면 MutableMap KeyType, ValueType 형식과 mutableMapOf() 팩토리 함수를 사용하여 가변 맵을 선언해야 합니다. 그런 다음 키에 값을 할당합니다. 키가 존재하지 않으면 새로운 키-값 쌍이 컬렉션에 추가됩니다. 키가 이미 존재하면 해당 값을 업데이트합니다.
 
@@ -507,7 +770,18 @@ httpErrorCodes[401] = "인증이 필요함";
 
 # 6. 확장
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 확장(extension)은 기존 클래스나 구조체에 새로운 기능을 추가하는 방법입니다. 때로는 코드에 액세스할 수 없는 것들에 대해서도 확장을 적용할 수 있습니다.
 
@@ -523,7 +797,18 @@ extension String {
 
 위 예제에서는 String 타입에 doubled() 확장 함수를 정의했습니다. 이제 이 함수를 문자열의 인스턴스에서 호출할 수 있으며 마치 원래 정의에 포함된 것처럼 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 let originalStr = "Swift";
@@ -541,7 +826,18 @@ fun String.doubled(): String {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 이 함수를 사용하여 원래 정의의 일부인 문자열 인스턴스에서 호출할 수 있습니다.
 
@@ -555,7 +851,18 @@ println(doubledStr) // "KotlinKotlin" 출력
 
 Swift에서 프로토콜은 클래스, 구조체 또는 열거형이 해당 요구 사항의 실제 구현을 제공함으로써 채택할 수 있는 속성, 메서드 및 기타 요구 사항의 집합입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로토콜을 정의할 때는 프로토콜 키워드 뒤에 프로토콜 이름을 붙이면 됩니다. 이는 구조체나 클래스 선언과 유사합니다. 프로토콜 내부에서는 get할 수 있는(' get ') 또는 get과 set이 모두 가능한(' get set ') 속성을 정의할 수 있습니다.
 
@@ -574,7 +881,18 @@ protocol PrintableError {
 
 프로토콜을 채택하기 위해서는 클래스나 구조체를 정의하고 이름 뒤에 : ProtocolName을 추가해야 합니다. 여러 프로토콜을 선언하려면 쉼표를 사용하면 됩니다. 그런 다음 클래스나 구조체의 본문에서 프로토콜로부터 요구되는 내용을 정의해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class ServerHttpError: RequestError, PrintableError {
@@ -620,7 +938,18 @@ onRequestError(error: firstError)
 onRequestError(error: secondError)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 프로토콜을 사용하는 간단한 예시입니다. Swift의 프로토콜은 상속, 합성, 연관 타입, 제네릭 등과 같이 더 고급적인 사용 사례를 지원합니다. 더 많은 내용은 https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols에서 확인할 수 있어요.
 
@@ -630,7 +959,18 @@ onRequestError(error: secondError)
 
 인터페이스를 정의할 때는 interface 키워드를 사용하고 이름을 이어서 작성합니다. 본문에서는 속성과 함수를 정의합니다. 읽기 전용 속성은 val 키워드를 사용하여 정의하고, 읽기/쓰기 속성은 var 키워드를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 인터페이스를 구현하도록 클래스에 지정하는 방법은, 클래스 이름 뒤에 InterfaceName을 사용합니다. 여러 인터페이스를 구현하려면 쉼표를 사용합니다. 그런 다음 모든 속성과 함수를 override 키워드와 함께 정의해야 합니다.
 
@@ -682,8 +1022,18 @@ onRequestError(firstError)
 onRequestError(secondError)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Read more at https://kotlinlang.org/docs/interfaces.html
 
@@ -693,8 +1043,18 @@ Read more at https://kotlinlang.org/docs/interfaces.html
 
 Swift 언어의 기본적인 내용과 Kotlin과 비교하는 방법을 살펴보았습니다. 또한, 선택적 바인딩, 딕셔너리, 익스텐션, 구조 및 프로토콜과 같은 전형적인 iOS 프로젝트에서 발견할 수 있는 일반적인 패턴에 대해서도 다루었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문이 도움이 되었다면 댓글로 알려주세요! Swift 코드를 읽거나 검토하거나 작성하는 경험에 대해 공유하는 것을 장려합니다.
 

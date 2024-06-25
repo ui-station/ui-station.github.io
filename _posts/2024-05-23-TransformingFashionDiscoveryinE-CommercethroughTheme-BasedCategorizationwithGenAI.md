@@ -23,7 +23,18 @@ Jonathan Galsurkar
 
 대형 언어 모델 (LLM)을 다양한 분야에 통합하는 것은 인공 지능의 발전에서 중요한 마일스톤을 표시했습니다. 이를 통해 사용자 상호작용과 만족도를 향상시키기 위한 혁신적인 솔루션을 선보이고 있습니다. 패션 분야에서 전통적인 벽돌과 모르타르 상점들은 스타일, 행사 적합성에 대한 상세한 토론을 하는 지식 있는 판매원들의 큰 도움을 받습니다. 고객들이 선호도를 이해하고 정리하는 데 도움을 주는 것이 바로 이 환경입니다. 이를 온라인 플랫폼이 재현하는 데 어려움을 겪고 있습니다. 우리는 이 도전에 대처하기 위해 LLM의 기능을 활용하여 이베이의 패션 추천 시스템을 혁신하고 있습니다. 특히, 우리의 접근 방식은 LLM을 활용하여 제품을 일관된 피벗 그룹으로 분류하고 이러한 그룹을 위한 딥 러닝 임베딩 센터를 생성합니다. 이는 이러한 명확히 정의된 주제 내에서 후보 아이템을 조직화된 방식으로 제공하는 독특한 전략을 제공합니다. 이 방법론은 제품 발견 프로세스를 보다 간단하게 만들 뿐만 아니라, 기존 추천 알고리즘의 능력을 능가하는 맞춤화 및 맥락 감수성을 편입하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 배경
 
@@ -33,7 +44,18 @@ Jonathan Galsurkar
 
 그러나 이 중요한 정보는 판매자가 제공하는 항목 제목이나 설명에서 항상 명확하게 제시되지는 않습니다. 전통적인 매장 쇼핑 경험과는 대조적으로, 매력적인 옷의 스타일, 행사 적합성에 대해 고객과 자세한 토론을 진행하고 그들의 선호도를 더 잘 이해하기 위해 비슷한 제품을 안내해주는 지식 있는 판매원들이 있다면, 우리는 eBay 패션 아이템에 대한 이 맞춤형 지원을 복제하고 개선하려고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물리 매장에서, 옷 판매원들은 패션의 복잡성을 안내하는 데 중요한 역할을 합니다. 그들은 각 제품의 스타일 미학을 논하며, 다양한 상황에 적합한 제품이며, 고객들에게 다른 유사한 제품을 보여주어 그들이 더 잘 이해하고 세련되게 취향을 확립할 수 있도록 도와줍니다. 우리의 목표는 LLM의 힘을 활용하여 이 맞춤형 쇼핑 경험을 온라인으로 재현하는 것입니다. 이를 통해 우리는 바이어가 완벽한 패션 아이템을 찾는 데 도움을 주는 것뿐만 아니라 물리 매장에서 일반적으로 느끼는 맞춤 가이드와 전문지식의 느낌을 재현하는 것을 목표로 합니다. 궁극적으로, eBay의 패션 발견 프로세스를 더 매력적이고 유익하며 만족스럽게 만드는 데 노력하고 있습니다.
 
@@ -43,7 +65,18 @@ Jonathan Galsurkar
 
 <img src="/assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_2.png)
 
@@ -51,7 +84,18 @@ Jonathan Galsurkar
 
 이 과정은 각 중심 그룹의 평균 임베딩을 계산하여 계속되었습니다. 이는 해당 그룹의 중심적인 임베딩 대표로 작용합니다. 이 근본적인 임베딩은 후속적인 온라인 추천 단계에서 중요한 역할을 합니다. 여기서 후보 항목은 아이템 임베딩을 중심 그룹 임베딩과의 유사성에 따라 동적으로 할당받습니다. 할당은 아이템 임베딩과 중심 그룹 임베딩 사이의 유사성을 활용하여 진행되며, 이를 위해 코사인 거리가 측정 항목으로 사용됩니다. 이 방법론을 통해 추천은 맥락에 부합하고 현재 트렌드와 일치하며, 전반적인 추천 시스템의 효율성을 향상시키는 것이 보장됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 방법론의 초기 단계에서는 LLMs를 활용하여 이베이의 여성 드레스 카테고리를 조직하는 중요한 과정인 피벗 그룹을 위한 이름과 설명을 체계적으로 생성합니다. 이 프로세스는 아래의 Figure 3에서 시각적으로 설명되어 있습니다:
 
@@ -61,7 +105,18 @@ Jonathan Galsurkar
 
 이 그룹 이름과 설명이 고객 기반에 적합하고 관련성이 있는지를 확인하기 위해 품질 보증 전문가 팀이 철저한 검토를 진행합니다. 이 방법론 접근은 아이템 분류 프로세스를 최적화할 뿐만 아니라 피벗 그룹이 여성 드레스 부문 내에서 트렌드와 관련 테마를 대표하는지를 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 회전 표현 생성
 
@@ -71,7 +126,18 @@ Jonathan Galsurkar
 
 데이터 세트는 일괄 처리로 분할되고 LLM을 통해 처리됩니다. 이때, LLM에게 각 항목을 해당 특성을 기반으로 적절한 회전 그룹으로 분류하도록 안내하는 특별히 설계된 프롬프트를 제공합니다. 이 단계는 항목을 각각의 그룹으로 매핑하는 데 중요하며, 우리에게는 각 회전 그룹이 의도된 주제와 특성을 반영한 올바른 항목을 포함하고 있는지 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 분류 과정을 따라, 우리는 각 그룹 내 모든 항목에 대한 항목 임베딩을 추출하기 위해 임베딩 룩업 캐시인 "NuKV"에서 뽑아낸다. 이를 통해 각 피벗 그룹의 평균 임베딩 벡터를 계산할 수 있다. 기억해야 할 것은 기존 임베딩의 두 가지 유형을 활용할 수 있다는 것이다: eBERT 제목 임베딩 또는 항목 멀티모달 임베딩. 이 벡터는 그룹 내 항목들의 집합적 특성을 대표하는 중심 표현 또는 피벗 센터로 작용한다.
 
@@ -81,7 +147,18 @@ Jonathan Galsurkar
 
 저희 추천 서비스 내에서는 항목의 실시간 할당 및 추천에 대한 정교한 메커니즘을 개발했습니다, Figure 5에 나와있습니다. 이 과정은 상류 단계에서 기억된 항목을 검색하는 것으로 시작되며, 비슷한 후원된 항목의 관련성과 최신 선택을 수집하는 데 중요한 단계입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_5.png" />
 
@@ -91,7 +168,18 @@ Jonathan Galsurkar
 
 ## 온라인 실험 결과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 신기술인 Pivot Group 방법이 사용자 경험 및 추천 관련성 향상에 미치는 영향을 엄밀히 평가하기 위해 여성 드레스 카테고리 내 미국 사이트에 중점을 둔 A/B 테스트를 실시했습니다. 이 실험은 데스크톱 웹 뷰 아이템 페이지의 두 번째 위치에 배치된 기존 추천 변형(Control)과 Pivot Group 변형(Treatment)의 성능을 비교하기 위해 설계되었습니다. 본 실험은 가시성과 사용자 참여를 보장하기 위해 두 그룹 간의 트래픽을 공평하고 정확하게 분배하는 데 초점을 맞추었습니다.
 
@@ -101,7 +189,18 @@ Jonathan Galsurkar
 
 ![Figure 7](/assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결과는 Pivot Generation 접근 방식이 사용자의 관심을 끌 뿐만 아니라 구매를 유도하는 데도 효과적임을 확인합니다.
 
@@ -111,8 +210,18 @@ Jonathan Galsurkar
 
 우리의 방법론은 다양한 스타일 범주로 특징 지어지는 카테고리를 포함한 광범위한 범주에 대한 확장 및 적응 가능성을 명확히 보여줍니다. 우리의 파이프라인의 기본 원리는 아이템을 주제별 그룹으로 분할하는 데 LLMs를 활용하는 것으로, 이는 본질적으로 변화 가능하고 확장 가능한 프로세스입니다. 이 유연성은 우리의 방식이 핵심 프롬프트 구조를 심각하게 수정하지 않고도 다른 범주에 적용될 수 있음을 시사합니다. Pivot 그룹 방법의 확장 가능성은 여성 드레스 이상의 효과를 보여주는 그림 7 및 8에 나타난 결과와 함께 핸드백이나 구두와 같은 다른 다양한 범주에 그 유용성을 확장하는 개념 증명을 통해 입증되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-TransformingFashionDiscoveryinE-CommercethroughTheme-BasedCategorizationwithGenAI_8.png" />
 
@@ -123,7 +232,17 @@ Jonathan Galsurkar
 Chen Xue
 그리고 Xuyan Zhou도 이 기사에 기고했습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 eBay TechBlog

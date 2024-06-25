@@ -3,13 +3,12 @@ title: "2024년 최신 AWS API Gateway 사용 방법 및 기능 완벽 가이드
 description: ""
 coverImage: "/assets/img/2024-06-23-AWSAPIGateway_0.png"
 date: 2024-06-23 00:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AWSAPIGateway_0.png
 tag: Tech
 originalTitle: "AWS API Gateway"
 link: "https://medium.com/@augustomarinho/aws-api-gateway-bd26fe89df98"
 ---
-
 
 ## AWS API Gateway를 효과적으로 사용하는 필수 팁
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@augustomarinho/aws-api-gateway-bd26fe89df98"
 
 모놀리식 또는 마이크로서비스 아키텍처를 사용하더라도 API에 접근하기 위한 중앙 진입점은 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기업에서는 비즈니스의 다른 부분에 작업을 수행하는 여러 팀이 있고, 각 팀은 다른 애플리케이션에 서비스를 노출하기 위해 API를 구현합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@augustomarinho/aws-api-gateway-bd26fe89df98"
 
 # API 게이트웨이가 왜 필요한가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현대 소프트웨어 아키텍처는 클라이언트가 데이터를 사용하고 생성하는 방법을 제어하고 동시에 보호 기술을 구현하는 인프라 요소가 필요합니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@augustomarinho/aws-api-gateway-bd26fe89df98"
 
 API 게이트웨이는 OSI 모델의 응용 계층(레이어 7)에서 작동하여 기본 SSL 종료나 백엔드 인스턴스 간 요청 분배 이상의 고급 기능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API Gateway 솔루션은 인증 및 권한 부여, 속도 제한/쓰로틀링, 액세스 로깅, HTTP 프로토콜에 대한 자세한 내용, 회로 차단기 구현 등과 같은 책임을 통합합니다.
 
@@ -49,7 +81,18 @@ API Gateway를 네트워킹 아키텍처에서 DMZ와 비교할 수 있습니다
 
 인터넷을 통해 API를 노출시키기 위해 여러 솔루션을 유지하고 싶지 않다면, API Gateway가 최선의 방법입니다. AWS를 사용하고 하드 제한이 문제가 되지 않는다면, AWS API Gateway가 강력한 선택입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음에는 귀하의 요구 사항에 가장 가까운 옵션을 선택하는 방법에 대해 더 자세히 설명하겠습니다.
 
@@ -59,7 +102,18 @@ API Gateway를 네트워킹 아키텍처에서 DMZ와 비교할 수 있습니다
 
 본 문서에서 읽을 수 있는 것과 똑같은 내용을 설명할 의도는 없지만, 리전별, 엣지, 또는 프라이빗 API 게이트웨이와 같은 엔드포인트 유형에 대한 개념을 깊이 이해하는 것의 중요성을 강조하고 싶습니다. REST API 또는 HTTP API 인스턴스에서 사용할 수 있는 각 유형에 대해 알아보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인스턴스 유형에 대한 간단한 설명은 다음과 같습니다:
 
@@ -71,19 +125,39 @@ API Gateway를 네트워킹 아키텍처에서 DMZ와 비교할 수 있습니다
 
 저는 PetStore 예제를 사용하여 미국 동부 버지니아 (us-east-1) 지역에 두 개의 AWS API Gateway 인스턴스를 생성했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-AWSAPIGateway_1.png)
 
 첫 번째 인스턴스(ID w43fgx5wk6)는 엣지 최적화되었고, 두 번째 인스턴스(ID 16hx5blsm5)는 리전 최적화되었습니다.
 
-AWS API 게이트웨이 설명서에 따르면 엣지 최적화는 
+AWS API 게이트웨이 설명서에 따르면 엣지 최적화는
 
 또한, 이 정보를 HTTP 헤더 응답을 검사하여 확인할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![AWS API Gateway](/assets/img/2024-06-23-AWSAPIGateway_2.png)
 
@@ -93,7 +167,18 @@ x-amz-cf-pop 헤더는 예약된 HTTP 헤더이며, 이를 검사하여 엣지 �
 
 ![AWS API Gateway](/assets/img/2024-06-23-AWSAPIGateway_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지역 인스턴스를 분석하면이 유형의 인스턴스가 POP을 통과하지 않는 것을 확인할 수 있습니다.
 
@@ -103,7 +188,18 @@ x-amz-cf-pop 헤더는 예약된 HTTP 헤더이며, 이를 검사하여 엣지 �
 
 먼저, 각 AWS 지역과 관련된 지연 시간을 이해해야합니다. 이 측정을 위해 https://clients.amazonworkspaces.com/Health.html을 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-AWSAPIGateway_5.png" />
 
@@ -113,7 +209,18 @@ x-amz-cf-pop 헤더는 예약된 HTTP 헤더이며, 이를 검사하여 엣지 �
 
 지연 시간을 비교하기 위해 북아메리카, 남아메리카 및 아시아에서 엣지 최적화된 인스턴스 및 지역별 인스턴스에 액세스를 시뮬레이션했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 이미지는 엣지 최적화 인스턴스 (w43fgx5wk6)에 대한 결과를 보여줍니다.
 
@@ -123,7 +230,18 @@ x-amz-cf-pop 헤더는 예약된 HTTP 헤더이며, 이를 검사하여 엣지 �
 
 아시아의 경우 응답 시간이 상당히 높으며, 숫자를 더 자세히 조사해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 이미지는 이전에 제시된 것과 유사하며, AWS 지역 간의 내 지연 시간을 보여줍니다. 특히, 도쿄까지의 지연 시간은 732밀리초입니다.
 
@@ -133,7 +251,18 @@ x-amz-cf-pop 헤더는 예약된 HTTP 헤더이며, 이를 검사하여 엣지 �
 
 ![이미지](/assets/img/2024-06-23-AWSAPIGateway_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 28ms의 델타에서 주요 포인트는 대부분의 시간이 네트워크 왕복 시간에 소비된다는 것입니다. 이러한 숫자들은 다양한 위치에서 아시아로의 요청 지연 시간에 대한 소중한 통찰을 제공합니다.
 
@@ -143,7 +272,18 @@ x-amz-cf-pop 헤더는 예약된 HTTP 헤더이며, 이를 검사하여 엣지 �
 
 ![이미지](/assets/img/2024-06-23-AWSAPIGateway_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 북미(로컬 API Gateway 인스턴스가 실행 중인 곳)에서 멀어질수록 미리측된 밀리초 증가가 더 두드러집니다. 지연 시간은 북미에서 라틴 아메리카, 그리고 아시아로 이동함에 따라 거의 두 배로 증가하는 것 같습니다.
 
@@ -153,7 +293,18 @@ x-amz-cf-pop 헤더는 예약된 HTTP 헤더이며, 이를 검사하여 엣지 �
 
 이 관점은 중요하지만 AWS API Gateway를 효과적으로 사용하기 위해서는 다른 특성들을 이해해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 어떤 요구 사항이 있나요?
 
@@ -163,7 +314,18 @@ AWS 문서에서 속한 제한에 관한 부분을 읽을 때 중요합니다. �
 
 고려해야 할 주요 제한 사항은 다음과 같아요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 할당량은 문서에 따라 증가될 수 있지만, 귀하의 계정과 지역에 있는 모든 AWS API Gateway 인스턴스를 고려하여 10K RPS의 양에 주의를 기울이고 싶습니다.
 
@@ -173,7 +335,18 @@ AWS API Gateway REST API 인스턴스의 최대 타임아웃은 대략 29초입�
 
 최근 AWS는 타임아웃을 증가시킬 수 있는 가능성을 발표했지만, 이는 계정 수준의 쓰로틀 할당량 제한을 감소시키는 데에 처벌이 따릅니다. 문서에서는 쓰로틀링 할당량이 얼마나 감소할 지 명시되어 있지 않지만, 이는 중요한 고려 사항입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RPS는 동일한 계정 및 지역의 모든 API 게이트웨이 인스턴스의 요청 합계를 계산하는 것과 같이 API 키도 동일한 규칙을 따릅니다. 그러나 중요한 차이점은 API 키의 수를 늘릴 수 없으며, 모든 인스턴스 사이에서 공유되는 API 키의 하드 제한이 10K개이다.
 
@@ -183,11 +356,33 @@ RPS는 동일한 계정 및 지역의 모든 API 게이트웨이 인스턴스의
 
 이전에 언급한대로, 계정 수준의 쓰로틀링은 모든 AWS API 게이트웨이 인스턴스의 초당 요청을 제한하기 위해 초당 모든 요청을 합계하여 적용됩니다. 이 쓰로틀링에 대해 우리는 제어할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라이언트별로 쓰로틀링을 적용하는 유일한 방법은 클라이언트를 API 키와 연관시키는 것입니다. 프로덕션 환경에서 1만 개의 API 키를 활성화하는 것은 불가능하지 않은 것으로 보입니다. 서로 다른 기준에 맞게 API 키를 관리할 수 있으므로 한 클라이언트나 클라이언트와 엔드포인트에 API 키를 사용할 수 있습니다.
 
@@ -197,7 +392,18 @@ RPS는 동일한 계정 및 지역의 모든 API 게이트웨이 인스턴스의
 
 AWS API Gateway 인스턴스를 프로토타입으로 만들어 클라이언트, 클라이언트-엔드포인트 또는 다른 전략별 API 키를 사용하려면 할당량을 초과하지 않도록 사용 계획과 API 키를 구현하고 연관시키는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 의견으로는 API 게이트웨이의 관련 기능으로 인해 클라이언트 당 쓰로틀링을 구현해야한다는 이 제한이 가장 어려운 것으로 생각됩니다. 따라서 이 제한이 솔루션에 영향을 미치지 않도록 주의하시기 바랍니다.
 
@@ -207,7 +413,18 @@ AWS API 게이트웨이 인터페이스에서 API 키를 조회하거나 검색�
 
 # 제약사항은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 제약 사항은 다음과 같은 유형의 제한 사항을 만날 경우 파트너들과의 갈등을 야기할 수 있습니다:
 
@@ -217,7 +434,18 @@ AWS API 게이트웨이 인터페이스에서 API 키를 조회하거나 검색�
 
 - REST API의 AWS API Gateway의 기본 설정은 "백엔드 통합에 전달하기 전에 URL 인코딩된 요청 매개 변수를 디코딩(decoding)"하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 특별한 문제는 여러분의 파트너가 URL 인코딩을 구현해야 한다는 것입니다. 이를 역방향 프록시를 사용하여 해결하려고 하면 어려움을 겪을 수 있습니다. 이 상황을 피하기 위해 AWS Lambda@Edge와 CloudFront를 사용할 수 있지만, 과도한 엔지니어링에 주의해야 합니다.
 
@@ -227,8 +455,18 @@ AWS API 게이트웨이 인터페이스에서 API 키를 조회하거나 검색�
 
 https://apigateway.free.beeceptor.com/pets를 호출하면 결과가 이렇게 나옵니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-AWSAPIGateway_11.png)
 
@@ -238,8 +476,18 @@ https://apigateway.free.beeceptor.com/pets를 호출하면 결과가 이렇게 �
 
 여기서는 AWS API Gateway를 사용하기 전에 공부하고 이해해야 할 중요한 요점을 설명했습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS API Gateway은 제품 환경에서 사용할 수 있는 견고한 솔루션이에요. 어떤 솔루션을 채택하기 전에 요구 사항을 이해하는 것이 중요해요. AWS API Gateway를 사용하기로 결정하는 것도 마찬가지죠.
 

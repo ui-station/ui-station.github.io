@@ -3,13 +3,12 @@ title: "데이터  AI 서밋 by Databricks 2024의 주요 통찰 결과"
 description: ""
 coverImage: "/assets/img/2024-06-19-KeyInsightsfromDataAISummitbyDatabricks2024_0.png"
 date: 2024-06-19 12:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-KeyInsightsfromDataAISummitbyDatabricks2024_0.png
 tag: Tech
 originalTitle: "Key Insights from Data + AI Summit by Databricks 2024"
 link: "https://medium.com/@kaviprakash.2007/key-insights-from-data-ai-summit-by-databricks-2024-35302945a202"
 ---
-
 
 Data + AI Summit by Databricks에서 얻은 주요 인사이트가 공개되었습니다! 다음과 같은 데이터 및 분석 공간의 흥미로운 업데이트가 있습니다.
 
@@ -19,7 +18,18 @@ Data + AI Summit by Databricks에서 얻은 주요 인사이트가 공개되었�
 
 빌트인 데이터 품질 세부 정보로 GA로 된 Lake House 모니터링은 Delta 테이블을 모니터링하는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 📊 Unity Catalog metrics가 Databricks 및 Power BI, Tableau와 같은 외부 사용자를 위해 도입되어 데이터를 신뢰하고 사용할 수 있습니다.
 
@@ -29,7 +39,18 @@ Data + AI Summit by Databricks에서 얻은 주요 인사이트가 공개되었�
 
 🔄 Databricks Lakeflow (곧 미리 보기 예정)는 DLT와 워크플로에 기반하여 데이터 수집, 변환, 오케스트레이션, 데이터 파이프라인의 모니터링을 간편화하는 솔루션입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 🔍 Databricks SQL은 이제 빠른 클러스터 시작, 향상된 성능, SQL UDF, 세션 변수, 그리고 SQL 분석가를 위한 AI 기능을 갖춘 데이터 웨어하우징 핵심 기능을 제공합니다.
 
@@ -39,7 +60,18 @@ Apache Iceberg Tabular의 인수로 Delta lake에 이제 UniForm 형식을 통�
 
 스파크 4.0이 곧 출시될 예정이며 흥미로운 업데이트가 예정되어 있습니다. 더 많은 혁신을 기대해 주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 기능들을 탐험하는 것을 기대하고 있어요!
 

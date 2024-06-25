@@ -18,8 +18,18 @@ link: "https://medium.com/@flavio-mtps/orchestrating-python-scripts-with-a-light
 
 조사를 하다가 Cronicle을 발견했고, Docker에서 실행할 수 있는 프로젝트도 찾았어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-OrchestratingPythonscriptswithalightweightdockerscheduler_1.png)
 
@@ -40,9 +50,18 @@ COPY config/plugins.pixl /tmp/plugins.pixl
 RUN /opt/cronicle/bin/control.sh import /tmp/plugins.pixl
 ```
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 플러그인에서는 스크립트뿐만 아니라 작업을 생성할 때 Python 라이브러리, 환경 변수, 실행 매개변수를 구성할 수 있어요. 각 Python "이벤트" (Cronicle이 작업/작업을 위한 용어로 사용하는 용어)는 자체 "런타임"에서 실행되며, 라이브러리나 환경 변수를 혼합하지 않아 모든 실행에서 무결성을 보장해요.
 
@@ -54,15 +73,20 @@ RUN /opt/cronicle/bin/control.sh import /tmp/plugins.pixl
 - 이메일 알림
 - 작업 실행 로그, 통계, 이력 등에 접근하기 가능해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-27-OrchestratingPythonscriptswithalightweightdockerscheduler_3.png)
 
 The link to my repository with the image is [here](repository_link).
 Feel free to access my other repositories, I post a lot of snippets and personal projects that could help you!
-
-
-
-

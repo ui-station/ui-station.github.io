@@ -3,13 +3,12 @@ title: "Smbclient 명령어"
 description: ""
 coverImage: "/assets/img/2024-05-23-Smbclientcommand_0.png"
 date: 2024-05-23 15:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-Smbclientcommand_0.png
 tag: Tech
 originalTitle: "Smbclient command"
 link: "https://medium.com/@ibo1916a/smbclient-command-2803de274e46"
 ---
-
 
 샘바 파일 서버에 연결하는 두 가지 다른 방법이 있습니다. 아래와 같습니다:
 
@@ -21,25 +20,46 @@ Smbclient은 FTP 연결과 유사한 명령 줄 도구입니다. 이 명령은 S
 
 SMB 공유 목록 열기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-smbclient -L //server_name -U users
+smbclient - L; //server_name -U users
 ```
 
 SMB 공유: (비밀번호를 입력해야 함.)
 
 ```js
-smclient //server/share -U user
+smclient; //server/share -U user
 ```
 
 SMB 공유에 직접 연결: (비밀번호 필요 없음, 하지만 비밀번호가 화면에 표시됨.)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-smclient //server/share -U user%password
+smclient; //server/share -U user%password
 ```
 
 더 구체적인 용도를 위한 일반적인 smbclient 플래그는 아래에 나열되어 있습니다:
@@ -48,7 +68,18 @@ smclient //server/share -U user%password
 
 “-U” 플래그 (— username [%password])는 파일 서버에 로그인할 때 사용할 사용자 이름 (및 선택적으로 암호)를 지정하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 “-a” 플래그 (— authentication-file)는 연결을 설정하기 위한 사용자 비밀번호 정보를 보관하는 파일을 지정하는 데 사용하는 플래그입니다. 지정해야 하는 파일의 형식은 다음과 같아야 합니다.
 
@@ -58,36 +89,70 @@ smclient //server/share -U user%password
 
 “-I” 플래그 (— IP-address IP-address)는 연결을 위해 NetBIOS 이름이 아닌 서버의 IP 주소를 제공하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "플래그( —— kerberos): Kerberos를 사용하여 인증을 시도하는 데 사용됩니다.
 
 디버그 수준 플래그( —— debuglevel)은 더 자세한 정보를 로그 파일에 제공합니다. 0부터 10까지의 값이 제공될 수 있습니다.
 
 또한, smbclient를 다양한 방법으로 연결할 수 있습니다. 다음과 같습니다:
-1) 서버 NetBIOS 이름:
+
+1. 서버 NetBIOS 이름:
 
 \`\`\`js
 smbclient -L fileserver
 \`\`\`"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-2) 해당 서버의 IP 주소로 다음 명령어를 사용하세요:
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+2. 해당 서버의 IP 주소로 다음 명령어를 사용하세요:
 
 ```js
 smbclient -L x.x.x.x
 ```
 
-3) 백슬래시를 사용하여 공유에 직접 링크를 하려면 다음과 같이 입력하세요:
+3. 백슬래시를 사용하여 공유에 직접 링크를 하려면 다음과 같이 입력하세요:
 
 ```js
 smbclient \\\\fileserver\\share
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-4) 위의 옵션은 따옴표를 사용하여도 수행할 수 있습니다:
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+4. 위의 옵션은 따옴표를 사용하여도 수행할 수 있습니다:
 
 ```js
 smbclient "\\fileserver\share"

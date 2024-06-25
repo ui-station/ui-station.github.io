@@ -19,7 +19,18 @@ link: "https://medium.com/datamindedbe/how-we-reduced-our-docker-build-times-by-
 
 [이미지](/assets/img/2024-05-27-Howwereducedourdockerbuildtimesby40_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 포스트에서는 적용한 2가지 작은 변경 사항을 설명하고, 빌드 시간이 drasctic하게 개선된 결과를 보여드리고 싶습니다. 이러한 개선 사항에 집중하기 전에 Dockerfile 작성에 대한 최상의 실천 방법을 이미 준수하고 있는지 확인하세요.
 
@@ -32,7 +43,18 @@ link: "https://medium.com/datamindedbe/how-we-reduced-our-docker-build-times-by-
 
 먼저 Buildkit과 Buildx에 대해 설명하겠습니다. 이 두 용어는 종종 서로 교차적으로 사용되지만 실제로 동일하지는 않습니다. 이 게시물을 작성하기 전에 나도 두 용어 사이의 차이를 완전히 이해하지 못했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 빌킷
 
@@ -44,7 +66,18 @@ link: "https://medium.com/datamindedbe/how-we-reduced-our-docker-build-times-by-
 - 서로 다른 레이어를 병렬로 빌드
 - 기본 이미지를 지연해서 로드합니다 (≥ 빌킷 0.9)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Buildkit을 사용할 때 docker build 명령의 출력이 더 깔끔하고 구조화된 모습이 빠르게 눈에 띕니다.
 
@@ -57,7 +90,18 @@ DOCKER_BUILDKIT=1 docker push someImage:someVersion
 
 ## Buildx
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빌드엑스(Buildx)는 도커의 플러그인으로, 도커에서 빌드킷(Buildkit)의 모든 잠재력을 활용할 수 있게 해줍니다. 이것은 빌드킷이 새로운 구성 옵션을 지원하는데, 이를 모두 도커 빌드 명령에 거슬러 호환되는 방식으로 통합하기 어려운 경우에 만들어졌습니다.
 
@@ -70,7 +114,18 @@ docker buildx create --bootstrap --name builder
 docker buildx use builder
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 원격 캐시의 혜택
 
@@ -86,27 +141,45 @@ docker build --platform linux/amd64 . \
 
 Buildx를 사용하면 캐시 정보를 원격 위치(예: 컨테이너 레지스트리, Blob 스토리지 등)에 저장할 수 있습니다. 빌더는 주어진 레이어가 이미 존재하는지 확인하고, 그렇다면 다시 만들지 않고 재사용합니다. 이를 로컬로 다운로드하지 않고도 수행할 수 있습니다. 이 메커니즘을 활용하기 위해 이전 명령어를 재작성한 것은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 docker buildx build --platform linux/amd64 . \
 -t someImage:someVersion --push \
 --cache-to type=inline,mode=max \
 --cache-from someImage:somePreviousVersion
-
 
 "max" 모드는 결과 이미지에 사용되지 않는 레이어도 모든 빌드 정보를 저장한다는 것을 의미합니다 (예: 멀티 스테이지 빌드 사용 시). 기본적으로 "min" 모드가 사용되며 최종 이미지에 존재하는 레이어에 대한 빌드 정보만 저장합니다.
 
 캐싱의 특수 사례는 캐시 데이터를 "inline"으로 저장하는 것이며, 이미지와 함께 캐싱된다는 것을 의미합니다. 이 옵션은 Buildx 없이 Buildkit을 사용할 때도 지원됩니다. 멀티 스테이지 빌드를 사용할 때 시작하기 가장 쉽지만 출력물과 캐시 사이에 명확한 구분을 제공하지 않으며 조심해야 합니다. 캐시 데이터를 "inline"으로 저장하는 명령어는 다음과 같습니다:
 
-
 docker buildx build --platform linux/amd64 . \
 -t someImage:someVersion --push \
 --cache-to type=inline,mode=max \
 --cache-from someImage:somePreviousVersion
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Docker 이미지에 파일 추가하는 새로운 방법
 
@@ -119,7 +192,18 @@ FROM baseImage:version
 COPY binary /opt/
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 링크 옵션을 사용하면 새 파일은 이전 레이어에 의존하지 않고 자체 스냅샷에 넣습니다. 링크된 파일은 자체 tarball에 저장되며 서로 다른 tarball들이 연결되어 파일 시스템에 의존하지 않고 연결됩니다. 다음 이미지에 설명이 나와 있습니다.
 
@@ -133,7 +217,18 @@ COPY [--chown=<user>:<group>] [--chmod=<perms>] --link binary /opt/
 
 주요 장점은 파일이 이제 이전 레이어에 의존하지 않는다는 것입니다. 파일이 변경되지 않았다면 이전 레이어가 변경되더라도 레이어를 재사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한 여러 레이어의 데이터 복사가 이제 병렬로 실행될 수 있기 때문에 빌드 속도를 높일 수도 있습니다.
 

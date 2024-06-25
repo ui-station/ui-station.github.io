@@ -3,13 +3,12 @@ title: "Home Assistant를 통해 Tuya Smart Life IR 장치 제어하기 - 해결
 description: ""
 coverImage: "/assets/img/2024-05-20-ControlTuyaSmartLifeIRdevicesviaHomeAssistantaworkaround_0.png"
 date: 2024-05-20 19:17
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ControlTuyaSmartLifeIRdevicesviaHomeAssistantaworkaround_0.png
 tag: Tech
 originalTitle: "Control Tuya Smart Life IR devices via Home Assistant — a workaround"
 link: "https://medium.com/daniels-tech-world/control-tuya-smart-life-ir-devices-via-home-assistant-a-workaround-b86e6332d3ac"
 ---
-
 
 만약 홈 어시스턴트에 진입하기 전에 IR 블라스터 몇 개를 구입했다면 저의 고안한 해결책이 있어요. 이를 통해 IR 블라스터를 (약간) 홈 어시스턴트를 통해 제어할 수 있는 방법을 소개해 드릴게요.
 
@@ -17,7 +16,18 @@ link: "https://medium.com/daniels-tech-world/control-tuya-smart-life-ir-devices-
 
 IR은 일방적인 프로토콜이기 때문에, 저는 간단히 에어컨을 위해 '냉방 모드', '난방 모드', '끄기'를 실행하는 3가지 씬을 만들었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "매 '씬'마다(투야 스마트 라이프에서 구성함) 원하는 에어컨 상태 매개변수로 설정했습니다:
 
@@ -27,7 +37,18 @@ IR은 일방적인 프로토콜이기 때문에, 저는 간단히 에어컨을 �
 
 ![Scene Names](/assets/img/2024-05-20-ControlTuyaSmartLifeIRdevicesviaHomeAssistantaworkaround_2.png)"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 홈 어시스턴트에서 투야 인티그레이션을 강제로 다시 불러와서 새로 추가한 씬을 적용하는 것을 도와주겠어요:
 
@@ -37,7 +58,18 @@ IR은 일방적인 프로토콜이기 때문에, 저는 간단히 에어컨을 �
 
 ![이미지](/assets/img/2024-05-20-ControlTuyaSmartLifeIRdevicesviaHomeAssistantaworkaround_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 동작에 해당하는 버튼을 만들어보세요:
 
@@ -47,7 +79,18 @@ IR은 일방적인 프로토콜이기 때문에, 저는 간단히 에어컨을 �
 
 그리고 Home Assistant에서 버튼을 누르는 것을 Smart Life에서 동기화된 "scenes"로 매핑하는 자동화를 생성하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <table>
   <tr>
@@ -65,8 +108,18 @@ IR은 일방적인 프로토콜이기 때문에, 저는 간단히 에어컨을 �
 
 액션 설정하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![HVAC Control Dashboard](/assets/img/2024-05-20-ControlTuyaSmartLifeIRdevicesviaHomeAssistantaworkaround_8.png)
 
@@ -76,8 +129,18 @@ I built a little HVAC control dashboard where I’m adding the buttons:
 
 Add the buttons to the dashboard:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 마지막 설명입니다:
 

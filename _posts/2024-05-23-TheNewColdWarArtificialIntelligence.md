@@ -3,13 +3,12 @@ title: "새로운 냉전 - 인공지능"
 description: ""
 coverImage: "/assets/img/2024-05-23-TheNewColdWarArtificialIntelligence_0.png"
 date: 2024-05-23 17:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheNewColdWarArtificialIntelligence_0.png
 tag: Tech
 originalTitle: "The New Cold War — Artificial Intelligence"
 link: "https://medium.com/the-gray-area/the-new-cold-war-ai-82a53cb53574"
 ---
-
 
 ## 최신 기술전쟁 전선에서의 한 모습
 
@@ -26,17 +25,39 @@ link: "https://medium.com/the-gray-area/the-new-cold-war-ai-82a53cb53574"
 - 중국의 함정
 - 참가 상장
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파티 참석자는 몇 년 전에 중국에 있는 유럽-미국 상공회의소(European-American Chamber of Commerce in China)로부터 초대를 받았습니다. 2박 호텔 숙박 및 식사, 대부분의 여행 경비 보상, 그리고 중국 닝보의 스마트 시티 엑스포(Expo) 부스 무료 이용이 제공되었습니다. 중국에서 사업을 하고 싶은 마음이 생겨, "왜 안해볼까" 생각했습니다. 중국 비즈니스의 잠재력을 탐구하는 뜻있는 노력으로 여겼기에, 계약서에 서명했습니다. 몇 주 후, 중국 동부 체장省 닝보의 중요 항구 및 산업 중심지에 자리잡을 기회를 얻게 되었습니다.
 
 최근 소설 쓰기를 위해 제2차 세계대전 시일 중국의 일본과의 전투에 대해 조사를 한 결과, 이 도시에 대해 조금 알고 있었습니다. 안타깝게도, 닝보는 제2차 세계대전 중 일본 제국군이 가장 최악의 잔혹행위를 저질렀던 장소 중 하나였습니다. 일본 전투기가 생화학 전투부대인 유닛 731에 의해 지휘된 잔혹한 생화학 전쟁 행위로 역병, 장티푸스 및 기타 질병이 퍼진 곳이었습니다.
 
-그러나 니보 리셔 국제공항 터미널의 카펫을 건너자마자 전쟁의 생각은 멀리 떠났습니다. 거기서는 자유의 여신상과 에펠탑, 런던의 빅 벤을 담은 보험사 포스터가 나를 맞았습니다. 서양의 요소를 볼 수 있어 기분이 좋았지만, 이 상징이 보는 사람 중 대부분에게 피곤한 의미로 남아있을 것이라고 생각했습니다. 미국에서는 자유, 민주주의, 희망, 기회를 상징하는 것은 자유의 여신상뿐입니다. 그러나 중국에서는 아마 자유와 같이 무겁고 깊은 의미가 담긴 상징은 아니라 생로운 상징이라고 생각했습니다. 
+그러나 니보 리셔 국제공항 터미널의 카펫을 건너자마자 전쟁의 생각은 멀리 떠났습니다. 거기서는 자유의 여신상과 에펠탑, 런던의 빅 벤을 담은 보험사 포스터가 나를 맞았습니다. 서양의 요소를 볼 수 있어 기분이 좋았지만, 이 상징이 보는 사람 중 대부분에게 피곤한 의미로 남아있을 것이라고 생각했습니다. 미국에서는 자유, 민주주의, 희망, 기회를 상징하는 것은 자유의 여신상뿐입니다. 그러나 중국에서는 아마 자유와 같이 무겁고 깊은 의미가 담긴 상징은 아니라 생로운 상징이라고 생각했습니다.
 
 ## 2030년 중국산 "Made in China"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중국 공산당(CCP)은 14차 다섯 해계획에서 2030년까지 인공지능 우위를 차지하는 것을 목표로 세웠습니다. 하지만 그게 현실적인 목표일까요? 의심의 여지 없이, 중국은 인상적인 기술사를 가지고 있습니다. 로스 앤더슨은 자신의 ‘파노프티콘(Panopticon)은 이미 여기에 있다’라는 기사에서 중국이 글쓰기가 독자적으로 발명된 세곳 중 하나라고 언급합니다. 중국은 또한 데이터가 신속하게 이동하도록 할 수 있는 종이를 발명했으며, 이는 제국을 확고히 통치하기 위해 필요한 의사소통 수단이었습니다. 중국 스님들은 9세기경, 불멸의 엘릭시를 찾던 중 폭약을 발견했습니다. 따라서 혁신은 중국에게 전혀 낯선 개념이 아니었습니다.
 
@@ -47,13 +68,35 @@ link: "https://medium.com/the-gray-area/the-new-cold-war-ai-82a53cb53574"
 로봇공학
 로버트 D. 애킨슨은 그의 '중국 제조업체는 미국 제조업체보다 임금을 고려할 때 12배 많은 로봇을 사용합니다.'라는 기사에서 "2021년, 중국은 미국보다 제조업 종사자 당 로봇을 18% 더 설치했습니다. 중국 제조업 임금이 미국 임금보다 상당히 낮았다는 점을 감안할 때, 중국은 미국보다 제조업에서 12배 더 많은 로봇을 사용했습니다."라고 보고합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "그러나 시장 요인이 아닌 Atkinson의 말에 따르면, 이는 정부 정책 때문입니다. 제조업 로봇 도입은 중국 공산당의 최우선 과제이며 관대한 보조금으로 후원하고 있다고 덧붙였습니다. 이는 로봇 도입을 지원하거나 자금을 지원하지 않는 미국 정부의 정책과는 대조적입니다.
 
 로보틱스 기술은 닝보에서 잘 대표되었습니다. ZTE는 참석자들 가운데 어린이들의 상상력을 자극한 5G 로봇 능력을 선보였습니다. "
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로봇 개를 만드는 로보틱스 회사(그림 4 참조)가 최신 기술을 선보였어요. 사실을 말하자면, 보스턴 사이언티픽에서 몇 년 전에 본 것과 의심스럽게 비슷했어요.
 
@@ -63,7 +106,18 @@ link: "https://medium.com/the-gray-area/the-new-cold-war-ai-82a53cb53574"
 
 내가 본 것은 인상적이었지만, 중국은 로봇 분야에서 한국과 싱가포르에 따라잡기에는 아직 멀은 길을 가고 있어요. 독일은 고품질 복잡한 로봇 제공업체로도 선두입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Geely는 전시장 외부 주차장에 서있는 자사 모델 중 하나를 운전할 수 있는 차 시뮬레이터를 제공했습니다. 차 안의 운전자는 발이 묶이는 듯하면 브레이크를 밟을 준비를 하고 있었어요 (그림 5 및 6).
 
@@ -74,7 +128,18 @@ Geely는 전시장 외부 주차장에 서있는 자사 모델 중 하나를 운
 스마트 시티
 스마트 시티 기술은 정보 및 통신 기술을 활용하여 운영 효율성을 개선하고 공공과 정보를 공유하며 주민들에게 더 나은 삶의 질을 제공하는 것을 의미합니다. 다양한 디지털 솔루션을 통합하여 더 나은 결정을 내리고 도시 생활을 향상시키는 것을 포함하고 있습니다. 주요 구성 요소는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터를 수집하고 분석하는 IoT 장치 통합, 이를 통해 인프라, 공공 시설 및/또는 서비스 개선을 위해 활용합니다.
 - 더 최적화된 에너지 관리를 가능하게 하는 스마트 유틸리티 미터.
@@ -85,7 +150,18 @@ Geely는 전시장 외부 주차장에 서있는 자사 모델 중 하나를 운
 
 앤더슨은 조금 디스토피아적이라고 설명합니다. "시티 브레인은 잃어버린 어린이나 관광객 또는 테러리스트가 방치한 수화물을 발견하도록 훈련될 수 있습니다. 방황하는 사람들이나 거리에 머묾거나 무정부상태로 있거나 폭력 분자를 신고할 수 있습니다." 위험에 처한 사람들은 "항상 경비 미쳐 탐지될 수 있는 독특한 방식으로 손을 흔들어 도움을 요청할 수 있을 것"이라고 앤더슨이 덧붙입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-TheNewColdWarArtificialIntelligence_3.png)
 
@@ -95,8 +171,18 @@ Geely는 전시장 외부 주차장에 서있는 자사 모델 중 하나를 운
 
 중국은 자국 국민에게 이 모니터링 기술을 사용함과 동시에 세계 최대의 AI 기반 감시 장비 공급 업체가 되었다고 안데르센은 말합니다. 말레이시아에서는 알리바바의 시티 브레인 플랫폼과 같이 쿠알라룸푸르 경찰서에 얼굴 인식 기술을 도입하고 있습니다. 싱가포르의 11만 개의 가로등은 안데르센이 보고 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 생성적 AI
 
@@ -106,7 +192,18 @@ Dall-E, Stable Diffusion, Midjourney와 같은 텍스트 대 이미지 솔루션
 
 CNBC의 Arjun Kharpa에 따르면, ChatGPT 출시 후 몇 달 뒤에는 중국 기술 거물인 알리바바, 바이두, JD.com, 넷이스가 유사한 제품을 출시할 의향을 밝혔다고 합니다. 하지만 그들이 진짜로 할 수 있을까요? "중국 기술 기업들은 새로운 규제 상황에 적응해야 하며, 그들의 ChatGPT 응답에 대한 발표가 조심스러웠던 것은 이 현실을 반영한 것입니다," Kharpal은 보도했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기업들은 포괄적이고 창의적인 AI 플랫폼을 개발하고 있지 않습니다. 이는 베이징의 인터넷 검열 기관들에 문제를 일으킵니다. 그 대신, 알리바바와 넷이즈는 해당 기술을 응용 프로그램 특정 용어로 이야기하고 있다고 Kharpal이 말합니다. 이러한 기업들이 창의적인 AI 분야를 지배할 수는 없습니다. 하지만, 그들이 가진 선택사항은 무엇인가요? 그들은 모든 종류의 정보에 자유롭고 공정한 접근이 필요한 해당 기술에 대한 수준에서 경쟁하기가 어렵습니다. ChatGPT 및 Perplexity와 같은 미국 기업들에 한 점!
 
@@ -116,7 +213,18 @@ CNBC의 Arjun Kharpa에 따르면, ChatGPT 출시 후 몇 달 뒤에는 중국 �
 
 서양에서 널리 퍼진 중국 비즈니스에 대한 맥시엄이 있습니다. 그것은 중국이 장기적으로 플레이하고 있는 반면 서양 기업들은 목요일 이후를 생각하지 못한다는 것입니다. 이는 매우 잘못된 견해입니다. 세계에서 상위 10곳의 기업 중 9곳은 미국 기업입니다(Saudi Arabia의 Aramco는 그 목록에서 유일한 미국 외 기업입니다). 이들 기업이 그 목록에 올라간 이유는 단기적인 사고를 한 것이 아니라, 그들의 예측 능력이 최고라는 것입니다. 오늘날의 많은 기업의 성공에 큰 역할을 하는 소프트웨어 분석 사업은 미국, 유럽, 일본 전역에 흩어진 칩 제조업체, 소프트웨어 개발자 및 대학 연구소에서 시작되었지만 대부분 미국에서 시작되었습니다. 인터넷은 미국에서 발명되었으며, 실리콘 칩도 그랬습니다. 미국은 AI 및 양자 컴퓨팅 분야에서 선두를 달리고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미국과 비교했을 때 중국은 독립적인 사법부, 강력한 기업 지적재산권 보호, 정치적 비즈니스 접근 방식, 그리고 다가오는 분기 보고서만 고려하는 혁신적인 마인드에서 부족한 면이 있습니다. 이러한 것들은 장기적인 비즈니스 성공을 위해 필요한 중요한 기반 요소입니다.
 
@@ -126,7 +234,18 @@ CNBC의 Arjun Kharpa에 따르면, ChatGPT 출시 후 몇 달 뒤에는 중국 �
 
 지적 재산권을 훔치는 것은 빠른 단기적인 재정 이득을 제공할 수 있지만, 실질적인 연구 및 개발에 투자하는 것이 훨씬 더 장기적인 전략입니다. Cyfirma의 중국 지적 재산권 도난 보고서에 따르면 "지적 재산권 도난은 중국이 경쟁 국가들의 기업들을 대체하기 위해 사용하는 더 큰 산업 전략의 일부입니다. 미국 기업들만 하더라도 지적 재산권 도난으로 매년 4분의 1에서 5분의 1조 달러의 손실이 발생합니다." 보고서는 또한 "중국 기업들이 자주 지적 재산권 보호를 무시하며, 국가 전반적으로 외국 기업, 주로 서양(그리고 점점 더 아시아) 기업들로부터 지적 재산권을 빼앗기 위한 정책들을 오랜 기간 도입해왔다"고 덧붙였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 조지 매그너스는 그의 기사인 중국 경제: 카산드라 vs. 폴리안나에서 중국 경제의 문제로 "지방 정부, 국영 기업 및 부동산의 과도한 부채, 소비 부족, 과도한 투자 및 자본 분배 부정, 인구 통계의 고속 노화의 결과, 생산성 성장의 약세, 더 많은 통제와 억압적인 지배, 민영 기업 및 기업가들의 지배, 그리고 최근에는 상업 및 비즈니스 분리, 이제 위험 감소로 재브랜딩된 것들을 이 논의합니다." 이것들은 사소한 문제가 아닙니다.
 
@@ -136,7 +255,18 @@ CNBC의 Arjun Kharpa에 따르면, ChatGPT 출시 후 몇 달 뒤에는 중국 �
 
 모두 동의하는 점은 중국의 문제들이 쌓여 있다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 자녀 정책은 역사적으로 중요한 인구 틱택 타임봄으로 터져나가고 있습니다. 세계사에서 어떤 나라보다도 중국에서 노인 인구가 더 많아지고 있습니다. 사회 안전망이 부족한 나라에서 이는 매우 우려스럽습니다.
 
@@ -146,7 +276,18 @@ CNBC의 Arjun Kharpa에 따르면, ChatGPT 출시 후 몇 달 뒤에는 중국 �
 
 2023년 12월 22일, 정부가 게임 산업에 새로운 규정을 도입하여 플레이어가 인게임 구매에 얼마나 돈을 쓸 수 있는지 제한했습니다. 이 조치는 게임 개발사의 수익을 강타하여 800억 달러의 주식시장 폭락을 초래했습니다. 우연의 법칙이 다시 한 번 끔찍한 모습을 드러냈습니다. 하루 후에 중국 국가출판방송총국은 손을 뒤로 젔지만 이미 피해는 입혔습니다. 시장이 가장 혐오하는 것은 침범적인 정부보다는 우유부단한 정부일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중국은 외국 투자가 절실한 상황이지만, 투자자들을 위협하는 불투명한 법률을 제정하고 있습니다. 중국이 외국 자본을 절실하게 원하는 이유가 있습니다. 중국인들은 자국 주식 시장에 투자하지 않습니다. 중국 기업의 재무제표가 적어도 의심스러우며, 사실상 부정확하다는 것을 알고 있습니다. 투자자와 비즈니스 커뮤니티 간에 신뢰가 없습니다. 코로나 이전 중국 전역에서 빠르게 성장하던 커피 회사 럭킨 커피는 추후 머디 워터스 단기매도자들 보고서에 걸려, 나는 닝보에서 돌아온 몇 달 후, 약 $310 백만 달러를 조작했다고 알려진 소송에 1억 7500만 달러로 청산했습니다.
 
@@ -156,7 +297,18 @@ CNBC의 Arjun Kharpa에 따르면, ChatGPT 출시 후 몇 달 뒤에는 중국 �
 
 야망과 열망은 쉽게 표현할 수 있지만, 건강한 통치와 견고하고 유연한 기관에 의존한 상황에서 실현하기는 엄청나게 어렵다고 말합니다. 다시 말해, 말은 쉽지만 실행은 굉장히 어렵다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 혹은 안 좋아하더라도, 현대 중국은 언제나 80년대와 90년대 일본과 비교될 것입니다. 많은 사람들이 알고 있는 기업 이름을 가졌다고 해서 반드시 지속적인 성공으로 이어지는 것은 아니라고 말하는 Magnus의 주장입니다. 알리바바, 텐센트, 그리고 바이두는 단지 소니, 토요타, 히타치, 미쓰비시의 중국 버전일 뿐입니다. 확실히 좋은 기업들이지만, 애플, 구글, 페이스북, 또는 마이크로소프트가 너무 걱정해야 할 상대는 아닙니다.
 
@@ -166,7 +318,18 @@ Magnus는 "현대 중국이 1980년대와 1990년대의 일본의 틀에 완벽�
 
 "중국의 GDP가 미국을 넘어서기 위한 창문이 거의 닫혔습니다. 그 격차는 실제로 넓어질 수 있으며, 2023년 처음으로 30년만에 그렇게 된 것처럼,"며 Magnus가 말합니다. 중국 경제에 대한 이러한 비관적 평가는 현재의 중국 감시자들 사이에서 흔한 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 “투자자들이 대부분의 중국 주식 시장을 포기했고, 외국 기업들은 투자와 생산을 아시아를 넘어 다른 국가로 다변화하는 추세에 있다”고 Magnus가 지적했다. 중국 경제는 급격히 사라지기엔 너무 크지만, 평평해지고 있는 것으로 보인다.
 
@@ -176,7 +339,18 @@ Magnus는 “한 나라의 안보는 중장기 경제 전망만큼 안전하다.
 
 ## 참여상”
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 나의 스마트 시티 탐험상(참가자 트로피로도 불리는 (그림 10 참조))은 몇 년 전에 리즈 여행을 상기시키는 나의 아파트 선반 위에 있습니다. 서서히 서부인 참가자들이 이벤트에 참석하기를 갈망하다 보니 비용을 부담해주고 재미있는 상품도 공식식으로 수여되는 것을 생각해볼 때 정말로 값진 경험이었습니다!
 
@@ -184,7 +358,18 @@ Magnus는 “한 나라의 안보는 중장기 경제 전망만큼 안전하다.
 
 지금의 복잡한 기술 세계에서 중국이 경쟁할 수 있을까요? 물론 가능합니다. 중국은 몇 가지를 올바르게 진행하고 있습니까? 물론 그렇습니다. 그러나 중국의 기업 문화에는 미래의 AI 전쟁에서 승리하는 데 도움이 되지 않는 어떤 점이 제한적으로 존재한다고 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프랑스 황제가 되기 전 나폴레옹은 중국 지도를 가리키며 말했습니다. "여기 잠자고 있는 사자가 있다. 그를 자도하라. 그가 깨어날 때 세계를 흔들 것이다." 나폴레옹은 두 세기 전에 이 말을 했고, 그 이후로 중국은 많은 나라들보다 격동한 시기를 보냈습니다. 중국 19세기는 식민 지배, 아편전쟁, 그리고 백년굴이 가득 찼습니다. 20세기는 일본 제국주의 지배, 잔인한 내전, 그리고 모든 것을 흔들어놓은 공산주의 전환으로 이어졌는데, 이는 기근과 수백만 명의 사망을 야기했습니다.
 
@@ -194,7 +379,18 @@ Magnus는 “한 나라의 안보는 중장기 경제 전망만큼 안전하다.
 
 안더슨에게 중국의 AI 우월에 대한 상승은 위협적인 가능성입니다: 중국의 정치 구조는 기술의 최악의 잠재력을 자극시키기보다 제한하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중국은 이제 더 이상 다른 사람들의 기술을 그대로 복사하고 표절하고 위조하는 나라가 아닙니다. 그것은 자체적으로 혁신의 세력이 되었지만, 중국 지도자로서 미국을 최초의 방문지로 선택한 이유에 대해 질문 받았을 때 덩샤오핑의 말을 기억했으면 좋겠습니다. "미국의 동맹국들은 모두 부유하고 강하며, 중국이 부유하고 강하고 싶다면 미국이 필요했다"고 그가 대답했습니다. 이것은 우리 모두가 많은 것을 배울 수 있는 교훈입니다. 인공지능이 우리가 많은 사람들이 우려하는 대로 잘못되면, 인류는 모든 친구를 필요로할 것입니다.
 

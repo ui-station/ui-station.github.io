@@ -3,13 +3,12 @@ title: "시원한 벽, 덜 사용하는 에어컨"
 description: ""
 coverImage: "/assets/img/2024-05-23-CoolWallsLessAirConditioning_0.png"
 date: 2024-05-23 16:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-CoolWallsLessAirConditioning_0.png
 tag: Tech
 originalTitle: "Cool Walls, Less Air Conditioning"
 link: "https://medium.com/@diyecoguy/cool-walls-less-air-conditioning-c269f2197316"
 ---
-
 
 더운 날씨에 외벽을 시원하게 유지하는 것은 에어컨이 사용하는 에너지량을 줄이고 에어컨이 외부로 내보내는 매우 뜨거운 공기의 양을 줄일 수 있습니다. 많은 지역이 더워지고 폭염이 더 흔해지는 요즘, 사막 지방에서의 생활을 통해 배운 내용을 조금이나마 탐구하고자 했습니다.
 
@@ -19,9 +18,20 @@ link: "https://medium.com/@diyecoguy/cool-walls-less-air-conditioning-c269f21973
 
 튜손(Tucson), 애리조나(AZ)에 소재한 비영리 단체인 Watershed Management Group (WMG)는 "쿨 투손 5도(Cool Tucson 5 Degrees)"라는 참실한 새로운 계획을 가지고 있어 대부분의 지역에 적용할 수 있는 유용한 조언을 제공합니다. 저는 점차 WMG의 제안 사항을 많이 내 집에 적용 중입니다. 주로 비용이 적게 들고 쉽게 실행할 수 있는 DIY 옵션에 중점을 두고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-작년 여름 Tucson, AZ은 실제로 105도 이상의 온도가 연속으로 51일 동안 기록을 세웠습니다. 그 동안 평소와 비교하여 26일이었던 것을 생각하면 훨씬 뜨거웠겠네요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+작년 여름 Tucson, AZ은 실제로 105도 이상의 온도가 연속으로 51일 동안 기록을 세웠습니다. 그 동안 평소와 비교하여 26일이었던 것을 생각하면 훨씬 뜨거웠겠네요.
 
 # 왜 시원한 벽에 집중해야 하는가?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@diyecoguy/cool-walls-less-air-conditioning-c269f21973
 
 다음은 고려해볼만한 일반적인 시작점입니다: 전체 "주택 에너지 감사"는 많은 다른 부분(공기 누설, 절연, HVAC 시스템, 창문 등)을 살펴봄으로써 도움이 될 수 있습니다. energy.gov 사이트와 그들의 인포그래픽에서 전문가와 DIY 옵션을 검토해보세요. 전문 감사나 일부 주택 업그레이드를 선택한다면, 회사/개인에 대한 연구와 자격증, 교육 및 리뷰 등을 확인하고 연방 세금 혜택을 고려해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 벽으로 돌아가요! 벽은 종종 일반적으로 지붕보다 단열재가 적게 사용되어, 일부 일어나는 히트 플로우에 대한 저항이 지붕보다 약 절반 정도라고 들었습니다. 그래서 시원한 외벽은 매우 중요한 에너지 효율과 기후 고려 사항이며, 여러 가지 방법으로 실현할 수 있습니다:
 
@@ -40,7 +61,18 @@ link: "https://medium.com/@diyecoguy/cool-walls-less-air-conditioning-c269f21973
 시원한 외벽에 대한 자세한 내용은 CRRC의 What is a Cool Exterior Wall?에 대한 정보를 확인하고 이 그래픽을 참고하세요:
 ![Cool Wall](/assets/img/2024-05-23-CoolWallsLessAirConditioning_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 벽을 시원하게 유지하는 방법
 
@@ -55,7 +87,18 @@ link: "https://medium.com/@diyecoguy/cool-walls-less-air-conditioning-c269f21973
 - 북서쪽 세탁실 문의 "창문" 부분을 단열했어요. 이렇게 해서 그 부분이 크게 시원해졌어요. 방이 얼마나 시원해졌는지 놀랍더라구요, 하지만 아직 해야 할 일이 많아요.
 - 차고에 20인치 바람개비를 설치해서 뜨거운 공기를 빼내는 DIY 해킹을 했어요. 뜨거운 차를 차고에 주차하면 몇 시간 동안 열을 내뿜어요! 뜨거운 부착 차고가 주방 벽을 데워주거든요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 벽면 온도 측정
 
@@ -65,7 +108,18 @@ link: "https://medium.com/@diyecoguy/cool-walls-less-air-conditioning-c269f21973
 
 Amazon에 이런 "적외선 온도계"와 같은 FLIR보다 훨씬 저렴한 옵션도 있는 것 같아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수십마디의 말을 전달할 그림! 저는 5월에 90도의 오후에 이 아래 사진을 찍었어요. 우리 에어컨 콘덴서 윗면은 135도(빨간 점), 옆면은 95도(2)였어요. 이때 에어컨이 작동 중이었습니다. 그늘진 땅에 있는 벽돌(파란 점)은 딱 91도였어요. 지붕 밑 그늘진 곳(1점)은 96도, 노출된 벽(3점)은 105도였습니다.
 
@@ -73,7 +127,18 @@ Amazon에 이런 "적외선 온도계"와 같은 FLIR보다 훨씬 저렴한 옵
 
 아마 a) 콘덴서를 집에서 가장 뜨거운 벽에서 더 멀리 놓거나 b) 콘덴서 윗면에서 나오는 뜨거운 공기가 벽과 지붕에서 반대 방향으로 향하도록 하는 게 더 합리적일 것 같죠? 아마 또 다른 프로젝트가 필요할 것 같네요...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 지면 온도 측정하기
 
@@ -83,7 +148,18 @@ Amazon에 이런 "적외선 온도계"와 같은 FLIR보다 훨씬 저렴한 옵
 
 이야기의 교훈: 벽돌은 뜨거워집니다. 이 구체적인 지역의 벽돌은 열을 잘 가지고 있고 비가 그 아래로 스며들 수 없기 때문에 큰 폭우가 올 때 여기에 물이 채워집니다. 이 부분을 어떻게 해결할지 결국 다시 생각해봐야 하고, 물이 통과할 수 있는 다른 벽돌 디자인들이 있다는 것을 알고 있습니다. 하지만 벽돌을 제거하고 이 지역에 자마자 해야 할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 시원한 천장
 
@@ -95,7 +171,18 @@ Amazon에 이런 "적외선 온도계"와 같은 FLIR보다 훨씬 저렴한 옵
 - 부분적으로 일부 지붕을 그늘 지게 하는 지붕 태양광 설치했습니다. Technicians For Sustainability는 우리의 디자인과 설치를 잘 해주었고 Clean Energy Credit Union이 대출을 처리해 주었어요.
 - 단열재가 온전히 천장에 설치되어 있는지 확인했어요. 언급했듯이 제 것 중 일부가 없었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 더위파도 동안의 일반적인 편안함
 
@@ -111,7 +198,18 @@ Amazon에 이런 "적외선 온도계"와 같은 FLIR보다 훨씬 저렴한 옵
 
 그 밖의 생각: 우리 강아지는 시원한 바닥 타일에 누워만 있는 것을 정말 좋아합니다 😉 더위파도가 계속되면, 집 전체가 온도가 점차 올라가는 것을 느낍니다. 그래서 여름 내내 집이 흡수하는 총 열이 적을수록, 시련적인 타일 위에서 행복하게 지내기 위해 에어컨을 덜 가동해도 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 뜨거운 (그리고 추운) 날씨용 홈 디자인
 
@@ -124,7 +222,18 @@ Amazon에 이런 "적외선 온도계"와 같은 FLIR보다 훨씬 저렴한 옵
 - 집에는 정기적으로 다시 코팅되는 흰색 엘라스토머릭 코팅 지붕이 있습니다. 투손 Rubberized Coatings(R)이라는 회사가 있습니다. 쿨 지붕에 관한 링크를 확인해보세요.
 - 집은 약 50년 정도 된 낡은 집이며 공기 밀봉이 되어 있지 않습니다. 이것은 실제로 장단점으로 볼 수 있습니다. 실내 공기 질이 더 좋아질 수 있지만, 일부 에너지 효율성을 희생해야 할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 집의 디자인과 시공을 활용하여 에너지 효율을 향상시킬 수 있는 여러 가지 방법이 있지만, 관련 비용이 다양합니다:
 
@@ -140,7 +249,18 @@ Amazon에 이런 "적외선 온도계"와 같은 FLIR보다 훨씬 저렴한 옵
 
 # 현대식 밀폐 건물에 대한 생각
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내, 외부로의 공기 유출이 거의 없는 "밀폐"된 건물이 더욱 에너지 효율적일 수 있지만, 적절한 환기 시스템이 없다면 (내 기사 여기) 내부 공기 질이 나빠질 수도 있습니다. 물론 이에는 많은 요인들이 영향을 미칩니다. 따라서 이 주제는 지구 건강과 개인 건강을 균형 있게 고려해야 한다는 개념을 제기할 수 있습니다. 이는 새로운 차량 냄새에 반응하는 일부 사람들을 생각해보면 (예를 들어 작은 공간에 가두어져 있는 경우) 아직도 탈허 기체를 발산하는 건축 자재가 있는 새로운 집을 매입하거나 이사할 때 특히 중요할 수 있습니다. 더 "숨이 통하는" 새 집이나 적절한 환기 시스템이 있는 집이 사실상 더 나은 내부 공기 질을 가질 수도 있지만, 높은 공과금 비용도 발생할 수 있습니다. 따라서 이것은 고려할 사항입니다.
 
@@ -153,7 +273,18 @@ CRRC는 지붕 및 외벽 제품의 복사적 특성을 평가하고 라벨링�
 CRRC의 지붕 및 외벽 제품 목록, 다양한 제조업체의 제품에 대한 상세한 초기 및 3년 후 태양 반사율 및 열 방출율 수치
 CRRC의 주택 및 건물 소유주를 위한 자료
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 브랜드 랭커스터의 사이트와 책은 집과 마당을 시원하게 유지하는 다양한 접근 방법을 제공합니다. 또한 그의 태양 및 그늘 수확에 관한 기사들도 함께 확인해보세요.
 
@@ -163,7 +294,18 @@ CRRC의 주택 및 건물 소유주를 위한 자료
 
 # 궁금한 점이 있으신가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @diyecoguy on Medium | YouTube | Instagram | TikTok | Facebook | Twitter
 

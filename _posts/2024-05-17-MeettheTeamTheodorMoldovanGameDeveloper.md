@@ -3,13 +3,12 @@ title: "팀원 소개 게임 개발자 테오도르 몰도반"
 description: ""
 coverImage: "/assets/img/2024-05-17-MeettheTeamTheodorMoldovanGameDeveloper_0.png"
 date: 2024-05-17 18:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-MeettheTeamTheodorMoldovanGameDeveloper_0.png
 tag: Tech
 originalTitle: "Meet the Team: Theodor Moldovan, Game Developer"
 link: "https://medium.com/@planetquestgame/meet-the-team-theodor-moldovan-game-developer-65b942c93768"
 ---
-
 
 ![Theodor](/assets/img/2024-05-17-MeettheTeamTheodorMoldovanGameDeveloper_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@planetquestgame/meet-the-team-theodor-moldovan-game-d
 
 안녕하세요! 저는 루마니아 브라쇼브 출신의 음악가이자 기술 전문가인 24세 테오도르 몰도반이라고 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 음악가, 그래? 언제부터 그랬어?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@planetquestgame/meet-the-team-theodor-moldovan-game-d
 
 ## 당신은 정말 다재다능한 사람이군요. 다른 취미는 뭘 좋아하시나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 독서를 좋아해요. 제 엄마는 사서이셔서 그런 영향을 받았어요. 작가들 중에서는 도스토예브스키, 톨스토이, 사라마고, 움베르토 에코, 조반니 파피니, 파우스토 브리찌를 즐겨 읽어요. 말로 다 열거하기 힘들만큼 여러 작가들을 좋아해요. 그렇죠, 독서를 아주 좋아해요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@planetquestgame/meet-the-team-theodor-moldovan-game-d
 
 네, 연습이 조금 필요해요. 마슬 업을 할 수 있으려면 10번의 깨끗한 철봉 당기기와 철봉 딥스를 할 수 있어야 해요. 캘리스테닉스에 진심이 담긴 시절에 열 번의 마슬 업 영상이 남아 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래, 나는 모든 것을 조금씩 하기를 좋아해. 웃기게도, 나는 12학년이 될 때까지 정보학에 관심을 가지지 않았어. 삶에서 무엇을 할지 잘 몰랐어. 음악 대학에 지원하거나 군대에 가거나 여러 가지 생각을 했었어. 그런 다음, 정보학을 공부하던 동기들을 알게 되었어. "와, 정말 멋지네," 생각하고 한 번 시도해보기로 했어. 나는 무언가를 빨리 이해하고 기억하는 편이라 재능이 있었는데, 수학과 정보학을 공부하기 시작했고, 한 해 만에 Neomorph 라는 회사에 입사하게 되었고, 그곳을 통해 Galactic Entertainment 에까지 왔어. 이 분야에서 몇 년간 수많은 프로젝트를 해봤어. VR, AR, 섀이더 및 감정에 기반을 둔 절차적 세계까지 모두 정말 멋진 것들이었어.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@planetquestgame/meet-the-team-theodor-moldovan-game-d
 
 나는 게임의 초기 버전에서 절차적으로 생성된 환경을 만들기로 배정받았어 — 지형에 텍스처를 배치하고 서로 혼합하며 나무와 바위 같은 오브젝트를 배치하는 등의 작업들을 했었어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임 개발 분야에서는 매우 역동적인 시기였죠. 우리는 독자적인 엔진을 개발하기 전에 여러 엔진 옵션을 고려했는데, 그 엔진은 오늘날까지도 사용 중이에요!
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@planetquestgame/meet-the-team-theodor-moldovan-game-d
 
 PlanetQuest에서 가장 좋아하는 점은 지속적으로 도전을 받고 영감을 받으며 멋진 동료들과 함께 훌륭한 프로젝트에 참여할 수 있다는 점이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로렌과 함께 일하는 것도 큰 부분 중 하나에요. 우리가 갇힌 느낌이 들 때마다 그는 우리를 많이 도와줘서 많이 배우게 됐어요.
 
@@ -69,7 +123,18 @@ PlanetQuest에서 가장 좋아하는 점은 지속적으로 도전을 받고 �
 
 네, 그런 부분이 있어요. 지형과 구름 생성 작업을 한 건 정말 특별한 순간 중 하나였어요. 그런 종류의 작업을 정말 좋아해서요 — 섀이더와 함께 작업하며 비구름이나 먼지 광물을 만들어내는 것 등. 새로운 것들을 배우는 경험이 가득한 멋진 시간이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 지금 또 다른 일에 참여 중인 것 같아요, 하지만 아직 발표되지 않아서 자세히 언급할 수는 없어요.
 
@@ -77,7 +142,18 @@ PlanetQuest에서 가장 좋아하는 점은 지속적으로 도전을 받고 �
 
 가장 즐겁게 즐기는 게임은 Prince of Persia 시리즈에요. 그 게임들을 정말 좋아해요. 그들에게 흥미로운 게임 개발 측면이 많아요, 예를 들어, 그림자 남자 등이 있어요. 첫 번째 게임을 만들 때 메모리에 제한이 있었어서, 함정을 피하는 게임을 만들고 싶은 생각이 들었대요. 그의 동료들은 그게 그다지 재미있지 않다며 비판을 했어요. 그래서 어떤 프로그래밍 마술을 거쳐, 주인공의 색깔을 바꿔 적으로 만들 수 있었대요. 정말 흥미진진한 이야기죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원래 게임을 즐겨 했는데 PSP로 다시 제작된 오리지널을 플레이했었고 정말 좋았어요. 사실 어릴 때 플레이한 모든 게임들이 나에게 특별한 의미를 가지고 있어요. 어릴 때는 새로운 콘솔이나 게이밍 PC를 사는 돈이 없었기 때문에 친구 집에 가서 게임을 플레이하는 경험으로 게임을 즐겼답니다. 실제로 이게 제 가장 좋아하는 게임 기억으로 이어지죠.
 
@@ -87,7 +163,18 @@ PlanetQuest에서 가장 좋아하는 점은 지속적으로 도전을 받고 �
 
 ## 조금 변화를 주어서, 이제 여러분의 큰 열정인 음악에 대해 이야기해보죠. 드럼을 청각으로 배우셨나요, 아니면 더 전통적인 방식을 택하셨나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 귀로 듣기를 시작했어요. 여러 노래를 듣고, 그들을 여러 부분으로 나눠보고 전체를 천천히 파악하려고 노력했어요. 저는 드러머를 듣곤 했어요 — 그들이 발, 왼손, 오른손을 어떻게 사용하는지, 무엇을 치는지를 듣곤 했어요. 그렇게 한 동안을 보냈죠. 그 후 제 친구 중 한 명은 실제로 여러 악기를 연주하는 사람으로, 나에게 무엇을 잘못하고 있는지 보여 줄 용기를 내서 도와주었어요. 그는 정말 대단한 작곡가이기도 해요. 그는 모든 악기를 연주하는 7장의 앨범을 만들었죠! 제게도 그와 같은 일을 할 수 있도록 영감을 주었어요.
 
@@ -97,7 +184,18 @@ PlanetQuest에서 가장 좋아하는 점은 지속적으로 도전을 받고 �
 
 ## 이루어지길 바래요! 드럼 연주 시 가장 좋아하는 노래는 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 정말 즐겨 연주하는 여러 곡들이 있어. 그 중 대부분은 Porcupine Tree, Dream Theater 등의 곡이야. 오, 내 신이, Pink Floyd! 그들을 잊을 수 없어, 정말로 Pink Floyd를 좋아해. 이야기할만큼 많아. Leprous와 Agent Fresco도 떠오르네. 물론, 나는 밴드를 위해 작곡한 드럼 파트들을 또한 정말 좋아해. 그것들은 내게 깊은 감성을 전달해주거든. 때로는 헤드셋을 쓰고 내 음악을 연주하기도 해. 다음에 연주할 때 더 잘 들리도록 여기저기 약간 변형을 가하지.
 
@@ -107,7 +205,18 @@ PlanetQuest에서 가장 좋아하는 점은 지속적으로 도전을 받고 �
 
 내가 정말 좋아했던 몇 가지 콘서트가 있어. 물론 내 공연 중 일부는 아주 영감을 주었어. 무대 위에 서서 사람들을 위해 연주하는 기분이 좋기 때문이야.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내가 가장 좋아하는 것을 선택해야 한다면, 나는 부쿠레슬트의 가장 큰 경기장인 Arenele Romane에서 닉 메이슨의 소서풀 오브 시크릿을 보는 것이 가장 좋을 것입니다. 평생 핑크 플로이드 팬으로서, 그 공연은 그들의 전설적인 사운드스케이프를 통해 홀린 듯한 여정이었습니다. 핑크 플로이드의 원래 라이브 베이시스트와 함께한 점이 더욱 특별하게 만들었습니다.
 
@@ -117,7 +226,18 @@ PlanetQuest에서 가장 좋아하는 점은 지속적으로 도전을 받고 �
 
 나는 가장 좋아하는 드럼 솔로가 없다고 생각하지만, 그 중에서 내게 높은 인상을 주는 드러머를 선택해야 한다면, Porcupine Tree의 게빈 해리슨일 것입니다. 마틴 밀러 밴드의 드러머도 연주하는 놀라운 고스트 노트에 대한 특별한 인사를 전합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 그리고 이만 마치도록 하겠습니다! 모두와 이런 소중한 정보를 나눠 줘서 정말 감사합니다! 이제 행성 탐사를 멋지게 만드는 데로 돌아가도록 할게요.
 

@@ -3,13 +3,12 @@ title: "Jetpack Glance - 알아두어야 할 주요 기능 및 장점"
 description: ""
 coverImage: "/assets/img/2024-06-23-JetpackGlance_0.png"
 date: 2024-06-23 01:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-JetpackGlance_0.png
 tag: Tech
 originalTitle: "Jetpack Glance"
 link: "https://medium.com/proandroiddev/jetpack-glance-86a2fc30dd5d"
 ---
-
 
 ## 안드로이드에서 아름다운 위젯을 만드는 Compose 방법
 
@@ -19,7 +18,18 @@ link: "https://medium.com/proandroiddev/jetpack-glance-86a2fc30dd5d"
 
 여기서 Jetpack Glance가 혁신적인 새로운 방식으로 등장하여 문제를 해결합니다. Jetpack Compose의 선언적 UI의 강점을 활용하여 Glance는 위젯 개발을 간소화하고 더 쉽고 즐겁게 안드로이드 애플리케이션용 아름다운 기능적 위젯을 만드는데 도움을 줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최근에 출시된 Jetpack Glance 1.1.0에 대해 얘기해볼까요? 이번 릴리즈는 위젯 개발을 간편하게 해줄 수 있는 잠재력에 대해 특별한 관심을 불러일으키는군요. 그래서 저는 Glance의 기능을 직접 경험해보기로 결심했습니다. 이 기능들을 시험해보기 위해, 저는 내 책 앱을 위한 위젯을 만들기로 했습니다. 이 위젯은 사용자 데이터에 접근하고 마지막으로 읽은 책을 계속할 수 있는 편리한 단축키를 제공하기 위해 Glance의 기능을 활용할 것입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/proandroiddev/jetpack-glance-86a2fc30dd5d"
 
 어떠한 프로젝트라도 시작하기 전에 필요한 종속성을 설정하는 것부터 시작해야 합니다. 이 경우, 두 가지 주요 Jetpack Glance 라이브러리를 활용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 [버전]
@@ -50,7 +71,18 @@ glance-material = { group = "androidx.glance", name = "glance-material3", versio
 
 저희 Glance 위젯 개발은 MyBooksAppWidget과 MyBooksAppWidgetReceiver 두 가지 핵심 클래스를 설정하는 데서 시작됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - MyBooksAppWidget: 이 클래스는 GlanceAppWidget을 상속받습니다 (나의 경우에는 의존성 주입을 위해 Koin을 사용합니다. 선호하는 것을 선택할 수 있습니다). 이 클래스 안에서 위젯의 레이아웃을 정의할 것입니다.
 
@@ -68,7 +100,18 @@ class MyBooksAppWidgetReceiver : GlanceAppWidgetReceiver() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 xml 디렉토리에 새 리소스 파일을 만들어야 합니다 (저의 경우 my_book_widget_info로 이름 짓겠습니다). 이 파일은 위젯의 구성을 나타내며 홈 화면에서의 동작과 외관을 정의하는 다양한 속성을 제공합니다.
 
@@ -101,33 +144,54 @@ xml 디렉토리에 새 리소스 파일을 만들어야 합니다 (저의 경�
 - initialLayout은 위젯이 데이터를 앱 로직이나 데이터베이스에서 검색하는 동안 표시될 레이아웃을 정의합니다. 이 임시 레이아웃은 사용자가 데이터 검색 과정 중에 빈 공간을 보지 않도록 플레이스홀더 역할을 합니다. glance_default_loading_layout를 사용하면 Glance 자체에서 제공하는 표준 로딩 화면을 활용할 수 있습니다.
 - previewImage 및 description은 위젯이 픽커 내에서 어떻게 보여질지를 정의합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-JetpackGlance_1.png" />
 
 Glance 위젯의 기본 구조를 설정하는 마지막 단계는 AndroidManifest.xml 파일 내에서 수신기 클래스를 등록하는 것입니다. 이 등록 프로세스는 Android 시스템에 위젯 수신기의 존재를 알리고, 해당 브로드캐스트를 수신하여 위젯 업데이트를 트리거할 수 있도록합니다.
 
 ```js
- <receiver
-            android:name=".widget.MyBooksAppWidgetReceiver"
-            android:exported="true"
-            android:label="@string/widget_receiver_label">
+<receiver
+  android:name=".widget.MyBooksAppWidgetReceiver"
+  android:exported="true"
+  android:label="@string/widget_receiver_label"
+>
+  <intent-filter>
+    <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+  </intent-filter>
 
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/my_book_widget_info" />
-        </receiver>
+  <meta-data
+    android:name="android.appwidget.provider"
+    android:resource="@xml/my_book_widget_info"
+  />
+</receiver>
 ```
 
 핵심 구조를 확립했으므로 이제 위젯의 레이아웃 생성에 집중해 보겠습니다. Glance를 사용하면 다양한 시나리오에 대응하는 적응형 레이아웃을 디자인할 수 있습니다. 이러한 적응성은 데이터 수신 및 홈 화면에서 사용자가 선택한 크기에 따라 위젯이 표시를 조정함을 보장합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 적응형 레이아웃
 
@@ -137,7 +201,18 @@ MyBooksAppWidget 클래스는 위젯의 시각적 모습을 결정하는 중요�
 
 sizeMode: 이것은 위젯이 홈 화면의 사용 가능한 공간에 따라 크기를 어떻게 관리하는지 제어합니다. Glance는 세 가지 옵션을 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - SizeMode.Single: 위젯은 크기가 고정되어 있으며 크기 변경에 반응하지 않습니다.
 - SizeMode.Exact: 위젯은 시스템에서 모든 크기 업데이트를 받아들여 완전히 동적 레이아웃 조정이 가능합니다.
@@ -166,7 +241,18 @@ class MyBooksAppWidget : GlanceAppWidget(), KoinComponent {
 
 provideGlance 함수는 위젯의 시각적 표현의 핵심을 형성합니다. 여기에서 Jetpack Compose 컴포저블을 사용하여 실제 레이아웃을 정의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 ...
@@ -207,8 +293,18 @@ provideGlance 함수는 위젯의 시각적 표현의 핵심을 형성합니다.
 
 ZeroState 컴포저블은 표시할 관련 데이터가 없을 때 위젯에 표시되는 플레이스홀더 레이아웃으로 작동합니다. 이 시나리오는 사용자가 책을 읽기 전에 위젯을 추가한 경우에 발생합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 import androidx.glance.Button
@@ -258,8 +354,18 @@ ZeroState 조합은 Glance의 적응형 레이아웃을 만들어 사용 가능�
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*ukJec6XVolL-uwNf9VbUhQ.gif" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 BookState 코움파서블은 ZeroState의 기반을 두고 있습니다. 사용자가 현재 읽고 있는 책 또는 최근 상호 작용한 책에 대한 정보를 표시하는 데 사용됩니다. ZeroState와 유사하게 버튼은 충분한 수직 공간이 있을 때에만 표시됩니다. 이는 레이아웃이 균형을 유지하고 시각적 혼란을 피하기 위해 보장합니다.
 
@@ -305,7 +411,18 @@ fun BookState(book: LibraryItem, onClick: Action) {
 
 # 위젯 업데이트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Glance는 위젯 구성(my_book_widget_info)에서 정의된 간격에 따라 위젯 업데이트를 관리하지만 즉시 업데이트를 원하는 경우가 있을 수 있습니다.
 
@@ -316,7 +433,18 @@ Glance는 이 수동 업데이트를 수행하는 편리한 방법을 제공합�
 가치 있는 Glance 위젯을 만드는 것은 첫 번째 단계일 뿐입니다. 사용자가 이를 발견하고 활용할 수 있도록하기 위해서는 효과적인 홍보 전략을 구현하는 것이 중요합니다.
 내 앱에서는 현재 책을 다시 읽을 수 있도록 도와주는 위젯을 개발했습니다. 그러나 사용자가 이를 찾아보기 위해 위젯 목록을 활발히 찾아보지 않을 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 앱의 특정 지점에 위젯을 홍보하는 함수를 정의할 수 있습니다.
 
@@ -334,7 +462,18 @@ fun promoteWidget(context: Context) {
 
 결과물은 다음과 같을 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![JetpackGlance_2](/assets/img/2024-06-23-JetpackGlance_2.png)
 
@@ -344,7 +483,18 @@ fun promoteWidget(context: Context) {
 
 이 지식을 활용하여 자신만의 Glance 위젯을 만들어 보세요! 다양한 기능을 실험하고 어떻게 앱과 사용자에게 이점을 줄 수 있는지 탐색해보세요. 기억하세요, 핵심은 가치를 제공하고 훌륭한 사용자 경험을 제공하는 데 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 친구야! 댓글을 자유롭게 공유해 주세요. 또는 LinkedIn에서 연락해도 괜찮아요.
 

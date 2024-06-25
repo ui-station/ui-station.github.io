@@ -3,13 +3,12 @@ title: "C를 스크립팅 언어로 활용하기, 제13부"
 description: ""
 coverImage: "/assets/img/2024-05-20-UsingCasaScriptingLanguagepart13_0.png"
 date: 2024-05-20 16:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-UsingCasaScriptingLanguagepart13_0.png
 tag: Tech
 originalTitle: "Using C++ as a Scripting Language, part 13"
 link: "https://medium.com/@fwsgonzo/using-c-as-a-scripting-language-part-13-cb99c38205d9"
 ---
-
 
 힙 관련 함수 최적화
 
@@ -19,8 +18,18 @@ link: "https://medium.com/@fwsgonzo/using-c-as-a-scripting-language-part-13-cb99
 
 이에 대한 간단한 벤치마크를 만들었습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Benchmarking it, it took around 50ns. That’s not too bad. But, it can be improved just by avoiding all the calls that do nothing but call another function.
 
@@ -28,8 +37,18 @@ So, the first thing to do is to call the system call wrapper directly. This mean
 
 The last thing to try, was to write inline functions for new and delete, which would call my inline assembly functions sys_malloc and sys_free:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 인라인 void* sys_malloc(std::size_t size) {
@@ -66,8 +85,18 @@ The last thing to try, was to write inline functions for new and delete, which w
 어셈블리를 살펴보니, 완벽해 보이고, 더 이상 개선할 수 없을 것 같아요. 실행 속도가 너무 빨라서 당연히 이렇게 되는 거예요. 거의 네이티브 성능에 가깝습니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-20-UsingCasaScriptingLanguagepart13_0.png)
 
@@ -76,9 +105,19 @@ wasmtime을 malloc() - free() 콤보로 실행했고, 평균 66ns가 걸린 것�
 ![차트](/assets/img/2024-05-20-UsingCasaScriptingLanguagepart13_1.png)
 
 더 빠른 힙 할당기를 작성할 에너지가 없을 것 같아요. 특히, 내 힙 할당기가 견고하고 잘 테스트되어 있을 때 말이에요. 오랜 시간 잘 돌아가다가 이상한 메모리 조각화도 그리 심하게 일어나지 않아요. 게임을 만드는 것이 중요한데, 그럴 때 힙 할당기 같은 기본 할당기를 바꾸는 게 무서울 때가 있죠.
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래도 괜찮네요. 제가 가까이 왔군요!
 

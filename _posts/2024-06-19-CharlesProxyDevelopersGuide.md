@@ -3,14 +3,12 @@ title: "찰스 프록시 개발자 안내서"
 description: ""
 coverImage: "/assets/img/2024-06-19-CharlesProxyDevelopersGuide_0.png"
 date: 2024-06-19 11:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-CharlesProxyDevelopersGuide_0.png
 tag: Tech
 originalTitle: "Charles Proxy : Developer’s Guide"
 link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb71466"
 ---
-
-
 
 ![CharlesProxyDevelopersGuide_0](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_0.png)
 
@@ -21,8 +19,18 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 ## 일정
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Charles 설정하기
 - HTTP 트래픽 모니터링
@@ -40,33 +48,64 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 🐞 참고: 여기서는 제 핸드폰을 아이폰으로 고려하지만, 안드로이드는 거의 동일한 단계를 가지고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 맥에서 인증서 설치하기 —
 
-찰스 ` 도움말 ` SSL 프록시 ` 인증서 설치 로 이동
+찰스 `도움말` SSL 프록시 ` 인증서 설치 로 이동
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_1.png)
 
-그리고 — '찰스 루트 인증서 저장'을 클릭합니다. *.cer 파일이 나옵니다. 해당 파일을 더블 클릭하여 키체인에 넣어주시면 됩니다.
+그리고 — '찰스 루트 인증서 저장'을 클릭합니다. \*.cer 파일이 나옵니다. 해당 파일을 더블 클릭하여 키체인에 넣어주시면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_2.png)
 
 이제 iPhone에서 인증서를 설치할 시간입니다—
 
 - Charles의 `Help` 메뉴로 이동해 로컬 IP를 확인하고 이 IP를 기억해주세요 😅
-- iPhone을 꺼내어 설정을 열고, Mac이 연결된 동일한 Wi-Fi 네트워크에 연결하세요 — 설정 ` Wi-Fi ` 연결된 Wi-Fi의 (i)를 탭합니다 ` 프록시 구성 ` 수동 선택
+- iPhone을 꺼내어 설정을 열고, Mac이 연결된 동일한 Wi-Fi 네트워크에 연결하세요 — 설정 `Wi-Fi` 연결된 Wi-Fi의 (i)를 탭합니다 `프록시 구성` 수동 선택
 - 서버: 단계-1에서 얻은 동일한 IP 주소
-포트: 8888
-인증: 비활성화
+  포트: 8888
+  인증: 비활성화
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_3.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이후 Mac에서 장치가 프록시되고 있음을 허용하는 경고를 받게 됩니다. 장치를 모니터링할 수 있도록 허용을 선택해 주세요. 그렇지 않을 경우, 장치가 모니터링되지 않습니다.
 - 같은 네트워크에 연결한 후,
@@ -79,17 +118,39 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 이제 설치가 성공적으로 완료되었음을 확인할 수 있으며 — 설정 프로필 아래에 있습니다.
 
-6. 마지막 단계가 남았습니다. 설정으로 돌아가기 ` 일반 ` 정보 ` 인증서 신뢰 설정 ` Charles Root Custom Certificate를 켜기(기본적으로 끔)
+6. 마지막 단계가 남았습니다. 설정으로 돌아가기 `일반` 정보 `인증서 신뢰 설정` Charles Root Custom Certificate를 켜기(기본적으로 끔)
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_6.png)
 
 7. 마지막으로, Charles 설정이 완료되었습니다 🚀
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## HTTP 트래픽 모니터링
 
@@ -100,7 +161,18 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보시다시피, 개요 탭에는 호스트 이름, DNS 주소, HTTP 응답 코드, HTTP 메소드, 프로토콜 이름 등 메타데이터가 있습니다. 이 메타데이터는 메트릭 계산에 필요한 응답 시간, 지연 시간, 핸드셰이크 타임스탬프 등이 포함되어 있습니다.
 
@@ -110,7 +182,18 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 그리고 Response 탭에는 HTTP 응답 정보가 포함되어 있습니다. 여기에는 헤더, HTTP 본문 및 Raw HTTP 데이터(관심이 있다면)가 포함됩니다. 개인적으로 JSON 텍스트만 필요합니다. 왜냐하면 여기서 HTTP 본문이 예쁘게 출력되기 때문이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-CharlesProxyDevelopersGuide_9.png" />
 
@@ -118,14 +201,25 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 화면보다 마크다운 양식이 더 깔끔하네요.요게 표 형식이니까 마크다운 테이블로 바꿔볼게요.
 
-| 사진 | 설명 |
-|---|---|
-| <img src="/assets/img/2024-06-19-CharlesProxyDevelopersGuide_9.png" /> | 모의 응답 |
-| <img src="image_url_here" /> | 모의 응답 설명 |	
+| 사진                                                                   | 설명           |
+| ---------------------------------------------------------------------- | -------------- |
+| <img src="/assets/img/2024-06-19-CharlesProxyDevelopersGuide_9.png" /> | 모의 응답      |
+| <img src="image_url_here" />                                           | 모의 응답 설명 |
 
 모의 응답을 하려면 두 가지 방법을 알아야 해요. 요는 로컬 방식과 원격 방식이에요.모바일 앱 개발자인너 니정에서 사용자의 JSON 데이터를 가져오는 중이야 그 데이터는 GET API– (https://jsonplaceholder.typicode.com/users/1) 로부터 가져오는 데이터야. 그런데 이상한 일이 발생할 때를 대비해서 값을 임의로 설정하고 싶어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 긍정적인 예상되는 응답:
 
@@ -175,18 +269,39 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-찰스는 당신이 https://jsonplaceholder.typicode.com/users/1의 응답을 모의할 수 있게 해줍니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+찰스는 당신이 https://jsonplaceholder.typicode.com/users/1의 응답을 모의할 수 있게 해줍니다.
 
 찰스의 `도구` 메뉴에서 `맵 로컬 (Map Local)`을 선택하고, 맵 로컬을 활성화한 후 추가하세요.
 
-또한, 모의하는 동안 *.json 파일 경로를 선택해야 합니다. 이 파일은 진실의 근원이 될 것입니다. 저는 mock_response.json을 만들었습니다. 이 JSON 파일은 서버의 JSON 응답을 덮어쓸 것입니다.
+또한, 모의하는 동안 \*.json 파일 경로를 선택해야 합니다. 이 파일은 진실의 근원이 될 것입니다. 저는 mock_response.json을 만들었습니다. 이 JSON 파일은 서버의 JSON 응답을 덮어쓸 것입니다.
 
 <img src="/assets/img/2024년-06월-19일-찰스프록시개발가이드_10.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Charles Proxy Developers Guide 11](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_11.png)
 
@@ -196,19 +311,40 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 📕 노트: 매우 특이한 API 응답을 재현하고 싶을 때에는 이 Map Local을 사용하여 클라이언트에 제공할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에 대체제가 또 하나 있어요 — Map Remote이라고 해요. 이름에서 알 수 있듯이 API 경로를 다른 API 경로로 라우팅합니다.
 예를 들어, /posts/1을 /users/1 API로 리디렉션하고 싶다고 가정해봅시다. 사용자가 https://jsonplaceholder.typicode.com/posts/1를 요청하려고 할 때, 해당 요청은 https://jsonplaceholder.typicode.com/users/1로 리디렉션됩니다. 제가 일상생활에서 별로 사용하지는 않았지만, 이제 비슷한 상황이 닥치면 어떻게 해야 하는지 알게 되었죠.
 
-찰스 ` Tools ` Map Remote ` Enable ` Add
+찰스 `Tools` Map Remote `Enable` Add
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_13.png)
 
 ## 중단점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 브레이크포인트는 HTTP 요청 또는 응답을 변경하는 데 도움이 되는 도구입니다. 변경이란 헤더, 본문 등을 자유롭게 수정하는 것을 말합니다.
 
@@ -218,7 +354,18 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 ![image](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기, 모든 요청과 응답에 대해 jsonplaceholder.typicode.com에 대한 중단점을 추가했습니다. 이것은 마치 인터셉터처럼 작동합니다. HTTP 요청을 만들 때마다 Charles는 HTTP 요청을 변경할 수 있는 요청을 중지할 것입니다.
 
@@ -226,7 +373,18 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 여기서는 현재 요청을 변경하지 않을 것이므로 실행을 선택할 것입니다. 곧 다른 중단점 창이 나타날 것이고 여기서 JSON의 사용자 이름을 abhishekRavi로 변경하고 실행을 누를 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_16.png)
 
@@ -236,17 +394,39 @@ link: "https://medium.com/@greenSyntax/charles-proxy-developers-guide-81f59bb714
 
 📕 노트북: HTTP 요청/응답을 수정하기 위해 중단점을 사용할 수 있어요. 헤더, 상태 코드, JSON 본문 또는 아무 것이나 수정할 수 있어요. 자유롭게 할 수 있는 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 다시 쓰기
 
 다시 쓰기는 '브레이크포인트'의 개선된 버전입니다. 다시 쓰기는 미리 정의된 브레이크포인트입니다. 특정 API 엔드포인트의 규칙을 설정할 수 있습니다.
 
-Charles ` 도구 ` 다시 쓰기 ` 활성화 ` 추가 ` 위치 및 작업 생성
+Charles `도구` 다시 쓰기 `활성화` 추가 ` 위치 및 작업 생성
 
 <img src="/assets/img/2024-06-19-CharlesProxyDevelopersGuide_18.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기, JSONPlaceholder 규칙을 생성했고 원격 위치 또는 API 경로를 언급했어요. 그리고 Body에는 'title'을 't00tle'로 바꾸라고 요청했어요.
 
@@ -255,18 +435,40 @@ Charles ` 도구 ` 다시 쓰기 ` 활성화 ` 추가 ` 위치 및 작업 생성
 
 📕 노트: 일부 작업을 반복하려면 해당 작업을 위한 규칙을 작성할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Throttling
 
 앱 개발자에게 매우 유용한 기능 중 하나입니다. 예를 들어 API의 응답 시간과 대역폭을 테스트하고 앱의 동작을 확인하고 싶을 때 활용할 수 있습니다. 즉, Charles Throttler를 구성하여 응답 시간과 대역폭을 조절할 수 있습니다.
 먼저 Throttler 설정을 구성한 다음 Throttler를 실행하십시오. 저는 항상 56Kbps 모뎀 프리셋을 선택합니다.
 
-찰스 ` Proxy ` Throttler 시작
+찰스 `Proxy` Throttler 시작
 
 ![image](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_20.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 반복
 
@@ -276,19 +478,39 @@ API 엔드포인트를 우클릭하고 "Repeat Advance"를 선택해보세요 �
 
 ![Repeat Advance](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_21.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-06-19-CharlesProxyDevelopersGuide_22.png)
 
-Also, you can configure your repeat settings — 
+Also, you can configure your repeat settings —
 
 Setting Iteration to 100 and Concurrency to 3 means you will send 100 HTTP API requests in batches of 3 requests each time.
 
 📕 Notebook: I mostly use this to perform load tests on the API to check if it responds with 2xx status codes.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 문제 해결하기
 
@@ -299,7 +521,18 @@ Setting Iteration to 100 and Concurrency to 3 means you will send 100 HTTP API r
 
 2. 응답이 항상 암호화되어 출력됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 호스트 이름에 대해 SSL 프록시 설정이 활성화되어 있는지 확인해보세요. 트리에서 호스트 이름을 오른쪽 클릭하여 'Enable SSL Proxying' (아직 활성화되지 않은 경우) 또는 'Disable SSL Proxy' (이미 활성화된 경우)로 확인할 수 있습니다. 또는 개요에서 확인할 수도 있어요 —
 
@@ -309,6 +542,17 @@ Setting Iteration to 100 and Concurrency to 3 means you will send 100 HTTP API r
 
 ## 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 찰스(Charles)는 클라이언트와 서버 사이에 위치하여 HTTP 트래픽을 모니터링하는 프록시 응용 프로그램입니다. 요청과 응답을 필요에 따라 조작할 수 있습니다. 우리가 위에서 논의한 것보다 더 많은 기능이 있습니다. 찰스의 대안으로 Proxyman을 시도해 볼 수도 있습니다.

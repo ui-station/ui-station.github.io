@@ -3,13 +3,12 @@ title: "ChatGPT-4의 비밀 슈퍼파워 YouTube 데모에서 보이지 않은 �
 description: ""
 coverImage: "/assets/img/2024-05-18-ChatGPT-4osSecretSuperpowersWhattheYouTubeDemoDIDNTShowYou_0.png"
 date: 2024-05-18 19:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-ChatGPT-4osSecretSuperpowersWhattheYouTubeDemoDIDNTShowYou_0.png
 tag: Tech
 originalTitle: "“ChatGPT-4o’s Secret Superpowers: What the YouTube Demo DIDN’T Show You 🤯”"
 link: "https://medium.com/@TrendingCentral/chatgpt-4os-secret-superpowers-what-the-youtube-demo-didn-t-show-you-61bb271ccff4"
 ---
-
 
 테크 세계는 오픈AI의 AI 기술의 최신 발전인 ChatGPT-4o의 출시 이후에 흥분으로 가득 찼습니다. 이전에 본 적이 없는 ChatGPT-4o는 "토마토"를 의미하는 "o"와 함께 천문적인 자연스러운 인간-컴퓨터 상호작용 분야의 혁명적인 한 걸음을 나아갑니다. YouTube 발표에서 많은 기능을 강조했지만, 미술되지 않은 놀라운 기능이 더 많이 있습니다. ChatGPT-4o가 게임 체인저인 이유와 그의 혁신적인 숨겨진 기능을 깊게 들여다보겠습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@TrendingCentral/chatgpt-4os-secret-superpowers-what-t
 
 ChatGPT-4o는 텍스트, 오디오, 이미지 및 비디오의 모든 조합을 입력으로 받아들이고, 텍스트, 오디오 및 이미지 형식으로 출력을 생성할 수 있도록 설계되었습니다. 이 유연성은 인간과 기계 간 보다 직관적이고 원활한 상호작용을 위한 새로운 지평을 열어줍니다. 놀랍게도, 모델의 오디오 입력에 대한 응답 시간이 인간의 대화 속도를 흉내내는 232밀리초로 매우 빠릅니다. 또한, 영어 텍스트 및 코드에서 GPT-4 Turbo의 성능과 맞먹아, 비영어 언어의 텍스트 처리를 현저히 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 다중 모달 기능은 사용자들이 말로 된 지시와 시각적 단서의 조합을 제공할 수 있도록 해줍니다. 이를 통해 더 풍부하고 세밀한 의사 소통이 가능해지며, 여러 가지 입력을 동시에 처리하고 응답할 수 있는 능력은 사용자 경험을 향상시켜 AI와의 상호 작용이 사람과 대화하는 듯한 느낌을 줍니다.
 
@@ -29,7 +39,18 @@ GPT-3.5와 GPT-4와 같은 기존 모델은 음성 상호 작용을 위해 여�
 
 이 통합된 방법은 모델이 오랜 대화 동안 문맥을 유지하고 복잡한 대화를 처리하는 능력을 향상시킵니다. 그룹 토론 중에 다른 화자를 구별하거나 대화에서 감정적 함의를 이해하는 것과 같은 작업에서, ChatGPT-4o의 통합된 설계는 대화 능력을 크게 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다양한 형태에서 우수한 성능
 
@@ -40,7 +61,18 @@ ChatGPT-4o의 평가 지표는 인상적입니다:
 
 이러한 지표는 ChatGPT-4o의 다양한 형태를 이해하고 생성하는 고급 기능을 강조합니다. 추론 테스트에서의 성과는 복잡하고 미묘한 쿼리를 처리하는 능력을 보여주며, 교육 및 전문 분야에 강력한 도구로 사용될 수 있음을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 비디오에서 소개되지 않은 혁신적 기능
 
@@ -51,7 +83,18 @@ ChatGPT-4o의 평가 지표는 인상적입니다:
 - 로봇 작가의 차단: ChatGPT-4o는 텍스트 설명을 일관된 이미지 시퀀스로 전환할 수 있습니다. 이를 통해 로봇이 종이를 입력하고 찢어내는 과정을 단계별로 시각화할 수 있습니다. 사건 시퀀스를 이해하고 묘사할 수 있는 능력으로, 이는 이야기와 시각 요소를 결합하는 내용 작성 및 블렌딩에 뛰어난 기능을 제공합니다.
 - 우편집사 샐리: 이 기능은 상세한 텍스트 설명을 해석하고 해당하는 시각적 표현물을 생성할 수 있습니다. 샐리가 우편을 배달하거나 강아지와 상호 작용하며 이동하는 장면 등을 묘사할 수 있으며, 캐릭터 일관성과 상세한 시각적 서술을 보장합니다. 이 능력은 ChatGPT-4o의 교육, 엔터테인먼트, 마케팅과 같은 분야에서 텍스트 입력으로부터 매력적이고 정확한 시각적 이야기를 만드는 것을 강조하며, 이를 통해 유틸리티가 향상됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-ChatGPT-4osSecretSuperpowersWhattheYouTubeDemoDIDNTShowYou_1.png" />
 
@@ -62,7 +105,18 @@ ChatGPT-4o의 평가 지표는 인상적입니다:
 
 <img src="/assets/img/2024-05-18-ChatGPT-4osSecretSuperpowersWhattheYouTubeDemoDIDNTShowYou_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예술적 및 타이포그래픽 스킬
 
@@ -73,7 +127,18 @@ ChatGPT-4o의 평가 지표는 인상적입니다:
 
 ## 브랜딩 및 마케팅
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코스터 위의 로고: ChatGPT-4o는 명확한 소재 및 디자인 명세를 반영하여 코스터와 같은 제품에 브랜드 로고를 정확하게 배치할 수 있습니다. 예를 들어, 나무와 대리석 코스터에 새겨진 OpenAI 로고를 묘사하여 브랜딩 및 제품 디자인 작업을 처리하는 데 정확성을 보여줍니다. 이 기능은 브랜드 제품을 시각화하고 마케팅, 디자인 및 프레젠테이션에 도움이 되는 데 매우 가치가 있습니다.
 
@@ -83,7 +148,18 @@ ChatGPT-4o의 평가 지표는 인상적입니다:
 
 - 여러 줄 렌더링 — 로봇 문자 입력: 이 기능을 통해 ChatGPT-4o는 로봇이 문자를 보내는 것을 자세히 보여주는 능력이 있습니다. 명확하고 가독성 있는 여러 줄 메시지를 생성할 수 있습니다. 로봇이 핸드폰의 메시지 앱을 보는 일인칭 시점을 묘사하여 텍스트가 말풍선 안에서 정확하게 표현되도록 합니다. 이 기능은 교육 자료, 이야기 전달 및 디자인 개념에 대한 시각적 콘텐츠를 작성하는 데 모델의 유틸리티를 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-ChatGPT-4osSecretSuperpowersWhattheYouTubeDemoDIDNTShowYou_5.png" />
 
@@ -94,7 +170,18 @@ ChatGPT-4o의 평가 지표는 인상적입니다:
 
 <img src="/assets/img/2024-05-18-ChatGPT-4osSecretSuperpowersWhattheYouTubeDemoDIDNTShowYou_6.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 변수 바인딩 - 큐브 쌓기: 이 능력을 통해 ChatGPT-4o는 텍스트 설명을 기반으로 특정 특성과 배열을 가진 객체를 시각화할 수 있습니다. 예를 들어, 다양한 색상과 문자가 특정 순서로 쌓인 큐브를 정확하게 묘사할 수 있어 복잡한 변수 할당을 다루고 일관성을 유지하는 능력을 보여줍니다. 이 기능은 교육 자료, 안내서 및 창의적인 프로젝트를 시각화하는 데 유용합니다.
 - 콘크리트 시: ChatGPT-4o는 시와 시각 예술을 결합한 시각적으로 매력적이고 구조적으로 정확한 콘크리트 시를 만들 수 있습니다. 단어를 모양을 형성하도록 배열하거나 OpenAI 로고와 같은 모양을 형성하는 등의 단어를 배치하고 추가 지침에 따라 디자인을 사용자 정의할 수 있습니다. 이 기능은 텍스트를 시각적 요소와 결합하여 매력적이고 의미 있는 예술을 만드는 프로젝트에 대한 유틸리티를 향상시킵니다.
@@ -105,7 +192,18 @@ ChatGPT-4o의 평가 지표는 인상적입니다:
 
 안전성은 ChatGPT-4o의 설계의 중요한 요소입니다. 내장된 안전 메커니즘과 사후 교육을 통한 다듬어진 동작으로 모델은 다양한 모달리티에서 책임 있는 사용을 보장합니다. ChatGPT-4o가 사이버 보안 및 편향을 포함한 다양한 안전 범주에서 중간 위험 수준 이하를 유지하는 것을 보여 주는 포괄적인 평가가 이루어졌습니다. 사회심리학과 오진 정보에 대한 외부 전문가들은 잠재적인 위험을 식별하고 완화하기 위해 모델을 엄격하게 테스트했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델의 안전 프로토콜을 통해 사용자 보안이나 개인 정보 보호를 저해하지 않고 다양한 환경에서 배치할 수 있습니다. 견고한 디자인과 지속적인 개선으로 교육, 의료 및 전문 서비스 분야의 민감한 응용 프로그램에 신뢰할 만한 선택지가 됩니다.
 
@@ -115,7 +213,18 @@ ChatGPT-4o는 무료 티어 및 플러스 사용자에게 확장된 메시지 �
 
 이 단계적 출시를 통해 OpenAI는 피드백을 수집하고 필요한 조정을 수행함으로써 모델의 전체 잠재력을 실현하고 성능 및 신뢰성의 높은 기준을 유지하는 것을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 새로운 지평을 탐험 중
 

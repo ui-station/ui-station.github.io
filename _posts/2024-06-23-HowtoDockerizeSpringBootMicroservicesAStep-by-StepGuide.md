@@ -3,14 +3,12 @@ title: "스프링 부트 마이크로서비스 도커라이징 방법 단계별 
 description: ""
 coverImage: "/assets/img/2024-06-23-HowtoDockerizeSpringBootMicroservicesAStep-by-StepGuide_0.png"
 date: 2024-06-23 00:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HowtoDockerizeSpringBootMicroservicesAStep-by-StepGuide_0.png
 tag: Tech
 originalTitle: "How to Dockerize Spring Boot Microservices: A Step-by-Step Guide"
 link: "https://medium.com/@amitu2016/how-to-dockerize-spring-boot-microservices-a-comprehensive-guide-f585fe016789"
 ---
-
-
 
 ![이미지](/assets/img/2024-06-23-HowtoDockerizeSpringBootMicroservicesAStep-by-StepGuide_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@amitu2016/how-to-dockerize-spring-boot-microservices-
 
 마이크로서비스 아키텍처는 거대한 단일 응용 프로그램을 작은, 독립적인 서비스로 분해하여 개발, 배포 및 확장이 독립적으로 가능한 아키텍처입니다. 각 마이크로서비스는 특정 기능을 담당하고 다른 서비스와 API를 통해 통신합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Microservices에 Docker를 사용하는 이유?
 
@@ -35,7 +43,18 @@ Docker 컨테이너는 Microservices에 다음과 같은 많은 이점을 제공
 
 # 준비 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Docker 및 Docker Compose에 대한 기본적인 이해도
 - 로컬에서 설정된 Spring Boot 마이크로서비스 프로젝트
@@ -47,7 +66,18 @@ Docker 컨테이너는 Microservices에 다음과 같은 많은 이점을 제공
 
 각 Spring Boot 마이크로서비스에 대해 프로젝트의 루트 디렉토리에 Dockerfile을 생성해야 합니다. 다음은 Spring Boot 애플리케이션을 위한 Dockerfile 예시입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쿠폰 서비스용:
 
@@ -75,7 +105,18 @@ ADD target/productservice-0.0.1-SNAPSHOT.jar productservice-0.0.1-SNAPSHOT.jar
 ENTRYPOINT [ "java","-jar","productservice-0.0.1-SNAPSHOT.jar" ]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 다음 명령을 사용하여 메이븐을 통해 두 개의 마이크로서비스를 빌드하세요:
 
@@ -87,7 +128,18 @@ mvn clean package -DskipTests
 
 도커 파일을 포함하는 디렉토리로 이동한 후 도커 이미지를 빌드하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 build -f Dockerfile -t coupon_app .
@@ -103,7 +155,18 @@ mvn clean package -DskipTests
 도커 run -d -p 6666:3306 --name=docker-mysql --env="MYSQL_ROOT_PASSWORD=test1234" --env="MYSQL_DATABASE=mydb" mysql
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 다음 명령어를 사용하여 Docker 이미지를 실행하십시오:
 
@@ -115,7 +178,18 @@ docker exec -i docker-mysql mysql -uroot -ptest1234 mydb <tables.sql
 
 2. 다음 명령어를 사용하여 두 마이크로서비스를 실행하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 실행 -t --name=coupon-app --link docker-mysql:mysql -p 10555:9091 coupon_app
@@ -129,7 +203,18 @@ docker exec -i docker-mysql mysql -uroot -ptest1234 mydb <tables.sql
 
 엔드포인트를 호출하여 Postman을 사용하여 애플리케이션을 테스트할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-HowtoDockerizeSpringBootMicroservicesAStep-by-StepGuide_1.png" />
 
@@ -139,6 +224,17 @@ docker exec -i docker-mysql mysql -uroot -ptest1234 mydb <tables.sql
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring Boot 마이크로서비스를 도커화하면 개발, 배포 및 확장 프로세스를 간편하게 만들 수 있어요. 각 마이크로서비스를 위한 도커 파일을 만들고 도커의 환경 일관성 및 격리 기능을 활용함으로써 견고하고 확장 가능한 마이크로서비스 아키텍처를 구축할 수 있어요. 이 안내서에 나온 단계에 따라 Spring Boot 마이크로서비스를 도커화하고 컨테이너화의 모든 잠재력을 활용해 보세요.

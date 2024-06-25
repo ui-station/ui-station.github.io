@@ -18,7 +18,18 @@ link: "https://medium.com/proandroiddev/migrating-ui-oriented-android-library-to
 
 ## 내 경우에 관하여
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 안드로이드/Kotlin과 iOS/Swift 클라이언트가 있습니다. 두 클라이언트 모두 다음 UI 기능을 갖춘 자체 제작 라이브러리를 사용합니다:
 
@@ -34,8 +45,18 @@ link: "https://medium.com/proandroiddev/migrating-ui-oriented-android-library-to
 
 언제든지 물어보세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:472/1*4Eb5MmEXdZwZC8WkYBB6yA.gif)
 
@@ -45,8 +66,18 @@ link: "https://medium.com/proandroiddev/migrating-ui-oriented-android-library-to
 
 일부 소스에서 Jetpack Compose를 선언적 API로 설명합니다. 저에게 있어 Jetpack Compose의 주요 장점은 전통적인 XML 레이아웃과 비교했을 때의 유연성입니다. 그리고 Jetpack Compose에서 레이아웃을 작성한 후에는 Compose Multiplatform로 이전하는 것이 정말 어렵지 않습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비즈니스적인 관점에서 주요 방해 요인이 없이 코드베이스를 점진적으로 통합하는 것이 더 쉽습니다. 추가 개발자가 필요하지 않습니다. 그것이 Compose Multiplatform이 허용하는 것입니다.
 
@@ -56,7 +87,18 @@ Jetbrains에 따르면, 이것이 어떻게 작동하는지 간단히 상기시�
 
 ## 코드베이스에서의 장애물
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가끔 우리는 모두 KMP 코드가 아닌 코드를 작성하거나 사용합니다. 때로는 많을 때도 있죠.
 
@@ -73,7 +115,18 @@ Jetbrains에 따르면, 이것이 어떻게 작동하는지 간단히 상기시�
 - 코드를 다시 작성하거나 KMP 호환 라이브러리로 이전하여 commonMain 폴더에 넣습니다.
 - 호환되지 않는 코드를 플랫폼별 서브모듈인 androidMain 및 iosMain에 넣습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사실 platform-specific 하위 모듈에 항상 코드를 넣을 수 있습니다. 그러나 이 경우에는 iOS용으로 코드를 작성하거나 iOS에서도 구현해야 합니다.
 
@@ -85,7 +138,18 @@ iOS 플랫폼별 코드를 정의하거나 사용하는 데는 2가지 주요 �
 iosMain 폴더에 구현된 Expect/actual 함수.
 다음은 구조가 어떻게 보이는지 예시입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-MigratingUI-orientedAndroidlibrarytoComposeMultiplatformAndroidiOS_2.png" />
 
@@ -102,7 +166,18 @@ object Bridge {
 
 iOS/Swift 앱에서 로거에 대한 구현을 할당합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import ...
@@ -118,7 +193,18 @@ Bridge.shared.logger = {
 
 ## 어떻게 마이그레이션을 시작할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 Android/Kotlin 및 iOS/Swift 클라이언트를 보유하고 있습니다. 통합을 시작하는 방법은 무엇일까요?
 
@@ -130,7 +216,18 @@ Android의 경우, 기존 앱 또는 라이브러리에 KMP(코틀린 멀티플�
 - 코드를 공통 모듈(commonMain)로 순차적으로 이동시킵니다.
 - 플랫폼에서 이동할 수 없는 부분에 대한 커넥터를 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 우리의 경우에 iOS와 안드로이드 클라이언트가 의존하는 UI 중심 라이브러리를 마이그레이션하기로 결정했습니다. 그 라이브러리를 완전히 다시 작성해야 했던 이유는 RxJava와 XML 레이아웃을 기반으로 했기 때문이었습니다.
 
@@ -142,7 +239,18 @@ RxJava → Coroutines / Flow
 Retrofit → Ktor
 Ktor는 매우 편리한 네트워크 라이브러리입니다. 큰 문제는 없었습니다. 여러 번 검색해서 익숙했던 것을 어떻게 쓰는지 찾아보면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Room → Room?
 제 경우에는 일반 디스크 캐싱을 Okio로 대체하는 것이 허용되었습니다. 하지만 사실 Room은 KMP도 지원합니다.
@@ -162,7 +270,18 @@ expect fun LoadableImage(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Jetpack ExoPlayer → ExoPlayer + AVPlayer
 우리는 각 플랫폼마다 플레이어를 대체하기 위해 expect/actual을 사용합니다.
@@ -182,7 +301,18 @@ expect fun VideoPlayer(
 
 ## 안드로이드용 빌드 방법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안드로이드의 경우 일반적인 안드로이드 라이브러리와 유사합니다. 이 라이브러리는 애플리케이션의 모듈로 사용할 수 있습니다. 현재는 이것이 우리의 선택입니다.
 
@@ -192,7 +322,18 @@ expect fun VideoPlayer(
 
 ## iOS용 빌드 방법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 개발 중에는 XCFramework을 빌드하고 iOS 프로젝트에 넣습니다. 프로세스는 여기에 설명되어 있습니다:
 
@@ -206,7 +347,18 @@ expect fun VideoPlayer(
 
 자동화된 CI/CD 파이프라인에서는 프로세스가 약간 다르지만 이는 다른 이야기입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 나의 경우의 결과
 
@@ -223,7 +375,18 @@ expect fun VideoPlayer(
 이후: 4,000 줄 코드
 결과: 기존 버전과 비교했을 때 코드 양이 약 2.5배 감소했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 🟢 성능.
 iOS에서는 iPhone SE에서도 부드럽게 스크롤됩니다.
@@ -239,7 +402,18 @@ iOS IPA: + 18 MB
 🟡 라이브러리 크기.
 거대한 XCFrameworks 크기. 300MB 이상입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 🔴 빌드 시간.
 iOS의 빌드 시간이 길어요. 기계에 따라 다르지만 라이브러리 4k 줄의 코드를 가지고 17분 같은 숫자를 볼 수 있어요.
@@ -250,7 +424,18 @@ iOS의 빌드 시간이 길어요. 기계에 따라 다르지만 라이브러리
 
 KMP와 Compose Multiplatform의 멋진 점은 Kotlin으로 코드를 작성해야 한다면, 왜 KMP 호환 방식으로 작성하지 않을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 경우에는 결과가 수용 가능하며, 스트레스 테스트로 간주할 수 있습니다. 또한 iOS용 Compose Multiplatform이 알파 단계에 있고, Kotlin 2가 미래에 있음을 염두에 두어야 합니다.
 

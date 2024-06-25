@@ -3,14 +3,12 @@ title: "AWS 인터뷰 질문 DAY_25 90"
 description: ""
 coverImage: "/assets/img/2024-06-19-DAY_2590INTERVIEWQUESTIONSONAWS_0.png"
 date: 2024-06-19 12:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-DAY_2590INTERVIEWQUESTIONSONAWS_0.png
 tag: Tech
 originalTitle: "DAY_25 90 => INTERVIEW QUESTIONS ON AWS"
 link: "https://medium.com/@faisalkuzhan/day-25-90-interview-questions-on-aws-f0ebb1a44dd3"
 ---
-
-
 
 ![](/assets/img/2024-06-19-DAY_2590INTERVIEWQUESTIONSONAWS_0.png)
 
@@ -20,8 +18,18 @@ Below are some basic AWS interview questions along with the answers.✍
 
 Cloud computing is a general term for the delivery of hosted computing services and IT resources over the internet with pay-as-you-go pricing.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드 컴퓨팅의 특징은 다음과 같습니다:
 
@@ -35,7 +43,18 @@ Cloud computing is a general term for the delivery of hosted computing services 
 
 클라우드 배포 모델은 데이터 저장량 및 인프라 액세스 권한에 따라 선택할 수 있는 가상 컴퓨팅 환경으로 작동합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드 배포 모델에는 4가지 유형이 있습니다: -
 
@@ -48,7 +67,18 @@ Cloud computing is a general term for the delivery of hosted computing services 
 
 클라우드 컴퓨팅에는 인프라스트럭처 서비스(IaaS), 플랫폼 서비스(PaaS) 및 소프트웨어 서비스(SaaS)라는 세 가지 주요 유형이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - IaaS: IaaS는 가상화된 컴퓨팅 자원을 제공하며 가상 머신, 스토리지 및 네트워크와 같은 자원을 인터넷을 통해 제공합니다. 사용자는 인프라에서 실행하는 운영 체제 및 어플리케이션을 제어할 수 있어 더 큰 유연성과 맞춤 설정이 가능합니다.
 - PaaS: PaaS는 개발자가 기반 인프라를 관리하지 않고 애플리케이션을 구축, 배포 및 관리할 수 있는 플랫폼을 제공합니다. 개발 도구, 데이터베이스 및 실행 환경을 포함한 미리 구성된 환경을 제공하여 개발자가 인프라 관리 대신 애플리케이션 개발에 집중할 수 있습니다.
@@ -60,7 +90,18 @@ Cloud computing is a general term for the delivery of hosted computing services 
 
 리전은 특정 AWS 인프라 세트를 통해 서비스되는 지리적 영역입니다. 각 리전에는 독립된 거리와 독립된 전원 및 냉각으로 서로 격리된 여러 가용 영역이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가용 영역(Availability Zone)은 AWS 지역 내에서 고가용성과 오류 허용성을 제공하기 위해 설계된 격리된 데이터 센터입니다.
 
@@ -70,7 +111,18 @@ Cloud computing is a general term for the delivery of hosted computing services 
 
 파장(Zones)은 개발자가 5G 기기와 사용자에게 초저 지연 시간을 제공하는 애플리케이션을 구축할 수 있도록 합니다. 파장은 표준 AWS 컴퓨팅 및 스토리지 서비스를 통신 사업자의 5G 네트워크 가장자리에 배포합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5. AWS가 무엇인가요?
 
@@ -84,7 +136,18 @@ AWS는 아마존 웹 서비스(Amazon Web Services)의 약자입니다. AWS는 �
 - RDS (Relational Database Service): RDS는 MySQL, PostgreSQL, Oracle, SQL Server와 같은 관리형 관계형 데이터베이스를 제공합니다. 애플리케이션 실행, 사용자 데이터 저장, 분석 및 보고용으로 사용됩니다.
 - CloudWatch: CloudWatch는 AWS의 모니터링 및 관측 서비스입니다. 메트릭을 수집하고 추적하며, 로그 파일을 모니터링하고 경보를 설정할 수 있습니다. AWS 리소스의 작동 상태 및 성능에 대한 통찰력을 얻고, 운영 이벤트와 문제에 실시간으로 대응하는 데 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 7. 클라우드 환경으로 로그를 전송하는 데 사용되는 도구들은 무엇인가요?
 
@@ -98,7 +161,18 @@ AWS는 아마존 웹 서비스(Amazon Web Services)의 약자입니다. AWS는 �
 
 # 8. IAM 역할들은 무엇이며, 어떻게 만들고 관리할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS의 IAM(Identity and Access Management) 역할은 신뢰하는 엔터티에 권한을 부여하는 방법입니다. 이러한 엔터티는 AWS 서비스, 응용 프로그램 또는 AWS 계정 또는 외부 AWS 계정 내의 사용자가 될 수 있습니다. 역할은 장기 보안 자격 증명인 액세스 키나 비밀번호 없이 AWS 리소스에 액세스하기 위한 권한 위임을 안전하게 수행하는 방법입니다.
 
@@ -112,7 +186,18 @@ IAM 역할은 귀하를 대신해 AWS 리소스와 상호 작용해야 하는 �
 - 신뢰하는 엔터티 유형을 선택합니다 (예: AWS 서비스, 다른 AWS 계정 또는 SSO 식별 공급자).
 - 역할 목적을 가장 잘 설명하는 사용 사례를 선택합니다. 예를 들어 EC2 인스턴스용 역할을 생성하는 경우, 사용 사례로 "EC2"를 선택할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 권한 설정:
 
@@ -126,7 +211,18 @@ IAM 역할은 귀하를 대신해 AWS 리소스와 상호 작용해야 하는 �
 - 권한 업데이트: 권한을 부여하거나 제거하기 위해 정책을 연결 또는 분리할 수 있습니다. 역할에 필요한 권한이 있는지 확인하고 필요에 맞게 정책을 검토하고 업데이트하는 것이 중요합니다.
 - 역할 삭제: 더 이상 필요하지 않은 역할은 삭제할 수 있습니다. 역할 삭제 시 서비스 및 애플리케이션에 영향을 줄 수 있으니 조심해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 9. 시스템을 다운타임 없이 업그레이드 또는 다운그레이드 하는 방법
 
@@ -141,7 +237,18 @@ IAM 역할은 귀하를 대신해 AWS 리소스와 상호 작용해야 하는 �
 
 # 10. 인프라스트럭처 코드(Infrastructure as code)란 무엇이며 어떻게 사용하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인프라스트럭처 코드(IaC)는 기계가 읽을 수 있는 구성 파일이나 스크립트를 사용하여 인프라 자원을 관리하고 프로비저닝하는 실천 방법을 말합니다. 이는 수동 프로세스 대신 소프트웨어 코드로 인프라를 처리하여 버전 관리, 자동화 및 재생산성을 가능하게 합니다.
 
@@ -155,7 +262,18 @@ IAM 역할은 귀하를 대신해 AWS 리소스와 상호 작용해야 하는 �
 
 로드 밸런서는 사용자와 서버 그룹 사이에 위치하여 모든 리소스 서버가 공평하게 사용되도록 보장하는 보이지 않는 편의 기기 또는 서비스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Application Load Balancer (ALB): ALB는 OSI 모델의 애플리케이션 레이어(Layer 7)에서 작동합니다. URL 기반 라우팅, 콘텐츠 기반 라우팅 및 HTTP/HTTPS 프로토콜 지원과 같은 고급 라우팅 기능을 제공합니다.
 - Network Load Balancer (NLB): NLB는 전송 레이어(Layer 4)에서 작동하며 초저지연으로 대량 트래픽을 처리하기 위해 설계되었습니다. TCP, UDP 및 TLS 트래픽에 적합하여 게임 애플리케이션 및 IoT 애플리케이션과 같은 사용 사례에 적합합니다.
@@ -167,7 +285,18 @@ AWS CloudFormation은 템플릿을 사용하여 선언적 방식으로 인프라
 
 클라우드포메이션은 배포를 자동화하고 리소스 일관성을 보장하며 스케일링을 관리하고 종속성을 처리하며 AWS 환경에서 변경 관리를 간소화하는 데 사용됩니다. 이는 AWS에서 인프라 자동화 및 관리를 위한 주요 도구입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 13. AWS CloudFormation과 AWS Elastic Beanstalk의 차이점은 무엇인가요?
 
@@ -181,7 +310,18 @@ AWS CloudFormation:
 
 AWS Elastic Beanstalk:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 웹 애플리케이션을 배포하고 관리하기 위한 Platform as a Service (PaaS)입니다.
 - 개발자는 자신의 애플리케이션 코드를 제공하고 Elastic Beanstalk이 인프라 프로비저닝을 처리합니다.
@@ -199,7 +339,18 @@ AWS Elastic Beanstalk:
 
 # 15. 클라우드에서 발생할 수 있는 보안 공격 유형은 무엇이 있으며, 이를 최소화하는 방법은 무엇입니까?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라우드 환경에서 여러 보안 공격이 발생할 수 있습니다:
 
@@ -219,7 +370,18 @@ AWS Elastic Beanstalk:
 - 정기적으로 보안 평가와 감사를 수행하세요.
 - 직원들에게 보안 인식 및 모범 사례에 관한 교육을 실시하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 16. EC2 인스턴스 키를 분실했을 때 복구할 수 있을까요?
 
@@ -231,7 +393,18 @@ EC2 인스턴스와 인증에 사용된 키 쌍을 분실한 경우 해당 키�
 - 새 EC2 인스턴스 생성: 원본 키 쌍을 복구할 수 없다면 인스턴스의 AMI를 만들고 새 키 쌍으로 새로운 인스턴스를 시작할 수 있습니다.
 - 인스턴스 메타데이터를 통한 액세스 (Linux 인스턴스): 일부 경우, IAM 역할을 갖는 Linux 인스턴스의 경우 인스턴스 메타데이터와 공개 키를 사용하여 인스턴스에 액세스할 수 있을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상호작용 문제를 방지하기 위해 예방적인 키 관리의 중요성과 백업 유지의 중요성을 강조하는 것이 중요합니다.
 
@@ -241,7 +414,18 @@ EC2 인스턴스와 인증에 사용된 키 쌍을 분실한 경우 해당 키�
 
 게이트웨이는 라우팅, 프로토콜 변환, 보안 강화 및 네트워크 트래픽 관리와 같은 다양한 기능을 수행할 수 있습니다. 이러한 기능은 네트워크 간 연결성과 상호 운용성을 가능하게 하며 데이터가 원활하게 흐를 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게이트웨이는 일반적으로 인터넷 환경에서 사용되며, 로컬 네트워크와 넓은 인터넷 간의 통신을 원활하게 돕는 도구로, 외부 자원 및 서비스에 접속할 수 있도록 합니다.
 
@@ -251,7 +435,18 @@ Amazon RDS (관계형 데이터베이스 서비스)는 MySQL, PostgreSQL, Oracle
 
 DynamoDB는 빠르고 원활한 확장 가능성을 제공하는 완전히 관리되는 NoSQL 데이터베이스 서비스로, 저 지연 시간 데이터 액세스를 요구하는 애플리케이션에 이상적입니다. 유연한 스키마 디자인과 수요에 따른 자동 스케일링을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Redshift은 온라인 분석 처리(OLAP)를 위한 최적화된 완전히 관리되는 데이터 웨어하우징 서비스입니다. 대용량 데이터 세트의 고성능 쿼리 및 분석이 가능합니다. Redshift는 데이터 웨어하우징 및 분석 워크로드를 위해 설계되었으며 구조화된 데이터에 대한 SQL 기반 쿼리를 지원합니다.
 
@@ -264,7 +459,18 @@ Redshift은 온라인 분석 처리(OLAP)를 위한 최적화된 완전히 관�
 - 간편한 설정: S3에 정적 웹 사이트를 설정하는 것은 간단하며 AWS는 이 프로세스를 단순화하기 위한 도구를 제공합니다.
 - 보안: S3는 접근 권한에 대한 세밀한 제어를 허용하며 다른 AWS 서비스와 통합하여 추가 보안을 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아니요, S3에 호스팅하지 마세요:
 
@@ -276,7 +482,18 @@ Redshift은 온라인 분석 처리(OLAP)를 위한 최적화된 완전히 관�
 
 AWS Lambda는 서버를 프로비저닝하거나 관리하지 않고 코드를 실행할 수 있는 서버리스 컴퓨팅 서비스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 이벤트 기반 모델을 따릅니다. 여러분의 코드는 AWS 서비스 또는 사용자 지정 트리거로부터 발생하는 이벤트에 응답하여 실행됩니다.
 
@@ -286,7 +503,18 @@ Lambda 함수는 자동으로 확장되며 병렬로 실행될 수 있어 가용
 
 # 21. VPC(Virtual Private Cloud) 및 그 구성 요소를 설명해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VPC은 AWS 계정에 할당된 가상 네트워크로, AWS 클라우드의 논리적으로 격리된 영역을 제공합니다. 이를 통해 IP 주소 할당, 서브넷, 라우팅 테이블, 보안 그룹 및 네트워크 게이트웨이를 포함한 가상 네트워크 환경을 정의할 수 있습니다. VPC의 주요 구성 요소는 다음과 같습니다:
 
@@ -301,7 +529,18 @@ VPC은 AWS 계정에 할당된 가상 네트워크로, AWS 클라우드의 논�
 
 클라우드에서 소프트웨어를 빌드하고 배포하기 위한 AWS DevOps 도구는 다음과 같습니다: -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AWS 클라우드 개발 키트: 인기 있는 프로그래밍 언어로 클라우드 애플리케이션 리소스를 모델링하고 프로비저닝하는 오픈 소스 소프트웨어 개발 프레임워크입니다.
 - AWS CodeBuild: 지속적으로 확장 가능한 다수의 빌드를 처리하고 코드를 테스트하는 지속적 인테그레이션 서비스입니다.
@@ -318,7 +557,18 @@ VPC은 AWS 계정에 할당된 가상 네트워크로, AWS 클라우드의 논�
 - Amazon 서버 마이그레이션 서비스 (SMS)는 온프레미스 워크로드를 아마존 웹 서비스 클라우드로 마이그레이션하는 데 도움을 줍니다. SMS는 클라이언트 서버 VMWare를 클라우드 기반 아마존 머신 이미지 (AMIs)로 마이그레이션합니다.
 - Amazon Snowball은 저 연결 환경에서 데이터 수집, 기계 학습, 처리 및 저장을 위한 데이터 전송 솔루션입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 24. Amazon에서 제공하는 메시징 서비스는 무엇인가요?
 
@@ -330,7 +580,18 @@ Amazon은 여러 가지 메시징 서비스를 제공합니다. 그것들은 다
 
 # 25. 서브넷을 만드는 목적은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서브넷은 대규모 네트워크를 작은 네트워크로 분할하는 데 사용됩니다. 이는 트래픽을 라우팅하여 혼잡을 줄이며 성능을 크게 향상시킬 수 있습니다.
 
@@ -340,7 +601,18 @@ Elastic Beanstalk은 AWS의 오케스트레이션 서비스로, EC2, S3, Simple 
 
 AWS Management Console, Git 저장소 또는 통합 개발 환경(IDE)을 사용하여 AWS에 애플리케이션을 배포하는 가장 빠르고 간단한 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 27. 클라우드프론트에서 지오 제약이란 무엇인가요?
 
@@ -350,7 +622,18 @@ AWS Management Console, Git 저장소 또는 통합 개발 환경(IDE)을 사용
 
 Amazon ElastiCache는 클라우드에서 인메모리 데이터 저장소 또는 캐시를 쉽게 배포, 운영 및 확장할 수 있게 해주는 웹 서비스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 29. 인스턴스를 중지와 종료하는 것을 구별해보세요.
 
@@ -360,7 +643,18 @@ Amazon ElastiCache는 클라우드에서 인메모리 데이터 저장소 또는
 
 # 30. 인기 있는 데브옵스 도구는 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인기 있는 DevOps 도구는 다음과 같습니다:
 
@@ -375,7 +669,18 @@ Amazon ElastiCache는 클라우드에서 인메모리 데이터 저장소 또는
 
 아마존 클라우드 서치의 기능은:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 자동완성 제안
 - 부울 검색
@@ -391,7 +696,18 @@ AWS의 EBS에서는 그래픽 인터페이스를 통해 데이터에 직접 액�
 
 여기서, 볼륨이 인스턴스 중 하나와 연결되면(윈도우 또는 유닉스), 해당 볼륨에 데이터를 쓰거나 읽을 수 있습니다. 먼저, 데이터가 있는 볼륨에서 스크린샷을 찍고 이를 활용하여 고유한 볼륨을 작성할 수 있습니다. 여기서, 각 EBS 볼륨은 단일 인스턴스에만 연결될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 33. AWS autoscaling에서 라이프사이클 후크란 무엇인가요?
 
@@ -401,7 +717,18 @@ AWS의 EBS에서는 그래픽 인터페이스를 통해 데이터에 직접 액�
 
 하이퍼바이저는 가상 머신을 생성하고 실행하는 데 사용되는 소프트웨어입니다. 물리적 하드웨어 리소스를 각 사용자에게 가상적으로 분배하는 플랫폼으로 통합됩니다. 하이퍼바이저에는 Oracle Virtual Box, Oracle VM for x86, VMware Fusion, VMware Workstation 및 Solaris Zones가 포함됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 35. AWS CloudTrail의 역할을 설명해주세요.
 
@@ -411,7 +738,18 @@ AWS CloudTrail는 API 호출의 행동을 모니터링하고 감사하기 위해
 
 Amazon Route 53은 확장 가능하고 고가용성을 갖춘 도메인 네임 시스템(DNS)으로 정의됩니다. 이는 개발자와 기업의 이익을 위해 설계되었으며, 인터넷 애플리케이션으로 최종 사용자를 연결하기 위해 이름을 번역하는 가장 신뢰할 수 있고 비용 효율적인 프로세스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 37. S3 요금을 결정하는 매개변수는 무엇인가요?
 
@@ -425,7 +763,18 @@ Amazon Route 53은 확장 가능하고 고가용성을 갖춘 도메인 네임 �
 
 # 38. 다양한 종류의 인스턴스를 말해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 다양한 인스턴스 유형입니다:
 
@@ -439,7 +788,18 @@ Amazon Route 53은 확장 가능하고 고가용성을 갖춘 도메인 네임 �
 
 다음은 RDS에서 지원하는 데이터베이스 유형입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - MYSQL 서버
 - PostgreSQL
@@ -454,12 +814,23 @@ Amazon CloudWatch은 메트릭 저장소입니다. 이를 사용하여 애플리
 
 ## 41. AWS의 키페어란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 키 쌍은 공개 키와 개인 키로 구성되며, 가상 머신에 대한 안전한 로그인 정보입니다. Amazon EC2는 공개 키를 저장하고, 당신은 개인 키를 가질 수 있습니다.
 
 ---
 
-*의견은 언제나 환영합니다.*
+_의견은 언제나 환영합니다._
 
 ~페이살 쿠잔

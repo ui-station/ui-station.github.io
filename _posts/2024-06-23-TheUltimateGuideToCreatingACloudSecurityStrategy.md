@@ -3,14 +3,12 @@ title: "클라우드 보안 전략을 만드는 궁극적인 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-23-TheUltimateGuideToCreatingACloudSecurityStrategy_0.png"
 date: 2024-06-23 00:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TheUltimateGuideToCreatingACloudSecurityStrategy_0.png
 tag: Tech
 originalTitle: "The Ultimate Guide To Creating A Cloud Security Strategy"
 link: "https://medium.com/bugbountywriteup/the-ultimate-guide-to-creating-a-cloud-security-strategy-755c48faf355"
 ---
-
-
 
 ![Cloud Security](/assets/img/2024-06-23-TheUltimateGuideToCreatingACloudSecurityStrategy_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/bugbountywriteup/the-ultimate-guide-to-creating-a-clou
 
 클라우드 보안 여정에서 가장 어려운 단계 중 하나는 클라우드 환경을 보호하기 위한 로드맵을 만드는 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지난 몇 년 동안 클라우드 및 디지털 채택이 급증했으며, 적절한 로드맵이 없는 사이버 보안 팀은 후속 문제에 직면할 수 있습니다.
 
@@ -31,7 +39,18 @@ CIO들과 CISO들이 앉아서 자신들의 클라우드 워크로드를 안전�
 
 로드맵을 세 가지 기본 단계로 나누었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 기초
 - 실행
@@ -43,7 +62,18 @@ CIO들과 CISO들이 앉아서 자신들의 클라우드 워크로드를 안전�
 
 클라우드 보안 프로젝트가 실패하는 가장 일반적인 이유 중 하나는 CISO가 단순히 온프레미스 모델을 클라우드에 그대로 복사하려는 것 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구름의 이해 부족은 매우 강력한 원천 기능이 무시되는 결과를 초래할 수 있습니다. 그러므로 여정을 시작하기 전에 적절한 기초를 마련하는 것이 매우 중요합니다.
 
@@ -53,7 +83,18 @@ CIO들과 CISO들이 앉아서 자신들의 클라우드 워크로드를 안전�
 
 클라우드 보안 여정을 시작하기 전에, 특정 지리에 대한 규정을 알아야 하는 것이 결정적인 첫 번째 단계입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 올바르게 처리하지 않으면 권한이 없는 데이터를 이동할 수 있으며 엄격한 규정 위반으로 엄격한 벌금을 부과 받을 수 있습니다.
 
@@ -63,7 +104,18 @@ CIO들과 CISO들이 앉아서 자신들의 클라우드 워크로드를 안전�
 
 유익한 점은 대부분의 규정이 보안에 대한 최상의 실천 방법과 겹치기 때문에 적절한 프레임워크를 먼저 마련하면 나중에 작업량이 현저히 줄어듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HIPAA, PCI DSS 또는 SOC 2와 관련하여, 귀하의 법률 부서와 적절한 부문의 dos 및 don`ts를 완전히 숙지하기 위해 상호 협력하는 것이 중요합니다.
 
@@ -73,7 +125,18 @@ AWS, Azure 및 Google은 모두 매년 수백 개의 로컬 및 글로벌 인증
 
 AWS artifact는 AWS에 대한 수백 개의 보고서에 액세스할 수 있는 예시 중 하나입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-TheUltimateGuideToCreatingACloudSecurityStrategy_2.png" />
 
@@ -83,9 +146,20 @@ AWS artifact는 AWS에 대한 수백 개의 보고서에 액세스할 수 있는
 
 클라우드에서 보안은 고객과 클라우드 제공업체가 함께 작업하여 환경을 안전하게 유지해야 하는 공유 책임이 되므로 이를 미리 알아두는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-기반이 거의 다 마무리되었지만, 데이터와 애플리케이션에 대한 통제를 시행하여 귀하의 영역이 규정 준수를 하고 있는지 확인해야 합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+기반이 거의 다 마무리되었지만, 데이터와 애플리케이션에 대한 통제를 시행하여 귀하의 영역이 규정 준수를 하고 있는지 확인해야 합니다.
 
 AWS는 구름의 보안을 책임지고, 귀하는 구름 안에서의 보안을 담당합니다.
 
@@ -93,7 +167,18 @@ AWS는 구름의 보안을 책임지고, 귀하는 구름 안에서의 보안을
 
 이것은 사용하는 모델에 따라 달라질 수 있습니다 (완전히 관리되는 모델, IaaS 또는 플랫폼 등). 클라우드 제공업체는 귀하가 선택한 모델에 따라 일을 더 맡기거나 적게 맡을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-TheUltimateGuideToCreatingACloudSecurityStrategy_4.png" />
 
@@ -103,7 +188,18 @@ CISO이고 클라우드 보안 여정을 시작하는 경우, 팀 내에서 클�
 
 외부 컨설턴트에만 의존하지 마세요. 그들은 프로젝트가 끝나면 대개 떠나가고 내부 팀은 매일 운영을 맡게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 팀원들은 투자가 이루어지고 있기 때문에 이를 신뢰의 표시로 인식할 것입니다.
 
@@ -113,7 +209,18 @@ CISO이고 클라우드 보안 여정을 시작하는 경우, 팀 내에서 클�
 
 말씀드린대로, 온프렘에서 사용 중인 도구 세트를 그대로 복사하려고 하지 마세요. 항상 네이티브 클라우드 서비스를 먼저 사용하려고 노력해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 단계는 팀에서 가장 많은 노력과 스트레스를 유발할 수 있는 단계 중 하나입니다.
 
@@ -123,18 +230,41 @@ CISO이고 클라우드 보안 여정을 시작하는 경우, 팀 내에서 클�
 
 클라우드에서 보안 상태를 즉시 파악하는 가장 좋고 빠른 방법은 보안 모베스트 프랙티스에 대한 벤치마킹을 활성화하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋은 소식은, 구글, Azure 및 AWS와 같은 공급 업체가 이미 사전 구성된 벤치마크를 제공하여 환경을 측정할 수 있습니다.
 
 첫 날부터 CIS 벤치마크를 활성화하여 클라우드 내에서 쉽고 빠른 보안 성과를 얻는다면, CISO를 기쁘게 만들 수 있는 좋은 방법일 것입니다.
 
 아래는 각 메이저 프로바이더에 대한 도구입니다:
+
 - AWS Security Hub
 - Azure Security Center (Microsoft Defender로 변경됨)
 - Google 규정 준수 센터
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 외에도, 예산이 있는 경우에는 가시성을 얻을 수 있는 제3자 도구가 있습니다.
 
@@ -144,7 +274,18 @@ CISO이고 클라우드 보안 여정을 시작하는 경우, 팀 내에서 클�
 
 벤치마크가 활성화되었다면, 이제는 환경을 위한 고수준 보안 프레임워크를 구현하는 시기입니다. 아래는 중점을 두어야 하는 주요 영역입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 신원 제어: 클라우드에서의 신원은 방화벽입니다. 그래서 이를 우선으로 생각해야 합니다. 그냥 MFA를 활성화하고 끝내지 마세요. 대신 신원을 위한 적절한 보안 생태계를 구축해야 합니다. 단일 사인온 시스템과 연결하여 클라우드에서 별도의 신원 집합을 관리할 필요가 없도록 하는 것이 가장 좋은 방법입니다.
 
@@ -160,7 +301,18 @@ CISO이고 클라우드 보안 여정을 시작하는 경우, 팀 내에서 클�
 
 이 단계는 클라우드 제어에 대한 자신감을 키워나갈 때이며, 더 전략적인 작업에 집중할 수 있는 시기입니다. 이 단계에서 살펴볼 몇 가지 주요 영역은 아래와 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 알림을 자동으로 해결하도록 설정하여 보안 팀이 더 생산적으로 작업에 집중할 수 있도록 합니다.
 - 기존 알림 논리를 세부 조정하면 무엇이 작동하고 무엇이 그렇지 않은지 알 수 있습니다.
@@ -173,7 +325,18 @@ CISO이고 클라우드 보안 여정을 시작하는 경우, 팀 내에서 클�
 
 수정할 수 있는 것은 추적하고, 수정할 수 있는 것은 닫아야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것은 주요 단계를 마무리하고 성공적인 클라우드 보안 여정으로 나아가게 도와줍니다.
 

@@ -10,7 +10,6 @@ originalTitle: "Using LLMs to Learn From YouTube"
 link: "https://medium.com/towards-data-science/using-llms-to-learn-from-youtube-4454934ff3e0"
 ---
 
-
 ![Using LLMs to Learn From YouTube](/assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_0.png)
 
 # 소개
@@ -19,8 +18,18 @@ link: "https://medium.com/towards-data-science/using-llms-to-learn-from-youtube-
 
 저는 The Diary of a CEO와 같은 인기 팟캐스트의 YouTube 비디오들에 관해 많은 시간을 할애하기 어려운 문제에 직면해왔습니다. 사실 이러한 팟캐스트에서 다루는 많은 정보들은 빠른 구글 검색을 통해 손쉽게 찾을 수 있습니다. 그러나 저자가 열정적으로 어떤 것에 대한 견해를 표현하거나 성공한 기업가의 경험을 그들의 관점에서 듣는 것은 훨씬 더 통찰력과 명확함을 제공합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 문제로 동기부여 받으면서 LLM(언어 모델)을 기반으로 한 애플리케이션 및 개발에 대해 배우고 싶어졌습니다. 그래서 YouTube 동영상의 내용에 관한 질문을 할 수 있는 챗봇을 구축하기로 결정했습니다. 이 프레임워크인 RAG(Retrieval Augmented Generation)를 사용했습니다. 이후에, 이 어플리케이션을 LangChain, Pinecone, Flask, React를 사용하여 개발하고 AWS에 배포하는 경험에 대해 이야기하겠습니다:
 
@@ -30,7 +39,18 @@ LLM이 사용자 정의 질문에 답변을 생성하는 소스로 YouTube 동�
 
 ## 응답 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 대화형 질문 응답 도구는 관련 컨텍스트와 채팅 기록을 모두 고려하여 질문에 대한 응답을 생성할 수 있어야 합니다. 이는 아래에 설명된대로 대화 기억을 갖춘 데이터 검색 확장 생성을 사용하여 달성할 수 있습니다:
 
@@ -42,7 +62,18 @@ LLM이 사용자 정의 질문에 답변을 생성하는 소스로 YouTube 동�
 - 의미 검색: 다음으로, 이러한 축약된 질문과 가장 관련성 있는 YouTube 대본 청크를 검색해야 합니다. 대본 자체는 단어 및 구의 수치적 표현인 임베딩으로 저장되어 있습니다. 이 임베딩은 내용과 의미를 포착하는 임베딩 모델에 의해 학습되었습니다. 의미 검색 중에는 임베딩이 축약된 질문의 임베딩과 가장 유사한 각 대본 구성 요소를 검색합니다.
 - 컨텍스트 인식 생성: 이러한 검색된 대본 청크는 다시 LLM에게 다른 프롬프트로 사용되어 축약된 질문에 대답하도록 요청됩니다. 축약된 질문을 사용하면 생성된 답변이 현재 질문 및 채팅 중 사용자가 이전에 물었던 질문과 관련이 있는지 보장됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 데이터 파이프라인
 
@@ -95,7 +126,18 @@ vector_store = Pinecone(
 vector_store.add_documents(documents=transcript_chunks)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 주기적으로 실행되도록 구성된 워크플로를 이용하여 이러한 단계를 자동화하기 위해 몇 가지 AWS 서비스를 활용할 수도 있습니다. 저는 위에서 언급한 세 가지 단계마다 별도의 AWS Lamba 함수(필요한 리소스를 런타임에 필요에 따라 프로비저닝 및 활용하는 서버리스 컴퓨팅 형태)를 구현하고, 이러한 함수의 실행 순서를 AWS Step Functions(서버리스 오케스트레이션 도구)를 사용하여 정의합니다. 그런 다음, 이 워크플로는 매주 한 번 실행되도록 설정한 Amazon EventBridge 일정에 의해 실행됩니다:
 
@@ -105,7 +147,18 @@ vector_store.add_documents(documents=transcript_chunks)
 
 이제 우리가 선택한 재생 목록의 대본이 주기적으로 검색되고 임베딩으로 변환되어 저장되고 있는데, 이제 응용 프로그램의 핵심 백엔드 기능 구현으로 이동할 수 있습니다. 즉, 사용자 정의 질문에 대한 답변을 생성하는 프로세스를 구현해야 합니다. 다행히 LangChain은 이 작업을 완벽하게 수행하는 ConversationalRetrievalChain을 기본 제공합니다! 필요한 것은 쿼리, 채팅 기록, 대본 청크를 검색하는 데 사용할 수 있는 벡터 저장소 개체 및 선택한 LLM을 이 체인에 전달하는 것뿐입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import pinecone
@@ -176,7 +229,18 @@ def create_chat_history(user_id: str, chat_history: List[dict[str, Any]]):
     table.put_item(Item=item)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## API를 통해 로직 노출하기
 
@@ -250,11 +314,33 @@ if __name__ == "__main__":
 
 마지막으로, 세 개의 엔드포인트를 하나의 함수로 래핑하여 AWS Lambda를 사용하고, API Gateway 리소스에 의해 트리거되는 방식으로 요청을 올바른 엔드포인트로 보내도록 하는 방법을 설명합니다. 이제 이 설정의 흐름은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 이 전체에 사용되는 각 섹션에 대한 전용 기능 컴포넌트를 활용하여 채팅 봇 애플리케이션에서 기대할 수 있는 모든 일반 요구 사항을 다룹니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 사용자 입력을 보내는 채팅 버튼이 있는 컨테이너입니다.
 - 사용자 입력 및 답변이 표시되는 채팅 피드가 있습니다.
@@ -266,7 +352,18 @@ if __name__ == "__main__":
 
 세 가지 엔드포인트로의 API 호출 및 클라이언트 측에서 관련 변수의 상태 변경은 각각의 기능 컴포넌트에서 정의됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 질문마다 생성된 답변을 가져오는 논리:
 
@@ -388,7 +485,18 @@ function SaveChatHistoryButton({userId, previousChats}: Props){
 export default SaveChatHistoryButton
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 앱이 처음으로 로드될 때 채팅 기록을 검색합니다:
 
@@ -437,7 +545,18 @@ UI 자체에 대해, ChatGPT의 인터페이스와 매우 유사한 것을 선�
 
 이제 완전히 기능하는 UI가 준비되었으니 온라인 사용을 위해 호스팅해야 합니다. 저는 AWS Amplify를 사용하여 이를 수행하기로 선택했습니다. Amplify는 리소스 프로비저닝 및 웹 애플리케이션 호스팅을 처리하는 완전 관리형 웹 호스팅 서비스 중 하나입니다. 앱의 사용자 인증은 Amazon Cognito에 의해 관리되며 사용자 회원가입, 로그인, 자격 증명 저장 및 관리를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_5.png" />
 
@@ -447,7 +566,18 @@ UI 자체에 대해, ChatGPT의 인터페이스와 매우 유사한 것을 선�
 
 저희 애플리케이션에서 사용되는 LLM에 제시된 기본 프롬프트에는 시맨틱 검색 단계에서 검색된 추가 컨텍스트(관련 트랜스크립트 청킹 형태)가 포함될 것이기 때문에 이러한 비교는 본질적으로 "부당"한 것이라는 점에 유의하십시오. 그러나, RAG를 사용하여 생성된 프롬프트와 같은 기본 LLM에 의해 생성된 응답과 어떤 차이가 있는지 정성적으로 평가할 수 있게 해줄 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 \*All ChatGPT responses are from gpt-3.5, since this was the model used in the application.
 
@@ -457,11 +587,33 @@ Steven Bartlett가 금융 작가이자 투자자인 Morgan Housel과의 대화�
 
 <img src="/assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_6.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표 태그를 Markdown 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시 2
 
@@ -471,7 +623,18 @@ Steven Bartlett가 금융 작가이자 투자자인 Morgan Housel과의 대화�
 
 이것은 합리적인 대답으로 보이지만, 동일한 질문 라인에서 더 많은 정보를 추출할 수 있는지 확인해 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![LLM 이미지1](/assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_9.png)
 
@@ -481,8 +644,18 @@ YouTube 트랜스크립트에서 LLM이 추출할 수 있는 세부 수준에 �
 
 ChatGPT에 같은 질문을 한 결과, 기업가에 관한 일반적인 답변만 제공되었지만 비디오 트랜스크립트 내용을 통해 사용할 수 있는 세부 정보가 부족합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![사용 예시 이미지](/assets/img/2024-05-23-UsingLLMstoLearnFromYouTube_11.png)
 
@@ -493,8 +666,18 @@ ChatGPT에 같은 질문을 한 결과, 기업가에 관한 일반적인 답변�
 - SAM 템플릿 사양 - AWS CloudFormation을 확장하는 용도로 사용되는 간결한 구문으로, AWS 리소스의 모음을 정의하고 구성하는 데 사용됩니다. 리소스 간 상호 작용 방식 및 필요한 권한을 지정합니다.
 - SAM CLI - SAM 템플릿에 정의된 리소스를 빌드하고 배포하는 데 사용되는 명령줄 도구입니다. 애플리케이션 코드 및 종속성의 패키징, SAM 템플릿을 CloudFormation 구문으로 변환하고 CloudFormation에서 개별 스택으로 템플릿을 배포하는 작업을 처리합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 글 전체 템플릿(자원 정의)을 모두 포함하는 대신, 우리가 이야기한 각 서비스에 대해 특정 관심 영역을 강조하겠습니다.
 
@@ -511,7 +694,18 @@ OpenaiAPIKey: Type: String;
 Default: "{resolve:secretsmanager:openai-api-key:SecretString:openai-api-key}";
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 람다 함수 정의:
 
@@ -535,7 +729,18 @@ FetchLatestVideoIDsFunction:
 
 Amazon States 언어로 데이터 파이프라인의 정의를 검색하는 것:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개별 람다 함수에 Step Functions을 오케스트레이터로 사용하려면, Amazon States Language에서 각 함수가 실행되어야 하는 순서 및 최대 재시도 횟수와 같은 구성을 정의해야 합니다. 이 작업을 간단하게 수행하는 방법은 Step Functions 콘솔의 Workflow Studio를 사용하여 워크플로우를 다이어그램으로 만든 다음, 해당 워크플로우의 자동 생성된 ASL 정의를 적절히 수정할 수 있는 시작점으로 활용하는 것입니다. 그러면 이를 CloudFormation 템플릿에 링크하여 해당 위치에 정의하는 대신에 사용할 수 있습니다:
 
@@ -568,7 +773,18 @@ EmbeddingRetrieverStateMachine:
 
 API 리소스 정의:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웹 애플리케이션용 API가 프론트엔드와 별도로 호스팅될 예정이므로 API 리소스를 정의할 때 CORS (Cross-Origin Resource Sharing) 지원을 활성화해야 합니다:
 
@@ -622,7 +838,18 @@ ChatResponseFunction:
             Method: put
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리액트 앱 리소스를 정의하는 방법:
 
@@ -643,7 +870,18 @@ AmplifyApp:
 
 한 번 저장소 자체에 액세스할 수 있으면, Amplify는 앱을 구축하고 배포하는 방법에 대한 지침이 포함된 구성 파일을 찾습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 version: 1
@@ -679,7 +917,18 @@ AmplifyBranch:
 
 이렇게 최종 배포가 완료되면, AWS Amplify 콘솔에서 제공된 링크를 통해 누구에게나 접근 가능합니다. 이렇게 접근한 앱의 데모 기록은 다음에서 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -692,7 +941,18 @@ AmplifyBranch:
 
 이러한 응용프로그램이 학습 및 개발 목적의 YouTube 비디오 소비를 최적화하고 어떤 방식으로든 간소화할 수 있는 방법을 알아보았습니다. 그러나 이러한 방법은 동일하게 직장에서 내부 사용이나 고객을 위한 솔루션을 확장하는 데 쉽게 적용할 수 있습니다. 이것이 LLMs의 인기와 특히 RAG 기술이 많은 조직에서 큰 주목을 받는 이유입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크다운 형식으로 표 태그를 변경해보세요.
 

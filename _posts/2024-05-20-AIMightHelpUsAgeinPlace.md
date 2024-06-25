@@ -3,14 +3,12 @@ title: "AI가 우리가 자리에서 나이를 먹을 수 있도록 도와 줄 �
 description: ""
 coverImage: "/assets/img/2024-05-20-AIMightHelpUsAgeinPlace_0.png"
 date: 2024-05-20 19:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AIMightHelpUsAgeinPlace_0.png
 tag: Tech
 originalTitle: "AI Might Help Us Age in Place"
 link: "https://medium.com/crows-feet/ai-might-help-us-age-in-place-1b9a3510ef7f"
 ---
-
-
 
 ![AI Might Help Us Age in Place](/assets/img/2024-05-20-AIMightHelpUsAgeinPlace_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/crows-feet/ai-might-help-us-age-in-place-1b9a3510ef7f"
 
 내 조언: 기대를 걸지 마세요. 이러한 AI의 예상 사용법은 모두 공상 속의 범주에 깔끔하게 들어갑니다. 과학소설이란 공상 속에서 누구나 평균적인 지능을 가진 사람이 스마트폰에서 버튼을 클릭해서 스마트 홈의 스마트 기기를 활성화할 수 있는 이유는 모든 것이 단일한 완벽한 시스템으로 통합되어 있기 때문입니다. 오늘날의 과학 비허구는 이것과 전혀 다른 것으로 알려져 있기 때문에 이것이 과학 비허구임을 알 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "스마트 TV, 스마트폰, 개인용 컴퓨터, 태블릿, 그리고 스마트 온도조절기가 있다고 해 봅시다. 이들은 서로 연결되어 있지 않습니다," 지난 주 나와의 인터뷰에서 '노화 및 건강 기술 감시' 블로그 편집자 로리 오를로브가 말했습니다. "각 설치는 다릅니다. 업그레이드가 필요하다면, 혼자서 진행해야 합니다."
 
@@ -31,7 +39,18 @@ link: "https://medium.com/crows-feet/ai-might-help-us-age-in-place-1b9a3510ef7f"
 
 통합된 솔루션을 만들기 위한 첫 번째 단계는 산업 표준을 설정하는 것이라고 그녀는 말합니다. 지난 해에는 스마트 홈 기기를 위한 연결 표준으로 Matter가 설정되었지만, 아직 널리 사용되고 있지 않습니다. 오를로브씨는 일부 제품 제작업체들이 "제품의 경쟁력 있는 차별화를 맞추고 싶어하기 때문에" 소극적이라고 말합니다. "Apple은 그 중에서도 최악입니다." 예를 들어, 애플의 iMessage 기능은 애플 기기에서만 작동하며 안드로이드 폰에서는 메시지를 읽을 수 없습니다. 오를로브씨는 자신의 가정에서 안드로이드 폰, 아이폰, 그리고 애플 워치를 사용하고 있는데, 이들은 서로 다른 충전기가 필요한 세 가지 기기입니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오를로브는 종종 기술 산업이 우리 노인을 괴롭히는 제품을 출시한다고 비난합니다. 그 제품들은 운영이 어려우며 기술 지원이 미흡하며, 전반적으로 노인 고객들의 선호도와 요구를 무시한다고 합니다.
 
@@ -41,7 +60,18 @@ link: "https://medium.com/crows-feet/ai-might-help-us-age-in-place-1b9a3510ef7f"
 
 이러한 문제를 떠나서, 오를로브는 AI에 대해서는 믿는 사람입니다. "이미 여기에 있으며 굉장히 유용합니다," 그녀가 말합니다. "의료 분야는 그것을 필요로 하기 때문에 사용하고 있습니다," 노동자의 부족과 직원의 고갈률을 고려할 때.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "기술의 역사를 보면 많은 변화가 처음에는 무서웠습니다," 그녀는 말합니다. 결국 그 변화들이 널리 받아들여지고 기술은 더욱 세련되어 졌습니다.
 

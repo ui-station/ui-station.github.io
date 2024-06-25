@@ -3,14 +3,12 @@ title: "숨겨진 보석 레일즈 프로젝트에 에너지를 불어넣어 줄
 description: ""
 coverImage: "/assets/img/2024-06-19-HiddenGemsLesser-KnownRubyGemsThatCanSuperchargeYourRailsProjects_0.png"
 date: 2024-06-19 22:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HiddenGemsLesser-KnownRubyGemsThatCanSuperchargeYourRailsProjects_0.png
 tag: Tech
 originalTitle: "Hidden Gems: Lesser-Known Ruby Gems That Can Supercharge Your Rails Projects"
 link: "https://medium.com/devops-dev/hidden-gems-lesser-known-ruby-gems-that-can-supercharge-your-rails-projects-69f4e2ffe704"
 ---
-
-
 
 ![Hidden Gems: Lesser-Known Ruby Gems That Can Supercharge Your Rails Projects](/assets/img/2024-06-19-HiddenGemsLesser-KnownRubyGemsThatCanSuperchargeYourRailsProjects_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/devops-dev/hidden-gems-lesser-known-ruby-gems-that-can
 
 Dalli은 Memcached 캐싱 시스템과 시원찮게 통합되는 강력한 루비 젬입니다. 이는 빠르고 빈번하게 접근되는 데이터를 캐싱함으로써 응용 프로그램의 성능을 크게 향상시킬 수 있습니다. 세션 데이터, 조각 캐싱 또는 전체 페이지 캐싱을 다루고 있다면, Dalli가 모두 대처할 것입니다. 이렇게 사용할 수 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # Gemfile
@@ -43,7 +51,18 @@ gem 'redis-rails'
 config.cache_store = :redis_store, 'redis://localhost:6379/0/cache', { expires_in: 1.day }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. ActiveSupport::Cache
 
@@ -53,7 +72,18 @@ config.cache_store = :redis_store, 'redis://localhost:6379/0/cache', { expires_i
 
 Rack::Cache는 Rails 애플리케이션과 통합되어 HTTP 캐싱을 제공하는 미들웨어입니다. 브라우저 캐싱을 처리하고 서버 부하를 줄이는 데 특히 유용합니다. config/application.rb에 다음을 추가하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 config.middleware.use Rack::Cache,
@@ -68,8 +98,18 @@ config.middleware.use Rack::Cache,
 
 ## 6. IdentityCache
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IdentityCache는 ActiveRecord 연관을 캐싱하는 간결한 솔루션이에요. 캐시로부터 연관 레코드를 지능적으로 가져와서 데이터베이스 쿼리 횟수를 줄여줘요. 성능을 중시하는 애플리케이션에 꼭 필요한 기능이죠.
 
@@ -79,7 +119,18 @@ Cashier는 뷰에서 fragment 캐싱을 지원하는 젬이에요. 가벼우며 
 
 ## 8. Readthis
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Readthis는 Redis를 백엔드로 사용하는 고성능 캐싱 젬입니다. 속도와 효율성을 고려하여 디자인되어 있어, 레일즈 애플리케이션에서 빠른 캐싱이 필요한 경우에 우수한 선택지입니다.
 
@@ -89,7 +140,18 @@ Http::Cache는 레일즈 애플리케이션에 대한 HTTP 캐싱 헤더를 제�
 
 ## 10. Rails Cache Digests
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레일즈 캐시 다이제스트는 프래그먼트 캐싱을 위해 캐시 키를 최적화합니다. 템플릿과 관련된 레코드를 기반으로 자동으로 캐시 키를 생성합니다. 캐시 무효화로 인한 머리 아픔을 피하려면 사용하세요.
 

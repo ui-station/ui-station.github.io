@@ -3,13 +3,12 @@ title: "로봇 공학의 미래를 위한 P2P 통신 로봇 에이전트 007 릴
 description: ""
 coverImage: "/assets/img/2024-05-23-P2PCommunicationfortheFutureofRoboticsRobotAgent007Release_0.png"
 date: 2024-05-23 17:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-P2PCommunicationfortheFutureofRoboticsRobotAgent007Release_0.png
 tag: Tech
 originalTitle: "P2P Communication for the Future of Robotics: Robot Agent 0.0.7 Release"
 link: "https://medium.com/merklebot/p2p-communication-for-the-future-of-robotics-robot-agent-0-0-7-release-c3b3790bf7cb"
 ---
-
 
 <img src="/assets/img/2024-05-23-P2PCommunicationfortheFutureofRoboticsRobotAgent007Release_0.png" />
 
@@ -19,7 +18,18 @@ Merklebot에서는 로봇 플릿 운영자를 위한 데이터 관리 및 개발
 
 몇 달 전에 Digital Black Box를 출시했습니다. 이 서비스는 로봇에서 로그, 카메라 피드 및 포인트 클라우드와 같은 데이터를 안전하고 저렴한 분산 저장 네트워크인 Filecoin에 백업하는 기능을 제공합니다. Digital Black Box는 다음으로 구성됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 가장자리에서 실행되는 로봇 에이전트
 
@@ -29,7 +39,18 @@ Merklebot에서는 로봇 플릿 운영자를 위한 데이터 관리 및 개발
 
 ## 로봇 에이전트 0.0.7
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 👀 네트워크에서 다른 로봇의 mDNS 자동 탐색
 - 🤖↔🤖 로봇 간의 Libp2p 메시징
@@ -40,7 +61,18 @@ Merklebot에서는 로봇 플릿 운영자를 위한 데이터 관리 및 개발
 
 ## Merklebot 플랫폼
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Merklebot 플랫폼은 Robot Agents를 여러 기기 필릿에 중앙 집중식으로 롤아웃할 수 있도록 제공하여 로봇, 센서, 장비 및 기타 기계와 같은 다양한 기기를 안전하고 쉽게 관리할 수 있습니다. 전체 Robot Agents 필릿에 코드 및 Docker 컨테이너를 배포하고 데이터를 관리할 수 있습니다.
 
@@ -58,7 +90,18 @@ Merklebot 없이:
 
 Merklebot을 사용하면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 로봇에 연결하세요
 - install.sh를 실행하세요
@@ -74,8 +117,18 @@ Merklebot 팀은 오픈 소스 Agent의 기능을 계속 향상시키고 Merkleb
 - 오픈 소스 데이터 관리 및 시각화 도구와의 통합. 로그 수집 및 저장, 데이터 작업 실행 및 시각화 생성을 할 수 있어요.
 - Jenkins와 같은 CI/CD (지속적 통합 지속적 배포) 도구와의 통합. 자동으로 장치에 새 소프트웨어 릴리스 설치하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 새로운 에이전트를 확인해보세요! 피드백을 기다리고 있어요.
 

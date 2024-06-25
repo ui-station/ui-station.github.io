@@ -3,13 +3,12 @@ title: "경험 많은 ChatGPT 사용자를 위한 4가지 인간-인공지능 �
 description: ""
 coverImage: "/assets/img/2024-05-18-4Human-AIInteractionPatternsforExperiencedChatGPTUsers_0.png"
 date: 2024-05-18 19:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-4Human-AIInteractionPatternsforExperiencedChatGPTUsers_0.png
 tag: Tech
 originalTitle: "4 Human-AI Interaction Patterns for Experienced ChatGPT Users"
 link: "https://medium.com/ai-advances/4-human-ai-interaction-patterns-for-experienced-chatgpt-users-9e49d4234013"
 ---
-
 
 ChatGPT가 출시된 지 1년 반이 되었지만, 전체 사용자 중 30% 이상이 그것을 실력을 발휘한 AI 챗봇으로 사용하고 있습니다. 대부분의 사람들은 대화식 인공지능의 '특징'인 상호작용 뒤집기, 기준 기반 자가평가, 그리고 인간과 함께 작업을 공동으로 구상하는 것에 대해 자각하지 못하고 있습니다. 결과적으로 그들은 AI를 위한 작업을 상세히 설명하고 AI 출력물의 여러 수정본을 분석하는 데 많은 시간을 투자하지만, 여전히 기대보다 못한 결과물을 얻고 있습니다. 어떻게 이를 해결할지 알아봅시다.
 
@@ -19,7 +18,18 @@ ChatGPT가 출시된 지 1년 반이 되었지만, 전체 사용자 중 30% 이�
 
 지역 "관리용 AI" 커뮤니티의 적극적 구성원으로, ChatGPT와 다른 GenAI 어시스턴트의 숙련된 사용자조차도 대화식 방식을 통해 전통적인 방법으로 진행한다는 점을 자주 발견합니다. 그들은 완전한 지침을 작성해야 한다고 가정하고, AI가 그들의 지침을 따르기만을 기대합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 챗봇은 자주 우리의 질문에 답하거나 우리의 지시에 따라 텍스트를 생성하거나 데이터를 처리하는 도구로만 보입니다. 챗봇이 만족스러운 결과물을 제공하지 못하면, 우리는 더 잘 가르쳐 주어야 하거나, 간단히 챗봇을 사용하지 않을 수도 있습니다. 또한, 우리가 시간을 들여 작업을 자세히 설명할 여유가 없거나 아직 작업 자체를 완전히 이해하지 못했을 때는 AI를 사용하지 않기도 합니다.
 
@@ -29,7 +39,18 @@ AI 챗봇은 자주 우리의 질문에 답하거나 우리의 지시에 따라 
 
 # 1. 뒤바뀐 상호작용 전략
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 역할 영역에서 첫 번째로 명백하지 않은 패턴은, AI가 질문을 하면서 선도하는 "뒤바뀐 상호 작용"이다.
 
@@ -39,7 +60,18 @@ AI 역할 영역에서 첫 번째로 명백하지 않은 패턴은, AI가 질문
 
 일반적으로, 이 방식은 인간으로부터 요구되는 시간과 인지적 노력을 줄여주어 일반적인 AI 사용자의 목표에 완벽하게 부합된다. 마찬가지로, 일반적인 인터넷 사용자는 내용이나 제품 제안을 받는 것을 좋아하며, 스스로 질문을 명확히 표현할 필요가 없다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 사용 사례
 
@@ -52,7 +84,18 @@ AI 역할 영역에서 첫 번째로 명백하지 않은 패턴은, AI가 질문
 
 예를 들어, AI 튜터로 넓은 주제를 빠르게 숙달하고 싶다면 "내가 `주제`에 대해 이해하는 현재 수준을 알아보기 위해 N개의 개방형 질문을 해 주세요"라고 요청할 수 있습니다. 그런 다음, 답변을 평가하고 식별된 가장 약한 영역에 초점을 맞춘 새로운 질문을 요청할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 빠른 피드백이 있는 적응형 학습으로 이어집니다. 이는 학습자에게 우선 순위를 명확하게 제시하여 교육적 요구 사항에 대한 우선 순위를 투명하게 제공합니다. 이와는 달리 기존의 적응형 학습 시스템에서는 학습자에게 우선 순위가 불투명합니다.
 
@@ -62,7 +105,18 @@ GPT-4와의 샘플 채팅은 여기에서 찾을 수 있습니다. 이 예시에
 
 AI 챗봇이 질문을 하면서 상호작용이 뒤바뀌는 상황을 접근 방법으로 보기도 합니다. AI와의 Q&A 세션의 목표는 빠르게 작업 관련 맥락을 형성하는 것으로, 이는 챗봇을 일반적인 응답자/수행자 역할로 활용하기 위해 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 그 이유
 
@@ -72,7 +126,18 @@ AI 챗봇이 질문을 하면서 상호작용이 뒤바뀌는 상황을 접근 �
 
 동일한 문제에 대한 더 나은 해결책은 먼저 챗봇에서 질문을 받고, 출력물은 나중에 생성하는 것입니다. 그 이유는 질문을 선택하고 답하는 것이 작업을 처음부터 설명하는 것보다 훨씬 용이하기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이터레이션 질문의 두 번째 장점은 고품질 결과물입니다. 결과물은 단순히 유사한 문제에 대한 일반적인 해결책이 아닌 특정 컨텍스트에 의존합니다. 일정 작업을 해결하기 위한 전체 과정을 인공지능이 질문을 던지면서 구축할 수 있습니다. 이에 대답하고, 그에 따라 추가 질문을 받습니다. 이렇게 계속되다가 "이제 `모든 내용을 고려한 완전한 해결책을 제안해 주세요`"와 같은 문구를 봇에게 전할 때까지 진행됩니다.
 
@@ -83,7 +148,18 @@ AI 챗봇이 질문을 하면서 상호작용이 뒤바뀌는 상황을 접근 �
 
 ## 구현 예시
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 상황에서 중요한 질문 종류는 아직 충분히 이해하지 못한 작업을 명확히하기 위해 사용되는 질문입니다. 처음에는 “...에 관련된 작업 서식을 제안해주세요”와 같은 식으로 요청할 수 있습니다. 그런 다음, 요구사항에 가장 부합하는 서식을 선택한 후 "이 작업을 좀 더 명확히 하기 위해 질문해주세요"라고 말할 수 있습니다 (이러한 패턴은 기사 [1]에서 논의된 질문 정제 패턴(Question Refinement Pattern)과 인식 확인 패턴(Cognitive Verifier Pattern)과 비슷합니다). 그럼, AI 질문 중 일부에 대답하고 일부는 의도적으로 무시합니다. 무시하는 것도 작업과 관련된 집중된 문맥을 만드는 데 중요합니다.
 
@@ -93,7 +169,18 @@ AI 챗봇이 질문을 하면서 상호작용이 뒤바뀌는 상황을 접근 �
 
 구체적인 예로, 고용 인터뷰를 위한 준비 목표를 살펴보겠습니다. AI에게 쉬운 작업은 아닙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 초보 사용자는 인공지능에게 공석에 관한 몇 문장을 바탕으로 인터뷰 질문을 작성하도록 요청할 수 있으나 결과는 대부분 만족스럽지 못할 것입니다.
 - 숙련된 사용자는 가능한 모든 관련 정보인 직무 설명서와/또는 업무 목록을 인공지능에게 제공할 것입니다. 그러나 이 경우에도 결과물은 너무 일반적할 가능성이 높습니다. 대규모 언어모델(Large Language Model, LLM)은 아름답게 표현할 수 있지만, 본질적으로 제공된 문서의 단어를 표준 "인터뷰 템플릿"에 반영한 것 뿐입니다. 해당 직무를 직접 수행해 본 적이 없기 때문에 직무 설명서에서 특히 중요한 부분을 내재적으로 이해할 수 없습니다. 또한 문서에는 내게 특히 중요한 후보자 특성이 무엇인지에 대한 정보가 없기 때문에 이를 알 수도 없습니다.
@@ -106,7 +193,18 @@ AI 챗봇이 질문을 하면서 상호작용이 뒤바뀌는 상황을 접근 �
 
 이와 같은 예시를 따르는 GPT-4 채팅은 여기에서 찾을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## AI 혼란을 피하는 방법
 
@@ -117,7 +215,18 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 - 문맥 속 마지막 메시지가 완전한 작업이 되며, 가장 최근의 메시지는 LLM에 대비 문맥을 준비하는 챗봇 알고리즘에 의해 중요하게 여겨집니다. LLM은 "주의"를 가지고 있기 때문에 문맥의 모든 부분을 동등하게 취급하지 않습니다.
 - 작업 설명에 잘못된 부분이 있는 경우 최종 단계 전에 해당 부분을 교정하는 것이 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 어떻게 더 많은 노력을 줄일 수 있을까요?
 
@@ -128,7 +237,18 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 - ChatGPT Plus를 사용하는 경우, 시스템 프롬프트를 적용하는 것은 당신 자신의 GPT를 만들고 "Instructions" 필드에 프롬프트를 입력하는 것을 의미합니다. 그런 다음 사용자 요청과 어시스턴트의 응답과 별도로 LLM에 전달될 것입니다.
 - 다른 시스템 프롬프트를 만드는 또 다른 방법은 ChatGPT Plus 같은 비용이 많이 드는 구독 없이 가능합니다. 각 주요 LLM 공급업체는 ChatGPT나 Claude.ai보다 더 많은 제어권을 제공하는 도구를 제공합니다. OpenAI는 Playground, Anthropic은 Console, Google은 AI Studio를 제공하며 이러한 도구를 사용하여 시스템 프롬프트를 설정하고 LLM 버전을 선택하고 온도 및 기타 매개변수를 할당할 수 있습니다. 이는 구독 비용보다 적은 비용이 필요합니다. 게다가, Anthropic은 새로운 사용자에게 무료 5달러 크레딧을 제공하며 Google AI Studio는 무료로 이용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은시스템 프롬프트용으로 예시 구문을 드렸습니다: “사용자가 무엇을 요청했다면 (질문을 한다거나 지시를 한다 등), 그 요청의 더 나은 버전을 제안해야 합니다 (더 구체적인 출력으로 이어질 수 있는 상세한 버전) 그리고 사용자에게 내 버전을 사용하고 싶은지 물어보아야 합니다.”. 이 구절은 질문 개선 패턴의 한 종류로, 이와 유사한 패턴에 대해 여기에서 읽어볼 수 있습니다.
 
@@ -138,7 +258,18 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 
 여러분과 AI 간에 가능한 상호작용 모델은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## AI가 당신의 부하로: 정기적으로 승인하고 수정하기
 
@@ -148,7 +279,18 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 
 마찬가지로, 당신은 자신을 "AI 봇 관리자"로 생각할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AI에게 안내문을 작성하도록 요청하고, 그것을 비평하고 실행을 요청하십시오.
 - 대부분의 실제 과제에서는 하나의 안내만으로는 부족합니다. 과제는 상호 관련된 여러 하위 과제로 분해되어야 합니다. 따라서 AI에게 이 분해를 수행하도록 요청하십시오.
@@ -161,7 +303,18 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 
 대규모 텍스트(연례 보고서 또는 블로그 글과 같은)를 작성하려고 할 때를 상상해보십시오. 인터넷에는 이를 위한 많은 예시 안내문이 있습니다. 그 안에는 목표, 템플릿, 지침, 텍스트의 스타일 등과 같은 수십 개의 문장과 섹션이 포함됩니다. 또는 과제에 대해 모범 사례로 여기는 유사한 텍스트의 예를 AI에게 제공해볼 수도 있습니다. 이를 통칭해서 소수의 샷 프롬프트라고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 두 가지 접근 방식 모두 효과적이며, 특히 이와 같은 텍스트 작성이 당신에게 일상적인 작업이라면 더욱 그렇습니다. 이 경우에는 이미 필요한 텍스트 템플릿과 스타일에 익숙하고 피해야 할 잠재적인 함정도 인지하고 계실 것입니다.
 
@@ -172,7 +325,18 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 
 이를 어떻게 실행하시나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, '매니저-부하직원' 모델에 대해 앞서 언급한 기술을 활용해보세요(위의 2~4번을 참조하세요). 이는 AI의 도움을 받아 작업을 하위 작업으로 분해하고 중간 결과물을 확인하며, 수정된 버전을 새로운 섹션의 템플릿으로 활용하는 것을 포함합니다.
 
@@ -182,7 +346,18 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 
 예를 들어, 하위 작업 생성 단계를 살펴보겠습니다. AI로부터 첫 번째 하위 작업 목록 버전을 받았을 때, 명확화가 필요한 항목을 다시 쓰세요(모호한 항목이 가장 흔한 문제입니다). 그런 다음 수정된 목록을 AI에 제공하여 삭제할 항목을 지정하고, 이러한 조정 사항을 고려한 새로운 목록 버전을 요청하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 4. 협업 작업의 결과로서의 품질 기준 및 평가
 
@@ -192,11 +367,33 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 
 기준을 명시한 후에도 결과물이 여전히 기준에 미치지 못하는 경우, 최신 개정에서 미충족 기준을 가리켜 챗봇을 신속히 안내할 수 있습니다. 예를 들어 기준 목록에 각 문장에 대한 설명 (항목 2) 및 원하는 비즈니스 스타일의 준수 (항목 4)를 포함하는 경우를 생각해보겠습니다. 그럼 “기준 2 및 4에 따라 텍스트를 개선하세요.”라고 요청할 수 있습니다. AI는 이해하여 필요한 대로 정확히 향상시킬 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 개발자문서를 Markdown 형식으로 변환할 때 table 태그를 변경할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내, 다음 질문이 제기될 수 있습니다: "실제로 우리가 품질 기준을 어디서 얻을까요?" 항상 자세히 설명해야 할까요? 세 번째 능력은 AI가 기준을 수립하는 데 뛰어나다는 것입니다. 물론, AI는 일반적인 고려 사항에서 많은 관련 없는 점을 생성할 수 있지만, 당신이 중요한 점만 쉽게 선택할 수 있습니다. 게다가, AI에게 "만약 ...이면 점수를 더하라"와 "만약 ...이면 패널티를 부여하라"와 같은 예제를 제공하여 이러한 기준을 구체화하도록 요청할 수도 있습니다.
 
@@ -210,7 +407,18 @@ AI 혼란의 가능성을 줄이기 위해 작업을 해결하기 바로 전에 
 - 동등한 입장에서 일하고 수정된 부분을 다음 부분의 템플릿으로 사용하여 소수의 반복을 통해 품질 결과물을 달성하는 공저자로서.
 - 당신이 품질 기준을 정의하고 결과물을 이러한 기준에 따라 평가하는 데 도움이 되는 평가자로서.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 여러분이 태도를 변경하고 AI와의 상호작용을 다시 생각하며, 덜 명백한 역할과 패턴을 받아들이는 것에 준비가 되어 있다면, 여러 혜택을 누릴 수 있습니다:
 
@@ -223,7 +431,18 @@ AI를 실행자로서만 보는 한계를 뛰어넘어 보다 많은 방법으�
 
 # 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [1] ChatGPT으로 유도 엔지니어링을 향상시키기 위한 유도 패턴 카탈로그, Jules White 등, 2023년 2월 21일.
 
@@ -233,7 +452,18 @@ AI를 실행자로서만 보는 한계를 뛰어넘어 보다 많은 방법으�
 
 [4] 대형 언어 모델은 관련 없는 맥락에 쉽게 산만해진다, Freda Shi 등, 2023년 6월 6일.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [5] Rule-Based vs. Model-Graded Evaluations in Gen AI, Rishi Yadav, Jan 26, 2024.
 

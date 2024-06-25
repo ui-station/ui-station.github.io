@@ -3,13 +3,12 @@ title: "Rust로 코딩하는 커맨드 라인 Connect 4 게임 배우기"
 description: ""
 coverImage: "/assets/img/2024-05-20-LearnRustbycodingacommandlineConnect4game_0.png"
 date: 2024-05-20 16:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-LearnRustbycodingacommandlineConnect4game_0.png
 tag: Tech
 originalTitle: "Learn Rust by coding a command line Connect 4 game"
 link: "https://medium.com/gitconnected/learn-rust-by-coding-a-command-line-connect-4-game-673c2bd2edf7"
 ---
-
 
 ![Rust Connect 4](/assets/img/2024-05-20-LearnRustbycodingacommandlineConnect4game_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/learn-rust-by-coding-a-command-line-conne
 
 여기 제 마지막 결과물이 포함된 Rust 플레이그라운드가 있어요. 아래에서는 거기에 이르기까지 취한 정확한 단계를 살펴볼 거에요. 따라오고 싶으시면 Rust가 설치되어 있는지 확인한 후 터미널에서 `cargo new rust_connect_4_tutorial`을 실행해서 프로젝트를 열고 좋아하는 편집기에서 src/main.rs로 이동해서 시작해봐요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 혹은 비디오를 통해 학습하는 것을 선호한다면, 해당 튜토리얼의 비디오 버전을 확인해보세요:
 
@@ -29,7 +39,18 @@ Rust에서 시작하는 가장 좋은 방법 중 하나는 종종 우리의 타�
 
 먼저, 게임에 사용할 보드를 정의해 보겠습니다. Connect 4의 클래식 버전은 7개의 슬롯이 가로로 있고 6개의 슬롯이 세로로 있기 때문에, 이들 정수를 상수로 저장하고, 그 상수를 사용하여 두 차원 배열의 길이를 정의하는 데 사용할 수 있습니다. Board 타입으로 정의합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```rust
 const BOARD_WIDTH: usize = 7;
@@ -52,7 +73,18 @@ enum Player {
 
 위에서는 나중에 유용할 몇 가지 트레잇을 구현하기 위해 derive를 사용하고, enum의 메모리 레이아웃을 제어하기 위해 repr을 사용했습니다. 가능한 모든 값을 알기 때문에 u8로 제한할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 우리는 게임을 나타내는 struct를 만들 것입니다. 여기에는 추적해야 할 모든 상태가 포함될 것입니다.
 
@@ -70,7 +102,18 @@ current_move는 플레이어가 선택한 열을 나타내는 정수입니다. �
 
 마지막으로, Game에 대한 기본 함수를 구현할 것입니다. 이 함수에는 초기 상태가 포함될 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```rust
 impl Game {
@@ -99,7 +142,18 @@ BOARD_WIDTH와 BOARD_HEIGHT를 사용하여 동적으로 생성할 수도 있었
 
 이 방법의 (약간의) 단점은 나중에 정수를 Player로 변환해야 한다는 것입니다. 하지만 Player에 from_int 함수를 구현함으로써 쉽게 해결할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 구현 Player {
@@ -118,12 +172,23 @@ BOARD_WIDTH와 BOARD_HEIGHT를 사용하여 동적으로 생성할 수도 있었
 디버깅을 위해, 보드를 시각화하는 좋은 방법을 빠르게 코드화하는 것이 도움이 될 것입니다. 명령줄에 출력하기 위해 크레이트를 사용하는 대신에 간단한 색을 나타내기 위해 16진수 이스케이프 문자열을 사용할 것입니다.
 
 ```js
-const RESET: &str = "\x1b[0m";
-const ORANGE: &str = "\x1b[93m";
-const RED: &str = "\x1b[0;31m";
+const RESET: str = "\x1b[0m";
+const ORANGE: str = "\x1b[93m";
+const RED: str = "\x1b[0;31m";
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래의 코드에서는 맵을 사용하여 Connect 4 토큰과 유사한 이모지로 슬롯을 변환할 것입니다. 게임이 종료되면 우승자를 발표하는 좋은 장소로 보입니다.
 
@@ -174,7 +239,18 @@ fn main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 조금 지루하지만 수를 두지 않고는 재미가 없죠. 그래서 이제 수를 두는 방법을 프로그래밍해 봅시다!
 
@@ -204,7 +280,18 @@ impl Game {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 if let 코드에서는 열의 맨 아래부터 시작하여 하나씩 올라가면서 빈 칸을 찾을 때까지 진행합니다. 빈 칸을 찾으면 그 위치에 현재 플레이어를 나타내는 정수로 변경하고, 현재 이동을 증가시킨 후 match 표현식을 사용하여 플레이어를 변경합니다.
 
@@ -213,7 +300,7 @@ impl Game {
 ```js
 fn main() {
     let mut game = Game::default();
-    
+
     game.play_move(3);
     game.play_move(3);
     game.play_move(4);
@@ -225,7 +312,18 @@ fn main() {
 
 # 오류 처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 우리는 보드 바깥으로 이동을 시도하는 잠재적인 오류를 처리하지 않고 있습니다. 따라서 세 가지 가능한 오류를 처리해 봅시다:
 
@@ -237,7 +335,18 @@ fn main() {
 
 세 가지 오류 유형을 포함한 enum을 만들어 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 enum MoveError {
@@ -263,8 +372,18 @@ impl std::fmt::Display for MoveError {
 
 이제 이를 사용하여 play_move 함수를 수정할 수 있습니다. 이제 우리는 움직임이 성공적이면 아무것도 반환하지만, 그렇지 않은 경우 에러가 반환되는 Result enum을 반환합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```rust
 impl Game {
@@ -300,7 +419,7 @@ impl Game {
 }
 ```
 
-디버깅을 위해 이제 play_move의 결과를 인쇄할 수 있으며, 예상치 못한 입력이 있는 경우 enum으로부터 에러를 볼 수 있습니다. 
+디버깅을 위해 이제 play_move의 결과를 인쇄할 수 있으며, 예상치 못한 입력이 있는 경우 enum으로부터 에러를 볼 수 있습니다.
 
 우리가 여기에 있는 동안, 명령줄에 에러 메시지를 인쇄하는 도우미 함수를 추가해 봅시다.
 
@@ -315,7 +434,18 @@ impl Game {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 게임에서 승리했는지 계산하기
 
@@ -328,7 +458,18 @@ impl Game {
 - 역 슬래시 대각선 (왼쪽 위에서 오른쪽 아래로),
 - 순방향 슬래시 대각선 (왼쪽 아래에서 오른쪽 위로).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게시판의 모든 슬롯을 반복하여 네 방향 중 하나에서 테스트할 수 있습니다. (게시판이 작기 때문에 무차별 대입 방식을 사용하는 것이 부담이 되지 않습니다. 그러나 더 나은 방법이 있는지 궁금합니다!)
 
@@ -338,14 +479,25 @@ impl Game {
 
 ```js
 let directions = [
-    (0, 1),  // 가로
-    (1, 0),  // 세로
-    (1, 1),  // 대각선 (왼쪽 위에서 오른쪽 아래)
-    (-1, 1), // 대각선 (왼쪽 아래에서 오른쪽 위)
+  (0, 1), // 가로
+  (1, 0), // 세로
+  (1, 1), // 대각선 (왼쪽 위에서 오른쪽 아래)
+  (-1, 1), // 대각선 (왼쪽 아래에서 오른쪽 위)
 ];
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 튜플들이 무엇을 나타내는지 알려드릴게요:
 
@@ -385,7 +537,18 @@ impl Game {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 연속 카운트를 유지하고 — 4에 도달하면 승자가 나온 것을 알 수 있습니다.
 
@@ -445,7 +608,18 @@ impl Game {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 이동 횟수가 일곱 미만인 경우 이러한 확인 작업을 수행하지 않고 최적화를 조금 추가할 수 있습니다. 그때까지는 게임에서 이기는 것이 불가능하기 때문입니다. 그래서 함수 맨 위에 이를 추가해 봅시다:
 
@@ -463,7 +637,18 @@ if self.current_move >= BOARD_HEIGHT as u8 * BOARD_WIDTH as u8 {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 새로운 calculate_winner 함수를 play_move 함수에 추가할 수 있습니다. 이번에는 아무것도 반환하는 대신, 성공인 Result enum을 반환하거나 실패인 경우에는 오류를 반환합니다.
 
@@ -510,7 +695,18 @@ impl Game {
 
 # 사용자 입력 받기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 명령 줄 게임의 마지막 부분에서는 주 함수로 돌아가 사용자 입력을 읽을 수 있도록 할 것입니다.
 
@@ -522,7 +718,18 @@ use std::io;
 
 사용자 입력을 읽는 논리는 다음과 같이 보일 수 있습니다. 여기서는 컴퓨터와 달리 0이 아닌 1부터 시작하여 카운트하게 됩니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 let mut user_move = String::new();
@@ -563,7 +770,18 @@ match game.play_move(user_move - 1) {
 - 구문 분석이 실패하는 경우 (예: 입력이 숫자가 아닌 경우).
 - 구문 분석이 성공하지만 숫자가 원하는 범위를 벗어난 경우.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 오류가 표시되지 않는다면, 우리는 선택한 수를 둘 것입니다. 그러나 해당 시나리오에서 오류가 발생할 수도 있으므로, 그런 경우에는 오류를 표시할 것입니다.
 
@@ -619,7 +837,18 @@ fn main() {
 
 # 여러 판을 플레이하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 사용자가 게임을 끝내면 게임을 다시 시작할 수 있도록 추가 코드를 추가하고 싶어요. 매번 실행 파일을 다시 시작해야 하는 번거로움은 피하고 싶으니까요!
 
@@ -660,7 +889,18 @@ fn main() {
 
 마지막으로, 차례 사이에 터미널을 지우기 위한 ASCII 이스케이프 코드를 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 fn clear_screen(&self) {
@@ -680,7 +920,18 @@ fn display_board(&self) {
 
 # 모두 함께 가져오기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것이 커넥트 4의 간단한 명령줄 게임을 위해 필요한 모든 것입니다! 이 작업 중인 파일을 사용하는 작동 버전을 시험하려면 Rust 플레이그라운드를 확인해보세요.
 
@@ -720,8 +971,18 @@ impl Player {
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 따라오셨다면 프로젝트를 더 나아가고 싶을 것입니다. 여러 게임을 거치면서 승리를 추적해 볼 수도 있고, 어떨까요? 어플리케이션을 웹 서버로 전환하여 웹사이트가 HTTP를 통해 Connect 4를 플레이할 수 있게끔 만들어 보는 것은 어떤가요?
 
 이번 명령줄 어플리케이션을 Rust로 개발하는 방법에 대한 유용하고 재미있는 통찰력으로 여기시길 바랍니다. 아직 Rust 여행을 시작한 지 얼마 되지 않았기 때문에, 어떠한 비평이나 더 많은 Rust 다운 방식으로 어플리케이션을 작성하는 아이디어가 있다면 꼭 알려주세요. 함께 고민해보고 싶습니다.
+```

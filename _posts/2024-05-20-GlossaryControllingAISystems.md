@@ -3,13 +3,12 @@ title: "용어 해설 AI 시스템 제어하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-GlossaryControllingAISystems_0.png"
 date: 2024-05-20 20:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-GlossaryControllingAISystems_0.png
 tag: Tech
 originalTitle: "Glossary: Controlling AI Systems"
 link: "https://medium.com/@kozyrkov/glossary-controlling-ai-systems-52b7e600a5d7"
 ---
-
 
 ## 장난기 많은 해독자들
 
@@ -20,7 +19,18 @@ link: "https://medium.com/@kozyrkov/glossary-controlling-ai-systems-52b7e600a5d7
 - 따뜻한 색상: 소프트웨어가 아닌 것
 - 차가운 색상: 소프트웨어
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노랑: 교육
 주황: 연구
@@ -33,7 +43,18 @@ link: "https://medium.com/@kozyrkov/glossary-controlling-ai-systems-52b7e600a5d7
 
 그러나 색깔로 구분한 것을 보면 뭔가 흥미로운 점을 알아채셨나요? 핵심 단어를 따라가보세요, 그것들이 관심, 노력 및 투자가 이루어지는 곳과 일치하는 것 같습니다. 그런 식으로 읽으면, 제품 측면이 아닌 인간 측면에 도구를 구축하는 노력이 충분하지 않은 것으로 보입니다. 기술적이지 않은 인간 의사 결정자 및 그들의 조직이 복잡한 기술의 방향을 조정하는 것을 개선할 수 있는 정도보다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정말 아무것도 없이 순수한 마음만으로 복잡한 기술을 책임있게 다룰 수 있다고 믿는 건가요? 우리가 그런 능력을 갖추기 위해 긴급히 도구를 만들어야 하는 거 아닌가요?
 
@@ -50,11 +71,22 @@ link: "https://medium.com/@kozyrkov/glossary-controlling-ai-systems-52b7e600a5d7
 - 인지 컴퓨팅 — 복잡한 문제 해결과 의사 결정에서 인간의 사고 과정을 시뮬레이션하는 데 AI 사용. [소프트웨어(제품): 70%, 소프트웨어(사용자): 30%]
 - AI 준수 — AI 시스템이 관련 법률, 규정 및 산업 표준을 준수하도록 보장. [소프트웨어(규칙/정책): 80%, 소프트웨어(제품): 20%]
 - AI 제어 시스템 — AI 시스템의 행동과 작업을 제어하기 위해 설계된 메커니즘. [소프트웨어(제품): 60%, 소프트웨어(연구): 40%]
-...
+  ...
 
 [중략]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 읽어 주셔서 감사합니다!
 

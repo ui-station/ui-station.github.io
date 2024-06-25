@@ -3,16 +3,14 @@ title: "성공적인 관리자들이 실천하는 6가지 미세 습관"
 description: ""
 coverImage: "/assets/img/2024-06-22-6MicroHabitsofHighlyEffectiveManagers_0.png"
 date: 2024-06-22 23:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-6MicroHabitsofHighlyEffectiveManagers_0.png
 tag: Tech
 originalTitle: "6 Micro Habits of Highly Effective Managers"
 link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-managers-cce3b3f9ba66"
 ---
 
-
 아래는 이미지 태그를 Markdown 형식으로 변경한 것입니다.
-
 
 ![Manager](/assets/img/2024-06-22-6MicroHabitsofHighlyEffectiveManagers_0.png)
 
@@ -22,8 +20,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 문제에 반응하여 바쁘게 해결하거나 기회를 결과로 전환하는 적극적인 접근을 하는 것이 좋을까요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거대한 발걸음을 내딛으려 하다가 진전을 이루기 어려울 때 포기하느냐, 아니면 쉬운 속도로 매일 꾸준히 나아가느냐?
 
@@ -33,7 +41,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 매니저에게 효과적으로 일하는 것은 선택사항이 아닌, 그들 직무의 중요한 부분입니다. 효과적이지 않다면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 하찮은 일에 더 많은 시간을 들이고 전진하는 활동에 소요되는 시간은 줄어듭니다.
 - 들인 노력이 결과와 맞지 않습니다.
@@ -47,7 +66,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 매니저가 안전한 선택을 하는 이유는 무엇일까요 — 좋은 기회를 놓치고, 위험을 감수하지 않기, 이전에 했던 일을 계속해야 하는 이유는 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두려움.
 
@@ -57,7 +87,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 신용을 잃을까 두려움.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두려움이 심심하고 능력 있는 매니저도 효과적이지 못하게 만드는 경우가 많습니다. 건강한 감정과 도움이 되지 않는 감정을 구분하지 못해서 그들은 안락 지대에 갇힌 채 유지됩니다. 안락 지대는 안전해 보이지만 성장을 제한하기도 합니다.
 
@@ -69,7 +110,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 ## 비판만을 하는 사람들을 피하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 매니저가 항상 비판을 받고 아이디어를 맹비난받고 새로운 방법에 반대하는 사람들에게 둘러싸여 있으면 어떻게 될까요?
 
@@ -79,7 +131,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 토론이 영원히 계속됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 상황을 유지하는 중입니다.
 
@@ -89,7 +152,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 효율적인 매니저는 주변 사람들의 에너지를 확인합니다 — 그들이 올바른 의도로 우려를 표현하고 있는지, 아니면 단순히 부정적인 태도를 퍼뜨리고 있는지?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 부정적인 사고를 가진 사람들이나 비판적인 사람들과 거리를 두거나 그들의 영향을 최소화하는 것은 더 나은 결정을 내리도록 돕습니다. 선택을 내리기 전에 다양한 옵션을 고려할 수 있습니다.
 
@@ -99,7 +173,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 그들은 자신의 사고가 합리적이라고 가정하고 자신이 어떻게 속고 있는지 깨닫지 못하고 남을 판단합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 인지 편향이 있습니다. 예를 들어, 근본적인 속성 소인 오류, 확인 편향, 투명성의 환상, 프레임 효과, 그리고 모든 것이 아닌 사고가 습관적인 사고 오류로 이어지며, 현실에 대한 부정확한 견해를 형성합니다.
 
@@ -112,7 +197,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 - 답변 대신 질문으로 리드합니다.
 - 선택적으로 간단함을 더하기 위해 Occam의 면도날을 사용하고, 자신의 개인적 서술을 넘어서 다른 사람의 관점에서 상황을 상상하기 위해 Hanlon의 면도날을 적용하며, 그 밖의 유용한 정신적 모델을 활용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일상 습관으로서 이러한 간단한 실천 방법을 채택하면 인지 편향이 결정에 미치는 부정적인 영향을 줄일 수 있고 어떻게 리딩하는지에 도움이 되겠죠.
 
@@ -122,7 +218,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 다른 사람들보다 항상 우월함을 느끼는 것과 늘 다른 사람보다 더 나은 존재여야 한다는 욕망입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 탁월한 관리자는 자신의 팀의 사고력과 능력을 향상시키는 배푸리로서 활동합니다. 그들은 사람들이 스스로 발전할 수 있도록 도와주며 각 개인의 독특한 지성을 활용하고 적절한 기회들과 연결시킵니다.
 
@@ -130,7 +237,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 ## 영향권 내에서 활동하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 왜 일부 관리자는 장애물을 만나거나 도전에 직면했을 때 즉시 포기하는 것일까?
 
@@ -140,7 +258,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 매우 효과적인 관리자들은 대리력이 높습니다. 그들은 영향력 영역에 노력을 집중합니다. 제어할 수 있는 것에 주의를 기울이면 실험을 하고 다양한 전략을 시도하며 실제 문제를 해결할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기대한 대로 되지 않을 때 타인을 비난하거나 비판하는 대신, 자신의 결정과 행동을 내적으로 돌아보는 사람들이 있습니다. 이는 다른 사람의 약점에 초점을 맞추는 것에서 자신의 강점으로 이동시킵니다. 자신의 통제력을 발휘함으로써 얻는 긍정적 에너지는 그들의 영향력을 증대시킵니다.
 
@@ -153,7 +282,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 높은 효율을 발휘하는 매니저는 희생자식 마인드에 빠지거나 자신의 통제 범위 밖에 있는 사람들, 상황 또는 조건에 대해 시간을 낭비하지 않기 때문에 행동할 수 있는 힘을 느낍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 일의 신체적, 정신적 요구에 에너지를 맞추세요
 
@@ -163,7 +303,18 @@ link: "https://medium.com/code-like-a-girl/6-micro-habits-of-highly-effective-ma
 
 매우 효과적인 매니저들은 일의 신체적, 정신적 요구와 에너지를 맞춤으로써 일정을 최적으로 활용합니다. 그들은 최고 생산성 시기를 활용하여 가장 중요한 일 중 일부를 처리합니다. 중요한 일을 우선시하는 것은 정신적 에너지가 최상 상태일 때 명확하게 사고하고 의식적인 결정을 내릴 수 있도록 돕습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 요약
 

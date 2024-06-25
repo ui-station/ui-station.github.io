@@ -3,13 +3,12 @@ title: "라즈베리 파이 싱글 보드 컴퓨터의 MVP"
 description: ""
 coverImage: "/assets/img/2024-05-18-RaspberryPiTheMVPofSingleBoardComputers_0.png"
 date: 2024-05-18 18:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-RaspberryPiTheMVPofSingleBoardComputers_0.png
 tag: Tech
 originalTitle: "Raspberry Pi: The MVP of Single Board Computers"
 link: "https://medium.com/@nandanghawate/raspberry-pi-the-mvp-of-single-board-computers-93c85bc62361"
 ---
-
 
 마이크로컨트롤러 개발 보드와 싱글 보드 컴퓨터의 다이내믹한 세계에서 한 기기가 두드러지게 빛납니다 — 라즈베리 파이! 이 신용 카드 크기의 컴퓨터는 정당하게 기술 애호가들의 상상력을 자극하며 취미가, 교육자, 전문가들을 매료시킵니다.
 라즈베리 파이에 대해 살펴보겠습니다 — 중요성, 다양한 모델, 주변 장치 및 다양한 응용분야.
@@ -20,7 +19,18 @@ link: "https://medium.com/@nandanghawate/raspberry-pi-the-mvp-of-single-board-co
 
 ## 라즈베리 파이의 필요성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 가격: 라즈베리 파이 보드는 저렴해서 학생들과 취미로 하는 사람들에게 접근하기 쉽습니다.
 - 다양성: 이 보드는 다양한 운영 체제, 프로그래밍 언어 및 응용 프로그램을 지원합니다.
@@ -49,7 +59,18 @@ link: "https://medium.com/@nandanghawate/raspberry-pi-the-mvp-of-single-board-co
 
 ## 라즈베리 파이 주변 기기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 전원 공급: 최대 2.5A의 전원 공급을 위한 USB 포트.
 - MicroSD 카드: 운영 체제 및 데이터 저장용.

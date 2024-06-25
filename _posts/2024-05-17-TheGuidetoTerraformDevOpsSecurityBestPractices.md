@@ -3,13 +3,12 @@ title: "테라폼 DevOps 안내서 보안 최상의 실천 방안"
 description: ""
 coverImage: "/assets/img/2024-05-17-TheGuidetoTerraformDevOpsSecurityBestPractices_0.png"
 date: 2024-05-17 18:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-TheGuidetoTerraformDevOpsSecurityBestPractices_0.png
 tag: Tech
 originalTitle: "The Guide to Terraform DevOps: Security Best Practices"
 link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-security-best-practices-085ee46cfb3e"
 ---
-
 
 <img src="/assets/img/2024-05-17-TheGuidetoTerraformDevOpsSecurityBestPractices_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-aws/the-guide-to-terraform-devops-security-bes
 
 # 목차
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Terraform DevOps 안내서: 보안 모범 사례
 - 요약
@@ -47,7 +57,18 @@ Terraform은 인프라스트럭처의 코드 (IaC)에 대한 필수 도구로, �
 
 전통적으로 인프라스트럭처 프로비저닝은 수동 구성을 필요로 하며, 시간이 많이 걸리고 오류가 발생하기 쉬운 과정이었습니다. Terraform은 이에 도전하여 인프라스트럭처를 코드로 정의할 수 있도록 해주는 접근법을 제공합니다. HashiCorp Configuration Language (HCL)로 작성된 코드는 필요한 리소스 (서버, 네트워크, 데이터베이스)와 그 구성을 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 Terraform의 이점에 대해 탐구하고 IaC 배포가 안전하고 신뢰할 수 있도록 보장하기 위한 필수 보안 모범 사례를 제공합니다. 우리는 다음과 같은 주요 영역을 탐색할 것입니다:
 
@@ -57,7 +78,18 @@ Terraform은 인프라스트럭처의 코드 (IaC)에 대한 필수 도구로, �
 
 💣 안전한 Terraform 모듈: 모듈을 안전하게 활용하고 보안을 염두에 두고 자체 모듈을 생성하는 방법을 이해합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "IBM와 HashiCorp의 병합된 포트폴리오는 고객이 증가하는 애플리케이션 및 인프라 복잡성을 관리하고 AI 시대를 위해 설계된 포괄적인 하이브리드 클라우드 플랫폼을 만들 수 있도록 도와줍니다." - IBM 회장이자 최고 경영자인 아빈드 크리슈나가 말했습니다.
 
@@ -72,7 +104,18 @@ Terraform은 인프라스트럭처의 코드 (IaC)에 대한 필수 도구로, �
 - 로컬에 Docker 설치.
 - Terraform
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 💡 솔루션 💡
 
@@ -82,7 +125,18 @@ Terraform은 인프라스트럭처의 코드 (IaC)에 대한 필수 도구로, �
 
 다음은 Terraform을 사용할 때 보안을 유지하기 위한 모베스트 프랙티스입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테라폼 상태 보안을 강화하세요 🫶
 
@@ -106,7 +160,18 @@ data "terraform_remote_state" "foo" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에서 더 많은 정보를 얻을 수 있습니다:
 
@@ -117,7 +182,18 @@ data "terraform_remote_state" "foo" {
 
 예를 들어 Azure Key Vault를 사용하여 비밀을 안전하게 관리하는 방법:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 provider.tf
 
@@ -173,7 +249,18 @@ resource "azurerm_key_vault_secret" "my_secret" {
 data "azurerm_client_config" "current" {}
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Role-Based Access Control (RBAC) 구현
 
@@ -225,9 +312,20 @@ resource "azurerm_role_assignment" "role" {
   role_definition_id = data.azurerm_role_definition.role.id
   principal_id       = azuread_group.aad_group.id
 }
-``` 
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 코드 리뷰 및 협업 🫶
 
@@ -295,7 +393,18 @@ jobs:
         run: terraform destroy -auto-approve
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 배포 자동화: CI/CD 파이프라인을 사용하여 Terraform 배포를 자동화하여 일관성을 유지하고 인간 에러의 위험을 줄입니다.
 - 취약점 검사: CI/CD 파이프라인에 보안 스캔 도구를 통합하여 배포 전에 Terraform 구성에서 취약점을 감지합니다.
@@ -308,7 +417,18 @@ jobs:
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 module "network" {
@@ -325,8 +445,18 @@ module "network" {
 
 # 네트워크 보안 🫶
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - VPC 및 서브넷 사용: 가상 사설 클라우드(VPC) 및 서브넷을 이용하여 리소스를 격리하도록 네트워크 아키텍처를 설계하세요.
 - 보안 그룹 및 방화벽: 엄격한 보안 그룹 규칙과 네트워크 방화벽 정책을 적용하여 트래픽 흐름을 제어하고 노출을 제한하세요.
@@ -338,7 +468,18 @@ module "network" {
 
 # 재해 복구 및 백업 👀
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 provider "azurerm" {
@@ -423,7 +564,18 @@ resource "azurerm_backup_protected_vm" "protected_vm" {
 
 고려해야 할 몇 가지 부가 사항이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터의 존속중 암호화 #1 — 서버 측 암호화는 데이터를 적절히 보호하지만, 특히 환경 간 전송 시 상태 파일을 암호화하는 것을 고려해보세요. 👑
 - 서비스 계정에 대한 최소 권한 부여 #2 — Terraform과 서비스 계정을 사용할 때, 해당 계정이 특정 작업에 필요한 최소한의 권한을 갖도록하십시오.
@@ -436,7 +588,18 @@ DevOps 환경에서 Terraform을 보안하는 데 이러한 모범 사례를 따
 
 읽어 주셔서 감사합니다! 🙌🏻 구독하고 CLAP을 꼭 눌러주세요 👏 다음 기사에서 만나요.🤘
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 나에 대해
 
@@ -444,7 +607,18 @@ DevOps 환경에서 Terraform을 보안하는 데 이러한 모범 사례를 따
 
 저자(Joel O. Wembo)에 대한 더 많은 정보를 원하시면 아래 링크를 확인해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Linkedin: [https://www.linkedin.com/in/joelotepawembo/](https://www.linkedin.com/in/joelotepawembo/)
 - Website: [https://joelwembo.com](https://joelwembo.com)

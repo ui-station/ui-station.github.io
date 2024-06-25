@@ -3,13 +3,12 @@ title: "2024년 자바 개발자 면접 합격을 위한 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-22-YourGuidetoClearJavaDeveloperInterviewin2024_0.png"
 date: 2024-06-22 22:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-YourGuidetoClearJavaDeveloperInterviewin2024_0.png
 tag: Tech
 originalTitle: "Your Guide to Clear Java Developer Interview in 2024."
 link: "https://medium.com/@rathod-ajay/your-guide-to-clear-java-developer-interview-in-2024-36a926ec6719"
 ---
-
 
 안녕하세요, 제 7천 명 이상의 팔로워 여러분, 모든 지원에 감사드립니다. 그 회사의 감축 뉴스를 보게 되면 언제나 나는 면접 준비가 되어 있는 상태로 있어야 한다고 생각해요. 100회 이상의 인터뷰를 진행했고 100회 이상의 Java 인터뷰에 나갔어요. 그 경험을 토대로 이 글을 쓰게 되었어요. 나의 경험상으로, 각 MNC의 Java 인터뷰는 나중에 이 글에서 논의할 전형적인 패턴을 따르는 것을 알고 있어요. 충분한 인터뷰를 가졌다면, 매번 전형적인 Java 개발자 기술면접에서 질문과 주제가 항상 반복되는 것을 알 수 있을 거예요. 이 형식에 대해 이야기하고, 해당 주제에서 몇 가지 질문을 사용하여 왜 이러한 질문이 제기되는지 설명하고 모든 인터뷰에서 항상 반복될 것이라고 말할 거에요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rathod-ajay/your-guide-to-clear-java-developer-interv
 
 회사들, 특히 대기업과 기술 기업은 보통 각 인터뷰 단계에 대해 약 1시간을 할애하곤 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바는 다루어야 할 내용이 많은 방대한 주제입니다. 기본 개념 외에도 인터뷰어들은 여러분의 프로젝트, 프로젝트 배포 방법, 코딩 과제, 주요 개념에 대한 이해, 그리고 클라우드 컴퓨팅, 쿠버네티스 및 기타 기술 도구 등에 대해 물어볼 가능성이 높습니다. 다뤄야 할 내용이 많습니다!
 
@@ -29,9 +39,20 @@ link: "https://medium.com/@rathod-ajay/your-guide-to-clear-java-developer-interv
 
 그러니 기본 개념을 잘 이해하고 코딩 기술을 연습하는 데 집중해봅시다. 한 걸음씩 진행하며 각 주제를 철저히 다루겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-지금부터 60분의 시간이 시작됐어요. 인터뷰에서 다룰 주제마다 8-10분씩 할당해봅시다. 그리고 인터뷰어인 저가 어떤 종류의 질문들을 할지도 살펴봅시다.  
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+지금부터 60분의 시간이 시작됐어요. 인터뷰에서 다룰 주제마다 8-10분씩 할당해봅시다. 그리고 인터뷰어인 저가 어떤 종류의 질문들을 할지도 살펴봅시다.
 
 만약 여러분을 채용한다고 상상해봅시다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@rathod-ajay/your-guide-to-clear-java-developer-interv
 
 이 주제에서는 지원자가 경험이 있는지 판단하고 싶어요. 경험이 없다면, 프로젝트에 대해 질문을 시작할 거에요. 기능, 흐름, 아키텍처에 대해 물어보겠고, 사용된 기술 스택과 제품화된 방법, 그리고 역할과 기여도에 대해 물어볼 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 면접에서 이렇게 질문이 나올 거에요,
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@rathod-ajay/your-guide-to-clear-java-developer-interv
 
 Core Java는 방대한 주제이며 인터뷰어는 이러한 주제에 집중해야 할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 영역에서 철저한 답변을 제공해보세요. Core Java는 Java 개발자에게 기본적인 것으로 간주됩니다. 어떤 프레임워크도 모른다고 해도 괜찮지만, Core Java 지식이 부족하면 문제가 발생할 수 있습니다.
 
@@ -67,7 +110,18 @@ Core Java는 방대한 주제이며 인터뷰어는 이러한 주제에 집중�
 - Java 메모리 모델(객체, 메서드, 변수가 Java 메모리의 각 영역에 어떻게 저장되는지)
 - 가비지 컬렉션(작동 방식, 객체를 가비지 수집하는 방법, 수행하는 동안 사용되는 알고리즘)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 당신이 말씀하신 내용을 쉽게 참조할 수 있도록 Markdown 형식으로 변경하였습니다.
 
@@ -90,7 +144,18 @@ String의 join() 메서드의 용도는 무엇인가요?
 
 아래 기사에 대부분의 질문이 있으니 참고해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 주제 3: 자바-8/자바-11/자바-17
 
@@ -100,7 +165,18 @@ Java8-java21에서 모든 기능을 문서화한 내 기사를 참조할 수 있
 
 아래 주제들은 중요하며 면접에서 주로 다루는 내용입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 주제:
 
@@ -118,7 +194,18 @@ Java8-java21에서 모든 기능을 문서화한 내 기사를 참조할 수 있
 
 가상 스레드 기능은 Java 21에 도입되었고, 봉인된 클래스는 Java 17에 도입되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 질문:
 
@@ -128,7 +215,18 @@ Java 메모리 모델의 새로운 개선 사항은 무엇이며, Java 8 해시�
 
 # 주제 4: 스프링 프레임워크, 스프링 부트, 마이크로서비스 및 REST API
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 또한 방대한 주제이기 때문에 기본부터 고급 반복 질문에 집중해야 합니다. Spring Framework, Spring Boot, Microservice 및 Rest API 에 대해 시험을 볼 것입니다.
 
@@ -149,7 +247,18 @@ Java 메모리 모델의 새로운 개선 사항은 무엇이며, Java 8 해시�
 - Spring Cloud
 - JPA
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 질문:
 
@@ -165,7 +274,18 @@ Java 메모리 모델의 새로운 개선 사항은 무엇이며, Java 8 해시�
 - 애플리케이션을 고장 허용하고 탄력적으로 만드는 방법은 무엇인가요?
 - 스프링 부트 어플리케이션에서 자동 구성을 비활성화하는 방법은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 관련 기사,
 
@@ -175,7 +295,18 @@ Java 메모리 모델의 새로운 개선 사항은 무엇이며, Java 8 해시�
 
 쿼리 작성에 대비해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 알아야 할 주제는,
 
@@ -194,7 +325,18 @@ JPA란 무엇인가요?
 부모-자식 관계란 무엇인가요?
 조인이 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 주제에 대해 더 많은 도움을 얻을 수 있는 관련 기사를 찾아보세요,
 
@@ -204,7 +346,18 @@ JPA란 무엇인가요?
 
 면접에 가기 전에 연습을 해보세요. 연습을 충분히 하면 쉬운 문제일 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 싱글 페이지는 관련 기사 몇 개를 담고 있어요.
 
@@ -216,7 +369,18 @@ JPA란 무엇인가요?
 
 ## 질문
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 배열에서 두 번째로 큰 요소를 찾는 프로그램을 작성하세요. 배열에는 중복 요소가 포함될 수 있습니다. Java 8 스트림을 사용하여 이 문제를 해결해보세요.
 
@@ -226,7 +390,18 @@ Java 스트림을 사용하여 주어진 문자열에서 첫 번째로 반복되
 
 Java 스트림을 사용하여 주어진 문자열에서 고유한 요소를 찾는 프로그램을 작성해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주어진 배열에서 가장 긴 문자열을 찾는 프로그램을 작성해보세요.
 
@@ -236,7 +411,18 @@ Java 스트림을 사용하여 주어진 문자열에서 첫 번째 반복 요�
 
 유효한 괄호를 위한 프로그램을 작성해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스트림 API를 사용하여 문자열 목록에서 중복 문자를 찾는 WAP를 만들어 보세요.
 
@@ -246,7 +432,18 @@ Java 스트림을 사용하여 주어진 문자열에서 첫 번째 반복 요�
 
 ## 질문:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쿠버네티스에서 POD, ConfigMap, Node 및 클러스터란 무엇인가요?
 
@@ -258,7 +455,18 @@ Kafka란 무엇인가요? 어떻게 작동하나요? 오프셋과 컨슈머 그�
 
 면접관은 항상 일부 디자인 패턴에 대해 묻고 싶어합니다. 이는 싱글톤, 팩토리 또는 옵저버 패턴과 같은 일반적인 디자인 패턴일 수 있으며 이러한 패턴을 코딩에 활용할 수 있는지 알아보기 위함입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이크로서비스는 요즘 많이 사용되고 있어요. 그런데 여기에는 회로 차단기, SAGA, CQRS, 이중 커밋, BFF 그리고 API 게이트웨이와 같이 다양한 유형의 패턴도 포함됩니다.
 
@@ -266,7 +474,18 @@ Kafka란 무엇인가요? 어떻게 작동하나요? 오프셋과 컨슈머 그�
 
 ## 질문:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 싱글톤 디자인 패턴, 빌더 디자인 패턴 또는 퍼사드 디자인 패턴에 대해 알고 계신가요? 어떤 두 가지 일반적인 마이크로서비스 패턴을 사용해야 하는지 알려주세요. 이러한 주제들은 항상 반복되므로 준비하면 인터뷰의 마지막 부분을 쉽게 통과할 수 있습니다.
 
@@ -276,7 +495,18 @@ Kafka란 무엇인가요? 어떻게 작동하나요? 오프셋과 컨슈머 그�
 
 모든 이러한 질문과 주제들은 모든 Java 인터뷰에서 반복되며, 면접관은 이러한 질문을 물어볼 1시간밖에 없습니다. 자주 반복되는 질문에 대해 준비하면 인터뷰를 쉽게 통과하고 일자리를 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 감사합니다! 자바 인터뷰에 대한 더 많은 질문과 주제가 필요하시면 제 책을 참고하시기 바랍니다. 모든 것을 문서화했습니다.
 
@@ -287,7 +517,18 @@ Kafka란 무엇인가요? 어떻게 작동하나요? 오프셋과 컨슈머 그�
 - 👏 이야기에 박수를 보내고 저를 팔로우해주세요 👉
 - 📰 제 Medium에서 더 많은 콘텐츠를 읽어보세요 (자바 개발자 인터뷰에 관한 50개의 이야기)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 책들을 찾아보세요:
 

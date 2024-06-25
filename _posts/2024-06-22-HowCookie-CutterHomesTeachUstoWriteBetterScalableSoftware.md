@@ -3,13 +3,12 @@ title: "표준화된 주택이 더 나은 확장 가능한 소프트웨어 개�
 description: ""
 coverImage: "/assets/img/2024-06-22-HowCookie-CutterHomesTeachUstoWriteBetterScalableSoftware_0.png"
 date: 2024-06-22 23:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-HowCookie-CutterHomesTeachUstoWriteBetterScalableSoftware_0.png
 tag: Tech
 originalTitle: "How Cookie-Cutter Homes Teach Us to Write Better Scalable Software"
 link: "https://medium.com/@drpicox/scaling-development-teams-lessons-from-urban-planning-8133255b0646"
 ---
-
 
 대규모 팀 개발에 대해 이야기할 때, 또는 더 정확히 말하면 여러 팀이 공통 목표를 향해 협력해야 하는 프로젝트에서는 무엇이 잘 되고 무엇이 잘 안 되는지의 역학이 빠르게 변합니다. 10명 또는 심지어 20명의 팀에 효과적인 것이 100명 이상의 팀에는 효과적이지 않을 가능성이 있음을 분명히 알 수 있습니다. 더 작은 팀으로 나누어져 있더라도 의존성과 과정이 강력하다면, 그들은 사실상 훨씬 큰 가상 팀이 되어버립니다 (이에 대해 이전에 기사에서 논의했습니다).
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@drpicox/scaling-development-teams-lessons-from-urban-
 
 그래서, 강한 도시에서 어떤 개념이 내가 대개 큰 팀들이 잘못 관리되는 것을 다시 생각하게 했을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘, 나는 Charles Marohn(강력한 도시의 대통령이자 설립자)이 계획된 도시 발전의 문제에 대해 이야기하는 것을 많은 시간동안 듣고 있었어. 그리고 이번에는 한 가지 개념이 나에게 더 깊게 와닿았고, 소프트웨어 엔지니어링 세계와도 직접적인 관련성을 느꼈어.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@drpicox/scaling-development-teams-lessons-from-urban-
 
 큰 팀을 위한 아키텍트의 역할을 생각해볼 때, 많은 사람들을 모아 팀을 조직하는 역할에 대해 고려해봤을 때, 보통의 접근 방식은 종종 동질화하는 것이야. '모두가 같은 도구를 사용한다면, 우리는 지식과 해결책을 널리 활용할 수 있겠지'라는 생각이야. 나도 오랫동안 이것을 믿었어. 나는 이것을 정말 놀랍게 여기기도 했고, 솔직히 말해서 그 당시에는 미니프론트엔드나 미니프레임워크 같은 방법론이 각 팀이 자신에 맞는 프레임워크나 라이브러리, 데이터베이스 등을 선택할 수 있다고 가정한 것을 비웃기도 했어. 나에게는 이것이 순수한 혼돈과 재앙의 레시피로 느껴졌지.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 다음 경험이 찾아왔어요. 종이 위에서 잘 작동해야 했던 모든 것이 예상대로 되지 않았음을 관찰했습니다. 간단해 보이는 작은 변화도 대규모이며, 느리고 모든 팀 또는 모든 팀이 참여해야 하는 프로젝트로 변모했으며, 수개월 또는 몇 년이 걸렸습니다. 모든 것이 바람을 맞서 있었어요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@drpicox/scaling-development-teams-lessons-from-urban-
 
 해결책은 무엇일까요? 팟캐스트에서 설명한 것은?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 '해결책'은 끝 부분에 나옵니다. 이는 스트롱 타운즈(Strong Towns)의 철학을 반영하고 있습니다: 점진적 적응. 큰 변화를 만들지 말고, 대신 작은 개선에 집중해보세요. 한꺼번에 100채의 집을 짓지 말고 2채를 개조하고, 또 다른 것을 개조하고, 이런 식으로 진행하세요. 고대부터 도시가 가지고 있던 유기적 발전을 이어갔으면 좋겠고, 현재 멋을 준 계획을 피하면서 떨어진 모양을 피해야 합니다.
 
@@ -49,6 +81,17 @@ link: "https://medium.com/@drpicox/scaling-development-teams-lessons-from-urban-
 
 재미있지 않나요? 스트롱 타운즈의 철학과 애자일(Agile)이 얼마나 유사한지? 그러나 생각해보면 그리 놀랍지는 않을 것입니다. 스트롱 타운즈는 사람들이 함께(도시적으로) 진보하고 발전하는 방법에 중점을 둡니다. 이를 효율적으로 수행하는 방법은 반복적이고, 작은 단계로 진행하면서 배우는 것입니다. 사물을 유기적으로 발전하게 해서 이미 작동 중인 구조를 활용하고, 더 나은 결과를 위해 그 위에 쌓는 것입니다. 본질적으로 이것이 과학적 방법의 기초이며, 이것이 리안 제조 및 애자일 정신을 지지하는 바탕이기도 합니다. 그럼, 어째서 오리브 캔의 물류에 대한 이야기를 들을 때, 팀의 효율성을 10배로 향상시킬 방법을 찾게 될지 모르겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셔서 감사합니다. 일반적으로 소프트웨어 엔지니어링을 어떻게 이해하고 적용하는지 고민하며 이를 통해 우리가 어떻게 개선할 수 있는지에 대해 이야기하는 것을 좋아합니다. 이 글이 마음에 드셨다면 박수를 치거나 댓글을 남겨주세요. 더 많은 통찰력과 토론을 위해 제가 Medium에 올린 가장 성공적인 이야기들을 살펴보세요.

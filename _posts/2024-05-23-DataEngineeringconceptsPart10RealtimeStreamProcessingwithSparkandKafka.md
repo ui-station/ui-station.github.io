@@ -26,7 +26,18 @@ link: "https://medium.com/@mudrapatel17/data-engineering-concepts-part-10-stream
 
 ## 스트림 처리란?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일괄 처리는 데이터 처리를 일정한 간격으로, 한 번에 대량의 데이터를 처리하는 데 사용되며 즉각적인 통찰력이 필요하지 않은 경우에 사용됩니다. 한편, 스트림 처리는 이 기사에서 논의할 다른 시나리오에 적합할 것입니다.
 
@@ -36,7 +47,18 @@ link: "https://medium.com/@mudrapatel17/data-engineering-concepts-part-10-stream
 
 카프카는 스트리밍 기능을 제공하는 가장 널리 사용되는 도구 중 하나이며, 여기에서 자세히 알아보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 카프카 특징
 
@@ -49,7 +71,18 @@ link: "https://medium.com/@mudrapatel17/data-engineering-concepts-part-10-stream
 
 ## 카프카 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 카프카 구성은 모든 카프카 클러스터의 속성 및 동작 설정을 지원하여 성능, 신뢰성 및 확장성을 향상시킵니다.
 
@@ -63,7 +96,18 @@ link: "https://medium.com/@mudrapatel17/data-engineering-concepts-part-10-stream
 
 Kafka Streams — 이는 스트리밍 애플리케이션을 작성하는 데 사용되는 Java 라이브러리입니다. 선언적 언어 형식을 사용하여 스트리밍 처리 논리를 작성할 수 있는 API로, 다양한 기능을 포함하여 부가 코드를 피하고 낮은 대기 시간, 탄력성 및 암호화 기능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_1.png" />
 
@@ -73,7 +117,18 @@ ksqlDB — ksqlDB은 스트림 데이터를 처리하고 SQL 쿼리를 통해 �
 
 스키마 레지스트리 — 스키마 레지스트리는 생산자와 소비자 서비스가 준수해야 하는 사용자가 정의한 스키마의 중앙 저장소입니다. 버전 관리, 데이터 유효성 검사, 데이터 손실 또는 손상 위험 감소 및 호환성 검사와 같은 기능을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_3.png)
 
@@ -83,7 +138,18 @@ Spark Structured Streaming은 Spark SQL 엔진을 기반으로하며, 이 스트
 
 ![이미지](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서, 이 접두어 무결성(어떤 시점에서든 응용 프로그램의 출력 = 데이터의 접두어 일괄 작업)은 일관성(출력물은 항상 접두어의 결과이며 순서대로 처리됨), 장애 내성(시스템이 실패해도 결과 상태를 유지) 및 스트림 데이터의 순서를 유지하는 여러 이점이 있습니다.
 
@@ -93,7 +159,18 @@ Spark Structured Streaming은 Spark SQL 엔진을 기반으로하며, 이 스트
 
 ## Databricks Delta Lake
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Databricks는 스파크의 창조자들에의해 설계된 클라우드 기반 플랫폼으로, 생산 등급 솔루션을 구축, 배포, 공유 및 유지하는 데 사용되는 통합 데이터 분석 처리 매체로 Spark 생태계의 모든 기능과 비즈니스 인텔리전스, 머신러닝 및 AI를 위한 추가 리소스가 구비되어 있습니다. Databricks의 모든 하위 시스템의 기본 저장 형식은 Delta Lake입니다.
 
@@ -103,7 +180,18 @@ Delta Lake 테이블은 Databricks에 구현된 Delta Lakehouse 아키텍쳐의 
 
 <img src="/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_6.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 실시간 스트리밍 아키텍처
 
@@ -111,7 +199,18 @@ Delta Lake 테이블은 Databricks에 구현된 Delta Lakehouse 아키텍쳐의 
 
 문제 정의: 실시간 환경 이슈 보고서를 수집하고, 변환 및 분석해서 심각성 수준 및 위치 기준에 따라 관련 환경 당국이 사용할 수 있는 데이터를 만드는 응용 프로그램을 개발 중입니다. 중복 보고서를 필터링하고 트렌드를 파악하기 위해 역사적 분석도 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 아키텍처를 구현하려면 다음 단계를 따를 것입니다:
 
@@ -123,8 +222,18 @@ Delta Lake 테이블은 Databricks에 구현된 Delta Lakehouse 아키텍쳐의 
 
 - 단계 4: 환경 보고서를 생성하는 Streamlit 웹 앱을 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_8.png)
 
@@ -134,8 +243,18 @@ Use the following link to set up a Python client in streamlit app to push the in
 
 ![Image](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_9.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 단계 6: Databricks Community Edition 계정 및 컴퓨팅 인스턴스 생성
 
@@ -164,7 +283,18 @@ display(processedDF)
 
 - 단계 8: 변환 적용 — 처리된 데이터프레임에서 데이터를 가져 오기 위해 SQL 쿼리 작성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import pyspark.sql.functions as F
@@ -241,8 +371,18 @@ df_with_region = query.withColumn("region", map_state_to_region(query["location"
 display(df_with_region)
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 단계 9: 분석 수행 — 우리는 Description의 감정을 분석하여 사건 심각도를 나타내는 다른 열을 추가합니다. 이는 당국이 노력을 우선순위로 정하는 데 도움이 될 것입니다.
 
@@ -282,7 +422,18 @@ display(processedDF_with_severity)
 
 데이터에 대한 다양한 통계 분석을 수행할 수도 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Real-time Stream Processing](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_10.png)
 
@@ -322,9 +473,18 @@ severity_incidents_df = spark.sql(severity_incidents_query)
 
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Data Engineering Concepts](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_11.png)
 
@@ -351,9 +511,18 @@ streaming_query = processedDF_with_severity.writeStream\
   .toTable(delta_table_path)
 ```
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 Delta 테이블에서 데이터프레임으로 스트림을 읽을 수 있습니다:
 
@@ -363,7 +532,17 @@ streaming_query = processedDF_with_severity.writeStream\
 
 ![Query Delta Table with SQL](/assets/img/2024-05-23-DataEngineeringconceptsPart10RealtimeStreamProcessingwithSparkandKafka_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셔서 감사합니다 :) 실시간 스트리밍 데이터 아키텍처에 대한 빠른 통찰이 마음에 들었으면 좋겠네요. 데이터 엔지니어링 모험을 위해 행운을 빕니다! 여기 GitHub 저장소 링크입니다:
-

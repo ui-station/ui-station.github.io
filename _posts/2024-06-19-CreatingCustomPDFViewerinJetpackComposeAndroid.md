@@ -3,14 +3,12 @@ title: "Jetpack Compose 안드로이드에서 사용자 지정 PDF 뷰어 만들
 description: ""
 coverImage: "/assets/img/2024-06-19-CreatingCustomPDFViewerinJetpackComposeAndroid_0.png"
 date: 2024-06-19 13:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-CreatingCustomPDFViewerinJetpackComposeAndroid_0.png
 tag: Tech
 originalTitle: "Creating Custom PDFViewer in Jetpack Compose Android"
 link: "https://medium.com/proandroiddev/creating-custom-pdfviewer-in-jetpack-compose-android-0e962aa22b9f"
 ---
-
-
 
 ![PDFViewer](/assets/img/2024-06-19-CreatingCustomPDFViewerinJetpackComposeAndroid_0.png)
 
@@ -20,14 +18,24 @@ PDF는 우리가 매일 사용하는 가장 일반적인 파일 형식 중 하�
 
 우리의 계획 개요를 살펴봅시다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - PDF 파일이 있는 원격 URL 또는 전화 저장소가 있습니다.
 - 하나씩 페이지를 보여줄 수 있습니다.
 - 페이지는 확대 및 이동할 수 있어야 합니다.
 - 서버 PDF를 로컬 캐시/저장소에 다운로드하고 저장해야 합니다.
-- PDF를 '페이지'를 나타내는 '비트맵' 목록으로 변환할 수 있습니다. 
+- PDF를 '페이지'를 나타내는 '비트맵' 목록으로 변환할 수 있습니다.
 - 그런 다음 간단히, 비트맵을 지원하는 이미지 컴포저블을 사용하여 세로로 페이지를 하나씩 모두 표시할 것입니다.
 
 ## 단계 1: PDF 다운로드 및 저장
@@ -36,7 +44,18 @@ PDF는 우리가 매일 사용하는 가장 일반적인 파일 형식 중 하�
 
 먼저 AndroidManifest.xml에 다음 권한을 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 <uses-permission android:name="android.permission.INTERNET" />
@@ -52,7 +71,18 @@ connection.connect()
 
 위의 코드들이 작동하여 PDF 파일을 가져올 것입니다. 작업이 완료되었고 필요한 Input stream을 얻었는지 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 if (connection.responseCode != HttpURLConnection.HTTP_OK) {
@@ -71,7 +101,18 @@ connection.disconnect()
 
 이제 다운로드 부분이 완료되었으니 사용자의 로컬 스토리지에 저장해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 file = File.createTempFile(fileName, ".pdf")
@@ -80,7 +121,7 @@ inputStream.copyTo(outputStream)
 outputStream.close()
 ```
 
-변경 후 전체 함수는 다음과 같습니다: 
+변경 후 전체 함수는 다음과 같습니다:
 
 ```kotlin
 suspend fun downloadAndGetFile(url: String, fileName: String): File? {
@@ -118,7 +159,18 @@ fun isFileExist(path: String): Boolean {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 2: 파일 객체를 List`Bitmap`으로 변환합니다.
 
@@ -130,7 +182,18 @@ PdfRenderer renderer = new PdfRenderer(ParcelFileDescriptor.open(file, ParcelFil
 
 하지만 이것을 직접 사용하는 것은 Jetpack Compose에서 좋지 않고 많은 RAM을 소비할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 다음과 같이 사용할 것입니다:
 
@@ -163,7 +226,18 @@ renderer?.let {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 모든 페이지에 대한 비트맵을 가져올 수 있습니다. UI에서 모든 페이지에 표시할 시간입니다.
 
@@ -173,7 +247,18 @@ PDFViewer Composable의 전체 코드가 필요하면 이를 참조하십시오:
 
 여기서 설명이 시작됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - BoxWithConstraints를 사용하는 이유는 페이지의 높이와 너비를 정의하고 줌 및 이동을 위해 화면의 높이와 너비가 필요하기 때문입니다.
 
@@ -209,7 +294,18 @@ Zoom 구현을 자세히 이해하려면 이 비디오를 시청하세요.
 
 2. 이 상태를 LazyColumn과 함께 간단히 사용하고 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
             LazyColumn(
@@ -234,7 +330,18 @@ LaunchedEffect(key1 = Unit) {
 
 4. "cacheKey"로부터 Bitmap 객체를 만들어야 합니다. 이미지도 캐시에 저장될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val cacheKey = MemoryCache.Key("${file!!.name}-$index")
@@ -265,7 +372,17 @@ Image(
 
 나머지 부분은 상당히 직관적이고 이해하기 쉽습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 새로운 것을 배웠다면, 좋다면 팔로우 버튼을 눌러 주세요.

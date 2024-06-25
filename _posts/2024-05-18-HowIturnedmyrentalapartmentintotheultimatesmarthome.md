@@ -3,14 +3,12 @@ title: "내가 임대 아파트를 최고의 스마트 홈으로 변신시킨 �
 description: ""
 coverImage: "/assets/img/2024-05-18-HowIturnedmyrentalapartmentintotheultimatesmarthome_0.png"
 date: 2024-05-18 18:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-HowIturnedmyrentalapartmentintotheultimatesmarthome_0.png
 tag: Tech
 originalTitle: "How I turned my rental apartment into the ultimate smart home"
 link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the-ultimate-smart-home-9855af8bad7b"
 ---
-
-
 
 ![Image](/assets/img/2024-05-18-HowIturnedmyrentalapartmentintotheultimatesmarthome_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 ## 이 글에서 다룰 내용:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 최근의 발전으로 스마트 홈을 더 싸고 쉽게 만들 수 있게 되었습니다.
 - 현대 스마트 홈에서 가능한 예시들
@@ -35,7 +43,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 아파트를 자동화하는 방법에 대해 구체적으로 설명하기 전에, 최근에 발생한 몇 가지 사건으로 저렴하고 정교한 스마트 홈의 문이 열리게 된 스마트 홈 산업의 현황에 대해 일반적인 맥락을 설정하는 것이 중요하다고 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 저렴한 하드웨어
 
@@ -45,7 +64,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 최근까지 집을 자동화하는 유일한 쉬운 방법은 1) 제품의 단일 생태계를 선택하고 해당 제조사의 전용 앱을 사용하거나, 2) Google Home, Alexa 또는 Apple의 HomeKit을 활용하여 모든 스마트 장치들 사이의 연결고리로 활용하는 것이었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안타깝게도, 두 가지 옵션 모두 좋지 않습니다. 제품 에코시스템에 의존하면 사용 가능한 기기에 심하게 제한을 받습니다. 예를 들어, Philips Hue 조명 사용자인 경우, 스마트 라이트를 IKEA 스마트 블라인드와 동기화하는 방법이 무엇인가요? 불가능합니다. 원하는 모든 제품을 갖춘 단일 제품 에코시스템을 찾을 수 없는 이상, 광범위한 스마트 홈에 대한 이 방법은 적합하지 않습니다.
 
@@ -55,7 +85,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 좋은 소식은 이제 여러 시스템이 존재하여 1) 제조사와 관계없이 시장의 거의 모든 스마트 기기와 상호 작용하고, 2) 정의한 논리에 따라 장치를 동기화하고 제어하는 복잡한 규칙을 쉽게 작성할 수 있다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 독립적인 홈 자동화 분야에서 가장 큰 그리고 가장 성숙한 플레이어는 Home Assistant (HA)입니다. 라즈베리 파이에서 주로 실행되는 무료 오픈 소스 소프트웨어입니다. 기술적으로 역량 있는 사람들이 가장 일반적인 사용자입니다. 그러나 더 넓은 대중에게 접근 가능하도록 발전하고 있습니다. HA를 시도해보고 싶다면, 여기에 입문 동영상이 있습니다.
 
@@ -72,7 +113,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 - 잠들기 전에 모든 조명/선풍기를 자동으로 끄고 정문을 단 한 번의 버튼 클릭이나 음성 명령으로 잠길 수 있습니다.
 - 시간대, 집의 다른 조명 상태, 욕실 문이 열린/닫힌 상태에 따라 욕실 조명은 자동으로 가변 밝기로 켜지거나 꺼집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많은 것이 있지만, 이것으로도 가능한 것에 대해 좋은 아이디어를 얻을 수 있을 것입니다.
 
@@ -82,7 +134,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 ### 어떻게 기기를 제어하고 싶으신가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 디바이스를 제어하는 것은 홈 자동화의 핵심입니다. 다음 질문들에 대답해보면 당신의 요구에 가장 적합한 솔루션을 찾을 수 있을 거에요.
 
@@ -95,7 +158,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 버튼이나 간단한 동작 센서로 디바이스를 제어하고 싶으시다면(정교한 자동화가 없는 경우), 두 가지 주요 옵션이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Home Assistant와 같은 설정에 투자하세요.
 - Philips Hue나 Ikea Tradf와 같은 물리 스위치와 모션 센서 제품 생태계에 의존하세요.
@@ -106,7 +180,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 사용성 팁: 다른 사람도 집의 조명/장치를 사용할 수 있어야 할 가능성이 높으므로, 다른 제어 기능 외에 직관적인 물리적 버튼을 갖는 것을 권장합니다. 내 고양이 돌보미가 어떻게 집을 사용해야 하는지 전혀 몰랐던 불편한 상황을 겪은 바 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스마트 홈 기기 선택 방법
 
@@ -116,7 +201,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 스마트 홈 기기 세계를 세 가지 주요 범주로 나눌 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 기기 — 이들은 제어되는 것들입니다 (조명, 선풍기, 스마트 플러그, 스피커, 블라인드, 잠금 장치 등).
 - 센서 — 제어를 도와주는 것들입니다 (스위치, 버튼, 센서 등).
@@ -128,7 +224,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 스마트 기기는 무선으로 통신해야 하며, 현재는 이를 수행하는 몇 가지 다른 기술이 일반적으로 사용되고 있으며, 각각에는 장단점이 있습니다. 이 주제는 본문으로 충분히 다룰 수 있으며, 더 복잡하게 만들기 위해 스마트 홈 기술 분야는 현재 새로운 프로토콜인 Thread의 출시로 큰 변화를 겪고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 혼란스러운 상황이긴 하지만, Home Assistant와 같은 시스템들은 다른 무선 기술을 강요하지 않기 때문에 많이 간단해졌어요. 대신, 사용 가능한 것이 무엇이든지/특정 응용프로그램에 맞는 것이 무엇인지 기반으로 결정을 내릴 수 있어요. 옵션을 고려할 때 이런 대충 된 가이드라인을 참고해보세요.
 
@@ -140,17 +247,40 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 ## 로컬 장치 제어가 중요한가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 사람들이 조명, 잠금장치 등이 인터넷과 연결되어 있어야 하고 의존하고 있다는 아이디어를 좋아하지 않습니다. 보안 및 신뢰성 문제로 인해 그렇죠. 유감스럽게도 이러한 우려는 타당합니다. 부모 회사에 문제가 발생할 때 스마트 홈 기기의 작동이 중단된 사례들이 많이 있습니다(Wink, 여기를 봐요). 만약 인터넷 연결이 불안정하다면 로컬에서 작동하지 않는 장치를 피하세요.
 
 이해해야 할 점은 다음과 같습니다:
+
 - WiFi 기기는 일반적으로 인터넷에 연결되어 있어야 기능합니다. 로컬 연결을 지원하는 WiFi 기기도 일부 있긴 하지만 예외적입니다.
 - Zigbee, Bluetooth 및 Z-Wave 기기는 전형적으로 인터넷 연결 없이도 작동할 수 있습니다.
 
 당신의 필요에 가장 적합한 것을 결정하기 위해 일부 조사와 고찰이 필요할 것입니다. 저는 대부분의 기기가 Zigbee를 기반으로 작동하고 그것들을 제어하기 위해 Home Assistant를 사용하고 있습니다. 따라서 라우터를 뽑거나 Philips Hue가 문을 닫아도 제 집은 계속 작동할 수 있습니다. 장치를 로컬에서 실행하는 것은 기기의 응답성을 향상시키는 추가적인 이점이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 어떤 특정 스마트 등, 잠금장치, 스위치 등을 구매해야 할까요?
 
@@ -160,7 +290,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 홈 어시스턴트는 훌륭한 기기 지원을 가지고 있으며, 주류 브랜드를 고수한다면 당신의 기기가 놀랄만큼 적은 노력으로 작동할 것입니다. 그리고 질문이 생길 때, Reddit나 포럼에 번성하는 홈 어시스턴트 커뮤니티가 있어 도움을 받을 수 있는 거리에 항상 떨어져 있지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 집을 '스마트'하게 만드는 것은 정말 재미있고 보람 있는 취미지만, 설정하는 데 시간이 많이 소요될 수도 있어요. 아마도 알다시피, 수백 시간의 작업을 하나의 글로 집약하려고 노력했어요. 시간을 많이 들이지 않고 간편하게 사용할 수 있는 옵션을 찾고 계시다면, 아마존, 구글 또는 애플의 스마트 홈 제품에 기본 기능에 충실하시는 것이 좋아요. 그러나 자신만의 궁극적인 스마트 홈을 구축하기 위해 노력하는 것에 흥미를 느낀다면, 지금 이보다 더 좋은 시기는 없어요. 행운을 빕니다!
 
@@ -170,7 +311,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 
 아파트를 자동화하는 데 사용한 항목을 정확히 알고 싶다면, 행운이 따르셨어요! 저의 집을 구동하는 모든 장치, 센서 및 인프라의 종합 목록은 여기 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 장치
 
@@ -195,7 +347,18 @@ link: "https://medium.com/@jaspercurry/how-i-turned-my-rental-apartment-into-the
 - August 도어 센서 1개 (August Smart Lock의 일부). 집에 도착하면 조명을 자동으로 켜는 데 사용됩니다.
 - Aqara 온도 및 습도 센서 3개. 욕실 배기팬 (습도) 및 때로는 창문 에어컨 장치 (온도)를 제어하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 인프라스트럭처
 

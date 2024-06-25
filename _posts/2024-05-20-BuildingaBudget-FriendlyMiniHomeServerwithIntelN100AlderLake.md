@@ -3,20 +3,29 @@ title: "인텔 N100 알더 레이크를 활용한 예산 친화적 미니 홈 �
 description: ""
 coverImage: "/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_0.png"
 date: 2024-05-20 19:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_0.png
 tag: Tech
 originalTitle: "Building a Budget-Friendly Mini Home Server with Intel N100 Alder Lake"
 link: "https://medium.com/@vcoder/building-a-budget-friendly-mini-home-server-with-intel-n100-alder-lake-392d4bb440f3"
 ---
 
-
 하이퍼링크를 Markdown 형식으로 변경하십시오.
 
 [Build a Budget-Friendly Mini Home Server with Intel N100 Alder Lake](/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Building a Budget-Friendly Mini Home Server with Intel N100 Alder Lake](/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_1.png)
 
@@ -30,8 +39,18 @@ link: "https://medium.com/@vcoder/building-a-budget-friendly-mini-home-server-wi
 - 일부 N100 세트는 2.5G로 클럭된 듀얼 LAN 포트를 제공하여 빠른 파일 전송과 연결 중복성을 제공합니다.
 - N100은 주로 NVMe Gen 3+ 스토리지를 완벽하게 지원하는 마더보드와 번들로 제공되며, 라즈베리 파이 5의 SD 카드, USB 3 또는 PCIe 솔루션에 비해 훨씬 높은 속도의 읽기/쓰기 속도를 제공합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_2.png" />
 
@@ -41,7 +60,18 @@ Intel N100 설정에 대한 여러 예산 친화적인 옵션이 있습니다. �
 
 또는 일부 사용자는 미니 ITX 마더보드에 N100 설정을 구축하고 RAID 구성을 위한 충분한 저장소를 추가할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저에게 있어 간단함이 가장 중요했어요. 전 최소한의 설정만 선택하고 블랙 프라이데이 기간에 SSD와 RAM을 별도로 구매해 좋은 혜택을 누렸어요.
 
@@ -51,7 +81,18 @@ Intel N100 설정에 대한 여러 예산 친화적인 옵션이 있습니다. �
 
 ![이미지](/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 운영 체제 옵션
 
@@ -61,7 +102,18 @@ Intel N100 설정에 대한 여러 예산 친화적인 옵션이 있습니다. �
 
 각 시나리오는 고유한 학습 곡선을 제시하여 하드웨어 제약 사항을 이해하고 최적의 VM 성능을 위해 패스스루를 설정하는 데 상당한 시간을 요구했습니다. 특히 하드웨어 렌더링 및 디코딩과 같은 그래픽 집약적 작업에 대한 최적의 성능을 위해.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Unraid을 선택했어요
 
@@ -71,7 +123,18 @@ Intel N100 설정에 대한 여러 예산 친화적인 옵션이 있습니다. �
 
 ![이미지](/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 서버를 설정하는 것은 소프트웨어 설치, 백업 복원 및 예약된 작업 설정으로 인해 시간이 걸릴 수 있습니다.
 
@@ -81,7 +144,18 @@ Intel N100 설정에 대한 여러 예산 친화적인 옵션이 있습니다. �
 
 하드웨어의 성능에도 불구하고, NextCloud 및 Plex/Jellyfin과 같은 무거운 작업을 호스트에서 직접 실행하는 것이 더 효율적인 것으로 판단했습니다. 나머지 응용 프로그램의 경우, 가벼운 Linux VM 상에서 Docker 컨테이너로 실행하며 특히 Headless Debian에서 실행하여 간소화되고 효율적인 설정을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Unraid OS에 대해 배울 수 있는 귀중한 자원은 Spaceinvader One YouTube 채널입니다. 기본 설정부터 고급 기능까지 포괄적인 자습서를 제공하여 모든 능력 수준의 사용자에게 훌륭한 자원이 됩니다.
 
@@ -91,7 +165,18 @@ Unraid는 주로 NAS (Network Attached Storage) 서버용으로 설계되어 있
 
 Unraid는 앱 스토어에서 사용 가능한 다양한 응용 프로그램을 자랑하며, 이 중 많은 것들이 Docker 컨테이너입니다. 이러한 컨테이너는 운영 체제를 수정할 필요 없이 쉽게 배포하고 실행할 수 있어 Unraid의 서버 관리에 대한 사용자 친화적인 접근 방식을 더욱 강화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_6.png" />
 
@@ -101,7 +186,18 @@ Unraid는 앱 스토어에서 사용 가능한 다양한 응용 프로그램을 
 
 1. 클라우드플레어 제로 트러스트 워프 앱을 통한 원격 접속: 클라우드플레어 제로 트러스트 워프 앱을 클라우드플레어 터널과 호스트 또는 가상 머신에 설치하여 전 세계 어디에서나 안전하게 홈 서버에 원격 액세스할 수 있습니다. 이 설정은 무료뿐만 아니라 설정도 매우 쉽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 홈 IP로 VM 활용하기: VPN을 통해 내 집 네트워크에 연결하여, VM에 쉽게 액세스할 수 있습니다. 여행 중에도 귀찮음 없이 집 IP 주소를 사용하여 다양한 작업을 안전하게 수행할 수 있어서 매우 유용합니다. 끊김 없는 액세스를 보장하기 위해 여분의 VM 몇 대를 항상 준비해 둡니다. 놀랍게도, 제 작은 집 서버는 MacOS를 포함한 다양한 운영 체제를 지원합니다.
 
@@ -111,7 +207,18 @@ Unraid는 앱 스토어에서 사용 가능한 다양한 응용 프로그램을 
 
 ![이미지](/assets/img/2024-05-20-BuildingaBudget-FriendlyMiniHomeServerwithIntelN100AlderLake_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 마무리
 

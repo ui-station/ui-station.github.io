@@ -3,13 +3,12 @@ title: "자신의 PC에서 대규모 언어 모델 실행하기 개인 정보 �
 description: ""
 coverImage: "/assets/img/2024-05-20-RunningLargeLanguageModelsonyourPCprivacyandbeyond_0.png"
 date: 2024-05-20 21:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-RunningLargeLanguageModelsonyourPCprivacyandbeyond_0.png
 tag: Tech
 originalTitle: "Running Large Language Models on your PC: privacy and beyond"
 link: "https://medium.com/@stansotirov-ai/running-large-language-models-on-your-pc-privacy-and-beyond-2d4afb9c2ea6"
 ---
-
 
 ![Running LLM on Your PC: Privacy and Beyond](/assets/img/2024-05-20-RunningLargeLanguageModelsonyourPCprivacyandbeyond_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@stansotirov-ai/running-large-language-models-on-your-
 
 Chat-GPT 3.5와 비슷하거나 심지어 동일한 기능을 가지려고 합니다. 이것은 이루기 어렵게 들릴 수 있지만, 기술은 매일 발전하고 있으며, 적절한 하드웨어, 소프트웨어 및 LLM의 조합을 통해 가능할 것으로 생각합니다. 이 과정에서 취하는 단계, 최적화 및 조정, 실수와 성공, 사용하는 소스, 그리고 향후 하드웨어 업그레이드에 대해 공유할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 여정이 끝날 때 모든 기사들은 사용자 안내서로 요약될 것이며, 저는 이를 무료로 발행하여 누구나 이 경험에서 혜택을 받고 직접 시도해볼 수 있도록 할 것입니다. 물론 이 과정에서 모든 의견, 제안 및 지침은 환영합니다.
 
@@ -32,7 +42,18 @@ Chat-GPT 3.5와 비슷하거나 심지어 동일한 기능을 가지려고 합�
 - HDD: 삼성 990 EVO NVMe™ M.2 SSD (1 TB 각 2개)
 - 비디오: Nvidia GeForce RTX 4070, 12GB (평택 에디션)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 설정의 소프트웨어 구성 요소는 다음과 같습니다:
 
@@ -49,7 +70,18 @@ Windows PowerShell 콘솔에 Ubuntu를 설치해야 합니다. Windows에서 "�
 wsl --install
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설치 프로세스를 시작하고, 완료되면 Linux용 사용자 이름과 비밀번호를 입력하라는 메시지가 표시됩니다. 성공적으로 설치되면 다음과 같은 화면을 볼 수 있습니다:
 
@@ -62,7 +94,18 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 여러 추가 패키지가 설치됩니다. 그리고 이로써 귀하의 로컬 PC에 Ubuntu를 설치하는 작업이 완료되었습니다.
 
@@ -74,7 +117,18 @@ sudo apt upgrade -y
 wsl -d Ubuntu
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설치는 콘솔에서 다시 실행되며 다음 명령어로 실행할 수 있습니다:
 
@@ -82,11 +136,22 @@ wsl -d Ubuntu
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-성공적으로 설치되면 이 화면이 표시되어야 합니다. 여기서 중요한 점은 프로세스가 완료된 후 비디오 카드가 인식되어야 한다는 것입니다 (빨간색으로 표시됨). 
+성공적으로 설치되면 이 화면이 표시되어야 합니다. 여기서 중요한 점은 프로세스가 완료된 후 비디오 카드가 인식되어야 한다는 것입니다 (빨간색으로 표시됨).
 
 <img src="/assets/img/2024-05-20-RunningLargeLanguageModelsonyourPCprivacyandbeyond_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비디오 카드는 NVIDIA에서 제공하는 것이 좋습니다. 큰 언어 모델 작업에 있어서 결정적인 부분입니다. 머신에 설치된(또는 적합한) 카드가 없는 경우 모델은 CPU 전력을 사용하게 되어 작업이 훨씬 느리고 정확도가 떨어지게 됩니다.
 
@@ -96,19 +161,39 @@ Ollama를 설치한 후에는 하나 이상의 대형 언어 모델(LLM)을 설�
 
 설치는 콘솔과 리눅스 환경에서 다시 진행됩니다. 아래 명령어로 실행할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오레카 풀라마 2:13b
 
-모델을 다운로드하고 하드 드라이브에 저장하는 프로세스가 시작됩니다. 프로세스를 시작하기 전에 충분한 여유 공간이 있는지 확인하세요. 공간이 부족한 경우,  llama:7b와 같은 더 작은 모델을 다운로드할 수도 있습니다. 이는 동일한 명령으로 수행할 수 있습니다: "llama:13b"를 "llama:7b"로 교체하면 됩니다. 7b 모델은 4.7GB이며, llama:13b 대신 사용할 수 있습니다.
+모델을 다운로드하고 하드 드라이브에 저장하는 프로세스가 시작됩니다. 프로세스를 시작하기 전에 충분한 여유 공간이 있는지 확인하세요. 공간이 부족한 경우, llama:7b와 같은 더 작은 모델을 다운로드할 수도 있습니다. 이는 동일한 명령으로 수행할 수 있습니다: "llama:13b"를 "llama:7b"로 교체하면 됩니다. 7b 모델은 4.7GB이며, llama:13b 대신 사용할 수 있습니다.
 
 성공적인 설치 후 다음 화면을 볼 수 있어야 합니다:
 
 ![image](/assets/img/2024-05-20-RunningLargeLanguageModelsonyourPCprivacyandbeyond_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모델이 이미 하드 드라이브에 있으면 상호 작용을 시작할 수 있습니다. 다음 명령어로 콘솔에서 수행할 수 있어요:
 
@@ -118,9 +203,20 @@ ollama run llama:13b
 
 Enter 키를 누르면 다음 메시지가 표시됩니다:
 
- 메시지를 전송하세요 (도움말을 보려면 /?)
+메시지를 전송하세요 (도움말을 보려면 /?)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 모델이 준비되어 입력을 받을 준비가 되었습니다. 리눅스 환경에서 모델을 실험하고 탐색하여 기능을 느끼고 전파를 연습할 수 있습니다. 상호 작용은 다음과 같아야 합니다:
 
@@ -130,7 +226,18 @@ Enter 키를 누르면 다음 메시지가 표시됩니다:
 
 다음 글에서는 컨테이너를 위해 Docker를 설치하고 모델을 위한 웹 인터페이스를 설치하고 모델을 훈련 및 최적화하는 데 도움이 되는 기타 Python 라이브러리와 도구를 검토할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음에 또 봐요!
 

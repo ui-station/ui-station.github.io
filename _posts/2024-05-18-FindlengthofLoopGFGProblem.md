@@ -3,13 +3,12 @@ title: "루프의 길이 찾기 GFG 문제"
 description: ""
 coverImage: "/assets/img/2024-05-18-FindlengthofLoopGFGProblem_0.png"
 date: 2024-05-18 15:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-FindlengthofLoopGFGProblem_0.png
 tag: Tech
 originalTitle: "Find length of Loop (GFG Problem)"
 link: "https://medium.com/@Mohd_Aamir_17/find-length-of-loop-gfg-problem-34860348575a"
 ---
-
 
 ## 소개
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@Mohd_Aamir_17/find-length-of-loop-gfg-problem-3486034
 
 연결 리스트의 루프는 노드의 다음 포인터가 리스트 내 이전 노드 중 하나를 가리킬 때 발생하여 순환이 생성됩니다. 이러한 루프를 감지하는 것은 탐색 중 무한 루프를 방지하기 위해 중요합니다. 루프를 감지한 후에는 루프 내 노드 수를 세는 것이 구조를 이해하거나 추가 처리를 위한 여러 목적에 유용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 알고리즘
 
@@ -38,18 +48,40 @@ while (current.next != loopNode) {
 return count;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 해당 알고리즘을 자세히 살펴보겠습니다:
 
 - 초기화:
 
-    - 루프노드 자체가 루프의 일부이기 때문에 count 카운터를 1로 초기화합니다.
-    - current 포인터를 루프노드로 설정합니다.
+  - 루프노드 자체가 루프의 일부이기 때문에 count 카운터를 1로 초기화합니다.
+  - current 포인터를 루프노드로 설정합니다.
 
 - 순회 및 카운팅:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 현재 포인터를 사용하여 루프를 트래버스(순회)합니다.
 - 각 노드마다 다음 노드로 이동하고 카운터를 증가시킵니다.
@@ -61,7 +93,18 @@ return count;
 
 ## 예시 해설
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 루프를 가진 링크드 리스트를 고려해 봅시다:
 
@@ -109,7 +152,18 @@ private static int countLoopLength(ListNode loopNode) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 실용적인 고려 사항
 

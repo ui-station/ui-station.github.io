@@ -3,13 +3,12 @@ title: "RxSwift 심층 탐구 메커니즘 분석"
 description: ""
 coverImage: "/assets/img/2024-06-22-AdeepcutintoRxSwiftExploreitsmechanisms_0.png"
 date: 2024-06-22 23:24
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-AdeepcutintoRxSwiftExploreitsmechanisms_0.png
 tag: Tech
 originalTitle: "A deep cut into RxSwift: Explore its mechanisms"
 link: "https://medium.com/zen8labs/a-deep-cut-into-rxswift-explore-its-mechanisms-a10156db71ef"
 ---
-
 
 # 목적
 
@@ -19,7 +18,18 @@ link: "https://medium.com/zen8labs/a-deep-cut-into-rxswift-explore-its-mechanism
 
 이 튜토리얼은 RxSwift에 대한 일부 경험이 있다고 가정하고 있습니다. 이는 이해하기 쉽게 만들어줄 것입니다. 저희 zen8labs에서는 RxSwift를 주로 멤버들에게 교육하고 있으며, Serg Dort의 멋진 튜토리얼 "Learn Rx by implementing Observable"을 주의 깊게 참고하도록 강력히 권장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Serg Dort님께 이 유용한 튜토리얼을 작성해 주신 것에 대해 진심으로 감사드립니다. 이 튜토리얼은 RxSwift의 구현을 간단하게 설명하여 RxSwift의 주요 구성 요소와 그들이 어떻게 함께 작동하는지 이해하기 쉽게 만들었습니다.
 
@@ -29,7 +39,18 @@ Serg Dort님께 이 유용한 튜토리얼을 작성해 주신 것에 대해 진
 
 하지만 제 경우에는 항상 사용 중인 것들이 어떤 일이 벌어지는지 이해하고 싶습니다. 제가 무엇을 올바르게 수행하고 있는지 확인하는 가장 좋은 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 질문들
 
@@ -39,7 +60,18 @@ Serg Dort님께 이 유용한 튜토리얼을 작성해 주신 것에 대해 진
 
 이것은 기본적인 예제입니다. 그러나 RxSwift의 중요한 개념들을 대부분 포함하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에는 많은 숨겨진 세부 사항이 있습니다.
 
@@ -52,7 +84,18 @@ Serg Dort님께 이 유용한 튜토리얼을 작성해 주신 것에 대해 진
 - 왜 우리는 로직을 실행하기 위해 구독해야 하죠?
 - 구독은 언제 끝나나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 질문에 대답하려면 이 연산자들의 구현을 살펴보겠습니다.
 
@@ -62,7 +105,18 @@ Serg Dort님께 이 유용한 튜토리얼을 작성해 주신 것에 대해 진
 
 ![이미지](/assets/img/2024-06-22-AdeepcutintoRxSwiftExploreitsmechanisms_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 맵 연산자:
 
@@ -72,18 +126,38 @@ Serg Dort님께 이 유용한 튜토리얼을 작성해 주신 것에 대해 진
 
 ![필터 연산자](/assets/img/2024-06-22-AdeepcutintoRxSwiftExploreitsmechanisms_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 Markdown 형식으로 변경해 주세요.
 
-
 | header1 | header2 |
-|---------|---------|
+| ------- | ------- |
 | data1   | data2   |
 | data3   | data4   |
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (1) Producer 클래스는 실제로 Observable 클래스의 하위 클래스이므로 RxSwift 연산자는 기본적으로 Producer의 다른 하위 유형을 반환하는 메서드입니다.
 
@@ -93,7 +167,18 @@ Serg Dort님께 이 유용한 튜토리얼을 작성해 주신 것에 대해 진
 
 이제, 예시에서 네 가지 observables(ObservableSequence, Map, Filter, TakeCount)의 구현을 탐구하여 sink와 구독이 무엇인지에 대한 질문에 답해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ObservableSequence
 
@@ -103,8 +188,18 @@ Map
 
 ![Image](/assets/img/2024-06-22-AdeepcutintoRxSwiftExploreitsmechanisms_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Filter
 
@@ -114,8 +209,18 @@ Take
 
 ![Take Image](/assets/img/2024-06-22-AdeepcutintoRxSwiftExploreitsmechanisms_9.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이상한가요?
 
@@ -125,7 +230,18 @@ Take
 
 이를 시각화해 보면, 옵저버블이 기계의 청사진이라고 상상해 보세요. 반면 Sink 인스턴스는 그 청사진을 기반으로 구축된 실제 기계에요. 사실 Sink는 RxSwift에서 일어나는 모든 마법 같은 일들이 일어나는 곳이에요. 그것은 우리 관찰자에 대한 참조를 유지하고, 옵저버블 로직을 실행하며, 결과 이벤트를 관찰자에게 전달해요. RxSwift에서 특정 유형의 옵저버블이 어떻게 작동하는지, 그것이 처리되는 데이터를 어떻게 살펴야 하는지를 정말로 이해하려면 해당 옵저버블의 Sink를 살펴보면 돼요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또 다른 중요한 점은 run 메서드에서 Observable을 구독할 때만 Sink 인스턴스가 생성된다는 것입니다. 이것이 Observable의 논리가 구독되어야만 실행되고, Observable을 구독할 때마다 논리가 다시 실행되는 이유를 설명합니다. 이는 새로운 Sink 인스턴스가 생성되기 때문에 발생하는 것입니다.
 
@@ -135,7 +251,18 @@ Producer의 run 메서드가 항상 반환하는 하나 더의 구성 요소는 
 
 ![image](/assets/img/2024-06-22-AdeepcutintoRxSwiftExploreitsmechanisms_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 종류의 observable이 있습니다: Generation observables과 Transformation observables.
 
@@ -146,13 +273,35 @@ Producer의 run 메서드가 항상 반환하는 하나 더의 구성 요소는 
 
 ![이미지](/assets/img/2024-06-22-AdeepcutintoRxSwiftExploreitsmechanisms_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 우리 예시에서 발생한 일입니다:
 
 1. 생성 단계:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실제로 나오는 결과 observable은 TakeCount입니다. TakeCount는 Filter가 있는 observable 소스를 가지고 있습니다. Filter에는 observable 소스인 Map이 있습니다. Map은 observable 소스인 ObservableSequence를 가지고 있습니다. ObservableSequence는 자체적으로 이벤트를 생성할 수 있는 생성 observable입니다.
 
@@ -162,15 +311,39 @@ Producer의 run 메서드가 항상 반환하는 하나 더의 구성 요소는 
 
 Filter, Map 및 ObservableSequence에 대해서도 동일한 동작이 발생합니다. 각 단계는 자체 Sink 및 SinkDisposer를 만들며, 각 SinkDisposer의 구독은 이전 단계의 SinkDisposer입니다. ObservableSequence는 생성 observable이므로 ObservableSequenceSink 자체를 실행하기 위해 할당된 자원을 관리하는 인스턴스로 구독하는 것이며, 그 외의 단계에서 발생하는 것과는 다릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 3. Running phase:
+
 ObservableSequenceSink가 이벤트를 방출하기 시작하고, 그 observer는 MapSink입니다. MapSink는 ObservableSequenceSink에서 이벤트를 가져와서 작업을 처리하고(2로 곱함), 그 결과를 그 observer인 FilterSink에게 방출하고, 이런 식으로 계속됩니다... 마지막 싱크는 TakeCountSink이며, 이는 예시에서 값이 프린트되는 클로저에 이벤트를 방출합니다.
 
 ### 4. Dispose phase:
+
 작업을 마치면 구독을 해제합니다. 실제로 TakeCount의 SinkDisposer입니다. 그러면 이 SinkDisposer가 TakeCountSink와 그 구독을 해제하고, 이는 Filter의 SinkDisposer의 구독인 것입니다. ObservableSequence의 마지막 SinkDisposer에 이르기까지 해제 프로세스가 계속됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

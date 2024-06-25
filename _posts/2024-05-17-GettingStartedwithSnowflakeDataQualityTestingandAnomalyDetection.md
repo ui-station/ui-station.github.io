@@ -3,13 +3,12 @@ title: "스노우플레이크 데이터 품질 테스트 및 이상 검출 시�
 description: ""
 coverImage: "/assets/img/2024-05-17-GettingStartedwithSnowflakeDataQualityTestingandAnomalyDetection_0.png"
 date: 2024-05-17 19:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-GettingStartedwithSnowflakeDataQualityTestingandAnomalyDetection_0.png
 tag: Tech
 originalTitle: "Getting Started with Snowflake Data Quality Testing and Anomaly Detection"
 link: "https://medium.com/stackademic/getting-started-with-snowflake-data-quality-testing-and-anomaly-detection-8dfb4e325961"
 ---
-
 
 Snowflake에서 데이터 품질을 개선하는 데 제어 평면을 활용하는 방법에 관심이 있으신가요? 여기서 Orchestra로 시작해보세요 ❄️
 
@@ -19,7 +18,18 @@ Generative AI를 효과적으로 활용하려는 모든 기업의 기본 사전 
 
 견고한 데이터 인프라가 없으면 AI에서 가치를 유지하는 것은 불가능합니다. 망가진 대시보드가 영업 실행 책임자를 실망시키는 것만큼, 환각이나 잘못된 정보를 제공하는 챗봇은 어떤 AI 전략의 야망을 소각시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번 튜토리얼에서는 스노우플레이크(Snowflake)의 데이터 파이프라인을 기존 도구 및 Orchestra를 활용하여 조정하는 방법과 데이터 품질을 모니터링하는 방법을 살펴볼 것입니다. 다양한 데이터 품질 테스트 유형을 다루며 "데이터 품질이란 무엇인가?" 라는 질문에 답할 것입니다.
 
@@ -29,7 +39,18 @@ Generative AI를 효과적으로 활용하려는 모든 기업의 기본 사전 
 
 먼저, 데이터 품질이 무엇인지 이해하고 어떻게 향상시킬 수 있는지 알아보는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 널리 인기가 있는 내용입니다 — 예를 들어, 지난 1시간 동안 주문이 없었지만 저는 방금 주문을 넣었을 때, 이겪이 거짓이라는 것을 알 수 있습니다. 중복 주문이 있다면, 이 역시 현실을 반영하지 못하는 것입니다.
 
@@ -43,7 +64,18 @@ Generative AI를 효과적으로 활용하려는 모든 기업의 기본 사전 
 
 두 번째로, 데이터 품질 테스트의 다양한 유형을 이해하는 것이 도움이 됩니다. 실무에서 테스트는 단순히 데이터가 데이터 품질 기준을 충족하지 못하면 실패하고(통과하지 못한다면), 그렇지 않으면 통과합니다. 데이터 품질 테스트에는 두 가지 유형이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 품질 테스트 차단하기
 
@@ -53,7 +85,18 @@ Generative AI를 효과적으로 활용하려는 모든 기업의 기본 사전 
 
 좋아요! 그렇게 하면 이제 간단한 파이프라인을 검토하고 Snowflake를 위한 데이터 품질 테스트를 활성화하는 방법을 살펴볼 준비가 되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # dbt 또는 Coalesce를 사용한 데이터 품질 테스트
 
@@ -63,7 +106,18 @@ Generative AI를 효과적으로 활용하려는 모든 기업의 기본 사전 
 
 두 번째는 소스 및 집계 테스트를 수행하는 것입니다. 이 방식은 신뢰할 수 있는 데이터 제품을 위한 최소한의 테스트를 실행하며, 중간 테이블에 대한 테스트는 무시하고 소스 및 집계 테이블을 집중적으로 테스트하는 것을 포함합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 dbt를 사용하여 dbt 테스트로 실행하거나 Coalesce에서 테스트로 설정할 수 있습니다.
 
@@ -73,7 +127,18 @@ Orchestra에서는 추가 조치가 필요하지 않습니다. Orchestra는 dbt/
 
 ## 데이터 품질 테스트 스트림
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스트림에서 데이터 품질 테스트를 쉽게 실행할 수 있습니다. "Run as Data Quality Test" 설정을 활성화하고 쿼리를 활용하면 Orchestra가 이 작업을 처리해줍니다. 스트림에서 테이블로 데이터를 로드하기 전에 필요하다면 임시 테이블을 만들어 이 데이터에 대한 데이터 품질 테스트를 실행할 수 있습니다.
 
@@ -83,7 +148,18 @@ Orchestra에서는 추가 조치가 필요하지 않습니다. Orchestra는 dbt/
 
 데이터 제품 소유자는 데이터셋의 품질을 시간이 지남에 따라 모니터링하기 위해, 데이터가 현실을 정확히 반영하는지 여부 이외에도 데이터셋에 대해 더 많이 이해하고 싶어할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 데이터는 현실을 (Salesforce) 대변할 수 있지만, 그것이 사람들이 보고 싶어하는 것을 반영하지 않을 수도 있습니다. 이는 우리 모두가 공감할 수 있는 예시입니다 — 영업 직원들은 관리 업무를 싫어합니다!
 
@@ -93,7 +169,18 @@ Orchestra에서는 추가 조치가 필요하지 않습니다. Orchestra는 dbt/
 
 Orchestra에서는 관련 데이터 품질 테스트를 수행하는 별도의 파이프라인을 생성하고 해당 파이프라인을 동일한 데이터 제품에 추가함으로써 이를 수행할 수 있습니다. 이렇게 하면 데이터 품질 테스트 파이프라인이 필요할 때마다 항상 실행되며, 분석가들은 시간에 따른 데이터 품질 결과를 가질 수 있지만, 추가적인 코드나 조직적인 허들이 필요하지 않으며, 비싼 데이터 관측 도구도 필요하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 생성 AI와 기계 학습을 활용한 이상 탐지
 
@@ -103,17 +190,39 @@ Orchestra에서는 관련 데이터 품질 테스트를 수행하는 별도의 �
 
 이상 탐지 메커니즘은 Snowflake로부터 데이터를 가져 와야 하며(전송), 모델을 학습해야 합니다(연산), 다시 Snowflake로부터 데이터를 가져와야 하며(전송), 그리고 예측 서비스를 제공해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서, 제3자 이상 탐지 도구는 추가적인 Snowflake 비용이 들어갑니다 (오케스트레이션에 대한 생각을 하지 않았을 때입니다).
 
-걱정하지 마세요! Snowflake는 구글의 행적(Google’s stead)을 따라 (Vertex AI와 함께) 개발하여 자체적으로 Cortex AI를 개발했습니다. 
+걱정하지 마세요! Snowflake는 구글의 행적(Google’s stead)을 따라 (Vertex AI와 함께) 개발하여 자체적으로 Cortex AI를 개발했습니다.
 
 여기에 Snowflake에서 Cortex AI를 활용하는 방법이 있습니다.
 
 ## Cortex AI를 사용한 Snowflake의 이상 감지
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 이상 탐지가 무엇이며 어떻게 작동하는지 이해하는 것이 중요합니다.
 
@@ -123,7 +232,18 @@ Orchestra에서는 관련 데이터 품질 테스트를 수행하는 별도의 �
 
 이는 Snowflake에서 간단하게 수행할 수 있습니다 — SQL 쿼리를 작성하여 백분위수를 계산하고 해당 값을 초과하는 것을 쉽게 가져올 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sql
 -- `your_table`에서 `value` 열의 90 백분위수 계산
@@ -138,7 +258,18 @@ FROM your_table;
 
 따라서 일반적으로 이상점 테스트 메커니즘은 먼저 데이터를 특징별로 분할한 후 (예: 이 예제에서는 기계로), "적합"할 과거(임의의) 데이터 하위 집합을 선택합니다. 일반적으로 이러한 곡선은 자기회귀 이동 평균(ARIMA) 또는 계절성 자기회귀 이동 평균(SARIMA)과 같은 모델을 사용하여 보정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 남은 데이터 포인트는 예측됩니다. 합당한 한계를 벗어나는 것들은 (사용자가 결정할) 이상으로 간주됩니다.
 
@@ -152,7 +283,18 @@ FROM your_table;
 
 이 정보를 갖고 있으면, 준비된 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Snowflake에서 데이터 품질 테스트 및 이상 감지 구현하기
 
@@ -162,7 +304,18 @@ Orchestra에 이상 감지를 추가하는 것도 간단합니다:
 
 이 비디오들에서 Snowflake의 강력함을 보실 수 있습니다. 그러나 이러한 강력한 기능들을 스키마 테스트 및 이상 감지에 통합하는 것은 엔드 투 엔드 파이프라인을 구축할 때 비 쉽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오케스트라가 등장하는 곳입니다. 오케스트라의 Snowflake 특화 작업을 통해 누구나 손쉽게 Snowflake에서 데이터 파이프라인을 구축할 수 있으며, 데이터 품질 및 이상 징후 테스트를 위해 Cortex ML Functions을 활용할 수 있습니다.
 
@@ -176,7 +329,18 @@ Orchestra에 이상 감지를 추가하는 것도 간단합니다:
 - 블로킹되지 않는 데이터 품질 테스트를 실행할 수 있습니다.
 - 조직 내에서 모든 것을 모니터링하고 비즈니스에 작업 내용을 자랑스러이 보여줄 수 있는 강력한 UI가 오케스트라에 있다는 것을 알게 되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작 준비가 되셨나요? 여기로 이동해주세요.
 
@@ -186,7 +350,18 @@ Orchestra와 같은 통합 제어 패널이 없다면 — 어쩌면 한 번 고�
 
 행복한 테스트 진행되길 바래요! ⏰
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 추가 자료
 
@@ -195,7 +370,18 @@ Orchestra와 같은 통합 제어 패널이 없다면 — 어쩌면 한 번 고�
 - Snowflake 데이터 품질 및 이상 감지 (파트 1) [링크]
 - Snowflake 데이터 품질 및 이상 감지 (파트 2) [링크]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오케스트라를 사용하여 스노우플레이크에서 스키마 확인하십시오 (링크)
 
@@ -205,7 +391,18 @@ Orchestra와 같은 통합 제어 패널이 없다면 — 어쩌면 한 번 고�
 
 끝까지 읽어주셔서 감사합니다. 떠나시기 전에:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이 글을 읽어주셔서 감사합니다! 👏
 - 팔로우하고 작가를 응원해주세요!

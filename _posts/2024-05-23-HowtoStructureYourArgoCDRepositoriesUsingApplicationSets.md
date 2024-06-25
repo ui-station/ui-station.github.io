@@ -21,7 +21,18 @@ link: "https://medium.com/containers-101/how-to-structure-your-argo-cd-repositor
 
 항상 그렇지만, 우리의 조언은 모범 사례를 따르는 일반적인 권장 사항입니다. 조직에 대한 시작점으로 활용할 수 있지만, 본인의 경우에 더 나은 접근 방식이 있다고 믿는다면, 언제든지 우리가 언급한 패턴을 본인의 환경에 맞게 적용하시기 바랍니다. 예시 저장소는 다음에서 확인할 수 있습니다: https://github.com/kostis-codefresh/many-appsets-demo
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞선 기사는 매우 일반적이었고 Flux 사용자에게도 적용될 수 있지만, 여기서는 특히 Argo CD와 그 고급 기능에 초점을 맞출 것입니다.
 
@@ -31,7 +42,18 @@ Argo CD 애플리케이션을 조직하는 방법은 많은 자료와 블로그�
 
 ![이미지](/assets/img/2024-05-23-HowtoStructureYourArgoCDRepositoriesUsingApplicationSets_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 카테고리는 Argo CD와 전혀 상관없는 표준 Kubernetes 자원(배포, 서비스, 인그레스, 구성, 시크릿 등)으로, 이러한 자원들은 쿠버네티스 클러스터에서 정의됩니다. 이러한 자원은 어플리케이션이 쿠버네티스 내에서 어떻게 실행되는지를 기술하며, Argo CD가 전혀 없는 로컬 클러스터에 어플리케이션을 설치하는 데 사용될 수 있습니다. 이러한 manifest는 개발자가 새로운 릴리스를 배포하면서 자주 변경되며, 일반적으로 다음과 같은 방법으로 지속적으로 업데이트됩니다:
 
@@ -43,8 +65,18 @@ Argo CD 애플리케이션을 조직하는 방법은 많은 자료와 블로그�
 
 두 번째 카테고리는 Argo CD 어플리케이션 manifest입니다. 이들은 사실의 원천(첫 번째 유형의 manifest)과 해당 어플리케이션의 대상 및 동기화 정책을 참조하는 정책 설정입니다. Argo CD 어플리케이션은 근본적으로 Git 저장소(표준 Kubernetes manifest를 포함하는)와 대상 클러스터 간의 매우 간단한 링크입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-23-HowtoStructureYourArgoCDRepositoriesUsingApplicationSets_2](/assets/img/2024-05-23-HowtoStructureYourArgoCDRepositoriesUsingApplicationSets_2.png)
 
@@ -54,8 +86,18 @@ Argo CD 애플리케이션을 조직하는 방법은 많은 자료와 블로그�
 
 이 manifest에 대해 개발자의 애플리케이션과 다른 템플릿 시스템을 사용할 수 있습니다. 예를 들어, 준비된 애플리케이션에 대해서는 Helm을 사용하고, 개발자가 만든 애플리케이션에 대해서는 Kustomize를 선택하는 매우 인기 있는 패턴이 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 4가지 종류의 manifests로 핵심 포커스는 아래 2가지 카테고리에 대한 것입니다.
 
@@ -66,7 +108,18 @@ Argo CD 애플리케이션을 조직하는 방법은 많은 자료와 블로그�
 
 # 안티 패턴 1 — 서로 다른 유형의 manifests 혼합
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 좋은 방법을 설명하기 전에 장기적으로 문제를 복잡하게 만들 수 있는 몇 가지 안티 패턴에 대해 경고하는 것이 중요합니다.
 
@@ -119,7 +172,18 @@ spec:
     namespace: my-app
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 매니페스트는 두 가지를 동시에 수행합니다. 주 파일은 Argo 앱(카테고리 2)에 관한 내용이지만, "helm" 속성은 실제로 Kubernetes 응용 프로그램(카테고리 1)에 대한 값들을 포함하고 있습니다.
 
@@ -152,7 +216,18 @@ spec:
 
 또한 Helm 어머렐라 차트를 사용하는 경우, 다른 차트를 참조하고 해당 값들을 재정의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 외부 차트(즉, Git에 저장되지 않은)를 사용하는 것도 가능하지만, 우리가 추천하는 방법은 아닙니다. 제3자 소스에서 외부 차트를 사용하는 것은 보안 및 안정성 측면에서 많은 도전점을 제시합니다.
 
@@ -183,7 +258,18 @@ spec:
     namespace: my-app
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마찬가지로 Argo CD는 다음을 지원합니다:
 
@@ -231,7 +317,18 @@ spec:
     namespace: my-app
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 여러분의 매니페스트가 올바르게 분할되었는지 이해하기 위한 리트머스 테스트는 다음 질문을 하는 것입니다:
 
@@ -241,7 +338,18 @@ spec:
 
 매니페스트를 혼합하는 함정에 빠져들어가 있는 기관들을 많이 보았습니다. 대화를 나눌 때 거의 항상, 그 기관들은 이러한 접근 방식이 "필요하다"고 생각했던 것입니다. 왜냐하면 그들은 기반이 되는 도구들(Helm/Kustomize)의 능력을 제대로 이해하지 못했기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 귀하의 조직이 Helm과 작업하는 경우, Helm 값 계층이 어떻게 작동하는지, 그리고 Helm 어머니 차트가 어떻게 작동하는지 알아야 합니다. 신중하게 설계된 Helm 값 계층으로 대부분의 일반적인 시나리오를 다룰 수 있습니다. Argo CD의 다중 소스 기능을 사용해야 할 경우에만 사용하세요. 그리고 현재 베타 버전이라는 것을 기억하세요.
 
@@ -251,7 +359,18 @@ spec:
 
 다른 종류의 manifest를 섞는 것에는 여러 가지 다른 도전과제가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모든 관련 당사자들이 이해하기 어렵게 만듭니다.
 - 매니페스트를 사용하는 사람들(예: 개발자)과 매니페스트를 생성하는 사람들(즉, 관리자/운영자) 사이의 요구사항을 혼란스럽게 합니다.
@@ -266,7 +385,18 @@ spec:
 
 Argo CD 애플리케이션 CRD의 목적은 주요 쿠버네티스 매니페스트를 '래퍼' 또는 '포인터'로 작동하는 것입니다. 중요한 것은 쿠버네티스 매니페스트(카테고리 1)와 Argo CD 매니페스트(카테고리 2)가 언제나 보조 역할을 해야 한다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이상적인 경우에는 한 번 Application manifest를 만들어서 어떤 Git 저장소가 어떤 클러스터로 이동하는지 정의하고 이 파일을 다시는 손대지 않는 것이 좋습니다 (이것이 이전 테이블에서 변경 빈도가 "거의 없음"인 이유입니다).
 
@@ -295,7 +425,18 @@ spec:
     namespace: my-app
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어플리케이션 CRD를 계속 변경되는 가변 파일로 취급하는 것은 몇 가지 근본적인 문제와 나쁜 관행을 내포하고 있음을 의미합니다. 예를 들어, 대상 리비전 필드를 계속 다른 브랜치로 지정하는 것은 거의 항상 조직이 환경에 대해 브랜치를 사용하고 있는 것을 의미하는데 이는 강력히 권하지 않는 관례입니다.
 
@@ -305,7 +446,18 @@ Argo CD 어플리케이션은 임의의 응용 프로그램을 실행하는 데 
 
 대부분의 경우에는 CRD 대신에 백그라운드에 있는 쿠버네티스 매니페스트 자체를 변경해야 합니다. 예를 들어, 어플리케이션 이미지 CRD가 가리키는 쿠버네티스 배포 리소스 위에 정방향으로 새로운 앱 이미지를 가진 브랜치로 대상 리비전 필드를 변경하는 대신에 변경해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 안티패턴 3 — 다른/다중 레벨에서 템플릿 사용하는 것
 
@@ -315,7 +467,18 @@ Argo CD 어플리케이션은 임의의 응용 프로그램을 실행하는 데 
 
 이곳의 전형적인 예는 일팀이 Helm 차트를 생성하고 해당 Helm 차트가 Kubernetes 매니페스트의 Helm 차트를 가리키는 Application CRD를 포함할 때 발생합니다. 이제 동시에 두 가지 다른 수준에서 Helm 템플릿을 적용하려고 하게 됩니다. 그리고 Argo CD 풋프린트가 커질수록 새로 온 사람들이 매니페스트가 어떻게 구조화되어 있는지 이해하기가 매우 어렵습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Argo CD에는 Application CRD에 대한 강력한 템플릿 메커니즘이 포함되어 있지 않다는 사실은 이 워크플로우를 권장하지 않음을 강력히 시사해야합니다. 또한 ApplicationSets(다음 항목 참조)이 소개되면서 템플릿을 적용해야 하는 적절한 위치는 개별 Application 파일이 아니라 ApplicationSet입니다.
 
@@ -325,7 +488,18 @@ Argo CD에는 Application CRD에 대한 강력한 템플릿 메커니즘이 포�
 
 만약 비트 trivial한 Argo CD 설치가 있다면, 꼭 ApplicationSets가 어떻게 작동하는지 이해하고, 최소한 Git 생성기와 클러스터 생성기를 동시에 결합하는 방법을 공부해야합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어플리케이션 세트는 모든 애플리케이션 매니페스트(카테고리 2)의 생성을 담당할 수 있어요. 예를 들어, 20개의 애플리케이션과 5개의 클러스터가 있다면, Argo CD 애플리케이션을 위한 100가지 조합을 자동으로 생성해줄 수 있는 단일 어플리케이션 세트 파일을 만들 수 있어요.
 
@@ -365,7 +539,18 @@ spec:
 
 이 생성기는 "application-sets/example-apps" 아래의 모든 앱을 Argo CD에 정의된 모든 클러스터에 배포하라고 말해요. 현재 연결된 클러스터 수나 Git 레포지토리에 있는 애플리케이션 수가 얼마나 많든 상관없어요. 어플리케이션 세트 생성기는 가능한 모든 조합을 자동으로 생성하며 새로운 클러스터나 새로운 애플리케이션을 추가할 때도 계속해서 재배포할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Argo CD Autopilot에 익숙한 분들은 이 패턴을 알아볼 수 있을 것입니다. 이는 모노레포 관점에서의 기본 설정입니다.
 
@@ -375,7 +560,18 @@ Argo CD Autopilot에 익숙한 분들은 이 패턴을 알아볼 수 있을 것�
 
 # 최선의 방법 — 세 단계의 구조 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 섹션에서는 권장하지 않는 몇 가지 방법과 피해야 할 몇 가지 함정을 살펴보았습니다. 이제 우리의 제안하는 해결책에 대해 이야기할 준비가 되었습니다.
 
@@ -385,7 +581,18 @@ Argo CD Autopilot에 익숙한 분들은 이 패턴을 알아볼 수 있을 것�
 
 가장 낮은 수준에서는 응용 프로그램이 실행되는 방식을 정의하는 Kubernetes manifest(매니페스트)가 있습니다(매니페스트의 카테고리 1). 이러한 매니페스트는 Kustomize 또는 Helm 템플릿이며 완전히 자체 포함되어 있어 Argo CD가 없어도 어떤 클러스터에서든 별도로 배포될 수 있습니다. 이 파일들의 구조에 대해서는 프로모션 블로그 게시물에서 자세히 다루었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 섹션에서 설명한 대로 한 단계 위에는 응용 프로그램 세트가 있습니다. 이들은 주요 Kubernetes 매니페스트를 Argo CD 응용 프로그램(category 2 of manifests)으로 감싸줍니다. 대부분의 경우에는 개별 응용프로그램 CRD(Application CRDs)를 만들 필요 없이 ApplicationSets만 만들면 됩니다.
 
@@ -395,7 +602,18 @@ Argo CD Autopilot에 익숙한 분들은 이 패턴을 알아볼 수 있을 것�
 
 이 패턴이 얼마나 간단한지에 주목하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 추상화 수준은 단 3개뿐이에요. 4개나 5개를 가진 회사들도 있지만, 그렇게 되면 메탈 모델이 훨씬 복잡해져요.
 - 각 수준은 완전히 독립적이에요. 쿠버네티스 Manifest를 별도로 설치할 수도 있고, 특정 애플리케이션 세트를 선택할 수도 있고, 모든 것을 최상위에서 선택할 수도 있어요. 하지만 선택은 당신의 몫이에요.
@@ -407,7 +625,18 @@ Argo CD Autopilot에 익숙한 분들은 이 패턴을 알아볼 수 있을 것�
 
 여기서 우리는 쿠버네티스 Manifest를 "apps" 폴더에, 애플리케이션 세트를 "appsets" 폴더에 두기로 선택했어요. 이름이 중요한 건 아니에요. 무슨 일이 일어나고 있는지 명확하게 알면 무엇이든 선택할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "앱" 디렉터리에는 표준 Kubernetes 매니페스트가 저장됩니다. 이 예제에서는 Kustomize를 사용하고 있습니다. 각 애플리케이션마다 해당 환경에 대한 오버레이만 있습니다.
 
@@ -417,7 +646,18 @@ Argo CD Autopilot에 익숙한 분들은 이 패턴을 알아볼 수 있을 것�
 
 전체 구조를 살펴보면 각 환경이 "apps/앱이름/envs/환경이름" 디렉터리에 배치된다는 점이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱세트 폴더에는 모든 애플리케이션 세트가 보관됩니다. 이 간단한 예제에서는 단순한 목록이지만 더 복잡한 예제에서는 조직을 더 잘하기 위해 여기에 폴더도 있을 수 있습니다.
 
@@ -459,7 +699,18 @@ spec:
       namespace: "{index .path.segments 1}-{index .path.segments 3}"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 응용 프로그램 설정은 다음과 같이 말합니다:
 
@@ -467,7 +718,18 @@ spec:
 
 또한 별도의 app-of-apps 매니페스트가 있으며 이것은 단순히 모든 앱 세트를 그룹화하는 데 도움이 됩니다. 이것은 엄격히 필수는 아니지만 빈 클러스터를 처음부터 모두 구성하는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시에서 우리는 딱 한 개의 매니페스트만으로 12개의 애플리케이션을 배포했어요 (이는 애플리케이션 세트가 만드는 조합의 수입니다) 한 번에요.
 
@@ -477,7 +739,18 @@ spec:
 
 그렇다면 이 구조가 최적일까요? 이전 섹션의 데모 저장소를 사용하여 일반적인 시나리오를 살펴보고 얼마나 간단한지 확인해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 장에서는 쿠버네티스 매니페스트(카테고리 1)와 Argo CD 매니페스트(카테고리 2)를 분리해야 한다는 주장을 했습니다. 이 결정의 주요 목표는 개발자들의 삶을 쉽게 만들고 공통 시나리오를 돕는 데 있습니다. 개발자를 위해 몇 가지 예시를 살펴보겠습니다:
 
@@ -490,7 +763,18 @@ cd apps/invoices
 kustomize build envs/qa
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 문제는 한 줄의 명령어로 해결할 수 있으며 Argo CD 설치가 필요하지 않습니다.
 
@@ -505,7 +789,18 @@ kustomize build envs/prod-us/ > /tmp/us.yml
 vimdiff /tmp/eu.yml /tmp/us.yml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해결책은 3개의 명령어이며 Argo CD 설치가 필요하지 않습니다.
 
@@ -518,7 +813,18 @@ cd apps/orders
 kubectl apply -k -f envs/qa
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 한 번, Argo CD 설치가 필요하지 않습니다.
 
@@ -528,7 +834,18 @@ kubectl apply -k -f envs/qa
 
 예를 들어, 관리자가 "payments" 어플리케이션을 QA 환경에 배포하려고 한다고 가정해보겠습니다 (현재는 프로드 환경에서만 실행 중인 상태입니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 cd apps/payment/env
@@ -548,7 +865,18 @@ mkdir qa
 
 이곳의 핵심은 명료한 manifest의 분리를 유지하고 있습니다. 개발자들은 Argo CD가 어떤 모델링을 하고 있는지 알 필요 없이 일반 쿠버네티스 리소스와 작업할 수 있으며, 관리자들은 applicationset과 폴더를 사용하여 쉽게 애플리케이션을 환경 간에 이동할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기존 환경에 대한 새로운 클러스터를 빠르게 설정하는 것은 정말 쉽습니다. 해당 클러스터 생성기에 추가하기만 하면 됩니다.
 
@@ -558,7 +886,18 @@ mkdir qa
 
 큰 조직에서는 여러 애플리케이션이 있고 완전히 다른 요구 사항과 제약 조건을 가진 여러 팀이 있습니다. 많은 팀이 여러 Git 저장소를 사용할지 또는 모든 애플리케이션에 대해 단일 저장소(monorepo)를 사용할지에 대한 선택에 고민합니다. 물론, 여기에서도 우리만의 권장 사항이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "우선 'Monorepo'가 무엇을 의미하는지를 우리가 정의하는 것이 매우 중요합니다. 왜냐하면 많은 관리자와 개발자와의 토론을 통해 백그라운드에 따라 단어의 의미가 다른 것을 명확하게 알 수 있기 때문입니다.
 
@@ -568,7 +907,18 @@ mkdir qa
 
 여기서 중요한 점은 이 정의가 소스 코드에만 해당한다는 것입니다. Argo CD는 소스 코드를 다루지 않으므로 이러한 방식에 대해 장단점을 언급하는 자료들은 실제로 Argo CD와 관련이 없습니다. 유감스럽게도, Argo CD를 채택할 때 이러한 유형의 기사를 참고하는 관리자들이 많이 보이며 이들은 Argo CD가 쿠버네티스 매니페스트를 관리하는 맥락에서 이러한 소스 코드 기술이 알맞지 않다는 것을 이해하지 못합니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "모노 리포"에 대한 두 번째 정의는 소스 코드와 쿠버네티스 매니페스트 및 Argo CD 매니페스트를 동시에 포함하는 Git 저장소를 사람들이 "모노 리포"라고 설명하는 경우입니다. 이 기술은 Argo CD와 관련이 있지만, 여러 번 소스 코드와 매니페스트를 분리하는 것을 권장해왔습니다. 이 정의를 전체성을 위해 언급하는 것뿐이며, 몇몇 팀이 "Argo CD 애플리케이션에 모노 리포를 사용한다"고 말하는 경우가 있으며, 실제로는 Git 저장소가 매니페스트와 소스 코드를 모두 포함한다는 것을 의미하는 것입니다 (필수적으로 조직 전체에 대한 단일 Git 저장소를 사용하는 것은 아닙니다).
 
@@ -578,7 +928,18 @@ mkdir qa
 
 지난 섹션의 마지막 정의에 따라 정의된 모노 리포는 Argo CD 애플리케이션이 증가함에 따라 발생하는 여러 가지 확장성 및 성능 문제가 있습니다. Argo CD는 이미 모노 리포를 다루기 위한 여러 메커니즘을 가지고 있지만, 더 많은 팀이 Argo CD를 채택함에 따라 문제를 해결하지 말고, 미리 예방하는 것이 좋습니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단일 모노리포는 Argo CD 여정을 시작할 때 취할 수 있는 매우 논리적인 결정입니다. 단일 저장소를 갖는 것은 유지 보수와 관측성 측면에서 일을 쉽게 만듭니다. 그러나 장기적으로는 Argo CD가 커밋을 감지하는 방식 뿐만 아니라 Git 저장소가 다양한 워크플로와 충돌 및 재시도를 처리하는 방식에도 제약 사항이 몇 가지 있습니다.
 
@@ -588,7 +949,18 @@ mkdir qa
 
 여러 개의 Git 저장소의 장점은 성능과 사용성 측면 모두에서 명백합니다. 특히 개발자들에게는, 다수의 Git 저장소가 선호됩니다. 그들은 자신의 팀에 속하지 않는 응용 프로그램들을 다루지 않고 자신들의 Kubernetes 매니페스트에 집중할 수 있기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 인프라 어플리케이션은 어떻게 할까요?
 
@@ -598,7 +970,18 @@ mkdir qa
 
 인프라 어플리케이션과 개발자 어플리케이션을 동일한 Git 리포지토리에 혼합하지 마세요. 다시 말하지만, 이것은 Argo CD 성능에 도움이 되는 것뿐만 아니라 개발자를 돕는 좋은 기술입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 이미지를 업데이트하고 인프라 애플리케이션을 처리하는 팀을 위한 또 다른 Git 저장소를 포함할 수 있습니다.
 
@@ -608,7 +991,18 @@ mkdir qa
 
 많은 애플리케이션과 팀이 있을 경우 어떤 공통 애플리케이션을 공유해야 할 필요성을 느낄 수 있습니다. 이를 처리하는 방법은 여러 가지가 있습니다. 빠른 방법 중 하나는 다른 팀의 매니페스트를 참조하는 Application Set를 사용하는 것입니다. 또 다른 방법은 모든 팀에서 필요로 하는 애플리케이션을 위해 "공통" Git 저장소를 사용하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞으로의 글에서는 Git 서브모듈을 사용하여 두 가지 유형의 매니페스트에 대한 고급 시나리오와 공유 기술을 더 많이 다룰 예정입니다.
 
@@ -618,7 +1012,18 @@ Argo CD 애플리케이션을 구성하고 관리하기 위해 Application Sets�
 
 다룬 내용은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 쿠버네티스와 Argo CD manifest의 다른 종류는 무엇인가요?
 - 이러한 manifest의 서로 다른 라이프사이클을 이해하는 것이 합리적한 이유는 무엇인가요?

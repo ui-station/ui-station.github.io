@@ -3,13 +3,12 @@ title: "RecyclerView 항목을 payloads로 효율적으로 업데이트하는 �
 description: ""
 coverImage: "/assets/img/2024-06-22-EfficientlyupdatingRecyclerViewitemsusingpayloads_0.png"
 date: 2024-06-22 22:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-EfficientlyupdatingRecyclerViewitemsusingpayloads_0.png
 tag: Tech
 originalTitle: "Efficiently updating RecyclerView items using payloads"
 link: "https://medium.com/@domen.lanisnik/efficiently-updating-recyclerview-items-using-payloads-1305f65f3068"
 ---
-
 
 요즘 대부분의 앱은 사용자에게 수직이나 수평 목록으로 정보를 표시합니다. 종종, 정보는 동적이며 조회수, 좋아요 수 등과 같이 자주 업데이트해야 하는 정보입니다. 또한 목록에는 네트워크에서 로드된 이미지가 포함될 수도 있습니다. 이것이 RecyclerView를 효율적으로 업데이트하는 것이 중요한 이유이며, 성능이 우수한 앱을 갖고 좋은 사용자 경험을 제공하는 중요한 측면입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@domen.lanisnik/efficiently-updating-recyclerview-item
 
 새 데이터로 RecyclerView를 효율적으로 업데이트하려면 notifyItemInserted(position: Int), notifyItemChanged(position: Int), notifyItemRemoved(position: Int) 등과 같은 함수를 호출해야 합니다 (docs에서는 효율적이지 않으며 최후의 수단으로만 사용해야 한다고 명시한 notifyDataSetChanged()는 피하시기 바랍니다). 이러한 함수를 호출하면 RecyclerView Adapter에 기본 데이터가 변경되었음을 알리고 뷰를 업데이트하여 새 상태를 반영해야 한다는 사실을 알리게 됩니다. 이러한 함수 호출은 RecyclerView가 모든 변경 사항을 애니메이션으로 처리하는 이점도 함께 제공됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수동으로 그 모든 작업을 하지 않도록 하기 위해 DiffUtil을 사용할 수 있습니다 (공식 문서). DiffUtil은 이전 데이터와 새 데이터를 비교하고 차이점을 계산한 다음 RecyclerView.Adapter에 변경 사항을 알려주어 새 상태를 반영하기 위해 수행해야 하는 변경 사항을 선언합니다. 이후 사용할 DiffUtil.ItemCallback의 예시가 여기 있습니다.
 
@@ -29,7 +39,18 @@ Function areItemsTheSame(oldItem: Item, newItem: Item): Boolean은 id 또는 uui
 
 ListAdapter는 AsyncListDiffer (공식 문서)를 사용하여 백그라운드 스레드에서 차이를 계산하는 논리를 포함하고 RecyclerView.Adapter를 확장하여 코드를 더욱 간결하게 만듭니다. 할 일은 새 데이터를 함수 submitList(list: List)를 사용하여 전달하는 것뿐입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 샘플 앱에서 모두 함께 사용해보기
 
@@ -39,7 +60,18 @@ ListAdapter는 AsyncListDiffer (공식 문서)를 사용하여 백그라운드 �
 
 ![앱 동작 예시](https://miro.medium.com/v2/resize:fit:640/1*kRBq0EXx36YlMoTCuulNuw.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 재정렬 애니메이션이 원하는 대로 동작하는 것을 볼 수 있습니다. 그러나 사용자가 기사를 북마크하거나 댓글 수를 새로고침할 때의 애니메이션을 살펴보겠습니다.
 
@@ -49,7 +81,18 @@ ListAdapter는 AsyncListDiffer (공식 문서)를 사용하여 백그라운드 �
 
 기본적으로 두 항목(우리의 경우 기사)이 동일하지만 다른 콘텐츠(우리의 경우 댓글 수 또는 기사 북마크 여부)를 가질 때 RecyclerView는 새 항목 보기를 렌더링한 다음 이전 항목 보기와 새 항목 보기 사이에 크로스 페이드를 수행하여 GIF에서 볼 수 있는 "깜빡임" 효과를 초래합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특히 더 어두운 배경이 사용되거나 사용자 상호작용의 결과로 업데이트될 때 이 기능은 이상하게 보일 수 있습니다. 이는 북마크 또는 북마크 취소와 같은 사용자 상호작용으로 인한 업데이트가 발생할 때 더 문제가 됩니다.
 
@@ -59,7 +102,18 @@ ListAdapter는 AsyncListDiffer (공식 문서)를 사용하여 백그라운드 �
 
 ## 이 문제를 어떻게 해결할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "“RecyclerViewanimation”을 비활성화하는 방법을 검색 중이라면 나타나는 해결책 중 하나는 RecyclerView. itemAnimator에 supportsChangeAnimation = false를 설정하거나 itemAnimator = null로 설정하는 것입니다.
 
@@ -69,7 +123,18 @@ ListAdapter는 AsyncListDiffer (공식 문서)를 사용하여 백그라운드 �
 
 페이로드를 사용하여 애니메이션 및 효율성 문제를 모두 해결할 수 있습니다. 페이로드는 이미 정의한 객체로, 이미 존재하는 항목 뷰를 완전히 다시 바인딩하는 대신 일부만 업데이트할 수 있게 해줍니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RecyclerView.Adapter의 함수들을 좀 더 자세히 살펴보면, onBindViewHolder(holder: ViewHolder, position: Int, payloads: MutableList`Any`)라는 추가 함수를 오버라이드할 수 있는데, 이 함수는 onBindViewHolder(holder: ViewHolder, position: Int) 함수를 오버로딩한 것으로 payloads라는 추가 인수가 있습니다. 이 함수에 대한 문서를 살펴보면 다음과 같이 설명되어 있습니다:
 
@@ -80,7 +145,18 @@ RecyclerView.Adapter의 함수들을 좀 더 자세히 살펴보면, onBindViewH
 
 이렇게하면 이제 onBindViewHolder 함수에서 payloads 인수를 확인할 수 있습니다. 이 것은 여러 스레드에서 병합된 여러 업데이트가 될 수 있기 때문에 리스트 형태로 제공됩니다. 문서에서 언급된 것처럼요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 리스트를 하나하나 처리할지 아니면 리스트에서 마지막 항목만 가져올지 결정할 수 있어요.
 
@@ -90,7 +166,18 @@ RecyclerView.Adapter의 함수들을 좀 더 자세히 살펴보면, onBindViewH
 
 ![이미지](https://miro.medium.com/v2/resize:fit:640/1*OevReNMqnU9pngRAEUxmWQ.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 여기에 업데이트된 어댑터 구현이 있습니다.
 

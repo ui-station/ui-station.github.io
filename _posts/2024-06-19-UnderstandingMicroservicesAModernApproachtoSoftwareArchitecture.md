@@ -3,13 +3,12 @@ title: "마이크로서비스 이해 소프트웨어 아키텍처에 대한 현�
 description: ""
 coverImage: "/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_0.png"
 date: 2024-06-19 12:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_0.png
 tag: Tech
 originalTitle: "Understanding Microservices: A Modern Approach to Software Architecture"
 link: "https://medium.com/@blogs4devs/hello-2230d29c939c"
 ---
-
 
 마이크로서비스
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@blogs4devs/hello-2230d29c939c"
 
 AXON을 활용한 사가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
@@ -29,7 +39,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 이 블로그에서는 소프트웨어 개발의 풍경을 변화시킨 혁신적인 접근 방식인 마이크로서비스 아키텍처의 매력적인 세계에 대해 탐구해 보겠습니다. Netflix와 같은 선두 기업들이 전통적인 방법론과 관련된 공통적인 도전 과제를 극복하기 위해 이 아키텍처를 채택했습니다. 마이크로서비스의 흥미진진한 영역으로 뛰어들기 전에, 먼저 거대한(monolithic) 아키텍처 및 그 한계를 이해하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 코드 링크입니다: [https://github.com/Blogs4Devs/Microservices](https://github.com/Blogs4Devs/Microservices).
 
@@ -39,7 +60,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 ![img](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 모놀리식 애플리케이션의 단점:
 
@@ -49,7 +81,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 - 배포 속도가 느림:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대규모 응용 프로그램에서는 작은 변경사항도 전체 응용 프로그램을 다시 컴파일하고 배포해야 합니다. 이로 인해 배포 주기가 크게 느려지며 전체 시스템을 테스트하고 통째로 배포해야 하므로 지속적인 배포가 어려워질 수 있습니다.
 
@@ -59,7 +102,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 - 코드 변경 및 테스트가 어려운 문제:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모놀리식 애플리케이션에서는 전체 시스템의 모든 로직이 얽혀있어 코드베이스가 복잡하고 관리하기 어렵습니다. 애플리케이션의 한 부분에 변경이 있을 때 다른 부분에 예상치 못한 영향을 미치는 경우가 많아 테스트와 유지보수가 어려워집니다. 이 복잡성은 버그를 분리하고 수정하기도 어렵게 만들어서 개발 주기를 늘릴 수 있습니다.
 
@@ -69,7 +123,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 마이크로서비스 아키텍처는 애플리케이션을 작은, 느슨하게 결합된 서비스로 분해하여 각각이 특정 비즈니스 기능을 담당하게 합니다. 이러한 서비스들은 독립적으로 개발, 배포 및 확장할 수 있어 모놀리식 아키텍처보다 여러 이점을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_1.png" />
 
@@ -79,7 +144,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 마이크로서비스는 각각 물리적으로 분리되어 있기 때문에 느슨하게 결합되어 있습니다. 이 분리로 인해 각 서비스는 개별적으로 개발, 배포 및 확장될 수 있어 다른 서비스에 영향을 미치지 않고 독립적으로 변경이 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 독립성 팀:
 
@@ -89,7 +165,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 마이크로서비스 아키텍처는 테스트와 배포를 쉽게 할 수 있게 해줍니다. 각 서비스가 별도의 단위이기 때문에 독립적으로 테스트하고 배포할 수 있어 테스트의 복잡성을 줄이고 배포 주기를 가속화할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 지속적 배포:
 
@@ -99,7 +186,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 ![이미지](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 게이트웨이
 
@@ -110,7 +208,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 - 정적 구성: 소수의 마이크로서비스를 다룰 때, 미들웨어를 정적으로 구성하여 특정 경로를 지정된 IP 주소로 라우팅할 수 있습니다. 예를 들어, /path1는 주소 1로, /path2는 주소 2로 이동할 수 있습니다. 이 구성에서는 마이크로서비스의 IP 주소를 알아야 하며, 마이크로서비스가 중지되거나 IP 주소가 변경되면 설정을 업데이트해야 합니다.
 - 동적 구성: 여러 마이크로서비스가 동적으로 시작 및 중지되는 환경에서는 정적 구성만으로는 충분하지 않습니다. 여기서는 발견 서비스를 통한 동적 구성이 필수적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 발견 서비스
 
@@ -121,7 +230,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 - 콜드 구성: 각 마이크로서비스는 자체 구성 파일(예: application.properties)을 갖습니다. 이러한 파일에 대한 수정은 해당 마이크로서비스를 다시 시작해야 합니다. 또한, 구성 설정이 여러 마이크로서비스 간에 공유되는 경우 각 개별 구성 파일을 따로 업데이트해야 합니다. 동일한 마이크로서비스의 여러 인스턴스가 실행 중인 경우 변경 사항을 각 인스턴스에 개별적으로 적용해야 하므로 불편하고 실수를 유발할 수 있는 프로세스가 됩니다.
 - 핫 구성: 중앙 집중식 구성 서비스는 단일 전역 구성 파일을 유지합니다. 이 파일의 변경 사항은 마이크로서비스에 자동으로 전파되어 다시 시작할 필요가 없습니다. 일반적으로 이 구성은 Git과 같은 버전 관리 리포지토리를 통해 관리됩니다. 구성 매개변수가 변경되면 커밋이 수행되고 특정 변경 사항만 마이크로서비스로 전송됩니다. 전체 구성 파일이 아니라 특정 변경 사항만 전송되므로 모든 마이크로서비스에서 효율적이고 일관된 구성 관리가 보장됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 커뮤니케이션 모델
 
@@ -131,7 +251,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 ![이미지2](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 비동기 통신: 이제, 지시를 기다리는 대신 "공원에 가고 있어. 만나야 할 일이 있으면 알려줘"라는 메모를 남기는 상황을 상상해봐. 그럼 너는 그냥 걷어가서 다른 일을 계속 한다. 나중에 답변이 있는지 확인하기 위해 메모를 확인한다. 이것은 메시지 브로커와 함께 하는 비동기 통신과 비슷하다. 한 서비스가 응답을 기다리지 않고 다른 서비스로 메시지를 보낸다. 메시지는 중개인(브로커)에게 보내지고, 그 이후 브로커가 다른 서비스에 전달한다. 보내는 서비스는 기다리지 않고 작업을 계속할 수 있다. 이것은 즉각적인 답변이 필요하지 않고 메시지가 도착했을 때 처리할 수 있는 경우에 좋다.
 
@@ -141,7 +272,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 우리는 Reactive 프로그래밍에 관한 다가오는 블로그에서 이 두 가지 모델을 자세히 살펴볼 것이다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데모
 
@@ -151,7 +293,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 이 데모에서는 두 개의 마이크로서비스인 고객 서비스와 계정 서비스가 있을 것입니다. 각 마이크로서비스는 간단한 Spring Boot 애플리케이션으로, 공통 종속성인 Lombok, Spring Data JPA, H2 Database, Spring Web을 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 고객 서비스: 고객을 관리합니다.
 
@@ -161,7 +314,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 - 계정 서비스: 고객에게 속한 각 계정을 관리합니다. 각 마이크로서비스는 자체 데이터베이스를 갖기 때문에, 계정 서비스 데이터베이스는 각 계정에 대해 고객 ID만 저장합니다. 이 고객 ID는 고객 서비스 데이터베이스에 존재해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참조 무결성 보장하기
 
@@ -173,7 +337,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 - 참조 무결성을 보장하려면 고객 ID가 고객 서비스 데이터베이스에 존재하는지 확인해야 합니다.
 - 이를 위해 계정을 추가하기 전에 고객 ID가 유효한지 확인하기 위해 고객 서비스를 호출해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 Account 모델입니다.
 
@@ -183,7 +358,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 # Discovery service
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 새로운 스프링 부트 응용 프로그램을 시작하려고 하는데, 이번에는 이 종속성을 추가해야 합니다.
 
@@ -193,20 +379,39 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 ![annotation](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 다음, 우리는 이 구성을 추가합니다.
 
-
 <img src="/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_12.png" />
-
 
 그리고 애플리케이션을 시작합니다.
 
 마이크로서비스가 유레카 서버에 등록할 수 있도록 하려면, 각 마이크로서비스에 이 종속성을 추가해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_13.png)
 
@@ -216,8 +421,18 @@ Sage와 Eventuate를 이용한 트랜잭션 외부함으로 패턴 구현하기
 
 defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8761/eureka URL로 지정합니다. 그러나 실제로는 적절한 IP 주소를 사용해야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제, 마이크로서비스를 실행하고 Eureka 대시보드에 액세스하면 각 마이크로서비스의 주소와 포트를 확인할 수 있습니다.
 
@@ -227,7 +442,18 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 
 새로운 스프링 부트 애플리케이션을 만들고 이 종속성을 추가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_16.png)
 
@@ -238,7 +464,18 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 - 프리디케이트: 요청을 라우팅하는 데 사용되는 조건입니다. 예를 들어, 요청 경로에 /customer가 포함되어 있으면 게이트웨이는 해당 마이크로서비스로 라우팅합니다. 프리디케이트는 요청 경로, 헤더 또는 쿼리 매개변수와 같은 다양한 기준을 바탕으로 할 수 있습니다.
 - URI: 이는 게이트웨이가 요청을 보내는 엔드포인트입니다. 예를 들어, URI가 http://localhost:8080/api로 설정된 경우 게이트웨이는 해당 주소로 요청을 전달합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 localhost:8888/customers를 입력하면 게이트웨이가 localhost:8082/customers로 요청을 리디렉션합니다.
 
@@ -248,7 +485,18 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 
 - 동적 구성:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그냥 이 bean 하나 추가해주세요.
 
@@ -258,7 +506,18 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 
 ![이미지](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_21.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 CORS를 구성해야 합니다.
 
@@ -268,7 +527,18 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 
 예를 들어: http://localhost:8888/ACCOUNT-SERVICE/accounts
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게이트웨이는 해당 서비스의 경로를 찾기 위해 서비스 디스커버리에 해당 서비스의 이름만으로 요청을 전달합니다.
 
@@ -278,8 +548,18 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 
 지금까지 살펴본 것처럼, 우리가 계정을 조회할 때 고객 정보도 함께 얻습니다. 그렇다면 계정 서비스는 어떻게 고객 서비스에서 해당 정보를 검색할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Understanding Microservices](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_25.png)
 
@@ -289,8 +569,18 @@ defaultZone 구성은 Eureka 인스턴스의 기본 위치를 http://localhost:8
 
 다음 종속성을 추가합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_26](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_26.png)
 
@@ -300,7 +590,18 @@ OpenFeign은 HTTP 요청을 간편하게 만들어주는 선언적 프레임워�
 
 Feign을 사용하여 요청을 보내려면 Account 서비스의 주 클래스에 @EnableFeignClients 주석을 추가해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리는 인터페이스를 주입하고 해당 함수를 사용하여 고객 서비스에 요청을 보내는 방법을 알아봅니다.
 
@@ -310,7 +611,18 @@ Feign을 사용하여 요청을 보내려면 Account 서비스의 주 클래스�
 
 서킷 브레이커는 전력 시스템의 전기 회로 차단기와 유사하게 작동합니다. 이는 지속적으로 구성 요소(예: 원격 서비스 호출)를 모니터링하고 반복된 실패 또는 성능 저하를 감지하면 해당 실패하는 구성 요소에 대한 호출을 일시적으로 차단하여 '회로를 열게' 합니다. 이 기간 동안 서킷 브레이커는 트래픽을 대체로 리다이렉트할 수 있습니다(예: 백업 시스템 또는 대체 기능).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소프트웨어 아키텍처에서 회로 차단기 패턴의 이점은 다음과 같습니다:
 
@@ -328,7 +640,18 @@ Feign을 사용하여 요청을 보내려면 Account 서비스의 주 클래스�
   - 실패하는 구성 요소로의 트래픽을 적극적으로 차단합니다.
   - 더 이상의 실패 전파를 방지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Half-Open 상태:
 
@@ -342,8 +665,18 @@ Half-Open 상태:
 
 Circuit Breaker 패턴을 구현하기 위해서는 필요한 종속성을 추가하는 것부터 시작해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_30.png)
 
@@ -353,9 +686,18 @@ Circuit Breaker 패턴을 구현하기 위해서는 필요한 종속성을 추�
 
 간단한 예제를 살펴보죠: 모든 서비스를 시작한 후 고객 서비스를 중단할 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Understanding Microservices: A Modern Approach to Software Architecture](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_32.png)
 
@@ -365,8 +707,18 @@ We can see that the account service is still working, and the customer data retu
 
 Config-Service
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이크로서비스마다 자체 설정이 있는 경우 변경 사항이 발생하면 해당 서비스를 다시 시작해야 합니다. 또한, 대부분의 설정이 모든 서비스에서 동일하며, 각 구성 파일에 반복된 항목이 있습니다.
 
@@ -376,7 +728,18 @@ Config-Service
 
 ![image](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_34.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 효율적으로 설정을 관리하려면 모든 설정 파일을 저장할 Git 저장소를 만들어야 합니다. 이 저장소는 로컬에 있을 수도 있고(이 경우 구성 서버와 같은 기기에 있어야 함), 또는 원격 GitHub 저장소일 수 있습니다.
 
@@ -387,8 +750,18 @@ Config-Service
 
 우리는 각 마이크로서비스에 이 구성을 추가해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_35](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_35.png)
 
@@ -398,8 +771,18 @@ Config-Service
 
 ![UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_36](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_36.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 마이크로서비스 간에 공유되도록 application.properties 파일 내에서 config 리포지토리에 이 구성을 추가해야 합니다. 이 구성은 액추에이터 엔드포인트를 활성화합니다.
 
@@ -409,7 +792,18 @@ Config-Service
 
 ![Configuration Git Repository](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_38.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 설정 서비스의 구성 파일인 application.properties 내부에서 Git 리포지토리의 위치를 로컬 변수로 지정해야 합니다. 이는 구성 파일을 로컬 폴더에 포함하거나 구성 파일을 원격 리포지토리로 푸시하는 경우 GitHub 리포지토리의 URL일 수 있습니다.
 
@@ -419,7 +813,18 @@ Config-Service
 
 이제, 마이크로서비스를 실행하려면 발견 서비스를 먼저 실행한 다음 구성 서비스와 게이트웨이를 실행해야 합니다. 이러한 서비스들이 올바르게 시작되면 다른 마이크로서비스를 시작할 수 있습니다. 다수의 마이크로서비스를 처리할 때 각각을 필요한 순서대로 수동으로 시작하는 것은 어려울 수 있습니다. 해결책은 모든 서비스와 종속성을 지정하여 올바른 순서로 시작되도록 보장하는 Docker Compose 파일을 사용하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 각 마이크로서비스에 이 도커파일을 추가해줍니다.
 
@@ -429,8 +834,18 @@ Config-Service
 
 다음은 도커 컴포즈입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_41.png)
 
@@ -441,8 +856,18 @@ Building Images:
 
 Health Checks:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Docker Compose는 각 컨테이너의 상태를 모니터링하기 위해 건강 검사(healthcheck)를 사용합니다.
 - 일반적으로 건강 검사는 컨테이너 내에서 특정 엔드포인트 (/actuator/health)를 쿼리하여 올바르게 작동하는지 확인합니다.
@@ -454,13 +879,22 @@ Health Checks:
 
 이제 환경 변수를 사용하기 위해 구성 파일을 변경해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어
 
-
 ![UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_42](/assets/img/2024-06-19-UnderstandingMicroservicesAModernApproachtoSoftwareArchitecture_42.png)
-
 
 Docker Compose를 사용할 때는 DISCOVERY_SERVICE_URL 환경 변수를 활용합니다. 수동으로 실행하는 경우에는 일반적으로 localhost:8761/eureka를 사용합니다.
 

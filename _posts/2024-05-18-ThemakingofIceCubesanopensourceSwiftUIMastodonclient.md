@@ -3,13 +3,12 @@ title: "아이스 큐브 만들기, 오픈 소스 SwiftUI 마스토돈 클라이
 description: ""
 coverImage: "/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_0.png"
 date: 2024-05-18 15:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_0.png
 tag: Tech
 originalTitle: "The making of Ice Cubes, an open source, SwiftUI Mastodon client."
 link: "https://medium.com/@dimillian/the-making-of-ice-cubes-an-open-source-swiftui-mastodon-client-45ebea5cf6b6"
 ---
-
 
 ## Ice Cubes 제작에 관한 시리즈 기사의 시작입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@dimillian/the-making-of-ice-cubes-an-open-source-swif
 
 ![이미지](/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 Ice Cubes 앱 제작에 대한 다수의 이야기 중 첫 번째입니다. 이 기사는 어플이 무엇이며, 그 배경 이야기, 그리고 코드베이스 개요에 중점을 둘 것입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@dimillian/the-making-of-ice-cubes-an-open-source-swif
 
 또한 Ice Cubes의 일부를 작업할 때 매우 유용한 공식 iOS 앱 리포지토리에 대해 언급하고 감사의 마음을 전합니다, 특히 푸시 알림 부분에서.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ice Cubes에 대해서 궁금하신 이유가 있다면, 해당 이름은 어디에서 왔는지 궁금해하실 수도 있습니다. 모든 궁금증에 대한 답변은 여기 있습니다, 약속드립니다:
 
@@ -39,7 +60,18 @@ Ice Cubes에 대해서 궁금하신 이유가 있다면, 해당 이름은 어디
 
 ![Ice Cubes Icons](/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 '마스토돈'을 통해 나만의 소셜 네트워크 앱을 마침내 만들 수 있게 되었고, iOS 16 및 그와 함께 제공된 멋진 SwiftUI API를 활용할 수 있는 완벽한 시기였습니다. 그래서 이제 GitHub과 Xcode 프로젝트를 만들었어요. 평소처럼, 모든 소스 코드는 완전히 오픈 소스입니다.
 
@@ -49,7 +81,18 @@ Ice Cubes에 대해서 궁금하신 이유가 있다면, 해당 이름은 어디
 
 마스토돈은 분산형 네트워크입니다. 다양한 주제와 특정 커뮤니티들이 있는 거의 모든 서버에 계정을 가질 수 있죠. '아이스 큐브' 앱의 아이디어는 앱에 어떤 서버 URL이든 추가하고 해당 지역 타임라인으로 쉽게 전환하여 그곳에서 콘텐츠를 읽고 공유할 수 있는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_3.png" />
 
@@ -59,17 +102,39 @@ Ice Cubes에 대해서 궁금하신 이유가 있다면, 해당 이름은 어디
 
 <img src="/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저장소에는 약 80명의 기여자, 400개 이상의 병합된 PR 및 15개 이상의 언어로 제공되는 응용 프로그램이 있습니다. 오픈 소스 및 Mastodon 커뮤니티가 놀라울 정도로 지원해주었습니다. 이것은 지금까지 가장 좋은 오픈 소스 프로젝트 중 하나이며 코드베이스에도 꽤 만족하고 있습니다.
 
 이 게시물을 통해, Ice Cubes GitHub 저장소에서 우리에게 도움을 주신 모든 훌륭한 기여자들에게 감사의 말씀을 전하고 싶습니다. 버그 수정, 기능 구현, 다양한 언어로 번역하는 데 도움을 주신 여러분 없이는 이 응용 프로그램이 오늘날의 모습을 갖추지 못했을 것입니다!
 
-작성 시점에서 이 응용 프로그램은 약 50,000번 다운로드되었으며 앱 스토어에서 1300개의 리뷰로 4.8의 평균 평점을 받았습니다. 꽤 좋아 보이나요?! 
+작성 시점에서 이 응용 프로그램은 약 50,000번 다운로드되었으며 앱 스토어에서 1300개의 리뷰로 4.8의 평균 평점을 받았습니다. 꽤 좋아 보이나요?!
 
 ![이미지](/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저에게서부터 여러분에게까지, 이것은 시작에 불과해요. Ice Cubes는 이제 대부분의 Mastodon 기능을 지원하며, 훌륭한 푸시 알림, 공유 확장 기능, 그리고 Safari 확장 프로그램을 제공하여 어떤 Mastodon 링크든 Ice Cubes에서 열 수 있도록 했어요. 이 앱은 iOS를 최우선으로 생각한 것으로, SwiftUI를 통해 완전히 구축되었으며 가능한 모든 네이티브 iOS 구성 요소를 사용했어요.
 
@@ -79,8 +144,18 @@ Ice Cubes에 대해서 궁금하신 이유가 있다면, 해당 이름은 어디
 
 또한 List swipe actions 또한 가능해요. 이 기능은 어떤 상태 행 뷰에서 이용할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-05-18-ThemakingofIceCubesanopensourceSwiftUIMastodonclient_7.png)
 
@@ -90,8 +165,18 @@ It also uses NavigationStack throughout the app with programmatic navigation and
 
 These are just some examples of the SwiftUI and iOS features that the app showcases. Feel free to explore the codebase or run the app directly on your device!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iPadOS 및 macOS에서도 아주 잘 작동합니다 (지금은 Apple Silicon iOS 앱으로 작동 중입니다). 언젠가는 진정한 네이티브 macOS 클라이언트를 개발하고 싶네요. 커스텀 사이드바와 더 큰 화면을 위한 보조 열을 사용하고 있습니다:
 
@@ -101,7 +186,18 @@ iPadOS 및 macOS에서도 아주 잘 작동합니다 (지금은 Apple Silicon iO
 
 ## 프로젝트 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 앱 개요를 이해했으니 이제 코드베이스에 진입해 봅시다. 우선, 이 앱은 Swift 패키지를 많이 활용합니다:
 
@@ -111,7 +207,18 @@ iPadOS 및 macOS에서도 아주 잘 작동합니다 (지금은 Apple Silicon iO
 
 ## 아키텍처
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거기에는 미친 듯한 아키텍처가 없어요. 이 앱은 주요 관심 분리와 뷰 캡슐화가 잘 이루어진 베어본즈 MVVM을 사용하고 있어요. 여기 앱에서 가장 중요한 뷰인 StatusRowView의 예시를 보여드릴게요. 여기서는 게시물이 표시되요:
 
@@ -121,7 +228,18 @@ iPadOS 및 macOS에서도 아주 잘 작동합니다 (지금은 Apple Silicon iO
 
 앱의 일부를 최적화한 Alex Grebenyuk에게도 큰 찬사를 보내고, 앱이 원격 이미지를 로드하고 표시하기 위해 사용하는 Nuke 라이브러리에 대해 더 나은 최적화를 실현한 점에 대해 감사드릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## EnvironmentObject
 
@@ -145,7 +263,18 @@ WindowGroup {
 
 어떤 개수의 EnvironmentObject를 주입하는 것에는 단점이 없습니다. 주입된 EnvironmentObject와 어떤 뷰가 연결되어 있는지, 그들 안에서 얼마나 많은 업데이트를 만드는지에 달려 있습니다. 공유 데이터 등을 여러 EnvironmentObject로 분리해도 됩니다. 보다 명확할수록 뷰에 좋습니다. 그것은 원하는 속성에만 연결할 수 있기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @EnvironmentObject을 뷰 상단에 포함하면 성능에 별도의 비용이 들지 않는다는 것을 알아두어야 해요. 그러나 이 환경 객체 내의 @Published 속성을 업데이트하면 뷰가 연결되어 있다면 뷰 업데이트가 트리거됩니다. 심지어 뷰 내에서 이 속성을 직접 관찰하거나 사용하지 않더라도 말이죠. 그러니 주의하세요.
 
@@ -155,7 +284,18 @@ WindowGroup {
 
 제 경우에는 사용자 환경 설정 중 하나, 테마, 푸시 알림 관리, 스트림 감시 프로그램, 그리고 앱 어디서든 현재 계정 및 현재 인스턴스 정보에 액세스할 수 있는 뭔가를 다양하게 가지고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 네비게이션
 
@@ -165,7 +305,18 @@ WindowGroup {
 
 그렇다면 중앙 앱 라우터는 어떻게 작동할까요? 가능한 경로의 목록을 정의했습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 public enum RouterDestinations: Hashable {
@@ -209,7 +360,18 @@ public enum SheetDestinations: Identifiable {
 그리고 저는 RouterPath라고 불리는 ObservableObject를 가지고 있어요.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 @MainActor
@@ -247,14 +409,35 @@ struct NotificationsTab: View {
 
 보시다시피, RouterPath StateObject의 path를 NavigationStack에 연결합니다. 이렇게 하면 NavigationStack이 해당 path에 대한 프로그래밍 방식 조작을 다룰 것입니다. 또한 NavigationLink에서의 변경 사항을 반영하도록 업데이트합니다. NavigationLink를 자주 사용하지 않아요. 제약이 많이 따르기 때문에 많은 수정 작업과 navigate(to:) 함수를 자주 사용합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 테이블 태그를 마크다운 형식으로 변경하려면 이렇게 하시면 됩니다.
 
 위의 예시 코드를 마크다운 형식으로 변경한 것입니다. 도움이 되었길 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 의견으로 보입니다.
 
@@ -270,15 +453,24 @@ AvatarView(url: notification.account.avatar)
 
 그리고 어떤 시트를 표시할 때도 똑같이 작동합니다. 이것은 NavigationStack 때문이 아니라, 전역 시트 라우터를 뷰 계층 구조에 등록했기 때문입니다 (withSheetDestinations). 시트를 표시하려면 이렇게 하면 됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Button {
-   routerPath.presentedSheet = .addAccount
+routerPath.presentedSheet = .addAccount
 } label: {
-   Image(systemName: "person.badge.plus")
+Image(systemName: "person.badge.plus")
 }
-
 
 그럼 이만!
 
@@ -286,8 +478,18 @@ Button {
 
 이번 Ice Cubes에 관한 첫 번째 글은 여기서 마치겠습니다만, 다음에 읽고 싶은 내용에 대해 댓글이나 GitHub, Mastodon 등으로 연락해주시면 기쁠 것입니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셔서 감사합니다! 이 글이 마음에 들었으면 좋겣지만 언제든지 놀러 오세요. 더 깊게 알아볼 내용이 많이 있어요! 🚀
 

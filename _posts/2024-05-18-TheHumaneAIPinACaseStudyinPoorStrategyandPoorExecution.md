@@ -3,13 +3,12 @@ title: "인간 중심 AI 핀 부적절한 전략과 실행 사례 연구"
 description: ""
 coverImage: "/assets/img/2024-05-18-TheHumaneAIPinACaseStudyinPoorStrategyandPoorExecution_0.png"
 date: 2024-05-18 19:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TheHumaneAIPinACaseStudyinPoorStrategyandPoorExecution_0.png
 tag: Tech
 originalTitle: "The Humane AI Pin: A Case Study in Poor Strategy and Poor Execution"
 link: "https://medium.com/@dareobasanjo/the-humane-ai-pin-a-case-study-in-poor-strategy-and-poor-execution-8293734d1adb"
 ---
-
 
 휴메인 인공 지능 핀은 디지털 어시스턴트가 탑재된 착용형 음성 제어 장치로, 일반적인 사용 사례에서 스마트폰을 대체하기 위해 만들어졌으며 가격은 700달러입니다. 그러나 최근에 나온 기술 제품 중에서 가장 부정적인 평가를 받은 제품 중 하나입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@dareobasanjo/the-humane-ai-pin-a-case-study-in-poor-s
 
 전략은 목표를 달성하기 위해 독특한 단계를 취하여 내구성 있는 경쟁 우위를 제공하는 방식입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋은 전략의 조건은 경쟁사가 귀하의 제품을 복제하거나 대체하기 어려운 점이 있어야 하며, 이는 귀사만이 이를 할 수 있는 특별한 능력을 갖고 있거나 성공적인 실행으로 구조적 이점을 창출하여 그것을 그냥 복제할 수 없게 만드는 것입니다.
 
@@ -29,11 +39,33 @@ link: "https://medium.com/@dareobasanjo/the-humane-ai-pin-a-case-study-in-poor-s
 
 전략을 평가하는 방법은 가정이 사실이고 완벽하게 실행된다고 가정했을 때 무엇이 발생하는지 고려하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Markdown 형식으로 표를 수정하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 인간 친화적 AI 핀 제품 실행
 
@@ -49,7 +81,18 @@ Markdown 형식으로 표를 수정하십시오.
 - “AI 핀이 무언가를 시도할 때마다 Humane의 서버를 통해 쿼리를 처리해야 하며, 최상의 경우에는 상대적으로 느리고 최악의 경우에는 완전히 실패합니다. AI 핀에게 도서 매매가 다음 주에 있다고 말하면: 편리합니다! 10초를 기다리면서 처리하고 처리하고 일반적인 "추가할 수 없음" 오류 메시지를 표시하는 것은 덜 편리합니다. 누군가에게 전화를 걸려고 할 때 절반의 경우 전화가 걸리지 않을 것입니다. 누군가가 나를 호출했을 때 절반이상의 시간, AI 핀은 전화를 울리지도 않고 거의 바로 음성 사서함으로 연결했습니다. 여러 일 테스트를 거쳐, AI 핀이 할 수 있는 단 하나의 일은 시간을 알려주는 것뿐입니다.” — 더 버지
 - “AI 핀의 언어 모델과 기능에 대한 문제는 여기서 끝나지 않습니다. 때때로 다시 시작하거나 종료하는 것과 같이 요청한 내용을 거부할 때가 있습니다. 다른 경우에는 완전히 예상치 못한 일을 할 수도 있습니다. "Julian Chokkattu에게 텍스트 메시지 보내기"라고 말했을 때, 그는 Wired의 친구이자 AI 핀 리뷰어인데, 무엇을 어떻게 말하고 싶은지 물어볼 줄 알았습니다. 대신, 장치는 단순히 OK라고 말하고, "안녕 Julian, 오늘 하루 어떻게 지내고 있니?" 라며 Chokkattu에게 보낸다고 말했습니다. 우리가 친구사이인 몇 년 동안 저는 그에게 그런 말을 한 적이 없습니다. 그럼에도 불구하고 기술적으로 AI 핀이 내가 요청한 대로 행동 한 것이라고 할 수 있겠죠.” — 엔가젯
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋은 실행은 잘 설계된 기능을 제공하거나 적어도 사람들이 버그를 참을 가치가 있는 기능을 제공하는 것입니다. 인간적인 AI 핀은 첫 번째로 많은 것을 하지도 않는 제품인데도 불구하고 많은 버그 경험과 설계가 미흡한 기능들을 가지고 있습니다.
 

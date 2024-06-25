@@ -10,7 +10,6 @@ originalTitle: "The Null Object Pattern — The Ruby way"
 link: "https://medium.com/kode-art/the-null-object-pattern-the-ruby-way-0749ce7cb7c2"
 ---
 
-
 ![image](/assets/img/2024-05-27-TheNullObjectPatternTheRubyway_0.png)
 
 # 소개
@@ -19,8 +18,18 @@ link: "https://medium.com/kode-art/the-null-object-pattern-the-ruby-way-0749ce7c
 
 이 문구는 그저 'username' 메서드를 누락된 객체에 적용할 수 없다는 것을 의미합니다. 즉, 당신이 메서드 이름을 잘못 입력했거나 데이터베이스에서 제공된 ID로 찾는 객체가 삭제되었을 수 있습니다. 따라서, 이곳이 바로 Null 객체 패턴을 사용하여 이러한 공포스러운 화면을 피할 수 있는 정확한 장소입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 널 객체 패턴은 코드에서 널 체크를 제거하는 데 도움이 되는 행동 디자인 패턴입니다. 이는 Nil 예외의 피해를 최소화하고 코드를 더 선언적이고 DRY하게 만들어주는 매우 유용한 도구입니다.
 
@@ -30,7 +39,18 @@ link: "https://medium.com/kode-art/the-null-object-pattern-the-ruby-way-0749ce7c
 
 그럼 시작해 볼까요...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 루비에서 널 객체 패턴 구현
 
@@ -48,7 +68,18 @@ link: "https://medium.com/kode-art/the-null-object-pattern-the-ruby-way-0749ce7c
 
 그리고 이러한 상황에서 여러분이 받게 되는 것은 이 오류 메시지뿐입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # Case 1
@@ -73,7 +104,18 @@ end
 
 이러한 종류의 확인 사항은 쉽게 여러분의 코드를 확인 사항과 조건 연산자의 혼란으로 바꿀 수 있습니다. 우리가 한 것과 대조적으로 한 번만 하고 모든 곳에서 사용할 수 있는 더 나은 방법이 있습니다. 이는 코드를 보기 좋게 만들어줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터베이스에 없는 사용자 객체에 대체될 'DeletedUser' 클래스를 정의해 봅시다. 이 클래스는 실제 사용자 객체를 흉내 내도록 동일한 일반 속성/메서드를 갖게 될 것입니다.
 
@@ -110,7 +152,18 @@ end
 @user_2.username #=> "알 수 없는 사용자 이름"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 하면 객체가 항상 예상한 메서드에 응답할 것이라는 점을 확신할 수 있어요.
 
@@ -120,7 +173,18 @@ Null 객체 패턴은 다음 시나리오에서 특히 유용해요:
 
 - 기본 값: 누락된 객체에 대한 기본 값이나 동작을 제공하고 싶을 때.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 조심하세요, 때로는 이 패턴이 다음과 같습니다:
 
@@ -130,7 +194,18 @@ Null 객체 패턴은 다음 시나리오에서 특히 유용해요:
 
 널 객체 패턴은 누락된 객체를 깨끗하고 유지보수 가능한 방식으로 처리하기 위한 강력한 도구입니다. 실제 객체의 동작을 흉내 내는 널 객체를 생성함으로써 코드를 단순화하고 테스트를 쉽게 할 수 있습니다. 필요한 객체가 없을 때 우아하게 처리해야 할 필요가 있을 때 이 패턴을 고려할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 널 객체 패턴은 데이터베이스 쿼리에서 데이터를 반환하지 않는 경우 외에도 유용하게 활용할 수 있습니다.
 

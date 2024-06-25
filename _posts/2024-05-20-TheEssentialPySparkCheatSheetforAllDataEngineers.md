@@ -3,13 +3,12 @@ title: "모든 데이터 엔지니어를 위한 필수 PySpark 차트 시트"
 description: ""
 coverImage: "/assets/img/2024-05-20-TheEssentialPySparkCheatSheetforAllDataEngineers_0.png"
 date: 2024-05-20 16:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TheEssentialPySparkCheatSheetforAllDataEngineers_0.png
 tag: Tech
 originalTitle: "The Essential PySpark Cheat Sheet for All Data Engineers."
 link: "https://medium.com/towards-artificial-intelligence/simplify-your-data-engineering-journey-the-essential-pyspark-cheat-sheet-for-success-69db0c38b31e"
 ---
-
 
 ## 모든 Pyspark 스크립트 작성을 수정하고, 시간을 절약한 상태로 현명하게 연습하세요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-artificial-intelligence/simplify-your-data-eng
 
 이 도구를 이용하면 PySpark 및 관련 프레임워크에 필수적인 중요한 변환 기술 및 데이터 분석 방법론을 신속하게 검토할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 시작해봅시다
 
@@ -29,8 +39,18 @@ PySpark를 사용하여 변환 작업이나 데이터 분석 작업을 시작하
 
 ## 시작해봅시다!!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 from pyspark.sql import SparkSession
 from pyspark.sql import types
@@ -39,22 +59,32 @@ from pyspark.sql.functions import col, date, year, time, sum, avg, upper, count,
 from pyspark.sql import window
 from pyspark.sql import functions as F
 
-
-
 spark = SparkSession.builder.appName("application").getOrCreate()
+
 # read any file as given either csv, excel, parquet, or Avro any format of data
+
 data = spark.read.csv("filePath", header=True, inferschema=True) # if we want given data types as it is
 schema = StructType([StructField("id", IntegerType), StructField("name", StringType),
-StructField("dept", StringType)]) # if we want our required data types then we use this 
-# also for better performance of executions we will be using our custom schema rather depending on inferschema
+StructField("dept", StringType)]) # if we want our required data types then we use this
 
+# also for better performance of executions we will be using our custom schema rather depending on inferschema
 
 Let’s kickstart our PySpark application by first creating a Spark Session, the entry point to PySpark functionality.
 
 We’ll then proceed with performing various transformations and analyses on sample data.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 데이터 = [(1, 'mahi', 100), (2, 'mahendra', 200), (3, 'harish', 300), (4, 'desh', 400)]
@@ -72,13 +102,24 @@ display(df)
 PySpark에서 윈도우 함수를 사용하여 급여의 누적 합을 계산할 수 있습니다.
 
 ```js
-a = Window().orderBy('id')
-누적_합 = df.withColumn("cumulative_sum", sum("salary").over(a))
-결과 = cumulative_sum.orderBy('id')
-결과.show()
+a = Window().orderBy("id");
+누적_합 = df.withColumn("cumulative_sum", sum("salary").over(a));
+결과 = cumulative_sum.orderBy("id");
+결과.show();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 a = Window().orderBy('id')
@@ -108,24 +149,47 @@ display(부서)
 
 ![이미지](/assets/img/2024-05-20-TheEssentialPySparkCheatSheetforAllDataEngineers_2.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공통 속성인 dept_id를 사용하여 두 개의 데이터 프레임을 결합해 봅시다. 예시를 들어보겠습니다:
 
 ```js
-df=employee.join(department, "dept_id", "inner").select('id','name','salary','department')
-display(df)
+df = employee
+  .join(department, "dept_id", "inner")
+  .select("id", "name", "salary", "department");
+display(df);
 ```
 
 ```js
-df=employee.join(department, "dept_id", "right").select('name','department')
-display(df)
+df = employee.join(department, "dept_id", "right").select("name", "department");
+display(df);
 ```
 
 <img src="/assets/img/2024-05-20-TheEssentialPySparkCheatSheetforAllDataEngineers_3.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에서는 다양한 PySpark 변환, 액션 및 기능에 대해 상세히 설명하겠습니다. 실행 가능한 코드 예제와 함께 다룰 예정이에요.
 
@@ -135,7 +199,18 @@ display(df)
 
 데이터 조작 작업부터 시작하여 PySpark 데이터 프레임을 사용하여 데이터 필터링, 선택 및 집계를 살펴보겠습니다. 그 후에는 조인, 정렬 및 창 함수와 같은 변환을 통해 다수의 테이블에서 데이터를 조작하고 분석하는 방법을 살펴볼 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 우리는 샘플 데이터셋을 활용하여 모델 학습과 평가를 통해 머신러닝 작업을 지원하는 Pyspark을 소개할 것입니다.
 
@@ -145,7 +220,18 @@ display(df)
 
 ## 필터링, 선택, 집계, 그룹화 및 정렬 조건:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 df = orders.join(products, "order_id", "inner") # 어떤 조인 적용
@@ -154,10 +240,10 @@ df.join(df2, '공통 열').groupBy('표시할 열').count().orderBy(desc('count'
 
 df1=df.groupBy("cust_id").agg(sum("amount").alias("bill")) # 그룹화 함수 적용 및 집계 조건을 지정
 
-df.groupBy("col1").agg(count("col2").alias("count"), 
+df.groupBy("col1").agg(count("col2").alias("count"),
                           sum("col2").alias("sum"),
                           max("col2").alias("maximum"),
-                          min("col2").alias("minimum"), 
+                          min("col2").alias("minimum"),
                           avg("col2").alias("average")).show()
 
 
@@ -186,12 +272,23 @@ PySpark는 데이터 프레임 내에서 날짜 속성을 추출하고 조작하
 
 또한, 이러한 속성들은 오름차순이나 내림차순으로 정렬하여 분석과 시각화를 용이하게 할 수 있습니다.
 
-## 날짜 열에서 일, 월, 연도 추출하기: 
+## 날짜 열에서 일, 월, 연도 추출하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 프레임에서 연도, 월, 일 세부 정보 추출하기
+
 df.select(year("date column").distinct().orderBy(year("date column")).show()
 df.select(month("date column").distinct().orderBy(month("date column")).show()
 df.select(day("date column").distinct().orderBy(day("date column")).show()
@@ -201,23 +298,31 @@ df.withColumn("ordermonth", month("df.date column"))
 df.withColumn("orderday", day("df.date column"))
 df.withColumn("orderquarter", quarter("df.date column"))
 
-
 특정 열에서 null 값을 필터링하고 그 다음에 지정된 순서로 그룹화 작업을 수행하기 위해 조건을 적용할 수 있습니다.
-
 
 df.select("column name we want to retrieve").where(col("column name we want to retrieve").isNotNull())\
 .groupBy("column name we want to retrieve").count().orderBy("count", ascending=False).show(10)
 
-
 ## 함수 작성하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-df.write.format("CSV").mode("overwrite").save("원하는 파일 저장 경로")
-df.write.format("CSV").mode("append").save("원하는 파일 저장 경로")
-df.write.format("Parquet").mode("overwrite").save("원하는 파일 저장 경로")
-df.write.format("parquet").mode("append").save("원하는 파일 저장 경로")
+df.write.format("CSV").mode("overwrite").save("원하는 파일 저장 경로");
+df.write.format("CSV").mode("append").save("원하는 파일 저장 경로");
+df.write.format("Parquet").mode("overwrite").save("원하는 파일 저장 경로");
+df.write.format("parquet").mode("append").save("원하는 파일 저장 경로");
 ```
 
 ## 윈도우 함수:
@@ -251,7 +356,18 @@ d=Window.partitionBy("Item").orderBy("date") #예시 열을 고려하여 원하�
 sales_data=df.withColumn("next_sales", lead(col("sales"),1).over(d))
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 데이터 엔지니어링 면접에 대비하는 개인들에게 가치 있는 도구로 작용하며, Databricks 플랫폼을 위해 구체적으로 맞춘 PySpark 함수와 수식들에 대한 간결하면서 포괄적인 요람을 제공합니다.
 
@@ -261,7 +377,18 @@ sales_data=df.withColumn("next_sales", lead(col("sales"),1).over(d))
 
 ![이미지](/assets/img/2024-05-20-TheEssentialPySparkCheatSheetforAllDataEngineers_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래에서 데이터 엔지니어 인터뷰를 준비하는 데 도움이 되는 몇 가지 더 많은 기사를 찾을 수 있습니다.
 
@@ -269,10 +396,21 @@ sales_data=df.withColumn("next_sales", lead(col("sales"),1).over(d))
 - 데이터 엔지니어 인터뷰에서 가장 일반적으로 묻는 빅데이터(Apache Spark) 개념
 - 데이터 엔지니어 인터뷰를 위한 Python 코딩 문제 제1부 (쉬운 난이도)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-제 소중한 내용을 더 많이 공유할 수 있도록 함성 소리로 응원해주신다면 감사하겠습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-저를 팔로우하고 구독하여 제 소식을 즉시 받아보세요. 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+제 소중한 내용을 더 많이 공유할 수 있도록 함성 소리로 응원해주신다면 감사하겠습니다.
+
+저를 팔로우하고 구독하여 제 소식을 즉시 받아보세요.
 
 감사합니다 :)

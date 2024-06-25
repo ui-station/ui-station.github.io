@@ -3,13 +3,12 @@ title: "안드로이드에서 Room 데이터베이스 시작하기"
 description: ""
 coverImage: "/assets/img/2024-05-20-GettingStartedwithRoomDatabaseinAndroid_0.png"
 date: 2024-05-20 15:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-GettingStartedwithRoomDatabaseinAndroid_0.png
 tag: Tech
 originalTitle: "Getting Started with Room Database in Android"
 link: "https://medium.com/@amitraikwar/getting-started-with-room-database-in-android-fa1ca23ce21e"
 ---
-
 
 ## Room 데이터베이스 구현에 대한 포괄적인 안내
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@amitraikwar/getting-started-with-room-database-in-and
 
 로컬 데이터 저장은 많은 안드로이드 애플리케이션에게 중요하며, 데이터를 효율적으로 저장하고 검색할 수 있게 합니다. 이 안내서에서는 안드로이드 앱에서 데이터베이스 관리를 간편하게 하는 강력한 라이브러리인 Room을 살펴보겠습니다. Room 설정부터 데이터베이스 작업 수행 및 마이그레이션 처리까지 모두 다룰 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-GettingStartedwithRoomDatabaseinAndroid_1.png" />
 
@@ -39,7 +49,18 @@ dependencies {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OR
 
@@ -68,7 +89,18 @@ dependencies{
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 클래스 경로를 build.gradle(앱 레벨)에 KSP에 추가해주세요.
 
@@ -93,9 +125,21 @@ data class User(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### Step 3: DAO (Data Access Object) Interface 생성
+
 데이터베이스 작업을 정의하기 위한 DAO 인터페이스를 생성하세요. 예를 들어, `UserDao`를 만들어보겠습니다:
 
 ```kotlin
@@ -116,6 +160,7 @@ interface UserDao {
 ```
 
 ### Step 4: 데이터베이스 클래스 정의
+
 `RoomDatabase`를 확장하는 추상 클래스를 생성하여 데이터베이스 인스턴스를 정의하고 엔티티 및 DAO를 포함시키세요:
 
 ```kotlin
@@ -128,7 +173,18 @@ abstract class AppDatabase : RoomDatabase() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Step 5: 데이터베이스 인스턴스 초기화하기
 `Application` 클래스나 관련 진입점에서 Room 데이터베이스 인스턴스를 초기화하세요:
@@ -159,7 +215,18 @@ class MyApp: Application() {
 Step 1: 데이터 삽입
 사용자를 데이터베이스에 삽입하려면 `UserDao`에 정의된 `insertUser` 메서드를 사용할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 val newUser = User(username = "JohnDoe", email = "john@example.com")
@@ -175,7 +242,18 @@ val userList: List<User> = MyApp.database.userDao().getAllUsers()
 
 인젝션 가능한 Room 데이터베이스 객체를 설정하는 데모 프로젝트를 확인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데모 프로젝트 링크: https://github.com/raikwaramit/RoomDatabaseModule/
 
@@ -185,6 +263,17 @@ Android 앱에서 Room 데이터베이스를 구현하면 데이터 저장을 �
 
 이 가이드에서는 Room의 기본 사항을 다루었습니다. 라이브러리에 익숙해지면 데이터베이스 관계, LiveData 통합, 복잡한 쿼리와 같은 고급 기능을 탐색할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 룸을 사용하면 Android 앱에서 로컬 데이터를 관리하는 것이 더 쉬워집니다. 코딩을 즐기세요!

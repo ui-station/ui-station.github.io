@@ -3,13 +3,12 @@ title: "저렴한 가격의 센서 마법 시각화 틴커캐드에서의 다양
 description: ""
 coverImage: "/assets/img/2024-05-18-VisualizingLow-CostSensorMagicExploringTypesBenefitsandReal-worldCircuitsinTinkercad_0.png"
 date: 2024-05-18 18:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-VisualizingLow-CostSensorMagicExploringTypesBenefitsandReal-worldCircuitsinTinkercad_0.png
 tag: Tech
 originalTitle: "Visualizing Low-Cost Sensor Magic: Exploring Types ,Benefits and Real-world Circuits in Tinkercad"
 link: "https://medium.com/@rashmiabeysekera3/visualizing-low-cost-sensor-magic-exploring-types-benefits-and-real-world-circuits-in-tinkercad-a8026c16e315"
 ---
-
 
 고가의 센서 비용에 고민 중이신가요? 비싼 센서는 잊고, 저렴한 센서가 하드웨어 분야를 혁신하고 있다는 사실을 알아보세요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rashmiabeysekera3/visualizing-low-cost-sensor-magic-e
 
 센서는 주변 상황에 따라 정보나 데이터를 제공하는 장치 자체입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부는 디지털 출력 또는 아날로그 출력이 있습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@rashmiabeysekera3/visualizing-low-cost-sensor-magic-e
 
 1. 예산을 고려한 친화적인 센서는 학생들이 기술을 탐험하는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 가격 부담을 줄이고 누구나 실용적인 기술을 개발할 수 있습니다.
 
@@ -39,11 +60,33 @@ link: "https://medium.com/@rashmiabeysekera3/visualizing-low-cost-sensor-magic-e
 
 # 토양 수분 센서
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 환경 온도를 측정하려면 금속의 전기적 행동의 차이를 이용하여 온도를 전압으로 변환하세요.
 
@@ -53,7 +96,18 @@ link: "https://medium.com/@rashmiabeysekera3/visualizing-low-cost-sensor-magic-e
 
 **적외선 거리 센서**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IR 빔을 사용하여 객체까지의 거리를 측정하세요.
 
@@ -63,8 +117,18 @@ IR 빔을 사용하여 객체까지의 거리를 측정하세요.
 
 아두이노 보드에 센서들을 연결하고 창의적인 하드웨어 프로젝트를 만들 수 있어요. 여기서 Tinkercad를 사용하여 디자인한 회로 스크린샷을 공유하려고 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 0](/assets/img/2024-05-18-VisualizingLow-CostSensorMagicExploringTypesBenefitsandReal-worldCircuitsinTinkercad_0.png)
 
@@ -122,8 +186,18 @@ void loop()
 
 Run this code and see the amazing result!!!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 센서 뿐만 아니라 아래 링크를 사용하여 이와 같은 회로를 만드는 방법을 배울 수 있습니다. 그러니 기다리지 마세요....지금 시도해보세요....
 

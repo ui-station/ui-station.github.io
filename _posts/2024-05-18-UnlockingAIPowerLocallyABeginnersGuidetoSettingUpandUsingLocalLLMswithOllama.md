@@ -3,13 +3,12 @@ title: "로컬 LLMs를 활용하는 초보자를 위한 설정 및 사용 가이
 description: ""
 coverImage: "/assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_0.png"
 date: 2024-05-18 21:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_0.png
 tag: Tech
 originalTitle: "Unlocking AI Power Locally: A Beginner’s Guide to Setting Up and Using Local LLMs with Ollama"
 link: "https://medium.com/@jasuca/unlocking-ai-power-locally-a-beginners-guide-to-setting-up-and-using-local-llms-with-ollama-f26f70a742d1"
 ---
-
 
 <img src="/assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_0.png" />
 
@@ -19,28 +18,39 @@ link: "https://medium.com/@jasuca/unlocking-ai-power-locally-a-beginners-guide-t
 
 - 소개
 - 지역 대형 언어 모델 (LocalLLMs)이란?
-– 정의 및 설명
-– 지역에서 LLM 실행의 장점
+  – 정의 및 설명
+  – 지역에서 LLM 실행의 장점
 - Ollama 탐구: 지역 추론의 필수품
-– 지역 추론을 위한 Ollama의 다른 프레임워크들과의 차이
-– 대안 프레임워크 및 독특한 특징
-– 컴퓨터에 Ollama 설정하기: 단계별 안내서
+  – 지역 추론을 위한 Ollama의 다른 프레임워크들과의 차이
+  – 대안 프레임워크 및 독특한 특징
+  – 컴퓨터에 Ollama 설정하기: 단계별 안내서
 - 모델에 대한 심층 탐구
-– Llama2
-– Llama2-비격식
-– Code Llama
-– Mistral
-– LLaVA
+  – Llama2
+  – Llama2-비격식
+  – Code Llama
+  – Mistral
+  – LLaVA
 - 과정: 문서부터 답변까지
-– 자세한 단계: 문서 불러오기부터 응답 검색까지
+  – 자세한 단계: 문서 불러오기부터 응답 검색까지
 - 지역 대형 언어 모델과 상호작용하기 위한 프론트엔드 옵션
-– 1. AnythingLLM: 기술을 잘 모르는 사람을 위해
-– 2. 터미널: 기본 명령어에 익숙한 사람을 위해
-– 3. 코드 (Python + LangChain + Streamlit): 기술 애호가를 위해
+  – 1. AnythingLLM: 기술을 잘 모르는 사람을 위해
+  – 2. 터미널: 기본 명령어에 익숙한 사람을 위해
+  – 3. 코드 (Python + LangChain + Streamlit): 기술 애호가를 위해
 - 결론
 - 추가 자료 및 참고 문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 소개
 
@@ -50,7 +60,18 @@ link: "https://medium.com/@jasuca/unlocking-ai-power-locally-a-beginners-guide-t
 
 이 변화 속에서 데이터 보안에 대한 쉬운 설정, 적응성 및 강력한 제어력으로 뛰어난 프레임워크인 Ollama가 돋보이고 있습니다. 이 글은 더 넓은 AI 개발 환경에서 로컬 LLMs의 중요성을 밝히고 오픈 소스 모델을 수용하는 현실적인 이점을 강조하는 데 초점을 맞추었습니다. Ollama를 효과적으로 설정하고 배포하는 방법에 대해 상세히 설명하여, 사용자들이 다양한 응용 프로그램에서 로컬 LLMs의 능력을 완전히 활용할 수 있도록 돕고자 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬에서 LLM을 실행하는 가치를 강조하는 Reddit 토론이, 개인 및 기관이 LocalLLMs로의 이동을 선택하는 다양한 이유를 적절하게 강조합니다. 데이터 개인 정보 보호가 강화되고 AI 능력이 특정 요구에 맞게 맞춤화되는 등 다양한 이유가 그중에 있습니다. 이러한 전환은 보다 포괄적인 산업의 오픈 소스 솔루션으로 향하는 흐름과 일치하여, AI 개발 및 배포에 대한 더 포괄적이고 유연하며 안전한 접근 방식을 제공합니다.
 
@@ -60,7 +81,18 @@ link: "https://medium.com/@jasuca/unlocking-ai-power-locally-a-beginners-guide-t
 
 LLM(Large Language Models)은 인공 지능에서 가능한 범위를 재정의하며, 자연어의 이해, 생성, 상호작용 등에서 이전에 없던 능력을 제공합니다. 이러한 모델은 일반적으로 클라우드 기반 플랫폼을 통해 접근되어 왔지만 새로운 패러다임이 주목받고 있습니다: Local Large Language Models 또는 LocalLLMs입니다. 이러한 LLM 버전은 개인 컴퓨터, 개인 서버 또는 엣지 디바이스와 같은 로컬 하드웨어에 설치되고 실행할 수 있습니다. 로컬 배포로의 이동은 LLM 기술의 접근성과 적용 가능성에 있어서 중요한 진화를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 정의 및 설명
 
@@ -70,7 +102,18 @@ LocalLLMs는 최신 기술로 주목받고 있는 인공지능 모델로, 기사
 
 LocalLLMs로의 전환은 기술적인 새로움뿐만 아니라 디지털 시대의 다양한 요구사항과 우려에 대한 대응입니다. 개인 정보 보호와 데이터 보안이 가장 중요한 장점으로 부각됩니다. LocalLLMs를 사용하면 기밀 데이터가 사내에 머묾하면서도 데이터 유출이나 불법적인 액세스와 같은 위험을 감소시킬 수 있습니다. 게다가 LocalLLMs를 로컬에서 실행하면 모델이 언제, 어떻게 업데이트 또는 사용자 정의할지를 포함하여 사용자가 모델을 완전히 제어할 수 있습니다. 이러한 제어는 성능 최적화에도 확장됩니다. 사용자는 모델 매개변수를 자신의 하드웨어와 응용 프로그램 요구 사항에 맞게 조정할 수 있습니다. 더불어 지연 시간을 크게 줄일 수 있는데, 인터넷을 통해 데이터를 클라우드 서버로 전송하고 다시 받아오지 않아도 되기 때문에 비상 상황에서 빠른 응답 시간을 보장할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Ollama 탐험: 로컬 인퍼런스를 위한 당신의 선택지
 
@@ -80,7 +123,18 @@ Ollama는 로컬 머신에서 언어 모델을 구축하고 실행하기 위한 
 
 ![이미지](/assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ollama는 몇 가지 독특한 장점을 통해 자신을 구별합니다:
 
@@ -93,7 +147,18 @@ Ollama는 몇 가지 독특한 장점을 통해 자신을 구별합니다:
 
 Ollama는 로컬 추론을 위한 폭넓은 기능 세트를 제공하지만, 각각 고유한 강점을 가진 다른 프레임워크도 언급할 가치가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - llama.cpp: 고도로 최적화된 성능으로 알려진 llama.cpp는 ROCm으로 인해 상당한 크기를 차지하지만 지원되는 GPU에서 특히 성능 향상을 제공하는 별도의 이미지입니다.
 - GPT4All: 제공된 소스에서 명시적으로 언급되지는 않았지만, 일반적으로 GPT 모델의 접근성과 배포의 용이성에 중점을 둔 것으로 알려져 있습니다.
@@ -105,7 +170,18 @@ Ollama의 사용 편의성, 확장성, 강력한 기능은 서버의 대형 언�
 
 Ollama는 LocalLLM 세계에서 쉬운 설치와 사용으로 두각을 나타냅니다. macOS와 Windows에서 추론을 실행하는 간편한 방법을 제공합니다. 이 안내서를 통해 두 운영 체제에 Ollama를 설정하는 방법을 안내해 드릴 것이며, 여러분의 프로젝트에 로컬 LLM의 성능을 활용할 준비를 할 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## macOS 사용자를 위한 안내
 
@@ -118,7 +194,18 @@ Ollama는 LocalLLM 세계에서 쉬운 설치와 사용으로 두각을 나타�
 /bin/bash -c " $(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh) "
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 화면에 나오는 안내에 따라 설치를 완료해 주세요.
 
@@ -130,7 +217,18 @@ brew install ollama
 
 이 명령은 Homebrew 저장소에서 Ollama 패키지를 가져와 설치합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 옵션 2: 설치 프로그램 사용하기
 
@@ -141,7 +239,18 @@ brew install ollama
 
 설치 프로그램 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설치 프로그램 다운로드: 올라마 웹사이트로 이동해서 다운로드 섹션을 찾아서 윈도우용 설치 프로그램을 선택하세요. 파일을 컴퓨터로 다운로드합니다.
 - 설치하기: 다운로드한 설치 프로그램을 저장된 위치(일반적으로 다운로드 폴더)로 이동해서 두 번 클릭하세요. 안내에 따라 설치 단계를 진행하면서 시스템에 올라마를 설정할 수 있습니다.
@@ -152,7 +261,18 @@ brew install ollama
 
 올라마가 설치되면 서버를 시작하고 모델을 실행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Ollama Server 시작: 터미널(macOS)이나 명령 프롬프트(Windows)를 열고 다음 명령을 입력하세요:
 
@@ -164,7 +284,18 @@ ollama serve
 
 - 모델 실행: 특정 모델을 실행하려면 아래 명령을 사용하고, `[LLM]`을 사용하려는 모델의 이름으로 바꿔주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 ollama run [LLM]
@@ -178,7 +309,18 @@ ollama run llama2
 
 ## 모델 라이브러리 탐색하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ollama는 다양한 요구 사항과 응용 프로그램에 적합한 모델 라이브러리를 제공합니다. 사용 가능한 모델을 살펴보려면 Ollama 웹사이트를 방문하거나 다음 명령을 사용하여 터미널이나 명령 프롬프트에서 모델 목록을 직접 확인할 수 있습니다:
 
@@ -190,7 +332,18 @@ ollama list-models
 
 ## 추가 자료
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Ollama 튜토리얼을 참조하여 더 자세한 지침, 문제 해결 및 고급 기능을 확인해보세요. 이 자료는 macOS 및 Windows에서 Ollama의 기능을 최대한 활용할 수 있도록 종합적인 지침을 제공합니다.
 
@@ -200,7 +353,18 @@ Ollama 튜토리얼을 참조하여 더 자세한 지침, 문제 해결 및 고�
 
 로컬 대형 언어 모델(Local Large Language Models, LocalLLMs)의 영역은 자연어 처리 및 이를 넘어 다양한 필요에 부응하는 각종 모델들을 보여줍니다. 최신 세부 정보를 기반으로 여러분이 관심 있는 모델들에 대한 업데이트된 개요는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 라마2
 
@@ -210,7 +374,18 @@ Ollama 튜토리얼을 참조하여 더 자세한 지침, 문제 해결 및 고�
 
 라마2-무자비는 라마2 모델 계통에서 나온 것이지만, 보편적으로 LLM에서 내재되어 있는 콘텐츠 중재 및 안전 메커니즘을 피해 특징을 갖추고 있습니다. George Sung과 Jarrad Hope가 제작했으며, Eric Hartford가 제시한 방법론을 따릅니다. 이 변형본은 더 넓은 범위의 필터되지 않은 응답을 제공하며, 콘텐츠 생성의 자유도를 높여 주지만, 불안전하거나 부적절한 결과물을 생산할 가능성도 높입니다. 창의적인 자유와 콘텐츠 안전성 사이에서 트레이드 오프를 강조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 코드 람마
 
@@ -220,7 +395,18 @@ Ollama 튜토리얼을 참조하여 더 자세한 지침, 문제 해결 및 고�
 
 Younes Belkada와 Arthur Zucker가 개발한 Mistral은 Hugging Face를 통해 제공되며, 지시에 맞게 조정된 모델링의 진보를 대표합니다. 이전 모델을 향상한 Mistral-7B-Instruct-v0.2는 인과적 언어 모델링 작업을 위해 맞춤화되어 있으며, 보다 간략한 버전인 Mistral-tiny에 대한 적응이 가능하며, 다양한 컴퓨팅 자원에 사용할 수 있습니다. 이 모델은 강력한 LLM(Large Language Model)을 보다 쉽게 사용할 수 있도록 한 발전을 증명하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## LLaVA
 
@@ -230,7 +416,18 @@ Younes Belkada와 Arthur Zucker가 개발한 Mistral은 Hugging Face를 통해 �
 
 LocalLLMs의 세계는 새로운 모델과 진보가 규칙적으로 등장하며, 이러한 모델의 잠재력에 흥미를 느끼고 이 흥미진진한 분야를 더 깊이 파고들기를 원하는 분들을 위해 Hugging Face와 같은 플랫폼 방문을 권장합니다. 여기서는 여기서 언급된 것 외에도 상세한 문서와 커뮤니티 통찰을 제공하는 다양한 모델을 탐색할 수 있습니다. Hugging Face는 AI 연구 및 응용 분야에 대한 활기찬 허브로, 사용자들은 다양한 모델뿐만 아니라 최신 개발 및 AI 커뮤니티 내의 창의적 노력에 대한 다양한 게시물 및 토론에 참여할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 탐험에 초대합니다. 오늘 사용 가능한 도구를 발견하는 것뿐만 아니라 AI의 미래를 형성하는 커뮤니티에 참여하는 것에 관한 것입니다. 개발자, 연구자 또는 AI 애호가이든지, 다양한 지식과 자원을 통해 당신이 필요로 하는 완벽한 모델을 찾을 수 있도록 돕거나 이 커다란 분야에 기여하도록 영감을 줄 수 있습니다. 그래서 LocalLLMs의 세계로 뛰어들어 Hugging Face와 그 이상을 탐험하고 싶은 호기심 많은 분들을 기다리고 있습니다.
 
@@ -240,7 +437,18 @@ LocalLLMs의 세계는 새로운 모델과 진보가 규칙적으로 등장하�
 
 ![image](/assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 문서: 이들은 프로세스에 사용되는 원자료입니다. 문서는 간단한 텍스트 파일이나 기사부터 레포트나 이메일과 같은 보다 구조화된 데이터까지 다양할 수 있습니다. 이 문서들의 내용을 분석하거나 검색하거나 응답 생성하는 데 사용할 것입니다.
 - 임베딩: 문서 내용을 LLM이 이해하고 사용할 수 있도록 하기 위해 이를 임베딩으로 변환합니다. 임베딩은 텍스트의 의미적 의미와 관계를 캡처하는 고차원 숫자 표현으로, LLM이 처리할 수 있는 형식입니다.
@@ -259,7 +467,18 @@ LocalLLMs의 세계는 새로운 모델과 진보가 규칙적으로 등장하�
 
 여기에 제공된 개요는 로컬 대규모 언어 모델(Local Large Language Models, LocalLLMs)의 광범위한 능력과 복잡한 프로세스를 간략히 소개한 것입니다. 중요한 구성 요소와 고수준 워크플로우에 대해 다루었지만, 해당 분야는 다양한 개념과 기술이 들어가는 넓은 지식 영역이며 더 많은 개념 및 기술이 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 미필의 세부사항을 탐구하거나 철저한 논고를 제시하는 것을 목표로 하지 않습니다. 대신에 어떤 복잡한 프로세스들을 간단하게 정리해줄만한 개요를 제공하고자 합니다. 때로는 설명이 기술적 세부사항을 완전히 포착하지 못하거나 그러한 정교한 시스템에 내재된 미묘한 부분을 생략할 수도 있습니다.
 
@@ -269,7 +488,18 @@ LocalLLMs의 세계는 새로운 모델과 진보가 규칙적으로 등장하�
 
 Ollama와 대규모 언어 모델의 능력을 활용하는 것이 어려운 과제일 필요는 없습니다. 코딩 경험이 전혀 없는 경우든 Python과 같은 스크립팅 언어에 익숙한 경우든, 여러분에게 알맞은 방법이 있습니다. 아래에서는 Ollama와 상호작용하는 세 가지 사용자 친화적인 방법을 소개하고 있으며, 각각 다른 기술 전문성 수준을 고려하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. AnythingLLM: 비 기술자를 위한
 
@@ -281,7 +511,18 @@ AnythingLLM은 몇 번의 클릭으로 자신의 Ollama 서버를 실행하거�
 - 사용법: 직관적인 GUI를 사용하여 쿼리를 입력하고 응답을 받습니다.
 - 자원: AnythingLLM 자습서를 참조하여 서비스 설정 및 사용에 대한 단계별 안내를 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_5.png" />
 
@@ -294,16 +535,25 @@ AnythingLLM은 로컬 LocalLLM과 손쉽게 상호 작용할 수 있도록 사�
 
 임베딩을 위해:
 
-
-| 병합 테스트용 | 테이블 | 변환 |
-|-----------|-------|-----|
-| 열1     | 열2  | 열3 | 
-| 아이템1  | 아이템2| 아이템3|
-
+| 병합 테스트용 | 테이블  | 변환    |
+| ------------- | ------- | ------- |
+| 열1           | 열2     | 열3     |
+| 아이템1       | 아이템2 | 아이템3 |
 
 여기까지입니다! 문제가 발생하면 언제든지 물어보세요. 😉
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 최대 임베딩 청크 길이: 임베딩의 최대 청크 길이를 8192로 설정하세요. 이는 모델이 임베딩 생성을 위해 처리하는 텍스트 세그먼트의 크기를 결정합니다.
 
@@ -313,7 +563,18 @@ AnythingLLM은 로컬 LocalLLM과 손쉽게 상호 작용할 수 있도록 사�
 
 이 튜토리얼은 기본에 초점을 맞추어 전사 모델을 건너뛰며 진행됩니다. 이 간단한 단계를 따르면 코드 한 줄을 작성하지 않고도 AnythingLLM을 통해 Ollama 서버와 상호 작용할 수 있습니다. 다가오는 안내서는 시각적인 자세한 지시사항과 추가 자원을 제공하여 프로세스를 쉽게 따를 수 있게 해줄 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 터미널: 기본 명령어에 익숙한 분들을 위한
 
@@ -325,7 +586,18 @@ AnythingLLM은 로컬 LocalLLM과 손쉽게 상호 작용할 수 있도록 사�
 
 ![이미지](/assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. 코드 (Python + LangChain + Streamlit): 기술 열정가를 위해
 
@@ -335,7 +607,18 @@ AnythingLLM은 로컬 LocalLLM과 손쉽게 상호 작용할 수 있도록 사�
 
 ![image](/assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설치: Python, LangChain 및 Streamlit을 설치한 후 Ollama에 연결하는 기본 스크립트를 설정합니다.
 - 사용법: Ollama에 쿼리를 보내고 결과를 표시하는 사용자 정의 프론트엔드 응용 프로그램을 구축합니다.
@@ -347,7 +630,18 @@ AnythingLLM은 로컬 LocalLLM과 손쉽게 상호 작용할 수 있도록 사�
 
 Ollama의 간소화된 과정을 통해 원본 텍스트에서 실용적인 통찰력을 얻는 이 여정은, 저희가 사용할 수 있는 잠재력과 역량을 강조합니다. 제시된 단계와 방법론을 따라가며, 여러분도 이 잠재력에 참여하시기를 초대합니다. 여러분이 AI의 세계에 처음 발을 딛거나 보다 고급 AI 기능을 자신의 작업에 통합하려 한다면 더 나은 방향으로 나아가실 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글 전체를 통해 제공되는 자원과 링크를 탐색할 것을 장려합니다. 이들은 LocalLLM의 깊은 이해와 실용적인 적용을 위한 여정의 시작점 역할을 합니다. 튜토리얼을 살펴보고, 다양한 프론트엔드 옵션을 실험해보며, LocalLLM이 데이터와 기술과의 상호 작용을 어떻게 변화시킬 수 있는지 직접 경험해보세요.
 
@@ -357,7 +651,18 @@ AI 분야가 계속 발전함에 따라, 토론의 내용도 변화할 것입니
 
 # 추가 자원과 참고 자료
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
  <img src="/assets/img/2024-05-18-UnlockingAIPowerLocallyABeginnersGuidetoSettingUpandUsingLocalLLMswithOllama_8.png" />
 
@@ -368,7 +673,18 @@ LocalLLM 활용 및 커뮤니티 통찰:
 
 LocalLLMs에 대한 추가 정보 및 지식 확장을 위해 아래 자료들을 참고하시기 바랍니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 오픈 소스 LLMs 개요:
 
@@ -380,7 +696,18 @@ LocalLLMs에 대한 추가 정보 및 지식 확장을 위해 아래 자료들�
 - The New Stack: Ollama와 Llama 2로 로컬 LLM 설정 및 실행 방법
 - LangChain 문서: 로컬 LLMs를위한 안내서
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 벡터 데이터베이스 통찰:
 

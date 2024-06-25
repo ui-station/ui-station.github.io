@@ -3,13 +3,12 @@ title: "몇 번의 클릭으로 IAM 정책 시각화 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-VisualizeyourIAMPoliciesinJustaFewClicks_0.png"
 date: 2024-06-23 00:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-VisualizeyourIAMPoliciesinJustaFewClicks_0.png
 tag: Tech
 originalTitle: "Visualize your IAM Policies in Just a Few Clicks 👆"
 link: "https://medium.com/towards-aws/visualize-your-iam-policies-in-just-a-few-clicks-b35cf890f74d"
 ---
-
 
 우리 모두가 IAM 정책이 AWS 리소스를 보호하는 데 매우 중요하다는 것을 알고 있습니다. 그러나 IAM 정책을 시각화해 본 적이 있나요? 아니라면, 이 게시물이 도움이 될 것입니다. 이 게시물에서는 IAM 정책을 몇 번의 클릭만으로 시각화하는 방법을 살펴보겠습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-aws/visualize-your-iam-policies-in-just-a-few-
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 {
@@ -116,7 +126,18 @@ link: "https://medium.com/towards-aws/visualize-your-iam-policies-in-just-a-few-
   }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정책을 읽는 것만으로는 정책을 이해하기가 매우 어려울 것입니다. 여기에 IAM 정책 시각화가 등장합니다. IAM 정책을 시각화하여 쉽게 이해하고 필요한 경우 변경할 수 있습니다.
 
@@ -126,7 +147,18 @@ link: "https://medium.com/towards-aws/visualize-your-iam-policies-in-just-a-few-
 
 ![IAM Policies Visualization](/assets/img/2024-06-23-VisualizeyourIAMPoliciesinJustaFewClicks_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. IAM 정책을 텍스트 영역에 붙여넣으세요. 이제 IAM 정책의 시각적 표현을 "정책 시각화" 섹션에서 볼 수 있습니다. 정책을 쉽게 이해하고 필요한 경우 변경할 수 있습니다.
 
@@ -136,7 +168,18 @@ link: "https://medium.com/towards-aws/visualize-your-iam-policies-in-just-a-few-
 
 3. 조금 아래로 스크롤하면 "이 정책이 하는 일은?"을 평문으로 볼 수 있습니다. 이를 통해 정책을 간단하게 이해할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-VisualizeyourIAMPoliciesinJustaFewClicks_3.png" />
 
@@ -146,7 +189,18 @@ IAM 정책을 시각화해야 하는 이유에 대해 더 알아보세요: [여�
 
 사이트 제작자: BOUR Abdelhadi
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LinkedIn에서 연결해요: LinkedIn 프로필
 

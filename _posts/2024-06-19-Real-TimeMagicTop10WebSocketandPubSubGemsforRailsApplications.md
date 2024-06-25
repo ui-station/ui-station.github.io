@@ -3,13 +3,12 @@ title: "리얼타임 매직 레일즈 애플리케이션을 위한 WebSocket 및
 description: ""
 coverImage: "/assets/img/2024-06-19-Real-TimeMagicTop10WebSocketandPubSubGemsforRailsApplications_0.png"
 date: 2024-06-19 10:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-Real-TimeMagicTop10WebSocketandPubSubGemsforRailsApplications_0.png
 tag: Tech
 originalTitle: "Real-Time Magic: Top 10 WebSocket and Pub Sub Gems for Rails Applications"
 link: "https://medium.com/devops-dev/real-time-magic-top-10-websocket-and-pub-sub-gems-for-rails-applications-00b8c243face"
 ---
-
 
 <img src="/assets/img/2024-06-19-Real-TimeMagicTop10WebSocketandPubSubGemsforRailsApplications_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/devops-dev/real-time-magic-top-10-websocket-and-pub-su
 
 ActionCable은 레일즈의 내장된 실시간 통신 솔루션입니다. 레일즈 5에 통합되어 있어 루비로 실시간 기능을 작성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```ruby
 # app/channels/application_cable/connection.rb
@@ -38,7 +48,18 @@ AnyCable는 WebSocket과 Rails를 사용하여 실시간 기능을 효율적으�
 gem 'anycable-rails'
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. Pusher
 
@@ -56,7 +77,18 @@ end
 
 # 4. PubNub
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PubNub은 모바일, 웹 및 IoT 애플리케이션을 위한 실시간 API를 제공하는 또 다른 호스팅 서비스입니다. 확장성과 신뢰성으로 유명합니다.
 
@@ -70,9 +102,20 @@ var client = new Faye.Client('http://localhost:9292/faye');
 client.subscribe('/messages', function(message) {
   alert('New message: ' + message.text);
 });
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 6. Redis
 
@@ -82,7 +125,18 @@ client.subscribe('/messages', function(message) {
 
 사이드킥은 백그라운드 작업을 처리할 수 있으며 실시간 업데이트를 다루기 위해 ActionCable과 함께 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 8. MessageBus
 
@@ -92,7 +146,18 @@ MessageBus는 백엔드와 프론트엔드 구성 요소 모두와 작동하는 
 
 LiteCable은 Ruby 애플리케이션용으로 ActionCable과 호환되는 WebSocket 서버입니다. 가벼우며 Rails 외부에서도 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 10. 웹소켓-레일즈
 
@@ -105,7 +170,18 @@ WebsocketRails[:chat].trigger 'new_message', message
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실시간 기능은 높은 웹 애플리케이션을 만들기 위한 필수 요소가 되었습니다. 위에 나열된 젬들은 ActionCable과 같은 내장 솔루션 또는 Pusher, PubNub과 같은 제3자 서비스를 통합할 수 있는 다양한 옵션을 제공합니다.
 

@@ -3,13 +3,12 @@ title: "ESP32와 Firebase 시작하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_0.png"
 date: 2024-05-18 18:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-GettingstartedwithESP32andFirebase_0.png
 tag: Tech
 originalTitle: "Getting started with ESP32 and Firebase"
 link: "https://medium.com/firebase-developers/getting-started-with-esp32-and-firebase-1e7f19f63401"
 ---
-
 
 ## IOT
 
@@ -19,7 +18,18 @@ link: "https://medium.com/firebase-developers/getting-started-with-esp32-and-fir
 
 # 하드웨어 요구사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 튜토리얼을 완료하기 위해 다음 하드웨어가 필요합니다:
 
@@ -30,7 +40,18 @@ link: "https://medium.com/firebase-developers/getting-started-with-esp32-and-fir
 
 백엔드로 Google의 Firebase를 사용할 것이며, 시작하려면 Firebase로 이동하여 Google 계정으로 로그인하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 프로젝트를 생성하려면 추가 프로젝트 옵션을 선택하세요. 프로젝트 이름을 입력하고 적절한 이름을 선택한 후 파란색 계속 버튼을 선택하세요. 내 프로젝트를 "스마트 홈이"라고 부르겠어요.
 
@@ -40,7 +61,18 @@ link: "https://medium.com/firebase-developers/getting-started-with-esp32-and-fir
 
 ![이미지](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선택하고 Firebase 콘솔의 프로젝트 개요 페이지로 이동됩니다.
 
@@ -50,8 +82,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 ![인증 페이지](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![ESP32 Firebase Tutorial Step 1](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_5.png)
 
@@ -61,9 +103,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 다음으로 모든 센서 데이터를 저장할 데이터베이스를 만들어야 합니다. 이를 위해 좌측 상단에 있는 Realtime Database 메뉴 옵션을 선택하고 Realtime Database 페이지로 이동합니다. 데이터베이스 생성 메뉴를 초기화하려면 데이터베이스 생성 버튼을 선택하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_7.png)
 
@@ -73,8 +124,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_9.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 새로운 빈 데이터베이스가 있는 새 페이지가 나타날 것입니다. 이제 모든 준비가 끝났어요!
 
@@ -84,7 +145,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 ![이미지](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트를 API 키를 저장해야 할 두 번째 항목입니다. API 키를 얻으려면 페이지 상단 오른쪽에 있는 설정 아이콘을 선택한 다음 프로젝트 설정 메뉴 항목을 선택하여 프로젝트 설정 페이지로 이동하세요.
 
@@ -94,7 +166,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 ![Web API 키](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희들은 임베디드 애플리케이션을 시작할 준비가 되었습니다.
 
@@ -104,7 +187,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 만약 아직 VSCode를 설치하지 않았다면, 여기서 다운로드하고 설치해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 지침에 따라 PlatformIO를 설치해야 합니다. 모든 것이 잘 진행되었다면 아래 첨부된 이미지처럼 오른쪽 메뉴에 PlatformIO가 나타날 것입니다.
 
@@ -114,7 +208,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 ![PlatformIO Home Page](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_15.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 플랫폼 메뉴 옵션을 선택하고 임베디드 페이지를 선택합니다. "Esp"를 입력하여 Espressif 프레임워크를 찾은 다음 Espressif 32 옵션을 선택합니다. 설치 버튼을 선택하여 플랫폼을 설치합니다.
 
@@ -124,7 +229,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 이제 임베디드 어플리케이션을 위한 새 프로젝트를 만들어 봅시다. 홈페이지로 돌아가서 "새 프로젝트 만들기" 메뉴를 선택합니다. 프로젝트 위저드가 표시되며, 프로젝트에 이름을 지정하고 EPS32 보드를 선택해야 합니다. 이 프로젝트에서는 Arduino 라이브러리를 사용할 예정이므로 기본 설정을 유지하고 '완료'를 선택하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_18.png" />
 
@@ -134,7 +250,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 마지막으로 아래 그림과 같이 라이브러리를 프로젝트에 추가하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_20.png" />
 
@@ -144,7 +271,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 <img src="/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_21.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 애플리케이션에서 필요한 모든 라이브러리를 불러와야 해요. Arduino 라이브러리는 기본적으로 이미 있어야 합니다:
 
@@ -163,7 +301,18 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 #include "addons/RTDBHelper.h"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여러 센서에서 오는 데이터를 구분하는 데 사용할 수 있는 고유한 장치 ID를 정의해야 합니다.
 
@@ -176,56 +325,84 @@ Firebase에서 프로젝트 설정을 시작합니다. 완료되면 계속 선�
 
 참고: 임베디드 애플리케이션에 암호 정보를 하드코딩하는 것은 좋지 않은 생각입니다. 제품 케이스에서는 안전한 장치 등록 프로세스를 포함하는 장치 프로비저닝 전략을 적용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 // Wi-Fi 인증 정보
 #define WIFI_SSID "WIFI_AP"
 #define WIFI_PASSWORD "WIFI_PASSWORD"
 
-
 다음으로, Firebase 프로젝트 API 키를 저장하는 상수를 추가해야 합니다. 앞서 언급했듯이 Firebase 프로젝트 설정 페이지에서 API 키를 얻을 수 있습니다. API_KEY를 여러분의 API 키로 대체해주세요. 비슷하게 Firebase 실시간 데이터베이스 URL을 포함하여 본인의 URL로 대체해야 합니다.
-
 
 // 여러분의 Firebase 프로젝트 웹 API 키
 #define API_KEY "API_KEY"
 // 여러분의 Firebase 실시간 데이터베이스 URL
 #define DATABASE_URL "https://smart-hommie-default-rtdb.firebaseio.com"
 
-
 그 다음으로, FirebaseESP32 라이브러리의 3개 객체를 초기화해야 합니다. 이 객체는 애플리케이션을 Firebase에 연결하는 데 중요합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 유용한 몇 가지 전역 변수를 정의합니다.
 
 ```js
 // 장치 위치 설정
-String device_location = "거실"; 
+String device_location = "거실";
 // Firebase 실시간 데이터베이스 객체
-FirebaseData fbdo; 
+FirebaseData fbdo;
 // Firebase 인증 객체
-FirebaseAuth auth; 
+FirebaseAuth auth;
 // Firebase 구성 객체
-FirebaseConfig config; 
+FirebaseConfig config;
 // Firebase 데이터베이스 경로
-String databasePath = ""; 
+String databasePath = "";
 // Firebase 고유 식별자
-String fuid = ""; 
+String fuid = "";
 // 장치 부팅 후 경과된 시간을 저장합니다.
-unsigned long elapsedMillis = 0; 
+unsigned long elapsedMillis = 0;
 // 센서 업데이트 주기를 10초로 설정합니다.
-unsigned long update_interval = 10000; 
+unsigned long update_interval = 10000;
 // 초기 Firebase 업데이트를 테스트하기 위한 더미 카운터
-int count = 0; 
+int count = 0;
 // 장치 인증 상태를 저장합니다.
 bool isAuthenticated = false;
 ```
 
 첫 번째 필요한 함수는 WiFi 설정입니다. WiFi_Init()이라는 함수를 정의합니다. Arduino 프레임워크에서 제공하는 내장 WiFi API를 사용합니다. WiFi.begin() 함수를 사용하여 자격 증명을 사용하여 WiFi 연결을 초기화한 후, WiFi.status() 함수를 사용하여 연결이 성공적인지 300ms마다 확인한 후, WiFi.localIP() 함수를 사용하여 로컬 IP 주소를 출력합니다. 사용하고 싶을 수 있는 다른 WiFi 관련 기능은 Arduino WiFi API 설명서를 확인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 void Wifi_Init() {
@@ -252,7 +429,7 @@ void firebase_init() {
   config.api_key = API_KEY;
   // firebase 실시간 데이터베이스 URL 구성
   config.database_url = DATABASE_URL;
-  // WiFi 재연결 활성화 
+  // WiFi 재연결 활성화
   Firebase.reconnectWiFi(true);
   Serial.println("------------------------------------");
   Serial.println("새 사용자 가입 중...");
@@ -275,9 +452,20 @@ void firebase_init() {
   // Firebase 라이브러리 초기화
   Firebase.begin(&config, &auth);
 }
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 모든 것을 종합하면, 우리의 설정 함수는 다음과 같이 보일 것입니다:
 
@@ -327,7 +515,18 @@ Serial.println();
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내 함수를 메인 루프에 다음과 같이 배치하십시오:
 
@@ -341,7 +540,18 @@ void loop() {
 
 ![이미지](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_22.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빌드가 성공하면, 컴파일 버튼 오른쪽에 있는 업로드 버튼을 사용하여 코드를 ESP32 장치에 업로드합니다.
 
@@ -351,7 +561,18 @@ void loop() {
 
 ![database browser](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_24.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시리얼 통신 인터페이스를 사용하여 10초마다 전송되는 다음 출력값을 확인할 수도 있습니다.
 
@@ -361,7 +582,18 @@ void loop() {
 
 마지막으로 온도 센서를 통합해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, 하드웨어 연결이 올바른지 확인해야 합니다. DHT11 센서는 I2C 주변 장치를 사용하며 두 개의 핀이 필요합니다. DHT11 핀 할당을 검토해 봅시다:
 
@@ -371,8 +603,18 @@ void loop() {
 
 다음 표는 DHT22/DHT11 핀 배치를 보여줍니다. 센서가 당신을 향하고 있을 때, 핀 번호는 왼쪽부터 오른쪽까지 1부터 시작합니다. 이 예제에서는 GPIO4를 사용할 것이므로, 하드웨어 배선은 다음과 같이 될 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_28.png)
 
@@ -382,8 +624,18 @@ Now that we have our hardware configuration setup, let’s update our embedded a
 
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_30.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DHT 라이브러리를 imports에 추가해 보겠습니다.
 
@@ -404,7 +656,18 @@ DHT 라이브러리를 imports에 추가해 보겠습니다.
 DHT dht(DHTPIN, DHTTYPE);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 온도를 저장할 전역 변수를 정의해야 합니다.
 
@@ -421,7 +684,18 @@ FirebaseJson humidity_json;
 
 그리고 setup() 함수를 업데이트하여 DHT 라이브러리를 초기화해야 합니다. 이 라이브러리는 I2C 설정을 다룰 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 void setup() {
@@ -477,7 +751,18 @@ humidity_json.set("value", humidity);
 
 다음으로 예전의 database_test() 함수를 삭제하고 새로운 uploadSensorData() 함수로 교체해야 합니다. 노드 설명을 온도와 습도로 변경했습니다. 마지막으로 Firebase.set() 대신 Firebase.setJSON() 함수를 사용하여 온도와 습도 정보를 가진 두 개의 JSON 객체를 전달합니다. 마지막으로 main while 루프에서 database_test() 함수를 새로운 uploadSensorData() 함수로 교체합니다. 최종 코드 버전은 Github에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 void uploadSensorData() {
@@ -485,11 +770,11 @@ if (millis() - elapsedMillis > update_interval && isAuthenticated && Firebase.re
 {
  elapsedMillis = millis();
  updateSensorReadings();
- String temperature_node = databasePath + "/temperature"; 
+ String temperature_node = databasePath + "/temperature";
  String humidity_node = databasePath + "/humidity";
  if (Firebase.setJSON(fbdo, temperature_node.c_str(), temperature_json))
  {
- Serial.println("PASSED"); 
+ Serial.println("PASSED");
  Serial.println("PATH: " + fbdo.dataPath());
  Serial.println("TYPE: " + fbdo.dataType());
  Serial.println("ETag: " + fbdo.ETag());
@@ -510,7 +795,7 @@ if (Firebase.setJSON(fbdo, humidity_node.c_str(), humidity_json))
  Serial.println("PASSED");
  Serial.println("PATH: " + fbdo.dataPath());
  Serial.println("TYPE: " + fbdo.dataType());
- Serial.println("ETag: " + fbdo.ETag()); 
+ Serial.println("ETag: " + fbdo.ETag());
  Serial.print("VALUE: ");
  printResult(fbdo); //see addons/RTDBHelper.h
  Serial.println("------------------------------------");
@@ -536,7 +821,18 @@ void loop() {
 
 애플리케이션을 더 현실적으로 만들기 위해 데이터베이스에 흥미로운 센서 데이터를 채워 넣어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 향후 튜토리얼을 따랐다면, 장치의 위치와 장치 UID를 변경하여 서로 다른 방에서 오는 다양한 센서 데이터를 시뮬레이션할 수 있습니다. 만약 4개의 ESP32와 4개의 DHT11 센서를 가지고 있다면, 각각을 별도의 방에 설치할 수도 있습니다. 이 튜토리얼에서는 다음과 같은 접근 방식을 취했습니다.
 
@@ -546,7 +842,18 @@ void loop() {
 
 ![image](/assets/img/2024-05-18-GettingstartedwithESP32andFirebase_33.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대박이다! 당신은 ESP32 장치를 Firebase와 성공적으로 통합했어요.
 
@@ -556,7 +863,18 @@ void loop() {
 
 이 튜토리얼의 최종 코드는 여기의 Github에서 찾을 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, mobizt 팀원들에게 무한한 감사와 사랑을 전합니다. 이 멋진 FirebaseESP32 라이브러리를 우리에게 제공해줘서 정말 감사합니다. 그 안에는 Firebase Cloud Messages를 보낼 수 있는 능력을 비롯한 다양한 기능이 있습니다. 다음 IoT 프로젝트 중 하나에 매우 유용할 수 있을 거에요.
 

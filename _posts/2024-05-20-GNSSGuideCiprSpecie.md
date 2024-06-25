@@ -3,13 +3,12 @@ title: "GNSS 안내 Cipr 스펙"
 description: ""
 coverImage: "/assets/img/2024-05-20-GNSSGuideCiprSpecie_0.png"
 date: 2024-05-20 21:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-GNSSGuideCiprSpecie_0.png
 tag: Tech
 originalTitle: "GNSS Guide: Cipr Specie"
 link: "https://medium.com/@mgxsgnssart/gnss-guide-cipr-specie-b3f96d0a4d13"
 ---
-
 
 MGXS의 GNSS 수집에 대한 전체 가이드를 보려면 'The Guide to GNSS'를 참조하세요. 이 문서는 Cipr 종 및 관련 아종에 대한 개요입니다. Cipr GNSS는 과학 소설에 묘사된 안드로이드 존재와 가장 비슷하다고 관찰되었습니다.
 
@@ -21,7 +20,18 @@ MGXS의 GNSS 수집에 대한 전체 가이드를 보려면 'The Guide to GNSS'�
 
 # 아종: Cipr AX
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Count: 156
 - Description: Cipr AX GNSS features sharp shapes with white milky glass and thin eyes of varying colors, accented by iron or gold and black or white parts. They can be either symmetrical or asymmetrical.
@@ -33,7 +43,18 @@ MGXS의 GNSS 수집에 대한 전체 가이드를 보려면 'The Guide to GNSS'�
 
 ## Subspecies: Cipr Caos
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 카운트: 169
 - 설명: Cipr Caos GNSS는 두꺼운 원형의 대칭적 또는 비대칭적인 형태로, 흰 우유껌색 유리, 다양한 색상의 얇은 눈, 그라데이션 악센트가 있는 철 또는 금 소재, 검은색 또는 흰색 부분이 특징입니다.

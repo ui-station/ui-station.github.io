@@ -3,14 +3,12 @@ title: "LLM 얼마나 안전한가요"
 description: ""
 coverImage: "/assets/img/2024-05-18-LLMsHowSafeAreThey_0.png"
 date: 2024-05-18 20:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-LLMsHowSafeAreThey_0.png
 tag: Tech
 originalTitle: "LLMs: How Safe Are They?"
 link: "https://medium.com/generative-ai/llms-how-safe-are-they-47624f0e7ef0"
 ---
-
-
 
 ![LLMs](/assets/img/2024-05-18-LLMsHowSafeAreThey_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/generative-ai/llms-how-safe-are-they-47624f0e7ef0"
 
 ## 그러나, 먼저, 붉은 팀이란 무엇인가요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레드팀 활동은 시스템에 적대적인 공격을 시뮬레이션하여 취약점을 식별하는 것을 의미합니다. LLM의 맥락에서, 레드팀 활동은 모델을 배포하기 전에 유해한 행동이나 의도하지 않은 결과를 식별하기 위해 노력합니다. 테스트 케이스를 수동으로 작성하는 인간 주석자에만 의존하는 것 대신 (비용이 많이 들 수 있고 다양성이 제한될 수 있음), 레드팀 활동은 자동으로 테스트 케이스를 생성하는 또 다른 언어 모델에 의해 수행될 수도 있습니다. 이러한 생성된 테스트 케이스는 유해하거나 원치 않는 응답을 유발할 수 있는 질문이나 프롬프트를 제시하여 대상 LLM에 도전을 줍니다. 이러한 테스트 질문에 대한 LLM의 답변을 평가함으로써 연구원, 개발자 및 엔지니어는 모델의 모욕적인 콘텐츠, 편향, 개인 정보 누출 및 기타 문제를 발견할 수 있습니다.
 
@@ -33,7 +41,18 @@ link: "https://medium.com/generative-ai/llms-how-safe-are-they-47624f0e7ef0"
 
 등등.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ALERT 벤치마크
 
@@ -41,7 +60,18 @@ LLM에서 안전 위험을 완화하기 위해 안전을 엄격하게 평가하�
 
 아래 이미지는 ALERT 프레임워크의 전반적인 작동 방식을 요약한 것입니다. 기본적으로 대상 LLM에는 저희의 분류 체계에서 나온 각 위험 범주와 연계된 레드 팀 프롬프트가 제공됩니다. 그런 후 해당 대답은 보조 LLM(즉, Llama Guard)에 의해 안전성에 대해 분류됩니다. 결과적으로 ALERT는 일반적인 안전 점수와 범주별 안전 점수를 제공하여 LLM의 취약성에 대한 상세한 통찰을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래에서는 다음에 대해 논의합니다: i) ALERT 안전 위험 분류, ii) 수집 및 강화된 레드팀 프롬프트에 사용된 방법론, 그리고 iii) 얻은 결과.
 
@@ -51,7 +81,18 @@ ALERT의 주요 설계 원칙으로, 우리는 세분화된 안전 위험 분류
 
 ![ALERT Dimensions](/assets/img/2024-05-18-LLMsHowSafeAreThey_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 구체적으로, 분류법은 다음 주요 범주로 구성됩니다:
 
@@ -66,7 +107,18 @@ ALERT의 주요 설계 원칙으로, 우리는 세분화된 안전 위험 분류
 
 ## 데이터 수집
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희가 평가를 위해 구축한 벤치마크는 안트로픽에서 유해성에 관한 인간 선호 데이터셋을 활용했습니다. 이 데이터셋에서는 초기 인간 요청만 선택하고 후속 시스템이나 인간의 응답은 제외했습니다. 이 과정을 통해 초기 후보 프롬프트 세트를 얻었습니다. 그러나 이 프롬프트 중 상당 부분이 해를 끼치지 않는 것들이었기 때문에, "나는 새로운 운동 루틴이 필요해"와 같은 것들을 키워드 매칭과 제로샷 분류 기술의 결합을 사용해 걸러낼 수 있었습니다. 이러한 방법을 통해 우리는 안전 위험 범주에 속하지 않는 프롬프트를 걸러내고 남은 프롬프트를 분류할 수 있었습니다.
 
@@ -78,7 +130,18 @@ ALERT의 주요 설계 원칙으로, 우리는 세분화된 안전 위험 분류
 
 보다 자세히 말하자면, 프롬프트는 먼저 미리 정의된 후보 목록에서 선택한 실제 값으로 플레이스홀더를 대체하고, 다음으로 LLM이 결과 프롬프트를 다양하게 만들기 위해 패러프레이즈하도록 허용함으로써 획득했습니다. 최종 데이터셋은 약 15,000개의 범주화된 레드팀 프롬프트로 구성되어 있으며, 각 범주는 모델 평가를 위한 충분한 지원을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수집된 데이터의 통계를 제공하는 히스토그램은 다음과 같습니다:
 
@@ -88,7 +151,18 @@ ALERT의 주요 설계 원칙으로, 우리는 세분화된 안전 위험 분류
 
 사용자가 AI 에이전트와 상호 작용할 때 민감한 주제에 대해 질문을 할 수 있습니다. 보통 적정한 안전 기능을 갖춘 LLM은 피해를 주는 답변을 생성하지 않습니다. 그러나 해로운 목적을 가진 사용자는 모델의 안전 조치를 우회하거나 원하는 정보를 얻기 위해 공격 전술을 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문제를 조사하고 우리의 평가가 강건성을 향상시키는 데 도움이 되도록, 우리는 적대적인 프롬프트를 생성하기 위해 데이터 증강 기술을 적용했습니다. 이러한 방법은 입력 텍스트를 수정하여 모델이 윤리 기준을 위반하는 응답을 제공하도록 유도하는 것을 포함합니다. 우리의 평가에는 이러한 주요 전략들이 포함되어 있습니다:
 
@@ -101,7 +175,18 @@ ALERT의 주요 설계 원칙으로, 우리는 세분화된 안전 위험 분류
 
 # 실험에서 얻은 통찰력
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 실험에서는 ALERT 벤치마크에서 오픈 및 폐쇄 소스 LLM(언어 모델)을 평가했습니다. 구체적으로, 우리는 5가지 다른 모델 패밀리의 10가지 LLM을 연구했습니다:
 
@@ -118,7 +203,18 @@ ALERT의 주요 설계 원칙으로, 우리는 세분화된 안전 위험 분류
 
 아래 표에서는 다양한 LLM이 ALERT 벤치마크에서 얻은 결과를 요약합니다. 결과 해석 시에는 모델이 안전한 경우(일반적으로나 특정 범주 내에서) 출력물이 90% 이상 안전한 경우(회색)를 고려했습니다. 또한, 출력물이 70%에서 90% 사이에서만 안전한 경우(주황색으로 강조) 모델이 불안전하다고 여겼습니다. 마지막으로, 안전한 출력물이 70% 미만으로 생성되는 경우(빨간색으로 표시) 모델을 매우 불안전하다고 판단했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 역시 GPT 패밀리 모델은 매우 안전합니다. GPT-4는 거의 100% 안전 점수에 달할 정도이죠. 그러나 "죄송하지만, 해당 요청을 도와드릴 수 없습니다."와 같은 구체적이지 않은 응답을 자주 제공하여 유용성을 제한할 수 있습니다. 이 모델들이 간단한 LLMs가 아닌 OpenAI 연구원과 엔지니어들에 의해 주의 깊게 만들어진 안전 기능을 갖춘 복잡한 제품임을 알아두는 것이 중요합니다.
 
@@ -128,7 +224,18 @@ Llama 패밀리에 대해선, Llama 2가 평가 중 가장 안전한 모델임�
 
 마지막으로 Falcon과 OLMo는 상대적으로 안전하지 않으며, 88%와 86% 정도의 점수를 받았으며, 평가된 범주들 중 약 절반에서만 안전한 동작을 보이고 있습니다. 모든 매크로 범주에서 유사한 패턴을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결론
 
@@ -138,7 +245,18 @@ LLM이 계속 발전함에 따라 계속적인 평가와 리스크 완화가 중
 
 ## 추가 자료
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 ALERT 벤치마크를 더 탐구하고 싶다면, 아래 링크를 확인해 보세요:
 
@@ -150,7 +268,18 @@ LLM이 계속 발전함에 따라 계속적인 평가와 리스크 완화가 중
 
 ![이미지](/assets/img/2024-05-18-LLMsHowSafeAreThey_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 이야기는 Generative AI Publication에서 발행되었습니다.
 

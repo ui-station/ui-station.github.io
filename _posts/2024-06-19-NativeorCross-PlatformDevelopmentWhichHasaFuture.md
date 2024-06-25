@@ -3,13 +3,12 @@ title: "네이티브 또는 크로스 플랫폼 개발 - 미래는 어디에 있
 description: ""
 coverImage: "/assets/img/2024-06-19-NativeorCross-PlatformDevelopmentWhichHasaFuture_0.png"
 date: 2024-06-19 11:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-NativeorCross-PlatformDevelopmentWhichHasaFuture_0.png
 tag: Tech
 originalTitle: "Native or Cross-Platform Development — Which Has a Future?"
 link: "https://medium.com/@doubletapp/native-or-cross-platform-development-which-has-a-future-801c66f00f40"
 ---
-
 
 DUMP IT 컨퍼런스에서 Doubletapp 팀이 미니 리서치 스터디를 실시했어. 우리의 계정 매니저와 클라이언트들 사이에서 자주 이야기되는 기술에 대해 몇 가지 질문을 했고, 여러 회사 전문가들의 의견을 궁금해 했어. 여기에 그들의 응답이 있어요.
 
@@ -20,7 +19,18 @@ DUMP IT 컨퍼런스에서 Doubletapp 팀이 미니 리서치 스터디를 실�
 Evrone의 리드 마케팅 매니저
 나는 Flutter를 100% 선택할 거야. 네이티브 개발은 너무 비실고 시간이 많이 걸릴 수 있지만, Flutter는 앱을 세 플랫폼에 동시에 출시할 수 있게 해줘. 상당히 경제적이고, 약간 무리수긴 하지만, MVP를 빨리 만들고 테스트할 준비가 될 거야.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프론트엔드 개발자, Yandex
 간단한 네이티브 쉘을 가져와서 앱이 필요에 따라 Vue 또는 React에서 개발하겠어요.
@@ -33,7 +43,18 @@ Evrone의 리드 마케팅 매니저
 프론트엔드 개발자, Yandex
 저는 고부하 애플리케이션에는 네이티브 개발이 더 적합하다고 생각해요. Flutter는 MVP 및 간단한 앱에 적합하며 장기적인 지원이 덜 필요한 경우에 좋아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프론트엔드 팀 리드, 긍정적인 기술들
 저는 Flutter가 프로토타이핑이나 가설을 빠르게 테스트할 때 적합하다고 생각해요.
@@ -46,7 +67,18 @@ Flutter 리드, Doubletapp
 
 # 앞으로 사용될 기술들은 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 팀 리드, 소브콤뱅크
 저는 기업 세계에서 왔는데, 우리에게는 미래가 명백합니다. 다음 5년, 10년, 15년 동안은 자바일 것입니다. 트렌디한 언어를 배워 최신 기술을 따라가려는 학생들에게는 위험할 수도 있습니다. 일자리 기회, 월급 기대치, 프로젝트 관심, 프로젝트 다양성을 놓칠 수도 있습니다. 끈질긴 성능을 위한 시험된 기술로는 C#, 자바, C++이 있습니다.
@@ -60,11 +92,22 @@ Golang. 유망한 언어라고 생각합니다. 자바도 계속 주목받을 �
 채용 담당자, Evrone
 Rust와 같은 강력한 언어들이 더 인기를 얻을 것입니다. 높은 부하 서비스에 사용할 것입니다. 이미 그런 언어가 많이 사용되고 있습니다. 파이썬과 Go도 인기가 높아질 것입니다. 백엔드는 C++, .NET, 자바로 계속되며, 프론트엔드는 여전히 React를 사용할 것입니다. 휴대폰 개발에서는 Flutter와 네이티브 앱이 사용될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CTO, Doubletapp
 휴대폰 앱 개발에서 우리는 새로운 크로스 플랫폼 개발의 새로운 급격한 한류인 Kotlin Multiplatform을 목격하고 있습니다. 이는 Android 및 iOS 애플리케이션 간에 코드를 공유할 수 있도록 하며, UI 및 시스템 상호작용을 쓰기 위해 네이티브 코드를 사용합니다. 이러한 방식으로, 다른 크로스 플랫폼 프레임워크와 비교하여 성능과 기능을 잃지 않습니다. 그러나 Flutter는 작은 애플리케이션 및 MVP를 개발하는 데 매우 인기가 있습니다. 머신러닝에서는 Python이 여전히 지위를 유지하고 있으며, PyTorch가 다른 프레임워크 중에서도 자신감있게 선도하고 있습니다.
-백엔드에서는 Go의 사용이 증가하고 있습니다. Python은 매우 인기가 있으며, Java도 그 위치를 유지하고 있습니다. 
+백엔드에서는 Go의 사용이 증가하고 있습니다. Python은 매우 인기가 있으며, Java도 그 위치를 유지하고 있습니다.
 스택에 상관없이, 우리는 AI의 활용이 발전하는 것을 기대하고 있습니다.
 
 # 다른 이야기들을 읽어보세요:

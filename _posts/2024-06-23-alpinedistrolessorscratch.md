@@ -3,13 +3,12 @@ title: "Alpine, Distroless, 아니면 Scratch 도커 이미지 선택 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-23-alpinedistrolessorscratch_0.png"
 date: 2024-06-23 00:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-alpinedistrolessorscratch_0.png
 tag: Tech
 originalTitle: "alpine, distroless or scratch?"
 link: "https://medium.com/google-cloud/alpine-distroless-or-scratch-caac35250e0b"
 ---
-
 
 저는 최근 온라인 부티크 샘플 앱의 4개 Golang 앱을 알파인에서 스크래치로 이주했어요. 그런 과정에서 배운 멋진 것들이 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/google-cloud/alpine-distroless-or-scratch-caac35250e0b
 
 알파인보다 더 나은 것을 할 수 있을까요? 그럼! distroless가 도움이 될 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 많고 더 나은 것을 할 수 있을까요? 네! scratch가 도움이 될 수 있어요.
 
@@ -41,7 +51,18 @@ COPY --from=0 /go/src/github.com/kelseyhightower/app/helloworld .
 ENTRYPOINT ["/helloworld"]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 크기
 
@@ -57,7 +78,18 @@ helloworld   scratch      287ad0140c46   32 minutes ago   7.04MB
 
 모두 매우 가벼우며 작습니다. Alpine은 더 크며, 더 많은 패키지를 제공하기 때문에 Scratch보다 두 배 더 큽니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 포스트인 "이미지 크기는 핵심이 아니다"는 이미지 크기에만 집중해서는 안 된다는 이유를 설명합니다. 작은 컨테이너 이미지를 가지는 것은 종종 성능이 더 우수하고 보안 수준이 높다는 좋은 신호입니다.
 
@@ -67,66 +99,99 @@ helloworld   scratch      287ad0140c46   32 minutes ago   7.04MB
 
 알파인 (17 개 패키지):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-이름                    버전               유형        
-alpine-baselayout       3.4.3-r2              apk          
-alpine-baselayout-data  3.4.3-r2              apk          
-alpine-keys             2.4-r1                apk          
-apk-tools               2.14.0-r5             apk          
-busybox                 1.36.1-r15            apk          
-busybox-binsh           1.36.1-r15            apk          
-ca-certificates-bundle  20230506-r0           apk          
-helloworld              (devel)               go-module    
-libc-utils              0.7.2-r5              apk          
-libcrypto3              3.1.4-r5              apk          
-libssl3                 3.1.4-r5              apk          
-musl                    1.2.4_git20230717-r4  apk          
-musl-utils              1.2.4_git20230717-r4  apk          
-scanelf                 1.3.7-r2              apk          
-ssl_client              1.36.1-r15            apk          
-stdlib                  go1.22.2              go-module    
+이름                    버전               유형
+alpine-baselayout       3.4.3-r2              apk
+alpine-baselayout-data  3.4.3-r2              apk
+alpine-keys             2.4-r1                apk
+apk-tools               2.14.0-r5             apk
+busybox                 1.36.1-r15            apk
+busybox-binsh           1.36.1-r15            apk
+ca-certificates-bundle  20230506-r0           apk
+helloworld              (devel)               go-module
+libc-utils              0.7.2-r5              apk
+libcrypto3              3.1.4-r5              apk
+libssl3                 3.1.4-r5              apk
+musl                    1.2.4_git20230717-r4  apk
+musl-utils              1.2.4_git20230717-r4  apk
+scanelf                 1.3.7-r2              apk
+ssl_client              1.36.1-r15            apk
+stdlib                  go1.22.2              go-module
 zlib                    1.3.1-r0              apk
 ```
 
 distroless (5 개):
 
 ```js
-이름        버전          유형        
-base-files  12.4+deb12u5     deb          
-helloworld  (devel)          go-module    
-netbase     6.4              deb          
-stdlib      go1.22.2         go-module    
+이름        버전          유형
+base-files  12.4+deb12u5     deb
+helloworld  (devel)          go-module
+netbase     6.4              deb
+stdlib      go1.22.2         go-module
 tzdata      2024a-0+deb12u1  deb
 ```
 
 chainguard (7 개):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-이름                    버전                    유형        
-알파인-베이스레이아웃-데이터  3.6.4-r0                 apk          
-알파인-키               2.4-r1                   apk          
-알파인-릴리스            3.20.0_alpha20240329-r0  apk          
-CA-인증서 번들         20240226-r0              apk          
-헬로우월드              (개발 중)                  go-모듈    
-표준 라이브러리          go1.22.2                 go-모듈    
+이름                    버전                    유형
+알파인-베이스레이아웃-데이터  3.6.4-r0                 apk
+알파인-키               2.4-r1                   apk
+알파인-릴리스            3.20.0_alpha20240329-r0  apk
+CA-인증서 번들         20240226-r0              apk
+헬로우월드              (개발 중)                  go-모듈
+표준 라이브러리          go1.22.2                 go-모듈
 시간대 데이터            2024a-r1                 apk
 ```
 
 기본 (2 개의 패키지):
 
 ```js
-이름        버전   유형        
-헬로우월드  (개발 중)   go-모듈    
+이름        버전   유형
+헬로우월드  (개발 중)   go-모듈
 표준      go1.22.2  go-모듈
 ```
 
 우리는 이제 이들을 우리의 필요에 맞게 현명하게 사용할 수 있어요. 사용하는 프로그래밍 언어에 따라 무엇이 들어있는지 정확히 알아야 하는 것이 정말 멋지고 중요하죠?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # CVEs
 
@@ -148,7 +213,18 @@ Total: 2 (UNKNOWN: 0, LOW: 2, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 | | | | | | | |
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서는 낮은 수준의 보안이지만 그래도 중요합니다. 여전히 자신의 앱 패키지의 CVEs를 다루어야 하므로 기본 이미지에서 이를 제거하는 것은 항상 큰 이점입니다.
 
@@ -166,7 +242,18 @@ docker run \
     CONTAINER_IMAGE
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 docker exec 또는 kubectl exec를 실행할 수 있는 유일한 컨테이너 이미지는 alpine 이미지입니다. 다른 이미지들은 셸을 갖고 있지 않기 때문에 이 작업을 허용하지 않습니다. 보안적인 측면에서 셸이 없는 것은 보안 포지션을 개선하는 좋은 실천법이죠 (다시 말해, 공격 표면을 줄입니다).
 
@@ -176,7 +263,18 @@ docker run \
 
 이것이 바로 쿠버네티스 프로젝트가 이미 4년간 진행해 온 작업입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 libc가 필요하다면 gcr.io/distroless/base-nossl 또는 libssl이 포함된 gcr.io/distroless/base를 사용할 수 있어요.
 
@@ -188,7 +286,18 @@ distroless 주변에서 더 많은 노력들도 있어요:
 - RedHat은 UBI Micro를 가지고 있어요.
 - Ubuntu는 Chiseled을 가지고 있어요 — 이제 Microsoft가 dotnet 컨테이너 이미지와 함께 포함시켰어요. 예를 들어, 저는 이 컨테이너와 다른 컨테이너를 alpine에서 chiseled로 마이그레이션 했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 클러스터 내에서 배포하는 외부 컨테이너에는 distroless flavor를 요청하십시오. 예를 들어, Jib를 사용하는 경우, 이제 distroless를 기본으로 사용합니다. Istio의 경우 Istio 사이드카 프록시에 distroless를 선택적으로 사용할 수 있습니다.
 

@@ -3,13 +3,12 @@ title: "리액트 네이티브에서의 애니메이션으로 구현한 타이�
 description: ""
 coverImage: "/assets/img/2024-05-20-TheMagicofAnimatedTypingTransitioninReactNative_0.png"
 date: 2024-05-20 16:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TheMagicofAnimatedTypingTransitioninReactNative_0.png
 tag: Tech
 originalTitle: "The Magic of Animated Typing Transition in React Native"
 link: "https://medium.com/javascript-in-plain-english/the-magic-of-animated-typing-transition-in-react-native-1df5d74b8541"
 ---
-
 
 제 웹사이트에 방문해주셔서 감사합니다!
 
@@ -19,7 +18,18 @@ link: "https://medium.com/javascript-in-plain-english/the-magic-of-animated-typi
 
 이 매혹적인 효과를 어떻게 달성하는지 단계별로 코드를 자세히 살펴보면서 시작해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 초기 설정: 필요한 모듈을 가져와 컴포넌트의 props를 정의하는 것으로 시작합니다.
 - 상태 관리: 컴포넌트는 React 훅 (useState 및 useRef)을 사용하여 상태와 참조를 관리합니다. text 상태는 현재 표시된 텍스트를 보유하고, completed는 입력이 완료되었는지를 나타내며, cursorColor는 커서 표시 여부를 관리합니다. 또한 textIndex를 추적하여 다음에 표시할 문자를 파악합니다.
@@ -47,13 +57,21 @@ export default AnimatedTyping;
 
 컴포넌트에서 AnimatedTyping을 가져와 원하는 텍스트 및 onComplete 콜백과 함께 사용하면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```jsx
-<AnimatedTyping
-    text={query}
-    onComplete={handleAnimationDefaultComplete}
-/>
+<AnimatedTyping text={query} onComplete={handleAnimationDefaultComplete} />
 ```
 
 저희와 함께 이 자극적인 애니메이션 기술을 살펴봐 주셔서 감사합니다! LinkedIn에서 의견과 피드백을 남겨주시면 감사하겠습니다. 연락해서 경험을 공유해주세요. 즐거운 코딩하세요!
@@ -62,7 +80,18 @@ export default AnimatedTyping;
 
 In Plain English 커뮤니티의 일원이 되어 주셔서 감사합니다! 떠나시기 전에:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 저자를 응원하고 팔로우하기 잊지 마세요! 👏️️
 - 저희를 팔로우하세요: X | LinkedIn | YouTube | Discord | 뉴스레터

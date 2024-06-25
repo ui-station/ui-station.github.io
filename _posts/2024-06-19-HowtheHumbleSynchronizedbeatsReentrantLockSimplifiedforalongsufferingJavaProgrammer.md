@@ -3,13 +3,12 @@ title: "포기하지 않고 노력하시는 자바 프로그래머를 위해 단
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtheHumbleSynchronizedbeatsReentrantLockSimplifiedforalongsufferingJavaProgrammer_0.png"
 date: 2024-06-19 21:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtheHumbleSynchronizedbeatsReentrantLockSimplifiedforalongsufferingJavaProgrammer_0.png
 tag: Tech
 originalTitle: "How the Humble Synchronized beats ReentrantLock.. Simplified for a long suffering Java Programmer"
 link: "https://medium.com/@apusingh1967/how-synchronized-beats-reentrantlock-simplified-for-a-long-suffering-java-programmer-c83d069a6fc0"
 ---
-
 
 2009년에는 독일 철도 기업 직원 교대 관리를 위해 중요한 미션이었고, Java 1.5를 사용하기로 선택했습니다. 제네릭스가 도입되었고, 병행성 유틸리티들이 등장했습니다. 기본적으로 ReentrantLock을 사용하여 다중 스레드 시나리오를 관리하기 시작했습니다. 철도 회사는 여러 사용자가 동시에 데이터에 액세스해야 하는 필요가 있었는데, 예를 들어 여러 사무원이 기차 노선의 일부에 (기관사, 안내원, 요리사, 서빙원) 업무를 할당하려고 했습니다. 실제로 오래된 synchronized 키워드는 폐기되었다고 여겨졌습니다. 하지만 실제로는 그렇지 않았습니다. 그리고 결과적으로 대부분의 상황에서 synchronized가 새롭고 반짝거리는 ReentrantLock보다 우수하다는 것이 밝혀졌습니다.😊
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@apusingh1967/how-synchronized-beats-reentrantlock-sim
 
 ## 대부분의 상황에서 synchronized가 ReentrantLock보다 우수합니다 😊
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CopyOnWriteArrayList에서 코드를 인용합니다. Java 1.6부터 대부분의 API 개발자들이 ReentrantLock을 사용하기 시작했는데, 이를 사용하는 것이 새롭고 멋진 것으로 여겨졌기 때문입니다. 그러나 Java 1.9에서는 synchronized로 다시 되돌아가기 시작했습니다 (ReentrantLock에서 synchronized로 다시 되돌아감 참조). 이는 synchronized 작동 방식에 대한 이해 부족 및 Doug Lee와 같은 Java Guru들이 자신을 적용하지 않았다는 점을 반영합니다. ReentrantLock 작동 방식에 대해 설명할 것입니다. 이 글에서 lock 객체 및 synchronized를 사용한 코드와 'lock'에 대한 간결한 설명이 있는 Java 21 버전을 살펴보십시오.
 
@@ -27,7 +37,18 @@ CopyOnWriteArrayList에서 코드를 인용합니다. Java 1.6부터 대부분�
 
 하지만 문제는, 왜 고대의 synchronized가 어떤 상황에서 새롭고 멋진 ReentrantLock보다 우수한 것인가입니다?!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 짧은 답변: synchronized는 JVM이 관리하는 객체로, JVM은 이를 통해 락 상승 및 감소와 같은 다양한 기능을 동적으로 처리할 수 있습니다. 반면 ReentrantLock은 비교 및 설정을 사용하는 일반적인 자바 코드에 갇혀 있습니다. synchronized 키워드를 사용할 때, JVM은 biased lock(더 이상 사용되지 않음), thin lock 또는 fat lock을 사용할지 여부를 결정합니다. 이 세 가지에 대해 알아봅시다.
 
@@ -37,7 +58,18 @@ JVM은 얼마나 많은 경합이 있는지에 대한 정보를 수집합니다.
 
 ## Biased Lock
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 'Synchronize' 메서드를 사용하여 여러 스레드가 공유 자원을 안전하게 사용할 수 있습니다. 이 메서드를 사용하면 잠금 객체의 머리글에 스레드 ID가 저장되어 공유 자원에 대한 액세스가 제어됩니다. 아래 이미지에서 여러 사용자(스레드)가 동일한 전화 부스를 사용하려고 하지만 한 번에 하나의 사용자만 사용할 수 있습니다.
 
@@ -46,12 +78,23 @@ JVM은 얼마나 많은 경합이 있는지에 대한 정보를 수집합니다.
 이 접근법은 매우 빠릅니다. 같은 스레드가 동일한 잠금을 호출할 때마다 간단하게 다음과 같이 작동합니다:
 
 ```js
-if(threadId == notedThreadId) {
+if (threadId == notedThreadId) {
   // 계속 진행
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바15부터 Biased Locks는 사용되지 않으며 현재는 아마도 제거되었습니다. 자바 ≤ 1.3 시대에는 Java 컬렉션이 동기화되어 있었기 때문에 유용했습니다: Vector, Hashtable. 그러나 대부분 단일 스레드로 사용됩니다. 동기화되지 않은 java.util ArrayList, HashSet, HashMap 등을 사용하면 됩니다. 이러한 컬렉션은 엄격히 단일 스레드 안전하며 biased lock는 JVM에서 코딩하고 유지하는 비용이 아마도 그 가치가 없을 것입니다.
 
@@ -61,7 +104,18 @@ if(threadId == notedThreadId) {
 
 현재 biased lock가 사용되지 않으므로 스레드가 lock을 획들하려고 하면 직접 thin lock을 먼저 사용하게 됩니다. Thin lock은 비교적 무거운 작업입니다. 비교 및 설정이 필요합니다. 그러나 CAS는 여전히 CPU 명령어이며 시스템 호출이 아닙니다. 시스템 호출은 비용이 많이 듭니다. 여기에 비교 및 설정을 사용하여 thin lock을 획들하는 의사 코드 예시가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public class Person {
@@ -92,8 +146,18 @@ public class Person {
 
 ## 두꺼운 락
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Fat Lock은 OS 뮤텍스를 사용합니다. 이것은 시스템 콜을 의미합니다. Thin Lock은 CAS만 사용합니다. 즉, 하드웨어 명령어입니다. 시스템 콜이 연관되지 않습니다. 이는 CPU 상태 변경이 필요하지 않음을 의미합니다. 프로그램 카운터, 베이스 포인터, 레지스터 등이 그것입니다. 하지만 Fat Lock은 시스템 콜이고, 시스템 콜은 비용이 많이 듭니다. 하지만 이해할 필요는 없습니다. 왜냐하면 우리는 애플리케이션 개발자이고 JVM C++ 프로그래머는 아니기 때문입니다.
 
@@ -103,19 +167,43 @@ Fat Lock은 스레드를 스레드의 대기 링크드 리스트에 넣습니다
 
 ## 그래서 Intrinsic (synchronized) Locking이 대부분에서 ReentrantLock을 능가할 수 있는 이유는 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내재 락은런타임에서 계산된 경합에 따라 동적으로 thin lock 또는 fat lock을 수행하거나 스케일을 조절하거나 해제할 수 있습니다. 반면 재진입 락은 그렇지 못합니다. 이는 내재 락이 JVM 객체이기 때문입니다. 재진입 락은 그냥 일반적인 자바 코드에 불과합니다. 이것을 열어서 그 소스 코드를 읽을 수 있습니다.
 
 ## 내재 및 재진입 락을 언제 사용해야 하는가
 
 재진입락 사용 시점:
+
 - tryLock, lockInterruptibly, 시간 제한이 있는 tryLock, 락의 공정성과 같은 고급 기능이 필요할 때
 
 내재 락 사용 시점:
+
 - (재)-세상에서 가장 위대한 자바 프로그래머 Doug Lee의 말을 인용하여
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 package java.util.concurrent;
@@ -136,10 +224,20 @@ public class CopyOnWriteArrayList<E> {
 
 일부 사람들은 Java21 프로젝트 Loom을 통해 JVM이 내포된 잠금보다 ReentrantLock을 사용할 때 더 잘 작동할 수 있다고 의견을 제시합니다.
 
-## 참고문헌: 
+## 참고문헌:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여러 유형의 JVM 락
 JVM에서 동기화 최적화에 대한 심층적인 탐구

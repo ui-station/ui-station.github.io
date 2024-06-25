@@ -18,7 +18,18 @@ ALE은 전역 해석 방법입니다. PDP와 비슷하게 모델에 포착된 �
 - ALE을 생성하는 데 사용되는 알고리즘을 형식적으로 정의합니다.
 - Alibi Explain 패키지를 사용하여 ALE을 적용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 타 도움말 비교했을 때 SHAP, LIME, ICE Plots, 그리고 프리드만의 H 통계치와 달리, ALE(Accumulated Local Effects)은 다중공선성에 강건한 해석을 제공합니다.
 해당 주제에 대한 이 비디오도 즐길 수 있을 것입니다. 그리고 더 배우고 싶다면, XAI with Python과 같은 내 코스도 확인해보세요. 뉴스레터 가입 시 무료로 액세스할 수 있습니다.
@@ -27,7 +38,18 @@ ALE은 전역 해석 방법입니다. PDP와 비슷하게 모델에 포착된 �
 
 우리는 전복 데이터셋을 사용하여 ALE이 어떻게 작용하는지 이해할 것입니다. 전복은 조개류의 한 종입니다. 우리는 조개 안의 반지 수를 예측하고 싶은데, 그때 조개 쉘 무게와 살 총량(살의 무게)과 같은 특징을 사용합니다. 이 데이터셋 내 모든 숫자형 특징에 대한 상관 관계 열지도를 보여주는 그림 1을 확인하세요. 우리는 상당히 상관관계가 높은 특징들을 다뤄야 합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_1.png" />
 
@@ -38,7 +60,18 @@ ALE은 전역 해석 방법입니다. PDP와 비슷하게 모델에 포착된 �
 
 다시 말해, 이러한 방법을 사용하면 발생하기 힘든 또는 불가능한 특성 쌍이 발생할 수 있습니다. 이 문제를 해결하는 핵심은 범위를 고려하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_2.png)
 
@@ -48,8 +81,18 @@ ALE은 전역 해석 방법입니다. PDP와 비슷하게 모델에 포착된 �
 
 상관관계를 피하기 위해 이 간격 내에서 조개 무게의 영향을 결정할 수 있습니다. 이를 위해 우리는 간격 내 모든 인스턴스에서 두 개의 샘플을 만듭니다. 이를 샘플 쌍이라고 부릅니다. Figure 4에서 볼 수 있듯이, 간격 내에서의 최소 및 최대 조개 무게 값으로 대체하여 이를 생성합니다. 다른 모든 특성 값은 동일하게 유지됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_4.png)
 
@@ -59,8 +102,18 @@ ALE은 전역 해석 방법입니다. PDP와 비슷하게 모델에 포착된 �
 
 좋아요, 이는 특정 간격 내에서의 효과를 제공합니다. 전반적인 추세를 얻으려면 기능 범위 내의 모든 연속적인 간격에 대해 이 작업을 수행하고 개별 효과를 더해야 합니다. 새로운 간격으로 이동할 때마다 효과를 누적 효과에 추가하고 점을 그립니다. 이를 수행하면 껍질 무게에 대한 ALE를 얻을 수 있습니다. 이제 이름의 유래를 확인할 수 있습니다. 간겭(지역) 내에서 기능 효과를 누적하고 있는 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ALEs를 바라보는 또 다른 방법은 적분 또는 적어도 적분을 근사하는 Riemann 합과 유사하다는 것입니다. 지역 효과는 함수의 변화율 또는 도함수입니다. 효과를 누적함으로써 우리는 블랙 박스 모델 곡선을 찾아갑니다. 간격이 작아질수록 우리는 진정한 곡선에 더 가까워집니다. 안타깝게도 ALE에 대해 우리는 간격을 무한히 작게 만들 수 없습니다.
 
@@ -70,8 +123,18 @@ ALEs를 바라보는 또 다른 방법은 적분 또는 적어도 적분을 근�
 
 ALE에 대한 수학적 공식이 있습니다. 이번에는 그걸 넘기겠습니다. 그래도 ALE 알고리즘을 좀 더 형식적으로 정의하는 것은 가치가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Deep Dive on Accumulated Local Effect Plots with Python](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_7.png)
 
@@ -81,8 +144,18 @@ ALE에 대한 수학적 공식이 있습니다. 이번에는 그걸 넘기겠습
 
 ALE을 적용하기 위해 alibi 패키지를 사용할 것입니다. 이 패키지는 다양한 XAI 방법을 제공합니다. 현재는 ALE 및 plot_ale 함수 (라인 8-9)에 관심이 있습니다. 이 패키지를 적용하고 플롯을 해석하는 방법을 살펴볼 것이며, 여러 ALE을 결합하고 간격 길이를 변경하는 방법에 대해 알아볼 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 #데이터셋 및 모델
 
@@ -106,7 +179,18 @@ X = X.drop('sex', axis=1)
 X.head()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_8.png" />
 
@@ -120,7 +204,18 @@ model.fit(X.to_numpy(), y)
 
 ## ALE 그래프 그리기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ALE 플롯을 생성하려면, 먼저 ale 객체를 생성해야 합니다 (2번째 줄). 이를 위해 모델의 예측 함수 (model.predict), 피처 이름 및 타겟 이름을 전달합니다. 그런 다음 이 객체를 사용하여 X 피처 매트릭스에 대한 설명 (exp)을 생성합니다 (3번째 줄). 설명 함수를 사용하려면 이 매트릭스가 넘파이 배열이어야 합니다.
 
@@ -137,7 +232,18 @@ ALE 플롯을 생성하려면 설명과 표시하려는 피처를 plot_ale에 �
 plot_ale(exp, features=[0,1,2], fig_kw={'figwidth':15, 'figheight': 5})
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_9.png)
 
@@ -148,7 +254,18 @@ plot_ale(exp, features=[0,1,2], fig_kw={'figwidth':15, 'figheight': 5})
 
 또한 플롯에서 개별 점을 해석할 수도 있지만, 먼저 플롯이 어떻게 중심화되었는지 이해해야 합니다. Figure 7에서 껍질 무게 관계에 초점을 맞추어 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![그림 7](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_10.png)
 
@@ -159,7 +276,18 @@ ALE는 0을 중심으로 설정되었습니다. 이것은 각 ALE의 미중심 �
 - 터플 중량이 0이면 평균 예측 대비 6개의 고리 예측이 증가합니다.
 - 터플 중량이 1.4인 경우에 비해 0의 터플 중량은 예측이 12개 증가합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ALE 결합하기
 
@@ -178,8 +306,18 @@ ax.set_xlabel('weight')
 
 shucked weight와 shell weight가 예측에 상당한 영향을 미치는 것을 알 수 있습니다. 그러나 그들은 반대 방향에 있습니다. 흥미로운 사실입니다! 이러한 특징들은 상호 관련이 높지만 예측과는 서로 다른 관계를 가지고 있습니다. 이는 두 특징 간의 상호 작용 때문입니다 — 이를 알아보기 위해 H-통계를 사용할 수 있습니다(향후 게시될 기사를 기대해주세요).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot](/assets/img/2024-05-23-DeepDiveonAccumulatedLocalEffectPlotsALEswithPython_11.png)
 
@@ -189,8 +327,18 @@ shucked weight와 shell weight가 예측에 상당한 영향을 미치는 것을
 
 아래 코드에서는 동일한 차트를 만들되 한 가지 주요 차이가 있습니다. 간격 내의 최소 인스턴스 수를 50으로 변경했습니다 (3번째 줄). 이는 min_bin_points 매개변수를 사용하여 수행됩니다. Figure 9에서 볼 수 있듯이 결과는 더 부드러운 ALE 및 큰 간격입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 # 간격 조정
@@ -212,9 +360,18 @@ ax.set_xlabel('weight')
 
 다른 고려사항은 ALE의 해석은 명료하지만 해당 해석을 얻는 방법을 설명하기는 복잡할 수 있다는 것입니다. PDP가 어떻게 생성되는지 비교할 때 적어도 그렇습니다. 따라서 두 방법을 함께 사용하는 것이 유용합니다. 결과가 일치하면 언제든 PDP를 제시할 수 있습니다. 이렇게 하면 평균 누적 로컬 효과가 무엇인지 설명하는 머리 아픈 작업이 절약될 수 있습니다!
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 PDPs가 어떻게 만들어지는지 알고 싶다면 이 기사를 참조해보세요:
 
@@ -224,7 +381,17 @@ ax.set_xlabel('weight')
 
 ## 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [1] Daniel W Apley 및 Jingyu Zhu. 블랙 박스 지도 학습 모델에서 예측 변수의 효과를 시각화하는 방법. Journal of the Royal Statistical Society Series B: Statistical Methodology, 82(4):1059–1086, 2020.
-

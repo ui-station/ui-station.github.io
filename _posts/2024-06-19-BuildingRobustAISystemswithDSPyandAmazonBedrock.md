@@ -3,13 +3,12 @@ title: "DSPy와 Amazon Bedrock을 사용하여 견고한 AI 시스템 구축하�
 description: ""
 coverImage: "/assets/img/2024-06-19-BuildingRobustAISystemswithDSPyandAmazonBedrock_0.png"
 date: 2024-06-19 12:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-BuildingRobustAISystemswithDSPyandAmazonBedrock_0.png
 tag: Tech
 originalTitle: "Building Robust AI Systems with DSPy and Amazon Bedrock"
 link: "https://medium.com/@dgallitelli95/building-robust-ai-systems-with-dspy-and-amazon-bedrock-d0376f158d88"
 ---
-
 
 ## 프롬프트 매직에서 프롬프트 엔지니어링으로 변경
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@dgallitelli95/building-robust-ai-systems-with-dspy-an
 
 # DSPy란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 %pip 설치 dspy-ai
@@ -31,8 +41,18 @@ DSPy는 스탠포드 NLP에서 개발한 오픈 소스 라이브러리로, 데�
 
 DSPy의 서명은 언어 모델(LM) 작업의 입력/출력 동작을 모듈식이고 적응적인 방식으로 정의합니다. Signatures는 길고 취약한 프롬프트에 의존하는 대신, 깨끗하고 재현 가능한 코드를 허용합니다. 서명의 예로는 질문 답변을 위한 `»question -` answer»`나 요약을 위한 `»document -` summary»`가 있습니다. 작업 요구 사항에 따라 서명은 간단하거나 복잡할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모듈
 
@@ -42,7 +62,18 @@ DSPy의 모듈은 LM 프로그램의 구성 요소입니다. 각 모듈은 chain
 
 DSPy의 옵티마이저는 DSPy 프로그램의 매개변수를 세밀하게 조정하여 프로그램의 출력을 최적화합니다. 그들은 기울기 하강법과 이산 최적화 기술의 조합을 사용하여 메트릭을 최대화하거나 일반적으로 프로그램의 출력을 평가하는 함수에 점수를 부여합니다. 다양한 종류의 옵티마이저가 제공되며, 각각 다른 데이터 시나리오와 최적화 요구에 맞게 맞춤화됩니다. 옵티마이저가 가장 잘 작동하도록하려면 일부 학습 입력을 제공해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Amazon Bedrock을 사용하는 방법
 
@@ -60,7 +91,18 @@ bedrock_haiku = dspy.AWSAnthropic(
 dspy.configure(lm=bedrock_haiku)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM 구성이 마무리되었으니 문제 해결을 시작할 수 있어요.
 
@@ -72,7 +114,18 @@ LLM 구성이 마무리되었으니 문제 해결을 시작할 수 있어요.
 qa = dspy.Predict("question -> answer")
 \
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 예시에서 예측은 우리의 모듈이며, 예측을 생성하는 것이 목표이며, 서명은 질문 - 답변입니다. 이는 우리가 DSPy에게 질문에서 답변을 찾고 있다는 것을 간결하게 설명하는 줄임표기법입니다. qa를 출력하면 다음 출력이 나타납니다:
 
@@ -97,7 +150,18 @@ TypedPredictor(StringSignature(question -> answer
 ))
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Module Predict에서 정의된 프롬프트를 통해, DSPy는 프롬프트 엔지니어링 프로세스를 반복하고 제어할 수 있는 개념을 소개합니다. 이 클래스를 사용하여 다음 질문에 대한 답변을 생성해보겠습니다:
 
@@ -114,7 +178,18 @@ qa(question="Sergio Mattarella는 누구인가?").answer
 
 이제 프로그램의 동작을 수정하기 위해 서명과/또는 모듈을 사용자 정의할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 dspy.Modules에 대해 이야기해보겠습니다. 이 라이브러리에서 제공하는 다른 모듈을 사용하거나 사용자 정의 모듈을 만들 수 있습니다:
 
@@ -149,7 +224,18 @@ Prediction(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 출력 결과를 보면, 답변이 다르며, 후자가 올바른 것을 알 수 있습니다. 이는 DSPy가 Chain of Thought (CoT)를 통해 우리가 제공한 프롬프트를 확장하기 때문입니다. CoT를 사용하면 LM(Language Model)에게 답변을 제공하기 전에 "단계별로" 추론하도록 강요합니다. 이 근거는 답변에서 제공되며, 더 자세한 지침은 cot.extended_signature에서 확인할 수 있습니다.
 
@@ -179,7 +265,18 @@ Predict(StringSignature(context, question -> answer
 ))
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아니면 더 많은 제어를 위해 더 긴 표기를 사용해보세요:
 
@@ -227,7 +324,18 @@ predictor(email=dedent("""
 """))
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 리트리버
 
@@ -279,11 +387,11 @@ class AmazonBedrockVectorizer(BaseSentenceVectorizer):
             start_idx = cur_batch_idx * self.embed_batch_size
             end_idx = (cur_batch_idx + 1) * self.embed_batch_size
             cur_batch = text_to_vectorize[start_idx: end_idx]
-            
+
             # Bedrock API Body 구성
             if self.model_id not in self.SUPPORTED_MODELS:
                 raise Exception(f"지원하지 않는 모델: {self.model_id}")
-            
+
             if self.model_id == "amazon.titan-embed-text-v1":
                 if self.embed_batch_size == 1:
                     body = json.dumps({"inputText": cur_batch[0]})
@@ -304,8 +412,8 @@ class AmazonBedrockVectorizer(BaseSentenceVectorizer):
                 })
             else:
                 raise Exception("여기서 어떻게 나타났나요?")
-                
-            
+
+
             # Bedrock API 호출
             response = self.bedrock_client.invoke_model(
                 body=body,
@@ -328,11 +436,22 @@ class AmazonBedrockVectorizer(BaseSentenceVectorizer):
 
     def _extract_text_from_examples(self, inp_examples: List) -> List[str]:
         if isinstance(inp_examples[0], str):
-            return inp_examples 
+            return inp_examples
         return [" ".join([example[key] for key in example._input_keys]) for example in inp_examples]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 코드를 사용하여 선호하는 DSPy 검색기에서 이 클래스를 사용할 수 있습니다:
 
@@ -358,7 +477,18 @@ print(frm(["여기에 질문을 입력하세요"]))
 
 이 지식을 활용하여 프로그램의 동작을 정의하는 사용자 정의 클래스를 정의할 수 있습니다! 예를 들어, RAG 클래스는 다음과 같이 보일 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 class RAG(dspy.Module):
@@ -379,7 +509,17 @@ class RAG(dspy.Module):
 
 DSPy와 Amazon Bedrock은 인공지능(AI) 개발 도구의 진화에서 중요한 발전을 나타냅니다. DSPy의 데이터 과학 능력과 Bedrock의 확장 가능하고 효율적인 모델 관리를 결합하여 개발자와 데이터 과학자는 복잡한 AI 과제에 대처할 강력한 도구 상자를 갖추게 됩니다. 이러한 도구들이 계속 발전함에 따라, 그들은 의심할 여지 없이 AI의 미래를 형성하는 데 중추적인 역할을 할 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자세한 정보는 DSPy GitHub 저장소와 Amazon Bedrock 문서를 살펴보세요. 이 흥미로운 분야에서의 미래 업데이트와 진전에 주목해 주세요!

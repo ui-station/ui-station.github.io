@@ -18,7 +18,18 @@ link: "https://medium.com/towards-data-science/generative-models-and-the-dance-o
 
 솔직히 말하자면, 이 여성은 실제 몬나 리자만큼 매혹적이고 신비로울 정도로 미소를 머금지 않습니다(심지어 더 자세히 관찰하면 다소 우스운 것 같습니다). 하지만 많은 사람들은 AI 생성물의 놀라운 사례를 만나봤습니다: 초실감 이미지부터 AI로 작성된 목소리의 믿기 힘든 딥 페이크까지 말이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생성적 AI 모델은 꿈꾸는 사람들의 실리콘 버전입니다: 아무것도 없는 상황에서 무언가를 상상할 수 있으며, 소음으로부터 의미를 찾아냅니다. 그들은 질서와 무질서의 춤을 춰내는 법을 배웠습니다. 이미 인간의 창의성에 대한 우리의 생각을 변화시키고, 수천 가지의 새로운 응용 프로그램으로 문을 열었으며, 전통적인 산업들을 위협하고 새로운 산업을 만들어냈습니다.
 
@@ -28,7 +39,18 @@ link: "https://medium.com/towards-data-science/generative-models-and-the-dance-o
 
 본 기사에서는 이 마법 같은 블랙 박스의 뚜껑을 열어, 생성 모델의 여러 클래스의 기본 메커니즘(Helmholtz machines, Variational Autoencoders, Normalizing Flows, Diffusion Models, GANs 및 Transformer 기반의 언어 모델)에 대해 탐구하고, 그들의 내부 작동 원리를 밝히며, 뇌과학과 인지학에 대한 기원과 연결을 탐구합니다. 이 주제는 물론 한 기사로 다루기에는 너무 방대하기 때문에(계획대로 많이 커졌지만), 기술적인 세부 정보와 고수준 개요, 일관된 내러티브, 그리고 참고 자료를 균형있게 제공하려고 노력하여, 모두에게 흥미로운 내용이 될 것으로 기대합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어디서부터 시작할까요?
 
@@ -38,8 +60,18 @@ link: "https://medium.com/towards-data-science/generative-models-and-the-dance-o
 
 헬멀홀츠 머신은 특히 흥미롭습니다. 그 원칙은 독일 물리학자 헤르만 폰 헬멀홀츠의 미래를 예언하는 비전과 관련이 있습니다. 헬멀홀츠는 19세기 말에 지각이 객관적인 현실의 객관적 반영보다는 감각 데이터와 사전 지식으로부터의 무의식적 추론 과정으로 더 잘 설명된다는 것을 깨달았습니다. 인식은 본질적으로 확률적이며 잡음에 영향을 받으며, 우리의 기대와 편향으로 강력하게 형성됩니다. 그의 아이디어는 현대 신경과학에서 점점 더 중요해지고 있는데, 칼 프리스턴의 자유 테너지 원리(헬멀홀츠 머신을 영감의 근원으로 명시적으로 언급) 및 베이지안 뇌 가설을 통해 그 영향이 커지고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Generative Models](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_2.png)
 
@@ -49,14 +81,35 @@ link: "https://medium.com/towards-data-science/generative-models-and-the-dance-o
 
 x와 z 간의 관계를 분석하는 것이 생성 모델링의 핵심입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중요한 두 가지 양 름은 사후 확률인 p(z∣x)와 가능도 p(x|z)로 나타나며, 이들은 베이즈의 유명한 법칙에 따라 서로 연관되어 있습니다.
 
 우리는 관찰된 값을 기반으로 한 숨겨진 원인의 확률인 사후 확률 p(z∣x)을 얻습니다. 일반적으로 이에 접근할 수 없는데, 이는 계산 문제 때문인데, 베이즈의 법칙에 따르면 이를 계산하기 위해 p(x)가 필요하며, 이를 계산하려면 모든 가능한 숨겨진 원인을 찾아서 x를 어떻게 설명할지 확인해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세계 모델이 복잡한 경우, 이들은 고차원 적분이므로 효율적이지 않거나 아예 불가능할 수 있습니다.
 
@@ -66,7 +119,18 @@ x와 z 간의 관계를 분석하는 것이 생성 모델링의 핵심입니다.
 
 우도 p(x|z)를 추정하는 역방향은 보통 훨씬 쉽습니다. 특정 잠재 변수 z가 주어지면, 단지 우리에게 관찰 x가 얼마나 가능성 있는지만 알려줍니다. 이를 위해 일반적으로 어떤 적분도 필요하지 않고, 단순히 모델을 순방향으로 실행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가능성은 생성 네트워크에 의해 매개변수화됩니다: 어떻게하면 z가 주어졌을 때 x를 생산할 수 있을까요? 숨겨진 원인으로 시작하면, 세계에 대한 영향은 어떻게 보일까요? 사람을 상상해보면, 그 사람의 얼굴이나 목소리는 어떻게 보일까요?
 
@@ -77,7 +141,18 @@ x와 z 간의 관계를 분석하는 것이 생성 모델링의 핵심입니다.
 인지 네트워크 z ← x: q(z|x)
 생성 네트워크 z→ x: p(x|z)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잠재 공간의 구조는 학습된 모델의 해석을 돕는 데 종종 도움이 됩니다. 잠재 표현을 분리하고 해석 가능한 특징과 맞추는 것은 많은 실용적응용에서 관심을 끄는 것뿐만 아니라 보다 해석 가능한 모델을 얻기 위해서 더 일반적으로 중요합니다.
 
@@ -87,7 +162,18 @@ x와 z 간의 관계를 분석하는 것이 생성 모델링의 핵심입니다.
 
 이러한 방향을 알면 이미지의 나이를 변경하는 데 사용할 수 있습니다. 또 다른 방향인 z_beard가 수염을 인코딩한다고 가정해 볼 때, 모델을 사용하여 이미지 x를 인코딩하고 an z를 얻은 다음, z를 z'=z+a*z_age+b*z_beard로 변환하여 전달합니다. 그리고 생성 모델 p(x|z')를 통해 다시 보내어 수염이 있는 노인 버전의 나를 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OpenAI의 GLOW와 같은 모델을 사용하면 해당 웹사이트에서 놀 수 있지만, FaceApp과 같은 응용 프로그램을 이미 알고 계실 가능성이 높습니다.
 
@@ -97,7 +183,18 @@ OpenAI의 GLOW와 같은 모델을 사용하면 해당 웹사이트에서 놀 �
 
 VAEs는 Kingma와 Rezende에 의해 2013년에 동시에 제안되었으며 (소음 제거, 압축, 시계열 데이터까지 다양한 응용 분야에서 발견됨).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시작하기에 가장 자연한 장소입니다. 헬름홀츠 머신과 정신적으로 가장 유사하기 때문입니다: 인식(인코더) 및 생성(디코더) 네트워크를 모두 사용합니다. 이미 언급했듯이, 인식 네트워크는 근사 밀도 q(z|x)를 통해 사후 밀도 p(z|x)를 근사합니다.
 
@@ -107,19 +204,39 @@ VAE는 음의 Evidence Lower Bound (ELBO)를 최소화하도록 훈련되어 있
 
 여기서는 간단히 분포 q(z|x)를 매개변수화하여 그래디언트 기반 메서드를 통해 훈련 가능하도록 합니다. 분포를 매개변수화하는 데는 다양한 세부사항이 존재할 수 있지만, 대략적으로 가우시안 근사로 간주하는 경우가 많습니다. 이는 평균 μ와 공분산 σ를 가지며 모델의 자유 매개변수를 구성합니다. 이 값은 신경망에 의해 직접 학습됩니다 (훈련 데이터 x를 NN에 넣으면 출력이 μ가 됩니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VAEs에서는 근사 사후 분포 q(z|x)를 사용하여 하나 또는 여러 개의 랜덤 샘플을 추출하고, 이를 ELBO에 대입합니다. ELBO는 q에서의 샘플로부터의 기댓값으로 정의됩니다.
 
-
 ![image](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_6.png)
-
 
 (음의) ELBO는 손실을 구성하므로 우리는 그래디언트를 계산할 수 있고, 그 결과 경사 하강법이 마법을 부리게 됩니다.
 
 사후 분포는 상당히 복잡할 수 있으므로, 잘 행동하는 그래디언트를 계산하는 것이 실제로 어려울 수 있습니다. 그들은 종종 높은 분산을 가지며 많은 샘플이 필요합니다. VAE의 핵심인 재모수화 기술은 이 문제를 빠르고 똑똑하게 우회하도록 도와줍니다. 샘플링을 두 개의 프로세스로 나누는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 먼저, 표준 가우시안 N(0,1)에서 샘플 ϵ을 추출합니다.
 - 다음으로, q(z∣x)의 평균 μ와 표준 편차 σ를 사용하여 ϵ을 변환하여 샘플 z=μ+σ×ϵ를 얻습니다.
@@ -130,7 +247,18 @@ VAEs에서는 근사 사후 분포 q(z|x)를 사용하여 하나 또는 여러 �
 
 직관적으로 ELBO는 재구성 항과 엔트로피 항으로 구성됩니다. 정보 이론의 세계에서 엔트로피는 정보 내용의 예측 불가능성이나 무작위성을 측정하므로, 엔트로피는 훈련을 자연스럽게 정규화하며 최적화하는 동안 구조와 노이즈를 교환합니다. VAE가 재구성에 너무 많은 초점을 맞추면 데이터를 지나치게 캡처하여 잠재 공간에서 훈련 데이터의 모든 작은 세부 사항(노이즈 포함)을 잡아낼 수 있습니다. 그러나, 엔트로피에 너무 많은 가중치를 부과하면 데이터의 세세한 점들을 캡처하지 못할 너무 단순한 잠재 공간에 빠질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 근사 사후의 엔트로피는 그 공분산 구조 σ와 관련이 있습니다. 이는 초기 표본에서 남아 있는 "형태 없는 그리고 빈" 잡음(우리의 설명에 대한 불확실성을 인코딩한)의 얼마만큼이 남아 있는지 측정해줍니다. 전체 과정을 결정론적으로 만들고 싶다면, σ를 단순히 0으로 설정하여 모든 불확실성을 제거할 수 있습니다.
 
@@ -140,7 +268,18 @@ VAEs에서는 근사 사후 분포 q(z|x)를 사용하여 하나 또는 여러 �
 
 ![이미지](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 정규화 흐름 (NF)
 
@@ -150,7 +289,18 @@ NF는 간단한 확률 분포를 반복적으로 변형하여 복잡하고 정�
 
 ![NF Image](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VAE (Variational Autoencoders)는 고정된 분포와 학습된 변환(평균 및 분산)을 사용하여 난수와 구조를 분리합니다. NF (Normalizing Flows)는 동적으로 분포 자체를 조성합니다. 이는 Jacobian determinant를 추적하여 수행됩니다. 이것은 변환의 부피 변화를 나타냅니다. 즉, 공간이 얼마나 축소되거나 늘어나는지 확인하여 전체 잠재 공간이 일관된 방식으로 변형되도록합니다.
 
@@ -160,7 +310,18 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 
 저는 앞서 언급한 OpenAI의 GLOW는 또한 이 역변환이용해 잠재 공간에서 미소, 나이 또는 수염 등과 같은 특징을 조작하고 거의 실시간으로 변형된 이미지를 얻습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 번째 멋진 점은 다양한 기하학과 매니폴드에 대한 적응력입니다. 고전적인 예로는 구 형태에 적용되는 것이 있습니다. 이를 통해 NF(정규화 흐름)는 구 위에 존재하는 잠재적 표현을 형성할 수 있습니다. 어떤 주장에도 불구하고 지구는 아마도 구형일 것이므로, 구 형태는 지구의 날씨 시스템 시뮬레이션을 실행할 때 매우 유용합니다.
 
@@ -170,7 +331,18 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 
 확산 모델은 생성 과정을 여러 단계로 분할합니다: 각 단계마다 학습 샘플에 노이즈가 적용됩니다. 모델의 목표는 해당 노이즈를 샘플에서 제거하는 방법을 학습하는 것입니다. 이전에 충분히 분명하게 했는지 모르지만, 이 노이즈는 확산 모델에서 다시 주요 역할을 수행합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 훈련 중에는 훈련 데이터에 반복적으로 노이즈가 추가됩니다. 이미지의 예시를 사용하면, 모델은 소음의 작은 수준을 제거하고 최종 세부 정보를 다듬는 방법을 배우거나, 왜곡된 이미지에서 모호한 모양을 명확히 하는 방법을 익힐 수 있습니다:
 
@@ -180,8 +352,18 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 
 새로운 샘플을 생성할 때, 모델은 순수한 노이즈로 시작하고, 노이즈 아래에 숨겨진 것이 무엇인지 이해하려고 시도할 때 새로운 것을 얻을 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Generative Models Image](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_11.png)
 
@@ -191,8 +373,18 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 
 또한 확산 모델은 Song 등에 의해 인기를 얻는 점수 기반 생성 모델링의 아이디어와 관련이 있습니다: 데이터 가능성을 직접 계산하는 전통적인 방법과 달리, 이러한 모델은 데이터 가능성의 기울기를 나타내는 점수를 근사화하는 데 중점을 둡니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 직관적으로, 점수는 샘플이 더 가능성 있는 방향으로 변경되어야 하는지를 나타냅니다. 직접적으로 가능성을 계산하지 않고, 이러한 모델들은 종종 이전에 마주한 일부 계산적 도전 과제를 피하게 됩니다.
 
@@ -202,8 +394,18 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 
 확산 모델에서 생성 과정은 또한 확률적이며, 각 단계에서 확률적 구성 요소를 추가합니다. 생성 프로세스가 여러 단계로 분할되기 때문에, 이는 사슬을 여러 단계 뒤로 되돌아가 과정을 다시 진행하여 샘플의 약간의 변형을 도입할 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_12.png)
 
@@ -213,8 +415,18 @@ NF에 대해 멋진 두 가지는 다음과 같습니다: 역변환이 가능하
 
 ![Image 2](/assets/img/2024-05-23-GenerativeModelsandtheDanceofNoiseandStructure_13.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 생성적 적대 신경망 (GANs)
 
@@ -224,7 +436,18 @@ GANs는 헬름홀츠 머신의 이중 네트워크 구조에서 더욱 멀어진
 
 GANs는 p(z0)에서 무작위 노이즈 벡터를 추출하여 시작한다 (확산 모델에서처럼, 이 초기 벡터는 텍스트와 같은 다른 정보에 의해 조건이 달릴 수도 있다). 하지만, 이후에는 생성 네트워크만 학습하며 (여러 응용 프로그램에서 주로 관심을 두는 부분이기 때문에), 디스크리미네이터를 포함하여 훈련하고, 생성 모델에서 p(x|z)의 샘플을 훈련 데이터의 예제와 일치시키려고 노력한다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생성 네트워크는 판별자를 속일 수 있는 데이터를 생성하도록 훈련됩니다. 이에 반해 판별자는 실제와 가짜 샘플을 구별하는 데 훈련됩니다.
 
@@ -234,7 +457,18 @@ GAN의 우아함은 이 경쟁적 상호 작용에 있습니다: 생성자는 �
 
 ## 트랜스포머와 대형 언어 모델 (LLMs)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 텍스트의 생성 모델링 환경을 완전히 혁신한 Transformers에 대해 언급하지 않을 수 없네요.
 
@@ -244,7 +478,18 @@ BERT와 같은 Transformer 변형들은 가려진 언어 모델링 설정에서 
 
 생성 관점에서 transformer 기반 LLM은 각 단어 또는 구문이 이전 단어를 따라 나올 확률을 모델링합니다. 이는 다시한번, 입력 프롬프트에 종속적인 확률 분포 p(x|z)의 변형을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 대개 Transformer에는 명시적으로 숨겨진 변수 z가 없습니다. 왜냐하면 프롬프트와 맥락 자체가 이미 단어입니다. 대신, self-attention 메커니즘은 관측된 모든 단어 (x1, x2, ..., xt)에서 토큰 p(x_i|(x1,x2,…,xt))의 확률을 추출하며, 물론 훈련 데이터의 수십억 줄에서 보여진 모든 단어와 맥락에 대한 암묵적인 분포에서도 추출합니다.
 
@@ -254,7 +499,18 @@ BERT와 같은 Transformer 변형들은 가려진 언어 모델링 설정에서 
 
 Chat-GPT가 저에게 높은 온도 설정으로 이 단락을 다시 말해 주었습니다: "Transformer의 소용돌이치는 은하에서 노이즈가 주연이 되지 않지만, LLMs는 언어의 불확실한 비트에 맞춰 춤을 추고 있습니다. 답변을 만드는 것은 한 마디의 진기한 단어를 찾는 것이 아니라 다양한 단어적 멜로디 p(x_i|(x1,x2,…,xt))를 이용해 잼을 더하고 있는 것입니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고온은 ChatGPT가 말 그대로 고조 되는 것처럼 들리게 만듭니다. 여기서의 "고온"은 볼츠만의 열역학 통계학 형식에 대한 비유로 사용됩니다. 이는 시스템의 상태가 온도와 상태의 에너지에 따라 지수 분포를 따른다는 것을 가정합니다:
 
@@ -264,7 +520,18 @@ Transformer와의 비유는 우연이 아닙니다. 소프트맥스 함수는 �
 
 열역학에서와 마찬가지로 온도는 엔트로피와 불확실성/잡음과 깊게 관련되어 있습니다. 볼츠만 분포에서는 온도가 증가함에 따라 서로 다른 에너지 상태에 대한 확률이 더 균일해집니다. 최대 균일성은 모든 상태가 동일하게 발생하기 때문에 최대 엔트로피로 이어집니다. LLMs에서는 이것이 의미하는 바는 앞으로 가능성이 있는 모든 단어가 동등한 확률로 예측된다는 것입니다. 하지만 고온에서도 생성된 텍스트가 완전히 무작위인 것은 아닙니다. 예시에서 볼 수 있듯이, 더 높은 온도로 조정된 경우라도 가장 가능성 있는 토큰의 선택은 여전히 주로 일관된 언어를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 기사로 한 가지 아이디어를 전달했다면, 그것은 노이즈가 모든 생성 모델에서 중요한 역할을 한다는 것입니다. 생성 모델링은 형태가 없는 노이즈를 가져다 구조를 불어넣는 예술입니다.
 
@@ -274,7 +541,18 @@ Transformer와의 비유는 우연이 아닙니다. 소프트맥스 함수는 �
 
 그러나 우리는 아직 그 안에 일부 구조를 발견하여 배울 수 있을지도 모릅니다. Max Tegmark 등의 새 논문에서와 같이, LLMs에서 공간 및 시간의 중간 표현을 발견하고 해석 가능한 세계 모델의 발생과 유사한 것으로 만드는 방법을 설명합니다. 다른 사람들은 LLMs의 행동을 이해하기 위해 인지 심리학 도구를 창의적으로 적용하며, 사람의 복잡성을 이해하려는 노력과 유사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최근 팟캐스트 에피소드에서 Marc Andreessen은 제너레이티브 모델이 제너레이티브 모델로부터 제공된 합성 데이터에서 유의미하게 훈련되고 개선될 수 있는지라는 문제를 1조 달러 가치의 문제로 묘사했습니다. 이 핵심적으로 무료 데이터에서 훈련하는 것은 많은 가능성을 제공할 것이며, 훈련 데이터를 비실가로 구성하는 것에 의존하지 않고 제너레이티브 모델을 계속 조정할 수 있는 형태의 '셀프 플레이'를 제공합니다(DeepMind가 AlphaGo와 AlphaFold에서 이미 성공적으로 사용하고 있습니다).
 
@@ -286,7 +564,18 @@ Andreessen은 이 문제를 신호와 잡음 사이의 정보 이론적 관점�
 
 마크 트웨인의 말처럼 이제모 아이디어가 새로운 것이 아니라는 인용문의 정신에서 우리는 다시 한번 성경으로 돌아갈 수 있습니다 (AI 기사에서 두 번 인용할 것으로 예상하지 않았지만):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 유사한 소음과 구조 사이의 상호작용이 인간의 창의력에서도 일어난다는 주장이 있습니다. 최근에 제가 창의성과 정신적 시각화에 관한 기사에서 탐구한 바에 따르면, 뇌에서 자유롭고 구조화되지 않은 마음의 방황 활동(default mode network이라고 하는 '상상 네트워크'로 Scott Barry Kaufman이 부르는 것)은 종종 가장 놀라운 예술 작품과 천재성 중 일부로 형성되는 자극을 제공할 수 있습니다. 이후 보다 논의된, 집중적인 연습과 기술에 의해 형성되는 것입니다.
 
@@ -294,7 +583,18 @@ Andreessen은 이 문제를 신호와 잡음 사이의 정보 이론적 관점�
 
 생성 모델이 이미 우리의 감각적인 입력을 형성하기 시작하고 있고, 세계와 우리의 마음을 인식하는 방식 및 창의력과 천재성에 관한 사고의 경계를 물어내고 밀어내고 있다는 점을 고려한다는 것은 부분적으로 겁이 나기도 하지만 동시에 흥미로운 일입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 Chat-GPT가 마치 레오나르도 다 빈치일 것처럼 꿈꾸는 말로 이 기사를 마무리하는 것이 더 좋다고 생각해요:
 

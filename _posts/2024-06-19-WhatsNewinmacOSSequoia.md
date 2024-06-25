@@ -3,13 +3,12 @@ title: "맥OS Sequoia의 새로운 기능들"
 description: ""
 coverImage: "/assets/img/2024-06-19-WhatsNewinmacOSSequoia_0.png"
 date: 2024-06-19 11:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-WhatsNewinmacOSSequoia_0.png
 tag: Tech
 originalTitle: "What’s New in macOS Sequoia"
 link: "https://medium.com/simform-engineering/whats-new-in-macos-sequoia-f5a96d9117f4"
 ---
-
 
 맥OS 15 세쿼이아의 흥미진진한 혁신에 빠져 보세요! WWDC 2024에서 공개됐어요!
 
@@ -19,7 +18,18 @@ WWDC 2024에서 뽐낸 주목할만한 발표 중 하나는 macOS 세쿼이아�
 
 정교한 사용자 인터페이스부터 혁신적인 성능 향상까지, 함께 WWDC 2024에서 발표된 흥미로운 내용을 살펴보아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # macOS 15을 지원하는 기기들:
 
@@ -41,7 +51,18 @@ WWDC 2024에서 뽐낸 주목할만한 발표 중 하나는 macOS 세쿼이아�
 - Mac 게임
 - macOS Sequoia에서의 추가 기능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 아이폰 미러링
 
@@ -51,7 +72,18 @@ macOS Sequoia에서는 아이폰 미러링을 통한 연속성의 중요한 기�
 
 미러링을 하면 아이폰과 맥 간에 파일을 드래그하여 이동할 수 있습니다. 아이폰의 알림은 맥의 알림과 함께 표시되므로 사용자는 아이폰이 없을 때에도 확인하고 상호 작용할 수 있습니다. 알림을 탭하면 해당 앱이 미러링 모드에서 열립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-19-WhatsNewinmacOSSequoia_0.png)
 
@@ -61,7 +93,18 @@ macOS Sequoia에서는 아이폰 미러링을 통한 연속성의 중요한 기�
 
 ![image](/assets/img/2024-06-19-WhatsNewinmacOSSequoia_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 비디오 콘퍼런싱
 
@@ -71,7 +114,18 @@ macOS Sequoia에서는 아이폰 미러링을 통한 연속성의 중요한 기�
 
 # Safari
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Safari는 이제 페이지 강조 기능을 제공하여 방향, 요약 또는 사람, 음악, 영화 및 TV 프로그램에 대해 자세히 알아보기 위한 빠른 링크와 같은 유용한 정보를 제공합니다.
 - 웹 페이지에서 비디오를 발견하면 사용자가 Picture in Picture를 포함한 완전한 재생 제어 기능을 제공하는 동시에 중심에 배치됩니다.
@@ -88,7 +142,18 @@ macOS Sequoia에서는 아이폰 미러링을 통한 연속성의 중요한 기�
 
 # 비밀번호 앱
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 macOS Sequoia의 Passwords 앱을 사용하면 모든 암호에 쉽게 액세스할 수 있어요. iCloud 동기화를 통해 암호를 모든 Apple 기기 간에 동기화할 수 있어요.
 
@@ -98,7 +163,18 @@ macOS Sequoia의 Passwords 앱을 사용하면 모든 암호에 쉽게 액세스
 
 ## 1. 새로운 게임 타이틀
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 맥에서 기다리고 있던 Ubisoft의 Assassin's Creed Shadows가 11월 15일에 출시될 예정입니다.
 
@@ -115,7 +191,18 @@ macOS Sequoia의 Passwords 앱을 사용하면 모든 암호에 쉽게 액세스
 
 ![이미지](/assets/img/2024-06-19-WhatsNewinmacOSSequoia_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 몰입형 게임 경험
 
@@ -125,7 +212,18 @@ macOS Sequoia의 Passwords 앱을 사용하면 모든 암호에 쉽게 액세스
 
 개발자들은 게임 포팅 툴킷 2의 개선 사항을 활용하여 이제 Apple 기기로 쉽게 게임을 가져올 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Mac용 Apple Intelligence
 
@@ -135,7 +233,18 @@ Apple 실리콘의 힘을 빌려, Apple Intelligence는 언어와 이미지를 �
 
 ## 1. 언어 생성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 기능 재작성은 친근하거나 전문적이거나 간결하다는 다른 톤으로 텍스트를 조정할 수 있습니다.
 - 교정은 문법, 어휘 선택, 문장 구조를 확인하며, 사용자가 검토하거나 수락할 편집 제안을 할 수 있습니다.
@@ -143,17 +252,24 @@ Apple 실리콘의 힘을 빌려, Apple Intelligence는 언어와 이미지를 �
 - Mail 앱의 중요 메시지는 가장 긴급한 이메일(이벤트나 탑승권과 같은)을 보여주는 인박스 상단에 새 섹션을 추가합니다. Mail 앱은 또한 사용자가 전체 이메일을 열어 읽을 필요 없이 이메일 요약을 표시합니다.
 - 스마트 답장은 이메일의 질문을 분석하고 식별하여 빠른 응답을 위한 제안을 제공하며, 모든 것이 답변되도록 보장합니다.
 
-
 <img src="/assets/img/2024-06-19-WhatsNewinmacOSSequoia_5.png" />
-
 
 ### 2. 이미지 만들기
 
-
 <img src="/assets/img/2024-06-19-WhatsNewinmacOSSequoia_6.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3. 시리
 
@@ -166,6 +282,17 @@ Apple 실리콘의 힘을 빌려, Apple Intelligence는 언어와 이미지를 �
 
 # 마무리 생각
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 맥OS Sequoia는 혁신적인 기능과 원활한 Apple 생태계 전체에서의 통합을 통해 맥 경험을 새로운 차원으로 끌어올립니다. 이 업데이트는 모든 사용자를 위한 생산성, 창의성 및 연결성을 재정의합니다.

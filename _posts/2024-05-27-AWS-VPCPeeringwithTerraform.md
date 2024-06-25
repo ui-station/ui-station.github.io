@@ -10,7 +10,6 @@ originalTitle: "AWS-VPC Peering with Terraform"
 link: "https://medium.com/@nik2701k/aws-vpc-peering-with-terraform-3010eccfb8fe"
 ---
 
-
 ![AWS VPC Peering with Terraform](/assets/img/2024-05-27-AWS-VPCPeeringwithTerraform_0.png)
 
 AWS에서 VPC는 무엇인가요?
@@ -19,8 +18,18 @@ AWS에서 VPC 피어링이란 무엇인가요?
 
 Terraform은 무엇인가요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글에서는 AWS에서 Terraform을 사용하여 VPC 피어링 프로세스를 자동화하는 단계를 살펴보겠습니다.
 
@@ -35,29 +44,38 @@ AWS에서 생성된 자원 목록
 
 # 프로젝트 구조
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 terraform_project/
 │
 ├── module/
-│   ├── ec2/
-│   │   ├── main.tf
-│   │   ├── output.tf
-│   │   └── variables.tf
-│   ├── vpc/
-│   │   ├── main.tf
-│   │   ├── output.tf
-│   │   └── variables.tf
-│   └── ...
+│ ├── ec2/
+│ │ ├── main.tf
+│ │ ├── output.tf
+│ │ └── variables.tf
+│ ├── vpc/
+│ │ ├── main.tf
+│ │ ├── output.tf
+│ │ └── variables.tf
+│ └── ...
 │
 ├── main.tf
 ├── variables.tf
 └── variable.tfvars/
-    ├── dev-env.tfvars
-    ├── stage-env.tfvars
-    └── prod-env.tfvars
-
+├── dev-env.tfvars
+├── stage-env.tfvars
+└── prod-env.tfvars
 
 ## 단계 1: VPC를 위한 모듈 생성 및 가져오기
 
@@ -89,7 +107,18 @@ resource "aws_vpc" "main_vpc" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금, 프로젝트 루트의 main.tf 파일에 모듈을 가져오겠습니다.
 
@@ -134,7 +163,18 @@ module "vpc_B" {
 
 modules/subnets/main.tf
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 terraform {
@@ -193,7 +233,18 @@ module "subnetsForvpc_B" {
 
 ## 단계 3: 보안 그룹 모듈을 생성하고 가져 오기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 modules/security-groups/main.tf
 
@@ -302,7 +353,18 @@ module "icmp_sg_vpcB" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 4: EC2를 위한 모듈 생성 및 가져오기
 
@@ -351,68 +413,86 @@ resource "aws_network_interface_sg_attachment" "icmp_sg_attachment" {
 
 이제 모듈을 프로젝트 루트의 main.tf 파일에 가져오겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 module "ec2_vpcA" {
-  source        = "./modules/ec2"
-  subnet_id     = module.subnetsForvpc_A["subnet1"].subnet_id
-  ami_id        = var.ec2s["ec2_vpcA"]["ami_id"]
-  instance_type = var.ec2s["ec2_vpcA"]["instance_type"]
-  ec2_name      = var.ec2s["ec2_vpcA"]["ec2_name"]
-  key_name      = var.ec2s["ec2_vpcA"]["key_name"]
-  ssh_sg_id     = module.ssh_sg_vpcA.sg_id
-  icmp_sg_id    = module.icmp_sg_vpcA.sg_id
-  owner_name    = var.owner_name
+source = "./modules/ec2"
+subnet_id = module.subnetsForvpc_A["subnet1"].subnet_id
+ami_id = var.ec2s["ec2_vpcA"]["ami_id"]
+instance_type = var.ec2s["ec2_vpcA"]["instance_type"]
+ec2_name = var.ec2s["ec2_vpcA"]["ec2_name"]
+key_name = var.ec2s["ec2_vpcA"]["key_name"]
+ssh_sg_id = module.ssh_sg_vpcA.sg_id
+icmp_sg_id = module.icmp_sg_vpcA.sg_id
+owner_name = var.owner_name
 }
 
 module "ec2_vpcB" {
-  source        = "./modules/ec2"
-  subnet_id     = module.subnetsForvpc_B["subnet1"].subnet_id
-  ami_id        = var.ec2s["ec2_vpcB"]["ami_id"]
-  instance_type = var.ec2s["ec2_vpcB"]["instance_type"]
-  ec2_name      = var.ec2s["ec2_vpcB"]["ec2_name"]
-  key_name      = var.ec2s["ec2_vpcB"]["key_name"]
-  ssh_sg_id     = module.ssh_sg_vpcB.sg_id
-  icmp_sg_id    = module.icmp_sg_vpcB.sg_id
-  owner_name    = var.owner_name
-  providers = {
-    aws = aws.us_west
-  }
+source = "./modules/ec2"
+subnet_id = module.subnetsForvpc_B["subnet1"].subnet_id
+ami_id = var.ec2s["ec2_vpcB"]["ami_id"]
+instance_type = var.ec2s["ec2_vpcB"]["instance_type"]
+ec2_name = var.ec2s["ec2_vpcB"]["ec2_name"]
+key_name = var.ec2s["ec2_vpcB"]["key_name"]
+ssh_sg_id = module.ssh_sg_vpcB.sg_id
+icmp_sg_id = module.icmp_sg_vpcB.sg_id
+owner_name = var.owner_name
+providers = {
+aws = aws.us_west
 }
-
+}
 
 ## Step 5: Create modules for Internet Gateways and importing them
 
 modules/internet-gateways/main.tf
 
-
 terraform {
-  required_providers {
-    aws = {
-      source                = "hashicorp/aws"
-      version               = "~> 5.0"
-      configuration_aliases = [aws.us_west]
-    }
-  }
+required_providers {
+aws = {
+source = "hashicorp/aws"
+version = "~> 5.0"
+configuration_aliases = [aws.us_west]
+}
+}
 }
 
 provider "aws" {
-  alias  = "us_west"
-  region = "us-west-1"
+alias = "us_west"
+region = "us-west-1"
 }
 
 resource "aws_internet_gateway" "i_gw" {
-  vpc_id = var.vpc_id
+vpc_id = var.vpc_id
 
-  tags = {
-    Name       = var.igw_name
-    created_by = var.owner_name
-  }
+tags = {
+Name = var.igw_name
+created_by = var.owner_name
+}
 }
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제, 프로젝트 루트의 main.tf 파일에 모듈을 가져오겠습니다.
 
@@ -439,7 +519,18 @@ module "igw_vpcB" {
 
 모듈 - VPC Peering (modules/vpc-peering/main.tf)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 테라폼 {
@@ -501,9 +592,18 @@ module "igw_vpcB" {
 
 모듈 — VPC 피어링 구성 (modules/vpc-peering-configure/main.tf)
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 terraform {
@@ -562,7 +662,18 @@ module "vpc_peering_configureB" {
 
 ## 단계 7: 라우트 테이블을 위한 모듈 만들기 및 가져오기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 modules/route-tables/main.tf
 
@@ -632,7 +743,18 @@ module "route_table_vpcB_igw" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 8: dev-env.tfvars 파일 작성
 
@@ -752,7 +874,18 @@ route 테이블용 대상 CIDR 블록 = {
 
 ## 단계 9: 작업 디렉토리 초기화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 작업 디렉토리에서 terraform init 명령을 실행하세요. 이 명령은 필요한 모든 공급자 및 모듈을 다운로드하고 백엔드를 초기화합니다.
 
@@ -762,7 +895,18 @@ route 테이블용 대상 CIDR 블록 = {
 
 ## 단계 11: terraform apply 실행
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 작업 디렉토리에서 terraform apply 명령을 실행하면 AWS에 필요한 모든 리소스가 생성됩니다.
 
@@ -773,7 +917,18 @@ route 테이블용 대상 CIDR 블록 = {
 
 여기까지입니다. 이제 Terraform을 사용하여 AWS VPC 피어링 연결을 생성하는 방법을 배웠습니다. 이제 여러분은 이것을 사용하고 필요에 따라 수정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전체 코드는 여기에서 찾을 수 있어요.
 

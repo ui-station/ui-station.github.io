@@ -3,13 +3,12 @@ title: "프로젝트 8  Kubernetes에서 삼계층 애플리케이션 배포 하
 description: ""
 coverImage: "/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_0.png"
 date: 2024-06-23 00:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_0.png
 tag: Tech
 originalTitle: "Project 8 → Three tier application deployment on Kubernetes"
 link: "https://medium.com/@aakibkhan1/project-8-three-tier-application-deployment-on-kubernetes-bf9323de40e0"
 ---
-
 
 우리 시리즈의 8번째 프로젝트입니다. 계속 따라오세요!
 
@@ -19,17 +18,39 @@ link: "https://medium.com/@aakibkhan1/project-8-three-tier-application-deploymen
 
 사실은 시스템을 3부분으로 나누는 것을 말해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 표현 계층 (티어 1):
 
-    - 웹 사이트를 열 때 보는 것이 바로 표현 계층입니다. 기본적으로 이 계층은 사용자가 직접 상호 작용하는 계층입니다.
+  - 웹 사이트를 열 때 보는 것이 바로 표현 계층입니다. 기본적으로 이 계층은 사용자가 직접 상호 작용하는 계층입니다.
 
 - 논리 계층 (티어 2):
 
-    - 이 계층을 뒷단의 두뇌로 상상해보세요. 사용자 인터페이스를 통해 제공하는 정보를 받아 시스템의 규칙에 따라 처리합니다. 예를 들어 쇼핑 웹 사이트의 경우, 이 계층은 물품의 총 가격을 계산하거나 할인을 적용하며 모든 제품이 재고에 있는지 확인합니다.
+  - 이 계층을 뒷단의 두뇌로 상상해보세요. 사용자 인터페이스를 통해 제공하는 정보를 받아 시스템의 규칙에 따라 처리합니다. 예를 들어 쇼핑 웹 사이트의 경우, 이 계층은 물품의 총 가격을 계산하거나 할인을 적용하며 모든 제품이 재고에 있는지 확인합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 데이터 레이어 (티어 3):
 
@@ -41,21 +62,47 @@ link: "https://medium.com/@aakibkhan1/project-8-three-tier-application-deploymen
 
 # 완료 단계 →
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-# Phase 1 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+# Phase 1
+
 EC2 인스턴스, IAM 사용자 및 EC2의 기본 도구 설정하기
 
-# Phase 2 
+# Phase 2
+
 프론트엔드 및 백엔드 이미지 빌드하기
 
-# Phase 3 
+# Phase 3
+
 쿠버네티스
 
-# Phase 4 
+# Phase 4
+
 애플리케이션 로드 밸런서 및 인그레스 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Phase 5 → 모든 것 파괴하기
 
@@ -65,7 +112,18 @@ Phase 5 → 모든 것 파괴하기
 
 ![이미지](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 'iam'을 클릭하세요.
 
@@ -75,7 +133,18 @@ Phase 5 → 모든 것 파괴하기
 
 3. 사용자에게 이름을 지정하고 관리 콘솔에 사용자 액세스 제공에 체크하고 IAM 사용자 옵션을 선택하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_3.png)
 
@@ -85,7 +154,18 @@ Phase 5 → 모든 것 파괴하기
 
 참고 → 현재는 관리자 액세스를 제공하겠지만 작업 공간에 정책을 첨부할 때 신중하시기 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_4.png)
 
@@ -95,8 +175,18 @@ Phase 5 → 모든 것 파괴하기
 
 7. '사용자 만들기'를 클릭하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Project Screenshot 6](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_6.png)
 
@@ -106,8 +196,18 @@ Phase 5 → 모든 것 파괴하기
 
 9. Click on your IAM user → Security Credentials.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Project Screenshot 8](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_8.png)
 
@@ -117,7 +217,18 @@ Phase 5 → 모든 것 파괴하기
 
 11. 옵션 목록에서 aws cli를 선택하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_10.png" />
 
@@ -127,7 +238,18 @@ Phase 5 → 모든 것 파괴하기
 
 ## 단계 2. 모든 작업을 수행하는 기본 EC2를 시작합니다 →
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AWS 콘솔을 열고 EC2로 이동한 다음 EC2 시작을 클릭하세요
 
@@ -142,7 +264,18 @@ mkdir 3-tier
 cd 3-tier
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 깃허브에서 코드를 가져오려면 git clone을 사용하세요
 
@@ -154,7 +287,18 @@ git clone https://github.com/Aakibgithuber/Three-tier-Application-Deployment-.gi
 
 <img src="/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_13.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 3 → aws cli, 도커, kubectl 및 eksctl 설정
 
@@ -164,23 +308,41 @@ AWS CLI (Amazon Web Services Command Line Interface)는 명령어를 사용하�
 
 - 아래 명령어를 실행하여 aws cli를 설치합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 먼저 다음 명령어로 AWS CLI를 설치해 주세요.
 
-
 snap install aws-cli --classic
-
 
 2. 이제 AWS를 구성해야 합니다. 아래 명령어를 사용해 구성해 주세요.
 
-
 aws configure
-
 
 3. 접근 키와 비밀 키를 요청할 것입니다. 이제 앞서 다운로드한 CSV 파일을 열어서 액세스 키와 비밀 키를 복사해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_14.png" />
 
@@ -190,7 +352,18 @@ aws configure
 
 ## 2. Docker 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다음 명령어를 실행해주세요
 
@@ -206,7 +379,18 @@ which docker
 
 ## 3. kubectl 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 Kubernetes 클러스터를 관리하고 상호 작용하는 데 사용되는 명령 줄 도구입니다.
 
@@ -218,7 +402,18 @@ snap install kubectl --classic
 
 ![이미지](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_16.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 4. eksctl 설정
 
@@ -232,7 +427,18 @@ sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_17.png" />
 
@@ -242,7 +448,18 @@ eksctl version
 
 도커 이미지를 저장하는 도커허브와 유사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AWS 콘솔로 이동해서 ECR을 검색해주세요.
 - 프론트엔드를 위한 저장소를 만들고 가시성 설정을 "퍼블릭"으로 설정해주세요.
@@ -253,8 +470,18 @@ eksctl version
 
 3. 백엔드 저장소 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_20.png)
 
@@ -264,9 +491,18 @@ eksctl version
 
 - 터미널에서 프론트엔드 디렉토리로 이동하고 ls 명령어를 실행하세요
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_22.png)
 
@@ -276,8 +512,18 @@ eksctl version
 
 3. 위 명령을 하나씩 실행하여 프론트엔드 이미지를 빌드하고 ECR 저장소에 푸시합니다
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/l0l7e4u1
@@ -292,7 +538,18 @@ docker push public.ecr.aws/l0l7e4u1/3-tier-frontend:latest
 
 4. 이미지에서 컨테이너를 실행해 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 이미지 목록에서 이미지 이름을 복사하세요.
@@ -305,8 +562,18 @@ docker push public.ecr.aws/l0l7e4u1/3-tier-frontend:latest
 
 ![이미지2](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_27.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 3 → 백엔드 설정
 
@@ -316,7 +583,18 @@ docker push public.ecr.aws/l0l7e4u1/3-tier-frontend:latest
 
 ![이미지](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_29.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. ECR 리포지토리로 이동하여 백엔드 리포지토리의 푸시 명령을 보기 위해 클릭하세요
 
@@ -331,8 +609,18 @@ docker tag 3-tier-backend:latest public.ecr.aws/l0l7e4u1/3-tier-backend:latest
 docker push public.ecr.aws/l0l7e4u1/3-tier-backend:latest
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_31.png)
 
@@ -342,8 +630,18 @@ docker push public.ecr.aws/l0l7e4u1/3-tier-backend:latest
 
 # Phase 3 Kubernetes
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 배포란 무엇인가요?
 
@@ -357,7 +655,18 @@ docker push public.ecr.aws/l0l7e4u1/3-tier-backend:latest
 - 중앙 연락처: 서비스는 응용 프로그램을 위한 중앙 연락처를 제공합니다. 직접 각 응용 프로그램을 찾는 대신 시스템의 다른 부분들이 서비스와 대화하고, 서비스가 올바른 응용 프로그램을 찾는 방법을 알고 있습니다.
 - 안정적인 주소: 수신 데스크에 일정한 주소가 있는 것처럼, 서비스에도 시스템의 다른 부분들이 응용 프로그램과 통신하기 위해 사용할 수 있는 안정적인 주소가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. Namespace란 무엇인가요?
 
@@ -368,8 +677,18 @@ docker push public.ecr.aws/l0l7e4u1/3-tier-backend:latest
 
 - 다음 명령어를 실행하여 EKS 클러스터를 설정하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 eksctl create cluster --name three-tier-cluster --region us-east-1 --node-type t2.medium --nodes-min 2 --nodes-max 2
@@ -383,8 +702,18 @@ kubectl get nodes
 
 3. AWS 콘솔에서 AWS CloudFormation을 검색하여 EKS 클러스터 생성 중 발생하는 이벤트를 확인하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 명령어를 사용하여 Namesapce를 생성하세요.
 
@@ -393,7 +722,18 @@ kubectl create namespace workshop
 kubectl config set-context --current --namespace workshop
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_36.png" />
 
@@ -403,7 +743,18 @@ kubectl config set-context --current --namespace workshop
 
 <img src="/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_37.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. frontend-deployment.yaml 파일을 편집해야 합니다.
 
@@ -413,7 +764,18 @@ kubectl config set-context --current --namespace workshop
 
 4. 따라서 ECR 레포지토리로 이동하여 프론트엔드 레포지토리를 선택한 후 "View public listing"을 클릭하여 이미지 이름을 복사하고 frontend-deployment.yaml 파일에 붙여넣으세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 다음 명령어를 실행하여 프론트엔드용 배포 및 서비스를 생성하세요.
 
@@ -429,7 +791,18 @@ kubectl apply -f frontend-service.yaml
 - 변경해야 할 것은 이미지 이름뿐입니다.
 - 따라서 ECR 저장소로 이동하여 백엔드 저장소를 선택한 다음, "View Public Listing"을 클릭하여 이미지 이름을 복사한 후 backend-deployment.yaml 파일 안에 붙여넣으세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 다음 명령을 실행하여 배포 및 백엔드 서비스를 생성하십시오.
 
@@ -443,7 +816,18 @@ kubectl get pods -n workshop
 
 ## 단계 4 → 데이터베이스 계층 설정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 배포, 서비스 및 시크릿 매니페스트를 저장하는 몽고 폴더를 찾아주세요.
 
@@ -456,7 +840,18 @@ kubectl get all
 
 ![이미지](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_39.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 모든 세 티어가 준비되었습니다. 하지만 이들을 어떻게 액세스할까요? 클러스터로 외부 트래픽을 전송하기 위해 애플리케이션 로드 밸런서를 생성해야 하고, 내부의 3개 티어 사이를 연결하기 위해 인그레스를 만들어야 합니다.
 
@@ -466,7 +861,18 @@ kubectl get all
 
 ## 단계 1 → AWS 로드 밸런서 설정; 설치 및 EKS 클러스터에 연결
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 아래 명령은 ALB의 IAM 정책을 가져옵니다.
 
@@ -478,7 +884,18 @@ curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-cont
 
 2. 이 명령어는 첫 번째 명령어에서 설정한 `iam_policy.json` 파일을 사용하여 AWS 계정에서 IAM 정책을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy --policy-document file://iam_policy.json
@@ -492,7 +909,18 @@ aws iam create-policy --policy-name AWSLoadBalancerControllerIAMPolicy --policy-
 eksctl utils associate-iam-oidc-provider --region=us-east-1 --cluster=three-tier-cluster --approve
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 명령어는 클러스터에 서비스 계정을 생성하고 추가하여 클러스터가 로드 밸런서 서비스와 작업할 수 있도록합니다.
 
@@ -502,7 +930,18 @@ eksctl utils associate-iam-oidc-provider --region=us-east-1 --cluster=three-tier
 eksctl create iamserviceaccount --cluster=three-tier-cluster --namespace=kube-system --name=aws-load-balancer-controller --role-name AmazonEKSLoadBalancerControllerRole --attach-policy-arn=arn:aws:iam::767397866747:policy/AWSLoadBalancerControllerIAMPolicy --approve --region=us-east-1
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_43.png" />
 
@@ -514,7 +953,18 @@ eksctl create iamserviceaccount --cluster=three-tier-cluster --namespace=kube-sy
 sudo snap install helm --classic
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 6. 이제 로드 밸런서를 위해 eks 리포지토리에서 미리 작성된 특정 manifest 파일을 추가해야 해요. helm을 사용하여 다음 명령을 실행해주세요.
 
@@ -528,7 +978,18 @@ helm repo add eks https://aws.github.io/eks-charts
 helm repo update eks
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 8. EKS 클러스터에 로드 밸런서 컨트롤러를 설치해주세요
 
@@ -541,7 +1002,18 @@ kubectl get deployment -n kube-system aws-load-balancer-controller
 
 이제 로드 밸런서가 작동되니 내부 라우팅을 위해 인그레스를 설정합시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Step 2 → 내부 라우팅을 위한 Ingress 설정
 
@@ -554,7 +1026,18 @@ kubectl apply -f full_stack_lb.yaml
 kubectl get ing -n workshop
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_46.png" />
 
@@ -564,7 +1047,18 @@ kubectl get ing -n workshop
 
 축하합니다!! 여러분의 애플리케이션이 로드 밸런서 인그레스를 통해 접근 가능합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5 단계 → 모두 삭제하기
 
@@ -576,7 +1070,18 @@ kubectl delete -f .
 
 2. 데이터베이스 계층을 삭제하려면 몽고 폴더로 이동하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 kubectl delete -f .
@@ -591,8 +1096,18 @@ aws cloudformation delete-stack --stack-name eksctl-three-tier-cluster-cluster
 
 4. AWS의 클라우드 형성 콘솔에서 모든 변경 사항을 확인할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Project Screenshot](/assets/img/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes_48.png)
 
@@ -600,7 +1115,17 @@ aws cloudformation delete-stack --stack-name eksctl-three-tier-cluster-cluster
 
 ## 오늘은 여기까지 프로젝트가 완료되었어요. 만약 여기까지 오셨다면 박수를 치세요. 그리고 LinkedIn에서 저를 팔로우해주세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 깃허브 계정을 팔로우해주세요!

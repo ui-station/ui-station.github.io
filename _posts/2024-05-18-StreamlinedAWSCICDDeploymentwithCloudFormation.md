@@ -3,13 +3,12 @@ title: "AWS CloudFormation을 활용한 간편한 CICD 배포 설정 설정"
 description: ""
 coverImage: "/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_0.png"
 date: 2024-05-18 16:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_0.png
 tag: Tech
 originalTitle: "Streamlined AWS CI CD Deployment with CloudFormation"
 link: "https://medium.com/@jayshenkar27apr/streamlined-aws-ci-cd-deployment-with-cloudformation-e1077fef0634"
 ---
-
 
 <img src="/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_0.png" />
 
@@ -19,7 +18,18 @@ CI 및 CD는 지속적 통합(Continuous Integration) 및 지속적 전달/지�
 
 # 시작하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사의 목표는 AWS를 사용하여 애플리케이션을 구축, 테스트 및 배포하는 과정을 실제 예제를 통해 안내하는 것입니다.
 
@@ -36,7 +46,18 @@ CI 및 CD는 지속적 통합(Continuous Integration) 및 지속적 전달/지�
 - CodePipeline
 - CloudFormation
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # AWS 아키텍처 다이어그램
 
@@ -46,7 +67,18 @@ CI 및 CD는 지속적 통합(Continuous Integration) 및 지속적 전달/지�
 
 ## 단계 1: CodeCommit
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS CodeCommit은 사용자가 소스 코드 및 자산을 안전하고 확장 가능하게 저장, 관리 및 버전 관리할 수 있도록 하는 AWS의 관리형 소스 제어 서비스입니다. 이는 GitHub이 하는 것과 마찬가지로 작동합니다.
 
@@ -56,7 +88,18 @@ AWS CodeCommit은 사용자가 소스 코드 및 자산을 안전하고 확장 �
 
 ‘AWS CodeCommit을 위한 HTTPS Git 자격 증명’ 섹션에서 ‘자격 증명 생성’을 클릭하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 나아가, 이 자격 증명을 다운로드하고, Git 자격 증명을 입력하라는 메시지가 표시됩니다. 앞서 다운로드한 사용자 이름과 비밀번호를 입력하세요.
 
@@ -68,7 +111,18 @@ AWS CodeCommit은 사용자가 소스 코드 및 자산을 안전하고 확장 �
 git clone <your-codecommit-repo-clone-https-url>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬 브랜치에서 CodeCommit 리포지토리로 변경 사항을 푸시하려면 다음 명령을 사용하세요:
 
@@ -80,7 +134,18 @@ CodeCommit 리포지토리로 변경 사항이 제대로 푸시되었는지 확�
 
 ![이미지](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 4: S3 버킷 생성
 
@@ -90,8 +155,18 @@ CodeCommit 리포지토리로 변경 사항이 제대로 푸시되었는지 확�
 
 버킷이 성공적으로 생성되었는지 확인하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Step 5: CodeBuild](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_5.png)
 
@@ -99,8 +174,18 @@ As you can see our S3 bucket has been successfully created. Now, let’s dive in
 
 ![Step 5: CodeBuild](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS CodeBuild 서비스로 이동하여 아래와 같이 빌드 프로젝트를 생성하세요. 원하는 프로젝트 이름을 지정해주세요.
 
@@ -110,7 +195,18 @@ AWS CodeBuild 서비스로 이동하여 아래와 같이 빌드 프로젝트를 
 
 ![CodeCommit 저장소 선택](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 환경 설정을 기본값으로 유지하십시오.
 
@@ -120,7 +216,18 @@ AWS CodeBuild 서비스로 이동하여 아래와 같이 빌드 프로젝트를 
 
 빌드 사양에서는 buildspec.yml 파일을 사용할 것입니다. buildspec 파일의 이름을 지정하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 참고: buildspec.yml 파일은 CodeCommit 리포지토리에 저장되어 있어야 합니다.
 
@@ -154,7 +261,18 @@ artifacts:
   discard-paths: yes
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 아티팩트 섹션에서 아티팩트 유형으로 Amazon S3를 선택하고 "Bucket Name" 아래에서 생성한 버킷 이름을 선택하세요. 또한 버킷 내에서 빌드 아티팩트를 저장할 폴더 이름을 지정해주세요.
 
@@ -162,14 +280,22 @@ artifacts:
 
 아래는 테이블 태그입니다.
 
-
 <img src="/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_11.png" />
-
 
 나머지 구성은 기본값으로 남겨두고 "빌드 프로젝트 생성"을 클릭하세요. "빌드 프로젝트 생성"을 클릭하면 새 인터페이스로 리디렉션되어 프로젝트 빌드를 시작할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_12.png)
 
@@ -179,8 +305,18 @@ artifacts:
 
 빌드 소요 시간은 buildspec.yml 파일의 구성에 따라 다를 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_14.png" />
 
@@ -190,7 +326,18 @@ artifacts:
 
 <img src="/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_15.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 빌드 아티팩트는 이제 "cloud-project-codebuild-1.zip"라는 폴더 아래 버킷에 안전하게 저장되어 있습니다. 이 지정된 버킷은 프로젝트 후속 단계에서 아티팩트를 배포하는 믿을 수 있는 저장소 역할을 할 것입니다.
 
@@ -200,10 +347,20 @@ AWS CloudFormation 템플릿의 도움으로 인프라를 시작했습니다. �
 
 다음 링크로 CFT를 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노트: 위 템플릿으로 리소스를 출시하는 경우에는 반드시 AMI ID, 역할 및 기타 매핑을 사용하도록 해주세요.
-
 
 ![Image 16](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_16.png)
 
@@ -211,8 +368,18 @@ AWS CloudFormation 템플릿의 도움으로 인프라를 시작했습니다. �
 
 ![Image 18](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_18.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스택이 성공적으로 시작되었고 모든 리소스가 준비되었습니다.
 
@@ -223,7 +390,18 @@ CodeDeploy를 시작하려면 먼저 2가지 역할을 생성해야 합니다.
 - CodeDeploy 역할: 기본 CodeDeploy 권한
 - EC2를 위한 역할: AWSCodeDeployFullAccess 또는 EC2RoleForCodeDeploy AWS 관리 정책을 역할에 부여하세요. 이제 이 역할을 이전에 시작한 EC2 인스턴스에 부여하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_19.png" />
 
@@ -264,7 +442,18 @@ hooks:
       runas: ec2-user
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 The appspec.yml file uses shell scripts to manage the hooks. You can find these scripts here.
 
@@ -274,7 +463,18 @@ Next, navigate to the CodeDeploy service and create an application by specifying
 
 ![Image 2](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_22.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어플리케이션이 생성된 후에 이제 배포 그룹을 만듭니다. 배포 그룹에 이름을 지정하세요.
 
@@ -284,7 +484,18 @@ Next, navigate to the CodeDeploy service and create an application by specifying
 
 배포 유형 선택중:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 변경 대상: 수정 사항이 적용될 때 애플리케이션이 잠시 오프라인 상태가 됩니다.
 - Blue/Green (선호): 수정 사항이 적용된 새 인스턴스가 시작되는 동안 이전 인스턴스는 여전히 사용자에게 서비스를 제공합니다. 여기서 업데이트는 다운타임 없이 이루어집니다.
@@ -295,7 +506,18 @@ Next, navigate to the CodeDeploy service and create an application by specifying
 
 배포 설정에서 다른 구성은 기본 설정으로 유지합니다. 이제 배포 그룹을 생성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image1](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_25.png)
 
@@ -305,7 +527,18 @@ Next, navigate to the CodeDeploy service and create an application by specifying
 
 ![image2](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_26.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 출발할 준비가 되었습니다. 배포를 시작하세요.
 
@@ -315,7 +548,18 @@ Next, navigate to the CodeDeploy service and create an application by specifying
 
 ## 단계 8: CodePipeline
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS 콘솔의 CodePipeline으로 이동하여 "파이프라인 생성"을 클릭하세요.
 
@@ -325,7 +569,18 @@ CodeCommit 리포지토리, CodeBuild 프로젝트 및 CodeDeploy 응용 프로�
 
 ![이미지](/assets/img/2024-05-18-StreamlinedAWSCICDDeploymentwithCloudFormation_29.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 단계가 성공적으로 완료된 후, 엔드포인트 URL을 방문해주세요. 여러분의 웹 애플리케이션이 이제 라이브 상태여야 합니다.
 
@@ -335,7 +590,18 @@ CodeCommit 리포지토리, CodeBuild 프로젝트 및 CodeDeploy 응용 프로�
 
 이 글에서는 AWS와 CloudFormation을 사용하여 Java-17 Maven 애플리케이션의 CI/CD 파이프라인을 설정하고 최적화하는 과정을 살펴보았습니다. 빌드, 테스트 및 배포 단계를 자동화함으로써 더 효율적이고 안정적이며 확장 가능한 배포 프로세스를 구현했습니다. 이는 인간 에러 가능성을 줄일뿐만 아니라 소프트웨어 전달에 일관된 접근 방식을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 프로젝트에서 소중한 협업을 해준 Mohit Jaiswal에게 감사의 말씀을 전하고 싶습니다. 함께 작업함으로써 배포 프로세스를 효율적으로 간소화하고 응용 프로그램을 최고 품질 기준으로 전달할 수 있었습니다.
 

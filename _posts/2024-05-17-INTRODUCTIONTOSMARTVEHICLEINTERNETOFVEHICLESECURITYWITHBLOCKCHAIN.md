@@ -3,13 +3,12 @@ title: "블록체인을 활용한 스마트 차량 IoV 보안 소개"
 description: ""
 coverImage: "/assets/img/2024-05-17-INTRODUCTIONTOSMARTVEHICLEINTERNETOFVEHICLESECURITYWITHBLOCKCHAIN_0.png"
 date: 2024-05-17 19:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-INTRODUCTIONTOSMARTVEHICLEINTERNETOFVEHICLESECURITYWITHBLOCKCHAIN_0.png
 tag: Tech
 originalTitle: "INTRODUCTION TO SMART VEHICLE (INTERNET OF VEHICLE) SECURITY WITH BLOCKCHAIN"
 link: "https://medium.com/@muskanyadavnewdelhi/introduction-to-smart-vehicle-internet-of-vehicle-security-with-blockchain-a48a9c1c24c3"
 ---
-
 
 <img src="/assets/img/2024-05-17-INTRODUCTIONTOSMARTVEHICLEINTERNETOFVEHICLESECURITYWITHBLOCKCHAIN_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@muskanyadavnewdelhi/introduction-to-smart-vehicle-int
 
 전기 자동차의 필요성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 우리제품은 배기가스를 배출하지 않아요 = 천식, 폐암, 폐포획증
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@muskanyadavnewdelhi/introduction-to-smart-vehicle-int
 
 4. 가격이 더 저렴해요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 엔진 없음 소음 없음
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@muskanyadavnewdelhi/introduction-to-smart-vehicle-int
 
 인구 증가 속도가 급격히 증가함에 따라 한정된 자원을 최대로 활용해야 하는 필요성이 매우 중요해졌습니다. 미래의 고갈을 줄이기 위해 충분한 유용한 공급품을 갖춘 좋은 연결 환경, 그리고 실시간 데이터를 모니터링하여 삶의 질을 향상시키는 것을 스마트 도시의 개념이라고 합니다. 나중에 발생할 문제를 이해하는 데 많은 도움이 될 스마트 도시의 기능을 강조하기 전에 나아가기 전에 좋은 아이디어가 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘 EV가 블록체인 보안 없이 얼마나 안전한지에 대해 고민해 봅시다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@muskanyadavnewdelhi/introduction-to-smart-vehicle-int
 
 I. 최신 및 시간을 절약하는 교통 시스템입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 II. 신뢰할 수 있는 분산 원장.
 
@@ -59,7 +102,18 @@ III. 자동 모니터링 시스템.
 
 ## 블록 + 체인 기술
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중요한 점은 최종 사용자에게 충실성을 제공하는 제삼자 액세스를 제거하는 것입니다. 그 이름에서 알 수 있듯이, 이는 통신을 위해 연결된 개인 정보로 포함된 다양한 수의 블록으로 이루어진 데이터베이스입니다. 이 연결은 미토콘드리아에 있는 ATP(아데노신 삼인산)와 마찬가지로 저장 목적으로 사용됩니다.
 
@@ -69,14 +123,36 @@ III. 자동 모니터링 시스템.
 
 특징들:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 변경할 수 없음
 - 되돌릴 수 없음
 - 타임 스탬프가 찍힘
 - 합의 과정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 작업 증명
 
@@ -86,7 +162,18 @@ III. 자동 모니터링 시스템.
 
 해시 함수는 충돌 없이 올바른 매핑을 통해 해시 테이블을 통해 새로운 길이가 더 작은 문자(버킷)을 생성하는 데 도움을 줍니다. 키-값 쌍은 파이썬의 딕셔너리 개념과 마찬가지로 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 유형
 
@@ -96,7 +183,18 @@ III. 자동 모니터링 시스템.
 
 - **접기 방식** h(K) = s
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리는 다양한 유형의 해시 함수에 대해 배웠으니 DTL'S라고 알려진 하이테크 보안 원장 시스템의 요구를 충족하는 일부 알고리즘을 살펴 보겠습니다.
 
@@ -106,7 +204,18 @@ SHA-1의 정제된 형태(중요한 속성을 상속함). 특별한 알고리즘
 
 누군가가 디지털 화폐 형태(예: 비트코인, 리트코인, 이더리움)로 자금을 이체하고 싶을 때, 그는 애플리케이션을 믿으며 해당 애플리케이션의 소유자가 변경되지 않은 서비스를 제공하는 책임이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 가지 다른 당사자 간의 목적을 위한 계약을 체결하는 것과 유사한 상황입니다.
 
@@ -116,7 +225,18 @@ SHA-1의 정제된 형태(중요한 속성을 상속함). 특별한 알고리즘
 
 ![이미지2](/assets/img/2024-05-17-INTRODUCTIONTOSMARTVEHICLEINTERNETOFVEHICLESECURITYWITHBLOCKCHAIN_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 거래 구조
 
@@ -126,8 +246,18 @@ XYZ Private Limited 회사에 자금을 이체하려고 한다고 가정해봅�
 
 여기서 합의 프로세스의 사용이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Introducing Smart Vehicle Security with Blockchain](/assets/img/2024-05-17-INTRODUCTIONTOSMARTVEHICLEINTERNETOFVEHICLESECURITYWITHBLOCKCHAIN_4.png)
 
@@ -137,8 +267,18 @@ Nowadays, cryptocurrencies are growing like never before.
 
 ## Why is security so crucial in the automobile industry?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 a) 연결성을 높이는 것
 
@@ -148,7 +288,18 @@ b) 데이터 취약성으로부터 안전
 
 ## 관련 작업
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - IOTA Tangle은 자신들의 원장이 블록체인의 탈중앙화된 원장보다 강력하고 빠르다고 주장했지만 2017년에 382만 달러의 도난 사건이 발생하여 MIOTA(IOTA)의 완전한 실패로 이어졌습니다.
 
@@ -158,7 +309,18 @@ b) 데이터 취약성으로부터 안전
 
 - SPIC-C는 사설 주차장을 위해 설계된 시스템 중 하나입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 2019년 6월 이후로, 미시건 공과대학교의 디지털 통화 이니셔티브는 40여 건 이상의 51% 공격을 감지하거나 관찰하였으며 알려졌습니다.
 
@@ -168,7 +330,18 @@ b) 데이터 취약성으로부터 안전
 
 1. EEG를 통한 웨어러블 및 무선 감지 기술
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 운전자의 움직임을 감지하는 데이터 분석
 
@@ -178,7 +351,18 @@ b) 데이터 취약성으로부터 안전
 
 ## 어떤 알고리즘을 사용해야 할까요? (해결책)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # APRIORI 알고리즘
 
@@ -188,7 +372,18 @@ b) 데이터 취약성으로부터 안전
 
 학교로 향하는 도중 길에 흩어진 쓰레기통이나 자전거 타이어를 찔 수 있는 날카로운 가장자리를 가진 유리 조각 등이 몸에 영향을 주기 전까지 보이지 않을 수 있습니다. 이러한 상황 모두에서 공통점은 다양한 위험 상황에 노출될 가능성이 매우 높다는 것입니다. 누군가는 차량의 방향을 변경해서 피하면 된다고 생각할 수 있지만 실제로 그렇지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 판단 능력을 지수적으로 향상시켜야 합니다. 시간 내 주변 상황을 미리 예측하는 능력은 실제로 생명을 구할 수 있는 응답 시간을 포함합니다.
 
@@ -198,7 +393,18 @@ b) 데이터 취약성으로부터 안전
 
 기계의 주요 단점은 고장과 실수에 매우 취약하다는 점입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 큰 양의 훈련된 데이터가 필요합니다.
 
@@ -208,7 +414,18 @@ b) 데이터 취약성으로부터 안전
 
 컴퓨터 비전이 블록체인과 손을 잡아 중요한 역할을 하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 텍스타일 산업: 천연 원료를 인공적으로 가공하여 완제품으로 만드는 농업 기반 산업이에요. 천의 품질, 옷이 제공하는 안전 수준, 식품 산업 등이 중요한 요소에요.
 
@@ -220,7 +437,18 @@ b) 데이터 취약성으로부터 안전
 - [IOTA](https://www.iota.org/)
 - [Argus Security](https://argus-sec.com/)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "내게 말해주면 나는 잊어버리고, 가르쳐주면 기억할 수도 있지만, 함께 참여시켜주면 나는 배운다." - 벤자민 프랭클린
 

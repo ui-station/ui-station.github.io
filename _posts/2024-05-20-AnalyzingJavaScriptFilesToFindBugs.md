@@ -3,13 +3,12 @@ title: "자바스크립트 파일 분석으로 버그 찾기"
 description: ""
 coverImage: "/assets/img/2024-05-20-AnalyzingJavaScriptFilesToFindBugs_0.png"
 date: 2024-05-20 21:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-AnalyzingJavaScriptFilesToFindBugs_0.png
 tag: Tech
 originalTitle: "Analyzing JavaScript Files To Find Bugs"
 link: "https://medium.com/@rajput623929/analyzing-javascript-files-to-find-bugs-2b7d67a52c4e"
 ---
-
 
 안녕하세요, 해커 여러분, 저는 Horbio입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rajput623929/analyzing-javascript-files-to-find-bugs-
 
 상호 작용: 자바스크립트를 사용하면 개발자들이 웹 페이지에 상호 작용성과 반응성을 추가하여 더 매력적이고 사용자 친화적인 환경을 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 동적 콘텐츠: 자바스크립트는 전체 페이지를 새로 고치지 않고도 웹 페이지의 콘텐츠를 동적으로 로드하고 업데이트하는 것을 용이하게 합니다. 이는 사용자 경험을 크게 향상시킵니다.
 
@@ -36,7 +46,18 @@ link: "https://medium.com/@rajput623929/analyzing-javascript-files-to-find-bugs-
 - OAuth 토큰
 - OAuth 토큰 비밀번호
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 민감한 정보를 발견하면 정보 노출로 보고할 수 있습니다. 정보에 자격 증명이 포함되어 있는 경우, 액세스 제어의 파괴와 같은 보안 취약점으로 이어질 수 있으며, 이에 따라 보고해야 합니다.
 
@@ -46,8 +67,18 @@ link: "https://medium.com/@rajput623929/analyzing-javascript-files-to-find-bugs-
 
 답은 간단합니다 — 페이지 소스를 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:996/0*MfcnicBkd4dj3md_.gif)
 
@@ -58,8 +89,18 @@ I found valid login credentials in JavaScript files. Here are the steps to do it
 - Get a list of your domains (we call it domains.txt).
 - Use a tool for crawling URLs, such as Katana, Waybackurls, or gau.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 cat domains.txt | katana | grep js | httpx -mc 200 | tee js.txt
@@ -74,7 +115,18 @@ cat domains.txt | katana | grep js | httpx -mc 200 | tee js.txt
 
 전반적으로, 이 명령어 시퀀스는 제공된 도메인을 JavaScript 파일에 대해 스캔하고 관련 없는 URL을 필터링하며 적절한 JavaScript 파일 URL을 추가 분석이나 테스트를 위해 저장하는 데 효과적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 너클리로 스캐닝
 
@@ -94,11 +146,20 @@ do
 done < "$file"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-grep -r -E "aws_access_key|aws_secret_key|api key|passwd|pwd|heroku|slack|firebase|swagger|aws_secret_key|aws key|password|ftp password|jdbc|db|sql|secret jet|config|admin|pwd|json|gcp|htaccess|.env|ssh key|.git|access key|secret token|oauth_token|oauth_token_secret|smtp" *.js
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+grep -r -E "aws_access_key|aws_secret_key|api key|passwd|pwd|heroku|slack|firebase|swagger|aws_secret_key|aws key|password|ftp password|jdbc|db|sql|secret jet|config|admin|pwd|json|gcp|htaccess|.env|ssh key|.git|access key|secret token|oauth_token|oauth_token_secret|smtp" \*.js
 
 **BOOM GUYS**
 
@@ -106,8 +167,18 @@ grep -r -E "aws_access_key|aws_secret_key|api key|passwd|pwd|heroku|slack|fireba
 
 I hope it is helpful for you.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 중요: 여기 방문해주세요
 
@@ -117,7 +188,18 @@ I hope it is helpful for you.
 
 구독: [https://www.youtube.com/channel/UCBiIg0P8onz7EZgXNhjpR4A/](https://www.youtube.com/channel/UCBiIg0P8onz7EZgXNhjpR4A/)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가입 : https://t.me/MrHorbio
 

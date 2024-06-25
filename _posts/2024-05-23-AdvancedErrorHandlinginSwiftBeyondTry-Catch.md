@@ -3,13 +3,12 @@ title: "Swift에서의 고급 오류 처리 Try-Catch를 넘어서"
 description: ""
 coverImage: "/assets/img/2024-05-23-AdvancedErrorHandlinginSwiftBeyondTry-Catch_0.png"
 date: 2024-05-23 13:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-AdvancedErrorHandlinginSwiftBeyondTry-Catch_0.png
 tag: Tech
 originalTitle: "Advanced Error Handling in Swift: Beyond Try-Catch"
 link: "https://medium.com/@priyans05/advanced-error-handling-in-swift-beyond-try-catch-8ef4934143fd"
 ---
-
 
 <img src="/assets/img/2024-05-23-AdvancedErrorHandlinginSwiftBeyondTry-Catch_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@priyans05/advanced-error-handling-in-swift-beyond-try
 
 왜 고급 오류 처리가 중요한가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본 try-catch를 사용한 기본적인 오류 처리는 많은 시나리오에 효과적이지만, 고급 기술은 다음과 같은 여러 가지 이점을 제공합니다:
 
@@ -32,7 +42,18 @@ link: "https://medium.com/@priyans05/advanced-error-handling-in-swift-beyond-try
 
 결과 유형은 성공 또는 실패를 나타내며, 값이나 오류를 캡슐화합니다. 오류 처리에 대해 더 함수형 접근 방식을 제공하며 비동기 작업에서 특히 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기본 예제 및 결과
 
@@ -69,7 +90,18 @@ case .failure(let error):
 
 Async/Await으로 에러 처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Swift의 새로운 동시성 모델은 async/await를 도입하여 비동기 코드를 처리하기 쉬워졌어요. 이 문맥에서 오류를 처리하는 방법을 살펴봅시다.
 
@@ -106,7 +138,18 @@ Task {
 
 이 예제에서 fetchData 함수는 비동기이며 오류를 던질 수 있습니다. 이 오류는 processData 함수 내에서 try-catch를 사용하여 처리됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자 정의 오류 유형 만들기
 
@@ -145,7 +188,18 @@ do {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에서 FileError는 파일 작업과 관련된 특정 오류를 정의합니다. readFile 함수는 이러한 오류 유형을 사용하여 상세한 오류 정보를 제공합니다.
 
@@ -160,7 +214,18 @@ enum ValidationError: Error {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 적절한 수준으로 오류 전파하기: 오류를 효과적으로 처리할 수 있는 적절한 수준으로 전파하십시오.
 
@@ -184,7 +249,18 @@ func fetchData() async {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 중앙 집중식 오류 로깅: 디버깅을 간소화하기 위해 오류를 기록하는 데 중앙 집중식 방법을 사용하세요.
 
@@ -210,7 +286,18 @@ func displayError(_ error: Error) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론
 

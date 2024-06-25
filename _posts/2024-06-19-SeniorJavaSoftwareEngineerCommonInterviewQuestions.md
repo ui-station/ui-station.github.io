@@ -3,13 +3,12 @@ title: "시니어 자바 소프트웨어 엔지니어가 흔히 받는 인터뷰
 description: ""
 coverImage: "/assets/img/2024-06-19-SeniorJavaSoftwareEngineerCommonInterviewQuestions_0.png"
 date: 2024-06-19 10:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-SeniorJavaSoftwareEngineerCommonInterviewQuestions_0.png
 tag: Tech
 originalTitle: "Senior Java Software Engineer Common Interview Questions"
 link: "https://medium.com/thefreshwrites/senior-java-software-engineer-common-interview-questions-bd2ac0bac9e1"
 ---
-
 
 ![image](/assets/img/2024-06-19-SeniorJavaSoftwareEngineerCommonInterviewQuestions_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/thefreshwrites/senior-java-software-engineer-common-in
 
 물론, 다른 질문들도 받았지만, 가장 자주 나오는 것들을 여기에 정리해 두는 것이죠. 새로운 반복들을 발견할 때마다 다른 질문과 이에 대한 직접적인 답변들도 추가할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 객체 지향 프로그래밍이란 무엇인가요?
 
@@ -29,7 +39,18 @@ link: "https://medium.com/thefreshwrites/senior-java-software-engineer-common-in
 
 의존성 주입(DI)은 소프트웨어 공학에서의 디자인 패턴으로, 구성 요소의 의존성이 구성 요소 자체 내에서 생성되는 대신 외부에서 주입되는 방식입니다. 이는 구성 요소가 자체 의존성을 만드는 대신 외부 소스로부터 제공받는 것을 의미합니다. DI의 주요 장점에는 모듈성 증가, 테스트 용이성 및 관심사의 분리가 포함됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 의존성 주입의 장점은 무엇인가요?
 
@@ -43,7 +64,18 @@ link: "https://medium.com/thefreshwrites/senior-java-software-engineer-common-in
 - 세터 주입: 의존성은 세터 메서드를 통해 제공됩니다.
 - 메서드 주입: 의존성은 메서드를 통해 제공됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데드락이란 무엇인가요?
 
@@ -55,7 +87,18 @@ link: "https://medium.com/thefreshwrites/senior-java-software-engineer-common-in
 - 세마포어: 상호 배제를 보장하여 임계 구역에 하나의 프로세스만 들어가도록 합니다.
 - 상호 배제: 이 조건은 최소한 하나의 자원이 공유할 수 없는 모드로 보유되어야 한다는 것을 의미합니다. 프린터나 테이프 드라이브와 같은 일부 자원은 본질적으로 공유할 수 없기 때문에 이 조건을 제거하는 것이 항상 가능하지는 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 장애 허용이란 무엇인가요?
 
@@ -65,7 +108,18 @@ link: "https://medium.com/thefreshwrites/senior-java-software-engineer-common-in
 
 서킷 브레이커는 전기가 너무 많이 흐를 경우 자동으로 전기를 차단하여 전기 화재를 예방하고 가전제품을 보호하는 안전 스위치와 같은 역할을 합니다. 소프트웨어에서는 서킷 브레이커 패턴이 서비스의 장애를 막아 시스템이 회복할 수 있도록 요청 흐름을 중지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # SQL 대 NoSQL
 
@@ -76,7 +130,18 @@ link: "https://medium.com/thefreshwrites/senior-java-software-engineer-common-in
 
 ## NoSQL을 사용해야 하는 경우:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 수평 확장성: 확장성이 중요할 때 NoSQL은 더 유연합니다.
 - 반구조화/구조화되지 않은 데이터: 관계형 모델에 잘 맞지 않는 JSON이나 XML과 같은 데이터에 적합합니다.
@@ -88,7 +153,18 @@ link: "https://medium.com/thefreshwrites/senior-java-software-engineer-common-in
 
 ## REST란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 REST (Representational State Transfer)은 HTTP 프로토콜을 사용하여 분산 시스템 간 통신하는 시스템 디자인입니다.
 
@@ -99,7 +175,18 @@ REST (Representational State Transfer)은 HTTP 프로토콜을 사용하여 분�
 
 # Java에서 equals()와 hashCode() 메서드의 차이점은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - equals(): 두 개의 객체가 논리적으로 동일한지를 결정합니다.
 - hashCode(): 객체에 대한 해시 값을 제공합니다. HashMap 및 HashSet과 같은 해시 기반 컬렉션에서 올바른 동작을 보장하려면 두 메서드를 함께 오버라이드해야 합니다.
@@ -111,7 +198,18 @@ REST (Representational State Transfer)은 HTTP 프로토콜을 사용하여 분�
 
 ## Checked와 Unchecked 예외의 차이점은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 확인된 예외: 컴파일 시간에 확인되며 명시적으로 처리하거나 선언이 필요합니다.
 - 확인되지 않은 예외(런타임 예외): 실행 중에 발생하며 명시적 처리 없이 프로그램이 컴파일됩니다.
@@ -122,7 +220,18 @@ REST (Representational State Transfer)은 HTTP 프로토콜을 사용하여 분�
 
 # 운영 중 버그를 모니터링하는 방법은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 로깅: Log4J를 사용합니다.
 - 로그 관리: Logstash 또는 Datadog와 같은 도구를 사용합니다.
@@ -135,7 +244,18 @@ REST (Representational State Transfer)은 HTTP 프로토콜을 사용하여 분�
 
 # 코드 품질을 유지하는 방법은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코드 리뷰: 코드를 정기적으로 검토하여 명확하고 이해하기 쉽도록 유지합니다. 변수 이름, 주석, 코드 구조 등을 확인하는 것이 포함됩니다.
 - 자동화 테스팅: 단위 및 통합 테스트를 사용하여 코드가 예상대로 작동하고 변경 사항을 적용할 때 회귀가 발생하는 것을 방지합니다.
@@ -154,7 +274,18 @@ REST (Representational State Transfer)은 HTTP 프로토콜을 사용하여 분�
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 저자의 경험을 반영하여 시니어 자바 소프트웨어 엔지니어를 위한 일반적인 인터뷰 질문을 포괄적으로 제공합니다. 객체 지향 프로그래밍, 의존성 주입, 동시성 및 SOLID 원칙과 같은 중요한 주제를 다루며, 지원자가 효과적으로 준비할 수 있도록 간결하고 직접적인 답변을 제공합니다. 또한, 오류 허용성, SQL 대 NoSQL, 코드 품질 유지 방법과 같은 실제 관련 문제들을 다룹니다. 이러한 통찰을 공유함으로써, 이 기사는 시니어 자바 개발자들이 인터뷰에서 뛰어나고 자신의 경력을 발전시킬 수 있는 지식을 갖추도록 목표로 합니다.
 

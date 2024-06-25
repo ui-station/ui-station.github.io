@@ -3,13 +3,12 @@ title: "나만의 레드카펫을 직접 연출하다 낸시 타야기"
 description: ""
 coverImage: "/assets/img/2024-05-20-StitchingHerOwnRedCarpettoCannesNancyTyagi_0.png"
 date: 2024-05-20 19:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-StitchingHerOwnRedCarpettoCannesNancyTyagi_0.png
 tag: Tech
 originalTitle: "Stitching Her Own Red Carpet to Cannes: Nancy Tyagi"
 link: "https://medium.com/@hiediprt/stitching-her-own-red-carpet-to-cannes-nancy-tyagi-cd69828869f5"
 ---
-
 
 나시 타야기는 자신의 옷을 직접 짜서 2024년 칸느 국제 영화제 아름다운 레드 카펫으로 향했어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@hiediprt/stitching-her-own-red-carpet-to-cannes-nancy
 
 20kg 가량의 아름다운 베이비 핑크 색상의 러플 드레스를 입은 그녀는 한 달이 걸렸어요. 칸느로 떠나기 하루 전 나시는 인스타그램 스토리 업로드를 통해 드레스를 아직 마무리하지 못했다며 불안해했어요. 하지만 레드 카펫에 나타나자 마자 눈이 부시게 빛났어요! 쥬얼리는 드레스를 가리지 않는 미니멀한 디자인의 것들로 매치했어요. CaratLane의 목걸이와 어울리는 귀고리와 반지들을 선택했죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 우리가 페미니스트적 시각으로 본다면, 그녀는 실제로 전형적인 편견을 깨고 있는 것 같아요!
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@hiediprt/stitching-her-own-red-carpet-to-cannes-nancy
 
 3. 대표성과 가시성: 외국에서도 다양한 국적의 사람들 사이에서, 나시는 대담하게 자국어인 힌디어를 말했어요! 많은 사람들이 자신이 아닌 누군가가 되려고 노력하는 가운데, 그녀가 자신의 진정한 정체성을 수용하는 것을 보는 것은 존경스럽죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네이시가 언제 유명해지기 시작했나요?
 

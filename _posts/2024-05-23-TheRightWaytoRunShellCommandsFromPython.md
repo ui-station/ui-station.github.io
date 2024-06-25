@@ -18,7 +18,18 @@ link: "https://medium.com/better-programming/the-right-way-to-run-shell-commands
 
 # 옵션들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이썬은 다른 프로그램과 상호 작용하는 내장 옵션이 너무 많습니다. 그 중에서도 어떤 것은 좋고 나쁨이 있지만 솔직히 말해서 나는 어느 것도 좋아하지 않아요. 각 옵션을 빠르게 살펴보고 특정 모듈을 사용해야 하는 시점(있는 경우)을 확인해 봅시다.
 
@@ -32,7 +43,18 @@ link: "https://medium.com/better-programming/the-right-way-to-run-shell-commands
 - signal — 신호 핸들러를 사용해야 하는 경우에 필요합니다.
 - syslog — Unix syslog에 대한 인터페이스를 위해 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 위에 제공된 내장 옵션들 중에서 아무것도 원하는 대로 만족스럽지 않다면, 그때만 운영 체제나 다른 프로그램과 직접 상호 작용하는 것이 의미가 있습니다.
 
@@ -42,7 +64,18 @@ link: "https://medium.com/better-programming/the-right-way-to-run-shell-commands
 
 단순히 다른 프로그램을 호출하고 싶다면 os.system 함수를 사용할 수 있지만, 사용하면 안 됩니다. 당신에게 예시를 들어 주고 싶지 않아요, 왜냐하면 그냥 사용하지 말아야 하기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 os는 처음 선택하긴 좋지 않지만, 유용하게 사용할 수 있는 몇 가지 함수가 있습니다:
 
@@ -75,7 +108,18 @@ print(b64encode(random_bytes).decode('utf-8'))
 
 파일/경로 작업에 os 모듈을 사용하지 말아주세요. os.path 및 기타 경로 관련 함수 대신 pathlib를 사용하는 방법에 대한 전체 섹션이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 os 모듈의 대부분의 남은 함수는 OS(또는 C 언어) API에 직접적으로 연결되어 있습니다. 예를 들어 os.dup, os.splice, os.mkfifo, os.execv, os.fork 등이 있습니다. 이러한 모든 함수를 사용해야 한다면 파이썬이 그 작업에 적합한 언어인지 확신하지 못합니다.
 
@@ -98,7 +142,18 @@ print(f'Command {p.args} exited with {p.returncode} code, output: \n{p.stdout}')
 # ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문서에서 설명된대로:
 
@@ -127,7 +182,18 @@ for line in awk_process.stdout:
     # ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 첫 번째 예제는 이전에 소개된 subprocess.run의 Popen 등가물을 보여줍니다. 그러나 run이 제공하는 것보다 더 많은 유연성이 필요할 때만 Popen을 사용해야 합니다. 두 번째 예제에서는 한 명령의 출력을 다른 명령으로 파이핑하는 방법을 볼 수 있습니다. ls -la | awk `'print $9'`를 효과적으로 실행하는 방법입니다. 또한, shlex.split을 사용했는데, 이는 문자열을 토큰의 배열로 분할하는 편리한 함수로, shell=True를 사용하지 않고 Popen이나 run으로 전달할 수 있습니다.
 
@@ -137,7 +203,18 @@ Popen을 사용할 때, 프로세스와 더 많은 상호작용을 위해 termin
 
 # 올바른 방법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이썬의 신조(격언)은 다음과 같습니다:
 
@@ -147,7 +224,18 @@ Popen을 사용할 때, 프로세스와 더 많은 상호작용을 위해 termin
 
 만약 파이썬에서 다른 프로세스를 많이 조합하는 상황이라면, sh 라이브러리를 한 번 살펴보는 것을 권장합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 # https://pypi.org/project/sh/
@@ -182,7 +270,18 @@ sh.ip.address(_out='/tmp/ipaddr')
 # 'ip address > /tmp/ipaddr'와 같습니다
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에는 하위 명령을 호출하는 방법도 보여 줍니다. - 점을 사용하세요.
 
@@ -198,8 +297,18 @@ print(sh.wc('-l', _인=sh.ls('.', '-1'))
 
 오류 처리에 대해선 ErrorReturnCode 또는 TimeoutException 예외를 감시하면 됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시도:
 sh.cat('/tmp/doesnt/exist')
@@ -213,11 +322,9 @@ except sh.TimeoutException:
 print("Command timed out...")
 curl.kill()
 
-
 선택적으로, 만약 프로세스가 시그널에 의해 종료된다면, SignalException을 받게 될 거에요. 특정 시그널을 확인할 수 있는데 예를 들면 SignalException_SIGKILL(또는 \_SIGTERM, \_SIGSTOP 등)으로 확인할 수 있어요.
 
 이 라이브러리에는 내장된 로깅 지원도 있어요. 켜기만 하면 되는데요. 다음 코드가 도와줄 거에요:
-
 
 import logging
 
@@ -241,9 +348,18 @@ sh.ls('-la')
 
 # ...
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 예제들은 대부분의 사용 사례를 다룰 수 있지만, 더 고급/난해한 경우에는 라이브러리 문서의 튜토리얼이나 FAQ를 확인해보세요. 여기에는 추가적인 예제들이 있습니다.
 

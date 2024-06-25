@@ -3,13 +3,12 @@ title: "코드 리뷰에서 논의하는 것 그만 하고 린트 규칙으로 �
 description: ""
 coverImage: "/assets/img/2024-05-20-StopDebatinginCodeReviewsStartEnforcingwithLintRules_0.png"
 date: 2024-05-20 17:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-StopDebatinginCodeReviewsStartEnforcingwithLintRules_0.png
 tag: Tech
 originalTitle: "Stop Debating in Code Reviews. Start Enforcing with Lint Rules."
 link: "https://medium.com/proandroiddev/stop-debating-in-code-reviews-start-enforcing-with-lint-rules-6632c907ea94"
 ---
-
 
 ## Konsist를 사용하여 아키텍처와 최상의 실천 방법을 단위 테스트로 강화하는 방법
 
@@ -19,7 +18,18 @@ link: "https://medium.com/proandroiddev/stop-debating-in-code-reviews-start-enfo
 
 물론 가장 중요한 것은:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 이것들을 알고 계셨나요? 이것들은 모두 코드 리뷰에서 나타나는 문제들이에요! (네, 이 용어가 실제로 존재합니다. 안타깝게도 이 용어를 만든 사람은 저가 아닙니다.)
 
@@ -29,7 +39,18 @@ link: "https://medium.com/proandroiddev/stop-debating-in-code-reviews-start-enfo
 
 우리 팀과 함께 새로운 사례들을 발견하고 그것에 동의하며 조인하는 과정에서 주로 토론의 여지가 없는 표준들을 강제하는 좋은 프로세스가 이미 마련되어 있기 때문에요. 물론 이 프로세스는 계속해서 발전하며 우리가 시간이 지남에 따라 새로운 모베스트 프렉티스를 발견하고 이에 동의할 때마다 업데이트될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 왜 Konsist를 사용해야 하나요? 이미 린터가 있지 않나요?
 
@@ -39,7 +60,18 @@ link: "https://medium.com/proandroiddev/stop-debating-in-code-reviews-start-enfo
 
 다행히도 우리는 마침내 Konsist에 도달했어요. Konsist는 Lint 규칙을 단위 테스트 형식으로 작성하는 주요 원칙을 가진 비교적 새로운 프로젝트에요. 그것이 큰 차이를 만들어 주는 것이죠. 대부분의 개발자들이 이미 단위 테스트를 작성하는 데 익숙하기 때문에, 린트 규칙을 작성하는 데도 빨리 적응하게 될 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노트: 단위 테스트 작성에 어려움을 겪는다면, 포괄적인 단위 테스팅 가이드(Unit Testing Diet)를 확인해 보세요.
 
@@ -49,7 +81,18 @@ Konsist에서 lint 규칙은 단위 테스트이므로, JUnit 5, JUnit 4 또는 
 
 저희 프로젝트에서는 테스트를 Given-When-Then 스타일로 구성하는 것을 선호하므로, lint 규칙에도 Kotest의 Behavior Spec을 사용해 동일한 방식으로 작성하겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 주어진 것: 이것은 우리 테스트의 설정입니다. 우리는 리엔트 규칙이 적용되어야 하는 파일이나 클래스를 지정할 것입니다.
 - 하는 중: 유닛 테스트에서 이것은 일반적으로 결과를 평가하기 전에 수행되는 작업입니다. 리엔트 규칙은 특정 작업과 관련이 없기 때문에, 이 단계는 선택 사항입니다. 하지만, 우리는 여전히 이전 단계에서 지정한 파일에 대한 추가 필터링을 위해 사용할 수 있습니다 (예: 클래스의 속성, 생성자, 함수 등을 필터링).
@@ -85,7 +128,18 @@ class ViewModelsExtendBaseViewModel : BehaviorSpec() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 코드가 무엇을 하는지 분석해보겠습니다:
 
@@ -97,7 +151,18 @@ class ViewModelsExtendBaseViewModel : BehaviorSpec() {
 
 ## 사용자 정의 메시지 추가하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발자에게 친화적인 방식으로 린트 규칙의 오류 메시지를 개선하려면 assertTrue 함수의 additionalMessage 매개변수를 사용하여 왜 이 릴 스규칙을 강제해야 하는지 설명하는 사용자 정의 메시지를 추가하는 것을 권장합니다:
 
@@ -120,8 +185,18 @@ private companion object {
 
 이제 방금 작성한 테스트(린트 규칙)를 실행해 봅시다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Lint Rule Violation](/assets/img/2024-05-20-StopDebatinginCodeReviewsStartEnforcingwithLintRules_2.png)
 
@@ -132,8 +207,18 @@ Oops! It looks like we've encountered some violations of the lint rule in our pr
 
 To apply a baseline, we can create a BASELINE array in the companion object and pass it as a parameter in the withoutName function to filter out those classes. In our case, we will add the BaseViewModel to the baseline since it can't extend itself.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 /* ... */
@@ -156,8 +241,18 @@ private companion object {
 
 # 혜택 #1: 아키텍처 강제화
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드 리뷰의 아키텍처에 대한 코멘트는 가장 중요하면서도 가장 방해가 되는 부분 중 하나입니다. 개개인이 아키텍처를 재설계하는 데 몇 시간이 소요될 수 있을 뿐만 아니라, 이러한 코멘트들은 종종 "나중에 이것을 고칠 수 있을까요?" 라는 일반적인 반대 의견을 받는 경우가 많습니다 (그리고 결국 고쳐지지 않습니다).
 
@@ -188,7 +283,18 @@ class ViewModelsDoNotInjectRepositories : BehaviorSpec() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 저장소는 저장소 모듈 내에 있어야 합니다. 이는 우리 아키텍처의 다른 레이어와의 깔끔한 분리를 강제하는 것입니다:
 
@@ -232,7 +338,18 @@ class DomainLayerDoesNotImportDTOs : BehaviorSpec() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 디자인 시스템은 도메인 모델을 가져오지 않아야 합니다. 이렇게 하면 디자인 시스템이 우리 앱의 기능과 독립적이며 중립적이라는 것을 보장할 수 있습니다:
 
@@ -257,11 +374,33 @@ class DesignSystemDoesNotImportDomainModels : BehaviorSpec() {
 
 일반적으로 코드베이스에서 버그를 만나면, 우리는 다음 질문을 스스로에게 하게 됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이메일에 마음이 아프셨을 수도 있을 것 같아요! 소중한 피드백 감사드립니다. 그러나, 이메일을 수십 번이나 보내실 필요는 없어요. 결과를 기다리고 계셨다는 걸 알기에 충분해요. 걱정마세요! 결과가 나올 때까지 조금만 기다려보세요. 결과가 나올 때 바로 알려드릴게요. 편안하게 기다려주세요! 🕒😊
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 프로젝트에서 최근에 실제로 겪은 버그를 보호해주는 린트 규칙을 살펴보겠습니다.
 
@@ -274,7 +413,18 @@ fun postProfile(@Field("id") id: Long, @Field("name") name: String)
 
 그러나 실행을 시도하면 앱이 다음과 같은 오류로 중단될 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 java.lang.IllegalArgumentException: @Field 매개변수는 form 인코딩과 함께만 사용할 수 있습니다. (매개변수 #1)
@@ -291,8 +441,18 @@ fun postProfile(@Field("id") id: Long, @Field("name") name: String)
 
 이 문제를 방지하기 위한 린트 규칙을 만드는 것이 얼마나 완벽한 사용 사례인가요!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 class RetrofitFieldParamsUseFormUrlEncoded: BehaviorSpec() {
@@ -331,8 +491,18 @@ class RetrofitFieldParamsUseFormUrlEncoded: BehaviorSpec() {
 
 # Konsist와 함께한 프로젝트 구조
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전에 본 바와 같이 Konsist 린트 규칙은 단위 테스트와 같습니다. 즉, 이를 실행하려면 해당 규칙을 프로젝트의 테스트 소스 세트에 배치해야 합니다. 나머지 단위 테스트와 함께 두어야 합니다.
 
@@ -342,7 +512,18 @@ class RetrofitFieldParamsUseFormUrlEncoded: BehaviorSpec() {
 
 그리고 모듈 구조 및 build.gradle.kts 파일은 이렇게 보일 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 md
 ![이미지](/assets/img/2024-05-20-StopDebatinginCodeReviewsStartEnforcingwithLintRules_5.png)
@@ -371,8 +552,18 @@ dependencies {
 
 이 접근 방식으로 다른 이점은 코드 리뷰에서 리뷰하는 대신 리뷰어가 관례 규칙을 집행할 수 있다는 것입니다. 단위 테스트와 별도로 출력을 실행할 수 있습니다. `:'module':test` Gradle 작업을 사용하여 린트 규칙을.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최종적으로 중복 코드를 줄이기 위해 린트 규칙을 작성할 때, 흔히 사용하는 범위를 포함하는 KonsistUtils.kt 파일을 생성하는 것을 권장합니다:
 
@@ -409,7 +600,18 @@ object KonsistUtils {
 
 # CI/CD에서 린트 규칙 실행하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, Konsist 모듈을 설정하고 사용자 정의 린트 규칙을 작성하는 데 많은 노력을 기울인 끝에, 한 가지가 남았습니다: 만약 린트 규칙을 위반하면 병합할 풀 리퀘스트를 차단하는 방법은 무엇일까요?
 
@@ -419,7 +621,18 @@ GitHub Actions 또는 Bitrise를 사용한 예제 구성을 살펴보겠습니�
 
 ## GitHub 액션 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래의 GitHub Action은 저장소를 체크아웃하고 Java와 Gradle을 설정한 다음, konsist 모듈에서 모든 단위 테스트(린트 규칙)를 실행하는 Gradle 작업을 실행합니다. 이 작업은 풀 리퀘스트가 올라올 때 트리거됩니다:
 
@@ -451,7 +664,18 @@ GitHub Action을 설정한 후, 해당 동작을 레포지토리 설정의 브�
 
 ## Bitrise 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 Bitrise를 사용 중이라면, 단순히 워크플로에 추가할 추가 단계로 :konsist:test Gradle 작업을 실행하면 됩니다:
 
@@ -471,7 +695,18 @@ tasks.register("runAllTests") {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Summary
 
@@ -481,7 +716,18 @@ Konsist를 통해, 우리는 안드로이드에서 린트 규칙 작성을 단�
 
 프로젝트를 지원하는 방법을 알아보려면 Konsist 기여 가이드라인을 꼭 확인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## PS. iOS는 어떻게 되었나요?
 

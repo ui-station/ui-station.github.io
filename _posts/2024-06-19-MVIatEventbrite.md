@@ -3,13 +3,12 @@ title: "이벤트브라이트의 MVI"
 description: ""
 coverImage: "/assets/img/2024-06-19-MVIatEventbrite_0.png"
 date: 2024-06-19 10:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-MVIatEventbrite_0.png
 tag: Tech
 originalTitle: "MVI at Eventbrite"
 link: "https://medium.com/gitconnected/mvi-at-eventbrite-6c3b72addb63"
 ---
-
 
 ![이미지](/assets/img/2024-06-19-MVIatEventbrite_0.png)
 
@@ -19,7 +18,18 @@ Eventbrite는 누구에게나 자신의 열정을 충전하고 삶을 더 풍부
 
 저희 Eventbrite에는 두 가지 제품이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 주최자 앱: 이 앱은 이벤트브라이트에서 이벤트를 개최하려는 창작자들을 위한 것입니다. 이 앱은 창작자들이 이벤트를 모바일에서 관리할 수 있도록 도와줍니다 — 이벤트 만들기 & 편집하기, 티켓 추적 & 판매하기, 그리고 게스트 체크인하기.
 - 참가자 앱: 이 앱은 근처 이벤트에 참가하고 싶어하는 참가자들을 위한 것입니다. 이 플랫폼을 통해 티켓을 예약할 수 있습니다.
@@ -30,7 +40,18 @@ Eventbrite는 누구에게나 자신의 열정을 충전하고 삶을 더 풍부
 
 Model-View-Intent(MVI) 아키텍처 패턴은 주로 André Staltz가 개발한 자바스크립트 프레임워크인 Cycle.js에 속한다고 알려져 있습니다. 그러나 MVI는 다양한 개발자와 커뮤니티에 의해 채택되고 다양한 프로그래밍 언어 및 플랫폼에서 적용 및 조정되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 내용을 이해하기 위해 이 비디오도 확인해 볼 수 있어요.
 
@@ -43,7 +64,18 @@ Model-View-Intent(MVI) 아키텍처 패턴은 주로 André Staltz가 개발한 
 
 이번에는 Eventbrite 앱을 통해 MVI를 이해해 봅시다. Model — View — Intent 개념을 적용해 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-MVIatEventbrite_1.png)
 
@@ -53,7 +85,18 @@ Model-View-Intent(MVI) 아키텍처 패턴은 주로 André Staltz가 개발한 
 
 MVI를 사용하여 단계별로 구현 방법을 이해해 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # # 모델
 
@@ -65,7 +108,18 @@ MVI를 사용하여 단계별로 구현 방법을 이해해 보겠습니다.
 - 콘텐츠
 - 오류
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 화면에 대한 3가지 기본 상태입니다.
 
@@ -88,7 +142,18 @@ MVI를 사용하여 단계별로 구현 방법을 이해해 보겠습니다.
 
 <img src="/assets/img/2024-06-19-MVIatEventbrite_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Compose에서는 상태를 확인하고보기를로드합니다.
 
@@ -109,7 +174,18 @@ internal fun Screen(
 
 # # 의도
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이벤트
 
@@ -128,7 +204,18 @@ sealed class Event {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-MVIatEventbrite_4.png" />
 
@@ -138,7 +225,18 @@ sealed class Event {
 
 로드는 초기 이벤트로, 프래그먼트에서 트리거됩니다. OnCreate에서 이벤트를 설정하고, 초기 이벤트인 로드를 가져와 ViewModel에서 처리하죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
  재정의 하여 이벤트를 처리하는 suspend fun 핸들이벤트(event: Event) {
@@ -164,8 +262,18 @@ sealed class Event {
 
 View에서 변경사항을 받음
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 내부 fun EventDetailScreen(
@@ -185,8 +293,18 @@ State Reducer은 함수형 프로그래밍에서 나온 개념으로 이전 상�
 
 참석자가 크리에이터를 팔로우하는 기능을 예로 들어서 이해해봅시다. 사용자가 팔로우 버튼을 클릭했을 때 어떤 일이 일어날까요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-MVIatEventbrite_5.png" />
 
@@ -206,7 +324,18 @@ internal data class UiModel(
 
 이제 한 단계씩 이해해 봅시다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **작업 1: 사용자 클릭 리스너 구현 및 이벤트 트리거**
 
@@ -220,15 +349,24 @@ onClick {
 
 이미 팔로우된 주최자인 경우 언팔로우하고, 그렇지 않은 경우 팔로우하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 followableOrganizer가 팔로우되어 있다면 {
-    상태 { onUnfollow(::event, ::effect) }
+상태 { onUnfollow(::event, ::effect) }
 } 그렇지 않으면 {
-    상태 { onFollow(::event, ::effect) }
+상태 { onFollow(::event, ::effect) }
 }
-
 
 액션 3: 리듀서
 
@@ -244,7 +382,7 @@ private fun getFollowContent(
                 organizerState = with((event.organizerState as OrganizerState)) {
                     val hasChanged = newState != isFollowing
                     OrganizerState.Content(copy(
-                          
+
                             isFollowing = newState,
                             listeners = OrganizerListeners(
                                     onFollowUnfollow = {
@@ -259,7 +397,18 @@ private fun getFollowContent(
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `getFollowContent` 함수는 View 상태를 반환합니다.
 
@@ -271,7 +420,18 @@ state { onUnfollow(::event, ::effect) }
 
 **액션 5:** 이 변경사항을 관찰하여 View를 수정하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -281,7 +441,18 @@ MVI의 주요 장점은 MVVM과 같은 전통적인 아키텍처에 비해 명�
 
 게다가, Eventbrite 앱에서 MVI를 구현한 결과, Event 상세 페이지 예제를 통해 그 실용성과 효과를 보여주었습니다. 명확한 상태를 정의하고 이벤트를 처리하며 새로운 상태를 계산하기 위해 reducer를 사용함으로써 더 효율적이고 유지보수가 용이한 코드 기반을 구축했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MVI 아키텍처 도입은 Eventbrite에서 강력하고 확장 가능한 안드로이드 앱을 구축할 뿐만 아니라 개발 프로세스를 간소화하는 선례를 제시했습니다. 관심사의 명확한 분리, 예측 가능한 데이터 흐름, 그리고 중앙 집중식 상태 관리는 모든 개발자가 프로젝트에 통합을 고려해야 할 가치 있는 패러다임으로 만들어 냈습니다. MVI를 사용하면 직관적이고 잘 구조화된 애플리케이션을 통해 우수한 사용자 경험을 창출하는 길이 더욱 분명해지고 달성 가능해집니다.
 
@@ -291,6 +462,17 @@ MVI 아키텍처 도입은 Eventbrite에서 강력하고 확장 가능한 안드
 
 당신의 좋아요는 다른 사람들이 이 글을 발견하는 데 도움이 됩니다 😃 .
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:1200/1*ogke9Q7S3f_WKKfqc1y6_w.gif)

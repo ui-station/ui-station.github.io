@@ -3,14 +3,12 @@ title: "마이크로소프트 Fabric 및 Databricks 열에서 기본 키와 외�
 description: ""
 coverImage: "/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_0.png"
 date: 2024-05-18 16:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_0.png
 tag: Tech
 originalTitle: "Microsoft Fabric and Databricks: The low-level challenge of enforcing primary keys and foreign keys and uniqueness in columns"
 link: "https://medium.com/@christianhenrikreich/microsoft-fabric-and-databricks-the-low-level-challenge-of-enforcing-primary-keys-and-foreign-8c7fb6ebbe8f"
 ---
-
-
 
 ![이미지](/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_0.png)
 
@@ -20,8 +18,18 @@ Microsoft Fabric Warehouse와 Databricks with Unity Catalog에서 주요 키를 
 
 ![이미지](/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_2.png)
 
@@ -31,7 +39,18 @@ Microsoft Fabric Warehouse와 Databricks with Unity Catalog에서 주요 키를 
 
 이것이 강제되지 않는 이유 중 하나를 이해하려면 SQL Server, Postgres 등과 같은 오래된 기술에서 왜 작동하는지 살펴보는 것으로 시작합니다. 많은 전통적인 데이터베이스는 메모리 내 데이터베이스로 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 전통적인 데이터베이스는 인메모리 데이터베이스로 볼 수 있습니다. 전체 데이터베이스가 메모리에 맞지 않을 경우 데이터는 디스크에도 저장되고 교환됩니다. DBA가 하는 일은 핫 데이터를 메모리에 정리하고 콜드 데이터를 디스크에 남겨두는 것입니다.
 
@@ -41,7 +60,18 @@ Microsoft Fabric Warehouse와 Databricks with Unity Catalog에서 주요 키를 
 
 ![이미지](/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 B+ 트리로 색인화된 데이터를 가지고 있는 경우, 많은 데이터베이스 시스템에서처럼, 값을 조회하는 것은 테이블의 크기에 관계없이 3~4 페이지를 조금 건너뛰면 됩니다. 트리는 일반적으로 값을 빠르게 조회하는 데 알려져 있습니다. 나는 색인화된 레코드를 검색하는 여행을 표시했어요. 예를 들어 기본 키가 될 수 있는 단일 값을 검색하는 것처럼요.
 
@@ -51,8 +81,18 @@ B+ 트리로 색인화된 데이터를 가지고 있는 경우, 많은 데이터
 
 메모리에 페이지를 인코딩하고 압축하지 않고, 메모리에 액세스하는 것이 매우 빠르기 때문에, 하드웨어 및 설정에 따라 수백만 건의 단일 조회를 초 단위로 쉽게 수행할 수 있습니다. 일부 테이블 정보가 메모리로 로드되지 않은 경우에는 약간의 문제가 발생할 수 있지만, 처리 중에 검색할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-MicrosoftFabricandDatabricksThelow-levelchallengeofenforcingprimarykeysandforeignkeysanduniquenessincolumns_5.png)
 
@@ -62,8 +102,18 @@ B+ 트리로 색인화된 데이터를 가지고 있는 경우, 많은 데이터
 
 Spark를 예로 들어보겠습니다. Spark 작업을 시작할 때, 스토리지에 있는 데이터는 파티션을 제거하고 파일을 제거하며, 파케이트에서 제거되어 Spark 메모리로 읽히기 전 성능을 높이기 위해 정리됩니다. 작업 중에 누락된 데이터는 검색할 수 없습니다(이에 대한 로직을 작성하지 않는 한). 데이터를 스토리지에서 메모리로 옮기는 데는 메모리에서 데이터를 옮기는 것보다 더 오랜 시간이 걸립니다. 데이터는 여전히 메모리에서 CPU로 이동해야 하지만, 스토리지에서 메모리로 이동하는 추가 단계가 추가됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저장소에 저장된 데이터는 Parquet 형식으로 인코딩되고 압축되어 있으며, 값을 읽기 위해 해제되고 디코딩되어야 합니다. 데이터는 연속적인 방식으로 열 단위로 저장되며, 값들을 찾을 때 힙과 비슷한 속성을 가지고 있습니다.
 
@@ -73,7 +123,18 @@ Spark를 예로 들어보겠습니다. Spark 작업을 시작할 때, 스토리�
 
 Spark는 작업 중에 메모리에 있는 것만 처리할 수 있습니다. 따라서 주 키 삽입용 테이블을 메모리에 로드해야 하며 외래 키가 참조하는 테이블도 로드되어야 합니다. Spark는 데이터를 트리와 같은 검색 최적화된 구조로 로드하지 않기 때문에 모든 레코드 삽입 시 전체 테이블이 확인되어야 합니다. 이 경우에는 100,000번이 될 것입니다. 외래 키 확인도 동일합니다. 목표 테이블이 1,000,000이라고 가정해봅시다. 많은 단일 검색과 테이블 스캔이 필요할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약하자면, 모든 테이블을 로드하면 초기 대기 시간이 소요됩니다. 디코딩 및 압축 해제가 이 대기 시간을 더욱 증가시킵니다. 선형 데이터 구조에서 값을 조회하면 성장하는 대기 시간으로 인해 스케일링이 나빠지며, 특히 테이블 크기가 커질수록 B+ 트리와 비교했을 때 성능이 상당히 떨어집니다.
 
@@ -83,6 +144,17 @@ Spark는 작업 중에 메모리에 있는 것만 처리할 수 있습니다. �
 
 많은 사람들은 이것을 문제로 보지 않을 수 있습니다. 데이터 웨어하우징에 관한 많은 텍스트는 로드 성능을 높이기 위해 사실에 제약을 두지 말라고 권장합니다. 무결성은 테이블 로드에 관한 정책을 통해 보장할 수 있습니다. 그런 다음 사람들이 그룹화된 카운트를 사용하는 것과 같은 무결성 테스트를 실시하는 것을 본 적이 있습니다. 강력한 필요성이 있다면 전통적인 데이터베이스가 더 나은 해결책일지도 모릅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여전히 일부 처리 엔진 최적화 프로그램은 이 정보를 활용할 수 있으므로, 키를 정의하는 것은 나쁜 습관이 아닙니다.

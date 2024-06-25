@@ -18,7 +18,18 @@ link: "https://medium.com/aidatatools/comparing-throughput-performance-of-runnin
 
 Ollama는 현재 macOS, Linux 및 Windows의 WSL2에서 실행할 수 있습니다. WSL2에서 메모리 사용량 및 CPU 사용량을 제어하기 어렵기 때문에 WSL2의 테스트를 제외하였습니다. 생태계에서는 여러 LLM과 VLM 모델을 다운로드할 수 있습니다. 그래서 여러 시스템에서 다양한 AI 모델을 테스트하기 위해 Ollama를 벤치마킹 테스트 베드로 사용합니다. 설치는 매우 간단합니다. 터미널에서 다음을 실행하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 curl https://ollama.ai/install.sh | sh
@@ -34,8 +45,18 @@ curl https://ollama.ai/install.sh | sh
 - Apple Mac mini (Apple M1 칩) (macOS Sonoma 14.2.1 운영 체제) 8코어 CPU(성능 코어 4개, 효율성 코어 4개), 8코어 GPU, 16GB RAM
 - NVIDIA T4 GPU (Ubuntu 23.10 64비트 운영 체제), 8 vCPU, 16GB RAM
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비교를 더 효과적으로 하기 위해 Raspberry Pi 5에 우분투 23.10 64비트 운영체제가 설치되었습니다. 아래 비디오에서 운영체제 설치 단계를 따를 수 있습니다.
 
@@ -46,7 +67,18 @@ Ollama 웹사이트 llama2 모델 페이지에는 다음과 같은 내용이 언
 - 7b 파라미터 모델은 일반적으로 적어도 8GB의 RAM이 필요합니다.
 - 13b 파라미터 모델은 일반적으로 적어도 16GB의 RAM이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테스트할 모델
 
@@ -58,7 +90,18 @@ Ollama 웹사이트 llama2 모델 페이지에는 다음과 같은 내용이 언
 
 샘플 프롬프트 예시는 benchmark.yml에 저장되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 version: 1.0
@@ -85,7 +128,18 @@ modeltypes:
 
 ## AI 모델 (LLMs 및 VLM) 추론 처리량 성능 결과에 대한 생각
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 위의 동영상에서 확인할 수 있듯이, 계산 활용은 주로 GPU 코어 및 GPU VRAM에서 발생합니다.
 - 추론을 더 빨리 실행하려면 강력한 GPU를 선택하세요.

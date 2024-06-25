@@ -3,13 +3,12 @@ title: "파이썬에 대해 알지 못했던 101가지"
 description: ""
 coverImage: "/assets/img/2024-06-19-101ThingsINeverKnewAboutPython_0.png"
 date: 2024-06-19 10:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-101ThingsINeverKnewAboutPython_0.png
 tag: Tech
 originalTitle: "101 Things I Never Knew About Python"
 link: "https://medium.com/gitconnected/101-things-i-never-knew-about-python-72967446bf2c"
 ---
-
 
 <img src="/assets/img/2024-06-19-101ThingsINeverKnewAboutPython_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/101-things-i-never-knew-about-python-7296
 
 # 제 소개는 조금 어떤가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 친한 친구들에게 내가 "매일 파이썬을 하는 사람"으로 유명하다는 말을 들었어. 사실 그들이 틀리지 않아 — 나는 평균 1.5일마다 기사를 쓰는 편이야 (90%가 파이썬 관련이지). 이를 통해 내 지식을 공유하고 글쓰기 기술을 향상시키고 있어.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/gitconnected/101-things-i-never-knew-about-python-7296
 
 # Medium에 글쓰기를 시작한 이유
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2021년 대학 4학년 때, 제가 프로그래밍 가르치는 튜션 사업을 시작했어요. 그 해는 대학 4학년이었지요. 주로 1학년과 2학년 학생들에게 Zoom을 통해 파이썬을 가르쳤어요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/gitconnected/101-things-i-never-knew-about-python-7296
 
 아직도 파이썬에 대해 새로운 것을 배우고 있어요 (정말 놀라운 점이죠). 업무, 셀프 코딩, 독해 등을 통해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번, 나는 그 순간에 알고 있던 Python에 관한 모든 재미있는 트릭과 개념을 모두 모아보고 싶었어요. 그러나 그것을 위해 700개 이상의 내 기사들을 헤매야 한다는 것을 깨달았죠. (누가 하고 싶겠어요)
 
@@ -49,7 +81,18 @@ link: "https://medium.com/gitconnected/101-things-i-never-knew-about-python-7296
 
 제 책을 구할 수 있는 곳: [여기](https://payhip.com/b/vywcf)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

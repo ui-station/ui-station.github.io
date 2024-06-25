@@ -3,16 +3,14 @@ title: "Azure Data Factory에서 Databricks 작업 클러스터에 동적 태그
 description: ""
 coverImage: "/assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_0.png"
 date: 2024-05-20 17:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_0.png
 tag: Tech
 originalTitle: "Applying Dynamic Tags To Databricks Job Clusters in Azure Data Factory"
 link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clusters-in-azure-data-factory-e04bfd07b178"
 ---
 
-
 아래는 Markdown 형식으로 변경한 텍스트입니다.
-
 
 ![이미지](/assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_0.png)
 
@@ -22,8 +20,18 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 # Prerequisites
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Azure Databricks 워크스페이스에 액세스 권한, Azure Data Factory 인스턴스, 그리고 워크스페이스에서 작업을 만들고 실행할 수 있는 능력이 있다고 가정합니다.
 
@@ -34,7 +42,18 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 ![이미지](/assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 클러스터 사용자 정의 태그 섹션에서 태그 이름을 추가하고 값 필드를 선택하세요. 텍스트 상자 아래에 동적 콘텐츠를 추가할 링크가 나타납니다. 이를 클릭해주세요:
 
@@ -44,7 +63,18 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 ![ClusterTag parameter](/assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 클러스터의 나머지를 보통대로 구성하세요.
 
@@ -54,7 +84,18 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 # 파라미터에 동적 값을 바인딩하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 우리가 연결된 서비스에서 태그 값에 대한 매개변수를 갖고 있으므로 해당 연결된 서비스를 사용하는 각 활동에 대해 값을 바인딩할 수 있습니다.
 
@@ -65,7 +106,18 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 3. 여기에는 세 가지 옵션이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이 속성값을 비워두면 클러스터는 태그의 값에 이전에 설정한 기본값을 사용합니다.
 - 이곳에 정적 값을 지정할 수 있으며, 이 값은 태그의 값으로 매개변수를 통해 전달됩니다.
@@ -77,7 +129,18 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 참고로 만일 우리 파이프라인에 여러 활동이 있다면, 각 활동에 대해 이 속성에 고유한 값을 할당할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 수동으로 이 파이프라인을 실행한 후에는 Azure Databricks의 작업 클러스터로 사용자 정의 동적 태그 값이 전파된 것을 볼 수 있습니다:
 
@@ -87,15 +150,24 @@ link: "https://medium.com/@kyle.hale/applying-dynamic-tags-to-databricks-job-clu
 
 이제 Databricks 시스템 테이블에서 이 태그를 조회하여 클러스터와 관련 청구 사용 내역을 찾을 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식의 테이블입니다.
 
-
-| 파일 이름 | 경로 |
-|---|---|
+| 파일 이름                                                                     | 경로                                                                                      |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | 2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_8.png | /assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_8.png |
 | 2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_9.png | /assets/img/2024-05-20-ApplyingDynamicTagsToDatabricksJobClustersinAzureDataFactory_9.png |
-
 
 이 내용이 Databricks에서의 컴퓨팅 및 파이프라인의 가시성 관리에 도움이 되기를 바랍니다. 피드백은 언제나 환영합니다!

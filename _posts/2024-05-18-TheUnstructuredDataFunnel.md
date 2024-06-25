@@ -3,13 +3,12 @@ title: "비정형 데이터 퍼널"
 description: ""
 coverImage: "/assets/img/2024-05-18-TheUnstructuredDataFunnel_0.png"
 date: 2024-05-18 16:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-TheUnstructuredDataFunnel_0.png
 tag: Tech
 originalTitle: "The Unstructured Data Funnel"
 link: "https://medium.com/towards-data-science/the-unstructured-data-funnel-245f72925176"
 ---
-
 
 만약 당신이 Medium 회원이 아니라면, 여기서 무료로 읽을 수 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/the-unstructured-data-funnel-245f
 
 비구조화 데이터는 우리 데이터 전문가들에게는 무해해 보일 수 있지만, 전체적으로는 큰 파장을 일으키고 있습니다. 실제로 GPT 모델은 모두 비구조화 데이터로 훈련됩니다. 이는 최근 Snowflake의 수익 발표에 관한 Tomasz Tunguz의 기사에서 올바르게 관찰되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-TheUnstructuredDataFunnel_0.png" />
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-data-science/the-unstructured-data-funnel-245f
 
 중요한 유도자 중 일부에 비구조적 데이터가 자리하고 있으며, 이를 처리하는 곳은 데이터 세계의 두 큰 기업인 Databricks와 Snowflake에게 매우 중요합니다. 왜 그런지 알아봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 왜 비구조화 데이터가 중요한가요?
 
@@ -86,7 +107,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 변경하겠습니다:
 
@@ -101,7 +133,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 
 모든 비구조화된 데이터가 이러한 패턴을 따릅니다. Snowflake의 문서 AI는 pdf와 같은 문서를 가져와 데이터를 표 형태로 추출합니다. 이는 처리의 주된 부분이 한 번 일어나고 결과 데이터가 훨씬 깨끗하고 처리하기 쉽다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 비구조화 데이터 퍼널
 
@@ -111,7 +154,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 
 ## 데이터 이동
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 퍼널의 첫 번째 섹션은 데이터 팀이 비구조화된 데이터와 처음으로 접촉하는 곳입니다. 이는 일괄 처리든 스트리밍 아키텍처든 어느 쪽이든 데이터 이동 계층입니다. 이 계층에는 저장 요소가 없지만, Fivetran, Portable 또는 Striim과 같은 벤더들은 몇 가지 변환 작업("ETL" 또는 "ET L"으로 "ELT" 또는 "EL T"가 아닌)을 수행하기 위해 투자하고 있습니다. 이는 계산을 사용하고 데이터의 크기를 줄여 다음 계층으로 이동하는 데이터에 영향을 줍니다.
 
@@ -121,7 +175,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 
 ## 데이터 레이크 / 객체 저장소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 번째 층은 Google Object Storage, AWS S3 또는 Azure ADLS Gen-2와 같은 객체 저장소에 있는 데이터를 말합니다. 이들은 모든 파일 형식의 데이터를 저장하는 세 대 클라우드 제공 업체의 저장소 솔루션입니다. 이 퍼널의 이 층은 모든 데이터가 중앙 집중화되고, 모든 형태의 컴퓨팅이 쉽게 사용 가능한 첫 번째 층입니다. 이 층에서는 클라우드 제공 업체로부터 직접 임대하거나 Databricks for Spark와 같은 업체를 통해 컴퓨팅을 이용할 수 있습니다. 이 층은 복잡한 프로세스를 처리하기에 좋은 후보이며, 특히 차원과 복잡성을 줄이는 데 탁월합니다. 이는 관련 컴퓨팅이 매우 높음을 의미합니다.
 
@@ -131,7 +196,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 
 ## 데이터 웨어하우스 / SQL 층
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 단계는 특정 형식 또는 특정 형식 세트로 저장된 데이터를 가리키며, 일반적으로 SQL과 유사한 문장을 사용하여 쉽게 쿼리하고 조작할 수 있도록 합니다. Snowflake은 자체 파일 형식을 갖고 있어 이를 용이하게 만들어주며, 데이터를 "Snowflake로 가져오기" 위해 "진입 요금"을 내야 하는 이유입니다. Databricks 측에서는 .delta를 갖고 있는데, 이는 사실 .parquet 위에 추상화된 것입니다. 또한 오픈 소스입니다. .iceberg와 같은 다른 포맷도 있으며, 이는 Snowflake의 외부 테이블을 지원하여 (이는 Snowflake를 터널의 더 높은 단계로 끌어올립니다).
 
@@ -141,7 +217,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 
 주의할 점은 데이터 웨어하우스에서 비구조화된 데이터를 처리할 때 발생하는 컴퓨팅 처리의 이중 가격 결제입니다. 만약 Databricks와 같은 서비스를 사용한다면, 클라우드 제공 업체의 컴퓨팅 파워를 사용하여 객체 저장소에 저장된 텍스트 파일을 처리하고 Databricks를 중간 업체로 사용하여 컴퓨팅 처리에 대해 단일 가격 결제를 하게 됩니다. 데이터 웨어하우스를 사용하면 저장소 및 컴퓨팅에 중복적으로 요금을 지불해야 합니다. 또한 그들이 문서를 분석하기 위해 컴퓨팅을 어떻게 사용하는지 정확히 알 수 없으므로 그 부분에서도 약간 더 많은 비용을 지불할 수 있습니다. 데이터 웨어하우스가 외부 테이블을 지원하는 경우에는 전자를 피할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이겹을 마무리하려면— SQL 워크로드를 효율적으로 실행하려면 데이터는 다른 특정 형식이어야 합니다. 이는 데이터를 .delta와 같은 쿼리 가능하고 변환 가능한 형식으로 변환하는 데이터 웨어하우스 시장을 만들었습니다. 비구조화 데이터는 어떤 면에서는 이와 정반대이며 이미 존재하는 위치, 즉 데이터 레이크에 속하는 것으로 보입니다. 이에 대하여 웨어하우스 레이어의 컴퓨팅 리소스를 사용하여 LLMs의 맥락에서 비구조화 데이터 처리를 수행하는 것은 실질적으로 의미가 없습니다. 실제로 일부 인기 있는 Snowflake 사례들은 이미 Snowpark 컨테이너 서비스와 외부 테이블과 같이 컴퓨팅/저장 모델이 더 많이 레이크하우스와 유사한 것들을 보여줍니다.
 
@@ -151,7 +238,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 
 파이널 먼션은 퍼널의 끝에 대한 것입니다— 데이터 활성화. 이것은 분석의 "마지막 단계"이며, 일반적으로 프로세스가 시작될 수 있는지 확인하기 위해 작은 점검을 수행한 후, 정리된 데이터를 운영 시스템으로 이동시키는 작업을 일컫습니다. 이는 정리된 및 집계된 데이터와 상호작용하는 애플리케이션을 가리킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것들은 전형적인 역 ETL 사용 사례, 대시 보드 또는 자동화된 슬랙/이메일 알림일 수 있습니다.
 
@@ -161,7 +259,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 
 따라서 비구조화 데이터 퍼널의 요소 중에서는 가장 흥미로운 부분이 아니며, 컴퓨팅에 대한 데이터 팀에 지불할 수 있는 가장 적은 기회를 제공합니다. 모든 데이터가 깨끗하고 평탄하며 완벽하기 때문에 더 이상의 작업이 필요하지 않습니다. 게다가 데이터의 크기도 훨씬 작습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 대회 참가 신청: 낮음
 
@@ -171,7 +280,18 @@ GPT 모델은 데이터를 기반으로 동작합니다. 특히, 비구조화 �
 
 퍼널 그림을 통해 데이터 팀이 이러한 번거로운 처리 단계를 미룰수록 총 이동 데이터 양이 증가하여 비용이 증가한다는 것을 알 수 있습니다. 게다가 다양한 파일 형식과 필요한 작업 유형이 다양하기 때문에, 객체 저장소 수준에서 데이터 처리에 집중하는 것이 가장 합리적인 것으로 보입니다. 이는 Snowflake가 비정형 데이터 처리를 용이하게 하기 위해 "퍼널을 올라가는" 것으로 잘 나타납니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 클라우드 공급 업체들이 여전히 상승하는 경향을 보일 것인지에 대한 의문을 낳습니다. Gmail에서 이메일을 구문 분석하는 것은 간단할 수 있습니다. 만약 gmail에서 object storage로 데이터를 이동하는 데 특화된 도구가 있다면, 그 도구가 "T"도 수행해야 하는 이유는 무엇일까요? 이 경우에는 유용한 정보를 (아마도 AI를 사용하여) 추출하고 레코드의 평면 테이블을 S3에 직접 덤프해야 하지 않을까요? Google 및 Microsoft에 속하는 클라우드 데이터베이스에 가장 유용한 비구조화 데이터가 있는 사실은 Databricks나 Snowflake가 아니라는 점과 데이터 제품 스위트를 갖추고 있다는 점에 대해 어떻게 생각하십니까?
 

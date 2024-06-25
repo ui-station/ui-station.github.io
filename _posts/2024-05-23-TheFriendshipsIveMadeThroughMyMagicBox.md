@@ -3,13 +3,12 @@ title: "나의 마법 상자를 통해 만든 우정들"
 description: ""
 coverImage: "/assets/img/2024-05-23-TheFriendshipsIveMadeThroughMyMagicBox_0.png"
 date: 2024-05-23 16:07
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheFriendshipsIveMadeThroughMyMagicBox_0.png
 tag: Tech
 originalTitle: "The Friendships I’ve Made Through My Magic Box"
 link: "https://medium.com/bouncin-and-behavin-blogs/the-friendships-ive-made-through-my-magic-box-1da856b9a1d8"
 ---
-
 
 ## 세계적인 친구들
 
@@ -19,7 +18,18 @@ link: "https://medium.com/bouncin-and-behavin-blogs/the-friendships-ive-made-thr
 
 물론, 그들이 빨간색 MAGA 모자를 쓰고 있거나 컨페더레이트 플래그 티셔츠를 입고 있다면 약간 더 어려워지죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래도 노력해봐요. 제 입장과는 정반대인 매우 다른 정치적, 종교적 신념을 가진 가족들이 있어요. 여성, 소수자, 그리고 사회적 약자들의 평등한 권리에 반대표를 던지는 것이 이해가 안 가지만, 그들이 혐오적이고 끔찍한 사람들은 아니라고 가정하려 해요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/bouncin-and-behavin-blogs/the-friendships-ive-made-thr
 
 그런데 아직 한 번도 대면한 적이 없어요. 그래도 거의 20년 동안 서로의 소셜미디어 글을 즐기며 지내왔어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2006년 MySpace에 가입한 지 2년 반이 훌쩍 넘어 Medium을 사용하고 있어요. 이 기간 동안 전체적으로 약 10만 명의 팔로워를 더했어요. 이 중에 실제로 만난 사람은 1% 정도일 것으로 추정돼요. 부동산 업을 하고 카펫 청소 회사를 운영하면서 만난 사람들이 대부분이에요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/bouncin-and-behavin-blogs/the-friendships-ive-made-thr
 
 하지만 대부분의 사람들은 실제로 만나본 적이 없어요. 삶이 바쁘고, 사람들이 아이를 키우거나 삶의 어려움과 마주하고 있는 것을 해결하느라 분투하고 있어요. 멀리 떨어져 사는 사람들도 있고, 외국에 사는 사람들도 몇몇 있어요. 그래도 그들이 실제 친구가 아니라고 느끼지는 않아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 매일 여러 온라인 친구들과 채팅을 해. 내가 가장 친한 사람들은 내 가족 구성원 대부분보다 나를 더 잘 알아. 내 형제나 부모님과 대화하는 시간보다 다양한 소셜 미디어 플랫폼에서 그들과 더 많은 시간을 보내고 있어. 그들은 나에게 생물학적 가족 구성원만큼 가족 같은 존재야.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/bouncin-and-behavin-blogs/the-friendships-ive-made-thr
 
 작가로서 함께 나누는 이 멋진 커뮤니티를 통해 일생일대의 추억을 만들어 나가는 것이 환상적이야. Medium에서 보낸 2년 반 동안 만난 몇몇 가장 멋진 사람들을 통해 온라인에서 만날 수 있는 사람들 중 가장 멋진 사람들 중 일부를 만났어. Medium 작가들을 위한 Discord 서버를 만들고 성장시키는 과정에서, 서로를 격려하고 지지해 주는 가상의 친구들을 만나게 되어 정말 좋았어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋은 사람들이 우리 곁에 있어 우리의 성취를 축하하고 어려울 때 우리를 격려해 주는 것은 정말 놀라운 일이죠.
 
@@ -57,7 +100,18 @@ link: "https://medium.com/bouncin-and-behavin-blogs/the-friendships-ive-made-thr
 
 웹을 통해 사랑을 얻은 이도 있습니다. 행운 아니라 정말로 로맨틱한 사랑을 말이에요. 페이스북에서 제 신부의 친구 요청을 수락하지 않았다면, 우리는 이렇게 멋진 12년 반을 함께 보내지 못했을 거에요. 우리 아이들은 지금처럼 훌륭하고 사랑스러운 덧엄마와 덧아빠를 갖지 못했을 거에요. 우리 가족은 함께 있진 않을 거에요, 서로를 사랑하고 지지해 주는 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어, 그리고 클레이그리스트를 잊을 수 있을까요? 가끔 클레이그리스트는 정말 수상한 곳이에요. 사기꾼들이 가득하고 온라인에서 상호 작용하는 가장 이상한 사람들 중 일부도 있죠. 그럼에도 불구하고, 저는 CL에 큰 감사를 하고 있어요. 그 사이트가 없었다면, 우리 아름다운 사랑스러운 개 Libby를 가질 수 없었을 텐데요.
 
@@ -67,7 +121,18 @@ link: "https://medium.com/bouncin-and-behavin-blogs/the-friendships-ive-made-thr
 
 저는 다양한 이유로 여러 온라인 친구들이 세상을 떠났어요. 암으로 인해 젊은 어머니들이 세상을 떠났고, 자해한 전 군인들도 있었어요. 과다복용으로 사망한 사람들도 있었죠. 지난 몇 년 동안 코로나로 인해 몇 명의 온라인 친구가 떠나버렸어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 마법의 기술 상자에 살고있는 사람들을 소중히 여기세요. 아마 아직 만나지 못한 분들이겠지만, 먼 거리에 있더라도 사랑하고 감사히 여길 가치가 있는 사람들입니다. 온라인 친구들은 때때로 만나는 실제 친구들만큼 중요하죠.
 

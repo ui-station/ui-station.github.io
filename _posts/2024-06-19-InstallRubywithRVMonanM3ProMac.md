@@ -3,13 +3,12 @@ title: "M3 Pro Mac에서 RVM을 사용하여 Ruby 설치하기"
 description: ""
 coverImage: "/assets/img/2024-06-19-InstallRubywithRVMonanM3ProMac_0.png"
 date: 2024-06-19 10:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-InstallRubywithRVMonanM3ProMac_0.png
 tag: Tech
 originalTitle: "Install Ruby with RVM on an M3 Pro Mac"
 link: "https://medium.com/@nelliemckesson/install-ruby-with-rvm-on-an-m3-pro-mac-784718bdb72a"
 ---
-
 
 ![Ruby 설치에 문제가있는 이미지](/assets/img/2024-06-19-InstallRubywithRVMonanM3ProMac_0.png)
 
@@ -19,7 +18,18 @@ StackOverflow 및 GitHub 이슈를 한 시간 정도 읽어본 후에 M3 Pro 맥
 
 이제 Ruby로 넘어가겠습니다! 다음 해결책의 대부분은 GitHub 사용자 mayur-kambariya의 훌륭한 조언에서 왔지만, openssl 설치에 약간의 수정이 필요했습니다. 제가 한 작업은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 터미널을 종료하세요. 그런 다음 Finder에서 Application → Utilities로 이동하세요. 터미널을 마우스 오른쪽 버튼으로 클릭하고 정보 가져오기를 선택한 다음 "Rosetta 사용하여 열기" 상자를 체크하세요.
 
@@ -33,20 +43,41 @@ rm -rf /opt/homebrew/*
 sudo rm -rf /opt/homebrew
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. Homebrew 다시 설치하기:
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-
 4. 터미널을 종료하고 다시 시작하세요.
 
 5. Homebrew가 제대로 동작하는지 확인하세요: `brew doctor`
 
-6. openssl을 *낮은 버전으로 다시 설치하기*: `brew install openssl@1.1` . 다음 단계를 위해 openssl이 설치된 위치를 알아야 할 수도 있습니다. openssl이 설치된 위치는 `brew info openssl@1.1` 명령을 실행하여 확인할 수 있습니다.
+6. openssl을 _낮은 버전으로 다시 설치하기_: `brew install openssl@1.1` . 다음 단계를 위해 openssl이 설치된 위치를 알아야 할 수도 있습니다. openssl이 설치된 위치는 `brew info openssl@1.1` 명령을 실행하여 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7. 혹시나를 대비해 터미널을 종료하고 다시 시작했어요.
 

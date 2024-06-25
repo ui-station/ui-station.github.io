@@ -3,13 +3,12 @@ title: "스타일러 AI 얼굴 킷"
 description: ""
 coverImage: "/assets/img/2024-05-20-StylarAIFaceKit_0.png"
 date: 2024-05-20 21:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-StylarAIFaceKit_0.png
 tag: Tech
 originalTitle: "Stylar AI Face Kit"
 link: "https://medium.com/@aivaras.a.grauzinis/stylar-ai-face-kit-16af21d1de75"
 ---
-
 
 AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만 복잡한 상황에서는 가끔 실수가 발생할 수 있어요. 대부분의 어플리케이션들에서 그런 경우에는 프롬프트를 다시 실행하는 것뿐이에요. 그런데 그렇게 하면 전혀 예상치 못한 이미지가 생성되기도 해요.
 
@@ -17,7 +16,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 실제 사진이나 Stylar에서 생성된 이미지, 다른 AI 어플리케이션에서 가져온 이미지를 사용해서 문제를 해결할 수 있는 Stylar의 얼굴 키트를 활용할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **킷에는 세 가지 도구가 포함되어 있습니다: Face Repair(얼굴 수리), Face Swap(얼굴 교체) 및 Face Match(얼굴 일치).**
 
@@ -27,7 +37,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 **이름이 말해주는 대로, 이 도구는 얼굴의 렌더링 아티팩트와 문제를 수리합니다. 이 도구에는 자체적인 멋진 창이 있으며, 여는 순간, Stylar AI가 얼굴 영역을 선택하여 수정할 수 있도록 선택 브러시를 활성화합니다.**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기능에는 Styal에게 이 얼굴을 어떻게 만들고 싶은지 말할 수 있는 별도의 프롬프트 창과 "원본 얼굴 보존" 슬라이더가 있습니다.
 
@@ -37,7 +58,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 어떤 얼굴을 표시하는 데 한순간이 걸린 후에 약간의 처리 시간이 지난 후에 정말 좋은 결과물을 제시받았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-StylarAIFaceKit_1.png)
 
@@ -47,8 +79,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 # 얼굴 스왑 도구
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Stylar AI Face Swap Tool](/assets/img/2024-05-20-StylarAIFaceKit_2.png)
 
@@ -58,8 +100,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 하지만 이미지에서 얼굴이 이미지 크기의 약 30-40% 이하인 경우에는 잘 작동할 거예요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사실, 대부분의 테스트에서 얼굴 교체 도구가 광고대로 작동하여 인상적인 결과물을 제공했습니다.
 
@@ -69,7 +121,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 ![Face Swap Example](/assets/img/2024-05-20-StylarAIFaceKit_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이렇게 또 다른 예시를 보여드릴게요.
 
@@ -79,8 +142,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 # 얼굴 매치 도구
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![StylarAIFaceKit](/assets/img/2024-05-20-StylarAIFaceKit_5.png)
 
@@ -90,8 +163,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 이미지 간 변환 도구 안에는 스타일 영향력과 원본 이미지 구조의 강도를 조절하는 두 개의 슬라이더도 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것은 상당히 좋은 제어를 제공하며 새로운 스타일과 원본 이미지 사이의 균형을 찾을 수 있는 가능성을 제공합니다.
 
@@ -101,7 +184,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 ![StylarAIFaceKit_6](/assets/img/2024-05-20-StylarAIFaceKit_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 내 얼굴을 어딘가에 테스트하지 않았다면 테스트는 완전하지 않았을 것입니다. 그래서 Stylar의 인공지능 스타일 중 하나를 사용하여 바이킹 이미지를 만들고 나의 얼굴로 바이킹 얼굴을 바꿨어요.
 
@@ -111,7 +205,18 @@ AI는 인간 얼굴을 만드는 데 점점 능숙해지고 있어요. 하지만
 
 Stylar AI에는 얼굴을 다루는 데 도움이 되는 Enhance 도구가 하나 더 있어요. 이 도구는 특별히 얼굴을 다루기 위해 설계된 것은 아니지만 이미지를 미세하게 조정하는 데(얼굴 포함) 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 있어요. Stylar AI에는 이미지에서 얼굴을 수정, 교체 및 향상하는 멋진, 유용하고 실용적인 도구 세트가 있습니다.
 
@@ -121,7 +226,18 @@ Stylar AI에는 얼굴을 다루는 데 도움이 되는 Enhance 도구가 하�
 
 그리고 실제로, 당신은 어디든지 거의 모든 스타일로 자신의 얼굴을 넣을 수 있고, 그것은 재미있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 Stylar로 실험을 하려면 예제 얼굴이나 재미있는 스타일 이미지가 필요하다면 무료로 얻을 수 있어요.
 

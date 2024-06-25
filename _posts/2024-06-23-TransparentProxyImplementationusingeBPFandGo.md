@@ -3,13 +3,12 @@ title: "eBPF와 Go를 사용한 투명 프록시 구현 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-TransparentProxyImplementationusingeBPFandGo_0.png"
 date: 2024-06-23 01:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TransparentProxyImplementationusingeBPFandGo_0.png
 tag: Tech
 originalTitle: "Transparent Proxy Implementation using eBPF and Go"
 link: "https://medium.com/gitconnected/building-a-transparent-proxy-with-ebpf-50a012237e76"
 ---
-
 
 ## eBPF를 활용한 투명 프록시 구축
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/building-a-transparent-proxy-with-ebpf-50
 
 <img src="/assets/img/2024-06-23-TransparentProxyImplementationusingeBPFandGo_0.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 투명 프록시 구현에서의 eBPF
 
@@ -31,7 +41,18 @@ eBPF를 사용하여 투명 프록시를 구현하는 과정에는 네트워크 
 - 연결 후 소스 주소 기록: 두 번째 eBPF 프로그램인 sockops는 프록시와 프록시 간의 연결이 성공적으로 설정된 후에 실행됩니다. 주요 기능은 연결의 소스 주소와 포트를 기록하는 것입니다. 이 정보는 map_socks eBPF 맵의 해당 항목에 업데이트됩니다. 추가적으로, 소스 포트와 소켓의 쿠키 (고유 식별자)는 map_ports eBPF 맵에 매핑되어 모든 필요한 연결 세부 정보가 다른 eBPF 프로그램에서 사용 가능하도록 보장됩니다. 이 단계는 네트워크 연결의 상태를 유지하기 위해 중요합니다.
 - 원래 대상 정보를 기반으로 전달: 세 번째 eBPF 프로그램인 cgroup/getsockopt은 Pipy 프록시가 getsockopt 호출을 사용하여 원래 대상 정보를 조회할 때 활성화됩니다. 이 프로그램은 source port를 사용하여 map_ports에서 원래 소켓의 쿠키를 검색한 다음 map_socks에 저장된 원래 대상 정보에 액세스합니다. 이 정보를 사용하여 원래 대상 서버와의 연결을 설정하고 클라이언트 요청을 전달합니다. 이로써 트래픽이 프록시에서 처리된 후 의도한 대상으로 투명하게 리디렉션되도록 보장됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세 프로그램 모두 특정 cgroup에 연결되어 있습니다. 우리의 경우에는 루트 cgroup이지만 다른 것일 수도 있습니다. 이는 해당 그룹 내의 프로세스가 지정된 시스템 호출 (syscalls)을 실행할 때에만 활성화됨을 보장합니다. 현재, 우리의 구성은 TCP IPv4 연결만 프록시하고 있지만 다른 프로토콜에 대해 적응 가능합니다.
 
@@ -138,7 +159,7 @@ func handleConnection(conn net.Conn) {
 
 func main() {
  // 커널 버전이 5.11 미만인 경우 리소스 제한을 제거합니다.
- if err := rlimit.RemoveMemlock(); err != nil { 
+ if err := rlimit.RemoveMemlock(); err != nil {
   log.Print("Memlock 제거 중 오류 발생:", err)
  }
 
@@ -152,14 +173,14 @@ func main() {
 
  // eBPF 프로그램을 루트 cgroup에 연결
  connect4Link, err := link.AttachCgroup(link.CgroupOptions{
-  Path:    CGROUP_PATH, 
+  Path:    CGROUP_PATH,
   Attach:  ebpf.AttachCGroupInet4Connect,
   Program: objs.CgConnect4,
  })
  if err != nil {
    log.Print("CgConnect4 프로그램을 Cgroup에 연결 중 오류 발생:", err)
  }
- defer connect4Link.Close() 
+ defer connect4Link.Close()
 
  sockopsLink, err := link.AttachCgroup(link.CgroupOptions{
   Path:    CGROUP_PATH,
@@ -169,7 +190,7 @@ func main() {
  if err != nil {
    log.Print("CgSockOps 프로그램을 Cgroup에 연결 중 오류 발생:", err)
  }
- defer sockopsLink.Close() 
+ defer sockopsLink.Close()
 
  sockoptLink, err := link.AttachCgroup(link.CgroupOptions{
   Path:    CGROUP_PATH,
@@ -179,7 +200,7 @@ func main() {
  if err != nil {
    log.Print("CgSockOpt 프로그램을 Cgroup에 연결 중 오류 발생:", err)
  }
- defer sockoptLink.Close() 
+ defer sockoptLink.Close()
 
  // 로컬호스트에 프록시 서버 시작합니다
  // 이 예제에서는 IPv4만을 보여주지만 IPv6에도 동일한 방법을 사용할 수 있습니다.
@@ -190,7 +211,7 @@ func main() {
  }
  defer listener.Close()
 
- // 프록시 서버 구성으로 proxyMaps 맵 업데이트합니다. 
+ // 프록시 서버 구성으로 proxyMaps 맵 업데이트합니다.
  // 이는 프록시 서버 PID가 필요하기 때문에 필요합니다.
  var key uint32 = 0
  config := proxyConfig{
@@ -215,7 +236,18 @@ func main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 커널 스페이스 코드
 
@@ -385,7 +417,18 @@ char __LICENSE[] SEC("license") = "GPL";
 
 # 성능 평가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마무리하며, 저는 호스트 서버의 영향을 평가하기 위해 eBPF 프로그램이 트래픽을 가로챌 때 발생하는 지연 시간과 CPU 부하에 초점을 맞춘 기본 성능 테스트를 실시했습니다. 이 테스트는 1만 개의 요청을 기준으로 평균 지연 시간을 측정하는 것을 포함했습니다.
 
@@ -395,7 +438,18 @@ char __LICENSE[] SEC("license") = "GPL";
 
 이 연구 결과는 eBPF 프로그램에 의한 추가 지연 시간과 CPU 부하와 트래픽 가로채기의 이점 사이의 균형을 다루고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

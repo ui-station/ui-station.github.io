@@ -3,13 +3,12 @@ title: "그래프 이론 필수 가이드 18세기 수수께끼부터 인공 지
 description: ""
 coverImage: "/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_0.png"
 date: 2024-05-20 20:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_0.png
 tag: Tech
 originalTitle: "The Essential Guide to Graph Theory: From an 18th Century Riddle to Artificial Intelligence"
 link: "https://medium.com/towards-data-science/the-essential-guide-to-graph-theory-from-an-18th-century-riddle-to-artificial-intelligence-c441cb9400de"
 ---
-
 
 ![The Essential Guide to Graph Theory: From an 18th Century Riddle to Artificial Intelligence](/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_0.png)
 
@@ -19,13 +18,35 @@ link: "https://medium.com/towards-data-science/the-essential-guide-to-graph-theo
 
 ![The Essential Guide to Graph Theory: From an 18th Century Riddle to Artificial Intelligence](/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 처음에는 그 문제를 진부하다고 생각했지만, 결국 신생 수학 부문 관리자인 29살의 스위스 수학자 레온하르트 오일러가 러시아 성페테르스부르크 과학 아카데미에서의 끌림을 이기지 못했어. 그 오일러야, "오일러의 수"로 유명한 그 오일러야 (이거 떠올리기 즐거우신 상수 e, ≈2.71828로 기억하시겠지). 함수, 합, 그리고 허수 표기법 (f(x), Σ, 그리고 i 각각)을 선보인 그 같은 오일러야, 삼각함수 sin과 cos, 지수 함수 사이의 관계를 보여주는 항등식을 세운 그 대 그 오일러야. 오일러는 버노우이, 가우스, 뉴턴, 라이프니츠와 마찬가지로 여러 분야에 영향을 미친 불안한 수학자 중 하나였지. 현대 과학과 수학 원리를 튼튼하게 다지면서 영원히 그들을 바꿔 놓은 그 오일러야가 바로 그랬어.
 
 만약 이미 좋아하는 수학자가 없다면, 적어도 상위 10명에는 오일러를 고려해 보길 권해드려. 그의 영향력을 과소평가하기 어려운 점이 많아. 그는 분명히 알려진 분야로 진출하고 수학과 과학 지식의 영역을 확장했지만, (논란의 여지는 있지만) 그의 가장 오래된 유산은 복잡한 개념을 단순화하는 데 있어. 오일러가 주요 직관적 개념과 표기법을 도입함으로써 어려운 주제를 보다 직관적으로 다가갈 수 있도록 도왔고, 앞으로 몇 세기 동안의 혁신을 허용하기에 더 나은 단순화를 이룰 수 있도록 했지. 어떤 면에선, 오일러는 머리카락을 잡아끌 수 있는 수학적 고난을 잊기 어렵게 만들었던 소리 없는 영웅인 셈이지 — 거기에 뭔가, 감히 말해보자면 즐거운(?) 게임이 되었던 고난을 —.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알겠어요. 필수 오일러 감상 랜트를 끝냈으니... 이제 재미있는 내용으로 넘어가 봅시다.
 
@@ -35,7 +56,18 @@ link: "https://medium.com/towards-data-science/the-essential-guide-to-graph-theo
 
 ![그림](/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오일러는 그 후에 지금은 "handshaking lemma"로 알려진 것을 적용했습니다: 각 다리는 양쪽 땅을 연결하기 때문에 두 번씩 세어집니다. 이는 각 땅에 연결된 다리의 총합이 짝수여야 한다는 것을 의미합니다. 다리의 총 숫자의 두 배입니다. 그러나, 홀수 개의 다리를 가진 홀수 개의 땅이 있는 경우, 통행 가능한 경로가 없게 됩니다.
 
@@ -45,7 +77,18 @@ link: "https://medium.com/towards-data-science/the-essential-guide-to-graph-theo
 
 마지막으로, 오일러는 지금은 오일러 경로라고 알려지는 각 엣지를 정확히 한 번씩 통과하는 경로와, 이와 같은 경로가 시작점과 끝점이 동일한 오일러 회로라고 불리는 것 사이에 구별했습니다. 오일러의 이 경로에 대한 기준은 그래프가 연결되어 있고 홀수 차수의 노드가 정확히 제로 또는 두 개일 때 오일러 경로가 존재하며, 그래프가 연결되어 있고 모든 노드가 짝수 차수일 때만 오일러 회로가 존재한다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 그래프 이론 오늘 — 선택과 경로
 
@@ -55,7 +98,18 @@ link: "https://medium.com/towards-data-science/the-essential-guide-to-graph-theo
 
 이러한 단순화는 매우 유용하며, 그래프 이론적 렌즈를 통해 다양한 도메인에서 문제를 분석하고 해결하는 것이 가능합니다. 실제 세부 사항의 혼란을 줄이면서, 그래프 이론은 기술부터 사회과학에 이르기까지 다양한 분야에서 직접적인 경로, 효율적인 연결 및 최적의 해결책을 발견하는 것을 가능하게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것의 매력은 네트워크를 모델링하는 능력에만 있는 것이 아닙니다. 그래프의 다양한 유형을 특징 짓는 데 기여하는 것도 있습니다. 각 유형은 가중 그래프, 방향 그래프, 이분 그래프 및 다중 그래프와 같이 파티에 고유한 맛을 불어넣습니다. 이제 옷소매를 걷어차고 상용어로 말하자면 '야생'에서 이러한 그래프를 탐험해봅시다. 우리의 사용 사례에 맞게 몇 가지 Python 데모를 활용하여 이를 직접 만들어보는 방법을 알아보겠습니다. 복잡한 네트워크의 생성, 조작, 및 연구를 위해 설계된 Python 라이브러리인 networkx를 사용할 것입니다.
 
@@ -91,7 +145,18 @@ plt.title("Fig 4a: 가중 그래프: 도시 도로")
 plt.show()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 코드를 실행하면 아래와 같은 모습의 그림이 나올 것입니다:
 
@@ -101,7 +166,18 @@ plt.show()
 
 모델에서 엣지에 있는 가중치는 현실적인 요소를 더해줍니다. 예를 들어 높은 가중치는 긴 도로나 혼잡한 교통이 있는 도로를 나타낼 수 있으며, 이를 통해 계획자들이 병목 현상을 식별하거나 인프라 향상이 필요한 지역을 찾는 데 도움이 됩니다. 결국, 때로는 무엇을 해야할지 모를 만큼 많은 데이터를 보유하고 있는 세상에서 가장 중요한 질문은 종종 다음과 같습니다: 특정 결정을 내리기 위해 정말 필요한 정보는 무엇인가요? 나머지는 그저 소음뿐입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그림 4a의 그래프 유형을 사용하면 알고리즘을 적용하여 가장 짧은 경로를 찾거나 트래픽 흐름을 최적화하거나 심지어 새 도로 건설을 계획할 수 있습니다. 도시의 연결성과 효율성을 향상시키기 위해 데이터 기반 의사결정에 강력한 도구가 됩니다. 이러한 그래프는 다음과 같은 분야에 중요할 수 있습니다:
 
@@ -113,7 +189,18 @@ plt.show()
 
 이제 방향성 있는 그래프로 이동해 보겠습니다. 여기서 관계는 방향이 있는데, 마치 일방통행거리나 인터넷에서의 정보 흐름과 유사합니다. 가중 그래프는 각 엣지에 값을 할당하여 거리나 비용과 같은 특성을 양적으로 표현하지만, 방향성 있는 그래프는 정보의 흐름에 집중합니다. 가중 에지는 거리나 날짜에 따라 변경되는 통행료가 있는 도로와 같으며, 방향성 있는 에지는 한 방향 도로로, 엄격하게 A 지점에서 B 지점으로의 움직임을 허용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 웹사이트 내 개별 웹페이지를 나타내는 노드로 디지털 수퍼하이웨이의 스냅샷을 만들 것입니다. 방향성을 가진 엣지들은 사용자가 정보를 찾을 때 이동할 수 있는 단방향 경로를 강조합니다.
 
@@ -138,7 +225,18 @@ plt.show()
 
 웹 내비게이션에서 이는 사용자가 한 페이지에서 다른 페이지로 이동할 수 있지만 반대로는 그렇지 않음을 의미합니다. 이 흐름을 이해하는 것은 다양한 응용 프로그램에 매우 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 콘텐츠 접근성: 상호 액세스 없이 단방향 링크 뒤에 가치 있는 콘텐츠가 갇히지 않도록 보장합니다.
 - 사이트 구조: 사용자가 막다른 곳에 도달하지 않고 일반 콘텐츠에서 보다 구체적인 페이지로 자연스럽게 이동할 수 있도록 웹사이트의 구조를 설계합니다.
@@ -150,7 +248,18 @@ plt.show()
 
 이분 그래프는 연결이 각 클래스 내에서 아닌 두 가지 다른 객체 클래스 사이에만 존재하는 독특한 방식으로 두 가지 서로 다른 객체 클래스를 나타내는 방법을 제공합니다. 두 가지 다른 그룹 사이의 춤으로 생각해보세요. 한 그룹의 각 구성원은 다른 그룹의 구성원과 춤을 추거나 할 수 있지만 자신의 그룹과는 춤을 추지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 Python 데모에서는 추천 시스템의 작은 부분을 모델링하기 위해 이분 그래프를 생성합니다. 사용자를 나타내는 노드 세트와 책, 영화 또는 기타 추천 가능한 엔티티가 될 수 있는 아이템을 나타내는 노드 세트 두 개를 정의합니다. 에지를 추가하여 사용자와 항목을 연결하며 선호도나 상호 작용을 나타냅니다. nx.bipartite_layout 함수를 사용하여 시각적으로 두 세트를 분리하여 구분과 연결을 명확히합니다.
 
@@ -182,7 +291,18 @@ plt.show()
 
 이분 그래프는 스트리밍 서비스, 전자상거래 플랫폼 및 소셜 네트워크에서 사용되는 추천 시스템에서 특히 효과적입니다. 이들은 아래와 같은 면에서 도움이 됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 개인화(Personalization): 사용자-항목 상호작용을 분석하여, 사용자가 이전에 상호작용했던 항목과 유사한 항목을 제안해 컨텐츠를 개인화할 수 있습니다.
 - 협업 필터링(Collaborative Filtering): 이러한 그래프는 협업 필터링을 가능하게 하며, 비슷한 사용자들의 선호도에 기반하여 추천을 제공합니다.
@@ -194,7 +314,18 @@ plt.show()
 
 ## 그래프로 시각화하는 신경망(Visualizing Neural Networks as Graphs)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인공 지능과 기계 학습에서 그래프 이론에 의해 제공되는 추상 모델은 중요합니다. 예를 들어 신경망의 구조를 자세히 들여다보면 그래프가 당신을 노려보고 있는 것을 볼 수 있습니다. 각 뉴런은 노드이고 각 시냅스 가중치는 이야기가 담긴 간선입니다. 입력에서 출력 레이어로 데이터 경로는 방향 그래프의 탐색을 흉내냅니다. 이 그래프 중심적 관점은 메타포에 그치지 않습니다. TensorFlow와 같은 프레임워크에서 연산의 구조적 현실입니다. 이 그래프 기반 표현은 데이터로부터 학습하고 패턴을 인식하며 결정을 내릴 수 있는 알고리즘을 개발하는 데 중요합니다. 이 추상화를 통해 인공 지능 시스템은 인간의 사고 과정의 복잡성을 근사할 수 있습니다.
 
@@ -279,8 +410,18 @@ ax.set_title("Fig 5a: Neural Network Graph (Directed and Weighted) with Two Hidd
 plt.show()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_6.png)
 
@@ -292,18 +433,39 @@ plt.show()
 
 신경망을 그래프로 추상화함으로써, 우리는 모델을 분석하기 위한 다양한 그래프 이론 도구와 지표를 활용할 수도 있습니다. 이는 최단 경로를 조사하는 것(입력부터 출력까지의 가장 적은 변환 횟수를 이해하기 위해), 네트워크 중심성(가장 중요한 뉴런을 찾기 위해) 또는 심지어 커뮤니티 탐지(긴밀하게 협력하는 뉴런 군집 식별)를 포함할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 의사 결정 트리: 가지치기 그래프
 
 의사 결정 트리는 핵심적으로 루트 노드에서 시작하여 잎 노드로 가는 그래프로, 그 구조에 의사 결정의 본질을 담고 있습니다. 노드는 질문이나 결정을 나타내며, 간선은 데이터의 답변을 기반으로 취해진 경로를 표현합니다. 그래프 이론적으로 의사 결정 트리는 방향성이 있고 비순환적인 그래프(DAGs)로, 각 방향 간선은 질문에서 답변으로의 흐름을 나타내어 연속된 질문이나 최종 결정으로 이어집니다. 이 구조는 계층적이며 루트에서 잎까지의 명확한 방향을 나타내며, 잎은 결과를 표현합니다.
 
-우리는 이 그래프 기반의 의사 결정 과정을 클래식한 붓꽃 데이터셋에 적용할 것입니다.  이 데이터셋은 붓꽃의 150개 샘플로 구성되어 있고, 각각의 특징으로서 꽃받침 길이, 꽃받침 너비, 꽃잎 길이, 그리고 꽃잎 너비를 설명합니다. 데이터셋은 세 종류의 붓꽃 종(Sestosa, Versicolor, Virginica) 샘플을 담고 있습니다. 우리의 의사 결정 트리는 이러한 특징들로부터 학습을 통해 붓꽃의 종을 정확하게 예측할 것입니다.
+우리는 이 그래프 기반의 의사 결정 과정을 클래식한 붓꽃 데이터셋에 적용할 것입니다. 이 데이터셋은 붓꽃의 150개 샘플로 구성되어 있고, 각각의 특징으로서 꽃받침 길이, 꽃받침 너비, 꽃잎 길이, 그리고 꽃잎 너비를 설명합니다. 데이터셋은 세 종류의 붓꽃 종(Sestosa, Versicolor, Virginica) 샘플을 담고 있습니다. 우리의 의사 결정 트리는 이러한 특징들로부터 학습을 통해 붓꽃의 종을 정확하게 예측할 것입니다.
 
 의사 결정 트리의 추상적인 개념을 구체적인 그래프로 번역하고자 하며, 의사 권하는 networkx를 계속 활용하여 의사 결정의 흐름을 시각화할 것입니다. 우리는 붓꽃 데이터셋을 사용하여 각 특징을 결정 노드로 사용하고, 해당 값에 따라 가지를 친 의사 결정 트리를 구성할 것입니다. 이는 최종적으로 붓꽃의 종을 예측하는 경로를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import matplotlib.pyplot as plt
@@ -331,8 +493,18 @@ plt.show()
 
 # 그래프 이론의 인공지능에 유용한 추상화 — 비지도 학습
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비지도 학습, 특히 클러스터링은 데이터 내의 관계를 활용하여 그룹이나 클러스터를 형성함으로써 그래프 이론에서 상당한 이득을 얻습니다. 그래프 이론은 클러스터링에 그 자체에만 있는 것이 아닙니다. 데이터의 기본 구조와 연결을 강조함으로써 이러한 기술을 이해하고 구현하는 방법을 개선할 수 있습니다.
 
@@ -342,7 +514,18 @@ plt.show()
 
 스펙트럼 클러스터링은 그래프 이론을 데이터의 그래프 구조를 포착하는 라플라시안 행렬을 사용하여 클러스터링 기술에 통합시킬 수 있는 좋은 예입니다. 그 핵심은 다음과 같이 작동합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 그래프 표현: 스펙트럴 클러스터링은 각 데이터 포인트를 그래프의 노드로 취급하여 시작합니다. 데이터 포인트 간의 유사성이나 차이는 이러한 노드를 연결하는 엣지로 간주됩니다. 각 엣지의 강도나 가중치는 선택한 기준인 유클리드 거리나 다른 유사성 측정에 따라 두 점이 서로 얼마나 유사하거나 가까운지를 반영합니다.
 - 라플라시안 행렬 구성: 라플라시안 행렬은 그래프 표현에서 유도되며 노드 간의 연결성을 이해하는 데 중요합니다. 이 행렬은 그래프의 구조를 이해하는 데 도움이 되며 클러스터링 프로세스에 중요합니다. 이는 그래프의 인접 행렬에서 차수 행렬을 뺌으로써 유도됩니다. 인접 행렬은 노드 사이의 엣지 가중치를 기록하고, 차수 행렬은 노드에 연결된 엣지 가중치의 합을 나타내는 대각선 행렬입니다.
@@ -373,8 +556,18 @@ plt.ylabel('Feature 2')
 plt.show()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_8.png" />
 
@@ -407,8 +600,18 @@ plt.show()
 
 <img src="/assets/img/2024-05-20-TheEssentialGuidetoGraphTheoryFroman18thCenturyRiddletoArtificialIntelligence_9.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 클러스터링에서 그래프 이론의 유틸리티 및 통찰
 
@@ -421,7 +624,18 @@ plt.show()
 
 # 현대 AI 기반 제품에서의 그래프 이론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Microsoft Copilot은 그래프 이론 원리가 제품의 유용성을 궁극적으로 향상시키는 데 사용될 수 있는 한 예입니다. 이 경우에는 다양한 데이터 유형과 소스를 데이터 생태계 전반에 걸쳐 연결함으로써 사용자 상호작용을 개선합니다.
 
@@ -431,7 +645,18 @@ Copilot의 그래프 이론적 기초는 사용자 상호작용을 문맥화하�
 
 Microsoft Copilot은 사용자 프롬프트와 조직 데이터를 복잡한 상호 연결 정보 그래프로 변환하여 작동합니다. 이 그래프는 정적 개체가 아니며, 새로운 데이터의 흡수 및 사용자 상호작용을 통해 지속적으로 업데이트되고 풍부화됩니다. 여기서 노드는 데이터 포인트를 나타내고 엣지는 그들 사이의 관계를 반영하며, 데이터 포인트 사이의 다양한 직간접 관계를 고려합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 수집 및 스키마 생성: Copilot 운영의 핵심은 다양한 소스에서 통합 및 모델링된 데이터가 있는 Microsoft Graph에 있습니다. 여기서 데이터는 단순히 저장되는 것이 아니라 교차 연결성을 반영하는 스키마에 따라 구조화됩니다. 새로운 데이터가 통합되고 사용자 상호 작용이 발전함에 따라 기본 그래프는 성장하고 적응하여 시간이 지남에 따라 Copilot의 학습 능력을 향상시키고 응답을 개선합니다.
 - 데이터 색인 및 쿼리 처리: Copilot이 이 방대한 그래프에서 관련 데이터 포인트를 검색하는 것은 색인 및 쿼리 처리 능력에 달려 있습니다. 이 프로세스들은 AI 도구가 데이터 그래프를 탐색하고 그래프 이론적 모델에서 최단 경로를 찾을 수 있도록 합니다.
@@ -443,7 +668,18 @@ Microsoft Copilot은 사용자 프롬프트와 조직 데이터를 복잡한 상
 
 만약 제가처럼 ML 문제 해결의 세부 사항에 빠져들기를 즐기신다면, LinkedIn 및 Medium에서 팔로우해 주세요. 함께하면 하나의 현명한 해결책으로 AI 미궁을 탐험해 나갈 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 알고리즘 모험까지 계속 탐험하고, 계속 배우고, 노드를 계속 연결해 보세요! 데이터 과학의 그래프를 탐험하는 여정이 그 자체의 추상화만큼 명확하고 통찰력 있기를 바랍니다.
 

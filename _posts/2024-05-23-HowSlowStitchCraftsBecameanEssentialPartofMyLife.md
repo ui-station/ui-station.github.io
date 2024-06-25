@@ -3,13 +3,12 @@ title: "느린 스티치 공예가 내 인생의 필수 요소가 된 이유"
 description: ""
 coverImage: "/assets/img/2024-05-23-HowSlowStitchCraftsBecameanEssentialPartofMyLife_0.png"
 date: 2024-05-23 16:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-HowSlowStitchCraftsBecameanEssentialPartofMyLife_0.png
 tag: Tech
 originalTitle: "How “Slow Stitch” Crafts Became an Essential Part of My Life"
 link: "https://medium.com/@jmariewrites/how-slow-stitch-crafts-became-an-essential-part-of-my-life-aee823fbd22e"
 ---
-
 
 많은 분들처럼, 팬데믹으로 인한 봉쇄 기간은 예전 취미에 다시 연결할 수 있는 시간이었어요. 집에 머물면서 손에 있는 것으로 창의적으로 활동했답니다. 이 경우에는 침대 아래에서 꺼내온 먼지 투명 토트 바구니였죠. 그 안에는 다양한 종류의 실, 부분적인 크로셰 후크 세트, 그리고 살짝만 진행된 담요가 들어 있었어요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@jmariewrites/how-slow-stitch-crafts-became-an-essenti
 
 ![이미지](/assets/img/2024-05-23-HowSlowStitchCraftsBecameanEssentialPartofMyLife_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 느린 스티칭이란 무엇인가요?
 
@@ -31,17 +41,39 @@ link: "https://medium.com/@jmariewrites/how-slow-stitch-crafts-became-an-essenti
 
 이러한 질문에 대한 답변이 내 마음에 안정감을 줄 때, 내가 만들고 있는 것이 세계에 좋고 나에게도 좋다는 것을 알게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 천천히 스티칭을 하는 것은 안정적이에요.
 
 스트레스와 불안에 대한 이 비유를 좋아해요: 저는 5' 4" 정도인데, 제 키 때문에 종종 문이나 서랍 손잡이에 벨트 루프가 걸려 다양한 어려움이 생깁니다. 작은 원단 루프로 인해 제 몸 전체가 갑작스럽게 멈추는 것이 믿기 어렵죠. 그런데 작은 것들이 종종 제 기분을 굳게 더불어요. 때로는 무례한 말 한 마디, 좋지 않은 소식, 또는 예상치 못한 문제만으로 제 마음이 절망적인 꼬리표가 되는 것 같아요.
 
-하지만 창작의 영역에 있는 순간에, 불안한 제 마음이 익숙한 흐름 속으로 안정을 찾는 걸 느껴요: 하나의 루프를 다른 하나에 끼워 넣고, 하나의 루프를 다른 하나에 끼워 넣는 것... 제가 하는 각각의 스티치는 마음의 복잡함을 조금씩 풀어줘요. 저에게 스티칭은 명상의 한 형태죠. 숨을 세는 대신 스티치를 세어요. 이 마음의 공간은 조용하고 평화로우며 예측 가능해요. 
+하지만 창작의 영역에 있는 순간에, 불안한 제 마음이 익숙한 흐름 속으로 안정을 찾는 걸 느껴요: 하나의 루프를 다른 하나에 끼워 넣고, 하나의 루프를 다른 하나에 끼워 넣는 것... 제가 하는 각각의 스티치는 마음의 복잡함을 조금씩 풀어줘요. 저에게 스티칭은 명상의 한 형태죠. 숨을 세는 대신 스티치를 세어요. 이 마음의 공간은 조용하고 평화로우며 예측 가능해요.
 
 ![image](/assets/img/2024-05-23-HowSlowStitchCraftsBecameanEssentialPartofMyLife_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 수놓기는 용서하는 일이에요.
 
@@ -51,7 +83,18 @@ link: "https://medium.com/@jmariewrites/how-slow-stitch-crafts-became-an-essenti
 
 하지만 내 수놓은 부분들이 용서해 준다면, 나 또한 나 자신을 용서할 수 있을 거예요. 그래서 부드럽게, 조심스럽게 모두 되돌려 놓아요. 실수가 해결되면, 또한 아무 일도 없던 것처럼 원점으로 돌아갈 거예요. 그리고 프로젝트가 재작업되면, 이것은 성취감을 주며, 고장난 것이 치유된 듯한 느낌을 줄 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 마인드셋 덕분에 업무에서 위험을 무릎쓰는 게 덜 두렵게 느껴져요. 단순히 무엇을 시도해보고 결과를 보는 게 최선이라는 걸 알았어요. 정말 두려워할 게 뭐가 있을까요?
 
@@ -61,7 +104,18 @@ link: "https://medium.com/@jmariewrites/how-slow-stitch-crafts-became-an-essenti
 
 # 봉합은 자신감을 주는 일이에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 싸게 사서 하루나 이틀 안에 집으로 배달받을 수 있는 세상에서 나만의 손으로 무언가를 만드는 것에는 마법 같은 느낌이 있습니다.
 
@@ -71,7 +125,18 @@ link: "https://medium.com/@jmariewrites/how-slow-stitch-crafts-became-an-essenti
 
 수공예 실력을 키우고 확신을 얻으면서, 세상을 바라보는 시선이 새롭게 변해갑니다. 이것을 만들 수 있을까? 그것을 고칠 수 있을까? 그것을 사용하거나 재사용할 수 있을까? 제가 직접 필요에 맞게 상품을 만들 수 있고 내 취향에 맞출 수 있다는 점이 힘이 납니다. 만들 때, 그것은 오로지 나를 위해 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![How Slow Stitch Crafts Became an Essential Part of My Life](/assets/img/2024-05-23-HowSlowStitchCraftsBecameanEssentialPartofMyLife_3.png)
 
@@ -81,7 +146,18 @@ link: "https://medium.com/@jmariewrites/how-slow-stitch-crafts-became-an-essenti
 
 다행히, 공예는 열정적이고 창의적인 사람들로 가득한 커뮤니티에 진입하는 좋은 기회입니다. Reddit에서는 질문에 답변해 주는 친절한 사람들을 찾을 수 있었고, 지역 공예 상점과 스튜디오에서는 제 기술을 향상시키는 데 도움이 되는 훌륭한 교사를 만날 수 있었습니다. Meetup에서는 음료를 마시며 이야기하고 공예를 즐기는 친근한 사람들을 만날 수 있었고, Discord 커뮤니티에서는 열정가, 전문가, 디자이너, 사업가 등 다양한 사람들을 만나 제 공예 지식과 시각을 확장할 수 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 경우에 만난 사람들은 따뜻하고 친절했어요. 수공예 세계를 바라보는 곳마다, 정말로 나와 그들의 공예를 나누고 나의 작품을 축하하고 싶어하는 분들이 있어요.
 

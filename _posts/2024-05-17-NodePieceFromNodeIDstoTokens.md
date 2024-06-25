@@ -3,13 +3,12 @@ title: "NodePiece 노드 ID에서 토큰으로"
 description: ""
 coverImage: "/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_0.png"
 date: 2024-05-17 20:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_0.png
 tag: Tech
 originalTitle: "NodePiece: From Node IDs to Tokens"
 link: "https://medium.com/python-in-plain-english/nodepiece-from-node-ids-to-tokens-81130741e5d9"
 ---
-
 
 그래프 임베딩에 대한 혁신적인 접근
 
@@ -19,7 +18,18 @@ link: "https://medium.com/python-in-plain-english/nodepiece-from-node-ids-to-tok
 
 자연어 처리(NLP) 및 대형 언어 모델(LLM)에 대한 관심과 발전이 급증한 것은 잘 알려져 있습니다. “토큰화” 및 “트랜스포머”와 같은 용어들이 어디서든 볼 수 있을 정도입니다. 그러나 그래프 신경망(GNN) 및 특히 지식 그래프 임베딩이라는 또다른 강력한 분야는 전문가들을 제외하고는 훨씬 인기가 적습니다. 이러한 기술들은 추천 시스템에서 링크 예측, 노드 분류 등 다양한 애플리케이션 영역에서 강력한 솔루션을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GNN 세계에서 주목할 만한 기술 중 하나는 NodePiece 토큰화인데, 이견에 따르면 많은 주의를 필요로 합니다. 이 접근 방식은 그래프 신경망의 기능성을 향상시키기 위해 자연어 처리(NLP)에서 여러 개념을 도입한 새로운 방법론입니다. 이 기술은 유니버셜 "토큰" 집합을 사용하여 그래프 내 노드를 표현합니다. 이 접근 방식은 미리 정의된 ID 어휘가 필요 없어져 노드의 좀 더 적응적인 표현을 가능케 하며 모델이 다양한 그래프에 대해 일반화할 수 있는 능력을 향상시킵니다.
 
@@ -29,7 +39,18 @@ GNN 세계에서 주목할 만한 기술 중 하나는 NodePiece 토큰화인데
 
 1. NodePiece 토큰화의 기본 개념들을 파악할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 이 기술의 근간과 원칙을 이해하세요.
 
@@ -39,7 +60,18 @@ GNN 세계에서 주목할 만한 기술 중 하나는 NodePiece 토큰화인데
 
 이 포스트는 꽤 길기 때문에 섹션 및 하위 섹션의 간단한 개요입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제목 1: 건설 블록의 마법
 
@@ -55,7 +87,18 @@ GNN 세계에서 주목할 만한 기술 중 하나는 NodePiece 토큰화인데
 2.4. 관계적 특징: NodePiece가 노드가 참여하는 관계 유형을 어떻게 파악하는지 상세히 설명합니다.
 2.5. 독특한 지문 - 직관: NodePiece가 위치적 및 관계적 특징을 결합하여 독특한 노드 임베딩을 만드는 방식에 대한 직관적 설명을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 파트 3: 형식적 정의
 
@@ -76,7 +119,18 @@ GNN 세계에서 주목할 만한 기술 중 하나는 NodePiece 토큰화인데
 4.8. 전체 모델 정의: 모델 아키텍처 및 구성 요소에 대해 포괄적으로 살펴봅니다.
 4.9. TransE 모델 훈련: 지식 그래프 임베딩 작업에 NodePiece 임베딩을 사용하여 TransE 모델 훈련에 대해 논의합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 파트1: 빌딩 블록의 마법
 
@@ -86,7 +140,18 @@ NLP의 발전을 되짚어보면 초기 단계는 단어 임베딩, 어근 추�
 
 1. 큰 텍스트 말뭉치를 편집하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 토큰화, 표제어 추출 및 유사한 기술을 통해 전처리합니다.
 
@@ -96,8 +161,18 @@ NLP의 발전을 되짚어보면 초기 단계는 단어 임베딩, 어근 추�
 
 예를 들어, 임베딩 행렬이 다음과 같이 정의된 경우를 고려해보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![NodePieceFromNodeIDstoTokens](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_1.png)
 
@@ -107,8 +182,18 @@ NLP의 발전을 되짚어보면 초기 단계는 단어 임베딩, 어근 추�
 
 트랜스포머 및 그와 관련된 토큰화 방법의 도입이 이 분야를 혁신적으로 변화시켰습니다. Byte-Pair Encoding (BPE) (Sennrich et al., 2016)과 같은 기술은 부분 단어 또는 알파벳과 같은 건설 블록에 유사한 개념을 도입하여 토큰화 프로세스를 혁신적으로 개선했습니다. 이러한 부분 단어 또는 토큰은 전체 단어보다 더 간결하면서도 보다 보편적이며, 다양한 언어에 적용될 수 있고 새로운 어휘를 순차적으로 도입할 수 있도록 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 표시됩니다. 해당 표현은 전통적인 방법에서는 단어를 분리하여 각각 임베딩을 할당할 것이지만, 현대적인 토크나이저는 서브워드로 분할할 수 있습니다.
 
@@ -132,7 +217,18 @@ days
 [SEP]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 "tokenizer"와 같은 각 새로운 단어에 대한 고유한 ID가 필요하지 않게되어 "token"과 "##izers"가 이미 어휘에 있는 상태로 다른 단어의 표현을 구성할 수 있게 해줍니다. 이는 임베딩 메모리 공간을 절약하면서 가능하게 합니다.
 
@@ -142,7 +238,18 @@ days
 
 TransE, RotatE 및 유사한 모델에 대해 더 알고 싶은 분은 Medium.com의 게시물을 강력히 추천합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사는 이러한 모델 뒤에 있는 원칙들에 대해 포괄적인 개요를 제공합니다.
 
@@ -152,7 +259,18 @@ TransE, RotatE 및 유사한 모델에 대해 더 알고 싶은 분은 Medium.co
 
 ## 기여와 출처
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 노드피스 알고리즘은 대규모 지식 그래프에 대한 합성 및 매개변수 효율적인 표현에 중점을 둔 지식 그래프 임베딩 분야에서의 중요한 발전을 대표합니다. "NodePiece: Compositional and parameter-efficient representations of large knowledge graphs" (Galkin et al., 2021) 논문에서 소개된 이 방법은 널리 사용되는 Python 라이브러리인 PyKeen에 통합되어 있습니다.
 
@@ -162,7 +280,18 @@ PyKeen 구현은 아래에서 찾을 수 있습니다:
 
 이론적 관점에서 노드피스에 대한 포괄적이고 접근성 있는 소개를 위해, 원문의 공헌자 중 한 명인 Michael Galkin이 작성한 Medium 블로그 게시물 "NodePiece: Tokenizing Knowledge Graphs"를 읽어보시기를 권장합니다. 이 기사는 알고리즘에 대한 귀중한 심층적인 통찰을 제공하여 개발자들로부터 직접 얻은 통찰을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이클 갈킨의 블로그 게시물 'NodePiece: 지식그래프의 토큰화'는 NodePiece 알고리즘에 대한 깊은 설명으로 두루 짚고 있으며, 그 중 하나인 창조자에 의해 저술되었습니다. 이는 원래의 학술 논문을 넘어서 모델을 이해하려는 사람들에게 좋은 자료입니다.
 
@@ -172,7 +301,18 @@ NodePiece 알고리즘은 지식 그래프 내 개체마다 고유 식별자를 
 
 1. 위치 특성: 지정된 앵커 노드에 대한 노드의 근접성.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 관계 특성: 노드가 포함된 관계 유형
 
@@ -182,7 +322,18 @@ NodePiece 알고리즘은 지식 그래프 내 개체마다 고유 식별자를 
 
 선택 기술에 관계없이 근본적인 원칙은 간단합니다. 각 노드는 K개의 가장 가까운 앵커 노드까지의 거리에 의해 정의됩니다. 전략적인 앵커 노드 선택을 통해 가장 가까운 앵커에 대한 근접성이 각 노드에 대한 고유한 "지문"을 제공하는 높은 가능성이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 예시를 통해 이 개념을 설명해 보겠습니다:
 
@@ -192,7 +343,18 @@ NodePiece 알고리즘은 지식 그래프 내 개체마다 고유 식별자를 
 
 ![NodePieceFromNodeIDstoTokens_3](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 관계형 기능
 
@@ -202,8 +364,18 @@ NodePiece 알고리즘은 지식 그래프 내 개체마다 고유 식별자를 
 
 각 노드의 관계를 다음의 표로 요약할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![NodePieceFromNodeIDstoTokens_5](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_5.png)
 
@@ -213,8 +385,18 @@ Or with counting each relation type:
 
 Probably you see now, where it is going…
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 독특한 지문 — 직감
 
@@ -224,7 +406,18 @@ NodePiece 알고리즘의 본질은 각 노드에 대한 일관된 표현인 위
 
 ![NodePieceFromNodeIDstoTokens_7](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 파트 3: 형식적인 정의
 
@@ -234,7 +427,18 @@ NodePiece 알고리즘 코딩을 시작하기 전에 언급할 중요한 세부 
 
 2. 관계 추출: 마찬가지로, 노드의 관계적 문맥은 즉시 외부 관계 중에서 샘플링을 통해 파생되며, 각 노드당 최대 m개의 관계로 제한됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 연결 끊김 처리: 노드가 연결이 끊겼거나 특정 앵커나 관계에 대한 링크가 없는 경우 — 특별한 [DISCONNECTED] 토큰이 사용됩니다. 이는 NLP 시나리오에서의 `OOV` (out-of-vocabulary) 토큰과 유사합니다.
 
@@ -244,7 +448,18 @@ NodePiece에 대한 입력이 무엇인지 시작해 봅시다:
 
 ![NodePieceFromNodeIDstoTokens_8.png](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NodePiece는 다음과 같이 설계되었음을 알 수 있습니다:
 
@@ -254,7 +469,18 @@ NodePiece는 다음과 같이 설계되었음을 알 수 있습니다:
 
 3. 관계 (R) 및 앵커 (A)는 모델의 어휘 (V)를 형성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 논문에서 언급했듯이, 모든 노드에 대해 모든 앵커를 사용할 필요는 없으므로 k개의 앵커가 샘플링됩니다.
 
@@ -264,7 +490,18 @@ NodePiece는 다음과 같이 설계되었음을 알 수 있습니다:
 
 우리가 가지고 있는 핵심 요소들로부터, 그래프 내 각 노드의 고유한 "지문"에 대한 형식적인 정의로 이어질 수 있습니다. 이 지문은 세 가지 구성 요소로 나뉩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 앵커 세트: 모든 앵커(A) 집합에서 임의로 선택된 k개의 앵커입니다.
 
@@ -274,7 +511,18 @@ NodePiece는 다음과 같이 설계되었음을 알 수 있습니다:
 
 형식적으로 표현하면, 정점 집합 V의 각 노드 u에 대한 표현은 다음과 같이 설명할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-17-NodePieceFromNodeIDstoTokens_9.png](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_9.png)
 
@@ -284,7 +532,18 @@ NodePiece는 다음과 같이 설계되었음을 알 수 있습니다:
 
 앵커 및 해당 거리에 대해 임베딩 조회 전략이 제안됩니다. 이는 각 앵커 id(예: 앵커=0)가 임베딩 행렬의 특정 행에 연결되며, 거리에 대해서도 동일한 방식으로 적용됨을 의미합니다(예: 거리=1은 embedding 1에 해당). 이 방법은 각 노드의 그래프 내 고유한 서명의 위치 및 관계적 측면을 효율적이고 의미 있게 인코딩하는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고려해야 할 점은 기존 방법에서 사용되는 고유 노드 ID의 인구보다 앵커 수와 앵커 거리가 훨씬 작다는 것이다!
 
@@ -292,8 +551,18 @@ NodePiece는 다음과 같이 설계되었음을 알 수 있습니다:
 
 방정식 (1)으로 구분된 세트의 변환을 통해 임베딩을 통한 벡터 표현으로 포함된 기본 단계가 여러 단계 포함됩니다 (텍스트와 방정식을 섞는 Medium.com의 제한으로 인해 아래 부분은 이미지로 게시되었습니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Node representation matrix](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_12.png)
 
@@ -303,8 +572,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 ## Encoding
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 방정식 (3)에 나온 행렬은 각 노드 u에 대해 해당 인코더(MLP 또는 Transformer)를 적용하여 벡터로 변환을 용이하게 합니다. 이것은 원래 연구에서 발표된 것처럼 진행됩니다.
 
@@ -312,7 +591,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 아래는 이 인코딩 프로세스를 실제 예제로 설명하는 목적으로 노드 2에 대한 표현을 고려해 봅시다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Anchor를 0부터 시작하는 식별자로 할당하므로 id(Anchor 1) = 0 및 id(Anchor 2) = 1입니다.
 
@@ -322,7 +612,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 - k=m=2인 경우 각 노드에 대해 두 개의 Anchor와 두 개의 관계가 샘플링됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주어진 매핑을 가정하고 차원 공간 d = 3인 경우, 방정식 (2)에 따른 표현은 다음과 같이 나타납니다:
 
@@ -330,11 +631,20 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 ![image2](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_16.png)
 
-*0부터 세는 것을 기억하세요 :) id(r1) = 0, id(Anchor1) = 0, 등등 :).
+\*0부터 세는 것을 기억하세요 :) id(r1) = 0, id(Anchor1) = 0, 등등 :).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_17.png)
 
@@ -344,8 +654,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 물론 각 행렬의 값은 예시입니다 — 실제 모델에서는 아마 무작위 숫자들이 될 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앵커와 관련된 벡터를 합한 후에 방정식(3)에 정해진대로 연결하면 다음과 같이 유도됩니다:
 
@@ -355,7 +675,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 ## 어떻게 활용할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금부터 사용자는 분류, 클러스터링 등과 같은 하위 작업을 진행할 수 있습니다.
 
@@ -365,7 +696,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 논문 자체에서는 NodePiece 알고리즘의 기본적인 최적화, 트릭 및 개선 사항들이 여러 가지 언급되어 있지만, 이 간소화된 설명에서는 나머지 부분을 건너 뜁했습니다. 자세한 내용에 관심이 있다면 원본 논문을 꼭 읽어보시기를 강력히 권장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 파트 4: 단순화된 구현
 
@@ -375,7 +717,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 교육용으로 맞춤화된 구현의 제한된 가용성과 알고리즘의 기본 메커니즘을 이해하고자 하는 사람들을 위한 것이 아닌 알고리즘에 대해 더 깊이있게 이해하려는 사람들을 위한 간소화된 NodePiece의 버전을 개발하기로 선택했습니다. 이 버전은 명확성과 확장성을 염두에 두고 설계되었으며, 최적화와 프레임워크별 고려사항을 초과하는 부담 없이 알고리즘의 기본 메커니즘을 이해하려는 개인들에게 더 접근성 있는 진입점을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 간소화된 구현은 두 가지 주요 구성 요소로 구성되어 있습니다:
 
@@ -385,7 +738,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 ## 데이터
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 실습 목적으로 이 튜토리얼은 FB15k-237 데이터셋의 작은 하위 집합을 활용할 것입니다. 데이터셋의 축소판을 사용하는 이유는 실용성에 있습니다: 로컬에서 전체 데이터셋에 모델을 학습하는 데에는 시간이 많이 소요될 수 있습니다. 이 하위 집합은 결과 그래프가 일관되고 연결되어 있으며 전체 데이터셋의 구조적 무결성과 관계 복잡성을 유지하도록 꼼꼼히 만들어졌습니다. 이 방식을 통해 NodePiece 알고리즘을 빠르고 통찰력 있게 탐구할 수 있으며, 단순화된 구현을 더 관리하기 쉬운 규모로 실험하고 확장할 수 있습니다.
 
@@ -395,7 +759,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 2. 검증 데이터셋 — 402 개의 삼중 세트.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 테스트 데이터셋 — 224개의 삼중 세트가 있습니다.
 
@@ -405,7 +780,18 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 이제 그래프를 토큰화할 시간입니다. 우리는 단순화된 NodePiece 논리를 사용하는 사용자 정의 함수를 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 내용을 다음과 같이 번역하겠습니다.
 
@@ -419,12 +805,23 @@ After that, authors sum vectors related to anchors, so that the matrix node repr
 
 앵커 선정 함수를 시작해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 def degree_anchor_select(g: nx.Graph, n_anchors: int|float = 0.1) -> Tuple[List[int], Dict[int, int]]:
     """앵커 선택 방법으로, 용이한 경중에 따라 기초합니다. 가장 간단한 휴리스틱에 기초하여
-    이 그래프 내에서 가장 많은 노드와 연결되는 것으로 가정하고 노드의 최고 차수를 가진 노드를 
+    이 그래프 내에서 가장 많은 노드와 연결되는 것으로 가정하고 노드의 최고 차수를 가진 노드를
     앵커로 선택합니다.
 
     매개변수
@@ -461,8 +858,18 @@ def degree_anchor_select(g: nx.Graph, n_anchors: int|float = 0.1) -> Tuple[List[
 
 2. 차수 계산 및 정렬: 함수는 그래프 내 각 노드의 차수를 계산합니다. 그런 다음, 노드들을 차수에 따라 내림차순으로 정렬하여 앵커로 선택할 때 높은 차수의 노드를 우선하여 고려합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. ID 매핑 앵커: 선택된 각 앵커 노드를 0부터 시작하는 고유 식별자에 매핑하는 anchor_2_id 사전이 초기화됩니다. 이 매핑은 NodePiece 토큰화 프로세스의 이후 단계에서 앵커 노드를 효율적으로 식별하고 활용할 수 있게 합니다.
 
@@ -472,7 +879,18 @@ def degree_anchor_select(g: nx.Graph, n_anchors: int|float = 0.1) -> Tuple[List[
 
 다음으로, 각 노드에서 K개 가까운 앵커 노드까지의 최단 경로 거리를 계산하는 함수를 구축할 예정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 def build_distance_to_k_nearest_anchors(
@@ -530,17 +948,39 @@ def build_distance_to_k_nearest_anchors(
     return node2anchor_dist, node2anchor_idx, max_dist
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 거리 및 인덱스 행렬의 인구: 이 함수는 각 노드의 앵커까지의 거리를 정렬하여 각 노드에 대해 가장 가까운 k개의 앵커를 선택합니다. 선택된 앵커까지의 거리와 인덱스는 각각의 배열에 저장됩니다. 이 과정에서 max_dist 변수는 관측된 최대 거리를 반영하도록 업데이트되어, 도달할 수 없는 앵커는 이 최대값을 초과하는 거리로 표시됩니다 (max_dist +1 - "마법 OOV 토큰" :)).
 
 4. 도달할 수 없는 앵커 처리: 앵커에 대한 경로가 없어 도달할 수 없는 노드의 경우 거리가 max_dist + 1로 설정됩니다. 이 조정은 node2anchor_idx의 unreachable_anchor_token과 일치하는 인덱스를 식별하여 해당하는 node2anchor_dist 항목을 이 증가된 최대 거리로 설정함으로써 이뤄집니다. 이 메커니즘은 효과적으로 일부 앵커로부터 격리된 노드를 처리하며, 그래프 내에서 연결되지 않은 구성 요소의 가능성을 인정하여 NodePiece 표현의 무결성을 유지합니다.
 
-6. 반환 값: 함수는 노드마다 가장 가까운 앵커 지점에 대한 포용도를 제공하는 node2anchor_dist 거리 행렬, 앵커 인덱스 행렬 node2anchor_idx 및 max_dist 값을 포함하는 튜플을 반환함으로써 마무리됩니다. 이러한 출력은 NodePiece 임베딩을 구성하는 기초를 제공하여 각 노드의 근접성에 대한 종합적인 매핑을 제공합니다.
+5. 반환 값: 함수는 노드마다 가장 가까운 앵커 지점에 대한 포용도를 제공하는 node2anchor_dist 거리 행렬, 앵커 인덱스 행렬 node2anchor_idx 및 max_dist 값을 포함하는 튜플을 반환함으로써 마무리됩니다. 이러한 출력은 NodePiece 임베딩을 구성하는 기초를 제공하여 각 노드의 근접성에 대한 종합적인 매핑을 제공합니다.
 
 ## 관계적 컨텍스트 추출
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 단계는 각 노드에 대한 관련 컨텍스트를 추출하는 것입니다.
 
@@ -583,7 +1023,18 @@ def sample_rels(pyg_g: pyg_data.Data, max_rels: int = 50) -> th.Tensor:
 
 2. 고유 관계 탐색: 각 노드에 대해 고유한 외부 엣지 유형(관계)을 찾습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 관계 수 확인: 그래프의 각 노드에 대해, 이 함수는 노드에 연결된 모든 고유한 발신 관계 유형(엣지 유형)을 식별합니다.
 
@@ -593,7 +1044,18 @@ def sample_rels(pyg_g: pyg_data.Data, max_rels: int = 50) -> th.Tensor:
 
 4. 관계 정렬 및 저장: 각 노드에 대한 샘플링된(또는 추가된) 관계는 일관된 순서를 유지하도록 정렬됩니다. 정렬된 목록은 그래프 전체에 대한 포괄적인 관계적 문맥 저장소를 점진적으로 구축하기 위해 rels_matrix에 추가됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 6. 텐서 변환 및 결과 반환: 모든 노드에 대한 관계적 맥락 추출이 완료되면 rels_matrix 목록이 PyTorch 텐서로 변환됩니다. 이 텐서는 (num_nodes x max_rels) 모양을 가지며, 각 노드의 관계적 맥락을 구조화되고 기계가 읽을 수 있는 형식으로 체계적으로 나타냅니다.
 
@@ -603,7 +1065,18 @@ def sample_rels(pyg_g: pyg_data.Data, max_rels: int = 50) -> th.Tensor:
 
 1. anchor_distances — 각 노드에서 K 개 가장 가까운 앵커까지의 거리. 차원: N 노드 x K 앵커.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. anchor_hashes— 각 노드의 K 개 가장 가까운 앵커의 인덱스. 차원: N 노드 x K 앵커.
 
@@ -613,22 +1086,41 @@ def sample_rels(pyg_g: pyg_data.Data, max_rels: int = 50) -> th.Tensor:
 
 이 연습에서는 좀 더 간단하면서 효과적인 지식 그래프 임베딩 모델인 TransE로 피벗합니다. 원래 논문은 RotatE를 사용했지만 — 좀 더 복잡한 모델 — TransE는 그래프 내에서 관계를 임베딩하는 기본 측면에 초점을 맞춘 단순화된 접근 방식을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 TransE는 헤드 노드, 관계 및 테일 노드로 구성된 트리플릿을 평가하는 방식으로 작동합니다. 이는 헤드와 테일 노드 사이에 지정된 관계가 존재할 확률을 나타내는 likelihood 점수를 할당합니다. 모델의 목적은 실제 트리플릿을 인공적으로 생성된(변형된) 트리플릿과 구별하기 위해 설계된 손실 함수의 최적화에 담겨 있습니다.
 
 마크다운 형식으로 표를 변경하겠습니다:
 
-
 ![이미지 1](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_20.png)
 
 ![이미지 2](/assets/img/2024-05-17-NodePieceFromNodeIDstoTokens_21.png)
 
-
 의사 코드로 작성하면 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 for (head, relation, tail) in data:
@@ -645,8 +1137,18 @@ When interacting with NodePiece embeddings, TransE gets interesting when it come
 
 TransE embedding in this case will perform several steps. For each head or tail node:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1. 가장 가까운 앵커 인덱스를 가져와서 포함하세요.
 
@@ -656,7 +1158,18 @@ TransE embedding in this case will perform several steps. For each head or tail 
 
 4. 방정식 (3)에 따라서: 앵커 ID 임베딩과 거리 임베딩을 더해주고, 관계 임베딩과 연결하여 하나의 벡터로 연결하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 이 벡터를 인코더(MLP 또는 Transformer)를 통해 최종 임베딩을 얻기 위해 전달합니다.
 
@@ -692,7 +1205,18 @@ TransE embedding in this case will perform several steps. For each head or tail 
 
 1. anchor_embed는 앵커 해시에 대한 임베딩 조회입니다. 가중치 행렬의 차원은 ((K 앵커 + 1) x D 임베딩 크기)입니다. (N x K) 앵커 해시 행렬을 가져와 (N x K x D) 텐서를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. anchor_distances_embed은 앵커 거리를 위한 임베딩 조회입니다. 가중치 행렬은 ((최대 거리 +1) x D 임베딩 크기)의 차원을 가집니다. (N x K) 크기의 앵커 거리 행렬을 가져와 (N x K x D) 텐서를 반환합니다.
 
@@ -702,8 +1226,18 @@ TransE embedding in this case will perform several steps. For each head or tail 
 
 이제 TransE 모델을 준비하고, PyTorch Lightning으로 래핑하여 FB15k-237 데이터 하위 집합에서 훈련할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 use_swa = True
 swa_lr = 0.05
@@ -711,46 +1245,54 @@ swa_lr = 0.05
 pyg.seed_everything(111)
 
 params = models.KGModelParams(
-    num_nodes=train_data_orig.num_nodes,
-    num_relations=train_features.n_rels+1,
-    embedding_dim=200,
-    max_distance=max_distance+1,
-    hidden_sizes=(400,),
-    num_anchors=train_features.n_anchors,
-    top_m_relations=train_features.m_relations,
-    device=device,
-    kg_model_type=models.ModelType.TransE,
-    drop_prob=0.2
+num_nodes=train_data_orig.num_nodes,
+num_relations=train_features.n_rels+1,
+embedding_dim=200,
+max_distance=max_distance+1,
+hidden_sizes=(400,),
+num_anchors=train_features.n_anchors,
+top_m_relations=train_features.m_relations,
+device=device,
+kg_model_type=models.ModelType.TransE,
+drop_prob=0.2
 )
 
 model_pl = models.NodePiecePL(
-    params,
-    lr=5e-2,
-    train_features=train_features, 
-    val_features=val_features)
-
+params,
+lr=5e-2,
+train_features=train_features,
+val_features=val_features)
 
 저희가 인스턴스화한 모델은 다음과 같습니다:
 
-
 NodePieceTransE(
-  (anchor_embed): Embedding(31, 200)
-  (anchor_distances_embed): Embedding(13, 200)
-  (rel_emb): Embedding(238, 200)
+(anchor_embed): Embedding(31, 200)
+(anchor_distances_embed): Embedding(13, 200)
+(rel_emb): Embedding(238, 200)
 
-  (lin_layer): Sequential(
-    (0): BatchNorm(8000)
-    (1): Linear(in_features=8000, out_features=400, bias=True)
-    (2): LeakyReLU(negative_slope=0.01)
-    (3): Dropout(p=0.2, inplace=False)
-    (4): Linear(in_features=400, out_features=200, bias=True)
-  )
+(lin_layer): Sequential(
+(0): BatchNorm(8000)
+(1): Linear(in_features=8000, out_features=400, bias=True)
+(2): LeakyReLU(negative_slope=0.01)
+(3): Dropout(p=0.2, inplace=False)
+(4): Linear(in_features=400, out_features=200, bias=True)
 )
-
+)
 
 이전에 설명한 이론 부분과 완벽하게 일치합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째로는 기준 성능을 얻기 위해 모델을 어떤 학습도 하기 전에 유효성 검사 집합을 사용하여 모델을 평가할 것입니다. 결과는... 음... 예상대로 :)
 
@@ -767,7 +1309,18 @@ Hits@k(10) = 0.0이며 올바른 tail의 평균 순위는 매우 낮습니다. �
 
 모델 학습에 시간을 투자한 후에는 학습 이후의 성능을 확인하기 위해 모델을 평가할 수 있습니다. 체크포인트 콜백이 사용되었으므로 모든 반복 중에서 최상의 모델을 선택할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Hits@k 및 평균 순위 메트릭에서 상당한 향상이 있음을 볼 수 있을 것입니다.
 
@@ -784,7 +1337,18 @@ Hits@k 및 평균 순위 메트릭에서 상당한 향상이 있음을 볼 수 �
 
 규모를 감을 수 있도록 말씀드리면, 원래 논문에서는 훨씬 큰 데이터 세트를 사용했으며, 학습에 GPU로 몇 시간이 걸렸습니다. 논문의 표 10에서 한 실험은 400번의 epoch와 1,000개의 앵커로 7시간이 소요되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -794,7 +1358,18 @@ NodePiece가 거대하고 복잡한 그래프에서 노드를 나타내는 도�
 
 또한 NodePiece의 이론적 배경에 대해 다루었는데, 그래프 내에서 노드의 관계와 위치에 집중함으로써 노드를 유연하고 일반화된 방식으로 표현하는 방법을 설명했습니다. 이것은 노드의 표현을 단순화하고 모델이 다양한 그래프에서 학습하고 적응하는 능력을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내, 교육적 목적을 고려하여 설계된 NodePiece 모델의 간소화된 구현을 소개했습니다. 이 구현은 NodePiece가 어떻게 작동하며 현실 세계의 그래프 신경망 작업에 어떻게 적용될 수 있는지를 이해하기 쉽도록 개념을 세분화했습니다.
 
@@ -804,7 +1379,18 @@ NodePiece가 거대하고 복잡한 그래프에서 노드를 나타내는 도�
 
 # 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Bordes, A., Usunier, N., Garcia-Duran, A., Weston, J., & Yakhnenko, O. (2013). 다중 관계 데이터 모델링을 위한 임베딩 번역. 신경 정보 처리 시스템 발전, 26. https://proceedings.neurips.cc/paper/2013/hash/1cecc7a77928ca8133fa24680a88d2f9-Abstract.html
 - Brochier, R., Guille, A., & Velcin, J. (2019). 노드 표현을 위한 글로벌 벡터. 월드 와이드 웹 컨퍼런스, 2587–2593. https://doi.org/10.1145/3308558.3313595

@@ -3,13 +3,12 @@ title: "Netflix의 미디어 랜드스케이프 진화 321에서 클라우드 �
 description: ""
 coverImage: "/assets/img/2024-05-20-NetflixsMediaLandscapeEvolutionFrom321toCloudStorageOptimization_0.png"
 date: 2024-05-20 16:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-NetflixsMediaLandscapeEvolutionFrom321toCloudStorageOptimization_0.png
 tag: Tech
 originalTitle: "Netflix’s Media Landscape Evolution: From 3–2–1 to Cloud Storage Optimization"
 link: "https://medium.com/@netflixtechblog/netflixs-media-landscape-evolution-from-3-2-1-to-cloud-storage-optimization-77e9a19171ed"
 ---
-
 
 by Esha Palta Vinay Kawade Ankur Khetrapal Meenakshi Jindal Peijie Hu Dongdong Wu Avinash Dathathri
 
@@ -19,7 +18,18 @@ Netflix는 매년 다양한 콘텐츠를 제작합니다. 각 콘텐츠 제작 �
 
 # Netflix의 콘텐츠 제작 및 스토리지 관행 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 콘텐츠 제작의 다이내믹한 환경에서 전통 스튜디오들은 시험된 3/2/1 규칙에 오랜 기간 동참해왔습니다. 이 전략은 최소 두 가지 다른 유형의 미디어에 저장된 원본 카메라 영상과 오디오의 세 개 복사본 유지 및 한 개의 백업을 오프사이트에 보관하는 방식을 포함하고 있습니다.
 
@@ -27,7 +37,18 @@ Netflix는 매년 다양한 콘텐츠를 제작합니다. 각 콘텐츠 제작 �
 
 ![Production workflow](/assets/img/2024-05-20-NetflixsMediaLandscapeEvolutionFrom321toCloudStorageOptimization_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번 미디어가 카메라와 사운드 녹음기에서 추출되면, 디스크 파일로 변환되어 편집, 사운드 및 음악, 시각 효과 (VFX) 및 이미지 완성을 포함한 각 부서별 도구를 사용하여 조작됩니다. 이 미디어는 이 프로세스의 각 단계와 단계마다 포괄적인 백업 루틴을 거칩니다. 물리적 백업 및 아카이브를 기반으로 한 이 방법은 우연한 삭제, 공급 업체별 오류 및 자연 재해의 잠재적 위험을 줄이기 위해 설계되었습니다. 데이터 손실이 기획 및 촬영 단계에서 상당한 비용 손실로 이어질 수 있음을 명확히 인식하여 이러한 백업 프로세스의 중요성을 보여주고 있습니다.
 
@@ -37,8 +58,18 @@ Netflix는 매년 다양한 콘텐츠를 제작합니다. 각 콘텐츠 제작 �
 
 이러한 전략을 도입하는 조직은 지속가능성에 기여하며, 데이터 성장을 더 효과적으로 관리할 수 있는 민첩성과 준비성을 높일 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사용자 액세스 패턴 활용
 
@@ -48,7 +79,18 @@ Netflix는 매년 다양한 콘텐츠를 제작합니다. 각 콘텐츠 제작 �
 
 ![](/assets/img/2024-05-20-NetflixsMediaLandscapeEvolutionFrom321toCloudStorageOptimization_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Fif 2: 타이틀 발매 전후 자산 접근 패턴
 
@@ -58,7 +100,18 @@ Fif 2: 타이틀 발매 전후 자산 접근 패턴
 
 # 기회 규모
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희의 가설은 보관 자산을 더 저렴한 저장 공간에 보관한다면 비용 절감 가능성이 매우 크다는 것입니다. 저희의 재무 및 데이터 파트너들은 현재 데이터 규모, 성장률, 그리고 미래 비즈니스 사용 사례를 기반으로 서로 다른 모델과 추정치를 개발하는 데 도움을 주었습니다.
 
@@ -66,7 +119,18 @@ Fif 2: 타이틀 발매 전후 자산 접근 패턴
 
 상태 쿼: 계속해서 진행한다면, 예상 비용 부담이 급격히 증가할 것으로 예상됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단기적으로는 사용되지 않는 자산을 보관하여 비용 효율적인 S3 Glacier 유연한 검색 스토리지로 이전하는 것이 50% 이상의 절감을 가져올 것입니다.
 
@@ -76,7 +140,18 @@ Fif 2: 타이틀 발매 전후 자산 접근 패턴
 
 데이터의 저장 계층을 결정하는 방법은 무엇일까요? 데이터 라이프사이클 관리의 첫 단계로 사용 패턴에 의존하는 간단한 전략을 선택했습니다. 사용에 근거한 이 접근은 단순하지만 상당한 가치를 제공합니다. 이 전략은 서비스에 프로그램이 출시된 후 특정 기간이 지난 후 자산을 낮은 비용의 아카이브 저장소로 이전하는 것을 포함하고 있습니다. 동시에 출시 후 임시 데이터는 정리되어 저장 리소스를 최적화하고 비용을 최소화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 저장소 라이프사이클 관리 옵션 평가
 
@@ -86,7 +161,18 @@ Fif 2: 타이틀 발매 전후 자산 접근 패턴
 
 아카이빙 솔루션을 찾는 동안 우리는 AWS S3의 Intelligent Tiering을 평가했습니다. S3 Intelligent Tiering은 탁월한 기본 제품이지만, 우리가 원하는 데이터에 대한 사용자 정의 세밀한 조정 기능이 부족합니다. 접근 패턴 통계로부터 우리는 포스트 프로덕션 단계의 여러 플레이어가 우리 데이터에 접근하는 방법에 대한 훨씬 더 풍부하고 상세한 데이터 세트를 얻었습니다. 이 지식을 활용하여 S3 Intelligent Tiering이 더 저렴한 저장 등급으로 객체를 이동하는 데 30일 감시를 기다리는 대신 보다 저렴한 저장 등급으로 페타바이트의 데이터를 적극적으로 아카이브할 수 있습니다. 우리는 또한 이 지식을 활용하여 데이터를보다 적극적으로 삭제하고 더 많이 절약할 수 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 S3 위에 위치한 저장소 인프라레이어는 두 가지 입력을 기반으로 다른 저장 클래스 간에 데이터를 이동할 수 있습니다.
 
@@ -97,7 +183,18 @@ S3 위에 위치한 저장소 인프라레이어는 두 가지 입력을 기반�
 
 넷플릭스의 저장소 라이프사이클 관리 아키텍처를 간단히 살펴봅시다. 넷플릭스의 콘텐츠 생성을 고려할 때, 자산은 제작 중에 생성된 미디어 파일 집합을 나타냅니다. 고수준에서 저장소 라이프사이클 아키텍처는 다음 구성 요소로 구성되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Netflix's Media Landscape Evolution](/assets/img/2024-05-20-NetflixsMediaLandscapeEvolutionFrom321toCloudStorageOptimization_3.png)
 
@@ -114,7 +211,18 @@ S3 위에 위치한 저장소 인프라레이어는 두 가지 입력을 기반�
 
 이 게시물에서는 몇 가지 구성 요소를 높은 수준으로 다루고 다음 블로그 시리즈에서 자세한 아키텍처와 흐름을 다뤄 보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 디자인 원칙
 
@@ -125,7 +233,18 @@ S3 위에 위치한 저장소 인프라레이어는 두 가지 입력을 기반�
 
 2. 내구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 저장 메타데이터의 데이터 무결성을 보장하고 안티 엔트로피 메커니즘을 활용합니다.
 - 적어도 한 번의 활동 보고를 보장하여 신뢰성을 강화합니다.
@@ -137,7 +256,18 @@ S3 위에 위치한 저장소 인프라레이어는 두 가지 입력을 기반�
 
 4. 보안
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 지정된 응용 프로그램만 라이프사이클 작업을 트리거할 수 있도록 인가하여 안전한 환경을 유지합니다.
 
@@ -156,7 +286,18 @@ S3 위에 위치한 저장소 인프라레이어는 두 가지 입력을 기반�
 
 # 저장소 아카이빙 통계
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저장 수명주기 관리를 위해 Policy manager와 함께 생산 환경에서 자동화 작업을 시작했습니다. 이렇게 생긴 저장 수명주기 대시보드의 중요한 예시 몇 가지가 있습니다:
 
@@ -164,7 +305,18 @@ S3 위에 위치한 저장소 인프라레이어는 두 가지 입력을 기반�
 
 ![그림 6](/assets/img/2024-05-20-NetflixsMediaLandscapeEvolutionFrom321toCloudStorageOptimization_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Fig 6: Files Archived in a backfill job
 
@@ -174,7 +326,18 @@ Fig 6: Files Archived in a backfill job
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시스템화된 데이터 라이프사이클 관리는 높은 효율성, 비용 효율성 및 확장 가능한 저장 솔루션을 제공하기 위해 반드시 고려되어야 합니다. 이는 클라우드 또는 하이브리드 저장소를 위한 새로운 워크플로우의 설계나 아키텍처에 포함되어야 합니다.
 
@@ -186,7 +349,18 @@ Netflix에서 전형적인 실사 제작은 후속 제작 단계에서 단독으
 - 완전한 라이프사이클을 정의하고 아카이빙되었을 수도, 아닐 수도 있는 에셋을 정리합니다.
 - 정책 관리자를 확장하여 온프레미스, NFS, FSX, EBS 등 하이브리드 저장 환경의 데이터 계층화 및 라이프사이클 관리를 지원합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 감사의 말
 
@@ -196,7 +370,18 @@ Vinod Viswanathan, Sera Leggett, Obi-Ike Nwoke, Yolanda Cheung, Olof Johansson, 
 
 LTO: Linear Tape-Open의 약자로, 백업, 아카이빙 및 데이터 전송에 주로 사용되는 기술입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VFX: 비주얼 이펙트의 약자로, 라이브 액션 미디어를 위해 비디오나 이미지를 수정하는 것을 포함합니다.
 

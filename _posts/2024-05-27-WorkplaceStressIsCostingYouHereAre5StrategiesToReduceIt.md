@@ -10,7 +10,6 @@ originalTitle: "Workplace Stress Is Costing You. Here Are 5 Strategies To Reduce
 link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-are-5-strategies-to-reduce-it-b89dcf4f6091"
 ---
 
-
 ![Workplace Stress](/assets/img/2024-05-27-WorkplaceStressIsCostingYouHereAre5StrategiesToReduceIt_0.png)
 
 일은 우리 삶의 큰 부분입니다. 잘 하면 기쁨의 원천이 될 수 있습니다. 그러나 처리가 잘못되면 종종 스트레스, 불안 및 불만을 일으킬 수 있습니다.
@@ -19,8 +18,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 그러나 만약 스트레스로 인해 기능 저하가 되었다면 어떻게 해야 할까요?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의미 있는 기여를 하는 데 방해가 될까요?
 
@@ -30,7 +39,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 악한 사람들이나 유해한 기업 문화로 인한 스트레스와 같이 제어할 수 없는 스트레스도 있을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 권력 동태
 - 심한 동료들
@@ -52,7 +72,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 무슨 이유에서든지, 연구에 따르면 처리되지 않은 스트레스는 신체와 정신 건강 문제로 이어질 수 있습니다. 업무에서 생산성과 성과에 영향을 미칠 수 있습니다. 주변 사람들에게도 영향을 미칠 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 직장 스트레스 관리를 위한 5가지 전략
 
@@ -62,7 +93,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 ## 1. 사소한 것들을 버리세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자주 직장 스트레스는 삶의 작은 일에 지나치게 신경쓰는 데서 비롯됩니다—오랜 시간이 지나면 사실 크게 중요하지 않은 일들입니다. 당신은 이런 것들에 신경을 쓰지 않지만 그 순간에는 삶과 사망의 문제처럼 느껴질 수도 있습니다.
 
@@ -76,7 +118,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 - 내가 이에 대해 더이상 신경 쓰지 않게 되면 어떻게 될까?
 - 일 년 후의 내 자신을 바라봤을 때, 왜 지금 이게 중요한가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스트레스의 원인을 알면 시간과 주의를 훔치지 않아도 되는 사소한 일로부터 자유로워질 수 있어요.
 
@@ -86,7 +139,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 과도한 회의와 바쁜 달력으로 가득 찬 바쁜 스케줄은 중요한 느낌을 주지만, 목표를 향해 전진시키는 데는 아무것도 도와주지 않아요. 그 대신, 중요한 일을 달성하지 못한 바쁜 날은 당신에게 효율적이고 적당한 느낌을 주게 될 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가정에서 스트레스 받는 아침은 직장으로 옮겨 올 수도 있습니다. 건강한 아침 식사를 챙기는 데 충분한 시간이 없고 아이들을 학교에 데려다 주며 회의 참석 시간을 맞추느라 고생할 때가 있습니다. 이러한 계획 부족은 업무에서 다양한 사건에 대한 대응 방식에도 영향을 미칩니다. 아침에 스트레스를 받고 시작하면 특히 조금의 기대 불일치나 업무에서의 불편함도 당신을 힘들게 할 수 있습니다. 주변의 모든 것이 무너지는 것 같다는 느낌을 받을 수도 있으며, 이로 인해 스트레스와 불안감이 더해질 수 있습니다.
 
@@ -96,7 +160,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 ## 3. 명확함을 추구
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 직장에서 효과가 없다는 느낌은 소진의 중요한 원인 중 하나입니다. 당신이 어떤 것이 당신에게 기대되는지 모르거나 당신의 일이 팀의 목표에 어떻게 적합한지 알지 못하면 중요한 것을 달성하기 어려울 수 있습니다.
 
@@ -106,7 +181,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 스트레스를 피하기 위해 명확성을 강조하세요. 당신의 역할, 업무 기대치 및 목표를 이해하기 위해 더 나은 질문을 하고—관리자와 정기적인 피드백을 받기 위해 시간을 예약하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업 중에 명료성을 유지하면 긍정적인 변화가 가능해져 부정적인 감정과 스트레스가 줄어듭니다.
 
@@ -116,7 +202,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 의견 차이는 논쟁으로 이어질 수 있습니다. 충돌하는 우선순위, 일정이 겹치거나 기대치가 맞지 않으면 사람들이 자신의 아이디어를 구현하는 시간보다 논쟁하는 시간이 더 많아질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 갈등들이 불러일으키는 부정적인 감정들은 당신이 머리를 모래 속에 파묻을 수도 있게 할 수 있어요. 이런 경우 당신은 그 감정들을 다루기를 피하려 할지도 모르고, 그것들을 해결하지 않으려 하거나 그냥 사라질 것을 희망하며 미룰지도 모릅니다. 그러나 피하거나 아무것도 하지 않음으로써 문제는 더 악화될 뿐입니다 — 사소한 문제가 심각한 문제로 발전하여 조율을 찾기 어려워집니다. 그리고 조율이 이루어지지 않으면 중요한 일은 결코 해결되지 않습니다.
 
@@ -134,7 +231,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 ## 5. 부정적인 생각 다시 평가하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 의도와는 다른 일이 벌어질 때 어떻게 되는지 궁금하신가요? 그런 상황에 대한 즉각적인 반응이 최악의 결과를 상정하는 것이 아니었나요? 사건을 과장시키지 않았나요?
 
@@ -144,7 +252,18 @@ link: "https://medium.com/code-like-a-girl/workplace-stress-is-costing-you-here-
 
 스트레스를 관리하기 위해 부정적인 감정에 압도될 때 어쩌면 좋을지에 대해 이렇게 해보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 그 감정들을 받아들이세요. 그것들을 무시하지 마세요.
 - 당신의 마음이 만들어낸 것일 뿐이며 항상 옳은 것은 아닐 수 있다는 것을 인정하세요.

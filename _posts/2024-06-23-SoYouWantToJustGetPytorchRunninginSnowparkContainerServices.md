@@ -3,13 +3,12 @@ title: "Snowpark Container Services에서 Pytorch 실행하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-SoYouWantToJustGetPytorchRunninginSnowparkContainerServices_0.png"
 date: 2024-06-23 00:49
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SoYouWantToJustGetPytorchRunninginSnowparkContainerServices_0.png
 tag: Tech
 originalTitle: "So You Want To…. Just Get (Pytorch) Running in Snowpark Container Services"
 link: "https://medium.com/snowflake/so-you-want-to-just-get-pytorch-running-in-snowpark-container-services-be8501c7981f"
 ---
-
 
 ![그림](/assets/img/2024-06-23-SoYouWantToJustGetPytorchRunninginSnowparkContainerServices_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/snowflake/so-you-want-to-just-get-pytorch-running-in-s
 
 다행히도 Snowflake는 사용하기 쉬운 Snowpark Container Services로 컨테이너의 세계를 간단하게 만들어 냈습니다. 이 안내서는 기본부터 시작하여 여러분의 실제 목표와 튜토리얼 사이의 간격을 줄이기 위해 설계되었습니다. 컨테이너에 대해 거의 전혀 알지 못하고 튜토리얼과 실제 목표 간의 간극을 메우기 어렵다고 느끼는 것을 가정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 0. 도커 설치
 
@@ -29,7 +39,18 @@ link: "https://medium.com/snowflake/so-you-want-to-just-get-pytorch-running-in-s
 
 간단하다고 했지만, 정말로 간단하고 싶다면 저희 문서의 스노우파크 컨테이너 서비스에 있는 헬로 월드 내용을 따르는 게 어느 것도 이길 수 없습니다. 컨테이너에 대해 전혀 들어보지 못했다면 눈을 감고 따라하고 무언가를 실행한 후에 다음 단계로 넘어가서 무슨 일이 벌어지고 있는지 더 배워보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 2. 로컬 파일 설정하기 (컨테이너화하기 위해)
 
@@ -41,9 +62,20 @@ link: "https://medium.com/snowflake/so-you-want-to-just-get-pytorch-running-in-s
 
 Python 스크립트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-여기 쉬운 것부터 시작해봅시다; 파이썬에서 실행할 스크립트를 만들어 보세요. 이는 다른 것을 실행하는 것과 다르지 않을 것입니다; 그저 몇 가지 파이썬의 특이점을 준수해야 합니다, 즉 if __name__ 비트). 아마 이런 식일 것입니다:
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+여기 쉬운 것부터 시작해봅시다; 파이썬에서 실행할 스크립트를 만들어 보세요. 이는 다른 것을 실행하는 것과 다르지 않을 것입니다; 그저 몇 가지 파이썬의 특이점을 준수해야 합니다, 즉 if **name** 비트). 아마 이런 식일 것입니다:
 
 ```python
 # all my fancy code...
@@ -59,14 +91,25 @@ if __name__ == "__main__":
 
 로컬에서는 그냥 main.py를 포함하는 폴더로 이동하여 명령줄에서 "python3 main.py"를 입력하면 실행됩니다 (아래 Dockerfile 설명 참조). 이 중요한 것을 기억하는 것이 중요한데, 이것은 임의로 복잡할 수 있기 때문에 print("hello world")나 오픈AI를 꺾을 새로운 LLM과 같은 것일 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Dockerfile
 
 요렇게, Dockerfile이에요; 여기서 파일 유형은 보이지 않아요. 이렇게 보일 거에요:
 
 ```js
-ARG BASE_IMAGE=continuumio/miniconda3:4.12.0   
+ARG BASE_IMAGE=continuumio/miniconda3:4.12.0
 FROM $BASE_IMAGE
 RUN conda install python=3.8 && \
     pip install --upgrade pip && \
@@ -82,7 +125,18 @@ ENTRYPOINT ["python", "main.py"]
 
 ARG BASE_IMAGE은 이게 기반이 될 환경인데요, 우리 경우에는 "continuumio/miniconda3:4.12.0" 이에요. 더 자세한 내용은 여기에서 찾아볼 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 이후에는 pip/conda 설치를 실행합니다. 로컬 환경에서와 같이 실행될 것이므로 main.py 파일에서 사용할 필요가 있는 모든 패키지를 나열해주세요.
 
@@ -92,7 +146,18 @@ ARG BASE_IMAGE은 이게 기반이 될 환경인데요, 우리 경우에는 "con
 
 ## spec.yaml
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요, 마지막으로는 spec.yaml 파일입니다. 여기에서 Snowflake에 이 파일이 작동하도록 실제로 해야 하는 작업을 알려줍니다.
 
@@ -127,7 +192,18 @@ spec:
 
 그럼에도 불구하고, 몇 가지 주요 포인트를 소개해 드리겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이미지: 이는 우리가 4단계와 5단계에서 빌드하고 푸시하는 동일한 이미지입니다
 - 리소스: 우리는 4대의 Nvidia GPU(4개의 A10G)를 지정한 것에 유의합니다. 이는 컴퓨트 풀을 만들 때 GPU_NV_M을 사용할 것이기 때문입니다. 해당 풀에는 Nvidia A10G가 4대 들어 있습니다. 자세한 내용은 여기를 참조하세요.
@@ -173,7 +249,18 @@ CREATE IMAGE REPOSITORY IF NOT EXISTS tutorial_repository;
 CREATE OR REPLACE STAGE tutorial_stage;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 고려할 사항은 다음과 같습니다:
 
@@ -184,8 +271,18 @@ CREATE OR REPLACE STAGE tutorial_stage;
 
 먼저, Snowflake에서 다음을 실행하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지 저장소 표시
 
@@ -195,8 +292,18 @@ CREATE OR REPLACE STAGE tutorial_stage;
 
 저장소 URL이 있습니다 (추론할 수 있지만, 확실한 것이 무릎에 허물지 않는다는 것을 기억하세요)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 명령 프롬포트 또는 터미널에서 로컬 머신의 DockerFile 위치로 이동한 다음 다음을 실행하세요:
 
@@ -208,7 +315,18 @@ docker build --rm --platform linux/amd64 -t repository_url/my_2job_image:latest 
 
 sfseeurope-eu-demo211.registry.snowflakecomputing.com/tutorial_db/data_schema/tutorial_repository 입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 도커를 호출하는 것은 도커라고 생각하면 됩니다.
 - 빌드는 도커에 이미지를 빌드하라는 것입니다.
@@ -222,7 +340,18 @@ sfseeurope-eu-demo211.registry.snowflakecomputing.com/tutorial_db/data_schema/tu
 
 - 이제 컨테이너가 생성되었으니, 진짜 생성되었는지 두 번 확인해보겠습니다. 명령줄에서 다음을 실행해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 이미지 ls
@@ -234,7 +363,18 @@ sfseeurope-eu-demo211.registry.snowflakecomputing.com/tutorial_db/data_schema/tu
 
 Snowflake로 컨테이너를 푸시하려면 도커에 로그인해야 해요. 터미널/명령줄에서 다음 명령을 실행해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```bash
 docker login <registry_hostname> -u <username>
@@ -248,7 +388,18 @@ docker login <registry_hostname> -u <username>
 
 로컬 이미지도 좋지만, 우리는 그것들을 Snowflake로 옮기고 싶어요! 여기도 간단한 단계입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 푸시 저장소_주소/my_2job_image:latest
@@ -262,7 +413,18 @@ docker login <registry_hostname> -u <username>
 snowsql -a 계정_이름
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 계정 이름은 "sfseeurope-eu_demo1234"와 같은 형식일 것입니다 (적어도 제 경우에는요).
 
@@ -279,10 +441,20 @@ PUT file:///the_file_location @tutorial_stage
 
 또한 Snowflake GUI에서 결과를 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변환한 내용입니다. 😊
-
 
 ![이미지](/assets/img/2024-06-23-SoYouWantToJustGetPytorchRunninginSnowparkContainerServices_2.png)
 
@@ -300,10 +472,20 @@ IN COMPUTE POOL tutorial_gpu_pool
 NAME=tutorial_MT_job_service
 FROM @tutorial_stage
 SPEC='my_job_spec.yaml';
-``` 
+```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 9. 잘못된 부분을 해결해보세요
 
@@ -315,7 +497,18 @@ SPEC='my_job_spec.yaml';
 
 2번과 3번은 결과물을 검토할 곳이 있다는 가정하에 이루어집니다. 다행히도, 확인할 공간이 있습니다! 필요한 것은 다음을 실행하는 것뿐입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sql
 SELECT SYSTEM$GET_SERVICE_LOGS('TUTORIAL_DB.data_schema.tutorial_MT_job_service', 0, 'main');
@@ -327,7 +520,18 @@ SELECT SYSTEM$GET_SERVICE_LOGS('TUTORIAL_DB.data_schema.tutorial_MT_job_service'
 
 이 안내서가 여러분이 컨테이너 사용을 시작하고 복잡한 애플리케이션을 배포할 때 자신감을 갖게 해주어서, 이미 "장난감" 이상의 것을 만들었다는 것을 알 수 있기를 바랍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최종적으로, 컨테이너를 모델 훈련의 수단으로만 보는 분들에게 한 마디 전하고 싶어요. 최근 Snowflake에서는 컨테이너 실행을 더 쉽게 만들어주는 프라이빗 프리뷰를 시작했어요. 노트북에서 일반적인 파이썬 실행과 2번의 클릭만으로 컨테이너 내에서 코드 실행이 가능해졌죠. 앞으로 더 쉬워질 것이니 이 공간을 주의깊게 지켜보세요.
 
@@ -339,6 +543,17 @@ SELECT SYSTEM$GET_SERVICE_LOGS('TUTORIAL_DB.data_schema.tutorial_MT_job_service'
 - [Snowpark 컨테이너 서비스를 활용한 OCR 포함 문서 추출 및 GPU 가속화](https://medium.com/@michaelgorkow/document-extraction-incl-ocr-with-gpu-acceleration-in-snowpark-container-services-d3d9f4d4764a)
 - [Snowflake Cortex 기능 및 Snowpark 컨테이너 서비스를 활용한 콜센터 분석](https://medium.com/snowflake/call-centre-analytics-with-snowflake-cortex-function-and-snowpark-container-services-5e06b4baef46)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한 — 리뷰 코멘트를 제공해준 Caleb Baechtold에게 감사드립니다.

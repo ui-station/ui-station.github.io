@@ -3,13 +3,12 @@ title: "기계 학습을 배우는 용기 사라지는 그래디언트와 폭주
 description: ""
 coverImage: "/assets/img/2024-05-18-CouragetoLearnMLTacklingVanishingandExplodingGradientsPart2_0.png"
 date: 2024-05-18 19:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-CouragetoLearnMLTacklingVanishingandExplodingGradientsPart2_0.png
 tag: Tech
 originalTitle: "Courage to Learn ML: Tackling Vanishing and Exploding Gradients (Part 2)"
 link: "https://medium.com/towards-data-science/courage-to-learn-ml-tackling-vanishing-and-exploding-gradients-part-2-d0b8aed1ce7a"
 ---
-
 
 "“Courage to Learn ML”의 새로운 장을 찾아주신 여러분, 환영합니다. 이 시리즈는 복잡한 주제들을 쉽고 재미있게 다루고, 멘토와 학습자 간의 캐주얼 대화처럼 친밀한 분위기를 제공하기 위해 만들어졌습니다. “용기로 방어하다”의 쓰기 스타일에서 영감을 받아 기계 학습에 특히 집중하고 있어요.
 
@@ -22,7 +21,18 @@ link: "https://medium.com/towards-data-science/courage-to-learn-ml-tackling-vani
 - 배치 정규화
 - 실제 적용(개인 경험)"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 활성화 함수
 
@@ -32,8 +42,18 @@ link: "https://medium.com/towards-data-science/courage-to-learn-ml-tackling-vani
 
 ## 활성화 함수란 무엇이며, 어떻게 적절한 함수를 선택할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Activation functions](/assets/img/2024-05-18-CouragetoLearnMLTacklingVanishingandExplodingGradientsPart2_0.png)
 
@@ -43,8 +63,18 @@ link: "https://medium.com/towards-data-science/courage-to-learn-ml-tackling-vani
 
 따라서 효과적인 활성화 함수를 선택하는 첫 번째 단계는 두 가지 핵심 질문에 대한 대답을 찾는 것입니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 활성화 함수의 선택이 소멸 그래디언트나 폭발 그래디언트와 같은 문제에 어떤 영향을 미치나요? 어떤 기준이 좋은 활성화 함수를 정의하나요?
 
@@ -55,7 +85,18 @@ link: "https://medium.com/towards-data-science/courage-to-learn-ml-tackling-vani
 - 순방향 전파 과정에서 시그모이드 함수는 입력을 0과 1 사이의 매우 좁은 범위로 압축합니다. 한 네트워크가 은닉층에서 활성화 함수로 시그모이드만 사용하는 경우, 여러 층을 거칠수록 이 범위가 더욱 좁아지게 됩니다. 이 압축 효과로 인해 출력의 변동성이 감소하고 양수 값으로의 편향이 도입됩니다. 입력 부호에 관계없이 출력은 0과 1 사이에 유지되기 때문에.
 - 역전파 과정에서 시그모이드 함수의 도함수(종모양 곡선)는 0과 0.25 사이의 값을 생성합니다. 이 작은 범위는 입력을 가로지르는 그래디언트가 여러 층을 통과함에 따라 급속하게 감소할 수 있도록 할 수 있습니다. 이것은 앞선 층 그래디언트가 연속된층의 도함수의 곱으로 이루어지기 때문인데, 이러한 낮은 도함수의 복합 곱은 점점 더 작은 그래디언트를 결과로 가져와서 초기 층에서의 효과적인 학습을 방해합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 제약 사항을 극복하기 위해 이상적인 활성화 함수는 다음과 같은 특성을 보여야 합니다:
 
@@ -68,11 +109,33 @@ link: "https://medium.com/towards-data-science/courage-to-learn-ml-tackling-vani
 
 이 섹션은 거의 모든 현재 활성화 함수에 대한 일반적인 개요를 제공하려고 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ReLU의 고려 사항 중 하나는 선형 세그먼트 간의 급격한 전환으로 인해 x=0에서 미분 불가능하다는 것입니다. 실제로 PyTorch와 같은 프레임워크는 subgradient 개념을 사용하여 이를 해결하며, 종종 x=0에서 도함수를 0.5 또는 [0, 1] 내의 다른 값으로 설정합니다. 이는 보통 정확한 제로 입력이 드물고 데이터의 변동성 때문에 문제가 되지 않습니다.
 
@@ -82,7 +145,18 @@ Leaky ReLUs는 클래식적인 ReLU에 약간의 변화를 준겳이며, ReLU를
 
 Leaky ReLU는 ReLU의 음수 부분을 수정하여 작고 0이 아닌 기울기를 부여합니다. 이 조정은 음수 입력이 작은 음수 출력을 생성하도록하며, 효과적으로 그 외의 0 출력 영역을 '누출'시킵니다. 이 누출의 기울기는 하이퍼파라미터 알파(α)에 의해 제어되며, 전형적으로 뉴런을 활성 유지와 희소성 사이의 균형을 유지하기 위해 0에 가깝게 설정됩니다. 작은 음수 출력을 허용함으로써, Leaky ReLU는 활성 함수의 출력을 0 주변으로 중앙 집중시키고 뉴런이 비활성화되지 않게 하여 'dying ReLU' 문제에 대응합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 하이퍼파라미터로 α를 도입하면 모델 튜닝에 대한 복잡성이 추가됩니다. 이를 관리하기 위해 원본 Leaky ReLU의 변형이 개발되었습니다:
 
@@ -93,7 +167,18 @@ Leaky ReLU를 개선한 Exponential Linear Unit (ELU). Leaky ReLU와 ELU는 음�
 
 Self-Normalizing 속성을 갖춘 향상된 ELU인 Scaled Exponential Linear Unit (SELU). SELU는 신경망 내에서 제로 평균 및 단위 분산을 유지하도록 설계된 ELU의 확장된 버전입니다. 양의 순입력의 기울기가 1을 초과하도록 고정 스케일 요인 λ(1보다 큰 값)을 통합함으로써 SELU는 하위 레이어의 기울기가 줄어드는 상황에서 기울기를 증폭하여 딥 뉴럴 네트워크에서 자주 발생하는 소멸하는 기울기 문제를 예방하는 데 특히 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SELU에 대해, 매개변수(α 및 λ)는 고정된 값이며 학습할 수 없으므로 조정해야 할 매개변수가 적어 튜닝 과정이 간소화됩니다. SELU 구현에서 이러한 특정 값들을 찾을 수 있습니다.
 
@@ -103,7 +188,18 @@ SELU의 자기 정규화 기능을 위해서는 입력 피처가 표준화되어
 
 요약하면 SELU의 자기 정규화가 효과적으로 기능하려면 입력 피처가 정규화되고 네트워크 구조가 끊기지 않는 것을 보장해야 합니다. 이 일관성은 네트워크 전체에서 자기 정규화 효과가 유지되도록 도와주며 누출 없이 계속 유지되도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 GELU (Gaussian Error Linear Unit)은 Dropout으로부터 규제 아이디어를 통합한 혁신적인 활성화 함수입니다. 기존 ReLU가 음수 입력에 대해 0을 출력하는 반면, leaky ReLU, ELU 및 SELU는 음수 출력을 허용합니다. 이를 통해 활성화의 평균을 0에 가깝게 이동시켜 편향을 줄이는데 도움을 줍니다. 이는 ReLU와 비슷한 방식으로 편향을 줄이지만 음수 입력을 완전히 0으로 만들지 않고 음의 값을 허용한다는 것을 의미합니다. 그러나 이러한 누출은 "죽어 가는 ReLU"의 일부 이점을 잃어버릴 수 있음을 의미합니다. 여기서는 일부 뉴런의 비활성으로 더 sparse하고 일반화된 모델을 얻을 수 있습니다.
 
@@ -113,15 +209,37 @@ GELU (Gaussian Error Linear Unit)은 Dropout으로부터 규제 아이디어를 
 
 GELU 활성화 함수에서 CDF인 Φ(x) 또는 표준 가우스 누적 분포 함수가 중요한 역할을 합니다. 이 함수는 표준 정규 분포를 따를 때 x보다 작거나 같은 값을 갖는 것으로 나타내는 확률을 나타냅니다. Φ(x)는 음수 입력에 대해 0부터 양수 입력에 대해 1로 매끄럽게 전환되어, 입력의 스케일링을 효과적으로 제어합니다. Dan Hendrycks 외(출처)의 논문에 따르면 뉴런 입력은 배치 정규화를 사용할 때 특히 정규 분포를 따르는 경향이 있어 정규 분포의 사용이 정당화됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 함수의 디자인은 x 값이 줄어들수록 입력이 더 자주 "떨어지도록" 허용하여 변환을 확률적이면서 입력 값에 의존적으로 만듭니다. 이 메커니즘은 흔히 사용되는 직선 함수인 f(x) = x를 더 부드럽게 만들어 ReLU 함수와 유사한 형태를 유지하며, 조각별 선형 함수에서 발생하는 갑작스러운 변화를 피합니다. GELU의 가장 중요한 특징 중 하나는 뉴런을 완전히 비활성화할 수 있다는 것으로, 이를 통해 입력 값의 변화에 따라 다시 활성화될 수 있습니다. 이러한 확률적 성질은 입력 값에 의존하지만 완전히 무작위적이지 않아 뉴런이 다시 활성화될 기회를 제공합니다.
 
 아래는 GELU가 ReLU보다 두드러지는 이점이라고 요약할 수 있습니다. GELU는 어떤 입력 값이 양수인지 음수인지에 관계없이 전체 입력 값 범위를 고려합니다. Φ(x) 값이 감소함에 따라 GELU 함수의 출력이 0에 가까워지는 확률이 증가하여 뉴런을 부드럽게 "떨어뜨리게" 됩니다. 이 방법은 전형적인 드롭아웃 방식보다 더 정교하며, 무작위적으로 하는 것이 아니라 데이터에 따라 뉴런의 비활성화를 결정하도록 되어 있습니다. 이 방식은 매우 매력적으로 느껴지며, 마치 고급 디저트에 부드러운 크림을 추가하여 조금 더 향상된 미각을 경험하는 것과 같다고 생각합니다.
 
-GELU는 GPT-3, BERT 및 다른 Transformers와 같은 모델에서 효율적이며 언어 처리 작업에서 강력한 성능을 보여 인기 있는 활성화 함수가 되었습니다. 확률적 성질 때문에 계산 위주이지만, 표준 가우스 누적 분포인 Φ(x)의 곡선은 시그모이드와 tanh 함수와 유사합니다. 흥미로운 점은 GELU가 tanh를 사용하거나 x(1.702*x) 공식을 사용하여 근사할 수 있다는 것입니다. 이러한 단순화 가능성에도 불구하고, PyTorch의 GELU 구현은 그러한 근사가 종종 불필요할 정도로 빠르게 진행됩니다.
+GELU는 GPT-3, BERT 및 다른 Transformers와 같은 모델에서 효율적이며 언어 처리 작업에서 강력한 성능을 보여 인기 있는 활성화 함수가 되었습니다. 확률적 성질 때문에 계산 위주이지만, 표준 가우스 누적 분포인 Φ(x)의 곡선은 시그모이드와 tanh 함수와 유사합니다. 흥미로운 점은 GELU가 tanh를 사용하거나 x(1.702\*x) 공식을 사용하여 근사할 수 있다는 것입니다. 이러한 단순화 가능성에도 불구하고, PyTorch의 GELU 구현은 그러한 근사가 종종 불필요할 정도로 빠르게 진행됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 깊이 들어가기 전에 먼저 정리해보자면,
 
@@ -134,7 +252,18 @@ Günter Klambauer 등의 논문에서 SELU가 소개된 적이 있습니다. 여
 - 증폭 슬로프: 하위 층에서 너무 낮은 분산을 높이기 위해 중요한 기울기가 있어야 합니다.
 - 연속성: 연속적인 곡선은 분산의 변화를 안정화하고 증가시키는 효과를 균형있게 유지하는 고정점을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한 "이상적인" 활성화 함수에 대한 두 가지 추가 기준을 제안하고 싶습니다:
 
@@ -145,8 +274,18 @@ Günter Klambauer 등의 논문에서 SELU가 소개된 적이 있습니다. 여
 
 활성화 함수를 입력 데이터를 변환하는 블렌더로 생각해 보세요. 일부 재료를 선호하는 블렌더처럼, 활성화 함수는 그들의 본질적인 특성에 따라 편향을 도입할 수 있습니다. 예를 들어, 시그모이드 및 ReLU 함수는 일반적으로 입력과 관계없이 비음수 출력만 나타냅니다. 이는 블렌더가 어떤 재료를 넣어도 항상 동일한 맛을 내는 것과 유사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-CouragetoLearnMLTacklingVanishingandExplodingGradientsPart2_3.png)
 
@@ -156,8 +295,18 @@ Günter Klambauer 등의 논문에서 SELU가 소개된 적이 있습니다. 여
 
 확실히, ReLU의 양수 값을 제로화하고 음수 값을 그대로 통과시키는 버전을 설계할 수 있습니다. 이것은 기술적으로 실행 가능한데, 중요한 점은 여기서 값의 부호가 아니라 네트워크에 비선형성을 도입하는 것입니다. 이 활성화 함수들이 일반적으로 출력 레이어가 아닌 숨겨진 레이어에서 사용된다는 것을 기억하는 것이 중요합니다. 즉, 이 네트워크 내의 이러한 활성화 함수의 존재는 최종 출력의 부호에 영향을 미치지 않고 이 레이어의 특성에 의해 직접적으로 영향을 받지 않더라도 최종 출력이 여전히 양수와 음수 모두가 될 수 있다는 것을 의미합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 무슨 상황에서든, 네트워크의 가중치와 편향은 출력의 필요한 부호에 맞게 조정될 수 있습니다. 예를 들어, 전통적인 ReLU에서 출력이 1이고 다음 레이어의 가중치가 1이면 출력은 여전히 1로 유지됩니다. 마찬가지로, 제안된 ReLU 변형이 -1을 출력하고 가중치가 -1이면 결과는 여전히 1이 됩니다. 본질적으로, 우리는 출력의 부호보다는 크기에 더 신경을 씁니다.
 
@@ -167,7 +316,18 @@ Günter Klambauer 등의 논문에서 SELU가 소개된 적이 있습니다. 여
 
 이를 이해하기 위해, ReLU 뒤에 있는 생물학적 영감을 살펴볼 수 있습니다. ReLU는 생물학적 뉴런을 모방하는데, 이들은 한계값을 가지고 있습니다. 이 한계값을 초과하는 입력은 뉴런을 활성화시키고, 그 이하는 그렇지 않습니다. 활성 및 비활성 상태 간 전환 가능성은 신경 기능에서 중요합니다. ELU, SELU, GELU와 같은 변형을 고려할 때, 이들의 설계가 두 가지 다른 필요에 부합함을 알 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 긍정적 영역: 임계값을 초과하는 신호가 전달될 때 전달되는 원하는 신호를 전송하는 것을 의미합니다.
 - 부정적 영역: 원치 않는 신호를 최소화하거나 걸러내며 대형 부정적 값의 영향을 완화하여 누수하는 게이트처럼 작동합니다.
@@ -179,7 +339,18 @@ Günter Klambauer 등의 논문에서 SELU가 소개된 적이 있습니다. 여
 
 이 설계는 이러한 활성화 함수들이 유용한 신호를 증가시키면서 잠재적으로 유해한 극단을 억제해 안정적인 학습 환경을 제공할 수 있도록 균형을 맞춘다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 활성화 함수가 게이트로 작용하는 개념은 새로운 아이디어가 아닙니다. 시그모이드 함수가 무엇을 기억하거나 업데이트하거나 잊어버릴지를 결정하는 LSTM과 같은 구조에서 강력한 전례가 있습니다. 이 게이팅 개념은 ReLU의 변형이 특정한 방식으로 설계된 이유를 이해하는 데 도움이 됩니다. 예를 들어 GELU는 표준 정규 분포의 누적 분포 함수(CDF)에서 유도된 스케일 계수를 사용하는 동적 게이트 역할을 합니다. 이 스케일링을 통해 입력의 작은 부분이 0에 가까울 때 통과되도록 하고, 더 큰 양수 값은 대부분 변경되지 않고 통과할 수 있게 합니다. 입력이 다음 레이어에 얼마나 많은 영향을 미치는지 제어함으로써, GELU는 정보 흐름의 효과적인 관리를 용이하게 해주며, 특히 transformer와 같은 구조에서 유용합니다.
 
@@ -189,7 +360,18 @@ Günter Klambauer 등의 논문에서 SELU가 소개된 적이 있습니다. 여
 
 ## 언제 각 활성화 함수를 선택해야 할까요? 왜 ReLU가 여전히 실무에서 가장 인기 있는 활성화 함수인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 올바른 활성화 함수를 선택하는 데는 계산 리소스, 네트워크 아키텍처의 특정 요구 사항 및 이전 모델로부터의 경험적 증거 등 여러 요소가 관련됩니다.
 
@@ -201,7 +383,18 @@ Günter Klambauer 등의 논문에서 SELU가 소개된 적이 있습니다. 여
 
 ReLU의 설계는 음수 활성화를 제로처리하여 모델의 희소성을 기본적으로 증가시키며, 이는 일반화를 개선할 수 있습니다 — 훈련 중심의 과적합이 심각한 문제인 딥 뉴럴 네트워크에서 매우 중요한 요소입니다. 게다가 ReLU는 추가적인 하이퍼파라미터가 필요 없으며, PReLU나 ELU와 같은 함수와 달리 모델 훈련에 추가 복잡성을 도입하지 않습니다. 또한 ReLU가 널리 채택된 상태이므로, 많은 머신러닝 프레임워크와 라이브러리가 이를 위해 특화된 최적화를 제공하여, 많은 개발자에게 실용적인 선택이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약하자면, 새로운 활성화 함수는 특정 시나리오에 특정 이점을 제공하지만, ReLU의 간단함, 효율성, 효과적인 측면의 균형은 많은 응용 프로그램에서 선호하는 선택지가 되고 있습니다. 어떤 활성화 함수를 선택한다 하더라도, 그 특성을 철저히 이해하는 것이 중요하며 모델의 요구 사항과 일치하고 모델 훈련 중 문제 해결을 용이하게 하는 데 필수적입니다.
 
@@ -211,7 +404,18 @@ ReLU의 설계는 음수 활성화를 제로처리하여 모델의 희소성을 
 
 가중치 초기화에 대한 가장 인기 있는 방법들에 대해 자세히 살펴보기 전에, 기본적인 질문을 하나 다루어 보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 가중치 초기화는 왜 중요하며 불안정한 그래디언트를 완화하는 데 어떻게 도움이 될까요?
 
@@ -221,7 +425,18 @@ ReLU의 설계는 음수 활성화를 제로처리하여 모델의 희소성을 
 
 ## 가중치를 초기화하는 좋은 방법은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 중요한 것은 최적 가중치 초기화는 이미 학습된 가중치를 사용하는 것이 가장 좋습니다. 이미 일부 학습을 거친 가중치를 얻을 수 있다면 손실을 최소화하는 방향으로 진행 중인 이 가중치를 계속 사용하는 것이 이상적입니다.
 
@@ -233,7 +448,18 @@ ReLU의 설계는 음수 활성화를 제로처리하여 모델의 희소성을 
 
 모든 가중치를 0으로 설정하는 것이 문제가 되는 이유입니다. 이는 모든 뉴런이 동일하게 행동하고 동일한 속도로 학습하기 때문에 대칭 문제를 발생시킵니다. 다양한 패턴을 효과적으로 포착하지 못하게되는 네트워크의 능력을 제한합니다. ReLU 및 그 변형과 함께 0 가중치는 출력이 0이 되어 학습이 멈추고 모든 뉴런이 비활성화되는 결과를 초래합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모든 가중치를 작은 무작위 숫자로 초기화해야 하지 않을까요?
 
@@ -243,7 +469,18 @@ ReLU의 설계는 음수 활성화를 제로처리하여 모델의 희소성을 
 
 ## 그렇다면, 가중치 초기화에 표준 정규 분포(N(0,1))를 사용하지 않는 이유는 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적인 정규 분포(N(0,1))를 사용하면 무작위화 과정을 어느 정도 제어할 수 있지만, 분산을 효과적으로 제어할 수 없어 최적 가중치 초기화에는 부족합니다. 제로 평균은 가중치가 모두 동일한 부호를 공유하지 않도록 보장하여 대칭을 깨는 데 효과적입니다. 그러나 분산이 1인 것은 문제가 될 수 있습니다.
 
@@ -253,7 +490,18 @@ ReLU의 설계는 음수 활성화를 제로처리하여 모델의 희소성을 
 
 따라서, 분포에서 무작위로 가중치를 초기화할 때 평균과 분산 둘 다 중요합니다. 효과적으로 대칭을 깨기 위해 평균을 0으로 설정하고, 동시에 분산을 최소화하여 중간 제품(즉, 뉴런 출력)이 너무 크거나 작지 않도록 해야 합니다. 올바른 초기화는 네트워크를 통과하는 정보의 안정된 흐름을 보장하고, 전방 및 역방향으로 효율적인 학습 과정을 유지하며, 그래디언트에 불안전성을 도입하지 않습니다. 신중한 초기화 접근은 효과적이고 견고하게 학습하는 네트워크로 이어질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 그래서, 신경망의 중간 층에서 출력 값을 제어하기 위해 연속된 층에도 입력으로 사용되는 가중치 초기화에 대해 신중히 선택한 평균과 분산을 사용합니다. 그렇다면, 가장 인기 있는 방법들이 어떻게 이 분산을 제어할 수 있는 걸까요?
 
@@ -263,7 +511,18 @@ ReLU의 설계는 음수 활성화를 제로처리하여 모델의 희소성을 
 
 팬-인과 팬-아웃을 이용하면 가중치 초기화 중 분산을 제어할 수 있는 메커니즘을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 팬-인은 전방 전파 중 현재 레이어의 출력 𝑍의 분산을 조절하는 데 도움을 줍니다.
 - 팬-아웃은 역전파 중 후속 레이어의 가중치가 얼마나 영향을 미치는지 조정합니다.
@@ -282,7 +541,18 @@ ReLU의 설계는 음수 활성화를 제로처리하여 모델의 희소성을 
 
 Lecun 초기화는 가중치 분포에 작은 분산을 사용하여 𝑍의 분산을 축소하는 것에 기반합니다. 𝑍의 분산이 팬-인과 각 가중치의 분산의 곱이라면, 𝑍가 분산이 1이 되도록 보장하려면 각 가중치의 분산은 1/팬-인이어야 합니다. 따라서 Lecun 초기화는 가중치를 𝑁(0,1/팬-인)에서 무작위로 선택합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자비에/글로뤼 초기화는 이전 레이어의 가중치(fan-in)의 영향을 고려할 뿐만 아니라 역전파 중 이러한 가중치가 후속 레이어에 미치는 영향(fan-out)도 고려합니다. 순방향 및 역방향 전파 중 분산을 균형있게 유지하기 위해 분산에 대한 공식인 2/(fan_in + fan_out)을 사용하여 가중치를 그려놓을 수 있습니다. 이 때의 분산은 Normal 분포, N(0,2/(fan_in + fan_out)) 또는 Uniform 분포(- sqrt(6/ (fan_in + fan_out)), sqrt(6/ (fan_in + fan_out))) 중에서 선택할 수 있습니다.
 
@@ -292,7 +562,18 @@ Lecun 초기화는 가중치 분포에 작은 분산을 사용하여 𝑍의 분
 
 ## PyTorch에서 가중치 초기화는 어떻게 구현되고, 그것이 특별한 이유는 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파이토치에서는 선형 레이어의 가중치 초기화에 대한 기본 접근 방식이 르쿤 초기화 방법을 기반으로 합니다. 반면 케라스에서는 기본 초기화 기술로 제비어/글로럿 초기화가 사용됩니다.
 
@@ -303,9 +584,20 @@ Lecun 초기화는 가중치 분포에 작은 분산을 사용하여 𝑍의 분
 
 가중치 초기화 매개변수를 사용자 정의하는 이 유연성을 통해 모델에서 사용된 특정 활성화 함수와 비교 가능하고 호환되는 초기화 접근 방식을 설정할 수 있습니다. 흥미로운 점은 파이토치의 가중치 초기화 구현이 서로 다른 초기화 방법 간의 어떤 관계를 나타낼 수 있는데, 이를 통해 신경망의 전반적인 기능을 향상시키기 위한 초기화 프로세스를 활용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-예를 들어, SELU 활성화 함수에 대한 PyTorch 문서를 검토하면 가중치 초기화의 흥미로운 측면을 발견할 수 있습니다. 문서에는 SELU 활성화와 함께 kaiming_normal 또는 kaiming_normal_을 사용하여 초기화할 때, nonlinearity=`selu` 대신 nonlinearity=`linear`을 선택해야 자가 정규화를 달성할 수 있다고 언급되어 있습니다. 이 세부 사항은 흥미로운데, PyTorch의 기본 Lecun 초기화가 Kaiming 방법을 선형 비선형성에서 gain이 1로 설정했을 때 Lecun 초기화 방법을 효과적으로 복제한다는 점을 강조합니다. 이는 Lecun 초기화가 보다 일반적인 Kaiming 초기화 접근법의 특정 응용이라는 것을 보여줍니다. 마찬가지로, Xavier 초기화 방법은 입력 연결의 수(fan-in)와 출력 연결의 수(fan-out)를 모두 고려하는 Lecun 초기화의 다른 변형으로 볼 수 있습니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+예를 들어, SELU 활성화 함수에 대한 PyTorch 문서를 검토하면 가중치 초기화의 흥미로운 측면을 발견할 수 있습니다. 문서에는 SELU 활성화와 함께 kaiming*normal 또는 kaiming_normal*을 사용하여 초기화할 때, nonlinearity=`selu` 대신 nonlinearity=`linear`을 선택해야 자가 정규화를 달성할 수 있다고 언급되어 있습니다. 이 세부 사항은 흥미로운데, PyTorch의 기본 Lecun 초기화가 Kaiming 방법을 선형 비선형성에서 gain이 1로 설정했을 때 Lecun 초기화 방법을 효과적으로 복제한다는 점을 강조합니다. 이는 Lecun 초기화가 보다 일반적인 Kaiming 초기화 접근법의 특정 응용이라는 것을 보여줍니다. 마찬가지로, Xavier 초기화 방법은 입력 연결의 수(fan-in)와 출력 연결의 수(fan-out)를 모두 고려하는 Lecun 초기화의 다른 변형으로 볼 수 있습니다.
 
 ## 가중치를 분포로부터 초기화할 때 평균과 분산을 신중하게 선택해야 하는 점에 동의합니다. 그러나 왜 초기 가중치를 정규 분포 대신 균일 분포에서 추출하려고 하는지에 대한 이유는 여전히 명확하지 않습니다. 무엇 때문에 한 가지를 다른 것보다 선호하게 되는지 설명해주실 수 있나요?
 
@@ -313,7 +605,18 @@ Lecun 초기화는 가중치 분포에 작은 분산을 사용하여 𝑍의 분
 
 균일 분포는 엔트로피가 가장 높은 분포로, 범위 내의 모든 값이 동등하게 가능성이 있습니다. 이 공정한 접근은 초기화에 어떤 값이 더 잘 작동할지에 대한 사전 지식이 부족할 때 유용할 수 있습니다. 각 잠정적인 가중치 값에 공정하게 대우하고 균일한 확률을 할당합니다. 이는 한정된 정보로 게임에서 모든 팀에 공평하게 건 게임과 비슷합니다 - 선호되는 결과의 가능성을 최대화합니다. 어떤 구체적인 값이 좋은 초기 가중치인지 알 수 없기 때문에 균일 분포를 사용하면 편향되지 않은 시작점을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한편, 정규 분포는 일반적으로 가중치를 0에 가까운 작은 값으로 초기화하는 것이 더 자주 일어납니다. 초기 가중치가 작을수록 출력의 분산이 줄어들고 학습 중 안정적인 기울기를 유지하는 데 도움이 되기 때문에 작은 초기 가중치가 일반적으로 선호됩니다. 이는 가중치 초기화 방법에서 단위 분산 대신 작은 분산을 선호하는 이유와 유사합니다. 게다가, 시그모이드나 하이퍼볼릭 탄젠트와 같은 특정 활성화 함수는 작은 초기 가중치 값에서 더 나은 성능을 발휘하며 이러한 활성화 함수가 숨겨진 레이어가 아닌 최종 출력 레이어에서만 사용되더라도 그렇습니다.
 
@@ -323,7 +626,18 @@ Lecun 초기화는 가중치 분포에 작은 분산을 사용하여 𝑍의 분
 
 좋은 질문입니다. 우리는 편향 항에 대해서는 가중치와 동일한 초기화 기술을 반드시 사용하지는 않습니다. 사실, 편향 값을 모두 간단히 0으로 초기화하는 것이 흔한 실천입니다. 그 이유는 가중치가 각 뉴런이 기본 데이터를 근사하는 함수의 모양을 결정하는 반면, 편향은 각 함수를 위아래로 이동시키는 오프셋 값을 제공하기 때문입니다. 그래서 편향은 가중치가 학습하는 전반적인 형태에 직접적으로 영향을 주지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 초기화의 주요 목표는 대칭을 깨고 가중치 학습에 좋은 시작점을 제공하는 것이므로 편향이 어떻게 초기화되는지에 대해 크게 걱정할 필요가 없습니다. 그들을 모두 0으로 설정하는 것이 일반적으로 충분합니다. 이에 대해 더 자세한 논의는 CS231n 강의 노트에서 찾아볼 수 있습니다.
 
@@ -333,15 +647,37 @@ Lecun 초기화는 가중치 분포에 작은 분산을 사용하여 𝑍의 분
 
 이전 포스트에서 경사 하강법에 대해 논의한 것처럼, 이러한 기술은 빠른 수렴을 위해 손실 풍경을 재구성합니다. 특성 정규화는 초기 데이터 입력에 이를 적용하며, 배치 정규화는 에폭 사이에 숨겨진 레이어의 입력을 정규화합니다. 두 기술 모두 다른 단계에서 품질 보증 점검을 구현하는 것과 유사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
- 배치 정규화는 훈련 중에 각 레이어의 입력을 평균이 0이고 분산이 1인 값으로 정규화하여 내부 공변량 이동을 줄이어 경사 소실/폭발 문제를 완화하는 데 도움을 줍니다. 내부 이동이 발생하는 이유에 대해 생각해 보죠. 각 레이어의 매개변수를 기울기에 기반하여 업데이트하는 과정은 신경망의 각 레이어가 공장의 서로 다른 부서라고 생각할 수 있습니다. 한 부서의 매개변수(또는 설정)를 업데이트할 때마다 다음 부서의 입력이 변경됩니다. 이로 인해 각 레이어마다 새로운 변화에 대한 조정이 필요하며 이를 심층 학습에서 내부 공변량 이동이라고 합니다. 그렇다면 이러한 이동이 자주 발생할 때 어떻게 될까요? 네트워크가 안정화하기 어려워지며 각 레이어의 입력이 계속 변화함에 따라 문제가 발생합니다. 이는 공장의 한 부분에서 지속적인 변화가 제품 품질에 일관성 없이 영향을 미치는 것과 유사합니다. 이는 작업자들을 혼란스럽게 하고 작업 흐름을 망치는 결과를 초래할 수 있습니다.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+배치 정규화는 훈련 중에 각 레이어의 입력을 평균이 0이고 분산이 1인 값으로 정규화하여 내부 공변량 이동을 줄이어 경사 소실/폭발 문제를 완화하는 데 도움을 줍니다. 내부 이동이 발생하는 이유에 대해 생각해 보죠. 각 레이어의 매개변수를 기울기에 기반하여 업데이트하는 과정은 신경망의 각 레이어가 공장의 서로 다른 부서라고 생각할 수 있습니다. 한 부서의 매개변수(또는 설정)를 업데이트할 때마다 다음 부서의 입력이 변경됩니다. 이로 인해 각 레이어마다 새로운 변화에 대한 조정이 필요하며 이를 심층 학습에서 내부 공변량 이동이라고 합니다. 그렇다면 이러한 이동이 자주 발생할 때 어떻게 될까요? 네트워크가 안정화하기 어려워지며 각 레이어의 입력이 계속 변화함에 따라 문제가 발생합니다. 이는 공장의 한 부분에서 지속적인 변화가 제품 품질에 일관성 없이 영향을 미치는 것과 유사합니다. 이는 작업자들을 혼란스럽게 하고 작업 흐름을 망치는 결과를 초래할 수 있습니다.
 
 배치 정규화는 훈련 중 미니 배치 전체에서 각 레이어의 입력을 정규화하여 평균이 0이고 분산이 1인 값으로 설정하는 것을 목표로 합니다. 레이어가 예상할 수 있는 일관된, 통제된 입력 분포를 강요합니다. 공장 비유로 돌아가서, 다음 부서로 전달되기 전 각 부서의 출력에 엄격한 품질 기준을 설정하는 것과 유사합니다. 예를 들어, 베이킹 부서가 일관된 크기와 모양의 아이스크림콘을 생산해야 한다는 규칙을 설정하는 것입니다. 다음 장식 부서는 콘의 변화량을 고려할 필요가 없게 되며, 각 일반화된 콘에 동일한 양의 아이스크림을 추가할 수 있습니다.
 
 정규화를 통해 내부 공변량 이동을 줄이는 것으로 배치 정규화는 훈련 과정 중에 기울기가 엉망이 되는 것을 방지합니다. 레이어들이 신속히 변하는 입력 분포에 계속해서 재조정할 필요가 없어져서 기울기가 더 안정적으로 유지됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한 정규화는 정규화자 역할을 하며 목적 함수 랜드스케이프를 부드럽게 만듭니다. 이를 통해 더 높은 학습 속도를 사용하여 수렴 속도를 높일 수 있습니다. 일반적으로 배치 정규화는 내부 분산 이동을 줄이고 그래디언트를 안정화시키며 목적함수를 정규화하고 훈련 가속화를 가능하게 합니다.
 
@@ -351,7 +687,18 @@ Lecun 초기화는 가중치 분포에 작은 분산을 사용하여 𝑍의 분
 
 훈련 중에 배치 정규화 레이어는 각 미니 배치를 통해 각 차원에 대한 평균과 표준편차를 계산합니다. 이러한 통계량은 출력을 정규화하는 데 사용되어 평균이 0이고 분산이 1임을 보장합니다. 이 프로세스는 입력 분포를 표준 정규 분포로 변환하는 것으로 생각할 수 있습니다. 전체 훈련 데이터 세트를 사용하여 특징 정규화를 하는 것과는 달리 배치 정규화는 각 미니 배치에 기초하여 조정되어 처리되는 데이터에 동적이며 반응성을 가지게 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제, 테스트는 다른 이야기입니다. 테스트 데이터에서 평균과 분산을 정규화에 사용하면 안 됩니다. 대신에 이러한 매개변수는 학습된 특징으로 간주되어 훈련 과정에서 유지되어야 합니다. 훈련 중 각 미니 배치는 고유의 평균과 분산을 가지지만, 일반적인 실천 방법은 이러한 값들의 이동 평균을 훈련 단계 동안 사용하는 것입니다. 이를 통해 안정된 추정값을 제공하여 테스트 중에 적용할 수 있게 됩니다. 다른 적은 일반적인 방법은 전체 훈련 데이터 세트를 사용하여 포괄적인 평균과 분산을 계산하는 추가 에포크를 실행하는 방법도 있습니다.
 
@@ -361,17 +708,39 @@ PyTorch로 DNN 프레임워크로 훈련할 때, 조정 가능한 하이퍼파�
 
 ## 왜 역전파 중에 그래디언트에 직접 배치 정규화를 적용하는 대신 순전파 중에 배치 정규화가 적용되나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 순방향 패스 중 입력 또는 활성화에 배치 정규화를 적용하는 이유가 역전파 중에 기울기 자체에 직접 배치 정규화를 적용하는 것보다 더 일반적입니다.
 
 먼저, 기울기에 배치 정규화를 직접 적용하는 이점을 보여주는 실증적 증거나 실무가 부족합니다. 내부 공변량 이동의 개념은 주로 순방향 패스 중에 발생하며, 계층 입력의 분포가 매개변수 업데이트로 인해 변경됩니다. 따라서, 후속 계층에서 처리되기 전에 이러한 입력을 안정화시키기 위해 이 단계에서 배치 정규화를 적용하는 것이 합리적입니다. 또한, 기울기에 배치 정규화를 직접 적용하는 것은 기울기의 크기와 방향이 나르는 중요한 정보를 왜곡할 수 있습니다. 이는 내재적 의미를 변경하는 방식으로 고객 피드백을 변조하는 것과 유사하며, 이는 미니 아이스크림 공장의 제조 프로세스에 대한 향후 조정을 잘못 이끌 수 있습니다.
 
-그러나, 기울기를 경사 클리핑과 같은 마이너 조정을 하는 것은 일반적으로 허용되며 유익합니다. 이 기법은 기울기를 지나치게 크게 만들지 않고 안전한 범위 내에 유지하여 기울기를 제한하는 도구입니다. 이는 피드백에서 극단적 아웃라이어를 걸러내는 것과 유사하며, 이는 프로세스를 방해할 수 있는 급격한 반응을 방지하면서 전체 피드백의 무결성을 유지하는 데 도움이 됩니다. PyTorch에서는 기울기 노름을 모니터링하는 것이 일반적이며, 기울기가 폭발하기 시작하면 경사 클리핑과 같은 기법을 사용할 수 있습니다. PyTorch는 torch.nn.utils.clip_grad_norm_ 및 torch.nn.utils.clip_grad_value_와 같은 함수를 제공하여 이를 관리할 수 있습니다.
+그러나, 기울기를 경사 클리핑과 같은 마이너 조정을 하는 것은 일반적으로 허용되며 유익합니다. 이 기법은 기울기를 지나치게 크게 만들지 않고 안전한 범위 내에 유지하여 기울기를 제한하는 도구입니다. 이는 피드백에서 극단적 아웃라이어를 걸러내는 것과 유사하며, 이는 프로세스를 방해할 수 있는 급격한 반응을 방지하면서 전체 피드백의 무결성을 유지하는 데 도움이 됩니다. PyTorch에서는 기울기 노름을 모니터링하는 것이 일반적이며, 기울기가 폭발하기 시작하면 경사 클리핑과 같은 기법을 사용할 수 있습니다. PyTorch는 torch.nn.utils.clip*grad_norm* 및 torch.nn.utils.clip*grad_value*와 같은 함수를 제공하여 이를 관리할 수 있습니다.
 
 ## 직접 정규화 대신 기울기를 클리핑하는 옵션을 언급했습니다. 왜 기울기를 클리핑하는 대신 바닥값을 설정하지 않는지 정확히 선택하는 이유가 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기울기 클리핑은 폭발하는 기울기 문제를 방지하는 데 도움이 되는 간단하면서도 효율적인 기술입니다. 종종 기울기의 최대값을 수동으로 제한합니다. 예를 들어 ReLU 활성화 함수는 상한값을 6으로 설정할 수 있으며, PyTorch에서는 ReLU6로 알려져 있습니다. 이 상한을 설정함으로써, 각 층에서 역전파 과정 중 기울기가 연쇄 법칙에 따라 곱해질 때 값이 지나치게 커지지 않도록 보장합니다. 이러한 클리핑은 기울기가 학습 과정을 방해할 정도로 급격하게 증가하는 것을 방지하여 그 값을 관리 가능한 한도 내에 유지합니다.
 
@@ -381,7 +750,18 @@ PyTorch로 DNN 프레임워크로 훈련할 때, 조정 가능한 하이퍼파�
 
 #실무에서의 경험(개인 경험)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약할 때, 모든 논의된 방법이 사라지는 그래디언트 문제와 폭주하는 그래디언트 문제를 해결하는 데 유용하다는 것은 명백합니다. 이들은 모두 모델의 학습 과정을 향상시킬 수 있는 실용적인 접근 방법입니다. 이 글을 마무리하며 한 가지 질문으로 마무리하고 싶습니다 -
 
@@ -391,7 +771,18 @@ PyTorch로 DNN 프레임워크로 훈련할 때, 조정 가능한 하이퍼파�
 
 선호되는 활성화 함수인 ReLU로 인해 가중치 초기화가 지나치게 민감하게 작용하는 문제에 대해 덜 걱정해도 됩니다. 시그모이드, tanh 및 SELU와 같은 함수에서 주로 발생하는 문제일 뿐입니다. 대신, 선택한 활성화 함수에 권장되는 가중치 초기화 방법에 집중하는 것이 적당합니다 (예를 들어, ReLU에 대해 He/Kaiming 초기화를 사용하는 이유는 ReLU의 비선형성을 고려하기 때문입니다).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네트워크에는 항상 배치 정규화를 포함하세요. 활성화 함수 전 또는 후에 적용할지 결정(또는 실험)하고, 모델 전체에서 일관되게 그 선택을 유지하세요. 배치 정규화는 규제 효과와 높은 학습률 사용이 가능해지는 등 여러 가지 이점을 제공합니다. 이는 교육 및 수렴 속도를 높일 수 있습니다.
 
@@ -401,7 +792,18 @@ PyTorch로 DNN 프레임워크로 훈련할 때, 조정 가능한 하이퍼파�
 
 이 시리즈의 다른 게시물:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - ML 학습의 용기: L1 및 L2 정규화 해독하기 (파트 1)
 - ML 학습의 용기: 우도, MLE 및 MAP 해독하기
@@ -417,7 +819,18 @@ PyTorch로 DNN 프레임워크로 훈련할 때, 조정 가능한 하이퍼파�
 - [가우시안 에러 선형 유닛 (GeLU) 설명](https://ml-explained.com/blog/activation-functions-explained#gaussian-error-linear-unit-gelu)
 - [ReLU 활성화 함수](https://www.mldawn.com/relu-activation-function/)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가중치 초기화
 

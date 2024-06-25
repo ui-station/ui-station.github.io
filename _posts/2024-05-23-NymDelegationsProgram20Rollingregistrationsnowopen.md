@@ -3,13 +3,12 @@ title: "Nym 위임 프로그램 20 롤링 등록이 지금 열렸어요"
 description: ""
 coverImage: "/assets/img/2024-05-23-NymDelegationsProgram20Rollingregistrationsnowopen_0.png"
 date: 2024-05-23 18:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-NymDelegationsProgram20Rollingregistrationsnowopen_0.png
 tag: Tech
 originalTitle: "Nym Delegations Program 2.0: Rolling registrations now open"
 link: "https://medium.com/nymtech/nym-delegations-program-2-0-rolling-registrations-now-open-9bc44739f1b7"
 ---
-
 
 ## Nym 대표 프로그램의 다음 세대가 여기 있습니다!
 
@@ -19,7 +18,18 @@ link: "https://medium.com/nymtech/nym-delegations-program-2-0-rolling-registrati
 
 Nym 대표 프로그램은 노드 성능을 인센티브화하고 보상이 커뮤니티 서비스 제공 업체로 돌아갈 수 있도록 설계되었습니다. 게다가, 노드는 이상적으로 지리적으로 분산되어 있어야 하며, 이는 대표하지 않은 지역의 운영자들에 대한 토큰 인센티브를 통해 촉진될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 믿을 만한 성능을 자랑하는 안정적인 노드들은 님 재무부로부터 위임을 받을 수 있습니다. 이는 새로운 노드들이 빈번하게 활성 집합에 참여하고 빠르게 수익을 창출할 수 있도록 도와줄 뿐만 아니라 지리 및 VPS의 탈중앙화, 서비스 품질, 공정한 노드 매개변수에 대한 네트워크 전반적인 인센티브도 제공합니다.
 
@@ -29,7 +39,18 @@ Nym 대표 프로그램은 노드 성능을 인센티브화하고 보상이 커�
 
 # 등록
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 등록 양식이나 마감일이 더 이상 없습니다. 새롭게 만들어진 맞춤형 인터페이스(Pawnflake와 ExploreNym의 협조로)를 통해 등록이 계속 열려 있습니다. 귀하의 노드를 여기에 등록해 주세요.
 
@@ -39,7 +60,18 @@ Nym 대표 프로그램은 노드 성능을 인센티브화하고 보상이 커�
 
 위임 프로그램이 한 번에 지원할 수 있는 노드의 수에 제한이 있습니다. 노드를 등록하면 대기열에 추가됩니다. 여유 슬롯이 생기면 대기열이 자동으로 채워집니다. 다시 등록할 필요가 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 대기열 우선순위
 
@@ -53,7 +85,18 @@ Nym 대표 프로그램은 노드 성능을 인센티브화하고 보상이 커�
 
 어떤 경우에는 노드가 우선순위에서 제외될 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다른 노드가 많이 있는 국가에 위치한
 - 일반적인 VPS 제공업체에서 운영 중
@@ -64,7 +107,18 @@ Nym 대표 프로그램은 노드 성능을 인센티브화하고 보상이 커�
 
 가장 최신 기준은 언제든지 등록 페이지에서 확인하실 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-NymDelegationsProgram20Rollingregistrationsnowopen_1.png)
 
@@ -79,7 +133,18 @@ Nym 대표 프로그램은 노드 성능을 인센티브화하고 보상이 커�
 - 대역폭: 1 Tb
 - 포트 속도: 1 Gbps
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중요 안내: 모든 노드는 이제 이 최소 사양을 충족해야 합니다. 이미 위임을 받은 노드라 하더라도 이 사양을 충족하지 못하는 경우, 문제를 해결하도록 2024년 5월 30일 이전에 주의해주셔야 합니다. 그렇지 않으면 위임을 잃을 수 있습니다.
 
@@ -92,7 +157,18 @@ Nym 대표 프로그램은 노드 성능을 인센티브화하고 보상이 커�
 - 프로그램 기준 변경(등록 페이지에서 실시간으로도 업데이트됨)
 - 우선화 규칙 변경, 즉 우수/비우수 국가 변경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 멘토십의 변화
 
@@ -104,7 +180,18 @@ Nym 대표 프로그램은 노드 성능을 인센티브화하고 보상이 커�
 
 # 앞으로 기대되는 일들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Nym 커뮤니티에게 다가오는 몇 달은 바쁘고 흥미로운 시간이 될 것입니다. Nym 알파 테스트 NymVPN을 시장에 선보이는 첫 상용 제품으로 Nym 믹스넷 상에서 작동합니다. 이 개인 정보 보호 도구가 작동하려면 Nym 노드 운영자 네트워크는 탈중앙화되고 분산된 방식으로 성장해야 합니다. 그러나 무엇보다도, Nym은 노드에게 유기적이고 잘 인센티브화되어야 하며, 커뮤니티가 고품질 서비스를 제공하도록 장려해야 합니다.
 
@@ -114,6 +201,17 @@ Discord // Telegram // Element // Twitter
 
 #개인 정보 보호는 함께 할 때 가치가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 영어 // 중국어 // 러시아어 // 터키어 // 베트남어 // 일본어 // 프랑스어 // 스페인어 // 포르투갈어 // 한국어

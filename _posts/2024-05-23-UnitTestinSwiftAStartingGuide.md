@@ -18,7 +18,18 @@ link: "https://medium.com/@blorenzop/swift-unit-tets-530a8d271f4d"
 
 확실히 싫어하시죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 적절한 유닛 테스트 구조를 갖는 것은 미래에 머리 아픈 문제를 피하는 데 도움이 됩니다.
 
@@ -26,7 +37,18 @@ link: "https://medium.com/@blorenzop/swift-unit-tets-530a8d271f4d"
 
 이제 테스트의 주요 개념과 iOS 프로젝트에 어떻게 추가하는지 알아봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단위 테스트란 무엇인가요?
 
@@ -36,7 +58,18 @@ link: "https://medium.com/@blorenzop/swift-unit-tets-530a8d271f4d"
 
 코딩 부분으로 바로 들어가기 전에 이해해야 할 여러 구성 요소가 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![UnitTestinSwiftAStartingGuide_1.png](/assets/img/2024-05-23-UnitTestinSwiftAStartingGuide_1.png)
 
@@ -49,7 +82,18 @@ link: "https://medium.com/@blorenzop/swift-unit-tets-530a8d271f4d"
 
 `파일` -> `새로 만들기` -> `타겟`으로 이동하여 Unit Testing Bundle을 검색합니다. 대상에 적절한 이름을 지정하고 일반적으로 앱 이름 뒤에 Tests로 끝납니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트 번들을 만들면 기본 구성으로 테스트 계획이 자동으로 생성됩니다.
 
@@ -59,7 +103,18 @@ link: "https://medium.com/@blorenzop/swift-unit-tets-530a8d271f4d"
 
 모든 프로그래밍 언어에는 단위 테스트를 실행하기 위한 프레임워크나 라이브러리가 있습니다. iOS 개발 환경에서는 XCTest 프레임워크를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 테스트 번들이 준비되었으니 새로운 테스트 클래스를 추가할 수 있습니다. 네비게이션 패널이나 메뉴(File -> File -> Unit Test Case Class)를 통해 새로 만들어주세요.
 
@@ -74,7 +129,18 @@ func repeatLastOrder() { ... }
 
 테스트 클래스 안에 각 함수마다 테스트 메소드를 만들어봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱의 코드에 접근하지 않고 파일 단위로 공유하지 않고 테스트 대상에서 앱의 코드에 액세스하려면 @testable 지시문을 추가하고 앱을 가져와야 합니다.
 
@@ -96,7 +162,18 @@ final class OrderTests: XCTestCase {
 
 각 테스트가 시작하기 전에 XCTest는 setUpWithError() 함수를 실행합니다. 따라서 여기서 테스트의 초기 상태를 설정해야 합니다. 특정 클래스의 인스턴스 생성, 의존성 주입, 변수 값 구성 등이 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트가 끝난 후에는 tearDownWithError()가 호출됩니다. 여기서 우리가 고려하는 모든 것을 정리하기에 좋은 장소입니다.
 
@@ -108,7 +185,18 @@ final class OrderTests: XCTestCase {
 - setUpWithError() 메서드에서 인스턴스를 만듭니다.
 - tearDownWithError() 메서드에서 상태를 정리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 @testable import Coffee_Shop_App
@@ -182,7 +270,18 @@ final class OrderTests: XCTestCase {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Xcode에서 단위 테스트 직접 실행하기
 
@@ -192,7 +291,18 @@ final class OrderTests: XCTestCase {
 
 ![image](/assets/img/2024-05-23-UnitTestinSwiftAStartingGuide_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테스트 커버리지
 
@@ -202,7 +312,18 @@ final class OrderTests: XCTestCase {
 
 녹색으로 표시된 부분은 최근 테스트 실행에서 도달한 코드 부분이고, 빨간색으로 표시된 부분은 도달하지 못한 코드 부분입니다. 데모에서 주문 최소 금액을 확인하는 부분이 누락되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 시나리오를 발견하면, 새로운 유닛 테스트를 추가해서 이를 확인하고 테스트를 다시 실행할 수 있어요.
 
@@ -228,11 +349,25 @@ let lastCoffeeDescription = ordersManager.getLastCoffee()
 XCTAssertNotNil(lastCoffeeDescription)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-XCTAssertEqual(ordersManager.orders.count, 1, "주문이 올바르게 추가되지 않았습니다")
+XCTAssertEqual(
+  ordersManager.orders.count,
+  1,
+  "주문이 올바르게 추가되지 않았습니다"
+);
 ```
 
 # 명심해야 할 점
@@ -244,9 +379,18 @@ XCTAssertEqual(ordersManager.orders.count, 1, "주문이 올바르게 추가되�
 - 100%의 테스트 커버리지를 추구하지 마세요. 100%의 커버리지가 있더라도 10가지 가능한 시나리오 중 1개에 대한 테스트만 있는 경우가 있습니다. 대신 품질 높은 테스트를 작성하는 데 중점을 두세요.
 - 테스트를 사용하여 전체적인 코드 품질을 높일 수 있는 작은 코드 리팩터링을 찾을 수 있는 기회로 활용하세요.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문이 있으시면 언제든지 메시지 보내주세요! 🙂
 

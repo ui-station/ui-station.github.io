@@ -3,13 +3,12 @@ title: "SwiftUI에서 제스처 완벽하게 활용하는 방법 종합 가이�
 description: ""
 coverImage: "/assets/img/2024-06-22-MasteringGesturesinSwiftUIAComprehensiveGuide_0.png"
 date: 2024-06-22 23:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-MasteringGesturesinSwiftUIAComprehensiveGuide_0.png
 tag: Tech
 originalTitle: "Mastering Gestures in SwiftUI: A Comprehensive Guide"
 link: "https://medium.com/@elamir/mastering-gestures-in-swiftui-a-comprehensive-guide-08f58114ed38"
 ---
-
 
 앱이라는 힘을 상상해보세요. 각 탭, 스와이프 및 핀치로 UI를 생동감 있게 만들어보세요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@elamir/mastering-gestures-in-swiftui-a-comprehensive-
 
 이 포괄적인 가이드에서 기초부터 고급 기술까지 안내해 드릴 것이며, SwiftUI의 제스처 인식기를 활용하여 매끄럽고 상호작용적인 사용자 경험을 만드는 방법을 공개할 것입니다. 실용적인 예제에 대해 깊이 파헤치고, 현실 세계의 사용 사례를 소개하며, 제스처 충돌을 처리하고 접근성을 보장하는 전문 팁을 제공할 것입니다. 이 여정을 마치면 SwiftUI 프로젝트에서 제스처의 모든 잠재력을 활용할 수 있는 준비가 되어 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SwiftUI의 제스처에 대한 소개
 
@@ -29,7 +39,18 @@ SwiftUI에서 제스처는 탭, 스와이프 및 드래그와 같은 사용자 �
 
 SwiftUI에는 여러 내장 제스처가 포함되어 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 탭 제스처: 탭 상호작용을 감지합니다.
 - 롱 프레스 제스처: 롱 프레스 상호작용을 감지합니다.
@@ -37,7 +58,18 @@ SwiftUI에는 여러 내장 제스처가 포함되어 있습니다:
 
 탭 제스처 예제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import SwiftUI
@@ -77,7 +109,18 @@ struct LongPressGestureView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 메시지를 "길게 눌렀습니다!"로 변경합니다.
 
@@ -109,7 +152,18 @@ struct DragGestureView: View {
 
 텍스트를 드래그하여 화면 상에서 이동하고 놓을 때 위치가 재설정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 고급 제스처 기술
 
@@ -119,7 +173,18 @@ struct DragGestureView: View {
 
 확대/축소(Pinch-to-Zoom) 및 이동(Pan) 예제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import SwiftUI
@@ -156,8 +221,18 @@ struct PinchAndPanView: View {
 
 사용자 지정 제스처를 만들면 앱에 특정한 독특한 상호작용을 추가할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import SwiftUI
@@ -187,8 +262,18 @@ struct CustomGestureView: View {
 
 여러 제스처 인식기를 연결하면 복잡한 상호 작용을 만들 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 길게 누른 후 스와이프
 
@@ -224,7 +309,18 @@ struct LongPressAndSwipeView: View {
 
 3. 실용적인 예제 및 사용 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사진 편집 앱: 드래그 제스처로 조정하기
 
@@ -256,7 +352,18 @@ struct PhotoEditingView: View {
 
 그림 그리기 앱: 드래그 제스처로 선 그리기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import SwiftUI
@@ -319,7 +426,18 @@ struct GamingView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스와이핑은 스와이프 방향으로 원을 이동시킵니다.
 
@@ -329,7 +447,18 @@ struct GamingView: View {
 
 여러 제스처가 동시에 인식될 수 있는 경우, 제스처를 우선순위를 정하거나 배타적 제스처 인식을 사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import SwiftUI
@@ -363,6 +492,17 @@ struct GestureConflictView: View {
 
 보이스오버와 같은 보조 기술을 사용하는 데 제스처를 사용할 수 있도록 보장하세요. 예를 들어, 버튼이나 다른 UI 요소를 통해 작업을 수행할 수 있는 대안 방법을 제공하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SwiftUI에서 제스처를 마스터하는 것은 상호작용적이고 매력적인 앱을 만들기 위해 꼭 필요합니다. 다양한 제스처 인식기를 이해하고 구현함으로써 사용자 경험을 향상시키고 동적 상호작용을 만들 수 있습니다. 이러한 예제들을 실험해보고 추가 제스처 인식기와 서드파티 라이브러리를 탐구하여 SwiftUI 프로젝트를 더욱 발전시켜 보세요.

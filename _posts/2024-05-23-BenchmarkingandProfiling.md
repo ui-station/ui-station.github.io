@@ -3,13 +3,12 @@ title: "성능 평가와 프로파일링"
 description: ""
 coverImage: "/assets/img/2024-05-23-BenchmarkingandProfiling_0.png"
 date: 2024-05-23 12:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-BenchmarkingandProfiling_0.png
 tag: Tech
 originalTitle: "Benchmarking and Profiling"
 link: "https://medium.com/@backslashzero/benchmarking-and-profiling-6fd2b428f6f0"
 ---
-
 
 이 안내서는 모든 언어와 프레임워크에 적용됩니다. 일부 제안 사항은 루비에 맞게 조정되어 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@backslashzero/benchmarking-and-profiling-6fd2b428f6f0
 
 합성 측정 - 프로덕션에서 발생하는 조건을 완벽하게 재현하지는 않습니다. 대략적인 추정 값을 제공하는 것이 목적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자원 또는 시간, 절차 - 우리는 메서드가 실행되는 데 얼마나 오랜 시간이 걸렸는지, 초당 몇 번의 반복이 실행되었는지 또는 얼마나 많은 객체가 생성되었는지와 같은 정보를 얻을 수 있습니다 - 이 모든 것은 메서드나 컨트롤러 액션과 같은 정의된 절차에 의해 가능합니다.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@backslashzero/benchmarking-and-profiling-6fd2b428f6f0
 
 루비 세계의 몇 가지 벤치마킹 젬은 - benchmark-ips와 benchmark-ipsa가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 벤치마킹 매개변수 —
 
@@ -42,7 +63,18 @@ link: "https://medium.com/@backslashzero/benchmarking-and-profiling-6fd2b428f6f0
 
 팁: 쓴 모든 벤치마크를 /benchmarks 폴더와 같은 위치에 저장하여 손쉽게 접근할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 프로파일링
 
@@ -52,7 +84,18 @@ link: "https://medium.com/@backslashzero/benchmarking-and-profiling-6fd2b428f6f0
 
 상대적 소비 - 100밀리초의 시간을 소비했다는 벤치마크가 하는 것처럼 절대 숫자를 제공하지 않습니다. 대신 백분율과 같은 상대적 측정치를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리소스 — 우리는 메모리나 시간과 같은 다양한 리소스를 프로파일링할 수 있어요.
 
@@ -62,7 +105,18 @@ link: "https://medium.com/@backslashzero/benchmarking-and-profiling-6fd2b428f6f0
 
 깊은 결과를 얻으려면, 프로파일링 환경이 거의 제품과 동일하게 작동해야 해요. 특히 데이터 양을 고려할 때 말이죠. 여기서 깊은 프로파일링을 활성화할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발 환경에서 프로덕션과 유사한 동작을 얻기 위해 몇 가지 설정이 있습니다. Ruby on Rails에서 다음과 같은 조건문 뒤에 이 설정들을 넣는 것이 좋습니다. 예를 들어, RAILS_ENV가 "PROFILE"인 경우에만 이 변경 사항을 적용하십시오.
 
@@ -73,7 +127,18 @@ link: "https://medium.com/@backslashzero/benchmarking-and-profiling-6fd2b428f6f0
 - CPU 시간: 이 모드는 CPU 사이클을 기준으로 시간을 측정합니다. 이는 IO 대기 및 슬립과 같은 작업이 해당 프로세스의 CPU 사이클 동안 발생했기 때문에 이러한 프로필에 나타나지 않습니다.
 - WALL 시간: 이는 시계를 기준으로 합니다. 따라서 IO 대기 및 슬립과 같은 모든 것이 나타납니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용 사례에 따라 때로는 CPU 시간을 사용하는 것이 좋을 수도 있고 때로는 WALL 시간을 사용하는 것이 좋을 수도 있습니다.
 
@@ -84,7 +149,18 @@ link: "https://medium.com/@backslashzero/benchmarking-and-profiling-6fd2b428f6f0
 
 그래서 추적 프로파일러는 발생하는 모든 일을 기록할 수 있습니다. 반면에 통계적 프로파일러는 전체 데이터 중 1% 정도만 처리할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루비 세계에서 주로 사용하는 주요 프로파일러는 2가지가 있어요 —
 
@@ -95,7 +171,18 @@ memory_profiler를 사용하여 루비 세계에서 메모리 프로파일을 �
 
 루비 세계에서 memory_profiler와 stackprof와 상호 작용하는 가장 좋은 방법은 rack-mini-profiler를 사용하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 얼마나 좋게 측정하더라도 결국 하루 끝에는 모든 프로덕션 시나리오를 비프로덕션에서 완벽히 재현할 수는 없습니다.
 

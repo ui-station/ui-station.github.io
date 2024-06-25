@@ -3,13 +3,12 @@ title: "아마존 EKS의 미래"
 description: ""
 coverImage: "/assets/img/2024-06-19-FutureofAmazonEKS_0.png"
 date: 2024-06-19 13:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-FutureofAmazonEKS_0.png
 tag: Tech
 originalTitle: "Future of Amazon EKS"
 link: "https://medium.com/it-newbies-note/future-of-amazon-eks-f32abd083729"
 ---
-
 
 AWS re:Invent 2023 세션 중 "Amazon EKS의 미래 (CON203)"를 Nathan Taber, AWS의 Kubernetes 제품 총괄의 프레젠테이션을 시청해야 했어요. 이 기사에서는 논의된 주요 포인트들을 요약하겠으며, 이해를 돕기 위해 전체 내용을 확인해 보라는 주의문을 담을게요.
 
@@ -19,7 +18,18 @@ Kubernetes는 오케스트레이션을 위한 오픈 소스 기술로, 인기만
 
 ## 그렇다면, 왜 사람들은 Kubernetes를 사용할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 혁신 주행: 기관이 Kubernetes로 전환하는 주요 이유는 고객을 대신하여 혁신을 이루는 데 있습니다. 빠르게 움직이고 안전하고 신속하게 변화를주는 능력은 혁신에 대단히 중요합니다. Kubernetes는 개발팀을위한 표준 시스템과 표준 세트를 제공하여 조직이 변화를 수용하고 사용자를위한 더 나은 혁신을 이끌어 내도록합니다.
 - 고정 비용 감소: Kubernetes 도입의 또 다른 주요 동기는 고정 비용을 줄이기 위한 욕구입니다. 조직은 정적 자원에서 동적 공유 자원으로 전환하여 컨테이너를 사용하여 복잡한 계약을 분해하고 관리 오버헤드를 줄입니다. 이러한 전환은 비용 절감을 가져오면서 유연성과 확장성을 유지합니다.
@@ -32,7 +42,18 @@ AWS의 Kubernetes 투자: 5주년을 축하하는 Amazon EKS는 AWS의 Kubernete
 
 고객들은 EKS를 다양한 목적으로 활용하고 있습니다. 활동 범위는 레거시 .NET 및 Java 응용 프로그램을 클라우드로 이전하고 데이터 처리 작업을 실행하며 실시간 백엔드를 구축하고 웹 프론트 엔드를 개발하는 등 다양합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요즘에는 EKS와 Kubernetes를 활용한 기계 학습과 AI의 중요성이 크게 늘어났습니다. 생성적 AI와 로봇공학과 같은 다양한 분야를 다루며, 특히 저는 자율 주행 차량에 특히 흥미를 가지고 있습니다. EKS에서 중요한 자율 주행 차량 훈련 활동이 진행 중이라는 점을 강조하고 싶습니다. 기계 학습, kube ray, Spark, kube flow와 같은 도구를 활용하여 미래 기술을 개발 중인 기업들을 관찰하는 것은 현재의 환경에서 주목할 만하고 흥미로운 측면입니다.
 
@@ -42,7 +63,18 @@ AWS의 Kubernetes 투자: 5주년을 축하하는 Amazon EKS는 AWS의 Kubernete
 
 인프라 조사에서 Kubernetes가 핵심적인 역할을 하는 복잡한 계층을 관찰하며, 다양한 인프라 요소를 조율하여 원활하게 통합하는 모습을 보게 됩니다. 고객들은 Kubernetes 위에 배포, 관측, 거버넌스, 트래픽 제어, 보안 제어를 추가하여 적극 참여하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 놀랍게도 CNCF 내에서 599개의 프로젝트가 Kubernetes 내부 또는 옆에서 실행됩니다. 이 중 173개 프로젝트는 CNCF로부터 직접 지도 받는 개방형 지배를 갖고 있습니다. Kubernetes 위에 이러한 방대한 플랫폼 레이어를 관리하는 것은 상당한 일이죠.
 
@@ -52,7 +84,18 @@ AWS의 Kubernetes 투자: 5주년을 축하하는 Amazon EKS는 AWS의 Kubernete
 
 - 차별화되지 않은 무거운 작업 제거:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AWS에서 Kubernetes를 관리하는 데 연관된 막거운 무거운 작업의 부담에서 해방된 고객들.
 - 운영 복잡성이 처리되어 사용자들이 핵심 역량에 초점을 맞추고 루틴적인 작업 관리에 관여하는 대신에 방향을 전환할 수 있게 합니다.
@@ -64,7 +107,18 @@ AWS의 Kubernetes 투자: 5주년을 축하하는 Amazon EKS는 AWS의 Kubernete
 
 3. 오픈 소스 표준의 계속적인 유지:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 쿠버네티스의 오픈 소스 표준을 계속해서 유지보수합니다.
 - 이는 CNCF 내 599개 프로젝트와의 호환성을 보장하며 빠른 혁신을 가능하게 하고 커뮤니티 및 파트너의 새로운 개발에 접근하며 커뮤니티 표준의 계속된 향상을 도와줍니다.
@@ -75,7 +129,18 @@ AWS 생태계 내에서 Kubernetes에 대한 포괄적인 지원에 참여하고
 
 AWS 팀은 CNCF의 보안 협의회 및 Kubernetes 프로젝트에 기여함으로써 안전에 대한 약속을 확장하고 견고한 안전 조치를 보장합니다. 더불어 AWS는 공동 비용 절감 및 공유 리소스의 가용성 향상에 기여하는 커뮤니티 프로젝트에 금융적 지원을 제공함으로써 중요한 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 어디서나 Kubernetes 실행하기
 
@@ -85,8 +150,19 @@ EKS를 중심으로, AWS에서의 Kubernetes 제공은 다양한 환경으로 �
 
 # EKS 5주년
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-지난 5년 동안 이 제품에 투자된 상당한 개발을 되돌아보면, 2018년 EKS 발표 이후 222번 이상의 다양한 런칭이 진행되었다는 사실을 강조해야 합니다. 이러한 런칭은 가격 인하와 규정 준수 조치부터 새로운 프로젝트 시작, 클러스터 생성 시간 가속화, 새로운 인스턴스 및 지역 지원 추가, 중요한 기능 도입까지 다양한 향상을 포함하고 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+지난 5년 동안 이 제품에 투자된 상당한 개발을 되돌아보면, 2018년 EKS 발표 이후 222번 이상의 다양한 런칭이 진행되었다는 사실을 강조해야 합니다. 이러한 런칭은 가격 인하와 규정 준수 조치부터 새로운 프로젝트 시작, 클러스터 생성 시간 가속화, 새로운 인스턴스 및 지역 지원 추가, 중요한 기능 도입까지 다양한 향상을 포함하고 있습니다.
 
 노바 라일라툴 리즈키아

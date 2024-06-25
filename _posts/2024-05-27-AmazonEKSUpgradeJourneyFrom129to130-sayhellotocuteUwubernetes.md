@@ -3,13 +3,12 @@ title: "아마존 EKS 업그레이드 여정 129에서 130으로 - 귀여운 우
 description: ""
 coverImage: "/assets/img/2024-05-27-AmazonEKSUpgradeJourneyFrom129to130-sayhellotocuteUwubernetes_0.png"
 date: 2024-05-27 17:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-27-AmazonEKSUpgradeJourneyFrom129to130-sayhellotocuteUwubernetes_0.png
 tag: Tech
 originalTitle: "Amazon EKS Upgrade Journey From 1.29 to 1.30- say hello to cute “Uwubernetes”"
 link: "https://medium.com/@marcincuber/amazon-eks-upgrade-journey-from-1-29-to-1-30-say-hello-to-cute-uwubernetes-eba082199cc4"
 ---
-
 
 "Uwubernetes" 릴리스를 환영합니다. EKS 제어 평면을 버전 1.30으로 업그레이드하는 과정 및 주의 사항.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@marcincuber/amazon-eks-upgrade-journey-from-1-29-to-1
 
 AWS EKS 1.30에 오신 것을 환영합니다. 이것은 Kubernetes v1.30 릴리스로, 당신의 클러스터를 더 귀여워 지게 만듭니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kubernetes는 전 세계의 수천 명의 사람들이 만들고 공개하는데, 그들은 모든 삶의 영역에서 온 사람들입니다. 대부분의 기여자들은 이를 위해 돈을 받지 않지만, 재미로 만들거나 문제를 해결하거나, 무언가를 배우거나, 커뮤니티를 사랑하기 때문에 만듭니다. 우리 중 많은 사람들이 여기서 집, 친구, 그리고 직업을 찾았습니다. 릴리스 팀은 Kubernetes의 지속적인 성장에 참여하여 영광으로 생각합니다.
 
@@ -29,7 +39,18 @@ Kubernetes v1.30: Uwubernetes, 이제까지 가장 귀여운 릴리스입니다.
 
 # 이전 이야기와 업그레이드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 당신이 다음을 찾고 있다면
 
@@ -44,7 +65,18 @@ Kubernetes v1.30: Uwubernetes, 이제까지 가장 귀여운 릴리스입니다.
 
 # 업그레이드를 위한 필수 조건
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Amazon EKS의 Kubernetes v1.30로 업그레이드하기 전에 완료해야 할 중요한 작업이 몇 가지 있습니다. 이 작업들은 "업그레이드 인사이트"에서 쉽게 확인할 수 있습니다. 제 경우에는 항상 클러스터를 최신 상태로 유지하고 있어서 완료해야 할 작업이 없었습니다.
 
@@ -54,7 +86,18 @@ Amazon EKS의 Kubernetes v1.30로 업그레이드하기 전에 완료해야 할 
 
 ## Kubernetes v1.30에서 안정 버전으로 졸업한 개선 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Robust VolumeManager 재구성 후 kubelet 재시작. 이것은 kubelet이 시작될 때 기존 볼륨이 어떻게 마운트되는지에 대한 추가 정보를 제공하도록 볼륨 관리자를 재구성하는 것입니다. 사용자나 클러스터 관리자에게는 어떤 변화도 가져오지 않습니다. 이것은 이전 동작으로 되돌아갈 수 있도록 feature process와 feature gate NewVolumeManagerReconstruction을 사용합니다.
 - 볼륨 복원 중 무단으로 볼륨 모드 변환 방지. 이 릴리스에서, 볼륨을 PersistentVolume로 복원할 때 컨트롤 플레인은 항상 무단으로 볼륨 모드를 변경하는 것을 방지합니다. 클러스터 관리자로서, 복원 시 그러한 변경을 허용하려면 적절한 신원 원칙(ServiceAccounts representing a storage integration과 같은)에 권한을 부여해야 합니다.
@@ -83,7 +126,18 @@ Amazon EKS의 Kubernetes v1.30로 업그레이드하기 전에 완료해야 할 
 
 # 테라폼을 사용하여 EKS를 업그레이드하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 모든 업그레이드와 마찬가지로, 나는 Terraform을 사용합니다. 이는 빠르고 효율적이며 내 삶을 간편하게 만들어줍니다. 이번 업그레이드에 사용한 프로바이더는 다음과 같습니다:
 
@@ -93,7 +147,18 @@ Amazon EKS의 Kubernetes v1.30로 업그레이드하기 전에 완료해야 할 
 
 이번에는 컨트롤 플레인의 업그레이드에 약 8분 정도 소요되었습니다. 이것은 정말 빠르다고 생각해요. 업그레이드 후에는 어떠한 문제도 경험하지 않았습니다. 이전 업그레이드에서 있었던 API 서버 자체의 일시적인 사용 불가 상황조차도 전혀 인지하지 못했을 정도입니다. AWS는 EKS 컨트롤 플레인 업그레이드에 소요되는 시간을 줄이는 데 훌륭한 일을 하고 있습니다. EKS 1.29 업그레이드는 8분 24초가 걸렸지만, EKS 1.30은 참고로 4초 더 소요되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-AmazonEKSUpgradeJourneyFrom129to130-sayhellotocuteUwubernetes_3.png)
 
@@ -103,22 +168,33 @@ Amazon EKS의 Kubernetes v1.30로 업그레이드하기 전에 완료해야 할 
 
 저는 개인적으로 Terraform을 사용하여 EKS 클러스터를 배포하고 업그레이드합니다. 여기 EKS 클러스터 리소스의 예시가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 resource "aws_eks_cluster" "cluster" {
   enabled_cluster_log_types = ["audit"]
   name                      = local.name_prefix
   role_arn                  = aws_iam_role.cluster.arn
-  version                   = "1.30"  
-  
+  version                   = "1.30"
+
   vpc_config {
     subnet_ids              = flatten([module.vpc.public_subnets, module.vpc.private_subnets])
     security_group_ids      = []
     endpoint_private_access = "true"
     endpoint_public_access  = "true"
   }
-      
+
   encryption_config {
     resources = ["secrets"]
     provider {
@@ -130,7 +206,7 @@ resource "aws_eks_cluster" "cluster" {
     authentication_mode                         = "API_AND_CONFIG_MAP"
     bootstrap_cluster_creator_admin_permissions = false
   }
-   
+
   tags = var.tags
 }
 ```
@@ -141,7 +217,18 @@ resource "aws_eks_cluster" "cluster" {
 
 제가 Terraform을 사용하여 EKS 클러스터를 생성하는 데 사용하는 템플릿은 Github 저장소인 https://github.com/marcincuber/eks에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 관리형 EKS 애드온 업그레이드
 
@@ -158,7 +245,18 @@ resource "aws_eks_addon" "kube_proxy" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 리소스 "aws_eks_addon" "core_dns" {
@@ -182,8 +280,18 @@ resource "aws_eks_addon" "kube_proxy" {
 
 EKS 1.30을 위해 권장되는 핵심 배포 및 데몬 세트를 업그레이드하는 것을 잊지 마세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - CoreDNS — v1.11.1-eksbuild.9
 - Kube-proxy — 1.30.0-eksbuild.3
@@ -206,7 +314,18 @@ EKS 1.30을 위해 권장되는 핵심 배포 및 데몬 세트를 업그레이�
 
 ## 최종 결과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 > $ kubectl version                                                                                                                                                                                           [±d1fbdc7c ✓(✹)]
@@ -221,8 +340,18 @@ Server Version: v1.30.0-eks-036c24b
 
 이전보다 더 빠르게 EKS 클러스터를 업그레이드했어요. 8분 만에 제어플레인 업그레이드 작업이 완료되었어요. 클러스터 및 노드 업그레이드를 실행하기 위해 Terraform을 사용하고, GitHub Actions 파이프라인을 통해 쉽고 편리하게 작업을 처리할 수 있어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한국어 번역:
 
@@ -234,7 +363,18 @@ EKS에 대한 전체 Terraform 설정에 관심이 있다면, GitHub에서 찾�
 
 요약하면, 쿠버네티스를 싫어하거나/또는 사랑해도 그래도 여전히 사용하고 있어요 ;).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 표를 Markdown 형식으로 변경해 주십시오.
 
@@ -246,6 +386,17 @@ Enjoy Kubernetes!!!
 
 Medium에 있는 다른 이야기와 마찬가지로, 문서화된 작업을 수행했습니다. 이것은 제 개인적인 연구이며 직면한 문제들에 대한 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모두 읽어 주셔서 감사합니다. Marcin Cuber

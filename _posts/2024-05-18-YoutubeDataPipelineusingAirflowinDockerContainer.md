@@ -3,13 +3,12 @@ title: "YouTube 데이터 파이프라인 구축하기 Docker 컨테이너에서
 description: ""
 coverImage: "/assets/img/2024-05-18-YoutubeDataPipelineusingAirflowinDockerContainer_0.png"
 date: 2024-05-18 18:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-YoutubeDataPipelineusingAirflowinDockerContainer_0.png
 tag: Tech
 originalTitle: "Youtube Data Pipeline using Airflow in Docker Container"
 link: "https://medium.com/@rajugt49/youtube-data-pipeline-using-airflow-in-docker-container-c26fba76e060"
 ---
-
 
 그게 많은 양이겠죠! 조금씩 나눠서 살펴봐요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@rajugt49/youtube-data-pipeline-using-airflow-in-docke
 
 상상해봐요! 성장하는 YouTube 채널을 운영하는 콘텐츠 크리에이터라고 상상해봐요. 시청자들의 댓글과 답글을 통해 시청자를 이해하는 것은 귀중한 통찰력을 제공할 수 있어요. 그러나 수많은 동영상의 댓글을 수동으로 분류하는 것은 지칠 수 있죠. 이 프로세스를 자동화할 수 있는 방법이 있다면 어떨까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 제안된 해결책: —
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@rajugt49/youtube-data-pipeline-using-airflow-in-docke
 
 — 작업 관리를 위한 Airflow: 데이터 추출 및 처리 작업을 체계적으로 관리하기 위해 Apache Airflow를 Docker 컨테이너 내에서 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 저장을 위한 AWS S3: 마지막으로, boto3 라이브러리를 사용하여 처리된 데이터를 AWS S3에 저장하게 됩니다. 나중에 쉽게 액세스하고 분석할 수 있습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@rajugt49/youtube-data-pipeline-using-airflow-in-docke
 
 구현은 주로 두 가지 작업으로 구성되어 있습니다. 첫 번째는 인프라 구축, 두 번째는 코드 작업입니다. 그래서 이제 인프라 설정을 먼저 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 데스크톱을 설치해보세요 — https://www.docker.com/get-started/
 
@@ -52,7 +84,18 @@ Docker version 20.10.23, build 7155243
 
 최신 apache/airflow 이미지를 받아보세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 도커 pull apache/airflow
@@ -66,7 +109,18 @@ Docker version 20.10.23, build 7155243
 
 AWS 자격 증명을 생성하여 원격 s3 버킷과 통신하여 날짜를 쓸 수 있습니다. 다음 링크를 통해 생성하세요 — 루트 사용자를 위한 액세스 키 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 config
 
@@ -83,7 +137,18 @@ aws_access_key_id = AKIB******AXPCMO
 aws_secret_access_key = 4D7HkaIBsqu***********+0AT2a8j
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지역 사용자의 경우 두 파일을 로컬 머신의 /Users/local_user/airflow/creds/ 폴더로 복사해주세요. 이렇게 함으로써 이 파일들이 컨테이너에서 /home/airflow/.aws/ 경로에 마운트되도록 할 수 있습니다.
 
@@ -93,12 +158,33 @@ aws_secret_access_key = 4D7HkaIBsqu***********+0AT2a8j
 
 웹 브라우저를 열고 `http://localhost:8080` 주소로 이동해주세요. username에 admin을 입력하고 이전 단계에서 복사한 비밀번호로 로그인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `aws_write_utility.py` 파일을 만들 때 평소처럼 진행하시면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import boto3
@@ -109,10 +195,10 @@ def write_json_to_s3(json_data, bucket_name, key_name):
 
     # S3 클라이언트 초기화
     s3 = boto3.client('s3')
-    
+
     # JSON 데이터를 바이트로 변환
     json_bytes = json.dumps(json_data).encode('utf-8')
-    
+
     # JSON 데이터를 S3에 쓰기
     s3.put_object(Bucket=bucket_name, Key=key_name, Body=json_bytes)
 
@@ -177,8 +263,18 @@ def process_comments(response_items):
 
 youtube_dag.py
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 from datetime import datetime, timedelta
@@ -225,7 +321,17 @@ dag
 
 이제 Airflow에서 DAG 페이지를 새로고침하세요. 위의 DAG가 표시될 것입니다. 실행해보고 문제가 있는지 로그를 확인해보세요. 녹색으로 변하면 작업이 완료된 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 구현은 AWS EC2 인스턴스에 Airflow를 설정하여 수행할 수도 있습니다.

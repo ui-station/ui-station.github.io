@@ -3,13 +3,12 @@ title: "2024년에 사용할 수 있는 가장 유용한 Terraform 도구들"
 description: ""
 coverImage: "/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_0.png"
 date: 2024-06-19 13:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_0.png
 tag: Tech
 originalTitle: "Most Useful Terraform Tools to Use in 2024"
 link: "https://medium.com/@mike_tyson_cloud/most-useful-terraform-tools-to-use-in-2024-cf9a55a5ce44"
 ---
-
 
 개발자로서 2년정도 경력이 있고, 많은 도구들이 갑자기 등장하는 것을 보았어요. 요즘 제품을 쉽게 만들기 때문만이 아니라, 전체 Terraform 개발 라이프사이클 내에서 해결해야 할 많은 문제들이 있기 때문이에요. 그리고 제품의 각 미세 카테고리에서 오픈 소스, 무료, 프리미엄, 또는 맞춤 요금제와 같이 수천 가지 선택지가 있는 걸 잊지 마세요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@mike_tyson_cloud/most-useful-terraform-tools-to-use-i
 
 ![Most Useful Terraform Tools to Use in 2024](/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 할 일은 Infrastructure as Code (IaC)의 기본 형태로 돌아가서 엔지니어들이 일을 어떻게 하는지와 전체 라이프사이클이 얼마나 어려운지를 이해하는 것이었습니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@mike_tyson_cloud/most-useful-terraform-tools-to-use-i
 
 ## 코드 정의:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공학자들은 CLI(Command Line Interface)를 사용하여 코드를 정의했어요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@mike_tyson_cloud/most-useful-terraform-tools-to-use-i
 
 ## 인프라스트럭처 관리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전체 인프라는 클라우드 제공 업체 콘솔을 통해 관리되었습니다. 클라우드 제공 업체 중심의 자원 관리가 일반적이었습니다.
 
@@ -49,7 +81,18 @@ Datadog와 같은 도구가 등장하기 전에는 홈메이드 제품이 초기
 
 ## 보안 도구:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오픈 소스 보안 도구들은 여전히 널리 사용되고 있어요. Terrascan, Checkov, 그리고 OPA (Open Policy Agent)와 같은 도구들은 여전히 중요합니다.
 
@@ -59,8 +102,18 @@ Datadog와 같은 도구가 등장하기 전에는 홈메이드 제품이 초기
 
 ## TFLint: 코드 품질
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_2.png" />
 
@@ -70,8 +123,18 @@ TFLint는 Terraform을 위한 강력한 오픈 소스 린트 도구로 솟아납
 
 <img src="/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_3.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Terrascan은 보안 및 규정 준수에 초점을 맞춘 정적 코드 분석기로 무대에 올라섭니다. 전통적인 린트 이상으로 나아가 구성 오류, 보안이 취약한 리소스 설정 및 정책 위반을 식별합니다. 보안이 최우선 사항인 만큼 Terrascan은 Terraform 인프라를 견고하게 만들어 주는 경계를 지킵니다.
 
@@ -81,7 +144,18 @@ Terrascan은 보안 및 규정 준수에 초점을 맞춘 정적 코드 분석�
 
 Checkov은 인프라 코드 파일을 세심하게 검사하는 보안 스캐너로 등장합니다. Checkov의 역할은 Terraform 코드를 면밀히 검사하여 보안 취약성과 정책 위반 사항을 발견하는 것입니다. 사이버 보안이 중요시되는 시대에, Checkov은 감시병으로 작용하여 귀하의 인프라가 견고하고 규정을 준수할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 인프라코스트: 클라우드 비용
 
@@ -91,8 +165,18 @@ Checkov은 인프라 코드 파일을 세심하게 검사하는 보안 스캐너
 
 ## 브레인보드: 테라폼 GUI
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Brainboard](https://miro.medium.com/v2/resize:fit:1400/1*F9cAb0NT-xSvFhnEXx9SiQ.gif)
 
@@ -102,8 +186,18 @@ Brainboard은 클라우드 인프라 관리를 위한 최첨단 플랫폼으로 
 
 ![Terragrunt](/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Terragrunt은 Terraform 모듈의 조정 및 배포를 관리하는 도구입니다. 모듈 처리 기능 이상으로, Terragrunt은 Terraform 테스트를 용이하게하고 전체 개발 수명주기를 최적화하는 데 능숙합니다.
 
@@ -113,7 +207,18 @@ Terragrunt은 Terraform 모듈의 조정 및 배포를 관리하는 도구입니
 
 Terradozer는 강력한 정리 도구로 등장하여 Terraform 상태 파일의 모든 리소스를 파괴하는 것을 목적으로 합니다. 이 기능은 사용되지 않는 인프라를 정리하고 효율적인 환경을 조성하는 데 매우 소중합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Eagle-Eye: 종속성 시각화
 
@@ -123,7 +228,18 @@ Terradozer는 강력한 정리 도구로 등장하여 Terraform 상태 파일의
 
 ## DiagramGPT: D2 다이어그램
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-19-MostUsefulTerraformToolstoUsein2024_9.png)
 

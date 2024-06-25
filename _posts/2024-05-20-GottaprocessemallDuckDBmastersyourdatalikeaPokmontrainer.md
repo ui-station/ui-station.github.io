@@ -3,13 +3,12 @@ title: "모두 처리해야 해요  DuckDB가 데이터를 마스터하는 방�
 description: ""
 coverImage: "/assets/img/2024-05-20-GottaprocessemallDuckDBmastersyourdatalikeaPokmontrainer_0.png"
 date: 2024-05-20 18:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-GottaprocessemallDuckDBmastersyourdatalikeaPokmontrainer_0.png
 tag: Tech
 originalTitle: "Gotta process ’em all — DuckDB masters your data like a Pokémon trainer"
 link: "https://medium.com/data-engineer-things/gotta-process-em-all-duckdb-masters-your-data-like-a-pok%C3%A9mon-trainer-051a38cbc5cd"
 ---
-
 
 ## DuckDB을 데이터 처리 도구로 사용하는 실용적인 예제
 
@@ -31,7 +30,18 @@ link: "https://medium.com/data-engineer-things/gotta-process-em-all-duckdb-maste
 
 캉토 지방을 탐험하여 놀라운 생물을 포획하고 훈련하는 포켓몬 트레이너가 되는 꿈을 꾸어 본 적이 있나요? 90년대에 Game Boy에서 포켓몬 레드 버전과 포켓몬 블루 버전을 즐길 때, 제가 확실히 꾸었던 꿈입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포켓몬 비디오 게임 시리즈가 시간이 지남에 따라 얼마나 인기 있어졌고 지금도 그랬는지 정말 놀라운 일이에요. 마치 비디오 게임 산업에서 떠오르는 별처럼 말이죠. 그 얘기를 하자면: DuckDB, 진행 중인 SQL 분석 엔진, 지난 몇 년간 데이터 엔지니어링 커뮤니티에서 떠오르는 별처럼 인기를 끌었어요.
 
@@ -41,7 +51,18 @@ link: "https://medium.com/data-engineer-things/gotta-process-em-all-duckdb-maste
 
 DuckDB는 큰 데이터베이스와 매끄럽게 통합되어 인메모리 및 영속적 저장 솔루션 사이의 원활한 전환을 도와줘요. 마치 어떤 도전이든 쉽게 적응하는 다재다능한 포켓몬과 같죠. 작은 데이터 세트를 빠르게 분석해야 한다면? DuckDB는 여러분의 마초크, 쉽게 과업을 수행할 준비가 돼 있어요. 더 강력한 처리가 필요한 대규모 데이터 세트와 작업하고 있다면? DuckDB는 마샴으로 변신하여 과중한 분석을 위해 외부 데이터베이스에 매끄럽게 연결할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DuckDB를 설치하기 쉽고 휴대용이며 오픈 소스입니다. SQL 방언 측면에서 기능이 풍부하고 CSV, Parquet 및 JSON과 같은 다양한 형식을 기준으로 데이터를 가져오고 내보낼 수 있습니다. 또한 Pandas 데이터프레임과 원활하게 통합되어 데이터 조작 스크립트에서 강력한 데이터 조작 도구로 사용할 수 있습니다.
 
@@ -51,7 +72,18 @@ DuckDB를 설치하기 쉽고 휴대용이며 오픈 소스입니다. SQL 방언
 
 ## API 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포켓몬 API는 포켓몬 비디오 게임 시리즈와 관련된 JSON 데이터에 대한 RESTful API 인터페이스를 제공합니다. 이 API를 사용하면 포켓몬, 그들의 기술, 능력, 유형 등에 대한 정보를 소비할 수 있습니다.
 
@@ -63,7 +95,18 @@ DuckDB를 설치하기 쉽고 휴대용이며 오픈 소스입니다. SQL 방언
 curl -s https://pokeapi.co/api/v2/pokemon/ | jq .
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 {
@@ -90,7 +133,18 @@ curl -s https://pokeapi.co/api/v2/pokemon/ | jq .
 curl -s https://pokeapi.co/api/v2/pokemon/bulbasaur | jq .
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```json
 {
@@ -115,7 +169,18 @@ curl -s https://pokeapi.co/api/v2/pokemon/bulbasaur | jq .
 
 새로운 Python 프로젝트를 만들기 시작합니다. 이를 위해 새 폴더를 만듭니다. 이 폴더 내에서 내장된 venv 모듈을 사용하여 가상 환경을 생성합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 mkdir duckdb-pokemon
@@ -134,7 +199,18 @@ pip install requests
 
 여기까지 준비가 되었습니다. 다음 장에서는 포켓몬 API를 활용한 DuckDB의 일부 기능을 살펴볼 것입니다. 이 코드를 프로젝트 내의 Python 파일로 복사하여 실행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데모 1: 간단한 선택
 
@@ -148,7 +224,18 @@ duckdb.sql("SELECT 42").show()
 
 이 코드를 실행하면 예상한 출력인 하나의 열과 하나의 행이 포함된 값 42를 가진 테이블을 얻을 수 있습니다. 이는 삶, 우주, 그리고 모든 것에 대한 궁극적인 질문의 답입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ┌───────┐
@@ -175,15 +262,37 @@ duckdb.sql("""
 """).show()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 read_json_auto를 사용하면 JSON 데이터를로드하는 가장 간단한 방법을 사용할 수 있습니다. 이는 JSON 리더를 자동으로 구성하고 데이터에서 열 유형을 파생합니다.
 
 위의 코드는 API의 해당 응답에 따라 네 개의 열이 있는 테이블을 제공합니다. 즉: count, next, previous, results이며, results는 구조체의 목록이며 각 구조체는 이름과 URL이 포함된 포켓몬으로 구성됩니다.
 
-유연성은 DuckDB가 정말 빛나는 곳입니다. DuckDB는 여러분의 신속한 피카츄이며 JSON 데이터를로드하는 것은 단지 한 가지 예입니다. CSV 파일이나 심지어 하이브 파티셔닝이 있는 Parquet 파일에서 데이터를 읽을 수도 있습니다: 
+유연성은 DuckDB가 정말 빛나는 곳입니다. DuckDB는 여러분의 신속한 피카츄이며 JSON 데이터를로드하는 것은 단지 한 가지 예입니다. CSV 파일이나 심지어 하이브 파티셔닝이 있는 Parquet 파일에서 데이터를 읽을 수도 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 SELECT *
@@ -202,7 +311,18 @@ print(duckdb.query("SELECT SUM(some_values) FROM df").to_df())
 
 하지만 일단은 포켓몬으로 계속해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데모 3: Unnest
 
@@ -225,7 +345,18 @@ duckdb.sql("""
 
 포켓몬 당 한 행씩 이름 및 URL이 포함된 결과를 얻을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ┌──────────────┬─────────────────────────────────────────┐
@@ -251,7 +382,18 @@ duckdb.sql("""
 
 DuckDB는 Python과 완벽하게 통합되어 있어 열에 있는 각 url 값에 대해 간단히 Python 함수를 호출할 수 있는 방법이 있습니다. 이는 다른 데이터베이스 시스템에서 알 수 있는 사용자 정의 함수(UDF)와 유사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API로부터 데이터를 가져오기 위해 파이썬 함수를 정의해야 합니다:
 
@@ -270,7 +412,18 @@ from duckdb.typing import VARCHAR
 duckdb.create_function("get", get, [VARCHAR], VARCHAR)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 create_function을 사용할 때는 SQL 스크립트에서 UDF에 참조할 이름을 지정해야 합니다. 또한 호출할 실제 Python 함수와 매개변수 유형 및 반환 유형 목록을 전달해야 합니다.
 
@@ -282,7 +435,18 @@ json(get(pokemon.url)) AS details
 
 다시 말해, 우리는 포켓몬 목록에서 각 pokemon.url에 대해 Python 함수 get을 호출합니다. 우리가 얻는 것은 JSON 응답 텍스트이며, json 함수를 사용하여 적절한 유형의 결과를 얻습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 스스로 시도해볼 수 있는 최종 코드입니다:
 
@@ -317,7 +481,18 @@ duckdb.sql("""
 
 <img src="/assets/img/2024-05-20-GottaprocessemallDuckDBmastersyourdatalikeaPokmontrainer_5.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데모 5: 리스트 컴프리헨션
 
@@ -327,7 +502,18 @@ duckdb.sql("""
 
 SQL을 더 읽기 쉽게 만들기 위해, 우리는 공통 테이블 표현식 (CTE)도 사용할 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 import duckdb
@@ -375,8 +561,18 @@ details.abilities::STRUCT(ability STRUCT(name VARCHAR, url VARCHAR), is_hidden B
 
 abilities의 유형을 구조 목록으로 변환합니다. 각 구조에는 더 자세한 정보를 위해 능력 이름과 URL뿐만 아니라, 숨겨진 플래그와 슬롯 번호를 포함하는 또 다른 구조가 포함됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금 능력은 목록이므로 SQL에서 목록 표현을 적용할 수 있습니다. 이는 기본적으로 파이썬의 목록 표현과 동일하게 작동합니다. 따라서 다음 SQL 코드를 사용해보세요:
 
@@ -401,7 +597,18 @@ abilities의 유형을 구조 목록으로 변환합니다. 각 구조에는 더
 | 10   | caterpie   | [shield-dust, run-away] | 3      | 29     |
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데모 6: DuckDB에서 Pandas로 그리고 다시 되돌아 오기
 
@@ -411,7 +618,18 @@ DuckDB의 핵심은 SQL 기반 작업과 Pandas와 같은 다른 데이터 처�
 
 전혀 SQL에서 데이터 처리를 하거나 Pandas나 NumPy와 같은 전형적인 라이브러리를 사용하여 Python 스크립트 내에서 데이터 정제를 완전히 구현하는 대신, 복잡한 데이터베이스 통합 설정이 필요 없이 이러한 환경 간을 전환할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지의 예제를 기반으로, Pandas를 사용하여 추가 처리를 수행하고 싶다고 가정해 봅시다. DuckDB를 사용하면 SQL 쿼리의 결과를 데이터프레임으로 쉽게 내보낼 수 있습니다. .df() 함수를 사용하면 됩니다.
 
@@ -470,7 +688,18 @@ duckdb.sql("""
 
 위 코드는 다음 결과를 출력합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ┌─────────────┬───────┐
@@ -491,12 +720,26 @@ duckdb.sql("""
 앞서 언급한 대로, .df()를 사용하면 SQL 결과를 Pandas 데이터프레임으로 얻을 수 있습니다. 그런 다음 다음과 같이 추가적인 변환을 적용할 수 있습니다.
 
 ```js
-df_agg = df.explode("abilities").groupby("abilities", as_index=False).agg(count=("id", "count"))
+df_agg = df
+  .explode("abilities")
+  .groupby("abilities", (as_index = False))
+  .agg((count = ("id", "count")));
 ```
 
 그리고 df_agg 변수에 저장된 데이터프레임을 SQL에서 사용할 수 있습니다. 처음 보았을 때 정말 놀랐던 부분이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sql
 SELECT abilities AS ability, count
@@ -511,7 +754,18 @@ LIMIT 8;
 
 매번 실행할 때마다 API를 호출하는 것은 가장 효율적인 해결책은 아닙니다. 물론 결과를 기다리는 동안 맛있는 커피 한 잔을 마실 수 있는 기회를 제공하지만, DuckDB는 데이터를 유지할 수도 있습니다. 예를 들어 데이터를 파일로 직렬화하여 파일 시스템에 저장할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 예제를 다음 코드와 함께 확장해 봅시다:
 
@@ -532,7 +786,18 @@ with duckdb.connect(database="pokemon.db") as conn:
 
 우리는 pokemon.db라는 파일에 연결을 열고 데이터를 저장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 스크립트에서 데이터를로드하고 사전 처리 된 데이터에 액세스 할 수 있습니다:
 
@@ -550,7 +815,18 @@ with duckdb.connect(database="pokemon.db") as conn:
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DuckDB은 데이터 처리 도전에서 강력한 동료로 나타났습니다. Pandas 데이터프레임과 고급 분석 SQL 기능과의 매끄러운 통합을 제공하여 자원 제한적 환경에서 분석 작업에 적합함을 강조했습니다.
 
@@ -560,6 +836,17 @@ DuckDB가 함께하면 금방 성공적인 포켓몬 트레이너가 될 거에�
 
 <img src="/assets/img/2024-05-20-GottaprocessemallDuckDBmastersyourdatalikeaPokmontrainer_8.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 경험을 공유해주시고 즐거운 독서를 즐기세요!

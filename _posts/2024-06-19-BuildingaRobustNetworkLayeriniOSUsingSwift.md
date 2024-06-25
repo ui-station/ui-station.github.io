@@ -3,14 +3,12 @@ title: "iOS에서 Swift를 사용하여 견고한 네트워크 계층 구축하�
 description: ""
 coverImage: "/assets/img/2024-06-19-BuildingaRobustNetworkLayeriniOSUsingSwift_0.png"
 date: 2024-06-19 10:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-BuildingaRobustNetworkLayeriniOSUsingSwift_0.png
 tag: Tech
 originalTitle: "Building a Robust Network Layer in iOS Using Swift"
 link: "https://medium.com/@rohitsainier/building-a-robust-network-layer-in-ios-using-swift-660870e976a9"
 ---
-
-
 
 ![이미지](/assets/img/2024-06-19-BuildingaRobustNetworkLayeriniOSUsingSwift_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@rohitsainier/building-a-robust-network-layer-in-ios-u
 
 우리의 네트워크 레이어는 여러 중요한 구성 요소로 구성됩니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - NetworkError: 다양한 종류의 네트워크 오류를 처리하기 위한 포괄적 인템.
 - NetworkRequest: 네트워크 요청에 필요한 속성과 메소드를 정의하는 프로토콜.
@@ -33,7 +41,18 @@ link: "https://medium.com/@rohitsainier/building-a-robust-network-layer-in-ios-u
 
 다양한 네트워크 관련 오류를 깨끗하고 조직된 방식으로 처리하는 데 도움이 되는 NetworkError 열거형을 정의하는 것부터 시작해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import Foundation
@@ -69,11 +88,33 @@ NetworkError Enum: 이 Enum은 발생할 수 있는 가능한 네트워크 관�
 - internalServerError: 500 오류를 나타냄.
 - unknownError: 연결된 상태 코드와 함께 알 수 없는 오류를 나타냄.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표 태그를 Markdown 형식으로 변경하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네트워크 요청 프로토콜: 모든 네트워크 요청이 따라야 하는 구조를 정의합니다.
 
@@ -84,7 +125,18 @@ NetworkError Enum: 이 Enum은 발생할 수 있는 가능한 네트워크 관�
 
 HTTPMethod Enum: 요청에 사용되는 다양한 HTTP 메서드를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HTTPHeader Enum: 일반적인 HTTP 헤더 필드를 나타냅니다.
 
@@ -94,7 +146,18 @@ ContentType Enum: HTTP 헤더의 일반적인 콘텐츠 유형을 나타냅니�
 
 NetworkRequest 프로토콜을 확장하여 URLRequest 객체를 생성하는 메서드를 포함시킵니다. 이 확장은 HTTP 헤더 및 매개변수 설정을 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 extension NetworkRequest {
@@ -102,16 +165,16 @@ extension NetworkRequest {
         guard let url = url else {
             throw NetworkError.badURL
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        
+
         if let headers = headers {
             for (key, value) in headers {
                 request.setValue(value, forHTTPHeaderField: key.rawValue)
             }
         }
-        
+
         if let parameters = parameters {
             if method == .get {
                 var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false)
@@ -128,7 +191,7 @@ extension NetworkRequest {
                 }
             }
         }
-        
+
         return request
     }
 }
@@ -142,11 +205,22 @@ URLRequest 생성 메소드: NetworkRequest를 URLRequest 객체로 변환합니
 - HTTP 메소드 설정합니다.
 - 제공된 헤더를 설정합니다.
 - 매개변수를 인코딩하고 설정합니다:
-	- GET 요청의 경우, 매개변수를 쿼리 항목으로 추가합니다.
-	- 다른 메소드의 경우, 매개변수를 JSON으로 인코딩하고 요청 본문으로 설정합니다.
+  - GET 요청의 경우, 매개변수를 쿼리 항목으로 추가합니다.
+  - 다른 메소드의 경우, 매개변수를 JSON으로 인코딩하고 요청 본문으로 설정합니다.
 - 인코딩에 실패하면 encodingFailed 오류를 발생시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 4: NetworkManager 구현
 
@@ -161,9 +235,9 @@ import UIKit
 class NetworkManager {
     static let shared = NetworkManager()
     private let urlSession = URLSession.shared
-    
+
     private init() {}
-    
+
     func perform<T: Decodable>(_ request: NetworkRequest, decodeTo type: T.Type) async throws -> T {
         if #available(iOS 15.0, *) {
             let urlRequest = try request.urlRequest()
@@ -183,7 +257,7 @@ class NetworkManager {
             }
         }
     }
-    
+
     private func decodeData<T: Decodable>(data: Data, type: T.Type) throws -> T {
         do {
             let decodedObject = try JSONDecoder().decode(T.self, from: data)
@@ -192,12 +266,12 @@ class NetworkManager {
             throw NetworkError.decodingFailed(decodingError)
         }
     }
-    
+
     private func processResponse(response: URLResponse?) throws {
         guard let httpResponse = response as? HTTPURLResponse else {
             throw NetworkError.invalidResponse
         }
-        
+
         switch httpResponse.statusCode {
         case 200...299:
             return
@@ -209,7 +283,7 @@ class NetworkManager {
             throw NetworkError.unknownError(statusCode: httpResponse.statusCode)
         }
     }
-    
+
     func downloadFile(from url: URL) async throws -> URL {
         if #available(iOS 15.0, *) {
             let (localURL, response) = try await urlSession.download(from: url)
@@ -231,7 +305,18 @@ class NetworkManager {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설명:
 
@@ -243,7 +328,18 @@ NetworkManager Singleton: 네트워크 요청을 수행하기 위한 단일 인�
 
 perform 메서드:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - iOS 15.0 이상인 경우:
   - NetworkRequest에서 URLRequest를 생성합니다.
@@ -259,7 +355,18 @@ processResponse 메서드: HTTP 응답을 유효성 검사하고 상태 코드�
 
 downloadFile 메서드: 지정된 URL에서 파일을 다운로드하며 역호환성을 위해 async/await 및 완료 핸들러를 모두 지원합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 완료 핸들러 구현
 
@@ -275,12 +382,12 @@ extension NetworkManager {
                     completion(.failure(.requestFailed(error)))
                     return
                 }
-                
+
                 guard let data = data else {
                     completion(.failure(.dataNotFound))
                     return
                 }
-                
+
                 do {
                     try self.processResponse(response: response)
                     let decodedObject = try self.decodeData(data: data, type: T.self)
@@ -293,19 +400,19 @@ extension NetworkManager {
             completion(.failure(error as? NetworkError ?? .invalidResponse))
         }
     }
-    
+
     private func downloadFile(from url: URL, completion: @escaping (Result<URL, NetworkError>) -> Void) {
         urlSession.downloadTask(with: url) { localURL, response, error in
             if let error = error {
                 completion(.failure(.requestFailed(error)))
                 return
             }
-            
+
             guard let localURL = localURL else {
                 completion(.failure(.dataNotFound))
                 return
             }
-            
+
             do {
                 try self.processResponse(response: response)
                 completion(.success(localURL))
@@ -319,7 +426,18 @@ extension NetworkManager {
 
 설명:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 완료 핸들러를 사용하여 perform 메소드:
 
@@ -333,7 +451,18 @@ extension NetworkManager {
 - 오류를 처리하고 응답 유효성을 확인합니다.
 - 다운로드된 파일의 로컬 URL로 완료 핸들러를 호출합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 5: 이미지 다운로드 및 캐싱
 
@@ -346,7 +475,7 @@ extension NetworkManager {
             if cacheEnabled, let cachedImage = try getCachedImage(for: url) {
                 return .success(cachedImage)
             }
-            
+
             let localURL = try await NetworkManager.shared.downloadFile(from: url)
             let imageData = try Data(contentsOf: localURL)
             if let image = UIImage(data: imageData) {
@@ -361,13 +490,13 @@ extension NetworkManager {
             return .failure(error as? NetworkError ?? .invalidResponse)
         }
     }
-    
+
     private func cacheImage(_ imageData: Data, for url: URL) {
         let cachedResponse = CachedURLResponse(response: HTTPURLResponse(url: url, statusCode: 200, httpVersion: nil, headerFields: nil)!, data: imageData)
         URLCache.shared.storeCachedResponse(cachedResponse, for: URLRequest(url: url))
         checkAndClearCache()
     }
-    
+
     private func checkAndClearCache() {
         let cacheSize = URLCache.shared.currentDiskUsage
         let cacheLimit: Int = 100 * 1024 * 1024 // 100 MB
@@ -375,7 +504,7 @@ extension NetworkManager {
             URLCache.shared.removeAllCachedResponses()
         }
     }
-    
+
     private func getCachedImage(for url: URL) throws -> UIImage? {
         if let cachedResponse = URLCache.shared.cachedResponse(for: URLRequest(url: url)),
            let image = UIImage(data: cachedResponse.data) {
@@ -388,10 +517,20 @@ extension NetworkManager {
 
 설명:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 친절한 톤으로 번역한 내용입니다.
-
 
 downloadImage 메서드: URL에서 이미지를 다운로드하며 선택적으로 캐싱합니다.
 
@@ -404,8 +543,18 @@ cacheImage 메서드: 이미지를 캐시에 저장합니다.
 
 loadImageFromCache 메서드: 캐시에서 이미지를 로드합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 예시 사용법
 
@@ -439,7 +588,7 @@ struct ExampleData: Decodable {
 
 func fetchExampleData() async {
     let request = ExampleAPIRequest()
-    
+
     if #available(iOS 15.0, *) {
         do {
             let data: ExampleData = try await NetworkManager.shared.perform(request, decodeTo: ExampleData.self)
@@ -462,7 +611,18 @@ func fetchExampleData() async {
 
 설명:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `ExampleAPIRequest Struct`: 네트워크 요청을 나타내며 `NetworkRequest` 프로토콜을 준수하는 구조체입니다.
 
@@ -472,10 +632,20 @@ func fetchExampleData() async {
 
 `ExampleData Struct`: `Decodable`을 준수하는 응답 데이터를 나타내는 구조체입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `table` 태그를 Markdown 형식으로 변경해주세요.
-
 
 fetchExampleData 함수: async/await를 활용하여 요청을 수행하고 응답을 처리하는 방법을 보여줍니다.
 
@@ -486,7 +656,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var image: UIImage? = nil
-    
+
     var body: some View {
         VStack {
             if let image = image {
@@ -522,8 +692,18 @@ struct HomeView_Previews: PreviewProvider {
 
 설명:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HomeView Struct는 URL에서 다운로드된 이미지를 표시하는 SwiftUI 뷰입니다.
 
@@ -539,7 +719,7 @@ import Foundation
 
 func downloadExampleFile() async {
     let fileURL = URL(string: "https://example.com/file.zip")!
-    
+
     if #available(iOS 15.0, *) {
         do {
             let localURL = try await NetworkManager.shared.downloadFile(from: fileURL)
@@ -560,7 +740,18 @@ func downloadExampleFile() async {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설명:
 
@@ -570,6 +761,17 @@ downloadExampleFile 함수: async/await를 사용하여 파일을 다운로드�
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 네트워크 계층이 구현되면 iOS 애플리케이션이 API 요청을 처리하고 응답을 처리하며 파일 다운로드를 관리하는 데 더 잘 준비될 것입니다. 이 구조화된 접근 방식은 코드베이스를 더 깔끔하게 만들 뿐만 아니라 유지 보수가 용이하고 확장성이 뛰어난 장점을 제공합니다.

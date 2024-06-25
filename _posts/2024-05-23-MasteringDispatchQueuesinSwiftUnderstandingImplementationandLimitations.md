@@ -3,13 +3,12 @@ title: "마스터링 디스패치 큐Dispatch Queues in Swift 이해, 구현, �
 description: ""
 coverImage: "/assets/img/2024-05-23-MasteringDispatchQueuesinSwiftUnderstandingImplementationandLimitations_0.png"
 date: 2024-05-23 13:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-MasteringDispatchQueuesinSwiftUnderstandingImplementationandLimitations_0.png
 tag: Tech
 originalTitle: "Mastering Dispatch Queues in Swift: Understanding, Implementation, and Limitations"
 link: "https://medium.com/@vinodh_36508/mastering-dispatch-queues-in-swift-understanding-implementation-and-limitations-4ed37916fe8a"
 ---
-
 
 ![Image](/assets/img/2024-05-23-MasteringDispatchQueuesinSwiftUnderstandingImplementationandLimitations_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@vinodh_36508/mastering-dispatch-queues-in-swift-under
 
 디스패치 큐를 하나의 작업 라인으로 생각해보세요. 이렇게 생성할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 let queue = DispatchQueue(label: "my.queue")
@@ -35,7 +45,18 @@ queue.async {
 
 # 디스패치 큐 유형
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 시리얼 큐
 
@@ -53,7 +74,18 @@ serialQueue.async {
 
 ## 병렬 큐
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한편, 동시 큐는 작업들이 동시에 실행되도록 허용합니다. 이는 여러 차로로 이어진 고속도로와 같이 작동하여 차(작업)들이 나란히 이동할 수 있도록 합니다. 이와 같이 동시 큐를 만들 수 있습니다:
 
@@ -71,7 +103,18 @@ concurrentQueue.async {
 
 Dispatch 큐는 작업의 지연된 실행을 가능하게 합니다. 특정 시간 이후에 작업을 시작할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 let delayedQueue = DispatchQueue(label: "delayed.queue")
@@ -95,7 +138,18 @@ let highPriorityTask = DispatchWorkItem {
 highPriorityQueue.async(execute: highPriorityTask)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 작업 취소
 
@@ -119,7 +173,18 @@ DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
 
 ## 데이터 공유
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디스패치 큐는 큐에 사용자 정의 데이터를 연결하는 DispatchSpecificKey를 제공하여 동일한 컨텍스트에서 실행되는 작업들 간에 데이터 공유를 허용합니다.
 
@@ -136,7 +201,18 @@ if let retrievedId = DispatchQueue.getSpecific(key: specificKey) {
 
 # 큐 타겟팅과 디테일 이해하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 특정 사항 설정 및 액세스
 
@@ -156,7 +232,18 @@ queue1.async {
 
 ## 새로운 대기열에서 특정 사항을 잃는 경우
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기존 큐 내에서 새 큐를 생성하더라도 자동으로 세부사항을 상속받지 않습니다:
 
@@ -175,7 +262,18 @@ queue1.async {
 
 지정은 새 큐에서 특정 정보 손실 문제를 해결합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 let queue2 = DispatchQueue(label: "queue2", target: queue1)
@@ -206,7 +304,18 @@ func response(for request: URLRequest, queue: DispatchQueue) -> HTTPURLResponse 
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 특정 사항 상속 유지
 
@@ -218,7 +327,18 @@ response(for: .init(url: .init(string: "https://www.testurl.com")!), queue: queu
 
 ## 대기열 생성 최적화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한개의 동시 서버 대기열을 만들고 새 대기열을 이 속성을 상속하도록 타깃팅하여 최적화하세요:
 
@@ -236,7 +356,18 @@ queue.async {
 
 Swift의 디스패치 대기열은 스레드와 작업 대기열의 강점을 결합하여 비동기 작업, 우선순위 관리, 취소 및 특정 데이터 저장을 제공합니다. 그러나 아직도 주의를 요하는 일부 도전이 존재합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 특정 상속을 위한 큐 전달
 
@@ -248,21 +379,43 @@ response(for: .init(url: .init(string: "https://www.testurl.com")!), queue: requ
 
 이 접근 방식은 계층별로 데이터를 전달하지 않고 실행 컨텍스트 전체에서 매끄럽게 데이터를 공유하는 목표에 모순됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 취소 및 스레드 관리 상속
-디스패치 큐 사이에 구체적인 사항을 상속할 수는 있지만, 하나의 작업 항목의 취소는 자식 작업 항목으로 전파되지 않습니다. 제대로 처리되지 않을 경우에는 여전히 스레드가 증가할 수 있으며, 이는 잠재적으로 리소스 문제로 이어질 수 있습니다.
+   디스패치 큐 사이에 구체적인 사항을 상속할 수는 있지만, 하나의 작업 항목의 취소는 자식 작업 항목으로 전파되지 않습니다. 제대로 처리되지 않을 경우에는 여전히 스레드가 증가할 수 있으며, 이는 잠재적으로 리소스 문제로 이어질 수 있습니다.
 
 3. 큐 굶주림과 강렬한 작업
-단일 작업 단위를 위해 많은 큐를 생성하거나 CPU 집약적 작업을 단일 큐에서 실행하는 것은 스레드 굶주림으로 이어질 수 있습니다. 디스패치 큐는 작업 항목간 협력을 위한 도구가 부족하여 CPU 이용률을 공정하게 제어하는 데 어려움을 겪습니다.
+   단일 작업 단위를 위해 많은 큐를 생성하거나 CPU 집약적 작업을 단일 큐에서 실행하는 것은 스레드 굶주림으로 이어질 수 있습니다. 디스패치 큐는 작업 항목간 협력을 위한 도구가 부족하여 CPU 이용률을 공정하게 제어하는 데 어려움을 겪습니다.
 
 4. 협력적인 동시 코드 부재
-GCD는 강력하지만, 협력적인 동시 코드를 작성하기 위한 기능이 부족합니다. 작업 항목은 휴식 시간에 다른 리소스를 활용할 수 있게 허용하지 않으면 CPU 시간을 경쟁하게 됩니다.
+   GCD는 강력하지만, 협력적인 동시 코드를 작성하기 위한 기능이 부족합니다. 작업 항목은 휴식 시간에 다른 리소스를 활용할 수 있게 허용하지 않으면 CPU 시간을 경쟁하게 됩니다.
 
 5. 데이터 레이스 완화
-GCD는 데이터 레이스를 방지하기 위한 바리어 같은 동기화 도구를 제공하나, 명시적 처리가 필요하며 전통적인 NSLock 같은 잠금과 비교해 속도가 느릴 수 있습니다.
+   GCD는 데이터 레이스를 방지하기 위한 바리어 같은 동기화 도구를 제공하나, 명시적 처리가 필요하며 전통적인 NSLock 같은 잠금과 비교해 속도가 느릴 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Summary
 
@@ -272,7 +425,18 @@ GCD는 데이터 레이스를 방지하기 위한 바리어 같은 동기화 도
 
 # Series Navigation
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 제1부: 스위프트에서 쓰레드 탐구
 - 제2부: 스위프트의 Operation Queues 탐구: 한계와 함께 쓰레딩 향상

@@ -3,13 +3,12 @@ title: "Kotlin 코루틴 핵심요소 알아야 할 모든 것"
 description: ""
 coverImage: "/assets/img/2024-05-18-KotlinCoroutineEssentialsEverythingyouneedtoknow_0.png"
 date: 2024-05-18 15:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-KotlinCoroutineEssentialsEverythingyouneedtoknow_0.png
 tag: Tech
 originalTitle: "Kotlin Coroutine Essentials: Everything you need to know"
 link: "https://medium.com/proandroiddev/kotlin-coroutine-essentials-everything-you-need-to-know-c8a98fb6cda5"
 ---
-
 
 <img src="/assets/img/2024-05-18-KotlinCoroutineEssentialsEverythingyouneedtoknow_0.png" />
 
@@ -21,7 +20,18 @@ link: "https://medium.com/proandroiddev/kotlin-coroutine-essentials-everything-y
 
 이미 코루틴이 무엇이고 어디에 어떻게 사용하는지 알고 있다고 가정하고 있습니다. 아직 익숙하지 않다면 이 글을 읽어보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우선, 잘 알려진 Coroutine 빌더를 사용하여 우리의 코루틴을 만들어 보겠습니다:
 
@@ -48,7 +58,18 @@ fun main() {
 //코루틴이 완료되었습니다
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 비동기:
 
@@ -80,7 +101,18 @@ fun main() {
 
 # CoroutineScope:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것을 코루틴의 어머니로 생각해보세요. CoroutineScope는 생성 중인 모든 코루틴을 추적하며, 마치 어머니가 자녀를 돌보는 것과 같습니다.
 
@@ -90,7 +122,18 @@ fun main() {
 
 CoroutineScope를 생성할 때는 생성자의 매개변수로 CoroutineContext를 사용합니다. 다음 코드로 새로운 scope 및 코루틴을 생성할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 // Job과 Dispatcher는 CoroutineContext로 결합되어 CoroutineContext에 대해 곧 논의할 것입니다.
@@ -104,10 +147,20 @@ val job = scope.launch {
 
 코루틴 내에서 Job 인스턴스는 코루틴 자체를 나타냅니다. Job은 코루틴에 대한 핸들입니다. launch 또는 async로 생성하는 각 코루틴에 대해 고유하게 식별되고 라이프사이클을 관리하는 Job 인스턴스가 반환됩니다.
 
-Job은 일련의 상태를 거칠 수 있습니다: New, Active, Completing, Completed, Cancelling 및 Cancelled. 우리는 상태 자체에는 액세스할 수 없지만, Job의 속성에 액세스할 수 있습니다: isActive, isCancelled 및 isCompleted. 
+Job은 일련의 상태를 거칠 수 있습니다: New, Active, Completing, Completed, Cancelling 및 Cancelled. 우리는 상태 자체에는 액세스할 수 없지만, Job의 속성에 액세스할 수 있습니다: isActive, isCancelled 및 isCompleted.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업/Coroutine의 상태:
 
@@ -120,7 +173,18 @@ Job은 일련의 상태를 거칠 수 있습니다: New, Active, Completing, Com
 - SupervisorJob: 자식 coroutines을 위한 부모 작업으로 사용되는 작업 유형입니다. 일반 작업과 달리 자식 coroutine의 실패 또는 취소가 부모 및 다른 자식에게 전파되지 않습니다. 작업 트리의 특정 가지에서 실패를 격리하고 싶을 때 유용합니다.
 - CompletableJob: 명시적으로 complete() 함수를 사용하여 완료할 수 있는 작업 유형입니다. 사용자 정의 구현이나 작업의 라이프사이클을 처리하는 사용자 정의 방법을 만들고 싶을 때 자주 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # CoroutineContext:
 
@@ -133,7 +197,18 @@ CoroutineContext은 코루틴 실행의 컨텍스트를 나타내는 인터페�
 - CoroutineName — 코루틴의 이름으로 디버깅에 유용합니다.
 - CoroutineExceptionHandler — 처리되지 않은 예외를 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Coroutine은 새 작업 및 부모로부터 상속된 다른 것들의 CoroutineContext입니다.
 
@@ -151,8 +226,18 @@ val job = scope.launch {
 
 해당 계층의 루트는 일반적으로 CoroutineScope입니다. 이 계층 구조를 다음과 같이 시각화할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Kotlin Coroutine Essentials](/assets/img/2024-05-18-KotlinCoroutineEssentialsEverythingyouneedtoknow_2.png)
 
@@ -161,9 +246,19 @@ val job = scope.launch {
 # 부모 CoroutineContext:
 
 작업 계층 구조에서 각 코루틴은 CoroutineScope 또는 다른 코루틴이 될 수 있는 부모를 가지고 있습니다. 그러나 코루틴의 결과 CoroutineContext는 부모의 CoroutineContext와 다를 수 있습니다. 왜냐하면 이 공식에 따라 계산되기 때문입니다:
-  
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위와 같이 표현됩니다:
 
@@ -175,8 +270,18 @@ val job = scope.launch {
 
 예시: (Dispatchers.Main, "name") + (Dispatchers.IO) = (Dispatchers.IO, "name")
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Coroutine Context](/assets/img/2024-05-18-KotlinCoroutineEssentialsEverythingyouneedtoknow_3.png)
 
@@ -186,8 +291,18 @@ val job = scope.launch {
 
 위 이미지에 표시된 CoroutineScope를 사용하여 위와 같이 새 코루틴을 생성하면:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val job = scope.launch(Dispatchers.IO) {
@@ -201,7 +316,18 @@ val job = scope.launch(Dispatchers.IO) {
 
 CoroutineContext 안의 Job과 부모 컨텍스트는 항상 동일한 인스턴스가 아니며, 새로운 Coroutine이 항상 새로운 Job 인스턴스를 가져오게 됩니다. (새로운 Job은 녹색이고 부모 Job은 빨강색입니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `Dispatchers.IO`가 스코프의 `CoroutineDispatcher`를 덮어씌워서, 결과적으로 부모 CoroutineContext에는 Dispatchers.IO가 포함되어 있습니다.
 

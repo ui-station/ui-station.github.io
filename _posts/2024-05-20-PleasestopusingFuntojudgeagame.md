@@ -3,13 +3,12 @@ title: "제발, 게임을 평가할 때 재미있는이라는 단어를 그만 �
 description: ""
 coverImage: "/assets/img/2024-05-20-PleasestopusingFuntojudgeagame_0.png"
 date: 2024-05-20 16:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-PleasestopusingFuntojudgeagame_0.png
 tag: Tech
 originalTitle: "Please stop using “Fun” to judge a game."
 link: "https://medium.com/@BitBandit/please-stop-using-fun-to-judge-a-game-cbb936cee748"
 ---
-
 
 게임은 “즐거운” 것이 될 수 있지만, 게임의 가치를 측정하는 유일한 방법은 아닙니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@BitBandit/please-stop-using-fun-to-judge-a-game-cbb93
 
 하지만 일반 게이머에게 물을 때, 대개 돌아오는 말은 “즐거움”이라는 단어입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 항상 이 단어에 문제가 있었습니다. 이것은 완전히 주관적인 모호한 용어가 아니라 게임이 상호작용하는 예술 형태로서의 잠재력에 대한 깊은 토론을 완전히 배제하는 것입니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@BitBandit/please-stop-using-fun-to-judge-a-game-cbb93
 
 ![이미지](/assets/img/2024-05-20-PleasestopusingFuntojudgeagame_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어쨌든, Scott는 자신의 책에 "왜 '즐거움'을 싫어하는지"라는 섹션이 있다. Scott는 "즐거움"이 너무 모호하고 주관적인 용어로 유용하지 않다고 주장하며, 제작 과정에서 그것을 달성하는 것은 어려운 작업이라고 말합니다. Scott는 게임 개발자들이 게임을 한 번 또 한 번, 또 한 번 해야만 모든 부분이 완벽한지 확인해야 한다고 이어집니다.
 
@@ -39,7 +60,18 @@ Scott는 여전히 게임은 "즐거워"야 한다고 주장하지만, "즐거�
 
 철학적인 문제를 논의해 봅시다. 공포 게임을 즐기면 좋은 공포 게임인가요? 보통, 공포 게임은 플레이어를 압도하고 끊임없이 불안하게 만드는 것이 목적입니다. 플레이어가 "즐거움"을 느낀다면, 그것은 게임의 공포 분위기에 흠뻑 빠져들기가 매우 어려워지는 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어쩌면 스토리가 중심인 게임을 살펴보자. 여기서 The Last of Us Part 2의 초기 스포일러가 포함되어 있습니다. The Last of Us: Part 2는 이전 게임의 주인공 Joel Miller가 끔찍한 방식으로 죽음을 맞이하는 초기 스토리 장면으로 인해 많은 팬들을 괴롭히는 논란이 일었어요. 이것은 "즐거운" 경험이 아니지만 그 의도는 그렇지 않았어요. 분노, 역겨움, 공포를 느끼게 하려는 거예요.
 
@@ -47,7 +79,18 @@ Scott는 여전히 게임은 "즐거워"야 한다고 주장하지만, "즐거�
 
 때로는 "즐거움"의 완전 반대가 되는 게임들도 있어요. 이미 두 게임에 대해 깊게 다뤘지만 다시 한 번 언급해보려고 해요. 특히 나에게 Kane & Lynch 2: Dog Days와 같은 게임은 가능한 한 불쾌하게 설계되었어요. 특히, Kane & Lynch 2는 진짜처럼 처리하기 어려운 총격전을 하나 뒤에 하나 거치게 하며, 정신없이 느껴지는 무기와 만회할 가치 없는 캐릭터, 그리고 엉망인 결말이 있어요. Cruelty Squad는 플레이어에게 접근하기 어렵게 설계되었고, 계속해서 뭔가를 망치고 있다고 느끼게 해요. 게임의 컨트롤은 고의로 형편없으며, 시각적으로 사이키텔릭하고 혼란스럽게 만들어졌어요. 이 게임들은 예술의 작품이며, 그래서 나에게는 "즐거움"을 유일한 판단 기준으로 사용하는 것이 상호 조작 매체에 대한 큰 불친절을 의미한다고 생각해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![](/assets/img/2024-05-20-PleasestopusingFuntojudgeagame_3.png)
 
@@ -57,8 +100,18 @@ Scott는 여전히 게임은 "즐거워"야 한다고 주장하지만, "즐거�
 
 둠: 에터널은 악마를 죽이는 것, 지옥을 세우는 악당이 된 느낌을 주도록 설계되어, 적들을 향한 무분별한 파괴 행위를 장려합니다. 레지던트 이블 4는 적대적인 환경에서 생존하려고 하면서 긴장하고 긴장하게 만들도록 설계되었습니다. 로보캅: 로그 시티는 당신이 로보캅이 되는 느낌을 주도록 설계되었습니다! 이러한 게임을 "재미"를 중심으로 설계하면, 디자이너가 만들고자 했던 취지를 달성하기가 훨씬 어려울 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-05-20-PleasestopusingFuntojudgeagame_4](/assets/img/2024-05-20-PleasestopusingFuntojudgeagame_4.png)
 
@@ -68,9 +121,18 @@ Scott는 여전히 게임은 "즐거워"야 한다고 주장하지만, "즐거�
 
 그럼에도 불구하고, 게임이 "즐거움"이나 "매료되는 정도"로 넘어가는 제대로 된 분석을 받을 자격이 있다고 생각합니다. 가능한 한 빨리 우리가 상호작용 경험으로서 게임이 제공하는 존경을 보다 많은 사람들에게 제공할수록, 그들이 인간 문화에 자리 잡을 수 있는 독특한 경험을 제공하기 위해 노력할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "재밌다" 카운터: 23.
 

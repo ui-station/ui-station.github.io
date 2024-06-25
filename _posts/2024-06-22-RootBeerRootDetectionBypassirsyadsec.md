@@ -3,14 +3,12 @@ title: "RootBeer 루트 감지 우회 방법  irsyadsec"
 description: ""
 coverImage: "/assets/img/2024-06-22-RootBeerRootDetectionBypassirsyadsec_0.png"
 date: 2024-06-22 22:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-RootBeerRootDetectionBypassirsyadsec_0.png
 tag: Tech
 originalTitle: "RootBeer Root Detection Bypass | irsyadsec"
 link: "https://medium.com/@irsyadsec/rootbeer-root-detection-bypass-irsyadsec-8f183b67c6f0"
 ---
-
-
 
 ![RootBeer](/assets/img/2024-06-22-RootBeerRootDetectionBypassirsyadsec_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@irsyadsec/rootbeer-root-detection-bypass-irsyadsec-8f
 
 # RootBeer 라이브러리 우회 단계별 안내
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. 환경 설정
 
@@ -33,7 +41,18 @@ link: "https://medium.com/@irsyadsec/rootbeer-root-detection-bypass-irsyadsec-8f
 
 ## 2. 장치 준비
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Frida 릴리스 페이지에서 기기 아키텍처에 맞는 적절한 Frida Server 이진 파일을 다운로드하세요.
 
@@ -45,7 +64,18 @@ adb devices -l
 
 <img src="/assets/img/2024-06-22-RootBeerRootDetectionBypassirsyadsec_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 adb root
@@ -59,7 +89,18 @@ ADB를 사용하여 바이너리를 장치로 푸시합니다:
 adb push frida-server-16.0.10-android-x86_64 /data/local/tmp
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파일에 대한 권한을 주십시오.
 
@@ -73,7 +114,18 @@ chmod +x frida-server-16.0.10-android-x86_64
 
 프리다 서버를 시작하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ./frida-server-16.0.10-android-x86_64 -D
@@ -85,7 +137,18 @@ chmod +x frida-server-16.0.10-android-x86_64
 
 여기서는 GitHub에서 이미 사용 가능한 exploit 파일을 사용하여 가장 빠른 방법을 사용할 것입니다. Pich4ya의 exploit을 사용하고 있으며, 해당 사이트에서 다운로드할 수 있습니다. 그에게 큰 박수를 보내요👏👏👏👏
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미지 태그를 Markdown 형식으로 변경하세요.
 
@@ -96,10 +159,21 @@ chmod +x frida-server-16.0.10-android-x86_64
 애플리케이션 패키지 이름을 찾습니다.
 
 ```js
-frida-ps -Uai
+frida - ps - Uai;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-22-RootBeerRootDetectionBypassirsyadsec_6.png" />
 
@@ -111,7 +185,18 @@ Rootbeer 샘플 애플리케이션을 사용 중이기 때문에 패키지 이�
 frida -l root.js -U -f com.example.app --pause
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 엔터를 누른 후 다시 타이핑하세요
 
@@ -123,7 +208,18 @@ frida -l root.js -U -f com.example.app --pause
 
 그리고 Voilaaaa 당신의 apk가 이미 우회됐어야 합니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <표>를 마크다운 형식으로 변경해보세요.
 

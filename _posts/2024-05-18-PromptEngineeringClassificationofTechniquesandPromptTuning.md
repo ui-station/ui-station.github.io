@@ -3,13 +3,12 @@ title: "프롬프트 엔지니어링 기술 분류 및 프롬프트 튜닝"
 description: ""
 coverImage: "/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_0.png"
 date: 2024-05-18 20:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_0.png
 tag: Tech
 originalTitle: "Prompt Engineering: Classification of Techniques and Prompt Tuning"
 link: "https://medium.com/the-modern-scientist/prompt-engineering-classification-of-techniques-and-prompt-tuning-6d4247b9b64c"
 ---
-
 
 <img src="/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/the-modern-scientist/prompt-engineering-classification
 
 많은 연구 노력에도 불구하고, 대형 언어 모델은 여전히 일부 문제에 직면하고 있습니다. 그들의 주요 함정은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 자료 인용. LLMs는 외부 자원을 참조한 것처럼 신뢰성 있는 콘텐츠를 생성할 수 있지만, 인터넷에 접속할 수 없기 때문에 자료를 인용할 수 없다는 것을 기억하는 것이 중요합니다.
 - 편향. LLMs는 답변에서 편견을 드러낼 수 있으며 종종 편견적이거나 선입견 있는 콘텐츠를 생성할 수 있습니다.
@@ -33,11 +43,33 @@ link: "https://medium.com/the-modern-scientist/prompt-engineering-classification
 
 구체적인 기술에 대해 논의하기 전에, 명확하고 구체적인 지침을 작성하는 데 도움이 되는 프롬프트의 공통 규칙에 대해 이야기해 봅시다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 알기로는 표를 마크다운 형식으로 변경해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 단일 프롬프트 기술은 하나의 프롬프트에 대한 응답을 최적화하는 것을 목표로 합니다.
 - 다음은 몇 가지 프롬프트를 결합하는 기술입니다. 이들은 공통적으로 작업을 해결하기 위해 모델(또는 모델)을 몇 번 쿼리하는 개념에 있습니다.
@@ -49,7 +81,18 @@ link: "https://medium.com/the-modern-scientist/prompt-engineering-classification
 
 어떤 기술들이 단일 프롬프트에서 작업을 해결하기 위해 사용되나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 제로 샷,
 - 퓨 샷,
@@ -62,8 +105,18 @@ link: "https://medium.com/the-modern-scientist/prompt-engineering-classification
 
 자연어 지시를 사용하는 가장 간단한 기술입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_4.png)
 
@@ -73,8 +126,18 @@ LLMs are extremely good at one-shot learning but they still may fail at complica
 
 ![Image 2](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_5.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Min 등(2022) 논문에서는 데모의 레이블이 잘못되었을 때 분류 및 다중 선택 과제의 성능에 거의 영향을 미치지 않음을 보여줍니다. 대신, 데모가 레이블 공간의 몇 가지 예, 입력 테스트의 분포 및 순서의 전반적인 형식을 제공하는 것이 중요합니다.
 
@@ -84,7 +147,18 @@ Chain-of-Thought 프롬프팅은 중간 추론 단계를 통해 복잡한 추론
 
 ![이미지](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CoT은 제로샷 또는 퓨샷 러닝과 함께 사용됩니다. 제로샷 CoT의 아이디어는 모델이 해결책에 이르기 위해 단계별로 생각하도록 제안하는 것입니다. 이 접근법의 저자들(Kojima et al. (2022))은 산술, 기호 및 기타 논리 추론 작업에서 제로샷 LLM의 성능을 크게 능가하는 것을 입증했습니다.
 
@@ -94,8 +168,18 @@ CoT은 제로샷 또는 퓨샷 러닝과 함께 사용됩니다. 제로샷 CoT�
 
 프로그램을 지원하는 언어 모델은 코드로 자연어 설명을 확장하는 것으로 Chain-of-Thought 프롬프팅을 확장하는 접근법입니다(Gao et al. (2022)).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_7.png)
 
@@ -105,8 +189,18 @@ The technique can be implemented using LangChain PALChain class.
 
 The next group of prompts is based on different strategies of combining prompts of one or a few of models:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 투표. 정확한 답변을 얻기 위해 투표를 적용하는 아이디어입니다. 기술: 자기일관성.
 - 분할정복. 이 그룹의 프롬프트는 복잡한 작업을 몇 가지 프롬프트로 분할하는 것에 기반합니다. 기술: 방향성 자극, 지식 생성, 프롬프트 연결, 테이블 연결 및 Least-to-Most 프롬프팅.
@@ -118,7 +212,18 @@ The next group of prompts is based on different strategies of combining prompts 
 
 ![이미지](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 같은 Chain-of-Thought 프롬프트를 여러 번 수행하여 다양한 추론 경로를 생성한 후 투표를 통해 가장 일관된 답변을 선택합니다.
 
@@ -128,7 +233,18 @@ Wang et al. (2022)에서는 산술 및 상식 작업에 대한 자기 일관성 
 
 ## Directional Stimulus Prompting (DSP)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 컨셉은 "Divide and Conquer"입니다. DSP에서는 두 단계가 있습니다: 자극(예: 키워드)을 생성하고 그들을 사용하여 응답의 품질을 개선합니다.
 
@@ -139,15 +255,37 @@ Wang et al. (2022)에서는 산술 및 상식 작업에 대한 자기 일관성 
 
 ![이미지](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-정책 모델은 지도 학습을 통해 라벨이 지정된 데이터를 사용하여 최적화하고, LLM의 출력을 기반으로 오프라인 또는 온라인 보상을 받아 강화 학습을 통해 미세 조정할 수 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+정책 모델은 지도 학습을 통해 라벨이 지정된 데이터를 사용하여 최적화하고, LLM의 출력을 기반으로 오프라인 또는 온라인 보상을 받아 강화 학습을 통해 미세 조정할 수 있습니다.
 
 생성된 지식 프롬프팅 (GK)
 
 "분할 정복" 개념 하에 다음 프롬프팅 기술인 생성된 지식은 Liu 등(2022)에서 제안되었습니다. 이 아이디어는 별도의 프롬프트를 사용하여 먼저 지식을 생성한 다음 더 나은 응답을 얻기 위해 사용하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 생성된 지식 유도에는 두 단계가 포함됩니다:
 
@@ -158,8 +296,18 @@ Wang et al. (2022)에서는 산술 및 상식 작업에 대한 자기 일관성 
 
 본 방법은 지식 통합에 대한 작업 특정 감독이나 구조화된 지식베이스에 대한 접근이 필요하지 않지만, 대규모, 최신 기술 모델의 성능을 개선시킵니다. 공감 추리 작업에서 더 나은 성과를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_13.png)
 
@@ -169,8 +317,18 @@ Prompt chaining is a simple yet powerful technique in which you should split you
 
 ![Image 2](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_14.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프롬프트 체이닝은 상세한 프롬프트로 인해 LLM이 처리하기 어려워하는 복잡한 작업을 수행하는 데 유용합니다. 또한 LLM 애플리케이션의 투명성을 높이고, 제어 가능성과 신뢰성을 증가시킬 수 있습니다.
 
@@ -180,8 +338,18 @@ Prompt chaining is a simple yet powerful technique in which you should split you
 
 최소에서 최대 프롬핑은 모델이 작업을 하위 문제로 나누는 방법을 결정해야 하는 단계를 추가하여 조금 더 진보합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Zhou et al. (2022) - Experimental Results](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_16.png)
 
@@ -189,8 +357,18 @@ Zhou et al. (2022)의 실험 결과에 따르면, least-to-most prompting은 sym
 
 ![Chain-of-Table Prompting](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_17.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최근 연구에서 (Wang et al. (2024))는 새로운 접근 방식을 제안했습니다. 여기서는 표 형식 데이터가 중간 생각의 대리인으로 추론 체인에서 명시적으로 사용됩니다.
 
@@ -201,8 +379,18 @@ Zhou et al. (2022)의 실험 결과에 따르면, least-to-most prompting은 sym
 - LLM이 입력 쿼리 및 이전 작업 이력 (작업 체인)을 기반으로 작업 풀에서 다음 운영을 샘플링하는 동적 계획,
 - 인수 생성은 이전 단계에서 선택된 작업에 대해 인수를 생성하는 과정을 포함합니다 (예: 새로운 열 이름). 이를 위해 LLM을 사용하고 프로그래밍 언어를 적용하여 작업을 실행하고 해당 중간 테이블을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_19.png)
 
@@ -212,8 +400,18 @@ Tree of Thoughts (ToT)
 
 Tree of Thoughts generalizes over the Chain-of-Thought approach allowing the model to explore multiple reasoning steps and self-evaluate choices.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ToT 기법을 실행하려면 네 가지 질문에 대해 결정해야 합니다:
 
@@ -226,7 +424,18 @@ ToT 기법을 실행하려면 네 가지 질문에 대해 결정해야 합니다
 
 입력 프롬프트는 문제를 해결하기 위한 중간 단계의 설명과 샘플된 생각 또는 그들의 생성 방법에 대한 지침이 포함되어야 합니다. 상태 평가자 프롬프트는 다음 단계에 대한 선택할 프롬프트에 대한 지침을 제공해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_21.png)
 
@@ -236,8 +445,18 @@ Yao et al. (2023)의 실험에서는 ToT가 복잡한 계획이나 탐색을 필
 
 반성은 언어 에이전트를 언어적 피드백을 통해 강화하는 프레임워크입니다. 반성 에이전트는 작업 피드백 신호에 대해 언어적으로 반성한 후, 자신의 반성적 텍스트를 에피소딕 메모리 버퍼에 유지하여 후속 시행에서 더 나은 의사 결정을 유도합니다(Shinn et al. (2023)).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_22.png)
 
@@ -249,9 +468,18 @@ Reflexion 프레임워크는 세 가지 독립적인 모델로 구성되어 있�
 
 ![이미지](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_23.png)
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Reflexion은 순차적인 의사 결정, 코딩, 언어 추론이 필요한 작업에서 잘 수행됩니다.
 
@@ -261,7 +489,18 @@ Reflexion은 순차적인 의사 결정, 코딩, 언어 추론이 필요한 작�
 
 이 섹션에서 두 가지 접근 방식, 즉 Retrieval Augmented Generation과 ReAct를 다룰 예정입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 검색 증진 생성 (RAG)
 
@@ -272,12 +511,33 @@ RAG는 정보 검색 구성 요소와 텍스트 생성 모델을 결합합니다
 
 대부분의 경우 RAG-시퀀스 방식이 사용됩니다. 이는 k개의 문서를 검색하여 사용자 쿼리에 답변하는 모든 출력 토큰을 생성하는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크다운 형식에서 테이블 태그를 변경하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ReAct
 
@@ -287,7 +547,18 @@ ReAct
 
 ReAct 프레임워크는 사용 가능한 도구(예: 검색 엔진, 계산기, SQL 에이전트) 중 하나를 선택하고 적용하여 결과를 분석하여 다음 동작을 결정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_27.png" />
 
@@ -297,7 +568,18 @@ Langchain 도구를 사용한 ReAct 구현 예시를 확인해보세요.
 
 # Prompt Tuning and Evaluation
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프롬프트 엔지니어링 기술의 선택은 LLM의 응용 및 사용 가능한 리소스에 크게 의존합니다. 프롬프트를 실험해 본 적이 있다면, 대형 언어 모델은 인간이 생성한 프롬프트의 작은 변화에 민감하며 최적이 아니거나 주관적일 수 있다는 것을 알고 있을 것입니다.
 
@@ -307,8 +589,18 @@ Langchain 도구를 사용한 ReAct 구현 예시를 확인해보세요.
 
 프롬프트를 테스트하기 위한 메트릭은 응용 프로그램에 크게 의존할 것이지만, 여기에는 몇 가지 가이드라인이 있습니다(Data Science Summit 2023):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-05-18-PromptEngineeringClassificationofTechniquesandPromptTuning_29.png)
 
@@ -318,8 +610,18 @@ Langchain 도구를 사용한 ReAct 구현 예시를 확인해보세요.
 
 2. Retrieval — for RAG and ReAct pipelines mainly but can be applied to generated knowledge and directional stimulus prompting:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 정밀도 — 검색된 문서가 얼마나 관련 있는지,
 - 재현율 — 모든 관련 문서가 검색되었는지.
@@ -333,7 +635,18 @@ Langchain 도구를 사용한 ReAct 구현 예시를 확인해보세요.
 
 4. 비기능적:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 답변의 스타일과 어조,
 - 편향성의 부재,
@@ -346,6 +659,17 @@ Langchain 도구를 사용한 ReAct 구현 예시를 확인해보세요.
 
 모든 기술을 다 다루지는 못했다고 주장하지는 않습니다. 기술이 너무 많아 곧 누군가가 전체 교과서를 출판할 것이기 때문입니다. 그러나 만약 당신이 이것을 읽어오셨다면, 모든 기술의 개념들이 상당히 흔하고 직관적임을 알게 되었을 것입니다. 나는 좋은 프롬프트를 작성하는 모든 규칙을 작은 목록으로 요약할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞서까지 함께 해주셔서 감사합니다! 앞으로도 즐겁게 프롬프팅하세요!

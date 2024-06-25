@@ -18,7 +18,18 @@ ESP32는 Espressif Systems에서 만들고 개발한 마이크로컨트롤러입
 
 # 요구 사항.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ESP32 DEVKIT V1 보드
 
@@ -28,7 +39,18 @@ Arduino IDE
 
 ![이미지](/assets/img/2024-05-23-ESP32Built-inLEDBlinking_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 PC/Laptop
 
@@ -38,7 +60,18 @@ Micro USB to USB cable
 
 ![Micro USB to USB cable image](/assets/img/2024-05-23-ESP32Built-inLEDBlinking_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계
 
@@ -48,7 +81,18 @@ Micro USB to USB cable
 
 단계 2: Micro USB에서 USB 케이블을 사용하여 ESP32 보드를 컴퓨터에 연결합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-ESP32Built-inLEDBlinking_5.png)
 
@@ -58,8 +102,18 @@ Micro USB to USB cable
 
 단계 4: Tools`Port에서 /dev/cu.SLAB_USBtoUART로 포트 구성 변경.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Step 5: Click Verify to compile the project.](/assets/img/2024-05-23-ESP32Built-inLEDBlinking_7.png)
 
@@ -67,8 +121,18 @@ Micro USB to USB cable
 
 ![Image 2:](/assets/img/2024-05-23-ESP32Built-inLEDBlinking_9.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 단계 6: ESP32에서 코드를 실행하려면 업로드를 클릭하세요.
 
@@ -78,7 +142,18 @@ Micro USB to USB cable
 
 ![이미지](https://miro.medium.com/v2/resize:fit:736/1*vZwPRq3B-OKM5kZGDdDSXg.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7단계: 내장 LED는 1초 간격으로 깜박입니다.
 

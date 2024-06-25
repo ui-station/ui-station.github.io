@@ -3,13 +3,12 @@ title: "애자일 방법론의 실패률이 268 높다고요"
 description: ""
 coverImage: "/assets/img/2024-06-19-268HigherFailureRatesforAgileRight_0.png"
 date: 2024-06-19 11:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-268HigherFailureRatesforAgileRight_0.png
 tag: Tech
 originalTitle: "268% Higher Failure Rates for Agile, Right?"
 link: "https://medium.com/@drpicox/268-higher-failure-rates-for-agile-right-dc879d9d82ae"
 ---
-
 
 이 기사의 동기는 다음 글에서 비롯되었습니다:
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@drpicox/268-higher-failure-rates-for-agile-right-dc87
 
 먼저 알아야 할 사실은, 이 기사가 사실상 책 'Impact Engineering'의 홍보 자료라는 것입니다. 이것은 주황색 깃발이 될 수 있지만, 이는 내용을 자동으로 차단하지는 않습니다. 이 책이 홍보하는 방법론 개발 과정에서 준아데 알리가 중요한 발견을 했을 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 실제로, 이전에 본 적이 있어서 일부로 관심을 끌었던 것이 있었습니다:
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@drpicox/268-higher-failure-rates-for-agile-right-dc87
 
 # 메트릭
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 '영향 엔지니어링'이 어떻게 작동하는지에 대한 명확한 설명이 없지만, 지표들은 주로 집중해야 할 방향을 제시하는 것으로 보입니다:
 
@@ -43,7 +64,18 @@ link: "https://medium.com/@drpicox/268-higher-failure-rates-for-agile-right-dc87
 
 # 실패
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 지표는 실패 비율을 측정하며, 이곳에 핵심 질문이 있습니다: 실패가 어떻게 정의되는가?
 
@@ -53,7 +85,18 @@ link: "https://medium.com/@drpicox/268-higher-failure-rates-for-agile-right-dc87
 
 이에 대해 몇 가지 의문이 듭니다. 이 연구에서 새로운 정보에 적응하지 못하는 것을 실패로 간주합니다. 이게 어떤 뜻인가요? 제품을 전달하기 전에 모든 것을 예측할 수 있다고 가정하는 건가요? 모든 것을 자세히 예측하는 비용이 초기 프로토타입을 만들고 테스트하는 비용보다 낮다고 가정하는 건가요? 그렇다면 시장 조사는 대안들보다 더 저렴하고 정확한가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 내용을 보면 저자가 새로운 사실이 발견될 때 적응하지 못하는 능력을 긍정적인 특성으로 측정하는 것인지 궁금해집니다. 또는 저자의 비유를 따라, 금연 실패를 측정하는 것일까요? — 금연을 하지 못하기 때문에, 이 사실을 인정하고 최고의 흡연자가 되기 위해 최선을 다해야 합니다.
 
@@ -63,7 +106,18 @@ link: "https://medium.com/@drpicox/268-higher-failure-rates-for-agile-right-dc87
 
 비교적 다른 결과를 보여주며 훨씬 튼튼한 기초를 갖춘 두 가지 다른 연구가 있습니다. 그 중 하나는 훌륭한 방법론을 갖추고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가장 잘 알려진 보고서 중 하나는 Standish Group의 CHAOS 보고서입니다. 이 보고서는 1만 건 이상의 소프트웨어 프로젝트(프로젝트, 소프트웨어 엔지니어가 아닌)를 기반으로 하며, 작은 프로젝트에서 애자일이 50% 이상의 성공률을 보여줍니다. 사실, 자세히 보면 프로젝트의 크기가 가장 중요한 요소임을 알 수 있습니다. 프로젝트가 클수록 실패 가능성이 높아집니다. 따라서, 애자일이 프로젝트를 작은 단위로 나누어 서로 연계되는 작은 결과물을 만드는 아이디어는 훨씬 더 나은 결과를 제공합니다. CHAOS 보고서 2015를 참조하세요.
 
@@ -73,7 +127,18 @@ link: "https://medium.com/@drpicox/268-higher-failure-rates-for-agile-right-dc87
 
 "충격 공학" 저자의 방식으로, 기사를 시작할 때 우리는 습관을 바꿀 수 없다는 접근을 제안합니다. 이는 체중 감량이나 흡연을 그만두는 것이 어렵듯이, 폭포수 방법론을 따르는 본능을 버리는 것도 똑같이 어렵다는 것을 시사하는 것 같습니다. 이 경우에는 제안된 폭포수 개념을 다시 검토하는 것이 합리적입니다. 우리는 현실적이어야 하며, 변화할 의지가 없거나 의지가 부족하다면, 그것을 받아들이고 우리 자신에게 적응하는 것이 더 나을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 다른 접근 방식이 있습니다.
 
@@ -83,6 +148,17 @@ link: "https://medium.com/@drpicox/268-higher-failure-rates-for-agile-right-dc87
 
 환경을 변경하고 그 효과에 대해 거의 1년 전에 다른 이야기에서 썼습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 감사합니다. 보통 소프트웨어 엔지니어링을 이해하고 적용하는 방법에 대해 생각하면서 이야기를 쓰는 것을 좋아해요. 무엇을 개선할 수 있는지 고민하게 만들기도 해요. 만약 기사가 마음에 드셨다면 박수를 치거나 댓글을 남겨주세요. 더 많은 통찰과 토론을 위해 제 매체에서 가장 성공적인 이야기들을 둘러보세요.

@@ -18,7 +18,18 @@ link: "https://medium.com/gitconnected/the-2fa-app-that-tells-you-when-you-get-0
 
 요즘에는 이제 모든 보통 사람들이 성장하고 직장을 찾은 지금, 옛날의 마법에 제일 가까이 올 수 있는 것은 이중 인증 코드뿐입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신이 알고 있으면 좋아요.
 
@@ -28,7 +39,18 @@ link: "https://medium.com/gitconnected/the-2fa-app-that-tells-you-when-you-get-0
 
 이 MFA 코드들은 매 30초마다 갱신되는 공통 알고리즘을 사용해요. 우리가 6자리 인증 코드에서 가능한 더블, 트리플, 쿼드, 퀸텀플, 섹스텀플 중에 매우 일부만을 경험하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 독립 프로젝트들처럼, 내 주변에 하나의 명확한 비전이 있었으며 그 주위에 구축할 수 있었습니다:
 
@@ -38,7 +60,18 @@ link: "https://medium.com/gitconnected/the-2fa-app-that-tells-you-when-you-get-0
 
 이게 작동하는지 알아야 하는 움직이는 부품은 많이 필요하지 않아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 2FA 비밀 키를 입력해주세요.
 - 로컬에서 6자리 2FA 코드를 생성합니다.
@@ -53,7 +86,18 @@ link: "https://medium.com/gitconnected/the-2fa-app-that-tells-you-when-you-get-0
 - 더 많은 숫자 패턴을 구현합니다.
 - 사용자가 알고 싶은 패턴을 선택할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내가 뭔가를 알고 있었다는 걸 알았어: 내가 이걸 설명한 사람들의 90%는 나를 멍청이로 생각했어. 나머지 10%는 순수한 창의성만을 보았어.
 
@@ -63,7 +107,18 @@ link: "https://medium.com/gitconnected/the-2fa-app-that-tells-you-when-you-get-0
 
 ## TOTP
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 TOTP 또는 시간 기반 일회용 비밀번호는 놀랍도록 간단한 개념입니다. 이는 두 가지 입력을 사용하는 인증 프로세스입니다:
 
@@ -94,7 +149,18 @@ func otpCode(date: Date = Date()) -> String {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 텍스트를 친근한 분위기로 한국어로 번역하면 다음과 같습니다.
 
@@ -106,7 +172,18 @@ func otpCode(date: Date = Date()) -> String {
 
 ![이미지](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_3.png)"
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 2단계 인증의 기본적인 부분이 작동 중이니, 컨셉 증명 퍼즐의 마지막 조각인 알림 생성을 구현할 수 있습니다.
 
@@ -116,7 +193,18 @@ func otpCode(date: Date = Date()) -> String {
 
 실제로 2단계 인증 생성과 같은 백그라운드 프로세스를 영원히 실행할 수 없으며, 반드시 사용자 비밀을 백엔드 푸시 서버에 저장할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러므로 이 개념이 작동하도록하려면 약간 교묘해야합니다: 앞으로 2FA 코드를 미리 계산하고, 그들이 실제로 출현하는 시간에 전달을 예약해야합니다.
 
@@ -127,7 +215,18 @@ func otpCode(date: Date = Date()) -> String {
 
 이제 POC가 작동하는 방법을 알았으니, 빌드를 시작합시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 첫 번째 GETs 찾기
 
@@ -137,7 +236,18 @@ func otpCode(date: Date = Date()) -> String {
 
 제 아주 간단한 SwiftUI 뷰는 UICollectionView를 백업으로 사용하여 성능이 훌륭하도록 보장하기 위해 이러한 코드를 편리하게 표시할 수 있습니다 (ScrollView의 기본 VStack은 10,000개의 항목 이전에 멀쩡히 오작동하기 시작할 것입니다!).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 // ContentView.swift
@@ -170,7 +280,18 @@ struct ContentView: View {
 
 이제, 세 자리 숫자가 연속으로 나타나는 TOTP(예: 120333)를 확인하는 간단한 정규 표현식 평가기를 추가할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 extension String {
@@ -189,7 +310,18 @@ Text($0)
 
 에쟈! 그 여행을 확인하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_5.png" />
 
@@ -199,7 +331,18 @@ Text($0)
 
 ## 전혀 소용없지만 재미있는 관찰
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 부주의한 ForEach 구현으로 인해 다음 경고 메시지가 발생했습니다:
 
@@ -212,7 +355,18 @@ times within the collection, this will give undefined results!
 
 <img src="/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_7.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 10,000개의 OTP를 생성했기 때문에, 여러 개가 일치할 가능성이 매우 높습니다. 이는 생일 문제와 같은 원리이며, 가능한 일치 쌍의 수는 백만 이상이 됩니다.
 
@@ -222,7 +376,18 @@ times within the collection, this will give undefined results!
 
 여기서 중요한 점은 미리 계산하여 미래를 예측하는 것입니다: TOTP는 비밀과 날짜 입력의 결정적 해시이기 때문에, 우리는 미래의 오랜 일련의 날짜를 입력하여 특정 시간에 어떤 OTP 코드를 볼 수 있는지 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 코드와 날짜를 반환하도록 OTP 생성 방식을 조정해보겠습니다:
 
@@ -263,7 +428,18 @@ func interestingCodes() -> [OTP] {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 M1이 해싱 함수를 실행하는 동안 몇 번의 숫자 계산 후, 약 30초 동안 진행된 결과물은 몇몇 굉장히 확인 가능한 GET들로 이어졌어요.
 
@@ -273,7 +449,18 @@ func interestingCodes() -> [OTP] {
 
 좋은 숫자를 볼 수 있어서 재미있긴 하지만, 만약 실제로 GETs를 실생활에서 진짜 인증을 위해 사용할 수 없다면, 이 앱 개념은 그냥 무작위 번호 생성기와 다를게 없죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 흥미로운 숫자가 도착하는 시점을 알게 되었으니, 번호를 실시간으로 받을 수 있도록 푸시 알림을 대기열에 넣고 있어요:
 
@@ -299,7 +486,18 @@ private func createNotification(for otp: OTP) {
 
 ![이미지](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 통지가 실제로 나타나는 번호와 일치한다는 것을 확인하니, 더욱 흥미로워졌어요!
 
@@ -309,7 +507,18 @@ private func createNotification(for otp: OTP) {
 
 ## 흥미로움
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 종류의 흥미로운 숫자를 결정하려면 흥미로움의 개념을 소개해야 합니다. 이는 반복되는 숫자, 연속하는 숫자, 수학적으로 흥미로운 숫자(예: 파이 또는 e), 회문을 포함할 수 있습니다.
 
@@ -340,7 +549,18 @@ private func createNotification(for otp: OTP) {
         // ...
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 checkThose 메소드는 다른 정규식을 래핑하며, 우리는 가장 중요한 순서대로 실행합니다. 예를 들어, 섹스튜플은 쿼드보다 100배 더 드물다.
 
@@ -352,7 +572,18 @@ private func createNotification(for otp: OTP) {
 
 몇 일 동안 앱을 사용해보려고 쉬는 시간을 가질 것입니다. 내 손에 멋진 앱을 만들 수 있을 것 같다고 예상하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 최소 기능 제품 구축
 
@@ -365,7 +596,18 @@ private func createNotification(for otp: OTP) {
 - 사용자가 중요하게 여기는 번호 설정하기
 - 더 많은 종류의 재미있는 기능 구현하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 기능적이 아닌 요구 사항: 매우 느린 코드 생성을 최적화하는 작업을 해야 합니다. 배치 처리 또는 로컬 지속성을 활용할 수도 있을 것 같아요.
 
@@ -375,8 +617,18 @@ private func createNotification(for otp: OTP) {
 
 UX는 멋지고 간단하게 유지합시다: 주로 푸시 알림에 기능이 집중되어 있으며 매우 완벽해요. 이 말은 QR 스캐너와 설정을 툴바 버튼 뒤에 숨기고, 모달 플로우가 표시되도록 하는 것을 의미해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Scanning 2FA Secrets](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_11.png)
 
@@ -386,8 +638,18 @@ A couple of open-source libraries will save me a ton of time on cookie-cutter ta
 
 ![Scanning 2FA Secrets](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_12.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 스캐너 라이브러리는 카메라 접근을 사용하여 QR 코드를 쉽게 구문 분석할 수 있는 URL로 변환합니다. 아래와 같은 형식으로 변환됩니다:
 
@@ -399,7 +661,18 @@ otpauth://totp/Google%3Atest%40gmail.com?secret=bv7exx7sltbcqffec1qyxscueydwsu5h
 
 <img src="/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_13.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 선호하는 숫자 선택하기
 
@@ -409,7 +682,18 @@ SwiftUI @AppStorage를 사용하여 List 및 몇 가지 Toggles와 함께 사용
 
 나는 onDisappear에서 부모 뷰에게 다시 숫자 처리를 시작하고 알림을 다시 예약하라고 알리기 위해 클로저를 사용했습니다. 이것은 토글이 변경될 때마다 비싼 계산을 실행하는 대신 모든 것을 일괄 처리하는 가장 간단한 방법이었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 // CodeView.swift
@@ -430,10 +714,20 @@ var body: some View {
 
 몇 가지 다른 2FA 앱을 다운로드해서 아이디어를 베낄 만한 것이 있는지 살펴보기로 결정했어요. 사실, 꽤 혼잡하고 경쟁력 있는 앱 시장을 기대했는데, 이 중 일부는 정말 형편없었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변환:
-
 
 ![이미지1](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_15.png)
 
@@ -443,8 +737,18 @@ var body: some View {
 
 ![이미지2](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_16.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 여러 개의 2FA 계정
 
@@ -454,7 +758,18 @@ var body: some View {
 
 ![QR 코드 이미지](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_17.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 적절한 내장 목록 기능을 구현하여 이제 우리가 더 이상 필요하지 않은 코드를 삭제할 수 있습니다.
 
@@ -465,7 +780,18 @@ var body: some View {
 - iCloud와 동기화하지 않았던 점
 - 키패인 밖에 계정을 지속하려고 한 점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저, iCloud에 대한 키체인을 동기화하면 계정이 다른 모든 Apple 기기에 나타납니다. Keychain Access 라이브러리를 사용하면 쉽게 할 수 있어요:
 
@@ -479,7 +805,18 @@ self.keychain = Keychain().synchronizable(true);
 
 이것은 다른 장치에서 나의 계정을 가져올 수 없었다는 것을 의미해요 — 비밀만으로는 쓸모가 없어요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서 전 Account 객체 전체를 키체인에 저장해야 한다는 것을 깨달았어요.
 
@@ -504,7 +841,18 @@ private func createAccount(from urlString: String) -> Account? {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반 코딩 작업을 많이 하여 UI를 개선하고 코드를 잘 리팩토링하는 작업을 했어요. 그런데 개발 과정에서 흥미로운 것들도 몇 가지 있었답니다.
 
@@ -514,7 +862,18 @@ private func createAccount(from urlString: String) -> Account? {
 
 다행히도, 웹 사이트에서 FavIcon을 검색하고 여러 해상도로 다운로드할 수 있는 Google API가 있답니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웹사이트를 어떻게 디자인하면 좋을지 고민 중이군요. QR 코드의 발행자 속성을 사용하여 .com 도메인을 시도하는 방법으로 좋은 결과를 얻었다고 하셨군요.
 
@@ -535,7 +894,18 @@ struct FavIcon {
 
 ![이미지](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_18.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 배경 제거를 처리하고 아이콘을 좀 더 돋보이게 만들기 위해 Metal 셰이더를 추가했어요.
 
@@ -568,7 +938,18 @@ struct EraseBackgroundShader: ViewModifier {
 
 그리고 물론 MSL 셰이더 코드도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```cpp
 #include <metal_stdlib>
@@ -596,9 +977,18 @@ half4 eraseBackground(
 
 난 지나치게 엔지니어링을 시작했어. 이것에 핀을 꽂아 놓고 나중에 다시 생각해 봐요.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## UI 디자인 개선
 
@@ -606,11 +996,20 @@ half4 eraseBackground(
 
 대부분의 사람들을 앞선 존재가 되기 위해서는, 극도로 공격적인 유료 벽을 두지 않으면 되는구나 ($4.99 매주? 정말?!)
 
-일부 기본 소프트웨어 개발 작업을 통해 타이밍, 기본 UI 및 데이터 저장 작업을 수행한 후, 이제는 정말로 아주 잘 작동하고 있습니다. - 기본 SwiftUI 구성 요소를 사용하는 것은 작업이 "그냥 작동"되도록하는 빛나는 방법입니다*.
+일부 기본 소프트웨어 개발 작업을 통해 타이밍, 기본 UI 및 데이터 저장 작업을 수행한 후, 이제는 정말로 아주 잘 작동하고 있습니다. - 기본 SwiftUI 구성 요소를 사용하는 것은 작업이 "그냥 작동"되도록하는 빛나는 방법입니다\*.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*TUkFn9ejk93WczTL02Jlrg.gif)
 
@@ -649,7 +1048,18 @@ private var code: some View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_20.png" />
 
@@ -666,7 +1076,18 @@ private var code: some View {
 - 012210과 같은 회문
 - 121212와 123123과 같은 반복된 이차, 삼차 수열
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 Markdown 형식으로 표 태그를 변경한 코드입니다.
 
@@ -700,7 +1121,18 @@ func checkThoseHunderedThousands() -> Bool {
 
 이제 설정 UI를 업데이트하여 흔함, 드물음, 초 희귀함으로 정렬하거나 반복, 상수, 순서 또는 라운드 숫자와 같은 유형으로 정렬할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `<img src="/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_21.png" />`
 
@@ -710,7 +1142,18 @@ func checkThoseHunderedThousands() -> Bool {
 
 30초에 1백만 개의 조합을 곱하고 가능한 시퀀스인 6으로 나누면, 각 계정당 평균적으로 완벽한 카운팅 시퀀스가 발생할 수 있다는 것은 약 5백만 초마다 발생할 수 있다는 것을 의미합니다 — 평균적으로 58일마다 한 번씩입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 정도라니, 정말 희귀한 것이죠.
 
@@ -720,7 +1163,18 @@ func checkThoseHunderedThousands() -> Bool {
 
 이 중 일부인 쿼드와 같은 일련 번호들은 조금 더 많은 계산이 필요한데, 그래서 수천만 개의 OTP(일회용 비밀번호)를 생성하고 각 흥미로운 종류별로 발생 빈도를 세어 상대적 빈도를 감을 수 있게 했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 성능 향상
 
@@ -730,7 +1184,18 @@ func checkThoseHunderedThousands() -> Bool {
 
 오래된 친구인 Combine 프레임워크는 깔끔한 해결책을 제공해줍니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 // CodeGenerator.swift
@@ -779,11 +1244,18 @@ private func handleOTPComputation() {
 
 이제 일정이 시퀀스대로 아니라 하나의 큰 덩어리로 나오지 않고 꽤 부드럽게 작동합니다!
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
-
-
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Scheduled repeatedTwos: 292929 @ 2024-02-25 23:33:30 +0000
 Scheduled repeatedTwos: 878787 @ 2024-02-26 06:03:30 +0000
@@ -795,16 +1267,24 @@ Scheduled boltzmannConstant: 141023 @ 2024-04-19 02:05:00 +0000
 Scheduled counting: 012345 @ 2024-04-20 04:51:30 +0000
 Scheduled planksConstant: 661034 @ 2024-04-20 05:38:00
 
-
-
 ## 앱 아이콘
 
 이 거래 그냥 사라지고 싶었어요. 앱 아이콘에 진짜로 체크하려면 이제 목멸에 달렸거든요. 정말 완벽해요.
 
 ![image](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_22.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 제 친구가 Lionsgate Films의 친구들이 조금 소송을 제기할 수도 있다고 지적했습니다.
 
@@ -812,19 +1292,50 @@ Scheduled planksConstant: 661034 @ 2024-04-20 05:38:00
 
 어쨌든 희망이 있다면:
 
-
 ![이미지](/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_23.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그냥 개인정보를 꼭 보호하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 달리(DALL-E)는 정말 손등을 그리는 걸 좋아하지 않았어요. 저는 노력해 봤지만요.
 
@@ -834,7 +1345,18 @@ Scheduled planksConstant: 661034 @ 2024-04-20 05:38:00
 
 첫 릴리스를 만들기 전에 V1에서 구현할 수 있는 새로운 기능과 버그 수정 사항들을 목록으로 만들었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // 높은 우선순위 -
@@ -863,7 +1385,18 @@ Scheduled planksConstant: 661034 @ 2024-04-20 05:38:00
 
 이 부분은 원본 개념 증명에서 식별한 문제에 도움이 됩니다: 사용자들이 알림과 상호 작용하도록 유도하여 앱에 재진입하도록 해야합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컬렉션 뷰를 만드는 것은 조금 까다로울 수 있어요. 왜냐하면 몇 가지 부분을 고려해야 되거든요:
 
@@ -880,7 +1413,18 @@ Scheduled planksConstant: 661034 @ 2024-04-20 05:38:00
 content.userInfo = ["deepLink": "checkem://\(otp.code)"]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 약간 거슬리지만, 알림을 처리하기 위해 AppDelegate를 만들어야 했어요 — SwiftUI는 아직 완전히 자체적으로 이를 다루지 못합니다.
 
@@ -918,7 +1462,18 @@ func storeCollectionItem(code: String) throws {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 빠르게 출시하기 위한 욕망의 결과인 것이지, 신중하게 고려된 엔지니어링 결정의 결과는 아닙니다. 사용자가 Keychain 항목 당 4kB의 소프트 제한에 가까워지는 경우 후회할 수 있는 결정이었습니다(하드 제한은 대략 16MB 이므로 괜찮을 것 같아요!).
 
@@ -928,7 +1483,18 @@ func storeCollectionItem(code: String) throws {
 
 원래는 사용자가 알림을 탭할 때까지 컬렉션을 숨겼었는데, 사용자가 '모두 수집하기'에 도전하도록 하는 것이 더 매력적이라고 깨달았어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-The2FAappthattellsyouwhenyouget012345_28.png" />
 
@@ -938,7 +1504,18 @@ iOS 17 sensoryFeedback API를 사용하면 매우 섬세한 진동을 재생할 
 
 기존 새로고침 코드에 정말 가혹한 부작용을 추가했어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 // CodeView.swift
@@ -957,7 +1534,18 @@ iOS 17 sensoryFeedback API를 사용하면 매우 섬세한 진동을 재생할 
 
 CachedAsyncImage 라이브러리에서 FavIcons가 존재하지 않음에도 불구하고 열심히 로딩되는 버그가 있습니다. 이로 인해 희미한 지구 모양이 나타납니다... 하지만 이대로 릴리스할 것 같습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 경우 90% 정도는 잘 작동하며, 제가 개발한 Third-party SwiftUI 라이브러리 중 하나를 바꾸는 대신 배포하는 게 더 좋을 것 같아요.
 
@@ -967,7 +1555,18 @@ CachedAsyncImage 라이브러리에서 FavIcons가 존재하지 않음에도 불
 
 배포 전에 나머지 버그들 중 일부는 더 주의 깊게 살펴보았지만, 이 문제는 특히 나쁩니다. 누군가가 QR 코드를 두 번 스캔하면 동일한 계정의 이상한 중복이 발생할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // TODO: - 버그 - 뷰 모델 계정에서 스캔된 중복을 무시하도록 해주세요 - 이미 있는 경우 계정에 스캔을 추가하지 마세요
@@ -986,7 +1585,18 @@ func create(account: Account, url: URL) throws {
 
 2FA 계정을 이름을 기준으로 하는 키체인이기 때문에, 이 수정은 매우 합리적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 코드가 로드되지 않음
 
@@ -998,7 +1608,18 @@ func create(account: Account, url: URL) throws {
 
 알고 보니 @AppStorage가 실제로 작동하는 방식을 잘못 이해했던 것 같아요 — 기본값은 실제로 사용자 기본 설정에 저장하는 대신 UI에만 적용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 // SettingsView.swift
@@ -1028,8 +1649,18 @@ struct CheckEmApp: App {
 
 ## TipKit
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 iOS 17 TipKit를 사용하여 조금 더 개선했어요. 사용자가 앱을 처음 로드할 때 무엇을 해야 하는지 간단히 이해할 수 있게 도와주는 기능이 추가되었답니다.
 
@@ -1048,7 +1679,18 @@ private var tips: some View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 상점 상품 목록
 
@@ -1058,7 +1700,18 @@ private var tips: some View {
 
 AppScreens를 통해 상점 상품 목록을 설정 중이에요. 저희의 캣츠가 등장하는 Check 'em의 진정한 힘을 보여주는 두 번째 스크린샷을 확인해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ---
 
@@ -1070,7 +1723,18 @@ AppScreens를 통해 상점 상품 목록을 설정 중이에요. 저희의 캣�
 
 알겠어요, 제가 세계에서 가장 자유주의자적인 사람은 아니지만, 시장을 1% 증가시키기 위해 여러 가지 번거로움을 겪는 건 싫어요. 좀 더 나은 방법이 있지 않을까요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 (내 프랑스 독자 여러분 죄송해요)
 
@@ -1080,7 +1744,18 @@ AppScreens를 통해 상점 상품 목록을 설정 중이에요. 저희의 캣�
 
 저의 여정을 따라 읽어주셔서 감사합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트는 정말 재미있었어요! 패턴을 찾는 것을 좋아하는 내 내재적인 IT 열정을 만졌을 뿐만 아니라, 멋진 처리, 스레딩, 최적화 문제를 다루어 볼 수 있었어요!
 

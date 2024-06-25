@@ -3,13 +3,12 @@ title: "GPT-4, 아직 실망스러워"
 description: ""
 coverImage: "/assets/img/2024-05-18-GPT-4ostilldisappointing_0.png"
 date: 2024-05-18 19:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-GPT-4ostilldisappointing_0.png
 tag: Tech
 originalTitle: "GPT-4o, still disappointing"
 link: "https://medium.com/@billynewport/gpt-4o-still-disappointing-70c95849a24c"
 ---
-
 
 응, 정말 잘 보여주지만 $20을 내고 시도해봤는데 20분 후에 취소했어요. 클로드 오퍼스를 계속 사용할 거에요. 왜냐하면요?
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@billynewport/gpt-4o-still-disappointing-70c95849a24c"
 
 새로운 채팅을 만들어서 문서에 관한 질문을 했는데, 아무것도 몰랐어요. 그러다가 기억을 살펴보니 그냥 표시된 문장들의 모음이었어요. 그 순간 실망이 시작됐어요. "그게 다야?" 하고 스스로 말했죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 1M 컨텍스트 토큰 길이와 무한-어텐션을 가진 이 모델을 원합니다. 스냅샷에서 지속되어야 합니다. 저는 자전적을 업로드한 후에 프로젝트 및 사용 중인 메뉴얼 등을 모두 업로드할 수 있기를 원합니다. 그리고 질문할 때 이를 모두 활용하고 싶습니다.
 

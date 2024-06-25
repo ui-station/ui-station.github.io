@@ -3,13 +3,12 @@ title: "하위 도메인 탈취 기술 마스터하기"
 description: ""
 coverImage: "/assets/img/2024-05-18-MasteringSubdomainTakeovers_0.png"
 date: 2024-05-18 20:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-MasteringSubdomainTakeovers_0.png
 tag: Tech
 originalTitle: "Mastering Subdomain Takeovers"
 link: "https://medium.com/@tanishqshahsays/mastering-subdomain-takeovers-c9a531fe5d3b"
 ---
-
 
 여기 저는 서브도메인 탈취를 통해 바운티를 받은 방법을 설명할게요 -
 
@@ -20,7 +19,18 @@ link: "https://medium.com/@tanishqshahsays/mastering-subdomain-takeovers-c9a531f
 
 바운티를 받는 방법 -
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **단계 1:** 먼저 대상 도메인을 선택하고 잠재적인 서브도메인을 식별하는 프로세스를 시작하세요. Subfinder와 같은 도구를 사용하여 ' -sc 404 ' 플래그와 결합하여 소유되지 않은 서브도메인을 정확하게 파악하세요. 잠재적인 인수 시 필수적인 것입니다. 실행할 초기 명령은 다음과 같습니다:
 
@@ -34,8 +44,18 @@ subfinder -d example.com | httpx -sc 404 | tee list.txt
 dig mail.example.com
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![MasteringSubdomainTakeovers](/assets/img/2024-05-18-MasteringSubdomainTakeovers_0.png)
 
@@ -47,7 +67,18 @@ dig mail.example.com
 nuclei -l subdomain_results.txt -t <nuclei_template_path> -o results.txt
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Nuclei Template1, Nuclei Template2
 
@@ -57,14 +88,36 @@ Nuclei Template1, Nuclei Template2
 
 ![이미지](/assets/img/2024-05-18-MasteringSubdomainTakeovers_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보고서를 제출하는 것이 버그 바운티 프로그램에 중요하다는 것을 명심해주세요. 그래서 올바른 용어를 알아 사용하여 좋은 바운티를 받을 기회를 극대화하는 것이 중요합니다.
 
 - 요청하지 않은 s3 버킷들 —
-"NoSuchBuckets"와 같은 메시지가 표시되는 하위 도메인을 찾으면 큰 성과입니다. AWS에 로그인한 후 동일한 이름의 버킷을 생성하고 동일한 지역에 있는지 확인하세요. "공개 액세스 차단" 옵션을 선택 해제하는 것을 잊지 마세요. 그런 다음 버킷을 요청하고 HTML 파일을 업로드하여 표시할 수 있습니다.
+  "NoSuchBuckets"와 같은 메시지가 표시되는 하위 도메인을 찾으면 큰 성과입니다. AWS에 로그인한 후 동일한 이름의 버킷을 생성하고 동일한 지역에 있는지 확인하세요. "공개 액세스 차단" 옵션을 선택 해제하는 것을 잊지 마세요. 그런 다음 버킷을 요청하고 HTML 파일을 업로드하여 표시할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Azure — CNAME이 “.cloudapp.net” 또는 “.azurewebsites.net”로 끝난다면 취약합니다. Microsoft Azure로 이동하여 로그인하세요.
 
@@ -74,7 +127,18 @@ Case I — .cloudapp.net
 
 단계 2: 메뉴에서 “Cloud Services (classic)”를 선택합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **단계 3:** "추가" 버튼을 클릭하여 새 클라우드 서비스를 생성합니다.
 
@@ -84,7 +148,18 @@ Case I — .cloudapp.net
 
 ![이미지](/assets/img/2024-05-18-MasteringSubdomainTakeovers_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Case II — .azurewebsites.net
 
@@ -94,7 +169,18 @@ Case II — .azurewebsites.net
 
 단계 3: "새 웹 앱 만들기"를 클릭합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 단계 4: 필요한 세부 정보를 제공하세요. 이름, 구독, 리소스 그룹 및 지역을 입력해주세요. 교체하려는 경우 기존 이름과 일치하도록 합니다.
 
@@ -104,7 +190,18 @@ Case II — .azurewebsites.net
 
 ### 단계 7: 배포 패키지를 업로드하거나 연결한 후 배포 프로세스를 시작하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-18-MasteringSubdomainTakeovers_5.png)
 

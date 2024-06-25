@@ -18,7 +18,18 @@ link: "https://medium.com/@meriemiag/reduce-aws-costs-by-stopping-idle-ec2-insta
 
 이 글에서는 이 해결책을 여러분과 공유하려 합니다. CloudWatch 경보를 소개하는 것부터 시작하여 비활성 EC2 인스턴스를 자동으로 중지하기 위해 AWS 관리 콘솔 및 Terraform을 사용하여 경보를 구성하는 단계별 안내서를 제공할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Cloudwatch Alarm
 
@@ -28,7 +39,18 @@ CloudWatch 알람은 단일 메트릭의 값(단일 또는 복합)을 지정한 
 
 CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보안 카메라로 상상해보세요. 이 카메라의 역할은 문의 상태를 추적하는 것입니다. 문이 열려 있는지 닫혀 있는지를 확인합니다. 카메라가 문이 너무 오래 열려 있는 등 이상한 상황을 감지하면 알림을 트리거하여 경고합니다. 마찬가지로, CloudWatch 알람은 CPU 사용량과 같은 AWS 리소스의 특정 메트릭을 모니터링합니다. 메트릭이 미리 정의된 임계값을 초과하면(문이 너무 오래 열려 있는 것처럼) 알람이 트리거되어 문제를 알리고 조치를 취할 수 있도록 알려줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # CloudWatch 알람의 주요 구성 요소
 
@@ -44,7 +66,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 각 CloudWatch 알람의 구성 요소의 역할과 시간 경과에 따른 알람 상태 평가를 설명하는 예시를 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알람 예제는 EC2 인스턴스의 평균 CPU 사용률을 모니터링하도록 설정되어 있습니다. CPUUtilization 메트릭은 5분 간격으로 수집되고 집계됩니다. 알람은 연속적으로 3개의 기간 동안의 평균 CPU 사용률을 평가합니다. 평균 CPU 사용률이 최소 2개의 평가 기간 중에서 70%의 임계값을 초과하면 알람이 정의된 작업을 트리거합니다.
 
@@ -58,7 +91,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 아래 표는 알람이 시간이 지남에 따라 어떻게 트리거되는지 보여줍니다 :
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예에서는 평균 CPU 이용률이 70% 임계 값을 기간 3에서 초과하지만 알람이 트리거되지 않습니다. 이는 임계 값을 3 개의 평가 기간 중 1 회만 초과하기 때문입니다 (65-60-70).평균 CPU 이용률이 70% 임계 값을 다시 초과하는 시점은 기간 5로, 이는 평가 기간에서 2 번째 초과입니다 (70-60-75). 따라서 알람이 트리거되고 ALARM 상태로 들어갑니다.
 
@@ -68,7 +112,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 나는 비활성 인스턴스를 감지하는 데 사용할 메트릭으로 CPUUtilization을 선택했습니다. 이 메트릭은 기본적으로 5분마다 수집되며 CloudWatch로 전송됩니다. 알람은 1시간 동안 (5분씩 12회) CPU 이용률이 2% 미만으로 유지된 경우에만 트리거됩니다. 알람에 의해 트리거된 작업은 인스턴스 중지 및 이메일 통지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 메트릭: CPUUtilization
 - 통계: 평균
@@ -85,8 +140,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 모니터링해야 하는 인스턴스의 CPUUtilization 메트릭을 선택한 후 경보 조건을 지정하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![AWS Cost Reduction Step 2](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_2.png)
 
@@ -96,8 +161,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 ![AWS Cost Reduction Step 5](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_5.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 2. 작업 구성
 
@@ -107,7 +182,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 ![AWS 비용 절감 이미지](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_7.png)
 
@@ -117,7 +203,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 ![이미지](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 4. 미리보기 및 생성
 
@@ -127,7 +224,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 <img src="/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_9.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알람은 새로 생성되었을 때이거나 지정된 기준을 바탕으로 알람 상태를 결정하기에 충분한 데이터가 없을 때 상태가 "데이터 부족"으로 표시될 수 있습니다.
 
@@ -137,8 +245,18 @@ CloudWatch 알람을 이해할 때, 필로우스트림을 모니터링하는 보
 
 구독을 확인한 후에 알람이 지정된 메트릭에 도달하면 아래 스크린샷과 같은 결과를 얻어야 합니다. 모든 것이 잘 작동합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![CloudWatch Alarm Screenshot 1](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_11.png)
 
@@ -148,8 +266,18 @@ CloudWatch 알람이 올바르게 설정되어 있고 조건을 충족하면 작
 
 ![CloudWatch Alarm Screenshot 3](/assets/img/2024-05-27-ReduceAWSCostsbyStoppingIdleEC2InstanceswithCloudWatchAlarms_13.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테라폼을 사용한 솔루션
 
@@ -190,7 +318,18 @@ resource "aws_sns_topic_subscription" "topic_email_subscription" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 리소스가 생성된 후에는, 생성된 SNS 주제의 구독을 확인해야 합니다. 받은 이메일 안내에 따라 (콘솔 솔루션에서 설명한 대로) 구독을 확인해주세요.
 

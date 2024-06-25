@@ -3,13 +3,12 @@ title: "요구사항 및 API 분석하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-RequirementsAPIAnalysis_0.png"
 date: 2024-06-22 23:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-RequirementsAPIAnalysis_0.png
 tag: Tech
 originalTitle: "Requirements , API: Analysis"
 link: "https://medium.com/analysts-corner/requirements-api-analysis-df62b5808fa2"
 ---
-
 
 이전 장: https://medium.com/analysts-corner/requirements-api-definitions-3f75a7308ae6
 
@@ -19,7 +18,18 @@ link: "https://medium.com/analysts-corner/requirements-api-analysis-df62b5808fa2
 
 API 요구 사항에 대해 비즈니스 분석가들이 갑자기 작업을 시작하는 이유에 대해 답해보겠습니다. 약 10년 전, IT에서 비즈니스 분석가로서 경력을 시작했을 때, 일반적인 BA 책임의 일부가 아니었습니다. 지금은 더 많은 BAs, POs 및 PMs의 채용 공고에서 API 지식이 필요하다는 것을 알 수 있습니다. 그리고 그런 일이 일어난 이유에 대한 주관적 설명이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당시 소프트웨어 아키텍처 접근 방식은 온프레미스 배포된 단일 애플리케이션이었습니다. 간단히 말해, 그것은 데스크톱이나 웹 UI 클라이언트와 통신하는 백엔드 서비스가 함께하는 형태였습니다. 해당 백엔드는 FTP를 통해 파일 업로드와 같은 여러 내부 또는 외부 서비스와 통합되었습니다.
 
@@ -27,7 +37,18 @@ API 요구 사항에 대해 비즈니스 분석가들이 갑자기 작업을 시
 
 그러나 클라우드, SaaS 및 마이크로서비스 아키텍처(MSA)가 시스템 디자인의 주요 트렌드로 부상하면서 상황이 변하기 시작했습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최근의 트렌드로 인해 시스템끼리의 연결이 이전보다 더 많아졌습니다. 일부 서비스는 API를 우선으로 하는데, 이는 API를 통해서만 사용할 수 있다는 뜻입니다. 그러므로 API는 더 높은 요구사항을 갖는 비즈니스 모델이 되었습니다. 이에 따라 이해관계자, 규정, 제한 등이 발생하며, 비즈니스 분석가, 제품 소유자, 제품 관리자들이 이를 책임집니다.
 
@@ -37,7 +58,18 @@ API 클라이언트의 수가 웹, 모바일 어플리케이션, 사물 인터�
 
 요약하자면, 클라우드, MSA, SaaS의 부상으로 인한 API의 "비즈니스화", 클라이언트 수의 증가, 높은 보안 위험, 그리고 산업 및 정부의 규정은 API를 비즈니스 분야의 모든 종류의 사람들에게 관심을 가지게 만들었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그것은 그 변화에 대한 철저한 설명은 아니지만, 나의 시각에서 그렇게 보입니다. 댓글에 당신의 생각을 보고 싶어요.
 
@@ -47,7 +79,18 @@ BA 이론에 뛰어들기 전에, API 요구 사항이 기능적이지 않다는
 
 API 디자인을 통해 기능 요구 사항을 표현할 수 있습니다. 그러나 API 자체는 시스템 기능의 직접적인 관심사가 아닙니다. UI 비유로 돌아가보죠: 디자인 패턴, 사용할 컴포넌트, 또는 색 구성표는 UX에 중요하지만, 우리는 그것들을 기능 요구 사항이라고 부르지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, "시스템은 X로 필터링된 항목 목록을 반환하고 Z로 정렬한다"는 기능 요구 사항입니다. 그러나 이 목록을 UI와 API로 어떻게 반환하는지는 다를 수 있습니다. 단일 프런트 엔드가 그 API 엔드포인트를 활용하는 경우, UI 관점에서 설명하는 것만으로 충분합니다. 이 단일 클라이언트가 여기서 주요 이해관계자 역할을 합니다. 그러나 여러 클라이언트가 목록을 사용하려면, 그들과 소통하고 그들이 얻어야 하는 것과 이유를 맞추는 데 추가 시간을 투자해야 합니다. 그 결과는 UI에 목록 항목을 어떻게 반환하는지와는 크게 다를 수 있습니다.
 
@@ -57,7 +100,18 @@ API 요구 사항은 기능적이 아니기 때문에 어떤 유형의 요구 �
 
 K. Wiegers와 J. Beatty의 고전적인 "소프트웨어 요구 사항" 3판은 비기능적 요구 사항과 인터페이스 간의 상호 연결성을 강조합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ISO/IEC/IEEE 29148:2018 표준 "시스템 및 소프트웨어 공학 - 수명 주기 프로세스 - 요구 공학"에 따르면 Interface requirements(인터페이스 요구 사항)이라는 요구 유형이 있습니다(5.2.8.3):
 
@@ -67,7 +121,18 @@ ISO/IEC/IEEE 29148:2018 표준 "시스템 및 소프트웨어 공학 - 수명 �
 
 인터페이스 요구 사항(여기에 UI 및 CLI가 포함됨)에서는 시스템이 소비자로서 동작할 때 통합 요구 사항을 분리하는 것이 합리적입니다. 제조자인 경우 API 요구 사항(이전 섹션을 참조하십시오)은 다소 흥미로운 결과를 나타냅니다. 후자의 결과는 운영 API 엔드포인트를 의미합니다. 한편, 시스템 간의 작업 상호 작용은 첫 번째 결과입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요구 엔지니어링
 
@@ -79,7 +144,18 @@ BABOK v3 (IIBA, 2015)은 API 또는 통합 요구 사항을 분류하지 않습�
 
 요구 사항 개발은 "전통적인" 비즈니스 분석 프로세스와 크게 다르지 않습니다. 요구 수집, 분석, 명세 및 검증 단계가 있습니다. 현재 우리는 주로 첫 단계에 주안점을 두고 있습니다. 명세와 추가적인 검증은 어떤 특징을 가지고 있지만, HTTP 프로토콜 기본 및 API 구조에 대해 자세히 알아볼 필요가 있습니다. 이 내용은 이후 챕터에서 다룰 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 시작점
 
@@ -89,7 +165,18 @@ BABOK v3 (IIBA, 2015)은 API 또는 통합 요구 사항을 분류하지 않습�
 
 예를 들어, 저희는 제품을 통해 생성되는 데이터를 UI가 아닌 유료 공개 API로 외부의 제3자들이 얻을 수 있는 접속점을 만들고 싶어해요. 간단히 말해, 새로운 유통 채널을 추가하고 수익을 창출하고 싶어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 누구를 위해 이것을 하는 건가요?
 
@@ -99,7 +186,18 @@ BABOK v3 (IIBA, 2015)은 API 또는 통합 요구 사항을 분류하지 않습�
 
 예를 들면, 제공된 기간에 대한 세트 구매 기록을 반환할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이들이 어떻게 할 것인가요?
 
@@ -109,7 +207,18 @@ BABOK v3 (IIBA, 2015)은 API 또는 통합 요구 사항을 분류하지 않습�
 
 다음 단계는 API 호출의 선결 조건을 정의하는 것입니다 — 인증 및 권한 부여:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 인증은 클라이언트를 확인하고 API와 통신할 수 있도록 허용하는 것을 의미합니다.
 - 인가는 특정 클라이언트가 특정 API 요청을 수행하고 특정 데이터를 볼 수 있도록 권한을 부여하는 것입니다.
@@ -122,7 +231,18 @@ BABOK v3 (IIBA, 2015)은 API 또는 통합 요구 사항을 분류하지 않습�
 
 현재 시스템 기능과 원하는 인터페이스 간에 차이가 있다면, 해결책 요구 사항의 문제입니다. 그래서 전통적인 BA(비즈니스 분석) 방법을 사용해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 새로운 API 엔드포인트에 대한 새로운 검색 기준이 있다면, 해당 기준이 검색 인덱스에 포함되도록 해야 합니다. 그것은 이미 백엔드와 관련된 문제입니다.
 
@@ -132,7 +252,18 @@ BABOK v3 (IIBA, 2015)은 API 또는 통합 요구 사항을 분류하지 않습�
 
 # 계약 및 검은 상자
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API를 단순하게 살펴보면 다음과 같이 보일 수 있어요
 
@@ -146,7 +277,18 @@ API를 단순하게 살펴보면 다음과 같이 보일 수 있어요
 - API 계약을 어기면 법적인 처벌이 가해질 수 있습니다.
 - API 계약은 구현 전에 정의될 수 있어서 양쪽이 병행하여 작업할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 거기 중요한 두 가지가 있어요:
 
@@ -158,7 +300,18 @@ API 모델은 다음과 같이 설명할 수 있어요:
 - 공식적인 방법으로는 XML 및 JSON과 같은 데이터 형식 또는 OpenAPI와 같은 명세 형식이 있어요. OpenAPI는 HTTP에 대한 가장 일반적인 공식 API 명세 형식이에요.
 - 비공식적인 방법으로는 Excel 스프레드시트나 텍스트 형식 등이 있을 수 있어요. 비공식 포맷은 일반적으로 OpenAPI를 모방하지만 보다 사용자 친화적인 방식으로 표현돼요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요청 로직은 블랙 박스(글래스 박스) 내부에서 무엇이 발생하는지를 처리합니다. 이것은 다음과 같이 설명될 수 있습니다:
 
@@ -170,7 +323,18 @@ API 모델은 다음과 같이 설명할 수 있어요:
 
 # 너무 촉박하지 않게요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UI 작업을 하면 API보다 변경 사항을 소개하기가 쉽습니다. 사용자 경험을 파괴할 위험이 있지만, 일반적으로 사용자가 새로운 것에 적응하는 데 들어가는 인지적 노력에 관한 문제입니다. 그들은 당신의 변화에 대해 돈을 내지 않습니다.
 
@@ -180,7 +344,18 @@ UI 작업을 하면 API보다 변경 사항을 소개하기가 쉽습니다. 사
 
 요구 엔지니어링 관점에서, 특히 여러 소비자가 사용할 유료 공개 API인 경우에는 보다 철저한 분석이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 주제에 대해 읽기
 

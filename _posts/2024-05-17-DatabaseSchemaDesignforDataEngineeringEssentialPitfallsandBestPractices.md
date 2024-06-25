@@ -3,13 +3,12 @@ title: "데이터 엔지니어링을 위한 데이터베이스 스키마 디자�
 description: ""
 coverImage: "/assets/img/2024-05-17-DatabaseSchemaDesignforDataEngineeringEssentialPitfallsandBestPractices_0.png"
 date: 2024-05-17 19:05
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-DatabaseSchemaDesignforDataEngineeringEssentialPitfallsandBestPractices_0.png
 tag: Tech
 originalTitle: "Database Schema Design for Data Engineering: Essential Pitfalls and Best Practices"
 link: "https://medium.com/@yu-ishikawa/database-schema-design-for-data-engineering-essential-pitfalls-and-best-practices-9d3d8e3eba6d"
 ---
-
 
 <img src="/assets/img/2024-05-17-DatabaseSchemaDesignforDataEngineeringEssentialPitfallsandBestPractices_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@yu-ishikawa/database-schema-design-for-data-engineeri
 
 ## 데이터 엔지니어링을 위한 데이터베이스 스키마 디자인 개요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 강력하고 효율적인 데이터베이스 스키마를 설계하는 것은 모든 애플리케이션에 대한 중요한 작업입니다. 그러나 데이터 엔지니어링에 관련하여는 데이터를 데이터 웨어하우스로 효과적으로 전송하고 분석 및 머신러닝(ML)용으로 활용할 수 있도록 하는 추가적인 고려사항이 필요합니다. 이에는 다양한 데이터 전송 방법을 이해하고 잠재적인 문제점을 예측하며, 애플리케이션 및 데이터 소비 요구 사항과 일치하는 최상의 방법을 채택하는 것이 포함됩니다.
 
@@ -29,7 +39,18 @@ AI 및 ML이 더 중요해지는 가운데, 데이터베이스에 저장된 데�
 
 데이터베이스 스키마 설계의 주요 도전 중 하나는 데이터가 데이터 웨어하우스로 효율적으로 전송될 수 있는지를 보장하는 것입니다. 잘못 설계된 스키마는 데이터 추출, 변환 및 로딩(ETL) 프로세스에서 상당한 어려움을 야기할 수 있으며, 성능 병목 현상과 데이터 불일치로 이어질 수 있습니다. 따라서 데이터 전송 요구 사항을 고려하여 스키마를 설계하는 것이 중요하며, 원활하고 효율적인 데이터 파이프라인을 가능케 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 애플리케이션 개발자의 책임 범위를 넘어선 부분
 
@@ -39,7 +60,18 @@ AI 및 ML이 더 중요해지는 가운데, 데이터베이스에 저장된 데�
 
 # 데이터베이스에서 데이터 웨어하우스로의 데이터 전송 유형
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 종류의 데이터 전송 방법을 이해하는 것은 데이터 크기, 업데이트 빈도 및 조직의 특정 요구 사항에 기초하여 적절한 방법을 선택하는 데 중요합니다. 응용 프로그램 개발자는 효율적인 데이터 전송을 용이하게 하는 스키마를 설계하기 위해 이러한 기술에 대해 인식해야 합니다. 여기에서는 데이터 전송의 주요 유형, 장단점 및 각 접근 방식에 대한 고려 사항을 탐색해봅니다.
 
@@ -49,7 +81,18 @@ AI 및 ML이 더 중요해지는 가운데, 데이터베이스에 저장된 데�
 
 장점:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다른 방법들에 비해 구현이 간단합니다.
 - 변경 사항을 추적하기 위한 복잡한 논리가 필요하지 않습니다.
@@ -62,19 +105,41 @@ AI 및 ML이 더 중요해지는 가운데, 데이터베이스에 저장된 데�
 
 사용 사례: 변경 빈도가 낮은 소규모에서 중규모의 테이블이나 자주 변경되지 않는 테이블에 적합합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **고려 사항:**
 
 - 성능 병목 현상을 피하기 위해 테이블 크기를 관리할 수 있는 수준으로 유지해야 합니다.
-- 테이블 크기가 크지 않다면, SELECT * FROM '테이블'과 같이 간단한 쿼리를 사용하여 데이터를 추출할 수 있습니다.
+- 테이블 크기가 크지 않다면, SELECT \* FROM '테이블'과 같이 간단한 쿼리를 사용하여 데이터를 추출할 수 있습니다.
 - 자동 증가 정수 고유 키가 있는 대규모 테이블의 경우, 정수 인덱스의 범위를 사용하여 테이블을 청킹하여 전체 테이블을 효율적으로 전달할 수 있습니다. 이는 Apache Spark와 같은 분산 처리를 가능하게 합니다.
 
 ## 부분 테이블 점진적 전송
 
 설명: 특정 기준(일반적으로 타임스탬프 열)에 따라 새로운 레코드 또는 업데이트된 레코드만 전송됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 장점:
 
@@ -86,11 +151,33 @@ AI 및 ML이 더 중요해지는 가운데, 데이터베이스에 저장된 데�
 - 변경 사항을 정확히 추적해야 합니다.
 - 신뢰할 수 있는 타임스탬프 데이터와 인덱싱에 의존합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표태그로부터 Markdown 형식으로 변경하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설명: 테이블에만 발생한 변경 사항(삽입, 업데이트, 삭제)을 캡처하고 전송합니다.
 
@@ -102,7 +189,18 @@ AI 및 ML이 더 중요해지는 가운데, 데이터베이스에 저장된 데�
 
 단점:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - CDC를 시작하기 전에 day-0 데이터를 준비하는 것이 까다로울 수 있습니다; 전체 테이블을 데이터 웨어하우스에 미리로드해야 합니다. 초기 스냅샷과 CDC 시작 사이에 간격이 생기면 데이터가 누락될 수 있습니다.
 - 듀플리케이션 또는 들어오는 데이터를 기존 데이터와 일치시키는 것은 계산적 및 재정적으로 소모적일 수 있습니다.
@@ -115,7 +213,18 @@ AI 및 ML이 더 중요해지는 가운데, 데이터베이스에 저장된 데�
 - 데이터베이스 트리거, 로그 기반 캡처 또는 제3자 도구와 같은 CDC 메커니즘을 구현하여 이 프로세스를 용이하게 합니다.
 - 데이터의 초기 전체 로드가 CDC 프로세스와 정확하게 동기화되어 데이터 불일치를 방지하도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Zero-ETL: 신흥 개념
 
@@ -125,7 +234,18 @@ Zero-ETL은 전통적인 추출, 변환 및 로드 (ETL) 프로세스의 필요�
 
 제한사항 및 고려 사항:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터 유형 호환성: 시스템 간에 모든 데이터 유형이 호환되지 않아 직접 접근이 복잡해집니다.
 - 복잡한 데이터 유형: 데이터베이스에서 복잡한 데이터 유형을 사용하면 Zero-ETL 솔루션을 효과적으로 활용하는 것이 어려워질 수 있습니다.
@@ -137,7 +257,18 @@ Zero-ETL은 데이터 엔지니어링의 흥미로운 발전을 대표하며, �
 
 적절한 유형의 데이터 전송 방법을 선택하는 것은 조직의 특정 요구 사항과 제약 조건에 따라 다릅니다. 전체 테이블을 전송하는 것은 비교적 간단할 수 있지만 대량 데이터셋과 잘 맞지 않을 수 있습니다. 부분 테이블을 점진적으로 전송하는 것은 성능과 효율성 사이의 균형을 제공하며, CDC는 복잡성에 대한 대가로 실시간 동기화를 제공합니다. Zero-ETL은 데이터 액세스를 단순화하는 유망한 접근 방식이지만 데이터 유형 호환성과 시스템 기능을 신중히 고려해야 합니다. 이러한 방법과 그 영향을 이해함으로써 응용 프로그램 개발자는 각 이해관계자의 요구 사항을 충족하는 더 효과적이고 적응 가능한 데이터 파이프라인을 설계할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스키마 설계에서 자주 발생하는 함정 및 최상의 실천 방법
 
@@ -147,7 +278,18 @@ Zero-ETL은 데이터 엔지니어링의 흥미로운 발전을 대표하며, �
 
 함정: 테이블에 timestamp 열 (created_at, updated_at)을 포함하지 않으면 변경을 추적하고 데이터를 점진적으로 전송하는 것이 어려워질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 전송에 미치는 영향: 이 문제는 특히 부분적인 테이블 증분 전송 및 변경 데이터 캡처(CDC) 방법에 대해 문제가 됩니다. 타임스탬프가 없으면 새로 추가되거나 업데이트된 레코드를 식별하는 것이 어렵기 때문에 효율적인 데이터 추출 프로세스가 어려워집니다.
 
@@ -157,7 +299,18 @@ Zero-ETL은 데이터 엔지니어링의 흥미로운 발전을 대표하며, �
 
 ## 부적절한 인덱싱
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비폴: 잘못된 또는 누락된 인덱스는 쿼리 성능이 떨어지며 데이터 추출 및 전송 효율성을 떨어뜨릴 수 있습니다.
 
@@ -167,7 +320,18 @@ Zero-ETL은 데이터 엔지니어링의 흥미로운 발전을 대표하며, �
 
 예: 고객 ID 및 이메일 주소를 기반으로 하는 자주 발생하는 쿼리가 있는 고객 테이블이 있다고 가정해 보겠습니다. 이러한 열에 인덱스가 없으면 각 쿼리마다 전체 테이블을 스캔해야 하므로 성능이 저하됩니다. customer_id 및 email에 인덱스를 추가하면 이러한 쿼리의 속도를 크게 향상시켜 데이터 추출 효율성을 개선할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 효율적인 고유 식별자 부재
 
@@ -177,7 +341,18 @@ Zero-ETL은 데이터 엔지니어링의 흥미로운 발전을 대표하며, �
 
 귀하의 모법: 신뢰성 있는 데이터 동기화 및 추출을 용이하게 하기 위해 각 테이블이 자동 증가 정수형 키와 같은 효율적인 고유 식별자를 갖도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시: Cloud Spanner에서 정수형 대신 문자열 유형의 고유 키를 사용하면 대규모 테이블의 점진적 추출 및 병렬 처리가 제한될 수 있어서 대량 데이터 처리를 효율적으로 다루는 데 어려움을 겪을 수 있습니다. 자동 증가 정수 키를 사용하면 이 과정을 간단히 할 수 있습니다.
 
@@ -187,7 +362,18 @@ Zero-ETL은 데이터 엔지니어링의 흥미로운 발전을 대표하며, �
 
 데이터 전송에 미치는 영향: 이 문제는 모든 데이터 전송 유형에 영향을 미치며, 이러한 유형을 처리하는 복잡성 때문에 데이터 추출, 변환 및 데이터 웨어하우스로 데이터 로드가 어려워집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사용하세요. 보다 복잡한 데이터의 경우, 이러한 유형을 효율적으로 처리할 수 있는 도구와 프로세스가 있는지 확인해야 합니다.
 
@@ -197,7 +383,18 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 위험: 비정규화된 테이블은 데이터 중복과 저장 요구 사항 증가로 이어질 수 있어, 데이터 관리와 전송이 복잡해질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 전송에 미치는 영향: 전체 테이블 및 증분 전송의 경우 특히 문제가 됩니다. 비정규화된 데이터는 전송되는 데이터의 양과 복잡성을 증가시켜 비효율성을 야기할 수 있습니다.
 
@@ -207,7 +404,18 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 ## 데이터 파티셔닝을 무시하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제점: 파티션화되지 않은 대형 테이블은 쿼리 성능을 느리게 만들 수 있고 데이터 추출 프로세스를 복잡하게 만들 수 있습니다.
 
@@ -217,7 +425,18 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 예시: 대규모 판매 테이블을 날짜별로 파티션화하면 최근 데이터에 대한 빠른 쿼리와 오래된 데이터의 쉬운 관리가 가능해집니다. 이는 성능을 향상시키고 점진적 데이터 추출을 더 효율적으로 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 데이터 소비 요구 사항을 무시하는 경우
 
@@ -227,7 +446,18 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 최선의 실천 방법: 스키마 디자인 중 데이터 엔지니어와 분석가의 요구 사항을 고려하여 데이터가 효율적으로 소비되고 분석될 수 있도록 하는 것이 좋다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시: 데이터 과학자가 데이터를 쿼리하는 방법을 고려하지 않고 스키마를 설계하면 비효율적인 조인 및 복잡한 쿼리가 발생하여 분석이 느려지고 자원 사용량이 증가할 수 있습니다. 데이터 사용자와 협력하여 요구 사항을 이해하고 이에 맞게 스키마를 설계해보세요.
 
@@ -237,7 +467,18 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 데이터 전송에 미치는 영향: 특히 점진적으로 일부 테이블을 전송하거나 CDC 방법을 사용하는 경우, 스키마 변경은 데이터 추출 및 동기화 프로세스를 방해할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **최선의 방법**: 애플리케이션 개발자와 데이터 소비자 간의 의사소통을 촉진하여 스키마 변경 시 모든 이해관계자의 요구사항을 고려합니다.
 
@@ -247,7 +488,18 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 **주의할 점**: 애플리케이션 개발자들은 종종 미래 데이터베이스 이전을 고려하지 않고 스키마를 설계하는데, 이는 데이터 파이프라인과 데이터 소비에 영향을 줄 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터 전송에 미치는 영향: 이는 모든 유형의 데이터 전송에 영향을 줄 수 있으며, 향후 이주 및 업데이트를 더 어렵고 방해할 수 있습니다.
 
@@ -257,7 +509,18 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 ## 데이터 수용 용량 관리 및 전송 전략 적응하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 잘못된 점: 데이터 성장에 대한 계획을 세우지 않으면 데이터 전송과 처리에 어려움이 생길 수 있으며 데이터 양이 증가할수록 이러한 문제가 심화될 수 있습니다.
 
@@ -265,9 +528,20 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 권장 사항: 데이터 성장을 고려하고 데이터 크기가 증가함에 따라 전송 전략을 조정하세요. 간단한 전체 테이블 전송부터 시작하여 필요에 따라 점진적으로 로드하거나 CDC로 전환하세요.
 
-예시: 'table'에서 SELECT * FROM을 사용하여 처음에는 작은 테이블을 전송할 수 있지만 테이블이 커지면 증분 로드 또는 CDC를 사용하여 증가된 데이터 양을 효율적으로 처리해야 합니다. 데이터 성장에 맞게 전송 전략을 정기적으로 검토하고 업데이트하여 확장 가능성을 보장하세요.
+예시: 'table'에서 SELECT \* FROM을 사용하여 처음에는 작은 테이블을 전송할 수 있지만 테이블이 커지면 증분 로드 또는 CDC를 사용하여 증가된 데이터 양을 효율적으로 처리해야 합니다. 데이터 성장에 맞게 전송 전략을 정기적으로 검토하고 업데이트하여 확장 가능성을 보장하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적인 함정을 다루고 최선의 방법을 채택함으로써 응용 프로그램 개발자들은 효율적인 데이터 전송 및 분석을 지원하는 데이터베이스 스키마를 설계할 수 있습니다. 이 종합적인 접근 방식은 데이터 인프라가 견고하고 확장 가능하며 다양한 비즈니스 요구를 지원할 준비가 되어 있는지를 보장합니다.
 
@@ -277,7 +551,18 @@ Best Practice: 가능한 한 간단하고 원자적인 데이터 유형을 사�
 
 본 문서에서 다룬 함정과 해결책은 스키마 설계를 개선하기 위한 가치 있는 힌트와 지침을 제공하며, 모든 이해관계자들에게 데이터에 더 쉽게 접근하고 활용할 수 있도록 돕습니다. 이러한 일반적인 함정을 최선의 방법으로 해결함으로써 효율적인 데이터 전송, 동기화 및 분석을 보장하고, 이로써 더 견고하고 확장 가능한 데이터 인프라로 이어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 이러한 함정을 인식하고 대응하는 것은 해결책의 일부에 불과합니다. 다부서간 협업의 중요성은 강조할 수 없을 만큼 큽니다. 스키마를 효과적으로 설계하는 것은 데이터와 그 활용 방법을 설계하는 것을 의미합니다. 이를 위해 데이터 엔지니어, 데이터 분석가, 데이터 과학자, 그리고 응용프로그램 개발자들의 입장과 협력이 필요합니다. 다부서간 노력은 스키마 설계 과정 중 모든 잠재적 문제와 요구 사항이 고려되도록 합니다. 응용프로그램 개발자들은 애플리케이션 요구 사항을 이해하면서 다른 기능들의 데이터 요구 사항을 이해함으로써 이 협력 노력에서 중요한 역할을 합니다. 이러한 협력을 통해 아니면 발생할 문제들을 미리 예방하여 데이터를 더욱 접근하고 사용 가능하게 만들 수 있습니다.
 

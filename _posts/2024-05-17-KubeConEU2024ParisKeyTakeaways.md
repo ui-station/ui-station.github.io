@@ -3,13 +3,12 @@ title: "KubeCon EU 2024 파리 주요 포인트들"
 description: ""
 coverImage: "/assets/img/2024-05-17-KubeConEU2024ParisKeyTakeaways_0.png"
 date: 2024-05-17 18:20
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-KubeConEU2024ParisKeyTakeaways_0.png
 tag: Tech
 originalTitle: "KubeCon EU 2024 Paris: Key Takeaways"
 link: "https://medium.com/@danielbryantuk/kubecon-eu-2024-paris-key-takeaways-ad4c1bb7fbfe"
 ---
-
 
 ## 회의 요약
 
@@ -28,7 +27,18 @@ link: "https://medium.com/@danielbryantuk/kubecon-eu-2024-paris-key-takeaways-ad
 - Wasm: 핫한 주제, 그러나 불확실성이 있습니다.
 - Dapr가 점점 클라우드 네이티브 ESB로 자리 잡고 있습니다(좋은 방법으로)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이러한 주요 사항을 자세히 살펴보겠습니다. 기사 맨 끝에는 보너스 "KubeCon EU를 위한 GTM 주요 사항" 섹션도 포함되어 있어요. 프랑스어로 말하자면, allons-y!
 
@@ -38,7 +48,18 @@ link: "https://medium.com/@danielbryantuk/kubecon-eu-2024-paris-key-takeaways-ad
 
 작년 12월 KubeCon NA Chicago에서 AI/LMM 콘텐츠의 부족에 놀라신 분들이 많았습니다. 그런데 KubeCon EU Paris에서는 이를 보완해줬어요... 그리고 더 더해졌습니다! 오프닝 데이 키노트 중 거의 모두가 AI에 초점을 맞춘 내용이었고(AI에 대한 조급한 마음까지!), 한 주 내내 전적으로 AI에 초점을 맞춘 AI 랩도 있었으며 다양한 각도에서 AI/LLM에 집중한 분과 세션이 많았습니다. 또한 클라우드 네이티브 트렌드와 "AI", "LLM", 또는 "Generative"이라는 단어가 섞인 스폰서 부스를 보는 것조차 무한했을 정도에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 농담은 물론, 나는 CNCF 생태계가 AI에 대해 매우 열려 있다는 메시지를 주로 받았어. 행사 전체에서 본 사용자 이야기들은 주로 모델 훈련이 아니라 추론에 대해 클라우드 네이티브 기술을 사용하는 데 초점을 맞췄어; 특히 엣지 근처의 추론. 이는 이전에 클레이튼 콜먼이 한 말을 반영하고 있었어: "만약 추론이 새로운 웹 앱이라면, 쿠버네티스는 새로운 웹 서버야." 주요 무대와 후원사 홀에서 보여진 K8s 기반 AI 빌더들을 위한 관련 "도구"들도 풍부했어.
 
@@ -48,7 +69,18 @@ link: "https://medium.com/@danielbryantuk/kubecon-eu-2024-paris-key-takeaways-ad
 
 우리가 나중에 다룰 주제를 시작으로, Microsoft가 행사에서 첫 번째로 "Kubernetes AI Toolchain Operator (Kaito)"라는 AI 주제의 "번들"을 발표했어. Kaito는 Kubernetes 클러스터에서 AI/ML 추론 모델 배포를 자동화하고 falcon 및 llama2와 같은 모델을 대상으로 하고 있어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이어서, Ollama는 프로그램에서 많이 소개되었고, 대형 언어 모델을 로컬에서 실행하는 사실상의 방법으로 보였습니다. 우리가 파리에 있었기 때문에 Mistral AI 팀도 칭찬을 받았어요. KubeCon에 참석하지 못했다 하더라도 AI 주제의 몇 가지 모임이 근처에서 열렸어요:
 
@@ -58,7 +90,18 @@ AI 분야에서 혁신이 빠른 속도로 일어나고 있음을 부정할 수 
 
 키노트와 3일간의 부스 대화에서 떠날 때, AI 미래가 드디어 KubeCon에 왔다는 생각을 하지 않을 수 없었어요 — 그러나 소문처럼 고르게 퍼져 있지 않다는 게 분명해요; 특히 최종 사용자들 사이에서 그렇습니다. 이제 클라우드 네이티브 군중이 다음 세대의 AI 앱을 개발하기 시작할 때인 것은 분명해요. 그리고 저는 우리의 새로운(클라우드 기반) AI 지배자를 환영합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 비용과 지속 가능성을 잊지 말아 담당하는 혁신을 요청합니다.
 
@@ -68,7 +111,18 @@ CNCF가 이벤트를 주최하고 있기 때문에 OSS를 수용하고, 이상�
 
 CNCF가 지속 가능성에 대한 일부 어려움을 인정하는 것을 볼 수 있어서 좋았습니다. 세 번째 날의 키노트에서 Gualter Barbas Baptista가 독일 철도에서의 실제(기업) 사례인 "IT 그린 구축: Deutsche Bahn에서의 플랫폼, 데이터 및 개발자 권한 부여의 여정"에 지속 가능성을 요구했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 주제는 중요합니다. 키노트 시간을 충분히 할애하는 것을 보아 좋았어요.
 
@@ -78,7 +132,18 @@ CNCF가 지속 가능성에 대한 일부 어려움을 인정하는 것을 볼 �
 
 스폰서 쇼케이스는 플랫폼, 플랫폼 엔지니어링, 개발자 경험에 대한 언급으로 넘쳤으며, Solomon Hykes인 Dagger와 Docker의 공동 창시자가 진행한 훌륭한 키노트 세션도 있었습니다. "10년의 변곡점: 컨테이너화된 세계에서 애플리케이션 전달의 미래" (말하자면, 최근 InfoQ 팟캐스트에서 Solomon과 이야기를 나누었는데, Dagger에 대해 많이 배웠어요!)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인프라스트럭처 레이어 도구 및 프레임워크인 Kubernetes, 서비스 메쉬, 게이트웨이, CI/CD 등이 잘 발전하여 대부분의 사람들에게는 "지루한 기술"로 여겨집니다 (적어도 이들에게는 그렇습니다). 지금 큰 도전은 퍼즐 조각들을 조합하여 내부 고객인 개발자들에게 가치를 전달하는 것입니다. 위 트윗에 댓글로 역동적으로 관찰한 Betty Junod는 "우리는 그 시대의 모든 PaaS를 해체했고... 모든 개별 레고로 놀아보았으며... 새로운 레고도 얻었고... 이제 그것들을 다시 조립하려고 노력하고 있다"고 언급했습니다.
 
@@ -86,7 +151,18 @@ CNCF가 지속 가능성에 대한 일부 어려움을 인정하는 것을 볼 �
 
 마치 사람들이 AI 레이어에서 가치 창출 및 확보가 어디에서 일어날지에 대해 논쟁하는 것처럼, 플랫폼 공간 레이어에서도 같은 경향이 보인다고 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인프라스트럭처 레이어는 이윤이 많이 나오는 것으로 보이지만, 주로 후발주자들이 참여하는 영역입니다. 최근 Adam Jacob이 언급한 바에 따르면, OpenShift는 연간 매출이 10억 달러 이상을 올립니다. 그러나 동시에 HashiCorp와 Terraform에 대한 시장에서의 어려움을 볼 수 있습니다 (관련해서 OpenTOFU가 행사에서 많은 관심을 받았습니다).
 
@@ -96,7 +172,18 @@ CNCF가 지속 가능성에 대한 일부 어려움을 인정하는 것을 볼 �
 
 ![이미지](/assets/img/2024-05-17-KubeConEU2024ParisKeyTakeaways_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플리케이션 코레오그래피 레이어에서는 명확한 가치가 창출될 수 있습니다. 그러나 이번 KubeCon에서 Backstage에 대해 최고와 최악의 순간이 겹쳐보였어요. Backstage 커뮤니티가 여러 훌륭한 세션을 제공했고, 분명히 많은 역동성이 있었습니다 (CNCF 최종 사용자에게 가장 많은 기여를 한 프로젝트였습니다). 그러나 채택자들로부터 "외부에서 제공되는" 기능 부재와 포털을 운영하고 유지하기 위해 필요한 노력에 대한 불평이 많았습니다.
 
@@ -106,7 +193,18 @@ CNCF가 지속 가능성에 대한 일부 어려움을 인정하는 것을 볼 �
 
 마지막으로, AI가 플랫폼 엔지니어링에 큰 영향을 미치는 것 같지는 않았어요! 대부분 애플리케이션, 플랫폼 및 인프라 구성 요소를 오케스트레이팅하고 라이프사이클을 관리하기 때문에, "AI ROI"는 다른 곳에서 더 높아 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 제품 사고 FTW!
 
@@ -116,7 +214,18 @@ CNCF가 지속 가능성에 대한 일부 어려움을 인정하는 것을 볼 �
 
 NatWest의 Chris Plank가 하는 발표 "혁신 발휘: NatWest Bank가 클라우드 네이티브 도구를 활용하여 제품으로서의 플랫폼 제공"도 저에게 큰 인상을 주었어요. Chris는 규제가 엄격한 환경에서 플랫폼을 전개하기 위한 도전을 잘 소개하고, 이러한 장애물을 극복하기 위해 제품 사고와 기관 간 협력을 적용하는 이점을 제시했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 관련해서, Aviatrix의 Mitch Connors가 "Product Market Misfit: Adventures in User Empathy"를 발표했어요. 제 친구이자 전 동료인 Open Credo의 Nicki Watt도 "To K8S and Beyond — Maturing Your Platform Engineering Initiative"를 발표했는데, CNCF App Delivery TAG의 Platform Maturity Model에 대한 유용한 안내와 제품에 대한 생각의 적절한 조화를 제공해 주었어요.
 
@@ -126,7 +235,18 @@ NatWest의 Chris Plank가 하는 발표 "혁신 발휘: NatWest Bank가 클라�
 
 저는 당연히 주관을 가지고 있지만, 부속으로 이루어진 App Developer Con에서 발표한 "Testing Cloud Apps: Mocks vs. Service Virtualization vs. Remote Tools" (아직 비디오는 없어요!) 를 보았어요. 그러나 행사 전체에서 개발자 경험 및 내부, 외부 개발자 루프에 집중하는 중요성에 대한 언급이 많이 있었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![KubeConEU2024ParisKeyTakeaways](/assets/img/2024-05-17-KubeConEU2024ParisKeyTakeaways_3.png)
 
@@ -136,7 +256,18 @@ NatWest의 Chris Plank가 하는 발표 "혁신 발휘: NatWest Bank가 클라�
 
 # 보안은 여전히 중요한 비즈니스입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 키노트는 상대적으로 보안에 대해 가볍게 다뤄졌지만, 세션과 후원 쇼케이스는 분명히 다르더군요. "보안"이라는 용어로 세션 카탈로그를 싹 훑어보면 수십 개의 이야기가 나옵니다. 안전한 공급망부터 네트워크 침입 및 플랫폼 보안까지 다양한 주제가 잘 다뤄졌어요.
 
@@ -146,7 +277,18 @@ NatWest의 Chris Plank가 하는 발표 "혁신 발휘: NatWest Bank가 클라�
 
 한번 더 강조하면, 프로그램에 참여한 종단 사용자 키노트와 세션을 보는 것이 좋았습니다. 이러한 세션 중 많은 것들이 "업계에서 주목받고 있어요"는 방향으로 이동하고 있었습니다. 그들이 Kubernetes(또는 다른 CNCF 기술)를 도입한 방법을 소개하는 대신에, 확장, 지속가능성, 비용 절감, 또는 개발자 생산성 향상과 같은 메시지를 주로 다뤘어요. 앞서 언급한 Deutsche Bahn의 지속가능성에 대한 키노트는 이를 잘 보여주는 좋은 예시였습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 닉 루티글리아노와 다니엘 드 레프렌티뇨가 진행한 “How Spotify Re-Created Our Entire Backend Without Skipping a Beat”라는 Spotify 토크도 즐겁게 감상했어요. 이 토크는 제품 사고를 사용하여 제품화되고 유지되는 K8s 기반 환경에 대해 다뤘죠. 이 분야에서 다른 좋은 토크들로는 다음과 같은 것들이 있어요:
 
@@ -160,11 +302,33 @@ NatWest의 Chris Plank가 하는 발표 "혁신 발휘: NatWest Bank가 클라�
 
 이전 KubeCon 요약에서 본 것처럼, 도구와 프레임워크의 번들링이 계속되었습니다. 몇 가지 예외를 제외하고는, 공급업체들이 “클래스 최고의 솔루션”이 되려고 싸우던 시절은 사라졌어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Could you please change the table tag to Markdown format?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 흥미를 끌기 위해, 제 플랫폼 엔지니어링에 초점을 맞춘 친구들과 얘기를 나눠본 결과, 여전히 Wasm에 대한 "핵심 사용 사례"를 찾고 있었어요. 이야기에 따르면 컨테이너 기반 및 서버리스 앱의 조합이 필요한 세분화와 리소스 사용 제어를 제공했습니다. 그들은 사무실로 돌아가서 AI 도구에 대해 더욱 탐구하고 싶어했습니다.
 
@@ -174,7 +338,18 @@ Could you please change the table tag to Markdown format?
 
 Dapr 프로젝트에 대해 오랫동안 긍정적이었던 것은 비밀이 아닙니다. 이 프레임워크는 10년 전 초기 클라우드 네이티브 앱을 개발할 때 접근할 수 있었으면 좋았을 것이라고 생각했습니다. 이번 이벤트 중에서도 기술에 관한 많은 언급을 볼 수 있어 기쁘었고, 예상치 못한 세션에서도 잘 통합된 것과 관련한 집중이 자주 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 평소처럼, Diagrid의 Bilgin, Mauricio 및 Mark와 흥미로운 토론을 나눴어요. 개발자 패턴, 클라우드 네이티브 응용 프로그램 미들웨어의 미래, 그리고 "서버리스 시대 이후의 클라우드 컴퓨팅: 현재 트렌드 및 이상"에 대해 이야기했죠.
 
@@ -184,7 +359,18 @@ Dapr 프로젝트에 대해 오랫동안 긍정적이었던 것은 비밀이 아
 
 이번에 제 일상 업무에서 여러 개발자 도구 회사들에게 Go-To-Market, 제품 마케팅 및 개발자 관계에 대한 조언을 제공하고 있어요. 그래서 한두 문단을 공유하고 싶어요. 후원사 쇼케이스를 둘러보면 현재 핫하고 판매 가능한 트렌드를 몇 가지 알 수 있었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AI 기반의 모든 것
 - 플랫폼 엔지니어링
@@ -198,7 +384,18 @@ Dapr 프로젝트에 대해 오랫동안 긍정적이었던 것은 비밀이 아
 
 쿠베콘 부스는 역사적으로 개발자 관계, 기술적인 Go-To-Market, 그리고 창립자들이 중심에 있었다. 이들은 여기에도 있었지만, 나는 부스에서 만남에서 만남으로 걸어갈 때 말할 것을 찾는 영업 사원들에게 비유적으로 (가끔은 실제로도) 당한 것을 발견했다. 한 영업 사원은 나가 바쁘다고 대답하고 영업 설명에 관심이 없다고 답했을 때 거의 적대적이었는데, 그 정도로 나는 내 대답을 확인하고 입맛을 감췄다(그는 몇 가지 근거 없는 공격으로 나를 완전히 당황하게 했지만, 행동 규범은 양쪽 모두에게 적용된다!)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시간이 까다롭고 영업 목표가 어려울 수 있다는 것을 알지만, 대상 체르의 문화를 이해해야 합니다. KubeCon 스폰서 홀에서 강하게 팔아넣는 것은 효과적이지 않다고 생각해요.
 
@@ -208,12 +405,23 @@ Dapr 프로젝트에 대해 오랫동안 긍정적이었던 것은 비밀이 아
 
 KubeCon을 포함한 모든 행사에서 이벤트를 더 포괄적으로 만들기 위해 커뮤니티의 노력에 감명을 받았어요. 저는 중요한 강연 및 다른 세션에 수어 통역자를 확보한 청각장애 및 장애인 작업 그룹에 박수를 보내요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 니키타 라그나스와 아파르나 수브라마니안이 행사를 공동 주최한 데에서 훌륭한 일을 해냈어요. 또한, 처음으로 행사 공동 주최한 클라우드 네이티브 친구 카스퍼 보그 니센에게도 큰 박수를 보냅니다! 포용에 관한 주제를 더 깊이 다루기 위해, 카스퍼는 클라우드 네이티브 커뮤니티의 포용적 성장의 10년을 주제로 한 주요 토론 패널 "다양성 속의 통일: 클라우드 네이티브 커뮤니티의 포용적 성장"을 주관했어요.
 
 나는 KubeCon EU에서 보낸 시간을 철저히 즐겼어요. 커뮤니티 여러분과 많은 소통을 나눌 수 있어 정말 좋았고, O'Reilly 부스에서 "API 아키텍처 마스터링" 책 서명 행사를 열면서 즐거운 시간을 보냈어요. 또한, PlatEngDay의 공동 주최자인 Syntasso 크루와 같이 현재 함께 일하고 있는 분들과 시간을 보낸 건 정말 즐거웠어요. 이 협력 행사의 다음 단계가 기대돼요!
 
-아직 모든 배운 것을 정리 중이라 놓친 중요한 주제나 주요 인물 언급이 있었다면 알려주세요! 
+아직 모든 배운 것을 정리 중이라 놓친 중요한 주제나 주요 인물 언급이 있었다면 알려주세요!
 
 만나지 못한 분들과 만날 기회가 없었다면 소셜 미디어나 평소의 연락처로 연락해주세요. 11월에 솔트레이크시티에서 만나요!

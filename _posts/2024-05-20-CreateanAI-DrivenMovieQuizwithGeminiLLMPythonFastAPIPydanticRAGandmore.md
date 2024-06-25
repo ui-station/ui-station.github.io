@@ -3,13 +3,12 @@ title: "제목 Gemini LLM, Python, FastAPI, Pydantic, RAG 등을 활용한 AI �
 description: ""
 coverImage: "/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_0.png"
 date: 2024-05-20 18:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_0.png
 tag: Tech
 originalTitle: "Create an AI-Driven Movie Quiz with Gemini LLM, Python, FastAPI, Pydantic, RAG and more"
 link: "https://medium.com/towards-data-science/create-an-ai-driven-movie-quiz-with-gemini-llm-python-fastapi-pydantic-rag-and-more-e15322be4f66"
 ---
-
 
 ## 파이썬을 이용한 VertexAI를 통한 Gemini 기초 알아보기, FastAPI로 API 생성, Pydantic을 이용한 데이터 유효성 검사 및 Retrieval-Augmented Generation (RAG) 기초
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-science/create-an-ai-driven-movie-quiz-wi
 
 # 목차
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 영감
 - 시스템 아키텍처
@@ -40,7 +50,18 @@ link: "https://medium.com/towards-data-science/create-an-ai-driven-movie-quiz-wi
 
 Gemini Movie Detectives는 VertexAI를 통해 Gemini Pro 모델의 파워를 활용하여 최신 영화 데이터를 활용하여 재미있는 퀴즈 게임을 만드는 것을 목표로 한 프로젝트입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로젝트의 일부는 Docker를 사용하여 배포할 수 있도록하고 실시간 버전을 만드는 것이었습니다. 직접 확인해보세요: movie-detectives.com. 이것은 단순한 프로토 타입이므로 예상치 못한 문제가 발생할 수 있습니다. 또한, GCP와 VertexAI를 사용함으로써 발생할 수 있는 비용을 제어하기 위해 일부 제한을 추가해야 했습니다.
 
@@ -51,7 +72,18 @@ Gemini Movie Detectives는 VertexAI를 통해 Gemini Pro 모델의 파워를 활
 
 이 글의 중점은 백엔드 프로젝트와 그 배경 개념에 있습니다. 그러므로 프론트엔드 및 해당 구성 요소에 대해 간략히 설명합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 동영상에서는 프로젝트와 그 구성 요소에 대한 개요를 제공합니다:
 
@@ -61,7 +93,18 @@ Gemini Movie Detectives는 VertexAI를 통해 Gemini Pro 모델의 파워를 활
 
 2023년, 나는 아이들과 청소년 대상으로 게임 개발을 가르치는 워크샵을 진행했습니다. 그들은 충돌 탐지 뒤에 숨은 수학적 개념에 대해 배웠지만, 모든 것이 게임의 맥락으로 풀렸기 때문에 즐거워했습니다. 게임이 거대한 시장뿐만 아니라 지식 공유에도 큰 잠재력이 있다는 것을 깨달았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트인 영화 탐정(Movie Detectives)은 제가 Gemini 및 AI 전반의 매력을 보여주고 귀하고 유익한 퀴즈 및 교육 게임을 만들어내는데 어떻게 활용할 수 있는지, 또한 게임 디자인이 이러한 기술에서 이익을 얻는 방법을 소개합니다.
 
@@ -71,7 +114,18 @@ Gemini LLM에 정확하고 최신의 영화 메타데이터를 제공함으로�
 
 비즈니스적인 관점에서 이를 고려하면, 고가의 번역 프로세스가 필요 없이 더 많은 고객에게 도달할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비즈니스적인 측면에서, 이 모듈화는 어렵지 않게 언어 장벽을 초월하며 더 넓은 고객층에 문을 열어줍니다. 또한 저는 이 모듈들의 변혁적인 힘을 직접 체험해 보았습니다. 기본 퀴즈 마스터에서 아재 농담 퀴즈 마스터로 변경하는 것은 정말 재미있는 경험이었어요. 이 프로젝트의 다재다능성에 대한 입증이자, You Don’t Know Jack의 전성기에 대한 향수로운 인사입니다.
 
@@ -81,7 +135,18 @@ Gemini LLM에 정확하고 최신의 영화 메타데이터를 제공함으로�
 
 기술 스택: 🚀 백엔드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Python 3.12 + FastAPI API 개발
 - TMDB 통합을 위한 httpx
@@ -101,17 +166,39 @@ Gemini LLM에 정확하고 최신의 영화 메타데이터를 제공함으로�
 
 이 어플리케이션은 외부 API (TMDB)에서 최신 영화 메타데이터를 가져온 후 다양한 모듈 (성격, 언어, ...)로 기반을 둔 프롬프트를 구축하고, 이 메타데이터로 프롬프트를 보강하여 사용자가 올바른 제목을 추측해야 하는 영화 퀴즈를 이니셜라이징하도록 Gemini를 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 백엔드 인프라는 FastAPI와 Python으로 구축되었으며, 실시간 메타데이터를 활용하여 쿼리를 보강하는 Retrieval-Augmented Generation (RAG) 방법론을 적용했습니다. 백엔드는 Jinja 템플릿을 활용하여 프롬프트 생성을 기본, 개성 및 데이터 향상 템플릿으로 모듈화하며, 정확하고 매력적인 퀴즈 질문을 생성할 수 있도록 합니다.
 
 프론트엔드는 Vue 3와 Vite로 구동되며, 효율적인 프론트엔드 개발을 위해 daisyUI와 Tailwind CSS를 활용합니다. 이러한 도구들은 사용자에게 매끄럽고 현대적인 인터페이스를 제공하여 백엔드와의 원활한 상호작용을 지원합니다.
 
-영화 탐정들에서는 퀴즈 답변이 언어 모델 (LLM)에 의해 해석되어 동적 점수 매기기와 맞춤형 응답이 가능해집니다. 이는 게임 디자인 및 개발에서 LLM과 RAG를 통합하는 잠재력을 선보이며, 진정한 개별화된 게임 경험을 제공합니다. 뿐만 아니라, LLM을 활용하여 매력적인 퀴즈 트리비아 또는 교육 게임을 만드는 잠재력을 보여줍니다. 또한, 퍼스널리티나 언어를 추가하거나 변경하는 것은 더 많은 Jinja 템플릿 모듈을 추가하는 것만큼 쉽습니다. 개발자에게 노력을 줄이고 게임 경험을 변경하는 데 큰 도움이 됩니다. 
+영화 탐정들에서는 퀴즈 답변이 언어 모델 (LLM)에 의해 해석되어 동적 점수 매기기와 맞춤형 응답이 가능해집니다. 이는 게임 디자인 및 개발에서 LLM과 RAG를 통합하는 잠재력을 선보이며, 진정한 개별화된 게임 경험을 제공합니다. 뿐만 아니라, LLM을 활용하여 매력적인 퀴즈 트리비아 또는 교육 게임을 만드는 잠재력을 보여줍니다. 또한, 퍼스널리티나 언어를 추가하거나 변경하는 것은 더 많은 Jinja 템플릿 모듈을 추가하는 것만큼 쉽습니다. 개발자에게 노력을 줄이고 게임 경험을 변경하는 데 큰 도움이 됩니다.
 
 <img src="/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개요에서 보듯이, Retrieval-Augmented Generation (RAG)은 백엔드의 중요한 아이디어 중 하나입니다. 이 특별한 패러다임을 더 자세히 살펴보겠습니다.
 
@@ -121,7 +208,18 @@ Gemini LLM에 정확하고 최신의 영화 메타데이터를 제공함으로�
 
 본질적으로, RAG는 외부 데이터를 통합하여 LLM 시스템을 강화하여 예측을 풍부하게 합니다. 이는 LLM에 관련 컨텍스트를 전달해서 프롬프트의 추가 요소로 사용한다는 것을 의미합니다. 하지만 어떻게 관련 컨텍스트를 찾을까요? 일반적으로, 해당 데이터는 벡터 검색이나 전용 벡터 데이터베이스를 통해 자동으로 검색될 수 있습니다. 벡터 데이터베이스는 유사한 데이터에 대한 쿼리를 빠르게 수행할 수 있도록 데이터를 저장하는 방식으로 특히 유용합니다. 그런 다음 LLM은 쿼리와 검색된 문서를 기반으로 출력을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상상해 보세요: 주어진 프롬프트에 따라 텍스트를 생성할 수 있는 LLM이 있는 상황을 생각해보세요. RAG는 최신 영화 데이터와 같은 외부 소스에서 추가적인 컨텍스트를 주입함으로써 생성된 텍스트의 관련성과 정확도를 높이는 한 걸음 더 나아간 기술입니다.
 
@@ -134,7 +232,18 @@ RAG의 주요 구성 요소를 살펴보죠:
 
 젬니미 영화 탐정 프로젝트에서는 프롬프트가 The Movie Database의 외부 API 데이터로 보강되지만, RAG는 일반적으로 이러한 프로세스를 단순화하기 위해 벡터 인덱스의 사용을 포함합니다. 보다 복잡한 문서와 향상된 데이터 양을 사용한다는 점이 다릅니다. 따라서 이러한 인덱스는 시스템을 빠르게 관련 외부 소스로 안내하는 안내표 같은 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트에서는 LLM 능력을 증진시키는 외부 데이터의 강점을 증명하며, 기본 아이디어를 보여줌으로써 RAG의 미니 버전을 소개합니다.
 
@@ -147,7 +256,18 @@ RAG의 주요 구성 요소를 살펴보죠:
 - Qdrant: 다음 세대 AI 애플리케이션을 위한 벡터 검색 엔진.
 - Weaviate: 강력하고 빠르며 확장 가능한 클라우드 원본 벡터 데이터베이스 인 Weaviate.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론, LLM 기반 응용 프로그램에 대한이 접근 방식의 잠재적 가치가 있으므로 오픈 소스 및 클로즈 소스 대체품이 더 많이 있지만, 이러한 것들을 사용하면 주제에 대한 연구를 시작할 수있을 것입니다.
 
@@ -157,8 +277,18 @@ RAG의 주요 구성 요소를 살펴보죠:
 
 Poetry가 도와줄 수있는 세 가지 주요 작업은 빌드, 게시 및 추적입니다. 종속성을 관리하기 위한 결정론적인 방법을 가지고, 프로젝트를 공유하고 종속성 상태를 추적하는 것이 아이디어입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Create an AI-Driven Movie Quiz with GeminiLL, MPython, FastAPI, Pydantic, RAG, and more](/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_2.png)
 
@@ -170,8 +300,18 @@ poetry config virtualenvs.in-project true
 
 이제 poetry new를 사용하여 새 Python 프로젝트를 생성할 수 있어요. 시는 시스템의 기본 Python과 연결된 가상 환경을 만들어 줄 거예요. 이를 pyenv와 결합하면 특정 버전을 사용하여 프로젝트를 만드는 유연한 방법을 얻을 수 있어요. 또는 Poetry에 직접 사용할 Python 버전을 알려줄 수도 있어요: poetry env use /full/path/to/python.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 프로젝트가 있다면, poetry add를 사용하여 해당 프로젝트에 종속성을 추가할 수 있어요.
 
@@ -193,8 +333,18 @@ poetry add jinja2
 
 프로젝트에 대한 메타데이터와 해당 버전과 함께의 종속성은 poetry.toml 및 poetry.lock 파일에 저장돼요. 제가 추가로 종속성을 추가한 후에는, 프로젝트를 위한 다음과 같은 poetry.toml이 생성되었어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [tool.poetry]
 name = "gemini-movie-detectives-api"
@@ -215,11 +365,9 @@ jinja2 = "^3.1.3"
 ruff = "^0.3.5"
 pre-commit = "^3.7.0"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
 
 # FastAPI로 API 만들기
 
@@ -227,8 +375,18 @@ FastAPI는 빠른 API 개발을 가능하게 하는 Python 프레임워크입니
 
 <img src="/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_3.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젬니니 무비 디텍티브 프로젝트용 API를 구현하는 중에, 저는 단순히 Hello World 응용 프로그램에서 시작하여 그것을 확장했어요. 이렇게 시작할 수 있어요:
 
@@ -250,7 +408,18 @@ uvicorn gemini_movie_detectives_api.main:app --reload
 curl -s localhost:8000 | jq .
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 아직 jq를 설치하지 않았다면 지금 설치하는 것을 적극 추천합니다. 나중에 나는 이 멋진 JSON 스위스 아미 나이프에 대해 다룰 수도 있을 것입니다. 여기에 응답이 어떻게 보이는지 알아봅시다:
 
@@ -314,7 +483,18 @@ def start_quiz(quiz_config: QuizConfig = QuizConfig()):
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f'Internal server error: {e}')
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 코드 안에는 이미 백엔드의 주요 구성 요소 세 가지가 포함되어 있습니다:
 
@@ -326,7 +506,18 @@ def start_quiz(quiz_config: QuizConfig = QuizConfig()):
 
 FastAPI는 HTTP 메서드와 데이터를 백엔드로 전달하는 것을 정의하는 것이 정말 쉽습니다. 특정 함수의 경우 POST 요청이 예상되므로 새 퀴즈를 생성합니다. 이를 post 데코레이터를 사용하여 수행할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```python
 @app.post('/quiz')
@@ -347,12 +538,21 @@ def start_quiz(quiz_config: QuizConfig = QuizConfig()):
 
 또한, 두 개의 사용자 정의 데코레이터를 알아챌 수 있을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @rate_limit
 @retry(max_retries=settings.quiz_max_retries)
-
 
 이것들은 중복 코드를 줄이기 위해 구현한 것입니다. API 함수를 래핑하여 오류가 발생한 경우 함수를 재시도하고 하루에 시작할 수 있는 영화 퀴즈의 전역 속도 제한을 소개합니다.
 
@@ -362,7 +562,18 @@ def start_quiz(quiz_config: QuizConfig = QuizConfig()):
 raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='No movie found with given criteria')
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서, 지니 마블 디텍티브와 FastAPI를 사용하여 API를 만드는 개요를 갖게 될 것입니다. 주의할 점은 모든 코드가 오픈 소스이므로 Github의 API 저장소를 자유롭게 살펴볼 수 있습니다.
 
@@ -372,7 +583,18 @@ raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='No movie foun
 
 그래서 이 프로젝트에서는 FastAPI와 Python의 강력한 데이터 유효성 검사 라이브러리인 Pydantic을 결합했습니다. 목표는 API를 가볍고 데이터 품질 및 유효성 검사 측면에서 엄격하고 강력하게 만드는 것이었습니다. 예를 들어, 평범한 사전 대신 영화 디텍티브 API는 Pydantic에서 제공하는 BaseModel에서 상속된 사용자 정의 클래스를 엄격하게 사용합니다. 이겢은 예시로 퀴즈를 위한 구성입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class QuizConfig(BaseModel):
@@ -395,7 +617,18 @@ class Personality(StrEnum):
     DAD = 'dad.jinja'
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, 사용자 지정 데코레이터를 정의하여 중복 코드를 피합니다. 예를 들어, 다음 데코레이터는 GCP 비용을 관리하기 위해 오늘의 퀴즈 세션 수를 제한합니다:
 
@@ -432,7 +665,18 @@ def rate_limit(func: callable) -> callable:
 def start_quiz(quiz_config: QuizConfig = QuizConfig()):
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최신 Python 기능과 FastAPI, Pydantic 또는 Ruff와 같은 라이브러리의 조합은 백엔드를 더 간결하게 만들어주지만 여전히 매우 안정적이며 특정 데이터 품질을 보장하여 LLM(언어 모델) 출력이 예상대로 나오도록 합니다.
 
@@ -442,7 +686,18 @@ TMDB 클라이언트 클래스는 httpx를 사용하여 TMDB API에 대한 요�
 
 httpx는 Python 라이브러리 세계에서 주목받는 존재입니다. 오랫동안 HTTP 요청을 수행하는 데 사용되었던 requests에 대안으로 httpx가 제공됩니다. 그 중요한 강점 중 하나는 비동기 기능입니다. httpx를 사용하면 동시에 여러 요청을 처리할 수 있는 코드를 작성할 수 있어, HTTP 상호작용이 많은 응용 프로그램에서 상당한 성능 향상을 기대할 수 있습니다. 게다가 httpx는 requests와의 넓은 호환성을 지향하여 개발자가 더 쉽게 익힐 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젬니미 무비 디텍티브 서비스에서는 주로 두 가지 요청이 있어요:
 
@@ -466,7 +721,18 @@ def get_movie_details(self, movie_id: int):
     return movie
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 TMDB(The Movie Database)의 데이터에 액세스하는 것은 비상업적 용도로 무료입니다. API 키를 생성하고 요청을 시작할 수 있습니다.
 
@@ -476,7 +742,18 @@ Gemini를 통해 VertexAI를 사용하기 위해서는 VertexAI가 활성화된 
 
 ![이미지](/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 신규 프로젝트를 생성한 후 APIs 및 서비스로 이동하십시오. API 및 서비스 활성화 - VertexAI API를 검색하여 활성화합니다.
 
@@ -486,7 +763,18 @@ Gemini를 통해 VertexAI를 사용하기 위해서는 VertexAI가 활성화된 
 
 ![이미지](/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 계정에 미리 정의된 역할 Vertex AI 사용자를 할당해주세요.
 
@@ -496,7 +784,18 @@ Gemini를 통해 VertexAI를 사용하기 위해서는 VertexAI가 활성화된 
 
 ![image](/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Google의 Gemini와 Python을 사용하여 VertexAI를 통해 작업을 시작하려면 다음과 같이 프로젝트에 필요한 종속성을 추가해야 합니다:
 
@@ -523,7 +822,18 @@ model = GenerativeModel(model)
 chat_session = model.start_chat()
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 chat.send_message()를 사용하여 모델에 프롬프트를 전송할 수 있습니다. 그러나 데이터 조각들로 응답을 받게 되므로, 간단한 도우미 함수를 사용하는 것을 추천합니다. 이렇게 하면 단순히 전체 응답을 하나의 문자열로 받게 됩니다:
 
@@ -535,6 +845,7 @@ def get_chat_response(chat: ChatSession, prompt: str) -> str:
         text_response.append(chunk.text)
     return ''.join(text_response)
 ```
+
 이제 전체 예제는 이렇게 보일 수 있습니다:
 
 ```js
@@ -569,7 +880,18 @@ response = get_chat_response(
 print(response)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젠티미니가 다음과 같은 응답을 제공했습니다:
 
@@ -579,18 +901,29 @@ print(response)
 
 이를 사용할 때 또 다른 팁: send_message 함수의 generation_config 매개변수를 통해 생성 구성을 설정할 수도 있습니다. 예를 들어:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 generation_config = {
-    'temperature': 0.5
-}
+  temperature: 0.5,
+};
 
 responses = chat.send_message(
-    prompt,
-    generation_config=generation_config,
-    stream=True
-)
+  prompt,
+  (generation_config = generation_config),
+  (stream = True)
+);
 ```
 
 저는 Gemini Movie Detectives에서 온도를 0.5로 설정하기 위해 이것을 사용하고 있습니다. 이는 최상의 결과를 제공했습니다. 이 문맥에서 온도란 무엇이죠? 바로 Gemini가 생성하는 응답이 얼마나 창의적인지를 나타냅니다. 이 값은 0.0과 1.0 사이여야 하며, 1.0에 가까울수록 더 많은 창의성을 의미합니다.
@@ -599,7 +932,18 @@ responses = chat.send_message(
 
 프로젝트에서 배운 점 중 하나는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, Gemini의 질문 프롬프트에는 다음 지침이 포함되어 있습니다:
 
@@ -614,11 +958,33 @@ responses = chat.send_message(
 
 대신, 구조와 주요 기호에 집중하세요. 이 답변은 다음과 같이 읽어주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 테이블 태그를 Markdown 형식으로 변경하실수 있나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 외에도, 저는 Gemini 클라이언트를 구성 가능한 클래스로 래핑했습니다. 전체 구현은 Github에서 오픈 소스로 확인하실 수 있어요.
 
@@ -628,7 +994,18 @@ responses = chat.send_message(
 
 질문을 생성하는 하나의 기본 템플릿과 답변을 평가하는 하나의 기본 템플릿이 있습니다. 그 외에도 최신 영화 데이터로 프롬프트를 보강하는 메타데이터 템플릿이 있습니다. 더 나아가, 언어 및 성격 템플릿이 있으며, 각 옵션에 대한 템플릿 파일이 있는 별도의 폴더로 구성되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-20-CreateanAI-DrivenMovieQuizwithGeminiLLMPythonFastAPIPydanticRAGandmore_11.png" />
 
@@ -638,7 +1015,18 @@ Jinja2를 사용하면 템플릿 상속과 같은 고급 기능을 사용할 수
 
 # 프론트엔드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 젬니니 무비 디텍티브 프론트엔드는 네 가지 주요 구성 요소로 나뉘어 있으며, vue-router를 사용하여 이들 간에 이동합니다.
 
@@ -648,7 +1036,18 @@ Jinja2를 사용하면 템플릿 상속과 같은 고급 기능을 사용할 수
 
 게다가 각 퀴즈는 백엔드에서 세션 ID가 할당되고 제한된 LRU 캐시에 저장됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디버깅 목적으로이 구성 요소는 api/sessions 엔드포인트에서 데이터를 가져옵니다. 이는 캐시에서 모든 활성 세션을 반환합니다.
 
@@ -658,7 +1057,18 @@ Jinja2를 사용하면 템플릿 상속과 같은 고급 기능을 사용할 수
 
 # API 예제
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당연히 프론트엔드를 사용하여 애플리케이션과 상호작용하는 것이 좋지만, API만 사용하여도 가능합니다.
 
@@ -682,7 +1092,18 @@ curl -s -X POST https://movie-detectives.com/api/quiz \
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시는 퀴즈 언어를 변경하는 방법을 보여줍니다:
 
@@ -706,15 +1127,24 @@ curl -s -X POST https://movie-detectives.com/api/quiz \
 
 그리고 API 호출을 통해 퀴즈에 대답하는 방법입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 curl -s -X POST https://movie-detectives.com/api/quiz/84c19425-c179-4198-9773-a8a1b71c9605/answer \
   -H 'Content-Type: application/json' \
   -d '{"answer": "Greenland"}' | jq .
 ```
-
 
 ```js
 {
@@ -733,8 +1163,18 @@ curl -s -X POST https://movie-detectives.com/api/quiz/84c19425-c179-4198-9773-a8
 
 기본 프로젝트를 완료한 후에 모듈형 프롬프트 접근 방식으로 더 많은 퍼스널리티와 언어를 추가하는 것이 쉬웠습니다. 이것은 게임 디자인 및 개발을 위한 가능성을 열어준 것에 감명받았습니다. 다른 퍼스널리티를 추가함으로써 순수한 영화 교육 게임에서 코미디 퀴즈 "You Don't Know Jack"과 같은 게임으로 한 분 내에 게임을 변경할 수 있었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 여기서 마무리입니다! 이제 여러분은 자신만의 LLM을 활용한 웹 애플리케이션을 만들 준비가 되었어요.
 
@@ -743,6 +1183,17 @@ curl -s -X POST https://movie-detectives.com/api/quiz/84c19425-c179-4198-9773-a8
 - 🚀 백엔드의 Github 저장소: https://github.com/vojay-dev/gemini-movie-detectives-api
 - 🖥️ 프론트엔드의 Github 저장소: https://github.com/vojay-dev/gemini-movie-detectives-ui
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AI 기반 애플리케이션의 미래는 밝으며, 당신이 페인트붓을 쥐고 있습니다! 함께 놀라운 것을 만들어봅시다. 그리고 쉬는 시간이 필요하다면 https://movie-detectives.com/을 자유롭게 이용해보세요!

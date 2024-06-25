@@ -3,14 +3,12 @@ title: "과다 고용이 모든 사람들을 위한 시장을 망치고 있다"
 description: ""
 coverImage: "/assets/img/2024-05-17-OverEmploymentIsRuiningtheMarketforEveryone_0.png"
 date: 2024-05-17 17:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-OverEmploymentIsRuiningtheMarketforEveryone_0.png
 tag: Tech
 originalTitle: "Over Employment Is Ruining the Market for Everyone"
 link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyone-0ea0de91627a"
 ---
-
-
 
 ![2024-05-17-OverEmploymentIsRuiningtheMarketforEveryone_0](/assets/img/2024-05-17-OverEmploymentIsRuiningtheMarketforEveryone_0.png)
 
@@ -21,8 +19,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 지루했고 미래에 대해 불안했으며 온라인으로 돈을 벌기 위한 새로운 방법을 시도해봐도 완전히 생산적이라고 느끼지 않았어요. 그래서 저는 이전 직장은 유지하면서 다른 정규직을 찾기로 결심했어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 몇 달 후에 현지 은행에서 새 팀을 구축하기 위한 로봇을 만들기 시작했다는 연락을 받았어요. 회사가 새로운 팀을 만들면 진정한 책임이 없다고 하는 게 큰 장점이었어요.
 
@@ -32,7 +40,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 나에게 초과 근무는 새로운 경험을 살아보기 위한 몇 달의 기간이었어요. 이덕분에 도덕적으로 옳지 않았고(그건 알고 있어요), 마지막으로는 그냥 제게는 아니었다는 생각이 드네요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 많은 사람들에게는 이게 새로운 일상이 되어가고 있어요.
 
@@ -42,7 +61,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 # 왜 과다 고용이 모두를 위해 시장을 망치고 있는지에 대한 이유.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전 세계에는 100,000명의 프로그래머가 있고 150,000개의 취업 기회가 있다면, 이 직업에서 승진할 수 있는 새로운 방법이 항상 있을 것입니다.
 
@@ -52,7 +82,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 지금은 8년 이상 경력을 가진 시니어 풀 스택 개발자에게 월 4,500달러 (연 54,000달러), 부서 전체를 담당하는 팀 리더에게는 7,000달러를 요구하는 회사들도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아무도 모르는 기술 (.NET Core 또는 React/Angular 중 하나)만 알고 시장에 처음 발을 디딘 사람에 대한 초기 급여는 과거에는 좀 낮은 수준이었습니다.
 
@@ -62,17 +103,39 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 ![image](/assets/img/2024-05-17-OverEmploymentIsRuiningtheMarketforEveryone_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이런 일이 발생하는 이유는 많은 시니어 개발자들이 월 수입이 $7000에서 $15,000인 중간급 업무를 찾기로 결정하여 많이 일하지 않아도 일을 할 수 있다고 판단했기 때문입니다. 비록 수입이 적을지라도 추가 수입이기 때문입니다.
 
-따라서 이제 모집업체와 기업들은 반값에 충분히 좋은 인재를 구할 수 있다는 것을 알게 되었습니다. 
+따라서 이제 모집업체와 기업들은 반값에 충분히 좋은 인재를 구할 수 있다는 것을 알게 되었습니다.
 
 중간급 직급의 사람들이 첫 직장을 가지면서 빛을 발휘할 수 있도록 주니어 포지션을 차지하기 시작했습니다. 시니어들은 주요 포지션을 유지하면서 빠르게 작업할 수 있는 중간급 포지션을 차지하기 시작했습니다. 일자리가 없는 사람들은 더 이상 제안이 없기 때문에 시니어 포지션을 저렴한 가격에 차지하기 시작했습니다.
 
 지금은 더 이상 주니어 개발자를 위한 포지션이 없습니다. 현재 진입하는 사람들은 뛰어난 실력을 증명하지 않는 한 일자리를 얻기 어려울 것입니다. 왜냐하면 사람들이 나타나는 것을 차지하고 있기 때문이죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 150,000 개의 제안 중 60,000 명에 의해 모두 차지되어 40,000 명은 일자리가 없어서 빌을 갚기 위해 어떤 급여라도 받아들이고 있습니다.
 
@@ -82,7 +145,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 안타까운 사실은 이미 좋은 급여를 받는 기술직 종사자들이 가장 많이 과로한 상태라는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 개의 직장을 얻기 전에 수입이 훌륭했어요. 모든 빌을 지불하고 매달 월급의 적어도 40%를 저축할 수 있었죠. 저는 여분의 시간이 있었고 더 많은 돈을 벌 수 있는 쉬운 방법이기 때문에 두 개의 일을 가지기로 결정했어요.
 
@@ -92,7 +166,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 내가 알고 있는 주위 사람들 중 두 개의 직장을 한 사람들은 비슷한 이유에서 그랬어요. 그들은 두 번째 직장을 얻었고 부유한 수입에 익숙해졌기 때문이었어요. 듣은 몇 가지 이유는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - "리쿠루터가 연락을 주었고, 경험을 얻기 위해서 '예'라고 했어요."
 - "직장 안정성을 원해요" (현재 직장에서 문제가 없어요).
@@ -106,7 +191,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 하지만 다른 직업은 누군가의 가족을 먹여살릴 전업직이 될 수도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시장이 정말 힘든 이유는 일자리 제공보다 일할 필요가 있는 개발자가 더 많기 때문입니다.
 
@@ -116,7 +212,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 만약 회사가 원격 근무자의 현재 성과에 만족하고 있다면, 그들이 다른 일자리를 가지고 있다고 의심할 방법이 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 기업들이 사무실로 복귀하기로 결정했습니다. 한 사람이 하나의 직장만 가지고 있는지 확인할 수 있기 때문입니다. 그러나 이는 누구에게나 불가능합니다. 특히 실제 장소를 가지고 있는 비용 때문에 그렇습니다.
 
@@ -126,7 +233,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 하지만 이는 사람들이 다른 선택지를 찾는 것을 막지는 못했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 것은 결국 각 개인의 도덕성과 몇 년 동안 이런 방식으로 일한 후에 얼마나 지친 것인지에 달려 있을 것입니다.
 
@@ -136,7 +254,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 이 모든 일이 벌어진 이유는 초과 수요 때문이라기보다는 더 많은 노동자가 있는 것 때문은 아닙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 일자리 시장이 매우 어렵기 때문에 두 개 이상의 직장을 가지고 있는 사람들이 많기 때문입니다.
 
@@ -146,7 +275,18 @@ link: "https://medium.com/swlh/over-employment-is-ruining-the-market-for-everyon
 
 저는 두 개의 일을 하는 것을 후회합니다. 더 많은 돈을 버는 대신에 정신 건강과 휴식을 희생한 것 같아요. 결국 두 개의 일 중 하나에서 성과가 나빠졌습니다. 더 열심히 공부했다면, 두 곳에서 일하지 않고 더 나은 위치에 있을 수 있지 않았을까 싶어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이미 너무 늦었어요. 두 개의 일을 가지는 것이 너무 보편화되어서 많은 사람들의 성장 기회를 망쳤어요.
 

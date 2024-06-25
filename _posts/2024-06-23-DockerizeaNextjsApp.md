@@ -3,13 +3,12 @@ title: "Nextjs 앱을 Dockerize하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-DockerizeaNextjsApp_0.png"
 date: 2024-06-23 00:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-DockerizeaNextjsApp_0.png
 tag: Tech
 originalTitle: "Dockerize a Next.js App"
 link: "https://medium.com/@itsuki.enjoy/dockerize-a-next-js-app-4b03021e084d"
 ---
-
 
 만약 Vercel에 Next.js 앱을 배포하고 싶다면, 이 경우에는 컨테이너가 필요하지 않습니다. Next.js는 Vercel에서 만들어지고 유지보수되기 때문에 배포가 쉽게 가능합니다. 그러나 AWS, Google Cloud Run 또는 다른 클라우드 공급업체를 통해 앱을 실행하려는 경우에는 컨테이너가 필요합니다.
 
@@ -19,13 +18,24 @@ link: "https://medium.com/@itsuki.enjoy/dockerize-a-next-js-app-4b03021e084d"
 
 가지고 계신 Next.js 프로젝트 중 하나를 사용하거나, 공식 Vercel에서 제공하는 예제 중 하나를 클론해 시작하세요. 온라인에서 찾은 다른 해결책들은 애플리케이션을 독립 실행형 애플리케이션으로 빌드하기 위해 next.config.js에 다음 라인들을 추가하는 것이 필수적이라고 제안했지만, 그것을 추가하지 않고도 모든 것이 잘 작동하는 것을 발견했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 const nextConfig = {
-  output: 'standalone', // 이 줄이 없어도 잘 작동했다.
+  output: "standalone", // 이 줄이 없어도 잘 작동했다.
   // ... 다른 설정
-}
+};
 ```
 
 ## DockerFile
@@ -34,7 +44,18 @@ const nextConfig = {
 
 제가 만든 두 가지 버전의 Dockerfile을 공유하겠습니다. 하나는 개발 단계/서버 테스트용으로 확실하고 기본적인 단일 단계 버전이며, 다른 하나는 개발 및 프로덕션 모두에 사용할 수 있는 docker-compose.yml과 함께 다중 단계 버전입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단계별 DockerFile
 
@@ -53,7 +74,18 @@ CMD npm run dev
 
 먼저, Docker에 공식 Docker Node 이미지 버전 18을 사용하도록 From node:18을 통해 설정한다. FROM 뒤에 오는 내용을 변경하여 사용하고 싶은 이미지로 변경할 수 있다. 지원되는 목록은 여기에서 확인할 수 있다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 WORKDIR은 이후 명령의 컨텍스트를 설정합니다. 이름은 원하는 대로 지정할 수 있어요. 저는 제 앱을 app이라고 부르겠습니다. 그리고 package.json과 package-lock.json 파일을 컨테이너로 복사한 다음 npm install을 실행하여 모든 종속성을 설치합니다.
 
@@ -63,7 +95,18 @@ Expose 3000은 컨테이너에게 앱이 3000 포트에서 실행된다는 것�
 
 모든 설정을 끝낸 후에는 CMD npm run dev로 컨테이너에게 개발 서버를 시작하도록 요청합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Dockerfile로 작업을 마쳤습니다!!
 
@@ -75,7 +118,18 @@ docker build -t my-app .
 
 이미지가 생성되면, 다음과 같이 실행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 런 -p 3000:3000 my-app
@@ -87,7 +141,18 @@ docker build -t my-app .
 
 이제 다중 단계 Dockerfile을 만들어서 더 빠르고 효율적인 빌드를 할 수 있게 하고, 운영 환경과 개발 환경을 쉽게 전환할 수 있게 될 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 파일에 있는 내용을 모두 삭제하고 다음 내용으로 대체해주세요.
 
@@ -124,7 +189,7 @@ CMD npm start
 
 FROM base as dev
 ENV NODE_ENV=development
-RUN npm install 
+RUN npm install
 COPY . .
 CMD npm run dev
 ```
@@ -133,7 +198,18 @@ CMD npm run dev
 
 빌더 단계는 사실상 npm run build를 담당합니다. 이 단계는 production 단계에서 이미 존재하지 않은 경우 COPY — from=builder를 시도할 때 호출됩니다. 보세요? 다중 단계 Dockerfile이 유용한 점이 여기에 있습니다. 빌더 단계는 필요할 때만 호출됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 프로덕션 단계에서 NODE_ENV를 production으로 설정하고, 이렇게 하면 성능이 세 배 향상된다고 합니다. 그 다음으로, npm ci를 실행합니다. 이것은 npm install 대신에 지속적인 통합을 위해 사용됩니다.
 
@@ -143,7 +219,18 @@ CMD npm run dev
 
 마지막으로, npm start를 호출하여 어플리케이션을 시작합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발 스테이지에서는 싱글 스테이지 Dockerfile에서 한 것과 기본적으로 똑같은 작업을 하고 있기 때문에 넘어가도록 할게요.
 
@@ -153,7 +240,18 @@ docker-compose.yml을 생성하기 전에 Dockerfile이 실제로 빌드되는�
 
 Docker Compose를 사용하면 긴 명령어를 기억할 필요가 없어요. docker-compose build 및 docker-compose up 명령어를 간편하게 사용할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루트 디렉토리에 다음 내용을 가진 docker-compose.yml 파일을 추가해주세요.
 
@@ -178,7 +276,18 @@ services:
 
 Build context는 현재 디렉토리를 지정하며, target은 Docker 이미지를 빌드할 단계를 지정합니다. 프로덕션에서 실행하려면 단순히 target:production으로 설정하시면 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Volume은 호스트의 ./ 로컬 디렉토리의 내용을 Docker 컨테이너의 /app 디렉토리로 복사하도록 지시합니다.
 
@@ -188,7 +297,18 @@ Volume은 호스트의 ./ 로컬 디렉토리의 내용을 Docker 컨테이너�
 
 마침내 Docker 이미지를 빌드하는 과정에 도달했습니다. 더 빠른 빌드를 위해 Docker의 BuildKit 기능을 사용할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose build
@@ -202,7 +322,18 @@ docker-compose up
 
 그 다음에 브라우저에서 http://localhost:3000 로 이동하면 앱이 실행 중인 것을 볼 수 있어요!!!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그게 다야!
 
@@ -213,7 +344,18 @@ docker-compose up
 - Python이 명령줄이나 npm 구성에서 설정되지 않았습니다: (맥 사용자로서) python을 경로에 추가하거나 python을 python3로 별칭 지정, python 삭제 및 다시 설치 등 많은 시도를 해보았지만 어떤 것도 제겐 도움이 되지 않았어요. 그래서 제가 찾아낸 두 가지 해결책을 여기에 소개할게요. (1) node:18(또는 기호하는 다른 버전) 대신 node:18-alpine을 사용하세요. (2) 패키지 설치 전에 RUN apk add --no-cache g++ make py3-pip libc6-compat 를 추가하세요.
 - Docker-compose up을 사용할 때 '/app/.next' 디렉토리에서 프로덕션 빌드를 찾을 수 없음: docker run을 통해 이미지를 실행했을 때는 모든 것이 예상대로 작동했습니다. 해결 방법은 Dockerfile에서 CMD npm start 앞에 CMD ["npm","run","build"]를 추가하는 것을 제안하는 솔루션이 있지만, 이렇게 하면 두 개의 CMD를 허용하지 않는 오류가 발생했어요. 제 해결책은 Docker-compose.yml의 volumes에 — /app/.next를 추가하는 것이었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오늘은 여기까지입니다!
 

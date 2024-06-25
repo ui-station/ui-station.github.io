@@ -18,7 +18,18 @@ link: "https://medium.com/itnext/securing-modular-monolith-with-oauth2-and-sprin
 
 제3부: Hexagonal Architecture를 활용한 모듈식 단일체에서 도메인 중심 사고 채택
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모듈화된 모노리틱 코드베이스에서는 각 기능이 다른 모듈과 순환 종속성이 없는 모듈에 구현되어야 합니다. 그러나 보안과 같은 교차 관심사가 적용되어야 할 때, 보안 관련 코드는 어디에 배치해야 할까요? 각 모듈에 있어야 할까요? 아니면 별도의 모듈이어야 할까요? 함께 알아보겠습니다.
 
@@ -28,7 +39,18 @@ link: "https://medium.com/itnext/securing-modular-monolith-with-oauth2-and-sprin
 
 코드 구조와 모듈 조직에 대한 토론에 앞서, OAuth2에 대한 간단한 개요부터 살펴보겠습니다. 이미 알고 계시다면 이 섹션을 건너뛰어도 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OAuth2를 이해할 수 있는 많은 훌륭한 리소스들이 있기 때문에 여기에서는 세부적인 내용을 다루지 않겠습니다. 대신 OAuth2를 활용한 솔루션을 설계하는 방법에 대해 이야기하려고 합니다.
 
@@ -38,7 +60,18 @@ OAuth2 솔루션을 구축할 때 가장 중요한 구성 요소는 인가 서�
 
 UI가 없는 경우, 이 흐름을 사용하여 API를 테스트할 수 있습니다: 클라이언트(Postman이나 Insomnia)는 사용자를 인증하고 액세스 토큰을 획득하기 위해 인가 서버(Keycloak)를 호출합니다. 이 액세스 토큰을 사용하면 클라이언트가 리소스 서버(도서관 어플리케이션)의 데이터에 액세스할 수 있습니다. 이는 Authorization Code Flow로도 알려져 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 스프링 시큐리티를 사용한 OAuth2
 
@@ -64,7 +97,18 @@ UI가 없는 경우, 이 흐름을 사용하여 API를 테스트할 수 있습�
 
 그 다음으로, OAuth2 리소스 서버를 활성화 하기 위해 스프링 시큐리티를 구성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Configuration
@@ -100,7 +144,18 @@ spring:
           issuer-uri: http://localhost:8083/realms/library
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 보안을 위한 새로운 모듈
 
@@ -122,24 +177,44 @@ spring:
     └── LibraryWebSecurityConfiguration.java
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대출 및 카탈로그 모듈은 현재 인증된 사용자의 세부 정보를 가져와 관련 도메인 모델과 매핑하는 데 사용자 계정 모듈을 사용합니다. 새로운 기능을 위한 미래 모듈도 해당 모듈을 사용할 가능성이 높습니다. 이는 사용자 계정 모듈을 공유 모듈로 만들어줍니다. Spring Modulith는 모듈을 공유로 지정할 수 있는 방법을 제공합니다.
 
 Markdown 형식의 테이블로 변환하면 다음과 같습니다.
 
-
-| 모듈 | 설명 |
-| ----- | -----|
-| 대출 | 사용자 계정 모듈을 사용하여 현재 승인된 사용자의 세부 정보를 가져옵니다. |
+| 모듈     | 설명                                                                     |
+| -------- | ------------------------------------------------------------------------ |
+| 대출     | 사용자 계정 모듈을 사용하여 현재 승인된 사용자의 세부 정보를 가져옵니다. |
 | 카탈로그 | 사용자 계정 모듈을 사용하여 현재 승인된 사용자의 세부 정보를 가져옵니다. |
-
 
 @SpringBoot 애플리케이션 클래스에 @Modulithic 어노테이션을 설정하고 공유 모듈을 정의할 수 있습니다. 이렇게 하면 Spring Modulith가 항상 사용자 계정 모듈을 부트스트랩하도록 할 수 있습니다.
 
 ## 모듈에서 인증된 사용자 식별하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인증된 사용자는 UserAccount 레코드로 모델링됩니다. 사용자 세부 정보를 영속화할 필요가 없기 때문에 이를 집계로 정의하지 않습니다. 사용자, 역할 및 자격 증명의 참 소스는 Keycloak입니다.
 
@@ -165,7 +240,18 @@ ResponseEntity<HoldDto> holdBook(@RequestBody HoldRequest request, @Authenticate
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자 계정은 새로운 PatronId(userAccount.email())와 매핑되어 있습니다. CirculationDesk 서비스는 인증 방식에 대한 지식 없이 특정 Patron만을 다룹니다.
 
@@ -176,7 +262,18 @@ ResponseEntity<HoldDto> holdBook(@RequestBody HoldRequest request, @Authenticate
 - 도서관 직원만이 카달로그에 새 책을 추가할 수 있습니다.
 - 다른 회원이 대출한 책을 대출할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 요구 사항을 도메인 모델에 매핑해 봅시다. 현재 Library Staff 구성원에 대한 모델이 없습니다. 이를 ROLE_STAFF 역할을 갖는 인증된 사용자로 정의할 수 있습니다. 두 번째 요구 사항은 이미 있는 도메인 모델인 Patron으로 모델에 변경이 필요하지 않습니다.
 
@@ -193,7 +290,18 @@ ResponseEntity<BookDto> addBookToInventory(@RequestBody AddBookRequest request) 
 
 사용자의 역할은 JWT 토큰에서 식별됩니다. 역할이 어느 클레임에서 사용 가능할지는 인가 서버가 결정합니다. 저희의 경우 Keycloak에서는 realm*access.roles[] 클레임에서 역할을 사용할 수 있습니다. Spring Security가 역할로 인식하려면 역할에는 기본적으로 ROLE* 접두사가 있어야 하지만, GrantedAuthorityDefaults를 사용하여 변경할 수도 있습니다. 토큰 처리 중에 각 역할을 GrantedAuthority로 변환합니다. Authorization 결정을 내릴 때 AccessDecisionManager에 의해 이러한 권한이 읽힙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 번째 요구 사항이 더 흥미롭습니다. 권한 규칙인지 비즈니스 규칙인지 어떻게 판단해야 할까요? 리소스에 대한 액세스를 설명하고 있기 때문에 권한 규칙으로 보이지만, 반대로 도메인의 기능을 설명하고 있기 때문에 비즈니스 규칙으로도 볼 수 있습니다. 그렇다면 이를 어떻게 구현해야 할까요?
 
@@ -219,7 +327,18 @@ public CheckoutDto checkout(Hold.Checkout command) {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인증 규칙이 복잡해지면 비즈니스 규칙과 중첩될 수 있습니다. 일반적으로 인가 규칙은 "누가 무엇에 액세스할 수 있는지"에 관심이 있으며, 비즈니스 규칙은 "시스템 및 도메인의 동작"에 관심이 있습니다. 인가 주변에 복잡한 규칙이 많다면, 모든 정책을 한 곳에 모아 쉽게 관리할 수 있는 ABAC 솔루션을 구축하는 것이 좋은 아이디어일 수 있습니다.
 
@@ -229,7 +348,18 @@ UI가 없으므로 Insomnia(REST 클라이언트)를 사용하여 라이브러�
 
 애플리케이션의 최신 코드는 여기에서 확인할 수 있습니다: https://github.com/xsreality/spring-modulith-with-ddd/tree/part-4-authentication. 로컬에서 코드를 확인하고 mvn spring-boot:build-image를 실행하여 애플리케이션의 로컬 도커 이미지를 빌드해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 컴포즈를 실행하여 Keycloak과 애플리케이션을 시작하세요. 이 Keycloak은 realm이라는 이름의 렘을 미리 구성했으며 ROLE_STAFF 역할 및 두 사용자인 john.wick@continental.com 및 winston@continental.com을 정의했습니다. Winston은 도서관 직원입니다. 두 계정의 암호는 "password"입니다.
 
@@ -239,7 +369,18 @@ UI가 없으므로 Insomnia(REST 클라이언트)를 사용하여 라이브러�
 
 다음으로 Insomnia를 설정하여 OAuth2 플로우를 트리거합니다. 아래 스크린샷에 따라 설정을 선택하고 토큰을 가져옵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-27-SecuringModularMonolithwithOAuth2andSpringSecurity_3.png" />
 
@@ -249,7 +390,18 @@ UI가 없으므로 Insomnia(REST 클라이언트)를 사용하여 라이브러�
 
 Spring Security OAuth2 플로우를 JWT로 통합 테스트하는 아이디어는 전체 OAuth 플로우를 건너뛰고(결국 복잡하기 때문에 서명을 유효성 검사하는 것이 테스트의 중점이 아님) 대신 목킷 JWT를 사용하여 인증 후의 비즈니스 로직을 테스트하는 것입니다. 권한 관점에서는 유효한 인증된 사용자가 나타나므로 권한 규칙을 테스트하기가 쉽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 요구 사항을 테스트해 보겠습니다. 카탈로그에 책을 추가하는 테스트를 하려면 역할 ROLE_STAFF가 포함된 JWT 토큰이 필요합니다.
 
@@ -266,47 +418,63 @@ void setUp() {
 
 역할 ROLE_STAFF를 가진 인증된 사용자를 시뮬레이션하기 위해 권한을 포함한 가짜 JWT 토큰을 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 @Test
 void addBookToCatalogSucceedsWithStaff() throws Exception {
-    mockMvc.perform(post("/catalog/books")
-                    .with(jwt().authorities(new SimpleGrantedAuthority("ROLE_STAFF")))
-                    .contentType(MediaType.APPLICATION_JSON)
-                    .content("""
-                            {
-                              "title": "Sapiens",
-                              "catalogNumber": "12345",
-                              "isbn": "9780062316097",
-                              "author": "Yuval Noah Harari"
-                            }
-                            """))
-            .andExpect(status().isOk())
-            .andExpect(jsonPath("$.id").exists())
+mockMvc.perform(post("/catalog/books")
+.with(jwt().authorities(new SimpleGrantedAuthority("ROLE_STAFF")))
+.contentType(MediaType.APPLICATION_JSON)
+.content("""
+{
+"title": "Sapiens",
+"catalogNumber": "12345",
+"isbn": "9780062316097",
+"author": "Yuval Noah Harari"
+}
+"""))
+.andExpect(status().isOk())
+.andExpect(jsonPath("$.id").exists())
             .andExpect(jsonPath("$.catalogNumber.barcode", equalTo("12345")))
-            .andExpect(jsonPath("$.isbn", equalTo("9780062316097"))
+.andExpect(jsonPath("$.isbn", equalTo("9780062316097"))
             .andExpect(jsonPath("$.author.name", equalTo("Yuval Noah Harari"));
-
 
 만약 역할이 없는 경우 403 Access Denied 응답이 반환되며, 헤더에는 WWW-Authenticate:"Bearer error="insufficient_scope", error_description="The request requires higher privileges than provided by the access token.", error_uri="https://tools.ietf.org/html/rfc6750#section-3.1""가 포함됩니다.
 
 두 번째 요구 사항에서는 대출 모듈은 인증된 사용자의 이메일 주소에서 Patron을 식별합니다. 따라서 가짜 JWT 토큰에는 이메일 클레임이 필요합니다. 이 작업은 쉽게 할 수 있습니다.
 
-
 @Test
 void checkoutBookRestCall() throws Exception {
-    mockMvc.perform(post("/borrow/holds/018dc74a-4830-75cf-a194-5e9815727b02/checkout")
-                    .with(jwt().jwt(jwt -> jwt.claim("email", "john.wick@continental.com"))))
-            .andExpect(jsonPath("$.holdId", equalTo("018dc74a-4830-75cf-a194-5e9815727b02"))
+mockMvc.perform(post("/borrow/holds/018dc74a-4830-75cf-a194-5e9815727b02/checkout")
+.with(jwt().jwt(jwt -> jwt.claim("email", "john.wick@continental.com"))))
+.andExpect(jsonPath("$.holdId", equalTo("018dc74a-4830-75cf-a194-5e9815727b02"))
             .andExpect(jsonPath("$.patronId", equalTo("john.wick@continental.com"))
-            .andExpect(jsonPath("$.dateOfCheckout").exists());
+.andExpect(jsonPath("$.dateOfCheckout").exists());
 }
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 발급자 URI 대 JWK Set URI
 
@@ -316,7 +484,18 @@ OAuth2 사양의 주요 요구 사항 중 하나는 권한 부여 서버의 발�
 
 이 문제를 해결하는 한 가지 방법은 application.yaml 대신 JWK Set URI를 직접 구성하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 spring:
@@ -333,9 +512,17 @@ spring:
 
 Spring Security에 대해 더 말할 수 있는 부분이 많이 있습니다. 그러나 이 블로그에서는 Spring Security 관련 코드가 모듈식 모놀리스 코드베이스에 어떻게 들어 맞는지 살펴보았습니다. 또한 Spring Security를 사용하여 OAuth2 플로우를 구현하고 설정을 통합 테스트했습니다.
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 코드를 확인하고 실행해보고 싶다면 아래를 확인해보세요.
-

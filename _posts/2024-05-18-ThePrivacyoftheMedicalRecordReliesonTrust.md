@@ -3,13 +3,12 @@ title: "의료 기록의 개인 정보는 신뢰에 달려 있습니다"
 description: ""
 coverImage: "/assets/img/2024-05-18-ThePrivacyoftheMedicalRecordReliesonTrust_0.png"
 date: 2024-05-18 21:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-ThePrivacyoftheMedicalRecordReliesonTrust_0.png
 tag: Tech
 originalTitle: "The Privacy of the Medical Record Relies on Trust"
 link: "https://medium.com/corporateunderbelly/the-privacy-of-the-medical-record-relies-on-trust-f319f92d9b6c"
 ---
-
 
 ## 프린세스 케이트의 의료 기록 뉴스
 
@@ -19,7 +18,18 @@ link: "https://medium.com/corporateunderbelly/the-privacy-of-the-medical-record-
 
 다양한 의료 서비스 유형의 면허에 대해 많은 규정과 규정이 존재합니다. 부서장으로서, 저는 해당 규정을 알아야만 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전자 의료 기록이 신뢰에 의존한다는 사실에 놀랐어요. 환자에 할당된 의료진만이 컴퓨터를 보고 그 환자의 기록을 볼 수 있는 권한이 있었죠. 병원 관련 의사 결정을 위해 차트를 검토하고 다른 제한적이고 합법적인 이유로 의료 기록을 열어 본 사람들도 모두 필요에 따라 열어본 거예요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/corporateunderbelly/the-privacy-of-the-medical-record-
 
 뉴스 매체에서는 무단으로 연예인 의료 기록을 엿본 직원들에 대한 이야기를 다루었어요. 프린세스 케이트와 알려지지 않은 수술로 입원한 일이 지금 의료 기록 유출 사례로 뉴스에 소개되고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 의료 센터들은 자신들의 단점을 공개하고 싶어하지 않을 것이기 때문에, 이 뉴스 이야기가 언론에서 판매되거나 보도될 수 있는 것을 막기 위한 예방적인 움직임이라고 생각해요. 런던 클리닉은 이 이야기가 공개될 수 있는 다른 이유가 있다면 적극적으로 대응할 지도 모를 거예요. 또한 다른 직원들에게 의료 기록에 접근하지 말라는 경고로 작용합니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/corporateunderbelly/the-privacy-of-the-medical-record-
 
 저희 병원에서 행동 건강 기록을 검토해야 할 경우에는, 그 기록을 검토할 필요가 있는 의료 직원이 그것에 접근할 수 있도록 하기 위해, 컴퓨터 화면에 메디컬 필요성에 관한 추가적인 경고문을 건너야 했어요. 판단력에 영향을 미치는 상태로 치료받으면서 시스템에서 활동 중인 의료 시스템 직원에 대해 제가 부사장인 상급 간부에게 상담을 요청했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의료기록의 개인정보 보호 목적이 절대적이라는 것을 그녀가 말했습니다. 그 정보를 전달할 수 없었어요. 의사와 환자 사이의 것이기 때문이에요. 유일한 결정권은 입원 여부 뿐이었습니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/corporateunderbelly/the-privacy-of-the-medical-record-
 
 한 명의 의사가 쓴 한 문장으로부터 우리를 판단하던 주요 수사관과 오해가 있었어요. 수백 개의 전자 페이지로 이루어진 차트에 숨겨진 그 문장 때문에 책임을 져야 했어요. 그 지시사항에 대해 우리가 책임을 져야 했었어요. 의사는 자신의 메모에 관심을 끌지 못해 매우 미안해했고, 컴퓨터 다른 곳에 입력했어야 했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 국가 조사관은 전체 차트를 읽는 데 약 여덟 시간이 필요하다는 것을 이해하지 못했어요. 전체 차트를 읽는 간호사는 교대를 시작하지 못할 거예요. 그래서 그녀는 최신 업데이트를 읽었어요. 의료 상태에 변화가 있는지 여부로만 차트를 확인했어요. 국가 조사관은 환자와 작업하는 의료진에게 "전체 차트를 읽을 것을 예상했다"고 언급했어요.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/corporateunderbelly/the-privacy-of-the-medical-record-
 
 우리 시스템을 업데이트했을 때, 각 부서에서 필요한 여러 작은 수정이 있었어요. 우리에게 그 업데이트의 예가 눈에 보이지 않던 기록에 날린 의사 선언이었답니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언제나 선제적인 환자가 되는 것을 믿어왔어요. 이제 내 의사를 방문할 때, 그녀는 노트북에 타이핑을 하는 기술을 마스터했어요. 컴퓨터를 보면서 저를 살펴보고 눈을 맞추면서 말이에요. 예전의 행정 데이터 포인트가 여전히 유효하다면, 그녀는 표준 스무 분 진료 방문 당 환자 한 명을 보고 있을 거예요.
 

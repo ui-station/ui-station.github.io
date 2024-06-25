@@ -3,13 +3,12 @@ title: "스위프트UI MVVM  라우터"
 description: ""
 coverImage: "/assets/img/2024-05-18-SwiftUIMVVMRouter_0.png"
 date: 2024-05-18 15:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-SwiftUIMVVMRouter_0.png
 tag: Tech
 originalTitle: "SwiftUI : MVVM + Router"
 link: "https://medium.com/@akash.patel2520/swiftui-mvvm-router-265103a62a37"
 ---
-
 
 <img src="/assets/img/2024-05-18-SwiftUIMVVMRouter_0.png" />
 
@@ -21,7 +20,18 @@ MVVM 아키텍처는 코드베이스를 세 가지 주요 구성 요소로 나�
 - View: 프레젠테이션 및 사용자 상호 작용을 처리합니다.
 - ViewModel: Model과 View 사이의 중간 역할을 수행하여 데이터 로직과 상태를 관리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 라우터
 
@@ -31,7 +41,18 @@ MVVM 아키텍처는 코드베이스를 세 가지 주요 구성 요소로 나�
 
 간단한 SwiftUI 앱을 만들어서 항목 목록을 가져와 표시하는 방법을 알아봅시다. 항목을 선택하면 해당 항목의 상세보기로 이동하는 기능을 구현해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모델
 
@@ -46,7 +67,18 @@ struct Item: Identifiable {
 
 아이템 구조체는 간단합니다. id와 이름을 가진 아이템을 정의합니다. 이 모델은 앱 전반에서 사용되는 핵심 데이터 구조를 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ViewModel
 
@@ -55,7 +87,7 @@ ItemViewModel은 항목을 가져오고 뷰에 노출하는 역할을 합니다.
 ```swift
 class ItemViewModel: ObservableObject {
     @Published var items: [Item] = []
-    
+
     func fetchItems() {
         // 원격 서버에서 항목을 가져오는 것을 모방
         self.items = [
@@ -69,7 +101,18 @@ class ItemViewModel: ObservableObject {
 
 ItemViewModel 클래스는 데이터를 가져오는 로직을 처리합니다. @Published 프로퍼티 래퍼를 사용하여 SwiftUI 뷰가 항목 배열이 변경될 때 반응적으로 업데이트되도록합니다. 실제 애플리케이션에서는 네트워크 요청이나 데이터베이스에서 데이터를 가져올 수 있지만 여기서는 간단함을 위해 더미 데이터를 채웁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 라우터
 
@@ -83,11 +126,11 @@ enum AppRoute {
 
 class Router: ObservableObject {
     @Published var currentRoute: AppRoute?
-    
+
     func navigateToItemDetail(_ item: Item) {
         currentRoute = .itemDetail(item)
     }
-    
+
     func navigateToItemList() {
         currentRoute = .itemList
     }
@@ -96,7 +139,18 @@ class Router: ObservableObject {
 
 라우터 클래스는 앱의 네비게이션 상태를 관리합니다. @Published 속성을 사용하여 뷰가 네비게이션 변경에 반응할 수 있습니다. navigateToItemDetail 및 navigateToItemList 메서드는 현재 경로를 업데이트하고 적절한 뷰가 표시됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 화면
 
@@ -107,7 +161,7 @@ class Router: ObservableObject {
 struct ItemListView: View {
     @ObservedObject var viewModel: ItemViewModel
     @EnvironmentObject var router: Router
-    
+
     var body: some View {
         List(viewModel.items) { item in
             Button(action: {
@@ -126,7 +180,18 @@ struct ItemListView: View {
 
 아이템 목록 뷰는 ItemViewModel이 가져온 아이템 목록을 표시합니다. 각각의 아이템은 탭되면 상세 뷰로 이동하는 Button으로 둘러싸여 있습니다. 화면이 나타날 때도 onAppear 수정자를 사용하여 아이템을 가져옵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이템 상세보기
 아이템 상세보기는 선택된 항목의 세부 정보를 표시하고 목록 보기로 돌아가는 버튼을 제공합니다.
@@ -156,13 +221,24 @@ struct ItemDetailView: View {
 컨텐츠뷰
 컨텐츠뷰는 현재 경로에 따라 아이템 목록 뷰와 아이템 상세보기 뷰 간의 탐색을 관리하는 주요 진입점 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct ContentView: View {
     @StateObject var itemViewModel = ItemViewModel()
     @StateObject var router = Router()
-    
+
     var body: some View {
         NavigationView {
             VStack {

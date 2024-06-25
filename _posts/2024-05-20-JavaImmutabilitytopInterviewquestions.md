@@ -3,13 +3,12 @@ title: "자바 불변 객체에 관한 인터뷰 톱 질문"
 description: ""
 coverImage: "/assets/img/2024-05-20-JavaImmutabilitytopInterviewquestions_0.png"
 date: 2024-05-20 16:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-JavaImmutabilitytopInterviewquestions_0.png
 tag: Tech
 originalTitle: "Java Immutability top Interview questions"
 link: "https://medium.com/@abhishek.talakeriv/java-top-interview-questions-on-immutability-concept-70b2fce37f5e"
 ---
-
 
 by Abhishek Talakeri
 
@@ -19,7 +18,18 @@ by Abhishek Talakeri
 
 - 자바에서 불변 클래스란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바에서 불변 클래스는 생성된 후 수정할 수 없는 인스턴스를 의미합니다. 불변 객체가 인스턴스화된 후에는 상태가 수명 동안 일정합니다. 이는 필드의 값이 변경될 수 없으며 값을 수정하려는 모든 시도는 새 개체의 생성으로 이어집니다.
 
@@ -29,7 +39,18 @@ by Abhishek Talakeri
 
 일관된 상태: 불변 객체는 존재하는 동안 일정한 상태를 유지하여 프로그램 동작을 명확히 이해하고 예상치 못한 상태 변경을 최소화합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안전한 공유: 변경할 수 없는(Immutable) 객체는 여러 스레드 또는 컴포넌트 간 안전한 공유를 허용하여 코드의 재사용성과 의도하지 않은 수정의 위험이 없이 원활한 상호 운용성을 보장합니다.
 
@@ -39,7 +60,18 @@ by Abhishek Talakeri
 
 i. java.lang.String
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ii. java.lang.Integer, java.lang.Double, java.lang.Boolean 등
 
@@ -49,7 +81,18 @@ iv. java.time.LocalDate, java.time.LocalDateTime, java.time.LocalTime
 
 v. java.time.Duration, java.time.Period
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 vi. java.math.BigInteger, java.math.BigDecimal
 
@@ -59,7 +102,18 @@ vii. java.awt.Color
 
 수정할 수 없는 클래스를 사용하면 스레드 안전성 및 예측 가능한 동작과 같은 이점이 있지만, 단점이 있을 수 있습니다. 이러한 단점으로는 각 수정마다 새 인스턴스를 생성하여 메모리 사용량이 증가하고 성능에 영향을 줄 수 있다는 것이 포함됩니다. 불변성은 코드 베이스에 복잡성을 추가하고 특정 시나리오에서 유연성을 제한할 수도 있습니다. 또한, 방어적 복사 오버헤드와 가비지 수집 문제가 발생할 수 있습니다. 그러나 많은 프로그래밍 시나리오에서 불변성의 장점이 이러한 단점을 능가하기도 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 5. 변경 빈번한 객체 상태 조작이 성능 또는 기능 상 필요한 시나리오에서는 불변성이 적합하지 않을 수 있습니다. 예를 들어, 비디오 스트리밍이나 게임과 같은 실시간 데이터 처리를 다루는 응용 프로그램에서는 반응성을 유지하기 위해 가변 상태에 대한 지속적인 업데이트가 필요한 경우가 있습니다. 또한 대규모 데이터 조작이나 복잡한 알고리즘이 포함된 시나리오에서 불변성은 메모리 사용량이 증가하고 성능 오버헤드가 발생할 수 있습니다. 마찬가지로 라이브러리나 프레임워크와 상호 운용성이 필수인 경우, 불변성은 최적의 선택이 아닐 수 있습니다.
 
@@ -67,7 +121,18 @@ vii. java.awt.Color
 
 i. 클래스를 Final로 선언: 클래스를 final로 선언하여 하위 클래스화를 방지하여 클래스의 동작이 변경되지 않도록 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ii. 필드를 final로 선언해주세요: 객체 생성 후에는 수정할 수 없도록 모든 필드를 final로 선언해주세요.
 
@@ -77,7 +142,18 @@ iv. Setter 메서드를 제공하지 말기: 객체의 상태를 수정하는 Se
 
 v. 깊은 불변성 보장하기: 클래스가 변경 가능한 객체에 대한 참조를 포함하더라도 불변성을 유지하도록 보장해주세요. 필요에 따라 방어적 복사를 구현하거나 참조된 객체의 불변 버전을 사용해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 vi. Equals와 HashCode 재정의: 객체 상태에 기반하여 올바른 동작을 보장하기 위해 올바른 equals()와 hashCode() 메소드를 구현하세요.
 
@@ -85,35 +161,46 @@ vi. Equals와 HashCode 재정의: 객체 상태에 기반하여 올바른 동작
 
 ```java
 public final class BankAccount {
-  
+
   private final String accountNumber;
   private final String accountHolderName;
   private final double balance;
-  
+
   public BankAccount(String accountNumber, String accountHolderName, double balance) {
     this.accountNumber = accountNumber;
     this.accountHolderName = accountHolderName;
     this.balance = balance;
   }
-  
+
   public String getAccountNumber() {
     return accountNumber;
   }
-  
+
   public String getAccountHolderName() {
     return accountHolderName;
   }
-  
+
   public double getBalance() {
     return balance;
   }
-  
+
 }
 ```
 
 8. Date와 같은 가변 필드를 가진 불변 클래스에서 변경 불가성을 어떻게 보장하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import java.util.Date;
@@ -169,8 +256,18 @@ Result:
 
 9. Immutable 클래스 내에서 가변 컬렉션을 어떻게 처리하시겠습니까?
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 import java.util.ArrayList;
@@ -264,7 +361,18 @@ public final class ImmutableClass {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <table>
     <tr>
@@ -278,7 +386,18 @@ public final class ImmutableClass {
     </tr>
 </table>
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상태가 없는 객체(Stateless objects)는 인스턴스 필드(인스턴스 변수)가 없는 객체들을 말합니다. 해당 클래스에는 컴파일 시간 상수, 즉 static final 필드가 있을 수 있습니다. 불변 객체(Immutable objects)는 상태를 가지지만 초기화 이후에 상태를 변경할 수 없는 객체를 의미합니다. 이 두 가지는 스레드 안전합니다.
 
@@ -288,7 +407,18 @@ public final class ImmutableClass {
 
 끝까지 제 글을 읽어주셔서 감사합니다. 이 글로부터 유익한 통찰과 지식을 얻으셨기를 진심으로 바랍니다. 만약 글이 즐거우시고 유익하다고 느꼈다면, 제바랍니다 여러분의 친구들과 동료들과 공유해 주시기를 부탁드립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사를 즐겨 보셨다면, 부디 팔로우하고 구독하며 박수를 보내 주시면 감사하겠습니다.
 

@@ -3,13 +3,12 @@ title: "중간여행에서 화제를 모으는 아트워크 만드는 방법 - 6
 description: ""
 coverImage: "/assets/img/2024-05-20-HowtoMakeEyeCatchingArtworkinMidjourney6Examples_0.png"
 date: 2024-05-20 21:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-HowtoMakeEyeCatchingArtworkinMidjourney6Examples_0.png
 tag: Tech
 originalTitle: "How to Make Eye Catching Artwork in Midjourney — 6 Examples"
 link: "https://medium.com/@degennfts/how-to-make-eye-catching-artwork-in-midjourney-6-examples-9a81b3a68a42"
 ---
-
 
 # 1. 리얼과 가짜를 섞어보세요
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@degennfts/how-to-make-eye-catching-artwork-in-midjour
 
 ![이미지](/assets/img/2024-05-20-HowtoMakeEyeCatchingArtworkinMidjourney6Examples_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 3. 사진 조작
 
@@ -29,10 +39,23 @@ link: "https://medium.com/@degennfts/how-to-make-eye-catching-artwork-in-midjour
 
 ![image](/assets/img/2024-05-20-HowtoMakeEyeCatchingArtworkinMidjourney6Examples_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5. 기분이 좋지 않아
+
 ![이미지](/assets/img/2024-05-20-HowtoMakeEyeCatchingArtworkinMidjourney6Examples_4.png)
 
 # 6. 파스텔 톤 추가
+
 ![이미지](/assets/img/2024-05-20-HowtoMakeEyeCatchingArtworkinMidjourney6Examples_5.png)

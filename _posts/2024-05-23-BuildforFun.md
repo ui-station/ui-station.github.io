@@ -10,7 +10,6 @@ originalTitle: "Build for Fun"
 link: "https://medium.com/pragmatic-programmers/build-for-fun-0d1540926872"
 ---
 
-
 ![2024-05-23-BuildforFun_0](/assets/img/2024-05-23-BuildforFun_0.png)
 
 이번 주의 할인 행사는 놀이, 탐구 및 학습을 즐기는 사람들을 위해 특별히 마련되었습니다. 유쾌한 프로젝트를 활용하여 실질적인 기술을 구축하는 책을 50% 할인된 가격에 구매하려면 프로모션 코드 2024Fun을 사용하세요. 이 할인은 5월 21일부터 5월 29일까지 pragprog.com에서 독점적으로 진행됩니다.
@@ -19,8 +18,18 @@ Ricardo Gerardi와 Mike Riley의 "Go를 이용한 집 자동화"
 
 Mike Riley의 "휴대용 Python 프로젝트"
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 웹RTC 프로그래밍 by Karl Stolley
 
@@ -30,7 +39,18 @@ Mike Riley의 "휴대용 Python 프로젝트"
 
 - Craig Walls가 Alexa를 위한 음성 앱 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "오브젝트에서 함수로" by Uberto Barbini
 
@@ -40,6 +60,17 @@ Mike Riley의 "휴대용 Python 프로젝트"
 
 "프로그래머를 위한 미로" by Jamis Buck
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-23-BuildforFun_1.png)

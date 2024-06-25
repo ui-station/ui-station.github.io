@@ -3,13 +3,12 @@ title: "AWS에서 Terraform을 사용하여 Lambda 함수를 배포하는 방법
 description: ""
 coverImage: "/assets/img/2024-06-19-HowtodeployLambdafunctiononAWSusingTerraform_0.png"
 date: 2024-06-19 12:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-HowtodeployLambdafunctiononAWSusingTerraform_0.png
 tag: Tech
 originalTitle: "How to deploy Lambda function on AWS using Terraform"
 link: "https://medium.com/@bulutbatuhan/how-to-deploy-lambda-function-on-aws-using-terraform-16f7f1fa930f"
 ---
-
 
 서버리스 함수는 인프라 걱정 할 필요 없이 DevOps 및 SysOps에게 필수적입니다.
 
@@ -19,13 +18,25 @@ link: "https://medium.com/@bulutbatuhan/how-to-deploy-lambda-function-on-aws-usi
 
 모든 자료에 대한 Github 링크: [https://github.com/batuhan-bulut/terraform-aws-lambda](https://github.com/batuhan-bulut/terraform-aws-lambda)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # AWS Lambda란 무엇인가요?
 
 AWS Lambda를 사용하면 서버에 대해 걱정하지 않고 지원되는 언어로 스크립트를 실행할 수 있습니다. Node.JS, Python, C# 등으로 작성된 코드를 실행할 수 있습니다.
 
 Lambda를 사용하면 다음을 수행할 수 있습니다.
+
 - 지역별 EC2 인스턴스 상태 확인
 - AWS CLI를 사용하여 일부 자동화 실행
 - AWS SQS로 작업 예약
@@ -33,7 +44,18 @@ Lambda를 사용하면 다음을 수행할 수 있습니다.
 
 이런 가능성들로 AWS Lambda는 데브옵스 및 시스옵스 팀에 매우 중요한 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS 웹 사이트에서 GUI를 사용하여 AWS Lambda를 쉽게 배포할 수 있어요.
 
@@ -43,7 +65,18 @@ AWS 웹 사이트에서 GUI를 사용하여 AWS Lambda를 쉽게 배포할 수 �
 
 # IaC란? (Infrastructure as Code)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 IaC를 사용하면 우리는 쉽게 환경 (개발, 테스트, 스테이징, 프로덕션 등)을 설정할 수 있어요. 인기 있는 공급 업체들은 요구 사항에 맞는 CDK(Cloud Development Kit)를 가지고 있어요.
 
@@ -53,7 +86,18 @@ IaC를 사용하면 우리는 쉽게 환경 (개발, 테스트, 스테이징, �
 
 그런데 만약 경영진이 Azure, GCP 또는 다른 클라우드 공급업체로 전환하기로 결정한다면 어떻게 될까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS CDK에 대한 지식 대부분은 중요하지 않아요. 왜냐하면 해당 공급업체가 자체 CDK를 가지고 있거든요.
 
@@ -63,7 +107,18 @@ AWS CDK에 대한 지식 대부분은 중요하지 않아요. 왜냐하면 해�
 
 지식과 경험을 통해 Terraform을 사용하면 간단한 명령어로 많은 리소스를 관리할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문서에서는 Terraform의 AWS 쪽에 중점을 둘 것입니다.
 
@@ -73,7 +128,18 @@ AWS CDK에 대한 지식 대부분은 중요하지 않아요. 왜냐하면 해�
 
 ## 우리의 Terraform 코드는 무엇을 할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - IAM 역할 제공
 - IAM 프로필 제공
@@ -126,7 +192,18 @@ handler     = "${var.zip_python_lambda_code.name}.lambda_handler"
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 코드 블록에서는 terraform/terraform.tf 파일에서 모든 변수를 읽습니다. 동일한 Terraform 파일을 프로덕션, 스테이징 또는 다른 AWS 지역과 같이 다른 환경에 대해 다양한 구성으로 실행할 수 있습니다.
 
@@ -207,7 +284,18 @@ EOF
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 파일에서는 변수와 그 기본 값들을 선언합니다. 테라폼에서는 다양한 유형의 변수를 선언할 수 있어요.
 
@@ -217,7 +305,18 @@ EOF
 
 여기 .tfvars 파일의 예시가 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 region = "us-east-1"
@@ -235,7 +334,18 @@ terraform_lambda= {
 
 그리고 루트 폴더에 간단한 Python 앱을 index.py라는 이름으로 추가해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # 간단한 Hello 함수
@@ -254,8 +364,18 @@ def lambda_handler(event, context):
 
 # 쇼타임!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드를 실행할 준비가 되었습니다.
 
@@ -281,7 +401,18 @@ $terraform init
 
 이후, 인프라 구조의 변경 사항을 확인하기 위해 terraform plan을 실행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 data.archive_file.zip_python_lambda_code: 읽는 중...
@@ -393,8 +524,9 @@ data.archive_file.zip_python_lambda_code: 읽기 완료 소요 시간 0초 [id=1
 
 그 후 콘솔에 성공 메시지가 표시될 것입니다. 이는 모든 리소스가 AWS 측에 생성된 것을 의미합니다. AWS GUI에서 람다 함수를 확인하고 실행하거나 CLI에서 람다 함수를 확인할 수 있습니다.
 
-aws lambda list-functions --region us-east-1 | grep Override_Name 
+aws lambda list-functions --region us-east-1 | grep Override_Name
 
 "FunctionName": "Override_Name",
 "FunctionArn": "arn:aws:lambda:us-east-1:11111:function:Override_Name",
 "LogGroup": "/aws/lambda/Override_Name"
+```

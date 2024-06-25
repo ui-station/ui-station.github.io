@@ -22,7 +22,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 ![이미지](/assets/img/2024-05-23-TokenizationACompleteGuide_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 콘텐츠가 도움이 되었다면, 아래 방법으로 저를 지원해주십시오:
 
@@ -33,7 +44,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 대형 언어 모델 (LLM)은 2022년 11월 OpenAI의 ChatGPT가 출시된 이후 매우 인기를 얻었습니다. 그 이후로 이러한 언어 모델의 사용이 급증했으며, HuggingFace의 Transformer 라이브러리와 PyTorch와 같은 라이브러리의 도움을 받았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 모든 이들 준비하고 있는 완제품 도구들로 인해, 기본 수준에서 무슨 일이 일어나고 있는지 추상화하는 것이 쉽습니다. 그 결과로 많은 온라인 튜토리얼들이 당신이 자체 모델을 생성할 때 '무엇'을 알려주고 '왜'는 알려주지 않는 경우가 많습니다. 이 기사 시리즈는 이를 해결하고자 합니다. '처음부터 LLMs 만들기'는 대형 언어 모델을 구성하는 구성 요소를 분해하고, 내부 작동 방식을 설명합니다. 그의 목표는 다음과 같습니다:
 
@@ -45,7 +67,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 # 토크나이저란 무엇인가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자연어 처리 문제는 텍스트 데이터를 사용하는데, 기계가 즉시 이해하기 어렵습니다. 컴퓨터가 언어를 처리하려면 먼저 텍스트를 숫자 형식으로 변환해야 합니다. 이 프로세스는 토크나이저라는 모델에 의해 주로 두 단계로 수행됩니다.
 
@@ -55,7 +88,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 단계 2: 각 토큰에 식별자 할당
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 토크나이저가 텍스트를 토큰으로 분리한 후, 각 토큰에 토큰 ID라고 불리는 정수 번호를 할당할 수 있습니다. 예를 들어, "cat"이라는 단어가 15라는 값으로 할당될 수 있고, 따라서 입력 텍스트의 모든 cat 토큰은 숫자 15로 표시됩니다. 텍스트 토큰을 숫자 표현으로 교체하는 과정을 인코딩이라고 합니다. 비슷하게, 인코딩된 토큰을 다시 텍스트로 변환하는 과정을 디코딩이라고 합니다.
 
@@ -65,7 +109,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 텍스트를 토큰으로 나누는 세 가지 주요 방법이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 단어 기반
 - 문자 기반
@@ -77,7 +132,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 예를 들어, 다음과 같은 문장:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고양이들은 멋지지만, 개들이 더 좋아요!
 
@@ -87,7 +153,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 또는 구두점과 공백을 기준으로 분할하면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [`Cats`, `are`, `great`, `,`, `but`, `dogs`, `are`, `better`, `!`]
 
@@ -97,7 +174,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 단어 기반 토크나이저의 장단점:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 워드 기반 방법으로 생성된 토큰들은 각각 의미론적 및 문맥 정보를 포함하고 있어 많은 정보를 담고 있습니다. 그러나 이 방법의 가장 큰 단점 중 하나는 매우 유사한 단어가 완전히 다른 토큰으로 처리된다는 것입니다. 예를 들어, cat과 cats 간의 연결은 존재하지 않으며, 이들은 별개의 단어로 처리됩니다. 이는 많은 단어를 포함하는 대규모 응용 프로그램에서 문제가 될 수 있습니다. 모델 어휘의 가능한 토큰 수가 매우 커질 수 있기 때문입니다. 영어는 약 17만 단어가 있으며, 각 단어에 대한 복수형이나 과거형과 같은 다양한 문법 형태를 포함하면 폭발적인 어휘 문제가 발생할 수 있습니다. TransformerXL 토크나이저가 사용하는 공백 기반 분할은 어휘 크기가 25만 개를 초과하도록 이끌었습니다.
 
@@ -109,7 +197,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 - 각 토큰에 저장된 높은 정보량
 - 주로 일반적인 단어를 포함하는 데이터셋과 잘 작동하는 어휘 크기 제한 가능
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요약:
 
@@ -121,13 +220,35 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 문자 기반 토크나이제이션은 글자, 숫자 및 구두점과 같은 특수 문자를 포함하여 텍스트를 각 문자 단위로 분할합니다. 이는 영어 언어를 단어 기반 접근법에서 필요한 17만 개 이상의 어휘 대신 약 256개의 토큰으로 표현할 수 있도록 어휘 크기를 크게 줄입니다 [5]. 중국어 및 일본어와 같은 동아시아 언어도 자신들의 문자 시스템에서 수천 개의 고유 문자를 포함하지만 어휘 크기가 크게 축소될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문자 기반 토크나이저에서는 다음과 같은 문장을 아래와 같이 변환할 수 있습니다:
 
 [`C`, `a`, `t`, `s`, ` `, `a`, `r`, `e`, ` `, `g`, `r`, `e`, `a`, `t`, `,`, ` `, `b`, `u`, `t`, ` `, `d`, `o`, `g`, `s`, ` `, `a`, `r`, `e`, ` `, `b`, `e`, `t`, `t`, `e`, `r`, `!`]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 캐릭터 기반 토크나이저의 장단점:
 
@@ -137,7 +258,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 장점 요약:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 어휘 크기가 작음
 - 철자가 틀린 단어를 제거하지 않음
@@ -149,7 +281,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 ## Subword-Based Tokenizers:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서브워드 기반 토큰화는 단어 기반 및 문자 기반 방법의 이점을 모두 활용하면서 그들의 단점을 최소화하려는 목표를 가지고 있어요. 서브워드 기반 방법은 단어 내에서 텍스트를 분할하여 의미 있는 토큰을 생성하려는 시도를 통해 중간 지점을 취하고 있어요, 심지어 그것들이 완전한 단어가 아니더라도요. 예를 들어, 토큰 ing와 ed는 문법적인 의미를 가지고 있지만 그 자체로 완전한 단어는 아니에요.
 
@@ -160,7 +303,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 드물게 사용되는 단어만 분리함으로써 활용어나 복수형 등이 그 구성 요소로 분해되는 기회를 주면서 토큰 사이의 관계를 보존하게 돼요. 예를 들어 cat은 데이터셋에서 매우 흔한 단어지만 cats는 덜 흔할 수 있어요. 이 경우 cats는 cat과 s로 분리되어, cat은 이제 다른 모든 cat 토큰과 동일한 값을 갖게 되고, s는 다른 값을 갖게 됩니다. 이는 복수성의 의미를 인코딩할 수 있다는 것이에요. 또 다른 예시로는 단어 토큰화인데요, 이는 루트 단어 토큰과 접미사 ization으로 분할될 수 있어요. 이 방법은 구문 및 의미 유사성을 보존할 수 있습니다. 이러한 이유로, 서브워드 기반 토큰화기는 현재 많은 NLP 모델에서 널리 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 정규화 및 사전 토크나이제이션
 
@@ -173,7 +327,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 여기서 토큰화 방법(서브워드 기반, 문자 기반 등)은 모델 단계에서 이루어집니다 [7]. 이 섹션에서는 서브워드 기반 토큰화 방식을 사용하는 토크나이저에 대해 각 단계를 다룰 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중요한 알림: 토큰화 파이프라인의 모든 단계는 Hugging Face의 토크나이저 및 트랜스포머 라이브러리와 같은 라이브러리에서 토크나이저를 사용할 때 자동으로 사용자 대신 처리됩니다. 전체 파이프라인은 Tokenizer라는 단일 객체에 의해 수행됩니다. 이 섹션은 대부분의 사용자가 NLP 작업을 수행할 때 직접 처리할 필요가 없는 코드 내부 작업에 대해 다룹니다. 나중에는 토크나이저 라이브러리의 기본 토크나이저 클래스를 사용자 정의하는 단계도 제시되어 필요한 경우 특정 작업용으로 토크나이저를 목적에 맞게 만들 수 있습니다.
 
@@ -183,7 +348,18 @@ link: "https://medium.com/@bradneysmith/tokenization-llms-from-scratch-1-cedc9f7
 
 Hugging Face의 tokenizers.normalizers 패키지에는 대규모 모델의 일부로서 다양한 토큰화기에서 사용되는 여러 기본 정규화기가 포함되어 있습니다. 아래는 NFC 유니코드, 소문자 및 BERT 정규화기입니다. 이들은 예제 문장에 다음과 같은 효과를 보여줍니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - NFC: 대문자를 변환하지 않거나 악센트를 제거하지 않습니다.
 - Lower: 대문자를 변환하지만 악센트를 제거하지 않습니다.
@@ -214,7 +390,18 @@ BERT:  this is  an example     sentence
 
 위의 정규화기들은 Hugging Face transformers 라이브러리에서 가져올 수 있는 토크나이저 모델에서 사용됩니다. 아래 코드 셀은 Tokenizer.backend_tokenizer.normalizer를 통해 점 표기법(dot notation)을 사용하여 정규화기에 액세스하는 방법을 보여줍니다. 서로 다른 정규화 방법을 강조하기 위해 일부 비교를 보여줍니다. 이 예시들에서는 FNet 정규화기만 불필요한 공백을 제거합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 from transformers import FNetTokenizerFast, CamembertTokenizerFast, \
@@ -249,8 +436,18 @@ BERT Output:      this is  an example     sentence
 
 The pre-tokenization step is the first splitting of the raw text in the tokenization pipeline. The split is performed to give an upper bound to what the final tokens could be at the end of the pipeline. That is, a sentence can be split into words in the pre-tokenization step, then in the model step some of these words may be split further according to the tokenization method (e.g. subword-based). So the pre-tokenized text represents the largest possible tokens that could still remain after tokenization.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정규화와 마찬가지로이 단계를 수행하는 여러 가지 방법이 있습니다. 예를 들어, 문장은 매 공백, 모든 공백 및 일부 구두점 또는 매 공백 및 모든 구두점을 기준으로 분할될 수 있습니다.
 
@@ -290,7 +487,18 @@ BERT Pre-Tokenizer:
 ",", "spaces", ",", "and", "punctuation", ".",
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정규화 방법들과 마찬가지로 GPT-2와 ALBERT (A Lite BERT) 토크나이저와 같은 일반적인 토크나이저에서 사전 토큰화 방법을 직접 호출할 수 있습니다. 이들은 위에서 보여진 표준 BERT 사전 토큰화 방법과 약간 다른 방식을 사용합니다. 토큰을 분할할 때 공백 문자를 제거하지 않고 특수 문자로 대체합니다. 그 결과, 공백 문자를 처리할 때 무시할 수 있지만 필요할 경우 원래 문장을 검색할 수 있습니다. GPT-2 모델은 Ġ 문자를 사용하며, 이는 위에 점을 찍은 대문자 G가 특징입니다. ALBERT 모델은 밑줄 문자를 사용합니다.
 
@@ -327,7 +535,18 @@ ALBERT 사전 토크나이저:
 
 위의 예제 문장에 대한 BERT 사전 토큰화 단계 결과를 수정 없이 출력한 내용이 아래에 나와 있습니다. 반환된 객체는 원본 입력 텍스트에서 문자열의 시작 및 끝 색인을 포함하는 파이썬 리스트입니다. 문자열의 시작 색인은 포함되며, 끝 색인은 배타적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 from tokenizers.pre_tokenizers import WhitespaceSplit, BertPreTokenizer
@@ -362,8 +581,18 @@ bpt.pre_tokenize_str(text)
 
 토큰화 파이프라인의 모델 단계는 토큰화 방법이 사용되는 곳입니다. 이전에 설명한대로 여기서 선택할 수 있는 옵션은: 단어 기반, 문자 기반, 서브워드 기반입니다. 서브워드 기반 방법이 일반적으로 선호되는데, 이 방법들은 단어 기반 및 문자 기반 접근법의 한계를 극복하기 위해 설계되었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 트랜스포머 모델에는 하위 단어 기반 토큰화를 구현하는 데 일반적으로 사용되는 세 가지 토크나이저 방법이 있습니다. 이 방법들은 다음과 같습니다:
 
@@ -375,7 +604,18 @@ bpt.pre_tokenize_str(text)
 
 ## 바이트 페어 인코딩
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 바이트 페어 인코딩 알고리즘은 GPT 및 GPT-2 모델 (OpenAI), BART (Lewis et al.) 및 기타 많은 트랜스포머 모델에서 발견되는 일반적으로 사용되는 토크나이저입니다 [9-10]. 이 알고리즘은 원래 텍스트 압축 알고리즘으로 설계되었지만, 언어 모델의 토큰화 작업에 매우 효과적으로 작동한다는 것이 밝혀졌습니다. BPE 알고리즘은 텍스트 문자열을 참조 말뭉치(토큰화 모델을 훈련하는 데 사용되는 텍스트)에서 빈번히 나타나는 부분 단어 단위로 분해합니다 [11]. BPE 모델은 다음과 같이 훈련됩니다:
 
@@ -385,7 +625,18 @@ bpt.pre_tokenize_str(text)
 
 ## 단계 2) 어휘 작성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 말뭉치에서 단어들은 개별 문자로 분해되어 "어휘(vocabulary)"라는 비어있는 목록에 추가됩니다. 알고리즘은 어떤 문자 쌍을 함께 병합할 수 있는지를 결정할 때마다 이 어휘에 계속 추가합니다.
 
@@ -395,7 +646,18 @@ bpt.pre_tokenize_str(text)
 
 단계 4) 병합 규칙 작성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 문자 쌍의 빈도가 알려진 경우, 가장 빈번한 문자 쌍이 어휘에 추가됩니다. 어휘는 이제 토큰 내의 모든 개별 문자와 가장 빈번한 문자 쌍으로 구성됩니다. 또한 모델이 사용할 수있는 병합 규칙이 제공됩니다. 예를 들어 모델이 ca가 가장 빈번한 문자 쌍이라는 것을 학습하면, 모델은 말뭉친 c와 a의 모든 인접 인스턴스를 ca로 병합해 ca를 제공합니다. 이제 이를 나머지 단계의 단일 문자 ca로 취급할 수 있습니다.
 
@@ -405,7 +667,18 @@ bpt.pre_tokenize_str(text)
 
 BPE 알고리즘이 교육되었으므로 (즉, 모든 병합 규칙이 찾아졌다), 모델은 모든 텍스트를 토큰화하기 위해 모든 단어를 각 문자로 분할하고, 그런 다음 병합 규칙에 따라 병합하여 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 표는 마크다운 형식으로 변경하겠습니다.
 
@@ -450,7 +723,18 @@ BPE 알고리즘은 '고양이'에 관한 몇 가지 단어가 포함된 장난�
 
 21개의 대상 어휘 크기로 토크나이저를 실행하면(이는 5회 병합만 필요합니다), 위에서 언급한 모든 원하는 하위 단위를 포착하는 데 충분합니다. 더 큰 데이터세트의 경우 대상 어휘도 훨씬 더 높아지겠지만, 이는 BPE 토크나이저가 얼마나 강력한지를 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 # Training set
@@ -513,7 +797,18 @@ print(bpe.tokenize("running"));
 print(bpe.tokenize("skiing"));
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ["먹", "어", "•", "ᆼ"][("", "ᄂ", "ᄂ", "•", "ᆼ")][("", "스", "키", "•", "ᆼ")];
@@ -525,9 +820,18 @@ GPT-2 및 RoBERTa에서 사용되는 BPE 토크나이저는 이 문제가 없으
 
 ## WordPiece
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 WordPiece는 구글이 개발한 토큰화 방법으로, 그들의 중요한 BERT 모델 및 이로부터 파생된 모델들인 DistilBERT 및 MobileBERT에서 사용됩니다.
 
@@ -537,7 +841,18 @@ WordPiece 알고리즘의 전체 세부 내용은 공개되지 않았기 때문�
 
 다시 한 번 입력 텍스트는 정규화 및 사전 토큰화 모델에 제공되어 깨끗한 단어를 생성합니다. 단어는 WordPiece 모델에 제공되어 각 단어의 빈도를 결정하고, 이 번호를 단어와 함께 "말뭉치"라고 불리는 리스트에 저장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단계 2) 어휘 구성
 
@@ -547,9 +862,18 @@ BPE와 같이 코퍼스에서 단어를 개별 문자로 분해한 후, 단어�
 
 BPE 모델과 달리, 이번에는 각 문자 쌍에 대해 점수가 계산됩니다. 먼저, 코퍼스에서 각 인접 문자 쌍을 식별하고, `c##a`, ##a##t 등이 계산됩니다. 그리고 빈도가 계산됩니다. 각 문자의 빈도도 결정됩니다. 이러한 값들을 알면, 다음 공식에 따라 쌍 점수를 계산할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Tokenization Guide](/assets/img/2024-05-23-TokenizationACompleteGuide_1.png)
 
@@ -559,8 +883,18 @@ BPE 모델과 달리, 이번에는 각 문자 쌍에 대해 점수가 계산됩�
 
 높은 점수는 자주 함께 나타나는 문자 쌍을 나타냅니다. 즉, c##a가 높은 쌍 점수를 가지면 c와 a가 말뭉치에서 함께 자주 나타나고 개별적으로는 그리 자주 나타나지 않는 것입니다. BPE와 마찬가지로, 병합 규칙은 가장 높은 점수를 가진 문자 쌍에 의해 결정됩니다. 이번에는 빈도가 점수를 결정하는 대신 쌍 점수로 결정됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 단계 5) 단계 3과 4를 반복합니다.
 
@@ -741,7 +1075,19 @@ class WordPiece(BPE):
 
             인수
 ```
-<div class="content-ad"></div>
+
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 WordPiece 알고리즘은 BPE 알고리즘에 주어진 장난감 데이터세트와 동일한 데이터세트로 아래에서 훈련됩니다. 이번에 학습한 토큰은 매우 다른 것을 알 수 있습니다. WordPiece는 문자가 서로 더 자주 함께 나타나는 경우를 선호하며, 그래서 데이터세트에 함께만 존재하고 홀로 존재하지 않는 'm'과 'p'는 즉시 병합됩니다. 여기서 이 아이디어는 모델이 문자를 병합함으로써 무엇이 손실되는지 고려하도록 강요하는 것입니다. 즉, 이러한 문자들이 항상 함께 있는가요? 그렇다면, 전혀 하나의 단위로 명백하게 병합되어야 합니다. 또는, 코퍼스에서 문자가 매우 빈번한가요? 그렇다면, 문자는 그냥 일반적이며 데이터세트 안에서 풍부하게 나타나므로 다른 토큰 옆에 나타날 것입니다.
 
@@ -775,7 +1121,18 @@ NEW MERGE RULE: "##m"과 "##p" 병합
 
 이제 WordPiece 알고리즘이 훈련되었으므로(즉, 모든 병합 규칙이 발견되었으므로), 모델은 모든 텍스트를 토큰화하기 위해 각 단어를 모든 문자로 분리한 다음 문자열의 처음부분에 대해 알려진 토큰을 찾을 수 있는 최대 토큰을 찾아서, 나머지 부분은 찾을 수 있는 최대 토큰을 찾는 방식으로 사용할 수 있습니다. 이 과정은 더 이상 훈련 데이터로부터 알려진 토큰과 일치하지 않을 때까지 반복되며, 따라서 문자열의 남은 부분은 최종 토큰으로 취합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 학습 데이터가 제한적이지만, 모델은 여전히 유용한 토큰을 학습했습니다. 그러나 많은 추가 학습 데이터가 필요함을 명백히 알 수 있습니다. 이 토크나이저를 유용하게 만들기 위해 더 많은 학습 데이터가 필요합니다. 예시 문자열에 대한 성능을 테스트할 수 있습니다. 예시로 'jumper' 단어로 시작해보겠습니다. 먼저 문자열은 ['jump', 'er']로 분리됩니다. 왜냐하면 jump는 단어의 시작에서 발견할 수 있는 가장 큰 토큰이기 때문입니다. 다음으로 er 문자열은 각각의 문자 e와 r로 나뉩니다.
 
@@ -789,7 +1146,18 @@ print(wp.tokenize("jumper"));
 
 ## 단일 토큰화
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Unigram 토크나이저는 BPE와 WordPiece와 다른 방식으로 작동합니다. 큰 어휘로 시작하여 원하는 크기에 도달할 때까지 반복적으로 줄여나갑니다.
 
@@ -799,7 +1167,18 @@ Unigram 모델은 각 단어 또는 문자의 확률을 고려하는 통계적 �
 
 <img src="/assets/img/2024-05-23-TokenizationACompleteGuide_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Unigram 모델은 다음 단계를 통해 훈련됩니다:
 
@@ -809,7 +1188,18 @@ Unigram 모델은 다음 단계를 통해 훈련됩니다:
 
 단계 2) 어휘 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Unigram 모델의 어휘 크기는 매우 크게 시작되고, 원하는 크기에 도달할 때까지 반복적으로 감소합니다. 초기 어휘를 구성하려면 말뭉치에서 가능한 모든 부분 문자열을 찾습니다. 예를 들어, 말뭉치의 첫 번째 단어가 'cats'인 경우, 부분 문자열 ['c', 'a', 't', 's', 'ca', 'at', 'ts', 'cat', 'ats']이 어휘에 추가됩니다.
 
@@ -819,7 +1209,18 @@ Unigram 모델의 어휘 크기는 매우 크게 시작되고, 원하는 크기�
 
 ![이미지](/assets/img/2024-05-23-TokenizationACompleteGuide_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4단계) 단어의 모든 가능한 세분화 찾기
 
@@ -829,7 +1230,18 @@ Unigram 모델의 어휘 크기는 매우 크게 시작되고, 원하는 크기�
 
 [`ca`, `t`]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [`c`, `at`]
 
@@ -839,8 +1251,18 @@ Unigram 모델의 어휘 크기는 매우 크게 시작되고, 원하는 크기�
 
 위의 방정식들을 결합하면 각 토큰 시리즈에 대한 확률을 얻을 수 있습니다. 예를 들어, 이것은 다음과 같이 보일 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-23-TokenizationACompleteGuide_4.png" />
 
@@ -850,9 +1272,18 @@ Unigram 모델의 어휘 크기는 매우 크게 시작되고, 원하는 크기�
 
 손실이란 모델의 점수를 나타내며, 중요한 토큰이 어휘에서 제거되면 손실이 크게 증가하지만 중요하지 않은 토큰이 제거되면 손실은 크게 증가하지 않습니다. 모델에서 각 토큰을 제거했을 때 손실이 얼마나 되는지 계산하여, 어휘 중에서 가장 쓸모없는 토큰을 찾을 수 있습니다. 훈련 세트 말뭉치에서 가장 유용한 토큰만 남도록 어휘 크기가 감소할 때까지 반복적으로 수행할 수 있습니다. 손실은 다음과 같이 주어집니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Tokenization Guide](/assets/img/2024-05-23-TokenizationACompleteGuide_5.png)
 
@@ -862,8 +1293,18 @@ Unigram 모델의 어휘 크기는 매우 크게 시작되고, 원하는 크기�
 
 학습 세트 및 토큰화해야 할 데이터에 따라 어떤 토크나이저가 다른 것보다 더 잘 작동할 수 있습니다. 언어 모델에 대한 토크나이저를 선택할 때, 특정 사용 사례에 사용된 학습 세트를 실험하여 최상의 결과를 얻는 것이 가장 좋을 수 있습니다. 그러나 이 세 가지 토크나이저의 일반적인 경향에 대해 논의하는 것이 유용할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 세 가지 중에서 BPE가 현재 언어 모델 토크나이저로 가장 인기 있는 선택인 것으로 보입니다. 그러나 변화가 빠르게 일어나는 이 분야에서는 앞으로 변동이 있을 수 있습니다. 사실, SentencePiece와 같은 다른 서브워드 토크나이저들이 최근에 훨씬 더 인기를 얻고 있습니다.
 
@@ -873,7 +1314,18 @@ WordPiece는 BPE와 Unigram에 비해 더 많은 단어 토큰을 생성하는 �
 
 ## 후처리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 토큰화 파이프라인의 마지막 단계는 후처리입니다. 여기서 필요한 경우 출력에 최종 수정을 가할 수 있습니다. BERT는 이 단계를 사용하여 두 가지 추가 토큰을 추가하는 데 유명합니다:
 
@@ -884,7 +1336,18 @@ WordPiece는 BPE와 Unigram에 비해 더 많은 단어 토큰을 생성하는 �
 
 Hugging Face는 Python을 포함한 여러 프로그래밍 언어에서 사용할 수 있는 토크나이저 라이브러리를 제공합니다. 이 라이브러리에는 사용자가 사전 훈련된 모델을 사용할 수 있는 일반 Tokenizer 클래스가 포함되어 있으며, 전체 목록은 Hugging Face 웹사이트에서 확인할 수 있습니다. 게다가, 라이브러리에는 사용자가 자체 데이터로 훈련할 수 있는 네 가지 사전 제작되지만 미학습된 모델도 포함되어 있습니다. 이는 특정 유형의 문서에 튜닝된 특정 토크나이저를 작성하는 데 유용합니다. 아래 셀은 Python에서 사전 훈련된 및 미학습된 토크나이저를 사용하는 예시를 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프리트레인 토크나이저 사용하기
 
@@ -898,7 +1361,18 @@ tokenizer = Tokenizer.from_pretrained('bert-base-cased')
 
 토크나이저 학습하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원하는 토큰 만들기되지만 미학습 토크나이저를 사용하려면 tokenizers 라이브러리에서 원하는 모델을 가져와서 모델 클래스의 인스턴스를 만들면 됩니다. 위에서 설명한대로 라이브러리에는 네 가지 모델이 포함되어 있습니다:
 
@@ -927,7 +1401,18 @@ encoded = tokenizer.encode('I can feel the magic, can you?')
 tokenizer.save('./path/to/directory/my-bpe.tokenizer.json')
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 토크나이저 라이브러리는 이전 섹션에서 보여주었던 것과 같이 처음부터 전체 모델을 구현할 필요 없이 매우 빠르게 사용자 정의 토크나이저를 만들 수 있는 구성 요소도 제공합니다. 아래 셀에는 Hugging Face GitHub 페이지 [17]에서 가져온 예시가 표시되어 있습니다. 해당 예시에서는 토크나이저의 사전 토크나이제이션 및 디코딩 단계를 사용자 정의하는 방법을 보여줍니다. 이 경우, 사전 토크나이제이션 단계에서 접두어 공백이 추가되었고, 디코더로는 ByteLevel 디코더가 선택되었습니다. Hugging Face 문서 [18]에는 사용자 정의 옵션의 전체 목록이 제공됩니다.
 
@@ -963,7 +1448,18 @@ tokenizer.save("byte-level-bpe.tokenizer.json", pretty=True)
 
 토큰화 파이프라인은 언어 모델의 중요한 부분이며, 어떤 종류의 토크나이저를 사용할지 결정할 때 신중한 고려가 필요합니다. 요즘에는 Hugging Face와 같은 라이브러리의 개발자들이 우리를 대신하여 많은 이러한 결정을 내려주고 있습니다. 이를 통해 사용자는 빠르게 사용자 지정 데이터로 언어 모델을 학습하고 사용할 수 있습니다. 그러나 토큰화 방법에 대한 탄탄한 이해는 모델을 미세 조정하고 다양한 데이터셋에서 추가 성능을 얻는 데 귀중합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료
 
@@ -973,7 +1469,18 @@ tokenizer.save("byte-level-bpe.tokenizer.json", pretty=True)
 
 [3] 단어 토크나이저 — Towards Data Science
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - [4] TransformerXL 논문 — ArXiv
 
@@ -983,7 +1490,18 @@ tokenizer.save("byte-level-bpe.tokenizer.json", pretty=True)
 
 - [7] 토큰화 파이프라인 — Hugging Face
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 \[8\] Pre-tokenizers — Hugging Face
 
@@ -993,7 +1511,18 @@ tokenizer.save("byte-level-bpe.tokenizer.json", pretty=True)
 
 \[11\] Byte Pair Encoding — Hugging Face
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [12] WordPiece 토큰화 — Hugging Face
 
@@ -1003,7 +1532,18 @@ tokenizer.save("byte-level-bpe.tokenizer.json", pretty=True)
 
 [15] BERT가 단어 맥락 관계를 배우는 데 어떻게 Attention 메커니즘과 Transformer를 활용하는가 — Medium
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 [16] 사전 훈련된 모델 목록 — Hugging Face
 

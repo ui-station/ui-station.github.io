@@ -3,13 +3,12 @@ title: "Swift에서 SOLID 원칙에 대한 예제"
 description: ""
 coverImage: "/assets/img/2024-05-20-SOLIDprinciplesinSwiftwithexamples_0.png"
 date: 2024-05-20 17:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-20-SOLIDprinciplesinSwiftwithexamples_0.png
 tag: Tech
 originalTitle: "SOLID principles in Swift with examples"
 link: "https://medium.com/@bakshioye/solid-principles-in-swift-with-examples-d62011361798"
 ---
-
 
 위 문서의 향상된 버전을 확인하세요. 향상된 구문 강조와 최신 업데이트가 모두 포함된 개인 블로그에서 확인할 수 있습니다! 피드백과 참여를 환영하며 앞으로의 콘텐츠 제작을 지원해주세요:
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@bakshioye/solid-principles-in-swift-with-examples-d62
 
 일반적으로 SRP를 따르지 않고 코드를 작성하는 예시를 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import Foundation
@@ -46,7 +56,7 @@ import Foundation
             "name": "Shubham Bakshi",
             "age": 28,
             "canTakeANapAnywhere": true
-        
+
         }
         """.data(using: .utf8)!
     }
@@ -107,7 +117,7 @@ import Foundation
             "name": "Shubham Bakshi",
             "age": 28,
             "canTakeANapAnywhere": true
-        
+
         }
         """.data(using: .utf8)!
     }
@@ -115,7 +125,7 @@ import Foundation
 }
 
 구조체 변환 핸들러 {
-     
+
     함수 파싱(_ data: Data) -> 개인 {
         try! JSONDecoder().decode(개인.self, from: data)
     }
@@ -138,9 +148,19 @@ import Foundation
 ```
 
 SRP는 다음과 같은 이점을 제공합니다:
- 
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 더 높은 응집력
 - 코드 중복 가능성 감소
@@ -154,7 +174,18 @@ SRP는 다음과 같은 이점을 제공합니다:
 
 처음에는 정의가 모순적으로 들릴 수 있지만 규모에 맞게 이 원칙을 따르기 시작하면 더 많은 의미를 갖게 됩니다. 이 원칙을 정말로 좁혀보면: 클래스를 만들고 확장할 수 있지만 원본 클래스를 수정할 수 없습니다. 이렇게하는 이유는:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다른 사람이 클래스를 작성했고 여기에 기능을 추가하거나 변경을 해야 할 때 원래 작성자에게 계속 변경을 요청해야 하거나 직접 변경해야 할 수 있었습니다. 이제 원 작성자는 기능이 작동하도록 작성한 모든 코드에 대해 다른 생각 과정을 가질 수 있습니다.
 - 게다가 클래스는 더 많은 관심사(또는 간단히 기능)를 통합(또는 단순히 추가)할 수 있는데, 이는 SRP를 깨뜨릴 수 있습니다.
@@ -165,67 +196,67 @@ SRP는 다음과 같은 이점을 제공합니다:
 import Foundation
 
 struct Handler {
-    
+
     private let fetchHandler: FetchHandler
     private let parseHandler: ParseHandler
     private let saveHandler: SaveHandler
-    
+
     init(fetchHandler: FetchHandler, parseHandler: ParseHandler, saveHandler: SaveHandler) {
         self.fetchHandler = fetchHandler
         self.parseHandler = parseHandler
         self.saveHandler = saveHandler
     }
-    
+
     func handle() {
-        
+
         // 사용자 데이터 가져오기
         let personAsData = fetchHandler.fetch()
-        
+
         // 데이터를 필요한 개체로 구문 분석
         let person = parseHandler.parse(personAsData)
-        
+
         // 사용자 개체를 UserDefaults에 로컬로 저장
         saveHandler.saveToUserDefaults(person)
-        
+
         // 사용자 개체를 CoreData에 로컬로 저장
         saveHandler.saveToCoreData(person)
     }
-   
+
 }
 
 struct FetchHandler {
-    
+
     func fetch() -> Data {
         """
         {
             "name": "Shubham Bakshi",
             "age": 28,
             "canTakeANapAnywhere": true
-        
+
         }
         """.data(using: .utf8)!
     }
-    
+
 }
 
 struct ParseHandler {
-     
+
     func parse(_ data: Data) -> Person {
         try! JSONDecoder().decode(Person.self, from: data)
     }
-    
+
 }
 
 struct SaveHandler {
-    
+
     func saveToUserDefaults(_ person: Person) {
         UserDefaults.standard.set(person, forKey: "person")
     }
-    
+
     func saveToCoreData(_ person: Person) {
         // CoreData에 데이터를 저장하는 매우 복잡한 코드
     }
-    
+
 }
 
 struct Person: Codable {
@@ -237,57 +268,68 @@ struct Person: Codable {
 
 이는 우리가 철저히 테스트하고 나중에 배포한 save-to-User-Defaults의 원래 구현을 변경하고 있어 OCP를 깨뜨립니다. OCP를 수용하기 위해 클래스를 통해 상속을 사용하거나 우리 스위프트 개발자가 사용하기를 사랑하는 단순히 프로토콜 준수를 사용할 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 import Foundation
 
 struct Handler {
-    
+
     private let fetchHandler: FetchHandler
     private let parseHandler: ParseHandler
     private let saveHandler: PersistenceHandler
-    
+
     init(fetchHandler: FetchHandler, parseHandler: ParseHandler, saveHandler: PersistenceHandler) {
         self.fetchHandler = fetchHandler
         self.parseHandler = parseHandler
         self.saveHandler = saveHandler
     }
-    
+
     func handle() {
-        
+
         // 사람 데이터 가져오기
         let personAsData = fetchHandler.fetch()
-        
+
         // 데이터 구문 분석하여 필요한 객체로 변환
         let person = parseHandler.parse(personAsData)
-        
+
         // 사람 객체를 로컬에 저장
         saveHandler.save(person)
     }
-   
+
 }
 
 struct FetchHandler {
-    
+
     func fetch() -> Data {
         """
         {
             "name": "Shubham Bakshi",
             "age": 28,
             "canTakeANapAnywhere": true
-        
+
         }
         """.data(using: .utf8)!
     }
-    
+
 }
 
 struct ParseHandler {
-     
+
     func parse(_ data: Data) -> Person {
         try! JSONDecoder().decode(Person.self, from: data)
-    }    
+    }
 }
 
 protocol PersistenceType {
@@ -295,29 +337,29 @@ protocol PersistenceType {
 }
 
 struct UserDefaultsPersistenceHandler: PersistenceType {
-    
+
     func save(_ person: Person) {
         UserDefaults.standard.set(person, forKey: "person")
-    }    
+    }
 }
 
 struct CoreDataPersistenceHandler: PersistenceType {
-    
+
     func save(_ person: Person) {
         // Core data에 데이터를 저장하기 위한 매우 포괄적인 코드
     }
 }
 
 struct PersistenceHandler {
-    
+
     let userDefaultsPersistenceHandler: UserDefaultsPersistenceHandler
     let coreDataPersistenceHandler: CoreDataPersistenceHandler
-    
+
     init(userDefaultsPersistenceHandler: UserDefaultsPersistenceHandler, coreDataPersistenceHandler: CoreDataPersistenceHandler) {
         self.userDefaultsPersistenceHandler = userDefaultsPersistenceHandler
         self.coreDataPersistenceHandler = coreDataPersistenceHandler
     }
-    
+
     func save(_ person: Person) {
         userDefaultsPersistenceHandler.save(person)
         coreDataPersistenceHandler.save(person)
@@ -337,70 +379,70 @@ struct Person: Codable {
 import Foundation
 
 struct Handler {
-    
+
     private let fetchHandler: FetchHandler
     private let parseHandler: ParseHandler
     private let saveHandler: ModifiedSaveHandler
-    
+
     init(fetchHandler: FetchHandler, parseHandler: ParseHandler, saveHandler: ModifiedSaveHandler) {
         self.fetchHandler = fetchHandler
         self.parseHandler = parseHandler
         self.saveHandler = saveHandler
     }
-    
+
     func handle() {
-        
+
         // 사람 데이터 가져오기
         let personAsData = fetchHandler.fetch()
-        
+
         // 데이터 구문 분석하여 필요한 객체로 변환
         let person = parseHandler.parse(personAsData)
-        
+
         // 사람 객체를 로컬에 저장
         saveHandler.save(person)
     }
-   
+
 }
 
 struct FetchHandler {
-    
+
     func fetch() -> Data {
         """
         {
             "name": "Shubham Bakshi",
             "age": 28,
             "canTakeANapAnywhere": true
-        
+
         }
         """.data(using: .utf8)!
     }
-    
+
 }
 
 struct ParseHandler {
-     
+
     func parse(_ data: Data) -> Person {
         try! JSONDecoder().decode(Person.self, from: data)
     }
-    
+
 }
 
 class SaveHandler {
-    
+
     func save(_ person: Person) {
         UserDefaults.standard.set(person, forKey: "person")
     }
-    
+
 }
 
 final class ModifiedSaveHandler: SaveHandler {
-    
+
     override func save(_ person: Person) {
         super.save(person)
-        
+
         // Core data에 데이터를 저장하기 위한 매우 포괄적인 코드
     }
-    
+
 }
 
 struct Person: Codable {
@@ -412,8 +454,18 @@ struct Person: Codable {
 
 OCP의 이점은 다음과 같을 수 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코드를 유지 및 검토하는 것이 쉽습니다.
 - 추상화 및 다형성의 사용을 촉진합니다.
@@ -425,7 +477,18 @@ OCP의 이점은 다음과 같을 수 있습니다:
 
 그것이 실제로 말하는 것은 슈퍼클래스의 객체는 해당 서브클래스의 객체로 교체할 수 있어야 하는데 프로그램의 정확성에 영향을 미치지 않아야한다는 것입니다. LSK는 단순히 추가 단계를 통한 상속이라고 볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상기한 예시를 사용하여 LSK(Liskov Substitution Principle)를 설명하는 것이 어렵고 혼란스러울 수 있으므로 다른 간단한 예시를 사용하겠습니다. 또한, 이미 해당 내용이 인터넷에 널리 퍼져 있고 때로는 혼란스러울 수 있기 때문에 사각형과 정사각형 예시를 사용하지 않겠습니다.
 
@@ -453,7 +516,7 @@ final class Ostrich: Bird {
 import Foundation
 
 class Bird {
-    
+
 }
 
 class FlyingBird: Bird {
@@ -473,7 +536,18 @@ final class Ostrich: Bird {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LSP의 이점은 다음과 같습니다:
 
@@ -484,7 +558,18 @@ LSP의 이점은 다음과 같습니다:
 
 인터페이스 분리 원칙(ISP)은 클라이언트가 사용하지 않는 인터페이스를 강제로 구현하거나 클라이언트가 사용하지 않는 메서드에 의존하도록 강요해서는 안된다는 것을 명시합니다. 간단히 말하면, 하나의 뚱뚱한 인터페이스(또는 프로토콜) 대신에 많은 작은 인터페이스를 사용하여 제공하는 메서드에 기반을 둔다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ISP(Interface Segregation Principle)은 SRP(Single Responsibility Principle)와 비슷하지만, SRP는 일반적으로 구조체/클래스에 적용되고, ISP는 프로토콜에 적용됩니다.
 
@@ -494,11 +579,11 @@ ISP(Interface Segregation Principle)은 SRP(Single Responsibility Principle)와 
 import Foundation
 
 protocol Bird {
-    
+
     func fly()
-    
+
     func swim()
-    
+
     func mimic()
 }
 
@@ -517,7 +602,18 @@ final class Penguin: Bird {
 
 이 문제를 해결하기 위해 Bird 프로토콜을 하위 프로토콜로 분리하여 각 메서드를 수용할 수 있도록 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import Foundation
@@ -556,7 +652,18 @@ ISP의 장점은 다음과 같습니다:
 
 # (D) 의존성 역전 원칙 (Dependency Inversion principle)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 의존 역전 원칙(Dependency Inversion Principle, DIP)은 고수준 모듈이 저수준 모듈에 의존하지 않아야 하며, 둘 다 추상화에 의존해야 한다고 설명합니다. 간단하게 말하면: 구성원은 구상체(concretions)가 아닌 추상화(abstractors)에 의존해야 한다는 것이죠.
 
@@ -564,7 +671,18 @@ ISP의 장점은 다음과 같습니다:
 
 DIP는 OCP와 꽤 비슷하게 들리지만 예시로서도 OCP의 예시를 사용할 수 있을 정도이기도 합니다. 그러나 여기서는 다른 예시를 사용하겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 예제는 DIP(Dependency Inversion Principle)를 위반합니다. Payment 클래스는 CreditCardPayment과 강하게 결합되어 있으며, 이는 고수준 모듈인 Payment 클래스가 저수준 모듈인 CreditCardPayment에 의존하고 있음을 의미합니다. DIP에 따르면 추상화/프로토콜에 의존해야 합니다.
 
@@ -588,13 +706,13 @@ struct ApplePayPayment: PaymentMethod {
 }
 
 struct Payment {
-    
+
     private let paymentMethod: PaymentMethod
-    
+
     init(method: PaymentMethod) {
         paymentMethod = method
     }
-    
+
     func makePayment(of amount: Double) {
         paymentMethod.pay(amount)
     }
@@ -612,7 +730,18 @@ DIP의 장점:
 - 코드를 보다 유연하고 재사용 가능하며, 민첩하게 만듦
 - 구성 요소 간의 계약을 정의하기 위해 인터페이스 또는 프로토콜 사용을 장려함
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모두를 종합하자면, 앱에 SOLID 원칙을 통합하는 것에는 많은 이점이 있습니다:
 

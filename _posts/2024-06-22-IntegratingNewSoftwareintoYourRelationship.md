@@ -3,13 +3,12 @@ title: "새 소프트웨어를 커플 관계에 통합하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-22-IntegratingNewSoftwareintoYourRelationship_0.png"
 date: 2024-06-22 22:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-22-IntegratingNewSoftwareintoYourRelationship_0.png
 tag: Tech
 originalTitle: "Integrating New Software into Your Relationship?"
 link: "https://medium.com/brain-labs/integrating-new-software-into-your-relationship-407e3e0a37ec"
 ---
-
 
 <img src="/assets/img/2024-06-22-IntegratingNewSoftwareintoYourRelationship_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 저는 스무 살 때부터 기술 분야에서 일해 왔어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 나이는 사십에요. 이래서 나이를 묻지 말라고 하잖아요. 제 일을 새로 만들어내며 이제 이십 몇 년 동안 다이얼업에서 출발해 어색하게 명명된 Napster로부터 DVD를 불법으로 복제해왔던 시절을 거쳐 이젠 탐욕스러운 스트리밍 서비스와 인공지능 도덕적 공포까지 만날 수 있게 되었어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 졸업 후에는 제 학문적 기술을 필요로 하는 일이 드물었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대학에서는 어떤 개인이 특정 콘텐츠를 재구성하거나 소화하여 잘못된 주장을 듣는 대상 청중에게 의미있게 들리도록 하는 방법을 분석하는 법을 배웠어요. ChatGPT 이전의 prompt engineering에서. 그것은 유망한 것처럼 들리지만, 법대가 없으면 별 도움이 되지 않아요. 저는 법대 학비를 마련할 수 없었어요.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 졸업 이후, 돈이 필요했지만, 나의 이력서에는 돈을 벌 수 있는 능력이 거의 없는 것 같았어요. 나의 자산들은 내부적으로 달성된 것보다 외부에서 인정받은 것들이었어요. 예를 들어, 그 당시 대중 문화에 적합한 표현형을 가지고 있었어요. 나는 흰 피부이고 마른 편이었으며 그리 못 생긴 것은 아니었어요. 영어만을 구사했는데, 그 언어는 기술에 대한 미국 달러와 같았어요. 또한 사회에 적응하기 쉽고 나에게 유리한 경우에는 굉장히 조작적이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1980년대에 보수적인 가부장적 환경에서 성장했어요. 권위에 대한 희망은 없었지만, '어려운 사람'으로 레이블링되지 않으려고 희망적인 초보자처럼 행동하는 법을 알고 있었어요. 지도자들이 이미 내린 결정에 대해 좋게 느끼도록 해 그들이 나를 방치하도록 만들었어요. 남을 인정하면서 개인적으로 그들의 비전에 투자하지 않아 월세를 낼 수 있었어요.
 
@@ -47,7 +79,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 여성이 힘을 표현하는 것은 꼬리치는 예술일 수 있어요, 말 그대로 그렇죠. 최선을 다하더라도, 여성 리더십을 엄격하게 확장하려는 시도는 지역적인 관행과 정치에 엉키곤 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 이들은 왜 이러한 성 차별적 개선이 윤리적으로 필수적인지에 대해 의문을 제기할 수 있습니다. 그들은 성 평등의 장기적 이익을 어필합니다. 제 경험 상, 이 직접적인 접근은 종종 판단적이고 공격적으로 인식되며, 그 지지자들은 제거 대상이 됩니다.
 
@@ -57,7 +100,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 그리고 여자도 밥 먹어야죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어릴 때, 저는 여러 가지 수단을 통해 다른 사람들을 동기부여하는 법을 배웠어요. 하지만 이제 미투 이후로는 남성적인 매력과 나쁜 포스트모던 분위기를 시사하는 방법으로 여겨질 수 있겠죠. 그것을 상사에게 사양하는 방법으로 생각했어요. 대중 문화에서는 90년대 자연선택, 제3차 페미니즘, 일명 걸 파워로 취급되었어요.
 
@@ -67,7 +121,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 내가 말하고 싶은 건 걸 파워가 이 모든 문제의 책임이 있는 것은 아니라는 것이에요. 당시에는 취소 문화가 아래층을 겨냥했지 상위층을 겨냥하지 않았어요. 세상은 영향력과 권력을 문제 해결로 연결했고, 어디에서나 한 사람의 결정을 위한 권력을 대부분 독점했던 사람들은 책임을 피하고 있었어요. 90년대에 상사로서 장점은 부하직원들이 의심없이 당신의 지시를 따르고 뭔가 잘못될 때마다 비난을 받는 것이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신은, 진정한 리더십을 아실 거예요. 미국이 위대했던 시절.
 
@@ -77,7 +142,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 내 그다지 독특하지 않은 경험은 다른 사람들이 내 의견을 자신의 생각처럼 듣기에 충분히 중요한 느낌을 받게 했다. 일이 되는 것에 대한 신용을 얻었는데, 일이 잘 풀리면 그들이 받았고, 일이 안 풀리면 '아직 배우고 있는' 바보 공주가 되었다. 그들에게는 피할 수 없는 잘못이 있었지만, 남성 동료가 여자를 그들의 클럽에 들이는 것을 증명하는 역할도 했다. 나는 클럽에 대한 어떤 애착도 느끼지 않았기 때문에 특별히 신경 쓰지 않았다; 급여를 받으러 왔고, 남에게 이용당하는 걸 익숙해했다. 그것은 개인적인 문제가 아니었고, 경제 체계였으며, 대부분의 사람보다 잘 빠져나갔다고 생각했다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 존재로 인해 주인들이 어색한 행동에 대해 부인할 수 있는 가능성이 생겼어. 일자리 안정과 상당한 봉급을 얻었지.
 
@@ -87,7 +163,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 내 직업은 뛰어난 '소프트웨어 계몽이라는 데이터 과학자' 사이에서 중재하는, 위대한 페미닌한 중재자로서, 중요한 돈을 벌어들이는 기업에게 그들이 모든 문제를 해결해 주는 소프트웨어 솔루션을 판매하는 일이었어. 클럽에 있는 계몽들이 판매를 하고, 나는 결과물을 다뤘어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 과거 기업용 소프트웨어를 구매하는 것은 쉬웠으며 부유한 사람들의 놀이터였어요. 잘 태어난 나이가 든 백인 신사들이 서로 또는 자신의 젊은 시절을 이상화한 다이나믹 아바타와 네트워킹을 했어요. 헌터족과 좋은 성과를 거둔 랙스 선수들이 함께 모여 서로 자금 지원하고 싶어했어요.
 
@@ -97,7 +184,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 그래서 서명은 공식적이었어요 — 소프트웨어를 구매하는 것은 쉽고 즐거웠으며, 개별적으로 비싸지 않았어요. 결국, 아버지가 지불했으니까요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 제 업무는 실행하는 것이었어요. 그리고 기업 내에서 대규모 소프트웨어 시스템을 효과적으로 구현하는 것은 구매 후 '쉬운 일' 이라고 할 수 없죠. 바로 변경 관리라 불리는 끊임없는 기술 적응에 관한 갈등이 계속됩니다.
 
@@ -105,7 +203,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 제가 소프트웨어와 함께 제한된 기간 판매된 액세서리로서 파티 후 날 아침에 도착했어요. 아빠는 파티 뒤 청소를 넘어서 파티를 장식하는 것이 전악적인 장기 계획의 일부처럼 보이도록 하는 것이 제 역할이었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 임무는 무엇이 팔렸는지, 왜 팔렸는지, 어떻게 인식된 가치를 추출할 수 있는지 알아내는 것이었습니다. 대규모 엔터프라이즈 소프트웨어 구독이 환상적이고 비용 절감 및 수익 창출 아이디어로 보이도록 해야 했습니다.
 
@@ -115,7 +224,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 대규모 엔터프라이즈 소프트웨어 구매는 항상 좋은 아이디어였을까요? 문제를 해결했나요, 해결책을 팔았나요? 돈을 돌아다니도록 만들어진 시시한 시스템을 강화하고 있는 걸까요? 다윈은 그의 이론으로 인해 인간의 존엄성을 파괴했나요? NASA는 하나님의 월급을 미국에 낭비하는 악마인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어린 시절, 친척 중 한 분이 두 가지 종류의 거짓말이 있다고 말했어요: 자신이 거짓말을 한다고 알고 하는 거짓말과 모르고 하는 거짓말. 사회가 둘 중 하나를 다른 것으로 오해할 때, 당신은 성인이 되었다고 할 수 있어요.
 
@@ -125,7 +245,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 제 아이들 시절에 연마된 기술과 기술 분야에서의 경험을 통해, 새로운 소프트웨어를 사용하도록 직원들을 설득했어요. 종종 그들과 함께 앉아 소프트웨어의 기능이 전문적인 업무에 어떻게 가치를 더할 수 있는지에 대해 토론했어요. 또한 기업 내 병목 현상이 발생하는 지점을 파악했는데, 이러한 문제들은 새로운 소프트웨어로 해결되기 힘들었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 사람들이 직장에 나타나서 주어진 조건 내에서 업무를 처리한다는 것을 깨달았어요. 이러한 조건들은 일반적으로 처음에 약속된 조건이 아니며 외부, 거의 상상 속의 주요 캐릭터들에 의해 늘 변할 수 있어요 - 그 주요 캐릭터들이 바로 저가 종종 대변하는 사람들이에요.
 
@@ -135,7 +266,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 많은 자음을 사였지요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 영향은 무엇인가요?
 
@@ -145,7 +287,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 그리고 종종, 이전 것은 쓸모없는 것은 아니거나 적어도 개인은 그것을 사용하는 방법을 찾았습니다. 그 이전 사람이나 기술은 사용자의 하루에 목적과 구조를 제공합니다. 그것은 의미를 가지고, 사용자에게 이제 묵직한 문화나 영적 첨부물에 기여하는 것으로 변모했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개인적인 예를 하나 들어볼게요: 간단한 수학 문제를 풀 때 여전히 구글 '계산기'를 사용해요. ChatGPT나 Perplexity에 물어보는 게 아니라 구글에서 찾아요—제 나이는 몇 살일까요?
 
@@ -155,7 +308,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 그들이 협력하여 만든 소프트웨어를 분리하는 건 감정적으로나 재정적으로 아플 수 있어요. 얼마나 아픈가요? 그건 상황에 따라 다르죠. 부부의 인코딩된 연결을 검토할 때, 그들이 어떻게 시간이 지남에 따라 상호 작용했는지 파악해야 해요. 그들의 상호 작용이 어떻게 각 부부 구성원의 모듈성과 일치하는지 검토해야 해요. 지속적인 관계에서는 구성원이 서서히 예상하기 시작하는 역할과 책임을 맡게 되는데요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 관계를 유지하는 데 가독성과 신뢰성이 중요합니다. 즉각적인 효율성 비용이 발생할지라도요. ‘남편’이 ‘아내’가 가사일을 하면서 지침을 느끼는지 알고 계시나요? ‘아내’는 ‘남편’이 덜 필요하다고 느끼고 있음을 알고 계시나요? 함께 코드를 합치면서 시작한 포크 저장소들이 있지만, 더 많은 인터페이스를 바라는 ‘남편’의 소망을 아시나요?
 
@@ -165,7 +329,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 해제할 수 없을 수도 있습니다, 특히 그 포크하는 아이들이 있을 때. 확장된 소프트웨어는 소프트웨어를 사용 방식과 일치시키는 로컬 조건, 구체적 조건, 실천에 적응해야 합니다. 사람들은 일의 요구사항에 맞추어 가장 엄격한 소프트웨어 시스템을 자신만의 아이디어에 따라 맞춤화할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론, 상호 작용하는 모든 사람이 더 명확하게 볼 수 있도록 자신이 발생시킨 안구 피로 덕분에 레거시 코드를 인정하지 않는 이상한 사이코가 항상 있죠. 우리의 옛 습관과 프레임워크는 우리가 삭제했다고 생각해도 그대로 사라지지 않아요. 모든 시스템과 그 코드를 괴롭히는 구조적 유령들이 있죠. 하지만 대부분의 경우에는 익숙한 인간적이거나 기술적인 습관을 버릴 때 기술적 부채가 생기죠. 그런 부채는 다음 개인이나 혁신에 시간과 에너지를 투자할 가능성이 적어지게 만드는 거예요.
 
@@ -175,7 +350,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 한 명의 클라이언트를 위해 작업하면서 '사랑에 빠진 사람'이라고 자주 얘기하는 연애 중독자를 만났어요. 더 어린 사람을 선호하는 노인들의 이유를 이해할 수 있었죠. 그게 그저 젊은 몸 때문만은 아니라는 거, 그것이 도움이 되는 건 매트릭스만 알죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드를 직접 작성하는 데는 시간이 걸리고, 젊음은 경험이 부족해서 발생하는 이동성과 간결함을 의미합니다. 젊은 사람들은 새로운 환경에 빠르게 적응하고 해당 환경에 쉽게 변화됩니다. 젊은 고객들은 자신의 자아 인식에 가치를 더하는 것을 구매하기를 더욱 열망합니다. 게다가, 젊음은 주로 시간, 에너지, 혁신적인 취미(춤추기와 마실 것을 알고 계시죠)에 대한 욕망과 함께 옵니다.
 
@@ -185,7 +371,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 나는 이 모든 것에 문제가 있다고 생각하지 않습니다. 관계는 신속하게 구축되는 것이 아니라, 종이 많이 넘기고, 구독하고, 감정적으로 클릭하는 여러 정신적 활동을 통해 만들어집니다. 우리는 스스로를 위한 신뢰할 만한 콘텐츠를 찾고 만들기 위해 반복 작업해야 하며, 그후 소셜 미디어 피드를 적절하게 소개해야 합니다. 우리가 디지털 버전의 스스로와 다른 사람을 좋아하는 이유 중 하나는 스스로 창조 감을 속일 만큼 즉각적이고 영감을 준다고 느끼기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다윈은 이 모든 것이 자연스러울 것이라 말했겠지만, 반대자들은 로맨스의 위엄을 박탈한다고 말할지도 모르겠어요. 두 그룹 다 어느 정도의 투쟁은 예상된다는 데 동의할 것 같아요. 측정된 양의 투쟁은 적절한 맥락 속에서 우리가 살아남고 번영하는 데 도움을 줄 수 있어요.
 
@@ -195,7 +392,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 개인적인 관점에서, 어느 정도의 투쟁은 피할 수 없지만 그것을 피하기 위해 완전한 통제를 포기하고 싶지 않아요. 그런 선택은 장기적으로는 항상 잘 되지 않아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아마도 나의 중년 때로 추정되지만, 요즘 나는 미들웨어 같은 기분이 들어요.
 
@@ -205,7 +413,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 그러나 이제는 기술적 및 디지털 주권과 자율성의 가치를 찬양하는 제안 초청이 내 이메일함에 자주 뜨면서 하루도 지나지 않아요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아마도 이런 전화는 모두 유럽 위원회에서 마이크로소프트 워드 문서로 작성한 것 같아요. 이 문제를 묻고 싶네요: 마이크로소프트의 본사가 어디에 있는지 알려줄까요, 아니면 CoPilot에게 맡길까요?
 
@@ -215,7 +434,18 @@ link: "https://medium.com/brain-labs/integrating-new-software-into-your-relation
 
 자철하는 지도자들은 가끔 판매의 득템 흥분 속에서 디지털 기업 도구를 채택하고 가치를 추출하는 것을 기대하는 사람들을 잊곤 해요. 진정한 전달 보장을 확보하기 위해 필요한 사전 조사보다는 회의실 내의 외부 검증이 중요하다 보는 거죠. 이탈된 이사들은 그들의 아래에 있는 사람들을 리더십에만 말하는 시스템의 조작 가능한 톱니바퀴로 취급해 왔어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 피라미드 꼭대기에서의 위치로부터, 이러한 리더들은 경쟁적인 피라미드 제도가 사람들을 최선으로 이끌지 않는다는 것을 잊은 듯합니다. 망치나 집을 사는 것만으로는 집이 되지 않죠. 다윈이 맞을지는 몰라도, 이것이 내 과학 선생님들을 설득하는 데 도움이 될지는 의문입니다.
 
@@ -225,7 +455,17 @@ NASA는 별을 향해 나아가지만, 지구에 있는 사람들이 들여다�
 
 # 추가 읽을거리:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-06-22-IntegratingNewSoftwareintoYourRelationship_2](/assets/img/2024-06-22-IntegratingNewSoftwareintoYourRelationship_2.png)

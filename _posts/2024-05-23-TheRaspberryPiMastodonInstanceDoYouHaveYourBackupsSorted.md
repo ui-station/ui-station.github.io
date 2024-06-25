@@ -18,7 +18,18 @@ link: "https://medium.com/better-programming/the-raspberry-pi-mastodon-instance-
 
 ## 어떤 것을 사용하고 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 것을 직접 실행하고 있기 때문에 '클라우드' 컴퓨팅 서비스를 사용하지 않고 모든 서버 구성 요소에 대한 책임을 짊어지고 있어요. 주변에 Raspberry Pi 4 Model B(2018)가 있었는데, 표준 라우터와 독립적인 USB-C 전원 공급 장치에 연결했어요. 라우터 연결에는 이더넷 케이블 및 Pi 위치에 따라 Wi-Fi를 사용했어요. Mastodon이 사용하는 포트(80번은 HTTP, 443번은 HTTPS, 22번은 SSH)를 라우터로 포워딩하고 Raspberry Pi의 로컬 주소(터미널에서 hostname -I를 입력하여 확인)로 포트를 포워드하도록 라우터를 구성하세요. 그런 다음 도메인 이름의 DNS 설정을 사용하여 같은 포트를 라우터의 공개 IP 주소로 포워드하세요.
 
@@ -28,7 +39,18 @@ Raspberry Pi는 훌륭한 서버로 사용될 수 있어요. 이 작고 저렴�
 
 ## 메모리 고려하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 좋아요, 좀 더 깊게 메모리에 대해 알아봅시다. 당신이 Mastodon 인스턴스를 직접 호스팅해야 한다고 생각하면 중요하니까요. 여기서 기본 설정과는 달라지는 부분이 있습니다.
 
@@ -41,7 +63,18 @@ PAPERCLIP_ROOT_PATH= /media/mastodon/system
 PAPERCLIP_ROOT_URL= /storage/system
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Nginx 구성 파일에 다음 줄을 HTTP 및 HTTPS 구성에 모두 추가해주세요:
 
@@ -53,11 +86,20 @@ location /storage {alias /media/mastodon; }
 
 처음 드라이브를 추가했을 때 제 서버는 행복하게 실행되었지만 미디어 업로드를 할 때마다 500 오류가 발생했습니다 (비슷한 오류를 만나면 터미널에서 journalctl -u mastodon-web -f를 실행하여 해당 인스턴스와 주고받는 HTTP 요청의 실시간 뷰를 확인할 수 있습니다). 제 경우 문제는 소프트웨어를 실행하는 'mastodon' 사용자가 마운트된 SSD 드라이브에 쓰기 권한이 없었기 때문입니다! 업로드가 실패한 것이 당연했습니다. 이 문제를 해결하기 위해 /etc/fstab 파일(리눅스의 마운트 포인트를 정의하는 파일)에서 드라이브 항목을 수정하여 모든 사용자에게 읽기 및 쓰기 권한을 부여했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-/dev/sda1  /media  vfat  rw,user  0  0
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+/dev/sda1 /media vfat rw,user 0 0
 
 이 설정은 몇 번의 시행착오로부터 나왔어요; 적어도 내 시스템에는 작동합니다. 만약 내가 무언가를 형편없게나 안전하지 않게 한 것 같다면 알려주세요! 하지만 이 메모리 솔루션은 더 이상 버벅거리거나 스크롤하는 데에 한 년 이상 사용해보니 잘 작동하고 있어요.
 
@@ -65,9 +107,18 @@ location /storage {alias /media/mastodon; }
 
 라즈베리 파이 마스토돈 인스턴스에 추가 드라이브를 연결하는 것은 약간 복잡할 수 있고, 정확한 설정은 외부 드라이브의 파일 시스템에 따라 다를 거에요. 하지만 이렇게 하는 것은 거의 항상 좋은 생각이에요 (아래에서 설명할 이유 중 하나 때문이죠).
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 하지만 백업은 하시나요?
 
@@ -77,7 +128,18 @@ location /storage {alias /media/mastodon; }
 
 모든 경우들 중에서, 저는 가장 준비하고 싶었던 위험은 SD 카드의 고장이었습니다. SD 카드에서 리눅스를 실행하는 것은 SD 카드가 불안정하기 때문에 좋은 생각은 아닙니다. 그러나 어쨌든, 그것이 Raspberry Pi가 하는 일이기 때문입니다. 따라서 SD 메모리가 복구할 수 없을 정도로 고장 나서 리눅스와 Mastodon 소프트웨어를 처음부터 다시 설치해야 하는 상황이 오면 필요한 것이 무엇일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위험을 완화하기 위해 두 가지 방안을 고안했어요.¹ 첫 번째는 이미 이야기한 것처럼, /system/ 폴더를 훨씬 신뢰할 수 있는 SSD 드라이브로 이동하는 거예요. SD 카드 고장 시에도 미디어 저장 공간이 안전하게 보호될 거예요. 좋아요. 그런데 PostgreSQL 데이터베이스는 어떨까요? 이 데이터들은 아마도 인스턴스가 구축한 소셜 네트워크를 정의하는 만큼 더 중요할 거예요.
 
@@ -87,7 +149,18 @@ location /storage {alias /media/mastodon; }
 
 마침내, 지난 주에 위험이 현실이 되었어요. 라즈베리 파이의 SD 카드가 고장나서 기계에 완전히 접근할 수 없었어요. 제 백업 전략은 충분했을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 백업에서 복원하기
 
@@ -97,7 +170,18 @@ location /storage {alias /media/mastodon; }
 
 무엇을 해야할까요? 조금 당황해서 맥에서 Ubuntu를 실행하는 VirtualBox 머신을 사용하여 카드를 외장 드라이브로 마운트하고 표준 디스크 도구와 터미널에서의 디스크 관리 프로그램 fsck로 수리하려고 노력했습니다. 운이 없었습니다. 그러나 Ubuntu에서는 /home/ 폴더를 포함하는 파티션을 마운트하고 액세스할 수 있었기 때문에 복구에 필요한 몇 가지 파일을 아직 백업하지 않은 상태로 구할 수 있었습니다. 경성.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 파일이 필요할까요? 이 질문에 대한 최상의 답변을 Mastodon 문서에서 찾았어요. '새로운 장치로 이전하기'라는 설명에서 찾았죠. 왜냐하면 Raspbian과 Mastodon 소프트웨어를 처음부터 다시 설치해야 할 때 해야 할 일이기 때문이에요. 새로운 장치를 설정하고 있는 것이거든요. 제 구성을 고려하면, 서버 기능을 간단하게 복구하기 위해 필요한 것들의 목록은 아래와 같아요:
 
@@ -110,7 +194,18 @@ SD 카드가 다운됐을 때, 외부 SSD에 (1)과 (2)가 포함되어 있었�
 
 해당 추가 파일들은 제 인스턴스의 특정 구성 설정을 포함했어요. 외부 미디어 폴더를 위한 여분의 사항, 알림에 사용된 SMTP 서버의 세부사항, 활성 브라우저 세션, 이중 인증 및 푸시 알림을 위한 '비밀' 등을 포함해요. 꼭 필요한 건 아니지만, 이 파일들이 있어서 복구가 가능했던 것이죠. 이 모든 정보를 필요한대로 정확히 가지고 있어서 제 삶을 훨씬 쉽게 만들어줬어요. 큰 도움이 되었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 긴급한 상황에서 해당 파일이 필요할 것이라는 사실은 나를 놀라게 할 필요가 없었습니다. 왜냐하면 이전에 내가 필요에 맞게 조정한 파일들이었기 때문이었습니다! 그럼에도 불구하고, 그들을 백업 루틴에 포함시키는 것을 잊었습니다.
 
@@ -120,7 +215,18 @@ SD 카드가 다운됐을 때, 외부 SSD에 (1)과 (2)가 포함되어 있었�
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번에는 이야기가 행복한 결말을 맞이했습니다. 이 글을 쓰는 이유 중 하나는 아마도 나중에 이와 비슷한 문제에 직면할 수도 있기 때문이고, 필요한 단계를 상기시키기 위해 매뉴얼이 있으면 유용하다고 생각하기 때문입니다. 물론 당신에게도 도움이 될 수 있기를 바라겠습니다.
 
@@ -129,4 +235,3 @@ SD 카드가 다운됐을 때, 외부 SSD에 (1)과 (2)가 포함되어 있었�
 ¹ 시도해보지 않은 대안적인 전략: SD 카드를 정기적으로 복제하는 것입니다. 복제본이 있다면 원본이 손상된 경우 카드를 교체하고 다시 사용할 수 있습니다. PostgreSQL 덤프 대비 정기적인 복제가 번거로울 것으로 생각해서 이 방법을 선택하지 않았습니다. 하지만 여기에 좋은 대안이 있는 것을 우연히 놓친 것일 수도 있습니다.
 
 ² 공식 문서의 목록이 더 상세하지만, 다른 몇 가지 기본 설정을 사용했기 때문에 다른 여러 파일들에 대해 걱정할 필요가 없었습니다. 그러나 서버 사용을 시작하기 전에 '새로운 머신으로 이동' 문서를 읽고, '서버 백업' 문서를 읽는 것이 좋습니다.
-

@@ -3,13 +3,12 @@ title: "파이테스트Pytest와 파이스파크PySpark를 사용한 데이터 �
 description: ""
 coverImage: "/assets/img/2024-06-19-4TipsforDataQualityValidationswithPytestandPySpark_0.png"
 date: 2024-06-19 12:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-19-4TipsforDataQualityValidationswithPytestandPySpark_0.png
 tag: Tech
 originalTitle: "4 Tips for Data Quality Validations with Pytest and PySpark"
 link: "https://medium.com/slalom-build/4-tips-for-data-quality-validations-with-pytest-and-pyspark-69e100fd387e"
 ---
-
 
 ## 높은 품질과 신뢰할 수 있는 결과를 얻기 위한 변환된 데이터 테스트
 
@@ -19,7 +18,18 @@ link: "https://medium.com/slalom-build/4-tips-for-data-quality-validations-with-
 
 ## 배경
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 최근 데이터 소프트웨어 프로젝트에 품질 엔지니어로 참여했는데, 여기서는 변환된 데이터에 대한 많은 테스트가 필요했습니다. 이 프로젝트에서는 데이터를 한 Amazon S3 버킷에서 다른 버킷으로 변환하기 위해 AWS Glue를 사용했습니다. 데이터는 Python을 사용하여 PySpark를 통해 변환되었고, 따라서 이러한 변환을 테스트하기 위한 테스트 자동화 프레임워크는 동일한 기술 스택에 의존했지만 Pytest도 추가되어 일관성을 유지하려고 노력했습니다.
 
@@ -29,7 +39,18 @@ Pytest, PySpark 및 AWS로 시작하는 방법에 대해 자세히 알아보려�
 
 상기 프로젝트에서 우리 팀은 데이터를 제3자 소프트웨어 도구에서 소화되도록 변환했습니다. 데이터를 성공적으로 가져오기 위해 각 대상 파일에는 요구 사항 목록이 있었습니다. 각 대상 파일은 요구 사항을 충족해야만 소프트웨어가 데이터를 수용하고 데이터가 분석용으로 액세스 가능하지 않을 것이라는 문제를 방지할 수 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 목록에 나열된 요구 사항은 소스 파일에서 대상 파일로 데이터를 변환하는 데 필요한 스크립트가 어떻게 보이는지를 팀이 판단하는 데 도움을 주었지만, 모든 대상 파일의 데이터가 모든 요구 사항을 충족할 것을 보장하지는 않았습니다.
 
@@ -39,7 +60,18 @@ Pytest, PySpark 및 AWS로 시작하는 방법에 대해 자세히 알아보려�
 
 모든 데이터 소프트웨어 프로젝트 솔루션은 일반적으로 맞춤형이 아니지만, 이 프로젝트에서 습득한 몇 가지 기술은 다양한 데이터 관련 프로젝트에서 효율적인 엔지니어링과 사고 과정에 도움이 될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 경험에서 데이터 품질 테스트를 위한 네 가지 주요 요점 목록을 만들었습니다:
 
@@ -52,7 +84,18 @@ Pytest, PySpark 및 AWS로 시작하는 방법에 대해 자세히 알아보려�
 
 ## 단언을 조건부로 감싸기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전통 소프트웨어 프로젝트에서 자동화 테스트를 수행할 때, 버그에 대한 가시성은 디버깅 데이터보다 약간 더 명확합니다. 전통적인 소프트웨어 프로젝트나 애플리케이션에서는 앱을 열어 검사하거나 API를 검토할 수 있지만 데이터는 매우 많을 수 있습니다. PySpark에서 데이터 문제에 대한 가시성을 얻기 위한 돋보기는 데이터프레임입니다.
 
@@ -64,7 +107,18 @@ Pytest, PySpark 및 AWS로 시작하는 방법에 대해 자세히 알아보려�
 
 가령 파일의 한 열에는 ZIP 코드 데이터가 있고 요구 사항이 각 값이 정확히 5자여야 한다면, 해당 테스트는 다음과 같을 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import length
@@ -75,7 +129,7 @@ def test_zipcode_data_length(spark_source, csv_file_path: str):
   ## .csv 파일을 읽고 DataFrame을 생성합니다.
   dataframe = spark_source.read.csv(csv_file_path)
 
-  ## DF에서 filter 메소드를 사용하여 열 값 분석하고 
+  ## DF에서 filter 메소드를 사용하여 열 값 분석하고
   ## (다른 DF를 만듭니다)
   invalid_rows = dataframe.filter(length(dataframe['Zipcode']) != 5)
 
@@ -84,7 +138,7 @@ def test_zipcode_data_length(spark_source, csv_file_path: str):
     logging.info("예상대로 'Zipcode' 열의 모든 값이 5의 길이와 동일합니다!")
     assert True
   else:
-    logging.error("'Zipcode' 열의 값은 모두 5의 길이와 동일해야 하지만 
+    logging.error("'Zipcode' 열의 값은 모두 5의 길이와 동일해야 하지만
     예상과 다른 값이 존재합니다!")
   ## 요구 조건을 충족시키지 못하는 행이 포함된 필터링된 DF를 출력합니다
     invalid_rows.show(truncate=False)
@@ -97,8 +151,18 @@ def test_zipcode_data_length(spark_source, csv_file_path: str):
 
 특정 열마다 모든 값이 정확히 5의 길이여야 하는 경우를 보여준 예제였지만, 테스트의 일반적인 개요/흐름의 원칙은 동일합니다. Assertion을 조건부로 감싸지 않고 다른 옵션은 무엇인가요? 변환된 .csv 파일을 다운로드하고 수동으로 검토하거나 필터링하여 오류 행을 찾을까요? 그것은 매우 흥미로운 옵션이 아닙니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 무엇을 테스트하든간에, 실패의 근본 원인을 빠르게 평가해야 하는 필요성은 항상 품질 테스트 전략의 구성 요소가 될 것입니다. 단언문을 조건문으로 감싸는 것은 그 필요에 대한 해답을 제공합니다. 조건문으로 단언을 감싸는 자동화된 접근은 효율적이며 데이터 관련 문제를 신속하게 다루는 실패 빠른 접근법을 제공합니다. 이 방식은 많은 짐작을 제거하고 시스템/파이프라인의 품질을 유지하거나 개선하는 데 필요한 구체적인 정보를 제공합니다.
 
@@ -108,7 +172,18 @@ def test_zipcode_data_length(spark_source, csv_file_path: str):
 
 제 프로젝트의 경우, 생성되어야 했던 대상 파일 중 많은 파일들이 서로 다른 파일에 대해 유사한 요구 사항을 가지고 있었으며, 심지어 동일한 파일 내의 다른 열도 동일한 요구 사항을 가졌습니다. 간단히 유지하기 위해 각 파일이 데이터를 포함해야 한다는 요구 사항이 하나 있었는데, 이는 명백한 요구 사항처럼 보일 수 있지만 모든 파일에서 실행할 수 있는 매우 쉽고 빠른 자동화된 테스트이며, 예상치 못한 가장자리 경우의 데이터 변환 시나리오에서 유용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 가장 좋은 방법은 모든 대상 파일마다 동일한 간단한 테스트를 작성하지 않아도 되는 방법이 무엇인가요? 어떻게 코드 재사용성을 최대화할 수 있을까요? 답은 Pytest의 Parametrize 표시를 사용하여 테스트를 매개변수화하는 것이었습니다.
 
@@ -129,7 +204,18 @@ Pytest의 parametrize 표시를 통해 모든 대상 파일을이 동일한 테�
 
 이 경우에 유의해야 할 점은 테스트 시나리오를 정의하는 초기 단계에서 노력이 더 필요할 수 있다는 것입니다. 공통 요구 사항을 찾고 코드를 재사용하는 최상의 전략을 고민하는 것입니다. 그러나 장기적으로 테스트 개발이 지수적으로 가속화될 것입니다. 이 경험에서 배운 점은 요구 사항을 더 잘 이해하고 먼저 이러한 요구 사항의 공통점을 파악해야 한다는 것이었습니다. — 테스트를 개발하기 전에.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요구 사항에 따라 생성 될 다양한 유형의 테스트 계획을 작성합니다. 데이터 유형, uniqueness, formatting, 추가 구분 기호 없음/데이터 내에서 적절한 열 구분이 유효성을 검사하도록 테스트 계획을 분석하고 가능한 한 테스트를 통합하려고 노력합니다. 요구 사항에서 패턴을 파악하고 테스트를 개발하기 전에 더 강력한 계획을 수립하는 것은 개발 속도 및 테스트 실행 속도를 높이는 데 도움이 됩니다.
 
@@ -139,7 +225,18 @@ Pytest의 parametrize 표시를 통해 모든 대상 파일을이 동일한 테�
 
 비프로덕션 환경 데이터의 관리 오류는 해결하기 어렵고 결과를 왜곡시킬 수 있습니다. 다행히도 Pytest에 내장된 두 가지 기능인 Pytest Warnings와 Pytest XFail을 활용하면 알려진 데이터 문제를 테스트하는데 도움을 받을 수 있습니다. 이 두 옵션 중에서 선호도나 권장사항이 없습니다. 상황에 가장 적합한 도구를 선택하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 전문에 나온 제안 중 첫 번째 제안을 이미 구현 중이거나 구현할 예정이라면, 당신은 쉽게 Pytest 경고를 동일한 개념에 임베딩할 수 있습니다. 여기서의 차이점은 거짓 주장 대신 경고가 발생할 것이랍니다. 아래와 같이 보일 거에요:
 
@@ -161,7 +258,7 @@ def test_email_data_unique(spark_source, csv_file_path: str):
 
   ## Wrap Assertion in a Conditional and Leverage WARNINGS
   if num_rows == num_unique_rows:
-    logging.info("All of the values in the 'Email' column are unique 
+    logging.info("All of the values in the 'Email' column are unique
     as expected!")
     assert True
   else:
@@ -177,7 +274,18 @@ def test_email_data_unique(spark_source, csv_file_path: str):
 
 알려진 데이터 문제를 다룰 수 있는 또 다른 좋은 옵션은 Pytest XFail 표시입니다. Pytest Warnings 능력과 유사하게, 테스트가 실패하면 결과가 빨강색 대신 노란색으로 나올 것입니다. 특히 적용 가능한 경우, 빨간색이 아닌 다른 색상으로 인사를 받는 것이 얼마나 유용한지 이중으로 강조할 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 스크린샷을 보면 'XFail'이라는 테스트가 노란색 'x'로 실행되었음을 나타낼 것입니다. 그러나 'XFail' 표시는 테스트의 어설션 섹션에 표시되지 않습니다. 'XFail'은 이전 섹션에서 테스트를 표시하는 방법과 유사하게 함수 상단에 표시됩니다. 아래 'XFail' 구현 내용을 확인해보세요:
 
@@ -192,7 +300,18 @@ def test_date_format():
 
 앞서 살펴본 경고 옵션처럼 이 유용한 'XFail' 표시는 품질 엔지니어가 적절한 문서 작성을 하고 동료에게 컨텍스트 정보를 남길 수 있도록 도와줍니다. 'XFail'의 중요한 추가 혜택 중 하나는 'XFail'로 표시된 테스트가 예상대로 실패하는 경우 (즉, 버그 수정이 해결된 경우)에 테스트가 실패하므로 품질 엔지니어는 이제 테스트를 수정/변경해야 한다는 것을 알 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주의해서 사용해주세요: 특정 프로젝트 요구 사항에 가장 적합한 경우/방법/이유를 고려해주세요. 예상치 못한 데이터의 불일치 사항을 확인한 후에만,
 
@@ -203,7 +322,18 @@ Pytest의 이러한 기능을 활용해볼 수 있습니다.
 
 다른 한편으로, YELLOW 플래그로 특정 테스트를 지정할 수 있는 옵션을 가지고 있는 것은 필요한 자동화된 테스트가 문서화되어 테스트 스위트에 있고, 프로젝트가 제작으로 나아갈수록, 희망컨대 데이터 문제가 더 이상 발생하지 않는 환경에서 접근 가능하게끔 해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 동적으로 환경 변수 관리하기
 
@@ -219,7 +349,18 @@ FILE-PATH = pathway/to/dev/environment
 
 버킷 이름과 해당 경로의 변종은 각 테스트 세션마다 터미널에서 동적으로 관리할 것이며, 이렇게 해서 Pytest의 -E 플래그가 유용하게 사용되었습니다. 픽스처와 pytest_addoption 함수를 사용하여 원하는 환경을 -E 플래그로 지정하고 표준 Pytest 명령에 따라 각 테스트 실행마다 환경을 전환시킬 수 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 INI 파일은 하드 코딩된 변수에서 약간 변형되었지만, 테스트에 전달되는 변수 이름에는 영향을 주지 않았기 때문에 이 조정은 테스트에 매우 낮은 영향을 미쳤습니다. 그런 다음 INI 파일 자체가 각 테스트 실행 중 임시 템플릿이 되었고, 테스트 실행 완료 후 복원되었습니다. 변형은 다음과 같았습니다:
 
@@ -235,7 +376,18 @@ INI 파일에 대한 이 조정과 테스트 세션 중 파일을 관리하는 �
 
 INI 파일에서 이 유연성을 어떻게 구현하는지에 대해 자세히 알아보려면, 여기에서 내 How-To 기사를 확인해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 마무리 생각
 
@@ -248,7 +400,18 @@ INI 파일에서 이 유연성을 어떻게 구현하는지에 대해 자세히 
 
 이러한 전략들을 통해 변환된 데이터의 품질에 대한 신뢰 수준을 높이는 것이 전반적인 목표입니다. 이러한 포인트들이 유익했고 다음 데이터 프로젝트에서 유용한 팁과 전략을 얻을 수 있었으면 좋겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제안 사항에 대한 피드백을 알고 싶어요. 언제든지 댓글로 의견을 남겨주세요!
 

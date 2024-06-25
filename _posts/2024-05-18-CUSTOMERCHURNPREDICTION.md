@@ -3,24 +3,34 @@ title: "고객 이탈 예측"
 description: ""
 coverImage: "/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_0.png"
 date: 2024-05-18 19:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_0.png
 tag: Tech
 originalTitle: "CUSTOMER CHURN PREDICTION"
 link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390d"
 ---
 
-
 이것은 이진 분류 문제이며, 은행 데이터 세트를 사용했습니다. 고객이 은행을 떠날 때에 대한 정보가 포함되어 있으며, 이를 사용하여 미래에 은행을 떠날 가능성이 있는 고객을 예측해야 합니다.
 
 ![이미지](/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_0.png)
 
 우리는 인공 신경망을 구축할 것입니다. 이러한 문제에 접근하는 단계는 다음과 같습니다 —
-  
+
 - 특정 라이브러리 가져오기
 - 데이터 세트 로드, 데이터 세트에 대한 가능한 정보 찾기(예: 데이터 세트에 결측값이 있는지, 중복된 값의 존재 여부)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_1.png" />
 
@@ -30,8 +40,18 @@ link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390
 
 - 이제 데이터 세트를 분석하고 ('RowNumber', 'CustomerId', 'Surname')와 같은 열이 예측에 큰 영향을 미치지 않으므로 삭제할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![데이터1](/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_3.png)
 
@@ -42,8 +62,18 @@ link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390
 - 모델을 훈련 및 테스트 데이터셋으로 분할합니다.
 - 이제 값들을 스케일링할 것입니다. 'balance'와 'estimated_salary'의 값이 매우 크기 때문에 발생하는 문제를 방지하기 위해 StandardScaler()를 사용합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_5.png" />
 
@@ -58,8 +88,18 @@ link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390
 - 이제 모델을 컴파일해야 합니다. 어떤 손실 함수, 옵티마이저를 사용할 것인지 지정해야 합니다. 바이너리 분류 문제이므로 사용되는 손실 함수는 크로스 엔트로피/로그 손실입니다. 다양한 옵티마이저(경사 하강법, 확률적 경사 하강법, RMSprop 등)를 사용할 수 있지만 아담(적응 모멘트 추정)이 잘 작동합니다.
 - 모델을 적합하고 10회 반복(에포크)하며 'history'라는 딕셔너리에 저장합니다. Validation_split은 모델을 훈련하는 지점을 처리하는데 사용됩니다. 예를 들어 8000개의 항목이있는 경우 이를 나누고 2000개의 항목을 제거하며 실행 중에 2000개의 포인트를 동시에 확인하고 정확성을 알려줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Customer Churn Prediction 7](/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_7.png)
 
@@ -70,8 +110,18 @@ link: "https://medium.com/@agrawalpalak308/customer-churn-prediction-aa81fb86390
 - 이제 예측이 나오게 됩니다. 시그모이드 함수를 사용하기 때문에 출력은 (0-1)의 범위에 있을 것입니다, 확률입니다. 우리는 이 확률을 0 또는 1로 변환해야 합니다, 그러기 위해 임계값을 정해야 합니다 (예를 들면 0.5, 만약 확률이 0.5보다 작으면 고객이 은행을 떠나지 않고, 확률이 0.5보다 크면 그들은 은행을 떠날 것입니다.) 임계값은 일반적으로 도표를 통해 결정되지만, 여기서는 추측하고, 0.5로 설정되어 있습니다.
 - 그러면 모델의 정확도 점수를 찾을 준비가 됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-05-18-CUSTOMERCHURNPREDICTION_9.png" />
 

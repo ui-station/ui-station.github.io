@@ -3,13 +3,12 @@ title: "AWS CodePipeline 업데이트를 Zoom 채팅에 연결하는 방법 단�
 description: ""
 coverImage: "/assets/img/2024-05-17-ConnectingAWSCodePipelineUpdatestoZoomChatAStep-by-StepGuide_0.png"
 date: 2024-05-17 18:09
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-ConnectingAWSCodePipelineUpdatestoZoomChatAStep-by-StepGuide_0.png
 tag: Tech
 originalTitle: "Connecting AWS CodePipeline Updates to Zoom Chat: A Step-by-Step Guide"
 link: "https://medium.com/@pooja_shrestha/connecting-aws-codepipeline-updates-to-zoom-chat-a-step-by-step-guide-599e63eb32e0"
 ---
-
 
 코드 파이프 라인 콘솔에 계속해서 붙어 있어 지친 적이 있나요? 이 안내서를 통해 코드 파이프 라인 실행에 대한 실시간 알림을 직접 Zoom 채널에서 받는 방법을 안내해 드릴 거예요.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@pooja_shrestha/connecting-aws-codepipeline-updates-to
 
 ![이미지](/assets/img/2024-05-17-ConnectingAWSCodePipelineUpdatestoZoomChatAStep-by-StepGuide_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ### 단계 1: Zoom 수신 웹훅 설정하기
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@pooja_shrestha/connecting-aws-codepipeline-updates-to
 - "수신 웹훅"을 검색하고 앱을 설치합니다. 앱을 설치할 수 없는 경우 계정 관리자에게 문의하세요.
 - 앱이 설치되면 Zoom 채팅의 앱 섹션에서 찾을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설치가 완료되면 'Incoming Webhooks' 앱으로 이동하세요.
 
@@ -40,7 +61,18 @@ link: "https://medium.com/@pooja_shrestha/connecting-aws-codepipeline-updates-to
 
 ![이미지](/assets/img/2024-05-17-ConnectingAWSCodePipelineUpdatestoZoomChatAStep-by-StepGuide_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 원하는 채널/그룹으로 이동하여 CodePipeline 알림을 받기를 원하는 곳에서 '/ '을 메시지 상자에 입력하여 사용 가능한 명령을 확인하세요.
 
@@ -50,7 +82,18 @@ link: "https://medium.com/@pooja_shrestha/connecting-aws-codepipeline-updates-to
 
 ![Image 2](/assets/img/2024-05-17-ConnectingAWSCodePipelineUpdatestoZoomChatAStep-by-StepGuide_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 제공된 엔드포인트와 검증 토큰을 확인하세요.
 
@@ -62,7 +105,18 @@ link: "https://medium.com/@pooja_shrestha/connecting-aws-codepipeline-updates-to
 
 단계 3: 코드파이프라인 알림 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - CodePipeline으로 이동하세요.
 - 구성하려는 파이프라인을 선택하세요.
@@ -79,7 +133,18 @@ link: "https://medium.com/@pooja_shrestha/connecting-aws-codepipeline-updates-to
 - 함수 이름을 제공하고 런타임을 선택하세요.
 - 나머지 옵션은 기본값으로 남기고, "함수 생성"을 클릭하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import urllib.request
@@ -91,28 +156,28 @@ BEARER_TOKEN = "베어러 토큰"
 def lambda_handler(event, context):
     # 받은 이벤트 기록
     print("받은 이벤트: " + json.dumps(event, indent=2))
-    
+
     for record in event['Records']:
         sns_message = json.loads(record['Sns']['Message'])
-        
+
         pipeline = sns_message['detail']['pipeline']
         stage = sns_message['detail']['stage']
         state = sns_message['detail']['state']
-        
+
         # 메시지 준비
         message = f"{pipeline}의 {stage} 스테이지가 {state} 상태입니다."
         data = json.dumps(message).encode('utf-8')
-        
+
         # Zoom 웹훅으로 메시지 보내기
         req = urllib.request.Request(
-            ZOOM_WEBHOOK_URL, 
-            data=data, 
+            ZOOM_WEBHOOK_URL,
+            data=data,
             headers={
                 'Content-Type': 'application/json',
                 'Authorization': f'Bearer {BEARER_TOKEN}'
             }
         )
-        
+
         try:
             with urllib.request.urlopen(req) as response:
                 print("Zoom으로부터 응답: " + response.read().decode('utf-8'))
@@ -131,8 +196,18 @@ URL 및 베어러 토큰을 코드에 직접 입력하는 대신, Parameter Stor
 
 스텝 5: SNS 토픽으로 Lambda 함수 구성하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이전에 만든 SNS 주제를 Lambda 함수의 트리거로 추가하세요.
 
@@ -142,8 +217,18 @@ URL 및 베어러 토큰을 코드에 직접 입력하는 대신, Parameter Stor
 
 - 모든 것이 올바르게 설정되었는지 확인하기 위해 SNS 템플릿을 사용하여 람다 함수를 테스트하세요. 테스트를 진행하면 구성된 웹훅 그룹/채널에서 예시 이벤트를 받게 될 겁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot](/assets/img/2024-05-17-ConnectingAWSCodePipelineUpdatestoZoomChatAStep-by-StepGuide_8.png)
 

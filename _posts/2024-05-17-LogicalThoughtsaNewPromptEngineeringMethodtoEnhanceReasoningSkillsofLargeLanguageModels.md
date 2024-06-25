@@ -3,13 +3,12 @@ title: "논리적인 사고 - 대형 언어 모델의 추론 능력 강화를 �
 description: ""
 coverImage: "/assets/img/2024-05-17-LogicalThoughtsaNewPromptEngineeringMethodtoEnhanceReasoningSkillsofLargeLanguageModels_0.png"
 date: 2024-05-17 19:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-17-LogicalThoughtsaNewPromptEngineeringMethodtoEnhanceReasoningSkillsofLargeLanguageModels_0.png
 tag: Tech
 originalTitle: "Logical Thoughts — a New Prompt Engineering Method to Enhance Reasoning Skills of Large Language Models"
 link: "https://medium.com/@keganmessmer/logical-thoughts-a-new-prompt-engineering-method-to-enhance-reasoning-skills-of-large-language-5d9b315a0a9d"
 ---
-
 
 큰 언어 모델 환시 문제를 해결하기 위해 프롬프트 엔지니어들이 얼마나 빠르게 작업하고 있는지 알아보세요.
 
@@ -19,7 +18,18 @@ Chat-GPT와 같은 대규모 언어 모델(Large Language Models, LLM)이 최근
 
 인간-언어 모델 상호작용을 개선하려는 목적으로 일하는 프롬프트 엔지니어들은 LLM의 논리 추론을 개선하기 위한 새로운 방법을 개발했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사의 기반인 원본 논문 "Enhancing Zero-Shot Chain-of-Thought Reasoning in Large Language Models through Logic"은 Zhao 등의 연구진에 의해 2023년 9월에 발표되었으며 다음에서 찾을 수 있습니다: [링크](https://arxiv.org/pdf/2309.13339).
 
@@ -29,7 +39,18 @@ Chat-GPT와 같은 대규모 언어 모델(Large Language Models, LLM)이 최근
 
 LLM은 극도로 방대한 데이터셋을 활용하며 수십억 개 또는 심지어 수조 개의 기계 학습 매개변수로 훈련됩니다. 이 방대한 훈련을 통해 인간 언어의 미묘한 복잡성을 포착하여 인간 대화를 닮은 사용자와의 상호작용을 가능케 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LLM(거문고 언어 모델)은 다양한 정보를 검색하는 능력을 갖고 있어 신비롭게 보일 수 있지만, 심각한 응용에 사용하기에 제약이 있는 특성을 가지고 있습니다. 근본적으로 LLM은 인간과 같은 지식을 갖고 있지 않습니다. 그들은 단순히 자신의 훈련 데이터와 프롬프트에서 파생된 텍스트를 생성합니다.
 
@@ -39,7 +60,18 @@ LLM의 보급화를 고려할 때, 현대 기계 학습에서 중요한 프롬�
 
 본 기사에서 논의된 프롬프트 엔지니어링 논문은 LLM 환영 문제를 해결하기 위해 논리적 원칙을 프롬프트 디자인에 통합하려는 목표를 가지고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 방법
 
@@ -49,8 +81,18 @@ Wei 등이 처음 제시한 연쇄사고(CoT) 프롬프팅은 퓨샷 프롬프�
 
 Kojima 등이 제시한 제로샷 연쇄사고 프롬프팅은 기존 예시를 제공하지 않고 프롬프트에 "한 단계씩 생각해 봅시다"라는 구문을 추가하여 이 효과를 흉내 낼려고 시도합니다. 이 새로운 방법이 개선하려는 것은 이 "제로샷" 연쇄사고 프롬프팅이며, 원래의 "퓨샷" CoT 프롬프팅이 아님을 이해하는 것이 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-05-17-LogicalThoughtsaNewPromptEngineeringMethodtoEnhanceReasoningSkillsofLargeLanguageModels_0.png)
 
@@ -60,8 +102,18 @@ LoT은 LLM에게 일반적인 제로샷 CoT 프롬프팅에 따라 문제를 단
 
 기본적으로, LoT은 LLM을 문제 해결 프로세스를 진행하도록 안내하여 각 단계를 검증하는 데 자체 논리를 사용하도록 요청합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결과
 
@@ -71,7 +123,18 @@ LoT은 LLM에게 일반적인 제로샷 CoT 프롬프팅에 따라 문제를 단
 
 이러한 결과는 LoT 방법이 다양한 모델과 데이터셋에 걸쳐 LLM 응답의 정확도를 향상시키는 데 효과적임을 보여줍니다. 그러나 모델과 데이터셋에 따라 개선의 정도가 다르다는 것을 기억해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 토론
 
@@ -81,7 +144,18 @@ LoT은 LLM에게 일반적인 제로샷 CoT 프롬프팅에 따라 문제를 단
 
 당분간은 LoT와 같은 접근 방식이 기존 LLM의 유틸리티를 최적화하는 데 효과적인 전략으로 기능할 수 있습니다. 특히 의학과 같이 의도적으로 실수를 줄이기 위해 AI로부터 도움을 받을 때 조심스런 경향이 있는 분야에 유용할 수 있는데, 이러한 프롬프팅 엔지니어링 방법은 고객 서비스 응용 프로그램의 효율성을 향상시킬 수 있는 AI 챗봇에도 활용될 수 있습니다. 이 경우, 이러한 프롬프팅 방식은 사용자와 LLM 자체 사이의 버퍼로 구현되어야 할 것으로 생각됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앞으로 몇 년 동안의 프롬프트 엔지니어링 진화가 흥미로울 것입니다. 이는 LLMs가 더욱 신뢰할 만한 수준으로 발전하여 더욱 비판적인 응용 프로그램에도 사용될 수 있는 길을 열어 줄 수도 있고, 반대로 LLMs가 발전하여 프롬프트 엔지니어링이 쓸모 없어지는 지점까지 발전 할 수도 있습니다. AI가 일상생활에 더욱 통합되는 시대에 LLM 효과성을 향상시키기 위한 노력의 한 부분으로 LoT를 이해하는 것이 중요합니다.
 
@@ -91,6 +165,17 @@ Kojima, T., Gu, S. S., Reid, M., Matsuo, Y., & Iwasawa, Y. (2022). Large Languag
 
 Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q., & Zhou, D. (2022). Chain of Thought Prompting Elicits Reasoning in Large Language Models. https://arxiv.org/abs/2201.11903
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Zhao, X., Li, M., Lu, W., Weber, C., Lee, J., Chu, K., & Wermter, S. (2023). 대규모 언어 모델에서 논리를 통한 Zero-Shot Chain-of-Thought Reasoning 강화. [arXiv 링크](https://arxiv.org/abs/2309.13339)

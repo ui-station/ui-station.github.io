@@ -3,13 +3,12 @@ title: "Azure IAM을 활용하여 Kubernetes 리소스를 최적화해보세요 
 description: ""
 coverImage: "/assets/img/2024-05-18-OptimizeYourKubernetesResourceswithAzureIAMManagedvsWorkloadIdentity_0.png"
 date: 2024-05-18 16:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-18-OptimizeYourKubernetesResourceswithAzureIAMManagedvsWorkloadIdentity_0.png
 tag: Tech
 originalTitle: "Optimize Your Kubernetes Resources with Azure IAM: Managed vs. Workload Identity"
 link: "https://medium.com/itnext/simplify-secure-your-azure-resources-managed-identity-vs-workload-identity-fe49d133fc03"
 ---
-
 
 ## Azure Kubernetes Service (AKS) 배포를 위한 최고의 Identity 솔루션 공개
 
@@ -19,7 +18,18 @@ Azure의 Identity 옵션에 혼란스러워 하고 계신가요? 걱정하지 �
 
 # 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Microsoft의 관리 ID 개념을 자세히 살펴보기 전에 이전에 어떻게 작동했는지와 Microsoft가 이 혁신으로 해결하려고 했던 도전 과제를 포함한 다른 측면을 먼저 살펴봅시다. 엔지니어의 관점에서 보면 일반적으로 Azure Kubernetes Services(AKS) 클러스터에 배포된 작업 부하는 Microsoft Entra 애플리케이션 자격 증명이나 관리 ID를 사용하여 Azure Key Vault 및 Microsoft Graph와 같은 Microsoft Entra 보호된 리소스에 액세스해야 합니다. Microsoft Entra Workload ID는 외부 ID 제공자와의 연합을 위해 쿠버네티스의 기본 기능과 통합됩니다.
 
@@ -32,7 +42,18 @@ Microsoft의 관리 ID 개념을 자세히 살펴보기 전에 이전에 어떻�
 
 요약하면, 관리 ID는 Azure 리소스를 위해 설계된 특정 유형의 ID로 Azure 서비스에 대한 인증 및 액세스를 보다 안전하게 관리하기 쉽게합니다. 반면에 서비스 주체는 Azure를 포함한 Microsoft 서비스 전반에 사용할 수 있는 더 일반적인 ID로, Azure를 포함한 다양한 목적을 위해 명시적으로 생성하고 구성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Azure Kubernetes Service (AKS)에서 어떻게 활용될 수 있는지 살펴봅시다. 간단한 소개부터 시작해서 실제 예제까지 살펴보겠습니다.
 
@@ -42,7 +63,18 @@ Azure Kubernetes Service(AKS)는 응용 프로그램을 보호하기 위한 두 
 
 ## 관리 ID:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AKS 클러스터 또는 더 구체적으로 Virtual Machine Scale Sets (VMSS)에 대한 Azure 리소스용 관리 ID.
 - 자격 증명이 필요하지 않은 다른 Azure 리소스에 대한 Azure RBAC 액세스 제공.
@@ -54,7 +86,18 @@ Azure Kubernetes Service(AKS)는 응용 프로그램을 보호하기 위한 두 
 
 ## 연합 자격 증명을 활용한 워크로드 ID:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - AKS 팟에서 실행되는 작업 부하를 위한 신원을 제공합니다.
 - 팟 내에 비밀을 저장하지 않고 Azure 리소스에 액세스할 수 있습니다.
@@ -66,7 +109,18 @@ Azure Key Vault에 액세스해야 하는 애플리케이션이 있는 AKS 클�
 
 Managed Identity를 사용하는 경우:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클러스터를 생성할 때는 --enable-managed-identity 플래그를 설정하여 관리 식별 증명을 생성할 수 있습니다. 이 작업은 Microsoft.ManagedIdentity/userAssignedIdentities의 백그라운드 생성을 트리거합니다.
 
@@ -78,7 +132,18 @@ az aks create -g myResourceGroup -n myManagedCluster --enable-managed-identity
 
 생성된 식별 증명은 그 후 Azure Key Vault 또는 DNS Zones와 같은 리소스에 액세스할 수 있도록 권한을 부여받을 수 있습니다. 이 식별 증명은 VMSS(Virtual Machine Scale Sets)에 할당됩니다. 각 노드 또는 VM은 kubelet을 실행하며, 이를 통해 External-DNS와 같은 팟이 관리 식별 증명을 통해 리소스에 액세스합니다. 아래 다이어그램은 두 개의 관리 식별 증명이 있는 두 노드 풀을 더 명확하고 안전한 시스템 및 응용 프로그램 팟 간에 시스템적으로 접근을 세밀하게 제어할 수 있는 구조를 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*9VftZEvhy_k_eskwir2eKw.gif" />
 
@@ -88,7 +153,18 @@ az aks create -g myResourceGroup -n myManagedCluster --enable-managed-identity
 
 2. 관리 ID에 Azure Key Vault 액세스 권한 부여: 관리 ID가 AKS 클러스터에 할당된 후 다음 단계는 이 ID가 Azure Key Vault에 액세스 할 필요 권한을 부여하는 것입니다.이 권한 설정은 Key Vault에 저장된 비밀, 키 및 인증서와 같은 민감한 정보에 안전하게 액세스하기 위해 중요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 관리 식별자를 할당한 AKS 클러스터가 Azure Key Vault에 액세스하는 애플리케이션: AKS 클러스터에 할당된 관리 식별자가 Azure Key Vault에 액세스 권한을 부여받으면 AKS 클러스터 내에서 실행되는 애플리케이션은 이제 Azure Key Vault에 안전하게 액세스할 수 있습니다. 이는 명시적 자격 증명이 필요하지 않기 때문에 최소 권한 원칙을 준수하고 응용 프로그램의 보안 기본을 강화합니다.
 
@@ -98,7 +174,18 @@ az aks create -g myResourceGroup -n myManagedCluster --enable-managed-identity
 
 페더레이티드 식별자 자격 증명과 함께 Workload Identity 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Azure Kubernetes Service (AKS) 클러스터에 워크로드 ID를 설정할 때는 --enable-managed-identity 및 --enable-oidc-issuer 플래그를 모두 지정해야 합니다. 예를 들어 다음과 같이 실행합니다:
 
@@ -111,8 +198,18 @@ az aks create -g myResourceGroup -n myManagedCluster --enable-oidc-issuer --enab
 
 다음 figure 3은 과정을 추상적으로 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*cZynTTP_7qDHrix67vOYyQ.gif)
 
@@ -122,8 +219,18 @@ Figure 2와는 반대로, 여기서는 가상 머신 규모 집합(VMSS)의 kube
 
 기본 보안 모델에서 AKS 클러스터는 토큰의 발급자 역할로 작동합니다. OpenID Connect를 사용하여, OAuth 2.0 위에 구축된 프로토콜을 통해 Microsoft Entra ID는 서비스 계정 토큰의 진위를 확인하는 데 필수적인 공개 서명 키를 발견합니다. 이 확인 프로세스는 Microsoft Entra 토큰으로 교환되기 전에 토큰의 정당성을 확인하는 데 중요합니다. 서비스 계정 토큰을 Microsoft Entra 토큰으로 교환하는 과정은 Azure Identity 클라이언트 라이브러리나 Microsoft Authentication Library를 통해 가능하며, 이를 통해 워크로드는 권한을 담언하는 토큰을 활용하여 Azure 리소스에 안전하게 액세스할 수 있습니다. 이 시스템은 Microsoft Entra ID에 의해 확인된 토큰만이 리소스에 액세스하는 데 사용될 수 있도록 하여 최소 권한의 원칙을 유지함으로써 보안성을 강화합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 표 4는 작업 흐름을 보여줍니다:
 ![workflow](/assets/img/2024-05-18-OptimizeYourKubernetesResourceswithAzureIAMManagedvsWorkloadIdentity_0.png)
@@ -132,7 +239,18 @@ Figure 2와는 반대로, 여기서는 가상 머신 규모 집합(VMSS)의 kube
 
 Azure는 레이블 및 주석을 사용하여 어떤 파드가 Workload Identity를 받아야 하는지 제어하여 올바른 레이블이 있는 경우에만 해당 Azure 리소스에 ServiceAccount를 통해 액세스할 수 있도록 합니다. 이 설정은 Kubernetes 배포 내에서 구성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 배포 후에는 다음과 같이 나타납니다:
 
@@ -142,7 +260,18 @@ Azure에서는 다음과 같이 나타납니다:
 
 ![이미지 2](/assets/img/2024-05-18-OptimizeYourKubernetesResourceswithAzureIAMManagedvsWorkloadIdentity_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 경우에는 애플리케이션이 Azure 키 저장소에 액세스하여 비밀을 가져오고 데이터베이스에 액세스할 수 있으며 역할 할당을 확인할 수 있습니다:
 
@@ -152,7 +281,18 @@ Azure에서는 다음과 같이 나타납니다:
 
 네, 마이크로 소프트 엔트라 워크로드 ID에서는 서비스 계정과 관련된 여러 매핑이 가능합니다. 서비스 계정을 마이크로 소프트 엔트라 객체와 연결하는 다양한 구성을 지원합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 일대일 매핑은 단일 서비스 계정이 하나의 Microsoft Entra 개체를 참조할 수 있도록 합니다.
 - 다대일 매핑은 여러 서비스 계정이 동일한 Microsoft Entra 개체를 참조할 수 있도록 허용합니다.
@@ -167,7 +307,18 @@ Azure에서는 다음과 같이 나타납니다:
 
 # 정리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마무리하며, Azure와 Kubernetes 환경에서 적절한 신원 모델을 선택하는 미묘한 차이를 이해하는 것이 중요합니다.
 
@@ -177,7 +328,18 @@ Azure에서는 다음과 같이 나타납니다:
 
 Managed Identities를 사용하는 주요 이점 중 하나는 Managed Identity(MI)의 kubelet 신원에 의존하는 대신, 제공하는 액세스 제어의 세분성입니다. MI를 사용한 kubelet 신원은 VMSS에서 실행되는 모든 Pod에 대해 Azure 리소스에 대한 넓은 액세스 수준을 제공하는 반면, 워크로드 신원은 애플리케이션 또는 서비스 당 액세스 권한을 정의하여 더 정확한 제어가 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한, Workload Identity는 ServiceAccounts에 대한 매핑을 용이하게 해주어 하나 이상의 애플리케이션이 필요한 Azure 리소스에 대한 접근을 얻을 수 있도록 도와줍니다. 이 유연성은 더 구체적인 액세스 권한을 제공하여 애플리케이션의 요구에 따라 더욱 보안 프레임워크를 강화합니다.
 
@@ -187,7 +349,18 @@ Otterize와 같은 도구를 사용하면 토큰이 워크로드가 필요한 �
 
 Managed Identity와 Workload Identity, 그리고 연합 ID 자격 증명을 사용하여 신중한 선택을 통해 보안과 기능성에 균형을 맞출 수 있습니다. 애플리케이션이 필요로 하는 액세스를 제공하되 보안 원칙을 저해하지 않도록 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 연락처 정보
 

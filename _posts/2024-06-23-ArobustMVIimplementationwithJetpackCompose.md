@@ -3,13 +3,12 @@ title: "Jetpack Compose에서 MVI 패턴을 강력하게 구현하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-ArobustMVIimplementationwithJetpackCompose_0.png"
 date: 2024-06-23 01:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ArobustMVIimplementationwithJetpackCompose_0.png
 tag: Tech
 originalTitle: "A robust MVI implementation with Jetpack Compose"
 link: "https://medium.com/proandroiddev/a-robust-mvi-with-jetpack-compose-e08882d2c4ff"
 ---
-
 
 # 왜 이렇게 하고 있는 걸까요?
 
@@ -19,7 +18,18 @@ link: "https://medium.com/proandroiddev/a-robust-mvi-with-jetpack-compose-e08882
 
 아키텍처를 구축하는 데에는 시간이 걸립니다. 저는 대부분의 시간을 안드로이드 생태계 및 그의 모범 사례에 대해 배우고, 그리고 이전 권장 사항에서 새로운 것으로의 전환하는 것과 같은 작업에 투자했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - DataBinding 대신 ViewBinding 권장
 - XML에서 Jetpack Compose로 전환
@@ -36,17 +46,39 @@ link: "https://medium.com/proandroiddev/a-robust-mvi-with-jetpack-compose-e08882
 - 실제 구현을 코딩합니다.
 - 실제 예제에서 결과를 테스트합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 연구 단계
 
 MVI가 무엇을 의미하는지 알고 있는 것으로 가정하지만(아니면 지금까지 그것을 피해왔다면), 간단히 모든 사람들을 최신 상태로 알려드리겠습니다.
 
-MVI는 Model-View-Intent의 약어입니다. 이 아키텍처는 MVVM 및 기타 모델들과 함께 MV* 패밀리의 일부입니다. 이 아키텍처의 핵심 원칙은 입력 Intents를 받아들이는 상태 머신이며, 기저 UI를 나타내는 View State를 생성합니다. 이 모든 것은 MVI가 예전의 형제 MVVM과 달리 SSoT(Single Source of Truth) 원칙을 준수한다는 것을 의미합니다.
+MVI는 Model-View-Intent의 약어입니다. 이 아키텍처는 MVVM 및 기타 모델들과 함께 MV\* 패밀리의 일부입니다. 이 아키텍처의 핵심 원칙은 입력 Intents를 받아들이는 상태 머신이며, 기저 UI를 나타내는 View State를 생성합니다. 이 모든 것은 MVI가 예전의 형제 MVVM과 달리 SSoT(Single Source of Truth) 원칙을 준수한다는 것을 의미합니다.
 
 ![이미지](/assets/img/2024-06-23-ArobustMVIimplementationwithJetpackCompose_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 대상 동작
 
@@ -56,7 +88,18 @@ MVI는 Model-View-Intent의 약어입니다. 이 아키텍처는 MVVM 및 기타
 
 이제 MVI의 핵심 개념인 Reducer를 설명해야 합니다! Reducer는 어떤 의미에서 UI와 ViewModel 간의 계약입니다. 이는 두 부분으로 나누어집니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 객체 인터페이스 : State, Event 및 Effect
 - reduce 함수 (수학적 reduce 연산자와 혼동하지 말 것)
@@ -67,7 +110,18 @@ MVI는 Model-View-Intent의 약어입니다. 이 아키텍처는 MVVM 및 기타
 
 ## ViewEvent
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MVI의 핵심입니다. 모든 사용자 상호작용(그리고 조금 더)을 보유합니다. 이 것들은 ViewModel에 의해 상태 변경을 일으키는 데 사용됩니다.
 
@@ -77,7 +131,18 @@ ViewEvent의 특별한 종류입니다. ViewModel에 의해 UI로 전달됩니�
 
 ## reduce 함수
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 reduce 함수는 ViewState와 ViewEvent를 가져와서 새로운 ViewState와 주어진 이벤트에 연결된 필요에 따라 ViewEffect를 생성합니다.
 
@@ -87,7 +152,18 @@ reduce 함수는 ViewState와 ViewEvent를 가져와서 새로운 ViewState와 �
 
 이제 기본 구조가 설정되었으니, 이제 화면을 위해 실제로 이를 구현할 시간입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Reducer
 
@@ -97,8 +173,18 @@ reduce 함수는 ViewState와 ViewEvent를 가져와서 새로운 ViewState와 �
 
 위 내용은 ViewState와 함께 명확할 것으로 생각됩니다. 그러나 마지막 3개의 이벤트에 대해서는 설명이 필요할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-ArobustMVIimplementationwithJetpackCompose_1.png)
 
@@ -110,8 +196,18 @@ reduce 함수는 ViewState와 ViewEvent를 가져와서 새로운 ViewState와 �
 
 이제 MVI 아키텍처의 마지막 부분, ViewEffect를 정의해야 합니다! 다행히도, 이 화면에서는 가능한 효과가 두 가지뿐이므로 비교적 간단합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 구현할 reduce 함수가 있습니다. 대부분의 경우, reduce 함수는 매우 간단하여 입력 ViewEvent 데이터를 수정된 ViewState로 매핑합니다.
 
@@ -121,7 +217,18 @@ reduce 함수는 ViewState와 ViewEvent를 가져와서 새로운 ViewState와 �
 
 이제 우리가 Reducer를 가졌으니, 다음과 같은 ViewModel에서 사용해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 ViewModel을 보시면, 매우 간단한 코드만 포함되어 있습니다. 이는 우리가 사용할 주요 기능이 포함된 BaseViewModel을 사용하기 때문입니다.
 
@@ -131,7 +238,18 @@ reduce 함수는 ViewState와 ViewEvent를 가져와서 새로운 ViewState와 �
 
 # 그게 다입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 우리가 한 모든 작업으로, SSoT 원칙을 준수하고 UI를 직접 나타내는 ViewState를 활용하는 완전히 정의된 MVI 아키텍처가 생겼습니다!
 
@@ -141,7 +259,18 @@ reduce 함수는 ViewState와 ViewEvent를 가져와서 새로운 ViewState와 �
 
 그래서 제가 일하는 모든 프로젝트와 호환되며 동료들이 알고 인정할 수 있는 아키텍처를 상상하면, 모든 관련 당사자들에게 전면 리뷰 프로세스를 더 빠르고 쉽게 만들어주며 전체적인 개발 속도를 높일 수 있습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 링크에서 전체 프로젝트를 찾아볼 수 있어요:
 

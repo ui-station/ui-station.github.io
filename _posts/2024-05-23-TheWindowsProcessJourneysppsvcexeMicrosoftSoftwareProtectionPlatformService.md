@@ -3,13 +3,12 @@ title: "윈도우 프로세스 여행 - sppsvcexe 마이크로소프트 소프�
 description: ""
 coverImage: "/assets/img/2024-05-23-TheWindowsProcessJourneysppsvcexeMicrosoftSoftwareProtectionPlatformService_0.png"
 date: 2024-05-23 15:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-TheWindowsProcessJourneysppsvcexeMicrosoftSoftwareProtectionPlatformService_0.png
 tag: Tech
 originalTitle: "The Windows Process Journey — “sppsvc.exe” (Microsoft Software Protection Platform Service)"
 link: "https://medium.com/@boutnaru/the-windows-process-journey-sppsvc-exe-microsoft-software-protection-platform-service-a42f3abce8ca"
 ---
-
 
 "sppsvc.exe" (Microsoft Software Protection Platform Service)은 "%windir%\System32\sppsvc.exe"에 위치한 PE 이진 파일입니다. Windows의 64비트 버전에서는 "cmd.exe"와 같은 다른 이진 파일과 달리 실행 파일의 32비트 버전이 없습니다 (https://medium.com/@boutnaru/the-windows-process-journey-cmd-exe-windows-command-processor-501be17ba81b). 또한, "sppsvc.exe" 이진 파일은 Microsoft에 의해 디지털 서명되었습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@boutnaru/the-windows-process-journey-sppsvc-exe-micro
 
 마지막으로, 활성화 토큰을 보관하는 "“%windir%\System32\spp\” 디렉토리가 있습니다 (https://community.spiceworks.com/t/windows-10-repeatedly-deactivates/681310). 이 디렉토리에서 파일을 백업하여 Office와 같은 다른 소프트웨어 제공을 다시 활성화할 수 있습니다 (https://community.citrix.com/forums/topic/230472-layered-image-office-2016-will-not-activate-on-first-boot/).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 글에서 뵙겠습니다 ;-) 트위터에서 저를 팔로우할 수 있어요 — @boutnaru (https://twitter.com/boutnaru). 또한, 저의 다른 글들은 미디엄에서 읽을 수 있어요 — https://medium.com/@boutnaru. 무료 eBook은 https://TheLearningJourneyEbooks.com에서 찾을 수 있어요.
 

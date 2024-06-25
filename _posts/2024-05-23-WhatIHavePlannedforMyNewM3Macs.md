@@ -3,13 +3,12 @@ title: "나의 새로운 M1 Mac을 위해 계획한 것"
 description: ""
 coverImage: "/assets/img/2024-05-23-WhatIHavePlannedforMyNewM3Macs_0.png"
 date: 2024-05-23 15:15
-ogImage: 
+ogImage:
   url: /assets/img/2024-05-23-WhatIHavePlannedforMyNewM3Macs_0.png
 tag: Tech
 originalTitle: "What I Have Planned for My New M3 Macs!"
 link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1de7cd68"
 ---
-
 
 ![이미지](/assets/img/2024-05-23-WhatIHavePlannedforMyNewM3Macs_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1
 
 저는 두 대의 M3-탑재 맥을 기다리고 있어요. 첫 번째로는 현재 사용하지 않고 부끄럽게도 M1 버전을 대체할 M3 24인치 iMac 기본 모델이고 두 번째로는 M1 Max 16인치 MacBook Pro를 중고 시장으로 돌리게 될 M3 Max 14인치 MacBook Pro에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 이 두 대의 기계에 대한 계획을 가지고 있어요. 물론, 이들을 개봉하는 즉시 떠오르는 즉시 테스트가 있어요. 기대가 되는 결과를 빨리 볼 수 있을 테니까 말이에요. 또한, 제 기본적인 테스트가 여러분이 M3 플랫폼으로 업그레이드를 고려할 수 있도록 도와줄 것을 희망하고 있어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1
 
 특정한 맥으로 선정한 정책이 있어요. 베이스 모델 버전만 구매한다는 거죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 맥북 에어는 그중 하나입니다. 내 의심은 굉장히 매력적이지만 상당히 비싼 컴퓨터들이기 때문에 많은 사람들이 그냥 제일 싼 것을 선택하는 것 같다는 점입니다. 그래서 나에게는 바로 기본 모델 구매자들이 돈을 주고 무슨 성능을 얻는지 정확히 알아보는 것이 내 임무인 것 같습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1
 
 문제는 다년간 애플의 올인원 제품에 대한 업데이트가 없었던 900일 이상을 거쳐 M2 칩이 거부당했고 완전히 손대지 않은 채로 진열대에 방치된 이 기계에 대해 얼마나 큰 발전을 이뤘는지입니다. 기억해야 할 점은 이 기계가 M2칩을 거부당하고 완전히 소홀히 처리되었다고 여겨진 기계라는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리가 온만큼 멀리 왔을까요?
 
@@ -47,7 +79,18 @@ link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1
 
 기본 모델인 M3 iMac이 앞세대 제품들보다 얼마나 빠를지 궁금합니다. 정말로 기대되네요 (비디오를 놓치지 않으려면 제 유튜브 채널을 구독하기를 잊지 마세요)!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 내 M3 Max MacBook Pro 테스트
 
@@ -57,7 +100,18 @@ link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1
 
 내가 현재 문이 오는 사양(그러나 Apple 주문 추적기에 따르면 현재 "지연"되었음)은 M3 Max 칩을 완전히 최대로 활성화하여 16코어 CPU와 40코어 GPU, 2TB의 SSD 저장 공간, 그리고 48GB의 통합 메모리를 포함하고 있어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 실수한 부분은 후자와 관련이 있다고 생각합니다. 추가 200 파운드를 더 지불하면 사랑스러운 Space Black 노트북을 64GB의 통합 메모리로 구성할 수 있었을 텐데요. 이미 이 새로운 기계에 4,000 파운드 이상을 들였기 때문에 그것은 이제 무난한 선택처럼 느껴집니다. 결국 이건 이제 목돈이니까요.
 
@@ -67,7 +121,18 @@ link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1
 
 그렇다면 이 굉장히 중요한 질문이 생깁니다: M1 Max에서 M3 Max로 전환했을 때 어떤 이득을 얻을 수 있을까요? 이 방대한 비용을 정당화할 만한 가치가 있는지에 대한 의견은 무엇인가요? 일반적으로 최신 Apple 실리콘 패밀리의 Max 버전은 최근 두 세대에서 가장 놀라운 진보를 보여주고 있다는 평이 있습니다. 실제로 일상에서 어떤 변화가 있는지 확인해보고 싶습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, 이 두 대의 머신 사이에서 똑같은 Final Cut Pro 테스트를 할 거에요. 렌더링 및 내보내기 과정에서 몇 초(아니면 분?!)를 단축할 수 있을까요? 비디오 편집자는 여러분께 말씀드립니다. 프로젝트를 빠르게 완료할 수 있는 속도가 여러분의 생계에 달려 있다면, 그 몇 초가 의미심장하다는 것을요. 우리 모두가 애플에게 가장 궁금한 점은 이 하드웨어에 상당한 투자를 한 만큼, 우리가 그 몇 초를 얻게 되는지입니다.
 
@@ -77,7 +142,18 @@ link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1
 
 내 테스트가 주로 비디오 제작에 중점을 두고 있다는 것과 새로운 맥을 위한 모든 사람들의 사용 사례가 아니라는 것을 알고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러므로 시각 콘텐츠를 다루지 않는 경우, 내 시험 결과는 다소 주의해서 받아들여야 할 것 같아요. 다행히도 다른 리뷰어들로부터 더 심층적인 테스트가 다음 몇 주 동안 등장할 예정이며, 그들이 무엇을 발견했는지 — 이것이 M3 세대에 어떤 의미를 갖는지 기대되네요.
 
@@ -87,6 +163,17 @@ link: "https://medium.com/macoclock/what-i-have-planned-for-my-new-m3-macs-249e1
 
 기술 콘텐츠 제작자의 주간 비하인드 더 시즌 비디오를 보기 위해 내 뉴스레터 목록에 가입하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://markellisreviews.com에서 2023년 11월 7일에 원래 발행되었습니다.
