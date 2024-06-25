@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-ls
+# ls
 
 # 정적 sitemap 생성
 echo "정적 sitemap 생성중.."
