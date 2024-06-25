@@ -3,13 +3,12 @@ title: "Swift 동시성 메모리 관리에서 Task Cancellation과 Weak Self의
 description: ""
 coverImage: "/assets/img/2024-06-23-SwiftConcurrencyTaskCancellationvsWeakSelfforMemoryManagement_0.png"
 date: 2024-06-23 21:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SwiftConcurrencyTaskCancellationvsWeakSelfforMemoryManagement_0.png
 tag: Tech
 originalTitle: "Swift Concurrency: Task Cancellation vs. Weak Self for Memory Management"
 link: "https://medium.com/@noob-programmer/swift-concurrency-task-cancellation-vs-weak-self-for-memory-management-a2fca44eb90f"
 ---
-
 
 ![Image](/assets/img/2024-06-23-SwiftConcurrencyTaskCancellationvsWeakSelfforMemoryManagement_0.png)
 
@@ -21,7 +20,18 @@ Swift 개발에 관련해서, 메모리 관리를 이해하는 것은 복잡한 
 - Task 블록에서도 실제로 weak self가 필요한가?
 - Swift 동시성을 사용할 때 리테인 싸이클을 피하기 위해 어떤 조치를 취할 수 있는가?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 주요 포인트
 
@@ -35,7 +45,18 @@ Swift 개발에 관련해서, 메모리 관리를 이해하는 것은 복잡한 
 
 약한 self의 필요성을 이해하려면 먼저 Swift에서 클로저의 세계로 들어가 보겠습니다. 클로저는 참조 타입이며 강하게 인스턴스(예: self)를 캡처하고 유지할 수 있습니다. 이로 인해 잠재적인 순환 참조가 발생할 수 있습니다. 이는 객체가 self를 참조하는 클로저를 소유하고, 그 클로저가 객체 자체에 의해 소유되는 경우 발생하여 서로 해제될 수 없는 루프를 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전통적인 시나리오:
 
@@ -51,7 +72,7 @@ class Repository {
 class SomeBigViewModel {
     private let repository = Repository()
     private var result = ""
-    
+
     func doSomethingWithClosure() {
         repository.remoteAPICallWithClosure { apiResult in
             self.result = apiResult
@@ -68,7 +89,18 @@ vm?.doSomethingWithClosure()
 vm = nil
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업이 시작됩니다. 그러나 deint print 문은 즉시 나타나지 않을 것입니다. 이는 유지 주기(순환 참조)를 나타냅니다:
 
@@ -80,7 +112,18 @@ vm = nil
 
 우리의 클로저에서 [weak self]를 사용하여 유지 주기를 피하고 SomeBigViewModel이 해제되도록 할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 func doSomethingWithClosure() {
@@ -102,7 +145,18 @@ SomeBigViewModel이 해제되고 있습니다.
 
 # Swift의 병행성 모델: Task와의 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Swift의 동시성 모델 소개로 Task에 대한 유사한 질문이 제기됩니다: 여전히 순환 참조를 방지하기 위해 weak self를 사용해야 할까요?
 
@@ -123,7 +177,18 @@ func doSomething() {
 
 여기서 weak self를 사용하지 않으면, `Task`이 `self`을 강하게 캡처하면서 인스턴스가 작업이 완료되기 전에 해제되어야 하는 순환 참조가 발생합니다. 클로저와는 달리, 컴파일러는 여기서 명시적인 `self` 사용을 요구하지 않기 때문에 weak self이 모든 비동기 작업에서 필수적인지에 대한 의문이 생깁니다. 놀랍게도, 대안 전략으로 작업 취소라는 것이 있기 때문에 weak self가 모든 비동기 작업에서 꼭 필요하지는 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 작업 취소: 전략적 접근
 
@@ -139,7 +204,18 @@ public extension Task {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 확장 프로그램은 작업 수명주기 관리를 간소화하여 집단 작업 취소를 용이하게 합니다.
 
@@ -150,18 +226,18 @@ public extension Task {
 class SomeBigViewModel {
     private let repository = Repository()
     private var cancellableBag = Set<AnyCancellable>()
-    
+
     deinit {
         print("deinit called")
     }
-    
+
     func send(_ action: Action) {
         switch action {
             case .viewWillDisappear:
                 cancellableBag.removeAll()
         }
     }
-    
+
     private func doSomething() {
         print("async operation started")
         Task {
@@ -178,7 +254,18 @@ class SomeBigViewModel {
 
 작업 취소를 사용하면 ViewModel이 해제될 때 작업도 취소되어 명시적으로 `weak self`를 사용하지 않아도 보존 사이클을 방지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 비동기 작업이 시작되었습니다
@@ -191,7 +278,17 @@ SomeBigViewModel이 해제 중입니다
 
 이 기사를 즐겼다면, Medium에 Clap으로 사랑을 보여주시고 의견을 자유롭게 공유해주세요. 이와 유사한 통찰력을 얻고 싶다면, Medium에서 저를 팔로우하고 LinkedIn 및 Twitter에서 저와 연락하십시오. 함께 더 많은 기술 토론에 참여해 봅시다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Medium | LinkedIn | Twitter

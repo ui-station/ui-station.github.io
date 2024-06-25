@@ -3,13 +3,12 @@ title: "Flutter에서 No MediaQuery widget found 오류 해결하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-ResolvingNoMediaQuerywidgetfoundErrorinFlutter_0.png"
 date: 2024-06-23 21:40
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ResolvingNoMediaQuerywidgetfoundErrorinFlutter_0.png
 tag: Tech
 originalTitle: "Resolving No MediaQuery widget found Error in Flutter"
 link: "https://medium.com/@kasata/resolving-no-mediaquery-widget-found-error-in-flutter-0f34fc14f4f6"
 ---
-
 
 플러터를 사용해 오셨다면 언젠가 No MediaQuery 위젯을 찾을 수 없다는 오류와 마주쳐 보셨을 겁니다. 이 오류는 답답할 수 있지만, 다행히도 보통 쉽게 해결할 수 있어요. 이 글에서는 이 오류의 원인을 살펴보고 해결하는 방법을 알아볼 거에요.
 
@@ -19,7 +18,18 @@ No MediaQuery 위젯을 찾을 수 없다는 오류는 주로 MediaQuery 클래�
 
 ## 일반적인 원인
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 에러의 일반적인 원인 중 하나는 MaterialApp, CupertinoApp 또는 WidgetsApp으로 래핑되지 않은 위젯에서 MediaQuery.of(context)를 사용하려고 시도하는 것입니다. 이러한 위젯들은 위젯 트리 상위에서 MediaQuery 위젯이 사용 가능하도록 보장합니다.
 
@@ -46,7 +56,18 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 코드를 실행하면 No MediaQuery widget found 오류가 발생합니다. 이는 Text 위젯이 액세스를 시도하는 곳에 MediaQuery 위젯이 존재하지 않기 때문입니다.
 
@@ -80,7 +101,18 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 수정된 버전에서는 MaterialApp 위젯이 MediaQuery 위젯이 위젯 트리 상위에 있는지 확인합니다. 이제 MediaQuery.of(context)를 사용하여 미디어 쿼리 정보에 성공적으로 액세스할 수 있습니다.
 
@@ -110,7 +142,18 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이번 버전에서는 MediaQuery 위젯을 수동으로 추가했습니다. 이 위젯에는 MediaQueryData.fromWindow으로 얻은 화면 데이터가 제공되었습니다.
 

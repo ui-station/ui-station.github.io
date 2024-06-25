@@ -3,22 +3,21 @@ title: "AOP를 활용한 공통 관심사 처리 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-HandlingcrosscuttingconcernswithAOP_0.png"
 date: 2024-06-23 20:42
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HandlingcrosscuttingconcernswithAOP_0.png
 tag: Tech
 originalTitle: "Handling cross cutting concerns with AOP"
 link: "https://medium.com/@ankita.rai.139/handling-cross-cutting-concerns-with-aop-ba5c0785139d"
 ---
 
-
 # 목차
 
 - 소개
 - AOP의 다양한 구성 요소
-     - ` Aspect
-     - ` Join Point
-     - ` Pointcut
-     - ` Advice
+  - ` Aspect
+  - ` Join Point
+  - ` Pointcut
+  - ` Advice
 - 로깅 프레임워크를 사용하여 AOP 이해하기
 - AOP와 필터의 차이점은 무엇인가요?
 - 결론
@@ -27,7 +26,18 @@ link: "https://medium.com/@ankita.rai.139/handling-cross-cutting-concerns-with-a
 
 관점 지향 프로그래밍(Aspect-Oriented Programming, AOP)은 모듈성을 높이기 위해 교차하는 관심사를 측면(Aspect)으로 분리할 수 있도록 하는 프로그래밍 표준입니다. 전통적인 프로그래밍 패러다임에서는 로깅, 보안 및 트랜잭션 관리와 같은 공통 관심사가 다양한 모듈에 걸쳐 분산되어 코드베이스를 유지 및 이해하기 어렵게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전통적인 로깅 방식:
 
@@ -46,7 +56,18 @@ private User getUserById(Integer userId){
 
 AOP를 사용한 로깅:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Logging(printResponse = true, logLevel = LOG.INFO)
@@ -62,8 +83,18 @@ AOP의 다양한 구성 요소를 연극 공연의 예를 들어 설명해 보�
 
 Join Point: 연극 무대에 있는 자신을 상상해보세요. 배우들이 하는 장면 변화나 특정 동작은 모두 join point로 작용합니다. 예를 들어, 캐릭터가 무대에 나오거나 내려갈 때, 특정 대사를 말할 때가 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 포인트컷: 지금 이 시점에서 연극 대본이 포인트컷 역할을 합니다. 이는 특정 대사나 활동의 타이밍을 설정합니다. 예를 들어, 특정 캐릭터가 자정에 무대에 나와야 한다는 것을 시사할 수 있습니다.
 
@@ -73,7 +104,18 @@ Join Point: 연극 무대에 있는 자신을 상상해보세요. 배우들이 �
 
 이제 각 구성 요소에 대해 자세히 알아보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1.) Aspect
 
@@ -83,7 +125,18 @@ Aspect(관점)은 횡단 관심사(cross-cutting concerns)를 캡슐화합니다
 
 Join Point(결합 지점)는 프로그램 실행 중 특정 지점인데, 메서드 실행, 메서드 호출, 객체 인스턴스화 및 필드 접근 같은 지점에서 Aspect를 적용할 수 있습니다. Aspect는 결합 지점을 정의하여 영향을 미치는 결합 지점을 명시합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 3.) 포인트컷
 
@@ -93,7 +146,18 @@ Join Point(결합 지점)는 프로그램 실행 중 특정 지점인데, 메서
 
 i) 실행 포인트컷: 이는 응용 프로그램에서 메서드를 실행하는 기준에 따라 조인 포인트를 선택합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 @Before("execution(* com.user.service.*.*(..))")
@@ -102,13 +166,24 @@ public Object performAuth(JoinPoint joinPoint) throws Throwable {
 }
 ```
 
-“execution(* com.user.service.*.*(..))”: 이 부분은 포인트컷 표현식입니다. 왼쪽부터 오른쪽으로 살펴보겠습니다.
+“execution(_ com.user.service._.\*(..))”: 이 부분은 포인트컷 표현식입니다. 왼쪽부터 오른쪽으로 살펴보겠습니다.
 
 execution - 이 부분은 메서드 실행을 기반으로 포인트컷을 정의하고 있다는 키워드입니다.
 
-* - 이 와일드카드는 메서드의 반환 타입을 나타냅니다. 여기서 *는 어떤 반환 타입이던지를 의미합니다.
+- - 이 와일드카드는 메서드의 반환 타입을 나타냅니다. 여기서 \*는 어떤 반환 타입이던지를 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 com.user.service.* - 이 부분은 대상 클래스가 위치한 패키지를 지정합니다 (com.user.service). 마지막 점 뒤의 *는 이 패키지 내의 모든 클래스 이름을 의미합니다.
 
@@ -118,7 +193,18 @@ com.user.service.* - 이 부분은 대상 클래스가 위치한 패키지를 �
 
 ii) 포인트컷 내에서: 이 포인트컷 표현식은 표현식에 정의된 패키지 이름이나 클래스를 기반으로 조인 포인트를 선택합니다. 해당 패키지/클래스 내의 모든 메서드 실행을 선택합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Around("within(com.cache.service.*)")
@@ -127,7 +213,7 @@ public Object warmupAndDestroyCache(ProceedingJoinPoint joinPoint) throws Throwa
 }
 ```
 
-"within(com.cache.service.*)" : 이 표현은 com.cache.service 패키지 내에서 모든 메서드를 선택합니다.
+"within(com.cache.service.\*)" : 이 표현은 com.cache.service 패키지 내에서 모든 메서드를 선택합니다.
 
 iii) 어노테이션 포인트컷: 이 포인트컷은 지정된 어노테이션으로 주석이 달린 모든 메서드와 일치하는 조인 포인트를 선택합니다.
 
@@ -138,7 +224,18 @@ public Object logPurchaseHistory(JoinPoint joinPoint) throws Throwable {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 “@annotation(com.user.annotations.AuditPurchase)” : 이 표현은 AuditPurchase 어노테이션이 지정된 모든 메서드를 선택합니다.
 
@@ -153,7 +250,18 @@ public void logError(JoinPoint joinPoint, Throwable ex) {
 
 위에서 정의된 것 외에도 사용 사례에 따라 적용할 수 있는 여러 종류의 포인트컷 표현식이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 4.) 조언
 
@@ -163,7 +271,18 @@ public void logError(JoinPoint joinPoint, Throwable ex) {
 
 - Before advice: 이 유형의 조언은 조언된 메서드가 호출되기 전에 실행됩니다. 입력 유효성 검사, 메서드 실행 시작 로깅 등과 같은 작업을 실행하는 데 일반적으로 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Before("@within(com.user.annotations.ValidateUserId)")
@@ -184,7 +303,18 @@ public void clearCache(JoinPoint joinPoint) {
 
 - After returning advice: 이 유형의 어드바이스는 어드바이스된 메서드가 예외를 던지지 않고 성공적으로 완료된 후에 실행됩니다. 메서드 실행 결과를 기록하거나 반환된 값에 기반한 후속 처리 작업을 수행하는 데 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @AfterReturning(pointcut = "execution(* com.user.service.utils.regex.*.*(..))", returning = "result")
@@ -204,8 +334,18 @@ public void logError(JoinPoint joinPoint, Exception exception) {
 
 - Around advice: 이 유형의 어드바이스는 조언된 메소드의 호출을 완전히 제어합니다. 입력 및 출력을 포함하여 특정한 로직을 수행하기 위해 메소드 호출을 가로챕니다. 원래 메소드 호출 전후에 사용자 정의 로직을 수행하고, 원래 메소드 호출을 계속할지 여부를 제어할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 로깅 프레임워크를 활용한 AOP 이해
 
@@ -215,7 +355,18 @@ public void logError(JoinPoint joinPoint, Exception exception) {
 
 먼저 로깅 어스펙트 클래스를 생성하여 로깅을 수행하는 어드바이스를 포함시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Aspect
@@ -236,7 +387,7 @@ public class LoggingAspect {
 
   @Around(value = "@annotation(com.user.service.annotations.LogTime)")
   public Object doLogging(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
- 
+
     MethodSignature signature = (MethodSignature) proceedingJoinPoint.getSignature();
     Method method = signature.getMethod();
     LogTime loggableMethod = method.getAnnotation(LogTime.class);
@@ -256,7 +407,7 @@ public class LoggingAspect {
     }
 
     long startTime = System.currentTimeMillis();
-    
+
     // 주요 메소드 실행
     Object result = proceedingJoinPoint.proceed();
 
@@ -275,7 +426,18 @@ public class LoggingAspect {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 단계 3: 어노테이션 생성
 
@@ -293,7 +455,18 @@ public @interface LogTime {
 
 단계 4: 어드바이스 대상 메서드 어노테이션하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 실행 시간을 추적할 메서드에 사용자 정의 LogTime 주석을 적용해야 합니다.
 
@@ -309,7 +482,18 @@ public User getUserById(Long userId) {
 
 <img src="/assets/img/2024-06-23-HandlingcrosscuttingconcernswithAOP_0.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # AOP은 필터와 어떻게 다른가요?
 

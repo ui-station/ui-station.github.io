@@ -3,13 +3,12 @@ title: "2024년에도 여전한 문제 테크 업계의 나이 차별"
 description: ""
 coverImage: "/assets/img/2024-06-23-AgeismStillaBigTechIssuein2024_0.png"
 date: 2024-06-23 21:51
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AgeismStillaBigTechIssuein2024_0.png
 tag: Tech
 originalTitle: "Ageism Still a Big Tech Issue in 2024"
 link: "https://medium.com/@tsecretdeveloper/ageism-still-a-big-tech-issue-in-2024-fbf5e5638ee4"
 ---
-
 
 ![2024-06-23-AgeismStillaBigTechIssuein2024_0](/assets/img/2024-06-23-AgeismStillaBigTechIssuein2024_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tsecretdeveloper/ageism-still-a-big-tech-issue-in-202
 
 이번 소송에는 IBM의 부사장님들까지 포함되어 있어서 차별적인 관행이 그들의 최고위에서부터 이어지고 있다는 것을 의미합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 차별은 현실입니다
 
@@ -29,11 +39,33 @@ IBM에서는 체계적인 연령 차별 주장이 사실이 아니라고 주장�
 
 나는 이 문화 때문에 IBM을 비난하고 싶지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 바꿔 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 산업이 경험과 젊음을 어떻게 가치있게 여기는지 다시 생각하도록 각성시켜야 할 때입니다.
 
@@ -43,9 +75,20 @@ IBM에서는 체계적인 연령 차별 주장이 사실이 아니라고 주장�
 
 그래서 회사들이 경험(즉, 나이)보다 청춘을 더 가치 있게 여긴다면, 그것은 그들이 자신들의 편에 사실을 가지고 있다는 것일까요? 그렇지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-프로그래밍 지식은 나이가 들수록 더 늘어나고, 우리가 아는 바에 의하면, 지식과 성과는 밀접한 관련이 있습니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+프로그래밍 지식은 나이가 들수록 더 늘어나고, 우리가 아는 바에 의하면, 지식과 성과는 밀접한 관련이 있습니다.
 
 한편, 45세 이상의 개발자들 수가 점점 줄어들고 있다는 사실도 있다: 2023 년 인구 통계를 살펴보세요:
 
@@ -53,7 +96,18 @@ IBM에서는 체계적인 연령 차별 주장이 사실이 아니라고 주장�
 
 뭔가가 변해야 합니다. 그렇지 않으면 우리는 모두 우리의 연금나이나 프로그래머로서의 유효성이 감소하기 전에 폐기물 처분장에 처박히게 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -63,7 +117,18 @@ IBM에서는 체계적인 연령 차별 주장이 사실이 아니라고 주장�
 
 이게 바로 요점이죠, 그렇죠?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 저자 소개
 

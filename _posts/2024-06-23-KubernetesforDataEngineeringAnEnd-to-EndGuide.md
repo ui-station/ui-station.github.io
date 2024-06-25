@@ -3,13 +3,12 @@ title: "데이터 엔지니어링을 위한 Kubernetes 처음부터 끝까지 �
 description: ""
 coverImage: "/assets/img/2024-06-23-KubernetesforDataEngineeringAnEnd-to-EndGuide_0.png"
 date: 2024-06-23 23:03
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-KubernetesforDataEngineeringAnEnd-to-EndGuide_0.png
 tag: Tech
 originalTitle: "Kubernetes for Data Engineering: An End-to-End Guide"
 link: "https://medium.com/towards-data-engineering/kubernetes-for-data-engineering-an-end-to-end-guide-26c741a8c013"
 ---
-
 
 최근 몇 년간 데이터 엔지니어링이 크게 발전하였는데, Kubernetes가 이 분야에서 중요한 기술로 부상하였습니다. Kubernetes는 확장 가능하고 효율적인 애플리케이션 배포를 포함한 데이터 파이프라인 및 워크플로우의 효율적인 구축과 관리를 지원하는 오픈 소스 컨테이너 오케스트레이션 플랫폼입니다. 이 글에서는 Docker에서 Kubernetes 설정, kubectl로 클러스터 관리, Kubernetes 대시보드 배포, 그리고 Helm 차트를 사용해 Apache Airflow를 실행하는 방법에 대해 알아보겠습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-data-engineering/kubernetes-for-data-engineeri
 
 Kubernetes는 K8s로 약칭되며, 애플리케이션 컨테이너를 자동으로 배포, 확장 및 운영하기 위해 설계된 오픈 소스 플랫폼입니다. 원래 구글에서 개발되었으며 현재는 Cloud Native Computing Foundation에서 유지보수하고 있습니다. Kubernetes는 견고한 기능과 광범위한 커뮤니티 지원으로 컨테이너 오케스트레이션의 표준으로 자리매깁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 쿠버네티스의 핵심 개념
 
@@ -34,7 +44,18 @@ Kubernetes는 K8s로 약칭되며, 애플리케이션 컨테이너를 자동으�
 
 만일 전체 비디오에 관심이 있으시다면, [여기](#)를 클릭해서 보실 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데이터 엔지니어링에서 Kubernetes 이해하기
 
@@ -47,7 +68,18 @@ Kubernetes는 K8s로 약칭되며, 애플리케이션 컨테이너를 자동으�
 
 # 연결 기술은 어떨까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 Kubernetes 클러스터를 관리하고 제어하며 데이터 엔지니어링 프로세스를 용이하게 하기 위해 Kubernetes와 함께 사용될 다른 기술들에 대해 이야기해보려고 해요. 이 기술들은 Docker, Kubectl, Helm 등을 포함합니다.
 
@@ -58,7 +90,18 @@ Docker는 컨테이너 내에서 애플리케이션을 개발, 배포 및 실행
 - 컨테이너: 애플리케이션의 코드, 구성 및 종속성을 하나의 객체로 패키징하는 표준 방법을 제공합니다.
 - 이미지: 코드, 런타임, 라이브러리, 환경 변수 및 구성 파일 등 애플리케이션을 실행하는 데 필요한 모든 것이 포함된 실행 가능한 패키지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 쿠버네티스 클러스터 관리
 
@@ -70,7 +113,18 @@ Docker는 컨테이너 내에서 애플리케이션을 개발, 배포 및 실행
 - 기능: 애플리케이션을 배포하고 클러스터 리소스를 검사하고 관리하며 로그를 보고 팟에서 명령을 실행하는 등의 기능을 제공합니다.
 - 사용법: kubectl 명령은 간단합니다. 예를 들어, kubectl get pods는 현재 네임스페이스의 모든 팟을 나열하거나 kubectl apply -f deployment.yaml은 파일에서 구성을 적용하는 것과 같은 명령입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 미니큐브
 
@@ -84,7 +138,18 @@ Docker는 컨테이너 내에서 애플리케이션을 개발, 배포 및 실행
 - 기능: 쿠버네티스 클러스터의 부트스트래핑, 제어 플레인 설정, 토큰 관리, kubeadm 설정 등을 처리합니다.
 - 사용법: 일반 클러스터 설정 과정을 간소화하여, 쿠버네티스에 처음 입문하는 사람들도 접근하기 쉽게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문서에서는 kubectl을 사용할 것입니다. 귀하의 운영 체제 및 버전을 선택하여 기기에 설치할 수 있습니다.
 
@@ -96,7 +161,18 @@ Docker는 컨테이너 내에서 애플리케이션을 개발, 배포 및 실행
 kubectl version
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제 경우에는 kubectl 버전 1.29.1을 실행 중입니다. 당신이 프로세스를 실행하는 시기에 따라 더 높을 수 있습니다.
 
@@ -106,7 +182,18 @@ kubectl version
 
 Docker에서 Kubernetes를 설정하는 것은 Docker가 컨테이너화된 애플리케이션을 실행하는 로컬 Kubernetes 클러스터를 생성하는 과정을 포함합니다. 이 설정은 개발 및 테스트 목적으로 특히 유용합니다. Docker에서 Kubernetes를 설정하는 단계별 가이드는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 준비 사항
 
@@ -117,7 +204,18 @@ Docker에서 Kubernetes를 설정하는 것은 Docker가 컨테이너화된 애�
 
 ## 1. 도커 데스크톱 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다운로드 및 설치: 공식 Docker 웹사이트에서 Docker Desktop을 다운로드하세요. 제공된 지침을 따라 컴퓨터에 설치해주세요.
 - Kubernetes 활성화: Docker Desktop에는 로컬 컴퓨터에서 실행되는 독립형 Kubernetes 서버가 포함되어 있습니다. 이를 활성화하기 전에 초기 기본 구성에서 리소스를 약간 늘려주어야 합니다.
@@ -131,7 +229,18 @@ Docker Desktop에서 Kubernetes 활성화 방법:
 - “Kubernetes 활성화”란에 체크합니다.
 - 변경사항을 저장하려면 “적용 및 다시 시작”을 클릭합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변경하겠습니다.
 
@@ -143,7 +252,18 @@ Docker Desktop에서 Kubernetes 활성화 방법:
 
 ## 3. 쿠버네티스 컨텍스트 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 쿠버네티스는 서로 다른 클러스터에 액세스하기 위해 컨텍스트를 사용합니다. 도커 데스크탑은 docker-desktop이라는 컨텍스트를 설정합니다.
 - 이 컨텍스트로 전환하려면 kubectl config use-context docker-desktop을 사용하십시오.
@@ -154,7 +274,18 @@ Docker Desktop에서 Kubernetes 활성화 방법:
 
 - Homebrew: Homebrew를 설치한 경우, 간단히 다음을 실행할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 brew install helm
@@ -168,7 +299,18 @@ brew install helm
 choco install kubernetes-helm
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 리눅스용:
 
@@ -180,7 +322,18 @@ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 만약 다른 버전의 운영 체제, 패키지 관리자를 원하시거나 소스에서 직접 빌드하고 싶다면 공식 가이드의 지침을 따를 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 헬름이 컴퓨터에 설치되면 다음을 실행하여 설치를 확인할 수 있습니다:
 
@@ -192,7 +345,18 @@ helm version
 
 <img src="/assets/img/2024-06-23-KubernetesforDataEngineeringAnEnd-to-EndGuide_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Kubernetes 대시보드 배포하기
 
@@ -202,7 +366,18 @@ Kubernetes 대시보드는 Kubernetes 클러스터를 관리하는 사용자 친
 
 - 배포 명령 실행: Kubernetes 대시보드를 배포하려면 kubectl을 사용하여 yaml 구성을 배포하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 kubectl apply -f https://raw.githubusercontent.com/airscholar/Kubernetes-For-DataEngineering/main/k8s/recommended-dashboard.yaml
@@ -214,7 +389,18 @@ kubectl apply -f https://raw.githubusercontent.com/airscholar/Kubernetes-For-Dat
 
 - 프록시 시작: Kubernetes 대시보드는 프록시 서버를 통해 액세스됩니다. 다음 몤령을 사용하여 프록시를 시작합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 kubectl proxy
@@ -226,8 +412,18 @@ kubectl proxy
 
 2. URL에 접속하세요: 웹 브라우저를 열고 다음 URL로 이동하세요:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
@@ -239,7 +435,18 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 
 - Bearer 토큰 받기: 대시보드에 로그인하려면 Bearer 토큰을 생성해야 합니다. 다음 단계를 따라 서비스 계정을 생성하고 토큰을 받을 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다음 내용으로 dashboard-adminuser.yaml이라는 파일을 생성하세요:
 
@@ -268,7 +475,18 @@ subjects:
     namespace: kubernetes-dashboard
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 그리고 마지막으로 아래 내용을 가진 dashboard-secret.yaml 파일을 생성해주세요.
 
@@ -291,7 +509,18 @@ kubectl apply -f dashboard-clusterrole.yaml
 kubectl apply -f dashboard-secret.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 대시보드에 액세스할 때 사용할 토큰을 생성하는 방법입니다:
 
@@ -301,7 +530,18 @@ kubectl get secret admin-user -n kubernetes-dashboard -o jsonpath={".data.token"
 
 만약 CLI를 사용하는 것을 선호한다면, 대신에 다음 명령어를 실행할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - kube-system 네임스페이스에 서비스 계정을 생성해 주세요:
 
@@ -315,7 +555,18 @@ kubectl create serviceaccount admin-user -n kubernetes-dashboard
 kubectl create clusterrolebinding admin-user --clusterrole=cluster-admin --serviceaccount=kubernetes-dashboard:admin-user
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다음 명령을 사용하여 비밀을 가져오세요:
 
@@ -327,7 +578,18 @@ kubectl get secret $(kubectl get serviceaccount admin-user -n kubernetes-dashboa
 
 ## 단계 4: 대시보드 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 대시보드 탐색하기: 로그인하면 배포, 서비스 및 팟과 같은 Kubernetes 자원을 보거나 관리할 수 있습니다.
 - 자원 생성 및 수정: 대시보드 UI를 통해 직접 새로운 자원을 생성하거나 기존 자원을 수정할 수 있습니다.
@@ -342,7 +604,18 @@ kubectl get secret $(kubectl get serviceaccount admin-user -n kubernetes-dashboa
 
 이제 Kubernetes 대시보드를 성공적으로 배포했으므로, 차례로 Kubernetes 클러스터에 Apache Airflow를 배포할 준비를 해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 쿠버네티스 클러스터에 Apache Airflow 배포하기
 
@@ -352,7 +625,18 @@ kubectl get secret $(kubectl get serviceaccount admin-user -n kubernetes-dashboa
 
 다음 요구 사항은 문제 없이 진행하기 위해 필요합니다. 이전 부분을 건너 뛰었다면, 계속 진행하기 전에 모든 것이 잘 작동하는지 다시 확인하는 것이 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 실행 중인 Kubernetes 클러스터가 필요합니다.
 - 로컬 머신에 Helm이 설치되어 있어야 합니다 (필요한 경우 Helm 설치 방법은 이전 지침을 참조하십시오).
@@ -367,7 +651,18 @@ helm repo add apache-airflow https://airflow.apache.org
 helm repo update
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령어는 Airflow 리포지토리를 추가하고 로컬 Helm 차트 리포지토리 인덱스를 업데이트합니다.
 
@@ -379,7 +674,18 @@ helm repo update
 helm install airflow apache-airflow/airflow --namespace airflow --create-namespace --debug
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - airflow은 릴리스 이름으로, 원하는대로 변경할 수 있습니다.
 - --namespace airflow는 Airflow를 설치할 Kubernetes 네임스페이스를 지정합니다. 네임스페이스가 존재하지 않는 경우, --create-namespace를 사용하여 생성하고 --debug를 사용하면 배포 단계를 볼 수 있습니다.
@@ -390,7 +696,18 @@ helm install airflow apache-airflow/airflow --namespace airflow --create-namespa
 
 재미있게도 Apache Airflow 릴리스는 완료되었지만 보통 localhost:8080으로 접근해도 여전히 접속할 수 없습니다. 이를 가능하게 하고 Apache Airflow 파드에 대한 연결을 처리하려면 아래 명령을 실행한 다음 UI에서 Apache Airflow 배포에 액세스해야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 kubectl port-forward svc/airflow-webserver 8080:8080 --namespace airflow
@@ -402,8 +719,18 @@ kubectl port-forward svc/airflow-webserver 8080:8080 --namespace airflow
 
 화면 상단에 동적 웹서버 비밀 키에 관한 경고가 있는 경우 정적 웹서버 비밀 키를 사용하는 것이 좋습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 동적 키 대신 정적 키 사용하는 이유
 
@@ -417,7 +744,18 @@ kubectl port-forward svc/airflow-webserver 8080:8080 --namespace airflow
 
 이를 해결하기 위해, Apache Airflow 릴리스에 웹 서버 비밀 키를 포함하여 재구성하겠습니다. 이를 위해 원하는 구성을 덮어쓸 values.yaml 파일을 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 키를 생성하는 다양한 방법이 있지만 가장 인기 있는 두 가지 방법을 강조하겠습니다:
 
@@ -429,7 +767,18 @@ kubectl port-forward svc/airflow-webserver 8080:8080 --namespace airflow
 pip install cryptography
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 그럼 당신의 Python 환경에서 다음 한 줄을 사용할 수 있어요:
 
@@ -442,9 +791,20 @@ python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().d
 ```js
  echo Fernet Key: $(kubectl get secret --namespace airflow
  airflow-fernet-key -o jsonpath="{.data.fernet-key}" | base64 --decode)
-``` 
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한번 생성되면 다음과 같이 보일 것입니다. 이 값들로 values.yaml 파일을 업데이트할 수 있어요.
 
@@ -459,7 +819,18 @@ webserverSecretKey: aERBZE5MN3E0TjRjU2xzQWxCdTNIUks0WGFTZThoWXc=
 helm upgrade --install airflow apache-airflow/airflow --namespace airflow --create-namespace -f values.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UI에서 변경 사항을 미리보기하면 경고 메시지가 사라진 것을 확인할 수 있습니다.
 
@@ -469,11 +840,20 @@ UI에서 변경 사항을 미리보기하면 경고 메시지가 사라진 것�
 
 우리의 경우, GitHub 저장소에서 DAG를 Airflow에 연결하게 됩니다. 거기에 Airflow DAG 코드를 작성하고 커밋한 후에 해당 커밋으로부터 URL을 얻어 Kubernetes와 동기화할 것입니다. 아래에 제시된 대로 진행됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Here is the translation into Korean:
-
-
 
 ```python
 from airflow import DAG
@@ -586,7 +966,18 @@ get_data_from_url >> preview_data_from_url
 
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위에서 commited된 저장소는 다음과 같습니다:
 
@@ -611,7 +1002,18 @@ dags:
     subPath: "dags"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하루 마무리로 우리는 구성을 다시 적용하고 helm 차트로 릴리스를 업데이트할 거에요!
 
@@ -623,7 +1025,18 @@ UI에서 그 모습을 확인해보죠.
 
 마지막으로, 이 DAG들을 트리거하고 해당 로그에서 출력을 확인해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 이제 마무리입니다!
 
@@ -640,7 +1053,18 @@ UI에서 그 모습을 확인해보죠.
 
 제 모든 플랫폼을 좋아요와 팔로우 해주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Github: airscholar
 - Twitter: @YusufOGaniyu
@@ -654,7 +1078,18 @@ datamasterylab.com에서 더 많은 코스를 확인하실 수 있습니다.
 
 # 자료들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 깃허브 풀 코드
 
@@ -664,7 +1099,18 @@ datamasterylab.com에서 더 많은 코스를 확인하실 수 있습니다.
 
 # 스택데믹
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 끝까지 읽어 주셔서 감사합니다. 떠나시기 전에:
 

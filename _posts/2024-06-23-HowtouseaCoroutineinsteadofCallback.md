@@ -3,13 +3,12 @@ title: "Callback 대신 Coroutine 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-HowtouseaCoroutineinsteadofCallback_0.png"
 date: 2024-06-23 23:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HowtouseaCoroutineinsteadofCallback_0.png
 tag: Tech
 originalTitle: "How to use a Coroutine instead of Callback?"
 link: "https://medium.com/@vishpraveen7/how-to-use-a-coroutine-instead-of-callback-1799284e9e32"
 ---
-
 
 콜백을 코루틴으로 대체하는 것은 비동기 작업을 처리하기 위해 콜백을 사용하는 코드를 코루틴 기반 코드로 변환하는 것을 의미합니다. 이렇게하면 코드가 더 읽기 쉽고 유지 관리하기 쉬워집니다. Kotlin에서 코루틴은 복잡한 콜백 체인 없이 비동기 작업을 처리할 수 있습니다.
 
@@ -24,7 +23,18 @@ interface Callback<T> {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 추상화 계층 추가를 위한 서비스 인터페이스:
 
@@ -68,7 +78,18 @@ class FruitsDataSource : FruitService {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API 호출을 하는 저장소:
 
@@ -89,7 +110,18 @@ class FruitsRepository(
 
 일반적인 콜백 기반 함수부터 시작해봅시다. 비동기 작업을 하는 과일 데이터를 가져오는 작업이 있으며 결과를 반환하기 위해 콜백을 사용한다고 가정해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 fun fetchFruitsLegacyWay(repository: FruitsRepository) {
@@ -116,8 +148,18 @@ fun main() {
 
 # 2. 코루틴으로 변환하기
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이를 코루틴 기반 접근 방식으로 변환하려면 다음 단계를 따르세요:
 
@@ -129,7 +171,18 @@ fun main() {
 
 서스펜드 함수 정의: 콜백을 제거하고 함수를 서스펜드로 변경하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 내용을 추가하여 Service Interface를 업데이트하세요:
 
@@ -147,7 +200,18 @@ override suspend fun fetchFruits(): List<String> {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래의 코드를 추가하여 FruitsRepository를 업데이트해주세요:
 
@@ -161,7 +225,18 @@ override suspend fun fetchFruits(): List<String>  {
 
 ## launch를 사용한 예시''
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 private suspend fun fetchFruitsUsingCoroutine(repository: FruitsRepository) {
@@ -192,7 +267,18 @@ fun main() = runBlocking {
 
 만약 여러 비동기 태스크를 수행해야 한다면, 코루틴은 동시 실행을 위해 async를, 결과를 기다리기 위해 await를 사용하여 더 우아하게 처리할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시: 코루틴을 이용한 여러 작업
 
@@ -200,7 +286,7 @@ fun main() = runBlocking {
 fun main() = runBlocking {
   val repository = FruitsRepository(LegacyDataSource())
 
-  val fruits1 = async { repository.fetchFruits() } //API 호출 1 
+  val fruits1 = async { repository.fetchFruits() } //API 호출 1
   val data1 = fruits1.await()
   println("Data1: $data1") // 출력: 서버에서 과일 목록
 
@@ -214,7 +300,18 @@ fun main() = runBlocking {
 
 기존 콜백을 사용하는 레거시 시스템과 통합할 때, suspendCoroutine 또는 suspendCancellableCoroutine을 사용하여 콜백 기반 코드를 코루틴으로 래핑할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 예시: 코루틴을 이용한 콜백 감싸기
 
@@ -242,6 +339,17 @@ private suspend fun fetchFruitsUsingCoroutines(repository: FruitsRepository) {
 - 확장성: 코루틴은 가벼우며 많은 수의 동시 작업을 효율적으로 처리할 수 있습니다.
 - 구조화된 병행성: 비동기 작업의 라이프사이클을 보다 효과적으로 관리할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 콜백을 코루틴으로 변환하면 코드를 현대화하여 유지 및 확장하기 쉬워집니다.

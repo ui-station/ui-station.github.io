@@ -3,13 +3,12 @@ title: "업데이트 실행 가능한 pod로 gem cocoapods  0a를 찾을 수 없
 description: ""
 coverImage: "/assets/img/2024-06-23-Updatedcantfindgemcocoapods0awithexecutablepodGemGemNotFoundException_0.png"
 date: 2024-06-23 20:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-Updatedcantfindgemcocoapods0awithexecutablepodGemGemNotFoundException_0.png
 tag: Tech
 originalTitle: "Updated : can’t find gem cocoapods (>= 0.a) with executable pod (Gem::GemNotFoundException)"
 link: "https://medium.com/@hemanthkollanur/cant-find-gem-cocoapods-0-a-with-executable-pod-gem-gemnotfoundexception-5389f63dc8ad"
 ---
-
 
 이는 CocoaPods가 시스템에 설치되어 있지 않거나 PATH 변수에 설치되어 있지만 실행 파일인 'pod'를 찾을 수 없음을 의미합니다.
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@hemanthkollanur/cant-find-gem-cocoapods-0-a-with-exec
 .rvm/rubies/ruby-2.7.6/lib/ruby/site_ruby/2.7.0/rubygems.rb:264:in `find_spec_for_exe': can't find gem cocoapods (>= 0.a) with executable pod (Gem::GemNotFoundException)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해결책:
 
@@ -40,7 +50,18 @@ bundle i 또는 bundle install
 
 2024년 2월 업데이트:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0/rubygems.rb:283:in `find_spec_for_exe': 실행 가능한 'pod'로 cocoapods (>= 0.a) 젬을 찾을 수 없습니다 (Gem::GemNotFoundException)

@@ -3,14 +3,12 @@ title: "Swift의 모던 동시성 프로그래밍 Async Await와 Alamofire 활�
 description: ""
 coverImage: "/assets/img/2024-06-23-ModernConcurrencyinSwiftAsyncAwaitAlamofire_0.png"
 date: 2024-06-23 21:26
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ModernConcurrencyinSwiftAsyncAwaitAlamofire_0.png
 tag: Tech
 originalTitle: "Modern Concurrency in Swift: Async Await + Alamofire"
 link: "https://medium.com/nicholausadi/modern-concurrency-in-swift-async-await-alamofire-2846379cc621"
 ---
-
-
 
 ![이미지](/assets/img/2024-06-23-ModernConcurrencyinSwiftAsyncAwaitAlamofire_0.png)
 
@@ -20,7 +18,18 @@ link: "https://medium.com/nicholausadi/modern-concurrency-in-swift-async-await-a
 
 Alamofire는 iOS 개발 커뮤니티에서 널리 사용되는 네트워크 라이브러리로, 네트워크 요청을 처리하는 우아한 솔루션을 제공해요. 아마도 이미 Alamofire와 iOS 개발에서의 사용법에 익숙하실 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Alamofire을 사용한 Async-Await 구현
 
@@ -30,7 +39,18 @@ Alamofire는 iOS 개발 커뮤니티에서 널리 사용되는 네트워크 라�
 
 다음은 Alamofire를 사용하여 API 요청을 초기화하는 기본 코드 스니펫입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // Alamofire를 사용하여 API 요청을 수행하는 코드 조각입니다.
@@ -120,8 +140,18 @@ class NetworkManager {
 
 하지만 여기서 멈추지 않고, 더 나아가서 actor를 도입하여 접근 방식을 더욱 세련되게 만들 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 배우자들 소개
 
@@ -172,7 +202,18 @@ async/await를 사용하여 배우들을 사용하려면, 간단히 배우를 as
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 네트워크 매니저가 이제 async 액터로 변경되었으므로 안전하고 동시성 있는 방식으로 상호 작용하는 방법을 소개합니다:
 
@@ -244,7 +285,18 @@ getPeople { result in
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -254,6 +306,17 @@ Actor와 task의 사용은 공유 리소스 관리와 효율적인 동시 작업
 
 ![이미지](/assets/img/2024-06-23-ModernConcurrencyinSwiftAsyncAwaitAlamofire_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 엔지니어링에 대한 더 많은 통찰을 기대해주세요! 코딩을 즐기며 행복하게 일하세요! 🌟👩‍💻👨‍💻📱

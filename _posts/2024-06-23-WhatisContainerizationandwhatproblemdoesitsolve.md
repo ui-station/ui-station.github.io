@@ -3,13 +3,12 @@ title: "컨테이너화란 무엇이며 어떤 문제를 해결하나요"
 description: ""
 coverImage: "/assets/img/2024-06-23-WhatisContainerizationandwhatproblemdoesitsolve_0.png"
 date: 2024-06-23 22:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-WhatisContainerizationandwhatproblemdoesitsolve_0.png
 tag: Tech
 originalTitle: "What is Containerization and what problem does it solve."
 link: "https://medium.com/@SelvaPrasath/what-is-containerization-and-what-problem-does-it-solve-078051a96db2"
 ---
-
 
 컨테이너화는 응용 프로그램 코드와 모든 필요한 파일 및 라이브러리를 패키지로 묶어서 모든 인프라에서 실행할 수 있도록 하는 소프트웨어 배포 방법입니다. 이는 응용 프로그램과 해당 종속성을 컨테이너라고 하는 단일 패키지로 캡슐화하는 경량 가상화 형태입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@SelvaPrasath/what-is-containerization-and-what-proble
 
 ## 이미지란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너화(context of containerization)란 이미지(image)란 것이 경량(lighweight), 독립적(standalone), 실행 가능한(executable) 소프트웨어 패키지로, 코드, 런타임(runtime), 라이브러리(libraries), 환경 변수(environment variables), 설정 파일(configuration files)을 내장하고 있는 것을 의미합니다.
 
@@ -29,19 +39,39 @@ link: "https://medium.com/@SelvaPrasath/what-is-containerization-and-what-proble
 
 주요 문제 해결:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-WhatisContainerizationandwhatproblemdoesitsolve_0.png)
 
 ## 컨테이너화의 장점:
 
-* 독립성: 각 컨테이너는 독립된 환경에서 실행되어 필요한 모든 종속성 및 구성 파일을 보장합니다. 이 독립성은 응용 프로그램 및 환경 간의 충돌을 피하는 데 도움이 됩니다.
+- 독립성: 각 컨테이너는 독립된 환경에서 실행되어 필요한 모든 종속성 및 구성 파일을 보장합니다. 이 독립성은 응용 프로그램 및 환경 간의 충돌을 피하는 데 도움이 됩니다.
 
-* 일관성: 컨테이너를 통해 소프트웨어가 배포된 위치에 관계없이 동일하게 실행되도록 보장할 수 있습니다. 이 일관성은 컨테이너가 라이브러리, 이진 파일 및 기타 종속성과 같이 응용 프로그램에 필요한 모든 것을 포함하므로 달성됩니다.
+- 일관성: 컨테이너를 통해 소프트웨어가 배포된 위치에 관계없이 동일하게 실행되도록 보장할 수 있습니다. 이 일관성은 컨테이너가 라이브러리, 이진 파일 및 기타 종속성과 같이 응용 프로그램에 필요한 모든 것을 포함하므로 달성됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 효율성: 전통적인 가상 머신(VM)과 달리, 컨테이너는 호스트 시스템의 운영 체제 커널을 공유하여 더 가볍고 효율적입니다. 이로써 단일 호스트에서 더 많은 응용 프로그램을 실행할 수 있습니다.
 
@@ -51,8 +81,18 @@ link: "https://medium.com/@SelvaPrasath/what-is-containerization-and-what-proble
 
 아래 이미지는 컨테이너화된 응용 프로그램이 어떻게 작동하는지 가장 잘 설명합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-WhatisContainerizationandwhatproblemdoesitsolve_1.png" />
 
@@ -62,8 +102,18 @@ link: "https://medium.com/@SelvaPrasath/what-is-containerization-and-what-proble
 
 # 개요:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 도커는 애플리케이션을 컨테이너로 자동화하여 배포, 확장 및 관리하는 플랫폼입니다. 컨테이너 이미지를 사용하여 컨테이너를 쉽게 만들어 줍니다. 컨테이너 이미지는 가볍고 독립적이며 실행 가능한 소프트웨어 패키지로, 소프트웨어를 실행하는 데 필요한 모든 것을 포함하고 있습니다.
 
@@ -76,7 +126,18 @@ link: "https://medium.com/@SelvaPrasath/what-is-containerization-and-what-proble
 
 # 쿠버네티스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 개요:
 
@@ -90,6 +151,17 @@ link: "https://medium.com/@SelvaPrasath/what-is-containerization-and-what-proble
 - 자가 치유: Kubernetes는 실패한 컨테이너를 다시 시작하거나 교체하며, 사용자 정의 건강 확인에 응답하지 않는 컨테이너를 종료하고 이를 클라이언트에 제공 준비가 될 때까지 공개하지 않습니다.
 - 수평 스케일링: Kubernetes는 CPU 사용률 또는 기타 메트릭에 따라 응용 프로그램을 자동으로 확장하거나 축소할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DockerFile을 사용하여 애플리케이션 코드에서 이미지를 생성하는 다음 기사를 기대해주세요!

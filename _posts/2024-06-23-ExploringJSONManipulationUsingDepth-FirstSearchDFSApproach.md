@@ -3,13 +3,12 @@ title: "깊이 우선 탐색DFS 방법으로 JSON 조작 탐구하기"
 description: ""
 coverImage: "/assets/img/2024-06-23-ExploringJSONManipulationUsingDepth-FirstSearchDFSApproach_0.png"
 date: 2024-06-23 20:33
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ExploringJSONManipulationUsingDepth-FirstSearchDFSApproach_0.png
 tag: Tech
 originalTitle: "Exploring JSON Manipulation Using Depth-First Search (DFS) Approach"
 link: "https://medium.com/@yatharthmishra01/title-exploring-json-manipulation-using-depth-first-search-dfs-approach-0d2a58285fbe"
 ---
-
 
 ![2024-06-23-ExploringJSONManipulationUsingDepth-FirstSearchDFSApproach_0.png](/assets/img/2024-06-23-ExploringJSONManipulationUsingDepth-FirstSearchDFSApproach_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@yatharthmishra01/title-exploring-json-manipulation-us
 
 # 문제 이해하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 JSON (JavaScript Object Notation)은 컴퓨터 과학에서 사용되는 트리와 유사한 계층 구조와 간결함으로 인해 데이터 교환에 널리 사용됩니다. 문제는 이와 같은 트리 구조 내에서 특정 경로의 값을 동적으로 액세스하고 수정해야 하는 것이 필요했습니다. 예를 들어, 경로 a.b.c에서 '"a": '"b": '"c": 123''를 변환하는 것은 전형적인 JSON 탐색 및 수정을 보여줍니다.
 
@@ -29,7 +39,18 @@ JSON (JavaScript Object Notation)은 컴퓨터 과학에서 사용되는 트리�
 
 JSON의 중첩된 키-값 쌍은 트리에서 노드로 해석될 수 있으며, 객체는 내부 노드를 나타내고 배열은 노드들의 집합을 나타냅니다. 각 노드는 루트에서 리프 노드까지 탐색하는 것과 유사하게 경로를 통해 액세스할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 2. 깊이 우선 탐색 (DFS) 응용
 
@@ -41,7 +62,18 @@ DFS는 기본적인 트리 순회 알고리즘으로, 다음 문제 해결에 �
 
 ## 3. 구현 여정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - JSON 파싱: Java의 org.json과 같은 라이브러리를 활용하여 JSON 객체를 분석하고 조작하는 작업을 원활하게 수행했습니다.
 - 경로 처리: 경로 문자열을 동적으로 분할하고 해석하여 중첩된 객체를 탐색하는 데 활용했습니다.
@@ -87,7 +119,18 @@ public class JsonManipulation {
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DFS를 활용한 JSON 조작 탐구는 이 알고리즘이 JSON과 같은 계층 구조 데이터를 탐색하고 수정하는 다양성을 강조합니다. DFS 원칙을 적용함으로써 우리는 특정 경로를 기반으로 JSON 노드에 동적으로 접근하고 수정하는 작업을 효율적으로 처리했습니다.
 

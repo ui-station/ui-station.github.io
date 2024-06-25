@@ -3,14 +3,12 @@ title: "AWS 서버리스 간편 이해 Application Composer로 그리기"
 description: ""
 coverImage: "/assets/img/2024-06-23-SimplifyingAWSServerlessDrawwithApplicationComposer_0.png"
 date: 2024-06-23 22:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SimplifyingAWSServerlessDrawwithApplicationComposer_0.png
 tag: Tech
 originalTitle: "Simplifying AWS Serverless: Draw with Application Composer"
 link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-application-composer-573c802e23fd"
 ---
-
-
 
 ![Image 1](/assets/img/2024-06-23-SimplifyingAWSServerlessDrawwithApplicationComposer_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 ![Image 2](/assets/img/2024-06-23-SimplifyingAWSServerlessDrawwithApplicationComposer_1.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 포스트는 "Ran The Builder" 웹사이트에서 최초로 게시되었습니다.
 
@@ -31,7 +39,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 과거에는 개발자들이 Helm 차트와 같은 리소스를 빌드하는 구성 파일을 작성하는 것을 피했었습니다 (K8S의 생각에 오글거리곤 합니다), 이는 개발자들 사이에서 이러한 도구들의 채택 속도를 늦추었습니다. 그러나 서버리스와 같은 기술들과 함께 사용되는 최신 도구들인 AWS CDK, SAM과 코드로부터의 인프라스트럭처의 최근 트렌드와 같은 기술들이 등장함에 따라 개발자들은 DevOps 마인드를 수용하고 인프라 소스 코드를 작성하는 데 보다 개방적으로 대해요. 그렇지만 여전히 어려운 일입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오늘은 새로 발견한 옵션 하나를 소개하고 싶어요 — 코드 없이도 자료 다이어그램을 그려서 리소스를 구축하는 방법입니다.
 
@@ -41,7 +60,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 저는 아키텍트로서 서비스 동작을 설명하고 서비스 도메인이 어떻게 연결되는지를 나타내는 고수준 설계를 그리곤 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개발자들은 내 고수준 디자인을 가져와서 서비스의 실제 AWS 서버리스 리소스를 설명하는 저수준 디자인으로 바꿉니다. 우리는 Lucidchart나 Draw.io 같은 다이어그램 도구를 사용해요.
 
@@ -51,7 +81,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 ## 다이어그램은 (거의) 항상 동기화되어 있지 않아요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시간이 지남에 따라 기능이 추가되고 버그가 수정됩니다. 개발자들은 원래 디자인을 변경하며, 일부 디자인 요소는 우선 순위 때문에 제외되고 발전되지 않습니다. 꼼꼼히 작성하고 자랑스러워했던 원래 인프라 다이어그램을 기억하고 계십니까? 지금 실제 서비스 인프라와 동기화되어 있지 않으며 빠르게 가치를 잃고 있습니다.
 
@@ -61,7 +102,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 다행히도 AWS는 이를 자동으로 수행하고 동시에 서비스 인프라를 구축하는 것을 더 직관적이고 재미있게 만들 수 있는 방법을 고안했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그들은 AWS 응용 프로그램 컴포저를 구축함으로써 그를 성취했어요. 이 도구를 사용하면 인프라 다이어그램을 그리고 이를 AWS SAM 또는 CloudFormation 템플릿으로 변환할 수 있어요.
 
@@ -71,7 +123,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 그것은 지난 2023년 3월에 GA(일반 사용 가능)로 출시되었어요. AWS re:invent 2023에서, 저의 주목을 끈 거대한 발표가 있었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 콘솔에서 작업하고 다이어그램을 그리느라 애쓰지 않아도 됩니다. 이제 Visual Studio IDE에서 편안하게 Application Composer를 사용할 수 있어요.
 
@@ -81,7 +144,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 빈 프로젝트를 시작하거나 기존 프로젝트를 불러올 수 있어요. 저는 AWS Lambda Handler 쿡북 템플릿 프로젝트를 불러와서 어떻게 작동하는지 확인해 보기로 했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서비스 다이어그램을 제공합니다 (무엇이 웃긴 게, 인프라와 동기화가 안 맞고 CloudWatch 알람 및 대시보드가 빠져 있어요):
 
@@ -91,8 +165,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 - AWS 툴킷 확장 프로그램을 설치했는지 확인해주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Diagram 3](/assets/img/2024-06-23-SimplifyingAWSServerlessDrawwithApplicationComposer_3.png)
 
@@ -102,8 +186,18 @@ link: "https://medium.com/@isenberg-ran/simplifying-aws-serverless-draw-with-app
 
 ![Diagram 4](/assets/img/2024-06-23-SimplifyingAWSServerlessDrawwithApplicationComposer_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 CRUD API 그룹(API GW, 람다 함수, 두 개의 DynamoDB 테이블), CloudWatch 리소스, 그리고 AppConfig 그룹이 있습니다. 그리고 이 리소스들 사이의 모든 연결도 있습니다.
 
@@ -113,7 +207,18 @@ CRUD API 그룹(API GW, 람다 함수, 두 개의 DynamoDB 테이블), CloudWatc
 
 ## 서버리스 리소스 추가하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새로운 CloudFormation 리소스를 추가하려고 해요. 리소스 검색이 빠르고 훌륭해요; 1000개 이상의 리소스를 추가할 수 있어요. 람다 함수를 선택해보죠. 간편하게 사용할 수 있는 메뉴가 나오는데, 필수 필드와 드롭다운 목록이 모두 제공돼요:
 
@@ -123,7 +228,18 @@ CRUD API 그룹(API GW, 람다 함수, 두 개의 DynamoDB 테이블), CloudWatc
 
 다른 리소스를 추가해보려고 해요, AppConfig 배포를요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-SimplifyingAWSServerlessDrawwithApplicationComposer_6.png" />
 
@@ -133,7 +249,18 @@ CRUD API 그룹(API GW, 람다 함수, 두 개의 DynamoDB 테이블), CloudWatc
 
 ## 자원 연결
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 리소스에서 다른 리소스로 선을 그어서 연결할 수 있어요. 예를 들어 API 게이트웨이를 람다 함수에 연결하고, 특정 함수를 경로의 대상으로 설정할 수 있어요. 굉장히 쉽죠. 하지만 일부 리소스만 지원돼요. SQS 큐를 SNS 주제에 연결하려고 했는데, 아직 지원되지 않는다는 팝업 툴팁이 나왔어요. 지원되면 경험도 매우 간편할 거예요.
 
@@ -143,7 +270,18 @@ CRUD API 그룹(API GW, 람다 함수, 두 개의 DynamoDB 테이블), CloudWatc
 
 그래서 이미 두 가지 제한사항을 이야기했어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 리소스 구성 - 드롭다운 기능이 부족하여 이상적인 사용자 경험은 아니지만 작동할 수 있습니다.
 - 일부 연결해야 하는 리소스를 선으로 연결하는 것이 불가능합니다.
@@ -154,7 +292,18 @@ CRUD API 그룹(API GW, 람다 함수, 두 개의 DynamoDB 테이블), CloudWatc
 
 얻은 다이어그램이 매우 크며 정렬하고 그룹화하는 데 많은 시간이 걸릴 것입니다. 또 다른 제한 사항은 CDK 지원의 부재입니다. 네, 알고 있어요. 적합한 L2 CDK 구조를 생성하는 것이 매우 어려운 일이지만 꿈은 꿀 수 있어요...
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 상기 모든 사항에도 불구하고, 해당 서비스는 밝은 미래를 가지고 있으며, 이러한 제한 사항이 해결되면 내 일상 도구의 일부가 될 것입니다.
 
@@ -164,7 +313,18 @@ IaC 작성보다 경험이 더 좋습니까? 더 직관적이거나 심지어 �
 
 CDK를 대체할 것인가요? 전체 CDK 지원이 있다면 아니요,하지만 문서 작성을 위한 인프라 다이어그램 작성과 같은 사용 사례가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 누구를 위한 것일까요? 이는 저수준 디자인을 그리고 작은 ~ 중간 규모 서비스의 정확한 인프라 다이어그램 표현을 원하는 사람들, 빠르게 프로토타입을 구축하고 싶은 사람들, 물론 기본적인 CloudFormation 또는 SAM을 사용하는 사람들에게 적합합니다. 자원을 구축하는 데 사용하지 않더라도 인프라 다이어그램을 그리는 데 사용하는 것은 의미가 있습니다. 최근에 AWS Lambda Handler Cookbook 문서에 애플리케이션 컴포저 리소스 이미지를 추가했는데, 간단히 생성할 수 있고 서비스 설명이 더 간단해졌기 때문입니다.
 
@@ -174,7 +334,18 @@ CDK를 대체할 것인가요? 전체 CDK 지원이 있다면 아니요,하지�
 
 # 애플리케이션 컴포저 소망목록
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 위시리스트 중 일부만 구현할 수 있다면, Application Composer는 뛰어날 것입니다:
 

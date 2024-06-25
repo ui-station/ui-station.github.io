@@ -3,13 +3,12 @@ title: "Go EP11 Go 명령어 - go get, go mod tidy 등 완벽 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-23-GOEP11GoCommands-gogetgomodtidyetc_0.png"
 date: 2024-06-23 21:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-GOEP11GoCommands-gogetgomodtidyetc_0.png
 tag: Tech
 originalTitle: "GO EP11: Go Commands - go get, go mod tidy, etc"
 link: "https://medium.com/gitconnected/getting-cozy-with-go-commands-go-get-go-mod-tidy-etc-7438cf199460"
 ---
-
 
 <img src="/assets/img/2024-06-23-GOEP11GoCommands-gogetgomodtidyetc_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/gitconnected/getting-cozy-with-go-commands-go-get-go-m
 
 만약 GOROOT, GOPATH, GOCACHE와 같은 환경 변수 뿐만 아니라 빌드 이미지 파이프라인을 가속화하는 방법과 같은 기초적인 Go 환경에 관한 이전 섹션을 읽지 않았다면, 아래 링크를 확인해보세요: GO EP10: GOROOT, GOPATH, GOCACHE
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Go 1.11에서 소개된 모듈 인식 모드에 대해 이야기할 예정이에요. Go 1.13부터는 기본적으로 활성화되는데, 이 모드를 사용하여 프로젝트의 종속성을 관리하는 방법도 함께 알아볼 거에요.
 
@@ -27,7 +37,18 @@ Go 1.11에서 소개된 모듈 인식 모드에 대해 이야기할 예정이에
 
 그리고, 이 모드는 go.sum 파일을 도입하는데요. 이 파일은 모듈의 종속성의 체크섬을 포함하여 무결성을 확인하고 변조를 방지합니다. 다음 이야기에서 더 자세히 다루겠어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # go.mod이란 무엇인가요?
 
@@ -37,7 +58,18 @@ go.mod 파일 또는 go 모듈은 기본적으로 여러 개의 Go 패키지를 
 
 사람들은 종종 이를 "패키지"라고 부르지만, 기술적으로는 "모듈"에 더 가깝습니다. 그래서 패키지를 패치한다고 할 때, 실제로 전체 모듈을 패치하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 go.mod 파일은 무엇을 하는 파일인가요?
 
@@ -50,11 +82,22 @@ go.mod 파일은 무엇을 하는 파일인가요?
 module thisismodulename
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 // 이 모듈에서 패키지를 가져옵니다
-import "thisismodulename/any/package"
+import "thisismodulename/any/package";
 ```
 
 현재 디렉토리에 모듈을 만들거나 초기화하려면 `module-name` 명령어로 go mod init을 사용할 수 있습니다. 물론, 디렉토리가 이전에 모듈이 아니어야 합니다.
@@ -63,7 +106,18 @@ import "thisismodulename/any/package"
 
 # go get: 의존성 관리 (빌드하지 않고 설치하지 않음)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Go에서의 go get 명령은 주 모듈의 go.mod 파일에 있는 모듈 종속성을 업데이트하는 데 사용됩니다. 또한 명령줄에 지정한 패키지를 빌드하고 설치하는 데도 사용됩니다.
 
@@ -73,7 +127,18 @@ go get을 실행하면 어떤 것을 업데이트할지를 사용자가 지정�
 
 go get ./...를 사용하면 패턴은 ./...이며 이는 모든 하위 디렉토리를 나타냅니다. 이 쿼리는 이를 와일드카드 패턴으로 인식하고 현재 디렉토리 및 그 하위 디렉토리에 있는 모든 패키지로 해석합니다. 당연히 주 모듈 내에서 이루어집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## go get 작동 방식
 
@@ -87,7 +152,18 @@ go get을 실행하면 처음으로 업데이트해야 할 모듈을 결정합�
 - 커밋 해시 또는 리비전 @abcdef: 해당 특정 커밋 사용.
 - 최신 버전 @latest 또는 최신 패치 버전 @patch: 가장 최신 버전 또는 패치를 가져옵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한번 go get이 당신이 제공한 인수를 기반으로 사용할 모듈 및 버전을 찾아내면, 당신의 프로젝트의 go.mod 파일을 업데이트하여 의존성에 대한 최소 요구 버전을 추적합니다. 새로운 의존성이 더 높은 버전이 필요한 경우, go get은 또한 이를 반영하도록 자동으로 go.mod 파일을 업데이트합니다.
 
@@ -97,7 +173,18 @@ go get을 실행하면 처음으로 업데이트해야 할 모듈을 결정합�
 
 Go는 의존성을 처리하고 버전 충돌을 해결하기 위해 Minimal Version Selection (MVS)라는 것을 사용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MVS는 복잡해 보이지만, 이해하기 쉽게 말하면 다른 모듈에서 모든 요구 사항을 충족하는 각 모듈의 가장 낮은 버전을 선택합니다. 이 방법을 통해 의존성을 가능한 한 최소화하면서 관련된 모든 것의 요구 사항을 충족시킵니다.
 
@@ -109,8 +196,18 @@ MVS는 복잡해 보이지만, 이해하기 쉽게 말하면 다른 모듈에서
 
 Go는 C의 어떤 버전을 사용할지 어떻게 결정할까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지1](/assets/img/2024-06-23-GOEP11GoCommands-gogetgomodtidyetc_1.png)
 
@@ -120,8 +217,18 @@ MVS는 모듈 A와 B에서 모듈 C의 모든 요구 사항을 확인합니다. 
 
 ![이미지2](/assets/img/2024-06-23-GOEP11GoCommands-gogetgomodtidyetc_2.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 호환성은 Go 모듈이 사용하는 Semantic Versioning (semver)으로 관리됩니다.
 
@@ -131,11 +238,22 @@ MVS는 모듈 A와 B에서 모듈 C의 모든 요구 사항을 확인합니다. 
 
 모듈이 major 버전 2 이상이 되면, 경로에 major 버전 번호가 포함됩니다 (예: /v2 또는 /v3):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-github.com/user/project/v2
-github.com/user/project/v3
+github.com / user / project / v2;
+github.com / user / project / v3;
 ```
 
 다른 메이저 버전을 가진 모듈은 별개의 모듈로 처리됩니다. 그래서 동일한 프로젝트에서 C@2.3.2와 C@3.0.0을 함께 사용할 수 있습니다.
@@ -155,7 +273,18 @@ require (
 )
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 // 간접 코멘트는 프로젝트가 C 모듈을 직접적으로 가져오지 않는다는 것을 의미합니다. A 또는 B가 필요하기 때문에 그 모듈이 존재합니다.
 
@@ -165,7 +294,18 @@ require (
 
 ## go get .
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `go get .`이나 `go get ./...`을 사용하면 현재 디렉토리나 하위 디렉토리에 있는 모든 누락된 종속성을 찾아 go.mod 파일에 추가합니다.
 
@@ -175,7 +315,18 @@ require (
 
 ## go get -u .
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `go get .` 명령에 `-u` 플래그를 사용하면 현재 디렉토리에서 기존 종속성을 가장 최신의 마이너 또는 패치 버전으로 업데이트합니다. 기억해 주세요, 새로운 주 버전으로는 업데이트되지 않는다는 것을 주의하세요. 왜냐하면 이것은 다른 모듈로 취급됩니다.
 
@@ -185,19 +336,39 @@ require (
 
 ## go get github.com/user/project
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 명령은 모듈 github.com/user/project을 다운로드하고 go.mod 파일에 추가합니다. 이미 명시된 경우, 최신 소규모 또는 패치 버전으로 모듈을 업데이트합니다.
 
 기본적으로 버전을 지정하지 않거나 (또는 버전 쿼리 접미사를 지정하지 않는 경우) 최신 버전으로 업그레이드하려고 한다고 가정하며, 마치 go get github.com/user/project@upgrade를 사용하는 것과 같습니다.
 
-
 go get github.com/user/project/package
-
 
 패키지 자체가 모듈이 아닌 경우에도 go get은 해당 패키지를 제공하는 모듈을 업데이트합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `go get github.com/user/project`을 입력하면 github.com/user/project에서 패키지를 가져옵니다. 숨겨진 `@upgrade` 동작을 사용하여 패키지를 포함하는 모듈의 최신 버전을 가져옵니다.
 
@@ -207,7 +378,18 @@ go get github.com/user/project/package
 
 # go install: 패키지 빌드 및 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 패키지를 빌드하고 설치하는 것은 무엇을 의미할까요?
 
@@ -219,7 +401,18 @@ $ go install golang.org/x/tools/gopls@latest
 
 이 명령을 실행하고 $GOBIN 폴더를 확인하면, gopls라는 실행 파일이 있을 것입니다. 그리고 $GOBIN이 $PATH에 있는 경우 터미널에서 gopls를 실행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 $ gopls 버전
@@ -232,7 +425,18 @@ Go install 명령어는 누락된 종속성을 다운로드하고 현재 디렉�
 
 그래서 go install과 go get의 차이점은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 go install은 패키지를 빌드하고 설치하는 데 사용되고, go get은 종속성을 관리하는 데 사용됩니다. 예전 Go 버전에서는 go get이 go.mod 파일을 업데이트한 후 패키지를 빌드하고 $GOPATH/bin에 설치했던 것으로 혼란스러운 경우가 많습니다.
 
@@ -242,7 +446,18 @@ go install은 패키지를 빌드하고 설치하는 데 사용되고, go get은
 
 go mod 명령어 패밀리는 주 모듈과 그 종속성을 관리하는 데 사용됩니다. 이러한 명령어는 프로젝트의 go.mod 파일을 만들고 편집하며 유지하는 데 도움이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## go mod init
 
@@ -254,7 +469,18 @@ go mod init github.com/user/project
 
 이 명령을 실행한 후에는 현재 디렉토리에 go.mod 파일이 생성되고 그 외에는 할 일이 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작은 것 하나만 바꿔드릴게요! 모듈 이름이나 경로는 선택 사항이에요. Go는 기존 코드, 구성 파일 또는 현재 디렉토리 구조를 기반으로 자주 이를 알아낼 수 있어요:
 
@@ -264,7 +490,18 @@ go mod init github.com/user/project
 
 이것은 어떻게 작동하나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 모든 빌드 태그가 활성화된 것처럼 메인 모듈 및 해당 종속 항목의 모든 패키지를 재귀적으로 확인합니다 (// +build ignore를 제외하고).
 - 메인 모듈의 패키지에서 사용하는 모든 모듈이 go.mod 파일에 명시되어 있는지 확인합니다. 모듈이 명시되어 있지 않으면 최신 버전을 찾아 다운로드합니다.
@@ -277,7 +514,18 @@ go get과 달리 go mod tidy는 종속성을 최신 버전으로 업데이트하
 
 ## go mod download
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 $GOPATH/pkg/mod 디렉토리에 대해 읽어보셨다면, go mod download은 go.mod 파일에 나열된 모든 종속성(직접 및 간접)을 다운로드하여 이 캐시를 채우는 명령어입니다.
 
@@ -287,7 +535,18 @@ go mod tidy가 하는 것처럼 소스 코드를 살펴볼 필요가 없습니�
 
 ## go mod why
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 go.mod 파일에 패키지가 있는 이유를 궁금해 한다면, go mod why 명령어를 사용하여 알 수 있어요.
 
@@ -304,7 +563,18 @@ go mod why 명령어는 주요 모듈에서 해당 패키지까지의 가장 짧
 
 이 예제에서 myproject/module/logic은 주요 모듈에서 가져오는 패키지로, github.com/user/anotherproject를 가져오고, 여기서 github.com/user/project를 가져옵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 go mod 패밀리에 다른 명령어도 있지만 자주 사용되지는 않아요. 그래서 그냥 간략하게 살펴볼게요.
 
@@ -314,7 +584,18 @@ go mod 패밀리에 다른 명령어도 있지만 자주 사용되지는 않아�
 
 ### go mod graph
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `go mod graph` 명령어를 사용하면 프로젝트의 의존성을 이해할 수 있습니다. 해당 명령어는 모듈 요구 사항 그래프를 출력합니다. 각 모듈 버전이 어떻게 해당 모듈이 의존하는 모듈의 버전과 연결되어 있는지 보여줍니다.
 
@@ -324,6 +605,17 @@ go mod 패밀리에 다른 명령어도 있지만 자주 사용되지는 않아�
 
 다음에 판매자에 대해 자세히 알아보겠지만, 여기에 간단한 개요가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인터넷에서 종속성을 다운로드하고 $GOPATH/pkg/mod에 캐시하는 대신에, go mod vendor를 사용하면 종속성을 다운로드하여 프로젝트의 루트 폴더에 바로 저장할 수 있습니다. 이렇게 하면 프로젝트를 더 이동하기 쉽게 만들 수 있습니다.

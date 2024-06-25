@@ -3,13 +3,12 @@ title: "Jetpack Compose의 공식 Pager 컴포저블 탐구하기"
 description: ""
 coverImage: "/assets/img/2024-06-23-ExploringtheOfficialPagerComposableinJetpackCompose_0.png"
 date: 2024-06-23 21:00
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ExploringtheOfficialPagerComposableinJetpackCompose_0.png
 tag: Tech
 originalTitle: "Exploring the Official Pager Composable in Jetpack Compose"
 link: "https://medium.com/@domen.lanisnik/exploring-the-official-pager-in-compose-8c2698c49a98"
 ---
-
 
 1.4 버전이 출시되면서 Jetpack Compose가 공식적으로 페이징 레이아웃을 지원하게 되었습니다. 뷰 기반 시스템에서는 ViewPager 위젯 형태로 오랫동안 사용되어 왔지만, 개발자들은 Compose에서 유사한 효과를 얻기 위해 Accompanist 라이브러리 구현을 사용해야 했습니다.
 
@@ -19,8 +18,18 @@ link: "https://medium.com/@domen.lanisnik/exploring-the-official-pager-in-compos
 
 HorizontalPager는 사용자 또는 프로그래밍 방식으로 좌우로 수평 스크롤할 수 있는 컴포저블입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:800/1*AP2jKexaHqpaCoDt9zPh3Q.gif)
 
@@ -30,8 +39,18 @@ VerticalPager는 사용자 또는 프로그래밍적으로 수직으로 위아�
 
 ![image](https://miro.medium.com/v2/resize:fit:800/1*CMRnteybuokM-9AkJUqxRA.gif)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 더 자세히 살펴보기
 
@@ -41,7 +60,18 @@ VerticalPager는 사용자 또는 프로그래밍적으로 수직으로 위아�
 
 pageCount를 제외한 모든 인자는 선택적입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - pageCount: 페이저에서 표시할 총 페이지/아이템 수입니다.
 - pageSize: 페이저 내의 페이지 크기를 정의합니다.
@@ -59,8 +89,18 @@ pageCount를 제외한 모든 인자는 선택적입니다:
 
 pageSize: PageSize 인수를 사용하여 페이지 크기를 제어할 수 있습니다. 기본적으로 이 값은 PageSize.Fill로 설정되어 있어 HorizontalPager의 경우 전체 너비 또는 VerticalPager의 경우 전체 높이를 차지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:800/1*XeEa09R4_NnVH-yk0RA9AA.gif)
 
@@ -70,9 +110,18 @@ pageSize: PageSize 인수를 사용하여 페이지 크기를 제어할 수 있�
 
 가끔은 사용자 정의 계산에 따라 크기를 정의해야 할 때가 있습니다. 이를 위해 PageSize 인터페이스를 확장하고 calculateMainAxisPageSize(availableSpace: Int, pageSpacing: Int) 함수를 구현할 수 있습니다. 아래 예제에서는 사용 가능한 너비의 80%를 차지하는 HorizontalPager가 있고, 페이지 크기를 사용 가능한 너비의 50%로 설정합니다. 이렇게 하면 한 번에 두 페이지를 볼 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:800/1*BS5XgH4dP9-4Il5SFaxqVA.gif)
 
@@ -82,9 +131,18 @@ pageSpacing: Dp 인수를 사용하여 페이지 사이에 사용할 공간의 �
 
 ![Image](https://miro.medium.com/v2/resize:fit:800/1*3aTc7YErEY0MKqgnbY0ijg.gif)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:800/1*hwZ22hqTVXFfILxsNzDM_w.gif)
 
@@ -94,9 +152,18 @@ contentPadding: PaddingValues 인수를 사용하면 페이저 안의 페이지 
 
 여기서 start 및 end 속성에 동일한 패딩을 설정하여 페이지를 페이저 중앙에 배치합니다. 또한 HorizontalPager의 경우 상단 및 하단에 동일한 수직 패딩을 적용합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:800/1*MMgcNXPLncPODVgMQjgfpg.gif)
 
@@ -106,9 +173,18 @@ When you apply the start padding alone, the pages are shifted towards the end, c
 
 When you apply the end padding alone, the pages are shifted towards the start, causing a portion of the next page to be visible.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:800/1*LiD4FxaDr2XQLp8nvItQRA.gif)
 
@@ -118,8 +194,18 @@ When you apply the end padding alone, the pages are shifted towards the start, c
 
 ![image](/assets/img/2024-06-23-ExploringtheOfficialPagerComposableinJetpackCompose_0.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## BeyondBoundsPageCount
 
@@ -129,7 +215,18 @@ When you apply the end padding alone, the pages are shifted towards the start, c
 
 ![이미지](https://miro.medium.com/v2/resize:fit:800/1*NDlSiw0m8Ts87Rgxu_yFNA.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 페이저가 가장 높은 항목의 높이에 맞춰져야 하는 경우 beyondBoundsPageCount = pageCount로 지정할 수 있습니다.
 
@@ -139,7 +236,18 @@ When you apply the end padding alone, the pages are shifted towards the start, c
 
 ## 페이지 상태 변경 관찰
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가끔 페이지 변경에 반응하고 싶을 때가 있습니다. 분석 이벤트를 보내거나 어떤 로직을 발동하거나 다른 화면으로 이동하고 싶은 경우가 있습니다. 이를 위해 LaunchedEffect 내에서 PagerState 객체의 네 가지 속성을 snapshotFlowOf를 사용하여 관찰할 수 있습니다:
 
@@ -152,8 +260,18 @@ When you apply the end padding alone, the pages are shifted towards the start, c
 
 페이저와 함께 보통 페이지 인디케이터를 표시하여 현재 어떤 페이지를 보고 있는지와 전체 페이지 수를 표시하고 싶어합니다. 공식 페이지 인디케이터 컴포저블은 없지만, 상당히 간단히 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](https://miro.medium.com/v2/resize:fit:800/1*VCFpbnnn1juWCifnTFF3Pg.gif)
 
@@ -163,8 +281,18 @@ When you apply the end padding alone, the pages are shifted towards the start, c
 
 현재 스크롤 오프셋에 따라 현재 선택된 페이지 표시기의 크기와 색상을 애니메이션하는 수평 페이저 표시기 예시를 제공합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 특정 페이지로 스크롤하기
 
@@ -174,7 +302,18 @@ Pager에서 특정 페이지로 프로그래밍적으로 스크롤할 수 있습
 
 ## 탭과 함께 Pager 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자주 탭을 사용하는데 페이저와 함께 사용해야 할 때가 있습니다. 선택된 탭을 표시하고 스크롤하거나 특정 탭을 클릭하여 선택할 수 있도록 합니다. 이를 위해 TabRow 컴포저블과 HorizontalPager를 함께 사용하여 이를 구현할 수 있습니다.
 
@@ -184,7 +323,18 @@ TabRow 컴포저블을 생성하고 pagerState.currentPage를 selectedTabIndex �
 
 이렇게 설정하면 페이저를 스크롤하면 탭이 선택됩니다. 탭을 클릭하여 페이지를 선택하는 기능도 지원하려면 coroutine 스코프 내에서 pagerState.animateScrollToPage(selectedTabIndex) 함수를 호출해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 스크롤 동작 사용자 정의
 
@@ -194,7 +344,18 @@ pagerSnapDistance를 사용하여 플링 제스처가 얼마나 많은 페이지
 
 ![이미지](https://miro.medium.com/v2/resize:fit:800/1*J3ipnv3bHlSPmzUNZsbDfA.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 lowVelocityAnimationSpec은 스크롤이나 천천히 움직일 때 사용되는 애니메이션을 정의합니다. 예제에서는 이를 5초로 설정하여, 천천히 움직인 후 다음 페이지를 선택하는 애니메이션이 5초 동안 진행됩니다.
 
@@ -204,7 +365,18 @@ snapAnimationSpec은 최종적으로 포지션에 스냅되는데 사용되는 �
 
 ![이미지](https://miro.medium.com/v2/resize:fit:800/1*UzWgACMOPRWIqSihQhrm5Q.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 반주자 페이저 이전
 
@@ -214,7 +386,18 @@ snapAnimationSpec은 최종적으로 포지션에 스냅되는데 사용되는 �
 
 ## 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Jetpack Compose의 최신 버전이 릴리스되었습니다. 이 버전에는 사용하기 쉽고 사용자 정의할 수 있는 새로운 공식 Pager composable이 포함되어 있습니다.
 
@@ -224,7 +407,18 @@ Jetpack Compose의 최신 버전이 릴리스되었습니다. 이 버전에는 �
 
 ## 참고:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 공식 문서: https://developer.android.com/jetpack/compose/layouts/pager
 - Accompanist pager 라이브러리: https://google.github.io/accompanist/pager/

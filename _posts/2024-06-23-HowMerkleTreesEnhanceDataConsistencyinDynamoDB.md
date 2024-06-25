@@ -3,14 +3,12 @@ title: "DynamoDB에서 Merkle Tree로 데이터 일관성 강화하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-HowMerkleTreesEnhanceDataConsistencyinDynamoDB_0.png"
 date: 2024-06-23 22:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HowMerkleTreesEnhanceDataConsistencyinDynamoDB_0.png
 tag: Tech
 originalTitle: "How Merkle Trees Enhance Data Consistency in DynamoDB"
 link: "https://medium.com/@extremelysunnyyk/how-merkle-trees-enhance-data-consistency-in-dynamodb-abdf215f5f28"
 ---
-
-
 
 ![Merkle Trees](/assets/img/2024-06-23-HowMerkleTreesEnhanceDataConsistencyinDynamoDB_0.png)
 
@@ -20,9 +18,18 @@ AWS의 완전 관리형 NoSQL 데이터베이스 서비스인 DynamoDB는 고가
 
 DynamoDB에 데이터를 저장할 때 데이터는 내결함성을 보장하기 위해 여러 노드에 복제됩니다. 그러나 이 복제는 데이터가 한 노드에서 다른 노드로 복사되어야 할 때 특히 도전적입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image 1](/assets/img/2024-06-23-HowMerkleTreesEnhanceDataConsistencyinDynamoDB_1.png)
 
@@ -32,9 +39,18 @@ DynamoDB에 데이터를 저장할 때 데이터는 내결함성을 보장하기
 
 ![Image 2](/assets/img/2024-06-23-HowMerkleTreesEnhanceDataConsistencyinDynamoDB_2.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-HowMerkleTreesEnhanceDataConsistencyinDynamoDB_3.png)
 
@@ -44,8 +60,18 @@ DynamoDB에 데이터를 저장할 때 데이터는 내결함성을 보장하기
 
 이를 처리하기 위해 데이터 범위가 여러 번 복사됩니다. 소스와 대상 노드 간에 변경이 없을 때 데이터가 일관성이 있다고 선언됩니다. 그러나 이 프로세스는 서비스 중단을 최소화하기 위해 가능한 빨리 이루어져야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 도전 과제
 
@@ -56,7 +82,18 @@ DynamoDB에 데이터를 저장할 때 데이터는 내결함성을 보장하기
 
 Merkle Trees는 복제 중 데이터 일관성 문제에 대한 효율적인 해결책을 제공합니다. 이렇게 해요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Merkle Trees 동작 방식
 
@@ -66,7 +103,18 @@ Merkle Tree는 각 리프 노드가 데이터 블록의 해시를 포함하고, 
 
 # DynamoDB에서 Merkle Trees의 이점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 효율적인 데이터 비교: Merkle Trees는 데이터 노드의 차이에 기반하여 루트 해시의 변경을 감지할 수 있습니다. Merkle 해시를 비교함으로써 DynamoDB는 불일치를 빠르게 식별할 수 있습니다.
 - 시간 복잡도 감소: Merkle Tree를 통해 일치하지 않는 데이터를 찾는 것은 각 노드를 확인하는 선형 시간 복잡도인 O(n)에 비해 로그 시간 복잡도인 O(log(n))를 갖습니다. 이로써 프로세스가 크게 빨라집니다.
@@ -77,7 +125,18 @@ Merkle Tree는 각 리프 노드가 데이터 블록의 해시를 포함하고, 
 
 새 노드로 데이터를 복사할 때, 문제는 복사 프로세스 중에 변경이 발생할 수 있다는 점에 있습니다. Merkle Trees를 통해 DynamoDB는 이러한 불일치를 효율적으로 식별하고 해결할 수 있습니다. 소스 노드와 대상 노드의 Merkle 해시를 비교함으로써 DynamoDB는 차이점을 정확히 파악하고 필요한 데이터 블록만 업데이트할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 방법은 데이터 이관 프로세스를 가속화시키고 대상 노드가 신속하게 일관된 상태에 도달하도록 보장하기 위해 필요한 복사 반복 횟수를 최소화합니다.
 
@@ -87,7 +146,18 @@ Merkle Trees는 DynamoDB에서 데이터 복제 및 일관성의 도전에 대�
 
 DynamoDB에서 Merkle Trees를 사용하는 주요 장점은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 효율적인 데이터 비교: 데이터 노드간의 차이를 기반으로 루트 해시의 변경을 감지하는 기능은 불일치를 신속하게 식별할 수 있습니다.
 - 시간 복잡도 감소: Merkle Tree를 탐색하는 데 로그 시간 복잡도를 가지고 있어 DynamoDB는 선형 방법보다 빠르게 불일치를 찾아 해결할 수 있습니다.

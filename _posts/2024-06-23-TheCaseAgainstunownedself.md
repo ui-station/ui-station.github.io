@@ -3,14 +3,12 @@ title: "Unowned self 개념의 문제점"
 description: ""
 coverImage: "/assets/img/2024-06-23-TheCaseAgainstunownedself_0.png"
 date: 2024-06-23 23:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TheCaseAgainstunownedself_0.png
 tag: Tech
 originalTitle: "The Case Against [unowned self]"
 link: "https://medium.com/gitconnected/the-case-against-unowned-self-b34103618684"
 ---
-
-
 
 ![2024-06-23-TheCaseAgainstunownedself_0.png](/assets/img/2024-06-23-TheCaseAgainstunownedself_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/gitconnected/the-case-against-unowned-self-b3410361868
 
 2011년, Apple은 ARC(자동 참조 카운트)를 소개했으며, 이를 통해 컴파일러가 이러한 보일러플레이트 메모리 관리 코드를 자동으로 작성하도록 하여, 축적된 개발 시간을 절약했습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ARC는 다양한 종류의 참조 개념을 소개했습니다.
 
@@ -31,7 +39,18 @@ ARC는 다양한 종류의 참조 개념을 소개했습니다.
 
 강한 참조를 만드는 동안 힙 객체의 참조 카운트(또는 refCount)가 증가하고, refCount가 0이 되면 객체가 할당 해제되어 힙에 있는 메모리가 해제됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 약한 참조
 
@@ -41,13 +60,24 @@ ARC는 다양한 종류의 참조 개념을 소개했습니다.
 
 이 작동방식을 다루기 위해 약한 참조는 항상 optional로 래핑되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 // StoreViewModel.swift
 
 func loadStorefront() {
-    api.fetchInventory() { [weak self] inventory in 
+    api.fetchInventory() { [weak self] inventory in
         self?.inventory = inventory
     }
 }
@@ -59,8 +89,18 @@ func loadStorefront() {
 
 리테인 사이클을 방지하기 위해 Swift에서 세 번째 종류의 참조인 unowned가 소개되었습니다. 이는 약한 참조와 유사하게 동작하지만 참조 대상 객체의 메모리가 항상 해당 객체를 참조하는 unowned 포인터보다 오래 존속할 것으로 가정합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 // StoreSingleton.swift
@@ -70,7 +110,7 @@ static let sharedInstance = StoreSingleton()
 private init() {}
 
 func configureStorefront() {
-    api.fetchInventory() { [unowned self] inventory in 
+    api.fetchInventory() { [unowned self] inventory in
         self.inventory = inventory
     }
 }
@@ -84,7 +124,18 @@ func configureStorefront() {
 - unowned 참조는 힙 객체에 사이드 테이블을 만들지 않기 때문에 더 적은 메타데이터를 저장합니다.
 - 약한 참조가 가리키는 메모리에 액세스하는 경우 포인터 간의 추가 점프 또는 간접 레이어가 하나 더 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 성능이 좋다고 해도 이에는 한 가지 제약 사항이 있습니다: 만약 수명을 잘못 지정하고 클로저나 프로퍼티가 weak 참조보다 더 오래 존속된다면, 앱이 크래시할 수 있습니다.
 
@@ -94,7 +145,18 @@ func configureStorefront() {
 
 제 블로그를 읽고 있다면, 아마 Swift에 대해 알고 있는 분일 것입니다. 하지만 당신의 팀원들이 모두 그렇다고 확신할 수 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 금요일 오후 5시에 수행하는 모든 코드 리뷰가 'unowned' 키워드를 발견할 때마다 개체 소멸로 이어지는 많은 가지 코드 경로를 이해하는 데 신중하다는 것을 확신하실 수 있나요?
 
@@ -104,7 +166,18 @@ func configureStorefront() {
 
 우리는 'unowned'의 위험을 이해합니다. 약한 참조와 비교했을 때 이점에 대해 이야기해봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 성능에 관한 이야기예요.
 
@@ -114,7 +187,18 @@ func configureStorefront() {
 
 이게 작은 비트들의 소수라는 느낌이 드시나요? 그렇게 생각하시면 맞아요. 추가 메모리량이 극히 소량이죠. 사실상 런타임은 약한 참조를 미리 nil 처리하려고 deinit에 추가 작업이 필요하지 않아요. 약한 참조가 폐기될 때까지 가벼운 사이드 테이블이 메모리에 남아 있어 힙 객체의 라이프사이클 상태를 체크해 nil 또는 객체를 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에는 약간의 오버헤드가 있습니다. 약한 참조는 이 쪽 테이블을 가리키고, 다시 이를 통해 실제 힙 객체를 가리킵니다. 이 간접 참조 때문에 약한 참조에 약간의 오버헤드가 추가되고, 비싼 CPU 캐시 미스가 발생할 위험이 있습니다.
 
@@ -124,7 +208,18 @@ func configureStorefront() {
 
 Swift 소스를 살펴보며 약한 참조와 언올드 참조의 구현을 이해하면, 언올드를 사용하는 이점이 적고, 치명적인 오류를 발생시킬 위험 때문에 이 성능 이점이 가치가 없는 경우가 많다는 것이 분명해집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나, 컴퓨터 과학에서 모든 것은 트레이드오프에 관한 것이며, 이런 경우에는 트레이드오프가 합리적인 경우가 있습니다.
 
@@ -136,7 +231,18 @@ Swift 소스를 살펴보며 약한 참조와 언올드 참조의 구현을 이�
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ARC에서 잠재 쓰레기 참조 문제를 방지하는 데 기여하는 비소유 참조(unowned references)는 런타임 성능 향상의 조각을 제공하지만 잘못 사용하면 충돌 위험이 따릅니다.
 
@@ -144,4 +250,4 @@ ARC에서 잠재 쓰레기 참조 문제를 방지하는 데 기여하는 비소
 
 [weak self]를 계속 사용하고 unowned는 예외적인 경우로 취급해 주세요. 이는 잘못 사용하면 예외를 받아들일 수 있는 경우라는 의미입니다.
 
-간단히 말해, 코드에서 unowned를 사용할 만큼 자신감이 있다면, 그냥 unowned(unsafe)를 사용하세요. 약간 더 성능적으로 우세합니다*.
+간단히 말해, 코드에서 unowned를 사용할 만큼 자신감이 있다면, 그냥 unowned(unsafe)를 사용하세요. 약간 더 성능적으로 우세합니다\*.

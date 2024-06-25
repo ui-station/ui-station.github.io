@@ -3,13 +3,12 @@ title: "Docker Compose를 사용한 로컬 MongoDB Replica Set 설정 가이드 
 description: ""
 coverImage: "/assets/img/2024-06-23-TheonlylocalMongoDBreplicasetwithDockerComposeguideyoulleverneed_0.png"
 date: 2024-06-23 22:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TheonlylocalMongoDBreplicasetwithDockerComposeguideyoulleverneed_0.png
 tag: Tech
 originalTitle: "The only local MongoDB replica set with Docker Compose guide you’ll ever need!"
 link: "https://medium.com/workleap/the-only-local-mongodb-replica-set-with-docker-compose-guide-youll-ever-need-2f0b74dd8384"
 ---
-
 
 ![이미지](/assets/img/2024-06-23-TheonlylocalMongoDBreplicasetwithDockerComposeguideyoulleverneed_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/workleap/the-only-local-mongodb-replica-set-with-docke
 
 첫 번째 설정은 몇 초만에 MongoDB 단일 노드 레플리카 세트를 실행할 수 있는 준비된 Docker Compose 파일입니다. 클라우드 환경에서는 고가용성과 오류 허용성을 보장하기 위해 복수 노드가 필요할 것입니다. 그러나 로컬 개발에는 단일 노드 레플리카 세트가 충분하며 트랜잭션 및 변경 스트림에 액세스할 수 있습니다. 이는 로컬에서 MongoDB 인스턴스를 실행하는 데 필요한 CPU 및 메모리 리소스를 줄여 Google Chrome을 더 행복하게 만들어줍니다. rs0라는 이름의 단일 노드 레플리카 세트를 실행하는 docker-compose.yml 파일은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 version: "3.8"
@@ -54,8 +64,18 @@ healthcheck 기능은 우리의 설정에서 레플리카 셋을 초기화하기
 
 여기서 rs.status()를 사용한 이유는 레플리카 셋이 초기화되지 않았을 때 예외를 throw하기 때문에, 레플리카 셋이 초기화될 때까지 rs.initiate()를 호출하기에 편리합니다. 그 후에는 rs.status()를 주기적으로 호출하는 것은 부담이 되지 않습니다. 또한 여기서 healthcheck가 의도한 대로 작동하고 있다는 점에 유의하십시오. 왜냐하면 우리는 bash 명령이 처음으로 레플리카 셋을 초기화하거나 레플리카 셋이 이미 초기화되어 있는 경우에만 성공적인 종료 코드를 리턴할 것으로 기대하고 있기 때문입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로, 우리는 mongo1_data라는 Docker 볼륨에 데이터를 영속화합니다. 이것은 컨테이너가 중지될 때 데이터가 손실되지 않도록 하는 최선의 방법입니다. 또 다른 볼륨인 mongo1_config은 복제 세트 구성을 영속화하는 데 사용됩니다.
 
@@ -67,7 +87,18 @@ healthcheck 기능은 우리의 설정에서 레플리카 셋을 초기화하기
 mongodb://127.0.0.1:27017/?replicaSet=rs0
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 쓰림 노드 복제본 설정
 
@@ -128,7 +159,18 @@ volumes:
 
 이 구성에서 기본 노드를 중지하고 보조 노드가 새로운 기본 노드를 선택하는 방식을 확인할 수 있습니다. 이 설정에서 mongo1 컨테이너에는 다른 두 컨테이너보다 약간 더 높은 우선순위가 부여됩니다. 이는 복제본 세트가 완전히 기능할 때 mongo1 컨테이너가 기본 노드로 선출되도록 하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보조 노드 중 하나를 중지하고 레플리카 세트가 계속 작동하는지 확인해 볼 수도 있어요. 모든 노드를 중지해 보고 레플리카 세트가 작동을 멈추는지도 확인할 수 있어요. 이는 내결함 허용성과 고가용성을 실험하는 좋은 방법이에요. 레플리카 세트 상태를 쿼리하고 어느 노드가 주 노드인지 확인하려면 rs.status() 몽고 쉘 명령어를 사용하세요.
 
@@ -140,7 +182,18 @@ volumes:
 mongodb://127.0.0.1:27017,127.0.0.1:27018,127.0.0.1:27019/?replicaSet=rs0
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 연결 문제 해결하기
 
@@ -148,9 +201,20 @@ mongodb://127.0.0.1:27017,127.0.0.1:27018,127.0.0.1:27019/?replicaSet=rs0
 
 만약 MongoDB 복제본 세트에 연결하는 데 문제가 있다면 Docker가 실행 중인지 확인해주세요. 또한 host.docker.internal 호스트명이 호스트 머신의 IP 주소로 해석될 수 있도록도 확인해주세요.
 
-Windows에서는 호스트 파일에 *.docker.internal 호스트명을 자동으로 추가하는 설정이 있습니다.
+Windows에서는 호스트 파일에 \*.docker.internal 호스트명을 자동으로 추가하는 설정이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Linux에서 host.docker.internal을 해결할 수 없는 경우, host.docker.internal을 IP 주소 127.17.0.1로 매핑하기 위해 /etc/hosts 파일에 한 줄을 추가해야 합니다.
 
@@ -162,6 +226,17 @@ Linux에서 host.docker.internal을 해결할 수 없는 경우, host.docker.int
 docker compose exec mongo1 mongosh --port 27017 --quiet --eval "rs.initiate({...})" --json relaxed
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 docker-compose.yml 파일을 사용할 모든 개발자 여러분께서는 적어도 한 번은 이 작업을 기억해야 합니다.

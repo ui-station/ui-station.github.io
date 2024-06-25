@@ -3,13 +3,12 @@ title: "가장 이상한 잊혀진 레고 게임"
 description: ""
 coverImage: "/assets/img/2024-06-23-TheCoolestForgottenLegoGameIsSoWeird_0.png"
 date: 2024-06-23 22:13
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TheCoolestForgottenLegoGameIsSoWeird_0.png
 tag: Tech
 originalTitle: "The Coolest Forgotten Lego Game Is So Weird"
 link: "https://medium.com/@xander51/the-coolest-forgotten-lego-game-is-so-weird-bb3a86b81898"
 ---
-
 
 ![이미지](/assets/img/2024-06-23-TheCoolestForgottenLegoGameIsSoWeird_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@xander51/the-coolest-forgotten-lego-game-is-so-weird-
 
 그 성공적인 공식적인 액션 게임의 연속과 거대한 오픈 월드 스타 워즈 모험 사이에, 2019년에는 레고 무비 2 비디오게임이 출시되었습니다. 표면상 이것은 영화를 인용한 레벨을 통해 단순히 놀 수 있는 게임으로 보일 수 있지만, 실제로는 Minecraft와 90년대 후반 슈퍼 마리오 64의 성공 이후에 출시된 3D 플랫포머 게임과 이상하게 결합된 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 TT Games는 Lego Worlds로 한 번 더 Minecraft를 모방해보기도 했습니다. 그것은 유명한 블록 건설 게임을 뻔뻔스럽게 복제한 것으로, 건설 도구와 생태 지대뿐만 아니라 일부 경쾌한 플랫포밍도 제공했습니다. 그것은 직접 영감받은 것보다 훨씬 더 나은 점은 없었지만, 특히 친구와 함께 할 때는 어떤 즐거움이 있는 것이었습니다.
 
@@ -29,7 +39,18 @@ TT Games는 Lego Worlds로 한 번 더 Minecraft를 모방해보기도 했습니
 
 ![image](/assets/img/2024-06-23-TheCoolestForgottenLegoGameIsSoWeird_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레고 게임 열차에서 떨어진 적이 있어요. 무비 2가 나올 때였죠. 그때까지 몇 년 동안 하나도 끝내지 못했는데, 출시 시 구매하고 완료하는 습관이 있었어요. 그런데 농담 같은 이 게임을 너무 많이 했어요. PS4에서 끝내고, 원래 2019년에 너무 긴 리뷰를 썼기 때문에 스위치에서도 상당히 많이 했어요. 아닌가? 14분을 읽을 것을 알렉스, 뭔가 장난하나? 예전 나는 이 이상한 영화 타이인 게임에 대해 왜 이렇게 많은 이야기를 했을까요? 그 후에도 계속해서 게임을 했어요. 스위치 버전을 끝냈어요. 세 번째로 엑스박스에서도 했어요.
 
@@ -37,7 +58,18 @@ TT Games는 Lego Worlds로 한 번 더 Minecraft를 모방해보기도 했습니
 
 2020년 말에 새로운 콘솔 출시의 열기에 휩쓸렸어요. 2022년에 열창적인 오픈 월드 스타워즈 스타일로 레고 시리즈가 부활했을 때 정말 즐겼어요. 영화 2와 같은 작은 규모의 창의적인 레고 게임을 더 원했던 내가 얼마나 괴로웠는지 잊어버렸죠. 그 영화가 가진 문제점을 많이 해결했고, 창조적인 에너지가 여전히 TT Games 제작 공장 안에 끓어오르고 있음을 보여주는 재미있고 가볍고 유쾌한 것입니다. 다시 돌아가봤을 때에도 여전히 즐겁습니다. "최고" 게임은 아니지만요. 하지만 노력하는 걸 잘 보여주고, 마인크래프트 클론으로 설계된 엔진에서 감탄할 만한 플랫포머를 만들 수 있다는 게 대단하죠. 3D 플랫포머 초기에는 누구나 슈퍼 마리오 64를 본받으려고 했고, 결과적으로 더 다채로운 세계로 이어지는 문을 여는 데용 둥둥 뛰어다니고 둥둥 모으는 장난기 많은 이야기들이 있었죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "The Lego Movie 2" 게임은 옛날 타이틀과 매우 흡사하다는 것을 말하면서도 칭찬의 뜻을 가지고 있다. 찾을 수 있는 것들이 땅 곳곳에 흩어져 있고, 점프나 건설 시스템 중 하나에 대해 충분한 기술이 필요하므로 찾아내기 충분합니다. 지도는 숨겨진 벽돌을 수퍼 마리오 오디세이의 심오한 달들처럼 끝없이 사냥할 필요가 없도록 힌트를 제공하지만, 도전 과제는 여전히 단순하게 느껴지지만 충분히 만족스럽게 느껴지도록 잘 만들어졌습니다. 오늘 아침에 내 기억을 되살리기 위해 게임의 첫 번째 행성을 완전히 플레이했고, 이제 이 게임을 네 번째로 끝내고 싶습니다.
 
@@ -47,7 +79,18 @@ TT Games는 Lego Worlds로 한 번 더 Minecraft를 모방해보기도 했습니
 
 이것은 오늘날에는 조금 의심스럽고 시대에 뒤떨어진 느낌이 들지만, 적어도 이 아이템들을 실제 돈으로 사는 방법을 구현하지 않았습니다. 전리품은 무작위 요소가 있어 무슨 종류의 것을 얻게 될지 알 수 없기 때문에 일정 수준의 재생 가능성을 더해준다고 생각하지만, Lego Worlds 엔진 디자인의 유령과 같이 이 영화 게임을 의미있게 향상시키지는 않는다고 확실합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 스카이워커 사가의 불가피하고 명백한 성공으로 TT Game의 운명이 봉인된 것 같아요. 이제 그들은 영원히 오픈 월드 게임을 만들게 될 거에요. 소니 제작, Studio Gobo 개발의 레고 호라이즌 게임은 재미있어 보이지만, 예전 TT Games가 대량으로 내놓던 공식적인 것과 더 비슷해 보여요. 레고 무비 2는 독특하고 멋진 변화를 보여줍니다. 필요한 창의력의 숨통 고르기, 그리고 그저 부숴버리는 것이 아닌 무언가를 만드는 주요 레고 비디오 게임을 만들려는 진정한 시도인 것 같아요.
 
@@ -57,7 +100,18 @@ TT Games는 Lego Worlds로 한 번 더 Minecraft를 모방해보기도 했습니
 
 가족용 게임이 반드시 나쁜 게임일 필요는 없어요. 그들은 다를 수 있고 흥미로울 수 있으며, 다른 게임들과 같은 주의를 받고 비평적 사고를 받을 가치가 있어요. 수백만 명의 사람들이 이러한 프랜차이즈에 노출되고 있어요. 그것들은 신중하고 좋아야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 "The Lego Movie 2" 게임이 시간이 흘러도 더욱 좋게 기억될 것을 바랍니다. 하지만 아마 이것은 헛된 개인적인 성찰인 것 같아요. 더 큰 프랜차이즈는 이제 다른 "더 큰" 게임들을 흉내내고 있지만, 새로운 하지만 안전한 시도들은 여러 스튜디오로부터 나오고 있어요. 혹시 몇 년 후에 이 흥미로운 곳에 다시 도달할 수 있는 게 있는지 - 그것 역시 다르다는 이유로 제쳐지는 걸 겪게 될지도 몰라요.
 

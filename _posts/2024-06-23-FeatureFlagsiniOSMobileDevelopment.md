@@ -3,13 +3,12 @@ title: "iOS 모바일 개발에서 Feature Flags 사용 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-FeatureFlagsiniOSMobileDevelopment_0.png"
 date: 2024-06-23 21:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-FeatureFlagsiniOSMobileDevelopment_0.png
 tag: Tech
 originalTitle: "Feature Flags in iOS Mobile Development"
 link: "https://medium.com/@robert.evansii/feature-flags-in-ios-mobile-development-104a68b50e67"
 ---
-
 
 앱 개발의 동적인 환경에서는 새로운 기능을 도입하거나 기존 기능을 대체해야 하는 필요성이 항상 존재합니다. 전통적으로, 개발자들은 과거 코드를 제거하거나 주석 처리하고 새 코드를 통합한 후 업데이트를 앱 스토어에 제출한 다음 변경 사항을 공개하기 전에 검토 프로세스를 기다리는 경우가 많습니다. 그러나 이 방식은 앱 스토어의 검토 일정을 기다려야 하는 큰 문제점을 안고 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@robert.evansii/feature-flags-in-ios-mobile-developmen
 
 ![이미지](/assets/img/2024-06-23-FeatureFlagsiniOSMobileDevelopment_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 기능 플래그란 무엇인가요?
 
@@ -29,14 +39,23 @@ link: "https://medium.com/@robert.evansii/feature-flags-in-ios-mobile-developmen
 
 프로세스를 가동하기 위해 앱에 가져올 기능을 저장하기 위한 리포지토리를 설정하는 것이 중요합니다. 제 경우에는 내 앱 내에서 이미 통합되어 있는 SupaBase를 선택하여 이를 활용했습니다. 이 선택은 추가적인 SDK를 통합하거나 새로운 구현을 도입할 필요성을 제거하고, 만들어 둔 테이블을 호출하는 방법으로 단순화된 과정을 제공합니다. 새로운 feature_flag라는 테이블을 만든 다음 다음 필드를 포함했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-* created_at
-* is_enabled
-* feature_name
-* number_users_seen
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+- created_at
+- is_enabled
+- feature_name
+- number_users_seen
 
 <img src="/assets/img/2024-06-23-FeatureFlagsiniOSMobileDevelopment_1.png" />
 
@@ -44,8 +63,18 @@ link: "https://medium.com/@robert.evansii/feature-flags-in-ios-mobile-developmen
 
 'number_users_seen'은 내가 사용하는 사용 사례로 특정 기능을 본 사용자 수를 추적하는 것이지만 창의력과 요구 사항에 따라 추가 필드도 포함할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 클라이언트 측
 
@@ -55,8 +84,18 @@ link: "https://medium.com/@robert.evansii/feature-flags-in-ios-mobile-developmen
 
 여기서 enum의 장점에 대해 자세히 다루지는 않겠지만, docs.swift.org에서 더 많은 정보를 찾아볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Screenshot 1](/assets/img/2024-06-23-FeatureFlagsiniOSMobileDevelopment_2.png)
 
@@ -68,23 +107,43 @@ link: "https://medium.com/@robert.evansii/feature-flags-in-ios-mobile-developmen
 
 ![Screenshot 2](/assets/img/2024-06-23-FeatureFlagsiniOSMobileDevelopment_3.png)
 
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-<div class="content-ad"></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 수업 내에서는 FeatureFlagManager가 초기화될 때 getFeatureFlags를 호출하고 SupaBase에서 기능 플래그를 가져올 것입니다. 이 작업은 초기화 시에 수행하지 않을 수도 있으며 필요한 진입점에서 getFeatureFlags를 호출할 수도 있습니다.
 
 내가 기능 플래그가 있는 시트를 표시해야 하는지 결정해야 하는 경우 shouldShowGiveAwaySheet를 호출할 수 있습니다.
 
 ```swift
-guard let featureIsEnabled = featureFlags.first(where: 
-  { $0.featureName == .giveAwayPrompt })?.isEnabled else 
+guard let featureIsEnabled = featureFlags.first(where:
+  { $0.featureName == .giveAwayPrompt })?.isEnabled else
     { self.showGiveAwayFeature = false }
 ```
 
 위의 guard 문은 giveAwayPrompt의 기능 플래그가 featureFlags 배열에 있는지 확인합니다. 해당 플래그를 찾지 못하면 showGiveAwayFeature를 false로 설정하고 함수를 일찍 종료합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 if featureIsEnabled && !hasSeenGiveAwayPrompt {
@@ -99,10 +158,21 @@ giveaway 시트를 표시해야 한다는 것을 나타내기 위해 showGiveAwa
 
 또한, updateHasSeenGiveAwayPrompt 메소드를 호출하여 사용자가 선물 증정 프롬프트를 이제 보았다는 것을 나타내는 @AppStorage showGiveAwayFeature 표식을 업데이트합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-self.showGiveAwayFeature = false
+self.showGiveAwayFeature = false;
 ```
 
 이 라인은 조건 블록 밖에 있으므로 해당 기능이 활성화되었는지와 사용자가 give-away 프롬프트를 보았는지 여부에 관계없이 실행됩니다. showGiveAwayFeature를 false로 설정하여 기본적으로 표시되지 않도록 합니다.
@@ -111,7 +181,18 @@ self.showGiveAwayFeature = false
 
 열거형(enum)의 우아함은 updateHasSeenGiveAwayPrompt와 같은 함수에서 빛을 발합니다. 필수는 아니지만, 저는 switch 문을 사용하여 사용법을 설명하는 것이 중요하다고 생각합니다. 이 접근 방식은 새로운 기능이 도입되었을 때 개발자가 해당 경우를 명시적으로 처리하도록 요청하므로 코드 완성도를 높이고 놓치는 것을 방지합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱 개발의 동적 영역에서 특징 플래그와 열거형의 신중한 사용은 개발자에게 유연하고 조직적인 도구 상자를 제공해줍니다. 우리는 특징 플래그가 동적 변경을 가능하게 하며, 지속적인 코드 수정이나 긴 앱 스토어 리뷰 없이 기능 릴리스를 원할하게 제어할 수 있도록 하는 방법을 살펴보았습니다. updateHasSeenGiveAwayPrompt와 같은 함수에서 열거형을 활용하면 코드의 가독성을 향상시킬 뿐만 아니라 새로운 기능 사례를 신중하게 처리하도록 개발자에게 강요하는 최선의 실천법을 갖추게 됩니다.
 

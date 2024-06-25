@@ -3,13 +3,12 @@ title: "GKE 멀티 클러스터 서비스MCS 처음에는 마법 같은 느낌�
 description: ""
 coverImage: "/assets/img/2024-06-23-GKEMulti-ClusterServicesMCSFeelslikemagicatfirst_0.png"
 date: 2024-06-23 22:58
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-GKEMulti-ClusterServicesMCSFeelslikemagicatfirst_0.png
 tag: Tech
 originalTitle: "GKE Multi-Cluster Services (MCS): Feels like magic — at first"
 link: "https://medium.com/google-cloud/gke-multi-cluster-services-mcs-feels-like-magic-at-first-de39847554c2"
 ---
-
 
 Multi-Cluster Services (MCS)은 한 GKE 클러스터에서 워크로드 간 통신을 허용하는 일반적인 문제에 대한 해결책을 제공합니다. 이 서비스는 이 글에서 MCS가 어떻게 구성되는지, 어떻게 구축되는지, 그리고 클러스터와 주변 인프라 수준에서 어떤 구성 요소가 관련되어 있는지 살펴볼 것입니다. 이를 통해 서비스에 대한 심층적인 이해를 얻고 문제 해결에 대한 신뢰를 높일 수 있을 것입니다.
 
@@ -17,7 +16,18 @@ Multi-Cluster Services (MCS)은 한 GKE 클러스터에서 워크로드 간 통�
 
 이 블로그 포스트에서는 조금 다른 방식으로 MCS의 구성 요소를 분석할 것입니다. 운이 좋다면 이런 과정이 기술이 마법처럼 느껴질 때의 어린 시절 추억을 떠올리게 할지도 모릅니다. 그러나 다행히 이번에는 가족용 계산기를 조금 복잡하게 살펴보고 고쳤다가 다시 조립했을 때 처럼 부모님께서 화를 내지 않을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 우선 순위를 정하자 — MCS를 사용해야 할 때
 
@@ -27,7 +37,18 @@ MCS는 같은 플리트 내의 다른 클러스터에서 실행되는 팟에 백
 
 <img src="/assets/img/2024-06-23-GKEMulti-ClusterServicesMCSFeelslikemagicatfirst_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # MCS 데모 준비 중
 
@@ -61,7 +82,18 @@ gcloud container clusters create-auto "test-eu-cluster" \
 
 클러스터가 준비되면, 피트에서 다중 클러스터 기능을 활성화하고 새로 생성된 클러스터를 피트에 추가할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 gcloud container fleet multi-cluster-services enable --project $PROJECT_ID
@@ -85,7 +117,18 @@ gcloud container clusters get-credentials test-eu-cluster --region europe-west1 
 
 MCS의 흔적이 이미 존재하는지 확인하기 위해 우리의 네임스페이스 리소스를 나열해보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 kubectl get ns
@@ -101,14 +144,25 @@ kubectl get all -n gke-mcs # 이 명령은 gke-mcs-importer에 대한 배포를 
 kubectl logs -n gke-mcs -l k8s-app=gke-mcs-importer --tail -1 # Importer의 로그를 얻기 위해
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로그에서는 수입 업체가 트래픽 디렉터 API에 액세스할 권한이 아직 부여되지 않았기 때문에 권한 오류가 발생할 수 있습니다:
 
 ```js
-핸들러 오류: 스트림을 통해 ADS 응답 수신 중: 권한이 거부되었습니다: 
-rpc 오류: 코드 = PermissionDenied desc = 권한 
-'trafficdirector.networks.getConfigs'이 자원에 대해 거부되었습니다 
+핸들러 오류: 스트림을 통해 ADS 응답 수신 중: 권한이 거부되었습니다:
+rpc 오류: 코드 = PermissionDenied desc = 권한
+'trafficdirector.networks.getConfigs'이 자원에 대해 거부되었습니다
 '//trafficdirector.googleapis.com/projects/...' (또는 존재하지 않을 수 있음).
 ```
 
@@ -120,7 +174,18 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
     --role "roles/compute.networkViewer"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 로그 문을 다시 실행하면 예상대로 폴링이 작동하지만 우리를 위해 생성된 존이 없다는 것을 확인할 것입니다. 이제 클러스터는 다중 클러스터 서비스를 배포할 준비가 되었습니다.
 
@@ -136,14 +201,25 @@ gcloud container clusters get-credentials test-eu-cluster --region europe-west1 
 kubectl config rename-context "$(kubectl config current-context)" mcs-eu
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서는 지나치게 화려한 애플리케이션이 필요하지 않습니다. 결국, 다른 GKE 클러스터에서 실행 중인 특정 서비스에 도달할 수 있는지 여부를 보여주기만 원합니다. 데모 목적으로, 우리의 EU 클러스터에서 기존의 hello-web 예제를 배포하고 클러스터 내에서 전통적인 ClusterIP 서비스로 노출합니다.
 
 ```js
-kubectl create ns shared-services --context mcs-eu 
+kubectl create ns shared-services --context mcs-eu
 
-kubectl apply -f https://raw.githubusercontent.com/GoogleCloudPlatform/kubernetes-engine-samples/main/quickstarts/hello-app/manifests/helloweb-deployment.yaml -n shared-services  --context mcs-eu 
+kubectl apply -f https://raw.githubusercontent.com/GoogleCloudPlatform/kubernetes-engine-samples/main/quickstarts/hello-app/manifests/helloweb-deployment.yaml -n shared-services  --context mcs-eu
 
 kubectl expose deployment/helloweb --port 8080 -n shared-services --context mcs-eu
 ```
@@ -154,7 +230,18 @@ kubectl expose deployment/helloweb --port 8080 -n shared-services --context mcs-
 kubectl run test-curl --image=curlimages/curl -it --rm --pod-running-timeout=4m --context mcs-eu -- curl -v http://helloweb.shared-services.svc.cluster.local:8080
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 흥미로운 사이드 노트와 나중에 중요한 세부 정보는, 우리의 GKE 클러스터가 클라우드 DNS를 사용한다는 것입니다. 따라서 Google Cloud 콘솔의 Cloud DNS UI에서 우리 서비스를 위해 자동으로 생성된 A 레코드도 볼 수 있습니다. DNS 존에는 명시적으로 이 Cloud DNS 존이 특정 GKE 클러스터에서만 사용 가능하다고 나와 있습니다. 이 DNS 존은 어떤 VPC에도 첨부되어 있지 않기 때문에 전형적인 사설 존은 아닙니다.
 
@@ -164,14 +251,25 @@ MCS의 목표는 미국 클러스터에서 이 서비스를 사용할 수 있도
 
 ```js
 # 호스트 이름을 해결할 수 없다는 오류로 실패합니다
-kubectl run test-curl --image=curlimages/curl -it --rm --pod-running-timeout=4m --context mcs-us -- curl -v http://helloweb.shared-services.svc.cluster.local:8080 
+kubectl run test-curl --image=curlimages/curl -it --rm --pod-running-timeout=4m --context mcs-us -- curl -v http://helloweb.shared-services.svc.cluster.local:8080
 
 # 타임아웃으로 실패합니다
 EU_SERVICE_IP="$(kubectl get svc -l app=hello -n shared-services --context mcs-eu -ojsonpath='{.items[*].spec.clusterIP}')"
 kubectl run test-curl --image=curlimages/curl -it --rm --pod-running-timeout=4m --context mcs-us -- curl -v "http://$EU_SERVICE_IP:8080"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희가 겪고 있는 문제는 미국 클러스터의 작업량이 EU 클러스터의 작업량에 도달하지 못하는 것이 아니라, 아래에서 직접 Pod IP를 호출하여 증명할 수 있는 것입니다. 네트워크 수준에서는 VPC 네이티브 클러스터 네트워킹을 사용하여 VPC 내에서 Pod IP가 경로 지정될 수 있기 때문에 이 작업이 가능합니다. 아래 예시에서는 양 쪽 클러스터의 API 서버에 연결하여 이를 활용하여 서로간의 교차 클러스터 통신을 증명하는 데 사용합니다.
 
@@ -185,12 +283,23 @@ kubectl run test-curl --image=curlimages/curl -it --rm --pod-running-timeout=4m 
 
 # MCS로 서비스 내보내기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MCS에서 실행 중인 서비스를 EU 클러스터에서 내보내려면 EU 클러스터에 ServiceExport 리소스를 만듭니다. 동시에 해당 서비스를 가져올 US 클러스터의 이름 공간을 만듭니다:
 
 ```js
-kubectl create ns shared-services --context mcs-us 
+kubectl create ns shared-services --context mcs-us
 
 kubectl apply --context mcs-eu -f - <<EOF
 apiVersion: net.gke.io/v1
@@ -207,7 +316,18 @@ EOF
 kubectl logs -n gke-mcs -l k8s-app=gke-mcs-importer --tail=25 --context mcs-us
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 미국 클러스터가 EU에서 실행 중인 작업에 대한 정보를 수신했음을 나타내고 해당 정보를 자동으로 사용하는 엔드포인트가 만들어 졌음을 나타내고 있습니다:
 
@@ -227,7 +347,18 @@ kubectl get Service -n shared-services --context mcs-us
 kubectl get Endpoints -n shared-services --context mcs-us
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 명령어에서 나열된 엔드포인트들은 EU 클러스터에서 실행 중인 워크로드의 pod ip를 포함하고 있습니다. 이는 ServiceExport 리소스가 이전 섹션에서 수동으로 제공한 교차 클러스터 리소스 식별을 자동화했다는 것을 의미합니다. 이제 위에서 찾은 서비스와 엔드포인트를 테스트하고 미국 클러스터 내에서부터 호출해 봅시다:
 
@@ -244,7 +375,18 @@ kubectl run test-curl --image=curlimages/curl -it --rm \
 
 클러스터셋 로컬 호스트 이름의 호기심스러운 사례#
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자동 생성되는 기억하기 어려운 서비스 이름 문제를 해결하기 위해 MCS가 제공하는 편리한 DNS 기반 솔루션을 사용할 수 있습니다. 각 가져온 서비스에 대해 "SERVICE_EXPORT_NAME.NAMESPACE.svc.clusterset.local" 형식의 DNS 항목을 만듭니다. 이 호스트 이름을 사용하여 생성된 서비스 이름을 식별하는 추가 단계 없이 서비스를 호출할 수 있는 결정론적인 방법이 생겼습니다. 가져온 서비스의 호스트 이름을 작성하고 클러스터 중 하나에서 팟 내부에서 호출할 수 있습니다:
 
@@ -262,7 +404,18 @@ kubectl run test-curl --image=curlimages/curl -it --rm \
 
 처음에 예상하지 못한 흥미로운 점 중 하나는 clusterset.local DNS 존이 Cloud DNS UI에 노출되지 않는다는 것입니다. 하지만 우리 호스트 이름을 위해 레코드 세트가 있는 하부 관리 DNS 존이 있음을 다음 명령어를 실행하여 확인할 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 gcloud dns managed-zones list --location=us-central1-b
@@ -278,7 +431,18 @@ gcloud dns record-sets list --location=us-central1-b --zone <name of the zone fr
 
 라우팅 규칙의 이름을 클릭하면 정방향 규칙과 라우팅 규칙에서 사용된 호스트명 목록을 볼 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-GKEMulti-ClusterServicesMCSFeelslikemagicatfirst_4.png" />
 
@@ -288,7 +452,18 @@ gcloud dns record-sets list --location=us-central1-b --zone <name of the zone fr
 
 이 가정을 확인하기 위해 미국 클러스터의 shared-services 네임스페이스를 삭제해볼 수 있습니다. 이렇게 하면 우리가 이전에 살펴본 서비스와 엔드포인트를 포함한 모든 네임스페이스 리소스를 삭제합니다. 마지막으로 미국 클러스터의 파드에서 curl을 다시 실행하고 싶을 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 kubectl delete ns shared-services --context mcs-us
@@ -306,7 +481,18 @@ kubectl create ns shared-services --context mcs-us
 
 Importer가 서비스 및 엔드포인트 리소스를 다시 생성한 후, 우리는 버보즈 출력으로 curl 명령을 다시 실행합니다. 이렇게 하면 서비스를 삭제했을 때 위와 같은 이유로 실패했던 것을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 kubectl run test-curl --image=curlimages/curl -it --rm \
@@ -320,7 +506,18 @@ kubectl run test-curl --image=curlimages/curl -it --rm \
 
 이 모든 실험과 탐구를 통해 MCS에 대한 우리의 이해를 완성할 수 있습니다. 우리는 지금 관련된 구성 요소를 이해하고, 처음에는 다소 마술적으로 보였던 기능을 가능하게 하는 것에 대해 더 나은 그림을 그릴 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![GKE Multi-Cluster Services](/assets/img/2024-06-23-GKEMulti-ClusterServicesMCSFeelslikemagicatfirst_5.png)
 

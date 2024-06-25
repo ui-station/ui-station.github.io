@@ -3,13 +3,12 @@ title: "샤오미 휴대폰 배터리 과소비 해결 방법  자주 묻는 질
 description: ""
 coverImage: "/assets/img/2024-06-23-HowtoFixRapidBatteryDrainonXiaomiPhonesFAQ_0.png"
 date: 2024-06-23 23:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HowtoFixRapidBatteryDrainonXiaomiPhonesFAQ_0.png
 tag: Tech
 originalTitle: "How to Fix Rapid Battery Drain on Xiaomi Phones + FAQ"
 link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi-phones-solutions-and-frequently-asked-questions-2ef94d4f79bc"
 ---
-
 
 샤오미 폰의 가장 중요한 장점 중 하나로 높은 배터리 용량이 손꼽히죠. 그러나 가끔씩은 샤오미 폰의 배터리 소모가 예상보다 빠르게 느껴질 수도 있어요. 안드로이드 시스템이 샤오미 폰의 빠른 배터리 소모의 주요 원인일 수 있답니다.
 
@@ -19,9 +18,20 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 
 ## 샤오미 어플리케이션의 배터리 사용량을 확인해보세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-첫 번째 단계에서는 Xiaomi 폰에서 배터리가 빨리 소모되는 원인 앱을 확인해야 합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+첫 번째 단계에서는 Xiaomi 폰에서 배터리가 빨리 소모되는 원인 앱을 확인해야 합니다.
 
 - Xiaomi 폰 설정으로 이동합니다.
 - 앱 목록과 배터리 사용량을 확인하려면 아래로 스크롤합니다.
@@ -31,7 +41,18 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 
 만약 Android 시스템이 배터리를 빠르게 소모하는 경우 msa를 비활성화해야 합니다. Msa는 MIUI 시스템 광고를 의미하는 MIUI 시스템 광고(MIUI System Ads)의 약자입니다. msa를 비활성화하면 더 이상 많은 MIUI 시스템 광고를 볼 수 없습니다. 이 앱이 필요하지 않으며 비활성화해도 Xiaomi 폰에 해가 되지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설정으로 이동하세요.
 - "비밀번호 및 보안" 섹션으로 이동하세요.
@@ -47,7 +68,18 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 - 이제 "모든 앱 표시" 옵션을 선택하고 새 목록에서 보안 앱을 찾으세요.
 - 앱을 찾으면 업데이트를 제거하려면 "업데이트 제거"를 선택하세요. 앞으로 이 앱을 업데이트하지 않고 배터리 소모 문제를 피하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Google Play 서비스 데이터 지우기
 
@@ -59,7 +91,18 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 
 # 앱 권한 확인하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설정으로 이동하세요.
 - "개인 정보"로 이동한 다음 "권한 관리자"로 이동하세요.
@@ -71,7 +114,18 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 
 # Wi-Fi 스캐닝 및 블루투스 스캐닝 끄기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 샤오미 폰의 위치 설정으로 이동해주세요. 이 설정을 찾을 수 없는 경우, 제어 센터를 아래로 스와이프하여 위치 아이콘을 길게 누르세요. 그런 다음, 위치 서비스로 이동하여 Wi-Fi 스캔 및 블루투스 스캔을 해제하세요.
 
@@ -81,7 +135,18 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 
 샤오미 폰은 우수한 성능과 저렴한 가격으로 유명하지만, 다른 스마트폰과 마찬가지로 배터리 소모 문제가 발생할 수 있습니다. 샤오미 폰을 계속 충전해야 하는 번거로움을 느끼신다면, 배터리 수명을 연장하는 여러 가지 방법이 있습니다. (이 부분의 절반은 AI의 도움으로 작성되었습니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다크 모드 활성화: 샤오미 핸드폰에서 다크 모드나 어두운 테마를 활성화하면 배터리 수명을 보존하는 데 도움이 됩니다. 밝은 모드보다 조명이 적게 필요하기 때문에 다크 모드가 더 적은 전력을 사용합니다.
 - 항상 켜진 디스플레이 끄기: 항상 켜진 디스플레이는 폰을 잠그고 있을 때도 중요한 정보를 화면에 표시해주는 유용한 기능이지만, 이 기능은 많은 배터리 소모를 일으킬 수 있습니다. 끄면 배터리 수명이 향상될 수 있습니다.
@@ -105,7 +170,18 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 
 이전 방법을 시도해도 샤오미 핸드폰의 빠른 배터리 소모 문제를 해결할 수 없다면 공장 설정으로 복원할 수 있습니다. 이를 하기 전에 데이터(사진, 비디오, 노트, 메시지, 연락처 등)를 백업해두는 것이 좋습니다. 공장 초기화를 하면 모든 데이터가 지워지니 유의하세요. 아래 단계를 따라하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Xiaomi 핸드폰의 설정으로 이동하세요.
 - "휴대폰 정보"를 클릭하세요.
@@ -118,7 +194,18 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 
 가끔 안드로이드 시스템이 Xiaomi 핸드폰의 배터리를 빠르게 소모시킬 수 있습니다. 문제를 식별하고 MSA를 비활성화하고 초기화를 수행하여 배터리 소모 속도를 줄일 수 있으며, 핸드폰을 충전한 후 좀 더 긴 사용 시간을 즐길 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 전화가 배터리가 빈다고 비어 있지 않을 때도 자주 꺼지는 등의 문제가 발생하면, 배터리 소모 문제 외에도 전화를 조사해볼 전문 기술자와 상의하는 것이 좋습니다.
 
@@ -128,7 +215,18 @@ link: "https://medium.com/@foryouandme/reasons-for-rapid-battery-drain-in-xiaomi
 
 샤오미 폰에서 발생하는 빠른 배터리 소모 문제와 관련하여 자주 묻는 질문이 다른 샤오미 폰 사용자와 동일할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Xiaomi 폰의 배터리가 왜 빨리 소모되나요?
 
@@ -138,7 +236,18 @@ Xiaomi 폰의 배터리가 빨리 소모되는 이유 중 하나로, 인스타�
 
 시스템 업데이트로 인해 설정이 변경되고 새로운 기능이 추가될 수 있기 때문에 Xiaomi 폰 업데이트 후 배터리가 빨리 소모되는 것은 정상적인 일입니다. 이 문제는 몇 일 후에 해결될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 제 직접새본 Ziaomi 핸드폰 배터리 바꿀 수 있을까요?
 
@@ -148,7 +257,18 @@ Xiaomi 핸드폰의 배터리는 집에서 스스로 교체하지 않는 것이 
 
 배터리 절약 모드를 사용하여 배터리 수명을 연장하면 Xiaomi 핸드폰의 성능에 일부 영향을 줄 수도 있습니다. 그러나 대부분의 경우에는 그 영향이 크지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 배터리 절약 앱을 사용하면 Xiaomi 핸드폰에 손해가 갈까요?
 
@@ -158,7 +278,18 @@ Xiaomi 핸드폰의 배터리는 집에서 스스로 교체하지 않는 것이 
 
 전문가들은 이 질문에 대해 서로 다른 의견을 가지고 있습니다. 어둡게 설정된 색상은 더 적은 전원을 필요로 하기 때문에 일부 사람들은 다크 모드가 Xiaomi 핸드폰의 배터리 수명을 연장하는 데 도움이 될 수 있다고 합니다. 다른 사람들은 Xiaomi 핸드폰의 다크 모드에서 절전되는 양은 사용자 설정과 사용 패턴에 따라 다를 수 있다고 믿습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 제 Xiaomi 핸드폰 배터리를 교정하는 방법은 무엇인가요?
 
@@ -168,7 +299,18 @@ Xiaomi 핸드폰의 배터리를 교정할 필요는 없습니다. 핸드폰 소
 
 Xiaomi 핸드폰의 배터리 수명은 모델, 사용 방식 및 설정에 따라 다를 수 있습니다. 그러나 대부분의 Xiaomi 핸드폰은 약 3000-5000mAh의 배터리 용량을 가지고 있으며, 중간 정도의 사용량으로 하루 동안 사용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 샤오미 폰에서 빠른 충전기를 사용하면 배터리 수명에 영향을 미치나요?
 
@@ -178,6 +320,17 @@ Xiaomi 핸드폰의 배터리 수명은 모델, 사용 방식 및 설정에 따�
 
 네, 샤오미 폰 홈 화면에 위젯을 많이 사용하는 것은 배터리를 소모할 수 있습니다. 위젯은 CPU와 RAM과 같은 리소스를 사용하여 정보를 업데이트하고 표시하기 때문에 배터리를 빨리 소모시킬 수 있습니다. 배터리 소모를 해결하려면 필수적인 위젯만 사용하고 홈 화면에서 사용하지 않는 위젯을 제거하는 것이 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 FAQ의 내용은 AI의 도움을 받아 작성되었습니다.

@@ -3,13 +3,12 @@ title: "아이폰 개발, 이제 시작해보세요 초보자를 위한 단계�
 description: ""
 coverImage: "/assets/img/2024-06-23-HowtoLearniOSDevelopmentAStep-By-StepGuideforBeginnerstoSucceed_0.png"
 date: 2024-06-23 21:29
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HowtoLearniOSDevelopmentAStep-By-StepGuideforBeginnerstoSucceed_0.png
 tag: Tech
 originalTitle: "How to Learn iOS Development: A Step-By-Step Guide for Beginners to Succeed"
 link: "https://medium.com/tribalscale/how-to-learn-ios-development-a-step-by-step-guide-for-beginners-to-succeed-2c16c6dbc67"
 ---
-
 
 작성자: May Ly, Agile 소프트웨어 엔지니어, TribalScale
 
@@ -19,7 +18,18 @@ link: "https://medium.com/tribalscale/how-to-learn-ios-development-a-step-by-ste
 
 ## 💬 다음 디지털 프로젝트, 스타트업 또는 TribalScale에 관한 질문이 있으신가요? 저희 전문가 중 한 명과 채팅해보려면 여기를 클릭하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![그림1](/assets/img/2024-06-23-HowtoLearniOSDevelopmentAStep-By-StepGuideforBeginnerstoSucceed_1.png)
 
@@ -29,7 +39,18 @@ link: "https://medium.com/tribalscale/how-to-learn-ios-development-a-step-by-ste
 
 저는 2주 만에 iOS의 기본을 파악할 수 있었습니다. 지금 돌이켜보면, 그 짧은 시간 동안 적용한 프로세스가 많았지만, 나중에 배우게 된 많은 중요한 iOS 개념들도 있었어요. 그래서 제 경험을 되짚어가며, 처음부터 iOS를 배운다면 어떻게 시작할지에 대해 6단계 요약을 작성해 보았어요. 내가 했던 것처럼 iOS 경험이 부족하고 빠르게 iOS를 배우고 싶다면, 이 방법이 도움이 될 지도 몰라요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 단계 1: XCode 다운로드
 
@@ -42,7 +63,18 @@ XCode를 다운로드하고 실행한 후 몇 가지를 살펴보세요:
 - 인터페이스 빌더: XCode의 인터페이스 빌더를 사용하여 앱의 UI를 디자인하고 사용자 정의하세요. 프로젝트에 연관된 스토리보드 또는 XIB 파일("Main" 파일)을 열어 UI 요소를 추가하고 레이아웃을 정렬하고 속성을 조정해보세요.
 - 빌드 및 실행: Xcode 툴바에서 "빌드 및 실행" 또는 "재생" 버튼을 클릭하여 코드를 컴파일하고 iPhone 시뮬레이터에서 앱을 실행하세요. 이를 통해 앱의 현재 상태를 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 XCode에 대해 더 자세히 다루는 멋진 튜토리얼이 있어요.
 
@@ -52,7 +84,18 @@ XCode에 대해 더 자세히 다루는 멋진 튜토리얼이 있어요.
 
 Swift는 애플이 2014년 도입한 애플리케이션 개발에 효과적이면서 현대적인 언어로, 애플의 플랫폼에서 애플리케이션을 개발하기 위한 언어입니다. 제가 현재 작업 중인 앱 때문에 실제로 Swift보다 이전에 애플이 개발한 다른 iOS 프로그래밍 언어인 Objective-C를 배웠어요. iOS 개발에 대한 좋은 기반이 되었지만, 요즘에는 더 현대적이고 인기 있는 언어인 Swift를 먼저 배우는 것이 더 좋습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만, 새로운 프로그래밍 언어를 배우는 방법은 여러 가지가 있습니다. 내 경험상으로는, 초보자를 위한 간단한 자습서를 찾을 때 언제나 먼저 Youtube를 참고합니다 (그리고 무료입니다 🤩). 만약 Youtube가 아니라면, 간단한 구글 검색으로 무수히 많은 Swift 코스를 온라인에서 찾을 수 있습니다. 아래에 몇 가지 좋은 자료를 링크했습니다!
 
@@ -64,19 +107,39 @@ Swift를 배우면서 내 경험상 유용한 몇 가지 팁은 다음과 같습
 - 특정 주제에 더 깊게 파고들어야 할 때는 언제든지 애플의 공식 Swift 문서를 참고할 수 있습니다. 'The Swift Programming Language' 가이드는 언어의 기능, 구문 및 개념에 대한 포괄적인 개요를 제공합니다.
 - ChatGPT는 개념을 이해하고 특정 질문에 답변하며 지침을 제공하는 데 최상의 도구입니다. 코드 일부를 붙여 넣더라도 각각의 줄을 상세히 설명해줍니다! AI를 최대한 활용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![2024-06-23-HowtoLearniOSDevelopmentAStep-By-StepGuideforBeginnerstoSucceed_3.png](/assets/img/2024-06-23-HowtoLearniOSDevelopmentAStep-By-StepGuideforBeginnerstoSucceed_3.png)
 
 # 단계 3: 프로젝트 선택
 
-이제 프로그래밍 지식을 실제 앱에 적용할 때입니다! 초보자로서, 현재의 기술 수준으로 합리적으로 달성할 수 있는 간단한 앱 아이디어부터 시작하는 것이 중요합니다. 복수의 복잡한 기능이나 백엔드를 필요로하는 과도한 야심찬 프로젝트는 피하세요. 학습에 집중할 수 있도록 매우 적은 기능을 포함하는 아이디어를 찾으세요. 
+이제 프로그래밍 지식을 실제 앱에 적용할 때입니다! 초보자로서, 현재의 기술 수준으로 합리적으로 달성할 수 있는 간단한 앱 아이디어부터 시작하는 것이 중요합니다. 복수의 복잡한 기능이나 백엔드를 필요로하는 과도한 야심찬 프로젝트는 피하세요. 학습에 집중할 수 있도록 매우 적은 기능을 포함하는 아이디어를 찾으세요.
 
 제가 말하는 간단한 것은 정말 간단한 것을 의미합니다. 당신의 아이디어는 작동을 위해 500줄 이하의 코드만 필요하며, 거기서 추가 기능을 더할 수 있습니다! 시작하기에 좋은 몇 가지 예시는 다음과 같습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Randomizer/Generator: 사용자가 제공한 맥락에 따라 무작위 결과를 생성하는 앱입니다. 레스토랑, 농담, 색상 등에서 생성된 결과는 API에서 나올 수도 있고 앱에 하드코딩될 수 있습니다.
 - 전쟁 카드 게임: 두 플레이어가 서로 카드 덱에서 카드를 순서대로 공개하여 경쟁하는 클래식 "전쟁" 카드 게임입니다. 순위가 더 높은 카드를 가진 플레이어가 라운드를 이기고 두 장을 모아갑니다.
@@ -90,7 +153,18 @@ Swift를 배우면서 내 경험상 유용한 몇 가지 팁은 다음과 같습
 
 <img src="/assets/img/2024-06-23-HowtoLearniOSDevelopmentAStep-ByStepGuideforBeginnerstoSucceed_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 프로젝트는 Objective-C와 Swift로 모두 작성되었으며 완성하는 데 며칠이 걸렸고 약 400줄의 코드가 포함되어 있습니다. 사용자 정의 사용자 인터페이스를 만들거나 API에서 데이터를 가져오는 등 다양한 개념을 다룬 것이 좋은 프로젝트 선택이었습니다. 앞으로 앱 아이디어를 선택하면 이러한 다음 단계를 따라가며 개발을 시작할 수 있겠어요!
 
@@ -100,7 +174,18 @@ UIKit은 애플이 제공하는 프레임워크로, 해당 플랫폼에서 사�
 
 UIKit을 사용하기 위해 XCode의 Interface Builder를 탐색해보아야 합니다. Interface Builder는 시각적 환경으로, 개발자들이 애플리케이션 인터페이스를 설계, 사용자 정의하고 프로토타입을 만드는 데 필요한 코드를 많이 작성하지 않고도 쉽게 작업할 수 있도록 돕는 도구입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 iOS 학습 여정에서 앱의 화면을 디자인하기 위해 Interface Builder를 사용하세요. 예를 들어, 저는 다양한 화면으로 나누어진 여러 컨트롤러를 가지고, 테이블 뷰, 컬렉션 뷰, 버튼, 피커 등의 다양한 UIKit 요소를 담았습니다. 이러한 요소들은 정보를 표시하거나 사용자 상호작용을 처리하는 데 필요했습니다.
 
@@ -110,7 +195,18 @@ UIKit을 사용하기 위해 XCode의 Interface Builder를 탐색해보아야 �
 
 처음에 UIKit를 탐험하는 것은 많은 기능을 배워야 해서 겁내기 쉬울 수 있습니다. 초보자로서, 여러분의 첫 번째 앱 작업 시 반드시 다루어야 할 기본 개념은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - UIKit 요소들: 프로젝트에 추가하여 외형을 사용자 정의하고 색상, 글꼴, 크기 및 기타 시각 속성을 조정하여 UIKit 요소의 다양성을 경험해보세요. 실제로 깊이 있는 이해를 위해 몇 가지 컴포넌트를 살펴보세요:
 - 뷰 컨트롤러: 뷰 컨트롤러를 사용하여 뷰의 표현과 동작, 사용자 상호작용 처리 및 응용 프로그램의 흐름을 조절하세요. 뷰 컨트롤러의 존재 여부를 다양한 단계에서 호출되는 viewDidLoad()와 같은 라이프사이클 메서드를 이해하여 설정 수행, UI 업데이트, 이벤트에 적절히 응답하세요.
@@ -126,7 +222,18 @@ UIKit 및 인터페이스 빌더를 배우기 위해서는 실험이 필수적�
 
 UIKit, 인터페이스 빌더 및 Swift 프로그래밍에 좀 더 익숙해지면 — API 작업을 배우는 것을 추천합니다. API(응용 프로그램 프로그래밍 인터페이스)는 서로 다른 소프트웨어 응용 프로그램이 통신하고 상호 작용할 수 있도록 하는 규칙과 프로토콜의 집합입니다. 다른 시스템 간에 데이터를 요청하고 교환하는 방법, 데이터 형식 및 규칙을 정의합니다. 당신의 개인 프로젝트에 통합할 수 있는 몇 가지 무료이면서 쉬운 사용법의 멋진 API 예제를 여기에서 확인하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 포켓몬 API: https://pokeapi.co/
 - 개 API: https://dog.ceo/dog-api/
@@ -143,7 +250,18 @@ UIKit, 인터페이스 빌더 및 Swift 프로그래밍에 좀 더 익숙해지�
 - 비동기 프로그래밍: 네트워크 요청의 비동기적인 성격에 대해 학습하고 URLSession을 완료 핸들러와 함께 사용하여 동시 작업을 효율적으로 관리하는 방법에 대해 알아보세요. 백그라운드/주 스레드 및 디스패치 그룹과 같은 개념을 검토하세요.
 - 오류 처리: API 요청 중 발생할 수 있는 오류 처리하는 방법을 이해하세요. 다양한 유형의 오류 및 적절한 오류 처리 메커니즘을 구현하는 방법에 대해 배우세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API와 작업하는 법을 배우는 것은 모든 개발자에게 중요한 기술입니다. 서버에서 데이터를 가져오는 방법을 익히면 iOS 개발 기술을 향상시킬 뿐만 아니라 앱의 기능을 향상시키기 위한 무제한의 데이터에 액세스할 수 있습니다!
 
@@ -153,7 +271,18 @@ API와 작업하는 법을 배우는 것은 모든 개발자에게 중요한 기
 
 마지막으로, 하늘은 무궁무진하며 이것은 여러분의 iOS 여정의 시작일 뿐입니다! 누구에게나 앱 스토어의 다음 대히트를 만들거나 꿈꾸던 iOS 개발자 직업을 얻을 능력이 있습니다. 계속 열심히 노력하면 곧 iOS 개발의 달인이 될 것입니다! 행운을 빕니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `<img src="/assets/img/2024-06-23-HowtoLearniOSDevelopmentAStep-By-StepGuideforBeginnerstoSucceed_7.png" />`
 

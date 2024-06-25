@@ -3,25 +3,33 @@ title: "회사 회의가 너무 많나요 회의 지옥에서 벗어나는 방�
 description: ""
 coverImage: "/assets/img/2024-06-23-TooManyMeetingsatWorkHeresHowToStoptheMeetingMadness_0.png"
 date: 2024-06-23 21:59
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TooManyMeetingsatWorkHeresHowToStoptheMeetingMadness_0.png
 tag: Tech
 originalTitle: "Too Many Meetings at Work? Here’s How To Stop the Meeting Madness"
 link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-to-stop-the-meeting-madness-47a6fb141c8a"
 ---
 
-
-
 ![텍스트](/assets/img/2024-06-23-TooManyMeetingsatWorkHeresHowToStoptheMeetingMadness_0.png)
 
 회의가 너무 많았어요. 그 달에 그 세 단어를 너무 많이 말했습니다. 때로는 제 스스로에게 피가 없는 노골적인 말로. 때로는 일의 현재 상태에 대한 과잉한, 자기중심적인 불만으로 자기 불쌍해 하는 형태로.
 
-제가 빠져든 구덩이에서 벗어나 깨어 나기 위해 큰 소리로 외칠 대신, 그것을 인생의 한 부분으로 받아들였어요: "이게 정상인 거고, 뭘 많이 할 수 없어." 어쨋든, 의도적으로 매니저로서 참여한 것이고, 회의가 많아보였어요. 
+제가 빠져든 구덩이에서 벗어나 깨어 나기 위해 큰 소리로 외칠 대신, 그것을 인생의 한 부분으로 받아들였어요: "이게 정상인 거고, 뭘 많이 할 수 없어." 어쨋든, 의도적으로 매니저로서 참여한 것이고, 회의가 많아보였어요.
 
 몇 달이 지나고, 상황은 더 나빠졌어요. 제 역할 범위가 늘어나고, 팀 규모도 거의 두 배로 늘어나고, 회의 수도 늘어났어요. 제 시간을 완전히 잃었어요. 하루 종일 한 날갯짓하는 듯한 류의 압단이었고, 한 회의에서 다음 회의로 움직이기만 하며, 지쳐, 헷갈리며, 불평만 하게 되었어요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 조직과 팀을 사랑했지만 내 일에 대해서는 자신이 없었어요. 너무 많은 회의가 쉽게 탈출구가 되고, 내 시간과 주의를 요구하는 일을 피하는 핑계가 되어버렸거든 — 미래를 위한 계획 수립, 팀을 위한 더 나은 기회 발굴, 내 학습에 투자하기 등에요.
 
@@ -31,7 +39,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 그 과정은 간단한 목표로 시작됐어요: 내 시간을 다시 통제하고 가치를 더하는 일을 하려는 것이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론, 회의에 소요되는 시간을 최적화하는 것이 이 목표를 달성하는 데 큰 요소였어요. 그것부터 시작했죠. 내 디폴트 모드로 돌아가는 것을 피하기 위해 작은 변화부터 시작하기로 결정했습니다.
 
@@ -44,7 +63,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 이러한 간단한 질문들은 내 캘린더의 모든 회의에 참석하는 내 디폴트 모드 대신 회의에 대한 인식을 일깨워주었어요. 아직 많은 회의에 참석했지만 일정을 통제할 수 있는 느낌은 나에게 에너지를 불어넣어 이 프로세스를 다음 단계로 이끌었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 모두를 위해 단계별 프로세스를 만들어 시간을 더 잘 관리할 수 있는 방법을 찾았습니다. 그 방법은 회의를 시간 채우는 용도로 사용하는 것을 그만두고 가치를 창출하는 방향으로 바꾸는 것입니다.
 
@@ -54,7 +84,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 ## 단계1: 중요한 작업을 위한 시간 블록 사전 설정 (미팅 없는 활동)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 중요한 작업들은 당신과 당신의 조직에 장기적 가치를 창출합니다. 이들은 당신의 팀과 조직을 다음 수준으로 이끌어 줄 고려 활동들이며, 고완력 활동입니다.
 
@@ -64,7 +105,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 ## 단계 2: 필수 회의 일정 잡기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 1단계와 비슷하지만 여기서는 회의 시간을 사전에 블록하는 단계입니다. 네, 회의 수를 줄이려고 노력 중이라는 것을 알고 있지만, 반드시 회의해야 하고 동시에 가치 있는 회의를 식별하는 것이 그 목표 중 하나입니다. 어떤 회의에 대해 확신이 없다면 이 단계에서 일단 미뤄두세요.
 
@@ -74,7 +126,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 ## 단계 3: 위임하고 자율을 부여
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 회의에 참여하기에 가장 적합한 사람은 당신 뿐이고 누구도 당신 자리를 대신할 수 없다고 믿는 것이 쉽습니다. 이것은 부분적으로 옳고 전체적으로 잘못된 사고입니다.
 
@@ -86,7 +149,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 만약 당신이 팀 내에서 아무도 당신 자리를 대신할 수 없다고 생각한다면, 그것은 당신이 팀원들을 능력을 키우고 촉진시키지 않고 있다는 강력한 신호입니다. 당신은 팀 내의 의사 결정 병목이 되어 팀을 우수함을 향해 이끄는 대신 겨우 평범함으로 밀어붙이고 있습니다. 직원들을 능력 있게 하는 것은 상당 부분의 시간을 확보하고 직원들이 매니저들에게 신뢰받았다는 기쁨을 느낄 수 있게 하며 건강한 작업 환경을 조성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 효율적인 위임은 당신의 업무의 중요한 부분이며, 회의를 위임하는 것도 그 중요한 부분입니다. 어떤 회의를 위임할 수 있는지 확인하거나 팀 내에서 스킬을 키워서 당신의 팀원들이 당신의 일부 회의를 대체할 준비가 되도록 하는 방법에 대해 고려해보세요.
 
@@ -96,7 +170,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 마지막으로, 하지 말아야 할 일을 위임하려는 것은 위임할 가치가 없는 일입니다. 회사의 미션과 목표에 부합하지 않거나 당신과 당신의 팀에 가치를 더하지 않는 회의에 대해 '아니오'라고 말할 수 있는 능력을 키워보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 몇 가지 회의는 자기 존중감과 중요성을 느끼게 해 주어서 쉽게 포기하기 어려울 수 있어요. 그런 회의는 자아 존중감을 높여주는 것 같아요. 이 결정에 갇힌 것 같다고 느낄 때, 단순히 자신에게 물어보세요: 어떤 것을 더 원하시나요? 시간이나 가치없는 자아 존중감?
 
@@ -106,7 +191,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 위의 전략을 적용함으로써 회의 시간을 상당히 줄일 수 있어요. 하지만 아직 끝났지 않아요. 귀중한 시간을 되찾기 위해 더 많은 일을 할 수 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 1. 회의 빈도와 시간을 최적화하라
 
@@ -116,7 +212,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 회의 시간을 최적화하는 것은 회의에 소비되는 시간을 아끼는 훌륭한 전략입니다. 회의를 관찰하고, 유용한 토론에 얼마나 많은 시간을 소비하는지, 할당된 시간을 그냥 채우는 데 얼마나 많은 시간이 소요되는지 이해하려고 노력하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파킨슨의 법칙에 따르면, 작업은 완료 기간에 할당된 시간만큼 확장됩니다. 이 법칙은 회의에도 적용됩니다.
 
@@ -126,7 +233,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 또 다른 유용한 전략은 유사한 회의를 연달아서 진행하는 것입니다. 이렇게 하면 회의에 쓰는 총 시간은 줄일 수 없지만 컨텍스트 전환에 소비되는 시간을 줄일 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 20분짜리 1:1 미팅을 하나만 하는 대신 연이어 두 번 하는 것이 유익할 수 있습니다. 첫 번째 1:1 미팅을 통해 뇌 리듬을 맞춘 다음에 두 번째 미팅이 훨씬 쉬워질 것입니다.
 
@@ -136,7 +254,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 피드백 루프를 활용한 자기 반성은 시간이 흐름에 따라 향상될 수 있는 강력한 실천 방법입니다. 너무 많은 미팅으로 인해 상황이 하루나 한 달 안에 개선되지 않습니다. 나쁜 습관에 빠지지 않도록 당신을 지켜줄 좋은 습관을 꾸준히 실천해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 연습을 한 번에 완료할 수 없어요. 아직 끝나지 않았어요. 미래의 목표에 맞춰 행동을 조정하려면 이 연습을 계속 해야 해요. 지난 한 달 간의 캘린더를 살펴보고 다음과 같은 질문을 해보세요:
 
@@ -148,7 +277,18 @@ link: "https://medium.com/code-like-a-girl/too-many-meetings-at-work-heres-how-t
 
 이 연습을 꾸준히 하면 업무를 하면서 정신을 차리고 주변 사람들에게 가치를 더할 수 있을 거예요. 다음에 "모임이 너무 많다"고 느낄 때, 잠시 멈춰서 그 말이 스며들게 하고 즉시 이곳에 개요된 전략을 반복할 시간을 캘린더에 예약하세요. 행운을 빕니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - "너무 많은 회의를 한다고 느껴진다면, 그것이 당신의 직무의 일부인 것으로 가정하지 마세요. 아마도 당신과 당신의 팀에 가치를 더하지 않는 회의에 참석하고 있을 수 있습니다.
 - 회의에 쓰는 시간을 포함하여 시간을 더 잘 관리해야 합니다. 다른 사람들은 당신 대신 이를 처리할 수 없습니다.

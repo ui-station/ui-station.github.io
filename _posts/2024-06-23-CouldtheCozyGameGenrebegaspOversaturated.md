@@ -3,13 +3,12 @@ title: "편안한 게임 장르, 이제 과포화 상태일까"
 description: ""
 coverImage: "/assets/img/2024-06-23-CouldtheCozyGameGenrebegaspOversaturated_0.png"
 date: 2024-06-23 22:11
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-CouldtheCozyGameGenrebegaspOversaturated_0.png
 tag: Tech
 originalTitle: "Could the Cozy Game Genre be *gasp* Oversaturated?"
 link: "https://medium.com/cros-s-play/could-the-cozy-game-genre-be-gasp-oversaturated-3f813f5cb851"
 ---
-
 
 저번에 소개한 Cozy Games에 관한 제 마지막 글 이후로 (얼마 지나지 않은) 새해에는 해당 장르에 더 많은 관심이 집중되고 있음을 알게 되었습니다. 2024년에는 YouTube 동영상과 글로 20개 이상의 새로운 cozy game 게임이 출시되는 것을 볼 수 있는데, cozy game 장르가 너무 일찍 포화되고 있는 것은 아닌가하는 의문이 듭니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/cros-s-play/could-the-cozy-game-genre-be-gasp-oversatu
 
 The Sims, Animal Crossing 시리즈, Story of Seasons 프랜차이즈 등을 통해 언제나 편안한 게임의 개념이 존재해 왔지만, "cozy games"라는 용어는 지난 2년간 큰 관심을 받아 지난 크리스마스에 정점을 찍었습니다. 빠른 Google 트렌드 검색 결과는 2020년 이후로 용어의 인기가 증가하고 있음을 보여주고 있으며, 최근 Animal Crossing 출시로 인해 이러한 트렌드가 증가한 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-CouldtheCozyGameGenrebegaspOversaturated_0.png" />
 
@@ -29,7 +39,18 @@ The Sims, Animal Crossing 시리즈, Story of Seasons 프랜차이즈 등을 통
 
 그래서 우리가 이미 존재하는 안락 게임 풀에 이미 과잉인 것으로 보이는 똑같은 농장 기능, 동일한 도구 및 동일한 제어를 통합한 또 다른 게임을 만나면, 우리는 새로운 장르와 기존과 이미 많은 겹치는 메타포에 보입니다. 해당 장르는 현재 너무 혼잡한 것으로 보입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 새로운 장르 흐름
 
@@ -39,7 +60,18 @@ The Sims, Animal Crossing 시리즈, Story of Seasons 프랜차이즈 등을 통
 
 그렇다, 특히 농업 매커니즘의 유입이 2023년에 급증했지만, 게임들은 더욱더 "아늑함"을 느끼게 하는 다양한 주제나 매커니즘을 탐구하고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-CouldtheCozyGameGenrebegaspOversaturated_1.png)
 
@@ -49,7 +81,18 @@ The Sims, Animal Crossing 시리즈, Story of Seasons 프랜차이즈 등을 통
 
 ## 걱정 마세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아늑한 게임 장르가 포화 상태에 이르렀을까요? 어쩌면 그럴 수도 있어요. 회사들이 트렌드를 잡아들고, Stardew Valley의 성공을 모방하려고 노력하고 있기는 한 것 같아요. 그러나 또한 우리에게 안락한 느낌을 줄 수 있는 매체를 통해 자신들의 이야기를 전하고 싶어하는 개발자들도 있다고 믿어요.
 

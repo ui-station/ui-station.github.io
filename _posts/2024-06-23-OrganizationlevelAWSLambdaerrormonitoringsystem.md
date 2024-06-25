@@ -3,13 +3,12 @@ title: "조직 수준에서 AWS Lambda 오류 모니터링 시스템 구축하�
 description: ""
 coverImage: "/assets/img/2024-06-23-OrganizationlevelAWSLambdaerrormonitoringsystem_0.png"
 date: 2024-06-23 22:36
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-OrganizationlevelAWSLambdaerrormonitoringsystem_0.png
 tag: Tech
 originalTitle: "Organization level AWS Lambda error monitoring system"
 link: "https://medium.com/@rrakshithgr/organization-level-aws-lambda-error-monitoring-system-39bf37c92373"
 ---
-
 
 AWS Lambda, Amazon Web Services (AWS)의 일부입니다. 이것은 응용 프로그램이 구축되고 배포되는 방식을 변경합니다. 쉬운 확장성, 비용 절감 및 간편한 관리와 같은 많은 장점을 제공합니다. Lambda를 사용하면 서버 관리 걱정 없이 코드 작성에 집중할 수 있습니다.
 
@@ -19,7 +18,18 @@ AWS Lambda, Amazon Web Services (AWS)의 일부입니다. 이것은 응용 프�
 
 ## 솔루션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전에 설명한 상황을 해결하기 위한 한 가지 솔루션은 CloudWatch의 Log 그룹 수준 구독 필터라는 기능을 활용하는 것입니다. 이러한 필터를 사용하면 사용자가 CloudWatch Logs에서 로그 이벤트의 실시간 스트림에 액세스하고 해당 이벤트를 Amazon Kinesis 스트림, Amazon Data Firehose 스트림 또는 AWS Lambda와 같은 다른 서비스로 라우팅하여 사용자 지정 처리, 분석 또는 다른 시스템과의 통합을 수행할 수 있습니다. 수신 서비스로 전송된 로그 이벤트는 base64로 인코딩되어 gzip 형식으로 압축됩니다.
 
@@ -29,7 +39,18 @@ AWS Lambda, Amazon Web Services (AWS)의 일부입니다. 이것은 응용 프�
 
 ## 회원 계정
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리의 상황에서는 로그 이벤트를 AWS Lambda 함수 (회원 람다로 지칭)로 라우팅할 것입니다. 이 Lambda 함수는 이벤트를 압축 해제하고 계정 ID, 로그 그룹, 지역 및 오류 메시지와 같은 필수 정보를 추출할 것입니다. 이 정보는 회원 람다에 의해 마스터 계정 내에 위치한 SQS 큐로 배치되며 교차 계정 액세스 역할을 통해 지원됩니다.
 
@@ -39,7 +60,18 @@ Lambda 함수를 위해 관련 로그 그룹을 모니터링하려면 로그 그
 
 이는 대상 Lambda 역할 ARN을 지정하고 적절한 로그 형식을 선택하고 필터 패턴을 정의하는 것을 포함합니다 (사용 사례에 따라 옵션이 다를 수 있습니다). 이 경우 로그 형식으로 'other'를 선택했습니다. 필터 패턴은 임의의 로그 이벤트에서 'ERROR' 단어의 발생을 감지하도록 구성되어 있습니다 (필터 패턴을 요구 사항에 따라 맞춤화할 수 있으며 참조할 수 있는 이 링크를 참조하세요). 감지되면 지정된 Lambda 함수 (회원 람다)가 트리거됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지정된 필터 패턴을 구독 필터에 감지하면 Member 람다가 트리거됩니다. 그 후 람다는 이벤트를 이전에 설명한 대로 처리하며, 오류 메시지를 짧은 오류 메시지(액세스 거부 또는 지원하지 않는 작업과 같은 주요 오류 키워드가 포함된)와 긴 오류 메시지(전체 오류 메시지 포함) 두 가지 유형으로 분류합니다. 마지막으로 처리된 데이터를 중앙 SQS 큐로 전송합니다.
 
@@ -49,7 +81,18 @@ Lambda 함수를 위해 관련 로그 그룹을 모니터링하려면 로그 그
 
 큐에서 동일한 오류 메시지를 찾았을 때, 마스터 람다는 먼저 해당 레코드에 대해 오류가 이미 테이블에 있는지 확인합니다. 만약 있다면 해당 레코드의 발생 횟수가 1씩 증가됩니다. 그러나 테이블에서 오류를 찾을 수 없다면, 해당 오류에 대한 새 레코드가 생성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DynamoDB 테이블에 로그된 오류가 있으므로 발생 빈도에 기반한 알림 시스템을 구현할 수 있습니다. 이 시스템을 통해 오류는 심각도 수준으로 분류됩니다. 예를 들어, 발생 횟수가 10 미만이면 낮은 심각도로 분류되고, 10에서 20회 사이에 발생하면 높은 심각도로 간주되며, 20에서 30회 사이에 발생하면 중요한 심각도로 전환됩니다. 중요한 임계값에 도달하면 즉시 지정된 부서나 개발자에게 경고가 전송됩니다. 이 알림 메커니즘은 SES 템플릿화된 이메일을 사용하여 구현됩니다.
 
@@ -59,7 +102,18 @@ DynamoDB 테이블에 로그된 오류가 있으므로 발생 빈도에 기반�
 
 ## 모니터링 시스템에 참여하는 중요한 람다의 신뢰성 보장하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마스터 람다, 멤버 람다 및 알림 람다와 같은 함수들은 매우 중요합니다. 이러한 함수들은 오류 없이 작동해야하며, 오류가 발생할 경우 빠른 조치를 취하기 위해 즉시 알림이 발송되어야 합니다. 이를 위해 이러한 람다 함수들의 코드를 try-catch 블록으로 캡슐화합니다. catch 블록에서 잡힌 오류의 경우, 개발자들에게 즉시 알림을 보냄으로써 신속한 조치를 취할 수 있도록 합니다. 이런 선제적인 접근은 모니터링 시스템의 신뢰성과 견고성을 향상시킵니다.
 
@@ -69,7 +123,18 @@ DynamoDB 테이블에 로그된 오류가 있으므로 발생 빈도에 기반�
 
 ## 최선의 실천 방안
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코드 작성시 로거 사용하기:
 
@@ -79,7 +144,18 @@ DynamoDB 테이블에 로그된 오류가 있으므로 발생 빈도에 기반�
 
 - 람다 함수를 배포할 때 CloudFormation 템플릿에서 생성된 로그 그룹에 구독 필터를 추가하세요. 이 설정은 로그 이벤트의 실시간 모니터링 및 필터링을 가능케 하며, 오류를 빠르게 감지하고 대응할 수 있도록 지원합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 필터 가능하지 않은 오류 걸러내기:
 
@@ -89,7 +165,18 @@ DynamoDB 테이블에 로그된 오류가 있으므로 발생 빈도에 기반�
 
 최근 업데이트에서 AWS가 계정 수준 구독 필터를 발표했습니다. 이 새로운 기능은 단일 계정 수준 구독 필터를 사용하여 Amazon CloudWatch Logs로 흡수되는 실시간 로그 이벤트를 Amazon Kinesis Data Stream, Amazon Kinesis Data Firehose 또는 AWS Lambda로 전달하거나 사용자 지정 처리, 분석 또는 다른 목적지로 전달할 수 있게 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고객들은 현재 각 로그 그룹마다 구독 필터를 설정해야 합니다. 하지만 계정 수준의 구독 필터를 사용하면, 전체 계정을 위한 단일 구독 필터 정책을 설정함으로써 여러 개 또는 모든 로그 그룹에 인입된 로그를 외부로 전달할 수 있습니다. 이는 시간을 절약하고 관리 부담을 줄여줍니다.
 
@@ -99,6 +186,17 @@ DynamoDB 테이블에 로그된 오류가 있으므로 발생 빈도에 기반�
 
 ![CloudFormation Code](/assets/img/2024-06-23-OrganizationlevelAWSLambdaerrormonitoringsystem_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 블로그를 읽어주셔서 감사합니다. 더 많은 유익한 콘텐츠를 받고 싶다면 저를 Medium과 LinkedIn에서 팔로우해주세요.

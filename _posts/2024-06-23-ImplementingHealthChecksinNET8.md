@@ -3,13 +3,12 @@ title: "NET 8에서 헬스 체크 구현하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-ImplementingHealthChecksinNET8_0.png"
 date: 2024-06-23 22:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ImplementingHealthChecksinNET8_0.png
 tag: Tech
 originalTitle: "Implementing Health Checks in .NET 8"
 link: "https://medium.com/@jeslurrahman/implementing-health-checks-in-net-8-c3ba10af83c3"
 ---
-
 
 <img src="/assets/img/2024-06-23-ImplementingHealthChecksinNET8_0.png" />
 
@@ -19,7 +18,18 @@ This article will delve into how to implement health checks in a .NET 8 web appl
 
 ## Why Health Checks in ASP.NET Applications?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 헬스 체크는 애플리케이션 내에서 문제점을 사전에 식별할 수 있게 도와주어 사용자에 영향을 미치기 전에 그 문제를 해결할 수 있는 기회를 주는 중요한 도구입니다. 정기적으로 애플리케이션 구성 요소들의 건강 상태를 확인하는 것은 더욱 신뢰성이 높고 견고한 시스템을 유지할 수 있도록 도와줍니다.
 
@@ -29,16 +39,27 @@ ASP.NET 애플리케이션을 개발할 때, 이는 종종 데이터베이스, �
 
 ## 데이터베이스 예제를 깊게 들어가 ASP.NET 헬스 체크가 어떻게 더 큰 규모에서 중요한지 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 데이터베이스 연결을 설정하기 전에 데이터베이스의 가용성을 확인할 수 있다면 어떨까요?
-— — 애플리케이션의 중요한 하위 시스템의 상태와 가용성을 사전에 확인할 수 있는 기능을 갖고 있다면 어떨까요? 데이터베이스 연결이 끊겨 갑작스럽게 애플리케이션 오류가 발생하는 대신, 가용성을 선행적으로 확인할 수 있다면 좋지 않을까요?
+  — — 애플리케이션의 중요한 하위 시스템의 상태와 가용성을 사전에 확인할 수 있는 기능을 갖고 있다면 어떨까요? 데이터베이스 연결이 끊겨 갑작스럽게 애플리케이션 오류가 발생하는 대신, 가용성을 선행적으로 확인할 수 있다면 좋지 않을까요?
 - 데이터베이스 가용성 시나리오를 우아하게 처리할 수 있는 애플리케이션이 있다면 어떨까요?
-— — 데이터베이스에 접속할 수 없는 상황에서 사용자 친화적인 메시지를 표시하는 기능을 애플리케이션이 갖고 있다면 어떨까요? 사용자들을 혼란스럽게 만드는 암호화된 오류 메시지가 아닌 중요 구성 요소의 가용성을 원활하게 전달할 수 있다면 사용자 경험이 향상되지 않을까요?
+  — — 데이터베이스에 접속할 수 없는 상황에서 사용자 친화적인 메시지를 표시하는 기능을 애플리케이션이 갖고 있다면 어떨까요? 사용자들을 혼란스럽게 만드는 암호화된 오류 메시지가 아닌 중요 구성 요소의 가용성을 원활하게 전달할 수 있다면 사용자 경험이 향상되지 않을까요?
 - 가용하지 않을 때 대비해 대체 데이터베이스로 원활하게 전환할 수 있다면 어떨까요?
-— — 주 데이터베이스가 가용하지 않을 경우 대비하여 대체 데이터베이스로 순조롭게 전환할 수 있는 유연성을 고려해보세요. 이는 애플리케이션의 연속성을 유지할 뿐만 아니라 사용자들이 최소한의 중단이 발생하도록 보장합니다.
+  — — 주 데이터베이스가 가용하지 않을 경우 대비하여 대체 데이터베이스로 순조롭게 전환할 수 있는 유연성을 고려해보세요. 이는 애플리케이션의 연속성을 유지할 뿐만 아니라 사용자들이 최소한의 중단이 발생하도록 보장합니다.
 - 상태 확인에 따라 대체 환경으로 스위치할 로드 밸런서를 지시할 수 있다면 어떨까요?
-— — 애플리케이션의 상태를 로드 밸런서에게 전달할 수 있는 능력을 상상해보세요. 데이터베이스가 없거나 다른 심각한 문제로 인해 애플리케이션이 건강하지 않다고 판단되면 로드 밸런서는 지능적으로 트래픽을 대체 환경으로 리디렉션하여 지속적인 서비스 가용성을 보장합니다.
+  — — 애플리케이션의 상태를 로드 밸런서에게 전달할 수 있는 능력을 상상해보세요. 데이터베이스가 없거나 다른 심각한 문제로 인해 애플리케이션이 건강하지 않다고 판단되면 로드 밸런서는 지능적으로 트래픽을 대체 환경으로 리디렉션하여 지속적인 서비스 가용성을 보장합니다.
 
 ASP.NET Health Checks를 통해 다음을 수행할 수 있습니다:
 
@@ -48,7 +69,18 @@ ASP.NET Health Checks를 통해 다음을 수행할 수 있습니다:
 
 이러한 건강 확인 기능은 느슨하게 연결된 애플리케이션이 종속되어 있는 시스템의 건강을 알아야 하는 마이크로서비스 환경을 위해 특별히 디자인되었습니다. 그러나 다양한 하위 시스템과 인프라에 의존하는 단일 애플리케이션에서도 유용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # .Net 8에서 건강 점검을 구현하는 방법
 
@@ -58,10 +90,22 @@ ASP.NET Health Checks를 통해 다음을 수행할 수 있습니다:
 
 이 섹션은 응용 프로그램의 건강 점검을 위한 기초를 구축하는 데 목적이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NuGet 패키지 설치 필요
 다음 NuGet 패키지가 설치되어 있는지 확인하세요:
+
 1. Microsoft.Extensions.Diagnostics.HealthChecks
 
 Health Checks 서비스 추가
@@ -80,7 +124,18 @@ https://localhost:44333/swagger/feedbackservice/index.html
 웹 API의 상태를 확인하려면 다음으로 이동하세요:
 https://localhost:44333/api/health
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 엔드포인트를 호출한 뒤에 웹 API가 "Healthy"임을 확인할 수 있습니다.
 
@@ -90,13 +145,25 @@ https://localhost:44333/api/health
 
 # 섹션 2: 건강 점검으로 구현
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 고객님을 위한 개인화된 건강 체크를 통한 첨단 모니터링
 이 섹션에서는 .NET 8 웹 API의 중요 구성 요소를 모니터링하는 데 맞춤형 건강 체크를 구현하는 구체적인 예시를 살펴보겠습니다. 이러한 체크는 기본 설정을 뛰어넘어 응용 프로그램의 건강 상태에 대한 보다 상세하고 통찰력 있는 관점을 제공합니다.
 
 필요한 NuGet 패키지
 다음 NuGet 패키지가 설치되어 있는지 확인하세요:
+
 1. Microsoft.Extensions.Diagnostics.HealthChecks
 2. AspNetCore.HealthChecks.SqlServer
 3. AspNetCore.HealthChecks.UI
@@ -108,7 +175,18 @@ https://localhost:44333/api/health
 
 ## a. 데이터베이스 건강 체크
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 데이터베이스 헬스 체크는 애플리케이션의 웰빙을 모니터링하는 중요한 측면입니다. 특히 데이터 저장 및 검색을 위해 데이터베이스를 사용하는 경우에는 더욱 중요합니다. 이 헬스 체크는 데이터베이스가 연결 가능하고 쿼리에 응답할 수 있는지 확인합니다.
 
@@ -123,10 +201,10 @@ public static void ConfigureHealthChecks(this IServiceCollection services, IConf
     //services.AddHealthChecksUI();
     services.AddHealthChecksUI(opt =>
     {
-        opt.SetEvaluationTimeInSeconds(10); //체크 간 시간(초)    
-        opt.MaximumHistoryEntriesPerEndpoint(60); //체크 히스토리 최대    
-        opt.SetApiMaxActiveRequests(1); //API 요청 동시성    
-        opt.AddHealthCheckEndpoint("피드백 API", "/api/health"); //헬스 체크 API 맵핑    
+        opt.SetEvaluationTimeInSeconds(10); //체크 간 시간(초)
+        opt.MaximumHistoryEntriesPerEndpoint(60); //체크 히스토리 최대
+        opt.SetApiMaxActiveRequests(1); //API 요청 동시성
+        opt.AddHealthCheckEndpoint("피드백 API", "/api/health"); //헬스 체크 API 맵핑
 
     })
         .AddInMemoryStorage();
@@ -136,7 +214,18 @@ public static void ConfigureHealthChecks(this IServiceCollection services, IConf
 `configuration["ConnectionStrings:DefaultConnection"]`은 구성에서 연결 문자열을 검색하여 데이터베이스 연결 구성을 유연하게 설정할 수 있습니다.
 `failureStatus: HealthStatus.Unhealthy`는 헬스 체크 실패 시 전체 헬스 상태를 건강하지 않음으로 표시해야 함을 나타냅니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로그램.cs에서 ConfigureHealthChecks()를 구성하세요.
 
@@ -150,7 +239,7 @@ app.MapHealthChecks("/api/health", new HealthCheckOptions()
     Predicate = _ => true,
     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
 });
-app.UseHealthChecksUI(delegate (Options options) 
+app.UseHealthChecksUI(delegate (Options options)
 {
     options.UIPath = "/healthcheck-ui";
     options.AddCustomStylesheet("./HealthCheck/Custom.css");
@@ -162,7 +251,18 @@ Endpoint: /api/health
 
 <img src="/assets/img/2024-06-23-ImplementingHealthChecksinNET8_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 엔드포인트: /healthcheck-ui
 
@@ -173,7 +273,18 @@ Endpoint: /api/health
 다음으로, 원격 엔드포인트 및 메모리의 건강 상태를 확인하는 작업을 구현할 것입니다.
 RemoteHealthCheck.cs
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```csharp
 using Microsoft.Extensions.Diagnostics.HealthChecks;
@@ -214,8 +325,18 @@ namespace FeedbackService.Api
 
 마지막으로 API 서비스의 메모리 상태를 모니터링하는 health check을 구현해 봅시다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MemoryHealthCheck.cs
 
@@ -280,7 +401,18 @@ namespace FeedbackService.Api.HealthCheck
 
 이제 HealthCheck.cs 내부에서 RemoteHealthCheck.cs와 MemoryHealthCheck.cs를 구성합시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HealthCheck.cs
 
@@ -296,10 +428,10 @@ public static void ConfigureHealthChecks(this IServiceCollection services, IConf
     //services.AddHealthChecksUI();
     services.AddHealthChecksUI(opt =>
     {
-        opt.SetEvaluationTimeInSeconds(10); // 각 체크 사이의 시간(초)    
-        opt.MaximumHistoryEntriesPerEndpoint(60); // 체크 이력 최대 갯수    
-        opt.SetApiMaxActiveRequests(1); // API 요청 동시성    
-        opt.AddHealthCheckEndpoint("피드백 API", "/api/health"); // 헬스체크 API 매핑    
+        opt.SetEvaluationTimeInSeconds(10); // 각 체크 사이의 시간(초)
+        opt.MaximumHistoryEntriesPerEndpoint(60); // 체크 이력 최대 갯수
+        opt.SetApiMaxActiveRequests(1); // API 요청 동시성
+        opt.AddHealthCheckEndpoint("피드백 API", "/api/health"); // 헬스체크 API 매핑
 
     })
         .AddInMemoryStorage();
@@ -311,7 +443,18 @@ Endpoint: /api/health
 
 ![ImplementingHealthChecksin.NET8.4](/assets/img/2024-06-23-ImplementingHealthChecksinNET8_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Endpoint: /healthcheck-ui
 
@@ -321,7 +464,18 @@ Endpoint: /healthcheck-ui
 
 ![Resilient Applications](https://miro.medium.com/v2/resize:fit:996/1*ECmfhzVd4avHlD_B1-gocg.gif)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -331,6 +485,17 @@ Endpoint: /healthcheck-ui
 
 더 자세한 정보와 고급 구성에 대해서는 AspNetCore.Diagnostics.HealthChecks 저장소를 참조하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저자: Jeslur Rahman 😍

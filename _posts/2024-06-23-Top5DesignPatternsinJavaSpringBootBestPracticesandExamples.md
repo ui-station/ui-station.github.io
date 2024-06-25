@@ -3,13 +3,12 @@ title: "자바 스프링 부트에서 꼭 알아야 할 5가지 디자인 패턴
 description: ""
 coverImage: "/assets/img/2024-06-23-Top5DesignPatternsinJavaSpringBootBestPracticesandExamples_0.png"
 date: 2024-06-23 20:41
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-Top5DesignPatternsinJavaSpringBootBestPracticesandExamples_0.png
 tag: Tech
 originalTitle: "Top 5 Design Patterns in Java Spring Boot: Best Practices and Examples"
 link: "https://medium.com/@jackynote/top-5-design-patterns-in-java-spring-boot-best-practices-and-examples-002c45d3d331"
 ---
-
 
 ## 이것들은 저가 자주 사용하고 완전 사랑하는 디자인 패턴들이에요...
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@jackynote/top-5-design-patterns-in-java-spring-boot-b
 
 # 싱글톤 패턴
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 싱글톤 패턴은 클래스가 하나의 인스턴스만 가지고 있도록 보장하고 전역적인 접근 점을 제공합니다. 이는 데이터베이스 연결이나 캐싱 객체와 같은 리소스를 관리하는 데 유용합니다. 스프링 부트에서 이를 구현하는 방법은 다음과 같습니다:
 
@@ -44,7 +54,18 @@ public class DatabaseConnection {
 
 팩토리 메소드 패턴은 슈퍼클래스에서 객체를 생성하는 인터페이스를 제공하여 하위 클래스가 생성될 객체의 유형을 변경할 수 있도록 합니다. 이는 객체 생성 논리를 클라이언트 코드에서 분리하는 데 유용합니다. 스프링 부트에서 예시를 살펴봅시다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 public interface PaymentProcessor {
@@ -118,7 +139,18 @@ public class OrderService {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 데코레이터 패턴
 
@@ -153,7 +185,18 @@ public class LoggingDecorator implements DataService {
 
 # 전략 패턴:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 전략 패턴은 알고리즘 패밀리를 정의하고 각각을 캡슐화하여 상호 교환할 수 있도록 만드는 것을 말합니다. 여러 알고리즘을 상호 교환할 수 있는 경우에 유용합니다. 이를 Spring Boot에 구현해 보겠습니다:
 
@@ -200,6 +243,17 @@ public class CompressionContext {
 
 디자인 패턴은 Java 백엔드 개발자의 장비함에 있어 필수적인 도구입니다, 특히 Spring Boot와 같은 프레임워크와 함께 작업할 때 더욱 중요합니다. 이러한 패턴을 숙달하고 프로젝트에 적절히 적용함으로써 유지보수 및 확장 가능한 코드를 이해하고 구현하는 데 도움을 받을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 커피 한 모금 마셔보세요... ☕︎☕︎☕︎

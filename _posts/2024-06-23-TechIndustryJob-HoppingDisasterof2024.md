@@ -3,14 +3,12 @@ title: "2024년 테크 산업 이직 재앙 왜 지금이 이직의 최악의 �
 description: ""
 coverImage: "/assets/img/2024-06-23-TechIndustryJob-HoppingDisasterof2024_0.png"
 date: 2024-06-23 21:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TechIndustryJob-HoppingDisasterof2024_0.png
 tag: Tech
 originalTitle: "Tech Industry Job-Hopping Disaster of 2024"
 link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-of-2024-ed66df566610"
 ---
-
-
 
 ![Tech Industry Job Hopping Disaster of 2024](/assets/img/2024-06-23-TechIndustryJob-HoppingDisasterof2024_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 2024년에는 이러한 문제가 더욱 심각해졌습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 혁신과 불안의 패러독스
 
@@ -31,7 +39,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 ![이미지](/assets/img/2024-06-23-TechIndustryJob-HoppingDisasterof2024_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 바닥까지 경주
 
@@ -41,7 +60,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 회사들은 직원들이 해당 직책에 머무르지 않을 것을 알기 때문에 그들에게 투자하지 않습니다. 직원들은 이동함으로써 가장 큰 혜택을 얻는다는 것을 알고 있기 때문에 그렇게 행동합니다. 이결과 모두에게 좋지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소프트웨어 개발자 중 약 45%가 평균 근속 기간이 1~2년 사이이며, 놀라운 사실은 69%가 2년 미만의 근속 기간을 가지고 있습니다. 높은 이직률은 채용 및 교육 비용 증가, 생산성 감소, 그리고 기업 문화에 부정적인 영향을 끼치며 궁극적으로 수익에 영향을 미칠 수 있습니다.
 
@@ -51,7 +81,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 이렇게 될 필요는 없습니다. 닌텐도 팀에서 볼 수 있는 응집력과 지속성을 칭찬받지 않을 수 없습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 맥스 니콜스(Max Nichols)가 Bungie에서 강조했듯이, "슈퍼 마리오 브라더스(Super Mario Bros.)"의 원래 개발자 다섯 명 중 네 명이 새로운 "슈퍼 마리오 브라더스 원더(Super Mario Bros. Wonder)"에 참여했다는 것을 언급했습니다. 닌텐도의 98.9% 잔류율은 지식 전달에 소요되는 시간을 최소화하고 고품질 사용자 중심 제품을 제공하는 팀의 능력을 최대화하는 육성 환경의 증거입니다.
 
@@ -61,7 +102,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 감원
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 레이아웃은 단기적으로 비용을 절감할 수 있지만, 가치 있는 지식과 경험을 잃는 것이 장기적으로 더 많은 비용을 지게 될 수도 있음을 알아야 합니다.
 
@@ -71,7 +123,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 고객을 중심으로 생각하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가끔은 고객이 원하는 것을 제공하는 것이 혁신적일 수 있어요.
 
@@ -81,7 +144,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 직원 만족
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최고의 회사는 자신들의 회사에서 일을 권장하는 직원들을 보유하고 있습니다. 직원들을 행복하게 유지하면, 그들은 더 많은 우수한 직원들이 합류할 수 있도록 격려할 것입니다.
 
@@ -91,7 +165,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 고 이직률에 대처하기 위해 기술 회사들은 채용 관행과 조직 가치를 재평가해야 합니다. 통합된 팀을 구축하고 유지하는 것이 중요할 것입니다. 닌텐도와 같이, 기업은 팀워크와 친밀함이 책임 있는 의사 결정과 책임감으로 이어지는 환경을 조성해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -101,7 +186,18 @@ link: "https://medium.com/@tsecretdeveloper/tech-industry-job-hopping-disaster-o
 
 # 저자 소개
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로 개발자 "The Secret Developer"는 Twitter에서 @TheSDeveloper로 찾을 수 있으며 정기적으로 Medium.com을 통해 기사를 게시합니다.
 

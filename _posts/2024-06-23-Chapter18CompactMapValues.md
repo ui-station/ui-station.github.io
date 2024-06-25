@@ -3,13 +3,12 @@ title: "제18장 CompactMapValues 사용 방법 Swift"
 description: ""
 coverImage: "/assets/img/2024-06-23-Chapter18CompactMapValues_0.png"
 date: 2024-06-23 21:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-Chapter18CompactMapValues_0.png
 tag: Tech
 originalTitle: "Chapter 18: CompactMapValues"
 link: "https://medium.com/@daviddoswell/chapter-18-compactmapvalues-67bd366d0281"
 ---
-
 
 CompactMapValues 개요
 
@@ -19,7 +18,18 @@ compactMapValues 함수는 Swift에서 제공되는 고차 함수로, 사전(Dic
 
 이 함수는 주어진 클로저를 사전의 각 값에 적용하고, nil이 아닌 결과만을 포함하는 새로운 사전을 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 함수는 사전(Dictionary)에서 데이터를 정리하고 변환할 때 특히 유용합니다. 여기서는 유효하지 않거나 누락된 값들을 걸러내면서 기존 값들을 변환하는 작업을 할 수 있습니다.
 
@@ -33,7 +43,18 @@ print(numericData) // 결과: ["age": 25]
 
 설명:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - let data: [String: String] = ["name": "Alice", "age": "25", "height": "five-five"] : 문자열 키와 값으로 구성된 딕셔너리를 정의합니다.
 - let numericData = data.compactMapValues { Int($0) }: compactMapValues 함수를 사용하여 딕셔너리의 값을 변환하며, 각 값을 정수로 변환을 시도합니다.
@@ -46,7 +67,18 @@ print(numericData) // 결과: ["age": 25]
 
 실제 사용 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용자 입력의 Dictionary를 정리하고 변환하기 위해 CompactMapValues를 사용하기:
 
@@ -63,7 +95,18 @@ print(validData) // 출력은 ["score": 42, "height": 170] 입니다.
 - 변환에 실패하면 nil 값이 제거됩니다.
 - print(validData): 결과인 딕셔너리 ["score": 42, "height": 170]를 출력합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주석: compactMapValues 함수는 특히 사용자 입력이나 외부 소스에서 가져온 데이터와 같이 유효하지 않거나 숫자가 아닌 값이 포함될 수 있는 경우에 딕셔너리를 변환하고 정리하는 데 특히 유용합니다.
 
@@ -73,7 +116,18 @@ compactMapValues를 사용하면 기존 값의 변환과 함께 유효하지 않
 
 compactMapValues 함수는 Swift에서 강력한 고차 함수로, 딕셔너리의 값들을 변환하고 정리하여 nil 결과를 제거할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시간 복잡도가 O(n)인 이것은 데이터 클리닝 및 변환 작업을 효율적으로 수행하는 방법을 제공합니다.
 

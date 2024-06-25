@@ -3,13 +3,12 @@ title: "React 초보자를 위한 필수 인터뷰 질문 10가지"
 description: ""
 coverImage: "/assets/img/2024-06-23-ReactInterviewQuestionsBeginnerlevel_0.png"
 date: 2024-06-23 21:12
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ReactInterviewQuestionsBeginnerlevel_0.png
 tag: Tech
 originalTitle: "React Interview Questions (Beginner level)"
 link: "https://medium.com/@sadrulvala.rayeen/react-interview-questions-beginner-level-3d868b846141"
 ---
-
 
 아래는 다음 면접에서 만날 수 있는 초보자 수준의 React 인터뷰 질문 몇 가지입니다. 행운을 빕니다, 이 자료가 면접 준비에 도움이 되기를 바랍니다.
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@sadrulvala.rayeen/react-interview-questions-beginner-
 
 React는 사용자 인터페이스를 구축하기 위한 JavaScript 라이브러리로, 컴포넌트 기반 아키텍처에 초점을 맞추고 성능을 위한 가상 DOM, 렌더링을 위한 JSX 구문 및 일방향 데이터 흐름을 제공합니다. 효율적인 대화형 웹 애플리케이션을 만드는 데 널리 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 웹 및 모바일 앱의 뷰 레이어를 구성 요소 기반의 선언적 방식으로 처리하는 데 사용됩니다.
 
@@ -32,7 +42,18 @@ React는 사용자 인터페이스를 구축하기 위한 JavaScript 라이브�
 
 ## JSX란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 JSX는 JavaScript XML의 약자입니다. JavaScript 구문을 확장하여 개발자가 JavaScript 내에서 HTML과 유사한 코드를 작성할 수 있게 해줍니다. JSX를 사용하면 React 애플리케이션에서 DOM 구조를 생성하고 조작하는 작업이 쉬워집니다.
 
@@ -42,7 +63,18 @@ JSX는 JavaScript XML의 약자입니다. JavaScript 구문을 확장하여 개�
 
 위 예시에서 `h1`Hello, JSX!`/h1`은 JSX 구문으로, 내부적으로 React.createElement(`h1`, null, `Hello, JSX!`)으로 변환됩니다. 이를 통해 React 애플리케이션에서 UI 구성 요소를 작성하고 시각화하는 프로세스가 간소화됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 리액트 Fragment란 무엇인가요?
 
@@ -55,7 +87,18 @@ JSX는 JavaScript XML의 약자입니다. JavaScript 구문을 확장하여 개�
 - 종류: 함수를 사용하는 Functional 컴포넌트와 ES6 클래스를 사용하는 Class 컴포넌트가 있습니다.
 - 사용: 컴포넌트는 자체 상태를 관리하며 (훅 또는 클래스 컴포넌트의 setState를 사용하여) 라이프사이클을 관리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 function Welcome(props) {
@@ -74,7 +117,18 @@ const element = <h1>Hello, world!</h1>;
 
 # 리액트에서 key란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 React.js에서 key 속성은 각 요소나 컴포넌트에 고유한 식별자를 제공하는 특별한 속성입니다. 배열이나 반복 가능한 자식 목록에서 각 요소나 컴포넌트에 고유한 식별자를 제공하는 특별한 속성입니다. 이는 React가 내부적으로 구성 요소의 UI를 효율적으로 관리하고 업데이트하는 데 사용됩니다. 목록에 항목이 추가, 제거 또는 재배열 될 때.
 
@@ -84,7 +138,18 @@ key의 목적:
 
 조정 최적화: React는 조정 프로세스(차이 알고리즘) 중에 키를 사용하여 DOM 업데이트를 최소화합니다. 각 항목에 안정적인 식별자가 있기 때문에 React는 UI를 효율적으로 업데이트할 수 있으며 변경되지 않은 구성 요소를 다시 렌더링하지 않거나 구성 요소 상태를 잃지 않고 업데이트할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # React에서의 '상태'란 무엇인가요?
 
@@ -94,7 +159,18 @@ React에서 '상태'는 컴포넌트가 내부 데이터를 추적할 수 있도
 
 React에서 '속성' (속성의 약어)은 한 컴포넌트에서 다른 컴포넌트로 데이터를 전달하는 방법입니다. 이는 JavaScript의 함수 인수나 다른 프로그래밍 언어의 매개변수와 유사합니다. 속성은 읽기 전용이며 컴포넌트를 보다 동적이고 재사용 가능하게 만들어 다른 값으로 구성할 수 있도록 돕습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 부모 컴포넌트에서 자식 컴포넌트로 전달되는 데이터입니다. 이들은 변경할 수 없으며(read-only), 컴포넌트를 사용자 정의하고 재사용할 수 있게 합니다.
 
@@ -102,8 +178,8 @@ React에서 '속성' (속성의 약어)은 한 컴포넌트에서 다른 컴포�
 
 ```js
 // ParentComponent.jsx
-import React from 'react';
-import ChildComponent from './ChildComponent';
+import React from "react";
+import ChildComponent from "./ChildComponent";
 
 function ParentComponent() {
   const name = "Alice";
@@ -118,11 +194,22 @@ function ParentComponent() {
 export default ParentComponent;
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```jsx
 // ChildComponent.jsx
-import React from 'react';
+import React from "react";
 
 function ChildComponent(props) {
   return <p>안녕, {props.name}!</p>;
@@ -139,7 +226,18 @@ export default ChildComponent;
 
 # 상태(state)와 프롭스(props)의 차이점은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 컴포넌트 자체에서 내부적으로 관리됩니다.
 - 클래스 컴포넌트에서 setState() 메서드를 사용하거나 함수형 컴포넌트에서 Hooks를 사용하여 업데이트할 수 있습니다.
@@ -159,7 +257,18 @@ export default ChildComponent;
 
 React에서 prop drilling은 상위 수준 컴포넌트에서 하위 수준 컴포넌트로 props가 중간에 위치한 컴포넌트를 통해 전달되는 프로세스를 의미합니다. 데이터가 여러 수준의 중첩된 컴포넌트로 전달되어야 하지만 일부 중간 컴포넌트가 실제로 데이터를 사용하지 않을 때 발생합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프롭 드릴링은 React에서 일반적으로 사용되는 패턴으로, 프롭스가 데이터가 필요한 깊게 중첩된 자식 컴포넌트에 도달하기 위해 여러 수준의 중첩된 컴포넌트를 통해 전달됩니다. 구현하기는 간단하지만 코드 복잡성과 효율성에 영향을 미칠 수 있습니다. React의 Context API나 상태 관리 라이브러리를 사용하면 복잡한 응용 프로그램에서 구성 요소 간 데이터를 관리하고 전달하는 더 깔끔한 솔루션을 제공할 수 있습니다.
 
@@ -169,7 +278,18 @@ React에서 prop drilling은 상위 수준 컴포넌트에서 하위 수준 컴�
 
 **제어 컴포넌트와 비제어 컴포넌트의 차이점은 무엇인가요?**
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제어 컴포넌트와 비제어 컴포넌트는 React에서 폼 입력 요소를 관리하는 두 가지 다른 방식입니다. 이 둘의 주된 차이점은 상태를 다루고 관리하는 방식에 있습니다, 특히 폼 데이터와 관련하여.
 
@@ -183,7 +303,18 @@ React에서 prop drilling은 상위 수준 컴포넌트에서 하위 수준 컴�
 
 # 가상 DOM이란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가상 DOM(Document Object Model)은 React 및 기타 가상 DOM 기반 라이브러리에서 사용되는 개념으로, 실제 DOM 트리의 가벼운 복사본을 나타냅니다. 이는 효율적으로 UI를 업데이트하기 위해 사용되는 프로그래밍 개념 및 추상화 계층입니다.
 

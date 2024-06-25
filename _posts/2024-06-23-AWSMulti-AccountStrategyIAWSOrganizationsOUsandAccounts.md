@@ -3,13 +3,12 @@ title: "AWS 멀티 계정 전략 I AWS Organizations, OUs, 그리고 계정 활�
 description: ""
 coverImage: "/assets/img/2024-06-23-AWSMulti-AccountStrategyIAWSOrganizationsOUsandAccounts_0.png"
 date: 2024-06-23 22:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AWSMulti-AccountStrategyIAWSOrganizationsOUsandAccounts_0.png
 tag: Tech
 originalTitle: "AWS Multi-Account Strategy I: AWS Organizations, OUs, and Accounts"
 link: "https://medium.com/towards-aws/aws-multi-account-strategy-i-aws-organizations-ous-and-accounts-a4860f475161"
 ---
-
 
 생산 시작 조직 및 고급 조직을 위한 권장되는 다중 계정 패턴 두 가지
 
@@ -19,7 +18,18 @@ link: "https://medium.com/towards-aws/aws-multi-account-strategy-i-aws-organizat
 
 # 다중 계정 전략의 필요성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 질문에 대답하기 위해서는 CTO의 관점으로 바꿔봐야 해요:
 
@@ -29,7 +39,18 @@ link: "https://medium.com/towards-aws/aws-multi-account-strategy-i-aws-organizat
 
 CTO로서, 보안 및 운영 정책도 고려해야 해요. 작업량은 종종 별도의 보안 요구 사항이 필요해, 별도의 제어 정책이 필요할 수 있어요. 예를 들어, 비생산 및 생산 환경은 일반적으로 서로 다른 보안 및 운영 정책이 필요해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여러 계정을 사용하여 비생산 및 생산 환경을 분리함으로써 각 환경의 리소스와 데이터가 다른 환경과 격리되어 안정성과 운영 관리가 강화됩니다.
 
@@ -39,7 +60,18 @@ CTO로서, 보안 및 운영 정책도 고려해야 해요. 작업량은 종종 
 
 이제 AWS에서 저희의 영향력을 확대하기 위해 멀티 계정 디자인 패턴을 탐색해 봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 서비스
 
@@ -52,7 +84,18 @@ CTO로서, 보안 및 운영 정책도 고려해야 해요. 작업량은 종종 
 
 ## 프로덕션 스타터 조직
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 패턴은 주요 초점이 생산 환경에서 업무를 지원하는 데 있는 최소한의 시작 환경을 나타냅니다.
 
@@ -62,7 +105,18 @@ CTO로서, 보안 및 운영 정책도 고려해야 해요. 작업량은 종종 
 
 모든 조직 단위(OU) 및 계정의 상위 컨테이너입니다. 여기에 적용된 관리 정책은 모든 OU 및 계정, 관리 계정을 포함하여 영향을 미칩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 보안 조직 단위
 
@@ -73,7 +127,18 @@ CTO로서, 보안 및 운영 정책도 고려해야 해요. 작업량은 종종 
 - 로그 아카이브 계정: 조직의 모든 계정에서 로그 데이터를 통합하는 중요한 역할을 합니다. 감사, 구성 규정 준수, 운영 로그를 위한 중앙화된 저장 공간을 제공합니다. AWS API 접근 로그(AWS 클라우드트레일), 리소스 변경 로그(AWS Config) 및 기타 보안 관련 로그를 통합하는 것이 권장됩니다. 또한 계정 간 VPC 피어링을 사용하는 경우 VPC 플로우 로그 데이터를 통합할 수 있습니다.
 - 보안 도구 (감사) 계정: AWS 보안 도구 및 콘솔에 대한 중앙집중식 위임된 관리자 액세스를 제공합니다. 보안 도구 계정은 조직의 모든 계정에 걸쳐 조사 목적의 뷰 전용 액세스를 제공합니다. AWS 보안 허브, Amazon GuardDuty, Amazon Macie, AWS AppConfig, AWS Firewall Manager, Amazon Detective, Amazon Inspector 및 IAM 액세스 분석기를 포함한 AWS 보안 서비스를 집중화하는 집계 지점 역할을 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 워크로드 OU
 
@@ -83,7 +148,18 @@ CTO로서, 보안 및 운영 정책도 고려해야 해요. 작업량은 종종 
 
 이 고급 조직 패턴은 일반 보안 서비스를 위한 보안 도구 환경, 더 격리된 워크로드 및 인프라 및 배포 환경 지원을 포함합니다. 추가 내용은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-AWSMulti-AccountStrategyIAWSOrganizationsOUsandAccounts_1.png" />
 
@@ -93,7 +169,18 @@ CTO로서, 보안 및 운영 정책도 고려해야 해요. 작업량은 종종 
 
 ## Infrastructure OU
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인프라스트럭처 OU는 조직 내에서 공유되거나 사용되는 인프라 자원을 보유한 AWS 계정을 보유하며 중앙 집중식 운영 및 모니터링을 포함한 계정 관리를 담당합니다. 이 OU는 인프라 및 운영 팀이 소유하고 관리합니다.
 
@@ -106,7 +193,18 @@ CTO로서, 보안 및 운영 정책도 고려해야 해요. 작업량은 종종 
 
 배포 OU에는 워크로드를 빌드, 유효성 검사, 프로모션 및 릴리스하는 데 지원되는 리소스와 워크로드가 포함됩니다. AWS에서 지속적 통합/지속적 전달 (CI/CD) 능력을 배포하고 관리할 때, 배포 OU 내의 프로덕션 배포 계정 집합을 사용하여 CI/CD 관리 능력을 보유하는 것이 권장됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료
 

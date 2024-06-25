@@ -3,13 +3,12 @@ title: "클라우드 제공 로드밸런서 없이 Kong과 Gateway를 사용하�
 description: ""
 coverImage: "/assets/img/2024-06-23-UsingKongtoaccessKubernetesservicesusingaGatewayresourcewithnocloudprovidedLoadBalancer_0.png"
 date: 2024-06-23 23:10
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UsingKongtoaccessKubernetesservicesusingaGatewayresourcewithnocloudprovidedLoadBalancer_0.png
 tag: Tech
 originalTitle: "Using Kong to access Kubernetes services, using a Gateway resource with no cloud provided LoadBalancer"
 link: "https://medium.com/@martin.hodges/using-kong-to-access-kubernetes-services-using-a-gateway-resource-with-no-cloud-provided-8a1bcd396be9"
 ---
-
 
 ## 이 기사에서는 쿠버네티스 클러스터 내에서 Kong을 API 게이트웨이로 배포하여 서비스에 관리된 액세스를 제공하는 방법을 살펴봅니다. 이를 클라우드 서비스에서 수행합니다. 이 클라우드 서비스는 쿠버네티스 호환 외부 로드 밸런서 서비스를 제공하지 않습니다. 또한 Ingress 리소스 대신 최신 Kubernetes Gateway를 사용합니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@martin.hodges/using-kong-to-access-kubernetes-service
 
 이 기사에서는 Kubernetes 클러스터에 Kong API 게이트웨이를 추가하여 서비스에 액세스하는 방법을 살펴봅니다. 할 일이 꽤 많기 때문에 이 기사는 좀 길지만, API 게이트웨이의 역할에 대한 이론 부분을 별도의 기사로 분리했습니다. API 게이트웨이의 역할을 이해하지 못하신다면 먼저 해당 기사를 읽는 것을 권장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kong은 신뢰할 만한 엔터프라이즈급 API 게이트웨이이지만 설정하기가 매우 까다로울 수 있습니다. 이 기사의 끝에서 문제를 디버그하는 방법에 대한 일부 힌트를 제공하겠습니다. 이 기사에서 설계를 조정하는 경우, 이름과 포트를 올바르게 구성했는지 확인하세요.
 
@@ -29,9 +39,20 @@ Kubernetes 네트워킹은 복잡한 주제이며 여기서 다루기 어렵지�
 
 ![네트워크 디자인](/assets/img/2024-06-23-UsingKongtoaccessKubernetesservicesusingaGatewayresourcewithnocloudprovidedLoadBalancer_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-이전 기사를 따라오셨다면, 이제 이진 레인(또는 다른 클라우드 제공업체) 서버에 Kubernetes 클러스터가 설치되어 있어야 합니다. 인터넷에서 접근이 불가능한 가상 사설 클라우드 (VPC) 개인 서브넷에 세 개의 노드가 설치되어 있을 것입니다. 이러한 노드들은 인터넷을 통해 접속이 가능한 전용 VPN을 통해서만 연결됩니다(위에는 표시되지 않음). 인터넷 및 VPC 인터페이스를 모두 가지고 있는 게이트웨이 서버가 있어서, 인터넷에서 클러스터로 들어오는 접속(inress)과 클러스터에서 인터넷으로 나가는 접속(egress)을 제공합니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+이전 기사를 따라오셨다면, 이제 이진 레인(또는 다른 클라우드 제공업체) 서버에 Kubernetes 클러스터가 설치되어 있어야 합니다. 인터넷에서 접근이 불가능한 가상 사설 클라우드 (VPC) 개인 서브넷에 세 개의 노드가 설치되어 있을 것입니다. 이러한 노드들은 인터넷을 통해 접속이 가능한 전용 VPN을 통해서만 연결됩니다(위에는 표시되지 않음). 인터넷 및 VPC 인터페이스를 모두 가지고 있는 게이트웨이 서버가 있어서, 인터넷에서 클러스터로 들어오는 접속(inress)과 클러스터에서 인터넷으로 나가는 접속(egress)을 제공합니다.
 
 기본 네트워크 토폴로지가 이제 갖추어 졌습니다. 이제 우리는 서비스가 외부 세계에 제공하는 API를 관리할 수 있기를 원합니다. 이 작업은 Kong Gateway API를 통해 수행됩니다.
 
@@ -39,7 +60,18 @@ Kubernetes 네트워킹은 복잡한 주제이며 여기서 다루기 어렵지�
 
 AWS, 구글 클라우드 또는 Azure와 같은 풀 서비스 제공업체를 사용하면, LoadBalancer 유형의 Kubernetes 서비스를 사용하여 인터넷 연결이 자동으로 생성되는 방식으로 Kubernetes를 설정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 바이너리 레인에는 로드 밸런서 서비스가 있지만 쿠버네티스를 통해 관리할 수는 없으므로 로드 밸런서를 직접 생성하고 구성하거나 고유한 인그레스 포인트를 만들어야 합니다. 특정 클라우드 제공 업체의 기능에 구속되지 않기 위해, 저는 개인적으로 내 gw 서버에서 NGINX 역방향 프록시를 실행하여 고유한 인그레스 포인트를 만드는 것을 선호합니다.
 
@@ -50,7 +82,18 @@ AWS, 구글 클라우드 또는 Azure와 같은 풀 서비스 제공업체를 �
 
 Kong이 NodePort 서비스로 노출될 것이므로 클러스터의 모든 노드에서 액세스할 수 있습니다. 이를 통해 NGINX가 노드 간 요청을 로드 밸런싱할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서비스 자체가 사용 가능한 파드 전체에 무작위로 로드 밸런싱을 수행하므로 NGINX에 의한 로드 밸런싱이 노드 장애나 과부하 상황을 견딜 목적으로만 사용된다는 것을 유의한 점입니다. 서비스 로드 밸런싱에 대해 더 읽어보실 수 있습니다.
 
@@ -60,8 +103,18 @@ Kong이 NodePort 서비스로 노출될 것이므로 클러스터의 모든 노�
 
 쿠버네티스 서비스는 하나 이상의 파드가 제공하는 서비스에 대한 액세스를 허용합니다. 이를 통해 파드가 종료되고 재예약되더라도 특정 노드에서 요청이 발생하더라도 서비스가 계속하여 요구에 따른 대로 요청을 라우팅하는 단일 접점으로 유지됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-UsingKongtoaccessKubernetesservicesusingaGatewayresourcewithnocloudprovidedLoadBalancer_1.png)
 
@@ -76,8 +129,18 @@ Kong이 NodePort 서비스로 노출될 것이므로 클러스터의 모든 노�
 
 # API 게이트웨이
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NGINX 게이트웨이와 쿠버네티스 서비스는 서비스에 대한 외부 인터페이스를 제공하는 데 도움이 되지만 기능이 제한적이며 수동으로 설정해야 합니다.
 
@@ -87,7 +150,18 @@ API 게이트웨이는 이 문제를 해결하는 클러스터 구성 요소입�
 
 API 게이트웨이는 클러스터의 일부로 있기 때문에 클러스터 내 리소스의 변경에 따라 자동으로 구성될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Kong API Gateway
 
@@ -97,8 +171,18 @@ Kong은 쿠버네티스 커뮤니티와 적극적으로 협력하여 클러스�
 
 이것이 Kong이 어떻게 작동하는지 대략적으로 설명했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-UsingKongtoaccessKubernetesservicesusingaGatewayresourcewithnocloudprovidedLoadBalancer_3.png)
 
@@ -108,8 +192,18 @@ Kong은 Kubernetes 리소스 매니페스트에서 정적으로 또는 데이터
 
 Kong은 성숙한 플러그인 기능을 갖추고 있습니다. 이를 통해 제3자가 Kong의 플러그인으로 기능 확장을 개발할 수 있습니다. 플러그인은 트래픽 흐름에 위치하여 속도 제한 및 인증과 같은 작업에 도움을 줄 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 Kong을 관리하기 위해 플러그인, 구성 등을 관리할 수 있도록 Management UI를 제공합니다. Management UI는 Admin API를 통해 Kong과 상호 작용합니다.
 
@@ -119,7 +213,18 @@ Kong에 대해 상세한 문서를 살펴보면 여기서 다룰 수 있는 내�
 
 DB-less 설치가 어떻게 작동하는지 이해하는 것이 중요하다고 생 생각합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 구성에서 Kong은 두 가지 구성요소를 설치합니다:
 
@@ -130,7 +235,18 @@ DB-less 설치가 어떻게 작동하는지 이해하는 것이 중요하다고 
 
 KIC는 내부 Kubernetes API를 사용하여 Kubernetes 클러스터에 대한 정보를 얻습니다. 이 API는 클러스터를 관리하는 데 사용되는 것으로, kubectl을 사용할 때 실제로는 Kubernetes API와 상호 작용합니다. 이 API를 통해 Kong 및 kubectl과 같은 애플리케이션은 클러스터에 대한 정보를 찾거나 변경할 수 있습니다. KIC는 이 API를 통해 백업 데이터베이스가 필요 없이 클러스터 리소스 파일과 Gateway를 동기화할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테스트할 서비스
 
@@ -140,7 +256,18 @@ Kong 배포에 들어가기 전에 Kong을 통해 접근할 수 있는 서비스
 
 2개의 서비스를 생성하는 것을 제안합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 안녕하세요 world 1: 2개의 레플리카
 - 안녕하세요 world 2: 1개의 레플리카
@@ -151,7 +278,18 @@ Kong 배포에 들어가기 전에 Kong을 통해 접근할 수 있는 서비스
 
 내가 여기서 설명하는 예제에서, 내 두 서비스는 다음과 같이 위치해 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - http://`node IP 주소`:30082 — 'Hello World 1 !!'라고 응답합니다.
 - http://`node IP 주소`:30082 — 'Hello World 2 !!'라고 응답합니다.
@@ -162,7 +300,18 @@ Kong 배포에 들어가기 전에 Kong을 통해 접근할 수 있는 서비스
 
 # 쿠버네티스 게이트웨이 자원 생성하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DB 미사용 모드에서는 Kong API 게이트웨이를 구성할 때 Kubernetes Ingress 또는 HTTPRoute 리소스를 생성합니다. 이러한 리소스를 클러스터에 적용하면 Kong이 프록시 구성 요소 내에서 라우팅 규칙을 정의하는 데 사용됩니다. 이를 통해 들어오는 트래픽이 서비스로 전달됩니다.
 
@@ -174,7 +323,18 @@ Ingress 리소스는 작동하지만 기능이 제한적입니다. Kubernetes �
 kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.0.0/standard-install.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 본 문서에서는 사용하지 않을 실험적 기능 몇 가지를 소개해드리겠습니다만, 참고용으로 여기에 추가해두었습니다.
 
@@ -186,7 +346,18 @@ kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/downloa
 
 ## GatewayClass
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kong 기술을 클러스터에 소개하는 GatewayClass를 정의할 것입니다. 다음 파일을 생성해주세요:
 
@@ -198,14 +369,25 @@ kind: GatewayClass
 metadata:
   name: kong-class
   annotations:
-    konghq.com/gatewayclass-unmanaged: 'true'
+    konghq.com/gatewayclass-unmanaged: "true"
 spec:
   controllerName: konghq.com/kic-gateway-controller
 ```
 
 이 파일에 대해 몇 가지 주의할 사항이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 이것은 클러스터 수준 리소스이기 때문에 네임스페이스가 없습니다.
 - 주석은 솔루션별 옵션을 정의하며 Kong의 경우 konghq로 시작합니다.
@@ -215,12 +397,23 @@ spec:
 이제 다음과 같이 클래스를 생성하세요:
 
 ```js
-kubectl apply -f kong-gw-class.yml 
+kubectl apply -f kong-gw-class.yml
 ```
 
 이제 이 클래스를 사용하는 게이트웨이를 생성할 수 있습니다. 동일한 GatewayClass를 참조하는 여러 Gateway 인스턴스를 생성할 수 있다는 점을 유의하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 게이트웨이
 
@@ -237,16 +430,27 @@ metadata:
 spec:
   gatewayClassName: kong-class
   listeners:
-  - name: world-selector
-    hostname: worlds.com
-    port: 80
-    protocol: HTTP
-    allowedRoutes:
-      namespaces:
-        from: All
+    - name: world-selector
+      hostname: worlds.com
+      port: 80
+      protocol: HTTP
+      allowedRoutes:
+        namespaces:
+          from: All
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파일에서 유의해야 할 몇 가지 사항이 또 있습니다:
 
@@ -265,19 +469,41 @@ Gateways는 네임스페이스에 특정하며 API Gateway를 설치하기 전�
 kubectl create namespace kong
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 다음 명령을 사용하여 리소스를 만드세요:
 
 ```js
-kubectl apply -f kong-gw-gateway.yml 
+kubectl apply -f kong-gw-gateway.yml
 ```
 
 이제 GatewayClass 및 Gateway 리소스가 정의되었으므로, 애플리케이션 자체를 설치하여 이 두 리소스의 구현을 형성할 수 있습니다.
 
 # Kong 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 Helm 차트를 사용하여 Kong을 설치할 것입니다. 만약 Helm이 없다면, Helm을 설치하는 방법은 여기에서 찾을 수 있습니다.
 
@@ -289,7 +515,18 @@ Kong을 설치하기 전에 Kong Custom Resource Definitions (CRDs)를 설치해
 kubectl apply -k https://github.com/Kong/kubernetes-ingress-controller/config/crd
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Kong Application
 
@@ -300,7 +537,18 @@ Kong을 Kubernetes 클러스터에 설치할 때, 두 가지 구성 요소가 �
 
 먼저, 로컬 헬름에 Kong 저장소를 추가하십시오:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 helm repo add kong https://charts.konghq.com
@@ -315,11 +563,22 @@ helm search repo kong
 
 두 개의 항목을 찾을 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
-이름           차트 버전  앱 버전  설명                                    
-kong/kong    2.33.3    3.5       클라우드 네이티브 인그레스 및 API 관리    
+이름           차트 버전  앱 버전  설명
+kong/kong    2.33.3    3.5       클라우드 네이티브 인그레스 및 API 관리
 kong/ingress 0.10.2    3.4       콩 인그레스 컨트롤러 및 콩 게이트웨이 배포
 ```
 
@@ -350,7 +609,18 @@ gateway:
 #      LOG_LEVEL: trace
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 KIC 및 Kong Gateway를 부모 Helm 차트를 통해 설치하고 있기 때문에 이 두 애플리케이션의 구성은 각각 컨트롤러 및 게이트웨이 레이블 아래에 있습니다. 컨트롤러는 단순히 알림으로 남겨두었습니다.
 
@@ -360,7 +630,18 @@ Binary Lane은 Kubernetes가 구성할 수 있는 로드 밸런서를 제공하�
 
 이전에 kong 네임스페이스를 생성했으므로 이제 Kong을 설치할 준비가 되었습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 helm install kong kong/ingress -f kong-values.yml -n kong
@@ -374,27 +655,40 @@ kubectl get all -n kong
 
 다음과 같은 결과를 얻어야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-### NAME                                   READY   STATUS    RESTARTS   AGE
-- pod/kong-controller-68cddcbcb7-z46lh   1/1     Running   0          45s
-- pod/kong-gateway-687c5b78db-5qvgd      1/1     Running   0          45s
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-### NAME                                         TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                         AGE
-- service/kong-controller-validation-webhook   ClusterIP   10.110.172.40    <none>        443/TCP                         46s
-- service/kong-gateway-admin                   ClusterIP   None             <none>        8444/TCP                        46s
-- service/kong-gateway-manager                 NodePort    10.100.254.169   <none>        8002:30698/TCP,8445:30393/TCP   46s
-- service/kong-gateway-proxy                   NodePort    10.96.24.196     <none>        80:32001/TCP                    46s
+### NAME READY STATUS RESTARTS AGE
 
-### NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
-- deployment.apps/kong-controller   1/1     1            1           45s
-- deployment.apps/kong-gateway      1/1     1            1           45s
+- pod/kong-controller-68cddcbcb7-z46lh 1/1 Running 0 45s
+- pod/kong-gateway-687c5b78db-5qvgd 1/1 Running 0 45s
 
-### NAME                                         DESIRED   CURRENT   READY   AGE
-- replicaset.apps/kong-controller-68cddcbcb7   1         1         1       45s
-- replicaset.apps/kong-gateway-687c5b78db      1         1         1       45s
+### NAME TYPE CLUSTER-IP EXTERNAL-IP PORT(S) AGE
 
+- service/kong-controller-validation-webhook ClusterIP 10.110.172.40 <none> 443/TCP 46s
+- service/kong-gateway-admin ClusterIP None <none> 8444/TCP 46s
+- service/kong-gateway-manager NodePort 10.100.254.169 <none> 8002:30698/TCP,8445:30393/TCP 46s
+- service/kong-gateway-proxy NodePort 10.96.24.196 <none> 80:32001/TCP 46s
+
+### NAME READY UP-TO-DATE AVAILABLE AGE
+
+- deployment.apps/kong-controller 1/1 1 1 45s
+- deployment.apps/kong-gateway 1/1 1 1 45s
+
+### NAME DESIRED CURRENT READY AGE
+
+- replicaset.apps/kong-controller-68cddcbcb7 1 1 1 45s
+- replicaset.apps/kong-gateway-687c5b78db 1 1 1 45s
 
 Management UI 서비스가 NodePort를 통해 노출됩니다. 이는 관리 API를 볼 수 있는 것을 기대하고 작동하지 않을 것입니다. DB-less 설치를 하고 있기 때문에, 관리 UI의 유일한 사용은 설정을 확인하는 것뿐입니다.
 
@@ -404,7 +698,18 @@ Management UI 서비스가 NodePort를 통해 노출됩니다. 이는 관리 API
 curl localhost:32001
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요청한 표는 Markdown 형식으로 변경해야 합니다.
 
@@ -419,7 +724,18 @@ curl localhost:32001
 
 이제 새 API 게이트웨이를 구성하여 이전에 생성한 테스트 서비스로 요청을 라우트할 준비가 되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 라우트 추가하기
 
@@ -429,7 +745,18 @@ curl localhost:32001
 
 hello-world-1-route.yml
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 apiVersion: gateway.networking.k8s.io/v1
@@ -437,22 +764,22 @@ kind: HTTPRoute
 metadata:
   name: example-1
   annotations:
-    konghq.com/strip-path: 'true'
+    konghq.com/strip-path: "true"
 spec:
   parentRefs:
-  - name: kong-gateway
-    namespace: kong
+    - name: kong-gateway
+      namespace: kong
   hostnames:
-  - worlds.com
+    - worlds.com
   rules:
-  - matches:
-    - path:
-        type: PathPrefix
-        value: /world1
-    backendRefs:
-      - name: hello-world-1-svc
-        port: 80
-        kind: Service
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /world1
+      backendRefs:
+        - name: hello-world-1-svc
+          port: 80
+          kind: Service
 ```
 
 이 파일에서는 'true'로 설정된 Kong 특정 주석인 konghq.com/strip-path를 추가했습니다. 이는 수신된 일치하는 경로를 요청에서 southbound 서비스로 줄일 것입니다. 다른 줄에는 다음이 포함되어 있습니다:
@@ -464,8 +791,18 @@ spec:
 
 이 경로에서 일치는 /world1의 접두사이며, 그 후 서비스로 전달되기 전에 제거됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 다음 라우트를 만듭니다:
 
@@ -479,7 +816,18 @@ NodePort 서비스를 사용하여 게이트웨이를 만들었습니다. 이제
 curl -H "Host: worlds.com" <k8s-master IP 주소>:32001/world2
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원하는 요청 라우팅을 위해 Host 헤더로 호스트명을 worlds.com으로 설정했습니다. 테스트 서비스 응답이 돌아오는 것을 확인할 수 있어야 합니다.
 
@@ -489,7 +837,18 @@ curl -H "Host: worlds.com" <k8s-master IP 주소>:32001/world2
 
 # 인그레스 지점 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 AWS, Azure, 또는 Google Cloud에서 작업 중이었다면, Gateway 서비스를 LoadBalancer로 유지하고 자동으로 인그레스 포인트가 생성되도록 할 수 있었을 텐데 Binary Lane에서 작업 중이므로 직접 만들어야 합니다.
 
@@ -499,7 +858,18 @@ curl -H "Host: worlds.com" <k8s-master IP 주소>:32001/world2
 
 gw 서버에 로그인하고 root 사용자로 다음 파일을 업데이트하십시오 (``에 자신의 값으로 필드를 교체하는 것을 잊지 마세요):
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 worlds.conf 파일의 내용입니다.
 
@@ -515,7 +885,7 @@ server {
     listen [::]:80;
 
     server_name worlds.com;
-        
+
     location / {
         proxy_pass http://k8s_cluster;
         include proxy_params;
@@ -527,7 +897,18 @@ server {
 
 `/etc/nginx/proxy_params`
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 proxy_set_header Host $http_host;
@@ -546,7 +927,18 @@ nginx -t
 systemctl restart nginx
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 테스트할 수 있습니다 ( ' '필드를 귀하의 값으로 대체하세요):
 
@@ -558,7 +950,18 @@ curl -H "Host: worlds.com" <gw 서버 공인 IP 주소>/world1
 
 축하합니다! 이제 콩(Kong)을 설치하고 서비스에 연결하도록 구성하는 데 성공했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Kong 디버깅
 
@@ -571,7 +974,18 @@ curl -H "Host: worlds.com" <gw 서버 공인 IP 주소>/world1
 kubectl logs <pod name> -n kong
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - kong-values.yml 파일을 사용하여 로깅 레벨을 높이세요 (이전에 보여준 라인의 주석을 제거하세요)
 - NodePort 주소를 얻기 위해 kubectl get svc -n kong를 사용하여 관리 UI에 접속하세요 — HTTP 포트를 사용하고 Admin API를 포트 포워딩하세요 (서비스를 외부로 바인딩하기 위해 --address 옵션을 추가하세요):
@@ -587,7 +1001,18 @@ kubectl port--forward <게이트웨이 파드 이름> 8001:8001 --address <k8s-�
 kubectl port-forward -n kong <컨트롤러 파드 이름>  10256:10256 --address <k8s-마스터 IP 주소>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 요약
 
@@ -604,7 +1029,18 @@ kubectl port-forward -n kong <컨트롤러 파드 이름>  10256:10256 --address
 - 자체 외부 로드 밸런서를 구성했습니다.
 - API Gateway 설치 문제를 해결하는 방법을 고려했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마침내 저희는 Kong API 게이트웨이를 통해 인터넷에서 저희의 테스트 서비스에 접속할 수 있었습니다.
 

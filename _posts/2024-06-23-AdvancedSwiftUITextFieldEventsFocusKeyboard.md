@@ -3,13 +3,12 @@ title: "SwiftUI TextField 심화  이벤트, 포커스, 키보드 제어 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-AdvancedSwiftUITextFieldEventsFocusKeyboard_0.png"
 date: 2024-06-23 21:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AdvancedSwiftUITextFieldEventsFocusKeyboard_0.png
 tag: Tech
 originalTitle: "Advanced SwiftUI TextField — Events, Focus, Keyboard"
 link: "https://medium.com/@fatbobman/advanced-swiftui-textfield-events-focus-keyboard-c99bc9f57c91"
 ---
-
 
 이 글은 SwiftUI TextField 이벤트, 포커스 전환, 키보드 설정 및 기타 관련 경험, 기술 및 고려 사항을 탐색할 것입니다.
 
@@ -19,12 +18,23 @@ link: "https://medium.com/@fatbobman/advanced-swiftui-textfield-events-focus-key
 
 TextField가 포커스를 얻을 때(편집 가능한 상태로 전환될 때), onEditingChanged는 주어진 메서드를 호출하고 값으로 true를 전달합니다. TextField가 포커스를 잃을 때, 다시 메서드를 호출하고 값을 false로 전달합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct OnEditingChangedDemo: View {
     @State var name = ""
-    
+
     var body: some View {
         List {
             TextField("이름:", text: $name, onEditingChanged: getFocus)
@@ -43,8 +53,18 @@ iOS 15에서는 ParseableFormatStyle을 지원하는 새로 추가된 생성자�
 
 # onCommit
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 onCommit은 사용자가 입력하는 중에 리턴 키를 누를 때 (또는 클릭할 때) 트리거됩니다 (코드 시뮬레이션으로는 트리거할 수 없음). 사용자가 리턴 키를 클릭하지 않으면(예: 직접 다른 TextField로 전환하는 경우) onCommit은 트리거되지 않습니다. onCommit이 트리거되는 동시에 TextField는 포커스를 잃게 됩니다.
 
@@ -63,7 +83,18 @@ struct OnCommitDemo: View {
 
 onCommit은 SecureField에도 적용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 15에서 추가된 ParseableFormatStyle을 지원하는 새 생성자는 해당 매개변수를 제공하지 않습니다. 동일한 효과를 얻으려면 새롭게 추가된 onSubmit을 사용할 수 있습니다.
 
@@ -78,7 +109,18 @@ extension View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 코드는 onCommit과 동일한 동작을 구현할 것입니다:
 
@@ -100,7 +142,18 @@ onSubmit의 트리거 조건은 onCommit과 동일하며, 사용자가 “return
 
 onSubmit은 SecureField에도 적용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 범위와 중첩
 
@@ -131,7 +184,18 @@ struct OnSubmitDemo: View {
 
 TextField (text1)이 commit되면, 콘솔 출력은 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 양식에서의 텍스트 필드 커밋2
@@ -146,7 +210,18 @@ TextField (text1)이 commit되면, 콘솔 출력은 다음과 같습니다:
 
 submitScope를 사용하여 범위를 차단하고 (뷰 트리 상에서의 추가 전파를 제한합니다). 예를 들어, 위 코드에서는 그룹 뒤에 submitScope를 추가하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 그룹 {
@@ -167,7 +242,18 @@ text1 commit
 
 이 시점에서 onSubmit의 범위는 그룹 내로 제한됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 뷰에 여러 개의 TextFields가 있는 경우, onSubmit과 FocusState를 결합하여 훌륭한 사용자 경험을 얻을 수 있습니다.
 
@@ -194,7 +280,18 @@ struct OnSubmitForSearchableDemo:View{
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SubmitTriggers의 타입은 OptionSet입니다. onSubmit 메서드는 환경 내에서 뷰 트리에서 SubmitTriggers에 포함된 값을 계속 전달합니다. onSubmit에서 받는 SubmitTriggers 값이 onSubmit에서 지정된 SubmitTriggers 세트에 포함되지 않으면 전달이 종료됩니다. 간단히 말해, onSubmit(of:.search)은 TextField에서 생성된 커밋 상태를 차단하고 그 반대도 마찬가지입니다.
 
@@ -210,7 +307,18 @@ SubmitTriggers의 타입은 OptionSet입니다. onSubmit 메서드는 환경 내
 
 따라서 TextField와 검색 상자를 모두 처리할 때 호출 순서에 특별히 주의해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 코드는 하나의 onSubmit에서 TextField와 검색 상자를 모두 지원할 수 있습니다:
 
@@ -235,7 +343,18 @@ NavigationView{
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 초점
 
@@ -245,7 +364,18 @@ SwiftUI 3.0에서 Apple은 개발자들에게 onSubmit과 유사한, 높은 수�
 
 # 기본 사용법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SwiftUI에서는 새 FocusState 프로퍼티 래퍼를 제공하여이 뷰 내의 TextField에 포커스가 있는지 여부를 결정하는 데 도움을 줍니다. focused를 사용하여 FocusState를 특정 TextField와 연결할 수 있습니다.
 
@@ -253,7 +383,7 @@ SwiftUI에서는 새 FocusState 프로퍼티 래퍼를 제공하여이 뷰 내�
 struct OnFocusDemo: View {
     @FocusState var isNameFocused: Bool
     @State var name = ""
-    
+
     var body: some View {
         List {
             TextField("이름:", text: $name)
@@ -270,7 +400,18 @@ struct OnFocusDemo: View {
 
 동일한 뷰 내에 여러 개의 TextField가있는 경우 각 해당 TextField와 연결할 여러 FocusStates를 생성할 수 있습니다. 예를 들어:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 방법은 뷰에 더 많은 TextField가 있는 경우 귀찮아지고 통일된 관리에 도움이 되지 않습니다. 다행히 FocusState는 Boolean 값뿐만 아니라 모든 해시 타입도 지원합니다. Hashable 프로토콜을 준수하는 enum을 사용하여 뷰 내 여러 TextField의 포커스를 관리할 수 있습니다. 다음 코드는 위의 코드와 동일한 기능을 수행합니다:
 
@@ -297,7 +438,18 @@ struct OnFocusDemo:View{
 
 # 특정 TextField가 뷰를 표시한 직후에 즉시 포커스를 받도록 만들기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 FocusState를 사용하면 지정된 TextField가 포커스를 얻고 뷰를 표시한 후 즉시 키보드가 팝업되게 할 수 있어요:
 
@@ -306,7 +458,7 @@ struct OnFocusDemo: View {
     @FocusState var focus: FocusedField?
     @State var name = ""
     @State var password = ""
-    
+
     var body: some View {
         List {
             TextField("이름:", text: $name)
@@ -331,7 +483,18 @@ struct OnFocusDemo: View {
 
 # 여러 개의 TextField 사이에서 포커스 전환하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주의력과 onSubmit을 결합하여 한 TextField에서 입력을 완료하고(리턴을 클릭할 때) 자동으로 다음 TextField로 포커스를 전환하는 효과를 얻을 수 있어요.
 
@@ -400,7 +563,18 @@ List {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 화면 버튼(예: 보조 키보드 보기) 또는 키보드 단축키를 결합하여 포커스를 전환하거나 특정 TextField로 이동할 수도 있습니다.
 
@@ -410,7 +584,18 @@ List {
 
 키보드 단축키 바인딩을 지원하는 focused를 생성하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 public extension View {
@@ -461,8 +646,18 @@ struct ShortcutFocusDemo: View {
 
 사용자가 ⌘ + T를 입력하면 이메일을 처리하는 TextField에 초점이 맞춰집니다. 사용자가 ⌘ + ⌥ + ⇧ + A를 입력하면 주소를 처리하는 TextField에 초점이 맞춰집니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 자체 onEditingChanged 만들기
 
@@ -481,7 +676,18 @@ public extension View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용 방법:
 
@@ -504,7 +710,18 @@ struct onEditingChangedFocusVersion:View{
 
 TextField가 포커스를 잃을 때 여러 번 호출을 피하기 위해 뷰 계층 구조에서 마지막 포커스된 TextField의 FocusState 값을 저장해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 public extension View {
@@ -564,8 +781,18 @@ struct OnFocusView: View {
 
 # 키보드
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 TextField를 사용하다보면 소프트웨어 키보드와 함께 작업해야 합니다. 이 섹션에서는 키보드와 관련된 몇 가지 예제를 소개할 것입니다.
 
@@ -575,7 +802,18 @@ iPhone에서 keyboardType를 통해 소프트웨어 키보드 유형을 설정�
 
 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct KeyboardTypeDemo: View {
@@ -595,18 +833,39 @@ struct KeyboardTypeDemo: View {
 
 - asciiCapable
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 번호 및 구두점 테이블입니다.
 
-| numbersAndPunctuation |
-| --------------------- |
+| numbersAndPunctuation   |
+| ----------------------- |
 | Numbers and punctuation |
 
 URL 테이블로 아래 내용을 변환해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 URL 주소를 입력하는 데 유용하며, 문자 및 '.', '/', '.com'을 포함할 수 있습니다.
 
@@ -616,9 +875,20 @@ URL 주소를 입력하는 데 유용하며, 문자 및 '.', '/', '.com'을 포�
 
 - phonePad
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-전화기에서 사용되는 숫자 및 다른 기호, 예를 들면 ‘*#+’
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+전화기에서 사용되는 숫자 및 다른 기호, 예를 들면 ‘\*#+’
 
 - namePhonePad
 
@@ -626,7 +896,18 @@ URL 주소를 입력하는 데 유용하며, 문자 및 '.', '/', '.com'을 포�
 
 - emailAddress
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 '@'를 입력하는 데 편리한 아스키 호환 키보드입니다.
 
@@ -636,7 +917,18 @@ URL 주소를 입력하는 데 유용하며, 문자 및 '.', '/', '.com'을 포�
 
 - 트위터
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아스키 지원 키보드에는 '@#'이 포함되어 있습니다.
 
@@ -646,7 +938,18 @@ URL 주소를 입력하는 데 유용하며, 문자 및 '.', '/', '.com'을 포�
 
 - 아스키 지원 번호 패드
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 An asciiCapable 키보드에는 숫자가 포함되어 있습니다.
 
@@ -656,7 +959,18 @@ Apple은 다양한 키보드 모드를 제공하지만, 경우에 따라 사용�
 
 # TextContentType를 통해 제안을 받아보세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 iOS 앱을 사용할 때 텍스트를 입력할 때 소프트웨어 키보드가 자동으로 입력해야 할 내용을 제안하는 경우가 있습니다. 이는 전화 번호, 이메일, 인증 코드 등을 텍스트ContentType를 통해 얻는 효과입니다.
 
@@ -676,8 +990,18 @@ struct KeyboardTypeDemo: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-AdvancedSwiftUITextFieldEventsFocusKeyboard_1.png" />
 
@@ -697,8 +1021,18 @@ struct KeyboardTypeDemo: View {
 
 <img src="/assets/img/2024-06-23-AdvancedSwiftUITextFieldEventsFocusKeyboard_2.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 설정할 수 있는 여러 종류의 UITextContentType이 있습니다. 흔히 사용되는 것들 중 일부는 다음과 같습니다:
 
@@ -713,7 +1047,18 @@ struct KeyboardTypeDemo: View {
 
 일부 경우에는 사용자가 텍스트 입력을 완료한 후 소프트웨어 키보드를 해제하여 더 많은 디스플레이 공간을 확보해야 할 수 있습니다. 일부 키보드 유형에는 "return" 버튼이 없기 때문에 프로그래밍을 사용하여 키보드를 사라지게 해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 또한 가끔은 사용자가 "return" 버튼을 클릭하지 않고도 화면의 다른 영역을 클릭하거나 목록을 스크롤하여 키보드를 숨길 수 있게 하려고 할 수도 있습니다. 상호 작용 경험을 향상시키기 위해 프로그래밍을 사용하여 키보드를 사라지게 할 필요가 있습니다.
 
@@ -738,7 +1083,18 @@ struct HideKeyboardView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 기타 상황
 
@@ -750,7 +1106,18 @@ UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to:
 
 예를 들어, 사용자가 뷰를 드래그할 때 키보드를 숨기는 다음 코드가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 구조 ResignKeyboardOnDragGesture: ViewModifier {
@@ -784,7 +1151,18 @@ extension View {
 
 SwiftUI 3.0에서는 ToolbarItem(placement: .keyboard, content: View)를 사용하여 키보드 어시스턴트 뷰(inputAccessoryView)를 생성할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 입력 보조 뷰를 통해 이전에 처리하기 어려웠던 많은 문제들을 해결하고 상호 작용 수단을 더 많이 제공할 수 있습니다.
 
@@ -826,7 +1204,18 @@ struct ToolbarKeyboardDemo: View {
 
 <img src="/assets/img/2024-06-23-AdvancedSwiftUITextFieldEventsFocusKeyboard_3.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안타깝지만, ToolbarItem을 통해 입력 보조 뷰를 설정하는 데는 아직 몇 가지 제한 사항이 있습니다:
 
@@ -836,7 +1225,18 @@ struct ToolbarKeyboardDemo: View {
 
 - 같은 뷰 내에서 여러 텍스트 필드에 대해 별도의 액세서리 뷰를 설정할 수 없음
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보다 복잡한 조건부 구문은 ToolbarItem에서 사용할 수 없습니다. 다른 텍스트 필드에 대해 별도로 설정하더라도 SwiftUI는 모든 내용을 함께 표시하기 위해 병합합니다.
 
@@ -875,7 +1275,18 @@ extension View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사용법:
 
@@ -894,7 +1305,7 @@ struct OnFocusDemo: View {
             TextField("이메일:", text: $email)
                 .focused($focus, equals: .email)
                 .inputAccessoryView(content: accessoryView(focus: .email))
-            
+
             TextField("전화번호:", text: $phoneNumber)
                 .focused($focus, equals: .phone)
         }
@@ -932,7 +1343,18 @@ struct accessoryView: View {
 
 기본적으로 TextField (SecureField)의 키보드에 대한 제출 동작 버튼은 "return"입니다. SwiftUI 3.0에서 소개된 "submitLabel" 수정자를 사용하면 "return" 버튼을 입력 콘텍스트와 관련된 텍스트로 수정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 TextField("사용자 이름", text: $username)
@@ -953,8 +1375,18 @@ TextField("사용자 이름", text: $username)
 - search
 - send
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예를 들어, 이전 코드에서는 이름, 이메일 및 전화번호에 대한 서로 다른 표시를 설정할 수 있습니다:
 
@@ -975,7 +1407,18 @@ TextField("전화번호:", text: $phoneNumber)
 
 SwiftUI 1.0부터 Apple은 TextField의 기능을 지속적으로 개선해 왔습니다. 버전 3.0에서 SwiftUI는 더 많은 네이티브 수정자를 제공하는데 그치지 않고 FocusState와 onSubmit과 같은 통합 관리 논리를 제공합니다. 믿음직스러운 2~3년 뒤에는 SwiftUI의 주요 컨트롤의 네이티브 기능이 해당하는 UIKit 컨트롤과 맞먹을 것이라고 믿습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 이 글이 도움이 되었거나 즐겁게 읽으셨다면, 제 글을 지원하기 위해 기부를 고려해 주세요. 여러분의 기부는 저가 계속해서 가치 있는 콘텐츠를 만드는데 도움이 될 것입니다.
 Patreon, Buy Me a Coffee 또는 PayPal을 통해 기부할 수 있습니다.

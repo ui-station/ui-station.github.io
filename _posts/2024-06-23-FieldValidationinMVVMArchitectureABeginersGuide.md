@@ -3,13 +3,12 @@ title: "MVVM 아키텍처에서 필드 검증하는 방법 초보자를 위한 �
 description: ""
 coverImage: "/assets/img/2024-06-23-FieldValidationinMVVMArchitectureABeginersGuide_0.png"
 date: 2024-06-23 21:32
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-FieldValidationinMVVMArchitectureABeginersGuide_0.png
 tag: Tech
 originalTitle: "Field Validation in MVVM Architecture: A Beginers Guide"
 link: "https://medium.com/dev-genius/field-validation-in-mvvm-architecture-beginers-guide-091fd6b2c527"
 ---
-
 
 <img src="/assets/img/2024-06-23-FieldValidationinMVVMArchitectureABeginersGuide_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/dev-genius/field-validation-in-mvvm-architecture-begin
 
 # MVVM 아키텍처 이해하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 필드 유효성 검사의 구체적인 내용에 대해 들어가기 전에 MVVM 아키텍처를 간단히 살펴보겠습니다. MVVM은 Model-View-ViewModel의 약자입니다. GUI(그래픽 사용자 인터페이스) 개발을 비즈니스 로직 또는 백엔드 로직(데이터 모델)과 분리하는 구조적 디자인 패턴입니다. 'View'는 UI를 나타내며, 'ViewModel'은 공개 속성과 명령을 노출하는 뷰의 추상화입니다. 'Model'은 데이터 및 경우에 따라 비즈니스 로직을 나타냅니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/dev-genius/field-validation-in-mvvm-architecture-begin
 
 ![Field Validation in MVVM Architecture](/assets/img/2024-06-23-FieldValidationinMVVMArchitectureABeginersGuide_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 뷰:
 
@@ -41,7 +62,18 @@ link: "https://medium.com/dev-genius/field-validation-in-mvvm-architecture-begin
 - 뷰에 입력된 데이터는 ViewModel로 전달됩니다.
 - 이는 데이터 바인딩을 통해하거나 ViewModel에서 메소드를 호출함으로써 이루어질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## ViewModel:
 
@@ -54,7 +86,18 @@ link: "https://medium.com/dev-genius/field-validation-in-mvvm-architecture-begin
 - ViewModel은 유효성 검사 결과를 View로 다시 보냅니다.
 - 이 결과를 바탕으로 View는 UI를 업데이트할 수 있습니다. 예를 들어 텍스트 필드의 테두리 색상을 변경(오류는 빨강, 올바른 입력은 초록)하거나 오류 메시지를 표시할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 모델:
 
@@ -64,27 +107,38 @@ link: "https://medium.com/dev-genius/field-validation-in-mvvm-architecture-begin
 
 필드 유효성 검사는 사용자 등록 프로세스에서 필수적입니다. 사용자가 입력한 데이터가 처리되거나 저장되기 전에 특정 기준을 충족시켜야 함을 보장합니다. 이는 보안을 향상시키는데 그치지 않고 사용자 오류를 미리 잡아내고 사용자를 올바르게 안내하여 사용자 경험을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 구조 ValidationFieldsHelper {
-    
+
     static func isValidName(_ name: String) -> Bool {
         let namePredicate = NSPredicate(format:"SELF MATCHES %@", "^[a-zA-Z ]+$")
         return namePredicate.evaluate(with: name)
     }
-    
+
     static func isValidEmail(_ email: String) -> Bool {
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}")
         return emailPredicate.evaluate(with: email)
     }
-    
+
     static func isValidPassword(_ password: String) -> Bool {
         let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"
         let passwordPredicate = NSPredicate(format:"SELF MATCHES %@", passwordRegex)
         return passwordPredicate.evaluate(with: password)
     }
-    
+
     static func isValidAge(_ age: String) -> Bool {
         let ageRegex = "^[0-9]{1,2}$"
         let agePredicate = NSPredicate(format:"SELF MATCHES %@", ageRegex)
@@ -99,8 +153,18 @@ Swift의 ValidationFieldsHelper 구조는 필드 유효성 검사를 위한 정�
 
 ## 모델의 역할 이해
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MVVM 아키텍처에서 Model은 어플리케이션의 데이터와 비즈니스 로직을 나타냅니다. 사용자 등록에 대한 맥락에서 UserRegistrationModel은 사용자 등록과 관련된 모든 정보를 보유하는 데이터 구조 역할을 합니다.
 
@@ -124,7 +188,18 @@ protocol UserRegistrationModelProtocol: Codable {
 
 목적: 사용자 등록 모델에 필요한 속성과 기능을 개요화하는 프로토콜을 정의합니다. Codable을 준수하면 데이터의 직렬화와 역직렬화가 쉬워집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 주요 기능: asData 계산 속성이 특히 주목할 만합니다. 이는 모델 인스턴스를 Data로 쉽게 변환하는 편리한 방법을 제공하며, 네트워크 통신이나 로컬 저장에 유용합니다.
 
@@ -140,7 +215,18 @@ extension Encodable {
 
 기능: Encodable에 대한 이 확장은 준수하는 모든 타입이 자신을 손쉽게 Data로 변환할 수 있습니다. JSON 인코딩을 처리하기 위한 유용한 유틸리티입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 사용자 등록 모델 구조체
 
@@ -162,7 +248,18 @@ struct UserRegistrationModel: UserRegistrationModelProtocol {
 
 유연성: 프로토콜을 준수함으로써 UserRegistrationModel은 일관성과 확장성을 보장하여, 미래에 쉬운 수정이나 확장이 가능합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # MVVM 아키텍처의 ViewModel: RegistrationViewModel
 
@@ -178,38 +275,38 @@ class RegistrationViewModel {
     private var userEmail = ""
     private var userPassword = ""
     private var userAge = ""
-    
+
     var isUserFirstNameValid: ((Bool) -> ())!
     var isUserLastNameValid: ((Bool) -> ())!
     var isUserEmailValid: ((Bool) -> ())!
     var isUserPasswordValid: ((Bool) -> ())!
     var isUserAgeValid: ((Bool) -> ())!
-    
+
     func setUpUserFirstName(userFirstName: String) {
         self.userFirstName = userFirstName
         ValidationFieldsHelper.isValidName(userFirstName) ? isUserFirstNameValid(true) : isUserFirstNameValid(false)
     }
-    
+
     func setUpUserLastName(userLastName: String) {
         self.userLastName = userLastName
         ValidationFieldsHelper.isValidName(userLastName) ? isUserLastNameValid(true) : isUserLastNameValid(false)
     }
-    
+
     func setUpUserEmail(userEmail: String) {
         self.userEmail = userEmail
         ValidationFieldsHelper.isValidEmail(userEmail) ? isUserEmailValid(true) : isUserEmailValid(false)
     }
-    
+
     func setUpUserPassword(userPassword: String) {
         self.userPassword = userPassword
         ValidationFieldsHelper.isValidPassword(userPassword) ? isUserPasswordValid(true) : isUserPasswordValid(false)
     }
-    
+
     func setUpUserAge(userAge: String) {
         self.userAge = userAge
         ValidationFieldsHelper.isValidAge(userAge) ? isUserAgeValid(true) : isUserAgeValid(false)
     }
-    
+
     func isValidRegistration() -> Bool {
         return ValidationFieldsHelper.isValidName(userFirstName) &&
         ValidationFieldsHelper.isValidName(userLastName) &&
@@ -220,7 +317,18 @@ class RegistrationViewModel {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작동 방법: 예를 들어 해당 메소드는 userFirstName 속성을 설정한 다음 ValidationFieldsHelper.isValidName을 사용하여 입력을 유효성 검사합니다. 결과에 따라 isUserFirstNameValid 클로저를 호출하며 이름의 유효성을 나타내는 부울 값을 전달합니다.
 
@@ -230,7 +338,18 @@ class RegistrationViewModel {
 
 MVVM 아키텍처에서 ViewController는 View 레이어로 작동합니다. 사용자에게 데이터를 제공하고 사용자 상호작용을 처리하는 것이 그 역할입니다. 사용자 등록 예제의 문맥에서 RegistrationViewController은 사용자 입력을 유효성 검사하고 피드백을 제공하기 위해 RegistrationViewModel과 상호작용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 필드 액션 설정하기
 
@@ -244,25 +363,25 @@ private func fieldActions() {
             let newUserFirstName = self.firstNameTextField.text ?? ""
             self.viewModel.setUpUserFirstName(userFirstName: newUserFirstName)
         }), for: .editingDidEnd)
-        
+
         lastNameTextField.addAction(UIAction(handler: { [ weak self ] _ in
             guard let self = self else { return }
             let newUserLastName = self.lastNameTextField.text ?? ""
             self.viewModel.setUpUserLastName(userLastName: newUserLastName)
         }), for: .editingDidEnd)
-        
+
         emailTextField.addAction(UIAction(handler: { [ weak self ] _ in
             guard let self = self else { return }
             let newUserEmail = self.emailTextField.text ?? ""
             self.viewModel.setUpUserEmail(userEmail: newUserEmail)
         }), for: .editingDidEnd)
-        
+
         passwordTextField.addAction(UIAction(handler: { [ weak self ] _ in
             guard let self = self else { return }
             let newUserPassword = self.passwordTextField.text ?? ""
             self.viewModel.setUpUserPassword(userPassword: newUserPassword)
         }), for: .editingDidEnd)
-        
+
         ageTextField.addAction(UIAction(handler: { [ weak self ] _ in
             guard let self = self else { return }
             let newUserAge = self.ageTextField.text ?? ""
@@ -273,7 +392,18 @@ private func fieldActions() {
 
 각 액션은 텍스트 변경이나 선택 변경과 같은 사용자 상호작용에 연결되어 있습니다. 이러한 액션들은 ViewModel의 적절한 설정 메서드(setUpUserFirstName, setUpUserEmail 등)를 호출하여 입력 데이터를 업데이트하고 유효성을 검사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작동 방식: 사용자가 이메일 필드 편집을 완료하면 해당 동작이 텍스트를 캡처하여 ViewModel로 보내어 유효성을 검사한 후 UI를 업데이트합니다.
 
@@ -294,7 +424,7 @@ private func fieldsValidation() {
             }
         }
     }
-    
+
     viewModel.isUserLastNameValid = { [weak self] isUserLastNameValid in
         if isUserLastNameValid {
             self?.lastNameTextField.layer.borderColor = UIColor.green.cgColor
@@ -304,7 +434,7 @@ private func fieldsValidation() {
                 self?.lastNameTextField.layer.borderColor = UIColor.lightGray.cgColor
             }
         }
-    }        
+    }
 
     viewModel.isUserEmailValid = { [weak self] isUserEmailValid in
         if isUserEmailValid {
@@ -317,7 +447,7 @@ private func fieldsValidation() {
             }
         }
     }
-    
+
     viewModel.isUserPasswordValid = { [weak self] isUserPasswordValid in
         if isUserPasswordValid {
             self?.passwordTextField.layer.borderColor = UIColor.green.cgColor
@@ -329,7 +459,7 @@ private func fieldsValidation() {
             }
         }
     }
-    
+
     viewModel.isUserAgeValid = { [weak self] isUserAgeValid in
         if isUserAgeValid {
             self?.ageTextField.layer.
@@ -345,7 +475,18 @@ private func fieldsValidation() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 클로저는 UI를 업데이트하여 유효성 상태를 반영합니다. 예를 들어, 이메일이 유효하지 않은 경우 이메일 텍스트 필드의 테두리 색상을 빨간색으로 변경하고 경고 메시지를 표시합니다.
 
@@ -355,7 +496,18 @@ private func fieldsValidation() {
 
 이 문맥에서 MVVM 아키텍처의 사용은 그 강점을 부각시킵니다: 관심사 분리, 코드 유지 관리성 향상 및 테스트 용이성 개선. 사용자 인터페이스(View), 비즈니스 로직(ViewModel) 및 데이터 처리(Model)를 분리함으로써 디버깅을 간소화하고 확장 가능한 앱 개발이 가능한 모듈화된 설계를 달성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 접근 방식에서 주요 포인트는 다음과 같습니다:
 
@@ -369,7 +521,18 @@ private func fieldsValidation() {
 
 테스트 프로젝트는 DolphinLogin에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 피드백 및 협업 개선
 

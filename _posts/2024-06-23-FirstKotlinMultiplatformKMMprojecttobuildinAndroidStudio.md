@@ -3,13 +3,12 @@ title: "처음으로 Kotlin Multiplatform KMM 프로젝트를 Android Studio에�
 description: ""
 coverImage: "/assets/img/2024-06-23-FirstKotlinMultiplatformKMMprojecttobuildinAndroidStudio_0.png"
 date: 2024-06-23 23:47
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-FirstKotlinMultiplatformKMMprojecttobuildinAndroidStudio_0.png
 tag: Tech
 originalTitle: "First Kotlin Multiplatform (KMM) project to build in Android Studio"
 link: "https://medium.com/@paritasampa95/first-kotlin-multiplatform-kmm-project-to-build-in-android-studio-14eba6ac5c6e"
 ---
-
 
 ![이미지](/assets/img/2024-06-23-FirstKotlinMultiplatformKMMprojecttobuildinAndroidStudio_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@paritasampa95/first-kotlin-multiplatform-kmm-project-
 
 # Kotlin 멀티플랫폼의 장점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코드 재사용성: 공통 로직을 한 번 작성하고 여러 플랫폼에서 재사용하여 코드 중복 및 유지 보수 노력을 줄입니다.
 - 일관성: 동일한 코드베이스를 공유함으로써 다양한 플랫폼에서 일관된 동작을 보장합니다.
@@ -32,7 +42,18 @@ link: "https://medium.com/@paritasampa95/first-kotlin-multiplatform-kmm-project-
 
 ![KMM project in Android Studio](/assets/img/2024-06-23-FirstKotlinMultiplatformKMMprojecttobuildinAndroidStudio_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 안녕하세요! 안드로이드 스튜디오에서 새로운 KMM 앱을 만들고 있습니다. 프로젝트 구조가 아래와 같이 보일 것입니다.
 
@@ -42,7 +63,18 @@ link: "https://medium.com/@paritasampa95/first-kotlin-multiplatform-kmm-project-
 
 ![공유 폴더](/assets/img/2024-06-23-FirstKotlinMultiplatformKMMprojecttobuildinAndroidStudio_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 4. 리소스 및 이미지를 추가하기 위해 The IceRock Moko 라이브러리(Mobile Kotlin)를 사용할 예정입니다. 이 라이브러리는 Kotlin Multiplatform Mobile (KMM) 애플리케이션 개발을 간편하게 하는 데 사용되는 라이브러리 및 도구 세트입니다. 이러한 라이브러리는 iOS 및 Android를 위한 공유 코드 작성을 지원하여 개발자가 효율적으로 크로스 플랫폼 모바일 애플리케이션을 생성할 수 있도록 합니다. IceRock Moko는 네트워크 요청, 리소스, MVVM 아키텍처, 권한 처리 등과 같은 모바일 개발의 다양한 측면을 다루는 다양한 라이브러리를 제공합니다.
 
@@ -125,7 +157,18 @@ multiplatformResources {
 
 6. build.gradle.kts(:androidApp) 업데이트
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 플러그인 {
@@ -203,15 +246,25 @@ tasks.register("clean", Delete::class) {
 
 Android Studio에서 프로젝트를 다시 빌드하세요
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 8. 안드로이드 스튜디오에서 다음 버전들이 언급되었습니다.
 
 ```js
-agp = "8.0.1"
-kotlin = "1.8.10"
-compose = "1.4.4"
+agp = "8.0.1";
+kotlin = "1.8.10";
+compose = "1.4.4";
 ```
 
 ```js
@@ -224,7 +277,18 @@ zipStorePath=wrapper/dists
 
 9. 이제 공유 폴더인 commonMain 내 KMM 프로젝트에서 문자열 파일을 만들어 보겠습니다. resources라는 새 디렉토리를 만들었고, MR/base 및 MR/de를 만들었습니다. 영어 및 독일어 언어용 두 개의 문자열 파일을 생성했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-FirstKotlinMultiplatformKMMprojecttobuildinAndroidStudio_4.png" />
 
@@ -240,7 +304,18 @@ MR/base/strings.xml
 
 MR/de/strings.xml
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -256,8 +331,18 @@ MR/de/strings.xml
 
 iosMain/Strings.kt
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 패키지 com.tokai.mobile.coffeeworld
@@ -302,9 +387,18 @@ import dev.icerock.moko.resources.format
 
 11. 이제 프로젝트를 다시 빌드하고 KMM 프로젝트의 공용 폴더인 commonMain/resources/MR/images 경로에 이미지를 추가합니다. 이미지를 추가한 후 프로젝트를 다시 빌드합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-FirstKotlinMultiplatformKMMprojecttobuildinAndroidStudio_6.png)
 
@@ -389,9 +483,18 @@ fun DefaultPreview() {
 
 13. 결과물은 다음과 같이 보일 것입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-FirstKotlinMultiplatformKMMprojecttobuildinAndroidStudio_7.png)
 

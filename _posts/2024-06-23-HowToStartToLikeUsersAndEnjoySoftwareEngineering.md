@@ -3,13 +3,12 @@ title: "소프트웨어 엔지니어링을 즐기고 사용자에게 다가가�
 description: ""
 coverImage: "/assets/img/2024-06-23-HowToStartToLikeUsersAndEnjoySoftwareEngineering_0.png"
 date: 2024-06-23 21:08
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HowToStartToLikeUsersAndEnjoySoftwareEngineering_0.png
 tag: Tech
 originalTitle: "How To Start To Like Users And Enjoy Software Engineering"
 link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-software-engineering-a1d18c7d1a7e"
 ---
-
 
 <img src="/assets/img/2024-06-23-HowToStartToLikeUsersAndEnjoySoftwareEngineering_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 저는 초등학교 때 프로그래밍에 흥미를 가지기 시작했어요. 수학만큼 흥미로운 것은 아니었지만, 그래도 뭔가 특별한 게 있었어요. 특히 알고리즘 경진대회를 좋아했던 기억이요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러한 대회는 알고리즘을 사용하여 해결해야 할 여러 작업이 포함되어 있었습니다. 뿐만 아니라, 알고리즘은 낮은 복잡성을 가져야 하며, 모든 경우에 최소한의 코드와 처리 시간으로 답변을 제공해야 합니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 교육 중 잠시 후에 새로운 개체가 생겨났고, 보통 언제나 주요 관심사의 외부에서 천천히 등장했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 엔티티는 시스템에 제한된 액세스 권한이 있었습니다. 콘솔 앱의 경우, 해당 엔티티는 입력을 제공하고 출력을 받을 수 있었습니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 ![사용자와 소프트웨어 엔지니어링을 좋아하는 방법](/assets/img/2024-06-23-HowToStartToLikeUsersAndEnjoySoftwareEngineering_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 흥미로운 점은 시스템의 각 요소가 구분되어 있지만 사용자는 항상 같이 끌린다는 것입니다. 그것은 뭔가 끈적한 인상이 드는데, 요리사인 경우라도 그렇습니다. 우리 모두가 그것이 올바른 표현이 아니라는 것을 알고 있습니다 :) 사용자는 종종 시스템과 무관한 별개의 개체로 여겨지는데, 그들 자신의 사회적이고 개인적이며 업무 관련 시스템의 일부인 것이 더 복잡합니다.
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 제 경력 중에는 초기 교육에서 사용자가 바람직하지 않은 필수 요소라고 여기는 사람들을 만났습니다. 사용자는 잘못된 데이터를 제공하여 시스템이 장애를 일으킵니다. 사용자는 조용한 코더의 삶을 방해하는 비현실적인 기대를 갖습니다. 사용자는 변경이나 유지 관리가 필요한 제품 소유자로 가상으로 현실화됩니다. 시스템이 작동하기 위해 필요하지 않은 모든 것들입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 실제로 이러한 시스템을 구축하는 중에 이러한 믿음이 얼마나 잘못된 것인지, 실제로 사용자가 소프트웨어 엔지니어링을 흥미롭게 만들고, 투자할 가치가 있는지 깨달았습니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 그러나 일부 티켓들은 매우 이상했는데, 논리에 반하는 경향이 있었고 나나 팀 구성원들이 쉽게 설명할 수 없었습니다. 그냥 그렇게 되어야 했습니다. 나의 호기심이 생겼습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 호기심은 점점 커졌어요. 누군가가 지원팀을 지원하고 사용자를 위한 24시간 핫라인을 유지해야 한다는 것을 알게 된 순간, 그 일을 하고 싶었어요.
 
@@ -69,7 +123,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 내가 가지고 있던 모든 믿음과는 달리, 사용자는 매력적인 사람으로 다가왔어요. 짧은 대화 시간 동안에 그의 삶에 대해 많이 이야기해 주었거든요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시스템을 조사한 결과, 그가 해서는 안 되는 것이 무엇인지 확인하고, 모든 것이 완벽하게 작동하는지 확인했습니다. 그래서 그에게 그가 무엇을 했는지 단계별로 알려달라고 요청했습니다. 그는 모든 것을 올바르게 했기 때문에 나는 그에게 나무를 놓을 수 있는 것이 없었습니다.
 
@@ -79,7 +144,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 팝업이 열리고, 그는 일련의 질문에 대답한 후 준비된 보고서를 보내기 위한 버튼을 클릭하여 수락했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그는 신규 상인이었기 때문에 시스템에서 뭔가 더 해야 할 일이 있는지 애매하게 느꼈습니다. 그 당시에는 시스템에 대해 완전한 지식이 없었기 때문에 그가 실제로 도울 수 있도록 최선을 다해야 했습니다.
 
@@ -89,7 +165,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 그는 팝업을 설명했습니다. 나와 똑같이 일반적인 팝업이었으며, 보고서를 보내고 싶은지 묻는 문구와 버튼이 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 버튼, 버튼, 버튼...?
 
@@ -99,7 +186,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 그렇게 간단할 수 없겠지, 생각했어. 그에게 프로세스 버튼을 클릭해 보라고 했어. 그는 반대했지만 그 버튼을 클릭했어. 그가 클릭하자 그의 설문지가 나타났고, 지난 달 지출액을 입력할 수 있는 필드가 있었어. 그가 말한 대로 거기에는 완전히 숫자로 된 값이 들어 있었어. 그래서 모든 것이 괜찮았지만 여전히 이 오류가 있었어.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제가 정확히 발견되었을 때 값에 문제가 있을 것이라고 확신이 생겼어요. 그가 전체 값을 표시하고 특수 문자가 있나 물어봤는데, 없다고 대답했어요. 값 안에 공백이 있나요? 역시 없다고 했어요.
 
@@ -109,7 +207,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 저와 모든 개발자에게 첫 접촉은 결정적 가정이 이루어지는 순간이며, 그 순간이 오래 지속될 수도 있고 가장 중요한 순간일 수도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 처음으로 이야기를 발표하는 이유는 몇 가지가 있어요. 그 이야기가 특정한 사람이 그런 문제에 어떻게 접근하는지에 대해서 많은 해답을 제공하기 때문이에요. 나중에 해결한 훨씬 복잡한 문제들의 세부 내용을 모두 다루지 않고도 쉽게 이야기할 수 있어서요.
 
@@ -119,7 +228,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 어떤 개발자들은 해당 사용자가 제대로된 버튼을 클릭하지 않았고 잘못된 십진 구분 기호를 사용했다며 사용자를 어리석은 사람으로 규정합니다. 이 경우 사용자의 잘못 때문이기 때문에 시스템에서 해야 할 일이 없습니다. 좋지 않은 사용자가 잘못된 일을 했고 그것은 그의 문제 입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다른 분들은 그냥 전체 이야기가 얼마나 어리석은지, 그리고 시스템이 망가진 것을 곧 알게 되고, 그 시스템을 개발한 사람들이 바보라고 생각하게 되는데 미리 예측하지 못 했다는 것을. 흥미로운 점은 이러한 개발자들이 종종 같은 실수를 반복한다는 것이다. 그래서 어떤 측면에 있어서는 이러한 접근이 더 나은 초점을 갖는다는 것 또한 반드시 의미하는 것이 아니라고 생각합니다.
 
@@ -129,7 +249,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 이 상황의 현실은 사용자라는 “시스템”의 한 측면이 있다는 것입니다. 그는 가족을 지원하기 위해 차 안에서 얼어붙어가며 일하고 있으며, IT 시스템이 데이터를 인식하지 못하는 이유를 깨우치는 것보다 그가 짊어진 것이 훨씬 더 복잡합니다. 그가 사용하는 IT 시스템보다 그의 “시스템”은 훨씬 더 복잡한 가까운 및 먼 연결을 가지고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이런 문제들을 살펴보는 방식이 저는 좋아하는 스타일입니다. 심지어 더 좋은 방식으로, 전체적으로 가장 중요한 것은 사용자라고 생각합니다. 사용자들은 바빠서 다양한 일을 해야 하며, IT 시스템을 사용하여 간단한 작업을 수행하러 옵니다. 가끔 사용자의 관점에서는 이러한 시스템이 도움이 되지 않을 때도 있습니다. 이상적으로 이 가맹점은 데이터를 이메일로 손쉽게 보낼 수 있었을 것입니다.
 
@@ -139,7 +270,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 이 이야기는 제가 만든 시스템의 사용자들에 대해 많은 것을 가르쳐 주었으며, 사용자에 중점을 두거나, 다른 말로 사용자 중심 접근법을 적용할 수 있었던 모든 프로젝트에서 항상 좋은 결과가 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만족한 사용자 뿐만 아니라 내가 일한 모든 비즈니스와 스타트업을 위해서도 그렇습니다. 개선된 프로세스와 사용자 경험은 항상 더 나은 비즈니스 결과와 수익을 가져옵니다.
 
@@ -149,7 +291,18 @@ link: "https://medium.com/@tomaszs2/how-to-start-to-like-users-and-enjoy-softwar
 
 사람들에게 가까이 있음으로써 시간을 적절하게 균형잡을 수도 있고, 어느 정도 안정감을 얻을 수도 있습니다. 우리는 혼자가 아니라 함께하는 것이며, 파란 화면으로 분리되더라도 함께하는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 시니어 / 리드 프론트엔드 개발자로서 새로운 기회를 찾고 있어요. 제 철학을 좋아하시고 기회에 대해 알고 계신다면 알려주세요! 제 LinkedIn 프로필을 확인해보세요!
 

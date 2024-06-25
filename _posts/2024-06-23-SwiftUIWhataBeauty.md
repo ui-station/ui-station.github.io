@@ -3,13 +3,12 @@ title: "SwiftUI 놀라운 UI 프레임워크의 매력 "
 description: ""
 coverImage: "/assets/img/2024-06-23-SwiftUIWhataBeauty_0.png"
 date: 2024-06-23 21:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SwiftUIWhataBeauty_0.png
 tag: Tech
 originalTitle: "SwiftUI: What a Beauty! 🚀"
 link: "https://medium.com/@tanmaydabhade129/swiftui-what-a-beauty-1132ce6bf880"
 ---
-
 
 안녕하세요 여러분! 🎉
 
@@ -19,7 +18,18 @@ iOS 개발 여정을 함께 공유해 드릴 것에 흥분되고 있어요. 최�
 
 이 앱은 초보자들이 다양한 프로그래밍 언어의 기초를 배울 수 있도록 설계되었어요. 다음을 포함합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 자원 허브: 기본 사항을 학습하기 위한 포괄적인 자료 제공
 - 대화식 퀴즈: 여러 번 풀어서 학습을 강화할 수 있는 퀴즈로 지식을 테스트해보세요.
@@ -31,6 +41,17 @@ iOS 개발 여정을 함께 공유해 드릴 것에 흥분되고 있어요. 최�
 
 여기에 제 프로젝트의 GitHub 링크가 있습니다. 코드를 살펴보고 앱을 시도해보시고 생각을 나눠주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 피드백과 제안을 기다리고 있어요. 즐거운 코딩하세요! 🚀

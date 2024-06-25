@@ -3,13 +3,12 @@ title: "안드로이드 유닛 테스트 101 초보자를 위한 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-23-UnitTestingforAndroidABeginnersGuide_0.png"
 date: 2024-06-23 20:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UnitTestingforAndroidABeginnersGuide_0.png
 tag: Tech
 originalTitle: "Unit Testing for Android : A Beginner’s Guide"
 link: "https://medium.com/@asadleo1995/unit-testing-for-android-a-beginners-guide-f8681cba3c22"
 ---
-
 
 유닛 테스트는 소프트웨어 개발의 중요한 단계입니다. 이것은 Test Driven Development (TDD)라고 불리는 개발 패러다임을 가져옵니다. 이러한 테스트는 일반적으로 애플리케이션의 비즈니스 로직을 테스트합니다.
 
@@ -21,7 +20,18 @@ link: "https://medium.com/@asadleo1995/unit-testing-for-android-a-beginners-guid
 
 안드로이드 및 일반적으로 다양한 모바일 플랫폼에서 앱 테스트는 어려울 수 있습니다. 유닛 테스트를 구현하고 테스트 주도 개발(TDD)의 원칙을 따르는 것은 종종 직관에 어긋날 수 있습니다. 그럼에도 불구하고 테스트는 중요하며 당연하게 여기거나 무시해서는 안 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번 유닛 테스트의 기본 사항으로 이동해 보죠. 안드로이드에서 유당 테스트라고 하면 떠오르는 몇 가지 기본 사항부터 시작해보겠습니다.
 
@@ -31,7 +41,18 @@ link: "https://medium.com/@asadleo1995/unit-testing-for-android-a-beginners-guid
 
 ![Unit Testing for Android - A Beginner's Guide](/assets/img/2024-06-23-UnitTestingforAndroidABeginnersGuide_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - main: 앱 코드가 포함되어 있습니다.
 - androidTest: 인스트루먼티드 테스트로 알려진 테스트가 포함되어 있습니다.
@@ -43,7 +64,18 @@ link: "https://medium.com/@asadleo1995/unit-testing-for-android-a-beginners-guid
 
 이러한 테스트는 개발 컴퓨터의 JVM에서 로컬로 실행되며 에뮬레이터나 물리적 장치가 필요하지 않습니다. 이로 인해 실행 속도가 빠르지만, 신뢰성은 낮아 실제와 다르게 동작할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Instrumented tests (androidTest source set)
 
@@ -53,7 +85,18 @@ link: "https://medium.com/@asadleo1995/unit-testing-for-android-a-beginners-guid
 
 테스트 실행기는 테스트를 실행하는 JUnit 구성 요소입니다. 테스트 실행기가 없으면 테스트가 실행되지 않습니다. JUnit에서는 자동으로 제공되는 기본 테스트 실행기가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 Android Studio를 사용하면 클래스를 테스트하는 테스트를 생성할 수 있는 도구를 제공합니다. 테스트할 클래스를 마우스 오른쪽 버튼으로 클릭하고 Generate ` Test를 선택하세요.
@@ -63,7 +106,18 @@ Android Studio를 사용하면 클래스를 테스트하는 테스트를 생성�
 Test를 클릭한 후에는 Test 클래스를 생성할 수 있습니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-UnitTestingforAndroidABeginnersGuide_2.png)
 
@@ -76,7 +130,18 @@ Test를 클릭한 후에는 Test 클래스를 생성할 수 있습니다.
 
 단언문은 테스트의 핵심입니다. 코드 문장으로, 코드나 앱이 예상대로 작동했는지 확인합니다. 이 경우, 단언문은 assertEquals(4, 2 + 2)로 4가 2 + 2와 같은지를 확인합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 테스트 전략
 
@@ -84,9 +149,20 @@ Test를 클릭한 후에는 Test 클래스를 생성할 수 있습니다.
 
 ## 주어진 상황, When, Then
 
-테스트의 구조를 생각하는 한 가지 방법은 주어진 상황, When, Then 테스트 니모닉을 따르는 것입니다. 이를 통해 테스트를 세 부분으로 나눌 수 있습니다: 
+테스트의 구조를 생각하는 한 가지 방법은 주어진 상황, When, Then 테스트 니모닉을 따르는 것입니다. 이를 통해 테스트를 세 부분으로 나눌 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 주어진: 테스트에 필요한 객체 및 앱 상태를 설정하십시오. 이 테스트에서 "주어진" 부분이 무엇인가요.
 - 실행: 테스트 중인 객체에 대해 실제로 작업을 수행하십시오.
@@ -110,7 +186,18 @@ fun getUserProfile_givenUserId_returnUser() {
 
 # 종속성 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적으로 종속성을 추가할 때 구현을 사용합니다. 앱을 세계와 공유할 준비가 되면, 테스트 코드나 앱의 종속성을 APK의 크기를 부풀리지 않는 것이 가장 좋습니다. Gradle 구성을 사용하여 라이브러리가 주 코드 또는 테스트 코드에 포함되어야 하는지 지정할 수 있습니다.
 
@@ -122,7 +209,18 @@ fun getUserProfile_givenUserId_returnUser() {
 
 # 테스트 더블들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 문제의 해결책은 리포지토리를 테스트할 때 실제 네트워킹 또는 데이터베이스 코드를 사용하지 말고 대신 테스트 더블을 사용해야 합니다. 테스트 더블은 테스트를 위해 특별히 작성된 클래스의 버전을 말합니다. 이것은 테스트에서 사용되는 클래스의 실제 버전을 대체하는 것을 목적으로 합니다. 이는 스턴트 배우가 위험한 액션을 대신하는 것처럼 테스트 더블이 스턴트에 특화된 배우인 것과 유사합니다.
 
@@ -132,7 +230,18 @@ fun getUserProfile_givenUserId_returnUser() {
 
 클래스의 "작동" 구현을 갖는 테스트 더블이지만 테스트에는 적합하지만 프로덕션에는 적합하지 않은 방식으로 구현되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 목
 
@@ -142,7 +251,18 @@ fun getUserProfile_givenUserId_returnUser() {
 
 테스트의 이름은 해당 테스트가 무엇을 하는지 이해하는 데 도움이 되어야 합니다. 네이밍 규칙은 다음과 같이 보여야 합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **subjectUnderTest_actionOrInput_resultState**
 
@@ -154,7 +274,18 @@ fun getUserProfile_givenUserId_returnUser() {
 
 When you have repeated setup code for multiple tests, you can use the @Before annotation to create a setup method and remove repeated code.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사를 읽어 주셔서 감사합니다. 도움이 되었다면 아래 👏을 클릭해서 기사를 칭찬해주세요. 제게 매우 큰 의미가 됩니다. 댓글이나 트위터, 링크드인을 통해 연락 주시면 감사하겠습니다. 코딩 즐기시고 즐거운 시간 보내세요!
 

@@ -3,13 +3,12 @@ title: "iOS 172 출시  꼭 알아야 할 27가지 중요한 사항"
 description: ""
 coverImage: "/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_0.png"
 date: 2024-06-23 23:50
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_0.png
 tag: Tech
 originalTitle: "iOS 17.2 Released — 27 Things You NEED To Know!"
 link: "https://medium.com/macoclock/ios-17-2-released-27-things-you-need-to-know-e19e305b7197"
 ---
-
 
 <img src="/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_0.png" />
 
@@ -19,7 +18,18 @@ iOS 17.2가 오늘 드디어 공개되었습니다. 이번 iOS 17.x 업데이트
 
 iOS 17.2에 대해 알아야 할 새로운 27가지 사항에 대해 소개해 드릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 1 — 새로운 저널 앱
 새로운 Apple Music 변경 사항
@@ -60,7 +70,18 @@ iOS 17.2에 대해 알아야 할 새로운 27가지 사항에 대해 소개해 �
 
 저널은 iOS 17과 함께 WWDC23에서 소개된 애플의 최신 앱입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Journal이라는 이름에서 알 수 있듯이, 이 애플의 일기 앱은 당신의 일상 활동으로부터 지적 제안을 받을 수 있는 기능과 영감을 주는 프롬프트와 같이 과거에는 없던 기능이 있습니다.
 
@@ -70,7 +91,18 @@ Journal이라는 이름에서 알 수 있듯이, 이 애플의 일기 앱은 당
 
 ## #2. 협업 재생 목록
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 17.2 Beta 3까지 Apple이 협업 재생 목록 - 스포티파이와 아마존 뮤직이 여러 년간 보유해 온 혁신적인 기능을 보여 주었습니다.
 
@@ -80,7 +112,18 @@ iOS 17.2 Beta 3까지 Apple이 협업 재생 목록 - 스포티파이와 아마�
 
 ![이미지 변경](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 재생목록 링크를 공유하고 친구들이 참여할 수 있도록 허용하며, 재생목록에 곡을 추가, 삭제, 재정렬, 편집하고 노래에 이모지로 반응할 수 있습니다.
 
@@ -90,7 +133,18 @@ iOS 17.2 Beta 3까지 Apple이 협업 재생 목록 - 스포티파이와 아마�
 
 최고의 파트,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 참여하기 전에 협력자를 승인할 수 있습니다.
 - 참여할 수 있는 사람 수에 제한이 없습니다.
@@ -101,7 +155,18 @@ iOS 17.2 Beta 3까지 Apple이 협업 재생 목록 - 스포티파이와 아마�
 
 이제 즐겨듣는 모든 노래가 별도의 플레이리스트인 'Favourite Songs ⭐️'로 모아집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_4.png)
 
@@ -111,9 +176,20 @@ iOS 17.2 Beta 3까지 Apple이 협업 재생 목록 - 스포티파이와 아마�
 
 Apple Music의 은밀 모드가 있습니다 — 바로 포커스 필터 형태로요. 설명해 드릴게요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-설정으로 이동하세요 ⚙️ ` 컨트롤 센터 🌙 ` 선택 ` 필터 추가 ` 음악을 선택하고 '들은 음악'을 토글하세요.
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+설정으로 이동하세요 ⚙️ `컨트롤 센터 🌙` 선택 `필터 추가` 음악을 선택하고 '들은 음악'을 토글하세요.
 
 <img src="/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_5.png" />
 
@@ -123,7 +199,18 @@ Apple Music의 은밀 모드가 있습니다 — 바로 포커스 필터 형태�
 - 최근 재생 목록에 표시되지 않습니다.
 - 다른 사람들에게 Apple Music에서 표시되지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단히 말해, 이것은 Apple Music의 익명 모드입니다.
 
@@ -133,7 +220,18 @@ Apple Music의 은밀 모드가 있습니다 — 바로 포커스 필터 형태�
 
 ## #5. 메시지에 스티커 추가하는 새로운 방법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이메시지에 스티커를 붙일 수 있는 방법은 이미 알고 계실 거예요. 메시지 위에 드래그하여 스티커를 놓으면 스티커가 붙습니다. 아래와 같이요:
 
@@ -144,19 +242,39 @@ Apple Music의 은밀 모드가 있습니다 — 바로 포커스 필터 형태�
 - 메시지를 간단히 햅틱한 상태로 누르고,
 - '스티커 추가'를 탭하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_7.png)
 
 - 선호하는 스티커를 선택하고,
-  
+
 그리고 완료되었습니다.
 
 ## #6. Memoji 아바타를 위한 몸을 선택하세요
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 Memoji 아바타의 몸을 선택할 수 있어요.
 
@@ -166,7 +284,18 @@ Apple Music의 은밀 모드가 있습니다 — 바로 포커스 필터 형태�
 
 ## #7. 새로운 세 가지 Memoji 포즈
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 내 Memoji의 의류와 몸을 변경하던 중, 세 가지 새로운 포즈를 발견했어요:
 
@@ -176,7 +305,18 @@ Apple Music의 은밀 모드가 있습니다 — 바로 포커스 필터 형태�
 
 ## #8. 메시지를 iCloud에 강제 동기화하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 17.2에서 Apple은 메시지를 iCloud에 강제 동기화할 수 있는 기능을 추가했어요. 메시지와 관련된 정보는 이제 '메시지' 대신 'iCloud 메시지'로 변경되었어요 (설정 ⚙️ `your_name` iCloud ☁️).
 
@@ -184,8 +324,18 @@ iOS 17.2에서 Apple은 메시지를 iCloud에 강제 동기화할 수 있는 �
 
 - 'iCloud 메시지'로 들어가세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_10.png)
 
@@ -195,8 +345,18 @@ You may also wanna choose to keep your messages for 30 days, 1 year, or Forever 
 
 ## #9. Catch-Up Arrow for Group Chat
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플이 드디어 Messages에 Catch-Up 화살표를 추가했어요 (WWDC23에서 언급된 기능이에요).
 
@@ -206,7 +366,18 @@ You may also wanna choose to keep your messages for 30 days, 1 year, or Forever 
 
 # 새로운 위젯
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 10. 홈 화면 위젯이 4개 추가되었습니다
 
@@ -216,7 +387,18 @@ You may also wanna choose to keep your messages for 30 days, 1 year, or Forever 
 
 첫 세 가지 위젯은
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 세부 사항: 강수 확률, 자외선 지수, 바람 등을 확인하세요.
 - 일일 날씨 예보: 특정 위치의 현재 날씨 조건과 일일 날씨 예보를 확인하세요.
@@ -228,7 +410,18 @@ You may also wanna choose to keep your messages for 30 days, 1 year, or Forever 
 
 iOS 17.2 베타에서 Weather의 Lock Screen Wind 위젯이 새로운 모양을 받았습니다. 🌬️
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 iOS 17.1에서 이랬다:
 
@@ -238,7 +431,18 @@ iOS 17.2 Beta에서는 더 정확한 방향을 나타내기 위해 아날로그 
 
 ![iOS 17.2 Beta](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 iOS 17.2의 공개 릴리스에서는 iOS 17.1의 잠금 화면 바람 위젯으로 다시 변환되었습니다.
 
@@ -247,20 +451,42 @@ iOS 17.2 Beta에서는 더 정확한 방향을 나타내기 위해 아날로그 
 ## #12. Siri가 지리적으로 더 높아졌어요
 
 - 고도:
-iOS 17.1에서 Siri에게 고도를 물었더니 "흥미로운 질문"이라고 대답했어요 (좋은 회피, Siri). 그러나 iOS 17.2에서는 정확한 고도를 알려주고 있어요.
+  iOS 17.1에서 Siri에게 고도를 물었더니 "흥미로운 질문"이라고 대답했어요 (좋은 회피, Siri). 그러나 iOS 17.2에서는 정확한 고도를 알려주고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_15.png)
 
 - ETA (예상 도착 시간):
-Apple Maps로 어떤 장소로 이동 중이라면 (죄송해요 Google), 도착 예정 시간(ETA)을 알고 싶다면, 이제 Siri에게 간단히 물어볼 수 있어요.
+  Apple Maps로 어떤 장소로 이동 중이라면 (죄송해요 Google), 도착 예정 시간(ETA)을 알고 싶다면, 이제 Siri에게 간단히 물어볼 수 있어요.
 
 ![image](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_16.png)
 
 ## #13. 전화 걸 때 어떤 앱을 사용할지 묻는 Siri
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 옛날에는 Siri에게 전화할 대상을 요청하면 자동으로 전화 앱을 사용하도록 설정되었습니다.
 
@@ -270,7 +496,18 @@ Apple Maps로 어떤 장소로 이동 중이라면 (죄송해요 Google), 도착
 
 ![iOS 17.2](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_17.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 새로운 연락처 변경 내용
 
@@ -280,7 +517,18 @@ Apple Maps로 어떤 장소로 이동 중이라면 (죄송해요 Google), 도착
 
 iMessage나 FaceTime을 통해 채팅하거나 대화하는 상대방에게 Apple ID 이름과 프로필 사진을 공개하거나 비공개로 유지할 수 있게 해줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 이제 iOS 17.1까지는 해당 설정을 설정 메뉴의 메시지 💬에서만 조정할 수 있었습니다 ⚙️.
 
@@ -290,7 +538,18 @@ iMessage나 FaceTime을 통해 채팅하거나 대화하는 상대방에게 Appl
 
 ## #15. 차단된 연락처가 페이스타임에 참가할 때 알림
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 17.2의 코드에는 차단된 연락처가 참여하는 FaceTime 통화에 대해 Apple이 경고할 수 있다는 내용이 나와요.
 
@@ -300,7 +559,18 @@ iOS 17.2의 코드에는 차단된 연락처가 참여하는 FaceTime 통화에 
 
 # 새로운 Apple TV 앱 변경 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 16. 멋진 아이콘 재디자인
 
@@ -310,7 +580,18 @@ iOS 17.1의 TV 앱의 이전 하단 바를 살펴보세요:
 
 이제 iOS 17.2에서 재디자인된 아이콘을 살펴보세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_21.png)
 
@@ -322,21 +603,43 @@ iOS 17.1의 TV 앱의 이전 하단 바를 살펴보세요:
 
 ## #17. 새 버튼 - '정보' 및 '다음에'
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 영화나 시리즈를 시청할 때, 아래에 두 개의 새 버튼이 표시됩니다:
 
 ![Info 버튼](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_22.png)
 
 - 정보:
-콘텐츠 설명, 장르, 상영 시간을 보여주며, 비디오를 처음부터 재생하고 세부 정보를 확인할 수 있는 버튼이 있습니다.
+  콘텐츠 설명, 장르, 상영 시간을 보여주며, 비디오를 처음부터 재생하고 세부 정보를 확인할 수 있는 버튼이 있습니다.
 
 ![Details 버튼](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_23.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 다음에:
-완전히 시청하지 않은 비디오를 보여줍니다. 계속 재생하고 싶을 것으로 기대합니다.
+  완전히 시청하지 않은 비디오를 보여줍니다. 계속 재생하고 싶을 것으로 기대합니다.
 
 ![2024-06-23-iOS172Released27ThingsYouNEEDToKnow_24](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_24.png)
 
@@ -344,7 +647,18 @@ iOS 17.1의 TV 앱의 이전 하단 바를 살펴보세요:
 
 ## #18. 알람 울림을 위한 UI 전면 개편
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 작지만 멋지고 칭찬할 만한 UI 변경 사항입니다.
 
@@ -354,7 +668,18 @@ iOS 17.1까지는 이것이 그 UI였습니다(아주 단순한 UI):
 
 `![iOS 17.1 Old UI](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_25.png)`
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 iOS 17.2에서 알람 시계가 흔들립니다 (긴급함을 느끼게 만듭니다):
 
@@ -364,7 +689,18 @@ iOS 17.1까지는 이것이 그 UI였습니다(아주 단순한 UI):
 
 저는 YouTube를 애플리케이션에서가 아니라 Safari에서 시청합니다. 왜일까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글의 #1에서 두 가지 이유를 설명했어요 →
 
@@ -374,7 +710,18 @@ iOS 17.1까지는 이것이 그 UI였습니다(아주 단순한 UI):
 
 하지만 요즘은,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 오른쪽에 있는 AirPlay 그림이 왼쪽 상단으로 이동합니다.
 세 점 메뉴 내의 재생 속도가 표시됩니다.
@@ -385,7 +732,18 @@ iOS 17.1까지는 이것이 그 UI였습니다(아주 단순한 UI):
 
 # #20. 개인화된 공간 오디오를 위한 간단한 프로세스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 개인 맞춤형 공간 오디오 설정은 조금 귀찮은 작업일 수 있어요.
 
@@ -397,7 +755,18 @@ iOS 17.1까지는 이것이 그 UI였습니다(아주 단순한 UI):
 
 이제 왼쪽으로 돌아가면서 얼굴을 한 번 스캔하고, 그리고 오른쪽으로 돌아가는 것만 하면 돼요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](https://miro.medium.com/v2/resize:fit:1400/1*CXhjvWRyxxUHbLpr1uT2ZQ.gif)
 
@@ -411,7 +780,18 @@ iOS 17.1까지는 이것이 그 UI였습니다(아주 단순한 UI):
 
 # #21. 근처 공유를 통해 지갑 패스 공유하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 17에서 Apple은 NameDrop을 통해 연락처를 공유하고 두 대의 iPhone을 두드려 파일을 공유하는 혁신적인 기능을 선보였어요.
 
@@ -421,7 +801,18 @@ iOS 17에서 Apple은 NameDrop을 통해 연락처를 공유하고 두 대의 iP
 
 ## 22. iPhone 13 및 14 모델용 Qi2 지원
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이폰 15 시리즈는 이미 Qi2 무선 충전을 지원합니다.
 
@@ -431,7 +822,18 @@ IOS 17.2부터 Apple은 이전 두 시리즈인 13 및 14에도 Qi2 표준 무�
 
 # 23. 사미 키보드 지원
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플이 사미어를 위한 8개의 새 키보드를 선보였어요.
 
@@ -443,7 +845,18 @@ IOS 17.2부터 Apple은 이전 두 시리즈인 13 및 14에도 Qi2 표준 무�
 
 # #24. 날씨에서 강수량
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 날씨 앱에 새로운 하위 섹션이 추가되었습니다. Precipitation Totals(시간별 예측 섹션).
 
@@ -454,7 +867,18 @@ IOS 17.2부터 Apple은 이전 두 시리즈인 13 및 14에도 Qi2 표준 무�
 
 ![이미지](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_29.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # #25. App Store의 카테고리
 
@@ -464,7 +888,18 @@ Apps 또는 Games 섹션을 탭하면 이제 상단에 카테고리를 표시하
 
 ![image](/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_30.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크다운 형식으로 표를 변경하면 빠르게 스크롤하여 관심 있는 항목을 탭할 수 있습니다.
 
@@ -474,7 +909,18 @@ Apps 또는 Games 섹션을 탭하면 이제 상단에 카테고리를 표시하
 
 사파리 히스토리를 정기적으로 삭제하는 경우, 여러분을 위한 (약간) 유용한 기능이 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사파리(Safari)는 이제 당신이 히스토리를 지운 시간대를 기억합니다.
 
@@ -485,17 +931,39 @@ Apps 또는 Games 섹션을 탭하면 이제 상단에 카테고리를 표시하
 
 하지만, 매번 히스토리를 지우려고 노력하는 대신에 왜 개인 탐색을 시도해보지 않으시겠어요? 더 안전하고 누구도 당신이 뭘 둘러봤는지 모를 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # #27. 보증은 이제 '애플케어 & 보증'으로 변경되었습니다
 
 ‘보증’은 모든 Apple 장치 및 보증 내용을 나열하는 섹션으로, 새로워진 이름과 위치로 바뀌었습니다.
 
-이전에는 설정 ⚙️ ` 일반 ⚙️ ` 정보에서 확인할 수 있었지만 이제 설정 ⚙️ ` 일반 ⚙️`으로 이동하였습니다. 한 걸음 더 간단해졌어요. 
+이전에는 설정 ⚙️ `일반 ⚙️` 정보에서 확인할 수 있었지만 이제 설정 ⚙️ ` 일반 ⚙️`으로 이동하였습니다. 한 걸음 더 간단해졌어요.
 
 <img src="/assets/img/2024-06-23-iOS172Released27ThingsYouNEEDToKnow_32.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 및 이제는 AppleCare 및 보증으로 불립니다.
 
@@ -505,7 +973,18 @@ Apps 또는 Games 섹션을 탭하면 이제 상단에 카테고리를 표시하
 
 ## 마침내,
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 새로운 iOS 및 Mac 앱을 탐험하는 것을 좋아한다면 (저처럼), Setapp 구독을 고려해보세요. 매월 $9.99에 약 240여개의 멋진 앱을 이용할 수 있습니다. 이 앱들은 개별로 구매했을 때 수백 달러가 들 것이죠.
 

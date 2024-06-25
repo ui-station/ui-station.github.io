@@ -3,13 +3,12 @@ title: "시네크론 자바 인터뷰 질문 및 답변 경력 2-4년"
 description: ""
 coverImage: "/assets/img/2024-06-23-SynechronJavaInterviewQuestionsandanswersfor24Exp_0.png"
 date: 2024-06-23 20:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SynechronJavaInterviewQuestionsandanswersfor24Exp_0.png
 tag: Tech
 originalTitle: "Synechron Java Interview Questions and answers for( 2–4 Exp)"
 link: "https://medium.com/@rathod-ajay/synechron-java-interview-questions-and-answers-for-2-4-exp-b1dfb2766d0c"
 ---
-
 
 "안녕하세요 여러분, 이 글에서는 Synechron 기술 회사에서 Java 개발자 직무를 위한 인터뷰 질문과 답변을 공유하겠습니다. 함께 알아보세요."
 
@@ -19,7 +18,18 @@ Java의 Stream API는 Java 8에서 도입된 기능입니다. 이는 Stream이�
 
 Java의 Stream은 일련의 요소를 지원하며 순차적 및 병렬 집계 작업을 지원합니다. 이러한 작업에는 데이터 필터링, 매핑, 정렬 또는 기타 데이터 조작이 포함될 수 있습니다."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 내부적으로 작동 방식을 설명합니다:
 
@@ -38,7 +48,18 @@ List<String> uppercaseNames = names.stream()  // 스트림 생성
 
 이 예제에서는 스트림 API를 사용하여 이름 목록을 필터링하고 대문자로 변환하는 방법을 보여줍니다. filter와 map 메서드는 중간 작업으로 스트림을 구성하며, collect 메서드는 처리를 트리거하고 결과를 새로운 리스트로 수집하는 최종 작업입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 SOLID은 소프트웨어 시스템을 설계할 때 유지보수 및 확장이 용이한 다섯 가지 원칙을 나타내는 약어입니다. 다음은 예와 함께 나열되어 있어요:
 
@@ -57,7 +78,18 @@ SOLID은 소프트웨어 시스템을 설계할 때 유지보수 및 확장이 �
 
 Java 8에서는 특히 java.util.function, java.util.stream, java.time 패키지에서 새로운 클래스와 인터페이스가 소개되었습니다. 여기에 중요한 것들이 몇 가지 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - java.util.function 패키지의 함수형 인터페이스:
 
@@ -77,7 +109,18 @@ Java 8에서는 특히 java.util.function, java.util.stream, java.time 패키지
   - Collector`T,A,R`
   - Collectors
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 java.time 패키지의 Date and Time API 클래스:
 
@@ -94,7 +137,18 @@ java.util 패키지의 Optional 클래스:
 
 - Optional`T`
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 jdk.nashorn.api.scripting 패키지에 새로운 JavaScript 엔진 클래스가 추가되었습니다:
 
@@ -104,7 +158,18 @@ jdk.nashorn.api.scripting 패키지에 새로운 JavaScript 엔진 클래스가 
 
 wait() 및 join()은 자바의 멀티스레딩에서 사용되는 두 가지 메서드로, 각각 다른 목적을 제공합니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - wait(): 이 메서드는 Object 클래스에 정의되어 있으며 스레드 간 통신에 사용됩니다. 스레드가 wait()를 호출하면 휴면 상태로 들어가며 개체에 보유한 락을 해제하여 다른 스레드가 락을 가져가고 고유한 중요한 부분을 실행할 수 있도록 합니다. 해당 스레드는 같은 개체에 대해 notify() 또는 notifyAll()이 호출될 때까지 대기 상태에 머무릅니다.
 
@@ -120,7 +185,18 @@ synchronized(object) {
 
 join(): 이 메서드는 Thread 클래스에 정의되어 있으며 현재 스레드를 지정된 스레드가 종료될 때까지 일시 정지시키는 데 사용됩니다. 즉, 스레드 A가 스레드 B에 대해 join()을 호출하면 A는 B가 실행을 완료할 때까지 기다립니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시:
 
@@ -139,7 +215,18 @@ try {
 
 만약 해당 객체에 대해 동기화를 먼저 실행하지 않고 객체에 대해 wait()를 호출하는 경우, 런타임에 IllegalMonitorStateException이 발생합니다. 이는 wait(), notify(), notifyAll() 메서드가 동기화를 달성하도록 설계되어 다중 스레드 환경에서 사용되며, synchronized 컨텍스트 내에서만 호출할 수 있기 때문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 요기에는 Java 문서에 대한 wait() 메서드 설명이 있어요:
 
@@ -149,7 +236,18 @@ try {
 
 또한, notify() 또는 notifyAll()을 호출하지 않는 경우, 객체에서 대기 중인 스레드는 깨우기 위한 통지할 것이 없기 때문에 대기 상태에 계속 남게 됩니다. 이는 스레드가 영원히 대기하는 상황을 초래할 수 있으며, 이를 스레드 기아라고 일컫는 경우가 많습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Spring Framework과 Spring Boot은 모두 엔터프라이즈급 애플리케이션을 구축하는 데 사용되는 Java 프레임워크입니다. 두 프레임워크는 관련이 있지만 다른 목적을 가지고 있습니다.
 
@@ -159,7 +257,18 @@ Spring Boot: 이는 Spring Framework 위에 구축된 프로젝트입니다. Spr
 
 이것이 주요한 차이점입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 설정: 스프링은 설정을 위해 많은 수동 구성이 필요합니다. 그러나 스프링 부트는 이 복잡성을 줄이기 위해 자동 구성을 제공합니다.
 - 프로젝트 설정: 스프링에서 프로젝트를 설정하는 것은 약간 복잡할 수 있으며 내부 동작에 대한 깊은 이해가 필요합니다. 스프링 부트는 Spring Initializr 웹 기반 프로젝트 생성기를 통해 이 과정을 쉽게 만듭니다.
@@ -173,7 +282,18 @@ Spring Boot: 이는 Spring Framework 위에 구축된 프로젝트입니다. Spr
 
 예를 들어 HashMap에서 hashCode()는 키-값 쌍을 저장해야 하는 버킷을 결정하는 데 사용됩니다. 만약 모든 키에 동일한 해시 코드가 있는 경우, 모두 동일한 버킷에 들어가게 됩니다. 이로 인해 HashMap은 성능 측면에서 연결 목록으로 변하게 되며, 모든 항목이 해당 단일 버킷의 노드 체인으로 저장됩니다. 이는 모든 조회, 삽입 또는 삭제가 모든 항목을 선형 검색해야 하므로 매우 비효율적입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 객체를 HashMap의 키로 사용할 때는 hashCode()와 equals() 메서드를 올바르게 재정의해야 합니다. hashCode() 메서드는 키를 버킷에 고르게 분배하여 성능을 향상시키는 데 중요하며, equals()는 키의 동등성을 결정하는 데 사용됩니다.
 
@@ -188,7 +308,18 @@ Spring Boot: 이는 Spring Framework 위에 구축된 프로젝트입니다. Spr
 - 데이터베이스 최적화: 데이터베이스 쿼리를 최적화하고 인덱싱을 사용하며 필요에 따라 정규화 또는 비정규화를 수행합니다.
 - 최신 라이브러리/프레임워크 사용: 일반적으로 성능 향상이 있는 최신 라이브러리나 프레임워크를 사용하도록 항상 노력해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쓰레드 덤프를 가져오려면:
 
@@ -200,7 +331,18 @@ Java 8에서 "스트림"이라는 용어는 일반적으로 java.util.stream 패
 
 Java 8에서 사용할 수있는 세 가지 유형의 스트림이 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Sequential Stream: 순차 스트림은 단일 파이프라인을 갖고 있으며 요소를 순차적으로만 처리할 수 있습니다. stream() 메서드를 호출할 때 기본적으로 생성됩니다.
 
@@ -212,7 +354,18 @@ Stream<String> stream = list.stream();
 
 - Parallel Stream: 병렬 스트림은 여러 파이프라인을 가지고 있어 요소를 병렬로 처리할 수 있습니다. 멀티코어 머신에서 대용량 데이터셋에 대해 순차 스트림보다 빠를 수 있습니다. parallelStream() 메서드를 호출할 때 생성됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 List<String> list = Arrays.asList("A", "B", "C");
@@ -224,7 +377,18 @@ Infinite Stream: These are streams that don’t have a fixed size, as in they ca
 Stream<Integer> infiniteStream = Stream.iterate(0, i -> i + 2);
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 유형의 스트림은 다른 종류의 작업을 위해 설계되었습니다. 연속 및 병렬 스트림은 일반적으로 유한한 수의 요소와 함께 사용되며, 무한 스트림은 필요할 때 값 시퀀스를 생성하는 데 사용됩니다.
 
@@ -243,7 +407,18 @@ Thread.currentThread().interrupt();
 // t1의 실행이 완료된 후 로직 계속 수행
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예에서 현재 스레드는 t1이 실행을 마칠 때까지 기다립니다. 이는 다른 스레드를 시작하여 일부 작업을 수행하고 그 결과가 필요한 경우에 유용할 수 있습니다.
 
@@ -254,7 +429,18 @@ Thread.currentThread().interrupt();
 
 만약 지정된 시간 내에 스레드가 작업을 완료하지 않으면, join() 호출은 어쨌든 반환되고 현재 스레드는 실행을 계속합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바 7에서 소개된 Objects 클래스는 객체를 다루는 정적 메서드를 제공하는 유틸리티 클래스입니다. 이 유틸리티에는 객체의 해시 코드를 계산하는 데 사용되는 null-안전 혹은 null-허용 메서드, 객체에 대한 문자열을 반환하는 메서드, 두 객체를 비교하는 메서드 등이 포함되어 있습니다.
 
@@ -264,7 +450,18 @@ equals(Object a, Object b): 두 개체가 equals() 메서드에 따라 동일한
 
 Objects.equals(“test”, new String(“test”)); // true를 반환
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 Objects.equals(null, "test"); // false 반환
@@ -276,7 +473,18 @@ hashCode(Object o): null이 아닌 인수의 해시 코드를 반환하고, null
 Objects.hashCode(null); // 0 반환
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 Objects.hashCode("test"); // 문자열 "test"의 해시 코드를 반환합니다.
@@ -288,7 +496,18 @@ Objects.toString(null); // "null"을 반환합니다.
 Objects.toString("test"); // "test"를 반환합니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 requireNonNull(T obj): 지정된 객체 참조가 null이 아닌지 확인합니다. 이 방법은 주로 메서드 및 생성자에서 매개변수 유효성을 검사하기 위해 설계되었습니다.
 
@@ -298,7 +517,18 @@ Objects.requireNonNull("test"); // "test" 반환
 
 compare(T a, T b, Comparator`? super T` c): 지정된 Comparator로 두 객체를 비교하며, null에 안전합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 `Objects` 클래스는 null-안전한 메소드를 제공하여 더 깨끗하고 견고한 코드를 작성하는 데 도움이 됩니다.
 
@@ -309,7 +539,18 @@ compare(T a, T b, Comparator`? super T` c): 지정된 Comparator로 두 객체�
 
 여기 Java에서의 예시입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 List<String> list = Arrays.asList("Hello World", "Java Stream");
@@ -329,7 +570,18 @@ List<String> flatMapResult = list.stream()
 
 자바에서 java.util.concurrent 패키지는 멀티스레딩에 유용한 여러 유형의 블로킹 큐를 제공합니다. 블로킹 큐는 큐가 비어 있고 Dequeue하려고 하면 블로킹되거나, 큐가 이미 가득 차있고 Enqueue하려고 하면 블로킹되는 큐입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자바에서 사용되는 블로킹 큐의 종류는 다음과 같아요:
 
@@ -339,7 +591,18 @@ List<String> flatMapResult = list.stream()
 
 - PriorityBlockingQueue: PriorityQueue 클래스와 동일한 규칙을 사용하며 블로킹 검색 작업을 지원하는 무제한 블로킹 큐에요. 이 큐는 논리적으로는 무제한이지만 리소스 고갈로 인해 추가가 실패할 수도 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 DelayQueue: 지연된 요소들의 무한 대기 큐로, 요소의 지연이 만료되었을 때에만 요소를 가져올 수 있습니다.
 
@@ -349,7 +612,18 @@ LinkedTransferQueue: 링크된 노드를 기반으로 한 무한 TransferQueue�
 
 LinkedBlockingDeque: 링크된 노드를 기반으로 한 선택적으로 유한한 블로킹 덱입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 각 종류의 블로킹 큐는 다중 스레드 프로그래밍에서 작업 요구 사항에 따라 고유한 사용 사례를 갖습니다.
 
@@ -360,7 +634,18 @@ LinkedBlockingDeque: 링크된 노드를 기반으로 한 선택적으로 유한
 
 제 책은 여기서 찾아볼 수 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 아마존에서 이 책을 구입하여 기본 Java 개발자 인터뷰를 준비하세요 (킨들북).
 - Gumroad에서 PDF 형식으로 Spring-Boot Microservice 인터뷰를 준비하는 방법 안내서를 확인하세요.

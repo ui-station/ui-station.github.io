@@ -3,17 +3,27 @@ title: "모든 안드로이드 개발자가 알아야 할 ObjectAnimator로 애�
 description: ""
 coverImage: "/assets/img/2024-06-23-EveryAndroiddevelopershouldknowaboutObjectAnimatortouseanimationsinyourApps_0.png"
 date: 2024-06-23 21:04
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-EveryAndroiddevelopershouldknowaboutObjectAnimatortouseanimationsinyourApps_0.png
 tag: Tech
 originalTitle: "Every Android developer should know about ObjectAnimator to use animations in your Apps"
 link: "https://medium.com/@sandeepkella23/every-android-developer-should-know-about-objectanimator-to-use-animations-in-your-apps-1e6330de8873"
 ---
 
-
 마크다운 형식으로 테이블 태그를 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 목적: 객체의 속성을 시간에 따라 애니메이션화합니다.
 - 상속: ValueAnimator로부터 상속받으며 그 기능을 확장하여 속성을 직접 애니메이션화합니다.
@@ -25,10 +35,20 @@ link: "https://medium.com/@sandeepkella23/every-android-developer-should-know-ab
 
 # 기본 사용법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - ObjectAnimator를 만드는 방법:
-  
 - 방법: 정적 메서드를 사용하여 인스턴스를 생성합니다.
 - 예시:
 
@@ -40,7 +60,18 @@ animator.start();
 
 2. 애니메이트할 공통 속성:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - alpha: 화면을 서서히 사라지게 합니다.
 - translationX, translationY: 화면을 X 또는 Y 축을 따라 이동시킵니다.
@@ -54,7 +85,18 @@ animator.start();
 - 목적: 여러 애니메이션을 함께 또는 순차적으로 실행합니다.
 - 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ObjectAnimator scaleX = ObjectAnimator.ofFloat(targetView, "scaleX", 1f, 1.5f);
@@ -78,7 +120,18 @@ animator.setDuration(1000);
 animator.start();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. AnimatorListener:
 
@@ -95,7 +148,18 @@ animator.start();
 
 4. Interpolator:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 목적: 애니메이션의 변화율을 제어합니다.
 - 일반적으로 사용되는 보간기: LinearInterpolator, AccelerateInterpolator, DecelerateInterpolator, BounceInterpolator.
@@ -110,7 +174,18 @@ animator.setInterpolator(new BounceInterpolator());
 - 목적: 애니메이션 타임라인에서 특정 지점을 정의합니다.
 - 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 Keyframe kf0 = Keyframe.ofFloat(0f, 0f);
@@ -132,7 +207,18 @@ fadeOut.setDuration(2000);
 fadeOut.start();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 바운스 애니메이션:
 
@@ -154,7 +240,18 @@ set.setDuration(2000);
 set.start();
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 최선의 실첀법
 
@@ -164,7 +261,18 @@ set.start();
 
 2. 애니메이터를 재사용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가능한 경우 ObjectAnimator 인스턴스를 재사용하여 성능을 향상시킵니다.
 
@@ -174,7 +282,18 @@ set.start();
 
 4. 테스트:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 서로 다른 기기와 화면 크기에서 애니메이션을 테스트하여 일관된 동작을 보장하세요.
 

@@ -3,13 +3,12 @@ title: "Flutter에서 간단하게 Pull to Refresh 구현하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-SimpleFlutterpulltorefresh_0.png"
 date: 2024-06-23 21:38
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SimpleFlutterpulltorefresh_0.png
 tag: Tech
 originalTitle: "Simple Flutter: pull to refresh"
 link: "https://medium.com/@cloderaldo/simple-flutter-pull-to-refresh-fd1994224809"
 ---
-
 
 <img src="/assets/img/2024-06-23-SimpleFlutterpulltorefresh_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@cloderaldo/simple-flutter-pull-to-refresh-fd199422480
 
 Flutter를 사용하면 RefreshIndicator 위젯을 사용하여 pull-to-refresh 기능을 구현하기가 쉽습니다. 아래에는 이 기능을 Flutter 애플리케이션에 추가하는 방법을 보여주는 간단한 예제가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 샘플 코드: main.dart
 
@@ -85,9 +95,20 @@ class _HomePageState extends State<HomePage> {
 - MyApp 위젯: 이것은 애플리케이션의 루트 위젯입니다.
 - HomePage 위젯: 이것은 풀-투-리프레시 기능이 구현된 메인 화면입니다.
 - RefreshIndicator 위젯: 이 위젯은 ListView를 감싸고 풀-투-리프레시 기능을 제공합니다. 사용자가 목록을 새로 고치기 위해 아래로 당기면 onRefresh 메서드가 호출됩니다.
-- _refresh 메서드: 이 메서드는 2초 동안 지연을 통해 네트워크 호출을 시뮬레이션합니다. 지연 후에 새로운 데이터를 보여주기 위해 항목 목록을 업데이트합니다.
+- \_refresh 메서드: 이 메서드는 2초 동안 지연을 통해 네트워크 호출을 시뮬레이션합니다. 지연 후에 새로운 데이터를 보여주기 위해 항목 목록을 업데이트합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 

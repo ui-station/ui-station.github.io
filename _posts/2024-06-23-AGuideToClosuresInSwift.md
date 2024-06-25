@@ -3,13 +3,12 @@ title: "Swift에서 클로저 사용하는 방법 - 완벽 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-23-AGuideToClosuresInSwift_0.png"
 date: 2024-06-23 21:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AGuideToClosuresInSwift_0.png
 tag: Tech
 originalTitle: "A Guide To Closures In Swift"
 link: "https://medium.com/swiftable/a-guide-to-closures-in-swift-368e6aca6d71"
 ---
-
 
 ![Closure](/assets/img/2024-06-23-AGuideToClosuresInSwift_0.png)
 
@@ -22,7 +21,18 @@ link: "https://medium.com/swiftable/a-guide-to-closures-in-swift-368e6aca6d71"
 - 비동기 작업
 - 값 캡처
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 인수 및 반환 값으로서의 클로저:
 
@@ -63,7 +73,18 @@ let resultTriple = triple(4) // 결과: 12
 print(resultDouble, resultTriple)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제에서는 performOperation이라는 함수를 정의합니다. 이 함수는 두 정수와 산술 연산을 나타내는 클로저를 받습니다. 이 함수는 제공된 클로저를 두 정수에 적용합니다.
 
@@ -73,11 +94,33 @@ print(resultDouble, resultTriple)
 
 # Sorting and Filtering:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 struct Person {
@@ -105,9 +148,20 @@ print(sortedByAge)
 
 2. 클로저로 필터링:
 
-클로저를 사용하여 특정 조건에 따라 배열에서 요소를 필터링할 수도 있습니다. filter(_:) 메서드를 사용하여, 필터링된 결과에 포함되어야 하는지 여부를 나타내는 Boolean 값을 반환하는 클로저를 제공할 수 있습니다.
+클로저를 사용하여 특정 조건에 따라 배열에서 요소를 필터링할 수도 있습니다. filter(\_:) 메서드를 사용하여, 필터링된 결과에 포함되어야 하는지 여부를 나타내는 Boolean 값을 반환하는 클로저를 제공할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시:
 
@@ -122,11 +176,22 @@ let evenNumbers = numbers.filter { number in
 print(evenNumbers) // 출력: [2, 4, 6, 8, 10]
 ```
 
-본 예시에서는 filter(_:) 메서드가 클로저를 사용하여 numbers 배열에서 홀수를 필터링하는 방법을 보여줍니다.
+본 예시에서는 filter(\_:) 메서드가 클로저를 사용하여 numbers 배열에서 홀수를 필터링하는 방법을 보여줍니다.
 
 # 비동기 작업:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클로저는 네트워크 요청이나 애니메이션과 같은 비동기 작업에서 완료 핸들러로 자주 사용됩니다.
 
@@ -159,7 +224,18 @@ fetchData { result in
 
 이 예시에서 fetchData 함수는 지연 후 완료되는 네트워크 요청을 시뮬레이션합니다. 네트워크 요청이 완료되면 실행되는 클로저(completion)를 인자로 받습니다. 클로저는 성공(가져온 데이터와 함께) 또는 실패(에러와 함께)를 나타내는 Result 타입을 갖습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 비동기 예제: 애니메이션
 
@@ -179,7 +255,18 @@ UIView.animate(withDuration: 0.5, animations: {
 
 # 값 캡처하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클로저는 주변 컨텍스트에서 변수와 상수에 대한 참조를 캡처하고 저장할 수 있습니다. 이는 클로저 내부에서 상태를 유지하는 데 유용할 수 있습니다.
 
@@ -210,7 +297,18 @@ print(incrementByTwo()) // Prints: 6
 
 이 예시에서 makeIncrementer 함수는 주변 컨텍스트에서 total 변수를 캡처하는 클로저인 incrementer를 반환합니다. 반환된 클로저는 캡처된 total을 지정된 incrementAmount만큼 증가시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 makeIncrementer(incrementAmount: 2)을 호출하면 incrementByTwo 클로저를 얻게 됩니다. incrementByTwo()를 호출할 때마다 총합이 2씩 증가하고 업데이트된 값이 반환됩니다.
 
@@ -220,7 +318,18 @@ makeIncrementer(incrementAmount: 2)을 호출하면 incrementByTwo 클로저를 
 
 클로저에서 값들을 캡처하는 것은 상태를 유지하고 컨텍스트를 기억하는 동작을 만들 수 있게 해줍니다. 이러한 특성으로 인해 클로저는 다양한 프로그래밍 시나리오에 강력한 도구가 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 문법:
 
@@ -232,7 +341,18 @@ let closureName: (파라미터들) -> 반환타입 = { // 클로저 내용 }
 
 두 정수를 더하는 클로저의 예시:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 let addClosure: (Int, Int) -> Int = { (a, b) in
@@ -254,7 +374,18 @@ let result = addClosure(5, 3)
 
 더 간결하게도:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 let addClosure: (Int, Int) -> Int = { $0 + $1 }
@@ -281,7 +412,18 @@ print(incrementByTwo()) // 2 출력
 print(incrementByTwo()) // 4 출력
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서 증가자 클로저는 주변 함수 컨텍스트에서 total 변수와 incrementAmount 매개변수를 캡처합니다.
 
@@ -291,7 +433,18 @@ print(incrementByTwo()) // 4 출력
 
 LinkedIn
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래에서 제 코드를 확인할 수 있어요👇🏻
 
@@ -301,7 +454,18 @@ GitHub
 
 의견, 질문 또는 추천이 있으면 자유롭게 아래 댓글 섹션에 남겨주세요💬
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 💁🏻‍♀️ 즐거운 코딩하세요!
 

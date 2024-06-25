@@ -3,19 +3,29 @@ title: "Docker 볼륨 이해하기 완벽 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-23-UnderstandingDockerVolumesAComprehensiveGuide_0.png"
 date: 2024-06-23 22:52
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UnderstandingDockerVolumesAComprehensiveGuide_0.png
 tag: Tech
 originalTitle: "Understanding Docker Volumes: A Comprehensive Guide"
 link: "https://medium.com/@therahulsarkar/understanding-docker-volumes-a-comprehensive-guide-46339aa9ac53"
 ---
 
-
 도커(Docker)의 컨테이너는 상태를 유지하지 않고 쉽게 폐기할 수 있는 방식으로 설계되었습니다. 볼륨(Volumes)은 컨테이너가 생성하고 사용하는 데이터를 단일 컨테이너의 수명 주기를 넘어서 계속 유지하는 방법을 제공합니다. 이는 데이터베이스, 파일 저장소 및 지속적인 저장 공간이 필요한 다른 응용 프로그램에 필수적입니다.
 
 본 문서는 도커 볼륨을 생성하고 사용하는 다양한 방법을 탐구하며, 실제 응용 사례를 설명하기 위한 예제가 포함되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Docker Volume 소개
 
@@ -25,7 +35,18 @@ Docker 볼륨은 Docker 컨테이너에서 생성된 데이터를 저장하고 �
 
 ## Named Volumes
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이름이 지정된 볼륨은 사용자가 정의한 볼륨으로, 이름으로 쉽게 참조하고 여러 컨테이너 간에 재사용할 수 있습니다. 이러한 볼륨은 Docker의 내부 볼륨 저장소에 저장됩니다.
 
@@ -38,7 +59,18 @@ docker run -d --name my_container -v myVolume:/data node_container
 
 이름이 지정되지 않은 볼륨은 생성된 이름이 없을 때 생성됩니다. 이러한 볼륨들은 일반적으로 컨테이너의 수명주기를 넘어서 지속되지 않아야 하는 일시적인 데이터에 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 실행 -d --name my_container -v /data node_container
@@ -52,7 +84,18 @@ docker run -d --name my_container -v myVolume:/data node_container
 도커 실행 -d --name my_container -v /호스트/경로:/data node_container
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## tmpfs 볼륨
 
@@ -64,7 +107,18 @@ docker run -d --name my_container --tmpfs /data node_container
 
 # Docker 볼륨 생성 및 관리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 볼륨 만들기
 
@@ -76,7 +130,18 @@ docker volume create myVolume
 
 ## 볼륨 검사
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 볼륨을 검사하고 세부 정보를 확인하려면
 
@@ -88,7 +153,18 @@ docker volume inspect myVolume
 
 더 이상 필요하지 않은 볼륨을 제거하려면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 볼륨 삭제 myVolume
@@ -100,7 +176,18 @@ docker volume inspect myVolume
 
 ## 명명된 볼륨 마운트하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 특정 이름의 볼륨을 컨테이너에 마운트하려면:
 
@@ -112,7 +199,18 @@ docker run -d -v myVolume:/app/data myImage
 
 익명 볼륨을 마운트하려면:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 실행 -d -v /app/data myImage
@@ -126,7 +224,18 @@ docker run -d -v myVolume:/app/data myImage
 도커 실행 -d -v /host/data:/app/data myImage
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 예시
 
@@ -139,7 +248,18 @@ docker volume create mydata
 docker run -d -v mydata:/app/data myImage
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 컨테이너 내부의 /app/data 경로에 작성된 모든 데이터는 컨테이너가 삭제되더라도 유지됩니다.
 
@@ -153,8 +273,18 @@ docker run -d -v shared_data:/app/data container1
 docker run -d -v shared_data:/app/data container2
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Understanding Docker Volumes](/assets/img/2024-06-23-UnderstandingDockerVolumesAComprehensiveGuide_3.png)
 
@@ -164,8 +294,18 @@ docker run -d -v shared_data:/app/data container2
 
 호스트 디렉토리를 컨테이너에 매핑하는 Bind Mount를 사용하여 실시간 코드 변경을 가능하게 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 실행 -d -v $(pwd):/app myImage
@@ -177,8 +317,18 @@ docker run -d -v shared_data:/app/data container2
 
 ## 단계 1: Node.js 애플리케이션 생성
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 파일에 데이터를 작성하는 간단한 Node.js 애플리케이션을 만들어봅시다:
 
@@ -188,7 +338,18 @@ docker run -d -v shared_data:/app/data container2
 
 다음으로 Node.js 애플리케이션을 위한 Dockerfile을 만들어봅시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```docker
 FROM node:14
@@ -206,7 +367,18 @@ CMD ["node", "app.js"]
 
 ## Step 4: 컨테이너를 실행하세요
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-UnderstandingDockerVolumesAComprehensiveGuide_6.png" />
 
@@ -217,7 +389,18 @@ CMD ["node", "app.js"]
 
 <img src="/assets/img/2024-06-23-UnderstandingDockerVolumesAComprehensiveGuide_7.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-UnderstandingDockerVolumesAComprehensiveGuide_8.png" />
 
@@ -230,6 +413,17 @@ CMD ["node", "app.js"]
 
 # 결론
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 볼륨은 컨테이너화된 응용 프로그램의 유연성과 효율성을 향상시키는 강력한 기능입니다. 다양한 유형의 볼륨을 이해하고 관리하는 방법을 알면 도커를 사용하여 컨테이너 내에서 데이터를 지속적으로 유지, 공유 및 관리할 수 있습니다.

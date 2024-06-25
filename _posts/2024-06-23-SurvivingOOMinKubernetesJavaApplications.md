@@ -3,14 +3,12 @@ title: "Kubernetes에서 OOM 생존 가이드 Java 애플리케이션을 위한 
 description: ""
 coverImage: "/assets/img/2024-06-23-SurvivingOOMinKubernetesJavaApplications_0.png"
 date: 2024-06-23 20:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SurvivingOOMinKubernetesJavaApplications_0.png
 tag: Tech
 originalTitle: "Surviving OOM in Kubernetes: Java Applications"
 link: "https://medium.com/@yonahdissen/surviving-oom-in-kubernetes-java-applications-fd1fb1a65f02"
 ---
-
-
 
 ![Surviving OOM in Kubernetes Java Applications](/assets/img/2024-06-23-SurvivingOOMinKubernetesJavaApplications_0.png)
 
@@ -20,8 +18,18 @@ Kubernetes에서 Java 앱이 OOM을 경험할 때 플랫폼은 원활한 작동�
 
 # 접근 방법 1:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OOM이 발생하기 전에 힙 덤프를 트리거하세요.
 
@@ -31,7 +39,18 @@ jvm 메모리의 90%와 같은 임계값을 선택하고 해당 임계값이 초
 
 단점:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 외부 웹훅을 개발하거나 클러스터에 Robusta를 설치해야 합니다.
 - 애플리케이션에 Jmap이 있거나 일시적 컨테이너를 허용해야 합니다. 이 두 가지는 프로덕션에 일반적이지 않습니다.
@@ -42,19 +61,41 @@ jvm 메모리의 90%와 같은 임계값을 선택하고 해당 임계값이 초
 
 하지만 기다려주세요. 만약 JVM의 최대 메모리에 도달하면, 팟은 다시 시작되는 것이 아니었나요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그곳에 일부 JVM 매개변수가 유용하게 사용됩니다. 다음 JAVA_OPTS를 설정하여 킬 신호가 전송될 때 힙 덤프를 생성할 수 있습니다.
 
 ```js
-JAVA_OPTS = "XX:+HeapDumpOnOutOfMemoryError"
+JAVA_OPTS = "XX:+HeapDumpOnOutOfMemoryError";
 ```
 
 좋아요! 이제 파드 내에 생성된 힙 덤프가 있습니다. 하지만 이것은 파드가 다시 시작될 때 삭제되기 때문에 우리에게 큰 도움이 되지 않습니다.
 
 ![이미지](/assets/img/2024-06-23-SurvivingOOMinKubernetesJavaApplications_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나중에 분석할 힙 덤프를 영구 저장하기 위해 몇 가지 옵션을 살펴볼 거에요.
 
@@ -64,7 +105,18 @@ Java 어플리케이션을 포함하는 각각의 파드에는 해당 컨테이�
 
 JAVA_OPTS에 우리의 경우, 이런 식으로 힙 덤프를 공유된 볼륨에 넣는 설정을 추가할 거에요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 -XX:HeapDumpPath=/etc/shared-path/${pod_name}.hprof"
@@ -76,7 +128,18 @@ JAVA_OPTS에 우리의 경우, 이런 식으로 힙 덤프를 공유된 볼륨�
 
 단점:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코드 유지보수 - 이제 모든 파드가 사이드카를 가져야 하며 2개의 컨테이너 사이에 마운트가 필요합니다(이를 Helm 라이브러리를 사용하여 수행할 수 있습니다).
 - CPU 및 메모리 사용량 - 각각의 사이드카는 비록 휴면 상태일지라도 약간의 풋프린트를 갖고 있으며, 많은 파드가 실행 중일 때 이는 빠르게 누적될 수 있습니다.
@@ -87,7 +150,18 @@ JAVA_OPTS에 우리의 경우, 이런 식으로 힙 덤프를 공유된 볼륨�
 
 단일 NFS 볼륨을 생성하고 모든 클러스터 노드에 마운트할 수 있습니다. 이를 통해 관련 파드를 호스트 경로에 마운트하고 힙 덤프를 이 경로로 직접 지정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 -XX:HeapDumpPath=/etc/efs-mount/${pod_name}.hprof"
@@ -99,8 +173,18 @@ JAVA_OPTS에 우리의 경우, 이런 식으로 힙 덤프를 공유된 볼륨�
 
 ![아키텍처](/assets/img/2024-06-23-SurvivingOOMinKubernetesJavaApplications_3.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모니터링 팟은 다음과 같이 작은 파이썬 앱일 수 있습니다:
 
@@ -138,7 +222,18 @@ if __name__ == "__main__":
 
 주의사항:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 클라우드 스토리지(예: S3 버킷)에 대한 인증을 하려면 kube2iam과 같은 것을 사용하는 것을 권장합니다.
 - 예제와 같이 힙 덤프를 팟 이름으로 명명하십시오. 이 작업의 까다로운 부분은 매니페스트 아규먼트가 아니라 팟의 엔트리포인트에 넣어야 한다는 것입니다.

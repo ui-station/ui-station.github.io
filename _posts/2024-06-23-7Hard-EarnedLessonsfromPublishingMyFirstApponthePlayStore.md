@@ -3,13 +3,12 @@ title: "플레이 스토어에 첫 번째 앱을 출시하며 배운 7가지 소
 description: ""
 coverImage: "/assets/img/2024-06-23-7Hard-EarnedLessonsfromPublishingMyFirstApponthePlayStore_0.png"
 date: 2024-06-23 21:43
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-7Hard-EarnedLessonsfromPublishingMyFirstApponthePlayStore_0.png
 tag: Tech
 originalTitle: "7 Hard-Earned Lessons from Publishing My First App on the Play Store"
 link: "https://medium.com/@Saurabh7973/7-hard-earned-lessons-from-publishing-my-first-app-on-the-play-store-dfd5a3227c43"
 ---
-
 
 앱 출판의 장애물을 극복하는 개발자의 솔직한 여정
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@Saurabh7973/7-hard-earned-lessons-from-publishing-my-
 
 - 튜토리얼 지옥을 벗어나기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱 개발 여정 중 처음 6개월은 튜토리얼에 많이 의존했어요. 각각의 튜토리얼을 통해 새로운 것을 배우긴 했지만, 종종 근본적인 개념을 제대로 이해하지 못한 채 지시사항을 따라가는 상황에 갇혔어요. 이를 어떤 사람들은 "튜토리얼 지옥"이라고 부르죠.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@Saurabh7973/7-hard-earned-lessons-from-publishing-my-
 
 교훈: 계획을 세워보세요! 앱의 출시 일정을 예상할 때 테스터를 찾는 것도 고려해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 2. 내 내성적인 성격을 극복하다
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@Saurabh7973/7-hard-earned-lessons-from-publishing-my-
 
 ![이미지](/assets/img/2024-06-23-7Hard-EarnedLessonsfromPublishingMyFirstApponthePlayStore_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. Google Play 개발자 계정 만들기: 나의 경험
 
@@ -49,7 +81,18 @@ Play Store에 앱을 게시하는 여정이 내가 상상했던 것만큼 간단
 
 여기서 중요한 점은 등록할 때 입력하는 주소가 선택한 신분증 문서에 있는 주소와 완벽하게 일치하도록 하는 것이다. 이는 공과금, 은행 명세서 또는 임대 계약서의 사본일 수 있다. 반복적인 거부는 나중에 인증할 능력을 제한할 수 있으니 유의해야 한다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 자세한 내용을 원하시나요?
 
@@ -59,7 +102,18 @@ Play Store에 앱을 게시하는 여정이 내가 상상했던 것만큼 간단
 
 계정이 확인된 후에 앱을 만들어 업로드할 수 있습니다. 이 과정에서 앱이나 게임인지, 가격 모델(무료 또는 유료), 필요한 동의를 받는 등의 세부 정보를 지정해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이후에는 앱 대시보드에 착륙하게 될 거에요. 여기서 "프로덕션 언락" 장벽을 만날 수도 있는데, 20명의 테스터가 14일 연속으로 앱을 활발히 테스트하도록 참여해야 한다는 요구 조건입니다.
 
@@ -69,7 +123,18 @@ Play Store에 앱을 게시하는 여정이 내가 상상했던 것만큼 간단
 
 교훈: 세부 사항을 꼼꼼히 읽어보세요! 앱을 업로드하기 전에 내부 테스팅과 폐쇄 테스팅의 차이를 이해하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](/assets/img/2024-06-23-7Hard-EarnedLessonsfromPublishingMyFirstApponthePlayStore_2.png)
 
@@ -79,10 +144,21 @@ Play Store에 앱을 게시하는 여정이 내가 상상했던 것만큼 간단
 
 - 앱의 특정 분야와 관련된 온라인 커뮤니티 및 포럼.
 - 앱 개발이나 베타 테스트에 중점을 둔 소셜 미디어 그룹.
-- 대학 캠퍼스 (앱이 학생을 대상으로하는 경우) 
+- 대학 캠퍼스 (앱이 학생을 대상으로하는 경우)
 - 기술 애호가나 기업가를 위한 로컬 밋업.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 7. 결론: 앱 출판을 위한 더 스무디한 길
 
@@ -92,6 +168,17 @@ Play Store에 앱을 게시하는 여정이 내가 상상했던 것만큼 간단
 
 읽어 주셔서 감사합니다. 행복한 개발되세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://saurabh7973.medium.com/subscribe

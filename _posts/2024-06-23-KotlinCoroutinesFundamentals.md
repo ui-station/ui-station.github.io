@@ -3,13 +3,12 @@ title: "기초부터 배우는 Kotlin 코루틴 사용법"
 description: ""
 coverImage: "/assets/img/2024-06-23-KotlinCoroutinesFundamentals_0.png"
 date: 2024-06-23 23:18
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-KotlinCoroutinesFundamentals_0.png
 tag: Tech
 originalTitle: "Kotlin Coroutines — Fundamentals"
 link: "https://medium.com/@anitaa_1990/kotlin-coroutines-fundamentals-ca25e6c5ffa6"
 ---
-
 
 코루틴은 이미 오랫동안 존재하고 있고 여러 다양한 기사들이 그 주변에 존재합니다. 그러나 그것에는 깊은 학습 곡선이 존재하여 Coroutines의 기본 원리를 실제로 이해하는 데 꽤 많은 시간이 걸렸습니다. 그래서 내가 이해한 바에 따라 몇 가지 배운 점을 공유하고 싶다고 생각했습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@anitaa_1990/kotlin-coroutines-fundamentals-ca25e6c5ff
 
 # 코루틴의 장점
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 코루틴은 가볍습니다 - 지원하는 ​​일시 정지로 인해 한 쓰레드에서 많은 코루틴을 실행할 수 있습니다. 여기서 일시 정지란 몇 가지 명령을 실행한 다음 해당 코루틴을 실행 중간에 중지하고 원하는 때 이어서 실행할 수 있다는 것을 의미합니다. 일시 정지는 많은 동시 작업을 지원하면서도 차단보다 메모리를 절약합니다.
 - 코루틴은 메모리 누수가 적습니다 - 코루틴은 구조화된 동시성 원칙을 따르며, 각 코루틴은 특정 컨텍스트 내에서 특정한 수명을 갖고 시작되어야 합니다. 구조화된 동시성은 코루틴의 수명이 특정 범위에 묶여 범위 자체가 완료되기 전에 범위 내에서 시작된 모든 코루틴이 완료되도록 하는 방식입니다. 이는 코루틴 누출을 방지하고 리소스 관리를 단순화하는 데 도움이 됩니다.
@@ -33,7 +43,18 @@ link: "https://medium.com/@anitaa_1990/kotlin-coroutines-fundamentals-ca25e6c5ff
 
 <img src="/assets/img/2024-06-23-KotlinCoroutinesFundamentals_0.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 중지 함수
 - Coroutine Scope (Dispatchers, Job 포함)
@@ -46,7 +67,18 @@ link: "https://medium.com/@anitaa_1990/kotlin-coroutines-fundamentals-ca25e6c5ff
 
 중지 함수의 구문은 일반 함수의 구문과 동일하지만 `suspend` 키워드가 추가됩니다. 중지 함수는 코루틴이나 다른 중지 함수에서만 호출할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 suspend fun doSomething(): Int {
@@ -61,8 +93,18 @@ suspend fun doSomething(): Int {
 
 Android에서는 코루틴에는 세 가지 기본 스코프가 있습니다:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 글로벌 범위: GlobalScope는 전체 애플리케이션 수명 동안 지속되는 미리 정의된 코루틴 범위입니다. 편리할 수 있지만 일반적으로 구조화된 동시성을 보장하기 위해 사용자 정의 코루틴 범위를 사용하는 것이 권장됩니다.
 
@@ -74,6 +116,7 @@ GlobalScope.launch {
 ```
 
 - LifeCycle 범위: LifecycleOwner(프래그먼트 액티비티)의 수명에 바인딩됩니다. 프래그먼트 액티비티가 파괴되면 이 범위의 코루틴도 취소됩니다. LifecycleScope를 사용하면 특별한 실행 조건을 사용할 수도 있습니다:
+
 * launchWhenCreated는 라이프사이클이 최소한 생성 상태에 있을 때 코루틴을 시작하고 파괴 상태에 있을 경우 일시 중단합니다.
 * launchWhenStarted는 라이프사이클이 최소한 시작 상태에 있을 때 코루틴을 시작하고 중지 상태에 있을 경우 일시 중단합니다.
 * launchWhenResumed는 라이프사이클이 최소한 재개 상태에 있을 때 코루틴을 시작하고 일시 중단합니다.
@@ -86,7 +129,18 @@ lifecycleScope.launchWhenResumed {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - ViewModel Scope: ViewModel의 수명에 바인딩됩니다. ViewModel이 해제되면이 범위 내의 코루틴도 취소됩니다.
 
@@ -102,14 +156,25 @@ viewModelScope.launch {
 
 코루틴 빌더는 새로운 코루틴을 초기화하거나 생성하기 위한 함수입니다. 코루틴의 실행을 시작하고 제어하는 편리한 방법을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - `launch`: 새로운 coroutine을 동시에 시작합니다. 예를 들어, 현재 스레드를 차단하지 않고 시작됩니다. 해당 작업이 취소될 때 자동으로 취소되며 결과 작업이 취소될 때 결과를 반환하지 않습니다. `launch`의 반환 유형은 `Job`입니다. 따라서 해당 작업과 상호 작용하여 coroutine의 라이프사이클을 제어할 수 있습니다. `job.cancel()`을 호출하여 쉽게 취소할 수 있습니다. `launch`는 ViewModel에서 비-suspending 코드에서 suspending 코드로 연결을 생성하는 데 자주 사용됩니다.
 
 ```js
 launch {
     delay(1000L)
-    println("Hello World!")    
+    println("Hello World!")
 }
 ```
 
@@ -126,7 +191,18 @@ suspend fun doWorld() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - async: 컨테이너{launch} 함수처럼, 새로운 코루틴을 시작하는 데 사용되며, 차이점은 Job 대신 deferred를 반환한다는 것입니다. deferred는 결과를 나중에 전달할 것을 약속하는 비차단(future)인데, 결과 deferred가 취소되면 실행 중인 코루틴도 취소됩니다. async 빌더를 사용하면 반환된 값을 얻으려면 `await`를 호출하면 됩니다.
 
@@ -152,7 +228,18 @@ launch {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - withContext: 현재 코루틴 내에서 코루틴 컨텍스트를 전환하는 데 사용되는 지연 함수입니다. 현재 코루틴을 일시 중단하고 지정된 컨텍스트로 전환한 후 새 컨텍스트에서 실행을 계속합니다. 일반적으로 해당 함수를 사용하여 코루틴이 실행될 디스패처를 전환합니다. withContext를 사용하면 콜백을 도입하지 않고 코드가 어느 스레드에서 실행될지 제어할 수 있기 때문에 데이터베이스에서 읽기나 네트워크 요청과 같은 매우 작은 함수에 적용할 수 있습니다.
 
@@ -173,7 +260,18 @@ suspend fun fetchData(): String {
 
 코루틴 컨텍스트는 코루틴의 동작과 특성을 정의하는 요소들의 세트입니다. 디스패처, 작업, 예외 처리기 및 코루틴 이름과 같은 요소를 포함합니다. 이 컨텍스트는 코루틴이 어떻게 어디에서 실행될지 결정하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디스패처
 
@@ -197,11 +295,22 @@ fun main() = runBlocking {
     }
     launch(newSingleThreadContext("MyOwnThread")) { // 자체 새로운 스레드를 가져옵니다
         println("newSingleThreadContext: 현재 스레드 ${Thread.currentThread().name}에서 작업 중")
-    }    
+    }
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코루틴을 실행하려면 Executor.asCoroutineDispatcher() 확장 기능을 사용하여 코루틴 디스패처로 변환하여 쓰레드 풀에서 실행할 수도 있습니다. 프라이빗 쓰레드 풀은 다음을 사용하여 생성할 수 있습니다:
 
@@ -212,7 +321,18 @@ fun main() = runBlocking {
 
 생성된 매 코루틴마다 Job 인스턴스가 반환되는데, 이를 통해 해당 코루틴을 고유하게 식별하고 라이프사이클을 관리할 수 있습니다. Job은 대기열에서의 코루틴을 가리키는 핸들 역할을 합니다. Job은 다음과 같은 상태를 가집니다: New, Active, Completing, Completed, Cancelling, Cancelled. 상태 자체에는 접근할 수 없지만, Job의 속성: isActive, isCancelled 및 isCompleted에 접근할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 val job = launch { // 새로운 코루틴을 시작하고 해당 작업에 대한 참조를 유지합니다
@@ -249,7 +369,18 @@ fun main() = runBlocking {
 
 ## 코루틴 취소
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코루틴에서 취소는 Job을 통해 관리됩니다(Job은 코루틴에 대한 핸들이며 수명주기가 있습니다). 우리는 코루틴을 Job의 .cancel() 함수를 호출하여 취소할 수 있습니다. 여러 개의 코루틴을 시작할 때, 전체 스코프 내에 생성된 모든 자식 코루틴을 취소하기 위해 의존할 수 있습니다.
 
@@ -260,7 +391,18 @@ fun main() = runBlocking {
 
 취소에 대한 자세한 내용은 여기와 여기에서 찾을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 친구들이 읽어주셔서 감사합니다! 코루틴에 대해 다뤄본 건 정말 많았지만, 유용한 정보였길 바랍니다. 댓글란에 의견을 남겨주세요.
 

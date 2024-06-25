@@ -3,13 +3,12 @@ title: "쿠버네티스 이스티오 앰비언트 메쉬 투어  1부 설정 및
 description: ""
 coverImage: "/assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_0.png"
 date: 2024-06-23 23:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_0.png
 tag: Tech
 originalTitle: "Touring the Kubernetes Istio Ambient Mesh — Part 1: Setup, ZTunnel"
 link: "https://medium.com/@SabujJanaCodes/touring-the-kubernetes-istio-ambient-mesh-part-1-setup-ztunnel-c80336fcfb2d"
 ---
-
 
 피츠오는 앰비언트 모드로 전환하고 있어요 — 사이드카 없는 모델로 말이죠. 마침내 우리는 CPU와 메모리 소비가 많은 사이드카를 버릴 수 있게 되었어요!
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@SabujJanaCodes/touring-the-kubernetes-istio-ambient-m
 
 ![이미지](/assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제가 나름대로 번역해보겠습니다:
 
@@ -31,7 +41,18 @@ Part 2에서는 L4 인증 정책에 대해 이야기하고 waypoint 프록시를
 
 Istio Ambient Mesh는 사이드카 없이 Istio의 새로운 데이터플레인 모드입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일반적인 Istio 모드에서는 모든 응용 프로그램 Pod이 envoy 프록시로 주입되었다는 것을 기억하십시오. 그러나 이 새로운 모드에서는 응용 프로그램 Pod이 건드리지 않을 거에요 :) 그리고 그들은 자신의 응용 프로그램 컨테이너만 가지게 될 거에요.
 
@@ -41,7 +62,18 @@ Istio Ambient Mesh는 사이드카 없이 Istio의 새로운 데이터플레인 
 
 ![이미지](/assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Ambient Architecture
 
@@ -51,7 +83,18 @@ Istio Ambient Mesh는 사이드카 없이 Istio의 새로운 데이터플레인 
 
 ![이미지](/assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 전통적인 사이드카 모델이며 각 서비스 팟에는 애플리케이션 컨테이너와 Envoy 사이드카가 결합되어 있습니다. 애플리케이션으로부터 오고 가는 모든 트래픽은 사이드카에 의해 가로채집니다.
 
@@ -61,7 +104,18 @@ Istio Ambient Mesh는 사이드카 없이 Istio의 새로운 데이터플레인 
 
 이 새로운 ambient 모드에서 애플리케이션 팟은 사이드카가 없는 독립적인 팟입니다. 그러나 이 경우에는 클러스터의 각 Kubernetes 노드마다 데몬셋 팟이 실행될 것입니다 - 강력한 ztunnel (제로 트러스트 터널). 노드 내 팟간의 모든 트래픽은 ztunnel에 의해 가로채집됩니다. Ztunnel은 각 노드당 L4 프록시입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Ambient mode, with ztunnel + waypoint
 
@@ -71,7 +125,18 @@ Ztunnel은 L4 프록시가 필요한 워크로드 간 네트워킹에 충분합�
 
 이 경우 ztunnel에서 생성된 트래픽은 waypoint 프록시에 도달하고, waypoint는 그것을 목적지 ztunnel로 전달합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러므로, 어플리케이션이 L7 처리를 요구하지 않는 경우 waypoint를 없애고 ztunnel만 사용할 수 있습니다. 이전 방식에서는, 우리가 L4 요구사항만 가지고 있더라도 envoy sidecars를 반드시 사용해야 했습니다.
 
@@ -81,7 +146,18 @@ Ztunnel은 L4 프록시가 필요한 워크로드 간 네트워킹에 충분합�
 
 ![이미지](/assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러므로 로컬 Kind 클러스터를 홈 설정하겠습니다.
 
@@ -91,7 +167,18 @@ Ztunnel은 L4 프록시가 필요한 워크로드 간 네트워킹에 충분합�
 
 시스템 아키텍처(Linux/Windows/Apple Intel)를 고려하여 비슷하게 진행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Rancher Desktop
 
@@ -101,7 +188,18 @@ Ztunnel은 L4 프록시가 필요한 워크로드 간 네트워킹에 충분합�
 
 - Kind
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저는 Multi-Node K8s 클러스터가 필요하다고 생각해요. 그래서 우리가 사용할 최상의 도구는 Kind를 이용해 클러스터를 부트스트랩하는 거죠. 여기 https://kind.sigs.k8s.io/docs/user/quick-start 에서 보다 자세한 정보를 얻을 수 있어요.
 
@@ -111,7 +209,18 @@ Ztunnel은 L4 프록시가 필요한 워크로드 간 네트워킹에 충분합�
 
 <img src="/assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_7.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - CNI(Container Networking Interface)
 
@@ -123,7 +232,18 @@ Ztunnel은 L4 프록시가 필요한 워크로드 간 네트워킹에 충분합�
 
 # Istio 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 클러스터 개요
 
@@ -133,7 +253,18 @@ Ztunnel은 L4 프록시가 필요한 워크로드 간 네트워킹에 충분합�
 
 마스터 노드 1개와 워커 노드 2개가 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 (⎈|kind-ambient:istio-system)➜  ~ kg 노드
@@ -158,7 +289,18 @@ coredns-7db6d8ff4d-rtncd                        1/1     실행 중  0           
 
 ## Istio Ambient 프로필 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 설치는 간단하게 진행됩니다. 여기에서 찾을 수 있어요: [https://istio.io/v1.20/docs/ops/ambient/getting-started/](https://istio.io/v1.20/docs/ops/ambient/getting-started/)
 
@@ -182,7 +324,18 @@ control plane version: 1.22.1
 data plane version: 1.22.1 (4 프록시)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Ztunnel은 각 노드에서 실행되는 데몬세트입니다 — 이 경우 3개의 노드가 있습니다. istio-system 네임스페이스에서 ztunnel이 제대로 실행 중인지 확인해 봅시다.
 
@@ -210,7 +363,18 @@ ztunnel          3         3         3       3            3           kubernetes
 - Istio 제어 평면인 istiod도 실행 중입니다.
 - 우리는 공개 트래픽을 위해 기본 istio ingressgateway도 설치했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 작업량 설정
 
@@ -221,7 +385,18 @@ ztunnel          3         3         3       3            3           kubernetes
 - 우리는 앰비언트 프로필 없이 앱을 설정하고, 일반 Istio crds를 사용할 것입니다. 그 후에 앱을 호출할 예정입니다. i) 인그레스 ii) 디버그 클라이언트 pod
 - 그 후에, Istio 데이터 평면 모드를 앰비언트로 전환하고, ztunnel pod를 통해 흐르는 트래픽 경로의 변화를 관찰할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 네임스페이스
 
@@ -242,7 +417,18 @@ local-path-storage   Active   132m
 
 ## 애플리케이션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 배포, 서비스 및 서비스 어카운트 yaml을 사용하여 애플리케이션을 배포합니다.
 
@@ -266,7 +452,18 @@ replicaset.apps/httpbin-6f4dc97cb    2         2         2       3m31s
 
 ## Istio 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 외부 세계에 노출하기 위해 Istio Gateway 및 Istio VirtualService를 생성하여 Istio Ingress를 통해 액세스할 수 있게 만듭니다.
 
@@ -277,7 +474,18 @@ replicaset.apps/httpbin-6f4dc97cb    2         2         2       3m31s
 
 이제 우리의 응용 프로그램에 액세스할 수 있는지 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 (⎈|kind-ambient:istio-system)➜  ~ kgs
@@ -295,14 +503,24 @@ Forwarding from [::1]:8081 -> 8081
 
 브라우저에서 127.0.0.1:8081을 입력하여 애플리케이션을 확인할 수 있습니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 http://127.0.0.1:8081/
 
 httpbin.org
- 0.9.2 
+ 0.9.2
 [ Base URL: 127.0.0.1:8081/ ]
 간단한 HTTP 요청 및 응답 서비스입니다.
 
@@ -339,8 +557,18 @@ httpbin.org
 
 ## 디버그 클라이언트 파드를 통한 확인
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리는 메쉬 내부 호출을 테스트해보려고 합니다. 따라서 각 노드마다 클라이언트 팟이 하나씩 있는 것이 좋습니다. 이를 위해 디버거 데몬세트 클라이언트 워크로드를 설정할 수 있습니다 — https://github.com/digitalocean/doks-debug
 
@@ -360,7 +588,18 @@ doks-debug-rdhgq          1/1     Running   0          90m   192.168.184.73   am
 doks-debug-v7cld          1/1     Running   0          90m   192.168.208.3    ambient-control-plane   <none>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테스트해 보기 위해 디버그 팟으로 진입하여 k8s fqdn httpbin.ambient-demo.svc.cluster.local을 curl을 시도해 보았습니다.
 
@@ -390,7 +629,18 @@ root@doks-debug-j9mm5:~# curl httpbin.ambient-demo.svc.cluster.local -v
 
 # Ambient Injection
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금까지 앰비언트 모드가 활성화되지 않았습니다. Istio 게이트웨이에서 추가 된 리스너로 인해 요청은 Istio 인그레스 파드에 도착한 다음 VirtualService를 통해 앱 파드로 라우팅됩니다.
 
@@ -400,7 +650,18 @@ root@doks-debug-j9mm5:~# curl httpbin.ambient-demo.svc.cluster.local -v
 
 앰비언트를 주입하는 동안 우리는 또한 다음 로그를 계속 추적할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - istio-cni
 - ztunnel
@@ -408,13 +669,24 @@ root@doks-debug-j9mm5:~# curl httpbin.ambient-demo.svc.cluster.local -v
 Istio가 네임스페이스 ambient-demo에 대한 Ambient Dataplane 모드를 활성화하도록 내부적으로 라우트, iptables 등을 설정했는지 확인하려면 아래 명령어를 사용해보세요.
 
 ```js
-(⎈|kind-ambient:ambient-demo)➜ 
+(⎈|kind-ambient:ambient-demo)➜
 ~ kubectl label namespace ambient-demo istio.io/dataplane-mode=ambient
 ```
 
 ## 관찰된 로그
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - istio-cni
 
@@ -458,7 +730,18 @@ istio-cni-node-7q6z7 install-cni 2024-06-16T10:13:59.550687Z info ambient About 
 
 - ztunnel
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```plaintext
 (⎈|kind-ambient:ambient-demo)➜ ~ stern ztunnel -n istio-system
@@ -482,8 +765,18 @@ ztunnel이 자체 내부 및 외부 리스너를 설정 중인 것으로 보입�
 
 이전과 마찬가지로, istio-ingress pod로 포트 포워딩을 설정하고 localhost를 통해 액세스합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 개의 호출을 각각 2개의 httpbin 팟에 대응하도록 인그레스에서 호출을 추출하려고 합니다. 그리고 동시에 동일한 ztunnel 로그를 캡처하려고 합니다.
 
@@ -498,48 +791,68 @@ $ curl localhost:8081/
 ```js
 (⎈|kind-ambient:istio-system)➜  ~ stern ztunnel -n istio-system
 
-ztunnel-fv5f8 istio-proxy 2024-06-16T12:26:24.154500Z 
-info access connection complete src.addr=192.168.184.70:52792 
-src.workload=istio-ingressgateway-6f48dfb7db-862sm src.namespace=istio-system 
-src.identity="spiffe://cluster.local/ns/istio-system/sa/istio-ingressgateway-service-account" 
-dst.addr=192.168.184.74:80 dst.hbone_addr=192.168.184.74:80 
-dst.service=httpbin.ambient-demo.svc.cluster.local 
-dst.workload=httpbin-6f4dc97cb-swdlb dst.namespace=ambient-demo 
-dst.identity="spiffe://cluster.local/ns/ambient-demo/sa/httpbin-sa" 
+ztunnel-fv5f8 istio-proxy 2024-06-16T12:26:24.154500Z
+info access connection complete src.addr=192.168.184.70:52792
+src.workload=istio-ingressgateway-6f48dfb7db-862sm src.namespace=istio-system
+src.identity="spiffe://cluster.local/ns/istio-system/sa/istio-ingressgateway-service-account"
+dst.addr=192.168.184.74:80 dst.hbone_addr=192.168.184.74:80
+dst.service=httpbin.ambient-demo.svc.cluster.local
+dst.workload=httpbin-6f4dc97cb-swdlb dst.namespace=ambient-demo
+dst.identity="spiffe://cluster.local/ns/ambient-demo/sa/httpbin-sa"
 direction="inbound" bytes_sent=51083 bytes_recv=4180 duration="2166ms"
 
-ztunnel-62hp8 istio-proxy 2024-06-16T12:28:40.267690Z 
-info access connection complete src.addr=192.168.184.70:55036 
-src.workload=istio-ingressgateway-6f48dfb7db-862sm src.namespace=istio-system 
-src.identity="spiffe://cluster.local/ns/istio-system/sa/istio-ingressgateway-service-account" 
-dst.addr=192.168.246.6:80 dst.hbone_addr=192.168.246.6:80 
-dst.service=httpbin.ambient-demo.svc.cluster.local 
-dst.workload=httpbin-6f4dc97cb-5dpz9 dst.namespace=ambient-demo 
-dst.identity="spiffe://cluster.local/ns/ambient-demo/sa/httpbin-sa" 
+ztunnel-62hp8 istio-proxy 2024-06-16T12:28:40.267690Z
+info access connection complete src.addr=192.168.184.70:55036
+src.workload=istio-ingressgateway-6f48dfb7db-862sm src.namespace=istio-system
+src.identity="spiffe://cluster.local/ns/istio-system/sa/istio-ingressgateway-service-account"
+dst.addr=192.168.246.6:80 dst.hbone_addr=192.168.246.6:80
+dst.service=httpbin.ambient-demo.svc.cluster.local
+dst.workload=httpbin-6f4dc97cb-5dpz9 dst.namespace=ambient-demo
+dst.identity="spiffe://cluster.local/ns/ambient-demo/sa/httpbin-sa"
 direction="inbound" bytes_sent=41251 bytes_recv=2007 duration="2331ms"
 ```
 
 인그레스가 주변 데이터 플레인 경로에 떨어지지 않기 때문에 인그레스 팟에서의 호출은 주변 데이터 플레인 경로로 직접 ztunnel 팟으로 이어집니다. 한 번에 하나의 노드로 이동한 후 해당 내부 노드 팟으로 inbound됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 로그 캡처에서 확인한 내용입니다
 
 ```js
-direction="inbound"
+direction = "inbound";
 ```
 
 - 이는 주변 레이블이 붙은 네임스페이스 파드로의 트래픽이 항상 ztunnel을 통해 이동함을 확인합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 dst.hbone_addr=192.168.184.74:80
 dst.hbone_addr=192.168.246.6:80
 
-httpbin-6f4dc97cb-5dpz9   1/1     Running   0          56m    192.168.246.6    ambient-worker2         <none>           <none>
-httpbin-6f4dc97cb-swdlb   1/1     Running   0          56m    192.168.184.74   ambient-worker          <none>           <none>
-
+httpbin-6f4dc97cb-5dpz9 1/1 Running 0 56m 192.168.246.6 ambient-worker2 <none> <none>
+httpbin-6f4dc97cb-swdlb 1/1 Running 0 56m 192.168.184.74 ambient-worker <none> <none>
 
 - 이것은 실제 httpbin pod ip에 해당하는 dest pod ip를 캡처합니다.
 
@@ -547,8 +860,18 @@ httpbin-6f4dc97cb-swdlb   1/1     Running   0          56m    192.168.184.74   a
 
 클라이언트 디버그 pod에 exec하여 httpbin 서비스로의 Mesh 내부 호출을 시도하고 동시에 ztunnel 로그를 캡쳐하여 동일한 동작을 확인해보겠습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 (⎈|kind-ambient:ambient-demo)➜  ~ kgpo -owide
@@ -577,11 +900,22 @@ ambient-demo         httpbin-6f4dc97cb-5dpz9                         1/1     Run
 
 debug pod인 doks-debug-rdhgq를 실행하기 위해 ambient-worker 노드에 스케줄된 상태로 들어가보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_10.png" />
 
-```js 
+```js
 테이블 1: 동일 노드 내의 클라이언트 및 서버
 ---------
 ztunnel-fv5f8 istio-proxy 2024-06-16T12:40:48.707707Z info access connection complete src.addr=192.168.184.73:56463 src.workload=doks-debug-rdhgq src.namespace=ambient-demo src.identity="spiffe://cluster.local/ns/ambient-demo/sa/default" dst.addr=192.168.184.74:80 dst.hbone_addr=192.168.184.74:80 dst.service=httpbin.ambient-demo.svc.cluster.local dst.workload=httpbin-6f4dc97cb-swdlb dst.namespace=ambient-demo dst.identity="spiffe://cluster.local/ns/ambient-demo/sa/httpbin-sa" direction  ="inbound" bytes_sent=9832 bytes_recv=84 duration="178ms"
@@ -592,7 +926,18 @@ ztunnel-fv5f8 istio-proxy 2024-06-16T12:40:48.708070Z info access connection com
 
 따라서, 동일 노드 내의 클라이언트 및 서버에서는 한 ztunnel이 외부 패킷과 내부 패킷을 받습니다. "bound"는 동일 노드 내의 응용 프로그램 파드로부터/받는 방향을 지정합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 캡처 2: 클라이언트 및 서버가 다른 노드에 있는 경우
@@ -607,7 +952,18 @@ ztunnel-fv5f8 istio-proxy 2024-06-16T12:48:51.793112Z info access connection com
 
 이 실험을 통해 Istio Ambient Mesh에서 ztunnel을 통한 패킷 흐름을 시각화할 수 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel_11.png)
 

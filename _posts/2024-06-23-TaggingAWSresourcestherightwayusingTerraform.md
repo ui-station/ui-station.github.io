@@ -3,14 +3,12 @@ title: "Terraform으로 AWS 자원을 올바르게 태깅하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-TaggingAWSresourcestherightwayusingTerraform_0.png"
 date: 2024-06-23 22:28
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TaggingAWSresourcestherightwayusingTerraform_0.png
 tag: Tech
 originalTitle: "Tagging AWS resources the right way using Terraform"
 link: "https://medium.com/@seifeddinerajhi/tagging-aws-resources-the-right-way-using-terraform-dd2cce77be7b"
 ---
-
-
 
 ![Tagging AWS resources the right way using Terraform](/assets/img/2024-06-23-TaggingAWSresourcestherightwayusingTerraform_0.png)
 
@@ -20,8 +18,18 @@ AWS 리소스를 조직화하고 비용을 추적하는 것은 특히 인프라�
 
 리소스에 태그를 붙이는 것은 간단하지만 효과적으로 수행하려면 최선의 방법을 따라야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 블로그 포스트에서는 인프라스트럭처 코드(IaC) 도구 Terraform을 사용하여 AWS 리소스에 태그를 달는 방법을 안내해 드리겠습니다.
 
@@ -31,7 +39,18 @@ AWS 리소스에 태그를 붙이는 것은 조직화되고 비용 효율적인 
 
 태그는 환경, 애플리케이션, 팀 등과 같은 기준에 따라 리소스를 분류하고 관리하는 키-값 쌍입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일관된 태깅은 리소스 조직, 비용 할당, 자동화, 보안 및 라이프사이클 관리와 같은 혜택을 제공합니다.
 
@@ -49,7 +68,18 @@ resource "aws_s3_bucket" "example" {
 
 또한 모든 리소스에 적용되는 공급자 수준의 기본 태그를 정의할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 공급자 "aws" {
@@ -68,8 +98,18 @@ default_tags 블록을 사용하여 공급자 수준에서 기본 태그를 정�
 
 기본 태그의 장점
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 일관성: 모든 리소스에 일관된 태그가 적용되도록 보장합니다.
 - 수동 작업 최소화: 리소스 간 반복되는 태그 정의를 피합니다.
@@ -89,14 +129,25 @@ provider "aws" {
 
 기본 태그를 재정의하거나 추가 태그를 추가하는 방법은 리소스 레벨에서 태그 인수를 지정하여 수행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 인수는 제공자 수준에서 정의된 기본 태그보다 우선합니다.
 
 ```js
 resource "aws_s3_bucket" "example" {
   bucket = "my-bucket"
-  
+
   # 기본 환경 태그를 재정의하고 목적 태그 추가하기
   tags = {
     Environment = "Staging"
@@ -109,7 +160,18 @@ resource "aws_s3_bucket" "example" {
 
 ManagedBy 기본 태그는 여전히 적용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자원 수준 태그 사용 사례
 
@@ -123,7 +185,18 @@ ManagedBy 기본 태그는 여전히 적용됩니다.
 
 # 유연한 태깅을 위한 변수와 함수 사용:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테라폼을 사용하면 태그를 변수로 정의하고 merge()와 같은 함수를 사용하여 다른 태그와 결합하여 재사용성과 유연성을 높일 수 있습니다.
 
@@ -140,7 +213,18 @@ variable "default_tags" {
 
 merge() 함수를 사용하여 태그를 결합하는 방법:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 resource "aws_instance" "example" {
@@ -163,8 +247,18 @@ merge() 함수는 default_tags 변수와 추가적인 리소스별 태그를 결
 
 일부 AWS 리소스는 특정한 태깅 구성이 필요하거나 태그 적용 방법에 제한이 있는 경우가 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 태깅 자동 스케일링 그룹:
 
@@ -174,7 +268,18 @@ merge() 함수는 default_tags 변수와 추가적인 리소스별 태그를 결
 
 ASG는 propagate_at_launch 태그 구성이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 리소스 "aws_autoscaling_group" "example" {
@@ -194,7 +299,7 @@ ASG는 propagate_at_launch 태그 구성이 필요합니다.
 ```js
 리소스 "aws_launch_template" "example" {
   # ...
-  
+
  tag_specifications {
     resource_type = "instance"
     tags = {
@@ -211,7 +316,18 @@ ASG는 propagate_at_launch 태그 구성이 필요합니다.
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 EBS 볼륨 태그 설정하기:
 
@@ -222,7 +338,7 @@ EBS 볼륨 태그 설정하기:
 ```js
 resource "aws_instance" "example" {
   # ...
- 
+
  volume_tags = {
     Name        = "DataVolume"
     Persistence = "Permanent"
@@ -230,7 +346,18 @@ resource "aws_instance" "example" {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 기타 특수 사례:
 
@@ -240,7 +367,18 @@ resource "aws_instance" "example" {
 
 # 흔한 실수 피하기:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일관되지 않은 태그 명명 규칙:
 
@@ -259,7 +397,18 @@ resource "aws_s3_bucket" "example" {
 
 대신, 태그 키 명명을 명확히 정의하고 그 규칙을 준수하도록 유도하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 AWS 리소스를 태그하지 않는 경우, EBS 볼륨과 같은 보조 또는 보완 리소스를 포함해서 태그하지 않는 것은 완전한 시각성과 비용 추적을 할 수 없게 됩니다.
 
@@ -275,7 +424,18 @@ resource "aws_instance" "example" {
 
 동일한 기본 및 리소스 태그 문제:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 default_tags 및 리소스 tags에 동일한 tag 키 및 값이 있는 경우, Terraform에서 오류가 발생하여 태그를 중복으로 지우거나 우회 방법을 사용해야 합니다.
 
@@ -299,14 +459,25 @@ resource "aws_vpc" "example" {
 
 default_tags 및 리소스 tags가 일부 일치하고 다른 태그가 있는 경우, Terraform은 일치하는 태그를 업데이트하려고 계획할 때마다 영구적인 차이를 표시하여 우회 방법이 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 provider "aws" {
   default_tags {
     tags = {
       Match1 = "A"
-      Match2 = "B" 
+      Match2 = "B"
       NoMatch = "X"
     }
   }
@@ -316,7 +487,7 @@ resource "aws_vpc" "example" {
   tags = {
     Match1 = "A" # Perpetual diff trying
     Match2 = "B" # to update these
-    NoMatch = "Y" 
+    NoMatch = "Y"
   }
 }
 ```
@@ -327,7 +498,18 @@ resource "aws_vpc" "example" {
 
 # Best Practices and Tips:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 명확한 태깅 전략과 명명 규칙을 수립해야 합니다:
 
@@ -346,7 +528,18 @@ variable "tag_names" {
 
 리소스를 프로비저닝할 때 (나중에가 아니라) 태그를 추가하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리소스를 프로비저닝하는 과정에서 태그를 적용하세요. 이렇게 하면 시작부터 일관된 태깅이 가능합니다.
 
@@ -364,7 +557,18 @@ resource "aws_s3_bucket" "example" {
 
 주기적으로 리소스 태그를 검토하고 감사하여 태깅 전략을 준수하며 누락된 태그 또는 잘못된 태그를 식별합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로비저닝 중에 가능한 경우 태그 자동 적용을 자동화하세요:
 
@@ -374,7 +578,18 @@ resource "aws_s3_bucket" "example" {
 
 모든 리전에 있는 모든 AWS 리소스에서 team=`platform engineering` 태그가 있는 리소스를 찾아볼 수 있다면 어떨까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 AWS 리소스 그룹 및 태그 편집기는 여러 AWS 리소스 및 지역에 걸쳐 태그를 효과적으로 관리할 수 있는 강력한 도구입니다.
 
@@ -387,7 +602,18 @@ AWS 리소스 그룹 및 태그 편집기는 여러 AWS 리소스 및 지역에 
 - 리소스 그룹 멤버십에 따라 인스턴스 시작/중지 또는 구성 적용과 같은 작업을 자동화할 수 있습니다.
 - 그룹 내에서 리소스 상태, 비용 및 구성에 대한 종합적인 정보를 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 태그 편집기:
 
@@ -400,9 +626,20 @@ AWS 리소스 그룹 및 태그 편집기는 여러 AWS 리소스 및 지역에 
 
 # 🔚 결론:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-마크다운 형식으로 테이블 태그를 써야 해요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+마크다운 형식으로 테이블 태그를 써야 해요.
 
 AWS 설정이 조직적이고 비용 효율적으로 이루어지려면, Terraform의 태깅 도구를 사용하는 방법과 일반적인 실수를 피하는 법을 꼭 숙지해야 해요.
 
@@ -412,7 +649,18 @@ AWS 설정이 조직적이고 비용 효율적으로 이루어지려면, Terrafo
 
 <img src="/assets/img/2024-06-23-TaggingAWSresourcestherightwayusingTerraform_1.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 읽어 주셔서 감사합니다!! 🙌🏻😁📃 다음 블로그에서 만나요.🤘🇵🇸
 
@@ -422,7 +670,18 @@ AWS 설정이 조직적이고 비용 효율적으로 이루어지려면, Terrafo
 
 ♻️🇵🇸 Twitter: https://twitter.com/rajhisaifeddine
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 제공해주셔서 감사합니다 ✌🏻
 

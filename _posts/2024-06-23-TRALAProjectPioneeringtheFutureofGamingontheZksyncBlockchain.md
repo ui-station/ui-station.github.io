@@ -3,13 +3,12 @@ title: "TRALA 프로젝트 Zksync 블록체인에서 게임의 미래를 선도�
 description: ""
 coverImage: "/assets/img/2024-06-23-TRALAProjectPioneeringtheFutureofGamingontheZksyncBlockchain_0.png"
 date: 2024-06-23 22:19
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TRALAProjectPioneeringtheFutureofGamingontheZksyncBlockchain_0.png
 tag: Tech
 originalTitle: "TRALA Project: Pioneering the Future of Gaming on the Zksync Blockchain"
 link: "https://medium.com/@aceyy01/trala-project-pioneering-the-future-of-gaming-on-the-zksync-blockchain-69dcca94ff71"
 ---
-
 
 소개
 
@@ -19,17 +18,39 @@ TRALA 프로젝트는 블록체인 게임 분야에서 혁신적인 역할을 �
 
 비전과 미션
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 TRALA Lab의 주요 임무는 블록체인에 AAA-등급의 Web3 게임 시리즈를 출시하여 게임 경험을 크게 향상시키는 것입니다. 그들의 라인업에는 FreeStyle과 Gunship Battles와 같은 주목할만한 타이틀이 포함되어 있습니다. 그들은 웹 2 사용자들을 웹 3로 유입시키는 것을 희망합니다.
 
 강력한 지원과 커뮤니티 참여
 
-TRALA 프로젝트는 최근 Matterlabs(Zksync를 개발한 팀)와 Animoca Brands와 같은 주요 기관들로부터 지원과 많은 자금 지원을 받았습니다. 또한 prom, petoshi 및 기타 큰 주목할만한 프로젝트들과의 다수의 파트너십을 맺고 있습니다. 
+TRALA 프로젝트는 최근 Matterlabs(Zksync를 개발한 팀)와 Animoca Brands와 같은 주요 기관들로부터 지원과 많은 자금 지원을 받았습니다. 또한 prom, petoshi 및 기타 큰 주목할만한 프로젝트들과의 다수의 파트너십을 맺고 있습니다.
 
 ![TRALAProjectPioneeringtheFutureofGamingontheZksyncBlockchain](/assets/img/2024-06-23-TRALAProjectPioneeringtheFutureofGamingontheZksyncBlockchain_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 최근 TRALA가 주최한 이벤트에서 참가자들은 TRALA OG NFT를 획득하고 가챠 포인트를 축적할 기회를 얻었습니다. 이 포인트와 OG NFT는 충성스러운 커뮤니티에게 수많은 혜택을 제공합니다.
 
@@ -41,8 +62,18 @@ TRALA 프로젝트는 최근 Matterlabs(Zksync를 개발한 팀)와 Animoca Bran
 - 개발자 기금: 25%
 - 팀: 15%
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 개인 판매: 15%
 
@@ -54,8 +85,18 @@ TRALA 프로젝트는 최근 Matterlabs(Zksync를 개발한 팀)와 Animoca Bran
 
 ![이미지](/assets/img/2024-06-23-TRALAProjectPioneeringtheFutureofGamingontheZksyncBlockchain_2.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론
 
@@ -65,7 +106,18 @@ TRALA가 웹 3에서 게임 세계를 지배할 시점에 함께해 주시기를
 
 X: x.com/TRALA_Official
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 디스코드 : https://discord.gg/trala-official
 

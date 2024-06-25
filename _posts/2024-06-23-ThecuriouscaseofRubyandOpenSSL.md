@@ -3,13 +3,12 @@ title: "루비와 OpenSSL의 미스터리한 이야기"
 description: ""
 coverImage: "/assets/img/2024-06-23-ThecuriouscaseofRubyandOpenSSL_0.png"
 date: 2024-06-23 20:55
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ThecuriouscaseofRubyandOpenSSL_0.png
 tag: Tech
 originalTitle: "The curious case of Ruby and OpenSSL"
 link: "https://medium.com/@computers-art/the-curious-case-of-ruby-and-openssl-e018b703f8d"
 ---
-
 
 ![image](/assets/img/2024-06-23-ThecuriouscaseofRubyandOpenSSL_0.png)
 
@@ -19,7 +18,18 @@ webauthn을 설치하려고 하는 과정에서 에러 메시지가 나왔습니
 
 두 가지 잠재적인 해결책을 살펴보았습니다. 먼저, 몇몇 온라인 소스에서 제안한 대로 기본 Ruby를 제거하고 다시 설치해보기로 결정했습니다. rvm remove ruby-2.6.10 명령을 사용하여 버전을 성공적으로 제거했지만 rvm install ruby-2.6.10 --with-openssl-dir=`/usr/local/opt/openssl` 명령을 사용하여 재설치하려고 시도했을 때 추가 문제가 발생했습니다. Ruby를 설치했지만 webauthn을 설치하려고 할 때 문제가 지속되었습니다. 나중에 Ruby gem을 업데이트해야 문제를 해결할 수 있다는 것을 발견했습니다. sudo gem update --system 명령을 사용하여 시도했지만 또 다른 오류가 발생했습니다: ruby: No such file or directory -- setup.rb (LoadError). 여러 해결책을 조사한 끝에 gem install rubygems-update --source http://production.s3.rubygems.org/ update_rubygems와 같은 방법으로 시도해도 문제를 해결할 수 없었습니다. 결국 다시 Ruby를 제거하고 brew install을 통해 설치하니 gem을 성공적으로 업데이트할 수 있었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 OpenSSL 오류를 해결하면서 루비와 비슷한 방법을 시도하기로 결정했습니다. homebrew를 사용하여 OpenSSL 1.0을 설치하기로 결정해서 brew install rbenv/tap/openssl@1.0을 실행했고, 이전 버전의 OpenSSL을 참조하여 루비를 다시 설치했습니다: rvm reinstall 2.6.10 --with-openssl-dir=`/usr/local/opt/openssl@1.0`. 놀랍게도 작동했습니다! 이것이 제 첫 번째 해결책이었고, 이 아이디어를 제공해준 데 대해 감사를 표합니다.
 
@@ -29,7 +39,18 @@ OpenSSL 오류를 해결하면서 루비와 비슷한 방법을 시도하기로 
 
 전반적으로 상당히 흥미로운 오류였으며 해결하는 것이 즐거웠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 부가 정보:
 

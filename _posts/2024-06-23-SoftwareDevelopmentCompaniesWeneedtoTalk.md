@@ -3,13 +3,12 @@ title: "소프트웨어 개발 회사에 꼭 물어봐야 할 5가지 사항"
 description: ""
 coverImage: "/assets/img/2024-06-23-SoftwareDevelopmentCompaniesWeneedtoTalk_0.png"
 date: 2024-06-23 21:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SoftwareDevelopmentCompaniesWeneedtoTalk_0.png
 tag: Tech
 originalTitle: "Software Development Companies — We need to Talk"
 link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-9377e7c251b4"
 ---
-
 
 그리고 아니에요, 당신의 소프트웨어를 사고 싶지 않아요...
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 보기를 마칠 때쯤, 저는 실망하고 우울했어요. 소프트웨어 개발 능력에 자신감 있는 회의실에서 회색 머리가 많은 사람들이 있음에도 불구하고, 모더레이터가 소프트웨어 개발에 보안이 미치는 영향에 대해 물어보려 할 때마다, "소프트웨어 개발에 대한 보안의 영향은 무엇을 의미할까요?"라는 질문에는 계속해서 대답이 되뇌이는 식으로 되돌아가 버릴 뿐이었어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대화는 내 머리에 회색이 아직 없었던 시절부터 산업에서 계속되어 온 고리로 돌아갔어요.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 그리고, 영리함과 지성 간에는 차이가 있어요. 예를 들어, 자동차 내의 시트벨트 경고음을 끄고 시트벨트를 착용하지 않고 운전하는 사람은 영리하지만, 그들은 바보이기도 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 성숙하지 못한 면이 뚜렷하고 소프트웨어 분야가 실제로 평가하고 개선하는 것에 완전히 무능력하다는 점을 빼면, 가장 우울한 것은 회색머리가 다음과 같은 환상에 빠져 있다는 사실을 깨달았을 때입니다:
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 아마도 이게 이루어져야 하는 방식이겠지만, 소프트웨어 개발 기능은 고객이 요청했기 때문에 구현되는 경우가 드물다. 오히려 소프트웨어 개발 회사나 팀이 해당 기능이 고객에게 유용할 것으로 여겨 구현하는 경우가 더 많습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마이크로소프트 고객들이 클리피, 코르타나, 인터넷 익스플로러, 혹은 마이크로소프트 리콜을 요청했나요?
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 소프트웨어 보안은 고객들이 요구해야 하는 기능의 집합입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-SoftwareDevelopmentCompaniesWeneedtoTalk_2.png)
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 대부분의 고객들은 소프트웨어와 관련된 보안 위험에 대한 매우 적은 이해를 갖고 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 대부분의 소비자 및 사이버보안 및 정보보안 전문가들은 소프트웨어 개발을 아무도 제대로 이해하지 못하는 블랙박스 부적격한 것으로 보고 있습니다.
 
@@ -69,7 +123,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 위협자들은 거의 항상 소프트웨어 취약점을 악용하며, 이는 보안 렌즈가 소프트웨어 개발 수명주기 어딘가에 빠져 있기 때문입니다. 심지어 많은 기업들은 자신들의 공급업체가 얼마나 매우 불안전한지 파악하기 위해 상당한 시간과 비용을 들여 공급업체를 평가해야 할 때도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 작업을 수행하기 위해 필요한 자원들은 소규모 기업이나 개인 소비자들이 채택하기에는 가격이 지나치게 비쌉니다. 그들에게는 운이 나쁜 것이죠, 그렇죠?
 
@@ -79,7 +144,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 이를 명확히 하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 보안은 다른 기능들과 맞교환이 가능한 기능들의 집합으로 보이면 안 돼요.
 
@@ -89,7 +165,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 서드 파티 라이브러리나 API를 사용하여 소프트웨어를 출시하고 그것이 어떤 기능을 하는지 정말 모르거나 그것의 파생물에 대해 전혀 이해하지 못한다면, 여러분의 팀도 문제의 주요 요소 중 하나일 수 있다는 것을 다시 한 번 상기해 주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 빌드 파이프라인에 SAST 및 DAST 도구를 포함하는 것만으로는 충분하지 않습니다 (아무것도 하는 것보다는 나은데도 도구가 보고하는 내용에 대응하고 최신 상태로 유지한다면 그정도는 괜찮습니다).
 
@@ -99,7 +186,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 소프트웨어 부품 목록(SBOM)을 요구하는 고객 때문에 신경쓰고 패닉해 하고 있다면, 다음 질문을 스스로에게 물어보는 것이 좋습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 땅콩 알러지가 있다면 영양 정보가 프린트되어 있지 않은 병에 "아마 땅콩 자국이 있을 수 있습니다"라는 경고가 있는 병을 살 것인가요?
 
@@ -109,7 +207,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 # '전달된 위험' 개념은 허구입니다
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-SoftwareDevelopmentCompaniesWeneedtoTalk_4.png" />
 
@@ -119,7 +228,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 그러면 이 문제가 실제로 매우 중요한 곳에 있습니다. 회사가 침해당하면, 누가 고통을 느끼는지 생각해볼 가치가 있을 것입니다. 그러면 고객이 분명히 고통을 느낍니다. 그들의 고객 또한 마찬가지입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 소프트웨어 회사가 취약점이 있는 소프트웨어를 판매하여 위협 주체가 악용하면 그 회사는 고통을 느낄까요? 그들이 언급되는 경우는 거의 없습니다.
 
@@ -129,7 +249,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 ![GitHub Logo](/assets/img/2024-06-23-SoftwareDevelopmentCompaniesWeneedtoTalk_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 예외보다는 더 보편화되고 있는 것 같네요. 몇몇 사람들은 "최소 실현 가능 제품(Minimum Viable Product)" 개념을 옹호합니다. 문제는 종종 그들이 다른 사람들의 해석을 반복하는 대신에 소스에서 배우는 대신에 실제로 매우 좋은 개념을 왜곡하고 있다는 것입니다(그리고 소프트웨어 팀들은 이를 정말 좋아합니다). MVP에 대한 내 이해는 "일회용 프로토타입"이라고 불렸던 것을 의미한다고 생각합니다. 즉, 당신은 원시적인 프로토타입을 개발하고, 시험해보고, 거기서 배우고, 그것을 진짜 것으로 대체하는 것입니다.
 
@@ -139,7 +270,18 @@ link: "https://medium.com/@JSuss/software-development-companies-we-need-to-talk-
 
 # 다른 사람들의 코드를 맹목적으로 사용
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오픈 소스는 멋지죠 — 생산성과 혁신을 더 높은 수준으로 끌어올렸습니다. 쉽게 감사할 수 있고 투명합니다. 하지만 이 한 가지 문제가 있죠. 실제로 오픈 소스 프로젝트에 기여하는 회사는 매우 적습니다.
 
@@ -149,7 +291,18 @@ OSS 라이브러리를 사용하는 모든 사람이 해당 라이브러리를 �
 
 쓰레기 소프트웨어를 출시한다면, 당신은 엔지니어링이 아니라 해킹하는 거예요 — 사실적으로 본다면, 이것이 정확히 무엇인지 솔직해지는 게 좋을 겁니다. 할 수 있는 가장 최소한의 일은 사실을 말하는 겁니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 혹시 웹사이트에 "We take cybersecurity seriously" 대신 "We prioritise features and time to market above security and Quality"와 같은 구문을 사용해보는 건 어떨까요? 두 구문이 보안 전문가들에겐 같은 의미를 지만, 더 알지 못하는 사람들에게는 정반대의 효과가 있다고 하더라구요.
 
@@ -159,7 +312,18 @@ OSS 라이브러리를 사용하는 모든 사람이 해당 라이브러리를 �
 
 ![Software Development Companies - We need to Talk](/assets/img/2024-06-23-SoftwareDevelopmentCompaniesWeneedtoTalk_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 문제들의 근본 원인은 실제로 소프트웨어 개발 분야 전체에 있습니다. 개발자들이 위에서 설명한 방식으로 행동하길 원하는 것은 아니라고 생각해요. 그들이 일하는 구조 때문에 그렇게 되는 거잖아요.
 
@@ -169,7 +333,18 @@ OSS 라이브러리를 사용하는 모든 사람이 해당 라이브러리를 �
 
 많은 소프트웨어 개발 조직에 있어서 이제는 소프트웨어 개발 프로세스를 적절하게 보호하기 위한 올바른 비즈니스 케이스를 준비하기가 굉장히 어려운 단계에 왔습니다. 결국 무슨 일이 벌어질까요? 고객 몇 명을 잃게 될까요? 당신의 임원진이 형사 처벌을 받을 일도 아니고, 그렇다면 회사 외부에서 아무도 요청하지 않은 다음 기능으로 자금을 투자해도 괜찮지 않을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사이버보안, 정보보안 및 ICT 팀들은 전 세계적으로 위협과 취약점의 복잡성을 관리하는 데 절대적으로 압도되어 있습니다. 상속받은, 수입한 및 생성한 위협과 취약성에 대응하기 위해 엄청난 노력, 스트레스 및 고통이 기울여졌습니다. 악화된 증상을 다루기 위해 힘쓰고 있는데 이는 약한 보안 소프트웨어 개발 프로세스의 영향을 받음에 따라 더욱 악화되고 있습니다.
 
@@ -179,7 +354,18 @@ OSS 라이브러리를 사용하는 모든 사람이 해당 라이브러리를 �
 
 그렇습니다, 언제나 그렇게 시작됩니다. CISA는 회사들이 소프트웨어 공급업체들로부터 SBOM을 요구하도록 권장하고 있습니다. 이와 Secure by Design 및 Secure by Default 개념에 대해 설명한 훌륭한 작업이 진행되기 시작했지만, 이것은 필요한 일의 시작일 뿐이며 완전히 자발적인 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 어떤 산업도 자체 규제를 완벽하게 성공적으로 수행한 경우가 없듯이, 소프트웨어 개발 분야도 미래의 어느 시점에는 규제가 필요할 것입니다.
 
@@ -189,7 +375,18 @@ OSS 라이브러리를 사용하는 모든 사람이 해당 라이브러리를 �
 
 내 관점에 따르면 이런 일이 언젠가는 일어날 것이라고 주장합니다. 제 마음속의 실제 질문은 이것입니다. 귀사의 소프트웨어 개발 회사가 미래에 이러한 변화를 보다 쉽게 만들기 위해 이 불가피한 상황에 대비하려고 시작할 것이거나, 귀사의 조직이 CI/CD 파이프라인에 약간의 SAST와 DAST를 넣는 것만으로 충분하다고 믿으며 이 문제를 해결할 실버 불릿이 어떤 공급 업체의 것이 될 것임을 계속 믿을 것인지에 관한 진정한 질문입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그 체크리스트를 가지고 온 사람이 "당신이 뭘 하는지는 모르지만, 체크리스트에 따르면 잘못하고 있다"고 말하길 기다릴 거야?
 
@@ -199,6 +396,17 @@ OSS 라이브러리를 사용하는 모든 사람이 해당 라이브러리를 �
 
 한편으로, 나는 유튜브 피드를 보며 1980년대에 "the machine that goes piing"으로 소프트웨어 개발의 현재 상황을 미리 예견했는지 궁금해하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 당신의 생각은 뭐니? 뭘 놓쳤을까? 아래에 댓글을 달아주세요...

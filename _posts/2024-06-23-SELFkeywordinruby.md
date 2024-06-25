@@ -3,13 +3,12 @@ title: "루비에서 SELF 키워드 사용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-SELFkeywordinruby_0.png"
 date: 2024-06-23 20:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SELFkeywordinruby_0.png
 tag: Tech
 originalTitle: "SELF keyword in ruby"
 link: "https://medium.com/@avi4791/self-keyword-in-ruby-926cd1cc36ad"
 ---
-
 
 Ruby에서 self의 목적은 무엇인가요?
 
@@ -19,7 +18,18 @@ Ruby에서 self는 현재 객체를 나타내는 특별한 변수입니다. self
 
 # Ruby에서 self의 목적
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 인스턴스 변수 및 메소드에 접근하기: 인스턴스 메소드 내부에서 self는 클래스의 인스턴스를 가리키며, 인스턴스 변수와 메소드에 접근할 수 있게 합니다.
 - 클래스 메소드 정의하기: 클래스 정의 내부에서 self는 클래스 자체를 가리킵니다. 이는 클래스 메소드를 정의하는 데 유용합니다.
@@ -33,7 +43,18 @@ Ruby에서 self는 현재 객체를 나타내는 특별한 변수입니다. self
 
 이 문맥에서 self는 인스턴스 메소드 내부에서 인스턴스 변수와 메소드에 접근 가능하도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```javascript
 class Person
@@ -89,7 +110,18 @@ puts MathUtils.square(3) # 출력: 9
 puts MathUtils.cube(3)   # 출력: 27
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class MathUtils
@@ -112,17 +144,26 @@ puts MathUtils.cube(3)   # Output: 27
 
 self can be used to define methods on a single object (singleton methods).
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 str = "Hello"
 
 def str.shout
-  self.upcase + "!!!"
+self.upcase + "!!!"
 end
 
 puts str.shout # Output: "HELLO!!!"
-
 
 ## 4. 메타프로그래밍
 
@@ -142,7 +183,18 @@ obj = MyClass.new
 puts obj.greet # Output: "Method greet called"
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 self는 메소드 해결 및 범위 관리에 중요한 실행 컨텍스트를 이해하는 데 도움이 됩니다.
 
@@ -171,7 +223,18 @@ puts dog.call_speak # 출력: "멍멍!"
 
 self를 사용하는 것은 속성 작성기(setters)를 호출할 때 중요합니다. 이는 로컬 변수 할당과 모호함을 피하기 위해 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 class User

@@ -3,14 +3,12 @@ title: "애플이 Beeper Mini를 중단한 것은 100 옳았다 - 이유는 무�
 description: ""
 coverImage: "/assets/img/2024-06-23-AppleWas100RIGHTtoShutDownBeeperMini_0.png"
 date: 2024-06-23 23:25
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AppleWas100RIGHTtoShutDownBeeperMini_0.png
 tag: Tech
 originalTitle: "Apple Was 100% RIGHT to Shut Down Beeper Mini"
 link: "https://medium.com/@michaelswengel/apple-was-100-right-to-shut-down-beeper-mini-9f3582667f39"
 ---
-
-
 
 ![Beeper](/assets/img/2024-06-23-AppleWas100RIGHTtoShutDownBeeperMini_0.png)
 
@@ -20,18 +18,39 @@ Beeper의 블로그는 "안드로이드 및 iPhone 고객들은 고화질 이미
 
 iMessage는 이러한 기능을 제공합니다. 다만, Android 폰에는 그렇지 않습니다. Beeper의 해결책은 무엇인가요? iMessage를 Android로 가져오는 것입니다!
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 문제는 실행 방식에 있습니다.
 
-iMessage는 Apple 기기인 iPhone, iPad, Mac 및 Apple Watch와 함께 사용하도록 만들어졌습니다. Android나 Android 기기와 함께 사용하거나 이용할 수 있도록 만들어지지 않았습니다. 
+iMessage는 Apple 기기인 iPhone, iPad, Mac 및 Apple Watch와 함께 사용하도록 만들어졌습니다. Android나 Android 기기와 함께 사용하거나 이용할 수 있도록 만들어지지 않았습니다.
 
 그리고 iMessage를 작동시키려면 Beeper가 시스템을 속여야 합니다.
 
 # Beeper Mini란 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Beeper Mini는 안드로이드 앱으로, Apple의 iMessage 프로토콜을 역공학으로 메시지를 보내어 어떤 안드로이드 폰이라도 iMessage를 사용할 수 있도록 설계되었습니다.
 
@@ -41,7 +60,18 @@ Beeper는 기기에서 암호화 키를 생성하고 공개 키를 Apple에 업�
 
 Beeper는 Android로 iMessage를 가져오려는 첫 번째 시도가 아닙니다. Nothing Chats는 성공적으로 - 잠시 동안 - Nothing 폰에서 iMessage를 작동시켜마지만 중단되었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 정말로, Beeper는 똑똑한 시스템입니다. 그리고 그것은 작동하는 것처럼 보입니다. 하지만 그것이 옳다고는 할 수 없습니다.
 
@@ -51,7 +81,18 @@ Beeper Mini가 처음 출시된 후 얼마 지나지 않아 애플에 의해 종
 
 분명히, Beeper가 iMessage를 사용하는 방식을 기준으로 볼 때, 이것이 iMessage의 규정 위반인 것처럼 보이지는 않습니다. 그것은 좋은 소식입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만, 애플 시스템을 오용하는 것은 아닙니다.
 
@@ -61,18 +102,40 @@ Beeper Mini가 처음 출시된 후 얼마 지나지 않아 애플에 의해 종
 
 네, 정답은 네입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-여기서의 문제는 두 가지입니다:  
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
-- Beeper가 아이폰 간의 메시지를 주고받는 것으로 시스템을 속이기 위해 직접 Apple 서버에 연락하고 있습니다.  
-- Beeper는 "네이티브 iMessage 앱과 Apple 서버 간에 전송되는 트래픽을 분석하고 동일한 요청을 보내고 동일한 응답을 이해하는 자체 앱을 개발했다"고 주장합니다. 다시 말하면, 그들은 Apple의 지적 재산을 역공학으로 분석했습니다.  
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
-Beeper가 종료된 지 얼마 후에 약간의 수정을 거쳐 다시 온라인으로 돌아왔습니다.  
+여기서의 문제는 두 가지입니다:
+
+- Beeper가 아이폰 간의 메시지를 주고받는 것으로 시스템을 속이기 위해 직접 Apple 서버에 연락하고 있습니다.
+- Beeper는 "네이티브 iMessage 앱과 Apple 서버 간에 전송되는 트래픽을 분석하고 동일한 요청을 보내고 동일한 응답을 이해하는 자체 앱을 개발했다"고 주장합니다. 다시 말하면, 그들은 Apple의 지적 재산을 역공학으로 분석했습니다.
+
+Beeper가 종료된 지 얼마 후에 약간의 수정을 거쳐 다시 온라인으로 돌아왔습니다.
 
 현재 상황은 좋은 점과 나쁜 점이 혼재되어 있습니다 -- 어떤 사람에게는 작동되는 반면 다른 사람에게는 작동되지 않을 수 있습니다. 내 추측으로는, Apple이 비공식적으로 모두 종료하게 될 것으로 생각됩니다. 그리고 Beeper가 다시 돌아온다 하더라도, 그들이 앞으로 하게 될 일은 그냥 야생의 고양이와 마우스 장난일 것으로 예상합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # “Apple just wants to keep iMessage exclusive.”
 
@@ -82,7 +145,18 @@ Beeper가 종료된 지 얼마 후에 약간의 수정을 거쳐 다시 온라�
 
 그게 잘못된 건가요? 그게 문제가 될까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 회사가 자신의 재산에 대해 원하는 대로 할 권리가 없습니까? Apple이 iPhone 사용자를 위한 독점 기능으로 자사의 재산 인 iMessage을 유지할 권리가 없습니까? 물론, 그 권리가 있습니다.
 
@@ -92,17 +166,39 @@ Beeper는 제3자 응용 프로그램을 통해 Apple 서버로 메시지를 보
 
 모든 면에서 그것은 걱정스럽습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 알았어요! 테이블 태그를 마크다운 형식으로 변경할게요.
 
-| 번호 | 제품     | 가격  |
-|------|----------|-------|
-| 1    | 사과     | $1    |
-| 2    | 바나나   | $2    |
-| 3    | 체리     | $3    |
+| 번호 | 제품   | 가격 |
+| ---- | ------ | ---- |
+| 1    | 사과   | $1   |
+| 2    | 바나나 | $2   |
+| 3    | 체리   | $3   |
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 애플은 아직도 다른 애플 기기가 아닌 기기들과 통신하기 위해 SMS를 사용하고 있다는 사실이 맞아요. 그렇죠. 그리고 이것이 바뀌어야 한다는 사실도 맞아요 (그리고 곧 바뀔 예정이에요).
 
@@ -112,7 +208,18 @@ Beeper는 제3자 응용 프로그램을 통해 Apple 서버로 메시지를 보
 
 아마 그렇지 않아요. 그렇지 않다고 생각해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사실 안드로이드 및 iPhone 사용자들은 SMS를 사용하지 않고도 함께 채팅할 수 있는 방법이 있습니다.
 
@@ -122,7 +229,18 @@ Beeper는 제3자 응용 프로그램을 통해 Apple 서버로 메시지를 보
 
 애플의 시스템을 잘못 사용하는 것은 좋은 해결책이 아닙니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # "애플이 보안에 중요시한다면, 왜 아직도 SMS를 사용하나요?"
 
@@ -132,7 +250,18 @@ Beeper는 제3자 응용 프로그램을 통해 Apple 서버로 메시지를 보
 
 다시 말해, 정말로 보안과 개인 정보 보호를 중요시한다면, 먼저 SMS를 대체할 것에 집중해야 한다는 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 그게 어떻게 작동하는지 아시나요? 이건 빨간 물고기라고 할만한 거예요.
 
@@ -142,7 +271,18 @@ Beeper는 제3자 응용 프로그램을 통해 Apple 서버로 메시지를 보
 
 # 여기서 객관적으로 생각해 보기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 사람들이 나를 애플 열광자로 생각할 수 있다는 걸 방지하기 위해 먼저 말하지만, 전 그렇지 않아요. 쿠퍼티노에서 보여준 소비자에게 해로운 여러 가지 결정들에 대해 공개적으로 비판했어요. 그 중 일부는 다른 것보다 더 화나게 만들기도 했죠.
 
@@ -152,7 +292,18 @@ Beeper는 제3자 응용 프로그램을 통해 Apple 서버로 메시지를 보
 
 Beeper는 애플의 프로토콜을 역공학적으로 재구성하여 복사했고 (이것이 첫 번째 문제입니다), 이를 사용하여 애플의 서버와 통신하며 사실상 사용자를 대신해 애플 기기인 척 했어요. (여기가 두 번째 문제입니다.)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 너아 둘 다 괜찮은 게 아니야.
 
@@ -162,7 +313,18 @@ Beeper는 애플의 프로토콜을 역공학적으로 재구성하여 복사했
 
 하지만 애플의 지적 재산권을 역공학하고 애플 시스템을 속이기 위해 사용하는 것은 해결책이 될 수 없어 — 비록 그 취지가 좋다고 해도.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 어떻게 변경해야 할까요?
 
@@ -170,7 +332,18 @@ Beeper는 애플의 프로토콜을 역공학적으로 재구성하여 복사했
 
 하지만 이런 기능들이 2023년에 모두에게 제공되지 않는다는 것은 안타깝네요. 그래서 Android 사용자들도 이런 기능을 사용할 수 있도록 만들어지면 좋겠어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현대화된 문자 메시징이 필요한 시대입니다: RCS. 그 불충분한 기능을 가진 SMS는 마치 1990년대의 것처럼 느껴집니다. 아마 그래서 iMessage가 많은 사람들에게 매력적으로 느껴지는 이유일지도 모르겠네요?
 

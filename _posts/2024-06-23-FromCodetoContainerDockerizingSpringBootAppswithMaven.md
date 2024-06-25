@@ -3,25 +3,36 @@ title: "코드에서 컨테이너로 Maven으로 Spring Boot 앱을 Dockerize하
 description: ""
 coverImage: "/assets/img/2024-06-23-FromCodetoContainerDockerizingSpringBootAppswithMaven_0.png"
 date: 2024-06-23 22:54
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-FromCodetoContainerDockerizingSpringBootAppswithMaven_0.png
 tag: Tech
 originalTitle: "From Code to Container: Dockerizing Spring Boot Apps with Maven"
 link: "https://medium.com/@tauseefameen/from-code-to-container-dockerizing-spring-boot-apps-with-maven-a7e4321703a7"
 ---
 
-
 ![이미지](/assets/img/2024-06-23-FromCodetoContainerDockerizingSpringBootAppswithMaven_0.png)
 
 컨테이너화는 애플리케이션을 배포하는 방식을 혁신적으로 변화시켰습니다. 환경별 일관성을 제공하고 배포 프로세스를 간소화합니다. 이 가이드에서는 Maven을 사용하여 스프링 부트 애플리케이션을 원활하게 도커화하는 방법을 살펴보겠습니다. 개발부터 프로덕션까지 스무스하고 효율적인 워크플로우를 보장합니다.
 
 필수 사항
+
 1. Spring Boot 및 Maven의 기본 지식
 2. 시스템에 Docker가 설치되어 있어야 함
 
 단계 1: 스프링 부트 애플리케이션 설정하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 Spring Boot 애플리케이션을 만들려면 spring initializer (https://start.spring.io/)를 사용하세요. Spring web, Spring Boot dev tools와 같은 기본 종속성을 포함하세요.
 
@@ -33,7 +44,18 @@ io.fabric8 플러그인은 Maven을 위한 도커 관련 활동의 공식 플러
 이제 새로운 "containerize"라는 Maven 프로필을 만들고 해당 프로필에서 도커-Maven 플러그인을 사용할 것입니다. 코드 스니펫을 추가했고, 코드를 설명하기 위해 주석을 사용했습니다.
 이 플러그인의 문서는 여기서 확인할 수 있습니다: https://dmp.fabric8.io/
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <profile>
@@ -132,7 +154,18 @@ Step 3: Docker 파일 추가
 
 자바 17을 기본 이미지로 사용하는 Docker 파일을 작성합시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 ###########################################################################
@@ -198,8 +231,18 @@ sleep infinity
 
 Step 4: 메이븐 프로필을 사용하여 이미지를 빌드합니다
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 모든 설정이 완료되었고, 이제 우리 애플리케이션의 이미지를 생성할 준비가 되었어요. 다음 명령어를 실행해봐요.
 
@@ -218,7 +261,18 @@ mvn clean install -Pcontainerize
 [INFO] DOCKER> Tagging image medium/docker-containerize:latest successful!
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 명령어를 실행하여 확인해주세요
 
@@ -228,7 +282,18 @@ mvn clean install -Pcontainerize
 
 ![image2](/assets/img/2024-06-23-FromCodetoContainerDockerizingSpringBootAppswithMaven_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 따라서 컨테이너가 성공적으로 시작되었습니다.
 
@@ -295,7 +360,18 @@ mvn clean install -Pcontainerize
 거기서 Docker 파일이 jar 파일을 선택할 것입니다.
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 결론
 Spring Boot 애플리케이션을 컨테이너화하는 것은 배포 프로세스를 효율적으로 만들 뿐만 아니라 다양한 환경에서의 확장성과 일관성을 향상시킵니다. 오늘부터 Spring Boot 프로젝트를 컨테이너화하여 현대적인 애플리케이션 배포의 혜택을 직접 경험해보세요.

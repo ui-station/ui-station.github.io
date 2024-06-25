@@ -3,13 +3,12 @@ title: "CDS JAR vs Uber JAR 도커화 및 비교 20 빠른 시작 시간 달성�
 description: ""
 coverImage: "/assets/img/2024-06-23-DockerizingandComparingCDSJARvsUberJARAchieving20FasterStartupTimes_0.png"
 date: 2024-06-23 22:45
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-DockerizingandComparingCDSJARvsUberJARAchieving20FasterStartupTimes_0.png
 tag: Tech
 originalTitle: "Dockerizing and Comparing CDS JAR vs. Uber JAR: Achieving 20% Faster Startup Times"
 link: "https://medium.com/itnext/dockerizing-and-comparing-cds-jar-vs-uber-jar-achieving-20-faster-startup-times-31756adef99b"
 ---
-
 
 ## JAVA | JVM | CDS | DOCKER
 
@@ -19,7 +18,18 @@ link: "https://medium.com/itnext/dockerizing-and-comparing-cds-jar-vs-uber-jar-a
 
 아래 연결된 기사에서 greetings-app의 전체 코드 및 구현을 찾을 수 있습니다. 기사에서 설명된 단계를 따라 진행하고 시작하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러면 시작해봅시다!
 
@@ -29,7 +39,18 @@ link: "https://medium.com/itnext/dockerizing-and-comparing-cds-jar-vs-uber-jar-a
 
 ## Docker 이미지 빌드하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## Uber JAR을 사용하여 도커 이미지 생성하기
 
@@ -45,7 +66,18 @@ ENTRYPOINT ["java", "-jar", "greetings-app.jar"]
 
 다음으로, 터미널을 열고 인사 앱 루트 폴더 내에서 아래 명령어를 실행하여 greetings-app-uber-jar 도커 이미지를 생성해 봅시다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 도커 이미지를 CDS JAR로 빌드하려면
@@ -59,7 +91,16 @@ COPY greetings-app-0.0.1-SNAPSHOT/lib/ lib/
 
 ENTRYPOINT ["java", "-jar", "greetings-app.jar"]
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로, 터미널에서 greetings-app 루트 폴더 안으로 이동한 다음 아래 명령어를 실행하여 greetings-app-cds-jar 도커 이미지를 생성해 봅시다:
 
@@ -69,7 +110,16 @@ docker build -f Dockerfile-CDS-JAR -t greetings-app-cds-jar .
 
 도커 이미지의 크기를 확인해 봅시다. 터미널에서 다음 명령어를 실행해 주세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 도커 이미지 | grep greetings-app
 
@@ -80,7 +130,16 @@ greetings-app-uber-jar                               latest                   67
 
 둘 다 크기가 486MB로 동일해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 시작 및 중지 시간 5번
 
@@ -90,7 +149,16 @@ greetings-app-uber-jar                               latest                   67
 
 docker run --rm -m 1024M -p 8080:8080 --name greetings-app greetings-app-uber-jar
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 우리가 진행한 5회 실행의 결과입니다 (일부 로그 라인은 간략하게 생략되었습니다):
 
@@ -119,7 +187,16 @@ docker run --rm -m 1024M -p 8080:8080 --name greetings-app greetings-app-uber-ja
 
 터미널에서 다음 명령을 실행하여 애플리케이션의 Docker 컨테이너를 시작하세요. 중지하려면 Ctrl+C를 누르고, 이 작업을 총 다섯 번 반복하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 우리가 실시한 5회 실행 결과입니다 (간결함을 위해 일부 로그 라인이 생략되었습니다):
 
@@ -159,30 +236,50 @@ docker run --rm -m 1024M -p 8080:8080 --name greetings-app greetings-app-uber-ja
 
 # 비교결과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 스타트업 시간
 
 아래 표는 위 실행에서 얻은 스타트업 시간과 평균을 보여줍니다:
 
 ```
-| Docker Image | 스타트업 시간(초) | 평균 스타트업 시간(초) |
-|--------------|-------------------|-----------------------|
-| uber-jar     | 2.767             |                       |
-| uber-jar     | 2.841             |                       |
-| uber-jar     | 2.864             |                       |
-| uber-jar     | 2.916             |                       |
-| uber-jar     | 2.860             | 2.849                 |
-| cds-jar      | 2.285             |                       |
-| cds-jar      | 2.422             |                       |
-| cds-jar      | 2.318             |                       |
-| cds-jar      | 2.335             |                       |
-| cds-jar      | 2.319             | 2.335                 |
 
+| Docker Image | 스타트업 시간(초) | 평균 스타트업 시간(초) |
+| ------------ | ----------------- | ---------------------- |
+| uber-jar     | 2.767             |                        |
+| uber-jar     | 2.841             |                        |
+| uber-jar     | 2.864             |                        |
+| uber-jar     | 2.916             |                        |
+| uber-jar     | 2.860             | 2.849                  |
+| cds-jar      | 2.285             |                        |
+| cds-jar      | 2.422             |                        |
+| cds-jar      | 2.318             |                        |
+| cds-jar      | 2.335             |                        |
+| cds-jar      | 2.319             | 2.335                  |
 
 평균 표를 통해 CDS JAR가 있는 Docker 컨테이너의 스타트업 시간이 Uber JAR가 있는 것보다 약 18.03% 빠르다는 것을 알 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 성능
 
@@ -194,7 +291,18 @@ docker run --rm -m 1024M -p 8080:8080 --name greetings-app greetings-app-uber-ja
 oha -n 10000 -c 2 --latency-correction --disable-keepalive http://localhost:8080/greetings
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 결과가 있어요:
 
@@ -217,7 +325,18 @@ Uber JAR를 사용한 Docker 컨테이너가 CDS JAR를 사용한 것보다 약�
 
 ## 메모리 사용량
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 메모리 사용량을 비교하기 위해 Google의 cAdvisor 도구를 사용했어요.
 
@@ -227,7 +346,18 @@ Uber JAR를 사용한 Docker 컨테이너
 
 ![이미지](/assets/img/2024-06-23-DockerizingandComparingCDSJARvsUberJARAchieving20FasterStartupTimes_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위와 같이 볼 때, Uber JAR를 사용한 Docker 컨테이너는 시작할 때 140MB에 이르렀고 부하 테스트 중에 최대 182MB까지 증가했습니다.
 
@@ -237,7 +367,18 @@ CDS JAR를 사용한 Docker 컨테이너
 
 CDS JAR를 사용한 Docker 컨테이너는 시작할 때 127MB에 이르렀고 부하 테스트 중에 최대 174MB까지 증가했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 사, 시작 시 메모리 사용량을 9.3% 절약했고 로드 테스트 중에는 4.4%를 절약했다고 결론지을 수 있습니다.
 
@@ -249,7 +390,18 @@ CDS JAR를 사용한 Docker 컨테이너는 시작할 때 127MB에 이르렀고 
 docker rmi greetings-app-cds-jar:latest greetings-app-uber-jar:latest
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -259,7 +411,18 @@ docker rmi greetings-app-cds-jar:latest greetings-app-uber-jar:latest
 
 만약 이 글을 즐겁게 읽으셨고 지원을 보여주고 싶다면, 아래의 조치를 고려해 주시기 바랍니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 👏 제 이야기에 박수를 치거나 강조하고 답글을 남겨주셔요. 궁금한 점이 있다면 언제든지 물어봐주세요.
 - 🌐 제 이야기를 소셜 미디어에 공유해주세요.

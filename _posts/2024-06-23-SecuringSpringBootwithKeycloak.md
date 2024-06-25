@@ -3,14 +3,12 @@ title: "Keycloak으로 Spring Boot 보안 설정하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-SecuringSpringBootwithKeycloak_0.png"
 date: 2024-06-23 21:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SecuringSpringBootwithKeycloak_0.png
 tag: Tech
 originalTitle: "Securing Spring Boot with Keycloak"
 link: "https://medium.com/@wahyubagus1910/securing-spring-boot-with-keycloak-b352f05575f2"
 ---
-
-
 
 ![사진](/assets/img/2024-06-23-SecuringSpringBootwithKeycloak_0.png)
 
@@ -21,8 +19,18 @@ Keycloak이란
 
 Keycloak은 레드햇에서 개발된 오픈 소스 식별 및 액세스 관리 도구입니다. 쉬운 설정 및 애플리케이션 통합으로 여러분이 직접 모든 것을 맞춤 설정하는 것보다 훨씬 많은 시간을 절약할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 회사에서 이미 보안 구성 요소로 채택되어 있어서 도구들이 검증되었고 더욱 신뢰할 수 있는 상태로 구현되어 있습니다. 많은 회사가 Keycloak을 사용하기 때문에 학습 자료를 쉽게 얻고 인터넷에서 의논할 수 있습니다.
 
@@ -33,7 +41,18 @@ Keycloak를 구현하는 여러 방법이 있습니다. 예를 들어 SSO, 소�
 
 우리는 필요에 따라 구현이 필요한 사용자 정의 흐름을 처리하는 독립된 인증 서비스를 사용하여 구현할 것이지만, 자격 증명 자체를 인증하는 데 Keycloak가 책임을 집니다. 그리고 서비스 레이어의 리소스 서버에서 토큰을 확인합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시스템 다이어그램
 
@@ -43,7 +62,18 @@ Keycloak를 구현하는 여러 방법이 있습니다. 예를 들어 SSO, 소�
 
 물론 애플리케이션 클라이언트(FE 또는 모바일 앱)에게 다시 원시 응답을 반환하지는 않겠습니다. 인증 서비스에서 응답을 표준화하여 처리할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Keycloak 설치 및 설정
 다음 yml 파일을 사용하여 도커 컴포즈로 Keycloak을 설치하고 구성하세요:
@@ -111,7 +141,18 @@ networks:
 
 계층을 만들고 원하는 대로 계층 이름 폼을 작성하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-SecuringSpringBootwithKeycloak_2.png)
 
@@ -121,7 +162,18 @@ networks:
 
 ![이미지](/assets/img/2024-06-23-SecuringSpringBootwithKeycloak_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 클라이언트를 성공적으로 생성한 후, 클라이언트 비밀키를 복사하려면 클라이언트 자격 증명 탭으로 이동하세요.
 
@@ -131,7 +183,18 @@ networks:
 
 역할 할당
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 키클로크에는 렘 역할과 리소스 클라이언트 역할이 있어요. 둘 다 서로 다른 책임과 동작을 가지고 있어요.
 
@@ -141,7 +204,18 @@ networks:
 
 리소스 클라이언트 역할도 만들어 보세요, "write"와 "read" 같은 역할을 만들어 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-SecuringSpringBootwithKeycloak_7.png" />
 
@@ -152,7 +226,18 @@ networks:
 코드 구현
 Spring 프로젝트를 초기화하고, pom.xml에 다음 종속성을 추가하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 <?xml version="1.0" encoding="UTF-8"?>
@@ -264,7 +349,18 @@ public class KeycloakJwtRolesConverter implements Converter<Jwt, Collection<Gran
 
 CustomAuthenticationEntryPoint.java 파일은 요청을 인증하는 동안 예외를 처리하는 클래스이며 JSON을 반환합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Component
@@ -307,11 +403,22 @@ public class CustomAccessDenied implements AccessDeniedHandler {
 
 WebSecurityConfiguration.java에서는 보안 구성을 정의하고, 일부 엔드포인트를 역할 확인으로 보호하며, 보안 시스템 내에서 사용자 정의 예외 처리를 어떻게 구현하는지 설명합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 jwtDecoder() 함수는 요청에서 받은 JSON 웹 토큰(JWT)을 유효성 검사하고 해독하는 역할을 담당합니다. 이 함수는 토큰을 생성하고 서명하는 인증 서버로 가리키는 발급자를 가리킵니다.
 
-grantedAuthorityDefaults() 함수는 우리 스프링 애플리케이션에서 "ROLE_" 접두사를 제거하는 역할을 합니다.
+grantedAuthorityDefaults() 함수는 우리 스프링 애플리케이션에서 "ROLE\_" 접두사를 제거하는 역할을 합니다.
 
 ```js
 @Slf4j
@@ -371,7 +478,18 @@ public class WebSecurityConfiguration {
 
 AuthService.java는 Keycloak의 엔드포인트에 요청을 보내 인증할 자격 증명을 제공하는 서비스 클래스입니다. client_id 및 client_secret 자격 증명은 Keycloak에 방금 등록한 클라이언트에서 얻었습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서비스에는 액세스 토큰을 가져오고 토큰을 새로 고침하는 두 가지 메서드가 있습니다. 액세스 및 새로 고침 토큰을 받았으므로 새로 고침 토큰을 Redis에 REFRESH_TOKEN 상수 키로 저장한 다음 디바이스 ID와 연결합니다. 토큰을 새로 고칠 때 Redis에서 저장할 때와 동일한 키로 가져옵니다.
 
@@ -496,7 +614,18 @@ public class AuthController {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 HomeController.java에는 USER 역할로 로그인한 사용자를 위한 공개 엔드포인트 및 ADMIN 역할을 위한 /admin을 처리하는 컨트롤러가 있습니다.
 
@@ -521,8 +650,18 @@ public class HomeController {
 
 새로 등록한 사용자 자격 증명으로 /api/auth/login 엔드 포인트에 로그인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 curl을 사용하여 테이블로 admin 엔드포인트로 이동 가능합니다.
 
@@ -547,8 +686,18 @@ curl --location 'http://localhost:8085/api/home/admin' \
 
 public 엔드포인트로 이동하는 curl입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 curl --location 'http://localhost:8085/api/home/public' \
@@ -566,7 +715,18 @@ curl --location --request POST 'http://localhost:8085/api/auth/refresh-token' \
 --header 'Device-Id: example-my-device-id'
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 업그레이드
 동일한 보안 구성을 적용하는 여러 서비스가 있다면, KeycloakJwtRolesResolver.java를 복제하고 중복 코드를 만드는 것은 좋지 않습니다. 더 나은 접근 방식은 해당 클래스를 독립된 스프링 프로젝트로 분리하는 것입니다. 이 프로젝트를 모듈-공통이라고 부르고, 다른 서비스에 공통으로 사용되는 클래스나 기능을 수용하도록 합니다.

@@ -3,13 +3,12 @@ title: "Amazon Athena와 함께하는 Spring Boot 사용법"
 description: ""
 coverImage: "/assets/img/2024-06-23-SpringBootwithAmazonAthena_0.png"
 date: 2024-06-23 20:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-SpringBootwithAmazonAthena_0.png
 tag: Tech
 originalTitle: "Spring Boot with Amazon Athena"
 link: "https://medium.com/gitconnected/spring-boot-with-amazon-athena-8eab6615f839"
 ---
-
 
 Spring Boot과 데이터 레이크를 통합하는 방법을 알려드릴게요. 아마존 S3 데이터에 SQL 인터페이스를 제공합니다.
 
@@ -19,7 +18,18 @@ Spring Boot과 데이터 레이크를 통합하는 방법을 알려드릴게요.
 
 우리는 SpringBoot 애플리케이션을 Amazon Athena와 연결하는 방법을 살펴볼 거에요. Athena가 무엇이며 어떻게 작동하는지 먼저 배운 후, Athena를 쿼리하는 SpringBoot 3 애플리케이션을 생성할 거에요. 해당 애플리케이션은 노출된 Rest API를 통해 Athena에 쿼리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 아테나 소개
 
@@ -29,7 +39,18 @@ Spring Boot과 데이터 레이크를 통합하는 방법을 알려드릴게요.
 
 아마존의 Simple Storage Service인 S3는 아테나와 함께 사용하기 가장 권장되는 데이터 저장소입니다. S3는 AWS의 객체 저장 서비스로 어떤 파일 형식의 저렴한 저장을 제공합니다. S3는 버킷 내의 객체로 데이터를 저장합니다. 객체는 파일과 파일을 설명하는 메타데이터를 포함합니다. 버킷은 객체를 위한 컨테이너입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Amazon S3에 데이터를 저장하려면 먼저 버킷을 생성하고 버킷 이름과 AWS 지역을 지정해야 합니다. 그런 다음 해당 버킷에 데이터를 Amazon S3의 객체로 업로드합니다. 각 객체는 버킷 내에서의 객체를 식별하는 고유 키(또는 키 이름)를 가지고 있습니다.
 
@@ -41,7 +62,18 @@ Amazon S3에 데이터를 저장하려면 먼저 버킷을 생성하고 버킷 �
 도시, 도시_ascii, 위도, 경도, 국가, iso2, iso3, 관리 이름, 수도, 인구, id
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 몇 줄의 샘플이 이렇게 보입니다.
 
@@ -57,7 +89,18 @@ São Paulo,Sao Paulo,-23.5504,-46.6339,Brazil,BR,BRA,São Paulo,admin,22495000,1
 
 # S3 준비
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로는 데이터를 저장하는 데 사용할 S3 버킷을 생성해야 합니다. 이는 고유한 이름이어야 합니다. 제가 사용한 이름은 world-cities-athena 입니다. 상호적으로 따라오는 경우 다른 고유한 이름을 사용해야 합니다.
 
@@ -67,7 +110,18 @@ Amazon S3 - Buckets - Create bucket 페이지로 이동하여 다음을 입력�
 
 나머지 설정은 기본값으로 선택하고, 하단의 "버킷 생성" 버튼을 눌러주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 새 버킷을 선택하고 "폴더 생성" 버튼을 사용하여 input 및 queries라는 두 개의 폴더를 만들어주세요.
 
@@ -77,8 +131,18 @@ Amazon S3 - Buckets - Create bucket 페이지로 이동하여 다음을 입력�
 
 마지막으로, input 폴더를 클릭하고 "업로드"를 선택하여 이전 섹션에서 다운로드한 데이터 세트를 업로드해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Spring Boot with Amazon Athena](/assets/img/2024-06-23-SpringBootwithAmazonAthena_3.png)
 
@@ -88,8 +152,18 @@ Amazon S3 - Buckets - Create bucket 페이지로 이동하여 다음을 입력�
 
 ![Spring Boot with Amazon Athena](/assets/img/2024-06-23-SpringBootwithAmazonAthena_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다시 모든 기본 값으로 유지하고 아래에 있는 버킷 생성 버튼을 선택하세요.
 
@@ -99,8 +173,18 @@ Amazon S3 - Buckets - Create bucket 페이지로 이동하여 다음을 입력�
 
 Athena 데이터베이스를 구성하기 위한 몇 가지 단계가 있습니다. 이 모든 작업은 Athena AWS 콘솔 내에서 수행됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![SpringBootwithAmazonAthena_5](/assets/img/2024-06-23-SpringBootwithAmazonAthena_5.png)
 
@@ -110,8 +194,18 @@ Once you select Launch query editor then you will see this screen.
 
 ![SpringBootwithAmazonAthena_6](/assets/img/2024-06-23-SpringBootwithAmazonAthena_6.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 오른쪽에 있는 쿼리 창을 사용하여 Athena와 상호 작용할 수 있습니다. 이 방법을 사용하겠습니다. 객체를 수동으로 정의하는 마법사 형식의 테이블 생성 방법도 있습니다.
 
@@ -123,19 +217,39 @@ Once you select Launch query editor then you will see this screen.
 create database worldcitiesdb
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음과 같이 됩니다.
 
-
 ![Spring Boot with Amazon Athena](/assets/img/2024-06-23-SpringBootwithAmazonAthena_7.png)
-
 
 그런 다음 **실행**을 누르세요.
 
 그럼 왼쪽 데이터 창의 Database 드롭다운에서 새 데이터베이스를 선택할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 현재 시점에서는 새로운 데이터베이스에 테이블이 없는 상태일 것입니다.
 
@@ -166,7 +280,18 @@ LOCATION 's3://world-cities-athena/input/'
 TBLPROPERTIES ('skip.header.line.count' = '1')
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 create 문에서 특히 이 줄에 주목해주세요.
 
@@ -178,7 +303,18 @@ LOCATION 's3://world-cities-athena/input/'
 
 쿼리에서 world-cities-athena를 여러분의 버킷으로 교체하신 후 Run을 눌러주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 두 번 실행한 후 녹색 성공 메시지가 표시됩니다. 그러면 새 테이블이 Athena에서 왼쪽 데이터 창에 표시됩니다.
 
@@ -190,7 +326,18 @@ LOCATION 's3://world-cities-athena/input/'
 select * from worldcities limit 50
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 데이터베이스 및 테이블이 있는지 확인하고 쿼리할 수 있다는 것을 확인합니다.
 
@@ -200,7 +347,18 @@ Athena 데이터베이스가 올바르게 설정되었습니다.
 
 # 코드 워크스루
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 기사의 코드는 제 Github에서 찾을 수 있습니다. 코드와 함께 다양한 SQL 문도 포함되어 있어요.
 
@@ -210,7 +368,18 @@ Athena가 설정되었다면, 다음 단계는 REST API를 통해 노출할 Spri
 
 시작하기 전에 아래에 표시된 Spring Initializr에서 기본 종속성 집합을 가진 SpringBoot 애플리케이션을 생성할 거에요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-SpringBootwithAmazonAthena_10.png" />
 
@@ -236,7 +405,18 @@ Athena가 설정되었다면, 다음 단계는 REST API를 통해 노출할 Spri
 
 위의 종속성들은 구현에 필요합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기서 전체 pom.xml을 확인할 수 있습니다.
 
@@ -260,27 +440,47 @@ public class AppConfiguration {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱리케이션.yml의 해당 섹션은 아래와 같이 표시됩니다.
 
-
 athena:
-  region: us-east-1
-  workgroup: primary
-  catalog: AwsDataCatalog
-  database: worldcitiesdb
-  limit: 25
-  client-execution-timeout: 100000
-  retry-sleep: 1000          # 1초
-  results-bucket: s3://world-cities-results
-
+region: us-east-1
+workgroup: primary
+catalog: AwsDataCatalog
+database: worldcitiesdb
+limit: 25
+client-execution-timeout: 100000
+retry-sleep: 1000 # 1초
+results-bucket: s3://world-cities-results
 
 ## Athena 레이어
 
 다음으로 Athena 클라이언트를 생성하고 쿼리를 실행하는 접근 논리를 구현해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 먼저 Athena 클라이언트를 생성하는 것이 중요합니다. 아래 제공된 코드대로 작업이 진행됩니다.
 
@@ -302,7 +502,18 @@ public class AthenaClientFactory {
 
 이 작업은 software.amazon.awssdk.services.athena.AthenaClient 클래스의 인스턴스를 생성합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음으로 필요한 구성 요소는 쿼리 시작 및 완료입니다. 이것은 두 단계 프로세스입니다.
 
@@ -378,7 +589,18 @@ public class AthenaQuery {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 쿼리는 createAthenaQuery 메서드로 시작됩니다. 이는 데이터베이스와 결과 버킷을 가진 쿼리 컨텍스트를 생성한 다음 쿼리를 Athena에 제출하여 수행됩니다. 성공적으로 실행된 경우 UUID 형식의 쿼리 실행 ID가 반환되며, 그렇지 않으면 빈 문자열이 반환됩니다.
 
@@ -388,7 +610,18 @@ completeAthenaQuery 메서드에서는 쿼리가 성공적으로 완료되거나
 
 이는 쿼리에서 가져온 필드와 일치하는 간단한 레코드입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 data class TopTenCities(val name: String, val population: Int)
@@ -400,7 +633,18 @@ data class TopTenCities(val name: String, val population: Int)
 
 구현 내에서 서비스는 모든 것을 연결합니다. 이는 이전에 살펴본 Athena 클래스를 사용하여 Athena에서 데이터를 검색하고, 그런 다음 위의 POJO TopTenCities로 매핑합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Service
@@ -516,7 +760,18 @@ AthenaService의 processResultRows 메서드에서 GetQueryResultsRequest 클래
 
 ## Rest API
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마지막으로 살펴볼 부분은 API 레벨입니다. 여기에서 컨트롤러를 구현합니다.
 
@@ -549,7 +804,18 @@ public class ApiController {
 
 # 테스팅
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 명령어로 애플리케이션을 시작하여 테스트해보세요.
 
@@ -563,19 +829,39 @@ java -jar target/athena-sample-0.0.1-SNAPSHOT.jar
 http://localhost:8080/api/actuator
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해당 URL을 브라우저에 입력하면 모든 국가의 인구 순으로 상위 열 개의 도시가 반환됩니다.
 
-
 http://localhost:8080/api/cities
-
 
 다음과 같이 표시됩니다.
 
 ![이미지](/assets/img/2024-06-23-SpringBootwithAmazonAthena_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음 코드도 시도해 볼 수 있어요.
 
@@ -587,7 +873,18 @@ http://localhost:8080/api/cities/US?limit=15
 
 우리는 SpringBoot 애플리케이션을 통해 Athena를 쿼리할 수 있음을 보여줬고, 이를 REST API를 통해 모두 연결했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 참고 자료
 
@@ -597,7 +894,18 @@ http://localhost:8080/api/cities/US?limit=15
 
 오늘은 SpringBoot 애플리케이션에서 Athena로 인터페이스를 만드는 방법을 살펴보았습니다. 우리는 Athena에 대한 배경 정보부터 시작했습니다. 그 후에 CSV 파일을 Athena로 로드하고 사용 가능하게 만드는 방법을 살펴보았습니다. 다음으로 SpringBoot 애플리케이션과 Athena를 연결하고 쿼리하는 방법을 살펴보았습니다. 이러한 클래스들은 여러분의 애플리케이션에 기초를 제공할 수 있습니다. 마지막으로 우리는 테스트를 해보았습니다. 함께 이 여정을 함께해줘서 감사합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 글의 코드는 제 Github에서 찾아볼 수 있어요.
 

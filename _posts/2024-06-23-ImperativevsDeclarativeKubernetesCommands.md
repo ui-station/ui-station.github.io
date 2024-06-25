@@ -3,13 +3,12 @@ title: "쿠버네티스 명령어 명령형 vs 선언형 비교"
 description: ""
 coverImage: "/assets/img/2024-06-23-ImperativevsDeclarativeKubernetesCommands_0.png"
 date: 2024-06-23 23:01
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ImperativevsDeclarativeKubernetesCommands_0.png
 tag: Tech
 originalTitle: "Imperative vs Declarative Kubernetes Commands"
 link: "https://medium.com/@thebackendgrip/imperative-vs-declarative-kubernetes-commands-d92db5cc2c25"
 ---
-
 
 쿠버네티스 명령줄 도구 인 kubectl을 사용하면 쿠버네티스 클러스터에 대해 명령을 실행할 수 있습니다. kubectl을 사용하여 응용 프로그램을 배포하고 클러스터 리소스를 검사하고 관리하며 로그를 볼 수 있습니다.
 
@@ -21,11 +20,22 @@ kubectl 도구는 세 가지 유형의 객체 관리를 지원합니다.
 
 ![이미지](/assets/img/2024-06-23-ImperativevsDeclarativeKubernetesCommands_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 명령문
 
-명령문은 클러스터의 객체에 직접적으로 작용하며, 이러한 명령문은 객체의 상태를 즉시 변경합니다. 
+명령문은 클러스터의 객체에 직접적으로 작용하며, 이러한 명령문은 객체의 상태를 즉시 변경합니다.
 
 이러한 명령문의 예시:
 
@@ -35,7 +45,18 @@ kubectl 도구는 세 가지 유형의 객체 관리를 지원합니다.
 - **kubectl scale** — 이 몤령어는 배포(Deployment) 또는 레플리카셋(ReplicaSet)에서 레플리카의 수를 확장하거나 축소하는 데 사용됩니다.
 - **kubectl delete** — 이 명령어는 객체(e.g. 배포(Deployment), 포드(Pod) 등)를 삭제하는 데 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시
 
@@ -47,7 +68,18 @@ nginx 컨테이너를 실행하는 Pod 객체를 생성합니다:
 kubectl run nginx --image=nginx
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 nginx 컨테이너를 실행하는 ReplicaSets가 있는 Deployment 객체를 만들어보세요:
 
@@ -59,7 +91,18 @@ Imperative 명령어들은 보통 사용하기 쉽습니다. 학습이나 테스
 
 ## 명령어를 사용한 객체 구성
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 명령형 객체 구성에서는 kubectl 명령어를 사용하여 작업(생성, 대체 등), 선택적 플래그 및 하나 이상의 파일 이름을 지정합니다.
 
@@ -71,7 +114,18 @@ Imperative 명령어들은 보통 사용하기 쉽습니다. 학습이나 테스
 kubectl create -f config.yaml
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 두 구성 파일에서 정의된 객체를 삭제합니다:
 
@@ -83,7 +137,18 @@ kubectl delete -f config1.yaml -f config2.yaml
 
 명령형 명령어와는 달리 객체에 대한 작업을 수행하기 위해 정확한 단계를 올바른 순서대로 수행해야 하는 절차적 방법과 달리, 선언적 접근 방식은 선언적 매니페스트 파일에서 객체의 원하는 상태를 선언하고 Kubernetes가 kubectl applycommand를 사용하여 객체의 원하는 상태를 달성하도록 관리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시
 
@@ -96,7 +161,18 @@ kubectl apply -f configs/
 
 디렉토리를 재귀적으로 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 kubectl diff -R -f configs/
@@ -129,7 +205,18 @@ spec:
             - containerPort: 8080
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 manifest는 nginx:latest Docker 이미지를 기반으로 하는 컨테이너의 복제본을 두 개 실행해야 한다는 배포를 설명합니다.
 

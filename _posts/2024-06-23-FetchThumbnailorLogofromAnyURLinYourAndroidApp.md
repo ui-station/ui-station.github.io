@@ -3,13 +3,12 @@ title: "안드로이드 앱에서 URL로 썸네일 또는 로고 가져오는 �
 description: ""
 coverImage: "/assets/img/2024-06-23-FetchThumbnailorLogofromAnyURLinYourAndroidApp_0.png"
 date: 2024-06-23 20:56
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-FetchThumbnailorLogofromAnyURLinYourAndroidApp_0.png
 tag: Tech
 originalTitle: "Fetch Thumbnail or Logo from Any URL in Your Android App"
 link: "https://medium.com/@walidkhan345/fetch-thumbnail-or-logo-from-any-url-in-your-android-app-b91d5e4ad604"
 ---
-
 
 이 기사에서는 안드로이드 애플리케이션에서 주어진 URL에서 섬네일이나 로고를 가져와서 표시하는 방법을 안내하겠습니다. 네트워크 요청에는 Retrofit, HTML 파싱에는 Jsoup, 이미지 로딩에는 Glide를 사용할 예정입니다.
 
@@ -22,7 +21,18 @@ link: "https://medium.com/@walidkhan345/fetch-thumbnail-or-logo-from-any-url-in-
 
 # 사용 사례
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 앱은 다음과 같은 여러 시나리오에 유용할 수 있어요:
 
@@ -34,7 +44,18 @@ link: "https://medium.com/@walidkhan345/fetch-thumbnail-or-logo-from-any-url-in-
 
 # 요구 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 안드로이드 스튜디오
 - 코틀린
@@ -45,27 +66,48 @@ link: "https://medium.com/@walidkhan345/fetch-thumbnail-or-logo-from-any-url-in-
 다음 종속성을 build.gradle.kts 파일에 추가해주세요:
 
 ```js
-implementation("com.squareup.retrofit2:retrofit:2.9.0")
-implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
-implementation("org.jsoup:jsoup:1.13.1")
-implementation("com.github.bumptech.glide:glide:4.11.0")
-kapt("com.github.bumptech.glide:compiler:4.11.0")
+implementation("com.squareup.retrofit2:retrofit:2.9.0");
+implementation("com.squareup.retrofit2:converter-scalars:2.9.0");
+implementation("org.jsoup:jsoup:1.13.1");
+implementation("com.github.bumptech.glide:glide:4.11.0");
+kapt("com.github.bumptech.glide:compiler:4.11.0");
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사용 방법
 
 - 저장소를 복제합니다:
-  
+
   bash
   git clone https://github.com/WalidAhmed90/Fetch-Thumbnail-or-Logo-in-Android-App.git
   cd Fetch-Thumbnail-or-Logo-in-Android-App
-  
 
 2. Android Studio에서 프로젝트를 엽니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 3. 안드로이드 기기 또는 에뮬레이터에서 프로젝트를 빌드하고 실행하세요.
 
@@ -75,7 +117,18 @@ kapt("com.github.bumptech.glide:compiler:4.11.0")
 
 ## API 서비스
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ApiService 인터페이스는 URL에서 HTML 콘텐츠를 가져오는 메서드를 정의합니다:
 
@@ -90,7 +143,18 @@ interface ApiService {
 
 fetchThumbnail 함수는 HTML 콘텐츠를 가져와 썸네일이나 로고를 찾아 Glide를 사용하여 보여줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```kotlin
 fun fetchThumbnail(url: String) {
@@ -224,7 +288,18 @@ activity_main.xml 레이아웃 파일은 다음과 같이 UI 구성요소를 정
 </layout>
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 기여하기
 

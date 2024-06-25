@@ -3,14 +3,12 @@ title: "흥미로운 Go 업데이트  v122 변경 로그와 예제들"
 description: ""
 coverImage: "/assets/img/2024-06-23-ExcitingGoUpdatev122ChangeLogWithExamples_0.png"
 date: 2024-06-23 21:14
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ExcitingGoUpdatev122ChangeLogWithExamples_0.png
 tag: Tech
 originalTitle: "Exciting Go Update — v1.22 Change Log With Examples"
 link: "https://medium.com/@programmingpercy/exciting-go-update-v1-22-change-log-with-examples-fe04eaa54746"
 ---
-
-
 
 ![Example](/assets/img/2024-06-23-ExcitingGoUpdatev122ChangeLogWithExamples_0.png)
 
@@ -20,8 +18,18 @@ Go는 개발자로서 제 삶에 변화를 가져다 주었습니다. 특히 일
 
 Go로 개발할 때 모든 것이 쉽고 복잡하지 않으며, 빠른 개발 속도를 유지할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 언어가 쉽다는 것 뿐만 아니라 개발 속도도 빠르고 이해하기 쉽습니다. 가비지 수집기가 있는데도 Go는 성능이 우수하다는 사실도 있습니다.
 
@@ -31,7 +39,18 @@ Go로 개발할 때 모든 것이 쉽고 복잡하지 않으며, 빠른 개발 �
 
 아직 업데이트하지 않은 경우, GoTip을 사용하여 쉽게 최신 버전으로 업데이트하세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 go install golang.org/dl/gotip@latest
@@ -44,7 +63,18 @@ gotip download
 
 Go의 for 룹은 실제로는 문제가 없었습니다. 그러나 구현 방식이 많은 개발자들을 혼란스럽게 했다고 말할 수 있습니다. 이 혼란으로 인해 Go의 역사에서 많은 버그가 발생했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단한 코드 스니펫을 살펴보고 예상대로 동작하지 않는 것을 볼까요?
 
@@ -59,8 +89,8 @@ import (
 func main() {
         // A list of names to print
        names := []string{"Percy", "Gopher", "Santa"}
-              
-       // We will For loop over the names 
+
+       // We will For loop over the names
        for _, v := range names {
           // Imagine that we have some concurrent function running here
           // We are Printing the variable v
@@ -75,7 +105,18 @@ func main() {
 
 리스트에 있는 세 이름이 모두 출력될 것으로 생각할 수 있지만, 코드를 면밀히 검토하고 무슨 일이 일어나고 있는지 생각해보면 그렇지 않습니다. 변수 v가 고루틴에서 참조되지만 for 루프의 각 반복마다 v가 가리키는 대상이 변경됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 간단히 말해서, for 루프가 스케줄러에서 Goroutines를 실행하도록 대기열에 넣기 때문입니다. Goroutines가 실행되기 전에 다음 반복이 진행되고 변수 v가 덮어쓰입니다.
 
@@ -90,7 +131,18 @@ Percy
 Gopher
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 프로그램 간의 호환성을 보장하기 위해 Go 팀은 v1.21 이전 버전을 사용하는 프로젝트가 1.22 이상을 사용하는 코드를 컴파일하지 않도록 조치했습니다.
 
@@ -100,7 +152,18 @@ Gopher
 
 ![이미지](/assets/img/2024-06-23-ExcitingGoUpdatev122ChangeLogWithExamples_3.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Go 언어에서는 표준 라이브러리가 많이 지원되어 있습니다. 대부분의 경우에는 그것이 사실이라고 느낍니다. 그러나 HTTP 라이브러리는 라우팅 패턴 및 메서드 선언을 처리하기 위한 내장 기능 부족으로 인해 종종 대체됩니다.
 
@@ -110,7 +173,18 @@ Go 언어에서는 표준 라이브러리가 많이 지원되어 있습니다. �
 
 ## 메서드별 라우팅
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 HTTP GET 방식만 허용하는 HTTP 엔드포인트 예제입니다.
 
@@ -145,7 +219,18 @@ func main() {
 
 작동 여부를 확인하기 위해 curl 요청을 엔드포인트에 보내 보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 curl -v -X POST localhost:8000/hello
@@ -155,12 +240,12 @@ curl -v -X POST localhost:8000/hello
 > Host: localhost:8000
 > User-Agent: curl/7.81.0
 > Accept: */*
-> 
+>
 * 번들을 다중 사용을 지원하지 않도록 표시
 < HTTP/1.1 405 Method Not Allowed
 < Date: Sun, 28 Jan 2024 15:03:01 GMT
 < Content-Length: 0
-< 
+<
 * 호스트 localhost로 연결 #0 종료
 ```
 
@@ -188,7 +273,18 @@ func main() {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 훨씬 나아지고 부드러워졌네요. GET POST /hello를 사용할 수 없습니다. 이전의 CURL 명령어를 실행하면 동일한 동작을 할 것입니다.
 
@@ -198,7 +294,18 @@ func main() {
 
 경로 매개변수는 요청에서 값이 예상되는 URL의 일부 또는 섹션입니다. 가령 사용자들이 인사를 하기 위해 이름을 추가할 수 있게 하고 싶다고 가정해보죠. 그렇다면 요청은 /hello/$이름 형태가 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이전 방식으로는 이렇게 관리되었습니다.
 
@@ -225,7 +332,7 @@ func main() {
    return
   }
   // 이름 가져오기
-  name := parts[2] 
+  name := parts[2]
 
   w.Write([]byte(fmt.Sprintf("안녕 %s!", name)))
  })
@@ -240,7 +347,18 @@ func main() {
 
 새 ServeMux를 사용하면 매개변수를 이름으로 지정할 수 있습니다. '로 묶어 매개변수를 추가할 수 있기 때문에 경로를 /hello/'name'으로 설정할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 파라미터를 가져오려면, HTTP 요청에 PathValue라는 함수가 포함되어 있어야 합니다. 이 함수는 가져올 파라미터의 이름을 인수로 받습니다.
 
@@ -270,7 +388,18 @@ func main() {
 
 우리는 이름이 있는지 검증할 필요가 없습니다. 파라미터 없이 요청을 보내면 HTTP 404 Not Found를 반환하는 것을 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬호스트:8080/hello/percy으로 curl 명령어를 실행해보세요. 멋진 메시지가 출력될 거에요.
 
@@ -285,7 +414,18 @@ func main() {
 
 이를 통해 동적 요청을 파라미터로 전달할 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 정확한 패턴 매칭과 슬래시 후행
 
@@ -313,7 +453,18 @@ func main() {
 
 위 코드를 실행하면 쉽게 테스트해볼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로컬호스트:8080/hello/percy로 CURL을 보내면 로컬호스트:8080/hello와 동일한 결과를 반환합니다.
 
@@ -321,7 +472,18 @@ func main() {
 
 수정된 루트를 업데이트하고 프로그램을 다시 시작한 후에는 이제 로컬호스트:8080/hello/로만 요청을 보낼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 갈등 해결과 우선순위
 
@@ -330,11 +492,22 @@ func main() {
 가장 구체적인 라우트가 항상 선택되도록하여 이 문제를 해결했습니다.
 
 ```js
-http.HandleFunc("/hello/", helloHandler)          // 덜 구체적
-http.HandleFunc("/hello/{name}", helloHandler)  // 더 구체적
+http.HandleFunc("/hello/", helloHandler); // 덜 구체적
+http.HandleFunc("/hello/{name}", helloHandler); // 더 구체적
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 이 방법을 좋아한다. 왜냐하면 아주 많은 의미가 있다고 느껴지기 때문이야.
 
@@ -346,7 +519,18 @@ http.HandleFunc("/hello/{name}", helloHandler)  // 더 구체적
 - Slog은 더 쉽게 로그 레벨을 제어할 수 있는 SetLogLoggerLevel을 새롭게 받았어.
 - slices는 슬라이스를 병합하는 새로운 Concat 함수를 받았어. Delete와 같이 크기를 줄이는 slice 패키지의 모든 함수는 이제 요소를 자동으로 Zero화할 것이야.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결론
 
@@ -356,7 +540,18 @@ HTTP 라우팅에 대한 변경 사항에 대해 저만큼 흥분하시기를 �
 
 마지막으로, 많은 버그를 일으키는 그 지겹고도 신랄한 행동 이제는 영원히 해결될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이미 최신 버전으로 업데이트를 하지 않았다면 꼭 업데이트해 주세요!
 
@@ -366,20 +561,42 @@ Go에서 가장 그리워하는 기능은 무엇인가요?
 
 의견을 자유롭게 남겨주세요. 댓글이나 제 다른 소셜 플랫폼에서도 연락 가능합니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 부록
 
 Go 벤치마크 — [여기](https://benchmarksgame-team.pages.debian.net/benchmarksgame/fastest/go.html)
 
-가비지 컬렉터 — [여기](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science))
+가비지 컬렉터 — [여기](<https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)>)
 
 Go 변경 로그 — [여기](https://tip.golang.org/doc/go1.22)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 상세 정보입니다:
 
-- **Let's Encrypt 인증 폐기**: [여기](https://community.letsencrypt.org/t/revoking-certain-certificates-on-march-4/114864)를 클릭하여 더 많은 정보를 확인하세요.  
-- **Go playground**: [여기](https://go.dev/play/p/LkgkmFMoqTS)에 방문하면 Go 언어를 더 재미있게 배울 수 있습니다.  
+- **Let's Encrypt 인증 폐기**: [여기](https://community.letsencrypt.org/t/revoking-certain-certificates-on-march-4/114864)를 클릭하여 더 많은 정보를 확인하세요.
+- **Go playground**: [여기](https://go.dev/play/p/LkgkmFMoqTS)에 방문하면 Go 언어를 더 재미있게 배울 수 있습니다.
 - **GoTip**: [여기](https://pkg.go.dev/golang.org/dl/gotip)를 클릭하면 유용한 GoTip 패키지를 찾을 수 있습니다.

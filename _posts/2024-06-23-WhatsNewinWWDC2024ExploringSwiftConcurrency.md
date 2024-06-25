@@ -3,13 +3,12 @@ title: "WWDC 2024 Swift의 새로운 동시성 기능 탐구"
 description: ""
 coverImage: "/assets/img/2024-06-23-WhatsNewinWWDC2024ExploringSwiftConcurrency_0.png"
 date: 2024-06-23 23:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-WhatsNewinWWDC2024ExploringSwiftConcurrency_0.png
 tag: Tech
 originalTitle: "What’s New in WWDC 2024: Exploring Swift Concurrency"
 link: "https://medium.com/@Shubhransh-Gupta/whats-new-in-wwdc-2024-exploring-swift-concurrency-c39a25806e25"
 ---
-
 
 Swift Concurrency는 처음 소개되었을 때부터 화제가 되었고, WWDC 2024에서 발표된 혁신적인 기술들로 더욱 발전하였습니다. Apple은 개발자들이 안전하고 효율적이며 고성능의 비동기 코드를 작성할 수 있도록 지원하고 있습니다. 이 블로그에서는 WWDC 2024에서 발표된 Swift Concurrency의 새로운 기능과 개선 사항에 대해 알아보겠습니다. 이를 통해 이러한 개념을 설명하는 코드 스니펫을 제시할 것입니다.
 
@@ -19,7 +18,18 @@ Swift Concurrency는 처음 소개되었을 때부터 화제가 되었고, WWDC 
 
 # Swift Concurrency의 새로운 기능 (WWDC 2024)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 1. 작업 그룹 업데이트
 
@@ -46,9 +56,20 @@ func fetchAllData() async throws -> [Data] {
     }
     return results
 }
-```  
+```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예시에서는 여러 URL에서 동시에 데이터를 가져오기 위한 작업 그룹을 만듭니다. withThrowingTaskGroup은 이제 오류를 더 잘 처리하여 더 견고하고 오류에 강한 코드를 작성할 수 있습니다.
 
@@ -58,7 +79,18 @@ Async Streams는 라이브 데이터 피드와 같은 비동기 값 시퀀스를
 
 ### 코드 조각: Async Streams
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import Foundation
@@ -67,7 +99,7 @@ func fetchLiveUpdates() -> AsyncStream<String> {
         let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             continuation.yield("New update at \(Date())")
         }
-        
+
         continuation.onTermination = { _ in
             timer.invalidate()
         }
@@ -87,8 +119,18 @@ Task {
 
 Swift의 Actor는 동시성 환경에서 공유 가능한 가변 상태에 안전한 액세스를 보장합니다. 2024 업데이트에는 더 효율적인 데이터 액세스 패턴과 기존 Swift 코드와의 상호 운용성이 포함되어 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 코드 조각: 향상된 Actor
 
@@ -125,7 +167,18 @@ Task {
 
 # 4. 작업 취소 개선 결과
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 작업 취소는 리소스를 관리하고 앱 반응성을 향상시키는 데 중요합니다. 최신 업데이트로 작업을 취소할 때 더 나은 제어와 예측 가능한 동작을 제공합니다.
 
@@ -158,7 +211,18 @@ Task {
 
 이 코드에서는 작업이 1초마다 메시지를 출력하는 루프를 실행합니다. 작업이 취소되면 (여기서 3초 뒤에 시뮬레이션됨), 취소 여부를 확인하고 정상적으로 종료됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 5. 향상된 오류 처리
 
@@ -194,7 +258,18 @@ Task {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 예제는 Swift의 async/await와 함께 에러 처리 메커니즘을 사용하여 비동기 함수에서 에러를 효과적으로 처리하는 방법을 보여줍니다.
 
@@ -204,10 +279,20 @@ WWDC 2024에서 소개된 Swift Concurrency의 개선 사항은 개발자가 효
 
 이러한 새로운 기능을 프로젝트에 통합하여 더 빠르고 견고한 응용 프로그램을 만들 수 있습니다. 항상 실험을 진행하고 Swift Concurrency의 기능을 탐색하여 개발 워크플로우에서 그 강력함을 최대한 발휘해보세요. 즐거운 코딩 되세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 안녕하세요! 아래는 테이블 태그를 Markdown 형식으로 변경하였습니다.
-
 
 ![이미지](/assets/img/2024-06-23-WhatsNewinWWDC2024ExploringSwiftConcurrency_0.png)
 

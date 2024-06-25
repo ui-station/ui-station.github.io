@@ -3,13 +3,12 @@ title: "좋은 코드와 나쁜 코드란 비전문가를 위한 일러스트 �
 description: ""
 coverImage: "/assets/img/2024-06-23-WhatisgoodbadcodeAnillustratedexamplefornon-programmers_0.png"
 date: 2024-06-23 21:16
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-WhatisgoodbadcodeAnillustratedexamplefornon-programmers_0.png
 tag: Tech
 originalTitle: "What is good bad code? An illustrated example for non-programmers"
 link: "https://medium.com/@todbotts.triangles/what-is-good-bad-code-an-illustrated-example-for-non-programmers-1222b600a0f0"
 ---
-
 
 한 번 어딘가에서 다음 내용을 담은 것 같은 격언을 읽은 적이 있어요:
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@todbotts.triangles/what-is-good-bad-code-an-illustrat
 
 하루에 약 5시간 동안 코드를 작성하고 검토하며 다시 작성하는 일(코드 리팩토링: 보다 간결하고 사용하기 편한 방식으로 재작성하는 것)을 하는 사람으로써, 코드가 무엇인지(나쁜 코드가 무엇인지도, 확실히 알아요!). 많은 사람들이 코드가 무엇인지 모른다는 것을 잊을 때가 종종 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 문제에 대한 다음 대답을 제공합니다. “너는 코더인데, 무슨 일을 하는 거야?”
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@todbotts.triangles/what-is-good-bad-code-an-illustrat
 
 문 모음집 비유로는 시각화하기나 더 설명하기 어렵기 때문에, 이 시점에서 아래에 작성하고 설명하는 다른 비유를 제공하고 싶습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 나사 돌리기 장치 만들기!
 
@@ -39,17 +60,39 @@ link: "https://medium.com/@todbotts.triangles/what-is-good-bad-code-an-illustrat
 
 나쁜 코드는 일단 문제를 해결하는 데만 집중하며, 나사와 나사 돌리기 장치를 반죽으로 연결하는 가장 쉬운 해결책을 제안합니다. 나쁜 코드는 초반에 Occam의 면도날 상을 수상합니다. 좋은 코드는 초반에는 조금 지나친 것처럼 보이며, 고무 벨트와 2개의 바퀴를 활용합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-WhatisgoodbadcodeAnillustratedexamplefornon-programmers_1.png" />
 
 # 요구 사항 변경! 손잡이가 다시 위치로 이동되어야 합니다!
 
-개발 주기에서 항상 발생하는 것처럼 어느 순간 고객 요구 사항이 변경됩니다. 이 비유에서 고객은 이제 원래 손잡이의 앞쪽과 옆쪽에 위치한 다른 손잡이를 회전시킬 수 있는 손잡이를 원합니다. 아래 그림과 같이요: 
+개발 주기에서 항상 발생하는 것처럼 어느 순간 고객 요구 사항이 변경됩니다. 이 비유에서 고객은 이제 원래 손잡이의 앞쪽과 옆쪽에 위치한 다른 손잡이를 회전시킬 수 있는 손잡이를 원합니다. 아래 그림과 같이요:
 
 <img src="/assets/img/2024-06-23-WhatisgoodbadcodeAnillustratedexamplefornon-programmers_2.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나쁜 코드는 몇 개의 간단한 부품을 추가해야 하며, 이는 전체 시스템을 보다 부서지기 쉽고 고장 발생 가능성이 높게 만듭니다. 좋은 코드는 새로운 요구 사항이 생겨도 약간의 조정만으로 문제를 해결할 수 있으며, 그냥 더 긴 고무 벨트를 사용하여 이 문제를 해결합니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@todbotts.triangles/what-is-good-bad-code-an-illustrat
 
 마침내, 고객님이 손잡이를 서로 다른 속도로 회전하길 원하는 결정을 내렸습니다. 입력 손잡이를 작게 돌리면 연결된 손잡이가 크게 회전해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 새 요구 사항에 따라, 나쁜 코드는 시스템에 더 많은 구성 요소를 추가해야 하므로 더욱 복잡해집니다. 반면에 좋은 코드는 다시 한번 조정이 필요하며 연결된 조절 부분에 더 큰 휠을 사용하는 것으로 충분합니다:
 
@@ -69,7 +123,18 @@ link: "https://medium.com/@todbotts.triangles/what-is-good-bad-code-an-illustrat
 
 위의 내용처럼, 요구 사항이 간단할 때 좋은 코드는 종종 과잉으로 느껴지지만, 고객 요구 사항이 변경될 때(항상 그렇듯이) 정말 빛을 발합니다. 다시 말해, 잘 확장되고 변경됩니다. 반면에 나쁜 코드는 간단한 문제에 대해 간단하고 좋아 보이지만, 시스템이 변경되거나 복잡성이 증가할 때 악몽이 됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 혹시 "음, 위에서 설명한 두 시스템 모두 결국 같은 결과를 얻을 수 있어요 - 손잡이 회전기는 어느 경우에도 성공적으로 작동해요" 라고 생각하고 계실지도 모릅니다.
 
@@ -80,6 +145,17 @@ link: "https://medium.com/@todbotts.triangles/what-is-good-bad-code-an-illustrat
 - "여기 손잡이 회전기가 있어요. 2개의 바퀴와 벨트로 구성돼요" 또는
 - "이것이 연결 막대를 보관하는 삽입이에요. 이것이 연결 막대이고, 이 다른 삽입 위에 있는 작은 구멍에 막대의 끝을 넣어야 해요..."
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 나는 당신이 시니어 개발자로부터 코드베이스를 이어받는 주니어 개발자라면 어떤 것을 더 좋아할지 궁금해요! :)

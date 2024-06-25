@@ -3,13 +3,12 @@ title: "Flutter로 인물 및 가로 모드가 가능한 카메라 앱 만드는
 description: ""
 coverImage: "/assets/img/2024-06-23-HowtocreateacameraappbyflutterwithPortraitandLandscapemode_0.png"
 date: 2024-06-23 21:39
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-HowtocreateacameraappbyflutterwithPortraitandLandscapemode_0.png
 tag: Tech
 originalTitle: "How to create a camera app by flutter with Portrait and Landscape mode"
 link: "https://medium.com/@smueez/how-to-create-a-camera-app-by-flutter-with-portrait-and-landscape-mode-ec1d05d31b85"
 ---
-
 
 ![이미지](/assets/img/2024-06-23-HowtocreateacameraappbyflutterwithPortraitandLandscapemode_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@smueez/how-to-create-a-camera-app-by-flutter-with-por
 
 사용할 패키지:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우린 flutter.dev의 Camera 패키지를 사용할 거야.
 
@@ -32,19 +42,41 @@ dependencies:
   camera: ^0.10.5+2
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 가져오기
 
 이제 당신의 Dart 코드에서 다음을 사용할 수 있습니다:
 
 ```js
-import 'package:camera/camera.dart';
+import "package:camera/camera.dart";
 ```
 
 또한 이 링크를 클릭하여 패키지 설치를 확인할 수도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 어떻게 구현하나요?
 
@@ -53,12 +85,23 @@ import 'package:camera/camera.dart';
 단계 1: Stateful 위젯을 만드세요 (저는 CameraScreen이라고 이름 붙였어요).
 
 ```js
-class CameraScreen extends StatefulWidget 
+class CameraScreen extends StatefulWidget
 ```
 
 이제 List`CameraDescription` 유형의 변수를 취하세요. 메인 함수에서 초기화하려면 전역 변수로 만들 수도 있어요. 카메라 화면으로 이동하기 전에 사용 가능한 카메라 목록을 가져오는 것이 좋아요. 따라서 사용 가능한 카메라 목록을 가져오는 방법입니다. 메인 함수에서 사용 가능한 카메라 목록을 가져올 수도 있고, 카메라 화면으로 이동하기 전에 가져올 수도 있고, 카메라 컨트롤러를 초기화하기 전에 가져올 수도 있어요. 하지만 이렇게하여 사용 가능한 카메라를 가져올 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```dart
 // 여기에 코드를 넣어 주세요.
@@ -121,7 +164,18 @@ void getAvailableCamera() async {
 
 단계 3: 예스, 초기화하는 것에 관해 충분히 알겠죠. 이제 UI로 넘어갑시다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 UI를 만들 때는 화면을 최대한 간단하게 유지하려고 노력하고 있어요. CameraView와 두 개의 버튼(한 개는 사진 촬영을 위한 것이고, 다른 한 개는 카메라 설정 변경을 위한 것)만 있는 정적 UI를 만들 계획이에요.
 
@@ -184,7 +238,18 @@ UI를 만들 때는 화면을 최대한 간단하게 유지하려고 노력하�
 
 여기서 todo 섹션에서 작업할 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 UI가 될 것입니다. 하지만 UI에 대해서는 걱정하지 마세요. 마음대로 UI를 만들면 됩니다.
 
@@ -194,7 +259,18 @@ UI를 만들 때는 화면을 최대한 간단하게 유지하려고 노력하�
 
 "자동 회전" 모드를 끄고 이 사진처럼 가로 모드에서 사진을 찍고 싶을 때, 이미지가 90도 회전됩니다. 이 문제는 플러터 앱을 기본적으로 세로 모드로 설정하면서 발생합니다. 따라서 기기의 방향을 변경해도 앱이 방향에 따라 구성을 변경하지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 응, 알았어. 이 문제는 단순히 기기의 자동 회전 모드를 켜는 것으로 쉽게 해결할 수 있어. 그런데 이미지나 비디오 파일을 편평화하기 위해 자동 회전 모드가 필요한 카메라 앱을 본 적이 없어. 이제 그런 문제가 생기면 어떻게 해야 할까?
 
@@ -204,7 +280,18 @@ UI를 만들 때는 화면을 최대한 간단하게 유지하려고 노력하�
 
 이를 확인하려면 자이로 센서를 사용해야 해. 인터넷에 센서에 대한 많은 정보가 있으니 찾아보길 추천해. 기기의 다양한 움직임 등을 감지하는 다른 센서들도 있어. 많은 게임이 이러한 센서들을 사용하여 사용자에게 깨끗한 게임 경험을 제공해.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 자이로 센서를 앱에 설치하려면 sensor_plus라는 이 패키지를 추가해야 합니다.
 
@@ -217,7 +304,18 @@ dependencies:
 
 제가 밝혔듯이 OrientationBuilder는 기기의 자동 회전 모드가 꺼져 있거나 강제로 앱을 특정 방향으로 설정한 경우에는 작동하지 않습니다. 그래서 기기의 방향을 알기 위해 직접 OrientationBuilder를 작성해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Builder 위젯을 만들어 봅시다.
 
@@ -272,7 +370,7 @@ class _CustomOrientationBuilderState extends State<CustomOrientationBuilder> {
 
               cameraOrientation = CustomOrientation.portrait;
             }
-           
+
           });
 
         }
@@ -300,7 +398,7 @@ enum CustomOrientation {portrait, leftLandScape, rightLandScape}
 
 ```js
 late StreamSubscription<AccelerometerEvent> accelerometerSubscription;
-  
+
 CustomOrientation getOrientation(){
   CustomOrientation cameraOrientation = CustomOrientation.portrait;
     try {
@@ -341,7 +439,18 @@ takePhoto()async{
 /// 여러분의 코드
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 지금은 당신의 선택입니다. 방향을 어떻게 설정할지 결정하세요.
 
@@ -418,7 +527,7 @@ class _CameraScreenState extends State<CameraScreen> {
         children: [
           Align(
             alignment: Alignment.bottomCenter,
-            /// here I have added this right on the take photo button  
+            /// here I have added this right on the take photo button
             child: CustomOrientation(
               builder: (context, orientation) {
                 return FloatingActionButton(
@@ -469,7 +578,18 @@ class _CameraScreenState extends State<CameraScreen> {
 
 이제 우리는 방향을 설정했습니다. 당신의 기기나 앱의 기본 방향에 대해 아무것도 할 필요가 없습니다. 문제는 기기의 방향을 변경할 때 발생할 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 해결하기 위해서는 디바이스의 현재 방향에 따라 이미지를 회전해야 합니다. 여기서는 takephoto 함수만 작성하고 있어요. 한번 봅시다...
 
@@ -477,7 +597,7 @@ class _CameraScreenState extends State<CameraScreen> {
 import 'package:image/image.dart' as img;
 
 takePhoto(CustomOrientation orientation) async {
-  
+
   XFile? image = await _cameraController.takePicture();
   List<int> rotatedBytes = [];
   if (orientation != AppString.portrait) {
@@ -500,7 +620,18 @@ takePhoto(CustomOrientation orientation) async {
 
 이제 비디오 파일을 회전시키고 싶다면! 가능해요. 그러나 해당 작업을 하려면 flutter_ffmpeg 패키지를 import해야 해요. 그걸 추천하진 않겠어요. 두 가지 이유가 있어서요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 비디오 녹화를 중지한 후, 비디오 처리에 너무 오랜 시간이 걸릴 수 있습니다. 녹화된 비디오의 방향에 따라 회전 처리를 하려면 많은 시간이 소요될 수 있습니다.
 - 특정 패키지를 가져오려면 minSdkVersion을 24로 증가해야 합니다. 그러면 앱 크기가 두 배가 됩니다. 그렇지 않길 바라겠네요.

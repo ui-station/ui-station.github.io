@@ -3,13 +3,12 @@ title: "Telegram 봇 백엔드로 AWS Lambda 사용 하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_0.png"
 date: 2024-06-23 22:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_0.png
 tag: Tech
 originalTitle: "Using AWS Lambda as Telegram bot backend"
 link: "https://medium.com/serverless-bots/using-aws-lambda-as-telegram-bot-backend-52cd2cbeebc5"
 ---
-
 
 Idea부터 구현까지: 빠르고 유연하며 서버리스하고 비용 효율적인 상호 작용을 위해 AWS Lambda를 사용하여 Telegram Bot을 만들고 구성하는 방법.
 
@@ -20,7 +19,18 @@ Idea부터 구현까지: 빠르고 유연하며 서버리스하고 비용 효율
 - Pull 모드 — 이 모드에서는 봇이 지속적으로 실행되어 Telegram을 폴링하여 새 업데이트가 있는지 확인합니다. 새 메시지가 있으면 해당 메시지에 따라 작동합니다.
 - Webhook 모드 — 이 모드에서는 Telegram이 새 메시지가 있는 경우 지정된 URL로 HTTP 요청을 보냅니다. 그런 다음 봇은 이러한 수신 요처르 처리합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 풀 모드에서는 텔레그램을 주기적으로 폴링하는 코드가 계속 실행되어야 합니다. 이 방법은 수신 연결을 다룰 필요가 없어 안전합니다. 하지만 코드를 어딘가에 호스팅해야하는 번거로움이 있습니다.
 
@@ -30,7 +40,18 @@ Idea부터 구현까지: 빠르고 유연하며 서버리스하고 비용 효율
 
 ![사진](/assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위 작업을 구현하려면 다음 단계를 수행해야 합니다:
 
@@ -43,7 +64,18 @@ Idea부터 구현까지: 빠르고 유연하며 서버리스하고 비용 효율
 
 봇 등록하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 온라인에서 이 작업을 수행하는 방법에 대한 많은 지침이 있습니다. 간단히 말해서, @BotFather에 연락하고 /newbot 명령을 사용하여 새 봇을 만들 수 있습니다. 등록 결과로 우리 봇을 식별할 수 있는 Bot Token(특정 코드)을 받게 됩니다.
 
@@ -52,13 +84,35 @@ Idea부터 구현까지: 빠르고 유연하며 서버리스하고 비용 효율
 
 AWS 콘솔에서 Lambda 섹션으로 이동하여 새 함수를 만듭니다. 예를 들어, 우리는 Python을 사용할 것입니다. 하지만 편리한 다른 언어로 Python을 대체할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 새 함수를 생성할 때 파이썬 블루프린트를 선택하고 함수 이름을 지정하세요:
 
 ![이미지](/assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_4.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 함수를 만든 후, 코드를 다음과 같이 변경할 것입니다:
 
@@ -68,7 +122,7 @@ import json
 def lambda_handler(event, context):
     print("*** Received event")
     print(json.dumps(event))
-    
+
     return "Ok"  # Echo back the first key value
 ```
 
@@ -76,7 +130,18 @@ def lambda_handler(event, context):
 
 이 단계에서 람다 함수의 자리 표시자가 준비되었습니다. 그러므로 API를 생성하는 작업을 진행할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 람다를 위한 HTTP API 만들기
 
@@ -86,7 +151,18 @@ API를 생성하려면 API Gateway 섹션으로 이동하고 새 HTTP API를 만
 
 ![image2](/assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API를 생성할 때 람다 함수와의 통합을 정의하고 API 이름을 지정하세요:
 
@@ -96,7 +172,18 @@ API를 생성할 때 람다 함수와의 통합을 정의하고 API 이름을 �
 
 ![이미지](/assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_9.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 API를 생성한 후 브라우저에서 접근 가능한지 확인해보세요. API URL은 "단계" 섹션에서 찾을 수 있습니다(거기서 URL을 복사하세요).
 
@@ -106,7 +193,18 @@ API를 생성한 후 브라우저에서 접근 가능한지 확인해보세요. 
 
 ![Invoke URL screenshot](/assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 브라우저에서 올바르지 않은 JSON 응답에 대한 오류가 표시되지만 괜찮아요. 가장 중요한 것은 "Ok" 응답을 받았다는 것을 확인했다는 점이에요. 이는 람다 함수의 전반적인 인프라가 작동 준비가 되어 있다는 것을 의미해요.
 
@@ -116,7 +214,18 @@ API를 생성한 후 브라우저에서 접근 가능한지 확인해보세요. 
 
 텔레그램 요청 형식은 문서에서 찾을 수 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 람다 함수로 전달되는 메시지는 다음과 유사할 것입니다:
 
@@ -149,7 +258,18 @@ API를 생성한 후 브라우저에서 접근 가능한지 확인해보세요. 
 - $.message.from.username - 이것은 메시지를 보낸 사용자의 텔레그램 사용자 이름입니다.
 - $.message.text - 이것은 사용자 메시지의 텍스트입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 람다 작업에서 이러한 필드를 로그로 기록해 보겠습니다. 이를 위해 다음과 같이 함수 코드를 다음과 같이 교체할 것입니다:
 
@@ -169,7 +289,7 @@ def lambda_handler(event, context):
     print(f"*** 메시지 본문: {message_text}")
 
     return "Ok"  # 첫 번째 키 값을 다시 에코합니다
-```  
+```
 
 또한 테스트를 위해 람다 함수에 전달되는 새 테스트 이벤트를 생성할 것입니다. 람다 함수는 HTTP API와 통합되어 있으므로 다음과 유사한 메시지를 수신하게 될 것입니다:
 
@@ -204,28 +324,48 @@ def lambda_handler(event, context):
       "sourceIp": "185.244.156.97",
       "userAgent": "PostmanRuntime/7.39.0"
     },
-    
+
     ... 중략 ...
-    
+
   },
   "body": "{\r\n  \"update_id\": 10000,\r\n  \"message\": {\r\n    \"date\": 1441645532,\r\n    \"chat\": {\r\n      \"last_name\": \"Test Lastname\",\r\n      \"id\": 1111111,\r\n      \"first_name\": \"Test\",\r\n      \"username\": \"Test\"\r\n    },\r\n    \"message_id\": 1365,\r\n    \"from\": {\r\n      \"last_name\": \"Test Lastname\",\r\n      \"id\": 1111111,\r\n      \"first_name\": \"Test\",\r\n      \"username\": \"Test\"\r\n    },\r\n    \"text\": \"/start\"\r\n  }\r\n}",
   "isBase64Encoded": false
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 메시지를 테스트 예제로 설정해보고 얻는 결과를 확인해봅시다:
-
 
 ![Image 1](/assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_12.png)
 
 ![Image 2](/assets/img/2024-06-23-UsingAWSLambdaasTelegrambotbackend_13.png)
 
-
 좋아요! 메시지에서 필요한 필드를 성공적으로 읽었습니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희 함수는 지금부터 텔레그램에서 메시지를 수신할 수 있습니다. 다음으로 응답하는 방법을 알아보아야 합니다. 이를 위해 우리는 텔레그램 API의 sendMessage 메서드를 사용할 것입니다.
 
@@ -248,7 +388,7 @@ def sendReply(chat_id, message):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
     encoded_data = json.dumps(reply).encode('utf-8')
     http.request('POST', url, body=encoded_data, headers={'Content-Type': 'application/json'})
-    
+
     print(f"*** Reply : {encoded_data}")
 
 
@@ -273,12 +413,23 @@ def lambda_handler(event, context):
     return {
         'statusCode': 200,
         'body': json.dumps('Message processed successfully')
-    }    
+    }
 ```
 
 그 결과, 우리 함수는 텔레그램에서 어떤 것이라도 답장할 수 있어야 합니다. 응답은 사용자의 메시지 뒤에 "Reply to" 문자열이어야 합니다. 이 동작은 나중에 변경해야 할 것이지만, 지금은 전체 웹훅 봇 인프라를 구축하는 데 충분합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 텔레그램 봇을 텔레그램에 연결해 봅시다.
 
@@ -290,7 +441,18 @@ def lambda_handler(event, context):
 https://api.telegram.org/bot{bot_token}/setWebhook?url={webhook_endpoint}
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 사용할 수 있습니다:
 
@@ -307,7 +469,18 @@ https://api.telegram.org/bot{bot_token}/setWebhook?url={webhook_endpoint}
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 연결을 확인하려면 다음과 같이 요청을 할 수 있어요:
 
@@ -330,7 +503,18 @@ https://api.telegram.org/bot{bot_token}/getWebhookInfo
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 봇에 메시지를 전송해 보도록 해요:
 
@@ -340,7 +524,18 @@ https://api.telegram.org/bot{bot_token}/getWebhookInfo
 
 Lambda 함수의 작동 로그를 CloudWatch에서 확인할 수 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 AWS Lambda를 Telegram 봇의 백엔드로 사용하는 방법에 대한 이미지입니다.
 

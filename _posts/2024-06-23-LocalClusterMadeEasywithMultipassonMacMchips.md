@@ -3,13 +3,12 @@ title: "M 시리즈 맥에서 Multipass로 로컬 클러스터 쉽게 만들기"
 description: ""
 coverImage: "/assets/img/2024-06-23-LocalClusterMadeEasywithMultipassonMacMchips_0.png"
 date: 2024-06-23 22:57
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-LocalClusterMadeEasywithMultipassonMacMchips_0.png
 tag: Tech
 originalTitle: "Local Cluster Made Easy with Multipass on Mac M chips"
 link: "https://medium.com/@ibrahimmohelsayed/local-cluster-made-easy-with-mutipass-on-mac-m-chips-82af3d34b9b7"
 ---
-
 
 <img src="/assets/img/2024-06-23-LocalClusterMadeEasywithMultipassonMacMchips_0.png" />
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@ibrahimmohelsayed/local-cluster-made-easy-with-mutipa
 
 왜 Multipass를 사용해야 하는지요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 한 번의 명령어로 즉시 Ubuntu VM을 얻을 수 있어요.
 
@@ -31,7 +41,18 @@ brew install --cask multipass
 
 설치되면 메모리 및 디스크 공간을 지정하여 새 VM을 생성해보세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 multipass launch --name k3s --memory 4G --disk 40G
@@ -46,7 +67,18 @@ multipass mount ~/test/k8s k3s:~/k8s
 
 호스트 디렉토리에서 변경 사항을 만들고 VM 내부의 클러스터에 변경 사항을 적용하려고 할 때 유용할 거예요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 VM 내부에서 설치 스크립트를 실행하여 k3s를 설치할 수 있어요.
 
@@ -78,7 +110,18 @@ Mounts:         /Users/ibrahimmohamed/test/k8s => ~/k8s
                     GID map: 20:default
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```shell
 K3S_IP=$(multipass info k3s | grep IPv4 | awk '{print $2}')
@@ -104,7 +147,18 @@ export KUBECONFIG=${PWD}/k3s.yaml
 brew install kubectl
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```sh
 kubectl get nodes -o wide
@@ -131,8 +185,18 @@ Now let's view it through Lens
 
 Now you are ready to run any POC on your local machine.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 k3s 실험이 끝나면 VM을 삭제할 수 있습니다.
 

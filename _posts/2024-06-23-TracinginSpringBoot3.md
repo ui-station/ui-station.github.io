@@ -3,13 +3,12 @@ title: "Spring Boot3에서 트레이싱 활용하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-TracinginSpringBoot3_0.png"
 date: 2024-06-23 20:31
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-TracinginSpringBoot3_0.png
 tag: Tech
 originalTitle: "Tracing in Spring Boot3"
 link: "https://medium.com/javarevisited/tracing-in-spring-boot3-097205dc08f4"
 ---
-
 
 ![2024-06-23-TracinginSpringBoot3_0](/assets/img/2024-06-23-TracinginSpringBoot3_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/javarevisited/tracing-in-spring-boot3-097205dc08f4"
 
 운영팀은 이 두 영역 사이의 다리 역할을 했습니다. 그들의 주요 업무는 시스템, 애플리케이션 로그, 필요시 데이터베이스를 조사하여 문제를 해결하는 것이었죠. 해결책을 찾지 못하거나 향상 시야를 가지고 있다면 해당 데이터로 개발자에게 접근하게 됐습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 환경에서 작업하면서 로그의 중요성을 점차 알게 되었습니다. 로그는 응용프로그램이나 거래의 이벤트를 추적하는 데 도움이 됩니다. 적절한 분석을 통해 패턴을 찾거나 이상 현상을 예측하는 데 도움이 됩니다.
 
@@ -29,7 +39,18 @@ link: "https://medium.com/javarevisited/tracing-in-spring-boot3-097205dc08f4"
 
 결국에는 내 현재 접근 방식이 부족하다는 것이 명백해졌습니다. 내 일부 응용프로그램은 다른 팀이 유지보수하는 다른 애플리케이션 사이에서 미들웨어로 작용했습니다. 그들이 내 불편함을 용인해야 할 이유가 있을까요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그런 다음, Sleuth를 발견했어요. 정말 놀라웠죠; 단 하나의 의존성을 추가하고 로깅을 구성하기만 하면 어플리케이션 전체에 대한 추적을 활성화할 수 있었어요. 여러 개의 마이크로서비스를 사용하더라도 서비스 간 추적 ID를 전파하기 위한 추가적인 조치가 필요하지 않았어요.
 
@@ -39,7 +60,18 @@ Spring Boot 3 이전에는 프로젝트를 시작할 때마다 항상 Spring Clo
 
 지금은 컨트롤러와 서비스가 있는데, 일부 로그를 사용하고 있어요. 포스트맨으로 컨트롤러 엔드포인트에 요청을 보내면 다음과 같은 로그를 얻게 돼요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 2024-02-23T23:28:18.043+06:00  INFO 14443 --- [rest-api] [nio-8080-exec-2] x.r.t.restapi.web.MessageController   : Received message: Message(header=some header, content=some content)
@@ -50,23 +82,34 @@ Spring Boot 3 이전에는 프로젝트를 시작할 때마다 항상 Spring Clo
 
 ```js
 <dependency>
-    <groupId>io.micrometer</groupId>
-    <artifactId>micrometer-tracing-bridge-brave</artifactId>
-    <scope>compile</scope>
+  <groupId>io.micrometer</groupId>
+  <artifactId>micrometer-tracing-bridge-brave</artifactId>
+  <scope>compile</scope>
 </dependency>
 ```
 
 동일한 엔드포인트를 한 번 더 호출해보세요. 그런데 여전히 운이 없거나 로그가 없어요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 인터넷 검색 결과를 통해 작업을 수행하기 위해 액추에터도 추가해야 한다는 것을 알아냈습니다.
 
 ```js
 <dependency>
-     <groupId>org.springframework.boot</groupId>
-     <artifactId>spring-boot-starter-actuator</artifactId>
-     <scope>compile</scope>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-actuator</artifactId>
+  <scope>compile</scope>
 </dependency>
 ```
 
@@ -77,7 +120,18 @@ Spring Boot 3 이전에는 프로젝트를 시작할 때마다 항상 Spring Clo
 2024-02-24T00:11:06.053+06:00  INFO 18463 --- [rest-api] [nio-8080-exec-1] [65d8dfb96a137925ba56091d26f33e80-ba56091d26f33e80] x.r.t.r.service.MessageServiceImpl    : Handling message Message(header=some header, content=some content)
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기 보세요. [65d8dfb96a137925ba56091d26f33e80-ba56091d26f33e80] 이 부분에는 트레이스 ID와 스팬 ID가 포함되어 있습니다.
 
@@ -87,7 +141,18 @@ Spring Boot 3 이전에는 프로젝트를 시작할 때마다 항상 Spring Clo
 
 이제 새롭고 화려한 rest-client를 사용하여 rest-api에서 rest-api-2로 HTTP 호출을 해보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 rest-api에서 MessageServiceImpl을 수정한 내용은 다음과 같습니다:
 
@@ -117,7 +182,18 @@ public class MessageServiceImpl implements MessageService {
 
 rest-api의 로그:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 2024-02-24T14:31:13.060+06:00  INFO 29880 --- [rest-api] [nio-8080-exec-5] [65d9a95114390c055da56f5c4e138be3-5da56f5c4e138be3] x.r.t.restapi.web.MessageController   : Received message: Message(header=some header, content=some content)
@@ -133,7 +209,18 @@ rest-api-2의 로그:
 
 rest-api-2의 traceId와 spanId가 있는 것을 확인할 수 있어요. 하지만, 이들은 일치하지 않아요! 각 요청마다 새로운 추적 컨텍스트를 시작하고 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 첫 번째 애플리케이션에서의 traceId가 두 번째 애플리케이션으로 전파되지 않는 것을 의미합니다.
 
@@ -143,7 +230,18 @@ rest-api-2 애플리케이션을 중지하고, 해당 애플리케이션이 실�
 
 ![이미지](/assets/img/2024-06-23-TracinginSpringBoot3_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제 엔드포인트가 호출되면 다음과 같은 내용을 받습니다:
 
@@ -153,7 +251,18 @@ rest-api-2 애플리케이션을 중지하고, 해당 애플리케이션이 실�
 
 이건 그렇게 어렵지 않아요. 우리는 스프링 부트가 자동으로 구성한 기본 restClient 빌더를 사용해야 합니다. 이것은 traceId를 전파하기 위한 필요한 지식을 갖고 있습니다. 다음과 같이 할 수 있어요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 public MessageServiceImpl(@Value("${rest-api-2.url}") String restApi2Url, RestClient.Builder restClientBuilder) {
@@ -169,7 +278,18 @@ public MessageServiceImpl(@Value("${rest-api-2.url}") String restApi2Url, RestCl
 
 이제 우리에게 traceId를 포함한 traceparent라는 헤더가 있습니다. 이제 netcat을 중지하고 rest-api-2 애플리케이션을 시작하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 첫 번째 애플리케이션 로그:
 
@@ -179,7 +299,18 @@ public MessageServiceImpl(@Value("${rest-api-2.url}") String restApi2Url, RestCl
 
 ![2024-06-23-TracinginSpringBoot3_5.png](/assets/img/2024-06-23-TracinginSpringBoot3_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리고 빙고!
 
@@ -189,7 +320,18 @@ public MessageServiceImpl(@Value("${rest-api-2.url}") String restApi2Url, RestCl
 
 Rest client 구성 클래스는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 @Configuration
@@ -229,7 +371,18 @@ public class MessageServiceImpl implements MessageService {
 
 Cleaner right ?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이것은 단순한 데모입니다. Micrometer를 활용하여 다른 관측 가능성 사용 사례에 대해 더 많이 쓸 예정이에요.
 

@@ -3,13 +3,12 @@ title: "Unity 아키텍처 GameObject 컴포넌트 패턴 이해하기"
 description: ""
 coverImage: "/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_0.png"
 date: 2024-06-23 22:21
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_0.png
 tag: Tech
 originalTitle: "Unity Architecture: GameObject Component Pattern"
 link: "https://medium.com/@simon.nordon/unity-architecture-gameobject-component-pattern-34a76a9eacfb"
 ---
-
 
 지난 블로그 글에서는 "스파게티 패턴"에 대해 살펴보았습니다. 이는 아무런 패턴이 없는 게임을 묘사하기 위해 사용되는 농담적인 용어입니다.
 
@@ -17,7 +16,18 @@ link: "https://medium.com/@simon.nordon/unity-architecture-gameobject-component-
 
 프로토타입을 만드는 데 뛰어난 장점이 있지만, 코드가 엉망으로 변하여 어수선하고 복잡한 코드 구조로 이어질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러한 코드베이스는 긴, 엉킨 메소드, 싱글톤 게임 매니저와 같은 "God Objects"에 지나치게 의존하며, 각 새로운 기능이 추가될 때마다 증가하는 끝없는 버그 나열로 악명높습니다.
 
@@ -27,7 +37,18 @@ link: "https://medium.com/@simon.nordon/unity-architecture-gameobject-component-
 
 ![Unity Architecture GameObject Component Pattern](/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_0.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그래서, 이 패턴이 정말 멋져 보인다면 왜 아무도 사용하지 않는 것 같은걸까요? 심지어 Unity조차 이를 버리고 Scriptable Objects와 ECS를 선호합니다.
 
@@ -39,7 +60,18 @@ link: "https://medium.com/@simon.nordon/unity-architecture-gameobject-component-
 
 ![이미지](/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러나 매니저가 객체들에게 무엇을 해야 하는지 말하지 않고 게임의 흐름을 어떻게 제어할까요?
 
@@ -49,7 +81,18 @@ link: "https://medium.com/@simon.nordon/unity-architecture-gameobject-component-
 
 ![Unity Architecture](/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이벤트를 사용하면 게임 매니저에서 모든 종속성을 제거하여 대부분의 기능을 제거할 수 있습니다. 그럼으로써, 남은 데이터를 몇 가지 간단한 구성 요소로 분해할 수 있습니다. 예를 들어, 게임 상태와 같은 핵심 이벤트를 담는 컨테이너입니다.
 
@@ -59,7 +102,18 @@ link: "https://medium.com/@simon.nordon/unity-architecture-gameobject-component-
 
 이러한 경향을 이어가며, 코드를 깨끗하게 유지하기 위해 클래스가 적절하게 캡슐화되어야 한다는 것이 중요하다는 것을 알았습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 우리 코드를 개선하는 가장 간단한 방법은 serialize field 속성을 사용하는 것입니다. 이렇게 함으로써 클래스가 자신의 데이터에 대한 단일 권한 출처로 유지되도록 할 수 있습니다.
 
@@ -80,7 +134,18 @@ public int currentHealth { get; private set; }
 
 예를 들어, 플레이어와 적이 동일한 Death Handler 컴포넌트를 사용하지만 전혀 새로운 코드 없이 새로운 동작을 만들어낼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_4.png" />
 
@@ -90,7 +155,18 @@ public int currentHealth { get; private set; }
 
 마지막으로, Gold와 Achievements와 같은 구성 요소는 싱글톤 계정 관리자에 의존하는 대신 자체 저장 데이터를 처리하도록 했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 리팩토링은 튼튼한 시작을 했어요.
 
@@ -100,7 +176,18 @@ public int currentHealth { get; private set; }
 
 가장 중요한 기술은 Object Pooling의 사용입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 총알, 체력 팩, 입자 및 적을 생성하고 제거하는 과정으로 인해 Garbage Collector가 엄청난 스트레스를 받고 fps에 영향을 줍니다.
 
@@ -118,9 +205,9 @@ public class GameObjectPool : MonoBehaviour
   {
     return _inactivePool.Count > 0 ?
            _inactivePool.Dequeue() :
-           Instantiate(prefab, null); 
+           Instantiate(prefab, null);
   }
-        
+
   public void Return(GameObject item)
   {
     item.SetActive(false);
@@ -131,7 +218,18 @@ public class GameObjectPool : MonoBehaviour
 
 이 기술은 발사체, 적, 입자 효과, 오디오 소스 및 모든 UI 요소(피해 수치와 같은)를 단일 캔버스로 통합함으로써 성능을 향상시켰습니다. 제어된 스트레스 테스트로 60FPS에서 100FPS로 최대 66%의 성능 향상을 달성했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 시간 10 — 의존성 그래프 수정하기.
 
@@ -141,7 +239,18 @@ public class GameObjectPool : MonoBehaviour
 
 ![Unity Architecture Game Object Component Pattern](/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임 상태에 의존하는 구성 요소가 모두 GamePlayComponent 클래스에서 상속되도록 보장하면 이러한 동작을 체크하고도 직접적으로 참조하지 않고도 무차별적인 상태 관리를 할 수 있습니다.
 
@@ -151,7 +260,18 @@ public class GameObjectPool : MonoBehaviour
 
 ![이미지](/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 20시간 — 싱글턴 제거하기
 
@@ -161,7 +281,18 @@ public class GameObjectPool : MonoBehaviour
 
 ![이미지](/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_8.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 공장은 생성될 때 프리팹의 종속성을 주입합니다. 이는 새로운 오브젝트 풀과 잘 작동합니다. 이로 인해 싱글톤이 필요 없어졌지만, 코드에 복잡성과 보일러플레이트가 추가되었습니다.
 
@@ -171,8 +302,18 @@ public class GameObjectPool : MonoBehaviour
 
 이 추가된 복잡성은 구성 기반 아키텍처의 복잡성과 결합되어 많은 예측할 수 없는 버그를 발생시켰습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image](https://miro.medium.com/v2/resize:fit:1400/1*3BLCk1jFCCHxxns9MfhzHQ.gif)
 
@@ -182,9 +323,18 @@ GameObject Component는 컴포넌트 간 상호 작용에서 행동이 발생하
 
 문제를 해결하려고 10시간 동안 노력한 후에도 전혀 진전이 없는 것 같았습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Image](https://miro.medium.com/v2/resize:fit:1400/1*mXQ-sSlR0wSAtb5KPmrJQA.gif)
 
@@ -194,14 +344,35 @@ GameObject Component는 컴포넌트 간 상호 작용에서 행동이 발생하
 
 반면, 게임 오브젝트 컴포넌트는 모든 필요한 구성 요소가 실제로 테스트될 수 있을 때까지 존재해야 한다. 'Health.cs' 스크립트가 충분한지 여부를 알기 어렵다. 그 외의 모든 구성 요소와 함께 사용될 때까지는.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 모든 일은 동적으로 생성된 오브젝트를 다루고, 컴포넌트를 풀링하고 재활용하면서 함께 작동하도록 시도하다 보니 결과를 보지 못하는 등 너무 압도되었어요.
 
 그렇게 해서 2개월 동안 개발을 중단했죠.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임을 조각조각 다듬는 내 계획은 망가졌어요. 그래서 다른 일들로 넘어가고 게임 오브젝트 컴포넌트는 쓴맛을 남겼어요.
 
@@ -211,8 +382,18 @@ GameObject Component는 컴포넌트 간 상호 작용에서 행동이 발생하
 
 게임오브젝트-컴포넌트의 본질은 컴포넌트를 공유하는 데 있어요. '플레이어'와 '적'을 구분하는 것은 이 아키텍처의 정신을 위반해요. 그래서 플레이어와 적이 동일한 컴포넌트에 의존하도록 확실히 했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-UnityArchitectureGameObjectComponentPattern_12.png)
 
@@ -222,8 +403,18 @@ GameObject Component는 컴포넌트 간 상호 작용에서 행동이 발생하
 
 10시간의 개발을 버리고 합성 마인드셋으로 리팩토링을 시작했습니다. 이것은 아키텍처에 대한 점점 쌓이는 경험과 결합되어 이 어려움을 극복하고 핵심 게임을 다시 작동시킬 수 있었습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 50시간째 — 보상
 
@@ -233,11 +424,33 @@ GameObject Component는 컴포넌트 간 상호 작용에서 행동이 발생하
 
 지난 포스트에서 언급했듯이 프로젝트 막바지에 진행 상황 바를 구현하는 데 5시간이 걸렸는데, 이번에는 단 25분만에 완료했어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 테이블 태그를 마크다운 형식으로 변경했습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게임 오브젝트-컴포넌트는 처음에는 개발 속도가 느렸지만, 유지보수성과 확장성에서 그 가치를 입증합니다. 유니티 에디터와의 원활한 통합과 코드의 내재적 "깔끔함"은 부정할 수 없는 장점입니다.
 
@@ -247,7 +460,18 @@ GameObject Component는 컴포넌트 간 상호 작용에서 행동이 발생하
 
 아니요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 패턴은 주의 깊은 계획, Unity에 대한 심층적인 이해 및 정교한 종속성 관리를 필요로 합니다. 짜증나는 버그 발생과 혜택 대비 비용이 높다는 이유 때문에 많은 개발자들이 이를 사용하지 않는 것일 수 있습니다.
 
@@ -257,8 +481,19 @@ GameObject Component는 컴포넌트 간 상호 작용에서 행동이 발생하
 
 또는 해당 패턴과 스파게티 패턴의 전체 소스 코드를 github에서 확인할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-그것에 대해 더 나은 해결책이 존재하는지에 대해 고민하게 만듭니다. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+그것에 대해 더 나은 해결책이 존재하는지에 대해 고민하게 만듭니다.
 
 Scriptable Object Pattern에 대하여 자세히 살펴보고 리팩터링할 때 발견할 것입니다.

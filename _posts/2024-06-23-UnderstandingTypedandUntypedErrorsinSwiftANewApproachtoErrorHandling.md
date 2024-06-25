@@ -3,13 +3,12 @@ title: "Swift에서 Typed 오류와 Untyped 오류 이해하기 새로운 에러
 description: ""
 coverImage: "/assets/img/2024-06-23-UnderstandingTypedandUntypedErrorsinSwiftANewApproachtoErrorHandling_0.png"
 date: 2024-06-23 23:35
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-UnderstandingTypedandUntypedErrorsinSwiftANewApproachtoErrorHandling_0.png
 tag: Tech
 originalTitle: "Understanding Typed and Untyped Errors in Swift: A New Approach to Error Handling"
 link: "https://medium.com/@alibarac/understanding-typed-and-untyped-errors-in-swift-a-new-approach-to-error-handling-d87961d4608a"
 ---
-
 
 안녕하세요, Swift 개발자 여러분! 오늘은 우리의 일상 코딩 생활에서 매우 중요한 주제에 대해 이야기를 나누고 싶어요: 에러 처리입니다. 최근 WWDC 2024에서 Apple이 Swift에서 "타입드 에러"라 불리는 새로운 에러 처리 방법을 소개했어요. 따라서, 우리가 언타입드와 타입드 에러가 무엇인지, 그들이 어떻게 작동하는지, 그리고 왜 사용하고 싶을지 알아보도록 하겠습니다.
 
@@ -43,7 +42,18 @@ do {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 이곳에서 무슨 일이 일어나고 있나요:
 
@@ -55,7 +65,18 @@ do {
 
 자, 이제 이 새롭고 멋진 기능인 typed errors에 대해 이야기해보겠습니다. WWDC 2024에서 소개된 이 기능은 함수가 throw할 수 있는 오류의 정확한 유형을 지정할 수 있게 해줍니다. 이를 통해 오류 처리를 더 정확하고 유형 안전하게 만들어줍니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 열거자 ParseError: 오류 {
@@ -85,7 +106,18 @@ do {
 
 # Any 및 Never 오류 유형
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 타입 애너효메이션을 사용하면 Error 및 Never를 지원하여 더 많은 유연성을 제공합니다.
 
@@ -111,7 +143,18 @@ func parseValue(from input: String) throws(Never) -> Int {
 - throws(any Error): 함수는 Error 프로토콜을 준수하는 모든 오류를 던질 수 있습니다.
 - throws(Never): 함수는 오류를 던지지 않으며 throws 키워드가 기술적으로 필요하지만 오류를 던지지 않는다는 것을 명시적으로 나타낼 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 마무리
 

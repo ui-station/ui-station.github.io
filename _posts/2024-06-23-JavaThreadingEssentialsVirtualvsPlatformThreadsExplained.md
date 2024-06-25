@@ -3,13 +3,12 @@ title: "자바 스레딩 필수 버추얼 스레드와 플랫폼 스레드 비�
 description: ""
 coverImage: "/assets/img/2024-06-23-JavaThreadingEssentialsVirtualvsPlatformThreadsExplained_0.png"
 date: 2024-06-23 20:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-JavaThreadingEssentialsVirtualvsPlatformThreadsExplained_0.png
 tag: Tech
 originalTitle: "Java Threading Essentials: Virtual vs. Platform Threads Explained"
 link: "https://medium.com/stackademic/java-threading-essentials-virtual-vs-platform-threads-explained-32365d8f92be"
 ---
-
 
 이 기사에서는 쓰레드와 "가상 쓰레드"라고 불리는 최근 기능에 대해 알아볼 것입니다. 이 플랫폼 쓰레드와 가상 쓰레드가 어떻게 성격이 다르며 어떻게 애플리케이션의 성능 향상에 기여하는지에 대해 알아보겠습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/stackademic/java-threading-essentials-virtual-vs-platf
 
 외부 API를 호출하거나 데이터베이스 상호작용과 같은 시나리오를 살펴보고 실행 중인 쓰레드 수명주기를 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 메모리에 생성되고 서비스를 제공할 수 있는 스레드입니다.
 - 요청이 접근하면 스레드 중 하나에 매핑되어 외부 API를 호출하거나 데이터베이스 쿼리를 실행합니다.
@@ -32,7 +42,18 @@ link: "https://medium.com/stackademic/java-threading-essentials-virtual-vs-platf
 
 Java 19 이전에는 스레드를 생성하는 표준 방법 또는 존재하는 스레드가 Native Threads 또는 Platform Threads로 불립니다. 이 아키텍쳐 스타일에서 Platform 스레드와 OS 스레드 사이에 1:1 매핑이 있습니다. 이는 운영 체제 스레드가 완료될때까지 기다리기만 하고 아무 것도하지 않아서 미사용 상태이며 이를 무겁고 비싸게 만듭니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 가상 스레드:
 
@@ -42,7 +63,18 @@ Java 19 이전에는 스레드를 생성하는 표준 방법 또는 존재하는
 
 ![가상 vs 플랫폼 스레드](/assets/img/2024-06-23-JavaThreadingEssentialsVirtualvsPlatformThreadsExplained_2.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 가상 스레드의 장점 Platform 스레드 대비
 
@@ -52,7 +84,18 @@ Java 19 이전에는 스레드를 생성하는 표준 방법 또는 존재하는
 
 게다가, 가상 스레드는 CPU 이용률을 향상시켜줍니다. 기존의 스레드 모델에서는 많은 수의 스레드 사이의 관리와 컨텍스트 스위칭으로 많은 CPU 시간이 소비될 수 있습니다. 가상 스레드는 컨텍스트 스위칭과 관련된 오버헤드를 줄여 동시 작업을 효율적으로 실행할 수 있도록 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 실용적인 방법:
 
@@ -104,10 +147,22 @@ public class PlatformThreadDemo {
 ```
 
 위 예제는 플랫폼 스레드를 생성하는 두 가지 방법을 보여줍니다.
+
 1. Thread 생성자를 사용하여 람다 런너블을 전달하는 방법
 2. Thread의 빌더 메서드 ofPlatform()을 사용하는 방법
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 더 복잡한 코딩을 보고 가상 스레드를 동시에 생성하는 방법을 알아보겠습니다. DailyRoutineWorkflow.java 파일을 생성하고 아래 코드를 복사하세요.
 
@@ -251,7 +306,18 @@ public class DailyRoutineWorkflowUsingExecutors {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 결과에 대한 심층 분석
 
@@ -261,7 +327,18 @@ public class DailyRoutineWorkflowUsingExecutors {
 
 정보 로그를 주의 깊게 살펴보면 "|" (파이프 기호)의 양쪽에 두 섹션이 표시됩니다. 첫 번째 섹션은 VirtualThread[#26]/runnable@ForkJoinPool-1-worker-3와 같이 가상 스레드에 대한 정보를 설명합니다. 이 섹션은 가상 스레드[#26]가 platform 스레드인 runnable@ForkJoinPool-1-worker-3에 매핑됨을 나타내며, 다른 섹션은 로그의 정보 부분입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 스레드 로컬 및 가상 스레드:
 
@@ -271,7 +348,18 @@ public class DailyRoutineWorkflowUsingExecutors {
 
 가상 스레드는 수백만 개로 생성될 수 있기 때문에 ThreadLocal의 사용은 메모리 누수를 발생시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```java
 package org.vaslabs;
@@ -325,8 +413,18 @@ public class ThreadLocalDemo {
 
 그러나 이 새로운 맥락에서 ThreadLocal 사용의 복잡성은 신중한 고려가 필요함을 강조합니다. ThreadLocal은 기존 스레딩에서 스레드별 데이터를 유지하는 강력한 도구로 남아 있지만, 가상 스레드에서는 더 복잡해지므로 상태 및 컨텍스트 관리를 위한 대체 전략이 필요합니다. 이러한 개념들은 Java의 동시성 패러다임에서 중대한 변화를 나타내며, 개발자들이 보다 반응성이 뛰어나고 확장 가능하며 효율적인 애플리케이션을 구축할 수 있는 새로운 기회를 제공합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 스택아데믹
 

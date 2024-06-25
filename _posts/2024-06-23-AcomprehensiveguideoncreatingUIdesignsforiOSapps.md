@@ -3,14 +3,12 @@ title: "iOS 앱을 위한 UI 디자인 완벽 가이드"
 description: ""
 coverImage: "/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_0.png"
 date: 2024-06-23 23:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_0.png
 tag: Tech
 originalTitle: "A comprehensive guide on creating UI designs for iOS apps"
 link: "https://medium.com/user-experience-design-1/guide-on-creating-ui-design-for-ios-apps-5bed644b1667"
 ---
-
-
 
 <img src="/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_0.png" />
 
@@ -25,8 +23,18 @@ iOS 앱을 위한 UI 디자인을 만드는 포괄적인 가이드를 공유하�
 - 컴포넌트
 - 전환
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 레이아웃과 그리드
 
@@ -36,7 +44,18 @@ Figma에서 iPhone용 다양한 아트보드 크기를 찾을 수 있고, 디자
 
 ![iPhone 14 Pro Layout](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_1.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ☝️ 버튼 및 컨트롤과 같은 UI 요소는 상태 표시줄과 홈 인디케이터 영역에 가려지지 않는 영역에만 배치해야 합니다. 이렇게 하면 iOS 시스템 요소와의 상호 작용에 방해가 되지 않습니다.
 
@@ -48,7 +67,18 @@ Figma에서 iPhone용 다양한 아트보드 크기를 찾을 수 있고, 디자
 - 좌우 여백을 16포인트의 최소 크기로 정의하세요. 이것은 iOS의 표준입니다.
 - 필요에 맞게 최적의 열 수를 정의하세요. 16포인트의 거터 크기가 가장 일반적이지만, 더 작거나 큰 거터 크기를 정의해야 한다면, 스트레치 그리드에서는 거터 크기가 열 너비에 영향을 미치므로, 거터 크기가 클수록 열 너비가 작아집니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 👉 이 멋진 기사를 확인해보세요! 여기서 모바일 그리드에 대해 더 배울 수 있어요.
 
@@ -58,7 +88,18 @@ Figma에서 iPhone용 다양한 아트보드 크기를 찾을 수 있고, 디자
 
 iOS에는 활력, 접근성 설정 및 외형 모드에 자동으로 적응되는 시스템 및 의미론적 색상이 정의되어 있어요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 시멘틱 컬러는 목적을 설명하는 이름을 가진 색상입니다. 각 시멘틱 컬러에는 기본, 보조, 제3의 색상 변형이 있어서 등급에 따라 콘텐츠를 구분하는 데 사용됩니다. 예를 들어, 기본 배경에 대한 사용자 정의 색상을 정의하려면 색상 이름을 앱은 브랜드/앱의 약어이며 PrimaryBackground는 색상의 시멘틱 이름입니다. 사용자 지정 색상의 이름은 iOS 시스템 색상과 같아서는 안 됨을 언급할 가치가 있습니다.
 
@@ -68,7 +109,18 @@ iOS에는 활력, 접근성 설정 및 외형 모드에 자동으로 적응되�
 
 ## 기본 색상
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 앱의 개성을 전달하는 데 기본적인 색상이 중요합니다. 이것은 팔레트의 기본 색상입니다. 대부분의 화면과 구성 요소에서 자주 표시되는 이 색상은 주요 작업을 나타내는 데 사용됩니다. 특정 UI 요소를 강조하거나 탭, 누름과 같은 상호 작용을 위한 UI 상태를 나타내는 데 주요 색상 쉐이드를 사용할 수도 있습니다.
 
@@ -78,7 +130,18 @@ Figma에서 색상 쉐이드를 생성하려면 이 플러그인을 사용할 �
 
 ![이미지](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_5.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 보조 및 강조 색상
 
@@ -88,7 +151,18 @@ Figma에서 색상 쉐이드를 생성하려면 이 플러그인을 사용할 �
 
 보조 색상 외에도 "강조" 색상 용어를 만날 수 있습니다. 강조 색상은 중요한 조치 및 컨트롤을 강조하는 데 사용되는 보조 색상의 일부로 고려할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 강조색은 다음에 가장 적합합니다:
 
@@ -101,7 +175,18 @@ Figma에서 색상 쉐이드를 생성하려면 이 플러그인을 사용할 �
 
 ![이미지](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 채우기 색상
 
@@ -113,7 +198,18 @@ iOS 채우기 색상 변형:
 - 보조 채우기 색상 — 스위치의 배경과 같은 중간 크기의 모양에 사용됩니다.
 - 제 3위 채우기 색상 — 입력 필드, 검색 바 또는 버튼과 같은 큰 모양에 사용됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![image 8](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_8.png)
 
@@ -123,7 +219,18 @@ iOS 채우기 색상 변형:
 
 iOS는 콘텐츠 및 요소의 그룹화를 구분하기 위해 배경색상의 색상 변형을 정의합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 전반적인 뷰의 기본적인 배경을 위한 기본(primary).
 - 전반적인 뷰 내에서 콘텐츠나 요소들을 그룹화하기 위한 보조(secondary).
@@ -135,7 +242,18 @@ iOS는 콘텐츠 및 요소의 그룹화를 구분하기 위해 배경색상의 
 
 ## 레이블 색상
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 라벨 색상에는 주요, 보조, 제 3 및 제 4 등급의 색상 변형이 있습니다. 중요도 수준에 따라 색상은 해당 투명도 수준을 갖습니다.
 
@@ -147,7 +265,18 @@ iOS는 콘텐츠 및 요소의 그룹화를 구분하기 위해 배경색상의 
 
 ![이미지](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_13.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 구분선 색상
 
@@ -157,7 +286,18 @@ iOS에서는 불투명도 수준을 가진 Separator 및 불투명 선 (일반 �
 
 ![image](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_14.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_15.png" />
 
@@ -167,7 +307,18 @@ iOS에서는 불투명도 수준을 가진 Separator 및 불투명 선 (일반 �
 
 기능적인 색상에 대한 지침:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 성공 상태: 성공 상태를 나타내기 위해 녹색이 자주 사용됩니다. 이는 작업이 성공적으로 완료되었거나 양식이 올바르게 작성되었음을 나타내는 데 사용될 수 있습니다.
 - 경고 상태: 노랑 또는 주황색이 경고 상태를 나타내는 데 흔히 사용됩니다. 이는 사용자에게 잠재적인 문제를 경고하거나 필수 조치가 아직 완료되지 않았음을 나타내는 데 사용될 수 있습니다.
@@ -179,7 +330,18 @@ iOS에서는 불투명도 수준을 가진 Separator 및 불투명 선 (일반 �
 
 ## 색상 관리
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 많은 Figma 플러그인이 있어서 색상 관리에 도움이 되는데요:
 
@@ -193,7 +355,18 @@ iOS에서는 불투명도 수준을 가진 Separator 및 불투명 선 (일반 �
 Apple은 San Francisco와 New York과 같은 내장된 글꼴 모음을 가지고 있습니다.
 San Francisco에는 SF Pro를 포함한 여러 가지 변형이 있으며, SF Pro는 해당 글꼴의 표준 버전입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원하는 경우 사용자 정의 글꼴을 계속 사용할 수 있습니다. 몇 가지 고려해야 할 사항이 있습니다:
 
@@ -205,7 +378,18 @@ Google Fonts를 사용하여 다른 글꼴 조합을 미리보기하는 것을 �
 
 ## 글꼴 스타일 및 글꼴 크기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다양한 글꼴 크기와 굵기를 사용하여 제목, 헤딩, 본문 텍스트 및 캡션이란 텍스트 스타일을 구분합니다. 기본적으로 iOS에는 Large Title, Title 1, Title 2 등과 같은 미리 정의된 텍스트 스타일이 있습니다. 이러한 텍스트 스타일마다 기본 글꼴 크기와 다이나믹 타입 크기가 부여됩니다.
 
@@ -215,7 +399,18 @@ Google Fonts를 사용하여 다른 글꼴 조합을 미리보기하는 것을 �
 
 ![표](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_18.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 텍스트 레이아웃
 
@@ -225,7 +420,18 @@ Google Fonts를 사용하여 다른 글꼴 조합을 미리보기하는 것을 �
 
 리딩은 텍스트 줄 사이의 간격을 말합니다. Figma와 CSS에서는 이 속성을 "line-height"라고 합니다. 줄 간격을 늘리거나 줄이는 것은 가독성을 향상시키는 데 도움이 될 수 있습니다. 리딩은 텍스트 기준선부터 측정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 👉 추적 및 리딩에 대한 몇 가지 팁:
 
@@ -235,7 +441,18 @@ Google Fonts를 사용하여 다른 글꼴 조합을 미리보기하는 것을 �
 
 - 좋은 가독성을 유지하려면 폰트 크기에 대한 추적 값을 너무 높거나 너무 낮게 사용하는 것을 피하는 것이 좋습니다. 시스템 글꼴의 최적 추적 값을 설명하는 Apple의 추적 테이블을 참고할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_20.png" />
 
@@ -245,7 +462,18 @@ Google Fonts를 사용하여 다른 글꼴 조합을 미리보기하는 것을 �
 
 iOS에는 iOS 앱에서 사용할 수 있는 벡터 아이콘(SF Symbols) 세트가 제공됩니다. 여기 SF Symbols를 찾을 수 있는 Figma 파일이 있습니다. 또한 SF Symbols를 편집하고 사용자 정의하는 방법에 대한 상세한 비디오도 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 앱에서 아이콘을 사용할 때 몇 가지 팁:
 
@@ -255,8 +483,18 @@ iOS 앱에서 아이콘을 사용할 때 몇 가지 팁:
 
 - 아이콘의 명암비를 테스트하세요. W3C에 따르면 아이콘과 같은 "그래픽 객체"는 적어도 3:1의 명암비를 가져야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_22.png)
 
@@ -268,8 +506,18 @@ iOS 앱에서 아이콘을 사용할 때 몇 가지 팁:
 - 아이콘은 가독성이 있고 탭하기 쉬워야 합니다.
 - 일반 탭 바 아이콘의 크기는 적어도 25x25pt이어야 하며, 내비게이션 바의 아이콘은 20x20 또는 30x30pt가 될 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 iOS 아이콘에 대한 자세한 정보는 Apple의 문서를 확인해보세요.
 
@@ -279,7 +527,18 @@ iOS에는 다양한 종류의 구성 요소 라이브러리가 있습니다. 이
 
 ## 목록과 표
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아이템의 컬렉션을 표시하는 방법으로 목록과 표가 있습니다. 이 아이템들은 텍스트, 아이콘/이미지 또는 텍스트와 선택 컨트롤의 조합일 수 있습니다.
 
@@ -289,7 +548,18 @@ iOS에는 다양한 종류의 구성 요소 라이브러리가 있습니다. 이
 
 최선의 방법들
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 배경 전체에 다른 색상을 사용하여 배경과 콘텐츠 그룹 간의 시각적 대조를 만드세요.
 
@@ -299,7 +569,18 @@ iOS에는 다양한 종류의 구성 요소 라이브러리가 있습니다. 이
 
 ![Image](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_27.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 마크다운 형식으로 테이블 태그를 변경해주세요.
 
@@ -311,13 +592,35 @@ iOS에는 다양한 종류의 구성 요소 라이브러리가 있습니다. 이
 
 탭 바는 앱 내에서 다른 뷰로 전환할 수 있게 해주는 전역 탐색 컨트롤입니다. 각 탭은 의미 있고 설명적이어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **최상의 방법**
 
 - "Home" 또는 "Overview"와 같은 단일 탭에 관련 없는 콘텐츠를 그룹화하는 것을 피하세요. 예를 들어, 아래 이미지는 "Home" 탭이 "검색", "즐겨찾기", "친구"와 같은 관련 없는 기능을 결합한 것을 보여줍니다. 이는 사용자가 필요한 것을 찾기 어렵게 만듭니다. 이러한 문제를 해결하기 위해 핵심 기능과 섹션을 식별하여 콘텐츠를 각각 다른 탭으로 분리하고 관련된 콘텐츠만 그룹화하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 테이블 태그를 Markdown 형식으로 변경해주세요.
 
@@ -327,7 +630,18 @@ iOS에는 다양한 종류의 구성 요소 라이브러리가 있습니다. 이
 
 내비게이션 바는 앱의 계층 구조를 통해 탐색할 수 있는 탐색 컨트롤입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_32.png)
 
@@ -337,7 +651,18 @@ iOS에는 다양한 종류의 구성 요소 라이브러리가 있습니다. 이
 
 ![이미지](/assets/img/2024-06-23-AcomprehensiveguideoncreatingUIdesignsforiOSapps_33.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 네비게이션 바와 필터, 세그먼트 컨트롤 등과 같은 다른 요소 간에 충분한 대조가 있는지 확인합니다.
 
@@ -347,7 +672,18 @@ iOS에는 다양한 종류의 구성 요소 라이브러리가 있습니다. 이
 
 전환은 한 뷰 또는 뷰 세트의 외관을 다른 것으로 변경하는 방법입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*-TfC1w0q9QTAExsVkopbGg.gif" />
 
@@ -360,7 +696,18 @@ iOS는 일련의 표준 전환 스타일을 제공합니다. 사용자가 적응
 - 사용자의 주의를 산만하게 하는 너무 빠르거나 너무 느린 전환을 사용하지 마세요.
 - 코드 수준에서, 사용자 지정 전환은 "모션 줄이기"가 꺼져 있을 때 접근성 설정에 응답할 수 있도록 해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 코드 없이 사용자 정의 전환을 만들 수 있는 몇 가지 도구:
 
@@ -372,8 +719,19 @@ iOS는 일련의 표준 전환 스타일을 제공합니다. 사용자가 적응
 
 이 글이 도움이 되었기를 바랍니다. 주제에 대한 피드백이나 제안이 있으면 기쁠 것입니다!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
-👉 새 YouTube 채널 구독해보세요! UX/UI 디자인 통찰과 팁에 관한 영상을 만나보세요. 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+👉 새 YouTube 채널 구독해보세요! UX/UI 디자인 통찰과 팁에 관한 영상을 만나보세요.
 
 LinkedIn에서 연락 주시거나 Twitter에서 팔로우해주세요. 감사합니다!

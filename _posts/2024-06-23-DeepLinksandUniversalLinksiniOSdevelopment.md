@@ -3,13 +3,12 @@ title: "iOS 개발에서 Deep Link와 Universal Link 차이점 이해하기"
 description: ""
 coverImage: "/assets/img/2024-06-23-DeepLinksandUniversalLinksiniOSdevelopment_0.png"
 date: 2024-06-23 21:27
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-DeepLinksandUniversalLinksiniOSdevelopment_0.png
 tag: Tech
 originalTitle: "Deep Links and Universal Links in iOS development"
 link: "https://medium.com/@m.majchrzycki/deep-links-and-universal-links-in-ios-development-f6d09f4cfcf6"
 ---
-
 
 # 이것은 인기 있는 iOS 인터뷰 질문입니다: Swift에서 Deep Linking과 Universal Linking 간의 주요 차이점을 설명해주세요. 차이를 알고 있는 것이 좋습니다.
 
@@ -19,7 +18,18 @@ Deep Link와 Universal Link를 사용하면 이메일(비밀번호 변경 링크
 
 앱 내에서 사용할 수 있는 추가 데이터를 포함할 수 있습니다. 링크를 통해 사용자에게 제공될 특정 뷰를 시작할 수 있습니다. 로그인, 비밀번호 변경 및 기타 작업을 자동화하는 데 매우 유용할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 물론 딥 링크와 유니버설 링크 모두 제한 사항과 취약점이 있습니다.
 
@@ -29,7 +39,18 @@ Deep Link와 Universal Link를 사용하면 이메일(비밀번호 변경 링크
 
 백엔드 변경이나 새로운 엔드포인트 매핑이 필요하지 않습니다. 앱에 딥 링크를 추가하는 것은 시간이 많이 소요되지 않습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 사용 허가를 요청하거나 Android에서 문제가 발생하는 것과 같은 단점도 있습니다. Deep link는 주로 iOS용으로 설계되었기 때문에 이러한 문제가 발생할 수 있습니다.
 
@@ -39,7 +60,18 @@ Deep Link와 Universal Link를 사용하면 이메일(비밀번호 변경 링크
 
 위 내용을 염두에 두며, Swift 앱에서 Deep link를 구현하는 방법은 무엇인가요?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-DeepLinksandUniversalLinksiniOSdevelopment_0.png" />
 
@@ -49,8 +81,18 @@ Deep Link와 Universal Link를 사용하면 이메일(비밀번호 변경 링크
 
 다음과 같이:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 com.myAppAddress://reset_password com.myAppAddress://open_custom_view_controller
 
@@ -76,7 +118,18 @@ func application(_ app: UIApplication, open url: URL,
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 URL을 출력하면 다음과 같이 나옵니다:
 
@@ -86,11 +139,33 @@ URL 스키마를 통해 매개변수를 추가할 수도 있습니다 (위의 �
 
 이 능력 덕분에 링크로부터 특정 정보를 가져올 수 있습니다. 예를 들어 비밀번호를 재설정하고 싶다면, 다음과 같은 링크가 될 것입니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 위의 표를 Markdown 형식으로 변경해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이제, 웹 사이트와 앱 간 협력을 처리하기 위해 Apple이 현재 홍보하는 유니버설 링크로 넘어갑시다. 이것들은 보안이 더 우수하지만 구현이 더 어렵습니다.
 
@@ -100,7 +175,18 @@ URL 스키마를 통해 매개변수를 추가할 수도 있습니다 (위의 �
 
 # 유니버설 링크: iOS 앱에 JSON 추가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Apple의 요구 사항으로 인해 JSON 파일을 작성해야합니다. 예를 들어:
 
@@ -123,7 +209,18 @@ Apple의 요구 사항으로 인해 JSON 파일을 작성해야합니다. 예를
 - 앱의 teamID,
 - 그리고 앱의 appID.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그러므로 teamID가 123456이고 appID가 com.myApp인 경우, JSON 파일에서 사용되는 결과는 123456.com.myApp가 될 것입니다.
 
@@ -133,7 +230,18 @@ paths 필드에서는 iOS 앱에서 처리될 경로를 추가할 수 있습니�
 
 먼저 프로젝트 설정에서 새로운 능력을 추가해야 합니다. Associated domains에 대해 이야기합니다. 활성화한 후에는 링크를 처리하는 URL을 추가해야 합니다. 예를 들어, app links:myApp.com과 같습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이 작업이 완료되면 Safari에서 URL 주소를 클릭하면 우리 앱이 시작됩니다.
 
@@ -155,7 +263,18 @@ public func application(_ application: UIApplication,
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # iOS에서의 깊고 범용적인 링크: 각주
 

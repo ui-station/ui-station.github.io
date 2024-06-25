@@ -3,13 +3,12 @@ title: "FastAPI와 MongoDB 소개 첫 걸음부터 시작하기"
 description: ""
 coverImage: "/assets/img/2024-06-23-IntrotoFastAPIandMongoDB_0.png"
 date: 2024-06-23 22:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-IntrotoFastAPIandMongoDB_0.png
 tag: Tech
 originalTitle: "Intro to FastAPI and MongoDB"
 link: "https://medium.com/@radesrdan/intro-to-fastapi-and-mongodb-cb2261333a08"
 ---
-
 
 이 튜토리얼에서는 FastAPI에 의존하는 간단한 파이썬 애플리케이션을 구축하는 방법을 배울 수 있습니다. 이 애플리케이션은 MongoDB로 요청을 보내는 기능을 갖추고 있습니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@radesrdan/intro-to-fastapi-and-mongodb-cb2261333a08"
 
 ## 사전 요구 사항
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 친구야, 기기에 다음 소프트웨어가 있는지 확인해주세요.
 
@@ -32,7 +42,18 @@ link: "https://medium.com/@radesrdan/intro-to-fastapi-and-mongodb-cb2261333a08"
 
 저장소를 복제(clone)하기 전에, 모든 선행 요구 사항이 충족되었는지 확인하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 git clone https://github.com/raduul/FastMongo.git
@@ -46,7 +67,18 @@ Docker Desktop > Settings > Resources > File Sharing > 원하는 위치 선택
 
 애플리케이션을 실행한 후, 복제한 저장소로 이동해서 다음 명령어를 실행하세요:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 docker compose -f deployment/docker-compose-fastapi.yaml up --build
@@ -58,8 +90,18 @@ docker compose -f deployment/docker-compose-fastapi.yaml up --build
 
 <img src="/assets/img/2024-06-23-IntrotoFastAPIandMongoDB_0.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이후에는 "실행" 버튼 아래에 요청 상태가 표시됩니다. 상태 코드 200은 데이터가 성공적으로 추가되었음을 나타냅니다!
 
@@ -72,7 +114,18 @@ docker compose -f deployment/docker-compose-fastapi.yaml up --build
 mongodb://root:example@localhost:27017/fast-api?authSource=admin
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-IntrotoFastAPIandMongoDB_2.png" />
 
@@ -82,7 +135,18 @@ mongodb://root:example@localhost:27017/fast-api?authSource=admin
 
 이 애플리케이션을 실행하는 데 필요한 코드는 매우 간단합니다! 세 개의 그룹으로 구성되어 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - FastAPI — 데이터를 전송하는 API Endpoint를 구축하는 데 사용됩니다.
 - MongoDB — FastAPI에서 전송된 데이터를 저장하는 데 사용됩니다.
@@ -94,7 +158,18 @@ mongodb://root:example@localhost:27017/fast-api?authSource=admin
 
 - 먼저 MongoDB 데이터베이스에 연결이 설정됩니다: (database.py)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 import logging
@@ -146,7 +221,18 @@ async def insert_sample_data(sample_data: dict, db=Depends(get_database)):
 
 ## MongoDB
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 MongoDB 구성은 PoC를 이해하기 쉽게 만들기 위해 간단하게 유지되었습니다. 따라서 구성은 순전히 기본 설정입니다. MongoDB의 두 가지 주요 파일은 "deployment/docker-compose-fastapi.yaml" 및 "deployment/init-mongo.js"입니다.
 
@@ -157,7 +243,18 @@ MongoDB 구성은 PoC를 이해하기 쉽게 만들기 위해 간단하게 유�
 
 Docker Compose은 이 PoC에서 사용되는 이미지 중 두 개를 실행하는 데 사용됩니다. 구성은 "deployment/docker-compose-fastapi.yaml"에서 찾을 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - fastapi 서비스는 루트에 위치한 Dockerfile을 참조하며 FastAPI 앱을 빌드하고 빌드된 후에 실행하는 방법에 대한 구성을 포함합니다.
 - mongo 서비스는 MongoDB 이미지를 참조합니다. "docker compose down" 후에도 데이터가 유지되도록 보장하기 위해 볼륨이 생성되어 데이터를 보관합니다. 사용 중인 특정 이미지는 OS/ARCH Amd64 및 Arm64와 호환됩니다.

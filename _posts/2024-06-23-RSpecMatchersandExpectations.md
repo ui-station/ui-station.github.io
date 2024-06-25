@@ -3,14 +3,12 @@ title: "RSpec 매처와 기대 설정 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-RSpecMatchersandExpectations_0.png"
 date: 2024-06-23 20:48
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-RSpecMatchersandExpectations_0.png
 tag: Tech
 originalTitle: "RSpec Matchers and Expectations"
 link: "https://medium.com/@patrykrogedu/rspec-matchers-and-expectations-99e0752b5639"
 ---
-
-
 
 ![이미지](/assets/img/2024-06-23-RSpecMatchersandExpectations_0.png)
 
@@ -20,8 +18,18 @@ link: "https://medium.com/@patrykrogedu/rspec-matchers-and-expectations-99e0752b
 
 RSpec의 expectations는 Ruby 웹 어플리케이션을 테스트하는 강력한 도구입니다. 전통적인 어설션과 달리 expectations는 조합성, 자동 부정, 가독성 향상 및 더 유용한 에러 메시지를 제공합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 기대하는 요소
 
@@ -33,13 +41,25 @@ RSpec의 expectations는 Ruby 웹 어플리케이션을 테스트하는 강력�
 
 여기 예시가 있습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 주제
+
 subject = Course.new(name: "루비 입문")
 
 # 매처 및 사용자 정의 실패 메시지를 사용한 예상
+
 expect(subject.name).to eq("루비 입문"), "과정 이름이 일치해야 함"
 
 # 매처 구성
@@ -48,8 +68,18 @@ expect(subject.name).to eq("루비 입문"), "과정 이름이 일치해야 함"
 
 - 다른 매처에 매처 전달하기:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 expect(subject.lessons).to start_with(an_object_having_attributes(title: "Ruby Basics"))
@@ -67,7 +97,18 @@ expect(subject.students).to include(expected_student)
 
 3. Combining matchers with logical operators:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 expect(subject.grading_system).to be_present & match(/letter|numeric/)
@@ -82,7 +123,18 @@ expect(subject.grading_system).to be_present & match(/letter|numeric/)
 - 더 나은 오류 메시지: 테스트가 실패할 때 RSpec은 디버깅을 더 쉽게 만드는 자세한 메시지를 제공합니다.
 - 자동 부정: .not_to 또는 .to_not를 사용하면 부정이 더 직관적이며 테스트의 표현력을 향상시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 생성된 예제 설명
 
@@ -99,22 +151,42 @@ end
 
 출력은 다음과 같이 표시됩니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Course#enrolled_students
-  should have attributes enrolled_students: []
-  should not have attributes enrolled_students: [#<name: "John Doe">]
+should have attributes enrolled_students: []
+should not have attributes enrolled_students: [#<name: "John Doe">]
 
-While generated descriptions are convenient, use them judiciously. They can be misleading if your setup code changes, and one-liner specs can sometimes 
+While generated descriptions are convenient, use them judiciously. They can be misleading if your setup code changes, and one-liner specs can sometimes
 be harder to read and maintain.
 
 # Exploring RSpec’s Matchers for Your App
 
 RSpec offers a wide range of built-in matchers to help you write expressive and robust tests.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 기본 일치자
 
@@ -127,7 +199,18 @@ expect(student.name).to eq("John Doe")
 
 # 컬렉션 일치자
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 RSpec은 배열이나 해시와 같은 컬렉션과 함께 작업하는 여러 매처를 제공합니다. 특정 요소가 컬렉션에 포함되어 있는지 확인하려면 include를 사용할 수 있습니다:
 
@@ -146,7 +229,18 @@ match 매처는 깊게 중첩된 데이터 구조에 유용하며, 배열 요소
 
 # 블록 매처
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가끔은 코드 블록의 동작을 테스트해야 할 때가 있습니다. 예를 들어, 예외가 발생하는지 확인하거나 메소드가 블록에 제어를 양보하는지 확인하는 것입니다. 이런 시나리오에는 RSpec의 블록 매처들이 유용합니다.
 
@@ -163,8 +257,18 @@ expect { |block| course.lessons.each(&block) }.to yield_successive_args(
 
 RSpec의 장점 중 하나는 매처들을 조합할 수 있다는 것입니다. 이를 통해 복잡한 동작을 정확하게 지정할 수 있습니다. 논리 연산자를 사용하여 매처를 결합하거나, 하나의 매처를 다른 매처로 전달하거나, 매처를 데이터 구조 안에 포함시킬 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 expect(course.lessons).to all(
@@ -179,7 +283,17 @@ RSpec expectations은 조합성, 가독성 및 자세한 오류 메시지를 제
 
 기본 데이터 유형의 경우 등가성 및 진실성 matcher를 사용하세요. include, match 및 contain_exactly로 컬렉션을 확인하세요. 예외와 블록 matcher를 사용하여 코드 동작을 테스트하세요.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일치자를 중첩하여 배치하거나 데이터 구조에 삽입하여 논리 연산자를 사용하여 작성하세요. 엄격한 동등성보다는 유연한 일치자를 선택하세요. 가독성을 높이기 위해 별칭 및 사용자 정의 메시지를 사용하세요.

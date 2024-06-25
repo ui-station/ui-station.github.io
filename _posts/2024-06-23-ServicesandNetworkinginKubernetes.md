@@ -3,13 +3,12 @@ title: "Kubernetes에서 서비스 및 네트워킹 이해하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-ServicesandNetworkinginKubernetes_0.png"
 date: 2024-06-23 23:06
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-ServicesandNetworkinginKubernetes_0.png
 tag: Tech
 originalTitle: "Services and Networking in Kubernetes"
 link: "https://medium.com/@teva15/services-and-networking-in-kubernetes-ed23509ee4b4"
 ---
-
 
 ## 쿠버네티스 기본 개념 — 파트 (3.a)
 
@@ -19,8 +18,18 @@ link: "https://medium.com/@teva15/services-and-networking-in-kubernetes-ed23509e
 
 ## 튜토리얼 흐름:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-ServicesandNetworkinginKubernetes_0.png" />
 
@@ -30,7 +39,18 @@ link: "https://medium.com/@teva15/services-and-networking-in-kubernetes-ed23509e
 
 ## 쿠버네티스 서비스란?
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Kubernetes에서 서비스는 포드의 논리적 집합과 해당 포드에 액세스하는 정책을 정의하는 추상화입니다. 서비스를 통해 응용 프로그램의 서로 다른 부분 간의 통신 및 발견이 가능해지며, 확장 가능하고 견고한 아키텍처를 제공할 수 있습니다.
 
@@ -42,7 +62,18 @@ Kubernetes에서 서비스는 포드의 논리적 집합과 해당 포드에 액
 
 ## NodePort 서비스란 무엇이며 예시를 들어 설명해주세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 NodePort은 클러스터의 각 노드에서 특정 포트로 서비스를 노출하는 서비스 유형입니다.
 
@@ -52,7 +83,18 @@ NodePort는 클러스터 내부에서 실행 중인 웹 응용 프로그램에 �
 
 NodePort 서비스에 대한 주요 포인트:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 외부 액세스: NodePort는 각 노드의 포트를 서비스의 포트에 매핑하여 서비스를 외부에서 액세스할 수 있게 합니다.
 - 클러스터 IP: NodePort 서비스에는 클러스터 내에서 ClusterIP를 통해 내부적으로 액세스할 수 있는 기능도 있습니다.
@@ -65,7 +107,18 @@ NodePort 서비스에 대한 주요 포인트:
 
 이 예제의 구성 요소를 자세히 살펴보겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - metadata: 서비스의 이름을 지정합니다.
 - spec.selector: 서비스가 대상이 될 파드를 결정하는 셀렉터를 정의합니다. 이 경우에는 app: my-app 라벨이 있는 파드를 대상으로 합니다.
@@ -79,8 +132,18 @@ NodePort 서비스에 대한 주요 포인트:
 
 여러 노드에 파드가 있는 경우
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-ServicesandNetworkinginKubernetes_4.png)
 
@@ -90,8 +153,18 @@ curl http://192.169.1.4:30008 또는 curl http://192.169.1.6:30008 또는 curl h
 
 ClusterIP 서비스는 내부 IP 주소를 노출하고 클러스터 내에서만 접근할 수 있도록 만드는 종류의 서비스입니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 이는 클러스터 외부에서 해당 서비스에 접근할 수 없음을 의미합니다.
 
@@ -104,10 +177,20 @@ ClusterIP 서비스에 대한 주요 포인트:
 - 로드 밸런싱: ClusterIP 서비스는 해당 서비스와 관련된 파드 간의 기본적인 로드 밸런싱을 제공합니다. 들어오는 트래픽은 선택된 파드 사이에 분산됩니다.
 - 클러스터 내 통신: 이러한 서비스는 같은 쿠버네티스 클러스터 내에서 실행되는 응용 프로그램 또는 마이크로서비스의 서로 다른 부분 간 통신에 적합합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 Markdown 형식으로 변경하영 표시한 것입니다.
-
 
 ![ClusterIP implementation](/assets/img/2024-06-23-ServicesandNetworkinginKubernetes_5.png)
 
@@ -117,8 +200,18 @@ Example Sample ClusterIP implementation.
 
 This YAML defines a ClusterIP service named “backend-service” that selects pods labeled with “app: backend.”
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서비스는 포트 8080에서 수신하고 해당 포트 8080으로 팟으로 트래픽을 전달합니다.
 
@@ -128,7 +221,18 @@ This YAML defines a ClusterIP service named “backend-service” that selects p
 
 이 예시의 구성 요소를 살펴보겠습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - metadata: 서비스의 이름을 지정합니다.
 - spec.selector: 서비스가 대상이 되는 팟을 결정하는 셀렉터를 정의합니다. 이 경우, app: frontend 라벨을 가진 팟을 대상으로 합니다.
@@ -144,7 +248,18 @@ Kubernetes(K8s)에서 로드 밸런서는 서비스를 외부 세계에 노출�
 
 이 로드 밸런서는 들어오는 네트워크 트래픽을 여러 노드에 분산하여 응용 프로그램의 고가용성과 신뢰성을 보장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 로드밸런서 서비스에 대한 주요 포인트:
 
@@ -157,8 +272,18 @@ Kubernetes(K8s)에서 로드 밸런서는 서비스를 외부 세계에 노출�
 
 이 예에서는 세 개의 백엔드 팟 복제본을 만드는 간단한 배포(backend-deployment)를 정의합니다. 이 팟은 선택기 일치를 위해 app: backend로 레이블이 지정됩니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-ServicesandNetworkinginKubernetes_10.png)
 
@@ -168,8 +293,18 @@ Kubernetes(K8s)에서 로드 밸런서는 서비스를 외부 세계에 노출�
 
 ![이미지](/assets/img/2024-06-23-ServicesandNetworkinginKubernetes_11.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 서비스에 액세스하는 방법: 로드 밸런서 서비스가 프로비저닝되면 외부 IP 주소를 사용하여 서비스에 외부에서 액세스할 수 있습니다.
 
@@ -179,7 +314,18 @@ Kubernetes(K8s)에서 로드 밸런서는 서비스를 외부 세계에 노출�
 
 "EXTERNAL-IP" 필드를 찾아 할당된 후에 서비스에 액세스할 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![이미지](/assets/img/2024-06-23-ServicesandNetworkinginKubernetes_13.png)
 

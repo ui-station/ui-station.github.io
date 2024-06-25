@@ -3,13 +3,12 @@ title: "SwiftUI에서 다양한 그리드 뷰를 만드는 방법 종합 가이�
 description: ""
 coverImage: "/assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_0.png"
 date: 2024-06-23 23:53
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_0.png
 tag: Tech
 originalTitle: "Various Kinds of Grid Views in SwiftUI: A Comprehensive Guide"
 link: "https://medium.com/@jakir/various-kind-of-grid-views-in-swiftui-a-comprehensive-guide-5650511937a0"
 ---
-
 
 # LazyVGrid 그리고 LazyHGrid
 
@@ -19,20 +18,31 @@ LazyVGrid
 
 그리드를 표시하는 가장 좋은 방법 중 하나는 적응형 열을 사용하는 것입니다. 화면 크기에 따라 자동으로 자식 요소를 적응시킵니다. SwiftUI를 사용하여 반응형 그리드 뷰를 생성하는 예시는 다음과 같습니다:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import SwiftUI
 
 struct ContentView: View {
-    
+
     private var data  = Array(1...20)
     private let adaptiveColumn = [
         GridItem(.adaptive(minimum: 150))
     ]
-    
+
     var body: some View {
-        
+
         ScrollView{
             LazyVGrid(columns: adaptiveColumn, spacing: 20) {
                 ForEach(data, id: \.self) { item in
@@ -44,7 +54,7 @@ struct ContentView: View {
                         .font(.title)
                 }
             }
-            
+
         } .padding()
     }
 }
@@ -60,8 +70,18 @@ struct ContentView: View {
 
 .adaptive(minimum: 150) 으로 설정하면 가능한 한 많은 항목을 행당 씩, 각각 150포인트의 최소 크기를 사용하여 그리드에 맞게 설정하고 있다는 뜻입니다. 다양한 화면 사이즈에서 각 열에 표시되는 항목 수가 다르게 표시됩니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 LazyVGrid에서 adaptive() 크기 수정자 외에도 fixed()이나 flexible() 크기 수정자와 같은 다른 수정자들을 사용할 수 있습니다.
 
@@ -73,17 +93,17 @@ flexible() 크기 수정자
 import SwiftUI
 
 struct ContentView: View {
-    
+
     private var data = Array(1...20)
     private let flexibleColumn = [
-        
+
         GridItem(.flexible(minimum: 100, maximum: 200)),
         GridItem(.flexible(minimum: 100, maximum: 200)),
         GridItem(.flexible(minimum: 100, maximum: 200))
     ]
-    
+
     var body: some View {
-        
+
         ScrollView {
             LazyVGrid(columns: flexibleColumn, spacing: 20) {
                 ForEach(data, id: \.self) { item in
@@ -105,10 +125,20 @@ struct ContentView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래와 같이 사용 가능합니다:
-
 
 <img src="/assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_1.png" />
 
@@ -116,8 +146,18 @@ flexible() modifier를 사용하면 각 열의 항목 수를 제어할 수 있�
 
 fixed() 크기 수정자
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 고정 크기의 열을 가진 LazyVGrid를 만들고 싶다면, 각 열에 .fixedSize() 수정자를 사용할 수 있습니다. 아래는 고정된 열을 가진 LazyVGrid를 생성하는 예시입니다:
 
@@ -125,16 +165,16 @@ fixed() 크기 수정자
 import SwiftUI
 
 struct ContentView: View {
-    
+
     private var data = Array(1...20)
     private let fixedColumn = [
         GridItem(.fixed(100)),
         GridItem(.fixed(100)),
         GridItem(.fixed(100))
     ]
-    
+
     var body: some View {
-        
+
         ScrollView {
             LazyVGrid(columns: fixedColumn, spacing: 20) {
                 ForEach(data, id: \.self) { item in
@@ -161,8 +201,18 @@ struct ContentView_Previews: PreviewProvider {
 
 <img src="/assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_2.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 여기에서는 각 그리드 항목이 고정된 크기를 가지는 LazyVGrid를 만들었습니다. 열의 크기와 외관을 사용자 지정하여 특정 요구 사항에 맞출 수 있습니다.
 
@@ -202,10 +252,20 @@ import SwiftUI
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래 출력 내용을 참고해주세요:
-
 
 <img src="/assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_3.png" />
 
@@ -213,8 +273,18 @@ import SwiftUI
 
 LazyVGrid와 같이 .fixed() 및 .flexible() modifier를 사용할 수 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 게으른 그리드 뷰는 SwiftUI가 그들을 표시해야 할 때에만 자식 뷰를 생성합니다. 따라서, 메모리 최적화에 좋습니다.
 
@@ -224,7 +294,18 @@ iOS 13에서 소개된 LazyVGrid 및 LazyHGrid입니다. iOS 16에서 Apple은 S
 
 Grid 뷰는 자식 뷰를 2차원 레이아웃으로 정렬합니다. 이를 통해 뷰를 테이블과 유사한 구조로 정리할 수 있습니다. HTML 테이블이나 어떤 테이블에 익숙하다면, SwiftUI를 사용하여 동일한 결과를 얻을 수 있습니다. 셀이나 열을 병합하거나, 빈 셀을 만들거나, 셀 간격을 설정하거나, 정렬을 제어하는 등의 작업을 할 수 있습니다. Grid 뷰는 복잡한 UI 개발에 강력한 도구를 제공합니다. 배울 것이 많습니다. 시작해보죠!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 다음은 GridView의 매우 기본적인 예제입니다:
 
@@ -233,7 +314,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+
         Grid ( horizontalSpacing: 20, verticalSpacing: 20 ) {
             GridRow {
                 Text("R1, C1")
@@ -256,7 +337,18 @@ struct ContentView: View {
 
 <img src="/assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_4.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 가로 간격: 20, 세로 간격: 20으로 셀 간격을 사용했습니다.
 
@@ -269,7 +361,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+
         Grid {
             GridRow {
                 Text("행 1")
@@ -292,10 +384,20 @@ struct ContentView: View {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 표 태그를 Markdown 형식으로 변경한 내용입니다.
-
 
 <img src="/assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_5.png" />
 
@@ -303,8 +405,18 @@ struct ContentView: View {
 
 Grid 너비와 높이:
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그리드의 너비와 높이는 해당 자식 뷰에 따라 증가합니다.
 
@@ -315,7 +427,18 @@ Grid 너비와 높이:
 
 GridRow 없이 그리드 뷰 내에 항목을 추가하면 전체 열을 확장합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```swift
 import SwiftUI
@@ -349,9 +472,18 @@ struct ContentView: View {
 
 빈 셀
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 만약 셀을 건너뛰고 어떤 뷰도 보여주고 싶지 않다면, Color.clear.gridCellUnsizedAxes([.horizontal, .vertical])를 사용하여 빈 셀을 추가할 수 있어요.
 
@@ -362,7 +494,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+
         Grid {
             GridRow {
                 ForEach(0..<3) { _ in Circle().foregroundColor(.red) }
@@ -386,21 +518,31 @@ struct ContentView: View {
 
 결과:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Various kinds of GridView in SwiftUI - A Comprehensive Guide](/assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_7.png)
 
 병합된 셀
 
-하나의 뷰가 두 개 이상의 열을 차지하도록 하려면 gridCellColumns(_:) 수정자를 사용하여 지정할 수 있습니다.
+하나의 뷰가 두 개 이상의 열을 차지하도록 하려면 gridCellColumns(\_:) 수정자를 사용하여 지정할 수 있습니다.
 
 ```swift
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
+
         Grid {
             GridRow {
                 ForEach(0..<3) { _ in Circle().foregroundColor(.red) }
@@ -415,7 +557,7 @@ struct ContentView: View {
                 ForEach(0..<3) { _ in Circle().foregroundColor(.mint) }
             }
         }
-        
+
     }
 }
 
@@ -424,11 +566,20 @@ struct ContentView: View {
 }
 ```
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 아래는 표 태그를 Markdown 형식으로 변경한 것입니다.
-
 
 <img src="/assets/img/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide_8.png" />
 

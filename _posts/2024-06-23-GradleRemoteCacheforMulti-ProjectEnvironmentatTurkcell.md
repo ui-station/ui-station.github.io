@@ -3,13 +3,12 @@ title: "Turkcell 다중 프로젝트 환경에서 Gradle 원격 캐시 사용법
 description: ""
 coverImage: "/assets/img/2024-06-23-GradleRemoteCacheforMulti-ProjectEnvironmentatTurkcell_0.png"
 date: 2024-06-23 23:23
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-GradleRemoteCacheforMulti-ProjectEnvironmentatTurkcell_0.png
 tag: Tech
 originalTitle: "Gradle Remote Cache for Multi-Project Environment at Turkcell"
 link: "https://medium.com/@aydinmillioglu/gradle-remote-cache-for-multi-project-environment-on-turkcell-e5ffd0aeeb03"
 ---
-
 
 소프트웨어 개발의 빠르게 변화하는 세계에서는 효율성과 속도가 프로젝트의 성공을 좌우합니다. 저희 터크셀의 데브옵스 팀은 백엔드, 프론트엔드 및 모바일 플랫폼을 아우르는 다양한 프로젝트의 조율을 맡고 있습니다. 각 프로젝트마다 기술적으로 복잡하고 도전적인 부분이 있지만, 이들을 모두 연결짓는 공통 요소는 신속한 빌드 프로세스의 필요성입니다.
 
@@ -19,7 +18,18 @@ link: "https://medium.com/@aydinmillioglu/gradle-remote-cache-for-multi-project-
 
 이 문제로 저희는 Gradle의 빌드 캐시 노드 기능을 탐구하고 최종적으로 구현하게 되었습니다. 이 게시물에서는 우리가 이 기능을 OpenShift에 구현한 여정, 직면한 어려움, 창조한 해결책 및 달성한 결과에 대해 나눌 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 빌드 환경에 대한 배경
 
@@ -29,7 +39,18 @@ link: "https://medium.com/@aydinmillioglu/gradle-remote-cache-for-multi-project-
 
 # 해결책 탐색
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 지역 캐시
 
@@ -41,7 +62,18 @@ gradle ${GRADLE_OPTIONS} --build-cache --project-cache-dir=${PVC_PATH}/gradle/an
 
 Gradle과 함께 사용할 때 이 접근 방식에는 치명적인 결함이 있었습니다. 종속성과 빌드 스크립트를 효율적으로 처리하지만 캐시를 사용할 때 잠금 메커니즘이 발생합니다. 이 잠금 메커니즘은 동시 빌드가 캐시를 손상시키는 것을 방지하지만 동시에 한 번에 하나의 빌드만 캐시를 사용할 수 있음을 의미합니다. 이는 고도로 동시성 환경에서 효과를 크게 감소시킵니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 빌드 캐시 노드
 
@@ -51,7 +83,18 @@ Gradle과 함께 사용할 때 이 접근 방식에는 치명적인 결함이 �
 
 ## 설치
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 저희는 전용 PVC를 사용한 배포를 구현했어요.
 
@@ -74,7 +117,18 @@ spec:
 
 배포 Yaml:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```yaml
 kind: Deployment
@@ -97,7 +151,7 @@ spec:
             claimName: gradle-remote-cache-pvc
       containers:
         - name: build-cache-node
-          args: [ "start" ]
+          args: ["start"]
           image: gradle/build-cache-node:18.1
           ports:
             - containerPort: 5071
@@ -133,7 +187,18 @@ spec:
       targetPort: 5071
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 루트 Yaml:
 
@@ -159,8 +224,18 @@ spec:
 
 <img src="/assets/img/2024-06-23-GradleRemoteCacheforMulti-ProjectEnvironmentatTurkcell_1.png" />
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 사용법
 
@@ -185,7 +260,18 @@ buildCache {
 
 빌드 명령에서 캐싱을 활성화해야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ```js
 gradle ${GRADLE_OPTIONS} --build-cache ${GRADLE_TASKS}
@@ -197,8 +283,18 @@ gradle ${GRADLE_OPTIONS} --build-cache ${GRADLE_TASKS}
 
 모든 프로젝트를 구현한 후 캐시 크기와 빌드 시간을 관찰했습니다. 초기에는 50GB 공간을 볼륨으로 설정했습니다. 마지막으로 50GB를 초과하여 크기를 200GB까지 늘렸습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ![Gradle Remote Cache for Multi-Project Environment at Turkcell](/assets/img/2024-06-23-GradleRemoteCacheforMulti-ProjectEnvironmentatTurkcell_2.png)
 
@@ -208,8 +304,18 @@ gradle ${GRADLE_OPTIONS} --build-cache ${GRADLE_TASKS}
 
 ![Gradle Remote Cache for Multi-Project Environment at Turkcell](/assets/img/2024-06-23-GradleRemoteCacheforMulti-ProjectEnvironmentatTurkcell_4.png)
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 일부 프로젝트에서는 시간이 감소하지 않았습니다.
 
@@ -219,7 +325,18 @@ gradle ${GRADLE_OPTIONS} --build-cache ${GRADLE_TASKS}
 
 빌드 캐시 노드는 많은 프로젝트의 빌드 시간을 크게 개선했지만 일부 프로젝트에는 개선되지 않았습니다. 이 솔루션의 전체 잠재력은 계속된 개선과 각 프로젝트의 고유한 특성에 대한 더 깊은 이해를 통해 실현될 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 다음 단계
 
@@ -229,7 +346,18 @@ Gradle 빌드 캐시 노드가 이제 구현되어 일부 프로젝트 빌드 �
 
 이 도구가 제공하는 장점을 완전히 활용하기 위해서는 시스템을 설정하는 데 그치지 말고, 개발자들이 시스템을 지속적으로 최적화하고 사용하는 것이 필요합니다. 캐싱 메커니즘의 효과적인 사용, 캐시 가능한 작업의 적절한 식별, 의존성 관리, 캐시 히트율을 높이기 위한 필요한 조정은 개발자들이 적극적으로 실시함으로써 이루어질 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # 결론
 
@@ -239,7 +367,18 @@ Gradle 빌드 캐시 노드가 이제 구현되어 일부 프로젝트 빌드 �
 
 # 참고문헌
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 https://docs.gradle.com/build-cache-node/
 

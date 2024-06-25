@@ -3,13 +3,12 @@ title: "Ruby on Rails에서 스파게티 코드 피하는 방법"
 description: ""
 coverImage: "/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_0.png"
 date: 2024-06-23 20:44
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_0.png
 tag: Tech
 originalTitle: "Avoiding Spaghetti Code in Ruby on Rails"
 link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21838c95c32a"
 ---
-
 
 ![이미지](/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_0.png)
 
@@ -19,7 +18,18 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 원칙: 더 깨끗하고 예측 가능한 코드베이스를 위해 레일스의 관례를 활용하세요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예제: Rails는 모델, 뷰, 컨트롤러, 도우미 등과 관련된 코드를 위한 특정 장소를 제공합니다. 예를 들어, 새로운 리소스를 생성할 때:
 
@@ -29,7 +39,18 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 ## RESTful 리소스 사용하기
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원칙: 응용 프로그램을 리소스를 중심으로 구성하고 RESTful 경로를 준수하세요.
 
@@ -39,20 +60,41 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 이 간단한 한 줄은 RESTful 원칙을 준수하는 일곱 가지 다른 경로를 생성하여 응용 프로그램 구조에서 일관성과 예측 가능성을 촉진합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## DRY (Don’t Repeat Yourself)
 
-원칙: 코드 중복을 피해서 응용 프로그램을 유지 관리하기 쉽게 만듭니다. 
+원칙: 코드 중복을 피해서 응용 프로그램을 유지 관리하기 쉽게 만듭니다.
 
-예: 공유 뷰 코드에 대해 부분 적용파일을 사용하십시오. 여러 뷰가 동일한 포스트 양식을 사용하는 경우 _form.html.erb와 같은 부분 적용 파일을 만드세요:
+예: 공유 뷰 코드에 대해 부분 적용파일을 사용하십시오. 여러 뷰가 동일한 포스트 양식을 사용하는 경우 \_form.html.erb와 같은 부분 적용 파일을 만드세요:
 
 <img src="/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_3.png" />
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼 다음과 같이 Markdown 형식으로 해당 테이블을 추가하세요:
-
 
 ![Avoiding Spaghetti Code](/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_4.png)
 
@@ -60,8 +102,18 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 원칙: 컨트롤러는 경량이어야 하며, HTTP와 관련된 로직만 처리하고, 모델은 비즈니스 로직을 처리해야 합니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시: 비즈니스 로직을 컨트롤러에 넣는 대신:
 
@@ -71,7 +123,18 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 ![AvoidingSpaghettiCodeinRubyonRails_6](/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_6.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 서비스 객체 사용하기
 
@@ -81,19 +144,39 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 ![예시 이미지](/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_7.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 그럼, 귀하의 컨트롤러에서:
 
-
 ![AvoidingSpaghettiCodeinRubyonRails_8](/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_8.png)
-
 
 ## ActiveRecord 관계 및 스코프
 
 주요 원칙: 모델 관계에는 연관성을 사용하고 자주 사용하는 쿼리에는 스코프를 사용하십시오.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 예시: 모델에서 연관 관계 정의하기:
 
@@ -103,7 +186,18 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 ![이미지](/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_10.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 테스트
 
@@ -113,7 +207,18 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 ![image](/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_11.png)
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 리팩터링
 
@@ -123,8 +228,18 @@ link: "https://medium.com/dev-genius/avoiding-spaghetti-code-in-ruby-on-rails-21
 
 이전:
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <img src="/assets/img/2024-06-23-AvoidingSpaghettiCodeinRubyonRails_12.png" />
 
@@ -134,8 +249,18 @@ After:
 
 ## Follow Ruby and Rails Style Guides
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 원칙: 스타일 가이드를 준수하여 코드 일관성 유지하기
 
@@ -145,7 +270,18 @@ After:
 
 ## 코드 리뷰
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 **원칙:** 고품질을 유지하고 지식을 공유하기 위해 코드 리뷰에 참여하십시오.
 

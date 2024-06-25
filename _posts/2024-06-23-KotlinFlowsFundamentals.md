@@ -3,13 +3,12 @@ title: "Kotlin Flows 기본 개념 이해하기"
 description: ""
 coverImage: "/assets/img/2024-06-23-KotlinFlowsFundamentals_0.png"
 date: 2024-06-23 23:34
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-KotlinFlowsFundamentals_0.png
 tag: Tech
 originalTitle: "Kotlin Flows — Fundamentals"
 link: "https://medium.com/@anitaa_1990/kotlin-flows-fundamentals-7d9b984f12bb"
 ---
-
 
 지난 주에는 Kotlin 코루틴에 대해 더 알아보았어요. 이전 글에서는 CoroutineContext, CoroutineScope, Coroutine Builder 등 코루틴의 기초 중 일부에 초점을 맞췄죠. 약속대로, 지금은 그에 대한 후속 글로 Flows에 대해 다루려고 해요.
 
@@ -19,16 +18,25 @@ link: "https://medium.com/@anitaa_1990/kotlin-flows-fundamentals-7d9b984f12bb"
 
 Flow를 생성하려면 먼저 프로듀서를 만들어야 해요.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
 
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 val randomFlow: Flow<Int> = flow {
-    repeat(10) { it ->
-        emit(it+1) // flow에 대한 요청 결과를 내보낸다
-        delay(1000) // 코루틴을 1초 동안 일시 중단한다
-    }
+repeat(10) { it ->
+emit(it+1) // flow에 대한 요청 결과를 내보낸다
+delay(1000) // 코루틴을 1초 동안 일시 중단한다
 }
-
+}
 
 Flow를 수집하려면 먼저 Flow가 내부적으로 코루틴에서 작동하기 때문에, Coroutine을 시작해야 합니다. collect 연산자는 emit된 값들을 수집하는 데 사용됩니다.
 
@@ -42,15 +50,25 @@ lifecycleScope.launch {
 
 Flow에는 두 가지 서로 다른 유형이 있습니다.
 
+<!-- ui-station 사각형 -->
 
-<div class="content-ad"></div>
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Cold Flow — 값을 수집하기 시작할 때까지 값을 생성하지 않습니다. 오직 하나의 구독자만 가질 수 있으며 데이터를 저장하지 않습니다.
 
 ```js
 // Regular Flow 예시
 val coldFlow = flow {
-     emit(0) 
+     emit(0)
      emit(1)
      emit(2)
 }
@@ -61,7 +79,7 @@ launch { // 처음으로 collect를 호출
     }
 
     delay(2500)
-   
+
   // 두 번째로 collect를 호출
   coldFlow.collect { value ->
         println("cold flow collector 2이 받은 값: $value")
@@ -93,7 +111,7 @@ launch {
     }
 
     delay(2500)
-   
+
   // 두 번째로 collect를 호출
   sharedFlow.collect { value ->
         println("SharedFlow 수집자 2이 받은 값: $value")
@@ -108,7 +126,18 @@ SharedFlow 수집자 1이 받은 값: [0, 1, 2, 3, 4]
 SharedFlow 수집자 2이 받은 값: [2, 3, 4]
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 어떤 cold flow라도 stateIn() 및 shareIn() 연산자를 사용하여 각각 뜨거운 flow로 변환할 수 있습니다.
 
@@ -138,10 +167,10 @@ lifecycleScope.launchWhenStarted {
 
   // Flow를 트리거하고 값 수집 시작
 
-  // collectLatest()는 Kotlin의 Flow API의 고차 함수로 
-  // Flow로부터 발행된 값을 수집하고 최신 값에 대해 변환할 수 있는 함수입니다. 
-  // 모든 발행된 값들을 수집하는 collect()와 유사하지만, 
-  // collectLatest는 최신으로 발행된 값만 처리하고 
+  // collectLatest()는 Kotlin의 Flow API의 고차 함수로
+  // Flow로부터 발행된 값을 수집하고 최신 값에 대해 변환할 수 있는 함수입니다.
+  // 모든 발행된 값들을 수집하는 collect()와 유사하지만,
+  // collectLatest는 최신으로 발행된 값만 처리하고
   // 아직 처리되지 않은 이전 값들을 무시합니다.
     viewModel.stateFlow.collectLatest {
           binding.stateFlowButton.text = it
@@ -152,19 +181,30 @@ lifecycleScope.launchWhenStarted {
 // Compose에서 StateFlow 수집
 @Compose
 fun HomeScreen() {
- // Compose는 flow에서 값을 수집하고 사용할 최신 값을 제공하는 
- // collectAsStateWithLifecycle 함수를 제공합니다. 
- // 새로운 flow 값이 발행되면 업데이트된 값을 얻고, 
- // 재구성을 통해 값의 상태를 업데이트합니다. 
- // LifeCycle.State.Started를 기본값으로 사용하여 수집을 시작합니다. 
- // 지정된 상태의 라이프사이클에 있을 때 값 수집을 시작하고, 
+ // Compose는 flow에서 값을 수집하고 사용할 최신 값을 제공하는
+ // collectAsStateWithLifecycle 함수를 제공합니다.
+ // 새로운 flow 값이 발행되면 업데이트된 값을 얻고,
+ // 재구성을 통해 값의 상태를 업데이트합니다.
+ // LifeCycle.State.Started를 기본값으로 사용하여 수집을 시작합니다.
+ // 지정된 상태의 라이프사이클에 있을 때 값 수집을 시작하고,
  // 해당 상태 아래로 떨어질 때 멈춥니다.
   val someFlow by viewModel.flow.collectAsStateWithLifecycle()
-  
+
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - SharedFlow — SharedFlow는 여러 개의 수집기(collector)를 가질 수 있는 HotFlow입니다. 수집기들과 독립적으로 값을 방출할 수 있으며, 다수의 수집기들이 동일한 flow에서 값을 수집할 수 있습니다. 하나의 값을 여러 수집기에 브로드캐스팅하거나 동일한 데이터 스트림에 대해 여러 구독자를 가질 때 유용합니다. 초기값이 없으며, 새롭게 추가된 수집기들을 위해 이전에 방출된 값을 일정 수만큼 저장할 replay 캐시를 구성할 수 있습니다.
 
@@ -186,9 +226,9 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         lifecycleScope.launchWhenStarted {
-        
+
             // 플로우를 트리거하고 값을 수신하기 시작합니다
-        
+
             // collectLatest()는 Kotlin의 Flow API에서 제공되는 고차 함수로,
             // Flow에서 방출된 값을 수집하고 최신 값에 대해 변환을 수행할 수 있습니다.
             // collect()와 유사하게 모든 방출된 값을 수집하는데 사용되지만,
@@ -217,7 +257,18 @@ fun HomeScreen() {
 
 Kotlin Flow는 예외와 오류를 처리하기 위한 여러 메커니즘을 제공합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - try-catch 블록 — 예외를 처리하는 기본적인 방법 중 하나는 흐름 내에서 try-catch 블록을 사용하는 것입니다.
 
@@ -241,7 +292,18 @@ flow {
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - onCompletion Operator — Flow가 성공적으로 또는 예외로 완료되고 난 후 코드를 실행할 때 사용됩니다.
 
@@ -267,7 +329,18 @@ fun <T> Flow<T>.sampleErrorHandler(): Flow<Result<T>> = transform { value ->
 }
 ```
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 # Flows vs LiveData
 

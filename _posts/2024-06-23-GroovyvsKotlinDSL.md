@@ -3,13 +3,12 @@ title: "Groovy와 Kotlin DSL 최신 비교 어떤 걸 선택해야 할까"
 description: ""
 coverImage: "/assets/img/2024-06-23-GroovyvsKotlinDSL_0.png"
 date: 2024-06-23 21:46
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-23-GroovyvsKotlinDSL_0.png
 tag: Tech
 originalTitle: "Groovy vs Kotlin DSL"
 link: "https://medium.com/huawei-developers/groovy-vs-kotlin-dsl-fcfccb9a3693"
 ---
-
 
 ![Groovy vs Kotlin DSL](/assets/img/2024-06-23-GroovyvsKotlinDSL_0.png)
 
@@ -19,13 +18,35 @@ link: "https://medium.com/huawei-developers/groovy-vs-kotlin-dsl-fcfccb9a3693"
 
 ## 그루비란 무엇인가
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 Groovy는 자바 가상 머신을 위한 동적인 스크립팅 언어입니다. 바이트 코드로 컴파일되며 Java 코드 및 라이브러리와 원활하게 통합됩니다. Groovy는 간결하고 표현력이 뛰어나며 Java와 상호 운용성이 뛰어납니다.
 
 안녕하세요! 위의 표를 마크다운 형식으로 변경해드릴게요. 부가 내용이 있으면 언제든지 말해주세요!
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - Groovy는 동적 언어이기 때문에 빌드 과정 전까지는 잡히지 않는 런타임 오류가 발생할 수 있습니다.
 - 정적 타이핑의 부재로 인해 특정 상황에서 오류가 더 많이 발생할 수 있습니다.
@@ -36,7 +57,18 @@ Groovy는 자바 가상 머신을 위한 동적인 스크립팅 언어입니다.
 
 Kotlin 도메인 특화 언어(DSL)는 특정 문제 영역을 해결하기 위해 사용되는 Kotlin에 내장된 특수 목적 프로그래밍 언어입니다. Kotlin의 새로운 언어 구조로 자신을 확장할 수 있는 능력 덕분에 Kotlin DSL을 만들 수 있습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 장점 Kotlin DSL in Android:
 
@@ -50,7 +82,18 @@ Kotlin DSL의 단점:
 
 빌드 시간을 제외한 다른 항목들은 실제로 단점이 아닌 것처럼 보입니다. 하지만 Android 개발의 미래를 염두에 두어야 합니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 - 빌드 시간: 빌드 스크립트의 복잡성과 수행하는 특정 작업에 따라 Kotlin DSL은 Groovy보다 약간 더 긴 빌드 시간을 소요할 수 있습니다. 그러나 개선 및 최적화가 계속 이루어지고 있으므로 시간이 지남에 따라 이 측면이 변할 수 있습니다.
 - 도구 지원: 안드로이드 스튜디오에서 Kotlin에 대한 도구 지원은 일반적으로 우수하지만, 더 성숙한 Groovy 기반 스크립트에 비해 가끔 문제나 업데이트 지연이 발생할 수 있습니다. Kotlin DSL이 보다 보편화되면 이 차이는 좁혀질 것으로 예상됩니다.
@@ -64,7 +107,18 @@ Kotlin DSL의 단점:
 
 오해하지 마세요, 저는 Groovy에서 Kotlin DSL로 마이그레이션을 강력히 추천합니다. Kotlin DSL에는 많은 장점이 있기 때문에 그것을 사용하지 않을 것을 권하는 것은 완전히 어처구니 없는 일이 될 것입니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 하지만 개인 또는 팀으로 이주하기 전에, 이주 과정 중 가능한 결과를 고려해야 합니다. 제가 본 관점에서 가능한 결과를 나열해 봤습니다. 안드로이드 개발 전문가들이 이 목록을 보다 상세히 설명할 수 있을 것입니다.
 
@@ -76,6 +130,17 @@ Kotlin DSL의 단점:
 
 이것으로 이번 글을 마칩니다. Groovy와 Kotlin DSL에 대해 이야기했습니다. 즉시 이 작업을 시작하고 싶은 분들을 위해 Groovy에서 Kotlin DSL로 전환하기 위한 필요한 모든 단계를 담은 공식 문서를 공유하겠습니다.
 
-<div class="content-ad"></div>
+<!-- ui-station 사각형 -->
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-4877378276818686"
+data-ad-slot="7249294152"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 ## 참고문헌
