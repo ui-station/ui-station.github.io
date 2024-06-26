@@ -5428,6 +5428,7 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-4NewActiveOpenSourceProjects</loc
     >
   </url>
@@ -5446,22 +5447,28 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-ABeginnersGuidetoSetupOpenGLinLinuxDebian</loc
     >
   </url>
 
   <url>
+<<<<<<< HEAD
     <loc
       >https://ui-station.github.io/post/2024-06-23-AGuideToClosuresInSwift</loc
     >
   </url>
 
   <url>
+=======
+>>>>>>> 8ef2f4c (add post)
     <loc>https://ui-station.github.io/post/2024-06-23-AWSAPIGateway</loc>
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-AWSMulti-AccountStrategyIAWSOrganizationsOUsandAccounts</loc
     >
   </url>
@@ -5474,12 +5481,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-AdvancedAWSLambdaAnObscureFeatureYouMustAbsolutelyUse</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-AdvancedSwiftUITextFieldEventsFocusKeyboard</loc
     >
   </url>
@@ -5510,6 +5520,8 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-ArgoRolloutsNowSupportsVersion10oftheKubernetesGatewayAPI</loc
     >
   </url>
@@ -5522,6 +5534,7 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-ArrowheadsHelldivers2TheMysteriousCompletedReviewBombCapeandItsStrategicReleaseGameSpotlight</loc
     >
   </url>
@@ -5540,6 +5553,8 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-BlazingfastPythonDockerbuildswithPoetry</loc
     >
   </url>
@@ -5551,12 +5566,15 @@
   </url>
 
   <url>
+<<<<<<< HEAD
     <loc
       >https://ui-station.github.io/post/2024-06-23-BuildinggdocwebwithJava21SpringBoot3xandBeyond</loc
     >
   </url>
 
   <url>
+=======
+>>>>>>> 8ef2f4c (add post)
     <loc>https://ui-station.github.io/post/2024-06-23-Challenge14bounce</loc>
   </url>
 
@@ -5568,6 +5586,7 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-Chapter18CompactMapValues</loc
     >
   </url>
@@ -5586,6 +5605,8 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-CreatingaMulti-FilterCollectionViewwithDiffableDataSource</loc
     >
   </url>
@@ -5598,17 +5619,21 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-DeepLinksandUniversalLinksiniOSdevelopment</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-DistributedCircuitBreakersinEvent-DrivenArchitecturesonAWS</loc
     >
   </url>
 
   <url>
+<<<<<<< HEAD
     <loc
       >https://ui-station.github.io/post/2024-06-23-DockerAGoodto-HaveArsenalforModernDevelopmentandDeployment</loc
     >
@@ -5625,23 +5650,29 @@
   </url>
 
   <url>
+=======
+>>>>>>> 8ef2f4c (add post)
     <loc>https://ui-station.github.io/post/2024-06-23-DockerizeaNextjsApp</loc>
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-DockerizingandComparingCDSJARvsUberJARAchieving20FasterStartupTimes</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-EscapetheDollarTrapAffordableCloudSolutionsBuiltforBusinesses</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-EveryAndroiddevelopershouldknowaboutObjectAnimatortouseanimationsinyourApps</loc
     >
   </url>
@@ -5654,12 +5685,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-ExperimentingwithHandwritingRecognitionforTheNewYorkTimesCrossword</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-ExploringJSONManipulationUsingDepth-FirstSearchDFSApproach</loc
     >
   </url>
@@ -5748,6 +5782,8 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-HeresHowIdStealYouriPhoneIfIWereAThiefStep-by-Step</loc
     >
   </url>
@@ -5760,6 +5796,7 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-HowLLMandSemanticSearchEnhancetheExperienceofFindingMusic</loc
     >
   </url>
@@ -5796,12 +5833,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-HowtoDockerizeSpringBootMicroservicesAStep-by-StepGuide</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-HowtoFixRapidBatteryDrainonXiaomiPhonesFAQ</loc
     >
   </url>
@@ -5892,6 +5932,8 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-JetpackComposevsTraditionalAndroidTheBattleforResponsiveUIs</loc
     >
   </url>
@@ -5902,6 +5944,7 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-K8sGPTOllamaAFreeKubernetesAutomatedDiagnosticSolution</loc
     >
   </url>
@@ -5926,12 +5969,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-KuberneteswithGPUforMLOpsWorkloads</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-Leashtofollowplayerdevblog24</loc
     >
   </url>
@@ -5944,12 +5990,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-MakingShadowfaxAndroidApp40faster</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-MasteringAppStateinReactNativewithasimplecustomhook</loc
     >
   </url>
@@ -5974,11 +6023,14 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-MaximizingtheUtilityofScarceAIResourcesAKubernetesApproach</loc
     >
   </url>
 
   <url>
+<<<<<<< HEAD
     <loc
       >https://ui-station.github.io/post/2024-06-23-MicroservicesArchitectureAllYouNeedtoknow</loc
     >
@@ -5991,6 +6043,8 @@
   </url>
 
   <url>
+=======
+>>>>>>> 8ef2f4c (add post)
     <loc>https://ui-station.github.io/post/2024-06-23-Multi-touchMLModels</loc>
   </url>
 
@@ -6002,6 +6056,7 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-OptimizingAndroidDevelopmentKeyFeaturesofVSCodetoEnhanceYourWorkflow</loc
     >
   </url>
@@ -6014,12 +6069,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-PartiallyAppliedFunctionsinSwift</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-ProPlayerNemotoMakeMBisonHisMaininStreetFighter6</loc
     >
   </url>
@@ -6032,12 +6090,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-Project8ThreetierapplicationdeploymentonKubernetes</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-RSpecMatchersandExpectations</loc
     >
   </url>
@@ -6062,27 +6123,35 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-ReflectionsandBasicWebApplicationArchitecture</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-ResolvingNoMediaQuerywidgetfoundErrorinFlutter</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-RunningPlaywrighttestswithDockeronGitLab</loc
     >
   </url>
 
   <url>
+<<<<<<< HEAD
     <loc>https://ui-station.github.io/post/2024-06-23-SELFkeywordinruby</loc>
   </url>
 
   <url>
+=======
+>>>>>>> 8ef2f4c (add post)
     <loc>https://ui-station.github.io/post/2024-06-23-STRUCTvsCLASSinSWIFT</loc>
   </url>
 
@@ -6094,18 +6163,22 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-SecuringSpringBootwithKeycloak</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-ServerlessAPIDocumentationwithPowertoolsforAWS</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-ServerlessEventBridgePipes</loc
     >
   </url>
@@ -6118,12 +6191,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-SettingUpanEC2InstanceUsingTerraformandSSHAccesswithPEMKey</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-SettingupanewMacmytop3essentials</loc
     >
   </url>
@@ -6142,12 +6218,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-SoYouWantToJustGetPytorchRunninginSnowparkContainerServices</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-SoftwareDevelopmentCompaniesWeneedtoTalk</loc
     >
   </url>
@@ -6172,12 +6251,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-StreamliningAWSGlueCICD</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-SurvivingOOMinKubernetesJavaApplications</loc
     >
   </url>
@@ -6224,12 +6306,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-The11craziestandmostadvancedAppleshortcutsIveeverseen</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-TheAirdropGameEnsuringConsistencyinAirdropPlacementinMobileARGamesUsingAdvancedFrameworks</loc
     >
   </url>
@@ -6248,6 +6333,8 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-TheInternalMechanismofSharedViewModelinAndroid</loc
     >
   </url>
@@ -6266,6 +6353,7 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-ThecuriouscaseofRubyandOpenSSL</loc
     >
   </url>
@@ -6296,12 +6384,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-TopAIAgents2024arehere</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-TouringtheKubernetesIstioAmbientMeshPart1SetupZTunnel</loc
     >
   </url>
@@ -6312,12 +6403,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-TransparentProxyImplementationusingeBPFandGo</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-UnderstandingAndroidLaunchModesAnE-CommerceAppExample</loc
     >
   </url>
@@ -6354,6 +6448,8 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-UnityPhysicsMeshColliders</loc
     >
   </url>
@@ -6372,54 +6468,67 @@
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-Updatedcantfindgemcocoapods0awithexecutablepodGemGemNotFoundException</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-UseDockerUptimeKumaandTraefikToMonitorYourWebsite</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-UsingAWSLambdaasTelegrambotbackend</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-UsingCCinAndroidAComprehensiveGuideForBeginners</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-UsingKongtoaccessKubernetesservicesusingaGatewayresourcewithnocloudprovidedLoadBalancer</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-ValidateyourYAMLFileswithYAMLLint</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-VariousKindsofGridViewsinSwiftUIAComprehensiveGuide</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-VisualizeyourIAMPoliciesinJustaFewClicks</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-WebhookTestingWithouttheHeadacheADevelopersSanity-SavingTutorial</loc
     >
   </url>
@@ -6438,12 +6547,15 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-WhatisfasterandinwhichtasksCoroutinesRxJavaExecutor</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-WhatisgoodbadcodeAnillustratedexamplefornon-programmers</loc
     >
   </url>
@@ -6456,29 +6568,37 @@
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-WhatwelearnedafterrunningAirflowonKubernetesfor2years</loc
     >
   </url>
 
   <url>
     <loc
+<<<<<<< HEAD
       >https://ui-station.github.io/post/2024-06-23-WhyPostgresRDSdidntworkforusandwhyitwontworkforyouifyoureimplementingabigdatasolution</loc
     >
   </url>
 
   <url>
     <loc
+=======
+>>>>>>> 8ef2f4c (add post)
       >https://ui-station.github.io/post/2024-06-23-alpinedistrolessorscratch</loc
     >
   </url>
 
   <url>
+<<<<<<< HEAD
     <loc
       >https://ui-station.github.io/post/2024-06-23-iOS172Released27ThingsYouNEEDToKnow</loc
     >
   </url>
 
   <url>
+=======
+>>>>>>> 8ef2f4c (add post)
     <loc>https://ui-station.github.io/post/undefined</loc>
   </url>
 </urlset>
