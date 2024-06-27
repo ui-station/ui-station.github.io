@@ -211,9 +211,9 @@ data-full-width-responsive="true"></ins>
 
 OrderTrackService 클래스는 Service 클래스의 확장입니다. 우리는 여기서 알림 로직을 처리할 것입니다. MainActivity와 OrderTrackService 간의 통신은 Broadcast Intents를 통해 설정됩니다. MainActivity에 표시된 목록의 각 주문에 대응하는 버튼은 주문 ID가 Intent의 데이터 번들 일부로 포함된 Broadcast Intent를 보냅니다. 이 Broadcast Intent를 받으면 Foreground Service가 작동하여 crystal_v2 API를 호출하여 지정된 주문 ID에 대한 주문 세부 정보를 가져옵니다. 그런 다음 정보를 표시하는 알림을 생성합니다. 가져오기 및 게시 로직은 Kotlin Flow 내에서 작동하도록 제작되어 여러 알림을 독립적으로 처리할 수 있도록 지원하며 필요한 경우 반복적인 Flow를 시작합니다. Flow를 사용하면 원하는대로 작업을 일시 중지/반복할 수 있으므로 동일한 작업을 원하는 지연 시간(우리의 경우 여기서는 30초)으로 반복할 수도 있습니다.
 
-```Markdown
+
 <img src="/assets/img/2024-06-19-HowIreverseengineeredtheZomatoapptobuildmyownOrderTrackingnotificationsystem_4.png" />
-```
+
 
 # 최종:
 

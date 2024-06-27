@@ -98,7 +98,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```Markdown
+
 ![](/assets/img/2024-06-23-ServerlessAPIDocumentationwithPowertoolsforAWS_2.png)
 
 이제 API를 문서화하는 방법을 이해했으니 람다 함수를 백엔드로 사용하는 서버리스 API에이 프로세스를 적용하는 방법에 대해 이야기해 보겠습니다.
@@ -106,7 +106,7 @@ data-full-width-responsive="true"></ins>
 # API 문서 생성
 
 여러 가지 API 문서 생성 방법을 살펴보겠습니다.
-```
+
 
 <!-- ui-station 사각형 -->
 
