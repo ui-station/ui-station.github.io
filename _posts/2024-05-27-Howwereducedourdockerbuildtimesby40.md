@@ -208,7 +208,7 @@ data-full-width-responsive="true"></ins>
 
 ![이미지](/assets/img/2024-05-27-Howwereducedourdockerbuildtimesby40_1.png)
 
-```jsfile
+```js
 # syntax=docker/dockerfile:1.4
 FROM baseImage:version
 COPY [--chown=<user>:<group>] [--chmod=<perms>] --link binary /opt/

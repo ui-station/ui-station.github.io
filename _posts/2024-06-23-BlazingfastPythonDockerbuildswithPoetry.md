@@ -86,7 +86,7 @@ build-backend = "poetry.core.masonry.api"
 
 What our Docker build needs to do is having Python and Poetry installed, getting our code, installing the dependencies and setting the project’s entrypoint. This is exactly what we are doing in here:
 
-```jsfile
+```js
 FROM python:3.11-buster
 
 RUN pip install poetry
@@ -134,7 +134,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```jsfile
+```js
 FROM python:3.11-buster
 
 RUN pip install poetry==1.4.2

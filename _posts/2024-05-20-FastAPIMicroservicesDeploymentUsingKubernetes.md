@@ -196,7 +196,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```jsfile
+```js
 FROM python:3.10-slim
 
 WORKDIR /app

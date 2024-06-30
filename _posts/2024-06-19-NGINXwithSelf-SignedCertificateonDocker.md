@@ -74,7 +74,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```jsfile
+```js
 # syntax=docker/dockerfile:1
 # 이 Dockerfile을 빌드하려면 Docker BuildKit가 활성화되어 있어야 합니다.
 
