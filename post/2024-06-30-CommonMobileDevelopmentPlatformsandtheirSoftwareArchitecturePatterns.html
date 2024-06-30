@@ -1,0 +1,175 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>모바일 개발 플랫폼과 그들의 소프트웨어 아키텍처 패턴들 비교 | ui-station</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://ui-station.github.io///post/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="모바일 개발 플랫폼과 그들의 소프트웨어 아키텍처 패턴들 비교 | ui-station" data-gatsby-head="true"/><meta property="og:title" content="모바일 개발 플랫폼과 그들의 소프트웨어 아키텍처 패턴들 비교 | ui-station" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://ui-station.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://ui-station.github.io///post/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns" data-gatsby-head="true"/><meta name="twitter:title" content="모바일 개발 플랫폼과 그들의 소프트웨어 아키텍처 패턴들 비교 | ui-station" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | ui-station" data-gatsby-head="true"/><meta name="article:published_time" content="2024-06-30 19:22" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BHFR6GTH9P"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-BHFR6GTH9P');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-ac4aa08aae62f90e.js" defer=""></script><script src="/_next/static/chunks/463-0429087d4c0b0335.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-70e5ce89f3d962ac.js" defer=""></script><script src="/_next/static/T_Nz0g9U1yttYMSEma95P/_buildManifest.js" defer=""></script><script src="/_next/static/T_Nz0g9U1yttYMSEma95P/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">UI STATION</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">모바일 개발 플랫폼과 그들의 소프트웨어 아키텍처 패턴들 비교</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="모바일 개발 플랫폼과 그들의 소프트웨어 아키텍처 패턴들 비교" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">UI STATION</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jun 30, 2024</span><span class="posts_reading_time__f7YPP">8<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<h1>소개</h1>
+<p>모바일 개발은 올바른 방법으로, 적절한 도구와 필요한 소프트웨어 아키텍처로 각 과정을 구현할 때 더 쉬워집니다. 애플리케이션 개발에 사용되는 많은 모바일 개발 플랫폼이 있습니다. 일부는 네이티브 애플리케이션 개발용이고, 다른 일부는 크로스 플랫폼 애플리케이션 개발용입니다. 두 가지 주요 네이티브 개발 플랫폼은 Kotlin, Java, C++을 지원하는 Android Studio(안드로이드 개발을 위한 공식 통합 개발 환경)와 Objective-C 및 Swift를 지원하는 iOS 개발을 위한 공식 통합 개발 환경 인 Xcode입니다. 일부 주요 크로스 플랫폼 플랫폼으로는 Flutter, React Native, Xamarin, Ionic 등이 있습니다. Unity, Unreal Engine, Flutterflow 및 Appgyver 같은 게임 개발 플랫폼 및 노코드 개발 플랫폼도 있습니다.</p>
+<p><img src="/assets/img/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns_0.png" alt="Common Mobile Development Platforms and their Software Architecture Patterns"></p>
+<h2>목차</h2>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<ul>
+<li>소개</li>
+<li>네이티브 개발 플랫폼</li>
+<li>안드로이드 스튜디오</li>
+<li>소프트웨어 아키텍처 패턴</li>
+<li>엑스코드</li>
+<li>소프트웨어 아키텍처 패턴</li>
+<li>크로스 플랫폼 개발 플랫폼</li>
+<li>플러터</li>
+<li>소프트웨어 아키텍처 패턴</li>
+<li>일부 아키텍처의 장단점</li>
+<li>개인 경험 및 HNG 인턴십 여정</li>
+<li>결론</li>
+</ul>
+<h1>네이티브 개발 플랫폼</h1>
+<p>주요 모바일 애플리케이션 운영 체제 중 두 가지는 안드로이드 OS와 애플 iOS이며, 이 두 운영 체제를 위한 네이티브 개발 플랫폼은 안드로이드 스튜디오와 Xcode입니다.</p>
+<h1>안드로이드 스튜디오</h1>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>안드로이드 스튜디오는 안드로이드 애플리케이션 개발을 위한 공식 IDE로, Kotlin, Java, C++를 지원합니다. (또한 dart, Kotlin Multiplatform Mobile KMM 및 Jetpack Compose의 사용을 허용합니다) 모바일 애플리케이션을 개발할 수 있습니다.</p>
+<h1>소프트웨어 아키텍처 패턴</h1>
+<p>안드로이드 개발에서 사용되는 몇 가지 소프트웨어 아키텍처 패턴은 MVC(Model-View-Controller), MVP(Model-View-Presenter)입니다.</p>
+<p>MVC(Model-View-Controller):</p>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<ul>
+<li>모델: 데이터를 관리하고 애플리케이션의 로직을 관리합니다.</li>
+<li>뷰: 사용자 인터페이스 구성 요소를 나타내며 사용자에게 표시되는 데이터를 표시합니다.</li>
+<li>컨트롤러: 모델과 뷰 사이의 연결 역할을 합니다.</li>
+</ul>
+<p>MVP (Model-View-Presenter):</p>
+<ul>
+<li>모델: 이 경우 모델은 데이터를 관리합니다.</li>
+<li>뷰: 뷰는 데이터를 표시하고 사용자 입력을 처리하는 역할을 담당합니다.</li>
+<li>프레젠터: 모델로부터 데이터를 검색하고 뷰를 업데이트합니다.</li>
+</ul>
+<p>단방향 데이터 흐름 (UDF):</p>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<ul>
+<li>이건 주로 데이터가 상태에서 유저 인터페이스로의 단일 방향으로 흐르는 Jetpack Compose에서 주로 사용됩니다.</li>
+</ul>
+<h2>Xcode</h2>
+<p>Xcode은 iOS 앱 개발을 위한 공식 통합 개발 환경으로, Objective-C와 Swift를 지원합니다. 코드 편집기, 그래픽 인터페이스 디자이너, 디버거 및 iOS 시뮬레이터가 포함되어 있습니다.</p>
+<h2>소프트웨어 아키텍처 패턴</h2>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>안드로이드와 마찬가지로 iOS에도 애플리케이션 개발에 구현된 동일한 소프트웨어 아키텍처 패턴이 있습니다. 이러한 아키텍처 중 일부는 MVC (Model View Controller), MVP (Model View Presenter) 및 MVVM (Model View ViewModel)입니다.</p>
+<p>MVVM (Model View ViewModel):</p>
+<p>이 패턴은 안드로이드 개발 플랫폼에서 다루지 않은 것처럼 Model, View 및 ViewModel이 있으며, 각 역할은 아래와 같습니다.</p>
+<ul>
+<li>Model: 데이터 표현 및 비즈니스 로직을 제공합니다.</li>
+<li>View: 데이터를 보이게 하고 최종 사용자와 상호 작용합니다.</li>
+<li>ViewModel: 뷰에 제시될 데이터를 관리하고 UI 관련 데이터를 처리합니다.</li>
+</ul>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1>크로스 플랫폼 개발 플랫폼</h1>
+<p>일부 주요 크로스 플랫폼 플랫폼은 Flutter, React Native, Xamarin 및 Ionic입니다. 이러한 플랫폼은 코드를 한 번 작성하고 다른 플랫폼에서 실행하는 개념을 허용합니다.</p>
+<h1>Flutter</h1>
+<p>Flutter는 Google에서 만든 크로스 플랫폼 애플리케이션 개발 플랫폼으로, Dart 언어를 사용하는 단일 코드 베이스로 작성하여 Android, iOS, Web 및 데스크톱과 같은 플랫폼으로 컴파일할 수 있습니다.</p>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1>소프트웨어 아키텍처 패턴</h1>
+<h2>BLoC (Business Logic Component) Pattern</h2>
+<p>BLoC(비즈니스 로직 컴포넌트)는 플러터에서 널리 사용되는 아키텍처 패턴으로, 사용자 인터페이스와 비즈니스 로직을 분리하는 데 중점을 둡니다. 데이터 흐름을 처리하기 위해 스트림과 시크를 사용합니다. 플러터에서 '위젯'으로 알려진 사용자 인터페이스 구성 요소는 BLoC 레이어와 상호 작용하여 데이터를 받아오고 이벤트를 보냅니다. BLoC 레이어는 로직을 보유하고 이벤트를 처리하며 앱 상태를 업데이트합니다. 이 패턴은 재사용성과 테스트 가능성을 향상시키며 응용 프로그램을 보다 반응적으로 만듭니다.</p>
+<h2>Provider Pattern</h2>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>플러터에서 널리 사용되는 또 하나의 패턴은 Provider 패턴입니다. 이 패턴은 의존성 주입 개념을 기반으로 하며 상태를 쉽게 관리할 수 있는 방법을 제공합니다. Provider 클래스는 데이터 원본 역할을 하며 다른 위젯들은 이 데이터에 대한 액세스 및 업데이트를 할 수 있습니다. Provider 패턴을 사용하면 개발자들은 여러 화면 간에 상태를 쉽게 공유하고 관리할 수 있어서 코드의 모듈성을 향상시키고 번거로운 코드를 줄일 수 있습니다.</p>
+<h1>일부 아키텍처의 장단점</h1>
+<h1>MVC 아키텍처의 장점</h1>
+<ul>
+<li>애플리케이션 개발이 빨라집니다.</li>
+<li>여러 개발자가 협업하고 함께 작업하기 쉽습니다.</li>
+<li>애플리케이션 업데이트가 쉽습니다.</li>
+<li>애플리케이션에 올바르게 작성된 다수의 수준이 있기 때문에 디버깅이 쉽습니다.</li>
+</ul>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1>MVC 아키텍처의 단점</h1>
+<ul>
+<li>어느 순간 확장하기 어려워질 수 있습니다.</li>
+<li>MVC 아키텍처를 이해하기 어려울 수 있습니다.</li>
+<li>메소드에 엄격한 규칙을 따라야 합니다.</li>
+</ul>
+<h1>MVVM 아키텍처의 장점</h1>
+<ul>
+<li>개발하기 쉽습니다.</li>
+<li>테스트가 쉽습니다.</li>
+<li>유지보수가 쉽습니다.</li>
+</ul>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1>MVVM 아키텍처의 단점</h1>
+<ul>
+<li>디버그하기 어려움</li>
+<li>복잡함</li>
+</ul>
+<h1>Business Logic Component (BLoC)의 장점</h1>
+<ul>
+<li>UI와 로직을 분리하기 쉬움</li>
+<li>코드를 테스트하기 쉬움</li>
+<li>코드를 재사용하기 쉬움</li>
+<li>성능이 좋음</li>
+</ul>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1>비즈니스 로직 컴포넌트 (BLoC)의 단점</h1>
+<ul>
+<li>더 많은 보일러플레이트</li>
+</ul>
+<h1>개인 경험 및 HNG 인턴십 여정</h1>
+<p>기술을 사랑하고 창작하는 것을 좋아하는 사람으로서, Android 네이티브 개발부터 시작해 Kotlin과 XML을 사용하여 플러터를 사용한 이동 앱 개발을 배우는 도전에 나섰습니다. 그러나 자학한 사람이기 때문에 이동 개발에 대한 이해를 더 많이 필요로 했던 중요한 영역 중 몇 가지를 놓칠 수도 있다고 생각했습니다. 그래서 글로벌 시장에 준비되었는지 알고 싶어졌고, 그 이유로 HNG11 인턴십에 합류하기로 결정했습니다. HNG11 인턴십은 이동 개발 능력을 확인하고 글로벌 시장에 준비되었는지 판단할 수 있도록 도와주는 급속한 성장 인턴십입니다.</p>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>인턴십은 시기 적절한 것입니다. 멘토의 안내나 이겨야 할 마감 기한이 없을 때 관심이 흩어질 수 있습니다.</p>
+<h2>결론</h2>
+<p>모바일 개발은 올바른 도구와 지식, 각 모바일 개발 플랫폼의 올바른 아키텍처에 대한 이해와 함께 진행되면 간단하고 쉬워집니다. HNG 인턴십을 통해 모바일 개발 여정에서 선두에 서 있기 위한 이러한 요구 사항을 충족시키고 전략에 앞서 나아갈 수 있도록 준비할 것입니다.</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"모바일 개발 플랫폼과 그들의 소프트웨어 아키텍처 패턴들 비교","description":"","date":"2024-06-30 19:22","slug":"2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns","content":"\n\n# 소개\n\n모바일 개발은 올바른 방법으로, 적절한 도구와 필요한 소프트웨어 아키텍처로 각 과정을 구현할 때 더 쉬워집니다. 애플리케이션 개발에 사용되는 많은 모바일 개발 플랫폼이 있습니다. 일부는 네이티브 애플리케이션 개발용이고, 다른 일부는 크로스 플랫폼 애플리케이션 개발용입니다. 두 가지 주요 네이티브 개발 플랫폼은 Kotlin, Java, C++을 지원하는 Android Studio(안드로이드 개발을 위한 공식 통합 개발 환경)와 Objective-C 및 Swift를 지원하는 iOS 개발을 위한 공식 통합 개발 환경 인 Xcode입니다. 일부 주요 크로스 플랫폼 플랫폼으로는 Flutter, React Native, Xamarin, Ionic 등이 있습니다. Unity, Unreal Engine, Flutterflow 및 Appgyver 같은 게임 개발 플랫폼 및 노코드 개발 플랫폼도 있습니다.\n\n![Common Mobile Development Platforms and their Software Architecture Patterns](/assets/img/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns_0.png)\n\n## 목차\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n- 소개\n- 네이티브 개발 플랫폼\n- 안드로이드 스튜디오\n- 소프트웨어 아키텍처 패턴\n- 엑스코드\n- 소프트웨어 아키텍처 패턴\n- 크로스 플랫폼 개발 플랫폼\n- 플러터\n- 소프트웨어 아키텍처 패턴\n- 일부 아키텍처의 장단점\n- 개인 경험 및 HNG 인턴십 여정\n- 결론\n\n# 네이티브 개발 플랫폼\n\n주요 모바일 애플리케이션 운영 체제 중 두 가지는 안드로이드 OS와 애플 iOS이며, 이 두 운영 체제를 위한 네이티브 개발 플랫폼은 안드로이드 스튜디오와 Xcode입니다.\n\n# 안드로이드 스튜디오\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n안드로이드 스튜디오는 안드로이드 애플리케이션 개발을 위한 공식 IDE로, Kotlin, Java, C++를 지원합니다. (또한 dart, Kotlin Multiplatform Mobile KMM 및 Jetpack Compose의 사용을 허용합니다) 모바일 애플리케이션을 개발할 수 있습니다.\n\n# 소프트웨어 아키텍처 패턴\n\n안드로이드 개발에서 사용되는 몇 가지 소프트웨어 아키텍처 패턴은 MVC(Model-View-Controller), MVP(Model-View-Presenter)입니다.\n\nMVC(Model-View-Controller):\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n- 모델: 데이터를 관리하고 애플리케이션의 로직을 관리합니다.\n- 뷰: 사용자 인터페이스 구성 요소를 나타내며 사용자에게 표시되는 데이터를 표시합니다.\n- 컨트롤러: 모델과 뷰 사이의 연결 역할을 합니다.\n\nMVP (Model-View-Presenter):\n\n- 모델: 이 경우 모델은 데이터를 관리합니다.\n- 뷰: 뷰는 데이터를 표시하고 사용자 입력을 처리하는 역할을 담당합니다.\n- 프레젠터: 모델로부터 데이터를 검색하고 뷰를 업데이트합니다.\n\n단방향 데이터 흐름 (UDF):\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n- 이건 주로 데이터가 상태에서 유저 인터페이스로의 단일 방향으로 흐르는 Jetpack Compose에서 주로 사용됩니다.\n\n## Xcode\n\nXcode은 iOS 앱 개발을 위한 공식 통합 개발 환경으로, Objective-C와 Swift를 지원합니다. 코드 편집기, 그래픽 인터페이스 디자이너, 디버거 및 iOS 시뮬레이터가 포함되어 있습니다.\n\n## 소프트웨어 아키텍처 패턴\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n안드로이드와 마찬가지로 iOS에도 애플리케이션 개발에 구현된 동일한 소프트웨어 아키텍처 패턴이 있습니다. 이러한 아키텍처 중 일부는 MVC (Model View Controller), MVP (Model View Presenter) 및 MVVM (Model View ViewModel)입니다.\n\nMVVM (Model View ViewModel):\n\n이 패턴은 안드로이드 개발 플랫폼에서 다루지 않은 것처럼 Model, View 및 ViewModel이 있으며, 각 역할은 아래와 같습니다.\n\n- Model: 데이터 표현 및 비즈니스 로직을 제공합니다.\n- View: 데이터를 보이게 하고 최종 사용자와 상호 작용합니다.\n- ViewModel: 뷰에 제시될 데이터를 관리하고 UI 관련 데이터를 처리합니다.\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n# 크로스 플랫폼 개발 플랫폼\n\n일부 주요 크로스 플랫폼 플랫폼은 Flutter, React Native, Xamarin 및 Ionic입니다. 이러한 플랫폼은 코드를 한 번 작성하고 다른 플랫폼에서 실행하는 개념을 허용합니다.\n\n# Flutter\n\nFlutter는 Google에서 만든 크로스 플랫폼 애플리케이션 개발 플랫폼으로, Dart 언어를 사용하는 단일 코드 베이스로 작성하여 Android, iOS, Web 및 데스크톱과 같은 플랫폼으로 컴파일할 수 있습니다.\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n# 소프트웨어 아키텍처 패턴\n\n## BLoC (Business Logic Component) Pattern\n\nBLoC(비즈니스 로직 컴포넌트)는 플러터에서 널리 사용되는 아키텍처 패턴으로, 사용자 인터페이스와 비즈니스 로직을 분리하는 데 중점을 둡니다. 데이터 흐름을 처리하기 위해 스트림과 시크를 사용합니다. 플러터에서 '위젯'으로 알려진 사용자 인터페이스 구성 요소는 BLoC 레이어와 상호 작용하여 데이터를 받아오고 이벤트를 보냅니다. BLoC 레이어는 로직을 보유하고 이벤트를 처리하며 앱 상태를 업데이트합니다. 이 패턴은 재사용성과 테스트 가능성을 향상시키며 응용 프로그램을 보다 반응적으로 만듭니다.\n\n## Provider Pattern\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n플러터에서 널리 사용되는 또 하나의 패턴은 Provider 패턴입니다. 이 패턴은 의존성 주입 개념을 기반으로 하며 상태를 쉽게 관리할 수 있는 방법을 제공합니다. Provider 클래스는 데이터 원본 역할을 하며 다른 위젯들은 이 데이터에 대한 액세스 및 업데이트를 할 수 있습니다. Provider 패턴을 사용하면 개발자들은 여러 화면 간에 상태를 쉽게 공유하고 관리할 수 있어서 코드의 모듈성을 향상시키고 번거로운 코드를 줄일 수 있습니다.\n\n# 일부 아키텍처의 장단점\n\n# MVC 아키텍처의 장점\n\n- 애플리케이션 개발이 빨라집니다.\n- 여러 개발자가 협업하고 함께 작업하기 쉽습니다.\n- 애플리케이션 업데이트가 쉽습니다.\n- 애플리케이션에 올바르게 작성된 다수의 수준이 있기 때문에 디버깅이 쉽습니다.\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n# MVC 아키텍처의 단점\n\n- 어느 순간 확장하기 어려워질 수 있습니다.\n- MVC 아키텍처를 이해하기 어려울 수 있습니다.\n- 메소드에 엄격한 규칙을 따라야 합니다.\n\n# MVVM 아키텍처의 장점\n\n- 개발하기 쉽습니다.\n- 테스트가 쉽습니다.\n- 유지보수가 쉽습니다.\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n# MVVM 아키텍처의 단점\n\n- 디버그하기 어려움\n- 복잡함\n\n# Business Logic Component (BLoC)의 장점\n\n- UI와 로직을 분리하기 쉬움\n- 코드를 테스트하기 쉬움\n- 코드를 재사용하기 쉬움\n- 성능이 좋음\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n# 비즈니스 로직 컴포넌트 (BLoC)의 단점\n\n- 더 많은 보일러플레이트\n\n# 개인 경험 및 HNG 인턴십 여정\n\n기술을 사랑하고 창작하는 것을 좋아하는 사람으로서, Android 네이티브 개발부터 시작해 Kotlin과 XML을 사용하여 플러터를 사용한 이동 앱 개발을 배우는 도전에 나섰습니다. 그러나 자학한 사람이기 때문에 이동 개발에 대한 이해를 더 많이 필요로 했던 중요한 영역 중 몇 가지를 놓칠 수도 있다고 생각했습니다. 그래서 글로벌 시장에 준비되었는지 알고 싶어졌고, 그 이유로 HNG11 인턴십에 합류하기로 결정했습니다. HNG11 인턴십은 이동 개발 능력을 확인하고 글로벌 시장에 준비되었는지 판단할 수 있도록 도와주는 급속한 성장 인턴십입니다.\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n인턴십은 시기 적절한 것입니다. 멘토의 안내나 이겨야 할 마감 기한이 없을 때 관심이 흩어질 수 있습니다.\n\n## 결론\n\n모바일 개발은 올바른 도구와 지식, 각 모바일 개발 플랫폼의 올바른 아키텍처에 대한 이해와 함께 진행되면 간단하고 쉬워집니다. HNG 인턴십을 통해 모바일 개발 여정에서 선두에 서 있기 위한 이러한 요구 사항을 충족시키고 전략에 앞서 나아갈 수 있도록 준비할 것입니다.","ogImage":{"url":"/assets/img/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns_0.png"},"coverImage":"/assets/img/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns_0.png","tag":["Tech"],"readingTime":8},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003ch1\u003e소개\u003c/h1\u003e\n\u003cp\u003e모바일 개발은 올바른 방법으로, 적절한 도구와 필요한 소프트웨어 아키텍처로 각 과정을 구현할 때 더 쉬워집니다. 애플리케이션 개발에 사용되는 많은 모바일 개발 플랫폼이 있습니다. 일부는 네이티브 애플리케이션 개발용이고, 다른 일부는 크로스 플랫폼 애플리케이션 개발용입니다. 두 가지 주요 네이티브 개발 플랫폼은 Kotlin, Java, C++을 지원하는 Android Studio(안드로이드 개발을 위한 공식 통합 개발 환경)와 Objective-C 및 Swift를 지원하는 iOS 개발을 위한 공식 통합 개발 환경 인 Xcode입니다. 일부 주요 크로스 플랫폼 플랫폼으로는 Flutter, React Native, Xamarin, Ionic 등이 있습니다. Unity, Unreal Engine, Flutterflow 및 Appgyver 같은 게임 개발 플랫폼 및 노코드 개발 플랫폼도 있습니다.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns_0.png\" alt=\"Common Mobile Development Platforms and their Software Architecture Patterns\"\u003e\u003c/p\u003e\n\u003ch2\u003e목차\u003c/h2\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cul\u003e\n\u003cli\u003e소개\u003c/li\u003e\n\u003cli\u003e네이티브 개발 플랫폼\u003c/li\u003e\n\u003cli\u003e안드로이드 스튜디오\u003c/li\u003e\n\u003cli\u003e소프트웨어 아키텍처 패턴\u003c/li\u003e\n\u003cli\u003e엑스코드\u003c/li\u003e\n\u003cli\u003e소프트웨어 아키텍처 패턴\u003c/li\u003e\n\u003cli\u003e크로스 플랫폼 개발 플랫폼\u003c/li\u003e\n\u003cli\u003e플러터\u003c/li\u003e\n\u003cli\u003e소프트웨어 아키텍처 패턴\u003c/li\u003e\n\u003cli\u003e일부 아키텍처의 장단점\u003c/li\u003e\n\u003cli\u003e개인 경험 및 HNG 인턴십 여정\u003c/li\u003e\n\u003cli\u003e결론\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003e네이티브 개발 플랫폼\u003c/h1\u003e\n\u003cp\u003e주요 모바일 애플리케이션 운영 체제 중 두 가지는 안드로이드 OS와 애플 iOS이며, 이 두 운영 체제를 위한 네이티브 개발 플랫폼은 안드로이드 스튜디오와 Xcode입니다.\u003c/p\u003e\n\u003ch1\u003e안드로이드 스튜디오\u003c/h1\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e안드로이드 스튜디오는 안드로이드 애플리케이션 개발을 위한 공식 IDE로, Kotlin, Java, C++를 지원합니다. (또한 dart, Kotlin Multiplatform Mobile KMM 및 Jetpack Compose의 사용을 허용합니다) 모바일 애플리케이션을 개발할 수 있습니다.\u003c/p\u003e\n\u003ch1\u003e소프트웨어 아키텍처 패턴\u003c/h1\u003e\n\u003cp\u003e안드로이드 개발에서 사용되는 몇 가지 소프트웨어 아키텍처 패턴은 MVC(Model-View-Controller), MVP(Model-View-Presenter)입니다.\u003c/p\u003e\n\u003cp\u003eMVC(Model-View-Controller):\u003c/p\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cul\u003e\n\u003cli\u003e모델: 데이터를 관리하고 애플리케이션의 로직을 관리합니다.\u003c/li\u003e\n\u003cli\u003e뷰: 사용자 인터페이스 구성 요소를 나타내며 사용자에게 표시되는 데이터를 표시합니다.\u003c/li\u003e\n\u003cli\u003e컨트롤러: 모델과 뷰 사이의 연결 역할을 합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eMVP (Model-View-Presenter):\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e모델: 이 경우 모델은 데이터를 관리합니다.\u003c/li\u003e\n\u003cli\u003e뷰: 뷰는 데이터를 표시하고 사용자 입력을 처리하는 역할을 담당합니다.\u003c/li\u003e\n\u003cli\u003e프레젠터: 모델로부터 데이터를 검색하고 뷰를 업데이트합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e단방향 데이터 흐름 (UDF):\u003c/p\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cul\u003e\n\u003cli\u003e이건 주로 데이터가 상태에서 유저 인터페이스로의 단일 방향으로 흐르는 Jetpack Compose에서 주로 사용됩니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eXcode\u003c/h2\u003e\n\u003cp\u003eXcode은 iOS 앱 개발을 위한 공식 통합 개발 환경으로, Objective-C와 Swift를 지원합니다. 코드 편집기, 그래픽 인터페이스 디자이너, 디버거 및 iOS 시뮬레이터가 포함되어 있습니다.\u003c/p\u003e\n\u003ch2\u003e소프트웨어 아키텍처 패턴\u003c/h2\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e안드로이드와 마찬가지로 iOS에도 애플리케이션 개발에 구현된 동일한 소프트웨어 아키텍처 패턴이 있습니다. 이러한 아키텍처 중 일부는 MVC (Model View Controller), MVP (Model View Presenter) 및 MVVM (Model View ViewModel)입니다.\u003c/p\u003e\n\u003cp\u003eMVVM (Model View ViewModel):\u003c/p\u003e\n\u003cp\u003e이 패턴은 안드로이드 개발 플랫폼에서 다루지 않은 것처럼 Model, View 및 ViewModel이 있으며, 각 역할은 아래와 같습니다.\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eModel: 데이터 표현 및 비즈니스 로직을 제공합니다.\u003c/li\u003e\n\u003cli\u003eView: 데이터를 보이게 하고 최종 사용자와 상호 작용합니다.\u003c/li\u003e\n\u003cli\u003eViewModel: 뷰에 제시될 데이터를 관리하고 UI 관련 데이터를 처리합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003ch1\u003e크로스 플랫폼 개발 플랫폼\u003c/h1\u003e\n\u003cp\u003e일부 주요 크로스 플랫폼 플랫폼은 Flutter, React Native, Xamarin 및 Ionic입니다. 이러한 플랫폼은 코드를 한 번 작성하고 다른 플랫폼에서 실행하는 개념을 허용합니다.\u003c/p\u003e\n\u003ch1\u003eFlutter\u003c/h1\u003e\n\u003cp\u003eFlutter는 Google에서 만든 크로스 플랫폼 애플리케이션 개발 플랫폼으로, Dart 언어를 사용하는 단일 코드 베이스로 작성하여 Android, iOS, Web 및 데스크톱과 같은 플랫폼으로 컴파일할 수 있습니다.\u003c/p\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003ch1\u003e소프트웨어 아키텍처 패턴\u003c/h1\u003e\n\u003ch2\u003eBLoC (Business Logic Component) Pattern\u003c/h2\u003e\n\u003cp\u003eBLoC(비즈니스 로직 컴포넌트)는 플러터에서 널리 사용되는 아키텍처 패턴으로, 사용자 인터페이스와 비즈니스 로직을 분리하는 데 중점을 둡니다. 데이터 흐름을 처리하기 위해 스트림과 시크를 사용합니다. 플러터에서 '위젯'으로 알려진 사용자 인터페이스 구성 요소는 BLoC 레이어와 상호 작용하여 데이터를 받아오고 이벤트를 보냅니다. BLoC 레이어는 로직을 보유하고 이벤트를 처리하며 앱 상태를 업데이트합니다. 이 패턴은 재사용성과 테스트 가능성을 향상시키며 응용 프로그램을 보다 반응적으로 만듭니다.\u003c/p\u003e\n\u003ch2\u003eProvider Pattern\u003c/h2\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e플러터에서 널리 사용되는 또 하나의 패턴은 Provider 패턴입니다. 이 패턴은 의존성 주입 개념을 기반으로 하며 상태를 쉽게 관리할 수 있는 방법을 제공합니다. Provider 클래스는 데이터 원본 역할을 하며 다른 위젯들은 이 데이터에 대한 액세스 및 업데이트를 할 수 있습니다. Provider 패턴을 사용하면 개발자들은 여러 화면 간에 상태를 쉽게 공유하고 관리할 수 있어서 코드의 모듈성을 향상시키고 번거로운 코드를 줄일 수 있습니다.\u003c/p\u003e\n\u003ch1\u003e일부 아키텍처의 장단점\u003c/h1\u003e\n\u003ch1\u003eMVC 아키텍처의 장점\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e애플리케이션 개발이 빨라집니다.\u003c/li\u003e\n\u003cli\u003e여러 개발자가 협업하고 함께 작업하기 쉽습니다.\u003c/li\u003e\n\u003cli\u003e애플리케이션 업데이트가 쉽습니다.\u003c/li\u003e\n\u003cli\u003e애플리케이션에 올바르게 작성된 다수의 수준이 있기 때문에 디버깅이 쉽습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003ch1\u003eMVC 아키텍처의 단점\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e어느 순간 확장하기 어려워질 수 있습니다.\u003c/li\u003e\n\u003cli\u003eMVC 아키텍처를 이해하기 어려울 수 있습니다.\u003c/li\u003e\n\u003cli\u003e메소드에 엄격한 규칙을 따라야 합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003eMVVM 아키텍처의 장점\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e개발하기 쉽습니다.\u003c/li\u003e\n\u003cli\u003e테스트가 쉽습니다.\u003c/li\u003e\n\u003cli\u003e유지보수가 쉽습니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003ch1\u003eMVVM 아키텍처의 단점\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e디버그하기 어려움\u003c/li\u003e\n\u003cli\u003e복잡함\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003eBusiness Logic Component (BLoC)의 장점\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003eUI와 로직을 분리하기 쉬움\u003c/li\u003e\n\u003cli\u003e코드를 테스트하기 쉬움\u003c/li\u003e\n\u003cli\u003e코드를 재사용하기 쉬움\u003c/li\u003e\n\u003cli\u003e성능이 좋음\u003c/li\u003e\n\u003c/ul\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003ch1\u003e비즈니스 로직 컴포넌트 (BLoC)의 단점\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e더 많은 보일러플레이트\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003e개인 경험 및 HNG 인턴십 여정\u003c/h1\u003e\n\u003cp\u003e기술을 사랑하고 창작하는 것을 좋아하는 사람으로서, Android 네이티브 개발부터 시작해 Kotlin과 XML을 사용하여 플러터를 사용한 이동 앱 개발을 배우는 도전에 나섰습니다. 그러나 자학한 사람이기 때문에 이동 개발에 대한 이해를 더 많이 필요로 했던 중요한 영역 중 몇 가지를 놓칠 수도 있다고 생각했습니다. 그래서 글로벌 시장에 준비되었는지 알고 싶어졌고, 그 이유로 HNG11 인턴십에 합류하기로 결정했습니다. HNG11 인턴십은 이동 개발 능력을 확인하고 글로벌 시장에 준비되었는지 판단할 수 있도록 도와주는 급속한 성장 인턴십입니다.\u003c/p\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e인턴십은 시기 적절한 것입니다. 멘토의 안내나 이겨야 할 마감 기한이 없을 때 관심이 흩어질 수 있습니다.\u003c/p\u003e\n\u003ch2\u003e결론\u003c/h2\u003e\n\u003cp\u003e모바일 개발은 올바른 도구와 지식, 각 모바일 개발 플랫폼의 올바른 아키텍처에 대한 이해와 함께 진행되면 간단하고 쉬워집니다. HNG 인턴십을 통해 모바일 개발 여정에서 선두에 서 있기 위한 이러한 요구 사항을 충족시키고 전략에 앞서 나아갈 수 있도록 준비할 것입니다.\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-06-30-CommonMobileDevelopmentPlatformsandtheirSoftwareArchitecturePatterns"},"buildId":"T_Nz0g9U1yttYMSEma95P","isFallback":false,"gsp":true,"scriptLoader":[{"async":true,"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686","strategy":"lazyOnload","crossOrigin":"anonymous"}]}</script></body></html>
