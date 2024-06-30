@@ -136,7 +136,7 @@ data-full-width-responsive="true"></ins>
 
 - windows_cloud_init.ps1
 
-```powershell
+```js
 # 변수
 $adminUsername = “ansible”
 $adminPassword = ConvertTo-SecureString “YourSecurePassword123!” -AsPlainText -Force
