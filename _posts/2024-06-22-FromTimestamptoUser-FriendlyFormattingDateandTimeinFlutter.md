@@ -14,7 +14,7 @@ Flutter 앱을 개발 중이라면 날짜를 어떤 방식으로든 표시해야
 
 우선 기본부터 시작해 봅시다. 현재 날짜와 시간을 가져오는 방법을 알아보겠습니다.
 
-```dart
+```js
 DateTime currentDateTime = DateTime.now();
 debugPrint(currentDateTime.toString());
 ```
@@ -89,7 +89,7 @@ dependencies:
 
 이 라이브러리의 최신 버전을 intl 라이브러리에서 확인할 수 있습니다.
 
-```dart
+```js
 DateTime now = DateTime.now();
 // String 형식의 변수를 dateTime으로 사용하는 경우 DateTime dateTime = DateTime.parse(variableName);
 String formattedDate = DateFormat.yMMMEd().format(now);

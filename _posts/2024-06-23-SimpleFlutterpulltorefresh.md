@@ -33,7 +33,7 @@ data-full-width-responsive="true"></ins>
 
 샘플 코드: main.dart
 
-```dart
+```js
 import 'package:flutter/material.dart';
 
 void main() {

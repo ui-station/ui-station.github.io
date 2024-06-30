@@ -116,7 +116,7 @@ data-full-width-responsive="true"></ins>
 
 ![아이미지](/assets/img/2024-06-23-UnlockingProtoDataStoreMagicinKMM_1.png)
 
-```proto
+```js
 // preference_data.proto 파일
 
 syntax = "proto3";

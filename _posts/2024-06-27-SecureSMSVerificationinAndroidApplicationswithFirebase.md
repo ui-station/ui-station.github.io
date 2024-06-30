@@ -3,13 +3,12 @@ title: "Firebase로 안드로이드 애플리케이션에서 안전한 SMS 인�
 description: ""
 coverImage: "/assets/img/2024-06-27-SecureSMSVerificationinAndroidApplicationswithFirebase_0.png"
 date: 2024-06-27 19:22
-ogImage: 
+ogImage:
   url: /assets/img/2024-06-27-SecureSMSVerificationinAndroidApplicationswithFirebase_0.png
 tag: Tech
 originalTitle: "Secure SMS Verification in Android Applications with Firebase"
 link: "https://medium.com/@backtosyns/secure-sms-verification-in-android-applications-with-firebase-ac5c249c5a97"
 ---
-
 
 ![이미지](/assets/img/2024-06-27-SecureSMSVerificationinAndroidApplicationswithFirebase_0.png)
 
@@ -20,12 +19,14 @@ link: "https://medium.com/@backtosyns/secure-sms-verification-in-android-applica
 ## Firebase 콘솔 설정
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -42,12 +43,14 @@ Firebase 콘솔에 로그인해 주세요:
 - Google 애널리틱스를 활성화하라는 요청이 표시될 수 있습니다. 원하는 옵션을 선택하고 “계속”을 클릭합니다.
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -62,12 +65,14 @@ data-full-width-responsive="true"></ins>
 Firebase에 앱 추가하기:
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -86,12 +91,14 @@ keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -sto
 ## Google 서비스 JSON 파일 다운로드하기:
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -105,23 +112,25 @@ Gradle 파일 구성하기:
 - 프로젝트 수준의 build.gradle 파일에 다음 라인을 추가해주세요:
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```gradle
+```js
 classpath 'com.google.gms:google-services:4.3.3'
 ```
 
 다음 라인을 앱 수준의 build.gradle 파일에 추가하세요:
 
-```gradle
+```js
 apply plugin: 'com.google.gms.google-services'
 
 dependencies {
@@ -134,12 +143,14 @@ dependencies {
 # 4. Firebase 인증 활성화하기
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -157,12 +168,14 @@ data-full-width-responsive="true"></ins>
 ## 프로젝트 구조 및 UI 디자인
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -218,12 +231,14 @@ activity_login.xml
 LoginActivity.kt
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -385,16 +400,17 @@ class LoginActivity : AppCompatActivity() {
 `signInWithPhoneAuthCredential` 메서드는 Firebase 인증을 사용하여 로그인 작업을 수행합니다. 확인이 성공적일 경우, 사용자 정보를 가져와 백엔드로 전송할 수 있습니다.
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
 
 ![Secure SMS Verification in Android Applications with Firebase](/assets/img/2024-06-27-SecureSMSVerificationinAndroidApplicationswithFirebase_1.png)
 
@@ -404,14 +420,15 @@ data-full-width-responsive="true"></ins>
 
 본 문서에서 안내한 단계를 따라 Android 애플리케이션에서 Firebase를 사용하여 안전한 SMS 확인을 구현할 수 있게 됩니다. 이 방법은 사용자 인증의 보안성을 향상시키는데 그치지 않고 사용자들에게 원활한 로그인 경험을 제공합니다.
 
-
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
@@ -428,12 +445,14 @@ SMS 인증을 구현하면 무단 액세스가 크게 줄어들고, 앱에 로�
 참고: 개발 단계에서 Google이 자동으로 reCaptcha 서비스를 활성화할 수 있으며, SMS 인증을 수행하는 동안 reCaptcha 화면을 볼 수 있습니다. 주제에서 벗어나지 않도록 자세히 다루지 않았습니다. 더 자세한 정보는 여기에서 확인할 수 있습니다.
 
 <!-- ui-station 사각형 -->
+
 <ins class="adsbygoogle"
 style="display:block"
 data-ad-client="ca-pub-4877378276818686"
 data-ad-slot="7249294152"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
+
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>

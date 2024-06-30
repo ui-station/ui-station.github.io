@@ -103,7 +103,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```dart
+```js
 // 여기에 코드를 넣어 주세요.
 List<CameraDescription> cameras = [];
 void getAvalaibleCamera() async {
@@ -118,7 +118,7 @@ void getAvalaibleCamera() async {
 
 단계 2: 이제 Init 함수를 정의합시다. Init 함수에서는 카메라에 필요한 모든 컨트롤러 및 기타 필요한 것들을 초기화할 것입니다. 다음과 같이 진행할 거에요.
 
-```dart
+```js
 late CameraController _cameraController;
 late CameraDescription backCamera, frontCamera;
 
@@ -593,7 +593,7 @@ data-full-width-responsive="true"></ins>
 
 해결하기 위해서는 디바이스의 현재 방향에 따라 이미지를 회전해야 합니다. 여기서는 takephoto 함수만 작성하고 있어요. 한번 봅시다...
 
-```dart
+```js
 import 'package:image/image.dart' as img;
 
 takePhoto(CustomOrientation orientation) async {

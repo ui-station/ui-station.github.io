@@ -90,8 +90,6 @@ data-full-width-responsive="true"></ins>
 fastapi==0.111.0
 ```
 
-Dockerfile을 생성하세요
-
 ```js
 FROM python:3.10-slim
 
@@ -183,7 +181,6 @@ Add requirements.txt
 fastapi==0.111.0
 
 
-Add Dockerfile
 ```
 
 <!-- ui-station 사각형 -->
@@ -199,7 +196,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```Dockerfile
+```jsfile
 FROM python:3.10-slim
 
 WORKDIR /app

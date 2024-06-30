@@ -135,7 +135,6 @@ data-full-width-responsive="true"></ins>
 docker pull someImage:latest || true
 docker build --platform linux/amd64 . \
 -t someImage:someVersion \
--f Dockerfile \
 --cache-from someImage:latest
 ```
 
@@ -209,7 +208,7 @@ data-full-width-responsive="true"></ins>
 
 ![이미지](/assets/img/2024-05-27-Howwereducedourdockerbuildtimesby40_1.png)
 
-```Dockerfile
+```jsfile
 # syntax=docker/dockerfile:1.4
 FROM baseImage:version
 COPY [--chown=<user>:<group>] [--chmod=<perms>] --link binary /opt/

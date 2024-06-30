@@ -602,15 +602,9 @@ iOS를 사용하려면 "ios/Runner/info.plist" 파일 사전에 다음을 추가
 <dict>
   ...
   <key>NSBluetoothAlwaysUsageDescription</key>
-  <string>
-    The app uses Bluetooth to find your peripheral, connect to it and to
-    exchange data.
-  </string>
+  <string>The app uses Bluetooth to find your peripheral, connect to it and to exchange data.</string>
   <key>NSBluetoothPeripheralUsageDescription</key>
-  <string>
-    The app uses Bluetooth to find your peripheral, connect to it and to
-    exchange data.
-  </string>
+  <string>The app uses Bluetooth to find your peripheral, connect to it and to exchange data.</string>
   ...
 </dict>
 ```
@@ -882,7 +876,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```dart
+```js
 @override
 void dispose() {
   _notifySub?.cancel();

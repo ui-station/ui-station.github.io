@@ -91,7 +91,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```docker
+```js
 # Dockerfile
 FROM python:3.11-slim
 
@@ -107,7 +107,7 @@ USER nonroot
 
 Make sure to build the image and create a container using the following commands:
 
-```docker
+```js
 docker build -t test .
 docker run -it test bash
 ```
@@ -237,7 +237,7 @@ data-full-width-responsive="true"></ins>
 
 그러나 루트가 아닌 사용자를 사용한다면 쓰기 권한이 필요할 것입니다. 이를 위해 chown(소유자 변경) 명령을 사용하여 쓰기 액세스가 필요한 특정 폴더에 소유권을 할당해야 합니다. 이 작업을 완료하면 사용자를 루트가 아닌 사용자로 전환할 수 있습니다.
 
-```Dockerfile
+```jsfile
 # Dockerfile
 
 # ....
@@ -422,7 +422,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```docker
+```js
 docker run -d --name modeltraining -v /home/model:/app/model <image_name>
 ```
 

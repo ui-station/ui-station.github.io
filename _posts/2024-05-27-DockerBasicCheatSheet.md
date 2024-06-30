@@ -31,13 +31,13 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```docker
+```js
 $ docker run -d --name my_container nginx
 ```
 
 docker start/stop/restart: 컨테이너를 시작, 중지 또는 재시작합니다.
 
-```docker
+```js
 $ docker stop my_container
 $ docker start my_container
 $ docker restart my_container

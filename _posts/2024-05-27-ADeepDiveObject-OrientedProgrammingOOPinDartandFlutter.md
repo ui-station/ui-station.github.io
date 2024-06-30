@@ -347,7 +347,7 @@ data-full-width-responsive="true"></ins>
 
 예시:
 
-```dart
+```js
 class Animal {
   void eat() {
     print('Animal is eating.');
@@ -408,7 +408,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```dart
+```js
 class Animal {
   void eat() {
     print('Animal is eating.');
@@ -562,7 +562,7 @@ data-full-width-responsive="true"></ins>
 
 예시:
 
-```dart
+```js
 class Car {
   String _model;
   int _year;
@@ -640,7 +640,7 @@ data-full-width-responsive="true"></ins>
 
 예시:
 
-```dart
+```js
 class MathOperations {
   double calculateArea(double radius) {
     return _calculateCircleArea(radius);
@@ -679,7 +679,7 @@ Dart에서의 공개 지정자는 클래스의 특정 부분을 노출시키면�
 
 예시:
 
-```dart
+```js
 class BankAccount {
   String _accountNumber;
   double _balance;
@@ -725,7 +725,7 @@ data-full-width-responsive="true"></ins>
 
 예시:
 
-```dart
+```js
 class Employee {
   String _name;
   double _salary;

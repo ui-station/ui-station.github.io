@@ -78,7 +78,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```docker
+```js
 FROM gcr.io/distroless/java17:nonroot
 EXPOSE 8080
 COPY target/*.jar app.jar
@@ -146,7 +146,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```docker
+```js
 # Nginx를 빌드 이미지로 사용
 FROM nginx:1.25 as build
 

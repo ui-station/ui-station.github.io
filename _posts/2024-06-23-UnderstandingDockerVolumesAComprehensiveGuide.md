@@ -351,7 +351,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```docker
+```js
 FROM node:14
 
 WORKDIR /app

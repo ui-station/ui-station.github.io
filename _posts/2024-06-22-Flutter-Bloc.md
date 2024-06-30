@@ -204,7 +204,7 @@ data-full-width-responsive="true"></ins>
 
 화면이 로드되면 GetCharacters 이벤트를 트리거합니다.
 
-```dart
+```js
 @override
 void initState() {
   super.initState();

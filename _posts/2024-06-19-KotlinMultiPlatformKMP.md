@@ -789,7 +789,7 @@ struct ContentView: View {
 
 의존성 주입 패턴을 구현하기 위해 프로젝트에 Koin을 추가하세요.
 
-```gradle
+```js
 val koinVersion = "3.4.3"
 
 // shared/build.gradle.kts

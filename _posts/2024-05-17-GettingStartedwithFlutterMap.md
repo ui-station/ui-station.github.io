@@ -260,13 +260,13 @@ data-full-width-responsive="true"></ins>
 
 md
 
-```dart
+```js
 https://stamen-tiles.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png
 ```
 
 그리고 위젯의 urlTemplate을 교체함으로써 즉시 결과를 확인할 수 있습니다:
 
-```dart
+```js
 FlutterMap(
   options: MapOptions(
     center: LatLng(51.509364, -0.128928),
@@ -383,7 +383,7 @@ data-full-width-responsive="true"></ins>
 
 ## PolylineLayer
 
-```dart
+```js
 PolylineLayer(
   polylines: [
     Polyline(

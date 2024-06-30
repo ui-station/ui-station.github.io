@@ -75,7 +75,7 @@ data-full-width-responsive="true"></ins>
 
 이 오류를 해결하려면 MaterialApp, CupertinoApp 또는 WidgetsApp과 같은 MediaQuery 객체를 소개하는 위젯이 포함된 위젯 트리를 확인하십시오. 수정된 코드는 다음과 같습니다:
 
-```dart
+```js
 import 'package:flutter/material.dart';
 
 void main() {
@@ -120,7 +120,7 @@ data-full-width-responsive="true"></ins>
 
 만약 MaterialApp을 사용하고 싶지 않다면 수동으로 위젯을 MediaQuery 위젯으로 래핑할 수 있습니다. 예를 들어:
 
-```dart
+```js
 import 'package:flutter/material.dart';
 
 void main() {

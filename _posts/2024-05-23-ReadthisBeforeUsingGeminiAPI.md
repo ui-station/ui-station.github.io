@@ -232,7 +232,7 @@ data-full-width-responsive="true"></ins>
 
 여기 다트(Dart)에서의 예시가 있어요:
 
-```dart
+```js
 void main() {
   final jsonString = jsonEncode({'story': 'string'});
   final content = await model.generateContent([
@@ -263,7 +263,7 @@ data-full-width-responsive="true"></ins>
 
 다트 코드 예시를 보여드립니다:
 
-```dart
+```js
 void main() {
   final GenerativeModel model = GenerativeModel(
     model: 'gemini-1.5-pro-latest',

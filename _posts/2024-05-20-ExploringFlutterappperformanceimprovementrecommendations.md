@@ -144,7 +144,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```dart
+```js
 class WidgetOptimizationPage extends StatefulWidget {
   const WidgetOptimizationPage({super.key});
 
@@ -265,7 +265,7 @@ data-full-width-responsive="true"></ins>
 
 다트가 다른 프로그래밍 언어와 마찬가지로 복잡한 조건의 각 부분을 계산하지 않는다는 것을 모두 알고 있을 것입니다. 일부 조건이 일찍 결정될 수 있다면 다른 조건은 심지어 계산할 필요가 없게 됩니다. 예를 들어, 여러 조건이 OR 연산자로 연결된 조건인 경우 첫 번째 조건이 true를 반환하면 다른 조건들은 계산되지 않을 것입니다. 왜냐하면 그들은 전체 조건의 결과에 영향을 미치지 않기 때문이죠.
 
-```dart
+```js
 void testLateInitialization() async {
   late final first = performCalculations();
   late final second = performComplexCalculations();
@@ -322,7 +322,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```dart
+```js
 void testLateInitialization() async {
   late final first = performCalculations();
 
@@ -346,7 +346,7 @@ Future<bool> performComplexCalculations() async {
 
 하나의 변수에 대한 늦은 초기화가 어떻게 작동하는지를 보여드렸습니다. 이제 게으른 컬렉션에 대해 이야기해 봅시다. Dart에서 List 객체에서 호출되는 많은 메서드는 Iterable을 반환합니다. Iterable은 자신의 항목을 반복하는 방법을 제공하는 추상 mixin입니다. 사실 List나 Set과 같은 컬렉션은 Iterable mixin을 구현합니다. Iterable의 요소는 요청될 때 계산되는 특징이 있습니다. 다음 코드를 살펴보겠습니다:
 
-```dart
+```js
 class ListObject {
   int value;
 
@@ -489,7 +489,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```dart
+```js
 class _AddingCounterPageState extends State<AddingCounterPage> {
   final BehaviorSubject<int> counter = BehaviorSubject<int>.seeded(1);
 
@@ -554,7 +554,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```dart
+```js
 class _AddingCounterPageState extends State<AddingCounterPage> {
   final BehaviorSubject<int> counter = BehaviorSubject<int>.seeded(1);
   late final StreamSubscription subscription;
@@ -715,7 +715,7 @@ data-full-width-responsive="true"></ins>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-```dart
+```js
 Image.asset(
   'lib/assets/landscape.jpg',
   cacheWidth: MediaQuery.of(context).devicePixelRatio.round() * MediaQuery.of(context).size.width.round(),

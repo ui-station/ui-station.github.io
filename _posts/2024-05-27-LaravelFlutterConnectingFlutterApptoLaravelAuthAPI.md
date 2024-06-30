@@ -198,7 +198,7 @@ data-full-width-responsive="true"></ins>
 
 (파일 → lib/login_screen.dart)
 
-```dart
+```js
 import 'package:flutter/material.dart';
 import 'services/auth_service.dart';
 
@@ -330,7 +330,7 @@ data-full-width-responsive="true"></ins>
 
 (파일 → lib/main.dart)
 
-```dart
+```js
 import 'package:flutter/material.dart';
 import 'login_screen.dart';
 
