@@ -83,7 +83,7 @@ data-full-width-responsive="true"></ins>
 
 ## 메소드 안에서 변수를 어떻게 동결하면 될까요?
 
-```ruby
+```js
 def test_method
   first_variable = "상수 1".freeze
 end
@@ -91,7 +91,7 @@ end
 
 이제 이렇게 하면 오류가 발생하지는 않지만, first_variable이 이제 상수인 것은 아닙니다. 이렇게 하면 값인 "상수 1"을 동결시키는 것 뿐입니다. 변수의 값을 변경하더라도 오류 없이 수행됩니다.
 
-```ruby
+```js
 def test_method
   first_variable = "상수 1".freeze
 
