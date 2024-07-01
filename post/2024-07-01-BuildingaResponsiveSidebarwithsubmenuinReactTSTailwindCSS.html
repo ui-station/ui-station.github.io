@@ -1,0 +1,291 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>ReactTS와 Tailwind CSS로 서브 메뉴가 있는 반응형 사이드바 만들기 | ui-station</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://ui-station.github.io///post/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="ReactTS와 Tailwind CSS로 서브 메뉴가 있는 반응형 사이드바 만들기 | ui-station" data-gatsby-head="true"/><meta property="og:title" content="ReactTS와 Tailwind CSS로 서브 메뉴가 있는 반응형 사이드바 만들기 | ui-station" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://ui-station.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://ui-station.github.io///post/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS" data-gatsby-head="true"/><meta name="twitter:title" content="ReactTS와 Tailwind CSS로 서브 메뉴가 있는 반응형 사이드바 만들기 | ui-station" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | ui-station" data-gatsby-head="true"/><meta name="article:published_time" content="2024-07-01 16:27" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BHFR6GTH9P"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-BHFR6GTH9P');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-ac4aa08aae62f90e.js" defer=""></script><script src="/_next/static/chunks/463-0429087d4c0b0335.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-70e5ce89f3d962ac.js" defer=""></script><script src="/_next/static/GsgRekSb--BvxYwv9FPn6/_buildManifest.js" defer=""></script><script src="/_next/static/GsgRekSb--BvxYwv9FPn6/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">UI STATION</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">ReactTS와 Tailwind CSS로 서브 메뉴가 있는 반응형 사이드바 만들기</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="ReactTS와 Tailwind CSS로 서브 메뉴가 있는 반응형 사이드바 만들기" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">UI STATION</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jul 1, 2024</span><span class="posts_reading_time__f7YPP">11<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<img src="/assets/img/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS_0.png">
+<p>소개:</p>
+<p>현재의 웹 개발 환경에서는 사용자 친화적인 인터페이스를 만드는 것이 매우 중요합니다. 직관적인 사용자 경험을 제공하기 위해 많은 웹 애플리케이션에서 발견되는 일반적인 UI 요소 중 하나가 사이드바입니다. 이 튜토리얼에서는 TypeScript, ReactJS, 그리고 Tailwind CSS를 사용하여 반응형 사이드바를 디자인하는 방법을 살펴보겠습니다. 우리는 코드를 단계별로 분해하고, 각 구성 요소가 사이드바의 기능에 어떻게 기여하는지 설명할 것입니다.</p>
+<p>의존성:</p>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<ul>
+<li>히어로아이콘을 사용 중이지만 원하는 아이콘 라이브러리를 사용할 수 있어요.</li>
+<li>이미 ReactTS, Tailwind 프로젝트 설정이 되어 있다고 가정할게요.</li>
+</ul>
+<p>Tailwind 개념:</p>
+<p>코드를 살펴보기 전에 Tailwind에 대해 몇 가지 개념을 알아두는 것이 중요해요 (그리고 제가 마주한 몇 가지 함정을 피할 수 있을 거에요 😅).</p>
+<ul>
+<li>Tailwind는 완전한, 중간에 끊어지지 않은 문자열로 발생하는 클래스 네임만을 컴파일해요. 이에 대해 더 읽어보고 싶다면 <a href="https://tailwindcss.com/docs/content-configuration#dynamic-class-names" rel="nofollow" target="_blank">https://tailwindcss.com/docs/content-configuration#dynamic-class-names</a> 여기를 확인해 보세요.</li>
+<li>즉, 우리가 실행 중에 결정되는 조건부 변수를 전달하려고 한다면
+<code>div class=”text-'' error ? ‘red’ : ‘green’ ''-600"</code>/div
+원하는대로 렌더링되지 않아요.</li>
+</ul>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>Tailwind 및 CSS 클래스 사용:</p>
+<ul>
+<li>화면에 고정된 inset-0을 사용하여 항상 보이도록 설정하고 화면에 고정시킵니다.</li>
+<li>transition-all 유틸리티 클래스는 모든 CSS 속성에 전환 또는 애니메이션 효과를 적용하는 데 사용됩니다.</li>
+<li>transition-all을 적용한 후에 우리가 애니메이션을 적용하고자 하는 속성을 제공합니다. 이 경우에는 w-32에서 w-0까지이며, 이는 너비에 대한 모든 변경 사항이 일정 기간 동안 부드럽게 이루어집니다.</li>
+<li>-z-10은 음수 10 z-인덱스를 부여하는 데 사용됩니다.</li>
+<li>sm: md: lg:는 화면 분기점으로, css에서 @media (최소 너비: [어떤 너비])의 동등한 것입니다. 분기점이 적용된 모든 스타일은 모든 화면 크기에 적용된다는 점을 기억하는 것이 중요합니다 (예: sm: w-30은 md 및 lg에도 적용됩니다).</li>
+<li>w-5/6은 너비가 83.33%가됨을 의미하며, 이는 모바일 뷰에서만 표시됩니다.</li>
+<li>하위 메뉴 항목에 대한 높이 애니메이션을 위해 사용자 정의 css 전환: 높이 300ms;</li>
+</ul>
+<p>이제 코드로 이동합시다:</p>
+<p>사이드바 컴포넌트:</p>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>import {
+ArrowRightIcon,
+ArrowLeftIcon,
+HomeIcon,
+CogIcon,
+UserIcon,
+EllipsisVerticalIcon,
+} from '@heroicons/react/24/outline';
+import { useState } from 'react';
+import SidebarItem from './SidebarItem';</p>
+<p>// 이 사이드바 컴포넌트는 모바일과 데스크톱 모두를 위한 것입니다.
+function Sidebar({ children, expanded, setExpanded }: any) {
+return (
+</p><div class="relative">
+{/*
+이 div는 사이드바가 확장될 때 배경 오버레이를 만드는 데 사용됩니다.
+이는 모바일 화면에서만 표시됩니다.
+*/}
+&#x3C;div
+className={<code>fixed inset-0 -z-10 block bg-gray-400  ${expanded ? 'block sm:hidden' : 'hidden'}</code>}
+/>
+&#x3C;aside
+className={<code>box-border h-screen transition-all ${expanded ? 'w-5/6 sm:w-64' : 'w-0 sm:w-20'}</code>}
+>
+<nav class="flex h-full flex-col border-r bg-white shadow-sm">
+<div class="flex items-center justify-between p-4 pb-2">
+&#x3C;img
+src="<a href="https://img.logoipsum.com/243.svg" rel="nofollow" target="_blank">https://img.logoipsum.com/243.svg</a>"
+className={<code>overflow-hidden transition-all ${                 expanded ? 'w-32' : 'w-0'               }</code>}
+alt=""
+/>
+&#x3C;div className={<code>${expanded ? '' : 'hidden sm:block'}</code>}>
+&#x3C;button
+onClick={() => setExpanded((curr: boolean) => !curr)}
+className="rounded-lg bg-gray-50 p-1.5 hover:bg-gray-100"
+>
+{expanded ? (
+<arrowrighticon class="h-6 w-6">
+) : (
+<arrowlefticon class="h-6 w-6">
+)}
+
+</arrowlefticon></arrowrighticon></div>
+</nav></div>
+<ul class="flex-1 px-3">{children}</ul>
+<div class="flex border-t p-3">
+<img src="https://ui-avatars.com/api/?background=c7d2fe&#x26;color=3730a3&#x26;bold=true&#x26;name=Mark+Ruffalo" alt="" class="h-10 w-10 rounded-md">
+&#x3C;div
+className={<code>              flex items-center justify-between               overflow-hidden transition-all ${expanded ? 'ml-3 w-52' : 'w-0'}          </code>}
+>
+<div class="leading-4">
+<h4 class="font-semibold">Mark Ruffalo</h4>
+<span class="text-xs text-gray-600"><a href="mailto:mark@gmail.com">mark@gmail.com</a></span>
+</div>
+<ellipsisverticalicon class="h-6 w-6">
+</ellipsisverticalicon></div>
+
+
+
+
+);
+}<p></p>
+<p>export default function MakeSidebar() {
+const [expanded, setExpanded] = useState(true);
+const navBarItems = [
+{
+icon: <homeicon>,
+text: 'Home',
+active: true,
+},
+{
+icon: <usericon>,
+subMenu: [
+{
+icon: <usericon>,
+text: 'Profile',
+},
+{
+icon: <cogicon>,
+text: 'Settings',
+},
+],
+text: 'Profile',
+},
+{
+icon: <cogicon>,
+text: 'Settings',
+},
+];</cogicon></cogicon></usericon></usericon></homeicon></p>
+<p>// 데스크톱 사이드바
+return (
+<sidebar expanded="{expanded}" setexpanded="{setExpanded}">
+{navBarItems.map((item, index) => (
+&#x3C;SidebarItem key={index} expanded={expanded} {...item} />
+))}
+</sidebar>
+);
+}</p>
+<p>이제 코드를 각각의 부분으로 나누어보겠습니다. MakeSidebar 래퍼 함수는 확장 여부를 제어하는 expanded: boolean 상태를 정의하는 동시에 사이드바를 생성합니다. 여기서는 간단한 React 상태를 사용했지만 애플리케이션에 따라 프롭 드릴링을 피하기 위해 Redux/전역 상태를 사용할 수도 있습니다.</p>
+<p>위의 예시에서 설명했듯이 메뉴 항목 텍스트와 헤더 아이콘의 애니메이션을 transition-all 클래스로 제어하고 있습니다.</p>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>모바일 화면에서만 표시되는 오버레이인 이 div는 모바일 화면에서 메뉴가 열렸을 때 볼 수 있는 배경을 어둡게 바꾸는 효과를 제공합니다.</p>
+<p>저희 <code>aside</code> 요소에 <code>w-5/6</code>을 적용했음을 주목해주세요. 이것이 모바일 화면을 제어하는 부분입니다.</p>
+<p>사이드바 아이템 컴포넌트:</p>
+<p>import { ChevronRightIcon } from '@heroicons/react/24/outline';
+import { useEffect, useState } from 'react';</p>
+<p>interface SidebarItemProps {
+active?: boolean;
+icon: React.ReactNode;
+text: string;
+expanded: boolean;
+subMenu?: SubMenuItemProps[] | null;
+}</p>
+<p>// 서브메뉴 항목들은 추가적인 서브메뉴 항목을 가질 수 없으므로 확장될 수 없다고 가정합니다.
+interface SubMenuItemProps extends Omit&#x3C;SidebarItemProps, 'expanded'> {
+expanded?: never;
+subMenu?: never;
+}</p>
+<p>// 이 컴포넌트는 마우스를 갖다대었을 때 서브메뉴 항목들을 렌더링하는 데 사용됩니다.
+function HoveredSubMenuItem({ icon, text, active }: SubMenuItemProps) {
+return (
+&#x3C;div
+className={<code>my-2 rounded-md p-2 ${         active ? 'bg-gray-300' : ' hover:bg-indigo-50'       }</code>}
+>
+</p><div class="flex items-center justify-center">
+<span class="text-primary-500 h-6 w-6">{icon}</span>
+<span class="text-primary-500 ml-3 w-28 text-start">{text}</span>
+<div class="bg-primary-200 h-1">
+</div>
+</div>
+);
+}<p></p>
+<p>export default function SidebarItem({
+icon,
+active = false,
+text,
+expanded = false,
+subMenu = null,
+}: SidebarItemProps) {
+const [expandSubMenu, setExpandSubMenu] = useState(false);</p>
+<p>useEffect(() => {
+if (!expanded) {
+setExpandSubMenu(false);
+}
+}, [expanded]);</p>
+<p>// 각 항목이 40px 높이라고 가정하고 서브메뉴의 높이를 계산합니다.
+const subMenuHeight = expandSubMenu
+? <code>${((subMenu?.length || 0) * 40 + (subMenu! &#x26;&#x26; 15)).toString()}px</code>
+: 0;</p>
+<p>return (
+&#x3C;>
+</p><li>
+&#x3C;button
+className={<code>         group relative my-1 flex w-full cursor-pointer          items-center rounded-md px-3          py-2 font-medium transition-colors          ${            active &#x26;&#x26; !subMenu              ? 'text-primary-500 bg-gradient-to-tr from-indigo-200 to-indigo-100'              : 'text-gray-600 hover:bg-indigo-50'          }          ${!expanded &#x26;&#x26; 'hidden sm:flex'}     </code>}
+onClick={() => setExpandSubMenu((curr) => expanded &#x26;&#x26; !curr)}
+>
+<span class="h-6 w-6">{icon}</span><p></p>
+<pre><code>      &#x3C;span
+        className={`overflow-hidden text-start transition-all ${
+          expanded ? 'ml-3 w-44' : 'w-0'
+        }`}
+      >
+        {text}
+      &#x3C;/span>
+      {subMenu &#x26;&#x26; (
+        &#x3C;div
+          className={`absolute right-2 h-4 w-4${expanded ? '' : 'top-2'} transition-all ${expandSubMenu ? 'rotate-90' : 'rotate-0'}`}
+        >
+          &#x3C;ChevronRightIcon />
+        &#x3C;/div>
+      )}
+
+      {/* 
+        마우스를 갖다댔을 때 항목 텍스트 또는 서브메뉴 항목들을 표시합니다.
+      */}
+      {!expanded &#x26;&#x26; (
+        &#x3C;div
+          className={`
+        text-primary-500 invisible absolute left-full ml-6 -translate-x-3
+        rounded-md bg-indigo-100 px-2
+        py-1 text-sm opacity-20 transition-all
+        group-hover:visible group-hover:translate-x-0 group-hover:opacity-100
+    `}
+        >
+          {/* 
+            만약 갖다댔을 때 항목에 서브메뉴가 없다면 텍스트를 표시하고
+            그렇지 않다면 서브메뉴 항목들을 표시합니다.
+          */}
+          {!subMenu
+            ? text
+            : subMenu.map((item, index) => (
+                &#x3C;HoveredSubMenuItem
+                  key={index}
+                  text={item.text}
+                  icon={item.icon}
+                />
+              ))}
+        &#x3C;/div>
+      )}
+    &#x3C;/button>
+  &#x3C;/li>
+  &#x3C;ul
+    className="sub-menu pl-6"
+    style={{ height: subMenuHeight }}
+  >
+    {/* 
+      만약 항목이 서브메뉴를 가지고 있다면 서브메뉴 항목들을 렌더링합니다.
+      서브메뉴 항목들은 SidebarItem 컴포넌트로 렌더링됩니다.
+    */}
+    {expanded &#x26;&#x26;
+      subMenu?.map((item, index) => (
+        &#x3C;SidebarItem key={index} {...item} expanded={expanded} />
+      ))}
+  &#x3C;/ul>
+&#x3C;/>
+</code></pre>
+<p>);
+}</p>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>여기에는 Tailwind에서 작동하지 않는 높이 속성에 대한 애니메이션을 적용하기 위해 사용되는 sub-menu이라는 사용자 정의 css 클래스가 포함되어 있습니다. 따라서 다음과 같이 index.css 파일에서 사용자 정의 css 클래스를 정의하세요.</p>
+<p>.sub-menu {
+overflow: hidden;
+transition: height 300ms;
+}</p>
+<p>결론:</p>
+<p>이 튜토리얼에서는 TypeScript, ReactTS 및 Tailwind CSS를 사용하여 반응형 사이드바를 디자인하는 방법을 살펴보았습니다. Sidebar 및 SidebarItem 구성 요소의 코드를 분해하여 각 부분이 기능적인 사이드바 인터페이스를 만드는 데 어떤 역할을 하는지 설명했습니다. 이러한 단계를 따르고 기본 개념을 이해하면 다양한 화면 크기에 적응하는 직관적인 탐색 요소로 웹 애플리케이션을 향상시킬 수 있습니다. 즐거운 코딩하세요!</p></li>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"ReactTS와 Tailwind CSS로 서브 메뉴가 있는 반응형 사이드바 만들기","description":"","date":"2024-07-01 16:27","slug":"2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS","content":"\n\n\u003cimg src=\"/assets/img/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS_0.png\" /\u003e\n\n소개:\n\n현재의 웹 개발 환경에서는 사용자 친화적인 인터페이스를 만드는 것이 매우 중요합니다. 직관적인 사용자 경험을 제공하기 위해 많은 웹 애플리케이션에서 발견되는 일반적인 UI 요소 중 하나가 사이드바입니다. 이 튜토리얼에서는 TypeScript, ReactJS, 그리고 Tailwind CSS를 사용하여 반응형 사이드바를 디자인하는 방법을 살펴보겠습니다. 우리는 코드를 단계별로 분해하고, 각 구성 요소가 사이드바의 기능에 어떻게 기여하는지 설명할 것입니다.\n\n의존성:\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n- 히어로아이콘을 사용 중이지만 원하는 아이콘 라이브러리를 사용할 수 있어요.\n- 이미 ReactTS, Tailwind 프로젝트 설정이 되어 있다고 가정할게요.\n\nTailwind 개념:\n\n코드를 살펴보기 전에 Tailwind에 대해 몇 가지 개념을 알아두는 것이 중요해요 (그리고 제가 마주한 몇 가지 함정을 피할 수 있을 거에요 😅).\n\n- Tailwind는 완전한, 중간에 끊어지지 않은 문자열로 발생하는 클래스 네임만을 컴파일해요. 이에 대해 더 읽어보고 싶다면 https://tailwindcss.com/docs/content-configuration#dynamic-class-names 여기를 확인해 보세요.\n- 즉, 우리가 실행 중에 결정되는 조건부 변수를 전달하려고 한다면\n```div class=”text-'' error ? ‘red’ : ‘green’ ''-600\"```/div\n원하는대로 렌더링되지 않아요.\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\nTailwind 및 CSS 클래스 사용:\n\n- 화면에 고정된 inset-0을 사용하여 항상 보이도록 설정하고 화면에 고정시킵니다.\n- transition-all 유틸리티 클래스는 모든 CSS 속성에 전환 또는 애니메이션 효과를 적용하는 데 사용됩니다.\n- transition-all을 적용한 후에 우리가 애니메이션을 적용하고자 하는 속성을 제공합니다. 이 경우에는 w-32에서 w-0까지이며, 이는 너비에 대한 모든 변경 사항이 일정 기간 동안 부드럽게 이루어집니다.\n- -z-10은 음수 10 z-인덱스를 부여하는 데 사용됩니다.\n- sm: md: lg:는 화면 분기점으로, css에서 @media (최소 너비: [어떤 너비])의 동등한 것입니다. 분기점이 적용된 모든 스타일은 모든 화면 크기에 적용된다는 점을 기억하는 것이 중요합니다 (예: sm: w-30은 md 및 lg에도 적용됩니다).\n- w-5/6은 너비가 83.33%가됨을 의미하며, 이는 모바일 뷰에서만 표시됩니다.\n- 하위 메뉴 항목에 대한 높이 애니메이션을 위해 사용자 정의 css 전환: 높이 300ms;\n\n이제 코드로 이동합시다:\n\n사이드바 컴포넌트:\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\nimport {\n  ArrowRightIcon,\n  ArrowLeftIcon,\n  HomeIcon,\n  CogIcon,\n  UserIcon,\n  EllipsisVerticalIcon,\n} from '@heroicons/react/24/outline';\nimport { useState } from 'react';\nimport SidebarItem from './SidebarItem';\n\n// 이 사이드바 컴포넌트는 모바일과 데스크톱 모두를 위한 것입니다.\nfunction Sidebar({ children, expanded, setExpanded }: any) {\n  return (\n    \u003cdiv className=\"relative\"\u003e\n      {/* \n        이 div는 사이드바가 확장될 때 배경 오버레이를 만드는 데 사용됩니다.\n        이는 모바일 화면에서만 표시됩니다.\n      */}\n      \u003cdiv\n        className={`fixed inset-0 -z-10 block bg-gray-400  ${expanded ? 'block sm:hidden' : 'hidden'}`}\n      /\u003e\n      \u003caside\n        className={`box-border h-screen transition-all ${expanded ? 'w-5/6 sm:w-64' : 'w-0 sm:w-20'}`}\n      \u003e\n        \u003cnav className=\"flex h-full flex-col border-r bg-white shadow-sm\"\u003e\n          \u003cdiv className=\"flex items-center justify-between p-4 pb-2\"\u003e\n            \u003cimg\n              src=\"https://img.logoipsum.com/243.svg\"\n              className={`overflow-hidden transition-all ${\n                expanded ? 'w-32' : 'w-0'\n              }`}\n              alt=\"\"\n            /\u003e\n            \u003cdiv className={`${expanded ? '' : 'hidden sm:block'}`}\u003e\n              \u003cbutton\n                onClick={() =\u003e setExpanded((curr: boolean) =\u003e !curr)}\n                className=\"rounded-lg bg-gray-50 p-1.5 hover:bg-gray-100\"\n              \u003e\n                {expanded ? (\n                  \u003cArrowRightIcon className=\"h-6 w-6\" /\u003e\n                ) : (\n                  \u003cArrowLeftIcon className=\"h-6 w-6\" /\u003e\n                )}\n              \u003c/button\u003e\n            \u003c/div\u003e\n          \u003c/div\u003e\n          \u003cul className=\"flex-1 px-3\"\u003e{children}\u003c/ul\u003e\n          \u003cdiv className=\"flex border-t p-3\"\u003e\n            \u003cimg\n              src=\"https://ui-avatars.com/api/?background=c7d2fe\u0026color=3730a3\u0026bold=true\u0026name=Mark+Ruffalo\"\n              alt=\"\"\n              className=\"h-10 w-10 rounded-md\"\n            /\u003e\n            \u003cdiv\n              className={`\n              flex items-center justify-between\n              overflow-hidden transition-all ${expanded ? 'ml-3 w-52' : 'w-0'}\n          `}\n            \u003e\n              \u003cdiv className=\"leading-4\"\u003e\n                \u003ch4 className=\"font-semibold\"\u003eMark Ruffalo\u003c/h4\u003e\n                \u003cspan className=\"text-xs text-gray-600\"\u003emark@gmail.com\u003c/span\u003e\n              \u003c/div\u003e\n              \u003cEllipsisVerticalIcon className=\"h-6 w-6\" /\u003e\n            \u003c/div\u003e\n          \u003c/div\u003e\n        \u003c/nav\u003e\n      \u003c/aside\u003e\n    \u003c/div\u003e\n  );\n}\n\nexport default function MakeSidebar() {\n  const [expanded, setExpanded] = useState(true);\n  const navBarItems = [\n    {\n      icon: \u003cHomeIcon /\u003e,\n      text: 'Home',\n      active: true,\n    },\n    {\n      icon: \u003cUserIcon /\u003e,\n      subMenu: [\n        {\n          icon: \u003cUserIcon /\u003e,\n          text: 'Profile',\n        },\n        {\n          icon: \u003cCogIcon /\u003e,\n          text: 'Settings',\n        },\n      ],\n      text: 'Profile',\n    },\n    {\n      icon: \u003cCogIcon /\u003e,\n      text: 'Settings',\n    },\n  ];\n\n  // 데스크톱 사이드바\n  return (\n    \u003cSidebar expanded={expanded} setExpanded={setExpanded}\u003e\n      {navBarItems.map((item, index) =\u003e (\n        \u003cSidebarItem key={index} expanded={expanded} {...item} /\u003e\n      ))}\n    \u003c/Sidebar\u003e\n  );\n}\r\n\n이제 코드를 각각의 부분으로 나누어보겠습니다. MakeSidebar 래퍼 함수는 확장 여부를 제어하는 expanded: boolean 상태를 정의하는 동시에 사이드바를 생성합니다. 여기서는 간단한 React 상태를 사용했지만 애플리케이션에 따라 프롭 드릴링을 피하기 위해 Redux/전역 상태를 사용할 수도 있습니다.\n\n위의 예시에서 설명했듯이 메뉴 항목 텍스트와 헤더 아이콘의 애니메이션을 transition-all 클래스로 제어하고 있습니다.\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n모바일 화면에서만 표시되는 오버레이인 이 div는 모바일 화면에서 메뉴가 열렸을 때 볼 수 있는 배경을 어둡게 바꾸는 효과를 제공합니다.\n\n저희 `aside` 요소에 `w-5/6`을 적용했음을 주목해주세요. 이것이 모바일 화면을 제어하는 부분입니다.\n\n사이드바 아이템 컴포넌트:\n\nimport { ChevronRightIcon } from '@heroicons/react/24/outline';\nimport { useEffect, useState } from 'react';\n\ninterface SidebarItemProps {\n  active?: boolean;\n  icon: React.ReactNode;\n  text: string;\n  expanded: boolean;\n  subMenu?: SubMenuItemProps[] | null;\n}\n\n// 서브메뉴 항목들은 추가적인 서브메뉴 항목을 가질 수 없으므로 확장될 수 없다고 가정합니다.\ninterface SubMenuItemProps extends Omit\u003cSidebarItemProps, 'expanded'\u003e {\n  expanded?: never;\n  subMenu?: never;\n}\n\n// 이 컴포넌트는 마우스를 갖다대었을 때 서브메뉴 항목들을 렌더링하는 데 사용됩니다.\nfunction HoveredSubMenuItem({ icon, text, active }: SubMenuItemProps) {\n  return (\n    \u003cdiv\n      className={`my-2 rounded-md p-2 ${\n        active ? 'bg-gray-300' : ' hover:bg-indigo-50'\n      }`}\n    \u003e\n      \u003cdiv className=\"flex items-center justify-center \"\u003e\n        \u003cspan className=\"text-primary-500 h-6 w-6 \"\u003e{icon}\u003c/span\u003e\n        \u003cspan className=\"text-primary-500 ml-3 w-28 text-start\"\u003e{text}\u003c/span\u003e\n        \u003cdiv className=\"bg-primary-200 h-1\" /\u003e\n      \u003c/div\u003e\n    \u003c/div\u003e\n  );\n}\n\nexport default function SidebarItem({\n  icon,\n  active = false,\n  text,\n  expanded = false,\n  subMenu = null,\n}: SidebarItemProps) {\n  const [expandSubMenu, setExpandSubMenu] = useState(false);\n\n  useEffect(() =\u003e {\n    if (!expanded) {\n      setExpandSubMenu(false);\n    }\n  }, [expanded]);\n\n  // 각 항목이 40px 높이라고 가정하고 서브메뉴의 높이를 계산합니다.\n  const subMenuHeight = expandSubMenu\n    ? `${((subMenu?.length || 0) * 40 + (subMenu! \u0026\u0026 15)).toString()}px`\n    : 0;\n\n  return (\n    \u003c\u003e\n      \u003cli\u003e\n        \u003cbutton\n          className={`\n         group relative my-1 flex w-full cursor-pointer\n         items-center rounded-md px-3\n         py-2 font-medium transition-colors\n         ${\n           active \u0026\u0026 !subMenu\n             ? 'text-primary-500 bg-gradient-to-tr from-indigo-200 to-indigo-100'\n             : 'text-gray-600 hover:bg-indigo-50'\n         }\n         ${!expanded \u0026\u0026 'hidden sm:flex'}\n     `}\n          onClick={() =\u003e setExpandSubMenu((curr) =\u003e expanded \u0026\u0026 !curr)}\n        \u003e\n          \u003cspan className=\"h-6 w-6\"\u003e{icon}\u003c/span\u003e\n\n          \u003cspan\n            className={`overflow-hidden text-start transition-all ${\n              expanded ? 'ml-3 w-44' : 'w-0'\n            }`}\n          \u003e\n            {text}\n          \u003c/span\u003e\n          {subMenu \u0026\u0026 (\n            \u003cdiv\n              className={`absolute right-2 h-4 w-4${expanded ? '' : 'top-2'} transition-all ${expandSubMenu ? 'rotate-90' : 'rotate-0'}`}\n            \u003e\n              \u003cChevronRightIcon /\u003e\n            \u003c/div\u003e\n          )}\n\n          {/* \n            마우스를 갖다댔을 때 항목 텍스트 또는 서브메뉴 항목들을 표시합니다.\n          */}\n          {!expanded \u0026\u0026 (\n            \u003cdiv\n              className={`\n            text-primary-500 invisible absolute left-full ml-6 -translate-x-3\n            rounded-md bg-indigo-100 px-2\n            py-1 text-sm opacity-20 transition-all\n            group-hover:visible group-hover:translate-x-0 group-hover:opacity-100\n        `}\n            \u003e\n              {/* \n                만약 갖다댔을 때 항목에 서브메뉴가 없다면 텍스트를 표시하고\n                그렇지 않다면 서브메뉴 항목들을 표시합니다.\n              */}\n              {!subMenu\n                ? text\n                : subMenu.map((item, index) =\u003e (\n                    \u003cHoveredSubMenuItem\n                      key={index}\n                      text={item.text}\n                      icon={item.icon}\n                    /\u003e\n                  ))}\n            \u003c/div\u003e\n          )}\n        \u003c/button\u003e\n      \u003c/li\u003e\n      \u003cul\n        className=\"sub-menu pl-6\"\n        style={{ height: subMenuHeight }}\n      \u003e\n        {/* \n          만약 항목이 서브메뉴를 가지고 있다면 서브메뉴 항목들을 렌더링합니다.\n          서브메뉴 항목들은 SidebarItem 컴포넌트로 렌더링됩니다.\n        */}\n        {expanded \u0026\u0026\n          subMenu?.map((item, index) =\u003e (\n            \u003cSidebarItem key={index} {...item} expanded={expanded} /\u003e\n          ))}\n      \u003c/ul\u003e\n    \u003c/\u003e\n  );\n}\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n여기에는 Tailwind에서 작동하지 않는 높이 속성에 대한 애니메이션을 적용하기 위해 사용되는 sub-menu이라는 사용자 정의 css 클래스가 포함되어 있습니다. 따라서 다음과 같이 index.css 파일에서 사용자 정의 css 클래스를 정의하세요.\n\n.sub-menu {\n  overflow: hidden;\n  transition: height 300ms;\n}\n\n결론:\n\n이 튜토리얼에서는 TypeScript, ReactTS 및 Tailwind CSS를 사용하여 반응형 사이드바를 디자인하는 방법을 살펴보았습니다. Sidebar 및 SidebarItem 구성 요소의 코드를 분해하여 각 부분이 기능적인 사이드바 인터페이스를 만드는 데 어떤 역할을 하는지 설명했습니다. 이러한 단계를 따르고 기본 개념을 이해하면 다양한 화면 크기에 적응하는 직관적인 탐색 요소로 웹 애플리케이션을 향상시킬 수 있습니다. 즐거운 코딩하세요!","ogImage":{"url":"/assets/img/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS_0.png"},"coverImage":"/assets/img/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS_0.png","tag":["Tech"],"readingTime":11},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cimg src=\"/assets/img/2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS_0.png\"\u003e\n\u003cp\u003e소개:\u003c/p\u003e\n\u003cp\u003e현재의 웹 개발 환경에서는 사용자 친화적인 인터페이스를 만드는 것이 매우 중요합니다. 직관적인 사용자 경험을 제공하기 위해 많은 웹 애플리케이션에서 발견되는 일반적인 UI 요소 중 하나가 사이드바입니다. 이 튜토리얼에서는 TypeScript, ReactJS, 그리고 Tailwind CSS를 사용하여 반응형 사이드바를 디자인하는 방법을 살펴보겠습니다. 우리는 코드를 단계별로 분해하고, 각 구성 요소가 사이드바의 기능에 어떻게 기여하는지 설명할 것입니다.\u003c/p\u003e\n\u003cp\u003e의존성:\u003c/p\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cul\u003e\n\u003cli\u003e히어로아이콘을 사용 중이지만 원하는 아이콘 라이브러리를 사용할 수 있어요.\u003c/li\u003e\n\u003cli\u003e이미 ReactTS, Tailwind 프로젝트 설정이 되어 있다고 가정할게요.\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003eTailwind 개념:\u003c/p\u003e\n\u003cp\u003e코드를 살펴보기 전에 Tailwind에 대해 몇 가지 개념을 알아두는 것이 중요해요 (그리고 제가 마주한 몇 가지 함정을 피할 수 있을 거에요 😅).\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003eTailwind는 완전한, 중간에 끊어지지 않은 문자열로 발생하는 클래스 네임만을 컴파일해요. 이에 대해 더 읽어보고 싶다면 \u003ca href=\"https://tailwindcss.com/docs/content-configuration#dynamic-class-names\" rel=\"nofollow\" target=\"_blank\"\u003ehttps://tailwindcss.com/docs/content-configuration#dynamic-class-names\u003c/a\u003e 여기를 확인해 보세요.\u003c/li\u003e\n\u003cli\u003e즉, 우리가 실행 중에 결정되는 조건부 변수를 전달하려고 한다면\n\u003ccode\u003ediv class=”text-'' error ? ‘red’ : ‘green’ ''-600\"\u003c/code\u003e/div\n원하는대로 렌더링되지 않아요.\u003c/li\u003e\n\u003c/ul\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003eTailwind 및 CSS 클래스 사용:\u003c/p\u003e\n\u003cul\u003e\n\u003cli\u003e화면에 고정된 inset-0을 사용하여 항상 보이도록 설정하고 화면에 고정시킵니다.\u003c/li\u003e\n\u003cli\u003etransition-all 유틸리티 클래스는 모든 CSS 속성에 전환 또는 애니메이션 효과를 적용하는 데 사용됩니다.\u003c/li\u003e\n\u003cli\u003etransition-all을 적용한 후에 우리가 애니메이션을 적용하고자 하는 속성을 제공합니다. 이 경우에는 w-32에서 w-0까지이며, 이는 너비에 대한 모든 변경 사항이 일정 기간 동안 부드럽게 이루어집니다.\u003c/li\u003e\n\u003cli\u003e-z-10은 음수 10 z-인덱스를 부여하는 데 사용됩니다.\u003c/li\u003e\n\u003cli\u003esm: md: lg:는 화면 분기점으로, css에서 @media (최소 너비: [어떤 너비])의 동등한 것입니다. 분기점이 적용된 모든 스타일은 모든 화면 크기에 적용된다는 점을 기억하는 것이 중요합니다 (예: sm: w-30은 md 및 lg에도 적용됩니다).\u003c/li\u003e\n\u003cli\u003ew-5/6은 너비가 83.33%가됨을 의미하며, 이는 모바일 뷰에서만 표시됩니다.\u003c/li\u003e\n\u003cli\u003e하위 메뉴 항목에 대한 높이 애니메이션을 위해 사용자 정의 css 전환: 높이 300ms;\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e이제 코드로 이동합시다:\u003c/p\u003e\n\u003cp\u003e사이드바 컴포넌트:\u003c/p\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003eimport {\nArrowRightIcon,\nArrowLeftIcon,\nHomeIcon,\nCogIcon,\nUserIcon,\nEllipsisVerticalIcon,\n} from '@heroicons/react/24/outline';\nimport { useState } from 'react';\nimport SidebarItem from './SidebarItem';\u003c/p\u003e\n\u003cp\u003e// 이 사이드바 컴포넌트는 모바일과 데스크톱 모두를 위한 것입니다.\nfunction Sidebar({ children, expanded, setExpanded }: any) {\nreturn (\n\u003c/p\u003e\u003cdiv class=\"relative\"\u003e\n{/*\n이 div는 사이드바가 확장될 때 배경 오버레이를 만드는 데 사용됩니다.\n이는 모바일 화면에서만 표시됩니다.\n*/}\n\u0026#x3C;div\nclassName={\u003ccode\u003efixed inset-0 -z-10 block bg-gray-400  ${expanded ? 'block sm:hidden' : 'hidden'}\u003c/code\u003e}\n/\u003e\n\u0026#x3C;aside\nclassName={\u003ccode\u003ebox-border h-screen transition-all ${expanded ? 'w-5/6 sm:w-64' : 'w-0 sm:w-20'}\u003c/code\u003e}\n\u003e\n\u003cnav class=\"flex h-full flex-col border-r bg-white shadow-sm\"\u003e\n\u003cdiv class=\"flex items-center justify-between p-4 pb-2\"\u003e\n\u0026#x3C;img\nsrc=\"\u003ca href=\"https://img.logoipsum.com/243.svg\" rel=\"nofollow\" target=\"_blank\"\u003ehttps://img.logoipsum.com/243.svg\u003c/a\u003e\"\nclassName={\u003ccode\u003eoverflow-hidden transition-all ${                 expanded ? 'w-32' : 'w-0'               }\u003c/code\u003e}\nalt=\"\"\n/\u003e\n\u0026#x3C;div className={\u003ccode\u003e${expanded ? '' : 'hidden sm:block'}\u003c/code\u003e}\u003e\n\u0026#x3C;button\nonClick={() =\u003e setExpanded((curr: boolean) =\u003e !curr)}\nclassName=\"rounded-lg bg-gray-50 p-1.5 hover:bg-gray-100\"\n\u003e\n{expanded ? (\n\u003carrowrighticon class=\"h-6 w-6\"\u003e\n) : (\n\u003carrowlefticon class=\"h-6 w-6\"\u003e\n)}\n\n\u003c/arrowlefticon\u003e\u003c/arrowrighticon\u003e\u003c/div\u003e\n\u003c/nav\u003e\u003c/div\u003e\n\u003cul class=\"flex-1 px-3\"\u003e{children}\u003c/ul\u003e\n\u003cdiv class=\"flex border-t p-3\"\u003e\n\u003cimg src=\"https://ui-avatars.com/api/?background=c7d2fe\u0026#x26;color=3730a3\u0026#x26;bold=true\u0026#x26;name=Mark+Ruffalo\" alt=\"\" class=\"h-10 w-10 rounded-md\"\u003e\n\u0026#x3C;div\nclassName={\u003ccode\u003e              flex items-center justify-between               overflow-hidden transition-all ${expanded ? 'ml-3 w-52' : 'w-0'}          \u003c/code\u003e}\n\u003e\n\u003cdiv class=\"leading-4\"\u003e\n\u003ch4 class=\"font-semibold\"\u003eMark Ruffalo\u003c/h4\u003e\n\u003cspan class=\"text-xs text-gray-600\"\u003e\u003ca href=\"mailto:mark@gmail.com\"\u003emark@gmail.com\u003c/a\u003e\u003c/span\u003e\n\u003c/div\u003e\n\u003cellipsisverticalicon class=\"h-6 w-6\"\u003e\n\u003c/ellipsisverticalicon\u003e\u003c/div\u003e\n\n\n\n\n);\n}\u003cp\u003e\u003c/p\u003e\n\u003cp\u003eexport default function MakeSidebar() {\nconst [expanded, setExpanded] = useState(true);\nconst navBarItems = [\n{\nicon: \u003chomeicon\u003e,\ntext: 'Home',\nactive: true,\n},\n{\nicon: \u003cusericon\u003e,\nsubMenu: [\n{\nicon: \u003cusericon\u003e,\ntext: 'Profile',\n},\n{\nicon: \u003ccogicon\u003e,\ntext: 'Settings',\n},\n],\ntext: 'Profile',\n},\n{\nicon: \u003ccogicon\u003e,\ntext: 'Settings',\n},\n];\u003c/cogicon\u003e\u003c/cogicon\u003e\u003c/usericon\u003e\u003c/usericon\u003e\u003c/homeicon\u003e\u003c/p\u003e\n\u003cp\u003e// 데스크톱 사이드바\nreturn (\n\u003csidebar expanded=\"{expanded}\" setexpanded=\"{setExpanded}\"\u003e\n{navBarItems.map((item, index) =\u003e (\n\u0026#x3C;SidebarItem key={index} expanded={expanded} {...item} /\u003e\n))}\n\u003c/sidebar\u003e\n);\n}\u003c/p\u003e\n\u003cp\u003e이제 코드를 각각의 부분으로 나누어보겠습니다. MakeSidebar 래퍼 함수는 확장 여부를 제어하는 expanded: boolean 상태를 정의하는 동시에 사이드바를 생성합니다. 여기서는 간단한 React 상태를 사용했지만 애플리케이션에 따라 프롭 드릴링을 피하기 위해 Redux/전역 상태를 사용할 수도 있습니다.\u003c/p\u003e\n\u003cp\u003e위의 예시에서 설명했듯이 메뉴 항목 텍스트와 헤더 아이콘의 애니메이션을 transition-all 클래스로 제어하고 있습니다.\u003c/p\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e모바일 화면에서만 표시되는 오버레이인 이 div는 모바일 화면에서 메뉴가 열렸을 때 볼 수 있는 배경을 어둡게 바꾸는 효과를 제공합니다.\u003c/p\u003e\n\u003cp\u003e저희 \u003ccode\u003easide\u003c/code\u003e 요소에 \u003ccode\u003ew-5/6\u003c/code\u003e을 적용했음을 주목해주세요. 이것이 모바일 화면을 제어하는 부분입니다.\u003c/p\u003e\n\u003cp\u003e사이드바 아이템 컴포넌트:\u003c/p\u003e\n\u003cp\u003eimport { ChevronRightIcon } from '@heroicons/react/24/outline';\nimport { useEffect, useState } from 'react';\u003c/p\u003e\n\u003cp\u003einterface SidebarItemProps {\nactive?: boolean;\nicon: React.ReactNode;\ntext: string;\nexpanded: boolean;\nsubMenu?: SubMenuItemProps[] | null;\n}\u003c/p\u003e\n\u003cp\u003e// 서브메뉴 항목들은 추가적인 서브메뉴 항목을 가질 수 없으므로 확장될 수 없다고 가정합니다.\ninterface SubMenuItemProps extends Omit\u0026#x3C;SidebarItemProps, 'expanded'\u003e {\nexpanded?: never;\nsubMenu?: never;\n}\u003c/p\u003e\n\u003cp\u003e// 이 컴포넌트는 마우스를 갖다대었을 때 서브메뉴 항목들을 렌더링하는 데 사용됩니다.\nfunction HoveredSubMenuItem({ icon, text, active }: SubMenuItemProps) {\nreturn (\n\u0026#x3C;div\nclassName={\u003ccode\u003emy-2 rounded-md p-2 ${         active ? 'bg-gray-300' : ' hover:bg-indigo-50'       }\u003c/code\u003e}\n\u003e\n\u003c/p\u003e\u003cdiv class=\"flex items-center justify-center\"\u003e\n\u003cspan class=\"text-primary-500 h-6 w-6\"\u003e{icon}\u003c/span\u003e\n\u003cspan class=\"text-primary-500 ml-3 w-28 text-start\"\u003e{text}\u003c/span\u003e\n\u003cdiv class=\"bg-primary-200 h-1\"\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n);\n}\u003cp\u003e\u003c/p\u003e\n\u003cp\u003eexport default function SidebarItem({\nicon,\nactive = false,\ntext,\nexpanded = false,\nsubMenu = null,\n}: SidebarItemProps) {\nconst [expandSubMenu, setExpandSubMenu] = useState(false);\u003c/p\u003e\n\u003cp\u003euseEffect(() =\u003e {\nif (!expanded) {\nsetExpandSubMenu(false);\n}\n}, [expanded]);\u003c/p\u003e\n\u003cp\u003e// 각 항목이 40px 높이라고 가정하고 서브메뉴의 높이를 계산합니다.\nconst subMenuHeight = expandSubMenu\n? \u003ccode\u003e${((subMenu?.length || 0) * 40 + (subMenu! \u0026#x26;\u0026#x26; 15)).toString()}px\u003c/code\u003e\n: 0;\u003c/p\u003e\n\u003cp\u003ereturn (\n\u0026#x3C;\u003e\n\u003c/p\u003e\u003cli\u003e\n\u0026#x3C;button\nclassName={\u003ccode\u003e         group relative my-1 flex w-full cursor-pointer          items-center rounded-md px-3          py-2 font-medium transition-colors          ${            active \u0026#x26;\u0026#x26; !subMenu              ? 'text-primary-500 bg-gradient-to-tr from-indigo-200 to-indigo-100'              : 'text-gray-600 hover:bg-indigo-50'          }          ${!expanded \u0026#x26;\u0026#x26; 'hidden sm:flex'}     \u003c/code\u003e}\nonClick={() =\u003e setExpandSubMenu((curr) =\u003e expanded \u0026#x26;\u0026#x26; !curr)}\n\u003e\n\u003cspan class=\"h-6 w-6\"\u003e{icon}\u003c/span\u003e\u003cp\u003e\u003c/p\u003e\n\u003cpre\u003e\u003ccode\u003e      \u0026#x3C;span\n        className={`overflow-hidden text-start transition-all ${\n          expanded ? 'ml-3 w-44' : 'w-0'\n        }`}\n      \u003e\n        {text}\n      \u0026#x3C;/span\u003e\n      {subMenu \u0026#x26;\u0026#x26; (\n        \u0026#x3C;div\n          className={`absolute right-2 h-4 w-4${expanded ? '' : 'top-2'} transition-all ${expandSubMenu ? 'rotate-90' : 'rotate-0'}`}\n        \u003e\n          \u0026#x3C;ChevronRightIcon /\u003e\n        \u0026#x3C;/div\u003e\n      )}\n\n      {/* \n        마우스를 갖다댔을 때 항목 텍스트 또는 서브메뉴 항목들을 표시합니다.\n      */}\n      {!expanded \u0026#x26;\u0026#x26; (\n        \u0026#x3C;div\n          className={`\n        text-primary-500 invisible absolute left-full ml-6 -translate-x-3\n        rounded-md bg-indigo-100 px-2\n        py-1 text-sm opacity-20 transition-all\n        group-hover:visible group-hover:translate-x-0 group-hover:opacity-100\n    `}\n        \u003e\n          {/* \n            만약 갖다댔을 때 항목에 서브메뉴가 없다면 텍스트를 표시하고\n            그렇지 않다면 서브메뉴 항목들을 표시합니다.\n          */}\n          {!subMenu\n            ? text\n            : subMenu.map((item, index) =\u003e (\n                \u0026#x3C;HoveredSubMenuItem\n                  key={index}\n                  text={item.text}\n                  icon={item.icon}\n                /\u003e\n              ))}\n        \u0026#x3C;/div\u003e\n      )}\n    \u0026#x3C;/button\u003e\n  \u0026#x3C;/li\u003e\n  \u0026#x3C;ul\n    className=\"sub-menu pl-6\"\n    style={{ height: subMenuHeight }}\n  \u003e\n    {/* \n      만약 항목이 서브메뉴를 가지고 있다면 서브메뉴 항목들을 렌더링합니다.\n      서브메뉴 항목들은 SidebarItem 컴포넌트로 렌더링됩니다.\n    */}\n    {expanded \u0026#x26;\u0026#x26;\n      subMenu?.map((item, index) =\u003e (\n        \u0026#x3C;SidebarItem key={index} {...item} expanded={expanded} /\u003e\n      ))}\n  \u0026#x3C;/ul\u003e\n\u0026#x3C;/\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003cp\u003e);\n}\u003c/p\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e여기에는 Tailwind에서 작동하지 않는 높이 속성에 대한 애니메이션을 적용하기 위해 사용되는 sub-menu이라는 사용자 정의 css 클래스가 포함되어 있습니다. 따라서 다음과 같이 index.css 파일에서 사용자 정의 css 클래스를 정의하세요.\u003c/p\u003e\n\u003cp\u003e.sub-menu {\noverflow: hidden;\ntransition: height 300ms;\n}\u003c/p\u003e\n\u003cp\u003e결론:\u003c/p\u003e\n\u003cp\u003e이 튜토리얼에서는 TypeScript, ReactTS 및 Tailwind CSS를 사용하여 반응형 사이드바를 디자인하는 방법을 살펴보았습니다. Sidebar 및 SidebarItem 구성 요소의 코드를 분해하여 각 부분이 기능적인 사이드바 인터페이스를 만드는 데 어떤 역할을 하는지 설명했습니다. 이러한 단계를 따르고 기본 개념을 이해하면 다양한 화면 크기에 적응하는 직관적인 탐색 요소로 웹 애플리케이션을 향상시킬 수 있습니다. 즐거운 코딩하세요!\u003c/p\u003e\u003c/li\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-07-01-BuildingaResponsiveSidebarwithsubmenuinReactTSTailwindCSS"},"buildId":"GsgRekSb--BvxYwv9FPn6","isFallback":false,"gsp":true,"scriptLoader":[{"async":true,"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686","strategy":"lazyOnload","crossOrigin":"anonymous"}]}</script></body></html>

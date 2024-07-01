@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="ko"><head><meta charSet="utf-8"/><title>프론트엔드 개발자를 위한 간단하면서도 재미있는 공룡 게임 만들기 가이드 | ui-station</title><meta name="description" content=""/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:url" content="https://ui-station.github.io///post/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide" data-gatsby-head="true"/><meta property="og:type" content="website" data-gatsby-head="true"/><meta property="og:site_name" content="프론트엔드 개발자를 위한 간단하면서도 재미있는 공룡 게임 만들기 가이드 | ui-station" data-gatsby-head="true"/><meta property="og:title" content="프론트엔드 개발자를 위한 간단하면서도 재미있는 공룡 게임 만들기 가이드 | ui-station" data-gatsby-head="true"/><meta property="og:description" content="" data-gatsby-head="true"/><meta property="og:image" content="/assets/img/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide_0.png" data-gatsby-head="true"/><meta property="og:locale" content="en_US" data-gatsby-head="true"/><meta name="twitter:card" content="summary_large_image" data-gatsby-head="true"/><meta property="twitter:domain" content="https://ui-station.github.io/" data-gatsby-head="true"/><meta property="twitter:url" content="https://ui-station.github.io///post/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide" data-gatsby-head="true"/><meta name="twitter:title" content="프론트엔드 개발자를 위한 간단하면서도 재미있는 공룡 게임 만들기 가이드 | ui-station" data-gatsby-head="true"/><meta name="twitter:description" content="" data-gatsby-head="true"/><meta name="twitter:image" content="/assets/img/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide_0.png" data-gatsby-head="true"/><meta name="twitter:data1" content="Dev | ui-station" data-gatsby-head="true"/><meta name="article:published_time" content="2024-07-01 16:30" data-gatsby-head="true"/><meta name="next-head-count" content="19"/><meta name="google-site-verification" content="a-yehRo3k3xv7fg6LqRaE8jlE42e5wP2bDE_2F849O4"/><link rel="stylesheet" href="/favicons/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png"/><link rel="icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-icon" href="/favicons/apple-icon-180x180.png"/><link rel="apple-touch-startup-image" href="/startup.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="msapplication-config" content="/favicons/browserconfig.xml"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BHFR6GTH9P"></script><script>window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-BHFR6GTH9P');</script><link rel="preload" href="/_next/static/css/6e57edcf9f2ce551.css" as="style"/><link rel="stylesheet" href="/_next/static/css/6e57edcf9f2ce551.css" data-n-g=""/><link rel="preload" href="/_next/static/css/b8ef307c9aee1e34.css" as="style"/><link rel="stylesheet" href="/_next/static/css/b8ef307c9aee1e34.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee6df16fdc6dae4d.js" defer=""></script><script src="/_next/static/chunks/framework-46611630e39cfdeb.js" defer=""></script><script src="/_next/static/chunks/main-cf4a52eec9a970a0.js" defer=""></script><script src="/_next/static/chunks/pages/_app-6fae11262ee5c69b.js" defer=""></script><script src="/_next/static/chunks/75fc9c18-ac4aa08aae62f90e.js" defer=""></script><script src="/_next/static/chunks/463-0429087d4c0b0335.js" defer=""></script><script src="/_next/static/chunks/pages/post/%5Bslug%5D-70e5ce89f3d962ac.js" defer=""></script><script src="/_next/static/GsgRekSb--BvxYwv9FPn6/_buildManifest.js" defer=""></script><script src="/_next/static/GsgRekSb--BvxYwv9FPn6/_ssgManifest.js" defer=""></script></head><body><div id="__next"><header class="Header_header__Z8PUO"><div class="Header_inner__tfr0u"><strong class="Header_title__Otn70"><a href="/">UI STATION</a></strong><nav class="Header_nav_area__6KVpk"><a class="nav_item" href="/posts/1">Posts</a></nav></div></header><main class="posts_container__NyRU3"><div class="posts_inner__i3n_i"><h1 class="posts_post_title__EbxNx">프론트엔드 개발자를 위한 간단하면서도 재미있는 공룡 게임 만들기 가이드</h1><div class="posts_meta__cR7lu"><div class="posts_profile_wrap__mslMl"><div class="posts_profile_image_wrap__kPikV"><img alt="프론트엔드 개발자를 위한 간단하면서도 재미있는 공룡 게임 만들기 가이드" loading="lazy" width="44" height="44" decoding="async" data-nimg="1" class="profile" style="color:transparent" src="/favicons/apple-icon-114x114.png"/></div><div class="posts_textarea__w_iKT"><span class="writer">UI STATION</span><span class="posts_info__5KJdN"><span class="posts_date__ctqHI">Posted On Jul 1, 2024</span><span class="posts_reading_time__f7YPP">10<!-- --> min read</span></span></div></div><img alt="" loading="lazy" width="50" height="50" decoding="async" data-nimg="1" class="posts_view_badge__tcbfm" style="color:transparent" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fallround-coder.github.io/post/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=views&amp;edge_flat=false"/></div><article class="posts_post_content__n_L6j"><div><!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<p>프로젝트를 작업 중에 인터넷 장애를 겪은 적이 있나요? 그러면 크롬 디노 게임을 하게 되는 경우가 많죠. 이 게임은 간단하면서 중독성이 강하며 웹 기반 게임의 훌륭한 예입니다. 이 기사에서는 핵심 프론트엔드 개발 최상의 실천법을 강조하면서 디노 게임의 자신만의 버전을 만드는 방법을 안내해 드릴 거에요.</p>
+<p><img src="/assets/img/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide_0.png" alt="이미지"></p>
+<h1>핵심 프론트엔드 개발 실천법</h1>
+<h2>1. 간결함</h2>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>크롬 디노 게임은 간단하지만 재미있습니다. 미니멀한 디자인으로 빠른 로딩 시간과 쉬운 게임 플레이를 보장합니다. 우리도 이 같은 원칙을 게임에 적용할 것입니다.</p>
+<h2>2. 반응형 디자인</h2>
+<p>미디어 쿼리를 사용하여 모든 기기에서 게임이 잘 보이도록 합니다. 화면 크기에 따라 게임 컨테이너의 높이가 조정됩니다.</p>
+<h2>3. 성능 최적화</h2>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>에셋을 최소화하고 코드를 최적화하면 성능을 크게 향상시키고 Dino 게임이 즉시로드되고 저전력 장치에서도 원할하게 작동하도록 할 수 있습니다. 이러한 목표를 달성하는 방법에 대해 알아보겠습니다.</p>
+<h2>4. 오프라인 기능</h2>
+<p>Chrome Dino와 같은 게임은 오프라인에서 실행되어 인터넷 연결 없이도 즐길 수 있습니다. 기본 HTML, CSS, 그리고 JavaScript를 사용하여 게임이 오프라인에서도 플레이 가능하도록 만들어 보겠습니다.</p>
+<h2>5. 사용자 참여</h2>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>사용자가 계속해서 방문하는 것은 매력적인 경험을 제공할 때입니다. 우리는 게임에 게임화 요소를 추가할 거에요.</p>
+<h2>6. Lazy Loading</h2>
+<p>게임이 자원을 효율적으로 로드하도록 보장할 거예요. 이는 성능에 중요한 요소입니다.</p>
+<h1>모두 결합하기</h1>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>여기에는 장애물, 점수 및 게임 오버 시나리오가 있는 간단하면서 매력적인 Dino 게임을 만드는 완전한 예제가 있습니다.</p>
+<p>데모 사이트: <a href="https://dinogamedemo.netlify.app" rel="nofollow" target="_blank">https://dinogamedemo.netlify.app</a></p>
+<h2>HTML: (index.html)</h2>
+<pre><code class="hljs language-js">&#x3C;!<span class="hljs-variable constant_">DOCTYPE</span> html>
+&#x3C;html lang="en">
+&#x3C;head>
+    &#x3C;meta charset="UTF-8">
+    &#x3C;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    &#x3C;title>Challenging Dino Game&#x3C;/title>
+    &#x3C;style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e0e0e0;
+            font-family: Arial, sans-serif;
+        }
+        #game-container {
+            width: 100%;
+            height: 50vh;
+            position: relative;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            border: 2px solid #000;
+        }
+        #dino, .obstacle {
+            position: absolute;
+            bottom: 0;
+        }
+        #dino {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+        .obstacle {
+            background-color: red;
+        }
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        @media (min-width: 600px) {
+            #game-container {
+                height: 70vh;
+            }
+        }
+    &#x3C;/style>
+&#x3C;/head>
+&#x3C;body>
+    &#x3C;div id="game-container">
+        &#x3C;div id="dino">&#x3C;/div>
+        &#x3C;div id="score">Score: 0&#x3C;/div>
+    &#x3C;/div>
+    &#x3C;script>
+        let isJumping = false;
+        let score = 0;
+        let gameSpeed = 4;
+        const dino = document.getElementById('dino');
+        const scoreDisplay = document.getElementById('score');
+        
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space' &#x26;&#x26; !isJumping) {
+                jump();
+            }
+        });
+
+        function jump() {
+            if (isJumping) return;
+            isJumping = true;
+            let upInterval = setInterval(() => {
+                if (dino.style.bottom === '100px') {
+                    clearInterval(upInterval);
+                    let downInterval = setInterval(() => {
+                        if (dino.style.bottom === '0px') {
+                            clearInterval(downInterval);
+                            isJumping = false;
+                        }
+                        dino.style.bottom = `${parseInt(dino.style.bottom) - 5}px`;
+                    }, 20);
+                }
+                dino.style.bottom = `${parseInt(dino.style.bottom) + 5}px`;
+            }, 20);
+        }
+
+        function createObstacle() {
+            const obstacle = document.createElement('div');
+            obstacle.classList.add('obstacle');
+            obstacle.style.width = `${Math.random() * 40 + 20}px`;
+            obstacle.style.height = `${Math.random() * 40 + 20}px`;
+            obstacle.style.right = '0';
+            document.getElementById('game-container').appendChild(obstacle);
+
+            moveObstacle(obstacle);
+
+            // Randomly decide to create another obstacle shortly after the current one
+            if (Math.random() &#x3C; 0.3) {
+                setTimeout(createObstacle, Math.random() * 2000);
+            }
+        }
+
+        function moveObstacle(obstacle) {
+            let obstaclePosition = parseInt(obstacle.style.right);
+            if (obstaclePosition >= window.innerWidth) {
+                obstacle.remove();
+                score++;
+                scoreDisplay.innerText = 'Score: ' + score;
+                gameSpeed += 0.1;  // Increase game speed slightly with each obstacle passed
+                createObstacle();
+            } else {
+                obstacle.style.right = `${obstaclePosition + gameSpeed}px`;
+                if (checkCollision(dino, obstacle)) {
+                    alert('Game Over! Your score is ' + score);
+                    location.reload();  // Reload the game
+                    return;
+                }
+                requestAnimationFrame(() => moveObstacle(obstacle));
+            }
+        }
+
+        function checkCollision(dino, obstacle) {
+            const dinoRect = dino.getBoundingClientRect();
+            const obstacleRect = obstacle.getBoundingClientRect();
+            return (
+                dinoRect.right > obstacleRect.left &#x26;&#x26;
+                dinoRect.left &#x3C; obstacleRect.right &#x26;&#x26;
+                dinoRect.bottom > obstacleRect.top
+            );
+        }
+
+        dino.style.bottom = '0';
+        createObstacle();
+    &#x3C;/script>
+&#x3C;/body>
+&#x3C;/html>
+</code></pre>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1>설명</h1>
+<ul>
+<li>
+<p>HTML 구조: 기본 HTML 구조에서는 게임 컨테이너, 공룡 및 점수 표시가 설정됩니다.</p>
+</li>
+<li>
+<p>CSS 스타일링: CSS는 게임이 반응형이 되고 모든 기기에서 잘 보이도록 보장합니다. 미디어 쿼리는 화면 크기에 따라 게임 컨테이너의 높이를 조절합니다.</p>
+</li>
+<li>
+<p>JavaScript 기능:</p>
+</li>
+<li>
+<p>점프 메커니즘: 점프 함수는 스페이스 바를 누르면 공룡이 점프합니다.</p>
+</li>
+<li>
+<p>장애물 생성: createObstacle 함수는 무작위 크기의 장애물을 생성합니다. 때로는 여러 장애물이 서로 가까이 나타나 더 큰 도전 요소가 됩니다.</p>
+</li>
+<li>
+<p>장애물 이동: moveObstacle 함수는 장애물을 오른쪽에서 왼쪽으로 이동시키며, 각각 이후 약간 속도를 높입니다.</p>
+</li>
+<li>
+<p>충돌 감지: checkCollision 함수는 공룡이 장애물과 충돌하는지 확인하고, 게임 오버 경고를 트리거합니다.</p>
+</li>
+</ul>
+<h1>성능 최적화</h1>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<p>게임이 저전력 장치에서도 원할하게 실행되도록 하기 위해 CSS와 JavaScript를 최소화할 수 있습니다. 다음은 방법입니다:</p>
+<h2>CSS 최소화</h2>
+<ul>
+<li>cssminifier.com과 같은 온라인 도구를 사용하여 CSS 코드를 최소화합니다.</li>
+<li>최소화된 버전으로 <code>style</code> 태그 안에 있는 CSS를 대체합니다.</li>
+</ul>
+<h2>JavaScript 최소화</h2>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<ul>
+<li>자바스크립트 코드를 최소화하려면 javascript-minifier.com과 같은 온라인 도구를 사용하실 수 있어요.</li>
+<li><code>script</code> 태그 안에 있는 자바스크립트를 최소화된 버전으로 바꿔주세요.</li>
+</ul>
+<h1>Lazy Loading</h1>
+<p>성능을 더 향상시키기 위해 자산들에 대한 lazy loading을 구현할 수 있어요. 이 간단한 게임은 이미지나 외부 자산이 없지만, 기본적인 방법을 살펴보겠습니다:</p>
+<pre><code class="hljs language-js">&#x3C;script>
+<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'DOMContentLoaded'</span>, <span class="hljs-function">() =></span> {
+    <span class="hljs-keyword">const</span> lazyElements = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">'.lazy'</span>);
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">lazyLoad</span> = (<span class="hljs-params">target</span>) => {
+        <span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">IntersectionObserver</span>(<span class="hljs-function">(<span class="hljs-params">entries, observer</span>) =></span> {
+            entries.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">entry</span> =></span> {
+                <span class="hljs-keyword">if</span> (entry.<span class="hljs-property">isIntersecting</span>) {
+                    <span class="hljs-keyword">const</span> element = entry.<span class="hljs-property">target</span>;
+                    <span class="hljs-comment">// Load element here</span>
+                    observer.<span class="hljs-title function_">disconnect</span>();
+                }
+            });
+        });
+        observer.<span class="hljs-title function_">observe</span>(target);
+    };
+
+    lazyElements.<span class="hljs-title function_">forEach</span>(lazyLoad);
+});
+&#x3C;/script>
+</code></pre>
+<!-- ui-station 사각형 -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4877378276818686" data-ad-slot="7249294152" data-ad-format="auto" data-full-width-responsive="true"></ins></p>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<h1>결론</h1>
+<p>이러한 모범 사례를 따르면 반응형이고 최적화되며 재미있는 간단한 게임을 만들 수 있습니다. 이 프로젝트는 주요 프론트엔드 개발 개념을 학습하고 적용하는 좋은 방법입니다. 웹 애플리케이션이 사용자 친화적이고 성능이 우수해지도록 보장합니다. 즐거운 코딩되세요!</p>
+</body>
+</html>
+</div></article></div></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"post":{"title":"프론트엔드 개발자를 위한 간단하면서도 재미있는 공룡 게임 만들기 가이드","description":"","date":"2024-07-01 16:30","slug":"2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide","content":"\n\n프로젝트를 작업 중에 인터넷 장애를 겪은 적이 있나요? 그러면 크롬 디노 게임을 하게 되는 경우가 많죠. 이 게임은 간단하면서 중독성이 강하며 웹 기반 게임의 훌륭한 예입니다. 이 기사에서는 핵심 프론트엔드 개발 최상의 실천법을 강조하면서 디노 게임의 자신만의 버전을 만드는 방법을 안내해 드릴 거에요.\n\n![이미지](/assets/img/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide_0.png)\n\n# 핵심 프론트엔드 개발 실천법\n\n## 1. 간결함\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n크롬 디노 게임은 간단하지만 재미있습니다. 미니멀한 디자인으로 빠른 로딩 시간과 쉬운 게임 플레이를 보장합니다. 우리도 이 같은 원칙을 게임에 적용할 것입니다.\n\n## 2. 반응형 디자인\n\n미디어 쿼리를 사용하여 모든 기기에서 게임이 잘 보이도록 합니다. 화면 크기에 따라 게임 컨테이너의 높이가 조정됩니다.\n\n## 3. 성능 최적화\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n에셋을 최소화하고 코드를 최적화하면 성능을 크게 향상시키고 Dino 게임이 즉시로드되고 저전력 장치에서도 원할하게 작동하도록 할 수 있습니다. 이러한 목표를 달성하는 방법에 대해 알아보겠습니다.\n\n## 4. 오프라인 기능\n\nChrome Dino와 같은 게임은 오프라인에서 실행되어 인터넷 연결 없이도 즐길 수 있습니다. 기본 HTML, CSS, 그리고 JavaScript를 사용하여 게임이 오프라인에서도 플레이 가능하도록 만들어 보겠습니다.\n\n## 5. 사용자 참여\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n사용자가 계속해서 방문하는 것은 매력적인 경험을 제공할 때입니다. 우리는 게임에 게임화 요소를 추가할 거에요.\n\n## 6. Lazy Loading\n\n게임이 자원을 효율적으로 로드하도록 보장할 거예요. 이는 성능에 중요한 요소입니다.\n\n# 모두 결합하기\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n여기에는 장애물, 점수 및 게임 오버 시나리오가 있는 간단하면서 매력적인 Dino 게임을 만드는 완전한 예제가 있습니다.\n\n데모 사이트: https://dinogamedemo.netlify.app\n\n## HTML: (index.html)\n\n```js\n\u003c!DOCTYPE html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n    \u003cmeta charset=\"UTF-8\"\u003e\n    \u003cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u003ctitle\u003eChallenging Dino Game\u003c/title\u003e\n    \u003cstyle\u003e\n        body {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            margin: 0;\n            background-color: #e0e0e0;\n            font-family: Arial, sans-serif;\n        }\n        #game-container {\n            width: 100%;\n            height: 50vh;\n            position: relative;\n            overflow: hidden;\n            background-color: #f0f0f0;\n            border: 2px solid #000;\n        }\n        #dino, .obstacle {\n            position: absolute;\n            bottom: 0;\n        }\n        #dino {\n            width: 50px;\n            height: 50px;\n            background-color: green;\n        }\n        .obstacle {\n            background-color: red;\n        }\n        #score {\n            position: absolute;\n            top: 10px;\n            left: 10px;\n        }\n        @media (min-width: 600px) {\n            #game-container {\n                height: 70vh;\n            }\n        }\n    \u003c/style\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n    \u003cdiv id=\"game-container\"\u003e\n        \u003cdiv id=\"dino\"\u003e\u003c/div\u003e\n        \u003cdiv id=\"score\"\u003eScore: 0\u003c/div\u003e\n    \u003c/div\u003e\n    \u003cscript\u003e\n        let isJumping = false;\n        let score = 0;\n        let gameSpeed = 4;\n        const dino = document.getElementById('dino');\n        const scoreDisplay = document.getElementById('score');\n        \n        document.addEventListener('keydown', function(event) {\n            if (event.code === 'Space' \u0026\u0026 !isJumping) {\n                jump();\n            }\n        });\n\n        function jump() {\n            if (isJumping) return;\n            isJumping = true;\n            let upInterval = setInterval(() =\u003e {\n                if (dino.style.bottom === '100px') {\n                    clearInterval(upInterval);\n                    let downInterval = setInterval(() =\u003e {\n                        if (dino.style.bottom === '0px') {\n                            clearInterval(downInterval);\n                            isJumping = false;\n                        }\n                        dino.style.bottom = `${parseInt(dino.style.bottom) - 5}px`;\n                    }, 20);\n                }\n                dino.style.bottom = `${parseInt(dino.style.bottom) + 5}px`;\n            }, 20);\n        }\n\n        function createObstacle() {\n            const obstacle = document.createElement('div');\n            obstacle.classList.add('obstacle');\n            obstacle.style.width = `${Math.random() * 40 + 20}px`;\n            obstacle.style.height = `${Math.random() * 40 + 20}px`;\n            obstacle.style.right = '0';\n            document.getElementById('game-container').appendChild(obstacle);\n\n            moveObstacle(obstacle);\n\n            // Randomly decide to create another obstacle shortly after the current one\n            if (Math.random() \u003c 0.3) {\n                setTimeout(createObstacle, Math.random() * 2000);\n            }\n        }\n\n        function moveObstacle(obstacle) {\n            let obstaclePosition = parseInt(obstacle.style.right);\n            if (obstaclePosition \u003e= window.innerWidth) {\n                obstacle.remove();\n                score++;\n                scoreDisplay.innerText = 'Score: ' + score;\n                gameSpeed += 0.1;  // Increase game speed slightly with each obstacle passed\n                createObstacle();\n            } else {\n                obstacle.style.right = `${obstaclePosition + gameSpeed}px`;\n                if (checkCollision(dino, obstacle)) {\n                    alert('Game Over! Your score is ' + score);\n                    location.reload();  // Reload the game\n                    return;\n                }\n                requestAnimationFrame(() =\u003e moveObstacle(obstacle));\n            }\n        }\n\n        function checkCollision(dino, obstacle) {\n            const dinoRect = dino.getBoundingClientRect();\n            const obstacleRect = obstacle.getBoundingClientRect();\n            return (\n                dinoRect.right \u003e obstacleRect.left \u0026\u0026\n                dinoRect.left \u003c obstacleRect.right \u0026\u0026\n                dinoRect.bottom \u003e obstacleRect.top\n            );\n        }\n\n        dino.style.bottom = '0';\n        createObstacle();\n    \u003c/script\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n```\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n# 설명\n\n- HTML 구조: 기본 HTML 구조에서는 게임 컨테이너, 공룡 및 점수 표시가 설정됩니다.\n- CSS 스타일링: CSS는 게임이 반응형이 되고 모든 기기에서 잘 보이도록 보장합니다. 미디어 쿼리는 화면 크기에 따라 게임 컨테이너의 높이를 조절합니다.\n- JavaScript 기능:\n\n- 점프 메커니즘: 점프 함수는 스페이스 바를 누르면 공룡이 점프합니다.\n- 장애물 생성: createObstacle 함수는 무작위 크기의 장애물을 생성합니다. 때로는 여러 장애물이 서로 가까이 나타나 더 큰 도전 요소가 됩니다.\n- 장애물 이동: moveObstacle 함수는 장애물을 오른쪽에서 왼쪽으로 이동시키며, 각각 이후 약간 속도를 높입니다.\n- 충돌 감지: checkCollision 함수는 공룡이 장애물과 충돌하는지 확인하고, 게임 오버 경고를 트리거합니다.\n\n# 성능 최적화\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n게임이 저전력 장치에서도 원할하게 실행되도록 하기 위해 CSS와 JavaScript를 최소화할 수 있습니다. 다음은 방법입니다:\n\n## CSS 최소화\n\n- cssminifier.com과 같은 온라인 도구를 사용하여 CSS 코드를 최소화합니다.\n- 최소화된 버전으로 `style` 태그 안에 있는 CSS를 대체합니다.\n\n## JavaScript 최소화\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n- 자바스크립트 코드를 최소화하려면 javascript-minifier.com과 같은 온라인 도구를 사용하실 수 있어요.\n- `script` 태그 안에 있는 자바스크립트를 최소화된 버전으로 바꿔주세요.\n\n# Lazy Loading\n\n성능을 더 향상시키기 위해 자산들에 대한 lazy loading을 구현할 수 있어요. 이 간단한 게임은 이미지나 외부 자산이 없지만, 기본적인 방법을 살펴보겠습니다:\n\n```js\n\u003cscript\u003e\ndocument.addEventListener('DOMContentLoaded', () =\u003e {\n    const lazyElements = document.querySelectorAll('.lazy');\n    const lazyLoad = (target) =\u003e {\n        const observer = new IntersectionObserver((entries, observer) =\u003e {\n            entries.forEach(entry =\u003e {\n                if (entry.isIntersecting) {\n                    const element = entry.target;\n                    // Load element here\n                    observer.disconnect();\n                }\n            });\n        });\n        observer.observe(target);\n    };\n\n    lazyElements.forEach(lazyLoad);\n});\n\u003c/script\u003e\n```\n\n\u003c!-- ui-station 사각형 --\u003e\n\u003cins class=\"adsbygoogle\"\nstyle=\"display:block\"\ndata-ad-client=\"ca-pub-4877378276818686\"\ndata-ad-slot=\"7249294152\"\ndata-ad-format=\"auto\"\ndata-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\n# 결론\n\n이러한 모범 사례를 따르면 반응형이고 최적화되며 재미있는 간단한 게임을 만들 수 있습니다. 이 프로젝트는 주요 프론트엔드 개발 개념을 학습하고 적용하는 좋은 방법입니다. 웹 애플리케이션이 사용자 친화적이고 성능이 우수해지도록 보장합니다. 즐거운 코딩되세요!","ogImage":{"url":"/assets/img/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide_0.png"},"coverImage":"/assets/img/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide_0.png","tag":["Tech"],"readingTime":10},"content":"\u003c!doctype html\u003e\n\u003chtml lang=\"en\"\u003e\n\u003chead\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta content=\"width=device-width, initial-scale=1\" name=\"viewport\"\u003e\n\u003c/head\u003e\n\u003cbody\u003e\n\u003cp\u003e프로젝트를 작업 중에 인터넷 장애를 겪은 적이 있나요? 그러면 크롬 디노 게임을 하게 되는 경우가 많죠. 이 게임은 간단하면서 중독성이 강하며 웹 기반 게임의 훌륭한 예입니다. 이 기사에서는 핵심 프론트엔드 개발 최상의 실천법을 강조하면서 디노 게임의 자신만의 버전을 만드는 방법을 안내해 드릴 거에요.\u003c/p\u003e\n\u003cp\u003e\u003cimg src=\"/assets/img/2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide_0.png\" alt=\"이미지\"\u003e\u003c/p\u003e\n\u003ch1\u003e핵심 프론트엔드 개발 실천법\u003c/h1\u003e\n\u003ch2\u003e1. 간결함\u003c/h2\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e크롬 디노 게임은 간단하지만 재미있습니다. 미니멀한 디자인으로 빠른 로딩 시간과 쉬운 게임 플레이를 보장합니다. 우리도 이 같은 원칙을 게임에 적용할 것입니다.\u003c/p\u003e\n\u003ch2\u003e2. 반응형 디자인\u003c/h2\u003e\n\u003cp\u003e미디어 쿼리를 사용하여 모든 기기에서 게임이 잘 보이도록 합니다. 화면 크기에 따라 게임 컨테이너의 높이가 조정됩니다.\u003c/p\u003e\n\u003ch2\u003e3. 성능 최적화\u003c/h2\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e에셋을 최소화하고 코드를 최적화하면 성능을 크게 향상시키고 Dino 게임이 즉시로드되고 저전력 장치에서도 원할하게 작동하도록 할 수 있습니다. 이러한 목표를 달성하는 방법에 대해 알아보겠습니다.\u003c/p\u003e\n\u003ch2\u003e4. 오프라인 기능\u003c/h2\u003e\n\u003cp\u003eChrome Dino와 같은 게임은 오프라인에서 실행되어 인터넷 연결 없이도 즐길 수 있습니다. 기본 HTML, CSS, 그리고 JavaScript를 사용하여 게임이 오프라인에서도 플레이 가능하도록 만들어 보겠습니다.\u003c/p\u003e\n\u003ch2\u003e5. 사용자 참여\u003c/h2\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e사용자가 계속해서 방문하는 것은 매력적인 경험을 제공할 때입니다. 우리는 게임에 게임화 요소를 추가할 거에요.\u003c/p\u003e\n\u003ch2\u003e6. Lazy Loading\u003c/h2\u003e\n\u003cp\u003e게임이 자원을 효율적으로 로드하도록 보장할 거예요. 이는 성능에 중요한 요소입니다.\u003c/p\u003e\n\u003ch1\u003e모두 결합하기\u003c/h1\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e여기에는 장애물, 점수 및 게임 오버 시나리오가 있는 간단하면서 매력적인 Dino 게임을 만드는 완전한 예제가 있습니다.\u003c/p\u003e\n\u003cp\u003e데모 사이트: \u003ca href=\"https://dinogamedemo.netlify.app\" rel=\"nofollow\" target=\"_blank\"\u003ehttps://dinogamedemo.netlify.app\u003c/a\u003e\u003c/p\u003e\n\u003ch2\u003eHTML: (index.html)\u003c/h2\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u0026#x3C;!\u003cspan class=\"hljs-variable constant_\"\u003eDOCTYPE\u003c/span\u003e html\u003e\n\u0026#x3C;html lang=\"en\"\u003e\n\u0026#x3C;head\u003e\n    \u0026#x3C;meta charset=\"UTF-8\"\u003e\n    \u0026#x3C;meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003e\n    \u0026#x3C;title\u003eChallenging Dino Game\u0026#x3C;/title\u003e\n    \u0026#x3C;style\u003e\n        body {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            margin: 0;\n            background-color: #e0e0e0;\n            font-family: Arial, sans-serif;\n        }\n        #game-container {\n            width: 100%;\n            height: 50vh;\n            position: relative;\n            overflow: hidden;\n            background-color: #f0f0f0;\n            border: 2px solid #000;\n        }\n        #dino, .obstacle {\n            position: absolute;\n            bottom: 0;\n        }\n        #dino {\n            width: 50px;\n            height: 50px;\n            background-color: green;\n        }\n        .obstacle {\n            background-color: red;\n        }\n        #score {\n            position: absolute;\n            top: 10px;\n            left: 10px;\n        }\n        @media (min-width: 600px) {\n            #game-container {\n                height: 70vh;\n            }\n        }\n    \u0026#x3C;/style\u003e\n\u0026#x3C;/head\u003e\n\u0026#x3C;body\u003e\n    \u0026#x3C;div id=\"game-container\"\u003e\n        \u0026#x3C;div id=\"dino\"\u003e\u0026#x3C;/div\u003e\n        \u0026#x3C;div id=\"score\"\u003eScore: 0\u0026#x3C;/div\u003e\n    \u0026#x3C;/div\u003e\n    \u0026#x3C;script\u003e\n        let isJumping = false;\n        let score = 0;\n        let gameSpeed = 4;\n        const dino = document.getElementById('dino');\n        const scoreDisplay = document.getElementById('score');\n        \n        document.addEventListener('keydown', function(event) {\n            if (event.code === 'Space' \u0026#x26;\u0026#x26; !isJumping) {\n                jump();\n            }\n        });\n\n        function jump() {\n            if (isJumping) return;\n            isJumping = true;\n            let upInterval = setInterval(() =\u003e {\n                if (dino.style.bottom === '100px') {\n                    clearInterval(upInterval);\n                    let downInterval = setInterval(() =\u003e {\n                        if (dino.style.bottom === '0px') {\n                            clearInterval(downInterval);\n                            isJumping = false;\n                        }\n                        dino.style.bottom = `${parseInt(dino.style.bottom) - 5}px`;\n                    }, 20);\n                }\n                dino.style.bottom = `${parseInt(dino.style.bottom) + 5}px`;\n            }, 20);\n        }\n\n        function createObstacle() {\n            const obstacle = document.createElement('div');\n            obstacle.classList.add('obstacle');\n            obstacle.style.width = `${Math.random() * 40 + 20}px`;\n            obstacle.style.height = `${Math.random() * 40 + 20}px`;\n            obstacle.style.right = '0';\n            document.getElementById('game-container').appendChild(obstacle);\n\n            moveObstacle(obstacle);\n\n            // Randomly decide to create another obstacle shortly after the current one\n            if (Math.random() \u0026#x3C; 0.3) {\n                setTimeout(createObstacle, Math.random() * 2000);\n            }\n        }\n\n        function moveObstacle(obstacle) {\n            let obstaclePosition = parseInt(obstacle.style.right);\n            if (obstaclePosition \u003e= window.innerWidth) {\n                obstacle.remove();\n                score++;\n                scoreDisplay.innerText = 'Score: ' + score;\n                gameSpeed += 0.1;  // Increase game speed slightly with each obstacle passed\n                createObstacle();\n            } else {\n                obstacle.style.right = `${obstaclePosition + gameSpeed}px`;\n                if (checkCollision(dino, obstacle)) {\n                    alert('Game Over! Your score is ' + score);\n                    location.reload();  // Reload the game\n                    return;\n                }\n                requestAnimationFrame(() =\u003e moveObstacle(obstacle));\n            }\n        }\n\n        function checkCollision(dino, obstacle) {\n            const dinoRect = dino.getBoundingClientRect();\n            const obstacleRect = obstacle.getBoundingClientRect();\n            return (\n                dinoRect.right \u003e obstacleRect.left \u0026#x26;\u0026#x26;\n                dinoRect.left \u0026#x3C; obstacleRect.right \u0026#x26;\u0026#x26;\n                dinoRect.bottom \u003e obstacleRect.top\n            );\n        }\n\n        dino.style.bottom = '0';\n        createObstacle();\n    \u0026#x3C;/script\u003e\n\u0026#x3C;/body\u003e\n\u0026#x3C;/html\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003ch1\u003e설명\u003c/h1\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003eHTML 구조: 기본 HTML 구조에서는 게임 컨테이너, 공룡 및 점수 표시가 설정됩니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eCSS 스타일링: CSS는 게임이 반응형이 되고 모든 기기에서 잘 보이도록 보장합니다. 미디어 쿼리는 화면 크기에 따라 게임 컨테이너의 높이를 조절합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003eJavaScript 기능:\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e점프 메커니즘: 점프 함수는 스페이스 바를 누르면 공룡이 점프합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e장애물 생성: createObstacle 함수는 무작위 크기의 장애물을 생성합니다. 때로는 여러 장애물이 서로 가까이 나타나 더 큰 도전 요소가 됩니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e장애물 이동: moveObstacle 함수는 장애물을 오른쪽에서 왼쪽으로 이동시키며, 각각 이후 약간 속도를 높입니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e충돌 감지: checkCollision 함수는 공룡이 장애물과 충돌하는지 확인하고, 게임 오버 경고를 트리거합니다.\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003e성능 최적화\u003c/h1\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cp\u003e게임이 저전력 장치에서도 원할하게 실행되도록 하기 위해 CSS와 JavaScript를 최소화할 수 있습니다. 다음은 방법입니다:\u003c/p\u003e\n\u003ch2\u003eCSS 최소화\u003c/h2\u003e\n\u003cul\u003e\n\u003cli\u003ecssminifier.com과 같은 온라인 도구를 사용하여 CSS 코드를 최소화합니다.\u003c/li\u003e\n\u003cli\u003e최소화된 버전으로 \u003ccode\u003estyle\u003c/code\u003e 태그 안에 있는 CSS를 대체합니다.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch2\u003eJavaScript 최소화\u003c/h2\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003cul\u003e\n\u003cli\u003e자바스크립트 코드를 최소화하려면 javascript-minifier.com과 같은 온라인 도구를 사용하실 수 있어요.\u003c/li\u003e\n\u003cli\u003e\u003ccode\u003escript\u003c/code\u003e 태그 안에 있는 자바스크립트를 최소화된 버전으로 바꿔주세요.\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch1\u003eLazy Loading\u003c/h1\u003e\n\u003cp\u003e성능을 더 향상시키기 위해 자산들에 대한 lazy loading을 구현할 수 있어요. 이 간단한 게임은 이미지나 외부 자산이 없지만, 기본적인 방법을 살펴보겠습니다:\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"hljs language-js\"\u003e\u0026#x3C;script\u003e\n\u003cspan class=\"hljs-variable language_\"\u003edocument\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003eaddEventListener\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'DOMContentLoaded'\u003c/span\u003e, \u003cspan class=\"hljs-function\"\u003e() =\u003e\u003c/span\u003e {\n    \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e lazyElements = \u003cspan class=\"hljs-variable language_\"\u003edocument\u003c/span\u003e.\u003cspan class=\"hljs-title function_\"\u003equerySelectorAll\u003c/span\u003e(\u003cspan class=\"hljs-string\"\u003e'.lazy'\u003c/span\u003e);\n    \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e \u003cspan class=\"hljs-title function_\"\u003elazyLoad\u003c/span\u003e = (\u003cspan class=\"hljs-params\"\u003etarget\u003c/span\u003e) =\u003e {\n        \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e observer = \u003cspan class=\"hljs-keyword\"\u003enew\u003c/span\u003e \u003cspan class=\"hljs-title class_\"\u003eIntersectionObserver\u003c/span\u003e(\u003cspan class=\"hljs-function\"\u003e(\u003cspan class=\"hljs-params\"\u003eentries, observer\u003c/span\u003e) =\u003e\u003c/span\u003e {\n            entries.\u003cspan class=\"hljs-title function_\"\u003eforEach\u003c/span\u003e(\u003cspan class=\"hljs-function\"\u003e\u003cspan class=\"hljs-params\"\u003eentry\u003c/span\u003e =\u003e\u003c/span\u003e {\n                \u003cspan class=\"hljs-keyword\"\u003eif\u003c/span\u003e (entry.\u003cspan class=\"hljs-property\"\u003eisIntersecting\u003c/span\u003e) {\n                    \u003cspan class=\"hljs-keyword\"\u003econst\u003c/span\u003e element = entry.\u003cspan class=\"hljs-property\"\u003etarget\u003c/span\u003e;\n                    \u003cspan class=\"hljs-comment\"\u003e// Load element here\u003c/span\u003e\n                    observer.\u003cspan class=\"hljs-title function_\"\u003edisconnect\u003c/span\u003e();\n                }\n            });\n        });\n        observer.\u003cspan class=\"hljs-title function_\"\u003eobserve\u003c/span\u003e(target);\n    };\n\n    lazyElements.\u003cspan class=\"hljs-title function_\"\u003eforEach\u003c/span\u003e(lazyLoad);\n});\n\u0026#x3C;/script\u003e\n\u003c/code\u003e\u003c/pre\u003e\n\u003c!-- ui-station 사각형 --\u003e\n\u003cp\u003e\u003cins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4877378276818686\" data-ad-slot=\"7249294152\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"\u003e\u003c/ins\u003e\u003c/p\u003e\n\u003cscript\u003e\n(adsbygoogle = window.adsbygoogle || []).push({});\n\u003c/script\u003e\n\u003ch1\u003e결론\u003c/h1\u003e\n\u003cp\u003e이러한 모범 사례를 따르면 반응형이고 최적화되며 재미있는 간단한 게임을 만들 수 있습니다. 이 프로젝트는 주요 프론트엔드 개발 개념을 학습하고 적용하는 좋은 방법입니다. 웹 애플리케이션이 사용자 친화적이고 성능이 우수해지도록 보장합니다. 즐거운 코딩되세요!\u003c/p\u003e\n\u003c/body\u003e\n\u003c/html\u003e\n"},"__N_SSG":true},"page":"/post/[slug]","query":{"slug":"2024-07-01-BuildingaSimpleYetEngagingDinoGameAFront-EndDevelopersGuide"},"buildId":"GsgRekSb--BvxYwv9FPn6","isFallback":false,"gsp":true,"scriptLoader":[{"async":true,"src":"https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4877378276818686","strategy":"lazyOnload","crossOrigin":"anonymous"}]}</script></body></html>
